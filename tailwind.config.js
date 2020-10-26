@@ -20,6 +20,7 @@ module.exports = {
         'background-secondary': '#25294A',
         item: '#2D325A',
         primary: '#4E7CFF',
+        button: '#394076',
         rare: {
           from: '#AD76B0',
           to: '#665680',

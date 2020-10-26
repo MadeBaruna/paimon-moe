@@ -52,8 +52,8 @@
     href="/characters" />
   <SidebarItem
     on:clicked={close}
-    active={segment === 'artifacts'}
-    image="/images/artifacts.png"
-    label="Artifact"
-    href="/artifacts" />
+    active={segment === 'wish'}
+    image="/images/wish.png"
+    label="Wish Counter"
+    href="/wish" />
 </div>
