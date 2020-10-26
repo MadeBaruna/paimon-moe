@@ -7,9 +7,6 @@
   import SidebarTitle from './Title.svelte';
   import SidebarItem from './SidebarItem.svelte';
 
-  import characterImage from 'images/characters.png';
-  import artifactImage from 'images/artifacts.png';
-
   import { showSidebar } from '../../stores/sidebar';
 
   export let segment;
@@ -50,13 +47,13 @@
   <SidebarItem
     on:clicked={close}
     active={segment === 'characters'}
-    image={characterImage}
+    image="/images/characters.png"
     label="Character"
     href="/characters" />
   <SidebarItem
     on:clicked={close}
     active={segment === 'artifacts'}
-    image={artifactImage}
+    image="/images/artifacts.png"
     label="Artifact"
     href="/artifacts" />
 </div>
