@@ -9,7 +9,13 @@
   
   <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
-	<link rel="icon" type="image/png" href="favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  
+  <style>
+    html {
+      height: 100%;
+    }
+  </style>
 
 	<!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
@@ -28,6 +34,6 @@
 <body class="font-body h-full bg-background-secondary">
 	<!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
-	<div id="sapper">%sapper.html%</div>
+	<div id="sapper" class="flex flex-col h-full">%sapper.html%</div>
 </body>
 </html>
