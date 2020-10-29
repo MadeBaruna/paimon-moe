@@ -1,7 +1,10 @@
 <script>
+  import { createEventDispatcher } from 'svelte';
   import { fade } from 'svelte/transition';
-  import Icon from './Icon.svelte';
   import { mdiChevronDown, mdiCheck } from '@mdi/js';
+  import Icon from './Icon.svelte';
+
+  const dispatch = createEventDispatcher();
 
   export let icon = null;
   export let options;
@@ -41,6 +44,8 @@
     selected = options[index];
     focused = false;
     hoveredIndex = -1;
+
+    dispatch('change');
   }
 
   function onWindowClick(event) {
@@ -104,9 +109,9 @@
 
 <svelte:window on:click={onWindowClick} on:keydown={onKeyDown} />
 
-<div class="select-none relative flex-1" bind:this={container}>
+<div class="select-none relative" bind:this={container}>
   <button
-    class={`flex w-full relative items-center px-4 bg-item rounded-2xl h-14 focus:outline-none focus:border-primary border-2 border-transparent ease-in duration-100 ${classes}`}
+    class={`flex w-full relative items-center px-4 bg-background rounded-2xl h-14 focus:outline-none focus:border-primary border-2 border-transparent ease-in duration-100 ${classes}`}
     on:click={toggleOptions}>
     {#if icon}
       <Icon path={icon} color="white" className="mr-3" />
@@ -117,11 +122,11 @@
   {#if focused}
     <div
       transition:fade={{ duration: 100 }}
-      class="bg-item rounded-2xl absolute mt-2 p-2 w-full z-50 flex flex-col text-white shadow-select border border-background">
+      class="bg-item rounded-2xl absolute mt-2 p-2 w-full z-50 flex flex-col text-white shadow-xl border border-background">
       {#each options as option, index}
         <span
-          on:click={() => select(index)}
-          on:mouseenter={() => onHover(index)}
+          on:click={() => !option.disabled && select(index)}
+          on:mouseenter={() => !option.disabled && onHover(index)}
           class={`p-3 rounded-xl cursor-pointer flex
             ${selectedIndex === index || selectedMulti.has(index) ? 'text-primary font-semibold' : ''}
             ${hoveredIndex === index ? 'hovered' : ''}`}>

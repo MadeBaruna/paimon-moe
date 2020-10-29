@@ -56,4 +56,10 @@
     image="/images/wish.png"
     label="Wish Counter"
     href="/wish" />
+  <SidebarItem
+    on:clicked={close}
+    active={segment === 'calculator'}
+    image="/images/calculator.png"
+    label="Calculator"
+    href="/calculator" />
 </div>

@@ -49,8 +49,8 @@ module.exports = {
     textColor: ['responsive', 'hover', 'focus', 'group-hover', 'focus-within', 'group-focus'],
     boxShadow: ['responsive', 'hover', 'focus'],
     backgroundImage: ['responsive', 'hover', 'focus'],
-    borderColor: ['responsive', 'hover', 'focus', 'focus-within'],
-    opacity: ['group-hover'],
+    borderColor: ['responsive', 'hover', 'focus', 'focus-within', 'disabled'],
+    opacity: ['group-hover', 'responsive', 'hover', 'focus', 'disabled'],
   },
   plugins: [],
   future: {
