@@ -5,19 +5,20 @@
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
 
+  export let id = '';
   export let name = '';
   let total = 0;
   let legendary = 0;
   let rare = 0;
 
-  $: id = `wish-counter-${name.toLowerCase().replace(/ /g, '-')}`;
+  $: path = `wish-counter-${id}`;
 
   onMount(() => {
     readLocalData();
   });
 
   function readLocalData() {
-    const data = localStorage.getItem(id);
+    const data = localStorage.getItem(path);
     if (data !== null) {
       const counterData = JSON.parse(data);
       total = counterData.total;
@@ -32,7 +33,7 @@
       legendary,
       rare,
     });
-    localStorage.setItem(id, data);
+    localStorage.setItem(path, data);
   }
 
   function add(val) {
@@ -67,6 +68,7 @@
 
   function getRare() {
     total += 1;
+    legendary += 1;
     rare = 0;
     saveData();
   }
