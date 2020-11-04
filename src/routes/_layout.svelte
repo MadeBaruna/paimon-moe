@@ -2,6 +2,7 @@
   import Tailwind from '../components/Tailwindcss.svelte';
   import Sidebar from '../components/Sidebar/Sidebar.svelte';
   import Header from '../components/Header.svelte';
+  import DataSync from '../components/DataSync.svelte';
 
   import { showSidebar } from '../stores/sidebar';
 
@@ -26,3 +27,5 @@
   Paimon.moe is not affiliated with miHoYo.<br />
   Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
 </p>
+
+<DataSync />

@@ -62,4 +62,10 @@
     image="/images/calculator.png"
     label="Calculator"
     href="/calculator" />
+  <SidebarItem
+    on:clicked={close}
+    active={segment === 'settings'}
+    image="/images/settings.png"
+    label="Settings"
+    href="/settings" />
 </div>
