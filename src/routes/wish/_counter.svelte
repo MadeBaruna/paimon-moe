@@ -1,9 +1,11 @@
 <script>
-  import { mdiStar } from '@mdi/js';
   import { onMount } from 'svelte';
+  import { mdiStar } from '@mdi/js';
+  import debounce from 'lodash/debounce';
 
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
+  import { readSave, updateSave, fromRemote } from '../../stores/saveManager';
 
   export let id = '';
   export let name = '';
@@ -12,13 +14,16 @@
   let rare = 0;
 
   $: path = `wish-counter-${id}`;
+  $: if ($fromRemote) {
+    readLocalData();
+  }
 
   onMount(() => {
     readLocalData();
   });
 
   function readLocalData() {
-    const data = localStorage.getItem(path);
+    const data = readSave(path);
     if (data !== null) {
       const counterData = JSON.parse(data);
       total = counterData.total;
@@ -27,14 +32,15 @@
     }
   }
 
-  function saveData() {
+  const saveData = debounce(() => {
     const data = JSON.stringify({
       total,
       legendary,
       rare,
     });
-    localStorage.setItem(path, data);
-  }
+
+    updateSave(path, data);
+  }, 2000);
 
   function add(val) {
     if (total + val < 0) return;

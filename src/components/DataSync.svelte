@@ -1,11 +1,21 @@
 <script>
-  import { onMount } from 'svelte';
-  import { driveSignedIn, driveLoading } from '../stores/dataSync';
+  // doc: /static/images.save_sync_flow.png
+
+  import dayjs from 'dayjs';
+  import { onMount, getContext } from 'svelte';
+  import { driveSignedIn, driveLoading, saveId } from '../stores/dataSync';
+  import { getLocalSaveJson, updateSave, updateTime, UPDATE_TIME_KEY } from '../stores/saveManager';
+
+  import SyncConflictModal from '../components/SyncConflictModal.svelte';
+
+  const { open: openModal } = getContext('simple-modal');
 
   const CLIENT_ID = __paimon.env.GOOGLE_DRIVE_CLIENT_ID;
   const API_KEY = __paimon.env.GOOGLE_DRIVE_API_KEY;
   const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'];
   const SCOPES = 'https://www.googleapis.com/auth/drive.appdata';
+
+  $: localSaveExists = $updateTime !== null;
 
   onMount(() => {
     const script = document.createElement('script');
@@ -19,7 +29,7 @@
   }
 
   function updateSigninStatus(status) {
-    console.log('DRIVE signed in:', status);
+    console.log('update drive signed in status:', status);
     driveSignedIn.set(status);
     driveLoading.set(false);
 
@@ -28,7 +38,46 @@
     }
   }
 
+  async function copyRemoteToLocal() {
+    try {
+      const remoteSaveData = await getData();
+      for (const k in remoteSaveData) {
+        updateSave(k, remoteSaveData[k], true);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  async function compareLocalSave() {
+    try {
+      const data = await getData();
+      const remoteTime = dayjs(data[UPDATE_TIME_KEY]);
+      if ($updateTime !== null && remoteTime.diff($updateTime) !== 0) {
+        console.log('DRIVE SYNC CONFLICT!');
+        openModal(
+          SyncConflictModal,
+          {
+            remoteTime: remoteTime,
+            localTime: $updateTime,
+          },
+          {
+            closeButton: false,
+            closeOnEsc: false,
+            closeOnOuterClick: false,
+            styleWindow: { background: '#25294A' },
+          },
+        );
+      }
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  // check if remote save.json exists
   async function getFiles() {
+    console.log('checking remote file');
+
     try {
       const { result } = await gapi.client.drive.files.list({
         spaces: 'appDataFolder',
@@ -36,14 +85,17 @@
       });
       console.log(result);
 
+      // create save.json on remote if not exists
       if (result.files.length === 0) {
-        createFile();
+        await createFile();
       } else {
-        const data = await gapi.client.drive.files.get({
-          fileId: result.files[0].id,
-          alt: 'media',
-        });
-        console.log(data);
+        saveId.set(result.files[0].id);
+
+        if (localSaveExists) {
+          await compareLocalSave();
+        } else {
+          await copyRemoteToLocal();
+        }
       }
     } catch (err) {
       console.error(err);
@@ -51,6 +103,8 @@
   }
 
   async function createFile() {
+    console.log('creating remote file');
+
     try {
       const { result } = await gapi.client.drive.files.create({
         resource: {
@@ -60,16 +114,45 @@
         fields: 'id',
       });
 
-      const data = await gapi.client.request({
-        path: `/upload/drive/v3/files/${result.id}`,
+      saveId.set(result.id);
+
+      if (localSaveExists) {
+        await saveData(getLocalSaveJson());
+      }
+
+      console.log(result);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  async function getData() {
+    console.log('reading remote file');
+
+    try {
+      const { result } = await gapi.client.drive.files.get({
+        fileId: $saveId,
+        alt: 'media',
+      });
+
+      return result;
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  async function saveData(data) {
+    console.log('saving to remote file');
+
+    try {
+      await gapi.client.request({
+        path: `/upload/drive/v3/files/${$saveId}`,
         method: 'PATCH',
         params: {
           uploadType: 'media',
         },
-        body: JSON.stringify({ v: __paimon.env.CURRENT_VERSION }),
+        body: data,
       });
-
-      console.log(data);
     } catch (err) {
       console.error(err);
     }
