@@ -15,6 +15,8 @@
   const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'];
   const SCOPES = 'https://www.googleapis.com/auth/drive.appdata';
 
+  let remoteSave = null;
+
   $: localSaveExists = $updateTime !== null;
 
   onMount(() => {
@@ -52,6 +54,8 @@
   async function compareLocalSave() {
     try {
       const data = await getData();
+      remoteSave = data;
+
       const remoteTime = dayjs(data[UPDATE_TIME_KEY]);
       if ($updateTime !== null && remoteTime.diff($updateTime) !== 0) {
         console.log('DRIVE SYNC CONFLICT!');
@@ -60,6 +64,7 @@
           {
             remoteTime: remoteTime,
             localTime: $updateTime,
+            downloadBackup: exportData,
           },
           {
             closeButton: false,
@@ -175,5 +180,22 @@
           console.error(error);
         },
       );
+  }
+
+  function exportData() {
+    downloadData(getLocalSaveJson(), 'paimon-moe-local-data');
+    downloadData(JSON.stringify(remoteSave), 'paimon-moe-drive-data');
+  }
+
+  function downloadData(data, name) {
+    const fileLink = document.createElement('a');
+
+    const filename = `${name}.json`;
+    const dataStr = encodeURIComponent(data);
+
+    fileLink.setAttribute('href', `data:text/json;charset=utf-8,${dataStr}`);
+    fileLink.setAttribute('download', filename);
+    document.body.appendChild(fileLink);
+    fileLink.click();
   }
 </script>

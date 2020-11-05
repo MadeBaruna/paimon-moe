@@ -6,6 +6,7 @@
 
   export let remoteTime;
   export let localTime;
+  export let downloadBackup = () => {};
 
   const remoteFormatted = remoteTime.format('dddd, MMMM D, YYYY h:mm A');
   const localFormatted = localTime.format('dddd, MMMM D, YYYY h:mm A');
@@ -42,7 +43,7 @@
   </Button>
 </div>
 <div class="flex mt-6 justify-end">
-  <Button className="w-full md:w-auto">
+  <Button className="w-full md:w-auto" on:click={downloadBackup}>
     <Icon path={mdiContentSave} className="mr-1" />Download Both Data
   </Button>
 </div>
