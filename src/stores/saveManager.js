@@ -1,7 +1,8 @@
 import dayjs from 'dayjs';
 import { writable } from 'svelte/store';
+import debounce from 'lodash/debounce';
 
-import { synced } from './dataSync';
+import { synced, saveId, localModified, lastSyncTime } from './dataSync';
 
 export const updateTime = writable(null);
 export const fromRemote = writable(false);
@@ -10,13 +11,43 @@ export const UPDATE_TIME_KEY = 'update-time';
 
 let pendingQueue = [];
 let queueSave = true;
+let saveFileId = '';
 
-const unsubscribe = synced.subscribe((value) => {
+saveId.subscribe((val) => {
+  saveFileId = val;
+});
+
+const saveToRemote = debounce(() => {
+  saveData(getLocalSaveJson());
+}, 5000);
+
+async function saveData(data) {
+  console.log('saving to remote file');
+  synced.set(false);
+
+  try {
+    await gapi.client.request({
+      path: `/upload/drive/v3/files/${saveFileId}`,
+      method: 'PATCH',
+      params: {
+        uploadType: 'media',
+      },
+      body: data,
+    });
+    synced.set(true);
+    localModified.set(false);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+synced.subscribe((value) => {
   console.log('synced:', value);
   queueSave = !value;
 
   if (value) {
     flushPendingQueue();
+    lastSyncTime.set(dayjs());
   }
 });
 
@@ -33,6 +64,10 @@ export const getLocalSaveJson = () => {
 };
 
 export const updateSave = (key, data, isFromRemote) => {
+  if (!isFromRemote) {
+    localModified.set(true);
+  }
+
   if (queueSave && !isFromRemote) {
     pendingQueue.push({ key, data });
     return;
@@ -44,6 +79,7 @@ export const updateSave = (key, data, isFromRemote) => {
     const currentTime = dayjs().toISOString();
     updateTime.set(currentTime);
     localStorage.setItem(UPDATE_TIME_KEY, currentTime);
+    saveToRemote();
   } else {
     fromRemote.set(true);
   }
@@ -64,5 +100,4 @@ export const flushPendingQueue = () => {
 
   pendingQueue = [];
   queueSave = false;
-  unsubscribe();
 };

@@ -3,7 +3,7 @@
 
   import Button from '../components/Button.svelte';
   import Icon from '../components/Icon.svelte';
-  import { driveSignedIn, driveLoading, synced } from '../stores/dataSync';
+  import { driveSignedIn, driveLoading, synced, localModified, lastSyncTime } from '../stores/dataSync';
 
   function signIn() {
     gapi.auth2.getAuthInstance().signIn();
@@ -12,6 +12,8 @@
   function signOut() {
     gapi.auth2.getAuthInstance().signOut();
   }
+
+  $: isSynced = $synced && !$localModified;
 </script>
 
 <div class="lg:ml-64 pt-20 px-8 lg:pt-8">
@@ -33,14 +35,17 @@
     </Button>
     <p class="text-white mt-4">
       Sync Status:
-      <span class={`font-bold ${$synced ? 'text-green-400' : 'text-yellow-400'}`}>
-        {$synced ? 'Synced' : 'Syncing...'}
-        {#if $synced}
+      <span class={`font-bold ${isSynced ? 'text-green-400' : 'text-yellow-400'}`}>
+        {isSynced ? 'Synced' : $localModified && $synced ? 'Waiting...' : 'Syncing...'}
+        {#if isSynced}
           <Icon path={mdiCheckCircleOutline} className="text-green-400" />
-        {:else}
+        {:else if $localModified && !$synced}
           <Icon path={mdiLoading} className="text-yellow-400" spin />
         {/if}
       </span>
     </p>
+    {#if $lastSyncTime !== null}
+      <p class="text-gray-400">Last Sync: {$lastSyncTime.format('dddd, MMMM D, YYYY h:mm:ss A')}</p>
+    {/if}
   {/if}
 </div>
