@@ -2,13 +2,13 @@
   // doc: /static/images.save_sync_flow.png
 
   import dayjs from 'dayjs';
-  import { onMount, getContext } from 'svelte';
-  import { driveSignedIn, driveLoading, saveId } from '../stores/dataSync';
+  import { onMount, getContext, setContext } from 'svelte';
+  import { driveSignedIn, driveLoading, saveId, synced } from '../stores/dataSync';
   import { getLocalSaveJson, updateSave, updateTime, UPDATE_TIME_KEY } from '../stores/saveManager';
 
   import SyncConflictModal from '../components/SyncConflictModal.svelte';
 
-  const { open: openModal } = getContext('simple-modal');
+  const { open: openModal, close: closeModal } = getContext('simple-modal');
 
   const CLIENT_ID = __paimon.env.GOOGLE_DRIVE_CLIENT_ID;
   const API_KEY = __paimon.env.GOOGLE_DRIVE_API_KEY;
@@ -19,12 +19,21 @@
 
   $: localSaveExists = $updateTime !== null;
 
+  setContext('sync', {
+    startSync,
+  });
+
   onMount(() => {
+    startSync();
+  });
+
+  function startSync() {
+    synced.set(false);
     const script = document.createElement('script');
     script.onload = handleClientLoad;
     script.src = 'https://apis.google.com/js/api.js';
     document.body.appendChild(script);
-  });
+  }
 
   function handleClientLoad() {
     gapi.load('client:auth2', initClient);
@@ -37,6 +46,8 @@
 
     if (status) {
       getFiles();
+    } else {
+      synced.set(true);
     }
   }
 
@@ -49,6 +60,22 @@
     } catch (err) {
       console.error(err);
     }
+  }
+
+  async function useRemoteData() {
+    for (const k in remoteSave) {
+      updateSave(k, remoteSave[k], true);
+    }
+
+    synced.set(true);
+    closeModal();
+  }
+
+  async function useLocalData() {
+    await saveData(getLocalSaveJson());
+
+    synced.set(true);
+    closeModal();
   }
 
   async function compareLocalSave() {
@@ -65,6 +92,8 @@
             remoteTime: remoteTime,
             localTime: $updateTime,
             downloadBackup: exportData,
+            useRemote: useRemoteData,
+            useLocal: useLocalData,
           },
           {
             closeButton: false,
@@ -73,6 +102,8 @@
             styleWindow: { background: '#25294A' },
           },
         );
+      } else {
+        synced.set(true);
       }
     } catch (err) {
       console.error(err);
@@ -100,6 +131,7 @@
           await compareLocalSave();
         } else {
           await copyRemoteToLocal();
+          synced.set(true);
         }
       }
     } catch (err) {
@@ -125,6 +157,7 @@
         await saveData(getLocalSaveJson());
       }
 
+      synced.set(true);
       console.log(result);
     } catch (err) {
       console.error(err);
@@ -140,6 +173,7 @@
         alt: 'media',
       });
 
+      console.log(result);
       return result;
     } catch (err) {
       console.error(err);
@@ -199,3 +233,5 @@
     fileLink.click();
   }
 </script>
+
+<slot />

@@ -23,6 +23,7 @@
   });
 
   function readLocalData() {
+    console.log('wish read local');
     const data = readSave(path);
     if (data !== null) {
       const counterData = JSON.parse(data);

@@ -30,10 +30,11 @@
   <Sidebar {segment} mobile />
 {/if}
 <Modal>
-  <main style="flex: 1 0 auto;">
-    <slot />
-  </main>
-  <DataSync />
+  <DataSync>
+    <main style="flex: 1 0 auto;">
+      <slot />
+    </main>
+  </DataSync>
 </Modal>
 <p class="lg:ml-64 px-8 py-4 text-gray-600">
   Paimon.moe is not affiliated with miHoYo.<br />
