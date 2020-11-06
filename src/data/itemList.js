@@ -352,4 +352,10 @@ export const itemList = {
   cecilia: { id: 'cecilia', name: 'Cecilia' },
   jueyun_chili: { id: 'jueyun_chili', name: 'Jueyun Chili' },
   silk_flower: { id: 'silk_flower', name: 'Silk Flower' },
+  mystic_enhancement_ore: { id: 'mystic_enhancement_ore', name: 'Mystic Enhancement Ore' },
+  fine_enhancement_ore: { id: 'fine_enhancement_ore', name: 'Fine Enhancement Ore' },
+  enhancement_ore: { id: 'enhancement_ore', name: 'Enhancement Ore' },
+  any_weapon_1: { id: 'any_weapon_1', name: '1 Star Weapon' },
+  any_weapon_2: { id: 'any_weapon_2', name: '2 Star Weapon' },
+  any_weapon_3: { id: 'any_weapon_3', name: '3 Star Weapon' },
 };

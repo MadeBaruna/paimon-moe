@@ -1,6 +1,6 @@
 <script>
   import { fade } from 'svelte/transition';
-  import { mdiStar, mdiClose, mdiInformationOutline } from '@mdi/js';
+  import { mdiStar, mdiClose, mdiInformationOutline, mdiCheckCircleOutline } from '@mdi/js';
 
   import Select from '../../components/Select.svelte';
   import Input from '../../components/Input.svelte';
@@ -12,6 +12,7 @@
   import Icon from '../../components/Icon.svelte';
 
   import { weaponExp } from '../../data/weaponExp';
+  import { addTodo } from '../../stores/todo';
 
   let weaponsRarity = [
     { label: '3 Star', value: 3 },
@@ -23,16 +24,54 @@
     {
       selected: true,
       disabled: true,
-      image: '/images/crystal_3.png',
+      id: 'mystic_enhancement_ore',
+      image: '/images/items/mystic_enhancement_ore.png',
       label: 'Mystic Enhancement Ore',
       value: '10000',
     },
-    { selected: true, disabled: false, image: '/images/crystal_2.png', label: 'Fine Enhancement Ore', value: '2000' },
-    { selected: true, disabled: false, image: '/images/crystal_1.png', label: 'Enhancement Ore', value: '400' },
-    { selected: true, disabled: false, image: '/images/weapons/sword.png', label: '1 Star Weapon', value: '600' },
-    { selected: true, disabled: false, image: '/images/weapons/sword.png', label: '2 Star Weapon', value: '1200' },
-    { selected: true, disabled: false, image: '/images/weapons/sword.png', label: '3 Star Weapon', value: '1800' },
+    {
+      selected: true,
+      disabled: false,
+      id: 'fine_enhancement_ore',
+      image: '/images/items/fine_enhancement_ore.png',
+      label: 'Fine Enhancement Ore',
+      value: '2000',
+    },
+    {
+      selected: true,
+      disabled: false,
+      id: 'enhancement_ore',
+      image: '/images/items/enhancement_ore.png',
+      label: 'Enhancement Ore',
+      value: '400',
+    },
+    {
+      selected: true,
+      disabled: false,
+      id: 'any_weapon_1',
+      image: '/images/weapons/sword.png',
+      label: '1 Star Weapon',
+      value: '600',
+    },
+    {
+      selected: true,
+      disabled: false,
+      id: 'any_weapon_2',
+      image: '/images/weapons/sword.png',
+      label: '2 Star Weapon',
+      value: '1200',
+    },
+    {
+      selected: true,
+      disabled: false,
+      id: 'any_weapon_3',
+      image: '/images/weapons/sword.png',
+      label: '3 Star Weapon',
+      value: '1800',
+    },
   ];
+
+  let addedToTodo = false;
 
   let withAscension = true;
 
@@ -248,6 +287,40 @@
 
     changed = false;
   }
+
+  function addToTodo() {
+    const levelRes = usedResource.reduce((prev, item, i) => {
+      if (currentMax.usage[i] > 0) {
+        prev[item.id] = currentMax.usage[i];
+      }
+
+      return prev;
+    }, {});
+
+    const ascensionRes = Object.keys(ascensionResouce).reduce((prev, item) => {
+      if (ascensionResouce[item].amount > 0) {
+        prev[item] = ascensionResouce[item].amount;
+      }
+
+      return prev;
+    }, {});
+
+    addTodo({
+      type: 'weapon',
+      weapon: selectedWeapon,
+      level: { from: currentLevel, to: intendedLevel },
+      resources: {
+        mora: moraNeeded,
+        ...levelRes,
+        ...ascensionRes,
+      },
+    });
+
+    addedToTodo = true;
+    setTimeout(() => {
+      addedToTodo = false;
+    }, 2000);
+  }
 </script>
 
 <div class="bg-item rounded-xl p-4">
@@ -400,6 +473,14 @@
               </tr>
             {/if}
           </table>
+          <Button className="mt-2 w-full" on:click={addToTodo}>
+            {#if addedToTodo}
+              <span class="text-green-400" in:fade={{ duration: 100 }}>
+                <Icon path={mdiCheckCircleOutline} size={0.8} />
+                Added to Todo List
+              </span>
+            {:else}<span in:fade={{ duration: 100 }}>Add to Todo List </span>{/if}
+          </Button>
         </div>
       {/if}
     </div>

@@ -64,6 +64,12 @@
     href="/calculator" />
   <SidebarItem
     on:clicked={close}
+    active={segment === 'todo'}
+    image="/images/settings.png"
+    label="Todo List"
+    href="/todo" />
+  <SidebarItem
+    on:clicked={close}
     active={segment === 'settings'}
     image="/images/settings.png"
     label="Settings"
