@@ -307,7 +307,7 @@
 
     addTodo({
       type: 'weapon',
-      weapon: selectedWeapon,
+      weapon: withAscension ? selectedWeapon : null,
       level: { from: currentLevel, to: intendedLevel },
       resources: {
         mora: moraNeeded,
@@ -473,7 +473,7 @@
               </tr>
             {/if}
           </table>
-          <Button className="mt-2 w-full" on:click={addToTodo}>
+          <Button className="mt-2 w-full" on:click={addedToTodo ? () => {} : addToTodo}>
             {#if addedToTodo}
               <span class="text-green-400" in:fade={{ duration: 100 }}>
                 <Icon path={mdiCheckCircleOutline} size={0.8} />

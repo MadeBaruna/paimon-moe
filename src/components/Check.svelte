@@ -1,6 +1,6 @@
 <script>
   export let checked = false;
-  export let disabled;
+  export let disabled = false;
 </script>
 
 <style>

@@ -358,4 +358,8 @@ export const itemList = {
   any_weapon_1: { id: 'any_weapon_1', name: '1 Star Weapon' },
   any_weapon_2: { id: 'any_weapon_2', name: '2 Star Weapon' },
   any_weapon_3: { id: 'any_weapon_3', name: '3 Star Weapon' },
+  mora: { id: 'mora', name: 'Mora' },
+  heros_wit: { id: 'heros_wit', name: "Hero's Wit" },
+  adventurers_experience: { id: 'adventurers_experience', name: "Adventurer's Experience" },
+  wanderes_advice: { id: 'wanderes_advice', name: "Wanderer's Advice" },
 };

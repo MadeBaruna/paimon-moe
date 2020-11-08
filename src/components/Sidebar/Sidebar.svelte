@@ -65,7 +65,7 @@
   <SidebarItem
     on:clicked={close}
     active={segment === 'todo'}
-    image="/images/settings.png"
+    image="/images/todos.png"
     label="Todo List"
     href="/todo" />
   <SidebarItem

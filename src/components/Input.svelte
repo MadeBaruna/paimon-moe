@@ -2,10 +2,10 @@
   import Icon from './Icon.svelte';
 
   export let icon = null;
-  export let placeholder;
+  export let placeholder = '';
   export let type = 'text';
-  export let min;
-  export let max;
+  export let min = Math.min();
+  export let max = Math.max();
 
   export let value = '';
 

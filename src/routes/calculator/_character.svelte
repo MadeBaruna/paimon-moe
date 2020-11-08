@@ -1,6 +1,6 @@
 <script>
   import { fade } from 'svelte/transition';
-  import { mdiClose, mdiInformationOutline } from '@mdi/js';
+  import { mdiCheckCircleOutline, mdiClose, mdiInformationOutline } from '@mdi/js';
 
   import Input from '../../components/Input.svelte';
   import AscensionSelector from '../../components/AscensionSelector.svelte';
@@ -11,14 +11,23 @@
   import Icon from '../../components/Icon.svelte';
 
   import { characterExp } from '../../data/characterExp';
+  import { addTodo } from '../../stores/todo';
 
   let resources = [
-    { selected: true, disabled: false, image: '/images/items/heros_wit.png', label: "Hero's Wit", value: '20000' },
+    {
+      selected: true,
+      disabled: false,
+      image: '/images/items/heros_wit.png',
+      label: "Hero's Wit",
+      id: 'heros_wit',
+      value: '20000',
+    },
     {
       selected: true,
       disabled: false,
       image: '/images/items/adventurers_experience.png',
       label: "Adventurer's Experience",
+      id: 'adventurers_experience',
       value: '5000',
     },
     {
@@ -26,9 +35,12 @@
       disabled: false,
       image: '/images/items/wanderes_advice.png',
       label: "Wanderer's Advice",
+      id: 'wanderes_advice',
       value: '1000',
     },
   ];
+
+  let addedToTodo = false;
 
   let withAscension = true;
 
@@ -243,6 +255,40 @@
 
     changed = false;
   }
+
+  function addToTodo() {
+    const levelRes = usedResource.reduce((prev, item, i) => {
+      if (currentMax.usage[i] > 0) {
+        prev[item.id] = currentMax.usage[i];
+      }
+
+      return prev;
+    }, {});
+
+    const ascensionRes = Object.keys(ascensionResouce).reduce((prev, item) => {
+      if (ascensionResouce[item].amount > 0) {
+        prev[item] = ascensionResouce[item].amount;
+      }
+
+      return prev;
+    }, {});
+
+    addTodo({
+      type: 'character',
+      character: withAscension ? selectedCharacter : null,
+      level: { from: currentLevel, to: intendedLevel },
+      resources: {
+        mora: moraNeeded,
+        ...levelRes,
+        ...ascensionRes,
+      },
+    });
+
+    addedToTodo = true;
+    setTimeout(() => {
+      addedToTodo = false;
+    }, 2000);
+  }
 </script>
 
 <div class="bg-item rounded-xl p-4">
@@ -388,6 +434,14 @@
               </tr>
             {/if}
           </table>
+          <Button className="mt-2 w-full" on:click={addedToTodo ? () => {} : addToTodo}>
+            {#if addedToTodo}
+              <span class="text-green-400" in:fade={{ duration: 100 }}>
+                <Icon path={mdiCheckCircleOutline} size={0.8} />
+                Added to Todo List
+              </span>
+            {:else}<span in:fade={{ duration: 100 }}>Add to Todo List </span>{/if}
+          </Button>
         </div>
       {/if}
     </div>
