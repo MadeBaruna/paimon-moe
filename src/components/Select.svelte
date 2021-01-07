@@ -5,7 +5,8 @@
   import Icon from './Icon.svelte';
 
   const dispatch = createEventDispatcher();
-
+  
+  export let className;
   export let icon = null;
   export let options;
   export let placeholder = 'Select...';
@@ -109,7 +110,7 @@
 
 <svelte:window on:click={onWindowClick} on:keydown={onKeyDown} />
 
-<div class="select-none relative" bind:this={container}>
+<div class={`select-none relative ${className}`} bind:this={container}>
   <button
     class={`flex w-full relative items-center px-4 bg-background rounded-2xl h-14 focus:outline-none focus:border-primary border-2 border-transparent ease-in duration-100 ${classes}`}
     on:click={toggleOptions}>

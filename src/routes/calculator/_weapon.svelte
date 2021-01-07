@@ -107,10 +107,10 @@
     intendedAscension >= currentAscension &&
     currentLevel !== '' &&
     currentLevel > 0 &&
-    currentLevel <= 80 &&
+    currentLevel <= 90 &&
     intendedLevel !== '' &&
     intendedLevel > 0 &&
-    intendedLevel <= 80;
+    intendedLevel <= 90;
 
   function updateIntendedAscension() {
     intendedAscension = Math.max(currentAscension, intendedAscension);

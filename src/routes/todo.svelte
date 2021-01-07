@@ -8,6 +8,7 @@
   import Icon from '../components/Icon.svelte';
   import Button from '../components/Button.svelte';
   import TodoDeleteModal from '../components/TodoDeleteModal.svelte';
+  import { getCurrentDay } from '../stores/server';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
@@ -15,7 +16,7 @@
   let numberFormat = Intl.NumberFormat();
   let adding = false;
   let todayOnly = false;
-  let today = dayjs().format('dddd').toLowerCase();
+  let today = getCurrentDay();
 
   async function reorder(index, pos) {
     if ((index === 0 && pos === -1) || (index === $todos.length - 1 && pos === 1)) return;
@@ -58,6 +59,7 @@
   }
 
   function toggleTodayOnly() {
+    today = getCurrentDay();
     todayOnly = !todayOnly;
   }
 
@@ -108,7 +110,10 @@
         <Icon path={mdiLoading} color="white" spin />
       {:else if $todos.length > 0}
         <div>
-          <Button className="float-right" size="md" on:click={toggleTodayOnly}>Show {todayOnly ? 'All Day' : 'Today Only'}</Button>
+          <Button className="float-right" size="md" on:click={toggleTodayOnly}>
+            Show
+            {todayOnly ? 'All Day' : 'Today Only'}
+          </Button>
           <p class="font-bold text-xl mb-4">Summary</p>
         </div>
       {:else}

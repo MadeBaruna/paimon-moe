@@ -10,6 +10,7 @@
   import { showSidebar } from '../stores/sidebar';
   import { checkLocalSave } from '../stores/saveManager';
   import TodoData from '../components/TodoData.svelte';
+  import SettingData from '../components/SettingData.svelte';
 
   export let segment;
 
@@ -33,6 +34,7 @@
 <Modal>
   <DataSync>
     <TodoData />
+    <SettingData />
     <main style="flex: 1 0 auto;">
       <slot />
     </main>
