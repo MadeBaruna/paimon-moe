@@ -16,7 +16,12 @@
   $: isSynced = $synced && !$localModified;
 </script>
 
+<svelte:head>
+  <title>Settings - Paimon.moe</title>
+</svelte:head>
+
 <div class="lg:ml-64 pt-20 px-8 lg:pt-8">
+  <p class="text-white mb-4">Data Version: <b>1.2</b></p>
   <p class="text-white mb-2">
     Paimon.moe use Application Data Directory on your Google Drive to save and sync your wish counter and todo list.
   </p>

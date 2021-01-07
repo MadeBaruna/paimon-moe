@@ -11,7 +11,9 @@
   import Icon from '../../components/Icon.svelte';
 
   import { characterExp } from '../../data/characterExp';
+  import { talent } from '../../data/talent';
   import { addTodo } from '../../stores/todo';
+  import { itemList } from '../../data/itemList';
 
   let resources = [
     {
@@ -43,6 +45,7 @@
   let addedToTodo = false;
 
   let withAscension = true;
+  let withTalent = false;
 
   let selectedCharacter = null;
 
@@ -55,11 +58,24 @@
 
   let minAscension = 0;
   let minIntendedAscension = 0;
+
+  let maxTalentLevel = 1;
+
   let ascensionResouce = {};
   let unknownList = {};
   let currentMax = null;
   let moraNeeded = 0;
   let changed = false;
+
+  let currentTalentLevel = {
+    first: 1,
+    second: 1,
+    third: 1,
+  };
+  let talentMaterial = {
+    items: {},
+    mora: 0,
+  };
 
   let numberFormat = Intl.NumberFormat();
 
@@ -67,6 +83,7 @@
   $: currentAscension, updateIntendedAscension();
   $: currentLevel, updateMinAscension();
   $: intendedLevel, updateMinIntendedAscension();
+  $: intendedAscension, updateMaxTalentLevel();
 
   $: canCalculate =
     (withAscension ? selectedCharacter !== null : true) &&
@@ -74,10 +91,10 @@
     intendedAscension >= currentAscension &&
     currentLevel !== '' &&
     currentLevel > 0 &&
-    currentLevel <= 80 &&
+    currentLevel <= 90 &&
     intendedLevel !== '' &&
     intendedLevel > 0 &&
-    intendedLevel <= 80;
+    intendedLevel <= 90;
 
   function updateIntendedAscension() {
     intendedAscension = Math.max(currentAscension, intendedAscension);
@@ -121,6 +138,32 @@
     }
 
     intendedAscension = Math.max(intendedAscension, minIntendedAscension);
+  }
+
+  function updateMaxTalentLevel() {
+    switch (intendedAscension) {
+      case 6:
+        maxTalentLevel = 10;
+        break;
+      case 5:
+        maxTalentLevel = 8;
+        break;
+      case 4:
+        maxTalentLevel = 6;
+        break;
+      case 3:
+        maxTalentLevel = 4;
+        break;
+      case 2:
+        maxTalentLevel = 2;
+        break;
+    }
+
+    currentTalentLevel = {
+      first: Math.min(currentTalentLevel.first, maxTalentLevel),
+      second: Math.min(currentTalentLevel.second, maxTalentLevel),
+      third: Math.min(currentTalentLevel.third, maxTalentLevel),
+    };
   }
 
   function onChange() {
@@ -186,9 +229,56 @@
     console.log(ascensionResouce);
   }
 
+  function calculateTalent() {
+    Object.keys(currentTalentLevel).forEach((i) => {
+      talent.slice(currentTalentLevel[i] - 1, maxTalentLevel - 1).forEach((talent) => {
+        talentMaterial.mora = talentMaterial.mora + talent.mora;
+
+        const currentBook = selectedCharacter.material.book[talent.book.rarity - 2];
+        const currentMaterial = selectedCharacter.material.material[talent.commonMaterial.rarity - 1];
+
+        if (talentMaterial.items[currentBook.id] === undefined) {
+          talentMaterial.items[currentBook.id] = { ...currentBook, amount: 0 };
+        }
+        talentMaterial.items[currentBook.id].amount += talent.book.amount;
+
+        if (talentMaterial.items[currentMaterial.id] === undefined) {
+          talentMaterial.items[currentMaterial.id] = { ...currentMaterial, amount: 0 };
+        }
+        talentMaterial.items[currentMaterial.id].amount += talent.commonMaterial.amount;
+
+        if (talent.bossMaterial > 0) {
+          if (talentMaterial.items[selectedCharacter.material.boss.id] === undefined) {
+            talentMaterial.items[selectedCharacter.material.boss.id] = {
+              ...selectedCharacter.material.boss,
+              amount: 0,
+            };
+          }
+          talentMaterial.items[selectedCharacter.material.boss.id].amount += talent.bossMaterial;
+        }
+
+        if (talent.eventMaterial > 0) {
+          if (talentMaterial.items['crown_of_insight'] === undefined) {
+            talentMaterial.items['crown_of_insight'] = { ...itemList.crown_of_insight, amount: 0 };
+          }
+          talentMaterial.items['crown_of_insight'].amount += talent.eventMaterial;
+        }
+      });
+    });
+
+    moraNeeded = moraNeeded + talentMaterial.mora;
+
+    console.log(talentMaterial);
+  }
+
   function calculate() {
     unknownList = {};
     ascensionResouce = {};
+    talentMaterial = {
+      mora: 0,
+      items: {},
+    };
+    moraNeeded = 0;
 
     const values = resources
       .filter((e) => e.selected)
@@ -251,6 +341,10 @@
 
     if (withAscension) {
       calculateAscension();
+
+      if (withTalent) {
+        calculateTalent();
+      }
     }
 
     changed = false;
@@ -273,6 +367,14 @@
       return prev;
     }, {});
 
+    const talentRes = Object.keys(talentMaterial.items).reduce((prev, item) => {
+      if (talentMaterial.items[item].amount > 0) {
+        prev[item] = talentMaterial.items[item].amount;
+      }
+
+      return prev;
+    }, {});
+
     addTodo({
       type: 'character',
       character: withAscension ? selectedCharacter : null,
@@ -281,6 +383,7 @@
         mora: moraNeeded,
         ...levelRes,
         ...ascensionRes,
+        ...talentRes,
       },
     });
 
@@ -353,6 +456,38 @@
           </Checkbox>
         </div>
       {/each}
+      <div class="mt-4">
+        {#if withAscension}
+          <Check on:change={onChange} bind:checked={withTalent}>Calculate Talent Material?</Check>
+        {/if}
+        {#if withTalent}
+          <p class="text-white text-center mt-3">Will calculate all talent to level {maxTalentLevel}</p>
+          <p class="text-white text-center mt-3">Input the 1st, 2nd & 3rd current talent level</p>
+          <div class="grid grid-cols-3 gap-2 mt-2">
+            <Input
+              on:change={onChange}
+              type="number"
+              min={1}
+              max={maxTalentLevel}
+              bind:value={currentTalentLevel.first}
+              placeholder="1st talent lvl" />
+            <Input
+              on:change={onChange}
+              type="number"
+              min={1}
+              max={maxTalentLevel}
+              bind:value={currentTalentLevel.second}
+              placeholder="2nd talent lvl" />
+            <Input
+              on:change={onChange}
+              type="number"
+              min={1}
+              max={maxTalentLevel}
+              bind:value={currentTalentLevel.third}
+              placeholder="3rd talent lvl" />
+          </div>
+        {/if}
+      </div>
     </div>
     <div class="md:col-span-2 xl:col-span-1">
       <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}>Calculate</Button>
@@ -396,6 +531,24 @@
               {/if}
             {/each}
             {#each Object.entries(ascensionResouce) as [id, item]}
+              {#if item.amount > 0}
+                <tr>
+                  <td class="text-right border-b border-gray-700 py-1">
+                    <span class="text-white mr-2 whitespace-no-wrap">{item.amount}
+                      <Icon size={0.5} path={mdiClose} /></span>
+                  </td>
+                  <td class="border-b border-gray-700 py-1">
+                    <span class="text-white">
+                      <span class="w-6 inline-block">
+                        <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={item.name} />
+                      </span>
+                      {item.name}
+                    </span>
+                  </td>
+                </tr>
+              {/if}
+            {/each}
+            {#each Object.entries(talentMaterial.items) as [id, item]}
               {#if item.amount > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">

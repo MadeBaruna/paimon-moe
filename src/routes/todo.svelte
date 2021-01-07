@@ -1,6 +1,7 @@
 <script>
   import { getContext, tick } from 'svelte';
   import { mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading } from '@mdi/js';
+  import dayjs from 'dayjs';
   import { todos, loading } from '../stores/todo';
   import { itemList } from '../data/itemList';
   import Masonry from 'svelte-masonry/Masonry.svelte';
@@ -13,6 +14,8 @@
   let refreshLayout;
   let numberFormat = Intl.NumberFormat();
   let adding = false;
+  let todayOnly = false;
+  let today = dayjs().format('dddd').toLowerCase();
 
   async function reorder(index, pos) {
     if ((index === 0 && pos === -1) || (index === $todos.length - 1 && pos === 1)) return;
@@ -54,6 +57,10 @@
     );
   }
 
+  function toggleTodayOnly() {
+    todayOnly = !todayOnly;
+  }
+
   function decrease(key, val) {
     todos.update((n) => {
       let i = 0;
@@ -77,6 +84,8 @@
 
   $: summary = $todos.reduce((prev, current) => {
     for (const [id, amount] of Object.entries(current.resources)) {
+      if (todayOnly && itemList[id].day && !itemList[id].day.includes(today)) continue;
+
       if (prev[id] === undefined) {
         prev[id] = 0;
       }
@@ -98,7 +107,10 @@
       {#if $loading}
         <Icon path={mdiLoading} color="white" spin />
       {:else if $todos.length > 0}
-        <p class="font-bold text-xl mb-4">Summary</p>
+        <div>
+          <Button className="float-right" size="md" on:click={toggleTodayOnly}>Show {todayOnly ? 'All Day' : 'Today Only'}</Button>
+          <p class="font-bold text-xl mb-4">Summary</p>
+        </div>
       {:else}
         <p class="font-bold text-xl">Nothing to do yet 😀<br />Add some here or from the Calculator!</p>
       {/if}

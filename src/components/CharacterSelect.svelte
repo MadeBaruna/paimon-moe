@@ -5,7 +5,7 @@
   import { mdiChevronDown } from '@mdi/js';
 
   import Icon from './Icon.svelte';
-  import { characters as characterList } from '../data/charactersAscension';
+  import { characters as characterList } from '../data/characters';
 
   const dispatch = createEventDispatcher();
 

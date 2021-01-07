@@ -1,7 +1,8 @@
 {
-    "editor.tabSize": 2,
-    "editor.detectIndentation": false,
-    "[javascript]": {
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "prettier.disableLanguages": [],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
