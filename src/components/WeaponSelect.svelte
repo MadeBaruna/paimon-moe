@@ -130,7 +130,7 @@
     {/if}
     <input
       bind:this={input}
-      class={`bg-transparent focus:outline-none h-full ${nothingSelected ? 'text-gray-500' : 'text-white'}`}
+      class={`bg-transparent focus:outline-none h-full max-w-full ${nothingSelected ? 'text-gray-500' : 'text-white'}`}
       {placeholder}
       value={nothingSelected || focused ? search : label}
       on:input={onInput} />
