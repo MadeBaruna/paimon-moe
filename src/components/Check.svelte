@@ -1,6 +1,7 @@
 <script>
   export let checked = false;
   export let disabled = false;
+  export let className = '';
 </script>
 
 <style>
@@ -27,7 +28,7 @@
   }
 </style>
 
-<label class="checkbox-wrapper flex flex-1 pl-4 items-center bg-background rounded-2xl h-14 cursor-pointer">
+<label class={`checkbox-wrapper flex flex-1 pl-4 items-center bg-background rounded-2xl h-14 cursor-pointer ${className}`}>
   <span class="flex-1 text-white"><slot /></span>
   <input {disabled} class="w-0 h-0 opacity-0" on:change bind:checked type="checkbox" />
   <svg class="checkbox border-4 border-item w-10 h-10 rounded-xl mr-2" viewBox="0 0 100 100">

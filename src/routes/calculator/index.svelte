@@ -25,7 +25,7 @@
 <svelte:head>
   <title>Calculator - Paimon.moe</title>
 </svelte:head>
-<div class="pt-20 lg:ml-64 lg:pt-8 p-8">
+<div class="pt-20 lg:ml-64 lg:pt-8 p-4 md:p-8">
   <div
     class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mb-2"
     bind:this={weaponCalc}>

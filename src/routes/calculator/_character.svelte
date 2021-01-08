@@ -397,15 +397,16 @@
 <div class="bg-item rounded-xl p-4">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
     <div>
-      <div class="grid gap-2">
-        <Check on:change={onChange} bind:checked={withAscension}>Calculate Ascension Material?</Check>
+      <div>
+        <Check className="mb-2" on:change={onChange} bind:checked={withAscension}>Calculate Ascension Material?</Check>
         {#if withAscension}
           <CharacterSelect on:change={onChange} bind:selected={selectedCharacter} placeholder="Select character" />
         {/if}
 
-        <div class="grid gap-2">
-          <p class="text-white text-center mt-3">Current Character Level, Exp, & Ascension</p>
+        <div>
+          <p class="text-white text-center mt-3 mb-2">Current Character Level, Exp, & Ascension</p>
           <Input
+            className="mb-2"
             on:change={onChange}
             type="number"
             min={1}
@@ -413,6 +414,7 @@
             bind:value={currentLevel}
             placeholder="Input current character level..." />
           <Input
+            className="mb-2"
             on:change={onChange}
             type="number"
             min={0}
@@ -422,9 +424,10 @@
             <AscensionSelector min={minAscension} bind:value={currentAscension} on:change={onChange} />
           {/if}
         </div>
-        <div class="grid gap-2">
-          <p class="text-white text-center mt-3">Intended Character Level & Ascension</p>
+        <div>
+          <p class="text-white text-center mt-3 mb-2">Intended Character Level & Ascension</p>
           <Input
+            className="mb-2"
             on:change={onChange}
             type="number"
             min={currentLevel}

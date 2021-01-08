@@ -98,13 +98,13 @@
   <title>Characters - Paimon.moe</title>
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
-  <h1 class="font-display px-8 font-black text-5xl text-white">Characters</h1>
-  <p class="text-gray-400 px-8 font-medium pb-4" style="margin-top: -1rem;">
+  <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">Characters</h1>
+  <p class="text-gray-400 px-4 md:px-8 font-medium pb-4" style="margin-top: -1rem;">
     ※ Stat numbers are at level 80 Ascension 6. You can also click the header to sort!
   </p>
 
   <div class="block overflow-x-auto whitespace-no-wrap pb-8">
-    <div class="px-8 table">
+    <div class="px-4 md:px-8 table">
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>
           <th style="min-width: 4rem;" />

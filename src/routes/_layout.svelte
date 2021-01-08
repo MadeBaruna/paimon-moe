@@ -40,7 +40,7 @@
     </main>
   </DataSync>
 </Modal>
-<p class="lg:ml-64 px-8 py-4 text-gray-600">
+<p class="lg:ml-64 px-4 md:px-8 py-4 text-gray-600">
   Paimon.moe is not affiliated with miHoYo.<br />
   Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
 </p>

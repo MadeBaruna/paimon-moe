@@ -46,7 +46,7 @@
   <title>Settings - Paimon.moe</title>
 </svelte:head>
 
-<div class="lg:ml-64 pt-20 px-8 lg:pt-8">
+<div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8">
   <div class="bg-item rounded-xl mb-4 p-4">
     <p class="text-white">Data Version: <b>1.2</b></p>
   </div>

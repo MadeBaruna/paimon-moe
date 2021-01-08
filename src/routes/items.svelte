@@ -94,12 +94,12 @@
   <title>Item List - Paimon.moe</title>
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
-  <h1 class="font-display px-8 font-black text-5xl text-white">Item List</h1>
-  <p class="text-gray-400 px-8 font-medium pb-4" style="margin-top: -1rem;">
+  <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">Item List</h1>
+  <p class="text-gray-400 px-4 md:px-8 font-medium pb-4" style="margin-top: -1rem;">
     ※ Click the item image to add it to the todo list
   </p>
   <div class="block overflow-x-auto whitespace-no-wrap pb-8">
-    <div class="px-8 table max-w-full">
+    <div class="px-4 md:px-8 table max-w-full">
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>
           <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
@@ -180,7 +180,7 @@
     </div>
   </div>
   <div class="block overflow-x-auto whitespace-no-wrap pb-8">
-    <div class="px-8 table max-w-full">
+    <div class="px-4 md:px-8 table max-w-full">
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>
           <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">

@@ -326,8 +326,8 @@
 <div class="bg-item rounded-xl p-4">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
     <div>
-      <div class="grid gap-2">
-        <Check on:change={onChange} bind:checked={withAscension}>Calculate Ascension Material?</Check>
+      <div>
+        <Check className="mb-2" on:change={onChange} bind:checked={withAscension}>Calculate Ascension Material?</Check>
         {#if !withAscension}
           <Select
             on:change={onChange}
@@ -339,9 +339,10 @@
           <WeaponSelect on:change={onChange} bind:selected={selectedWeapon} placeholder="Select weapon" />
         {/if}
 
-        <div class="grid gap-2">
-          <p class="text-white text-center mt-3">Current Weapon Level, Exp, & Ascension</p>
+        <div>
+          <p class="text-white text-center mt-3 mb-2">Current Weapon Level, Exp, & Ascension</p>
           <Input
+            className="mb-2"
             on:change={onChange}
             type="number"
             min={1}
@@ -349,6 +350,7 @@
             bind:value={currentLevel}
             placeholder="Input current weapon level..." />
           <Input
+            className="mb-2"
             on:change={onChange}
             type="number"
             min={0}
@@ -358,9 +360,10 @@
             <AscensionSelector min={minAscension} bind:value={currentAscension} on:change={onChange} />
           {/if}
         </div>
-        <div class="grid gap-2">
-          <p class="text-white text-center mt-3">Intended Weapon Level & Ascension</p>
+        <div>
+          <p class="text-white text-center mt-3 mb-2">Intended Weapon Level & Ascension</p>
           <Input
+            className="mb-2"
             on:change={onChange}
             type="number"
             min={currentLevel}
