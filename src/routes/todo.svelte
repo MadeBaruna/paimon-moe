@@ -112,7 +112,7 @@
 <svelte:head>
   <title>Todo List - Paimon.moe</title>
 </svelte:head>
-<div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8">
+<div class="lg:ml-64 pt-20 px-2 md:px-8 lg:pt-8">
   <Masonry stretchFirst={true} bind:refreshLayout>
     <h1 class="font-display font-black text-3xl lg:text-left lg:text-5xl text-white">Todo List</h1>
     <div class="bg-item rounded-xl p-4 text-white">
