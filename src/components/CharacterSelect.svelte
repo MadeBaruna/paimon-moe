@@ -2,7 +2,7 @@
   import { createEventDispatcher } from 'svelte';
   import VirtualList from './VirtualList.svelte';
   import { fade } from 'svelte/transition';
-  import { mdiChevronDown } from '@mdi/js';
+  import { mdiChevronDown, mdiCloseCircle } from '@mdi/js';
 
   import Icon from './Icon.svelte';
   import { characters as characterList } from '../data/characters';
@@ -29,6 +29,7 @@
   }
 
   function select(val) {
+    console.log('select', val);
     selected = val;
     focused = false;
     hoveredIndex = -1;
@@ -132,7 +133,19 @@
       {placeholder}
       value={nothingSelected || focused ? search : label}
       on:input={onInput} />
-    <Icon path={mdiChevronDown} color="white" className={`absolute right-0 mr-4 duration-100 ease-in ${iconClasses}`} />
+    {#if selected}
+      <div class="absolute right-0 mr-4 cursor-pointer" on:click|stopPropagation={() => select(null)}>
+        <Icon
+          path={mdiCloseCircle}
+          color="white"
+          className={`${iconClasses}`} />
+      </div>
+    {:else}
+      <Icon
+        path={mdiChevronDown}
+        color="white"
+        className={`absolute right-0 mr-4 duration-100 ease-in ${iconClasses}`} />
+    {/if}
   </div>
   {#if focused}
     <div

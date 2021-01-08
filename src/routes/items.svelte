@@ -4,6 +4,9 @@
   import { itemList } from '../data/itemList';
   import { weaponList } from '../data/weaponList';
 
+  import CharacterSelect from '../components/CharacterSelect.svelte';
+  import WeaponSelect from '../components/WeaponSelect.svelte';
+
   let dayName = {
     monday_thursday: ['Monday', 'Thursday'],
     tuesday_friday: ['Tuesday', 'Friday'],
@@ -24,40 +27,80 @@
 
   let allItems = {};
 
-  function parseData() {
-    for (const [_, character] of Object.entries(characters)) {
-      const item = character.material.book[0];
-      if (charactersDays[item.day.join('_')][item.id] === undefined) {
-        charactersDays[item.day.join('_')][item.id] = [];
-      }
-      charactersDays[item.day.join('_')][item.id].push(character.id);
+  let selectedCharacter = null;
+  let selectedWeapon = null;
 
-      const ascension = character.ascension[0];
-      for (const item of ascension.items) {
-        if (item.amount) {
-          if (allItems[item.item.id] === undefined) {
-            allItems[item.item.id] = {};
+  function parseData() {
+    dayName = {
+      monday_thursday: ['Monday', 'Thursday'],
+      tuesday_friday: ['Tuesday', 'Friday'],
+      wednesday_saturday: ['Wednesday', 'Saturday'],
+    };
+
+    charactersDays = {
+      monday_thursday: {},
+      tuesday_friday: {},
+      wednesday_saturday: {},
+    };
+
+    weaponsDays = {
+      monday_thursday: {},
+      tuesday_friday: {},
+      wednesday_saturday: {},
+    };
+
+    allItems = {};
+
+    console.log('parsing', selectedCharacter);
+
+    if (
+      (selectedCharacter === null && selectedWeapon === null) ||
+      (selectedCharacter !== null && selectedWeapon === null) ||
+      (selectedCharacter !== null && selectedWeapon !== null)
+    ) {
+      for (const [_, character] of Object.entries(characters)) {
+        if (selectedCharacter !== null && selectedCharacter.id !== character.id) continue;
+
+        const item = character.material.book[0];
+        if (charactersDays[item.day.join('_')][item.id] === undefined) {
+          charactersDays[item.day.join('_')][item.id] = [];
+        }
+        charactersDays[item.day.join('_')][item.id].push(character.id);
+
+        const ascension = character.ascension[0];
+        for (const item of ascension.items) {
+          if (item.amount) {
+            if (allItems[item.item.id] === undefined) {
+              allItems[item.item.id] = {};
+            }
+            allItems[item.item.id][character.id] = 'characters';
           }
-          allItems[item.item.id][character.id] = 'characters';
         }
       }
     }
 
-    for (const [_, weapon] of Object.entries(weaponList)) {
-      if (weapon.rarity < 4) continue;
-      const items = weapon.ascension[0].items;
-      for (const itemData of items) {
-        const item = itemData.item;
-        if (item.day) {
-          if (weaponsDays[item.day.join('_')][item.id] === undefined) {
-            weaponsDays[item.day.join('_')][item.id] = [];
+    if (
+      (selectedCharacter === null && selectedWeapon === null) ||
+      (selectedCharacter === null && selectedWeapon !== null) ||
+      (selectedCharacter !== null && selectedWeapon !== null)
+    ) {
+      for (const [_, weapon] of Object.entries(weaponList)) {
+        if (selectedWeapon !== null && selectedWeapon.id !== weapon.id) continue;
+
+        const items = weapon.ascension[0].items;
+        for (const itemData of items) {
+          const item = itemData.item;
+          if (item.day) {
+            if (weaponsDays[item.day.join('_')][item.id] === undefined) {
+              weaponsDays[item.day.join('_')][item.id] = [];
+            }
+            weaponsDays[item.day.join('_')][item.id].push(weapon.id);
+          } else if (itemData.amount) {
+            if (allItems[item.id] === undefined) {
+              allItems[item.id] = {};
+            }
+            allItems[item.id][weapon.id] = 'weapons';
           }
-          weaponsDays[item.day.join('_')][item.id].push(weapon.id);
-        } else if (itemData.amount) {
-          if (allItems[item.id] === undefined) {
-            allItems[item.id] = {};
-          }
-          allItems[item.id][weapon.id] = 'weapons';
         }
       }
     }
@@ -66,6 +109,9 @@
   }
 
   parseData();
+
+  $: selectedCharacter, parseData();
+  $: selectedWeapon, parseData();
 </script>
 
 <style>
@@ -88,6 +134,12 @@
       @apply overflow-y-hidden;
     }
   }
+
+  tr:last-child {
+    td {
+      @apply border-b-0;
+    }
+  }
 </style>
 
 <svelte:head>
@@ -98,6 +150,10 @@
   <p class="text-gray-400 px-4 md:px-8 font-medium pb-4" style="margin-top: -1rem;">
     ※ Click the item image to add it to the todo list
   </p>
+  <div class="pb-4 px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-2 max-w-screen-md">
+    <CharacterSelect bind:selected={selectedCharacter} placeholder="Search character" />
+    <WeaponSelect bind:selected={selectedWeapon} placeholder="Search weapon" />
+  </div>
   <div class="block overflow-x-auto whitespace-no-wrap pb-8">
     <div class="px-4 md:px-8 table max-w-full">
       <table class="w-full block p-4 bg-item rounded-xl">
@@ -109,14 +165,15 @@
             Materials
           </th>
           <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
-            Characters
+            Characters & Weapons
           </th>
         </thead>
         <tbody>
           {#each Object.entries(dayName) as [day, dayArr]}
             {#each Object.entries(charactersDays[day]) as [itemName, chars], index}
               <tr>
-                <td class="py-2">
+                <td
+                  class={index === Object.entries(charactersDays[day]).length - 1 && Object.entries(weaponsDays[day]).length === 0 ? 'border-gray-700 border-b py-2' : 'py-2'}>
                   {#if index === 0}{dayArr[0]}<br />{dayArr[1]}{/if}
                 </td>
                 <td class="border-gray-700 border-b text-center align-middle py-2">
@@ -137,7 +194,11 @@
                     <div
                       class="h-12 w-12 md:h-14 md:w-14 cursor-pointer mr-2 hover:bg-background rounded-xl 
                        inline-flex items-center justify-center align-top">
-                      <img class="w-full max-h-full object-contain" src={`/images/characters/${char}.png`} alt={char} />
+                      <img
+                        class="w-full max-h-full object-contain"
+                        src={`/images/characters/${char}.png`}
+                        alt={char}
+                        title={characters[char].name} />
                     </div>
                   {/each}
                 </td>
@@ -146,7 +207,9 @@
             {#each Object.entries(weaponsDays[day]) as [itemName, weapons], index}
               <tr>
                 <td
-                  class={index === Object.entries(charactersDays[day]).length - 1 ? 'border-gray-700 border-b py-2' : 'py-2'} />
+                  class={index === Object.entries(weaponsDays[day]).length - 1 || Object.entries(charactersDays[day]).length === 0 ? 'border-gray-700 border-b py-2' : 'py-2'}>
+                  {#if index === 0 && Object.entries(charactersDays[day]).length === 0}{dayArr[0]}<br />{dayArr[1]}{/if}
+                </td>
                 <td class="border-gray-700 border-b text-center py-2">
                   <div class="flex items-center">
                     <div
@@ -157,7 +220,7 @@
                         src={`/images/items/${itemName}.png`}
                         alt={itemName} />
                     </div>
-                    <span class="whitespace-normal text-left w-0">{itemGroup[itemName].name}</span>
+                    <span class="whitespace-normal text-left w-20">{itemGroup[itemName].name}</span>
                   </div>
                 </td>
                 <td class="border-gray-700 border-b weapon-cell pt-2">
@@ -168,7 +231,8 @@
                       <img
                         class="w-full max-h-full object-contain"
                         src={`/images/weapons/${weapon}.png`}
-                        alt={weapon} />
+                        alt={weapon}
+                        title={weaponList[weapon].name} />
                     </div>
                   {/each}
                 </td>
@@ -187,7 +251,7 @@
             Material
           </th>
           <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
-            Characters
+            Characters & Weapons
           </th>
         </thead>
         <tbody>
@@ -213,7 +277,8 @@
                     <img
                       class="w-full max-h-full object-contain"
                       src={`/images/${type}/${charName}.png`}
-                      alt={charName} />
+                      alt={charName}
+                      title={type === 'characters' ? characters[charName].name : weaponList[charName].name} />
                   </div>
                 {/each}
               </td>
