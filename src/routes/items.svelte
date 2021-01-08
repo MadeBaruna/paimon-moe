@@ -9,7 +9,7 @@
   import CharacterSelect from '../components/CharacterSelect.svelte';
   import WeaponSelect from '../components/WeaponSelect.svelte';
   import TodoAddModal from '../components/TodoAddModal.svelte';
-import { addTodo } from '../stores/todo';
+  import { addTodo } from '../stores/todo';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
