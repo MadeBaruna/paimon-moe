@@ -84,6 +84,7 @@
   $: currentLevel, updateMinAscension();
   $: intendedLevel, updateMinIntendedAscension();
   $: intendedAscension, updateMaxTalentLevel();
+  $: withAscension, checkWithTalent();
 
   $: canCalculate =
     (withAscension ? selectedCharacter !== null : true) &&
@@ -95,6 +96,12 @@
     intendedLevel !== '' &&
     intendedLevel > 0 &&
     intendedLevel <= 90;
+
+  function checkWithTalent() {
+    if (!withAscension) {
+      withTalent = false;
+    }
+  }
 
   function updateIntendedAscension() {
     intendedAscension = Math.max(currentAscension, intendedAscension);
