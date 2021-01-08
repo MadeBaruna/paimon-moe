@@ -43,6 +43,9 @@ module.exports = {
       height: {
         14: '3.5rem',
       },
+      width: {
+        14: '3.5rem',
+      },
     },
   },
   variants: {
@@ -51,6 +54,7 @@ module.exports = {
     backgroundImage: ['responsive', 'hover', 'focus'],
     borderColor: ['responsive', 'hover', 'focus', 'focus-within', 'disabled'],
     opacity: ['group-hover', 'responsive', 'hover', 'focus', 'disabled'],
+    borderWidth: ['responsive', 'last', 'hover', 'focus'],
   },
   plugins: [],
   future: {

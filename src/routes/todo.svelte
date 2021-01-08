@@ -1,7 +1,6 @@
 <script>
   import { getContext, tick } from 'svelte';
-  import { mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading } from '@mdi/js';
-  import dayjs from 'dayjs';
+  import { mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading, mdiPlus } from '@mdi/js';
   import { todos, loading } from '../stores/todo';
   import { itemList } from '../data/itemList';
   import Masonry from 'svelte-masonry/Masonry.svelte';
@@ -109,12 +108,9 @@
       {#if $loading}
         <Icon path={mdiLoading} color="white" spin />
       {:else if $todos.length > 0}
-        <div>
-          <Button className="float-right" size="md" on:click={toggleTodayOnly}>
-            Show
-            {todayOnly ? 'All Day' : 'Today Only'}
-          </Button>
-          <p class="font-bold text-xl mb-4">Summary</p>
+        <div class="flex items-center mb-4">
+          <p class="font-bold text-xl mr-2 flex-1">Summary</p>
+          <Button size="md" on:click={toggleTodayOnly}>Show {todayOnly ? 'All Day' : 'Today Only'}</Button>
         </div>
       {:else}
         <p class="font-bold text-xl">Nothing to do yet 😀<br />Add some here or from the Calculator!</p>

@@ -100,7 +100,7 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-8 font-black text-5xl text-white">Characters</h1>
   <p class="text-gray-400 px-8 font-medium pb-4" style="margin-top: -1rem;">
-    ※ Stat numbers are at level 60. You can also click the header to sort!
+    ※ Stat numbers are at level 80 Ascension 6. You can also click the header to sort!
   </p>
 
   <div class="block overflow-x-auto whitespace-no-wrap pb-8">

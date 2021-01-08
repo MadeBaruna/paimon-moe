@@ -1,0 +1,226 @@
+<script>
+  import { characters } from '../data/characters';
+  import { itemGroup } from '../data/itemGroup';
+  import { itemList } from '../data/itemList';
+  import { weaponList } from '../data/weaponList';
+
+  let dayName = {
+    monday_thursday: ['Monday', 'Thursday'],
+    tuesday_friday: ['Tuesday', 'Friday'],
+    wednesday_saturday: ['Wednesday', 'Saturday'],
+  };
+
+  let charactersDays = {
+    monday_thursday: {},
+    tuesday_friday: {},
+    wednesday_saturday: {},
+  };
+
+  let weaponsDays = {
+    monday_thursday: {},
+    tuesday_friday: {},
+    wednesday_saturday: {},
+  };
+
+  let allItems = {};
+
+  function parseData() {
+    for (const [_, character] of Object.entries(characters)) {
+      const item = character.material.book[0];
+      if (charactersDays[item.day.join('_')][item.id] === undefined) {
+        charactersDays[item.day.join('_')][item.id] = [];
+      }
+      charactersDays[item.day.join('_')][item.id].push(character.id);
+
+      const ascension = character.ascension[0];
+      for (const item of ascension.items) {
+        if (item.amount) {
+          if (allItems[item.item.id] === undefined) {
+            allItems[item.item.id] = {};
+          }
+          allItems[item.item.id][character.id] = 'characters';
+        }
+      }
+    }
+
+    for (const [_, weapon] of Object.entries(weaponList)) {
+      if (weapon.rarity < 4) continue;
+      const items = weapon.ascension[0].items;
+      for (const itemData of items) {
+        const item = itemData.item;
+        if (item.day) {
+          if (weaponsDays[item.day.join('_')][item.id] === undefined) {
+            weaponsDays[item.day.join('_')][item.id] = [];
+          }
+          weaponsDays[item.day.join('_')][item.id].push(weapon.id);
+        } else if (itemData.amount) {
+          if (allItems[item.id] === undefined) {
+            allItems[item.id] = {};
+          }
+          allItems[item.id][weapon.id] = 'weapons';
+        }
+      }
+    }
+
+    console.log(allItems);
+  }
+
+  parseData();
+</script>
+
+<style>
+  td {
+    @apply text-white;
+    @apply px-4;
+    @apply align-top;
+
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    &.weapon-cell {
+      min-width: 29.5rem;
+      @apply whitespace-normal;
+      @apply overflow-x-scroll;
+      @apply overflow-y-hidden;
+    }
+  }
+</style>
+
+<svelte:head>
+  <title>Item List - Paimon.moe</title>
+</svelte:head>
+<div class="lg:ml-64 pt-20 lg:pt-8">
+  <h1 class="font-display px-8 font-black text-5xl text-white">Item List</h1>
+  <p class="text-gray-400 px-8 font-medium pb-4" style="margin-top: -1rem;">
+    ※ Click the item image to add it to the todo list
+  </p>
+  <div class="block overflow-x-auto whitespace-no-wrap pb-8">
+    <div class="px-8 table max-w-full">
+      <table class="w-full block p-4 bg-item rounded-xl">
+        <thead>
+          <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
+            Days
+          </th>
+          <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
+            Materials
+          </th>
+          <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
+            Characters
+          </th>
+        </thead>
+        <tbody>
+          {#each Object.entries(dayName) as [day, dayArr]}
+            {#each Object.entries(charactersDays[day]) as [itemName, chars], index}
+              <tr>
+                <td class="py-2">
+                  {#if index === 0}{dayArr[0]}<br />{dayArr[1]}{/if}
+                </td>
+                <td class="border-gray-700 border-b text-center align-middle py-2">
+                  <div class="flex items-center">
+                    <div
+                      class="h-12 w-12 md:h-14 md:w-14 mr-2 cursor-pointer hover:bg-background rounded-xl
+                       inline-flex items-center justify-center align-top">
+                      <img
+                        class="w-full max-h-full object-contain"
+                        src={`/images/items/${itemName}.png`}
+                        alt={itemName} />
+                    </div>
+                    <span>{itemGroup[itemName].name}</span>
+                  </div>
+                </td>
+                <td class="border-gray-700 border-b py-2">
+                  {#each chars as char}
+                    <div
+                      class="h-12 w-12 md:h-14 md:w-14 cursor-pointer mr-2 hover:bg-background rounded-xl 
+                       inline-flex items-center justify-center align-top">
+                      <img class="w-full max-h-full object-contain" src={`/images/characters/${char}.png`} alt={char} />
+                    </div>
+                  {/each}
+                </td>
+              </tr>
+            {/each}
+            {#each Object.entries(weaponsDays[day]) as [itemName, weapons], index}
+              <tr>
+                <td
+                  class={index === Object.entries(charactersDays[day]).length - 1 ? 'border-gray-700 border-b py-2' : 'py-2'} />
+                <td class="border-gray-700 border-b text-center py-2">
+                  <div class="flex items-center">
+                    <div
+                      class="h-12 w-12 md:h-14 md:w-14 mr-2 cursor-pointer hover:bg-background rounded-xl 
+                       inline-flex items-center justify-center align-top">
+                      <img
+                        class="w-full max-h-full object-contain"
+                        src={`/images/items/${itemName}.png`}
+                        alt={itemName} />
+                    </div>
+                    <span class="whitespace-normal text-left w-0">{itemGroup[itemName].name}</span>
+                  </div>
+                </td>
+                <td class="border-gray-700 border-b weapon-cell pt-2">
+                  {#each weapons as weapon}
+                    <div
+                      class="h-12 w-12 md:h-14 md:w-14 cursor-pointer mr-2 mb-2 hover:bg-background rounded-xl 
+                       inline-flex items-center justify-center align-top">
+                      <img
+                        class="w-full max-h-full object-contain"
+                        src={`/images/weapons/${weapon}.png`}
+                        alt={weapon} />
+                    </div>
+                  {/each}
+                </td>
+              </tr>
+            {/each}
+          {/each}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="block overflow-x-auto whitespace-no-wrap pb-8">
+    <div class="px-8 table max-w-full">
+      <table class="w-full block p-4 bg-item rounded-xl">
+        <thead>
+          <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
+            Material
+          </th>
+          <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
+            Characters
+          </th>
+        </thead>
+        <tbody>
+          {#each Object.entries(allItems).sort((a, b) => a[0].localeCompare(b[0])) as [itemName, char]}
+            <tr>
+              <td class="border-gray-700 border-b align-middle py-2">
+                <div class="flex items-center">
+                  <div
+                    class="h-12 w-12 md:h-14 md:w-14 mr-2 cursor-pointer hover:bg-background rounded-xl inline-flex items-center justify-center">
+                    <img
+                      class="w-full max-h-full object-contain"
+                      src={`/images/items/${itemName}.png`}
+                      alt={itemName} />
+                  </div>
+                  <span>{itemList[itemName].name}</span>
+                </div>
+              </td>
+              <td class="border-gray-700 border-b align-middle pt-2 weapon-cell">
+                {#each Object.entries(char) as [charName, type]}
+                  <div
+                    class="h-12 w-12 md:h-14 md:w-14 mb-2 cursor-pointer mr-2 hover:bg-background rounded-xl 
+             inline-flex items-center justify-center align-top">
+                    <img
+                      class="w-full max-h-full object-contain"
+                      src={`/images/${type}/${charName}.png`}
+                      alt={charName} />
+                  </div>
+                {/each}
+              </td>
+            </tr>
+          {/each}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

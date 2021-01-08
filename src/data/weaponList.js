@@ -600,7 +600,56 @@ export const weaponList = {
     secondary: 'ATK',
     type: weapons.sword,
     source: 'wish',
-    ascension: [],
+    ascension: [
+      {
+        items: [
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+        ],
+        mora: 0,
+      },
+      {
+        items: [
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+        ],
+        mora: 0,
+      },
+      {
+        items: [
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+        ],
+        mora: 0,
+      },
+      {
+        items: [
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+        ],
+        mora: 0,
+      },
+      {
+        items: [
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+        ],
+        mora: 0,
+      },
+      {
+        items: [
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+          { item: itemList.unknown, amount: 0 },
+        ],
+        mora: 0,
+      },
+    ],
   },
   skyward_blade: {
     name: 'Skyward Blade',
