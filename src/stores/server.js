@@ -28,6 +28,5 @@ export const getCurrentDay = () => {
     day = 6;
   }
 
-  console.log(weekdays[day], weekdays[time.day()], time.format());
   return weekdays[day];
 };

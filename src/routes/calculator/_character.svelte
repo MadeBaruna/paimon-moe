@@ -187,8 +187,6 @@
     const current = Math.max(currentAscension, 0);
     const target = intendedAscension;
 
-    console.log(selectedCharacter.ascension);
-
     const result = selectedCharacter.ascension.slice(current, target).reduce(
       (sum, character, index) => {
         if (character.mora === 0) {
@@ -225,8 +223,6 @@
 
     moraNeeded = moraNeeded + result.mora;
     ascensionResouce = result.items;
-
-    console.log(ascensionResouce);
   }
 
   function calculateTalent() {
@@ -267,8 +263,6 @@
     });
 
     moraNeeded = moraNeeded + talentMaterial.mora;
-
-    console.log(talentMaterial);
   }
 
   function calculate() {

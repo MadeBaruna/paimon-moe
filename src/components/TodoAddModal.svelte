@@ -17,7 +17,6 @@
   let amount = 1;
 
   function select(index, item) {
-    console.log(index, item);
     selected = index;
     selectedItem = item;
   }

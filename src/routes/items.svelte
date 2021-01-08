@@ -133,8 +133,6 @@ import { addTodo } from '../stores/todo';
         }
       }
     }
-
-    console.log(allItems);
   }
 
   parseData();

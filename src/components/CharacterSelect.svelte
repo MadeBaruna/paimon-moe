@@ -29,7 +29,6 @@
   }
 
   function select(val) {
-    console.log('select', val);
     selected = val;
     focused = false;
     hoveredIndex = -1;
