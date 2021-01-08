@@ -124,7 +124,7 @@
           <Button size="md" on:click={toggleTodayOnly}>Show {todayOnly ? 'All Day' : 'Today Only'}</Button>
         </div>
       {:else}
-        <p class="font-bold text-xl">Nothing to do yet 😀<br />Add some here or from the Calculator!</p>
+        <p class="font-bold text-xl">Nothing to do yet 😀<br />Add some from the Items page or the Calculator!</p>
       {/if}
       <table class="w-full">
         {#each Object.entries(summary) as [id, amount], i}
