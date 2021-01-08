@@ -1,4 +1,6 @@
 <script>
+  import { getContext } from 'svelte';
+
   import { characters } from '../data/characters';
   import { itemGroup } from '../data/itemGroup';
   import { itemList } from '../data/itemList';
@@ -6,6 +8,10 @@
 
   import CharacterSelect from '../components/CharacterSelect.svelte';
   import WeaponSelect from '../components/WeaponSelect.svelte';
+  import TodoAddModal from '../components/TodoAddModal.svelte';
+import { addTodo } from '../stores/todo';
+
+  const { open: openModal, close: closeModal } = getContext('simple-modal');
 
   let dayName = {
     monday_thursday: ['Monday', 'Thursday'],
@@ -30,6 +36,31 @@
   let selectedCharacter = null;
   let selectedWeapon = null;
 
+  function addTodoItem(item, amount) {
+    addTodo({
+      type: 'item',
+      item,
+      amount,
+    });
+
+    closeModal();
+  }
+
+  function openAddTodo(item) {
+    openModal(
+      TodoAddModal,
+      {
+        item,
+        addTodo: addTodoItem,
+        cancel: closeModal,
+      },
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '400px' },
+      },
+    );
+  }
+
   function parseData() {
     dayName = {
       monday_thursday: ['Monday', 'Thursday'],
@@ -50,8 +81,6 @@
     };
 
     allItems = {};
-
-    console.log('parsing', selectedCharacter);
 
     if (
       (selectedCharacter === null && selectedWeapon === null) ||
@@ -179,6 +208,7 @@
                 <td class="border-gray-700 border-b text-center align-middle py-2">
                   <div class="flex items-center">
                     <div
+                      on:click={() => openAddTodo(itemName)}
                       class="h-12 w-12 md:h-14 md:w-14 mr-2 cursor-pointer hover:bg-background rounded-xl
                        inline-flex items-center justify-center align-top">
                       <img
@@ -213,6 +243,7 @@
                 <td class="border-gray-700 border-b text-center py-2">
                   <div class="flex items-center">
                     <div
+                      on:click={() => openAddTodo(itemName)}
                       class="h-12 w-12 md:h-14 md:w-14 mr-2 cursor-pointer hover:bg-background rounded-xl 
                        inline-flex items-center justify-center align-top">
                       <img
@@ -260,6 +291,7 @@
               <td class="border-gray-700 border-b align-middle py-2">
                 <div class="flex items-center">
                   <div
+                    on:click={() => openAddTodo(itemName)}
                     class="h-12 w-12 md:h-14 md:w-14 mr-2 cursor-pointer hover:bg-background rounded-xl inline-flex items-center justify-center">
                     <img
                       class="w-full max-h-full object-contain"

@@ -5,7 +5,34 @@ export const todos = writable([]);
 
 export function addTodo(data) {
   todos.update((value) => {
-    console.log([...value, data]);
-    return [...value, data];
+    if (data.type === 'item') {
+      const itemsIndex = value.findIndex((e) => e.type === 'item');
+
+      if (itemsIndex > -1) {
+        const items = value[itemsIndex].resources;
+
+        if (items[data.item.id] !== undefined) {
+          items[data.item.id] += data.amount;
+        } else {
+          items[data.item.id] = data.amount;
+        }
+
+        value[itemsIndex] = {
+          type: 'item',
+          resources: items,
+        };
+      } else {
+        const items = { [data.item.id]: data.amount };
+
+        value.push({
+          type: 'item',
+          resources: items,
+        });
+      }
+
+      return value;
+    } else {
+      return [...value, data];
+    }
   });
 }

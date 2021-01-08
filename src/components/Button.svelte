@@ -19,6 +19,10 @@
       textColor = 'red-400';
       borderColor = 'red-400';
       break;
+    case 'green':
+      textColor = 'green-400';
+      borderColor = 'green-400';
+      break;
   }
 
   $: switch (size) {

@@ -1,5 +1,5 @@
 <script>
-  import { getContext, tick } from 'svelte';
+  import { getContext, onMount, tick } from 'svelte';
   import { mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading, mdiPlus } from '@mdi/js';
   import { todos, loading } from '../stores/todo';
   import { itemList } from '../data/itemList';
@@ -16,6 +16,7 @@
   let adding = false;
   let todayOnly = false;
   let today = getCurrentDay();
+  let summary = [];
 
   async function reorder(index, pos) {
     if ((index === 0 && pos === -1) || (index === $todos.length - 1 && pos === 1)) return;
@@ -83,19 +84,29 @@
     });
   }
 
-  $: summary = $todos.reduce((prev, current) => {
-    for (const [id, amount] of Object.entries(current.resources)) {
-      if (todayOnly && itemList[id].day && !itemList[id].day.includes(today)) continue;
+  async function updateSummary() {
+    summary = $todos.reduce((prev, current) => {
+      for (const [id, amount] of Object.entries(current.resources)) {
+        if (todayOnly && itemList[id].day && !itemList[id].day.includes(today)) continue;
 
-      if (prev[id] === undefined) {
-        prev[id] = 0;
+        if (prev[id] === undefined) {
+          prev[id] = 0;
+        }
+
+        prev[id] += amount;
       }
 
-      prev[id] += amount;
-    }
+      return prev;
+    }, {});
 
-    return prev;
-  }, {});
+    await tick();
+    refreshLayout();
+  }
+
+  onMount(() => {});
+
+  $: $todos, updateSummary();
+  $: todayOnly, updateSummary();
 </script>
 
 <svelte:head>
@@ -176,6 +187,12 @@
             <div class="flex-1">
               <p class="font-bold">{todo.character ? todo.character.name : 'Character'}</p>
               <p class="text-gray-500">Level {`${todo.level.from}-${todo.level.to}`}</p>
+            </div>
+          {:else if todo.type === 'item'}
+            <img class="h-8 inline-block mr-2" src={`/images/items.png`} alt="Item" />
+            <div class="flex-1">
+              <p class="font-bold">Items</p>
+              <p class="text-gray-500">Added from items page</p>
             </div>
           {/if}
           <Button disabled={i === 0} on:click={() => reorder(i, -1)} rounded={false} size="sm" className="rounded-l-xl">
