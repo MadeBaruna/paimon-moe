@@ -91,7 +91,7 @@
 
   $: characters = Object.entries(characterList).sort((a, b) => a[1].name.localeCompare(b[1].name));
 
-  $: filteredCharacter = characters.filter((e) => e[1].name.toLowerCase().includes(search));
+  $: filteredCharacter = characters.filter((e) => e[1].name.toLowerCase().includes(search.toLowerCase()));
   $: maxItemRow = Math.min(6, filteredCharacter.length);
 
   $: nothingSelected = selected === null;
