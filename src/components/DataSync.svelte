@@ -3,7 +3,7 @@
 
   import dayjs from 'dayjs';
   import { onMount, getContext, setContext } from 'svelte';
-  import { driveSignedIn, driveLoading, saveId, synced } from '../stores/dataSync';
+  import { driveSignedIn, driveError, driveLoading, saveId, synced } from '../stores/dataSync';
   import { getLocalSaveJson, updateSave, updateTime, UPDATE_TIME_KEY } from '../stores/saveManager';
 
   import SyncConflictModal from '../components/SyncConflictModal.svelte';
@@ -31,8 +31,17 @@
     synced.set(false);
     const script = document.createElement('script');
     script.onload = handleClientLoad;
+    script.onerror = handleError;
     script.src = 'https://apis.google.com/js/api.js';
     document.body.appendChild(script);
+  }
+
+  function handleError() {
+    console.log('error loading google drive api');
+    driveSignedIn.set(false);
+    driveLoading.set(false);
+    driveError.set(true);
+    synced.set(true);
   }
 
   function handleClientLoad() {
@@ -212,6 +221,10 @@
         },
         function (error) {
           console.error(error);
+          driveSignedIn.set(false);
+          driveLoading.set(false);
+          driveError.set(true);
+          synced.set(true);
         },
       );
   }

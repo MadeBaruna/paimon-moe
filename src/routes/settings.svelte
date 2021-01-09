@@ -6,7 +6,7 @@
   import Icon from '../components/Icon.svelte';
   import Select from '../components/Select.svelte';
 
-  import { driveSignedIn, driveLoading, synced, localModified, lastSyncTime } from '../stores/dataSync';
+  import { driveSignedIn, driveError, driveLoading, synced, localModified, lastSyncTime } from '../stores/dataSync';
   import { server } from '../stores/server';
 
   const servers = [
@@ -63,6 +63,11 @@
     <p class="text-white mb-4">Paimon.moe can only read and write file that this site create.</p>
     {#if $driveLoading}
       <Icon path={mdiLoading} color="white" spin />
+    {:else if $driveError}
+      <Button color="red">
+        <Icon path={mdiGoogleDrive} className="mr-2" />
+        Google Drive API cannot be loaded
+      </Button>
     {:else if !$driveSignedIn}
       <Button on:click={signIn}>
         <Icon path={mdiGoogleDrive} className="mr-2" />
