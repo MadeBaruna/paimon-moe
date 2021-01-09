@@ -30,7 +30,6 @@
     unsubscribe = todos.subscribe((val) => {
       if (firstLoad) return;
 
-      console.log('todos changed', val);
       updateSave('todos', JSON.stringify(val));
     });
 

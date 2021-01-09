@@ -68,6 +68,7 @@
       }
     } catch (err) {
       console.error(err);
+      handleError();
     }
   }
 
@@ -116,6 +117,7 @@
       }
     } catch (err) {
       console.error(err);
+      handleError();
     }
   }
 
@@ -145,6 +147,7 @@
       }
     } catch (err) {
       console.error(err);
+      handleError();
     }
   }
 
@@ -170,6 +173,7 @@
       console.log(result);
     } catch (err) {
       console.error(err);
+      handleError();
     }
   }
 
@@ -186,6 +190,7 @@
       return result;
     } catch (err) {
       console.error(err);
+      handleError();
     }
   }
 
@@ -203,6 +208,7 @@
       });
     } catch (err) {
       console.error(err);
+      handleError();
     }
   }
 
