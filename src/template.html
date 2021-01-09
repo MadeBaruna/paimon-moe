@@ -1,40 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<meta name="theme-color" content="#333333">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="theme-color" content="#333333" />
+    <meta
+      name="description"
+      content="Your best Genshin Impact companion! Help you plan what to farm with collection of tools
+    like ascension calculator, and database. Also track your progress with todo and wish counter."
+    />
 
-  %sapper.base%
-  
-  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-	<link rel="manifest" href="manifest.json" crossorigin="use-credentials">
-  <link rel="icon" type="image/png" href="favicon.png">
-  
-  <style>
-    html {
-      height: 100%;
-      background: #25294A;
-    }
-  </style>
+    <meta property="og:title" content="Paimon.moe" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://paimon.moe" />
+    <meta property="og:image" content="https://paimon.moe/paimon-og.png" />
+    <meta
+      property="og:description "
+      content="Your best Genshin Impact companion! Help you plan what to farm with collection of tools
+    like ascension calculator, and database. Also track your progress with todo and wish counter."
+    />
 
-	<!-- Sapper creates a <script> tag containing `src/client.js`
+    %sapper.base%
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran:wght@600;700;900&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <style>
+      html {
+        height: 100%;
+        background: #25294a;
+      }
+    </style>
+
+    <!-- Sapper creates a <script> tag containing `src/client.js`
 	     and anything else it needs to hydrate the app and
 	     initialise the router -->
-	%sapper.scripts%
+    %sapper.scripts%
 
-	<!-- Sapper generates a <style> tag containing critical CSS
+    <!-- Sapper generates a <style> tag containing critical CSS
 	     for the current page. CSS for the rest of the app is
 	     lazily loaded when it precaches secondary pages -->
-	%sapper.styles%
+    %sapper.styles%
 
-	<!-- This contains the contents of the <svelte:head> component, if
+    <!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
-	%sapper.head%
-</head>
-<body class="font-body h-full bg-background-secondary">
-	<!-- The application will be rendered inside this element,
+    %sapper.head%
+  </head>
+  <body class="font-body h-full bg-background-secondary">
+    <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
-	<div id="sapper" class="flex flex-col h-full">%sapper.html%</div>
-</body>
+    <div id="sapper" class="flex flex-col h-full">%sapper.html%</div>
+  </body>
 </html>

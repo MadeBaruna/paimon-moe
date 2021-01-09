@@ -95,7 +95,7 @@
 </style>
 
 <svelte:head>
-  <title>Characters - Paimon.moe</title>
+  <title>Paimon.moe</title>
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">Characters</h1>
