@@ -58,7 +58,6 @@
   <div class="inline-flex mb-4">
     <Input className="mr-2" type="number" min={1} bind:value={amount} placeholder="Input amount..." />
     <Button className="mr-2 w-16" on:click={() => addAmount(1)}>+1</Button>
-    <Button className="mr-2 w-16" on:click={() => addAmount(5)}>+5</Button>
     <Button className="w-16" on:click={() => addAmount(10)}>+10</Button>
   </div>
   <div class="text-white font-bold mb-4 text-lg rounded-xl bg-background px-4 py-2 inline-flex items-center">
