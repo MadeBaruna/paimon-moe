@@ -15,6 +15,7 @@
   let numberFormat = Intl.NumberFormat();
   let adding = false;
   let todayOnly = false;
+  let isSunday = false;
   let today = getCurrentDay();
   let summary = [];
 
@@ -60,6 +61,7 @@
 
   function toggleTodayOnly() {
     today = getCurrentDay();
+    isSunday = today === 'sunday';
     todayOnly = !todayOnly;
   }
 
@@ -87,7 +89,7 @@
   async function updateSummary() {
     summary = $todos.reduce((prev, current) => {
       for (const [id, amount] of Object.entries(current.resources)) {
-        if (todayOnly && itemList[id].day && !itemList[id].day.includes(today)) continue;
+        if (!isSunday && todayOnly && itemList[id].day && !itemList[id].day.includes(today)) continue;
 
         if (prev[id] === undefined) {
           prev[id] = 0;

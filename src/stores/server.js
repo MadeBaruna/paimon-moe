@@ -20,7 +20,7 @@ const weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'frida
 export const getCurrentDay = () => {
   const time = dayjs().utcOffset(timeOffset[get(server)]);
   let day = time.day();
-  if (time.hour() > 0 && time.hour() < 4) {
+  if (time.hour() >= 0 && time.hour() < 4) {
     day -= 1;
   }
 
