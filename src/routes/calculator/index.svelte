@@ -1,13 +1,28 @@
 <script>
-  import { mdiArrowDown, mdiArrowUp } from '@mdi/js';
+  import { getContext } from 'svelte';
+  import { mdiArrowDown, mdiArrowUp, mdiHelpCircle } from '@mdi/js';
 
   import WeaponCalculator from './_weapon.svelte';
   import CharacterCalculator from './_character.svelte';
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
+  import HowToModal from '../../components/CalculatorHowToModal.svelte';
+
+  const { open: openModal } = getContext('simple-modal');
 
   let weaponCalc;
   let characterCalc;
+
+  function openHowTo() {
+    openModal(
+      HowToModal,
+      {},
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '1280px' },
+      },
+    );
+  }
 
   export function scroll(type) {
     const elementPosition =
@@ -25,7 +40,13 @@
 <svelte:head>
   <title>Calculator - Paimon.moe</title>
 </svelte:head>
-<div class="pt-20 lg:ml-64 lg:pt-8 p-4 md:p-8">
+<div class="pt-20 lg:ml-64 lg:pt-8 p-8">
+  <div class="flex justify-center md:justify-start mb-4">
+    <Button on:click={openHowTo}>
+      <Icon size={0.8} path={mdiHelpCircle} />
+      How To Use
+    </Button>
+  </div>
   <div
     class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mb-2"
     bind:this={weaponCalc}>

@@ -1,6 +1,6 @@
 <script>
   import { getContext, onMount, tick } from 'svelte';
-  import { mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading, mdiPlus } from '@mdi/js';
+  import { mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading } from '@mdi/js';
   import { todos, loading } from '../stores/todo';
   import { itemList } from '../data/itemList';
   import Masonry from 'svelte-masonry/Masonry.svelte';
