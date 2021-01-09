@@ -7,6 +7,7 @@
   import { getLocalSaveJson, updateSave, updateTime, UPDATE_TIME_KEY } from '../stores/saveManager';
 
   import SyncConflictModal from '../components/SyncConflictModal.svelte';
+  import { pushToast } from '../stores/toast';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
@@ -25,6 +26,10 @@
 
   onMount(() => {
     startSync();
+
+    window.onerror = function () {
+      handleError();
+    };
   });
 
   function startSync() {
@@ -42,6 +47,7 @@
     driveLoading.set(false);
     driveError.set(true);
     synced.set(true);
+    pushToast('Drive sync not available right now 😔', 'error');
   }
 
   function handleClientLoad() {
@@ -114,6 +120,7 @@
         );
       } else {
         synced.set(true);
+        pushToast('Data has been synced!');
       }
     } catch (err) {
       console.error(err);
@@ -178,7 +185,7 @@
   }
 
   async function getData() {
-    console.log('reading remote file');
+    console.log('reading remote file now');
 
     try {
       const { result } = await gapi.client.drive.files.get({
@@ -186,10 +193,10 @@
         alt: 'media',
       });
 
-      console.log(result);
+      console.log('get file res', result);
       return result;
     } catch (err) {
-      console.error(err);
+      console.error('get file res error', err);
       handleError();
     }
   }
@@ -227,10 +234,7 @@
         },
         function (error) {
           console.error(error);
-          driveSignedIn.set(false);
-          driveLoading.set(false);
-          driveError.set(true);
-          synced.set(true);
+          handleError();
         },
       );
   }

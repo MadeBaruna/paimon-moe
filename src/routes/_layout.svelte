@@ -15,6 +15,7 @@
   import { checkLocalSave } from '../stores/saveManager';
   import TodoData from '../components/TodoData.svelte';
   import SettingData from '../components/SettingData.svelte';
+  import Toast from '../components/Toast.svelte';
 
   export let segment;
 
@@ -78,6 +79,7 @@
   <DataSync>
     <TodoData />
     <SettingData />
+    <Toast />
     <main style="flex: 1 0 auto;">
       <slot />
     </main>

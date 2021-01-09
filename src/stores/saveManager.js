@@ -3,6 +3,7 @@ import { writable } from 'svelte/store';
 import debounce from 'lodash/debounce';
 
 import { synced, saveId, localModified, lastSyncTime } from './dataSync';
+import { pushToast } from './toast';
 
 export const updateTime = writable(null);
 export const fromRemote = writable(false);
@@ -36,8 +37,12 @@ async function saveData(data) {
     });
     synced.set(true);
     localModified.set(false);
+
+    pushToast('Data has been synced!')
   } catch (err) {
     console.error(err);
+    pushToast('Error when uploading your data!', 'error')
+    synced.set(true);
   }
 }
 
