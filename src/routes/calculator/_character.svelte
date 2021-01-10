@@ -386,6 +386,12 @@
         ...ascensionRes,
         ...talentRes,
       },
+      original: {
+        mora: moraNeeded,
+        ...levelRes,
+        ...ascensionRes,
+        ...talentRes,
+      },
     });
 
     addedToTodo = true;

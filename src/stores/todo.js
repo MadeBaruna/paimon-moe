@@ -20,6 +20,7 @@ export function addTodo(data) {
         value[itemsIndex] = {
           type: 'item',
           resources: items,
+          original: items,
         };
       } else {
         const items = { [data.item.id]: data.amount };
@@ -27,6 +28,7 @@ export function addTodo(data) {
         value.push({
           type: 'item',
           resources: items,
+          original: items,
         });
       }
 

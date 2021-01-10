@@ -314,6 +314,11 @@
         ...levelRes,
         ...ascensionRes,
       },
+      original: {
+        mora: moraNeeded,
+        ...levelRes,
+        ...ascensionRes,
+      },
     });
 
     addedToTodo = true;
