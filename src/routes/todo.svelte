@@ -3,7 +3,7 @@
   import { mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading } from '@mdi/js';
   import { todos, loading } from '../stores/todo';
   import { itemList } from '../data/itemList';
-  import Masonry from 'svelte-masonry/Masonry.svelte';
+  import Masonry from '../components/Masonry.svelte';
   import Icon from '../components/Icon.svelte';
   import Button from '../components/Button.svelte';
   import TodoDeleteModal from '../components/TodoDeleteModal.svelte';
@@ -12,12 +12,15 @@
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
   let refreshLayout;
+  let columnCount = 1;
   let numberFormat = Intl.NumberFormat();
   let adding = false;
   let todayOnly = false;
   let isSunday = false;
   let today = getCurrentDay();
   let summary = [];
+
+  let id = Math.random();
 
   async function reorder(index, pos) {
     if ((index === 0 && pos === -1) || (index === $todos.length - 1 && pos === 1)) return;
@@ -101,21 +104,30 @@
       return prev;
     }, {});
 
+    id = Math.random();
     await tick();
     refreshLayout();
   }
 
-  onMount(() => {});
+  function updateId() {
+    id = Math.random();
+  }
+
+  onMount(async () => {
+    await tick();
+    id = Math.random();
+  });
 
   $: $todos, updateSummary();
   $: todayOnly, updateSummary();
+  $: columnCount, updateId();
 </script>
 
 <svelte:head>
   <title>Todo List - Paimon.moe</title>
 </svelte:head>
 <div class="lg:ml-64 pt-20 px-2 md:px-8 lg:pt-8">
-  <Masonry stretchFirst={true} bind:refreshLayout>
+  <Masonry stretchFirst={true} bind:refreshLayout bind:columnCount items={id}>
     <h1 class="font-display font-black text-3xl lg:text-left lg:text-5xl text-white">Todo List</h1>
     <div class="bg-item rounded-xl p-4 text-white">
       {#if $loading}
@@ -236,6 +248,9 @@
           </Button>
         </div>
       </div>
+      {#if (i + 1) % (columnCount - 1) === 0}
+        <div />
+      {/if}
     {/each}
   </Masonry>
 </div>

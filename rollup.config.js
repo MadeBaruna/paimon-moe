@@ -34,8 +34,10 @@ export default {
         }),
       }),
       svelte({
-        dev,
-        hydratable: true,
+        compilerOptions: {
+          dev,
+          hydratable: true,
+        },
         emitCss: true,
         preprocess,
       }),
@@ -95,9 +97,11 @@ export default {
         }),
       }),
       svelte({
-        generate: 'ssr',
-        hydratable: true,
-        dev,
+        compilerOptions: {
+          generate: 'ssr',
+          hydratable: true,
+          dev,
+        },
         preprocess,
       }),
       url({
