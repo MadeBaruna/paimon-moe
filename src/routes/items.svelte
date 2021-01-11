@@ -105,6 +105,12 @@
             allItems[item.item.id][character.id] = 'characters';
           }
         }
+
+        const bossMaterial = character.material.boss;
+        if (allItems[bossMaterial.id] === undefined) {
+          allItems[bossMaterial.id] = {};
+        }
+        allItems[bossMaterial.id][character.id] = 'characters';
       }
     }
 
