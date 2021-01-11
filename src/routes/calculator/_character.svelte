@@ -14,6 +14,7 @@
   import { talent } from '../../data/talent';
   import { addTodo } from '../../stores/todo';
   import { itemList } from '../../data/itemList';
+  import { characters } from '../../data/characters';
 
   let resources = [
     {
@@ -232,6 +233,52 @@
     ascensionResouce = result.items;
   }
 
+  function calculateTalentTraveler() {
+    Object.keys(currentTalentLevel).forEach((i) => {
+      for (let j = currentTalentLevel[i] - 1; j < maxTalentLevel; j++) {
+        let currentBook = selectedCharacter.material.book[j];
+        let currentMaterial = selectedCharacter.material.material[j];
+
+        if (selectedCharacter.id === characters.traveler_geo.id && i === 'first') {
+          currentBook = selectedCharacter.material_atk.book[j];
+          currentMaterial = selectedCharacter.material_atk.material[j];
+        }
+
+        const bookAmount = talent[j].book.amount;
+        const commonMaterial = talent[j].commonMaterial.amount;
+        const bossMaterial = talent[j].bossMaterial;
+        const eventMaterial = talent[j].eventMaterial;
+
+        if (talentMaterial.items[currentBook.id] === undefined) {
+          talentMaterial.items[currentBook.id] = { ...currentBook, amount: 0 };
+        }
+        talentMaterial.items[currentBook.id].amount += bookAmount;
+
+        if (talentMaterial.items[currentMaterial.id] === undefined) {
+          talentMaterial.items[currentMaterial.id] = { ...currentMaterial, amount: 0 };
+        }
+        talentMaterial.items[currentMaterial.id].amount += commonMaterial;
+
+        if (bossMaterial > 0) {
+          if (talentMaterial.items[selectedCharacter.material.boss.id] === undefined) {
+            talentMaterial.items[selectedCharacter.material.boss.id] = {
+              ...selectedCharacter.material.boss,
+              amount: 0,
+            };
+          }
+          talentMaterial.items[selectedCharacter.material.boss.id].amount += bossMaterial;
+        }
+
+        if (eventMaterial > 0) {
+          if (talentMaterial.items['crown_of_insight'] === undefined) {
+            talentMaterial.items['crown_of_insight'] = { ...itemList.crown_of_insight, amount: 0 };
+          }
+          talentMaterial.items['crown_of_insight'].amount += eventMaterial;
+        }
+      }
+    });
+  }
+
   function calculateTalent() {
     Object.keys(currentTalentLevel).forEach((i) => {
       talent.slice(currentTalentLevel[i] - 1, maxTalentLevel - 1).forEach((talent) => {
@@ -344,7 +391,14 @@
       calculateAscension();
 
       if (withTalent) {
-        calculateTalent();
+        if (
+          selectedCharacter.id === characters.traveler_anemo.id ||
+          selectedCharacter.id === characters.traveler_geo.id
+        ) {
+          calculateTalentTraveler();
+        } else {
+          calculateTalent();
+        }
       }
     }
 
