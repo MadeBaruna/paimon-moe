@@ -40,7 +40,7 @@
 <svelte:head>
   <title>Calculator - Paimon.moe</title>
 </svelte:head>
-<div class="pt-20 lg:ml-64 lg:pt-8 p-8">
+<div class="pt-20 lg:ml-64 lg:pt-8 px-4 md:px-8">
   <div class="flex justify-center md:justify-start mb-4">
     <Button on:click={openHowTo}>
       <Icon size={0.8} path={mdiHelpCircle} />
