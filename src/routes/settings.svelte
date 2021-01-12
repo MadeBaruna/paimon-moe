@@ -1,5 +1,5 @@
 <script>
-  import { mdiCheckCircleOutline, mdiGoogleDrive, mdiLoading } from '@mdi/js';
+  import { mdiCheckCircleOutline, mdiDiscord, mdiGoogleDrive, mdiLoading } from '@mdi/js';
   import { onMount } from 'svelte';
 
   import Button from '../components/Button.svelte';
@@ -48,7 +48,7 @@
 
 <div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8">
   <div class="bg-item rounded-xl mb-4 p-4">
-    <p class="text-white">Data Version: <b>1.2</b></p>
+    <p class="text-white">Data Version: <b>1.2 (Ganyu Patch)</b></p>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4">
     <div class="flex flex-col md:flex-row md:items-center">
@@ -93,5 +93,10 @@
         <p class="text-gray-400">Last Sync: {$lastSyncTime.format('dddd, MMMM D, YYYY h:mm:ss A')}</p>
       {/if}
     {/if}
+  </div>
+  <div class="bg-item rounded-xl mb-4 p-4 text-white">
+    If you found any bug, wrong data, or you have any feedback, please PM me on discord
+    <span class="bg-background rounded-xl pr-2"><Icon path={mdiDiscord} /> Baruna#4422</span>
+    Thanks😁!
   </div>
 </div>
