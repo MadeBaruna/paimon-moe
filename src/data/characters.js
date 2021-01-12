@@ -2051,4 +2051,75 @@ export const characters = {
       boss: itemList.tusk_of_monoceros_caeli,
     },
   },
+  ganyu: {
+    name: 'Ganyu',
+    id: 'ganyu',
+    rarity: 5,
+    element: elements.cryo,
+    weapon: weapons.bow,
+    sex: 'female',
+    nation: 'liyue',
+    ascension: [
+      {
+        items: [
+          { item: itemList.shivada_jade_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.qingxin, amount: 3 },
+          { item: itemList.whopperflower_nectar, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 3 },
+          { item: itemList.hoarfrost_core, amount: 2 },
+          { item: itemList.qingxin, amount: 10 },
+          { item: itemList.whopperflower_nectar, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 6 },
+          { item: itemList.hoarfrost_core, amount: 4 },
+          { item: itemList.qingxin, amount: 20 },
+          { item: itemList.shimmering_nectar, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 3 },
+          { item: itemList.hoarfrost_core, amount: 8 },
+          { item: itemList.qingxin, amount: 30 },
+          { item: itemList.shimmering_nectar, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 6 },
+          { item: itemList.hoarfrost_core, amount: 12 },
+          { item: itemList.qingxin, amount: 45 },
+          { item: itemList.energy_nectar, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_gemstone, amount: 6 },
+          { item: itemList.hoarfrost_core, amount: 20 },
+          { item: itemList.qingxin, amount: 60 },
+          { item: itemList.energy_nectar, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 9108, atk: 311, def: 586 },
+    material: {
+      book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
+      material: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
+      boss: itemList.shadow_of_the_warrior,
+    },
+  },
 };

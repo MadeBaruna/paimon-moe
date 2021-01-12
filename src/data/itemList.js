@@ -481,4 +481,6 @@ export const itemList = {
   },
   jueyun_chili: { id: 'jueyun_chili', name: 'Jueyun Chili' },
   silk_flower: { id: 'silk_flower', name: 'Silk Flower' },
+  qingxin: { id: 'qingxin', name: 'Qingxin' },
+  shadow_of_the_warrior: { id: 'shadow_of_the_warrior', name: 'Shadow of the Warrior' },
 };
