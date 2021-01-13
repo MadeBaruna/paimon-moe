@@ -32,5 +32,5 @@
     {max}
     on:change
     on:input={handleInput}
-    class={`w-full ${icon ? 'pl-12' : 'pl-4'} pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none`} />
+    class={`w-full ${icon ? 'pl-12' : 'pl-4'} min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none`} />
 </div>

@@ -1,5 +1,5 @@
 <script>
-  import { mdiStar } from '@mdi/js';
+  import { mdiPencil, mdiStar } from '@mdi/js';
   import Icon from './Icon.svelte';
 </script>
 
@@ -59,5 +59,12 @@
     <span class="text-gray-400">but the pity counter won't be accurate, because there is no way to tell when the drop
       occur (maybe you got it on the 1st or even the 10th). To make the counter still accurate, you need to check it on
       the history table and add it 1 by 1 like you do 1 pull Wish.</span>
+  </div>
+  <div class="text-white p-2 bg-background rounded-xl mt-4">
+    You can also press
+    <b class="rounded-lg px-2 py-1 border-white border inline-flex items-center"><Icon
+        path={mdiPencil}
+        size={0.7} /></b>
+    button to edit the values manually!
   </div>
 </div>

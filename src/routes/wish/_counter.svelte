@@ -1,17 +1,25 @@
 <script>
   import { onMount } from 'svelte';
-  import { mdiStar } from '@mdi/js';
+  import { mdiPencil, mdiStar } from '@mdi/js';
   import debounce from 'lodash/debounce';
 
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
+  import Input from '../../components/Input.svelte';
   import { readSave, updateSave, fromRemote } from '../../stores/saveManager';
 
   export let id = '';
   export let name = '';
+
+  let isEdit = false;
+
   let total = 0;
   let legendary = 0;
   let rare = 0;
+
+  let totalEdit = 0;
+  let legendaryEdit = 0;
+  let rareEdit = 0;
 
   $: path = `wish-counter-${id}`;
   $: if ($fromRemote) {
@@ -21,6 +29,24 @@
   onMount(() => {
     readLocalData();
   });
+
+  function toggleEdit() {
+    isEdit = !isEdit;
+    if (isEdit) {
+      totalEdit = total;
+      legendaryEdit = legendary;
+      rareEdit = rare;
+    }
+  }
+
+  function saveEdit() {
+    total = totalEdit;
+    legendary = legendaryEdit;
+    rare = rareEdit;
+    saveData();
+
+    isEdit = false;
+  }
 
   function readLocalData() {
     console.log('wish read local');
@@ -82,44 +108,62 @@
 </script>
 
 <div class="bg-item rounded-xl p-4 inline-flex flex-col w-full">
-  <h2 class="font-display font-bold text-2xl text-white mb-2">{name}</h2>
+  <div class="flex justify-between mb-2">
+    <h2 class="font-display font-bold text-2xl text-white">{name}</h2>
+    <Button size="sm" on:click={toggleEdit}>
+      <Icon path={mdiPencil} color="white" />
+    </Button>
+  </div>
   <div class="flex flex-col w-full">
-    <div class="bg-background rounded-xl p-4 flex flex-row items-center justify-center mb-2">
+    <div
+      class={`${isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'} rounded-xl flex`}>
       <span class="text-gray-200 whitespace-no-wrap flex-1">Lifetime Pulls</span>
-      <span class="font-black text-3xl text-white ml-4">{total}</span>
+      {#if isEdit}
+        <Input type="number" min={1} bind:value={totalEdit} />
+      {:else}<span class="font-black text-3xl text-white ml-4">{total}</span>{/if}
     </div>
-    <div class="bg-background rounded-xl p-4 flex flex-row items-center justify-center mb-2">
+    <div
+      class={`${isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'} rounded-xl flex`}>
       <span class="text-gray-200 whitespace-no-wrap flex-1">
         5
         <Icon path={mdiStar} size={0.75} className="mb-1" />
         Pity
         <br /><span class="text-gray-600">Guaranteed at 90</span>
       </span>
-      <span class="font-black text-3xl text-legendary-from ml-4">{legendary}</span>
+      {#if isEdit}
+        <Input type="number" min={1} bind:value={legendaryEdit} />
+      {:else}<span class="font-black text-3xl text-legendary-from ml-4">{legendary}</span>{/if}
     </div>
-    <div class="bg-background rounded-xl p-4 flex flex-row items-center justify-center">
+    <div
+      class={`${isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'} rounded-xl flex`}>
       <span class="text-gray-200 whitespace-no-wrap flex-1">
         4
         <Icon path={mdiStar} size={0.75} className="mb-1" />
         Pity
         <br /><span class="text-gray-600">Guaranteed at 10</span>
       </span>
-      <span class="font-black text-3xl text-rare-from ml-4">{rare}</span>
+      {#if isEdit}
+        <Input type="number" min={1} bind:value={rareEdit} />
+      {:else}<span class="font-black text-3xl text-rare-from ml-4">{rare}</span>{/if}
     </div>
-    <div class="flex gap-2 mt-2">
-      <Button on:click={getLegendary} className="flex-1">
-        Get 5
-        <Icon path={mdiStar} size={0.75} className="mb-1" />
-      </Button>
-      <Button on:click={getRare} className="flex-1">
-        Get 4
-        <Icon path={mdiStar} size={0.75} className="mb-1" />
-      </Button>
-    </div>
-    <div class="flex gap-2 mt-2">
-      <Button on:click={() => add(1)} className="flex-1">+1</Button>
-      <Button on:click={() => add(10)} className="flex-1">+10</Button>
-      <Button on:click={() => add(-1)} className="flex-1">-1</Button>
-    </div>
+    {#if isEdit}
+      <Button on:click={saveEdit} className="mt-4">Save</Button>
+    {:else}
+      <div class="flex gap-2 mt-2">
+        <Button on:click={getLegendary} className="flex-1">
+          Get 5
+          <Icon path={mdiStar} size={0.75} className="mb-1" />
+        </Button>
+        <Button on:click={getRare} className="flex-1">
+          Get 4
+          <Icon path={mdiStar} size={0.75} className="mb-1" />
+        </Button>
+      </div>
+      <div class="flex gap-2 mt-2">
+        <Button on:click={() => add(1)} className="flex-1">+1</Button>
+        <Button on:click={() => add(10)} className="flex-1">+10</Button>
+        <Button on:click={() => add(-1)} className="flex-1">-1</Button>
+      </div>
+    {/if}
   </div>
 </div>
