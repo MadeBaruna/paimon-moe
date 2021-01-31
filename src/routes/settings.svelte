@@ -1,6 +1,7 @@
 <script>
-  import { mdiCheckCircleOutline, mdiDiscord, mdiGoogleDrive, mdiLoading } from '@mdi/js';
+  import { mdiCheckCircleOutline, mdiChevronDown, mdiDiscord, mdiGoogleDrive, mdiLoading } from '@mdi/js';
   import { onMount } from 'svelte';
+  import { slide } from 'svelte/transition';
 
   import Button from '../components/Button.svelte';
   import Icon from '../components/Icon.svelte';
@@ -16,6 +17,12 @@
   ];
 
   let selectedServer = null;
+
+  let changelogOpen = false;
+
+  function toggleChangelog() {
+    changelogOpen = !changelogOpen;
+  }
 
   function signIn() {
     gapi.auth2.getAuthInstance().signIn();
@@ -98,5 +105,22 @@
     If you found any bug, wrong data, or you have any feedback, please PM me on discord
     <span class="bg-background rounded-xl pr-2"><Icon path={mdiDiscord} /> Baruna#4422</span>
     Thanks😁!
+  </div>
+  <div class="bg-item rounded-xl mb-4 p-4 text-white">
+    <p class="cursor-pointer" on:click={toggleChangelog}>
+      Changelog <Icon
+        className={`duration-100 ease-in ${changelogOpen ? 'transform rotate-180' : ''}`}
+        path={mdiChevronDown}
+      />
+    </p>
+    {#if changelogOpen}
+      <div transition:slide class="mt-4">
+        <pre class="bg-background rounded-xl py-2 px-4">2021/02/01 
+- Add detail to wish counter
+- Bug fixes</pre>
+        <pre class="bg-background rounded-xl py-2 px-4 mt-2">2021/01/12 
+- Add Ganyu</pre>
+      </div>
+    {/if}
   </div>
 </div>
