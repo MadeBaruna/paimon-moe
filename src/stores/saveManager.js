@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 import { writable } from 'svelte/store';
 import debounce from 'lodash/debounce';
 
-import { synced, saveId, localModified, lastSyncTime } from './dataSync';
+import { synced, saveId, localModified, lastSyncTime, driveSignedIn } from './dataSync';
 import { pushToast } from './toast';
 
 export const updateTime = writable(null);
@@ -13,9 +13,14 @@ export const UPDATE_TIME_KEY = 'update-time';
 let pendingQueue = [];
 let queueSave = true;
 let saveFileId = '';
+let signedIn = false;
 
 saveId.subscribe((val) => {
   saveFileId = val;
+});
+
+driveSignedIn.subscribe((val) => {
+  signedIn = val;
 });
 
 const saveToRemote = debounce(() => {
@@ -38,10 +43,10 @@ async function saveData(data) {
     synced.set(true);
     localModified.set(false);
 
-    pushToast('Data has been synced!')
+    pushToast('Data has been synced!');
   } catch (err) {
     console.error(err);
-    pushToast('Error when uploading your data!', 'error')
+    pushToast('Error when uploading your data!', 'error');
     synced.set(true);
   }
 }
@@ -81,10 +86,13 @@ export const updateSave = (key, data, isFromRemote) => {
   localStorage.setItem(key, data);
 
   if (!isFromRemote) {
-    const currentTime = dayjs().toISOString();
+    const currentTime = dayjs();
     updateTime.set(currentTime);
-    localStorage.setItem(UPDATE_TIME_KEY, currentTime);
-    saveToRemote();
+    localStorage.setItem(UPDATE_TIME_KEY, currentTime.toISOString());
+
+    if (signedIn) {
+      saveToRemote();
+    }
   } else {
     fromRemote.set(true);
   }

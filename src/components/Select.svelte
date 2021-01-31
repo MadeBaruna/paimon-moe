@@ -6,7 +6,7 @@
 
   const dispatch = createEventDispatcher();
   
-  export let className;
+  export let className = '';
   export let icon = null;
   export let options;
   export let placeholder = 'Select...';
