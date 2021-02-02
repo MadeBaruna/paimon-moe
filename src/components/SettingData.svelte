@@ -33,10 +33,10 @@
       server.set(currentServer);
     }
     if (arSave !== null) {
-      ar.set(arSave);
+      ar.set(Number(arSave));
     }
     if (wlSave !== null) {
-      wl.set(wlSave);
+      wl.set(Number(wlSave));
     }
 
     unsubscribeServer = server.subscribe((val) => {
