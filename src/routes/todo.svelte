@@ -272,6 +272,14 @@
 
 <svelte:head>
   <title>Todo List - Paimon.moe</title>
+  <meta
+    name="description"
+    content="Genshin Impact Todo List to plan and track items and mora you need, you can also see resin approximation needed to farm the items!"
+  />
+  <meta
+    property="og:description"
+    content="Genshin Impact Todo List to plan and track items and mora you need, you can also see resin approximation needed to farm the items!"
+  />
 </svelte:head>
 <div class="lg:ml-64 pt-20 px-2 md:px-8 lg:pt-8">
   <Masonry stretchFirst={true} bind:refreshLayout bind:columnCount items={id}>

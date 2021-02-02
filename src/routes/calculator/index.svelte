@@ -39,6 +39,14 @@
 
 <svelte:head>
   <title>Calculator - Paimon.moe</title>
+  <meta
+    name="description"
+    content="Genshin Impact Calculator to calculate how many mora and items needed for your character or weapon ascension and the character talent material, also quickly add the items to todo list! Hero's Wit calculator."
+  />
+  <meta
+    property="og:description"
+    content="Genshin Impact Calculator to calculate how many mora and items needed for your character or weapon ascension and the character talent material, also quickly add the items to todo list! Hero's Wit calculator."
+  />
 </svelte:head>
 <div class="pt-20 lg:ml-64 lg:pt-8 px-4 md:px-8">
   <div class="flex justify-center md:justify-start mb-4">
@@ -49,26 +57,30 @@
   </div>
   <div
     class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mb-2"
-    bind:this={weaponCalc}>
+    bind:this={weaponCalc}
+  >
     <Button on:click={() => scroll('character')}>
       <Icon size={0.8} path={mdiArrowDown} />
       Go To Character Calculator
     </Button>
     <h1
-      class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white">
+      class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
+    >
       Weapon Calculator
     </h1>
   </div>
   <WeaponCalculator />
   <div
     class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mt-8 mb-2"
-    bind:this={characterCalc}>
+    bind:this={characterCalc}
+  >
     <Button on:click={() => scroll('weapon')}>
       <Icon size={0.8} path={mdiArrowUp} />
       Go To Weapon Calculator
     </Button>
     <h1
-      class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white">
+      class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
+    >
       Character Calculator
     </h1>
   </div>
