@@ -4,26 +4,32 @@ export const itemGroup = {
   teachings_of_freedom: {
     name: 'Freedom',
     items: [itemList.teachings_of_freedom, itemList.guide_to_freedom, itemList.philosophies_of_freedom],
+    type: 'book',
   },
   teachings_of_ballad: {
     name: 'Ballad',
     items: [itemList.teachings_of_ballad, itemList.guide_to_ballad, itemList.philosophies_of_ballad],
+    type: 'book',
   },
   teachings_of_gold: {
     name: 'Gold',
     items: [itemList.teachings_of_gold, itemList.guide_to_gold, itemList.philosophies_of_gold],
+    type: 'book',
   },
   teachings_of_resistance: {
     name: 'Resistance',
     items: [itemList.teachings_of_resistance, itemList.guide_to_resistance, itemList.philosophies_of_resistance],
+    type: 'book',
   },
   teachings_of_diligence: {
     name: 'Diligence',
     items: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
+    type: 'book',
   },
   teachings_of_prosperity: {
     name: 'Prosperity',
     items: [itemList.teachings_of_prosperity, itemList.guide_to_prosperity, itemList.philosophies_of_prosperity],
+    type: 'book',
   },
   tile_of_decarabians_tower: {
     name: 'Decarabian',
@@ -33,6 +39,7 @@ export const itemGroup = {
       itemList.fragment_of_decarabians_epic,
       itemList.scattered_piece_of_decarabians_dream,
     ],
+    type: 'weapon',
   },
   luminous_sands_from_guyun: {
     name: 'Guyun',
@@ -42,6 +49,7 @@ export const itemGroup = {
       itemList.relic_from_guyun,
       itemList.divine_body_from_guyun,
     ],
+    type: 'weapon',
   },
   boreal_wolfs_milk_tooth: {
     name: 'Boreal Wolf',
@@ -51,6 +59,7 @@ export const itemGroup = {
       itemList.boreal_wolfs_broken_fang,
       itemList.boreal_wolfs_nostalgia,
     ],
+    type: 'weapon',
   },
   mist_veiled_lead_elixir: {
     name: 'Mist Veiled Elixir',
@@ -60,6 +69,7 @@ export const itemGroup = {
       itemList.mist_veiled_gold_elixir,
       itemList.mist_veiled_primo_elixir,
     ],
+    type: 'weapon',
   },
   fetters_of_the_dandelion_gladiator: {
     name: 'Dandelion Gladiator',
@@ -69,6 +79,7 @@ export const itemGroup = {
       itemList.shackles_of_the_dandelion_gladiator,
       itemList.dream_of_the_dandelion_gladiator,
     ],
+    type: 'weapon',
   },
   grain_of_aerosiderite: {
     name: 'Aerosiderite',
@@ -78,6 +89,7 @@ export const itemGroup = {
       itemList.bit_of_aerosiderite,
       itemList.chunk_of_aerosiderite,
     ],
+    type: 'weapon',
   },
   agnidus_agate_sliver: {
     name: 'Agnidus Agate',
@@ -87,6 +99,7 @@ export const itemGroup = {
       itemList.agnidus_agate_chunk,
       itemList.agnidus_agate_gemstone,
     ],
+    type: 'ascension_gem',
   },
   brilliant_diamond_sliver: {
     name: 'Brilliant Diamond',
@@ -96,6 +109,7 @@ export const itemGroup = {
       itemList.brilliant_diamond_chunk,
       itemList.brilliant_diamond_gemstone,
     ],
+    type: 'ascension_gem',
   },
   prithiva_topaz_sliver: {
     name: 'Prithiva Topaz',
@@ -105,6 +119,7 @@ export const itemGroup = {
       itemList.prithiva_topaz_chunk,
       itemList.prithiva_topaz_gemstone,
     ],
+    type: 'ascension_gem',
   },
   shivada_jade_sliver: {
     name: 'Shivada Jade',
@@ -114,6 +129,7 @@ export const itemGroup = {
       itemList.shivada_jade_chunk,
       itemList.shivada_jade_gemstone,
     ],
+    type: 'ascension_gem',
   },
   vajrada_amethyst_sliver: {
     name: 'Vajrada Amethyst',
@@ -123,6 +139,7 @@ export const itemGroup = {
       itemList.vajrada_amethyst_chunk,
       itemList.vajrada_amethyst_gemstone,
     ],
+    type: 'ascension_gem',
   },
   varunada_lazurite_sliver: {
     name: 'Varunada Lazurite',
@@ -132,6 +149,7 @@ export const itemGroup = {
       itemList.varunada_lazurite_chunk,
       itemList.varunada_lazurite_gemstone,
     ],
+    type: 'ascension_gem',
   },
   vayuda_turquoise_sliver: {
     name: 'Vayuda Turquoise',
@@ -141,6 +159,7 @@ export const itemGroup = {
       itemList.vayuda_turquoise_chunk,
       itemList.vayuda_turquoise_gemstone,
     ],
+    type: 'ascension_gem',
   },
   chaos_device: {
     name: 'Chaos',

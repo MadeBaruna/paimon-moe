@@ -7,6 +7,8 @@ dayjs.extend(utc);
 dayjs.extend(timezone);
 
 export const server = writable('Asia');
+export const ar = writable(50);
+export const wl = writable(7);
 export const loading = writable(true);
 
 const timeOffset = {

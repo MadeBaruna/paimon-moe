@@ -6,9 +6,10 @@
   import Button from '../components/Button.svelte';
   import Icon from '../components/Icon.svelte';
   import Select from '../components/Select.svelte';
+  import Input from '../components/Input.svelte';
 
   import { driveSignedIn, driveError, driveLoading, synced, localModified, lastSyncTime } from '../stores/dataSync';
-  import { server } from '../stores/server';
+  import { server, ar, wl } from '../stores/server';
 
   const servers = [
     { label: 'Asia/TW/HK/MO', value: 'Asia' },
@@ -17,6 +18,8 @@
   ];
 
   let selectedServer = null;
+  let arInput = '';
+  let wlInput = '';
 
   let changelogOpen = false;
 
@@ -37,6 +40,14 @@
       console.log('setting update');
       selectedServer = servers.find((e) => e.value === val);
     });
+    ar.subscribe((val) => {
+      console.log('ar update');
+      arInput = val;
+    });
+    wl.subscribe((val) => {
+      console.log('wl update');
+      wlInput = val;
+    });
   });
 
   function updateServer() {
@@ -44,7 +55,21 @@
     server.set(selectedServer.value);
   }
 
+  function updateAR() {
+    if (arInput) {
+      ar.set(Number(arInput));
+    }
+  }
+
+  function updateWL() {
+    if (wlInput) {
+      wl.set(Number(wlInput));
+    }
+  }
+
   $: selectedServer, updateServer();
+  $: arInput, updateAR();
+  $: wlInput, updateWL();
 
   $: isSynced = $synced && !$localModified;
 </script>
@@ -57,10 +82,20 @@
   <div class="bg-item rounded-xl mb-4 p-4">
     <p class="text-white">Data Version: <b>1.2 (Ganyu Patch)</b></p>
   </div>
-  <div class="bg-item rounded-xl mb-4 p-4">
-    <div class="flex flex-col md:flex-row md:items-center">
-      <p class="text-white mr-4">Select your server:</p>
+  <div class="bg-item rounded-xl mb-4 p-4 flex flex-col md:flex-row">
+    <div class="flex flex-col md:flex-row md:items-center mr-2">
+      <p class="text-white mr-2">Select your server:</p>
       <Select className="w-64" bind:selected={selectedServer} options={servers} placeholder="Select your server" />
+    </div>
+    <div class="flex mt-2 md:mt-0">
+      <div class="flex flex-col md:flex-row md:items-center w-32 mr-2">
+        <p class="text-white mr-2">AR:</p>
+        <Input bind:value={arInput} placeholder="AR" type="number" min="1" />
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center w-32 mr-2">
+        <p class="text-white mr-2">WL:</p>
+        <Input bind:value={wlInput} placeholder="WL" type="number" min="1" />
+      </div>
     </div>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4">
@@ -115,10 +150,14 @@
     </p>
     {#if changelogOpen}
       <div transition:slide class="mt-4">
-        <pre class="bg-background rounded-xl py-2 px-4">2021/02/01 
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/02/02 
+- Add resin approximation on todo list
+- Change todo today farmable item view
+- Add WL and AR setting for resin approximation</pre>
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/01 
 - Add detail to wish counter
 - Bug fixes</pre>
-        <pre class="bg-background rounded-xl py-2 px-4 mt-2">2021/01/12 
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/01/12 
 - Add Ganyu</pre>
       </div>
     {/if}

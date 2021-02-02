@@ -1,13 +1,17 @@
 <script>
   import { getContext, onMount, tick } from 'svelte';
-  import { mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading } from '@mdi/js';
+  import { slide } from 'svelte/transition';
+  import { mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiClose, mdiInformation, mdiLoading } from '@mdi/js';
   import { todos, loading } from '../stores/todo';
+  import { ar, wl } from '../stores/server';
   import { itemList } from '../data/itemList';
   import Masonry from '../components/Masonry.svelte';
   import Icon from '../components/Icon.svelte';
   import Button from '../components/Button.svelte';
   import TodoDeleteModal from '../components/TodoDeleteModal.svelte';
   import { getCurrentDay } from '../stores/server';
+  import { itemGroup } from '../data/itemGroup';
+  import { dropRates } from '../data/dropRates';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
@@ -15,12 +19,45 @@
   let columnCount = 1;
   let numberFormat = Intl.NumberFormat();
   let adding = false;
-  let todayOnly = false;
   let isSunday = false;
   let today = getCurrentDay();
-  let summary = [];
+  let summary = {};
+  let todayOnlyItems = {};
+  let resin = 0;
+  let resinDetail = {};
+  let showResinDetail = false;
+  let bookDomainLevel = 0;
+  let weaponDomainLevel = 0;
 
   let id = Math.random();
+
+  async function toggleResinDetail() {
+    showResinDetail = !showResinDetail;
+  }
+
+  function calculateDomainLevel() {
+    const val = $ar;
+
+    if (val >= 45) {
+      bookDomainLevel = 3;
+    } else if (val >= 36) {
+      bookDomainLevel = 2;
+    } else if (val >= 28) {
+      bookDomainLevel = 1;
+    } else {
+      bookDomainLevel = 0;
+    }
+
+    if (val >= 40) {
+      weaponDomainLevel = 3;
+    } else if (val >= 30) {
+      weaponDomainLevel = 2;
+    } else if (val >= 21) {
+      weaponDomainLevel = 1;
+    } else {
+      weaponDomainLevel = 0;
+    }
+  }
 
   async function reorder(index, pos) {
     if ((index === 0 && pos === -1) || (index === $todos.length - 1 && pos === 1)) return;
@@ -62,12 +99,6 @@
     );
   }
 
-  function toggleTodayOnly() {
-    today = getCurrentDay();
-    isSunday = today === 'sunday';
-    todayOnly = !todayOnly;
-  }
-
   function decrease(key, val) {
     todos.update((n) => {
       let i = 0;
@@ -90,9 +121,15 @@
   }
 
   async function updateSummary() {
+    const todayOnly = {};
     summary = $todos.reduce((prev, current) => {
       for (const [id, amount] of Object.entries(current.resources)) {
-        if (!isSunday && todayOnly && itemList[id].day && !itemList[id].day.includes(today)) continue;
+        if (!isSunday && itemList[id].day && itemList[id].day.includes(today)) {
+          if (todayOnly[id] === undefined) {
+            todayOnly[id] = 0;
+          }
+          todayOnly[id] += amount;
+        }
 
         if (prev[id] === undefined) {
           prev[id] = 0;
@@ -103,8 +140,119 @@
 
       return prev;
     }, {});
+    todayOnlyItems = todayOnly;
 
     id = Math.random();
+    await tick();
+    refreshLayout();
+
+    calculateResin();
+  }
+
+  async function calculateResin() {
+    calculateDomainLevel();
+    const books = {};
+    const weapons = {};
+    const ascension = {};
+    resin = 0;
+    resinDetail = {};
+
+    for (const [id, amount] of Object.entries(summary)) {
+      if (itemGroup[id] && itemGroup[id].type === 'book') {
+        if (books[id] === undefined) {
+          books[id] = [0, 0, 0];
+        }
+        books[id][itemList[id].rarity - 2] = amount;
+      } else if (itemGroup[id] && itemGroup[id].type === 'weapon') {
+        if (weapons[id] === undefined) {
+          weapons[id] = [0, 0, 0, 0];
+        }
+        weapons[id][itemList[id].rarity - 1] = amount;
+      } else if (itemGroup[id] && itemGroup[id].type === 'ascension_gem') {
+        if (ascension[id] === undefined) {
+          ascension[id] = [0, 0, 0, 0, 0];
+        }
+        ascension[id][itemList[id].rarity - 1] = amount;
+      } else if (itemList[id].parent) {
+        const parent = itemList[id].parent;
+        if (itemGroup[parent].type === 'book') {
+          if (books[parent] === undefined) {
+            books[parent] = [0, 0, 0];
+          }
+          books[parent][itemList[id].rarity - 2] = amount;
+        } else if (itemGroup[parent].type === 'weapon') {
+          if (weapons[parent] === undefined) {
+            weapons[parent] = [0, 0, 0, 0];
+          }
+          weapons[parent][itemList[id].rarity - 1] = amount;
+        } else if (itemGroup[parent].type === 'ascension_gem') {
+          if (ascension[parent] === undefined) {
+            ascension[parent] = [0, 0, 0, 0, 0];
+          }
+          ascension[parent][itemList[id].rarity - 1] = amount;
+        }
+      }
+    }
+
+    let total = 0;
+    for (const [id, count] of Object.entries(books)) {
+      let currentTotal = 0;
+      while (count.find((e) => e > 0)) {
+        for (let i = 0; i < 3; i++) {
+          count[i] -= dropRates.book[bookDomainLevel][i];
+          if (count[i] <= -3 && i < 2) {
+            count[i] += 3;
+            count[i + 1] -= 1;
+          }
+        }
+
+        currentTotal += 20;
+        total += 20;
+      }
+
+      resinDetail[id] = currentTotal;
+    }
+    resin += total;
+
+    total = 0;
+    for (const [id, count] of Object.entries(weapons)) {
+      let currentTotal = 0;
+      while (count.find((e) => e > 0)) {
+        for (let i = 0; i < 4; i++) {
+          count[i] -= dropRates.weapon[weaponDomainLevel][i];
+          if (count[i] <= -3 && i < 3) {
+            count[i] += 3;
+            count[i + 1] -= 1;
+          }
+        }
+
+        currentTotal += 20;
+        total += 20;
+      }
+      resinDetail[id] = currentTotal;
+    }
+    resin += total;
+
+    const worldLevel = $wl;
+    total = 0;
+    for (const [id, count] of Object.entries(ascension)) {
+      let currentTotal = 0;
+      while (count.find((e) => e > 0)) {
+        for (let i = 0; i < 5; i++) {
+          count[i] -= dropRates.boss[worldLevel][i];
+          if (count[i] <= -3 && i < 3) {
+            count[i] += 3;
+            count[i + 1] -= 1;
+          }
+        }
+
+        currentTotal += 40;
+        total += 40;
+      }
+      resinDetail[id] = currentTotal;
+    }
+    resin += total;
+
     await tick();
     refreshLayout();
   }
@@ -119,7 +267,6 @@
   });
 
   $: $todos, updateSummary();
-  $: todayOnly, updateSummary();
   $: columnCount, updateId();
 </script>
 
@@ -135,18 +282,92 @@
       {:else if $todos.length > 0}
         <div class="flex items-center mb-4">
           <p class="font-bold text-xl mr-2 flex-1">Summary</p>
-          <Button size="md" on:click={toggleTodayOnly}>Show {todayOnly ? 'All Day' : 'Today Only'}</Button>
         </div>
       {:else}
         <p class="font-bold text-xl">Nothing to do yet 😀<br />Add some from the Items page or the Calculator!</p>
       {/if}
+      {#if Object.entries(todayOnlyItems).length > 0}
+        <div class="rounded-xl bg-background px-4 py-2 mb-2">
+          <p class="font-semibold mb-2 text-center">Farmable Today</p>
+          <table class="w-full">
+            {#each Object.entries(todayOnlyItems) as [id, amount]}
+              <tr class="today-only">
+                <td class="text-right border-b border-gray-700 py-1">
+                  <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-no-wrap`}>
+                    {numberFormat.format(amount)}
+                    <Icon size={0.5} path={mdiClose} /></span
+                  >
+                </td>
+                <td class="border-b border-gray-700 py-1">
+                  <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} block`}>
+                    <span class="w-6 inline-block">
+                      <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={itemList[id].name} />
+                    </span>
+                    {itemList[id].name}
+                  </span>
+                </td>
+              </tr>
+            {/each}
+          </table>
+        </div>
+      {/if}
+      {#if resin > 0}
+        <div class="rounded-xl bg-background px-4 py-2 mb-2">
+          <div class="flex items-center justify-center cursor-pointer" on:click={toggleResinDetail}>
+            <img src="/images/resin.png" alt="resin" class="w-6 h-6 mr-2" />
+            <span class="mr-2"><span class="font-black">{resin}</span> resin needed</span>
+            <Icon
+              path={mdiChevronDown}
+              className={`duration-100 ease-in ${showResinDetail ? 'transform rotate-180' : ''}`}
+            />
+          </div>
+          {#if showResinDetail}
+            <div transition:slide class="mt-2">
+              <table class="w-full">
+                {#each Object.entries(resinDetail) as [id, amount]}
+                  <tr>
+                    <td class="text-right border-b border-gray-700 py-1">
+                      <div class="flex justify-end items-center">
+                        <span class="text-white mr-2 whitespace-no-wrap">
+                          {numberFormat.format(amount)}
+                        </span>
+                        <img src="/images/resin.png" alt="resin" class="w-6 h-6 mr-2" />
+                      </div>
+                    </td>
+                    <td class="border-b border-gray-700 py-1">
+                      <span class="text-white block">
+                        <span class="w-6 inline-block">
+                          <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={itemList[id].name} />
+                        </span>
+                        {itemGroup[id].name}
+                      </span>
+                    </td>
+                  </tr>
+                {/each}
+              </table>
+
+              <span class="mt-4 block text-center">
+                Based on AR:{$ar} and WL:{$wl}
+              </span>
+              <span class="text-gray-400 text-xs text-center block">(change on settings)</span>
+              <span class="mt-2 text-sm block text-center">
+                Approximation calculated from drop rates by
+                <a class="text-primary font-semibold" target="__blank" href="https://discord.gg/ydwdYmr"
+                  >Genshin Impact Data Gathering Discord</a
+                >
+              </span>
+            </div>
+          {/if}
+        </div>
+      {/if}
       <table class="w-full">
-        {#each Object.entries(summary) as [id, amount], i}
+        {#each Object.entries(summary) as [id, amount]}
           <tr>
             <td class="text-right border-b border-gray-700 py-1">
               <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-no-wrap`}>
                 {numberFormat.format(amount)}
-                <Icon size={0.5} path={mdiClose} /></span>
+                <Icon size={0.5} path={mdiClose} /></span
+              >
             </td>
             <td class="border-b border-gray-700 py-1">
               <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} block mb-1`}>
@@ -188,7 +409,8 @@
             <img
               class="h-8 inline-block mr-2"
               src={`/images/weapons/${todo.weapon ? todo.weapon.id : 'any_weapon_1'}.png`}
-              alt={todo.weapon ? todo.weapon.name : `Weapon Level ${todo.level.from}-${todo.level.to}`} />
+              alt={todo.weapon ? todo.weapon.name : `Weapon Level ${todo.level.from}-${todo.level.to}`}
+            />
             <div class="flex-1">
               <p class="font-bold">{todo.weapon ? todo.weapon.name : 'Weapon'}</p>
               <p class="text-gray-500">Level {`${todo.level.from}-${todo.level.to}`}</p>
@@ -197,7 +419,8 @@
             <img
               class="h-8 inline-block mr-2"
               src={`/images/characters/${todo.character ? todo.character.id : 'characters'}.png`}
-              alt={todo.character ? todo.character.name : `Character Level ${todo.level.from}-${todo.level.to}`} />
+              alt={todo.character ? todo.character.name : `Character Level ${todo.level.from}-${todo.level.to}`}
+            />
             <div class="flex-1">
               <p class="font-bold">{todo.character ? todo.character.name : 'Character'}</p>
               <p class="text-gray-500">Level {`${todo.level.from}-${todo.level.to}`}</p>
@@ -217,7 +440,8 @@
             on:click={() => reorder(i, 1)}
             rounded={false}
             size="sm"
-            className="rounded-r-xl">
+            className="rounded-r-xl"
+          >
             <Icon path={mdiChevronRight} color="white" />
           </Button>
         </div>
@@ -227,7 +451,8 @@
               <td class="text-right border-b border-gray-700 py-1">
                 <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-no-wrap`}>
                   {numberFormat.format(amount)}
-                  <Icon size={0.5} path={mdiClose} /></span>
+                  <Icon size={0.5} path={mdiClose} /></span
+                >
               </td>
               <td class="border-b border-gray-700 py-1">
                 <span class={amount === 0 ? 'line-through text-gray-600' : 'text-white'}>
@@ -254,3 +479,45 @@
     {/each}
   </Masonry>
 </div>
+
+<style>
+  tr.today-only:last-child {
+    td {
+      @apply border-b-0;
+    }
+  }
+
+  .tooltip {
+    @apply relative;
+
+    &:hover {
+      .tooltip-content {
+        @apply block;
+      }
+    }
+  }
+
+  .tooltip-content {
+    @apply hidden;
+    @apply absolute;
+    @apply bg-gray-400;
+    @apply text-gray-900;
+    @apply rounded-xl;
+    @apply w-64;
+    @apply px-4;
+    @apply py-2;
+    @apply shadow-lg;
+
+    right: -20px;
+    top: 40px;
+
+    &:before {
+      content: '';
+      top: -20px;
+      right: 21px;
+      border: 10px solid transparent;
+      border-bottom: 10px solid #cbd5e0;
+      position: absolute;
+    }
+  }
+</style>
