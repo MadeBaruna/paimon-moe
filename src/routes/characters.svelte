@@ -65,37 +65,16 @@
   }
 </script>
 
-<style>
-  tr.rare:hover {
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(173, 118, 176, 0.85) 10%,
-      rgba(102, 86, 128, 0.85) 80%,
-      rgba(0, 0, 0, 0) 100%
-    );
-  }
-
-  tr.legendary:hover {
-    background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(185, 129, 46, 0.85) 10%,
-      rgba(132, 99, 50, 0.85) 80%,
-      rgba(0, 0, 0, 0) 100%
-    );
-  }
-
-  td {
-    @apply text-white;
-    @apply px-2;
-    padding-top: 0.85rem;
-    padding-bottom: 0.85rem;
-  }
-</style>
-
 <svelte:head>
   <title>Paimon.moe</title>
+  <meta
+    name="description"
+    content="Your best Genshin Impact companion! Help you plan what to farm with ascension calculator and database. Also track your progress with todo and wish counter."
+  />
+  <meta
+    property="og:description"
+    content="Your best Genshin Impact companion! Help you plan what to farm with ascension calculator and database. Also track your progress with todo and wish counter."
+  />
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">Characters</h1>
@@ -154,3 +133,32 @@
     </div>
   </div>
 </div>
+
+<style>
+  tr.rare:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(173, 118, 176, 0.85) 10%,
+      rgba(102, 86, 128, 0.85) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  tr.legendary:hover {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(185, 129, 46, 0.85) 10%,
+      rgba(132, 99, 50, 0.85) 80%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+
+  td {
+    @apply text-white;
+    @apply px-2;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+</style>
