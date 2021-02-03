@@ -2122,4 +2122,75 @@ export const characters = {
       boss: itemList.shadow_of_the_warrior,
     },
   },
+  xiao: {
+    name: 'Xiao',
+    id: 'xiao',
+    rarity: 5,
+    element: elements.anemo,
+    weapon: weapons.polearm,
+    sex: 'male',
+    nation: 'liyue',
+    ascension: [
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.qingxin, amount: 3 },
+          { item: itemList.slime_condensate, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 3 },
+          { item: itemList.juvenile_jade, amount: 2 },
+          { item: itemList.qingxin, amount: 10 },
+          { item: itemList.slime_condensate, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 4 },
+          { item: itemList.qingxin, amount: 20 },
+          { item: itemList.slime_secretions, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 3 },
+          { item: itemList.juvenile_jade, amount: 8 },
+          { item: itemList.qingxin, amount: 30 },
+          { item: itemList.slime_secretions, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 12 },
+          { item: itemList.qingxin, amount: 45 },
+          { item: itemList.slime_concentrate, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_gemstone, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 20 },
+          { item: itemList.qingxin, amount: 60 },
+          { item: itemList.slime_concentrate, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 11840, atk: 325, def: 743 },
+    material: {
+      book: [itemList.teachings_of_prosperity, itemList.guide_to_prosperity, itemList.philosophies_of_prosperity],
+      material: [itemList.slime_condensate, itemList.slime_secretions, itemList.slime_concentrate],
+      boss: itemList.shadow_of_the_warrior,
+    },
+  },
 };

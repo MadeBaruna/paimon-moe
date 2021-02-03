@@ -634,4 +634,5 @@ export const itemList = {
   silk_flower: { id: 'silk_flower', name: 'Silk Flower' },
   qingxin: { id: 'qingxin', name: 'Qingxin' },
   shadow_of_the_warrior: { id: 'shadow_of_the_warrior', name: 'Shadow of the Warrior' },
+  juvenile_jade: { id: 'juvenile_jade', name: 'Juvenile Jade', rarity: 5 },
 };

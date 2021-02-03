@@ -494,38 +494,4 @@
       @apply border-b-0;
     }
   }
-
-  .tooltip {
-    @apply relative;
-
-    &:hover {
-      .tooltip-content {
-        @apply block;
-      }
-    }
-  }
-
-  .tooltip-content {
-    @apply hidden;
-    @apply absolute;
-    @apply bg-gray-400;
-    @apply text-gray-900;
-    @apply rounded-xl;
-    @apply w-64;
-    @apply px-4;
-    @apply py-2;
-    @apply shadow-lg;
-
-    right: -20px;
-    top: 40px;
-
-    &:before {
-      content: '';
-      top: -20px;
-      right: 21px;
-      border: 10px solid transparent;
-      border-bottom: 10px solid #cbd5e0;
-      position: absolute;
-    }
-  }
 </style>

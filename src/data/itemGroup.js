@@ -161,6 +161,13 @@ export const itemGroup = {
     ],
     type: 'ascension_gem',
   },
+  juvenile_jade: {
+    name: 'Juvenile Jade',
+    items: [
+      itemList.juvenile_jade
+    ],
+    type: 'ascension_gem',
+  },
   chaos_device: {
     name: 'Chaos',
     items: [
