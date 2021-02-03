@@ -281,7 +281,7 @@
                 }`}>{weaponList[pull.id].name}</td
               >
             {/if}
-            <td class="border-b border-gray-700 py-1 px-2">{dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm')}</td>
+            <td class="border-b border-gray-700 text-xs py-1 px-2 whitespace-no-wrap">{dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm:ss')}</td>
             <td class="text-center border-b border-gray-700 py-1">{pull.pity}</td>
           </tr>
         {/each}

@@ -4,6 +4,7 @@
   export let className = '';
   export let icon = null;
   export let placeholder = '';
+  export let step = undefined;
   export let type = 'text';
   export let min = Math.min();
   export let max = Math.max();
@@ -30,6 +31,7 @@
     {value}
     {min}
     {max}
+    {step}
     on:change
     on:input={handleInput}
     class={`w-full ${icon ? 'pl-12' : 'pl-4'} min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none`} />

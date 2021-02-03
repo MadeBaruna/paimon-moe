@@ -82,7 +82,7 @@
     <CharacterSelect bind:selected={name} />
   {/if}
   <div class="h-4" />
-  <Input type="datetime-local" bind:value={time} />
+  <Input type="datetime-local" step="1" bind:value={time} />
   <div class="h-4" />
   <div class="flex items-center">
     <p class="ml-4 mr-4">At Pity:</p>
