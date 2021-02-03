@@ -27,7 +27,7 @@
   ];
   let type;
   let name;
-  let time = dayjs().format('YYYY-MM-DDTHH:mm');
+  let time = dayjs().format('YYYY-MM-DDTHH:mm:ss');
 
   onMount(() => {
     if (!isEdit) return;
@@ -40,7 +40,7 @@
       name = weaponList[editName];
     }
 
-    time = dayjs.unix(editTime).format('YYYY-MM-DDTHH:mm');
+    time = dayjs.unix(editTime).format('YYYY-MM-DDTHH:mm:ss');
   });
 
   function add() {
