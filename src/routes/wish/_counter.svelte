@@ -190,7 +190,7 @@
   }
 </script>
 
-<div class="bg-item rounded-xl p-4 inline-flex flex-col w-full">
+<div class="bg-item rounded-xl p-4 inline-flex flex-col w-full" style="height: min-content;">
   <div class="flex justify-between mb-2">
     <h2 class="font-display font-bold text-2xl text-white">{name}</h2>
     <Button size="sm" on:click={toggleEdit}>
@@ -258,13 +258,26 @@
       </div>
     {/if}
   </div>
+  <div class="flex justify-center items-end h-8 mt-2 cursor-pointer" on:click={toggleDetail}>
+    <Icon
+      path={mdiChevronDown}
+      color="white"
+      className={`duration-100 ease-in ${isDetailOpen ? 'transform rotate-180' : ''}`}
+    />
+  </div>
   {#if isDetailOpen}
     <div transition:slide class="mt-4 text-white">
+      <div class="mb-2 flex justify-end">
+        <div class="bg-background rounded-xl w-full px-4 mr-2 flex items-center">
+          <span>Click the list to edit or delete</span>
+        </div>
+        <Button size="sm" className="w-16" on:click={() => openAddModal(0)}>Add</Button>
+      </div>
       <table class="w-full">
         <tr>
-          <th class="border-b border-gray-700 text-left pl-2">Name</th>
-          <th class="border-b border-gray-700 text-left pl-2">Time</th>
-          <th class="border-b border-gray-700 text-center">Pity</th>
+          <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">Name</th>
+          <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">Time</th>
+          <th class="border-b border-gray-700 text-gray-400 font-display text-right">Pity</th>
         </tr>
         {#each sortedPull as pull, index}
           <tr on:click={() => openEditModal(index, pull.type, pull.id, pull.time, pull.pity)}>
@@ -281,24 +294,11 @@
                 }`}>{weaponList[pull.id].name}</td
               >
             {/if}
-            <td class="border-b border-gray-700 text-xs py-1 px-2 whitespace-no-wrap">{dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm:ss')}</td>
-            <td class="text-center border-b border-gray-700 py-1">{pull.pity}</td>
+            <td class="border-b border-gray-700 text-sm py-1 px-2 whitespace-no-wrap" style="font-family: monospace;">{dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm:ss')}</td>
+            <td class="text-right border-b border-gray-700 py-1">{pull.pity}</td>
           </tr>
         {/each}
       </table>
-      <div class="mt-4 flex justify-end">
-        <div class="bg-background rounded-xl px-4 mr-2 flex items-center">
-          <span>Click the list to edit or delete</span>
-        </div>
-        <Button size="sm" className="w-16" on:click={() => openAddModal(0)}>Add</Button>
-      </div>
     </div>
   {/if}
-  <div class="flex justify-center items-end h-8 mt-2" on:click={toggleDetail}>
-    <Icon
-      path={mdiChevronDown}
-      color="white"
-      className={`duration-100 ease-in ${isDetailOpen ? 'transform rotate-180' : ''}`}
-    />
-  </div>
 </div>
