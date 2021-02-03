@@ -151,7 +151,8 @@
     {#if changelogOpen}
       <div transition:slide class="mt-4">
         <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/02/03 
-- Add Xiao</pre>
+- Add Xiao
+- Bug fixes</pre>
         <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/02 
 - Add resin approximation on todo list
 - Change todo today farmable item view

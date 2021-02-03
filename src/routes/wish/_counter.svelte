@@ -172,7 +172,7 @@
   }
 
   function getLegendary() {
-    openAddModal(legendary);
+    openAddModal(legendary + 1);
 
     total += 1;
     legendary = 0;
@@ -181,7 +181,7 @@
   }
 
   function getRare() {
-    openAddModal(rare);
+    openAddModal(rare + 1);
 
     total += 1;
     legendary += 1;
