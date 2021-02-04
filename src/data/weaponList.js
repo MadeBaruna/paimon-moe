@@ -6089,4 +6089,63 @@ export const weaponList = {
       },
     ],
   },
+  primordial_jade_cutter: {
+    name: 'Primordial Jade Cutter',
+    id: 'primordial_jade_cutter',
+    rarity: 5,
+    atk: 44,
+    secondary: 'ATK',
+    type: weapons.sword,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.mist_veiled_lead_elixir, amount: 5 },
+          { item: itemList.mist_grass_pollen, amount: 5 },
+          { item: itemList.treasure_hoarder_insignia, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_mercury_elixir, amount: 5 },
+          { item: itemList.mist_grass_pollen, amount: 18 },
+          { item: itemList.treasure_hoarder_insignia, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_mercury_elixir, amount: 9 },
+          { item: itemList.mist_grass, amount: 9 },
+          { item: itemList.silver_raven_insignia, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_gold_elixir, amount: 5 },
+          { item: itemList.mist_grass, amount: 18 },
+          { item: itemList.silver_raven_insignia, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_gold_elixir, amount: 9 },
+          { item: itemList.mist_grass_wick, amount: 14 },
+          { item: itemList.golden_raven_insignia, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_primo_elixir, amount: 6 },
+          { item: itemList.mist_grass_wick, amount: 27 },
+          { item: itemList.golden_raven_insignia, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
