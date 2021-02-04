@@ -50,7 +50,7 @@
     openModal(
       TodoAddModal,
       {
-        item,
+        item: itemList[item].parent && itemList[item].rarity < 5 ? itemList[item].parent : item,
         addTodo: addTodoItem,
         cancel: closeModal,
       },
@@ -96,7 +96,7 @@
         }
         charactersDays[item.day.join('_')][item.id].push(character.id);
 
-        const ascension = character.ascension[0];
+        const ascension = character.ascension[1];
         for (const item of ascension.items) {
           if (item.amount) {
             if (allItems[item.item.id] === undefined) {
