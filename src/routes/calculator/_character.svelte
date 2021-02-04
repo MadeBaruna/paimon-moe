@@ -73,6 +73,11 @@
     second: 1,
     third: 1,
   };
+  let targetTalentLevel = {
+    first: 1,
+    second: 1,
+    third: 1,
+  };
   let talentMaterial = {
     items: {},
     mora: 0,
@@ -281,7 +286,7 @@
 
   function calculateTalent() {
     Object.keys(currentTalentLevel).forEach((i) => {
-      talent.slice(currentTalentLevel[i] - 1, maxTalentLevel - 1).forEach((talent) => {
+      talent.slice(currentTalentLevel[i] - 1, targetTalentLevel[i] - 1).forEach((talent) => {
         talentMaterial.mora = talentMaterial.mora + talent.mora;
 
         const currentBook = selectedCharacter.material.book[talent.book.rarity - 2];
@@ -525,7 +530,6 @@
           <Check on:change={onChange} bind:checked={withTalent}>Calculate Talent Material?</Check>
         {/if}
         {#if withTalent}
-          <p class="text-white text-center mt-3">Will calculate all talent to level {maxTalentLevel}</p>
           <p class="text-white text-center mt-3">Input the 1st, 2nd & 3rd current talent level</p>
           <div class="grid grid-cols-3 gap-2 mt-2">
             <Input
@@ -548,6 +552,30 @@
               min={1}
               max={maxTalentLevel}
               bind:value={currentTalentLevel.third}
+              placeholder="3rd talent lvl" />
+          </div>
+          <p class="text-white text-center mt-3">to level</p>
+          <div class="grid grid-cols-3 gap-2 mt-2">
+            <Input
+              on:change={onChange}
+              type="number"
+              min={currentTalentLevel.first}
+              max={maxTalentLevel}
+              bind:value={targetTalentLevel.first}
+              placeholder="1st talent lvl" />
+            <Input
+              on:change={onChange}
+              type="number"
+              min={currentTalentLevel.second}
+              max={maxTalentLevel}
+              bind:value={targetTalentLevel.second}
+              placeholder="2nd talent lvl" />
+            <Input
+              on:change={onChange}
+              type="number"
+              min={currentTalentLevel.third}
+              max={maxTalentLevel}
+              bind:value={targetTalentLevel.third}
               placeholder="3rd talent lvl" />
           </div>
         {/if}
