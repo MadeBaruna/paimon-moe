@@ -18,6 +18,7 @@
 
   export let id = '';
   export let name = '';
+  export let legendaryPity = 90;
 
   let isEdit = false;
   let isDetailOpen = false;
@@ -160,7 +161,7 @@
     }
 
     legendary += val;
-    if (legendary >= 90) {
+    if (legendary >= legendaryPity) {
       openAddModal(legendary);
       legendary = 0;
       rare = 0;
@@ -217,7 +218,7 @@
         5
         <Icon path={mdiStar} size={0.75} className="mb-1" />
         Pity
-        <br /><span class="text-gray-600">Guaranteed at 90</span>
+        <br /><span class="text-gray-600">Guaranteed at {legendaryPity}</span>
       </span>
       {#if isEdit}
         <Input type="number" min={1} bind:value={legendaryEdit} />

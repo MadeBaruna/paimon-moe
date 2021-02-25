@@ -2303,183 +2303,183 @@ export const weaponList = {
       },
     ],
   },
-  alley_hunter: {
-    name: 'Alley Hunter',
-    id: 'alley_hunter',
-    rarity: 4,
-    atk: 41,
-    secondary: 'CRIT Rate',
-    type: weapons.bow,
-    source: 'wish',
-    ascension: [
-      {
-        items: [
-          { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
-          { item: itemList.dead_ley_line_branch, amount: 3 },
-          { item: itemList.treasure_hoarder_insignia, amount: 2 },
-        ],
-        mora: 5000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
-          { item: itemList.dead_ley_line_branch, amount: 12 },
-          { item: itemList.treasure_hoarder_insignia, amount: 8 },
-        ],
-        mora: 15000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
-          { item: itemList.dead_ley_line_leaves, amount: 6 },
-          { item: itemList.silver_raven_insignia, amount: 6 },
-        ],
-        mora: 20000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
-          { item: itemList.dead_ley_line_leaves, amount: 12 },
-          { item: itemList.silver_raven_insignia, amount: 9 },
-        ],
-        mora: 30000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
-          { item: itemList.ley_line_sprouts, amount: 9 },
-          { item: itemList.golden_raven_insignia, amount: 6 },
-        ],
-        mora: 35000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
-          { item: itemList.ley_line_sprouts, amount: 18 },
-          { item: itemList.golden_raven_insignia, amount: 12 },
-        ],
-        mora: 45000,
-      },
-    ],
-  },
+  // alley_hunter: {
+  //   name: 'Alley Hunter',
+  //   id: 'alley_hunter',
+  //   rarity: 4,
+  //   atk: 41,
+  //   secondary: 'CRIT Rate',
+  //   type: weapons.bow,
+  //   source: 'wish',
+  //   ascension: [
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
+  //         { item: itemList.dead_ley_line_branch, amount: 3 },
+  //         { item: itemList.treasure_hoarder_insignia, amount: 2 },
+  //       ],
+  //       mora: 5000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
+  //         { item: itemList.dead_ley_line_branch, amount: 12 },
+  //         { item: itemList.treasure_hoarder_insignia, amount: 8 },
+  //       ],
+  //       mora: 15000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
+  //         { item: itemList.dead_ley_line_leaves, amount: 6 },
+  //         { item: itemList.silver_raven_insignia, amount: 6 },
+  //       ],
+  //       mora: 20000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
+  //         { item: itemList.dead_ley_line_leaves, amount: 12 },
+  //         { item: itemList.silver_raven_insignia, amount: 9 },
+  //       ],
+  //       mora: 30000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
+  //         { item: itemList.ley_line_sprouts, amount: 9 },
+  //         { item: itemList.golden_raven_insignia, amount: 6 },
+  //       ],
+  //       mora: 35000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
+  //         { item: itemList.ley_line_sprouts, amount: 18 },
+  //         { item: itemList.golden_raven_insignia, amount: 12 },
+  //       ],
+  //       mora: 45000,
+  //     },
+  //   ],
+  // },
   lithic_spear: {
     name: 'Lithic Spear',
     id: 'lithic_spear',
     rarity: 4,
-    atk: 42,
-    secondary: 'Physical DMG Bonus',
+    atk: 44,
+    secondary: 'ATK',
     type: weapons.polearm,
     source: 'wish',
     ascension: [
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.grain_of_aerosiderite, amount: 3 },
+          { item: itemList.fragile_bone_shard, amount: 3 },
+          { item: itemList.firm_arrowhead, amount: 2 },
         ],
         mora: 5000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.piece_of_aerosiderite, amount: 3 },
+          { item: itemList.fragile_bone_shard, amount: 12 },
+          { item: itemList.firm_arrowhead, amount: 8 },
         ],
         mora: 15000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.piece_of_aerosiderite, amount: 6 },
+          { item: itemList.sturdy_bone_shard, amount: 6 },
+          { item: itemList.sharp_arrowhead, amount: 6 },
         ],
         mora: 20000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.bit_of_aerosiderite, amount: 3 },
+          { item: itemList.sturdy_bone_shard, amount: 12 },
+          { item: itemList.sharp_arrowhead, amount: 9 },
         ],
         mora: 30000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.bit_of_aerosiderite, amount: 6 },
+          { item: itemList.fossilized_bone_shard, amount: 9 },
+          { item: itemList.weathered_arrowhead, amount: 6 },
         ],
         mora: 35000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.chunk_of_aerosiderite, amount: 4 },
+          { item: itemList.fossilized_bone_shard, amount: 18 },
+          { item: itemList.weathered_arrowhead, amount: 12 },
         ],
         mora: 45000,
       },
     ],
   },
-  wine_and_song: {
-    name: 'Wine and Song',
-    id: 'wine_and_song',
-    rarity: 4,
-    atk: 42,
-    secondary: 'Energy Recharge',
-    type: weapons.catalyst,
-    source: 'currently unobtainable',
-    ascension: [
-      {
-        items: [
-          { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
-          { item: itemList.dead_ley_line_branch, amount: 3 },
-          { item: itemList.divining_scroll, amount: 2 },
-        ],
-        mora: 5000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
-          { item: itemList.dead_ley_line_branch, amount: 12 },
-          { item: itemList.divining_scroll, amount: 8 },
-        ],
-        mora: 15000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
-          { item: itemList.dead_ley_line_leaves, amount: 6 },
-          { item: itemList.sealed_scroll, amount: 6 },
-        ],
-        mora: 20000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
-          { item: itemList.dead_ley_line_leaves, amount: 12 },
-          { item: itemList.sealed_scroll, amount: 9 },
-        ],
-        mora: 30000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
-          { item: itemList.ley_line_sprouts, amount: 9 },
-          { item: itemList.forbidden_curse_scroll, amount: 6 },
-        ],
-        mora: 35000,
-      },
-      {
-        items: [
-          { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
-          { item: itemList.ley_line_sprouts, amount: 18 },
-          { item: itemList.forbidden_curse_scroll, amount: 12 },
-        ],
-        mora: 45000,
-      },
-    ],
-  },
+  // wine_and_song: {
+  //   name: 'Wine and Song',
+  //   id: 'wine_and_song',
+  //   rarity: 4,
+  //   atk: 42,
+  //   secondary: 'Energy Recharge',
+  //   type: weapons.catalyst,
+  //   source: 'currently unobtainable',
+  //   ascension: [
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
+  //         { item: itemList.dead_ley_line_branch, amount: 3 },
+  //         { item: itemList.divining_scroll, amount: 2 },
+  //       ],
+  //       mora: 5000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
+  //         { item: itemList.dead_ley_line_branch, amount: 12 },
+  //         { item: itemList.divining_scroll, amount: 8 },
+  //       ],
+  //       mora: 15000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
+  //         { item: itemList.dead_ley_line_leaves, amount: 6 },
+  //         { item: itemList.sealed_scroll, amount: 6 },
+  //       ],
+  //       mora: 20000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
+  //         { item: itemList.dead_ley_line_leaves, amount: 12 },
+  //         { item: itemList.sealed_scroll, amount: 9 },
+  //       ],
+  //       mora: 30000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
+  //         { item: itemList.ley_line_sprouts, amount: 9 },
+  //         { item: itemList.forbidden_curse_scroll, amount: 6 },
+  //       ],
+  //       mora: 35000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
+  //         { item: itemList.ley_line_sprouts, amount: 18 },
+  //         { item: itemList.forbidden_curse_scroll, amount: 12 },
+  //       ],
+  //       mora: 45000,
+  //     },
+  //   ],
+  // },
   blackcliff_warbow: {
     name: 'Blackcliff Warbow',
     id: 'blackcliff_warbow',
@@ -2602,56 +2602,56 @@ export const weaponList = {
     name: 'Lithic Blade',
     id: 'lithic_blade',
     rarity: 4,
-    atk: 41,
-    secondary: 'CRIT DMG',
+    atk: 42,
+    secondary: 'ATK',
     type: weapons.claymore,
     source: 'wish',
     ascension: [
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.luminous_sands_from_guyun, amount: 3 },
+          { item: itemList.hunters_sacrificial_knife, amount: 3 },
+          { item: itemList.firm_arrowhead, amount: 2 },
         ],
         mora: 5000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.lustrous_stone_from_guyun, amount: 3 },
+          { item: itemList.hunters_sacrificial_knife, amount: 12 },
+          { item: itemList.firm_arrowhead, amount: 8 },
         ],
         mora: 15000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.lustrous_stone_from_guyun, amount: 6 },
+          { item: itemList.agents_sacrificial_knife, amount: 6 },
+          { item: itemList.sharp_arrowhead, amount: 6 },
         ],
         mora: 20000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.relic_from_guyun, amount: 3 },
+          { item: itemList.agents_sacrificial_knife, amount: 12 },
+          { item: itemList.sharp_arrowhead, amount: 9 },
         ],
         mora: 30000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.relic_from_guyun, amount: 6 },
+          { item: itemList.inspectors_sacrificial_knife, amount: 9 },
+          { item: itemList.weathered_arrowhead, amount: 6 },
         ],
         mora: 35000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.divine_body_from_guyun, amount: 4 },
+          { item: itemList.inspectors_sacrificial_knife, amount: 18 },
+          { item: itemList.weathered_arrowhead, amount: 12 },
         ],
         mora: 45000,
       },
@@ -6143,6 +6143,65 @@ export const weaponList = {
           { item: itemList.mist_veiled_primo_elixir, amount: 6 },
           { item: itemList.mist_grass_wick, amount: 27 },
           { item: itemList.golden_raven_insignia, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  staff_of_homa: {
+    name: "Staff of Homa",
+    id: "staff_of_homa",
+    rarity: 5,
+    type: weapons.polearm,
+    source: "wish",
+    atk: 46,
+    secondary: "CRIT DMG",
+    ascension: [
+      {
+        items: [
+          { item: itemList.grain_of_aerosiderite, amount: 5 },
+          { item: itemList.dead_ley_line_branch, amount: 5 },
+          { item: itemList.slime_condensate, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.piece_of_aerosiderite, amount: 5 },
+          { item: itemList.dead_ley_line_branch, amount: 18 },
+          { item: itemList.slime_condensate, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.piece_of_aerosiderite, amount: 9 },
+          { item: itemList.dead_ley_line_leaves, amount: 9 },
+          { item: itemList.slime_secretions, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.bit_of_aerosiderite, amount: 5 },
+          { item: itemList.dead_ley_line_leaves, amount: 18 },
+          { item: itemList.slime_secretions, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.bit_of_aerosiderite, amount: 9 },
+          { item: itemList.ley_line_sprouts, amount: 14 },
+          { item: itemList.slime_concentrate, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.chunk_of_aerosiderite, amount: 6 },
+          { item: itemList.ley_line_sprouts, amount: 27 },
+          { item: itemList.slime_concentrate, amount: 18 },
         ],
         mora: 65000,
       },
