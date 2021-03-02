@@ -150,7 +150,9 @@
     </p>
     {#if changelogOpen}
       <div transition:slide class="mt-4">
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/02/26 
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/02 
+- Add Hu Tao</pre>
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/26 
 - Add Staff of Homa, Lithic Spear, and Lithic Blade
 - Change weapon banner 5star pity</pre>
         <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/03 
