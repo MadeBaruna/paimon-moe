@@ -39,6 +39,7 @@
     readLocalData();
   }
   $: sortedPull = pulls
+    .slice()
     .filter((e) => {
       if (e.type === 'character') {
         return showRarity[5 - characters[e.id].rarity];
@@ -46,7 +47,7 @@
         return showRarity[5 - weaponList[e.id].rarity];
       }
     })
-    .sort((a, b) => b.time - a.time);
+    .reverse();
 
   onMount(() => {
     readLocalData();

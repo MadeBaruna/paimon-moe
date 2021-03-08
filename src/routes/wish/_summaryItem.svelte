@@ -13,19 +13,15 @@
   });
 
   function calculateColor(percentage) {
-    const a = [255, 177, 63];
-    const b = [255, 77, 77];
-
-    const av = percentage;
-    const bv = 1 - percentage;
-
-    const color = [a[0] * av + b[0] * bv, a[1] * av + b[1] * bv, a[2] * av + b[2] * bv];
-
-    return `color: rgb(${color[0]},${color[1]},${color[2]});`;
+    const hue = percentage * 120;
+    return `color: hsl(${hue}, 100%, 60%);`;
   }
 </script>
 
-<div class={`bg-item rounded-xl p-4 flex flex-col w-full ${withBottomSpace ? 'mb-4' : ''}`} style="height: min-content;">
+<div
+  class={`bg-item rounded-xl p-4 flex flex-col w-full ${withBottomSpace ? 'mb-4' : ''}`}
+  style="height: min-content;"
+>
   <table>
     <tr>
       <td class="text-white text-md font-semibold pr-2 md:pr-4 flex-1 w-full">{type.name}</td>

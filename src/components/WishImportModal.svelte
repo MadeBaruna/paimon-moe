@@ -1,6 +1,6 @@
 <script>
   import { mdiClose, mdiDownload, mdiHelpCircle, mdiLoading } from '@mdi/js';
-  import { onMount, tick } from 'svelte';
+  import { onMount } from 'svelte';
   import dayjs from 'dayjs';
 
   import { pushToast } from '../stores/toast';
