@@ -1,5 +1,5 @@
 <script>
-  import { mdiCheckCircleOutline, mdiChevronDown, mdiDiscord, mdiGoogleDrive, mdiLoading } from '@mdi/js';
+  import { mdiCheckCircleOutline, mdiChevronDown, mdiDiscord, mdiGithub, mdiGoogleDrive, mdiLoading } from '@mdi/js';
   import { onMount } from 'svelte';
   import { slide } from 'svelte/transition';
 
@@ -138,7 +138,13 @@
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 text-white">
     If you found any bug, wrong data, or you have any feedback, please PM me on discord
-    <span class="bg-background rounded-xl pr-2"><Icon path={mdiDiscord} /> Baruna#4422</span>
+    <span class="bg-background rounded-xl pr-2"><Icon path={mdiDiscord} /> Baruna#4422</span> or
+    <a
+      href="https://github.com/MadeBaruna/paimon-moe/issues"
+      target="__blank"
+      class="whitespace-no-wrap bg-background rounded-xl pr-2 text-blue-400 hover:underline"
+      ><Icon path={mdiGithub} /> Github Issues</a
+    >
     Thanks😁!
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 text-white">
@@ -152,18 +158,22 @@
       <div transition:slide class="mt-4">
         <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/02 
 - Add Hu Tao</pre>
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/26 
+        <pre
+          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/26 
 - Add Staff of Homa, Lithic Spear, and Lithic Blade
 - Change weapon banner 5star pity</pre>
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/03 
+        <pre
+          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/03 
 - Add Xiao
 - Add Primordial Jade Cutter
 - Bug fixes</pre>
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/02 
+        <pre
+          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/02 
 - Add resin approximation on todo list
 - Change todo today farmable item view
 - Add WL and AR setting for resin approximation</pre>
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/01 
+        <pre
+          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/01 
 - Add detail to wish counter
 - Bug fixes</pre>
         <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/01/12 
