@@ -57,6 +57,34 @@
         {numberFormat.format(avg.rare.pity)}
       </td>
     </tr>
+    <tr>
+      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
+        └ Character
+      </td>
+      <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+        {numberFormat.format(avg.rare.character.total)}
+      </td>
+      <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+        {numberFormat.format(avg.rare.character.percentage * 100)}%
+      </td>
+      <td class="text-rare-from font-semibold text-right border-t border-gray-700">
+        {numberFormat.format(avg.rare.character.pity)}
+      </td>
+    </tr>
+    <tr>
+      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
+        └ Weapon
+      </td>
+      <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+        {numberFormat.format(avg.rare.weapon.total)}
+      </td>
+      <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+        {numberFormat.format(avg.rare.weapon.percentage * 100)}%
+      </td>
+      <td class="text-rare-from font-semibold text-right border-t border-gray-700">
+        {numberFormat.format(avg.rare.weapon.pity)}
+      </td>
+    </tr>
   </table>
   {#if avg.legendary.pulls.length > 0}
     <div class="flex flex-wrap mt-2">

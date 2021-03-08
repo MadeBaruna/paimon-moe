@@ -21,7 +21,7 @@ module.exports = {
         primary: '#4E7CFF',
         button: '#394076',
         rare: {
-          from: '#AD76B0',
+          from: '#D28FD6',
           to: '#665680',
         },
         legendary: {

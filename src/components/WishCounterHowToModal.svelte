@@ -6,6 +6,10 @@
 <div>
   <h1 class="font-display text-white text-xl mb-4">How to use Wish Counter</h1>
   <div class="text-white p-2 bg-background rounded-xl">
+    <p>Consider using the Auto Import first, access it on button beside the button you click to open this How To</p>
+    <p class="text-red-300">Using the Auto Import and manual input together is not recommended, still need some testing!</p>
+  </div>
+  <div class="text-white p-2 bg-background rounded-xl mt-4">
     <p class="mb-2">After you do 1 pull Wish:</p>
     <p class="mb-2">
       Press
