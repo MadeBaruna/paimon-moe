@@ -99,7 +99,16 @@
   }
 
   function addPullDetail(newPull) {
-    pulls = [...pulls, newPull];
+    let index = -1;
+    for (let i = pulls.length - 1; i >= 0; i--) {
+      if (newPull.time >= pulls[i].time) {
+        index = i + 1;
+        break;
+      }
+    }
+    const lastPulls = [...pulls];
+    lastPulls.splice(index, 0, newPull);
+    pulls = lastPulls;
     closeModal();
     saveData();
   }

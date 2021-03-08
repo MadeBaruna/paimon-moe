@@ -347,10 +347,7 @@
     const importedWishes = wishes[code].slice().reverse();
     const oldestWish = importedWishes[0];
 
-    localWishes = localWishes
-      .slice()
-      .filter((e) => e.time < oldestWish.time)
-      .sort((a, b) => a.time - b.time);
+    localWishes = localWishes.slice().filter((e) => e.time < oldestWish.time);
 
     const combined = [...localWishes, ...importedWishes];
 
