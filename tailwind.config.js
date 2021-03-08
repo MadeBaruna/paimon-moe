@@ -25,7 +25,7 @@ module.exports = {
           to: '#665680',
         },
         legendary: {
-          from: '#B9812E',
+          from: '#FFB13F',
           to: '#846332',
         },
       },

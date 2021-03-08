@@ -32,11 +32,21 @@
   let legendaryEdit = 0;
   let rareEdit = 0;
 
+  let showRarity = [true, true, false];
+
   $: path = `wish-counter-${id}`;
   $: if ($fromRemote) {
     readLocalData();
   }
-  $: sortedPull = pulls.sort((a, b) => b.time - a.time);
+  $: sortedPull = pulls
+    .filter((e) => {
+      if (e.type === 'character') {
+        return showRarity[5 - characters[e.id].rarity];
+      } else if (e.type === 'weapon') {
+        return showRarity[5 - weaponList[e.id].rarity];
+      }
+    })
+    .sort((a, b) => b.time - a.time);
 
   onMount(() => {
     readLocalData();
@@ -44,6 +54,10 @@
 
   function toggleDetail() {
     isDetailOpen = !isDetailOpen;
+  }
+
+  function toggleShowRarity(index) {
+    showRarity[index] = !showRarity[index];
   }
 
   function openAddModal(pity) {
@@ -124,7 +138,7 @@
     isEdit = false;
   }
 
-  function readLocalData() {
+  export function readLocalData() {
     console.log('wish read local');
     const data = readSave(path);
     if (data !== null) {
@@ -152,21 +166,42 @@
 
     total += val;
 
-    rare += val;
-    if (rare >= 10) {
-      openAddModal(rare);
-      rare = 0;
-    } else if (rare < 0) {
-      rare = 9;
-    }
-
     legendary += val;
+    let filler = val;
     if (legendary >= legendaryPity) {
-      openAddModal(legendary);
+      openAddModal(Math.min(rare, legendaryPity));
       legendary = 0;
       rare = 0;
+      filler--;
     } else if (legendary < 0) {
       legendary = 89;
+    } else {
+      rare += val;
+      if (rare >= 10) {
+        openAddModal(Math.min(rare, 10));
+        rare = 0;
+        filler--;
+      } else if (rare < 0) {
+        rare = 9;
+      }
+    }
+
+    if (filler > 0) {
+      pulls = [
+        ...pulls,
+        ...[...new Array(filler)].map((e) => ({
+          type: 'unknown_3_star',
+          id: 'unknown_3_star',
+          time: dayjs().unix(),
+          pity: 1,
+        })),
+      ];
+    }
+
+    if (val < 0) {
+      const cloned = [...pulls];
+      cloned.pop();
+      pulls = cloned;
     }
 
     saveData();
@@ -274,6 +309,17 @@
         </div>
         <Button size="sm" className="w-16" on:click={() => openAddModal(0)}>Add</Button>
       </div>
+      <div class="flex">
+        <button on:click={() => toggleShowRarity(0)} class={`pill legendary ${showRarity[0] ? 'active' : ''}`}>
+          5 <Icon path={mdiStar} size={0.75} className="mb-1" />
+        </button>
+        <button on:click={() => toggleShowRarity(1)} class={`pill rare ${showRarity[1] ? 'active' : ''}`}>
+          4 <Icon path={mdiStar} size={0.75} className="mb-1" />
+        </button>
+        <button on:click={() => toggleShowRarity(2)} class={`pill normal ${showRarity[2] ? 'active' : ''}`}>
+          3 <Icon path={mdiStar} size={0.75} className="mb-1" />
+        </button>
+      </div>
       <table class="w-full">
         <tr>
           <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">Name</th>
@@ -285,17 +331,27 @@
             {#if pull.type === 'character'}
               <td
                 class={`border-b border-gray-700 py-1 pl-2 font-semibold ${
-                  characters[pull.id].rarity === 5 ? 'text-legendary-from' : 'text-rare-from'
+                  characters[pull.id].rarity === 5
+                    ? 'text-legendary-from'
+                    : characters[pull.id].rarity === 4
+                    ? 'text-rare-from'
+                    : 'text-primary'
                 }`}>{characters[pull.id].name}</td
               >
-            {:else}
+            {:else if pull.type === 'weapon'}
               <td
                 class={`border-b border-gray-700 py-1 pl-2 font-semibold ${
-                  weaponList[pull.id].rarity === 5 ? 'text-legendary-from' : 'text-rare-from'
+                  weaponList[pull.id].rarity === 5
+                    ? 'text-legendary-from'
+                    : weaponList[pull.id].rarity === 4
+                    ? 'text-rare-from'
+                    : 'text-primary'
                 }`}>{weaponList[pull.id].name}</td
               >
             {/if}
-            <td class="border-b border-gray-700 text-sm py-1 px-2 whitespace-no-wrap" style="font-family: monospace;">{dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm:ss')}</td>
+            <td class="border-b border-gray-700 text-sm py-1 px-2 whitespace-no-wrap" style="font-family: monospace;"
+              >{dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm:ss')}</td
+            >
             <td class="text-right border-b border-gray-700 py-1">{pull.pity}</td>
           </tr>
         {/each}
@@ -303,3 +359,40 @@
     </div>
   {/if}
 </div>
+
+<style>
+  .pill {
+    @apply rounded-2xl;
+    @apply border-2;
+    @apply border-white;
+    @apply border-opacity-25;
+    @apply text-white;
+    @apply px-4;
+    @apply py-1;
+    @apply mr-2;
+    @apply mb-2;
+    @apply outline-none;
+    @apply transition;
+    @apply duration-100;
+
+    &:hover {
+      @apply border-primary;
+    }
+
+    &.active {
+      @apply bg-primary;
+      @apply border-primary;
+      @apply text-background;
+
+      &.legendary {
+        @apply bg-legendary-from;
+        @apply border-legendary-from;
+      }
+
+      &.rare {
+        @apply bg-rare-from;
+        @apply border-rare-from;
+      }
+    }
+  }
+</style>

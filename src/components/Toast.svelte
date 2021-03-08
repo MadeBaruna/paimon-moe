@@ -9,7 +9,7 @@
   }
 </script>
 
-<div class="fixed left-0 right-0 bottom-0 text-center px-4 z-50 md:left-auto md:max-w-screen-sm">
+<div class="fixed left-0 right-0 bottom-0 text-center px-4 md:left-auto md:max-w-screen-sm" style="z-index:99999;">
   {#each $toasts as toast (toast._id)}
     <div
       class={`rounded-xl px-4 py-2 mb-4 w-full bg-black bg-opacity-75 ${types[toast.type]}`}
