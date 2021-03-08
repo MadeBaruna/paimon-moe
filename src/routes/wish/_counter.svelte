@@ -16,6 +16,8 @@
   import dayjs from 'dayjs';
   import { weaponList } from '../../data/weaponList';
 
+  let numberFormat = Intl.NumberFormat();
+
   export let id = '';
   export let name = '';
   export let legendaryPity = 90;
@@ -249,7 +251,13 @@
         isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'
       } rounded-xl flex`}
     >
-      <span class="text-gray-200 whitespace-no-wrap flex-1">Lifetime Pulls</span>
+      <span class="text-gray-200 whitespace-no-wrap flex-1">
+        Lifetime Pulls<br />
+        <span class="flex items-center text-gray-600">
+          <img class="w-4 h-4 mr-2" src="/images/primogem.png" alt="primogem" />
+          {numberFormat.format(total * 160)}
+        </span>
+      </span>
       {#if isEdit}
         <Input type="number" min={1} bind:value={totalEdit} />
       {:else}<span class="font-black text-3xl text-white ml-4">{total}</span>{/if}

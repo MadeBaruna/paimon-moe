@@ -1,12 +1,12 @@
 <script>
-  import { mdiStar } from '@mdi/js';
   import { onMount } from 'svelte';
-  import Icon from '../../components/Icon.svelte';
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
 
   import { readSave, updateTime, fromRemote } from '../../stores/saveManager';
   import SummaryItem from './_summaryItem.svelte';
+
+  let numberFormat = Intl.NumberFormat();
 
   const types = [
     {
@@ -28,6 +28,7 @@
   ];
 
   let loading = true;
+  let totalWish = 0;
   const avg = {};
 
   $: if ($fromRemote) {
@@ -43,6 +44,7 @@
   });
 
   export function readLocalData() {
+    totalWish = 0;
     console.log('wish summary read local');
 
     for (let type of types) {
@@ -52,6 +54,8 @@
         const counterData = JSON.parse(data);
         const pulls = counterData.pulls || [];
         const total = counterData.total;
+
+        totalWish += total;
 
         let legendary = 0;
         let legendaryPity = 0;
@@ -141,5 +145,9 @@
     {#if avg[types[3].id]}
       <SummaryItem avg={avg[types[3].id]} type={types[3]} />
     {/if}
+    <div class="bg-item rounded-xl p-4 flex items-center w-full text-white mt-4" style="height: min-content;">
+      Wishes Worth <img class="w-4 h-4 mx-2" src="/images/primogem.png" alt="primogem" />
+      {numberFormat.format(totalWish * 160)}
+    </div>
   </div>
 {/if}
