@@ -18,6 +18,7 @@
 
   let numberFormat = Intl.NumberFormat();
 
+  export let manualInput = false;
   export let id = '';
   export let name = '';
   export let legendaryPity = 90;
@@ -241,9 +242,11 @@
 <div class="bg-item rounded-xl p-4 inline-flex flex-col w-full" style="height: min-content;">
   <div class="flex justify-between mb-2">
     <h2 class="font-display font-bold text-2xl text-white">{name}</h2>
-    <Button size="sm" on:click={toggleEdit}>
-      <Icon path={mdiPencil} color="white" />
-    </Button>
+    {#if manualInput}
+      <Button size="sm" on:click={toggleEdit}>
+        <Icon path={mdiPencil} color="white" />
+      </Button>
+    {/if}
   </div>
   <div class="flex flex-col w-full">
     <div
@@ -294,7 +297,7 @@
     </div>
     {#if isEdit}
       <Button on:click={saveEdit} className="mt-4">Save</Button>
-    {:else}
+    {:else if manualInput}
       <div class="flex gap-2 mt-2">
         <Button on:click={getLegendary} className="flex-1">
           Get 5
@@ -312,7 +315,7 @@
       </div>
     {/if}
   </div>
-  <div class="flex justify-center items-end h-8 mt-2 cursor-pointer" on:click={toggleDetail}>
+  <div class={`flex justify-center items-end h-8 cursor-pointer ${manualInput ? 'mt-2' : ''}`} on:click={toggleDetail}>
     <Icon
       path={mdiChevronDown}
       color="white"
@@ -321,12 +324,14 @@
   </div>
   {#if isDetailOpen}
     <div transition:slide class="mt-4 text-white">
-      <div class="mb-2 flex justify-end">
-        <div class="bg-background rounded-xl w-full px-4 mr-2 flex items-center">
-          <span>Click the list to edit or delete</span>
+      {#if manualInput}
+        <div class="mb-2 flex justify-end">
+          <div class="bg-background rounded-xl w-full px-4 mr-2 flex items-center">
+            <span>Click the list to edit or delete</span>
+          </div>
+          <Button size="sm" className="w-16" on:click={() => openAddModal(0)}>Add</Button>
         </div>
-        <Button size="sm" className="w-16" on:click={() => openAddModal(0)}>Add</Button>
-      </div>
+      {/if}
       <div class="flex">
         <button on:click={() => toggleShowRarity(0)} class={`pill legendary ${showRarity[0] ? 'active' : ''}`}>
           5 <Icon path={mdiStar} size={0.75} className="mb-1" />
@@ -345,7 +350,7 @@
           <th class="border-b border-gray-700 text-gray-400 font-display text-right">Pity</th>
         </tr>
         {#each sortedPull as pull, index}
-          <tr on:click={() => openEditModal(index, pull.type, pull.id, pull.time, pull.pity)}>
+          <tr on:click={manualInput ? () => openEditModal(index, pull.type, pull.id, pull.time, pull.pity) : () => {}}>
             {#if pull.type === 'character'}
               <td
                 class={`border-b border-gray-700 py-1 pl-2 font-semibold ${
