@@ -93,7 +93,12 @@
     processingLog = true;
 
     try {
-      url = new URL(genshinLink);
+      if (selectedType === 'android') {
+        const urlString = genshinLink.match(/https:\/\/.*\//g);
+        url = new URL(urlString);
+      } else {
+        url = new URL(genshinLink);
+      }
     } catch (err) {
       pushToast('Invalid link, please check it again', 'error');
     }
@@ -603,12 +608,12 @@
             <li class="my-2">Wait for it to load and a feedback page should open</li>
             <li class="my-2">Turn off your wifi and data connection</li>
             <li class="my-2">Press refresh on top right corner</li>
-            <li class="my-2">The page should error and show you a link with black font, copy that link</li>
+            <li class="my-2">The page should error and show you a text with black font, copy all that text</li>
             <li class="my-2">Turn on your wifi or data connection</li>
-            <li class="my-2">Paste the link to the textbox below</li>
+            <li class="my-2">Paste the text to the textbox below</li>
           </ol>
         </div>
-        <Input bind:value={genshinLink} placeholder="Paste link here... https://webstatic..." />
+        <Input bind:value={genshinLink} placeholder="Paste text here... Webpage not available..." />
       {:else if selectedType === 'ios'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
           Sorry I don't know yet how to access the link from iOS...<br />If you have the link you can still paste it
