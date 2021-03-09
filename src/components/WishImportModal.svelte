@@ -1,5 +1,5 @@
 <script>
-  import { mdiClose, mdiDownload, mdiHelpCircle, mdiLoading } from '@mdi/js';
+  import { mdiClose, mdiDownload, mdiHelpCircle, mdiInformation, mdiLoading } from '@mdi/js';
   import { onMount } from 'svelte';
   import dayjs from 'dayjs';
 
@@ -8,6 +8,7 @@
   import Icon from './Icon.svelte';
   import Input from './Input.svelte';
   import Textarea from './Textarea.svelte';
+  import Checkbox from './Checkbox.svelte';
   import { weaponList } from '../data/weaponList';
   import { characters } from '../data/characters';
   import { readSave, updateSave } from '../stores/saveManager';
@@ -43,6 +44,8 @@
       id: 'weapon-event',
     },
   };
+
+  let newOnly = true;
 
   let wishes = {};
 
@@ -103,6 +106,8 @@
       }
       finishedProcessingLog = true;
     } catch (err) {
+      console.log(err);
+
       wishes = {};
       processingLog = false;
       fetchingWishes = false;
@@ -137,8 +142,10 @@
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
 
+    const newestPullTime = getNewestPullTime(type);
     let page = 1;
     let result = [];
+    let lastTime = 0;
     do {
       if (cancelled) return;
 
@@ -197,6 +204,12 @@
           const name = row.name;
           const type = row.item_type.replace(/ /g, '');
 
+          if (time.unix() <= newestPullTime) {
+            return;
+          }
+
+          lastTime = time;
+
           let id;
           if (type === 'Weapon') {
             id = weapons.find((e) => e.name === name).id;
@@ -227,7 +240,30 @@
         pushToast('Invalid data returned from API, try again later!', 'error');
         throw 'invalid data';
       }
-    } while (result.length > 0);
+    } while (result.length > 0 && lastTime > newestPullTime);
+  }
+
+  function getNewestPullTime(type) {
+    if (!newOnly) {
+      // return very long time so it equally all wishes
+      return new dayjs().year(2000).unix();
+    }
+
+    const path = `wish-counter-${type.id}`;
+    const localData = readSave(path);
+
+    let localWishes = [];
+    if (localData !== null) {
+      const counterData = JSON.parse(localData);
+      localWishes = counterData.pulls || [];
+
+      if (localWishes.length > 0) {
+        const lastPull = localWishes[localWishes.length - 1];
+        return lastPull.time;
+      }
+    }
+
+    return new dayjs().year(2000).unix();
   }
 
   async function fetchRetry(url, options, n) {
@@ -334,6 +370,7 @@
 
   function processWishes(code, type) {
     if (wishes[code] === undefined) return;
+    console.log('processing', type.name);
 
     const path = `wish-counter-${type.id}`;
     const localData = readSave(path);
@@ -354,8 +391,6 @@
     let rare = 0;
     let legendary = 0;
     for (let i = 0; i < combined.length; i++) {
-      if (combined[i].pity !== 0) continue;
-
       rare++;
       legendary++;
 
@@ -367,14 +402,20 @@
       }
 
       if (rarity === 5) {
-        combined[i].pity = legendary;
+        if (combined[i].pity === 0) {
+          combined[i].pity = legendary;
+        }
         legendary = 0;
         rare = 0;
       } else if (rarity === 4) {
-        combined[i].pity = rare;
+        if (combined[i].pity === 0) {
+          combined[i].pity = rare;
+        }
         rare = 0;
       } else {
-        combined[i].pity = 1;
+        if (combined[i].pity === 0) {
+          combined[i].pity = 1;
+        }
       }
     }
 
@@ -399,19 +440,21 @@
     {#if finishedProcessingLog}
       <table class="min-w-full md:min-w-0">
         {#each Object.entries(types) as [code, type]}
-          {#if wishes[code] !== undefined}
-            <tr>
-              <td class="border-b border-gray-700 py-1">
-                <span class="text-white mr-2 whitespace-no-wrap">{type.name} Banner</span>
-              </td>
-              <td class="border-b border-gray-700 py-1">
+          <tr>
+            <td class="border-b border-gray-700 py-1">
+              <span class="text-white mr-2 whitespace-no-wrap">{type.name} Banner</span>
+            </td>
+            <td class="border-b border-gray-700 py-1">
+              {#if wishes[code] !== undefined}
                 <span class="text-white mr-2 whitespace-no-wrap">
                   <Icon size={0.5} path={mdiClose} />
                   {numberFormat.format(wishes[code].length)}
                 </span>
-              </td>
-            </tr>
-          {/if}
+              {:else}
+                <span class="text-white">No New Wishes</span>
+              {/if}
+            </td>
+          </tr>
         {/each}
       </table>
       <p class="mt-4">Imported wishes will be appended or replaced accordingly to existing data</p>
@@ -575,11 +618,24 @@
       {/if}
     {/if}
 
-    <div class="flex justify-end mt-4">
+    <div class="flex flex-col md:flex-row mt-4 items-center">
       {#if !showFaq}
-        <Button on:click={startImport} color="green" className="mr-4">Import</Button>
+        <div class="flex-1 flex mb-4 md:mb-0 md:ml-4">
+          <Checkbox disabled={false} bind:checked={newOnly}>
+            <span class="text-white select-none"> Import new wish only </span>
+          </Checkbox>
+          <span class="tooltip ml-2">
+            <Icon path={mdiInformation} color="white" />
+            <span class="tooltip-content"> Uncheck only if you need to re-import all your wish history</span>
+          </span>
+        </div>
       {/if}
-      <Button on:click={showFaq ? () => toggleFaqs(false) : () => closeModal()}>Close</Button>
+      <div>
+        {#if !showFaq}
+          <Button on:click={startImport} color="green" className="mr-4">Import</Button>
+        {/if}
+        <Button on:click={showFaq ? () => toggleFaqs(false) : () => closeModal()}>Close</Button>
+      </div>
     </div>
   </div>
 {/if}
@@ -607,6 +663,32 @@
       @apply bg-primary;
       @apply border-primary;
       @apply text-background;
+    }
+  }
+
+  .tooltip {
+    @apply relative;
+
+    .tooltip-content {
+      top: -100px;
+      right: -14px;
+      width: 250px;
+      @apply absolute;
+      @apply hidden;
+      @apply bg-gray-400;
+      @apply text-background;
+      @apply rounded-xl;
+      @apply p-2;
+
+      @screen md {
+        top: -70px;
+        right: -120px;
+        width: 320px;
+      }
+    }
+
+    &:hover .tooltip-content {
+      @apply block;
     }
   }
 </style>

@@ -269,6 +269,7 @@
       class={`${
         isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'
       } rounded-xl flex`}
+      title={`${legendaryPity - legendary} pulls to guaranteed 5 star`}
     >
       <span class="text-gray-200 whitespace-no-wrap flex-1">
         5
@@ -284,6 +285,7 @@
       class={`${
         isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'
       } rounded-xl flex`}
+      title={`${10 - rare} pulls to guaranteed 4 star`}
     >
       <span class="text-gray-200 whitespace-no-wrap flex-1">
         4
