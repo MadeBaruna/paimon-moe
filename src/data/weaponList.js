@@ -2783,7 +2783,56 @@ export const weaponList = {
     secondary: 'CRIT DMG',
     type: weapons.catalyst,
     source: 'wish',
-    ascension: [{ items: [] }, { items: [] }, { items: [] }],
+    ascension: [
+      {
+        items: [
+          { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 3 },
+          { item: itemList.damaged_mask, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 12 },
+          { item: itemList.damaged_mask, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
+          { item: itemList.dead_ley_line_leaves, amount: 6 },
+          { item: itemList.stained_mask, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
+          { item: itemList.dead_ley_line_leaves, amount: 12 },
+          { item: itemList.stained_mask, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
+          { item: itemList.ley_line_sprouts, amount: 9 },
+          { item: itemList.ominous_mask, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
+          { item: itemList.ley_line_sprouts, amount: 18 },
+          { item: itemList.ominous_mask, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
   },
   compound_bow: {
     name: 'Compound Bow',
