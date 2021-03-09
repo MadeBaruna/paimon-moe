@@ -30,6 +30,35 @@
   });
 </script>
 
+<svelte:head>
+  <title>Paimon.moe</title>
+</svelte:head>
+
+<Tailwind />
+
+<Header />
+<Modal>
+  <Sidebar {segment} />
+  {#if $showSidebar}
+    <Sidebar {segment} mobile />
+  {/if}
+  <DataSync>
+    <TodoData />
+    <SettingData />
+    <Toast />
+    <main style="flex: 1 0 auto;">
+      <slot />
+    </main>
+  </DataSync>
+</Modal>
+{#if $preloading && $delayedPreloading}
+  <div transition:fade class="loading-bar" />
+{/if}
+<p class="lg:ml-64 px-4 md:px-8 py-4 text-gray-600">
+  Paimon.moe is not affiliated with miHoYo.<br />
+  Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
+</p>
+
 <style>
   .loading-bar {
     position: fixed;
@@ -63,32 +92,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>Paimon.moe</title>
-</svelte:head>
-
-<Tailwind />
-
-<Header />
-<Sidebar {segment} />
-{#if $showSidebar}
-  <Sidebar {segment} mobile />
-{/if}
-<Modal>
-  <DataSync>
-    <TodoData />
-    <SettingData />
-    <Toast />
-    <main style="flex: 1 0 auto;">
-      <slot />
-    </main>
-  </DataSync>
-</Modal>
-{#if $preloading && $delayedPreloading}
-  <div transition:fade class="loading-bar" />
-{/if}
-<p class="lg:ml-64 px-4 md:px-8 py-4 text-gray-600">
-  Paimon.moe is not affiliated with miHoYo.<br />
-  Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
-</p>
