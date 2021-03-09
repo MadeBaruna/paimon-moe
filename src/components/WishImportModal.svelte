@@ -13,6 +13,7 @@
   import { characters } from '../data/characters';
   import { readSave, updateSave } from '../stores/saveManager';
 
+  export let processFirstTimePopup;
   export let closeModal;
 
   const fetchController = new AbortController();
@@ -374,6 +375,8 @@
   }
 
   function processWishes(code, type) {
+    processFirstTimePopup(false, false);
+
     if (wishes[code] === undefined) return;
     console.log('processing', type.name);
 

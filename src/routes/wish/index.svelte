@@ -88,6 +88,7 @@
       ImportModal,
       {
         closeModal: closeImportModal,
+        processFirstTimePopup,
       },
       {
         closeButton: false,
