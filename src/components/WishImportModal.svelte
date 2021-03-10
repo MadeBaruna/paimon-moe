@@ -555,11 +555,11 @@
         </p>
       </div>
     {:else}
-      <div class="flex items-center">
+      <div class="flex flex-col md:flex-row items-start md:items-center">
         <h1 class="font-display text-white text-xl mb-2 mr-2">Import Wish History</h1>
         <Button size="sm" on:click={() => toggleFaqs(true)}>
           <Icon path={mdiHelpCircle} color="white" />
-          FAQS
+          FAQS - READ FIRST
         </Button>
       </div>
       <div class="flex mt-4 flex-wrap">
@@ -623,10 +623,17 @@
         <Input bind:value={genshinLink} placeholder="Paste text here... Webpage not available..." />
       {:else if selectedType === 'ios'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
-          Sorry I don't know yet how to access the link from iOS...<br />If you have the link you can still paste it
-          below.
+          <ol class="list-decimal ml-4">
+            <li class="my-2">Open Paimon menu</li>
+            <li class="my-2">Press Feedback</li>
+            <li class="my-2">Wait for it to load and a feedback page should open</li>
+            <li class="my-2">Press In-game issue</li>
+            <li class="my-2">Press Co-Op Mode</li>
+            <li class="my-2">There is a link on the bottom of the reply, press that</li>
+            <li class="my-2">A browser should open up, copy the link and paste it below</li>
+          </ol>
         </div>
-        <Input bind:value={genshinLink} placeholder="Paste link here... https://webstatic..." />
+        <Input bind:value={genshinLink} placeholder="Paste link here... https://genshin.mihoyo..." />
       {/if}
     {/if}
 
