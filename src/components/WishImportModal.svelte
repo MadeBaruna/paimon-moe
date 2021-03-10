@@ -549,6 +549,10 @@
           <!-- If you don't want any passing around your url, you can use the small importer app to process the wish
           history on your local PC (PC Local option) -->
         </p>
+        <p class="text-white font-semibold mt-4">I tried the step, but I got some API error?</p>
+        <p class="text-gray-400">
+          Make sure you copy all the text, maybe you left over some text that are needed for the importer to work
+        </p>
       </div>
     {:else}
       <div class="flex items-center">
@@ -611,7 +615,7 @@
             <li class="my-2">Wait for it to load and a feedback page should open</li>
             <li class="my-2">Turn off your wifi and data connection</li>
             <li class="my-2">Press refresh on top right corner</li>
-            <li class="my-2">The page should error and show you a text with black font, copy all that text</li>
+            <li class="my-2">The page should error and show you a text with black font, select all and copy that text</li>
             <li class="my-2">Turn on your wifi or data connection</li>
             <li class="my-2">Paste the text to the textbox below</li>
           </ol>
@@ -626,7 +630,7 @@
       {/if}
     {/if}
 
-    <div class="flex flex-col md:flex-row mt-4 items-center">
+    <div class="flex flex-col md:flex-row mt-4 md:justify-end items-center">
       {#if !showFaq}
         <div class="flex-1 flex mb-4 md:mb-0 md:ml-4">
           <Checkbox disabled={false} bind:checked={newOnly}>
