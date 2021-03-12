@@ -177,7 +177,9 @@
       return;
     }
 
-    event.currentTarget.scrollLeft += event.deltaY;
+    const delta = Math.abs(event.deltaY);
+    const dir = event.deltaY > 0 ? 1 : -1;
+    event.currentTarget.scrollLeft += Math.max(delta, 100) * dir;
   }
 
   $: todayOffset = Math.abs(firstDay.diff(today, 'day', true));
@@ -202,7 +204,7 @@
     <div class="px-4 md:px-8 text-white select-none">
       <Checkbox bind:checked={showAsLocalTime}>Show as local time</Checkbox>
     </div>
-    <div class="w-full overflow-x-auto px-4 md:px-8" bind:this={timelineContainer} on:mousewheel={transformScroll}>
+    <div class="w-full overflow-x-auto px-4 md:px-8" bind:this={timelineContainer} on:wheel={transformScroll}>
       <div
         style={`padding-top: 50px; width: min-content; padding-right: ${2 * padding * dayWidth}px; height: ${
           marginTop + events.length * (eventHeight + eventMargin)
