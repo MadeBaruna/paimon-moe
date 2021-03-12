@@ -41,13 +41,13 @@
     {event.name}
   </span>
   {#if started && !ended && !event.startOnly}
-    <div class="absolute pl-3" style="top: 6px; right: -200px; width: 200px;">
+    <div class="absolute pl-3" style="top: 6px; right: -120px; width: 120px;">
       <span class="text-sm rounded-xl text-black font-semibold bg-white bg-opacity-75 px-1">
         {dayjs.duration(diffEnd).format(diffEnd > 86400000 ? 'D[d] HH:mm:ss' : 'HH:mm:ss')}
       </span>
     </div>
   {:else if !started && !ended}
-    <div class="absolute pr-3 text-right" style="top: 6px; left: {prevNearby ? '-150px' : '-200px'}; width: 200px;">
+    <div class="absolute pr-3 text-right" style="top: 6px; left: {prevNearby ? '-80px' : '-120px'}; width: 120px;">
       <span class="text-sm rounded-xl text-black font-semibold bg-white bg-opacity-75 px-1">
         {dayjs.duration(diffStart).format(diffStart > 86400000 ? 'D[d] HH:mm:ss' : 'HH:mm:ss')}
       </span>
