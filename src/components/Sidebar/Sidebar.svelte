@@ -79,6 +79,13 @@
   />
   <SidebarItem
     on:clicked={close}
+    active={segment === 'timeline'}
+    image="/images/timeline.png"
+    label="Timeline"
+    href="/timeline"
+  />
+  <SidebarItem
+    on:clicked={close}
     active={segment === 'settings'}
     image="/images/settings.png"
     label="Settings"

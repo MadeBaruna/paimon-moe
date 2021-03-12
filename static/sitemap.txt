@@ -4,3 +4,4 @@ https://paimon.moe/wish
 https://paimon.moe/calculator
 https://paimon.moe/items
 https://paimon.moe/todo
+https://paimon.moe/timeline
