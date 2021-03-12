@@ -4,6 +4,7 @@
   import duration from 'dayjs/plugin/duration';
   dayjs.extend(duration);
 
+  import { getCurrentTime } from '../../stores/server';
   import { eventsData } from '../../data/timeline';
 
   import EventItem from './_item.svelte';
@@ -96,7 +97,7 @@
       }
     });
 
-  let today = dayjs();
+  let today = getCurrentTime();
   $: todayOffset = Math.abs(firstDay.diff(today, 'day', true));
 
   const dayTotal = Math.abs(Math.ceil(firstDay.diff(lastEventTime, 'day', true))) + 2 * padding;
@@ -135,7 +136,7 @@
     });
 
     const interval = setInterval(() => {
-      today = dayjs();
+      today = getCurrentTime();
     }, 1000);
 
     return () => {

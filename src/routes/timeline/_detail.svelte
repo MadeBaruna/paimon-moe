@@ -1,14 +1,15 @@
 <script>
   import dayjs from 'dayjs';
   import { onMount } from 'svelte';
+  import { getCurrentTime } from '../../stores/server';
 
   export let event;
-  
+
   let now = dayjs();
 
   onMount(() => {
     const interval = setInterval(() => {
-      now = dayjs();
+      now = getCurrentTime();
     }, 1000);
 
     return () => {

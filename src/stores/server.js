@@ -19,6 +19,10 @@ const timeOffset = {
 
 const weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
 
+export const getCurrentTime = () => {
+  return dayjs().utcOffset(timeOffset[get(server)]);
+}
+
 export const getCurrentDay = () => {
   const time = dayjs().utcOffset(timeOffset[get(server)]);
   let day = time.day();
