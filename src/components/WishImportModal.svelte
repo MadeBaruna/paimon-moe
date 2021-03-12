@@ -525,6 +525,14 @@
           whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use
           it on my main account). You still can input your data manually 😀.
         </p>
+        <p class="text-white font-semibold mt-4">Can you hack my account then?</p>
+        <p class="text-gray-400">
+          Paimon.moe never save anything related to your account (even your uid or nickname), so the answer is no. This
+          project is open source on
+          <a class="text-primary hover:underline" target="__blank" href="https://github.com/MadeBaruna/paimon-moe"
+            >Github</a
+          >, I'm not planning to damage my reputation by hacking other people account.
+        </p>
         <p class="text-white font-semibold mt-4">
           Hey I checked the request and stuff, but why it request to your domain instead of MiHoYo API?
         </p>
@@ -543,15 +551,18 @@
             target="__blank">here</a
           >
         </p>
-        <p class="text-white font-semibold mt-4">Do you store my temporary key?</p>
+        <p class="text-white font-semibold mt-4">Do you store my temporary key or wish history?</p>
         <p class="text-gray-400">
-          Paimon.moe never store your key, and use HTTPS to pass your url to a cors proxy to make the CORS works.
+          Paimon.moe never store your key, and use HTTPS to pass your url to a cors proxy to make the CORS works. All
+          your wish history is saved on your device only (or your google drive if you turn on sync on setting).
+          Paimon.moe does not save anything to the server (yes anything).
           <!-- If you don't want any passing around your url, you can use the small importer app to process the wish
           history on your local PC (PC Local option) -->
         </p>
         <p class="text-white font-semibold mt-4">I tried the step, but I got some API error?</p>
         <p class="text-gray-400">
-          Make sure you copy all the text, maybe you left over some text that are needed for the importer to work
+          Make sure you copy all the text (just hold and press select all), maybe you left over some text that are
+          needed for the importer to work
         </p>
       </div>
     {:else}
@@ -615,7 +626,10 @@
             <li class="my-2">Wait for it to load and a feedback page should open</li>
             <li class="my-2">Turn off your wifi and data connection</li>
             <li class="my-2">Press refresh on top right corner</li>
-            <li class="my-2">The page should error and show you a text with black font, select all and copy that text</li>
+            <li class="my-2">The page should error and show you a text with black font</li>
+            <li class="my-2">
+              Hold the text and press select all, then copy that text (don't copy only some portion of the text)
+            </li>
             <li class="my-2">Turn on your wifi or data connection</li>
             <li class="my-2">Paste the text to the textbox below</li>
           </ol>
