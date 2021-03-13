@@ -3,6 +3,7 @@
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
 
+  import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateTime, fromRemote } from '../../stores/saveManager';
   import SummaryItem from './_summaryItem.svelte';
 
@@ -46,10 +47,11 @@
   export function readLocalData() {
     totalWish = 0;
     console.log('wish summary read local');
+    const prefix = getAccountPrefix();
 
     for (let type of types) {
       const path = `wish-counter-${type.id}`;
-      const data = readSave(path);
+      const data = readSave(`${prefix}${path}`);
       if (data !== null) {
         const counterData = JSON.parse(data);
         const pulls = counterData.pulls || [];

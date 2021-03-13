@@ -10,8 +10,6 @@ export const fromRemote = writable(false);
 
 export const UPDATE_TIME_KEY = 'update-time';
 
-let pendingQueue = [];
-let queueSave = true;
 let saveFileId = '';
 let signedIn = false;
 
@@ -53,10 +51,8 @@ async function saveData(data) {
 
 synced.subscribe((value) => {
   console.log('synced:', value);
-  queueSave = !value;
 
   if (value) {
-    flushPendingQueue();
     lastSyncTime.set(dayjs());
   }
 });
@@ -78,12 +74,11 @@ export const updateSave = (key, data, isFromRemote) => {
     localModified.set(true);
   }
 
-  if (queueSave && !isFromRemote) {
-    pendingQueue.push({ key, data });
-    return;
+  if (data !== undefined) {
+    localStorage.setItem(key, data);
+  } else {
+    localStorage.removeItem(key);
   }
-
-  localStorage.setItem(key, data);
 
   if (!isFromRemote) {
     const currentTime = dayjs();
@@ -101,16 +96,4 @@ export const updateSave = (key, data, isFromRemote) => {
 export const readSave = (key) => {
   const data = localStorage.getItem(key);
   return data;
-};
-
-export const flushPendingQueue = () => {
-  console.log('flushing save queue');
-  console.log(pendingQueue);
-
-  for (const item of pendingQueue) {
-    updateSave(item.key, item.data);
-  }
-
-  pendingQueue = [];
-  queueSave = false;
 };

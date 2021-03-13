@@ -1,15 +1,24 @@
 <script>
   import { mdiCheckCircleOutline, mdiChevronDown, mdiDiscord, mdiGithub, mdiGoogleDrive, mdiLoading } from '@mdi/js';
-  import { onMount } from 'svelte';
+  import { getContext, onMount } from 'svelte';
   import { slide } from 'svelte/transition';
 
-  import Button from '../components/Button.svelte';
-  import Icon from '../components/Icon.svelte';
-  import Select from '../components/Select.svelte';
-  import Input from '../components/Input.svelte';
+  import Button from '../../components/Button.svelte';
+  import Icon from '../../components/Icon.svelte';
+  import Select from '../../components/Select.svelte';
+  import Input from '../../components/Input.svelte';
+  import DeleteAccountModal from './_deleteAccount.svelte';
+  import ResetAccountModal from './_resetAccount.svelte';
 
-  import { driveSignedIn, driveError, driveLoading, synced, localModified, lastSyncTime } from '../stores/dataSync';
-  import { server, ar, wl } from '../stores/server';
+  import { driveSignedIn, driveError, driveLoading, synced, localModified, lastSyncTime } from '../../stores/dataSync';
+  import { server, ar, wl } from '../../stores/server';
+  import { accounts, getAccountPrefix, selectedAccount } from '../../stores/account';
+  import { pushToast } from '../../stores/toast';
+  import { readSave, updateSave } from '../../stores/saveManager';
+
+  const { open: openModal, close: closeModal } = getContext('simple-modal');
+
+  let currentAccount = $selectedAccount;
 
   const servers = [
     { label: 'Asia/TW/HK/MO', value: 'Asia' },
@@ -17,6 +26,7 @@
     { label: 'Europe', value: 'Europe' },
   ];
 
+  let mounted = false;
   let selectedServer = null;
   let arInput = '';
   let wlInput = '';
@@ -67,6 +77,155 @@
     }
   }
 
+  function addAccount() {
+    const accountList = $accounts;
+    const accountNumber =
+      accountList.length === 1 ? 2 : Number(accountList[accountList.length - 1].value.substring(7)) + 1;
+
+    const newAccount = { label: `Account ${accountNumber}`, value: `account${accountNumber}` };
+    const updatedAccountList = [...accountList, newAccount];
+    accounts.set(updatedAccountList);
+
+    updateSave(
+      'accounts',
+      updatedAccountList
+        .slice(1)
+        .map((e) => e.value)
+        .join(','),
+    );
+
+    pushToast(`Account ${accountNumber} added, select it on the account list!`);
+  }
+
+  function selectAccount() {
+    if (!mounted) return;
+
+    console.log('changed account to', currentAccount.label);
+
+    selectedAccount.set(currentAccount);
+    const prefix = getAccountPrefix();
+
+    const serverSave = readSave(`${prefix}server`);
+    if (serverSave === null) {
+      selectedServer = { label: 'Asia/TW/HK/MO', value: 'Asia' };
+    } else {
+      const serverSave = readSave(`${prefix}server`);
+      selectedServer = servers.find((e) => e.value === serverSave);
+    }
+
+    const arSave = readSave(`${prefix}ar`);
+    if (arSave === null) {
+      arInput = '45';
+    } else {
+      arInput = arSave;
+    }
+
+    const wlSave = readSave(`${prefix}wl`);
+    if (wlSave === null) {
+      wlInput = '6';
+    } else {
+      wlInput = wlSave;
+    }
+  }
+
+  function deleteAccount() {
+    const prefix = getAccountPrefix();
+
+    const updatedList = $accounts.filter((e) => e.value !== currentAccount.value);
+
+    currentAccount = { label: 'Main', value: 'main' };
+    selectedAccount.set(currentAccount);
+
+    accounts.set(updatedList);
+
+    const keyWillBeDeleted = [
+      'server',
+      'ar',
+      'wl',
+      'todos',
+      'wish-counter-character-event',
+      'wish-counter-weapon-event',
+      'wish-counter-standard',
+      'wish-counter-beginners',
+    ];
+
+    for (let k of keyWillBeDeleted) {
+      localStorage.removeItem(`${prefix}${k}`);
+    }
+
+    if (updatedList.length > 1) {
+      updateSave(
+        'accounts',
+        updatedList
+          .slice(1)
+          .map((e) => e.value)
+          .join(','),
+      );
+    } else {
+      updateSave('accounts', undefined);
+    }
+
+    pushToast('Data deleted');
+    closeModal();
+  }
+
+  function resetAccount() {
+    const prefix = getAccountPrefix();
+
+    const keyWillBeDeleted = [
+      'todos',
+      'wish-counter-character-event',
+      'wish-counter-weapon-event',
+      'wish-counter-standard',
+      'wish-counter-beginners',
+    ];
+
+    for (let k of keyWillBeDeleted) {
+      localStorage.removeItem(`${prefix}${k}`);
+    }
+
+    updateSave(`${prefix}todos`, undefined, true);
+    updateSave(`${prefix}todos`, JSON.stringify([]));
+
+    pushToast('Data deleted');
+    closeModal();
+  }
+
+  function openDeleteAccount() {
+    openModal(
+      DeleteAccountModal,
+      {
+        cancel: closeModal,
+        account: currentAccount,
+        deleteAccount: deleteAccount,
+      },
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '300px' },
+      },
+    );
+  }
+
+  function openResetAccount() {
+    openModal(
+      ResetAccountModal,
+      {
+        cancel: closeModal,
+        account: currentAccount,
+        resetAccount: resetAccount,
+      },
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '300px' },
+      },
+    );
+  }
+
+  onMount(() => {
+    mounted = true;
+  });
+
+  $: currentAccount, selectAccount();
   $: selectedServer, updateServer();
   $: arInput, updateAR();
   $: wlInput, updateWL();
@@ -81,6 +240,22 @@
 <div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8">
   <div class="bg-item rounded-xl mb-4 p-4">
     <p class="text-white">Data Version: <b>1.3</b></p>
+  </div>
+  <div class="bg-item rounded-xl mb-4 p-4 flex flex-col">
+    <p class="text-white">Have multiple account? Choose account here to separate your wish and todo data</p>
+    <div class="flex mt-2">
+      <Select
+        className="w-64 mr-2"
+        bind:selected={currentAccount}
+        options={$accounts}
+        placeholder="Select your account"
+      />
+      <Button on:click={openResetAccount} className="mr-2 w-24" color="red">Reset</Button>
+      {#if currentAccount.value !== 'main'}
+        <Button on:click={openDeleteAccount} className="mr-2 w-24" color="red">Delete</Button>
+      {/if}
+      <Button className="w-24" on:click={addAccount}>Add</Button>
+    </div>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 flex flex-col md:flex-row">
     <div class="flex flex-col md:flex-row md:items-center mr-2">

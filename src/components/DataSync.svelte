@@ -17,6 +17,7 @@
   const SCOPES = 'https://www.googleapis.com/auth/drive.appdata';
 
   let remoteSave = null;
+  let timeout;
 
   $: localSaveExists = $updateTime !== null;
 
@@ -39,9 +40,19 @@
     script.onerror = handleError;
     script.src = 'https://apis.google.com/js/api.js';
     document.body.appendChild(script);
+
+    timeout = setTimeout(() => {
+      handleError();
+    }, 5000);
+  }
+
+  function cancelTimeout() {
+    console.log('cancelling timeout');
+    if (timeout) clearTimeout(timeout);
   }
 
   function handleError() {
+    cancelTimeout();
     console.log('error loading google drive api');
     driveSignedIn.set(false);
     driveLoading.set(false);
@@ -220,6 +231,8 @@
   }
 
   function initClient() {
+    console.log('gapi init client');
+
     gapi.client
       .init({
         apiKey: API_KEY,
@@ -229,6 +242,7 @@
       })
       .then(
         function () {
+          cancelTimeout();
           gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
           updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
         },

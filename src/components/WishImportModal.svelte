@@ -12,6 +12,7 @@
   import { weaponList } from '../data/weaponList';
   import { characters } from '../data/characters';
   import { readSave, updateSave } from '../stores/saveManager';
+  import { getAccountPrefix } from '../stores/account';
 
   export let processFirstTimePopup;
   export let closeModal;
@@ -255,8 +256,9 @@
       return new dayjs().year(2000).unix();
     }
 
+    const prefix = getAccountPrefix();
     const path = `wish-counter-${type.id}`;
-    const localData = readSave(path);
+    const localData = readSave(`${prefix}${path}`);
 
     let localWishes = [];
     if (localData !== null) {
@@ -380,8 +382,9 @@
     if (wishes[code] === undefined) return;
     console.log('processing', type.name);
 
+    const prefix = getAccountPrefix();
     const path = `wish-counter-${type.id}`;
-    const localData = readSave(path);
+    const localData = readSave(`${prefix}${path}`);
 
     let localWishes = [];
     if (localData !== null) {
@@ -434,7 +437,7 @@
       pulls: combined,
     });
 
-    updateSave(path, data);
+    updateSave(`${prefix}${path}`, data);
   }
 
   onMount(() => {

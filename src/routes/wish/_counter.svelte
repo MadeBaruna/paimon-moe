@@ -15,6 +15,7 @@
   import { characters } from '../../data/characters';
   import dayjs from 'dayjs';
   import { weaponList } from '../../data/weaponList';
+  import { getAccountPrefix } from '../../stores/account';
 
   let numberFormat = Intl.NumberFormat();
 
@@ -153,7 +154,8 @@
 
   export function readLocalData() {
     console.log('wish read local');
-    const data = readSave(path);
+    const prefix = getAccountPrefix();
+    const data = readSave(`${prefix}${path}`);
     if (data !== null) {
       const counterData = JSON.parse(data);
       total = counterData.total;
@@ -171,7 +173,8 @@
       pulls,
     });
 
-    updateSave(path, data);
+    const prefix = getAccountPrefix();
+    updateSave(`${prefix}${path}`, data);
   }, 2000);
 
   function add(val) {
