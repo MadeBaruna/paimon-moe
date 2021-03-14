@@ -23,8 +23,8 @@
     { id: 'en', label: 'English' },
     { id: 'id', label: 'Indonesia' },
   ];
-  $: locales = languages.filter((e) => e.id !== $locale.substring(0, 2));
-  $: currentLocale = languages.find((e) => e.id === $locale.substring(0, 2));
+  $: currentLocale = languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' };
+  $: locales = languages.filter((e) => e.id !== currentLocale.id);
 
   function openDonationModal() {
     openModal(
