@@ -16,6 +16,8 @@
   import TodoData from '../components/TodoData.svelte';
   import SettingData from '../components/SettingData.svelte';
   import Toast from '../components/Toast.svelte';
+  import Icon from '../components/Icon.svelte';
+  import { mdiDiscord } from '@mdi/js';
 
   export let segment;
 
@@ -54,10 +56,15 @@
 {#if $preloading && $delayedPreloading}
   <div transition:fade class="loading-bar" />
 {/if}
-<p class="lg:ml-64 px-4 md:px-8 py-4 text-gray-600">
-  Paimon.moe is not affiliated with miHoYo.<br />
-  Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
-</p>
+<div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col">
+  <p class="text-gray-400">
+    Paimon.moe is not affiliated with miHoYo.<br />
+    Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
+  </p>
+  <a class="text-gray-400 hover:text-primary mt-4" href="https://discord.gg/tPURAYgHV9" target="__blank">
+    <Icon path={mdiDiscord} size={1.5} /> Join Our Discord
+  </a>
+</div>
 
 <style>
   .loading-bar {
