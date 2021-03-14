@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { mdiClose, mdiDownload, mdiHelpCircle, mdiInformation, mdiLoading } from '@mdi/js';
   import { onMount } from 'svelte';
   import dayjs from 'dayjs';
@@ -102,7 +104,7 @@
         url = new URL(genshinLink);
       }
     } catch (err) {
-      pushToast('Invalid link, please check it again', 'error');
+      pushToast($t('wish.import.invalidLink'), 'error');
     }
 
     try {
@@ -178,7 +180,7 @@
 
         if (!res.ok) {
           processingLog = false;
-          pushToast('Error code returned from MiHoYo API, please try again later!', 'error');
+          pushToast($t('wish.import.errorApi'), 'error');
           throw 'error code';
         }
 
@@ -192,7 +194,7 @@
             throw 'error code';
           }
 
-          pushToast('Error code returned from MiHoYo API, please try again later!', 'error');
+          pushToast($t('wish.import.errorApi'), 'error');
           throw 'error code';
         }
 
@@ -200,7 +202,7 @@
         result = dat.data.list;
       } catch (err) {
         processingLog = false;
-        pushToast('Connection timeout, please wait a moment and try again later', 'error');
+        pushToast($t('wish.import.timeout'), 'error');
         throw 'network error';
       }
 
@@ -244,7 +246,7 @@
         console.log(wishes);
       } catch (err) {
         processingLog = false;
-        pushToast('Invalid data returned from API, try again later!', 'error');
+        pushToast($t('wish.import.invalidData'), 'error');
         throw 'invalid data';
       }
     } while (result.length > 0 && lastTime > newestPullTime);
@@ -372,7 +374,7 @@
     }
     calculatingPity = false;
 
-    pushToast('Import success 😀!');
+    pushToast($t('wish.import.success'));
     closeModal();
   }
 
@@ -446,7 +448,7 @@
 </script>
 
 {#if processingLog}
-  <h1 class="font-display text-white text-xl mb-2">Import Wish History</h1>
+  <h1 class="font-display text-white text-xl mb-2">{$t('wish.import.title')}</h1>
   <div class="bg-background rounded-xl px-4 py-2 text-white mt-2">
     {#if finishedProcessingLog}
       <table class="min-w-full md:min-w-0">
@@ -462,24 +464,24 @@
                   {numberFormat.format(wishes[code].length)}
                 </span>
               {:else}
-                <span class="text-white">No New Wishes</span>
+                <span class="text-white">{$t('wish.import.nonew')}</span>
               {/if}
             </td>
           </tr>
         {/each}
       </table>
-      <p class="mt-4">Imported wishes will be appended or replaced accordingly to existing data</p>
-      <p>If you don't have any data saved before, first wish will be counted as pity 1</p>
-      <p class="font-semibold">Save the data?</p>
+      <p class="mt-4">{$t('wish.import.importNotice1')}</p>
+      <p>{$t('wish.import.importNotice2')}</p>
+      <p class="font-semibold">{$t('wish.import.saveData')}</p>
     {:else if calculatingPity}
       <Icon path={mdiLoading} spin color="white" />
-      Re-calculating pity...
+      {$t('wish.import.reCalculating')}
     {:else if fetchingWishes}
       <div class="flex">
         <Icon path={mdiLoading} spin color="white" />
         <div class="ml-2">
-          <p>{`Processing ${currentBanner} Banner`}</p>
-          <p>{`Page ${currentPage}`}</p>
+          <p>{$t('wish.import.processing')} {currentBanner} {$t('wish.import.banner')}</p>
+          <p>{$t('wish.import.page')} {currentPage}</p>
         </div>
       </div>
       <table class="min-w-full md:min-w-0 mt-2">
@@ -501,79 +503,65 @@
       </table>
     {:else}
       <Icon path={mdiLoading} spin color="white" />
-      Parsing...
+      {$t('wish.import.parsing')}
     {/if}
   </div>
   <div class="flex justify-end mt-4">
     {#if finishedProcessingLog && !calculatingPity}
-      <Button on:click={saveData} color="green" className="mr-4">Save</Button>
+      <Button on:click={saveData} color="green" className="mr-4">{$t('wish.import.save')}</Button>
     {/if}
-    <Button on:click={cancel} disabled={calculatingPity || cancelled}>{cancelled ? 'Cancelling...' : 'Cancel'}</Button>
+    <Button on:click={cancel} disabled={calculatingPity || cancelled}
+      >{cancelled ? $t('wish.import.cancelling') : $t('wish.import.cancel')}</Button
+    >
   </div>
 {:else}
   <div>
     {#if showFaq}
-      <h1 class="font-display text-white text-xl mb-2">Import Wish History FAQS</h1>
+      <h1 class="font-display text-white text-xl mb-2">{$t('wish.import.faqs.title')}</h1>
 
       <div class="font-body">
-        <p class="text-white font-semibold">How does it work?</p>
+        <p class="text-white font-semibold">{$t('wish.import.faqs.q1')}</p>
+        <p class="text-gray-400">{$t('wish.import.faqs.a1')}</p>
+        <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q2')}</p>
+        <p class="text-gray-400">{$t('wish.import.faqs.a2')}</p>
+        <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q3')}</p>
         <p class="text-gray-400">
-          Genshin Impact wish history is basically a web page, so you can access it by opening the web page url. A
-          temporary key will be generated after you open the wish history page or the feedback page, and the importer
-          will automatically use the MiHoYo API to fetch your wish history.
-        </p>
-        <p class="text-white font-semibold mt-4">Is it safe? Will I get banned?</p>
-        <p class="text-gray-400">
-          Paimon.moe use the same request that Genshin Impact use to get the wish history, and Paimon.moe has no way
-          whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use
-          it on my main account). You still can input your data manually 😀.
-        </p>
-        <p class="text-white font-semibold mt-4">Can you hack my account then?</p>
-        <p class="text-gray-400">
-          Paimon.moe never save anything related to your account (even your uid or nickname), so the answer is no. This
-          project is open source on
+          {$t('wish.import.faqs.a3.0')}
           <a class="text-primary hover:underline" target="__blank" href="https://github.com/MadeBaruna/paimon-moe"
             >Github</a
-          >, I'm not planning to damage my reputation by hacking other people account.
+          >{$t('wish.import.faqs.a3.1')}
         </p>
-        <p class="text-white font-semibold mt-4">
-          Hey I checked the request and stuff, but why it request to your domain instead of MiHoYo API?
-        </p>
+        <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q4')}</p>
         <p class="text-gray-400">
-          Paimon.moe cannot request directly to MiHoYo API because of
+          {$t('wish.import.faqs.a4.0')}
           <a
             class="text-primary hover:underline"
             href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
             target="__blank"
           >
             CORS</a
-          >, so the request redirected to a simple cors proxy to make it work. You can see the code
+          >{$t('wish.import.faqs.a4.1')}
           <a
             class="text-primary hover:underline"
             href="https://gist.github.com/MadeBaruna/64785ae992c924e0cbfe575e404b7155"
-            target="__blank">here</a
+            target="__blank">{$t('wish.import.faqs.a4.2')}</a
           >
         </p>
-        <p class="text-white font-semibold mt-4">Do you store my temporary key or wish history?</p>
+        <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q5')}</p>
         <p class="text-gray-400">
-          Paimon.moe never store your key, and use HTTPS to pass your url to a cors proxy to make the CORS works. All
-          your wish history is saved on your device only (or your google drive if you turn on sync on setting).
-          Paimon.moe does not save anything to the server (yes anything).
+          {$t('wish.import.faqs.a5')}
           <!-- If you don't want any passing around your url, you can use the small importer app to process the wish
           history on your local PC (PC Local option) -->
         </p>
-        <p class="text-white font-semibold mt-4">I tried the step, but I got some API error?</p>
-        <p class="text-gray-400">
-          Make sure you copy all the text (just hold and press select all), maybe you left over some text that are
-          needed for the importer to work
-        </p>
+        <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q6')}</p>
+        <p class="text-gray-400">{$t('wish.import.faqs.a6')}</p>
       </div>
     {:else}
       <div class="flex flex-col md:flex-row items-start md:items-center">
-        <h1 class="font-display text-white text-xl mb-2 mr-2">Import Wish History</h1>
+        <h1 class="font-display text-white text-xl mb-2 mr-2">{$t('wish.import.title')}</h1>
         <Button size="sm" on:click={() => toggleFaqs(true)}>
           <Icon path={mdiHelpCircle} color="white" />
-          FAQS - READ FIRST
+          {$t('wish.import.faqsButton')}
         </Button>
       </div>
       <div class="flex mt-4 flex-wrap">
@@ -599,13 +587,13 @@
       {#if selectedType === 'pc'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
           <ol class="list-decimal ml-4">
-            <li class="my-2">Open Paimon menu [ESC]</li>
-            <li class="my-2">Click Feedback</li>
-            <li class="my-2">Wait for it to load and a browser page should open</li>
-            <li class="my-2">Copy & paste the link to the textbox below</li>
+            <li class="my-2">{$t('wish.import.guide.pc.0')}</li>
+            <li class="my-2">{$t('wish.import.guide.pc.1')}</li>
+            <li class="my-2">{$t('wish.import.guide.pc.2')}</li>
+            <li class="my-2">{$t('wish.import.guide.pc.3')}</li>
           </ol>
         </div>
-        <Input bind:value={genshinLink} placeholder="Paste link here... https://webstatic..." />
+        <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.pc.4')} />
       {:else if selectedType === 'pclocal'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
           <ol class="list-decimal ml-4">
@@ -624,33 +612,31 @@
       {:else if selectedType === 'android'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
           <ol class="list-decimal ml-4">
-            <li class="my-2">Open Paimon menu</li>
-            <li class="my-2">Press Feedback</li>
-            <li class="my-2">Wait for it to load and a feedback page should open</li>
-            <li class="my-2">Turn off your wifi and data connection</li>
-            <li class="my-2">Press refresh on top right corner</li>
-            <li class="my-2">The page should error and show you a text with black font</li>
-            <li class="my-2">
-              Hold the text and press select all, then copy that text (don't copy only some portion of the text)
-            </li>
-            <li class="my-2">Turn on your wifi or data connection</li>
-            <li class="my-2">Paste the text to the textbox below</li>
+            <li class="my-2">{$t('wish.import.guide.android.0')}</li>
+            <li class="my-2">{$t('wish.import.guide.android.1')}</li>
+            <li class="my-2">{$t('wish.import.guide.android.2')}</li>
+            <li class="my-2">{$t('wish.import.guide.android.3')}</li>
+            <li class="my-2">{$t('wish.import.guide.android.4')}</li>
+            <li class="my-2">{$t('wish.import.guide.android.5')}</li>
+            <li class="my-2">{$t('wish.import.guide.android.6')}</li>
+            <li class="my-2">{$t('wish.import.guide.android.7')}</li>
+            <li class="my-2">{$t('wish.import.guide.android.8')}</li>
           </ol>
         </div>
-        <Input bind:value={genshinLink} placeholder="Paste text here... Webpage not available..." />
+        <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.android.9')} />
       {:else if selectedType === 'ios'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
           <ol class="list-decimal ml-4">
-            <li class="my-2">Open Paimon menu</li>
-            <li class="my-2">Press Feedback</li>
-            <li class="my-2">Wait for it to load and a feedback page should open</li>
-            <li class="my-2">Press In-game issue</li>
-            <li class="my-2">Press Co-Op Mode</li>
-            <li class="my-2">There is a link on the bottom of the reply, press that</li>
-            <li class="my-2">A browser should open up, copy the link and paste it below</li>
+            <li class="my-2">{$t('wish.import.guide.ios.0')}</li>
+            <li class="my-2">{$t('wish.import.guide.ios.1')}</li>
+            <li class="my-2">{$t('wish.import.guide.ios.2')}</li>
+            <li class="my-2">{$t('wish.import.guide.ios.3')}</li>
+            <li class="my-2">{$t('wish.import.guide.ios.4')}</li>
+            <li class="my-2">{$t('wish.import.guide.ios.5')}</li>
+            <li class="my-2">{$t('wish.import.guide.ios.6')}</li>
           </ol>
         </div>
-        <Input bind:value={genshinLink} placeholder="Paste link here... https://genshin.mihoyo..." />
+        <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.ios.7')} />
       {/if}
     {/if}
 
@@ -658,19 +644,19 @@
       {#if !showFaq}
         <div class="flex-1 flex mb-4 md:mb-0 md:ml-4">
           <Checkbox disabled={false} bind:checked={newOnly}>
-            <span class="text-white select-none"> Import new wish only </span>
+            <span class="text-white select-none">{$t('wish.import.importNewWishOnly')}</span>
           </Checkbox>
           <span class="tooltip ml-2">
             <Icon path={mdiInformation} color="white" />
-            <span class="tooltip-content"> Uncheck only if you need to re-import all your wish history</span>
+            <span class="tooltip-content">{$t('wish.import.importNewWishUncheck')}</span>
           </span>
         </div>
       {/if}
       <div>
         {#if !showFaq}
-          <Button on:click={startImport} color="green" className="mr-4">Import</Button>
+          <Button on:click={startImport} color="green" className="mr-4">{$t('wish.import.import')}</Button>
         {/if}
-        <Button on:click={showFaq ? () => toggleFaqs(false) : () => closeModal()}>Close</Button>
+        <Button on:click={showFaq ? () => toggleFaqs(false) : () => closeModal()}>{$t('wish.import.close')}</Button>
       </div>
     </div>
   </div>

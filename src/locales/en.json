@@ -1,0 +1,266 @@
+{
+  "characters": {
+    "title": "Characters",
+    "subtitle": "Stat numbers are at level 80 Ascension 6. You can also click the table header to sort!",
+    "name": "Name",
+    "element": "Element",
+    "rarity": "Rarity",
+    "weapon": "Weapon",
+    "hp": "HP",
+    "atk": "ATK",
+    "def": "DEF"
+  },
+  "wish": {
+    "autoImport": "Auto Import",
+    "helpAndSetting": "Help & Setting",
+    "wishesWorth": "Wishes Worth",
+    "lifetimePulls": "Lifetime Pulls",
+    "guarantee": "Guaranteed at {pity}",
+    "name": "Name",
+    "time": "Time",
+    "pity": "Pity",
+    "welcome": "Welcome to Paimon.moe Wish Counter! The recommended usage is to import your wish history with the Auto Importer.",
+    "welcomeStart1": "To start, press the",
+    "welcomeStart2": "button up there",
+    "manual": "If you want to manually input the data, you can enable it here:",
+    "manualButton": "Enable Manual Input",
+    "import": {
+      "title": "Import Wish History",
+      "faqsButton": "FAQS - READ FIRST",
+      "nonew": "No New Wishes",
+      "importNotice1": "Imported wishes will be appended or replaced accordingly to existing data",
+      "importNotice2": "If you don't have any data saved before, first wish will be counted as pity 1",
+      "saveData": "Save the data?",
+      "reCalculating": "Re-calculating pity...",
+      "processing": "Processing",
+      "banner": "Banner",
+      "page": "Page",
+      "parsing": "Parsing...",
+      "save": "Save",
+      "cancel": "Cancel",
+      "canceling": "Canceling...",
+      "importNewWishOnly": "Import new wish only",
+      "importNewWishUncheck": "Uncheck only if you need to re-import all your wish history",
+      "import": "Import",
+      "close": "Close",
+      "invalidLink": "Invalid link, please check it again",
+      "errorApi": "Error code returned from MiHoYo API, please try again later!",
+      "timeout": "Connection timeout, please wait a moment and try again later",
+      "invalidData": "Invalid data returned from API, try again later",
+      "success": "Import success 😀!",
+      "faqs": {
+        "title": "Import Wish History FAQS",
+        "q1": "How does it work?",
+        "a1": "Genshin Impact wish history is basically a web page, so you can access it by opening the web page url. A temporary key will be generated after you open the wish history page or the feedback page, and the importer will automatically use the MiHoYo API to fetch your wish history.",
+        "q2": "Is it safe? Will I get banned?",
+        "a2": "Paimon.moe use the same request that Genshin Impact use to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
+        "q3": "Can you hack my account then?",
+        "a3": [
+          "Paimon.moe never save anything related to your account (even your uid or nickname), so the answer is no. This project is open source on",
+          ", I'm not planning to damage my reputation by hacking other people account."
+        ],
+        "q4": "Hey I checked the request and stuff, but why it request to your domain instead of MiHoYo API?",
+        "a4": [
+          "Paimon.moe cannot request directly to MiHoYo API because of",
+          ", so the request redirected to a simple cors proxy to make it work. You can see the code",
+          "here"
+        ],
+        "q5": "Do you store my temporary key or wish history?",
+        "a5": "Paimon.moe never store your key, and use HTTPS to pass your url to a cors proxy to make the CORS works. All your wish history is saved on your device only (or your google drive if you turn on sync on setting). Paimon.moe does not save anything to the server (yes anything).",
+        "q6": "I tried the step, but I got some API error?",
+        "a6": "Make sure you copy all the text (just hold and press select all), maybe you left over some text that are needed for the importer to work"
+      },
+      "guide": {
+        "pc": [
+          "Open Paimon menu [ESC]",
+          "Click Feedback",
+          "Wait for it to load and a browser page should open",
+          "Copy & paste the link to the textbox below",
+          "Paste link here... https://webstatic..."
+        ],
+        "android": [
+          "Open Paimon menu",
+          "Press Feedback",
+          "Wait for it to load and a feedback page should open",
+          "Turn off your wifi and data connection",
+          "Press refresh on top right corner",
+          "The page should error and show you a text with black font",
+          "Hold the text and press select all, then copy that text (don't copy only some portion of the text)",
+          "Turn on your wifi or data connection",
+          "Paste the text to the textbox below",
+          "Paste text here... Webpage not available..."
+        ],
+        "ios": [
+          "Open Paimon menu",
+          "Press Feedback",
+          "Wait for it to load and a feedback page should open",
+          "Press In-game issue",
+          "Press Co-Op Mode",
+          "There is a link on the bottom of the reply, press that",
+          "A browser should open up, copy the link and paste it below",
+          "Paste link here... https://genshin.mihoyo..."
+        ]
+      }
+    },
+    "help": {
+      "title": "Wish Counter Help & Settings",
+      "enableManual": "Enable Manual Input",
+      "notice": "Using the Auto Import and manual input together is not recommended still need some testing!",
+      "consider": "Consider using the Auto Import first, access it on button beside the button you click to open this How To",
+      "howto": {
+        "title": "How to use manual input",
+        "subtitle": "After you do x1 pull Wish:",
+        "press": "Press",
+        "whenYouGet": "when you get",
+        "p1": "It will automatically add the lifetime pulls,",
+        "and": "and",
+        "p2": ["When the", "pity reach 10, it will automatically reset to 0"],
+        "p3": ["When the", "pity reach 90, it will automatically reset to 0"],
+        "p4": [
+          "For when you do x10 pulls Wish, press",
+          "but the pity counter won't be accurate, because there is no way to tell when the drop occur (maybe you got it on the 1st or even the 10th). To make the counter still accurate, you need to check it on the history table and add it 1 by 1 like you do 1 pull Wish."
+        ],
+        "p5": ["You can also press", "button to edit the values manually!"],
+        "p6": [
+          "Press the arrow on the bottom to see your pulls detail. A popup will show up when you get",
+          "or",
+          "Or you can add or edit the table manually."
+        ]
+      }
+    }
+  },
+  "calculator": {
+    "titleWeapon": "Weapon Calculator",
+    "titleCharacter": "Character Calculator",
+    "goto": "Go To",
+    "howToUse": "How to Use",
+    "guide": {
+      "clickToMaximize": "Click the picture to maximize",
+      "howToWeapon": "How to use the Weapon Calculator",
+      "howToCharacter": "How to use the Character Calculator"
+    },
+    "weapon": {
+      "calculateAscension": "Calculate Ascension Material?",
+      "selectRarity": "Select weapon rarity",
+      "selectWeapon": "Select weapon",
+      "current": "Current Weapon Level, Exp, & Ascension",
+      "inputCurrentLevel": "Input current weapon level...",
+      "inputCurrentExp": "Input current weapon exp...",
+      "intended": "Intended Weapon Level & Ascension",
+      "inputIntendedLevel": "Input intended weapon level...",
+      "resource": "Resource to Use",
+      "calculate": "Calculate",
+      "unknownInformation": "There are some unknown information",
+      "ascensionLevel": "Ascension level",
+      "mora": "Mora (approximate ±40)",
+      "expWasted": "EXP Wasted",
+      "addToTodo": "Add to Todo List",
+      "addedToTodo": "Added to Todo List"
+    },
+    "character": {
+      "calculateAscension": "Calculate Ascension Material?",
+      "selectCharacter": "Select character",
+      "current": "Current Character Level, Exp, & Ascension",
+      "inputCurrentLevel": "Input current character level...",
+      "inputCurrentExp": "Input current character exp...",
+      "intended": "Intended Character Level & Ascension",
+      "inputIntendedLevel": "Input intended character level...",
+      "resource": "Resource to Use",
+      "calculateTalent": "Calculate Talent Material?",
+      "inputTalentLevel": "Input the 1st, 2nd & 3rd current talent level",
+      "inputTalentNotice": "If it has different color, substract it by 3",
+      "inputTalent": ["1st talent lvl", "2nd talent lvl", "3rd talent lvl"],
+      "talentToLevel": "to level",
+      "calculate": "Calculate",
+      "unknownInformation": "There are some unknown information",
+      "ascensionLevel": "Ascension level",
+      "mora": "Mora (approximate ±40)",
+      "expWasted": "EXP Wasted",
+      "addToTodo": "Add to Todo List",
+      "addedToTodo": "Added to Todo List"
+    },
+    "expTable": {
+      "level": "Level",
+      "items": "Items",
+      "wasted": "Wasted Exp",
+      "mora": "Mora Cost"
+    }
+  },
+  "items": {
+    "title": "Item List",
+    "subtitle": "Click the item image to add it to the todo list",
+    "searchCharacter": "Search character",
+    "searchWeapon": "Search weapon",
+    "day": "Days",
+    "material": "Materials",
+    "characterWeapons": "Characters & Weapons",
+    "add": {
+      "rarity": "Select Rarity",
+      "amount": "Amount",
+      "inputAmount": "Input amount...",
+      "cancel": "Cancel",
+      "add": "Add to Todo"
+    }
+  },
+  "days": {
+    "Sunday": "Sunday",
+    "Monday": "Monday",
+    "Tuesday": "Tuesday",
+    "Wednesday": "Wednesday",
+    "Thursday": "Thursday",
+    "Friday": "Friday",
+    "Saturday": "Saturday"
+  },
+  "todo": {
+    "title": "Todo List",
+    "summary": "Summary",
+    "empty": ["Nothing to do yet 😀", "Add some from the Items page or the Calculator!"],
+    "farmableToday": "Farmable Today",
+    "resin": "resin needed",
+    "based": "Based on AR:{ar} and WL:{wl}",
+    "change": "(change on settings)",
+    "approximation": "Approximation calculated from drop rates by",
+    "delete": {
+      "title": "Delete this todo?",
+      "cancel": "Cancel",
+      "delete": "Delete"
+    }
+  },
+  "timeline": {
+    "title": "Timeline",
+    "localTime": "Show as local time",
+    "starting": "Starting in",
+    "ending": "Ending in",
+    "live": "Live Now!",
+    "finished": "Finished"
+  },
+  "settings": {
+    "version": "Data Version:",
+    "multiple": "Have multiple account? Choose account here to separate your wish and todo data",
+    "selectAccount": "Select your account",
+    "reset": "Reset",
+    "delete": "Delete",
+    "add": "Add",
+    "server": "Select your server:",
+    "drive": [
+      "Paimon.moe use Application Data Directory on your Google Drive to save and sync your wish counter and todo list.",
+      "Paimon.moe can only read and write file that this site create."
+    ],
+    "driveError": "Google Drive API cannot be loaded",
+    "driveSignIn": "Sign in to Google Drive",
+    "driveSignOut": "Sign out Google Drive",
+    "synced": "Synced",
+    "waiting": "Waiting...",
+    "syncing": "Syncing...",
+    "lastSync": "Last Sync:",
+    "feedback": "If you found any bug, wrong data, or you have any feedback, please leave a message on",
+    "or": "or",
+    "thanks": "Thanks😁!",
+    "modal": {
+      "notice": "All todo and wish history data will be deleted",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "reset": "Reset"
+    }
+  }
+}

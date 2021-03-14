@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { fade } from 'svelte/transition';
   import { mdiCheckCircleOutline, mdiClose, mdiInformationOutline } from '@mdi/js';
 
@@ -464,13 +466,19 @@
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
     <div>
       <div>
-        <Check className="mb-2" on:change={onChange} bind:checked={withAscension}>Calculate Ascension Material?</Check>
+        <Check className="mb-2" on:change={onChange} bind:checked={withAscension}
+          >{$t('calculator.character.calculateAscension')}</Check
+        >
         {#if withAscension}
-          <CharacterSelect on:change={onChange} bind:selected={selectedCharacter} placeholder="Select character" />
+          <CharacterSelect
+            on:change={onChange}
+            bind:selected={selectedCharacter}
+            placeholder={$t('calculator.character.selectCharacter')}
+          />
         {/if}
 
         <div>
-          <p class="text-white text-center mt-3 mb-2">Current Character Level, Exp, & Ascension</p>
+          <p class="text-white text-center mt-3 mb-2">{$t('calculator.character.current')}</p>
           <Input
             className="mb-2"
             on:change={onChange}
@@ -478,20 +486,22 @@
             min={1}
             max={80}
             bind:value={currentLevel}
-            placeholder="Input current character level..." />
+            placeholder={$t('calculator.character.inputCurrentLevel')}
+          />
           <Input
             className="mb-2"
             on:change={onChange}
             type="number"
             min={0}
             bind:value={currentExp}
-            placeholder="Input current character exp..." />
+            placeholder={$t('calculator.character.inputCurrentExp')}
+          />
           {#if withAscension}
             <AscensionSelector min={minAscension} bind:value={currentAscension} on:change={onChange} />
           {/if}
         </div>
         <div>
-          <p class="text-white text-center mt-3 mb-2">Intended Character Level & Ascension</p>
+          <p class="text-white text-center mt-3 mb-2">{$t('calculator.character.intended')}</p>
           <Input
             className="mb-2"
             on:change={onChange}
@@ -499,18 +509,20 @@
             min={currentLevel}
             max={80}
             bind:value={intendedLevel}
-            placeholder="Input intended character level..." />
+            placeholder={$t('calculator.character.inputIntendedLevel')}
+          />
           {#if withAscension}
             <AscensionSelector
               min={Math.max(currentAscension, minIntendedAscension)}
               bind:value={intendedAscension}
-              on:change={onChange} />
+              on:change={onChange}
+            />
           {/if}
         </div>
       </div>
     </div>
     <div class="flex flex-col pl-1">
-      <p class="text-white text-center md:text-left mb-1">Resource to Use</p>
+      <p class="text-white text-center md:text-left mb-1">{$t('calculator.character.resource')}</p>
       {#each resources as res}
         <div class="mb-1">
           <Checkbox disabled={res.disabled} bind:checked={res.selected} on:change={onChange}>
@@ -527,10 +539,11 @@
       {/each}
       <div class="mt-4">
         {#if withAscension}
-          <Check on:change={onChange} bind:checked={withTalent}>Calculate Talent Material?</Check>
+          <Check on:change={onChange} bind:checked={withTalent}>{$t('calculator.character.calculateTalent')}</Check>
         {/if}
         {#if withTalent}
-          <p class="text-white text-center mt-3">Input the 1st, 2nd & 3rd current talent level</p>
+          <p class="text-white text-center mt-3">{$t('calculator.character.inputTalentLevel')}</p>
+          <p class="text-green-300 text-center">{$t('calculator.character.inputTalentNotice')}</p>
           <div class="grid grid-cols-3 gap-2 mt-2">
             <Input
               on:change={onChange}
@@ -538,23 +551,26 @@
               min={1}
               max={maxTalentLevel}
               bind:value={currentTalentLevel.first}
-              placeholder="1st talent lvl" />
+              placeholder={$t('calculator.character.talent.0')}
+            />
             <Input
               on:change={onChange}
               type="number"
               min={1}
               max={maxTalentLevel}
               bind:value={currentTalentLevel.second}
-              placeholder="2nd talent lvl" />
+              placeholder={$t('calculator.character.talent.1')}
+            />
             <Input
               on:change={onChange}
               type="number"
               min={1}
               max={maxTalentLevel}
               bind:value={currentTalentLevel.third}
-              placeholder="3rd talent lvl" />
+              placeholder={$t('calculator.character.talent.2')}
+            />
           </div>
-          <p class="text-white text-center mt-3">to level</p>
+          <p class="text-white text-center mt-3">{$t('calculator.character.talentToLevel')}</p>
           <div class="grid grid-cols-3 gap-2 mt-2">
             <Input
               on:change={onChange}
@@ -562,36 +578,41 @@
               min={currentTalentLevel.first}
               max={maxTalentLevel}
               bind:value={targetTalentLevel.first}
-              placeholder="1st talent lvl" />
+              placeholder={$t('calculator.character.talent.0')}
+            />
             <Input
               on:change={onChange}
               type="number"
               min={currentTalentLevel.second}
               max={maxTalentLevel}
               bind:value={targetTalentLevel.second}
-              placeholder="2nd talent lvl" />
+              placeholder={$t('calculator.character.talent.1')}
+            />
             <Input
               on:change={onChange}
               type="number"
               min={currentTalentLevel.third}
               max={maxTalentLevel}
               bind:value={targetTalentLevel.third}
-              placeholder="3rd talent lvl" />
+              placeholder={$t('calculator.character.talent.2')}
+            />
           </div>
         {/if}
       </div>
     </div>
     <div class="md:col-span-2 xl:col-span-1">
-      <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}>Calculate</Button>
+      <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}
+        >{$t('calculator.character.calculate')}</Button
+      >
       {#if currentMax !== null && !changed}
         {#if Object.keys(unknownList).length > 0}
           <div class="border-2 border-red-400 rounded-xl mt-2 p-4 md:inline-block">
             <p class="font-bold flex items-center text-red-400">
               <Icon className="mr-1 mb-1" path={mdiInformationOutline} />
-              There are some unknown information
+              {$t('calculator.character.talent.2')}
             </p>
             {#each Object.entries(unknownList) as [title, values]}
-              <p class="text-red-400">Ascension level {Number(title) + 1}</p>
+              <p class="text-red-400">{$t('calculator.character.ascensionLevel')} {Number(title) + 1}</p>
               <ul>
                 {#each values as val}
                   <li class="pl-4 text-red-400">- {val}</li>
@@ -606,8 +627,10 @@
               {#if currentMax.usage[i] > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-no-wrap">{currentMax.usage[i]}
-                      <Icon size={0.5} path={mdiClose} /></span>
+                    <span class="text-white mr-2 whitespace-no-wrap"
+                      >{currentMax.usage[i]}
+                      <Icon size={0.5} path={mdiClose} /></span
+                    >
                   </td>
                   <td class="border-b border-gray-700 py-1">
                     <span class="text-white">
@@ -626,8 +649,10 @@
               {#if item.amount > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-no-wrap">{item.amount}
-                      <Icon size={0.5} path={mdiClose} /></span>
+                    <span class="text-white mr-2 whitespace-no-wrap"
+                      >{item.amount}
+                      <Icon size={0.5} path={mdiClose} /></span
+                    >
                   </td>
                   <td class="border-b border-gray-700 py-1">
                     <span class="text-white">
@@ -644,8 +669,10 @@
               {#if item.amount > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-no-wrap">{item.amount}
-                      <Icon size={0.5} path={mdiClose} /></span>
+                    <span class="text-white mr-2 whitespace-no-wrap"
+                      >{item.amount}
+                      <Icon size={0.5} path={mdiClose} /></span
+                    >
                   </td>
                   <td class="border-b border-gray-700 py-1">
                     <span class="text-white">
@@ -660,22 +687,24 @@
             {/each}
             <tr>
               <td class="text-right border-b border-gray-700 py-1">
-                <span class="text-white mr-2 whitespace-no-wrap">{numberFormat.format(moraNeeded)}
-                  <Icon size={0.5} path={mdiClose} /></span>
+                <span class="text-white mr-2 whitespace-no-wrap"
+                  >{numberFormat.format(moraNeeded)}
+                  <Icon size={0.5} path={mdiClose} /></span
+                >
               </td>
               <td class="border-b border-gray-700 py-1">
                 <span class="text-white">
                   <span class="w-6 inline-block">
                     <img class="h-6 inline-block mr-1" src="/images/mora.png" alt="Mora" />
                   </span>
-                  Mora (approximate)
+                  {$t('calculator.character.mora')}
                 </span>
               </td>
             </tr>
             {#if currentMax.over < 0}
               <tr>
                 <td />
-                <td class="text-red-400 py-1">{currentMax.over * -1} EXP Wasted</td>
+                <td class="text-red-400 py-1">{currentMax.over * -1} {$t('calculator.character.expWasted')}</td>
               </tr>
             {/if}
           </table>
@@ -683,9 +712,9 @@
             {#if addedToTodo}
               <span class="text-green-400" in:fade={{ duration: 100 }}>
                 <Icon path={mdiCheckCircleOutline} size={0.8} />
-                Added to Todo List
+                {$t('calculator.character.addedToTodo')}
               </span>
-            {:else}<span in:fade={{ duration: 100 }}>Add to Todo List </span>{/if}
+            {:else}<span in:fade={{ duration: 100 }}>{$t('calculator.character.addToTodo')}</span>{/if}
           </Button>
         </div>
       {/if}

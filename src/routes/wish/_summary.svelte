@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { onMount } from 'svelte';
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
@@ -148,7 +150,7 @@
       <SummaryItem avg={avg[types[3].id]} type={types[3]} />
     {/if}
     <div class="bg-item rounded-xl p-4 flex items-center w-full text-white mt-4" style="height: min-content;">
-      Wishes Worth <img class="w-4 h-4 mx-2" src="/images/primogem.png" alt="primogem" />
+      {$t('wish.wishesWorth')} <img class="w-4 h-4 mx-2" src="/images/primogem.png" alt="primogem" />
       {numberFormat.format(totalWish * 160)}
     </div>
   </div>

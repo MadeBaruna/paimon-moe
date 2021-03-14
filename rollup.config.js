@@ -6,6 +6,8 @@ import url from '@rollup/plugin-url';
 import svelte from 'rollup-plugin-svelte';
 import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
+import json from '@rollup/plugin-json';
+
 import config from 'sapper/config/rollup.js';
 import { config as envConfig } from 'dotenv';
 
@@ -50,6 +52,7 @@ export default {
         dedupe: ['svelte'],
       }),
       commonjs(),
+      json(),
 
       legacy &&
         babel({
@@ -113,6 +116,7 @@ export default {
         dedupe: ['svelte'],
       }),
       commonjs(),
+      json(),
     ],
     external: Object.keys(pkg.dependencies).concat(require('module').builtinModules),
 

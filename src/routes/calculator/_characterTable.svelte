@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { mdiArrowRight } from '@mdi/js';
 
   import Icon from '../../components/Icon.svelte';
@@ -112,10 +114,10 @@
     <div class="bg-item rounded-xl p-4 w-full">
       <table>
         <tr>
-          <th class="px-2 font-display text-gray-400" colspan="3">Level</th>
-          <th class="px-2 font-display text-gray-400 align-bottom">Items</th>
-          <th class="px-2 font-display text-gray-400 align-bottom">Wasted Exp</th>
-          <th class="px-2 font-display text-gray-400 align-bottom text-right">Mora Cost</th>
+          <th class="px-2 font-display text-gray-400" colspan="3">{$t('calculator.expTable.level')}</th>
+          <th class="px-2 font-display text-gray-400 align-bottom">{$t('calculator.expTable.items')}</th>
+          <th class="px-2 font-display text-gray-400 align-bottom">{$t('calculator.expTable.wasted')}</th>
+          <th class="px-2 font-display text-gray-400 align-bottom text-right">{$t('calculator.expTable.mora')}</th>
         </tr>
         {#each result as row, i}
           <tr>

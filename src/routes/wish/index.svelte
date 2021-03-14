@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n'
+
   import { mdiDatabaseImport, mdiHelpCircle } from '@mdi/js';
   import { getContext, onMount } from 'svelte';
 
@@ -123,20 +125,20 @@
     <h1 class="font-display font-black text-5xl text-white text-center md:text-left md:mr-4">Wish Counter</h1>
     <Button className="mr-2 hidden md:block" on:click={openImport}>
       <Icon size={0.8} path={mdiDatabaseImport} />
-      Auto Import
+      {$t('wish.autoImport')}
     </Button>
     <Button on:click={openHowTo} className="hidden md:block">
       <Icon size={0.8} path={mdiHelpCircle} />
-      Help & Setting
+      {$t('wish.helpAndSetting')}
     </Button>
     <div class="md:hidden flex flex-wrap justify-center">
       <Button className="m-1" on:click={openImport}>
         <Icon size={0.8} path={mdiDatabaseImport} />
-        Auto Import
+        {$t('wish.autoImport')}
       </Button>
       <Button className="m-1" on:click={openHowTo}>
         <Icon size={0.8} path={mdiHelpCircle} />
-        How To Use
+        {$t('wish.helpAndSetting')}
       </Button>
     </div>
   </div>

@@ -1,0 +1,266 @@
+{
+  "characters": {
+    "title": "Karakter",
+    "subtitle": "Angka stat adalah saat level 80 Ascension 6. Kamu juga dapat mengklik judul tabel untuk mengurutkan!",
+    "name": "Nama",
+    "element": "Element",
+    "rarity": "Rarity",
+    "weapon": "Senjata",
+    "hp": "HP",
+    "atk": "ATK",
+    "def": "DEF"
+  },
+  "wish": {
+    "autoImport": "Import Otomatis",
+    "helpAndSetting": "Bantuan & Pengaturan",
+    "wishesWorth": "Wish Setara Dengan",
+    "lifetimePulls": "Total Pull",
+    "guarantee": "Dijamin saat {pity}",
+    "name": "Nama",
+    "time": "Waktu",
+    "pity": "Pity",
+    "welcome": "Selamat datang di Paimon.moe Wish Counter! Kamu bisa mengimport riwayat wish dengan menggunakan Import Otomatis.",
+    "welcomeStart1": "Tekan tombol",
+    "welcomeStart2": "diatas untuk mulai",
+    "manual": "Jika kamu ingin memasukkan datanya secara manual, kamu bisa menyalakannya disini:",
+    "manualButton": "Nyalakan Input Manual",
+    "import": {
+      "title": "Import Riwayat Wish",
+      "faqsButton": "FAQS - BACA DULU",
+      "nonew": "Tdk ada wish baru",
+      "importNotice1": "Wish yang diimport akan ditambah atau dihapus sesuai dengan data yang sudah pernah diimport",
+      "importNotice2": "Jika kamu tidak mempunyai data yang tersimpan sebelumnya, wish pertama akan dihitung sebagai pity 1.",
+      "saveData": "Simpan data?",
+      "reCalculating": "Menghitung pity...",
+      "processing": "Memproses",
+      "banner": "Banner",
+      "page": "Halaman",
+      "parsing": "Membaca...",
+      "save": "Simpan",
+      "cancel": "Batal",
+      "canceling": "Membatalkan...",
+      "importNewWishOnly": "Import wish baru saja",
+      "importNewWishUncheck": "Hapus centang hanya jika kamu ingin mengimport ulang semua riwayat history mu",
+      "import": "Import",
+      "close": "Tutup",
+      "invalidLink": "Link invalid, silahkan dicek kembali",
+      "errorApi": "Error code dikembalikan dari API MiHoYo, coba lagi nanti!",
+      "timeout": "Connection timeout, tunggu sebentar dan coba lagi nanti",
+      "invalidData": "Invalid data dikembalikan dari API, coba lagi nanti",
+      "success": "Import berhasil 😀!",
+      "faqs": {
+        "title": "Import Riwayat Wish FAQS",
+        "q1": "Cara kerjanya gimana?",
+        "a1": "Riwayat history Genshin Impact sebenarnya adalah sebuah halaman web, jadi kamu bisa mengakses nya dengan url web nya. Ada key sementara yang akan dibuat setelah kamu membuka halaman riwayat wish atau halaman feedback, dan importer ini akan secara otomatis menggunakan API MiHoYo untuk mengambil riwayat wish mu",
+        "q2": "Aman gak? Apakah bisa ke ban?",
+        "a2": "Paimon.moe menggunakan request yang sama yang digunakan di Genshin Impact untuk mengambil riwayat wish nya, dan Paimon.moe tidak bisa mengubah file-file game atau memori game, dan seharusnya aman. Namun gunakan dengan resiko anda sendiri (saya pakai di akun utama saya sih...). Dan kamu masih bisa input data nya secara manual 😀.",
+        "q3": "Akun nya bisa kamu hack dong?",
+        "a3": [
+          "Paimon.moe tidak menyimpan apapun yang berkaitan dengan akun mu (bahkan uid atau nickname mu), jadi jawabannya adalah tidak. Projek ini open source di",
+          ", Saya belum berencana untuk merusak reputasi saya dengan meng-hack akun orang lain, tidak ada gunanya..."
+        ],
+        "q4": "Hey saya coba cek request nya, tapi kok malah me-request ke domain ini, bukan ke API MiHoYo?",
+        "a4": [
+          "Paimon.moe tidak bisa langsung me-request ke API MiHoYo karena",
+          ", jadi request nya di redirect ke proxy cors agar bisa digunakan. Kamu bisa melihat source code nya di",
+          "sini"
+        ],
+        "q5": "Apakah kamu menyimpan key sementara ku atau riwayat history ku?",
+        "a5": "Paimon.moe tidak menyimpan key mu, dan menggunakan HTTPS untuk mengirim link mu ke proxy cors sehingga bisa digunakan. Semua data riwayat wish mu disimpan pada device masing-masing (atau google drive mu jika kamu menyalakan sync di setting). Paimon.moe tidak menyimpan apapun di server (ya apapun)",
+        "q6": "Saya udah coba step-step nya, tapi kok malah dapet API error?",
+        "a6": "Coba pastiin sudah di copy semua text nya (coba select all aja text nya, jangan di potong-potong), mungkin ada yang kelewatan, jadi ada yang terpotong"
+      },
+      "guide": {
+        "pc": [
+          "Buka menu Paimon [ESC]",
+          "Klik Masukan",
+          "Tunggu sampai sudah ke-load dan browser mu akan terbuka",
+          "Copy & paste link nya ke input dibawah",
+          "Paste link disini... https://webstatic..."
+        ],
+        "android": [
+          "Buka menu Paimon",
+          "Tekan Masukan",
+          "Tunggu sampai sudah ke-load dan halaman masukan harusnya akan terbuka",
+          "Matikan wifi dan data selular",
+          "Tekan refresh di ujung kanan atas",
+          "Halaman nya seharusnya error dan akan menampilkan text dengan warna hitam",
+          "Tekan dan tahan text nya lalu pilih semua, kemudian copy text nya (jangan copy hanya sebagian text nya, jangan dipotong-potong lagi)",
+          "Nyalakan lagi wifi atau data selular mu",
+          "Paste text nya ke input dibawah",
+          "Paste text disini... Webpage not available..."
+        ],
+        "ios": [
+          "Buka menu Paimon",
+          "Tekan Masukan",
+          "Tunggu sampai sudah ke-load dan halaman masukan harusnya akan terbuka",
+          "Tekan Masalah Game",
+          "Tekan Mode Co-Op",
+          "Ada link warna biru di bawah reply nya, klik link nya",
+          "Browser mu akan terbuka, copy link nya dan paste ke input dibawah",
+          "Paste link disini... https://genshin.mihoyo..."
+        ]
+      }
+    },
+    "help": {
+      "title": "Wish Counter Bantuan & Pengaturan",
+      "enableManual": "Nyalakan Manual Input",
+      "notice": "Menggunakan Import Otomatis dan Manual Input secara bersamaan tidak direkomendasikan karena belum stabil, dan masih perlu di testing!",
+      "consider": "Pertimbangkan untuk menggunakan Import Otomatis dulu, buka menu nya di tombol di sebelah tombol yang kamu gunakan untuk membuka halaman bantuan ini",
+      "howto": {
+        "title": "Cara menggunakan manual input",
+        "subtitle": "Setelah kamu melakukan x1 pull wish:",
+        "press": "Tekan",
+        "whenYouGet": "ketika kamu mendapatkan",
+        "p1": "Itu akan otomatis menambahkan total pull",
+        "and": "dan",
+        "p2": ["Ketika", "pity mencapai 10, angkanya akan otomatis reset menjadi 0"],
+        "p3": ["Ketika", "pity mencapai 90, angkanya akan otomatis reset menjadi 0"],
+        "p4": [
+          "Ketika kamu melakukan wish x10 pull, tekan",
+          "tapi counter pity nya tidak akan akurat, karena tidak tahu kapan drop nya terjadi (bisa saja kamu dapat nya saat pull ke 1 atau bisa saja ke 10). Untuk membuat counter nya akurat, kamu perlu mengecek nya di tabel riwayat wish mu dan tabahkan 1-per-1 seperti kamu melakukan 1x pull wish."
+        ],
+        "p5": ["Kamu juga bisa menekan", "untuk mengedit nilai nya secara manual!"],
+        "p6": [
+          "Tekan tombol panah dibawah untuk melihat detail riwayat mu. Sebuah form akan muncul ketika kamu mendapat",
+          "atau",
+          "Atau kamu bisa menambahkan atau mengedit tabel nya secara manual."
+        ]
+      }
+    }
+  },
+  "calculator": {
+    "titleWeapon": "Kalulator Senjata",
+    "titleCharacter": "Kalkulator Karakter",
+    "goto": "Ke",
+    "howToUse": "Cara Penggunaan",
+    "guide": {
+      "clickToMaximize": "Klik gambar untuk memperbesar",
+      "howToWeapon": "Cara menggunakan Kalkulator Senjata",
+      "howToCharacter": "Cara menggunakan Kalkulator Karakter"
+    },
+    "weapon": {
+      "calculateAscension": "Hitung Material Ascension?",
+      "selectRarity": "Pilih bintang senjata",
+      "selectWeapon": "Pilih senjata",
+      "current": "Level Senjata, Exp, & Ascension Saat Ini",
+      "inputCurrentLevel": "Masukkan level senjata saat ini...",
+      "inputCurrentExp": "Masukkan exp senjata saat ini...",
+      "intended": "Level Senjata & Ascension Yang Diinginkan",
+      "inputIntendedLevel": "Masukkan level senjata yang diinginkan...",
+      "resource": "Resource yang digunakan",
+      "calculate": "Hitung",
+      "unknownInformation": "Ada beberapa informasi yang tidak diketahui",
+      "ascensionLevel": "Level Ascension",
+      "mora": "Mora (kurang lebih ±40)",
+      "expWasted": "EXP Terbuang",
+      "addToTodo": "Tambah ke Todo List",
+      "addedToTodo": "Sudah ditambahkan ke Todo List"
+    },
+    "character": {
+      "calculateAscension": "Hitung Material Ascension?",
+      "selectCharacter": "Pilih karakter",
+      "current": "Level Karakter, Exp, & Ascension Saat Ini",
+      "inputCurrentLevel": "Masukkan level karakter saat ini...",
+      "inputCurrentExp": "Masukkan exp karakter saat ini...",
+      "intended": "Level Karakter & Ascension Yang Diinginkan",
+      "inputIntendedLevel": "Masukkan level karakter yang diinginkan...",
+      "resource": "Resource yang digunakan",
+      "calculateTalent": "Hitung Material Talent?",
+      "inputTalentLevel": "Masukkan level talent ke 1, 2 dan 3 saat ini",
+      "inputTalentNotice": "Jika warna level nya berbeda, kurangi 3",
+      "inputTalent": ["lvl talent ke 1", "lvl talent ke 2", "lvl talent ke 3"],
+      "talentToLevel": "ke level",
+      "calculate": "Hitung",
+      "unknownInformation": "Ada beberapa informasi yang tidak diketahui",
+      "ascensionLevel": "Level Ascension",
+      "mora": "Mora (kurang lebih ±40)",
+      "expWasted": "EXP Terbuang",
+      "addToTodo": "Tambah ke Todo List",
+      "addedToTodo": "Sudah ditambahkan ke Todo List"
+    },
+    "expTable": {
+      "level": "Level",
+      "items": "Items",
+      "wasted": "Exp Terbuang",
+      "mora": "Jumlah Mora"
+    }
+  },
+  "items": {
+    "title": "Daftar Item",
+    "subtitle": "Klik gambar item untuk menambahkannya ke todo list",
+    "searchCharacter": "Cari karakter",
+    "searchWeapon": "Cari senjata",
+    "day": "Hari",
+    "material": "Material",
+    "characterWeapons": "Karakter & Senjata",
+    "add": {
+      "rarity": "Pilih Rarity",
+      "amount": "Jumlah",
+      "inputAmount": "Masukkan jumlah...",
+      "cancel": "Batal",
+      "add": "Tambah ke Todo"
+    }
+  },
+  "days": {
+    "Sunday": "Minggu",
+    "Monday": "Senin",
+    "Tuesday": "Selasa",
+    "Wednesday": "Rabu",
+    "Thursday": "Kamis",
+    "Friday": "Jumat",
+    "Saturday": "Sabtu"
+  },
+  "todo": {
+    "title": "Todo List",
+    "summary": "Summary",
+    "empty": ["Belum ada yang ditambahkan 😀", "Tambahkan todo dari halaman Items atau dari Kalkulator!"],
+    "farmableToday": "Bisa di farm hari ini",
+    "resin": "resin diperlukan",
+    "based": "Berdasarkan AR:{ar} and WL:{wl}",
+    "change": "(ganti di settings)",
+    "approximation": "Perkiraan dikalkulasi berdasarkan data dari",
+    "delete": {
+      "title": "Hapus todo ini?",
+      "cancel": "Batal",
+      "delete": "Hapus"
+    }
+  },
+  "timeline": {
+    "title": "Timeline",
+    "localTime": "Tampilkan sebagai waktu lokal",
+    "starting": "Dimulai dalam",
+    "ending": "Selesai dalam",
+    "live": "Live Sekarang!",
+    "finished": "Sudah Selesai"
+  },
+  "settings": {
+    "version": "Versi Data:",
+    "multiple": "Punya beberapa akun? Pilih akun disini untuk memisahkan data todo dan riwayat wish",
+    "selectAccount": "Pilih akun mu",
+    "reset": "Reset",
+    "delete": "Hapus",
+    "add": "Tambah",
+    "server": "Pilih server mu:",
+    "drive": [
+      "Paimon.moe use menggunakan folder Application Data di Google Drive mu untuk menyimpan riwayat wish dan todo list.",
+      "Paimon.moe hanya bisa membaca dan menulis file yang dibuat oleh website ini."
+    ],
+    "driveError": "Google Drive API tidak bisa dimuat",
+    "driveSignIn": "Sign in ke Google Drive",
+    "driveSignOut": "Sign out dari Google Drive",
+    "synced": "Synced",
+    "waiting": "Menunggu...",
+    "syncing": "Syncing...",
+    "lastSync": "Sync Terakhir:",
+    "feedback": "Jika kamu menemukan bug, data yang salah, atau ada feedback, kamu bisa chat di",
+    "or": "atau",
+    "thanks": "Thanks😁!",
+    "modal": {
+      "notice": "Semua todo dan riwayat wish akan dihapus",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "reset": "Reset"
+    }
+  }
+}

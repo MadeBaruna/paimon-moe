@@ -2,6 +2,7 @@
   import { fly } from 'svelte/transition';
   import { getContext } from 'svelte';
   import { mdiCloseCircle } from '@mdi/js';
+  import { locale } from 'svelte-i18n';
 
   import Icon from '../Icon.svelte';
 
@@ -18,6 +19,13 @@
   export let segment;
   export let mobile = false;
 
+  const languages = [
+    { id: 'en', label: 'English' },
+    { id: 'id', label: 'Indonesia' },
+  ];
+  $: locales = languages.filter((e) => e.id !== $locale.substring(0, 2));
+  $: currentLocale = languages.find((e) => e.id === $locale.substring(0, 2));
+
   function openDonationModal() {
     openModal(
       DonateModal,
@@ -31,6 +39,10 @@
 
   function close() {
     showSidebar.set(false);
+  }
+
+  function changeLocale(lang) {
+    locale.set(lang);
   }
 </script>
 
@@ -92,6 +104,25 @@
     href="/settings"
   />
   <div class="mt-8 md:mt-0 md:flex-1" />
+  <div
+    class="locale-selector flex items-center justify-center my-4 py-2 cursor-pointer 
+    rounded-xl hover:bg-black hover:bg-opacity-50 relative w-40"
+  >
+    <img class="w-4 h-4 rounded-full mr-2" alt={currentLocale.label} src="/images/locales/{currentLocale.id}.svg" />
+    <span class="text-gray-400">{currentLocale.label}</span>
+    <div class="locale-dropdown" style="top: {locales.length * -45}px;">
+      {#each locales as locale}
+        <div
+          class="flex items-center justify-center py-2 cursor-pointer rounded-xl bg-opacity-50 bg-black hover:bg-opacity-75"
+          on:click={() => changeLocale(locale.id)}
+        >
+          <img class="w-4 h-4 rounded-full mr-2" alt={locale.label} src="/images/locales/{locale.id}.svg" />
+          <span class="text-gray-400">{locale.label}</span>
+        </div>
+        <div class="w-40" style="height: 5px;" />
+      {/each}
+    </div>
+  </div>
   <Button on:click={openDonationModal}>
     <img class="inline w-8 h-8" src="/images/mora.png" alt="donate" />
     Donate
@@ -109,5 +140,17 @@
     z-index: -1;
     background: url('/paimon_bg.png') no-repeat top;
     background-size: contain;
+  }
+
+  .locale-dropdown {
+    @apply hidden;
+    @apply absolute;
+    @apply w-40;
+  }
+
+  .locale-selector:hover {
+    .locale-dropdown {
+      @apply block;
+    }
   }
 </style>

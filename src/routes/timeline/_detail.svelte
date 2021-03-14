@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+  
   import dayjs from 'dayjs';
   import { onMount } from 'svelte';
 
@@ -36,13 +38,13 @@
   </p>
   <p class="text-gray-400 px-4 py-1 bg-black bg-opacity-50 rounded-xl mt-2 inline-block">
     {#if !started}
-      Starting in {dayjs.duration(diffStart).format(diffStart > 86400000 ? 'D[d] HH:mm:ss' : 'HH:mm:ss')}
+      {$t('timeline.starting')} {dayjs.duration(diffStart).format(diffStart > 86400000 ? 'D[d] HH:mm:ss' : 'HH:mm:ss')}
     {:else if started && !ended && !event.startOnly}
-      Ending in {dayjs.duration(diffEnd).format(diffEnd > 86400000 ? 'D[d] HH:mm:ss' : 'HH:mm:ss')}
+      {$t('timeline.ending')} {dayjs.duration(diffEnd).format(diffEnd > 86400000 ? 'D[d] HH:mm:ss' : 'HH:mm:ss')}
     {:else if event.startOnly}
-      Live Now!
+      {$t('timeline.live')}
     {:else}
-      Finished
+      {$t('timeline.finished')}
     {/if}
   </p>
 </div>

@@ -1,4 +1,6 @@
 <script>
+  import { t} from "svelte-i18n";  
+
   import Button from './Button.svelte';
 
   export let todo;
@@ -7,7 +9,7 @@
 </script>
 
 <div>
-  <p class="text-white font-bold mb-4 text-lg">Delete this todo?</p>
+  <p class="text-white font-bold mb-4 text-lg">{$t('todo.delete.title')}</p>
   <div class="flex items-center mb-4 text-white">
     {#if todo.type === 'weapon'}
       <img
@@ -30,7 +32,7 @@
     {/if}
   </div>
   <div class="flex justify-end gap-2">
-    <Button on:click={cancel}>Cancel</Button>
-    <Button on:click={deleteTodo} color="red">Delete</Button>
+    <Button on:click={cancel}>{$t('todo.delete.cancel')}</Button>
+    <Button on:click={deleteTodo} color="red">{$t('todo.delete.delete')}</Button>
   </div>
 </div>

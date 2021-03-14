@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { getContext, onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
   import { mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiClose, mdiInformation, mdiLoading } from '@mdi/js';
@@ -283,20 +285,20 @@
 </svelte:head>
 <div class="lg:ml-64 pt-20 px-2 md:px-8 lg:pt-8">
   <Masonry stretchFirst={true} bind:refreshLayout bind:columnCount items={id}>
-    <h1 class="font-display font-black text-3xl lg:text-left lg:text-5xl text-white">Todo List</h1>
+    <h1 class="font-display font-black text-3xl lg:text-left lg:text-5xl text-white">{$t('todo.title')}</h1>
     <div class="bg-item rounded-xl p-4 text-white">
       {#if $loading}
         <Icon path={mdiLoading} color="white" spin />
       {:else if $todos.length > 0}
         <div class="flex items-center mb-4">
-          <p class="font-bold text-xl mr-2 flex-1">Summary</p>
+          <p class="font-bold text-xl mr-2 flex-1">{$t('todo.summary')}</p>
         </div>
       {:else}
-        <p class="font-bold text-xl">Nothing to do yet 😀<br />Add some from the Items page or the Calculator!</p>
+        <p class="font-bold text-xl">{$t('todo.empty.0')}<br />{$t('todo.empty.1')}</p>
       {/if}
       {#if Object.entries(todayOnlyItems).length > 0}
         <div class="rounded-xl bg-background px-4 py-2 mb-2">
-          <p class="font-semibold mb-2 text-center">Farmable Today</p>
+          <p class="font-semibold mb-2 text-center">{$t('todo.farmableToday')}</p>
           <table class="w-full">
             {#each Object.entries(todayOnlyItems) as [id, amount]}
               <tr class="today-only">
@@ -323,7 +325,7 @@
         <div class="rounded-xl bg-background px-4 py-2 mb-2">
           <div class="flex items-center justify-center cursor-pointer" on:click={toggleResinDetail}>
             <img src="/images/resin.png" alt="resin" class="w-6 h-6 mr-2" />
-            <span class="mr-2"><span class="font-black">{resin}</span> resin needed</span>
+            <span class="mr-2"><span class="font-black">{resin}</span> {$t('todo.resin')}</span>
             <Icon
               path={mdiChevronDown}
               className={`duration-100 ease-in ${showResinDetail ? 'transform rotate-180' : ''}`}
@@ -355,11 +357,11 @@
               </table>
 
               <span class="mt-4 block text-center">
-                Based on AR:{$ar} and WL:{$wl}
+                {$t('todo.based', { values: { ar: $ar, wl: $wl } })}
               </span>
-              <span class="text-gray-400 text-xs text-center block">(change on settings)</span>
+              <span class="text-gray-400 text-xs text-center block">{$t('todo.change')}</span>
               <span class="mt-2 text-sm block text-center">
-                Approximation calculated from drop rates by
+                {$t('todo.approximation')}
                 <a class="text-primary font-semibold" target="__blank" href="https://discord.gg/ydwdYmr"
                   >Genshin Impact Data Gathering Discord</a
                 >

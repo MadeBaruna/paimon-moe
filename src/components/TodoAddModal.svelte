@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { mdiClose } from '@mdi/js';
 
   import { itemGroup } from '../data/itemGroup';
@@ -28,7 +30,7 @@
 
 <div>
   {#if withRarity}
-    <p class="text-white font-bold mb-4 text-lg">Select Rarity</p>
+    <p class="text-white font-bold mb-4 text-lg">{$t('items.add.rarity')}</p>
     <div class="flex items-center mb-4 text-white">
       {#each itemGroup[item].items as item, index}
         <div
@@ -54,9 +56,9 @@
       </div>
     </div>
   {/if}
-  <p class="text-white font-bold mb-4 text-lg">Amount</p>
+  <p class="text-white font-bold mb-4 text-lg">{$t('items.add.amount')}</p>
   <div class="inline-flex mb-4">
-    <Input className="mr-2" type="number" min={1} bind:value={amount} placeholder="Input amount..." />
+    <Input className="mr-2" type="number" min={1} bind:value={amount} placeholder={$t('items.add.inputAmount')} />
     <Button className="mr-2 w-16" on:click={() => addAmount(1)}>+1</Button>
     <Button className="w-16" on:click={() => addAmount(10)}>+10</Button>
   </div>
@@ -75,7 +77,7 @@
     <span>{amount}</span>
   </div>
   <div class="flex justify-end gap-2">
-    <Button on:click={cancel}>Cancel</Button>
-    <Button on:click={() => addTodo(selectedItem, amount)} color="green">Add to Todo</Button>
+    <Button on:click={cancel}>{$t('items.add.cancel')}</Button>
+    <Button on:click={() => addTodo(selectedItem, amount)} color="green">{$t('items.add.add')}</Button>
   </div>
 </div>

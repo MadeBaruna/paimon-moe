@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { mdiCheckCircleOutline, mdiChevronDown, mdiDiscord, mdiGithub, mdiGoogleDrive, mdiLoading } from '@mdi/js';
   import { getContext, onMount } from 'svelte';
   import { slide } from 'svelte/transition';
@@ -239,28 +241,30 @@
 
 <div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8">
   <div class="bg-item rounded-xl mb-4 p-4">
-    <p class="text-white">Data Version: <b>1.3</b></p>
+    <p class="text-white">{$t('settings.version')} <b>1.3</b></p>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 flex flex-col">
-    <p class="text-white">Have multiple account? Choose account here to separate your wish and todo data</p>
-    <div class="flex mt-2">
+    <p class="text-white">{$t('settings.multiple')}</p>
+    <div class="flex flex-col md:flex-row mt-2">
       <Select
         className="w-64 mr-2"
         bind:selected={currentAccount}
         options={$accounts}
-        placeholder="Select your account"
+        placeholder={$t('settings.selectAccount')}
       />
-      <Button on:click={openResetAccount} className="mr-2 w-24" color="red">Reset</Button>
-      {#if currentAccount.value !== 'main'}
-        <Button on:click={openDeleteAccount} className="mr-2 w-24" color="red">Delete</Button>
-      {/if}
-      <Button className="w-24" on:click={addAccount}>Add</Button>
+      <div class="flex flex-1 mt-2 md:mt-0">
+        <Button on:click={openResetAccount} className="mr-2 w-24" color="red">{$t('settings.reset')}</Button>
+        {#if currentAccount.value !== 'main'}
+          <Button on:click={openDeleteAccount} className="mr-2 w-24" color="red">{$t('settings.delete')}</Button>
+        {/if}
+        <Button className="w-24" on:click={addAccount}>{$t('settings.add')}</Button>
+      </div>
     </div>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 flex flex-col md:flex-row">
     <div class="flex flex-col md:flex-row md:items-center mr-2">
-      <p class="text-white mr-2">Select your server:</p>
-      <Select className="w-64" bind:selected={selectedServer} options={servers} placeholder="Select your server" />
+      <p class="text-white mr-2">{$t('settings.server')}</p>
+      <Select className="w-64" bind:selected={selectedServer} options={servers} placeholder={$t('settings.server')} />
     </div>
     <div class="flex mt-2 md:mt-0">
       <div class="flex flex-col md:flex-row md:items-center w-32 mr-2">
@@ -274,31 +278,33 @@
     </div>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4">
-    <p class="text-white mb-2">
-      Paimon.moe use Application Data Directory on your Google Drive to save and sync your wish counter and todo list.
-    </p>
-    <p class="text-white mb-4">Paimon.moe can only read and write file that this site create.</p>
+    <p class="text-white mb-2">{$t('settings.drive.0')}</p>
+    <p class="text-white mb-4">{$t('settings.drive.1')}</p>
     {#if $driveLoading}
       <Icon path={mdiLoading} color="white" spin />
     {:else if $driveError}
       <Button color="red">
         <Icon path={mdiGoogleDrive} className="mr-2" />
-        Google Drive API cannot be loaded
+        {$t('settings.driveError')}
       </Button>
     {:else if !$driveSignedIn}
       <Button on:click={signIn}>
         <Icon path={mdiGoogleDrive} className="mr-2" />
-        Sign in to Google Drive
+        {$t('settings.driveSignIn')}
       </Button>
     {:else}
       <Button on:click={signOut}>
         <Icon path={mdiGoogleDrive} className="mr-2" />
-        Sign out Google Drive
+        {$t('settings.driveSignOut')}
       </Button>
       <p class="text-white mt-4">
         Sync Status:
         <span class={`font-bold ${isSynced ? 'text-green-400' : 'text-yellow-400'}`}>
-          {isSynced ? 'Synced' : $localModified && $synced ? 'Waiting...' : 'Syncing...'}
+          {isSynced
+            ? $t('settings.synced')
+            : $localModified && $synced
+            ? $t('settings.waiting')
+            : $t('settings.syncing')}
           {#if isSynced}
             <Icon path={mdiCheckCircleOutline} className="text-green-400" />
           {:else if $localModified && !$synced}
@@ -307,20 +313,26 @@
         </span>
       </p>
       {#if $lastSyncTime !== null}
-        <p class="text-gray-400">Last Sync: {$lastSyncTime.format('dddd, MMMM D, YYYY h:mm:ss A')}</p>
+        <p class="text-gray-400">{$t('settings.lastSync')} {$lastSyncTime.format('dddd, MMMM D, YYYY h:mm:ss A')}</p>
       {/if}
     {/if}
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 text-white">
-    If you found any bug, wrong data, or you have any feedback, please PM me on discord
-    <span class="bg-background rounded-xl pr-2"><Icon path={mdiDiscord} /> Baruna#4422</span> or
+    {$t('settings.feedback')}
+    <a
+      href="https://discord.gg/tPURAYgHV9"
+      target="__blank"
+      class="whitespace-no-wrap bg-background rounded-xl pr-2 text-blue-400 hover:underline"
+      ><Icon path={mdiDiscord} /> Discord</a
+    >
+    {$t('settings.or')}
     <a
       href="https://github.com/MadeBaruna/paimon-moe/issues"
       target="__blank"
       class="whitespace-no-wrap bg-background rounded-xl pr-2 text-blue-400 hover:underline"
       ><Icon path={mdiGithub} /> Github Issues</a
     >
-    Thanks😁!
+    {$t('settings.thanks')}
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 text-white">
     <p class="cursor-pointer" on:click={toggleChangelog}>

@@ -1,4 +1,5 @@
 <script>
+  import { t } from 'svelte-i18n'
   import { mdiStar } from '@mdi/js';
 
   import Icon from '../components/Icon.svelte';
@@ -77,9 +78,9 @@
   />
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
-  <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">Characters</h1>
+  <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('characters.title')}</h1>
   <p class="text-gray-400 px-4 md:px-8 font-medium pb-4" style="margin-top: -1rem;">
-    ※ Stat numbers are at level 80 Ascension 6. You can also click the header to sort!
+    ※ {$t('characters.subtitle')}
   </p>
 
   <div class="block overflow-x-auto whitespace-no-wrap pb-8">
@@ -87,24 +88,24 @@
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>
           <th style="min-width: 4rem;" />
-          <TableHeader on:click={() => sort('name')} sort={sortBy === 'name'} order={sortOrder}>Name</TableHeader>
+          <TableHeader on:click={() => sort('name')} sort={sortBy === 'name'} order={sortOrder}>{$t('characters.name')}</TableHeader>
           <TableHeader on:click={() => sort('element')} sort={sortBy === 'element'} order={sortOrder} align="center">
-            Element
+            {$t('characters.element')}
           </TableHeader>
           <TableHeader on:click={() => sort('rarity')} sort={sortBy === 'rarity'} order={sortOrder} align="center">
-            Rarity
+            {$t('characters.rarity')}
           </TableHeader>
           <TableHeader on:click={() => sort('weapon')} sort={sortBy === 'weapon'} order={sortOrder} align="center">
-            Weapon
+            {$t('characters.weapon')}
           </TableHeader>
           <TableHeader on:click={() => sort('hp')} sort={sortBy === 'hp'} order={sortOrder} align="center">
-            HP
+            {$t('characters.hp')}
           </TableHeader>
           <TableHeader on:click={() => sort('atk')} sort={sortBy === 'atk'} order={sortOrder} align="center">
-            ATK
+            {$t('characters.atk')}
           </TableHeader>
           <TableHeader on:click={() => sort('def')} sort={sortBy === 'def'} order={sortOrder} align="center">
-            DEF
+            {$t('characters.def')}
           </TableHeader>
         </thead>
         <tbody>

@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { fade } from 'svelte/transition';
   import { mdiStar, mdiClose, mdiInformationOutline, mdiCheckCircleOutline } from '@mdi/js';
 
@@ -332,20 +334,27 @@
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
     <div>
       <div>
-        <Check className="mb-2" on:change={onChange} bind:checked={withAscension}>Calculate Ascension Material?</Check>
+        <Check className="mb-2" on:change={onChange} bind:checked={withAscension}
+          >{$t('calculator.weapon.calculateAscension')}</Check
+        >
         {#if !withAscension}
           <Select
             on:change={onChange}
             bind:selected={rarity}
             icon={mdiStar}
             options={weaponsRarity}
-            placeholder="Select weapon rarity" />
+            placeholder={$t('calculator.weapon.selectRarity')}
+          />
         {:else}
-          <WeaponSelect on:change={onChange} bind:selected={selectedWeapon} placeholder="Select weapon" />
+          <WeaponSelect
+            on:change={onChange}
+            bind:selected={selectedWeapon}
+            placeholder={$t('calculator.weapon.selectWeapon')}
+          />
         {/if}
 
         <div>
-          <p class="text-white text-center mt-3 mb-2">Current Weapon Level, Exp, & Ascension</p>
+          <p class="text-white text-center mt-3 mb-2">{$t('calculator.weapon.current')}</p>
           <Input
             className="mb-2"
             on:change={onChange}
@@ -353,20 +362,22 @@
             min={1}
             max={80}
             bind:value={currentLevel}
-            placeholder="Input current weapon level..." />
+            placeholder={$t('calculator.weapon.inputCurrentLevel')}
+          />
           <Input
             className="mb-2"
             on:change={onChange}
             type="number"
             min={0}
             bind:value={currentExp}
-            placeholder="Input current weapon exp..." />
+            placeholder={$t('calculator.weapon.inputCurrentExp')}
+          />
           {#if withAscension}
             <AscensionSelector min={minAscension} bind:value={currentAscension} on:change={onChange} />
           {/if}
         </div>
         <div>
-          <p class="text-white text-center mt-3 mb-2">Intended Weapon Level & Ascension</p>
+          <p class="text-white text-center mt-3 mb-2">{$t('calculator.weapon.intended')}</p>
           <Input
             className="mb-2"
             on:change={onChange}
@@ -374,18 +385,20 @@
             min={currentLevel}
             max={80}
             bind:value={intendedLevel}
-            placeholder="Input intended weapon level..." />
+            placeholder={$t('calculator.weapon.inputIntendedLevel')}
+          />
           {#if withAscension}
             <AscensionSelector
               min={Math.max(currentAscension, minIntendedAscension)}
               bind:value={intendedAscension}
-              on:change={onChange} />
+              on:change={onChange}
+            />
           {/if}
         </div>
       </div>
     </div>
     <div class="flex flex-col pl-1">
-      <p class="text-white text-center md:text-left mb-1">Resource to Use</p>
+      <p class="text-white text-center md:text-left mb-1">{$t('calculator.weapon.resource')}</p>
       {#each resources as res}
         <div class="mb-1">
           <Checkbox disabled={res.disabled} bind:checked={res.selected} on:change={onChange}>
@@ -402,16 +415,18 @@
       {/each}
     </div>
     <div class="md:col-span-2 xl:col-span-1">
-      <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}>Calculate</Button>
+      <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}
+        >{$t('calculator.weapon.calculate')}</Button
+      >
       {#if currentMax !== null && !changed}
         {#if Object.keys(unknownList).length > 0}
           <div class="border-2 border-red-400 rounded-xl mt-2 p-4 md:inline-block">
             <p class="font-bold flex items-center text-red-400">
               <Icon className="mr-1 mb-1" path={mdiInformationOutline} />
-              There are some unknown information
+              {$t('calculator.weapon.unknownInformation')}
             </p>
             {#each Object.entries(unknownList) as [title, values]}
-              <p class="text-red-400">Ascension level {Number(title) + 1}</p>
+              <p class="text-red-400">{$t('calculator.weapon.ascensionLevel')} {Number(title) + 1}</p>
               <ul>
                 {#each values as val}
                   <li class="pl-4 text-red-400">- {val}</li>
@@ -426,8 +441,10 @@
               {#if currentMax.usage[i] > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-no-wrap">{currentMax.usage[i]}
-                      <Icon size={0.5} path={mdiClose} /></span>
+                    <span class="text-white mr-2 whitespace-no-wrap"
+                      >{currentMax.usage[i]}
+                      <Icon size={0.5} path={mdiClose} /></span
+                    >
                   </td>
                   <td class="border-b border-gray-700 py-1">
                     <span class="text-white">
@@ -446,8 +463,10 @@
               {#if item.amount > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-no-wrap">{item.amount}
-                      <Icon size={0.5} path={mdiClose} /></span>
+                    <span class="text-white mr-2 whitespace-no-wrap"
+                      >{item.amount}
+                      <Icon size={0.5} path={mdiClose} /></span
+                    >
                   </td>
                   <td class="border-b border-gray-700 py-1">
                     <span class="text-white">
@@ -462,22 +481,24 @@
             {/each}
             <tr>
               <td class="text-right border-b border-gray-700 py-1">
-                <span class="text-white mr-2 whitespace-no-wrap">{numberFormat.format(moraNeeded)}
-                  <Icon size={0.5} path={mdiClose} /></span>
+                <span class="text-white mr-2 whitespace-no-wrap"
+                  >{numberFormat.format(moraNeeded)}
+                  <Icon size={0.5} path={mdiClose} /></span
+                >
               </td>
               <td class="border-b border-gray-700 py-1">
                 <span class="text-white">
                   <span class="w-6 inline-block">
                     <img class="h-6 inline-block mr-1" src="/images/mora.png" alt="Mora" />
                   </span>
-                  Mora (approximate ±40)
+                  {$t('calculator.weapon.mora')}
                 </span>
               </td>
             </tr>
             {#if currentMax.over < 0}
               <tr>
                 <td />
-                <td class="text-red-400 py-1">{currentMax.over * -1} EXP Wasted</td>
+                <td class="text-red-400 py-1">{currentMax.over * -1} {$t('calculator.weapon.expWasted')}</td>
               </tr>
             {/if}
           </table>
@@ -485,9 +506,9 @@
             {#if addedToTodo}
               <span class="text-green-400" in:fade={{ duration: 100 }}>
                 <Icon path={mdiCheckCircleOutline} size={0.8} />
-                Added to Todo List
+                {$t('calculator.weapon.addedToTodo')}
               </span>
-            {:else}<span in:fade={{ duration: 100 }}>Add to Todo List </span>{/if}
+            {:else}<span in:fade={{ duration: 100 }}>{$t('calculator.weapon.addToTodo')}</span>{/if}
           </Button>
         </div>
       {/if}

@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { getContext, onMount, tick } from 'svelte';
   import dayjs from 'dayjs';
   import duration from 'dayjs/plugin/duration';
@@ -199,10 +201,10 @@
 </svelte:head>
 
 <div class="lg:ml-64 pt-20 lg:pt-8">
-  <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">Timeline</h1>
+  <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('timeline.title')}</h1>
   {#if !loading}
     <div class="px-4 md:px-8 text-white select-none">
-      <Checkbox bind:checked={showAsLocalTime}>Show as local time</Checkbox>
+      <Checkbox bind:checked={showAsLocalTime}>{$t('timeline.localTime')}</Checkbox>
     </div>
     <div class="w-full overflow-x-auto px-4 md:px-8" bind:this={timelineContainer} on:wheel={transformScroll}>
       <div

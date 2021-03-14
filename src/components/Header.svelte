@@ -9,6 +9,15 @@
   }
 </script>
 
+<div class="flex items-center lg:hidden fixed w-full h-16 header bg-background z-30 shadow-md overflow-hidden">
+  <a href="/" class="flex-1 pl-4 md:pl-8 font-display text-3xl font-black text-white relative z-10 pt-2">
+    Paimon<span class="text-xl text-primary">.moe</span>
+  </a>
+  <div class="p-8 cursor-pointer" on:click={showMenu}>
+    <Icon path={mdiMenu} color="white" />
+  </div>
+</div>
+
 <style>
   .header::after {
     content: '';
@@ -22,12 +31,3 @@
     background-size: contain;
   }
 </style>
-
-<a href="/" class="flex items-center lg:hidden fixed w-full h-16 header bg-background z-30 shadow-md overflow-hidden">
-  <h1 class="flex-1 pl-4 md:pl-8 font-display text-3xl font-black text-white relative z-10 pt-2">
-    Paimon<span class="text-xl text-primary">.moe</span>
-  </h1>
-  <div class="p-8 cursor-pointer" on:click={showMenu}>
-    <Icon path={mdiMenu} color="white" />
-  </div>
-</a>

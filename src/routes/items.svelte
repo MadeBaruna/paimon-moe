@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { getContext } from 'svelte';
 
   import { characters } from '../data/characters';
@@ -159,26 +161,26 @@
   />
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
-  <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">Item List</h1>
+  <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('items.title')}</h1>
   <p class="text-gray-400 px-4 md:px-8 font-medium pb-4" style="margin-top: -1rem;">
-    ※ Click the item image to add it to the todo list
+    ※ {$t('items.subtitle')}
   </p>
   <div class="pb-4 px-4 md:px-8 grid grid-cols-1 md:grid-cols-2 gap-2 max-w-screen-md">
-    <CharacterSelect bind:selected={selectedCharacter} placeholder="Search character" />
-    <WeaponSelect bind:selected={selectedWeapon} placeholder="Search weapon" />
+    <CharacterSelect bind:selected={selectedCharacter} placeholder={$t('items.searchCharacter')} />
+    <WeaponSelect bind:selected={selectedWeapon} placeholder={$t('items.searchWeapon')} />
   </div>
   <div class="block overflow-x-auto whitespace-no-wrap pb-8">
     <div class="px-4 md:px-8 table max-w-full">
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>
           <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
-            Days
+            {$t('items.day')}
           </th>
           <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
-            Materials
+            {$t('items.material')}
           </th>
           <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
-            Characters & Weapons
+            {$t('items.characterWeapons')}
           </th>
         </thead>
         <tbody>
@@ -191,7 +193,7 @@
                     ? 'border-gray-700 border-b py-2'
                     : 'py-2'}
                 >
-                  {#if index === 0}{dayArr[0]}<br />{dayArr[1]}{/if}
+                  {#if index === 0}{$t(`days.${dayArr[0]}`)}<br />{$t(`days.${dayArr[1]}`)}{/if}
                 </td>
                 <td class="border-gray-700 border-b text-center align-middle py-2">
                   <div class="flex items-center">
@@ -234,7 +236,8 @@
                     ? 'border-gray-700 border-b py-2'
                     : 'py-2'}
                 >
-                  {#if index === 0 && Object.entries(charactersDays[day]).length === 0}{dayArr[0]}<br />{dayArr[1]}{/if}
+                  {#if index === 0 && Object.entries(charactersDays[day]).length === 0}{$t(`days.${dayArr[0]}`)}<br
+                    />{$t(`days.${dayArr[1]}`)}{/if}
                 </td>
                 <td class="border-gray-700 border-b text-center py-2">
                   <div class="flex items-center">
@@ -279,10 +282,10 @@
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>
           <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
-            Material
+            {$t('items.material')}
           </th>
           <th class="text-gray-400 select-none font-display text-lg text-left px-4 pb-2 border-gray-700 border-b">
-            Characters & Weapons
+            {$t('items.characterWeapons')}
           </th>
         </thead>
         <tbody>

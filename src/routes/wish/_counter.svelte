@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { onMount, getContext } from 'svelte';
   import { slide } from 'svelte/transition';
   import { mdiPencil, mdiStar, mdiChevronDown } from '@mdi/js';
@@ -258,7 +260,7 @@
       } rounded-xl flex`}
     >
       <span class="text-gray-200 whitespace-no-wrap flex-1">
-        Lifetime Pulls<br />
+        {$t('wish.lifetimePulls')}<br />
         <span class="flex items-center text-gray-600">
           <img class="w-4 h-4 mr-2" src="/images/primogem.png" alt="primogem" />
           {numberFormat.format(total * 160)}
@@ -278,7 +280,7 @@
         5
         <Icon path={mdiStar} size={0.75} className="mb-1" />
         Pity
-        <br /><span class="text-gray-600">Guaranteed at {legendaryPity}</span>
+        <br /><span class="text-gray-600">{$t('wish.guarantee', { values: { pity: legendaryPity } })}</span>
       </span>
       {#if isEdit}
         <Input type="number" min={1} bind:value={legendaryEdit} />
@@ -294,7 +296,7 @@
         4
         <Icon path={mdiStar} size={0.75} className="mb-1" />
         Pity
-        <br /><span class="text-gray-600">Guaranteed at 10</span>
+        <br /><span class="text-gray-600">{$t('wish.guarantee', { values: { pity: 10 } })}</span>
       </span>
       {#if isEdit}
         <Input type="number" min={1} bind:value={rareEdit} />

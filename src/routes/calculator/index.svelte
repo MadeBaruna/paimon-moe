@@ -1,4 +1,6 @@
 <script>
+  import { t } from 'svelte-i18n';
+
   import { getContext } from 'svelte';
   import { mdiArrowDown, mdiArrowUp, mdiHelpCircle } from '@mdi/js';
 
@@ -53,7 +55,7 @@
   <div class="flex justify-center md:justify-start mb-4">
     <Button on:click={openHowTo}>
       <Icon size={0.8} path={mdiHelpCircle} />
-      How To Use
+      {$t('calculator.howToUse')}
     </Button>
   </div>
   <div
@@ -62,12 +64,13 @@
   >
     <Button on:click={() => scroll('character')}>
       <Icon size={0.8} path={mdiArrowDown} />
-      Go To Character Calculator
+      {$t('calculator.goto')}
+      {$t('calculator.titleCharacter')}
     </Button>
     <h1
       class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
     >
-      Weapon Calculator
+      {$t('calculator.titleWeapon')}
     </h1>
   </div>
   <WeaponCalculator />
@@ -77,12 +80,13 @@
   >
     <Button on:click={() => scroll('weapon')}>
       <Icon size={0.8} path={mdiArrowUp} />
-      Go To Weapon Calculator
+      {$t('calculator.goto')}
+      {$t('calculator.titleWeapon')}
     </Button>
     <h1
       class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
     >
-      Character Calculator
+      {$t('calculator.titleCharacter')}
     </h1>
   </div>
   <CharacterCalculator />
