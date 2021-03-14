@@ -38,7 +38,7 @@
       "parsing": "Parsing...",
       "save": "Save",
       "cancel": "Cancel",
-      "canceling": "Canceling...",
+      "cancelling": "Cancelling...",
       "importNewWishOnly": "Import new wish only",
       "importNewWishUncheck": "Uncheck only if you need to re-import all your wish history",
       "import": "Import",
