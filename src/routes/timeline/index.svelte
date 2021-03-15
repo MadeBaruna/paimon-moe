@@ -181,7 +181,8 @@
 
     const delta = Math.abs(event.deltaY);
     const dir = event.deltaY > 0 ? 1 : -1;
-    event.currentTarget.scrollLeft += Math.max(delta, 100) * dir;
+    event.currentTarget.scrollLeft += Math.max(delta, 100) * dir + event.deltaX;
+    event.preventDefault();
   }
 
   $: todayOffset = Math.abs(firstDay.diff(today, 'day', true));

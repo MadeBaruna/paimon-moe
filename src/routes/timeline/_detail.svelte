@@ -36,11 +36,16 @@
       <span>{event.end.format('ddd, D MMM YYYY HH:mm')}</span>
     {/if}
   </p>
+  {#if event.description}
+    <p class="my-2">
+      <a class="text-primary hover:underline" target="__blank" href={event.description}>{event.description}</a>
+    </p>
+  {/if}
   <p class="text-gray-400 px-4 py-1 bg-black bg-opacity-50 rounded-xl mt-2 inline-block">
     {#if !started}
-      {$t('timeline.starting')} {dayjs.duration(diffStart).format(diffStart > 86400000 ? 'D[d] HH:mm:ss' : 'HH:mm:ss')}
+      {$t('timeline.starting')} {`${diffStart > 86400000 ? `${Math.trunc(dayjs.duration(diffStart).asDays())}d` : ''} ${dayjs.duration(diffStart).format('HH:mm:ss')}`}
     {:else if started && !ended && !event.startOnly}
-      {$t('timeline.ending')} {dayjs.duration(diffEnd).format(diffEnd > 86400000 ? 'D[d] HH:mm:ss' : 'HH:mm:ss')}
+      {$t('timeline.ending')} {`${diffEnd > 86400000 ? `${Math.trunc(dayjs.duration(diffEnd).asDays())}d` : ''} ${dayjs.duration(diffEnd).format('HH:mm:ss')}`}
     {:else if event.startOnly}
       {$t('timeline.live')}
     {:else}
