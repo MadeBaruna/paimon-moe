@@ -37,7 +37,7 @@
     {/if}
   </p>
   {#if event.description}
-    <p class="my-2">
+    <p class="my-2 overflow-auto">
       <a class="text-primary hover:underline" target="__blank" href={event.description}>{event.description}</a>
     </p>
   {/if}
