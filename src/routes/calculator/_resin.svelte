@@ -1,17 +1,29 @@
 <script>
   import { t } from 'svelte-i18n';
+  import { time } from '../../stores/time';
+  import { fade } from 'svelte/transition';
+  import { mdiStar, mdiClose, mdiInformationOutline, mdiCheckCircleOutline } from '@mdi/js';
+
   import Button from '../../components/Button.svelte';
   import Input from '../../components/Input.svelte';
-  import { time } from '../../stores/time';
+  import Icon from '../../components/Icon.svelte';
 
   let changed = false;
   let currentResin;
   let maxResin = 160;
   let millisecondsToWait;
   let fullTime = null;
+  let missingResin = 160;
+
+  let originalResin = {
+    id: 'original_resin',
+    image: '/images/resin.png',
+    label: 'Original Resin',
+    value: 8,
+  };
 
   // 8 menit per resin * 60 seconds * 1000 millisec
-  let minutePerResin = 8 * 60 * 1000;
+  let minutePerResin = originalResin.value * 60 * 1000;
 
   let dateTimeOptions = {
     hour12: true,
@@ -22,7 +34,8 @@
   };
 
   function calculate() {
-    millisecondsToWait = (maxResin - currentResin) * minutePerResin;
+    missingResin = maxResin - currentResin;
+    millisecondsToWait = missingResin * minutePerResin;
     fullTime = new Date($time.getTime() + millisecondsToWait);
   }
 
@@ -50,19 +63,40 @@
           dateTimeOptions,
         ).format($time)}
       </p>
-      {#if fullTime}
-        <p class="text-white text-center mt-3 mb-2">
-          {$t('calculator.resin.fullTime')} : {new Intl.DateTimeFormat(
-            $t('calculator.resin.timeFormat'),
-            dateTimeOptions,
-          ).format(fullTime)}
-        </p>
-      {/if}
     </div>
     <div class="md:col-span-2 xl:col-span-1">
       <Button disabled={!currentResin} className="block w-full md:w-auto" on:click={calculate}
         >{$t('calculator.resin.calculate')}</Button
       >
+      {#if fullTime}
+        <div transition:fade={{ duration: 100 }} class="bg-background rounded-xl p-4 mt-2 block md:inline-block">
+          <tr>
+            <td class="text-right border-b border-gray-700 py-1">
+              <span class="text-white mr-2 whitespace-no-wrap"
+                >{missingResin}
+                <Icon size={0.5} path={mdiClose} /></span
+              >
+            </td>
+            <td class="border-b border-gray-700 py-1">
+              <span class="text-white">
+                <span class="w-6 inline-block">
+                  <img class="h-6 inline-block mr-1" src={originalResin.image} alt={originalResin.label} />
+                </span>
+                {originalResin.label}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td />
+            <td class="text-red-400 py-1">
+              {$t('calculator.resin.fullTime')}: {new Intl.DateTimeFormat(
+                $t('calculator.resin.timeFormat'),
+                dateTimeOptions,
+              ).format(fullTime)}</td
+            >
+          </tr>
+        </div>
+      {/if}
     </div>
   </div>
 </div>
