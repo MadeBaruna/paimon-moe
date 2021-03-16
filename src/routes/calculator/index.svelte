@@ -7,6 +7,7 @@
   import WeaponCalculator from './_weapon.svelte';
   import CharacterCalculator from './_character.svelte';
   import LevelUpTable from './_characterTable.svelte';
+  import ResinCalculator from './_resin.svelte';
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
   import HowToModal from '../../components/CalculatorHowToModal.svelte';
@@ -90,6 +91,13 @@
     </h1>
   </div>
   <CharacterCalculator />
+  <div class="mt-8" />
+  <h1
+    class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
+  >
+    {$t('calculator.titleResin')}
+  </h1>
+  <ResinCalculator />
   <div class="mt-8" />
   <LevelUpTable />
 </div>

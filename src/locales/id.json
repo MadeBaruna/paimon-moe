@@ -132,6 +132,7 @@
   "calculator": {
     "titleWeapon": "Kalulator Senjata",
     "titleCharacter": "Kalkulator Karakter",
+    "titleResin": "Kalkulator Resin",
     "goto": "Ke",
     "howToUse": "Cara Penggunaan",
     "guide": {
@@ -184,6 +185,13 @@
       "items": "Items",
       "wasted": "Exp Terbuang",
       "mora": "Jumlah Mora"
+    },
+    "resin": {
+      "inputCurrentResin": "Masukkan Jumlah Resin Sekarang...",
+      "timeFormat": "id",
+      "calculate": "Hitung",
+      "currentTime": "Waktu Sekarang",
+      "fullTime": "Resin Akan Penuh Pada"
     }
   },
   "items": {
