@@ -155,10 +155,12 @@
     let page = 1;
     let result = [];
     let lastTime = 0;
+    let lastId = 0;
     do {
       if (cancelled) return;
 
       url.searchParams.set('page', page);
+      url.searchParams.set('end_id', lastId);
 
       currentPage = page;
 
@@ -242,6 +244,7 @@
         }
 
         page = page + 1;
+        lastId = result.length > 0 ? result[result.length - 1].id : 0;
         await sleep(1000);
         console.log(wishes);
       } catch (err) {
