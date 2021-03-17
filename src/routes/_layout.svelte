@@ -17,7 +17,7 @@
   import SettingData from '../components/SettingData.svelte';
   import Toast from '../components/Toast.svelte';
   import Icon from '../components/Icon.svelte';
-  import { mdiDiscord } from '@mdi/js';
+  import { mdiDiscord, mdiFacebook, mdiReddit, mdiTelegram } from '@mdi/js';
 
   export let segment;
 
@@ -61,9 +61,31 @@
     Paimon.moe is not affiliated with miHoYo.<br />
     Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
   </p>
-  <a class="text-gray-400 hover:text-primary mt-4" href="https://discord.gg/tPURAYgHV9" target="__blank">
-    <Icon path={mdiDiscord} size={1.5} /> Join Our Discord
-  </a>
+  <div class="flex mt-4 md:items-center flex-col md:flex-row">
+    <a class="text-gray-400 hover:text-primary" href="https://discord.gg/tPURAYgHV9" target="__blank">
+      <Icon path={mdiDiscord} size={1.5} /> Join Our Discord
+    </a>
+    <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
+      <span class="text-gray-500">Community Links</span>
+      <a class="text-gray-400 hover:text-primary" href="https://t.me/GenshinImpact_ID" target="__blank">
+        <Icon path={mdiTelegram} size={1} /> Telegram
+      </a>
+    </div>
+    <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
+      <span class="text-gray-500">Official Links</span>
+      <div>
+        <a class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap" href="https://discord.gg/2UqwpAr" target="__blank">
+          <Icon path={mdiDiscord} size={1} /> Discord
+        </a>
+        <a class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap" href="https://www.facebook.com/Genshinimpact/" target="__blank">
+          <Icon path={mdiFacebook} size={1} /> Facebook
+        </a>
+        <a class="text-gray-400 hover:text-primary whitespace-no-wrap" href="https://www.reddit.com/r/Genshin_Impact/" target="__blank">
+          <Icon path={mdiReddit} size={1} /> Reddit
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <style>
