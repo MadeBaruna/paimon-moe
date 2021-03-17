@@ -1,15 +1,14 @@
 <script>
+  import { mdiClose } from '@mdi/js';
   import { t } from 'svelte-i18n';
-  import { time } from '../../stores/time';
   import { fade } from 'svelte/transition';
-  import { mdiStar, mdiClose, mdiInformationOutline, mdiCheckCircleOutline } from '@mdi/js';
-
   import Button from '../../components/Button.svelte';
-  import Input from '../../components/Input.svelte';
   import Icon from '../../components/Icon.svelte';
+  import Input from '../../components/Input.svelte';
+  import { time } from '../../stores/time';
 
   let changed = false;
-  let currentResin;
+  let currentResin = '';
   let maxResin = 160;
   let millisecondsToWait;
   let fullTime = null;
@@ -26,12 +25,13 @@
   let minutePerResin = originalResin.value * 60 * 1000;
 
   let dateTimeOptions = {
-    hour12: true,
     hour: 'numeric',
-    minute: '2-digit',
-    second: '2-digit',
+    minute: 'numeric',
+    second: 'numeric',
     weekday: 'long',
   };
+
+  $: canCalculate = currentResin !== '' && currentResin >= 0 && currentResin < 160;
 
   function calculate() {
     missingResin = maxResin - currentResin;
@@ -45,9 +45,9 @@
 </script>
 
 <div class="bg-item rounded-xl p-4">
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+  <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-4">
     <!-- input -->
-    <div>
+    <div class="md:col-span-1 xl:col-span-1">
       <Input
         className="mb-2"
         on:change={onChange}
@@ -64,12 +64,12 @@
         ).format($time)}
       </p>
     </div>
-    <div class="md:col-span-2 xl:col-span-1">
-      <Button disabled={!currentResin} className="block w-full md:w-auto" on:click={calculate}
+    <div class="md:col-span-2 xl:col-span-2">
+      <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}
         >{$t('calculator.resin.calculate')}</Button
       >
       {#if fullTime}
-        <div transition:fade={{ duration: 100 }} class="bg-background rounded-xl p-4 mt-2 block md:inline-block">
+        <div transition:fade={{ duration: 100 }} class="bg-background rounded-xl p-4 mt-2 block xl:inline-block">
           <tr>
             <td class="text-right border-b border-gray-700 py-1">
               <span class="text-white mr-2 whitespace-no-wrap"
@@ -89,10 +89,10 @@
           <tr>
             <td />
             <td class="text-red-400 py-1">
-              {$t('calculator.resin.fullTime')}: {new Intl.DateTimeFormat(
-                $t('calculator.resin.timeFormat'),
-                dateTimeOptions,
-              ).format(fullTime)}</td
+              {$t('calculator.resin.fullTime')}:
+              <span class="bg-red-400 rounded-lg mt-2 font-bold text-sm text-white p-1">
+                {new Intl.DateTimeFormat($t('calculator.resin.timeFormat'), dateTimeOptions).format(fullTime)}
+              </span></td
             >
           </tr>
         </div>
