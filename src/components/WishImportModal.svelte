@@ -31,18 +31,18 @@
   let genshinLink = '';
 
   let types = {
-    100: {
-      name: "Beginners' Wish",
-      id: 'beginners',
-    },
-    200: {
-      name: 'Standard',
-      id: 'standard',
-    },
-    301: {
-      name: 'Character Event',
-      id: 'character-event',
-    },
+    // 100: {
+    //   name: "Beginners' Wish",
+    //   id: 'beginners',
+    // },
+    // 200: {
+    //   name: 'Standard',
+    //   id: 'standard',
+    // },
+    // 301: {
+    //   name: 'Character Event',
+    //   id: 'character-event',
+    // },
     302: {
       name: 'Weapon Event',
       id: 'weapon-event',
@@ -135,7 +135,7 @@
     console.log(wishNumber, type);
     url.searchParams.set('auth_appid', 'webview_gacha');
     url.searchParams.set('init_type', '301');
-    url.searchParams.set('gacha_id', 'd610857102f9256ba143ccf2e03b964c76a6ed');
+    url.searchParams.set('gacha_id', 'b8fd0d8a6c940c7a16a486367de5f6d2232f53');
     url.searchParams.set('lang', 'en');
     url.searchParams.set('device_type', getDeviceType());
     if (region !== '') url.searchParams.set('region', region);
