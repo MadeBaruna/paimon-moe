@@ -31,18 +31,18 @@
   let genshinLink = '';
 
   let types = {
-    // 100: {
-    //   name: "Beginners' Wish",
-    //   id: 'beginners',
-    // },
-    // 200: {
-    //   name: 'Standard',
-    //   id: 'standard',
-    // },
-    // 301: {
-    //   name: 'Character Event',
-    //   id: 'character-event',
-    // },
+    100: {
+      name: "Beginners' Wish",
+      id: 'beginners',
+    },
+    200: {
+      name: 'Standard',
+      id: 'standard',
+    },
+    301: {
+      name: 'Character Event',
+      id: 'character-event',
+    },
     302: {
       name: 'Weapon Event',
       id: 'weapon-event',
