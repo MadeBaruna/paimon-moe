@@ -12,7 +12,7 @@
   },
   "wish": {
     "autoImport": "Auto Import",
-    "helpAndSetting": "Help & Setting",
+    "helpAndSetting": "Help & Settings",
     "wishesWorth": "Wishes Worth",
     "lifetimePulls": "Lifetime Pulls",
     "guarantee": "Guaranteed at {pity}",
@@ -26,11 +26,11 @@
     "manualButton": "Enable Manual Input",
     "import": {
       "title": "Import Wish History",
-      "faqsButton": "FAQS - READ FIRST",
+      "faqsButton": "FAQ - READ FIRST",
       "nonew": "No New Wishes",
       "importNotice1": "Imported wishes will be appended or replaced accordingly to existing data",
       "importNotice2": "If you don't have any data saved before, first wish will be counted as pity 1",
-      "saveData": "Save the data?",
+      "saveData": "Save wish data?",
       "reCalculating": "Re-calculating pity...",
       "processing": "Processing",
       "banner": "Banner",
@@ -49,26 +49,26 @@
       "invalidData": "Invalid data returned from API, try again later",
       "success": "Import success 😀!",
       "faqs": {
-        "title": "Import Wish History FAQS",
+        "title": "Import Wish History FAQ",
         "q1": "How does it work?",
-        "a1": "Genshin Impact wish history is basically a web page, so you can access it by opening the web page url. A temporary key will be generated after you open the wish history page or the feedback page, and the importer will automatically use the MiHoYo API to fetch your wish history.",
+        "a1": "Genshin Impact wish history is basically a web page, so you can access it by opening the web page url. A temporary key will be generated after you open the wish history page or the feedback page, and the importer will automatically use MiHoYo API to fetch your wish history.",
         "q2": "Is it safe? Will I get banned?",
-        "a2": "Paimon.moe use the same request that Genshin Impact use to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
+        "a2": "Paimon.moe uses the same request that Genshin Impact use to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
         "q3": "Can you hack my account then?",
         "a3": [
-          "Paimon.moe never save anything related to your account (even your uid or nickname), so the answer is no. This project is open source on",
-          ", I'm not planning to damage my reputation by hacking other people account."
+          "Paimon.moe never saves anything related to your account (even your UID or nickname), so the answer is no. This project is open source on",
+          "; I'm not planning to damage my reputation by hacking other people's account."
         ],
-        "q4": "Hey I checked the request and stuff, but why it request to your domain instead of MiHoYo API?",
+        "q4": "Hey I checked the requests and stuff, but why does it request to your domain instead of MiHoYo API?",
         "a4": [
           "Paimon.moe cannot request directly to MiHoYo API because of",
-          ", so the request redirected to a simple cors proxy to make it work. You can see the code",
+          ", so the request is redirected to a simple CORS proxy to make it work. You can see the code",
           "here"
         ],
         "q5": "Do you store my temporary key or wish history?",
-        "a5": "Paimon.moe never store your key, and use HTTPS to pass your url to a cors proxy to make the CORS works. All your wish history is saved on your device only (or your google drive if you turn on sync on setting). Paimon.moe does not save anything to the server (yes anything).",
-        "q6": "I tried the step, but I got some API error?",
-        "a6": "Make sure you copy all the text (just hold and press select all), maybe you left over some text that are needed for the importer to work"
+        "a5": "Paimon.moe will never store your keys, and uses HTTPS to pass your URL to a CORS proxy to make the CORS work. All your wish history is saved on your device only (or your Google Drive if you turned on sync). Paimon.moe does not save anything to the server (yes, anything).",
+        "q6": "I've done all the steps, but I got some API error?",
+        "a6": "Make sure you copy all the text (hold and press Select All for mobile devices); maybe you missed some text that are needed for the importer to work."
       },
       "guide": {
         "pc": [
@@ -82,11 +82,11 @@
           "Open Paimon menu",
           "Press Feedback",
           "Wait for it to load and a feedback page should open",
-          "Turn off your wifi and data connection",
+          "Turn off your Wi-Fi and data connection",
           "Press refresh on top right corner",
-          "The page should error and show you a text with black font",
+          "The page should display an error and show you some text with black font",
           "Hold the text and press select all, then copy that text (don't copy only some portion of the text)",
-          "Turn on your wifi or data connection",
+          "Turn on your Wi-Fi or data connection",
           "Paste the text to the textbox below",
           "Paste text here... Webpage not available..."
         ],
@@ -96,8 +96,8 @@
           "Wait for it to load and a feedback page should open",
           "Press In-game issue",
           "Press Co-Op Mode",
-          "There is a link on the bottom of the reply, press that",
-          "A browser should open up, copy the link and paste it below",
+          "There is a link on the bottom of the reply; press that",
+          "A browser should open up. Copy the link and paste it below",
           "Paste link here... https://genshin.mihoyo..."
         ]
       }
@@ -105,26 +105,26 @@
     "help": {
       "title": "Wish Counter Help & Settings",
       "enableManual": "Enable Manual Input",
-      "notice": "Using the Auto Import and manual input together is not recommended still need some testing!",
-      "consider": "Consider using the Auto Import first, access it on button beside the button you click to open this How To",
+      "notice": "Using Auto Import and manual input together is not recommended as it still requires some more testing!",
+      "consider": "Consider using the Auto Importer first. Access it by clicking the button next to the button you clicked to open this How To.",
       "howto": {
         "title": "How to use manual input",
-        "subtitle": "After you do x1 pull Wish:",
+        "subtitle": "After a 1x Wish:",
         "press": "Press",
         "whenYouGet": "when you get",
         "p1": "It will automatically add the lifetime pulls,",
         "and": "and",
-        "p2": ["When the", "pity reach 10, it will automatically reset to 0"],
-        "p3": ["When the", "pity reach 90, it will automatically reset to 0"],
+        "p2": ["When the", "pity reaches 10, it will automatically be reset to 0"],
+        "p3": ["When the", "pity reaches 90, it will automatically be reset to 0"],
         "p4": [
-          "For when you do x10 pulls Wish, press",
-          "but the pity counter won't be accurate, because there is no way to tell when the drop occur (maybe you got it on the 1st or even the 10th). To make the counter still accurate, you need to check it on the history table and add it 1 by 1 like you do 1 pull Wish."
+          "After a 10x Wish, press",
+          "but keep in mind that the pity counter might not be accurate, because there is no way to tell when the drop occured (maybe you got it on the 1st or even the 10th pull). To ensure that the counter is still accurate, you need to check the history table and add it one-by-one like you do 1x Wishes."
         ],
-        "p5": ["You can also press", "button to edit the values manually!"],
+        "p5": ["You can also press the", "button to edit the values manually!"],
         "p6": [
-          "Press the arrow on the bottom to see your pulls detail. A popup will show up when you get",
+          "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a",
           "or",
-          "Or you can add or edit the table manually."
+          "You can also add or edit the table manually."
         ]
       }
     },
@@ -161,12 +161,12 @@
       "calculateAscension": "Calculate Ascension Material?",
       "selectRarity": "Select weapon rarity",
       "selectWeapon": "Select weapon",
-      "current": "Current Weapon Level, Exp, & Ascension",
+      "current": "Current Weapon Level, EXP, & Ascension",
       "inputCurrentLevel": "Input current weapon level...",
-      "inputCurrentExp": "Input current weapon exp...",
+      "inputCurrentExp": "Input current weapon EXP...",
       "intended": "Intended Weapon Level & Ascension",
       "inputIntendedLevel": "Input intended weapon level...",
-      "resource": "Resource to Use",
+      "resource": "Resources to Use",
       "calculate": "Calculate",
       "unknownInformation": "There are some unknown information",
       "ascensionLevel": "Ascension level",
@@ -178,9 +178,9 @@
     "character": {
       "calculateAscension": "Calculate Ascension Material?",
       "selectCharacter": "Select character",
-      "current": "Current Character Level, Exp, & Ascension",
+      "current": "Current Character Level, EXP, & Ascension",
       "inputCurrentLevel": "Input current character level...",
-      "inputCurrentExp": "Input current character exp...",
+      "inputCurrentExp": "Input current character EXP...",
       "intended": "Intended Character Level & Ascension",
       "inputIntendedLevel": "Input intended character level...",
       "resource": "Resource to Use",
@@ -200,7 +200,7 @@
     "expTable": {
       "level": "Level",
       "items": "Items",
-      "wasted": "Wasted Exp",
+      "wasted": "Wasted EXP",
       "mora": "Mora Cost"
     }
   },
@@ -234,7 +234,7 @@
     "summary": "Summary",
     "empty": ["Nothing to do yet 😀", "Add some from the Items page or the Calculator!"],
     "farmableToday": "Farmable Today",
-    "resin": "resin needed",
+    "resin": "Resin needed",
     "based": "Based on AR:{ar} and WL:{wl}",
     "change": "(change on settings)",
     "approximation": "Approximation calculated from drop rates by",
@@ -254,15 +254,15 @@
   },
   "settings": {
     "version": "Data Version:",
-    "multiple": "Have multiple account? Choose account here to separate your wish and todo data",
+    "multiple": "Have multiple accounts? Choose accounts here to separate your Wish and Todo data",
     "selectAccount": "Select your account",
     "reset": "Reset",
     "delete": "Delete",
     "add": "Add",
     "server": "Select your server:",
     "drive": [
-      "Paimon.moe use Application Data Directory on your Google Drive to save and sync your wish counter and todo list.",
-      "Paimon.moe can only read and write file that this site create."
+      "Paimon.moe uses the Application Data Directory on your Google Drive to save and sync your Wish counter and Todo list.",
+      "Paimon.moe can only read and write files that this site created."
     ],
     "driveError": "Google Drive API cannot be loaded",
     "driveSignIn": "Sign in to Google Drive",
@@ -271,11 +271,11 @@
     "waiting": "Waiting...",
     "syncing": "Syncing...",
     "lastSync": "Last Sync:",
-    "feedback": "If you found any bug, wrong data, or you have any feedback, please leave a message on",
+    "feedback": "If you found any bugs, wrong data, or any other feedback, please leave a message on",
     "or": "or",
     "thanks": "Thanks😁!",
     "modal": {
-      "notice": "All todo and wish history data will be deleted",
+      "notice": "All Todo and Wish history data will be deleted",
       "cancel": "Cancel",
       "delete": "Delete",
       "reset": "Reset"
