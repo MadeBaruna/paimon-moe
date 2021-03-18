@@ -150,6 +150,7 @@
   "calculator": {
     "titleWeapon": "Weapon Calculator",
     "titleCharacter": "Character Calculator",
+    "titleResin": "Resin Calculator",
     "goto": "Go To",
     "howToUse": "How to Use",
     "guide": {
@@ -202,6 +203,13 @@
       "items": "Items",
       "wasted": "Wasted EXP",
       "mora": "Mora Cost"
+    },
+    "resin": {
+      "inputCurrentResin": "Input Current Resin...",
+      "timeFormat": "en",
+      "calculate": "Calculate",
+      "currentTime": "Current Time",
+      "fullTime": "Resin Will Be Replenished At"
     }
   },
   "items": {

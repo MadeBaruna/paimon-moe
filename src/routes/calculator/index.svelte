@@ -7,6 +7,7 @@
   import WeaponCalculator from './_weapon.svelte';
   import CharacterCalculator from './_character.svelte';
   import LevelUpTable from './_characterTable.svelte';
+  import ResinCalculator from './_resin.svelte';
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
   import HowToModal from '../../components/CalculatorHowToModal.svelte';
@@ -15,6 +16,7 @@
 
   let weaponCalc;
   let characterCalc;
+  let resinCalc;
 
   function openHowTo() {
     openModal(
@@ -27,16 +29,22 @@
     );
   }
 
-  export function scroll(type) {
-    const elementPosition =
-      type === 'character' ? characterCalc.getBoundingClientRect().top : weaponCalc.getBoundingClientRect().top;
-    const headerOffset = 80;
-    const offsetPosition = elementPosition - headerOffset;
+  export function findPos(id) {
+    let node = document.getElementById(id);
+    let curtop = 0;
+    let curtopscroll = 0;
+    let headerOffset = 40;
+    if (node.offsetParent) {
+      do {
+        curtop += node.offsetTop;
+        curtopscroll += node.offsetParent ? node.offsetParent.scrollTop : 0;
+      } while ((node = node.offsetParent));
 
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: 'smooth',
-    });
+      window.scrollTo({
+        top: curtop - curtopscroll - headerOffset,
+        behavior: 'smooth',
+      });
+    }
   }
 </script>
 
@@ -59,14 +67,15 @@
     </Button>
   </div>
   <div
+    id="weapon"
     class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mb-2"
-    bind:this={weaponCalc}
   >
-    <Button on:click={() => scroll('character')}>
+    <Button on:click={() => findPos('character')}>
       <Icon size={0.8} path={mdiArrowDown} />
       {$t('calculator.goto')}
       {$t('calculator.titleCharacter')}
     </Button>
+
     <h1
       class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
     >
@@ -75,13 +84,18 @@
   </div>
   <WeaponCalculator />
   <div
+    id="character"
     class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mt-8 mb-2"
-    bind:this={characterCalc}
   >
-    <Button on:click={() => scroll('weapon')}>
+    <Button on:click={() => findPos('weapon')}>
       <Icon size={0.8} path={mdiArrowUp} />
       {$t('calculator.goto')}
       {$t('calculator.titleWeapon')}
+    </Button>
+    <Button className="md:mb-0 md:ml-4 mb-4" on:click={() => findPos('resin')}>
+      <Icon size={0.8} path={mdiArrowDown} />
+      {$t('calculator.goto')}
+      {$t('calculator.titleResin')}
     </Button>
     <h1
       class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
@@ -90,6 +104,22 @@
     </h1>
   </div>
   <CharacterCalculator />
+  <div
+    id="resin"
+    class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mt-8 mb-2"
+  >
+    <Button on:click={() => findPos('character')}>
+      <Icon size={0.8} path={mdiArrowUp} />
+      {$t('calculator.goto')}
+      {$t('calculator.titleCharacter')}
+    </Button>
+    <h1
+      class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
+    >
+      {$t('calculator.titleResin')}
+    </h1>
+  </div>
+  <ResinCalculator />
   <div class="mt-8" />
   <LevelUpTable />
 </div>
