@@ -514,7 +514,7 @@
                 </td>
                 {#if sortBy === 'time' && ((pull.end && !sortOrder) || (pull.start && sortOrder))}
                   <td class="relative hidden xl:table-cell">
-                    <div class="border-t border-gray-700 absolute left-0 top-0 z-10" style="width: 266px;" />
+                    <div class="border-t border-gray-700 absolute left-0 top-0 z-10 border-start" style="width: 266px;" />
                   </td>
                   <td class="sticky w-0 hidden xl:table-cell pl-2" style="top: 8px;">
                     <div
@@ -622,7 +622,7 @@
 
   .group-bar {
     width: 1px;
-    height: 317px;
+    height: 325px;
     left: 0;
     top: 17px;
     @apply bg-white;
@@ -657,6 +657,13 @@
   table.list-table {
     @screen xl {
       padding-right: 17rem;
+    }
+  }
+
+  /* firefox bug */
+  @supports (-moz-appearance:none) {
+    .border-start {
+      top: -1px;
     }
   }
 </style>
