@@ -144,7 +144,7 @@ export const banners = {
     },
     {
       name: 'Epitome Invocation',
-      start: '2021-03-17 11:00:00',
+      start: '2021-03-17 06:00:00',
       end: '2021-04-06 16:00:00',
       shortName: 'Elegy',
       color: '#f54e42'
