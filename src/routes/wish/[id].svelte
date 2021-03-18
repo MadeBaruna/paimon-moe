@@ -22,6 +22,7 @@
   import { weaponList } from '../../data/weaponList';
   import { getAccountPrefix } from '../../stores/account';
   import { fromRemote, readSave } from '../../stores/saveManager';
+  import { getTimeOffset } from '../../stores/server';
 
   Chart.defaults.global.defaultFontColor = '#cbd5e0';
   Chart.defaults.global.defaultFontFamily = 'Poppins';
@@ -61,8 +62,11 @@
   let selectedBanners;
 
   selectedBanners = banners[bannerType].map((e) => {
-    const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss');
-    const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss');
+    // banner data based on Asia time
+    const diff = 8 - getTimeOffset();
+
+    const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
+    const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
     const image = `/images/banners/${e.name} ${start.format('YYYY-MM-DD')}.png`;
 
     return {
@@ -390,7 +394,7 @@
     </h2>
   </div>
   {#if loading}
-    <div class="text-white pl-4 md:pl-8 mt-4">Loading...</div>
+    <div class="text-white pl-4 md:pl-8 mt-4">{$t('wish.detail.loading')}</div>
   {:else}
     <div class="flex mt-4 wrapper">
       <div class="block overflow-x-auto xl:overflow-x-visible whitespace-no-wrap px">

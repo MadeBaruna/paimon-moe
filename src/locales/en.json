@@ -144,7 +144,8 @@
       "banner": "Banner",
       "roll": "#Roll",
       "totalThisBanner": "Total pull on this banner",
-      "worth": "Worth"
+      "worth": "Worth",
+      "loading": "Loading... (If this stuck, change your server on settings page)"
     }
   },
   "calculator": {

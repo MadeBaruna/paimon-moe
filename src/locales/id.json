@@ -144,7 +144,8 @@
       "banner": "Banner",
       "roll": "#Roll",
       "totalThisBanner": "Total pull di banner ini",
-      "worth": "Setara dengan"
+      "worth": "Setara dengan",
+      "loading": "Loading... (Kalau tidak selesai-selesai, ganti server di halaman settings)"
     }
   },
   "calculator": {

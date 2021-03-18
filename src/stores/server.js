@@ -19,6 +19,10 @@ const timeOffset = {
 
 const weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
 
+export const getTimeOffset = () => {
+  return timeOffset[get(server)];
+}
+
 export const getTimeDifference = () => {
   const now = dayjs();
   const local = now.utcOffset();
