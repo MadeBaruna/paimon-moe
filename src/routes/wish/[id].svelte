@@ -407,7 +407,7 @@
             <tr>
               <TableHeader
                 className="sticky top-0 bg-item z-30"
-                styleList="top: -1px;"
+                styleList="top: -1px; background-clip: padding-box;"
                 on:click={() => sort('time')}
                 sort={sortBy === 'time'}
                 order={sortOrder}
@@ -418,7 +418,7 @@
               </TableHeader>
               <TableHeader
                 className="sticky top-0 bg-item z-30"
-                styleList="top: -1px;"
+                styleList="top: -1px; background-clip: padding-box;"
                 on:click={() => sort('pity')}
                 sort={sortBy === 'pity'}
                 order={sortOrder}
@@ -429,7 +429,7 @@
               </TableHeader>
               <TableHeader
                 className="sticky top-0 bg-item z-30"
-                styleList="top: -1px;"
+                styleList="top: -1px; background-clip: padding-box;"
                 on:click={() => sort('name')}
                 sort={sortBy === 'name'}
                 order={sortOrder}
@@ -439,7 +439,7 @@
               </TableHeader>
               <TableHeader
                 className="sticky top-0 bg-item z-30"
-                styleList="top: -1px;"
+                styleList="top: -1px; background-clip: padding-box;"
                 on:click={() => sort('rare')}
                 sort={sortBy === 'rare'}
                 order={sortOrder}
@@ -450,7 +450,7 @@
               </TableHeader>
               <TableHeader
                 className="sticky top-0 bg-item z-30"
-                styleList="top: -1px;"
+                styleList="top: -1px; background-clip: padding-box;"
                 on:click={() => sort('type')}
                 sort={sortBy === 'type'}
                 order={sortOrder}
@@ -458,12 +458,16 @@
               >
                 {$t('wish.detail.type')}
               </TableHeader>
-              <TableHeader className="sticky top-0 bg-item" styleList="top: -1px;" align="center">
+              <TableHeader
+                className="sticky top-0 bg-item"
+                styleList="top: -1px; background-clip: padding-box;"
+                align="center"
+              >
                 {$t('wish.detail.roll')}
               </TableHeader>
               <TableHeader
                 className="sticky top-0 bg-item z-30 {sortBy === 'time' ? 'xl:hidden' : ''}"
-                styleList="top: -1px;"
+                styleList="top: -1px; background-clip: padding-box;"
                 align="left"
               >
                 {$t('wish.detail.banner')}
@@ -489,9 +493,9 @@
                     {pull.pity}
                   </span>
                 </td>
-                <td class="border-t border-gray-700 pl-4 text-gray-200 flex items-center">
+                <td class="border-t border-gray-700 pl-4 text-gray-200">
                   <img
-                    class="w-8 h-8 mr-2"
+                    class="w-8 h-8 inline mr-2"
                     src={pull.type === 'character'
                       ? `/images/characters/${pull.id}.png`
                       : pull.type === 'weapon'
@@ -499,7 +503,7 @@
                       : '/images/wish.png'}
                     alt={pull.name}
                   />
-                  <span class="pr-4">{pull.name}</span>
+                  <span class="h-8 leading-8 pr-4">{pull.name}</span>
                 </td>
                 <td class="border-t border-gray-700 px-2 text-gray-200 text-center">{pull.rarity}</td>
                 <td class="border-t border-gray-700 px-4 text-gray-200">
@@ -510,7 +514,7 @@
                 </td>
                 {#if sortBy === 'time' && ((pull.end && !sortOrder) || (pull.start && sortOrder))}
                   <td class="relative hidden xl:table-cell">
-                    <div class="border-t border-gray-700 absolute top-0 z-10" style="width: 266px;" />
+                    <div class="border-t border-gray-700 absolute left-0 top-0 z-10" style="width: 266px;" />
                   </td>
                   <td class="sticky w-0 hidden xl:table-cell pl-2" style="top: 8px;">
                     <div
