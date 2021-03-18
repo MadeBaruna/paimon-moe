@@ -127,6 +127,24 @@
           "Atau kamu bisa menambahkan atau mengedit tabel nya secara manual."
         ]
       }
+    },
+    "types": {
+      "beginners": "Beginners' Wish",
+      "standard": "Standard",
+      "character-event": "Event Karakter",
+      "weapon-event": "Event Senjata"
+    },
+    "detail": {
+      "weapon": "Senjata",
+      "character": "Karakter",
+      "time": "Waktu",
+      "pity": "Pity",
+      "name": "Nama",
+      "type": "Tipe",
+      "banner": "Banner",
+      "roll": "#Roll",
+      "totalThisBanner": "Total pull di banner ini",
+      "worth": "Setara dengan"
     }
   },
   "calculator": {

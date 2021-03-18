@@ -3,7 +3,7 @@
 
   import { onMount, getContext } from 'svelte';
   import { slide } from 'svelte/transition';
-  import { mdiPencil, mdiStar, mdiChevronDown } from '@mdi/js';
+  import { mdiPencil, mdiStar, mdiChevronDown, mdiTableOfContents } from '@mdi/js';
   import debounce from 'lodash/debounce';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
@@ -245,13 +245,18 @@
 </script>
 
 <div class="bg-item rounded-xl p-4 inline-flex flex-col w-full" style="height: min-content;">
-  <div class="flex justify-between mb-2">
-    <h2 class="font-display font-bold text-2xl text-white">{name}</h2>
+  <div class="flex mb-2">
+    <h2 class="font-display font-bold text-2xl text-white flex-1">{name}</h2>
     {#if manualInput}
       <Button size="sm" on:click={toggleEdit}>
         <Icon path={mdiPencil} color="white" />
       </Button>
     {/if}
+    <a href="/wish/{id}">
+      <Button className="ml-2" size="sm">
+        <Icon path={mdiTableOfContents} color="white" />
+      </Button>
+    </a>
   </div>
   <div class="flex flex-col w-full">
     <div

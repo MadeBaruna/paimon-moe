@@ -127,6 +127,24 @@
           "Or you can add or edit the table manually."
         ]
       }
+    },
+    "types": {
+      "beginners": "Beginners' Wish",
+      "standard": "Standard",
+      "character-event": "Character Event",
+      "weapon-event": "Weapon Event"
+    },
+    "detail": {
+      "weapon": "Weapon",
+      "character": "Character",
+      "time": "Time",
+      "pity": "Pity",
+      "name": "Name",
+      "type": "Type",
+      "banner": "Banner",
+      "roll": "#Roll",
+      "totalThisBanner": "Total pull on this banner",
+      "worth": "Worth"
     }
   },
   "calculator": {

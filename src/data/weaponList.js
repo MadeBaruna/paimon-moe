@@ -1071,7 +1071,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'Elemental Mastery',
     type: weapons.sword,
-    source: 'forgingnorthlander sword prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -1130,7 +1130,7 @@ export const weaponList = {
     atk: 44,
     secondary: 'Physical DMG Bonus',
     type: weapons.sword,
-    source: 'adventure rank 10 rewardforging:northlander sword prototype x1crystal chunk x50white iron chunk x50',
+    source: 'adventure rank 10 reward, forging',
     ascension: [
       {
         items: [
@@ -1307,7 +1307,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'ATK',
     type: weapons.bow,
-    source: 'forgingnorthlander bow prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -1602,7 +1602,7 @@ export const weaponList = {
     atk: 44,
     secondary: 'Physical DMG Bonus',
     type: weapons.polearm,
-    source: 'forgingnorthlander polearm prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -2664,7 +2664,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'Energy Recharge',
     type: weapons.polearm,
-    source: 'forgingnorthlander polearm prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -2723,7 +2723,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'DEF',
     type: weapons.claymore,
-    source: 'forgingnorthlander claymore prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -2841,7 +2841,7 @@ export const weaponList = {
     atk: 41,
     secondary: 'Physical DMG Bonus',
     type: weapons.bow,
-    source: 'forgingnorthlander bow prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -3313,7 +3313,7 @@ export const weaponList = {
     atk: 44,
     secondary: 'Elemental Mastery',
     type: weapons.catalyst,
-    source: 'forgingnorthlander catalyst prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -3903,7 +3903,7 @@ export const weaponList = {
     atk: 44,
     secondary: 'ATK',
     type: weapons.claymore,
-    source: 'forgingnorthlander claymore prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [

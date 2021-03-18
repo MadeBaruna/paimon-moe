@@ -9,7 +9,7 @@
   }
 </script>
 
-<div class="flex items-center lg:hidden fixed w-full h-16 header bg-background z-30 shadow-md overflow-hidden">
+<div class="flex items-center lg:hidden fixed w-full h-16 header bg-background z-50 shadow-md overflow-hidden">
   <a href="/" class="flex-1 pl-4 md:pl-8 font-display text-3xl font-black text-white relative z-10 pt-2">
     Paimon<span class="text-xl text-primary">.moe</span>
   </a>
