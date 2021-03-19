@@ -150,6 +150,8 @@
     loading = false;
     await tick();
 
+    if (timelineContainer === undefined) return;
+
     if (timelineContainer.offsetWidth < 500) {
       dayWidth = 40;
       await tick();
