@@ -241,7 +241,7 @@
 
 <div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8">
   <div class="bg-item rounded-xl mb-4 p-4">
-    <p class="text-white">{$t('settings.version')} <b>1.3</b></p>
+    <p class="text-white">{$t('settings.version')} <b>1.4</b></p>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 flex flex-col">
     <p class="text-white">{$t('settings.multiple')}</p>
@@ -343,7 +343,10 @@
     </p>
     {#if changelogOpen}
       <div transition:slide class="mt-4">
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/13 
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/17 
+- Fix wish import
+- Add new 1.4 weapons</pre>
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/03/13 
 - Add timeline page</pre>
         <pre
           class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/03/09 

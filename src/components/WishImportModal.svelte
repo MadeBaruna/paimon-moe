@@ -135,7 +135,7 @@
     console.log(wishNumber, type);
     url.searchParams.set('auth_appid', 'webview_gacha');
     url.searchParams.set('init_type', '301');
-    url.searchParams.set('gacha_id', 'd610857102f9256ba143ccf2e03b964c76a6ed');
+    url.searchParams.set('gacha_id', 'b8fd0d8a6c940c7a16a486367de5f6d2232f53');
     url.searchParams.set('lang', 'en');
     url.searchParams.set('device_type', getDeviceType());
     if (region !== '') url.searchParams.set('region', region);
@@ -155,10 +155,12 @@
     let page = 1;
     let result = [];
     let lastTime = 0;
+    let lastId = 0;
     do {
       if (cancelled) return;
 
       url.searchParams.set('page', page);
+      url.searchParams.set('end_id', lastId);
 
       currentPage = page;
 
@@ -242,6 +244,7 @@
         }
 
         page = page + 1;
+        lastId = result.length > 0 ? result[result.length - 1].id : 0;
         await sleep(1000);
         console.log(wishes);
       } catch (err) {

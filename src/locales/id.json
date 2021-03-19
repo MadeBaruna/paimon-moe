@@ -127,11 +127,31 @@
           "Atau kamu bisa menambahkan atau mengedit tabel nya secara manual."
         ]
       }
+    },
+    "types": {
+      "beginners": "Beginners' Wish",
+      "standard": "Standard",
+      "character-event": "Event Karakter",
+      "weapon-event": "Event Senjata"
+    },
+    "detail": {
+      "weapon": "Senjata",
+      "character": "Karakter",
+      "time": "Waktu",
+      "pity": "Pity",
+      "name": "Nama",
+      "type": "Tipe",
+      "banner": "Banner",
+      "roll": "#Roll",
+      "totalThisBanner": "Total pull di banner ini",
+      "worth": "Setara dengan",
+      "loading": "Loading... (Kalau tidak selesai-selesai, ganti server di halaman settings)"
     }
   },
   "calculator": {
-    "titleWeapon": "Kalulator Senjata",
+    "titleWeapon": "Kalkulator Senjata",
     "titleCharacter": "Kalkulator Karakter",
+    "titleResin": "Kalkulator Resin",
     "goto": "Ke",
     "howToUse": "Cara Penggunaan",
     "guide": {
@@ -184,6 +204,13 @@
       "items": "Items",
       "wasted": "Exp Terbuang",
       "mora": "Jumlah Mora"
+    },
+    "resin": {
+      "inputCurrentResin": "Masukkan Jumlah Resin Sekarang...",
+      "timeFormat": "id",
+      "calculate": "Hitung",
+      "currentTime": "Waktu Sekarang",
+      "fullTime": "Resin Akan Penuh Pada"
     }
   },
   "items": {

@@ -1071,7 +1071,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'Elemental Mastery',
     type: weapons.sword,
-    source: 'forgingnorthlander sword prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -1130,7 +1130,7 @@ export const weaponList = {
     atk: 44,
     secondary: 'Physical DMG Bonus',
     type: weapons.sword,
-    source: 'adventure rank 10 rewardforging:northlander sword prototype x1crystal chunk x50white iron chunk x50',
+    source: 'adventure rank 10 reward, forging',
     ascension: [
       {
         items: [
@@ -1307,7 +1307,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'ATK',
     type: weapons.bow,
-    source: 'forgingnorthlander bow prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -1602,7 +1602,7 @@ export const weaponList = {
     atk: 44,
     secondary: 'Physical DMG Bonus',
     type: weapons.polearm,
-    source: 'forgingnorthlander polearm prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -2137,49 +2137,49 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.tile_of_decarabians_tower, amount: 3 },
+          { item: itemList.heavy_horn, amount: 3 },
+          { item: itemList.divining_scroll, amount: 2 },
         ],
         mora: 5000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.debris_of_decarabians_city, amount: 3 },
+          { item: itemList.heavy_horn, amount: 12 },
+          { item: itemList.divining_scroll, amount: 8 },
         ],
         mora: 15000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.debris_of_decarabians_city, amount: 6 },
+          { item: itemList.black_bronze_horn, amount: 6 },
+          { item: itemList.sealed_scroll, amount: 6 },
         ],
         mora: 20000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.fragment_of_decarabians_epic, amount: 3 },
+          { item: itemList.black_bronze_horn, amount: 12 },
+          { item: itemList.sealed_scroll, amount: 9 },
         ],
         mora: 30000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.fragment_of_decarabians_epic, amount: 6 },
+          { item: itemList.black_crystal_horn, amount: 9 },
+          { item: itemList.forbidden_curse_scroll, amount: 6 },
         ],
         mora: 35000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.scattered_piece_of_decarabians_dream, amount: 4 },
+          { item: itemList.black_crystal_horn, amount: 18 },
+          { item: itemList.forbidden_curse_scroll, amount: 12 },
         ],
         mora: 45000,
       },
@@ -2303,65 +2303,65 @@ export const weaponList = {
       },
     ],
   },
-  // alley_hunter: {
-  //   name: 'Alley Hunter',
-  //   id: 'alley_hunter',
-  //   rarity: 4,
-  //   atk: 41,
-  //   secondary: 'CRIT Rate',
-  //   type: weapons.bow,
-  //   source: 'wish',
-  //   ascension: [
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
-  //         { item: itemList.dead_ley_line_branch, amount: 3 },
-  //         { item: itemList.treasure_hoarder_insignia, amount: 2 },
-  //       ],
-  //       mora: 5000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
-  //         { item: itemList.dead_ley_line_branch, amount: 12 },
-  //         { item: itemList.treasure_hoarder_insignia, amount: 8 },
-  //       ],
-  //       mora: 15000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
-  //         { item: itemList.dead_ley_line_leaves, amount: 6 },
-  //         { item: itemList.silver_raven_insignia, amount: 6 },
-  //       ],
-  //       mora: 20000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
-  //         { item: itemList.dead_ley_line_leaves, amount: 12 },
-  //         { item: itemList.silver_raven_insignia, amount: 9 },
-  //       ],
-  //       mora: 30000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
-  //         { item: itemList.ley_line_sprouts, amount: 9 },
-  //         { item: itemList.golden_raven_insignia, amount: 6 },
-  //       ],
-  //       mora: 35000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
-  //         { item: itemList.ley_line_sprouts, amount: 18 },
-  //         { item: itemList.golden_raven_insignia, amount: 12 },
-  //       ],
-  //       mora: 45000,
-  //     },
-  //   ],
-  // },
+  alley_hunter: {
+    name: 'Alley Hunter',
+    id: 'alley_hunter',
+    rarity: 4,
+    atk: 41,
+    secondary: 'CRIT Rate',
+    type: weapons.bow,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 3 },
+          { item: itemList.treasure_hoarder_insignia, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 12 },
+          { item: itemList.treasure_hoarder_insignia, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
+          { item: itemList.dead_ley_line_leaves, amount: 6 },
+          { item: itemList.silver_raven_insignia, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
+          { item: itemList.dead_ley_line_leaves, amount: 12 },
+          { item: itemList.silver_raven_insignia, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
+          { item: itemList.ley_line_sprouts, amount: 9 },
+          { item: itemList.golden_raven_insignia, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
+          { item: itemList.ley_line_sprouts, amount: 18 },
+          { item: itemList.golden_raven_insignia, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
   lithic_spear: {
     name: 'Lithic Spear',
     id: 'lithic_spear',
@@ -2421,65 +2421,65 @@ export const weaponList = {
       },
     ],
   },
-  // wine_and_song: {
-  //   name: 'Wine and Song',
-  //   id: 'wine_and_song',
-  //   rarity: 4,
-  //   atk: 42,
-  //   secondary: 'Energy Recharge',
-  //   type: weapons.catalyst,
-  //   source: 'currently unobtainable',
-  //   ascension: [
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
-  //         { item: itemList.dead_ley_line_branch, amount: 3 },
-  //         { item: itemList.divining_scroll, amount: 2 },
-  //       ],
-  //       mora: 5000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
-  //         { item: itemList.dead_ley_line_branch, amount: 12 },
-  //         { item: itemList.divining_scroll, amount: 8 },
-  //       ],
-  //       mora: 15000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
-  //         { item: itemList.dead_ley_line_leaves, amount: 6 },
-  //         { item: itemList.sealed_scroll, amount: 6 },
-  //       ],
-  //       mora: 20000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
-  //         { item: itemList.dead_ley_line_leaves, amount: 12 },
-  //         { item: itemList.sealed_scroll, amount: 9 },
-  //       ],
-  //       mora: 30000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
-  //         { item: itemList.ley_line_sprouts, amount: 9 },
-  //         { item: itemList.forbidden_curse_scroll, amount: 6 },
-  //       ],
-  //       mora: 35000,
-  //     },
-  //     {
-  //       items: [
-  //         { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
-  //         { item: itemList.ley_line_sprouts, amount: 18 },
-  //         { item: itemList.forbidden_curse_scroll, amount: 12 },
-  //       ],
-  //       mora: 45000,
-  //     },
-  //   ],
-  // },
+  wine_and_song: {
+    name: 'Wine and Song',
+    id: 'wine_and_song',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Energy Recharge',
+    type: weapons.catalyst,
+    source: 'currently unobtainable',
+    ascension: [
+      {
+        items: [
+          { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 3 },
+          { item: itemList.treasure_hoarder_insignia, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 12 },
+          { item: itemList.treasure_hoarder_insignia, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
+          { item: itemList.dead_ley_line_leaves, amount: 6 },
+          { item: itemList.silver_raven_insignia, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
+          { item: itemList.dead_ley_line_leaves, amount: 12 },
+          { item: itemList.silver_raven_insignia, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
+          { item: itemList.ley_line_sprouts, amount: 9 },
+          { item: itemList.golden_raven_insignia, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
+          { item: itemList.ley_line_sprouts, amount: 18 },
+          { item: itemList.golden_raven_insignia, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
   blackcliff_warbow: {
     name: 'Blackcliff Warbow',
     id: 'blackcliff_warbow',
@@ -2664,7 +2664,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'Energy Recharge',
     type: weapons.polearm,
-    source: 'forgingnorthlander polearm prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -2723,7 +2723,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'DEF',
     type: weapons.claymore,
-    source: 'forgingnorthlander claymore prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -2841,7 +2841,7 @@ export const weaponList = {
     atk: 41,
     secondary: 'Physical DMG Bonus',
     type: weapons.bow,
-    source: 'forgingnorthlander bow prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -3313,7 +3313,7 @@ export const weaponList = {
     atk: 44,
     secondary: 'Elemental Mastery',
     type: weapons.catalyst,
-    source: 'forgingnorthlander catalyst prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -3903,7 +3903,7 @@ export const weaponList = {
     atk: 44,
     secondary: 'ATK',
     type: weapons.claymore,
-    source: 'forgingnorthlander claymore prototype x1crystal chunk x50white iron chunk x50',
+    source: 'forging',
     ascension: [
       {
         items: [
@@ -6251,6 +6251,65 @@ export const weaponList = {
           { item: itemList.chunk_of_aerosiderite, amount: 6 },
           { item: itemList.ley_line_sprouts, amount: 27 },
           { item: itemList.slime_concentrate, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  elegy_for_the_end: {
+    name: "Elegy for the End",
+    id: "elegy_for_the_end",
+    rarity: 5,
+    type: weapons.bow,
+    source: "wish",
+    atk: 46,
+    secondary: "Energy Recharge",
+    ascension: [
+      {
+        items: [
+          { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
+          { item: itemList.heavy_horn, amount: 3 },
+          { item: itemList.recruits_insignia, amount: 2 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
+          { item: itemList.heavy_horn, amount: 12 },
+          { item: itemList.recruits_insignia, amount: 8 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
+          { item: itemList.black_bronze_horn, amount: 6 },
+          { item: itemList.sergeants_insignia, amount: 6 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
+          { item: itemList.black_bronze_horn, amount: 12 },
+          { item: itemList.sergeants_insignia, amount: 9 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
+          { item: itemList.black_crystal_horn, amount: 9 },
+          { item: itemList.lieutenants_insignia, amount: 6 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
+          { item: itemList.black_crystal_horn, amount: 18 },
+          { item: itemList.lieutenants_insignia, amount: 12 },
         ],
         mora: 65000,
       },
