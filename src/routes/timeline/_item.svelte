@@ -36,7 +36,7 @@
     i * (eventHeight + eventMargin)}px; height: {eventHeight}px; padding-right: 10px; 
         {prevNearby &&
   !started && (attachedPrev || prevEnded) && prevNearby
-    ? 'padding-left: 50px;'
+    ? 'padding-left: 35px;'
     : 'padding-left: 10px;'}
     --image: url(/images/events/{event.image}); --pos: {event.pos}; --color: {event.color}; 
     --zoom: {event.zoom
