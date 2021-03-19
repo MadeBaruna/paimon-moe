@@ -205,6 +205,10 @@
       "wasted": "Wasted EXP",
       "mora": "Mora Cost"
     },
+    "resinTable": {
+      "quantity": "Quantity",
+      "time": "Time To Wait"
+    },
     "resin": {
       "currentResin": "Current Resin",
       "desiredResin": "Desired Resin",
@@ -214,7 +218,10 @@
       "timeFormat": "en",
       "calculate": "Calculate",
       "currentTime": "Current Time",
-      "fullTime": "Will be replenished at"
+      "fullTime": "Will be replenished at",
+      "hours": "hours",
+      "minutes": "minutes",
+      "seconds": "seconds"
     }
   },
   "items": {

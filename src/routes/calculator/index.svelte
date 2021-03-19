@@ -8,15 +8,12 @@
   import CharacterCalculator from './_character.svelte';
   import LevelUpTable from './_characterTable.svelte';
   import ResinCalculator from './_resin.svelte';
+  import ResinTable from './_resinTable.svelte';
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
   import HowToModal from '../../components/CalculatorHowToModal.svelte';
 
   const { open: openModal } = getContext('simple-modal');
-
-  let weaponCalc;
-  let characterCalc;
-  let resinCalc;
 
   function openHowTo() {
     openModal(
@@ -120,6 +117,8 @@
     </h1>
   </div>
   <ResinCalculator />
-  <div class="mt-8" />
-  <LevelUpTable />
+  <div class="mt-8 space-y-4 grid md:grid-cols-2 md:gap-4 md:space-y-0">
+    <LevelUpTable />
+    <ResinTable />
+  </div>
 </div>

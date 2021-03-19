@@ -6,6 +6,7 @@
   import Icon from '../../components/Icon.svelte';
   import Input from '../../components/Input.svelte';
   import { time } from '../../stores/time';
+  import Countdown from 'svelte-countdown';
 
   let changed = true;
   let currentResin = '';
@@ -109,9 +110,14 @@
             <td />
             <td class="text-red-400 py-1">
               {$t('calculator.resin.fullTime')}:
-              <span class="bg-red-400 rounded-lg mt-2 font-bold text-sm text-white p-1">
-                {new Intl.DateTimeFormat($t('calculator.resin.timeFormat'), dateTimeOptions).format(fullTime)}
-              </span></td
+              <Countdown from={new Date(fullTime)} dateFormat="YYYY-MM-DD H:m:s" let:remaining>
+                <span class="font-bold">
+                  {new Intl.DateTimeFormat($t('calculator.resin.timeFormat'), dateTimeOptions).format(fullTime)}
+                  ({remaining.hours != 0 ? `${remaining.hours} ${$t('calculator.resin.hours')}` : ''}
+                  {remaining.minutes != 0 ? `${remaining.minutes} ${$t('calculator.resin.minutes')}` : ''}
+                  {remaining.seconds != 0 ? `${remaining.seconds} ${$t('calculator.resin.seconds')}` : ''})
+                </span>
+              </Countdown></td
             >
           </tr>
         </div>

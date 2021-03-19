@@ -205,6 +205,10 @@
       "wasted": "Exp Terbuang",
       "mora": "Jumlah Mora"
     },
+    "resinTable": {
+      "quantity": "Jumlah",
+      "time": "Waktu Menunggu"
+    },
     "resin": {
       "currentResin": "Resin Saat Ini",
       "desiredResin": "Resin Yang Diinginkan",
@@ -214,7 +218,10 @@
       "timeFormat": "id",
       "calculate": "Hitung",
       "currentTime": "Waktu Sekarang",
-      "fullTime": "Akan terisi pada"
+      "fullTime": "Akan terisi pada",
+      "hours": "jam",
+      "minutes": "menit",
+      "seconds": "detik"
     }
   },
   "items": {
