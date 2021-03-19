@@ -7,14 +7,13 @@
   import Input from '../../components/Input.svelte';
   import { time } from '../../stores/time';
 
-  let changed = false;
+  let changed = true;
   let currentResin = '';
   let desiredResin = '';
   let maxResin = 160;
   let millisecondsToWait;
   let fullTime = null;
   let missingResin = 160;
-  let showResult = false;
   let resinTypeOutput = '';
   let resinOutput = '';
 
@@ -36,7 +35,7 @@
   };
 
   $: isCurrentResin = currentResin >= 0 && currentResin < 160 && currentResin !== '';
-  $: isDesiredResin = desiredResin <= 160 && desiredResin >= 1 && desiredResin === '';
+  $: isDesiredResin = desiredResin <= 160 && desiredResin >= 1 && desiredResin !== '';
   $: canCalculate = isCurrentResin || isDesiredResin;
 
   function calculate() {
@@ -44,12 +43,11 @@
     resinOutput = resinTypeOutput === 'maxResin' ? missingResin : desiredResin;
     millisecondsToWait = resinTypeOutput === 'maxResin' ? missingResin * minutePerResin : desiredResin * minutePerResin;
     fullTime = new Date($time.getTime() + millisecondsToWait);
-    showResult = true;
+    changed = false;
   }
 
   function onChange(type) {
     changed = true;
-    showResult = false;
     resinTypeOutput = type;
   }
 </script>
@@ -89,7 +87,7 @@
       <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}
         >{$t('calculator.resin.calculate')}</Button
       >
-      {#if showResult}
+      {#if !changed}
         <div transition:fade={{ duration: 100 }} class="bg-background rounded-xl p-4 mt-2 block xl:inline-block">
           <tr>
             <td class="text-right border-b border-gray-700 py-1">

@@ -92,7 +92,7 @@
       {$t('calculator.goto')}
       {$t('calculator.titleWeapon')}
     </Button>
-    <Button className="md:mb-0 md:ml-4 mb-4" on:click={() => findPos('resin')}>
+    <Button className="md:mt-0 md:mr-4 mt-4" on:click={() => findPos('resin')}>
       <Icon size={0.8} path={mdiArrowDown} />
       {$t('calculator.goto')}
       {$t('calculator.titleResin')}
