@@ -9,10 +9,14 @@
 
   let changed = false;
   let currentResin = '';
+  let desiredResin = '';
   let maxResin = 160;
   let millisecondsToWait;
   let fullTime = null;
   let missingResin = 160;
+  let showResult = false;
+  let resinTypeOutput = '';
+  let resinOutput = '';
 
   let originalResin = {
     id: 'original_resin',
@@ -21,7 +25,7 @@
     value: 8,
   };
 
-  // 8 menit per resin * 60 seconds * 1000 millisec
+  // 8 minute per resin * 60 seconds * 1000 millisec
   let minutePerResin = originalResin.value * 60 * 1000;
 
   let dateTimeOptions = {
@@ -31,33 +35,50 @@
     weekday: 'long',
   };
 
-  $: canCalculate = currentResin !== '' && currentResin >= 0 && currentResin < 160;
+  $: isCurrentResin = currentResin >= 0 && currentResin < 160 && currentResin !== '';
+  $: isDesiredResin = desiredResin <= 160 && desiredResin >= 1 && desiredResin === '';
+  $: canCalculate = isCurrentResin || isDesiredResin;
 
   function calculate() {
     missingResin = maxResin - currentResin;
-    millisecondsToWait = missingResin * minutePerResin;
+    resinOutput = resinTypeOutput === 'maxResin' ? missingResin : desiredResin;
+    millisecondsToWait = resinTypeOutput === 'maxResin' ? missingResin * minutePerResin : desiredResin * minutePerResin;
     fullTime = new Date($time.getTime() + millisecondsToWait);
+    showResult = true;
   }
 
-  function onChange() {
+  function onChange(type) {
     changed = true;
+    showResult = false;
+    resinTypeOutput = type;
   }
 </script>
 
 <div class="bg-item rounded-xl p-4">
   <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-3 gap-4">
     <!-- input -->
-    <div class="md:col-span-1 xl:col-span-1">
+    <div class="md:col-span-1 xl:col-span-1 space-y-2">
+      <p class="text-center text-white">
+        {$t('calculator.resin.currentResin')}
+      </p>
       <Input
-        className="mb-2"
-        on:change={onChange}
+        on:change={() => onChange('maxResin')}
         type="number"
         min={0}
         max={160}
         bind:value={currentResin}
         placeholder={$t('calculator.resin.inputCurrentResin')}
       />
-      <p class="text-white text-center mt-3 mb-2">
+      <p class="text-center text-white">{$t('calculator.resin.or')} {$t('calculator.resin.desiredResin')}</p>
+      <Input
+        on:change={() => onChange('desiredResin')}
+        type="number"
+        min={1}
+        max={160}
+        bind:value={desiredResin}
+        placeholder={$t('calculator.resin.inputDesireResin')}
+      />
+      <p class="text-white text-center">
         {$t('calculator.resin.currentTime')}: {new Intl.DateTimeFormat(
           $t('calculator.resin.timeFormat'),
           dateTimeOptions,
@@ -68,12 +89,12 @@
       <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}
         >{$t('calculator.resin.calculate')}</Button
       >
-      {#if fullTime}
+      {#if showResult}
         <div transition:fade={{ duration: 100 }} class="bg-background rounded-xl p-4 mt-2 block xl:inline-block">
           <tr>
             <td class="text-right border-b border-gray-700 py-1">
               <span class="text-white mr-2 whitespace-no-wrap"
-                >{missingResin}
+                >{resinOutput}
                 <Icon size={0.5} path={mdiClose} /></span
               >
             </td>

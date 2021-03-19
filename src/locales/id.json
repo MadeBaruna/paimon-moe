@@ -206,11 +206,15 @@
       "mora": "Jumlah Mora"
     },
     "resin": {
-      "inputCurrentResin": "Masukkan Jumlah Resin Sekarang...",
+      "currentResin": "Resin Saat Ini",
+      "desiredResin": "Resin Yang Diinginkan",
+      "or": "atau",
+      "inputCurrentResin": "Masukkan jumlah resin sekarang...",
+      "inputDesireResin": "Masukkan jumlah resin yang diinginkan...",
       "timeFormat": "id",
       "calculate": "Hitung",
       "currentTime": "Waktu Sekarang",
-      "fullTime": "Resin Akan Penuh Pada"
+      "fullTime": "Akan terisi pada"
     }
   },
   "items": {
