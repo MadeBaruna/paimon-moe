@@ -603,51 +603,51 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.luminous_sands_from_guyun, amount: 5 },
+          { item: itemList.hunters_sacrificial_knife, amount: 5 },
+          { item: itemList.treasure_hoarder_insignia, amount: 3 },
         ],
-        mora: 0,
+        mora: 10000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.lustrous_stone_from_guyun, amount: 5 },
+          { item: itemList.hunters_sacrificial_knife, amount: 18 },
+          { item: itemList.treasure_hoarder_insignia, amount: 12 },
         ],
-        mora: 0,
+        mora: 20000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.lustrous_stone_from_guyun, amount: 9 },
+          { item: itemList.agents_sacrificial_knife, amount: 9 },
+          { item: itemList.silver_raven_insignia, amount: 9 },
         ],
-        mora: 0,
+        mora: 30000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.relic_from_guyun, amount: 5 },
+          { item: itemList.agents_sacrificial_knife, amount: 18 },
+          { item: itemList.silver_raven_insignia, amount: 14 },
         ],
-        mora: 0,
+        mora: 45000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.relic_from_guyun, amount: 9 },
+          { item: itemList.inspectors_sacrificial_knife, amount: 14 },
+          { item: itemList.golden_raven_insignia, amount: 9 },
         ],
-        mora: 0,
+        mora: 55000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.divine_body_from_guyun, amount: 6 },
+          { item: itemList.inspectors_sacrificial_knife, amount: 27 },
+          { item: itemList.golden_raven_insignia, amount: 18 },
         ],
-        mora: 0,
+        mora: 65000,
       },
     ],
   },
@@ -1378,7 +1378,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.lustrous_stone_from_guyun, amount: 3 },
           { item: itemList.hunters_sacrificial_knife, amount: 12 },
           { item: itemList.firm_arrowhead, amount: 8 },
         ],
@@ -1386,33 +1386,33 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.lustrous_stone_from_guyun, amount: 6 },
+          { item: itemList.agents_sacrificial_knife, amount: 6 },
+          { item: itemList.sharp_arrowhead, amount: 6 },
         ],
         mora: 20000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.relic_from_guyun, amount: 3 },
+          { item: itemList.agents_sacrificial_knife, amount: 12 },
+          { item: itemList.sharp_arrowhead, amount: 9 },
         ],
         mora: 30000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.relic_from_guyun, amount: 6 },
+          { item: itemList.inspectors_sacrificial_knife, amount: 9 },
+          { item: itemList.weathered_arrowhead, amount: 6 },
         ],
         mora: 35000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.divine_body_from_guyun, amount: 4 },
+          { item: itemList.inspectors_sacrificial_knife, amount: 18 },
+          { item: itemList.weathered_arrowhead, amount: 12 },
         ],
         mora: 45000,
       },
@@ -1488,49 +1488,49 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.mist_veiled_lead_elixir, amount: 3 },
+          { item: itemList.mist_grass_pollen, amount: 3 },
+          { item: itemList.recruits_insignia, amount: 2 },
         ],
         mora: 5000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.mist_veiled_mercury_elixir, amount: 3 },
+          { item: itemList.mist_grass_pollen, amount: 12 },
+          { item: itemList.recruits_insignia, amount: 8 },
         ],
         mora: 15000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.mist_veiled_mercury_elixir, amount: 6 },
+          { item: itemList.mist_grass, amount: 6 },
+          { item: itemList.sergeants_insignia, amount: 6 },
         ],
         mora: 20000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.mist_veiled_gold_elixir, amount: 3 },
+          { item: itemList.mist_grass, amount: 12 },
+          { item: itemList.sergeants_insignia, amount: 9 },
         ],
         mora: 30000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.mist_veiled_gold_elixir, amount: 6 },
+          { item: itemList.mist_grass_wick, amount: 9 },
+          { item: itemList.lieutenants_insignia, amount: 6 },
         ],
         mora: 35000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.mist_veiled_primo_elixir, amount: 4 },
+          { item: itemList.mist_grass_wick, amount: 18 },
+          { item: itemList.lieutenants_insignia, amount: 12 },
         ],
         mora: 45000,
       },
@@ -3452,32 +3452,32 @@ export const weaponList = {
       {
         items: [
           { item: itemList.debris_of_decarabians_city, amount: 6 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.black_bronze_horn, amount: 6 },
+          { item: itemList.sergeants_insignia, amount: 6 },
         ],
         mora: 20000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.fragment_of_decarabians_epic, amount: 3 },
+          { item: itemList.black_bronze_horn, amount: 12 },
+          { item: itemList.sergeants_insignia, amount: 9 },
         ],
         mora: 30000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.fragment_of_decarabians_epic, amount: 6 },
+          { item: itemList.black_crystal_horn, amount: 9 },
+          { item: itemList.lieutenants_insignia, amount: 6 },
         ],
         mora: 35000,
       },
       {
         items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
+          { item: itemList.scattered_piece_of_decarabians_dream, amount: 4 },
+          { item: itemList.black_crystal_horn, amount: 18 },
+          { item: itemList.lieutenants_insignia, amount: 12 },
         ],
         mora: 45000,
       },
@@ -4368,65 +4368,65 @@ export const weaponList = {
       },
     ],
   },
-  quartz: {
-    name: 'Quartz',
-    id: 'quartz',
-    rarity: 3,
-    atk: 40,
-    secondary: 'Elemental Mastery',
-    type: weapons.claymore,
-    source: 'chests',
-    ascension: [
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 5000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 10000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 15000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 20000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 25000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 30000,
-      },
-    ],
-  },
+  // quartz: {
+  //   name: 'Quartz',
+  //   id: 'quartz',
+  //   rarity: 3,
+  //   atk: 40,
+  //   secondary: 'Elemental Mastery',
+  //   type: weapons.claymore,
+  //   source: 'chests',
+  //   ascension: [
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 5000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 10000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 15000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 20000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 25000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 30000,
+  //     },
+  //   ],
+  // },
   sharpshooters_oath: {
     name: "Sharpshooter's Oath",
     id: 'sharpshooters_oath',
@@ -4545,65 +4545,65 @@ export const weaponList = {
       },
     ],
   },
-  ebony_bow: {
-    name: 'Ebony Bow',
-    id: 'ebony_bow',
-    rarity: 3,
-    atk: 40,
-    secondary: 'ATK',
-    type: weapons.bow,
-    source: 'chests',
-    ascension: [
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 5000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 10000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 15000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 20000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 25000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 30000,
-      },
-    ],
-  },
+  // ebony_bow: {
+  //   name: 'Ebony Bow',
+  //   id: 'ebony_bow',
+  //   rarity: 3,
+  //   atk: 40,
+  //   secondary: 'ATK',
+  //   type: weapons.bow,
+  //   source: 'chests',
+  //   ascension: [
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 5000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 10000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 15000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 20000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 25000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 30000,
+  //     },
+  //   ],
+  // },
   black_tassel: {
     name: 'Black Tassel',
     id: 'black_tassel',
@@ -4781,65 +4781,65 @@ export const weaponList = {
       },
     ],
   },
-  amber_catalyst: {
-    name: 'Amber Catalyst',
-    id: 'amber_catalyst',
-    rarity: 3,
-    atk: 40,
-    secondary: 'Elemental Mastery',
-    type: weapons.catalyst,
-    source: 'chests',
-    ascension: [
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 5000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 10000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 15000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 20000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 25000,
-      },
-      {
-        items: [
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-          { item: itemList.unknown, amount: 0 },
-        ],
-        mora: 30000,
-      },
-    ],
-  },
+  // amber_catalyst: {
+  //   name: 'Amber Catalyst',
+  //   id: 'amber_catalyst',
+  //   rarity: 3,
+  //   atk: 40,
+  //   secondary: 'Elemental Mastery',
+  //   type: weapons.catalyst,
+  //   source: 'chests',
+  //   ascension: [
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 5000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 10000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 15000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 20000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 25000,
+  //     },
+  //     {
+  //       items: [
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //         { item: itemList.unknown, amount: 0 },
+  //       ],
+  //       mora: 30000,
+  //     },
+  //   ],
+  // },
   recurve_bow: {
     name: 'Recurve Bow',
     id: 'recurve_bow',
@@ -6315,4 +6315,64 @@ export const weaponList = {
       },
     ],
   },
+  windblume_ode: {
+    name: 'Windblume Ode',
+    id: 'windblume_ode',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Elemental Mastery',
+    type: weapons.bow,
+    source: 'Invitation of Windblume Event',
+    ascension: [
+      {
+        items: [
+          { item: itemList.fetters_of_the_dandelion_gladiator, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 3 },
+          { item: itemList.whopperflower_nectar, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.chains_of_the_dandelion_gladiator, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 12 },
+          { item: itemList.whopperflower_nectar, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.chains_of_the_dandelion_gladiator, amount: 6 },
+          { item: itemList.dead_ley_line_leaves, amount: 6 },
+          { item: itemList.shimmering_nectar, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.shackles_of_the_dandelion_gladiator, amount: 3 },
+          { item: itemList.dead_ley_line_leaves, amount: 12 },
+          { item: itemList.shimmering_nectar, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.shackles_of_the_dandelion_gladiator, amount: 6 },
+          { item: itemList.ley_line_sprouts, amount: 9 },
+          { item: itemList.energy_nectar, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.dream_of_the_dandelion_gladiator, amount: 4 },
+          { item: itemList.ley_line_sprouts, amount: 18 },
+          { item: itemList.energy_nectar, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+
 };

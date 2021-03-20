@@ -343,6 +343,9 @@
     </p>
     {#if changelogOpen}
       <div transition:slide class="mt-4">
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/20 
+- Add Windblume Ode
+- Fix some weapons data</pre>
         <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/17 
 - Fix wish import
 - Add new 1.4 weapons</pre>
