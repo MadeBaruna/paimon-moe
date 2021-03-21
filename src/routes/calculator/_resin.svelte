@@ -41,6 +41,7 @@
 
   let condensedResin = {
     id: 'condensed_resin',
+    image: '/images/condensed_resin.png',
     label: 'Condensed Resin',
     value: 40,
   };
@@ -126,16 +127,66 @@
         {/if}
       </p>
     </div>
-    <div class="md:col-span-2 xl:col-span-2">
+    <div class="md:col-span-1 xl:col-span-2">
       <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}
         >{$t('calculator.resin.calculate')}</Button
       >
       {#if !changed}
         <div transition:fade={{ duration: 100 }} class="bg-background rounded-xl p-4 mt-2 block xl:inline-block">
-          <table class="table w-full">
+          <table class="w-full">
             <tr>
-              <td />
-              <td class="text-red-400">
+              <td class="text-right border-b border-gray-700 py-1">
+                <span class="text-white mr-2 whitespace-no-wrap"
+                  >{resinOutput.resin}
+                  <Icon size={0.5} path={mdiClose} /></span
+                >
+              </td>
+              <td class="border-b border-gray-700 py-1">
+                <span class="text-white">
+                  <span class="w-6 inline-block">
+                    <img class="h-6 inline-block mr-1" src={originalResin.image} alt={originalResin.label} />
+                  </span>
+                  {originalResin.label}
+                </span>
+              </td>
+            </tr>
+            {#if resinOutput.condensed.condensedResin !== 0}
+              <tr><td colspan="2" class="text-white text-center pt-2">{$t('calculator.resin.or')}</td></tr>
+              <tr>
+                <td class="text-right border-b border-gray-700 py-1">
+                  <span class="text-white mr-2 whitespace-no-wrap"
+                    >{resinOutput.condensed.resin}
+                    <Icon size={0.5} path={mdiClose} /></span
+                  >
+                </td>
+                <td class="border-b border-gray-700 py-1">
+                  <span class="text-white">
+                    <span class="w-6 inline-block">
+                      <img class="h-6 inline-block mr-1" src={originalResin.image} alt={originalResin.label} />
+                    </span>
+                    {originalResin.label}
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-right border-b border-gray-700 py-1">
+                  <span class="text-white mr-2 whitespace-no-wrap"
+                    >{resinOutput.condensed.condensedResin}
+                    <Icon size={0.5} path={mdiClose} /></span
+                  >
+                </td>
+                <td class="border-b border-gray-700 py-1">
+                  <span class="text-white">
+                    <span class="w-6 inline-block">
+                      <img class="h-6 inline-block mr-1" src={condensedResin.image} alt={condensedResin.label} />
+                    </span>
+                    {condensedResin.label}
+                  </span>
+                </td>
+              </tr>
+            {/if}
+            <tr>
+              <td class="text-red-400" colspan="2">
                 {$t('calculator.resin.fullTime')}:
                 {#if $t('calculator.resin.timeFormat') === 'en'}
                   {fullTime.locale('en').format('dddd HH:mm:ss')} ({fullTime.locale('en').fromNow()})
@@ -150,16 +201,3 @@
     </div>
   </div>
 </div>
-
-<style>
-  td {
-    @apply py-1;
-    @apply border-b;
-    @apply border-gray-700;
-  }
-  tr:last-child {
-    td {
-      @apply border-b-0;
-    }
-  }
-</style>
