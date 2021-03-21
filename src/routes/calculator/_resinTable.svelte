@@ -1,8 +1,13 @@
 <script>
-  import { t } from 'svelte-i18n';
   import { mdiArrowRight } from '@mdi/js';
+  import dayjs from 'dayjs';
+  import 'dayjs/locale/en';
+  import 'dayjs/locale/id';
+  import relativeTime from 'dayjs/plugin/relativeTime';
+  import { t } from 'svelte-i18n';
   import Icon from '../../components/Icon.svelte';
-  import Time from 'svelte-time';
+
+  dayjs.extend(relativeTime);
 
   const step = [0, 15, 30, 45, 60, 75, 90, 105, 120, 145, 160];
   const stepTime = [];
@@ -41,9 +46,16 @@
               <img src={originalResin.image} alt={originalResin.label} class="h-6 w-6 inline" /></td
             >
             <td class="pr-2 text-white text-center">
-              <!-- components not supporting locale yet -->
-              <Time relative timestamp={new Date(stepTime[i + 1])} /></td
-            >
+              {#if $t('calculator.resin.timeFormat') === 'en'}
+                {dayjs(new Date(stepTime[i + 1]))
+                  .locale('en')
+                  .fromNow()}
+              {:else}
+                {dayjs(new Date(stepTime[i + 1]))
+                  .locale('id')
+                  .fromNow()}
+              {/if}
+            </td>
           </tr>
         {/each}
       </table>

@@ -1,12 +1,18 @@
 <script>
   import { mdiClose } from '@mdi/js';
+  import dayjs from 'dayjs';
   import { t } from 'svelte-i18n';
   import { fade } from 'svelte/transition';
+  import { onMount } from 'svelte';
+  import rTime from 'dayjs/plugin/relativeTime';
+  import 'dayjs/locale/en';
+  import 'dayjs/locale/id';
+
+  dayjs.extend(rTime);
+
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
   import Input from '../../components/Input.svelte';
-  import { time } from '../../stores/time';
-  import Countdown from 'svelte-countdown';
 
   let changed = true;
   let currentResin = '';
@@ -14,9 +20,17 @@
   let maxResin = 160;
   let millisecondsToWait;
   let fullTime = null;
+  let relativeTime = null;
   let missingResin = 160;
   let resinTypeOutput = '';
-  let resinOutput = '';
+  let resinOutput = {
+    resin: 0,
+    condensed: {
+      resin: 0,
+      condensedResin: 0,
+    },
+  };
+  let currentTime = dayjs();
 
   let originalResin = {
     id: 'original_resin',
@@ -25,25 +39,41 @@
     value: 8,
   };
 
+  let condensedResin = {
+    id: 'condensed_resin',
+    label: 'Condensed Resin',
+    value: 40,
+  };
+
   // 8 minute per resin * 60 seconds * 1000 millisec
   let minutePerResin = originalResin.value * 60 * 1000;
-
-  let dateTimeOptions = {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    weekday: 'long',
-  };
 
   $: isCurrentResin = currentResin >= 0 && currentResin < 160 && currentResin !== '';
   $: isDesiredResin = desiredResin <= 160 && desiredResin >= 1 && desiredResin !== '';
   $: canCalculate = isCurrentResin || isDesiredResin;
 
+  function calculateCondensedResin(nResin) {
+    if (condensedResin.value % nResin == 0) {
+      return {
+        resin: 0,
+        condensedResin: Math.floor(nResin / condensedResin.value),
+      };
+    } else {
+      return {
+        resin: nResin % condensedResin.value,
+        condensedResin: Math.floor(nResin / condensedResin.value),
+      };
+    }
+  }
+
   function calculate() {
     missingResin = maxResin - currentResin;
-    resinOutput = resinTypeOutput === 'maxResin' ? missingResin : desiredResin;
+    resinOutput =
+      resinTypeOutput === 'maxResin'
+        ? { resin: missingResin, condensed: calculateCondensedResin(missingResin) }
+        : { resin: desiredResin, condensed: calculateCondensedResin(desiredResin) };
     millisecondsToWait = resinTypeOutput === 'maxResin' ? missingResin * minutePerResin : desiredResin * minutePerResin;
-    fullTime = new Date($time.getTime() + millisecondsToWait);
+    fullTime = dayjs(currentTime.valueOf() + millisecondsToWait);
     changed = false;
   }
 
@@ -51,6 +81,16 @@
     changed = true;
     resinTypeOutput = type;
   }
+
+  onMount(() => {
+    const interval = setInterval(() => {
+      currentTime = dayjs().add(0, 'minute');
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  });
 </script>
 
 <div class="bg-item rounded-xl p-4">
@@ -78,10 +118,12 @@
         placeholder={$t('calculator.resin.inputDesireResin')}
       />
       <p class="text-white text-center">
-        {$t('calculator.resin.currentTime')}: {new Intl.DateTimeFormat(
-          $t('calculator.resin.timeFormat'),
-          dateTimeOptions,
-        ).format($time)}
+        {$t('calculator.resin.currentTime')}:
+        {#if $t('calculator.resin.timeFormat') === 'en'}
+          {currentTime.locale('en').format('dddd HH:mm:ss')}
+        {:else}
+          {currentTime.locale('id').format('dddd HH:mm:ss')}
+        {/if}
       </p>
     </div>
     <div class="md:col-span-2 xl:col-span-2">
@@ -90,38 +132,34 @@
       >
       {#if !changed}
         <div transition:fade={{ duration: 100 }} class="bg-background rounded-xl p-4 mt-2 block xl:inline-block">
-          <tr>
-            <td class="text-right border-b border-gray-700 py-1">
-              <span class="text-white mr-2 whitespace-no-wrap"
-                >{resinOutput}
-                <Icon size={0.5} path={mdiClose} /></span
-              >
-            </td>
-            <td class="border-b border-gray-700 py-1">
-              <span class="text-white">
-                <span class="w-6 inline-block">
-                  <img class="h-6 inline-block mr-1" src={originalResin.image} alt={originalResin.label} />
-                </span>
-                {originalResin.label}
-              </span>
-            </td>
-          </tr>
-          <tr>
-            <td />
-            <td class="text-red-400 py-1">
-              {$t('calculator.resin.fullTime')}:
-              <Countdown from={new Date(fullTime)} dateFormat="YYYY-MM-DD H:m:s" let:remaining>
-                <span class="font-bold">
-                  {new Intl.DateTimeFormat($t('calculator.resin.timeFormat'), dateTimeOptions).format(fullTime)}
-                  ({remaining.hours != 0 ? `${remaining.hours} ${$t('calculator.resin.hours')}` : ''}
-                  {remaining.minutes != 0 ? `${remaining.minutes} ${$t('calculator.resin.minutes')}` : ''}
-                  {remaining.seconds != 0 ? `${remaining.seconds} ${$t('calculator.resin.seconds')}` : ''})
-                </span>
-              </Countdown></td
-            >
-          </tr>
+          <table class="table w-full">
+            <tr>
+              <td />
+              <td class="text-red-400">
+                {$t('calculator.resin.fullTime')}:
+                {#if $t('calculator.resin.timeFormat') === 'en'}
+                  {fullTime.locale('en').format('dddd HH:mm:ss')} ({fullTime.locale('en').fromNow()})
+                {:else}
+                  {fullTime.locale('id').format('dddd HH:mm:ss')} ({fullTime.locale('id').fromNow()})
+                {/if}
+              </td>
+            </tr>
+          </table>
         </div>
       {/if}
     </div>
   </div>
 </div>
+
+<style>
+  td {
+    @apply py-1;
+    @apply border-b;
+    @apply border-gray-700;
+  }
+  tr:last-child {
+    td {
+      @apply border-b-0;
+    }
+  }
+</style>

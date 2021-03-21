@@ -1314,7 +1314,7 @@ cssesc@^3.0.0:
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
-dayjs@^1.10.4, dayjs@^1.8.25, dayjs@^1.9.4:
+dayjs@^1.9.4:
   version "1.10.4"
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
   integrity sha512-RI/Hh4kqRc1UKLOAf/T5zdMMX5DQIlDxwUe3wSyMMnEbGunnpENCdbUgM+dW7kXidZqCttBrmw7BhN4TMddkCw==
@@ -2460,13 +2460,6 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svelte-countdown@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/svelte-countdown/-/svelte-countdown-1.0.0.tgz#8551e6ee2279211f08b8e8e426c5380394fae598"
-  integrity sha512-RuaRjnWPrH7xuwPQwb9b+Ek4mtv3knMTytEqOY2mha152edwDfejjSL+/HvtCbIyuAXPOndaut46dIoeAlPh4A==
-  dependencies:
-    dayjs "^1.8.25"
-
 svelte-i18n@^3.3.6:
   version "3.3.6"
   resolved "https://registry.yarnpkg.com/svelte-i18n/-/svelte-i18n-3.3.6.tgz#5d2a9f598b6e4999964afafad023c7f2f42c2e1f"
@@ -2492,13 +2485,6 @@ svelte-simple-modal@^0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/svelte-simple-modal/-/svelte-simple-modal-0.6.1.tgz#5e984f384dda16bc50f00846314dc140ad89864b"
   integrity sha512-GJGYj+jymzuar105fwkZ73dtcSFCordpbHqt53iE1N1GdqhvEmSs24idRzyIcO7TrTD/V/287X1icFXp88RQHQ==
-
-svelte-time@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/svelte-time/-/svelte-time-0.3.0.tgz#64e90c4c2c9ac5966ef6e4732d32803bdc8c6fe8"
-  integrity sha512-9IpXTo6zo0oPe7cCuXZMQZrwfqh+nzR/gSyK7DRmjed6HB0zxUjUfwDmJ6roFSZ3bft6cFSx5vrlkdjz0psh1Q==
-  dependencies:
-    dayjs "^1.10.4"
 
 svelte@^3.17.3:
   version "3.31.2"
