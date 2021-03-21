@@ -10,6 +10,8 @@ export const server = writable('Asia');
 export const ar = writable(50);
 export const wl = writable(7);
 export const loading = writable(true);
+export const maxAr = 60;
+export const maxWl = 8;
 
 const timeOffset = {
   Asia: 8,

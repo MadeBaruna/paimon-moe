@@ -13,7 +13,7 @@
   import ResetAccountModal from './_resetAccount.svelte';
 
   import { driveSignedIn, driveError, driveLoading, synced, localModified, lastSyncTime } from '../../stores/dataSync';
-  import { server, ar, wl } from '../../stores/server';
+  import { server, ar, wl, maxAr, maxWl } from '../../stores/server';
   import { accounts, getAccountPrefix, selectedAccount } from '../../stores/account';
   import { pushToast } from '../../stores/toast';
   import { readSave, updateSave } from '../../stores/saveManager';
@@ -68,14 +68,18 @@
   }
 
   function updateAR() {
-    if (arInput) {
+    if (arInput <= maxAr) {
       ar.set(Number(arInput));
+    } else {
+      ar.set(Number(45));
     }
   }
 
   function updateWL() {
-    if (wlInput) {
+    if (wlInput <= maxWl) {
       wl.set(Number(wlInput));
+    } else {
+      wl.set(Number(6));
     }
   }
 
@@ -343,7 +347,8 @@
     </p>
     {#if changelogOpen}
       <div transition:slide class="mt-4">
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/17 
+        <pre
+          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/17 
 - Fix wish import
 - Add new 1.4 weapons</pre>
         <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/03/13 
