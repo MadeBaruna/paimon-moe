@@ -55,6 +55,8 @@
     console.log('wish summary read local');
     const prefix = getAccountPrefix();
 
+    monthlyData = {};
+
     for (let type of types) {
       const path = `wish-counter-${type.id}`;
       const data = readSave(`${prefix}${path}`);
