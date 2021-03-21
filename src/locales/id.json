@@ -205,12 +205,23 @@
       "wasted": "Exp Terbuang",
       "mora": "Jumlah Mora"
     },
+    "resinTable": {
+      "quantity": "Jumlah",
+      "time": "Waktu Menunggu"
+    },
     "resin": {
-      "inputCurrentResin": "Masukkan Jumlah Resin Sekarang...",
+      "currentResin": "Resin Saat Ini",
+      "desiredResin": "Resin Yang Diinginkan",
+      "or": "atau",
+      "inputCurrentResin": "Masukkan jumlah resin sekarang...",
+      "inputDesireResin": "Masukkan jumlah resin yang diinginkan...",
       "timeFormat": "id",
       "calculate": "Hitung",
       "currentTime": "Waktu Sekarang",
-      "fullTime": "Resin Akan Penuh Pada"
+      "fullTime": "Akan terisi pada",
+      "hours": "jam",
+      "minutes": "menit",
+      "seconds": "detik"
     }
   },
   "items": {
