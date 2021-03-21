@@ -1,5 +1,5 @@
 <script>
-  import { t } from 'svelte-i18n'
+  import { t } from 'svelte-i18n';
 
   import { mdiDatabaseImport, mdiHelpCircle } from '@mdi/js';
   import { getContext, onMount } from 'svelte';
@@ -13,8 +13,11 @@
   import Summary from './_summary.svelte';
   import Counter from './_counter.svelte';
   import FirstTimePopup from './_firstTime.svelte';
+  import MonthlyGraph from './_monthlyGraph.svelte';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
+
+  let monthlyData = {};
 
   let counter1;
   let counter2;
@@ -155,7 +158,10 @@
       legendaryPity={80}
     />
     <Counter bind:this={counter3} manualInput={settings.manualInput} id="standard" name="Standard" />
-    <Counter bind:this={counter4} manualInput={settings.manualInput} id="beginners" name="Beginners' Wish" />
-    <Summary bind:this={summary} />
+    <div class="flex flex-col w-full">
+      <Counter bind:this={counter4} manualInput={settings.manualInput} id="beginners" name="Beginners' Wish" />
+      <MonthlyGraph bind:data={monthlyData} />
+    </div>
+    <Summary bind:this={summary} bind:monthlyData />
   </div>
 </div>

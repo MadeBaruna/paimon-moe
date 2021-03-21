@@ -2,6 +2,8 @@
   import { t } from 'svelte-i18n';
 
   import { onMount } from 'svelte';
+  import dayjs from 'dayjs';
+  
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
 
@@ -10,6 +12,8 @@
   import SummaryItem from './_summaryItem.svelte';
 
   let numberFormat = Intl.NumberFormat();
+
+  export let monthlyData = {};
 
   const types = [
     {
@@ -84,13 +88,27 @@
             currentType = 'weapon';
           }
 
+          const time = dayjs.unix(pull.time).format('YYYY-MM');
+          if (monthlyData[time] === undefined) {
+            monthlyData[time] = {
+              total: 0,
+              legendary: 0,
+              rare: 0,
+            }
+          }
+
+          monthlyData[time].total++;
+
           if (rarity === 5) {
             legendary++;
             legendaryPity += pull.pity;
+            monthlyData[time].legendary++;
+
             legendaryPulls.push({ name: itemName, pity: pull.pity });
           } else if (rarity === 4) {
             rare++;
             rarePity += pull.pity;
+            monthlyData[time].rare++;
 
             if (currentType === 'character') {
               rareCharacter++;
