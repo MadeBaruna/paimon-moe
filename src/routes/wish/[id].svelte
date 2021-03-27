@@ -63,10 +63,10 @@
 
   selectedBanners = banners[bannerType].map((e) => {
     // banner data based on Asia time
-    const diff = 8 - getTimeOffset();
+    const diff = e.timezoneDependent === true ? 8 - getTimeOffset() : 0;
 
     const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
-    const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
+    const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss');
     const image = `/images/banners/${e.name} ${e.image}.png`;
 
     return {

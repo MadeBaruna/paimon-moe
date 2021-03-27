@@ -2,7 +2,7 @@ export const banners = {
   beginners: [
     {
       name: "Beginners' Wish",
-      shortName: 'Beginners\' Wish',
+      shortName: "Beginners' Wish",
       image: 1,
       start: '2000-01-01 00:00:00',
       end: '2200-01-01 00:00:00',
@@ -27,13 +27,14 @@ export const banners = {
       start: '2020-09-28 00:00:00',
       end: '2020-10-18 18:00:00',
       color: '#55E4B0',
+      timezoneDependent: true,
     },
     {
       name: 'Sparkling Steps',
       image: 1,
       shortName: 'Klee',
       start: '2020-10-20 18:00:00',
-      end: '2020-11-10 18:00:00',
+      end: '2020-11-9 18:00:00',
       color: '#CA360E',
     },
     {
@@ -41,8 +42,9 @@ export const banners = {
       image: 1,
       shortName: 'Tartaglia',
       start: '2020-11-11 06:00:00',
-      end: '2020-12-01 18:00:00',
+      end: '2020-12-01 16:00:00',
       color: '#50A3C0',
+      timezoneDependent: true,
     },
     {
       name: 'Gentry of Hermitage',
@@ -56,9 +58,10 @@ export const banners = {
       name: 'Secretum Secretorum',
       image: 1,
       shortName: 'Albedo',
-      start: '2020-12-23 10:00:00',
+      start: '2020-12-23 06:00:00',
       end: '2021-01-12 16:00:00',
       color: '#FCFE83',
+      timezoneDependent: true,
     },
     {
       name: 'Adrift in the Harbor',
@@ -75,6 +78,7 @@ export const banners = {
       start: '2021-02-03 06:00:00',
       end: '2021-02-17 16:00:00',
       color: '#2BE3F8',
+      timezoneDependent: true,
     },
     {
       name: 'Dance of Lanterns',
@@ -99,6 +103,7 @@ export const banners = {
       start: '2021-03-17 06:00:00',
       end: '2021-04-06 16:00:00',
       color: '#35C297',
+      timezoneDependent: true,
     },
   ],
   weapons: [
@@ -108,23 +113,25 @@ export const banners = {
       start: '2020-09-28 00:00:00',
       end: '2020-10-18 18:00:00',
       shortName: 'Amos',
-      color: '#f54e42'
+      color: '#f54e42',
+      timezoneDependent: true,
     },
     {
       name: 'Epitome Invocation',
       image: 2,
       start: '2020-10-20 18:00:00',
-      end: '2020-11-10 18:00:00',
-      shortName: 'WGS',
-      color: '#f5c242'
+      end: '2020-11-9 18:00:00',
+      shortName: 'Lost Prayer',
+      color: '#f5c242',
     },
     {
       name: 'Epitome Invocation',
       image: 3,
       start: '2020-11-11 06:00:00',
-      end: '2020-12-01 18:00:00',
+      end: '2020-12-01 16:00:00',
       shortName: 'Skyward',
-      color: '#f5ef42'
+      color: '#f5ef42',
+      timezoneDependent: true,
     },
     {
       name: 'Epitome Invocation',
@@ -132,15 +139,16 @@ export const banners = {
       start: '2020-12-01 18:00:00',
       end: '2020-12-22 15:00:00',
       shortName: 'Vortex',
-      color: '#7ef542'
+      color: '#7ef542',
     },
     {
       name: 'Epitome Invocation',
       image: 5,
-      start: '2020-12-23 10:00:00',
+      start: '2020-12-23 06:00:00',
       end: '2021-01-12 16:00:00',
       shortName: 'Summit',
-      color: '#42ecf5'
+      color: '#42ecf5',
+      timezoneDependent: true,
     },
     {
       name: 'Epitome Invocation',
@@ -148,7 +156,7 @@ export const banners = {
       start: '2021-01-12 18:00:00',
       end: '2021-02-02 15:00:00',
       shortName: 'Amos',
-      color: '#424ef5'
+      color: '#424ef5',
     },
     {
       name: 'Epitome Invocation',
@@ -156,7 +164,8 @@ export const banners = {
       start: '2021-02-03 06:00:00',
       end: '2021-02-23 16:00:00',
       shortName: 'Primordial',
-      color: '#b042f5'
+      color: '#b042f5',
+      timezoneDependent: true,
     },
     {
       name: 'Epitome Invocation',
@@ -164,7 +173,7 @@ export const banners = {
       start: '2021-02-23 18:00:00',
       end: '2021-03-16 15:00:00',
       shortName: 'Homa',
-      color: '#f542c8'
+      color: '#f542c8',
     },
     {
       name: 'Epitome Invocation',
@@ -172,7 +181,8 @@ export const banners = {
       start: '2021-03-17 06:00:00',
       end: '2021-04-06 16:00:00',
       shortName: 'Elegy',
-      color: '#f54e42'
+      color: '#f54e42',
+      timezoneDependent: true,
     },
   ],
 };
