@@ -147,6 +147,8 @@ async function addWishHistory(workbook, icons) {
       bold: true,
     };
 
+    if (data === null) continue;
+
     let groupCount = 0;
     let lastTime = 0;
     let lastBanner = '';

@@ -75,7 +75,11 @@ export function process(id) {
     };
   });
 
-  const { pullData } = readLocalData(path);
+  const data = readLocalData(path);
+
+  if (data === null) return null;
+
+  const pullData = data.pullData;
 
   const currentPulls = [];
   const allLegendary = [];
