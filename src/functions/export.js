@@ -1,8 +1,9 @@
 import { Workbook } from 'exceljs';
+import dayjs from 'dayjs';
+
 import { bannerTypes } from '../data/bannerTypes';
 import { banners } from '../data/banners';
 
-import dayjs from 'dayjs';
 import { getTimeOffset } from '../stores/server';
 import { process } from './wish';
 
@@ -132,11 +133,11 @@ async function addWishHistory(workbook, icons) {
 
     const sheet = workbook.getWorksheet(category);
     sheet.columns = [
-      { header: 'Time', width: 22, style: { alignment: { horizontal: 'left' } } },
-      { header: 'Pity', width: 4, style: { alignment: { horizontal: 'center' } } },
-      { header: 'Name', width: 32 },
-      { header: '⭐', width: 2.5, style: { alignment: { horizontal: 'center' } } },
       { header: 'Type', width: 9 },
+      { header: 'Name', width: 32 },
+      { header: 'Time', width: 22, style: { alignment: { horizontal: 'left' } } },
+      { header: '⭐', width: 2.5, style: { alignment: { horizontal: 'center' } } },
+      { header: 'Pity', width: 4, style: { alignment: { horizontal: 'center' } } },
       { header: '#Roll', width: 7, style: { alignment: { horizontal: 'center' } } },
       { header: 'Group', width: 7, style: { alignment: { horizontal: 'center' } } },
       { header: 'Banner', width: 24 },
@@ -164,11 +165,11 @@ async function addWishHistory(workbook, icons) {
       lastTime = pull.time;
 
       const row = sheet.addRow([
-        dayjs.unix(pull.time).toDate(),
-        pull.pity,
+        pull.type[0].toUpperCase() + pull.type.slice(1),
         pull.name,
+        dayjs.unix(pull.time).toDate(),
         pull.rarity,
-        pull.type,
+        pull.pity,
         pull.at,
         groupCount,
         pull.banner.name,
@@ -183,7 +184,7 @@ async function addWishHistory(workbook, icons) {
         };
       }
 
-      row.getCell(1).numFmt = 'yyyy-mm-dd hh:mm:ss';
+      row.getCell(3).numFmt = 'yyyy-mm-dd hh:mm:ss';
 
       row.font = {
         color: { argb: pull.rarity === 5 ? 'FFCC9832' : pull.rarity === 4 ? 'FF8A6995' : 'FF000000' },
