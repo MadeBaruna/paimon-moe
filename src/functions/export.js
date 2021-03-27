@@ -1,7 +1,6 @@
 import { Workbook } from 'exceljs';
 import dayjs from 'dayjs';
 
-import { bannerTypes } from '../data/bannerTypes';
 import { banners } from '../data/banners';
 
 import { getTimeOffset } from '../stores/server';
@@ -129,8 +128,7 @@ async function addInformation(workbook) {
  */
 async function addWishHistory(workbook, icons) {
   for (const [id, category] of Object.entries(bannerCategories)) {
-    const data = process(id);
-
+    
     const sheet = workbook.getWorksheet(category);
     sheet.columns = [
       { header: 'Type', width: 9 },
@@ -143,17 +141,18 @@ async function addWishHistory(workbook, icons) {
       { header: 'Banner', width: 24 },
       { header: 'Icon', width: 5.5 },
     ];
-
+    
     sheet.getRow(1).font = {
       bold: true,
     };
-
+    
+    const data = process(id);
     if (data === null) continue;
 
     let groupCount = 0;
     let lastTime = 0;
     let lastBanner = '';
-    for (const pull of data) {
+    for (const pull of data.pulls) {
       if (lastBanner !== pull.banner.image) {
         groupCount = 0;
       }

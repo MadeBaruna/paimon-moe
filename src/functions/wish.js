@@ -160,10 +160,8 @@ export function process(id) {
     currentPulls.push(newPull);
   }
 
-  return currentPulls;
-
-  // console.log(JSON.stringify(pulls.slice(0, 5).map(e => [e.time.toString(), e.id, e.type, e.pity, e.group === 'group'])));
-  // console.log(JSON.stringify(selectedBanners[8].legendary.map(e => [e.time.toString(), e.id, e.type, e.pity, e.group === 'group'])));
-  // console.log(JSON.stringify(selectedBanners[8].rarePity));
-  // console.log(selectedBanners[8].legendary.length, selectedBanners[8].rare.character.length + selectedBanners[8].rare.weapon.length, selectedBanners[8].total);
+  return {
+    pulls: currentPulls,
+    banner: selectedBanners,
+  }
 }
