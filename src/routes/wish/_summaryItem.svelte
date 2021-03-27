@@ -87,7 +87,7 @@
     </tr>
   </table>
   {#if avg.legendary.pulls.length > 0}
-    <div class="flex flex-wrap mt-2">
+    <div class="flex flex-wrap mt-2 overflow-y-auto" style="max-height: 300px;">
       {#each avg.legendary.pulls as pull}
         <span class="pity">{pull.name} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span>
       {/each}
@@ -110,5 +110,18 @@
       @apply font-semibold;
       @apply pl-1;
     }
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.35);
+    @apply rounded-xl;
   }
 </style>

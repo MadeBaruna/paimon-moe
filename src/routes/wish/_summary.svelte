@@ -3,9 +3,10 @@
 
   import { onMount } from 'svelte';
   import dayjs from 'dayjs';
-  
+
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
+  import { bannerTypes } from '../../data/bannerTypes';
 
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateTime, fromRemote } from '../../stores/saveManager';
@@ -15,24 +16,7 @@
 
   export let monthlyData = {};
 
-  const types = [
-    {
-      name: 'Character Event',
-      id: 'character-event',
-    },
-    {
-      name: 'Weapon Event',
-      id: 'weapon-event',
-    },
-    {
-      name: 'Standard',
-      id: 'standard',
-    },
-    {
-      name: "Beginners' Wish",
-      id: 'beginners',
-    },
-  ];
+  const types = bannerTypes;
 
   let loading = true;
   let totalWish = 0;
@@ -96,7 +80,7 @@
               total: 0,
               legendary: 0,
               rare: 0,
-            }
+            };
           }
 
           monthlyData[time].total++;

@@ -26,7 +26,10 @@ const onwarn = (warning, onwarn) =>
 export default {
   client: {
     input: config.client.input(),
-    output: config.client.output(),
+    output: {
+      ...config.client.output(),
+      sourcemap: dev ? 'inline' : true,
+    },
     plugins: [
       replace({
         'process.browser': true,
