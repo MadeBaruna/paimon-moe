@@ -120,7 +120,7 @@ export const banners = {
       name: 'Epitome Invocation',
       image: 2,
       start: '2020-10-20 18:00:00',
-      end: '2020-11-9 18:00:00',
+      end: '2020-11-10 18:00:00',
       shortName: 'Lost Prayer',
       color: '#f5c242',
     },
