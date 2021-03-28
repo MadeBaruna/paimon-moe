@@ -343,40 +343,45 @@
     </p>
     {#if changelogOpen}
       <div transition:slide class="mt-4">
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/20 
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/29
+- Add pity wish tally submission
+- Fix edit/delete manual wish input
+
+2021/03/20 
 - Add Windblume Ode
-- Fix some weapons data</pre>
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/17 
+- Fix some weapons data
+
+2021/03/17 
 - Fix wish import
-- Add new 1.4 weapons</pre>
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/03/13 
-- Add timeline page</pre>
-        <pre
-          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/03/09 
+- Add new 1.4 weapons
+
+2021/03/13 
+- Add timeline page
+
+2021/03/09 
 - Add Auto Import Wish
-- Fix The Widsith data</pre>
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/03/02 
-- Add Hu Tao</pre>
-        <pre
-          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/26 
+- Fix The Widsith data
+
+2021/03/02 
+- Add Hu Tao
+
+2021/02/26 
 - Add Staff of Homa, Lithic Spear, and Lithic Blade
-- Change weapon banner 5star pity</pre>
-        <pre
-          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/03 
+- Change weapon banner 5star pity
+        
+2021/02/03 
 - Add Xiao
 - Add Primordial Jade Cutter
-- Bug fixes</pre>
-        <pre
-          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/02 
+- Bug fixes
+
+2021/02/02 
 - Add resin approximation on todo list
 - Change todo today farmable item view
-- Add WL and AR setting for resin approximation</pre>
-        <pre
-          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/02/01 
+- Add WL and AR setting for resin approximation
+
+2021/02/01 
 - Add detail to wish counter
 - Bug fixes</pre>
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap mt-2">2021/01/12 
-- Add Ganyu</pre>
       </div>
     {/if}
   </div>
