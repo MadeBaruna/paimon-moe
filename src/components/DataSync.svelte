@@ -43,7 +43,7 @@
 
     timeout = setTimeout(() => {
       handleError();
-    }, 5000);
+    }, 15000);
   }
 
   function cancelTimeout() {

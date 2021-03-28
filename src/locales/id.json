@@ -24,6 +24,7 @@
     "welcomeStart2": "diatas untuk mulai",
     "manual": "Jika kamu ingin memasukkan datanya secara manual, kamu bisa menyalakannya disini:",
     "manualButton": "Nyalakan Input Manual",
+    "errorBanner": "Waktu banner salah! Coba sesuaikan server. Masih gak bisa? tolong chat di Discord 😅",
     "import": {
       "title": "Import Riwayat Wish",
       "faqsButton": "FAQS - BACA DULU",

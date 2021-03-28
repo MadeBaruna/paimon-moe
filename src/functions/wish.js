@@ -6,6 +6,7 @@ import { readSave } from '../stores/saveManager';
 import { banners } from '../data/banners';
 import { weaponList } from '../data/weaponList';
 import { characters } from '../data/characters';
+import { pushToast } from '../stores/toast';
 
 const bannerTypes = {
   'character-event': 'characters',
@@ -97,6 +98,17 @@ export function process(id) {
 
     if (currentBanner === null || currentBanner.end < pull.time) {
       const nextBanner = getNextBanner(pull.time, currentBannerIndex, selectedBanners);
+
+      if (nextBanner === undefined) {
+        pushToast('Something went wrong, please leave a message on Discord 😅', 'error');
+        Sentry.captureException(new Error('failed to get current banner'), {
+          contexts: {
+            pull,
+          },
+        });
+        return null;
+      }
+
       currentBanner = nextBanner.selectedBanner;
       currentBannerIndex = nextBanner.currentBannerIndex;
       startBanner = true;

@@ -23,6 +23,7 @@
   import { getAccountPrefix } from '../../stores/account';
   import { fromRemote, readSave } from '../../stores/saveManager';
   import { getTimeOffset } from '../../stores/server';
+  import { pushToast } from '../../stores/toast';
 
   Chart.defaults.global.defaultFontColor = '#cbd5e0';
   Chart.defaults.global.defaultFontFamily = 'Poppins';
@@ -135,6 +136,17 @@
 
       if (currentBanner === null || currentBanner.end < pull.time) {
         currentBanner = getNextBanner(pull.time);
+
+        if (currentBanner === undefined) {
+          pushToast($t('wish.errorBanner'), 'error');
+          Sentry.captureException(new Error('failed to get current banner'), {
+            contexts: {
+              pull,
+            },
+          });
+          return;
+        }
+
         startBanner = true;
 
         if (i > 0) {
@@ -294,7 +306,6 @@
               return selectedBanners[tooltipItem[0].index].name;
             },
             label: (tooltipItem, data) => {
-              console.log(tooltipItem, data);
               const label = data.datasets[tooltipItem.datasetIndex].label;
               const value =
                 tooltipItem.datasetIndex === 2
@@ -514,7 +525,10 @@
                 </td>
                 {#if sortBy === 'time' && ((pull.end && !sortOrder) || (pull.start && sortOrder))}
                   <td class="relative hidden xl:table-cell">
-                    <div class="border-t border-gray-700 absolute left-0 top-0 z-10 border-start" style="width: 266px;" />
+                    <div
+                      class="border-t border-gray-700 absolute left-0 top-0 z-10 border-start"
+                      style="width: 266px;"
+                    />
                   </td>
                   <td class="sticky w-0 hidden xl:table-cell pl-2" style="top: 8px;">
                     <div
@@ -661,7 +675,7 @@
   }
 
   /* firefox bug */
-  @supports (-moz-appearance:none) {
+  @supports (-moz-appearance: none) {
     .border-start {
       top: -1px;
     }

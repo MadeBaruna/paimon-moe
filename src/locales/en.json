@@ -24,6 +24,7 @@
     "welcomeStart2": "button up there",
     "manual": "If you want to manually input the data, you can enable it here:",
     "manualButton": "Enable Manual Input",
+    "errorBanner": "Banner time missmatch! Please adjust your server. Still not working? please leave a message on Discord 😅",
     "import": {
       "title": "Import Wish History",
       "faqsButton": "FAQ - READ FIRST",
