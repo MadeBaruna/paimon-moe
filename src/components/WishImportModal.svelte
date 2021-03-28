@@ -1,8 +1,9 @@
 <script>
   import { t } from 'svelte-i18n';
 
-  import { mdiClose, mdiDownload, mdiHelpCircle, mdiInformation, mdiLoading } from '@mdi/js';
+  import { mdiChevronDown, mdiClose, mdiDownload, mdiHelpCircle, mdiInformation, mdiLoading, mdiStar } from '@mdi/js';
   import { onMount } from 'svelte';
+  import { slide } from 'svelte/transition';
   import dayjs from 'dayjs';
 
   import { pushToast } from '../stores/toast';
@@ -15,6 +16,7 @@
   import { characters } from '../data/characters';
   import { readSave, updateSave } from '../stores/saveManager';
   import { getAccountPrefix } from '../stores/account';
+  import { submitWishTally } from '../functions/wishTally';
 
   export let processFirstTimePopup;
   export let closeModal;
@@ -29,6 +31,9 @@
 
   let generatedTextInput = '';
   let genshinLink = '';
+
+  let wishTallyInfoExpanded = false;
+  let wishTallyChecked = true;
 
   let types = {
     100: {
@@ -166,7 +171,7 @@
 
       try {
         const res = await fetchRetry(
-          __paimon.env.CORS_HOST,
+          `${__paimon.env.API_HOST}/corsproxy`,
           {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -297,6 +302,10 @@
     return new Promise((resolve) => setTimeout(resolve, ms));
   }
 
+  function toggleWishTallyInfo() {
+    wishTallyInfoExpanded = !wishTallyInfoExpanded;
+  }
+
   function toggleFaqs(show) {
     showFaq = show;
   }
@@ -378,6 +387,11 @@
     calculatingPity = false;
 
     pushToast($t('wish.import.success'));
+
+    if (wishTallyChecked) {
+      submitWishTally();
+    }
+
     closeModal();
   }
 
@@ -458,7 +472,7 @@
         {#each Object.entries(types) as [code, type]}
           <tr>
             <td class="border-b border-gray-700 py-1">
-              <span class="text-white mr-2 whitespace-no-wrap">{type.name} Banner</span>
+              <span class="text-white mr-2">{type.name} Banner</span>
             </td>
             <td class="border-b border-gray-700 py-1">
               {#if wishes[code] !== undefined}
@@ -473,6 +487,29 @@
           </tr>
         {/each}
       </table>
+      <div class="mt-4 mb-2 rounded-xl px-2 py-2 md:px-4 md:py-2 bg-black bg-opacity-25 text-gray-400">
+        <div class="pl-1 flex flex-col md:flex-row items-center">
+          <Checkbox bind:checked={wishTallyChecked}>
+            <p class="ml-1">{$t('wish.import.wishTallyCheck')}</p>
+          </Checkbox>
+          <div
+            class="w-full py-1 md:py-0 md:w-12 md:px-3 flex items-center justify-center cursor-pointer"
+            on:click={toggleWishTallyInfo}
+          >
+            <Icon path={mdiChevronDown} />
+          </div>
+        </div>
+        {#if wishTallyInfoExpanded}
+          <div class="pt-1" transition:slide>
+            <p class="mb-1">{$t('wish.import.wishTally')}</p>
+            <p>
+              {$t('wish.import.wishTallyCollected.0')} 5<Icon size={0.8} path={mdiStar} className="mb-1" />
+              {$t('wish.import.wishTallyCollected.1')} 4<Icon size={0.8} path={mdiStar} className="mb-1" />
+              {$t('wish.import.wishTallyCollected.2')}
+            </p>
+          </div>
+        {/if}
+      </div>
       <p class="mt-4">{$t('wish.import.importNotice1')}</p>
       <p>{$t('wish.import.importNotice2')}</p>
       <p class="font-semibold">{$t('wish.import.saveData')}</p>

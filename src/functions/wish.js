@@ -67,7 +67,7 @@ export function process(id) {
       image,
       total: 0,
       legendary: [],
-      rarePity: [0,0,0,0,0,0,0,0,0,0],
+      rarePity: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       rare: {
         character: [],
         weapon: [],
@@ -89,6 +89,7 @@ export function process(id) {
   let striped = false;
   let startBanner = false;
   let currentBannerIndex = -1;
+  let hasManualInput = false;
 
   for (let i = 0; i < pullData.length; i++) {
     const pull = pullData[i];
@@ -154,6 +155,10 @@ export function process(id) {
       newPull.end = true;
     }
 
+    if (pull.manualInput === true) {
+      hasManualInput = true;
+    }
+
     newPull.striped = striped;
     startBanner = false;
 
@@ -163,5 +168,6 @@ export function process(id) {
   return {
     pulls: currentPulls,
     banner: selectedBanners,
-  }
+    hasManualInput,
+  };
 }

@@ -1,23 +1,31 @@
 <script>
   import { t } from 'svelte-i18n';
 
-  import { mdiLoading, mdiPencil, mdiStar } from '@mdi/js';
+  import { mdiCheckCircleOutline, mdiLoading, mdiPencil, mdiStar } from '@mdi/js';
   import Icon from './Icon.svelte';
   import Button from './Button.svelte';
   import Checkbox from '../components/Checkbox.svelte';
 
   import { exportToExcel } from '../functions/export';
+  import { submitWishTally } from '../functions/wishTally';
   import { pushToast } from '../stores/toast';
 
   export let setManualInput;
   export let settings;
 
   let loadingExport = false;
+  let wishTallySubmitted = false;
 
   let enableManual = settings.manualInput;
 
   function toggleManual() {
     setManualInput(enableManual);
+  }
+
+  function submitWish() {
+    submitWishTally();
+    pushToast($t('wish.help.wishTallyThankyou'));
+    wishTallySubmitted = true;
   }
 
   async function exportFile() {
@@ -42,6 +50,21 @@
       {$t(loadingExport ? 'wish.help.exporting' : 'wish.help.export')}
     </Button>
     <!-- <Button disabled={loadingExport}>{$t('wish.help.import')}</Button> -->
+  </div>
+  <h1 class="font-display text-white text-xl mt-8 mb-2">{$t('wish.help.wishTallyTitle')}</h1>
+  <div class="text-white p-2 bg-background rounded-xl">
+    <p class="mb-1">{$t('wish.help.wishTally')}</p>
+    <p class="mb-1">
+      {$t('wish.help.wishTallyCollected.0')} 5<Icon size={0.8} path={mdiStar} className="mb-1" />
+      {$t('wish.help.wishTallyCollected.1')} 4<Icon size={0.8} path={mdiStar} className="mb-1" />
+      {$t('wish.help.wishTallyCollected.2')}
+    </p>
+    <Button className="mr-2" disabled={wishTallySubmitted} on:click={submitWish}>
+      {#if wishTallySubmitted}
+        <Icon path={mdiCheckCircleOutline} size={0.8} />
+      {/if}
+      {$t('wish.help.wishTallySubmit')}
+    </Button>
   </div>
   <h1 class="font-display text-white text-xl mt-8 mb-2">{$t('wish.help.manualTitle')}</h1>
   <div class="text-white p-2 bg-background rounded-xl">

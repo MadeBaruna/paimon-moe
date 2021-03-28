@@ -39,24 +39,17 @@
   let rareEdit = 0;
 
   let showRarity = [true, true, false];
+  let sortedPull = [];
 
   $: path = `wish-counter-${id}`;
   $: if ($fromRemote) {
     readLocalData();
   }
-  $: sortedPull = pulls
-    .slice()
-    .filter((e) => {
-      if (e.type === 'character') {
-        return showRarity[5 - characters[e.id].rarity];
-      } else if (e.type === 'weapon') {
-        return showRarity[5 - weaponList[e.id].rarity];
-      }
-    })
-    .reverse();
+  $: showRarity, pulls, filterRarity();
 
   onMount(() => {
     readLocalData();
+    filterRarity();
   });
 
   function toggleDetail() {
@@ -65,6 +58,27 @@
 
   function toggleShowRarity(index) {
     showRarity[index] = !showRarity[index];
+  }
+
+  function filterRarity() {
+    const sorted = [];
+    const reversedPulls = pulls.slice();
+    for (let i = reversedPulls.length - 1; i >= 0; i--) {
+      const e = reversedPulls[i];
+      if (e.type === 'character' && showRarity[5 - characters[e.id].rarity]) {
+        sorted.push({
+          index: i,
+          ...e,
+        });
+      } else if (e.type === 'weapon' && showRarity[5 - weaponList[e.id].rarity]) {
+        sorted.push({
+          index: i,
+          ...e,
+        });
+      }
+    }
+
+    sortedPull = sorted;
   }
 
   function openAddModal(pity) {
@@ -120,7 +134,7 @@
   }
 
   function editPullDetail(index, updatePull) {
-    const updated = sortedPull;
+    const updated = pulls.slice();
     updated[index] = updatePull;
     pulls = updated;
 
@@ -129,8 +143,9 @@
   }
 
   function deletePullDetail(index) {
-    sortedPull.splice(index, 1);
-    pulls = sortedPull;
+    const updated = pulls.slice();
+    updated.splice(index, 1);
+    pulls = updated;
 
     closeModal();
     saveData();
@@ -361,8 +376,8 @@
           <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">Time</th>
           <th class="border-b border-gray-700 text-gray-400 font-display text-right">Pity</th>
         </tr>
-        {#each sortedPull as pull, index}
-          <tr on:click={manualInput ? () => openEditModal(index, pull.type, pull.id, pull.time, pull.pity) : () => {}}>
+        {#each sortedPull as pull}
+          <tr on:click={manualInput ? () => openEditModal(pull.index, pull.type, pull.id, pull.time, pull.pity) : () => {}}>
             {#if pull.type === 'character'}
               <td
                 class={`border-b border-gray-700 py-1 pl-2 font-semibold ${

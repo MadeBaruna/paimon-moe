@@ -49,6 +49,7 @@
       id: name.id,
       time: dayjs(time).unix(),
       pity,
+      manualInput: true,
     };
 
     addPullDetail(pull);
@@ -60,6 +61,7 @@
       id: name.id,
       time: dayjs(time).unix(),
       pity,
+      manualInput: true,
     };
 
     editPullDetail(pull);
