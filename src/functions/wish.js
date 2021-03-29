@@ -101,10 +101,12 @@ export function process(id) {
 
       if (nextBanner === undefined) {
         pushToast('Something went wrong, please leave a message on Discord 😅', 'error');
-        Sentry.captureException(new Error('failed to get current banner'), {
+        Sentry.captureMessage('failed to get current banner', {
           contexts: {
-            pull,
-            path,
+            pullData: {
+              pull,
+              path,
+            },
           },
         });
         return null;
