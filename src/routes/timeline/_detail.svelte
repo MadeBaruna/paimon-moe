@@ -40,7 +40,7 @@
   </p>
   {#if event.url}
     <p class="my-2 overflow-auto mt-4">
-      <a class="text-primary hover:underline" target="__blank" href={event.url}>{event.url}</a>
+      <a class="text-primary hover:underline" target="_blank" href={event.url}>{event.url}</a>
     </p>
   {/if}
   {#if event.description}

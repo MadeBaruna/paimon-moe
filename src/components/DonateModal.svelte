@@ -14,14 +14,14 @@
   </p>
   <p class="mt-1">
     You can also contributing to the project on <a
-      target="__blank"
+      target="_blank"
       class="text-primary hover:underline"
       href="https://github.com/MadeBaruna/paimon-moe"
       alt="github">Github</a
     >
   </p>
   <div class="flex flex-col md:flex-row mt-2">
-    <a class="flex-1 mb-1 md:mb-0 md:mr-1" href="https://ko-fi.com/baruna" target="__blank">
+    <a class="flex-1 mb-1 md:mb-0 md:mr-1" href="https://ko-fi.com/baruna" target="_blank">
       <Button className="w-full flex-1 flex flex-col items-center">
         <div class="flex h-8 mb-1 items-center">
           <img class="h-6 mr-1" src="/images/donation/ko-fi.png" alt="Ko-fi" />
@@ -30,7 +30,7 @@
         <span class="font-semibold">Support me on Ko-fi</span>
       </Button>
     </a>
-    <a class="flex-1 md:ml-1" href="https://trakteer.id/baruna" target="__blank">
+    <a class="flex-1 md:ml-1" href="https://trakteer.id/baruna" target="_blank">
       <Button className="w-full flex flex-col items-center">
         <div class="flex mb-1 items-center">
           <img class="h-8 mr-1" src="/images/donation/trakteer.png" alt="Trakteer" />

@@ -362,7 +362,7 @@
               <span class="text-gray-400 text-xs text-center block">{$t('todo.change')}</span>
               <span class="mt-2 text-sm block text-center">
                 {$t('todo.approximation')}
-                <a class="text-primary font-semibold" target="__blank" href="https://discord.gg/ydwdYmr"
+                <a class="text-primary font-semibold" target="_blank" href="https://discord.gg/ydwdYmr"
                   >Genshin Impact Data Gathering Discord</a
                 >
               </span>

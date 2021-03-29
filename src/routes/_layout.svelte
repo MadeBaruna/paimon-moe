@@ -62,28 +62,46 @@
     Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
   </p>
   <div class="flex mt-4 md:items-center flex-col md:flex-row">
-    <a class="text-gray-400 hover:text-primary" href="https://discord.gg/tPURAYgHV9" target="__blank">
+    <a class="text-gray-400 hover:text-primary" href="https://discord.gg/tPURAYgHV9" target="_blank">
       <Icon path={mdiDiscord} size={1.5} /> Join Our Discord
     </a>
     <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
       <span class="text-gray-500">Community Links</span>
-      <a class="text-gray-400 hover:text-primary" href="https://t.me/GenshinImpact_ID" target="__blank">
+      <a class="text-gray-400 hover:text-primary" href="https://t.me/GenshinImpact_ID" target="_blank">
         <Icon path={mdiTelegram} size={1} /> Telegram
       </a>
     </div>
     <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
       <span class="text-gray-500">Official Links</span>
       <div>
-        <a class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap" href="https://discord.gg/2UqwpAr" target="__blank">
+        <a
+          class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap"
+          href="https://discord.gg/2UqwpAr"
+          target="_blank"
+        >
           <Icon path={mdiDiscord} size={1} /> Discord
         </a>
-        <a class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap" href="https://www.facebook.com/Genshinimpact/" target="__blank">
+        <a
+          class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap"
+          href="https://www.facebook.com/Genshinimpact/"
+          target="_blank"
+        >
           <Icon path={mdiFacebook} size={1} /> Facebook
         </a>
-        <a class="text-gray-400 hover:text-primary whitespace-no-wrap" href="https://www.reddit.com/r/Genshin_Impact/" target="__blank">
+        <a
+          class="text-gray-400 hover:text-primary whitespace-no-wrap"
+          href="https://www.reddit.com/r/Genshin_Impact/"
+          target="_blank"
+        >
           <Icon path={mdiReddit} size={1} /> Reddit
         </a>
       </div>
+    </div>
+    <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center h-full md:pl-4 md:border-l border-gray-600">
+      <a class="text-gray-400 hover:text-primary" href="/privacy-policy">Privacy Policy</a>
+      <a class="text-gray-400 hover:text-primary" href="https://github.com/MadeBaruna/paimon-moe" target="_blank">
+        Github
+      </a>
     </div>
   </div>
 </div>
