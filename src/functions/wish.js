@@ -105,14 +105,6 @@ export function process(id) {
 
       if (nextBanner === undefined) {
         pushToast(t('wish.errorBanner'), 'error');
-        Sentry.captureMessage('failed to get current banner', {
-          contexts: {
-            pullData: {
-              pull,
-              path,
-            },
-          },
-        });
         return null;
       }
 

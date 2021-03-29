@@ -139,14 +139,6 @@
 
         if (currentBanner === undefined) {
           pushToast($t('wish.errorBanner'), 'error');
-          Sentry.captureMessage('failed to get current banner', {
-            contexts: {
-              pullData: {
-                pull,
-                path,
-              },
-            },
-          });
           return;
         }
 
