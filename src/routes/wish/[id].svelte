@@ -242,90 +242,92 @@
 
     await tick();
 
-    new Chart(pieChart, {
-      type: 'pie',
-      data: {
-        labels: ['Total Pulls', 'Total 5*', 'Total 4*'],
-        datasets: [
-          {
-            label: 'total',
-            data: [currentPulls.length, allLegendary.length, allRare.length],
-            backgroundColor: ['rgba(107, 161, 192, 0.7)', 'rgba(255, 177, 63, 0.7)', 'rgba(210, 143, 214, 0.7)'],
-            borderColor: ['#6BA1C0', '#FFB13F', '#D28FD6'],
-            borderWidth: 1,
+    setTimeout(() => {
+      new Chart(pieChart, {
+        type: 'pie',
+        data: {
+          labels: ['Total Pulls', 'Total 5*', 'Total 4*'],
+          datasets: [
+            {
+              label: 'total',
+              data: [currentPulls.length, allLegendary.length, allRare.length],
+              backgroundColor: ['rgba(107, 161, 192, 0.7)', 'rgba(255, 177, 63, 0.7)', 'rgba(210, 143, 214, 0.7)'],
+              borderColor: ['#6BA1C0', '#FFB13F', '#D28FD6'],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          legend: {
+            display: false,
           },
-        ],
-      },
-      options: {
-        responsive: true,
-        legend: {
-          display: false,
+          tooltips: {
+            mode: 'dataset',
+          },
         },
-        tooltips: {
-          mode: 'dataset',
-        },
-      },
-    });
+      });
 
-    new Chart(bannerChart, {
-      type: 'bar',
-      data: {
-        labels,
-        datasets: [
-          {
-            label: '5* pulls',
-            data: totalLegendaryEachBanner,
-            backgroundColor: 'rgba(255, 177, 63, 0.7)',
-            borderColor: '#FFB13F',
-            borderWidth: 1,
-          },
-          {
-            label: '4* pulls',
-            data: totalRareEachBanner,
-            backgroundColor: 'rgba(210, 143, 214, 0.7)',
-            borderColor: '#D28FD6',
-            borderWidth: 1,
-          },
-          {
-            label: 'Total pulls',
-            data: totalEachBanner,
-            backgroundColor: backgrounds,
-            borderColor: borders,
-            borderWidth: 1,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        legend: {
-          display: false,
-        },
-        tooltips: {
-          mode: 'index',
-          intersect: false,
-          callbacks: {
-            title: (tooltipItem) => {
-              return selectedBanners[tooltipItem[0].index].name;
+      new Chart(bannerChart, {
+        type: 'bar',
+        data: {
+          labels,
+          datasets: [
+            {
+              label: '5* pulls',
+              data: totalLegendaryEachBanner,
+              backgroundColor: 'rgba(255, 177, 63, 0.7)',
+              borderColor: '#FFB13F',
+              borderWidth: 1,
             },
-            label: (tooltipItem, data) => {
-              const label = data.datasets[tooltipItem.datasetIndex].label;
-              const value =
-                tooltipItem.datasetIndex === 2
-                  ? data.datasets[0].data[tooltipItem.index] +
-                    data.datasets[1].data[tooltipItem.index] +
-                    data.datasets[2].data[tooltipItem.index]
-                  : tooltipItem.value;
-              return `${label}: ${value}`;
+            {
+              label: '4* pulls',
+              data: totalRareEachBanner,
+              backgroundColor: 'rgba(210, 143, 214, 0.7)',
+              borderColor: '#D28FD6',
+              borderWidth: 1,
+            },
+            {
+              label: 'Total pulls',
+              data: totalEachBanner,
+              backgroundColor: backgrounds,
+              borderColor: borders,
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          legend: {
+            display: false,
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              title: (tooltipItem) => {
+                return selectedBanners[tooltipItem[0].index].name;
+              },
+              label: (tooltipItem, data) => {
+                const label = data.datasets[tooltipItem.datasetIndex].label;
+                const value =
+                  tooltipItem.datasetIndex === 2
+                    ? data.datasets[0].data[tooltipItem.index] +
+                      data.datasets[1].data[tooltipItem.index] +
+                      data.datasets[2].data[tooltipItem.index]
+                    : tooltipItem.value;
+                return `${label}: ${value}`;
+              },
             },
           },
+          scales: {
+            yAxes: [{ stacked: true, gridLines: { color: '#2d3748' } }],
+            xAxes: [{ stacked: true }],
+          },
         },
-        scales: {
-          yAxes: [{ stacked: true, gridLines: { color: '#2d3748' } }],
-          xAxes: [{ stacked: true }],
-        },
-      },
-    });
+      });
+    }, 500);
   }
 
   function sortPulls() {
