@@ -162,6 +162,21 @@
       "totalThisBanner": "Total pull di banner ini",
       "worth": "Setara dengan",
       "loading": "Loading... (Kalau tidak selesai-selesai, ganti server di halaman settings)"
+    },
+    "tally": {
+      "title": "Perhitungan Pity Wish",
+      "subtitle": "Rata-rata pity dari kiriman pengguna paimon.moe",
+      "update": "Diupdate",
+      "summoned": "Pulang",
+      "fromFiveStar": "dari semua 5*",
+      "name": "Nama",
+      "total": "Total",
+      "wishTotal": "Total Wish",
+      "worth": "Bernilai",
+      "weapon": "Senjata",
+      "character": "Karakter",
+      "error": "Data belum tersedia 😞",
+      "pity": "Pity"
     }
   },
   "calculator": {

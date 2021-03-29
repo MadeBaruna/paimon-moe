@@ -162,6 +162,21 @@
       "totalThisBanner": "Total pull on this banner",
       "worth": "Worth",
       "loading": "Loading... (If this stuck, change your server on settings page)"
+    },
+    "tally": {
+      "title": "Wish Tally",
+      "subtitle": "Global average pity from paimon.moe users submission",
+      "update": "Updated",
+      "summoned": "Summoned",
+      "fromFiveStar": "from all 5*",
+      "name": "Name",
+      "total": "Total",
+      "wishTotal": "Wish Total",
+      "worth": "Worth",
+      "weapon": "Weapons",
+      "character": "Characters",
+      "error": "Data is not available yet 😞",
+      "pity": "Pity"
     }
   },
   "calculator": {
