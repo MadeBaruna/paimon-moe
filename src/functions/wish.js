@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import { t as $t } from 'svelte-i18n'
 
 import { getAccountPrefix } from '../stores/account';
 import { getTimeOffset } from '../stores/server';
@@ -7,6 +8,9 @@ import { banners } from '../data/banners';
 import { weaponList } from '../data/weaponList';
 import { characters } from '../data/characters';
 import { pushToast } from '../stores/toast';
+
+let t;
+$t.subscribe(f => t = f)
 
 const bannerTypes = {
   'character-event': 'characters',
@@ -100,7 +104,7 @@ export function process(id) {
       const nextBanner = getNextBanner(pull.time, currentBannerIndex, selectedBanners);
 
       if (nextBanner === undefined) {
-        pushToast('Something went wrong, please leave a message on Discord 😅', 'error');
+        pushToast(t('wish.errorBanner'), 'error');
         Sentry.captureMessage('failed to get current banner', {
           contexts: {
             pullData: {

@@ -22,7 +22,7 @@ export const pushToast = (msg = '', type = 'default') => {
     ];
     setTimeout(() => {
       unshiftToast();
-    }, 3500);
+    }, 5000);
 
     return updatedToasts;
   });
