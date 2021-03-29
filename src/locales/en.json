@@ -51,7 +51,11 @@
       "success": "Import success 😀!",
       "wishTallyCheck": "Submit pity for global wish tally",
       "wishTally": "We are doing a global wish tally! You can submit your wish tally to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "faqs": {
         "title": "Import Wish History FAQ",
         "q1": "How does it work?",
@@ -60,7 +64,7 @@
         "a2": "Paimon.moe uses the same request that Genshin Impact use to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
         "q3": "Can you hack my account then?",
         "a3": [
-          "Paimon.moe never saves anything related to your account (even your UID or nickname), so the answer is no. This project is open source on",
+          "Paimon.moe never saves private information like your account credentials (even your UID or nickname), so the answer is no. This project is open source on",
           "; I'm not planning to damage my reputation by hacking other people's account."
         ],
         "q4": "Hey I checked the requests and stuff, but why does it request to your domain instead of MiHoYo API?",
@@ -70,7 +74,11 @@
           "here"
         ],
         "q5": "Do you store my temporary key or wish history?",
-        "a5": "Paimon.moe will never store your keys, and uses HTTPS to pass your URL to a CORS proxy to make the CORS work. All your wish history is saved on your device only (or your Google Drive if you turned on sync). Paimon.moe does not save anything to the server (yes, anything).",
+        "a5": [
+          "Paimon.moe will never store your keys, and uses HTTPS to pass your URL to a CORS proxy to make the CORS work. Paimon.moe will save your 4* pity, 5* pity, and 5* wish information if you submit your wish for our global wish tally (no private information saved! please check",
+          "Privacy Policy",
+          "for more information). You can uncheck submit wish tally to disable wish submission. Then all your wish history is saved on your device (or your Google Drive if you turned on sync)."
+        ],
         "q6": "I've done all the steps, but I got some API error?",
         "a6": "Make sure you copy all the text (hold and press Select All for mobile devices); maybe you missed some text that are needed for the importer to work."
       },
@@ -116,7 +124,11 @@
       "exportFinish": "Export success, please wait until the browser download the file!",
       "wishTallyTitle": "Submit Wish Tally",
       "wishTally": "We are doing a global wish tally! You can submit your wish tally to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "wishTallySubmit": "Submit Wish Tally",
       "wishTallyThankyou": "Thankyou for participating!",
       "manualTitle": "Manual Input Setting",
@@ -130,13 +142,22 @@
         "whenYouGet": "when you get",
         "p1": "It will automatically add the lifetime pulls,",
         "and": "and",
-        "p2": ["When the", "pity reaches 10, it will automatically be reset to 0"],
-        "p3": ["When the", "pity reaches 90, it will automatically be reset to 0"],
+        "p2": [
+          "When the",
+          "pity reaches 10, it will automatically be reset to 0"
+        ],
+        "p3": [
+          "When the",
+          "pity reaches 90, it will automatically be reset to 0"
+        ],
         "p4": [
           "After a 10x Wish, press",
           "but keep in mind that the pity counter might not be accurate, because there is no way to tell when the drop occured (maybe you got it on the 1st or even the 10th pull). To ensure that the counter is still accurate, you need to check the history table and add it one-by-one like you do 1x Wishes."
         ],
-        "p5": ["You can also press the", "button to edit the values manually!"],
+        "p5": [
+          "You can also press the",
+          "button to edit the values manually!"
+        ],
         "p6": [
           "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a",
           "or",
@@ -220,7 +241,11 @@
       "calculateTalent": "Calculate Talent Material?",
       "inputTalentLevel": "Input the 1st, 2nd & 3rd current talent level",
       "inputTalentNotice": "If it has different color, substract it by 3",
-      "inputTalent": ["1st talent lvl", "2nd talent lvl", "3rd talent lvl"],
+      "inputTalent": [
+        "1st talent lvl",
+        "2nd talent lvl",
+        "3rd talent lvl"
+      ],
       "talentToLevel": "to level",
       "calculate": "Calculate",
       "unknownInformation": "There are some unknown information",
@@ -283,7 +308,10 @@
   "todo": {
     "title": "Todo List",
     "summary": "Summary",
-    "empty": ["Nothing to do yet 😀", "Add some from the Items page or the Calculator!"],
+    "empty": [
+      "Nothing to do yet 😀",
+      "Add some from the Items page or the Calculator!"
+    ],
     "farmableToday": "Farmable Today",
     "resin": "Resin needed",
     "based": "Based on AR:{ar} and WL:{wl}",

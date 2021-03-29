@@ -51,7 +51,11 @@
       "success": "Import berhasil 😀!",
       "wishTallyCheck": "Submit pity untuk perhitungan pity global",
       "wishTally": "Kita sedang melakukan perhitungan pity global! Kamu bisa mensubmit pity mu untuk berpartisipasi. Semua data pity akan dikumpulkan untuk mengetahui berapa pity rata-rata pengguna paimon.moe.",
-      "wishTallyCollected": ["Yang dikumpulkan:", "dan", "pity dari riwayat wish mu"],
+      "wishTallyCollected": [
+        "Yang dikumpulkan:",
+        "dan",
+        "pity dari riwayat wish mu"
+      ],
       "faqs": {
         "title": "Import Riwayat Wish FAQS",
         "q1": "Cara kerjanya gimana?",
@@ -70,7 +74,11 @@
           "sini"
         ],
         "q5": "Apakah kamu menyimpan key sementara ku atau riwayat history ku?",
-        "a5": "Paimon.moe tidak menyimpan key mu, dan menggunakan HTTPS untuk mengirim link mu ke proxy cors sehingga bisa digunakan. Semua data riwayat wish mu disimpan pada device masing-masing (atau google drive mu jika kamu menyalakan sync di setting). Paimon.moe tidak menyimpan apapun di server (ya apapun)",
+        "a5": [
+          "Paimon.moe tidak menyimpan key mu, dan menggunakan HTTPS untuk mengirim link mu ke proxy cors sehingga bisa digunakan. Paimon.moe akan menyimpan pity 4*, pity 5*, dan informasi wish 5* jika kamu mensubmit wish mu ke perhitungan pity global paimon.moe (tidak ada data pribadi yang disimpan! harap cek",
+          "Privacy Policy",
+          "untuk info lebih lanjut). Kamu bisa tidak mencentang submit pity untuk tidak mengirim data wish. Kemudian semua data riwayat wish mu disimpan pada device masing-masing (atau google drive mu jika kamu menyalakan sync di setting)."
+        ],
         "q6": "Saya udah coba step-step nya, tapi kok malah dapet API error?",
         "a6": "Coba pastiin sudah di copy semua text nya (coba select all aja text nya, jangan di potong-potong), mungkin ada yang kelewatan, jadi ada yang terpotong"
       },
@@ -116,7 +124,11 @@
       "exportFinish": "Export berhasil, harap tunggu sampai file nya sudah ter-download!",
       "wishTallyTitle": "Submit Perhitungan Pity Wish",
       "wishTally": "Kita sedang melakukan perhitungan pity global! Kamu bisa mensubmit pity mu untuk berpartisipasi. Semua data pity akan dikumpulkan untuk mengetahui berapa pity rata-rata pengguna paimon.moe.",
-      "wishTallyCollected": ["Yang dikumpulkan:", "dan", "pity dari riwayat wish mu"],
+      "wishTallyCollected": [
+        "Yang dikumpulkan:",
+        "dan",
+        "pity dari riwayat wish mu"
+      ],
       "wishTallySubmit": "Submit Perhitungan Pity Wish",
       "wishTallyThankyou": "Terimakasih sudah berpartisipasi!",
       "manualTitle": "Pengaturan Manual Input",
@@ -130,13 +142,22 @@
         "whenYouGet": "ketika kamu mendapatkan",
         "p1": "Itu akan otomatis menambahkan total pull",
         "and": "dan",
-        "p2": ["Ketika", "pity mencapai 10, angkanya akan otomatis reset menjadi 0"],
-        "p3": ["Ketika", "pity mencapai 90, angkanya akan otomatis reset menjadi 0"],
+        "p2": [
+          "Ketika",
+          "pity mencapai 10, angkanya akan otomatis reset menjadi 0"
+        ],
+        "p3": [
+          "Ketika",
+          "pity mencapai 90, angkanya akan otomatis reset menjadi 0"
+        ],
         "p4": [
           "Ketika kamu melakukan wish x10 pull, tekan",
           "tapi counter pity nya tidak akan akurat, karena tidak tahu kapan drop nya terjadi (bisa saja kamu dapat nya saat pull ke 1 atau bisa saja ke 10). Untuk membuat counter nya akurat, kamu perlu mengecek nya di tabel riwayat wish mu dan tabahkan 1-per-1 seperti kamu melakukan 1x pull wish."
         ],
-        "p5": ["Kamu juga bisa menekan", "untuk mengedit nilai nya secara manual!"],
+        "p5": [
+          "Kamu juga bisa menekan",
+          "untuk mengedit nilai nya secara manual!"
+        ],
         "p6": [
           "Tekan tombol panah dibawah untuk melihat detail riwayat mu. Sebuah form akan muncul ketika kamu mendapat",
           "atau",
@@ -220,7 +241,11 @@
       "calculateTalent": "Hitung Material Talent?",
       "inputTalentLevel": "Masukkan level talent ke 1, 2 dan 3 saat ini",
       "inputTalentNotice": "Jika warna level nya berbeda, kurangi 3",
-      "inputTalent": ["lvl talent ke 1", "lvl talent ke 2", "lvl talent ke 3"],
+      "inputTalent": [
+        "lvl talent ke 1",
+        "lvl talent ke 2",
+        "lvl talent ke 3"
+      ],
       "talentToLevel": "ke level",
       "calculate": "Hitung",
       "unknownInformation": "Ada beberapa informasi yang tidak diketahui",
@@ -283,7 +308,10 @@
   "todo": {
     "title": "Todo List",
     "summary": "Summary",
-    "empty": ["Belum ada yang ditambahkan 😀", "Tambahkan todo dari halaman Items atau dari Kalkulator!"],
+    "empty": [
+      "Belum ada yang ditambahkan 😀",
+      "Tambahkan todo dari halaman Items atau dari Kalkulator!"
+    ],
     "farmableToday": "Bisa di farm hari ini",
     "resin": "resin diperlukan",
     "based": "Berdasarkan AR:{ar} and WL:{wl}",

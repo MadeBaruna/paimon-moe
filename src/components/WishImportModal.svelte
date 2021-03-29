@@ -583,13 +583,17 @@
           >{$t('wish.import.faqs.a4.1')}
           <a
             class="text-primary hover:underline"
-            href="https://gist.github.com/MadeBaruna/64785ae992c924e0cbfe575e404b7155"
+            href="https://github.com/MadeBaruna/paimon-moe-api"
             target="__blank">{$t('wish.import.faqs.a4.2')}</a
           >
         </p>
         <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q5')}</p>
         <p class="text-gray-400">
-          {$t('wish.import.faqs.a5')}
+          {$t('wish.import.faqs.a5.0')}
+          <a class="text-primary hover:underline" href="/privacy-policy" target="__blank"
+            >{$t('wish.import.faqs.a5.1')}</a
+          >
+          {$t('wish.import.faqs.a5.2')}
           <!-- If you don't want any passing around your url, you can use the small importer app to process the wish
           history on your local PC (PC Local option) -->
         </p>
@@ -700,6 +704,7 @@
       </div>
     </div>
   </div>
+  <div class="pb-16 md:pb-0" />
 {/if}
 
 <style>
