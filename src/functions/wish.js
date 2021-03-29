@@ -104,6 +104,7 @@ export function process(id) {
         Sentry.captureException(new Error('failed to get current banner'), {
           contexts: {
             pull,
+            path,
           },
         });
         return null;
