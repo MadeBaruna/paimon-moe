@@ -381,5 +381,17 @@
     ],
     "subtitleNotCollect": "Apa yang paimon.moe TIDAK kumpulkan",
     "notCollect": "Paimon.moe tidak menyimpan password, uid, username, email, temporary keys, atau feedback url. Jika kamu tertarik, projek nya open source dan kamu bisa mengecek kode nya di https://github.com/MadeBaruna/paimon-moe-api dan https://github.com/MadeBaruna/paimon-moe"
+  },
+  "sync": {
+    "message": "Data yang tersimpan pada browser ini tidak sama dengan yang tersimpan pada Google Drive!",
+    "googleDriveData": "Data Google Drive",
+    "localData": "Data Pada Browser Ini",
+    "older": "LEBIH LAMA",
+    "newer": "LEBIH BARU",
+    "useGoogleDriveData": "Gunakan Data Dari Google Drive",
+    "useLocalData": "Gunakan Data Dari Browser Ini",
+    "download": "Download Kedua Data",
+    "lastModified": "Terakhir dimodifikasi",
+    "or": "ATAU"
   }
 }

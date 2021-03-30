@@ -381,5 +381,17 @@
     ],
     "subtitleNotCollect": "What paimon.moe NOT collect",
     "notCollect": "Paimon.moe never save any password, uid, username, email, temporary keys, or feedback url. If you are interested, the project is open source and you can check the source code at https://github.com/MadeBaruna/paimon-moe-api and https://github.com/MadeBaruna/paimon-moe"
+  },
+  "sync": {
+    "message": "Your local data in this browser is conflicting with the ones stored in the Google Drive!",
+    "googleDriveData": "Google Drive Data",
+    "localData": "This Browser Local Data",
+    "older": "OLDER",
+    "newer": "NEWER",
+    "useGoogleDriveData": "Use Data From Google Drive",
+    "useLocalData": "Use This Browser Local Data",
+    "download": "Download Both Data",
+    "lastModified": "Last modified",
+    "or": "OR"
   }
 }
