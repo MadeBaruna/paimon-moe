@@ -20,6 +20,11 @@
     minimumFractionDigits: 0,
   });
 
+  const numberFormatSecondary = Intl.NumberFormat('en', {
+    maximumFractionDigits: 1,
+    minimumFractionDigits: 0,
+  });
+
   // prettier-ignore
   const legendaryMapping = {
     character: [
@@ -319,26 +324,26 @@
             {numberFormat.format(legendary.percentage)}%
           </p>
           <div class="flex flex-col flex-1">
-            <p class="font-semibold">
-              <Icon path={mdiStar} />
-              <Icon path={mdiStar} />
-              <Icon path={mdiStar} />
-              <Icon path={mdiStar} />
-              <Icon path={mdiStar} />
+            <p class="font-semibold whitespace-no-wrap">
+              <Icon path={mdiStar} size={0.8} />
+              <Icon path={mdiStar} size={0.8} />
+              <Icon path={mdiStar} size={0.8} />
+              <Icon path={mdiStar} size={0.8} />
+              <Icon path={mdiStar} size={0.8} />
             </p>
             <p>Total {numberFormat.format(legendary.total)}</p>
           </div>
         </div>
         <div class="flex items-center justify-center bg-background rounded-xl px-4 py-2 relative flex-1 text-rare-from">
           <p class="font-black mr-2 text-5xl leading-10" style="margin-top: 4px;">
-            {numberFormat.format(rare.percentage)}%
+            {numberFormatSecondary.format(rare.percentage)}%
           </p>
           <div class="flex flex-col flex-1">
-            <p class="font-semibold">
-              <Icon path={mdiStar} />
-              <Icon path={mdiStar} />
-              <Icon path={mdiStar} />
-              <Icon path={mdiStar} />
+            <p class="font-semibold whitespace-no-wrap">
+              <Icon path={mdiStar} size={0.8} />
+              <Icon path={mdiStar} size={0.8} />
+              <Icon path={mdiStar} size={0.8} />
+              <Icon path={mdiStar} size={0.8} />
             </p>
             <p>Total {numberFormat.format(rare.total)}</p>
           </div>
