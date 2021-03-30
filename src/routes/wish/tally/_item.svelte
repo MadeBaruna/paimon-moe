@@ -302,7 +302,7 @@
                       {type === 'character' ? characters[feat].name : weaponList[feat].name}
                       <span class="text-gray-400">{$t('wish.tally.summoned')}</span>
                     </p>
-                    <p class="text-gray-400">{numberFormat.format(featuredValues[i].percentage)}% from all 5*</p>
+                    <p class="text-gray-400">{numberFormat.format(featuredValues[i].percentage)}% {$t('wish.tally.fromFiveStar')}</p>
                   </td>
                 </tr>
               {/each}
