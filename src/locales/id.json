@@ -31,6 +31,7 @@
       "nonew": "Tdk ada wish baru",
       "importNotice1": "Wish yang diimport akan ditambah atau dihapus sesuai dengan data yang sudah pernah diimport",
       "importNotice2": "Jika kamu tidak mempunyai data yang tersimpan sebelumnya, wish pertama akan dihitung sebagai pity 1.",
+      "importNotice3": "Harap diingat jika kamu mengimport akun yang berbeda, pastikan sudah memisahkan akun di halaman setting jika tidak ingin data mu tercampur!",
       "saveData": "Simpan data?",
       "reCalculating": "Menghitung pity...",
       "processing": "Memproses",
@@ -355,8 +356,9 @@
     "thanks": "Thanks😁!",
     "modal": {
       "notice": "Semua todo dan riwayat wish akan dihapus",
-      "cancel": "Cancel",
-      "delete": "Delete",
+      "backup": "Kamu bisa backup dulu riwayat history dengan mengexport nya ke file excel!",
+      "cancel": "Batal",
+      "delete": "Hapus",
       "reset": "Reset"
     }
   },

@@ -31,6 +31,7 @@
       "nonew": "No New Wishes",
       "importNotice1": "Imported wishes will be appended or replaced accordingly to existing data",
       "importNotice2": "If you don't have any data saved before, first wish will be counted as pity 1",
+      "importNotice3": "Please note if you are importing a different account, please make sure to separate your account on the settings page, or your data will be mixed up!",
       "saveData": "Save wish data?",
       "reCalculating": "Re-calculating pity...",
       "processing": "Processing",
@@ -355,6 +356,7 @@
     "thanks": "Thanks😁!",
     "modal": {
       "notice": "All Todo and Wish history data will be deleted",
+      "backup": "You can backup your wish history first by exporting it to an excel file!",
       "cancel": "Cancel",
       "delete": "Delete",
       "reset": "Reset"

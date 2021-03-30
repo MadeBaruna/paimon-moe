@@ -60,9 +60,9 @@
 
   let url;
 
-  let processingLog = false;
+  let processingLog = true;
   let fetchingWishes = false;
-  let finishedProcessingLog = false;
+  let finishedProcessingLog = true;
   let calculatingPity = false;
 
   let cancelled = false;
@@ -511,7 +511,8 @@
         {/if}
       </div>
       <p class="mt-4">{$t('wish.import.importNotice1')}</p>
-      <p>{$t('wish.import.importNotice2')}</p>
+      <p class="mb-1">{$t('wish.import.importNotice2')}</p>
+      <p class="text-red-300 mb-1">{$t('wish.import.importNotice3')}</p>
       <p class="font-semibold">{$t('wish.import.saveData')}</p>
     {:else if calculatingPity}
       <Icon path={mdiLoading} spin color="white" />

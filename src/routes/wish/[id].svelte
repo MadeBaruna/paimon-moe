@@ -22,7 +22,7 @@
   import { weaponList } from '../../data/weaponList';
   import { getAccountPrefix } from '../../stores/account';
   import { fromRemote, readSave } from '../../stores/saveManager';
-  import { getTimeOffset } from '../../stores/server';
+  import { getTimeOffset, server } from '../../stores/server';
   import { pushToast } from '../../stores/toast';
 
   Chart.defaults.global.defaultFontColor = '#cbd5e0';
@@ -41,7 +41,7 @@
     beginners: 'beginners',
   };
 
-  let errorProcessingPull = '';
+  let errorProcessingPull = null;
 
   const bannerType = bannerTypes[id];
   let bannerChart;
@@ -141,7 +141,7 @@
 
         if (currentBanner === undefined) {
           console.log('error banner here', JSON.stringify(pull));
-          errorProcessingPull = JSON.stringify(pull);
+          errorProcessingPull = pull;
           pushToast($t('wish.errorBanner'), 'error');
           return;
         }
@@ -407,9 +407,15 @@
   </div>
   {#if loading}
     <div class="text-white pl-4 md:pl-8 mt-4">{$t('wish.detail.loading')}</div>
-    {#if errorProcessingPull !== ''}
-      Error when getting banner for {errorProcessingPull} 
-    {/if}
+    <div class="text-gray-400 pl-4 md:pl-8 mt-2">
+      {#if errorProcessingPull !== null}
+        Show this on Discord if still stuck:<br/>
+        Error when getting banner for<br/>
+        id: {errorProcessingPull.id}<br/>
+        time: {errorProcessingPull.time}<br/>
+        server: {$server}
+      {/if}
+    </div>
   {:else}
     <div class="flex mt-4 wrapper">
       <div class="block overflow-x-auto xl:overflow-x-visible whitespace-no-wrap px">
