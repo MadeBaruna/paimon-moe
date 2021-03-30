@@ -1,6 +1,6 @@
 <script>
   import { t } from 'svelte-i18n';
-  import { banners } from '../../../data/banners';
+  import { banners } from '../../data/banners';
   import Item from './_item.svelte';
 </script>
 
