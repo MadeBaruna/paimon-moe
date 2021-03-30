@@ -60,9 +60,9 @@
 
   let url;
 
-  let processingLog = true;
+  let processingLog = false;
   let fetchingWishes = false;
-  let finishedProcessingLog = true;
+  let finishedProcessingLog = false;
   let calculatingPity = false;
 
   let cancelled = false;
