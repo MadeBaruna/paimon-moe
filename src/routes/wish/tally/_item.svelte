@@ -11,9 +11,9 @@
   dayjs.extend(duration);
   dayjs.extend(relativeTime);
 
-  import Icon from '../../components/Icon.svelte';
-  import { characters } from '../../data/characters';
-  import { weaponList } from '../../data/weaponList';
+  import Icon from '../../../components/Icon.svelte';
+  import { characters } from '../../../data/characters';
+  import { weaponList } from '../../../data/weaponList';
 
   const numberFormat = Intl.NumberFormat('en', {
     maximumFractionDigits: 2,
