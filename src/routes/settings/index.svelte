@@ -343,7 +343,11 @@
     </p>
     {#if changelogOpen}
       <div transition:slide class="mt-4">
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/29
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/31
+- Updated wording and layout on mobile
+- Add privacy policy
+
+2021/03/29
 - Add pity wish tally submission
 - Fix edit/delete manual wish input
 
