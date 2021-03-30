@@ -41,6 +41,8 @@
     beginners: 'beginners',
   };
 
+  let errorProcessingPull = '';
+
   const bannerType = bannerTypes[id];
   let bannerChart;
   let pieChart;
@@ -138,6 +140,8 @@
         currentBanner = getNextBanner(pull.time);
 
         if (currentBanner === undefined) {
+          console.log('error banner here', JSON.stringify(pull));
+          errorProcessingPull = JSON.stringify(pull);
           pushToast($t('wish.errorBanner'), 'error');
           return;
         }
@@ -234,32 +238,32 @@
 
     await tick();
 
-    setTimeout(() => {
-      new Chart(pieChart, {
-        type: 'pie',
-        data: {
-          labels: ['Total Pulls', 'Total 5*', 'Total 4*'],
-          datasets: [
-            {
-              label: 'total',
-              data: [currentPulls.length, allLegendary.length, allRare.length],
-              backgroundColor: ['rgba(107, 161, 192, 0.7)', 'rgba(255, 177, 63, 0.7)', 'rgba(210, 143, 214, 0.7)'],
-              borderColor: ['#6BA1C0', '#FFB13F', '#D28FD6'],
-              borderWidth: 1,
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          legend: {
-            display: false,
+    new Chart(pieChart, {
+      type: 'pie',
+      data: {
+        labels: ['Total Pulls', 'Total 5*', 'Total 4*'],
+        datasets: [
+          {
+            label: 'total',
+            data: [currentPulls.length, allLegendary.length, allRare.length],
+            backgroundColor: ['rgba(107, 161, 192, 0.7)', 'rgba(255, 177, 63, 0.7)', 'rgba(210, 143, 214, 0.7)'],
+            borderColor: ['#6BA1C0', '#FFB13F', '#D28FD6'],
+            borderWidth: 1,
           },
-          tooltips: {
-            mode: 'dataset',
-          },
+        ],
+      },
+      options: {
+        responsive: true,
+        legend: {
+          display: false,
         },
-      });
+        tooltips: {
+          mode: 'dataset',
+        },
+      },
+    });
 
+    if (id === 'character-event' || id === 'weapon-event') {
       new Chart(bannerChart, {
         type: 'bar',
         data: {
@@ -319,7 +323,7 @@
           },
         },
       });
-    }, 500);
+    }
   }
 
   function sortPulls() {
@@ -403,6 +407,9 @@
   </div>
   {#if loading}
     <div class="text-white pl-4 md:pl-8 mt-4">{$t('wish.detail.loading')}</div>
+    {#if errorProcessingPull !== ''}
+      Error when getting banner for {errorProcessingPull} 
+    {/if}
   {:else}
     <div class="flex mt-4 wrapper">
       <div class="block overflow-x-auto xl:overflow-x-visible whitespace-no-wrap px">

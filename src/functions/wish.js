@@ -104,6 +104,7 @@ export function process(id) {
       const nextBanner = getNextBanner(pull.time, currentBannerIndex, selectedBanners);
 
       if (nextBanner === undefined) {
+        console.log('error banner here', JSON.stringify(pull));
         pushToast(t('wish.errorBanner'), 'error');
         return null;
       }
