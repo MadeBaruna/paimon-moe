@@ -262,7 +262,8 @@
       "title": "Delete this todo?",
       "cancel": "Cancel",
       "delete": "Delete"
-    }
+    },
+    "days": "days"
   },
   "timeline": {
     "title": "Timeline",

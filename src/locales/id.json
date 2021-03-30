@@ -262,7 +262,8 @@
       "title": "Hapus todo ini?",
       "cancel": "Batal",
       "delete": "Hapus"
-    }
+    },
+    "days": "hari"
   },
   "timeline": {
     "title": "Timeline",

@@ -5,7 +5,7 @@
   import { slide } from 'svelte/transition';
   import { mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiClose, mdiInformation, mdiLoading } from '@mdi/js';
   import { todos, loading } from '../stores/todo';
-  import { ar, wl } from '../stores/server';
+  import { ar, maxWl, wl } from '../stores/server';
   import { itemList } from '../data/itemList';
   import Masonry from '../components/Masonry.svelte';
   import Icon from '../components/Icon.svelte';
@@ -240,7 +240,7 @@
     for (const [id, count] of Object.entries(ascension)) {
       let currentTotal = 0;
       while (count.find((e) => e > 0)) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < maxWl - 1; i++) {
           count[i] -= dropRates.boss[worldLevel][i];
           if (count[i] <= -3 && i < 3) {
             count[i] += 3;
@@ -261,6 +261,10 @@
 
   function updateId() {
     id = Math.random();
+  }
+
+  function resinToDay(amount) {
+    return Math.floor(amount / 180);
   }
 
   onMount(async () => {
@@ -325,7 +329,10 @@
         <div class="rounded-xl bg-background px-4 py-2 mb-2">
           <div class="flex items-center justify-center cursor-pointer" on:click={toggleResinDetail}>
             <img src="/images/resin.png" alt="resin" class="w-6 h-6 mr-2" />
-            <span class="mr-2"><span class="font-black">{resin}</span> {$t('todo.resin')}</span>
+            <span class="mr-2"
+              ><span class="font-black">{resin} </span>
+              {$t('todo.resin')}</span
+            >
             <Icon
               path={mdiChevronDown}
               className={`duration-100 ease-in ${showResinDetail ? 'transform rotate-180' : ''}`}
@@ -354,6 +361,7 @@
                     </td>
                   </tr>
                 {/each}
+                <tr><td>({resinToDay(resin)} {$t('todo.days')})</td></tr>
               </table>
 
               <span class="mt-4 block text-center">

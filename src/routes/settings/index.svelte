@@ -68,18 +68,14 @@
   }
 
   function updateAR() {
-    if (arInput <= maxAr) {
+    if (arInput && arInput <= maxAr) {
       ar.set(Number(arInput));
-    } else {
-      ar.set(Number(45));
     }
   }
 
   function updateWL() {
-    if (wlInput <= maxWl) {
+    if (wlInput && wlInput <= maxWl) {
       wl.set(Number(wlInput));
-    } else {
-      wl.set(Number(6));
     }
   }
 
@@ -273,11 +269,11 @@
     <div class="flex mt-2 md:mt-0">
       <div class="flex flex-col md:flex-row md:items-center w-32 mr-2">
         <p class="text-white mr-2">AR:</p>
-        <Input bind:value={arInput} placeholder="AR" type="number" min="1" />
+        <Input bind:value={arInput} placeholder="AR" type="number" min="1" max={maxAr} />
       </div>
       <div class="flex flex-col md:flex-row md:items-center w-32 mr-2">
         <p class="text-white mr-2">WL:</p>
-        <Input bind:value={wlInput} placeholder="WL" type="number" min="1" />
+        <Input bind:value={wlInput} placeholder="WL" type="number" min="1" max={maxWl}/>
       </div>
     </div>
   </div>
