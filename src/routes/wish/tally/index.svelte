@@ -24,7 +24,7 @@
 
     <div class="px-4 md:px-8">
       <Item type="character" banner={banners.characters[9]} id={300010} featured={['venti']} />
-      <Item type="weapon" banner={banners.weapons[8]} id={400009} featured={['elegy_for_the_end', 'skyward_harp']} />
+      <Item type="weapon" banner={banners.weapons[8]} id={400009} featured={['elegy_for_the_end', 'skyward_blade']} />
       <Item type="character" banner={banners.standard[0]} id={200001} />
       <Item type="character" banner={banners.characters[8]} id={300009} featured={['hu_tao']} />
       <Item type="weapon" banner={banners.weapons[7]} id={400008} featured={['wolfs_gravestone', 'staff_of_homa']} />
