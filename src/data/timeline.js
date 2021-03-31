@@ -161,17 +161,38 @@ export const eventsData = [
       description:
         "Characters possess an ATK-increasing Windward Aura that can increase their ATK by a maximum of 60%. For every opponent who steps within the Aura, the Aura's effect is decreased by 25%. When 4 or more opponents are within the Aura, this effect will not provide an ATK increase.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2021-04-16 04:00:00',
+      end: '2021-05-01 04:00:00',
+      color: '#4299E1',
+      description: 'Hitting an opponent with a Plunging Attack decreases their DEF by 40% for 10s.',
+    },
   ],
-  {
-    name: "Paimon's Bargain - Ningguang, Xingqiu, Blackcliff",
-    pos: '0% 50%',
-    zoom: '150%',
-    start: '2021-03-01 04:00:00',
-    end: '2021-04-01 04:00:00',
-    color: '#B6A1EA',
-    image: 'paimon_bargain.png',
-    description: 'Now selling: Ningguang, Xingqiu, and Blackcliff Weapons.',
-  },
+  [
+    {
+      name: "Paimon's Bargain - Ningguang, Xingqiu, Blackcliff",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2021-03-01 04:00:00',
+      end: '2021-04-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Ningguang, Xingqiu, and Blackcliff Weapons.',
+    },
+    {
+      name: "Paimon's Bargain - Razor, Amber, and Royal",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2021-04-01 04:00:00',
+      end: '2021-05-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Razor, Amber, and Royal Weapons.',
+    },
+  ],
   [
     {
       name: 'Battle Pass',
