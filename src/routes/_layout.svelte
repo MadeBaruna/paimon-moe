@@ -58,7 +58,7 @@
 {/if}
 <div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col">
   <p class="text-gray-400">
-    Paimon.moe is not affiliated with miHoYo.<br />
+    Paimon.moe is not affiliated with miHoYo<a href="/giveaway">.</a> <br />
     Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
   </p>
   <div class="flex mt-4 md:items-center flex-col md:flex-row">
@@ -97,7 +97,9 @@
         </a>
       </div>
     </div>
-    <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center h-full md:pl-4 md:border-l border-gray-600">
+    <div
+      class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center h-full md:pl-4 md:border-l border-gray-600"
+    >
       <a class="text-gray-400 hover:text-primary" href="/privacy-policy">Privacy Policy</a>
       <a class="text-gray-400 hover:text-primary" href="https://github.com/MadeBaruna/paimon-moe" target="_blank">
         Github
