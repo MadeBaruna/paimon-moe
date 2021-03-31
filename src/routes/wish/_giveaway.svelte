@@ -37,7 +37,7 @@
         on:click={showAprilFoolMessage}
         bind:this={youtubeLink}
         class="text-primary hover:underline"
-        href="https://youtu.be/SWqgjQ7nPNA"
+        href="/giveaway"
         target="_blank"
       >
         {$t('giveaway.click')}
