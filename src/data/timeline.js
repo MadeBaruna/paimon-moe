@@ -1,14 +1,26 @@
 export const eventsData = [
-  {
-    name: 'A Wanmin Welcome - Web Event',
-    pos: '0% 45%',
-    image: 'a_wanmin_welcome.png',
-    start: '2021-03-16 13:00:00',
-    end: '2021-03-25 23:59:00',
-    color: '#FAE2B4',
-    url:
-      'https://webstatic-sea.mihoyo.com/ys/event/e20210316cooking-sea/index.html?lang=en-us?utm_source=hoyolab&utm_medium=banner',
-  },
+  [
+    {
+      name: 'A Wanmin Welcome - Web Event',
+      pos: '0% 45%',
+      image: 'a_wanmin_welcome.png',
+      start: '2021-03-16 13:00:00',
+      end: '2021-03-25 23:59:00',
+      color: '#FAE2B4',
+      url:
+        'https://webstatic-sea.mihoyo.com/ys/event/e20210316cooking-sea/index.html?lang=en-us?utm_source=hoyolab&utm_medium=banner',
+    },
+    {
+      name: 'Contending Tides Event',
+      pos: '0% 10%',
+      image: 'contending_tides.jpg',
+      start: '2021-04-02 10:00:00',
+      end: '2021-04-12 04:00:00',
+      color: '#6C99F7',
+      zoom: '180%',
+      url: 'https://www.hoyolab.com/genshin/article/275307',
+    },
+  ],
   {
     name: 'Outland Gastronomy - Daily Login Event',
     pos: '0% 50%',
@@ -158,7 +170,7 @@ export const eventsData = [
     end: '2021-04-01 04:00:00',
     color: '#B6A1EA',
     image: 'paimon_bargain.png',
-    description: 'Now selling: Ningguang, Xingqiu, and Blackcliff Weapons.'
+    description: 'Now selling: Ningguang, Xingqiu, and Blackcliff Weapons.',
   },
   [
     {
