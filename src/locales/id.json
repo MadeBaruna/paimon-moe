@@ -393,5 +393,14 @@
     "download": "Download Kedua Data",
     "lastModified": "Terakhir dimodifikasi",
     "or": "ATAU"
+  },
+  "giveaway": {
+    "title": "🎉 Giveaway Primogem Pertama Paimon.moe!",
+    "message": "Paimon.moe akan memberikan 6400 Primogem ke 4 orang yang beruntung! Untuk bergabung, masukkan UID mu dibawah. Pemenang akan diumumkan di Discord tanggal 4 April 19:00 GMT+8 (hari terakhir banner Venti)! Jadi pastikan udah join Discord nya ya!",
+    "submit": "Enter Giveaway",
+    "invalidUID1": "UID Salah! Coba cek kembali",
+    "invalidUID2": "UID Salah! Perlu bantuan menemukan uid mu?",
+    "click": "Klik disini",
+    "aprilfools": "April Fools 😂! Hey tapi hati-hati saat ada giveaway atau apapun itu yang perlu memasukkan username atau password! Kalau ini penipuan beneran, akun mu bisa dibajak! Jangan memasukkan username, email, atau password di website yang belum dikenal. Biasanya jika terlalu bagus untuk menjadi kenyataan, kamu harus cari tau terlebih dahulu, apakah beneran atau tipu-tipu! Itu saja dari saya, be careful and have fun!"
   }
 }

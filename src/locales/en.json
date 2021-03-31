@@ -393,5 +393,14 @@
     "download": "Download Both Data",
     "lastModified": "Last modified",
     "or": "OR"
+  },
+  "giveaway": {
+    "title": "🎉 We are doing our 1st Primogem Giveaway!",
+    "message": "Paimon.moe will be giving away 6400 Primogems to 4 lucky winners! To enter, submit your UID below. Winner will be announced on Discord at 4 April 19:00 GMT+8 (the last day of Venti banner)! So make sure to join our Discord!",
+    "submit": "Enter Giveaway",
+    "invalidUID1": "Invalid UID! Please check it again",
+    "invalidUID2": "Invalid UID! Need help finding your uid?",
+    "click": "Click here",
+    "aprilfools": "April Fools 😂! Hey but seriously be careful when joining a giveaway! If this is a real scam, you can get hacked! Don't enter your username, email, or even password on an unknown website. Usually, if it's too good to be true, you need to research it first! That's all from me, be careful and have fun!"
   }
 }
