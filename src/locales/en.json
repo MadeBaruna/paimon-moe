@@ -369,19 +369,19 @@
     "collect": [
       {
         "title": "Visited url at paimon.moe, referer, browser, operating system, device type, visitor country",
-        "content": "Paimon.moe use https://plausible.io (a privacy-friendly analytics) so we can see how many people use which feature, so we can prioritize what feature to implement or improve."
+        "content": ["Paimon.moe use", "plausible.io", "(a privacy-friendly analytics) so we can see how many people use which feature, so we can prioritize what feature to implement or improve."]
       },
       {
         "title": "Error message and exception from the website",
-        "content": "Paimon.moe will send error and exception from the website to https://sentry.io so we can track what cause problem and fix it accordingly."
+        "content": ["Paimon.moe will send error and exception from the website to", "sentry.io", "so we can track what cause problem and fix it accordingly."]
       },
       {
         "title": "Wish Pity",
-        "content": "Paimon.moe will save 4* pity count, 5* pity count, and 5* wish information (wish time, item name, pity count) if you check 'Submit pity for global wish tally' on Wish Auto Import or manually submit it on Help & Setting menu. Paimon.moe will aggregate the data and use it to calculate the average pity for each banner on paimon.moe users. You can check it here https://paimon.moe/wish/tally"
+        "content": ["Paimon.moe will save 4* pity count, 5* pity count, and 5* wish information (wish time, item name, pity count) if you check 'Submit pity for global wish tally' on Wish Auto Import or manually submit it on Help & Setting menu. Paimon.moe will aggregate the data and use it to calculate the average pity for each banner on paimon.moe users. You can check it here", "wish tally"]
       }
     ],
     "subtitleNotCollect": "What paimon.moe NOT collect",
-    "notCollect": "Paimon.moe never save any password, uid, username, email, temporary keys, or feedback url. If you are interested, the project is open source and you can check the source code at https://github.com/MadeBaruna/paimon-moe-api and https://github.com/MadeBaruna/paimon-moe"
+    "notCollect": ["Paimon.moe never save any password, uid, username, email, temporary keys, or feedback url. If you are interested, the project is open source and you can check the source code at", "paimon-moe-api Github", "and", "paimon-moe Github"]
   },
   "sync": {
     "message": "Your local data in this browser is conflicting with the ones stored in the Google Drive!",
