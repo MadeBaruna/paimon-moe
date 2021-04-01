@@ -25,6 +25,7 @@
     "manual": "Jika kamu ingin memasukkan datanya secara manual, kamu bisa menyalakannya disini:",
     "manualButton": "Nyalakan Input Manual",
     "errorBanner": "Waktu banner salah! Coba sesuaikan server di halaman settings. Masih gak bisa? tolong chat di Discord 😅",
+    "globalWishTally": "Perhitungan Pity Wish Global",
     "import": {
       "title": "Import Riwayat Wish",
       "faqsButton": "FAQS - BACA DULU",

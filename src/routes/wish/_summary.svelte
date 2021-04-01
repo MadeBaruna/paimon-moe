@@ -12,6 +12,8 @@
   import { readSave, updateTime, fromRemote } from '../../stores/saveManager';
   import SummaryItem from './_summaryItem.svelte';
   import GiveawayModal from './_giveaway.svelte';
+  import Icon from '../../components/Icon.svelte';
+  import { mdiEarth, mdiGlobeLight, mdiGlobeModel } from '@mdi/js';
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -171,6 +173,14 @@
       {$t('wish.wishesWorth')} <img class="w-4 h-4 mx-2" src="/images/primogem.png" alt="primogem" />
       {numberFormat.format(totalWish * 160)}
     </div>
+    <a
+      href="/wish/tally"
+      class="bg-item rounded-xl p-4 flex items-center w-full text-white mt-4 hover:text-primary"
+      style="height: min-content;"
+    >
+      <Icon path={mdiEarth} className="mr-2" />
+      {$t('wish.globalWishTally')}
+    </a>
     <div
       on:click={openGiveaway}
       class="bg-item rounded-xl p-4 w-full text-white mt-4 cursor-pointer hover:text-primary"
