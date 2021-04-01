@@ -555,6 +555,7 @@
       >{cancelled ? $t('wish.import.cancelling') : $t('wish.import.cancel')}</Button
     >
   </div>
+  <div class="pb-16 md:pb-0" />
 {:else}
   <div>
     {#if showFaq}
