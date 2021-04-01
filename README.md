@@ -12,7 +12,14 @@ Created with [Sapper](https://sapper.svelte.dev/) + [Tailwind CSS](https://tailw
 # install dependencies
 yarn
 
+# you need the api to run wish importer and wish tally
+git clone https://github.com/MadeBaruna/paimon-moe-api
+cd paimon-moe-api
+docker-compose up -d
+
 # run in dev mode
+cp .env.example .env
+vi .env
 yarn dev
 
 # export as production static site
