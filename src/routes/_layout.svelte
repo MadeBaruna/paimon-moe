@@ -58,7 +58,7 @@
 {/if}
 <div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col">
   <p class="text-gray-400">
-    Paimon.moe is not affiliated with miHoYo<a href="/giveaway">.</a> <br />
+    Paimon.moe is not affiliated with miHoYo.<br />
     Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
   </p>
   <div class="flex mt-4 md:items-center flex-col md:flex-row">

@@ -1,7 +1,7 @@
 <script>
   import { t } from 'svelte-i18n';
 
-  import { getContext, onMount } from 'svelte';
+  import { onMount } from 'svelte';
   import dayjs from 'dayjs';
 
   import { characters } from '../../data/characters';
@@ -11,11 +11,8 @@
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateTime, fromRemote } from '../../stores/saveManager';
   import SummaryItem from './_summaryItem.svelte';
-  import GiveawayModal from './_giveaway.svelte';
   import Icon from '../../components/Icon.svelte';
-  import { mdiEarth, mdiGlobeLight, mdiGlobeModel } from '@mdi/js';
-
-  const { open: openModal } = getContext('simple-modal');
+  import { mdiEarth } from '@mdi/js';
 
   let numberFormat = Intl.NumberFormat();
 
@@ -140,17 +137,6 @@
     console.log(avg);
     loading = false;
   }
-
-  function openGiveaway() {
-    openModal(
-      GiveawayModal,
-      {},
-      {
-        closeButton: false,
-        styleWindow: { background: '#25294A', width: '600px' },
-      },
-    );
-  }
 </script>
 
 {#if !loading}
@@ -181,12 +167,5 @@
       <Icon path={mdiEarth} className="mr-2" />
       {$t('wish.globalWishTally')}
     </a>
-    <div
-      on:click={openGiveaway}
-      class="bg-item rounded-xl p-4 w-full text-white mt-4 cursor-pointer hover:text-primary"
-      style="height: min-content;"
-    >
-      {$t('giveaway.title')} <img class="w-4 h-4 mx-2 inline" src="/images/primogem.png" alt="primogem" />
-    </div>
   </div>
 {/if}
