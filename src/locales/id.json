@@ -401,5 +401,15 @@
     "discord": "Gabung ke Discord",
     "community": "Link Komunitas",
     "official": "Link Official"
+  },
+  "donate": {
+    "message": [
+      "Terimakasih! Semoga web nya bermanfaat.",
+      "Saya membuat website ini for fun karena hobi di saat waktu senggang. Pastinya saya akan selalu nambahin fitur-fitur dan update data nya di setiap update, karena saya suka explore game nya.",
+      "Jika kamu ingin donasi, donasimu akan sangat membantu dalam meningkatkan webnya dan memotivasi saya untuk terus menambahkan hal-hal baru ke paimon.moe! Terimakasih banyak dan have fun, semoga kamu menyukainya!",
+      "Jika kamu suka ngoding, kamu juga berkontribusi dalam projek ini di "
+    ],
+    "kofi": "Support me on Ko-fi",
+    "trakteer": "Support me on Trakteer"
   }
 }
