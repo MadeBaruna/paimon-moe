@@ -394,5 +394,12 @@
     "download": "Download Both Data",
     "lastModified": "Last modified",
     "or": "OR"
+  },
+  "footer": {
+    "affliate": "Paimon.moe is not affiliated with miHoYo.",
+    "copyright": "Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.",
+    "discord": "Join Our Discord",
+    "community": "Community Links",
+    "official": "Official Links"
   }
 }

@@ -394,5 +394,12 @@
     "download": "Download Kedua Data",
     "lastModified": "Terakhir dimodifikasi",
     "or": "ATAU"
+  },
+  "footer": {
+    "affliate": "Paimon.moe tidak berafiliasi dengan miHoYo.",
+    "copyright": "Genshin Impact, konten game dan material adalah trademark dan copyright milik miHoYo.",
+    "discord": "Gabung ke Discord",
+    "community": "Link Komunitas",
+    "official": "Link Official"
   }
 }

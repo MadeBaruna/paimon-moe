@@ -3,6 +3,7 @@
   import { fade } from 'svelte/transition';
   import { derived } from 'svelte/store';
   import { stores } from '@sapper/app';
+  import { t } from 'svelte-i18n';
 
   import Modal from 'svelte-simple-modal';
 
@@ -58,21 +59,21 @@
 {/if}
 <div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col">
   <p class="text-gray-400">
-    Paimon.moe is not affiliated with miHoYo.<br />
-    Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
+    {$t('footer.affliate')}<br />
+    {$t('footer.copyright')}
   </p>
   <div class="flex mt-4 md:items-center flex-col md:flex-row">
     <a class="text-gray-400 hover:text-primary" href="https://discord.gg/tPURAYgHV9" target="_blank">
-      <Icon path={mdiDiscord} size={1.5} /> Join Our Discord
+      <Icon path={mdiDiscord} size={1.5} /> {$t('footer.discord')}
     </a>
     <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
-      <span class="text-gray-500">Community Links</span>
+      <span class="text-gray-500">{$t('footer.community')}</span>
       <a class="text-gray-400 hover:text-primary" href="https://t.me/GenshinImpact_ID" target="_blank">
         <Icon path={mdiTelegram} size={1} /> Telegram
       </a>
     </div>
     <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
-      <span class="text-gray-500">Official Links</span>
+      <span class="text-gray-500">{$t('footer.official')}</span>
       <div>
         <a
           class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap"
