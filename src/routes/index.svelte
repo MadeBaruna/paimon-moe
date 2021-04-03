@@ -42,7 +42,7 @@
   <Masonry bind:refreshLayout gridGap="1rem">
     <Welcome on:done={onDone} />
     <Wish on:done={onDone} />
-    <Reminder on:done={onDone} />
+    <!-- <Reminder on:done={onDone} /> -->
     <Event on:done={onDone} />
     <Item on:done={onDone} />
     <Banner on:done={onDone} featured="venti" bannerId={300010} />

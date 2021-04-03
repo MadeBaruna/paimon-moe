@@ -20,8 +20,8 @@
   $: ended = now.isAfter(event.end);
   $: diffStart = event.start.diff(now);
   $: diffEnd = event.end.diff(now);
-  $: attachedNext = next !== null && next.start.diff(event.end, 'hour') < 1;
-  $: attachedPrev = prev !== null && event.start.diff(prev.end, 'hour') < 1;
+  $: attachedNext = next !== null && next.start.diff(event.end, 'hour') < 3;
+  $: attachedPrev = prev !== null && event.start.diff(prev.end, 'hour') < 3;
   $: prevEnded = prev !== null && now.isAfter(prev.end);
   $: shouldShowHourStart = diffStart <= 86400000 || event.duration > 8 || !prevNearby;
   $: shouldShowHourEnd = diffEnd <= 86400000 || event.duration > 8 || !prevNearby;
