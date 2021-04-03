@@ -2,7 +2,7 @@
   import { fly } from 'svelte/transition';
   import { getContext } from 'svelte';
   import { mdiCloseCircle } from '@mdi/js';
-  import { locale } from 'svelte-i18n';
+  import { locale, t } from 'svelte-i18n';
 
   import Icon from '../Icon.svelte';
 
@@ -61,26 +61,32 @@
       <Icon path={mdiCloseCircle} size={2} color="white" className="mb-8 mt-4 opacity-75" />
     </div>
   {/if}
-  <SidebarItem on:clicked={close} active={segment === undefined} image="/images/home.png" label="Home" href="/" />
+  <SidebarItem
+    on:clicked={close}
+    active={segment === undefined}
+    image="/images/home.png"
+    label={$t('sidebar.home')}
+    href="/"
+  />
   <SidebarItem
     on:clicked={close}
     active={segment === 'characters'}
     image="/images/characters.png"
-    label="Character"
+    label={$t('sidebar.character')}
     href="/characters"
   />
   <SidebarItem
     on:clicked={close}
     active={segment === 'wish'}
     image="/images/wish.png"
-    label="Wish Counter"
+    label={$t('sidebar.wishCounter')}
     href="/wish"
   />
   <SidebarItem
     on:clicked={close}
     active={segment === 'calculator'}
     image="/images/calculator.png"
-    label="Calculator"
+    label={$t('sidebar.calculator')}
     href="/calculator"
   />
   <SidebarItem on:clicked={close} active={segment === 'items'} image="/images/items.png" label="Items" href="/items" />
@@ -88,21 +94,21 @@
     on:clicked={close}
     active={segment === 'todo'}
     image="/images/todos.png"
-    label="Todo List"
+    label={$t('sidebar.todoList')}
     href="/todo"
   />
   <SidebarItem
     on:clicked={close}
     active={segment === 'timeline'}
     image="/images/timeline.png"
-    label="Timeline"
+    label={$t('sidebar.timeline')}
     href="/timeline"
   />
   <SidebarItem
     on:clicked={close}
     active={segment === 'settings'}
     image="/images/settings.png"
-    label="Settings"
+    label={$t('sidebar.settings')}
     href="/settings"
   />
   <div class="mt-8 md:mt-0 md:flex-1" />
@@ -127,7 +133,7 @@
   </div>
   <Button on:click={openDonationModal}>
     <img class="inline w-8 h-8" src="/images/mora.png" alt="donate" />
-    Donate
+    {$t('sidebar.donate')}
   </Button>
 </div>
 

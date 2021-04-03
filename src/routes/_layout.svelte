@@ -69,7 +69,7 @@
     <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
       <span class="text-gray-500">{$t('footer.community')}</span>
       <a class="text-gray-400 hover:text-primary" href="https://t.me/GenshinImpact_ID" target="_blank">
-        <Icon path={mdiTelegram} size={1} /> Telegram
+        <Icon path={mdiTelegram} size={1} /> Telegram	🇮🇩
       </a>
     </div>
     <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">

@@ -1,4 +1,15 @@
 {
+  "sidebar": {
+    "home": "Home",
+    "character": "Karakter",
+    "wishCounter": "Wish Counter",
+    "calculator": "Kalkulator",
+    "items": "Item",
+    "todoList": "Todo List",
+    "timeline": "Timeline",
+    "settings": "Pengaturan",
+    "donate": "Donasi"
+  },
   "home": {
     "welcome": "Selamat Datang di Paimon.moe! 👋",
     "message": "Your best Genshin Impact companion! Membantu kamu merencanakan apa yang harus di farm dengan kalkulator ascension, juga catat progress mu dengan todo dan wish counter.",
