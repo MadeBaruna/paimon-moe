@@ -58,7 +58,7 @@
   {:else}
     <p class="text-white mb-2">{$t('home.wish.latest')}</p>
     <div class="flex">
-      <div class="h-16 w-16" style="min-width: 4rem;">
+      <div class="h-16 w-16 mr-1" style="min-width: 4rem;">
         <img
           class="h-full w-auto"
           src={latestPull.type === 'character'

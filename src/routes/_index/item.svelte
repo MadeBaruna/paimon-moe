@@ -56,34 +56,38 @@
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
   <p class="text-white mb-2">{$t('home.items.title')}</p>
-  <table>
-    {#each Object.entries(characterItems) as [id, characters]}
+  {#if today === 'sunday'}
+    <div class="text-white">{$t('home.items.sunday')}</div>
+  {:else}
+    <table>
+      {#each Object.entries(characterItems) as [id, characters]}
+        <tr>
+          <td class="border-b border-gray-700 h-14 w-14 pr-2 py-2 align-middle">
+            <img class="h-full" src="/images/items/{id}.png" alt={id} title={id} />
+          </td>
+          <td class="border-b border-gray-700 pt-2 align-middle">
+            {#each characters as char}
+              <img
+                class="h-10 w-auto mb-2 mr-2 inline rounded-full"
+                src="/images/characters/{char}.png"
+                alt={char}
+                title={char}
+              />
+            {/each}
+          </td>
+        </tr>
+      {/each}
       <tr>
-        <td class="border-b border-gray-700 h-14 w-14 pr-2 py-2 align-middle">
-          <img class="h-full" src="/images/items/{id}.png" alt={id} title={id} />
-        </td>
-        <td class="border-b border-gray-700 pt-2 align-middle">
-          {#each characters as char}
-            <img
-              class="h-10 w-auto mb-2 mr-2 inline rounded-full"
-              src="/images/characters/{char}.png"
-              alt={char}
-              title={char}
-            />
+        <td colspan="2" class="py-2 align-middle">
+          {#each Object.entries(weaponItems) as [id, _]}
+            <div class="h-10 w-10 mr-4 inline-block">
+              <img class="h-full" src="/images/items/{id}.png" alt={id} title={id} />
+            </div>
           {/each}
         </td>
       </tr>
-    {/each}
-    <tr>
-      <td colspan="2" class="py-2 align-middle">
-        {#each Object.entries(weaponItems) as [id, _]}
-          <div class="h-10 w-10 mr-4 inline-block">
-            <img class="h-full" src="/images/items/{id}.png" alt={id} title={id} />
-          </div>
-        {/each}
-      </td>
-    </tr>
-  </table>
+    </table>
+  {/if}
   <a
     href="/items"
     class="flex justify-end items-center self-end lg:self-start text-white mt-4 bg-background-secondary rounded-xl py-2 px-4
