@@ -94,6 +94,7 @@
       "timeout": "Connection timeout, tunggu sebentar dan coba lagi nanti",
       "invalidData": "Invalid data dikembalikan dari API, coba lagi nanti",
       "success": "Import berhasil 😀!",
+      "server": "Pilih server mu:",
       "wishTallyCheck": "Submit pity untuk perhitungan pity global",
       "wishTally": "Kita sedang melakukan perhitungan pity global! Kamu bisa mensubmit pity mu untuk berpartisipasi. Semua data pity akan dikumpulkan untuk mengetahui berapa pity rata-rata pengguna paimon.moe.",
       "wishTallyCollected": [

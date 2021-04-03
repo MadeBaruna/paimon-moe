@@ -94,6 +94,7 @@
       "timeout": "Connection timeout, please wait a moment and try again later",
       "invalidData": "Invalid data returned from API, try again later",
       "success": "Import success 😀!",
+      "server": "Select your server:",
       "wishTallyCheck": "Submit pity for global wish tally",
       "wishTally": "We are doing a global wish tally! You can submit your wish tally to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
       "wishTallyCollected": [

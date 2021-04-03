@@ -17,6 +17,8 @@
   import { readSave, updateSave } from '../stores/saveManager';
   import { getAccountPrefix } from '../stores/account';
   import { submitWishTally } from '../functions/wishTally';
+  import Select from './Select.svelte';
+  import { server } from '../stores/server';
 
   export let processFirstTimePopup;
   export let closeModal;
@@ -459,8 +461,23 @@
     updateSave(`${prefix}${path}`, data);
   }
 
+  const servers = [
+    { label: 'Asia/TW/HK/MO', value: 'Asia' },
+    { label: 'America', value: 'America' },
+    { label: 'Europe', value: 'Europe' },
+  ];
+
+  function updateServer() {
+    if (selectedServer === null) return;
+    server.set(selectedServer.value);
+  }
+
+  let selectedServer = null;
+  $: selectedServer, updateServer();
+
   onMount(() => {
     detectPlatform();
+    selectedServer = servers.find((e) => e.value === $server);
   });
 </script>
 
@@ -510,7 +527,11 @@
           </div>
         {/if}
       </div>
-      <p class="mt-4">{$t('wish.import.importNotice1')}</p>
+      <div class="mt-4 md:mt-2 text-gray-400 flex flex-col md:flex-row md:items-center">
+        <p class="ml-4 md:ml-0">{$t('wish.import.server')}</p>
+        <Select className="w-48" bind:selected={selectedServer} options={servers} placeholder={$t('settings.server')} />
+      </div>
+      <p class="mt-1">{$t('wish.import.importNotice1')}</p>
       <p class="mb-1">{$t('wish.import.importNotice2')}</p>
       <p class="text-red-300 mb-1">{$t('wish.import.importNotice3')}</p>
       <p class="font-semibold">{$t('wish.import.saveData')}</p>
@@ -583,10 +604,8 @@
           >
             CORS</a
           >{$t('wish.import.faqs.a4.1')}
-          <a
-            class="text-primary hover:underline"
-            href="https://github.com/MadeBaruna/paimon-moe-api"
-            target="_blank">{$t('wish.import.faqs.a4.2')}</a
+          <a class="text-primary hover:underline" href="https://github.com/MadeBaruna/paimon-moe-api" target="_blank"
+            >{$t('wish.import.faqs.a4.2')}</a
           >
         </p>
         <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q5')}</p>
