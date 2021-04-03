@@ -1,4 +1,15 @@
 {
+  "sidebar": {
+    "home": "Home",
+    "character": "Character",
+    "wishCounter": "Wish Counter",
+    "calculator": "Calculator",
+    "items": "Items",
+    "todoList": "Todo List",
+    "timeline": "Timeline",
+    "settings": "Settings",
+    "donate": "Donate"
+  },
   "home": {
     "welcome": "Welcome to Paimon.moe! 👋",
     "message": "Your best Genshin Impact companion! Help you plan what to farm with ascension calculator, also track your progress with todo and wish counter.",
