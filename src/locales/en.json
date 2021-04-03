@@ -35,7 +35,8 @@
     },
     "items": {
       "title": "Farmable Today",
-      "detail": "Items"
+      "detail": "Items",
+      "sunday": "Sunday can farm all items 😁"
     },
     "calculator": {
       "title": "🧮 Calculate Character and Weapons ascension material and talent book! All the calculations can be added to the Todo list, it will show you how much resin you need too!",
@@ -455,5 +456,10 @@
     ],
     "kofi": "Support me on Ko-fi",
     "trakteer": "Support me on Trakteer"
+  },
+  "reminder": {
+    "title": "Reminder Notification",
+    "notSupported": "Your browser does not support push notification, please try other browser!",
+    "blocked": "Notification is blocked, the reminder notification will not work! Please enable it on your browser."
   }
 }
