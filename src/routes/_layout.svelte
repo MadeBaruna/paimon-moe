@@ -77,7 +77,7 @@
       <div>
         <a
           class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap"
-          href="https://discord.gg/2UqwpAr"
+          href="https://discord.gg/4nbWsCGjjE"
           target="_blank"
         >
           <Icon path={mdiDiscord} size={1} /> Discord

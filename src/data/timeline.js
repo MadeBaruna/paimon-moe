@@ -9,6 +9,7 @@ export const eventsData = [
       color: '#FAE2B4',
       url:
         'https://webstatic-sea.mihoyo.com/ys/event/e20210316cooking-sea/index.html?lang=en-us?utm_source=hoyolab&utm_medium=banner',
+      showOnHome: true,
     },
     {
       name: 'Contending Tides Event',
@@ -19,6 +20,7 @@ export const eventsData = [
       color: '#6C99F7',
       zoom: '180%',
       url: 'https://www.hoyolab.com/genshin/article/275307',
+      showOnHome: true,
     },
   ],
   {
@@ -30,6 +32,7 @@ export const eventsData = [
     color: '#DDD7E8',
     zoom: '180%',
     url: 'https://genshin.mihoyo.com/en/news/detail/9262',
+    showOnHome: true,
   },
   {
     name: 'Invitation of Windblume - 1.4 Event',
@@ -40,6 +43,7 @@ export const eventsData = [
     color: '#79D2EB',
     zoom: '120%',
     url: 'https://genshin.mihoyo.com/en/news/detail/9407',
+    showOnHome: true,
   },
   [
     {
@@ -49,6 +53,7 @@ export const eventsData = [
       start: '2021-03-05 04:00:00',
       end: '2021-03-12 04:00:00',
       color: '#F6AD55',
+      showOnHome: true,
     },
     {
       name: 'Act I',
@@ -102,6 +107,7 @@ export const eventsData = [
       start: '2021-03-02 18:00:00',
       end: '2021-03-16 15:00:00',
       color: '#FC8181',
+      showOnHome: true,
     },
     {
       name: 'Ballad in Goblets - Venti Banner',
@@ -111,6 +117,7 @@ export const eventsData = [
       end: '2021-04-06 16:00:00',
       color: '#6EDDCA',
       url: 'https://genshin.mihoyo.com/en/news/detail/9269',
+      showOnHome: true,
     },
   ],
   [
@@ -121,6 +128,7 @@ export const eventsData = [
       start: '2021-02-23 18:00:00',
       end: '2021-03-16 15:00:00',
       color: '#F56565',
+      showOnHome: true,
     },
     {
       name: 'Epitome Invocation - Weapon Banner',
@@ -130,6 +138,7 @@ export const eventsData = [
       end: '2021-04-06 16:00:00',
       color: '#FFAA4B',
       url: 'https://genshin.mihoyo.com/en/news/detail/9278',
+      showOnHome: true,
     },
   ],
   [

@@ -1,4 +1,47 @@
 {
+  "home": {
+    "welcome": "Selamat Datang di Paimon.moe! 👋",
+    "message": "Your best Genshin Impact companion! Membantu kamu merencanakan apa yang harus di farm dengan kalkulator ascension, juga catat progress mu dengan todo dan wish counter.",
+    "banner": {
+      "featured": "Venti",
+      "summoned": "Pulang",
+      "percentage": "dari semua 5",
+      "avg": "Pity rata-rata",
+      "subtitle": "Dihitung dari data yang dikirim oleh pengguna paimon.moe",
+      "detail": "Perhitungan Wish Pity Global"
+    },
+    "wish": {
+      "message": "Import riwayat wish mu dan datanya bisa disimpan lebih dari 6 bulan! Juga otomatis menghitung pity-mu dan ada statistik tentang wish-mu dengan grafik 📊",
+      "latest": "Wish Terakhir",
+      "banner": "Banner",
+      "time": "Waktu",
+      "name": "Nama",
+      "pity": "Pity",
+      "detail": "Wish Counter"
+    },
+    "reminder": {
+      "message": "Kamu bisa mengatur notifikasi 🔔 pengigat untuk Parametric Transformer dan Hoyolab Login Harian disini! Klik tombol reminder dibawah untuk mulai!",
+      "detail": "Reminder"
+    },
+    "event": {
+      "upcoming": "Event Akan Datang",
+      "current": "Event Sekarang",
+      "detail": "Timeline"
+    },
+    "discord": {
+      "online": "Member Online",
+      "message": "Gabung server Discord untuk informasi mengenai update terbaru! Juga diskusi tentang Genshin Impact dan feedback untuk paimon.moe.",
+      "join": "Gabung Discord"
+    },
+    "items": {
+      "title": "Bisa di Farm Hari Ini",
+      "detail": "Items"
+    },
+    "calculator": {
+      "title": "🧮 Hitung Ascension dan Talent Book Karakter dan Senjata! Semua hasil perhitungan bisa ditambahkan ke daftar todo, dan juga akan menampilkan berapa resin yang kamu perlukan!",
+      "detail": "Kalkulator"
+    }
+  },
   "characters": {
     "title": "Karakter",
     "subtitle": "Angka stat adalah saat level 80 Ascension 6. Kamu juga dapat mengklik judul tabel untuk mengurutkan!",

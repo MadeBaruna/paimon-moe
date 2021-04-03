@@ -1,4 +1,47 @@
 {
+  "home": {
+    "welcome": "Welcome to Paimon.moe! 👋",
+    "message": "Your best Genshin Impact companion! Help you plan what to farm with ascension calculator, also track your progress with todo and wish counter.",
+    "banner": {
+      "featured": "Venti",
+      "summoned": "Summoned",
+      "percentage": "from all 5",
+      "avg": "Pity average",
+      "subtitle": "Calculated from data submitted by paimon.moe users",
+      "detail": "Global With Tally"
+    },
+    "wish": {
+      "message": "Import your wish history to keep it more than 6 months! Also automatically count your pity and statistic about your wishes with fancy charts 📊",
+      "latest": "Your Last Wish",
+      "banner": "Banner",
+      "time": "Time",
+      "name": "Name",
+      "pity": "Pity",
+      "detail": "Wish Counter"
+    },
+    "reminder": {
+      "message": "You can set up a reminder notification 🔔 for Parametric Transformer and Hoyolab Daily Login here! Click the reminder button below to start!",
+      "detail": "Reminder"
+    },
+    "event": {
+      "upcoming": "Upcoming Event",
+      "current": "Current Event",
+      "detail": "Timeline"
+    },
+    "discord": {
+      "online": "Members Online",
+      "message": "Join our Discord server for latest update announcement! Also discuss about Genshin Impact and feedback for paimon.moe.",
+      "join": "Join Our Discord"
+    },
+    "items": {
+      "title": "Farmable Today",
+      "detail": "Items"
+    },
+    "calculator": {
+      "title": "🧮 Calculate Character and Weapons ascension material and talent book! All the calculations can be added to the Todo list, it will show you how much resin you need too!",
+      "detail": "Calculator"
+    }
+  },
   "characters": {
     "title": "Characters",
     "subtitle": "Stat numbers are at level 80 Ascension 6. You can also click the table header to sort!",

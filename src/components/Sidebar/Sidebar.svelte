@@ -60,6 +60,7 @@
       <Icon path={mdiCloseCircle} size={2} color="white" className="mb-8 mt-4 opacity-75" />
     </div>
   {/if}
+  <SidebarItem on:clicked={close} active={segment === undefined} image="/images/home.png" label="Home" href="/" />
   <SidebarItem
     on:clicked={close}
     active={segment === 'characters'}
