@@ -473,6 +473,7 @@
     "blocked": "Notification is blocked, the reminder notification will not work! Please enable it on your browser.",
     "desktop": "Desktop browser cannot receive notification if the browser is not running!",
     "early": "The notification may arrive earlier (about 1-10 minutes) because of the way we send the notification",
+    "allowNotification": "Please allow the notification prompt that shows up!",
     "transformer": "Parametric Transformer Reminder",
     "last": "Enter when you last used the Parametric Transformer",
     "countdown": "Enter countdown time of the Parametric Transformer (If you don't remember the exact time, you need to approximate it)",

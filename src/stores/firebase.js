@@ -15,7 +15,6 @@ const firebaseConfig = {
   appId: __paimon.env.FIREBASE_APP_ID,
 };
 
-let firebase;
 let messaging;
 
 export async function firstLoadNotification() {
@@ -65,9 +64,6 @@ async function initFirebase() {
   console.log('init firebase');
 
   if (!messaging) {
-    firebase = (await import('firebase/app')).default;
-    await import('firebase/messaging');
-
     firebase.initializeApp(firebaseConfig);
     messaging = firebase.messaging();
   }

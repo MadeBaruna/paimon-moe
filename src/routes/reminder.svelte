@@ -17,9 +17,9 @@
   import { pushToast } from '../stores/toast';
 
   import {
+    loading,
     firebaseToken,
     firstLoadNotification,
-    loading,
     loadingFirst,
     notificationAllowed,
     notificationSupported,
@@ -198,6 +198,9 @@
               {#if loadingSave}<Icon path={mdiLoading} size={0.8} spin className="mr-2" />{/if}
               {$t('reminder.set')}
             </Button>
+            {#if $loading}
+              <p class="text-green-400 text-center mt-2">{$t('reminder.allowNotification')}</p>
+            {/if}
           </div>
         </div>
         <div>
