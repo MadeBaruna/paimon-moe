@@ -469,8 +469,21 @@
     "trakteer": "Support me on Trakteer"
   },
   "reminder": {
-    "title": "Reminder Notification",
     "notSupported": "Your browser does not support push notification, please try other browser!",
-    "blocked": "Notification is blocked, the reminder notification will not work! Please enable it on your browser."
+    "blocked": "Notification is blocked, the reminder notification will not work! Please enable it on your browser.",
+    "desktop": "Desktop browser cannot receive notification if the browser is not running!",
+    "early": "The notification may arrive earlier (about 1-10 minutes) because of the way we send the notification",
+    "transformer": "Parametric Transformer Reminder",
+    "last": "Enter when you last used the Parametric Transformer",
+    "countdown": "Enter countdown time of the Parametric Transformer (If you don't remember the exact time, you need to approximate it)",
+    "useLast": "Use last used time instead",
+    "useCountdown": "Use countdown time instead",
+    "set": "Set Reminder",
+    "checking": "Checking saved reminder...",
+    "errorSelect": "Please select the day and hour!",
+    "errorSaving": "Something wrong when saving the reminder 🙁",
+    "current": "Current reminder",
+    "hoyolab": "Hoyolab Daily Check-In Reminder",
+    "comingsoon": "Coming Soon!"
   }
 }

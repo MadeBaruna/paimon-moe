@@ -7,11 +7,13 @@
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
   <p class="text-white">{$t('home.reminder.message')}</p>
-  <div
-    class="flex justify-end items-center self-end lg:self-start text-white mt-4 bg-background-secondary rounded-xl py-2 px-4"
+  <a
+    href="/reminder"
+    class="flex justify-end items-center self-end lg:self-start text-white mt-4 bg-background-secondary rounded-xl py-2 px-4
+    hover:bg-background transition-colors duration-100"
   >
     <Icon path={mdiAlarm} className="mr-2" />
     {$t('home.reminder.detail')}
     <Icon path={mdiChevronRight} />
-  </div>
+  </a>
 </div>

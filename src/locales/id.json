@@ -466,5 +466,23 @@
     ],
     "kofi": "Support me on Ko-fi",
     "trakteer": "Support me on Trakteer"
+  },
+  "reminder": {
+    "notSupported": "Browser mu tidak mensupport notifikasi, silahkan coba browser lain!",
+    "blocked": "Notifikasi di blokir, notifikasi tidak akan bisa terkirim! Silahkan nyalakan notifikasi di browser mu.",
+    "desktop": "Browser dekstop tidak bisa menerima notifikasi jika browser tidak berjalan!",
+    "early": "Notifikasi mungkin akan muncul lebih awal (sekitar 1-10 menit) karena limitasi dalam pengiriman notifikasi.",
+    "transformer": "Reminder Parametric Transformer",
+    "last": "Masukkan kapan kamu terakhir menggunakan Parametric Transformer",
+    "countdown": "Masukkan waktu countdown Parametric Transformer (jika kamu tidak ingat waktu pasti nya, kamu perlu mengira-ngira-kannya)",
+    "useLast": "Gunakan waktu terakhir menggunakan",
+    "useCountdown": "Gunakan waktu countdown",
+    "set": "Set Reminder",
+    "checking": "Mengecek reminder tersimpan...",
+    "errorSelect": "Silahkan pilih sisa hari dan jam nya!",
+    "errorSaving": "Error saat menyimpan reminder 🙁",
+    "current": "Reminder saat ini",
+    "hoyolab": "Reminder Hoyolab Daily Check-In",
+    "comingsoon": "Coming Soon!"
   }
 }
