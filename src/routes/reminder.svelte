@@ -1,6 +1,6 @@
 <script>
   import { stores } from '@sapper/app';
-  import { mdiCalendarCheck, mdiLoading } from '@mdi/js';
+  import { mdiCalendarCheck, mdiDelete, mdiLoading } from '@mdi/js';
   import { onMount } from 'svelte';
   import { t, locale } from 'svelte-i18n';
   import dayjs from 'dayjs';
@@ -67,7 +67,31 @@
       });
 
       const data = await res.json();
-      currentReminder = dayjs(data.time);
+      if (data.time) {
+        currentReminder = dayjs(data.time);
+      }
+    } catch (err) {
+      console.error(err);
+    }
+
+    loadingCurrent = false;
+  }
+
+  async function deleteCurrentReminder() {
+    console.log('delete reminder');
+    const url = new URL(`${__paimon.env.API_HOST}/reminder`);
+    const query = new URLSearchParams({ token: $firebaseToken, type: 'transformer' });
+    url.search = query.toString();
+
+    loadingCurrent = true;
+
+    try {
+      await fetch(url, {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+      });
+
+      currentReminder = null;
     } catch (err) {
       console.error(err);
     }
@@ -174,10 +198,13 @@
                 {$t('reminder.checking')}
               </div>
             {/if}
-            {#if currentReminder !== null}
-              <div class="bg-background mb-4 p-4 rounded-xl">
+            {#if !loadingCurrent && currentReminder !== null}
+              <div class="bg-background mb-4 p-4 rounded-xl relative">
                 <p class="text-gray-400">{$t('reminder.current')}</p>
                 <p class="text-gray-400">{currentReminder.format('YYYY-MM-DD HH:mm')} ({currentReminder.fromNow()})</p>
+                <Button size="sm" on:click={deleteCurrentReminder} className="absolute top-0 right-0 mt-1 mr-1 text-gray-400">
+                  <Icon path={mdiDelete} />
+                </Button>
               </div>
             {/if}
             <p class="mb-1 ml-1">
