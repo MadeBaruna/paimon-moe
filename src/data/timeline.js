@@ -15,7 +15,7 @@ export const eventsData = [
       name: 'A Thousand Questions With Paimon',
       pos: '60% 30%',
       image: 'a_thousand_questions_with_paimon.jpg',
-      start: '2021-04-06 06:00:00',
+      start: '2021-04-06 13:00:00',
       end: '2021-04-13 04:00:00',
       color: '#EFDEB4',
       zoom: '180%',

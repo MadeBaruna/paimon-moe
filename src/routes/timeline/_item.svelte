@@ -60,7 +60,7 @@
       <span class="text-sm rounded-xl text-black font-semibold bg-white bg-opacity-75 px-1">
         {diffEnd > 86400000
           ? `${Math.trunc(dayjs.duration(diffEnd).asDays())}d ${
-              shouldShowHourEnd ? dayjs.duration(diffEnd).format('HH:mm:ss') : ''
+              shouldShowHourEnd ? dayjs.duration(diffEnd).format('H[h]') : ''
             }`
           : dayjs.duration(diffEnd).format('HH:mm:ss')}
       </span>
@@ -78,7 +78,7 @@
       <span class="text-sm rounded-xl text-black font-semibold bg-white bg-opacity-75 px-1">
         {diffStart > 86400000
           ? `${Math.trunc(dayjs.duration(diffStart).asDays())}d ${
-              shouldShowHourStart ? dayjs.duration(diffStart).format('HH:mm:ss') : ''
+              shouldShowHourStart ? dayjs.duration(diffStart).format('H[h]') : ''
             }`
           : dayjs.duration(diffStart).format('HH:mm:ss')}
       </span>
