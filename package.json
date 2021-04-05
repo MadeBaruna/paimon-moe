@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
+    "export": "sapper export --legacy && cp __sapper__/build/firebase-messaging-sw.js __sapper__/export",
     "start": "node __sapper__/build"
   },
   "dependencies": {

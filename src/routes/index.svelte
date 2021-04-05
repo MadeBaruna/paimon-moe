@@ -16,7 +16,6 @@
   let refreshLayout;
 
   const onDone = debounce(() => {
-    console.log('refresh');
     refreshLayout();
   }, 100);
 
@@ -42,10 +41,10 @@
   <Masonry bind:refreshLayout gridGap="1rem">
     <Welcome on:done={onDone} />
     <Wish on:done={onDone} />
-    <!-- <Reminder on:done={onDone} /> -->
+    <Reminder on:done={onDone} />
+    <Banner on:done={onDone} featured="venti" bannerId={300010} />
     <Event on:done={onDone} />
     <Item on:done={onDone} />
-    <Banner on:done={onDone} featured="venti" bannerId={300010} />
     <Discord on:done={onDone} />
     <Calculator on:done={onDone} />
   </Masonry>

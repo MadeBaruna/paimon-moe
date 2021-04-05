@@ -23,6 +23,11 @@ const onwarn = (warning, onwarn) =>
   (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) ||
   onwarn(warning);
 
+const envData = {};
+Object.entries(envConfig().parsed).forEach(([key, val]) => {
+  envData[`__paimon.env.${key}`] = `'${val}'`;
+});
+
 export default {
   client: {
     input: config.client.input(),
@@ -34,9 +39,7 @@ export default {
       replace({
         'process.browser': true,
         'process.env.NODE_ENV': JSON.stringify(mode),
-        __paimon: JSON.stringify({
-          env: envConfig().parsed,
-        }),
+        ...envData,
       }),
       svelte({
         compilerOptions: {
@@ -98,9 +101,7 @@ export default {
       replace({
         'process.browser': false,
         'process.env.NODE_ENV': JSON.stringify(mode),
-        __paimon: JSON.stringify({
-          env: envConfig().parsed,
-        }),
+        ...envData,
       }),
       svelte({
         compilerOptions: {
@@ -124,6 +125,23 @@ export default {
     external: Object.keys(pkg.dependencies).concat(require('module').builtinModules),
 
     preserveEntrySignatures: 'strict',
+    onwarn,
+  },
+
+  serviceworker: {
+    input: config.serviceworker.input().replace('service-worker', 'firebase-messaging-sw'),
+    output: {
+      ...config.serviceworker.output(),
+      file: config.serviceworker.output().file.replace('service-worker', 'firebase-messaging-sw'),
+    },
+    plugins: [
+      replace(envData),
+      resolve(),
+      commonjs(),
+      !dev && terser(),
+    ],
+
+    preserveEntrySignatures: false,
     onwarn,
   },
 
