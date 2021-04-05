@@ -89,7 +89,13 @@
     label={$t('sidebar.calculator')}
     href="/calculator"
   />
-  <SidebarItem on:clicked={close} active={segment === 'items'} image="/images/items.png" label="Items" href="/items" />
+  <SidebarItem
+    on:clicked={close}
+    active={segment === 'items'}
+    image="/images/items.png"
+    label={$t('sidebar.items')}
+    href="/items"
+  />
   <SidebarItem
     on:clicked={close}
     active={segment === 'todo'}

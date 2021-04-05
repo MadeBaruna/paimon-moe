@@ -125,7 +125,7 @@
 </svelte:head>
 <div class="pt-20 lg:ml-64 lg:pt-8 px-4 md:px-8">
   <div class="flex flex-col md:flex-row mb-4 items-center">
-    <h1 class="font-display font-black text-5xl text-white text-center md:text-left md:mr-4">Wish Counter</h1>
+    <h1 class="font-display font-black text-5xl text-white text-center md:text-left md:mr-4">{$t('wish.title')}</h1>
     <Button className="mr-2 hidden md:block" on:click={openImport}>
       <Icon size={0.8} path={mdiDatabaseImport} />
       {$t('wish.autoImport')}
