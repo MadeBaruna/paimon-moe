@@ -643,6 +643,148 @@ export const characters = {
       boss: itemList.spirit_locket_of_boreas,
     },
   },
+  ganyu: {
+    name: 'Ganyu',
+    id: 'ganyu',
+    rarity: 5,
+    element: elements.cryo,
+    weapon: weapons.bow,
+    sex: 'female',
+    nation: 'liyue',
+    ascension: [
+      {
+        items: [
+          { item: itemList.shivada_jade_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.qingxin, amount: 3 },
+          { item: itemList.whopperflower_nectar, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 3 },
+          { item: itemList.hoarfrost_core, amount: 2 },
+          { item: itemList.qingxin, amount: 10 },
+          { item: itemList.whopperflower_nectar, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 6 },
+          { item: itemList.hoarfrost_core, amount: 4 },
+          { item: itemList.qingxin, amount: 20 },
+          { item: itemList.shimmering_nectar, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 3 },
+          { item: itemList.hoarfrost_core, amount: 8 },
+          { item: itemList.qingxin, amount: 30 },
+          { item: itemList.shimmering_nectar, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 6 },
+          { item: itemList.hoarfrost_core, amount: 12 },
+          { item: itemList.qingxin, amount: 45 },
+          { item: itemList.energy_nectar, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_gemstone, amount: 6 },
+          { item: itemList.hoarfrost_core, amount: 20 },
+          { item: itemList.qingxin, amount: 60 },
+          { item: itemList.energy_nectar, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 9108, atk: 311, def: 586 },
+    material: {
+      book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
+      material: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
+      boss: itemList.shadow_of_the_warrior,
+    },
+  },
+  hu_tao: {
+    name: 'Hu Tao',
+    id: 'hu_tao',
+    rarity: 5,
+    element: elements.pyro,
+    weapon: weapons.polearm,
+    sex: 'female',
+    nation: 'liyue',
+    ascension: [
+      {
+        items: [
+          { item: itemList.agnidus_agate_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.silk_flower, amount: 3 },
+          { item: itemList.whopperflower_nectar, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_fragment, amount: 3 },
+          { item: itemList.juvenile_jade, amount: 2 },
+          { item: itemList.silk_flower, amount: 10 },
+          { item: itemList.whopperflower_nectar, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_fragment, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 4 },
+          { item: itemList.silk_flower, amount: 20 },
+          { item: itemList.shimmering_nectar, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_chunk, amount: 3 },
+          { item: itemList.juvenile_jade, amount: 8 },
+          { item: itemList.silk_flower, amount: 30 },
+          { item: itemList.shimmering_nectar, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_chunk, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 12 },
+          { item: itemList.silk_flower, amount: 45 },
+          { item: itemList.energy_nectar, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_gemstone, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 20 },
+          { item: itemList.silk_flower, amount: 60 },
+          { item: itemList.energy_nectar, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 14459, atk: 99, def: 815 },
+    material: {
+      book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
+      material: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
+      boss: itemList.shard_of_a_foul_legacy,
+    },
+  },
   jean: {
     name: 'Jean',
     id: 'jean',
@@ -1353,6 +1495,77 @@ export const characters = {
       boss: itemList.dvalins_claw,
     },
   },
+  rosaria: {
+    name: 'Rosaria',
+    id: 'rosaria',
+    rarity: 4,
+    element: elements.cryo,
+    weapon: weapons.polearm,
+    sex: 'female',
+    nation: 'mondstadt',
+    ascension: [
+      {
+        items: [
+          { item: itemList.shivada_jade_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.valberry, amount: 3 },
+          { item: itemList.recruits_insignia, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 3 },
+          { item: itemList.hoarfrost_core, amount: 2 },
+          { item: itemList.valberry, amount: 10 },
+          { item: itemList.recruits_insignia, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 6 },
+          { item: itemList.hoarfrost_core, amount: 4 },
+          { item: itemList.valberry, amount: 20 },
+          { item: itemList.sergeants_insignia, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 3 },
+          { item: itemList.hoarfrost_core, amount: 8 },
+          { item: itemList.valberry, amount: 30 },
+          { item: itemList.sergeants_insignia, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 6 },
+          { item: itemList.hoarfrost_core, amount: 12 },
+          { item: itemList.valberry, amount: 45 },
+          { item: itemList.lieutenants_insignia, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_gemstone, amount: 6 },
+          { item: itemList.hoarfrost_core, amount: 20 },
+          { item: itemList.valberry, amount: 60 },
+          { item: itemList.lieutenants_insignia, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 11438, atk: 223, def: 661 },
+    material: {
+      book: [itemList.teachings_of_ballad, itemList.guide_to_ballad, itemList.philosophies_of_ballad],
+      material: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
+      boss: itemList.shadow_of_the_warrior,
+    },
+  },
   sucrose: {
     name: 'Sucrose',
     id: 'sucrose',
@@ -1838,6 +2051,77 @@ export const characters = {
       boss: itemList.dvalins_claw,
     },
   },
+  xiao: {
+    name: 'Xiao',
+    id: 'xiao',
+    rarity: 5,
+    element: elements.anemo,
+    weapon: weapons.polearm,
+    sex: 'male',
+    nation: 'liyue',
+    ascension: [
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.qingxin, amount: 3 },
+          { item: itemList.slime_condensate, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 3 },
+          { item: itemList.juvenile_jade, amount: 2 },
+          { item: itemList.qingxin, amount: 10 },
+          { item: itemList.slime_condensate, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 4 },
+          { item: itemList.qingxin, amount: 20 },
+          { item: itemList.slime_secretions, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 3 },
+          { item: itemList.juvenile_jade, amount: 8 },
+          { item: itemList.qingxin, amount: 30 },
+          { item: itemList.slime_secretions, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 12 },
+          { item: itemList.qingxin, amount: 45 },
+          { item: itemList.slime_concentrate, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_gemstone, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 20 },
+          { item: itemList.qingxin, amount: 60 },
+          { item: itemList.slime_concentrate, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 11840, atk: 325, def: 743 },
+    material: {
+      book: [itemList.teachings_of_prosperity, itemList.guide_to_prosperity, itemList.philosophies_of_prosperity],
+      material: [itemList.slime_condensate, itemList.slime_secretions, itemList.slime_concentrate],
+      boss: itemList.shadow_of_the_warrior,
+    },
+  },
   xingqiu: {
     name: 'Xingqiu',
     id: 'xingqiu',
@@ -2049,219 +2333,6 @@ export const characters = {
       book: [itemList.teachings_of_gold, itemList.guide_to_gold, itemList.philosophies_of_gold],
       material: [itemList.slime_condensate, itemList.slime_secretions, itemList.slime_concentrate],
       boss: itemList.tusk_of_monoceros_caeli,
-    },
-  },
-  ganyu: {
-    name: 'Ganyu',
-    id: 'ganyu',
-    rarity: 5,
-    element: elements.cryo,
-    weapon: weapons.bow,
-    sex: 'female',
-    nation: 'liyue',
-    ascension: [
-      {
-        items: [
-          { item: itemList.shivada_jade_sliver, amount: 1 },
-          { item: itemList.none, amount: null },
-          { item: itemList.qingxin, amount: 3 },
-          { item: itemList.whopperflower_nectar, amount: 3 },
-        ],
-        mora: 20000,
-      },
-      {
-        items: [
-          { item: itemList.shivada_jade_fragment, amount: 3 },
-          { item: itemList.hoarfrost_core, amount: 2 },
-          { item: itemList.qingxin, amount: 10 },
-          { item: itemList.whopperflower_nectar, amount: 15 },
-        ],
-        mora: 40000,
-      },
-      {
-        items: [
-          { item: itemList.shivada_jade_fragment, amount: 6 },
-          { item: itemList.hoarfrost_core, amount: 4 },
-          { item: itemList.qingxin, amount: 20 },
-          { item: itemList.shimmering_nectar, amount: 12 },
-        ],
-        mora: 60000,
-      },
-      {
-        items: [
-          { item: itemList.shivada_jade_chunk, amount: 3 },
-          { item: itemList.hoarfrost_core, amount: 8 },
-          { item: itemList.qingxin, amount: 30 },
-          { item: itemList.shimmering_nectar, amount: 18 },
-        ],
-        mora: 80000,
-      },
-      {
-        items: [
-          { item: itemList.shivada_jade_chunk, amount: 6 },
-          { item: itemList.hoarfrost_core, amount: 12 },
-          { item: itemList.qingxin, amount: 45 },
-          { item: itemList.energy_nectar, amount: 12 },
-        ],
-        mora: 100000,
-      },
-      {
-        items: [
-          { item: itemList.shivada_jade_gemstone, amount: 6 },
-          { item: itemList.hoarfrost_core, amount: 20 },
-          { item: itemList.qingxin, amount: 60 },
-          { item: itemList.energy_nectar, amount: 24 },
-        ],
-        mora: 120000,
-      },
-    ],
-    stats: { hp: 9108, atk: 311, def: 586 },
-    material: {
-      book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
-      material: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
-      boss: itemList.shadow_of_the_warrior,
-    },
-  },
-  xiao: {
-    name: 'Xiao',
-    id: 'xiao',
-    rarity: 5,
-    element: elements.anemo,
-    weapon: weapons.polearm,
-    sex: 'male',
-    nation: 'liyue',
-    ascension: [
-      {
-        items: [
-          { item: itemList.vayuda_turquoise_sliver, amount: 1 },
-          { item: itemList.none, amount: null },
-          { item: itemList.qingxin, amount: 3 },
-          { item: itemList.slime_condensate, amount: 3 },
-        ],
-        mora: 20000,
-      },
-      {
-        items: [
-          { item: itemList.vayuda_turquoise_fragment, amount: 3 },
-          { item: itemList.juvenile_jade, amount: 2 },
-          { item: itemList.qingxin, amount: 10 },
-          { item: itemList.slime_condensate, amount: 15 },
-        ],
-        mora: 40000,
-      },
-      {
-        items: [
-          { item: itemList.vayuda_turquoise_fragment, amount: 6 },
-          { item: itemList.juvenile_jade, amount: 4 },
-          { item: itemList.qingxin, amount: 20 },
-          { item: itemList.slime_secretions, amount: 12 },
-        ],
-        mora: 60000,
-      },
-      {
-        items: [
-          { item: itemList.vayuda_turquoise_chunk, amount: 3 },
-          { item: itemList.juvenile_jade, amount: 8 },
-          { item: itemList.qingxin, amount: 30 },
-          { item: itemList.slime_secretions, amount: 18 },
-        ],
-        mora: 80000,
-      },
-      {
-        items: [
-          { item: itemList.vayuda_turquoise_chunk, amount: 6 },
-          { item: itemList.juvenile_jade, amount: 12 },
-          { item: itemList.qingxin, amount: 45 },
-          { item: itemList.slime_concentrate, amount: 12 },
-        ],
-        mora: 100000,
-      },
-      {
-        items: [
-          { item: itemList.vayuda_turquoise_gemstone, amount: 6 },
-          { item: itemList.juvenile_jade, amount: 20 },
-          { item: itemList.qingxin, amount: 60 },
-          { item: itemList.slime_concentrate, amount: 24 },
-        ],
-        mora: 120000,
-      },
-    ],
-    stats: { hp: 11840, atk: 325, def: 743 },
-    material: {
-      book: [itemList.teachings_of_prosperity, itemList.guide_to_prosperity, itemList.philosophies_of_prosperity],
-      material: [itemList.slime_condensate, itemList.slime_secretions, itemList.slime_concentrate],
-      boss: itemList.shadow_of_the_warrior,
-    },
-  },
-  hu_tao: {
-    name: 'Hu Tao',
-    id: 'hu_tao',
-    rarity: 5,
-    element: elements.pyro,
-    weapon: weapons.polearm,
-    sex: 'female',
-    nation: 'liyue',
-    ascension: [
-      {
-        items: [
-          { item: itemList.agnidus_agate_sliver, amount: 1 },
-          { item: itemList.none, amount: null },
-          { item: itemList.silk_flower, amount: 3 },
-          { item: itemList.whopperflower_nectar, amount: 3 },
-        ],
-        mora: 20000,
-      },
-      {
-        items: [
-          { item: itemList.agnidus_agate_fragment, amount: 3 },
-          { item: itemList.juvenile_jade, amount: 2 },
-          { item: itemList.silk_flower, amount: 10 },
-          { item: itemList.whopperflower_nectar, amount: 15 },
-        ],
-        mora: 40000,
-      },
-      {
-        items: [
-          { item: itemList.agnidus_agate_fragment, amount: 6 },
-          { item: itemList.juvenile_jade, amount: 4 },
-          { item: itemList.silk_flower, amount: 20 },
-          { item: itemList.shimmering_nectar, amount: 12 },
-        ],
-        mora: 60000,
-      },
-      {
-        items: [
-          { item: itemList.agnidus_agate_chunk, amount: 3 },
-          { item: itemList.juvenile_jade, amount: 8 },
-          { item: itemList.silk_flower, amount: 30 },
-          { item: itemList.shimmering_nectar, amount: 18 },
-        ],
-        mora: 80000,
-      },
-      {
-        items: [
-          { item: itemList.agnidus_agate_chunk, amount: 6 },
-          { item: itemList.juvenile_jade, amount: 12 },
-          { item: itemList.silk_flower, amount: 45 },
-          { item: itemList.energy_nectar, amount: 12 },
-        ],
-        mora: 100000,
-      },
-      {
-        items: [
-          { item: itemList.agnidus_agate_gemstone, amount: 6 },
-          { item: itemList.juvenile_jade, amount: 20 },
-          { item: itemList.silk_flower, amount: 60 },
-          { item: itemList.energy_nectar, amount: 24 },
-        ],
-        mora: 120000,
-      },
-    ],
-    stats: { hp: 14459, atk: 99, def: 815 },
-    material: {
-      book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
-      material: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
-      boss: itemList.shard_of_a_foul_legacy,
     },
   },
 };
