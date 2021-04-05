@@ -66,6 +66,7 @@
     "def": "DEF"
   },
   "wish": {
+    "title": "Wish Counter",
     "autoImport": "Auto Import",
     "helpAndSetting": "Help & Settings",
     "wishesWorth": "Wishes Worth",
@@ -476,6 +477,8 @@
     "allowNotification": "Please allow the notification prompt that shows up!",
     "transformer": "Parametric Transformer Reminder",
     "last": "Enter when you last used the Parametric Transformer",
+    "lastHoyolab": "Enter what time you want to be notified for the daily check-in",
+    "every": "Everyday at",
     "countdown": "Enter countdown time of the Parametric Transformer (If you don't remember the exact time, you need to approximate it)",
     "useLast": "Use last used time instead",
     "useCountdown": "Use countdown time instead",

@@ -46,7 +46,8 @@
     },
     "items": {
       "title": "Bisa di Farm Hari Ini",
-      "detail": "Items"
+      "detail": "Items",
+      "sunday": "Minggu bisa farm semua item 😁"
     },
     "calculator": {
       "title": "🧮 Hitung Ascension dan Talent Book Karakter dan Senjata! Semua hasil perhitungan bisa ditambahkan ke daftar todo, dan juga akan menampilkan berapa resin yang kamu perlukan!",
@@ -65,6 +66,7 @@
     "def": "DEF"
   },
   "wish": {
+    "title": "Wish Counter",
     "autoImport": "Import Otomatis",
     "helpAndSetting": "Bantuan & Pengaturan",
     "wishesWorth": "Wish Setara Dengan",
@@ -474,6 +476,8 @@
     "early": "Notifikasi mungkin akan muncul lebih awal (sekitar 1-10 menit) karena limitasi dalam pengiriman notifikasi.",
     "transformer": "Reminder Parametric Transformer",
     "last": "Masukkan kapan kamu terakhir menggunakan Parametric Transformer",
+    "lastHoyolab": "Masukkan jam berapa kamu ingin diingatkan untuk daily check-in nya",
+    "every": "Setiap hari jam",
     "countdown": "Masukkan waktu countdown Parametric Transformer (jika kamu tidak ingat waktu pasti nya, kamu perlu mengira-ngira-kannya)",
     "useLast": "Gunakan waktu terakhir menggunakan",
     "useCountdown": "Gunakan waktu countdown",
