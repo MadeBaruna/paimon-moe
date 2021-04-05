@@ -105,6 +105,14 @@ export const banners = {
       color: '#35C297',
       timezoneDependent: true,
     },
+    {
+      name: 'Farewell of Snezhnaya',
+      image: 2,
+      shortName: 'Tartaglia',
+      start: '2021-04-06 18:00:00',
+      end: '2021-04-27 15:00:00',
+      color: '#50A3C0',
+    },
   ],
   weapons: [
     {
@@ -183,6 +191,14 @@ export const banners = {
       shortName: 'Elegy',
       color: '#f54e42',
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 10,
+      start: '2021-04-06 18:00:00',
+      end: '2021-04-27 15:00:00',
+      shortName: 'Skyward',
+      color: '#f5c242',
     },
   ],
 };
