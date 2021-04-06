@@ -343,7 +343,14 @@
     </p>
     {#if changelogOpen}
       <div transition:slide class="mt-4">
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/03/31
+        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/04/06
+- Add Rosaria
+- Add rate up icon on detail banner
+- Update banner list
+- Update wish tally
+- Update timeline
+
+2021/03/31
 - Updated wording and layout on mobile
 - Add privacy policy
 
