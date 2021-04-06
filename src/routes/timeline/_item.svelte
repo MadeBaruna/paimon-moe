@@ -48,7 +48,7 @@
     : '200%'};"
 >
   <div class="event-item {nextDiff < 1 ? '' : 'rounded-xl'}" />
-  <span class="event-name text sticky left-0 font-display text-base md:text-lg text-black font-bold whitespace-no-wrap">
+  <span class="event-name text sticky left-0 font-display text-base md:text-lg text-black font-bold whitespace-no-wrap overflow-hidden">
     {event.name}
   </span>
   <!-- Ending timer-->
