@@ -19,7 +19,7 @@ export const eventsData = [
       end: '2021-04-8 23:59:59',
       color: '#EFDEB4',
       zoom: '180%',
-      url: 'https://www.hoyolab.com/genshin/article/278505',
+      url: 'https://genshin.mihoyo.com/en/news/detail/9694',
       showOnHome: true,
     },
   ],
