@@ -134,7 +134,10 @@
         if (item) {
           featuredValues[i] = {
             total: item.count,
-            percentage: (item.count / data.total.legendary) * 100,
+            percentage:
+              (item.count /
+                (type === 'character' && id !== 200001 && i === 1 ? data.total.rare : data.total.legendary)) *
+              100,
           };
         }
       }
@@ -308,7 +311,11 @@
                       {type === 'character' ? characters[feat].name : weaponList[feat].name}
                       <span class="text-gray-400">{$t('wish.tally.summoned')}</span>
                     </p>
-                    <p class="text-gray-400">{numberFormat.format(featuredValues[i].percentage)}% {$t('wish.tally.fromFiveStar')}</p>
+                    <p class="text-gray-400">
+                      {numberFormat.format(featuredValues[i].percentage)}% {$t(
+                        type === 'character' && i === 1 ? 'wish.tally.fromFourStar' : 'wish.tally.fromFiveStar',
+                      )}
+                    </p>
                   </td>
                 </tr>
               {/each}

@@ -1,7 +1,14 @@
 <script>
   import { t } from 'svelte-i18n';
+import Button from '../../../components/Button.svelte';
   import { banners } from '../../../data/banners';
   import Item from './_item.svelte';
+
+  let showOld = false;
+
+  function showOldTally() {
+    showOld = true;
+  }
 </script>
 
 <svelte:head>
@@ -23,11 +30,22 @@
     </p>
 
     <div class="px-4 md:px-8">
+      <Item type="character" banner={banners.characters[10]} id={300011} featured={['tartaglia', 'rosaria']} />
+      <Item
+        type="weapon"
+        banner={banners.weapons[9]}
+        id={400010}
+        featured={['skyward_harp', 'lost_prayer_to_the_sacred_winds']}
+      />
       <Item type="character" banner={banners.characters[9]} id={300010} featured={['venti']} />
       <Item type="weapon" banner={banners.weapons[8]} id={400009} featured={['elegy_for_the_end', 'skyward_blade']} />
       <Item type="character" banner={banners.standard[0]} id={200001} />
-      <Item type="character" banner={banners.characters[8]} id={300009} featured={['hu_tao']} />
-      <Item type="weapon" banner={banners.weapons[7]} id={400008} featured={['wolfs_gravestone', 'staff_of_homa']} />
+      {#if showOld}
+        <Item type="character" banner={banners.characters[8]} id={300009} featured={['hu_tao']} />
+        <Item type="weapon" banner={banners.weapons[7]} id={400008} featured={['wolfs_gravestone', 'staff_of_homa']} />
+      {:else}
+        <Button on:click={showOldTally}>{$t('wish.tally.show')} {banners.characters[8].name} & {banners.weapons[7].name}</Button>
+      {/if}
     </div>
   </div>
 </div>

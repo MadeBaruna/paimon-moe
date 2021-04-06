@@ -14,9 +14,12 @@
     "welcome": "Selamat Datang di Paimon.moe! 👋",
     "message": "Your best Genshin Impact companion! Membantu kamu merencanakan apa yang harus di farm dengan kalkulator ascension, juga catat progress mu dengan todo dan wish counter.",
     "banner": {
-      "featured": "Venti",
+      "featured": [
+        "Rosaria",
+        "Tartaglia"
+      ],
       "summoned": "Pulang",
-      "percentage": "dari semua 5",
+      "percentage": "dari semua",
       "avg": "Pity rata-rata",
       "subtitle": "Dihitung dari data yang dikirim oleh pengguna paimon.moe",
       "detail": "Perhitungan Wish Pity Global"
@@ -249,7 +252,9 @@
       "subtitle": "Rata-rata pity dari kiriman pengguna paimon.moe",
       "update": "Diupdate",
       "summoned": "Pulang",
-      "fromFiveStar": "dari semua 5*",
+      "fromFiveStar": "dari semua 5★",
+      "fromFourStar": "dari semua 4★",
+      "show": "Tampilkan",
       "name": "Nama",
       "total": "Total",
       "wishTotal": "Total Wish",
@@ -427,19 +432,35 @@
     "collect": [
       {
         "title": "Url yang dikunjungi di paimon.moe, referer, browser, sistem operasi, tipe device, negara visitor",
-        "content": ["Paimon.moe menggunakan", "plausible.io", "(analitik yang ramah privasi) sehingga kami bisa melihat apa saja fitur yang digunakan orang-orang, dan kami bisa memprioritaskan fitur apa yang perlu ditambahkan atau ditingkatkan."]
+        "content": [
+          "Paimon.moe menggunakan",
+          "plausible.io",
+          "(analitik yang ramah privasi) sehingga kami bisa melihat apa saja fitur yang digunakan orang-orang, dan kami bisa memprioritaskan fitur apa yang perlu ditambahkan atau ditingkatkan."
+        ]
       },
       {
         "title": "Error dari website paimon.moe",
-        "content": ["Paimon.moe akan mengirim data error yang terjadi di website ini ke", "sentry.io", "sehingga kami bisa mencari tau apa yang salah dan memperbaikinya."]
+        "content": [
+          "Paimon.moe akan mengirim data error yang terjadi di website ini ke",
+          "sentry.io",
+          "sehingga kami bisa mencari tau apa yang salah dan memperbaikinya."
+        ]
       },
       {
         "title": "Wish Pity",
-        "content": ["Paimon.moe akan menyimpan perhitungan pity 4*, perhitungan pity 5*, dan informasi wish 5* (yaitu waktu wish, nama item, angka pity) jika kamu mencentang 'Kirim pity untuk perhitungan pity global' di Auto Import Wish atau secara manual mensubmit di menu bantuan dan pengaturan. Paimon.moe akan menyatukan data-datanya kemudian menghitung pity rata-rata tiap banner dari pengguna paimon.moe. Kamu bisa mengecek nya di", "wish tally"]
+        "content": [
+          "Paimon.moe akan menyimpan perhitungan pity 4*, perhitungan pity 5*, dan informasi wish 5* (yaitu waktu wish, nama item, angka pity) jika kamu mencentang 'Kirim pity untuk perhitungan pity global' di Auto Import Wish atau secara manual mensubmit di menu bantuan dan pengaturan. Paimon.moe akan menyatukan data-datanya kemudian menghitung pity rata-rata tiap banner dari pengguna paimon.moe. Kamu bisa mengecek nya di",
+          "wish tally"
+        ]
       }
     ],
     "subtitleNotCollect": "Apa yang paimon.moe TIDAK kumpulkan",
-    "notCollect": ["Paimon.moe tidak menyimpan password, uid, username, email, temporary keys, atau feedback url. Jika kamu tertarik, projek nya open source dan kamu bisa mengecek kode nya di", "paimon-moe-api Github", "dan", "paimon-moe Github"]
+    "notCollect": [
+      "Paimon.moe tidak menyimpan password, uid, username, email, temporary keys, atau feedback url. Jika kamu tertarik, projek nya open source dan kamu bisa mengecek kode nya di",
+      "paimon-moe-api Github",
+      "dan",
+      "paimon-moe Github"
+    ]
   },
   "sync": {
     "message": "Data yang tersimpan pada browser ini tidak sama dengan yang tersimpan pada Google Drive!",

@@ -14,9 +14,12 @@
     "welcome": "Welcome to Paimon.moe! 👋",
     "message": "Your best Genshin Impact companion! Help you plan what to farm with ascension calculator, also track your progress with todo and wish counter.",
     "banner": {
-      "featured": "Venti",
+      "featured": [
+        "Rosaria",
+        "Tartaglia"
+      ],
       "summoned": "Summoned",
-      "percentage": "from all 5",
+      "percentage": "from all",
       "avg": "Pity average",
       "subtitle": "Calculated from data submitted by paimon.moe users",
       "detail": "Global With Tally"
@@ -249,7 +252,9 @@
       "subtitle": "Global average pity from paimon.moe users submission",
       "update": "Updated",
       "summoned": "Summoned",
-      "fromFiveStar": "from all 5*",
+      "fromFiveStar": "from all 5★",
+      "fromFourStar": "from all 4★",
+      "show": "Show",
       "name": "Name",
       "total": "Total",
       "wishTotal": "Wish Total",

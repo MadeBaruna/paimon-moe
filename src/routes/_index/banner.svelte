@@ -12,13 +12,24 @@
 
   const dispatch = createEventDispatcher();
 
-  export let featured;
-  export let bannerId;
+  const featured = {
+    rosaria: {
+      rarity: 'rare',
+      count: 0,
+      average: '...',
+      percentage: '...',
+    },
+    tartaglia: {
+      rarity: 'legendary',
+      count: 0,
+      average: '...',
+      percentage: '...',
+    },
+  };
+  const bannerId = 300011;
+  const image = 'childerosaria.png';
 
   let loading = true;
-  let featuredPull = 0;
-  let percentage = '...';
-  let average = '...';
 
   async function getData() {
     const url = new URL(`${__paimon.env.API_HOST}/wish`);
@@ -33,10 +44,15 @@
 
       const data = await res.json();
 
-      const item = data.list.find((e) => e.name === featured);
-      featuredPull = item.count;
-      percentage = numberFormat.format((item.count / data.total.legendary) * 100);
-      average = numberFormat.format(data.pityAverage.legendary);
+      for (const e of data.list) {
+        if (featured[e.name]) {
+          featured[e.name].count = e.count;
+          featured[e.name].percentage = numberFormat.format((e.count / data.total[featured[e.name].rarity]) * 100);
+          featured[e.name].average = numberFormat.format(data.pityAverage[featured[e.name].rarity]);
+        }
+      }
+
+      console.log(featured);
 
       loading = false;
     } catch (err) {
@@ -53,32 +69,41 @@
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
   <div class="relative">
-    <img src="/images/home/venti.png" alt="venti" style="min-height: 150px;" />
-    <div
-      class="flex text-white items-center absolute bottom-0 pb-1"
-      style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 27%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%);"
-    >
-      <h3 class="text-4xl ml-4 font-black leading-10" style="margin-top: 8px;">
-        {#if loading}
-          <Icon path={mdiLoading} spin />
-        {:else}
-          {featuredPull}
-        {/if}
-      </h3>
-      <div class="flex flex-col ml-2 pr-2">
-        <p class="font-semibold">{$t('home.banner.featured')}</p>
-        <p class="text-gray-200 leading-3">{$t('home.banner.summoned')}</p>
-      </div>
+    <img src="/images/home/{image}" alt="banner" style="min-height: 150px;" />
+    <div class="flex flex-wrap text-white items-center absolute bottom-0 w-full">
+      {#each Object.entries(featured) as [_, item], i}
+        <div
+          class="flex flex-col pt-2"
+          style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 27%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
+          {i ===
+          0
+            ? 'margin-right: 20%;'
+            : ''}"
+        >
+          <h3 class="text-3xl ml-4 font-black leading-6">
+            {#if loading}
+              <Icon path={mdiLoading} spin size={0.8} />
+            {:else}
+              {item.count}
+            {/if}
+          </h3>
+          <p class="ml-4 font-sm leading-2">{$t(`home.banner.featured.${i}`)}</p>
+        </div>
+      {/each}
     </div>
   </div>
-  <div class="flex flex-wrap items-start pl-2 mt-1">
-    <p class="text-white mr-4">
-      <span class="font-semibold">{percentage}%</span>
-      {$t('home.banner.percentage')}<Icon className="mb-1" path={mdiStar} size={0.8} />
-    </p>
-    <p class="text-white">{$t('home.banner.avg')} <span class="font-semibold">{average}</span></p>
-  </div>
-  <p class="text-gray-400 pl-2">※ {$t('home.banner.subtitle')}</p>
+  <div class="h-1" />
+  {#each Object.entries(featured) as [_, item], i}
+    <div class="flex flex-wrap items-start pl-2">
+      <p class="text-white mr-4 leading-4">
+        <span class="font-semibold">{item.percentage}%</span>
+        {$t('home.banner.percentage')}
+        {item.rarity === 'legendary' ? '5' : '4'}★
+      </p>
+      <p class="text-white leading-4">{$t('home.banner.avg')} <span class="font-semibold">{item.average}</span></p>
+    </div>
+  {/each}
+  <p class="text-gray-400 pl-2 mt-1">※ {$t('home.banner.subtitle')}</p>
   <a
     href="/wish/tally"
     class="flex justify-end items-center self-end lg:self-start text-white mt-4 bg-background-secondary rounded-xl py-2 px-4

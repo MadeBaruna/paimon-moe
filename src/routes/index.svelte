@@ -42,7 +42,7 @@
     <Welcome on:done={onDone} />
     <Wish on:done={onDone} />
     <Reminder on:done={onDone} />
-    <Banner on:done={onDone} featured="venti" bannerId={300010} />
+    <Banner on:done={onDone} />
     <Event on:done={onDone} />
     <Item on:done={onDone} />
     <Discord on:done={onDone} />
