@@ -241,7 +241,8 @@
       "roll": "#Roll",
       "totalThisBanner": "Total pull di banner ini",
       "worth": "Setara dengan",
-      "loading": "Loading... (Kalau tidak selesai-selesai, ganti server di halaman settings)"
+      "loading": "Loading... (Kalau tidak selesai-selesai, ganti server di halaman settings)",
+      "guaranteed": "5★ selanjutnya pasti karakter atau senjata promotional"
     },
     "tally": {
       "title": "Perhitungan Pity Wish",

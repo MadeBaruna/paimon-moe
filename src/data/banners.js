@@ -28,6 +28,7 @@ export const banners = {
       end: '2020-10-18 18:00:00',
       color: '#55E4B0',
       timezoneDependent: true,
+      featured: ['venti'],
     },
     {
       name: 'Sparkling Steps',
@@ -36,6 +37,7 @@ export const banners = {
       start: '2020-10-20 18:00:00',
       end: '2020-11-10 16:00:00',
       color: '#CA360E',
+      featured: ['klee'],
     },
     {
       name: 'Farewell of Snezhnaya',
@@ -45,6 +47,7 @@ export const banners = {
       end: '2020-12-01 16:00:00',
       color: '#50A3C0',
       timezoneDependent: true,
+      featured: ['tartaglia'],
     },
     {
       name: 'Gentry of Hermitage',
@@ -53,6 +56,7 @@ export const banners = {
       start: '2020-12-01 18:00:00',
       end: '2020-12-22 15:00:00',
       color: '#D1A55C',
+      featured: ['zhongli'],
     },
     {
       name: 'Secretum Secretorum',
@@ -62,6 +66,7 @@ export const banners = {
       end: '2021-01-12 16:00:00',
       color: '#FCFE83',
       timezoneDependent: true,
+      featured: ['albedo'],
     },
     {
       name: 'Adrift in the Harbor',
@@ -70,6 +75,7 @@ export const banners = {
       start: '2021-01-12 18:00:00',
       end: '2021-02-02 15:00:00',
       color: '#6994DF',
+      featured: ['ganyu'],
     },
     {
       name: 'Invitation to Mundane Life',
@@ -79,6 +85,7 @@ export const banners = {
       end: '2021-02-17 16:00:00',
       color: '#2BE3F8',
       timezoneDependent: true,
+      featured: ['xiao'],
     },
     {
       name: 'Dance of Lanterns',
@@ -87,6 +94,7 @@ export const banners = {
       start: '2021-02-17 18:00:00',
       end: '2021-03-02 16:00:00',
       color: '#AB6CD7',
+      featured: ['keqing'],
     },
     {
       name: 'Moment of Bloom',
@@ -95,6 +103,7 @@ export const banners = {
       start: '2021-03-02 18:00:00',
       end: '2021-03-16 15:00:00',
       color: '#BF5042',
+      featured: ['hu_tao'],
     },
     {
       name: 'Ballad in Goblets',
@@ -104,6 +113,7 @@ export const banners = {
       end: '2021-04-06 16:00:00',
       color: '#35C297',
       timezoneDependent: true,
+      featured: ['venti'],
     },
     {
       name: 'Farewell of Snezhnaya',
@@ -112,6 +122,7 @@ export const banners = {
       start: '2021-04-06 18:00:00',
       end: '2021-04-27 15:00:00',
       color: '#50A3C0',
+      featured: ['tartaglia'],
     },
   ],
   weapons: [
@@ -123,6 +134,7 @@ export const banners = {
       shortName: 'Amos',
       color: '#f54e42',
       timezoneDependent: true,
+      featured: ['aquila_favonia', 'amos_bow'],
     },
     {
       name: 'Epitome Invocation',
@@ -131,6 +143,7 @@ export const banners = {
       end: '2020-11-10 16:00:00',
       shortName: 'Lost Prayer',
       color: '#f5c242',
+      featured: ['lost_prayer_to_the_sacred_winds', 'wolfs_gravestone'],
     },
     {
       name: 'Epitome Invocation',
@@ -140,6 +153,7 @@ export const banners = {
       shortName: 'Skyward',
       color: '#f5ef42',
       timezoneDependent: true,
+      featured: ['skyward_harp', 'memory_of_dust'],
     },
     {
       name: 'Epitome Invocation',
@@ -148,6 +162,7 @@ export const banners = {
       end: '2020-12-22 15:00:00',
       shortName: 'Vortex',
       color: '#7ef542',
+      featured: ['vortex_vanquisher', 'the_unforged'],
     },
     {
       name: 'Epitome Invocation',
@@ -157,6 +172,7 @@ export const banners = {
       shortName: 'Summit',
       color: '#42ecf5',
       timezoneDependent: true,
+      featured: ['summit_shaper', 'skyward_atlas'],
     },
     {
       name: 'Epitome Invocation',
@@ -165,6 +181,7 @@ export const banners = {
       end: '2021-02-02 15:00:00',
       shortName: 'Amos',
       color: '#424ef5',
+      featured: ['amos_bow', 'skyward_pride'],
     },
     {
       name: 'Epitome Invocation',
@@ -174,6 +191,7 @@ export const banners = {
       shortName: 'Primordial',
       color: '#b042f5',
       timezoneDependent: true,
+      featured: ['primordial_jade_winged-spear', 'primordial_jade_cutter'],
     },
     {
       name: 'Epitome Invocation',
@@ -182,6 +200,7 @@ export const banners = {
       end: '2021-03-16 15:00:00',
       shortName: 'Homa',
       color: '#f542c8',
+      featured: ['wolfs_gravestone', 'staff_of_homa'],
     },
     {
       name: 'Epitome Invocation',
@@ -191,6 +210,7 @@ export const banners = {
       shortName: 'Elegy',
       color: '#f54e42',
       timezoneDependent: true,
+      featured: ['elegy_for_the_end', 'skyward_blade'],
     },
     {
       name: 'Epitome Invocation',
@@ -199,6 +219,7 @@ export const banners = {
       end: '2021-04-27 15:00:00',
       shortName: 'Skyward',
       color: '#f5c242',
+      featured: ['skyward_harp', 'lost_prayer_to_the_sacred_winds'],
     },
   ],
 };

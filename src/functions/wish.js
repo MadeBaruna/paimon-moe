@@ -92,6 +92,7 @@ export function process(id) {
   let currentBanner = null;
   let grouped = false;
   let striped = false;
+  let rateUp = false;
   let startBanner = false;
   let currentBannerIndex = -1;
   let hasManualInput = false;
@@ -137,7 +138,12 @@ export function process(id) {
       at: selectedBanners[currentBannerIndex].total,
     };
 
-    if (item.rarity === 5) {
+    if (item.rarity === 5) {    
+      if (currentBanner.featured) {
+        newPull.guaranteed = rateUp;
+        rateUp = !currentBanner.featured.includes(newPull.id);
+      }
+
       selectedBanners[currentBannerIndex].legendary.push(newPull);
       allLegendary.push(newPull);
     } else if (item.rarity === 4) {

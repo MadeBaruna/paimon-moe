@@ -29,7 +29,7 @@ export async function submitWishTally() {
 
     const firstFivePulls = pulls.slice(0, 5).map((e) => [e.time.toString(), e.id, e.type, e.pity, e.group === 'group']);
 
-    for (let i = banner.length - 1; i >= Math.max(banner.length - 2, 0); i--) {
+    for (let i = banner.length - 1; i >= Math.max(banner.length - 3, 0); i--) {
       const total = banner[i].total;
       if (total === 0) continue;
 
@@ -42,11 +42,20 @@ export async function submitWishTally() {
         e.type,
         e.pity,
         e.group === 'group',
+        e.guaranteed,
+        5,
       ]);
+
+      // rosaria only
+      const rosariaPulls = banner[i].rare.character
+        .filter((e) => e.id === 'rosaria')
+        .map((e) => [e.time.toString(), e.id, e.type, e.pity, e.group === 'group', true, 4]);
+      legendaryPulls.push(...rosariaPulls);
 
       console.log(legendaryPulls);
       console.log(rarePity);
       console.log(legendaryCount, rareCount, total);
+
       await sendWish({
         firstPulls: firstFivePulls,
         legendaryPulls,

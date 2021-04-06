@@ -8,7 +8,7 @@
 <script>
   import { t } from 'svelte-i18n';
   import { getContext, onMount, tick } from 'svelte';
-  import { mdiArrowLeft, mdiStar } from '@mdi/js';
+  import { mdiArrowLeft, mdiArrowUpCircle, mdiStar } from '@mdi/js';
   import dayjs from 'dayjs';
   import Chart from 'chart.js';
 
@@ -54,6 +54,7 @@
   let total = 0;
   let legendary = 0;
   let rare = 0;
+  let nextRateUp = false;
 
   let allLegendary = [];
   let allRare = [];
@@ -132,6 +133,8 @@
     let grouped = false;
     let striped = false;
     let startBanner = false;
+    let rateUp = false;
+
     for (let i = 0; i < pullData.length; i++) {
       const pull = pullData[i];
       const next = pullData[i + 1] || { time: dayjs().year(2000).unix() };
@@ -173,6 +176,11 @@
       };
 
       if (item.rarity === 5) {
+        if (currentBanner.featured) {
+          newPull.guaranteed = rateUp;
+          rateUp = !currentBanner.featured.includes(newPull.id);
+        }
+
         selectedBanners[currentBannerIndex].legendary.push(newPull);
         allLegendary.push(newPull);
       } else if (item.rarity === 4) {
@@ -207,7 +215,7 @@
       currentPulls.push(newPull);
     }
 
-    console.log(currentPulls.slice());
+    nextRateUp = rateUp;
     pulls = currentPulls;
     sorted = pulls.reverse();
 
@@ -409,10 +417,10 @@
     <div class="text-white pl-4 md:pl-8 mt-4">{$t('wish.detail.loading')}</div>
     <div class="text-gray-400 pl-4 md:pl-8 mt-2">
       {#if errorProcessingPull !== null}
-        Show this on Discord if still stuck:<br/>
-        Error when getting banner for<br/>
-        id: {errorProcessingPull.id}<br/>
-        time: {errorProcessingPull.time}<br/>
+        Show this on Discord if still stuck:<br />
+        Error when getting banner for<br />
+        id: {errorProcessingPull.id}<br />
+        time: {errorProcessingPull.time}<br />
         server: {$server}
       {/if}
     </div>
@@ -580,7 +588,15 @@
             <p class="text-gray-400 font-body">Total</p>
             <p class="text-gray-400 font-body text-xl font-bold">{total}</p>
             <p class="text-gray-400 font-body mt-2 flex items-center">5<Icon size={0.7} path={mdiStar} /> Pity</p>
-            <p class="text-legendary-from font-body text-xl font-bold">{legendary}</p>
+            <p class="text-legendary-from font-body text-xl font-bold flex items-center">
+              {legendary}
+              {#if nextRateUp}
+                <span class="rate-tooltip" style="margin-bottom: 2px; margin-left: 2px;">
+                  <Icon size={0.8} path={mdiArrowUpCircle} />
+                  <span class="tooltip-content">{$t('wish.detail.guaranteed')}</span>
+                </span>
+              {/if}
+            </p>
             <p class="text-gray-400 font-body mt-2 flex items-center">4<Icon size={0.7} path={mdiStar} /> Pity</p>
             <p class="text-rare-from font-body text-xl font-bold">{rare}</p>
           </div>
@@ -681,6 +697,34 @@
   table.list-table {
     @screen xl {
       padding-right: 17rem;
+    }
+  }
+
+  .rate-tooltip {
+    @apply relative;
+
+    .tooltip-content {
+      bottom: 30px;
+      left: 0px;
+      width: 250px;
+      @apply absolute;
+      @apply hidden;
+      @apply bg-gray-400;
+      @apply text-background;
+      @apply rounded-xl;
+      @apply p-2;
+      @apply text-sm;
+
+      @screen md {
+        top: 0px;
+        bottom: auto;
+        left: 25px;
+        width: 320px;
+      }
+    }
+
+    &:hover .tooltip-content {
+      @apply block;
     }
   }
 
