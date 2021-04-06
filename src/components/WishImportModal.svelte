@@ -686,9 +686,14 @@
             <li class="my-2">{$t('wish.import.guide.android.6')}</li>
             <li class="my-2">{$t('wish.import.guide.android.7')}</li>
             <li class="my-2">{$t('wish.import.guide.android.8')}</li>
+            <li class="my-2">
+              <a href="https://www.youtube.com/watch?v=dphwcYfZthA" target="_blank" class="text-primary hover:underline">
+                {$t('wish.import.guide.android.9')}
+              </a>
+            </li>
           </ol>
         </div>
-        <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.android.9')} />
+        <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.android.10')} />
       {:else if selectedType === 'ios'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
           <ol class="list-decimal ml-4">
