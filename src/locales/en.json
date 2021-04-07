@@ -145,6 +145,7 @@
         "a6": "Make sure you copy all the text (hold and press Select All for mobile devices); maybe you missed some text that are needed for the importer to work."
       },
       "guide": {
+        "video": "Video Tutorial",
         "pc": [
           "Open Paimon menu [ESC]",
           "Click Feedback",
@@ -162,7 +163,6 @@
           "Hold the text and press select all, then copy that text (don't copy only some portion of the text)",
           "Turn on your Wi-Fi or data connection",
           "Paste the text to the textbox below",
-          "Video Tutorial",
           "Paste text here... Webpage not available..."
         ],
         "ios": [
