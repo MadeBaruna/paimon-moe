@@ -15,7 +15,7 @@
     const legendary = [];
     const rare = [];
 
-    const entries = Object.entries(data);
+    const entries = Object.entries(data).sort((a, b) => a[0].localeCompare(b[0]));
     for (let [time, value] of entries) {
       labels.push(time);
       total.push(value.total);
