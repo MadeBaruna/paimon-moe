@@ -21,7 +21,7 @@
       "summoned": "Summoned",
       "percentage": "from all",
       "avg": "Pity average",
-      "subtitle": "Calculated from data submitted by paimon.moe users",
+      "subtitle": "Calculated from data submitted by {user} paimon.moe users",
       "detail": "Global With Tally"
     },
     "wish": {
@@ -263,7 +263,9 @@
       "weapon": "Weapons",
       "character": "Characters",
       "error": "Data is not available yet 😞",
-      "pity": "Pity"
+      "pity": "Pity",
+      "median": "5★ Median",
+      "user": "Total Users"
     }
   },
   "calculator": {

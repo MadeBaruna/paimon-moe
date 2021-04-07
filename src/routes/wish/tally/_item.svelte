@@ -1,6 +1,6 @@
 <script>
   import { t, locale } from 'svelte-i18n';
-  import { mdiChevronDown, mdiLoading, mdiStar, mdiYeast } from '@mdi/js';
+  import { mdiChevronDown, mdiLoading, mdiStar } from '@mdi/js';
   import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import dayjs from 'dayjs';
@@ -244,13 +244,10 @@
   });
 </script>
 
-<div class="bg-item rounded-xl p-4 mb-4">
+<div class="flex flex-col bg-item rounded-xl p-4 mb-4 gap-4">
   <div class="flex flex-col xl:flex-row">
-    <img
-      src="/images/banners/{banner.name} {banner.image}.png"
-      alt={banner.name}
-      class="rounded-xl mb-4 xl:mb-0 xl:h-64 xl:mr-4"
-    />
+    <img src="/images/banners/{banner.name} {banner.image}.png" alt={banner.name} class="rounded-xl xl:h-64 xl:mr-4" />
+    <div class="h-4 xl:h-0" />
     {#if loading}
       <Icon className="m-4" path={mdiLoading} color="white" size={2} spin />
     {:else if !error}
@@ -373,17 +370,19 @@
               </tr>
             {/each}
           </table>
+          <p class="text-gray-400 mt-2 text-sm text-center">
+            {$t('wish.tally.update')}
+            {updateTime}
+          </p>
         </div>
       {/if}
     {/if}
   </div>
   {#if !loading && !error}
-    <div class="border border-background rounded-xl xl:hidden mt-4 overflow-hidden">
+    <div class="border border-background rounded-xl xl:hidden overflow-hidden">
       <table class="text-white w-full table-fixed">
         <tr>
-          <th class="font-display text-gray-200 font-semibold px-2 pt-2"
-            >5<Icon size={0.5} path={mdiStar} /> {$t('wish.tally.pity')}</th
-          >
+          <th class="font-display text-gray-200 font-semibold px-2 pt-2">5★ {$t('wish.tally.pity')}</th>
           <th class="font-display text-gray-200 font-semibold border-l border-r border-background px-2 pt-2"
             >{$t('wish.tally.total')}</th
           >
@@ -417,12 +416,10 @@
         {/each}
       </table>
     </div>
-    <div class="border border-background rounded-xl xl:hidden mt-4 overflow-hidden">
+    <div class="border border-background rounded-xl xl:hidden overflow-hidden">
       <table class="text-white w-full table-fixed">
         <tr>
-          <th class="font-display text-gray-200 font-semibold px-2 pt-2"
-            >4<Icon size={0.5} path={mdiStar} /> {$t('wish.tally.pity')}</th
-          >
+          <th class="font-display text-gray-200 font-semibold px-2 pt-2">4★ {$t('wish.tally.pity')}</th>
           <th class="font-display text-gray-200 font-semibold border-l border-r border-background px-2 pt-2"
             >{$t('wish.tally.total')}</th
           >
@@ -452,13 +449,13 @@
         {/each}
       </table>
     </div>
-    <div class="border border-background rounded-xl hidden xl:block xl:mb-4 mt-4">
+    <div class="border border-background rounded-xl hidden xl:block">
       <table class="text-white w-full table-fixed">
         <tr>
           <td
             class="font-display text-gray-200 font-semibold px-2 py-1 whitespace-no-wrap text-right border-b border-background"
           >
-            5<Icon size={0.5} path={mdiStar} /><br />{$t('wish.tally.pity')}
+            5★<br />{$t('wish.tally.pity')}
           </td>
           {#each legendaryStep as label}
             <td class="text-center py-1 border-l border-b border-background">
@@ -501,15 +498,14 @@
         </tr>
       </table>
     </div>
-    <div class="flex">
-      <div class="border border-background rounded-xl hidden xl:block overflow-hidden mr-4" style="width: fit-content;">
+    <div class="flex flex-wrap gap-4">
+      <div class="border border-background rounded-xl hidden xl:block overflow-hidden" style="width: fit-content;">
         <table class="text-white">
           <tr>
             <td
               class="font-display text-gray-200 font-semibold px-2 py-1 whitespace-no-wrap text-right border-b border-background"
             >
-              4<Icon size={0.5} path={mdiStar} />
-              {$t('wish.tally.pity')}
+              4★ {$t('wish.tally.pity')}
             </td>
             {#each rarePity as _, i}
               <td class="text-center px-2 py-1 border-l border-b border-background">{i + 1}</td>
@@ -544,17 +540,25 @@
           </tr>
         </table>
       </div>
-      <div class="flex flex-col text-white mt-4 xl:mt-0">
-        <div class="bg-background rounded-xl px-4 py-2 mb-2 flex-1 flex items-center whitespace-no-wrap">
-          {$t('wish.tally.wishTotal')} <span class="font-semibold ml-2">{numberFormat.format(data.total.all)}</span>
+      <div class="flex flex-wrap gap-2 text-white">
+        <div class="gap-2 flex flex-col flex-wrap">
+          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
+            {$t('wish.tally.wishTotal')} <span class="font-semibold ml-2">{numberFormat.format(data.total.all)}</span>
+          </div>
+          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
+            {$t('wish.tally.worth')} <img class="w-4 h-4 inline mx-1" src="/images/primogem.png" alt="primogem" />
+            <span class="font-semibold">{numberFormat.format(data.total.all * 160)}</span>
+          </div>
         </div>
-        <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
-          {$t('wish.tally.worth')} <img class="w-4 h-4 inline mx-1" src="/images/primogem.png" alt="primogem" />
-          <span class="font-semibold">{numberFormat.format(data.total.all * 160)}</span>
+        <div class="gap-2 flex flex-col flex-wrap">
+          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
+            {$t('wish.tally.median')}
+            <span class="font-semibold ml-2">{numberFormat.format(data.median.legendary)}</span>
+          </div>
+          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
+            {$t('wish.tally.user')} <span class="font-semibold ml-2">{numberFormat.format(data.total.users)}</span>
+          </div>
         </div>
-      </div>
-      <div class="text-gray-600 pl-2 flex-1 flex items-end justify-end">
-        <span>{$t('wish.tally.update')} {updateTime}</span>
       </div>
     </div>
   {/if}

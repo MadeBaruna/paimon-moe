@@ -21,7 +21,7 @@
       "summoned": "Pulang",
       "percentage": "dari semua",
       "avg": "Pity rata-rata",
-      "subtitle": "Dihitung dari data yang dikirim oleh pengguna paimon.moe",
+      "subtitle": "Dihitung dari data yang dikirim oleh {user} pengguna paimon.moe",
       "detail": "Perhitungan Wish Pity Global"
     },
     "wish": {
@@ -262,7 +262,9 @@
       "weapon": "Senjata",
       "character": "Karakter",
       "error": "Data belum tersedia 😞",
-      "pity": "Pity"
+      "pity": "Pity",
+      "median": "5★ Median",
+      "user": "Total User"
     }
   },
   "calculator": {

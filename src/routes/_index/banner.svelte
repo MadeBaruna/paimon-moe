@@ -30,6 +30,7 @@
   const image = 'childerosaria.png';
 
   let loading = true;
+  let user = '';
 
   async function getData() {
     const url = new URL(`${__paimon.env.API_HOST}/wish`);
@@ -44,6 +45,7 @@
 
       const data = await res.json();
 
+      user = data.total.users;
       for (const e of data.list) {
         if (featured[e.name]) {
           featured[e.name].count = e.count;
@@ -51,8 +53,6 @@
           featured[e.name].average = numberFormat.format(data.pityAverage[featured[e.name].rarity]);
         }
       }
-
-      console.log(featured);
 
       loading = false;
     } catch (err) {
@@ -103,7 +103,7 @@
       <p class="text-white leading-4">{$t('home.banner.avg')} <span class="font-semibold">{item.average}</span></p>
     </div>
   {/each}
-  <p class="text-gray-400 pl-2 mt-1">※ {$t('home.banner.subtitle')}</p>
+  <p class="text-gray-400 pl-2 mt-1">※ {$t('home.banner.subtitle', { values: { user }})}</p>
   <a
     href="/wish/tally"
     class="flex justify-end items-center self-end lg:self-start text-white mt-4 bg-background-secondary rounded-xl py-2 px-4
