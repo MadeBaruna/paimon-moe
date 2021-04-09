@@ -2314,49 +2314,49 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
-          { item: itemList.dead_ley_line_branch, amount: 3 },
-          { item: itemList.treasure_hoarder_insignia, amount: 2 },
+          { item: itemList.fetters_of_the_dandelion_gladiator, amount: 3 },
+          { item: itemList.chaos_device, amount: 3 },
+          { item: itemList.slime_condensate, amount: 2 },
         ],
         mora: 5000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
-          { item: itemList.dead_ley_line_branch, amount: 12 },
-          { item: itemList.treasure_hoarder_insignia, amount: 8 },
+          { item: itemList.chains_of_the_dandelion_gladiator, amount: 3 },
+          { item: itemList.chaos_device, amount: 12 },
+          { item: itemList.slime_condensate, amount: 8 },
         ],
         mora: 15000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
-          { item: itemList.dead_ley_line_leaves, amount: 6 },
-          { item: itemList.silver_raven_insignia, amount: 6 },
+          { item: itemList.chains_of_the_dandelion_gladiator, amount: 6 },
+          { item: itemList.chaos_circuit, amount: 6 },
+          { item: itemList.slime_secretions, amount: 6 },
         ],
         mora: 20000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
-          { item: itemList.dead_ley_line_leaves, amount: 12 },
-          { item: itemList.silver_raven_insignia, amount: 9 },
+          { item: itemList.shackles_of_the_dandelion_gladiator, amount: 3 },
+          { item: itemList.chaos_circuit, amount: 12 },
+          { item: itemList.slime_secretions, amount: 9 },
         ],
         mora: 30000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
-          { item: itemList.ley_line_sprouts, amount: 9 },
-          { item: itemList.golden_raven_insignia, amount: 6 },
+          { item: itemList.shackles_of_the_dandelion_gladiator, amount: 6 },
+          { item: itemList.chaos_core, amount: 9 },
+          { item: itemList.slime_concentrate, amount: 6 },
         ],
         mora: 35000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
-          { item: itemList.ley_line_sprouts, amount: 18 },
-          { item: itemList.golden_raven_insignia, amount: 12 },
+          { item: itemList.dream_of_the_dandelion_gladiator, amount: 4 },
+          { item: itemList.chaos_core, amount: 18 },
+          { item: itemList.slime_concentrate, amount: 12 },
         ],
         mora: 45000,
       },
