@@ -18,7 +18,7 @@
   import SettingData from '../components/SettingData.svelte';
   import Toast from '../components/Toast.svelte';
   import Icon from '../components/Icon.svelte';
-  import { mdiDiscord, mdiFacebook, mdiReddit, mdiTelegram } from '@mdi/js';
+  import { mdiDiscord, mdiFacebook, mdiReddit, mdiTelegram, mdiTwitter } from '@mdi/js';
 
   export let segment;
 
@@ -64,13 +64,19 @@
   </p>
   <div class="flex mt-4 md:items-center flex-col md:flex-row">
     <a class="text-gray-400 hover:text-primary" href="https://discord.gg/tPURAYgHV9" target="_blank">
-      <Icon path={mdiDiscord} size={1.5} /> {$t('footer.discord')}
+      <Icon path={mdiDiscord} size={1.5} />
+      {$t('footer.discord')}
     </a>
     <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
       <span class="text-gray-500">{$t('footer.community')}</span>
-      <a class="text-gray-400 hover:text-primary" href="https://t.me/GenshinImpact_ID" target="_blank">
-        <Icon path={mdiTelegram} size={1} /> Telegram	🇮🇩
-      </a>
+      <div>
+        <a class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap" href="https://t.me/GenshinImpact_ID" target="_blank">
+          <Icon path={mdiTelegram} size={1} /> Telegram 🇮🇩
+        </a>
+        <a class="text-gray-400 hover:text-primary whitespace-no-wrap" href="https://twitter.com/MadeBaruna" target="_blank">
+          <Icon path={mdiTwitter} size={1} /> Dev Twitter
+        </a>
+      </div>
     </div>
     <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
       <span class="text-gray-500">{$t('footer.official')}</span>
