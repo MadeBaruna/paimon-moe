@@ -12,6 +12,7 @@
     "compression": "^1.7.1",
     "exceljs": "^4.2.1",
     "polka": "next",
+    "prettier": "^2.2.1",
     "sirv": "^1.0.0"
   },
   "devDependencies": {

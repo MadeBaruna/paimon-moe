@@ -55,6 +55,10 @@
     "calculator": {
       "title": "🧮 Hitung Ascension dan Talent Book Karakter dan Senjata! Semua hasil perhitungan bisa ditambahkan ke daftar todo, dan juga akan menampilkan berapa resin yang kamu perlukan!",
       "detail": "Kalkulator"
+    },
+    "twitter": {
+      "title": "Follow my Twitter, akan post tentang apa yang lagi di develop dan update terbaru tentang paimon.moe!",
+      "detail": "Follow Twitter"
     }
   },
   "characters": {

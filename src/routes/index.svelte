@@ -1,6 +1,7 @@
 <script>
   import { onMount } from 'svelte';
   import debounce from 'lodash/debounce';
+  import { locale } from 'svelte-i18n';
 
   import Masonry from '../components/Masonry.svelte';
 
@@ -12,6 +13,7 @@
   import Item from './_index/item.svelte';
   import Calculator from './_index/calculator.svelte';
   import Discord from './_index/discord.svelte';
+  import Twitter from './_index/twitter.svelte';
 
   let refreshLayout;
 
@@ -22,7 +24,13 @@
   onMount(() => {
     setTimeout(() => {
       refreshLayout();
-    }, 1);
+    }, 1000);
+
+    locale.subscribe(() => {
+      setTimeout(() => {
+        refreshLayout();
+      }, 1);
+    });
   });
 </script>
 
@@ -46,6 +54,7 @@
     <Event on:done={onDone} />
     <Item on:done={onDone} />
     <Discord on:done={onDone} />
+    <Twitter on:done={onDone} />
     <Calculator on:done={onDone} />
   </Masonry>
 </div>

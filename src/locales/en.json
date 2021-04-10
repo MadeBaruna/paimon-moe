@@ -55,6 +55,10 @@
     "calculator": {
       "title": "🧮 Calculate Character and Weapons ascension material and talent book! All the calculations can be added to the Todo list, it will show you how much resin you need too!",
       "detail": "Calculator"
+    },
+    "twitter": {
+      "title": "Follow my Twitter, will occasionally post sneak peak what I currently develop and latest update to paimon.moe!",
+      "detail": "Follow Twitter"
     }
   },
   "characters": {
