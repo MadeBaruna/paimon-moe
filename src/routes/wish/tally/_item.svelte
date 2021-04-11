@@ -134,6 +134,7 @@
         if (item) {
           featuredValues[i] = {
             total: item.count,
+            guaranteed: item.guaranteed,
             percentage:
               (item.count /
                 (type === 'character' && id !== 200001 && i === 1 ? data.total.rare : data.total.legendary)) *
@@ -309,9 +310,18 @@
                       <span class="text-gray-400">{$t('wish.tally.summoned')}</span>
                     </p>
                     <p class="text-gray-400">
-                      {numberFormat.format(featuredValues[i].percentage)}% {$t(
-                        type === 'character' && i === 1 ? 'wish.tally.fromFourStar' : 'wish.tally.fromFiveStar',
-                      )}
+                      {#if id === 300011 && i === 0}
+                        {numberFormat.format(
+                          ((featuredValues[i].total - featuredValues[i].guaranteed) /
+                            (data.total.legendary - featuredValues[i].guaranteed)) *
+                            100,
+                        )}%
+                        {$t('wish.tally.wonFiftyFifty')}
+                      {:else}
+                        {numberFormat.format(featuredValues[i].percentage)}% {$t(
+                          type === 'character' && i === 1 ? 'wish.tally.fromFourStar' : 'wish.tally.fromFiveStar',
+                        )}
+                      {/if}
                     </p>
                   </td>
                 </tr>
