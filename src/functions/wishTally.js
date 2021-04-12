@@ -14,7 +14,7 @@ async function sendWish(data) {
   }
 }
 
-export async function submitWishTally() {
+export async function submitWishTally(lastPull) {
   let prefixId = 0;
   for (const id of bannerCategories) {
     prefixId += 100000;
@@ -64,6 +64,7 @@ export async function submitWishTally() {
         total,
         legendary: legendaryCount,
         rare: rareCount,
+        lastPull,
       });
     }
   }

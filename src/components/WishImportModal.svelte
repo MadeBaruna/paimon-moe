@@ -73,6 +73,11 @@
   let currentBanner = '';
   let currentPage = 1;
 
+  let lastPull = {
+    id: '0',
+    time: 0,
+  }
+
   function cancel() {
     fetchController.abort();
     cancelled = true;
@@ -222,6 +227,11 @@
           const name = row.name;
           const type = row.item_type.replace(/ /g, '');
 
+          if (row.id > lastPull.id) {
+            lastPull.id = row.id;
+            lastPull.time = time.format();
+          }
+          
           if (time.unix() <= newestPullTime) {
             return;
           }
@@ -257,6 +267,7 @@
       } catch (err) {
         processingLog = false;
         pushToast($t('wish.import.invalidData'), 'error');
+        console.error(err);
         throw 'invalid data';
       }
     } while (result.length > 0 && lastTime > newestPullTime);
@@ -391,7 +402,7 @@
     pushToast($t('wish.import.success'));
 
     if (wishTallyChecked) {
-      submitWishTally();
+      submitWishTally(lastPull);
     }
 
     closeModal();
