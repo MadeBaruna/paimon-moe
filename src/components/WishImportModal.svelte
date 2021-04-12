@@ -75,7 +75,7 @@
 
   let lastPull = {
     id: '0',
-    time: 0,
+    time: '',
   }
 
   function cancel() {
@@ -229,7 +229,7 @@
 
           if (row.id > lastPull.id) {
             lastPull.id = row.id;
-            lastPull.time = time.format();
+            lastPull.time = row.time;
           }
           
           if (time.unix() <= newestPullTime) {
