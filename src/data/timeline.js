@@ -57,6 +57,18 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/genshin/article/295568',
       showOnHome: true,
     },
+    {
+      name: 'Update 1.5!',
+      pos: '0% 25%',
+      image: 'update15.jpg',
+      start: '2021-04-28 06:00:00',
+      end: '2021-05-05 06:00:00',
+      color: '#FFD768',
+      zoom: '130%',
+      url: 'https://www.youtube.com/watch?v=wgNiGj1nGYE',
+      showOnHome: true,
+      startOnly: true,
+    },
   ],
   [
   {
