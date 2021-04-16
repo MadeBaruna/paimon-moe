@@ -15,19 +15,6 @@
 
   const { open: openModal } = getContext('simple-modal');
 
-  function openDetail(event) {
-    openModal(
-      DetailModal,
-      {
-        event,
-      },
-      {
-        closeButton: false,
-        styleWindow: { background: '#25294A', width: '600px' },
-      },
-    );
-  }
-
   let loading = true;
 
   let timelineContainer;
@@ -49,6 +36,20 @@
   let monthList = [];
   let events = [];
   let today = dayjs();
+
+  function openDetail(event) {
+    openModal(
+      DetailModal,
+      {
+        event,
+        timeDifference,
+      },
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '600px' },
+      },
+    );
+  }
 
   function convertToDate(e, i) {
     const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(timeDifferenceEvent, 'minute');

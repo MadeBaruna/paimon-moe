@@ -5,12 +5,13 @@
   import { onMount } from 'svelte';
 
   export let event;
+  export let timeDifference;
 
-  let now = dayjs();
+  let now = dayjs().add(timeDifference, 'minute');
 
   onMount(() => {
     const interval = setInterval(() => {
-      now = dayjs();
+      now = dayjs().add(timeDifference, 'minute');
     }, 1000);
 
     return () => {
