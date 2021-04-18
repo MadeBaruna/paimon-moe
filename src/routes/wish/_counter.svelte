@@ -204,7 +204,7 @@
     if (legendary >= legendaryPity) {
       openAddModal(Math.min(rare, legendaryPity));
       legendary = 0;
-      rare = 0;
+      // rare = 0;
       filler--;
     } else if (legendary < 0) {
       legendary = 89;
@@ -245,7 +245,7 @@
 
     total += 1;
     legendary = 0;
-    rare = 0;
+    // rare = 0;
     saveData();
   }
 

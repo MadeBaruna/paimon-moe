@@ -449,7 +449,7 @@
           combined[i].pity = legendary;
         }
         legendary = 0;
-        rare = 0;
+        // rare = 0;
       } else if (rarity === 4) {
         if (combined[i].pity === 0) {
           combined[i].pity = rare;
