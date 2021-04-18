@@ -8,7 +8,7 @@
 
   import { characters } from '../../data/characters';
   import { getAccountPrefix } from '../../stores/account';
-  import { readSave } from '../../stores/saveManager';
+  import { readSave, updateSave } from '../../stores/saveManager';
 
   let sortBy = '';
   let sortOrder = false;
@@ -71,12 +71,82 @@
     }
   }
 
+  function processWishes() {
+    const chars = {
+      amber: {
+        default: 1,
+        wish: 0,
+        manual: 0,
+      },
+      kaeya: {
+        default: 1,
+        wish: 0,
+        manual: 0,
+      },
+      lisa: {
+        default: 1,
+        wish: 0,
+        manual: 0,
+      },
+      traveler_geo: {
+        default: 1,
+        wish: 0,
+        manual: 0,
+      },
+      traveler_anemo: {
+        default: 1,
+        wish: 0,
+        manual: 0,
+      },
+      barbara: {
+        default: 1,
+        wish: 0,
+        manual: 0,
+      },
+      xiangling: {
+        default: 1,
+        wish: 0,
+        manual: 0,
+      },
+    };
+
+    const bannerCategories = ['beginners', 'standard', 'character-event', 'weapon-event'];
+    const prefix = getAccountPrefix();
+    for (const id of bannerCategories) {
+      const data = readSave(`${prefix}wish-counter-${id}`);
+      if (data !== null) {
+        showConstellation = true;
+        const counterData = JSON.parse(data);
+        const pullData = counterData.pulls || [];
+        for (const pull of pullData) {
+          if (pull.type === 'character') {
+            if (chars[pull.id] === undefined) {
+              chars[pull.id] = {
+                default: 0,
+                wish: 0,
+                manual: 0,
+              };
+            }
+            chars[pull.id].wish++;
+          }
+        }
+      }
+    }
+
+    if (showConstellation) {
+      constellation = chars;
+      updateSave(`${prefix}characters`, JSON.stringify(chars));
+    }
+  }
+
   function getConstellation() {
     const prefix = getAccountPrefix();
     const data = readSave(`${prefix}characters`);
     if (data !== null) {
       constellation = JSON.parse(data);
       showConstellation = true;
+    } else {
+      processWishes();
     }
   }
 
@@ -144,7 +214,7 @@
           >
             {#if constellation[id]}
               <span class="mx-1 text-white text-xs font-semibold">
-                C{Math.min(constellation[id] - 1, 6)}
+                C{Math.max(0, (constellation[id].default + constellation[id].wish + constellation[id].manual) - 1)}
               </span>
             {/if}
             <img class="w-4 h-4" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />

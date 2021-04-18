@@ -17,7 +17,7 @@
   import Icon from '../../components/Icon.svelte';
   import Button from '../../components/Button.svelte';
   import { getAccountPrefix } from '../../stores/account';
-  import { readSave } from '../../stores/saveManager';
+  import { readSave, updateSave } from '../../stores/saveManager';
   import { characters } from '../../data/characters';
   import { itemGroup } from '../../data/itemGroup';
 
@@ -25,6 +25,44 @@
   import PassiveSkillCard from './_passiveSkillCard.svelte';
 
   let constellationDiv;
+
+  const defaultChars = {
+    amber: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    kaeya: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    lisa: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    traveler_geo: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    traveler_anemo: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    barbara: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    xiangling: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+  };
 
   const numberFormat = Intl.NumberFormat('en', {
     maximumFractionDigits: 2,
@@ -36,6 +74,7 @@
   const book = itemGroup[bookId];
   const materials = character.ascension[1].items;
 
+  let chars = {};
   let constellationCount = -1;
   let manualCount = 0;
   let editConstallation = false;
@@ -49,11 +88,12 @@
     const data = readSave(`${prefix}characters`);
     if (data !== null) {
       const constellation = JSON.parse(data);
+      chars = constellation;
       if (constellation[id]) {
-        constellationCount = constellationCount[id].default + constellationCount[id].wish - 1;
-        manualCount = constellationCount[id].manual;
+        constellationCount = constellation[id].default + constellation[id].wish - 1;
+        manualCount = constellation[id].manual;
       } else {
-        constellationCount = 0;
+        constellationCount = -1;
       }
     }
   }
@@ -64,6 +104,27 @@
 
   function saveConstellationCount() {
     editConstallation = false;
+    if (chars[id]) {
+      chars[id].manual = manualCount;
+    } else if (defaultChars[id]) {
+      chars[id] = {
+        ...defaultChars[id],
+        manual: manualCount,
+      };
+    } else {
+      chars[id] = {
+        default: 0,
+        wish: 0,
+        manual: manualCount,
+      };
+    }
+
+    if (chars[id].default + chars[id].wish + chars[id].manual === 0) {
+      delete chars[id];
+    }
+
+    const prefix = getAccountPrefix();
+    updateSave(`${prefix}characters`, JSON.stringify(chars));
   }
 
   function scrollToView(view) {

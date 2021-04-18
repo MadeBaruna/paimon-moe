@@ -9,7 +9,7 @@
   import { bannerTypes } from '../../data/bannerTypes';
 
   import { getAccountPrefix } from '../../stores/account';
-  import { readSave, updateTime, fromRemote } from '../../stores/saveManager';
+  import { readSave, updateTime, fromRemote, updateSave } from '../../stores/saveManager';
   import SummaryItem from './_summaryItem.svelte';
   import Icon from '../../components/Icon.svelte';
   import { mdiEarth } from '@mdi/js';
@@ -43,6 +43,18 @@
 
     monthlyData = {};
 
+    // collected characters stuff
+    let updateCollectedCharacters = false;
+    let collectedCharacters = {};
+    const collectedCharactersData = readSave(`${prefix}characters`);
+    if (collectedCharactersData !== null) {
+      collectedCharacters = JSON.parse(collectedCharactersData);
+      for (const collectedId of Object.keys(collectedCharacters)) {
+        collectedCharacters[collectedId].wish = 0;
+      }
+      updateCollectedCharacters = true;
+    }
+
     for (let type of types) {
       const path = `wish-counter-${type.id}`;
       const data = readSave(`${prefix}${path}`);
@@ -70,6 +82,19 @@
             rarity = characters[pull.id].rarity;
             itemName = characters[pull.id].name;
             currentType = 'character';
+
+            // collected characters stuff
+            if (updateCollectedCharacters) {
+              if (collectedCharacters[pull.id]) {
+                collectedCharacters[pull.id].wish += 1;
+              } else {
+                collectedCharacters[pull.id] = {
+                  default: 0,
+                  manual: 0,
+                  wish: 1,
+                };
+              }
+            }
           } else if (pull.type === 'weapon') {
             rarity = weaponList[pull.id].rarity;
             itemName = weaponList[pull.id].name;
@@ -132,6 +157,10 @@
           },
         };
       }
+    }
+
+    if (updateCollectedCharacters) {
+      updateSave(`${prefix}characters`, JSON.stringify(collectedCharacters));
     }
 
     console.log(avg);
