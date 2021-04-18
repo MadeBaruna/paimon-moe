@@ -33,10 +33,6 @@
   });
 </script>
 
-<svelte:head>
-  <title>Paimon.moe</title>
-</svelte:head>
-
 <Tailwind />
 
 <Header />

@@ -156,7 +156,7 @@
 </script>
 
 <svelte:head>
-  <title>Paimon.moe</title>
+  <title>Characters - Paimon.moe</title>
   <meta
     name="description"
     content="Your best Genshin Impact companion! Help you plan what to farm with ascension calculator and database. Also track your progress with todo and wish counter."

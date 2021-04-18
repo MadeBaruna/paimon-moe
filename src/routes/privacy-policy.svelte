@@ -2,6 +2,10 @@
   import { t, _ } from 'svelte-i18n';
 </script>
 
+<svelte:head>
+  <title>Privacy Policy - Paimon.moe</title>
+</svelte:head>
+
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('privacypolicy.title')}</h1>
   <div class="px-4 md:px-8 text-white">

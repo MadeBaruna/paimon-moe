@@ -139,14 +139,14 @@
 </script>
 
 <svelte:head>
-  <title>Paimon.moe</title>
+  <title>{character.name} - Paimon.moe</title>
   <meta
     name="description"
-    content="Genshin Impact {character.name} build, guide, constellation, and skill information"
+    content="Genshin Impact {character.name} build guide, constellation, and skill information"
   />
   <meta
     property="og:description"
-    content="Genshin Impact {character.name} build, guide, constellation, and skill information"
+    content="Genshin Impact {character.name} build guide, constellation, and skill information"
   />
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
