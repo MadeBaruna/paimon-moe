@@ -7,6 +7,7 @@ import svelte from 'rollup-plugin-svelte';
 import babel from '@rollup/plugin-babel';
 import { terser } from 'rollup-plugin-terser';
 import json from '@rollup/plugin-json';
+import dynamicImportVars from '@rollup/plugin-dynamic-import-vars';
 
 import config from 'sapper/config/rollup.js';
 import { config as envConfig } from 'dotenv';
@@ -59,6 +60,12 @@ export default {
       }),
       commonjs(),
       json(),
+      dynamicImportVars({
+        include: [
+          '**/*.svelte',
+          '**/*.json',
+        ],
+      }),
 
       legacy &&
         babel({
@@ -121,6 +128,12 @@ export default {
       }),
       commonjs(),
       json(),
+      dynamicImportVars({
+        include: [
+          '**/*.svelte',
+          '**/*.json',
+        ],
+      }),
     ],
     external: Object.keys(pkg.dependencies).concat(require('module').builtinModules),
 
@@ -134,12 +147,7 @@ export default {
       ...config.serviceworker.output(),
       file: config.serviceworker.output().file.replace('service-worker', 'firebase-messaging-sw'),
     },
-    plugins: [
-      replace(envData),
-      resolve(),
-      commonjs(),
-      !dev && terser(),
-    ],
+    plugins: [replace(envData), resolve(), commonjs(), !dev && terser()],
 
     preserveEntrySignatures: false,
     onwarn,
