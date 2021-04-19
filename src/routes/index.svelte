@@ -14,6 +14,7 @@
   import Calculator from './_index/calculator.svelte';
   import Discord from './_index/discord.svelte';
   import Twitter from './_index/twitter.svelte';
+  import Achievement from './_index/achievement.svelte';
 
   let refreshLayout;
 
@@ -56,5 +57,6 @@
     <Discord on:done={onDone} />
     <Twitter on:done={onDone} />
     <Calculator on:done={onDone} />
+    <Achievement on:done={onDone} />
   </Masonry>
 </div>

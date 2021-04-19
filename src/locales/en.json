@@ -59,6 +59,10 @@
     "twitter": {
       "title": "Follow my Twitter, will occasionally post sneak peak what I currently develop and latest update to paimon.moe!",
       "detail": "Follow Twitter"
+    },
+    "achievement": {
+      "title": "🏆 View and track your achievement list here",
+      "detail": "Achievement"
     }
   },
   "characters": {
@@ -541,5 +545,9 @@
     "current": "Current reminder",
     "hoyolab": "Hoyolab Daily Check-In Reminder",
     "comingsoon": "Coming Soon!"
+  },
+  "achievement": {
+    "title": "Achievement",
+    "of": "of"
   }
 }

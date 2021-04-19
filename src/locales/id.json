@@ -519,5 +519,9 @@
     "current": "Reminder saat ini",
     "hoyolab": "Reminder Hoyolab Daily Check-In",
     "comingsoon": "Coming Soon!"
+  },
+  "achievement": {
+    "title": "Achievement",
+    "of": "dari"
   }
 }
