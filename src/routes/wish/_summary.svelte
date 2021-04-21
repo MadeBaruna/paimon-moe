@@ -54,6 +54,12 @@
       }
       updateCollectedCharacters = true;
     }
+    const collectablesNeedUpdateData = readSave(`${prefix}collectables-updated`);
+    if (collectablesNeedUpdateData === null || collectablesNeedUpdateData === 'true') {
+      updateCollectedCharacters = true;
+    } else if (collectablesNeedUpdateData === 'false') {
+      updateCollectedCharacters = false;
+    }
 
     for (let type of types) {
       const path = `wish-counter-${type.id}`;
@@ -160,7 +166,9 @@
     }
 
     if (updateCollectedCharacters) {
+      console.log('updating collectables');
       updateSave(`${prefix}characters`, JSON.stringify(collectedCharacters));
+      updateSave(`${prefix}collectables-updated`, 'false');
     }
 
     console.log(avg);

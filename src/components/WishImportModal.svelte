@@ -407,6 +407,8 @@
       submitWishTally(lastPull);
     }
 
+    const prefix = getAccountPrefix();
+    updateSave(`${prefix}collectables-updated`, 'true');
     closeModal();
   }
 
