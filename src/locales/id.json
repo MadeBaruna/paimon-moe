@@ -146,7 +146,9 @@
           "untuk info lebih lanjut). Kamu bisa tidak mencentang submit pity untuk tidak mengirim data wish. Kemudian semua data riwayat wish mu disimpan pada device masing-masing (atau google drive mu jika kamu menyalakan sync di setting)."
         ],
         "q6": "Saya udah coba step-step nya, tapi kok malah dapet API error?",
-        "a6": "Coba pastiin sudah di copy semua text nya (coba select all aja text nya, jangan di potong-potong), mungkin ada yang kelewatan, jadi ada yang terpotong"
+        "a6": "Coba pastiin sudah di copy semua text nya (coba select all aja text nya, jangan di potong-potong), mungkin ada yang kelewatan, jadi ada yang terpotong",
+        "q7": "Kok wish nya ada yang gak kebaca!?",
+        "a7": "Riwayat wish yang lebih lama dari 6 akan terhapus di gamenya itu sendiri, jadi paimon.moe tidak bisa membaca wish yang sudah terhapus."
       },
       "guide": {
         "video": "Video Tutorial",
@@ -154,7 +156,7 @@
           "Buka menu Paimon [ESC]",
           "Klik Masukan",
           "Tunggu sampai sudah ke-load dan browser mu akan terbuka",
-          "Copy & paste link nya ke input dibawah",
+          "Copy & paste link nya ke input di bawah",
           "Paste link disini... https://webstatic..."
         ],
         "android": [
@@ -166,7 +168,7 @@
           "Halaman nya seharusnya error dan akan menampilkan text dengan warna hitam",
           "Tekan dan tahan text nya lalu pilih semua, kemudian copy text nya (jangan copy hanya sebagian text nya, jangan dipotong-potong lagi)",
           "Nyalakan lagi wifi atau data selular mu",
-          "Paste text nya ke input dibawah",
+          "Paste text nya ke input di bawah",
           "Paste text disini... Webpage not available..."
         ],
         "ios": [
@@ -176,8 +178,16 @@
           "Tekan Masalah Game",
           "Tekan Mode Co-Op",
           "Ada link warna biru di bawah reply nya, klik link nya",
-          "Browser mu akan terbuka, copy link nya dan paste ke input dibawah",
+          "Browser mu akan terbuka, copy link nya dan paste ke input di bawah",
           "Paste link disini... https://genshin.mihoyo..."
+        ],
+        "ps": [
+          "Kamu hanya bisa mengimport wish mu jika kamu mempunyai mail yang ada QR Code nya (dipakai untuk membuka event web di hp)",
+          "Buka Genshin Impact di PlayStation mu",
+          "Buka mail event yang ada QR Code nya",
+          "Scan QR Code nya dengan HP mu",
+          "Copy link nya dan paste ke input di bawah",
+          "Paste link disini..."
         ]
       }
     },

@@ -171,7 +171,9 @@
           "for more information). You can uncheck submit wish tally to disable wish submission. Then all your wish history is saved on your device (or your Google Drive if you turned on sync)."
         ],
         "q6": "I've done all the steps, but I got some API error?",
-        "a6": "Make sure you copy all the text (hold and press Select All for mobile devices); maybe you missed some text that are needed for the importer to work."
+        "a6": "Make sure you copy all the text (hold and press Select All for mobile devices); maybe you missed some text that are needed for the importer to work.",
+        "q7": "It didn't read all my wish history!?",
+        "a7": "Wish history older than 6 months will be gone from the mihoyo server itself, so if you don't have a backup somewhere, it's gone sadly"
       },
       "guide": {
         "video": "Video Tutorial",
@@ -203,6 +205,14 @@
           "There is a link on the bottom of the reply; press that",
           "A browser should open up. Copy the link and paste it below",
           "Paste link here... https://genshin.mihoyo..."
+        ],
+        "ps": [
+          "You can only use this importer if you have an in-game mail with QR Code to open the web event",
+          "Open Genshin Impact on your PlayStation",
+          "Open the event mail that contains the QR Code",
+          "Scan the QR Code with your phone",
+          "Copy the link, and paste it below",
+          "Paste link here..."
         ]
       }
     },

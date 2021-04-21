@@ -76,7 +76,7 @@
   let lastPull = {
     id: '0',
     time: '',
-  }
+  };
 
   function cancel() {
     fetchController.abort();
@@ -94,6 +94,8 @@
       case 'android':
       case 'ios':
         return 'mobile';
+      case 'ps':
+        return 'ps';
     }
   }
 
@@ -231,7 +233,7 @@
             lastPull.id = row.id;
             lastPull.time = row.time;
           }
-          
+
           if (time.unix() <= newestPullTime) {
             return;
           }
@@ -631,6 +633,8 @@
         </p>
         <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q6')}</p>
         <p class="text-gray-400">{$t('wish.import.faqs.a6')}</p>
+        <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q7')}</p>
+        <p class="text-gray-400">{$t('wish.import.faqs.a7')}</p>
       </div>
     {:else}
       <div class="flex flex-col md:flex-row items-start md:items-center">
@@ -658,6 +662,9 @@
         </button>
         <button on:click={() => changeSelectedType('ios')} class={`pill ${selectedType === 'ios' ? 'active' : ''}`}>
           iOS
+        </button>
+        <button on:click={() => changeSelectedType('ps')} class={`pill ${selectedType === 'ps' ? 'active' : ''}`}>
+          PS
         </button>
       </div>
       {#if selectedType === 'pc'}
@@ -716,6 +723,17 @@
           </ol>
         </div>
         <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.ios.7')} />
+      {:else if selectedType === 'ps'}
+        <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
+          {$t('wish.import.guide.ps.0')}
+          <ol class="list-decimal ml-4">
+            <li class="my-2">{$t('wish.import.guide.ps.1')}</li>
+            <li class="my-2">{$t('wish.import.guide.ps.2')}</li>
+            <li class="my-2">{$t('wish.import.guide.ps.3')}</li>
+            <li class="my-2">{$t('wish.import.guide.ps.4')}</li>
+          </ol>
+        </div>
+        <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.ps.5')} />
       {/if}
     {/if}
 
