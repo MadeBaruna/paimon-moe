@@ -119,7 +119,7 @@
   }
 
   function addPullDetail(newPull) {
-    let index = -1;
+    let index = 0;
     for (let i = pulls.length - 1; i >= 0; i--) {
       if (newPull.time >= pulls[i].time) {
         index = i + 1;
