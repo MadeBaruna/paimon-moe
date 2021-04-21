@@ -24,7 +24,7 @@ export const eventsData = [
     },
     {
       name: 'Hilidream Camp',
-      pos: '70% 37%',
+      pos: '0% 58%',
       image: 'hilidream_camp.png',
       start: '2021-04-21 13:00:00',
       end: '2021-04-27 23:59:59',
