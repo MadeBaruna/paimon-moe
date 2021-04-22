@@ -168,7 +168,8 @@
         "a5": [
           "Paimon.moe will never store your keys, and uses HTTPS to pass your URL to a CORS proxy to make the CORS work. Paimon.moe will save your 4* pity, 5* pity, and 5* wish information if you submit your wish for our global wish tally (no private information saved! please check",
           "Privacy Policy",
-          "for more information). You can uncheck submit wish tally to disable wish submission. Then all your wish history is saved on your device (or your Google Drive if you turned on sync)."
+          "for more information). You can uncheck submit wish tally to disable wish submission. Then all your wish history is saved on your device (or your Google Drive if you turned on sync).",
+          "If you don't want any passing around your url, you can use the small importer script to process the wish history on your local PC (PC Local option) "
         ],
         "q6": "I've done all the steps, but I got some API error?",
         "a6": "Make sure you copy all the text (hold and press Select All for mobile devices); maybe you missed some text that are needed for the importer to work.",
@@ -213,6 +214,19 @@
           "Scan the QR Code with your phone",
           "Copy the link, and paste it below",
           "Paste link here..."
+        ],
+        "pclocal": [
+          "If you are not comfortable passing around your feedback url, you can use this option to process the wish on your pc locally. This script will read the log file on your pc to get the wish history url.",
+          "Open Start, then search for Powershell",
+          "Open Windows Powershell, then copy & paste the script below to the Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "You can review the script",
+          "here",
+          "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
+          "Press enter to run the script, then follow the instruction there",
+          "After that, paste the result of the script to the input below",
+          "Paste the result here...",
+          "This feature is still in beta, please make a backup first by going to Help & Settings menu then Export to Excel."
         ]
       }
     },

@@ -143,7 +143,8 @@
         "a5": [
           "Paimon.moe tidak menyimpan key mu, dan menggunakan HTTPS untuk mengirim link mu ke proxy cors sehingga bisa digunakan. Paimon.moe akan menyimpan pity 4*, pity 5*, dan informasi wish 5* jika kamu mensubmit wish mu ke perhitungan pity global paimon.moe (tidak ada data pribadi yang disimpan! harap cek",
           "Privacy Policy",
-          "untuk info lebih lanjut). Kamu bisa tidak mencentang submit pity untuk tidak mengirim data wish. Kemudian semua data riwayat wish mu disimpan pada device masing-masing (atau google drive mu jika kamu menyalakan sync di setting)."
+          "untuk info lebih lanjut). Kamu bisa tidak mencentang submit pity untuk tidak mengirim data wish. Kemudian semua data riwayat wish mu disimpan pada device masing-masing (atau google drive mu jika kamu menyalakan sync di setting).",
+          "Jika kamu tidak ingin link feedback mu kemana-mana, kamu bisa menggunakan script importer yang akan memproses riwayat history secara lokal di pc mu (opsi PC Local) "
         ],
         "q6": "Saya udah coba step-step nya, tapi kok malah dapet API error?",
         "a6": "Coba pastiin sudah di copy semua text nya (coba select all aja text nya, jangan di potong-potong), mungkin ada yang kelewatan, jadi ada yang terpotong",
@@ -188,6 +189,19 @@
           "Scan QR Code nya dengan HP mu",
           "Copy link nya dan paste ke input di bawah",
           "Paste link disini..."
+        ],
+        "pclocal": [
+          "Jika kamu tidak nyaman dengan menaruh link feedback disini, kamu bisa memproses riwayat wish di pc mu secara lokal. Script ini akan membaca file log di pc mu untuk memproses riwayat history mu.",
+          "Buka Start, kemudian cari Powershell",
+          "Buka Windows Powershell, kemudian copy & paste script berikut di Powershell nya",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "Kamu bisa me-review script nya",
+          "disini",
+          "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
+          "Tekan enter untuk menjalankan scriptnya, kemudian ikuti petunjuknya disana",
+          "Setelah itu paste hasil dari script nya ke input di bawah",
+          "Paste hasil nya disini...",
+          "Fitur ini masih beta, harap buat backup dulu dengan pergi ke menu Bantuan & Pengaturan kemudian Export ke Excel."
         ]
       }
     },

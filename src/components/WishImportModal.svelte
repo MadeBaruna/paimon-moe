@@ -341,18 +341,18 @@
   }
 
   function importFromGeneratedText() {
-    if (!generatedTextInput.startsWith('paimonmoeimporterv1###')) {
+    if (!generatedTextInput.startsWith('paimonmoe,importer,version,1,0')) {
       pushToast('Invalid data, please use the latest importer app', 'error');
       return;
     }
 
     processingLog = true;
 
-    const rows = generatedTextInput.substring(22).split(';');
+    const rows = generatedTextInput.substring(30).split('\n');
 
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
-
+    
     try {
       for (let row of rows) {
         if (row === '') continue;
@@ -362,6 +362,11 @@
         const time = dayjs(cell[1]);
         const name = cell[2];
         const type = cell[3].replace(/ /g, '');
+        
+        const newestPullTime = getNewestPullTime(types[code]);
+        if (time.unix() <= newestPullTime) {
+          continue;
+        }
 
         let id;
         if (type === 'Weapon') {
@@ -630,8 +635,7 @@
             >{$t('wish.import.faqs.a5.1')}</a
           >
           {$t('wish.import.faqs.a5.2')}
-          <!-- If you don't want any passing around your url, you can use the small importer app to process the wish
-          history on your local PC (PC Local option) -->
+          {$t('wish.import.faqs.a5.3')}
         </p>
         <p class="text-white font-semibold mt-4">{$t('wish.import.faqs.q6')}</p>
         <p class="text-gray-400">{$t('wish.import.faqs.a6')}</p>
@@ -650,12 +654,6 @@
         <button on:click={() => changeSelectedType('pc')} class={`pill ${selectedType === 'pc' ? 'active' : ''}`}>
           PC
         </button>
-        <!-- <button
-          on:click={() => changeSelectedType('pclocal')}
-          class={`pill ${selectedType === 'pclocal' ? 'active' : ''}`}
-        >
-          PC Local
-        </button> -->
         <button
           on:click={() => changeSelectedType('android')}
           class={`pill ${selectedType === 'android' ? 'active' : ''}`}
@@ -667,6 +665,12 @@
         </button>
         <button on:click={() => changeSelectedType('ps')} class={`pill ${selectedType === 'ps' ? 'active' : ''}`}>
           PS
+        </button>
+        <button
+          on:click={() => changeSelectedType('pclocal')}
+          class={`pill ${selectedType === 'pclocal' ? 'active' : ''}`}
+        >
+          PC Local
         </button>
       </div>
       {#if selectedType === 'pc'}
@@ -681,19 +685,24 @@
         <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.pc.4')} />
       {:else if selectedType === 'pclocal'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
+          {$t('wish.import.guide.pclocal.0')}
+          <span class="text-red-300">{$t('wish.import.guide.pclocal.10')}</span>
           <ol class="list-decimal ml-4">
-            <li class="mt-2 mb-0">
-              Downlod the importer app <Button size="sm" on:click={() => toggleFaqs(true)}>
-                <Icon path={mdiDownload} color="white" />
-                Download
-              </Button>
-            </li>
-            <li class="my-2">Open the wish history on your Genshin impact in this PC</li>
-            <li class="my-2">Press IMPORT</li>
-            <li class="my-2">Copy & paste the generated text to the textbox below</li>
+            <li class="my-2">{$t('wish.import.guide.pclocal.1')}</li>
+            <li class="my-2">{$t('wish.import.guide.pclocal.2')}</li>
+            <pre
+              class="bg-black bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs">{$t('wish.import.guide.pclocal.3')}</pre>
+            <p>
+              {$t('wish.import.guide.pclocal.4')}
+              <a class="text-blue-400 hover:underline" href={$t('wish.import.guide.pclocal.6')} target="_blank">
+                {$t('wish.import.guide.pclocal.5')}
+              </a>
+            </p>
+            <li class="my-2">{$t('wish.import.guide.pclocal.7')}</li>
+            <li class="my-2">{$t('wish.import.guide.pclocal.8')}</li>
           </ol>
         </div>
-        <Textarea bind:value={generatedTextInput} placeholder="Paste the generated text here..." />
+        <Textarea bind:value={generatedTextInput} placeholder={$t('wish.import.guide.pclocal.9')} />
       {:else if selectedType === 'android'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
           <a href="https://www.youtube.com/watch?v=dphwcYfZthA" target="_blank" class="text-primary hover:underline">
