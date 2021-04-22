@@ -293,9 +293,13 @@
                   {:else}
                     <td class="text-center border-t border-gray-700 px-2">50%</td>
                   {/if}
-                  {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage'}
+                  {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage' && data.statGrow !== 'em'}
                     <td class="text-center border-t border-gray-700 px-2">
                       {numberFormat.format(data[data.statGrow][index] * 100)}%
+                    </td>
+                  {:else if data.statGrow === 'em'}
+                    <td class="text-center border-t border-gray-700 px-2">
+                      {numberFormat.format(data[data.statGrow][index])}
                     </td>
                   {/if}
                 </tr>
