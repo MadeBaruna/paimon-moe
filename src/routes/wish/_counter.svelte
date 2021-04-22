@@ -129,6 +129,7 @@
     const lastPulls = [...pulls];
     lastPulls.splice(index, 0, newPull);
     pulls = lastPulls;
+    total = pulls.length;
     closeModal();
     saveData();
   }
@@ -146,7 +147,7 @@
     const updated = pulls.slice();
     updated.splice(index, 1);
     pulls = updated;
-
+    total = pulls.length;
     closeModal();
     saveData();
   }
