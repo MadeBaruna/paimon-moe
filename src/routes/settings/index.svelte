@@ -335,6 +335,35 @@
     {$t('settings.thanks')}
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 text-white">
+    <p class="font-semibold">Credits</p>
+    <table>
+      <tr>
+        <td class="pr-1 align-top border-b border-gray-700">Data and images</td>
+        <td class="pr-1 align-top border-b border-gray-700">
+          <a class="text-blue-400 hover:underline" href="https://genshin-impact.fandom.com/" target="_blank">
+            Genshin Impact Wiki
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="pr-1 align-top border-b border-gray-700">Stats data</td>
+        <td class="pr-1 align-top border-b border-gray-700">
+          <a class="text-blue-400 hover:underline" href="https://github.com/Dimbreath/GenshinData" target="_blank">
+            Dimbreath Genshin Data
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="pr-1 align-top">Drop rates for resin calculation</td>
+        <td class="pr-1 align-top">
+          <a class="text-blue-400 hover:underline" href="https://discord.gg/ydwdYmr" target="_blank">
+            Data Gathering Discord
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="bg-item rounded-xl mb-4 p-4 text-white">
     <p class="cursor-pointer" on:click={toggleChangelog}>
       Changelog <Icon
         className={`duration-100 ease-in ${changelogOpen ? 'transform rotate-180' : ''}`}
@@ -343,7 +372,11 @@
     </p>
     {#if changelogOpen}
       <div transition:slide class="mt-4">
-        <pre class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">2021/04/06
+        <pre
+          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">Future changelog will be posted on Discord https://discord.gg/4jjZnXvs
+or Check Github commit history https://github.com/MadeBaruna/paimon-moe/commits/main
+
+2021/04/06
 - Add Rosaria
 - Add rate up icon on detail banner
 - Update banner list
