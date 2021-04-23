@@ -18,7 +18,7 @@
   }
 </script>
 
-<div transition:fade={{ duration: 100 }} class="bg-item p-4 rounded-xl mb-4 text-white flex items-start">
+<div transition:fade={{ duration: 100 }} class="bg-item p-4 rounded-xl mb-4 text-white flex items-start max-w-screen-xl">
   <div class="flex-1">
     <p>
       {$t('wish.welcome')}

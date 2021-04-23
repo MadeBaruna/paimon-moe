@@ -31,7 +31,7 @@
       </div>
     {/if}
   </div>
-  <div class="flex justify-end gap-2">
+  <div class="flex justify-end space-x-2">
     <Button on:click={cancel}>{$t('todo.delete.cancel')}</Button>
     <Button on:click={deleteTodo} color="red">{$t('todo.delete.delete')}</Button>
   </div>

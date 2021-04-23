@@ -22,8 +22,8 @@
       >Github</a
     >
   </p>
-  <div class="flex flex-col mt-2 gap-1">
-    <div class="flex flex-col md:flex-row gap-1">
+  <div class="flex flex-col mt-2 space-y-1">
+    <div class="flex flex-col md:flex-row md:space-x-1 md:space-y-0 space-y-1">
       <a class="flex-1" href="https://ko-fi.com/baruna" target="_blank">
         <Button className="w-full flex-1 flex flex-col items-center">
           <div class="flex h-8 mb-1 items-center">

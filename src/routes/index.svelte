@@ -55,7 +55,7 @@
     <Event on:done={onDone} />
     <Item on:done={onDone} />
     <Discord on:done={onDone} />
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col space-y-4">
       <Calculator on:done={onDone} />
       <Achievement on:done={onDone} />
     </div>

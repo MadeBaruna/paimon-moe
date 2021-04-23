@@ -155,9 +155,9 @@
 </svelte:head>
 
 <div class="lg:ml-64 pt-20 px-4 lg:px-8 lg:pt-8 max-w-screen-xl">
-  <div class="flex flex-col md:flex-row items-center gap-2 mb-2 md:mb-0">
+  <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 mb-2 md:mb-0">
     <h1 class="font-display font-black text-3xl md:text-4xl text-white">{$t('achievement.title')}</h1>
-    <div class="flex gap-2">
+    <div class="flex space-x-2">
       <p class="text-gray-400 text-xl rounded-xl bg-black bg-opacity-50 px-2 py-1">
         {finishedAchievement}
         {$t('achievement.of')}
@@ -169,8 +169,8 @@
       </div>
     </div>
   </div>
-  <div class="flex flex-col lg:flex-row gap-3">
-    <div class="flex flex-col gap-2 lg:h-screen lg:overflow-auto lg:sticky lg:pr-1 pb-4 category">
+  <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
+    <div class="flex flex-col space-y-2 lg:h-screen lg:overflow-auto lg:sticky lg:pr-1 pb-4 category">
       {#each categories as category, index}
         <div
           class="rounded-xl p-2 cursor-pointer flex flex-col {category.id === active ? 'bg-primary' : 'bg-item'}"
@@ -191,7 +191,7 @@
         </div>
       {/each}
     </div>
-    <div class="flex flex-col gap-2 flex-1 pt-20 lg:pt-2" bind:this={achievementContainer}>
+    <div class="flex flex-col space-y-2 flex-1 pt-20 lg:pt-2" bind:this={achievementContainer}>
       {#each list as el, index}
         {#if Array.isArray(el)}
           <div class="bg-item rounded-xl px-2 py-1 text-white flex flex-col">

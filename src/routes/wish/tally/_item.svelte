@@ -245,7 +245,7 @@
   });
 </script>
 
-<div class="flex flex-col bg-item rounded-xl p-4 mb-4 gap-4">
+<div class="flex flex-col bg-item rounded-xl px-4 pt-4 pb-2 mb-4 space-y-4">
   <div class="flex flex-col xl:flex-row">
     <img src="/images/banners/{banner.name} {banner.image}.png" alt={banner.name} class="rounded-xl xl:h-64 xl:mr-4" />
     <div class="h-4 xl:h-0" />
@@ -460,7 +460,7 @@
       </table>
     </div>
     <div class="border border-background rounded-xl hidden xl:block">
-      <table class="text-white w-full table-fixed">
+      <table class="text-white w-full table-fixed text-sm">
         <tr>
           <td
             class="font-display text-gray-200 font-semibold px-2 py-1 whitespace-no-wrap text-right border-b border-background"
@@ -508,9 +508,9 @@
         </tr>
       </table>
     </div>
-    <div class="flex flex-wrap gap-4">
-      <div class="border border-background rounded-xl hidden xl:block overflow-hidden" style="width: fit-content;">
-        <table class="text-white">
+    <div class="flex flex-wrap">
+      <div class="border border-background rounded-xl hidden xl:block overflow-hidden mr-4 mb-2" style="width: fit-content;">
+        <table class="text-white text-sm">
           <tr>
             <td
               class="font-display text-gray-200 font-semibold px-2 py-1 whitespace-no-wrap text-right border-b border-background"
@@ -550,8 +550,8 @@
           </tr>
         </table>
       </div>
-      <div class="flex flex-wrap gap-2 text-white">
-        <div class="gap-2 flex flex-col flex-wrap">
+      <div class="flex flex-wrap text-white -mt-2 mb-2">
+        <div class="space-y-2 flex flex-col flex-wrap mr-2 mt-2">
           <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
             {$t('wish.tally.wishTotal')} <span class="font-semibold ml-2">{numberFormat.format(data.total.all)}</span>
           </div>
@@ -560,7 +560,7 @@
             <span class="font-semibold">{numberFormat.format(data.total.all * 160)}</span>
           </div>
         </div>
-        <div class="gap-2 flex flex-col flex-wrap">
+        <div class="space-y-2 flex flex-col flex-wrap mt-2">
           <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
             {$t('wish.tally.median')}
             <span class="font-semibold ml-2">{numberFormat.format(data.median.legendary)}</span>

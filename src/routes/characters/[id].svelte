@@ -164,14 +164,14 @@
           src="/images/elements/{character.element.id}.png"
           alt={character.element.name}
         />
-        <div class="flex gap-1 {editConstallation ? 'flex-col' : ''} md:flex-row items-center">
+        <div class="flex space-y-1 lg:space-y-0 lg:space-x-1 {editConstallation ? 'flex-col' : ''} md:flex-row items-center">
           {#if constellationCountTotal > -1}
             <p class="text-3xl text-gray-200 bg-black bg-opacity-50 rounded-xl px-2 font-semibold">
               C{constellationCountTotal}
             </p>
           {/if}
           {#if editConstallation}
-            <div class="flex flex-wrap gap-1">
+            <div class="flex flex-wrap space-x-1">
               <Button size="sm" on:click={() => editConstellationCount(1)}>
                 <Icon path={mdiPlus} />
               </Button>
@@ -210,7 +210,7 @@
         <p class="text-base text-white font-semibold mt-1">{character.weapon.name}</p>
       </div>
       <p class="text-gray-200 px-4 md:px-8">{data.description}</p>
-      <div class="flex flex-col md:flex-row mt-4 gap-4 px-4 md:px-8">
+      <div class="flex flex-col md:flex-row mt-4 space-y-4 md:space-y-0 md:space-x-4 px-4 md:px-8">
         <div class="text-gray-200 rounded-xl border border-gray-200 border-opacity-25 p-4">
           <p>Talent Book</p>
           <div class="flex items-center mt-2">

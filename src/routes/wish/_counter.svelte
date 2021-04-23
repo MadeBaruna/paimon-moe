@@ -326,7 +326,7 @@
     {#if isEdit}
       <Button on:click={saveEdit} className="mt-4">Save</Button>
     {:else if manualInput}
-      <div class="flex gap-2 mt-2">
+      <div class="grid grid-cols-2 gap-2 mt-2">
         <Button on:click={getLegendary} className="flex-1">
           Get 5
           <Icon path={mdiStar} size={0.75} className="mb-1" />
@@ -336,7 +336,7 @@
           <Icon path={mdiStar} size={0.75} className="mb-1" />
         </Button>
       </div>
-      <div class="flex gap-2 mt-2">
+      <div class="grid grid-cols-3 gap-2 mt-2">
         <Button on:click={() => add(1)} className="flex-1">+1</Button>
         <Button on:click={() => add(10)} className="flex-1">+10</Button>
         <Button on:click={() => add(-1)} className="flex-1">-1</Button>

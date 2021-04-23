@@ -76,7 +76,7 @@
     </div>
     <span>{amount}</span>
   </div>
-  <div class="flex justify-end gap-2">
+  <div class="flex justify-end space-x-2">
     <Button on:click={cancel}>{$t('items.add.cancel')}</Button>
     <Button on:click={() => addTodo(selectedItem, amount)} color="green">{$t('items.add.add')}</Button>
   </div>

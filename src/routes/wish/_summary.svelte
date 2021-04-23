@@ -177,28 +177,28 @@
 </script>
 
 {#if !loading}
-  <div class="flex flex-col">
+  <div class="flex flex-col space-y-4">
     {#if avg[types[0].id]}
-      <SummaryItem avg={avg[types[0].id]} type={types[0]} withBottomSpace />
+      <SummaryItem avg={avg[types[0].id]} type={types[0]} />
     {/if}
     {#if avg[types[1].id]}
       <SummaryItem avg={avg[types[1].id]} type={types[1]} />
     {/if}
   </div>
-  <div class="flex flex-col">
+  <div class="flex flex-col space-y-4">
     {#if avg[types[2].id]}
-      <SummaryItem avg={avg[types[2].id]} type={types[2]} withBottomSpace />
+      <SummaryItem avg={avg[types[2].id]} type={types[2]} />
     {/if}
     {#if avg[types[3].id]}
       <SummaryItem avg={avg[types[3].id]} type={types[3]} />
     {/if}
-    <div class="bg-item rounded-xl p-4 flex items-center w-full text-white mt-4" style="height: min-content;">
+    <div class="bg-item rounded-xl p-4 flex items-center w-full text-white" style="height: min-content;">
       {$t('wish.wishesWorth')} <img class="w-4 h-4 mx-2" src="/images/primogem.png" alt="primogem" />
       {numberFormat.format(totalWish * 160)}
     </div>
     <a
       href="/wish/tally"
-      class="bg-item rounded-xl p-4 flex items-center w-full text-white mt-4 hover:text-primary"
+      class="bg-item rounded-xl p-4 flex items-center w-full text-white hover:text-primary"
       style="height: min-content;"
     >
       <Icon path={mdiEarth} className="mr-2" />

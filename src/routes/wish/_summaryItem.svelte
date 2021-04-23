@@ -3,7 +3,6 @@
 
   import Icon from '../../components/Icon.svelte';
 
-  export let withBottomSpace;
   export let avg;
   export let type;
 
@@ -19,7 +18,7 @@
 </script>
 
 <div
-  class={`bg-item rounded-xl p-4 flex flex-col w-full ${withBottomSpace ? 'mb-4' : ''}`}
+  class="bg-item rounded-xl p-4 flex flex-col w-full"
   style="height: min-content;"
 >
   <table>
