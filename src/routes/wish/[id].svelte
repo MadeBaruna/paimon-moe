@@ -65,6 +65,8 @@
   let currentBannerIndex = -1;
   let selectedBanners;
 
+  let isSafari = false;
+
   selectedBanners = banners[bannerType].map((e) => {
     // banner data based on Asia time
     const diff = e.timezoneDependent === true ? 8 - getTimeOffset() : 0;
@@ -370,6 +372,13 @@
 
   onMount(() => {
     readLocalData();
+
+    isSafari =
+      navigator.vendor &&
+      navigator.vendor.indexOf('Apple') > -1 &&
+      navigator.userAgent &&
+      navigator.userAgent.indexOf('CriOS') == -1 &&
+      navigator.userAgent.indexOf('FxiOS') == -1;
   });
 
   function sort(by) {
@@ -503,7 +512,11 @@
               </TableHeader>
             </tr>
             {#each sorted as pull}
-              <tr class="rarity-{pull.rarity}{pull.striped && sortBy === 'time' ? ' striped' : ''}">
+              <tr
+                class="{isSafari ? 'safari-only' : ''} rarity-{pull.rarity}{pull.striped && sortBy === 'time'
+                  ? ' striped'
+                  : ''}"
+              >
                 <td
                   class="border-t border-gray-700 px-4 text-gray-200 whitespace-no-wrap relative"
                   style="font-family: monospace;"
@@ -541,7 +554,7 @@
                 <td class="border-t border-gray-700 px-2 text-gray-200 text-center">
                   {pull.at}
                 </td>
-                {#if sortBy === 'time' && ((pull.end && !sortOrder) || (pull.start && sortOrder))}
+                {#if sortBy === 'time' && !isSafari && ((pull.end && !sortOrder) || (pull.start && sortOrder))}
                   <td class="relative hidden xl:table-cell">
                     <div
                       class="border-t border-gray-700 absolute left-0 top-0 z-10 border-start"
@@ -563,7 +576,7 @@
                   </td>
                 {/if}
                 <td
-                  class="border-t border-gray-700 px-4 text-gray-200 top-0 text-center {sortBy === 'time'
+                  class="border-t border-gray-700 px-4 text-gray-200 top-0 text-center {sortBy === 'time' && !isSafari
                     ? 'xl:hidden'
                     : ''}"
                 >
@@ -733,5 +746,11 @@
     .border-start {
       top: -1px;
     }
+  }
+
+  /* safari row background */
+  .safari-only {
+    background-attachment: fixed !important;
+    background-position-x: 300px !important;
   }
 </style>

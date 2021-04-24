@@ -116,11 +116,11 @@
   <title>Wish Counter - Paimon.moe</title>
   <meta
     name="description"
-    content="Genshin Impact Wish Counter to track your pity counter and track when you get the character or weapon. You can also auto import the logs from your PC or Android."
+    content="Genshin Impact Wish Counter to track your pity counter and track when you get the character or weapon. You can also automatically import the logs and backup it from PC, Android, iOS, PlayStation then save it more than 6 months."
   />
   <meta
     property="og:description"
-    content="Genshin Impact Wish Counter to track your pity counter and track when you get the character or weapon. You can also auto import the logs from your PC or Android."
+    content="Genshin Impact Wish Counter to track your pity counter and track when you get the character or weapon. You can also automatically import the logs and backup it from PC, Android, iOS, PlayStation then save it more than 6 months."
   />
 </svelte:head>
 <div class="pt-20 lg:ml-64 lg:pt-8 px-4 md:px-8">

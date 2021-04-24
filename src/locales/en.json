@@ -25,7 +25,7 @@
       "percentage": "from all",
       "avg": "Pity average",
       "subtitle": "Calculated from data submitted by {user} paimon.moe users",
-      "detail": "Global With Tally"
+      "detail": "Global Wish Tally"
     },
     "wish": {
       "message": "Import your wish history to keep it more than 6 months! Also automatically count your pity and statistic about your wishes with fancy charts 📊",
