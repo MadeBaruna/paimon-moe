@@ -1,0 +1,117 @@
+<script>
+  import { createEventDispatcher } from 'svelte';
+  import { slide } from 'svelte/transition';
+
+  export let image;
+  export let label;
+  export let active;
+  export let segment;
+  export let mobile;
+  export let items = [];
+
+  let expandMenu = false;
+
+  const dispatch = createEventDispatcher();
+
+  function expand() {
+    if (!mobile) return;
+    expandMenu = !expandMenu;
+  }
+
+  function clicked() {
+    dispatch('clicked');
+  }
+</script>
+
+<div class="w-full rounded-xl ease-in duration-150 {mobile ? '' : 'parent'} {active ? 'active' : ''}">
+  <div class="flex absolute transform translate-x-full child">
+    <div class="w-5 h-full" />
+    <div class="bg-background shadow-lg flex flex-col p-2 -mt-2 rounded-r-xl">
+      {#each items as item}
+        <a
+          on:click={clicked}
+          class="w-full rounded-xl ease-in duration-150 {segment === item.href.substring(1) ? 'active-child' : ''}"
+          href={item.href}
+        >
+          <div
+            class="w-full py-3 flex items-center px-4 cursor-pointer transition-colors text-gray-500 hover:text-white ease-in duration-150"
+          >
+            <div class="h-8 mr-3 flex justify-center items-center leading-none">
+              <span>●</span>
+            </div>
+            <span class="font-body font-semibold flex-1 text-lg leading-none">
+              {item.label}
+            </span>
+          </div>
+        </a>
+      {/each}
+    </div>
+  </div>
+  <div class="group w-full py-3 flex items-center px-4 cursor-pointer transition-colors" on:click={expand}>
+    <div class="h-8 w-8 flex justify-center mr-3 opacity-75 group-hover:opacity-100 ease-in duration-150">
+      <img class="h-full" src={image} alt={label} />
+    </div>
+    <span
+      class="parent-span font-body font-semibold flex-1 text-lg leading-none text-gray-500 group-hover:text-white ease-in duration-150"
+    >
+      {label}
+    </span>
+  </div>
+</div>
+{#if mobile && expandMenu}
+  <div class="py-2 flex flex-col w-full" transition:slide={{ duration: 100 }}>
+    {#each items as item}
+      <a
+        on:click={clicked}
+        class="w-full rounded-xl ease-in duration-150 {segment === item.href.substring(1) ? 'active-child' : ''}"
+        href={item.href}
+      >
+        <div
+          class="w-full py-3 flex items-center px-4 cursor-pointer transition-colors text-gray-500 hover:text-white ease-in duration-150"
+        >
+          <div class="h-8 w-8 mr-3 flex justify-center items-center leading-none">
+            <span>●</span>
+          </div>
+          <span class="font-body font-semibold flex-1 text-lg leading-none">
+            {item.label}
+          </span>
+        </div>
+      </a>
+    {/each}
+  </div>
+{/if}
+
+<style>
+  .active {
+    @apply bg-primary;
+    @apply bg-opacity-75;
+
+    span.parent-span {
+      @apply text-white;
+    }
+
+    img {
+      @apply opacity-100;
+    }
+  }
+
+  .active-child {
+    @apply bg-primary;
+    @apply bg-opacity-75;
+
+    span {
+      @apply text-white;
+    }
+  }
+
+  .child {
+    display: none;
+    right: 1.3rem;
+  }
+
+  .parent:hover {
+    .child {
+      display: flex;
+    }
+  }
+</style>

@@ -8,6 +8,7 @@
 
   import SidebarTitle from './Title.svelte';
   import SidebarItem from './SidebarItem.svelte';
+  import SidebarMoreItem from './SidebarMoreItem.svelte';
 
   import { showSidebar } from '../../stores/sidebar';
   import Button from '../Button.svelte';
@@ -50,10 +51,11 @@
 <div
   in:fly={{ x: 100, duration: 100 }}
   out:fly={{ x: 100, duration: 100 }}
-  class={`sidebar overflow-x-hidden fixed w-full lg:w-64 h-full flex-col bg-background items-center z-50 
+  class={`sidebar fixed w-full lg:w-64 h-full flex-col bg-background items-center z-50 
     ${mobile ? 'flex' : 'hidden lg:flex'}`}
 >
-  <div class="flex flex-col flex-1 items-center overflow-y-auto w-full px-5 py-5">
+  <div class="paimon-bg overflow-x-hidden h-full w-full lg:w-64 fixed z-0" />
+  <div class="flex flex-col flex-1 items-center overflow-y-auto w-full px-5 py-5 z-10">
     {#if !mobile}
       <SidebarTitle />
     {/if}
@@ -92,17 +94,23 @@
     />
     <SidebarItem
       on:clicked={close}
-      active={segment === 'items'}
-      image="/images/items.png"
-      label={$t('sidebar.items')}
-      href="/items"
-    />
-    <SidebarItem
-      on:clicked={close}
       active={segment === 'todo'}
       image="/images/todos.png"
       label={$t('sidebar.todoList')}
       href="/todo"
+    />
+    <SidebarMoreItem
+      {mobile}
+      {segment}
+      on:clicked={close}
+      active={segment === 'items' || segment === 'achievement' || segment === 'reminder'}
+      image="/images/items.png"
+      label={$t('sidebar.database')}
+      items={[
+        { label: $t('sidebar.items'), href: '/items' },
+        { label: $t('sidebar.achievement'), href: '/achievement' },
+        { label: $t('sidebar.reminder'), href: '/reminder' },
+      ]}
     />
     <SidebarItem
       on:clicked={close}
@@ -120,7 +128,7 @@
     />
   </div>
   <div
-    class="pt-2 pb-4 flex flex-col items-center w-full z-10"
+    class="pt-2 pb-4 flex flex-col items-center w-full z-20"
     style="width: 248px; background: linear-gradient(180deg, rgba(32, 36, 66, 0) 0%, rgba(32, 36, 66, 1) 10%);"
   >
     <div
@@ -150,7 +158,7 @@
 </div>
 
 <style>
-  .sidebar::after {
+  .paimon-bg::after {
     content: '';
     top: -50px;
     left: 50px;
