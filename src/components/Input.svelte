@@ -22,7 +22,10 @@
 </script>
 
 <div
-  class={`flex flex-1 relative items-center bg-background rounded-2xl h-14 focus-within:border-primary border-2 border-transparent ease-in duration-100 ${className}`}>
+  class="flex flex-1 relative items-center bg-background rounded-2xl h-14
+   focus-within:border-primary border-2 border-transparent ease-in duration-100 {className}"
+   style="min-height: 3.5rem;"
+>
   {#if icon}
     <Icon path={icon} color="white" className="absolute ml-4 w-6 h-6" />
   {/if}
@@ -36,5 +39,8 @@
     {pattern}
     on:change
     on:input={handleInput}
-    class={`w-full ${icon ? 'pl-12' : 'pl-4'} min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none`} />
+    class={`w-full ${
+      icon ? 'pl-12' : 'pl-4'
+    } min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none`}
+  />
 </div>
