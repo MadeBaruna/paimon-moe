@@ -149,6 +149,9 @@
       'wish-counter-weapon-event',
       'wish-counter-standard',
       'wish-counter-beginners',
+      'characters',
+      'achievement',
+      'collectables-updated',
     ];
 
     for (let k of keyWillBeDeleted) {
@@ -180,6 +183,9 @@
       'wish-counter-weapon-event',
       'wish-counter-standard',
       'wish-counter-beginners',
+      'characters',
+      'achievement',
+      'collectables-updated',
     ];
 
     for (let k of keyWillBeDeleted) {
