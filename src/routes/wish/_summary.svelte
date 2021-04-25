@@ -36,6 +36,44 @@
     readLocalData();
   });
 
+  const defaultChars = {
+    amber: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    kaeya: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    lisa: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    traveler_geo: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    traveler_anemo: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    barbara: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+    xiangling: {
+      default: 1,
+      wish: 0,
+      manual: 0,
+    },
+  };
+
   export function readLocalData() {
     totalWish = 0;
     console.log('wish summary read local');
@@ -53,6 +91,8 @@
         collectedCharacters[collectedId].wish = 0;
       }
       updateCollectedCharacters = true;
+    } else {
+      collectedCharacters = defaultChars;
     }
     const collectablesNeedUpdateData = readSave(`${prefix}collectables-updated`);
     if (collectablesNeedUpdateData === null || collectablesNeedUpdateData === 'true') {
@@ -165,7 +205,7 @@
       }
     }
 
-    if (updateCollectedCharacters) {
+    if (updateCollectedCharacters && totalWish > 0) {
       console.log('updating collectables');
       updateSave(`${prefix}characters`, JSON.stringify(collectedCharacters));
       updateSave(`${prefix}collectables-updated`, 'false');
