@@ -304,7 +304,7 @@
     "titleWeapon": "Kalkulator Senjata",
     "titleCharacter": "Kalkulator Karakter",
     "titleResin": "Kalkulator Resin",
-    "goto": "Ke",
+    "goto": "Ke {where}",
     "howToUse": "Cara Penggunaan",
     "guide": {
       "clickToMaximize": "Klik gambar untuk memperbesar",
