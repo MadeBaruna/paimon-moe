@@ -120,11 +120,7 @@
       />
       <p class="text-white text-center">
         {$t('calculator.resin.currentTime')}:
-        {#if $t('calculator.resin.timeFormat') === 'en'}
-          {currentTime.locale('en').format('dddd HH:mm:ss')}
-        {:else}
-          {currentTime.locale('id').format('dddd HH:mm:ss')}
-        {/if}
+        {currentTime.locale($t('calculator.resin.timeFormat')).format('dddd HH:mm:ss')}
       </p>
     </div>
     <div class="md:col-span-1 xl:col-span-2">
@@ -188,11 +184,7 @@
             <tr>
               <td class="text-red-400" colspan="2">
                 {$t('calculator.resin.fullTime')}:
-                {#if $t('calculator.resin.timeFormat') === 'en'}
-                  {fullTime.locale('en').format('dddd HH:mm:ss')} ({fullTime.locale('en').fromNow()})
-                {:else}
-                  {fullTime.locale('id').format('dddd HH:mm:ss')} ({fullTime.locale('id').fromNow()})
-                {/if}
+                {fullTime.locale($t('calculator.resin.timeFormat')).format('dddd HH:mm:ss')} ({fullTime.locale($t('calculator.resin.timeFormat')).fromNow()})
               </td>
             </tr>
           </table>
