@@ -22,7 +22,7 @@
         "Tartaglia"
       ],
       "summoned": "Pulang",
-      "percentage": "dari semua",
+      "percentage": "dari semua {rarity}",
       "avg": "Pity rata-rata",
       "subtitle": "Dihitung dari data yang dikirim oleh {user} pengguna paimon.moe",
       "detail": "Perhitungan Wish Pity Global"
