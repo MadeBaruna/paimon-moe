@@ -3,6 +3,7 @@ import { addMessages, init, getLocaleFromNavigator, locale as $locale } from 'sv
 import en from './locales/en.json';
 import id from './locales/id.json';
 import ru from './locales/ru.json';
+import ko from './locales/ko.json';
 
 const INIT_OPTIONS = {
   fallbackLocale: 'en',
@@ -25,6 +26,7 @@ addMessages('en', en);
 addMessages('en-US', en);
 addMessages('id', id);
 addMessages('ru', ru);
+addMessages('ko', ko);
 
 export function startClient() {
   const savedLocale = localStorage.getItem('locale');
