@@ -80,6 +80,17 @@ export const eventsData = [
       showOnHome: true,
       startOnly: true,
     },
+    {
+      name: 'Windtrace',
+      pos: '0% 80%',
+      image: 'windtrace.jpg',
+      start: '2021-05-14 10:00:00',
+      end: '2021-05-24 04:00:00',
+      color: '#E8D8B7',
+      zoom: '190%',
+      url: 'https://genshin.mihoyo.com/en/news/detail/12281',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -102,6 +113,17 @@ export const eventsData = [
       color: '#579DE5',
       zoom: '170%',
       url: 'https://www.hoyolab.com/genshin/article/286280',
+      showOnHome: true,
+    },
+    {
+      name: 'Energy Amplifier Initiation',
+      pos: '0% 20%',
+      image: 'energy_amplifier.jpg',
+      start: '2021-04-30 10:00:00',
+      end: '2021-05-17 04:00:00',
+      color: '#5CB8FE',
+      zoom: '180%',
+      url: 'https://genshin.mihoyo.com/en/news/detail/12281',
       showOnHome: true,
     },
   ],
@@ -171,6 +193,16 @@ export const eventsData = [
       url: 'https://genshin.mihoyo.com/en/news/detail/9714',
       showOnHome: true,
     },
+    {
+      name: 'Gentry of Hermitage - Zhongli Banner',
+      pos: '30% 15%',
+      image: 'gentry_of_hermitage_2.jpg',
+      start: '2021-04-28 06:00:00',
+      end: '2021-05-18 17:59:59',
+      color: '#FDFB80',
+      url: 'https://genshin.mihoyo.com/en/news/detail/12265',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -192,6 +224,17 @@ export const eventsData = [
       color: '#FFAA4B',
       zoom: '170%',
       url: 'https://genshin.mihoyo.com/en/news/detail/9739',
+      showOnHome: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      image: 'epitome_invocation_11.jpg',
+      pos: '30% 30%',
+      start: '2021-04-28 06:00:00',
+      end: '2021-05-18 17:59:59',
+      color: '#FFAA4B',
+      zoom: '170%',
+      url: 'https://genshin.mihoyo.com/en/news/detail/12270',
       showOnHome: true,
     },
   ],
@@ -225,6 +268,16 @@ export const eventsData = [
       color: '#4299E1',
       description: 'Hitting an opponent with a Plunging Attack decreases their DEF by 40% for 10s.',
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2021-05-01 04:00:00',
+      end: '2021-05-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character scores consecutive hits on an opponent with Normal Attacks within 2s, this character's Physical DMG is increased by 5% for 10s. This effect stacks up to 5 times, and only 1 stack is added at a time regardless of how many enemies are hit in one strike. When 5 stacks have been obtained, further hits on opponents will unleash shockwaves that deal AoE DMG. A shockwave can be created in this manner once every 1s.",
+    },
   ],
   [
     {
@@ -257,6 +310,14 @@ export const eventsData = [
       end: '2021-04-26 04:00:00',
       color: '#68D391',
       url: 'https://genshin.mihoyo.com/en/news/detail/9289',
+    },
+    {
+      name: 'Battle Pass',
+      image: 'realm_of_diversion.jpg',
+      pos: '0% 12%',
+      start: '2021-04-28 06:00:00',
+      end: '2021-06-07 04:00:00',
+      color: '#68D391',
     },
   ],
 ];

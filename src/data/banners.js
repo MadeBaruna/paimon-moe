@@ -124,6 +124,16 @@ export const banners = {
       color: '#50A3C0',
       featured: ['tartaglia'],
     },
+    {
+      name: 'Gentry of Hermitage',
+      image: 2,
+      shortName: 'Zhongli',
+      start: '2021-04-28 06:00:00',
+      end: '2021-05-18 17:59:59',
+      color: '#D1A55C',
+      featured: ['zhongli'],
+      timezoneDependent: true,
+    },
   ],
   weapons: [
     {
@@ -220,6 +230,16 @@ export const banners = {
       shortName: 'Skyward',
       color: '#f5c242',
       featured: ['skyward_harp', 'lost_prayer_to_the_sacred_winds'],
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 11,
+      start: '2021-04-28 06:00:00',
+      end: '2021-05-18 17:59:59',
+      shortName: 'Summit',
+      color: '#f54e42',
+      timezoneDependent: true,
+      featured: ['summit_shaper', 'memory_of_dust'],
     },
   ],
 };
