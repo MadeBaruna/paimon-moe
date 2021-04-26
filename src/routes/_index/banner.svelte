@@ -97,7 +97,7 @@
     <div class="flex flex-wrap items-start pl-2">
       <p class="text-white mr-4 leading-4">
         <span class="font-semibold">{item.percentage}%</span>
-        {$t('home.banner.percentage', { values: { rare: item.rarity === 'legendary' ? '5★' : '4★' } })}
+        {$t('home.banner.percentage', { values: { rarity: item.rarity === 'legendary' ? '5★' : '4★' } })}
       </p>
       <p class="text-white leading-4">{$t('home.banner.avg')} <span class="font-semibold">{item.average}</span></p>
     </div>
