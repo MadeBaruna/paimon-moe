@@ -69,7 +69,7 @@
   >
     <Button on:click={() => findPos('character')}>
       <Icon size={0.8} path={mdiArrowDown} />
-      {$t('calculator.goto', { values: { where: $t('calculator.titleCharacter') })}
+      {$t('calculator.goto', { values: { where: $t('calculator.titleCharacter') } })}
     </Button>
 
     <h1
@@ -85,11 +85,11 @@
   >
     <Button on:click={() => findPos('weapon')}>
       <Icon size={0.8} path={mdiArrowUp} />
-      {$t('calculator.goto', { values: { where: $t('calculator.titleWeapon') })}
+      {$t('calculator.goto', { values: { where: $t('calculator.titleWeapon') } })}
     </Button>
     <Button className="md:mt-0 md:mr-4 mt-4" on:click={() => findPos('resin')}>
       <Icon size={0.8} path={mdiArrowDown} />
-      {$t('calculator.goto', { values: { where: $t('calculator.titleResin') })}
+      {$t('calculator.goto', { values: { where: $t('calculator.titleResin') } })}
     </Button>
     <h1
       class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
@@ -104,7 +104,7 @@
   >
     <Button on:click={() => findPos('character')}>
       <Icon size={0.8} path={mdiArrowUp} />
-      {$t('calculator.goto', { values: { where: $t('calculator.titleCharacter') })}
+      {$t('calculator.goto', { values: { where: $t('calculator.titleCharacter') } })}
     </Button>
     <h1
       class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
