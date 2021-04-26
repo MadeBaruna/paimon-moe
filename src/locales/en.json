@@ -22,7 +22,7 @@
         "Tartaglia"
       ],
       "summoned": "Summoned",
-      "percentage": "from all",
+      "percentage": "from all {rarity}",
       "avg": "Pity average",
       "subtitle": "Calculated from data submitted by {user} paimon.moe users",
       "detail": "Global Wish Tally"
@@ -329,7 +329,7 @@
     "titleWeapon": "Weapon Calculator",
     "titleCharacter": "Character Calculator",
     "titleResin": "Resin Calculator",
-    "goto": "Go To",
+    "goto": "Go To {where}",
     "howToUse": "How to Use",
     "guide": {
       "clickToMaximize": "Click the picture to maximize",
