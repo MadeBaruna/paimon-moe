@@ -1,6 +1,6 @@
 <script>
-  import { createEventDispatcher } from 'svelte';
-  import { slide } from 'svelte/transition';
+  import { createEventDispatcher, onMount } from 'svelte';
+  import { fly } from 'svelte/transition';
 
   export let image;
   export let label;
@@ -10,17 +10,27 @@
   export let items = [];
 
   let expandMenu = false;
+  let isSafari = false;
 
   const dispatch = createEventDispatcher();
 
   function expand() {
-    if (!mobile) return;
+    if (!mobile && !isSafari) return;
     expandMenu = !expandMenu;
   }
 
   function clicked() {
     dispatch('clicked');
   }
+
+  onMount(() => {
+    isSafari =
+      navigator.vendor &&
+      navigator.vendor.indexOf('Apple') > -1 &&
+      navigator.userAgent &&
+      navigator.userAgent.indexOf('CriOS') == -1 &&
+      navigator.userAgent.indexOf('FxiOS') == -1;
+  });
 </script>
 
 <div class="w-full rounded-xl ease-in duration-150 {mobile ? '' : 'parent'} {active ? 'active' : ''}">
@@ -58,8 +68,8 @@
     </span>
   </div>
 </div>
-{#if mobile && expandMenu}
-  <div class="py-2 flex flex-col w-full" transition:slide={{ duration: 100 }}>
+{#if expandMenu}
+  <div class="py-2 flex flex-col w-full" transition:fly={{ y: -100, duration: 100 }}>
     {#each items as item}
       <a
         on:click={clicked}
