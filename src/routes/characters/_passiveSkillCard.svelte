@@ -8,8 +8,8 @@
   const name = data.name;
 </script>
 
-<div class="py-4 rounded-xl bg-item flex flex-col mb-4" style="{fade ? 'filter: grayscale(30%);' : ''}">
-  <div class="flex mb-2 items-start px-4">
+<div class="py-4 rounded-xl bg-item flex flex-col mb-2" style="{fade ? 'filter: grayscale(30%);' : ''}">
+  <div class="flex items-start px-4">
     <img src="/images/skills/{id}/{image}.png" alt={name} class="w-16 h-16 mr-4" />
     <div>
       <p class="font-black font-display text-xl">{name}</p>
