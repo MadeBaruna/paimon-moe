@@ -22,7 +22,7 @@
         "Tartaglia"
       ],
       "summoned": "Pulang",
-      "percentage": "dari semua {rarity}",
+      "percentage": "dari semua",
       "avg": "Pity rata-rata",
       "subtitle": "Dihitung dari data yang dikirim oleh {user} pengguna paimon.moe",
       "detail": "Perhitungan Wish Pity Global"
@@ -232,10 +232,8 @@
       "howto": {
         "title": "Cara Menggunakan Manual Input",
         "subtitle": "Setelah kamu melakukan x1 pull wish:",
-        "press": "Tekan",
-        "whenYouGet": "ketika kamu mendapatkan",
-        "p1": "Itu akan otomatis menambahkan total pull",
-        "and": "dan",
+        "pressWhenYouGet": "Tekan {button} ketika kamu mendapatkan {rarity}★",
+        "p1": "Itu akan otomatis menambahkan total pull, 5★ dan, 4★ pity",
         "p2": [
           "Ketika",
           "pity mencapai 10, angkanya akan otomatis reset menjadi 0"
@@ -304,7 +302,7 @@
     "titleWeapon": "Kalkulator Senjata",
     "titleCharacter": "Kalkulator Karakter",
     "titleResin": "Kalkulator Resin",
-    "goto": "Ke {where}",
+    "goto": "Ke",
     "howToUse": "Cara Penggunaan",
     "guide": {
       "clickToMaximize": "Klik gambar untuk memperbesar",
