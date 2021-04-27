@@ -80,50 +80,31 @@
   <div class="text-white p-2 bg-background rounded-xl">
     <p class="mb-2">{$t('wish.help.howto.subtitle')}</p>
     <p class="mb-2">
-      {$t('wish.help.howto.press')}
-      <b class="rounded-lg px-2 py-1 border-white border inline-flex items-center">+1</b>
-      {$t('wish.help.howto.whenYouGet')}
-      <span class="inline-flex items-center"
-        >3
-        <Icon path={mdiStar} size={0.7} /></span
-      >
+      {@html $t('wish.help.howto.pressWhenYouGet', {
+        values: {
+          button: '<b class="rounded-lg px-2 py-1 border-white border inline-flex">+1</b>',
+          rarity: 3,
+        },
+      })}
     </p>
     <p class="mb-2">
-      {$t('wish.help.howto.press')}
-      <b class="rounded-lg px-2 py-1 border-white border inline-flex items-center"
-        >Get 4
-        <Icon path={mdiStar} size={0.7} /></b
-      >
-      {$t('wish.help.howto.whenYouGet')}
-      <span class="inline-flex items-center"
-        >4
-        <Icon path={mdiStar} size={0.7} /></span
-      >
+      {@html $t('wish.help.howto.pressWhenYouGet', {
+        values: {
+          button: `<b class="rounded-lg px-2 py-1 border-white border inline-flex">Get 4★</b>`,
+          rarity: 4,
+        },
+      })}
     </p>
     <p class="mb-2">
-      {$t('wish.help.howto.press')}
-      <b class="rounded-lg px-2 py-1 border-white border inline-flex items-center"
-        >Get 5
-        <Icon path={mdiStar} size={0.7} /></b
-      >
-      {$t('wish.help.howto.whenYouGet')}
-      <span class="inline-flex items-center"
-        >5
-        <Icon path={mdiStar} size={0.7} /></span
-      >
+      {@html $t('wish.help.howto.pressWhenYouGet', {
+        values: {
+          button: `<b class="rounded-lg px-2 py-1 border-white border inline-flex">Get 5★</b>`,
+          rarity: 5,
+        },
+      })}
     </p>
     <p class="text-gray-400">
       {$t('wish.help.howto.p1')}
-      <span class="inline-flex items-center"
-        >5
-        <Icon path={mdiStar} size={0.7} /></span
-      >
-      {$t('wish.help.howto.and')}
-      <span class="inline-flex items-center"
-        >4
-        <Icon path={mdiStar} size={0.7} /></span
-      >
-      pity
     </p>
     <p class="text-gray-400">
       {$t('wish.help.howto.p2.0')}
