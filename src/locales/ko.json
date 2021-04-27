@@ -1,0 +1,578 @@
+{
+  "sidebar": {
+    "home": "홈",
+    "character": "캐릭터",
+    "wishCounter": "기원 통계",
+    "calculator": "계산기",
+    "database": "데이터베이스",
+    "items": "아이템",
+    "achievement": "업적",
+    "reminder": "리마인더",
+    "todoList": "할 일 목록",
+    "timeline": "타임라인",
+    "settings": "설정",
+    "donate": "후원"
+  },
+  "home": {
+    "welcome": "Paimon.moe에 어서오세요! 👋",
+    "message": "최고의 원신 동반자! 돌파 계산기로 파밍 계획을 도와주고, 할 일 목록과 기원 통계를 통해 진척도를 확인해줍니다.",
+    "banner": {
+      "featured": [
+        "로자리아",
+        "타르탈리아"
+      ],
+      "summoned": "획득",
+      "percentage": "(모든 {rarity} 중)",
+      "avg": "평균 천장",
+      "subtitle": "{user}명의 paimon.moe 사용자가 제공한 데이터로 계산되었습니다",
+      "detail": "전체 기원 총계"
+    },
+    "wish": {
+      "message": "기원 통계를 제출해 여러분의 기원 기록을 6개월 이상 보존하세요! 자동으로 천장을 계산하고 보기좋은 차트로 통계도 만들어 드립니다 📊",
+      "latest": "저번 뽑기 기록",
+      "banner": "픽업",
+      "time": "시간",
+      "name": "이름",
+      "pity": "천장",
+      "detail": "기원 통계"
+    },
+    "reminder": {
+      "message": "매개 변수 변환기나 Hoyolab 출석 체크 이벤트의 리마인더 알림을 설정할 수 있습니다! 🔔 아래의 리마인더 버튼을 클릭해주세요!",
+      "detail": "리마인더"
+    },
+    "event": {
+      "upcoming": "예정 중인 이벤트",
+      "current": "현재 이벤트",
+      "detail": "타임라인"
+    },
+    "discord": {
+      "online": "명 온라인",
+      "message": "우리 Discord 서버에 참여해 최신 업데이트 알림을 받으세요! 원신에 대해 토론하거나 paimon.moe에 대한 피드백도 할 수 있습니다.",
+      "join": "Discord 서버에 참가"
+    },
+    "items": {
+      "title": "오늘 파밍 가능한 아이템",
+      "detail": "아이템",
+      "sunday": "일요일에는 모든 아이템을 파밍할 수 있습니다. 😁"
+    },
+    "calculator": {
+      "title": "🧮 캐릭터와 무기의 돌파 필요 재료와 특성 책 재료를 계산해드립니다! 모든 계산된 내용은 할 일 목록에 추가할 수 있습니다, 추가하면 레진이 얼마나 필요한 지 알려줘요!",
+      "detail": "계산기"
+    },
+    "twitter": {
+      "title": "제 트위터에 팔로우하셔서, 제가 paimon.moe의 어떤 내용을 개발하고, 업데이트 했는지 가끔씩 확인해보세요!",
+      "detail": "Twitter 팔로우"
+    },
+    "achievement": {
+      "title": "🏆 업적 목록을 확인하고 추적하세요",
+      "detail": "업적"
+    }
+  },
+  "characters": {
+    "title": "캐릭터",
+    "subtitle": "스탯 수치는 80 레벨, 6 돌파를 기준으로 합니다. 표의 상단을 눌러 정렬할 수도 있습니다!",
+    "name": "이름",
+    "element": "원소",
+    "rarity": "희귀도",
+    "weapon": "무기",
+    "talents": "전투 특성",
+    "passiveTalents": "고유 특성",
+    "constellations": "운명의 자리",
+    "asc": "돌파",
+    "lvl": "레벨",
+    "hp": "HP",
+    "atk": "공격력",
+    "def": "방어력",
+    "hpPercent": "HP %",
+    "atkPercent": "공격력 %",
+    "defPercent": "방어력 %",
+    "critRate": "치명타 확률",
+    "critDamage": "치명타 피해",
+    "em": "원소 마스터리",
+    "er": "원소 충전 효율",
+    "healingBonus": "치유 보너스",
+    "pyroDamageBonus": "불 원소 피해 보너스",
+    "hydroDamageBonus": "물 원소 피해 보너스",
+    "dendroDamageBonus": "풀 원소 피해 보너스",
+    "electroDamageBonus": "번개 원소 피해 보너스",
+    "cryoDamageBonus": "얼음 원소 피해 보너스",
+    "anemoDamageBonus": "바람 원소 피해 보너스",
+    "physicalDamageBonus": "물리 피해 보너스",
+    "geoDamageBonus": "바위 원소 피해 보너스"
+  },
+  "wish": {
+    "title": "기원 통계",
+    "autoImport": "자동 제출",
+    "helpAndSetting": "도움말 & 설정",
+    "wishesWorth": "기원 가치",
+    "lifetimePulls": "총 뽑기 횟수",
+    "guarantee": "천장 지수 {pity}에 확정으로 획득",
+    "name": "이름",
+    "time": "시간",
+    "pity": "천장",
+    "welcome": "기원 통계에 어서오세요! 우선은 자동 제출기능을 통해 기원 기록을 제출하기를 권장드립니다.",
+    "welcomeStart1": "시작하려면, 상단의",
+    "welcomeStart2": "버튼을 누르세요",
+    "manual": "수동으로 데이터를 입력하려면, 여기를 활성화하세요:",
+    "manualButton": "수동 입력 활성화",
+    "errorBanner": "픽업 기간이 일치하지 않습니다! 설정 페이지에서 서버를 조정해주세요. 그래도 안된다고요? Discord에 메세지를 남겨 주세요 😅",
+    "globalWishTally": "전체 기원 총계",
+    "import": {
+      "title": "기원 기록 제출",
+      "faqsButton": "FAQ - 먼저 읽어보세요",
+      "nonew": "새로운 기록이 없습니다",
+      "importNotice1": "제출된 기록은 기존 데이터에 따라 덧붙여지거나 대체됩니다",
+      "importNotice2": "이전에 저장한 기록이 없다면, 천장 수치는 1부터 시작합니다",
+      "importNotice3": "다른 계정의 정보를 제출하려고 한다면, 설정 페이지에서 계정을 나누는 걸 잊지마세요, 그렇지 않으면 데이터가 섞여버릴 겁니다!",
+      "saveData": "기원 데이터를 저장할까요?",
+      "reCalculating": "천장 재계산 중...",
+      "processing": "처리중",
+      "banner": "픽업",
+      "page": "페이지",
+      "parsing": "파싱 중...",
+      "save": "저장",
+      "cancel": "취소",
+      "cancelling": "취소하는 중...",
+      "importNewWishOnly": "새로운 기록만 제출",
+      "importNewWishUncheck": "모든 기원 길고을 다시 제출해야 할 때만 체크 해제하세요",
+      "import": "제출",
+      "close": "닫기",
+      "invalidLink": "유효하지 않은 링크입니다, 다시 확인해보세요",
+      "errorApi": "MiHoYo API와 통신 중 오류가 발생했습니다, 나중에 다시 시도해보세요!",
+      "timeout": "연결 대기 시간이 초과됐습니다, 잠시 기다린 후 다시 시도해보세요",
+      "invalidData": "API로 부터 유효하지 않은 정보를 받았습니다, 나중에 다시 시도해보세요",
+      "success": "제출 성공 😀!",
+      "server": "서버를 선택해주세요:",
+      "wishTallyCheck": "전체 기원 총계를 위해 천장 정보 전송",
+      "wishTally": "우리는 전체 사용자들의 기원 총계를 만들고 있습니다! 여러분의 기원 정보를 보내어 참여할 수 있습니다. 모든 천장 정보는 paimon.moe 사용자들의 평균 천장을 확인하기 위해 집계됩니다.",
+      "wishTallyCollected": [
+        "수집되는 정보:",
+        "그리고",
+        "당신의 기원 통계에서 확인된 천장 정보"
+      ],
+      "faqs": {
+        "title": "기원 기록 입력 FAQ",
+        "q1": "어떤 원리로 동작하나요?",
+        "a1": "원신의 기원 기록은 기본적으로 웹 페이지입니다. 따라서 여러분은 특정한 웹 페이지의 URL을 통해 접근할 수 있고, 여러분이 기원 페이지나 피드백 페이지를 열게 되면 이 정보들에 접근 가능한 임시 키가 주어지고, 이 사이트에서는 그 키를 이용해 MiHoYo API와 통신하여 여러분의 기원 기록을 가져옵니다.",
+        "q2": "안전한 건가요? 밴당하거나 하진 않을까요?",
+        "a2": "Paimon.moe는 원신이 자체적으로 여러분에게 기원 기록을 보여주는 것과 같은 방법을 사용합니다. 또한 Paimon.moe는 게임 파일이나 메모리를 변조할 어떠한 방법도 없으며, 이는 곧 안전하다고 말할 수 있습니다. 그러나 이 기능을 사용함에 있어서의 책임은 여러분에게 있습니다 (저는 제 주계정으로 사용하고 있습니다). 아니면 기원 데이터를 수동으로 입력할 수도 있어요 😀.",
+        "q3": "제 계정을 해킹할 수도 있는 거 아닌가요?",
+        "a3": [
+          "Paimon.moe는 UID나 닉네임같은 계정 정보를 절대 저장하지 않습니다, 그러니 그럴 가능성은 없습니다. 이 프로젝트는 오픈 소스이며",
+          "에서 확인하실 수 있습니다; 저는 타인의 계정을 해킹해서 제 명성을 깎아먹을 생각은 없어요."
+        ],
+        "q4": "잠깐, 내가 요청 정보나 오가는 데이터를 확인해 봤는데, 왜 MiHoYo API랑 통신하는게 아니고 당신네 도메인에 요청하는 겁니까?",
+        "a4": [
+          "Paimon.moe는",
+          "때문에 MiHoYo API에 직접 요청할 수 없습니다, 그래서 요청 정보는 간단한 CORS 프록시 서버에 옮겨진 후 수행됩니다. 코드를 확인하시면 알 수 있어요.",
+          "here"
+        ],
+        "q5": "그럼 제 임시키나 기원 기록들을 보관하고 있는건가요?",
+        "a5": [
+          "Paimon.moe는 절대 여러분이 임시로 받은 키를 보관하지 않을 것이고, URL은 CORS를 통해 데이터를 받아오기 위해 CORS 프록시 서버에 보내집니다. Paimon.moe는 여러분이 전체 기원 통계를 전송하는데 참여했을 때에만 4* 천장 정보와, 5* 기원 및 천장 정보를 보관합니다 (개인 정보는 보관하지 않아요! 자세한 정보는",
+          "개인정보처리방침",
+          "를 참조하세요). 기원 정보가 전송되는 걸 원치 않는다면 천장 정보 전송 체크박스를 해제할 수 있습니다. 체크를 해제하면 여러분의 모든 기원 정보는 여러분의 기기(또는 동기화를 활성화 했다면 Google Drive)에 저장됩니다.",
+          "만약 여러분의 임시 키가 포함된 URL이 이리 저리 전송되는걸 원치 않으신다면, PC 내부에 있는 임시 데이터를 이용해 추출하는 작은 스크립트를 사용하실 수도 있습니다. (PC Local 옵션) "
+        ],
+        "q6": "하라는 대로 했는데, API 오류라는 데요?",
+        "a6": "모든 문자를 복사해서 붙여넣었는지 확인하세요(모바일 환경에서는 꾹 눌러서 [모두 선택]); 아마 자동 입력 기능이 필요로 하는 문자 몇 개를 빼먹으신 것 같아요.",
+        "q7": "제 기원 기록을 모두 읽는 게 아닌가요!? 빠진 게 있는데요",
+        "a7": "6개월이 지난 기원 기록들은 미호요 서버 자체에서 삭제됩니다, 그러니 어딘가에 데이터를 백업하신 게 아니라면... 슬프게 됐어요."
+      },
+      "guide": {
+        "video": "영상 도움말",
+        "pc": [
+          "[ESC] 페이몬 메뉴를 엽니다",
+          "피드백 버튼을 누릅니다",
+          "기다리면 브라우저 화면이 열립니다",
+          "아래 텍스트 박스에 브라우저의 주소를 복사 & 붙여넣기하세요",
+          "여기에 주소를 붙여넣기하세요... (https://webstatic...)"
+        ],
+        "android": [
+          "페이몬 메뉴를 엽니다",
+          "피드백 버튼을 누릅니다",
+          "기다리면 브라우저 화면이 열립니다",
+          "Wi-Fi와 데이터 연결을 모두 끄세요",
+          "오른쪽 위의 새로고침 버튼을 누르세요",
+          "새로고침된 화면에 에러가 나타나고, 검은색으로 오류 내용이 나타납니다",
+          "텍스트를 길게 꾹 눌러 [모두 선택]을 누르고, [복사]를 선택하세요 (텍스트의 일부만 복사하면 안됩니다)",
+          "Wi-Fi와 데이터 연결을 다시 켜세요",
+          "아래 텍스트 박스에 복사한 문자를 붙넣기하세요",
+          "여기에 문자를 붙여넣기하세요... (웹페이지를 사용할 수 없습니다...)"
+        ],
+        "ios": [
+          "페이몬 메뉴를 여세요",
+          "피드백 버튼을 누릅니다",
+          "기다리면 피드백 페이지가 열립니다",
+          "[게임 문제]를 누릅니다",
+          "[다인 모드]를 누릅니다",
+          "답변의 가장 아래에 링크가 있습니다, 그걸 누르세요",
+          "브라우저가 열릴겁니다. 아래 텍스트 박스에 브라우저의 주소를 복사 & 붙여넣기하세요",
+          "여기에 주소를 붙여넣기하세요... (https://genshin.mihoyo...)"
+        ],
+        "ps": [
+          "웹 이벤트 페이지를 열기 위한 QR 코드가 포함된 게임 내 우편이 있는 경우에만 이 기능을 사용할 수 있습니다.",
+          "플레이 스테이션에서 원신을 실행하세요",
+          "QR 코드가 포함된 이벤트 우편을 엽니다",
+          "스마트폰으로 QR 코드를 스캔합니다",
+          "주소를 복사해, 아래에 붙여넣기하세요",
+          "여기에 주소를 붙여넣기하세요..."
+        ],
+        "pclocal": [
+          "피드백 페이지 주소를 이용한 방법이 불편하다면, 이 방법을 이용해 PC에서 자체적으로 처리할 수 있습니다. 이 스크립트가 PC 내의 로그 파일을 읽어 기원 기록 주소를 가져옵니다.",
+          "시작 버튼을 누르고, Powershell을 검색합니다.",
+          "Windows Powershell을 실행하고, 아래 스크립트를 복사해 Powershell에 붙여넣기합니다.",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "스크립트의 내용을 확인하려면",
+          "여기",
+          "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
+          "Enter키를 눌러 스크립트를 실행하고, 나타난 설명을 따르세요",
+          "이후, 스크립트의 실행 결과를 아래에 붙여넣기하세요",
+          "여기에 결과를 붙여넣기하세요...",
+          "이 기능은 아직 베타 상태입니다, 시도하기 전에 도움말 & 설정 메뉴에서 엑셀로 추출을 눌러 기존 데이터를 백업하세요."
+        ]
+      }
+    },
+    "help": {
+      "title": "기원 기록 도움말 & 설정",
+      "exportTitle": "기원 기록 추출하기",
+      "exportMessage": "엑셀 파일로 여러분의 기원 기록을 추출할 수 있습니다",
+      "export": "엑셀로 추출",
+      "exporting": "추출하는 중...",
+      "import": "제출",
+      "exportFinish": "추출 성공, 브라우저가 파일을 다운로드할 때 까지 기다려주세요!",
+      "wishTallyTitle": "기원 총계 전송",
+      "wishTally": "우리는 전체 사용자들의 기원 총계를 만들고 있습니다! 여러분의 기원 정보를 보내어 참여할 수 있습니다. 모든 천장 정보는 paimon.moe 사용자들의 평균 천장을 확인하기 위해 집계됩니다.",
+      "wishTallyCollected": [
+        "수집되는 정보:",
+        "그리고",
+        "당신의 기원 통계에서 확인된 천장 정보"
+      ],
+      "wishTallySubmit": "기원 총계 전송",
+      "wishTallyThankyou": "참여해주셔서 감사합니다!",
+      "manualTitle": "수동 입력 설정",
+      "enableManual": "수동 입력 활성화",
+      "notice": "자동 제출 기능과 수동 입력 기능을 동시에 사용하는 건 아직 실험이 필요한 부분이니 권장드리지 않습니다!",
+      "consider": "먼저 자동 제출 기능을 사용하고, 이 도움말을 열기 위해 눌렀던 버튼의 옆 버튼을 눌러 시도해보세요.",
+      "howto": {
+        "title": "수동 입력 사용하는 법",
+        "subtitle": "1회 기원 후:",
+        "pressWhenYouGet": "{rarity}★을 획득했을 땐 {button} 버튼을 누르세요",
+        "p1": "수동 입력시 자동으로 총 뽑기 횟수, 5★과 4★의 천장 수치를 추가합니다.",
+        "p2": [
+          " ",
+          "천장 지수가 10에 도달했을 때, 자동으로 0으로 초기화됩니다."
+        ],
+        "p3": [
+          " ",
+          "천장 지수가 90에 도달했을 때, 자동으로 0으로 초기화됩니다."
+        ],
+        "p4": [
+          "10연 뽑기 이후에는",
+          "를 눌러주세요, 하지만 천장 지수는 계산되지 않는다는 걸 명심해주세요, 언제 실제로 천장이 초기화됐는지 알 수 없거든요 (10연차의 첫번째 뽑기에서 나왔을 수도, 마지막에 나왔을 수도 있습니다). 천장 계산이 정확하게 맞추기 위해선, 직접 기록을 확인하고 1개 씩 수동 추가를 해야 합니다."
+        ],
+        "p5": [
+          "또는",
+          "버튼을 눌러 값들을 직접 고칠 수도 있습니다!"
+        ],
+        "p6": [
+          "아래쪽에 있는 화살표를 눌러 상세 뽑기 결과를 볼 수 있습니다",
+          "또는",
+          "를 누르면 팝업이 나타나, 데이터를 수정할 수 있고 데이터를 수동으로 추가할 수도 있습니다."
+        ]
+      }
+    },
+    "types": {
+      "beginners": "초보자 추천 기원",
+      "standard": "상시",
+      "character-event": "캐릭터 이벤트",
+      "weapon-event": "무기 이벤트"
+    },
+    "detail": {
+      "weapon": "무기",
+      "character": "캐릭터",
+      "time": "일시",
+      "pity": "천장",
+      "name": "이름",
+      "type": "종류",
+      "banner": "픽업",
+      "roll": "#뽑",
+      "totalThisBanner": "이 픽업에서 총 뽑은 횟수",
+      "worth": "가치",
+      "loading": "로딩 중... (화면이 멈췄다면, 설정 페이지에서 서버를 바꿔주세요)",
+      "guaranteed": "다음 5★ 은 확정 UP 캐릭터 또는 무기입니다"
+    },
+    "tally": {
+      "title": "기원 총계",
+      "subtitle": "paimon.moe 사용자들이 제출한 전체 천장 통계",
+      "update": "갱신됨",
+      "summoned": "획득",
+      "wonFiftyFifty": "50:50 확률로 획득",
+      "fromFiveStar": "(모든 5★ 중)",
+      "fromFourStar": "(모든 4★ 중)",
+      "show": "보기",
+      "name": "이름",
+      "total": "합계",
+      "wishTotal": "기원 합계",
+      "worth": "가치",
+      "weapon": "무기",
+      "character": "캐릭터",
+      "error": "데이터를 아직 사용할 수 없습니다 😞",
+      "pity": "천장",
+      "median": "5★ 평균",
+      "user": "전체 사용자"
+    }
+  },
+  "calculator": {
+    "titleWeapon": "무기 계산기",
+    "titleCharacter": "캐릭터 계산기",
+    "titleResin": "레진 계산기",
+    "goto": "{where}로 이동",
+    "howToUse": "사용법",
+    "guide": {
+      "clickToMaximize": "사진을 클릭해 최대화",
+      "howToWeapon": "무기 계산기 사용하는 법",
+      "howToCharacter": "캐릭터 계산기 사용하는 법"
+    },
+    "weapon": {
+      "calculateAscension": "돌파 재료도 계산할까요?",
+      "selectRarity": "무기 희귀도 선택",
+      "selectWeapon": "무기 선택",
+      "current": "현재 무기 레벨, 경험치, 돌파 레벨",
+      "inputCurrentLevel": "현재 무기 레벨을 입력해주세요...",
+      "inputCurrentExp": "현재 무기 경험치를 입력해주세요...",
+      "intended": "희망하는 무기 레벨과 돌파 레벨",
+      "inputIntendedLevel": "희망하는 무기 레벨을 입력해주세요...",
+      "resource": "사용할 자원 아이템",
+      "calculate": "계산",
+      "unknownInformation": "알 수 없는 정보가 있습니다",
+      "ascensionLevel": "돌파 레벨",
+      "mora": "모라 (근사치 ±40)",
+      "expWasted": "경험치 초과",
+      "addToTodo": "할 일 목록에 추가",
+      "addedToTodo": "할 일 목록에 추가됐습니다"
+    },
+    "character": {
+      "calculateAscension": "돌파 재료도 계산할까요?",
+      "selectCharacter": "캐릭터를 선택해주세요",
+      "current": "현재 캐릭터 레벨, 경험치, 돌파 레벨",
+      "inputCurrentLevel": "현재 캐릭터 레벨을 입력해주세요...",
+      "inputCurrentExp": "현재 캐릭터 경험치를 입력해주세요...",
+      "intended": "희망하는 캐릭터 레벨과 돌파 레벨",
+      "inputIntendedLevel": "희망하는 캐릭터 레벨을 입력해주세요...",
+      "resource": "사용할 자원 아이템",
+      "calculateTalent": "특성 재료도 계산할까요?",
+      "inputTalentLevel": "1번, 2번, 3번 특성의 현재 레벨을 입력해주세요",
+      "inputTalentNotice": "특성 레벨이 다른 색을 띤다면 3을 뺀 수치를 입력해주세요",
+      "inputTalent": [
+        "1번 특성 레벨",
+        "2번 특성 레벨",
+        "3번 특성 레벨"
+      ],
+      "talentToLevel": "레벨 에서",
+      "calculate": "계산",
+      "unknownInformation": "알 수 없는 정보가 있습니다",
+      "ascensionLevel": "돌파 레벨",
+      "mora": "모라 (근사치 ±40)",
+      "expWasted": "경험치 초과",
+      "addToTodo": "할 일 목록에 추가",
+      "addedToTodo": "할 일 목록에 추가됐습니다"
+    },
+    "expTable": {
+      "level": "레벨",
+      "items": "아이템",
+      "wasted": "초과 경험치",
+      "mora": "필요 모라"
+    },
+    "resinTable": {
+      "quantity": "수량",
+      "time": "대기 시간"
+    },
+    "resin": {
+      "currentResin": "현재 레진",
+      "desiredResin": "희망 소모 레진",
+      "or": "또는",
+      "inputCurrentResin": "현재 레진을 입력해주세요...",
+      "inputDesireResin": "몇 레진이 될 때까지 기다릴 지 입력해주세요...",
+      "timeFormat": "ko",
+      "calculate": "계산",
+      "currentTime": "현재 시간",
+      "fullTime": "완충 시간",
+      "hours": "시간",
+      "minutes": "분",
+      "seconds": "초"
+    }
+  },
+  "items": {
+    "title": "아이템 목록",
+    "subtitle": "할 일 목록에 추가하려면 아이템 이미지를 클릭하세요",
+    "searchCharacter": "캐릭터 검색",
+    "searchWeapon": "무기 검색",
+    "day": "요일",
+    "material": "재료",
+    "characterWeapons": "캐릭터 & 무기",
+    "add": {
+      "rarity": "희귀도 선택",
+      "amount": "수량",
+      "inputAmount": "수량을 입력하세요...",
+      "cancel": "취소",
+      "add": "할 일에 추가"
+    }
+  },
+  "days": {
+    "Sunday": "일요일",
+    "Monday": "월요일",
+    "Tuesday": "화요일",
+    "Wednesday": "수요일",
+    "Thursday": "목요일",
+    "Friday": "금요일",
+    "Saturday": "토요일"
+  },
+  "todo": {
+    "title": "할 일 목록",
+    "summary": "요약",
+    "empty": [
+      "아직 할 게 아무것도 없네요 😀",
+      "아이템 페이지나 계산기에서 할 일을 추가해보세요!"
+    ],
+    "farmableToday": "오늘 파밍 가능",
+    "resin": "레진 필요함",
+    "based": "모험 레벨:{ar}, 월드 레벨:{wl} 기준",
+    "change": "(설정에서 변경 가능)",
+    "approximation": "근사치는 다음으로 부터의 드랍률 통계를 기반으로 계산됐습니다: ",
+    "delete": {
+      "title": "이 할일을 삭제할까요?",
+      "cancel": "취소",
+      "delete": "삭제"
+    }
+  },
+  "timeline": {
+    "title": "타임라인",
+    "localTime": "기기 시간으로 보기",
+    "starting": "시작 까지",
+    "ending": "종료 까지",
+    "live": "진행 중!",
+    "finished": "종료됨"
+  },
+  "settings": {
+    "version": "데이터 버전:",
+    "multiple": "여러 계정을 보유하고 계신가요? 기원 기록과 할 일 목록을 나누려면 여기에서 계정을 선택하세요",
+    "selectAccount": "계정을 선택하세요",
+    "reset": "초기화",
+    "delete": "삭제",
+    "add": "추가",
+    "server": "서버를 선택하세요:",
+    "drive": [
+      "Paimon.moe는 여러분의 Google Drive에서 여러분의 기원 통계나 할 일 목록을 저장하고 동기화하기 위해 어플리케이션 데이터 디렉토리를 사용합니다.",
+      "Paimon.moe는 이 사이트에서 직접 생성한 파일만 읽거나 쓸 수 있습니다."
+    ],
+    "driveError": "Google Drive API를 불러올 수 없습니다.",
+    "driveSignIn": "Google Drive에 로그인",
+    "driveSignOut": "Google Drive 로그아웃",
+    "synced": "동기화됨",
+    "waiting": "대기 중...",
+    "syncing": "동기화 중...",
+    "lastSync": "마지막 동기화:",
+    "feedback": "버그, 잘못된 데이터를 발견하거나 또는 피드백이 있을 경우 메세지를 남겨주세요:",
+    "or": "또는",
+    "thanks": "감사합니다 😁!",
+    "modal": {
+      "notice": "모든 할 일 목록과 기원 기록 정보가 삭제됩니다",
+      "backup": "기원 정보를 엑셀 파일로 추출해 백업해놓을 수 있습니다!",
+      "cancel": "취소",
+      "delete": "삭제",
+      "reset": "초기화"
+    }
+  },
+  "privacypolicy": {
+    "title": "개인정보처리방침",
+    "subtitle": "paimon.moe이 수집하는 정보와 사용되는 곳",
+    "collect": [
+      {
+        "title": "paimon.moe상에서 방문한 URL, 리퍼러(Referer), 브라우저, 운영 체제, 기기 타입, 접속자 국가",
+        "content": [
+          "Paimon.moe에서는",
+          "plausible.io",
+          "(개인 정보 친화적인 분석 도구) 를 사용해 얼마나 많은 사람들이 어떤 기능을 사용하는지 볼 수 있습니다, 이에 따라 구현하고 발전시킬 기능들의 우선순위를 정할 수 있습니다."
+        ]
+      },
+      {
+        "title": "오류 메세지와 본 사이트의 예외 상황",
+        "content": [
+          "Paimon.moe는 본 사이트의 오류와 예외 정보를",
+          "sentry.io",
+          "에 전송하여, 문제를 추적하고 이에 따라 해결할 수 있습니다."
+        ]
+      },
+      {
+        "title": "기원 천장",
+        "content": [
+          "자동 제출 기능이나 도움말 & 설정 메뉴의 수동 제출 기능에서 '기원 총계 전송'을 체크했다면 Paimon.moe 은 4* 천장 횟수, 5* 천장 횟수, 그리고 5* 기원 정보 (뽑은 시간, 이름, 기원 횟수)를 저장합니다. Paimon.moe은 수집된 데이터를 합하고 각각의 픽업에서 paimon.moe 사용자들의 평균 천장을 계산하는데 데이터를 활용합니다. 이곳에서 확인하실 수 있습니다.",
+          "기원 총계"
+        ]
+      }
+    ],
+    "subtitleNotCollect": "paimon.moe 이 수집하지 '않는' 정보",
+    "notCollect": [
+      "Paimon.moe 는 절대 비밀번호, UID, 닉네임, 이메일, 임시 키 또는 피드백 url을 저장하지 않습니다. 관심이 있다면, 이 프로젝트는 오픈 소스이므로 아래에서 소스코드를 확인할 수 있습니다.",
+      "paimon-moe-api Github",
+      "and",
+      "paimon-moe Github"
+    ]
+  },
+  "sync": {
+    "message": "현재 브라우저에 저장된 데이터가 Google Drive에 저장된 데이터와 충돌합니다!",
+    "googleDriveData": "Google Drive 데이터",
+    "localData": "현재 브라우저에 저장된 데이터",
+    "older": "오래됨",
+    "newer": "최근",
+    "useGoogleDriveData": "Google Drive에 저장된 데이터 사용",
+    "useLocalData": "현재 브라우저에 저장된 데이터 사용",
+    "download": "둘 다 다운로드",
+    "lastModified": "마지막 변경",
+    "or": "또는"
+  },
+  "footer": {
+    "affliate": "Paimon.moe는 miHoYo와 연관되지 않았습니다.",
+    "copyright": "Genshin Impact, 게임의 콘텐츠와 소재의 트레이드마크와 저작권은 miHoyo에 있습니다.",
+    "discord": "Discord 참가",
+    "community": "커뮤니티 링크",
+    "official": "공식 링크"
+  },
+  "donate": {
+    "message": [
+      "감사합니다! 이 사이트가 유용하게 쓰였으면 좋겠네요.",
+      "저는 이 웹 사이트를 여유 시간이 남을 때 취미로 만들어 왔습니다. 매번 원신이 업데이트 될 때 마다 기능과 변경된 데이터를 반영하겠습니다, 제가 원신을 탐험하거나 효율적으로 플레이하는 걸 좋아하거든요.",
+      "제게 후원하시면, 여러분의 후원은 이 사이트를 발전시키고, 제게 이 사이트에 더 많은 기능을 추가할 동기를 부여할 겁니다! 정말 감사하고, 즐겨주세요. 마음에 드셨으면 좋겠습니다!",
+      "코딩을 좋아하신다면, 이 프로젝트에 기여할 수도 있습니다."
+    ],
+    "kofi": "Ko-fi를 통해 후원하기",
+    "trakteer": "Trakteer를 통해 후원하기",
+    "crypto": "암호화폐를 통해 후원하기"
+  },
+  "reminder": {
+    "notSupported": "현재 브라우저가 푸쉬 알림을 지원하지 않습니다, 다른 브라우저에서 시도해주세요!",
+    "blocked": "알람이 차단되었습니다, 리마인더 알림이 작동하지 않을 겁니다! 현재 브라우저의 알림을 활성화해주세요.",
+    "desktop": "데스크탑 환경의 브라우저는 현재 브라우저가 실행중이 아니면 알림을 받을 수 없습니다!",
+    "early": "사이트에서 알림을 전송하는 방식에 따라, 알림은 약 1-10분 일찍 나타납니다.",
+    "allowNotification": "알림 표시 권한을 허용해주세요!",
+    "transformer": "매개 변수 변환기 리마인더",
+    "last": "언제 마지막으로 매개 변수 변환기를 사용했는지 입력해주세요",
+    "lastHoyolab": "출석 체크 알림을 받길 원하는 시각을 입력해주세요",
+    "every": "매일",
+    "countdown": "다음 매개 변수 변환기 사용 가능 시각까지 카운트 다운 할 시간을 입력해주세요 (정확한 시간을 기억하지 못하신다면, 추정해서 입력하셔야 합니다)",
+    "useLast": "마지막 사용 시각 입력하기",
+    "useCountdown": "카운트 다운 방식 사용하기",
+    "set": "리마인더 설정",
+    "checking": "저장된 리마인더 확인 중...",
+    "errorSelect": "남은 일수와 시간을 입력해주세요!",
+    "errorSaving": "리마인더를 저장하는 과정에서 문제가 발생했습니다 🙁",
+    "current": "현재 리마인더",
+    "hoyolab": "Hoyolab 출석 체크 리마인더",
+    "comingsoon": "잠시 후!"
+  },
+  "achievement": {
+    "title": "업적",
+    "of": "/"
+  }
+}

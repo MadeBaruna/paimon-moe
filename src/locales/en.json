@@ -22,7 +22,7 @@
         "Tartaglia"
       ],
       "summoned": "Summoned",
-      "percentage": "from all",
+      "percentage": "from all {rarity}",
       "avg": "Pity average",
       "subtitle": "Calculated from data submitted by {user} paimon.moe users",
       "detail": "Global Wish Tally"
@@ -257,10 +257,8 @@
       "howto": {
         "title": "How to Use Manual Input",
         "subtitle": "After a 1x Wish:",
-        "press": "Press",
-        "whenYouGet": "when you get",
-        "p1": "It will automatically add the lifetime pulls,",
-        "and": "and",
+        "pressWhenYouGet": "Press {button} when you get {rarity}★",
+        "p1": "It will automatically add the lifetime pulls, 5★, and 4★ pity",
         "p2": [
           "When the",
           "pity reaches 10, it will automatically be reset to 0"
@@ -329,7 +327,7 @@
     "titleWeapon": "Weapon Calculator",
     "titleCharacter": "Character Calculator",
     "titleResin": "Resin Calculator",
-    "goto": "Go To",
+    "goto": "Go To {where}",
     "howToUse": "How to Use",
     "guide": {
       "clickToMaximize": "Click the picture to maximize",
