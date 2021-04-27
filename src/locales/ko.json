@@ -257,10 +257,8 @@
       "howto": {
         "title": "수동 입력 사용하는 법",
         "subtitle": "1회 기원 후:",
-        "press": "Press",
-        "whenYouGet": "when you get",
-        "p1": "It will automatically add the lifetime pulls,",
-        "and": "and",
+        "pressWhenYouGet": "{rarity}★을 획득했을 땐 {button} 버튼을 누르세요",
+        "p1": "수동 입력시 자동으로 총 뽑기 횟수, 5★과 4★의 천장 수치를 추가합니다.",
         "p2": [
           " ",
           "천장 지수가 10에 도달했을 때, 자동으로 0으로 초기화됩니다."
