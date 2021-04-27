@@ -548,7 +548,7 @@
     ],
     "kofi": "Ko-fi를 통해 후원하기",
     "trakteer": "Trakteer를 통해 후원하기",
-    "crypto": "Crypto를 통해 후원하기"
+    "crypto": "암호화폐를 통해 후원하기"
   },
   "reminder": {
     "notSupported": "현재 브라우저가 푸쉬 알림을 지원하지 않습니다, 다른 브라우저에서 시도해주세요!",
