@@ -104,6 +104,12 @@
     min: 0,
     max: 0,
   };
+  
+  const rareInclude = {
+  300011: ['rosaria'],
+  300012: ['yanfei', 'noelle', 'diona'],
+};
+  let promotedRarePercentage = 0;
 
   let legendaryList = [];
   let legendaryPity = [];
@@ -163,6 +169,23 @@
             percentage: (values[1] / data.total.legendary) * 100,
           },
         ];
+      }
+
+      // only for zhongli banner upward
+      if (id > 300011 && id < 400000) {
+        const totalRare = data.list.reduce((prev, current) => {
+          if (rareInclude[id].includes(current.name)) {
+            prev.total += current.count;
+          }
+          if (featured[1] === current.name) {
+            prev.featured = current.count;
+          }
+          return prev;
+        }, {
+          total: 0,
+          featured: 0,
+        });
+        promotedRarePercentage = totalRare.featured / totalRare.total * 100
       }
 
       legendary = {
@@ -310,13 +333,16 @@
                       <span class="text-gray-400">{$t('wish.tally.summoned')}</span>
                     </p>
                     <p class="text-gray-400">
-                      {#if id === 300011 && i === 0}
+                      {#if id >= 300011 && id < 400000 && i === 0}
                         {numberFormat.format(
                           ((featuredValues[i].total - featuredValues[i].guaranteed) /
                             (data.total.legendary - featuredValues[i].guaranteed)) *
                             100,
                         )}%
                         {$t('wish.tally.wonFiftyFifty')}
+                        {:else if id > 300011 && id < 400000 && i === 1}
+                        {numberFormat.format(promotedRarePercentage)}%
+                        {$t('wish.tally.fromFourStarFeatured')}
                       {:else}
                         {numberFormat.format(featuredValues[i].percentage)}% {$t(
                           type === 'character' && i === 1 ? 'wish.tally.fromFourStar' : 'wish.tally.fromFiveStar',
