@@ -134,7 +134,7 @@
       "cancel": "취소",
       "cancelling": "취소하는 중...",
       "importNewWishOnly": "새로운 기록만 제출",
-      "importNewWishUncheck": "모든 기원 길고을 다시 제출해야 할 때만 체크 해제하세요",
+      "importNewWishUncheck": "모든 기원 기록을 다시 제출해야 할 때만 체크 해제하세요",
       "import": "제출",
       "close": "닫기",
       "invalidLink": "유효하지 않은 링크입니다, 다시 확인해보세요",
@@ -198,7 +198,7 @@
           "텍스트를 길게 꾹 눌러 [모두 선택]을 누르고, [복사]를 선택하세요 (텍스트의 일부만 복사하면 안됩니다)",
           "Wi-Fi와 데이터 연결을 다시 켜세요",
           "아래 텍스트 박스에 복사한 문자를 붙넣기하세요",
-          "여기에 문자를 붙여넣기하세요... (웹페이지를 사용할 수 없습니다...)"
+          "여기에 문자를 붙여넣기하세요... (웹페이지를 사용할 수 없...)"
         ],
         "ios": [
           "페이몬 메뉴를 여세요",
@@ -307,7 +307,7 @@
       "subtitle": "paimon.moe 사용자들이 제출한 전체 천장 통계",
       "update": "갱신됨",
       "summoned": "획득",
-      "wonFiftyFifty": "50:50 확률로 획득",
+      "wonFiftyFifty": "(반천장 획득)",
       "fromFiveStar": "(모든 5★ 중)",
       "fromFourStar": "(모든 4★ 중)",
       "show": "보기",
@@ -533,7 +533,7 @@
     "or": "또는"
   },
   "footer": {
-    "affliate": "Paimon.moe는 miHoYo와 연관되지 않았습니다.",
+    "affliate": "Paimon.moe는 miHoYo와 연관이 없습니다.",
     "copyright": "Genshin Impact, 게임의 콘텐츠와 소재의 트레이드마크와 저작권은 miHoyo에 있습니다.",
     "discord": "Discord 참가",
     "community": "커뮤니티 링크",
