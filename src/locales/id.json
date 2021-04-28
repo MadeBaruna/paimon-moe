@@ -17,10 +17,6 @@
     "welcome": "Selamat Datang di Paimon.moe! 👋",
     "message": "Your best Genshin Impact companion! Membantu kamu merencanakan apa yang harus di farm dengan kalkulator ascension, juga catat progress mu dengan todo dan wish counter.",
     "banner": {
-      "featured": [
-        "Rosaria",
-        "Tartaglia"
-      ],
       "summoned": "Pulang",
       "percentage": "dari semua {rarity}",
       "avg": "Pity rata-rata",

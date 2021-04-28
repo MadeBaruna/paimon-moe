@@ -73,11 +73,6 @@
   let currentBanner = '';
   let currentPage = 1;
 
-  let lastPull = {
-    id: '0',
-    time: '',
-  };
-
   function cancel() {
     fetchController.abort();
     cancelled = true;
@@ -228,11 +223,6 @@
           const time = dayjs(row.time);
           const name = row.name;
           const type = row.item_type.replace(/ /g, '');
-
-          if (row.id > lastPull.id) {
-            lastPull.id = row.id;
-            lastPull.time = row.time;
-          }
 
           if (time.unix() <= newestPullTime) {
             return;
@@ -409,7 +399,7 @@
     pushToast($t('wish.import.success'));
 
     if (wishTallyChecked) {
-      submitWishTally(lastPull);
+      submitWishTally();
     }
 
     const prefix = getAccountPrefix();

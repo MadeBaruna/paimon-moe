@@ -17,10 +17,6 @@
     "welcome": "Paimon.moe에 어서오세요! 👋",
     "message": "최고의 원신 동반자! 돌파 계산기로 파밍 계획을 도와주고, 할 일 목록과 기원 통계를 통해 진척도를 확인해줍니다.",
     "banner": {
-      "featured": [
-        "로자리아",
-        "타르탈리아"
-      ],
       "summoned": "획득",
       "percentage": "(모든 {rarity} 중)",
       "avg": "평균 천장",

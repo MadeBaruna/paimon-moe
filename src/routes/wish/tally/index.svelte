@@ -1,13 +1,13 @@
 <script>
   import { t } from 'svelte-i18n';
-import Button from '../../../components/Button.svelte';
+  import Button from '../../../components/Button.svelte';
   import { banners } from '../../../data/banners';
   import Item from './_item.svelte';
 
-  let showOld = false;
+  let showOld = [false, false];
 
-  function showOldTally() {
-    showOld = true;
+  function showOldTally(index) {
+    showOld[index] = true;
   }
 </script>
 
@@ -30,6 +30,8 @@ import Button from '../../../components/Button.svelte';
     </p>
 
     <div class="px-4 md:px-8">
+      <Item type="character" banner={banners.characters[11]} id={300012} featured={['zhongli', 'yanfei']} />
+      <Item type="weapon" banner={banners.weapons[10]} id={400011} featured={['summit_shaper', 'memory_of_dust']} />
       <Item type="character" banner={banners.characters[10]} id={300011} featured={['tartaglia', 'rosaria']} />
       <Item
         type="weapon"
@@ -37,14 +39,36 @@ import Button from '../../../components/Button.svelte';
         id={400010}
         featured={['skyward_harp', 'lost_prayer_to_the_sacred_winds']}
       />
-      <Item type="character" banner={banners.characters[9]} id={300010} featured={['venti']} />
-      <Item type="weapon" banner={banners.weapons[8]} id={400009} featured={['elegy_for_the_end', 'skyward_blade']} />
-      <Item type="character" banner={banners.standard[0]} id={200001} />
-      {#if showOld}
-        <Item type="character" banner={banners.characters[8]} id={300009} featured={['hu_tao']} />
-        <Item type="weapon" banner={banners.weapons[7]} id={400008} featured={['wolfs_gravestone', 'staff_of_homa']} />
+      <Item type="character" banner={banners.standard[0]} id={200002} />
+      {#if showOld[0]}
+        <Item type="character" banner={banners.characters[9]} id={300010} featured={['venti']} />
+        <Item
+          type="weapon"
+          banner={banners.weapons[8]}
+          id={400009}
+          featured={['skyward_harp', 'lost_prayer_to_the_sacred_winds']}
+        />
       {:else}
-        <Button on:click={showOldTally}>{$t('wish.tally.show')} {banners.characters[8].name} & {banners.weapons[7].name}</Button>
+        <Button on:click={() => showOldTally(0)}>
+          {$t('wish.tally.show')}
+          {banners.characters[9].name} & {banners.weapons[8].name}
+        </Button>
+        <div class="mb-2" />
+      {/if}
+      {#if showOld[1]}
+        <Item type="character" banner={banners.characters[8]} id={300009} featured={['hu_tao']} />
+        <Item
+          type="weapon"
+          banner={banners.weapons[7]}
+          id={400008}
+          featured={['wolfs_gravestone', 'staff_of_homa']}
+        />
+      {:else}
+        <Button on:click={() => showOldTally(1)}>
+          {$t('wish.tally.show')}
+          {banners.characters[8].name} & {banners.weapons[7].name}
+        </Button>
+        <div class="mb-2" />
       {/if}
     </div>
   </div>

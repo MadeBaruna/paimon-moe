@@ -1,6 +1,10 @@
 import { process } from './wish';
 
 const bannerCategories = ['beginners', 'standard', 'character-event', 'weapon-event'];
+const rareInclude = {
+  300011: ['rosaria'],
+  300012: ['yanfei', 'noelle', 'diona'],
+};
 
 async function sendWish(data) {
   try {
@@ -14,14 +18,14 @@ async function sendWish(data) {
   }
 }
 
-export async function submitWishTally(lastPull) {
+export async function submitWishTally() {
   let prefixId = 0;
   for (const id of bannerCategories) {
     prefixId += 100000;
 
     const data = process(id);
     if (data === null) continue;
-    if (data.hasManualInput) continue;
+    // if (data.hasManualInput) continue;
 
     console.log('processing wish tally', id);
 
@@ -33,6 +37,7 @@ export async function submitWishTally(lastPull) {
       const total = banner[i].total;
       if (total === 0) continue;
 
+      const pityCount = [...banner[i].pityCount].map((e) => e || 0);
       const rarePity = banner[i].rarePity;
       const legendaryCount = banner[i].legendary.length;
       const rareCount = banner[i].rare.character.length + banner[i].rare.weapon.length;
@@ -46,15 +51,17 @@ export async function submitWishTally(lastPull) {
         5,
       ]);
 
-      // rosaria only
-      const rosariaPulls = banner[i].rare.character
-        .filter((e) => e.id === 'rosaria')
-        .map((e) => [e.time.toString(), e.id, e.type, e.pity, e.group === 'group', true, 4]);
-      legendaryPulls.push(...rosariaPulls);
+      // specific 4star include
+      if (rareInclude[prefixId + i + 1]) {
+        const includedRarePulls = banner[i].rare.character
+          .filter((e) => rareInclude[prefixId + i + 1].includes(e.id))
+          .map((e) => [e.time.toString(), e.id, e.type, e.pity, e.group === 'group', true, 4]);
+        legendaryPulls.push(...includedRarePulls);
+      }
 
-      console.log(legendaryPulls);
-      console.log(rarePity);
-      console.log(legendaryCount, rareCount, total);
+      // console.log(legendaryPulls);
+      // console.log(rarePity);
+      // console.log(legendaryCount, rareCount, total);
 
       await sendWish({
         firstPulls: firstFivePulls,
@@ -64,7 +71,7 @@ export async function submitWishTally(lastPull) {
         total,
         legendary: legendaryCount,
         rare: rareCount,
-        lastPull,
+        pityCount,
       });
     }
   }
