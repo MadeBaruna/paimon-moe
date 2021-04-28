@@ -137,14 +137,14 @@
             guaranteed: item.guaranteed,
             percentage:
               (item.count /
-                (type === 'character' && id !== 200001 && i === 1 ? data.total.rare : data.total.legendary)) *
+                (type === 'character' && id !== 200002 && i === 1 ? data.total.rare : data.total.legendary)) *
               100,
           };
         }
       }
 
       // only for standard banner
-      if (id === 200001) {
+      if (id === 200002) {
         const values = [0, 0];
 
         for (let i = 0; i < data.list.length; i++) {
@@ -257,7 +257,7 @@
           class="flex flex-row items-center bg-background rounded-xl py-2 relative px-4 mb-2 flex-1 cursor-pointer"
           on:click={toggleLegendaryList}
         >
-          {#if id === 200001}
+          {#if id === 200002}
             <table class="flex-1">
               <tr>
                 <td
