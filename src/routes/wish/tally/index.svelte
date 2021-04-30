@@ -3,6 +3,7 @@
   import Button from '../../../components/Button.svelte';
   import { banners } from '../../../data/banners';
   import Item from './_item.svelte';
+  import ItemNew from './_itemNew.svelte';
 
   let showOld = [false, false];
 
@@ -30,8 +31,8 @@
     </p>
 
     <div class="px-4 md:px-8">
-      <Item type="character" banner={banners.characters[11]} id={300012} featured={['zhongli', 'yanfei']} />
-      <Item type="weapon" banner={banners.weapons[10]} id={400011} featured={['summit_shaper', 'memory_of_dust']} />
+      <ItemNew type="character" banner={banners.characters[11]} id={300012} featured={['zhongli', 'yanfei']} />
+      <ItemNew type="weapon" banner={banners.weapons[10]} id={400011} featured={['summit_shaper', 'memory_of_dust']} />
       <Item type="character" banner={banners.characters[10]} id={300011} featured={['tartaglia', 'rosaria']} />
       <Item
         type="weapon"
