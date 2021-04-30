@@ -1,5 +1,5 @@
 <script>
-  import { createEventDispatcher, onMount } from 'svelte';
+  import { createEventDispatcher } from 'svelte';
   import { fly } from 'svelte/transition';
 
   export let image;
@@ -10,27 +10,16 @@
   export let items = [];
 
   let expandMenu = false;
-  let isSafari = false;
 
   const dispatch = createEventDispatcher();
 
   function expand() {
-    if (!mobile && !isSafari) return;
     expandMenu = !expandMenu;
   }
 
   function clicked() {
     dispatch('clicked');
   }
-
-  onMount(() => {
-    isSafari =
-      navigator.vendor &&
-      navigator.vendor.indexOf('Apple') > -1 &&
-      navigator.userAgent &&
-      navigator.userAgent.indexOf('CriOS') == -1 &&
-      navigator.userAgent.indexOf('FxiOS') == -1;
-  });
 </script>
 
 <div class="w-full rounded-xl ease-in duration-150 {mobile ? '' : 'parent'} {active ? 'active' : ''}">
