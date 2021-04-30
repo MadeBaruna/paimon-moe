@@ -134,6 +134,27 @@
     const achievementData = readSave(`${prefix}achievement`);
     if (achievementData !== null) {
       checkList = JSON.parse(achievementData);
+      migrateNewVersion();
+    }
+  }
+
+  function migrateNewVersion() {
+    // version 1.5
+    // prettier-ignore
+    const movedIds = [
+      84026, 84100, 84101, 84104, 84028, 
+      84107, 84102, 84108, 84105, 84103, 
+      84106, 84109, 84110, 84111, 84112, 
+      84113, 84114, 84115
+    ];
+
+    if (checkList['0']) {
+      for (const item of movedIds) {
+        if (checkList['0'][item] === true) {
+          checkList['17'][item] = true;
+          delete checkList['0'][item];
+        }
+      }
     }
   }
 
