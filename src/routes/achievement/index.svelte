@@ -185,6 +185,10 @@
       84113, 84114, 84115
     ];
 
+    if (checkList['17'] === undefined) {
+      checkList['17'] = {};
+    }
+
     if (checkList['0']) {
       for (const item of movedIds) {
         if (checkList['0'][item] === true) {
