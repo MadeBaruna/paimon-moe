@@ -25,7 +25,7 @@ export async function submitWishTally() {
 
     const data = process(id);
     if (data === null) continue;
-    // if (data.hasManualInput) continue;
+    if (data.hasManualInput) continue;
 
     console.log('processing wish tally', id);
 
@@ -38,6 +38,8 @@ export async function submitWishTally() {
       if (total === 0) continue;
 
       const pityCount = [...banner[i].pityCount].map((e) => e || 0);
+      if (pityCount.length > 90) continue;
+
       const rarePity = banner[i].rarePity;
       const legendaryCount = banner[i].legendary.length;
       const rareCount = banner[i].rare.character.length + banner[i].rare.weapon.length;
@@ -59,6 +61,7 @@ export async function submitWishTally() {
         legendaryPulls.push(...includedRarePulls);
       }
 
+      // console.log(pityCount);
       // console.log(legendaryPulls);
       // console.log(rarePity);
       // console.log(legendaryCount, rareCount, total);

@@ -88,6 +88,10 @@
     "manualButton": "Nyalakan Input Manual",
     "errorBanner": "Waktu banner salah! Coba sesuaikan server di halaman settings. Masih gak bisa? tolong chat di Discord 😅",
     "globalWishTally": "Perhitungan Pity Wish Global",
+    "pityTooltip": [
+      "Ini adalah pity {rarity} sekarang",
+      "{count}x wish lagi untuk dijamin {rarity}"
+    ],
     "import": {
       "title": "Import Riwayat Wish",
       "faqsButton": "FAQS - BACA DULU",

@@ -117,6 +117,10 @@
     "manualButton": "Enable Manual Input",
     "errorBanner": "Banner time missmatch! Please adjust your server on settings page. Still not working? please leave a message on Discord 😅",
     "globalWishTally": "Global Wish Tally",
+    "pityTooltip": [
+      "Shows your current {rarity} pity",
+      "{count} pulls to guaranteed {rarity}"
+    ],
     "import": {
       "title": "Import Wish History",
       "faqsButton": "FAQ - READ FIRST",
@@ -300,7 +304,8 @@
       "totalThisBanner": "Total pull on this banner",
       "worth": "Worth",
       "loading": "Loading... (If this stuck, change your server on settings page)",
-      "guaranteed": "The next 5★ is guaranteed to be the promotional character or weapon"
+      "guaranteed": "The next 5★ is guaranteed to be the promotional character or weapon",
+      "unknown_3_star": "Unknown"
     },
     "tally": {
       "title": "Wish Tally",
