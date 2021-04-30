@@ -326,6 +326,16 @@ export const eventsData = [
       image: 'paimon_bargain.png',
       description: 'Now selling: Razor, Amber, and Royal Weapons.',
     },
+    {
+      name: "Paimon's Bargain - Bennett, Lisa, and Blackcliff",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2021-05-01 04:00:00',
+      end: '2021-06-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Bennett, Lisa, and Blackcliff Weapons.',
+    },
   ],
   [
     {
