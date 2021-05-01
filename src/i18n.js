@@ -24,7 +24,6 @@ $locale.subscribe((value) => {
 });
 
 addMessages('en', en);
-addMessages('en-US', en);
 addMessages('id', id);
 addMessages('ru', ru);
 addMessages('ko', ko);
