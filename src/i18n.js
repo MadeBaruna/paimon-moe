@@ -1,4 +1,5 @@
 import { addMessages, init, getLocaleFromNavigator, locale as $locale } from 'svelte-i18n';
+import dayjs from 'dayjs'
 
 import en from './locales/en.json';
 import id from './locales/id.json';
@@ -18,7 +19,7 @@ $locale.subscribe((value) => {
   currentLocale = value;
 
   if (typeof window !== 'undefined') {
-    localStorage.setItem('locale', value);
+    localStorage.setItem('locale', new Intl.Locale(value).language);
   }
 });
 

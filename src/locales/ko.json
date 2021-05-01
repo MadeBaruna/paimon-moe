@@ -17,6 +17,10 @@
     "welcome": "Paimon.moe에 어서오세요! 👋",
     "message": "최고의 원신 동반자! 돌파 계산기로 파밍 계획을 도와주고, 할 일 목록과 기원 통계를 통해 진척도를 확인해줍니다.",
     "banner": {
+      "featured": [
+        "종려",
+        "연비"
+      ],
       "summoned": "획득",
       "percentage": "(모든 {rarity} 중)",
       "avg": "평균 천장",
@@ -113,6 +117,10 @@
     "manualButton": "수동 입력 활성화",
     "errorBanner": "픽업 기간이 일치하지 않습니다! 설정 페이지에서 서버를 조정해주세요. 그래도 안된다고요? Discord에 메세지를 남겨 주세요 😅",
     "globalWishTally": "전체 기원 총계",
+    "pityTooltip": [
+      "{rarity} 천장 확률을 표시합니다.",
+      "{count}번 안에 확정으로 {rarity}을 획득"
+    ],
     "import": {
       "title": "기원 기록 제출",
       "faqsButton": "FAQ - 먼저 읽어보세요",
@@ -194,7 +202,7 @@
           "텍스트를 길게 꾹 눌러 [모두 선택]을 누르고, [복사]를 선택하세요 (텍스트의 일부만 복사하면 안됩니다)",
           "Wi-Fi와 데이터 연결을 다시 켜세요",
           "아래 텍스트 박스에 복사한 문자를 붙넣기하세요",
-          "여기에 문자를 붙여넣기하세요... (웹페이지를 사용할 수 없...)"
+          "여기에 문자를 붙여넣기하세요... (웹페이지를 사용할 수 없음...)"
         ],
         "ios": [
           "페이몬 메뉴를 여세요",
@@ -303,9 +311,10 @@
       "subtitle": "paimon.moe 사용자들이 제출한 전체 천장 통계",
       "update": "갱신됨",
       "summoned": "획득",
-      "wonFiftyFifty": "(반천장 획득)",
+      "wonFiftyFifty": "확률로 반천장 획득",
       "fromFiveStar": "(모든 5★ 중)",
       "fromFourStar": "(모든 4★ 중)",
+      "fromFourStarFeatured": "(픽업 4★ 중)",
       "show": "보기",
       "name": "이름",
       "total": "합계",
