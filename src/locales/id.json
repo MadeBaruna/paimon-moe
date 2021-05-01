@@ -17,10 +17,6 @@
     "welcome": "Selamat Datang di Paimon.moe! 👋",
     "message": "Your best Genshin Impact companion! Membantu kamu merencanakan apa yang harus di farm dengan kalkulator ascension, juga catat progress mu dengan todo dan wish counter.",
     "banner": {
-      "featured": [
-        "Rosaria",
-        "Tartaglia"
-      ],
       "summoned": "Pulang",
       "percentage": "dari semua {rarity}",
       "avg": "Pity rata-rata",
@@ -92,6 +88,10 @@
     "manualButton": "Nyalakan Input Manual",
     "errorBanner": "Waktu banner salah! Coba sesuaikan server di halaman settings. Masih gak bisa? tolong chat di Discord 😅",
     "globalWishTally": "Perhitungan Pity Wish Global",
+    "pityTooltip": [
+      "Ini adalah pity {rarity} sekarang",
+      "{count}x wish lagi untuk dijamin {rarity}"
+    ],
     "import": {
       "title": "Import Riwayat Wish",
       "faqsButton": "FAQS - BACA DULU",
@@ -285,6 +285,7 @@
       "wonFiftyFifty": "menang 50:50",
       "fromFiveStar": "dari semua 5★",
       "fromFourStar": "dari semua 4★",
+      "fromFourStarFeatured": "dari featured 4★",
       "show": "Tampilkan",
       "name": "Nama",
       "total": "Total",

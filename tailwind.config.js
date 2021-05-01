@@ -54,6 +54,7 @@ module.exports = {
     borderColor: ['responsive', 'hover', 'focus', 'focus-within', 'disabled'],
     opacity: ['group-hover', 'responsive', 'hover', 'focus', 'disabled'],
     borderWidth: ['responsive', 'last', 'hover', 'focus'],
+    display: ['responsive', 'group-hover'],
   },
   plugins: [],
   future: {

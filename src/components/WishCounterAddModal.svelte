@@ -31,6 +31,7 @@
 
   onMount(() => {
     if (!isEdit) return;
+    if (editType === 'unknown_3_star') return;
 
     type = selectOptions.find((e) => e.value === editType);
 

@@ -72,6 +72,7 @@ export function process(id) {
       image,
       total: 0,
       legendary: [],
+      pityCount: [],
       rarePity: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       rare: {
         character: [],
@@ -97,6 +98,7 @@ export function process(id) {
   let currentBannerIndex = -1;
   let hasManualInput = false;
 
+  let pity = 0;
   for (let i = 0; i < pullData.length; i++) {
     const pull = pullData[i];
     const next = pullData[i + 1] || { time: dayjs().year(2000).unix() };
@@ -128,6 +130,9 @@ export function process(id) {
 
     selectedBanners[currentBannerIndex].total++;
 
+    const currentPity = selectedBanners[currentBannerIndex].pityCount[pity];
+    selectedBanners[currentBannerIndex].pityCount[pity] = (currentPity || 0) + 1;
+
     const newPull = {
       ...pull,
       formattedTime: formatTime(pull.time),
@@ -136,6 +141,7 @@ export function process(id) {
       banner: currentBanner,
       start: startBanner,
       at: selectedBanners[currentBannerIndex].total,
+      currentPity: ++pity,
     };
 
     if (item.rarity === 5) {    
@@ -146,6 +152,7 @@ export function process(id) {
 
       selectedBanners[currentBannerIndex].legendary.push(newPull);
       allLegendary.push(newPull);
+      pity = 0;
     } else if (item.rarity === 4) {
       allRare.push(newPull);
       selectedBanners[currentBannerIndex].rarePity[newPull.pity - 1]++;

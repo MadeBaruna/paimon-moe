@@ -13,21 +13,21 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    rosaria: {
-      rarity: 'rare',
-      count: 0,
-      average: '...',
-      percentage: '...',
-    },
-    tartaglia: {
+    zhongli: {
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
+    yanfei: {
+      rarity: 'rare',
+      count: 0,
+      average: '...',
+      percentage: '...',
+    },
   };
-  const bannerId = 300011;
-  const image = 'childerosaria.png';
+  const bannerId = 300012;
+  const image = 'zhongliyanfei.png';
 
   let loading = true;
   let user = '';

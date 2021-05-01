@@ -2264,6 +2264,77 @@ export const characters = {
       boss: itemList.tusk_of_monoceros_caeli,
     },
   },
+  yanfei: {
+    name: 'Yanfei',
+    id: 'yanfei',
+    rarity: 4,
+    element: elements.pyro,
+    weapon: weapons.catalyst,
+    sex: 'female',
+    nation: 'liyue',
+    ascension: [
+      {
+        items: [
+          { item: itemList.agnidus_agate_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.noctilucous_jade, amount: 3 },
+          { item: itemList.treasure_hoarder_insignia, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_fragment, amount: 3 },
+          { item: itemList.juvenile_jade, amount: 2 },
+          { item: itemList.noctilucous_jade, amount: 10 },
+          { item: itemList.treasure_hoarder_insignia, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_fragment, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 4 },
+          { item: itemList.noctilucous_jade, amount: 20 },
+          { item: itemList.silver_raven_insignia, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_chunk, amount: 3 },
+          { item: itemList.juvenile_jade, amount: 8 },
+          { item: itemList.noctilucous_jade, amount: 30 },
+          { item: itemList.silver_raven_insignia, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_chunk, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 12 },
+          { item: itemList.noctilucous_jade, amount: 45 },
+          { item: itemList.golden_raven_insignia, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_gemstone, amount: 6 },
+          { item: itemList.juvenile_jade, amount: 20 },
+          { item: itemList.noctilucous_jade, amount: 60 },
+          { item: itemList.golden_raven_insignia, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 10425, atk: 231, def: 743 },
+    material: {
+      book: [itemList.teachings_of_gold, itemList.guide_to_gold, itemList.philosophies_of_gold],
+      material: [itemList.treasure_hoarder_insignia, itemList.silver_raven_insignia, itemList.golden_raven_insignia],
+      boss: itemList.bloodjade_branch,
+    },
+  },
   zhongli: {
     name: 'Zhongli',
     id: 'zhongli',

@@ -24,6 +24,7 @@
     { id: 'en', label: 'English' },
     { id: 'id', label: 'Indonesia' },
     { id: 'ru', label: 'Русский' },
+    { id: 'ko', label: '한국어' },
   ];
   $: currentLocale = languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' };
   $: locales = languages.filter((e) => e.id !== currentLocale.id);
@@ -140,7 +141,7 @@
       <div class="locale-dropdown" style="top: {locales.length * -45}px;">
         {#each locales as locale}
           <div
-            class="flex items-center justify-center py-2 cursor-pointer rounded-xl bg-opacity-50 bg-black hover:bg-opacity-75"
+            class="flex items-center justify-center py-2 cursor-pointer rounded-xl bg-black hover:bg-gray-900"
             on:click={() => changeLocale(locale.id)}
           >
             <img class="w-4 h-4 rounded-full mr-2" alt={locale.label} src="/images/locales/{locale.id}.svg" />

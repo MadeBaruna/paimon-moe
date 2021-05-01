@@ -75,6 +75,11 @@
           index: i,
           ...e,
         });
+      } else if (e.type === 'unknown_3_star' && showRarity[2]) {
+        sorted.push({
+          index: i,
+          ...e,
+        });
       }
     }
 
@@ -228,6 +233,7 @@
           id: 'unknown_3_star',
           time: dayjs().unix(),
           pity: 1,
+          manualInput: true,
         })),
       ];
     }
@@ -278,7 +284,7 @@
     <div
       class={`${
         isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'
-      } rounded-xl flex`}
+      } rounded-xl flex relative`}
     >
       <span class="text-gray-200 whitespace-no-wrap flex-1">
         {$t('wish.lifetimePulls')}<br />
@@ -294,9 +300,16 @@
     <div
       class={`${
         isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'
-      } rounded-xl flex`}
-      title={`${legendaryPity - legendary} pulls to guaranteed 5 star`}
+      } rounded-xl flex group relative`}
     >
+      {#if !isEdit}
+        <div class="group-hover:flex hidden absolute left-0 pl-2 items-center z-10" style="max-width: 80%;">
+          <div class="bg-gray-200 text-gray-900 px-4 py-2 rounded-xl text-sm md:text-base">
+            <p>{$t('wish.pityTooltip.0', { values: { rarity: '5★' } })}</p>
+            <p>{$t('wish.pityTooltip.1', { values: { count: legendaryPity - legendary, rarity: '5★' } })}</p>
+          </div>
+        </div>
+      {/if}
       <span class="text-gray-200 whitespace-no-wrap flex-1">
         5
         <Icon path={mdiStar} size={0.75} className="mb-1" />
@@ -310,9 +323,16 @@
     <div
       class={`${
         isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'
-      } rounded-xl flex`}
-      title={`${10 - rare} pulls to guaranteed 4 star`}
+      } rounded-xl flex group relative`}
     >
+      {#if !isEdit}
+        <div class="group-hover:flex hidden absolute left-0 pl-2 items-center z-10" style="max-width: 80%;">
+          <div class="bg-gray-200 text-gray-900 px-4 py-2 rounded-xl text-sm md:text-base">
+            <p>{$t('wish.pityTooltip.0', { values: { rarity: '4★' } })}</p>
+            <p>{$t('wish.pityTooltip.1', { values: { count: 10 - rare, rarity: '4★' } })}</p>
+          </div>
+        </div>
+      {/if}
       <span class="text-gray-200 whitespace-no-wrap flex-1">
         4
         <Icon path={mdiStar} size={0.75} className="mb-1" />
@@ -370,6 +390,9 @@
         <button on:click={() => toggleShowRarity(2)} class={`pill normal ${showRarity[2] ? 'active' : ''}`}>
           3 <Icon path={mdiStar} size={0.75} className="mb-1" />
         </button>
+        <a href="/wish/{id}" class="pill normal">
+          <Icon path={mdiTableOfContents} color="white" />
+        </a>
       </div>
       <table class="w-full">
         <tr>
@@ -378,7 +401,11 @@
           <th class="border-b border-gray-700 text-gray-400 font-display text-right">Pity</th>
         </tr>
         {#each sortedPull as pull}
-          <tr on:click={manualInput ? () => openEditModal(pull.index, pull.type, pull.id, pull.time, pull.pity) : () => {}}>
+          <tr
+            on:click={manualInput
+              ? () => openEditModal(pull.index, pull.type, pull.id, pull.time, pull.pity)
+              : () => {}}
+          >
             {#if pull.type === 'character'}
               <td
                 class={`border-b border-gray-700 py-1 pl-2 font-semibold ${
@@ -399,6 +426,8 @@
                     : 'text-primary'
                 }`}>{weaponList[pull.id].name}</td
               >
+            {:else if pull.type === 'unknown_3_star'}
+              <td class="border-b border-gray-700 py-1 pl-2 font-semibold text-primary">Unknown</td>
             {/if}
             <td class="border-b border-gray-700 text-sm py-1 px-2 whitespace-no-wrap" style="font-family: monospace;"
               >{dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm:ss')}</td

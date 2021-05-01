@@ -104,11 +104,11 @@
     min: 0,
     max: 0,
   };
-  
+
   const rareInclude = {
-  300011: ['rosaria'],
-  300012: ['yanfei', 'noelle', 'diona'],
-};
+    300011: ['rosaria'],
+    300012: ['yanfei', 'noelle', 'diona'],
+  };
   let promotedRarePercentage = 0;
 
   let legendaryList = [];
@@ -173,19 +173,22 @@
 
       // only for zhongli banner upward
       if (id > 300011 && id < 400000) {
-        const totalRare = data.list.reduce((prev, current) => {
-          if (rareInclude[id].includes(current.name)) {
-            prev.total += current.count;
-          }
-          if (featured[1] === current.name) {
-            prev.featured = current.count;
-          }
-          return prev;
-        }, {
-          total: 0,
-          featured: 0,
-        });
-        promotedRarePercentage = totalRare.featured / totalRare.total * 100
+        const totalRare = data.list.reduce(
+          (prev, current) => {
+            if (rareInclude[id].includes(current.name)) {
+              prev.total += current.count;
+            }
+            if (featured[1] === current.name) {
+              prev.featured = current.count;
+            }
+            return prev;
+          },
+          {
+            total: 0,
+            featured: 0,
+          },
+        );
+        promotedRarePercentage = (totalRare.featured / totalRare.total) * 100;
       }
 
       legendary = {
@@ -220,9 +223,24 @@
         mapped[label] += pity;
       }
 
-      legendaryPity = mapped.map((e) => ({
+      const percentageEachPity = new Array(90).fill(0);
+      for (let i = 0; i < 90; i++) {
+        percentageEachPity[i] = legendaryPityData[i] / data.countEachPity[i];
+      }
+      console.log(percentageEachPity);
+
+      const mappedPercentage = new Array(legendaryMap[legendaryMap.length - 1] + 1).fill(0);
+      for (let i = 0; i < 90; i++) {
+        const label = legendaryMap[i];
+        const percentage = percentageEachPity[i];
+        if (mappedPercentage[label] < percentage) {
+          mappedPercentage[label] = percentage;
+        }
+      }
+
+      legendaryPity = mapped.map((e, i) => ({
         total: e,
-        percentage: e / data.total.legendary,
+        percentage: mappedPercentage[i],
       }));
 
       legendaryList = data.list.sort((a, b) => {
@@ -340,7 +358,7 @@
                             100,
                         )}%
                         {$t('wish.tally.wonFiftyFifty')}
-                        {:else if id > 300011 && id < 400000 && i === 1}
+                      {:else if id > 300011 && id < 400000 && i === 1}
                         {numberFormat.format(promotedRarePercentage)}%
                         {$t('wish.tally.fromFourStarFeatured')}
                       {:else}
@@ -422,7 +440,7 @@
           <th class="font-display text-gray-200 font-semibold border-l border-r border-background px-2 pt-2"
             >{$t('wish.tally.total')}</th
           >
-          <th class="font-display text-gray-200 font-semibold px-2 pt-2">%</th>
+          <th class="font-display text-gray-200 font-semibold px-2 pt-2">Chance%</th>
         </tr>
         {#each legendaryStep as label, i}
           <tr>
@@ -516,7 +534,7 @@
           {/each}
         </tr>
         <tr>
-          <td class="font-display text-gray-200 font-semibold px-2 py-1 text-right border-background">%</td>
+          <td class="font-display text-gray-200 font-semibold px-2 py-1 text-right border-background" title="Chance %">Chc%</td>
           {#each legendaryPity as pity}
             <td
               class="text-center py-1 border-l border-background"
@@ -535,7 +553,10 @@
       </table>
     </div>
     <div class="flex flex-wrap">
-      <div class="border border-background rounded-xl hidden xl:block overflow-hidden mr-4 mb-2" style="width: fit-content;">
+      <div
+        class="border border-background rounded-xl hidden xl:block overflow-hidden mr-4 mb-2"
+        style="width: fit-content;"
+      >
         <table class="text-white text-sm">
           <tr>
             <td
