@@ -46,9 +46,9 @@
               <img src={originalResin.image} alt={originalResin.label} class="h-6 w-6 inline" /></td
             >
             <td class="pr-2 text-white text-center">
-                {dayjs(new Date(stepTime[i + 1]))
-                  .locale($t('calculator.resin.timeFormat'))
-                  .fromNow()}
+              {dayjs(new Date(stepTime[i + 1]))
+                .locale($t('calculator.resin.timeFormat'))
+                .fromNow()}
             </td>
           </tr>
         {/each}
