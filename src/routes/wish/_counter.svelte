@@ -313,7 +313,7 @@
       <span class="text-gray-200 whitespace-no-wrap flex-1">
         5
         <Icon path={mdiStar} size={0.75} className="mb-1" />
-        Pity
+        {$t('wish.pity')}
         <br /><span class="text-gray-600">{$t('wish.guarantee', { values: { pity: legendaryPity } })}</span>
       </span>
       {#if isEdit}
@@ -336,7 +336,7 @@
       <span class="text-gray-200 whitespace-no-wrap flex-1">
         4
         <Icon path={mdiStar} size={0.75} className="mb-1" />
-        Pity
+        {$t('wish.pity')}
         <br /><span class="text-gray-600">{$t('wish.guarantee', { values: { pity: 10 } })}</span>
       </span>
       {#if isEdit}
@@ -396,9 +396,9 @@
       </div>
       <table class="w-full">
         <tr>
-          <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">Name</th>
-          <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">Time</th>
-          <th class="border-b border-gray-700 text-gray-400 font-display text-right">Pity</th>
+          <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">{$t('wish.name')}</th>
+          <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">{$t('wish.time')}</th>
+          <th class="border-b border-gray-700 text-gray-400 font-display text-right">{$t('wish.pity')}</th>
         </tr>
         {#each sortedPull as pull}
           <tr
