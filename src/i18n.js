@@ -1,5 +1,4 @@
 import { addMessages, init, getLocaleFromNavigator, locale as $locale } from 'svelte-i18n';
-import dayjs from 'dayjs'
 
 import en from './locales/en.json';
 import id from './locales/id.json';
