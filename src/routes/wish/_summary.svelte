@@ -187,12 +187,12 @@
             weapon: {
               total: rareWeapon,
               percentage: total > 0 ? rareWeapon / total : 0,
-              pity: rare > 0 ? rarePityWeapon / rare : 0,
+              pity: rare > 0 ? rarePityWeapon / rareWeapon : 0,
             },
             character: {
               total: rareCharacter,
               percentage: total > 0 ? rareCharacter / total : 0,
-              pity: rare > 0 ? rarePityCharacter / rare : 0,
+              pity: rare > 0 ? rarePityCharacter / rareCharacter : 0,
             },
           },
           legendary: {
