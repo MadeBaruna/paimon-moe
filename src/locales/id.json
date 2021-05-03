@@ -10,6 +10,7 @@
     "reminder": "Reminder",
     "todoList": "Todo List",
     "timeline": "Timeline",
+    "furnishing": "Furnitur",
     "settings": "Pengaturan",
     "donate": "Donasi"
   },
@@ -549,5 +550,19 @@
   "achievement": {
     "title": "Achievement",
     "of": "dari"
+  },
+  "furnishing": {
+    "title": "Furnitur",
+    "name": "Nama",
+    "energy": "Energi",
+    "load": "Beban",
+    "ratio": "Rasio",
+    "using": "Jumlah",
+    "interior": "Interior",
+    "exterior": "Exterior",
+    "info": [
+      "Ini menunjukkan berapa beban yang bisa ditampung dalam pulau. Masing-masing furnitur mempunyai nilai beban yang tersembunyi yang bisa dilihat di bawah.",
+      "(Beban maximum belum dikonfirmasi!)"
+    ]
   }
 }

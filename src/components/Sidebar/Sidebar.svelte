@@ -104,13 +104,14 @@
       {mobile}
       {segment}
       on:clicked={close}
-      active={segment === 'items' || segment === 'achievement' || segment === 'reminder'}
+      active={['items', 'achievement', 'reminder', 'furnishing'].includes(segment)}
       image="/images/items.png"
       label={$t('sidebar.database')}
       items={[
         { label: $t('sidebar.items'), href: '/items' },
         { label: $t('sidebar.achievement'), href: '/achievement' },
         { label: $t('sidebar.reminder'), href: '/reminder' },
+        { label: $t('sidebar.furnishing'), href: '/furnishing' },
       ]}
     />
     <SidebarItem

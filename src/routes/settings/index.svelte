@@ -152,6 +152,7 @@
       'characters',
       'achievement',
       'collectables-updated',
+      'furnishing',
     ];
 
     for (let k of keyWillBeDeleted) {
@@ -186,6 +187,7 @@
       'characters',
       'achievement',
       'collectables-updated',
+      'furnishing',
     ];
 
     for (let k of keyWillBeDeleted) {

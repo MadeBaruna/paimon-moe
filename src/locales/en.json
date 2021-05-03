@@ -10,6 +10,7 @@
     "reminder": "Reminder",
     "todoList": "Todo List",
     "timeline": "Timeline",
+    "furnishing": "Furnishing",
     "settings": "Settings",
     "donate": "Donate"
   },
@@ -580,5 +581,19 @@
   "achievement": {
     "title": "Achievement",
     "of": "of"
+  },
+  "furnishing": {
+    "title": "Furnishing",
+    "name": "Name",
+    "energy": "Energy",
+    "load": "Load",
+    "ratio": "Ratio",
+    "using": "Amount",
+    "interior": "Interior",
+    "exterior": "Exterior",
+    "info": [
+      "This shows how much load the area can take. Each furniture has a hidden load value that can be viewed below.",
+      "(the maximum value is not comfirmed yet!)"
+    ]
   }
 }
