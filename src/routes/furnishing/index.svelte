@@ -18,29 +18,45 @@
 
   export let data;
 
-  let type = 'interior';
+  let type = 'hall';
   let items = [];
   let max = 0;
 
   const maxLoad = {
-    exterior: 4500,
-    interior: 2000,
+    exterior: 8700,
+    hall: 8700,
+    room1: 3700,
+    room2: 3700,
+    room3: 3700,
+    corridor: 3700,
   };
   let currentUsage = {
-    interior: {},
     exterior: {},
+    hall: {},
+    room1: {},
+    room2: {},
+    room3: {},
+    corridor: {},
   };
-  $: currentLoad = Object.entries(currentUsage[type]).reduce((prev, [id, val]) => {
-    prev += data[id].load * val;
-    return prev;
-  }, 0);
+  $: currentLoad = Object.entries(currentUsage[type]).reduce(
+    (prev, [id, val]) => {
+      prev.load += data[id].load * val;
+      prev.energy += data[id].energy * val;
+      return prev;
+    },
+    {
+      load: 0,
+      energy: 0,
+    },
+  );
 
   let sortBy = 'ratio';
   let sortOrder = false;
 
   async function parseFurnishing() {
+    const currentType = type === 'exterior' ? 'exterior' : 'interior';
     items = Object.values(data)
-      .filter((e) => e.type === type || e.type === '')
+      .filter((e) => e.type === currentType || e.type === '')
       .sort((a, b) => {
         switch (sortBy) {
           case 'ratio':
@@ -112,7 +128,10 @@
     const prefix = getAccountPrefix();
     const furnishingData = readSave(`${prefix}furnishing`);
     if (furnishingData !== null) {
-      currentUsage = JSON.parse(furnishingData);
+      currentUsage = {
+        ...currentUsage,
+        ...JSON.parse(furnishingData),
+      };
     }
   }
 
@@ -135,31 +154,56 @@
 <div class="lg:ml-64 pt-20 lg:px-8 lg:pt-8 max-w-screen-xl">
   <div class="px-4 flex md:space-x-2 items-start md:items-center flex-col md:flex-row">
     <h1 class="font-display font-black text-3xl md:text-4xl text-white">{$t('furnishing.title')}</h1>
-    <div
-      class="rounded-2xl border-2 border-white border-opacity-25 text-white px-4 py-2 group relative"
-      style={calculateColorLoad(currentLoad / maxLoad[type])}
-    >
-      <Icon path={mdiInformationOutline} />
-      {$t('furnishing.load')}
-      {currentLoad} / {maxLoad[type]}
+    <div class="flex items-center space-x-2">
       <div
-        class="hidden group-hover:block absolute left-0 transform translate-y-full 
-        bg-white rounded-xl z-50 text-gray-900 px-4 py-2 w-screen max-w-xs md:max-w-sm"
-        style="bottom: -10px;"
+        class="rounded-2xl border-2 border-white border-opacity-25 text-white px-4 py-2 group relative"
+        style={calculateColorLoad(currentLoad.load / maxLoad[type])}
       >
-        <p>{$t('furnishing.info.0')}</p>
-        <p>{$t('furnishing.info.1')}</p>
+        <Icon size={0.7} path={mdiInformationOutline} />
+        {$t('furnishing.load')}
+        {currentLoad.load} / {maxLoad[type]}
+        <div
+          class="hidden group-hover:block absolute left-0 transform translate-y-full 
+        bg-white rounded-xl z-50 text-gray-900 px-4 py-2 w-screen max-w-xs md:max-w-sm"
+          style="bottom: -10px;"
+        >
+          <p>{$t('furnishing.info.0')}</p>
+          <p>{$t('furnishing.info.1')}</p>
+        </div>
+      </div>
+      <div class="rounded-2xl border-2 border-white border-opacity-25 text-white px-4 py-2">
+        {$t('furnishing.energy')}
+        {currentLoad.energy}
       </div>
     </div>
   </div>
-  <div class="px-4 flex space-x-2 mt-2 mb-4">
-    <button on:click={() => changeType('interior')} class="pill {type === 'interior' ? 'active' : ''}"
-      >{$t('furnishing.interior')}</button
-    >
-    <button on:click={() => changeType('exterior')} class="pill {type === 'exterior' ? 'active' : ''}"
-      >{$t('furnishing.exterior')}</button
-    >
+  <div class="px-4 flex space-x-2 mt-2 mb-2">
+    <button on:click={() => changeType('hall')} class="pill {type === 'exterior' ? '' : 'active'}">
+      {$t('furnishing.interior')}
+    </button>
+    <button on:click={() => changeType('exterior')} class="pill {type === 'exterior' ? 'active' : ''}">
+      {$t('furnishing.exterior')}
+    </button>
   </div>
+  {#if type !== 'exterior'}
+    <div class="px-4 flex space-x-2 mt-2 mb-4 overflow-x-auto">
+      <button on:click={() => changeType('hall')} class="pill {type === 'hall' ? 'active' : ''}">
+        {$t('furnishing.hall')}
+      </button>
+      <button on:click={() => changeType('room1')} class="pill {type === 'room1' ? 'active' : ''}">
+        {$t('furnishing.room', { values: { number: 1 } })}
+      </button>
+      <button on:click={() => changeType('room2')} class="pill {type === 'room2' ? 'active' : ''}">
+        {$t('furnishing.room', { values: { number: 2 } })}
+      </button>
+      <button on:click={() => changeType('room3')} class="pill {type === 'room3' ? 'active' : ''}">
+        {$t('furnishing.room', { values: { number: 3 } })}
+      </button>
+      <button on:click={() => changeType('corridor')} class="pill {type === 'corridor' ? 'active' : ''}">
+        {$t('furnishing.corridor')}
+      </button>
+    </div>
+  {/if}
   <div class="flex mt-4 wrapper">
     <div class="block overflow-x-auto xl:overflow-x-visible whitespace-no-wrap">
       <div class="px-4 table">
@@ -228,12 +272,19 @@
               <td class="px-4 text-gray-200 text-center" style={calculateColor(item.ratio)}>{item.ratio.toFixed(2)}</td>
               <td class="px-4">
                 <div
-                  class="flex justify-between items-center border-2 border-white border-opacity-25 rounded-xl text-gray-200"
+                  class="flex justify-between items-center border-2 border-white border-opacity-25 rounded-xl text-gray-400"
                 >
                   <button class="hover:text-primary" on:click={() => changeUsage(item.id, 1)}>
                     <Icon path={mdiPlus} />
                   </button>
-                  <p class="h-full text-gray-200 px-2">{currentUsage[type][item.id] || 0}</p>
+                  <p
+                    class="h-full px-2 text-center {currentUsage[type][item.id] > 0
+                      ? 'text-gray-200'
+                      : 'text-gray-700'}"
+                    style="min-width: 40px;"
+                  >
+                    {currentUsage[type][item.id] || 0}
+                  </p>
                   <button class="hover:text-primary" on:click={() => changeUsage(item.id, -1)}>
                     <Icon path={mdiMinus} />
                   </button>
@@ -259,6 +310,7 @@
     @apply outline-none;
     @apply transition;
     @apply duration-100;
+    @apply whitespace-no-wrap;
 
     &:hover {
       @apply border-primary;
