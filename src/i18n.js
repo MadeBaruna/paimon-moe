@@ -18,7 +18,7 @@ $locale.subscribe((value) => {
   currentLocale = value;
 
   if (typeof window !== 'undefined') {
-    localStorage.setItem('locale', new Intl.Locale(value).language);
+    localStorage.setItem('locale', value);
   }
 });
 
@@ -32,7 +32,7 @@ export function startClient() {
 
   init({
     ...INIT_OPTIONS,
-    initialLocale: savedLocale !== null ? savedLocale : getLocaleFromNavigator(),
+    initialLocale: savedLocale !== null ? savedLocale : getLocaleFromNavigator().substring(0, 2),
   });
 }
 
@@ -58,7 +58,7 @@ export function i18nMiddleware() {
     }
 
     if (locale != null && locale !== currentLocale) {
-      $locale.set(locale);
+      $locale.set(locale.substring(0, 2));
     }
 
     next();
