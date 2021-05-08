@@ -4,9 +4,11 @@
   import { getContext, onMount, tick } from 'svelte';
   import dayjs from 'dayjs';
   import duration from 'dayjs/plugin/duration';
+  import timezone from 'dayjs/plugin/timezone';
   dayjs.extend(duration);
+  dayjs.extend(timezone);
 
-  import { getTimeDifference } from '../../stores/server';
+  import { getTimeDifference, server } from '../../stores/server';
   import { eventsData } from '../../data/timeline';
 
   import Checkbox from '../../components/Checkbox.svelte';
@@ -36,6 +38,8 @@
   let monthList = [];
   let events = [];
   let today = dayjs();
+
+  let browserTimeZone = '';
 
   function openDetail(event) {
     openModal(
@@ -172,6 +176,8 @@
       today = dayjs().add(timeDifference, 'minute');
     }, 1000);
 
+    browserTimeZone = dayjs.tz.guess();
+
     return () => {
       clearInterval(interval);
     };
@@ -208,7 +214,7 @@
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('timeline.title')}</h1>
   {#if !loading}
     <div class="px-4 md:px-8 text-white select-none">
-      <Checkbox bind:checked={showAsLocalTime}>{$t('timeline.localTime')}</Checkbox>
+      <Checkbox bind:checked={showAsLocalTime}>{$t('timeline.localTime')} ({browserTimeZone} - {$server} Server)</Checkbox>
     </div>
     <div class="w-full overflow-x-auto px-4 md:px-8" bind:this={timelineContainer} on:wheel={transformScroll}>
       <div
