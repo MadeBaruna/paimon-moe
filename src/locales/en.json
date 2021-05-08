@@ -327,7 +327,8 @@
       "error": "Data is not available yet 😞",
       "pity": "Pity",
       "median": "5★ Median",
-      "user": "Total Users"
+      "user": "Total Users",
+      "detail": "Detail"
     }
   },
   "calculator": {

@@ -132,6 +132,7 @@ export const banners = {
       end: '2021-05-18 17:59:59',
       color: '#D1A55C',
       featured: ['zhongli'],
+      featuredRare: ['yanfei', 'noelle', 'diona'],
       timezoneDependent: true,
     },
   ],

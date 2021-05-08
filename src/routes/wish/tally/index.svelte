@@ -13,15 +13,9 @@
 </script>
 
 <svelte:head>
-  <title>Wish Counter - Paimon.moe</title>
-  <meta
-    name="description"
-    content="Genshin Impact Wish Counter to track your pity counter and track when you get the character or weapon. You can also auto import the logs from your PC or Android."
-  />
-  <meta
-    property="og:description"
-    content="Genshin Impact Wish Counter to track your pity counter and track when you get the character or weapon. You can also auto import the logs from your PC or Android."
-  />
+  <title>Wish Tally - Paimon.moe</title>
+  <meta name="description" content="Genshin Impact Wish Tally average pity percentage from paimon.moe users" />
+  <meta property="og:description" content="Genshin Impact Wish Tally average pity percentage from paimon.moe users" />
 </svelte:head>
 <div>
   <div class="lg:ml-64 pt-20 lg:pt-8">
@@ -58,12 +52,7 @@
       {/if}
       {#if showOld[1]}
         <Item type="character" banner={banners.characters[8]} id={300009} featured={['hu_tao']} />
-        <Item
-          type="weapon"
-          banner={banners.weapons[7]}
-          id={400008}
-          featured={['wolfs_gravestone', 'staff_of_homa']}
-        />
+        <Item type="weapon" banner={banners.weapons[7]} id={400008} featured={['wolfs_gravestone', 'staff_of_homa']} />
       {:else}
         <Button on:click={() => showOldTally(1)}>
           {$t('wish.tally.show')}

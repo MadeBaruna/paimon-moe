@@ -503,7 +503,7 @@
         {/each}
       </table>
     </div>
-    <div class="border border-background rounded-xl hidden xl:block">
+    <div class="border border-background rounded-xl hidden xl:block overflow-hidden">
       <table class="text-white w-full table-fixed text-sm">
         <tr>
           <td
@@ -534,7 +534,9 @@
           {/each}
         </tr>
         <tr>
-          <td class="font-display text-gray-200 font-semibold px-2 py-1 text-right border-background" title="Chance %">Chc%</td>
+          <td class="font-display text-gray-200 font-semibold px-2 py-1 text-right border-background" title="Chance %"
+            >Chc%</td
+          >
           {#each legendaryPity as pity}
             <td
               class="text-center py-1 border-l border-background"
@@ -607,7 +609,7 @@
             <span class="font-semibold">{numberFormat.format(data.total.all * 160)}</span>
           </div>
         </div>
-        <div class="space-y-2 flex flex-col flex-wrap mt-2">
+        <div class="space-y-2 flex flex-col flex-wrap mr-2 mt-2">
           <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
             {$t('wish.tally.median')}
             <span class="font-semibold ml-2">{numberFormat.format(data.median.legendary)}</span>
@@ -615,6 +617,14 @@
           <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
             {$t('wish.tally.user')} <span class="font-semibold ml-2">{numberFormat.format(data.total.users)}</span>
           </div>
+        </div>
+        <div class="space-y-2 flex flex-col flex-wrap mt-2">
+          <a
+            href="/wish/tally/{id}"
+            class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap hover:opacity-75"
+          >
+            {$t('wish.tally.detail')}
+          </a>
         </div>
       </div>
     </div>
