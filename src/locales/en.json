@@ -597,6 +597,7 @@
     ],
     "hall": "Hall",
     "room": "Room {number}",
+    "exteriorNum": "Area {number}",
     "corridor": "Corridor"
   }
 }

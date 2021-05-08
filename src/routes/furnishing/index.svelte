@@ -22,8 +22,22 @@
   let items = [];
   let max = 0;
 
+  const minEnergy = {
+    exterior: 0,
+    exterior2: 0,
+    exterior3: 0,
+    exterior4: 0,
+    hall: 150,
+    room1: 150,
+    room2: 150,
+    room3: 150,
+    corridor: 150,
+  };
   const maxLoad = {
     exterior: 8700,
+    exterior2: 8700,
+    exterior3: 8700,
+    exterior4: 8700,
     hall: 8700,
     room1: 3700,
     room2: 3700,
@@ -32,6 +46,9 @@
   };
   let currentUsage = {
     exterior: {},
+    exterior2: {},
+    exterior3: {},
+    exterior4: {},
     hall: {},
     room1: {},
     room2: {},
@@ -46,7 +63,7 @@
     },
     {
       load: 0,
-      energy: 0,
+      energy: minEnergy[type],
     },
   );
 
@@ -54,7 +71,7 @@
   let sortOrder = false;
 
   async function parseFurnishing() {
-    const currentType = type === 'exterior' ? 'exterior' : 'interior';
+    const currentType = type.startsWith('exterior') ? 'exterior' : 'interior';
     items = Object.values(data)
       .filter((e) => e.type === currentType || e.type === '')
       .sort((a, b) => {
@@ -178,14 +195,29 @@
     </div>
   </div>
   <div class="px-4 flex space-x-2 mt-2 mb-2">
-    <button on:click={() => changeType('hall')} class="pill {type === 'exterior' ? '' : 'active'}">
+    <button on:click={() => changeType('hall')} class="pill {type.startsWith('exterior') ? '' : 'active'}">
       {$t('furnishing.interior')}
     </button>
-    <button on:click={() => changeType('exterior')} class="pill {type === 'exterior' ? 'active' : ''}">
+    <button on:click={() => changeType('exterior')} class="pill {type.startsWith('exterior') ? 'active' : ''}">
       {$t('furnishing.exterior')}
     </button>
   </div>
-  {#if type !== 'exterior'}
+  {#if type.startsWith('exterior')}
+    <div class="px-4 flex space-x-2 mt-2 mb-4 overflow-x-auto">
+      <button on:click={() => changeType('exterior')} class="pill {type === 'exterior' ? 'active' : ''}">
+        {$t('furnishing.exteriorNum', { values: { number: 1 } })}
+      </button>
+      <button on:click={() => changeType('exterior2')} class="pill {type === 'exterior2' ? 'active' : ''}">
+        {$t('furnishing.exteriorNum', { values: { number: 2 } })}
+      </button>
+      <button on:click={() => changeType('exterior3')} class="pill {type === 'exterior3' ? 'active' : ''}">
+        {$t('furnishing.exteriorNum', { values: { number: 3 } })}
+      </button>
+      <button on:click={() => changeType('exterior4')} class="pill {type === 'exterior4' ? 'active' : ''}">
+        {$t('furnishing.exteriorNum', { values: { number: 4 } })}
+      </button>
+    </div>
+  {:else}
     <div class="px-4 flex space-x-2 mt-2 mb-4 overflow-x-auto">
       <button on:click={() => changeType('hall')} class="pill {type === 'hall' ? 'active' : ''}">
         {$t('furnishing.hall')}
