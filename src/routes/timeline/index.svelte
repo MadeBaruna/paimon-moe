@@ -202,11 +202,11 @@
   <title>Timeline - Paimon.moe</title>
   <meta
     name="description"
-    content="Genshin Impact event timeline calendar, view when an event and abyys order will start and end with neat timeline"
+    content="Genshin Impact event timeline calendar, view when an event and abyss order will start and end with neat timeline"
   />
   <meta
     property="og:description"
-    content="Genshin Impact event timeline calendar, view when an event and abyys order will start and end with neat timeline"
+    content="Genshin Impact event timeline calendar, view when an event and abyss order will start and end with neat timeline"
   />
 </svelte:head>
 

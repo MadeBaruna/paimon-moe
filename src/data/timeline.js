@@ -334,6 +334,26 @@ export const eventsData = [
       description:
         "When a character scores consecutive hits on an opponent with Normal Attacks within 2s, this character's Physical DMG is increased by 5% for 10s. This effect stacks up to 5 times, and only 1 stack is added at a time regardless of how many enemies are hit in one strike. When 5 stacks have been obtained, further hits on opponents will unleash shockwaves that deal AoE DMG. A shockwave can be created in this manner once every 1s.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2021-05-16 04:00:00',
+      end: '2021-06-01 04:00:00',
+      color: '#4299E1',
+      description:
+        "A backlash will occur when opponents hit a character protected by a shield, unleashing a shockwave that deals AoE DMG. Can occur once every 6s.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2021-06-01 04:00:00',
+      end: '2021-06-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character scores Normal, Charged, and Plunging Attack hits that deal Physical DMG to opponents, this character's CRIT Rate is increased by 3% for 10s. This effect stacks up to 5 times, and only 1 stack is added at a time regardless of how many enemies are hit in one strike. When 5 stacks have been obtained, CRIT Hits on opponents will unleash shockwaves that deal AoE DMG. A shockwave can be created in this manner once every 1s.",
+    },
   ],
   [
     {
