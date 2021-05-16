@@ -135,6 +135,15 @@ export const banners = {
       featuredRare: ['yanfei', 'noelle', 'diona'],
       timezoneDependent: true,
     },
+    {
+      name: 'Born of Ocean Swell',
+      image: 1,
+      shortName: 'Eula',
+      start: '2021-05-18 18:00:00',
+      end: '2021-06-08 15:00:00',
+      color: '#A6D6E0',
+      featured: ['eula'],
+    },
   ],
   weapons: [
     {
@@ -241,6 +250,15 @@ export const banners = {
       color: '#f54e42',
       timezoneDependent: true,
       featured: ['summit_shaper', 'memory_of_dust'],
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 12,
+      start: '2021-05-18 18:00:00',
+      end: '2021-06-08 15:00:00',
+      shortName: 'Pines',
+      color: '#f5c242',
+      featured: ['song_of_broken_pines', 'aquila_favonia'],
     },
   ],
 };
