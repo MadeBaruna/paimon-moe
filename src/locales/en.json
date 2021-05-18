@@ -193,9 +193,9 @@
           "Paste link here... https://webstatic..."
         ],
         "android": [
-          "Open Paimon menu",
-          "Press Feedback",
-          "Wait for it to load and a feedback page should open",
+          "Open Wish (in the game)",
+          "Press History",
+          "Wait for it to load",
           "Turn off your Wi-Fi and data connection",
           "Press refresh on top right corner",
           "The page should display an error and show you some text with black font",
