@@ -635,5 +635,7 @@ export const itemList = {
   qingxin: { id: 'qingxin', name: 'Qingxin' },
   shadow_of_the_warrior: { id: 'shadow_of_the_warrior', name: 'Shadow of the Warrior' },
   juvenile_jade: { id: 'juvenile_jade', name: 'Juvenile Jade', rarity: 5 },
-  bloodjade_branch: { id: 'bloodjade_branch', name: 'Bloodjade Branch', rarity: 5 }
+  bloodjade_branch: { id: 'bloodjade_branch', name: 'Bloodjade Branch', rarity: 5 },
+  crystalline_bloom: { id: 'crystalline_bloom', name: 'Crystalline Bloom', rarity: 5 },
+  dragon_lords_crown: { id: 'dragon_lords_crown', name: "Dragon Lord's Crown", rarity: 5 }
 };

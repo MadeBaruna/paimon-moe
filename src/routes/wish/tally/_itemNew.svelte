@@ -143,14 +143,14 @@
             guaranteed: item.guaranteed,
             percentage:
               (item.count /
-                (type === 'character' && id !== 200002 && i === 1 ? data.total.rare : data.total.legendary)) *
+                (type === 'character' && id !== 200001 && i === 1 ? data.total.rare : data.total.legendary)) *
               100,
           };
         }
       }
 
       // only for standard banner
-      if (id === 200002) {
+      if (id === 200001) {
         const values = [0, 0];
 
         for (let i = 0; i < data.list.length; i++) {
@@ -284,11 +284,18 @@
   onMount(() => {
     getData();
   });
+
 </script>
 
 <div class="flex flex-col bg-item rounded-xl px-4 pt-4 pb-2 mb-4 space-y-4">
   <div class="flex flex-col xl:flex-row">
-    <img src="/images/banners/{banner.name} {banner.image}.png" alt={banner.name} class="rounded-xl xl:h-64 xl:mr-4" />
+    <a href="/wish/tally/{id}">
+      <img
+        src="/images/banners/{banner.name} {banner.image}.png"
+        alt={banner.name}
+        class="rounded-xl xl:h-64 xl:mr-4"
+      />
+    </a>
     <div class="h-4 xl:h-0" />
     {#if loading}
       <Icon className="m-4" path={mdiLoading} color="white" size={2} spin />
@@ -298,7 +305,7 @@
           class="flex flex-row items-center bg-background rounded-xl py-2 relative px-4 mb-2 flex-1 cursor-pointer"
           on:click={toggleLegendaryList}
         >
-          {#if id === 200002}
+          {#if id === 200001}
             <table class="flex-1">
               <tr>
                 <td
@@ -645,4 +652,5 @@
       @apply -rotate-90;
     }
   }
+
 </style>

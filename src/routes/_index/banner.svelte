@@ -1,5 +1,5 @@
 <script>
-  import { mdiChevronRight, mdiEarth, mdiLoading, mdiStar } from '@mdi/js';
+  import { mdiChevronRight, mdiEarth, mdiLoading } from '@mdi/js';
   import { onMount, createEventDispatcher, tick } from 'svelte';
 
   import { t } from 'svelte-i18n';
@@ -13,21 +13,15 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    zhongli: {
+    eula: {
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    yanfei: {
-      rarity: 'rare',
-      count: 0,
-      average: '...',
-      percentage: '...',
-    },
   };
-  const bannerId = 300012;
-  const image = 'zhongliyanfei.png';
+  const bannerId = 300013;
+  const image = 'eula.png';
 
   let loading = true;
   let user = '';

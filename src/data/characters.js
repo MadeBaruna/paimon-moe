@@ -572,6 +572,77 @@ export const characters = {
       boss: itemList.shard_of_a_foul_legacy,
     },
   },
+  eula: {
+    name: 'Eula',
+    id: 'eula',
+    rarity: 5,
+    element: elements.cryo,
+    weapon: weapons.claymore,
+    sex: 'female',
+    nation: 'mondstadt',
+    ascension: [
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.dandelion_seed, amount: 3 },
+          { item: itemList.damaged_mask, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 3 },
+          { item: itemList.crystalline_bloom, amount: 2 },
+          { item: itemList.dandelion_seed, amount: 10 },
+          { item: itemList.damaged_mask, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 6 },
+          { item: itemList.crystalline_bloom, amount: 4 },
+          { item: itemList.dandelion_seed, amount: 20 },
+          { item: itemList.stained_mask, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 3 },
+          { item: itemList.crystalline_bloom, amount: 8 },
+          { item: itemList.dandelion_seed, amount: 30 },
+          { item: itemList.stained_mask, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 6 },
+          { item: itemList.crystalline_bloom, amount: 12 },
+          { item: itemList.dandelion_seed, amount: 45 },
+          { item: itemList.ominous_mask, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_gemstone, amount: 6 },
+          { item: itemList.crystalline_bloom, amount: 20 },
+          { item: itemList.dandelion_seed, amount: 60 },
+          { item: itemList.ominous_mask, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 12296, atk: 318, def: 698 },
+    material: {
+      book: [itemList.teachings_of_resistance, itemList.guide_to_resistance, itemList.philosophies_of_resistance],
+      material: [itemList.damaged_mask, itemList.stained_mask, itemList.ominous_mask],
+      boss: itemList.dragon_lords_crown,
+    },
+  },
   fischl: {
     name: 'Fischl',
     id: 'fischl',

@@ -3,6 +3,7 @@
     const { id } = page.params;
     return { id };
   }
+
 </script>
 
 <script>
@@ -93,7 +94,7 @@
             e.percentage = rarity === 5 ? e.count / data.total.legendary : e.count / totalRare;
           }
 
-          if (banner.featured.includes(e.name)) {
+          if (id !== '200001' && banner.featured.includes(e.name)) {
             totalGuarantee = e.guaranteed;
             totalFeatured = e.count;
           }
@@ -134,18 +135,13 @@
   onMount(() => {
     getData();
   });
+
 </script>
 
 <svelte:head>
   <title>Wish Tally - Paimon.moe</title>
-  <meta
-    name="description"
-    content="Genshin Impact Wish Tally average pity percentage from paimon.moe users"
-  />
-  <meta
-    property="og:description"
-    content="Genshin Impact Wish Tally average pity percentage from paimon.moe users"
-  />
+  <meta name="description" content="Genshin Impact Wish Tally average pity percentage from paimon.moe users" />
+  <meta property="og:description" content="Genshin Impact Wish Tally average pity percentage from paimon.moe users" />
 </svelte:head>
 <div>
   <div class="lg:ml-64 pt-20 lg:pt-8">
@@ -155,57 +151,59 @@
     </p>
   </div>
   <div class="lg:ml-64 px-8">
-    <div class="flex items-end">
-      <img src="/images/banners/{banner.name} {banner.image}.png" alt={banner.name} class="rounded-xl h-64" />
+    <div class="flex flex-col lg:flex-row items-end">
+      <img src="/images/banners/{banner.name} {banner.image}.png" alt={banner.name} class="rounded-xl w-full h-auto lg:h-64 lg:w-auto" />
       {#if loading}
         <Icon className="m-4" path={mdiLoading} color="white" size={2} spin />
       {:else}
         <div class="border border-gray-700 rounded-xl ml-4" style="width: fit-content; height: fit-content;">
           <table class="text-white">
             <tr>
-              <td class="px-2 border-b border-r border-gray-700">Last Update</td>
-              <td class="px-2 border-b border-gray-700">{dayjs(data.time).fromNow()}</td>
+              <td class="px-2 border-r border-gray-700">Last Update</td>
+              <td class="px-2 border-gray-700">{dayjs(data.time).fromNow()}</td>
             </tr>
             <tr>
-              <td class="px-2 border-b border-r border-gray-700">Wish Total</td>
-              <td class="px-2 border-b border-gray-700">{numberFormat.format(data.total.all)}</td>
+              <td class="px-2 border-t border-r border-gray-700">Wish Total</td>
+              <td class="px-2 border-t border-gray-700">{numberFormat.format(data.total.all)}</td>
             </tr>
             <tr>
-              <td class="px-2 border-b border-r border-gray-700">Total User</td>
-              <td class="px-2 border-b border-gray-700">{numberFormat.format(data.total.users)}</td>
+              <td class="px-2 border-t border-r border-gray-700">Total User</td>
+              <td class="px-2 border-t border-gray-700">{numberFormat.format(data.total.users)}</td>
             </tr>
             <tr>
-              <td class="px-2 border-b border-r border-gray-700">5★ Median</td>
-              <td class="px-2 border-b border-gray-700">{numberFormat.format(data.median.legendary)}</td>
+              <td class="px-2 border-t border-r border-gray-700">5★ Median</td>
+              <td class="px-2 border-t border-gray-700">{numberFormat.format(data.median.legendary)}</td>
             </tr>
             <tr>
-              <td class="px-2 border-b border-r border-gray-700">Total 5★</td>
-              <td class="px-2 border-b border-gray-700">
+              <td class="px-2 border-t border-r border-gray-700">Total 5★</td>
+              <td class="px-2 border-t border-gray-700">
                 {numberFormat.format(data.total.legendary)}
                 ({numberFormat.format((data.total.legendary / data.total.all) * 100)}%)
               </td>
             </tr>
             <tr>
-              <td class="px-2 border-b border-r border-gray-700">Total 4★</td>
-              <td class="px-2 border-b border-gray-700">
+              <td class="px-2 border-t border-r border-gray-700">Total 4★</td>
+              <td class="px-2 border-t border-gray-700">
                 {numberFormat.format(data.total.rare)}
                 ({numberFormat.format((data.total.rare / data.total.all) * 100)}%)
               </td>
             </tr>
-            <tr>
-              <td class="px-2 border-r border-gray-700">Won 50:50</td>
-              <td class="px-2 border-gray-700">
-                {numberFormat.format(
-                  ((totalFeatured - totalGuarantee) / (data.total.legendary - totalGuarantee)) * 100,
-                )}%
-              </td>
-            </tr>
+            {#if id > 300000 && id < 400000}
+              <tr>
+                <td class="px-2 border-t border-r border-gray-700">Won 50:50</td>
+                <td class="px-2 border-t border-gray-700">
+                  {numberFormat.format(
+                    ((totalFeatured - totalGuarantee) / (data.total.legendary - totalGuarantee)) * 100,
+                  )}%
+                </td>
+              </tr>
+            {/if}
           </table>
         </div>
       {/if}
     </div>
     {#if !loading}
-      <div class="flex space-x-4">
+      <div class="flex flex-col lg:flex-row space-y-4 lg:space-x-4">
         <div
           class="border border-gray-700 rounded-xl mt-4 overflow-hidden"
           style="width: fit-content; height: fit-content;"

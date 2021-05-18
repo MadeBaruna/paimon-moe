@@ -6374,5 +6374,63 @@ export const weaponList = {
       },
     ],
   },
-
+  song_of_broken_pines: {
+    name: "Song of Broken Pines",
+    id: 'song_of_broken_pines',
+    rarity: 5,
+    atk: 46,
+    secondary: 'Physical DMG Bonus',
+    type: weapons.claymore,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.tile_of_decarabians_tower, amount: 5 },
+          { item: itemList.heavy_horn, amount: 5 },
+          { item: itemList.damaged_mask, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.debris_of_decarabians_city, amount: 5 },
+          { item: itemList.heavy_horn, amount: 18 },
+          { item: itemList.damaged_mask, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.debris_of_decarabians_city, amount: 9 },
+          { item: itemList.black_bronze_horn, amount: 9 },
+          { item: itemList.stained_mask, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.fragment_of_decarabians_epic, amount: 5 },
+          { item: itemList.black_bronze_horn, amount: 18 },
+          { item: itemList.stained_mask, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.fragment_of_decarabians_epic, amount: 9 },
+          { item: itemList.black_crystal_horn, amount: 14 },
+          { item: itemList.ominous_mask, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.scattered_piece_of_decarabians_dream, amount: 6 },
+          { item: itemList.black_crystal_horn, amount: 27 },
+          { item: itemList.ominous_mask, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
