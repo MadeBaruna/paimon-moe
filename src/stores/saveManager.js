@@ -71,6 +71,7 @@ const convertSave = async () => {
   const converted = localStorage.getItem(CONVERTED_KEY);
   if (converted !== null) return;
 
+  let convertedCount = 0;
   for (const [key, value] of Object.entries(localStorage)) {
     if (key.endsWith('ar') || key.endsWith('wl')) {
       await localforage.setItem(key, Number(value));
@@ -94,10 +95,17 @@ const convertSave = async () => {
     } else {
       await localforage.setItem(key, JSON.parse(value));
     }
+
+    if (!key.endsWith('locale')) {
+      convertedCount++;
+    }
   }
 
   localStorage.setItem(CONVERTED_KEY, dayjs().toISOString());
-  window.location.reload();
+
+  if (convertedCount > 0) {
+    window.location.reload();
+  }
 };
 
 export const checkLocalSave = async () => {
