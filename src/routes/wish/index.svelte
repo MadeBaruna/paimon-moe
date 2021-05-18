@@ -36,15 +36,15 @@
     readLocalData();
   }
 
-  onMount(() => {
-    readLocalData();
+  onMount(async () => {
+    await readLocalData();
   });
 
-  function readLocalData() {
+  async function readLocalData() {
     console.log('wish read setting');
-    const data = readSave(path);
+    const data = await readSave(path);
     if (data !== null) {
-      settings = JSON.parse(data);
+      settings = data;
     } else {
       settings = {
         firstTime: true,
@@ -53,7 +53,7 @@
     }
   }
 
-  function setManualInput(val) {
+  async function setManualInput(val) {
     if (settings.manualInput === val) return;
 
     settings = {
@@ -61,17 +61,17 @@
       manualInput: val,
     };
 
-    updateSave(path, JSON.stringify(settings));
+    await updateSave(path, settings);
   }
 
-  function processFirstTimePopup(val, manualVal) {
+  async function processFirstTimePopup(val, manualVal) {
     settings = {
       ...settings,
       firstTime: val,
       manualInput: manualVal,
     };
 
-    updateSave(path, JSON.stringify(settings));
+    await updateSave(path, settings);
   }
 
   function openHowTo() {

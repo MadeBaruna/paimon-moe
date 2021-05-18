@@ -21,7 +21,7 @@
   const types = bannerTypes;
 
   let loading = true;
-  let totalWish = 0;
+  let wishCount = 0;
   const avg = {};
 
   $: if ($fromRemote) {
@@ -32,8 +32,8 @@
     readLocalData();
   }
 
-  onMount(() => {
-    readLocalData();
+  onMount(async () => {
+    await readLocalData();
   });
 
   const defaultChars = {
@@ -74,19 +74,19 @@
     },
   };
 
-  export function readLocalData() {
-    totalWish = 0;
+  export async function readLocalData() {
+    let totalWish = 0;
     console.log('wish summary read local');
     const prefix = getAccountPrefix();
 
-    monthlyData = {};
+    let currentMonthlyData = {};
 
     // collected characters stuff
     let updateCollectedCharacters = false;
     let collectedCharacters = {};
-    const collectedCharactersData = readSave(`${prefix}characters`);
+    const collectedCharactersData = await readSave(`${prefix}characters`);
     if (collectedCharactersData !== null) {
-      collectedCharacters = JSON.parse(collectedCharactersData);
+      collectedCharacters = collectedCharactersData;
       for (const collectedId of Object.keys(collectedCharacters)) {
         collectedCharacters[collectedId].wish = 0;
       }
@@ -94,18 +94,18 @@
     } else {
       collectedCharacters = defaultChars;
     }
-    const collectablesNeedUpdateData = readSave(`${prefix}collectables-updated`);
-    if (collectablesNeedUpdateData === null || collectablesNeedUpdateData === 'true') {
+    const collectablesNeedUpdateData = await readSave(`${prefix}collectables-updated`);
+    if (collectablesNeedUpdateData === null || collectablesNeedUpdateData === true) {
       updateCollectedCharacters = true;
-    } else if (collectablesNeedUpdateData === 'false') {
+    } else if (collectablesNeedUpdateData === false) {
       updateCollectedCharacters = false;
     }
 
     for (let type of types) {
       const path = `wish-counter-${type.id}`;
-      const data = readSave(`${prefix}${path}`);
+      const data = await readSave(`${prefix}${path}`);
       if (data !== null) {
-        const counterData = JSON.parse(data);
+        const counterData = data;
         const pulls = counterData.pulls || [];
         const total = counterData.total;
 
@@ -147,27 +147,27 @@
             currentType = 'weapon';
           }
 
-          const time = dayjs.unix(pull.time).format('YYYY-MM');
-          if (monthlyData[time] === undefined) {
-            monthlyData[time] = {
+          const time = dayjs(pull.time).format('YYYY-MM');
+          if (currentMonthlyData[time] === undefined) {
+            currentMonthlyData[time] = {
               total: 0,
               legendary: 0,
               rare: 0,
             };
           }
 
-          monthlyData[time].total++;
+          currentMonthlyData[time].total++;
 
           if (rarity === 5) {
             legendary++;
             legendaryPity += pull.pity;
-            monthlyData[time].legendary++;
+            currentMonthlyData[time].legendary++;
 
             legendaryPulls.push({ name: itemName, pity: pull.pity });
           } else if (rarity === 4) {
             rare++;
             rarePity += pull.pity;
-            monthlyData[time].rare++;
+            currentMonthlyData[time].rare++;
 
             if (currentType === 'character') {
               rareCharacter++;
@@ -205,15 +205,19 @@
       }
     }
 
+    wishCount = totalWish;
+    monthlyData = currentMonthlyData;
+
     if (updateCollectedCharacters && totalWish > 0) {
       console.log('updating collectables');
-      updateSave(`${prefix}characters`, JSON.stringify(collectedCharacters));
-      updateSave(`${prefix}collectables-updated`, 'false');
+      await updateSave(`${prefix}characters`, collectedCharacters);
+      await updateSave(`${prefix}collectables-updated`, false);
     }
 
-    console.log(avg);
+    // console.log(avg);
     loading = false;
   }
+
 </script>
 
 {#if !loading}
@@ -234,7 +238,7 @@
     {/if}
     <div class="bg-item rounded-xl p-4 flex items-center w-full text-white" style="height: min-content;">
       {$t('wish.wishesWorth')} <img class="w-4 h-4 mx-2" src="/images/primogem.png" alt="primogem" />
-      {numberFormat.format(totalWish * 160)}
+      {numberFormat.format(wishCount * 160)}
     </div>
     <a
       href="/wish/tally"

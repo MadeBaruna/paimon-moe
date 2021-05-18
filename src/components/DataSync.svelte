@@ -81,7 +81,7 @@
     try {
       const remoteSaveData = await getData();
       for (const k in remoteSaveData) {
-        updateSave(k, remoteSaveData[k], true);
+        await updateSave(k, remoteSaveData[k], true);
       }
     } catch (err) {
       console.error(err);
@@ -91,7 +91,7 @@
 
   async function useRemoteData() {
     for (const k in remoteSave) {
-      updateSave(k, remoteSave[k], true);
+      await updateSave(k, remoteSave[k], true);
     }
 
     synced.set(true);
@@ -99,7 +99,7 @@
   }
 
   async function useLocalData() {
-    await saveData(getLocalSaveJson());
+    await saveData(await getLocalSaveJson());
 
     synced.set(true);
     closeModal();
@@ -184,7 +184,7 @@
       saveId.set(result.id);
 
       if (localSaveExists) {
-        await saveData(getLocalSaveJson());
+        await saveData(await getLocalSaveJson());
       }
 
       synced.set(true);
@@ -253,8 +253,8 @@
       );
   }
 
-  function exportData() {
-    downloadData(getLocalSaveJson(), 'paimon-moe-local-data');
+  async function exportData() {
+    downloadData(await getLocalSaveJson(), 'paimon-moe-local-data');
     downloadData(JSON.stringify(remoteSave), 'paimon-moe-drive-data');
   }
 

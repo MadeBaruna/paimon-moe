@@ -13,11 +13,11 @@
     readLocalData();
   }
 
-  onMount(() => {
-    readLocalData();
+  onMount(async () => {
+    await readLocalData();
   });
 
-  function readLocalData() {
+  async function readLocalData() {
     loading.set(true);
 
     const prefix = getAccountPrefix();
@@ -29,10 +29,10 @@
     if (unsubscribeWl) unsubscribeWl();
 
     console.log('setting read local');
-    const accountsSave = readSave('accounts');
-    const serverSave = readSave(`${prefix}server`);
-    const arSave = readSave(`${prefix}ar`);
-    const wlSave = readSave(`${prefix}wl`);
+    const accountsSave = await readSave('accounts');
+    const serverSave = await readSave(`${prefix}server`);
+    const arSave = await readSave(`${prefix}ar`);
+    const wlSave = await readSave(`${prefix}wl`);
     if (accountsSave !== null) {
       const accountList = accountsSave.split(',').map((e) => ({
         label: `Account ${e.substring(7)}`,
@@ -51,26 +51,26 @@
       wl.set(Number(wlSave));
     }
 
-    unsubscribeServer = server.subscribe((val) => {
+    unsubscribeServer = server.subscribe(async (val) => {
       if (firstLoad) return;
 
       const prefix = getAccountPrefix();
       console.log('server changed', val);
-      updateSave(`${prefix}server`, val);
+      await updateSave(`${prefix}server`, val);
     });
-    unsubscribeWl = wl.subscribe((val) => {
+    unsubscribeWl = wl.subscribe(async (val) => {
       if (firstLoad) return;
 
       const prefix = getAccountPrefix();
       console.log('wl changed', val);
-      updateSave(`${prefix}wl`, val);
+      await updateSave(`${prefix}wl`, val);
     });
-    unsubscribeAr = ar.subscribe((val) => {
+    unsubscribeAr = ar.subscribe(async (val) => {
       if (firstLoad) return;
 
       const prefix = getAccountPrefix();
       console.log('ar changed', val);
-      updateSave(`${prefix}ar`, val);
+      await updateSave(`${prefix}ar`, val);
     });
 
     firstLoad = false;

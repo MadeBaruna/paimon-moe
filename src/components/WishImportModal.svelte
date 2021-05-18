@@ -5,6 +5,8 @@
   import { onMount } from 'svelte';
   import { slide } from 'svelte/transition';
   import dayjs from 'dayjs';
+  import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
+  dayjs.extend(isSameOrBefore);
 
   import { pushToast } from '../stores/toast';
   import Button from './Button.svelte';
@@ -96,9 +98,9 @@
 
   async function startImport() {
     if (selectedType === 'pclocal') {
-      importFromGeneratedText();
+      await importFromGeneratedText();
     } else {
-      processLogs();
+      await processLogs();
     }
   }
 
@@ -160,7 +162,8 @@
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
 
-    const newestPullTime = getNewestPullTime(type);
+    const newestPullTime = await getNewestPullTime(type);
+    // console.log(newestPullTime);
     let page = 1;
     let result = [];
     let lastTime = 0;
@@ -220,15 +223,15 @@
       try {
         for (let row of result) {
           const code = row.gacha_type;
-          const time = dayjs(row.time);
+          const time = row.time;
           const name = row.name;
           const type = row.item_type.replace(/ /g, '');
 
-          if (time.unix() <= newestPullTime) {
+          if (dayjs(time).isSameOrBefore(newestPullTime)) {
             return;
           }
 
-          lastTime = time;
+          lastTime = dayjs(time);
 
           let id;
           if (type === 'Weapon') {
@@ -246,7 +249,7 @@
             {
               type: type.toLowerCase(),
               id,
-              time: time.unix(),
+              time,
               pity: 0,
             },
           ];
@@ -255,38 +258,38 @@
         page = page + 1;
         lastId = result.length > 0 ? result[result.length - 1].id : 0;
         await sleep(1000);
-        console.log(wishes);
+        // console.log(wishes);
       } catch (err) {
         processingLog = false;
         pushToast($t('wish.import.invalidData'), 'error');
         console.error(err);
         throw 'invalid data';
       }
-    } while (result.length > 0 && lastTime > newestPullTime);
+    } while (result.length > 0 && lastTime.isAfter(newestPullTime));
   }
 
-  function getNewestPullTime(type) {
+  async function getNewestPullTime(type) {
     if (!newOnly) {
       // return very long time so it equally all wishes
-      return new dayjs().year(2000).unix();
+      return dayjs().year(2000);
     }
 
     const prefix = getAccountPrefix();
     const path = `wish-counter-${type.id}`;
-    const localData = readSave(`${prefix}${path}`);
+    const localData = await readSave(`${prefix}${path}`);
 
     let localWishes = [];
     if (localData !== null) {
-      const counterData = JSON.parse(localData);
+      const counterData = localData;
       localWishes = counterData.pulls || [];
 
       if (localWishes.length > 0) {
         const lastPull = localWishes[localWishes.length - 1];
-        return lastPull.time;
+        return dayjs(lastPull.time);
       }
     }
 
-    return new dayjs().year(2000).unix();
+    return dayjs().year(2000);
   }
 
   async function fetchRetry(url, options, n) {
@@ -330,7 +333,7 @@
     }
   }
 
-  function importFromGeneratedText() {
+  async function importFromGeneratedText() {
     if (!generatedTextInput.startsWith('paimonmoe,importer,version,1,0')) {
       pushToast('Invalid data, please use the latest importer app', 'error');
       return;
@@ -342,19 +345,19 @@
 
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
-    
+
     try {
       for (let row of rows) {
         if (row === '') continue;
 
         const cell = row.split(',');
         const code = Number(cell[0]);
-        const time = dayjs(cell[1]);
+        const time = cell[1];
         const name = cell[2];
         const type = cell[3].replace(/ /g, '');
-        
-        const newestPullTime = getNewestPullTime(types[code]);
-        if (time.unix() <= newestPullTime) {
+
+        const newestPullTime = await getNewestPullTime(types[code]);
+        if (dayjs(time).isSameOrBefore(newestPullTime)) {
           continue;
         }
 
@@ -374,7 +377,7 @@
           {
             type: type.toLowerCase(),
             id,
-            time: time.unix(),
+            time,
             pity: 0,
           },
         ];
@@ -389,10 +392,10 @@
     console.log(wishes);
   }
 
-  function saveData() {
+  async function saveData() {
     calculatingPity = true;
     for (let [code, type] of Object.entries(types)) {
-      processWishes(code, type);
+      await processWishes(code, type);
     }
     calculatingPity = false;
 
@@ -403,11 +406,11 @@
     }
 
     const prefix = getAccountPrefix();
-    updateSave(`${prefix}collectables-updated`, 'true');
+    await updateSave(`${prefix}collectables-updated`, true);
     closeModal();
   }
 
-  function processWishes(code, type) {
+  async function processWishes(code, type) {
     processFirstTimePopup(false, false);
 
     if (wishes[code] === undefined) return;
@@ -415,18 +418,18 @@
 
     const prefix = getAccountPrefix();
     const path = `wish-counter-${type.id}`;
-    const localData = readSave(`${prefix}${path}`);
+    const localData = await readSave(`${prefix}${path}`);
 
     let localWishes = [];
     if (localData !== null) {
-      const counterData = JSON.parse(localData);
+      const counterData = localData;
       localWishes = counterData.pulls || [];
     }
 
     const importedWishes = wishes[code].slice().reverse();
     const oldestWish = importedWishes[0];
 
-    localWishes = localWishes.slice().filter((e) => e.time < oldestWish.time);
+    localWishes = localWishes.slice().filter((e) => dayjs(e.time).isBefore(dayjs(oldestWish.time)));
 
     const combined = [...localWishes, ...importedWishes];
 
@@ -461,14 +464,14 @@
       }
     }
 
-    const data = JSON.stringify({
+    const data = {
       total: combined.length,
       legendary,
       rare,
       pulls: combined,
-    });
+    };
 
-    updateSave(`${prefix}${path}`, data);
+    await updateSave(`${prefix}${path}`, data);
   }
 
   const servers = [
@@ -489,6 +492,7 @@
     detectPlatform();
     selectedServer = servers.find((e) => e.value === $server);
   });
+
 </script>
 
 {#if processingLog}
@@ -812,4 +816,5 @@
       @apply block;
     }
   }
+
 </style>

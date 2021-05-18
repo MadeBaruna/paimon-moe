@@ -47,8 +47,8 @@
   }
   $: showRarity, pulls, filterRarity();
 
-  onMount(() => {
-    readLocalData();
+  onMount(async () => {
+    await readLocalData();
     filterRarity();
   });
 
@@ -175,12 +175,13 @@
     isEdit = false;
   }
 
-  export function readLocalData() {
+  export async function readLocalData() {
     console.log('wish read local');
     const prefix = getAccountPrefix();
-    const data = readSave(`${prefix}${path}`);
+    const data = await readSave(`${prefix}${path}`);
+    console.log(data);
     if (data !== null) {
-      const counterData = JSON.parse(data);
+      const counterData = data;
       total = counterData.total;
       legendary = counterData.legendary;
       rare = counterData.rare;
@@ -188,16 +189,16 @@
     }
   }
 
-  const saveData = debounce(() => {
-    const data = JSON.stringify({
+  const saveData = debounce(async () => {
+    const data = {
       total,
       legendary,
       rare,
       pulls,
-    });
+    };
 
     const prefix = getAccountPrefix();
-    updateSave(`${prefix}${path}`, data);
+    await updateSave(`${prefix}${path}`, data);
   }, 2000);
 
   function add(val) {
@@ -231,7 +232,7 @@
         ...[...new Array(filler)].map((e) => ({
           type: 'unknown_3_star',
           id: 'unknown_3_star',
-          time: dayjs().unix(),
+          time: dayjs().format('YYYY-MM-DD HH:mm:ss'),
           pity: 1,
           manualInput: true,
         })),
@@ -264,6 +265,7 @@
     rare = 0;
     saveData();
   }
+
 </script>
 
 <div class="bg-item rounded-xl p-4 inline-flex flex-col w-full" style="height: min-content;">
@@ -394,7 +396,7 @@
           <Icon path={mdiTableOfContents} color="white" />
         </a>
       </div>
-      <table class="w-full">
+      <table class="w-full text-sm">
         <tr>
           <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">{$t('wish.name')}</th>
           <th class="border-b border-gray-700 text-gray-400 font-display text-left pl-2">{$t('wish.time')}</th>
@@ -429,9 +431,9 @@
             {:else if pull.type === 'unknown_3_star'}
               <td class="border-b border-gray-700 py-1 pl-2 font-semibold text-primary">Unknown</td>
             {/if}
-            <td class="border-b border-gray-700 text-sm py-1 px-2 whitespace-no-wrap" style="font-family: monospace;"
-              >{dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm:ss')}</td
-            >
+            <td class="border-b border-gray-700 text-xs py-1 px-2 whitespace-no-wrap" style="font-family: monospace;">
+              {pull.time}
+            </td>
             <td class="text-right border-b border-gray-700 py-1">{pull.pity}</td>
           </tr>
         {/each}
@@ -475,4 +477,5 @@
       }
     }
   }
+
 </style>

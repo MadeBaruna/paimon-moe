@@ -71,7 +71,7 @@
     }
   }
 
-  function processWishes() {
+  async function processWishes() {
     const chars = {
       amber: {
         default: 1,
@@ -113,10 +113,10 @@
     const bannerCategories = ['beginners', 'standard', 'character-event', 'weapon-event'];
     const prefix = getAccountPrefix();
     for (const id of bannerCategories) {
-      const data = readSave(`${prefix}wish-counter-${id}`);
+      const data = await readSave(`${prefix}wish-counter-${id}`);
       if (data !== null) {
         showConstellation = true;
-        const counterData = JSON.parse(data);
+        const counterData = data;
         const pullData = counterData.pulls || [];
         for (const pull of pullData) {
           if (pull.type === 'character') {
@@ -135,23 +135,23 @@
 
     if (showConstellation) {
       constellation = chars;
-      updateSave(`${prefix}characters`, JSON.stringify(chars));
+      await updateSave(`${prefix}characters`, chars);
     }
   }
 
-  function getConstellation() {
+  async function getConstellation() {
     const prefix = getAccountPrefix();
-    const data = readSave(`${prefix}characters`);
+    const data = await readSave(`${prefix}characters`);
     if (data !== null) {
-      constellation = JSON.parse(data);
+      constellation = data;
       showConstellation = true;
     } else {
-      processWishes();
+      await processWishes();
     }
   }
 
-  onMount(() => {
-    getConstellation();
+  onMount(async () => {
+    await getConstellation();
   });
 </script>
 

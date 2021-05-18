@@ -83,11 +83,11 @@
   const level = [1, 20, 20, 40, 40, 50, 50, 60, 60, 70, 70, 80, 80, 90];
   const ascen = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
 
-  function getConstellationCount() {
+  async function getConstellationCount() {
     const prefix = getAccountPrefix();
-    const data = readSave(`${prefix}characters`);
+    const data = await readSave(`${prefix}characters`);
     if (data !== null) {
-      const constellation = JSON.parse(data);
+      const constellation = data;
       chars = constellation;
       if (constellation[id]) {
         constellationCount = constellation[id].default + constellation[id].wish - 1;
@@ -102,7 +102,7 @@
     manualCount = Math.max(0, manualCount + val);
   }
 
-  function saveConstellationCount() {
+  async function saveConstellationCount() {
     editConstallation = false;
     if (chars[id]) {
       chars[id].manual = manualCount;
@@ -124,15 +124,15 @@
     }
 
     const prefix = getAccountPrefix();
-    updateSave(`${prefix}characters`, JSON.stringify(chars));
+    await updateSave(`${prefix}characters`, chars);
   }
 
   function scrollToView(view) {
     view.scrollIntoView({ behavior: 'smooth' });
   }
 
-  onMount(() => {
-    getConstellationCount();
+  onMount(async () => {
+    await getConstellationCount();
   });
 
   $: constellationCountTotal = constellationCount + manualCount;

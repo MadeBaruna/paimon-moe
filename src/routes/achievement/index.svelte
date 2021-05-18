@@ -92,11 +92,11 @@
     orderAchievement();
   }
 
-  const saveData = debounce(() => {
-    const data = JSON.stringify(checkList);
+  const saveData = debounce(async () => {
+    const data = checkList;
 
     const prefix = getAccountPrefix();
-    updateSave(`${prefix}achievement`, data);
+    await updateSave(`${prefix}achievement`, data);
   }, 2000);
 
   async function changeCategory(id, index, firstLoad) {
@@ -166,11 +166,11 @@
     changeCategory(active, activeIndex, true);
   }
 
-  function readLocalData() {
+  async function readLocalData() {
     const prefix = getAccountPrefix();
-    const achievementData = readSave(`${prefix}achievement`);
+    const achievementData = await readSave(`${prefix}achievement`);
     if (achievementData !== null) {
-      checkList = JSON.parse(achievementData);
+      checkList = achievementData;
       migrateNewVersion();
     }
   }
@@ -199,8 +199,8 @@
     }
   }
 
-  onMount(() => {
-    readLocalData();
+  onMount(async () => {
+    await readLocalData();
     parseCategories();
     changeCategory('0', 0, true);
 

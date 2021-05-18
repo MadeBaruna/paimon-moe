@@ -28,8 +28,8 @@
   });
 
   // check local storage save on load
-  onMount(() => {
-    checkLocalSave();
+  onMount(async () => {
+    await checkLocalSave();
   });
 </script>
 

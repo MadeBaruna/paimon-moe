@@ -11,8 +11,8 @@
     readLocalData();
   }
 
-  onMount(() => {
-    readLocalData();
+  onMount(async () => {
+    await readLocalData();
 
     const unsub = selectedAccount.subscribe(() => {
       console.log('account changed, reading todo for the account');
@@ -22,7 +22,7 @@
     return () => unsub();
   });
 
-  function readLocalData() {
+  async function readLocalData() {
     loading.set(true);
     firstLoad = true;
 
@@ -31,18 +31,19 @@
     const prefix = getAccountPrefix();
 
     console.log('todo read local');
-    const data = readSave(`${prefix}todos`);
+    const data = await readSave(`${prefix}todos`);
+    console.log(data);
     if (data !== null) {
-      const todoList = JSON.parse(data);
+      const todoList = data;
       todos.set(todoList);
     } else {
       todos.set([]);
     }
 
-    unsubscribe = todos.subscribe((val) => {
+    unsubscribe = todos.subscribe(async (val) => {
       if (firstLoad) return;
 
-      updateSave(`${prefix}todos`, JSON.stringify(val));
+      await updateSave(`${prefix}todos`, val);
     });
 
     firstLoad = false;

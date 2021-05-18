@@ -134,28 +134,28 @@
     return `color: hsl(${hue}, 100%, 60%);`;
   }
 
-  const saveData = debounce(() => {
-    const data = JSON.stringify(currentUsage);
+  const saveData = debounce(async () => {
+    const data = currentUsage;
 
     const prefix = getAccountPrefix();
-    updateSave(`${prefix}furnishing`, data);
+    await updateSave(`${prefix}furnishing`, data);
   }, 2000);
 
-  function readLocalData() {
+  async function readLocalData() {
     const prefix = getAccountPrefix();
-    const furnishingData = readSave(`${prefix}furnishing`);
+    const furnishingData = await readSave(`${prefix}furnishing`);
     if (furnishingData !== null) {
       currentUsage = {
         ...currentUsage,
-        ...JSON.parse(furnishingData),
+        ...furnishingData,
       };
     }
   }
 
-  onMount(() => {
+  onMount(async () => {
     parseFurnishing();
     max = items[0].ratio;
-    readLocalData();
+    await readLocalData();
 
     locale.subscribe((val) => {
       changeLocale(val);

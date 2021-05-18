@@ -102,12 +102,12 @@
     );
   }
 
-  function readLocalData() {
+  async function readLocalData() {
     console.log('wish read local');
     const prefix = getAccountPrefix();
-    const data = readSave(`${prefix}${path}`);
+    const data = await readSave(`${prefix}${path}`);
     if (data !== null) {
-      const counterData = JSON.parse(data);
+      const counterData = data;
       total = counterData.total;
       legendary = counterData.legendary;
       rare = counterData.rare;
@@ -118,8 +118,9 @@
   }
 
   function getNextBanner(time) {
+    console.log(time);
     for (let i = currentBannerIndex + 1; i < selectedBanners.length; i++) {
-      console.log('change banner', i, dayjs.unix(time).format(), dayjs.unix(selectedBanners[i].start).format());
+      console.log('change banner', i, time, dayjs.unix(selectedBanners[i].start).format());
       if (time >= selectedBanners[i].start && time < selectedBanners[i].end) {
         currentBannerIndex = i;
         return selectedBanners[i];
@@ -140,9 +141,10 @@
     for (let i = 0; i < pullData.length; i++) {
       const pull = pullData[i];
       const next = pullData[i + 1] || { time: dayjs().year(2000).unix() };
+      const currentPullTime = dayjs(pull.time).unix();
 
-      if (currentBanner === null || currentBanner.end < pull.time) {
-        currentBanner = getNextBanner(pull.time);
+      if (currentBanner === null || currentBanner.end < currentPullTime) {
+        currentBanner = getNextBanner(currentPullTime);
 
         if (currentBanner === undefined) {
           console.log('error banner here', JSON.stringify(pull));
@@ -370,8 +372,8 @@
     }
   }
 
-  onMount(() => {
-    readLocalData();
+  onMount(async () => {
+    await readLocalData();
 
     isSafari =
       navigator.vendor &&
@@ -393,7 +395,7 @@
   }
 
   function formatTime(time) {
-    return dayjs.unix(time).format('ddd YYYY-MM-DD HH:mm:ss');
+    return dayjs(time).format('ddd YYYY-MM-DD HH:mm:ss');
   }
 
   function calculateLegendaryColor(percentage) {

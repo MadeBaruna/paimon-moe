@@ -11,6 +11,7 @@
   "dependencies": {
     "compression": "^1.7.1",
     "exceljs": "^4.2.1",
+    "localforage": "^1.9.0",
     "polka": "next",
     "prettier": "^2.2.1",
     "sirv": "^1.0.0"

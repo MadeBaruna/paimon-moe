@@ -17,22 +17,22 @@
   let latestPull = null;
   let latestBanner = null;
 
-  function getLatestWish() {
+  async function getLatestWish() {
     const prefix = getAccountPrefix();
 
-    let latestTime = 0;
+    let latestTime = dayjs().year(2000);
     let latest = null;
     let banner = null;
     for (let type of bannerTypes) {
       const path = `wish-counter-${type.id}`;
-      const data = readSave(`${prefix}${path}`);
+      const data = await readSave(`${prefix}${path}`);
       if (data !== null) {
-        const counterData = JSON.parse(data);
+        const counterData = data;
         const pulls = counterData.pulls || [];
 
         if (pulls.length > 0) {
           const currentLatest = pulls[pulls.length - 1];
-          if (currentLatest.time > latestTime) {
+          if (dayjs(currentLatest.time).isAfter(latestTime)) {
             latestTime = currentLatest.time;
             latest = currentLatest;
             banner = type;
@@ -46,7 +46,7 @@
   }
 
   onMount(async () => {
-    getLatestWish();
+    await getLatestWish();
     await tick();
     dispatch('done');
   });
@@ -76,7 +76,7 @@
         </tr>
         <tr>
           <td class="text-gray-400 pr-1">{$t('home.wish.time')}</td>
-          <td>{dayjs.unix(latestPull.time).format('ddd YYYY-MM-DD HH:mm:ss')}</td>
+          <td>{latestPull.time}</td>
         </tr>
         <tr>
           <td class="text-gray-400 pr-1 align-top">{$t('home.wish.name')}</td>

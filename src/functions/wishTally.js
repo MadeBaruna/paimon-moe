@@ -1,9 +1,11 @@
+import dayjs from 'dayjs';
 import { process } from './wish';
 
 const bannerCategories = ['beginners', 'standard', 'character-event', 'weapon-event'];
 const rareInclude = {
   300011: ['rosaria'],
   300012: ['yanfei', 'noelle', 'diona'],
+  300013: ['xingqiu', 'beidou', 'xinyan'],
 };
 
 async function sendWish(data) {
@@ -23,7 +25,7 @@ export async function submitWishTally() {
   for (const id of bannerCategories) {
     prefixId += 100000;
 
-    const data = process(id);
+    const data = await process(id);
     if (data === null) continue;
     if (data.hasManualInput) continue;
 
@@ -31,7 +33,9 @@ export async function submitWishTally() {
 
     const { pulls, banner } = data;
 
-    const firstFivePulls = pulls.slice(0, 5).map((e) => [e.time.toString(), e.id, e.type, e.pity, e.group === 'group']);
+    const firstFivePulls = pulls
+      .slice(0, 5)
+      .map((e) => [dayjs(e.time).unix().toString(), e.id, e.type, e.pity, e.group === 'group']);
 
     for (let i = banner.length - 1; i >= Math.max(banner.length - 3, 0); i--) {
       const total = banner[i].total;
@@ -44,7 +48,7 @@ export async function submitWishTally() {
       const legendaryCount = banner[i].legendary.length;
       const rareCount = banner[i].rare.character.length + banner[i].rare.weapon.length;
       const legendaryPulls = banner[i].legendary.map((e) => [
-        e.time.toString(),
+        dayjs(e.time).unix().toString(),
         e.id,
         e.type,
         e.pity,
@@ -57,7 +61,7 @@ export async function submitWishTally() {
       if (rareInclude[prefixId + i + 1]) {
         const includedRarePulls = banner[i].rare.character
           .filter((e) => rareInclude[prefixId + i + 1].includes(e.id))
-          .map((e) => [e.time.toString(), e.id, e.type, e.pity, e.group === 'group', true, 4]);
+          .map((e) => [dayjs(e.time).unix().toString(), e.id, e.type, e.pity, e.group === 'group', true, 4]);
         legendaryPulls.push(...includedRarePulls);
       }
 

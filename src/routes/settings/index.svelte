@@ -1,5 +1,6 @@
 <script>
   import { t } from 'svelte-i18n';
+  import localforage from 'localforage';
 
   import { mdiCheckCircleOutline, mdiChevronDown, mdiDiscord, mdiGithub, mdiGoogleDrive, mdiLoading } from '@mdi/js';
   import { getContext, onMount } from 'svelte';
@@ -79,7 +80,7 @@
     }
   }
 
-  function addAccount() {
+  async function addAccount() {
     const accountList = $accounts;
     const accountNumber =
       accountList.length === 1 ? 2 : Number(accountList[accountList.length - 1].value.substring(7)) + 1;
@@ -88,7 +89,7 @@
     const updatedAccountList = [...accountList, newAccount];
     accounts.set(updatedAccountList);
 
-    updateSave(
+    await updateSave(
       'accounts',
       updatedAccountList
         .slice(1)
@@ -99,7 +100,7 @@
     pushToast(`Account ${accountNumber} added, select it on the account list!`);
   }
 
-  function selectAccount() {
+  async function selectAccount() {
     if (!mounted) return;
 
     console.log('changed account to', currentAccount.label);
@@ -107,22 +108,22 @@
     selectedAccount.set(currentAccount);
     const prefix = getAccountPrefix();
 
-    const serverSave = readSave(`${prefix}server`);
+    const serverSave = await readSave(`${prefix}server`);
     if (serverSave === null) {
       selectedServer = { label: 'Asia/TW/HK/MO', value: 'Asia' };
     } else {
-      const serverSave = readSave(`${prefix}server`);
+      const serverSave = await readSave(`${prefix}server`);
       selectedServer = servers.find((e) => e.value === serverSave);
     }
 
-    const arSave = readSave(`${prefix}ar`);
+    const arSave = await readSave(`${prefix}ar`);
     if (arSave === null) {
       arInput = '45';
     } else {
       arInput = arSave;
     }
 
-    const wlSave = readSave(`${prefix}wl`);
+    const wlSave = await readSave(`${prefix}wl`);
     if (wlSave === null) {
       wlInput = '6';
     } else {
@@ -130,7 +131,7 @@
     }
   }
 
-  function deleteAccount() {
+  async function deleteAccount() {
     const prefix = getAccountPrefix();
 
     const updatedList = $accounts.filter((e) => e.value !== currentAccount.value);
@@ -156,11 +157,11 @@
     ];
 
     for (let k of keyWillBeDeleted) {
-      localStorage.removeItem(`${prefix}${k}`);
+      await localforage.removeItem(`${prefix}${k}`);
     }
 
     if (updatedList.length > 1) {
-      updateSave(
+      await updateSave(
         'accounts',
         updatedList
           .slice(1)
@@ -168,14 +169,14 @@
           .join(','),
       );
     } else {
-      updateSave('accounts', undefined);
+      await updateSave('accounts', undefined);
     }
 
     pushToast('Data deleted');
     closeModal();
   }
 
-  function resetAccount() {
+  async function resetAccount() {
     const prefix = getAccountPrefix();
 
     const keyWillBeDeleted = [
@@ -191,11 +192,11 @@
     ];
 
     for (let k of keyWillBeDeleted) {
-      localStorage.removeItem(`${prefix}${k}`);
+      await localforage.removeItem(`${prefix}${k}`);
     }
 
-    updateSave(`${prefix}todos`, undefined, true);
-    updateSave(`${prefix}todos`, JSON.stringify([]));
+    await updateSave(`${prefix}todos`, undefined, true);
+    await updateSave(`${prefix}todos`, []);
 
     pushToast('Data deleted');
     closeModal();

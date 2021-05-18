@@ -41,14 +41,14 @@
       name = weaponList[editName];
     }
 
-    time = dayjs.unix(editTime).format('YYYY-MM-DDTHH:mm:ss');
+    time = dayjs(editTime).format('YYYY-MM-DDTHH:mm:ss');
   });
 
   function add() {
     const pull = {
       type: type.value,
       id: name.id,
-      time: dayjs(time).unix(),
+      time: dayjs(time).format('YYYY-MM-DD HH:mm:ss'),
       pity,
       manualInput: true,
     };
@@ -60,7 +60,7 @@
     const pull = {
       type: type.value,
       id: name.id,
-      time: dayjs(time).unix(),
+      time: dayjs(time).format('YYYY-MM-DD HH:mm:ss'),
       pity,
       manualInput: true,
     };

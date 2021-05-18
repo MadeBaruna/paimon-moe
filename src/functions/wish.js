@@ -19,11 +19,11 @@ const bannerTypes = {
   beginners: 'beginners',
 };
 
-function readLocalData(path) {
+async function readLocalData(path) {
   const prefix = getAccountPrefix();
-  const data = readSave(`${prefix}${path}`);
+  const data = await readSave(`${prefix}${path}`);
   if (data !== null) {
-    const counterData = JSON.parse(data);
+    const counterData = data;
     const total = counterData.total;
     const legendary = counterData.legendary;
     const rare = counterData.rare;
@@ -49,10 +49,10 @@ function getNextBanner(time, currentBannerIndex, selectedBanners) {
 }
 
 function formatTime(time) {
-  return dayjs.unix(time).format('ddd YYYY-MM-DD HH:mm:ss');
+  return dayjs(time).format('ddd YYYY-MM-DD HH:mm:ss');
 }
 
-export function process(id) {
+export async function process(id) {
   const path = `wish-counter-${id}`;
 
   const bannerType = bannerTypes[id];
@@ -81,7 +81,7 @@ export function process(id) {
     };
   });
 
-  const data = readLocalData(path);
+  const data = await readLocalData(path);
 
   if (data === null) return null;
 
@@ -102,9 +102,10 @@ export function process(id) {
   for (let i = 0; i < pullData.length; i++) {
     const pull = pullData[i];
     const next = pullData[i + 1] || { time: dayjs().year(2000).unix() };
+    const currentPullTime = dayjs(pull.time).unix();
 
-    if (currentBanner === null || currentBanner.end < pull.time) {
-      const nextBanner = getNextBanner(pull.time, currentBannerIndex, selectedBanners);
+    if (currentBanner === null || currentBanner.end < currentPullTime) {
+      const nextBanner = getNextBanner(currentPullTime, currentBannerIndex, selectedBanners);
 
       if (nextBanner === undefined) {
         console.log('error banner here', JSON.stringify(pull));

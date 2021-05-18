@@ -115,7 +115,7 @@ async function addInformation(workbook) {
   };
 
   sheet.addRow(['Paimon.moe Wish History Export']);
-  sheet.addRow(['Version', 1]);
+  sheet.addRow(['Version', 2]);
   sheet.addRow(['Export Date', dayjs().format('YYYY-MM-DD HH:mm:ss')]);
 
   sheet.mergeCells('A1:B1');
@@ -146,7 +146,7 @@ async function addWishHistory(workbook, icons) {
       bold: true,
     };
     
-    const data = process(id);
+    const data = await process(id);
     if (data === null) continue;
 
     let groupCount = 0;
@@ -166,7 +166,7 @@ async function addWishHistory(workbook, icons) {
       const row = sheet.addRow([
         pull.type[0].toUpperCase() + pull.type.slice(1),
         pull.name,
-        dayjs.unix(pull.time).toDate(),
+        pull.time,
         pull.rarity,
         pull.pity,
         pull.at,
