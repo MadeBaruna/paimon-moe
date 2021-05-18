@@ -101,7 +101,9 @@ const convertSave = async () => {
     }
   }
 
-  localStorage.setItem(CONVERTED_KEY, dayjs().toISOString());
+  const convertedTime = dayjs().toISOString();
+  localStorage.setItem(CONVERTED_KEY, convertedTime);
+  await localforage.setItem(CONVERTED_KEY, convertedTime);
 
   if (convertedCount > 0) {
     window.location.reload();

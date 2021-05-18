@@ -33,6 +33,7 @@
   };
 
   $: if ($fromRemote) {
+    console.log('update from google drive');
     readLocalData();
   }
 

@@ -89,13 +89,51 @@
     }
   }
 
+  function convertTime(data) {
+    for (const pull of data.pulls) {
+      pull.time = dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm:ss');
+    }
+
+    return data;
+  }
+
   async function useRemoteData() {
-    for (const k in remoteSave) {
-      await updateSave(k, remoteSave[k], true);
+    // check if old local storage version
+    if (remoteSave['converted'] === undefined) {
+      for (const key in remoteSave) {
+        if (key.endsWith('ar') || key.endsWith('wl')) {
+          await updateSave(key, Number(remoteSave[key]), true);
+        } else if (key.endsWith('collectables-updated')) {
+          await updateSave(key, remoteSave[key] === 'true', true);
+        } else if (
+          key.endsWith('accounts') ||
+          key.endsWith('locale') ||
+          key.endsWith('server') ||
+          key.endsWith('update-time')
+        ) {
+          await updateSave(key, remoteSave[key], true);
+        } else if (
+          key.endsWith('wish-counter-character-event') ||
+          key.endsWith('wish-counter-weapon-event') ||
+          key.endsWith('wish-counter-standard') ||
+          key.endsWith('wish-counter-beginners')
+        ) {
+          const converted = convertTime(JSON.parse(remoteSave[key]));
+          await updateSave(key, converted, true);
+        } else {
+          await updateSave(key, JSON.parse(remoteSave[key]), true);
+        }
+      }
+      console.log('finished convert from google drive');
+    } else {
+      for (const k in remoteSave) {
+        await updateSave(k, remoteSave[k], true);
+      }
     }
 
     synced.set(true);
     closeModal();
+    window.location.reload();
   }
 
   async function useLocalData() {
@@ -269,6 +307,7 @@
     document.body.appendChild(fileLink);
     fileLink.click();
   }
+
 </script>
 
 <slot />
