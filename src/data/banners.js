@@ -142,6 +142,7 @@ export const banners = {
       start: '2021-05-18 18:00:00',
       end: '2021-06-08 15:00:00',
       color: '#A6D6E0',
+      featuredRare: ['xingqiu', 'beidou', 'xinyan'],
       featured: ['eula'],
     },
   ],

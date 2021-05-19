@@ -99,7 +99,7 @@
 
   async function useRemoteData() {
     // check if old local storage version
-    if (remoteSave['converted'] === undefined) {
+    if (!remoteSave['converted'] === undefined) {
       for (const key in remoteSave) {
         if (key.endsWith('ar') || key.endsWith('wl')) {
           await updateSave(key, Number(remoteSave[key]), true);
@@ -109,7 +109,8 @@
           key.endsWith('accounts') ||
           key.endsWith('locale') ||
           key.endsWith('server') ||
-          key.endsWith('update-time')
+          key.endsWith('update-time') ||
+          key.endsWith('converted')
         ) {
           await updateSave(key, remoteSave[key], true);
         } else if (
@@ -126,8 +127,35 @@
       }
       console.log('finished convert from google drive');
     } else {
-      for (const k in remoteSave) {
-        await updateSave(k, remoteSave[k], true);
+      for (const key in remoteSave) {
+        if (typeof remoteSave[key] === 'string') {
+          console.log('converting', key);
+          if (key.endsWith('ar') || key.endsWith('wl')) {
+            await updateSave(key, Number(remoteSave[key]), true);
+          } else if (key.endsWith('collectables-updated')) {
+            await updateSave(key, remoteSave[key] === 'true', true);
+          } else if (
+            key.endsWith('accounts') ||
+            key.endsWith('locale') ||
+            key.endsWith('server') ||
+            key.endsWith('update-time') ||
+            key.endsWith('converted')
+          ) {
+            await updateSave(key, remoteSave[key], true);
+          } else if (
+            key.endsWith('wish-counter-character-event') ||
+            key.endsWith('wish-counter-weapon-event') ||
+            key.endsWith('wish-counter-standard') ||
+            key.endsWith('wish-counter-beginners')
+          ) {
+            const converted = convertTime(JSON.parse(remoteSave[key]));
+            await updateSave(key, converted, true);
+          } else {
+            await updateSave(key, JSON.parse(remoteSave[key]), true);
+          }
+        } else {
+          await updateSave(key, remoteSave[key], true);
+        }
       }
     }
 

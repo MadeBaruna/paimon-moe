@@ -9,9 +9,9 @@
   let unsubscribeWl = null;
   let firstLoad = true;
 
-  $: if ($fromRemote) {
-    readLocalData();
-  }
+  // $: if ($fromRemote) {
+  //   readLocalData();
+  // }
 
   onMount(async () => {
     await readLocalData();

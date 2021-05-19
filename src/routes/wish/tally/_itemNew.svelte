@@ -108,6 +108,7 @@
   const rareInclude = {
     300011: ['rosaria'],
     300012: ['yanfei', 'noelle', 'diona'],
+    300013: ['xingqiu', 'beidou', 'xinyan'],
   };
   let promotedRarePercentage = 0;
 
@@ -175,7 +176,7 @@
       if (id > 300011 && id < 400000) {
         const totalRare = data.list.reduce(
           (prev, current) => {
-            if (rareInclude[id].includes(current.name)) {
+            if (banner.featuredRare.includes(current.name)) {
               prev.total += current.count;
             }
             if (featured[1] === current.name) {
@@ -289,11 +290,11 @@
 
 <div class="flex flex-col bg-item rounded-xl px-4 pt-4 pb-2 mb-4 space-y-4">
   <div class="flex flex-col xl:flex-row">
-    <a href="/wish/tally/{id}">
+    <a href="/wish/tally/{id}" class="xl:mr-4">
       <img
         src="/images/banners/{banner.name} {banner.image}.png"
         alt={banner.name}
-        class="rounded-xl xl:h-64 xl:mr-4"
+        class="rounded-xl xl:h-64 w-auto"
       />
     </a>
     <div class="h-4 xl:h-0" />

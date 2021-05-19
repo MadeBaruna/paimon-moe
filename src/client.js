@@ -11,6 +11,8 @@ localforage.config({
   description: 'paimonmoe local storage',
 });
 
+window.localforage = localforage;
+
 startClient();
 
 sapper.start({

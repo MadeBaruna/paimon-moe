@@ -129,6 +129,7 @@ export const getLocalSaveJson = async () => {
 };
 
 export const updateSave = async (key, data, isFromRemote) => {
+  console.log('updateSave', key, isFromRemote);
   if (!isFromRemote) {
     localModified.set(true);
   }

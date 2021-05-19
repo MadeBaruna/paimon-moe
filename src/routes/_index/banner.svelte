@@ -59,6 +59,7 @@
     await tick();
     dispatch('done');
   });
+
 </script>
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
@@ -68,20 +69,20 @@
       {#each Object.entries(featured) as [_, item], i}
         <div
           class="flex flex-col pt-2"
-          style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 27%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
-          {i ===
-          0
-            ? 'margin-right: 20%;'
-            : ''}"
+          style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
+          {i === 0 ? 'margin-right: 20%;' : ''}"
         >
-          <h3 class="text-3xl ml-4 font-black leading-6">
+          <h3 class="text-3xl ml-6 font-black leading-6">
             {#if loading}
               <Icon path={mdiLoading} spin size={0.8} />
             {:else}
               {item.count}
             {/if}
           </h3>
-          <p class="ml-4 font-sm leading-2">{$t(`home.banner.featured.${i}`)}</p>
+          <p class="ml-6 font-sm leading-2">
+            <span class="font-semibold">{$t(`home.banner.featured.${i}`)}</span>
+            {$t('home.banner.summoned')}
+          </p>
         </div>
       {/each}
     </div>
@@ -96,7 +97,7 @@
       <p class="text-white leading-4">{$t('home.banner.avg')} <span class="font-semibold">{item.average}</span></p>
     </div>
   {/each}
-  <p class="text-gray-400 pl-2 mt-1">※ {$t('home.banner.subtitle', { values: { user }})}</p>
+  <p class="text-gray-400 pl-2 mt-1">※ {$t('home.banner.subtitle', { values: { user } })}</p>
   <a
     href="/wish/tally"
     class="flex justify-end items-center self-end lg:self-start text-white mt-4 bg-background-secondary rounded-xl py-2 px-4

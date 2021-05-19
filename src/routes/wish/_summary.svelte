@@ -29,7 +29,9 @@
   }
 
   $: if ($updateTime) {
-    readLocalData();
+    setTimeout(() => {
+      readLocalData();
+    }, 1000);
   }
 
   onMount(async () => {

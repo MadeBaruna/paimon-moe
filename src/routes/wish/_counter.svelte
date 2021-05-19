@@ -179,9 +179,14 @@
     console.log('wish read local');
     const prefix = getAccountPrefix();
     const data = await readSave(`${prefix}${path}`);
-    console.log(data);
+
     if (data !== null) {
-      const counterData = data;
+      let counterData = data;
+      if (typeof data === 'string') {
+        counterData = JSON.parse(data);
+        await updateSave(`${prefix}${path}`, JSON.parse(data), true);
+      }
+
       total = counterData.total;
       legendary = counterData.legendary;
       rare = counterData.rare;
