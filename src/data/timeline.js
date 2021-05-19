@@ -137,12 +137,13 @@ export const eventsData = [
     },
     {
       name: 'Battlefront: Misty Dungeon',
-      pos: '0% 85%',
+      pos: '0% 45%',
       image: 'battlefront_misty_dungeon.jpg',
       start: '2021-05-21 10:00:00',
       end: '2021-05-31 04:00:00',
       color: '#95C9B9',
-      zoom: '150%',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/genshin/article/377249',
       showOnHome: true,
     },
     {
