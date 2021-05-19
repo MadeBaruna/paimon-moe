@@ -122,7 +122,11 @@
           const converted = convertTime(JSON.parse(remoteSave[key]));
           await updateSave(key, converted, true);
         } else {
-          await updateSave(key, JSON.parse(remoteSave[key]), true);
+          try {
+            await updateSave(key, JSON.parse(remoteSave[key]), true);
+          } catch (err) {
+            await updateSave(key, remoteSave[key], true);
+          }
         }
       }
       console.log('finished convert from google drive');
@@ -151,7 +155,11 @@
             const converted = convertTime(JSON.parse(remoteSave[key]));
             await updateSave(key, converted, true);
           } else {
-            await updateSave(key, JSON.parse(remoteSave[key]), true);
+            try {
+              await updateSave(key, JSON.parse(remoteSave[key]), true);
+            } catch (err) {
+              await updateSave(key, remoteSave[key], true);
+            }
           }
         } else {
           await updateSave(key, remoteSave[key], true);

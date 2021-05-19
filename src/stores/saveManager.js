@@ -93,7 +93,11 @@ const convertSave = async () => {
       const converted = convertTime(JSON.parse(value));
       await localforage.setItem(key, converted);
     } else {
-      await localforage.setItem(key, JSON.parse(value));
+      try {
+        await localforage.setItem(key, JSON.parse(value));
+      } catch (err) {
+        await localforage.setItem(key, value);
+      }
     }
 
     if (!key.endsWith('locale')) {
