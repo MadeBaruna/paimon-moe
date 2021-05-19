@@ -175,6 +175,14 @@
     isEdit = false;
   }
 
+  function convertTime(data) {
+    for (const pull of data.pulls) {
+      pull.time = dayjs.unix(pull.time).format('YYYY-MM-DD HH:mm:ss');
+    }
+
+    return data;
+  }
+
   export async function readLocalData() {
     console.log('wish read local');
     const prefix = getAccountPrefix();
@@ -183,8 +191,8 @@
     if (data !== null) {
       let counterData = data;
       if (typeof data === 'string') {
-        counterData = JSON.parse(data);
-        await updateSave(`${prefix}${path}`, JSON.parse(data), true);
+        const converted = convertTime(JSON.parse(data));
+        await updateSave(`${prefix}${path}`, converted, true);
       }
 
       total = counterData.total;
