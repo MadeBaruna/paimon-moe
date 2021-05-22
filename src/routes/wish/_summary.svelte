@@ -94,7 +94,7 @@
       }
       updateCollectedCharacters = true;
     } else {
-      collectedCharacters = defaultChars;
+      collectedCharacters = {...defaultChars};
     }
     const collectablesNeedUpdateData = await readSave(`${prefix}collectables-updated`);
     if (collectablesNeedUpdateData === null || collectablesNeedUpdateData === true) {
