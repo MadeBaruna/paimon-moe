@@ -93,11 +93,12 @@ export const eventsData = [
     {
       name: 'Mimi Tomo',
       pos: '0% 35%',
-      image: 'mimi_tomo.jpg',
+      image: 'mimi_tomo_update.jpg',
       start: '2021-05-27 10:00:00',
       end: '2021-06-08 04:00:00',
       color: '#B89BCB',
       zoom: '200%',
+      url: 'https://www.hoyolab.com/genshin/article/387817',
       showOnHome: true,
     },
   ],
