@@ -1,0 +1,600 @@
+{
+  "sidebar": {
+    "home": "Accueil",
+    "character": "Personnages",
+    "wishCounter": "Compteur de voeux",
+    "calculator": "Calculateur",
+    "database": "Base de données",
+    "items": "Objets",
+    "achievement": "Succès",
+    "reminder": "Rappel",
+    "todoList": "Liste de tâches",
+    "timeline": "Calendrier",
+    "furnishing": "Décorations",
+    "settings": "Paramètres",
+    "donate": "Donner"
+  },
+  "home": {
+    "welcome": "Bienvenue sur Paimon.moe! 👋",
+    "message": "Votre meilleur compagnon pour Genshin Impact ! Vous aide à plannifier ce que vous souhaitez farmer avec le calculateur d'élévation et vous permets de suivre votre progression avec la liste de tâches et le compteur de voeux.",
+    "banner": {
+      "summoned": "Invocation",
+      "percentage": "parmis tout les {rarity}",
+      "avg": "Pity moyenne",
+      "subtitle": "Calculé à partir des données fournis par {user} utilisateurs de paimon.moe",
+      "detail": "Décompte global des voeux"
+    },
+    "wish": {
+      "message": "Importez votre historique de voeux pour le garder plus de 6 mois ! Compte aussi automatiquement votre pity et vos statistiques dans de jolis graphiques 📊",
+      "latest": "Votre dernier voeu",
+      "banner": "Bannière",
+      "time": "Temps",
+      "name": "Nom",
+      "pity": "Pity",
+      "detail": "Compteur de voeux"
+    },
+    "reminder": {
+      "message": "Vous pouvez définir une notification de rappel 🔔 pour Transformateur Paramétrique et les récompenses quotidiennes d'Hoyolab! Cliquez sur le bouton de rappel ci-dessous pour commencer !",
+      "detail": "Rappel"
+    },
+    "event": {
+      "upcoming": "Évenement en approche",
+      "current": "Évenement actuel",
+      "detail": "Calendrier"
+    },
+    "discord": {
+      "online": "Membre en ligne",
+      "message": "Rejoignez notre serveur Discord pour les dernières annonces de mise à jour ! Discutez aussi de Genshn Impact et donnez vos retours à propos de paimon.moe.",
+      "join": "Rejoignez notre Discord"
+    },
+    "items": {
+      "title": "Farmable aujourd'hui",
+      "detail": "Objets",
+      "sunday": "Tout est farmable le dimanche 😁"
+    },
+    "calculator": {
+      "title": "🧮 Calculez les matériaux nécessaires à l'élévation d'armes ou de personnages ainsi que les livres d'aptitudes ! Tout les calculs peuvent être ajoutés à la Liste des tâches, cela vous montrera de combien de résines vous aurez besoin !",
+      "detail": "Calculator"
+    },
+    "twitter": {
+      "title": "Suivez mon Twitter, je posterais de temps en temps des aperçus de ce que je développe et des dernières mises à jour de paimon.moe!",
+      "detail": "Suivez mon Twitter"
+    },
+    "achievement": {
+      "title": "🏆 Regardez et suivez votre liste de succès ici",
+      "detail": "Succès"
+    }
+  },
+  "characters": {
+    "title": "Personnages",
+    "subtitle": "Les statistiques valent pour un niveau 80 et élévation 6. Vous pouvez aussi cliquez sur l'en-tête du tableau pour trier les données !",
+    "name": "Nom",
+    "element": "Élément",
+    "rarity": "Rareté",
+    "weapon": "Arme",
+    "talents": "Aptitudes",
+    "passiveTalents": "Talents passifs",
+    "constellations": "Constellations",
+    "asc": "ÉLV",
+    "lvl": "NIV",
+    "hp": "PV",
+    "atk": "ATQ",
+    "def": "DEF",
+    "hpPercent": "PV%",
+    "atkPercent": "ATQ%",
+    "defPercent": "DEF%",
+    "critRate": "Taux CRIT",
+    "critDamage": "DGT CRIT",
+    "em": "Maîtrise Élémentaire",
+    "er": "Recharge d'Énergie",
+    "healingBonus": "Bonus de soin",
+    "pyroDamageBonus": "Bonus de DGT Pyro",
+    "hydroDamageBonus": "Bonus de DGT Hydro",
+    "dendroDamageBonus": "Bonus de DGT Dendro",
+    "electroDamageBonus": "Bonus de DGT Électro",
+    "cryoDamageBonus": "Bonus de DGT Cryo",
+    "anemoDamageBonus": "Bonus de DGT Anemo",
+    "physicalDamageBonus": "Bonus de DGT Physique",
+    "geoDamageBonus": "Bonus de DGT Géo"
+  },
+  "wish": {
+    "title": "Compteur de voeux",
+    "autoImport": "Importation auto",
+    "helpAndSetting": "Paramètres et aides",
+    "wishesWorth": "Valeurs des voeux",
+    "lifetimePulls": "Total des voeux",
+    "guarantee": "Garanti à {pity}",
+    "name": "Nom",
+    "time": "Temps",
+    "pity": "Pity",
+    "welcome": "Bienvenue sur le compteur de voeux de Paimon.moe ! Il est recommandé d'importer l'historique des voeux avec l'importation auto.",
+    "welcomeStart1": "Pour commencer, appuyez ici",
+    "welcomeStart2": "bouton plus haut",
+    "manual": "Si vous voulez imoporter manuellement vos données, vous pouvez l'activer ici :",
+    "manualButton": "Activer l'importation manuelle",
+    "errorBanner": "Les dates de bannières ne correspondent pas ! Veuillez ajuster votre serveur dans les paramètres. Cela ne marche toujours pas ? Laissez un message sur Discord 😅",
+    "globalWishTally": "Décompte global des voeux",
+    "pityTooltip": [
+      "Montre votre pity pour les {rarity}",
+      "{count} voeux avant le prochain {rarity}"
+    ],
+    "import": {
+      "title": "Importer votre istorique de voeux",
+      "faqsButton": "FAQ - LIRE EN PREMIER",
+      "nonew": "Pas de nouveaux voeux",
+      "importNotice1": "Les voeux importés serons ajoutés ou remplacés en fonction des données existentes",
+      "importNotice2": "Si aucune donnée n'est présente, le premier voeux compteras comme la pity 1",
+      "importNotice3": "Faites attention si vous importez des données de plusieurs comptes, soyez sûrs de séparer vos comptes dans les paramètres, ou vos données seront complêtements mélangés !",
+      "saveData": "Sauvegarder les données des voeux?",
+      "reCalculating": "Recalcul de la pity...",
+      "processing": "Traitement de la",
+      "banner": "Bannière",
+      "page": "Page",
+      "parsing": "Analyse...",
+      "save": "Sauvegarder",
+      "cancel": "Annuler",
+      "cancelling": "Annulation...",
+      "importNewWishOnly": "Importer uniquement les nouveaux voeux",
+      "importNewWishUncheck": "Décochez uniquement si vous aez besoin de réimporter la totalité de votre historique de voeux",
+      "import": "Importer",
+      "close": "Fermer",
+      "invalidLink": "Lien invalide, veuillez le vérifier",
+      "errorApi": "Code d'erreur de l'API de Mihoyo, veuillez réessayer plus tard !",
+      "timeout": "Délai de connection dépassé, veuillez patienter un moment et réessayer plus tard",
+      "invalidData": "Données invalides de l'API, réessayez plus tard",
+      "success": "Importation réussi 😀!",
+      "server": "Sélectionnez votre serveur :",
+      "wishTallyCheck": "Envoyez vos voeux pour le décompte global des voeux",
+      "wishTally": "Nous faisons un décompte des voeux ! Vous pouvez envoyer votre historique de voeux pour participer. Toutes les données des pitys seront agrégés pour connaître la pity moyenne des utilisateurs de paimon.moe.",
+      "wishTallyCollected": [
+        "Ce qui sera collecté : les pitys",
+        "et",
+        "de votre historique de voeux"
+      ],
+      "faqs": {
+        "title": "FAQ de l'importation de l'historique des voeux",
+        "q1": "Comment ça marche ?",
+        "a1": "L'historique de voeux de Genshin Impact est basiquement une page web, donc vous pouvez y accéder en ouvrant l'url de la page. Une clé temporaire sera généré après que vous ayez ouvert la page d'historique de voeux ou de commentaires, et l'importeur va utiliser automatiquement l'API de MiHoYo pour récupérer votre historique de voeux.",
+        "q2": "Est-ce sécurisé ? Vais-je me faire bannir ?",
+        "a2": "Paimon.moe utilise les mêmes requêtes que Genshin Impact utilise pour obtenir l'historique des voeux, et Paimon.moe n'a aucun moyen de modifier les fichiers du jeu ou le stockage, et ne devrait pas poser de problème. Mais utilisez le à vos risques et périls (je l'utilise personnellement sur mon compte principal). Et vous pouvez toujours importer vos données manuellement 😀.",
+        "q3": "Pouvez-vous hacker mon compte du coup ?",
+        "a3": [
+          "Paimon.moe ne sauvegarde jamais d'informations personnelles tels que vos identifiants (même votre UID ou pseudonyme). La réponse est donc non. De plus ce projet est open-source",
+          "; Je ne veux pas salir mon image en hackant les comptes d'autres joueurs."
+        ],
+        "q4": "J'ai regardé les requêtes et tout, mais pourquoi la requêtes est addressée à votre nom de domaine et pas l'API de MiHoYo ?",
+        "a4": [
+          "Paimon.moe ne peut pas addresser la requête directement à l'API de MiHoYo à cause du",
+          ", donc la requête est redirigée sur un simple proxy CORS pour lui permettre de fonctionner. Vous pouvez lire le code",
+          "ici"
+        ],
+        "q5": "Est-ce que vous enregistrez ma clé temporaire ou mon historique de voeux ?",
+        "a5": [
+          "Paimon.moe n'enregistreras jamais vos clés, et utilise HTTPS pour passer votre URL à un proxy CORS pour faire fonctionner le CORS. Paimon.moe enregistrera votre pity 4*, votre pity 5*, ainsi que les informations des voeux 5* si vous envoyez votre historique pour le décompte globale des voeux (aucune information personnelle n'est enregistré ! Consultez la",
+          "Politique de Confidentialité",
+          "pour plus d'informations). Vous pouvez désactiver l'envoie de votre historique de voeux si vous le souhaitez. Et tout votre historique de voeux est enregistré sur votre appareil (ou votre Google Drive si vous avez activé la synchronisation).",
+          "Si vous ne voulez rien faire passer autour de votre URL, vous pouvez utiliser le petit script d'importation de voeux pour récupérer votre historique de voeux sur votre PC (PC Local option) "
+        ],
+        "q6": "J'ai fait toutes les étapes, mais j'obtiens des erreurs d'API ?",
+        "a6": "Soyez sûr de copier la totalité du texte (maintenez et cliquez sur Select Tout pour les appareils mobiles); peut-être que vous avez raté quelques morceaux de texte nécessaires à l'importation.",
+        "q7": "Je n'ai pas la totalité de mon historique !?",
+        "a7": "L'historique des voeux plus vieux que 6 mois ont été simplement supprimés des serveurs de MiHoYo, donc si vous n'avez pas de sauvegarde quelque part, ils sont malheureusement perdus"
+      },
+      "guide": {
+        "video": "Tutoriel vidéo",
+        "pc": [
+          "Ouvrez le menu Paimon [Ech]",
+          "Cliquez sur Commentaire",
+          "Attendez que ça charge et une page web devrait s'ouvrir",
+          "Copier coller le lien ci-dessous.",
+          "Collez le lien ici... https://webstatic..."
+        ],
+        "android": [
+          "Ouvrez le menu Paimon",
+          "Cliquez sur Commentaire",
+          "Attendez que ça charge et une page web devrait s'ouvrir",
+          "Coupez votre connection internet (Wi-Fi / Données Mobiles)",
+          "Cliquez sur rafraîchir dans le coin en haut à droite",
+          "La page devrait afficher une erreur et du texte en noir",
+          "Maintenir le texte et cliquez sur Sélect tout, et copiez ce texte (ne copiez pas seulement une partie du texte)",
+          "Rallumez votre connection internet (Wi-Fi / Données Mobiles)",
+          "Collez le texte ci-dessous",
+          "Collez le lien ici... Webpage not available..."
+        ],
+        "ios": [
+          "Ouvrez le menu Paimon",
+          "Cliquez sur Commentaire",
+          "Attendez que ça charge et une page web devrait s'ouvrir",
+          "Cliquez sur Problèmes",
+          "Cliquez sur mode Co-Op",
+          "Il y a un lien en bas de la réponse, cliquez là-desssus",
+          "Un navigateur devrait s'ouvrir, copier le lien et collez le ci-dessous",
+          "Collez le lien ici... https://genshin.mihoyo..."
+        ],
+        "ps": [
+          "Vous pouvez uniquement utiliser l'importation si vous avez un mail en jeu avec un QR code pour ouvrir l'évenement web",
+          "Ouvrez Genshin Impact sur votre PlayStation",
+          "Ouvrez le mail de l'évenement qui contient le QR code",
+          "Scannez le QR code avec votre téléphone",
+          "Copiez le lien, et collez le ci-dessous",
+          "Collez le lien ici..."
+        ],
+        "pclocal": [
+          "Si vous ne souhaitez pas laissez traîner votre URL de commentaire, vous pouvez utiliser cette option pour traiter votre historique de voeux localement sur votre ordinateur. Ce script lira les fichiers de log sur votre ordinateur pour obtenir l'URL de votre historique.",
+          "Ouvrez le menu Démarrer et cherchez Powershell",
+          "Ouvrez Windows Powershell, et copier coller le lien sur Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "Vous pouvez lire le script",
+          "ici",
+          "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
+          "Appuyez sur Entrée pour lancer le script, et suivez les instructions données",
+          "Après ça, collez le résultat du script ci-dessous",
+          "Collez le résultat ici...",
+          "Cette fonctionalité est toujours en beta, faites d'abord une sauvegarde dans les paramètres via Exporter sur Excel."
+        ]
+      }
+    },
+    "help": {
+      "title": "Paramètres du compteur de voeux",
+      "exportTitle": "Exporter l'historique des voeux",
+      "exportMessage": "Vous pouvez exporter votre historique de voeux dans un fichier excel ici",
+      "export": "Exporter sur Excel",
+      "exporting": "Exportation...",
+      "import": "Importer",
+      "exportFinish": "Exxportation réussi, veuillez attendre que le navigateur télécharge le fichier !",
+      "wishTallyTitle": "Envoyer l'historique des voeux",
+      "wishTally": "Nous faisons un décompte des voeux ! Vous pouvez envoyer votre historique de voeux pour participer. Toutes les données des pitys seront agrégés pour connaître la pity moyenne des utilisateurs de paimon.moe.",
+      "wishTallyCollected": [
+        "Ce qui sera collecté : les pitys",
+        "et",
+        "de votre historique de voeux"
+      ],
+      "wishTallySubmit": "Envoyer l'historique des voeux",
+      "wishTallyThankyou": "Merci pour votre participation !",
+      "manualTitle": "Paramètre d'importation manuel",
+      "enableManual": "Activer l'importation manuel",
+      "notice": "Utiliser l'importation automatique et manuel en même temps n'est pas recommandé car nécessitant plus de test !",
+      "consider": "Il est préférable d'utiliser l'importation automatique en priorité, Accédez y en cliquant sur le bouton à côté de celui qui vous a permsi d'accéder à ce menu.",
+      "howto": {
+        "title": "Comment utiliser l'importation manuel",
+        "subtitle": "Après un voeu seul :",
+        "pressWhenYouGet": "Cliquez {button} quand vous obtenez un {rarity}?",
+        "p1": "Cela va automatiquement ajouter tout les voeuxet les pitys 5? et 4?",
+        "p2": [
+          "Quand la pity",
+          "atteint 10, elle va automatiquement être réinitialisé à 0"
+        ],
+        "p3": [
+          "Quand la pity",
+          "atteint 90, elle va automatiquement être réinitialisé à 0"
+        ],
+        "p4": [
+          "Après un tirage de 10 voeux",
+          "mais rappelez vous que le compteur de la pity peut ne pas être précis, car il n'y a aucun moyen de dire quand le voeu est arrivé (peut-être l'avez vous eu sur le premier ou le dernier voeu du tirage). Pour éviter les imprécisions, il vous faut consulter l'historique des voeux en jeu et rentrer les voeux un par un."
+        ],
+        "p5": [
+          "Vous pouvez aussi cliquer sur le bouton",
+          "pour éditer les valeurs manuellement !"
+        ],
+        "p6": [
+          "Cliquez sur la flèche en bas pour voir les détails de vos voeux. Une popup va apparaître quand vous aurez un",
+          "ou un",
+          "Vous pouvez aussi éditer le tableau manuellement."
+        ]
+      }
+    },
+    "types": {
+      "beginners": "Bannière du débutant",
+      "standard": "Bannière standard",
+      "character-event": "Bannière personnage",
+      "weapon-event": "Bannière d'arme"
+    },
+    "detail": {
+      "weapon": "Arme",
+      "character": "Personnage",
+      "time": "Temps",
+      "pity": "Pity",
+      "name": "Nom",
+      "type": "Type",
+      "banner": "Bannière",
+      "roll": "#Roll",
+      "totalThisBanner": "Nombre de voeux sur la bannière",
+      "worth": "Valeur",
+      "loading": "Chargement... (Si cela ne charge pas, changez le serveur sur la page des paramètres)",
+      "guaranteed": "Le prochain 5? sera forcément le personnage ou arme en tête de bannière",
+      "unknown_3_star": "Inconnu"
+    },
+    "tally": {
+      "title": "Voeux globaux",
+      "subtitle": "Pity moyenne global à partir des données envoyés par les utilisateurs de paimon.moe",
+      "update": "Mis à jour",
+      "summoned": "Invoqué",
+      "wonFiftyFifty": "ont gagné le 50:50",
+      "fromFiveStar": "de tout les 5?",
+      "fromFourStar": "de tout les 4?",
+      "fromFourStarFeatured": "des têtes de bannière 4?",
+      "show": "Show",
+      "name": "Nom",
+      "total": "Total",
+      "wishTotal": "Total des voeux",
+      "worth": "Valeur",
+      "weapon": "Arme",
+      "character": "Personnage",
+      "error": "Les données ne sont pas encore disponibles 😞",
+      "pity": "Pity",
+      "median": "Médiane 5?",
+      "user": "Nombre total d'utilisateurs",
+      "detail": "Détails"
+    }
+  },
+  "calculator": {
+    "titleWeapon": "Calculateur d'arme",
+    "titleCharacter": "Calculateur de personnage",
+    "titleResin": "Calculateur de résine",
+    "goto": "Allez sur {where}",
+    "howToUse": "Comment utilisé",
+    "guide": {
+      "clickToMaximize": "Cliquez l'image pour l'agrandir",
+      "howToWeapon": "Comment utiliser le calculateur d'arme",
+      "howToCharacter": "Comment utiliser le calculateur de personnage"
+    },
+    "weapon": {
+      "calculateAscension": "Calculer les matériaux d'élévation ?",
+      "selectRarity": "Sélectionnez la rareté de l'arme",
+      "selectWeapon": "Sélectionnez l'arme",
+      "current": "Élévation, niveau et expérience de l'arme",
+      "inputCurrentLevel": "Niveau actuel de l'arme...",
+      "inputCurrentExp": "Expérience de l'arme...",
+      "intended": "Niveau et élévation voulu",
+      "inputIntendedLevel": "Niveau voulu...",
+      "resource": "Ressources à utiliser",
+      "calculate": "Calculer",
+      "unknownInformation": "Il y a des informations inconnus",
+      "ascensionLevel": "Niveau d'élévation",
+      "mora": "Mora (approximativement ±40)",
+      "expWasted": "EXP gaché",
+      "addToTodo": "Ajouter à la liste de tâche",
+      "addedToTodo": "Ajouté à la liste de tâche !"
+    },
+    "character": {
+      "calculateAscension": "Calculer les matériaux d'élévation ?",
+      "selectCharacter": "Sélectionnez le personnage",
+      "current": "Élévation, niveau et expérience du personnage",
+      "inputCurrentLevel": "Niveau actuel du personnage...",
+      "inputCurrentExp": "Expérience du personnage...",
+      "intended": "Niveau et élévation voulu",
+      "inputIntendedLevel": "Niveau voulu...",
+      "resource": "Resources à utiliser",
+      "calculateTalent": "Calculer les matériaux d'aptitudes ?",
+      "inputTalentLevel": "Mettez les niveau actuels de la première, deuxième et troisième aptitude",
+      "inputTalentNotice": "Si les couleurs sont différentes, soustrayez trois",
+      "inputTalent": [
+        "Niveau première aptitude",
+        "Niveau deuxième aptitud",
+        "Niveau troisième aptitud"
+      ],
+      "talentToLevel": "au niveau",
+      "calculate": "Calculer",
+      "unknownInformation": "Il y a des informations inconnus",
+      "ascensionLevel": "Niveau d'élévation",
+      "mora": "Mora (approximativement ±40)",
+      "expWasted": "EXP gaché",
+      "addToTodo": "Ajouter à la liste de tâche",
+      "addedToTodo": "Ajouté à la liste de tâche !"
+    },
+    "expTable": {
+      "level": "Niveau",
+      "items": "Objets",
+      "wasted": "EXP gaché",
+      "mora": "Cout en Mora"
+    },
+    "resinTable": {
+      "quantity": "Quantité",
+      "time": "Temps d'attente"
+    },
+    "resin": {
+      "currentResin": "Résine actuelle",
+      "desiredResin": "Résine voulue",
+      "or": "ou",
+      "inputCurrentResin": "Résine actuelle...",
+      "inputDesireResin": "Combien de résine à attendre...",
+      "timeFormat": "en",
+      "calculate": "Calculer",
+      "currentTime": "Heure actuelle",
+      "fullTime": "La résine sera plaine dans...",
+      "hours": "heures",
+      "minutes": "minutes",
+      "seconds": "secondes"
+    }
+  },
+  "items": {
+    "title": "Liste des objets",
+    "subtitle": "Cliquez sur l'image pour l'ajouter à la liste de tâches",
+    "searchCharacter": "Chercher personnage",
+    "searchWeapon": "Chercher arme",
+    "day": "Jours",
+    "material": "Matériaux",
+    "characterWeapons": "Personnages et armes",
+    "add": {
+      "rarity": "Sélectionnez rareté",
+      "amount": "Quantité",
+      "inputAmount": "Montant...",
+      "cancel": "Annuler",
+      "add": "Ajouter à la liste"
+    }
+  },
+  "days": {
+    "Sunday": "Dimanche",
+    "Monday": "Lundi",
+    "Tuesday": "Mardi",
+    "Wednesday": "Mercredi",
+    "Thursday": "Jeudi",
+    "Friday": "Vendredi",
+    "Saturday": "Samedi"
+  },
+  "todo": {
+    "title": "Liste de tâche",
+    "summary": "Résumé",
+    "empty": [
+      "Rien à faire pour l'instant 😀",
+      "Rajoutez des tâches via la page Objets ou le Calculateur !"
+    ],
+    "farmableToday": "Farmable aujourd'hui",
+    "resin": "Résine nécessaire",
+    "based": "Basé sur le Niveau d'aventure :{ar} et niveau de monde :{wl}",
+    "change": "(modifier dans les paramètres)",
+    "approximation": "Calcul approximatif à partir des taux de drop du",
+    "delete": {
+      "title": "Suprimer cette tâche ?",
+      "cancel": "Annuler",
+      "delete": "Supprimer"
+    }
+  },
+  "timeline": {
+    "title": "Calendrier",
+    "localTime": "Montrer avec l'heure locale",
+    "starting": "Commence dans",
+    "ending": "Finit dans",
+    "live": "Est disponible !",
+    "finished": "Terminé"
+  },
+  "settings": {
+    "version": "Version des données:",
+    "multiple": "Vous avez plusieurs comptes ? Choisissez le compte pour séparer vos voeux et vos listes de tâches.",
+    "selectAccount": "Sélectionnez votre compte",
+    "reset": "Réinitialiser",
+    "delete": "Supprimer",
+    "add": "Ajouter",
+    "server": "Sélectionner votre serveur:",
+    "drive": [
+      "Paimon.moe utilise l' Application Data Directory sur votre Google Drive pour sauvegarder et synchroniser votre compte de voeux et vos listest de tâches.",
+      "Paimon.moe peux uniquement lire et modifier les fichiers que le site a créé."
+    ],
+    "driveError": "L'API de Google Drive ne peux pas être chargé",
+    "driveSignIn": "Connexion avec Google Drive",
+    "driveSignOut": "Déconnexion Google Drive",
+    "synced": "Synchroniser",
+    "waiting": "Attente...",
+    "syncing": "Synchronisation...",
+    "lastSync": "Dernière synchronisation :",
+    "feedback": "Si vous trouvez des bugs, données incorrectes ou voulez donner vos retours, laissez un message sur",
+    "or": "ou",
+    "thanks": "Merci😁!",
+    "modal": {
+      "notice": "Toutes les listes de tâches et l'historique des voeux seront supprimés",
+      "backup": "Vous pouvez sauvegarder votre historique de voeux avant en l'exportant dans un fichier excel !",
+      "cancel": "Annuler",
+      "delete": "Supprimer",
+      "reset": "Réinitialiser"
+    }
+  },
+  "privacypolicy": {
+    "title": "Politique de confidentialité",
+    "subtitle": "Ce que paimon.moe collecte et ce pour quoi ces données servent",
+    "collect": [
+      {
+        "title": "Les urls, les référents, le navigateur, le système d'exploitation, le type d'appareil et le pays du visiteur sur Paimon.moe",
+        "content": [
+          "Paimon.moe utilise",
+          "plausible.io",
+          "(un analyseur respectant vos données privés) pour savoir combien de gens utilises chaque fonctionnalité, pour pouvoir prioriser quelles fonctionnalités ajouter ou améliorer."
+        ]
+      },
+      {
+        "title": "Messages d'erreurs et exceptions provenant du site web",
+        "content": [
+          "Paimon.moe enverra les messages d'erreurs et exceptions du site à",
+          "sentry.io",
+          "pour pouvoir tracker les problèmes et les fixer."
+        ]
+      },
+      {
+        "title": "Pity",
+        "content": [
+          "Paimon.moe sauvegardera le compte de pity 4* et 5*, et les informations des voeux 5* (heure, nom de l'objet, pity) si vous cochez 'Envoyez la pity pour le décompte global de pity' via l'importateur automatique ou si l'importation est manuelle via les paramètres. Paimon.moe va aggréger les données et l'utiliser pour calculer la pity moyenne par bannière pour chaque utilisateur de paimon.moe users. Vous pouvez la consulter ici",
+          "Décompte global des voeux"
+        ]
+      }
+    ],
+    "subtitleNotCollect": "Ce que paimon.moe ne collecte pas",
+    "notCollect": [
+      "Paimon.moe ne sauvegardera jamais de mot de passe, d'IUD, de nom d'utilisateur, d'email, de clé temporaire, ou d'URL de commentaire. Si vous êtes intéresser, le projet est open-source etvous pouvez lire le code source sur",
+      "paimon-moe-api Github",
+      "et",
+      "paimon-moe Github"
+    ]
+  },
+  "sync": {
+    "message": "Vos données locales sont en conflit avec celle de votre Google Drive !",
+    "googleDriveData": "Données du Google Drive",
+    "localData": "Données stockés dans le navigateur",
+    "older": "ANCIEN",
+    "newer": "NOUVEAU",
+    "useGoogleDriveData": "Utiliser les données du Google Drive",
+    "useLocalData": "Utiliser les données du navigateur",
+    "download": "Télécharger toutes les données",
+    "lastModified": "Dernière modification",
+    "or": "ou"
+  },
+  "footer": {
+    "affliate": "Paimon.moe n'est pas affilié à miHoYo.",
+    "copyright": "Genshin Impact, les contenus du jeu ainsi que les différents matériaux sont des marques déposés de MiHoYo.",
+    "discord": "Rejoignez notre Discord",
+    "community": "Liens de la communauté",
+    "official": "Liens officiels"
+  },
+  "donate": {
+    "message": [
+      "Merci ! J'espère que vous le trouver utile.",
+      "J'ai fait ce site pour le fun quand j'avais un peu de temps libre. Évidemment j'ajouterais d'autres fonctionnalités et mettrais à jours les données à chaque mise à jour de Genshin Impact, car j'aime explorer le jeu et essayer d'optimiser mon expérience.",
+      "Si vous voulez me faire un don, cela va vraiment m'aider à améliorer le site et ajouter plus de fonctionnalités à Paimon.moe! Merci beaucoup et amusez vous, en espérant que vvous l'appréciez !",
+      "Si vous aimez coder, vous pouvez aussi contribuer au projet sur"
+    ],
+    "kofi": "Soutenez moi sur Ko-fi",
+    "trakteer": "Soutenez moi sur Trakteer",
+    "crypto": "Soutenez moi avec Crypto"
+  },
+  "reminder": {
+    "notSupported": "Votre navigateur ne supporte pas les notifications push, veuillez essayer avec un autre navigateur !",
+    "blocked": "Les notifications sont bloqués, le rappel ne fonctionnera pas ! Veuillez l'active dans votre navigateur.",
+    "desktop": "Les navigateur de bureau ne peuvent pas recevoir de notifications s'ils sont fermés !",
+    "early": "La notifications peut arriver plus tôt (environ 1-10 minutes) à cause de la façon dont nous envoyons la notification",
+    "allowNotification": "Veuillez activer les notifications dans la fenêtre venant d'apparaître !",
+    "transformer": "Rappel pour le Transformateur Paramétrique",
+    "last": "Entrez la dernière fois que vous avez utilisé le Transformateur Paramétrique",
+    "lastHoyolab": "Entrez l'heure à laquelle vous voulez être notifé quotidiennement",
+    "every": "Tout les jours à",
+    "countdown": "Entrez le temps de recharge du Transformateur Paramétric (si vous ne vous rappelez plus l'heure exact, faites le approximativement)",
+    "useLast": "Utiliser l'heure de la dernière utilisation",
+    "useCountdown": "Utiliser l'heure du temps de recharge",
+    "set": "Créer un rappel",
+    "checking": "Vérification des rappels enregistrés...",
+    "errorSelect": "Veuillez sélectionner le jour et l'heure !",
+    "errorSaving": "Quelques chose s'est mal passé en mettant en place le rappel 🙁",
+    "current": "Rappel actuel",
+    "hoyolab": "Rappel de récupération de récompences quotidiennes Hoyolab",
+    "comingsoon": "Prochainement !"
+  },
+  "achievement": {
+    "title": "Succès",
+    "of": "de"
+  },
+  "furnishing": {
+    "title": "Décorations",
+    "name": "Nom",
+    "energy": "Énergie",
+    "load": "Charge",
+    "ratio": "Ratio",
+    "using": "Quantité",
+    "interior": "Intérieur",
+    "exterior": "Extérieur",
+    "info": [
+      "Cela montre la charge que la zone peut supporter. Chaque décoration possède une valeur cachée de charge qui peut être consulté ci-dessous.",
+      "(la valeur de charge maximum n'a pas encore été confirmé !)"
+    ],
+    "hall": "Hall",
+    "room": "Aile {number}",
+    "exteriorNum": "Zone {number}",
+    "corridor": "Corridor"
+  }
+}

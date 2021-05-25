@@ -25,6 +25,7 @@
     { id: 'id', label: 'Indonesia' },
     { id: 'ru', label: 'Русский' },
     { id: 'ko', label: '한국어' },
+    { id: 'fr', label: 'Français' },
   ];
   $: currentLocale = languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' };
   $: locales = languages.filter((e) => e.id !== currentLocale.id);
