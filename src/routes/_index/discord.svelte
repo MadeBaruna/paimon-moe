@@ -28,7 +28,7 @@
 </script>
 
 <div class="bg-item rounded-xl p-4 flex flex-col items-start">
-  <img class="h-16" src="/images/home/discord.svg" alt="discord" />
+  <img class="h-16 ml-2" src="/images/home/discord.svg" alt="discord" />
   <p class="text-white ml-2">
     <span class="text-green-400 mr-1">⬤</span>
     {online}
