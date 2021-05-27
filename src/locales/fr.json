@@ -16,13 +16,13 @@
   },
   "home": {
     "welcome": "Bienvenue sur Paimon.moe! 👋",
-    "message": "Votre meilleur compagnon pour Genshin Impact ! Vous aide à plannifier ce que vous souhaitez farmer avec le calculateur d'élévation et vous permets de suivre votre progression avec la liste de tâches et le compteur de voeux.",
+    "message": "Votre meilleur compagnon pour Genshin Impact ! Vous aide à planifier ce que vous souhaitez farmer avec le calculateur d'élévation et vous permet de suivre votre progression avec la liste de tâches et le compteur de voeux.",
     "banner": {
       "summoned": "Invocation",
       "percentage": "parmis tout les {rarity}",
       "avg": "Pity moyenne",
       "subtitle": "Calculé à partir des données fournis par {user} utilisateurs de paimon.moe",
-      "detail": "Décompte global des voeux"
+      "detail": "Compteur global des voeux"
     },
     "wish": {
       "message": "Importez votre historique de voeux pour le garder plus de 6 mois ! Compte aussi automatiquement votre pity et vos statistiques dans de jolis graphiques 📊",
@@ -43,7 +43,7 @@
       "detail": "Calendrier"
     },
     "discord": {
-      "online": "Membre en ligne",
+      "online": "Membres en ligne",
       "message": "Rejoignez notre serveur Discord pour les dernières annonces de mise à jour ! Discutez aussi de Genshn Impact et donnez vos retours à propos de paimon.moe.",
       "join": "Rejoignez notre Discord"
     },
@@ -110,10 +110,10 @@
     "welcome": "Bienvenue sur le compteur de voeux de Paimon.moe ! Il est recommandé d'importer l'historique des voeux avec l'importation auto.",
     "welcomeStart1": "Pour commencer, appuyez ici",
     "welcomeStart2": "bouton plus haut",
-    "manual": "Si vous voulez imoporter manuellement vos données, vous pouvez l'activer ici :",
+    "manual": "Si vous voulez importer manuellement vos données, vous pouvez l'activer ici :",
     "manualButton": "Activer l'importation manuelle",
     "errorBanner": "Les dates de bannières ne correspondent pas ! Veuillez ajuster votre serveur dans les paramètres. Cela ne marche toujours pas ? Laissez un message sur Discord 😅",
-    "globalWishTally": "Décompte global des voeux",
+    "globalWishTally": "Compteur global des voeux",
     "pityTooltip": [
       "Montre votre pity pour les {rarity}",
       "{count} voeux avant le prochain {rarity}"
@@ -164,7 +164,7 @@
         ],
         "q4": "J'ai regardé les requêtes et tout, mais pourquoi la requêtes est addressée à votre nom de domaine et pas l'API de MiHoYo ?",
         "a4": [
-          "Paimon.moe ne peut pas addresser la requête directement à l'API de MiHoYo à cause du",
+          "Paimon.moe ne peut pas adresser la requête directement à l'API de MiHoYo à cause du",
           ", donc la requête est redirigée sur un simple proxy CORS pour lui permettre de fonctionner. Vous pouvez lire le code",
           "ici"
         ],
@@ -370,8 +370,8 @@
       "inputTalentNotice": "Si les couleurs sont différentes, soustrayez trois",
       "inputTalent": [
         "Niveau première aptitude",
-        "Niveau deuxième aptitud",
-        "Niveau troisième aptitud"
+        "Niveau deuxième aptitude",
+        "Niveau troisième aptitude"
       ],
       "talentToLevel": "au niveau",
       "calculate": "Calculer",
@@ -401,7 +401,7 @@
       "timeFormat": "en",
       "calculate": "Calculer",
       "currentTime": "Heure actuelle",
-      "fullTime": "La résine sera plaine dans...",
+      "fullTime": "La résine sera pleine dans...",
       "hours": "heures",
       "minutes": "minutes",
       "seconds": "secondes"
@@ -441,11 +441,11 @@
     ],
     "farmableToday": "Farmable aujourd'hui",
     "resin": "Résine nécessaire",
-    "based": "Basé sur le Niveau d'aventure :{ar} et niveau de monde :{wl}",
+    "based": "Basé sur le Niveau d'aventure: {ar} et niveau de monde: {wl}",
     "change": "(modifier dans les paramètres)",
     "approximation": "Calcul approximatif à partir des taux de drop du",
     "delete": {
-      "title": "Suprimer cette tâche ?",
+      "title": "Supprimer cette tâche ?",
       "cancel": "Annuler",
       "delete": "Supprimer"
     }
@@ -467,10 +467,10 @@
     "add": "Ajouter",
     "server": "Sélectionner votre serveur:",
     "drive": [
-      "Paimon.moe utilise l' Application Data Directory sur votre Google Drive pour sauvegarder et synchroniser votre compte de voeux et vos listest de tâches.",
-      "Paimon.moe peux uniquement lire et modifier les fichiers que le site a créé."
+      "Paimon.moe utilise l'Application Data Directory sur votre Google Drive pour sauvegarder et synchroniser vos voeux et vos listes de tâches.",
+      "Paimon.moe peut uniquement lire et modifier les fichiers que le site a créé."
     ],
-    "driveError": "L'API de Google Drive ne peux pas être chargé",
+    "driveError": "L'API de Google Drive n'a pas pu être chargée.",
     "driveSignIn": "Connexion avec Google Drive",
     "driveSignOut": "Déconnexion Google Drive",
     "synced": "Synchroniser",
@@ -479,7 +479,7 @@
     "lastSync": "Dernière synchronisation :",
     "feedback": "Si vous trouvez des bugs, données incorrectes ou voulez donner vos retours, laissez un message sur",
     "or": "ou",
-    "thanks": "Merci😁!",
+    "thanks": "Merci 😁!",
     "modal": {
       "notice": "Toutes les listes de tâches et l'historique des voeux seront supprimés",
       "backup": "Vous pouvez sauvegarder votre historique de voeux avant en l'exportant dans un fichier excel !",
@@ -512,7 +512,7 @@
         "title": "Pity",
         "content": [
           "Paimon.moe sauvegardera le compte de pity 4* et 5*, et les informations des voeux 5* (heure, nom de l'objet, pity) si vous cochez 'Envoyez la pity pour le décompte global de pity' via l'importateur automatique ou si l'importation est manuelle via les paramètres. Paimon.moe va aggréger les données et l'utiliser pour calculer la pity moyenne par bannière pour chaque utilisateur de paimon.moe users. Vous pouvez la consulter ici",
-          "Décompte global des voeux"
+          "Compteur global des voeux"
         ]
       }
     ],
