@@ -86,7 +86,7 @@
     </tr>
   </table>
   {#if avg.legendary.pulls.length > 0}
-    <div class="flex flex-wrap mt-2 overflow-y-auto" style="max-height: 300px;">
+    <div class="flex flex-wrap mt-2 overflow-y-auto" style="max-height: 500px;">
       {#each avg.legendary.pulls as pull}
         <span class="pity">{pull.name} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span>
       {/each}

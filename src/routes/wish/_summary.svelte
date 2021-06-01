@@ -3,6 +3,7 @@
 
   import { onMount } from 'svelte';
   import dayjs from 'dayjs';
+  import debounce from 'lodash/debounce';
 
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
@@ -24,14 +25,16 @@
   let wishCount = 0;
   const avg = {};
 
-  $: if ($fromRemote) {
+  const readDebounced = debounce(() => {
     readLocalData();
+  }, 1000);
+
+  $: if ($fromRemote) {
+    readDebounced();
   }
 
   $: if ($updateTime) {
-    setTimeout(() => {
-      readLocalData();
-    }, 1000);
+    readDebounced();
   }
 
   onMount(async () => {
@@ -76,6 +79,8 @@
     },
   };
 
+  
+
   export async function readLocalData() {
     let totalWish = 0;
     console.log('wish summary read local');
@@ -94,7 +99,7 @@
       }
       updateCollectedCharacters = true;
     } else {
-      collectedCharacters = {...defaultChars};
+      collectedCharacters = JSON.parse(JSON.stringify(defaultChars));
     }
     const collectablesNeedUpdateData = await readSave(`${prefix}collectables-updated`);
     if (collectablesNeedUpdateData === null || collectablesNeedUpdateData === true) {

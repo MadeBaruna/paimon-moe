@@ -1,61 +1,12 @@
 <script>
   import { t } from 'svelte-i18n';
 
-  import { mdiCheckCircleOutline, mdiLoading, mdiPencil, mdiStar } from '@mdi/js';
-  import Icon from './Icon.svelte';
-  import Button from './Button.svelte';
-  import Checkbox from '../components/Checkbox.svelte';
-
-  import { exportToExcel } from '../functions/export';
-  import { submitWishTally } from '../functions/wishTally';
-  import { pushToast } from '../stores/toast';
-
-  export let setManualInput;
-  export let settings;
-
-  let loadingExport = false;
-  let wishTallySubmitted = false;
-
-  let enableManual = settings.manualInput;
-
-  function toggleManual() {
-    setManualInput(enableManual);
-  }
-
-  async function exportFile() {
-    loadingExport = true;
-    await exportToExcel();
-    loadingExport = false;
-    pushToast($t('wish.help.exportFinish'));
-  }
-
-  $: enableManual, toggleManual();
+  import { mdiPencil, mdiStar } from '@mdi/js';
+  import Icon from '../../components/Icon.svelte';
 </script>
 
 <div>
-  <!-- <h1 class="font-display text-white text-xl mb-4">{$t('wish.help.title')}</h1> -->
-  <h1 class="font-display text-white text-xl mb-2">{$t('wish.help.exportTitle')}</h1>
-  <div class="text-white p-2 bg-background rounded-xl">
-    <p class="mb-2">{$t('wish.help.exportMessage')}</p>
-    <Button className="mr-2" disabled={loadingExport} on:click={exportFile}>
-      {#if loadingExport}
-        <Icon path={mdiLoading} spin size={0.8} className="mr-2" />
-      {/if}
-      {$t(loadingExport ? 'wish.help.exporting' : 'wish.help.export')}
-    </Button>
-    <!-- <Button disabled={loadingExport}>{$t('wish.help.import')}</Button> -->
-  </div>
-  <h1 class="font-display text-white text-xl mt-8 mb-2">{$t('wish.help.manualTitle')}</h1>
-  <div class="text-white p-2 bg-background rounded-xl">
-    <div class="py-2 pl-4">
-      <Checkbox disabled={false} bind:checked={enableManual}
-        ><span class="select-none cursor-pointer">{$t('wish.help.enableManual')}</span></Checkbox
-      >
-    </div>
-    <p class="text-red-300">{$t('wish.help.notice')}</p>
-    <p>{$t('wish.help.consider')}</p>
-  </div>
-  <h1 class="font-display text-white text-xl mt-8 mb-2">{$t('wish.help.howto.title')}</h1>
+  <h1 class="font-display text-white text-xl mb-2">{$t('wish.help.howto.title')}</h1>
   <div class="text-white p-2 bg-background rounded-xl">
     <p class="mb-2">{$t('wish.help.howto.subtitle')}</p>
     <p class="mb-2">
