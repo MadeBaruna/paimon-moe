@@ -1,0 +1,603 @@
+{
+  "sidebar": {
+    "home": "Página Inicial",
+    "character": "Personagens",
+    "wishCounter": "Histórico de Orações",
+    "calculator": "Calculadora",
+    "database": "Banco de Dados",
+    "items": "Itens",
+    "achievement": "Conquistas",
+    "reminder": "Lembretes",
+    "todoList": "Lista de Afazeres",
+    "timeline": "Linha do Tempo",
+    "furnishing": "Mobília",
+    "settings": "Configurações",
+    "donate": "Doar"
+  },
+  "home": {
+    "welcome": "Boas-vindas ao Paimon.moe! 👋",
+    "message": "Seu melhor companheiro de Genshin Impact! Planeje seu farm com a calculadora de ascenção e acompanhe seu progresso com a lista de afazeres e o histórico de orações.",
+    "banner": {
+      "featured": [
+        "Eula"
+      ],
+      "summoned": "Invocados",
+      "percentage": "de todos {rarity}",
+      "avg": "Pity médio",
+      "subtitle": "Calculado a partir dos dados enviados por {user} usuários do paimon.moe",
+      "detail": "Contagem Global de Orações"
+    },
+    "wish": {
+      "message": "Importe seu histórico de orações para mantê-lo além de 6 meses! Além disso, rastreie seu pity com um contador automático e estatísticas sobre suas orações com belos gráficos 📊",
+      "latest": "Sua Última Oração",
+      "banner": "Banner",
+      "time": "Horário",
+      "name": "Nome",
+      "pity": "Pity",
+      "detail": "Histórico de Orações"
+    },
+    "reminder": {
+      "message": "Você pode definir uma notificação de lembrete 🔔 para o Transformador Paramétrico e o Check-in Diário no HoYoLAB aqui! Clique no botão de lembrete abaixo para começar!",
+      "detail": "Lembretes"
+    },
+    "event": {
+      "upcoming": "Próximo Evento",
+      "current": "Evento Atual",
+      "detail": "Linha do Tempo"
+    },
+    "discord": {
+      "online": "Membros Online",
+      "message": "Junte-se ao nosso servidor no Discord para receber anúncios sobre novas atualizações! Discuta também sobre Genshin Impact e envie feedback para paimon.moe.",
+      "join": "Junte-se ao Discord"
+    },
+    "items": {
+      "title": "Farmáveis Hoje",
+      "detail": "Itens",
+      "sunday": "Todos os itens podem ser farmados aos domingos 😁"
+    },
+    "calculator": {
+      "title": "🧮 Calcule materiais de ascenção de Personagens, Armas e elevação de talento! Todos os cálculos podem ser adicionados na Lista de Afazeres. Também mostra quantas resinas você irá precisar!",
+      "detail": "Calculadora"
+    },
+    "twitter": {
+      "title": "Siga meu Twitter, ocasionalmente posto uma prévia do que estou desenvolvendo atualmente e as últimas atualizações para paimon.moe!",
+      "detail": "Seguir no Twitter"
+    },
+    "achievement": {
+      "title": "🏆 Veja e acompanhe sua lista de conquistas aqui",
+      "detail": "Conquistas"
+    }
+  },
+  "characters": {
+    "title": "Personagens",
+    "subtitle": "Os números dos status são do Nível 80, Ascenção 6. Você pode clicar nos índices da tabela para ordenar!",
+    "name": "Nome",
+    "element": "Elemento",
+    "rarity": "Raridade",
+    "weapon": "Arma",
+    "talents": "Talentos",
+    "passiveTalents": "Talentos Passivos",
+    "constellations": "Constelações",
+    "asc": "ASC",
+    "lvl": "NV",
+    "hp": "HP",
+    "atk": "ATK",
+    "def": "DEF",
+    "hpPercent": "HP%",
+    "atkPercent": "ATK%",
+    "defPercent": "DEF%",
+    "critRate": "Chance CRIT",
+    "critDamage": "Dano CRIT",
+    "em": "Proficiência Elemental",
+    "er": "Recarga de Energia",
+    "healingBonus": "Bônus de Cura",
+    "pyroDamageBonus": "Bônus de Dano Pyro",
+    "hydroDamageBonus": "Bônus de Dano Hydro",
+    "dendroDamageBonus": "Bônus de Dano Dendro",
+    "electroDamageBonus": "Bônus de Dano Electro",
+    "cryoDamageBonus": "Bônus de Dano Cryo",
+    "anemoDamageBonus": "Bônus de Dano Anemo",
+    "physicalDamageBonus": "Bônus de Dano Físico",
+    "geoDamageBonus": "Bônus de Dano Geo"
+  },
+  "wish": {
+    "title": "Histórico de Orações",
+    "autoImport": "Importar Automaticamente",
+    "helpAndSetting": "Ajuda & Configurações",
+    "wishesWorth": "Valor das Orações",
+    "lifetimePulls": "Total de Orações Realizadas",
+    "guarantee": "Garantido em {pity}",
+    "name": "Nome",
+    "time": "Horário",
+    "pity": "Pity",
+    "welcome": "Boas-vindas ao Histórico de Orações de Paimon.moe! Recomendamos importar seu histórico de orações com a opção Importar Automaticamente.",
+    "welcomeStart1": "Para começar, pressione o botão",
+    "welcomeStart2": "acima",
+    "manual": "Se você quiser informar os dados manualmente, você pode fazer isso aqui:",
+    "manualButton": "Habilitar Inserção Manual",
+    "errorBanner": "Incompatibilidade no tempo do banner! Ajuste seu servidor na página de configurações. Ainda não está funcionando? Por favor, deixa uma mensagem no Discord 😅",
+    "globalWishTally": "Contagem Global de Orações",
+    "pityTooltip": [
+      "Informa seu pity atual para {rarity}",
+      "{count} orações para um {rarity} garantido"
+    ],
+    "import": {
+      "title": "Importar Histórico de Orações",
+      "faqsButton": "FAQ - LEIA PRIMEIRO",
+      "nonew": "Sem Novas Orações",
+      "importNotice1": "Orações importadas serão anexadas ou substituídas de acordo com os dados existentes",
+      "importNotice2": "Se você não tiver nenhum dado salvo anteriormente, a primeira oração será contabilizada como pity 1",
+      "importNotice3": "Caso esteja importando dados de uma conta diferente, primeiro separe suas contas na página de configuração, ou os dados serão misturados!",
+      "saveData": "Salvar dados de orações?",
+      "reCalculating": "Recalculando pity...",
+      "processing": "Processando",
+      "banner": "Banner",
+      "page": "Página",
+      "parsing": "Parsing...",
+      "save": "Salvar",
+      "cancel": "Cancelar",
+      "cancelling": "Cancelando...",
+      "importNewWishOnly": "Importar apenas novas orações",
+      "importNewWishUncheck": "Desmarque apenas caso você precise importar novamente todo seu histórico de orações",
+      "import": "Importar",
+      "close": "Fechar",
+      "invalidLink": "Link inválido, tente novamente",
+      "errorApi": "Código de erro retornado do MiHoYo API, tente novamente mais tarde!",
+      "timeout": "Conexão expirou, aguarde um momento e tente novamente mais tarde",
+      "invalidData": "Dados inválidos retornados pelo API, tente novamente mais tarde",
+      "success": "Sucesso na Importação 😀!",
+      "server": "Selecione seu servidor:",
+      "wishTallyCheck": "Enviar pity para a contagem global de orações",
+      "wishTally": "Estamos fazendo uma contagem global de orações! Você pode enviar sua contagem de orações para participar. Todas as informações do pity serão agregadas para saber qual a média de pity dos usuários do paimon.moe.",
+      "wishTallyCollected": [
+        "O que será coletado:",
+        "e",
+        "pity do seu histórico de orações"
+      ],
+      "faqs": {
+        "title": "Importar Histórico de Orações FAQ",
+        "q1": "Como funciona?",
+        "a1": "O histórico de orações de Genshin Impact é basicamente uma página na internet, então você consegue acessá-lo através de uma URL. Uma chave temporária será gerada após você abrir a página do histórico de orações ou de feedback, e o importador irá automaticamente utilizar o MiHoYo API para buscar seu histórico de orações.",
+        "q2": "É seguro? Eu serei banido?",
+        "a2": "Paimon.moe utiliza a mesma requisição que Genshin Impact utiliza para buscar o histórico de orações, e Paimon.moe não consegue de maneira alguma modificar quaisquer arquivos ou dados do jogo, e isso deve ser seguro. Mas use por sua própria conta e risco (bom, eu uso na minha conta principal). Você ainda pode inserir seus dados manualmente 😀.",
+        "q3": "Então você pode hackear minha conta?",
+        "a3": [
+          "Paimon.moe nunca salva informações pessoais como suas credenciais (nem mesmo UID ou apelido), então a resposta é não. Este projeto é de código aberto em",
+          "; Não estou planejando manchar minha reputação hackeando a conta de outras pessoas."
+        ],
+        "q4": "Ei, eu verifiquei as requisições e tal, mas por que as requisições são feitas em seu próprio domínio ao invés do MiHoYo API?",
+        "a4": [
+          "Paimon.moe não pode fazer uma requisição diretamente para o MiHoYo API devido ao",
+          ", então a requisição é redirecionada para um simples proxy CORS para que funcione. Você pode ver o código",
+          "aqui"
+        ],
+        "q5": "Você armazena minha chave temporária ou meu histórico de orações?",
+        "a5": [
+          "Paimon.moe jamais irá armazenar suas chaves, e utiliza HTTPS para passar sua URL para um proxy CORS para fazer o CORS funcionar. Paimon.moe irá salvar seu pity de 4*, seu pity de 5*, e as informações de uma oração 5* se você enviar sua oração para nossa contagem global de orações (nenhuma informação privada salva! Verifique",
+          "Políticas de Privacidade",
+          "para mais informações). Você pode desmarcar a opção de enviar sua oração para a contagem global. Então, todo seu histórico de orações é salvo em seu dispositivo (ou Google Drive caso você tenha ativado a sincronização).",
+          "Se você não deseja compartilhar sua URL, você pode utilizar um pequeno script de importação para salvar seu histórico de orações em seu PC (opção para PC Local)"
+        ],
+        "q6": "Eu fiz todos os procedimentos, mas tive um erro na API?",
+        "a6": "Certifique-se de copiar todo o texto (segura e pressione Selecionar Tudo para dispositivos móveis); talvez você tenha esquecido alguns caracteres que não necessários para o funcionamento da importação.",
+        "q7": "Não leu todo meu histórico!?",
+        "a7": "Histórico de orações mais antigos que 6 meses são deletados dos servidores da MiHoYo, então se você não possui um backup em algum lugar, infelizmente se foi"
+      },
+      "guide": {
+        "video": "Tutorial em Vídeo",
+        "pc": [
+          "Abra o menu da Paimon [ESC]",
+          "Clique em Feedback",
+          "Espere carregar, e então uma página no navegador será aberta",
+          "Copie & cole o link na caixa de texto abaixo",
+          "Cole o link aqui... https://webstatic..."
+        ],
+        "android": [
+          "Abra Orações (dentro do jogo)",
+          "Pressione Histórico",
+          "Aguarde o carregamento",
+          "Desligue seu Wi-Fi e o tráfego de dados móveis",
+          "Pressione atualizar no canto superior direito",
+          "A página deverá informar um erro e irá mostrar um texto com uma fonte preta",
+          "Segure e pressione Selecionar Tudo, e então copie o texto (não copie apenas uma parte)",
+          "Ligue seu Wi-Fi ou tráfego de dados móveis",
+          "Cole o texto na caixa de texto abaixo",
+          "Cole o texto aqui... Webpage not available..."
+        ],
+        "ios": [
+          "Abra o menu da Paimon [ESC]",
+          "Clique em Feedback",
+          "Espere carregar, e então a página de feedback irá abrir",
+          "Pressione Problemas com o jogo",
+          "Pressione Modo Co-Op",
+          "Há um link embaixo da resposta; pressione nele",
+          "Um navegador deve abrir. Copie o link e cole-o abaixo",
+          "Cole o link aqui... https://genshin.mihoyo..."
+        ],
+        "ps": [
+          "Você só pode usar esse método caso tenha um e-mail dentro do jogo com um QR Code para abrir uma página de evento web",
+          "Abra Genshin Impact no seu PlayStation",
+          "Abra o email do evento que contém QR Code",
+          "Escaneie o QR Code com seu celular",
+          "Copie o link e cole-o abaixo",
+          "Cole o link aqui..."
+        ],
+        "pclocal": [
+          "Se você não se sente confortável em compartilhar sua URL de feedback, você pode usar esta opção para processar seu histórico de orações em seu PC localmente. Este script irá ler o log em seu PC para gerar a URL do histórico de orações.",
+          "Abra o menu Iniciar, e então procure por Powershell",
+          "Abra o Powershell do Widows, e então copie & cole o script abaixo no Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "Você pode revisar o script",
+          "aqui",
+          "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
+          "Pressione Enter para rodar o script, e então siga as instruções",
+          "Depois disso, cole o resultado do script na caixa de texto abaixo",
+          "Cole o resultado aqui...",
+          "Esse recurso ainda está em fase beta, então por favor faça um backup antes indo no menu de Ajuda & Configurações, e então Exportar para Excel."
+        ]
+      }
+    },
+    "help": {
+      "title": "Ajuda & Configurações do Histórico de Orações",
+      "exportTitle": "Exportar Histórico de Orações",
+      "exportMessage": "Você pode exportar seu histórico de orações para um arquivo Excel aqui",
+      "export": "Exportar para Excel",
+      "exporting": "Exportando...",
+      "import": "Importar",
+      "exportFinish": "Exportado com successo, aguarde até que o navegador realize o download do arquivo!",
+      "wishTallyTitle": "Enviar Contagem de Orações",
+      "wishTally": "Estamos fazendo uma contagem global de orações! Você pode enviar sua contagem de orações para participar. Todas as informações do pity serão agregadas para saber qual a média de pity dos usuários do paimon.moe.",
+      "wishTallyCollected": [
+        "O que será coletado:",
+        "e",
+        "pity do seu histórico de orações"
+      ],
+      "wishTallySubmit": "Enviar Contagem de Orações",
+      "wishTallyThankyou": "Obrigado por participar!",
+      "manualTitle": "Configuração de Inserção Manual",
+      "enableManual": "Habilitar Inserção Manual",
+      "notice": "Utilizar a Importação Automática e a Importação Manual simultaneamente não é recomendado uma vez que ainda são necessários mais alguns testes!",
+      "consider": "Considere utilizar a Importação Automática primeiro. Acesse-a clicando no botão próximo ao botão que você clicou para abrir este Como Fazer.",
+      "howto": {
+        "title": "Como Utilizar a Inserção Manual",
+        "subtitle": "Após 1x Oração:",
+        "pressWhenYouGet": "Pressione {button} quando você conseguir um item {rarity}★",
+        "p1": "Será adicionado automaticamente no seu total de orações realizadas, pity de 5★, de pity de 4★",
+        "p2": [
+          "Quando o pity de",
+          "chegar a 10, seu valor será automaticamente restaurado para 0"
+        ],
+        "p3": [
+          "Quando o pity de",
+          "chegar a 90, seu valor será automaticamente restaurado para 0"
+        ],
+        "p4": [
+          "Depois de realizar uma 10x Orações, pressione",
+          "mas tenha em mente que o contador de pity pode não ser preciso, pois não há como saber quando o drop ocorreu (talvez você tenha pego o item na 1ª ou mesmo na 10ª oração). Para garantir que o contador irá se manter preciso, você precisa verificar a tabela de histórico e adicionar um por um igual é feito em 1x Oração."
+        ],
+        "p5": [
+          "Você também pode pressionar o botão",
+          "para editar os valores manualmente!"
+        ],
+        "p6": [
+          "Pressione a seta embaixo para visualizar os detalhes das orações. Um pop-up irá aparecer quando você conseguir um item",
+          "ou",
+          "Você também pode adicionar ou editar a tabela manualmente."
+        ]
+      }
+    },
+    "types": {
+      "beginners": "Desejo dos Novatos",
+      "standard": "Invocação do Mochileiro",
+      "character-event": "Evento de Personagem",
+      "weapon-event": "Evento de Arma"
+    },
+    "detail": {
+      "weapon": "Arma",
+      "character": "Personagem",
+      "time": "Horário",
+      "pity": "Pity",
+      "name": "Nome",
+      "type": "Tipo",
+      "banner": "Banner",
+      "roll": "#Orações",
+      "totalThisBanner": "Total de orações nesse banner",
+      "worth": "Valor",
+      "loading": "Carregando... (Se travar, troque seu servidor na página de configurações)",
+      "guaranteed": "O próximo 5★ é garantido ser o item promocional, personagem ou arma",
+      "unknown_3_star": "Desconhecido"
+    },
+    "tally": {
+      "title": "Contagem de Orações",
+      "subtitle": "Média de pity global de acordo com as submissões dos usuários de paimon.moe",
+      "update": "Atualizado",
+      "summoned": "Invocados",
+      "wonFiftyFifty": "ganhou no 50:50",
+      "fromFiveStar": "de todos 5★",
+      "fromFourStar": "de todos 4★",
+      "fromFourStarFeatured": "dos destaques 4★",
+      "show": "Mostrar",
+      "name": "Nome",
+      "total": "Total",
+      "wishTotal": "Total de Orações",
+      "worth": "Valor",
+      "weapon": "Armas",
+      "character": "Personagens",
+      "error": "Dados ainda não disponíveis 😞",
+      "pity": "Pity",
+      "median": "5★ Mediana",
+      "user": "Total de Usuários",
+      "detail": "Detalhes"
+    }
+  },
+  "calculator": {
+    "titleWeapon": "Calculadora de Armas",
+    "titleCharacter": "Calculadora de Personagens",
+    "titleResin": "Calculadora de Resina",
+    "goto": "Ir para {where}",
+    "howToUse": "Como Usar",
+    "guide": {
+      "clickToMaximize": "Clique na imagem para maximizar",
+      "howToWeapon": "Como usar a Calculadora de Armas",
+      "howToCharacter": "Como usar a Calculadora de Personagens"
+    },
+    "weapon": {
+      "calculateAscension": "Calcular Materiais de Ascenção?",
+      "selectRarity": "Selecione a raridade da arma",
+      "selectWeapon": "Selecione a arma",
+      "current": "Nível, EXP, & Ascenção Atual da Arma",
+      "inputCurrentLevel": "Informe o nível atual da arma...",
+      "inputCurrentExp": "Informe a EXP atual da arma...",
+      "intended": "Nível & Ascenção de Arma Desejados",
+      "inputIntendedLevel": "Informe o nível desejado para a arma...",
+      "resource": "Recursos para Usar",
+      "calculate": "Calcular",
+      "unknownInformation": "Há alguma informação desconhecida",
+      "ascensionLevel": "Nível de ascenção",
+      "mora": "Mora (aproximadamente ±40)",
+      "expWasted": "EXP Desperdiçada",
+      "addToTodo": "Adicionar na Lista de Afazeres",
+      "addedToTodo": "Adicionado na Lista de Afazeres"
+    },
+    "character": {
+      "calculateAscension": "Calcular Materiais de Ascenção?",
+      "selectCharacter": "Selecione o personagem",
+      "current": "Nível, EXP, & Ascenção Atual do Personagem",
+      "inputCurrentLevel": "Informe o nível atual do personagem...",
+      "inputCurrentExp": "Informe a EXP atual do personagem...",
+      "intended": "Nível & Ascenção de Personagem Desejados",
+      "inputIntendedLevel": "Informe o nível desejado para o personagem...",
+      "resource": "Recursos para Usar",
+      "calculateTalent": "Calcular Materiais de Elevação de Talentos?",
+      "inputTalentLevel": "Informe os níveis atuais do 1º, 2º e 3º talento",
+      "inputTalentNotice": "Se algum talento possuir cor diferente, subtraia 3",
+      "inputTalent": [
+        "Nível do 1º talento",
+        "Nível do 2º talento",
+        "Nível do 3º talento"
+      ],
+      "talentToLevel": "para o nível",
+      "calculate": "Calcular",
+      "unknownInformation": "Há alguma informação desconhecida",
+      "ascensionLevel": "Nível de ascenção",
+      "mora": "Mora (aproximadamente ±40)",
+      "expWasted": "EXP Desperdiçada",
+      "addToTodo": "Adicionar na Lista de Afazeres",
+      "addedToTodo": "Adicionado na Lista de Afazeres"
+    },
+    "expTable": {
+      "level": "Nível",
+      "items": "Itens",
+      "wasted": "EXP Desperdiçada",
+      "mora": "Custo em Mora"
+    },
+    "resinTable": {
+      "quantity": "Quantidade",
+      "time": "Tempo a Esperar"
+    },
+    "resin": {
+      "currentResin": "Resina Atual",
+      "desiredResin": "Resina Desejada",
+      "or": "ou",
+      "inputCurrentResin": "Informe a quantidade de resina atual...",
+      "inputDesireResin": "Informe quantas resinas você quer esperar...",
+      "timeFormat": "en",
+      "calculate": "Calcular",
+      "currentTime": "Horário Atual",
+      "fullTime": "Será reabastecida em",
+      "hours": "horas",
+      "minutes": "minutos",
+      "seconds": "segundos"
+    }
+  },
+  "items": {
+    "title": "Lista de Itens",
+    "subtitle": "Clique na imagem do item para adicioná-lo na lista de afazeres",
+    "searchCharacter": "Buscar personagem",
+    "searchWeapon": "Buscar arma",
+    "day": "Dias",
+    "material": "Materiais",
+    "characterWeapons": "Personagens & Armas",
+    "add": {
+      "rarity": "Selecione a Raridade",
+      "amount": "Quantidade",
+      "inputAmount": "Informe a quantidade...",
+      "cancel": "Cancelar",
+      "add": "Adicionar à lista"
+    }
+  },
+  "days": {
+    "Sunday": "Domingo",
+    "Monday": "Segunda-feira",
+    "Tuesday": "Terça-feira",
+    "Wednesday": "Quarta-feira",
+    "Thursday": "Quinta-feira",
+    "Friday": "Sexta-feira",
+    "Saturday": "Sábado"
+  },
+  "todo": {
+    "title": "Lista de Afazeres",
+    "summary": "Sumário",
+    "empty": [
+      "Nada para fazer ainda 😀",
+      "Adicione algumas coisas a partir da Cálculadora ou da página de Itens!"
+    ],
+    "farmableToday": "Farmáveis hoje",
+    "resin": "Resinas necessárias",
+    "based": "Baseado no AR:{ar} e WL:{wl}",
+    "change": "(altera nas configurações)",
+    "approximation": "Aproximação calculada a partir da taxa de drops por",
+    "delete": {
+      "title": "Deletar esse afazer?",
+      "cancel": "Cancelar",
+      "delete": "Deletar"
+    }
+  },
+  "timeline": {
+    "title": "Linha do Tempo",
+    "localTime": "Mostrar como fuso horário local",
+    "starting": "Começando em",
+    "ending": "Terminando em",
+    "live": "Disponível agora!",
+    "finished": "Finalizado"
+  },
+  "settings": {
+    "version": "Versão do Jogo:",
+    "multiple": "Possui múltiplas contas? Escolha sua conta aqui para separar os dados de seu Histórico de Orações e Lista de Afazeres",
+    "selectAccount": "Selecione sua conta",
+    "reset": "Resetar",
+    "delete": "Deletar",
+    "add": "Adicionar",
+    "server": "Selecione seu servidor:",
+    "drive": [
+      "Paimon.moe usa o diretório Application Data em seu Google Drive para salvar e sincronizar seu Histórico de Orações e Lista de Afazeres.",
+      "Paimon.moe pode apenas ler e escrever em arquivos que o site criou."
+    ],
+    "driveError": "API do Google Drive não pôde ser carregado",
+    "driveSignIn": "Entrar no Google Drive",
+    "driveSignOut": "Sair do Google Drive",
+    "synced": "Sincronizado",
+    "waiting": "Aguardando...",
+    "syncing": "Sincronizando...",
+    "lastSync": "Última Sincronização:",
+    "feedback": "Se você encontrou algum bug, informação incorreta ou tem qualquer outro feedback, por favor deixe uma mensagem em",
+    "or": "ou",
+    "thanks": "Obrigado😁!",
+    "modal": {
+      "notice": "Todos os dados da Lista de Afazeres e Histórico de Orações serão apagados",
+      "backup": "Você pode fazer um backup do seu histórico de orações através de uma exportação para um arquivo do Excel!",
+      "cancel": "Cancelar",
+      "delete": "Deletar",
+      "reset": "Resetar"
+    }
+  },
+  "privacypolicy": {
+    "title": "Política de Privacidade",
+    "subtitle": "O que paimon.moe coleta e pra que é usado",
+    "collect": [
+      {
+        "title": "URL visitada em paimon.moe, referenciador, navegador, sistema operacional, tipo de dispositivo, país do visitante",
+        "content": [
+          "Paimon.moe utiliza",
+          "plausible.io",
+          "(um analisador de privacidade amigável) para que possamos ver quantas pessoas utilizam determinado recurso, para que então possamos determinar qual recurso priorizar na implementação ou melhoria."
+        ]
+      },
+      {
+        "title": "Mensagens de erros e exceções do site",
+        "content": [
+          "Paimon.moe irá enviar erros e exceções do site para",
+          "sentry.io",
+          "para que possamos determinar o que está causando problema e corrigir adequadamente."
+        ]
+      },
+      {
+        "title": "Pity de Orações",
+        "content": [
+          "Paimon.moe irá salvar a contagem do pity de 4*, a contagem do pity de 5*, e as informações da oração de 5* (horário, nome do item, contagem do pity) caso você marque a caixa 'Enviar pity para a contagem global de orações' na Importação Automática de Orações ou enviar manualmente no menu de Ajuda & Configurações. Paimon.moe irá agregar os dados e usá-los para calcular o pity médio para cada banner levando em consideração os usuários do paimon.moe. Você pode conferir aqui",
+          "contagem de orações"
+        ]
+      }
+    ],
+    "subtitleNotCollect": "O que paimon.moe NÃO coleta",
+    "notCollect": [
+      "Paimon.moe nunca salva nenhuma senha, uid, usuário, e-mail, chaves temporárias, ou url de feedback. Se você estiver interessado, o projeto possui código aberto e você pode consultar o código fonte em",
+      "paimon-moe-api Github",
+      "e",
+      "paimon-moe Github"
+    ]
+  },
+  "sync": {
+    "message": "Seus dados locais neste navegador estão em conflito com os dados armazenados no Google Drive!",
+    "googleDriveData": "Dados do Google Drive",
+    "localData": "Dados Locais Deste Navegador",
+    "older": "MAIS ANTIGO",
+    "newer": "MAIS RECENTE",
+    "useGoogleDriveData": "Usar Dados do Google Drive",
+    "useLocalData": "Usar Dados Locais Deste Navegador",
+    "download": "Baixar Ambos os Dados",
+    "lastModified": "Última modificação",
+    "or": "ou"
+  },
+  "footer": {
+    "affliate": "Paimon.moe não está afiliada com a miHoYo.",
+    "copyright": "Genshin Impact, os conteúdo e materiais do jogo são marcas registradas e de direitos autorais da miHoYo.",
+    "discord": "Junte-se ao Discord",
+    "community": "Links da Comunidade",
+    "official": "Links Oficiais"
+  },
+  "donate": {
+    "message": [
+      "Muito obrigado! Espero que ache isso útil.",
+      "Fiz este site para me divertir quando tenha um tempo livre. Obviamente irei adicionar mais recursos e atualizarei os dados a cada nova atualização, pois gosto de explorar o jogo e tentar maximizar minha experiência",
+      "Se você quiser doar, sua doação definitivamente irá ajudar a melhorar o site e me motivar a adicionar mais conteúdo para Paimon.moe! Muito obrigado e divirta-se, espero que goste!",
+      "Se você gosta de codificar, você também pode contribuir para o projeto em"
+    ],
+    "kofi": "Apoie-me no Ko-fi",
+    "trakteer": "Apoie-me no Trakteer",
+    "crypto": "Apoie-me com Crypto"
+  },
+  "reminder": {
+    "notSupported": "Seu navegador não suporta notificações por push, por favor tente outro navegador!",
+    "blocked": "Notificações estão bloqueadas, as notificações de lembrete não irão funcionar! Por favor ative-as em seu navegador.",
+    "desktop": "Navegador desktop não pode receber notificações caso não esteja rodando!",
+    "early": "A notificação poderá chegar mais cedo (cerca de 1-10 minutos) devido ao modo que enviamos a notificação",
+    "allowNotification": "Por favor, permita o prompt de notificação!",
+    "transformer": "Lembrete do Transformador Paramétrico",
+    "last": "Informe quando foi a última vez que você usou o Transformador Paramétrico",
+    "lastHoyolab": "Informe qual horário você deseja ser notificado sobre o check-in diário",
+    "every": "Todos os dias às",
+    "countdown": "Informe a contagem regressiva do Transformador Paramétrico (Se você não lembra o horário exato, você precisará aproximar)",
+    "useLast": "Usar último horário",
+    "useCountdown": "Usar contagem regressiva",
+    "set": "Definir Lembrete",
+    "checking": "Verificando lembretes salvos...",
+    "errorSelect": "Por favor selecione o dia e horário!",
+    "errorSaving": "Alguma coisa deu errado ao salvar o lembrete 🙁",
+    "current": "Lembrete atual",
+    "hoyolab": "Lembrete do Check-in Diário no HoYoLAB",
+    "comingsoon": "Em Breve!"
+  },
+  "achievement": {
+    "title": "Conquistas",
+    "of": "de"
+  },
+  "furnishing": {
+    "title": "Mobília",
+    "name": "Nome",
+    "energy": "Energia",
+    "load": "Carga",
+    "ratio": "Proporção",
+    "using": "Quantidade",
+    "interior": "Interior",
+    "exterior": "Exterior",
+    "info": [
+      "Mostra a capacidade de carga de cada área. Cada mobília possui um valor oculto de carga que pode ser visualizado abaixo.",
+      "(o valor máximo ainda não foi confirmado!)"
+    ],
+    "hall": "Salão",
+    "room": "Quarto {number}",
+    "exteriorNum": "Exterior {number}",
+    "corridor": "Corredor"
+  }
+}
