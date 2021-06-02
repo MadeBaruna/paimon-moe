@@ -5,6 +5,7 @@ import id from './locales/id.json';
 import ru from './locales/ru.json';
 import ko from './locales/ko.json';
 import fr from './locales/fr.json';
+import zh from './locales/zh.json';
 
 const INIT_OPTIONS = {
   fallbackLocale: 'en',
@@ -28,6 +29,7 @@ addMessages('id', id);
 addMessages('ru', ru);
 addMessages('ko', ko);
 addMessages('fr', fr);
+addMessages('zh', zh);
 
 export function startClient() {
   const savedLocale = localStorage.getItem('locale');
