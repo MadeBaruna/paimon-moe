@@ -23,8 +23,9 @@
   $: attachedNext = next !== null && next.start.diff(event.end, 'hour') < 3;
   $: attachedPrev = prev !== null && event.start.diff(prev.end, 'hour') < 3;
   $: prevEnded = prev !== null && now.isAfter(prev.end);
-  $: shouldShowHourStart = diffStart <= 86400000 || event.duration > 8 || !prevNearby;
-  $: shouldShowHourEnd = diffEnd <= 86400000 || event.duration > 8 || !prevNearby;
+  $: shouldShowHourStart = diffStart <= 86400000 || event.duration > 6.5 || !prevNearby;
+  $: shouldShowHourEnd = diffEnd <= 86400000 || event.duration > 6.5 || !prevNearby;
+
 </script>
 
 <div
@@ -32,23 +33,18 @@
   class="flex items-center z-10 text-white cursor-pointer absolute {prevDiff < 1 ? '' : 'rounded-l-xl'} {nextDiff < 1
     ? 'border-r-4 border-white'
     : 'rounded-r-xl'}"
-  style="width: {dayWidth * event.duration}px; left: {dayWidth *
-    event.offset}px; background-color: {event.color};
-   top: {marginTop +
-    i * (eventHeight + eventMargin)}px; height: {eventHeight}px; padding-right: 10px; 
-        {prevNearby &&
-  !started &&
-  (attachedPrev || prevEnded) &&
-  prevNearby
+  style="width: {dayWidth * event.duration}px; left: {dayWidth * event.offset}px; background-color: {event.color};
+   top: {marginTop + i * (eventHeight + eventMargin)}px; height: {eventHeight}px; padding-right: 10px; 
+        {prevNearby && !started && (attachedPrev || prevEnded) && prevNearby
     ? 'padding-left: 35px;'
     : 'padding-left: 10px;'}
     --image: url(/images/events/{event.image}); --pos: {event.pos}; --color: {event.color}; 
-    --zoom: {event.zoom
-    ? event.zoom
-    : '200%'};"
+    --zoom: {event.zoom ? event.zoom : '200%'};"
 >
   <div class="event-item {nextDiff < 1 ? '' : 'rounded-xl'}" />
-  <span class="event-name text sticky left-0 font-display text-base md:text-lg text-black font-bold whitespace-no-wrap overflow-hidden">
+  <span
+    class="event-name text sticky left-0 font-display text-base md:text-lg text-black font-bold whitespace-no-wrap overflow-hidden"
+  >
     {event.name}
   </span>
   <!-- Ending timer-->
@@ -106,4 +102,5 @@
     text-shadow: var(--color) -1px -1px 4px, var(--color) 1px -1px 4px, var(--color) -1px 1px 4px,
       var(--color) 1px 1px 4px, var(--color) 0 0 10px;
   }
+
 </style>
