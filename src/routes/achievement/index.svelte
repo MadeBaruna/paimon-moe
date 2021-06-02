@@ -3,6 +3,7 @@
   export async function preload() {
     return { data };
   }
+
 </script>
 
 <script>
@@ -208,6 +209,7 @@
       changeLocale(val);
     });
   });
+
 </script>
 
 <svelte:head>
@@ -231,7 +233,7 @@
       </div>
     </div>
     <div class="lg:pl-4 text-white">
-      <Checkbox checked={sort} on:change={() => changeSort(!sort)}>Show not achieved first</Checkbox>
+      <Checkbox checked={sort} on:change={() => changeSort(!sort)}>{$t('achievement.sort')}</Checkbox>
     </div>
   </div>
   <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
@@ -263,10 +265,7 @@
             {#each el as it, i}
               <div
                 class="flex items-center {i !== 0 ? 'border-t border-gray-700 pt-1' : ''} 
-                {i > 0 &&
-                el[i - 1].checked !== true
-                  ? 'opacity-25'
-                  : ''}"
+                {i > 0 && el[i - 1].checked !== true ? 'opacity-25' : ''}"
               >
                 <div class="flex-1 pr-1">
                   <p class="font-semibold">{it.name}</p>
@@ -332,4 +331,5 @@
       padding-top: 8px;
     }
   }
+
 </style>

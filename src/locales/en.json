@@ -610,7 +610,8 @@
   },
   "achievement": {
     "title": "Achievement",
-    "of": "of"
+    "of": "of",
+    "sort": "Show not achieved first"
   },
   "furnishing": {
     "title": "Furnishing",

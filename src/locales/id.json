@@ -579,7 +579,8 @@
   },
   "achievement": {
     "title": "Achievement",
-    "of": "dari"
+    "of": "dari",
+    "sort": "Urutkan yang belum didapatkan dulu"
   },
   "furnishing": {
     "title": "Furnitur",
