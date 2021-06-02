@@ -21,12 +21,13 @@
   export let mobile = false;
 
   const languages = [
-    { id: 'en', label: 'English' },
-    { id: 'id', label: 'Indonesia' },
-    { id: 'ru', label: 'Русский' },
-    { id: 'ko', label: '한국어' },
-    { id: 'fr', label: 'Français' },
     { id: 'zh', label: '中文(简体)' },
+    { id: 'en', label: 'English' },
+    { id: 'fr', label: 'Français' },
+    { id: 'ko', label: '한국어' },
+    { id: 'id', label: 'Indonesia' },
+    { id: 'pt', label: 'Português' },
+    { id: 'ru', label: 'Русский' },
   ];
   $: currentLocale = languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' };
   $: locales = languages.filter((e) => e.id !== currentLocale.id);
