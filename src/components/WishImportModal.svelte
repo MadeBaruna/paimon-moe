@@ -447,20 +447,14 @@
       }
 
       if (rarity === 5) {
-        if (combined[i].pity === 0) {
-          combined[i].pity = legendary;
-        }
+        combined[i].pity = legendary;
         legendary = 0;
         // rare = 0;
       } else if (rarity === 4) {
-        if (combined[i].pity === 0) {
-          combined[i].pity = rare;
-        }
+        combined[i].pity = rare;
         rare = 0;
       } else {
-        if (combined[i].pity === 0) {
-          combined[i].pity = 1;
-        }
+        combined[i].pity = 1;
       }
     }
 
@@ -743,7 +737,7 @@
     {/if}
 
     <div class="flex flex-col md:flex-row mt-4 md:justify-end items-center">
-      {#if !showFaq}
+      <!-- {#if !showFaq}
         <div class="flex-1 flex mb-4 md:mb-0 md:ml-4">
           <Checkbox disabled={false} bind:checked={newOnly}>
             <span class="text-white select-none">{$t('wish.import.importNewWishOnly')}</span>
@@ -753,7 +747,7 @@
             <span class="tooltip-content">{$t('wish.import.importNewWishUncheck')}</span>
           </span>
         </div>
-      {/if}
+      {/if} -->
       <div>
         {#if !showFaq}
           <Button on:click={startImport} color="green" className="mr-4">{$t('wish.import.import')}</Button>
@@ -791,7 +785,7 @@
     }
   }
 
-  .tooltip {
+  /* .tooltip {
     @apply relative;
 
     .tooltip-content {
@@ -815,6 +809,6 @@
     &:hover .tooltip-content {
       @apply block;
     }
-  }
+  } */
 
 </style>

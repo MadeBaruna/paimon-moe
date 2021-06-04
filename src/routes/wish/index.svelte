@@ -1,12 +1,11 @@
 <script>
   import { t } from 'svelte-i18n';
 
-  import { mdiDatabaseImport, mdiHelpCircle } from '@mdi/js';
+  import { mdiCog, mdiDatabaseImport, mdiHelpCircle } from '@mdi/js';
   import { getContext, onMount } from 'svelte';
 
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
-  import HowToModal from '../../components/WishCounterHowToModal.svelte';
   import ImportModal from '../../components/WishImportModal.svelte';
   import { fromRemote, readSave, updateSave } from '../../stores/saveManager';
 
@@ -14,6 +13,8 @@
   import Counter from './_counter.svelte';
   import FirstTimePopup from './_firstTime.svelte';
   import MonthlyGraph from './_monthlyGraph.svelte';
+  import HowToModal from './_helpModal.svelte';
+  import SettingModal from './_settingModal.svelte';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
@@ -78,9 +79,21 @@
   function openHowTo() {
     openModal(
       HowToModal,
+      {},
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '800px' },
+      },
+    );
+  }
+
+  function openSetting() {
+    openModal(
+      SettingModal,
       {
         setManualInput,
         settings,
+        closeImportModal,
       },
       {
         closeButton: false,
@@ -111,6 +124,7 @@
     counter3.readLocalData();
     counter4.readLocalData();
   }
+
 </script>
 
 <svelte:head>
@@ -131,18 +145,30 @@
       <Icon size={0.8} path={mdiDatabaseImport} />
       {$t('wish.autoImport')}
     </Button>
-    <Button on:click={openHowTo} className="hidden md:block">
-      <Icon size={0.8} path={mdiHelpCircle} />
-      {$t('wish.helpAndSetting')}
+    {#if settings.manualInput}
+      <Button on:click={openHowTo} className="mr-2 hidden md:block">
+        <Icon size={0.8} path={mdiHelpCircle} />
+        {$t('wish.helps')}
+      </Button>
+    {/if}
+    <Button on:click={openSetting} className="hidden md:block">
+      <Icon size={0.8} path={mdiCog} />
+      {$t('wish.settings')}
     </Button>
     <div class="md:hidden flex flex-wrap justify-center">
       <Button className="m-1" on:click={openImport}>
         <Icon size={0.8} path={mdiDatabaseImport} />
         {$t('wish.autoImport')}
       </Button>
-      <Button className="m-1" on:click={openHowTo}>
-        <Icon size={0.8} path={mdiHelpCircle} />
-        {$t('wish.helpAndSetting')}
+      {#if settings.manualInput}
+        <Button className="m-1" on:click={openHowTo}>
+          <Icon size={0.8} path={mdiHelpCircle} />
+          {$t('wish.helps')}
+        </Button>
+      {/if}
+      <Button className="m-1" on:click={openSetting}>
+        <Icon size={0.8} path={mdiCog} />
+        {$t('wish.settings')}
       </Button>
     </div>
   </div>

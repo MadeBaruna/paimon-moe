@@ -76,6 +76,8 @@
     "title": "Wish Counter",
     "autoImport": "Import Otomatis",
     "helpAndSetting": "Bantuan & Pengaturan",
+    "helps": "Bantuan",
+    "settings": "Pengaturan",
     "wishesWorth": "Wish Setara Dengan",
     "lifetimePulls": "Total Pull",
     "guarantee": "Dijamin saat {pity}",
@@ -209,13 +211,41 @@
         ]
       }
     },
+    "excel": {
+      "title": "Excel Import",
+      "subtitle": "Pilih darimana asal file excelnya:",
+      "default": "Paimon.moe Export",
+      "takagg": "TakaGG Gacha Export",
+      "notice": [
+        "Fitur ini masih dalam tahap BETA, harap backup dulu melalui Pengaturan kemudian Export ke Excel!",
+        "Wish dengan waktu dan reward yang sama tidak disentuh (agar wish yg sudah tersimpan tidak tertimpa)",
+        "Hanya akan menambahkan wish di akhir dan di awal, yang artinya tidak ada wish yang dimasukkan di tengah-tengah data yang sudah ada",
+        "Saat ini hanya bisa digunakan untuk reward dengan nama item yang berbahasa INGGRIS"
+      ],
+      "selectFile": {
+        "default": "Drag & drop Paimon.moe file excel kesini, atau klik disini untuk memilih",
+        "takagg": "Drag & drop TakaGG gacha export file excel kesini, atau klik disini untuk memilih"
+      },
+      "processing": "Memproses...",
+      "addedOn": "Dimasukkan di bagian:",
+      "beginning": "Awal",
+      "end": "Akhir",
+      "total": "Total",
+      "saveNotice": "Simpan wish yang diimport?",
+      "save": "Simpan",
+      "success": "Excel import sukses 😀!",
+      "errorInvalidFile": "Excel file tidak valid",
+      "errorReadExcel": "Error membaca file excel!",
+      "errorExcelPaimon": "Ini bukan file excel export dari paimon.moe",
+      "errorUnknownItem": "Mendapatkan nama reward yang tidak diketahui"
+    },
     "help": {
       "title": "Wish Counter Bantuan & Pengaturan",
-      "exportTitle": "Export Riwayat Wish",
-      "exportMessage": "Kamu bisa export riwayat wish mu ke file excel disini",
+      "exportTitle": "Export & Import Riwayat Wish",
+      "exportMessage": "Kamu bisa export riwayat wish mu ke file excel disini. Kamu juga bisa meng-import excel dari paimon.moe export atau TakaGG Gacha Export.",
       "export": "Export ke Excel",
       "exporting": "Sedang meng-export...",
-      "import": "Import",
+      "import": "Import dari Excel",
       "exportFinish": "Export berhasil, harap tunggu sampai file nya sudah ter-download!",
       "wishTallyTitle": "Submit Perhitungan Pity Wish",
       "wishTally": "Kita sedang melakukan perhitungan pity global! Kamu bisa mensubmit pity mu untuk berpartisipasi. Semua data pity akan dikumpulkan untuk mengetahui berapa pity rata-rata pengguna paimon.moe.",
@@ -549,7 +579,8 @@
   },
   "achievement": {
     "title": "Achievement",
-    "of": "dari"
+    "of": "dari",
+    "sort": "Urutkan yang belum didapatkan dulu"
   },
   "furnishing": {
     "title": "Furnitur",
