@@ -1,7 +1,7 @@
 <script>
   import { t } from 'svelte-i18n';
   import { onMount } from 'svelte';
-  import { mdiStar, mdiViewGrid, mdiViewList } from '@mdi/js';
+  import { mdiSortAscending, mdiSortDescending, mdiStar, mdiViewGrid, mdiViewList } from '@mdi/js';
 
   import Icon from '../../components/Icon.svelte';
   import TableHeader from '../../components/Table/TableHeader.svelte';
@@ -9,59 +9,99 @@
   import { characters } from '../../data/characters';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
+  import Select from '../../components/Select.svelte';
+  import Button from '../../components/Button.svelte';
 
+  const sortOptions = [
+    { label: $t('characters.name'), value: 'name' },
+    { label: $t('characters.element'), value: 'element' },
+    { label: $t('characters.rarity'), value: 'rarity' },
+    { label: $t('characters.weapon'), value: 'weapon' },
+    { label: $t('characters.constellations'), value: 'constellation' },
+  ];
+
+  let sortBySelect = null;
   let sortBy = '';
   let sortOrder = false;
   let type = 'grid';
   let showConstellation = false;
   let constellation = {};
+  let elementFilter = {
+    pyro: true,
+    hydro: true,
+    anemo: true,
+    electro: true,
+    cryo: true,
+    dendro: true,
+  };
+  let weaponFilter = {
+    sword: true,
+    claymore: true,
+    polearm: true,
+    catalyst: true,
+    bow: true,
+  };
 
-  $: chars = Object.entries(characters).sort((a, b) => {
-    switch (sortBy) {
-      case 'name':
-        if (sortOrder) {
-          return a[1].name.localeCompare(b[1].name);
-        } else {
-          return b[1].name.localeCompare(a[1].name);
-        }
-      case 'element':
-        if (sortOrder) {
-          return a[1].element.name.localeCompare(b[1].element.name);
-        } else {
-          return b[1].element.name.localeCompare(a[1].element.name);
-        }
-      case 'rarity':
-        if (sortOrder) {
-          return a[1].rarity - b[1].rarity;
-        } else {
-          return b[1].rarity - a[1].rarity;
-        }
-      case 'weapon':
-        if (sortOrder) {
-          return a[1].weapon.name.localeCompare(b[1].weapon.name);
-        } else {
-          return b[1].weapon.name.localeCompare(a[1].weapon.name);
-        }
-      case 'hp':
-        if (sortOrder) {
-          return a[1].stats.hp - b[1].stats.hp;
-        } else {
-          return b[1].stats.hp - a[1].stats.hp;
-        }
-      case 'atk':
-        if (sortOrder) {
-          return a[1].stats.atk - b[1].stats.atk;
-        } else {
-          return b[1].stats.atk - a[1].stats.atk;
-        }
-      case 'def':
-        if (sortOrder) {
-          return a[1].stats.def - b[1].stats.def;
-        } else {
-          return b[1].stats.def - a[1].stats.def;
-        }
-    }
-  });
+  $: chars = Object.entries(characters)
+    .filter((e) => elementFilter[e[1].element.id] && weaponFilter[e[1].weapon.id])
+    .sort((a, b) => {
+      switch (sortBy) {
+        case 'name':
+          if (sortOrder) {
+            return a[1].name.localeCompare(b[1].name);
+          } else {
+            return b[1].name.localeCompare(a[1].name);
+          }
+        case 'element':
+          if (sortOrder) {
+            return a[1].element.name.localeCompare(b[1].element.name);
+          } else {
+            return b[1].element.name.localeCompare(a[1].element.name);
+          }
+        case 'rarity':
+          if (sortOrder) {
+            return a[1].rarity - b[1].rarity;
+          } else {
+            return b[1].rarity - a[1].rarity;
+          }
+        case 'weapon':
+          if (sortOrder) {
+            return a[1].weapon.name.localeCompare(b[1].weapon.name);
+          } else {
+            return b[1].weapon.name.localeCompare(a[1].weapon.name);
+          }
+        case 'hp':
+          if (sortOrder) {
+            return a[1].stats.hp - b[1].stats.hp;
+          } else {
+            return b[1].stats.hp - a[1].stats.hp;
+          }
+        case 'atk':
+          if (sortOrder) {
+            return a[1].stats.atk - b[1].stats.atk;
+          } else {
+            return b[1].stats.atk - a[1].stats.atk;
+          }
+        case 'def':
+          if (sortOrder) {
+            return a[1].stats.def - b[1].stats.def;
+          } else {
+            return b[1].stats.def - a[1].stats.def;
+          }
+        case 'constellation':
+          const ca = constellation[a[0]]
+            ? constellation[a[0]].default + constellation[a[0]].wish + constellation[a[0]].manual - 1
+            : -999999;
+          const cb = constellation[b[0]]
+            ? constellation[b[0]].default + constellation[b[0]].wish + constellation[b[0]].manual - 1
+            : -999999;
+          if (sortOrder) {
+            return ca - cb;
+          } else {
+            return cb - ca;
+          }
+      }
+    });
 
   function sort(by) {
     if (sortBy === by) {
@@ -69,6 +109,22 @@
     } else {
       sortBy = by;
     }
+  }
+
+  function orderSelectChanged() {
+    sort(sortBySelect.value);
+  }
+
+  function orderGridChange() {
+    sortOrder = !sortOrder;
+  }
+
+  function toggleElement(element) {
+    elementFilter[element] = !elementFilter[element];
+  }
+
+  function toggleWeapon(weapon) {
+    weaponFilter[weapon] = !weaponFilter[weapon];
   }
 
   async function processWishes() {
@@ -153,6 +209,7 @@
   onMount(async () => {
     await getConstellation();
   });
+
 </script>
 
 <svelte:head>
@@ -192,6 +249,106 @@
   </div>
 
   {#if type === 'grid'}
+    <div class="flex flex-col lg:flex-row flex-wrap px-4 md:pl-8 md:pr-4 mb-4">
+      <div class="flex mr-2 mb-2 lg:mb-0">
+        <Select
+          bind:selected={sortBySelect}
+          on:change={orderSelectChanged}
+          options={sortOptions}
+          className="w-full md:w-48 mr-2"
+          placeholder={$t('characters.sortBy')}
+        />
+        <Button on:click={orderGridChange}>
+          <Icon path={sortOrder ? mdiSortAscending : mdiSortDescending} />
+        </Button>
+      </div>
+      <div class="flex flex-col md:flex-row">
+        <div class="flex items-center justify-center md:justify-start md:mr-4">
+          <button
+            on:click={() => toggleElement('pyro')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.pyro
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/elements/pyro.png" alt="pyro" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+          <button
+            on:click={() => toggleElement('hydro')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.hydro
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/elements/hydro.png" alt="hydro" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+          <button
+            on:click={() => toggleElement('anemo')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.anemo
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/elements/anemo.png" alt="anemo" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+          <button
+            on:click={() => toggleElement('electro')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.electro
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/elements/electro.png" alt="electro" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+          <button
+            on:click={() => toggleElement('cryo')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.cryo
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/elements/cryo.png" alt="cryo" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+        </div>
+        <div class="flex items-center justify-center md:justify-start">
+          <button
+            on:click={() => toggleWeapon('sword')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.sword
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/weapons/sword.png" alt="sword" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+          <button
+            on:click={() => toggleWeapon('claymore')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.claymore
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/weapons/claymore.png" alt="claymore" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+          <button
+            on:click={() => toggleWeapon('polearm')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.polearm
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/weapons/polearm.png" alt="polearm" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+          <button
+            on:click={() => toggleWeapon('catalyst')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.catalyst
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/weapons/catalyst.png" alt="catalyst" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+          <button
+            on:click={() => toggleWeapon('bow')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.bow
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/weapons/bow.png" alt="bow" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+        </div>
+      </div>
+    </div>
     <div class="px-4 md:pl-6 md:pr-4 flex flex-wrap max-w-screen-xl mt-2">
       {#each chars as [id, char] (id)}
         <a
@@ -214,7 +371,7 @@
           >
             {#if constellation[id]}
               <span class="mx-1 text-white text-xs font-semibold">
-                C{Math.max(0, (constellation[id].default + constellation[id].wish + constellation[id].manual) - 1)}
+                C{Math.max(0, constellation[id].default + constellation[id].wish + constellation[id].manual - 1)}
               </span>
             {/if}
             <img class="w-4 h-4" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />
@@ -239,6 +396,14 @@
             >
             <TableHeader on:click={() => sort('element')} sort={sortBy === 'element'} order={sortOrder} align="center">
               {$t('characters.element')}
+            </TableHeader>
+            <TableHeader
+              on:click={() => sort('constellation')}
+              sort={sortBy === 'constellation'}
+              order={sortOrder}
+              align="center"
+            >
+              {$t('characters.const')}
             </TableHeader>
             <TableHeader on:click={() => sort('rarity')} sort={sortBy === 'rarity'} order={sortOrder} align="center">
               {$t('characters.rarity')}
@@ -265,6 +430,11 @@
                 <td>{char.name}</td>
                 <td class="text-center">
                   <img class="w-8 h-8 inline" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />
+                </td>
+                <td class="text-center">
+                  C{constellation[id]
+                    ? Math.max(0, constellation[id].default + constellation[id].wish + constellation[id].manual - 1)
+                    : 0}
                 </td>
                 <td class="text-center">
                   <Icon color={char.rarity === 5 ? '#B9812E' : '#AD76B0'} path={mdiStar} />
@@ -319,4 +489,5 @@
     padding-top: 0.85rem;
     padding-bottom: 0.85rem;
   }
+
 </style>

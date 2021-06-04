@@ -78,6 +78,7 @@
     "talents": "Talents",
     "passiveTalents": "Passive Talents",
     "constellations": "Constellations",
+    "const": "Const",
     "asc": "ASC",
     "lvl": "LVL",
     "hp": "HP",
@@ -98,7 +99,8 @@
     "cryoDamageBonus": "Cryo DMG Bonus",
     "anemoDamageBonus": "Anemo DMG Bonus",
     "physicalDamageBonus": "Physical DMG Bonus",
-    "geoDamageBonus": "Geo DMG Bonus"
+    "geoDamageBonus": "Geo DMG Bonus",
+    "sortBy": "Sort by..."
   },
   "wish": {
     "title": "Wish Counter",
