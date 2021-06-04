@@ -246,9 +246,8 @@
           <p class="font-semibold {category.id === active ? 'text-black' : 'text-white'}">{category.name}</p>
           <div class="flex">
             <p class="flex-1 {category.id === active ? 'text-gray-900' : 'text-gray-400'}">
-              {category.finished}
-              {$t('achievement.of')}
-              {category.total}
+              {category.finished}/{category.total}
+              ({((category.finished / category.total) * 100).toFixed(0)}%)
             </p>
             <p class={category.id === active ? 'text-gray-900' : 'text-gray-400'}>
               {category.primogem}
