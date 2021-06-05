@@ -632,5 +632,20 @@
     "room": "Room {number}",
     "exteriorNum": "Area {number}",
     "corridor": "Corridor"
+  },
+  "weapon": {
+    "title": "Weapon List",
+    "subtitle": "Stats are at max level",
+    "name": "Name",
+    "type": "Type",
+    "rarity": "Rarity",
+    "atk": "ATK",
+    "secondary": "Secondary",
+    "critRate": "CRIT Rate",
+    "critDamage": "CRIT DMG",
+    "em": "Elemental Mastery",
+    "er": "Energy Recharge",
+    "atkPercent": "ATK",
+    "physicalDamage": "Physical DMG Bonus"
   }
 }
