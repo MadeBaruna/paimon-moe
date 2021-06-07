@@ -269,7 +269,7 @@ export const eventsData = [
       name: 'Spiral Abyss',
       image: 'spiral_abyss.jpg',
       pos: '50% 20%',
-      start: '2021-06-06 04:00:00',
+      start: '2021-06-16 04:00:00',
       end: '2021-07-01 04:00:00',
       color: '#4299E1',
       description:
