@@ -7,7 +7,8 @@
 </script>
 
 <script>
-  import { t } from 'svelte-i18n';
+  import { onMount } from 'svelte';
+  import { locale, t } from 'svelte-i18n';
   import TableHeader from '../../components/Table/TableHeader.svelte';
 
   export let data;
@@ -87,6 +88,18 @@
           return b.secondary.localeCompare(a.secondary);
         }
     }
+  });
+
+  async function changeLocale(locale) {
+    const _data = await import(`../../data/weapons/${locale}.json`);
+    data = _data.default;
+    process();
+  }
+
+  onMount(async () => {
+    locale.subscribe((val) => {
+      changeLocale(val);
+    });
   });
 
 </script>

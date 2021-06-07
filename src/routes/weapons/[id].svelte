@@ -13,8 +13,9 @@
 
 <script>
   import { mdiCircle, mdiStar } from '@mdi/js';
-  import { t } from 'svelte-i18n';
+  import { locale, t } from 'svelte-i18n';
   import Icon from '../../components/Icon.svelte';
+  import { onMount } from 'svelte';
 
   const rarity = {
     1: 'text-white',
@@ -33,6 +34,17 @@
   export let id;
   export let weapon;
   // export let materials;
+
+  async function changeLocale(locale) {
+    const _data = await import(`../../data/weapons/${locale}.json`);
+    weapon = _data.default[id];
+  }
+
+  onMount(async () => {
+    locale.subscribe((val) => {
+      changeLocale(val);
+    });
+  });
 
   $: multiplier = weapon.secondary.name === 'em' ? 1 : 100;
   $: suffix = weapon.secondary.name === 'em' ? '' : '%';
