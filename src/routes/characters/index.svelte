@@ -33,6 +33,7 @@
     electro: true,
     cryo: true,
     dendro: true,
+    geo: true,
   };
   let weaponFilter = {
     sword: true,
@@ -303,6 +304,14 @@
               : 'opacity-25'}"
           >
             <img src="/images/elements/cryo.png" alt="cryo" class="w-8 h-8" style="min-width: 2rem;" />
+          </button>
+          <button
+            on:click={() => toggleElement('geo')}
+            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.geo
+              ? ''
+              : 'opacity-25'}"
+          >
+            <img src="/images/elements/geo.png" alt="geo" class="w-8 h-8" style="min-width: 2rem;" />
           </button>
         </div>
         <div class="flex items-center justify-center md:justify-start">
