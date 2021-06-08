@@ -107,12 +107,14 @@
         time: e[1],
         type: e[0],
         pity: 0,
+        manualInput: true,
       }));
       const end = append.map((e) => ({
         id: e[2],
         time: e[1],
         type: e[0],
         pity: 0,
+        manualInput: true,
       }));
 
       const combined = [...beginning, ...data, ...end];

@@ -2,11 +2,6 @@ import dayjs from 'dayjs';
 import { process } from './wish';
 
 const bannerCategories = ['beginners', 'standard', 'character-event', 'weapon-event'];
-const rareInclude = {
-  300011: ['rosaria'],
-  300012: ['yanfei', 'noelle', 'diona'],
-  300013: ['xingqiu', 'beidou', 'xinyan'],
-};
 
 async function sendWish(data) {
   try {
@@ -58,11 +53,15 @@ export async function submitWishTally() {
       ]);
 
       // specific 4star include
-      if (rareInclude[prefixId + i + 1]) {
+      if (banner[i].rare && banner[i].featuredRare) {
         const includedRarePulls = banner[i].rare.character
-          .filter((e) => rareInclude[prefixId + i + 1].includes(e.id))
-          .map((e) => [dayjs(e.time).unix().toString(), e.id, e.type, e.pity, e.group === 'group', true, 4]);
+          .filter((e) => banner[i].featuredRare.includes(e.id))
+          .map((e) => [dayjs(e.time).unix().toString(), e.id, e.type, e.pity, e.group === 'group', e.guaranteed, 4]);
+        const includedRareWeaponPulls = banner[i].rare.weapon
+          .filter((e) => banner[i].featuredRare.includes(e.id))
+          .map((e) => [dayjs(e.time).unix().toString(), e.id, e.type, e.pity, e.group === 'group', e.guaranteed, 4]);
         legendaryPulls.push(...includedRarePulls);
+        legendaryPulls.push(...includedRareWeaponPulls);
       }
 
       // console.log(pityCount);
