@@ -8,12 +8,14 @@
   dayjs.extend(duration);
   dayjs.extend(timezone);
 
-  import { getTimeDifference, server } from '../../stores/server';
+  import { getTimeDifference, getTimeDifferenceAsia, getTimeOffset, server } from '../../stores/server';
   import { eventsData } from '../../data/timeline';
 
   import Checkbox from '../../components/Checkbox.svelte';
   import EventItem from './_item.svelte';
   import DetailModal from './_detail.svelte';
+  import { getAccountPrefix } from '../../stores/account';
+  import { readSave } from '../../stores/saveManager';
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -24,6 +26,7 @@
   let showAsLocalTime = true;
   let timeDifference = 0;
   let timeDifferenceEvent = 0;
+  let timeDifferenceAsia = 0;
 
   let dayWidth = 50;
   const eventHeight = 36;
@@ -41,6 +44,8 @@
 
   let browserTimeZone = '';
 
+  let firstLoad = true;
+
   function openDetail(event) {
     openModal(
       DetailModal,
@@ -56,7 +61,12 @@
   }
 
   function convertToDate(e, i) {
-    const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(timeDifferenceEvent, 'minute');
+    let start;
+    if (e.timezoneDependent) {
+      start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(timeDifferenceAsia, 'minute');
+    } else {
+      start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(timeDifferenceEvent, 'minute');
+    }
     const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss').subtract(timeDifferenceEvent, 'minute');
     const duration = end.diff(start, 'day', true);
 
@@ -140,13 +150,16 @@
 
   async function toggleLocalTime() {
     const diff = getTimeDifference();
+    console.log('toggle local time', showAsLocalTime);
 
     if (showAsLocalTime) {
       timeDifferenceEvent = diff;
       timeDifference = 0;
+      timeDifferenceAsia = getTimeDifferenceAsia();
     } else {
       timeDifferenceEvent = 0;
       timeDifference = diff;
+      timeDifferenceAsia = (8 - getTimeOffset()) * 60;
     }
 
     today = dayjs().add(timeDifference, 'minute');
@@ -167,21 +180,35 @@
       top: 0,
       behavior: 'smooth',
     });
+
+    firstLoad = false;
   }
 
   onMount(async () => {
-    await toggleLocalTime();
+    const prefix = getAccountPrefix();
+    const serverSave = await readSave(`${prefix}server`);
+    if (serverSave !== null) {
+      console.log(serverSave);
+      server.set(serverSave);
+    }
+
+    browserTimeZone = dayjs.tz.guess();
+    toggleLocalTime();
 
     const interval = setInterval(() => {
       today = dayjs().add(timeDifference, 'minute');
     }, 1000);
 
-    browserTimeZone = dayjs.tz.guess();
-
     return () => {
       clearInterval(interval);
     };
   });
+
+  function onCheckLocalTime() {
+    if (!firstLoad) {
+      toggleLocalTime();
+    }
+  }
 
   function transformScroll(event) {
     if (!event.deltaY) {
@@ -195,7 +222,8 @@
   }
 
   $: todayOffset = Math.abs(firstDay.diff(today, 'day', true));
-  $: showAsLocalTime, toggleLocalTime();
+  $: showAsLocalTime, onCheckLocalTime();
+
 </script>
 
 <svelte:head>
@@ -214,7 +242,9 @@
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('timeline.title')}</h1>
   {#if !loading}
     <div class="px-4 md:px-8 text-white select-none">
-      <Checkbox bind:checked={showAsLocalTime}>{$t('timeline.localTime')} ({browserTimeZone} - {$server} Server)</Checkbox>
+      <Checkbox bind:checked={showAsLocalTime}>
+        {$t('timeline.localTime')} ({browserTimeZone} - {$server} Server)
+      </Checkbox>
     </div>
     <div class="w-full overflow-x-auto px-4 md:px-8" bind:this={timelineContainer} on:wheel={transformScroll}>
       <div
@@ -307,4 +337,5 @@
     background: rgba(0, 0, 0, 0.35);
     @apply rounded-xl;
   }
+
 </style>

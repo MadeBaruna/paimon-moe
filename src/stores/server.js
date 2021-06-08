@@ -21,14 +21,21 @@ const weekdays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'frida
 
 export const getTimeOffset = () => {
   return timeOffset[get(server)];
-}
+};
 
 export const getTimeDifference = () => {
   const now = dayjs();
   const local = now.utcOffset();
   const serverTime = now.utcOffset(timeOffset[get(server)]).utcOffset();
   return serverTime - local;
-}
+};
+
+export const getTimeDifferenceAsia = () => {
+  const now = dayjs();
+  const local = now.utcOffset();
+  const serverTime = now.utcOffset(timeOffset.Asia).utcOffset();
+  return serverTime - local;
+};
 
 export const getCurrentDay = () => {
   const time = dayjs().utcOffset(timeOffset[get(server)]);

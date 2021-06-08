@@ -8,18 +8,31 @@
 
   import Icon from '../../components/Icon.svelte';
   import { eventsData } from '../../data/timeline';
+  import { getTimeDifference, getTimeDifferenceAsia, server } from '../../stores/server';
+  import { getAccountPrefix } from '../../stores/account';
+  import { readSave } from '../../stores/saveManager';
 
   const dispatch = createEventDispatcher();
 
-  const now = dayjs();
+  let now;
   let upcoming = [];
   let current = [];
+
+  let timeDifferenceEvent;
+  let timeDifferenceAsia;
 
   function checkEvent(event) {
     if (!event.showOnHome) return;
 
-    const start = dayjs(event.start);
-    const end = dayjs(event.end);
+    let start;
+    if (event.timezoneDependent) {
+      start = dayjs(event.start, 'YYYY-MM-DD HH:mm:ss').subtract(timeDifferenceAsia, 'minute');
+    } else {
+      start = dayjs(event.start, 'YYYY-MM-DD HH:mm:ss').subtract(timeDifferenceEvent, 'minute');
+    }
+
+    const end = dayjs(event.end).subtract(timeDifferenceEvent, 'minute');
+
     if (start.isBefore(now) && end.isAfter(now)) {
       const diff = end.diff(now);
       const timeLeft = dayjs.duration(diff);
@@ -46,10 +59,21 @@
   }
 
   onMount(async () => {
+    const prefix = getAccountPrefix();
+    const serverSave = await readSave(`${prefix}server`);
+    if (serverSave !== null) {
+      server.set(serverSave);
+    }
+
+    timeDifferenceEvent = getTimeDifference();
+    timeDifferenceAsia = getTimeDifferenceAsia();
+    now = dayjs();
+
     parseEvents();
     await tick();
     dispatch('done');
   });
+
 </script>
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
