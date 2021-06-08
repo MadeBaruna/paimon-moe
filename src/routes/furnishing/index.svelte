@@ -3,6 +3,7 @@
   export async function preload() {
     return { data };
   }
+
 </script>
 
 <script>
@@ -34,15 +35,15 @@
     corridor: 150,
   };
   const maxLoad = {
-    exterior: 8700,
-    exterior2: 8700,
-    exterior3: 8700,
-    exterior4: 8700,
-    hall: 8700,
-    room1: 3700,
-    room2: 3700,
-    room3: 3700,
-    corridor: 3700,
+    exterior: 10000,
+    exterior2: 10000,
+    exterior3: 10000,
+    exterior4: 10000,
+    hall: 10000,
+    room1: 4000,
+    room2: 4000,
+    room3: 4000,
+    corridor: 4000,
   };
   let currentUsage = {
     exterior: {},
@@ -161,6 +162,7 @@
       changeLocale(val);
     });
   });
+
 </script>
 
 <svelte:head>
@@ -359,4 +361,5 @@
     @apply block absolute top-0 left-0 w-full h-full bg-item;
     content: '';
   }
+
 </style>
