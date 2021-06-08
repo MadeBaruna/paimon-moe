@@ -33,6 +33,7 @@
       }, 1);
     });
   });
+
 </script>
 
 <svelte:head>
@@ -55,10 +56,10 @@
     <Event on:done={onDone} />
     <Item on:done={onDone} />
     <Discord on:done={onDone} />
-    <div class="flex flex-col space-y-4">
-      <Calculator on:done={onDone} />
-      <Achievement on:done={onDone} />
-    </div>
+    <Calculator on:done={onDone} />
+    <Achievement on:done={onDone} />
     <Twitter on:done={onDone} />
+    <!-- <div class="flex flex-col space-y-4">
+    </div> -->
   </Masonry>
 </div>
