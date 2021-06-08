@@ -6198,13 +6198,13 @@ export const weaponList = {
     ],
   },
   staff_of_homa: {
-    name: "Staff of Homa",
-    id: "staff_of_homa",
+    name: 'Staff of Homa',
+    id: 'staff_of_homa',
     rarity: 5,
     type: weapons.polearm,
-    source: "wish",
+    source: 'wish',
     atk: 46,
-    secondary: "CRIT DMG",
+    secondary: 'CRIT DMG',
     ascension: [
       {
         items: [
@@ -6257,13 +6257,13 @@ export const weaponList = {
     ],
   },
   elegy_for_the_end: {
-    name: "Elegy for the End",
-    id: "elegy_for_the_end",
+    name: 'Elegy for the End',
+    id: 'elegy_for_the_end',
     rarity: 5,
     type: weapons.bow,
-    source: "wish",
+    source: 'wish',
     atk: 46,
-    secondary: "Energy Recharge",
+    secondary: 'Energy Recharge',
     ascension: [
       {
         items: [
@@ -6375,7 +6375,7 @@ export const weaponList = {
     ],
   },
   song_of_broken_pines: {
-    name: "Song of Broken Pines",
+    name: 'Song of Broken Pines',
     id: 'song_of_broken_pines',
     rarity: 5,
     atk: 46,
@@ -6430,6 +6430,124 @@ export const weaponList = {
           { item: itemList.ominous_mask, amount: 18 },
         ],
         mora: 65000,
+      },
+    ],
+  },
+  mitternachts_waltz: {
+    name: 'Mitternachts Waltz',
+    id: 'mitternachts_waltz',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Phys DMG%',
+    type: weapons.bow,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.tile_of_decarabians_tower, amount: 3 },
+          { item: itemList.heavy_horn, amount: 3 },
+          { item: itemList.treasure_hoarder_insignia, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.debris_of_decarabians_city, amount: 3 },
+          { item: itemList.heavy_horn, amount: 12 },
+          { item: itemList.treasure_hoarder_insignia, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.debris_of_decarabians_city, amount: 6 },
+          { item: itemList.black_bronze_horn, amount: 6 },
+          { item: itemList.silver_raven_insignia, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.fragment_of_decarabians_epic, amount: 3 },
+          { item: itemList.black_bronze_horn, amount: 12 },
+          { item: itemList.silver_raven_insignia, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.fragment_of_decarabians_epic, amount: 6 },
+          { item: itemList.black_crystal_horn, amount: 9 },
+          { item: itemList.golden_raven_insignia, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.scattered_piece_of_decarabians_dream, amount: 4 },
+          { item: itemList.black_crystal_horn, amount: 18 },
+          { item: itemList.golden_raven_insignia, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  dodoco_tales: {
+    name: 'Dodoco Tales',
+    id: 'dodoco_tales',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Phys DMG%',
+    type: weapons.catalyst,
+    source: 'Midsummer Island Adventure Event',
+    ascension: [
+      {
+        items: [
+          { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 3 },
+          { item: itemList.damaged_mask, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
+          { item: itemList.dead_ley_line_branch, amount: 12 },
+          { item: itemList.damaged_mask, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
+          { item: itemList.dead_ley_line_leaves, amount: 6 },
+          { item: itemList.stained_mask, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
+          { item: itemList.dead_ley_line_leaves, amount: 12 },
+          { item: itemList.stained_mask, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
+          { item: itemList.ley_line_sprouts, amount: 9 },
+          { item: itemList.ominous_mask, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
+          { item: itemList.ley_line_sprouts, amount: 18 },
+          { item: itemList.ominous_mask, amount: 12 },
+        ],
+        mora: 45000,
       },
     ],
   },

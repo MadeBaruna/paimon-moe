@@ -34,7 +34,7 @@
   function process() {
     const _weapons = [];
     for (const [id, weapon] of Object.entries(data)) {
-      if (['amber_bead', 'ebony_bow', 'quartz', 'the_flagstaff'].includes(id)) continue;
+      if (['amber_bead', 'ebony_bow', 'quartz', 'the_flagstaff', 'freedom-sworn'].includes(id)) continue;
 
       _weapons.push({
         id,
