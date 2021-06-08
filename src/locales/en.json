@@ -390,7 +390,8 @@
       "mora": "Mora (approximate ±40)",
       "expWasted": "EXP Wasted",
       "addToTodo": "Add to Todo List",
-      "addedToTodo": "Added to Todo List"
+      "addedToTodo": "Added to Todo List",
+      "talent": ["Attack", "Skill", "Burst"]
     },
     "expTable": {
       "level": "Level",

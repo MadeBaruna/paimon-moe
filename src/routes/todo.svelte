@@ -270,6 +270,7 @@
 
   $: $todos, updateSummary();
   $: columnCount, updateId();
+
 </script>
 
 <svelte:head>
@@ -456,7 +457,7 @@
           </Button>
         </div>
         <table class="w-full">
-          {#each Object.entries(todo.resources) as [id, amount]}
+          {#each Object.entries(todo.resources).sort((a, b) => b[1] - a[1]) as [id, amount]}
             <tr>
               <td class="text-right border-b border-gray-700 py-1">
                 <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-no-wrap`}>
@@ -496,4 +497,5 @@
       @apply border-b-0;
     }
   }
+
 </style>

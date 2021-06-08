@@ -284,6 +284,8 @@
         }
       }
     });
+
+    moraNeeded = moraNeeded + talentMaterial.mora;
   }
 
   function calculateTalent() {
@@ -407,6 +409,14 @@
           calculateTalent();
         }
       }
+
+      for (const [id, item] of Object.entries(talentMaterial.items)) {
+        if (ascensionResouce[id]) {
+          ascensionResouce[id].amount += item.amount;
+        } else {
+          ascensionResouce[id] = item;
+        }
+      }
     }
 
     changed = false;
@@ -429,14 +439,6 @@
       return prev;
     }, {});
 
-    const talentRes = Object.keys(talentMaterial.items).reduce((prev, item) => {
-      if (talentMaterial.items[item].amount > 0) {
-        prev[item] = talentMaterial.items[item].amount;
-      }
-
-      return prev;
-    }, {});
-
     addTodo({
       type: 'character',
       character: withAscension ? selectedCharacter : null,
@@ -445,13 +447,11 @@
         mora: moraNeeded,
         ...levelRes,
         ...ascensionRes,
-        ...talentRes,
       },
       original: {
         mora: moraNeeded,
         ...levelRes,
         ...ascensionRes,
-        ...talentRes,
       },
     });
 
@@ -460,6 +460,7 @@
       addedToTodo = false;
     }, 2000);
   }
+
 </script>
 
 <div class="bg-item rounded-xl p-4">
@@ -646,26 +647,6 @@
               {/if}
             {/each}
             {#each Object.entries(ascensionResouce) as [id, item]}
-              {#if item.amount > 0}
-                <tr>
-                  <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-no-wrap"
-                      >{item.amount}
-                      <Icon size={0.5} path={mdiClose} /></span
-                    >
-                  </td>
-                  <td class="border-b border-gray-700 py-1">
-                    <span class="text-white">
-                      <span class="w-6 inline-block">
-                        <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={item.name} />
-                      </span>
-                      {item.name}
-                    </span>
-                  </td>
-                </tr>
-              {/if}
-            {/each}
-            {#each Object.entries(talentMaterial.items) as [id, item]}
               {#if item.amount > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">
