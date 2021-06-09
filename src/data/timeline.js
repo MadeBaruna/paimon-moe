@@ -19,7 +19,6 @@ export const eventsData = [
       end: '2021-07-08 03:59:59',
       color: '#7A92FF',
       zoom: '180%',
-      url: 'https://genshin.mihoyo.com/en/news/detail/12368',
       showOnHome: true,
     },
   ],
