@@ -60,6 +60,10 @@
     "twitter": {
       "title": "Follow my Twitter, akan post tentang apa yang lagi di develop dan update terbaru tentang paimon.moe!",
       "detail": "Follow Twitter"
+    },
+    "furnishing": {
+      "title": "Cek furnitur apa saja yang kamu perlukan untuk menyelesaikan suatu set. Dan kamu juga bisa melihat beban masing-masing furnitur.",
+      "detail": "Furnitur"
     }
   },
   "characters": {

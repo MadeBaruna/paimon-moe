@@ -65,6 +65,10 @@
     "achievement": {
       "title": "🏆 View and track your achievement list here",
       "detail": "Achievement"
+    },
+    "furnishing": {
+      "title": "Check what furnishing you need to make to complete a sets. And also you can view the load of each furnishing.",
+      "detail": "Furnishing"
     }
   },
   "characters": {
