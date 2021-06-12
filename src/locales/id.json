@@ -568,6 +568,27 @@
     "info": [
       "Ini menunjukkan berapa beban yang bisa ditampung dalam pulau. Masing-masing furnitur mempunyai nilai beban yang tersembunyi yang bisa dilihat di bawah.",
       "(Beban maximum belum dikonfirmasi!)"
-    ]
+    ],
+    "hall": "Aula Utama",
+    "room": "Kamar {number}",
+    "exteriorNum": "Area {number}",
+    "corridor": "Koridor",
+    "inventoryButton": "Inventory",
+    "listButton": "List",
+    "inventory": {
+      "title": "Furnishing Inventory",
+      "subtitle": "Beberapa kategori special seperti dinding tidak ditampilkan",
+      "all": "Semua",
+      "openSets": "Buka Set"
+    },
+    "sets": {
+      "title": "Furnishing Set",
+      "subtitle": "Klik icon furnitur untuk detail, dan kamu bisa klik icon karakter untuk menandai mereka! Buka menu inventory diatas untuk mengisi jumlah furnitur yang kamu punya.",
+      "setPlaced": "Set ditempatkan",
+      "setUnplaced": "Set belum ditempatkan",
+      "inInventory": "Di inventory",
+      "available": "Tersedia",
+      "used": "Digunakan di set lain"
+    }
   }
 }

@@ -604,7 +604,24 @@
     "hall": "Hall",
     "room": "Room {number}",
     "exteriorNum": "Area {number}",
-    "corridor": "Corridor"
+    "corridor": "Corridor",
+    "inventoryButton": "Inventory",
+    "listButton": "List",
+    "inventory": {
+      "title": "Furnishing Inventory",
+      "subtitle": "Some special categories like wall are not shown",
+      "all": "All",
+      "openSets": "Open Sets"
+    },
+    "sets": {
+      "title": "Furnishing Sets",
+      "subtitle": "Click the furnishing icon for detail, and you can click the character icon to mark them! Open the Inventory menu above to fill your furnishing items count.",
+      "setPlaced": "Set as placed",
+      "setUnplaced": "Set as unplaced",
+      "inInventory": "In inventory",
+      "available": "Available",
+      "used": "Used in other set"
+    }
   },
   "weapon": {
     "title": "Weapon List",
