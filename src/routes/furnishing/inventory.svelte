@@ -183,7 +183,7 @@
       </div>
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-2 flex-1 pt-20 lg:pt-2"
-        style="height: fit-content;"
+        style="height: max-content;"
         bind:this={inventoryContainer}
       >
         {#each categoryData[`${active.name}-${active.type}`].items as item (item.id)}
@@ -200,7 +200,7 @@
               <p class="text-sm flex-1">
                 {item.name}
               </p>
-              <div class="flex items-center bg-black bg-opacity-25 rounded-md" style="width: fit-content;">
+              <div class="flex items-center bg-black bg-opacity-25 rounded-md" style="width: max-content;">
                 <button class="hover:text-primary" on:click={() => changeItemValue(item.id, (saved[item.id] || 0) + 1)}>
                   <Icon path={mdiPlus} />
                 </button>
