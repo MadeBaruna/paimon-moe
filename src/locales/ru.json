@@ -77,7 +77,7 @@
     "talents": "Таланты",
     "passiveTalents": "Пассивные таланты",
     "constellations": "Созвездие",
-	"const": "Созвездие",
+    "const": "Созвездие",
     "asc": "Возвышение",
     "lvl": "Уровень",
     "hp": "HP",
@@ -98,8 +98,8 @@
     "cryoDamageBonus": "Бонус Крио урона",
     "anemoDamageBonus": "Бонус Анемо урона",
     "physicalDamageBonus": "Бонус физ. урона",
-    "geoDamageBonus": "Бонус Гео урона"
-	"sortBy": "Сортировать по..."
+    "geoDamageBonus": "Бонус Гео урона",
+    "sortBy": "Сортировать по..."
   },
   "wish": {
     "title": "Счетчик молитв",
@@ -619,10 +619,10 @@
     "em": "Мастерство стихий",
     "er": "Восст.энергии",
     "atkPercent": "Сила атаки",
-	"hpPercent": "HP",
+    "hpPercent": "HP",
     "defPercent": "Защита",
-    "physicalDamage": "Бонус физ.урона"
-	"bow": "Лук",
+    "physicalDamage": "Бонус физ.урона",
+    "bow": "Лук",
     "polearm": "Копьё",
     "sword": "Меч",
     "catalyst": "Катализатор",
