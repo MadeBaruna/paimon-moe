@@ -1,161 +1,128 @@
 <script context="module">
+  import setsData from '../../data/furnishing/sets/en.json';
   import data from '../../data/furnishing/en.json';
   export async function preload() {
-    return { data };
+    return { data, setsData };
   }
 
 </script>
 
 <script>
-  import { onMount } from 'svelte';
   import { locale, t } from 'svelte-i18n';
   import debounce from 'lodash/debounce';
-  import { mdiInformationOutline, mdiMinus, mdiPlus } from '@mdi/js';
 
-  import TableHeader from '../../components/Table/TableHeader.svelte';
+  import Button from '../../components/Button.svelte';
+  import CharacterSelect from '../../components/CharacterSelect.svelte';
+  import { onMount } from 'svelte';
   import Icon from '../../components/Icon.svelte';
+  import { mdiCheckCircleOutline, mdiClose } from '@mdi/js';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
 
   export let data;
+  export let setsData;
 
-  let type = 'hall';
-  let items = [];
-  let max = 0;
+  let loading = true;
+  let furnishing = {};
+  let sets = [];
+  let saved = {};
+  let _saved = {};
+  let used = {};
+  let placed = {};
+  let character = {};
+  let charFilter = null;
 
-  const minEnergy = {
-    exterior: 0,
-    exterior2: 0,
-    exterior3: 0,
-    exterior4: 0,
-    hall: 150,
-    room1: 150,
-    room2: 150,
-    room3: 150,
-    corridor: 150,
-  };
-  const maxLoad = {
-    exterior: 10000,
-    exterior2: 10000,
-    exterior3: 10000,
-    exterior4: 10000,
-    hall: 10000,
-    room1: 4000,
-    room2: 4000,
-    room3: 4000,
-    corridor: 4000,
-  };
-  let currentUsage = {
-    exterior: {},
-    exterior2: {},
-    exterior3: {},
-    exterior4: {},
-    hall: {},
-    room1: {},
-    room2: {},
-    room3: {},
-    corridor: {},
-  };
-  $: currentLoad = Object.entries(currentUsage[type]).reduce(
-    (prev, [id, val]) => {
-      prev.load += data[id].load * val;
-      prev.energy += data[id].energy * val;
-      return prev;
-    },
-    {
-      load: 0,
-      energy: minEnergy[type],
-    },
-  );
+  function parseSets() {
+    const _sets = [];
+    furnishing = data;
+    used = {};
+    saved = { ..._saved };
+    for (const set of setsData) {
+      for (const [item, amount] of Object.entries(set.items)) {
+        if (placed[set.id] === true) {
+          if (used[item] === undefined) {
+            used[item] = 0;
+          }
 
-  let sortBy = 'ratio';
-  let sortOrder = false;
-
-  async function parseFurnishing() {
-    const currentType = type.startsWith('exterior') ? 'exterior' : 'interior';
-    items = Object.values(data)
-      .filter((e) => e.type === currentType || e.type === '')
-      .sort((a, b) => {
-        switch (sortBy) {
-          case 'ratio':
-            if (sortOrder) return a.ratio - b.ratio;
-            else return b.ratio - a.ratio;
-          case 'energy':
-            if (sortOrder) return a.energy - b.energy;
-            else return b.energy - a.energy;
-          case 'load':
-            if (sortOrder) return a.load - b.load;
-            else return b.load - a.load;
-          case 'using':
-            if (sortOrder) return (currentUsage[type][a.id] || 0) - (currentUsage[type][b.id] || 0);
-            else return (currentUsage[type][b.id] || 0) - (currentUsage[type][a.id] || 0);
-          case 'name':
-            if (sortOrder) return a.name.localeCompare(b.name);
-            else return b.name.localeCompare(a.name);
+          used[item] += amount;
+          saved[item] -= amount;
         }
-      });
-  }
-
-  function sort(by) {
-    if (sortBy === by) {
-      sortOrder = !sortOrder;
-    } else {
-      sortBy = by;
+      }
     }
-    parseFurnishing();
+
+    for (const set of setsData.sort((a, b) => b.gift - a.gift)) {
+      set.enough = {};
+      set.canBePlaced = true;
+
+      for (const [item, amount] of Object.entries(set.items)) {
+        let enough = true;
+        if (placed[set.id] !== true) {
+          enough = saved[item] >= amount;
+        }
+
+        set.enough[item] = enough;
+        if (!enough) set.canBePlaced = false;
+      }
+
+      _sets.push(set);
+    }
+
+    sets = _sets;
+    console.log(sets);
+    loading = false;
   }
 
-  function changeType(_type) {
-    type = _type;
-    sortBy = 'ratio';
-    sortOrder = false;
-    parseFurnishing();
-    max = items[0].ratio;
-  }
-
-  function changeUsage(id, val) {
-    if (currentUsage[type][id] === undefined) currentUsage[type][id] = 0;
-    currentUsage[type][id] = Math.max(0, currentUsage[type][id] + val);
-    if (currentUsage[type][id] === 0) delete currentUsage[type][id];
+  function place(id) {
+    placed[id] = !placed[id];
     saveData();
+    parseSets();
+  }
+
+  function checkCharacter(setId, id) {
+    if (character[setId] === undefined) {
+      character[setId] = {};
+    }
+
+    character[setId][id] = !character[setId][id];
+    saveData();
+  }
+
+  async function readLocalData() {
+    const prefix = getAccountPrefix();
+    const savedIventory = await readSave(`${prefix}furnishing-inventory`);
+    const savedSet = await readSave(`${prefix}furnishing-set-placed`);
+    const savedSetCharacters = await readSave(`${prefix}furnishing-set-character`);
+    if (savedIventory !== null) {
+      _saved = { ...savedIventory };
+      saved = { ...savedIventory };
+    }
+    if (savedSet !== null) {
+      placed = savedSet;
+    }
+    if (savedSetCharacters !== null) {
+      character = savedSetCharacters;
+    }
   }
 
   async function changeLocale(locale) {
     data = (await import(`../../data/furnishing/${locale}.json`)).default;
-    parseFurnishing();
-  }
-
-  function calculateColor(percentage) {
-    const hue = (percentage / max) * 120;
-    return `color: hsl(${hue}, 100%, 60%);`;
-  }
-
-  function calculateColorLoad(percentage) {
-    const hue = Math.max((1 - percentage) * 120, 0);
-    return `color: hsl(${hue}, 100%, 60%);`;
+    setsData = (await import(`../../data/furnishing/sets/${locale}.json`)).default;
+    parseSets();
   }
 
   const saveData = debounce(async () => {
-    const data = currentUsage;
-
     const prefix = getAccountPrefix();
-    await updateSave(`${prefix}furnishing`, data);
-  }, 2000);
+    await updateSave(`${prefix}furnishing-set-placed`, placed);
+    await updateSave(`${prefix}furnishing-set-character`, character);
+  }, 1000);
 
-  async function readLocalData() {
-    const prefix = getAccountPrefix();
-    const furnishingData = await readSave(`${prefix}furnishing`);
-    if (furnishingData !== null) {
-      currentUsage = {
-        ...currentUsage,
-        ...furnishingData,
-      };
+  function onCharFilterChanged() {
+    if (!loading) {
+      parseSets();
     }
   }
 
   onMount(async () => {
-    parseFurnishing();
-    max = items[0].ratio;
     await readLocalData();
 
     locale.subscribe((val) => {
@@ -163,203 +130,127 @@
     });
   });
 
+  // $: charFilter, onCharFilterChanged();
+
 </script>
 
 <svelte:head>
-  <title>Furnishing - Paimon.moe</title>
+  <title>Furnishing Sets - Paimon.moe</title>
   <meta name="description" content="Genshin Impact Furnishing list with the load and energy values" />
   <meta property="og:description" content="Genshin Impact Furnishing list with the load and energy values" />
 </svelte:head>
-<div class="lg:ml-64 pt-20 lg:px-8 lg:pt-8 max-w-screen-xl">
-  <div class="px-4 flex md:space-x-2 items-start md:items-center flex-col md:flex-row">
-    <h1 class="font-display font-black text-3xl md:text-4xl text-white">{$t('furnishing.title')}</h1>
-    <div class="flex items-center space-x-2">
-      <div
-        class="rounded-2xl border-2 border-white border-opacity-25 text-white px-4 py-2 group relative"
-        style={calculateColorLoad(currentLoad.load / maxLoad[type])}
-      >
-        <Icon size={0.7} path={mdiInformationOutline} />
-        {$t('furnishing.load')}
-        {currentLoad.load} / {maxLoad[type]}
-        <div
-          class="hidden group-hover:block absolute left-0 transform translate-y-full 
-        bg-white rounded-xl z-50 text-gray-900 px-4 py-2 w-screen max-w-xs md:max-w-sm"
-          style="bottom: -10px;"
-        >
-          <p>{$t('furnishing.info.0')}</p>
-          <p>{$t('furnishing.info.1')}</p>
-        </div>
-      </div>
-      <div class="rounded-2xl border-2 border-white border-opacity-25 text-white px-4 py-2">
-        {$t('furnishing.energy')}
-        {currentLoad.energy}
-      </div>
+<div class="lg:ml-64 pt-20 px-4 lg:px-8 lg:pt-8 max-w-screen-xl">
+  <div class="flex flex-col md:flex-row items-center md:space-x-2 space-y-2 md:space-y-0">
+    <h1 class="font-display font-black text-3xl md:text-4xl text-white">{$t('furnishing.sets.title')}</h1>
+    <div>
+      <a href="/furnishing/inventory">
+        <Button>{$t('furnishing.inventoryButton')}</Button>
+      </a>
+      <a href="/furnishing/list">
+        <Button>{$t('furnishing.listButton')}</Button>
+      </a>
     </div>
   </div>
-  <div class="px-4 flex space-x-2 mt-2 mb-2">
-    <button on:click={() => changeType('hall')} class="pill {type.startsWith('exterior') ? '' : 'active'}">
-      {$t('furnishing.interior')}
-    </button>
-    <button on:click={() => changeType('exterior')} class="pill {type.startsWith('exterior') ? 'active' : ''}">
-      {$t('furnishing.exterior')}
-    </button>
-  </div>
-  {#if type.startsWith('exterior')}
-    <div class="px-4 flex space-x-2 mt-2 mb-4 overflow-x-auto">
-      <button on:click={() => changeType('exterior')} class="pill {type === 'exterior' ? 'active' : ''}">
-        {$t('furnishing.exteriorNum', { values: { number: 1 } })}
-      </button>
-      <button on:click={() => changeType('exterior2')} class="pill {type === 'exterior2' ? 'active' : ''}">
-        {$t('furnishing.exteriorNum', { values: { number: 2 } })}
-      </button>
-      <button on:click={() => changeType('exterior3')} class="pill {type === 'exterior3' ? 'active' : ''}">
-        {$t('furnishing.exteriorNum', { values: { number: 3 } })}
-      </button>
-      <button on:click={() => changeType('exterior4')} class="pill {type === 'exterior4' ? 'active' : ''}">
-        {$t('furnishing.exteriorNum', { values: { number: 4 } })}
-      </button>
-    </div>
+  {#if loading}
+    <p class="text-white">Loading...</p>
   {:else}
-    <div class="px-4 flex space-x-2 mt-2 mb-4 overflow-x-auto">
-      <button on:click={() => changeType('hall')} class="pill {type === 'hall' ? 'active' : ''}">
-        {$t('furnishing.hall')}
-      </button>
-      <button on:click={() => changeType('room1')} class="pill {type === 'room1' ? 'active' : ''}">
-        {$t('furnishing.room', { values: { number: 1 } })}
-      </button>
-      <button on:click={() => changeType('room2')} class="pill {type === 'room2' ? 'active' : ''}">
-        {$t('furnishing.room', { values: { number: 2 } })}
-      </button>
-      <button on:click={() => changeType('room3')} class="pill {type === 'room3' ? 'active' : ''}">
-        {$t('furnishing.room', { values: { number: 3 } })}
-      </button>
-      <button on:click={() => changeType('corridor')} class="pill {type === 'corridor' ? 'active' : ''}">
-        {$t('furnishing.corridor')}
-      </button>
+    <p class="text-gray-400 font-medium pb-2">
+      ※ {$t('furnishing.sets.subtitle')}
+    </p>
+    <div class="w-full md:w-64">
+      <CharacterSelect bind:selected={charFilter} />
+    </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-2 flex-1 mt-2"
+      style="height: fit-content;"
+    >
+      {#each sets as set (set.id)}
+        {#if charFilter === null || (charFilter !== null && set.characters && set.characters.includes(charFilter.id))}
+          <div class="text-white p-2 rounded-xl flex flex-col bg-item">
+            <div class="w-full flex items-center justify-center relative">
+              <img
+                src="/images/furnishing/sets/{set.id}.png"
+                alt=""
+                class="w-full image relative object-contain rounded-xl"
+              />
+              {#if placed[set.id]}
+                <div class="text-green-300 absolute bottom-0 right-0 p-2">
+                  <Icon path={mdiCheckCircleOutline} size={1.5} />
+                </div>
+              {/if}
+            </div>
+            <div class="mt-1 flex flex-col h-full">
+              <p class="text-white mb-1">{set.name}</p>
+              {#if set.gift}
+                <div class="flex -m-1 py-1">
+                  {#each set.characters as char}
+                    <div class="relative cursor-pointer" on:click={() => checkCharacter(set.id, char)}>
+                      <img src="/images/characters/{char}.png" class="w-10 h-10 rounded-full m-1" alt={char} />
+                      {#if character[set.id]?.[char]}
+                        <div class="text-green-300 absolute bottom-0 right-0">
+                          <Icon path={mdiCheckCircleOutline} size={1} />
+                        </div>
+                      {/if}
+                    </div>
+                  {/each}
+                </div>
+              {/if}
+              <div class="flex -m-1 flex-wrap pt-1">
+                {#each Object.entries(set.items) as [item, amount]}
+                  <button
+                    class="rounded-xl {set.enough[item] === true
+                      ? 'bg-background'
+                      : 'bg-red-900'} text-white px-2 furnishing-item focus:outline-none filter"
+                    style="margin: 2px;"
+                  >
+                    <div class="flex items-center">
+                      <img src="/images/furnishing/{item}.png" class="w-8 h-8" alt={item} />
+                      <Icon path={mdiClose} size={0.5} />
+                      <span class="inline-block w-2">{amount}</span>
+                    </div>
+                    <div class="popup text-left">
+                      <p class="text-left mb-1">{furnishing[item].name}</p>
+                      <table>
+                        <tr>
+                          <td>{$t('furnishing.sets.inInventory')}</td>
+                          <td class="pl-2 text-center">{_saved[item] || 0}</td>
+                        </tr>
+                        <tr>
+                          <td>{$t('furnishing.sets.used')}</td>
+                          <td class="pl-2 text-center">{used[item] || 0}</td>
+                        </tr>
+                        <tr>
+                          <td>{$t('furnishing.sets.available')}</td>
+                          <td class="pl-2 text-center">{saved[item] || 0}</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </button>
+                {/each}
+              </div>
+              <div class="flex-1" />
+              <Button className="mt-2" disabled={!set.canBePlaced} on:click={() => place(set.id)}>
+                {placed[set.id] ? $t('furnishing.sets.setUnplaced') : $t('furnishing.sets.setPlaced')}
+              </Button>
+            </div>
+          </div>
+        {/if}
+      {/each}
     </div>
   {/if}
-  <div class="flex mt-4 wrapper">
-    <div class="block overflow-x-auto xl:overflow-x-visible whitespace-no-wrap">
-      <div class="px-4 table">
-        <table class="w-full block pl-4 pr-4 py-2 md:pl-8 md:py-4 bg-item rounded-xl">
-          <tr>
-            <th />
-            <TableHeader
-              className="sticky top-0 bg-item z-30"
-              on:click={() => sort('name')}
-              sort={sortBy === 'name'}
-              order={sortOrder}
-              align="left"
-            >
-              {$t('furnishing.name')}
-            </TableHeader>
-            <TableHeader
-              className="sticky top-0 bg-item z-30"
-              on:click={() => sort('energy')}
-              sort={sortBy === 'energy'}
-              order={sortOrder}
-              align="center"
-            >
-              {$t('furnishing.energy')}
-            </TableHeader>
-            <TableHeader
-              className="sticky top-0 bg-item z-30"
-              on:click={() => sort('load')}
-              sort={sortBy === 'load'}
-              order={sortOrder}
-              align="center"
-            >
-              {$t('furnishing.load')}
-            </TableHeader>
-            <TableHeader
-              className="sticky top-0 bg-item z-30"
-              on:click={() => sort('ratio')}
-              sort={sortBy === 'ratio'}
-              order={sortOrder}
-              align="center"
-            >
-              {$t('furnishing.ratio')}
-            </TableHeader>
-            <TableHeader
-              className="sticky top-0 bg-item z-30"
-              on:click={() => sort('using')}
-              sort={sortBy === 'using'}
-              order={sortOrder}
-              align="center"
-            >
-              {$t('furnishing.using')}
-            </TableHeader>
-          </tr>
-          {#each items as item (item.id)}
-            <tr>
-              <td class="pr-4 h-12">
-                <img
-                  src="/images/furnishing/{item.id}.png"
-                  alt=""
-                  class="h-12 w-12 image relative"
-                  style="min-width: 3rem;"
-                />
-              </td>
-              <td class="px-4 text-gray-200">{item.name}</td>
-              <td class="px-4 text-gray-200 text-center">{item.energy}</td>
-              <td class="px-4 text-gray-200 text-center">{item.load}</td>
-              <td class="px-4 text-gray-200 text-center" style={calculateColor(item.ratio)}>{item.ratio.toFixed(2)}</td>
-              <td class="px-4">
-                <div
-                  class="flex justify-between items-center border-2 border-white border-opacity-25 rounded-xl text-gray-400"
-                >
-                  <button class="hover:text-primary" on:click={() => changeUsage(item.id, 1)}>
-                    <Icon path={mdiPlus} />
-                  </button>
-                  <p
-                    class="h-full px-2 text-center {currentUsage[type][item.id] > 0
-                      ? 'text-gray-200'
-                      : 'text-gray-700'}"
-                    style="min-width: 40px;"
-                  >
-                    {currentUsage[type][item.id] || 0}
-                  </p>
-                  <button class="hover:text-primary" on:click={() => changeUsage(item.id, -1)}>
-                    <Icon path={mdiMinus} />
-                  </button>
-                </div>
-              </td>
-            </tr>
-          {/each}
-        </table>
-      </div>
-    </div>
-  </div>
 </div>
 
 <style>
-  .pill {
-    @apply rounded-2xl;
-    @apply border-2;
-    @apply border-white;
-    @apply border-opacity-25;
-    @apply text-white;
-    @apply px-4;
-    @apply py-1;
-    @apply outline-none;
-    @apply transition;
-    @apply duration-100;
-    @apply whitespace-no-wrap;
-
-    &:hover {
-      @apply border-primary;
-    }
-
-    &.active {
-      @apply bg-primary;
-      @apply border-primary;
-      @apply text-background;
-    }
+  .popup {
+    @apply text-sm pt-1 hidden p-2 rounded-xl;
   }
 
-  .image[alt]:after {
-    @apply block absolute top-0 left-0 w-full h-full bg-item;
-    content: '';
+  .furnishing-item:focus {
+    @apply w-full;
+
+    .popup {
+      @apply block;
+    }
   }
 
 </style>
