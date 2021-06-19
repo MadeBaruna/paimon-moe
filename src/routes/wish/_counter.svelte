@@ -424,7 +424,7 @@
           <div class="bg-background rounded-xl w-full px-4 mr-2 flex items-center">
             <span>Click the list to edit or delete</span>
           </div>
-          <Button size="sm" className="w-16" on:click={() => openAddModal(0)}>Add</Button>
+          <Button size="sm" className="w-16" on:click={() => openAddModal(1)}>Add</Button>
         </div>
       {/if}
       <div class="flex">
