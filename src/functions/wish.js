@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { t as $t } from 'svelte-i18n'
+import { t as $t } from 'svelte-i18n';
 
 import { getAccountPrefix } from '../stores/account';
 import { getTimeOffset } from '../stores/server';
@@ -10,7 +10,7 @@ import { characters } from '../data/characters';
 import { pushToast } from '../stores/toast';
 
 let t;
-$t.subscribe(f => t = f)
+$t.subscribe((f) => (t = f));
 
 const bannerTypes = {
   'character-event': 'characters',
@@ -78,6 +78,8 @@ export async function process(id) {
         character: [],
         weapon: [],
       },
+      featured: e.featured,
+      featuredRare: e.featuredRare,
     };
   });
 
@@ -94,6 +96,7 @@ export async function process(id) {
   let grouped = false;
   let striped = false;
   let rateUp = false;
+  let rateUpRare = false;
   let startBanner = false;
   let currentBannerIndex = -1;
   let hasManualInput = false;
@@ -145,7 +148,7 @@ export async function process(id) {
       currentPity: ++pity,
     };
 
-    if (item.rarity === 5) {    
+    if (item.rarity === 5) {
       if (currentBanner.featured) {
         newPull.guaranteed = rateUp;
         rateUp = !currentBanner.featured.includes(newPull.id);
@@ -155,6 +158,11 @@ export async function process(id) {
       allLegendary.push(newPull);
       pity = 0;
     } else if (item.rarity === 4) {
+      if (currentBanner.featuredRare) {
+        newPull.guaranteed = rateUpRare;
+        rateUpRare = !currentBanner.featuredRare.includes(newPull.id);
+      }
+
       allRare.push(newPull);
       selectedBanners[currentBannerIndex].rarePity[newPull.pity - 1]++;
       if (pull.type === 'character') {

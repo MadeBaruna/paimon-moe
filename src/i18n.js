@@ -25,6 +25,7 @@ $locale.subscribe((value) => {
   }
 });
 
+const supportedLanguage = ['en', 'id', 'ru', 'ko', 'fr', 'zh', 'pt'];
 addMessages('en', en);
 addMessages('id', id);
 addMessages('ru', ru);
@@ -34,11 +35,22 @@ addMessages('zh', zh);
 addMessages('pt', pt);
 
 export function startClient() {
+  let used = 'en';
   const savedLocale = localStorage.getItem('locale');
+  const detectedLocale = getLocaleFromNavigator().substring(0, 2);
+  if (savedLocale !== null) {
+    if (!supportedLanguage.includes(savedLocale)) {
+      localStorage.setItem('locale', 'en');
+    } else {
+      used = savedLocale;
+    }
+  } else if (supportedLanguage.includes(detectedLocale)) {
+    used = detectedLocale;
+  }
 
   init({
     ...INIT_OPTIONS,
-    initialLocale: savedLocale !== null ? savedLocale : getLocaleFromNavigator().substring(0, 2),
+    initialLocale: used,
   });
 }
 

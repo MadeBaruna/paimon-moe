@@ -13,15 +13,15 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    eula: {
+    klee: {
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300013;
-  const image = 'eula.png';
+  const bannerId = 300014;
+  const image = 'klee.png';
 
   let loading = true;
   let user = '';
@@ -80,7 +80,7 @@
             {/if}
           </h3>
           <p class="ml-6 font-sm leading-2">
-            <span class="font-semibold">{$t(`home.banner.featured.${i}`)}</span>
+            <span class="font-semibold">Klee</span>
             {$t('home.banner.summoned')}
           </p>
         </div>

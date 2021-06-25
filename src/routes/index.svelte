@@ -15,6 +15,7 @@
   import Discord from './_index/discord.svelte';
   import Twitter from './_index/twitter.svelte';
   import Achievement from './_index/achievement.svelte';
+  import Furnishing from './_index/furnishing.svelte';
 
   let refreshLayout;
 
@@ -33,6 +34,7 @@
       }, 1);
     });
   });
+
 </script>
 
 <svelte:head>
@@ -55,10 +57,11 @@
     <Event on:done={onDone} />
     <Item on:done={onDone} />
     <Discord on:done={onDone} />
-    <div class="flex flex-col space-y-4">
-      <Calculator on:done={onDone} />
-      <Achievement on:done={onDone} />
-    </div>
+    <Calculator on:done={onDone} />
+    <Achievement on:done={onDone} />
     <Twitter on:done={onDone} />
+    <Furnishing on:done={onDone} />
+    <!-- <div class="flex flex-col space-y-4">
+    </div> -->
   </Masonry>
 </div>

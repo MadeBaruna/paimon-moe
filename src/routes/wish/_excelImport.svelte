@@ -44,9 +44,11 @@
     let oldest = dayjs().year(2200);
 
     if (data !== null) {
-      newest = dayjs(data.pulls[data.pulls.length - 1].time);
-      oldest = dayjs(data.pulls[0].time);
-      pulls = data.pulls;
+      if (data.pulls.length > 0) {
+        newest = dayjs(data.pulls[data.pulls.length - 1].time);
+        oldest = dayjs(data.pulls[0].time);
+        pulls = data.pulls;
+      }
     }
 
     return {
@@ -105,12 +107,14 @@
         time: e[1],
         type: e[0],
         pity: 0,
+        manualInput: true,
       }));
       const end = append.map((e) => ({
         id: e[2],
         time: e[1],
         type: e[0],
         pity: 0,
+        manualInput: true,
       }));
 
       const combined = [...beginning, ...data, ...end];
@@ -230,7 +234,7 @@
       'character-event': 'Character Event Wish',
       'weapon-event': 'Weapon Event Wish',
       standard: 'Permanent Wish',
-      beginners: "Novice Wishes",
+      beginners: 'Novice Wishes',
     };
 
     const weapons = Object.values(weaponList);

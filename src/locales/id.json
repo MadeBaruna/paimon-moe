@@ -11,6 +11,7 @@
     "todoList": "Todo List",
     "timeline": "Timeline",
     "furnishing": "Furnitur",
+    "weapons": "Senjata",
     "settings": "Pengaturan",
     "donate": "Donasi"
   },
@@ -59,6 +60,10 @@
     "twitter": {
       "title": "Follow my Twitter, akan post tentang apa yang lagi di develop dan update terbaru tentang paimon.moe!",
       "detail": "Follow Twitter"
+    },
+    "furnishing": {
+      "title": "Cek furnitur apa saja yang kamu perlukan untuk menyelesaikan suatu set. Dan kamu juga bisa melihat beban masing-masing furnitur.",
+      "detail": "Furnitur"
     }
   },
   "characters": {
@@ -91,10 +96,7 @@
     "manualButton": "Nyalakan Input Manual",
     "errorBanner": "Waktu banner salah! Coba sesuaikan server di halaman settings. Masih gak bisa? tolong chat di Discord 😅",
     "globalWishTally": "Perhitungan Pity Wish Global",
-    "pityTooltip": [
-      "Ini adalah pity {rarity} sekarang",
-      "{count}x wish lagi untuk dijamin {rarity}"
-    ],
+    "pityTooltip": ["Ini adalah pity {rarity} sekarang", "{count}x wish lagi untuk dijamin {rarity}"],
     "import": {
       "title": "Import Riwayat Wish",
       "faqsButton": "FAQS - BACA DULU",
@@ -123,11 +125,7 @@
       "server": "Pilih server mu:",
       "wishTallyCheck": "Submit pity untuk perhitungan pity global",
       "wishTally": "Kita sedang melakukan perhitungan pity global! Kamu bisa mensubmit pity mu untuk berpartisipasi. Semua data pity akan dikumpulkan untuk mengetahui berapa pity rata-rata pengguna paimon.moe.",
-      "wishTallyCollected": [
-        "Yang dikumpulkan:",
-        "dan",
-        "pity dari riwayat wish mu"
-      ],
+      "wishTallyCollected": ["Yang dikumpulkan:", "dan", "pity dari riwayat wish mu"],
       "faqs": {
         "title": "Import Riwayat Wish FAQS",
         "q1": "Cara kerjanya gimana?",
@@ -249,11 +247,7 @@
       "exportFinish": "Export berhasil, harap tunggu sampai file nya sudah ter-download!",
       "wishTallyTitle": "Submit Perhitungan Pity Wish",
       "wishTally": "Kita sedang melakukan perhitungan pity global! Kamu bisa mensubmit pity mu untuk berpartisipasi. Semua data pity akan dikumpulkan untuk mengetahui berapa pity rata-rata pengguna paimon.moe.",
-      "wishTallyCollected": [
-        "Yang dikumpulkan:",
-        "dan",
-        "pity dari riwayat wish mu"
-      ],
+      "wishTallyCollected": ["Yang dikumpulkan:", "dan", "pity dari riwayat wish mu"],
       "wishTallySubmit": "Submit Perhitungan Pity Wish",
       "wishTallyThankyou": "Terimakasih sudah berpartisipasi!",
       "manualTitle": "Pengaturan Manual Input",
@@ -265,22 +259,13 @@
         "subtitle": "Setelah kamu melakukan x1 pull wish:",
         "pressWhenYouGet": "Tekan {button} ketika kamu mendapatkan {rarity}★",
         "p1": "Itu akan otomatis menambahkan total pull, 5★ dan, 4★ pity",
-        "p2": [
-          "Ketika",
-          "pity mencapai 10, angkanya akan otomatis reset menjadi 0"
-        ],
-        "p3": [
-          "Ketika",
-          "pity mencapai 90, angkanya akan otomatis reset menjadi 0"
-        ],
+        "p2": ["Ketika", "pity mencapai 10, angkanya akan otomatis reset menjadi 0"],
+        "p3": ["Ketika", "pity mencapai 90, angkanya akan otomatis reset menjadi 0"],
         "p4": [
           "Ketika kamu melakukan wish x10 pull, tekan",
           "tapi counter pity nya tidak akan akurat, karena tidak tahu kapan drop nya terjadi (bisa saja kamu dapat nya saat pull ke 1 atau bisa saja ke 10). Untuk membuat counter nya akurat, kamu perlu mengecek nya di tabel riwayat wish mu dan tabahkan 1-per-1 seperti kamu melakukan 1x pull wish."
         ],
-        "p5": [
-          "Kamu juga bisa menekan",
-          "untuk mengedit nilai nya secara manual!"
-        ],
+        "p5": ["Kamu juga bisa menekan", "untuk mengedit nilai nya secara manual!"],
         "p6": [
           "Tekan tombol panah dibawah untuk melihat detail riwayat mu. Sebuah form akan muncul ketika kamu mendapat",
           "atau",
@@ -371,11 +356,7 @@
       "calculateTalent": "Hitung Material Talent?",
       "inputTalentLevel": "Masukkan level talent ke 1, 2 dan 3 saat ini",
       "inputTalentNotice": "Jika warna level nya berbeda, kurangi 3",
-      "inputTalent": [
-        "lvl talent ke 1",
-        "lvl talent ke 2",
-        "lvl talent ke 3"
-      ],
+      "inputTalent": ["lvl talent ke 1", "lvl talent ke 2", "lvl talent ke 3"],
       "talentToLevel": "ke level",
       "calculate": "Hitung",
       "unknownInformation": "Ada beberapa informasi yang tidak diketahui",
@@ -438,10 +419,7 @@
   "todo": {
     "title": "Todo List",
     "summary": "Summary",
-    "empty": [
-      "Belum ada yang ditambahkan 😀",
-      "Tambahkan todo dari halaman Items atau dari Kalkulator!"
-    ],
+    "empty": ["Belum ada yang ditambahkan 😀", "Tambahkan todo dari halaman Items atau dari Kalkulator!"],
     "farmableToday": "Bisa di farm hari ini",
     "resin": "resin diperlukan",
     "based": "Berdasarkan AR:{ar} and WL:{wl}",
@@ -594,6 +572,27 @@
     "info": [
       "Ini menunjukkan berapa beban yang bisa ditampung dalam pulau. Masing-masing furnitur mempunyai nilai beban yang tersembunyi yang bisa dilihat di bawah.",
       "(Beban maximum belum dikonfirmasi!)"
-    ]
+    ],
+    "hall": "Aula Utama",
+    "room": "Kamar {number}",
+    "exteriorNum": "Area {number}",
+    "corridor": "Koridor",
+    "inventoryButton": "Inventory",
+    "listButton": "List",
+    "inventory": {
+      "title": "Furnishing Inventory",
+      "subtitle": "Beberapa kategori special seperti dinding tidak ditampilkan",
+      "all": "Semua",
+      "openSets": "Buka Set"
+    },
+    "sets": {
+      "title": "Furnishing Set",
+      "subtitle": "Klik icon furnitur untuk detail, dan kamu bisa klik icon karakter untuk menandai mereka! Buka menu inventory diatas untuk mengisi jumlah furnitur yang kamu punya.",
+      "setPlaced": "Set ditempatkan",
+      "setUnplaced": "Set belum ditempatkan",
+      "inInventory": "Di inventory",
+      "available": "Tersedia",
+      "used": "Digunakan di set lain"
+    }
   }
 }

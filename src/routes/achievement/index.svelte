@@ -35,40 +35,43 @@
   let sort = false;
 
   function parseCategories() {
-    categories = Object.entries(achievement).map(([id, data]) => ({
-      id,
-      name: data.name,
-      finished: checkList[id] !== undefined ? Object.values(checkList[id]).filter((e) => e === true).length : 0,
-      ...data.achievements.reduce(
-        (prev, cur) => {
-          if (Array.isArray(cur)) {
-            prev.total += cur.length;
-            totalAchievement += cur.length;
+    categories = Object.entries(achievement)
+      .map(([id, data]) => ({
+        id,
+        name: data.name,
+        order: data.order,
+        finished: checkList[id] !== undefined ? Object.values(checkList[id]).filter((e) => e === true).length : 0,
+        ...data.achievements.reduce(
+          (prev, cur) => {
+            if (Array.isArray(cur)) {
+              prev.total += cur.length;
+              totalAchievement += cur.length;
 
-            for (const f of cur) {
-              totalPrimogem += f.reward;
+              for (const f of cur) {
+                totalPrimogem += f.reward;
 
-              const finished = checkList[id] !== undefined && checkList[id][f.id];
-              prev.primogem += finished ? f.reward : 0;
-              obtainedPrimogem += finished ? f.reward : 0;
+                const finished = checkList[id] !== undefined && checkList[id][f.id];
+                prev.primogem += finished ? f.reward : 0;
+                obtainedPrimogem += finished ? f.reward : 0;
+                finishedAchievement += finished ? 1 : 0;
+              }
+            } else {
+              prev.total += 1;
+              totalAchievement += 1;
+              totalPrimogem += cur.reward;
+
+              const finished = checkList[id] !== undefined && checkList[id][cur.id];
+              prev.primogem += finished ? cur.reward : 0;
+              obtainedPrimogem += finished ? cur.reward : 0;
               finishedAchievement += finished ? 1 : 0;
             }
-          } else {
-            prev.total += 1;
-            totalAchievement += 1;
-            totalPrimogem += cur.reward;
 
-            const finished = checkList[id] !== undefined && checkList[id][cur.id];
-            prev.primogem += finished ? cur.reward : 0;
-            obtainedPrimogem += finished ? cur.reward : 0;
-            finishedAchievement += finished ? 1 : 0;
-          }
-
-          return prev;
-        },
-        { total: 0, primogem: 0 },
-      ),
-    }));
+            return prev;
+          },
+          { total: 0, primogem: 0 },
+        ),
+      }))
+      .sort((a, b) => a.order - b.order);
   }
 
   function orderAchievement() {
@@ -161,9 +164,11 @@
   async function changeLocale(locale) {
     const data = await import(`../../data/achievement/${locale}.json`);
     achievement = data.default;
-    Object.entries(achievement).forEach(([id, data], i) => {
-      categories[i].name = data.name;
-    });
+    Object.entries(achievement)
+      .sort((a, b) => a[1].order - b[1].order)
+      .forEach(([id, data], i) => {
+        categories[i].name = data.name;
+      });
     changeCategory(active, activeIndex, true);
   }
 
@@ -238,7 +243,7 @@
   </div>
   <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
     <div class="flex flex-col space-y-2 lg:h-screen lg:overflow-auto lg:sticky lg:pr-1 pb-4 category">
-      {#each categories as category, index}
+      {#each categories as category, index (category.id)}
         <div
           class="rounded-xl p-2 cursor-pointer flex flex-col {category.id === active ? 'bg-primary' : 'bg-item'}"
           on:click={() => changeCategory(category.id, index)}
@@ -246,9 +251,8 @@
           <p class="font-semibold {category.id === active ? 'text-black' : 'text-white'}">{category.name}</p>
           <div class="flex">
             <p class="flex-1 {category.id === active ? 'text-gray-900' : 'text-gray-400'}">
-              {category.finished}
-              {$t('achievement.of')}
-              {category.total}
+              {category.finished}/{category.total}
+              ({((category.finished / category.total) * 100).toFixed(0)}%)
             </p>
             <p class={category.id === active ? 'text-gray-900' : 'text-gray-400'}>
               {category.primogem}

@@ -16,7 +16,7 @@
   },
   "home": {
     "welcome": "Boas-vindas ao Paimon.moe! 👋",
-    "message": "Seu melhor companheiro de Genshin Impact! Planeje seu farm com a calculadora de ascenção e acompanhe seu progresso com a lista de afazeres e o histórico de orações.",
+    "message": "Seu melhor companheiro de Genshin Impact! Planeje seu farm com a calculadora de ascensão e acompanhe seu progresso com a lista de afazeres e o histórico de orações.",
     "banner": {
       "featured": [
         "Eula"
@@ -51,12 +51,12 @@
       "join": "Junte-se ao Discord"
     },
     "items": {
-      "title": "Farmáveis Hoje",
+      "title": "Farmaveis Hoje",
       "detail": "Itens",
       "sunday": "Todos os itens podem ser farmados aos domingos 😁"
     },
     "calculator": {
-      "title": "🧮 Calcule materiais de ascenção de Personagens, Armas e elevação de talento! Todos os cálculos podem ser adicionados na Lista de Afazeres. Também mostra quantas resinas você irá precisar!",
+      "title": "🧮 Calcule materiais de ascensão de Personagens, Armas e elevação de talento! Todos os cálculos podem ser adicionados na Lista de Afazeres. Também mostra quantas resinas você irá precisar!",
       "detail": "Calculadora"
     },
     "twitter": {
@@ -70,7 +70,7 @@
   },
   "characters": {
     "title": "Personagens",
-    "subtitle": "Os números dos status são do Nível 80, Ascenção 6. Você pode clicar nos índices da tabela para ordenar!",
+    "subtitle": "Os números dos status são do Nível 80, Ascensão 6. Você pode clicar nos índices da tabela para ordenar!",
     "name": "Nome",
     "element": "Elemento",
     "rarity": "Raridade",
@@ -115,7 +115,7 @@
     "welcomeStart2": "acima",
     "manual": "Se você quiser informar os dados manualmente, você pode fazer isso aqui:",
     "manualButton": "Habilitar Inserção Manual",
-    "errorBanner": "Incompatibilidade no tempo do banner! Ajuste seu servidor na página de configurações. Ainda não está funcionando? Por favor, deixa uma mensagem no Discord 😅",
+    "errorBanner": "Incompatibilidade no tempo do banner! Ajuste seu servidor na página de configurações. Ainda não está funcionando? Por favor, deixe uma mensagem no Discord 😅",
     "globalWishTally": "Contagem Global de Orações",
     "pityTooltip": [
       "Informa seu pity atual para {rarity}",
@@ -179,7 +179,7 @@
           "Se você não deseja compartilhar sua URL, você pode utilizar um pequeno script de importação para salvar seu histórico de orações em seu PC (opção para PC Local)"
         ],
         "q6": "Eu fiz todos os procedimentos, mas tive um erro na API?",
-        "a6": "Certifique-se de copiar todo o texto (segura e pressione Selecionar Tudo para dispositivos móveis); talvez você tenha esquecido alguns caracteres que não necessários para o funcionamento da importação.",
+        "a6": "Certifique-se de copiar todo o texto (segure e pressione Selecionar Tudo para dispositivos móveis); talvez você tenha esquecido alguns caracteres que não necessários para o funcionamento da importação.",
         "q7": "Não leu todo meu histórico!?",
         "a7": "Histórico de orações mais antigos que 6 meses são deletados dos servidores da MiHoYo, então se você não possui um backup em algum lugar, infelizmente se foi"
       },
@@ -225,7 +225,7 @@
         "pclocal": [
           "Se você não se sente confortável em compartilhar sua URL de feedback, você pode usar esta opção para processar seu histórico de orações em seu PC localmente. Este script irá ler o log em seu PC para gerar a URL do histórico de orações.",
           "Abra o menu Iniciar, e então procure por Powershell",
-          "Abra o Powershell do Widows, e então copie & cole o script abaixo no Powershell",
+          "Abra o Powershell do Windows, e então copie & cole o script abaixo no Powershell",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
           "Você pode revisar o script",
           "aqui",
@@ -244,7 +244,7 @@
       "export": "Exportar para Excel",
       "exporting": "Exportando...",
       "import": "Importar",
-      "exportFinish": "Exportado com successo, aguarde até que o navegador realize o download do arquivo!",
+      "exportFinish": "Exportado com sucesso, aguarde até que o navegador realize o download do arquivo!",
       "wishTallyTitle": "Enviar Contagem de Orações",
       "wishTally": "Estamos fazendo uma contagem global de orações! Você pode enviar sua contagem de orações para participar. Todas as informações do pity serão agregadas para saber qual a média de pity dos usuários do paimon.moe.",
       "wishTallyCollected": [
@@ -280,7 +280,7 @@
           "para editar os valores manualmente!"
         ],
         "p6": [
-          "Pressione a seta embaixo para visualizar os detalhes das orações. Um pop-up irá aparecer quando você conseguir um item",
+          "Pressione a seta abaixo para visualizar os detalhes das orações. Um pop-up irá aparecer quando você conseguir um item",
           "ou",
           "Você também pode adicionar ou editar a tabela manualmente."
         ]
@@ -342,7 +342,7 @@
       "howToCharacter": "Como usar a Calculadora de Personagens"
     },
     "weapon": {
-      "calculateAscension": "Calcular Materiais de Ascenção?",
+      "calculateAscension": "Calcular Materiais de Ascensão?",
       "selectRarity": "Selecione a raridade da arma",
       "selectWeapon": "Selecione a arma",
       "current": "Nível, EXP, & Ascenção Atual da Arma",
@@ -353,14 +353,14 @@
       "resource": "Recursos para Usar",
       "calculate": "Calcular",
       "unknownInformation": "Há alguma informação desconhecida",
-      "ascensionLevel": "Nível de ascenção",
+      "ascensionLevel": "Nível de ascensão",
       "mora": "Mora (aproximadamente ±40)",
       "expWasted": "EXP Desperdiçada",
       "addToTodo": "Adicionar na Lista de Afazeres",
       "addedToTodo": "Adicionado na Lista de Afazeres"
     },
     "character": {
-      "calculateAscension": "Calcular Materiais de Ascenção?",
+      "calculateAscension": "Calcular Materiais de Ascensão?",
       "selectCharacter": "Selecione o personagem",
       "current": "Nível, EXP, & Ascenção Atual do Personagem",
       "inputCurrentLevel": "Informe o nível atual do personagem...",
@@ -379,7 +379,7 @@
       "talentToLevel": "para o nível",
       "calculate": "Calcular",
       "unknownInformation": "Há alguma informação desconhecida",
-      "ascensionLevel": "Nível de ascenção",
+      "ascensionLevel": "Nível de ascensão",
       "mora": "Mora (aproximadamente ±40)",
       "expWasted": "EXP Desperdiçada",
       "addToTodo": "Adicionar na Lista de Afazeres",
@@ -440,12 +440,12 @@
     "summary": "Sumário",
     "empty": [
       "Nada para fazer ainda 😀",
-      "Adicione algumas coisas a partir da Cálculadora ou da página de Itens!"
+      "Adicione algumas coisas a partir da Calculadora ou da página de Itens!"
     ],
     "farmableToday": "Farmáveis hoje",
     "resin": "Resinas necessárias",
     "based": "Baseado no AR:{ar} e WL:{wl}",
-    "change": "(altera nas configurações)",
+    "change": "(alterar nas configurações)",
     "approximation": "Aproximação calculada a partir da taxa de drops por",
     "delete": {
       "title": "Deletar esse afazer?",
@@ -549,7 +549,7 @@
   "donate": {
     "message": [
       "Muito obrigado! Espero que ache isso útil.",
-      "Fiz este site para me divertir quando tenha um tempo livre. Obviamente irei adicionar mais recursos e atualizarei os dados a cada nova atualização, pois gosto de explorar o jogo e tentar maximizar minha experiência",
+      "Fiz este site para me divertir quando tenho um tempo livre. Obviamente irei adicionar mais recursos e atualizarei os dados a cada nova atualização, pois gosto de explorar o jogo e tentar maximizar minha experiência",
       "Se você quiser doar, sua doação definitivamente irá ajudar a melhorar o site e me motivar a adicionar mais conteúdo para Paimon.moe! Muito obrigado e divirta-se, espero que goste!",
       "Se você gosta de codificar, você também pode contribuir para o projeto em"
     ],
