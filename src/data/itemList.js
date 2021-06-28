@@ -637,5 +637,8 @@ export const itemList = {
   juvenile_jade: { id: 'juvenile_jade', name: 'Juvenile Jade', rarity: 5 },
   bloodjade_branch: { id: 'bloodjade_branch', name: 'Bloodjade Branch', rarity: 5 },
   crystalline_bloom: { id: 'crystalline_bloom', name: 'Crystalline Bloom', rarity: 5 },
-  dragon_lords_crown: { id: 'dragon_lords_crown', name: "Dragon Lord's Crown", rarity: 5 }
+  dragon_lords_crown: { id: 'dragon_lords_crown', name: "Dragon Lord's Crown", rarity: 5 },
+  sea_ganoderma: { id: 'sea_ganoderma', name: 'Sea Ganoderma' },
+  marionette_core: { id: 'marionette_core', name: 'Marionette Core', rarity: 5 },
+  gilded_scale: { id: 'gilded_scale', name: 'Gilded Scale', rarity: 5 },
 };

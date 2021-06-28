@@ -158,6 +158,16 @@ export const banners = {
       featuredRare: ['fischl', 'sucrose', 'barbara'],
       timezoneDependent: true,
     },
+    {
+      name: 'Leaves in the Wind',
+      image: 1,
+      shortName: 'Kazuha',
+      start: '2021-06-29 18:00:00',
+      end: '2021-07-20 14:59:59',
+      color: '#8FFFDE',
+      featured: ['kaedehara_kazuha'],
+      featuredRare: ['bennett', 'razor', 'rosaria'],
+    },
   ],
   weapons: [
     {
@@ -288,6 +298,16 @@ export const banners = {
       featured: ['lost_prayer_to_the_sacred_winds', 'skyward_pride'],
       featuredRare: ['mitternachts_waltz', 'lions_roar', 'the_bell', 'favonius_lance', 'the_widsith'],
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 14,
+      start: '2021-06-29 18:00:00',
+      end: '2021-07-20 14:59:59',
+      shortName: 'Freedom-Sworn',
+      color: '#42ecf5',
+      featured: ['freedom-sworn', 'skyward_atlas'],
+      featuredRare: ['the_alley_flash', 'wine_and_song', 'alley_hunter', 'favonius_greatsword', 'dragons_bane'],
     },
   ],
 };

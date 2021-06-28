@@ -998,6 +998,77 @@ export const characters = {
       boss: itemList.spirit_locket_of_boreas,
     },
   },
+  kaedehara_kazuha: {
+    name: 'Kaedehara Kazuha',
+    id: 'kaedehara_kazuha',
+    rarity: 5,
+    element: elements.anemo,
+    weapon: weapons.sword,
+    sex: 'male',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.sea_ganoderma, amount: 3 },
+          { item: itemList.treasure_hoarder_insignia, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 3 },
+          { item: itemList.marionette_core, amount: 2 },
+          { item: itemList.sea_ganoderma, amount: 10 },
+          { item: itemList.treasure_hoarder_insignia, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 6 },
+          { item: itemList.marionette_core, amount: 4 },
+          { item: itemList.sea_ganoderma, amount: 20 },
+          { item: itemList.silver_raven_insignia, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 3 },
+          { item: itemList.marionette_core, amount: 8 },
+          { item: itemList.sea_ganoderma, amount: 30 },
+          { item: itemList.silver_raven_insignia, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 6 },
+          { item: itemList.marionette_core, amount: 12 },
+          { item: itemList.sea_ganoderma, amount: 45 },
+          { item: itemList.golden_raven_insignia, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_gemstone, amount: 6 },
+          { item: itemList.marionette_core, amount: 20 },
+          { item: itemList.sea_ganoderma, amount: 60 },
+          { item: itemList.golden_raven_insignia, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 13348, atk: 297, def: 807 },
+    material: {
+      book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
+      material: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
+      boss: itemList.gilded_scale,
+    },
+  },
   keqing: {
     name: 'Keqing',
     id: 'keqing',
