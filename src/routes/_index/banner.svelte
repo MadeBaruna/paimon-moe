@@ -13,15 +13,15 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    klee: {
+    kaedehara_kazuha: {
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300014;
-  const image = 'klee.png';
+  const bannerId = 300015;
+  const image = 'kazuha.png';
 
   let loading = true;
   let user = '';
@@ -48,6 +48,8 @@
         }
       }
 
+      console.log(featured);
+
       loading = false;
     } catch (err) {
       console.error(err);
@@ -59,7 +61,6 @@
     await tick();
     dispatch('done');
   });
-
 </script>
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
@@ -80,7 +81,7 @@
             {/if}
           </h3>
           <p class="ml-6 font-sm leading-2">
-            <span class="font-semibold">Klee</span>
+            <span class="font-semibold">Kazuha</span>
             {$t('home.banner.summoned')}
           </p>
         </div>
