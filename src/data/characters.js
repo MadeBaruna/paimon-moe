@@ -1065,7 +1065,7 @@ export const characters = {
     stats: { hp: 13348, atk: 297, def: 807 },
     material: {
       book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
-      material: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
+      material: [itemList.treasure_hoarder_insignia, itemList.silver_raven_insignia, itemList.golden_raven_insignia],
       boss: itemList.gilded_scale,
     },
   },
