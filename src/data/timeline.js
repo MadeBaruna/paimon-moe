@@ -183,7 +183,7 @@ export const eventsData = [
     {
       name: 'Never-Ending Battle',
       pos: '0% 55%',
-      image: 'neverending_battle.jpg',
+      image: 'neverending_battle.png',
       start: '2021-07-09 10:00:00',
       end: '2021-07-19 04:00:00',
       color: '#CCFFCB',
