@@ -1,6 +1,6 @@
 <script>
   import { t } from 'svelte-i18n';
-  import { Workbook } from 'exceljs';
+  import { Workbook, ValueType } from 'exceljs';
   import dayjs from 'dayjs';
 
   import Button from '../../components/Button.svelte';
@@ -203,8 +203,17 @@
       sheet.eachRow((row, index) => {
         if (index === 1) return;
         const type = row.getCell(1).text.toLowerCase();
-        const time = row.getCell(3).text;
+        let time = row.getCell(3);
         const fullName = row.getCell(2).text;
+
+        if (time.type === ValueType.Date) {
+          time = dayjs.utc(time.value).format('YYYY-MM-DD HH:mm:ss');
+        } else {
+          time = time.text;
+        }
+
+        console.log(time);
+
         let name = '';
         if (type === 'weapon') {
           name = weapons.find((e) => e.name === fullName).id;
