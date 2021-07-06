@@ -19,7 +19,9 @@
     "welcome": "欢迎来到 Paimon.moe! 👋",
     "message": "你最好的原神伙伴! 帮助你规划材料消耗与刷本, 追踪你的游戏进度与抽卡结果.",
     "banner": {
-      "featured": ["可莉"],
+      "featured": [
+        "可莉"
+      ],
       "summoned": "被抽到",
       "percentage": "占比于 {rarity}",
       "avg": "平均出金抽数",
@@ -122,7 +124,10 @@
     "manualButton": "启用手动输入",
     "errorBanner": "卡池时间错误! 请在设置页面修改你所属的服务器. 如果还是出错, 请到 Discord 中反馈 😅",
     "globalWishTally": "全球祈愿统计",
-    "pityTooltip": ["显示你当前 {rarity} 保底进度", "{count} 抽可获得 {rarity}"],
+    "pityTooltip": [
+      "显示你当前 {rarity} 保底进度",
+      "{count} 抽可获得 {rarity}"
+    ],
     "import": {
       "title": "导入祈愿历史记录",
       "faqsButton": "常见问题 - 先读这个",
@@ -151,7 +156,11 @@
       "server": "选择你的服务器:",
       "wishTallyCheck": "将你的记录提交到全球祈愿统计数据中",
       "wishTally": "我们在统计全球的祈愿数据! 你可以提交你的记录参与进来. 所有祈愿数据会统一整合, 用来考察 paimon.moe 用户的平均情况.",
-      "wishTallyCollected": ["会被收集的数据:", "和", "你的抽卡历史记录"],
+      "wishTallyCollected": [
+        "会被收集的数据:",
+        "和",
+        "你的抽卡历史记录"
+      ],
       "faqs": {
         "title": "导入祈愿记录常见问题",
         "q1": "这是怎么做到的?",
@@ -224,7 +233,7 @@
           "如果你不想提供你的url，你可以使用这个选项在你的电脑上本地处理祈愿历史记录。此脚本将读取您电脑上的日志文件以获取祈愿url。",
           "打开开始菜单, 搜索powershell",
           "打开windows powershell, 然后复制粘贴脚本到powershell里",
-          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "你可以查看这个脚本",
           "这里",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
@@ -245,7 +254,11 @@
       "exportFinish": "导出成功, 请等待浏览器下载文件!",
       "wishTallyTitle": "提交祈愿到全球统计",
       "wishTally": "我们在统计全球的祈愿数据! 你可以提交你的记录参与进来. 所有祈愿数据会统一整合, 用来考察 paimon.moe 用户的平均情况.",
-      "wishTallyCollected": ["会被收集的内容:", "和", "你的祈愿记录"],
+      "wishTallyCollected": [
+        "会被收集的内容:",
+        "和",
+        "你的祈愿记录"
+      ],
       "wishTallySubmit": "提交祈愿到全球统计",
       "wishTallyThankyou": "感谢你的参与!",
       "manualTitle": "手动输入设置",
@@ -257,13 +270,22 @@
         "subtitle": "抽卡1次后:",
         "pressWhenYouGet": "按 {button} 当你得到 {rarity}★",
         "p1": "会自动添加总抽数, 5★, 以及 4★ 保底",
-        "p2": ["当", "保底到达 10, 会自动被重置为 0"],
-        "p3": ["当", "保底到达 90, 会自动被重置为 0"],
+        "p2": [
+          "当",
+          "保底到达 10, 会自动被重置为 0"
+        ],
+        "p3": [
+          "当",
+          "保底到达 90, 会自动被重置为 0"
+        ],
         "p4": [
           "抽10连后, 按",
           "但请注意保底计数并不会精确到位, 因为并不知道是10连的哪一抽出货 (你可能是在第一发或十连最后一发出货). 为了保障计数准确, 你需要到列表中检查十连里的每一抽, 修改为对应的正确内容."
         ],
-        "p5": ["你也可以按", "按钮来手动修改数值!"],
+        "p5": [
+          "你也可以按",
+          "按钮来手动修改数值!"
+        ],
         "p6": [
           "点击按钮上的箭头来查看你的具体抽卡细节. 会自动弹出提示你获得一个",
           "或",
@@ -356,7 +378,11 @@
       "calculateTalent": "计算天赋材料?",
       "inputTalentLevel": "输入三个技能当前等级",
       "inputTalentNotice": "如果被命座+3, 请减掉3",
-      "inputTalent": ["普攻等级", "元素战技等级", "元素爆发等级"],
+      "inputTalent": [
+        "普攻等级",
+        "元素战技等级",
+        "元素爆发等级"
+      ],
       "talentToLevel": "目标等级",
       "calculate": "计算",
       "unknownInformation": "有一些未知信息",
@@ -365,7 +391,11 @@
       "expWasted": "溢出经验",
       "addToTodo": "添加到Todo",
       "addedToTodo": "已添加到Todo",
-      "talent": ["普攻", "战技", "爆发"]
+      "talent": [
+        "普攻",
+        "战技",
+        "爆发"
+      ]
     },
     "expTable": {
       "level": "等级",
@@ -420,7 +450,10 @@
   "todo": {
     "title": "Todo 列表",
     "summary": "总结",
-    "empty": ["没啥要做的 😀", "从物品页面或计算器加点东西来!"],
+    "empty": [
+      "没啥要做的 😀",
+      "从物品页面或计算器加点东西来!"
+    ],
     "farmableToday": "今日可刷取",
     "resin": "树脂需求",
     "based": "基于冒险等级:{ar} 和 世界等级:{wl}",
