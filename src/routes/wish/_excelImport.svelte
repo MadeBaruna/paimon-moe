@@ -300,7 +300,10 @@
 
   function checkFile(file) {
     console.log(file.type);
-    if (file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
+    if (
+      file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' ||
+      file.type === 'application/wps-office.xlsx'
+    ) {
       readExcel(file);
     } else {
       pushToast($t('wish.excel.errorInvalidFile'), 'error');
@@ -349,7 +352,6 @@
       };
       reader.readAsArrayBuffer(file);
     });
-
 </script>
 
 <div>
@@ -434,5 +436,4 @@
       @apply text-background;
     }
   }
-
 </style>
