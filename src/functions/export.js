@@ -55,30 +55,30 @@ async function addBanners(workbook) {
   const sheet = workbook.getWorksheet('Banner List');
 
   sheet.columns = [
-    { header: 'Image', key: 'image', width: 29 },
+    // { header: 'Image', key: 'image', width: 29 },
     { header: 'Name', key: 'name', width: 32 },
     { header: 'Start', key: 'start', width: 19 },
     { header: 'End', key: 'end', width: 19 },
   ];
 
   const diff = 8 - getTimeOffset();
-  const icons = {};
+  // const icons = {};
 
   for (const [_, category] of Object.entries(banners)) {
     for (const banner of category) {
-      const res = await fetch(`/images/banners/${banner.name} ${banner.image}.png`, {
-        method: 'GET',
-      });
+      // const res = await fetch(`/images/banners/${banner.name} ${banner.image}.png`, {
+      //   method: 'GET',
+      // });
 
-      const imageBlob = await res.blob();
-      const imageB64 = await convertBlobToBase64(imageBlob);
+      // const imageBlob = await res.blob();
+      // const imageB64 = await convertBlobToBase64(imageBlob);
 
-      const imageId = workbook.addImage({
-        base64: imageB64,
-        extension: 'png',
-      });
+      // const imageId = workbook.addImage({
+      //   base64: imageB64,
+      //   extension: 'png',
+      // });
 
-      icons[`/images/banners/${banner.name} ${banner.image}.png`] = imageId;
+      // icons[`/images/banners/${banner.name} ${banner.image}.png`] = imageId;
 
       const row = sheet.addRow({
         name: banner.name,
@@ -86,16 +86,16 @@ async function addBanners(workbook) {
         end: dayjs(banner.end).subtract(diff, 'hour').format('YYYY-MM-DD HH:mm:ss'),
       });
 
-      row.height = 98;
+      // row.height = 98;
 
-      sheet.addImage(imageId, {
-        tl: { col: 0, row: row.number - 1 },
-        ext: { width: 200, height: 100 },
-      });
+      // sheet.addImage(imageId, {
+      //   tl: { col: 0, row: row.number - 1 },
+      //   ext: { width: 200, height: 100 },
+      // });
     }
   }
 
-  return icons;
+  // return icons;
 }
 
 /**
@@ -115,7 +115,7 @@ async function addInformation(workbook) {
   };
 
   sheet.addRow(['Paimon.moe Wish History Export']);
-  sheet.addRow(['Version', 2]);
+  sheet.addRow(['Version', 3]);
   sheet.addRow(['Export Date', dayjs().format('YYYY-MM-DD HH:mm:ss')]);
 
   sheet.mergeCells('A1:B1');
@@ -126,9 +126,8 @@ async function addInformation(workbook) {
  * @param {Workbook} workbook
  * @param {Array} icons
  */
-async function addWishHistory(workbook, icons) {
+async function addWishHistory(workbook) {
   for (const [id, category] of Object.entries(bannerCategories)) {
-    
     const sheet = workbook.getWorksheet(category);
     sheet.columns = [
       { header: 'Type', width: 9 },
@@ -139,13 +138,13 @@ async function addWishHistory(workbook, icons) {
       { header: '#Roll', width: 7, style: { alignment: { horizontal: 'center' } } },
       { header: 'Group', width: 7, style: { alignment: { horizontal: 'center' } } },
       { header: 'Banner', width: 24 },
-      { header: 'Icon', width: 5.5 },
+      // { header: 'Icon', width: 5.5 },
     ];
-    
+
     sheet.getRow(1).font = {
       bold: true,
     };
-    
+
     const data = await process(id);
     if (data === null) continue;
 
@@ -196,10 +195,10 @@ async function addWishHistory(workbook, icons) {
         right: { style: 'thin', color: { argb: 'ffdddddd' } },
       };
 
-      sheet.addImage(icons[pull.banner.image], {
-        tl: { col: 8, row: row.number - 1 },
-        ext: { width: 40, height: 20 },
-      });
+      // sheet.addImage(icons[pull.banner.image], {
+      //   tl: { col: 8, row: row.number - 1 },
+      //   ext: { width: 40, height: 20 },
+      // });
     }
   }
 }
@@ -226,9 +225,8 @@ export async function exportToExcel() {
   const workbook = createWorkbook();
 
   addSheet(workbook);
-  const icons = await addBanners(workbook);
-
+  await addBanners(workbook);
   await addInformation(workbook);
-  await addWishHistory(workbook, icons);
+  await addWishHistory(workbook);
   await downloadFile(workbook);
 }
