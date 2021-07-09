@@ -371,6 +371,7 @@
     "titleWeapon": "Weapon Calculator",
     "titleCharacter": "Character Calculator",
     "titleResin": "Resin Calculator",
+    "titleFriendship": "Friendship Exp Calculator",
     "goto": "Go To {where}",
     "howToUse": "How to Use",
     "guide": {
@@ -450,6 +451,17 @@
       "hours": "hours",
       "minutes": "minutes",
       "seconds": "seconds"
+    },
+    "friendship": {
+      "currentLevel": "Current Friendship Level",
+      "currentExp": "Current Exp Bar (Drag the Bar)",
+      "randomEventFarm": "How many Random Event you farm everyday?",
+      "calculate": "Calculate",
+      "based": "Based on AR:{ar}",
+      "change": "(change on settings)",
+      "result": "To reach Friendship level 10 if you complete all daily commission and use 180 resin everyday",
+      "resultSerenitea": "If you also place the character in the Serenitea Pot (Max Adeptal Energy)",
+      "resultDay": "{result} Days"
     }
   },
   "items": {

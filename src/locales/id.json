@@ -413,6 +413,17 @@
       "hours": "jam",
       "minutes": "menit",
       "seconds": "detik"
+    },
+    "friendship": {
+      "currentLevel": "Friendship Level Sekarang",
+      "currentExp": "Exp Bar Sekarang (Drag Bar-nya)",
+      "randomEventFarm": "Berapa banyak Random Event yang kamu farm tiap hari?",
+      "calculate": "Hitung",
+      "based": "Berdasarkan AR:{ar}",
+      "change": "(ganti di settings)",
+      "result": "Untuk mencapai Friendship level 10 jika kamu menyelesaikan semua daily commission dan menggunakan 180 resin tiap hari",
+      "resultSerenitea": "Jika kamu juga menaruh karakternya di Serenitea Pot (Adeptal Energy Max)",
+      "resultDay": "{result} Hari"
     }
   },
   "items": {
