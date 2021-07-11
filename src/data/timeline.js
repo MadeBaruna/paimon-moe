@@ -56,6 +56,17 @@ export const eventsData = [
       zoom: '180%',
       showOnHome: true,
     },
+    {
+      name: 'Update 2.0!',
+      pos: '0% 20%',
+      image: 'update17.jpg',
+      start: '2021-07-21 10:00:00',
+      end: '2021-07-28 10:00:00',
+      color: '#F3D9FF',
+      zoom: '180%',
+      showOnHome: true,
+      timezoneDependent: true,
+    },
   ],
   [
     {
@@ -423,7 +434,7 @@ export const eventsData = [
       pos: '0% 15%',
       image: 'echoing_tales.png',
       start: '2021-06-09 11:00:00',
-      end: '2021-07-21 15:00:00',
+      end: '2021-07-21 06:00:00',
       color: '#90CEF5',
       zoom: '230%',
       url: 'https://www.hoyolab.com/genshin/article/415684',
