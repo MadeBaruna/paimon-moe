@@ -212,8 +212,6 @@
           time = time.text;
         }
 
-        console.log(time);
-
         let name = '';
         if (type === 'weapon') {
           name = weapons.find((e) => e.name === fullName).id;
@@ -255,8 +253,15 @@
       sheet.eachRow((row, index) => {
         if (index === 1) return;
         const type = row.getCell(3).text.toLowerCase();
-        const time = row.getCell(1).text;
+        let time = row.getCell(3);
         const fullName = row.getCell(2).text;
+
+        if (time.type === ValueType.Date) {
+          time = dayjs.utc(time.value).format('YYYY-MM-DD HH:mm:ss');
+        } else {
+          time = time.text;
+        }
+
         let name = '';
         if (type === 'weapon') {
           name = weapons.find((e) => e.name === fullName).id;
