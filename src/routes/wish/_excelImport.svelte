@@ -253,7 +253,7 @@
       sheet.eachRow((row, index) => {
         if (index === 1) return;
         const type = row.getCell(3).text.toLowerCase();
-        let time = row.getCell(3);
+        let time = row.getCell(1);
         const fullName = row.getCell(2).text;
 
         if (time.type === ValueType.Date) {
