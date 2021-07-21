@@ -1069,6 +1069,77 @@ export const characters = {
       boss: itemList.gilded_scale,
     },
   },
+  kamisato_ayaka: {
+    name: 'Kamisato Ayaka',
+    id: 'kamisato_ayaka',
+    rarity: 5,
+    element: elements.cryo,
+    weapon: weapons.sword,
+    sex: 'female',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.shivada_jade_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.sakura_bloom, amount: 3 },
+          { item: itemList.old_handguard, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 3 },
+          { item: itemList.perpetual_heart, amount: 2 },
+          { item: itemList.sakura_bloom, amount: 10 },
+          { item: itemList.old_handguard, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 6 },
+          { item: itemList.perpetual_heart, amount: 4 },
+          { item: itemList.sakura_bloom, amount: 20 },
+          { item: itemList.kageuchi_handguard, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 3 },
+          { item: itemList.perpetual_heart, amount: 8 },
+          { item: itemList.sakura_bloom, amount: 30 },
+          { item: itemList.kageuchi_handguard, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 6 },
+          { item: itemList.perpetual_heart, amount: 12 },
+          { item: itemList.sakura_bloom, amount: 45 },
+          { item: itemList.famed_handguard, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_gemstone, amount: 6 },
+          { item: itemList.perpetual_heart, amount: 20 },
+          { item: itemList.sakura_bloom, amount: 60 },
+          { item: itemList.famed_handguard, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 11954, atk: 318, def: 729 },
+    material: {
+      book: [itemList.teachings_of_elegance, itemList.guide_to_elegance, itemList.philosophies_of_elegance],
+      material: [itemList.old_handguard, itemList.kageuchi_handguard, itemList.famed_handguard],
+      boss: itemList.bloodjade_branch,
+    },
+  },
   keqing: {
     name: 'Keqing',
     id: 'keqing',
