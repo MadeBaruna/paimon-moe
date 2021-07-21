@@ -25,6 +25,13 @@
     </p>
 
     <div class="px-4 md:px-8">
+      <ItemNew type="character" banner={banners.characters[15]} id={300016} featured={['kamisato_ayaka']} />
+      <ItemNew
+        type="weapon"
+        banner={banners.weapons[14]}
+        id={400015}
+        featured={['mistsplitter_reforged', 'skyward_spine']}
+      />
       <ItemNew type="character" banner={banners.characters[14]} id={300015} featured={['kaedehara_kazuha']} />
       <ItemNew type="weapon" banner={banners.weapons[13]} id={400014} featured={['freedom-sworn', 'skyward_atlas']} />
       <ItemNew type="character" banner={banners.characters[13]} id={300014} featured={['klee']} />
