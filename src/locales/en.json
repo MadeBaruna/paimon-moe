@@ -372,6 +372,7 @@
     "titleCharacter": "Character Calculator",
     "titleResin": "Resin Calculator",
     "titleFriendship": "Friendship Exp Calculator",
+    "titleFate": "Fate Price Calculator",
     "goto": "Go To {where}",
     "howToUse": "How to Use",
     "guide": {
@@ -462,6 +463,19 @@
       "result": "To reach Friendship level 10 if you complete all daily commission and use 180 resin everyday",
       "resultSerenitea": "If you also place the character in the Serenitea Pot (Max Adeptal Energy)",
       "resultDay": "{result} Days"
+    },
+    "fate": {
+      "currency": "Select Currency...",
+      "firstTime": "First Time",
+      "amount": "Amount",
+      "genesis": "Genesis",
+      "first": "Bonus2x",
+      "total": "Total",
+      "price": "Price",
+      "totalGenesis": "Total Genesis",
+      "totalPrice": "Total Price",
+      "calculate": "Calculate how many Genesis Crystal I can get with {currency}{value}",
+      "calculateFate": "Calculate how much money I need for {value}"
     }
   },
   "items": {

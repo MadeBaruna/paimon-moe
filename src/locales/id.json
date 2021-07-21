@@ -424,6 +424,19 @@
       "result": "Untuk mencapai Friendship level 10 jika kamu menyelesaikan semua daily commission dan menggunakan 180 resin tiap hari",
       "resultSerenitea": "Jika kamu juga menaruh karakternya di Serenitea Pot (Adeptal Energy Max)",
       "resultDay": "{result} Hari"
+    },
+    "fate": {
+      "currency": "Pilih Mata Uang...",
+      "firstTime": "Pertama Kali",
+      "amount": "Jumlah",
+      "genesis": "Genesis",
+      "first": "Bonus2x",
+      "total": "Total",
+      "price": "Price",
+      "totalGenesis": "Total Genesis",
+      "totalPrice": "Total Harga",
+      "calculate": "Hitung berapa banyak Genesis Crystal yang bisa didapatkan dengan {currency}{value}",
+      "calculateFate": "Hitung berapa uang yang diperlukan untuk {value}"
     }
   },
   "items": {
