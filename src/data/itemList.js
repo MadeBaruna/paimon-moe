@@ -794,6 +794,19 @@ export const itemList = {
   perpetual_heart: {id: 'perpetual_heart', name: 'Perpetual Heart', rarity: 5},
   smoldering_pearl: {id: 'smoldering_pearl', name: 'Smoldering Pearl', rarity: 5},
   
+  old_handguard: { id: 'old_handguard', name: 'Old Handguard' },
+  kageuchi_handguard: { id: 'kageuchi_handguard', name: 'Kageuchi Handguard' },
+  famed_handguard: { id: 'famed_handguard', name: 'Famed Handguard' },
+
+  chaos_gear: { id: 'chaos_gear', name: 'Chaos Gear' },
+  chaos_axis: { id: 'chaos_axis', name: 'Chaos Axis' },
+  chaos_oculus: { id: 'chaos_oculus', name: 'Chaos Oculus' },
+
+  dismal_prism: { id: 'dismal_prism', name: 'Dismal Prism' },
+  crystal_prism: { id: 'crystal_prism', name: 'Crystal Prism' },
+  polarizing_prism: { id: 'polarizing_prism', name: 'Polarizing Prism' },
+
+
   sakura_bloom: { id: 'sakura_bloom', name: 'Sakura Bloom' },
   crystal_marrow: { id: 'crystal_marrow', name: 'Crystal Marrow' },
   dendrobium: { id: 'dendrobium', name: 'Dendrobium' },
