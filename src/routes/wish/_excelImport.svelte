@@ -286,6 +286,58 @@
     loading = false;
   }
 
+  async function readGenshinWishesExportExcel(workbook) {
+    const bannerCategories = {
+      'character-event': 'Character Event',
+      'weapon-event': 'Weapon Event',
+      standard: 'Permanent',
+      beginners: 'Novice',
+    };
+
+    const weapons = Object.values(weaponList);
+    const chars = Object.values(characters);
+
+    const sheet = workbook.getWorksheet(1);
+
+    for (const [id, name] of Object.entries(bannerCategories)) {
+      const wishes = [];
+      sheet.eachRow((row, index) => {
+        if (index === 1 || row.getCell(1).text !== name) return;
+
+        const type = row.getCell(4).text.toLowerCase();
+        let time = row.getCell(6);
+        const fullName = row.getCell(3).text;
+
+        if (time.type === ValueType.Date) {
+          time = dayjs.utc(time.value).format('YYYY-MM-DD HH:mm:ss');
+        } else {
+          time = time.text;
+        }
+
+        let item = '';
+        if (type === 'weapon') {
+          item = weapons.find((e) => e.name === fullName).id;
+        } else if (type === 'character') {
+          item = chars.find((e) => e.name === fullName).id;
+        }
+
+        if (item === '') {
+          pushToast($t('wish.excel.errorUnknownItem'), 'error');
+          loading = false;
+          throw 'unknown reward name';
+        }
+
+        wishes.push([type, time, item]);
+      });
+
+      console.log('from excel', name, wishes.length);
+      await parseData(id, wishes);
+    }
+
+    step = 1;
+    loading = false;
+  }
+
   async function readExcel(file) {
     loading = true;
 
@@ -302,8 +354,10 @@
     try {
       if (selectedType === 'default') {
         readPaimonExcel(workbook);
-      } else {
+      } else if (selectedType === 'takagg') {
         readGachaExportExcel(workbook);
+      } else {
+        readGenshinWishesExportExcel(workbook);
       }
     } catch (err) {
       console.log(err);
@@ -386,6 +440,9 @@
       </button>
       <button on:click={() => changeType('takagg')} class={`pill ${selectedType === 'takagg' ? 'active' : ''}`}>
         {$t('wish.excel.takagg')}
+      </button>
+      <button on:click={() => changeType('genshinwishes')} class={`pill ${selectedType === 'genshinwishes' ? 'active' : ''}`}>
+        {$t('wish.excel.genshinwishes')}
       </button>
     </div>
     <input on:change={onFileChange} type="file" style="display: none;" bind:this={fileInput} />
