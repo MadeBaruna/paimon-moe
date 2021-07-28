@@ -6,7 +6,7 @@
 </script>
 
 <label
-  class="checkbox-wrapper flex flex-1 pl-4 items-center rounded-2xl h-14 cursor-pointer {inverted
+  class="checkbox-wrapper flex flex-1 pl-4 items-center rounded-2xl h-14 {disabled ? 'cursor-not-allowed' : 'cursor-pointer'} {inverted
     ? 'bg-item'
     : 'bg-background'} {className}"
   style="--bg: {inverted ? '#202442' : '#2D325A'};"

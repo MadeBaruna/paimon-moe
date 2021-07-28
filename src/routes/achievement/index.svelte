@@ -147,6 +147,13 @@
       val = !list[index][subindex].checked;
       list[index][subindex].checked = val;
       checkList[active][list[index][subindex].id] = val;
+
+      // If unchecked, recursively uncheck subsequent achievements
+      if (subindex < list[index].length - 1 &&
+          !list[index][subindex].checked &&
+          list[index][subindex + 1].checked) {
+        toggle({ index, subindex: subindex + 1, primogem: list[index][subindex + 1].reward});
+      }
     } else {
       val = !list[index].checked;
       list[index].checked = val;
@@ -284,6 +291,7 @@
                     checked={list[index][i].checked}
                     on:change={() => toggle({ index, subindex: i, primogem: it.reward })}
                     inverted
+                    disabled={i > 0 && !el[i - 1].checked}
                   />
                 </div>
               </div>
