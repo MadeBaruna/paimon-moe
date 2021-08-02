@@ -226,7 +226,7 @@
           "Se você não se sente confortável em compartilhar sua URL de feedback, você pode usar esta opção para processar seu histórico de orações em seu PC localmente. Este script irá ler o log em seu PC para gerar a URL do histórico de orações.",
           "Abra o menu Iniciar, e então procure por Powershell",
           "Abra o Powershell do Windows, e então copie & cole o script abaixo no Powershell",
-          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "Você pode revisar o script",
           "aqui",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",

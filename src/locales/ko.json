@@ -222,7 +222,7 @@
           "피드백 페이지 주소를 이용한 방법이 불편하다면, 이 방법을 이용해 PC에서 자체적으로 처리할 수 있습니다. 이 스크립트가 PC 내의 로그 파일을 읽어 기원 기록 주소를 가져옵니다.",
           "시작 버튼을 누르고, Powershell을 검색합니다.",
           "Windows Powershell을 실행하고, 아래 스크립트를 복사해 Powershell에 붙여넣기합니다.",
-          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "스크립트의 내용을 확인하려면",
           "여기",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",

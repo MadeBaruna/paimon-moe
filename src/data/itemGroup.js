@@ -31,6 +31,21 @@ export const itemGroup = {
     items: [itemList.teachings_of_prosperity, itemList.guide_to_prosperity, itemList.philosophies_of_prosperity],
     type: 'book',
   },
+  teachings_of_transience: {
+    name: 'Transience',
+    items: [itemList.teachings_of_transience, itemList.guide_to_transience, itemList.philosophies_of_transience],
+    type: 'book',
+  },
+  teachings_of_elegance: {
+    name: 'Elegance',
+    items: [itemList.teachings_of_elegance, itemList.guide_to_elegance, itemList.philosophies_of_elegance],
+    type: 'book',
+  },
+  teachings_of_light: {
+    name: 'Light',
+    items: [itemList.teachings_of_light, itemList.guide_to_light, itemList.philosophies_of_light],
+    type: 'book',
+  },
   tile_of_decarabians_tower: {
     name: 'Decarabian',
     items: [
@@ -88,6 +103,31 @@ export const itemGroup = {
       itemList.piece_of_aerosiderite,
       itemList.bit_of_aerosiderite,
       itemList.chunk_of_aerosiderite,
+    ],
+    type: 'weapon',
+  },
+  coral_branch_of_a_distant_sea: {
+    name: 'Distant Sea',
+    items: [
+      itemList.coral_branch_of_a_distant_sea,
+      itemList.jeweled_branch_of_a_distant_sea,
+      itemList.jade_branch_of_a_distant_sea,
+      itemList.golden_branch_of_a_distant_sea,
+    ],
+    type: 'weapon',
+  },
+  narukamis_wisdom: {
+    name: 'Narukami',
+    items: [itemList.narukamis_wisdom, itemList.narukamis_joy, itemList.narukamis_affection, itemList.narukamis_valor],
+    type: 'weapon',
+  },
+  mask_of_the_wicked_lieutenant: {
+    name: 'Mask',
+    items: [
+      itemList.mask_of_the_wicked_lieutenant,
+      itemList.mask_of_the_tigers_bite,
+      itemList.mask_of_the_one_horned,
+      itemList.mask_of_the_kijin,
     ],
     type: 'weapon',
   },
@@ -163,66 +203,36 @@ export const itemGroup = {
   },
   juvenile_jade: {
     name: 'Juvenile Jade',
-    items: [
-      itemList.juvenile_jade
-    ],
+    items: [itemList.juvenile_jade],
     type: 'ascension_gem',
   },
   chaos_device: {
     name: 'Chaos',
-    items: [
-      itemList.chaos_device,
-      itemList.chaos_circuit,
-      itemList.chaos_core,
-    ],
+    items: [itemList.chaos_device, itemList.chaos_circuit, itemList.chaos_core],
   },
   damaged_mask: {
     name: 'Mask',
-    items: [
-      itemList.damaged_mask,
-      itemList.stained_mask,
-      itemList.ominous_mask,
-    ],
+    items: [itemList.damaged_mask, itemList.stained_mask, itemList.ominous_mask],
   },
   dead_ley_line_branch: {
     name: 'Dead Ley Line',
-    items: [
-      itemList.dead_ley_line_branch,
-      itemList.dead_ley_line_leaves,
-      itemList.ley_line_sprouts,
-    ],
+    items: [itemList.dead_ley_line_branch, itemList.dead_ley_line_leaves, itemList.ley_line_sprouts],
   },
   divining_scroll: {
     name: 'Scroll',
-    items: [
-      itemList.divining_scroll,
-      itemList.sealed_scroll,
-      itemList.forbidden_curse_scroll,
-    ],
+    items: [itemList.divining_scroll, itemList.sealed_scroll, itemList.forbidden_curse_scroll],
   },
   firm_arrowhead: {
     name: 'Arrowhead',
-    items: [
-      itemList.firm_arrowhead,
-      itemList.sharp_arrowhead,
-      itemList.weathered_arrowhead,
-    ],
+    items: [itemList.firm_arrowhead, itemList.sharp_arrowhead, itemList.weathered_arrowhead],
   },
   fragile_bone_shard: {
     name: 'Bone Shard',
-    items: [
-      itemList.fragile_bone_shard,
-      itemList.sturdy_bone_shard,
-      itemList.fossilized_bone_shard,
-    ],
+    items: [itemList.fragile_bone_shard, itemList.sturdy_bone_shard, itemList.fossilized_bone_shard],
   },
   heavy_horn: {
     name: 'Horn',
-    items: [
-      itemList.heavy_horn,
-      itemList.black_bronze_horn,
-      itemList.black_crystal_horn,
-    ],
+    items: [itemList.heavy_horn, itemList.black_bronze_horn, itemList.black_crystal_horn],
   },
   hunters_sacrificial_knife: {
     name: 'Knife',
@@ -234,42 +244,38 @@ export const itemGroup = {
   },
   mist_grass_pollen: {
     name: 'Mist Grass',
-    items: [
-      itemList.mist_grass_pollen,
-      itemList.mist_grass,
-      itemList.mist_grass_wick,
-    ],
+    items: [itemList.mist_grass_pollen, itemList.mist_grass, itemList.mist_grass_wick],
   },
   recruits_insignia: {
     name: 'Insignia',
-    items: [
-      itemList.recruits_insignia,
-      itemList.sergeants_insignia,
-      itemList.lieutenants_insignia,
-    ],
+    items: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
   },
   slime_condensate: {
     name: 'Slime',
-    items: [
-      itemList.slime_condensate,
-      itemList.slime_secretions,
-      itemList.slime_concentrate,
-    ],
+    items: [itemList.slime_condensate, itemList.slime_secretions, itemList.slime_concentrate],
   },
   treasure_hoarder_insignia: {
     name: 'Treasure Hoarder Insignia',
-    items: [
-      itemList.treasure_hoarder_insignia,
-      itemList.silver_raven_insignia,
-      itemList.golden_raven_insignia,
-    ],
+    items: [itemList.treasure_hoarder_insignia, itemList.silver_raven_insignia, itemList.golden_raven_insignia],
   },
   whopperflower_nectar: {
     name: 'Nectar',
-    items: [
-      itemList.whopperflower_nectar,
-      itemList.shimmering_nectar,
-      itemList.energy_nectar,
-    ],
+    items: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
+  },
+  chaos_gear: {
+    name: 'Chaos Gear',
+    items: [itemList.chaos_gear, itemList.chaos_axis, itemList.chaos_oculus],
+  },
+  old_handguard: {
+    name: 'Hanguard',
+    items: [itemList.old_handguard, itemList.kageuchi_handguard, itemList.famed_handguard],
+  },
+  chaos_gear: {
+    name: 'Gear',
+    items: [itemList.chaos_gear, itemList.chaos_axis, itemList.chaos_oculus],
+  },
+  dismal_prism: {
+    name: 'Prism',
+    items: [itemList.dismal_prism, itemList.crystal_prism, itemList.polarizing_prism],
   },
 };

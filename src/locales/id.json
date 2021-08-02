@@ -96,7 +96,10 @@
     "manualButton": "Nyalakan Input Manual",
     "errorBanner": "Waktu banner salah! Coba sesuaikan server di halaman settings. Masih gak bisa? tolong chat di Discord 😅",
     "globalWishTally": "Perhitungan Pity Wish Global",
-    "pityTooltip": ["Ini adalah pity {rarity} sekarang", "{count}x wish lagi untuk dijamin {rarity}"],
+    "pityTooltip": [
+      "Ini adalah pity {rarity} sekarang",
+      "{count}x wish lagi untuk dijamin {rarity}"
+    ],
     "import": {
       "title": "Import Riwayat Wish",
       "faqsButton": "FAQS - BACA DULU",
@@ -125,7 +128,11 @@
       "server": "Pilih server mu:",
       "wishTallyCheck": "Submit pity untuk perhitungan pity global",
       "wishTally": "Kita sedang melakukan perhitungan pity global! Kamu bisa mensubmit pity mu untuk berpartisipasi. Semua data pity akan dikumpulkan untuk mengetahui berapa pity rata-rata pengguna paimon.moe.",
-      "wishTallyCollected": ["Yang dikumpulkan:", "dan", "pity dari riwayat wish mu"],
+      "wishTallyCollected": [
+        "Yang dikumpulkan:",
+        "dan",
+        "pity dari riwayat wish mu"
+      ],
       "faqs": {
         "title": "Import Riwayat Wish FAQS",
         "q1": "Cara kerjanya gimana?",
@@ -198,7 +205,7 @@
           "Jika kamu tidak nyaman dengan menaruh link feedback disini, kamu bisa memproses riwayat wish di pc mu secara lokal. Script ini akan membaca file log di pc mu untuk memproses riwayat history mu.",
           "Buka Start, kemudian cari Powershell",
           "Buka Windows Powershell, kemudian copy & paste script berikut di Powershell nya",
-          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "Kamu bisa me-review script nya",
           "disini",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
@@ -247,7 +254,11 @@
       "exportFinish": "Export berhasil, harap tunggu sampai file nya sudah ter-download!",
       "wishTallyTitle": "Submit Perhitungan Pity Wish",
       "wishTally": "Kita sedang melakukan perhitungan pity global! Kamu bisa mensubmit pity mu untuk berpartisipasi. Semua data pity akan dikumpulkan untuk mengetahui berapa pity rata-rata pengguna paimon.moe.",
-      "wishTallyCollected": ["Yang dikumpulkan:", "dan", "pity dari riwayat wish mu"],
+      "wishTallyCollected": [
+        "Yang dikumpulkan:",
+        "dan",
+        "pity dari riwayat wish mu"
+      ],
       "wishTallySubmit": "Submit Perhitungan Pity Wish",
       "wishTallyThankyou": "Terimakasih sudah berpartisipasi!",
       "manualTitle": "Pengaturan Manual Input",
@@ -259,13 +270,22 @@
         "subtitle": "Setelah kamu melakukan x1 pull wish:",
         "pressWhenYouGet": "Tekan {button} ketika kamu mendapatkan {rarity}★",
         "p1": "Itu akan otomatis menambahkan total pull, 5★ dan, 4★ pity",
-        "p2": ["Ketika", "pity mencapai 10, angkanya akan otomatis reset menjadi 0"],
-        "p3": ["Ketika", "pity mencapai 90, angkanya akan otomatis reset menjadi 0"],
+        "p2": [
+          "Ketika",
+          "pity mencapai 10, angkanya akan otomatis reset menjadi 0"
+        ],
+        "p3": [
+          "Ketika",
+          "pity mencapai 90, angkanya akan otomatis reset menjadi 0"
+        ],
         "p4": [
           "Ketika kamu melakukan wish x10 pull, tekan",
           "tapi counter pity nya tidak akan akurat, karena tidak tahu kapan drop nya terjadi (bisa saja kamu dapat nya saat pull ke 1 atau bisa saja ke 10). Untuk membuat counter nya akurat, kamu perlu mengecek nya di tabel riwayat wish mu dan tabahkan 1-per-1 seperti kamu melakukan 1x pull wish."
         ],
-        "p5": ["Kamu juga bisa menekan", "untuk mengedit nilai nya secara manual!"],
+        "p5": [
+          "Kamu juga bisa menekan",
+          "untuk mengedit nilai nya secara manual!"
+        ],
         "p6": [
           "Tekan tombol panah dibawah untuk melihat detail riwayat mu. Sebuah form akan muncul ketika kamu mendapat",
           "atau",
@@ -356,7 +376,11 @@
       "calculateTalent": "Hitung Material Talent?",
       "inputTalentLevel": "Masukkan level talent ke 1, 2 dan 3 saat ini",
       "inputTalentNotice": "Jika warna level nya berbeda, kurangi 3",
-      "inputTalent": ["lvl talent ke 1", "lvl talent ke 2", "lvl talent ke 3"],
+      "inputTalent": [
+        "lvl talent ke 1",
+        "lvl talent ke 2",
+        "lvl talent ke 3"
+      ],
       "talentToLevel": "ke level",
       "calculate": "Hitung",
       "unknownInformation": "Ada beberapa informasi yang tidak diketahui",
@@ -389,6 +413,30 @@
       "hours": "jam",
       "minutes": "menit",
       "seconds": "detik"
+    },
+    "friendship": {
+      "currentLevel": "Friendship Level Sekarang",
+      "currentExp": "Exp Bar Sekarang (Drag Bar-nya)",
+      "randomEventFarm": "Berapa banyak Random Event yang kamu farm tiap hari?",
+      "calculate": "Hitung",
+      "based": "Berdasarkan AR:{ar}",
+      "change": "(ganti di settings)",
+      "result": "Untuk mencapai Friendship level 10 jika kamu menyelesaikan semua daily commission dan menggunakan 180 resin tiap hari",
+      "resultSerenitea": "Jika kamu juga menaruh karakternya di Serenitea Pot (Adeptal Energy Max)",
+      "resultDay": "{result} Hari"
+    },
+    "fate": {
+      "currency": "Pilih Mata Uang...",
+      "firstTime": "Pertama Kali",
+      "amount": "Jumlah",
+      "genesis": "Genesis",
+      "first": "Bonus2x",
+      "total": "Total",
+      "price": "Price",
+      "totalGenesis": "Total Genesis",
+      "totalPrice": "Total Harga",
+      "calculate": "Hitung berapa banyak Genesis Crystal yang bisa didapatkan dengan {currency}{value}",
+      "calculateFate": "Hitung berapa uang yang diperlukan untuk {value}"
     }
   },
   "items": {
@@ -419,7 +467,10 @@
   "todo": {
     "title": "Todo List",
     "summary": "Summary",
-    "empty": ["Belum ada yang ditambahkan 😀", "Tambahkan todo dari halaman Items atau dari Kalkulator!"],
+    "empty": [
+      "Belum ada yang ditambahkan 😀",
+      "Tambahkan todo dari halaman Items atau dari Kalkulator!"
+    ],
     "farmableToday": "Bisa di farm hari ini",
     "resin": "resin diperlukan",
     "based": "Berdasarkan AR:{ar} and WL:{wl}",

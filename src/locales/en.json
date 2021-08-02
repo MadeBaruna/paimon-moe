@@ -19,7 +19,9 @@
     "welcome": "Welcome to Paimon.moe! 👋",
     "message": "Your best Genshin Impact companion! Help you plan what to farm with ascension calculator, also track your progress with todo and wish counter.",
     "banner": {
-      "featured": ["Eula"],
+      "featured": [
+        "Eula"
+      ],
       "summoned": "Summoned",
       "percentage": "from all {rarity}",
       "avg": "Pity average",
@@ -124,7 +126,10 @@
     "manualButton": "Enable Manual Input",
     "errorBanner": "Banner time missmatch! Please adjust your server on settings page. Still not working? please leave a message on Discord 😅",
     "globalWishTally": "Global Wish Tally",
-    "pityTooltip": ["Shows your current {rarity} pity", "{count} pulls to guaranteed {rarity}"],
+    "pityTooltip": [
+      "Shows your current {rarity} pity",
+      "{count} pulls to guaranteed {rarity}"
+    ],
     "import": {
       "title": "Import Wish History",
       "faqsButton": "FAQ - READ FIRST",
@@ -153,7 +158,11 @@
       "server": "Select your server:",
       "wishTallyCheck": "Submit pity for global wish tally",
       "wishTally": "We are doing a global wish tally! You can submit your wish tally to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "faqs": {
         "title": "Import Wish History FAQ",
         "q1": "How does it work?",
@@ -226,7 +235,7 @@
           "If you are not comfortable passing around your feedback url, you can use this option to process the wish on your pc locally. This script will read the log file on your pc to get the wish history url.",
           "Open Start, then search for Powershell",
           "Open Windows Powershell, then copy & paste the script below to the Powershell",
-          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "You can review the script",
           "here",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
@@ -275,7 +284,11 @@
       "exportFinish": "Export success, please wait until the browser download the file!",
       "wishTallyTitle": "Submit Wish Tally",
       "wishTally": "We are doing a global wish tally! You can submit your wish tally to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "wishTallySubmit": "Submit Wish Tally",
       "wishTallyThankyou": "Thankyou for participating!",
       "manualTitle": "Manual Input Setting",
@@ -287,13 +300,22 @@
         "subtitle": "After a 1x Wish:",
         "pressWhenYouGet": "Press {button} when you get {rarity}★",
         "p1": "It will automatically add the lifetime pulls, 5★, and 4★ pity",
-        "p2": ["When the", "pity reaches 10, it will automatically be reset to 0"],
-        "p3": ["When the", "pity reaches 90, it will automatically be reset to 0"],
+        "p2": [
+          "When the",
+          "pity reaches 10, it will automatically be reset to 0"
+        ],
+        "p3": [
+          "When the",
+          "pity reaches 90, it will automatically be reset to 0"
+        ],
         "p4": [
           "After a 10x Wish, press",
           "but keep in mind that the pity counter might not be accurate, because there is no way to tell when the drop occured (maybe you got it on the 1st or even the 10th pull). To ensure that the counter is still accurate, you need to check the history table and add it one-by-one like you do 1x Wishes."
         ],
-        "p5": ["You can also press the", "button to edit the values manually!"],
+        "p5": [
+          "You can also press the",
+          "button to edit the values manually!"
+        ],
         "p6": [
           "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a",
           "or",
@@ -349,6 +371,8 @@
     "titleWeapon": "Weapon Calculator",
     "titleCharacter": "Character Calculator",
     "titleResin": "Resin Calculator",
+    "titleFriendship": "Friendship Exp Calculator",
+    "titleFate": "Fate Price Calculator",
     "goto": "Go To {where}",
     "howToUse": "How to Use",
     "guide": {
@@ -386,7 +410,11 @@
       "calculateTalent": "Calculate Talent Material?",
       "inputTalentLevel": "Input the 1st, 2nd & 3rd current talent level",
       "inputTalentNotice": "If it has different color, substract it by 3",
-      "inputTalent": ["1st talent lvl", "2nd talent lvl", "3rd talent lvl"],
+      "inputTalent": [
+        "1st talent lvl",
+        "2nd talent lvl",
+        "3rd talent lvl"
+      ],
       "talentToLevel": "to level",
       "calculate": "Calculate",
       "unknownInformation": "There are some unknown information",
@@ -395,7 +423,11 @@
       "expWasted": "EXP Wasted",
       "addToTodo": "Add to Todo List",
       "addedToTodo": "Added to Todo List",
-      "talent": ["Attack", "Skill", "Burst"]
+      "talent": [
+        "Attack",
+        "Skill",
+        "Burst"
+      ]
     },
     "expTable": {
       "level": "Level",
@@ -420,6 +452,30 @@
       "hours": "hours",
       "minutes": "minutes",
       "seconds": "seconds"
+    },
+    "friendship": {
+      "currentLevel": "Current Friendship Level",
+      "currentExp": "Current Exp Bar (Drag the Bar)",
+      "randomEventFarm": "How many Random Event you farm everyday?",
+      "calculate": "Calculate",
+      "based": "Based on AR:{ar}",
+      "change": "(change on settings)",
+      "result": "To reach Friendship level 10 if you complete all daily commission and use 180 resin everyday",
+      "resultSerenitea": "If you also place the character in the Serenitea Pot (Max Adeptal Energy)",
+      "resultDay": "{result} Days"
+    },
+    "fate": {
+      "currency": "Select Currency...",
+      "firstTime": "First Time",
+      "amount": "Amount",
+      "genesis": "Genesis",
+      "first": "Bonus2x",
+      "total": "Total",
+      "price": "Price",
+      "totalGenesis": "Total Genesis",
+      "totalPrice": "Total Price",
+      "calculate": "Calculate how many Genesis Crystal I can get with {currency}{value}",
+      "calculateFate": "Calculate how much money I need for {value}"
     }
   },
   "items": {
@@ -450,7 +506,10 @@
   "todo": {
     "title": "Todo List",
     "summary": "Summary",
-    "empty": ["Nothing to do yet 😀", "Add some from the Items page or the Calculator!"],
+    "empty": [
+      "Nothing to do yet 😀",
+      "Add some from the Items page or the Calculator!"
+    ],
     "farmableToday": "Farmable Today",
     "resin": "Resin needed",
     "based": "Based on AR:{ar} and WL:{wl}",

@@ -223,7 +223,7 @@
           "Si vous ne souhaitez pas laissez traîner votre URL de commentaire, vous pouvez utiliser cette option pour traiter votre historique de voeux localement sur votre ordinateur. Ce script lira les fichiers de log sur votre ordinateur pour obtenir l'URL de votre historique.",
           "Ouvrez le menu Démarrer et cherchez Powershell",
           "Ouvrez Windows Powershell, et copier coller le lien sur Powershell",
-          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "Vous pouvez lire le script",
           "ici",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",

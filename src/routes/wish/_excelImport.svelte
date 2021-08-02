@@ -1,6 +1,6 @@
 <script>
   import { t } from 'svelte-i18n';
-  import { Workbook } from 'exceljs';
+  import { Workbook, ValueType } from 'exceljs';
   import dayjs from 'dayjs';
 
   import Button from '../../components/Button.svelte';
@@ -203,8 +203,15 @@
       sheet.eachRow((row, index) => {
         if (index === 1) return;
         const type = row.getCell(1).text.toLowerCase();
-        const time = row.getCell(3).text;
+        let time = row.getCell(3);
         const fullName = row.getCell(2).text;
+
+        if (time.type === ValueType.Date) {
+          time = dayjs.utc(time.value).format('YYYY-MM-DD HH:mm:ss');
+        } else {
+          time = time.text;
+        }
+
         let name = '';
         if (type === 'weapon') {
           name = weapons.find((e) => e.name === fullName).id;
@@ -246,8 +253,15 @@
       sheet.eachRow((row, index) => {
         if (index === 1) return;
         const type = row.getCell(3).text.toLowerCase();
-        const time = row.getCell(1).text;
+        let time = row.getCell(1);
         const fullName = row.getCell(2).text;
+
+        if (time.type === ValueType.Date) {
+          time = dayjs.utc(time.value).format('YYYY-MM-DD HH:mm:ss');
+        } else {
+          time = time.text;
+        }
+
         let name = '';
         if (type === 'weapon') {
           name = weapons.find((e) => e.name === fullName).id;
@@ -300,7 +314,10 @@
 
   function checkFile(file) {
     console.log(file.type);
-    if (file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
+    if (
+      file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' ||
+      file.type === 'application/wps-office.xlsx'
+    ) {
       readExcel(file);
     } else {
       pushToast($t('wish.excel.errorInvalidFile'), 'error');
@@ -349,7 +366,6 @@
       };
       reader.readAsArrayBuffer(file);
     });
-
 </script>
 
 <div>
@@ -434,5 +450,4 @@
       @apply text-background;
     }
   }
-
 </style>

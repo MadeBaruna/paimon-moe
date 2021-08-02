@@ -210,7 +210,6 @@
   onMount(async () => {
     await getConstellation();
   });
-
 </script>
 
 <svelte:head>
@@ -498,5 +497,4 @@
     padding-top: 0.85rem;
     padding-bottom: 0.85rem;
   }
-
 </style>

@@ -486,7 +486,6 @@
     detectPlatform();
     selectedServer = servers.find((e) => e.value === $server);
   });
-
 </script>
 
 {#if processingLog}
@@ -663,6 +662,9 @@
       </div>
       {#if selectedType === 'pc'}
         <div class="bg-background rounded-xl px-4 py-2 text-white mb-4 mt-2">
+          <a href="https://www.youtube.com/watch?v=gsyp6SENJb4" target="_blank" class="text-primary hover:underline">
+            {$t('wish.import.guide.video')}
+          </a>
           <ol class="list-decimal ml-4">
             <li class="my-2">{$t('wish.import.guide.pc.0')}</li>
             <li class="my-2">{$t('wish.import.guide.pc.1')}</li>
@@ -810,5 +812,4 @@
       @apply block;
     }
   } */
-
 </style>

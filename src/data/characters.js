@@ -998,6 +998,148 @@ export const characters = {
       boss: itemList.spirit_locket_of_boreas,
     },
   },
+  kaedehara_kazuha: {
+    name: 'Kaedehara Kazuha',
+    id: 'kaedehara_kazuha',
+    rarity: 5,
+    element: elements.anemo,
+    weapon: weapons.sword,
+    sex: 'male',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.sea_ganoderma, amount: 3 },
+          { item: itemList.treasure_hoarder_insignia, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 3 },
+          { item: itemList.marionette_core, amount: 2 },
+          { item: itemList.sea_ganoderma, amount: 10 },
+          { item: itemList.treasure_hoarder_insignia, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 6 },
+          { item: itemList.marionette_core, amount: 4 },
+          { item: itemList.sea_ganoderma, amount: 20 },
+          { item: itemList.silver_raven_insignia, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 3 },
+          { item: itemList.marionette_core, amount: 8 },
+          { item: itemList.sea_ganoderma, amount: 30 },
+          { item: itemList.silver_raven_insignia, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 6 },
+          { item: itemList.marionette_core, amount: 12 },
+          { item: itemList.sea_ganoderma, amount: 45 },
+          { item: itemList.golden_raven_insignia, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_gemstone, amount: 6 },
+          { item: itemList.marionette_core, amount: 20 },
+          { item: itemList.sea_ganoderma, amount: 60 },
+          { item: itemList.golden_raven_insignia, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 13348, atk: 297, def: 807 },
+    material: {
+      book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
+      material: [itemList.treasure_hoarder_insignia, itemList.silver_raven_insignia, itemList.golden_raven_insignia],
+      boss: itemList.gilded_scale,
+    },
+  },
+  kamisato_ayaka: {
+    name: 'Kamisato Ayaka',
+    id: 'kamisato_ayaka',
+    rarity: 5,
+    element: elements.cryo,
+    weapon: weapons.sword,
+    sex: 'female',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.shivada_jade_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.sakura_bloom, amount: 3 },
+          { item: itemList.old_handguard, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 3 },
+          { item: itemList.perpetual_heart, amount: 2 },
+          { item: itemList.sakura_bloom, amount: 10 },
+          { item: itemList.old_handguard, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 6 },
+          { item: itemList.perpetual_heart, amount: 4 },
+          { item: itemList.sakura_bloom, amount: 20 },
+          { item: itemList.kageuchi_handguard, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 3 },
+          { item: itemList.perpetual_heart, amount: 8 },
+          { item: itemList.sakura_bloom, amount: 30 },
+          { item: itemList.kageuchi_handguard, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 6 },
+          { item: itemList.perpetual_heart, amount: 12 },
+          { item: itemList.sakura_bloom, amount: 45 },
+          { item: itemList.famed_handguard, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_gemstone, amount: 6 },
+          { item: itemList.perpetual_heart, amount: 20 },
+          { item: itemList.sakura_bloom, amount: 60 },
+          { item: itemList.famed_handguard, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 11954, atk: 318, def: 729 },
+    material: {
+      book: [itemList.teachings_of_elegance, itemList.guide_to_elegance, itemList.philosophies_of_elegance],
+      material: [itemList.old_handguard, itemList.kageuchi_handguard, itemList.famed_handguard],
+      boss: itemList.bloodjade_branch,
+    },
+  },
   keqing: {
     name: 'Keqing',
     id: 'keqing',
@@ -1854,6 +1996,7 @@ export const characters = {
         itemList.philosophies_of_ballad,
         itemList.philosophies_of_freedom,
         itemList.philosophies_of_resistance,
+        itemList.philosophies_of_ballad,
       ],
       material: [
         itemList.divining_scroll,
@@ -1861,6 +2004,7 @@ export const characters = {
         itemList.sealed_scroll,
         itemList.sealed_scroll,
         itemList.sealed_scroll,
+        itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
@@ -1875,7 +2019,7 @@ export const characters = {
     element: elements.geo,
     weapon: weapons.sword,
     sex: "player's choice",
-    nation: 'mondstadt',
+    nation: 'liyue',
     ascension: [
       {
         items: [
@@ -1943,6 +2087,7 @@ export const characters = {
         itemList.philosophies_of_gold,
         itemList.philosophies_of_prosperity,
         itemList.philosophies_of_diligence,
+        itemList.philosophies_of_gold,
       ],
       material: [
         itemList.firm_arrowhead,
@@ -1950,6 +2095,7 @@ export const characters = {
         itemList.sharp_arrowhead,
         itemList.sharp_arrowhead,
         itemList.sharp_arrowhead,
+        itemList.weathered_arrowhead,
         itemList.weathered_arrowhead,
         itemList.weathered_arrowhead,
         itemList.weathered_arrowhead,
@@ -1966,6 +2112,7 @@ export const characters = {
         itemList.philosophies_of_ballad,
         itemList.philosophies_of_freedom,
         itemList.philosophies_of_resistance,
+        itemList.philosophies_of_ballad,
       ],
       material: [
         itemList.divining_scroll,
@@ -1976,10 +2123,103 @@ export const characters = {
         itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
+        itemList.forbidden_curse_scroll,
       ],
       boss: itemList.dvalins_sigh,
     },
   },
+  traveler_electro: {
+    name: 'Traveler (Electro)',
+    id: 'traveler_electro',
+    rarity: 5,
+    element: elements.electro,
+    weapon: weapons.sword,
+    sex: "player's choice",
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.brilliant_diamond_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 3 },
+          { item: itemList.damaged_mask, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_fragment, amount: 3 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 10 },
+          { item: itemList.damaged_mask, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_fragment, amount: 6 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 20 },
+          { item: itemList.stained_mask, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_chunk, amount: 3 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 30 },
+          { item: itemList.stained_mask, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_chunk, amount: 6 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 45 },
+          { item: itemList.ominous_mask, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_gemstone, amount: 6 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 60 },
+          { item: itemList.ominous_mask, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 10122, atk: 198, def: 635 },
+    material: {
+      book: [
+        itemList.teachings_of_transience,
+        itemList.guide_to_elegance,
+        itemList.guide_to_light,
+        itemList.guide_to_transience,
+        itemList.guide_to_elegance,
+        itemList.philosophies_of_light,
+        itemList.philosophies_of_transience,
+        itemList.philosophies_of_elegance,
+        itemList.philosophies_of_light,
+      ],
+      material: [
+        itemList.old_handguard,
+        itemList.kageuchi_handguard,
+        itemList.kageuchi_handguard,
+        itemList.kageuchi_handguard,
+        itemList.kageuchi_handguard,
+        itemList.famed_handguard,
+        itemList.famed_handguard,
+        itemList.famed_handguard,
+        itemList.famed_handguard,
+      ],
+      boss: itemList.dragon_lords_crown,
+    },
+  },
+
   venti: {
     name: 'Venti',
     id: 'venti',

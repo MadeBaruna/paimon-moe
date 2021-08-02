@@ -11,6 +11,7 @@
     "todoList": "Todo 规划",
     "timeline": "时间线",
     "furnishing": "家具",
+    "weapons": "武器",
     "settings": "设置",
     "donate": "赞助"
   },
@@ -19,7 +20,7 @@
     "message": "你最好的原神伙伴! 帮助你规划材料消耗与刷本, 追踪你的游戏进度与抽卡结果.",
     "banner": {
       "featured": [
-        "优菈"
+        "可莉"
       ],
       "summoned": "被抽到",
       "percentage": "占比于 {rarity}",
@@ -66,6 +67,10 @@
     "achievement": {
       "title": "🏆 查看追踪你的成就完成状态",
       "detail": "成就"
+    },
+    "furnishing": {
+      "title": "查看套装需要哪些家具. 同时你也可以查看不同家具的负载.",
+      "detail": "家具"
     }
   },
   "characters": {
@@ -78,6 +83,7 @@
     "talents": "天赋",
     "passiveTalents": "被动天赋",
     "constellations": "命之座",
+    "const": "命",
     "asc": "突破",
     "lvl": "等级",
     "hp": "生命",
@@ -98,7 +104,8 @@
     "cryoDamageBonus": "冰元素伤害加成",
     "anemoDamageBonus": "风元素伤害加成",
     "physicalDamageBonus": "物理伤害加成",
-    "geoDamageBonus": "岩元素伤害加成"
+    "geoDamageBonus": "岩元素伤害加成",
+    "sortBy": "排序方式..."
   },
   "wish": {
     "title": "祈愿统计",
@@ -226,7 +233,7 @@
           "如果你不想提供你的url，你可以使用这个选项在你的电脑上本地处理祈愿历史记录。此脚本将读取您电脑上的日志文件以获取祈愿url。",
           "打开开始菜单, 搜索powershell",
           "打开windows powershell, 然后复制粘贴脚本到powershell里",
-          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/cdfead30f830b897e8822a40f98fea5340dbd62e/importer.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "你可以查看这个脚本",
           "这里",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
@@ -383,7 +390,12 @@
       "mora": "摩拉 (误差 ±40)",
       "expWasted": "溢出经验",
       "addToTodo": "添加到Todo",
-      "addedToTodo": "已添加到Todo"
+      "addedToTodo": "已添加到Todo",
+      "talent": [
+        "普攻",
+        "战技",
+        "爆发"
+      ]
     },
     "expTable": {
       "level": "等级",
@@ -598,6 +610,49 @@
     "hall": "大厅",
     "room": "屋子 {number}",
     "exteriorNum": "区域 {number}",
-    "corridor": "走廊"
+    "corridor": "走廊",
+    "inventoryButton": "仓库",
+    "listButton": "列表",
+    "inventory": {
+      "title": "家具仓库",
+      "subtitle": "并未显示一些特殊分类例如墙壁",
+      "all": "全部",
+      "openSets": "打开套装"
+    },
+    "sets": {
+      "title": "家具套装",
+      "subtitle": "点击家具图标查看详情, 然后可以点击角色图标来标记! 打开上面库存按钮可以填写你拥有的家具数量.",
+      "setPlaced": "设为已放置",
+      "setUnplaced": "设为未放置",
+      "inInventory": "在库存中",
+      "available": "可用",
+      "used": "已在其他套装使用"
+    }
+  },
+  "weapon": {
+    "title": "武器列表",
+    "subtitle": "数据取自最高等级",
+    "name": "名称",
+    "type": "类型",
+    "rarity": "稀有度",
+    "atk": "攻击",
+    "secondary": "副属性",
+    "critRate": "暴击率",
+    "critDamage": "暴击伤害",
+    "em": "元素精通",
+    "er": "元素充能",
+    "atkPercent": "攻击",
+    "hpPercent": "生命",
+    "defPercent": "防御",
+    "physicalDamage": "物理伤害加成",
+    "bow": "弓",
+    "polearm": "长柄",
+    "sword": "单手剑",
+    "catalyst": "法器",
+    "claymore": "双手剑",
+    "ascensionMaterial": "突破材料",
+    "asc": "突破",
+    "lvl": "等级",
+    "baseAtk": "基础攻击"
   }
 }
