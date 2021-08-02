@@ -22,6 +22,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/genshin/article/543290',
       showOnHome: true,
     },
+    {
+      name: "The Heron's Invitation Web Event",
+      pos: '0% 48%',
+      image: 'the_herons_invitation.jpg',
+      start: '2021-07-26 04:00:00',
+      end: '2021-08-02 23:59:59',
+      color: '#FFFBF1',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/genshin/article/543290',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -331,6 +342,16 @@ export const eventsData = [
       color: '#B6A1EA',
       image: 'paimon_bargain.png',
       description: 'Now selling: Fischl, Xiangling, and Blackcliff Weapons.',
+    },
+    {
+      name: "Paimon's Bargain - Beidou, Noelle, and Royal",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2021-08-01 04:00:00',
+      end: '2021-09-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Beidou, Noelle, and Royal Weapons.',
     },
   ],
   [
