@@ -6669,4 +6669,299 @@ export const weaponList = {
       },
     ],
   },
+  amenoma_kageuchi: {
+    name: 'Amenoma Kageuchi',
+    id: 'amenoma_kageuchi',
+    rarity: 4,
+    atk: 41,
+    secondary: 'ATK',
+    type: weapons.sword,
+    source: 'forging',
+    ascension: [
+      {
+        items: [
+          { item: itemList.coral_branch_of_a_distant_sea, amount: 3 },
+          { item: itemList.chaos_gear, amount: 3 },
+          { item: itemList.old_handguard, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.jeweled_branch_of_a_distant_sea, amount: 3 },
+          { item: itemList.chaos_gear, amount: 12 },
+          { item: itemList.old_handguard, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.jeweled_branch_of_a_distant_sea, amount: 6 },
+          { item: itemList.chaos_axis, amount: 6 },
+          { item: itemList.kageuchi_handguard, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.jade_branch_of_a_distant_sea, amount: 3 },
+          { item: itemList.chaos_axis, amount: 12 },
+          { item: itemList.kageuchi_handguard, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.jade_branch_of_a_distant_sea, amount: 6 },
+          { item: itemList.chaos_oculus, amount: 9 },
+          { item: itemList.famed_handguard, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.golden_branch_of_a_distant_sea, amount: 4 },
+          { item: itemList.chaos_oculus, amount: 18 },
+          { item: itemList.famed_handguard, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  hakushin_ring: {
+    name: 'Hakushin Ring',
+    id: 'hakushin_ring',
+    rarity: 4,
+    atk: 44,
+    secondary: 'Energy Recharge',
+    type: weapons.catalyst,
+    source: 'forging',
+    ascension: [
+      {
+        items: [
+          { item: itemList.coral_branch_of_a_distant_sea, amount: 3 },
+          { item: itemList.dismal_prism, amount: 3 },
+          { item: itemList.divining_scroll, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.jeweled_branch_of_a_distant_sea, amount: 3 },
+          { item: itemList.dismal_prism, amount: 12 },
+          { item: itemList.divining_scroll, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.jeweled_branch_of_a_distant_sea, amount: 6 },
+          { item: itemList.crystal_prism, amount: 6 },
+          { item: itemList.sealed_scroll, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.jade_branch_of_a_distant_sea, amount: 3 },
+          { item: itemList.crystal_prism, amount: 12 },
+          { item: itemList.sealed_scroll, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.jade_branch_of_a_distant_sea, amount: 6 },
+          { item: itemList.polarizing_prism, amount: 9 },
+          { item: itemList.forbidden_curse_scroll, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.golden_branch_of_a_distant_sea, amount: 4 },
+          { item: itemList.polarizing_prism, amount: 18 },
+          { item: itemList.forbidden_curse_scroll, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  hamayumi: {
+    name: 'Hamayumi',
+    id: 'hamayumi',
+    rarity: 4,
+    atk: 41,
+    secondary: 'ATK',
+    type: weapons.bow,
+    source: 'forging',
+    ascension: [
+      {
+        items: [
+          { item: itemList.narukamis_wisdom, amount: 3 },
+          { item: itemList.dismal_prism, amount: 3 },
+          { item: itemList.firm_arrowhead, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 3 },
+          { item: itemList.dismal_prism, amount: 12 },
+          { item: itemList.firm_arrowhead, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 6 },
+          { item: itemList.crystal_prism, amount: 6 },
+          { item: itemList.sharp_arrowhead, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 3 },
+          { item: itemList.crystal_prism, amount: 12 },
+          { item: itemList.sharp_arrowhead, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 6 },
+          { item: itemList.polarizing_prism, amount: 9 },
+          { item: itemList.weathered_arrowhead, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_valor, amount: 4 },
+          { item: itemList.polarizing_prism, amount: 18 },
+          { item: itemList.weathered_arrowhead, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  katsuragikiri_nagamasa: {
+    name: 'Katsuragikiri Nagamasa',
+    id: 'katsuragikiri_nagamasa',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Energy Recharge',
+    type: weapons.claymore,
+    source: 'forging',
+    ascension: [
+      {
+        items: [
+          { item: itemList.narukamis_wisdom, amount: 3 },
+          { item: itemList.chaos_gear, amount: 3 },
+          { item: itemList.old_handguard, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 3 },
+          { item: itemList.chaos_gear, amount: 12 },
+          { item: itemList.old_handguard, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 6 },
+          { item: itemList.chaos_axis, amount: 6 },
+          { item: itemList.kageuchi_handguard, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 3 },
+          { item: itemList.chaos_axis, amount: 12 },
+          { item: itemList.kageuchi_handguard, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 6 },
+          { item: itemList.chaos_oculus, amount: 9 },
+          { item: itemList.famed_handguard, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_valor, amount: 4 },
+          { item: itemList.chaos_oculus, amount: 18 },
+          { item: itemList.famed_handguard, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  kitain_cross_spear: {
+    name: 'Kitain Cross Spear',
+    id: 'kitain_cross_spear',
+    rarity: 4,
+    atk: 44,
+    secondary: 'Elemental Mastery',
+    type: weapons.claymore,
+    source: 'forging',
+    ascension: [
+      {
+        items: [
+          { item: itemList.mask_of_the_wicked_lieutenant, amount: 3 },
+          { item: itemList.chaos_gear, amount: 3 },
+          { item: itemList.treasure_hoarder_insignia, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 3 },
+          { item: itemList.chaos_gear, amount: 12 },
+          { item: itemList.treasure_hoarder_insignia, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 6 },
+          { item: itemList.chaos_axis, amount: 6 },
+          { item: itemList.silver_raven_insignia, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 3 },
+          { item: itemList.chaos_axis, amount: 12 },
+          { item: itemList.silver_raven_insignia, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 6 },
+          { item: itemList.chaos_oculus, amount: 9 },
+          { item: itemList.golden_raven_insignia, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_kijin, amount: 4 },
+          { item: itemList.chaos_oculus, amount: 18 },
+          { item: itemList.golden_raven_insignia, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
