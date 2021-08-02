@@ -1996,6 +1996,7 @@ export const characters = {
         itemList.philosophies_of_ballad,
         itemList.philosophies_of_freedom,
         itemList.philosophies_of_resistance,
+        itemList.philosophies_of_ballad,
       ],
       material: [
         itemList.divining_scroll,
@@ -2003,6 +2004,7 @@ export const characters = {
         itemList.sealed_scroll,
         itemList.sealed_scroll,
         itemList.sealed_scroll,
+        itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
@@ -2017,7 +2019,7 @@ export const characters = {
     element: elements.geo,
     weapon: weapons.sword,
     sex: "player's choice",
-    nation: 'mondstadt',
+    nation: 'liyue',
     ascension: [
       {
         items: [
@@ -2085,6 +2087,7 @@ export const characters = {
         itemList.philosophies_of_gold,
         itemList.philosophies_of_prosperity,
         itemList.philosophies_of_diligence,
+        itemList.philosophies_of_gold,
       ],
       material: [
         itemList.firm_arrowhead,
@@ -2092,6 +2095,7 @@ export const characters = {
         itemList.sharp_arrowhead,
         itemList.sharp_arrowhead,
         itemList.sharp_arrowhead,
+        itemList.weathered_arrowhead,
         itemList.weathered_arrowhead,
         itemList.weathered_arrowhead,
         itemList.weathered_arrowhead,
@@ -2108,6 +2112,7 @@ export const characters = {
         itemList.philosophies_of_ballad,
         itemList.philosophies_of_freedom,
         itemList.philosophies_of_resistance,
+        itemList.philosophies_of_ballad,
       ],
       material: [
         itemList.divining_scroll,
@@ -2118,10 +2123,103 @@ export const characters = {
         itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
         itemList.forbidden_curse_scroll,
+        itemList.forbidden_curse_scroll,
       ],
       boss: itemList.dvalins_sigh,
     },
   },
+  traveler_electro: {
+    name: 'Traveler (Electro)',
+    id: 'traveler_electro',
+    rarity: 5,
+    element: elements.electro,
+    weapon: weapons.sword,
+    sex: "player's choice",
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.brilliant_diamond_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 3 },
+          { item: itemList.damaged_mask, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_fragment, amount: 3 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 10 },
+          { item: itemList.damaged_mask, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_fragment, amount: 6 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 20 },
+          { item: itemList.stained_mask, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_chunk, amount: 3 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 30 },
+          { item: itemList.stained_mask, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_chunk, amount: 6 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 45 },
+          { item: itemList.ominous_mask, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_gemstone, amount: 6 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 60 },
+          { item: itemList.ominous_mask, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 10122, atk: 198, def: 635 },
+    material: {
+      book: [
+        itemList.teachings_of_transience,
+        itemList.guide_to_elegance,
+        itemList.guide_to_light,
+        itemList.guide_to_transience,
+        itemList.guide_to_elegance,
+        itemList.philosophies_of_light,
+        itemList.philosophies_of_transience,
+        itemList.philosophies_of_elegance,
+        itemList.philosophies_of_light,
+      ],
+      material: [
+        itemList.old_handguard,
+        itemList.kageuchi_handguard,
+        itemList.kageuchi_handguard,
+        itemList.kageuchi_handguard,
+        itemList.kageuchi_handguard,
+        itemList.famed_handguard,
+        itemList.famed_handguard,
+        itemList.famed_handguard,
+        itemList.famed_handguard,
+      ],
+      boss: itemList.dragon_lords_crown,
+    },
+  },
+
   venti: {
     name: 'Venti',
     id: 'venti',

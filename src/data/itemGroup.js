@@ -268,14 +268,14 @@ export const itemGroup = {
   },
   old_handguard: {
     name: 'Hanguard',
-    items: [items.old_handguard, items.kageuchi_handguard, items.famed_handguard],
+    items: [itemList.old_handguard, itemList.kageuchi_handguard, itemList.famed_handguard],
   },
   chaos_gear: {
     name: 'Gear',
-    items: [items.chaos_gear, items.chaos_axis, items.chaos_oculus],
+    items: [itemList.chaos_gear, itemList.chaos_axis, itemList.chaos_oculus],
   },
   dismal_prism: {
     name: 'Prism',
-    items: [items.dismal_prism, items.crystal_prism, items.polarizing_prism],
+    items: [itemList.dismal_prism, itemList.crystal_prism, itemList.polarizing_prism],
   },
 };
