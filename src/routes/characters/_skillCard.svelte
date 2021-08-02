@@ -1,10 +1,15 @@
 <script>
+  import { slide } from 'svelte/transition';
   import { t } from 'svelte-i18n';
+  import Icon from '../../components/Icon.svelte';
+  import { mdiChevronDown } from '@mdi/js';
 
   export let id;
   export let image;
   export let data;
   export let withQuote;
+
+  let showStat = false;
 
   let iter = [...new Array(13)];
 
@@ -66,30 +71,40 @@
   {#if withQuote}
     <p class="text-sm text-gray-400 italic mt-2 px-4">{@html quote}</p>
   {/if}
-  <div class="mt-4 block overflow-x-auto">
-    <div class="px-4" style="width: fit-content;">
-      <div class="table max-w-full rounded-xl border border-gray-200 border-opacity-25">
-        <table class="text-gray-200 text-sm">
-          <tr>
-            <td class="border-gray-700 px-2">{$t('characters.lvl')}</td>
-            {#each iter as _, i}
-              <td class="text-center border-gray-700 px-2">{i + 1}</td>
-            {/each}
-          </tr>
-          {#each data.skillLabels as label, i}
+  <button
+    class="inline-flex px-4 mt-4 cursor-pointer focus:outline-none"
+    on:click={() => {
+      showStat = !showStat;
+    }}
+  >
+    Talent Stat <Icon path={mdiChevronDown} className="transform duration-100 {showStat ? 'rotate-180' : ''}" />
+  </button>
+  {#if showStat}
+    <div transition:slide class="mt-4 block overflow-x-auto">
+      <div class="px-4" style="width: fit-content;">
+        <div class="table max-w-full rounded-xl border border-gray-200 border-opacity-25">
+          <table class="text-gray-200 text-sm">
             <tr>
-              <td class="border-t border-gray-700 px-2" style="min-width: 150px;">{label}</td>
-              {#each data.skillStats[i].slice(0, 13) as stat}
-                <td class="text-center border-t border-gray-700 px-2">
-                  {@html format(data.skillStatsLabels[i], stat)}
-                </td>
+              <td class="border-gray-700 px-2">{$t('characters.lvl')}</td>
+              {#each iter as _, i}
+                <td class="text-center border-gray-700 px-2">{i + 1}</td>
               {/each}
             </tr>
-          {/each}
-        </table>
+            {#each data.skillLabels as label, i}
+              <tr>
+                <td class="border-t border-gray-700 px-2" style="min-width: 150px;">{label}</td>
+                {#each data.skillStats[i].slice(0, 13) as stat}
+                  <td class="text-center border-t border-gray-700 px-2">
+                    {@html format(data.skillStatsLabels[i], stat)}
+                  </td>
+                {/each}
+              </tr>
+            {/each}
+          </table>
+        </div>
       </div>
     </div>
-  </div>
+  {/if}
 </div>
 
 <style>

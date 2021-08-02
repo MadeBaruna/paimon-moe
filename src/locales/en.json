@@ -106,7 +106,10 @@
     "anemoDamageBonus": "Anemo DMG Bonus",
     "physicalDamageBonus": "Physical DMG Bonus",
     "geoDamageBonus": "Geo DMG Bonus",
-    "sortBy": "Sort by..."
+    "sortBy": "Sort by...",
+    "talentBook": "Talent Book",
+    "ascensionMaterial": "Ascension Materials",
+    "talentStats": "Talent Stats"
   },
   "wish": {
     "title": "Wish Counter",

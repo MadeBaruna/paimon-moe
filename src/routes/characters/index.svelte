@@ -384,8 +384,12 @@
             {/if}
             <img class="w-4 h-4" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />
           </div>
-          <div class="w-full bg-item rounded-b-xl overflow-hidden">
-            <p class="text-white text-sm p-1 text-center whitespace-no-wrap">{char.name}</p>
+          <div class="relative overflow-hidden bg-item rounded-b-xl" style="height: 29px">
+            <div class="w-full  overflow-hidden absolute bottom-0">
+              <p class="text-white p-1 text-center text-sm">
+                {char.name}
+              </p>
+            </div>
           </div>
         </a>
       {/each}

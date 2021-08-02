@@ -149,7 +149,7 @@
     content="Genshin Impact {character.name} build guide, constellation, and skill information"
   />
 </svelte:head>
-<div class="lg:ml-64 pt-20 lg:pt-8">
+<div class="lg:ml-64 pt-20 lg:pt-8 max-w-screen-xl">
   <div class="flex flex-col xl:flex-row items-start">
     <img
       class="character-image object-cover md:pl-8 self-center xl:self-auto"
@@ -164,7 +164,11 @@
           src="/images/elements/{character.element.id}.png"
           alt={character.element.name}
         />
-        <div class="flex space-y-1 lg:space-y-0 lg:space-x-1 {editConstallation ? 'flex-col' : ''} md:flex-row items-center">
+        <div
+          class="flex space-y-1 lg:space-y-0 lg:space-x-1 {editConstallation
+            ? 'flex-col'
+            : ''} md:flex-row items-center"
+        >
           {#if constellationCountTotal > -1}
             <p class="text-3xl text-gray-200 bg-black bg-opacity-50 rounded-xl px-2 font-semibold">
               C{constellationCountTotal}
@@ -212,7 +216,7 @@
       <p class="text-gray-200 px-4 md:px-8">{data.description}</p>
       <div class="flex flex-col md:flex-row mt-4 space-y-4 md:space-y-0 md:space-x-4 px-4 md:px-8">
         <div class="text-gray-200 rounded-xl border border-gray-200 border-opacity-25 p-4">
-          <p>Talent Book</p>
+          <p>{$t('characters.talentBook')}</p>
           <div class="flex items-center mt-2">
             <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
               <img src="/images/items/{bookId}.png" alt={book.name} class="h-full max-w-full object-contain" />
@@ -221,7 +225,7 @@
           </div>
         </div>
         <div class="text-gray-200 rounded-xl border border-gray-200 border-opacity-25 p-4">
-          <p>Ascension Materials</p>
+          <p>{$t('characters.ascensionMaterial')}</p>
           <div class="flex items-center mt-2">
             {#each materials as material}
               {#if material.item.id !== 'none'}
@@ -326,9 +330,9 @@
     {/each}
   </div>
   <div class="flex flex-col text-white px-4 md:px-8" id="constellations" bind:this={constellationDiv}>
-    <a href="/characters/{id}/#constellations" class="font-black font-display text-2xl mt-4"
-      >{$t('characters.constellations')}</a
-    >
+    <a href="/characters/{id}/#constellations" class="font-black font-display text-2xl mt-4">
+      {$t('characters.constellations')}
+    </a>
     {#each data.constellations as constellation, i}
       <PassiveSkillCard
         {id}
