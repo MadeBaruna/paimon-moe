@@ -31,9 +31,19 @@ export const itemGroup = {
     items: [itemList.teachings_of_prosperity, itemList.guide_to_prosperity, itemList.philosophies_of_prosperity],
     type: 'book',
   },
+  teachings_of_transience: {
+    name: 'Transience',
+    items: [itemList.teachings_of_transience, itemList.guide_to_transience, itemList.philosophies_of_transience],
+    type: 'book',
+  },
   teachings_of_elegance: {
     name: 'Elegance',
     items: [itemList.teachings_of_elegance, itemList.guide_to_elegance, itemList.philosophies_of_elegance],
+    type: 'book',
+  },
+  teachings_of_light: {
+    name: 'Light',
+    items: [itemList.teachings_of_light, itemList.guide_to_light, itemList.philosophies_of_light],
     type: 'book',
   },
   tile_of_decarabians_tower: {
@@ -97,12 +107,27 @@ export const itemGroup = {
     type: 'weapon',
   },
   coral_branch_of_a_distant_sea: {
-    name: 'Coral',
+    name: 'Distant Sea',
     items: [
       itemList.coral_branch_of_a_distant_sea,
       itemList.jeweled_branch_of_a_distant_sea,
       itemList.jade_branch_of_a_distant_sea,
       itemList.golden_branch_of_a_distant_sea,
+    ],
+    type: 'weapon',
+  },
+  narukamis_wisdom: {
+    name: 'Narukami',
+    items: [itemList.narukamis_wisdom, itemList.narukamis_joy, itemList.narukamis_affection, itemList.narukamis_valor],
+    type: 'weapon',
+  },
+  mask_of_the_wicked_lieutenant: {
+    name: 'Mask',
+    items: [
+      itemList.mask_of_the_wicked_lieutenant,
+      itemList.mask_of_the_tigers_bite,
+      itemList.mask_of_the_one_horned,
+      itemList.mask_of_the_kijin,
     ],
     type: 'weapon',
   },
@@ -240,5 +265,17 @@ export const itemGroup = {
   chaos_gear: {
     name: 'Chaos Gear',
     items: [itemList.chaos_gear, itemList.chaos_axis, itemList.chaos_oculus],
+  },
+  old_handguard: {
+    name: 'Hanguard',
+    items: [items.old_handguard, items.kageuchi_handguard, items.famed_handguard],
+  },
+  chaos_gear: {
+    name: 'Gear',
+    items: [items.chaos_gear, items.chaos_axis, items.chaos_oculus],
+  },
+  dismal_prism: {
+    name: 'Prism',
+    items: [items.dismal_prism, items.crystal_prism, items.polarizing_prism],
   },
 };
