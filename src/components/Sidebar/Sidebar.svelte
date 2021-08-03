@@ -50,7 +50,6 @@
   function changeLocale(lang) {
     locale.set(lang);
   }
-
 </script>
 
 <div
@@ -108,7 +107,7 @@
       {mobile}
       {segment}
       on:clicked={close}
-      active={['items', 'achievement', 'reminder', 'furnishing', 'weapons'].includes(segment)}
+      active={['items', 'achievement', 'reminder', 'furnishing', 'weapons', 'artifacts'].includes(segment)}
       image="/images/items.png"
       label={$t('sidebar.database')}
       items={[
@@ -117,6 +116,7 @@
         { label: $t('sidebar.reminder'), href: '/reminder' },
         { label: $t('sidebar.furnishing'), href: '/furnishing' },
         { label: $t('sidebar.weapons'), href: '/weapons' },
+        { label: $t('sidebar.artifacts'), href: '/artifacts' },
       ]}
     />
     <SidebarItem
@@ -203,5 +203,4 @@
       @apply rounded-xl;
     }
   }
-
 </style>

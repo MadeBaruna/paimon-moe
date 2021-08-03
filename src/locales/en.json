@@ -12,6 +12,7 @@
     "timeline": "Timeline",
     "furnishing": "Furnishing",
     "weapons": "Weapons",
+    "artifacts": "Artifacts",
     "settings": "Settings",
     "donate": "Donate"
   },
@@ -715,5 +716,15 @@
     "asc": "ASC",
     "lvl": "LVL",
     "baseAtk": "Base ATK"
+  },
+  "artifact": {
+    "title": "Artifact List",
+    "name": "Name",
+    "maxRarity": "Max★",
+    "bonus2": "2 Set Bonus",
+    "bonus4": "4 Set Bonus",
+    "domain": "Domain",
+    "artifact": "Artifact",
+    "setPiece": "{piece} Set Bonus"
   }
 }
