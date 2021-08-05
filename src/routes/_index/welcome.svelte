@@ -1,5 +1,5 @@
 <script>
-  import { createEventDispatcher, onMount } from 'svelte';
+  import { createEventDispatcher, onMount, tick } from 'svelte';
   import { t } from 'svelte-i18n';
 
   const numberFormat = Intl.NumberFormat('en', {
