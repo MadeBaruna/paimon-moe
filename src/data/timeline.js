@@ -33,6 +33,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/genshin/article/543290',
       showOnHome: true,
     },
+    {
+      name: "Summer Night Mementos",
+      pos: '0% 40%',
+      image: 'summer_night_mementos.jpg',
+      start: '2021-08-05 04:00:00',
+      end: '2021-08-11 23:59:59',
+      color: '#FFFEF9',
+      zoom: '200%',
+      url: 'https://mhy.link/071OHHA6',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -47,12 +58,12 @@ export const eventsData = [
     },
     {
       name: 'Lost Riches',
-      pos: '0% 40%',
-      image: 'lost_riches.jpg',
+      pos: '0% 50%',
+      image: 'lost_riches_2.jpg',
       start: '2021-08-06 10:00:00',
       end: '2021-08-16 03:59:59',
       color: '#FFF2DC',
-      zoom: '100%',
+      zoom: '170%',
       url: 'https://genshin.mihoyo.com/en/news/detail/14337',
       showOnHome: true,
     },
