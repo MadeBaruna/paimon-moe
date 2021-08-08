@@ -520,6 +520,13 @@
       </div>
     </div>
   </div>
+  <a
+    class="mx-4 md:mx-8 px-2 py-1 bg-background hover:bg-item text-primary mt-2 rounded-md inline-block"
+    href="https://tinyurl.com/genshinbuilds"
+    target="_blank"
+  >
+    {$t('characters.source')}
+  </a>
   <div class="flex flex-col mt-4 text-white px-4 md:px-8" bind:this={talentDiv}>
     <a href="/characters/{id}/#talents" class="font-black font-display text-2xl mt-4">
       {$t('characters.talents')}
