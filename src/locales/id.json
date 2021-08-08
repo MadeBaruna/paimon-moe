@@ -12,6 +12,7 @@
     "timeline": "Timeline",
     "furnishing": "Furnitur",
     "weapons": "Senjata",
+    "artifacts": "Artifak",
     "settings": "Pengaturan",
     "donate": "Donasi"
   },
@@ -20,6 +21,9 @@
     "message": "Your best Genshin Impact companion! Membantu kamu merencanakan apa yang harus di farm dengan kalkulator ascension, juga catat progress mu dengan todo dan wish counter.",
     "visitor": "{count} pengunjung dalam 7 hari terakhir",
     "banner": {
+      "featured": [
+        "Eula"
+      ],
       "summoned": "Pulang",
       "percentage": "dari semua {rarity}",
       "avg": "Pity rata-rata",
@@ -51,7 +55,7 @@
     },
     "items": {
       "title": "Bisa di Farm Hari Ini",
-      "detail": "Items",
+      "detail": "Item",
       "sunday": "Minggu bisa farm semua item 😁"
     },
     "calculator": {
@@ -61,6 +65,10 @@
     "twitter": {
       "title": "Follow my Twitter, akan post tentang apa yang lagi di develop dan update terbaru tentang paimon.moe!",
       "detail": "Follow Twitter"
+    },
+    "achievement": {
+      "title": "🏆 Lihat dan tandai daftar achievement yang sudah kamu dapat disini",
+      "detail": "Achievement"
     },
     "furnishing": {
       "title": "Cek furnitur apa saja yang kamu perlukan untuk menyelesaikan suatu set. Dan kamu juga bisa melihat beban masing-masing furnitur.",
@@ -74,9 +82,36 @@
     "element": "Element",
     "rarity": "Rarity",
     "weapon": "Senjata",
+    "talents": "Talent",
+    "passiveTalents": "Talent Pasif",
+    "constellations": "Konstelasi",
+    "const": "Const",
+    "asc": "ASC",
+    "lvl": "LVL",
     "hp": "HP",
     "atk": "ATK",
-    "def": "DEF"
+    "def": "DEF",
+    "hpPercent": "HP%",
+    "atkPercent": "ATK%",
+    "defPercent": "DEF%",
+    "critRate": "CRiT Rate",
+    "critDamage": "CRIT DMG",
+    "em": "Elemental Mastery",
+    "er": "Energy Recharge",
+    "healingBonus": "Healing Bonus",
+    "pyroDamageBonus": "Pyro DMG Bonus",
+    "hydroDamageBonus": "Hydro DMG Bonus",
+    "dendroDamageBonus": "Dendro DMG Bonus",
+    "electroDamageBonus": "Electro DMG Bonus",
+    "cryoDamageBonus": "Cryo DMG Bonus",
+    "anemoDamageBonus": "Anemo DMG Bonus",
+    "physicalDamageBonus": "Physical DMG Bonus",
+    "geoDamageBonus": "Geo DMG Bonus",
+    "sortBy": "Urutkan...",
+    "talentBook": "Buku Talent",
+    "ascensionMaterial": "Material Ascension",
+    "talentStats": "Stat Talent",
+    "build": "Build"
   },
   "wish": {
     "title": "Wish Counter",
@@ -116,10 +151,10 @@
       "parsing": "Membaca...",
       "save": "Simpan",
       "cancel": "Batal",
-      "canceling": "Membatalkan...",
+      "cancelling": "Membatalkan...",
       "importNewWishOnly": "Import wish baru saja",
       "importNewWishUncheck": "Hapus centang hanya jika kamu ingin mengimport ulang semua riwayat history mu",
-      "import": "Import",
+      "import": "Impor",
       "close": "Tutup",
       "invalidLink": "Link invalid, silahkan dicek kembali",
       "errorApi": "Error code dikembalikan dari API MiHoYo, coba lagi nanti!",
@@ -154,7 +189,7 @@
         "q5": "Apakah kamu menyimpan key sementara ku atau riwayat history ku?",
         "a5": [
           "Paimon.moe tidak menyimpan key mu, dan menggunakan HTTPS untuk mengirim link mu ke proxy cors sehingga bisa digunakan. Paimon.moe akan menyimpan pity 4*, pity 5*, dan informasi wish 5* jika kamu mensubmit wish mu ke perhitungan pity global paimon.moe (tidak ada data pribadi yang disimpan! harap cek",
-          "Privacy Policy",
+          "Kebijakan Privasi",
           "untuk info lebih lanjut). Kamu bisa tidak mencentang submit pity untuk tidak mengirim data wish. Kemudian semua data riwayat wish mu disimpan pada device masing-masing (atau google drive mu jika kamu menyalakan sync di setting).",
           "Jika kamu tidak ingin link feedback mu kemana-mana, kamu bisa menggunakan script importer yang akan memproses riwayat history secara lokal di pc mu (opsi PC Local) "
         ],
@@ -312,7 +347,8 @@
       "totalThisBanner": "Total pull di banner ini",
       "worth": "Setara dengan",
       "loading": "Loading... (Kalau tidak selesai-selesai, ganti server di halaman settings)",
-      "guaranteed": "5★ selanjutnya pasti karakter atau senjata promotional"
+      "guaranteed": "5★ selanjutnya pasti karakter atau senjata promotional",
+      "unknown_3_star": "Unknown"
     },
     "tally": {
       "title": "Perhitungan Pity Wish",
@@ -333,13 +369,16 @@
       "error": "Data belum tersedia 😞",
       "pity": "Pity",
       "median": "5★ Median",
-      "user": "Total User"
+      "user": "Total User",
+      "detail": "Detail"
     }
   },
   "calculator": {
     "titleWeapon": "Kalkulator Senjata",
     "titleCharacter": "Kalkulator Karakter",
     "titleResin": "Kalkulator Resin",
+    "titleFriendship": "Kalkulator Exp Friendship",
+    "titleFate": "Kalkulator Harga Fate",
     "goto": "Ke {where}",
     "howToUse": "Cara Penggunaan",
     "guide": {
@@ -389,7 +428,12 @@
       "mora": "Mora (kurang lebih ±40)",
       "expWasted": "EXP Terbuang",
       "addToTodo": "Tambah ke Todo List",
-      "addedToTodo": "Sudah ditambahkan ke Todo List"
+      "addedToTodo": "Sudah ditambahkan ke Todo List",
+      "talent": [
+        "Attack",
+        "Skill",
+        "Burst"
+      ]
     },
     "expTable": {
       "level": "Level",
@@ -433,7 +477,7 @@
       "genesis": "Genesis",
       "first": "Bonus2x",
       "total": "Total",
-      "price": "Price",
+      "price": "Harga",
       "totalGenesis": "Total Genesis",
       "totalPrice": "Total Harga",
       "calculate": "Hitung berapa banyak Genesis Crystal yang bisa didapatkan dengan {currency}{value}",
@@ -467,7 +511,7 @@
   },
   "todo": {
     "title": "Todo List",
-    "summary": "Summary",
+    "summary": "Rangkuman",
     "empty": [
       "Belum ada yang ditambahkan 😀",
       "Tambahkan todo dari halaman Items atau dari Kalkulator!"
@@ -512,7 +556,7 @@
     "lastSync": "Sync Terakhir:",
     "feedback": "Jika kamu menemukan bug, data yang salah, atau ada feedback, kamu bisa chat di",
     "or": "atau",
-    "thanks": "Thanks😁!",
+    "thanks": "Terima Kasih!",
     "modal": {
       "notice": "Semua todo dan riwayat wish akan dihapus",
       "backup": "Kamu bisa backup dulu riwayat history dengan mengexport nya ke file excel!",
@@ -522,7 +566,7 @@
     }
   },
   "privacypolicy": {
-    "title": "Privacy Policy",
+    "title": "Kebijakan Privasi",
     "subtitle": "Apa yang paimon.moe kumpulkan dan kegunaannya",
     "collect": [
       {
@@ -592,6 +636,7 @@
     "blocked": "Notifikasi di blokir, notifikasi tidak akan bisa terkirim! Silahkan nyalakan notifikasi di browser mu.",
     "desktop": "Browser dekstop tidak bisa menerima notifikasi jika browser tidak berjalan!",
     "early": "Notifikasi mungkin akan muncul lebih awal (sekitar 1-10 menit) karena limitasi dalam pengiriman notifikasi.",
+    "allowNotification": "Harap izinkan permintaan notifikasi yang muncul!",
     "transformer": "Reminder Parametric Transformer",
     "last": "Masukkan kapan kamu terakhir menggunakan Parametric Transformer",
     "lastHoyolab": "Masukkan jam berapa kamu ingin diingatkan untuk daily check-in nya",
@@ -620,7 +665,7 @@
     "ratio": "Rasio",
     "using": "Jumlah",
     "interior": "Interior",
-    "exterior": "Exterior",
+    "exterior": "Eksterior",
     "info": [
       "Ini menunjukkan berapa beban yang bisa ditampung dalam pulau. Masing-masing furnitur mempunyai nilai beban yang tersembunyi yang bisa dilihat di bawah.",
       "(Beban maximum belum dikonfirmasi!)"
@@ -630,9 +675,9 @@
     "exteriorNum": "Area {number}",
     "corridor": "Koridor",
     "inventoryButton": "Inventory",
-    "listButton": "List",
+    "listButton": "Daftar",
     "inventory": {
-      "title": "Furnishing Inventory",
+      "title": "Inventory Furnitur",
       "subtitle": "Beberapa kategori special seperti dinding tidak ditampilkan",
       "all": "Semua",
       "openSets": "Buka Set"
@@ -646,5 +691,43 @@
       "available": "Tersedia",
       "used": "Digunakan di set lain"
     }
+  },
+  "weapon": {
+    "title": "Daftar Senjata",
+    "subtitle": "Stat adalah pada level maksimum",
+    "name": "Nama",
+    "type": "Tipe",
+    "rarity": "Rarity",
+    "atk": "ATK",
+    "secondary": "Secondary",
+    "critRate": "CRIT Rate",
+    "critDamage": "CRIT DMG",
+    "em": "Elemental Mastery",
+    "er": "Energy Recharge",
+    "atkPercent": "ATK",
+    "hpPercent": "HP",
+    "defPercent": "DEF",
+    "physicalDamage": "Physical DMG Bonus",
+    "bow": "Bow",
+    "polearm": "Polearm",
+    "sword": "Sword",
+    "catalyst": "Catalyst",
+    "claymore": "Claymore",
+    "ascensionMaterial": "Material Ascension",
+    "asc": "ASC",
+    "lvl": "LVL",
+    "baseAtk": "Base ATK",
+    "recommendedCharacter": "Karakter Rekomendasi"
+  },
+  "artifact": {
+    "title": "Daftar Artifak",
+    "name": "Nama",
+    "maxRarity": "Max★",
+    "bonus2": "Bonus 2 Set",
+    "bonus4": "Bonus 4 Set",
+    "domain": "Domain",
+    "artifact": "Artifak",
+    "setPiece": "Bonus {piece} Set",
+    "recommendedCharacter": "Rekomendasi Karakter {piece} Set"
   }
 }

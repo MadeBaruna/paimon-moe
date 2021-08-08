@@ -110,7 +110,8 @@
     "sortBy": "Sort by...",
     "talentBook": "Talent Book",
     "ascensionMaterial": "Ascension Materials",
-    "talentStats": "Talent Stats"
+    "talentStats": "Talent Stats",
+    "build": "Build"
   },
   "wish": {
     "title": "Wish Counter",
@@ -715,7 +716,8 @@
     "ascensionMaterial": "Ascension Materials",
     "asc": "ASC",
     "lvl": "LVL",
-    "baseAtk": "Base ATK"
+    "baseAtk": "Base ATK",
+    "recommendedCharacter": "Recommended Characters"
   },
   "artifact": {
     "title": "Artifact List",
@@ -725,6 +727,7 @@
     "bonus4": "4 Set Bonus",
     "domain": "Domain",
     "artifact": "Artifact",
-    "setPiece": "{piece} Set Bonus"
+    "setPiece": "{piece} Set Bonus",
+    "recommendedCharacter": "Recommended Characters {piece} Set"
   }
 }

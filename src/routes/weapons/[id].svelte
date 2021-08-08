@@ -1,14 +1,48 @@
 <script context="module">
   import data from '../../data/weapons/en.json';
   import { weaponList } from '../../data/weaponList.js';
+  import { builds } from '../../data/build';
+
+  function getCharacter(weaponId) {
+    const collection = {};
+    const chars = Object.entries(builds);
+    for (const [charId, char] of chars) {
+      const roles = Object.entries(char.roles);
+      for (const [roleName, role] of roles) {
+        if (!role.recommended) continue;
+
+        let found = false;
+        for (const weapon of role.weapons) {
+          if (weapon.id === weaponId) {
+            found = true;
+            break;
+          }
+        }
+
+        if (found) {
+          if (collection[charId] === undefined) {
+            collection[charId] = {
+              id: charId,
+              roles: [],
+            };
+          }
+
+          collection[charId].roles.push(roleName);
+        }
+      }
+    }
+
+    return Object.values(collection).sort((a, b) => a.id.localeCompare(b.id));
+  }
+
   export async function preload(page) {
     const { id } = page.params;
     const weapon = data[id];
     const materials = weaponList[id].ascension[0].items;
+    const recommendedCharacter = getCharacter(id);
 
-    return { id, weapon, materials };
+    return { id, weapon, materials, recommendedCharacter };
   }
-
 </script>
 
 <script>
@@ -16,6 +50,7 @@
   import { locale, t } from 'svelte-i18n';
   import Icon from '../../components/Icon.svelte';
   import { onMount } from 'svelte';
+  import { characters } from '../../data/characters';
 
   const rarity = {
     1: 'text-white',
@@ -33,6 +68,7 @@
 
   export let id;
   export let weapon;
+  export let recommendedCharacter;
   // export let materials;
 
   async function changeLocale(locale) {
@@ -48,7 +84,6 @@
 
   $: multiplier = weapon.secondary.name === 'em' ? 1 : 100;
   $: suffix = weapon.secondary.name === 'em' ? '' : '%';
-
 </script>
 
 <svelte:head>
@@ -72,6 +107,33 @@
           <p class="skill-description text-white">{@html weapon.skill.description}</p>
         </div>
       {/if}
+      {#if recommendedCharacter.length > 0}
+        <div class="mt-4 max-w-screen-lg">
+          <h3 class="font-display font-bold text-2xl text-white">
+            {$t('weapon.recommendedCharacter')}
+          </h3>
+          <div class="flex flex-wrap -mx-1 -mb-2">
+            {#each recommendedCharacter as char}
+              <a
+                class="flex items-center bg-background hover:bg-item rounded-xl px-2 py-1 mb-2 mx-1"
+                href="/characters/{char.id}"
+              >
+                <img
+                  src="/images/characters/{char.id}.png"
+                  alt={characters[char.id].name}
+                  class="w-12 h-12 mr-2 rounded-full"
+                />
+                <div class="-mx-1">
+                  {#each char.roles as role}
+                    <p class="text-white mx-1">{role}</p>
+                  {/each}
+                </div>
+              </a>
+            {/each}
+          </div>
+        </div>
+      {/if}
+
       <div class="mt-4 block overflow-x-auto whitespace-no-wrap md:w-auto">
         <div style="width: min-content;">
           <div class="table max-w-full rounded-xl border border-gray-200 border-opacity-25">
@@ -119,5 +181,4 @@
   td:not(:last-child) {
     @apply border-r;
   }
-
 </style>

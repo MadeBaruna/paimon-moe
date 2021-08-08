@@ -61,10 +61,13 @@
     </div>
     <div class="px-4 mt-4 grid md:grid-cols-2 gap-2 max-w-2xl w-full">
       {#each currentArtifacts as artifact (artifact.id)}
-        <div class="bg-background rounded-xl p-2 text-white flex items-center">
+        <a
+          class="bg-background hover:bg-item rounded-xl p-2 text-white flex items-center"
+          href="/artifacts/{artifact.id}"
+        >
           <img src="/images/artifacts/{artifact.id}_flower.png" alt={id} class="w-12 h-12 mr-2" />
           <p>{artifact.name}</p>
-        </div>
+        </a>
       {/each}
     </div>
     <div class="px-4 mt-4 flex flex-col space-y-2 max-w-2xl w-full">
