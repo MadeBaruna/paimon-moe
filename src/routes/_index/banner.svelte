@@ -13,15 +13,23 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    kamisato_ayaka: {
+    yoimiya: {
+      name: 'Yoimiya',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
+    sayu: {
+      name: 'Sayu',
+      rarity: 'rare',
+      count: 0,
+      average: '...',
+      percentage: '...',
+    },
   };
-  const bannerId = 300016;
-  const image = 'ayaka.png';
+  const bannerId = 300017;
+  const image = 'yoimiya_sayu.png';
 
   let loading = true;
   let user = '';
@@ -66,24 +74,21 @@
 <div class="bg-item rounded-xl p-4 flex flex-col">
   <div class="relative">
     <img src="/images/home/{image}" alt="banner" style="min-height: 150px;" />
-    <div class="flex flex-wrap text-white items-center absolute bottom-0 w-full">
+    <div class="flex flex-wrap text-white justify-end items-center absolute bottom-0 w-full">
       {#each Object.entries(featured) as [_, item], i}
         <div
           class="flex flex-col pt-2"
-          style="background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
-          {i === 0 ? 'margin-right: 20%;' : ''}"
+          style="background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
+          {i === 0 ? 'margin-right: 10%;' : ''}"
         >
-          <h3 class="text-3xl ml-6 font-black leading-6">
+          <h3 class="text-3xl mr-4 font-black leading-6 text-right">
             {#if loading}
               <Icon path={mdiLoading} spin size={0.8} />
             {:else}
               {item.count}
             {/if}
           </h3>
-          <p class="ml-6 font-sm leading-2">
-            <span class="font-semibold">Ayaka</span>
-            {$t('home.banner.summoned')}
-          </p>
+          <p class="mr-4 font-sm leading-2 text-right">{item.name}</p>
         </div>
       {/each}
     </div>

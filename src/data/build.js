@@ -43,6 +43,24 @@ export const builds = {
       },
     },
   },
+  sayu: {
+    roles: {
+      'COMING SOON': {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD', 'TBD', 'TBD'],
+        tip: '',
+        note: 'Coming Soon!',
+      },
+    },
+  },
   traveler_anemo: {
     roles: {
       'DPS ANEMO': {
@@ -3036,6 +3054,24 @@ export const builds = {
           'Her Ascension 4 Talent does a second hit after a Crit Charge Attack. This scales 80% of your ATK and can trigger reactions as well due to having a separate internal cooldown on its pyro application.\n\nFor more information on Yanfei and her role in a team, check https://www.youtube.com/watch?v=Uz7E1kOlZDc.',
         note:
           "Yanfei can have trouble trying to set up for her reaction DPS. Vaporize is generally the more consistent option and you need Xingqiu to make this work best. When running a vaporize team with Xingqiu, 3 normal attacks into a charged attack (N1>N2>N3>C) is the safest and most reliable way to vaporize your charged attacks. Make sure you're adding applying hydro first before starting combos.\n\nEnergy Recharge is prioritized over Elemental Mastery here since she has an 80 energy burst cost while her skill is also not very efficient at generating particles for getting it back. A major source of your energy will be coming from enemies as well as potential pyro batteries like Bennett, so be sure to have her pick the particles up as off-field characters only get 0.6x the value of the particles.\n\nRunning Yanfei with a shield character also allows you to make use of a full Retracing Bolide 4-set as a placeholder until you're able to find a good Crimson Witch 4-set.\n\nRegarding Dodoco Tales: On equal refinements, Widsith is better than Dodoco Tales, but assuming it's R5 Dodoco Tales vs R1-R3 Widsith, R5 Dodoco Tales is better. Note that Bennett buff / Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) buff will push Widsith and Solar Pearl above Dodoco Tales, even at low refinements.",
+      },
+    },
+  },
+  yoimiya: {
+    roles: {
+      'COMING SOON': {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD', 'TBD', 'TBD'],
+        tip: '',
+        note: 'Coming Soon!',
       },
     },
   },

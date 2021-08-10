@@ -6669,6 +6669,65 @@ export const weaponList = {
       },
     ],
   },
+  thundering_pulse: {
+    name: 'Thundering Pulse',
+    id: 'thundering_pulse',
+    rarity: 5,
+    atk: 46,
+    secondary: 'CRIT DMG',
+    type: weapons.bow,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.narukamis_wisdom, amount: 5 },
+          { item: itemList.dismal_prism, amount: 5 },
+          { item: itemList.firm_arrowhead, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 5 },
+          { item: itemList.dismal_prism, amount: 18 },
+          { item: itemList.firm_arrowhead, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 9 },
+          { item: itemList.crystal_prism, amount: 9 },
+          { item: itemList.sharp_arrowhead, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 5 },
+          { item: itemList.crystal_prism, amount: 18 },
+          { item: itemList.sharp_arrowhead, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 9 },
+          { item: itemList.polarizing_prism, amount: 14 },
+          { item: itemList.weathered_arrowhead, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_valor, amount: 6 },
+          { item: itemList.polarizing_prism, amount: 27 },
+          { item: itemList.weathered_arrowhead, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
   amenoma_kageuchi: {
     name: 'Amenoma Kageuchi',
     id: 'amenoma_kageuchi',

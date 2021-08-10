@@ -1779,6 +1779,77 @@ export const characters = {
       boss: itemList.shadow_of_the_warrior,
     },
   },
+  sayu: {
+    name: 'Sayu',
+    id: 'sayu',
+    rarity: 4,
+    element: elements.anemo,
+    weapon: weapons.claymore,
+    sex: 'female',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.crystal_marrow, amount: 3 },
+          { item: itemList.whopperflower_nectar, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 3 },
+          { item: itemList.marionette_core, amount: 2 },
+          { item: itemList.crystal_marrow, amount: 10 },
+          { item: itemList.whopperflower_nectar, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_fragment, amount: 6 },
+          { item: itemList.marionette_core, amount: 4 },
+          { item: itemList.crystal_marrow, amount: 20 },
+          { item: itemList.shimmering_nectar, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 3 },
+          { item: itemList.marionette_core, amount: 8 },
+          { item: itemList.crystal_marrow, amount: 30 },
+          { item: itemList.shimmering_nectar, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_chunk, amount: 6 },
+          { item: itemList.marionette_core, amount: 12 },
+          { item: itemList.crystal_marrow, amount: 45 },
+          { item: itemList.energy_nectar, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.vayuda_turquoise_gemstone, amount: 6 },
+          { item: itemList.marionette_core, amount: 20 },
+          { item: itemList.crystal_marrow, amount: 60 },
+          { item: itemList.energy_nectar, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 11033, atk: 227, def: 693 },
+    material: {
+      book: [itemList.teachings_of_light, itemList.guide_to_light, itemList.philosophies_of_light],
+      material: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
+      boss: itemList.gilded_scale,
+    },
+  },
   sucrose: {
     name: 'Sucrose',
     id: 'sucrose',
@@ -2644,6 +2715,77 @@ export const characters = {
       book: [itemList.teachings_of_gold, itemList.guide_to_gold, itemList.philosophies_of_gold],
       material: [itemList.treasure_hoarder_insignia, itemList.silver_raven_insignia, itemList.golden_raven_insignia],
       boss: itemList.bloodjade_branch,
+    },
+  },
+  yoimiya: {
+    name: 'Yoimiya',
+    id: 'yoimiya',
+    rarity: 5,
+    element: elements.pyro,
+    weapon: weapons.bow,
+    sex: 'female',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.agnidus_agate_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.naku_weed, amount: 3 },
+          { item: itemList.divining_scroll, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_fragment, amount: 3 },
+          { item: itemList.smoldering_pearl, amount: 2 },
+          { item: itemList.naku_weed, amount: 10 },
+          { item: itemList.divining_scroll, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_fragment, amount: 6 },
+          { item: itemList.smoldering_pearl, amount: 4 },
+          { item: itemList.naku_weed, amount: 20 },
+          { item: itemList.sealed_scroll, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_chunk, amount: 3 },
+          { item: itemList.smoldering_pearl, amount: 8 },
+          { item: itemList.naku_weed, amount: 30 },
+          { item: itemList.sealed_scroll, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_chunk, amount: 6 },
+          { item: itemList.smoldering_pearl, amount: 12 },
+          { item: itemList.naku_weed, amount: 45 },
+          { item: itemList.forbidden_curse_scroll, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_gemstone, amount: 6 },
+          { item: itemList.smoldering_pearl, amount: 20 },
+          { item: itemList.naku_weed, amount: 60 },
+          { item: itemList.forbidden_curse_scroll, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 9450, atk: 300, def: 572 },
+    material: {
+      book: [itemList.teachings_of_transience, itemList.guide_to_transience, itemList.philosophies_of_transience],
+      material: [itemList.divining_scroll, itemList.sealed_scroll, itemList.forbidden_curse_scroll],
+      boss: itemList.dragon_lords_crown,
     },
   },
   zhongli: {
