@@ -58,6 +58,7 @@
     },
   };
 
+  let currentUID = '';
   let newOnly = true;
 
   let wishes = {};
@@ -96,6 +97,16 @@
     }
   }
 
+  async function checkUID() {
+    const prefix = getAccountPrefix();
+    const path = `wish-uid`;
+    const localData = await readSave(`${prefix}${path}`);
+
+    if (localData !== null) {
+      currentUID = localData;
+    }
+  }
+
   async function startImport() {
     if (selectedType === 'pclocal') {
       await importFromGeneratedText();
@@ -119,6 +130,7 @@
     }
 
     try {
+      await checkUID();
       for (const [wishNumber, type] of Object.entries(types)) {
         await getLog(wishNumber, type);
         if (cancelled) return;
@@ -227,6 +239,12 @@
           const name = row.name;
           const type = row.item_type.replace(/ /g, '');
 
+          if (currentUID !== '' && currentUID !== row.uid) {
+            throw 'account error';
+          }
+
+          currentUID = row.uid;
+
           if (dayjs(time).isSameOrBefore(newestPullTime)) {
             return;
           }
@@ -261,7 +279,11 @@
         // console.log(wishes);
       } catch (err) {
         processingLog = false;
-        pushToast($t('wish.import.invalidData'), 'error');
+        if (err === 'account error') {
+          pushToast($t('wish.import.differentAccount'), 'error');
+        } else {
+          pushToast($t('wish.import.invalidData'), 'error');
+        }
         console.error(err);
         throw 'invalid data';
       }
@@ -407,6 +429,11 @@
 
     const prefix = getAccountPrefix();
     await updateSave(`${prefix}collectables-updated`, true);
+
+    if (currentUID !== '') {
+      await updateSave(`${prefix}wish-uid`, currentUID);
+    }
+
     closeModal();
   }
 

@@ -160,6 +160,7 @@
       "invalidLink": "Link invalid, silahkan dicek kembali",
       "errorApi": "Error code dikembalikan dari API MiHoYo, coba lagi nanti!",
       "timeout": "Connection timeout, tunggu sebentar dan coba lagi nanti",
+      "differentAccount": "Wish history ini adalah untuk akun lain, pisahkan dulu akun mu di menu Pengaturan!",
       "invalidData": "Invalid data dikembalikan dari API, coba lagi nanti",
       "success": "Import berhasil 😀!",
       "server": "Pilih server mu:",

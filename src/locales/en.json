@@ -160,6 +160,7 @@
       "invalidLink": "Invalid link, please check it again",
       "errorApi": "Error code returned from MiHoYo API, please try again later!",
       "timeout": "Connection timeout, please wait a moment and try again later",
+      "differentAccount": "This wish history is for another account, please separate your account first on Settings menu!",
       "invalidData": "Invalid data returned from API, try again later",
       "success": "Import success 😀!",
       "server": "Select your server:",
