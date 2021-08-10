@@ -103,7 +103,7 @@
     const localData = await readSave(`${prefix}${path}`);
 
     if (localData !== null) {
-      currentUID = localData;
+      currentUID = localData.toString();
     }
   }
 
@@ -243,7 +243,7 @@
             throw 'account error';
           }
 
-          currentUID = row.uid;
+          currentUID = row.uid.toString();
 
           if (dayjs(time).isSameOrBefore(newestPullTime)) {
             return;
