@@ -207,7 +207,7 @@
           "点击右上角刷新按钮",
           "此时页面应该提示错误, 并显示一些文字",
           "长按并全选, 复制所有文本 (不要仅复制某一部分)",
-          "连网(接回wifi或流量)",
+          "重新连接网络(接回wifi或流量)",
           "粘贴复制的内容到下面的文本框",
           "文本粘贴到这里... Webpage not available..."
         ],
@@ -496,7 +496,7 @@
     "or": "或",
     "thanks": "谢谢😁!",
     "modal": {
-      "notice": "所有Todo和祈愿记录江北删除",
+      "notice": "所有Todo和祈愿记录将被删除",
       "backup": "你可以通过导出Excel备份你的抽卡记录!",
       "cancel": "取消",
       "delete": "删除",
@@ -588,18 +588,18 @@
     "errorSaving": "保存提醒器时出错了 🙁",
     "current": "当前提醒器",
     "hoyolab": "米游社每日签到提醒器",
-    "comingsoon": "正在加入!"
+    "comingsoon": "敬请期待"
   },
   "achievement": {
     "title": "成就",
-    "of": "关于"
+    "of": "共计"
   },
   "furnishing": {
     "title": "家具",
     "name": "名字",
-    "energy": "能量",
-    "load": "载入",
-    "ratio": "比例",
+    "energy": "仙力",
+    "load": "负荷",
+    "ratio": "性价比",
     "using": "数量",
     "interior": "室内",
     "exterior": "室外",
@@ -646,7 +646,7 @@
     "defPercent": "防御",
     "physicalDamage": "物理伤害加成",
     "bow": "弓",
-    "polearm": "长柄",
+    "polearm": "长柄武器",
     "sword": "单手剑",
     "catalyst": "法器",
     "claymore": "双手剑",
