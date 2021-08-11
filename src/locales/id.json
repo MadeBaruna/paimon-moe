@@ -552,6 +552,7 @@
     "driveError": "Google Drive API tidak bisa dimuat",
     "driveSignIn": "Sign in ke Google Drive",
     "driveSignOut": "Sign out dari Google Drive",
+    "driveSignInErrorScope": "Drive Sign In gagal! Silahkan login kembali dan cek permission yang diperlukan!",
     "synced": "Synced",
     "waiting": "Menunggu...",
     "syncing": "Syncing...",

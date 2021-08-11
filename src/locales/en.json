@@ -552,6 +552,7 @@
     "driveError": "Google Drive API cannot be loaded",
     "driveSignIn": "Sign in to Google Drive",
     "driveSignOut": "Sign out Google Drive",
+    "driveSignInErrorScope": "Drive Sign In failed! Please sign in again and check the required permission!",
     "synced": "Synced",
     "waiting": "Waiting...",
     "syncing": "Syncing...",

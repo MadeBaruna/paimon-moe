@@ -8,6 +8,7 @@
 
   import SyncConflictModal from '../components/SyncConflictModal.svelte';
   import { pushToast } from '../stores/toast';
+  import { t } from 'svelte-i18n';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
@@ -66,11 +67,20 @@
   }
 
   function updateSigninStatus(status) {
-    console.log('update drive signed in status:', status);
-    driveSignedIn.set(status);
+    const hasScope = gapi.auth2.getAuthInstance().currentUser.get().hasGrantedScopes(SCOPES);
+
+    if (status && !hasScope) {
+      pushToast($t('settings.driveSignInErrorScope'), 'error');
+      gapi.auth2.getAuthInstance().signOut();
+    }
+
+    const finalStatus = status && hasScope;
+
+    console.log('update drive signed in status:', finalStatus);
+    driveSignedIn.set(finalStatus);
     driveLoading.set(false);
 
-    if (status) {
+    if (finalStatus) {
       getFiles();
     } else {
       synced.set(true);
@@ -343,7 +353,6 @@
     document.body.appendChild(fileLink);
     fileLink.click();
   }
-
 </script>
 
 <slot />
