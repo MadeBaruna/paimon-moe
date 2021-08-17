@@ -1,0 +1,669 @@
+{
+  "sidebar": {
+    "home": "首頁",
+    "character": "角色",
+    "wishCounter": "祈願統計",
+    "calculator": "升級計算機",
+    "database": "資料庫",
+    "items": "素材道具",
+    "achievement": "成就",
+    "reminder": "提醒",
+    "todoList": "待辦事項",
+    "timeline": "活動日曆",
+    "furnishing": "傢俱",
+    "weapons": "武器",
+    "settings": "設定",
+    "donate": "贊助",
+    "artifacts": "聖遺物"
+  },
+  "home": {
+    "welcome": "歡迎來到 Paimon.moe! 👋",
+    "message": "你最好的原神夥伴! 協助擬規劃素材與副本，追蹤你的遊戲進度與抽卡統計",
+    "banner": {
+      "featured": [
+        "可莉"
+      ],
+      "summoned": "抽到",
+      "percentage": "占比於 {rarity}",
+      "avg": "平均出金次數",
+      "subtitle": "資料來自 {user} 位 paimon.moe 使用者上船的祈願紀錄",
+      "detail": "全球祈願統計"
+    },
+    "wish": {
+      "message": "匯入你的祈願紀錄，避免紀錄六月後消失，你的祈願與保底會以表格形式自動計算顯示。 📊",
+      "latest": "你上一次抽卡",
+      "banner": "祈願池",
+      "time": "時間",
+      "name": "名字",
+      "pity": "保底進度",
+      "detail": "祈願統計"
+    },
+    "reminder": {
+      "message": "你可以透過計時器 🔔 提醒自己使用質量參變儀和 HoYoLab 簽到的時間！使用下方按鈕設定！",
+      "detail": "提醒"
+    },
+    "event": {
+      "upcoming": "未來活動",
+      "current": "目前活動",
+      "detail": "活動日曆"
+    },
+    "discord": {
+      "online": "線上成員",
+      "message": "加入我們 Discord 獲取最新通知！亦可討論原神或是本站的意見",
+      "join": "加入我們的 Discord"
+    },
+    "items": {
+      "title": "本日秘境掉落",
+      "detail": "素材",
+      "sunday": "週日秘境自選掉落素材 😁"
+    },
+    "calculator": {
+      "title": "🧮 計算角色、武器升級/突破消耗！計算結果可以加入待辦事項規劃，顯示你需要多少樹脂！",
+      "detail": "升級計算機"
+    },
+    "twitter": {
+      "title": "關註我的 Twitter, 我目前開發的東西與 paimon.moe 更新發佈在此！",
+      "detail": "關註 Twitter"
+    },
+    "achievement": {
+      "title": "🏆 檢視/追蹤你的成就狀態",
+      "detail": "成就"
+    },
+    "furnishing": {
+      "title": "檢視套裝需要哪些傢俱，也可以檢視各個傢俱的負載",
+      "detail": "傢俱"
+    }
+  },
+  "characters": {
+    "title": "角色",
+    "subtitle": "表內資料為80級六階突破，點選表格標題排序表！",
+    "name": "角色名",
+    "element": "屬性",
+    "rarity": "稀有度",
+    "weapon": "武器",
+    "talents": "天賦",
+    "passiveTalents": "被動天賦",
+    "constellations": "命之座",
+    "const": "命",
+    "asc": "突破",
+    "lvl": "等級",
+    "hp": "生命",
+    "atk": "攻擊",
+    "def": "防禦",
+    "hpPercent": "生命%",
+    "atkPercent": "攻擊%",
+    "defPercent": "防禦%",
+    "critRate": "暴擊率",
+    "critDamage": "暴擊傷害",
+    "em": "元素精通",
+    "er": "元素充能效率",
+    "healingBonus": "治療加成",
+    "pyroDamageBonus": "火元素傷害加成",
+    "hydroDamageBonus": "水元素傷害加成",
+    "dendroDamageBonus": "草元素傷害加成",
+    "electroDamageBonus": "雷元素傷害加成",
+    "cryoDamageBonus": "冰元素傷害加成",
+    "anemoDamageBonus": "風元素傷害加成",
+    "physicalDamageBonus": "物理傷害加成",
+    "geoDamageBonus": "岩元素傷害加成",
+    "sortBy": "排序方式..."
+  },
+  "wish": {
+    "title": "祈願統計",
+    "autoImport": "自動匯入",
+    "helpAndSetting": "說明 & 設定",
+    "wishesWorth": "已抽原石",
+    "lifetimePulls": "總抽卡次數",
+    "guarantee": "保底上限 {pity}",
+    "name": "名字",
+    "time": "時間",
+    "pity": "保底",
+    "welcome": "歡迎來到 Paimon.moe 祈願統計! 建議使用自動匯入功能來上傳你的祈願記錄",
+    "welcomeStart1": "想要使用, 點擊",
+  "welcomeStart2": "上面的按鈕即可",
+    "manual": "如果你想手動輸入資料, 可以在這啟用該功能:",
+    "manualButton": "啟用手動輸入",
+    "errorBanner": "卡池時間錯誤! 請在設定頁面修改你所屬的伺服器. 如果還是出錯, 請到 Discord 中意見回饋 😅",
+    "globalWishTally": "全球祈願統計",
+    "pityTooltip": [
+      "顯示你目前 {rarity} 保底進度",
+      "{count} 抽可獲得 {rarity}"
+    ],
+    "import": {
+      "title": "匯入祈願歷史記錄",
+      "faqsButton": "常見問題 - 先讀這個",
+      "nonew": "沒有新的記錄",
+      "importNotice1": "匯入的祈願記錄會增加或覆蓋到目前資料中",
+      "importNotice2": "如果你先前沒有任何記錄, 你的保底進度將從頭開始計算",
+      "importNotice3": "請注意你匯入的記錄是否屬於同一個帳號, 一定要確保你在設定頁面內區分了不同帳號, 不然你的資料會搞混!",
+      "saveData": "儲存祈願資料?",
+      "reCalculating": "重新計算保底...",
+      "processing": "處理中",
+      "banner": "祈願池",
+      "page": "頁",
+      "parsing": "解析中...",
+      "save": "儲存",
+      "cancel": "取消",
+      "cancelling": "取消中...",
+      "importNewWishOnly": "只匯入新增祈願",
+      "importNewWishUncheck": "只有你想要重新匯入所有記錄時, 取消此選項",
+      "import": "匯入",
+      "close": "關閉",
+      "invalidLink": "連結錯誤, 請重新檢查",
+      "errorApi": "MiHoYo API 返回錯誤, 請稍後再試!",
+      "timeout": "連接超時, 請等一段時間再嘗試",
+      "invalidData": "返回的資料錯誤, 請稍後再試",
+      "success": "匯入成功 😀!",
+      "server": "選擇你的伺服器:",
+      "wishTallyCheck": "將你的記錄提交到全球祈願統計資料中",
+      "wishTally": "我們在統計全球的祈願資料! 你可以提交你的記錄參與進來. 所有祈願資料會統一整合, 用來統計 paimon.moe 使用者的平均情況.",
+      "wishTallyCollected": [
+        "會被收集的資料:",
+        "和",
+        "你的抽卡歷史記錄"
+      ],
+      "faqs": {
+        "title": "匯入祈願記錄常見問題",
+        "q1": "這是怎麼做到的?",
+        "a1": "原神的祈願歷史記錄是一個網頁, 所以你可以通過打開網頁的網址來訪問它. 在打開祈願歷史頁面時, 將生成一個臨時密鑰, 我們的匯入程式將自動使用 MiHoYo API 來獲取抽卡記錄.",
+        "q2": "安全嗎? 會封號嗎?",
+        "a2": "Paimon.moe 與原神程式本身查詢抽卡記錄的方式是一致的, 並且 Paimon.moe 沒辦法修改遊戲內存, 這本身是安全的, 但只能說風險自負 (我的大號是一直用的). 你也可以手動上傳你的資料 😀.",
+        "q3": "會被盜號嗎?",
+        "a3": [
+          "Paimon.moe 從不會儲存你的帳號秘鑰等個人信息 (甚至你的UID和遊戲名也不會), 所以並不會被盜號. 這個網站是開源的",
+          "; 我不可能嘗試盜號來毀自己名聲."
+        ],
+        "q4": "我查了一下網站請求之類的, 但為什麼它用的是你的功能變數名稱, 而不是MiHoYo API的?",
+        "a4": [
+          "Paimon.moe 並不能直接從MiHoYo API 獲得東西, 因為",
+          ", 所以連結會被重定向到 CORS proxy 來實現. 你可以檢視源代碼",
+          "在這裡"
+        ],
+        "q5": "網站會儲存臨時秘鑰或祈願記錄嗎?",
+        "a5": [
+          "Paimon.moe 不會存儲秘鑰, 只會通過 HTTPS 遞交你的 URL 給 CORS proxy 來讓 CORS 工作. Paimon.moe 會儲存你的 4* 記錄, 5* 記錄, 以及 5* 祈願信息如果你提交記錄到全球祈願統計中. (沒有其他個人信息記錄! 請查閱",
+          "隱私政策",
+          "瞭解更多). 你可以取消勾選提交記錄, 來撤掉提交功能. 這樣你的所有祈願記錄會儲存在你的電腦上 (或你的 Google 雲端硬碟, 如果你設定了同步功能).",
+          "如果你不想通過url傳遞任何信息, 你可以在本機PC使用便捷匯入腳本(本機PC選項)"
+        ],
+        "q6": "我按流程操作了, 但它提示我 API 錯誤?",
+        "a6": "確保你複製了完整的連結 (移動設備需要長按並全選); 可能你漏掉了連結的一部分.",
+        "q7": "它並沒有讀取到我的全部抽卡記錄!?",
+        "a7": "超過6個月的祈願記錄會在伺服器中過期, 如果你以前沒備份過, 很遺憾那就沒了."
+      },
+      "guide": {
+        "video": "影片教學",
+        "pc": [
+          "打開派蒙按鈕 [ESC]",
+          "點擊意見回饋",
+          "等待載入出一個瀏覽器頁面",
+          "複製貼上連結到下面的輸入欄",
+          "連結貼上到這裡 https://webstatic..."
+        ],
+        "android": [
+          "打開祈願界面 (遊戲內)",
+          "點擊歷史記錄",
+          "等待載入",
+          "斷網(關閉wifi或行動數據)",
+          "點擊右上角刷新按鈕",
+          "此時頁面應該提示錯誤, 並顯示一些文字",
+          "長按並全選, 複製所有文本 (不要僅複製某一部分)",
+          "連網(接回wifi或行動數據)",
+          "貼上複製的內容到下面的輸入欄",
+          "文本貼上到這裡... Webpage not available..."
+        ],
+        "ios": [
+          "打開派蒙選單",
+          "點擊意見回饋",
+          "等待意見回饋頁面載入",
+          "點擊遊戲問題",
+          "點擊多人遊戲模式",
+          "系統回覆的最下面有一個連結; 點擊它",
+          "一個網頁會被打開. 複製連結並貼上到這裡",
+          "連結貼上到這裡... https://genshin.mihoyo..."
+        ],
+        "ps": [
+          "只有當你擁有帶網頁活動的 QR Code 的遊戲信箱, 你才能獲得網頁連結, 使用這個匯入功能",
+          "在你的 PlayStation 裡打開原神",
+          "打開你的信箱 QR Code ",
+          "用手機掃描 QR Code 得到連結",
+          "複製連結並貼上到這裡",
+          "連結貼上到這裡..."
+        ],
+        "pclocal": [
+          "如果你不想提供你的url，你可以使用這個選項在你的電腦上本機處理祈願歷史記錄。此腳本將讀取您電腦上的日誌文件以獲取祈願url。",
+          "打開開始選單, 搜尋powershell",
+          "打開windows powershell, 然後複製貼上腳本到powershell裡",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
+          "你可以檢視這個腳本",
+          "這裡",
+          "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
+          "貼上後回車即可運行腳本, 然後跟著說明走即可",
+          "那之後, 把腳本輸出的結果貼上到這裡",
+          "貼上結果到這裡...",
+          "這個功能還在開發中, 請先到“說明&設定”界面, 匯出excel備份一下你原來的記錄."
+        ]
+      }
+    },
+    "help": {
+      "title": "祈願統計 說明 & 設定",
+      "exportTitle": "匯出祈願記錄",
+      "exportMessage": "你可以在這裡將祈願記錄匯出為Excel",
+      "export": "匯出到Excel",
+      "exporting": "匯出中...",
+      "import": "匯入",
+      "exportFinish": "匯出成功, 請等待瀏覽器下載文件!",
+      "wishTallyTitle": "提交祈願到全球統計",
+      "wishTally": "我們在統計全球的祈願資料! 你可以提交你的記錄參與進來. 所有祈願資料會統一整合, 用來統計 paimon.moe 使用者的平均情況.",
+      "wishTallyCollected": [
+        "會被收集的內容:",
+        "和",
+        "你的祈願記錄"
+      ],
+      "wishTallySubmit": "提交祈願到全球統計",
+      "wishTallyThankyou": "感謝你的參與!",
+      "manualTitle": "手動輸入設定",
+      "enableManual": "啟用手動輸入",
+      "notice": "並不建議同時使用自動匯入與手動匯入, 二者混用還有待測試!",
+      "consider": "請優先考慮自動匯入. 點擊打開這份教程的按鈕旁邊的另一個按鈕即可.",
+      "howto": {
+        "title": "如何使用手動匯入",
+        "subtitle": "抽卡1次後:",
+        "pressWhenYouGet": "按 {button} 當你得到 {rarity}★",
+        "p1": "會自動增加總抽數, 5★, 以及 4★ 保底",
+        "p2": [
+          "當",
+          "保底到達 10, 會自動被重設為 0"
+        ],
+        "p3": [
+          "當",
+          "保底到達 90, 會自動被重設為 0"
+        ],
+        "p4": [
+          "抽10連後, 按",
+          "但請注意保底計數並不會精確到位, 因為並不知道是10連的哪一抽出貨 (你可能是在第一發或十連最後一發出貨). 為了保障計數準確, 你需要到列表中檢查十連裡的每一抽, 修改為對應的正確內容."
+        ],
+        "p5": [
+          "你也可以按",
+          "按鈕來手動修改數值!"
+        ],
+        "p6": [
+          "點擊按鈕上的箭頭來檢視你的具體抽卡細節. 會自動彈出提示你獲得一個",
+          "或",
+          "你也可以手動編輯列表."
+        ]
+      }
+    },
+    "types": {
+      "beginners": "新手祈願",
+      "standard": "常駐池",
+      "character-event": "角色池",
+      "weapon-event": "武器池"
+    },
+    "detail": {
+      "weapon": "武器",
+      "character": "角色",
+      "time": "時間",
+      "pity": "保底",
+      "name": "名稱",
+      "type": "類型",
+      "banner": "卡池",
+      "roll": "#Roll",
+      "totalThisBanner": "這個池子的總抽數",
+      "worth": "價值",
+      "loading": "讀取中... (如果卡住, 到設定中檢查伺服器)",
+      "guaranteed": "下一個 5★ 一定會是當期UP",
+      "unknown_3_star": "未知三星"
+    },
+    "tally": {
+      "title": "祈願統計",
+      "subtitle": "全球 paimon.moe 使用者們提交的平均統計情況",
+      "update": "更新於",
+      "summoned": "抽到",
+      "wonFiftyFifty": "小保底沒歪",
+      "fromFiveStar": "在所有 5★",
+      "fromFourStar": "在所有 4★",
+      "fromFourStarFeatured": "在UP 4★",
+      "show": "顯示",
+      "name": "名字",
+      "total": "總計",
+      "wishTotal": "祈願總計",
+      "worth": "價值",
+      "weapon": "武器",
+      "character": "角色",
+      "error": "資料不可用 😞",
+      "pity": "保底",
+      "median": "5★ 中位數",
+      "user": "總玩家數",
+      "detail": "詳情"
+    }
+  },
+  "calculator": {
+    "titleWeapon": "武器計算器",
+    "titleCharacter": "角色計算器",
+    "titleResin": "數值計算器",
+    "goto": "跳到 {where}",
+    "howToUse": "使用說明",
+    "guide": {
+      "clickToMaximize": "點擊圖片來最大化",
+      "howToWeapon": "如何使用武器升級計算器",
+      "howToCharacter": "如何使用角色升級計算器"
+    },
+    "weapon": {
+      "calculateAscension": "計算突破材料?",
+      "selectRarity": "選擇武器稀有度",
+      "selectWeapon": "選擇武器",
+      "current": "目前武器等級, 經驗, & 突破階段",
+      "inputCurrentLevel": "輸入目前武器等級...",
+      "inputCurrentExp": "輸入目前武器經驗...",
+      "intended": "武器目標等級 & 突破情況",
+      "inputIntendedLevel": "輸入目標武器等級...",
+      "resource": "需要的資源",
+      "calculate": "計算",
+      "unknownInformation": "有一些未知信息",
+      "ascensionLevel": "突破階段",
+      "mora": "摩拉 (誤差 ±40)",
+      "expWasted": "溢出經驗",
+      "addToTodo": "增加到待辦事項",
+      "addedToTodo": "已增加到待辦事項"
+    },
+    "character": {
+      "calculateAscension": "計算突破材料?",
+      "selectCharacter": "選擇角色",
+      "current": "目前角色等級, 經驗, & 突破階段",
+      "inputCurrentLevel": "輸入目前角色等級...",
+      "inputCurrentExp": "輸入目前角色經驗...",
+      "intended": "目標角色等級 & 突破情況",
+      "inputIntendedLevel": "輸入目標角色等級...",
+      "resource": "需要的資源",
+      "calculateTalent": "計算天賦材料?",
+      "inputTalentLevel": "輸入三個技能目前等級",
+      "inputTalentNotice": "如果被命座+3, 請減掉3",
+      "inputTalent": [
+        "普攻等級",
+        "元素戰技等級",
+        "元素爆發等級"
+      ],
+      "talentToLevel": "目標等級",
+      "calculate": "計算",
+      "unknownInformation": "有一些未知信息",
+      "ascensionLevel": "突破階段",
+      "mora": "摩拉 (誤差 ±40)",
+      "expWasted": "溢出經驗",
+      "addToTodo": "增加到待辦事項",
+      "addedToTodo": "已增加到待辦事項",
+      "talent": [
+        "普攻",
+        "戰技",
+        "爆發"
+      ]
+    },
+    "expTable": {
+      "level": "等級",
+      "items": "物品",
+      "wasted": "超出經驗",
+      "mora": "摩拉消耗"
+    },
+    "resinTable": {
+      "quantity": "數量",
+      "time": "需等待時間"
+    },
+    "resin": {
+      "currentResin": "目前樹脂",
+      "desiredResin": "需求樹脂",
+      "or": "或",
+      "inputCurrentResin": "輸入目前樹脂...",
+      "inputDesireResin": "輸入你恢復到多少樹脂...",
+      "timeFormat": "en",
+      "calculate": "計算",
+      "currentTime": "目前時間",
+      "fullTime": "將在多久回滿",
+      "hours": "時",
+      "minutes": "分",
+      "seconds": "秒"
+    }
+  },
+  "items": {
+    "title": "物品列表",
+    "subtitle": "點擊圖示增加到待辦事項",
+    "searchCharacter": "搜尋角色",
+    "searchWeapon": "搜尋武器",
+    "day": "日子",
+    "material": "材料",
+    "characterWeapons": "角色 & 武器",
+    "add": {
+      "rarity": "選擇稀有度",
+      "amount": "數量",
+      "inputAmount": "輸入數量...",
+      "cancel": "取消",
+      "add": "增加到待辦事項"
+    }
+  },
+  "days": {
+    "Sunday": "周日",
+    "Monday": "周一",
+    "Tuesday": "周二",
+    "Wednesday": "周三",
+    "Thursday": "周四",
+    "Friday": "周五",
+    "Saturday": "周六"
+  },
+  "todo": {
+    "title": "待辦事項",
+    "summary": "總結",
+    "empty": [
+      "沒啥要做的 😀",
+      "從物品頁面或計算器加點東西來!"
+    ],
+    "farmableToday": "今日秘境掉落",
+    "resin": "樹脂需求",
+    "based": "基於冒險等級:{ar} 和 世界等級:{wl}",
+    "change": "(可在設定中更改)",
+    "approximation": "掉率估算數值來自於",
+    "delete": {
+      "title": "刪除這項待辦事項?",
+      "cancel": "取消",
+      "delete": "刪除"
+    }
+  },
+  "timeline": {
+    "title": "活動日曆",
+    "localTime": "使用本機時間",
+    "starting": "開始於",
+    "ending": "結束於",
+    "live": "正在進行!",
+    "finished": "已結束"
+  },
+  "settings": {
+    "version": "資料版本:",
+    "multiple": "有多個帳號? 在這裡切換來區分不同的祈願歷史記錄和待辦事項",
+    "selectAccount": "選擇你的帳號",
+    "reset": "重設",
+    "delete": "刪除",
+    "add": "增加",
+    "server": "選擇伺服器:",
+    "drive": [
+      "Paimon.moe 可以利用你的 Google 雲端硬碟和同步功能, 來儲存你的祈願記錄和待辦事項",
+      "Paimon.moe 只能修改讀取由本網站生成的文件."
+    ],
+    "driveError": " Google 雲端硬碟API無法載入",
+    "driveSignIn": "登錄 Google 雲端硬碟",
+    "driveSignOut": "登出 Google 雲端硬碟",
+    "synced": "已同步",
+    "waiting": "等待中...",
+    "syncing": "同步中...",
+    "lastSync": "上次同步:",
+    "feedback": "如果你發現一些BUG, 資料錯誤, 或者其他意見回饋, 請留言到",
+    "or": "或",
+    "thanks": "謝謝😁!",
+    "modal": {
+      "notice": "所有待辦事項和祈願記錄將被刪除",
+      "backup": "你可以通過匯出Excel備份你的抽卡記錄!",
+      "cancel": "取消",
+      "delete": "刪除",
+      "reset": "重設"
+    }
+  },
+  "privacypolicy": {
+    "title": "隱私政策",
+    "subtitle": "paimon.moe 會收集什麼信息以及使用說明",
+    "collect": [
+      {
+        "title": "paimon.moe 中被點擊的連結, 引用頁面, 瀏覽器, 操作系統, 設備類型, 來源國家",
+        "content": [
+          "Paimon.moe 使用",
+          "plausible.io",
+          "(保護隱私分析方法) 檢視有多少人使用網站的什麼功能, 所以我們可以優先考慮要實現或改進的功能."
+        ]
+      },
+      {
+        "title": "網站的報錯與異常信息",
+        "content": [
+          "Paimon.moe 會發送報錯與異常情況到",
+          "sentry.io",
+          "來追蹤問題來源並修復."
+        ]
+      },
+      {
+        "title": "抽卡保底",
+        "content": [
+          "Paimon.moe 會儲存四星、五星的保底進度, 以及5星祈願詳情 (抽卡時間, 出貨內容, 保底計數) 如果你點擊 '提交祈願到全球統計' 在自動匯入功能中, 或在說明與設定界面中手動提交, Paimon.moe 會自動統計並計算到每個池子的平均資料裡, 你可以在這裡檢視",
+          "祈願總計"
+        ]
+      }
+    ],
+    "subtitleNotCollect": "paimon.moe 不會收集",
+    "notCollect": [
+      "paimon.moe 不會儲存任何密碼、UID、信箱、臨時秘鑰或意見回饋文件. 如果你感興趣, 這個網站是開源的, 你可以在這裡檢視源代碼",
+      "paimon-moe-api Github",
+      "以及",
+      "paimon-moe Github"
+    ]
+  },
+  "sync": {
+    "message": "你的本機記錄與 Google 雲端硬碟的記錄沖突了!",
+    "googleDriveData": " Google 雲端硬碟資料",
+    "localData": "瀏覽器本機資料",
+    "older": "舊",
+    "newer": "新",
+    "useGoogleDriveData": "使用 Google 雲端硬碟資料",
+    "useLocalData": "使用瀏覽器本機資料",
+    "download": "兩份都下載",
+    "lastModified": "上次修改時間",
+    "or": "或"
+  },
+  "footer": {
+    "affliate": "Paimon.moe 與米哈游無關.",
+    "copyright": "原神的遊戲內容和各種素材與商標的版權都屬於米哈游.",
+    "discord": "加入我們的Discord",
+    "community": "社群連結",
+    "official": "官方連結"
+  },
+  "donate": {
+    "message": [
+      "謝謝！願你能在本網站獲得說明.",
+      "我出於興趣在業餘時間製作了這個網站, 隨著更新加入了越來越多的功能與資料. 因為我喜歡探索遊戲, 並簡化各種內容",
+      "如果你想要贊助, 你的捐贈會一定會有利於改善這個網站並激勵我加入更多的內容倒 Paimon.moe! 非常感謝, 希望你能喜歡, 願你玩得開心!",
+      "如果你喜歡編程開發, 你也可以在這裡為項目提供說明"
+    ],
+    "kofi": "在這裡贊助 Ko-fi",
+    "trakteer": "在這裡贊助 Trakteer",
+    "crypto": "利用虛擬貨幣贊助"
+  },
+  "reminder": {
+    "notSupported": "你的瀏覽器不支持發送提醒, 請換另一個瀏覽器!",
+    "blocked": "通知被禁用了, 計時提醒功能無法工作! 請在瀏覽器上啟用它.",
+    "desktop": "如果瀏覽器未運行，將無法接收通知!",
+    "early": "由於我們發送通知的方式，通知可能會提前到達 (大約1-10分鐘)",
+    "allowNotification": "請允許出現通知提示!",
+    "transformer": "質量參變儀使用提醒",
+    "last": "輸入上次使用質量參變儀的時間",
+    "lastHoyolab": "輸入你想被提醒米游社簽到的時間",
+    "every": "每天的",
+    "countdown": "輸入質量參變儀的剩餘時間 (如果不記得確切時間，則需要近似值)",
+    "useLast": "使用上次用它的時間",
+    "useCountdown": "使用剩餘時間代替",
+    "set": "設定提醒",
+    "checking": "檢查已儲存的提醒...",
+    "errorSelect": "請選擇日期和時間!",
+    "errorSaving": "儲存提醒時出錯了 🙁",
+    "current": "目前提醒",
+    "hoyolab": "米游社每日簽到提醒",
+    "comingsoon": "正在加入!"
+  },
+  "achievement": {
+    "title": "成就",
+    "of": "關於"
+  },
+  "furnishing": {
+    "title": "傢俱",
+    "name": "名字",
+    "energy": "能量",
+    "load": "載入",
+    "ratio": "比例",
+    "using": "數量",
+    "interior": "室內",
+    "exterior": "室外",
+    "info": [
+      "這表示該區域可以承受多大的負荷. 每個傢俱都有一個隱藏的負荷值, 可以在下面檢視.",
+      "(最大值尚未確定!)"
+    ],
+    "hall": "大廳",
+    "room": "屋子 {number}",
+    "exteriorNum": "區域 {number}",
+    "corridor": "走廊",
+    "inventoryButton": "倉庫",
+    "listButton": "列表",
+    "inventory": {
+      "title": "傢俱倉庫",
+      "subtitle": "並未顯示一些特殊分類例如牆壁",
+      "all": "全部",
+      "openSets": "打開套裝"
+    },
+    "sets": {
+      "title": "傢俱套裝",
+      "subtitle": "點擊傢俱圖示檢視詳情, 然後可以點擊角色圖示來標記! 打開上面庫存按鈕可以填寫你擁有的傢俱數量.",
+      "setPlaced": "設為已放置",
+      "setUnplaced": "設為未放置",
+      "inInventory": "在庫存中",
+      "available": "可用",
+      "used": "已在其他套裝使用"
+    }
+  },
+  "weapon": {
+    "title": "武器列表",
+    "subtitle": "資料取自最高等級",
+    "name": "名稱",
+    "type": "類型",
+    "rarity": "稀有度",
+    "atk": "攻擊",
+    "secondary": "副屬性",
+    "critRate": "暴擊率",
+    "critDamage": "暴擊傷害",
+    "em": "元素精通",
+    "er": "元素充能",
+    "atkPercent": "攻擊",
+    "hpPercent": "生命",
+    "defPercent": "防禦",
+    "physicalDamage": "物理傷害加成",
+    "bow": "弓",
+    "polearm": "長柄",
+    "sword": "單手劍",
+    "catalyst": "法器",
+    "claymore": "雙手劍",
+    "ascensionMaterial": "突破材料",
+    "asc": "突破",
+    "lvl": "等級",
+    "baseAtk": "基礎攻擊"
+  },
+  "artifact": {
+    "title": "聖遺物列表",
+    "name": "名字",
+    "maxRarity": "最高★",
+    "bonus2": "二件效果",
+    "bonus4": "四件效果",
+    "domain": "秘境",
+    "artifact": "聖遺物",
+    "setPiece": "{piece} 件效果"
+  }
+}
