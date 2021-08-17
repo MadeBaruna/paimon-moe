@@ -17,8 +17,7 @@
 
   import { onMount } from 'svelte';
   import { t } from 'svelte-i18n';
-  import { mdiChevronRight, mdiCircle, mdiClose, mdiContentSave, mdiMinus, mdiPencil, mdiPlus, mdiStar } from '@mdi/js';
-  import { goto } from '@sapper/app';
+  import { mdiChevronRight, mdiCircle, mdiContentSave, mdiMinus, mdiPencil, mdiPlus, mdiStar } from '@mdi/js';
   import Icon from '../../components/Icon.svelte';
   import Button from '../../components/Button.svelte';
   import { getAccountPrefix } from '../../stores/account';
@@ -424,26 +423,22 @@
           <h4 class="font-black font-display text-lg">WEAPONS</h4>
           {#each build.weapons as weapon, i}
             <a class="flex mb-1" href="/weapons/{weapon.id}">
-              <div class="flex items-center justify-center bg-background rounded-md p-1 mr-1">
-                <p class=" w-6 text-center">{i + 1}</p>
+              <div class="flex items-center bg-background rounded-md p-1 mr-1">
+                <p class="w-6 text-center mr-1" style="padding-top: 2px;">{i + 1}</p>
+                <Icon className={rarityColor[weaponList[weapon.id].rarity]} path={mdiStar} size={0.8} />
+                <img class="h-8 mr-2 ml-2" src="/images/weapons/{weapon.id}.png" alt={weaponList[weapon.id].name} />
+                <p class="pl-1 pr-2" style="padding-top: 2px;">
+                  <span>{weaponList[weapon.id].name}</span>
+                  {#if weapon.refine}
+                    <span class="ml-2 bg-blue-300 rounded-md px-1 text-sm text-gray-900"
+                      >R{weapon.refine.join('-')}</span
+                    >
+                  {/if}
+                  {#if weapon.stack}
+                    <span class="ml-2 bg-orange-300 rounded-md px-1 text-sm text-gray-900">S{weapon.stack}</span>
+                  {/if}
+                </p>
               </div>
-              <div
-                class="flex items-center justify-center bg-background rounded-md p-1 mr-1 {rarityColor[
-                  weaponList[weapon.id].rarity
-                ]}"
-              >
-                <Icon path={mdiStar} size={0.8} />
-              </div>
-              <p class="bg-background rounded-md py-1 pl-1 pr-2 flex items-center">
-                <img class="h-8 mr-2" src="/images/weapons/{weapon.id}.png" alt={weaponList[weapon.id].name} />
-                <span>{weaponList[weapon.id].name}</span>
-                {#if weapon.refine}
-                  <span class="ml-2 bg-blue-300 rounded-md px-1 text-sm text-gray-900">R{weapon.refine.join('-')}</span>
-                {/if}
-                {#if weapon.stack}
-                  <span class="ml-2 bg-orange-300 rounded-md px-1 text-sm text-gray-900">S{weapon.stack}</span>
-                {/if}
-              </p>
             </a>
           {/each}
         </div>
@@ -451,68 +446,75 @@
           <h4 class="font-black font-display text-lg">ARTIFACTS</h4>
           {#each build.artifacts as item, i}
             <div class="flex mb-1">
-              <div class="flex items-center justify-center bg-background rounded-md p-1 mr-1">
-                <p class=" w-6 text-center">{i + 1}</p>
-              </div>
-              <div class="flex flex-wrap -mb-1">
-                {#each item as artifact, i}
-                  {#if item.length > 2 && i === 0}
-                    <div class="flex items-center justify-center bg-background rounded-md px-2 py-1 mb-1 mr-1">
-                      <p class="text-center whitespace-no-wrap text-primary">Choose 2</p>
-                    </div>
-                  {/if}
-                  <a
-                    class="popup bg-background rounded-md py-1 pl-1 pr-2 mr-1 mb-1 flex items-center"
-                    href={artifact === '+18%_atk_set' ? undefined : `/artifacts/${artifact}`}
-                  >
-                    <div class="popup-container">
-                      <div class="bg-gray-300 text-gray-900 p-2 rounded-md mb-1 shadow-2xl">
-                        {#if artifact !== '+18%_atk_set'}
-                          {#each artifacts[artifact].bonuses as bonus, i}
-                            <div class={i === 1 ? 'mt-2' : ''}>
-                              <p class="font-bold text-primary text-sm">
-                                {$t('artifact.setPiece', { values: { piece: (i + 1) * 2 } })}
-                              </p>
-                              <p class="text-gray-900 text-sm">{bonus}</p>
-                            </div>
-                          {/each}
-                        {:else}
-                          <a
-                            class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
-                            href="/artifacts/gladiators_finale"
-                          >
-                            <img
-                              class="h-8 ml-1 mr-2"
-                              src="/images/artifacts/gladiators_finale_flower.png"
-                              alt="Gladiator's Finale"
-                            />
-                            <span class="font-semibold">Gladiator's Finale</span>
-                          </a>
-                          <a
-                            class="flex items-center text-primary hover:text-blue-400 pt-1"
-                            href="/artifacts/shimenawas_reminiscence"
-                          >
-                            <img
-                              class="h-8 ml-1 mr-2"
-                              src="/images/artifacts/shimenawas_reminiscence_flower.png"
-                              alt="Shimenawa's Reminiscence"
-                            />
-                            <span class="font-semibold">Shimenawa's Reminiscence</span>
-                          </a>
-                        {/if}
+              <div class="flex items-center justify-center bg-background rounded-md px-1 mr-1">
+                <p class="w-6 text-center" style="min-width: 1.5rem; padding-top: 2px;">{i + 1}</p>
+                <div class="flex flex-wrap -mb-1">
+                  {#each item as artifact, i}
+                    {#if item.length > 2 && i === 0}
+                      <div
+                        class="flex items-center justify-center bg-background rounded-md px-2 py-1 mb-1 mr-1"
+                        style="height: 40px;"
+                      >
+                        <p class="text-center whitespace-no-wrap text-primary" style="padding-top: 2px;">Choose 2</p>
                       </div>
-                    </div>
-                    <img
-                      class="h-8 mr-2"
-                      src="/images/artifacts/{artifact === '+18%_atk_set' ? 'gladiators_finale' : artifact}_flower.png"
-                      alt={artifact === '+18%_atk_set' ? '+18% ATK set' : artifacts[artifact].name}
-                    />
-                    <span>{artifact === '+18%_atk_set' ? '+18% ATK Set' : artifacts[artifact].name}</span>
-                    <span class="ml-2 bg-gray-400 rounded-md px-1 text-sm text-gray-900">
-                      {item.length === 1 ? '4' : '2'}
-                    </span>
-                  </a>
-                {/each}
+                    {/if}
+                    <a
+                      class="popup bg-background rounded-md py-1 pl-1 pr-2 mr-1 mb-1 flex items-center"
+                      href={artifact === '+18%_atk_set' ? undefined : `/artifacts/${artifact}`}
+                    >
+                      <div class="popup-container">
+                        <div class="bg-gray-300 text-gray-900 p-2 rounded-md mb-1 shadow-2xl">
+                          {#if artifact !== '+18%_atk_set'}
+                            {#each artifacts[artifact].bonuses as bonus, i}
+                              <div class={i === 1 ? 'mt-2' : ''}>
+                                <p class="font-bold text-primary text-sm">
+                                  {$t('artifact.setPiece', { values: { piece: (i + 1) * 2 } })}
+                                </p>
+                                <p class="text-gray-900 text-sm">{bonus}</p>
+                              </div>
+                            {/each}
+                          {:else}
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                              href="/artifacts/gladiators_finale"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/gladiators_finale_flower.png"
+                                alt="Gladiator's Finale"
+                              />
+                              <span class="font-semibold">Gladiator's Finale</span>
+                            </a>
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pt-1"
+                              href="/artifacts/shimenawas_reminiscence"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/shimenawas_reminiscence_flower.png"
+                                alt="Shimenawa's Reminiscence"
+                              />
+                              <span class="font-semibold">Shimenawa's Reminiscence</span>
+                            </a>
+                          {/if}
+                        </div>
+                      </div>
+                      <img
+                        class="h-8 mr-2"
+                        src="/images/artifacts/{artifact === '+18%_atk_set'
+                          ? 'gladiators_finale'
+                          : artifact}_flower.png"
+                        alt={artifact === '+18%_atk_set' ? '+18% ATK set' : artifacts[artifact].name}
+                      />
+                      <span style="padding-top: 2px;">
+                        {artifact === '+18%_atk_set' ? '+18% ATK Set' : artifacts[artifact].name}
+                      </span>
+                      <span class="ml-2 bg-gray-400 rounded-md px-1 text-sm text-gray-900">
+                        {item.length === 1 ? '4' : '2'}
+                      </span>
+                    </a>
+                  {/each}
+                </div>
               </div>
             </div>
           {/each}

@@ -394,6 +394,12 @@
         </a>
       {/each}
     </div>
+    {#if showConstellation}
+      <div class="mt-12 mb-4 mx-4 md:mx-8 max-w-screen-xl md:flex items-center bg-background rounded-xl p-4">
+        <img class="h-16 float-left md:float-none mr-2 md:mr-0" src="/images/paimon_faq.png" alt="Paimon" />
+        <p class="md:ml-4 text-gray-200 ">{$t('characters.faq')}</p>
+      </div>
+    {/if}
   {:else}
     <p class="text-gray-400 px-4 md:px-8 font-medium pb-2 mt-4">
       ※ {$t('characters.subtitle')}

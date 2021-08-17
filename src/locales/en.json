@@ -112,7 +112,8 @@
     "ascensionMaterial": "Ascension Materials",
     "talentStats": "Talent Stats",
     "build": "Build",
-    "source": "Community Character Builds by the Genshin Helper Team"
+    "source": "Community Character Builds by the Genshin Helper Team",
+    "faq": "Constellation count is calculated from your Wish History data. So if your old wish history already gone or you bought the character from shop or event the count might be not accurate! But you can edit it manually by pressing the pencil icon beside the character name."
   },
   "wish": {
     "title": "Wish Counter",

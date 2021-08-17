@@ -112,7 +112,8 @@
     "ascensionMaterial": "Material Ascension",
     "talentStats": "Stat Talent",
     "build": "Build",
-    "source": "Community Character Builds oleh the Genshin Helper Team"
+    "source": "Community Character Builds oleh the Genshin Helper Team",
+    "faq": "Constellation dihitung dari data riwayat wish mu. Jadi jika riwayat wish mu yang lama sudah hilang atau kamu membeli karakter nya di shop atau event, jumlah constellation nya mungkin tidak akurat! Namun kamu bisa mengubah nya secara manual dengan menekan tombol pensil disebelah nama karakter."
   },
   "wish": {
     "title": "Wish Counter",
