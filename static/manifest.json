@@ -1,8 +1,53 @@
 {
-	"background_color": "#ffffff",
-	"theme_color": "#333333",
-	"name": "Paimon.moe",
-	"short_name": "Paimon.moe",
-	"display": "minimal-ui",
-	"start_url": "/"
+"background_color": "#333344",
+"theme_color": "#333333",
+"name": "Paimon.moe",
+"short_name": "Paimon.moe",
+"display": "standalone",
+"icons": [
+    	{
+      		"src": "/favicon.png",
+      		"type": "image/png",
+      		"apple-touch-icon": "#efefef",
+      		"sizes": "192x192"
+    	},
+    	{
+      		"src": "/favicon.png",
+      		"type": "image/png",
+      		"apple-touch-icon": "#efefef",
+      		"sizes": "512x512"
+    	},
+    	{
+      		"src": "/favicon.png",
+      		"type": "image/png",
+      		"apple-touch-icon": "#efefef",
+      		"purpose": "maskable",
+      		"sizes": "512x512"
+    	}],
+"scope": "/",
+"start_url": "/",
+"shortcuts": [
+    {
+      "name": "Wish Counter",
+      "short_name": "Wish",
+      "description": "Wish Counter",
+      "url": "/wish?src=pwa",
+      "icons": [{ "src": "/images/wish.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Calculator",
+      "short_name": "Calculator",
+      "description": "Calculator",
+      "url": "/calculator?src=pwa",
+      "icons": [{ "src": "/images/calculator.png", "sizes": "192x192" }]
+    },
+	{
+      "name": "To do",
+      "short_name": "To do list",
+      "description": "somethin to do",
+      "url": "/todo?src=pwa",
+      "icons": [{ "src": "/images/todos.png", "sizes": "192x192" }]
+    }
+  ],
+"description": "Your best Genshin companion ever"
 }
