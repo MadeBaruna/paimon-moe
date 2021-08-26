@@ -374,7 +374,12 @@
       "median": "5★ Median",
       "user": "Total Users",
       "detail": "Detail"
-    }
+    },
+    "note": [
+      "Wish history is not updated automatically, please import again to update your history!",
+      "Paimon.moe cannot retrieve wish history older than 6 months because it's already deleted on miHoYo server, so your old wishes might not show.",
+      "The data are saved on your browser, so it will be deleted if you clear your browser cache! Enable Google Drive sync on setting to backup your data!"
+    ]
   },
   "calculator": {
     "titleWeapon": "Weapon Calculator",

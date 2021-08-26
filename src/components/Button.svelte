@@ -12,16 +12,16 @@
 
   $: switch (color) {
     case 'blue':
-      textColor = 'white';
-      borderColor = 'primary';
+      textColor = 'text-white';
+      borderColor = 'border-primary';
       break;
     case 'red':
-      textColor = 'red-400';
-      borderColor = 'red-400';
+      textColor = 'text-red-400';
+      borderColor = 'border-red-400';
       break;
     case 'green':
-      textColor = 'green-400';
-      borderColor = 'green-400';
+      textColor = 'text-green-400';
+      borderColor = 'border-green-400';
       break;
   }
 
@@ -39,6 +39,9 @@
 
 <button
   {disabled}
-  class={`text-${textColor} border-2 border-white border-opacity-25 ${rounded ? 'rounded-xl' : 'rounded-none'} ${px} ${py} transition duration-100
-     hover:border-${borderColor} focus:outline-none focus:border-${borderColor} disabled:opacity-50 disabled:border-gray-600 ${className}`}
-  on:click><slot /></button>
+  class={`${textColor} border-2 border-white border-opacity-25 ${
+    rounded ? 'rounded-xl' : 'rounded-none'
+  } ${px} ${py} transition duration-100
+     hover:${borderColor} focus:outline-none focus:${borderColor} disabled:opacity-50 disabled:border-gray-600 ${className}`}
+  on:click><slot /></button
+>

@@ -124,7 +124,6 @@
     counter3.readLocalData();
     counter4.readLocalData();
   }
-
 </script>
 
 <svelte:head>
@@ -190,5 +189,15 @@
       <MonthlyGraph bind:data={monthlyData} />
     </div>
     <Summary bind:this={summary} bind:monthlyData />
+  </div>
+  <div class="mt-12 mb-4 max-w-screen-xl flex flex-col md:flex-row items-center bg-background rounded-xl p-4">
+    <img class="h-16 mr-2 mb-2 md:mb-0 md:mr-0" src="/images/paimon_faq.png" alt="Paimon" />
+    <div class="ml-4 md:ml-8 text-gray-200">
+      <ol class="list-disc">
+        <li class="mb-2">{$t('wish.note.0')}</li>
+        <li class="mb-2">{$t('wish.note.1')}</li>
+        <li>{$t('wish.note.2')}</li>
+      </ol>
+    </div>
   </div>
 </div>
