@@ -654,5 +654,16 @@
     "asc": "突破",
     "lvl": "等级",
     "baseAtk": "基础攻击"
+  },
+  "artifact": {
+    "title": "圣遗物列表",
+    "name": "名称",
+    "maxRarity": "最大稀有度★",
+    "bonus2": "2件套效果",
+    "bonus4": "4件套效果",
+    "domain": "获取秘境",
+    "artifact": "圣遗物",
+    "setPiece": "{piece}件套效果",
+    "recommendedCharacter": "{piece}件套推荐角色"
   }
 }
