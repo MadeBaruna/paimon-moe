@@ -33,7 +33,7 @@
     },
     EUR: {
       currency: '€',
-      values: [1.19, 5.49, 16.99, 32.99, 54.99, 109.99],
+      values: [0.99, 4.99, 14.99, 29.99, 49.99, 99.99],
     },
     BRL: {
       currency: 'R$',
@@ -45,11 +45,15 @@
     },
     GBP: {
       currency: '£',
-      values: [0.99, 4.99, 14.99, 29.99, 49.99, 99.99],
+      values: [0.89, 4.49, 12.99, 25.99, 44.99, 89.99],
     },
     CNY: {
       currency: '¥',
       values: [6.0, 30.0, 98.0, 198.0, 328.0, 648.0],
+    },
+    SGD: {
+      currency: 'S$',
+      values: [1.48, 6.98, 21.98, 44.98, 68.98, 148.98],
     },
     Custom: {
       currency: 'Custom',
@@ -70,6 +74,7 @@
     { label: 'MYR (RM)', value: 'MYR' },
     { label: 'GBP (£)', value: 'GBP' },
     { label: 'CNY (¥)', value: 'CNY' },
+    { label: 'SGD (S$)', value: 'SGD' },
     { label: 'Custom', value: 'Custom' },
   ];
 
