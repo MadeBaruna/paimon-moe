@@ -808,4 +808,9 @@ export const itemList = {
   dendrobium: { id: 'dendrobium', name: 'Dendrobium' },
   naku_weed: { id: 'naku_weed', name: 'Naku Weed' },
   okinabuto: { id: 'okinabuto', name: 'Okinabuto' },
+
+  amakumo_fruit: { id: 'amakumo_fruit', name: 'Amakumo Fruit' },
+  storm_beads: { id: 'storm_beads', name: 'Storm Beads' },
+  molten_moment: { id: 'molten_moment', name: 'Molten Moment', rarity: 5 },
+  ashen_heart: { id: 'ashen_heart', name: 'Ashen Heart', rarity: 5 },
 };

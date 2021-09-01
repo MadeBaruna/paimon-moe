@@ -7023,4 +7023,63 @@ export const weaponList = {
       },
     ],
   },
+  engulfing_lightning: {
+    name: 'Engulfing Lightning',
+    id: 'engulfing_lightning',
+    rarity: 5,
+    type: weapons.polearm,
+    source: 'wish',
+    atk: 46,
+    secondary: 'Energy Recharge',
+    ascension: [
+      {
+        items: [
+          { item: itemList.mask_of_the_wicked_lieutenant, amount: 5 },
+          { item: itemList.chaos_gear, amount: 5 },
+          { item: itemList.old_handguard, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 5 },
+          { item: itemList.chaos_gear, amount: 18 },
+          { item: itemList.old_handguard, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 9 },
+          { item: itemList.chaos_axis, amount: 9 },
+          { item: itemList.kageuchi_handguard, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 5 },
+          { item: itemList.chaos_axis, amount: 18 },
+          { item: itemList.kageuchi_handguard, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 9 },
+          { item: itemList.chaos_oculus, amount: 14 },
+          { item: itemList.famed_handguard, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_kijin, amount: 6 },
+          { item: itemList.chaos_oculus, amount: 27 },
+          { item: itemList.famed_handguard, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

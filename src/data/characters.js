@@ -1282,6 +1282,77 @@ export const characters = {
       boss: itemList.ring_of_boreas,
     },
   },
+  kujou_sara: {
+    name: 'Kujou Sara',
+    id: 'kujou_sara',
+    rarity: 4,
+    element: elements.electro,
+    weapon: weapons.bow,
+    sex: 'female',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.dendrobium, amount: 3 },
+          { item: itemList.damaged_mask, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_fragment, amount: 3 },
+          { item: itemList.storm_beads, amount: 2 },
+          { item: itemList.dendrobium, amount: 10 },
+          { item: itemList.damaged_mask, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_fragment, amount: 6 },
+          { item: itemList.storm_beads, amount: 4 },
+          { item: itemList.dendrobium, amount: 20 },
+          { item: itemList.stained_mask, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_chunk, amount: 3 },
+          { item: itemList.storm_beads, amount: 8 },
+          { item: itemList.dendrobium, amount: 30 },
+          { item: itemList.stained_mask, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_chunk, amount: 6 },
+          { item: itemList.storm_beads, amount: 12 },
+          { item: itemList.dendrobium, amount: 45 },
+          { item: itemList.ominous_mask, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_gemstone, amount: 6 },
+          { item: itemList.storm_beads, amount: 20 },
+          { item: itemList.dendrobium, amount: 60 },
+          { item: itemList.ominous_mask, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 8553, atk: 227, def: 553 },
+    material: {
+      book: [itemList.teachings_of_elegance, itemList.guide_to_elegance, itemList.philosophies_of_elegance],
+      material: [itemList.damaged_mask, itemList.stained_mask, itemList.ominous_mask],
+      boss: itemList.ashen_heart,
+    },
+  },
   lisa: {
     name: 'Lisa',
     id: 'lisa',
@@ -1635,6 +1706,77 @@ export const characters = {
       book: [itemList.teachings_of_prosperity, itemList.guide_to_prosperity, itemList.philosophies_of_prosperity],
       material: [itemList.divining_scroll, itemList.sealed_scroll, itemList.forbidden_curse_scroll],
       boss: itemList.tail_of_boreas,
+    },
+  },
+  raiden_shogun: {
+    name: 'Raiden Shogun',
+    id: 'raiden_shogun',
+    rarity: 5,
+    element: elements.electro,
+    weapon: weapons.polearm,
+    sex: 'female',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.amakumo_fruit, amount: 3 },
+          { item: itemList.old_handguard, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_fragment, amount: 3 },
+          { item: itemList.storm_beads, amount: 2 },
+          { item: itemList.amakumo_fruit, amount: 10 },
+          { item: itemList.old_handguard, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_fragment, amount: 6 },
+          { item: itemList.storm_beads, amount: 4 },
+          { item: itemList.amakumo_fruit, amount: 20 },
+          { item: itemList.kageuchi_handguard, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_chunk, amount: 3 },
+          { item: itemList.storm_beads, amount: 8 },
+          { item: itemList.amakumo_fruit, amount: 30 },
+          { item: itemList.kageuchi_handguard, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_chunk, amount: 6 },
+          { item: itemList.storm_beads, amount: 12 },
+          { item: itemList.amakumo_fruit, amount: 45 },
+          { item: itemList.famed_handguard, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.vajrada_amethyst_gemstone, amount: 6 },
+          { item: itemList.storm_beads, amount: 20 },
+          { item: itemList.amakumo_fruit, amount: 60 },
+          { item: itemList.famed_handguard, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 12182, atk: 300, def: 743 },
+    material: {
+      book: [itemList.teachings_of_light, itemList.guide_to_light, itemList.philosophies_of_light],
+      material: [itemList.old_handguard, itemList.kageuchi_handguard, itemList.famed_handguard],
+      boss: itemList.molten_moment,
     },
   },
   razor: {

@@ -27,18 +27,19 @@
     <div class="px-4 md:px-8">
       <ItemNew
         type="character"
+        banner={banners.characters[17]}
+        id={300018}
+        featured={banners.characters[17].featured}
+      />
+      <ItemNew type="weapon" banner={banners.weapons[16]} id={400017} featured={banners.weapons[16].featured} />
+      <ItemNew
+        type="character"
         banner={banners.characters[16]}
         id={300017}
         featured={banners.characters[16].featured}
       />
       <ItemNew type="weapon" banner={banners.weapons[15]} id={400016} featured={banners.weapons[15].featured} />
-      <ItemNew
-        type="character"
-        banner={banners.characters[15]}
-        id={300016}
-        featured={banners.characters[15].featured}
-      />
-      <ItemNew type="weapon" banner={banners.weapons[14]} id={400015} featured={banners.weapons[14].featured} />
+      <ItemNew type="character" banner={banners.standard} id={200001} />
       {#each showOld as show, i}
         {#if show}
           <svelte:component
