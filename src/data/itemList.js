@@ -813,4 +813,7 @@ export const itemList = {
   storm_beads: { id: 'storm_beads', name: 'Storm Beads' },
   molten_moment: { id: 'molten_moment', name: 'Molten Moment', rarity: 5 },
   ashen_heart: { id: 'ashen_heart', name: 'Ashen Heart', rarity: 5 },
+  spectral_husk: { id: 'spectral_husk', name: 'Spectral Husk' },
+  spectral_heart: { id: 'spectral_heart', name: 'Spectral Heart' },
+  spectral_nucleus: { id: 'spectral_nucleus', name: 'Spectral Nucleus' },
 };

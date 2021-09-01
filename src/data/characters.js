@@ -75,6 +75,77 @@ export const characters = {
       boss: itemList.tusk_of_monoceros_caeli,
     },
   },
+  aloy: {
+    name: 'Aloy',
+    id: 'aloy',
+    rarity: 5,
+    element: elements.cryo,
+    weapon: weapons.bow,
+    sex: 'female',
+    nation: 'wandering heroine',
+    ascension: [
+      {
+        items: [
+          { item: itemList.shivada_jade_sliver, amount: 1 },
+          { item: itemList.crystalline_bloom, amount: null },
+          { item: itemList.crystal_marrow, amount: 3 },
+          { item: itemList.whopperflower_nectar, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 3 },
+          { item: itemList.crystalline_bloom, amount: 2 },
+          { item: itemList.crystal_marrow, amount: 10 },
+          { item: itemList.spectral_husk, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_fragment, amount: 6 },
+          { item: itemList.crystalline_bloom, amount: 4 },
+          { item: itemList.crystal_marrow, amount: 20 },
+          { item: itemList.spectral_heart, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 3 },
+          { item: itemList.crystalline_bloom, amount: 8 },
+          { item: itemList.crystal_marrow, amount: 30 },
+          { item: itemList.spectral_heart, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_chunk, amount: 6 },
+          { item: itemList.crystalline_bloom, amount: 12 },
+          { item: itemList.crystal_marrow, amount: 45 },
+          { item: itemList.spectral_nucleus, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.shivada_jade_gemstone, amount: 6 },
+          { item: itemList.crystalline_bloom, amount: 20 },
+          { item: itemList.crystal_marrow, amount: 60 },
+          { item: itemList.spectral_nucleus, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 9108, atk: 311, def: 586 },
+    material: {
+      book: [itemList.teachings_of_freedom, itemList.guide_to_freedom, itemList.philosophies_of_freedom],
+      material: [itemList.spectral_husk, itemList.spectral_heart, itemList.spectral_nucleus],
+      boss: itemList.molten_moment,
+    },
+  },
   amber: {
     name: 'Amber',
     id: 'amber',
