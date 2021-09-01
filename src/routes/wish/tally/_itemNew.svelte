@@ -80,6 +80,7 @@
 
   export let banner;
   export let featured = [];
+
   let featuredValues = featured.map(() => ({
     total: 0,
     percentage: 0,
@@ -228,7 +229,6 @@
       for (let i = 0; i < 90; i++) {
         percentageEachPity[i] = legendaryPityData[i] / data.countEachPity[i];
       }
-      console.log(percentageEachPity);
 
       const mappedPercentage = new Array(legendaryMap[legendaryMap.length - 1] + 1).fill(0);
       for (let i = 0; i < 90; i++) {
@@ -285,17 +285,12 @@
   onMount(() => {
     getData();
   });
-
 </script>
 
 <div class="flex flex-col bg-item rounded-xl px-4 pt-4 pb-2 mb-4 space-y-4">
   <div class="flex flex-col xl:flex-row">
     <a href="/wish/tally/{id}" class="xl:mr-4">
-      <img
-        src="/images/banners/{banner.name} {banner.image}.png"
-        alt={banner.name}
-        class="rounded-xl xl:h-64 w-auto"
-      />
+      <img src="/images/banners/{banner.name} {banner.image}.png" alt={banner.name} class="rounded-xl xl:h-64 w-auto" />
     </a>
     <div class="h-4 xl:h-0" />
     {#if loading}
@@ -653,5 +648,4 @@
       @apply -rotate-90;
     }
   }
-
 </style>

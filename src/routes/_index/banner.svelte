@@ -13,23 +13,23 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yoimiya: {
-      name: 'Yoimiya',
+    raiden_shogun: {
+      name: 'Raiden Shogun',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    sayu: {
-      name: 'Sayu',
+    kujou_sara: {
+      name: 'Kujou Sara',
       rarity: 'rare',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300017;
-  const image = 'yoimiya_sayu.png';
+  const bannerId = 300018;
+  const image = 'raiden_kujou.png';
 
   let loading = true;
   let user = '';

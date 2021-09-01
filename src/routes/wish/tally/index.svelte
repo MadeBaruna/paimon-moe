@@ -39,21 +39,21 @@
         featured={banners.characters[16].featured}
       />
       <ItemNew type="weapon" banner={banners.weapons[15]} id={400016} featured={banners.weapons[15].featured} />
-      <ItemNew type="character" banner={banners.standard} id={200001} />
+      <ItemNew type="character" banner={banners.standard[0]} id={200001} />
       {#each showOld as show, i}
         {#if show}
           <svelte:component
             this={i < showOld.length - 3 ? ItemNew : Item}
             type="character"
             banner={banners.characters[banners.characters.length - 3 - i]}
-            id={300015 - i}
+            id={300016 - i}
             featured={banners.characters[banners.characters.length - 3 - i].featured}
           />
           <svelte:component
             this={i < showOld.length - 3 ? ItemNew : Item}
             type="weapon"
             banner={banners.weapons[banners.weapons.length - 3 - i]}
-            id={400014 - i}
+            id={400015 - i}
             featured={banners.weapons[banners.weapons.length - 3 - i].featured}
           />
         {:else}
