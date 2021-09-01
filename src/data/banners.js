@@ -361,7 +361,6 @@ export const banners = {
       color: '#f542c8',
       featured: ['thundering_pulse', 'skyward_blade'],
       featuredRare: ['sacrificial_sword', 'rainslasher', 'dragons_bane', 'sacrificial_fragments', 'favonius_warbow'],
-      timezoneDependent: true,
     },
     {
       name: 'Epitome Invocation',
