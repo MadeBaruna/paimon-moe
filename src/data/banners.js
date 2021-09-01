@@ -193,7 +193,7 @@ export const banners = {
       name: 'Reign of Serenity',
       image: 1,
       shortName: 'Raiden',
-      start: '2021-09-01 11:00:00',
+      start: '2021-09-01 06:00:00',
       end: '2021-09-21 17:59:59',
       color: '#D0AEF2',
       featured: ['raiden_shogun'],
@@ -365,7 +365,7 @@ export const banners = {
     {
       name: 'Epitome Invocation',
       image: 17,
-      start: '2021-09-01 11:00:00',
+      start: '2021-09-01 06:00:00',
       end: '2021-09-21 17:59:59',
       shortName: 'Engulfing',
       color: '#b042f5',
