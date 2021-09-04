@@ -22,6 +22,7 @@
 
   const languages = [
     { id: 'zh', label: '中文(简体)' },
+    { id: 'tw', label: '中文(繁體)' },
     { id: 'en', label: 'English' },
     { id: 'fr', label: 'Français' },
     { id: 'ko', label: '한국어' },
