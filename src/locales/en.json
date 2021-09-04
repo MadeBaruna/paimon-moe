@@ -664,7 +664,8 @@
   "achievement": {
     "title": "Achievement",
     "of": "of",
-    "sort": "Show not achieved first"
+    "sort": "Show not achieved first",
+    "search": "Search achievement"
   },
   "furnishing": {
     "title": "Furnishing",

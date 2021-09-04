@@ -3,7 +3,6 @@
   export async function preload() {
     return { data };
   }
-
 </script>
 
 <script>
@@ -15,6 +14,10 @@
   import Checkbox from '../../components/Checkbox.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
+  import Button from '../../components/Button.svelte';
+  import Input from '../../components/Input.svelte';
+  import Icon from '../../components/Icon.svelte';
+  import { mdiFilter } from '@mdi/js';
 
   export let data;
 
@@ -33,6 +36,10 @@
 
   let originalList = [];
   let sort = false;
+
+  let showFilter = false;
+  let nameFilter = '';
+  let sortedAchievements = Object.entries(data).sort((a, b) => a[1].order - b[1].order);
 
   function parseCategories() {
     categories = Object.entries(achievement)
@@ -103,7 +110,37 @@
     await updateSave(`${prefix}achievement`, data);
   }, 2000);
 
-  async function changeCategory(id, index, firstLoad) {
+  const search = debounce(async () => {
+    if (nameFilter === '') {
+      changeCategory(0, 0, true);
+      return;
+    }
+
+    const query = nameFilter.toLowerCase();
+    let index = 0;
+    let found = null;
+    for (const [id, item] of sortedAchievements) {
+      for (const achievement of item.achievements) {
+        if (Array.isArray(achievement)) {
+          for (const e of achievement) {
+            if (e.name.toLowerCase().includes(query)) {
+              found = achievement;
+              changeCategory(id, index, true, found);
+              return;
+            }
+          }
+        } else if (achievement.name.toLowerCase().includes(query)) {
+          found = achievement;
+          changeCategory(id, index, true, found);
+          return;
+        }
+      }
+
+      index++;
+    }
+  }, 500);
+
+  async function changeCategory(id, index, firstLoad, search) {
     active = id;
     activeIndex = index;
 
@@ -123,7 +160,9 @@
       }
     });
 
-    if (sort) {
+    if (search) {
+      list = [search];
+    } else if (sort) {
       originalList = list.slice();
       list = list.sort((a, b) => {
         let first = a;
@@ -149,10 +188,8 @@
       checkList[active][list[index][subindex].id] = val;
 
       // If unchecked, recursively uncheck subsequent achievements
-      if (subindex < list[index].length - 1 &&
-          !list[index][subindex].checked &&
-          list[index][subindex + 1].checked) {
-        toggle({ index, subindex: subindex + 1, primogem: list[index][subindex + 1].reward});
+      if (subindex < list[index].length - 1 && !list[index][subindex].checked && list[index][subindex + 1].checked) {
+        toggle({ index, subindex: subindex + 1, primogem: list[index][subindex + 1].reward });
       }
     } else {
       val = !list[index].checked;
@@ -171,11 +208,10 @@
   async function changeLocale(locale) {
     const data = await import(`../../data/achievement/${locale}.json`);
     achievement = data.default;
-    Object.entries(achievement)
-      .sort((a, b) => a[1].order - b[1].order)
-      .forEach(([id, data], i) => {
-        categories[i].name = data.name;
-      });
+    sortedAchievements = Object.entries(achievement).sort((a, b) => a[1].order - b[1].order);
+    sortedAchievements.forEach(([id, data], i) => {
+      categories[i].name = data.name;
+    });
     changeCategory(active, activeIndex, true);
   }
 
@@ -221,7 +257,6 @@
       changeLocale(val);
     });
   });
-
 </script>
 
 <svelte:head>
@@ -244,10 +279,34 @@
         <img src="/images/primogem.png" class="w-4 h-4 ml-1" alt="primogem" />
       </div>
     </div>
+    <Button
+      size="sm"
+      on:click={() => {
+        showFilter = !showFilter;
+      }}
+    >
+      <Icon path={mdiFilter} color="white" />
+    </Button>
     <div class="lg:pl-4 text-white">
       <Checkbox checked={sort} on:change={() => changeSort(!sort)}>{$t('achievement.sort')}</Checkbox>
     </div>
   </div>
+  {#if showFilter}
+    <div>
+      <div
+        class="flex flex-1 relative items-center bg-background rounded-2xl h-14
+       focus-within:border-primary border-2 border-transparent ease-in duration-100"
+        style="min-height: 3.5rem;"
+      >
+        <input
+          placeholder={$t('achievement.search')}
+          on:input={search}
+          bind:value={nameFilter}
+          class="pl-4 w-full min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none"
+        />
+      </div>
+    </div>
+  {/if}
   <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
     <div class="flex flex-col space-y-2 lg:h-screen lg:overflow-auto lg:sticky lg:pr-1 pb-4 category">
       {#each categories as category, index (category.id)}
@@ -343,5 +402,4 @@
       padding-top: 8px;
     }
   }
-
 </style>
