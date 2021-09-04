@@ -1,53 +1,69 @@
 {
-"background_color": "#333344",
-"theme_color": "#333333",
-"name": "Paimon.moe",
-"short_name": "Paimon.moe",
-"display": "standalone",
-"icons": [
-    	{
-      		"src": "/favicon.png",
-      		"type": "image/png",
-      		"apple-touch-icon": "#efefef",
-      		"sizes": "192x192"
-    	},
-    	{
-      		"src": "/favicon.png",
-      		"type": "image/png",
-      		"apple-touch-icon": "#efefef",
-      		"sizes": "512x512"
-    	},
-    	{
-      		"src": "/favicon.png",
-      		"type": "image/png",
-      		"apple-touch-icon": "#efefef",
-      		"purpose": "maskable",
-      		"sizes": "512x512"
-    	}],
-"scope": "/",
-"start_url": "/",
-"shortcuts": [
+  "background_color": "#202442",
+  "theme_color": "#202442",
+  "name": "Paimon.moe",
+  "short_name": "Paimon.moe",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "apple-touch-icon": "#efefef",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "apple-touch-icon": "#efefef",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "apple-touch-icon": "#efefef",
+      "purpose": "maskable",
+      "sizes": "512x512"
+    }
+  ],
+  "scope": "/",
+  "start_url": "/",
+  "shortcuts": [
     {
       "name": "Wish Counter",
       "short_name": "Wish",
-      "description": "Wish Counter",
-      "url": "/wish?src=pwa",
-      "icons": [{ "src": "/images/wish.png", "sizes": "192x192" }]
+      "description": "Wish Counter to track your pity",
+      "url": "/wish",
+      "icons": [
+        {
+          "src": "/images/wish.png",
+          "sizes": "192x192"
+        }
+      ]
     },
     {
       "name": "Calculator",
       "short_name": "Calculator",
-      "description": "Calculator",
-      "url": "/calculator?src=pwa",
-      "icons": [{ "src": "/images/calculator.png", "sizes": "192x192" }]
+      "description": "Calculator to calculate how many mora and items needed for your character or weapon",
+      "url": "/calculator",
+      "icons": [
+        {
+          "src": "/images/calculator.png",
+          "sizes": "192x192"
+        }
+      ]
     },
-	{
+    {
       "name": "To do",
       "short_name": "To do list",
-      "description": "somethin to do",
-      "url": "/todo?src=pwa",
-      "icons": [{ "src": "/images/todos.png", "sizes": "192x192" }]
+      "description": "Todo List to plan and track items and mora you need",
+      "url": "/todo",
+      "icons": [
+        {
+          "src": "/images/todos.png",
+          "sizes": "192x192"
+        }
+      ]
     }
   ],
-"description": "Your best Genshin companion ever"
+  "description": "Your best Genshin Impact companion!"
 }
