@@ -7082,4 +7082,63 @@ export const weaponList = {
       },
     ],
   },
+  the_catch: {
+    name: '"The Catch"',
+    id: 'the_catch',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Energy Recharge',
+    type: weapons.polearm,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.mask_of_the_wicked_lieutenant, amount: 3 },
+          { item: itemList.chaos_gear, amount: 3 },
+          { item: itemList.spectral_husk, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 3 },
+          { item: itemList.chaos_gear, amount: 12 },
+          { item: itemList.spectral_husk, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 6 },
+          { item: itemList.chaos_axis, amount: 6 },
+          { item: itemList.spectral_heart, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 3 },
+          { item: itemList.chaos_axis, amount: 12 },
+          { item: itemList.spectral_heart, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 6 },
+          { item: itemList.chaos_oculus, amount: 9 },
+          { item: itemList.spectral_nucleus, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_kijin, amount: 4 },
+          { item: itemList.chaos_oculus, amount: 18 },
+          { item: itemList.spectral_nucleus, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
