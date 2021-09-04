@@ -1199,6 +1199,24 @@ export const builds = {
       },
     },
   },
+  aloy: {
+    roles: {
+      DPS: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD', 'TBD', 'TBD'],
+        tip: '',
+        note: '',
+      },
+    },
+  },
   fischl: {
     roles: {
       DPS: {
@@ -1611,6 +1629,28 @@ export const builds = {
       },
     },
   },
+  kujou_sara: {
+    roles: {
+      SUPPORT: {
+        recommended: true,
+        weapons: [
+          {
+            id: 'skyward_harp',
+          },
+        ],
+        artifacts: [['emblem_of_severed_fate']],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD', 'TBD', 'TBD'],
+        tip: '',
+        note: 'WORK IN PROGRESS',
+      },
+    },
+  },
   traveler_electro: {
     roles: {
       'SUB DPS': {
@@ -1771,6 +1811,28 @@ export const builds = {
           "Preferred Skill Combo: ES (Place stiletto, don't reactivate yet) -> EB -> ES (Reactivation) -> Spam AA -> Repeat\n\nRegarding Roles:\nBoth physical and electro keqing are good and viable. You'd usually want to decide which build to go for depending on your weapon gacha luck. For example, Lion's Roar = Electro, Flute will be equally good on Electro/Phys, etc.",
         note:
           "Set 1 (2Glad+2TF) is a generalist set, which means it can be used generally anywhere, whether it be Co-op or Abyss, or other singleplayer content. This has a lot of consistency due to its independence from electro aura, and it is more viable in abyss.\n\nSet 2 (4TS) should be used with Electro-charged team compositions (Keqing + Xingqiu) or mono-electro team comp(Not Suggested). This set has a 35% dmg modifier which increases all damage from all sources, although that modifier is a bit unstable due to its dependency to the sustainability of electro aura on enemies.\n\nSet 3 (2TF+2NO) This set is used for Burst/Quickswap AoE Keqing. With this set, you'd want to be using Starward Sword (Q) all the time, which is your main source of dps with this set.\n\nRegarding Summit Shaper (5⭐): It can only beat Jade Cutter [R1] when it's shielded at [R2].\n\nRegarding Quickswap Keqing: The Black Sword (4⭐) will be shifted below Harbinger of Dawn (3⭐) R5.",
+      },
+    },
+  },
+  raiden_shogun: {
+    roles: {
+      'SUB DPS': {
+        recommended: true,
+        weapons: [
+          {
+            id: 'engulfing_lightning',
+          },
+        ],
+        artifacts: [['emblem_of_severed_fate']],
+        mainStats: {
+          sands: 'ATK%',
+          goblet: 'Electro DMG',
+          circlet: 'Crit DMG',
+        },
+        subStats: ['ATK%', 'Energy Recharge', 'Crit Rate / DMG'],
+        talent: ['Burst', 'Skill', 'Normal Attack'],
+        tip: '',
+        note: 'WORK IN PROGRESS',
       },
     },
   },
