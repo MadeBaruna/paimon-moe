@@ -27,6 +27,7 @@
     { id: 'fr', label: 'Français' },
     { id: 'ko', label: '한국어' },
     { id: 'id', label: 'Indonesia' },
+    { id: 'es', label: 'Español' },
     { id: 'pt', label: 'Português' },
     { id: 'ru', label: 'Русский' },
   ];
