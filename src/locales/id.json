@@ -374,7 +374,12 @@
       "median": "5★ Median",
       "user": "Total User",
       "detail": "Detail"
-    }
+    },
+    "note": [
+      "Wish History tidak update secara otomatis, silahkan import lagi untuk mengupdate history nya!",
+      "Paimon.moe hanya bisa mendapatkan history 6 bulan terakhir karena data history yang lama sudah dihapus di server miHoYo, jadi wish lama mu mungkin akan tidak muncul.",
+      "Data tersimpan di browser mu, jadi datanya akan terhapus jika kamu menghapus cache browser! Nyalakan Google Drive sync di setting untuk membackup datamu!"
+    ]
   },
   "calculator": {
     "titleWeapon": "Kalkulator Senjata",
@@ -659,7 +664,8 @@
   "achievement": {
     "title": "Achievement",
     "of": "dari",
-    "sort": "Urutkan yang belum didapatkan dulu"
+    "sort": "Urutkan yang belum didapatkan dulu",
+    "search": "Cari achievement"
   },
   "furnishing": {
     "title": "Furnitur",
