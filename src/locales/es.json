@@ -27,7 +27,7 @@
       "summoned": "Invocado",
       "percentage": "de todos los {rarity}",
       "avg": "Media de Pity",
-      "subtitle": "Calculado de los datos remitidos por {user} usuarios de paimon.moe",
+      "subtitle": "Calculado de los datos remitidos por {user} usuarios de Paimon.moe",
       "detail": "Recuento Global de Deseos"
     },
     "wish": {
@@ -50,7 +50,7 @@
     },
     "discord": {
       "online": "Miembros Online",
-      "message": "Únete a nuestro Discord para ver los últimos anuncios y actualizaciones! Además podrás discutir sobre Genshin Impact y aportar a paimon.moe.",
+      "message": "Únete a nuestro Discord para ver los últimos anuncios y actualizaciones! Además podrás discutir sobre Genshin Impact y aportar a Paimon.moe.",
       "join": "Únete a nuestro Discord"
     },
     "items": {
@@ -63,7 +63,7 @@
       "detail": "Calculadora"
     },
     "twitter": {
-      "title": "Sigue mi Twitter, ¡postearé vistazos de qué estoy desarrollando actualmente y las últimas actualizaciones de paimon.moe!",
+      "title": "Sigue mi Twitter, ¡postearé vistazos de qué estoy desarrollando actualmente y las últimas actualizaciones de Paimon.moe!",
       "detail": "Seguir en Twitter"
     },
     "achievement": {
@@ -280,13 +280,13 @@
       "success": "Importado Excel correcto 😀!",
       "errorInvalidFile": "Archivo excel inválido",
       "errorReadExcel": "Error leyendo el fichero excel!",
-      "errorExcelPaimon": "Este no es un excel de paimon.moe",
+      "errorExcelPaimon": "Este no es un excel de Paimon.moe",
       "errorUnknownItem": "Encontrado un nombre de recompensa desconocido"
     },
     "help": {
       "title": "Contador de Deseos Ayuda y Configuración",
       "exportTitle": "Exportar e Importar Historial de Deseos",
-      "exportMessage": "Puedes exportar tu historial de deseos a un archivo excel aquí. También puedes importar el excel exportado desde paimon.moe o TakaGG Gacha.",
+      "exportMessage": "Puedes exportar tu historial de deseos a un archivo excel aquí. También puedes importar el excel exportado desde Paimon.moe o TakaGG Gacha.",
       "export": "Exportar a Excel",
       "exporting": "Exportando...",
       "import": "Importar desde Excel",
@@ -355,7 +355,7 @@
     },
     "tally": {
       "title": "Recuento de Deseos",
-      "subtitle": "Pity Promedio Global remitido por los usuarios de paimon.moe",
+      "subtitle": "Pity Promedio Global remitido por los usuarios de Paimon.moe",
       "update": "Actualizado hace",
       "summoned": "Invocado",
       "wonFiftyFifty": "50:50 ganado",
@@ -576,10 +576,10 @@
   },
   "privacypolicy": {
     "title": "Política de privacidad",
-    "subtitle": "Qué recolecta paimon.moe y qué se usa para",
+    "subtitle": "Qué recolecta Paimon.moe y qué se usa para",
     "collect": [
       {
-        "title": "URLs visitadas en paimon.moe, referente, navegador, sistema operativo, tipo de dispositivo, país del visitante",
+        "title": "URLs visitadas en Paimon.moe, referente, navegador, sistema operativo, tipo de dispositivo, país del visitante",
         "content": [
           "Paimon.moe utiliza",
           "plausible.io",
@@ -602,7 +602,7 @@
         ]
       }
     ],
-    "subtitleNotCollect": "Qué cosas paimon.moe NO recolecta",
+    "subtitleNotCollect": "Qué cosas Paimon.moe NO recolecta",
     "notCollect": [
       "Paimon.moe nunca guarda ninguna contraseña, uid, nombre de usuario, correo electrónico, claves temporales o url de comentarios. Si estás interesado, el proyecto es de código abierto y puedes consultar el código fuente en",
       "paimon-moe-api Github",
@@ -623,7 +623,7 @@
     "or": "O"
   },
   "footer": {
-    "affliate": "aimon.moe no está afiliado a miHoYo.",
+    "affliate": "Paimon.moe no está afiliado a miHoYo.",
     "copyright": "Genshin Impact, el contenido del juego y los materiales son marcas comerciales y derechos de autor de miHoYo.",
     "discord": "Únete a nuestro Discord",
     "community": "Enlaces a la comunidad",
