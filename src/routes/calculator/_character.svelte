@@ -243,10 +243,10 @@
   function calculateTalentTraveler() {
     Object.keys(currentTalentLevel).forEach((i) => {
       for (let j = currentTalentLevel[i] - 1; j < targetTalentLevel[i] - 1; j++) {
+        talentMaterial.mora = talentMaterial.mora + talent[j].mora;
+
         let currentBook = selectedCharacter.material.book[j];
         let currentMaterial = selectedCharacter.material.material[j];
-
-        console.log(j, currentBook);
 
         if (selectedCharacter.id === characters.traveler_geo.id && i === 'first') {
           currentBook = selectedCharacter.material_atk.book[j];
