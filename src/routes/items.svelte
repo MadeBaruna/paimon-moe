@@ -213,7 +213,8 @@
                 </td>
                 <td class="border-gray-700 border-b py-2">
                   {#each chars as char}
-                    <div
+                    <a
+                      href="/characters/{char}"
                       class="h-12 w-12 md:h-14 md:w-14 cursor-pointer mr-2 hover:bg-background rounded-xl 
                        inline-flex items-center justify-center align-top"
                     >
@@ -223,7 +224,7 @@
                         alt={char}
                         title={characters[char].name}
                       />
-                    </div>
+                    </a>
                   {/each}
                 </td>
               </tr>
@@ -257,7 +258,8 @@
                 </td>
                 <td class="border-gray-700 border-b weapon-cell pt-2">
                   {#each weapons as weapon}
-                    <div
+                    <a
+                      href="/weapons/{weapon}"
                       class="h-12 w-12 md:h-14 md:w-14 cursor-pointer mr-2 mb-2 hover:bg-background rounded-xl 
                        inline-flex items-center justify-center align-top"
                     >
@@ -267,7 +269,7 @@
                         alt={weapon}
                         title={weaponList[weapon].name}
                       />
-                    </div>
+                    </a>
                   {/each}
                 </td>
               </tr>
@@ -308,7 +310,8 @@
               </td>
               <td class="border-gray-700 border-b align-middle pt-2 weapon-cell">
                 {#each Object.entries(char) as [charName, type]}
-                  <div
+                  <a
+                    href="/{type}/{charName}"
                     class="h-12 w-12 md:h-14 md:w-14 mb-2 cursor-pointer mr-2 hover:bg-background rounded-xl 
              inline-flex items-center justify-center align-top"
                   >
@@ -318,7 +321,7 @@
                       alt={charName}
                       title={type === 'characters' ? characters[charName].name : weaponList[charName].name}
                     />
-                  </div>
+                  </a>
                 {/each}
               </td>
             </tr>
