@@ -12,6 +12,7 @@
     class="flex justify-end items-center self-end lg:self-start text-white mt-4 
   bg-background-secondary rounded-xl py-2 px-4 hover:bg-background transition-colors duration-100"
   >
+    <img src="/images/achievement.png" alt="wish" class="mr-2 h-6 w-6" />
     {$t('home.achievement.detail')}
     <Icon path={mdiChevronRight} />
   </a>
