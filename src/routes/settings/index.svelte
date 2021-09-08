@@ -252,7 +252,7 @@
 
 <div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8">
   <div class="bg-item rounded-xl mb-4 p-4">
-    <p class="text-white">{$t('settings.version')} <b>2.0</b></p>
+    <p class="text-white">{$t('settings.version')} <b>2.1</b></p>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 flex flex-col">
     <p class="text-white">{$t('settings.multiple')}</p>

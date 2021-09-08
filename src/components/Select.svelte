@@ -5,7 +5,7 @@
   import Icon from './Icon.svelte';
 
   const dispatch = createEventDispatcher();
-  
+
   export let className = '';
   export let icon = null;
   export let options;
@@ -38,6 +38,7 @@
       }
 
       selected = [...selectedMulti].map((e) => options[e]);
+      dispatch('change');
       return;
     }
 
@@ -101,19 +102,13 @@
   $: iconClasses = focused ? 'transform rotate-180' : '';
 </script>
 
-<style>
-  .hovered {
-    @apply text-white !important;
-    @apply bg-primary;
-  }
-</style>
-
 <svelte:window on:click={onWindowClick} on:keydown={onKeyDown} />
 
 <div class={`select-none relative ${className}`} bind:this={container}>
   <button
     class={`flex w-full relative items-center px-4 bg-background rounded-2xl h-14 focus:outline-none focus:border-primary border-2 border-transparent ease-in duration-100 ${classes}`}
-    on:click={toggleOptions}>
+    on:click={toggleOptions}
+  >
     {#if icon}
       <Icon path={icon} color="white" className="mr-3" />
     {/if}
@@ -123,14 +118,16 @@
   {#if focused}
     <div
       transition:fade={{ duration: 100 }}
-      class="bg-item rounded-2xl absolute mt-2 p-2 w-full z-50 flex flex-col text-white shadow-xl border border-background">
+      class="bg-item rounded-2xl absolute mt-2 p-2 w-full z-50 flex flex-col text-white shadow-xl border border-background"
+    >
       {#each options as option, index}
         <span
           on:click={() => !option.disabled && select(index)}
           on:mouseenter={() => !option.disabled && onHover(index)}
           class={`p-3 rounded-xl cursor-pointer flex
             ${selectedIndex === index || selectedMulti.has(index) ? 'text-primary font-semibold' : ''}
-            ${hoveredIndex === index ? 'hovered' : ''}`}>
+            ${hoveredIndex === index ? 'hovered' : ''}`}
+        >
           {#if image}<img class="w-6 h-6 mr-2" src={option.image} alt={option.label} />{/if}
           <span class="flex-1">{option.label}</span>
           {#if multiselect && selectedMulti.has(index)}
@@ -141,3 +138,10 @@
     </div>
   {/if}
 </div>
+
+<style>
+  .hovered {
+    @apply text-white !important;
+    @apply bg-primary;
+  }
+</style>

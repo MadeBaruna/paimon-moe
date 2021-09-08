@@ -9,15 +9,16 @@
   import { locale, t } from 'svelte-i18n';
   import { onMount, tick } from 'svelte';
   import debounce from 'lodash/debounce';
+  import { mdiFilter } from '@mdi/js';
 
   import Check from '../../components/Check.svelte';
   import Checkbox from '../../components/Checkbox.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
   import Button from '../../components/Button.svelte';
-  import Input from '../../components/Input.svelte';
   import Icon from '../../components/Icon.svelte';
-  import { mdiFilter } from '@mdi/js';
+  import Select from '../../components/Select.svelte';
+  import { pushToast } from '../../stores/toast';
 
   export let data;
 
@@ -40,6 +41,12 @@
   let showFilter = false;
   let nameFilter = '';
   let sortedAchievements = Object.entries(data).sort((a, b) => a[1].order - b[1].order);
+
+  const versions = ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '2.0', '2.1'].map((e) => ({ label: e, value: e }));
+  let versionFilter = [];
+
+  const types = [{ label: $t('achievement.commissions'), value: 'commissions' }];
+  let typeFilter = [];
 
   function parseCategories() {
     categories = Object.entries(achievement)
@@ -116,53 +123,78 @@
       return;
     }
 
+    const filterName = nameFilter !== '';
     const query = nameFilter.toLowerCase();
+
     let index = 0;
-    let found = null;
     for (const [id, item] of sortedAchievements) {
       for (const achievement of item.achievements) {
         if (Array.isArray(achievement)) {
-          for (const e of achievement) {
-            if (e.name.toLowerCase().includes(query)) {
-              found = achievement;
-              changeCategory(id, index, true, found);
-              return;
-            }
-          }
-        } else if (achievement.name.toLowerCase().includes(query)) {
-          found = achievement;
-          changeCategory(id, index, true, found);
+          if (filterName && !achievement[0].name.toLowerCase().includes(query)) continue;
+          changeCategory(id, index, false);
+          return;
+        } else {
+          if (filterName && !achievement.name.toLowerCase().includes(query)) continue;
+          changeCategory(id, index, false);
           return;
         }
       }
 
       index++;
     }
+
+    changeCategory(0, 0, true);
+    pushToast($t('achievement.searchError', { values: { query } }), 'error');
   }, 500);
 
-  async function changeCategory(id, index, firstLoad, search) {
+  const updateSelectFilter = debounce(() => {
+    changeCategory(active, activeIndex, true);
+  }, 500);
+
+  async function changeCategory(id, index, firstLoad) {
     active = id;
     activeIndex = index;
 
+    const filterVersion = versionFilter.length > 0;
+    const filteredVersion = versionFilter.map((e) => e.value);
+
+    const filterComission = typeFilter.map((e) => e.value).includes('commissions');
+
+    const filterName = nameFilter !== '';
+    const query = nameFilter.toLowerCase();
+
+    console.log('filter', filterVersion, filterComission, filterName);
     if (checkList[active] === undefined) {
       checkList[active] = {};
     }
 
-    list = achievement[active].achievements.map((e) => {
-      if (Array.isArray(e)) {
-        for (let i = 0; i < e.length; i++) {
-          e[i].checked = checkList[active][e[i].id] === true;
+    list = achievement[active].achievements
+      .filter((e) => {
+        if (Array.isArray(e)) {
+          if (filterVersion && !filteredVersion.includes(e[0].ver)) return false;
+          if (filterComission && !e[0].commissions) return false;
+          if (filterName && !e[0].name.toLowerCase().includes(query)) return false;
+          return true;
+        } else {
+          if (filterVersion && !filteredVersion.includes(e.ver)) return false;
+          if (filterComission && !e.commissions) return false;
+          if (filterName && !e.name.toLowerCase().includes(query)) return false;
+          return true;
         }
-        return e;
-      } else {
-        e.checked = checkList[active][e.id] === true;
-        return e;
-      }
-    });
+      })
+      .map((e) => {
+        if (Array.isArray(e)) {
+          for (let i = 0; i < e.length; i++) {
+            e[i].checked = checkList[active][e[i].id] === true;
+          }
+          return e;
+        } else {
+          e.checked = checkList[active][e.id] === true;
+          return e;
+        }
+      });
 
-    if (search) {
-      list = [search];
-    } else if (sort) {
+    if (sort) {
       originalList = list.slice();
       list = list.sort((a, b) => {
         let first = a;
@@ -279,20 +311,22 @@
         <img src="/images/primogem.png" class="w-4 h-4 ml-1" alt="primogem" />
       </div>
     </div>
-    <Button
-      size="sm"
-      on:click={() => {
-        showFilter = !showFilter;
-      }}
-    >
-      <Icon path={mdiFilter} color="white" />
-    </Button>
-    <div class="lg:pl-4 text-white">
-      <Checkbox checked={sort} on:change={() => changeSort(!sort)}>{$t('achievement.sort')}</Checkbox>
+    <div class="flex space-x-2 items-center">
+      <Button
+        size="sm"
+        on:click={() => {
+          showFilter = !showFilter;
+        }}
+      >
+        <Icon path={mdiFilter} color="white" />
+      </Button>
+      <div class="pl-4 text-white">
+        <Checkbox checked={sort} on:change={() => changeSort(!sort)}>{$t('achievement.sort')}</Checkbox>
+      </div>
     </div>
   </div>
   {#if showFilter}
-    <div>
+    <div class="mb-2 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
       <div
         class="flex flex-1 relative items-center bg-background rounded-2xl h-14
        focus-within:border-primary border-2 border-transparent ease-in duration-100"
@@ -305,6 +339,22 @@
           class="pl-4 w-full min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none"
         />
       </div>
+      <Select
+        multiselect
+        options={versions}
+        bind:selected={versionFilter}
+        placeholder={$t('achievement.version')}
+        className="w-full md:w-40"
+        on:change={updateSelectFilter}
+      />
+      <Select
+        multiselect
+        options={types}
+        bind:selected={typeFilter}
+        placeholder={$t('achievement.type')}
+        className="w-full md:w-56"
+        on:change={updateSelectFilter}
+      />
     </div>
   {/if}
   <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
@@ -338,7 +388,17 @@
                 {i > 0 && el[i - 1].checked !== true ? 'opacity-25' : ''}"
               >
                 <div class="flex-1 pr-1">
-                  <p class="font-semibold">{it.name}</p>
+                  <p class="font-semibold">
+                    {it.name}
+                    <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                      {it.ver}
+                    </span>
+                    {#if it.commissions}
+                      <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                        {$t('achievement.commissions')}
+                      </span>
+                    {/if}
+                  </p>
                   <p class="text-gray-400">{it.desc}</p>
                 </div>
                 <div class="flex items-center">
@@ -359,7 +419,17 @@
         {:else}
           <div class="bg-item rounded-xl px-2 py-1 text-white flex items-center">
             <div class="flex-1 pr-1">
-              <p class="font-semibold">{el.name}</p>
+              <p class="font-semibold">
+                {el.name}
+                <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                  {el.ver}
+                </span>
+                {#if el.commissions}
+                  <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                    {$t('achievement.commissions')}
+                  </span>
+                {/if}
+              </p>
               <p class="text-gray-400">{el.desc}</p>
             </div>
             <div class="flex items-center">

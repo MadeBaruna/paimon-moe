@@ -665,7 +665,11 @@
     "title": "Achievement",
     "of": "of",
     "sort": "Show not achieved first",
-    "search": "Search achievement"
+    "search": "Search achievement",
+    "commissions": "commissions",
+    "version": "Version",
+    "type": "Type",
+    "searchError": "Cannot found achievement: {query}"
   },
   "furnishing": {
     "title": "Furnishing",
