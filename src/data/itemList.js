@@ -743,7 +743,7 @@ export const itemList = {
     name: 'Philosophies of Transience',
     day: ['monday', 'thursday'],
     rarity: 3,
-    parent: 'guide_to_transience',
+    parent: 'teachings_of_transience',
   },
 
   teachings_of_elegance: {
