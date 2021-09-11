@@ -118,7 +118,7 @@
   }
 
   function editConstellationCount(val) {
-    manualCount = Math.max(manualCount + val);
+    manualCount = Math.max(-constellationCount - 1, manualCount + val);
   }
 
   async function saveConstellationCount() {
@@ -138,7 +138,7 @@
       };
     }
 
-    if (chars[id].default + chars[id].wish + chars[id].manual === 0) {
+    if (chars[id].default + chars[id].wish === 0 && chars[id].manual === 0) {
       delete chars[id];
     }
 
@@ -166,7 +166,7 @@
     await getConstellationCount();
   });
 
-  $: constellationCountTotal = Math.max(0, constellationCount + manualCount);
+  $: constellationCountTotal = constellationCount + manualCount;
   $: buildName = builds[currentBuild].name;
   $: build = builds[currentBuild].build;
 </script>
