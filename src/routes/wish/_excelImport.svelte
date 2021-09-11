@@ -23,6 +23,7 @@
   let fileInput;
   let step = 0;
   let loading = false;
+  let error = null;
 
   let added = {};
 
@@ -197,8 +198,8 @@
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
 
-    for (const [id, name] of Object.entries(bannerCategories)) {
-      const sheet = workbook.getWorksheet(name);
+    for (const [id, category] of Object.entries(bannerCategories)) {
+      const sheet = workbook.getWorksheet(category);
       const wishes = [];
       sheet.eachRow((row, index) => {
         if (index === 1) return;
@@ -214,9 +215,37 @@
 
         let name = '';
         if (type === 'weapon') {
-          name = weapons.find((e) => e.name === fullName).id;
+          const weapon = weapons.find((e) => e.name === fullName);
+          if (weapon === undefined) {
+            pushToast($t('wish.excel.errorUnknownItem'), 'error');
+            error = {
+              banner: category,
+              line: index,
+              name: fullName,
+              type,
+            };
+            step = 2;
+            loading = false;
+            throw 'unknown reward name';
+          }
+
+          name = weapon.id;
         } else if (type === 'character') {
-          name = chars.find((e) => e.name === fullName).id;
+          const character = chars.find((e) => e.name === fullName);
+          if (character === undefined) {
+            pushToast($t('wish.excel.errorUnknownItem'), 'error');
+            error = {
+              banner: category,
+              line: index,
+              name: fullName,
+              type,
+            };
+            step = 2;
+            loading = false;
+            throw 'unknown reward name';
+          }
+
+          name = character.id;
         }
 
         if (name === '') {
@@ -228,7 +257,7 @@
         wishes.push([type, time, name]);
       });
 
-      console.log('from excel', name, wishes.length);
+      console.log('from excel', category, wishes.length);
       await parseData(id, wishes);
     }
 
@@ -247,8 +276,8 @@
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
 
-    for (const [id, name] of Object.entries(bannerCategories)) {
-      const sheet = workbook.getWorksheet(name);
+    for (const [id, category] of Object.entries(bannerCategories)) {
+      const sheet = workbook.getWorksheet(category);
       const wishes = [];
       sheet.eachRow((row, index) => {
         if (index === 1) return;
@@ -264,9 +293,37 @@
 
         let name = '';
         if (type === 'weapon') {
-          name = weapons.find((e) => e.name === fullName).id;
+          const weapon = weapons.find((e) => e.name === fullName);
+          if (weapon === undefined) {
+            pushToast($t('wish.excel.errorUnknownItem'), 'error');
+            error = {
+              banner: category,
+              line: index,
+              name: fullName,
+              type,
+            };
+            step = 2;
+            loading = false;
+            throw 'unknown reward name';
+          }
+
+          name = weapon.id;
         } else if (type === 'character') {
-          name = chars.find((e) => e.name === fullName).id;
+          const character = chars.find((e) => e.name === fullName);
+          if (character === undefined) {
+            pushToast($t('wish.excel.errorUnknownItem'), 'error');
+            error = {
+              banner: category,
+              line: index,
+              name: fullName,
+              type,
+            };
+            step = 2;
+            loading = false;
+            throw 'unknown reward name';
+          }
+
+          name = character.id;
         }
 
         if (name === '') {
@@ -278,7 +335,7 @@
         wishes.push([type, time, name]);
       });
 
-      console.log('from excel', name, wishes.length);
+      console.log('from excel', category, wishes.length);
       await parseData(id, wishes);
     }
 
@@ -422,6 +479,34 @@
     </table>
     <p class="text-white py-2">{$t('wish.excel.saveNotice')}</p>
     <Button disabled={loading} on:click={save}>{$t('wish.excel.save')}</Button>
+  {/if}
+  {#if step === 2}
+    <p class="text-red-400">{$t('wish.excel.errorUnknownItem')}</p>
+    <table class="text-white mb-4">
+      <tr>
+        <td class="pr-2">BANNER</td>
+        <td>{error.banner}</td>
+      </tr>
+      <tr>
+        <td class="pr-2">LINE</td>
+        <td>{error.line}</td>
+      </tr>
+      <tr>
+        <td class="pr-2">NAME</td>
+        <td>{error.name}</td>
+      </tr>
+      <tr>
+        <td class="pr-2">TYPE</td>
+        <td>{error.type}</td>
+      </tr>
+    </table>
+    <Button
+      on:click={() => {
+        step = 0;
+      }}
+    >
+      Back
+    </Button>
   {/if}
 </div>
 
