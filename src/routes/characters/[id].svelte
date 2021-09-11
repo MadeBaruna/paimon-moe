@@ -96,7 +96,7 @@
   let chars = {};
   let constellationCount = -1;
   let manualCount = 0;
-  let editConstallation = false;
+  let editConstellation = false;
 
   const showedIndex = [1, 20, 21, 41, 42, 52, 53, 63, 64, 74, 75, 85, 86, 96];
   const level = [1, 20, 20, 40, 40, 50, 50, 60, 60, 70, 70, 80, 80, 90];
@@ -118,11 +118,11 @@
   }
 
   function editConstellationCount(val) {
-    manualCount = Math.max(0, manualCount + val);
+    manualCount = Math.max(manualCount + val);
   }
 
   async function saveConstellationCount() {
-    editConstallation = false;
+    editConstellation = false;
     if (chars[id]) {
       chars[id].manual = manualCount;
     } else if (defaultChars[id]) {
@@ -166,7 +166,7 @@
     await getConstellationCount();
   });
 
-  $: constellationCountTotal = constellationCount + manualCount;
+  $: constellationCountTotal = Math.max(0, constellationCount + manualCount);
   $: buildName = builds[currentBuild].name;
   $: build = builds[currentBuild].build;
 </script>
@@ -198,7 +198,7 @@
           alt={character.element.name}
         />
         <div
-          class="flex space-y-1 lg:space-y-0 lg:space-x-1 {editConstallation
+          class="flex space-y-1 lg:space-y-0 lg:space-x-1 {editConstellation
             ? 'flex-col'
             : ''} md:flex-row items-center"
         >
@@ -207,7 +207,7 @@
               C{constellationCountTotal}
             </p>
           {/if}
-          {#if editConstallation}
+          {#if editConstellation}
             <div class="flex flex-wrap space-x-1">
               <Button size="sm" on:click={() => editConstellationCount(1)}>
                 <Icon path={mdiPlus} />
@@ -223,7 +223,7 @@
             <div
               class="ml-2 rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2"
               on:click={() => {
-                editConstallation = true;
+                editConstellation = true;
               }}
             >
               <Icon path={mdiPencil} className="text-gray-400" />
