@@ -16,6 +16,7 @@
   import Twitter from './_index/twitter.svelte';
   import Achievement from './_index/achievement.svelte';
   import Furnishing from './_index/furnishing.svelte';
+  import Build from './_index/build.svelte';
 
   let refreshLayout;
 
@@ -34,7 +35,6 @@
       }, 1);
     });
   });
-
 </script>
 
 <svelte:head>
@@ -52,15 +52,16 @@
   <Masonry bind:refreshLayout gridGap="1rem">
     <Welcome on:done={onDone} />
     <Wish on:done={onDone} />
-    <Reminder on:done={onDone} />
     <Banner on:done={onDone} />
+    <Build on:done={onDone} />
     <Event on:done={onDone} />
     <Item on:done={onDone} />
     <Discord on:done={onDone} />
     <Calculator on:done={onDone} />
+    <Reminder on:done={onDone} />
     <Achievement on:done={onDone} />
-    <Twitter on:done={onDone} />
     <Furnishing on:done={onDone} />
+    <Twitter on:done={onDone} />
     <!-- <div class="flex flex-col space-y-4">
     </div> -->
   </Masonry>

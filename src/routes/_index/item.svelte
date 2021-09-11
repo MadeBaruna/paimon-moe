@@ -39,8 +39,6 @@
         }
         _weapons[item.id].push(weapon.id);
       }
-
-      if (Object.keys(_weapons).length === 2) break;
     }
 
     characterItems = _characters;
@@ -67,12 +65,14 @@
           </td>
           <td class="border-b border-gray-700 pt-2 align-middle">
             {#each characters as char}
-              <img
-                class="h-10 w-auto mb-2 mr-2 inline rounded-full"
-                src="/images/characters/{char}.png"
-                alt={char}
-                title={char}
-              />
+              <a href="/characters/{char}">
+                <img
+                  class="h-10 w-auto mb-2 mr-2 inline rounded-full"
+                  src="/images/characters/{char}.png"
+                  alt={char}
+                  title={char}
+                />
+              </a>
             {/each}
           </td>
         </tr>
