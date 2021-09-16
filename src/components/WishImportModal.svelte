@@ -708,7 +708,7 @@
             <li class="my-2">{$t('wish.import.guide.pclocal.1')}</li>
             <li class="my-2">{$t('wish.import.guide.pclocal.2')}</li>
             <pre
-              class="bg-black bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs">{$t('wish.import.guide.pclocal.3')}</pre>
+              class="bg-black bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">{$t('wish.import.guide.pclocal.3')}</pre>
             <p>
               {$t('wish.import.guide.pclocal.4')}
               <a class="text-blue-400 hover:underline" href={$t('wish.import.guide.pclocal.6')} target="_blank">
