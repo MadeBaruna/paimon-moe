@@ -79,7 +79,7 @@
         <div
           class="flex flex-col pt-2"
           style="background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
-          {i === 0 ? 'margin-right: 10%;' : ''}"
+          {i === 0 ? 'margin-right: 5%;' : ''}"
         >
           <h3 class="text-3xl mr-4 font-black leading-6 text-right">
             {#if loading}
