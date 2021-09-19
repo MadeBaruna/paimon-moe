@@ -75,7 +75,7 @@ export const eventsData = [
       end: '2021-10-11 03:59:59',
       color: '#547BE4',
       zoom: '200%',
-      url: 'https://www.hoyolab.com/genshin/article/780934',
+      url: 'https://www.hoyolab.com/article/780929',
       showOnHome: true,
     },
   ],
@@ -248,6 +248,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Drifting Luminescence - Kokomi Banner',
+      pos: '40% 15%',
+      zoom: '180%',
+      image: 'drifting_luminescence.jpg',
+      start: '2021-09-21 18:00:00',
+      end: '2021-10-12 14:59:59',
+      color: '#6AE5F7',
+      url: 'https://www.hoyolab.com/article/946811',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -281,6 +292,16 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/genshin/article/780981',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '40% 40%',
+      image: 'epitome_invocation_18.jpg',
+      start: '2021-09-21 18:00:00',
+      end: '2021-10-12 14:59:59',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/946812',
+      showOnHome: true,
     },
   ],
   [
