@@ -7,11 +7,11 @@
   import Icon from '../../components/Icon.svelte';
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
-  import { getCurrentDay } from '../../stores/server';
+  import { getCurrentDay, server } from '../../stores/server';
 
   const dispatch = createEventDispatcher();
 
-  const today = getCurrentDay();
+  let today = getCurrentDay();
   let characterItems = {};
   let weaponItems = {};
 
@@ -46,9 +46,20 @@
   }
 
   onMount(async () => {
+    const ubsub = server.subscribe(async () => {
+      today = getCurrentDay();
+      parseTalentBook();
+      await tick();
+      dispatch('done');
+    });
+
     parseTalentBook();
     await tick();
     dispatch('done');
+
+    return () => {
+      ubsub();
+    };
   });
 </script>
 
