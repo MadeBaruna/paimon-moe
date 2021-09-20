@@ -2717,6 +2717,28 @@ export const builds = {
       },
     },
   },
+  sangonomiya_kokomi: {
+    roles: {
+      SUPPORT: {
+        recommended: true,
+        weapons: [
+          {
+            id: 'everlasting_moonglow',
+          },
+        ],
+        artifacts: [['heart_of_depth']],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD', 'TBD', 'TBD', 'TBD'],
+        talent: ['TBD', 'TBD', 'TBD'],
+        tip: '',
+        note: 'WORK IN PROGRESS',
+      },
+    },
+  },
   amber: {
     roles: {
       DPS: {

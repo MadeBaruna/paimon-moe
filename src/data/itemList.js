@@ -816,4 +816,8 @@ export const itemList = {
   spectral_husk: { id: 'spectral_husk', name: 'Spectral Husk' },
   spectral_heart: { id: 'spectral_heart', name: 'Spectral Heart' },
   spectral_nucleus: { id: 'spectral_nucleus', name: 'Spectral Nucleus' },
+
+  sango_pearl: { id: 'sango_pearl', name: 'Sango Pearl' },
+  dew_of_repudiation: { id: 'dew_of_repudiation', name: 'Dew of Repudiation', rarity: 5 },
+  hellfire_butterfly: { id: 'hellfire_butterfly', name: 'Hellfire Butterfly', rarity: 5 },
 };

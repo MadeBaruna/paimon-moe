@@ -29,6 +29,7 @@
   import PassiveSkillCard from './_passiveSkillCard.svelte';
   import { weaponList } from '../../data/weaponList';
   import artifacts from '../../data/artifacts/en.json';
+  import weapons from '../../data/weapons/en.json';
 
   const rarityColor = {
     1: 'text-white',
@@ -191,7 +192,9 @@
     />
     <div class="flex flex-col items-start mt-4 xl:mt-0 side-detail pt-4 xl:pt-0">
       <div class="flex items-center px-4 md:px-8">
-        <h1 class="font-display font-black text-4xl md:text-5xl text-white mr-4 z-0">{character.name}</h1>
+        <h1 class="font-display font-black text-4xl leading-10 md:leading-normal md:text-5xl text-white mr-4 z-0">
+          {character.name}
+        </h1>
         <img
           class="h-10 mr-4 z-10 object-contain"
           src="/images/elements/{character.element.id}.png"
@@ -373,6 +376,10 @@
         {build.recommended ? '👍' : ''}
       </h3>
       <p class="whitespace-pre-wrap text-gray-200">{build.note}</p>
+      {#if build.tip !== ''}
+        <h4 class="font-black font-display text-lg mt-4">ABILITY TIP</h4>
+        <p class="whitespace-pre-wrap text-gray-200">{build.tip}</p>
+      {/if}
       <div class="flex mt-2 -mx-4 flex-wrap">
         <div class="mx-4 mt-4">
           <h4 class="font-black font-display text-lg">MAIN STATS</h4>
@@ -422,7 +429,18 @@
         <div class="mt-4 mx-4 -mb-1">
           <h4 class="font-black font-display text-lg">WEAPONS</h4>
           {#each build.weapons as weapon, i}
-            <a class="flex mb-1" href="/weapons/{weapon.id}">
+            <a class="popup flex mb-1" href="/weapons/{weapon.id}">
+              <div class="popup-container">
+                <div class="bg-gray-300 text-gray-900 p-2 rounded-md mb-1 shadow-2xl">
+                  <p class="font-bold text-primary text-sm">
+                    {weapons[weapon.id].skill.name}
+                  </p>
+                  <p class="text-gray-900 text-sm break-words" style="filter: brightness(0);">
+                    {@html weapons[weapon.id].skill.description}
+                  </p>
+                </div>
+              </div>
+
               <div class="flex items-center bg-background rounded-md p-1 mr-1">
                 <p class="w-6 text-center mr-1" style="padding-top: 2px;">{i + 1}</p>
                 <Icon className={rarityColor[weaponList[weapon.id].rarity]} path={mdiStar} size={0.8} />

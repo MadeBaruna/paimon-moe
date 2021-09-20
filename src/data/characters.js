@@ -1992,6 +1992,77 @@ export const characters = {
       boss: itemList.shadow_of_the_warrior,
     },
   },
+  sangonomiya_kokomi: {
+    name: 'Sangonomiya Kokomi',
+    id: 'sangonomiya_kokomi',
+    rarity: 5,
+    element: elements.hydro,
+    weapon: weapons.catalyst,
+    sex: 'female',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.varunada_lazurite_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.sango_pearl, amount: 3 },
+          { item: itemList.spectral_husk, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.varunada_lazurite_fragment, amount: 3 },
+          { item: itemList.dew_of_repudiation, amount: 2 },
+          { item: itemList.sango_pearl, amount: 10 },
+          { item: itemList.spectral_husk, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.varunada_lazurite_fragment, amount: 6 },
+          { item: itemList.dew_of_repudiation, amount: 4 },
+          { item: itemList.sango_pearl, amount: 20 },
+          { item: itemList.spectral_heart, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.varunada_lazurite_chunk, amount: 3 },
+          { item: itemList.dew_of_repudiation, amount: 8 },
+          { item: itemList.sango_pearl, amount: 30 },
+          { item: itemList.spectral_heart, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.varunada_lazurite_chunk, amount: 6 },
+          { item: itemList.dew_of_repudiation, amount: 12 },
+          { item: itemList.sango_pearl, amount: 45 },
+          { item: itemList.spectral_nucleus, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.varunada_lazurite_gemstone, amount: 6 },
+          { item: itemList.dew_of_repudiation, amount: 20 },
+          { item: itemList.sango_pearl, amount: 60 },
+          { item: itemList.spectral_nucleus, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 13471, atk: 234, def: 657 },
+    material: {
+      book: [itemList.teachings_of_transience, itemList.guide_to_transience, itemList.philosophies_of_transience],
+      material: [itemList.spectral_husk, itemList.spectral_heart, itemList.spectral_nucleus],
+      boss: itemList.hellfire_butterfly,
+    },
+  },
   sayu: {
     name: 'Sayu',
     id: 'sayu',
