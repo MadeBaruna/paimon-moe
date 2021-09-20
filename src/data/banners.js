@@ -200,6 +200,16 @@ export const banners = {
       featuredRare: ['xiangling', 'sucrose', 'kujou_sara'],
       timezoneDependent: true,
     },
+    {
+      name: 'Moonlight Merriment',
+      image: 1,
+      shortName: 'Kokomi',
+      start: '2021-09-27 10:00:00',
+      end: '2021-10-11 03:59:59',
+      color: '#FF7B69',
+      featured: ['sangonomiya_kokomi'],
+      featuredRare: ['rosaria', 'beidou', 'xingqiu'],
+    },
   ],
   weapons: [
     {
@@ -372,6 +382,16 @@ export const banners = {
       featured: ['engulfing_lightning', 'the_unforged'],
       featuredRare: ['lions_roar', 'the_bell', 'favonius_lance', 'the_widsith', 'sacrificial_bow'],
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 18,
+      start: '2021-09-27 10:00:00',
+      end: '2021-10-11 03:59:59',
+      shortName: 'Moonglow',
+      color: '#424ef5',
+      featured: ['primordial_jade_cutter', 'everlasting_moonglow'],
+      featuredRare: ['the_flute', 'favonius_greatsword', 'dragons_bane', 'favonius_codex', 'the_stringless'],
     },
   ],
 };

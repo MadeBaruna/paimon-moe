@@ -7141,4 +7141,122 @@ export const weaponList = {
       },
     ],
   },
+  predator: {
+    name: 'Predator',
+    id: 'predator',
+    rarity: 4,
+    atk: 42,
+    secondary: 'ATK',
+    type: weapons.bow,
+    source: 'playstation exclusive',
+    ascension: [
+      {
+        items: [
+          { item: itemList.narukamis_wisdom, amount: 3 },
+          { item: itemList.dismal_prism, amount: 3 },
+          { item: itemList.firm_arrowhead, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 3 },
+          { item: itemList.dismal_prism, amount: 12 },
+          { item: itemList.firm_arrowhead, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 6 },
+          { item: itemList.crystal_prism, amount: 6 },
+          { item: itemList.sharp_arrowhead, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 3 },
+          { item: itemList.crystal_prism, amount: 12 },
+          { item: itemList.sharp_arrowhead, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 6 },
+          { item: itemList.polarizing_prism, amount: 9 },
+          { item: itemList.weathered_arrowhead, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_valor, amount: 4 },
+          { item: itemList.polarizing_prism, amount: 18 },
+          { item: itemList.weathered_arrowhead, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  everlasting_moonglow: {
+    name: 'Everlasting Moonglow',
+    id: 'everlasting_moonglow',
+    rarity: 5,
+    atk: 46,
+    secondary: 'HP',
+    type: weapons.catalyst,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.coral_branch_of_a_distant_sea, amount: 5 },
+          { item: itemList.dismal_prism, amount: 5 },
+          { item: itemList.spectral_husk, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.jeweled_branch_of_a_distant_sea, amount: 5 },
+          { item: itemList.dismal_prism, amount: 18 },
+          { item: itemList.spectral_husk, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.jeweled_branch_of_a_distant_sea, amount: 9 },
+          { item: itemList.crystal_prism, amount: 9 },
+          { item: itemList.spectral_heart, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.jade_branch_of_a_distant_sea, amount: 5 },
+          { item: itemList.crystal_prism, amount: 18 },
+          { item: itemList.spectral_heart, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.jade_branch_of_a_distant_sea, amount: 9 },
+          { item: itemList.polarizing_prism, amount: 14 },
+          { item: itemList.spectral_nucleus, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.golden_branch_of_a_distant_sea, amount: 6 },
+          { item: itemList.polarizing_prism, amount: 27 },
+          { item: itemList.spectral_nucleus, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
