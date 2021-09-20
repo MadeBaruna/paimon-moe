@@ -27,18 +27,18 @@
     <div class="px-4 md:px-8">
       <ItemNew
         type="character"
+        banner={banners.characters[18]}
+        id={300019}
+        featured={banners.characters[18].featured}
+      />
+      <ItemNew type="weapon" banner={banners.weapons[17]} id={400018} featured={banners.weapons[17].featured} />
+      <ItemNew
+        type="character"
         banner={banners.characters[17]}
         id={300018}
         featured={banners.characters[17].featured}
       />
       <ItemNew type="weapon" banner={banners.weapons[16]} id={400017} featured={banners.weapons[16].featured} />
-      <ItemNew
-        type="character"
-        banner={banners.characters[16]}
-        id={300017}
-        featured={banners.characters[16].featured}
-      />
-      <ItemNew type="weapon" banner={banners.weapons[15]} id={400016} featured={banners.weapons[15].featured} />
       <ItemNew type="character" banner={banners.standard[0]} id={200001} />
       {#each showOld as show, i}
         {#if show}

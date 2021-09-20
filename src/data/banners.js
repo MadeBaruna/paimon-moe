@@ -201,7 +201,7 @@ export const banners = {
       timezoneDependent: true,
     },
     {
-      name: 'Moonlight Merriment',
+      name: 'Drifting Luminescence',
       image: 1,
       shortName: 'Kokomi',
       start: '2021-09-27 10:00:00',
