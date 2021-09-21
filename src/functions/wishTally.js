@@ -39,6 +39,29 @@ export async function submitWishTally() {
       const pityCount = [...banner[i].pityCount].map((e) => e || 0);
       if (pityCount.length > 90) continue;
 
+      // skip first 5 star and 4 star on standard banner
+      if (id === 'standard') {
+        if (banner[i].legendary.length > 0) {
+          banner[i].legendary = banner[i].legendary.slice(1);
+        }
+
+        if (banner[i].rare.character.length > 0) {
+          const removedPullCharacter = banner[i].rare.character[0];
+          if (removedPullCharacter) {
+            banner[i].rarePity[removedPullCharacter.pity - 1] -= 1;
+          }
+          banner[i].rare.character = banner[i].rare.character.slice(1);
+        }
+
+        if (banner[i].rare.weapon.length > 0) {
+          const removedPullWeapon = banner[i].rare.weapon[0];
+          if (removedPullWeapon) {
+            banner[i].rarePity[removedPullWeapon.pity - 1] -= 1;
+          }
+          banner[i].rare.weapon = banner[i].rare.weapon.slice(1);
+        }
+      }
+
       const rarePity = banner[i].rarePity;
       const legendaryCount = banner[i].legendary.length;
       const rareCount = banner[i].rare.character.length + banner[i].rare.weapon.length;
@@ -53,13 +76,25 @@ export async function submitWishTally() {
       ]);
 
       // specific 4star include
-      if (banner[i].rare && banner[i].featuredRare) {
-        const includedRarePulls = banner[i].rare.character
-          .filter((e) => banner[i].featuredRare.includes(e.id))
-          .map((e) => [dayjs(e.time).unix().toString(), e.id, e.type, e.pity, e.group === 'group', e.guaranteed, 4]);
-        const includedRareWeaponPulls = banner[i].rare.weapon
-          .filter((e) => banner[i].featuredRare.includes(e.id))
-          .map((e) => [dayjs(e.time).unix().toString(), e.id, e.type, e.pity, e.group === 'group', e.guaranteed, 4]);
+      if (banner[i].rare) {
+        const includedRarePulls = banner[i].rare.character.map((e) => [
+          dayjs(e.time).unix().toString(),
+          e.id,
+          e.type,
+          e.pity,
+          e.group === 'group',
+          e.guaranteed,
+          4,
+        ]);
+        const includedRareWeaponPulls = banner[i].rare.weapon.map((e) => [
+          dayjs(e.time).unix().toString(),
+          e.id,
+          e.type,
+          e.pity,
+          e.group === 'group',
+          e.guaranteed,
+          4,
+        ]);
         legendaryPulls.push(...includedRarePulls);
         legendaryPulls.push(...includedRareWeaponPulls);
       }

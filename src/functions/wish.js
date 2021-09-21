@@ -73,7 +73,7 @@ export async function process(id) {
       total: 0,
       legendary: [],
       pityCount: [],
-      rarePity: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      rarePity: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
       rare: {
         character: [],
         weapon: [],
