@@ -22,7 +22,7 @@
 
   export let segment;
 
-  const { preloading } = stores();
+  const { preloading, page } = stores();
   const delayedPreloading = derived(preloading, (currentPreloading, set) => {
     setTimeout(() => set(currentPreloading), 250);
   });
@@ -30,6 +30,10 @@
   // check local storage save on load
   onMount(async () => {
     await checkLocalSave();
+
+    page.subscribe(() => {
+      if (window.reloadAdSlots) window.reloadAdSlots();
+    });
   });
 </script>
 
@@ -53,7 +57,7 @@
 {#if $preloading && $delayedPreloading}
   <div transition:fade class="loading-bar" />
 {/if}
-<div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col">
+<div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col md:pb-32">
   <p class="text-gray-400">
     {$t('footer.affliate')}<br />
     {$t('footer.copyright')}
@@ -66,10 +70,18 @@
     <div class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col md:pl-4 md:border-l border-gray-600">
       <span class="text-gray-500">{$t('footer.community')}</span>
       <div>
-        <a class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap" href="https://t.me/GenshinImpact_ID" target="_blank">
+        <a
+          class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap"
+          href="https://t.me/GenshinImpact_ID"
+          target="_blank"
+        >
           <Icon path={mdiTelegram} size={1} /> Telegram 🇮🇩
         </a>
-        <a class="text-gray-400 hover:text-primary whitespace-no-wrap" href="https://twitter.com/MadeBaruna" target="_blank">
+        <a
+          class="text-gray-400 hover:text-primary whitespace-no-wrap"
+          href="https://twitter.com/MadeBaruna"
+          target="_blank"
+        >
           <Icon path={mdiTwitter} size={1} /> Dev Twitter
         </a>
       </div>
@@ -104,6 +116,12 @@
       class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center h-full md:pl-4 md:border-l border-gray-600"
     >
       <a class="text-gray-400 hover:text-primary" href="/privacy-policy">Privacy Policy</a>
+      <!-- svelte-ignore a11y-invalid-attribute -->
+      <a class="text-gray-400 hover:text-primary nn-cmp-show" href="#">Cookie Settings</a>
+    </div>
+    <div
+      class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center h-full md:pl-4 md:border-l border-gray-600"
+    >
       <a class="text-gray-400 hover:text-primary" href="https://github.com/MadeBaruna/paimon-moe" target="_blank">
         Github
       </a>

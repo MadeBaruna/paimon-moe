@@ -19,10 +19,13 @@
 
     <!-- <script src="https://js.sentry-cdn.com/446c4cef71a54aafb71b698555500b7d.min.js" crossorigin="anonymous"></script> -->
     <script async defer data-domain="paimon.moe" src="https://plausible.paimon.moe/js/paimonmoe.js"></script>
+    <link rel="preconnect" href="https://tags.bkrtx.com/" />
+    <link rel="preconnect" href="https://securepubads.g.doubleclick.net/" crossorigin />
+    <link rel="preconnect" href="https://cdn.consentmanager.mgr.consensu.org/" crossorigin />
 
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-messaging.js"></script>
-    
+
     <style>
       html {
         height: 100%;
@@ -43,6 +46,13 @@
     <!-- This contains the contents of the <svelte:head> component, if
 	     the current page has one -->
     %sapper.head%
+
+    <script>
+      window.AdSlots = window.AdSlots || { cmd: [], disableScripts: ['gpt', 'bk'] };
+    </script>
+    <script async src="https://tags.bkrtx.com/js/bk-coretag.js"></script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script async src="https://kumo.network-n.com/dist/app.js" site="paimonmoe"></script>
   </head>
   <body class="font-body h-full bg-background-secondary">
     <!-- The application will be rendered inside this element,

@@ -15,6 +15,7 @@
   import MonthlyGraph from './_monthlyGraph.svelte';
   import HowToModal from './_helpModal.svelte';
   import SettingModal from './_settingModal.svelte';
+  import Ad from '../../components/Ad.svelte';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
@@ -137,23 +138,28 @@
     content="Genshin Impact Wish Counter to track your pity counter and track when you get the character or weapon. You can also automatically import the logs and backup it from PC, Android, iOS, PlayStation then save it more than 6 months."
   />
 </svelte:head>
-<div class="pt-20 lg:ml-64 lg:pt-8 px-4 md:px-8">
-  <div class="flex flex-col md:flex-row mb-4 items-center">
-    <h1 class="font-display font-black text-5xl text-white text-center md:text-left md:mr-4">{$t('wish.title')}</h1>
-    <Button className="mr-2 hidden md:block" on:click={openImport}>
-      <Icon size={0.8} path={mdiDatabaseImport} />
-      {$t('wish.autoImport')}
-    </Button>
-    {#if settings.manualInput}
-      <Button on:click={openHowTo} className="mr-2 hidden md:block">
-        <Icon size={0.8} path={mdiHelpCircle} />
-        {$t('wish.helps')}
-      </Button>
-    {/if}
-    <Button on:click={openSetting} className="hidden md:block">
-      <Icon size={0.8} path={mdiCog} />
-      {$t('wish.settings')}
-    </Button>
+<div class="pt-20 lg:ml-64 lg:pt-8 px-4 md:pl-8 md:pr-8 xl:pr-0">
+  <div class="flex flex-col top-header mb-4 justify-between items-center md:items-start max-w-screen-xl">
+    <div class="flex flex-wrap">
+      <h1 class="font-display font-black text-5xl text-white text-center md:text-left md:mr-4">{$t('wish.title')}</h1>
+      <div class="flex items-center">
+        <Button className="mr-2 hidden md:block" on:click={openImport}>
+          <Icon size={0.8} path={mdiDatabaseImport} />
+          {$t('wish.autoImport')}
+        </Button>
+        {#if settings.manualInput}
+          <Button on:click={openHowTo} className="mr-2 hidden md:block">
+            <Icon size={0.8} path={mdiHelpCircle} />
+            {$t('wish.helps')}
+          </Button>
+        {/if}
+        <Button on:click={openSetting} className="hidden md:block">
+          <Icon size={0.8} path={mdiCog} />
+          {$t('wish.settings')}
+        </Button>
+      </div>
+    </div>
+    <Ad class="self-end" type="desktop" variant="lb" id="1" />
     <div class="md:hidden flex flex-wrap justify-center">
       <Button className="m-1" on:click={openImport}>
         <Icon size={0.8} path={mdiDatabaseImport} />
@@ -174,22 +180,35 @@
   {#if settings.firstTime}
     <FirstTimePopup {processFirstTimePopup} />
   {/if}
-  <div class="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max-w-screen-xl">
-    <Counter bind:this={counter1} manualInput={settings.manualInput} id="character-event" name="Character Event" />
-    <Counter
-      bind:this={counter2}
-      manualInput={settings.manualInput}
-      id="weapon-event"
-      name="Weapon Event"
-      legendaryPity={80}
-    />
-    <Counter bind:this={counter3} manualInput={settings.manualInput} id="standard" name="Standard" />
-    <div class="flex flex-col w-full">
-      <Counter bind:this={counter4} manualInput={settings.manualInput} id="beginners" name="Beginners' Wish" />
-      <MonthlyGraph bind:data={monthlyData} />
+  <div class="flex flex-col xl:flex-row">
+    <div class="mb-4 flex justify-center">
+      <Ad type="mobile" variant="mpu" id="2" />
     </div>
-    <Summary bind:this={summary} bind:monthlyData />
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max-w-screen-xl">
+      <Counter bind:this={counter1} manualInput={settings.manualInput} id="character-event" name="Character Event" />
+      <Counter
+        bind:this={counter2}
+        manualInput={settings.manualInput}
+        id="weapon-event"
+        name="Weapon Event"
+        legendaryPity={80}
+      />
+      <Counter bind:this={counter3} manualInput={settings.manualInput} id="standard" name="Standard" />
+      <div class="flex flex-col w-full">
+        <Counter bind:this={counter4} manualInput={settings.manualInput} id="beginners" name="Beginners' Wish" />
+        <MonthlyGraph bind:data={monthlyData} />
+        <div class="mt-4 flex justify-center">
+          <Ad type="mobile" variant="mpu" id="1" />
+        </div>
+      </div>
+      <Summary bind:this={summary} bind:monthlyData />
+    </div>
+    <div class="hidden md:flex flex-1">
+      <Ad class="ml-4" type="desktop" variant="mpu" id="1" />
+    </div>
   </div>
+  <Ad type="desktop" variant="lb" id="2" />
+  <Ad type="mobile" variant="lb" id="1" />
   <div class="mt-12 mb-4 max-w-screen-xl flex flex-col md:flex-row items-center bg-background rounded-xl p-4">
     <img class="h-16 mr-2 mb-2 md:mb-0 md:mr-0" src="/images/paimon_faq.png" alt="Paimon" />
     <div class="ml-4 md:ml-8 text-gray-200">
@@ -201,3 +220,11 @@
     </div>
   </div>
 </div>
+
+<style>
+  @media (min-width: 1920px) {
+    .top-header {
+      @apply flex-row;
+    }
+  }
+</style>

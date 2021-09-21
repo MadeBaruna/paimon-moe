@@ -6,7 +6,7 @@
   <title>Privacy Policy - Paimon.moe</title>
 </svelte:head>
 
-<div class="lg:ml-64 pt-20 lg:pt-8">
+<div class="lg:ml-64 pt-20 lg:pt-8 max-w-screen-xl">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('privacypolicy.title')}</h1>
   <div class="px-4 md:px-8 text-white">
     <h3 class="text-xl font-bold">{$t('privacypolicy.subtitle')}</h3>
@@ -46,5 +46,14 @@
         {$t(`privacypolicy.notCollect.3`)}
       </a>
     </p>
+    <h3 class="text-xl font-bold mt-4">Advertisements</h3>
+    We use third party advertisements to support our site. Some of these advertisers may be served from our third party advertiser.
+    You can view their
+    <a class="text-primary hover:underline" href="https://www.network-n.com/network-privacy-policy/"> privacy policy</a>
+    and
+    <a class="text-primary hover:underline" href="https://www.network-n.com/network-cookie-policy/">cookie policy</a>
+    here. You can manage your cookies
+    <!-- svelte-ignore a11y-invalid-attribute -->
+    <a class="text-primary hover:underline nn-cmp-show" href="#">here</a>
   </div>
 </div>
