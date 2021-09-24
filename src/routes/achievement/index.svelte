@@ -19,6 +19,7 @@
   import Icon from '../../components/Icon.svelte';
   import Select from '../../components/Select.svelte';
   import { pushToast } from '../../stores/toast';
+  import Ad from '../../components/Ad.svelte';
 
   export let data;
 
@@ -297,154 +298,165 @@
   <meta property="og:description" content="Track your Genshin Impact achievement easily" />
 </svelte:head>
 
-<div class="lg:ml-64 pt-20 px-4 lg:px-8 lg:pt-8 max-w-screen-xl">
-  <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 mb-2 md:mb-0">
-    <h1 class="font-display font-black text-3xl md:text-4xl text-white">{$t('achievement.title')}</h1>
-    <div class="flex space-x-2">
-      <p class="text-gray-400 text-xl rounded-xl bg-black bg-opacity-50 px-2 py-1">
-        {finishedAchievement}
-        {$t('achievement.of')}
-        {totalAchievement}
-      </p>
-      <div class="text-gray-400 text-xl rounded-xl bg-black bg-opacity-50 px-2 py-1 flex items-center">
-        <p>{obtainedPrimogem} {$t('achievement.of')} {totalPrimogem}</p>
-        <img src="/images/primogem.png" class="w-4 h-4 ml-1" alt="primogem" />
+<div class="flex">
+  <div class="lg:ml-64 pt-20 px-4 lg:px-8 lg:pt-8 max-w-screen-xl">
+    <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 mb-2 md:mb-0">
+      <h1 class="font-display font-black text-3xl md:text-4xl text-white">{$t('achievement.title')}</h1>
+      <div class="flex space-x-2">
+        <p class="text-gray-400 text-xl rounded-xl bg-black bg-opacity-50 px-2 py-1">
+          {finishedAchievement}
+          {$t('achievement.of')}
+          {totalAchievement}
+        </p>
+        <div class="text-gray-400 text-xl rounded-xl bg-black bg-opacity-50 px-2 py-1 flex items-center">
+          <p>{obtainedPrimogem} {$t('achievement.of')} {totalPrimogem}</p>
+          <img src="/images/primogem.png" class="w-4 h-4 ml-1" alt="primogem" />
+        </div>
+      </div>
+      <div class="flex space-x-2 items-center">
+        <Button
+          size="sm"
+          on:click={() => {
+            showFilter = !showFilter;
+          }}
+        >
+          <Icon path={mdiFilter} color="white" />
+        </Button>
+        <div class="pl-4 text-white">
+          <Checkbox checked={sort} on:change={() => changeSort(!sort)}>{$t('achievement.sort')}</Checkbox>
+        </div>
       </div>
     </div>
-    <div class="flex space-x-2 items-center">
-      <Button
-        size="sm"
-        on:click={() => {
-          showFilter = !showFilter;
-        }}
-      >
-        <Icon path={mdiFilter} color="white" />
-      </Button>
-      <div class="pl-4 text-white">
-        <Checkbox checked={sort} on:change={() => changeSort(!sort)}>{$t('achievement.sort')}</Checkbox>
-      </div>
-    </div>
-  </div>
-  {#if showFilter}
-    <div class="mb-2 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-      <div
-        class="flex flex-1 relative items-center bg-background rounded-2xl h-14
+    {#if showFilter}
+      <div class="mb-2 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
+        <div
+          class="flex flex-1 relative items-center bg-background rounded-2xl h-14
        focus-within:border-primary border-2 border-transparent ease-in duration-100"
-        style="min-height: 3.5rem;"
-      >
-        <input
-          placeholder={$t('achievement.search')}
-          on:input={search}
-          bind:value={nameFilter}
-          class="pl-4 w-full min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none"
+          style="min-height: 3.5rem;"
+        >
+          <input
+            placeholder={$t('achievement.search')}
+            on:input={search}
+            bind:value={nameFilter}
+            class="pl-4 w-full min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none"
+          />
+        </div>
+        <Select
+          multiselect
+          options={versions}
+          bind:selected={versionFilter}
+          placeholder={$t('achievement.version')}
+          className="w-full md:w-40"
+          on:change={updateSelectFilter}
+        />
+        <Select
+          multiselect
+          options={types}
+          bind:selected={typeFilter}
+          placeholder={$t('achievement.type')}
+          className="w-full md:w-56"
+          on:change={updateSelectFilter}
         />
       </div>
-      <Select
-        multiselect
-        options={versions}
-        bind:selected={versionFilter}
-        placeholder={$t('achievement.version')}
-        className="w-full md:w-40"
-        on:change={updateSelectFilter}
-      />
-      <Select
-        multiselect
-        options={types}
-        bind:selected={typeFilter}
-        placeholder={$t('achievement.type')}
-        className="w-full md:w-56"
-        on:change={updateSelectFilter}
-      />
-    </div>
-  {/if}
-  <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
-    <div class="flex flex-col space-y-2 lg:h-screen lg:overflow-auto lg:sticky lg:pr-1 pb-4 category">
-      {#each categories as category, index (category.id)}
-        <div
-          class="rounded-xl p-2 cursor-pointer flex flex-col {category.id === active ? 'bg-primary' : 'bg-item'}"
-          on:click={() => changeCategory(category.id, index)}
-        >
-          <p class="font-semibold {category.id === active ? 'text-black' : 'text-white'}">{category.name}</p>
-          <div class="flex">
-            <p class="flex-1 {category.id === active ? 'text-gray-900' : 'text-gray-400'}">
-              {category.finished}/{category.total}
-              ({((category.finished / category.total) * 100).toFixed(0)}%)
-            </p>
-            <p class={category.id === active ? 'text-gray-900' : 'text-gray-400'}>
-              {category.primogem}
-            </p>
-            <img src="/images/primogem.png" class="w-6 h-6 ml-1" alt="primogem" />
-          </div>
-        </div>
-      {/each}
-    </div>
-    <div class="flex flex-col space-y-2 flex-1 pt-20 lg:pt-2" bind:this={achievementContainer}>
-      {#each list as el, index}
-        {#if Array.isArray(el)}
-          <div class="bg-item rounded-xl px-2 py-1 text-white flex flex-col">
-            {#each el as it, i}
-              <div
-                class="flex items-center {i !== 0 ? 'border-t border-gray-700 pt-1' : ''} 
-                {i > 0 && el[i - 1].checked !== true ? 'opacity-25' : ''}"
-              >
-                <div class="flex-1 pr-1">
-                  <p class="font-semibold">
-                    {it.name}
-                    <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
-                      {it.ver}
-                    </span>
-                    {#if it.commissions}
-                      <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
-                        {$t('achievement.commissions')}
-                      </span>
-                    {/if}
-                  </p>
-                  <p class="text-gray-400">{it.desc}</p>
-                </div>
-                <div class="flex items-center">
-                  <p class="mr-1">{it.reward}</p>
-                  <img src="/images/primogem.png" class="w-8 h-8" alt="primogem" />
-                </div>
-                <div>
-                  <Check
-                    checked={list[index][i].checked}
-                    on:change={() => toggle({ index, subindex: i, primogem: it.reward })}
-                    inverted
-                    disabled={i > 0 && !el[i - 1].checked}
-                  />
-                </div>
-              </div>
-            {/each}
-          </div>
-        {:else}
-          <div class="bg-item rounded-xl px-2 py-1 text-white flex items-center">
-            <div class="flex-1 pr-1">
-              <p class="font-semibold">
-                {el.name}
-                <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
-                  {el.ver}
-                </span>
-                {#if el.commissions}
-                  <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
-                    {$t('achievement.commissions')}
-                  </span>
-                {/if}
+    {/if}
+    <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
+      <div class="flex flex-col space-y-2 lg:h-screen lg:overflow-auto lg:sticky lg:pr-1 pb-4 category">
+        {#each categories as category, index (category.id)}
+          <div
+            class="rounded-xl p-2 cursor-pointer flex flex-col {category.id === active ? 'bg-primary' : 'bg-item'}"
+            on:click={() => changeCategory(category.id, index)}
+          >
+            <p class="font-semibold {category.id === active ? 'text-black' : 'text-white'}">{category.name}</p>
+            <div class="flex">
+              <p class="flex-1 {category.id === active ? 'text-gray-900' : 'text-gray-400'}">
+                {category.finished}/{category.total}
+                ({((category.finished / category.total) * 100).toFixed(0)}%)
               </p>
-              <p class="text-gray-400">{el.desc}</p>
-            </div>
-            <div class="flex items-center">
-              <p class="mr-1">{el.reward}</p>
-              <img src="/images/primogem.png" class="w-8 h-8" alt="primogem" />
-            </div>
-            <div>
-              <Check checked={list[index].checked} on:change={() => toggle({ index, primogem: el.reward })} inverted />
+              <p class={category.id === active ? 'text-gray-900' : 'text-gray-400'}>
+                {category.primogem}
+              </p>
+              <img src="/images/primogem.png" class="w-6 h-6 ml-1" alt="primogem" />
             </div>
           </div>
-        {/if}
-      {/each}
+        {/each}
+      </div>
+      <div class="flex flex-col space-y-2 flex-1 pt-20 lg:pt-2" bind:this={achievementContainer}>
+        {#each list as el, index}
+          {#if Array.isArray(el)}
+            <div class="bg-item rounded-xl px-2 py-1 text-white flex flex-col">
+              {#each el as it, i}
+                <div
+                  class="flex items-center {i !== 0 ? 'border-t border-gray-700 pt-1' : ''} 
+                {i > 0 && el[i - 1].checked !== true ? 'opacity-25' : ''}"
+                >
+                  <div class="flex-1 pr-1">
+                    <p class="font-semibold">
+                      {it.name}
+                      <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                        {it.ver}
+                      </span>
+                      {#if it.commissions}
+                        <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                          {$t('achievement.commissions')}
+                        </span>
+                      {/if}
+                    </p>
+                    <p class="text-gray-400">{it.desc}</p>
+                  </div>
+                  <div class="flex items-center">
+                    <p class="mr-1">{it.reward}</p>
+                    <img src="/images/primogem.png" class="w-8 h-8" alt="primogem" />
+                  </div>
+                  <div>
+                    <Check
+                      checked={list[index][i].checked}
+                      on:change={() => toggle({ index, subindex: i, primogem: it.reward })}
+                      inverted
+                      disabled={i > 0 && !el[i - 1].checked}
+                    />
+                  </div>
+                </div>
+              {/each}
+            </div>
+          {:else}
+            <div class="bg-item rounded-xl px-2 py-1 text-white flex items-center">
+              <div class="flex-1 pr-1">
+                <p class="font-semibold">
+                  {el.name}
+                  <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                    {el.ver}
+                  </span>
+                  {#if el.commissions}
+                    <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                      {$t('achievement.commissions')}
+                    </span>
+                  {/if}
+                </p>
+                <p class="text-gray-400">{el.desc}</p>
+              </div>
+              <div class="flex items-center">
+                <p class="mr-1">{el.reward}</p>
+                <img src="/images/primogem.png" class="w-8 h-8" alt="primogem" />
+              </div>
+              <div>
+                <Check
+                  checked={list[index].checked}
+                  on:change={() => toggle({ index, primogem: el.reward })}
+                  inverted
+                />
+              </div>
+            </div>
+          {/if}
+        {/each}
+      </div>
     </div>
   </div>
+  <div class="hidden xl:block">
+    <Ad class="ml-4 mt-8" type="desktop" variant="mpu" id="1" />
+  </div>
 </div>
+<Ad type="desktop" variant="lb" id="2" />
+<Ad type="mobile" variant="lb" id="1" />
 
 <style>
   .category {

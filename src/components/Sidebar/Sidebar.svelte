@@ -11,11 +11,6 @@
   import SidebarMoreItem from './SidebarMoreItem.svelte';
 
   import { showSidebar } from '../../stores/sidebar';
-  import Button from '../Button.svelte';
-
-  import DonateModal from '../DonateModal.svelte';
-
-  const { open: openModal } = getContext('simple-modal');
 
   export let segment;
   export let mobile = false;
@@ -33,17 +28,6 @@
   ];
   $: currentLocale = languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' };
   $: locales = languages.filter((e) => e.id !== currentLocale.id);
-
-  function openDonationModal() {
-    openModal(
-      DonateModal,
-      {},
-      {
-        closeButton: false,
-        styleWindow: { background: '#25294A', width: '500px' },
-      },
-    );
-  }
 
   function close() {
     showSidebar.set(false);
@@ -159,10 +143,6 @@
         {/each}
       </div>
     </div>
-    <Button on:click={openDonationModal}>
-      <img class="inline w-8 h-8" src="/images/mora.png" alt="donate" />
-      {$t('sidebar.donate')}
-    </Button>
   </div>
 </div>
 

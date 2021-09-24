@@ -16,6 +16,7 @@
   import DetailModal from './_detail.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave } from '../../stores/saveManager';
+  import Ad from '../../components/Ad.svelte';
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -223,7 +224,6 @@
 
   $: todayOffset = Math.abs(firstDay.diff(today, 'day', true));
   $: showAsLocalTime, onCheckLocalTime();
-
 </script>
 
 <svelte:head>
@@ -239,13 +239,19 @@
 </svelte:head>
 
 <div class="lg:ml-64 pt-20 lg:pt-8">
-  <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('timeline.title')}</h1>
-  {#if !loading}
-    <div class="px-4 md:px-8 text-white select-none">
-      <Checkbox bind:checked={showAsLocalTime}>
-        {$t('timeline.localTime')} ({browserTimeZone} - {$server} Server)
-      </Checkbox>
+  <div class="flex">
+    <div>
+      <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('timeline.title')}</h1>
+      <div class="px-4 md:px-8 text-white select-none">
+        <Checkbox bind:checked={showAsLocalTime}>
+          {$t('timeline.localTime')} ({browserTimeZone} - {$server} Server)
+        </Checkbox>
+      </div>
     </div>
+    <Ad class="flex flex-1 justify-center" type="desktop" variant="lb" id="1" />
+  </div>
+  <Ad type="mobile" variant="lb" id="1" />
+  {#if !loading}
     <div class="w-full overflow-x-auto px-4 md:px-8" bind:this={timelineContainer} on:wheel={transformScroll}>
       <div
         style={`padding-top: 50px; width: min-content; padding-right: ${2 * padding * dayWidth}px; height: ${
@@ -337,5 +343,4 @@
     background: rgba(0, 0, 0, 0.35);
     @apply rounded-xl;
   }
-
 </style>

@@ -14,6 +14,7 @@
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
   import HowToModal from '../../components/CalculatorHowToModal.svelte';
+  import Ad from '../../components/Ad.svelte';
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -81,6 +82,8 @@
     </h1>
   </div>
   <WeaponCalculator />
+  <Ad class="flex justify-center mt-8 mb-2" type="desktop" variant="lb" id="1" />
+  <Ad class="flex justify-center my-4" type="mobile" variant="mpu" id="2" />
   <div
     id="character"
     class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mt-8 mb-2"
@@ -100,6 +103,8 @@
     </h1>
   </div>
   <CharacterCalculator />
+  <Ad class="flex justify-center mt-8 mb-2" type="desktop" variant="lb" id="3" />
+  <Ad class="flex justify-center my-4" type="mobile" variant="mpu" id="1" />
   <div
     id="resin"
     class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mt-8 mb-2"

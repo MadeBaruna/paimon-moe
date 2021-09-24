@@ -1,5 +1,6 @@
 <script>
   import { t } from 'svelte-i18n';
+  import Ad from '../../../components/Ad.svelte';
   import Button from '../../../components/Button.svelte';
   import { banners } from '../../../data/banners';
   import Item from './_item.svelte';
@@ -23,15 +24,18 @@
     <p class="text-gray-400 px-4 md:px-8 font-medium pb-4" style="margin-top: -1rem;">
       ※ {$t('wish.tally.subtitle')}
     </p>
-
     <div class="px-4 md:px-8">
+      <Ad class="my-4" type="desktop" variant="lb" id="1" />
       <ItemNew
         type="character"
         banner={banners.characters[18]}
         id={300019}
         featured={banners.characters[18].featured}
       />
+      <Ad class="my-4 flex justify-center" type="mobile" variant="mpu" id="2" />
+      <Ad type="mobile" variant="lb" id="1" />
       <ItemNew type="weapon" banner={banners.weapons[17]} id={400018} featured={banners.weapons[17].featured} />
+      <Ad class="my-4" type="desktop" variant="lb" id="3" />
       <ItemNew
         type="character"
         banner={banners.characters[17]}

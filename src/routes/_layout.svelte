@@ -32,7 +32,9 @@
     await checkLocalSave();
 
     page.subscribe(() => {
-      if (window.reloadAdSlots) window.reloadAdSlots();
+      try {
+        window.reloadAdSlots();
+      } catch (error) {}
     });
   });
 </script>
@@ -57,7 +59,7 @@
 {#if $preloading && $delayedPreloading}
   <div transition:fade class="loading-bar" />
 {/if}
-<div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col md:pb-32">
+<div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col md:pb-24">
   <p class="text-gray-400">
     {$t('footer.affliate')}<br />
     {$t('footer.copyright')}

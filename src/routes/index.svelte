@@ -17,14 +17,20 @@
   import Achievement from './_index/achievement.svelte';
   import Furnishing from './_index/furnishing.svelte';
   import Build from './_index/build.svelte';
+  import Ad from '../components/Ad.svelte';
 
   let refreshLayout;
+  let isMobile = false;
 
   const onDone = debounce(() => {
     refreshLayout();
   }, 100);
 
   onMount(() => {
+    if (window.innerWidth < 500) {
+      isMobile = true;
+    }
+
     setTimeout(() => {
       refreshLayout();
     }, 1000);
@@ -53,16 +59,27 @@
     <Welcome on:done={onDone} />
     <Wish on:done={onDone} />
     <Banner on:done={onDone} />
+    {#if isMobile}
+      <div class="flex justify-center">
+        <Ad type="mobile" variant="mpu" id="1" />
+      </div>
+    {/if}
     <Build on:done={onDone} />
     <Event on:done={onDone} />
     <Item on:done={onDone} />
     <Discord on:done={onDone} />
     <Calculator on:done={onDone} />
     <Reminder on:done={onDone} />
+    {#if isMobile}
+      <div class="flex justify-center">
+        <Ad type="mobile" variant="mpu" id="2" />
+      </div>
+    {/if}
     <Achievement on:done={onDone} />
     <Furnishing on:done={onDone} />
     <Twitter on:done={onDone} />
     <!-- <div class="flex flex-col space-y-4">
     </div> -->
   </Masonry>
+  <Ad class="ml-4 mt-2" type="desktop" variant="lb" id="1" />
 </div>

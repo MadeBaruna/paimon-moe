@@ -11,6 +11,7 @@
   import { readSave, updateSave } from '../../stores/saveManager';
   import Select from '../../components/Select.svelte';
   import Button from '../../components/Button.svelte';
+  import Ad from '../../components/Ad.svelte';
 
   const sortOptions = [
     { label: $t('characters.name'), value: 'name' },
@@ -207,6 +208,13 @@
     }
   }
 
+  function changeViewType(val) {
+    type = val;
+    try {
+      window.reloadAdSlots();
+    } catch (error) {}
+  }
+
   onMount(async () => {
     await getConstellation();
   });
@@ -229,9 +237,7 @@
     <div class="flex text-white" style="height: fit-content;">
       <button
         class="{type === 'grid' ? 'bg-background' : 'bg-item'} p-2 rounded-l-xl cursor-pointer hover:bg-opacity-75"
-        on:click={() => {
-          type = 'grid';
-        }}
+        on:click={() => changeViewType('grid')}
       >
         <Icon path={mdiViewGrid} />
       </button>
@@ -239,9 +245,7 @@
         class="{type === 'table'
           ? 'bg-background'
           : 'bg-item'} bg-background p-2 rounded-r-xl cursor-pointer hover:bg-opacity-75"
-        on:click={() => {
-          type = 'table';
-        }}
+        on:click={() => changeViewType('table')}
       >
         <Icon path={mdiViewList} />
       </button>
@@ -249,157 +253,166 @@
   </div>
 
   {#if type === 'grid'}
-    <div class="flex flex-col lg:flex-row flex-wrap px-4 md:pl-8 md:pr-4 mb-4">
-      <div class="flex mr-2 mb-2 lg:mb-0">
-        <Select
-          bind:selected={sortBySelect}
-          on:change={orderSelectChanged}
-          options={sortOptions}
-          className="w-full md:w-48 mr-2"
-          placeholder={$t('characters.sortBy')}
-        />
-        <Button on:click={orderGridChange}>
-          <Icon path={sortOrder ? mdiSortAscending : mdiSortDescending} />
-        </Button>
-      </div>
-      <div class="flex flex-col md:flex-row">
-        <div class="flex items-center justify-center md:justify-start md:mr-4">
-          <button
-            on:click={() => toggleElement('pyro')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.pyro
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/elements/pyro.png" alt="pyro" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-          <button
-            on:click={() => toggleElement('hydro')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.hydro
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/elements/hydro.png" alt="hydro" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-          <button
-            on:click={() => toggleElement('anemo')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.anemo
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/elements/anemo.png" alt="anemo" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-          <button
-            on:click={() => toggleElement('electro')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.electro
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/elements/electro.png" alt="electro" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-          <button
-            on:click={() => toggleElement('cryo')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.cryo
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/elements/cryo.png" alt="cryo" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-          <button
-            on:click={() => toggleElement('geo')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.geo
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/elements/geo.png" alt="geo" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-        </div>
-        <div class="flex items-center justify-center md:justify-start">
-          <button
-            on:click={() => toggleWeapon('sword')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.sword
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/weapons/sword.png" alt="sword" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-          <button
-            on:click={() => toggleWeapon('claymore')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.claymore
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/weapons/claymore.png" alt="claymore" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-          <button
-            on:click={() => toggleWeapon('polearm')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.polearm
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/weapons/polearm.png" alt="polearm" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-          <button
-            on:click={() => toggleWeapon('catalyst')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.catalyst
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/weapons/catalyst.png" alt="catalyst" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-          <button
-            on:click={() => toggleWeapon('bow')}
-            class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.bow
-              ? ''
-              : 'opacity-25'}"
-          >
-            <img src="/images/weapons/bow.png" alt="bow" class="w-8 h-8" style="min-width: 2rem;" />
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="px-4 md:pl-6 md:pr-4 flex flex-wrap max-w-screen-xl mt-2">
-      {#each chars as [id, char] (id)}
-        <a
-          href="/characters/{id}"
-          class="m-2 cell relative cursor-pointer transition duration-100 hover:opacity-100 hover:shadow-xl rounded-xl {!showConstellation ||
-          constellation[id]
-            ? ''
-            : 'opacity-50'}"
-        >
-          <div
-            class="w-full rounded-t-xl bg-opacity-50 overflow-hidden {char.rarity === 5
-              ? 'bg-legendary-from'
-              : 'bg-rare-from'}"
-          >
-            <img class="w-full h-full" src={`/images/characters/${id}.png`} alt={char.name} />
+    <div class="flex">
+      <div>
+        <div class="flex flex-col lg:flex-row flex-wrap px-4 md:pl-8 md:pr-4 mb-4">
+          <div class="flex mr-2 mb-2 lg:mb-0">
+            <Select
+              bind:selected={sortBySelect}
+              on:change={orderSelectChanged}
+              options={sortOptions}
+              className="w-full md:w-48 mr-2"
+              placeholder={$t('characters.sortBy')}
+            />
+            <Button on:click={orderGridChange}>
+              <Icon path={sortOrder ? mdiSortAscending : mdiSortDescending} />
+            </Button>
           </div>
-          <div
-            class="absolute top-0 right-0 bg-black bg-opacity-75 rounded-full flex items-center shadow-md"
-            style="padding: 4px; margin: -10px;"
-          >
-            {#if constellation[id]}
-              <span class="mx-1 text-white text-xs font-semibold">
-                C{Math.max(0, constellation[id].default + constellation[id].wish + constellation[id].manual - 1)}
-              </span>
-            {/if}
-            <img class="w-4 h-4" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />
-          </div>
-          <div class="relative overflow-hidden bg-item rounded-b-xl" style="height: 29px">
-            <div class="w-full  overflow-hidden absolute bottom-0">
-              <p class="text-white p-1 text-center text-sm">
-                {char.name}
-              </p>
+          <div class="flex flex-col md:flex-row">
+            <div class="flex items-center justify-center md:justify-start md:mr-4">
+              <button
+                on:click={() => toggleElement('pyro')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.pyro
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/elements/pyro.png" alt="pyro" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
+                on:click={() => toggleElement('hydro')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.hydro
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/elements/hydro.png" alt="hydro" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
+                on:click={() => toggleElement('anemo')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.anemo
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/elements/anemo.png" alt="anemo" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
+                on:click={() => toggleElement('electro')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.electro
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/elements/electro.png" alt="electro" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
+                on:click={() => toggleElement('cryo')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.cryo
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/elements/cryo.png" alt="cryo" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
+                on:click={() => toggleElement('geo')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.geo
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/elements/geo.png" alt="geo" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+            </div>
+            <div class="flex items-center justify-center md:justify-start">
+              <button
+                on:click={() => toggleWeapon('sword')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.sword
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/weapons/sword.png" alt="sword" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
+                on:click={() => toggleWeapon('claymore')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.claymore
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/weapons/claymore.png" alt="claymore" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
+                on:click={() => toggleWeapon('polearm')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.polearm
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/weapons/polearm.png" alt="polearm" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
+                on:click={() => toggleWeapon('catalyst')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.catalyst
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/weapons/catalyst.png" alt="catalyst" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
+                on:click={() => toggleWeapon('bow')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.bow
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/weapons/bow.png" alt="bow" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
             </div>
           </div>
-        </a>
-      {/each}
-    </div>
-    {#if showConstellation}
-      <div class="mt-12 mb-4 mx-4 md:mx-8 max-w-screen-xl md:flex items-center bg-background rounded-xl p-4">
-        <img class="h-16 float-left md:float-none mr-2 md:mr-0" src="/images/paimon_faq.png" alt="Paimon" />
-        <p class="md:ml-4 text-gray-200 ">{$t('characters.faq')}</p>
+        </div>
+        <div class="px-4 md:pl-6 md:pr-4 flex flex-wrap max-w-screen-xl mt-2">
+          {#each chars as [id, char] (id)}
+            <a
+              href="/characters/{id}"
+              class="m-2 cell relative cursor-pointer transition duration-100 hover:opacity-100 hover:shadow-xl rounded-xl {!showConstellation ||
+              constellation[id]
+                ? ''
+                : 'opacity-50'}"
+            >
+              <div
+                class="w-full rounded-t-xl bg-opacity-50 overflow-hidden {char.rarity === 5
+                  ? 'bg-legendary-from'
+                  : 'bg-rare-from'}"
+              >
+                <img class="w-full h-full" src={`/images/characters/${id}.png`} alt={char.name} />
+              </div>
+              <div
+                class="absolute top-0 right-0 bg-black bg-opacity-75 rounded-full flex items-center shadow-md"
+                style="padding: 4px; margin: -10px;"
+              >
+                {#if constellation[id]}
+                  <span class="mx-1 text-white text-xs font-semibold">
+                    C{Math.max(0, constellation[id].default + constellation[id].wish + constellation[id].manual - 1)}
+                  </span>
+                {/if}
+                <img class="w-4 h-4" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />
+              </div>
+              <div class="relative overflow-hidden bg-item rounded-b-xl" style="height: 29px">
+                <div class="w-full  overflow-hidden absolute bottom-0">
+                  <p class="text-white p-1 text-center text-sm">
+                    {char.name}
+                  </p>
+                </div>
+              </div>
+            </a>
+          {/each}
+        </div>
+        {#if showConstellation}
+          <div
+            class="mt-12 mb-4 ml-4 mr-4 md:ml-8 md:mr-0 max-w-screen-xl md:flex items-center bg-background rounded-xl p-4"
+          >
+            <img class="h-16 float-left md:float-none mr-2 md:mr-0" src="/images/paimon_faq.png" alt="Paimon" />
+            <p class="md:ml-4 text-gray-200 ">{$t('characters.faq')}</p>
+          </div>
+        {/if}
       </div>
-    {/if}
+      <div class="hidden xl:block">
+        <Ad class="ml-4" type="desktop" variant="mpu" id="1" />
+      </div>
+    </div>
   {:else}
     <p class="text-gray-400 px-4 md:px-8 font-medium pb-2 mt-4">
       ※ {$t('characters.subtitle')}

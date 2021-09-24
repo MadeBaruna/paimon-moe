@@ -12,6 +12,7 @@
   import Input from '../../components/Input.svelte';
   import DeleteAccountModal from './_deleteAccount.svelte';
   import ResetAccountModal from './_resetAccount.svelte';
+  import DonateModal from '../../components/DonateModal.svelte';
 
   import { driveSignedIn, driveError, driveLoading, synced, localModified, lastSyncTime } from '../../stores/dataSync';
   import { server, ar, wl } from '../../stores/server';
@@ -234,6 +235,17 @@
     );
   }
 
+  function openDonationModal() {
+    openModal(
+      DonateModal,
+      {},
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '500px' },
+      },
+    );
+  }
+
   onMount(() => {
     mounted = true;
   });
@@ -250,7 +262,7 @@
   <title>Settings - Paimon.moe</title>
 </svelte:head>
 
-<div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8">
+<div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8 max-w-screen-xl">
   <div class="bg-item rounded-xl mb-4 p-4">
     <p class="text-white">{$t('settings.version')} <b>2.1</b></p>
   </div>
@@ -344,6 +356,11 @@
       ><Icon path={mdiGithub} /> Github Issues</a
     >
     {$t('settings.thanks')}
+    <br />
+    <Button on:click={openDonationModal}>
+      <img class="inline w-8 h-8" src="/images/mora.png" alt="donate" />
+      {$t('sidebar.donate')}
+    </Button>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 text-white">
     <p class="font-semibold">Credits</p>
