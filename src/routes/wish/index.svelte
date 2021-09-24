@@ -159,7 +159,9 @@
         </Button>
       </div>
     </div>
-    <Ad class="self-end" type="desktop" variant="lb" id="1" />
+    <div class="top-placement">
+      <Ad type="desktop" variant="lb" id="1" />
+    </div>
     <div class="md:hidden flex flex-wrap justify-center">
       <Button className="m-1" on:click={openImport}>
         <Icon size={0.8} path={mdiDatabaseImport} />
@@ -225,6 +227,10 @@
   @media (min-width: 1920px) {
     .top-header {
       @apply flex-row;
+    }
+
+    .top-placement {
+      @apply self-end;
     }
   }
 </style>
