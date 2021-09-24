@@ -443,6 +443,25 @@
                   <p class="text-gray-900 text-sm break-words" style="filter: brightness(0);">
                     {@html weapons[weapon.id].skill.description}
                   </p>
+                  <div class="flex mt-2">
+                    <div class="mr-4">
+                      <p class="font-bold text-primary text-sm">ATK</p>
+                      <p class="text-gray-900 text-sm">{Math.round(weapons[weapon.id].atk[96])}</p>
+                    </div>
+                    {#if weapons[weapon.id].secondary.stats}
+                      <div>
+                        <p class="font-bold text-primary text-sm">
+                          {$t(`weapon.${weapons[weapon.id].secondary.name}`)}
+                        </p>
+                        <p class="text-gray-900 text-sm">
+                          {Math.round(
+                            weapons[weapon.id].secondary.stats[96] *
+                              (weapons[weapon.id].secondary.name === 'em' ? 1 : 100),
+                          )}{weapons[weapon.id].secondary.name === 'em' ? '' : '%'}
+                        </p>
+                      </div>
+                    {/if}
+                  </div>
                 </div>
               </div>
 
