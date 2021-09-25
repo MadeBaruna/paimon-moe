@@ -82,4 +82,6 @@
     </div> -->
   </Masonry>
   <Ad class="ml-4 mt-2" type="desktop" variant="lb" id="1" />
+  <Ad type="desktop" variant="lb" id="2" />
+  <Ad type="mobile" variant="lb" id="1" />
 </div>
