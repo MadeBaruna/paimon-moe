@@ -31,6 +31,7 @@
   import artifacts from '../../data/artifacts/en.json';
   import weapons from '../../data/weapons/en.json';
   import Ad from '../../components/Ad.svelte';
+  import { formatStat } from '../../helper';
 
   const rarityColor = {
     1: 'text-white',
@@ -94,6 +95,7 @@
   const bookId = character.material.book[0].id;
   const book = itemGroup[bookId];
   const materials = character.ascension[1].items;
+  const bossItem = character.material.boss;
 
   let chars = {};
   let constellationCount = -1;
@@ -253,13 +255,28 @@
         </div>
         <p class="text-gray-200 px-4 md:px-8">{data.description}</p>
         <div class="flex flex-col md:flex-row mt-4 space-y-4 md:space-y-0 md:space-x-4 px-4 md:px-8">
-          <div class="text-gray-200 rounded-xl border border-gray-200 border-opacity-25 p-4">
-            <p>{$t('characters.talentBook')}</p>
-            <div class="flex items-center mt-2">
-              <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
-                <img src="/images/items/{bookId}.png" alt={book.name} class="h-full max-w-full object-contain" />
+          <div class="text-gray-200 rounded-xl border border-gray-200 border-opacity-25 p-4 flex">
+            <div class="mr-4">
+              <p>{$t('characters.talentBook')}</p>
+              <div class="flex items-center mt-2">
+                <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
+                  <img src="/images/items/{bookId}.png" alt={book.name} class="h-full max-w-full object-contain" />
+                </div>
+                <p class="mb-1 font-semibold">{book.name}</p>
               </div>
-              <p class="mb-1 font-semibold">{book.name}</p>
+            </div>
+            <div>
+              <p>{$t('characters.bossItem')}</p>
+              <div class="flex items-center mt-2">
+                <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
+                  <img
+                    src="/images/items/{bossItem.id}.png"
+                    alt={bossItem.name}
+                    title={bossItem.name}
+                    class="h-full max-w-full object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <div class="text-gray-200 rounded-xl border border-gray-200 border-opacity-25 p-4">
@@ -454,10 +471,7 @@
                           {$t(`weapon.${weapons[weapon.id].secondary.name}`)}
                         </p>
                         <p class="text-gray-900 text-sm">
-                          {Math.round(
-                            weapons[weapon.id].secondary.stats[96] *
-                              (weapons[weapon.id].secondary.name === 'em' ? 1 : 100),
-                          )}{weapons[weapon.id].secondary.name === 'em' ? '' : '%'}
+                          {formatStat(weapons[weapon.id].secondary.stats[96], weapons[weapon.id].secondary.name)}
                         </p>
                       </div>
                     {/if}
@@ -572,6 +586,7 @@
     {$t('characters.source')}
   </a>
   <Ad class="ml-8 mt-4 mb-2" type="desktop" variant="lb" id="1" />
+  <Ad type="desktop" variant="lb" id="2" />
   <div class="flex flex-col mt-4 text-white px-4 md:px-8 max-w-screen-xl" bind:this={talentDiv}>
     <a href="/characters/{id}/#talents" class="font-black font-display text-2xl mt-4">
       {$t('characters.talents')}
@@ -588,6 +603,7 @@
   </div>
   <Ad class="ml-8 mt-4 mb-2" type="desktop" variant="lb" id="3" />
   <Ad class="flex justify-center mt-4 mb-2" type="mobile" variant="mpu" id="1" />
+  <Ad type="mobile" variant="lb" id="1" />
   <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-xl" id="constellations" bind:this={constellationDiv}>
     <a href="/characters/{id}/#constellations" class="font-black font-display text-2xl mt-4">
       {$t('characters.constellations')}

@@ -51,6 +51,8 @@
   import Icon from '../../components/Icon.svelte';
   import { onMount } from 'svelte';
   import { characters } from '../../data/characters';
+  import { formatStat } from '../../helper';
+  import Ad from '../../components/Ad.svelte';
 
   const rarity = {
     1: 'text-white',
@@ -107,6 +109,7 @@
           <p class="skill-description text-white">{@html weapon.skill.description}</p>
         </div>
       {/if}
+      <Ad type="mobile" variant="mpu" id="1" class="flex justify-center mt-4" />
       {#if recommendedCharacter.length > 0}
         <div class="mt-4 max-w-screen-lg">
           <h3 class="font-display font-bold text-2xl text-white">
@@ -134,7 +137,7 @@
         </div>
       {/if}
 
-      <div class="mt-4 block overflow-x-auto whitespace-no-wrap md:w-auto">
+      <div class="mt-4 flex overflow-x-auto whitespace-no-wrap md:w-auto">
         <div style="width: min-content;">
           <div class="table max-w-full rounded-xl border border-gray-200 border-opacity-25">
             <table class="text-gray-200 w-full">
@@ -163,7 +166,7 @@
                   <td class="text-center border-t border-gray-700 px-2">{Math.round(weapon.atk[index])}</td>
                   {#if weapon.secondary.stats}
                     <td class="text-center border-t border-gray-700 px-2">
-                      {Math.round(weapon.secondary.stats[index] * multiplier)}{suffix}
+                      {formatStat(weapon.secondary.stats[index], weapon.secondary.name)}
                     </td>
                   {/if}
                 </tr>
@@ -171,10 +174,15 @@
             </table>
           </div>
         </div>
+        <div class="hidden lg:block">
+          <Ad type="desktop" variant="mpu" id="1" class="ml-8" />
+        </div>
       </div>
     </div>
-    <img class="w-64 h-64 ml-4 max-w-full" src="/images/weapons/{id}.png" alt={weapon.name} />
+    <img class="h-64 w-auto ml-4 max-w-full" src="/images/weapons/{id}.png" alt={weapon.name} />
   </div>
+  <Ad type="desktop" variant="lb" id="2" />
+  <Ad type="mobile" variant="lb" id="1" />
 </div>
 
 <style>

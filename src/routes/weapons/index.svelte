@@ -9,6 +9,8 @@
   import { onMount } from 'svelte';
   import { locale, t } from 'svelte-i18n';
   import TableHeader from '../../components/Table/TableHeader.svelte';
+  import { formatStat } from '../../helper';
+  import Ad from '../../components/Ad.svelte';
 
   export let data;
   let weaponList = [];
@@ -42,9 +44,10 @@
         rarity: weapon.rarity,
         atk: weapon.atk[weapon.atk.length - 1].toFixed(0),
         secondary: weapon.secondary.name
-          ? `${$t(`weapon.${weapon.secondary.name}`)} ${(
-              weapon.secondary.stats[weapon.secondary.stats.length - 1] * (weapon.secondary.name === 'em' ? 1 : 100)
-            ).toFixed(0)}${weapon.secondary.name === 'em' ? '' : '%'}`
+          ? `${$t(`weapon.${weapon.secondary.name}`)} ${formatStat(
+              weapon.secondary.stats[weapon.secondary.stats.length - 1],
+              weapon.secondary.name,
+            )}`
           : '-',
       });
     }
@@ -112,7 +115,8 @@
   <p class="text-gray-400 px-4 md:px-8 font-medium pb-4" style="margin-top: -1rem;">
     ※ {$t('weapon.subtitle')}
   </p>
-  <div class="block overflow-x-auto whitespace-no-wrap pb-8">
+  <div class="block overflow-x-auto whitespace-no-wrap pb-8 relative">
+    <Ad type="desktop" variant="mpu" id="1" class="absolute top-0" style="right: 50px;" />
     <div class="px-4 md:px-8 table max-w-full">
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>
@@ -160,4 +164,6 @@
       </table>
     </div>
   </div>
+  <Ad type="desktop" variant="lb" id="2" />
+  <Ad type="mobile" variant="lb" id="1" />
 </div>
