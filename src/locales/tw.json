@@ -12,13 +12,14 @@
     "timeline": "活動日曆",
     "furnishing": "傢俱",
     "weapons": "武器",
+    "artifacts": "聖遺物",
     "settings": "設定",
-    "donate": "贊助",
-    "artifacts": "聖遺物"
+    "donate": "贊助"
   },
   "home": {
     "welcome": "歡迎來到 Paimon.moe! 👋",
     "message": "你最好的原神夥伴! 協助擬規劃素材與副本，追蹤你的遊戲進度與抽卡統計",
+    "visitor": "過去 7 天內有 {count} 位訪客",
     "banner": {
       "featured": [
         "可莉"
@@ -106,12 +107,20 @@
     "anemoDamageBonus": "風元素傷害加成",
     "physicalDamageBonus": "物理傷害加成",
     "geoDamageBonus": "岩元素傷害加成",
-    "sortBy": "排序方式..."
+    "sortBy": "排序方式...",
+    "talentBook": "天賦書",
+    "ascensionMaterial": "突破材料",
+    "talentStats": "天賦屬性",
+    "build": "配裝",
+    "source": "Genshin Helper Team 所提供的角色配裝",
+    "faq": "命之座數量是根據您的祈願歷史紀錄計算的。 因此，如果您的祈願歷史紀錄消失，或者您的角色是從商店或活動中取得，則數量可能會不準確！ 但您可以按角色名稱旁邊的鉛筆圖示來手動修改。"
   },
   "wish": {
     "title": "祈願統計",
     "autoImport": "自動匯入",
     "helpAndSetting": "說明 & 設定",
+    "helps": "說明",
+    "settings": "設定",
     "wishesWorth": "已抽原石",
     "lifetimePulls": "總抽卡次數",
     "guarantee": "保底上限 {pity}",
@@ -120,7 +129,7 @@
     "pity": "保底",
     "welcome": "歡迎來到 Paimon.moe 祈願統計! 建議使用自動匯入功能來上傳你的祈願記錄",
     "welcomeStart1": "想要使用, 點擊",
-  "welcomeStart2": "上面的按鈕即可",
+    "welcomeStart2": "上面的按鈕即可",
     "manual": "如果你想手動輸入資料, 可以在這啟用該功能:",
     "manualButton": "啟用手動輸入",
     "errorBanner": "卡池時間錯誤! 請在設定頁面修改你所屬的伺服器. 如果還是出錯, 請到 Discord 中意見回饋 😅",
@@ -152,6 +161,7 @@
       "invalidLink": "連結錯誤, 請重新檢查",
       "errorApi": "MiHoYo API 返回錯誤, 請稍後再試!",
       "timeout": "連接超時, 請等一段時間再嘗試",
+      "differentAccount": "這個祈願歷史紀錄是另一個帳號的，請先在設定選單中上分開您的帳號！",
       "invalidData": "返回的資料錯誤, 請稍後再試",
       "success": "匯入成功 😀!",
       "server": "選擇你的伺服器:",
@@ -245,6 +255,34 @@
         ]
       }
     },
+    "excel": {
+      "title": "Excel 匯入器",
+      "subtitle": "選擇您的 excel 來源：",
+      "default": "Paimon.moe 匯出",
+      "takagg": "TakaGG Gacha 匯出",
+      "notice": [
+        "此功能仍在測試中，請先前往設定中匯出到Excel進行備份！",
+        "相同時間戳和獎賞名稱的祈願不會變更 (因此不會覆蓋現有的祈願紀錄)",
+        "只會在開頭和結尾處添加祈願紀錄，不會在工作表中間插入內容",
+        "目前僅支援獎賞名稱為英文的 excel"
+      ],
+      "selectFile": {
+        "default": "把 Paimon.moe 匯出的 excel 檔案拖放到此處，或點擊此處選擇",
+        "takagg": "把 TakaGG gacha 匯出的 excel 檔案拖放到此處，或點擊此處選擇"
+      },
+      "processing": "處理中...",
+      "addedOn": "插入到：",
+      "beginning": "開始",
+      "end": "結束",
+      "total": "總計",
+      "saveNotice": "儲存匯入的祈願紀錄？",
+      "save": "儲存",
+      "success": "Excel 匯入成功 😀！",
+      "errorInvalidFile": "無效的 excel 檔案",
+      "errorReadExcel": "讀取 excel 檔案時錯誤！",
+      "errorExcelPaimon": "這不是從 paimon.moe 匯出的 excel",
+      "errorUnknownItem": "有個未知的獎賞名稱"
+    },
     "help": {
       "title": "祈願統計 說明 & 設定",
       "exportTitle": "匯出祈願記錄",
@@ -336,12 +374,19 @@
       "median": "5★ 中位數",
       "user": "總玩家數",
       "detail": "詳情"
-    }
+    },
+    "note": [
+      "祈願歷史紀錄無法自動更新，請重新匯入以更新歷史紀錄！",
+      "Paimon.moe 無法取得超過 6 個月的祈願歷史紀錄，因為它已在 miHoYo 伺服器上刪除，因此您的舊祈願可能不會顯示。",
+      "數據儲存在您的瀏覽器中，如果您清除瀏覽器快取數據將被刪除！ 在設定中啟用 Google Drive 同步以備份您的數據！"
+    ]
   },
   "calculator": {
     "titleWeapon": "武器計算器",
     "titleCharacter": "角色計算器",
     "titleResin": "數值計算器",
+    "titleFriendship": "好感度計算機",
+    "titleFate": "祈願價格計算機",
     "goto": "跳到 {where}",
     "howToUse": "使用說明",
     "guide": {
@@ -421,6 +466,30 @@
       "hours": "時",
       "minutes": "分",
       "seconds": "秒"
+    },
+    "friendship": {
+      "currentLevel": "目前好感度等級",
+      "currentExp": "目前經驗值 (拖曳進度條)",
+      "randomEventFarm": "您每天完成多少突發事件？",
+      "calculate": "計算",
+      "based": "基於冒險等階：{ar}",
+      "change": "(可在設定中更改)",
+      "result": "達到好感度等級 10，需完成所有每日委託且每天使用 180 樹脂。",
+      "resultSerenitea": "如果您也把角色放入塵歌壺 (最大洞天仙力)",
+      "resultDay": "{result} 天"
+    },
+    "fate": {
+      "currency": "選擇貨幣...",
+      "firstTime": "第一次",
+      "amount": "數量",
+      "genesis": "創世結晶",
+      "first": "首儲雙倍",
+      "total": "總計",
+      "price": "價格",
+      "totalGenesis": "創世結晶總計",
+      "totalPrice": "總價格",
+      "calculate": "計算 {currency}{value} 可獲得多少創世結晶",
+      "calculateFate": "計算多少錢才能獲得 {value}"
     }
   },
   "items": {
@@ -489,6 +558,7 @@
     "driveError": " Google 雲端硬碟API無法載入",
     "driveSignIn": "登錄 Google 雲端硬碟",
     "driveSignOut": "登出 Google 雲端硬碟",
+    "driveSignInErrorScope": "雲端登入失敗！ 請重新登入並檢查所需要的權限！",
     "synced": "已同步",
     "waiting": "等待中...",
     "syncing": "同步中...",
@@ -593,7 +663,13 @@
   },
   "achievement": {
     "title": "成就",
-    "of": "關於"
+    "of": "關於",
+    "sort": "優先顯示未達成",
+    "search": "搜尋成就",
+    "commissions": "委託",
+    "version": "版本",
+    "type": "類型",
+    "searchError": "找不到成就: {query}"
   },
   "furnishing": {
     "title": "傢俱",
@@ -654,7 +730,8 @@
     "ascensionMaterial": "突破材料",
     "asc": "突破",
     "lvl": "等級",
-    "baseAtk": "基礎攻擊"
+    "baseAtk": "基礎攻擊",
+    "recommendedCharacter": "推薦角色"
   },
   "artifact": {
     "title": "聖遺物列表",
@@ -664,6 +741,7 @@
     "bonus4": "四件效果",
     "domain": "秘境",
     "artifact": "聖遺物",
-    "setPiece": "{piece} 件效果"
+    "setPiece": "{piece} 件效果",
+    "recommendedCharacter": "{piece} 件套裝推薦角色"
   }
 }

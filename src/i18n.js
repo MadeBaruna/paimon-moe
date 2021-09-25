@@ -9,6 +9,9 @@ import zh from './locales/zh.json';
 import pt from './locales/pt.json';
 import tw from './locales/tw.json';
 import es from './locales/es.json';
+import de from './locales/de.json';
+import th from './locales/th.json';
+import vi from './locales/vi.json';
 
 const INIT_OPTIONS = {
   fallbackLocale: 'en',
@@ -27,7 +30,7 @@ $locale.subscribe((value) => {
   }
 });
 
-const supportedLanguage = ['en', 'id', 'ru', 'ko', 'fr', 'zh', 'pt', 'tw', 'es'];
+const supportedLanguage = ['en', 'id', 'ru', 'ko', 'fr', 'zh', 'pt', 'tw', 'es', 'de', 'th', 'vi'];
 addMessages('en', en);
 addMessages('id', id);
 addMessages('ru', ru);
@@ -37,6 +40,9 @@ addMessages('zh', zh);
 addMessages('pt', pt);
 addMessages('tw', tw);
 addMessages('es', es);
+addMessages('de', de);
+addMessages('th', th);
+addMessages('vi', vi);
 
 export function startClient() {
   let used = 'en';

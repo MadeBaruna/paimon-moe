@@ -1,0 +1,747 @@
+{
+  "sidebar": {
+    "home": "Trang Chủ",
+    "character": "Nhân Vật",
+    "wishCounter": "Lịch Sử Cầu Nguyện",
+    "calculator": "Công cụ tính",
+    "database": "Cơ sở Dữ liệu",
+    "items": "Nguyên Liệu",
+    "achievement": "Thành Tựu",
+    "reminder": "Nhắc Nhở",
+    "todoList": "Danh Sách Việc Cần Làm",
+    "timeline": "Mốc Thời Gian",
+    "furnishing": "Đồ Trang Trí",
+    "weapons": "Vũ Khí",
+    "artifacts": "Thánh Di Vật",
+    "settings": "Cài Đặt",
+    "donate": "Ủng hộ"
+  },
+  "home": {
+    "welcome": "Chào mừng nhà lữ hành đến với Paimon.moe! 👋",
+    "message": "Người đồng hành tuyệt vời của bạn! Giúp bạn lập kế hoạch để cày cuốc, bao gồm công cụ tính toán nguyên liệu cần đột phá, theo dõi tiến độ của những việc bạn cần làm và số lần cầu nguyện của bạn.",
+    "visitor": "{count} nhà lữ hành đã ghé thăm trong 7 ngày qua",
+    "banner": {
+      "featured": [
+        "Eula"
+      ],
+      "summoned": "Đã cầu nguyện",
+      "percentage": "từ {rarity}",
+      "avg": "Pity trung bình",
+      "subtitle": "Được tính toán từ dữ liệu của {user} người dùng của paimon.moe",
+      "detail": "Lượt Cầu Nguyện Toàn Cầu"
+    },
+    "wish": {
+      "message": "Hãy nhập lịch sử cầu nguyện của bạn để lưu trữ nó hơn 6 tháng! Paimon.moe cũng đếm pity và thống kê số lượt cầu nguyện của bạn với biểu đồ siêu đẹp 📊",
+      "latest": "Lần Cầu Nguyện Gần Đây Nhất",
+      "banner": "Banner",
+      "time": "Thời Gian",
+      "name": "Vật phẩm",
+      "pity": "Pity",
+      "detail": "Số Lần Cầu Nguyện"
+    },
+    "reminder": {
+      "message": "Bạn có thể bật thông báo 🔔 cho Máy Biến đổi Tham Số và Đăng nhập hằng ngày của Hoyolab ở đây! Ấn vào nút nhắc nhở bên dưới để bắt đầu!",
+      "detail": "Nhắc Nhở"
+    },
+    "event": {
+      "upcoming": "Những Sự Kiện Sắp Tới",
+      "current": "Những Sự Kiện Đang Diễn Ra",
+      "detail": "Timeline"
+    },
+    "discord": {
+      "online": "Thành Viên Trực Tuyến",
+      "message": "Hãy tham gia Discord của paimon.moe để nhận những thông báo về cập nhật mới nhất cũng như cùng nhau thảo luận và phản hồi cho paimon.moe.",
+      "join": "Tham gia Discord của chúng tôi"
+    },
+    "items": {
+      "title": "Nguyên Liệu của Hôm Nay",
+      "detail": "Nguyên Liệu",
+      "sunday": "Vào ngày chủ nhật có thể farm tất cả nguyên liệu 😁"
+    },
+    "calculator": {
+      "title": "🧮 Tính toán Đạo Cụ Bồi Dưỡng và Sách Thiên Phú! Những tính toán của bạn có thể thêm vào Danh sách cần làm, nó cũng sẽ cho bạn biết số nhựa cần để farm!",
+      "detail": "Công cụ tính"
+    },
+    "twitter": {
+      "title": "Hãy theo dõi Twitter của paimon.moe, ở đấy sẽ thỉnh thoảng đăng sneak peak những gì mà tôi đang phát triển và thông tinh mới nhất của paimon.moe!",
+      "detail": "Theo dõi trên Twitter"
+    },
+    "achievement": {
+      "title": "🏆 Xem và theo dõi tiến độ của thành tựu của bạn ở đây",
+      "detail": "Thành tựu"
+    },
+    "furnishing": {
+      "title": "Kiểm tra đồ trang trí bạn cần để hoàn thành một bộ. Bạn cũng có thể xem khối lượng của mỗi đồ trang trí.",
+      "detail": "Đồ Trang Trí"
+    }
+  },
+  "characters": {
+    "title": "Nhân Vật",
+    "subtitle": "Chỉ số nhân vật được lấy ở cấp 80 bậc đột phá 6. Bạn cũng có thể ấn vào 4 ô vuông để sắp xếp!",
+    "name": "Tên",
+    "element": "Nguyên tố",
+    "rarity": "Độ Hiếm",
+    "weapon": "Vũ khí",
+    "talents": "Thiên Phú",
+    "passiveTalents": "Thiên Phú Cố Định",
+    "constellations": "Cung Mệnh",
+    "const": "CM",
+    "asc": "ĐP",
+    "lvl": "LVL",
+    "hp": "HP",
+    "atk": "ATK",
+    "def": "DEF",
+    "hpPercent": "HP%",
+    "atkPercent": "ATK%",
+    "defPercent": "DEF%",
+    "critRate": "TL Bạo",
+    "critDamage": "ST Bạo",
+    "em": "Tinh Thông Nguyên Tố",
+    "er": "Hiệu Quả Nạp",
+    "healingBonus": "Tăng Trị Liệu",
+    "pyroDamageBonus": "Tăng ST NT Hỏa",
+    "hydroDamageBonus": "Tăng ST NT Thủy",
+    "dendroDamageBonus": "Tăng ST NT Thảo",
+    "electroDamageBonus": "Tăng ST NT Lôi",
+    "cryoDamageBonus": "Tăng ST NT Băng",
+    "anemoDamageBonus": "Tăng ST NT Phong",
+    "physicalDamageBonus": "Tăng ST Vật Lý",
+    "geoDamageBonus": "Tăng ST NT Nham",
+    "sortBy": "Sắp xếp theo...",
+    "talentBook": "Sách Thiên Phú",
+    "ascensionMaterial": "Nguyên Liệu Đột Phá",
+    "talentStats": "Chi Tiết Thiên Phú",
+    "build": "Build",
+    "source": "Build Nhân Vật từ cộng đồng bới Genshin Helper Team",
+    "faq": "Cung Mệnh được tính từ Lịch Sử Cầu Nguyện của bạn. Nếu lịch sử cầu nguyện của bạn hết hạn 6 tháng hoặc bạn mua cung mệnh nhân vật từ cửa hàng hoặc sự kiện, thông tin có thể sẽ sai sót! Nhưng bạn có thể tự chỉnh sửa bằng cánh ấn vào cây bút kế bên tên nhân vật."
+  },
+  "wish": {
+    "title": "Số Lần Cầu Nguyện",
+    "autoImport": "Tự Động Nhập",
+    "helpAndSetting": "Trợ giúp & Cài đặt",
+    "helps": "Trợ giúp",
+    "settings": "Cài đặt",
+    "wishesWorth": "Giá trị tất cả Cầu nguyện",
+    "lifetimePulls": "Tổng Số Lần Đã Cầu Nguyện",
+    "guarantee": "Chắc chắn nhận được ở lần thứ {pity}",
+    "name": "Vật Phẩm",
+    "time": "Thời Gian",
+    "pity": "Pity",
+    "welcome": "Chào mừng bạn đến với Paimon.moe Số Lần Cầu Nguyện! Chúng tôi khuyến khích bạn nhập thông tin cầu nguyện bằng Nhập Tự Động.",
+    "welcomeStart1": "Để bắt đầu, ấn",
+    "welcomeStart2": "nút ở bên trên",
+    "manual": "Nếu bạn muốn tự nhập dữ liệu, bạn có thể bật nó ở đây:",
+    "manualButton": "Bật Nhập Thủ Công",
+    "errorBanner": "Thời gian của Banner không trùng khớp! Hãy chỉnh server ở trang cài đặt. Vẫn không hoạt động à? Hãy để lại tin nhắn trên Discord 😅",
+    "globalWishTally": "Lượt Cầu Nguyện Toàn Cầu",
+    "pityTooltip": [
+      "Pity {rarity} hiện tại",
+      "{count} lần cầu nguyện nữa chắc chắn nhận được {rarity}"
+    ],
+    "import": {
+      "title": "Nhập Lịch Sử Cầu Nguyện",
+      "faqsButton": "CÂU HỎI THƯỜNG GẶP - NÊN ĐỌC",
+      "nonew": "Không Có Lượt Cầu Nguyện Mới",
+      "importNotice1": "Khi nhập, lượt cầu nguyện sẽ được thêm vào hoặc bị thay thế để phù hợp với dữ liệu đã có",
+      "importNotice2": "Nếu như không có dữ liệu được lưu trước, lượt cầu nguyện đầu tiên khi nhập dữ liệu sẽ được tính là pity 1",
+      "importNotice3": "Lưu ý, nếu bạn nhập dữ liệu từ tài khoản khác, hãy chắc chắn là bạn đã chia các tài khoản khác nhau ra trong trang cài đặt, nếu không dữ liệu sẽ bị trộn với nhau!",
+      "saveData": "Lưu dữ liệu cầu nguyện?",
+      "reCalculating": "Đang tính toán lại pity...",
+      "processing": "Đang xử lý",
+      "banner": "Banner",
+      "page": "Trang",
+      "parsing": "Đang phân tích...",
+      "save": "Lưu",
+      "cancel": "Hủy",
+      "cancelling": "Đang hủy...",
+      "importNewWishOnly": "Chỉ nhập dữ liệu cầu nguyện mới",
+      "importNewWishUncheck": "Hãy bỏ chọn khi bạn cần nhập lại tất cả dữ liệu lịch sử cầu nguyện",
+      "import": "Nhập",
+      "close": "Đóng",
+      "invalidLink": "Đường liên kết không hợp lệ, vui lòng kiểm tra và thử lại",
+      "errorApi": "Lỗi từ API của MiHoYo, vui lòng thử lại sau!",
+      "timeout": "Kết nối đã hết hạn, vui lòng chờ và thử lại sau",
+      "differentAccount": "Lịch sử cầu nguyện này thuộc về một tài khoản khác, hãy chuyển tài khoản ở trong phần Cài Đặt và thử lại!",
+      "invalidData": "Dữ liệu trả về bất thường, vui lòng thử lại sau",
+      "success": "Nhập dữ liệu thành công 😀!",
+      "server": "Hãy chọn server:",
+      "wishTallyCheck": "Chia sẽ thông tin cầu nguyện của bạn cho Lượt Cầu Nguyện Toàn Cầu",
+      "wishTally": "Chúng tôi đang thu thập những lượt cầu nguyện đến từ người dùng của chúng tôi! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp và tính toán pity trung bình của người dùng paimon.moe.",
+      "wishTallyCollected": [
+        "Những thông tin sẽ được thu thập:",
+        "và",
+        "pity từ lịch sử cầu nguyện của bạn"
+      ],
+      "faqs": {
+        "title": "Nhập Lịch Sử Cầu Nguyện FAQ",
+        "q1": "Nó hoạt động như thế nào?",
+        "a1": "Lịch sử cầu nguyện của Genshin Impact đơn giản là một trang web, bạn có thể truy cập nó bằng cách mở URL của trang web. Một key tạm thời sẽ được tạo ra khi bạn mở Lịch sử cầu nguyện hoặc trang phản hồi, và chúng tôi sẽ tự động dùng MiHoYo API để lấy lịch sử cầu nguyện của bạn.",
+        "q2": "Nó có an toàn không? Tôi có thể bị khóa tài khoản không?",
+        "a2": "Paimon.moe làm giống như cách ứng dụng Genshin Impact yêu cầu dữ liệu để lấy lịch sử cầu nguyện, Paimon.moe không thể chỉnh sửa dữ liệu và những gì đã lưu trữ trong game, và có thể nói là nó vô hại. Tuy nhiên, bạn nên lường trước và sẵn sàng chấp nhận rủi ro nếu có (Chúng mình cũng vẫn dùng trên tài khoản chính). Bạn vẫn có thể chọn nhập liệu thủ công 😀.",
+        "q3": "Thế paimon.moe có thể hack vào khoản của tôi không?",
+        "a3": [
+          "Paimon.moe chưa bao giờ lưu thông tin cá nhân như tài khoản của bạn (kể cả UID hoặc biệt danh), nên đáp án là không. Dự án này là một nguồn mở",
+          "; Chúng tôi không muốn danh tiếng bị ảnh hưởng xấu bởi việc hack vào tài khoản người chơi khác."
+        ],
+        "q4": "Này, tôi kiểm tra yêu cầu và một số thứ, nhưng tại sao nó lại yêu cầu đến tên miền của paimon.moe chứ không phải MiHoYo API?",
+        "a4": [
+          "Paimon.moe không thể yêu cầu trực tiếp từ MiHoYo API vì",
+          ", vì vậy yêu cầu được chuyển hướng đến một proxy CORS đơn giản để làm cho nó hoạt động. Bạn có thể xem code",
+          "tại đây"
+        ],
+        "q5": "Thế paimon.moe lưu trữ key tạm thời hay lịch sử cầu nguyện của tôi?",
+        "a5": [
+          "Paimon.moe sẽ không bao giờ lưu trữ keys, và dùng HTTPS để chuyển URL của bạn đến CORS proxy để làm CORS hoạt động. Paimon.moe sẽ lưu pity của vật phẩm 4* và 5*, và thông tin cầu nguyện vật phẩm 5* nếu bạn gửi lượt cầu nguyện của bạn cho lượt cầu nguyện toàn cầu (không có thông tin cá nhân nào được lưu! Hãy kiểm tra",
+          "Chính sách bảo mật",
+          "để có thêm thông tin). Bạn có thể bỏ chọn gửi thông tin đến lượt cầu nguyện toàn cầu để vô hiệu hóa gửi lượt cầu nguyện. Sau đó tất cả lịch sử cầu nguyện của bạn sẽ lưu trên thiết bị mà bạn đang dùng (hoặc Google Drive của bạn nếu bạn mở chức năng đồng bộ).",
+          "Nếu bạn không muốn chia sẻ link của mình, bạn có thể dùng mã lệnh dưới đây để nhập trực tiếp từ dữ liệu trên PC (chọn PC Local) "
+        ],
+        "q6": "Tại sao tôi đã làm như hướng dẫn nhưng lại gặp phải lỗi API?",
+        "a6": "Hãy chắc chắn rằng bạn đã copy đủ văn bản (ấn giữ và chọn Select All nêu bạn sử dụng điện thoại); bạn có thể bỏ qua một số văn bản cần thiết để nhập dữ liệ của paimon.moe hoạt động.",
+        "q7": "Paimon.moe không hiển thị tất cả lịch sử cầu nguyện của tôi!?",
+        "a7": "Lịch sử cầu nguyện trên 6 tháng sẽ biến mất hoàn toàn từ server của Mihoyo, nên nếu như bạn không sao lưu dữ liệu trước 6 tháng, nó đã biến mất hoàn toàn"
+      },
+      "guide": {
+        "video": "Video hướng dẫn",
+        "pc": [
+          "Mở Paimon Menu [ESC]",
+          "Ấn vào Phản Hồi",
+          "Đợi nó load và sẽ có một trang web được mở từ trình duyệt bạn đang dùng",
+          "Sao chép & dán đường liên kết vào hộp văn bản bên dưới",
+          "Hãy dán đường liên kết vào đây... https://webstatic..."
+        ],
+        "android": [
+          "Mở Cầu Nguyện (trong game)",
+          "Ấn vào Lịch Sử",
+          "Đợi nó load",
+          "Tắt Wi-Fi và dữ liệu di động",
+          "Sau đó aand tải lại ở góc trên cùng bên phải",
+          "Trang web sẽ hiển thị error và hiện cho bạn văn bản với font chữ màu đen",
+          "Ấn giữ văn bản và ấn chọn tất cả, sau đó sao chép văn bản đó (Đừng copy một phần của văn bản)",
+          "Mở Wifi và dữ liệu di động",
+          "Dán văn bản vào hộp văn bản bên dưới",
+          "Dán văn bán ở đây... Webpage not available..."
+        ],
+        "ios": [
+          "Mở Paimon Menu",
+          "Ấn Phản Hồi",
+          "Đợi nó load và sẽ có trang phản hồi mở ra",
+          "Ấn Các vấn đề trong game",
+          "Chọn Chế Độ Nhiều Người Chơi",
+          "Sẽ có một đường liên kết ở dưới cùng của câu trả lời; ấn vào nó",
+          "Sẽ có một trình duyệt được mở. Sao chép và dán đường liên kết vào bên dưới",
+          "Hãy dán đường liên kết vào đây... https://genshin.mihoyo..."
+        ],
+        "ps": [
+          "Bạn chỉ có thể sử dụng paimon.moe để nhập dữ liệu khi bạn có thư trong game cùng với mã QR để mở một sự kiện trên web",
+          "Mở Genshin Impact trên PlayStation của bạn",
+          "Mở mail sự kiện có mã QR",
+          "Quét mã QR bằng điện thoại của bạn",
+          "Sao chép đường link, và dán vào bên dưới",
+          "Dán đường link ở đây..."
+        ],
+        "pclocal": [
+          "Nếu bạn cảm thấy không thoải mái khi nhập link, bạn có thể dùng tính năng này để lấy lịch sử cầu nguyện trực tiếp từ máy tính. Dòng lệnh dưới đây sẽ truy cập file log trên máy bạn để lấy link lịch sử cầu nguyện.",
+          "Bấm Start rồi gõ Powershell trong thanh tìm kiếm",
+          "Mở Windows Powershell rồi nhập mã lệnh dưới đây",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
+          "Bạn có thể xem script ở đây",
+          "ở đây",
+          "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
+          "Ấn enter để chạy script, sau đó làm theo hướng dẫn tại đây",
+          "Sau đó, dán kết quá của script ở phần nhập bên dưới",
+          "Dán kết quả ở đây...",
+          "Tính năng này vẫn đang trong giai đoạn beta, hãy sao lưu một bản sao trước, bằng cách vào Trợ giúp & Cài đặt sau đó ấn Xuất ra Excel."
+        ]
+      }
+    },
+    "excel": {
+      "title": "Nhập Excel",
+      "subtitle": "Hãy chọn nguồn excel của bạn đến từ:",
+      "default": "Paimon.moe Export",
+      "takagg": "TakaGG Gacha Export",
+      "notice": [
+        "Tính năng này vẫn đang trong giai đoạn BETA, hãy sao lưu một bản sao trước, bằng cách vào phần Cài đặt sau đó ấn Xuất ra Excel!",
+        "Cầu nguyện của cùng mốc thời gian và vật phẩm sẽ KHÔNG bị đụng đến (nên những cầu nguyện hiện có sẽ không bị thay thế)",
+        "Chỉ thêm cầu nguyện váo trước, có nghĩa là sẽ không có gì được chèn vào ở giữa danh sách",
+        "Hiện tại chỉ hỗ trợ excel có vật phẩm tên TIẾNG ANH"
+      ],
+      "selectFile": {
+        "default": "Kéo & thả Paimon.moe excel file ở đây, hoặc ấn vào đây để chọn",
+        "takagg": "Kéo & thả TakaGG gacha export excel file ở đây, hoặc ấn vào đây để chọn"
+      },
+      "processing": "Đang xử lý...",
+      "addedOn": "Chèn vào ở:",
+      "beginning": "Đoạn đầu",
+      "end": "Đoạn Cuối",
+      "total": "Tổng",
+      "saveNotice": "Lưu cầu nguyện đã được nhập vào?",
+      "save": "Lưu",
+      "success": "Nhập dữ liệu Excel hoàn tất 😀!",
+      "errorInvalidFile": "File Excel không hợp lệ",
+      "errorReadExcel": "Lỗi khi đọc file excel!",
+      "errorExcelPaimon": "Đây không phải excel từ paimon.moe export",
+      "errorUnknownItem": "Tồn tại tên vật phẩm không rõ"
+    },
+    "help": {
+      "title": "Số Lần Cầu Nguyện Hỗ Trợ & Cài Đặt",
+      "exportTitle": "Xuất & Nhập Lịch Sử Cầu Nguyện",
+      "exportMessage": "Bạn có thể xuất lịch sử cầu nguyenj thành file excel ở đây. Bạn cũng có thể nhập file excel đã xuất từ paimon.moe hoặc TakaGG Gacha Export.",
+      "export": "Xuất sang Excel",
+      "exporting": "Đang xuất...",
+      "import": "Nhập từ Excel",
+      "exportFinish": "Xuất hoàn tất, vui lòng đợi trình duyệt của bạn tải xuống file!",
+      "wishTallyTitle": "Gửi Thông Tin Cầu Nguyện",
+      "wishTally": "Chúng tôi đang thu thập những lượt cầu nguyện đến từ người dùng của chúng tôi! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp và tính toán pity trung bình của người dùng paimon.moe.",
+      "wishTallyCollected": [
+        "Những thông tin sẽ được thu thập:",
+        "và",
+        "pity từ lịch sử cầu nguyện của bạn"
+      ],
+      "wishTallySubmit": "Gửi Thông Tin Cầu Nguyện",
+      "wishTallyThankyou": "Cảm ơn sự đóng góp của bạn!",
+      "manualTitle": "Cài Đặt Nhập Dữ Liệu Thủ Công",
+      "enableManual": "Bật Nhập Thủ Công",
+      "notice": "Chúng tôi không khuyến khích sử dụng Tự Động Nhập và nhập thủ công chung với nhau, vì chúng tôi cần kiểm tra thêm về việc này!",
+      "consider": "Bạn hãy cân nhắc dùng Tự Động Nhập trước. Truy cập nó bằng cách ấn vào nút kế bên nút mà bạn đã ấn để mở chỗ này.",
+      "howto": {
+        "title": "Cách sử dụng Nhập Thủ Công",
+        "subtitle": "Sau khi 1x Cầu Nguyện:",
+        "pressWhenYouGet": "Ấn {button} khi bạn nhận {rarity}★",
+        "p1": "Sẽ tự động thêm vào tổng số cầu nguyện, 5★, và 4★ pity",
+        "p2": [
+          "Khi",
+          "pity đến 10, nó sẽ tự động reset về 0"
+        ],
+        "p3": [
+          "Khi",
+          "pity đến 90, nó sẽ tự động reset về 0"
+        ],
+        "p4": [
+          "Sau 10x Cầu Nguyện, ấn",
+          "hãy nhớ rằng đếm pity có thể sẽ không chính xác, vì không có cách nào để biết khi nào vật phẩm sẽ xuất hiện (có thể bạn sẽ nhận được nó ở lượt đầu tiên hoặc có thể ở lượt thứ 10). Để chắc chắn đếm pity chính xác, bạn phải kiểm tra lịch sử và thêm từng cái một như lúc bạn cầu nguyện x1."
+        ],
+        "p5": [
+          "Bạn cũng có thể ấn",
+          "nút để edit giá trí thủ công!"
+        ],
+        "p6": [
+          "Ấn vào mũi tên ở dưới để xem thông tin chi tiết lượt cầu nguyện. Sẽ có một popup hiện ra khi bạn nhận được",
+          "hoặc",
+          "Bạn cũng có thể thêm hoặc chỉnh sử bảng này thủ công."
+        ]
+      }
+    },
+    "types": {
+      "beginners": "Cầu Nguyện Tân Thủ",
+      "standard": "Cầu Nguyện Thường",
+      "character-event": "Cầu Nguyện Nhân Vật",
+      "weapon-event": "Cầu Nguyện Vũ Khí"
+    },
+    "detail": {
+      "weapon": "Vũ Khí",
+      "character": "Nhân vật",
+      "time": "Thời Gian",
+      "pity": "Pity",
+      "name": "Vật phẩm",
+      "type": "Loại",
+      "banner": "Banner",
+      "roll": "#Lượt",
+      "totalThisBanner": "Tổng số lần cầu nguyện của banner",
+      "worth": "Giá trí",
+      "loading": "Loading... (Nếu bị kẹt, hãy đổi server ở cài đặt)",
+      "guaranteed": "5★ chắc chắn sẽ nhận được nhân vật hoặc vũ khí được rate-up",
+      "unknown_3_star": "Không rõ"
+    },
+    "tally": {
+      "title": "Lượt Cầu Nguyện",
+      "subtitle": "Pity trung bình toàn cầu từ người dùng paimon.moe",
+      "update": "Cập nhật",
+      "summoned": "Đã cầu nguyện",
+      "wonFiftyFifty": "thắng 50:50",
+      "fromFiveStar": "từ tất cả 5★",
+      "fromFourStar": "từ tất cả 4★",
+      "fromFourStarFeatured": "từ 4★ được rate-up",
+      "show": "Hiển thị",
+      "name": "Vật phẩm",
+      "total": "Tổng",
+      "wishTotal": "Tổng lượt cầu nguyện",
+      "worth": "Giá trí",
+      "weapon": "Vũ Khí",
+      "character": "Nhân Vật",
+      "error": "Dữ liệu chưa tồn tại 😞",
+      "pity": "Pity",
+      "median": "Trung vị 5★",
+      "user": "Tổng số người dùng",
+      "detail": "Chi tiết"
+    },
+    "note": [
+      "Lịch sử cầu nguyên chưa được cập nhật tự động, vui lòng nhập lại để cập nhật lịch sử của bạn!",
+      "Paimon.moe không thể truy cập lịch sử cầu nguyện lớn hơn 6 tháng, vì nó đã bị xóa khỏi server của MiHoYo, nên lượt cầu nguyện cũ của bạn có thể sẽ không hiển thị.",
+      "Dữ liệu đã được lưu trên trình duyệt của bạn, nên nó sẽ bị xóa nếu bạn xóa cache của trình duyệt! Hãy bật Google Drive sync trong setting để sao lưu dữ liệu của bạn!"
+    ]
+  },
+  "calculator": {
+    "titleWeapon": "Công Cụ Tính Cho Vũ Khí",
+    "titleCharacter": "Công Cụ Tính Cho Nhân Vật",
+    "titleResin": "Công Cụ Tính Số Nhựa",
+    "titleFriendship": "Công cụ tính Exp Yêu Thích",
+    "titleFate": "Tính giá tiền của Mối Duyên",
+    "goto": "Đi đến {where}",
+    "howToUse": "Hướng dẫn sử dụng",
+    "guide": {
+      "clickToMaximize": "Ấn vào hình ảnh để phóng to",
+      "howToWeapon": "Cách sử dụng Công cụ tính cho Vũ Khí",
+      "howToCharacter": "Cách sử dụng Công cụ tính cho Nhân Vật"
+    },
+    "weapon": {
+      "calculateAscension": "Tính Nguyên Liệu Đột Phá?",
+      "selectRarity": "Chọn độ hiếm của vũ khí",
+      "selectWeapon": "Chọn vũ khí",
+      "current": "Cấp Vũ Khí, EXP, & Đột Phá Hiện tại",
+      "inputCurrentLevel": "Nhập cấp vũ khí hiện tại...",
+      "inputCurrentExp": "Nhập EXP vũ khí hiện tại...",
+      "intended": "Cấp & Đột Phá Vũ Khí Mong Muốn",
+      "inputIntendedLevel": "Nhập cấp độ vũ khí mong muốn...",
+      "resource": "Tài nguyên sẽ dùng",
+      "calculate": "Tính toán",
+      "unknownInformation": "Có một số thông tinh chưa rõ",
+      "ascensionLevel": "Cấp độ đột phá",
+      "mora": "Mora (Ước tính ±40)",
+      "expWasted": "EXP dư",
+      "addToTodo": "Thêm vào Danh Sách Việc Cần Làm",
+      "addedToTodo": "Đã thêm vào Danh Sách Việc Cần Làm"
+    },
+    "character": {
+      "calculateAscension": "Tính Nguyên Liệu Đột Phá?",
+      "selectCharacter": "Chọn nhân vật",
+      "current": "Cấp, EXP, & Đột Phá hiện tại của nhân vật",
+      "inputCurrentLevel": "Nhập cấp nhân vật hiện tại...",
+      "inputCurrentExp": "Nhập EXP nhân vật hiện tại...",
+      "intended": "Cấp & Đột Phá Nhân Vật Mong Muốn",
+      "inputIntendedLevel": "Nhập cấp nhân vật mong muốn...",
+      "resource": "Tài nguyên sẽ dùng",
+      "calculateTalent": "Tính Nguyên Liệu cho Thiên Phú?",
+      "inputTalentLevel": "Nhập cấp độ hiện tại của thiên phú 1, 2, & 3",
+      "inputTalentNotice": "Nếu như nó có màu xanh, trừ đi 3",
+      "inputTalent": [
+        "Cấp thiên phú 1",
+        "Cấp thiên phú 2",
+        "Cấp thiên phú 3"
+      ],
+      "talentToLevel": "đến cấp",
+      "calculate": "Tính toán",
+      "unknownInformation": "Có một số thông tinh chưa rõ",
+      "ascensionLevel": "Cấp độ đột phá",
+      "mora": "Mora (Ước tính ±40)",
+      "expWasted": "EXP dư",
+      "addToTodo": "Thêm vào Danh Sách Việc Cần Làm",
+      "addedToTodo": "Đã thêm vào Danh Sách Việc Cần Làm",
+      "talent": [
+        "Đành thường",
+        "Kỹ Năng Nguyên Tố",
+        "Kỹ Năng Nộ"
+      ]
+    },
+    "expTable": {
+      "level": "Cấp độ",
+      "items": "Nguyên Liệu",
+      "wasted": "EXP dư",
+      "mora": "Tốn Mora"
+    },
+    "resinTable": {
+      "quantity": "Số lượng",
+      "time": "Thời gian cần chờ"
+    },
+    "resin": {
+      "currentResin": "Số nhựa hiện tại",
+      "desiredResin": "Số nhựa mong muốn",
+      "or": "hoặc",
+      "inputCurrentResin": "Nhập nhựa hiện tại...",
+      "inputDesireResin": "Nhập số nhựa bạn muốn...",
+      "timeFormat": "vi",
+      "calculate": "Tính toán",
+      "currentTime": "Thời gian hiện tại",
+      "fullTime": "Sẽ hồi đủ vào lúc",
+      "hours": "giờ",
+      "minutes": "phút",
+      "seconds": "giây"
+    },
+    "friendship": {
+      "currentLevel": "Exp yêu thích hiện tại",
+      "currentExp": "Thanh Exp hiện tại (Kéo thanh bên dưới)",
+      "randomEventFarm": "Bạn cày bao nhiêu sự kiện ngẫu nhiên mỗi ngày?",
+      "calculate": "Tính toán",
+      "based": "Dựa theo HMH:{ar}",
+      "change": "(thay đổi trong cài đặt)",
+      "result": "Để đạt độ yêu thích đạt 10, nếu bạn hoàn thành ủy thác và 180 nhựa mỗi ngày",
+      "resultSerenitea": "Nếu bạn để nhân vật vào Ấm Trần Ca (Tiên Lực Động Tiên Đạt Tối Đa)",
+      "resultDay": "{result} Days"
+    },
+    "fate": {
+      "currency": "Chọn tiền tệ...",
+      "firstTime": "Lần Đầu",
+      "amount": "Số lượng",
+      "genesis": "Đá Sáng Thể",
+      "first": "Bonus2x",
+      "total": "Tổng",
+      "price": "Giá",
+      "totalGenesis": "Tổng Đá Sáng Thể",
+      "totalPrice": "Tổng giá",
+      "calculate": "Tính bao nhiêu Đá Sáng Thể bạn có thể nhận với {currency}{value}",
+      "calculateFate": "Tính bao nhiêu tiền bạn cần cho {value}"
+    }
+  },
+  "items": {
+    "title": "Danh Sách Nguyên Liệu",
+    "subtitle": "Ấn vào hình ảnh nguyên liệu để thêm vào danh sách việc cần làm",
+    "searchCharacter": "Tìm nhân vật",
+    "searchWeapon": "Tìm vũ khí",
+    "day": "Ngày",
+    "material": "Nguyên liệu",
+    "characterWeapons": "Nhân Vật & Vũ Khí",
+    "add": {
+      "rarity": "Chọn Độ Hiếm",
+      "amount": "Số lượng",
+      "inputAmount": "Nhập số lượng...",
+      "cancel": "Hủy",
+      "add": "Thêm vào Danh Sách Việc Cần Làm"
+    }
+  },
+  "days": {
+    "Sunday": "Chủ nhật",
+    "Monday": "Thứ hai",
+    "Tuesday": "Thứ Ba",
+    "Wednesday": "Thứ tư",
+    "Thursday": "Thứ năm",
+    "Friday": "Thứ sáu",
+    "Saturday": "Thứ bảy"
+  },
+  "todo": {
+    "title": "Danh Sách Việc Cần Làm",
+    "summary": "Tổng hợp",
+    "empty": [
+      "Không có gì để làm cả 😀",
+      "Thêm việc cần làm vào từ trang Nguyên Liệu hoặc từ Công Cụ Tính!"
+    ],
+    "farmableToday": "Nguyên Liệu của Hôm Nay",
+    "resin": "Nhựa cần",
+    "based": "Dựa theo HMH:{ar} và Cấp TG:{wl}",
+    "change": "(thay đổi trong cài đặt)",
+    "approximation": "Tỷ lệ rơi được ước lượng bởi",
+    "delete": {
+      "title": "Xóa việc cần làm này?",
+      "cancel": "Hủy",
+      "delete": "Xóa"
+    }
+  },
+  "timeline": {
+    "title": "Timeline",
+    "localTime": "Hiển thị thời gian địa phương",
+    "starting": "Bắt đầu trong",
+    "ending": "Kết thúc lúc",
+    "live": "Đang trực tiếp!",
+    "finished": "Đã hoàn thành"
+  },
+  "settings": {
+    "version": "Data Version:",
+    "multiple": "Có nhiều tài khoản? Chọn tài khoản ở đây để chia dữ liệu Cầu Nguyện và Những Việc Cần Làm",
+    "selectAccount": "Chọn tài khoản của bạn",
+    "reset": "Thiết lập lại",
+    "delete": "Xóa",
+    "add": "Thêm vào",
+    "server": "Hãy chọn server:",
+    "drive": [
+      "Paimon.moe dùng Thư mục Dữ liệu Ứng dụng ở Google Drive của bạn để lưu và đồng bộ Lịch sử cầu nguyện và Danh Sách việc cần làm của bạn.",
+      "Paimon.moe chỉ có thể đọc và viết những files mà trang web này đã tạo."
+    ],
+    "driveError": "Google Drive API không thể tải được",
+    "driveSignIn": "Đăng nhập vào Google Drive",
+    "driveSignOut": "Đăng xuất khỏi Google Drive",
+    "driveSignInErrorScope": "Đăng Nhập Drive thất bại! Vui lòng đăng nhập lại và kiểm tra những quyền cần thiết!",
+    "synced": "Đã đồng bộ",
+    "waiting": "Đang chờ...",
+    "syncing": "Đang đồng bộ...",
+    "lastSync": "Lần đồng bộ gần nhất:",
+    "feedback": "Nếu bạn tìm thấy bất kì lỗi, dữ liệu sai, hoặc có phản hồi nào khác, vui lòng để lại lời nhắn ở",
+    "or": "hoặc",
+    "thanks": "Cảm ơn bạn 😁!",
+    "modal": {
+      "notice": "Tất cả Việc Cần Làm và Lịch Sử Cầu Nguyện sẽ bị xóa",
+      "backup": "Bạn có thể sao lưu lịch sử cầu nguyện bằng cách xuất nó ra file excel!",
+      "cancel": "Hủy",
+      "delete": "Xóa",
+      "reset": "Thiết lập lại"
+    }
+  },
+  "privacypolicy": {
+    "title": "Chính sách bảo mật",
+    "subtitle": "Paimon.moe thu thập những gì và dùng để làm gì",
+    "collect": [
+      {
+        "title": "Hãy ghé thăm url tại paimon.moe, liên kết giới thiệu, trình duyệt, hệ điều hành, loại thiết bị, quốc gia của người dùng truy cập",
+        "content": [
+          "Paimon.moe dùng",
+          "plausible.io",
+          "(một phần mềm phân tích quyên riêng tư một cách an toàn) để chúng tôi có thể thấy bao nhiêu người sử dụng tính năng nào, để chúng tôi có thể ưu tiên cải thiện tính năng đó."
+        ]
+      },
+      {
+        "title": "Thông báo lỗi và ngoại lệ từ website",
+        "content": [
+          "Paimon.moe sẽ gửi lỗi và ngoại lệ từ trang web đến",
+          "sentry.io",
+          "để chúng tôi có thể theo dõi nguyên nhân khiến lỗi xảy ra và sửa lỗi."
+        ]
+      },
+      {
+        "title": "Pity Cầu Nguyện",
+        "content": [
+          "Paimon.moe sẽ lưu số pity 4*, số pity 5*, và thông tin cầu nguyện 5* (thời gian cầu nguyện, tên vật phẩm, pity) nếu bạn đồng ý 'Chia sẽ thông tin cầu nguyện của bạn cho Lượt Cầu Nguyện Toàn Cầu' ở Tự Động Nhập Cầu Nguyện hoặc Nhập Cầu Nguyện Thủ Công ở Trợ Giúp & Cài Đặt. Paimon.moe sẽ tổng hợp dữ liệu và dùng để thống kê pity trung bình của mỗi banner của người dừng paimon.moe. Bạn có thể kiểm tra ở đây",
+          "lượt Cầu Nguyện"
+        ]
+      }
+    ],
+    "subtitleNotCollect": "Những thứ mà paimon.moe KHÔNG thu thập",
+    "notCollect": [
+      "Paimon.moe không bao giờ lưu bất kì mật khẩu, uid, tài khoản, email, key tạm thời, hoặc url phản hồi. Nếu bạn quan tâm, dự án này là một nguồn mở và bạn có thể kiếm tra mã nguồn ở",
+      "paimon-moe-api Github",
+      "và",
+      "paimon-moe Github"
+    ]
+  },
+  "sync": {
+    "message": "Dữ liệu cục bộ của bạn đang xung đột với dữ liệu được lưu tại Google Drive!",
+    "googleDriveData": "Dữ liệu Google Drive",
+    "localData": "Dữ liệu cục bộ của trình duyệt",
+    "older": "CŨ",
+    "newer": "MỚI",
+    "useGoogleDriveData": "Dùng dữ liệu từ Google Drive",
+    "useLocalData": "Dùng dữ liệu cục bộ của trình duyệt",
+    "download": "Tải xuống cả hai dữ liệu",
+    "lastModified": "Sửa đổi lần cuối",
+    "or": "HOẶC"
+  },
+  "footer": {
+    "affliate": "Paimon.moe không liên kết với miHoYo.",
+    "copyright": "Genshin Impact, nội dung và dữ liệu là thương hiệu và bản quyển thuộc miHoYo.",
+    "discord": "Tham gia Discord của chúng tôi",
+    "community": "Liên kết Cộng đồng",
+    "official": "Liên Kết Chính Thức"
+  },
+  "donate": {
+    "message": [
+      "Cảm ơn bạn! Mong bản cảm thấy paimon.moe có ích.",
+      "Tôi tạo ra trang web vì niểm vui vào những lúc tôi rãnh. Đương nhiên tôi sẽ thêm nhiều tính năng và cập nhật dữ liệu mỗi update, vì tôi thích khám phá Genshin Impact.",
+      "Nếu bạn muốn donate, thì số tiền đó chắc chắn sẽ giúp để cải thiện trang web và là nguồn động lực của tôi để thêm nhiều thứ cho Paimon.moe! Cảm ơn bạn rất nhiều, hy vọng bạn sẽ thiết paimon.moe của tôi!",
+      "Nếu như bạn thích coding, bạn có thể đống góp dự án tại"
+    ],
+    "kofi": "Hỗ trợ tôi trên Ko-fi",
+    "trakteer": "Hỗ trợ tôi trên Trakteer",
+    "crypto": "Hỗ trợ tôi trên Crypto"
+  },
+  "reminder": {
+    "notSupported": "Trình duyệt của bạn không hỗ trợ thông báo, hãy thử trình duyệt khác!",
+    "blocked": "Thông báo đã bị chặn, tính năng thông báo của nhắc nhở sẽ không hoạt động! Vui lồng bật thông báo ở trình duyệt của bạn.",
+    "desktop": "Trình duyệt máy tính không thể nhận thông báo nếu như trình duyệt không được bật!",
+    "early": "Thông báo có thể sẽ báo sớm hơn (tầm 1-10 phút) vì do cách chúng tôi gửi thông báo nó thế",
+    "allowNotification": "Vui lòng đồng ý thông báo khi yêu cầu hiện lên!",
+    "transformer": "Nhắc nhở cho Máy Biến Đổi Tham Số",
+    "last": "Nhập thời gian lần cuối bạn sử dụng Máy Biến Đổi Tham Số",
+    "lastHoyolab": "Nhập thời gian bạn muốn được nhắc cho đăng nhập hằng ngày của Hoyolab",
+    "every": "Mỗi ngày lúc",
+    "countdown": "Nhập thời gian đếm ngược của Máy Biến Đổi Tham số (Nếu bạn không nhớ thời gian chính xác, hãy ước chừng)",
+    "useLast": "Dùng thời gian đã sử dụng lần cuối",
+    "useCountdown": "Dùng thời gian đếm ngược",
+    "set": "Đặt lời nhắc",
+    "checking": "Kiểm tra lời nhắc đã lưu...",
+    "errorSelect": "Vui lòng kiểm tra ngày và giờ!",
+    "errorSaving": "Trong khi lưu lời nhắc đã xảy ra lỗi 🙁",
+    "current": "Lời nhắc hiện tại",
+    "hoyolab": "Lời nhắc cho đăng nhập hằng ngày tại Hoyolab",
+    "comingsoon": "Sắp ra mắt!"
+  },
+  "achievement": {
+    "title": "Thành Tựu",
+    "of": "của",
+    "sort": "Hiện thị thành tựu chưa có trước",
+    "search": "Tìm thành tựu",
+    "commissions": "ủy thác",
+    "version": "Phiên bản",
+    "type": "Loại",
+    "searchError": "Không thể tìm thành tựu: {query}"
+  },
+  "furnishing": {
+    "title": "Đồ Trang Trí",
+    "name": "Tên vật phẩm",
+    "energy": "Tiên Lực",
+    "load": "Khối Lượng",
+    "ratio": "Tỉ lệ",
+    "using": "Số lượng",
+    "interior": "Trong Nhà",
+    "exterior": "Sân Vườn",
+    "info": [
+      "Biểu thị giới hạn khối lượng của khu vực. Mỗi đồ trang trí đều có khối lượng ẩn có thể xem dưới đây.",
+      "(Khối lượng tối đa chưa được xác nhận!)"
+    ],
+    "hall": "Đại Sảnh",
+    "room": "Phòng {number}",
+    "exteriorNum": "Khu vực {number}",
+    "corridor": "Hành lang",
+    "inventoryButton": "Túi Đồ",
+    "listButton": "Danh sách",
+    "inventory": {
+      "title": "Túi Đồ Trang Trí",
+      "subtitle": "Một số mục đặt biệt như tường không được hiển thị",
+      "all": "Tất cả",
+      "openSets": "Mở Bộ trang trí"
+    },
+    "sets": {
+      "title": "Bộ trang trí",
+      "subtitle": "Nhấn vào icon của đồ trang trí để xem thêm chi tiết, và bạn cũng có thế nhấn vào icon nhân vật để đánh dấu! Mở Túi Đồ bên trên để điền số đồ trang trí bạn hiện có.",
+      "setPlaced": "Đánh dấu đã đặt",
+      "setUnplaced": "Đánh dấu chưa đặt",
+      "inInventory": "Trong túi đồ",
+      "available": "Có sẵn",
+      "used": "Đang được dùng trong bộ khác"
+    }
+  },
+  "weapon": {
+    "title": "Danh sách vũ khí",
+    "subtitle": "Thuộc tính vũ khí khi đạt cấp cuối",
+    "name": "Tên vũ khí",
+    "type": "Loại",
+    "rarity": "Độ Hiếm",
+    "atk": "ATK",
+    "secondary": "Dòng Phụ",
+    "critRate": "TL Bạo",
+    "critDamage": "ST Bạo",
+    "em": "Tinh Thông Nguyên Tố",
+    "er": "Hiệu Quả Nạp",
+    "atkPercent": "ATK",
+    "hpPercent": "HP",
+    "defPercent": "DEF",
+    "physicalDamage": "Tăng ST Vật Lý",
+    "bow": "Cung",
+    "polearm": "Vũ khí cán dài",
+    "sword": "Kiếm",
+    "catalyst": "Pháp Khí",
+    "claymore": "Trọng Kiếm",
+    "ascensionMaterial": "Nguyên Liệu Đột Phá",
+    "asc": "ĐP",
+    "lvl": "Cấp",
+    "baseAtk": "Tấn công cơ bản",
+    "recommendedCharacter": "Đề Xuất Nhân Vật"
+  },
+  "artifact": {
+    "title": "Danh Sách Thánh Di Vật",
+    "name": "Tên",
+    "maxRarity": "★Tối Đa",
+    "bonus2": "Hiệu quả bộ 2 món",
+    "bonus4": "Hiệu quả bộ 4 món",
+    "domain": "Bí Cảnh",
+    "artifact": "Thánh Di Vật",
+    "setPiece": "Hiệu quả bộ {piece} món",
+    "recommendedCharacter": "Những nhân vật dưới đây nên dùng bộ {piece} món"
+  }
+}

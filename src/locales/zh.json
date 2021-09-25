@@ -19,6 +19,7 @@
   "home": {
     "welcome": "欢迎来到 Paimon.moe! 👋",
     "message": "你最好的原神伙伴! 帮助你规划材料消耗与刷本, 追踪你的游戏进度与抽卡结果.",
+    "visitor": "过去七天有 {count} 位访客",
     "banner": {
       "featured": [
         "可莉"
@@ -106,12 +107,20 @@
     "anemoDamageBonus": "风元素伤害加成",
     "physicalDamageBonus": "物理伤害加成",
     "geoDamageBonus": "岩元素伤害加成",
-    "sortBy": "排序方式..."
+    "sortBy": "排序方式...",
+    "talentBook": "天赋书",
+    "ascensionMaterial": "突破材料",
+    "talentStats": "角色天赋",
+    "build": "角色配装",
+    "source": "Genshin Helper Team 提供的角色配装",
+    "faq": "命座值是根据抽卡历史记录得出的。如果你之前的抽卡记录丢失，或者你是从商店兑换角色，又或者你的角色是活动赠送，命座显示值会有出入。 但是你可以根据你的账号情况，点击角色头像旁的铅笔图标，手动修改命座值。"
   },
   "wish": {
     "title": "祈愿统计",
     "autoImport": "自动导入",
     "helpAndSetting": "帮助 & 设置",
+    "helps": "帮助",
+    "settings": "设置",
     "wishesWorth": "已抽原石",
     "lifetimePulls": "总抽卡次数",
     "guarantee": "保底上限 {pity}",
@@ -152,6 +161,7 @@
       "invalidLink": "链接错误, 请重新检查",
       "errorApi": "MiHoYo API 返回错误, 请稍后再试!",
       "timeout": "连接超时, 请等一段时间再尝试",
+      "differentAccount": "这份祈愿记录属于其他账户，请先在设置菜单中分离并选择账户!",
       "invalidData": "返回的数据错误, 请稍后再试",
       "success": "导入成功 😀!",
       "server": "选择你的服务器:",
@@ -245,6 +255,34 @@
         ]
       }
     },
+    "excel": {
+      "title": "Excel 导入器",
+      "subtitle": "选择你的表格来源：",
+      "default": "Paimon.moe 导出",
+      "takagg": "TakaGG Gacha 导出",
+      "notice": [
+        "此功能还在测试中，请先在设置中导出到excel进行备份！",
+        "相同时间和奖励的祈愿不会被改变（不会重写已有的祈愿记录）",
+        "只会在后续添加和前置补充祈愿，不会在记录的中间插入内容",
+        "目前只支持奖励名为英文的excel"
+      ],
+      "selectFile": {
+        "default": "拖放Paimon.moe excel 文件到此处，或点击这里选择",
+        "takagg": "拖放TakaGG gacha导出的Excel文件到此处，或点击这里选择"
+      },
+      "processing": "处理中...",
+      "addedOn": "插入位置",
+      "beginning": "开始",
+      "end": "结束",
+      "total": "总计",
+      "saveNotice": "保存导入的祈愿记录？",
+      "save": "保存",
+      "success": "Excel 导入成功 😀！",
+      "errorInvalidFile": "无效的excel文件",
+      "errorReadExcel": "读取Excel文件时出错！",
+      "errorExcelPaimon": "这不是paimon.moe导出的excel",
+      "errorUnknownItem": "存在未知的奖励名称"
+    },
     "help": {
       "title": "祈愿统计 帮助 & 设置",
       "exportTitle": "导出祈愿记录",
@@ -336,12 +374,19 @@
       "median": "5★ 中位数",
       "user": "总玩家数",
       "detail": "详情"
-    }
+    },
+    "note": [
+      "祈愿记录未能自动更新，请再次导入更新祈愿历史",
+      "Paimon.moe 无法获得超过6个月的祈愿历史，因为它已经在 miHoyo 服务器上被删除，所以您的部分旧祈愿可能不会显示。",
+      "数据保存在您的浏览器中，如果您清理浏览器缓存，记录会被删除！ 在设置中启用Google Drive 同步，可以备份您的数据！"
+    ]
   },
   "calculator": {
     "titleWeapon": "武器计算器",
     "titleCharacter": "角色计算器",
     "titleResin": "数值计算器",
+    "titleFriendship": "好感度计算器",
+    "titleFate": "祈愿价格计算器",
     "goto": "跳转到 {where}",
     "howToUse": "如何使用",
     "guide": {
@@ -421,6 +466,30 @@
       "hours": "时",
       "minutes": "分",
       "seconds": "秒"
+    },
+    "friendship": {
+      "currentLevel": "当前好感等级",
+      "currentExp": "当前经验值 (拖动滑条)",
+      "randomEventFarm": "每天完成几个随机事件？",
+      "calculate": "计算",
+      "based": "基于AR等级:{ar}",
+      "change": "(可在设置中更改)",
+      "result": "如果每天完成每日任务并使用180树脂，达到好感10需要的时间",
+      "resultSerenitea": "如果你同时也把角色放在家园壶中(最大好感能量)",
+      "resultDay": "{result} 天"
+    },
+    "fate": {
+      "currency": "选择货币",
+      "firstTime": "第一次",
+      "amount": "数量",
+      "genesis": "创世结晶",
+      "first": "首充双倍",
+      "total": "共计",
+      "price": "价格",
+      "totalGenesis": "创世结晶共计",
+      "totalPrice": "价格共计",
+      "calculate": "计算{currency}{value} 可以获得多少创世结晶",
+      "calculateFate": "计算 {value} 需要多少钱"
     }
   },
   "items": {
@@ -489,6 +558,7 @@
     "driveError": "谷歌网盘API无法加载",
     "driveSignIn": "登录谷歌网盘",
     "driveSignOut": "登出谷歌网盘",
+    "driveSignInErrorScope": "云盘登录失败！请重新登录并检查所需要的权限！",
     "synced": "已同步",
     "waiting": "等待中...",
     "syncing": "同步中...",
@@ -593,7 +663,13 @@
   },
   "achievement": {
     "title": "成就",
-    "of": "共计"
+    "of": "共计",
+    "sort": "优先显示未完成的",
+    "search": "搜索成就",
+    "commissions": "委托",
+    "version": "版本",
+    "type": "类型",
+    "searchError": "未发现成就: {query}"
   },
   "furnishing": {
     "title": "家具",
@@ -654,7 +730,8 @@
     "ascensionMaterial": "突破材料",
     "asc": "突破",
     "lvl": "等级",
-    "baseAtk": "基础攻击"
+    "baseAtk": "基础攻击",
+    "recommendedCharacter": "推荐的角色"
   },
   "artifact": {
     "title": "圣遗物列表",

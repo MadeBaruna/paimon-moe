@@ -59,7 +59,7 @@
       "sunday": "El domingo se puede farmear de todo 😁"
     },
     "calculator": {
-      "title": "🧮 Calcula materiales de ascensión para Personajes y Armas y libros de Talentos! Todos los cálculos pueden ser añadidos a Tareas Pendientes, ¡y te mostrará cuánta resina necesitas!",
+      "title": "🧮 Calcula materiales de ascensión para Personajes y Armas y libros de Talentos! Todos los cálculos pueden ser añadidos a Tareas Pendientes, ¡Tambien te mostrará cuánta resina necesitas!",
       "detail": "Calculadora"
     },
     "twitter": {
@@ -665,7 +665,11 @@
     "title": "Logro",
     "of": "de",
     "sort": "Mostrar no conseguidos primero",
-    "search": "Buscar logro"
+    "search": "Buscar logro",
+    "commissions": "encargos",
+    "version": "Versión",
+    "type": "Tipo",
+    "searchError": "No se pudo encontrar el logro: {query}"
   },
   "furnishing": {
     "title": "Relajatetera",

@@ -11,13 +11,19 @@
     "todoList": "Liste de tâches",
     "timeline": "Calendrier",
     "furnishing": "Décorations",
+    "weapons": "Armes",
+    "artifacts": "Artéfacts",
     "settings": "Paramètres",
     "donate": "Donner"
   },
   "home": {
     "welcome": "Bienvenue sur Paimon.moe! 👋",
     "message": "Votre meilleur compagnon pour Genshin Impact ! Vous aide à planifier ce que vous souhaitez farmer avec le calculateur d'élévation et vous permet de suivre votre progression avec la liste de tâches et le compteur de voeux.",
+    "visitor": "{count} visiteurs au cours des 7 derniers jours",
     "banner": {
+      "featured": [
+        "Eula"
+      ],
       "summoned": "Invocation",
       "percentage": "parmis tous les {rarity}",
       "avg": "Pity moyenne",
@@ -54,7 +60,7 @@
     },
     "calculator": {
       "title": "🧮 Calculez les matériaux nécessaires à l'élévation d'armes ou de personnages ainsi que les livres d'aptitudes ! Tous les calculs peuvent être ajoutés à la Liste des tâches, cela vous montrera de combien de résines vous aurez besoin !",
-      "detail": "Calculator"
+      "detail": "Calculateur"
     },
     "twitter": {
       "title": "Suivez mon Twitter, je posterai de temps en temps des aperçus de ce que je développe et des dernières mises à jour de paimon.moe!",
@@ -63,6 +69,10 @@
     "achievement": {
       "title": "🏆 Regardez et suivez votre liste de succès ici",
       "detail": "Succès"
+    },
+    "furnishing": {
+      "title": "Vérifiez les décorations dont vous avez besoin pour compléter un set. Vous pouvez également voir la charge de chaque décoration.",
+      "detail": "Décorations"
     }
   },
   "characters": {
@@ -75,14 +85,15 @@
     "talents": "Aptitudes",
     "passiveTalents": "Talents passifs",
     "constellations": "Constellations",
+    "const": "Const",
     "asc": "ÉLV",
     "lvl": "NIV",
     "hp": "PV",
     "atk": "ATQ",
-    "def": "DEF",
+    "def": "DÉF",
     "hpPercent": "PV%",
     "atkPercent": "ATQ%",
-    "defPercent": "DEF%",
+    "defPercent": "DÉF%",
     "critRate": "Taux CRIT",
     "critDamage": "DGT CRIT",
     "em": "Maîtrise Élémentaire",
@@ -95,12 +106,21 @@
     "cryoDamageBonus": "Bonus de DGT Cryo",
     "anemoDamageBonus": "Bonus de DGT Anemo",
     "physicalDamageBonus": "Bonus de DGT Physique",
-    "geoDamageBonus": "Bonus de DGT Géo"
+    "geoDamageBonus": "Bonus de DGT Géo",
+    "sortBy": "Trier par...",
+    "talentBook": "Livre d'aptitude",
+    "ascensionMaterial": "Matériaux d'élévation",
+    "talentStats": "Stats d'aptitude",
+    "build": "Build",
+    "source": "Community Character Builds de la Genshin Helper Team",
+    "faq": "Le nombre de constellations est calculé à partir de vos données d'Historique de Vœux. Si votre ancien historique de souhaits a déjà disparu ou si vous avez obtenu le personnage depuis la boutique ou lors d'un événement, le nombre pourrait ne pas être exact ! Mais vous pouvez le modifier manuellement en appuyant sur l'icône de crayon à côté du nom du personnage."
   },
   "wish": {
     "title": "Compteur de voeux",
     "autoImport": "Importation auto",
     "helpAndSetting": "Paramètres et aides",
+    "helps": "Aide",
+    "settings": "Paramètres",
     "wishesWorth": "Valeurs des voeux",
     "lifetimePulls": "Total des voeux",
     "guarantee": "Garanti à {pity}",
@@ -141,6 +161,7 @@
       "invalidLink": "Lien invalide, veuillez le vérifier",
       "errorApi": "Code d'erreur de l'API de Mihoyo, veuillez réessayer plus tard !",
       "timeout": "Délai de connection dépassé, veuillez patienter un moment et réessayer plus tard",
+      "differentAccount": "Cet Historique de Vœux appartient à un autre compte, veuillez d'abord séparer votre compte dans le menu Paramètres !",
       "invalidData": "Données invalides de l'API, réessayez plus tard",
       "success": "Importation réussi 😀!",
       "server": "Sélectionnez votre serveur :",
@@ -234,6 +255,34 @@
         ]
       }
     },
+    "excel": {
+      "title": "Importateur Excel",
+      "subtitle": "Sélectionnez d'où vient votre fichier Excel :",
+      "default": "Export de Paimon.moe",
+      "takagg": "Export de l'outil de TakaGG",
+      "notice": [
+        "Cette fonctionnalité est toujours en bêta, faites d'abord une sauvegarde dans les paramètres avant d'exporter vers Excel !",
+        "Les vœux avec le même horodatage et le même nom de récompense ne seront PAS affectés (donc les vœux existants ne seront pas dupliqués)",
+        "Les vœux ne seront ajoutés qu'en fin ou début de liste, ce qui veut dire que rien ne sera ajouté en plein milieu de la liste",
+        "Pour le moment, seuls les fichiers Excel avec un nom en ANGLAIS pour les récompenses n'est pris en charge"
+      ],
+      "selectFile": {
+        "default": "Glissez & déposez le fichier Excel de Paimon.moe ici, ou cliquez pour en sélectionner un",
+        "takagg": "Glissez & déposez le fichier Excel du TakaGG Gacha Export ici, ou cliquez pour en sélectionner un"
+      },
+      "processing": "Traitement en cours...",
+      "addedOn": "Inséré sur :",
+      "beginning": "Début",
+      "end": "Fin",
+      "total": "Total",
+      "saveNotice": "Sauvegarder les vœux importés ?",
+      "save": "Sauvegarder",
+      "success": "Import Excel réussi 😀 !",
+      "errorInvalidFile": "Fichier Excel invalide",
+      "errorReadExcel": "Erreur lors de la lecture du fichier Excel !",
+      "errorExcelPaimon": "Ceci n'est pas un fichier Excel provenant de Paimon.moe",
+      "errorUnknownItem": "Un nom de récompense inconnu a été trouvé"
+    },
     "help": {
       "title": "Paramètres du compteur de voeux",
       "exportTitle": "Exporter l'historique des voeux",
@@ -297,7 +346,7 @@
       "name": "Nom",
       "type": "Type",
       "banner": "Bannière",
-      "roll": "#Roll",
+      "roll": "#Tirage",
       "totalThisBanner": "Nombre de voeux sur la bannière",
       "worth": "Valeur",
       "loading": "Chargement... (Si cela ne charge pas, changez le serveur sur la page des paramètres)",
@@ -313,7 +362,7 @@
       "fromFiveStar": "de tout les 5★",
       "fromFourStar": "de tout les 4★",
       "fromFourStarFeatured": "des têtes de bannière 4★",
-      "show": "Show",
+      "show": "Afficher",
       "name": "Nom",
       "total": "Total",
       "wishTotal": "Total des voeux",
@@ -325,12 +374,19 @@
       "median": "Médiane 5★",
       "user": "Nombre total d'utilisateurs",
       "detail": "Détails"
-    }
+    },
+    "note": [
+      "L'Historique de Vœux n'est pas mis à jour automatiquement, veuillez importer à nouveau pour mettre à jour votre historique !",
+      "Paimon.moe ne peut pas récupérer l'Historique de Vœux de plus de 6 mois car celui-ci a déjà été supprimé des serveurs de miHoYo, donc vos anciens vœux pourraient ne pas être affichés.",
+      "Les données sont enregistrées dans votre navigateur, donc elles seront supprimées si vous videz le cache de votre navigateur ! Activez la synchronisation Google Drive dans les paramètres pour sauvegarder vos données !"
+    ]
   },
   "calculator": {
     "titleWeapon": "Calculateur d'arme",
     "titleCharacter": "Calculateur de personnage",
     "titleResin": "Calculateur de résine",
+    "titleFriendship": "Calculateur d'Exp d'affinité",
+    "titleFate": "Calculateur de prix de pierre de vœux",
     "goto": "Allez sur {where}",
     "howToUse": "Comment utiliser",
     "guide": {
@@ -380,7 +436,12 @@
       "mora": "Mora (approximativement ±40)",
       "expWasted": "EXP gaché",
       "addToTodo": "Ajouter à la liste de tâches",
-      "addedToTodo": "Ajouté à la liste de tâches !"
+      "addedToTodo": "Ajouté à la liste de tâches !",
+      "talent": [
+        "Attaque",
+        "Compétence",
+        "Déchainement"
+      ]
     },
     "expTable": {
       "level": "Niveau",
@@ -398,13 +459,37 @@
       "or": "ou",
       "inputCurrentResin": "Résine actuelle...",
       "inputDesireResin": "Combien de résines à attendre...",
-      "timeFormat": "en",
+      "timeFormat": "fr",
       "calculate": "Calculer",
       "currentTime": "Heure actuelle",
       "fullTime": "La résine sera pleine dans...",
       "hours": "heures",
       "minutes": "minutes",
       "seconds": "secondes"
+    },
+    "friendship": {
+      "currentLevel": "Niveau d'affinité actuel",
+      "currentExp": "Barre d'Exp actuelle (Faites glisser la barre)",
+      "randomEventFarm": "Combien d'événements aléatoires farmez vous chaque jour ?",
+      "calculate": "Calculer",
+      "based": "Basé sur l'AR : {ar}",
+      "change": "(modifier dans les paramètres)",
+      "result": "Pour atteindre le niveau 10 d'affinité si vous remplissez toutes les commissions quotidiennes et utilisez 180 résines chaque jour",
+      "resultSerenitea": "Si vous placez également le personnage dans la Sérénithéière (Énergie mystique maximale)",
+      "resultDay": "{result} jours"
+    },
+    "fate": {
+      "currency": "Sélectionnez la devise...",
+      "firstTime": "Première Fois",
+      "amount": "Quantité",
+      "genesis": "Cristaux Primaires",
+      "first": "Bonus x2",
+      "total": "Total",
+      "price": "Prix",
+      "totalGenesis": "Total de Cristaux Primaires",
+      "totalPrice": "Prix total",
+      "calculate": "Calculer combien de Cristaux Primaires je peux avoir avec {currency}{value}",
+      "calculateFate": "Calculez combien d'argent j'ai besoin pour {value}"
     }
   },
   "items": {
@@ -473,6 +558,7 @@
     "driveError": "L'API de Google Drive n'a pas pu être chargée.",
     "driveSignIn": "Connexion avec Google Drive",
     "driveSignOut": "Déconnexion Google Drive",
+    "driveSignInErrorScope": "Échec de la connexion au lecteur ! Veuillez vous reconnecter et vérifier les autorisations requises !",
     "synced": "Synchroniser",
     "waiting": "Attente...",
     "syncing": "Synchronisation...",
@@ -577,7 +663,13 @@
   },
   "achievement": {
     "title": "Succès",
-    "of": "de"
+    "of": "de",
+    "sort": "Afficher les non-atteints en premier",
+    "search": "Chercher succès",
+    "commissions": "quête de réputation",
+    "version": "Version",
+    "type": "Catégorie",
+    "searchError": "Impossible de trouver la réalisation: {query}"
   },
   "furnishing": {
     "title": "Décorations",
@@ -592,9 +684,64 @@
       "Cela montre la charge que la zone peut supporter. Chaque décoration possède une valeur cachée de charge qui peut être consultée ci-dessous.",
       "(la valeur de charge maximum n'a pas encore été confirmé !)"
     ],
-    "hall": "Hall",
+    "hall": "Pièce Principale",
     "room": "Aile {number}",
     "exteriorNum": "Zone {number}",
-    "corridor": "Corridor"
+    "corridor": "Couloir",
+    "inventoryButton": "Inventaire",
+    "listButton": "Liste",
+    "inventory": {
+      "title": "Inventaire des décorations",
+      "subtitle": "Certaines catégories spéciales comme les murs ne sont pas affichées",
+      "all": "Tout",
+      "openSets": "Voir les sets"
+    },
+    "sets": {
+      "title": "Sets de décoration",
+      "subtitle": "Cliquez sur l'icône de la décoration pour voir les détails ou cliquez sur l'icône du personnage pour les cocher ! Ouvrez le menu d'Inventaire ci-dessus pour renseigner votre nombre de décorations.",
+      "setPlaced": "Définir comme étant placé",
+      "setUnplaced": "Définir comme étant non placé",
+      "inInventory": "Dans l'inventaire",
+      "available": "Disponible",
+      "used": "Utilisé dans un autre set"
+    }
+  },
+  "weapon": {
+    "title": "Liste des armes",
+    "subtitle": "Les statistiques affichées représentent le niveau maximum",
+    "name": "Nom",
+    "type": "Type",
+    "rarity": "Rareté",
+    "atk": "ATQ",
+    "secondary": "Stat secondaire",
+    "critRate": "Taux CRIT",
+    "critDamage": "DGT CRIT",
+    "em": "Maîtrise élémentaire",
+    "er": "Recharge d'énergie",
+    "atkPercent": "ATQ",
+    "hpPercent": "PV",
+    "defPercent": "DÉF",
+    "physicalDamage": "Bonus de DGT physiques",
+    "bow": "Arc",
+    "polearm": "Arme d'hast",
+    "sword": "Épée à une main",
+    "catalyst": "Catalyseur",
+    "claymore": "Épée à deux mains",
+    "ascensionMaterial": "Matériaux d'élévation",
+    "asc": "ÉLV",
+    "lvl": "NIV",
+    "baseAtk": "ATQ de base",
+    "recommendedCharacter": "Personnages recommandés"
+  },
+  "artifact": {
+    "title": "Liste d'artéfacts",
+    "name": "Nom",
+    "maxRarity": "Max ★",
+    "bonus2": "Bonus du set de 2 pièces",
+    "bonus4": "Bonus du set de 4 pièces",
+    "domain": "Domaine",
+    "artifact": "Artéfact",
+    "setPiece": "Bonus du set de {piece} pièce(s)",
+    "recommendedCharacter": "Personnages recommandés pour le set de {piece} pièce(s)"
   }
 }

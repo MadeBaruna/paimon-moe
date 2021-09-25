@@ -1,0 +1,747 @@
+{
+  "sidebar": {
+    "home": "Startseite",
+    "character": "Figuren",
+    "wishCounter": "Gebetszähler",
+    "calculator": "Rechner",
+    "database": "Datenbank",
+    "items": "Objekte",
+    "achievement": "Errungenschaften",
+    "reminder": "Erinnerung",
+    "todoList": "To-Do-Liste",
+    "timeline": "Zeitleiste",
+    "furnishing": "Dekorationen",
+    "weapons": "Waffen",
+    "artifacts": "Artefakte",
+    "settings": "Einstellungen",
+    "donate": "Spenden"
+  },
+  "home": {
+    "welcome": "Willkommen bei Paimon.moe! 👋",
+    "message": "Dein bester Begleiter für Genshin Impact! Nutze den Aufstiegsrechner, um zu planen, welche Gegenstände du farmen möchtest und verfolge deinen Fortschritt mit dem Gebetezähler und der To-Do-Liste.",
+    "visitor": "{count} Besucher in den letzten 7 Tagen",
+    "banner": {
+      "featured": [
+        "Eula"
+      ],
+      "summoned": "Gezogen",
+      "percentage": "aus allen {rarity}",
+      "avg": "Garantie Durchschnitt",
+      "subtitle": "Errechnet mit Daten von {user} paimon.moe Nutzern",
+      "detail": "Anzahl globaler Gebete"
+    },
+    "wish": {
+      "message": "Importiere deine Gebets-Daten um mehr als 6 Monate deiner Gebete einsehen zu können. Zählt auch automatisch deine Garantie und zeigt deine Daten in schicken Diagrammen an 📊",
+      "latest": "Dein letztes Gebet",
+      "banner": "Banner",
+      "time": "Zeit",
+      "name": "Name",
+      "pity": "Garantie",
+      "detail": "Gebetszähler"
+    },
+    "reminder": {
+      "message": "Für den Parameterwandler und den täglichen Hoyolab Login kannst du dir eine Erinnerungsbenachrichtigung 🔔 einrichten! Klicke auf den Erinnerungsknopf unten, um erinnert zu werden!",
+      "detail": "Erinnerung"
+    },
+    "event": {
+      "upcoming": "Kommende Events",
+      "current": "Aktuelles Event",
+      "detail": "Zeitleiste"
+    },
+    "discord": {
+      "online": "Mitglieder Online",
+      "message": "Auf unserem Discord Server wirst du über die neuesten Updates benachrichtigt, kannst dich über Genshin Impact unterhalten, und uns Verbesserungsvorschläge für paimon.moe geben.",
+      "join": "Tritt unserem Discord Server bei"
+    },
+    "items": {
+      "title": "Heute Farmbar",
+      "detail": "Objekte",
+      "sunday": "Sonntags kann man alle Gegenstände farmen 😁"
+    },
+    "calculator": {
+      "title": "Mit dem Aufstiegs-Rechner kannst du berechnen wie viele Materialien und Ursprüngliches Harz du brauchst um deine Charaktere zu leveln! Alle Berechnungen können der Todo-Liste hinzugefügt werden!",
+      "detail": "Rechner"
+    },
+    "twitter": {
+      "title": "Folge mir auf Twitter, dort poste ich Updates für paimon.moe und Vorgeschmäcker von dem, an was ich gerade arbeite!",
+      "detail": "Auf Twitter folgen"
+    },
+    "achievement": {
+      "title": "🏆 Hier kannst du deine Errungenschaften einsehen und abhaken",
+      "detail": "Errungenschaften"
+    },
+    "furnishing": {
+      "title": "Schaue nach, welche Dekorationen dir fehlen, um Sets fertigzustellen. Auch die Last jeder Dekoration kannst du hier einsehen.",
+      "detail": "Dekorationen"
+    }
+  },
+  "characters": {
+    "title": "Figuren",
+    "subtitle": "Die Attribute sind für Stufe 80 Ascension 6. Sie können auch auf den Tabellenkopf klicken um zu sortieren!",
+    "name": "Name",
+    "element": "Element",
+    "rarity": "Qualität",
+    "weapon": "Waffe",
+    "talents": "Talente",
+    "passiveTalents": "Passive Talente",
+    "constellations": "Sternbilder",
+    "const": "Sternbild",
+    "asc": "Aufstieg",
+    "lvl": "Stufe",
+    "hp": "LP",
+    "atk": "ANG",
+    "def": "VTD",
+    "hpPercent": "LP%",
+    "atkPercent": "ANG%",
+    "defPercent": "VTD-Rate",
+    "critRate": "KT",
+    "critDamage": "KSCH",
+    "em": "Elementarkunde",
+    "er": "Aufladerate",
+    "healingBonus": "Heilungsbonus",
+    "pyroDamageBonus": "Pyro-SCH-Bonus",
+    "hydroDamageBonus": "Hydro-SCH-Bonus",
+    "dendroDamageBonus": "Dendro-SCH-Bonus",
+    "electroDamageBonus": "Elektro-SCH-Bonus",
+    "cryoDamageBonus": "Kryo-SCH-Bonus",
+    "anemoDamageBonus": "Anemo-SCH-Bonus",
+    "physicalDamageBonus": "Physischer SCH-Bonus",
+    "geoDamageBonus": "Geo-SCH-Bonus",
+    "sortBy": "Sortieren nach...",
+    "talentBook": "Taltentbuch",
+    "ascensionMaterial": "Aufstiegsmaterialien",
+    "talentStats": "Talent Statistik",
+    "build": "Build",
+    "source": "Figuren builds vom Genshin Helper Team",
+    "faq": "Sternbildanzahl wird aus deinem Gebetsverlauf berechnet. Wenn also dein alter Gebetsverlauf bereits vergangen ist oder du die Figur beim Händler oder bei einer Aktion gekauft hast, ist die Anzahl möglicherweise nicht korrekt! Du kannst sie aber manuell bearbeiten, indem du neben dem Figurnamen auf das Stift-Symbol klickst."
+  },
+  "wish": {
+    "title": "Gebetszähler",
+    "autoImport": "Automatischer Import",
+    "helpAndSetting": "Hilfe & Einstellungen",
+    "helps": "Hilfe",
+    "settings": "Einstellungen",
+    "wishesWorth": "Gesamtwert Gebete",
+    "lifetimePulls": "Gebete insgesamt",
+    "guarantee": "Garantiert bei {pity}",
+    "name": "Name",
+    "time": "Zeit",
+    "pity": "Garantie",
+    "welcome": "Willkommen beim Paimon.moe Gebetszähler! Zur Verwendung wird empfohlen, den Wunschverlauf mit dem automatischen Importer zu importieren.",
+    "welcomeStart1": "Um zu beginnen, drücke den",
+    "welcomeStart2": "Knopf dort oben",
+    "manual": "Wenn du die Daten manuell eingeben möchtest, kannst du das hier aktivieren:",
+    "manualButton": "Manuelle Eingabe aktivieren",
+    "errorBanner": "Banner Zeit falsch! Bitte wechsle deinen Server auf der \"Einstellungen\" Seite. Funktioniert nicht? Schreibe uns eine Nachricht auf dem Discord 😅",
+    "globalWishTally": "Anzahl globaler Gebete",
+    "pityTooltip": [
+      "Zeigt deine jetzige {rarity} Garantie",
+      "{count} Gebete zum garantierten {rarity}"
+    ],
+    "import": {
+      "title": "Gebetsverlauf importieren",
+      "faqsButton": "FAQ - ZUERST LESEN",
+      "nonew": "Keine neuen Gebete",
+      "importNotice1": "Importierte Gebete werden je nach vorhandenen Daten überschrieben oder hinzugefügt",
+      "importNotice2": "Falls du vorher keine Daten importiert hast wird dein erstes Gebet als Garantie 1 gezählt",
+      "importNotice3": "Wenn du Daten von einem anderen Account importierst gehe vorher sicher, dass du in den Einstellungen deine Accounts separierst, sonst werden deine Daten vermischt!",
+      "saveData": "Gebets-Daten speichern?",
+      "reCalculating": "Rekalkulation der Garantie...",
+      "processing": "Wird verarbeitet",
+      "banner": "Banner",
+      "page": "Seite",
+      "parsing": "Wird analysiert...",
+      "save": "Speichern",
+      "cancel": "Abbrechen",
+      "cancelling": "Wird abgebrochen...",
+      "importNewWishOnly": "Nur neue Gebete importieren",
+      "importNewWishUncheck": "Nur abwählen, wenn du deinen gesamten Gebetsverlauf neu importieren musst",
+      "import": "Importieren",
+      "close": "Schließen",
+      "invalidLink": "Ungültiger Link, bitte erneut überprüfen",
+      "errorApi": "Die MiHoYo API hat einen Fehlercode zurück gegeben, bitte versuche es später erneut!",
+      "timeout": "Verbindung unterbrochen, bitte versuche es später erneut",
+      "differentAccount": "Diese Gebets-Daten sind für einen anderen Account, bitte separiere deine Accounts in den Einstellungen!",
+      "invalidData": "Die API gab falsche Daten aus, versuche es später erneut",
+      "success": "Import erfolgreich 😀!",
+      "server": "Wähle deinen Server:",
+      "wishTallyCheck": "Reiche deine Gebets-Daten für die globale Anzahl an Gebeten ein",
+      "wishTally": "Wir machen eine globale Gebetsliste! Du kannst deine Gebetsliste zur Teilnahme einreichen. Alle Garantie Daten werden zusammengefasst, um zu wissen, was die durchschnittliche Garantie der Paimon.moe-Benutzer ist.",
+      "wishTallyCollected": [
+        "Was man erhaltet:",
+        "und",
+        "Garantie aus Ihrem Wunschverlauf"
+      ],
+      "faqs": {
+        "title": "Gebetsverlauf importieren FAQ",
+        "q1": "Wie funktioniert es?",
+        "a1": "Die Wunschhistorie von Genshin Impact ist nichts anderes wie eine Webseite, daher kann sie mit einer url aufgerufen werden. Ein temporärer Key wird generiert sobald Sie die Wunschhistorie oder die Rückmeldungsseite aufrufen und der Importer wird automatisch die MiHoYo API verwenden um Ihre Wunschhistorie zu holen.",
+        "q2": "Ist es sicher? Werde ich gebannt?",
+        "a2": "Paimon.moe verwendet dieselbe Anfrage, die Genshin Impact verwendet, um die Wunschhistorie zu erhalten, und Paimon.moe hat keinerlei Möglichkeit, Spieldateien oder Speicherstände zu modifizieren, und es sollte sicher sein. Aber verwenden Sie es auf eigene Gefahr (na ja, ich benutze es auf meinem Hauptkonto). Sie können Ihre Daten immer noch manuell eingeben😀.",
+        "q3": "Kannst du mein Konto dann hacken?",
+        "a3": [
+          "Paimon.moe speichert niemals private Informationen wie deine Zugangsdaten (sogar deine UID oder deinen Nickname), daher lautet die Antwort Nein. Dieses Projekt ist Open Source auf",
+          "; Ich habe nicht vor, meinen Ruf zu beschädigen, indem ich das Konto anderer Leute hacke."
+        ],
+        "q4": "Hey ich habe die Anfragen und Sachen überprüft, aber warum fordert es statt der MiHoYo API Ihre Domain an?",
+        "a4": [
+          "Paimon.moe kann keine Anfragen direkt an die MiHoYo Api sende weil",
+          ", deshalb wird die Anfrage an einen einfachen CORS-Proxy weitergeleitet damit es funktioniert. Sie können den Code sehen",
+          "hier"
+        ],
+        "q5": "Wird mein temporärer Key oder meine Wunschhistorie gespeichert?",
+        "a5": [
+          "Paimon.moe speichert niemals Ihre Keys und verwendet HTTPS, um Ihre URL an einen CORS-Proxy zu übergeben, um den CORS arbeiten zu lassen. Paimon.moe wird Ihre 4* Garantie, 5* Garantie und 5* Wunschinformationen speichern, wenn Sie Ihren Wunsch für unsere globale Gebetsliste einreichen (keine privaten Informationen werden gespeichert! bitte überprüfen",
+          "Datenschutzrichtlinie",
+          "für weitere Informationen). Sie können das Einreichen der Gebetsliste deaktivieren, indem Sie den Haken entfernen. Dann wird die gesamte Wunschhistorie auf Ihrem Gerät gespeichert (oder Ihrem Google Drive wenn Sie die Synchronisierung aktiviert haben).",
+          "Wenn Sie keine Weitergabe Ihrer URL wünschen, können Sie das kleine Import-Skript verwenden, um die Wunsch-Historie auf Ihrem lokalen PC zu verarbeiten (Lokale PC Option) "
+        ],
+        "q6": "Ich habe alle Schritte erledigt, aber ich bekomme einen API-Fehler?",
+        "a6": "Stellen Sie sicher, dass Sie den gesamten Text kopieren (halten und drücken Sie Alles Auswählen für mobile Geräte); Vielleicht haben Sie einen Teil des Textes übersehen, der benötigt wird damit der Importer richtig arbeitet.",
+        "q7": "Es hat nicht meinen gesamten Gebetsverlauf gelesen!?",
+        "a7": "Wunschhistorie, die älter als 6 Monate ist wird vom Mihoyo-Server selbst entfernt. Wenn Sie also igendwo kein Backup haben, ist es leider weg"
+      },
+      "guide": {
+        "video": "Videoanleitung",
+        "pc": [
+          "Öffne Paimon Menü [ESC]",
+          "Klicke auf Rückmeldung",
+          "Warte, bis es geladen hat und eine Browser-Seite sollte sich öffnen",
+          "Kopiere den Link und füge ihn in in das Textfeld unten ein",
+          "Link hier einfügen... https://webstatic..."
+        ],
+        "android": [
+          "Öffne Gebet (im Spiel)",
+          "Klicke auf Verlauf",
+          "Warte, bis es geladen hat",
+          "Schalte deinen Wlan und Datenverbindung aus",
+          "Klicke Aktualisieren in der rechten oberen Ecke",
+          "Die Seite sollte einen Fehler und Text in schwarzer Schrift anzeigen",
+          "Halten Sie den Text gedrückt und drücken Sie Alle Auswählen, kopieren Sie dann den Text (kopieren Sie nicht nur einen Teil des Textes)",
+          "Schalte deinen Wlan und Datenverbindung ein",
+          "Füge den Text in das Textfeld unten ein",
+          "Text hier einfügen... Webseite nicht verfügbar..."
+        ],
+        "ios": [
+          "Öffne Paimon Menü",
+          "Klicke auf Rückmeldung",
+          "Warte, bis es geladen hat und eine Browser-Seite sollte sich öffnen",
+          "Drücke Problem im Spiel",
+          "Drücke Co-Op Modus",
+          "Es gibt einen Link am unteren Rand der Antwort; drücken Sie diesen",
+          "Ein Browser sollte geöffnet werden. Kopieren Sie den Link und fügen Sie ihn unten ein",
+          "Link hier einfügen... https://genshin.mihoyo..."
+        ],
+        "ps": [
+          "Du kannst diesen Importer nur verwenden, wenn du eine In-Game-Mail mit QR-Code hast, um das Web-Event zu öffnen",
+          "Öffne Genshin Impact auf deiner PlayStation",
+          "Öffne die Event-E-Mail mit dem QR-Code",
+          "Scanne den QR-Code auf deinem Handy",
+          "Kopiere den Link und füge ihn unten ein",
+          "Link hier einfügen..."
+        ],
+        "pclocal": [
+          "Wenn es Ihnen unangenehm ist, Ihre Feedback-URL zu teilen, können Sie diese Option nutzen, um den Wunsch auf Ihrem PC lokal zu bearbeiten. Dieses Skript liest die Log-Datei auf dem PC, um die Wunsch-Historie-URL zu erhalten.",
+          "Start öffnen und nach Powershell suchen",
+          "Öffne Windows Powershell, dann kopiere und füge das folgende Skript in die Powershell ein",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
+          "Du kannst das Skript überprüfen",
+          "hier",
+          "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
+          "Drücken Sie Enter um das Skript auszuführen und folgen Sie anschließend den Anweisungen dort",
+          "Fügen Sie das Ergebnis des Skripts anschließend in die Eingabe unten ein",
+          "Füge das Ergebnis hier ein...",
+          "Diese Funktion ist noch in der Beta, bitte erstellen zuerst Sie ein Backup über das Hilfe & Einstellungen Menu und dann Export nach Excel."
+        ]
+      }
+    },
+    "excel": {
+      "title": "Excel Importer",
+      "subtitle": "Wähle aus von wo deine Excel kommt:",
+      "default": "Paimon.moe Export",
+      "takagg": "TakaGG Gacha Export",
+      "notice": [
+        "Diese Funktion ist noch in der BETA bitte backup erst indem du in die Einstellungen gehst und dann auf Export zu Excel gehst!",
+        "Wünsche mit dem gleichen Zeitstempel und Belohnungsnamen werden NICHT verändert (vorhandener Wunsch wird nicht neu geschrieben)",
+        "Fügt nur Wünsche am Anfang und Ende der Liste hinzu, es kann also nichts in die Mitte der Liste eingefügt werden",
+        "Momentan nur Excel mit Namen der ENGLISH Belohnungsnamen"
+      ],
+      "selectFile": {
+        "default": "Drag & Drop Paimon.moe Excel Datei hier oder klicken Sie hier, zum Auszuwählen",
+        "takagg": "Drag & Drop TakaGG gacha Export Excel Datei hier oder klicken Sie hier, zum Auszuwählen"
+      },
+      "processing": "Wird verarbeitet...",
+      "addedOn": "Eingefügt auf der:",
+      "beginning": "Anfang",
+      "end": "Ende",
+      "total": "Gesamt",
+      "saveNotice": "Die importierten Gebete speichern?",
+      "save": "Speichern",
+      "success": "Excel Import erfolgreich 😀!",
+      "errorInvalidFile": "Ungültige Excel-Datei",
+      "errorReadExcel": "Fehler beim Lesen der Excel-Datei!",
+      "errorExcelPaimon": "Dies ist keine Excel des paimon.moe Export",
+      "errorUnknownItem": "Unbekannter Belohnungsname"
+    },
+    "help": {
+      "title": "Gebetszähler Hilfe & Einstellungen",
+      "exportTitle": "Gebetsverlauf exportieren & importieren",
+      "exportMessage": "Du kannst deinen Gebetsverlauf hier zu einer Excel Datei exportieren. Außerdem kannst du deine importierten Excel Dateien von paimon.moe oder TakaGG Gacha Export exportieren.",
+      "export": "Zur Excel Datei exportieren",
+      "exporting": "Wird exportiert...",
+      "import": "Aus Excel importieren",
+      "exportFinish": "Export erfolgreich, bitte warte, bis der Browser die Datei herunterlädt!",
+      "wishTallyTitle": "Gebetsliste abschicken",
+      "wishTally": "Wir machen eine globale Gebetsliste! Du kannst deine Gebetsliste zur Teilnahme einreichen. Alle pity Daten werden zusammengefasst, um zu wissen, was der durchschnittliche pity der paimon.moe Benutzer ist.",
+      "wishTallyCollected": [
+        "Was gesammelt wird:",
+        "und",
+        "Garantie aus Ihrem Wunschverlauf"
+      ],
+      "wishTallySubmit": "Gebetsliste einreichen",
+      "wishTallyThankyou": "Danke für deine Teilnahme!",
+      "manualTitle": "Manuelle Eingabeeinstellung",
+      "enableManual": "Manuelle Eingabe aktivieren",
+      "notice": "Die Verwendung vom automatischen Import und manueller Eingabe zusammen ist nicht empfehlenswert, da es noch einige weitere Tests erfordert!",
+      "consider": "Ziehen Sie zuerst in Erwägung den automatischen Importer zu verwenden. Klicken Sie auf den Button neben der Schaltfläche, auf die Sie geklickt haben, um diese Anleitung zu öffnen.",
+      "howto": {
+        "title": "Wie man die manuelle Eingabe benutzt",
+        "subtitle": "Nach einem 1x Wunsch:",
+        "pressWhenYouGet": "Drücke {button}, wenn du {rarity}★ erhältst",
+        "p1": "Es wird automatisch alle Wünsch, 5★ und 4★ Garantie hinzufügen",
+        "p2": [
+          "Wenn die",
+          "Garantie 10 erreicht, wird sie automatisch zu 0 zurückgesetzt"
+        ],
+        "p3": [
+          "Wenn die",
+          "Garantie 90 erreicht, wird sie automatisch zu 0 zurückgesetzt"
+        ],
+        "p4": [
+          "Nach einem 10x Gebet, drücke",
+          "aber bedenken Sie, dass der Garantiezähler nicht korrekt ist, weil es keine Möglichkeit gibt zu sagen, wann der Drop aufgetreten ist (vielleicht haben Sie ihn am 1. oder 10. Wunsch erhalten). Um sicherzustellen, dass der Zähler immer noch genau ist, müssen Sie die Verlaufstabelle überprüfen und einzeln hinzufügen, wie Sie es mit 1x Wünsche tun."
+        ],
+        "p5": [
+          "Du kannst auch den",
+          "Knopf drücken, um die Werte manuell zu bearbeiten!"
+        ],
+        "p6": [
+          "Drücke Sie auf den Pfeil nach unten um die Details Ihrer Pulls zu sehen. Ein Popup wird angezeigt, wenn du ein",
+          "oder",
+          "Sie können die Tabelle auch manuell hinzufügen oder bearbeiten."
+        ]
+      }
+    },
+    "types": {
+      "beginners": "Neulingsgebete",
+      "standard": "Standard",
+      "character-event": "Figurenaktion",
+      "weapon-event": "Waffenaktion"
+    },
+    "detail": {
+      "weapon": "Waffe",
+      "character": "Figur",
+      "time": "Zeit",
+      "pity": "Garantie",
+      "name": "Name",
+      "type": "Typ",
+      "banner": "Banner",
+      "roll": "#Gebet",
+      "totalThisBanner": "Gesamte Gebete auf diesem Banner",
+      "worth": "Wert",
+      "loading": "Wird geladen... (Wenn dies nicht funktioniert, ändere deinen Server auf in den Einstellungen)",
+      "guaranteed": "Der nächste 5★ ist garantiert die Aktionsfigur oder Waffe",
+      "unknown_3_star": "unbekannt"
+    },
+    "tally": {
+      "title": "Wunschliste",
+      "subtitle": "Globale durchschnittliche Garantie von Paimon.moe-Benutzer-Einreichungen",
+      "update": "Aktualisiert",
+      "summoned": "Gezogen",
+      "wonFiftyFifty": "50:50 gewonnen",
+      "fromFiveStar": "von allen 5★",
+      "fromFourStar": "von allen 4★",
+      "fromFourStarFeatured": "vom vorgestellten 4★",
+      "show": "Anzeigen",
+      "name": "Name",
+      "total": "Gesamt",
+      "wishTotal": "Gebete gesamt",
+      "worth": "Wert",
+      "weapon": "Waffen",
+      "character": "Figuren",
+      "error": "Daten noch nicht verfügbar 😞",
+      "pity": "Garantie",
+      "median": "5★ Median",
+      "user": "Benutzer insgesamt",
+      "detail": "Einzelheiten"
+    },
+    "note": [
+      "Gebetsverlauf wird nicht automatisch aktualisiert, bitte importiere erneut, um deinen Verlauf zu aktualisieren!",
+      "Paimon.moe kann ihren Wunschverlauf nicht abrufen, der älter als 6 Monate ist, da er bereits auf dem miHoYo-Server gelöscht wurde, so können möglicherweise ihre alten wünsche nicht abgerufen werden.",
+      "Die Daten werden in Ihrem Browser gespeichert, so dass sie gelöscht werden, wenn Sie Ihren Browser-Cache löschen! Aktiviere Google Drive Sync bei denn Einstellung, um ihre Daten zu sichern!"
+    ]
+  },
+  "calculator": {
+    "titleWeapon": "Waffen-Rechner",
+    "titleCharacter": "Charakter-rechner",
+    "titleResin": "Harz-Rechner",
+    "titleFriendship": "Freundes-Exp-Rechner",
+    "titleFate": "Gebets-Preis-Rechner",
+    "goto": "Zu {where} gehen",
+    "howToUse": "Wie man ... nutzt",
+    "guide": {
+      "clickToMaximize": "Zum Maximieren auf das Bild klicken",
+      "howToWeapon": "Wie man den Waffenrechner nutzt",
+      "howToCharacter": "Wie man den Charakter Rechner benutzt"
+    },
+    "weapon": {
+      "calculateAscension": "Aufstiegsmaterial berechnen?",
+      "selectRarity": "Waffenrarität wählen",
+      "selectWeapon": "Waffe wählen",
+      "current": "Aktuelles Waffen Level, EXP & Aufstieg Level",
+      "inputCurrentLevel": "Aktuelles Waffenlevel eingeben...",
+      "inputCurrentExp": "Aktuelles Waffen EXP eingeben...",
+      "intended": "Gezielter Waffenlevel & Aufstiegsgrad",
+      "inputIntendedLevel": "Fügen sie ihr Gewünschtes Waffen Level ein...",
+      "resource": "Zu verwendende Ressourcen",
+      "calculate": "Berechnen",
+      "unknownInformation": "Es gibt ein paar unbekannte Informationen",
+      "ascensionLevel": "Verfeinerungsgrad",
+      "mora": "Mora (ungefähr ±40)",
+      "expWasted": "Verschwendete ERF",
+      "addToTodo": "Zur Todo-Liste hinzufügen",
+      "addedToTodo": "Zur Todo-Liste hinzugefügt"
+    },
+    "character": {
+      "calculateAscension": "Material für Aufstieg berechnen?",
+      "selectCharacter": "Figur wählen",
+      "current": "Aktuelles Figuren Level, EXP, & Aufstieg",
+      "inputCurrentLevel": "Aktuelles Figurenlevel eingeben...",
+      "inputCurrentExp": "Aktuelles Figuren EXP-Level eingeben...",
+      "intended": "Vorgesehener Charakter Level & Aufstieggrad",
+      "inputIntendedLevel": "Gewünschtes Figurenlevel eingeben...",
+      "resource": "Zu verwendende Ressource",
+      "calculateTalent": "Material für Talente berechnen?",
+      "inputTalentLevel": "Gib die aktuelle Stufe des 1., 2. und 3. Talents ein",
+      "inputTalentNotice": "Sollte es eine andere Frabe haben, ziehe 3 ab",
+      "inputTalent": [
+        "Stufe des ersten Talents",
+        "Stufe des zweiten Talents",
+        "Stufe des dritten Talents"
+      ],
+      "talentToLevel": "zu Level",
+      "calculate": "Ausrechnen",
+      "unknownInformation": "Es gibt ein wenig unbekannte Informationen",
+      "ascensionLevel": "Aufstiegsstufe",
+      "mora": "Mora (ungefähr ±40)",
+      "expWasted": "EXP verbraucht",
+      "addToTodo": "Zur Todo-Liste hinzufügen",
+      "addedToTodo": "Zur Todo-Liste hinzugefügt",
+      "talent": [
+        "Angriff",
+        "Skill",
+        "Burst"
+      ]
+    },
+    "expTable": {
+      "level": "Level",
+      "items": "Objekte",
+      "wasted": "Verschwendete EP",
+      "mora": "Mora Kosten"
+    },
+    "resinTable": {
+      "quantity": "Menge",
+      "time": "Wartezeit"
+    },
+    "resin": {
+      "currentResin": "Aktuelle Harzmenge",
+      "desiredResin": "Gewünschte Harzemenge",
+      "or": "oder",
+      "inputCurrentResin": "Aktuelles Harz eingeben...",
+      "inputDesireResin": "Geben Sie ein, für wie viel Harz Sie warten möchten...",
+      "timeFormat": "en",
+      "calculate": "Berechnen",
+      "currentTime": "Aktuelle Uhrzeit",
+      "fullTime": "Wird wieder aufgefüllt sein um",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden"
+    },
+    "friendship": {
+      "currentLevel": "Aktuelle Freundschaftsstufe",
+      "currentExp": "Aktuelle Exp Leiste (Ziehe die Leiste)",
+      "randomEventFarm": "Wie viele Zufallsveranstaltungen farmst du jeden Tag?",
+      "calculate": "Ausrechnen",
+      "based": "Basierend auf AR:{ar}",
+      "change": "(ändere es in den Einstellungen)",
+      "result": "Um Freundschaft Level 10 zu erreichen, wenn du die tägliche Aufträge ausführst und täglich 180 Harz verwendest",
+      "resultSerenitea": "Wenn du den Charakter auch in der Kanne der Vergänglichkeit platzierst (Max Adenptenkraft)",
+      "resultDay": "{result} Tage"
+    },
+    "fate": {
+      "currency": "Wählen Sie eine Währung...",
+      "firstTime": "Erstes Mal",
+      "amount": "Menge",
+      "genesis": "Kristalle",
+      "first": "Bonus2x",
+      "total": "Gesamt",
+      "price": "Preis",
+      "totalGenesis": "Gesamte Kristalle",
+      "totalPrice": "Gesamtpreis",
+      "calculate": "Berechne wie viele Schöpfungskristalle ich mit {currency}{value} bekommen kann",
+      "calculateFate": "Berechnen Sie, wie viel Geld ich für {value} brauche"
+    }
+  },
+  "items": {
+    "title": "Itemliste",
+    "subtitle": "Klicken Sie auf das Objektbild, um es zur Todo-Liste hinzuzufügen",
+    "searchCharacter": "Charakter suchen",
+    "searchWeapon": "Suche Waffe",
+    "day": "Tage",
+    "material": "Materialien",
+    "characterWeapons": "Charaktere & Waffen",
+    "add": {
+      "rarity": "Seltenheit auswählen",
+      "amount": "Menge",
+      "inputAmount": "Input Menge...",
+      "cancel": "Abbrechen",
+      "add": "Zur To-Do Liste hinzufügen"
+    }
+  },
+  "days": {
+    "Sunday": "Sonntag",
+    "Monday": "Montag",
+    "Tuesday": "Dienstag",
+    "Wednesday": "Mittwoch",
+    "Thursday": "Donnerstag",
+    "Friday": "Freitag",
+    "Saturday": "Samstag"
+  },
+  "todo": {
+    "title": "To-Do Liste",
+    "summary": "Übersicht",
+    "empty": [
+      "Es gibt noch nichts zu tun 😀",
+      "Fügen Sie einige von der Objekt-Seite oder dem Rechner hinzu!"
+    ],
+    "farmableToday": "Heute Farmbar",
+    "resin": "Benötigtes Harz",
+    "based": "Basiert auf AR:{ar} und WL:{wl}",
+    "change": "(kann in Einstellungen geändert werden)",
+    "approximation": "Ungefähre Berechnung aus Dropraten von",
+    "delete": {
+      "title": "Diese Aufgabe löschen?",
+      "cancel": "Abbrechen",
+      "delete": "Löschen"
+    }
+  },
+  "timeline": {
+    "title": "Zeitstrahl",
+    "localTime": "Als Ortszeit anzeigen",
+    "starting": "Beginnend in",
+    "ending": "Endet in",
+    "live": "Jetzt Live!",
+    "finished": "Abgeschlossen"
+  },
+  "settings": {
+    "version": "Version:",
+    "multiple": "Haben Sie mehrere Konten? Wählen Sie hier Ihr Konto, um die Wunsch- und Todo-Daten zu trennen",
+    "selectAccount": "Konto auswählen",
+    "reset": "Zurücksetzen",
+    "delete": "Löschen",
+    "add": "Hinzufügen",
+    "server": "Wählen Sie Ihren Server:",
+    "drive": [
+      "Paimon.moe verwendet das Anwendungsdatenverzeichnis auf Ihrem Google Drive um Ihren Wunschzähler und Ihre Todo-Liste zu speichern und zu synchronisieren.",
+      "Paimon.moe kann nur Dateien lesen und schreiben, die diese Seite erstellt hat."
+    ],
+    "driveError": "Google Drive API kann nicht geladen werden",
+    "driveSignIn": "Bei Google Drive anmelden",
+    "driveSignOut": "Von Google Drive abmelden",
+    "driveSignInErrorScope": "Drive Anmeldung fehlgeschlagen! Bitte melden Sie sich erneut an und prüfen Sie die erforderliche Berechtigung!",
+    "synced": "Synchronisiert",
+    "waiting": "Warten...",
+    "syncing": "Synchronisieren...",
+    "lastSync": "Zuletzt synchronisiert:",
+    "feedback": "Falls du irgendwelche Fehler oder falsche Daten gefunden hast oder ein Feedback geben willst, meld dich gerne",
+    "or": "oder",
+    "thanks": "Vielen Dank😁!",
+    "modal": {
+      "notice": "Sämtliche Todo- und Wunschhistoriendaten werden gelöscht werden",
+      "backup": "Sie können Ihre Wunschhistorie zuerst sichern, indem Sie sie in eine Excel-Datei exportieren!",
+      "cancel": "Abbrechen",
+      "delete": "Löschen",
+      "reset": "Zurücksetzen"
+    }
+  },
+  "privacypolicy": {
+    "title": "Datenschutzrichtlinie",
+    "subtitle": "Was paimon.moe sammelt und wofür es verwendet wird",
+    "collect": [
+      {
+        "title": "Besuchte Url bei paimon.moe, Referer, Browser, Betriebssystem, Gerätetyp, Land der Besucher",
+        "content": [
+          "Paimon.moe verwendet",
+          "plausible.io",
+          "(eine datenschutzfreundliche Analyse), so dass wir sehen können, wie viele Leute welche Funktion verwenden, damit wir Prioritäten setzen können was zu implementieren oder zu verbessern ist."
+        ]
+      },
+      {
+        "title": "Fehlermeldung und Exception von der Website",
+        "content": [
+          "Paimon.moe sendet Fehler und Exception von der Webseite an",
+          "sentry.io",
+          "damit wir nachvollziehen können, was Probleme verursacht und es entsprechend beheben können."
+        ]
+      },
+      {
+        "title": "Wunschgarantie",
+        "content": [
+          "Paimon.moe speichert 4* Gartie, 5* Garantie und 5* Wunschinformationen (Wunschzeit, Name, Garantiezahl) wenn Sie 'Für globale Gebetsliste einreichen' beim sutomatischen Import aktivieren oder Ihre Gebetsliste manuell im Hilfe & Einstellungen Menü einreichen. Paimon.moe wird die Daten zusammenfassen und verwenden, um das durchschnittliche Mitleid für jeden Banner bei Paimon.moe-Benutzer zu berechnen. Hier können Sie es sehen",
+          "Gebetsliste"
+        ]
+      }
+    ],
+    "subtitleNotCollect": "Was paimon.moe NICHT sammelt",
+    "notCollect": [
+      "Paimon.moe speichert niemals ein Passwort, Uid, Benutzername, E-Mail, temporäre Keys oder Feedback-URL. Wenn Sie interessiert sind, ist das Projekt Open Source und Sie können den Quellcode hier ansehen:",
+      "paimon-moe-api Github",
+      "und",
+      "paimon-moe Github"
+    ]
+  },
+  "sync": {
+    "message": "Ihre lokalen Daten in diesem Browser stehen im Widerspruch zu denen, die im Google Drive gespeichert sind!",
+    "googleDriveData": "Google Drive Daten",
+    "localData": "Lokale Daten des Browsers",
+    "older": "Älter",
+    "newer": "NEUER",
+    "useGoogleDriveData": "Daten von Google Drive benutzen",
+    "useLocalData": "Lokale Daten des Browsers verwenden",
+    "download": "Beide Daten herunterladen",
+    "lastModified": "Zuletzt geändert",
+    "or": "ODER"
+  },
+  "footer": {
+    "affliate": "Paimon.moe ist nicht mit miHoYo zugehörig.",
+    "copyright": "Genshin Impact, Spielinhalte und Materialien sind Warenzeichen und Urheberrechte von miHoYo.",
+    "discord": "Tritt unserem Discord Server bei",
+    "community": "Community Links",
+    "official": "Offizielle Links"
+  },
+  "donate": {
+    "message": [
+      "Danke schön! Hoffentlich findest du es nützlich.",
+      "Ich habe diese Website zum Spaß erstellt, für wenn ich etwas Zeit übrig habe. Natürlich werden mehr Funktionen hinzukommen und die Daten jedes Update aktuallisiert, weil ich gerne das Spiel spiele und auch irgendwie min-maxing betreibe.",
+      "Wenn Sie spenden möchten, wird Ihre Spende definitiv helfen, die Website zu verbessern und mich zu motivieren, mehr Sachen zu Paimon.moe hinzuzufügen! Vielen Dank und viel Spaß, hoffentlich gefällt es Ihnen!",
+      "Wenn du Programmieren magst, kannst du zum Projekt beitragen auf"
+    ],
+    "kofi": "Unterstütze mich auf Ko-fi",
+    "trakteer": "Unterstütze mich auf Trakteer",
+    "crypto": "Unterstütze mich mit Crypto"
+  },
+  "reminder": {
+    "notSupported": "Ihr Browser unterstützt keine Push-Benachrichtigung. Bitte versuchen Sie einen anderen Browser!",
+    "blocked": "Benachrichtigungen sind blockiert, die Erinnerungsbenachrichtigung wird nicht funktionieren! Bitte aktivieren Sie sie in Ihrem Browser.",
+    "desktop": "Der Desktop-Browser kann keine Benachrichtigung erhalten, wenn der Browser nicht läuft!",
+    "early": "Die Benachrichtigung kann aufgrund der Art und Weise, wie wir die Benachrichtigung versenden früher eintreffen (etwa 1-10 Minuten)",
+    "allowNotification": "Bitte erlauben Sie die Benachrichtigungsanfrage, die angezeigt wird!",
+    "transformer": "Parameterwandler-Erinnerung",
+    "last": "Geben Sie ein wann Sie zuletzt den Parameterwandler verwendet haben",
+    "lastHoyolab": "Geben Sie an, wann Sie an den täglichen Check-in erinnert werden möchten",
+    "every": "Täglich um",
+    "countdown": "Geben Sie die Countdown-Zeit des Parameterwandlers ein (wenn Sie sich nicht an die genaue Zeit erinnern, müssen Sie sie schätzen)",
+    "useLast": "Nutze stattdessen die zuletzt verwendete Zeit",
+    "useCountdown": "Stattdessen Countdown-Zeit verwenden",
+    "set": "Erinnerung erstellen",
+    "checking": "Überprüfe gespeicherte Erinnerung...",
+    "errorSelect": "Bitte wählen Sie Tag und Uhrzeit aus!",
+    "errorSaving": "Fehler beim Speichern der Erinnerung 🙁",
+    "current": "Aktuelle Erinnerung",
+    "hoyolab": "Tägliche Hoyolab Check-in Erinnerung",
+    "comingsoon": "Bald verfügbar!"
+  },
+  "achievement": {
+    "title": "Errungenschaft",
+    "of": "von",
+    "sort": "Zeige nicht erreichte zuerst",
+    "search": "Suche Errungenschaft",
+    "commissions": "Aufträge",
+    "version": "Version",
+    "type": "Typ",
+    "searchError": "Erfolg: {query} konnte nicht gefunden werden"
+  },
+  "furnishing": {
+    "title": "Dekorationen",
+    "name": "Name",
+    "energy": "Energie",
+    "load": "Last",
+    "ratio": "Verhältnis",
+    "using": "Betrag",
+    "interior": "Innere",
+    "exterior": "Äußeres",
+    "info": [
+      "Dies zeigt wie viel Last der Berreich tragen kann. Jede Dekoration hat einen versteckten Lastenwert, der unten angezeigt werden kann.",
+      "(der Maximalwert ist noch nicht bestätigt!)"
+    ],
+    "hall": "Halle",
+    "room": "Raum {number}",
+    "exteriorNum": "Bereich {number}",
+    "corridor": "Flur",
+    "inventoryButton": "Inventar",
+    "listButton": "Liste",
+    "inventory": {
+      "title": "Dekorationsinventar",
+      "subtitle": "Einige Sonderkategorien, wie Wände werden nicht angezeigt",
+      "all": "Alles",
+      "openSets": "Offene Sets"
+    },
+    "sets": {
+      "title": "Einrichtungssets",
+      "subtitle": "Klicken Sie für Details auf das Dekorationssymbol, und Sie können auf das Charakter-Symbol klicken, um es zu markieren! Öffnen Sie das Inventar-Menü oben, um deine Anzahl der Dekorationsgegenstände zu bearbeiten.",
+      "setPlaced": "Als platziert makieren",
+      "setUnplaced": "Als nicht platziert makieren",
+      "inInventory": "Im Inventar",
+      "available": "Verfügbar",
+      "used": "In einem anderen Set verwendet"
+    }
+  },
+  "weapon": {
+    "title": "Waffenliste",
+    "subtitle": "Attribute sind auf max. Level",
+    "name": "Name",
+    "type": "Typ",
+    "rarity": "Qualität",
+    "atk": "ANG",
+    "secondary": "Sekundär",
+    "critRate": "KT",
+    "critDamage": "KSCH",
+    "em": "Elementarkunde",
+    "er": "Aufladerate",
+    "atkPercent": "ANG",
+    "hpPercent": "LP",
+    "defPercent": "VTD",
+    "physicalDamage": "Physischer SCH-Bonus",
+    "bow": "Bogen",
+    "polearm": "Stangenwaffe",
+    "sword": "Einhänder",
+    "catalyst": "Katalysator",
+    "claymore": "Zweihänder",
+    "ascensionMaterial": "Aufstiegsmaterialien",
+    "asc": "Verfeinerung",
+    "lvl": "St",
+    "baseAtk": "Basis-ANG",
+    "recommendedCharacter": "Empfohlene Figuren"
+  },
+  "artifact": {
+    "title": "Artefaktliste",
+    "name": "Name",
+    "maxRarity": "Max★",
+    "bonus2": "2 Setbonus",
+    "bonus4": "4 Setbonus",
+    "domain": "Sphäre",
+    "artifact": "Artefakt",
+    "setPiece": "{piece} Setbonus",
+    "recommendedCharacter": "Empfohlene Figuren {piece} Set"
+  }
+}

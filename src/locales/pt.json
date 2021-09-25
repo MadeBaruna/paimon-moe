@@ -11,12 +11,15 @@
     "todoList": "Lista de Afazeres",
     "timeline": "Linha do Tempo",
     "furnishing": "Mobília",
+    "weapons": "Armas",
+    "artifacts": "Artefatos",
     "settings": "Configurações",
     "donate": "Doar"
   },
   "home": {
     "welcome": "Boas-vindas ao Paimon.moe! 👋",
     "message": "Seu melhor companheiro de Genshin Impact! Planeje seu farm com a calculadora de ascensão e acompanhe seu progresso com a lista de afazeres e o histórico de orações.",
+    "visitor": "{count} visitantes nos últimos 7 dias",
     "banner": {
       "featured": [
         "Eula"
@@ -66,6 +69,10 @@
     "achievement": {
       "title": "🏆 Veja e acompanhe sua lista de conquistas aqui",
       "detail": "Conquistas"
+    },
+    "furnishing": {
+      "title": "Veja qual mobília você precisa para completar a coleção. E você também pode ver a carga de cada mobília.",
+      "detail": "Móveis"
     }
   },
   "characters": {
@@ -78,6 +85,7 @@
     "talents": "Talentos",
     "passiveTalents": "Talentos Passivos",
     "constellations": "Constelações",
+    "const": "Conste",
     "asc": "ASC",
     "lvl": "NV",
     "hp": "HP",
@@ -98,12 +106,21 @@
     "cryoDamageBonus": "Bônus de Dano Cryo",
     "anemoDamageBonus": "Bônus de Dano Anemo",
     "physicalDamageBonus": "Bônus de Dano Físico",
-    "geoDamageBonus": "Bônus de Dano Geo"
+    "geoDamageBonus": "Bônus de Dano Geo",
+    "sortBy": "Classificar por...",
+    "talentBook": "Livro de Talentos",
+    "ascensionMaterial": "Materiais de Ascensão",
+    "talentStats": "Estatísticas de Talento",
+    "build": "Build",
+    "source": "Criações de Personagem Comunitária por Equipe de Auxiliar Genshin",
+    "faq": "A contagem de constelação é calculada a partir dos dados do seu Histórico de Orações. Então se seu histórico de orações antigo está desatualizado ou se você comprou o personagem pela loja ou evento, a contagem pode não estar correta! Mas você pode editá-la manualmente apertando o ícone de lápis ao lado do nome do personagem."
   },
   "wish": {
     "title": "Histórico de Orações",
     "autoImport": "Importar Automaticamente",
     "helpAndSetting": "Ajuda & Configurações",
+    "helps": "Ajuda",
+    "settings": "Configurações",
     "wishesWorth": "Valor das Orações",
     "lifetimePulls": "Total de Orações Realizadas",
     "guarantee": "Garantido em {pity}",
@@ -144,6 +161,7 @@
       "invalidLink": "Link inválido, tente novamente",
       "errorApi": "Código de erro retornado do MiHoYo API, tente novamente mais tarde!",
       "timeout": "Conexão expirou, aguarde um momento e tente novamente mais tarde",
+      "differentAccount": "Este histórico de orações é de outra conta, por favor, separe sua conta primeiro no menu de Configurações!",
       "invalidData": "Dados inválidos retornados pelo API, tente novamente mais tarde",
       "success": "Sucesso na Importação 😀!",
       "server": "Selecione seu servidor:",
@@ -237,6 +255,34 @@
         ]
       }
     },
+    "excel": {
+      "title": "Importador de Excel",
+      "subtitle": "Selecione o local do seu Excel:",
+      "default": "Exportação Paimon.moe",
+      "takagg": "Exportação TakaGG Gacha",
+      "notice": [
+        "Este recurso ainda está em BETA, por favor faça um backup indo nas Configurações e então Exportar para Excel!",
+        "Desejos com o mesmo horário e nome da recompensa NÃO serão tocados (desejos já existentes não serão reescritos)",
+        "Irá apenas anexar e prefixar desejos, isso significa que nada será inserido no meio da lista",
+        "Atualmente há suporte excel apenas com nome de recompensa em inglês"
+      ],
+      "selectFile": {
+        "default": "Arraste & solte Paimon.moe arquivo excel pra cá, ou clique aqui para selecionar",
+        "takagg": "Arraste & solte TakaGG gacha arquivo excel pra cá, ou clique aqui para selecionar"
+      },
+      "processing": "Processando...",
+      "addedOn": "Inserido em:",
+      "beginning": "Início",
+      "end": "Fim",
+      "total": "Total",
+      "saveNotice": "Salvar as orações importadas?",
+      "save": "Salvar",
+      "success": "Importação de Excel realizada com sucesso 😀!",
+      "errorInvalidFile": "Arquivo excel inválido",
+      "errorReadExcel": "Erro ao ler o arquivo excel!",
+      "errorExcelPaimon": "Isso não é uma planilha de exportação da paimon.moe",
+      "errorUnknownItem": "Tem um nome de recompensa desconhecido"
+    },
     "help": {
       "title": "Ajuda & Configurações do Histórico de Orações",
       "exportTitle": "Exportar Histórico de Orações",
@@ -328,12 +374,19 @@
       "median": "5★ Mediana",
       "user": "Total de Usuários",
       "detail": "Detalhes"
-    }
+    },
+    "note": [
+      "O histórico de orações não é atualizado automaticamente, por favor, importe novamente para atualizar o seu histórico!",
+      "Paimon.moe não pode recuperar seu histórico de orações de 6 meses atrás pois já foi deletado nos servidores da miHoYo, então talvez suas orações antigas não apareçam.",
+      "Os dados estão salvos no seu navegador, então serão deletados se você limpar o cache do navegador! Ative a sincronização do Google Drive nas suas configurações para fazer o backup dos seus dados!"
+    ]
   },
   "calculator": {
     "titleWeapon": "Calculadora de Armas",
     "titleCharacter": "Calculadora de Personagens",
     "titleResin": "Calculadora de Resina",
+    "titleFriendship": "Calculadora de Experiência de Amizade",
+    "titleFate": "Calculadora de Preço Fixo",
     "goto": "Ir para {where}",
     "howToUse": "Como Usar",
     "guide": {
@@ -383,7 +436,12 @@
       "mora": "Mora (aproximadamente ±40)",
       "expWasted": "EXP Desperdiçada",
       "addToTodo": "Adicionar na Lista de Afazeres",
-      "addedToTodo": "Adicionado na Lista de Afazeres"
+      "addedToTodo": "Adicionado na Lista de Afazeres",
+      "talent": [
+        "Ataque",
+        "Habilidade",
+        "Supremo"
+      ]
     },
     "expTable": {
       "level": "Nível",
@@ -408,6 +466,30 @@
       "hours": "horas",
       "minutes": "minutos",
       "seconds": "segundos"
+    },
+    "friendship": {
+      "currentLevel": "Nível Atual de Amizade",
+      "currentExp": "Barra de Exp Atual (Arraste a Barra)",
+      "randomEventFarm": "Quantos eventos aleatórios você coleta todos os dias?",
+      "calculate": "Calcular",
+      "based": "Baseado no RA:{ar}",
+      "change": "(alterar nas configurações)",
+      "result": "Para alcançar o nível de amizade 10 se você completar todas as comissões diárias e usar 180 resin todos os dias",
+      "resultSerenitea": "Se você também colocar o personagem no Bule de Relachá (Energia Máxima de Adepto)",
+      "resultDay": "{result} Dias"
+    },
+    "fate": {
+      "currency": "Escolher moeda...",
+      "firstTime": "Primeira Vez",
+      "amount": "Quantidade",
+      "genesis": "Genesis",
+      "first": "2x Bônus",
+      "total": "Total",
+      "price": "Preço",
+      "totalGenesis": "Gênesis total",
+      "totalPrice": "Preço total",
+      "calculate": "Calcule quantos Cristais Gênesis eu posso ter com {currency}{value}",
+      "calculateFate": "Calcule quanto dinheiro eu preciso para {value}"
     }
   },
   "items": {
@@ -476,6 +558,7 @@
     "driveError": "API do Google Drive não pôde ser carregado",
     "driveSignIn": "Entrar no Google Drive",
     "driveSignOut": "Sair do Google Drive",
+    "driveSignInErrorScope": "Falha ao iniciar a sessão no drive! Por favor entre novamente e verifique a permissão necessária!",
     "synced": "Sincronizado",
     "waiting": "Aguardando...",
     "syncing": "Sincronizando...",
@@ -580,7 +663,13 @@
   },
   "achievement": {
     "title": "Conquistas",
-    "of": "de"
+    "of": "de",
+    "sort": "Mostrar não conquistados primeiro",
+    "search": "Procurar conquista",
+    "commissions": "Comissões",
+    "version": "Versão",
+    "type": "Tipo",
+    "searchError": "Não foi possível encontrar a conquista: {query}"
   },
   "furnishing": {
     "title": "Mobília",
@@ -598,6 +687,61 @@
     "hall": "Salão",
     "room": "Quarto {number}",
     "exteriorNum": "Exterior {number}",
-    "corridor": "Corredor"
+    "corridor": "Corredor",
+    "inventoryButton": "Inventário",
+    "listButton": "Lista",
+    "inventory": {
+      "title": "Inventário de Móveis",
+      "subtitle": "Algumas categorias especiais como paredes não são mostradas",
+      "all": "Todos",
+      "openSets": "Abrir Conjuntos"
+    },
+    "sets": {
+      "title": "Conjuntos de Móveis",
+      "subtitle": "Clique no ícone de móveis para mais detalhes, e você pode clicar no ícone de personagem para marcá-los! Abra o menu de Inventário acima para preencher sua contagem de móveis.",
+      "setPlaced": "Definir como colocado",
+      "setUnplaced": "Definir como não colocado",
+      "inInventory": "No inventário",
+      "available": "Disponível",
+      "used": "Usado em outro conjunto"
+    }
+  },
+  "weapon": {
+    "title": "Lista de Armas",
+    "subtitle": "Os atributos estão no nível máximo",
+    "name": "Nome",
+    "type": "Tipo",
+    "rarity": "Raridade",
+    "atk": "ATQ",
+    "secondary": "Secundário",
+    "critRate": "Taxa Crítica",
+    "critDamage": "Dano Crítico",
+    "em": "Proficiência Elemental",
+    "er": "Recarga de Energia",
+    "atkPercent": "ATQ",
+    "hpPercent": "Vida",
+    "defPercent": "DEF",
+    "physicalDamage": "Bônus de Dano Físico",
+    "bow": "Arco",
+    "polearm": "Lança",
+    "sword": "Espada",
+    "catalyst": "Catalisador",
+    "claymore": "Espadão",
+    "ascensionMaterial": "Materiais de Ascensão",
+    "asc": "Ascensão",
+    "lvl": "NVL",
+    "baseAtk": "ATQ Base",
+    "recommendedCharacter": "Personagens Recomendados"
+  },
+  "artifact": {
+    "title": "Lista de Artefatos",
+    "name": "Nome",
+    "maxRarity": "Máximo ★",
+    "bonus2": "Bônus de 2 peças",
+    "bonus4": "Bônus de 4 peças",
+    "domain": "Domínio",
+    "artifact": "Artefato",
+    "setPiece": "{piece} Bônus do conjunto",
+    "recommendedCharacter": "Personagens recomendados {piece} peças"
   }
 }
