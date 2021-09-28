@@ -22,6 +22,17 @@ export const eventsData = [
       url: 'https://mhy.link/071OHHA6',
       showOnHome: true,
     },
+    {
+      name: 'An Unforgettable Journey - Anniversary Web Event',
+      pos: '0% 55%',
+      image: 'an_unforgettable_journey.jpg',
+      start: '2021-09-28 04:00:00',
+      end: '2021-10-12 23:59:59',
+      color: '#5A8EBE',
+      zoom: '100%',
+      url: 'https://mhy.link/adfsJJA6',
+      showOnHome: true,
+    },
   ],
   [
     {
