@@ -7259,4 +7259,63 @@ export const weaponList = {
       },
     ],
   },
+  'luxurious_sea-lord': {
+    name: 'Luxurious Sea-Lord',
+    id: 'luxurious_sea-lord',
+    rarity: 4,
+    atk: 41,
+    secondary: 'Energy Recharge',
+    type: weapons.claymore,
+    source: 'Moonlight Merriment Event',
+    ascension: [
+      {
+        items: [
+          { item: itemList.grain_of_aerosiderite, amount: 3 },
+          { item: itemList.fragile_bone_shard, amount: 3 },
+          { item: itemList.slime_condensate, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.piece_of_aerosiderite, amount: 3 },
+          { item: itemList.fragile_bone_shard, amount: 12 },
+          { item: itemList.slime_condensate, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.piece_of_aerosiderite, amount: 6 },
+          { item: itemList.sturdy_bone_shard, amount: 6 },
+          { item: itemList.slime_secretions, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.bit_of_aerosiderite, amount: 3 },
+          { item: itemList.sturdy_bone_shard, amount: 12 },
+          { item: itemList.slime_secretions, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.bit_of_aerosiderite, amount: 6 },
+          { item: itemList.fossilized_bone_shard, amount: 9 },
+          { item: itemList.slime_concentrate, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.chunk_of_aerosiderite, amount: 4 },
+          { item: itemList.fossilized_bone_shard, amount: 18 },
+          { item: itemList.slime_concentrate, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
