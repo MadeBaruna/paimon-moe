@@ -106,6 +106,7 @@
         { label: $t('sidebar.furnishing'), href: '/furnishing' },
         { label: $t('sidebar.weapons'), href: '/weapons' },
         { label: $t('sidebar.artifacts'), href: '/artifacts' },
+        { label: $t('sidebar.fishing'), href: '/fishing' },
       ]}
     />
     <SidebarItem

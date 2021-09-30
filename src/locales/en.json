@@ -13,6 +13,7 @@
     "furnishing": "Furnishing",
     "weapons": "Weapons",
     "artifacts": "Artifacts",
+    "fishing": "Fishing",
     "settings": "Settings",
     "donate": "Donate"
   },
@@ -744,5 +745,11 @@
     "artifact": "Artifact",
     "setPiece": "{piece} Set Bonus",
     "recommendedCharacter": "Recommended Characters {piece} Set"
+  },
+  "fishing": {
+    "title": "Fishing Book",
+    "mondstadt": "Mondstadt",
+    "liyue": "Liyue",
+    "inazuma": "Inazuma"
   }
 }
