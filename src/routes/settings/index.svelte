@@ -35,12 +35,6 @@
   let arInput = '';
   let wlInput = '';
 
-  let changelogOpen = false;
-
-  function toggleChangelog() {
-    changelogOpen = !changelogOpen;
-  }
-
   function signIn() {
     gapi.auth2.getAuthInstance().signIn();
   }
@@ -264,7 +258,12 @@
 
 <div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8 max-w-screen-xl">
   <div class="bg-item rounded-xl mb-4 p-4">
-    <p class="text-white">{$t('settings.version')} <b>2.1</b></p>
+    <p class="text-white inline-block mr-4">{$t('settings.version')} <b>2.1</b></p>
+    <a href="/changelog">
+      <Button>
+        {$t('settings.changelog')}
+      </Button>
+    </a>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 flex flex-col">
     <p class="text-white">{$t('settings.multiple')}</p>
@@ -390,71 +389,5 @@
         </td>
       </tr>
     </table>
-  </div>
-  <div class="bg-item rounded-xl mb-4 p-4 text-white">
-    <p class="cursor-pointer" on:click={toggleChangelog}>
-      Changelog <Icon
-        className={`duration-100 ease-in ${changelogOpen ? 'transform rotate-180' : ''}`}
-        path={mdiChevronDown}
-      />
-    </p>
-    {#if changelogOpen}
-      <div transition:slide class="mt-4">
-        <pre
-          class="bg-background rounded-xl py-2 px-4 whitespace-pre-wrap">Future changelog will be posted on Discord https://discord.gg/4jjZnXvs
-or Check Github commit history https://github.com/MadeBaruna/paimon-moe/commits/main
-
-2021/04/06
-- Add Rosaria
-- Add rate up icon on detail banner
-- Update banner list
-- Update wish tally
-- Update timeline
-
-2021/03/31
-- Updated wording and layout on mobile
-- Add privacy policy
-
-2021/03/29
-- Add pity wish tally submission
-- Fix edit/delete manual wish input
-
-2021/03/20 
-- Add Windblume Ode
-- Fix some weapons data
-
-2021/03/17 
-- Fix wish import
-- Add new 1.4 weapons
-
-2021/03/13 
-- Add timeline page
-
-2021/03/09 
-- Add Auto Import Wish
-- Fix The Widsith data
-
-2021/03/02 
-- Add Hu Tao
-
-2021/02/26 
-- Add Staff of Homa, Lithic Spear, and Lithic Blade
-- Change weapon banner 5star pity
-        
-2021/02/03 
-- Add Xiao
-- Add Primordial Jade Cutter
-- Bug fixes
-
-2021/02/02 
-- Add resin approximation on todo list
-- Change todo today farmable item view
-- Add WL and AR setting for resin approximation
-
-2021/02/01 
-- Add detail to wish counter
-- Bug fixes</pre>
-      </div>
-    {/if}
   </div>
 </div>

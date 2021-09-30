@@ -574,7 +574,8 @@
       "cancel": "Cancel",
       "delete": "Delete",
       "reset": "Reset"
-    }
+    },
+    "changelog": "Changelog"
   },
   "privacypolicy": {
     "title": "Privacy Policy",
