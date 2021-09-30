@@ -36,16 +36,6 @@ export const eventsData = [
   ],
   [
     {
-      name: 'Legend of the Vagabond Sword',
-      pos: '0% 45%',
-      image: 'legend_of_the_vagabond_sword.png',
-      start: '2021-06-25 10:00:00',
-      end: '2021-07-08 03:59:59',
-      color: '#7A92FF',
-      zoom: '180%',
-      showOnHome: true,
-    },
-    {
       name: 'Lost Riches',
       pos: '0% 50%',
       image: 'lost_riches_2.jpg',
@@ -378,16 +368,6 @@ export const eventsData = [
     },
   ],
   [
-    {
-      name: "Paimon's Bargain - Barbara, Kaeya, and Royal",
-      pos: '0% 50%',
-      zoom: '150%',
-      start: '2021-06-01 04:00:00',
-      end: '2021-07-01 04:00:00',
-      color: '#B6A1EA',
-      image: 'paimon_bargain.png',
-      description: 'Now selling: Barbara, Kaeya, and Royal Weapons.',
-    },
     {
       name: "Paimon's Bargain - Fischl, Xiangling, and Blackcliff",
       pos: '0% 50%',
