@@ -666,7 +666,10 @@
     "of": "dari",
     "sort": "Urutkan yang belum didapatkan dulu",
     "search": "Cari achievement",
-    "commissions": "misi harian"
+    "commissions": "komisi",
+    "version": "Versi",
+    "type": "Tipe",
+    "searchError": "Tidak dapat menemukan achievement: {query}"
   },
   "furnishing": {
     "title": "Furnitur",
