@@ -1,4 +1,4 @@
-# Network N Ads.txt file 2021-09-16 13:34:43
+# Network N Ads.txt file 2021-09-29 12:14:16
 
 # Display
 google.com, pub-6177961780147591, DIRECT, f08c47fec0942fa0
@@ -81,6 +81,7 @@ yahoo.com, 59100, DIRECT
 conversantmedia.com, 42024, DIRECT, 03113cd04947736d
 smartadserver.com,4125,RESELLER,060d053dcf45cbf3
 contextweb.com, 562541, RESELLER, 89ff185a4c4e857c
+themediagrid.com,jtqkmp,RESELLER,35d5010d7789b49d
 smaato.com, 1100046863, DIRECT, 07bcf65f187117b4
 smaato.com, 1100004890, DIRECT, 07bcf65f187117b4
 adcolony.com, 496220845654deec, RESELLER, 1ad675c9de6b5176
@@ -231,6 +232,7 @@ appnexus.com, 3538, RESELLER
 appnexus.com, 3539, RESELLER
 appnexus.com, 3540, RESELLER
 appnexus.com, 7290, RESELLER
+sharethrough.com, 8af06d76, DIRECT, d53b998a7bd4ecd2
 network-n.com, pa_1f00a408, DIRECT
 network-n.com, pa_e8715185, DIRECT
 network-n.com, pa_601d8ead, DIRECT
@@ -458,3 +460,5 @@ telaria.com, mb9eo-oqsbf, RESELLER, 1a4e959a1b50034a
 adform.com, 2078, RESELLER
 Media.net, 8CU695QH7, RESELLER
 emxdgt.com, 1349, RESELLER, 1e1d41537f7cad7f
+xandr.com, 13171, RESELLER
+supply.colossusssp.com, 290, RESELLER, 6c5b49d96ec1b458

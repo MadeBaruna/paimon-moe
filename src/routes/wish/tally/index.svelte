@@ -32,10 +32,13 @@
         id={300019}
         featured={banners.characters[18].featured}
       />
-      <Ad class="my-4 flex justify-center" type="mobile" variant="mpu" id="2" />
-      <Ad type="mobile" variant="lb" id="1" />
+      <div class="my-4">
+        <Ad class="flex justify-center" type="mobile" variant="mpu" id="2" />
+        <Ad type="desktop" variant="lb" id="3" />
+        <Ad type="desktop" variant="lb" id="2" />
+        <Ad type="mobile" variant="lb" id="1" />
+      </div>
       <ItemNew type="weapon" banner={banners.weapons[17]} id={400018} featured={banners.weapons[17].featured} />
-      <Ad class="my-4" type="desktop" variant="lb" id="3" />
       <ItemNew
         type="character"
         banner={banners.characters[17]}
