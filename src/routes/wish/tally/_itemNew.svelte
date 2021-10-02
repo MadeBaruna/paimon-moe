@@ -106,11 +106,6 @@
     max: 0,
   };
 
-  const rareInclude = {
-    300011: ['rosaria'],
-    300012: ['yanfei', 'noelle', 'diona'],
-    300013: ['xingqiu', 'beidou', 'xinyan'],
-  };
   let promotedRarePercentage = 0;
 
   let legendaryList = [];
@@ -143,10 +138,7 @@
           featuredValues[i] = {
             total: item.count,
             guaranteed: item.guaranteed,
-            percentage:
-              (item.count /
-                (type === 'character' && id !== 200001 && i === 1 ? data.total.rare : data.total.legendary)) *
-              100,
+            percentage: (item.count / (type === 'character' && i === 1 ? data.total.rare : data.total.legendary)) * 100,
           };
         }
       }
@@ -157,8 +149,11 @@
 
         for (let i = 0; i < data.list.length; i++) {
           const feat = data.list[i];
-          const index = feat.type === 'character' ? 0 : 1;
-          values[index] += feat.count;
+          if (feat.type === 'character' && characters[feat.name].rarity === 5) {
+            values[0] += feat.count;
+          } else if (feat.type === 'weapon' && weaponList[feat.name].rarity === 5) {
+            values[1] += feat.count;
+          }
         }
 
         featuredValues = [
