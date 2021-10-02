@@ -18,14 +18,14 @@
   },
   "home": {
     "welcome": "Chào mừng nhà lữ hành đến với Paimon.moe! 👋",
-    "message": "Người đồng hành tuyệt vời của bạn! Giúp bạn lập kế hoạch để cày cuốc, bao gồm công cụ tính toán nguyên liệu cần đột phá, theo dõi tiến độ của những việc bạn cần làm và số lần cầu nguyện của bạn.",
+    "message": "Người đồng hành tuyệt vời của bạn! Giúp bạn lập kế hoạch để cày cuốc, bao gồm công cụ tính toán nguyên liệu cần đột phá, theo dõi tiến độ của những việc bạn cần làm và lịch sử cầu nguyện của bạn.",
     "visitor": "{count} nhà lữ hành đã ghé thăm trong 7 ngày qua",
     "banner": {
       "featured": [
         "Eula"
       ],
       "summoned": "Đã cầu nguyện",
-      "percentage": "từ {rarity}",
+      "percentage": "trên toàn bộ {rarity}",
       "avg": "Pity trung bình",
       "subtitle": "Được tính toán từ dữ liệu của {user} người dùng của paimon.moe",
       "detail": "Lượt Cầu Nguyện Toàn Cầu"
@@ -37,7 +37,7 @@
       "time": "Thời Gian",
       "name": "Vật phẩm",
       "pity": "Pity",
-      "detail": "Số Lần Cầu Nguyện"
+      "detail": "Lịch Sử Cầu Nguyện"
     },
     "reminder": {
       "message": "Bạn có thể bật thông báo 🔔 cho Máy Biến đổi Tham Số và Đăng nhập hằng ngày của Hoyolab ở đây! Ấn vào nút nhắc nhở bên dưới để bắt đầu!",
@@ -63,7 +63,7 @@
       "detail": "Công cụ tính"
     },
     "twitter": {
-      "title": "Hãy theo dõi Twitter của paimon.moe, ở đấy sẽ thỉnh thoảng đăng sneak peak những gì mà tôi đang phát triển và thông tinh mới nhất của paimon.moe!",
+      "title": "Hãy theo dõi Twitter của paimon.moe, thi thoảng sẽ có một vài sneak peak về những gì mà tôi đang phát triển và thông tin mới nhất của paimon.moe!",
       "detail": "Theo dõi trên Twitter"
     },
     "achievement": {
@@ -116,7 +116,7 @@
     "faq": "Cung Mệnh được tính từ Lịch Sử Cầu Nguyện của bạn. Nếu lịch sử cầu nguyện của bạn hết hạn 6 tháng hoặc bạn mua cung mệnh nhân vật từ cửa hàng hoặc sự kiện, thông tin có thể sẽ sai sót! Nhưng bạn có thể tự chỉnh sửa bằng cánh ấn vào cây bút kế bên tên nhân vật."
   },
   "wish": {
-    "title": "Số Lần Cầu Nguyện",
+    "title": "Lịch Sử Cầu Nguyện",
     "autoImport": "Tự Động Nhập",
     "helpAndSetting": "Trợ giúp & Cài đặt",
     "helps": "Trợ giúp",
@@ -197,7 +197,7 @@
           "Nếu bạn không muốn chia sẻ link của mình, bạn có thể dùng mã lệnh dưới đây để nhập trực tiếp từ dữ liệu trên PC (chọn PC Local) "
         ],
         "q6": "Tại sao tôi đã làm như hướng dẫn nhưng lại gặp phải lỗi API?",
-        "a6": "Hãy chắc chắn rằng bạn đã copy đủ văn bản (ấn giữ và chọn Select All nêu bạn sử dụng điện thoại); bạn có thể bỏ qua một số văn bản cần thiết để nhập dữ liệ của paimon.moe hoạt động.",
+        "a6": "Hãy chắc chắn rằng bạn đã copy đủ văn bản (ấn giữ và chọn Select All nếu bạn sử dụng điện thoại); có lẽ bạn đã copy thiếu một số văn bản cần thiết để paimon.moe có thể nhập chính xác.",
         "q7": "Paimon.moe không hiển thị tất cả lịch sử cầu nguyện của tôi!?",
         "a7": "Lịch sử cầu nguyện trên 6 tháng sẽ biến mất hoàn toàn từ server của Mihoyo, nên nếu như bạn không sao lưu dữ liệu trước 6 tháng, nó đã biến mất hoàn toàn"
       },
@@ -215,7 +215,7 @@
           "Ấn vào Lịch Sử",
           "Đợi nó load",
           "Tắt Wi-Fi và dữ liệu di động",
-          "Sau đó aand tải lại ở góc trên cùng bên phải",
+          "Sau đó ấn tải lại ở góc trên cùng bên phải",
           "Trang web sẽ hiển thị error và hiện cho bạn văn bản với font chữ màu đen",
           "Ấn giữ văn bản và ấn chọn tất cả, sau đó sao chép văn bản đó (Đừng copy một phần của văn bản)",
           "Mở Wifi và dữ liệu di động",
@@ -245,10 +245,10 @@
           "Bấm Start rồi gõ Powershell trong thanh tìm kiếm",
           "Mở Windows Powershell rồi nhập mã lệnh dưới đây",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
-          "Bạn có thể xem script ở đây",
+          "Bạn có thể xem script",
           "ở đây",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
-          "Ấn enter để chạy script, sau đó làm theo hướng dẫn tại đây",
+          "Ấn enter để chạy script, sau đó làm theo hướng dẫn được hiển thị trên màn hình",
           "Sau đó, dán kết quá của script ở phần nhập bên dưới",
           "Dán kết quả ở đây...",
           "Tính năng này vẫn đang trong giai đoạn beta, hãy sao lưu một bản sao trước, bằng cách vào Trợ giúp & Cài đặt sau đó ấn Xuất ra Excel."
@@ -262,8 +262,8 @@
       "takagg": "TakaGG Gacha Export",
       "notice": [
         "Tính năng này vẫn đang trong giai đoạn BETA, hãy sao lưu một bản sao trước, bằng cách vào phần Cài đặt sau đó ấn Xuất ra Excel!",
-        "Cầu nguyện của cùng mốc thời gian và vật phẩm sẽ KHÔNG bị đụng đến (nên những cầu nguyện hiện có sẽ không bị thay thế)",
-        "Chỉ thêm cầu nguyện váo trước, có nghĩa là sẽ không có gì được chèn vào ở giữa danh sách",
+        "Cầu nguyện có cùng mốc thời gian và tên vật phẩm sẽ KHÔNG bị ảnh hưởng (nên những cầu nguyện hiện có sẽ không bị thay thế)",
+        "Chỉ thêm những lượt cầu nguyện ở đầu và cuối của danh sách được nhập, có nghĩa là sẽ không có gì được chèn thêm vào giữa lịch sử cầu nguyện hiện tại cả",
         "Hiện tại chỉ hỗ trợ excel có vật phẩm tên TIẾNG ANH"
       ],
       "selectFile": {
@@ -377,7 +377,7 @@
     },
     "note": [
       "Lịch sử cầu nguyên chưa được cập nhật tự động, vui lòng nhập lại để cập nhật lịch sử của bạn!",
-      "Paimon.moe không thể truy cập lịch sử cầu nguyện lớn hơn 6 tháng, vì nó đã bị xóa khỏi server của MiHoYo, nên lượt cầu nguyện cũ của bạn có thể sẽ không hiển thị.",
+      "Paimon.moe chỉ có thể nhập lịch sử cầu nguyện từ 6 tháng gần nhất, vì phần còn lại đã bị xóa khỏi server của miHoYo, nên lượt cầu nguyện cũ của bạn có thể sẽ không hiển thị.",
       "Dữ liệu đã được lưu trên trình duyệt của bạn, nên nó sẽ bị xóa nếu bạn xóa cache của trình duyệt! Hãy bật Google Drive sync trong setting để sao lưu dữ liệu của bạn!"
     ]
   },
@@ -539,7 +539,7 @@
     "title": "Timeline",
     "localTime": "Hiển thị thời gian địa phương",
     "starting": "Bắt đầu trong",
-    "ending": "Kết thúc lúc",
+    "ending": "Kết thúc sau",
     "live": "Đang trực tiếp!",
     "finished": "Đã hoàn thành"
   },
@@ -624,7 +624,7 @@
   },
   "footer": {
     "affliate": "Paimon.moe không liên kết với miHoYo.",
-    "copyright": "Genshin Impact, nội dung và dữ liệu là thương hiệu và bản quyển thuộc miHoYo.",
+    "copyright": "Genshin Impact, nội dung và dữ liệu trò chơi là thương hiệu và bản quyền thuộc miHoYo.",
     "discord": "Tham gia Discord của chúng tôi",
     "community": "Liên kết Cộng đồng",
     "official": "Liên Kết Chính Thức"
