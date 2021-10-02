@@ -46,9 +46,9 @@
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('fishing.title')}</h1>
   {#each Object.entries(spots) as [id, location]}
     <h3 class="font-display px-4 md:px-8 font-black text-2xl text-white mt-4 mb-2">{$t(`fishing.${id}`)}</h3>
-    <div class="px-8 w-full">
+    <div class="px-4 md:px-8 w-full">
       {#each location as spot}
-        <div class="flex w-full bg-item rounded-xl p-4 mb-2">
+        <div class="flex flex-col items-center md:items-start md:flex-row w-full bg-item rounded-xl p-4 mb-2">
           <div class="mr-4">
             <img
               class="w-48 h-48 rounded-md"
@@ -58,22 +58,24 @@
               title={spot.name}
             />
           </div>
-          <div class="flex flex-wrap" style="margin: -4px; height: fit-content;">
+          <div
+            class="flex flex-wrap pt-6 md:pt-0 justify-center md:justify-start"
+            style="margin: -4px; height: fit-content;"
+          >
             {#each spot.fish as fish}
               <div
-                class="w-24 flex flex-col justify-between rounded-md bg-background-secondary relative"
-                style="margin: 4px 12px 4px 4px;"
+                class="w-20 md:w-24 flex flex-col justify-between rounded-md bg-background-secondary relative"
+                style="margin: 4px 12px 12px 4px;"
               >
-                <div class="w-24 h-24 flex items-center justify-center">
+                <div class="w-20 md:w-24 h-20 md:h-24 flex items-center justify-center">
                   <img
-                    class="w-24 h-auto"
-                    style="min-width: 96px;"
+                    class="w-20 md:w-24 h-auto"
                     src="/images/fishing/fish/{fish}.png"
                     alt={fishList[fish].name}
                     title={fishList[fish].name}
                   />
                 </div>
-                <span class="text-sm text-white leading-none mt-1 text-center">{fishList[fish].name}</span>
+                <span class="text-xs md:text-sm text-white leading-none mt-1 text-center">{fishList[fish].name}</span>
                 <div
                   class="absolute rounded-full flex bg-background-secondary"
                   style="top: -8px; left: -8px; background: rgba(0, 0, 0, 0.50);"
