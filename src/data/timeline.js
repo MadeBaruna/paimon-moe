@@ -398,6 +398,16 @@ export const eventsData = [
       image: 'paimon_bargain.png',
       description: 'Now selling: Ningguang, Xingqiu, and Blackcliff Weapons.',
     },
+    {
+      name: "Paimon's Bargain - Razor, Amber, and Royal",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2021-10-01 04:00:00',
+      end: '2021-11-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Razor, Amber, and Royal Weapons.',
+    },
   ],
   [
     {
