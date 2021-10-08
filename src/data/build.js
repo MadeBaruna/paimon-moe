@@ -1026,7 +1026,7 @@ export const builds = {
         mainStats: {
           sands: 'ATK%',
           goblet: 'Cryo DMG',
-          circlet: 'Crit Rate',
+          circlet: 'Crit DMG',
         },
         subStats: ['Crit Rate / DMG', 'ATK%', 'Energy Recharge', 'Flat ATK'],
         talent: ['Normal Attack', 'Burst', 'Skill'],
