@@ -24,6 +24,7 @@
   import { fromRemote, readSave } from '../../stores/saveManager';
   import { getTimeOffset, server } from '../../stores/server';
   import { pushToast } from '../../stores/toast';
+  import Ad from '../../components/Ad.svelte';
 
   Chart.defaults.global.defaultFontColor = '#cbd5e0';
   Chart.defaults.global.defaultFontFamily = 'Poppins';
@@ -627,6 +628,8 @@
       </div>
     </div>
   {/if}
+  <Ad type="desktop" variant="lb" id="2" />
+  <Ad type="mobile" variant="lb" id="1" />
 </div>
 
 <style>

@@ -210,6 +210,17 @@ export const banners = {
       featured: ['sangonomiya_kokomi'],
       featuredRare: ['rosaria', 'beidou', 'xingqiu'],
     },
+    {
+      name: 'Farewell of Snezhnaya',
+      image: 3,
+      shortName: 'Tartaglia',
+      start: '2021-10-13 06:00:00',
+      end: '2021-11-02 17:59:59',
+      color: '#4ED8F3',
+      featured: ['tartaglia'],
+      featuredRare: ['ningguang', 'chongyun', 'yanfei'],
+      timezoneDependent: true,
+    },
   ],
   weapons: [
     {
@@ -392,6 +403,16 @@ export const banners = {
       color: '#424ef5',
       featured: ['primordial_jade_cutter', 'everlasting_moonglow'],
       featuredRare: ['the_flute', 'favonius_greatsword', 'dragons_bane', 'favonius_codex', 'the_stringless'],
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 19,
+      start: '2021-10-13 06:00:00',
+      end: '2021-11-02 17:59:59',
+      shortName: 'Polar Star',
+      color: '#f542c8',
+      featured: ['polar_star', 'memory_of_dust'],
+      featuredRare: ['akuoumaru', 'favonius_sword', 'favonius_lance', 'eye_of_perception', 'rust'],
     },
   ],
 };
