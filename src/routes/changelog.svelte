@@ -13,6 +13,8 @@
 - Update weapons
 - Update achievements
 - Update wish tally
+- Add file size to Google Drive sync conflict popup
+- Add export and import data function
 
 2021/09/30
 - Add Fishing book

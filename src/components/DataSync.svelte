@@ -3,7 +3,7 @@
 
   import dayjs from 'dayjs';
   import { onMount, getContext, setContext } from 'svelte';
-  import { driveSignedIn, driveError, driveLoading, saveId, synced } from '../stores/dataSync';
+  import { driveSignedIn, driveError, driveLoading, saveId, synced, driveEmail } from '../stores/dataSync';
   import { getLocalSaveJson, updateSave, updateTime, UPDATE_TIME_KEY } from '../stores/saveManager';
 
   import SyncConflictModal from '../components/SyncConflictModal.svelte';
@@ -81,6 +81,8 @@
     driveLoading.set(false);
 
     if (finalStatus) {
+      const email = gapi.auth2.getAuthInstance().currentUser.get().getBasicProfile().getEmail();
+      driveEmail.set(email);
       getFiles();
     } else {
       synced.set(true);
@@ -194,6 +196,12 @@
       const data = await getData();
       remoteSave = data;
 
+      console.log(JSON.stringify(remoteSave));
+      const remoteSize = new Blob([JSON.stringify(remoteSave)]).size / 1000;
+
+      const localSave = await getLocalSaveJson();
+      const localSize = new Blob([localSave]).size / 1000;
+
       const remoteTime = dayjs(data[UPDATE_TIME_KEY]);
       if ($updateTime !== null && remoteTime.diff($updateTime) !== 0) {
         console.log('DRIVE SYNC CONFLICT!');
@@ -202,6 +210,8 @@
           {
             remoteTime: remoteTime,
             localTime: $updateTime,
+            remoteSize,
+            localSize,
             downloadBackup: exportData,
             useRemote: useRemoteData,
             useLocal: useLocalData,

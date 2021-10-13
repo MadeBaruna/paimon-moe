@@ -564,6 +564,7 @@
     "synced": "Synced",
     "waiting": "Waiting...",
     "syncing": "Syncing...",
+    "syncStatus": "Sync Status:",
     "lastSync": "Last Sync:",
     "feedback": "If you found any bugs, wrong data, or any other feedback, please leave a message on",
     "or": "or",
@@ -575,7 +576,18 @@
       "delete": "Delete",
       "reset": "Reset"
     },
-    "changelog": "Changelog"
+    "changelog": "Changelog",
+    "exportDescription": "You can export & import your Paimon.moe data here",
+    "exportButton": "Export & Import Data",
+    "export": "Export Data",
+    "download": "Download Data",
+    "import": "Import Data",
+    "selectFile": "Select JSON File",
+    "exportInfo": "Download a copy of all your data saved in Paimon.moe",
+    "importWarning": "Remember to backup your data by exporting first! All data will be replaced!",
+    "importContinue": "Continue",
+    "importSuccess": "Import Success! Reloading in 5 seconds...",
+    "importFailed": "Import Failed!"
   },
   "privacypolicy": {
     "title": "Privacy Policy",

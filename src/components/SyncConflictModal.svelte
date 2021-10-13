@@ -1,15 +1,22 @@
 <script>
   import { mdiCloudAlert, mdiContentSave, mdiDownload, mdiFile, mdiGoogleDrive, mdiLoading, mdiUpload } from '@mdi/js';
   import { t } from 'svelte-i18n';
-  
+
   import Button from './Button.svelte';
   import Icon from './Icon.svelte';
 
   export let remoteTime;
   export let localTime;
+  export let remoteSize;
+  export let localSize;
   export let downloadBackup = () => {};
   export let useRemote = () => {};
   export let useLocal = () => {};
+
+  const numberFormat = Intl.NumberFormat('en', {
+    maximumFractionDigits: 1,
+    minimumFractionDigits: 0,
+  });
 
   let loading = false;
 
@@ -38,7 +45,10 @@
   <p class="font-bold">
     <Icon path={mdiGoogleDrive} className="mr-2" />
     {$t('sync.googleDriveData')} -
-    <span class={remoteNewer ? 'text-green-400' : 'text-red-400'}>{remoteNewer ? $t('sync.newer') : $t('sync.older')}</span>
+    <span class={remoteNewer ? 'text-green-400' : 'text-red-400'}>
+      {remoteNewer ? $t('sync.newer') : $t('sync.older')}
+    </span>
+    <span>- {numberFormat.format(remoteSize)} KB</span>
   </p>
   <p class="text-gray-400 mt-1">{$t('sync.lastModified')}: {remoteFormatted}</p>
   <Button disabled={loading} className="mt-2 w-full" on:click={useRemoteData}>
@@ -50,7 +60,10 @@
   <p class="font-bold">
     <Icon path={mdiFile} className="mr-2" />
     {$t('sync.localData')} -
-    <span class={remoteNewer ? 'text-red-400' : 'text-green-400'}>{remoteNewer ? $t('sync.older') : $t('sync.newer')}
+    <span class={remoteNewer ? 'text-red-400' : 'text-green-400'}>
+      {remoteNewer ? $t('sync.older') : $t('sync.newer')}
+    </span>
+    <span>- {numberFormat.format(localSize)} KB</span>
   </p>
   <p class="text-gray-400 mt-1">{$t('sync.lastModified')}: {localFormatted}</p>
   <Button disabled={loading} className="mt-2 w-full" on:click={useLocalData}>

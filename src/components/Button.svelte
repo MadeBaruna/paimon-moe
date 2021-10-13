@@ -39,9 +39,11 @@
 
 <button
   {disabled}
-  class={`${textColor} border-2 border-white border-opacity-25 ${
-    rounded ? 'rounded-xl' : 'rounded-none'
-  } ${px} ${py} transition duration-100
-     hover:${borderColor} focus:outline-none focus:${borderColor} disabled:opacity-50 disabled:border-gray-600 ${className}`}
-  on:click><slot /></button
+  class="{textColor} border-2 border-white border-opacity-25 {rounded
+    ? 'rounded-xl'
+    : 'rounded-none'} {px} {py} transition duration-100
+     hover:{borderColor} focus:outline-none focus:{borderColor} disabled:opacity-50 disabled:border-gray-600 {className}"
+  on:click
 >
+  <slot />
+</button>

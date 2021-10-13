@@ -2,9 +2,8 @@
   import { t } from 'svelte-i18n';
   import localforage from 'localforage';
 
-  import { mdiCheckCircleOutline, mdiChevronDown, mdiDiscord, mdiGithub, mdiGoogleDrive, mdiLoading } from '@mdi/js';
+  import { mdiCheckCircleOutline, mdiDiscord, mdiGithub, mdiGoogleDrive, mdiLoading, mdiSwapVertical } from '@mdi/js';
   import { getContext, onMount } from 'svelte';
-  import { slide } from 'svelte/transition';
 
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
@@ -13,8 +12,17 @@
   import DeleteAccountModal from './_deleteAccount.svelte';
   import ResetAccountModal from './_resetAccount.svelte';
   import DonateModal from '../../components/DonateModal.svelte';
+  import ExportImportModal from './_importExportModal.svelte';
 
-  import { driveSignedIn, driveError, driveLoading, synced, localModified, lastSyncTime } from '../../stores/dataSync';
+  import {
+    driveSignedIn,
+    driveError,
+    driveLoading,
+    synced,
+    localModified,
+    lastSyncTime,
+    driveEmail,
+  } from '../../stores/dataSync';
   import { server, ar, wl } from '../../stores/server';
   import { accounts, getAccountPrefix, selectedAccount } from '../../stores/account';
   import { pushToast } from '../../stores/toast';
@@ -240,6 +248,17 @@
     );
   }
 
+  function openImportExportModal() {
+    openModal(
+      ExportImportModal,
+      {},
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '500px' },
+      },
+    );
+  }
+
   onMount(() => {
     mounted = true;
   });
@@ -319,8 +338,9 @@
         <Icon path={mdiGoogleDrive} className="mr-2" />
         {$t('settings.driveSignOut')}
       </Button>
+      <p class="text-white mt-4">{$driveEmail}</p>
       <p class="text-white mt-4">
-        Sync Status:
+        {$t('settings.syncStatus')}
         <span class={`font-bold ${isSynced ? 'text-green-400' : 'text-yellow-400'}`}>
           {isSynced
             ? $t('settings.synced')
@@ -338,6 +358,15 @@
         <p class="text-gray-400">{$t('settings.lastSync')} {$lastSyncTime.format('dddd, MMMM D, YYYY h:mm:ss A')}</p>
       {/if}
     {/if}
+  </div>
+  <div class="bg-item rounded-xl mb-4 p-4 text-white">
+    <p class="text-white mb-2">{$t('settings.exportDescription')}</p>
+    <div class="flex">
+      <Button className="mr-4" on:click={openImportExportModal}>
+        <Icon path={mdiSwapVertical} className="mr-2" />
+        {$t('settings.exportButton')}
+      </Button>
+    </div>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 text-white">
     {$t('settings.feedback')}
