@@ -53,14 +53,14 @@
             this={i < showOld.length - 3 ? ItemNew : Item}
             type="character"
             banner={banners.characters[banners.characters.length - 3 - i]}
-            id={300017 - i}
+            id={300018 - i}
             featured={banners.characters[banners.characters.length - 3 - i].featured}
           />
           <svelte:component
             this={i < showOld.length - 3 ? ItemNew : Item}
             type="weapon"
             banner={banners.weapons[banners.weapons.length - 3 - i]}
-            id={400016 - i}
+            id={400017 - i}
             featured={banners.weapons[banners.weapons.length - 3 - i].featured}
           />
         {:else}
