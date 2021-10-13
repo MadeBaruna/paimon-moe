@@ -820,4 +820,8 @@ export const itemList = {
   sango_pearl: { id: 'sango_pearl', name: 'Sango Pearl' },
   dew_of_repudiation: { id: 'dew_of_repudiation', name: 'Dew of Repudiation', rarity: 5 },
   hellfire_butterfly: { id: 'hellfire_butterfly', name: 'Hellfire Butterfly', rarity: 5 },
+
+  concealed_claw: { id: 'concealed_claw', name: 'Concealed Claw' },
+  concealed_unguis: { id: 'concealed_unguis', name: 'Concealed Unguis' },
+  concealed_talon: { id: 'concealed_talon', name: 'Concealed Talon' },
 };
