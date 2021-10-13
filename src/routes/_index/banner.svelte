@@ -13,16 +13,16 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    sangonomiya_kokomi: {
-      name: 'Sangonomiya Kokomi',
+    tartaglia: {
+      name: 'Tartaglia',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300019;
-  const image = 'kokomi.png';
+  const bannerId = 300020;
+  const image = 'tartaglia.png';
 
   let loading = true;
   let user = '';
@@ -72,7 +72,7 @@
         <div
           class="flex flex-col pt-2"
           style="background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
-          {i === 0 ? 'margin-right: 5%;' : ''}"
+          {i === 0 ? 'margin-right: 0%;' : ''}"
         >
           <h3 class="text-3xl mr-4 font-black leading-6 text-right">
             {#if loading}

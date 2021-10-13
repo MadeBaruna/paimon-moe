@@ -28,24 +28,24 @@
       <Ad class="my-4" type="desktop" variant="lb" id="1" />
       <ItemNew
         type="character"
-        banner={banners.characters[18]}
-        id={300019}
-        featured={banners.characters[18].featured}
+        banner={banners.characters[19]}
+        id={300020}
+        featured={banners.characters[19].featured}
       />
-      <div class="my-4">
+      <div class="mt-2 mb-4">
         <Ad class="flex justify-center" type="mobile" variant="mpu" id="2" />
         <Ad type="desktop" variant="lb" id="3" />
         <Ad type="desktop" variant="lb" id="2" />
         <Ad type="mobile" variant="lb" id="1" />
       </div>
-      <ItemNew type="weapon" banner={banners.weapons[17]} id={400018} featured={banners.weapons[17].featured} />
+      <ItemNew type="weapon" banner={banners.weapons[18]} id={400019} featured={banners.weapons[18].featured} />
       <ItemNew
         type="character"
-        banner={banners.characters[17]}
-        id={300018}
-        featured={banners.characters[17].featured}
+        banner={banners.characters[18]}
+        id={300019}
+        featured={banners.characters[18].featured}
       />
-      <ItemNew type="weapon" banner={banners.weapons[16]} id={400017} featured={banners.weapons[16].featured} />
+      <ItemNew type="weapon" banner={banners.weapons[17]} id={400018} featured={banners.weapons[17].featured} />
       <ItemNew type="character" banner={banners.standard[0]} id={200001} />
       {#each showOld as show, i}
         {#if show}
