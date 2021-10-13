@@ -1,4 +1,4 @@
-# Network N Ads.txt file 2021-09-29 12:14:16
+# Network N Ads.txt file 2021-10-12 13:58:27
 
 # Display
 google.com, pub-6177961780147591, DIRECT, f08c47fec0942fa0
@@ -49,7 +49,26 @@ pubmatic.com, 159110, RESELLER, 5d62403b186f2ace
 improvedigital.com, 1790, RESELLER
 onetag.com, 6b859b96c564fbe, RESELLER
 onetag.com, 74d276d460678b8, DIRECT
+yahoo.com, 58905, RESELLER, e1a5b5b6e3255540
+aol.com, 58905, RESELLER, e1a5b5b6e3255540
+appnexus.com, 13099, RESELLER
+smartadserver.com, 4111, RESELLER
 conversantmedia.com, 100316, RESELLER, 03113cd04947736d
+yieldmo.com, 2850174797239755356, DIRECT
+yieldmo.com, 2850176953179120222, DIRECT
+contextweb.com, 561118, RESELLER, 89ff185a4c4e857c
+appnexus.com, 7911, RESELLER
+rhythmone.com, 3463482822,RESELLER,a670c89d4a324e47
+video.unrulymedia.com, 3463482822, RESELLER
+rubiconproject.com, 17070, RESELLER, 0bfd66d529a55807
+pubnative.net, 1007284, RESELLER, d641df8625486a7b
+pubnative.net, 1007285, RESELLER, d641df8625486a7b
+pubnative.net, 1007286, RESELLER, d641df8625486a7b
+admanmedia.com, 746, RESELLER
+pubmatic.com, 160648, RESELLER, 5d62403b186f2ace
+indexexchange.com, 194520, RESELLER, 50b1c356f2c5c8fc
+onetag.com, 664e107d9f2b748, RESELLER
+conversantmedia.com, 100270, RESELLER, 03113cd04947736d
 aps.amazon.com,26c60b4f-549a-4efd-8ae0-f00e07c46204,DIRECT
 pubmatic.com,157150,RESELLER,5d62403b186f2ace
 pubmatic.com, 160006, RESELLER, 5d62403b186f2ace
@@ -269,11 +288,11 @@ network-n.com, pa_9435d9ba, DIRECT
 network-n.com, nn_8bb4db7b, DIRECT
 network-n.com, nn_ec266886, DIRECT
 network-n.com, nn_340c3679, DIRECT
-network-n.com, nn_3bd057d5, DIRECT
+network-n.com, pa_cefd0185, DIRECT
 network-n.com, nn_f75084c9, DIRECT
 network-n.com, pa_9e3ef9d5, DIRECT
 network-n.com, nn_0c0a2f6a, DIRECT
-network-n.com, nn_c6273de7, DIRECT
+network-n.com, pa_6f8e433a, DIRECT
 network-n.com, nn_52929841, DIRECT
 network-n.com, nn_16fa43c0, DIRECT
 network-n.com, pa_709fd813, DIRECT
@@ -329,12 +348,12 @@ network-n.com, pa_5f907e2a, DIRECT
 network-n.com, nn_52408c26, DIRECT
 network-n.com, pa_17cde183, DIRECT
 network-n.com, nn_d590fc4b, DIRECT
-network-n.com, nn_87aaeabd, DIRECT
+network-n.com, pa_e144c3fb, DIRECT
 network-n.com, pa_695cef04, DIRECT
 network-n.com, nn_20819473, DIRECT
 network-n.com, nn_1f312a68, DIRECT
-network-n.com, nn_440b14af, DIRECT
-network-n.com, nn_11e19252, DIRECT
+network-n.com, pa_5b7caaf0, DIRECT
+network-n.com, pa_cfc7cf7f, DIRECT
 network-n.com, pa_8b270543, DIRECT
 network-n.com, pa_17e2f1c8, DIRECT
 network-n.com, pa_ed7b677a, DIRECT
@@ -369,7 +388,7 @@ network-n.com, pa_43ea0a09, DIRECT
 network-n.com, pa_2243b60b, DIRECT
 network-n.com, nn_7004e887, DIRECT
 network-n.com, pa_39bf5b96, DIRECT
-network-n.com, nn_fc69d8ef, DIRECT
+network-n.com, pa_c201a0b6, DIRECT
 network-n.com, nn_eef26576, DIRECT
 network-n.com, nn_c73f329c, DIRECT
 network-n.com, pa_6cdbf87f, DIRECT
@@ -415,6 +434,8 @@ network-n.com, pa_a276e152, DIRECT
 network-n.com, pa_a730b684, DIRECT
 network-n.com, pa_a863cb34, DIRECT
 network-n.com, pa_3f85e405, DIRECT
+network-n.com, pa_c201a0b6, DIRECT
+network-n.com, pa_cddb4912, DIRECT
 
 # Video
 EMXDGT.com,1309, DIRECT, 1e1d41537f7cad7f
@@ -442,10 +463,10 @@ aps.amazon.com,968a0f5c-e5ed-4ba9-bf43-8be1f5b68988,DIRECT
 pubmatic.com, 160887, RESELLER, 5d62403b186f2ace
 pubmatic.com, 160887, DIRECT, 5d62403b186f2ace
 primis.tech, 28588, DIRECT, b6b21d256ef43532
-Sekindo.com, 28588, DIRECT, b6b21d256ef43532
 spotxchange.com, 84294, RESELLER, 7842df1d2fe2db34
 spotx.tv, 84294, RESELLER, 7842df1d2fe2db34
 advertising.com, 7372, RESELLER
+yahoo.com, 59260, RESELLER
 pubmatic.com, 156595, RESELLER, 5d62403b186f2ace
 google.com, pub-1320774679920841, RESELLER, f08c47fec0942fa0
 openx.com, 540258065, RESELLER, 6a698e2ec38604c6
@@ -458,7 +479,7 @@ contextweb.com, 562350, RESELLER, 89ff185a4c4e857c
 tremorhub.com, mb9eo-oqsbf, RESELLER, 1a4e959a1b50034a
 telaria.com, mb9eo-oqsbf, RESELLER, 1a4e959a1b50034a
 adform.com, 2078, RESELLER
-Media.net, 8CU695QH7, RESELLER
-emxdgt.com, 1349, RESELLER, 1e1d41537f7cad7f
 xandr.com, 13171, RESELLER
 supply.colossusssp.com, 290, RESELLER, 6c5b49d96ec1b458
+emxdgt.com, 1349, RESELLER, 1e1d41537f7cad7f
+Media.net, 8CU695QH7, RESELLER
