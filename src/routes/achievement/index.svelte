@@ -43,7 +43,10 @@
   let nameFilter = '';
   let sortedAchievements = Object.entries(data).sort((a, b) => a[1].order - b[1].order);
 
-  const versions = ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '2.0', '2.1'].map((e) => ({ label: e, value: e }));
+  const versions = ['1.0', '1.1', '1.2', '1.3', '1.4', '1.5', '1.6', '2.0', '2.1', '2.2'].map((e) => ({
+    label: e,
+    value: e,
+  }));
   let versionFilter = [];
 
   const types = [{ label: $t('achievement.commissions'), value: 'commissions' }];
