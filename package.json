@@ -3,7 +3,7 @@
   "description": "A collection of tools to help playing Genshin Impact",
   "version": "0.0.1",
   "scripts": {
-    "dev": "sapper dev",
+    "dev": "NODE_OPTIONS=--max_old_space_size=4096 sapper dev",
     "build": "sapper build --legacy",
     "export": "sapper export --legacy && cp __sapper__/build/firebase-messaging-sw.js __sapper__/export",
     "start": "node __sapper__/build"
