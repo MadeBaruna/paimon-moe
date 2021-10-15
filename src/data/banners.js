@@ -413,6 +413,7 @@ export const banners = {
       color: '#f542c8',
       featured: ['polar_star', 'memory_of_dust'],
       featuredRare: ['akuoumaru', 'favonius_sword', 'favonius_lance', 'eye_of_perception', 'rust'],
+      timezoneDependent: true,
     },
   ],
 };
