@@ -18,22 +18,137 @@
 
 <script>
   import { locale, t } from 'svelte-i18n';
-  import { onMount } from 'svelte';
+  import { getContext, onMount } from 'svelte';
+  import { mdiCheck, mdiPencil } from '@mdi/js';
+  import dayjs from 'dayjs';
+  import duration from 'dayjs/plugin/duration';
+  dayjs.extend(duration);
+
+  import Button from '../../components/Button.svelte';
+  import Icon from '../../components/Icon.svelte';
+  import { readSave, updateSave } from '../../stores/saveManager';
+  import { getAccountPrefix } from '../../stores/account';
+  import EditModal from './_editModal.svelte';
+
+  const { open: openModal, close: closeModal } = getContext('simple-modal');
 
   export let data;
   export let spots;
 
   let fishList = data;
+  let timer = {};
+  let now = dayjs();
+
+  async function setAsEmpty(id) {
+    timer[id] = {
+      time: dayjs(),
+      text: '3d',
+    };
+
+    await save();
+  }
+
+  async function setEditing(id) {
+    openModal(
+      EditModal,
+      {
+        time: timer[id].time.format('YYYY-MM-DDTHH:mm'),
+        close: closeModal,
+        edit: (time) => edit(id, time),
+        clear: () => clear(id),
+      },
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '500px' },
+      },
+    );
+  }
+
+  async function clear(id) {
+    delete timer[id];
+    closeModal();
+    await save();
+  }
+
+  async function edit(id, time) {
+    timer[id] = {
+      time,
+      text: '...',
+    };
+    closeModal();
+    await save();
+  }
 
   async function changeLocale(locale) {
     const _data = await import(`../../data/fishing/${locale}.json`);
     fishList = _data.default;
   }
 
+  function getDuration(time) {
+    const diff = time.add(3, 'days').diff(now);
+    const duration = dayjs.duration(diff);
+    let format = 'D[d] HH:mm:ss';
+    if (duration.days() === 0) {
+      format = 'HH:mm:ss';
+    }
+
+    return duration.format(format);
+  }
+
+  async function load() {
+    const prefix = getAccountPrefix();
+    const data = await readSave(`${prefix}fishing`);
+    const timerData = {};
+    if (data !== null) {
+      for (const [id, item] of Object.entries(data)) {
+        timerData[id] = {
+          ...item,
+          text: '...',
+          time: dayjs(item.time),
+        };
+      }
+    }
+
+    timer = timerData;
+  }
+
+  async function save() {
+    const prefix = getAccountPrefix();
+    const formattedTimer = {};
+    for (const [id, item] of Object.entries(timer)) {
+      formattedTimer[id] = {
+        ...item,
+        time: item.time.toISOString(),
+      };
+    }
+
+    await updateSave(`${prefix}fishing`, formattedTimer);
+  }
+
   onMount(async () => {
+    await load();
+
     locale.subscribe((val) => {
       changeLocale(val);
     });
+
+    const interval = setInterval(() => {
+      now = dayjs();
+      for (const [id, item] of Object.entries(timer)) {
+        if (item.time.add(3, 'days').isBefore(now)) {
+          delete timer[id];
+          save();
+        } else {
+          item.text = getDuration(item.time);
+        }
+      }
+
+      timer = timer;
+    }, 1000);
+
+    return () => {
+      clearInterval(interval);
+    };
   });
 </script>
 
@@ -44,12 +159,15 @@
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8 max-w-screen-xl">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('fishing.title')}</h1>
+  <p class="text-gray-400 px-4 md:px-8 font-medium pb-4" style="margin-top: -1rem;">
+    ※ {$t('fishing.subtitle')}
+  </p>
   {#each Object.entries(spots) as [id, location]}
     <h3 class="font-display px-4 md:px-8 font-black text-2xl text-white mt-4 mb-2">{$t(`fishing.${id}`)}</h3>
     <div class="px-4 md:px-8 w-full">
       {#each location as spot}
         <div class="flex flex-col items-center md:items-start md:flex-row w-full bg-item rounded-xl p-4 mb-2">
-          <div class="mr-4">
+          <div class="mr-4 flex flex-col">
             <img
               class="w-48 h-48 rounded-md"
               style="min-width: 192px;"
@@ -57,6 +175,21 @@
               alt={spot.name}
               title={spot.name}
             />
+            {#if timer[spot.id]}
+              <div class="flex mt-2 items-center">
+                <p class="text-white text-center mr-1 flex-1">
+                  {timer[spot.id].text}
+                </p>
+                <Button on:click={() => setEditing(spot.id)} size="sm">
+                  <Icon path={mdiPencil} color="white" />
+                </Button>
+              </div>
+            {:else}
+              <Button on:click={() => setAsEmpty(spot.id)} size="sm" className="mt-2 flex-1">
+                {$t('fishing.setEmpty')}
+                <Icon path={mdiCheck} color="white" />
+              </Button>
+            {/if}
           </div>
           <div
             class="flex flex-wrap pt-6 md:pt-0 justify-center md:justify-start"

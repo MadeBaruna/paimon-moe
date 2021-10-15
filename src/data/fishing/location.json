@@ -1,16 +1,15 @@
 {
-  "cider_lake": {
-    "name": "Cider Lake",
+  "17668": {
+    "name": "Windrise",
     "fish": [
+      "medaka",
       "aizen_medaka",
-      "crystalfish",
       "venomspine_fish",
-      "rusty_koi",
       "tea-colored_shirakodai"
     ],
     "location": "mondstadt"
   },
-  "stormbearer_mountains": {
+  "17669": {
     "name": "Stormbearer Mountains",
     "fish": [
       "medaka",
@@ -23,7 +22,17 @@
     ],
     "location": "mondstadt"
   },
-  "stormterrors_lair": {
+  "17670": {
+    "name": "Stormterror's Lair",
+    "fish": [
+      "medaka",
+      "aizen_medaka",
+      "dawncatcher",
+      "tea-colored_shirakodai"
+    ],
+    "location": "mondstadt"
+  },
+  "17671": {
     "name": "Stormterror's Lair",
     "fish": [
       "medaka",
@@ -33,17 +42,31 @@
     ],
     "location": "mondstadt"
   },
-  "windrise": {
-    "name": "Windrise",
+  "17672": {
+    "name": "Cider Lake",
     "fish": [
       "medaka",
       "aizen_medaka",
       "venomspine_fish",
+      "akai_maou",
+      "tea-colored_shirakodai",
+      "pufferfish",
+      "bitter_pufferfish"
+    ],
+    "location": "mondstadt"
+  },
+  "17673": {
+    "name": "Cider Lake",
+    "fish": [
+      "aizen_medaka",
+      "crystalfish",
+      "venomspine_fish",
+      "rusty_koi",
       "tea-colored_shirakodai"
     ],
     "location": "mondstadt"
   },
-  "near_dawn_winery": {
+  "17674": {
     "name": "Near Dawn Winery",
     "fish": [
       "aizen_medaka",
@@ -56,7 +79,7 @@
     ],
     "location": "mondstadt"
   },
-  "dragonspine": {
+  "17676": {
     "name": "Dragonspine",
     "fish": [
       "medaka",
@@ -66,7 +89,7 @@
     ],
     "location": "mondstadt"
   },
-  "qingce_village": {
+  "17675": {
     "name": "Qingce Village",
     "fish": [
       "sweet-flower_medaka",
@@ -78,7 +101,7 @@
     ],
     "location": "liyue"
   },
-  "dihua_marsh": {
+  "17677": {
     "name": "Dihua Marsh",
     "fish": [
       "medaka",
@@ -88,31 +111,16 @@
     ],
     "location": "liyue"
   },
-  "beside_wangshu_inn": {
-    "name": "Beside Wangshu Inn",
+  "17678": {
+    "name": "Bishui Plain",
     "fish": [
-      "sweet-flower_medaka",
+      "medaka",
       "betta",
-      "akai_maou",
-      "golden_koi",
-      "rusty_koi",
       "brown_shirakodai"
     ],
     "location": "liyue"
   },
-  "beside_guili_plains": {
-    "name": "Beside Guili Plains",
-    "fish": [
-      "sweet-flower_medaka",
-      "betta",
-      "akai_maou",
-      "golden_koi",
-      "rusty_koi",
-      "brown_shirakodai"
-    ],
-    "location": "liyue"
-  },
-  "bishui_plain": {
+  "17679": {
     "name": "Bishui Plain",
     "fish": [
       "medaka",
@@ -122,7 +130,18 @@
     ],
     "location": "liyue"
   },
-  "mt._hulao": {
+  "17680": {
+    "name": "Mt. Aocang",
+    "fish": [
+      "medaka",
+      "sweet-flower_medaka",
+      "dawncatcher",
+      "crystalfish",
+      "abiding_angelfish"
+    ],
+    "location": "liyue"
+  },
+  "17681": {
     "name": "Mt. Hulao",
     "fish": [
       "medaka",
@@ -134,7 +153,28 @@
     ],
     "location": "liyue"
   },
-  "luhua_pool": {
+  "17682": {
+    "name": "Beside Wangshu Inn",
+    "fish": [
+      "sweet-flower_medaka",
+      "betta",
+      "akai_maou",
+      "golden_koi",
+      "rusty_koi",
+      "brown_shirakodai"
+    ],
+    "location": "liyue"
+  },
+  "17683": {
+    "name": "Tianqiu Valley",
+    "fish": [
+      "medaka",
+      "crystalfish",
+      "betta"
+    ],
+    "location": "liyue"
+  },
+  "17684": {
     "name": "Luhua Pool",
     "fish": [
       "sweet-flower_medaka",
@@ -146,16 +186,19 @@
     ],
     "location": "liyue"
   },
-  "tianqiu_valley": {
-    "name": "Tianqiu Valley",
+  "17685": {
+    "name": "Beside Guili Plains",
     "fish": [
-      "medaka",
-      "crystalfish",
-      "betta"
+      "sweet-flower_medaka",
+      "betta",
+      "akai_maou",
+      "golden_koi",
+      "rusty_koi",
+      "brown_shirakodai"
     ],
     "location": "liyue"
   },
-  "liyue_harbor": {
+  "17686": {
     "name": "Liyue Harbor",
     "fish": [
       "sweet-flower_medaka",
@@ -166,48 +209,7 @@
     ],
     "location": "liyue"
   },
-  "mt._aocang": {
-    "name": "Mt. Aocang",
-    "fish": [
-      "medaka",
-      "sweet-flower_medaka",
-      "dawncatcher",
-      "crystalfish",
-      "abiding_angelfish"
-    ],
-    "location": "liyue"
-  },
-  "ritou": {
-    "name": "Ritou",
-    "fish": [
-      "glaze_medaka",
-      "lunged_stickleback",
-      "akai_maou",
-      "pufferfish",
-      "bitter_pufferfish"
-    ],
-    "location": "inazuma"
-  },
-  "near_amakane_island": {
-    "name": "Near Amakane Island",
-    "fish": [
-      "glaze_medaka",
-      "lunged_stickleback",
-      "purple_shirakodai"
-    ],
-    "location": "inazuma"
-  },
-  "nazuchi_beach": {
-    "name": "Nazuchi Beach",
-    "fish": [
-      "medaka",
-      "lunged_stickleback",
-      "purple_shirakodai",
-      "bitter_pufferfish"
-    ],
-    "location": "inazuma"
-  },
-  "sangonomiya_shrine": {
+  "17687": {
     "name": "Sangonomiya Shrine",
     "fish": [
       "medaka",
@@ -219,7 +221,7 @@
     ],
     "location": "inazuma"
   },
-  "suigetsu_pool": {
+  "17688": {
     "name": "Suigetsu Pool",
     "fish": [
       "medaka",
@@ -231,7 +233,35 @@
     ],
     "location": "inazuma"
   },
-  "koseki_village": {
+  "17689": {
+    "name": "Nazuchi Beach",
+    "fish": [
+      "medaka",
+      "lunged_stickleback",
+      "purple_shirakodai",
+      "bitter_pufferfish"
+    ],
+    "location": "inazuma"
+  },
+  "17690": {
+    "name": "Tatarasuna",
+    "fish": [
+      "raimei_angelfish"
+    ],
+    "location": "inazuma"
+  },
+  "17691": {
+    "name": "Near Koseki Village",
+    "fish": [
+      "medaka",
+      "dawncatcher",
+      "crystalfish",
+      "purple_shirakodai",
+      "pufferfish"
+    ],
+    "location": "inazuma"
+  },
+  "17694": {
     "name": "Koseki Village",
     "fish": [
       "glaze_medaka",
@@ -243,21 +273,33 @@
     ],
     "location": "inazuma"
   },
-  "near_koseki_village": {
-    "name": "Near Koseki Village",
+  "17692": {
+    "name": "Ritou",
     "fish": [
-      "medaka",
-      "dawncatcher",
-      "crystalfish",
-      "purple_shirakodai",
-      "pufferfish"
+      "glaze_medaka",
+      "lunged_stickleback",
+      "akai_maou",
+      "pufferfish",
+      "bitter_pufferfish"
     ],
     "location": "inazuma"
   },
-  "tatarasuna": {
-    "name": "Tatarasuna",
+  "17693": {
+    "name": "Near Amakane Island",
     "fish": [
-      "raimei_angelfish"
+      "glaze_medaka",
+      "lunged_stickleback",
+      "purple_shirakodai"
+    ],
+    "location": "inazuma"
+  },
+  "18686": {
+    "name": "Chirai Shrine",
+    "fish": [
+      "medaka",
+      "glaze_medaka",
+      "dawncatcher",
+      "crystalfish"
     ],
     "location": "inazuma"
   }

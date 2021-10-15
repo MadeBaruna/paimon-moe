@@ -196,7 +196,6 @@
       const data = await getData();
       remoteSave = data;
 
-      console.log(JSON.stringify(remoteSave));
       const remoteSize = new Blob([JSON.stringify(remoteSave)]).size / 1000;
 
       const localSave = await getLocalSaveJson();

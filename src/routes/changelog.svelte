@@ -9,6 +9,9 @@
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre
     class="text-white px-4 md:px-8">
+2021/10/15
+- Add fishing spot timer
+
 2021/10/13
 - Update weapons
 - Update achievements

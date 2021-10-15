@@ -761,8 +761,14 @@
   },
   "fishing": {
     "title": "Fishing Book",
+    "subtitle": "Mark the fishing spot as empty when you already fish out all the fish to start the respawn timer",
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
-    "inazuma": "Inazuma"
+    "inazuma": "Inazuma",
+    "setEmpty": "Set as empty",
+    "emptyTime": "Time when the spot is empty:",
+    "clear": "Clear",
+    "save": "Save",
+    "cancel": "Cancel"
   }
 }
