@@ -4,7 +4,6 @@
   export async function preload() {
     return { data, setsData };
   }
-
 </script>
 
 <script>
@@ -131,7 +130,6 @@
   });
 
   // $: charFilter, onCharFilterChanged();
-
 </script>
 
 <svelte:head>
@@ -209,6 +207,7 @@
                       <span class="inline-block w-2">{amount}</span>
                     </div>
                     <div class="popup text-left">
+                      {console.log(item)}
                       <p class="text-left mb-1">{furnishing[item].name}</p>
                       <table>
                         <tr>
@@ -252,5 +251,4 @@
       @apply block;
     }
   }
-
 </style>
