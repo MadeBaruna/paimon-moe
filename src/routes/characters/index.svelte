@@ -458,14 +458,17 @@
                 <td class="rarity w-16 sticky" style="padding: 0; left: 0px;">
                   <img class="w-12 h-12 rounded-full" src={`/images/characters/${id}.png`} alt={char.name} />
                 </td>
-                <td>{char.name}</td>
+                <td><a href="/characters/{id}">{char.name}</a></td>
                 <td class="text-center">
                   <img class="w-8 h-8 inline" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />
                 </td>
                 <td class="text-center">
-                  C{constellation[id]
-                    ? Math.max(0, constellation[id].default + constellation[id].wish + constellation[id].manual - 1)
-                    : 0}
+                  {constellation[id]
+                    ? `C${Math.max(
+                        0,
+                        constellation[id].default + constellation[id].wish + constellation[id].manual - 1,
+                      )}`
+                    : '-'}
                 </td>
                 <td class="text-center">
                   <Icon color={char.rarity === 5 ? '#B9812E' : '#AD76B0'} path={mdiStar} />
