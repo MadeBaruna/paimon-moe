@@ -663,7 +663,7 @@ export const itemList = {
   },
   golden_branch_of_a_distant_sea: {
     id: 'golden_branch_of_a_distant_sea',
-    name: 'Golden Branck of a Golden Sea',
+    name: 'Golden Branch of a Golden Sea',
     day: ['monday', 'thursday'],
     rarity: 4,
     parent: 'coral_branch_of_a_distant_sea',
