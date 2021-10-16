@@ -343,6 +343,100 @@
     loading = false;
   }
 
+  async function readGenshinWishesCSV(texts) {
+    const lines = texts.split(/\r?\n/);
+    lines.shift();
+
+    const bannerCategories = {
+      'Character Event': 'character-event',
+      'Weapon Event': 'weapon-event',
+      Permanent: 'standard',
+      Novice: 'beginners',
+    };
+
+    const wishes = {
+      'character-event': [],
+      'weapon-event': [],
+      standard: [],
+      beginners: [],
+    };
+
+    const weapons = Object.values(weaponList);
+    const chars = Object.values(characters);
+
+    for (const line of lines) {
+      if (line === '') continue;
+
+      const cells = line.split(';');
+      console.log(cells);
+
+      const banner = bannerCategories[cells[0]];
+      const type = cells[3].toLowerCase();
+      const fullName = cells[2];
+      const time = cells[5];
+
+      let name = '';
+      if (type === 'weapon') {
+        const weapon = weapons.find((e) => e.name === fullName);
+        if (weapon === undefined) {
+          pushToast($t('wish.excel.errorUnknownItem'), 'error');
+          error = {
+            banner: category,
+            line: index,
+            name: fullName,
+            type,
+          };
+          step = 2;
+          loading = false;
+          throw 'unknown reward name';
+        }
+
+        name = weapon.id;
+      } else if (type === 'character') {
+        const character = chars.find((e) => e.name === fullName);
+        if (character === undefined) {
+          pushToast($t('wish.excel.errorUnknownItem'), 'error');
+          error = {
+            banner: category,
+            line: index,
+            name: fullName,
+            type,
+          };
+          step = 2;
+          loading = false;
+          throw 'unknown reward name';
+        }
+
+        name = character.id;
+      }
+
+      if (name === '') {
+        pushToast($t('wish.excel.errorUnknownItem'), 'error');
+        loading = false;
+        throw 'unknown reward name';
+      }
+
+      wishes[banner].push([type, time, name]);
+    }
+
+    for (const [id, list] of Object.entries(wishes)) {
+      console.log('from csv', id, list.length);
+      await parseData(id, list);
+    }
+
+    step = 1;
+    loading = false;
+  }
+
+  function readCSV(file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const texts = reader.result;
+      readGenshinWishesCSV(texts);
+    };
+    reader.readAsText(file);
+  }
+
   async function readExcel(file) {
     loading = true;
 
@@ -376,6 +470,8 @@
       file.type === 'application/wps-office.xlsx'
     ) {
       readExcel(file);
+    } else if (file.type === 'text/csv' || file.type === 'application/vnd.ms-excel') {
+      readCSV(file);
     } else {
       pushToast($t('wish.excel.errorInvalidFile'), 'error');
     }
@@ -437,12 +533,18 @@
       </ol>
     </div>
     <p class="text-gray-200 mb-2">{$t('wish.excel.subtitle')}</p>
-    <div class="flex flex-row">
+    <div class="flex flex-row flex-wrap">
       <button on:click={() => changeType('default')} class={`pill ${selectedType === 'default' ? 'active' : ''}`}>
         {$t('wish.excel.default')}
       </button>
       <button on:click={() => changeType('takagg')} class={`pill ${selectedType === 'takagg' ? 'active' : ''}`}>
         {$t('wish.excel.takagg')}
+      </button>
+      <button
+        on:click={() => changeType('genshinwishes')}
+        class={`pill ${selectedType === 'genshinwishes' ? 'active' : ''}`}
+      >
+        {$t('wish.excel.genshinwishes')}
       </button>
     </div>
     <input on:change={onFileChange} type="file" style="display: none;" bind:this={fileInput} />

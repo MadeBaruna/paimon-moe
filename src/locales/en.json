@@ -262,6 +262,7 @@
       "subtitle": "Select where your excel come from:",
       "default": "Paimon.moe Export",
       "takagg": "TakaGG Gacha Export",
+      "genshinwishes": "GenshinWishes Export",
       "notice": [
         "This feature still in BETA please backup first by going to Setting then Export to Excel!",
         "Wish with the same timestamp and reward name will NOT be touched (so existing wish will not be rewritten)",
@@ -270,7 +271,8 @@
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe excel file here, or click here to select",
-        "takagg": "Drag & drop TakaGG gacha export excel file here, or click here to select"
+        "takagg": "Drag & drop TakaGG gacha export excel file here, or click here to select",
+        "genshinwishes": "Drag & drop GenshinWishes csv file here, or click here to select"
       },
       "processing": "Processing...",
       "addedOn": "Inserted on the:",
