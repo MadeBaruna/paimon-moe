@@ -338,7 +338,10 @@
         <Icon path={mdiGoogleDrive} className="mr-2" />
         {$t('settings.driveSignOut')}
       </Button>
-      <p class="text-white mt-4">{$driveEmail}</p>
+      <p class="text-white mt-4">
+        {$t('settings.email')}
+        <span class="hover:text-white bg-background text-background rounded-md px-2">{$driveEmail}</span>
+      </p>
       <p class="text-white mt-4">
         {$t('settings.syncStatus')}
         <span class={`font-bold ${isSynced ? 'text-green-400' : 'text-yellow-400'}`}>

@@ -587,7 +587,8 @@
     "importWarning": "Remember to backup your data by exporting first! All data will be replaced!",
     "importContinue": "Continue",
     "importSuccess": "Import Success! Reloading in 5 seconds...",
-    "importFailed": "Import Failed!"
+    "importFailed": "Import Failed!",
+    "email": "Email:"
   },
   "privacypolicy": {
     "title": "Privacy Policy",
