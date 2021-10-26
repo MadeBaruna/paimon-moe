@@ -102,11 +102,11 @@
         <Icon path={mdiCircle} size={0.4} className="mx-2 mt-1" color="white" />
         <p class="text-base text-white font-semibold mt-1">{$t(`weapon.${weapon.type}`)}</p>
       </div>
-      <p class="text-gray-200">{weapon.description}</p>
+      <p class="text-gray-200">{@html weapon.description.replace(/\\n/g, '<br/>')}</p>
       {#if weapon.skill.name}
         <div class="p-4 rounded-xl bg-item flex flex-col mt-4">
           <p class="font-black font-display text-xl text-white">{weapon.skill.name}</p>
-          <p class="skill-description text-white">{@html weapon.skill.description}</p>
+          <p class="skill-description text-white">{@html weapon.skill.description.replace(/\\n/g, '<br/>')}</p>
         </div>
       {/if}
       <Ad type="mobile" variant="mpu" id="1" class="flex justify-center mt-4" />
