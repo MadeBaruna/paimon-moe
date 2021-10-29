@@ -428,6 +428,84 @@
     loading = false;
   }
 
+  async function readWishTallyExcel(workbook) {
+    const bannerCategories = {
+      'character-event': 'Character Event Wish History',
+      'weapon-event': 'Weapon Event Wish History',
+      standard: 'Permanent Wish History',
+      beginners: 'Novice Wish History',
+    };
+
+    const weapons = Object.values(weaponList);
+    const chars = Object.values(characters);
+
+    for (const [id, category] of Object.entries(bannerCategories)) {
+      const sheet = workbook.getWorksheet(category);
+      const wishes = [];
+      sheet.eachRow((row, index) => {
+        if (index === 1) return;
+        const type = row.getCell(4).text.toLowerCase();
+        let time = row.getCell(5);
+        const fullName = row.getCell(6).text;
+
+        if (time.type === ValueType.Date) {
+          time = dayjs.utc(time.value).format('YYYY-MM-DD HH:mm:ss');
+        } else {
+          time = time.text;
+        }
+
+        let name = '';
+        if (type === 'weapon') {
+          const weapon = weapons.find((e) => e.name === fullName);
+          if (weapon === undefined) {
+            pushToast($t('wish.excel.errorUnknownItem'), 'error');
+            error = {
+              banner: category,
+              line: index,
+              name: fullName,
+              type,
+            };
+            step = 2;
+            loading = false;
+            throw 'unknown reward name';
+          }
+
+          name = weapon.id;
+        } else if (type === 'character') {
+          const character = chars.find((e) => e.name === fullName);
+          if (character === undefined) {
+            pushToast($t('wish.excel.errorUnknownItem'), 'error');
+            error = {
+              banner: category,
+              line: index,
+              name: fullName,
+              type,
+            };
+            step = 2;
+            loading = false;
+            throw 'unknown reward name';
+          }
+
+          name = character.id;
+        }
+
+        if (name === '') {
+          pushToast($t('wish.excel.errorUnknownItem'), 'error');
+          loading = false;
+          throw 'unknown reward name';
+        }
+
+        wishes.push([type, time, name]);
+      });
+
+      console.log('from excel', category, wishes.length);
+      await parseData(id, wishes);
+    }
+
+    step = 1;
+    loading = false;
+  }
+
   function readCSV(file) {
     const reader = new FileReader();
     reader.onload = () => {
@@ -450,12 +528,14 @@
       loading = false;
     }
 
+    const readFunc = {
+      'default': readPaimonExcel,
+      'takagg': readGachaExportExcel,
+      'wishtally': readWishTallyExcel
+    }
+
     try {
-      if (selectedType === 'default') {
-        readPaimonExcel(workbook);
-      } else {
-        readGachaExportExcel(workbook);
-      }
+      readFunc[selectedType](workbook);
     } catch (err) {
       console.log(err);
       pushToast($t('wish.excel.errorReadExcel'), 'error');
@@ -545,6 +625,9 @@
         class={`pill ${selectedType === 'genshinwishes' ? 'active' : ''}`}
       >
         {$t('wish.excel.genshinwishes')}
+      </button>
+      <button on:click={() => changeType('wishtally')} class={`pill ${selectedType === 'wishtally' ? 'active' : ''}`}>
+        {$t('wish.excel.wishtally')}
       </button>
     </div>
     <input on:change={onFileChange} type="file" style="display: none;" bind:this={fileInput} />
