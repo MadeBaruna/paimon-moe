@@ -529,10 +529,10 @@
     }
 
     const readFunc = {
-      'default': readPaimonExcel,
-      'takagg': readGachaExportExcel,
-      'wishtally': readWishTallyExcel
-    }
+      default: readPaimonExcel,
+      takagg: readGachaExportExcel,
+      wishtally: readWishTallyExcel,
+    };
 
     try {
       readFunc[selectedType](workbook);
@@ -550,7 +550,11 @@
       file.type === 'application/wps-office.xlsx'
     ) {
       readExcel(file);
-    } else if (file.type === 'text/csv' || file.type === 'application/vnd.ms-excel') {
+    } else if (
+      file.type === 'text/csv' ||
+      file.type === 'application/vnd.ms-excel' ||
+      file.type === 'text/comma-separated-values'
+    ) {
       readCSV(file);
     } else {
       pushToast($t('wish.excel.errorInvalidFile'), 'error');
