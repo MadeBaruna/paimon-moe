@@ -13,16 +13,23 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    tartaglia: {
-      name: 'Tartaglia',
+    hu_tao: {
+      name: 'Hu Tao',
+      rarity: 'legendary',
+      count: 0,
+      average: '...',
+      percentage: '...',
+    },
+    thoma: {
+      name: 'Thoma',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300020;
-  const image = 'tartaglia.png';
+  const bannerId = 300021;
+  const image = 'hutao_thoma.png';
 
   let loading = true;
   let user = '';
@@ -72,7 +79,7 @@
         <div
           class="flex flex-col pt-2"
           style="background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
-          {i === 0 ? 'margin-right: 0%;' : ''}"
+          {i === 0 ? 'margin-right: 10%;' : ''}"
         >
           <h3 class="text-3xl mr-4 font-black leading-6 text-right">
             {#if loading}

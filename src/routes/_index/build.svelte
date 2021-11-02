@@ -15,7 +15,7 @@
     5: 'text-legendary-from',
   };
 
-  const promoted = ['raiden_shogun', 'kujou_sara'];
+  const promoted = ['hu_tao'];
   let current = 0;
 
   function change(index) {
