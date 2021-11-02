@@ -2276,6 +2276,77 @@ export const characters = {
       boss: itemList.shard_of_a_foul_legacy,
     },
   },
+  thoma: {
+    name: 'Thoma',
+    id: 'thoma',
+    rarity: 4,
+    element: elements.pyro,
+    weapon: weapons.polearm,
+    sex: 'male',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.agnidus_agate_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.fluorescent_fungus, amount: 3 },
+          { item: itemList.treasure_hoarder_insignia, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_fragment, amount: 3 },
+          { item: itemList.smoldering_pearl, amount: 2 },
+          { item: itemList.fluorescent_fungus, amount: 10 },
+          { item: itemList.treasure_hoarder_insignia, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_fragment, amount: 6 },
+          { item: itemList.smoldering_pearl, amount: 4 },
+          { item: itemList.fluorescent_fungus, amount: 20 },
+          { item: itemList.silver_raven_insignia, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_chunk, amount: 3 },
+          { item: itemList.smoldering_pearl, amount: 8 },
+          { item: itemList.fluorescent_fungus, amount: 30 },
+          { item: itemList.silver_raven_insignia, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_chunk, amount: 6 },
+          { item: itemList.smoldering_pearl, amount: 12 },
+          { item: itemList.fluorescent_fungus, amount: 45 },
+          { item: itemList.golden_raven_insignia, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.agnidus_agate_gemstone, amount: 6 },
+          { item: itemList.smoldering_pearl, amount: 20 },
+          { item: itemList.fluorescent_fungus, amount: 60 },
+          { item: itemList.golden_raven_insignia, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 10331, atk: 201, def: 750 },
+    material: {
+      book: [itemList.teachings_of_transience, itemList.guide_to_transience, itemList.philosophies_of_transience],
+      material: [itemList.treasure_hoarder_insignia, itemList.silver_raven_insignia, itemList.golden_raven_insignia],
+      boss: itemList.hellfire_butterfly,
+    },
+  },
   traveler_anemo: {
     name: 'Traveler (Anemo)',
     id: 'traveler_anemo',

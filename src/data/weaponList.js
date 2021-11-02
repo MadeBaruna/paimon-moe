@@ -7436,4 +7436,122 @@ export const weaponList = {
       },
     ],
   },
+  wavebreakers_fin: {
+    name: "Wavebreaker's Fin",
+    id: 'wavebreakers_fin',
+    rarity: 4,
+    atk: 45,
+    secondary: 'ATK',
+    type: weapons.polearm,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.mask_of_the_wicked_lieutenant, amount: 3 },
+          { item: itemList.concealed_claw, amount: 3 },
+          { item: itemList.old_handguard, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 3 },
+          { item: itemList.concealed_claw, amount: 12 },
+          { item: itemList.old_handguard, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 6 },
+          { item: itemList.concealed_unguis, amount: 6 },
+          { item: itemList.kageuchi_handguard, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 3 },
+          { item: itemList.concealed_unguis, amount: 12 },
+          { item: itemList.kageuchi_handguard, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 6 },
+          { item: itemList.concealed_talon, amount: 9 },
+          { item: itemList.famed_handguard, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_kijin, amount: 4 },
+          { item: itemList.concealed_talon, amount: 18 },
+          { item: itemList.famed_handguard, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  mouuns_moon: {
+    name: "Mouun's Moon",
+    id: 'mouuns_moon',
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK',
+    type: weapons.bow,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.narukamis_wisdom, amount: 3 },
+          { item: itemList.dismal_prism, amount: 3 },
+          { item: itemList.spectral_husk, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 3 },
+          { item: itemList.dismal_prism, amount: 12 },
+          { item: itemList.spectral_husk, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 6 },
+          { item: itemList.crystal_prism, amount: 6 },
+          { item: itemList.spectral_heart, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 3 },
+          { item: itemList.crystal_prism, amount: 12 },
+          { item: itemList.spectral_heart, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 6 },
+          { item: itemList.polarizing_prism, amount: 9 },
+          { item: itemList.spectral_nucleus, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_valor, amount: 4 },
+          { item: itemList.polarizing_prism, amount: 18 },
+          { item: itemList.spectral_nucleus, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };

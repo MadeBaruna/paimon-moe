@@ -2834,6 +2834,26 @@ export const builds = {
       },
     },
   },
+  thoma: {
+    roles: {
+      'TBD': {
+        recommended: false,
+        weapons: [
+        ],
+        artifacts: [
+        ],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD', 'TBD', 'TBD'],
+        tip: '',
+        note: ''
+      },
+    },
+  },
   xiangling: {
     roles: {
       'PHYSICAL DPS': {

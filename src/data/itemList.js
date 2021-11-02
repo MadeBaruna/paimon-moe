@@ -824,4 +824,6 @@ export const itemList = {
   concealed_claw: { id: 'concealed_claw', name: 'Concealed Claw' },
   concealed_unguis: { id: 'concealed_unguis', name: 'Concealed Unguis' },
   concealed_talon: { id: 'concealed_talon', name: 'Concealed Talon' },
+
+  fluorescent_fungus: { id: 'fluorescent_fungus', name: 'Fluorescent Fungus' },
 };
