@@ -221,6 +221,16 @@ export const banners = {
       featuredRare: ['ningguang', 'chongyun', 'yanfei'],
       timezoneDependent: true,
     },
+    {
+      name: 'Moment of Bloom',
+      image: 2,
+      shortName: 'Hu Tao',
+      start: '2021-11-02 18:00:00',
+      end: '2021-11-23 14:59:59',
+      color: '#FF7966',
+      featured: ['hu_tao'],
+      featuredRare: ['thoma', 'diona', 'sayu'],
+    },
   ],
   weapons: [
     {
@@ -414,6 +424,16 @@ export const banners = {
       featured: ['polar_star', 'memory_of_dust'],
       featuredRare: ['akuoumaru', 'favonius_sword', 'favonius_lance', 'eye_of_perception', 'rust'],
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 20,
+      start: '2021-11-02 18:00:00',
+      end: '2021-11-23 14:59:59',
+      shortName: 'Homa',
+      color: '#b042f5',
+      featured: ['staff_of_homa', 'elegy_for_the_end'],
+      featuredRare: ['wavebreakers_fin', 'mouuns_moon', 'sacrificial_sword', 'rainslasher', 'the_widsith'],
     },
   ],
 };
