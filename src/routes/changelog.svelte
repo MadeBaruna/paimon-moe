@@ -9,6 +9,21 @@
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre
     class="text-white px-4 md:px-8">
+2021/11/04
+- Update database sidebar
+- Fix elegy item requirement
+- Fix inazuma talent book rarity for resin estimation
+- Update timeline
+
+2021/11/02
+- Fix weapon description newline
+- Fix furniture set item list
+- Add Wish Tally Excel import
+- Fix csv import on Android
+- Update timeline
+- Add Thoma and new weapons
+- Update banner
+
 2021/10/15
 - Add fishing spot timer
 
