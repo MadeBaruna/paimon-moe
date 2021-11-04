@@ -6267,49 +6267,49 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.boreal_wolfs_milk_tooth, amount: 3 },
-          { item: itemList.heavy_horn, amount: 3 },
-          { item: itemList.recruits_insignia, amount: 2 },
+          { item: itemList.boreal_wolfs_milk_tooth, amount: 5 },
+          { item: itemList.heavy_horn, amount: 5 },
+          { item: itemList.recruits_insignia, amount: 3 },
         ],
         mora: 10000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_cracked_tooth, amount: 3 },
-          { item: itemList.heavy_horn, amount: 12 },
-          { item: itemList.recruits_insignia, amount: 8 },
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 5 },
+          { item: itemList.heavy_horn, amount: 18 },
+          { item: itemList.recruits_insignia, amount: 12 },
         ],
         mora: 20000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_cracked_tooth, amount: 6 },
-          { item: itemList.black_bronze_horn, amount: 6 },
-          { item: itemList.sergeants_insignia, amount: 6 },
+          { item: itemList.boreal_wolfs_cracked_tooth, amount: 9 },
+          { item: itemList.black_bronze_horn, amount: 9 },
+          { item: itemList.sergeants_insignia, amount: 9 },
         ],
         mora: 30000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_broken_fang, amount: 3 },
-          { item: itemList.black_bronze_horn, amount: 12 },
-          { item: itemList.sergeants_insignia, amount: 9 },
+          { item: itemList.boreal_wolfs_broken_fang, amount: 5 },
+          { item: itemList.black_bronze_horn, amount: 18 },
+          { item: itemList.sergeants_insignia, amount: 14 },
         ],
         mora: 45000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_broken_fang, amount: 6 },
-          { item: itemList.black_crystal_horn, amount: 9 },
-          { item: itemList.lieutenants_insignia, amount: 6 },
+          { item: itemList.boreal_wolfs_broken_fang, amount: 9 },
+          { item: itemList.black_crystal_horn, amount: 14 },
+          { item: itemList.lieutenants_insignia, amount: 9 },
         ],
         mora: 55000,
       },
       {
         items: [
-          { item: itemList.boreal_wolfs_nostalgia, amount: 4 },
-          { item: itemList.black_crystal_horn, amount: 18 },
-          { item: itemList.lieutenants_insignia, amount: 12 },
+          { item: itemList.boreal_wolfs_nostalgia, amount: 6 },
+          { item: itemList.black_crystal_horn, amount: 27 },
+          { item: itemList.lieutenants_insignia, amount: 18 },
         ],
         mora: 65000,
       },

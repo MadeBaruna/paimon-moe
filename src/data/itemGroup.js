@@ -274,4 +274,8 @@ export const itemGroup = {
     name: 'Prism',
     items: [itemList.dismal_prism, itemList.crystal_prism, itemList.polarizing_prism],
   },
+  concealed_claw: {
+    name: 'Concealed Claw',
+    items: [itemList.concealed_claw, itemList.concealed_unguis, itemList.concealed_talon],
+  },
 };
