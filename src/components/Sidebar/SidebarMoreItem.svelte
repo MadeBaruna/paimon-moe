@@ -23,9 +23,9 @@
 </script>
 
 <div class="w-full rounded-xl ease-in duration-150 {mobile ? '' : 'parent'} {active ? 'active' : ''}">
-  <div class="flex absolute transform translate-x-full child">
+  <div class="flex absolute transform translate-x-full child top-0 bottom-0">
     <div class="w-5 h-full" />
-    <div class="bg-background shadow-lg flex flex-col p-2 -mt-2 rounded-r-xl">
+    <div class="bg-background shadow-lg flex flex-col p-2 -mt-2 rounded-r-xl justify-center">
       {#each items as item}
         <a
           on:click={clicked}
