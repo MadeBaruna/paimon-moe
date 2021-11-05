@@ -4,18 +4,9 @@
   import { characters } from '../../data/characters';
   import { builds } from '../../data/build';
 
-  import { t } from 'svelte-i18n';
   import Icon from '../../components/Icon.svelte';
 
-  const rarityColor = {
-    1: 'text-white',
-    2: 'text-green-400',
-    3: 'text-primary',
-    4: 'text-rare-from',
-    5: 'text-legendary-from',
-  };
-
-  const promoted = ['hu_tao'];
+  const promoted = ['hu_tao', 'thoma'];
   let current = 0;
 
   function change(index) {
