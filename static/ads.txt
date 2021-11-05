@@ -1,4 +1,4 @@
-# Network N Ads.txt file 2021-10-12 13:58:27
+# Publisher Collective Ads.txt file 2021-11-04 10:11:49
 
 # Display
 google.com, pub-6177961780147591, DIRECT, f08c47fec0942fa0
@@ -101,6 +101,8 @@ conversantmedia.com, 42024, DIRECT, 03113cd04947736d
 smartadserver.com,4125,RESELLER,060d053dcf45cbf3
 contextweb.com, 562541, RESELLER, 89ff185a4c4e857c
 themediagrid.com,jtqkmp,RESELLER,35d5010d7789b49d
+sovrn.com,375328,RESELLER,fafdf38b16bf6b2b
+lijit.com,375328,RESELLER,fafdf38b16bf6b2b
 smaato.com, 1100046863, DIRECT, 07bcf65f187117b4
 smaato.com, 1100004890, DIRECT, 07bcf65f187117b4
 adcolony.com, 496220845654deec, RESELLER, 1ad675c9de6b5176
@@ -243,6 +245,7 @@ smartadserver.com, 4071, DIRECT
 smartadserver.com, 4073, DIRECT
 smartadserver.com, 4074, DIRECT
 themediagrid.com, GD57SQ, DIRECT, 35d5010d7789b49d
+themediagrid.com, TU8HG3, DIRECT, 35d5010d7789b49d
 outbrain.com, 0043a849877c1a638231d82dd1b7e08b62, DIRECT
 appnexus.com, 7597, RESELLER, f5ab79cb980f11d1
 smartadserver.com, 1827, RESELLER
@@ -258,14 +261,13 @@ network-n.com, pa_601d8ead, DIRECT
 network-n.com, pa_a94525bd, DIRECT
 network-n.com, nn_dc828890, DIRECT
 network-n.com, pa_c73f329c, DIRECT
-network-n.com, nn_1410926d, DIRECT
 network-n.com, pa_2df17875, DIRECT
 network-n.com, pa_90a1369b, DIRECT
 network-n.com, nn_a92f3c5a, DIRECT
 network-n.com, pa_bf035bcc, DIRECT
 network-n.com, pa_6eed24a5, DIRECT
 network-n.com, pa_c8a21379, DIRECT
-network-n.com, nn_43e2e4e8, DIRECT
+network-n.com, pa_989c8bff, DIRECT
 network-n.com, nn_67b3bb73, DIRECT
 network-n.com, nn_b811ecf3, DIRECT
 network-n.com, pa_eef26576, DIRECT
@@ -274,20 +276,20 @@ network-n.com, pa_778becb4, DIRECT
 network-n.com, pa_21f59c37, DIRECT
 network-n.com, pa_c01f38e8, DIRECT
 network-n.com, pa_2d21e00f, DIRECT
-network-n.com, nn_8294f0cd, DIRECT
-network-n.com, nn_f0b0c6f3, DIRECT
+network-n.com, pa_d176ae16, DIRECT
+network-n.com, pa_ebb120be, DIRECT
 network-n.com, pa_fc69d8ef, DIRECT
-network-n.com, nn_d1526729, DIRECT
-network-n.com, nn_53d6a463, DIRECT
-network-n.com, nn_4007523a, DIRECT
-network-n.com, nn_c1706324, DIRECT
+network-n.com, pa_2c42efa0, DIRECT
+network-n.com, pa_553f610d, DIRECT
+network-n.com, pa_96068c5c, DIRECT
+network-n.com, pa_ab87406f, DIRECT
 network-n.com, nn_a5e5e413, DIRECT
 network-n.com, pa_e890a22a, DIRECT
 network-n.com, nn_83d97ca3, DIRECT
 network-n.com, pa_9435d9ba, DIRECT
-network-n.com, nn_8bb4db7b, DIRECT
-network-n.com, nn_ec266886, DIRECT
-network-n.com, nn_340c3679, DIRECT
+network-n.com, pa_ac496ffe, DIRECT
+network-n.com, pa_bc60f533, DIRECT
+network-n.com, pa_24924b4f, DIRECT
 network-n.com, pa_cefd0185, DIRECT
 network-n.com, nn_f75084c9, DIRECT
 network-n.com, pa_9e3ef9d5, DIRECT
@@ -303,39 +305,40 @@ network-n.com, nn_0b8aac73, DIRECT
 network-n.com, nn_bb9e3d06, DIRECT
 network-n.com, pa_90d616a0, DIRECT
 network-n.com, nn_e3dedfc5, DIRECT
-network-n.com, nn_1dfde89c, DIRECT
-network-n.com, nn_10a63123, DIRECT
+network-n.com, pa_67d19afe, DIRECT
+network-n.com, pa_c850e4e2, DIRECT
 network-n.com, pa_569c4b29, DIRECT
-network-n.com, nn_d5f53355, DIRECT
-network-n.com, nn_4926cff6, DIRECT
+network-n.com, pa_58acb23d, DIRECT
+network-n.com, pa_c52e2e53, DIRECT
 network-n.com, pa_d1a744aa, DIRECT
-network-n.com, nn_95782cd8, DIRECT
+network-n.com, pa_c0fd608c, DIRECT
 network-n.com, pa_e97f4d64, DIRECT
 network-n.com, pa_abb78c2d, DIRECT
 network-n.com, pa_d83981e9, DIRECT
 network-n.com, pa_9a65dfce, DIRECT
-network-n.com, nn_24934978, DIRECT
+network-n.com, pa_98a54d0d, DIRECT
 network-n.com, nn_bac8480a, DIRECT
 network-n.com, pa_bee9082e, DIRECT
-network-n.com, nn_b3e6a0c7, DIRECT
+network-n.com, pa_0312b635, DIRECT
 network-n.com, pa_777b07ca, DIRECT
 network-n.com, pa_07aaf1a3, DIRECT
 network-n.com, pa_f2f8099b, DIRECT
 network-n.com, nn_1cdeb505, DIRECT
-network-n.com, nn_e3de3d49, DIRECT
+network-n.com, pa_d2cb5c22, DIRECT
 network-n.com, pa_f8d9d92f, DIRECT
 network-n.com, pa_7c030473, DIRECT
 network-n.com, pa_debf04a3, DIRECT
-network-n.com, nn_521d2598, DIRECT
+network-n.com, pa_58bd4c90, DIRECT
 network-n.com, nn_93ace404, DIRECT
 network-n.com, pa_91564061, DIRECT
 network-n.com, pa_7fa5cef8, DIRECT
 network-n.com, nn_991ceb73, DIRECT
 network-n.com, pa_2a5a6810, DIRECT
 network-n.com, pa_deb3cc73, DIRECT
+network-n.com, nn_ccf14111, DIRECT
 network-n.com, nn_dd147396, DIRECT
 network-n.com, nn_c70bf603, DIRECT
-network-n.com, nn_9bf28f5a, DIRECT
+network-n.com, pa_5012520c, DIRECT
 network-n.com, pa_7113c86e, DIRECT
 network-n.com, pa_ef8dab28, DIRECT
 network-n.com, pa_d1ad6473, DIRECT
@@ -345,13 +348,13 @@ network-n.com, pa_f90a5700, DIRECT
 network-n.com, pa_8f187460, DIRECT
 network-n.com, pa_bb1db0e3, DIRECT
 network-n.com, pa_5f907e2a, DIRECT
-network-n.com, nn_52408c26, DIRECT
+network-n.com, pa_73adf5f4, DIRECT
 network-n.com, pa_17cde183, DIRECT
 network-n.com, nn_d590fc4b, DIRECT
 network-n.com, pa_e144c3fb, DIRECT
 network-n.com, pa_695cef04, DIRECT
 network-n.com, nn_20819473, DIRECT
-network-n.com, nn_1f312a68, DIRECT
+network-n.com, pa_ae37eff2, DIRECT
 network-n.com, pa_5b7caaf0, DIRECT
 network-n.com, pa_cfc7cf7f, DIRECT
 network-n.com, pa_8b270543, DIRECT
@@ -362,7 +365,7 @@ network-n.com, nn_ea8d1b4e, DIRECT
 network-n.com, pa_740be19b, DIRECT
 network-n.com, pa_14616587, DIRECT
 network-n.com, pa_207cb2a8, DIRECT
-network-n.com, nn_8d9acd3f, DIRECT
+network-n.com, pa_b843870e, DIRECT
 network-n.com, pa_50c4b9dd, DIRECT
 network-n.com, nn_40020810, DIRECT
 network-n.com, nn_0ab02a98, DIRECT
@@ -393,7 +396,7 @@ network-n.com, nn_eef26576, DIRECT
 network-n.com, nn_c73f329c, DIRECT
 network-n.com, pa_6cdbf87f, DIRECT
 network-n.com, nn_a94525bd, DIRECT
-network-n.com, nn_7bef0373, DIRECT
+network-n.com, pa_0b71c320, DIRECT
 network-n.com, nn_c69fccc0, DIRECT
 network-n.com, pa_2e0fe469, DIRECT
 network-n.com, nn_601d8ead, DIRECT
@@ -403,13 +406,13 @@ network-n.com, pa_7bef0373, DIRECT
 network-n.com, nn_39bf5b96, DIRECT
 network-n.com, pa_0e5827bf, DIRECT
 network-n.com, pa_5471d680, DIRECT
-network-n.com, nn_7c030473, DIRECT
-network-n.com, nn_d9bd0d92, DIRECT
+network-n.com, pa_ad4e5de9, DIRECT
+network-n.com, pa_b568ea31, DIRECT
 network-n.com, pa_177acef3, DIRECT
 network-n.com, pa_fda9576c, DIRECT
 network-n.com, pa_02b64c13, DIRECT
 network-n.com, pa_8c91333e, DIRECT
-network-n.com, nn_07aaf1a3, DIRECT
+network-n.com, pa_51ef4921, DIRECT
 network-n.com, pa_622654f6, DIRECT
 network-n.com, pa_78f6e17e, DIRECT
 network-n.com, pa_3da102b3, DIRECT
@@ -436,6 +439,9 @@ network-n.com, pa_a863cb34, DIRECT
 network-n.com, pa_3f85e405, DIRECT
 network-n.com, pa_c201a0b6, DIRECT
 network-n.com, pa_cddb4912, DIRECT
+network-n.com, pa_eaba5433, DIRECT
+network-n.com, pa_bdc939c3, DIRECT
+network-n.com, pa_2b011291, DIRECT
 
 # Video
 EMXDGT.com,1309, DIRECT, 1e1d41537f7cad7f
