@@ -278,4 +278,8 @@ export const itemGroup = {
     name: 'Concealed Claw',
     items: [itemList.concealed_claw, itemList.concealed_unguis, itemList.concealed_talon],
   },
+  spectral_husk: {
+    name: 'Spectral',
+    items: [itemList.concealed_claw, itemList.spectral_heart, itemList.spectral_nucleus],
+  },
 };
