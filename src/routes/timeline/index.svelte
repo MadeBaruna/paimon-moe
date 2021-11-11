@@ -38,7 +38,8 @@
   let lastEventTime = dayjs().year(2000);
   let firstDay = dayjs();
   let dates = [];
-  let months = {};
+  let years = [];
+  let yearList = [];
   let monthList = [];
   let events = [];
   let today = dayjs();
@@ -128,20 +129,27 @@
 
     const dayTotal = Math.abs(Math.ceil(firstDay.diff(lastEventTime, 'day', true))) + 2 * padding;
 
-    months = [];
     for (let i = 0; i < dayTotal; i++) {
+      const year = firstDay.add(i, 'day').format('YYYY');
       const month = firstDay.add(i, 'day').format('MMMM');
-      if (months[month] === undefined) {
-        months[month] = {
+      if (years[year] === undefined) {
+        years[year] = [];
+      }
+      if (years[year][month] === undefined) {
+        years[year][month] = {
           total: 0,
           offset: 0,
         };
       }
-
-      months[month].total++;
+      years[year][month].total++;
     }
 
-    monthList = Object.entries(months);
+    yearList = Object.entries(years);
+    for (let i = 0; i < yearList.length; i++) {
+      let obj = Object.entries(yearList[i][1]);
+      monthList = monthList.concat(obj);
+    }
+
     for (let i = 0; i < monthList.length; i++) {
       monthList[i][1].offset = i - 1 >= 0 ? monthList[i - 1][1].total + monthList[i - 1][1].offset : 0;
     }
