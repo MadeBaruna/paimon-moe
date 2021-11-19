@@ -13,6 +13,7 @@
     "furnishing": "傢俱",
     "weapons": "武器",
     "artifacts": "聖遺物",
+    "fishing": "釣魚",
     "settings": "設定",
     "donate": "贊助"
   },
@@ -743,5 +744,17 @@
     "artifact": "聖遺物",
     "setPiece": "{piece} 件效果",
     "recommendedCharacter": "{piece} 件套裝推薦角色"
+  },
+  "fishing": {
+    "title": "釣魚指南",
+    "subtitle": "當你釣完一個釣魚點的所有魚時將該釣魚點標注為已釣完，這樣就會啓動刷新計時器",
+    "mondstadt": "蒙德",
+    "liyue": "璃月",
+    "inazuma": "稻妻",
+    "setEmpty": "設爲已釣完",
+    "emptyTime": "釣魚完成時間:",
+    "clear": "清除",
+    "save": "保存",
+    "cancel": "取消"
   }
 }
