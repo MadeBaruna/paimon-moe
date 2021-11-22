@@ -9,6 +9,9 @@
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre
     class="text-white px-4 md:px-8">
+2021/11/21
+- Update timeline for 2.3 events
+
 2021/11/04
 - Update database sidebar
 - Fix elegy item requirement
