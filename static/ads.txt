@@ -1,4 +1,4 @@
-# Publisher Collective Ads.txt file 2021-11-04 10:11:49
+# Publisher Collective Ads.txt file 2021-11-22 09:49:38
 
 # Display
 google.com, pub-6177961780147591, DIRECT, f08c47fec0942fa0
@@ -69,6 +69,7 @@ pubmatic.com, 160648, RESELLER, 5d62403b186f2ace
 indexexchange.com, 194520, RESELLER, 50b1c356f2c5c8fc
 onetag.com, 664e107d9f2b748, RESELLER
 conversantmedia.com, 100270, RESELLER, 03113cd04947736d
+improvedigital.com, 2021, DIRECT
 aps.amazon.com,26c60b4f-549a-4efd-8ae0-f00e07c46204,DIRECT
 pubmatic.com,157150,RESELLER,5d62403b186f2ace
 pubmatic.com, 160006, RESELLER, 5d62403b186f2ace
@@ -375,7 +376,7 @@ network-n.com, pa_cd3ca5de, DIRECT
 network-n.com, pa_7da8e293, DIRECT
 network-n.com, pa_0947c454, DIRECT
 network-n.com, pa_d684b280, DIRECT
-network-n.com, nn_0e151226, DIRECT
+network-n.com, pa_c0c730e2, DIRECT
 network-n.com, pa_ddf947b1, DIRECT
 network-n.com, nn_ad9aa896, DIRECT
 network-n.com, nn_668ba8bf, DIRECT
@@ -442,6 +443,11 @@ network-n.com, pa_cddb4912, DIRECT
 network-n.com, pa_eaba5433, DIRECT
 network-n.com, pa_bdc939c3, DIRECT
 network-n.com, pa_2b011291, DIRECT
+network-n.com, pa_c43098ca, DIRECT
+network-n.com, pa_2b011291, DIRECT
+network-n.com, pa_2b011291, DIRECT
+network-n.com, pa_a80811f1, DIRECT
+network-n.com, pa_6bda6bb5, DIRECT
 
 # Video
 EMXDGT.com,1309, DIRECT, 1e1d41537f7cad7f
@@ -450,6 +456,15 @@ pubmatic.com, 158682, DIRECT, 5d62403b186f2ace
 openx.com, 540886248, DIRECT, 6a698e2ec38604c6
 google.com, pub-5760410923284845, DIRECT, f08c47fec0942fa0
 themediagrid.com,EB14XD,DIRECT,35d5010d7789b49d
+advertising.com, 28814, RESELLER
+advertising.com, 28816, RESELLER
+appnexus.com, 12564, RESELLER, f5ab79cb980f11d1
+indexexchange.com, 193162, RESELLER
+google.com, pub-5760410923284845, RESELLER, f08c47fec0942fa0
+pubmatic.com, 159247, RESELLER, 5d62403b186f2ace
+pubmatic.com, 160127, RESELLER, 5d62403b186f2ace
+rhythmone.com, 4245644886, RESELLER, a670c89d4a324e47
+video.unrulymedia.com, 4245644886, RESELLER
 districtm.io, 102080, DIRECT, 3fd707be9c4527c3
 appnexus.com, 1908, RESELLER, f5ab79cb980f11d1
 advertising.com, 28784, DIRECT
