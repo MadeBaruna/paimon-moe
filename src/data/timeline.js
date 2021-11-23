@@ -93,7 +93,7 @@ export const eventsData = [
     {
       name: 'Shadows Amidst Snowstorms',
       pos: '0% 20%',
-      zoom: '150%',
+      zoom: '180%',
       image: 'shadows_amidst_snowstorms.jpg',
       start: '2021-11-25 11:00:00',
       end: '2021-12-13 03:59:59',
@@ -170,7 +170,7 @@ export const eventsData = [
       color: '#dfe9f2',
       url: 'https://www.hoyolab.com/article/1432656',
       pos: '0% 20%',
-      zoom: '150%',
+      zoom: '180%',
       image: 'shadows_amidst_snowstorms.jpg',
       startOnly: true,
     },
