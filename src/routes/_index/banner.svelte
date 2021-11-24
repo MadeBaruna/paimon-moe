@@ -13,14 +13,14 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    hu_tao: {
+    albedo: {
       name: 'Albedo',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    thoma: {
+    eula: {
       name: 'Eula',
       rarity: 'legendary',
       count: 0,
