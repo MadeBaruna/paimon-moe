@@ -36,6 +36,7 @@
     { label: 'Asia/TW/HK/MO', value: 'Asia' },
     { label: 'America', value: 'America' },
     { label: 'Europe', value: 'Europe' },
+    { label: 'China', value: 'China' },
   ];
 
   let mounted = false;

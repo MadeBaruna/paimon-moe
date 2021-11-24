@@ -100,7 +100,6 @@ export const eventsData = [
       color: '#dfe9f2',
       url: 'https://www.hoyolab.com/article/1432656',
       showOnHome: true,
-      timezoneDependent: true,
     },
   ],
   [

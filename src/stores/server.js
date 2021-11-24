@@ -13,6 +13,7 @@ export const loading = writable(true);
 
 const timeOffset = {
   Asia: 8,
+  China: 8,
   America: -5,
   Europe: 1,
 };

@@ -25,7 +25,6 @@
   let counter2;
   let counter3;
   let counter4;
-  let summary;
 
   const path = 'wish-counter-setting';
 
@@ -103,21 +102,6 @@
     );
   }
 
-  function openImport() {
-    openModal(
-      ImportModal,
-      {
-        closeModal: closeImportModal,
-        processFirstTimePopup,
-      },
-      {
-        closeButton: false,
-        closeOnOuterClick: false,
-        styleWindow: { background: '#25294A', width: '800px' },
-      },
-    );
-  }
-
   function closeImportModal() {
     closeModal();
     counter1.readLocalData();
@@ -143,10 +127,12 @@
     <div class="flex flex-wrap">
       <h1 class="font-display font-black text-5xl text-white text-center md:text-left md:mr-4">{$t('wish.title')}</h1>
       <div class="flex items-center">
-        <Button className="mr-2 hidden md:block" on:click={openImport}>
-          <Icon size={0.8} path={mdiDatabaseImport} />
-          {$t('wish.autoImport')}
-        </Button>
+        <a href="/wish/import">
+          <Button className="mr-2 hidden md:block">
+            <Icon size={0.8} path={mdiDatabaseImport} />
+            {$t('wish.autoImport')}
+          </Button>
+        </a>
         {#if settings.manualInput}
           <Button on:click={openHowTo} className="mr-2 hidden md:block">
             <Icon size={0.8} path={mdiHelpCircle} />
@@ -163,10 +149,12 @@
       <Ad type="desktop" variant="lb" id="1" />
     </div>
     <div class="md:hidden flex flex-wrap justify-center">
-      <Button className="m-1" on:click={openImport}>
-        <Icon size={0.8} path={mdiDatabaseImport} />
-        {$t('wish.autoImport')}
-      </Button>
+      <a href="/wish/import">
+        <Button className="m-1">
+          <Icon size={0.8} path={mdiDatabaseImport} />
+          {$t('wish.autoImport')}
+        </Button>
+      </a>
       {#if settings.manualInput}
         <Button className="m-1" on:click={openHowTo}>
           <Icon size={0.8} path={mdiHelpCircle} />
@@ -203,7 +191,7 @@
           <Ad type="mobile" variant="mpu" id="1" />
         </div>
       </div>
-      <Summary bind:this={summary} bind:monthlyData />
+      <Summary bind:monthlyData />
     </div>
     <div class="hidden md:flex flex-1">
       <Ad class="ml-4" type="desktop" variant="mpu" id="1" />

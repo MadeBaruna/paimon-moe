@@ -143,6 +143,9 @@
     "import": {
       "title": "Import Wish History",
       "faqsButton": "FAQ - READ FIRST",
+      "readFaq": "Read the FAQ",
+      "openFaq": "Open FAQ",
+      "choosePlatform": "Choose your platform",
       "nonew": "No New Wishes",
       "importNotice1": "Imported wishes will be appended or replaced accordingly to existing data",
       "importNotice2": "If you don't have any data saved before, first wish will be counted as pity 1",
@@ -162,9 +165,11 @@
       "close": "Close",
       "invalidLink": "Invalid link, please check it again",
       "errorApi": "Error code returned from MiHoYo API, please try again later!",
+      "errorExpired": "Link expired, please try again!",
       "timeout": "Connection timeout, please wait a moment and try again later",
       "differentAccount": "This wish history is for another account, please separate your account first on Settings menu!",
       "invalidData": "Invalid data returned from API, try again later",
+      "noNewData": "There is no new wish, please wait about 1 hour for the wish data to update!",
       "success": "Import success 😀!",
       "server": "Select your server:",
       "wishTallyCheck": "Submit pity for global wish tally",
@@ -212,6 +217,20 @@
           "Copy & paste the link to the textbox below",
           "Paste link here... https://webstatic..."
         ],
+        "pc2": [
+          "Open Genshin Impact in this PC",
+          "Then open the wish history and wait it to load",
+          "Open Start, then search for Powershell",
+          "Open Windows Powershell, then copy & paste the script below to the Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/7eab70647f4ed902cfab84779588cc8dac5177f8/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/7eab70647f4ed902cfab84779588cc8dac5177f8/getlink_china.ps1'))",
+          "You can review the script",
+          "here",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "Press ENTER then a link will copied to your clipboard",
+          "Paste the text to the textbox below",
+          "Paste the link here... https://webstatic..."
+        ],
         "android": [
           "Open Wish (in the game)",
           "Press History",
@@ -235,6 +254,7 @@
           "Paste link here... https://genshin.mihoyo..."
         ],
         "ps": [
+          "The steps below might be not working, you can link your PS account with miHoYo account then use the pc/mobile instruction",
           "You can only use this importer if you have an in-game mail with QR Code to open the web event",
           "Open Genshin Impact on your PlayStation",
           "Open the event mail that contains the QR Code",

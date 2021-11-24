@@ -36,7 +36,7 @@
     openModal(
       ExcelImportModal,
       {
-        closeModal: closeImportModal
+        closeModal: closeImportModal,
       },
       {
         closeButton: false,
@@ -46,7 +46,6 @@
   }
 
   $: enableManual, toggleManual();
-
 </script>
 
 <div>

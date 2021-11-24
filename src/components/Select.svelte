@@ -12,6 +12,7 @@
   export let placeholder = 'Select...';
   export let multiselect = false;
   export let image = false;
+  export let disabled = false;
 
   export let selected = null;
   export let selectedMulti = new Set();
@@ -106,7 +107,10 @@
 
 <div class={`select-none relative ${className}`} bind:this={container}>
   <button
-    class={`flex w-full relative items-center px-4 bg-background rounded-2xl h-14 focus:outline-none focus:border-primary border-2 border-transparent ease-in duration-100 ${classes}`}
+    class="flex w-full relative items-center px-4 bg-background rounded-2xl h-14 focus:outline-none focus:border-primary border-2 border-transparent ease-in duration-100 {disabled
+      ? 'cursor-not-allowed'
+      : 'cursor-pointer'} {classes}"
+    {disabled}
     on:click={toggleOptions}
   >
     {#if icon}
