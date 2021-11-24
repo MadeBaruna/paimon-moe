@@ -14,22 +14,22 @@
 
   const featured = {
     hu_tao: {
-      name: 'Hu Tao',
+      name: 'Albedo',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
     thoma: {
-      name: 'Thoma',
+      name: 'Eula',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300021;
-  const image = 'hutao_thoma.png';
+  const bannerId = 300022;
+  const image = 'albedoeula.png';
 
   let loading = true;
   let user = '';

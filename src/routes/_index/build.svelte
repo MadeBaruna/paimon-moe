@@ -6,7 +6,7 @@
 
   import Icon from '../../components/Icon.svelte';
 
-  const promoted = ['hu_tao', 'thoma'];
+  const promoted = ['albedo', 'eula'];
   let current = 0;
 
   function change(index) {
