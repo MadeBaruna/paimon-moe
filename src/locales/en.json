@@ -146,6 +146,7 @@
       "readFaq": "Read the FAQ",
       "openFaq": "Open FAQ",
       "choosePlatform": "Choose your platform",
+      "chooseMethod": "Choose the desired method",
       "nonew": "No New Wishes",
       "importNotice1": "Imported wishes will be appended or replaced accordingly to existing data",
       "importNotice2": "If you don't have any data saved before, first wish will be counted as pity 1",
@@ -208,6 +209,10 @@
         "q7": "It didn't read all my wish history!?",
         "a7": "Wish history older than 6 months will be gone from the mihoyo server itself, so if you don't have a backup somewhere, it's gone sadly"
       },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
+      },
       "guide": {
         "video": "Video Tutorial",
         "pc": [
@@ -218,16 +223,25 @@
           "Paste link here... https://webstatic..."
         ],
         "pc2": [
-          "Open Genshin Impact in this PC",
-          "Then open the wish history and wait it to load",
-          "Open Start, then search for Powershell",
-          "Open Windows Powershell, then copy & paste the script below to the Powershell",
-          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/7eab70647f4ed902cfab84779588cc8dac5177f8/getlink_global.ps1'))",
-          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/7eab70647f4ed902cfab84779588cc8dac5177f8/getlink_china.ps1'))",
+          "Open Genshin Impact in this PC (If you use multiple account please restart the game)",
+          "Then open the wish history in the game and wait it to load",
+          "Press START on your keyboard, then search for Powershell",
+          "Click Windows Powershell, then copy & paste the script below to the Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
           "You can review the script",
           "here",
           "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
           "Press ENTER then a link will copied to your clipboard",
+          "Paste the text to the textbox below",
+          "Paste the link here... https://webstatic..."
+        ],
+        "pclog": [
+          "Open Genshin Impact in this PC (If you use multiple account please restart the game)",
+          "Then open the wish history in the game and wait it to load",
+          "Press WINDOWS+R on your keyboard, then enter:",
+          "A notepad window will open, then press CTRL+F then enter:",
+          "Copy all the link from https://webstatic until #/log the url looks like this: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
           "Paste the text to the textbox below",
           "Paste the link here... https://webstatic..."
         ],
@@ -252,6 +266,22 @@
           "There is a link on the bottom of the reply; press that",
           "A browser should open up. Copy the link and paste it below",
           "Paste link here... https://genshin.mihoyo..."
+        ],
+        "ios2": [
+          "Download Stream on App Store",
+          "here",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "Open the app, then allow VPN in system preferences (Settings > General > VPN)",
+          "Install CA (click Sniff Now on Stream App > Install CA > A pop up window will appear and choose allow > Now CA is downloaded",
+          "Go to settings > General > VPN & Device management > Click on Stream Generated CA and install",
+          "Open Genshin Impact then open Wish screen, stay on that page",
+          "Back to Stream App > Choose I've trusted > Tap Sniff Now Button",
+          "Back to Genshin Impact then open the Wish history page",
+          "Wait for page to load",
+          "Back to Stream App > Stop Sniffing",
+          "Click Sniff History > Choose a request that end by .json (the link start with https://hk4e-api-os.mihoyo.com/)",
+          "Click Request tab, then copy the link and paste it below",
+          "Paste link here... https://hk4e-api-os.mihoyo.com..."
         ],
         "ps": [
           "The steps below might be not working, you can link your PS account with miHoYo account then use the pc/mobile instruction",

@@ -36,11 +36,12 @@
   ];
 
   const steps = {
-    pc: 6,
+    pc: 7,
+    pclog: 7,
     android: 9,
-    ios: 7,
+    ios: 11,
     ps: 5,
-    pclocal: 4,
+    pclocal: 5,
   };
 
   const videoTutorial = {
@@ -668,7 +669,7 @@
         <button
           disabled={processingLog}
           on:click={() => changeSelectedType('pc')}
-          class="pill {selectedType === 'pc' ? 'active' : ''}"
+          class="pill {['pc', 'pclog', 'pclocal'].includes(selectedType) ? 'active' : ''}"
         >
           PC
         </button>
@@ -693,16 +694,45 @@
         >
           PS
         </button>
-        <button
-          disabled={processingLog}
-          on:click={() => changeSelectedType('pclocal')}
-          class="pill {selectedType === 'pclocal' ? 'active' : ''}"
-        >
-          PC Local
-        </button>
       </div>
     </div>
   </div>
+  {#if ['pc', 'pclog', 'pclocal'].includes(selectedType)}
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">4</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex flex-col pb-4 pt-1">
+        <p class="text-white">{$t('wish.import.chooseMethod')}</p>
+        <div class="flex mt-4 flex-wrap">
+          <button
+            disabled={processingLog}
+            on:click={() => changeSelectedType('pc')}
+            class="pill {selectedType === 'pc' ? 'active' : ''}"
+          >
+            Script
+          </button>
+          <button
+            disabled={processingLog}
+            on:click={() => changeSelectedType('pclog')}
+            class="pill {selectedType === 'pclog' ? 'active' : ''}"
+          >
+            Manual Log
+          </button>
+          <button
+            disabled={processingLog}
+            on:click={() => changeSelectedType('pclocal')}
+            class="pill {selectedType === 'pclocal' ? 'active' : ''}"
+          >
+            Local Import
+          </button>
+        </div>
+      </div>
+    </div>
+  {/if}
   {#if videoTutorial[selectedType] !== undefined}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
@@ -723,7 +753,7 @@
       <div class="flex space-x-3 mb-2">
         <div class="flex flex-col items-center step">
           <div class="w-8 rounded-full flex justify-center items-center">
-            <span class="text-white font-bold">{4 + i}</span>
+            <span class="text-white font-bold">{5 + i}</span>
           </div>
           <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
         </div>
@@ -736,7 +766,7 @@
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="w-8 rounded-full flex justify-center items-center">
-          <span class="text-white font-bold">7</span>
+          <span class="text-white font-bold">8</span>
         </div>
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
@@ -757,7 +787,7 @@
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="w-8 rounded-full flex justify-center items-center">
-          <span class="text-white font-bold">8</span>
+          <span class="text-white font-bold">9</span>
         </div>
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
@@ -768,12 +798,81 @@
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="w-8 rounded-full flex justify-center items-center">
-          <span class="text-white font-bold">9</span>
+          <span class="text-white font-bold">10</span>
         </div>
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
       <div class="content flex-col items-center pb-8">
         <p class="text-white">{$t('wish.import.guide.pc2.10')}</p>
+      </div>
+    </div>
+  {:else if selectedType === 'pclog'}
+    {#each Array(2) as _, i}
+      <div class="flex space-x-3 mb-2">
+        <div class="flex flex-col items-center step">
+          <div class="w-8 rounded-full flex justify-center items-center">
+            <span class="text-white font-bold">{5 + i}</span>
+          </div>
+          <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+        </div>
+        <div class="content flex-col items-center">
+          <p class="text-white">{$t(`wish.import.guide.pclog.${i}`)}</p>
+        </div>
+      </div>
+    {/each}
+
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="w-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">7</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex-col items-center pb-2">
+        <p class="text-white">{$t('wish.import.guide.pclog.2')}</p>
+        <pre
+          class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">
+          {$server === 'China' ? $t('wish.import.logLocation.china') : $t('wish.import.logLocation.global')}
+        </pre>
+      </div>
+    </div>
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="w-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">8</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex-col items-center">
+        <p class="text-white">
+          {$t('wish.import.guide.pclog.3')}
+          <code
+            class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all"
+            >OnGetWebViewPageFinish:https://webstatic</code
+          >
+        </p>
+      </div>
+    </div>
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="w-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">9</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex-col items-center">
+        <p class="text-white">{$t('wish.import.guide.pclog.4')}</p>
+      </div>
+    </div>
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="w-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">10</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex-col items-center pb-8">
+        <p class="text-white">{$t('wish.import.guide.pclog.5')}</p>
       </div>
     </div>
   {:else if selectedType === 'pclocal'}
@@ -793,7 +892,7 @@
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="w-8 rounded-full flex justify-center items-center">
-          <span class="text-white font-bold">4</span>
+          <span class="text-white font-bold">5</span>
         </div>
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
@@ -804,7 +903,7 @@
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="w-8 rounded-full flex justify-center items-center">
-          <span class="text-white font-bold">5</span>
+          <span class="text-white font-bold">6</span>
         </div>
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
@@ -823,7 +922,7 @@
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="w-8 rounded-full flex justify-center items-center">
-          <span class="text-white font-bold">6</span>
+          <span class="text-white font-bold">7</span>
         </div>
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
@@ -834,7 +933,7 @@
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="w-8 rounded-full flex justify-center items-center">
-          <span class="text-white font-bold">7</span>
+          <span class="text-white font-bold">8</span>
         </div>
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
@@ -842,6 +941,36 @@
         <p class="text-white">{$t('wish.import.guide.pclocal.8')}</p>
       </div>
     </div>
+  {:else if selectedType === 'ios'}
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="w-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">4</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex-col items-center pb-2">
+        <p class="text-white">
+          {$t('wish.import.guide.ios2.0')}
+          <a class="text-blue-400 hover:underline" href={$t('wish.import.guide.ios2.2')} target="_blank">
+            {$t('wish.import.guide.ios2.1')}
+          </a>
+        </p>
+      </div>
+    </div>
+    {#each Array(10) as _, i}
+      <div class="flex space-x-3 mb-2">
+        <div class="flex flex-col items-center step">
+          <div class="w-8 rounded-full flex justify-center items-center">
+            <span class="text-white font-bold">{5 + i}</span>
+          </div>
+          <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+        </div>
+        <div class="content flex-col items-center {i === 9 ? 'pb-8' : ''}">
+          <p class="text-white">{$t(`wish.import.guide.ios2.${i + 3}`)}</p>
+        </div>
+      </div>
+    {/each}
   {:else}
     {#each Array(steps[selectedType]) as _, i}
       <div class="flex space-x-3 mb-2">
@@ -869,8 +998,12 @@
     <div class="content flex-col items-center pb-4 pt-1 w-full lg:w-1/2 -mt-4">
       {#if selectedType === 'pc'}
         <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.pc2.11')} />
+      {:else if selectedType === 'pclog'}
+        <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.pclog.6')} />
       {:else if selectedType === 'pclocal'}
         <Textarea bind:value={generatedTextInput} placeholder={$t('wish.import.guide.pclocal.9')} />
+      {:else if selectedType === 'ios'}
+        <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.ios2.13')} />
       {:else}
         <Input bind:value={genshinLink} placeholder={$t(`wish.import.guide.${selectedType}.${steps[selectedType]}`)} />
       {/if}
