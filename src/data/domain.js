@@ -8,14 +8,18 @@ export const domains = {
         name: 'Domain of Blessing: Fires of Purification I',
         ar: 1,
         level: 34,
-        reward: { adventureExp: '100', mora: '1525', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1525',
+          friendshipExp: '15',
+        },
         monsters: [
           { id: 'cryo_slime', name: 'Cryo Slime', count: 3 },
           { id: 'hydro_slime', name: 'Hydro Slime', count: 7 },
           { id: 'hilichurl', name: 'Hilichurl', count: 14 },
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 1 },
         ],
-        disorder: ['When Melt is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.'],
+        disorder: [''],
       },
       {
         s: 5002,
@@ -23,15 +27,20 @@ export const domains = {
         name: 'Domain of Blessing: Fires of Purification II',
         ar: 25,
         level: 47,
-        reward: { adventureExp: '100', mora: '1700', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1700',
+          friendshipExp: '15',
+        },
         monsters: [
           { id: 'electro_slime', name: 'Electro Slime', count: 11 },
-          { id: 'fatui_electro_cicin_mage', name: 'Fatui Electro Cicin Mage', count: 1 },
+          {
+            id: 'fatui_electro_cicin_mage',
+            name: 'Fatui Electro Cicin Mage',
+            count: 1,
+          },
         ],
-        disorder: [
-          'When Overloaded is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Superconduct is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', ''],
       },
       {
         s: 5003,
@@ -39,15 +48,16 @@ export const domains = {
         name: 'Domain of Blessing: Fires of Purification III',
         ar: 30,
         level: 59,
-        reward: { adventureExp: '100', mora: '1850', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
         monsters: [
           { id: 'cryo_slime', name: 'Cryo Slime', count: 13 },
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 1 },
         ],
-        disorder: [
-          'When Melt is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Superconduct is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', ''],
       },
       {
         s: 5004,
@@ -55,16 +65,17 @@ export const domains = {
         name: 'Domain of Blessing: Fires of Purification IV',
         ar: 35,
         level: 69,
-        reward: { adventureExp: '100', mora: '2025', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'hydro_slime', name: 'Hydro Slime', count: 13 },
           { id: 'hydro_abyss_mage', name: 'Hydro Abyss Mage', count: 1 },
           { id: 'hydro_samachurl', name: 'Hydro Samachurl', count: 1 },
         ],
-        disorder: [
-          'When Vaporize is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Electro-Charged is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', ''],
       },
       {
         s: 5005,
@@ -72,15 +83,16 @@ export const domains = {
         name: 'Domain of Blessing: Fires of Purification V',
         ar: 40,
         level: 80,
-        reward: { adventureExp: '100', mora: '2200', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'large_cryo_slime', name: 'Large Cryo Slime', count: 3 },
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 2 },
         ],
-        disorder: [
-          'When Melt is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Superconduct is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', ''],
       },
       {
         s: 5006,
@@ -88,16 +100,29 @@ export const domains = {
         name: 'Domain of Blessing: Fires of Purification VI',
         ar: 45,
         level: 90,
-        reward: { adventureExp: '100', mora: '2525', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'large_electro_slime', name: 'Large Electro Slime', count: 3 },
-          { id: 'mutant_electro_slime', name: 'Mutant Electro Slime', count: 2 },
-          { id: 'fatui_electro_cicin_mage', name: 'Fatui Electro Cicin Mage', count: 2 },
+          {
+            id: 'large_electro_slime',
+            name: 'Large Electro Slime',
+            count: 3,
+          },
+          {
+            id: 'mutant_electro_slime',
+            name: 'Mutant Electro Slime',
+            count: 2,
+          },
+          {
+            id: 'fatui_electro_cicin_mage',
+            name: 'Fatui Electro Cicin Mage',
+            count: 2,
+          },
         ],
-        disorder: [
-          'When Overloaded is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Superconduct is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', ''],
       },
     ],
     artifacts: ['adventurer', 'resolution_of_sojourner', 'thundering_fury', 'thundersoother'],
@@ -111,9 +136,39 @@ export const domains = {
         name: 'Domain of Blessing: Dance of Steel I',
         ar: 25,
         level: 47,
-        reward: { adventureExp: '100', mora: '1700', friendshipExp: '15' },
-        monsters: [{ id: 'treasure_hoarder', name: 'Treasure Hoarder', count: 23 }],
-        disorder: ['Physical DMG dealt by all party members increased by 75%.'],
+        reward: {
+          adventureExp: '100',
+          mora: '1700',
+          friendshipExp: '15',
+        },
+        monsters: [
+          {
+            id: 'treasure_hoarder_cryo_potioneer',
+            name: 'Treasure Hoarder Cryo Potioneer',
+            count: 10,
+          },
+          {
+            id: 'treasure_hoarder_handyman',
+            name: 'Treasure Hoarder Handyman',
+            count: 5,
+          },
+          {
+            id: 'treasure_hoarder_pugilist',
+            name: 'Treasure Hoarder Pugilist',
+            count: 5,
+          },
+          {
+            id: 'treasure_hoarder_gravedigger',
+            name: 'Treasure Hoarder Gravedigger',
+            count: 2,
+          },
+          {
+            id: 'treasure_hoarder_seaman',
+            name: 'Treasure Hoarder Seaman',
+            count: 1,
+          },
+        ],
+        disorder: [''],
       },
       {
         s: 5009,
@@ -121,12 +176,45 @@ export const domains = {
         name: 'Domain of Blessing: Dance of Steel II',
         ar: 30,
         level: 59,
-        reward: { adventureExp: '100', mora: '1850', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
         monsters: [
-          { id: 'treasure_hoarder', name: 'Treasure Hoarder', count: 15 },
+          {
+            id: 'treasure_hoarder_scout',
+            name: 'Treasure Hoarder Scout',
+            count: 4,
+          },
+          {
+            id: 'treasure_hoarder_pyro_potioneer',
+            name: 'Treasure Hoarder Pyro Potioneer',
+            count: 3,
+          },
+          {
+            id: 'treasure_hoarder_hydro_potioneer',
+            name: 'Treasure Hoarder Hydro Potioneer',
+            count: 5,
+          },
+          {
+            id: 'treasure_hoarder_handyman',
+            name: 'Treasure Hoarder Handyman',
+            count: 1,
+          },
+          {
+            id: 'treasure_hoarder_crusher',
+            name: 'Treasure Hoarder Crusher',
+            count: 1,
+          },
+          {
+            id: 'treasure_hoarder_pugilist',
+            name: 'Treasure Hoarder Pugilist',
+            count: 1,
+          },
           { id: 'fatui_pyro_agent', name: 'Fatui Pyro Agent', count: 1 },
         ],
-        disorder: ['Physical DMG dealt by all party members increased by 75%.'],
+        disorder: [''],
       },
       {
         s: 5010,
@@ -134,13 +222,55 @@ export const domains = {
         name: 'Domain of Blessing: Dance of Steel III',
         ar: 35,
         level: 69,
-        reward: { adventureExp: '100', mora: '2025', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'treasure_hoarder', name: 'Treasure Hoarder', count: 18 },
+          {
+            id: 'treasure_hoarder_scout',
+            name: 'Treasure Hoarder Scout',
+            count: 2,
+          },
+          {
+            id: 'treasure_hoarder_pyro_potioneer',
+            name: 'Treasure Hoarder Pyro Potioneer',
+            count: 4,
+          },
+          {
+            id: 'treasure_hoarder_electro_potioneer',
+            name: 'Treasure Hoarder Electro Potioneer',
+            count: 4,
+          },
+          {
+            id: 'treasure_hoarder_handyman',
+            name: 'Treasure Hoarder Handyman',
+            count: 4,
+          },
+          {
+            id: 'treasure_hoarder_crusher',
+            name: 'Treasure Hoarder Crusher',
+            count: 1,
+          },
+          {
+            id: 'treasure_hoarder_pugilist',
+            name: 'Treasure Hoarder Pugilist',
+            count: 2,
+          },
+          {
+            id: 'treasure_hoarder_gravedigger',
+            name: 'Treasure Hoarder Gravedigger',
+            count: 1,
+          },
           { id: 'fatui_pyro_agent', name: 'Fatui Pyro Agent', count: 1 },
-          { id: 'fatui_electro_cicin_mage', name: 'Fatui Electro Cicin Mage', count: 1 },
+          {
+            id: 'fatui_electro_cicin_mage',
+            name: 'Fatui Electro Cicin Mage',
+            count: 1,
+          },
         ],
-        disorder: ['Physical DMG dealt by all party members increased by 75%.'],
+        disorder: [''],
       },
       {
         s: 5011,
@@ -148,13 +278,45 @@ export const domains = {
         name: 'Domain of Blessing: Dance of Steel IV',
         ar: 40,
         level: 80,
-        reward: { adventureExp: '100', mora: '2200', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'treasure_hoarder', name: 'Treasure Hoarder', count: 5 },
+          {
+            id: 'treasure_hoarder_pyro_potioneer',
+            name: 'Treasure Hoarder Pyro Potioneer',
+            count: 1,
+          },
+          {
+            id: 'treasure_hoarder_hydro_potioneer',
+            name: 'Treasure Hoarder Hydro Potioneer',
+            count: 1,
+          },
+          {
+            id: 'treasure_hoarder_electro_potioneer',
+            name: 'Treasure Hoarder Electro Potioneer',
+            count: 1,
+          },
+          {
+            id: 'treasure_hoarder_cryo_potioneer',
+            name: 'Treasure Hoarder Cryo Potioneer',
+            count: 1,
+          },
+          {
+            id: 'treasure_hoarder_seaman',
+            name: 'Treasure Hoarder Seaman',
+            count: 1,
+          },
           { id: 'fatui_pyro_agent', name: 'Fatui Pyro Agent', count: 1 },
-          { id: 'fatui_electro_cicin_mage', name: 'Fatui Electro Cicin Mage', count: 1 },
+          {
+            id: 'fatui_electro_cicin_mage',
+            name: 'Fatui Electro Cicin Mage',
+            count: 1,
+          },
         ],
-        disorder: ['Physical DMG dealt by all party members increased by 75%.'],
+        disorder: [''],
       },
       {
         s: 5012,
@@ -162,13 +324,25 @@ export const domains = {
         name: 'Domain of Blessing: Dance of Steel V',
         ar: 45,
         level: 90,
-        reward: { adventureExp: '100', mora: '2525', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'treasure_hoarder_cryo_potioneer', name: 'Treasure Hoarder Cryo Potioneer', count: 3 },
+          {
+            id: 'treasure_hoarder_cryo_potioneer',
+            name: 'Treasure Hoarder Cryo Potioneer',
+            count: 3,
+          },
           { id: 'fatui_pyro_agent', name: 'Fatui Pyro Agent', count: 1 },
-          { id: 'fatui_electro_cicin_mage', name: 'Fatui Electro Cicin Mage', count: 1 },
+          {
+            id: 'fatui_electro_cicin_mage',
+            name: 'Fatui Electro Cicin Mage',
+            count: 1,
+          },
         ],
-        disorder: ['Physical DMG dealt by all party members increased by 75%.'],
+        disorder: [''],
       },
     ],
     artifacts: ['traveling_doctor', 'tiny_miracle', 'viridescent_venerer', 'maiden_beloved'],
@@ -182,15 +356,21 @@ export const domains = {
         name: 'Domain of Blessing: Unyielding I',
         ar: 30,
         level: 59,
-        reward: { adventureExp: '100', mora: '1850', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
         monsters: [
           { id: 'pyro_slime', name: 'Pyro Slime', count: 2 },
           { id: 'large_pyro_slime', name: 'Large Pyro Slime', count: 4 },
-          { id: 'hilichurl_berserker', name: 'Hilichurl Berserker', count: 4 },
+          {
+            id: 'hilichurl_berserker',
+            name: 'Hilichurl Berserker',
+            count: 4,
+          },
         ],
-        disorder: [
-          "A backlash will occur when opponents hit a character protected by a shield, unleashing a shockwave originating at the attacking opponent's position that deals one instance of AoE DMG. Can occur once every 2s.",
-        ],
+        disorder: [''],
       },
       {
         s: 5015,
@@ -198,15 +378,25 @@ export const domains = {
         name: 'Domain of Blessing: Unyielding II',
         ar: 35,
         level: 69,
-        reward: { adventureExp: '100', mora: '2025', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'hilichurl_berserker', name: 'Hilichurl Berserker', count: 4 },
-          { id: 'blazing_axe_mitachurl', name: 'Blazing Axe Mitachurl', count: 3 },
+          {
+            id: 'hilichurl_berserker',
+            name: 'Hilichurl Berserker',
+            count: 4,
+          },
+          {
+            id: 'blazing_axe_mitachurl',
+            name: 'Blazing Axe Mitachurl',
+            count: 3,
+          },
           { id: 'large_pyro_slime', name: 'Large Pyro Slime', count: 1 },
         ],
-        disorder: [
-          "A backlash will occur when opponents hit a character protected by a shield, unleashing a shockwave originating at the attacking opponent's position that deals one instance of AoE DMG. Can occur once every 2s.",
-        ],
+        disorder: [''],
       },
       {
         s: 5016,
@@ -214,16 +404,25 @@ export const domains = {
         name: 'Domain of Blessing: Unyielding III',
         ar: 40,
         level: 80,
-        reward: { adventureExp: '100', mora: '2200', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'large_pyro_slime', name: 'Large Pyro Slime', count: 5 },
-          { id: 'blazing_axe_mitachurl', name: 'Blazing Axe Mitachurl', count: 4 },
-          { id: 'rock_shieldwall_mitachurl', name: 'Rock Shieldwall Mitachurl', count: 1 },
+          {
+            id: 'blazing_axe_mitachurl',
+            name: 'Blazing Axe Mitachurl',
+            count: 4,
+          },
+          {
+            id: 'rock_shieldwall_mitachurl',
+            name: 'Rock Shieldwall Mitachurl',
+            count: 1,
+          },
         ],
-        disorder: [
-          "A backlash will occur when opponents hit a character protected by a shield, unleashing a shockwave originating at the attacking opponent's position that deals one instance of AoE DMG. Can occur once every 2s.",
-          '',
-        ],
+        disorder: ['', ''],
       },
       {
         s: 5017,
@@ -231,15 +430,24 @@ export const domains = {
         name: 'Domain of Blessing: Unyielding IV',
         ar: 45,
         level: 90,
-        reward: { adventureExp: '100', mora: '2525', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'geovishap_(hydro)', name: 'Geovishap (Hydro)', count: 1 },
-          { id: 'geovishap_(electro)', name: 'Geovishap (Electro)', count: 1 },
+          {
+            id: 'geovishap_(hydro)',
+            name: 'Geovishap (Hydro)',
+            count: 1,
+          },
+          {
+            id: 'geovishap_(electro)',
+            name: 'Geovishap (Electro)',
+            count: 1,
+          },
         ],
-        disorder: [
-          "A backlash will occur when opponents hit a character protected by a shield, unleashing a shockwave originating at the attacking opponent's position that deals one instance of AoE DMG. Can occur once every 2s.",
-          '',
-        ],
+        disorder: ['', ''],
       },
     ],
     artifacts: ['brave_heart', 'martial_artist', 'tenacity_of_the_millelith', 'pale_flame'],
@@ -253,13 +461,21 @@ export const domains = {
         name: 'Domain of Blessing: Spring I',
         ar: 1,
         level: 34,
-        reward: { adventureExp: '100', mora: '1525', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1525',
+          friendshipExp: '15',
+        },
         monsters: [
           { id: 'hydro_slime', name: 'Hydro Slime', count: 21 },
-          { id: 'large_hydro_slime', name: 'Large Hydro Slime', count: 6 },
+          {
+            id: 'large_hydro_slime',
+            name: 'Large Hydro Slime',
+            count: 6,
+          },
           { id: 'hydro_abyss_mage', name: 'Hydro Abyss Mage', count: 1 },
         ],
-        disorder: ['Electro-Charged DMG increased by 150%, and its AoE is increased by 100%.'],
+        disorder: [''],
       },
       {
         s: 5101,
@@ -267,13 +483,17 @@ export const domains = {
         name: 'Domain of Blessing: Spring II',
         ar: 25,
         level: 47,
-        reward: { adventureExp: '100', mora: '1700', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1700',
+          friendshipExp: '15',
+        },
         monsters: [
           { id: 'pyro_slime', name: 'Pyro Slime', count: 16 },
           { id: 'large_pyro_slime', name: 'Large Pyro Slime', count: 5 },
           { id: 'pyro_abyss_mage', name: 'Pyro Abyss Mage', count: 1 },
         ],
-        disorder: ['When Overloaded is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.'],
+        disorder: [''],
       },
       {
         s: 5102,
@@ -281,13 +501,17 @@ export const domains = {
         name: 'Domain of Blessing: Spring III',
         ar: 30,
         level: 59,
-        reward: { adventureExp: '100', mora: '1850', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
         monsters: [
           { id: 'cryo_slime', name: 'Cryo Slime', count: 15 },
           { id: 'large_cryo_slime', name: 'Large Cryo Slime', count: 4 },
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 1 },
         ],
-        disorder: ['When Superconduct is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.'],
+        disorder: [''],
       },
       {
         s: 5103,
@@ -295,15 +519,23 @@ export const domains = {
         name: 'Domain of Blessing: Spring IV',
         ar: 35,
         level: 69,
-        reward: { adventureExp: '100', mora: '2025', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'hydro_slime', name: 'Hydro Slime', count: 5 },
-          { id: 'large_hydro_slime', name: 'Large Hydro Slime', count: 6 },
+          {
+            id: 'large_hydro_slime',
+            name: 'Large Hydro Slime',
+            count: 6,
+          },
           { id: 'hilichurl', name: 'Hilichurl', count: 6 },
           { id: 'hydro_samachurl', name: 'Hydro Samachurl', count: 2 },
           { id: 'hydro_abyss_mage', name: 'Hydro Abyss Mage', count: 1 },
         ],
-        disorder: ['Electro-Charged DMG increased by 150%, and its AoE is increased by 100%.'],
+        disorder: [''],
       },
       {
         s: 5104,
@@ -311,16 +543,16 @@ export const domains = {
         name: 'Domain of Blessing: Spring V',
         ar: 40,
         level: 80,
-        reward: { adventureExp: '100', mora: '2200', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'pyro_abyss_mage', name: 'Pyro Abyss Mage', count: 1 },
           { id: 'ruin_guard', name: 'Ruin Guard', count: 2 },
         ],
-        disorder: [
-          'When Overloaded is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Melt is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-          'When Vaporize is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', '', ''],
       },
       {
         s: 5105,
@@ -328,17 +560,17 @@ export const domains = {
         name: 'Domain of Blessing: Spring VI',
         ar: 45,
         level: 90,
-        reward: { adventureExp: '100', mora: '2525', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'ruin_hunter', name: 'Ruin Hunter', count: 1 },
           { id: 'hilichurl', name: 'Hilichurl', count: 2 },
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 2 },
         ],
-        disorder: [
-          'When Superconduct is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Melt is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-          'When Vaporize is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', '', ''],
       },
     ],
     artifacts: ['lucky_dog', 'brave_heart', 'archaic_petra', 'retracing_bolide'],
@@ -352,16 +584,21 @@ export const domains = {
         name: 'Domain of Blessing: Frost I',
         ar: 30,
         level: 59,
-        reward: { adventureExp: '100', mora: '1850', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
         monsters: [
-          { id: 'large_electro_slime', name: 'Large Electro Slime', count: 6 },
+          {
+            id: 'large_electro_slime',
+            name: 'Large Electro Slime',
+            count: 6,
+          },
           { id: 'hydro_slime', name: 'Hydro Slime', count: 8 },
           { id: 'large_hydro_slime', name: 'Large Hydro Slime', count: 6 },
         ],
-        disorder: [
-          'The duration of the Frozen status effect is greatly increased.',
-          'When Superconduct is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-        ],
+        disorder: ['', ''],
       },
       {
         s: 5108,
@@ -369,16 +606,21 @@ export const domains = {
         name: 'Domain of Blessing: Frost II',
         ar: 35,
         level: 69,
-        reward: { adventureExp: '100', mora: '2025', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'large_pyro_slime', name: 'Large Pyro Slime', count: 4 },
-          { id: 'blazing_axe_mitachurl', name: 'Blazing Axe Mitachurl', count: 2 },
+          {
+            id: 'blazing_axe_mitachurl',
+            name: 'Blazing Axe Mitachurl',
+            count: 2,
+          },
           { id: 'pyro_abyss_mage', name: 'Pyro Abyss Mage', count: 2 },
         ],
-        disorder: [
-          'When Melt is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Overloaded is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', ''],
       },
       {
         s: 5109,
@@ -386,19 +628,44 @@ export const domains = {
         name: 'Domain of Blessing: Frost III',
         ar: 40,
         level: 80,
-        reward: { adventureExp: '100', mora: '2200', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'large_electro_slime', name: 'Large Electro Slime', count: 3 },
-          { id: 'hilichurl_fighter', name: 'Hilichurl Fighter', count: 2 },
-          { id: 'large_electro_slime', name: 'Large Electro Slime', count: 3 },
-          { id: 'hilichurl_fighter', name: 'Hilichurl Fighter', count: 2 },
-          { id: 'large_electro_slime', name: 'Large Electro Slime', count: 5 },
-          { id: 'fatui_electro_cicin_mage', name: 'Fatui Electro Cicin Mage', count: 1 },
+          {
+            id: 'large_electro_slime',
+            name: 'Large Electro Slime',
+            count: 3,
+          },
+          {
+            id: 'hilichurl_fighter',
+            name: 'Hilichurl Fighter',
+            count: 2,
+          },
+          {
+            id: 'large_electro_slime',
+            name: 'Large Electro Slime',
+            count: 3,
+          },
+          {
+            id: 'hilichurl_fighter',
+            name: 'Hilichurl Fighter',
+            count: 2,
+          },
+          {
+            id: 'large_electro_slime',
+            name: 'Large Electro Slime',
+            count: 5,
+          },
+          {
+            id: 'fatui_electro_cicin_mage',
+            name: 'Fatui Electro Cicin Mage',
+            count: 1,
+          },
         ],
-        disorder: [
-          'When Superconduct is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Overloaded is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', ''],
       },
       {
         s: 5110,
@@ -406,16 +673,21 @@ export const domains = {
         name: 'Domain of Blessing: Frost IV',
         ar: 45,
         level: 90,
-        reward: { adventureExp: '100', mora: '2525', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'large_pyro_slime', name: 'Large Pyro Slime', count: 2 },
-          { id: 'blazing_axe_mitachurl', name: 'Blazing Axe Mitachurl', count: 2 },
+          {
+            id: 'blazing_axe_mitachurl',
+            name: 'Blazing Axe Mitachurl',
+            count: 2,
+          },
           { id: 'pyro_abyss_mage', name: 'Pyro Abyss Mage', count: 2 },
         ],
-        disorder: [
-          'When Melt is triggered, an Energy Blast will occur, dealing DMG to surrounding opponents.',
-          'When Overloaded is triggered, you will be hit by a powerful blast, causing your character to take DMG.',
-        ],
+        disorder: ['', ''],
       },
     ],
     artifacts: ['defenders_will', 'martial_artist', 'crimson_witch_of_flames', 'lavawalker'],
@@ -429,12 +701,16 @@ export const domains = {
         name: 'Domain of Blessing: Stone Chamber I',
         ar: 35,
         level: 69,
-        reward: { adventureExp: '100', mora: '2025', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 1 },
           { id: 'pyro_abyss_mage', name: 'Pyro Abyss Mage', count: 2 },
         ],
-        disorder: ['Geo DMG dealt by all party members increased by 75%.'],
+        disorder: [''],
       },
       {
         s: 5113,
@@ -442,12 +718,16 @@ export const domains = {
         name: 'Domain of Blessing: Stone Chamber II',
         ar: 40,
         level: 80,
-        reward: { adventureExp: '100', mora: '2200', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 2 },
           { id: 'pyro_abyss_mage', name: 'Pyro Abyss Mage', count: 1 },
         ],
-        disorder: ['Geo DMG dealt by all party members increased by 75%.'],
+        disorder: [''],
       },
       {
         s: 5114,
@@ -455,13 +735,17 @@ export const domains = {
         name: 'Domain of Blessing: Stone Chamber III',
         ar: 45,
         level: 90,
-        reward: { adventureExp: '100', mora: '2525', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 1 },
           { id: 'pyro_abyss_mage', name: 'Pyro Abyss Mage', count: 1 },
           { id: 'hydro_abyss_mage', name: 'Hydro Abyss Mage', count: 1 },
         ],
-        disorder: ['Geo DMG dealt by all party members increased by 75%.'],
+        disorder: [''],
       },
     ],
     artifacts: ['gambler', 'scholar', 'bloodstained_chivalry', 'noblesse_oblige'],
@@ -475,17 +759,21 @@ export const domains = {
         name: 'Domain of Blessing: Elegaic Rime I',
         ar: 30,
         level: 59,
-        reward: { adventureExp: '100', mora: '1850', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
         monsters: [
           { id: 'cryo_slime', name: 'Cryo Slime', count: 10 },
           { id: 'large_cryo_slime', name: 'Large Cryo Slime', count: 2 },
-          { id: 'ice_shieldwall_mitachurl', name: 'Ice Shieldwall Mitachurl', count: 2 },
+          {
+            id: 'ice_shieldwall_mitachurl',
+            name: 'Ice Shieldwall Mitachurl',
+            count: 2,
+          },
         ],
-        disorder: [
-          'Characters in the challenge will continuously accumulate Sheer Cold, and will lose HP after Sheer Cold reaches its limit.',
-          'The platforms in this challenge will intermittently switch between the Subzero and Warm statuses.',
-          "The areas affected by the Warm status will diminish Sheer Cold. The areas affected by the Subzero status will accelerate Sheer Cold's accumulation.",
-        ],
+        disorder: ['', '', ''],
       },
       {
         s: 5121,
@@ -493,18 +781,26 @@ export const domains = {
         name: 'Domain of Blessing: Elegaic Rime II',
         ar: 35,
         level: 69,
-        reward: { adventureExp: '100', mora: '2025', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'cryo_slime', name: 'Cryo Slime', count: 3 },
           { id: 'large_cryo_slime', name: 'Large Cryo Slime', count: 2 },
-          { id: 'cryo_hilichurl_grenadier', name: 'Cryo Hilichurl Grenadier', count: 3 },
-          { id: 'ice_shieldwall_mitachurl', name: 'Ice Shieldwall Mitachurl', count: 2 },
+          {
+            id: 'cryo_hilichurl_grenadier',
+            name: 'Cryo Hilichurl Grenadier',
+            count: 3,
+          },
+          {
+            id: 'ice_shieldwall_mitachurl',
+            name: 'Ice Shieldwall Mitachurl',
+            count: 2,
+          },
         ],
-        disorder: [
-          'Characters in the challenge will continuously accumulate Sheer Cold, and will lose HP after Sheer Cold reaches its limit.',
-          'The platforms in this challenge will intermittently switch between the Subzero and Warm statuses.',
-          "The areas affected by the Warm status will diminish Sheer Cold. The areas affected by the Subzero status will accelerate Sheer Cold's accumulation.",
-        ],
+        disorder: ['', '', ''],
       },
       {
         s: 5122,
@@ -512,18 +808,26 @@ export const domains = {
         name: 'Domain of Blessing: Elegaic Rime III',
         ar: 40,
         level: 80,
-        reward: { adventureExp: '100', mora: '2200', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'large_cryo_slime', name: 'Large Cryo Slime', count: 2 },
-          { id: 'cryo_hilichurl_grenadier', name: 'Cryo Hilichurl Grenadier', count: 2 },
-          { id: 'ice_shieldwall_mitachurl', name: 'Ice Shieldwall Mitachurl', count: 3 },
+          {
+            id: 'cryo_hilichurl_grenadier',
+            name: 'Cryo Hilichurl Grenadier',
+            count: 2,
+          },
+          {
+            id: 'ice_shieldwall_mitachurl',
+            name: 'Ice Shieldwall Mitachurl',
+            count: 3,
+          },
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 1 },
         ],
-        disorder: [
-          'Characters in the challenge will continuously accumulate Sheer Cold, and will lose HP after Sheer Cold reaches its limit.',
-          'The platforms in this challenge will intermittently switch between the Subzero and Warm statuses.',
-          "The areas affected by the Warm status will diminish Sheer Cold. The areas affected by the Subzero status will accelerate Sheer Cold's accumulation.",
-        ],
+        disorder: ['', '', ''],
       },
       {
         s: 5123,
@@ -531,16 +835,20 @@ export const domains = {
         name: 'Domain of Blessing: Elegaic Rime IV',
         ar: 45,
         level: 90,
-        reward: { adventureExp: '100', mora: '2525', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
         monsters: [
           { id: 'cryo_abyss_mage', name: 'Cryo Abyss Mage', count: 1 },
-          { id: 'frostarm_lawachurl', name: 'Frostarm Lawachurl', count: 1 },
+          {
+            id: 'frostarm_lawachurl',
+            name: 'Frostarm Lawachurl',
+            count: 1,
+          },
         ],
-        disorder: [
-          'Characters in the challenge will continuously accumulate Sheer Cold, and will lose HP after Sheer Cold reaches its limit.',
-          'The platforms in this challenge will intermittently switch between the Subzero and Warm statuses.',
-          "The areas affected by the Warm status will diminish Sheer Cold. The areas affected by the Subzero status will accelerate Sheer Cold's accumulation.",
-        ],
+        disorder: ['', '', ''],
       },
     ],
     artifacts: ['defenders_will', 'gambler', 'blizzard_strayer', 'heart_of_depth'],
@@ -554,19 +862,35 @@ export const domains = {
         name: 'Domain of Blessing: Autumn Hunt I',
         ar: 30,
         level: 59,
-        reward: { adventureExp: '100', mora: '1850', friendshipExp: '15' },
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
         monsters: [
-          { id: 'electro_hilichurl_grenadier', name: 'Electro Hilichurl Grenadier', count: 3 },
-          { id: 'hilichurl_berserker', name: 'Hilichurl Berserker', count: 3 },
+          {
+            id: 'electro_hilichurl_grenadier',
+            name: 'Electro Hilichurl Grenadier',
+            count: 3,
+          },
+          {
+            id: 'hilichurl_berserker',
+            name: 'Hilichurl Berserker',
+            count: 3,
+          },
           { id: 'electro_slime', name: 'Electro Slime', count: 3 },
-          { id: 'electro_hilichurl_shooter', name: 'Electro Hilichurl Shooter', count: 3 },
-          { id: 'crackling_axe_mitachurl', name: 'Crackling Axe Mitachurl', count: 1 },
+          {
+            id: 'electro_hilichurl_shooter',
+            name: 'Electro Hilichurl Shooter',
+            count: 3,
+          },
+          {
+            id: 'crackling_axe_mitachurl',
+            name: 'Crackling Axe Mitachurl',
+            count: 1,
+          },
         ],
-        disorder: [
-          'The platforms in this challenge will intermittently switch between the Flame Boon and Frost Boon statuses. Characters will obtain different effects depending on the status of the platform they are on.',
-          'Flame Boon: active characters will gain a 60% Pyro DMG Bonus.',
-          'Frost Boon: active characters will gain a 60% Cryo DMG Bonus.',
-        ],
+        disorder: ['', '', ''],
       },
       {
         s: 5201,
@@ -574,18 +898,34 @@ export const domains = {
         name: 'Domain of Blessing: Autumn Hunt II',
         ar: 35,
         level: 69,
-        reward: { adventureExp: '100', mora: '2025', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'large_electro_slime', name: 'Large Electro Slime', count: 3 },
-          { id: 'electro_hilichurl_shooter', name: 'Electro Hilichurl Shooter', count: 3 },
-          { id: 'mutant_electro_slime', name: 'Mutant Electro Slime', count: 2 },
-          { id: 'crackling_axe_mitachurl', name: 'Crackling Axe Mitachurl', count: 1 },
+          {
+            id: 'large_electro_slime',
+            name: 'Large Electro Slime',
+            count: 3,
+          },
+          {
+            id: 'electro_hilichurl_shooter',
+            name: 'Electro Hilichurl Shooter',
+            count: 3,
+          },
+          {
+            id: 'mutant_electro_slime',
+            name: 'Mutant Electro Slime',
+            count: 2,
+          },
+          {
+            id: 'crackling_axe_mitachurl',
+            name: 'Crackling Axe Mitachurl',
+            count: 1,
+          },
         ],
-        disorder: [
-          'The platforms in this challenge will intermittently switch between the Flame Boon and Frost Boon statuses. Characters will obtain different effects depending on the status of the platform they are on.',
-          'Flame Boon: active characters will gain a 60% Pyro DMG Bonus.',
-          'Frost Boon: active characters will gain a 60% Cryo DMG Bonus.',
-        ],
+        disorder: ['', '', ''],
       },
       {
         s: 5202,
@@ -593,17 +933,29 @@ export const domains = {
         name: 'Domain of Blessing: Autumn Hunt III',
         ar: 40,
         level: 80,
-        reward: { adventureExp: '100', mora: '2200', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'large_electro_slime', name: 'Large Electro Slime', count: 4 },
-          { id: 'mutant_electro_slime', name: 'Mutant Electro Slime', count: 1 },
-          { id: 'electro_abyss_mage', name: 'Electro Abyss Mage', count: 2 },
+          {
+            id: 'large_electro_slime',
+            name: 'Large Electro Slime',
+            count: 4,
+          },
+          {
+            id: 'mutant_electro_slime',
+            name: 'Mutant Electro Slime',
+            count: 1,
+          },
+          {
+            id: 'electro_abyss_mage',
+            name: 'Electro Abyss Mage',
+            count: 2,
+          },
         ],
-        disorder: [
-          'The platforms in this challenge will intermittently switch between the Flame Boon and Frost Boon statuses. Characters will obtain different effects depending on the status of the platform they are on.',
-          'Flame Boon: active characters will gain a 60% Pyro DMG Bonus.',
-          'Frost Boon: active characters will gain a 60% Cryo DMG Bonus.',
-        ],
+        disorder: ['', '', ''],
       },
       {
         s: 5203,
@@ -611,19 +963,159 @@ export const domains = {
         name: 'Domain of Blessing: Autumn Hunt IV',
         ar: 45,
         level: 90,
-        reward: { adventureExp: '100', mora: '2525', friendshipExp: '20' },
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
         monsters: [
-          { id: 'large_electro_slime', name: 'Large Electro Slime', count: 2 },
-          { id: 'thunderhelm_lawachurl', name: 'Thunderhelm Lawachurl', count: 1 },
-          { id: 'electro_abyss_mage', name: 'Electro Abyss Mage', count: 1 },
+          {
+            id: 'large_electro_slime',
+            name: 'Large Electro Slime',
+            count: 2,
+          },
+          {
+            id: 'thunderhelm_lawachurl',
+            name: 'Thunderhelm Lawachurl',
+            count: 1,
+          },
+          {
+            id: 'electro_abyss_mage',
+            name: 'Electro Abyss Mage',
+            count: 1,
+          },
         ],
-        disorder: [
-          'The platforms in this challenge will intermittently switch between the Flame Boon and Frost Boon statuses. Characters will obtain different effects depending on the status of the platform they are on.',
-          'Flame Boon: active characters will gain a 60% Pyro DMG Bonus.',
-          'Frost Boon: active characters will gain a 60% Cryo DMG Bonus.',
-        ],
+        disorder: ['', '', ''],
       },
     ],
     artifacts: ['resolution_of_sojourner', 'tiny_miracle', 'shimenawas_reminiscence', 'emblem_of_severed_fate'],
+  },
+  slumbering_court: {
+    name: 'Slumbering Court',
+    domains: [
+      {
+        s: 5204,
+        id: 'domain_of_blessing_necropolis_i',
+        name: 'Domain of Blessing: Necropolis I',
+        ar: 30,
+        level: 59,
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
+        monsters: [
+          {
+            id: 'crackling_axe_mitachurl',
+            name: 'Crackling Axe Mitachurl',
+            count: 1,
+          },
+          {
+            id: 'large_hydro_slime',
+            name: 'Large Hydro Slime',
+            count: 2,
+          },
+          { id: 'hydro_slime', name: 'Hydro Slime', count: 7 },
+        ],
+        disorder: ['', ''],
+      },
+      {
+        s: 5205,
+        id: 'domain_of_blessing_necropolis_ii',
+        name: 'Domain of Blessing: Necropolis II',
+        ar: 35,
+        level: 69,
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
+        monsters: [
+          {
+            id: 'crackling_axe_mitachurl',
+            name: 'Crackling Axe Mitachurl',
+            count: 2,
+          },
+          {
+            id: 'large_hydro_slime',
+            name: 'Large Hydro Slime',
+            count: 2,
+          },
+          { id: 'hydro_slime', name: 'Hydro Slime', count: 3 },
+          {
+            id: 'electro_hilichurl_shooter',
+            name: 'Electro Hilichurl Shooter',
+            count: 3,
+          },
+          {
+            id: 'hilichurl_berserker',
+            name: 'Hilichurl Berserker',
+            count: 3,
+          },
+        ],
+        disorder: ['', ''],
+      },
+      {
+        s: 5206,
+        id: 'domain_of_blessing_necropolis_iii',
+        name: 'Domain of Blessing: Necropolis III',
+        ar: 40,
+        level: 80,
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
+        monsters: [
+          {
+            id: 'thundercraven_rifthound_whelp',
+            name: 'Thundercraven Rifthound Whelp',
+            count: 4,
+          },
+          {
+            id: 'thundercraven_rifthound',
+            name: 'Thundercraven Rifthound',
+            count: 1,
+          },
+          {
+            id: 'electro_hilichurl_shooter',
+            name: 'Electro Hilichurl Shooter',
+            count: 2,
+          },
+        ],
+        disorder: ['', ''],
+      },
+      {
+        s: 5207,
+        id: 'domain_of_blessing_necropolis_iv',
+        name: 'Domain of Blessing: Necropolis IV',
+        ar: 45,
+        level: 90,
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
+        monsters: [
+          {
+            id: 'thundercraven_rifthound_whelp',
+            name: 'Thundercraven Rifthound Whelp',
+            count: 7,
+          },
+          {
+            id: 'thundercraven_rifthound',
+            name: 'Thundercraven Rifthound',
+            count: 1,
+          },
+          {
+            id: 'crackling_axe_mitachurl',
+            name: 'Crackling Axe Mitachurl',
+            count: 1,
+          },
+        ],
+        disorder: ['', ''],
+      },
+    ],
+    artifacts: ['defenders_will', 'brave_heart', 'husk_of_opulent_dreams', 'ocean-hued_clam'],
   },
 };

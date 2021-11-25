@@ -86,7 +86,7 @@
   export let id;
   export let artifact;
   export let recommendedCharacter;
-  console.log(recommendedCharacter);
+  // console.log(recommendedCharacter);
   let images = [];
 
   async function changeLocale(locale) {

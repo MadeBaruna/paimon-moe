@@ -9,6 +9,11 @@
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre
     class="text-white px-4 md:px-8">
+2021/11/25
+- Update wish counter
+- Update achievements
+- Update artifacts
+  
 2021/11/21
 - Update timeline for 2.3 events
 
