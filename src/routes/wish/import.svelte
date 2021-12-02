@@ -94,7 +94,10 @@
   let wishes = {};
 
   async function startImport() {
+    cancelled = false;
     error = '';
+    fetchController = new AbortController();
+    fetchSignal = fetchController.signal;
 
     if (selectedType === 'pclocal') {
       await importFromGeneratedText();
@@ -121,8 +124,8 @@
       await checkUID();
       for (const [wishNumber, type] of Object.entries(types)) {
         await getLog(wishNumber, type);
-        if (cancelled) return;
         await sleep(2000);
+        if (cancelled) return;
       }
 
       if (Object.keys(wishes).length === 0) {
@@ -514,7 +517,6 @@
       if (cancelled) return;
 
       try {
-        console.log('trying n=', i);
         const res = await fetch(url, options);
         result = res;
         if (res.status !== 200) {
@@ -524,7 +526,6 @@
         return res;
       } catch (err) {
         error = err;
-        console.log('trying error n=', i);
       }
     }
 
@@ -601,9 +602,6 @@
   $: selectedServer, updateServer();
 
   onMount(() => {
-    fetchController = new AbortController();
-    fetchSignal = fetchController.signal;
-
     detectPlatform();
     selectedServer = servers.find((e) => e.value === $server);
 
