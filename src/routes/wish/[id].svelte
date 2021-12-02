@@ -374,6 +374,12 @@
   }
 
   onMount(async () => {
+    const prefix = getAccountPrefix();
+    const serverSave = await readSave(`${prefix}server`);
+    if (serverSave !== null) {
+      server.set(serverSave);
+    }
+
     await readLocalData();
 
     isSafari =
