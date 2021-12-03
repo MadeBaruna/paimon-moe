@@ -1,6 +1,20 @@
 export const eventsData = [
   [
     {
+      name: "Traveler's Picture Book Web Event",
+      pos: '100% 50%',
+      image: 'travelers_picture_book.jpg',
+      start: '2021-12-03 11:00:00',
+      end: '2021-12-13 03:59:59',
+      color: '#DEECF7',
+      zoom: '150%',
+      url:
+        'https://webstatic-sea.mihoyo.com/ys/event/e20211203-album/index.html?game_biz=hk4e_global&mhy_presentation_style=fullscreen&mhy_auth_required=true&mhy_landscape=true&utm_source=hoyolab&utm_medium=post',
+      showOnHome: true,
+    },
+  ],
+  [
+    {
       name: 'An Unforgettable Journey - Anniversary Web Event',
       pos: '0% 55%',
       image: 'an_unforgettable_journey.jpg',
