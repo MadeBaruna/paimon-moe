@@ -304,8 +304,8 @@
     calculatingPity = true;
 
     // backup first
-    const oldData = await getLocalSaveJson();
-    await updateSave(`${prefix}backup`, oldData);
+    // const oldData = await getLocalSaveJson();
+    // await updateSave(`${prefix}backup`, oldData);
 
     for (let [code, type] of Object.entries(types)) {
       await processWishes(code, type);

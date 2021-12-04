@@ -68,6 +68,13 @@ const convertTime = (data) => {
 };
 
 const convertSave = async () => {
+  const lfkeys = await localforage.keys();
+  for (const key of lfkeys) {
+    if (key.includes('backup')) {
+      await localforage.removeItem(key);
+    }
+  }
+
   const converted = localStorage.getItem(CONVERTED_KEY);
   if (converted !== null) return;
 
