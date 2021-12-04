@@ -13,6 +13,7 @@
     "furnishing": "家具",
     "weapons": "武器",
     "artifacts": "圣遗物",
+    "fishing": "垂钓",
     "settings": "设置",
     "donate": "赞助"
   },
@@ -22,16 +23,16 @@
     "visitor": "过去七天有 {count} 位访客",
     "banner": {
       "featured": [
-        "可莉"
+        "优菈"
       ],
       "summoned": "被抽到",
       "percentage": "占比于 {rarity}",
       "avg": "平均出金抽数",
-      "subtitle": "计算数据来自 {user} 位 paimon.moe 用户提交的祈愿记录",
+      "subtitle": "计算数据来自 {user} 位 Paimon.moe 用户提交的祈愿记录",
       "detail": "全球祈愿统计"
     },
     "wish": {
-      "message": "导入你的祈愿记录, 以避免超过6个月会消失! 你的祈愿与保底情况会以表格形式自动计算展示。 📊",
+      "message": "导入你的祈愿记录, 以避免超过 6 个月会消失! 你的祈愿与保底情况会以表格形式自动计算展示. 📊",
       "latest": "你上一次抽卡",
       "banner": "祈愿池",
       "time": "时间",
@@ -55,15 +56,15 @@
     },
     "items": {
       "title": "今日可刷取",
-      "detail": "道具",
+      "detail": "素材道具",
       "sunday": "周日可以刷所有东西 😁"
     },
     "calculator": {
-      "title": "🧮 计算角色、武器升级消耗! 所有计算都可以添加到 Todo 规划里, 可以显示你需要多少树脂!",
+      "title": "🧮 计算角色, 武器升级消耗! 所有计算都可以添加到 Todo 规划里, 可以显示你需要多少树脂!",
       "detail": "计算器"
     },
     "twitter": {
-      "title": "关注我的 Twitter, 我会把目前开发的东西和 paimon.moe 的最新更新发布上去!",
+      "title": "关注我的 Twitter, 我会把目前开发的东西和 Paimon.moe 的最新更新发布上去!",
       "detail": "关注 Twitter"
     },
     "achievement": {
@@ -109,11 +110,12 @@
     "geoDamageBonus": "岩元素伤害加成",
     "sortBy": "排序方式...",
     "talentBook": "天赋书",
+    "bossItem": "Boss",
     "ascensionMaterial": "突破材料",
     "talentStats": "角色天赋",
     "build": "角色配装",
-    "source": "Genshin Helper Team 提供的角色配装",
-    "faq": "命座值是根据抽卡历史记录得出的。如果你之前的抽卡记录丢失，或者你是从商店兑换角色，又或者你的角色是活动赠送，命座显示值会有出入。 但是你可以根据你的账号情况，点击角色头像旁的铅笔图标，手动修改命座值。"
+    "source": "由 Genshin Helper Team 提供的角色配装",
+    "faq": "命座值是根据抽卡历史记录得出的.如果你之前的抽卡记录丢失, 或者你是从商店兑换角色, 又或者你的角色是活动赠送, 命座显示值会有出入. 但是你可以根据你的账号情况, 点击角色头像旁的铅笔图标, 手动修改命座值."
   },
   "wish": {
     "title": "祈愿统计",
@@ -141,6 +143,10 @@
     "import": {
       "title": "导入祈愿历史记录",
       "faqsButton": "常见问题 - 先读这个",
+      "readFaq": "阅读常见问题",
+      "openFaq": "打开常见问题",
+      "choosePlatform": "选择你的游玩平台",
+      "chooseMethod": "选择使用的方式",
       "nonew": "没有新的记录",
       "importNotice1": "导入的祈愿记录会添加或覆盖到当前数据中",
       "importNotice2": "如果你先前没有任何记录, 你的保底进度将从头开始计算",
@@ -158,15 +164,17 @@
       "importNewWishUncheck": "只有当你想重新导入所有记录时, 不勾选此项",
       "import": "导入",
       "close": "关闭",
-      "invalidLink": "链接错误, 请重新检查",
+      "invalidLink": "不正确的链接, 请重新检查",
       "errorApi": "MiHoYo API 返回错误, 请稍后再试!",
+      "errorExpired": "链接已过期, 请重试!",
       "timeout": "连接超时, 请等一段时间再尝试",
-      "differentAccount": "这份祈愿记录属于其他账户，请先在设置菜单中分离并选择账户!",
-      "invalidData": "返回的数据错误, 请稍后再试",
+      "differentAccount": "这份祈愿记录属于其他账户, 请先在设置菜单中分离并选择账户!",
+      "invalidData": "从 API 返回的数据错误, 请稍后再试",
+      "noNewData": "没有新的祈愿记录, 请等待大约 1 小时后祈愿数据更新!",
       "success": "导入成功 😀!",
       "server": "选择你的服务器:",
       "wishTallyCheck": "将你的记录提交到全球祈愿统计数据中",
-      "wishTally": "我们在统计全球的祈愿数据! 你可以提交你的记录参与进来. 所有祈愿数据会统一整合, 用来考察 paimon.moe 用户的平均情况.",
+      "wishTally": "我们在统计全球的祈愿数据! 你可以提交你的记录参与进来. 所有祈愿数据会统一整合, 用来考察 Paimon.moe 用户的平均情况.",
       "wishTallyCollected": [
         "会被收集的数据:",
         "和",
@@ -180,12 +188,12 @@
         "a2": "Paimon.moe 与原神程序本身调取抽卡记录的方式是一致的, 并且 Paimon.moe 没办法修改游戏内存, 这本身是安全的, 但只能说风险自负 (我的大号是一直用的). 你也可以手动上传你的数据 😀.",
         "q3": "会被盗号吗?",
         "a3": [
-          "Paimon.moe 从不会保存你的账号秘钥等个人信息 (甚至你的UID和游戏名也不会), 所以并不会被盗号. 这个网站是开源的",
+          "Paimon.moe 从不会保存你的账号秘钥等个人信息 (甚至你的 UID 和游戏名也不会), 所以并不会被盗号. 这个网站是开源的",
           "; 我不可能尝试盗号来毁自己名声."
         ],
-        "q4": "我查了一下网站请求之类的, 但为什么它用的是你的域名, 而不是MiHoYo API的?",
+        "q4": "我查了一下网站请求之类的, 但为什么它用的是你的域名, 而不是 MiHoYo API 的?",
         "a4": [
-          "Paimon.moe 并不能直接从MiHoYo API 获得东西, 因为",
+          "Paimon.moe 并不能直接从 MiHoYo API 获得东西, 因为",
           ", 所以链接会被重定向到 CORS proxy 来实现. 你可以查看源代码",
           "在这里"
         ],
@@ -193,13 +201,17 @@
         "a5": [
           "Paimon.moe 不会存储秘钥, 只会通过 HTTPS 递交你的 URL 给 CORS proxy 来让 CORS 工作. Paimon.moe 会保存你的 4* 记录, 5* 记录, 以及 5* 祈愿信息如果你提交记录到全球祈愿统计中. (没有其他个人信息记录! 请查阅",
           "隐私政策",
-          "了解更多). 你可以取消勾选提交记录, 来撤掉提交功能. 这样你的所有祈愿记录会保存在你的电脑上 (或你的谷歌网盘, 如果你设置了同步功能).",
-          "如果你不想通过url传递任何信息, 你可以在本地PC使用便捷导入脚本(本地PC选项)"
+          "了解更多). 你可以取消勾选提交记录, 来撤掉提交功能. 这样你的所有祈愿记录会保存在你的电脑上 (或你的 Google Drive, 如果你设置了同步功能).",
+          "如果你不想通过 url 传递任何信息, 你可以在本地 PC 使用便捷导入脚本 (本地 PC 选项)"
         ],
         "q6": "我按流程操作了, 但它提示我 API 错误?",
         "a6": "确保你复制了完整的链接 (移动设备需要长按并全选); 可能你漏掉了链接的一部分.",
         "q7": "它并没有读取到我的全部抽卡记录!?",
-        "a7": "超过6个月的祈愿记录会在服务器中过期, 如果你以前没备份过, 很遗憾那就没了."
+        "a7": "超过 6 个月的祈愿记录会在服务器中过期, 如果你以前没备份过, 很遗憾那就没了."
+      },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
       "guide": {
         "video": "视频教程",
@@ -208,19 +220,42 @@
           "点击反馈",
           "等待加载出一个浏览器页面",
           "复制并粘贴链接到下面的文本框",
-          "链接粘贴到这里 https://webstatic..."
+          "在这里粘贴链接... https://webstatic..."
+        ],
+        "pc2": [
+          "在 PC 上打开原神 (如果你有多个账号请重启游戏)",
+          "游戏里打开祈愿历史记录并等待加载完成",
+          "按下键盘的 Win 键, 搜索 Powershell",
+          "点击 Windows Powershell, 然后在 Powershell 窗口里复制粘贴下面的脚本",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
+          "你可以审查脚本",
+          "在这里",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "按下 Enter 键后将有一条链接被复制到剪贴板里",
+          "将这条链接粘贴到下面的文本框里",
+          "在这里粘贴链接... https://webstatic..."
+        ],
+        "pclog": [
+          "在 PC 上打开原神 (如果你有多个账号请重启游戏)",
+          "游戏里打开祈愿历史记录并等待加载完成",
+          "先按下键盘的 Win+R 键, 再按 Enter",
+          "一个记事本窗口将要打开, 使用 Ctrl+F 搜索:",
+          "从 https://webstatic 开始, 到 #/log 结束, 复制这条链接. 链接应该像这样: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "将这条链接粘贴到下面的文本框里",
+          "在这里粘贴链接... https://webstatic..."
         ],
         "android": [
           "打开祈愿界面 (游戏内)",
           "点击历史记录",
           "等待加载",
-          "断网(断开wifi或流量)",
+          "断网 (断开 Wifi 或流量)",
           "点击右上角刷新按钮",
           "此时页面应该提示错误, 并显示一些文字",
           "长按并全选, 复制所有文本 (不要仅复制某一部分)",
-          "重新连接网络(接回wifi或流量)",
+          "重新连接网络 (接回 Wifi 或流量)",
           "粘贴复制的内容到下面的文本框",
-          "文本粘贴到这里... Webpage not available..."
+          "在这里粘贴文本... Webpage not available..."
         ],
         "ios": [
           "打开派蒙菜单",
@@ -229,70 +264,91 @@
           "点击游戏内问题",
           "点击多人游戏模式",
           "系统回复的最下面有一个链接; 点击它",
-          "一个网页会被打开. 复制链接并粘贴到这里",
-          "链接粘贴到这里... https://genshin.mihoyo..."
+          "一个网页会被打开. 复制链接并粘贴到下面",
+          "在这里粘贴链接... https://genshin.mihoyo..."
+        ],
+        "ios2": [
+          "在 App Store 上下载",
+          " Stream 应用",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "打开应用, 然后在设置里允许 VPN (设置 > 通用 > VPN)",
+          "安装 CA 证书 (在 Stream 应用里点击开始抓包 > 去安装证书 > 在弹出的窗口选择允许 > 此时 CA 证书已被下载",
+          "去到 设置 > 通用 > 描述文件 > 点击 Stream Generated CA 并安装",
+          "打开原神并进入祈愿界面, 保持住不要退出",
+          "返回到 Stream 应用 > 选择我已经信任过了 > 点击开始抓包按钮",
+          "接着打开原神并进入祈愿历史记录界面",
+          "等待加载完成",
+          "再次回到 Stream 应用 > 停止抓包",
+          "点击抓包历史 > 选择以 .json 为结尾的请求 (链接以 https://hk4e-api-os.mihoyo.com/ 为开头)",
+          "点击请求, 然后复制链接并粘贴到下面",
+          "在这里粘贴链接... https://hk4e-api-os.mihoyo.com..."
         ],
         "ps": [
-          "只有当你拥有带网页活动的二维码的游戏邮箱, 你才能获得网页链接, 使用这个导入功能",
+          "这个方法可能没用, 你可以先将你的 PS 帐户与 miHoYo 帐户关联, 再使用电脑/移动端的方法",
+          "只有当你拥有带网页活动的二维码的游戏邮件, 你才能获得网页链接, 来使用这个导入功能",
           "在你的 PlayStation 里打开原神",
           "打开你的邮箱二维码",
           "用手机扫描二维码得到链接",
-          "复制链接并粘贴到这里",
-          "链接粘贴到这里..."
+          "复制链接并粘贴到下面",
+          "在这里粘贴链接..."
         ],
         "pclocal": [
-          "如果你不想提供你的url，你可以使用这个选项在你的电脑上本地处理祈愿历史记录。此脚本将读取您电脑上的日志文件以获取祈愿url。",
-          "打开开始菜单, 搜索powershell",
-          "打开windows powershell, 然后复制粘贴脚本到powershell里",
+          "如果你不想提供你的链接, 你可以使用这个选项在你的电脑上本地处理祈愿历史记录. 此脚本将读取您电脑上的日志文件以获取祈愿链接.",
+          "打开开始菜单, 搜索 Powershell",
+          "打开 Windows Powershell, 然后复制粘贴脚本到 PowerShell 里",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
-          "你可以查看这个脚本",
-          "这里",
+          "你可以审查脚本",
+          "在这里",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
           "粘贴后回车即可运行脚本, 然后跟着说明走即可",
           "那之后, 把脚本输出的结果粘贴到这里",
-          "粘贴结果到这里...",
-          "这个功能还在开发中, 请先到“帮助&设置”界面, 导出excel备份一下你原来的记录."
+          "在这里粘贴结果...",
+          "这个功能还在开发中, 请先到设置 > 导出到 Excel 来备份一下你原来的记录."
         ]
       }
     },
     "excel": {
       "title": "Excel 导入器",
-      "subtitle": "选择你的表格来源：",
-      "default": "Paimon.moe 导出",
-      "takagg": "TakaGG Gacha 导出",
+      "subtitle": "选择你的表格来源:",
+      "default": "由 Paimon.moe 导出",
+      "takagg": "由 TakaGG Gacha 导出",
+      "genshinwishes": "由 GenshinWishes 导出",
+      "wishtally": "全球统计",
       "notice": [
-        "此功能还在测试中，请先在设置中导出到excel进行备份！",
-        "相同时间和奖励的祈愿不会被改变（不会重写已有的祈愿记录）",
-        "只会在后续添加和前置补充祈愿，不会在记录的中间插入内容",
-        "目前只支持奖励名为英文的excel"
+        "此功能还在测试中, 请先在设置 > 导出到 Excel 进行备份!",
+        "相同时间和奖励的祈愿不会被改变 (不会重写已有的祈愿记录)",
+        "只会在后续添加和前置补充祈愿, 不会在记录的中间插入内容",
+        "目前只支持奖励名为英文的 Excel"
       ],
       "selectFile": {
-        "default": "拖放Paimon.moe excel 文件到此处，或点击这里选择",
-        "takagg": "拖放TakaGG gacha导出的Excel文件到此处，或点击这里选择"
+        "default": "拖放 Paimon.moe 的 Excel 文件到此处, 或点击这里选择",
+        "takagg": "拖放 TakaGG gacha 的 Excel 文件到此处, 或点击这里选择",
+        "genshinwishes": "拖放 GenshinWishes 的 csv 文件到此处, 或点击这里选择",
+        "wishtally": "拖放全球统计的 Excel 文件到此处, 或点击这里选择"
       },
       "processing": "处理中...",
-      "addedOn": "插入位置",
+      "addedOn": "在此处插入:",
       "beginning": "开始",
       "end": "结束",
       "total": "总计",
-      "saveNotice": "保存导入的祈愿记录？",
+      "saveNotice": "保存导入的祈愿记录?",
       "save": "保存",
-      "success": "Excel 导入成功 😀！",
-      "errorInvalidFile": "无效的excel文件",
-      "errorReadExcel": "读取Excel文件时出错！",
-      "errorExcelPaimon": "这不是paimon.moe导出的excel",
+      "success": "Excel 导入成功 😀!",
+      "errorInvalidFile": "无效的 Excel 文件",
+      "errorReadExcel": "读取 Excel 文件时出错!",
+      "errorExcelPaimon": "这不是 Paimon.moe 导出的 Excel",
       "errorUnknownItem": "存在未知的奖励名称"
     },
     "help": {
       "title": "祈愿统计 帮助 & 设置",
       "exportTitle": "导出祈愿记录",
-      "exportMessage": "你可以在这里将祈愿记录导出为Excel",
-      "export": "导出到Excel",
+      "exportMessage": "你可以在这里将祈愿记录导出为 Excel",
+      "export": "导出到 Excel",
       "exporting": "导出中...",
-      "import": "导入",
+      "import": "从 Excel 导入",
       "exportFinish": "导出成功, 请等待浏览器下载文件!",
       "wishTallyTitle": "提交祈愿到全球统计",
-      "wishTally": "我们在统计全球的祈愿数据! 你可以提交你的记录参与进来. 所有祈愿数据会统一整合, 用来考察 paimon.moe 用户的平均情况.",
+      "wishTally": "我们在统计全球的祈愿数据! 你可以提交你的记录参与进来. 所有祈愿数据会统一整合, 用来考察 Paimon.moe 用户的平均情况.",
       "wishTallyCollected": [
         "会被收集的内容:",
         "和",
@@ -306,8 +362,8 @@
       "consider": "请优先考虑自动导入. 点击打开这份教程的按钮旁边的另一个按钮即可.",
       "howto": {
         "title": "如何使用手动导入",
-        "subtitle": "抽卡1次后:",
-        "pressWhenYouGet": "按 {button} 当你得到 {rarity}★",
+        "subtitle": "抽卡 1 次后:",
+        "pressWhenYouGet": "当你得到 {rarity}★ 时, 按 {button} ",
         "p1": "会自动添加总抽数, 5★, 以及 4★ 保底",
         "p2": [
           "当",
@@ -318,25 +374,25 @@
           "保底到达 90, 会自动被重置为 0"
         ],
         "p4": [
-          "抽10连后, 按",
-          "但请注意保底计数并不会精确到位, 因为并不知道是10连的哪一抽出货 (你可能是在第一发或十连最后一发出货). 为了保障计数准确, 你需要到列表中检查十连里的每一抽, 修改为对应的正确内容."
+          "抽 10 连后, 按",
+          "但请注意保底计数并不会精确到位, 因为并不知道是 10 连的哪一抽出货 (你可能是在第一发或十连最后一发出货). 为了保障计数准确, 你需要到列表中检查十连里的每一抽, 修改为对应的正确内容."
         ],
         "p5": [
           "你也可以按",
-          "按钮来手动修改数值!"
+          "来手动修改数值!"
         ],
         "p6": [
-          "点击按钮上的箭头来查看你的具体抽卡细节. 会自动弹出提示你获得一个",
+          "点击按钮上的箭头来查看你的具体抽卡细节. 会自动弹出提示你获得的",
           "或",
           "你也可以手动编辑列表."
         ]
       }
     },
     "types": {
-      "beginners": "初行者祈愿",
-      "standard": "常驻池",
-      "character-event": "角色池",
-      "weapon-event": "武器池"
+      "beginners": "新手祈愿",
+      "standard": "常驻祈愿",
+      "character-event": "角色活动祈愿",
+      "weapon-event": "武器活动祈愿"
     },
     "detail": {
       "weapon": "武器",
@@ -351,14 +407,14 @@
       "worth": "价值",
       "loading": "读取中... (如果卡住, 到设置中检查服务器)",
       "guaranteed": "下一个 5★ 一定会是当期UP",
-      "unknown_3_star": "未知三星"
+      "unknown_3_star": "未知"
     },
     "tally": {
       "title": "祈愿统计",
-      "subtitle": "全球 paimon.moe 用户们提交的平均统计情况",
+      "subtitle": "全球 Paimon.moe 用户们提交的平均统计情况",
       "update": "更新于",
       "summoned": "被抽到",
-      "wonFiftyFifty": "小保底没歪",
+      "wonFiftyFifty": "的人小保底没歪",
       "fromFiveStar": "在所有 5★",
       "fromFourStar": "在所有 4★",
       "fromFourStarFeatured": "在UP 4★",
@@ -376,9 +432,9 @@
       "detail": "详情"
     },
     "note": [
-      "祈愿记录未能自动更新，请再次导入更新祈愿历史",
-      "Paimon.moe 无法获得超过6个月的祈愿历史，因为它已经在 miHoyo 服务器上被删除，所以您的部分旧祈愿可能不会显示。",
-      "数据保存在您的浏览器中，如果您清理浏览器缓存，记录会被删除！ 在设置中启用Google Drive 同步，可以备份您的数据！"
+      "祈愿记录未能自动更新, 请再次导入更新祈愿历史",
+      "Paimon.moe 无法获得超过 6 个月的祈愿历史, 因为它已经在 miHoyo 服务器上被删除, 所以您的部分旧祈愿可能不会显示.",
+      "数据保存在您的浏览器中, 如果您清理浏览器缓存, 记录会被删除! 在设置中启用 Google Drive 同步, 就可以备份您的数据了!"
     ]
   },
   "calculator": {
@@ -398,10 +454,10 @@
       "calculateAscension": "计算突破材料?",
       "selectRarity": "选择武器稀有度",
       "selectWeapon": "选择武器",
-      "current": "当前武器等级, 经验, & 突破阶段",
+      "current": "当前武器等级, 经验和突破阶段",
       "inputCurrentLevel": "输入当前武器等级...",
       "inputCurrentExp": "输入当前武器经验...",
-      "intended": "武器目标等级 & 突破情况",
+      "intended": "武器的目标等级和突破阶段",
       "inputIntendedLevel": "输入目标武器等级...",
       "resource": "需要的资源",
       "calculate": "计算",
@@ -409,20 +465,20 @@
       "ascensionLevel": "突破阶段",
       "mora": "摩拉 (误差 ±40)",
       "expWasted": "溢出经验",
-      "addToTodo": "添加到Todo",
-      "addedToTodo": "已添加到Todo"
+      "addToTodo": "添加到 Todo 列表",
+      "addedToTodo": "已添加到 Todo 列表"
     },
     "character": {
       "calculateAscension": "计算突破材料?",
       "selectCharacter": "选择角色",
-      "current": "当前角色等级, 经验, & 突破阶段",
+      "current": "当前角色等级, 经验和突破阶段",
       "inputCurrentLevel": "输入当前角色等级...",
       "inputCurrentExp": "输入当前角色经验...",
-      "intended": "目标角色等级 & 突破情况",
+      "intended": "角色的目标等级和突破阶段",
       "inputIntendedLevel": "输入目标角色等级...",
       "resource": "需要的资源",
       "calculateTalent": "计算天赋材料?",
-      "inputTalentLevel": "输入三个技能当前等级",
+      "inputTalentLevel": "输入三个技能的当前等级",
       "inputTalentNotice": "如果被命座+3, 请减掉3",
       "inputTalent": [
         "普攻等级",
@@ -435,8 +491,8 @@
       "ascensionLevel": "突破阶段",
       "mora": "摩拉 (误差 ±40)",
       "expWasted": "溢出经验",
-      "addToTodo": "添加到Todo",
-      "addedToTodo": "已添加到Todo",
+      "addToTodo": "添加到 Todo 列表",
+      "addedToTodo": "已添加到 Todo 列表",
       "talent": [
         "普攻",
         "战技",
@@ -470,12 +526,12 @@
     "friendship": {
       "currentLevel": "当前好感等级",
       "currentExp": "当前经验值 (拖动滑条)",
-      "randomEventFarm": "每天完成几个随机事件？",
+      "randomEventFarm": "每天完成几个随机事件?",
       "calculate": "计算",
-      "based": "基于AR等级:{ar}",
+      "based": "基于 AR 等级: {ar}",
       "change": "(可在设置中更改)",
-      "result": "如果每天完成每日任务并使用180树脂，达到好感10需要的时间",
-      "resultSerenitea": "如果你同时也把角色放在家园壶中(最大好感能量)",
+      "result": "如果每天完成每日任务并使用 180 树脂, 达到好感 10 需要的时间",
+      "resultSerenitea": "如果你同时也把角色放在家园壶中 (最大好感能量)",
       "resultDay": "{result} 天"
     },
     "fate": {
@@ -488,16 +544,16 @@
       "price": "价格",
       "totalGenesis": "创世结晶共计",
       "totalPrice": "价格共计",
-      "calculate": "计算{currency}{value} 可以获得多少创世结晶",
+      "calculate": "计算 {currency}{value} 可以获得多少创世结晶",
       "calculateFate": "计算 {value} 需要多少钱"
     }
   },
   "items": {
     "title": "物品列表",
-    "subtitle": "点击图标添加到Todo",
+    "subtitle": "点击图标添加到 Todo 列表",
     "searchCharacter": "搜索角色",
     "searchWeapon": "搜索武器",
-    "day": "日子",
+    "day": "星期",
     "material": "材料",
     "characterWeapons": "角色 & 武器",
     "add": {
@@ -505,7 +561,7 @@
       "amount": "数量",
       "inputAmount": "输入数量...",
       "cancel": "取消",
-      "add": "添加到Todo"
+      "add": "添加到 Todo"
     }
   },
   "days": {
@@ -519,18 +575,18 @@
   },
   "todo": {
     "title": "Todo 列表",
-    "summary": "总结",
+    "summary": "总共",
     "empty": [
       "没啥要做的 😀",
       "从物品页面或计算器加点东西来!"
     ],
     "farmableToday": "今日可刷取",
     "resin": "树脂需求",
-    "based": "基于冒险等级:{ar} 和 世界等级:{wl}",
+    "based": "基于冒险等级: {ar} 和 世界等级: {wl}",
     "change": "(可在设置中更改)",
     "approximation": "掉率估算数值来自于",
     "delete": {
-      "title": "删除这项Todo?",
+      "title": "删除这项 Todo?",
       "cancel": "取消",
       "delete": "删除"
     }
@@ -545,7 +601,7 @@
   },
   "settings": {
     "version": "数据版本:",
-    "multiple": "有多个账号? 在这里切换来区分不同的祈愿历史记录和Todo列表",
+    "multiple": "有多个账号? 在这里切换来区分不同的祈愿历史记录和 Todo 列表",
     "selectAccount": "选择你的账号",
     "reset": "重置",
     "delete": "删除",
@@ -555,31 +611,45 @@
       "Paimon.moe 可以利用你的谷歌网盘应用数据文件夹和同步功能, 来保存你的祈愿记录和Todo列表.",
       "Paimon.moe 只能修改读取由本网站生成的文件."
     ],
-    "driveError": "谷歌网盘API无法加载",
-    "driveSignIn": "登录谷歌网盘",
-    "driveSignOut": "登出谷歌网盘",
-    "driveSignInErrorScope": "云盘登录失败！请重新登录并检查所需要的权限！",
+    "driveError": "Google Drive API 无法加载",
+    "driveSignIn": "登录 Google Drive",
+    "driveSignOut": "登出 Google Drive",
+    "driveSignInErrorScope": "云盘登录失败! 请重新登录并检查所需要的权限!",
     "synced": "已同步",
     "waiting": "等待中...",
     "syncing": "同步中...",
+    "syncStatus": "同步状态:",
     "lastSync": "上次同步:",
     "feedback": "如果你发现一些BUG, 数据错误, 或者其他反馈, 请留言到",
     "or": "或",
     "thanks": "谢谢😁!",
     "modal": {
-      "notice": "所有Todo和祈愿记录将被删除",
-      "backup": "你可以通过导出Excel备份你的抽卡记录!",
+      "notice": "所有 Todo 和祈愿记录将被删除",
+      "backup": "你可以通过导出 Excel 备份你的抽卡记录!",
       "cancel": "取消",
       "delete": "删除",
       "reset": "重置"
-    }
+    },
+    "changelog": "更新日志",
+    "exportDescription": "你可以在这里导入/导出 Paimon.moe 的数据",
+    "exportButton": "导入/导出数据",
+    "export": "导出数据",
+    "download": "下载数据",
+    "import": "导入数据",
+    "selectFile": "选择 .json 文件",
+    "exportInfo": "下载你保存在 Paimon.moe 上的数据",
+    "importWarning": "记得先导出一下来备份你的数据! 所有数据将被替换!",
+    "importContinue": "继续",
+    "importSuccess": "导入成功! 5 秒钟后重新加载...",
+    "importFailed": "导入失败!",
+    "email": "邮箱:"
   },
   "privacypolicy": {
     "title": "隐私政策",
-    "subtitle": "paimon.moe 会收集什么信息以及如何使用",
+    "subtitle": "Paimon.moe 会收集什么信息以及如何使用",
     "collect": [
       {
-        "title": "paimon.moe 中被点击的链接, 引用页面, 浏览器, 操作系统, 设备类型, 来源国家",
+        "title": "Paimon.moe 中被点击的链接, 引用页面, 浏览器, 操作系统, 设备类型, 来源国家",
         "content": [
           "Paimon.moe 使用",
           "plausible.io",
@@ -597,27 +667,27 @@
       {
         "title": "抽卡保底",
         "content": [
-          "Paimon.moe 会保存四星、五星的保底进度, 以及5星祈愿详情 (抽卡时间, 出货内容, 保底计数) 如果你点击 '提交祈愿到全球统计' 在自动导入功能中, 或在帮助与设置界面中手动提交, Paimon.moe 会自动统计并计算到每个池子的平均数据里, 你可以在这里查看",
+          "Paimon.moe 会保存四星, 五星的保底进度, 以及5星祈愿详情 (抽卡时间, 出货内容, 保底计数) 如果你点击 '提交祈愿到全球统计' 在自动导入功能中, 或在帮助与设置界面中手动提交, Paimon.moe 会自动统计并计算到每个池子的平均数据里, 你可以在这里查看",
           "祈愿总计"
         ]
       }
     ],
-    "subtitleNotCollect": "paimon.moe 不会收集",
+    "subtitleNotCollect": "Paimon.moe 不会收集",
     "notCollect": [
-      "paimon.moe 不会保存任何密码、UID、邮箱、临时秘钥或反馈文件. 如果你感兴趣, 这个网站是开源的, 你可以在这里查看源代码",
+      "Paimon.moe 不会保存任何密码, UID, 邮箱, 临时秘钥或反馈文件. 如果你感兴趣, 这个网站是开源的, 你可以在这里查看源代码",
       "paimon-moe-api Github",
       "以及",
       "paimon-moe Github"
     ]
   },
   "sync": {
-    "message": "你的本地记录与谷歌网盘的记录冲突了!",
-    "googleDriveData": "谷歌网盘数据",
+    "message": "你的本地记录与 Google Drive 的记录冲突了!",
+    "googleDriveData": "Google Drive 数据",
     "localData": "浏览器本地数据",
     "older": "旧",
     "newer": "新",
-    "useGoogleDriveData": "使用谷歌网盘数据",
-    "useLocalData": "使用浏览器本地数据",
+    "useGoogleDriveData": "使用 Google Drive 的数据",
+    "useLocalData": "使用浏览器的本地数据",
     "download": "两份都下载",
     "lastModified": "上次修改时间",
     "or": "或"
@@ -625,32 +695,32 @@
   "footer": {
     "affliate": "Paimon.moe 与米哈游无关.",
     "copyright": "原神的游戏内容和各种素材与商标的版权都属于米哈游.",
-    "discord": "加入我们的Discord",
+    "discord": "加入我们的 Discord",
     "community": "社群链接",
     "official": "官方链接"
   },
   "donate": {
     "message": [
-      "谢谢！愿你能在本网站获得帮助.",
+      "谢谢! 愿你能在本网站获得帮助.",
       "我出于兴趣在业余时间制作了这个网站, 随着更新加入了越来越多的功能与数据. 因为我喜欢探索游戏, 并简化各种内容",
       "如果你想要赞助, 你的捐赠会一定会有利于改善这个网站并激励我加入更多的内容倒 Paimon.moe! 非常感谢, 希望你能喜欢, 愿你玩得开心!",
       "如果你喜欢编程开发, 你也可以在这里为项目提供帮助"
     ],
-    "kofi": "在这里赞助 Ko-fi",
-    "trakteer": "在这里赞助 Trakteer",
-    "crypto": "利用虚拟货币赞助"
+    "kofi": "在 Ko-fi 上赞助",
+    "trakteer": "在 Trakteer 上赞助",
+    "crypto": "使用 Crypto 赞助"
   },
   "reminder": {
     "notSupported": "你的浏览器不支持发送提醒, 请换另一个浏览器!",
     "blocked": "通知被禁用了, 计时提醒功能无法工作! 请在浏览器上启用它.",
-    "desktop": "如果浏览器未运行，将无法接收通知!",
-    "early": "由于我们发送通知的方式，通知可能会提前到达 (大约1-10分钟)",
+    "desktop": "如果浏览器未运行, 将无法接收通知!",
+    "early": "由于我们发送通知的方式, 通知可能会提前到达 (大约 1-10 分钟)",
     "allowNotification": "请允许出现通知提示!",
     "transformer": "质量参变仪使用提醒",
     "last": "输入上次使用质量参变仪的时间",
     "lastHoyolab": "输入你想被提醒米游社签到的时间",
     "every": "每天的",
-    "countdown": "输入质量参变仪的倒计时 (如果不记得确切时间，则需要近似值)",
+    "countdown": "输入质量参变仪的倒计时 (如果不记得确切时间, 则需要近似值)",
     "useLast": "使用上次用它的时间",
     "useCountdown": "使用倒计时代替",
     "set": "设置提醒器",
@@ -737,11 +807,23 @@
     "title": "圣遗物列表",
     "name": "名称",
     "maxRarity": "最大稀有度★",
-    "bonus2": "2件套效果",
-    "bonus4": "4件套效果",
+    "bonus2": "2 件套效果",
+    "bonus4": "4 件套效果",
     "domain": "获取秘境",
     "artifact": "圣遗物",
-    "setPiece": "{piece}件套效果",
-    "recommendedCharacter": "{piece}件套推荐角色"
+    "setPiece": "{piece} 件套效果",
+    "recommendedCharacter": "{piece} 件套推荐角色"
+  },
+  "fishing": {
+    "title": "钓鱼指南",
+    "subtitle": "当钓完一个钓鱼点后, 你可以设置一个重生计时器, 并将钓鱼点设为空",
+    "mondstadt": "蒙德城",
+    "liyue": "璃月港",
+    "inazuma": "稻妻城",
+    "setEmpty": "设为已清空",
+    "emptyTime": "钓鱼点清空时的时间:",
+    "clear": "清除",
+    "save": "保存",
+    "cancel": "取消"
   }
 }
