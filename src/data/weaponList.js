@@ -7554,4 +7554,63 @@ export const weaponList = {
       },
     ],
   },
+  cinnabar_spindle: {
+    name: 'Cinnabar Spindle',
+    id: 'cinnabar_spindle',
+    rarity: 4,
+    atk: 41,
+    secondary: 'DEF',
+    type: weapons.sword,
+    source: 'Shadows Amidst Snowstorms Event',
+    ascension: [
+      {
+        items: [
+          { item: itemList.tile_of_decarabians_tower, amount: 3 },
+          { item: itemList.chaos_device, amount: 3 },
+          { item: itemList.damaged_mask, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.debris_of_decarabians_city, amount: 3 },
+          { item: itemList.chaos_device, amount: 12 },
+          { item: itemList.damaged_mask, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.debris_of_decarabians_city, amount: 6 },
+          { item: itemList.chaos_circuit, amount: 6 },
+          { item: itemList.stained_mask, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.fragment_of_decarabians_epic, amount: 3 },
+          { item: itemList.chaos_circuit, amount: 12 },
+          { item: itemList.stained_mask, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.fragment_of_decarabians_epic, amount: 6 },
+          { item: itemList.chaos_core, amount: 9 },
+          { item: itemList.ominous_mask, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.scattered_piece_of_decarabians_dream, amount: 4 },
+          { item: itemList.chaos_core, amount: 18 },
+          { item: itemList.ominous_mask, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
