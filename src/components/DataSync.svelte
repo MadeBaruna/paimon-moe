@@ -44,7 +44,7 @@
 
     timeout = setTimeout(() => {
       handleError();
-    }, 15000);
+    }, 30000);
   }
 
   function cancelTimeout() {
@@ -290,6 +290,23 @@
 
   async function getData() {
     console.log('reading remote file now');
+
+    try {
+      const { result } = await gapi.client.drive.files.get({
+        fileId: $saveId,
+        fields: 'size',
+      });
+
+      console.log('drive size', result);
+      if (result.size > 50000000) {
+        return {
+          [UPDATE_TIME_KEY]: dayjs('2000-01-01-00:00'),
+        };
+      }
+    } catch (err) {
+      console.error('get file size error', err);
+      handleError();
+    }
 
     try {
       const { result } = await gapi.client.drive.files.get({
