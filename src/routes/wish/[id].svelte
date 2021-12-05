@@ -13,6 +13,7 @@
   import Chart from 'chart.js';
 
   import { banners } from '../../data/banners';
+  import { bannersDual } from '../../data/bannersDual';
 
   import Icon from '../../components/Icon.svelte';
   import TableHeader from '../../components/Table/TableHeader.svelte';
@@ -68,16 +69,22 @@
 
   let isSafari = false;
 
+  let showRarity = [true, true, true];
+
   selectedBanners = banners[bannerType].map((e) => {
     // banner data based on Asia time
     const diff = e.timezoneDependent === true ? 8 - getTimeOffset() : 0;
 
+    const id = `${e.name} ${e.image}`;
+    const dual = bannersDual[id] !== undefined;
     const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
     const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss');
-    const image = `/images/banners/${e.name} ${e.image}.png`;
+    const image = `/images/banners/${id}.png`;
 
     return {
       ...e,
+      id,
+      dual,
       start: start.unix(),
       end: end.unix(),
       image,
@@ -90,11 +97,21 @@
     };
   });
 
-  function openDetail(banner) {
+  function openDetail(banner, isDual) {
+    let secondBanner;
+    if (isDual) {
+      const dual = bannersDual[banner.id][1];
+      secondBanner = {
+        ...dual,
+        image: `/images/banners/${dual.name} ${dual.image}.png`,
+      };
+    }
+
     openModal(
       WishDetailModal,
       {
         banner,
+        dual: secondBanner,
       },
       {
         closeButton: false,
@@ -138,6 +155,7 @@
     let striped = false;
     let startBanner = false;
     let rateUp = false;
+    let lastBanner;
 
     for (let i = 0; i < pullData.length; i++) {
       const pull = pullData[i];
@@ -148,12 +166,15 @@
         currentBanner = getNextBanner(currentPullTime);
 
         if (currentBanner === undefined) {
-          console.log('error banner here', JSON.stringify(pull));
-          errorProcessingPull = pull;
-          pushToast($t('wish.errorBanner'), 'error');
-          return;
+          // console.log('error banner here', JSON.stringify(pull));
+          // errorProcessingPull = pull;
+          // pushToast($t('wish.errorBanner'), 'error');
+          // return;
+
+          currentBanner = lastBanner;
         }
 
+        lastBanner = currentBanner;
         startBanner = true;
 
         if (i > 0) {
@@ -246,6 +267,8 @@
     }
 
     console.log(totalEachBanner, totalLegendaryEachBanner, totalRareEachBanner);
+
+    sortPulls();
 
     loading = false;
 
@@ -340,35 +363,45 @@
   }
 
   function sortPulls() {
+    const filtered = pulls.slice().filter((e) => {
+      if (e.type === 'character' && showRarity[5 - characters[e.id].rarity]) {
+        return true;
+      } else if (e.type === 'weapon' && showRarity[5 - weaponList[e.id].rarity]) {
+        return true;
+      } else if (e.type === 'unknown_3_star' && showRarity[2]) {
+        return true;
+      }
+      return false;
+    });
     if (sortBy === 'time') {
       if (sortOrder) {
-        sorted = pulls.slice().reverse();
+        sorted = filtered.reverse();
       } else {
-        sorted = pulls;
+        sorted = filtered;
       }
     } else if (sortBy === 'type') {
       if (sortOrder) {
-        sorted = pulls.slice().sort((a, b) => a.type.localeCompare(b.type));
+        sorted = filtered.sort((a, b) => a.type.localeCompare(b.type));
       } else {
-        sorted = pulls.slice().sort((a, b) => b.type.localeCompare(a.type));
+        sorted = filtered.sort((a, b) => b.type.localeCompare(a.type));
       }
     } else if (sortBy === 'rare') {
       if (sortOrder) {
-        sorted = pulls.slice().sort((a, b) => a.rarity - b.rarity);
+        sorted = filtered.sort((a, b) => a.rarity - b.rarity);
       } else {
-        sorted = pulls.slice().sort((a, b) => b.rarity - a.rarity);
+        sorted = filtered.sort((a, b) => b.rarity - a.rarity);
       }
     } else if (sortBy === 'pity') {
       if (sortOrder) {
-        sorted = pulls.slice().sort((a, b) => a.pity - b.pity);
+        sorted = filtered.sort((a, b) => a.pity - b.pity);
       } else {
-        sorted = pulls.slice().sort((a, b) => b.pity - a.pity);
+        sorted = filtered.sort((a, b) => b.pity - a.pity);
       }
     } else if (sortBy === 'name') {
       if (sortOrder) {
-        sorted = pulls.slice().sort((a, b) => a.name.localeCompare(b.name));
+        sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
       } else {
-        sorted = pulls.slice().sort((a, b) => b.name.localeCompare(a.name));
+        sorted = filtered.sort((a, b) => b.name.localeCompare(a.name));
       }
     }
   }
@@ -401,6 +434,11 @@
     sortPulls();
   }
 
+  function getSecondBannerImage(id) {
+    const b = bannersDual[id][1];
+    return `/images/banners/${b.name} ${b.image}.png`;
+  }
+
   function formatTime(time) {
     return dayjs(time).format('ddd YYYY-MM-DD HH:mm:ss');
   }
@@ -415,6 +453,12 @@
     return `opacity: ${opacity};`;
   }
 
+  function toggleShowRarity(index) {
+    showRarity[index] = !showRarity[index];
+    sortPulls();
+  }
+
+  $: showGroupPullBar = sortBy === 'time' && !showRarity.includes(false);
   $: path = `wish-counter-${id}`;
   $: if ($fromRemote) {
     readLocalData();
@@ -445,12 +489,19 @@
   {:else}
     <div class="flex mt-4 wrapper">
       <div class="block overflow-x-auto xl:overflow-x-visible whitespace-no-wrap px">
+        <div class="flex pl-4 md:pl-8 mb-2">
+          <button on:click={() => toggleShowRarity(0)} class={`pill legendary ${showRarity[0] ? 'active' : ''}`}>
+            5 <Icon path={mdiStar} size={0.75} className="mb-1" />
+          </button>
+          <button on:click={() => toggleShowRarity(1)} class={`pill rare ${showRarity[1] ? 'active' : ''}`}>
+            4 <Icon path={mdiStar} size={0.75} className="mb-1" />
+          </button>
+          <button on:click={() => toggleShowRarity(2)} class={`pill normal ${showRarity[2] ? 'active' : ''}`}>
+            3 <Icon path={mdiStar} size={0.75} className="mb-1" />
+          </button>
+        </div>
         <div class="pr-4 pl-4 md:pl-8 xl:pr-2 table">
-          <table
-            class="{sortBy === 'time'
-              ? 'list-table'
-              : ''} w-full block pl-4 pr-4 py-2 md:pl-8 md:py-4 bg-item rounded-xl"
-          >
+          <table class="w-full block pl-4 pr-4 py-2 md:pl-8 md:py-4 bg-item rounded-xl">
             <tr>
               <TableHeader
                 className="sticky top-0 bg-item z-30"
@@ -531,7 +582,7 @@
                   style="font-family: monospace;"
                 >
                   {pull.formattedTime}
-                  {#if sortBy === 'time' && (sortOrder ? pull.group === 'start' : pull.group === 'end')}
+                  {#if showGroupPullBar && (sortOrder ? pull.group === 'start' : pull.group === 'end')}
                     <div class="group-bar"><span>x10</span></div>
                   {/if}
                 </td>
@@ -563,36 +614,13 @@
                 <td class="border-t border-gray-700 px-2 text-gray-200 text-center">
                   {pull.at}
                 </td>
-                {#if sortBy === 'time' && !isSafari && ((pull.end && !sortOrder) || (pull.start && sortOrder))}
-                  <td class="relative hidden xl:table-cell">
-                    <div
-                      class="border-t border-gray-700 absolute left-0 top-0 z-10 border-start"
-                      style="width: 266px;"
-                    />
-                  </td>
-                  <td class="sticky w-0 hidden xl:table-cell pl-2" style="top: 8px;">
-                    <div
-                      class="w-64 absolute top-0 pt-2 bg-item cursor-pointer"
-                      on:click={() => openDetail(pull.banner)}
-                    >
-                      <img class="w-full rounded-lg" src={pull.banner.image} alt={pull.banner.name} />
-                      <p class="bg-gray-900 rounded-lg mt-2 text-center text-gray-200">
-                        {pull.banner.total} Pulls
-                        <img class="h-4 inline ml-2" src="/images/primogem.png" alt="primogem" />
-                        {numberFormat.format(pull.banner.total * 160)}
-                      </p>
-                    </div>
-                  </td>
-                {/if}
-                <td
-                  class="border-t border-gray-700 px-4 text-gray-200 top-0 text-center {sortBy === 'time' && !isSafari
-                    ? 'xl:hidden'
-                    : ''}"
-                >
+                <td class="border-t border-gray-700 px-4 text-gray-200 top-0 text-center">
                   <img
-                    on:click={() => openDetail(pull.banner)}
+                    on:click={() => openDetail(pull.banner, pull.banner.dual)}
                     class="h-8 inline cursor-pointer"
-                    src={pull.banner.image}
+                    src={pull.banner.dual && pull.code === '400'
+                      ? getSecondBannerImage(pull.banner.id)
+                      : pull.banner.image}
                     alt={pull.banner.name}
                   />
                 </td>
@@ -718,12 +746,6 @@
     }
   }
 
-  table.list-table {
-    @screen xl {
-      padding-right: 17rem;
-    }
-  }
-
   .rate-tooltip {
     @apply relative;
 
@@ -749,6 +771,41 @@
 
     &:hover .tooltip-content {
       @apply block;
+    }
+  }
+
+  .pill {
+    @apply rounded-2xl;
+    @apply border-2;
+    @apply border-white;
+    @apply border-opacity-25;
+    @apply text-white;
+    @apply px-4;
+    @apply py-1;
+    @apply mr-2;
+    @apply mb-2;
+    @apply outline-none;
+    @apply transition;
+    @apply duration-100;
+
+    &:hover {
+      @apply border-primary;
+    }
+
+    &.active {
+      @apply bg-primary;
+      @apply border-primary;
+      @apply text-background;
+
+      &.legendary {
+        @apply bg-legendary-from;
+        @apply border-legendary-from;
+      }
+
+      &.rare {
+        @apply bg-rare-from;
+        @apply border-rare-from;
+      }
     }
   }
 

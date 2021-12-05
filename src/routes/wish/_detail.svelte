@@ -11,6 +11,7 @@
   });
 
   export let banner;
+  export let dual;
 
   function calculateColor(percentage) {
     const hue = percentage * 120;
@@ -39,7 +40,15 @@
 
 <div>
   <img src={banner.image} class="w-full rounded-lg" alt={banner.name} />
-  <h1 class="mt-4 text-white font-display font-semibold text-xl">{banner.name}</h1>
+  {#if dual}
+    <img src={dual.image} class="w-full rounded-lg mt-2" alt={banner.name} />
+  {/if}
+  <h1 class="mt-4 text-white font-display font-semibold text-xl">
+    {banner.name}
+    {#if dual}
+      - {dual.name}
+    {/if}
+  </h1>
   <p class="text-gray-400 font-body flex flex-col md:flex-row">
     <span class="flex">
       <span>{dayjs.unix(banner.start).format('ddd, D MMM YYYY HH:mm')}</span>
