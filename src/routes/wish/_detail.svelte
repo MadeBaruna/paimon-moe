@@ -111,7 +111,7 @@
         {numberFormat.format((banner.rare.character.length / banner.total) * 100)}%
       </td>
       <td class="text-rare-from font-semibold text-right border-t border-gray-700">
-        {rareTotal > 0 ? numberFormat.format(rarePityCharacter / rareTotal) : 0}
+        {banner.rare.character.length > 0 ? numberFormat.format(rarePityCharacter / banner.rare.character.length) : 0}
       </td>
     </tr>
     <tr>
@@ -125,7 +125,7 @@
         {numberFormat.format((banner.rare.weapon.length / banner.total) * 100)}%
       </td>
       <td class="text-rare-from font-semibold text-right border-t border-gray-700">
-        {rareTotal > 0 ? numberFormat.format(rarePityWeapon / rareTotal) : 0}
+        {banner.rare.weapon.length > 0 ? numberFormat.format(rarePityWeapon / banner.rare.weapon.length) : 0}
       </td>
     </tr>
   </table>
