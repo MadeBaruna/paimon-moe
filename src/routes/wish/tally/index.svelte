@@ -28,9 +28,9 @@
       <Ad class="my-4" type="desktop" variant="lb" id="1" />
       <ItemNew
         type="character"
-        banner={banners.characters[20]}
-        id={300021}
-        featured={banners.characters[20].featured}
+        banner={banners.characters[21]}
+        id={300022}
+        featured={banners.characters[21].featured}
       />
       <div class="mt-2 mb-2">
         <Ad class="flex justify-center" type="mobile" variant="mpu" id="2" />
@@ -38,14 +38,14 @@
         <Ad type="desktop" variant="lb" id="2" />
         <Ad type="mobile" variant="lb" id="1" />
       </div>
-      <ItemNew type="weapon" banner={banners.weapons[19]} id={400020} featured={banners.weapons[19].featured} />
+      <ItemNew type="weapon" banner={banners.weapons[20]} id={400021} featured={banners.weapons[20].featured} />
       <ItemNew
         type="character"
-        banner={banners.characters[19]}
-        id={300020}
-        featured={banners.characters[19].featured}
+        banner={banners.characters[20]}
+        id={300021}
+        featured={banners.characters[20].featured}
       />
-      <ItemNew type="weapon" banner={banners.weapons[18]} id={400019} featured={banners.weapons[18].featured} />
+      <ItemNew type="weapon" banner={banners.weapons[19]} id={400020} featured={banners.weapons[19].featured} />
       <ItemNew type="character" banner={banners.standard[0]} id={200001} />
       {#each showOld as show, i}
         {#if show}
@@ -53,14 +53,14 @@
             this={i < showOld.length - 3 ? ItemNew : Item}
             type="character"
             banner={banners.characters[banners.characters.length - 3 - i]}
-            id={300019 - i}
+            id={300020 - i}
             featured={banners.characters[banners.characters.length - 3 - i].featured}
           />
           <svelte:component
             this={i < showOld.length - 3 ? ItemNew : Item}
             type="weapon"
             banner={banners.weapons[banners.weapons.length - 3 - i]}
-            id={400018 - i}
+            id={400019 - i}
             featured={banners.weapons[banners.weapons.length - 3 - i].featured}
           />
         {:else}
