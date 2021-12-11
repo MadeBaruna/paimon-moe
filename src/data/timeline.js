@@ -1,6 +1,19 @@
 export const eventsData = [
   [
     {
+      name: 'Let the Arataki Gang Show Begin Web Event',
+      pos: '100% 40%',
+      image: 'let_the_arataki_gang_show_begin.jpg',
+      start: '2021-12-09 12:00:00',
+      end: '2021-12-13 23:59:59',
+      color: '#FDFB85',
+      zoom: '150%',
+      url: 'https://www.hoyolab.com/article/1586790',
+      showOnHome: true,
+    },
+  ],
+  [
+    {
       name: "Traveler's Picture Book Web Event",
       pos: '100% 50%',
       image: 'travelers_picture_book.jpg',
@@ -8,8 +21,7 @@ export const eventsData = [
       end: '2021-12-13 03:59:59',
       color: '#DEECF7',
       zoom: '150%',
-      url:
-        'https://webstatic-sea.mihoyo.com/ys/event/e20211203-album/index.html?game_biz=hk4e_global&mhy_presentation_style=fullscreen&mhy_auth_required=true&mhy_landscape=true&utm_source=hoyolab&utm_medium=post',
+      url: 'https://www.hoyolab.com/article/1531728',
       showOnHome: true,
     },
   ],
@@ -82,6 +94,16 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/1432656',
       showOnHome: true,
     },
+    {
+      name: 'Misty Dungeon: Realm of Light',
+      pos: '0% 60%',
+      image: 'misty_dungeon.jpg',
+      start: '2021-12-17 10:00:00',
+      end: '2021-12-27 03:59:59',
+      color: '#8EC0B3',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/1608464',
+    },
   ],
   [
     {
@@ -133,6 +155,16 @@ export const eventsData = [
       image: 'shadows_amidst_snowstorms.jpg',
       startOnly: true,
     },
+    {
+      name: 'Energy Amplifier Fruition',
+      pos: '0% 50%',
+      image: 'energy_amplifier_fruition.jpg',
+      start: '2021-12-24 10:00:00',
+      end: '2022-01-03 03:59:59',
+      color: '#8FE3F0',
+      zoom: '180%',
+      url: 'https://www.hoyolab.com/article/1608464',
+    },
   ],
   [
     {
@@ -165,7 +197,7 @@ export const eventsData = [
       image: 'labyrinth_warriors.jpg',
       start: '2021-10-30 04:00:00',
       end: '2021-11-08 03:59:59',
-      color: '#CFB1F1',
+      color: '#FFE326',
       zoom: '230%',
       url: 'https://genshin.mihoyo.com/en/news/detail/16356',
       startOnly: true,
@@ -191,6 +223,16 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/1432611',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Marvelous Merchandise',
+      pos: '0% 60%',
+      image: 'marvelous_merchandise_event.jpg',
+      start: '2021-12-27 10:00:00',
+      end: '2022-01-03 03:59:59',
+      color: '#FFE248',
+      zoom: '170%',
+      url: 'https://www.hoyolab.com/article/1608464',
     },
   ],
   [
@@ -229,6 +271,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: "Oni's Royale - Itto Banner",
+      pos: '40% 22%',
+      zoom: '200%',
+      image: 'onis_royale.jpg',
+      start: '2021-12-14 18:00:00',
+      end: '2022-01-04 17:59:59',
+      color: '#FFB455',
+      url: 'https://www.hoyolab.com/article/1608406',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -263,6 +316,16 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/1432613',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '40% 40%',
+      image: 'epitome_invocation_22.jpg',
+      start: '2021-12-14 18:00:00',
+      end: '2022-01-04 17:59:59',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/1608407',
+      showOnHome: true,
     },
   ],
   [
