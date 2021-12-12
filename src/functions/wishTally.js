@@ -1,4 +1,6 @@
 import dayjs from 'dayjs';
+import { getAccountPrefix } from '../stores/account';
+import { readSave } from '../stores/saveManager';
 import { process } from './wish';
 
 const bannerCategories = ['beginners', 'standard', 'character-event', 'weapon-event'];
@@ -15,8 +17,24 @@ async function sendWish(data) {
   }
 }
 
+async function sendWishTotal(data) {
+  try {
+    await fetch(`${__paimon.env.API_HOST}/wish/total`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 export async function submitWishTally() {
   let prefixId = 0;
+
+  const prefixAccount = getAccountPrefix();
+  const uid = await readSave(`${prefixAccount}wish-uid`);
+
   for (const id of bannerCategories) {
     prefixId += 100000;
 
@@ -26,7 +44,15 @@ export async function submitWishTally() {
 
     console.log('processing wish tally', id);
 
-    const { pulls, banner } = data;
+    const { pulls, banner, tally } = data;
+
+    await sendWishTotal({
+      type: id,
+      uid,
+      total: tally.allTotal,
+      legendary: tally.legendaryTotal,
+      rare: tally.rareTotal,
+    });
 
     const firstFivePulls = pulls
       .slice(0, 5)
@@ -90,6 +116,7 @@ export async function submitWishTally() {
         legendary: legendaryCount,
         rare: rareCount,
         pityCount,
+        uid,
       });
     }
   }

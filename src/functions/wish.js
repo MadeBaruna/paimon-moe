@@ -203,5 +203,10 @@ export async function process(id) {
     pulls: currentPulls,
     banner: selectedBanners,
     hasManualInput,
+    tally: {
+      allTotal: data.total,
+      legendaryTotal: allLegendary.length,
+      rareTotal: allRare.length,
+    },
   };
 }

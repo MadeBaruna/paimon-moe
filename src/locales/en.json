@@ -180,6 +180,11 @@
         "and",
         "pity from your wish history"
       ],
+      "header": [
+        "Import and backup your Genshin Impact wish history to keep it more than 6 months. Also automatically track your pity and statistic about your wishes!",
+        "You can also enable Drive Sync on Setting to synchronize and backup the history to your Google Drive",
+        "Please note that the old feedback link does not work anymore, please follow the new instruction below!"
+      ],
       "faqs": {
         "title": "Import Wish History FAQ",
         "q1": "How does it work?",
@@ -281,7 +286,9 @@
           "Back to Stream App > Stop Sniffing",
           "Click Sniff History > Choose a request that end by .json (the link start with https://hk4e-api-os.mihoyo.com/)",
           "Click Request tab, then copy the link and paste it below",
-          "Paste link here... https://hk4e-api-os.mihoyo.com..."
+          "Paste link here... https://hk4e-api-os.mihoyo.com...",
+          "If you got any problem, see troubleshooting guide",
+          "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
           "The steps below might be not working, you can link your PS account with miHoYo account then use the pc/mobile instruction",

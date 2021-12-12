@@ -46,6 +46,8 @@
 
   const videoTutorial = {
     android: 'https://youtu.be/pe_aROJ8Av8',
+    pc: 'https://www.youtube.com/watch?v=FCwZkHeIezw',
+    pclog: 'https://www.youtube.com/watch?v=cl5HDd0bqKw',
   };
 
   let types = {
@@ -312,12 +314,16 @@
     }
     calculatingPity = false;
 
-    submitWishTally();
-
     await updateSave(`${prefix}collectables-updated`, true);
 
     if (currentUID !== '') {
       await updateSave(`${prefix}wish-uid`, currentUID);
+    }
+
+    try {
+      submitWishTally();
+    } catch (err) {
+      console.error(err);
     }
 
     await updateSave(`${prefix}wish-counter-setting`, {
@@ -624,6 +630,17 @@
   <h1 class="font-display font-black text-5xl text-white mb-4 leading-tight">
     {$t('wish.import.title')}
   </h1>
+  <div class="mt-4 mb-4 md:flex items-center bg-background rounded-xl p-4 relative">
+    <img class="h-16 hidden md:block mr-0" src="/images/paimon_faq.png" alt="Paimon" />
+    <div class="md:ml-4 ">
+      <p class="text-white font-bold">{$t('wish.import.header.0')}</p>
+      <p class="text-gray-200 text-sm">{$t('wish.import.header.1')}</p>
+      <div class="flex items-center mt-2 md:mt-0 bg-background-secondary md:bg-transparent p-2 md:p-0 rounded-xl ">
+        <img class="h-16 md:hidden mr-2" src="/images/paimon_faq.png" alt="Paimon" />
+        <p class="text-yellow-300 text-sm">{$t('wish.import.header.2')}</p>
+      </div>
+    </div>
+  </div>
   <div class="flex space-x-3 mb-2">
     <div class="flex flex-col items-center step">
       <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
@@ -770,8 +787,7 @@
       </div>
       <div class="content flex-col items-center pb-2">
         <p class="text-white">{$t('wish.import.guide.pc2.3')}</p>
-        <pre
-          class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">
+        <pre class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">
           {$server === 'China' ? $t('wish.import.guide.pc2.5') : $t('wish.import.guide.pc2.4')}
         </pre>
         <p class="text-white">
@@ -828,8 +844,7 @@
       </div>
       <div class="content flex-col items-center pb-2">
         <p class="text-white">{$t('wish.import.guide.pclog.2')}</p>
-        <pre
-          class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">
+        <pre class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">
           {$server === 'China' ? $t('wish.import.logLocation.china') : $t('wish.import.logLocation.global')}
         </pre>
       </div>
@@ -908,7 +923,9 @@
       <div class="content flex-col items-center pb-2">
         <p class="text-white">{$t('wish.import.guide.pclocal.2')}</p>
         <pre
-          class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">{$t('wish.import.guide.pclocal.3')}</pre>
+          class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">{$t(
+            'wish.import.guide.pclocal.3',
+          )}</pre>
         <p class="text-white">
           {$t('wish.import.guide.pclocal.4')}
           <a class="text-blue-400 hover:underline" href={$t('wish.import.guide.pclocal.6')} target="_blank">
@@ -964,11 +981,27 @@
           </div>
           <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
         </div>
-        <div class="content flex-col items-center {i === 9 ? 'pb-8' : ''}">
+        <div class="content flex-col items-center">
           <p class="text-white">{$t(`wish.import.guide.ios2.${i + 3}`)}</p>
         </div>
       </div>
     {/each}
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="w-8 rounded-full flex justify-center items-center text-primary">
+          <Icon path={mdiCircleMedium} />
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex-col items-center pb-8">
+        <p class="text-white">
+          {$t('wish.import.guide.ios2.14')}
+          <a href={$t('wish.import.guide.ios2.15')} target="_blank" class="text-primary hover:underline">
+            {$t('wish.import.guide.ios2.1')}
+          </a>
+        </p>
+      </div>
+    </div>
   {:else}
     {#each Array(steps[selectedType]) as _, i}
       <div class="flex space-x-3 mb-2">
