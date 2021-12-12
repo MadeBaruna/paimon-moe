@@ -103,6 +103,7 @@ export const eventsData = [
       color: '#8EC0B3',
       zoom: '200%',
       url: 'https://www.hoyolab.com/article/1608464',
+      showOnHome: true,
     },
   ],
   [
@@ -164,6 +165,7 @@ export const eventsData = [
       color: '#8FE3F0',
       zoom: '180%',
       url: 'https://www.hoyolab.com/article/1608464',
+      showOnHome: true,
     },
   ],
   [
@@ -211,6 +213,7 @@ export const eventsData = [
       color: '#50D98F',
       zoom: '200%',
       url: 'https://www.hoyolab.com/article/1321455',
+      showOnHome: true,
     },
     {
       name: 'Secretum Secretorum - Albedo Banner',
@@ -233,6 +236,7 @@ export const eventsData = [
       color: '#FFE248',
       zoom: '170%',
       url: 'https://www.hoyolab.com/article/1608464',
+      showOnHome: true,
     },
   ],
   [
