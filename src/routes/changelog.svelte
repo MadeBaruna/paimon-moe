@@ -7,8 +7,12 @@
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
-  <pre
-    class="text-white px-4 md:px-8">
+  <pre class="text-white px-4 md:px-8">
+2021/12/14
+- Add Itto and Gorou
+- Add Redhorn Stonethresher
+- Update banners
+
 2021/11/25
 - Update wish counter
 - Update achievements

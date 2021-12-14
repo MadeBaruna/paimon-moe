@@ -3546,4 +3546,44 @@ export const builds = {
       },
     },
   },
+  arataki_itto: {
+    roles: {
+      DPS: {
+        recommended: true,
+        weapons: [
+          {
+            id: 'redhorn_stonethresher',
+          },
+        ],
+        artifacts: [['husk_of_opulent_dreams']],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
+  gorou: {
+    roles: {
+      SUPPORT: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
 };

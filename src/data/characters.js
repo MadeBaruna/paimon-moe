@@ -217,6 +217,77 @@ export const characters = {
       boss: itemList.dvalins_sigh,
     },
   },
+  arataki_itto: {
+    name: 'Arataki Itto',
+    id: 'arataki_itto',
+    rarity: 5,
+    element: elements.geo,
+    weapon: weapons.claymore,
+    sex: 'male',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.prithiva_topaz_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.okinabuto, amount: 3 },
+          { item: itemList.slime_condensate, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_fragment, amount: 3 },
+          { item: itemList.riftborn_regalia, amount: 2 },
+          { item: itemList.okinabuto, amount: 10 },
+          { item: itemList.slime_condensate, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_fragment, amount: 6 },
+          { item: itemList.riftborn_regalia, amount: 4 },
+          { item: itemList.okinabuto, amount: 20 },
+          { item: itemList.slime_secretions, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_chunk, amount: 3 },
+          { item: itemList.riftborn_regalia, amount: 8 },
+          { item: itemList.okinabuto, amount: 30 },
+          { item: itemList.slime_secretions, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_chunk, amount: 6 },
+          { item: itemList.riftborn_regalia, amount: 12 },
+          { item: itemList.okinabuto, amount: 45 },
+          { item: itemList.slime_concentrate, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_gemstone, amount: 6 },
+          { item: itemList.riftborn_regalia, amount: 20 },
+          { item: itemList.okinabuto, amount: 60 },
+          { item: itemList.slime_concentrate, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 12858, atk: 227, def: 959 },
+    material: {
+      book: [itemList.teachings_of_elegance, itemList.guide_to_elegance, itemList.philosophies_of_elegance],
+      material: [itemList.slime_condensate, itemList.slime_secretions, itemList.slime_concentrate],
+      boss: itemList.ashen_heart,
+    },
+  },
   barbara: {
     name: 'Barbara',
     id: 'barbara',
@@ -854,6 +925,77 @@ export const characters = {
       book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
       material: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
       boss: itemList.shadow_of_the_warrior,
+    },
+  },
+  gorou: {
+    name: 'Gorou',
+    id: 'gorou',
+    rarity: 4,
+    element: elements.geo,
+    weapon: weapons.bow,
+    sex: 'male',
+    nation: 'inazuma',
+    ascension: [
+      {
+        items: [
+          { item: itemList.prithiva_topaz_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.sango_pearl, amount: 3 },
+          { item: itemList.spectral_husk, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_fragment, amount: 3 },
+          { item: itemList.perpetual_heart, amount: 2 },
+          { item: itemList.sango_pearl, amount: 10 },
+          { item: itemList.spectral_husk, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_fragment, amount: 6 },
+          { item: itemList.perpetual_heart, amount: 4 },
+          { item: itemList.sango_pearl, amount: 20 },
+          { item: itemList.spectral_heart, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_chunk, amount: 3 },
+          { item: itemList.perpetual_heart, amount: 8 },
+          { item: itemList.sango_pearl, amount: 30 },
+          { item: itemList.spectral_heart, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_chunk, amount: 6 },
+          { item: itemList.perpetual_heart, amount: 12 },
+          { item: itemList.sango_pearl, amount: 45 },
+          { item: itemList.spectral_nucleus, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.prithiva_topaz_gemstone, amount: 6 },
+          { item: itemList.perpetual_heart, amount: 20 },
+          { item: itemList.sango_pearl, amount: 60 },
+          { item: itemList.spectral_nucleus, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 9570, atk: 183, def: 648 },
+    material: {
+      book: [itemList.teachings_of_light, itemList.guide_to_light, itemList.philosophies_of_light],
+      material: [itemList.spectral_husk, itemList.spectral_heart, itemList.spectral_nucleus],
+      boss: itemList.molten_moment,
     },
   },
   hu_tao: {

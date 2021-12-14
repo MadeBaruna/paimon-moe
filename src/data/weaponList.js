@@ -7613,4 +7613,63 @@ export const weaponList = {
       },
     ],
   },
+  redhorn_stonethresher: {
+    name: 'Redhorn Stonethresher',
+    id: 'redhorn_stonethresher',
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.claymore,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.narukamis_wisdom, amount: 5 },
+          { item: itemList.concealed_claw, amount: 5 },
+          { item: itemList.old_handguard, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 5 },
+          { item: itemList.concealed_claw, amount: 18 },
+          { item: itemList.old_handguard, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 9 },
+          { item: itemList.concealed_unguis, amount: 9 },
+          { item: itemList.kageuchi_handguard, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 5 },
+          { item: itemList.concealed_unguis, amount: 18 },
+          { item: itemList.kageuchi_handguard, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 9 },
+          { item: itemList.concealed_talon, amount: 14 },
+          { item: itemList.famed_handguard, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_valor, amount: 6 },
+          { item: itemList.concealed_talon, amount: 27 },
+          { item: itemList.famed_handguard, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

@@ -826,4 +826,11 @@ export const itemList = {
   concealed_talon: { id: 'concealed_talon', name: 'Concealed Talon' },
 
   fluorescent_fungus: { id: 'fluorescent_fungus', name: 'Fluorescent Fungus' },
+
+  riftborn_regalia: {
+    id: 'riftborn_regalia',
+    name: 'Riftborn Regalia',
+    rarity: 5,
+    parent: 'prithiva_topaz_sliver',
+  },
 };
