@@ -43,6 +43,7 @@
   let selectedServer = null;
   let arInput = '';
   let wlInput = '';
+  let accountList = [];
 
   function signIn() {
     gapi.auth2.getAuthInstance().signIn();
@@ -65,6 +66,12 @@
       console.log('wl update');
       wlInput = val;
     });
+    accounts.subscribe((val) => {
+      console.log('accounts update');
+      getAccountList(val);
+    });
+
+    mounted = true;
   });
 
   function updateServer() {
@@ -208,6 +215,16 @@
     closeModal();
   }
 
+  async function getAccountList(accounts) {
+    accountList = [];
+    for (const acc of accounts) {
+      const prefix = acc.value === 'main' ? '' : `${acc.value}-`;
+      const uid = await readSave(`${prefix}wish-uid`);
+      accountList.push({ ...acc, label: `${acc.label} ${uid !== null ? `UID:${uid}` : ''}` });
+      console.log(prefix, uid);
+    }
+  }
+
   function openDeleteAccount() {
     openModal(
       DeleteAccountModal,
@@ -260,10 +277,6 @@
     );
   }
 
-  onMount(() => {
-    mounted = true;
-  });
-
   $: currentAccount, selectAccount();
   $: selectedServer, updateServer();
   $: arInput, updateAR();
@@ -291,7 +304,7 @@
       <Select
         className="w-64 mr-2"
         bind:selected={currentAccount}
-        options={$accounts}
+        options={accountList}
         placeholder={$t('settings.selectAccount')}
       />
       <div class="flex flex-1 mt-2 md:mt-0">
