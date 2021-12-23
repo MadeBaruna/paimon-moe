@@ -156,6 +156,7 @@
     let startBanner = false;
     let rateUp = false;
     let lastBanner;
+    let lastBannerIndex;
 
     for (let i = 0; i < pullData.length; i++) {
       const pull = pullData[i];
@@ -163,19 +164,22 @@
       const currentPullTime = dayjs(pull.time).unix();
 
       if (currentBanner === null || currentBanner.end < currentPullTime) {
+        lastBannerIndex = currentBannerIndex;
+
         currentBanner = getNextBanner(currentPullTime);
 
         if (currentBanner === undefined) {
-          // console.log('error banner here', JSON.stringify(pull));
+          console.log('error banner here', JSON.stringify(pull));
           // errorProcessingPull = pull;
           // pushToast($t('wish.errorBanner'), 'error');
           // return;
-
+          currentBannerIndex = lastBannerIndex;
           currentBanner = lastBanner;
+        } else {
+          startBanner = true;
         }
 
         lastBanner = currentBanner;
-        startBanner = true;
 
         if (i > 0) {
           currentPulls[i - 1].end = true;

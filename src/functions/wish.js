@@ -100,6 +100,8 @@ export async function process(id) {
   let startBanner = false;
   let currentBannerIndex = -1;
   let hasManualInput = false;
+  let lastBanner;
+  let lastBannerIndex;
 
   let pity = 0;
   for (let i = 0; i < pullData.length; i++) {
@@ -108,17 +110,21 @@ export async function process(id) {
     const currentPullTime = dayjs(pull.time).unix();
 
     if (currentBanner === null || currentBanner.end < currentPullTime) {
+      lastBannerIndex = currentBannerIndex;
+
       const nextBanner = getNextBanner(currentPullTime, currentBannerIndex, selectedBanners);
 
       if (nextBanner === undefined) {
         console.log('error banner here', JSON.stringify(pull));
         pushToast(t('wish.errorBanner'), 'error');
-        return null;
+        currentBannerIndex = lastBannerIndex;
+        currentBanner = lastBanner;
+      } else {
+        currentBanner = nextBanner.selectedBanner;
+        currentBannerIndex = nextBanner.currentBannerIndex;
+        lastBanner = currentBanner;
+        startBanner = true;
       }
-
-      currentBanner = nextBanner.selectedBanner;
-      currentBannerIndex = nextBanner.currentBannerIndex;
-      startBanner = true;
 
       if (i > 0) {
         currentPulls[i - 1].end = true;
