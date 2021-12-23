@@ -14,7 +14,8 @@
     <h1 class="bg-red-500 text-red-700 rounded-lg px-4 font-display font-black" style="font-size: 6rem;">{status}</h1>
     <h1
       class="absolute top-0 left-0 text-background-secondary font-display font-black text-6xl"
-      style="margin-left: 14px; z-index: 0; font-size: 6rem;">
+      style="margin-left: 14px; z-index: 0; font-size: 6rem;"
+    >
       {status}
     </h1>
   </div>
@@ -22,6 +23,10 @@
   <p class="text-red-400 text-xl mt-4 text-center">
     {status === 404 ? 'Page not found! Try one on the menu :)' : error.message}
   </p>
+
+  {#if status === 500}
+    <p class="text-white text-xl mt-4 text-center">You can try refresh the page by pressing CTRL+F5</p>
+  {/if}
 
   {#if dev && error.stack}
     <pre class="mt-8 p-4 rounded-lg text-black bg-red-400">{error.stack}</pre>
