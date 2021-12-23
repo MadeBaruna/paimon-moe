@@ -29,7 +29,7 @@
   let timeDifferenceEvent = 0;
   let timeDifferenceAsia = 0;
 
-  let dayWidth = 50;
+  let dayWidth = 40;
   const eventHeight = 36;
   const eventMargin = 20;
   const padding = 10;
@@ -172,7 +172,7 @@
     if (timelineContainer === undefined) return;
 
     if (timelineContainer.offsetWidth < 500) {
-      dayWidth = 40;
+      dayWidth = 30;
       await tick();
     }
 
