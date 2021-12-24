@@ -180,6 +180,7 @@
         "and",
         "pity from your wish history"
       ],
+      "forceUpdateCheck": "Force update wish history (enable only if your wish history is not updating)",
       "header": [
         "Import and backup your Genshin Impact wish history to keep it more than 6 months. Also automatically track your pity and statistic about your wishes!",
         "You can also enable Drive Sync on Setting to synchronize and backup the history to your Google Drive",

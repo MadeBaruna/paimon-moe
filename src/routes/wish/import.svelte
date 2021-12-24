@@ -1,8 +1,18 @@
 <script>
   import { getContext, onMount } from 'svelte';
+  import { slide } from 'svelte/transition';
   import { goto } from '@sapper/app';
   import { t } from 'svelte-i18n';
-  import { mdiCheckBold, mdiCircleMedium, mdiClose, mdiContentSave, mdiDatabaseImport, mdiLoading } from '@mdi/js';
+  import {
+    mdiCheckBold,
+    mdiChevronDown,
+    mdiCircleMedium,
+    mdiClose,
+    mdiCog,
+    mdiContentSave,
+    mdiDatabaseImport,
+    mdiLoading,
+  } from '@mdi/js';
   import dayjs from 'dayjs';
   import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
   dayjs.extend(isSameOrBefore);
@@ -21,6 +31,7 @@
   import { pushToast } from '../../stores/toast';
   import { submitWishTally } from '../../functions/wishTally';
   import Ad from '../../components/Ad.svelte';
+  import Checkbox from '../../components/Checkbox.svelte';
 
   const numberFormat = Intl.NumberFormat();
   let fetchController;
@@ -70,6 +81,7 @@
   };
 
   let news = '';
+  let showAdvancedOptions = false;
 
   const prefix = getAccountPrefix();
   let selectedServer = null;
@@ -79,6 +91,7 @@
 
   let currentUID = '';
   let forceUpdate = false;
+  let tallySubmit = true;
 
   let url;
   let region = '';
@@ -94,6 +107,19 @@
   let error = '';
 
   let wishes = {};
+
+  async function downloadBackup() {
+    const data = await getLocalSaveJson();
+    const fileLink = document.createElement('a');
+
+    const filename = 'paimon-moe-forceupdate-backup.json';
+    const dataStr = encodeURIComponent(data);
+
+    fileLink.setAttribute('href', `data:text/json;charset=utf-8,${dataStr}`);
+    fileLink.setAttribute('download', filename);
+    document.body.appendChild(fileLink);
+    fileLink.click();
+  }
 
   async function startImport() {
     cancelled = false;
@@ -122,8 +148,18 @@
       error = $t('wish.import.invalidLink');
     }
 
+    console.log('STARTING IMPORT', {
+      forceUpdate,
+      tallySubmit,
+    });
+
     try {
       await checkUID();
+
+      if (forceUpdate) {
+        await downloadBackup();
+      }
+
       for (const [wishNumber, type] of Object.entries(types)) {
         await getLog(wishNumber, type);
         await sleep(2000);
@@ -320,10 +356,12 @@
       await updateSave(`${prefix}wish-uid`, currentUID);
     }
 
-    try {
-      submitWishTally();
-    } catch (err) {
-      console.error(err);
+    if (tallySubmit) {
+      try {
+        submitWishTally();
+      } catch (err) {
+        console.error(err);
+      }
     }
 
     await updateSave(`${prefix}wish-counter-setting`, {
@@ -605,6 +643,10 @@
     }
   }
 
+  function toggleAdvancedOptions() {
+    showAdvancedOptions = !showAdvancedOptions;
+  }
+
   $: selectedServer, updateServer();
 
   onMount(() => {
@@ -735,14 +777,14 @@
             on:click={() => changeSelectedType('pclog')}
             class="pill {selectedType === 'pclog' ? 'active' : ''}"
           >
-            Manual Log
+            No Script
           </button>
           <button
             disabled={processingLog}
             on:click={() => changeSelectedType('pclocal')}
             class="pill {selectedType === 'pclocal' ? 'active' : ''}"
           >
-            Local Import
+            Local Importer
           </button>
         </div>
       </div>
@@ -1041,14 +1083,37 @@
       <div class="h-4" />
       {#if !processingLog}
         <div class="flex">
-          <Button on:click={startImport} color="green" className="mr-4">
-            <Icon path={mdiDatabaseImport} />
-            {$t('wish.import.import')}
-          </Button>
+          <div class="flex mr-4">
+            <button
+              class="text-green-400 border-r border-t-2 border-b-2 border-l-2 border-white border-opacity-25 rounded-l-xl 
+              px-4 py-2 transition duration-100 focus:border-green-400 hover:border-green-400 focus:outline-none"
+              on:click={startImport}
+            >
+              <Icon path={mdiDatabaseImport} />
+              {$t('wish.import.import')}
+            </button>
+            <button
+              class="text-white border-r-2 border-t-2 border-b-2 border-l border-white border-opacity-25 rounded-r-xl
+               px-4 py-2 transition duration-100 focus:border-primary hover:border-primary focus:outline-none"
+              on:click={toggleAdvancedOptions}
+            >
+              <Icon
+                path={mdiChevronDown}
+                className="{showAdvancedOptions ? 'rotate-180' : ''} transform transition-all ease-in duration-100"
+              />
+            </button>
+          </div>
           <a href="/wish">
             <Button>{$t('wish.import.cancel')}</Button>
           </a>
         </div>
+        {#if showAdvancedOptions}
+          <div transition:slide class="flex flex-col mt-4 bg-background rounded-xl p-4 text-white">
+            <Checkbox bind:checked={forceUpdate}>{$t('wish.import.forceUpdateCheck')}</Checkbox>
+            <div class="h-2" />
+            <Checkbox bind:checked={tallySubmit}>{$t('wish.import.wishTallyCheck')}</Checkbox>
+          </div>
+        {/if}
       {/if}
       {#if error !== ''}
         <div class="bg-red-400 rounded-xl p-4 w-full mt-4">
@@ -1077,7 +1142,7 @@
           </div>
         {/if}
         {#if !noNewData}
-          <div class="border border-gray-700 rounded-xl min-w-full md:min-w-0 md:inline-block">
+          <div class="border border-gray-700 rounded-xl min-w-full md:min-w-0 md:inline-block mb-4">
             <table class="progress">
               {#each Object.entries(types) as [code, type]}
                 {#if wishes[code] !== undefined}
@@ -1126,8 +1191,8 @@
       </div>
     </div>
   {/if}
-  <Ad type="desktop" variant="lb" id="2" />
-  <Ad type="mobile" variant="lb" id="2" />
+  <!-- <Ad type="desktop" variant="lb" id="2" />
+  <Ad type="mobile" variant="lb" id="2" /> -->
   <div class="-mx-4 md:mx-0 md:pl-8">
     <Ad type="desktop" variant="player" id="" style="width: 100%; max-width: 400px;" />
   </div>

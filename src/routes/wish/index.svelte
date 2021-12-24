@@ -199,7 +199,7 @@
   </div>
   <Ad type="desktop" variant="lb" id="2" />
   <Ad type="mobile" variant="lb" id="1" />
-  <div class="mt-12 mb-4 max-w-screen-xl flex flex-col md:flex-row items-center bg-background rounded-xl p-4">
+  <div class="mt-12 mr-4 mb-4 max-w-screen-xl flex flex-col md:flex-row items-center bg-background rounded-xl p-4">
     <img class="h-16 mr-2 mb-2 md:mb-0 md:mr-0" src="/images/paimon_faq.png" alt="Paimon" />
     <div class="ml-4 md:ml-8 text-gray-200">
       <ol class="list-disc">
