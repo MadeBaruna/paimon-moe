@@ -13,6 +13,7 @@
   export let multiselect = false;
   export let image = false;
   export let disabled = false;
+  export let maxItemRow = -1;
 
   export let selected = null;
   export let selectedMulti = new Set();
@@ -123,6 +124,7 @@
     <div
       transition:fade={{ duration: 100 }}
       class="bg-item rounded-2xl absolute mt-2 p-2 w-full z-50 flex flex-col text-white shadow-xl border border-background"
+      style={maxItemRow === -1 ? '' : `max-height: ${maxItemRow * 48 + 16}px; overflow-y: auto;`}
     >
       {#each options as option, index}
         <span
