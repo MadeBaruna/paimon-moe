@@ -13,23 +13,23 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    albedo: {
-      name: 'Albedo',
+    arataki_itto: {
+      name: 'Itto',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    eula: {
-      name: 'Eula',
+    gorou: {
+      name: 'Gorou',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300022;
-  const image = 'albedoeula.png';
+  const bannerId = 300023;
+  const image = 'ittogorou.png';
 
   let loading = true;
   let user = '';
