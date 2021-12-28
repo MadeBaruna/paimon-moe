@@ -35,6 +35,12 @@
     standard: 200000,
   };
 
+  const spliceCount = {
+    characters: 8,
+    weapons: 7,
+    standard: 0,
+  };
+
   let selectedType = types[0];
   let type = selectedType.value;
   let banner = banners.characters[banners.characters.length - 1];
@@ -65,6 +71,8 @@
 
   let chart;
   let chart2;
+
+  let error;
 
   function onChangeType() {
     type = selectedType.value;
@@ -139,15 +147,24 @@
       rareList = rareList;
 
       if (type !== 'standard') {
+        let totalCount = 0;
+        let totalGuaranteed = 0;
         for (let i = 0; i < featured.items.length; i++) {
           const feat = featured.items[i];
           const item = data.list.find((e) => e.name === feat);
-          console.log(feat, item);
+
+          totalCount += item.count;
+          totalGuaranteed += item.guaranteed;
+
           featuredValues[i] = {
             total: item.count,
-            guaranteed: ((item.count - item.guaranteed) / (data.total.legendary - item.guaranteed)) * 100,
             percentage: (item.count / data.total.legendary) * 100,
           };
+        }
+
+        for (let i = 0; i < featured.items.length; i++) {
+          featuredValues[i].guaranteed =
+            ((totalCount - totalGuaranteed) / (data.total.legendary - totalGuaranteed)) * 100;
         }
       } else {
         featuredValues = [
@@ -289,6 +306,7 @@
       });
     } catch (err) {
       console.error(err);
+      error = err;
     }
   }
 
@@ -307,6 +325,7 @@
         return { label: `${name} & ${bannersDual[name][1].name} ${bannersDual[name][1].image}`, value: i, image };
       else return { label: name, value: i, image };
     })
+    .slice(spliceCount[type])
     .reverse();
 </script>
 
@@ -339,6 +358,8 @@
     <div class="flex flex-col px-4 md:px-8 mt-4">
       {#if loading}
         <Icon path={mdiLoading} spin color="white" size={3} />
+      {:else if !loading && error !== undefined}
+        <p class="text-white">Data is not available</p>
       {:else}
         <div class="flex mb-4">
           <img
