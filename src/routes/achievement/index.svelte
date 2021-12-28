@@ -302,7 +302,7 @@
 </svelte:head>
 
 <div class="flex">
-  <div class="lg:ml-64 pt-20 px-4 lg:px-8 lg:pt-8 max-w-screen-xl">
+  <div class="lg:ml-64 pt-20 px-4 lg:px-8 lg:pt-8 max-w-screen-xl w-full">
     <div class="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-2 mb-2 md:mb-0">
       <h1 class="font-display font-black text-3xl md:text-4xl text-white">{$t('achievement.title')}</h1>
       <div class="flex space-x-2">
@@ -454,8 +454,8 @@
       </div>
     </div>
   </div>
-  <div class="hidden xl:block">
-    <Ad class="ml-4 mt-8" type="desktop" variant="mpu" id="1" />
+  <div class="fixed top-0 right-0 m-8">
+    <Ad class="ml-4" type="desktop" variant="mpu" id="1" />
   </div>
 </div>
 <Ad type="desktop" variant="lb" id="2" />
