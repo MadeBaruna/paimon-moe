@@ -557,7 +557,7 @@
     ) {
       readCSV(file);
     } else {
-      pushToast($t('wish.excel.errorInvalidFile'), 'error');
+      pushToast($t('wish.excel.errorInvalidFile') + ` [${file.type}]`, 'error');
     }
   }
 
