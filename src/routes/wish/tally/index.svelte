@@ -597,6 +597,11 @@
       {/if}
     </div>
   </div>
+  <div class="fixed top-0 right-0 m-8">
+    <Ad class="ml-4" type="desktop" variant="mpu" id="1" />
+  </div>
+  <Ad type="desktop" variant="lb" id="2" />
+  <Ad type="mobile" variant="lb" id="2" />
 </div>
 
 <style>
