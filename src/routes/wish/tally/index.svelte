@@ -549,6 +549,14 @@
                     {numberFormat.format((item.count / legendary.total) * 100)}
                   </td>
                 </tr>
+                <tr>
+                  <td colspan="4">
+                    <span
+                      class="absolute bg-legendary-from block"
+                      style="height: 1px; margin-top: 1px; width: {(item.count / legendary.total) * 100}%;"
+                    />
+                  </td>
+                </tr>
               {/each}
             </table>
           </div>
@@ -585,6 +593,14 @@
                     style="font-family: monospace;"
                   >
                     {numberFormat.format((item.count / rare.total) * 100)}
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="4">
+                    <span
+                      class="absolute bg-rare-from block"
+                      style="height: 1px; margin-top: 1px; width: {(item.count / rare.total) * 100}%;"
+                    />
                   </td>
                 </tr>
               {/each}
