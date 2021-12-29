@@ -119,7 +119,7 @@
     processingLog = true;
 
     try {
-      if (selectedType === 'android') {
+      if (selectedType === 'android' || selectedType == 'pc') {
         const urlString = genshinLink.match(/https:\/\/.*\//g);
         url = new URL(urlString);
       } else {
