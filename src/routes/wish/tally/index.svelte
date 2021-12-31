@@ -361,7 +361,7 @@
       {:else if !loading && error !== undefined}
         <p class="text-white">Data is not available</p>
       {:else}
-        <div class="flex mb-4">
+        <div class="flex flex-col space-y-4 xl:flex-row xl:space-y-0 mb-4">
           <img
             src="/images/banners/{banner.name} {banner.image}.png"
             alt={banner.name}
@@ -550,10 +550,10 @@
                   </td>
                 </tr>
                 <tr>
-                  <td colspan="4">
+                  <td colspan="4" class="p-0">
                     <span
                       class="absolute bg-legendary-from block"
-                      style="height: 1px; margin-top: 1px; width: {(item.count / legendary.total) * 100}%;"
+                      style="height: 1px; width: {(item.count / legendary.total) * 100}%;"
                     />
                   </td>
                 </tr>
