@@ -609,16 +609,6 @@ export const eventsData = [
   ],
   [
     {
-      name: "Paimon's Bargain - Razor, Amber, and Royal",
-      pos: '0% 50%',
-      zoom: '150%',
-      start: '2021-10-01 04:00:00',
-      end: '2021-11-01 04:00:00',
-      color: '#B6A1EA',
-      image: 'paimon_bargain.png',
-      description: 'Now selling: Razor, Amber, and Royal Weapons.',
-    },
-    {
       name: "Paimon's Bargain - Bennett, Lisa, and Blackcliff",
       pos: '0% 50%',
       zoom: '150%',
@@ -637,6 +627,16 @@ export const eventsData = [
       color: '#B6A1EA',
       image: 'paimon_bargain.png',
       description: 'Now selling: Barbara, Kaeya, and Royal Weapons.',
+    },
+    {
+      name: "Paimon's Bargain - Fischl, Xiangling, and Blackcliff",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2022-01-01 04:00:00',
+      end: '2022-02-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Fischl, Xiangling, and Blackcliff Weapons.',
     },
   ],
   [
