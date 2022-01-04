@@ -100,6 +100,7 @@
   }
 
   async function getData() {
+    error = undefined;
     loading = true;
 
     const url = new URL(`${__paimon.env.API_HOST}/wish`);
@@ -111,6 +112,10 @@
         method: 'GET',
         headers: { 'Content-Type': 'application/json' },
       });
+
+      if (res.status === 400) {
+        error = 'Not available yet';
+      }
 
       const data = await res.json();
 
