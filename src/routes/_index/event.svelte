@@ -36,12 +36,13 @@
     if (start.isBefore(now) && end.isAfter(now)) {
       const diff = end.diff(now);
       const timeLeft = dayjs.duration(diff);
-      event.time = timeLeft.format(diff > 86400000 ? 'D[d] H[h]' : 'H[h]');
+      event.time = diff > 86400000 ? `${timeLeft.asDays().toFixed(0)}d ${timeLeft.hours()}h` : `${timeLeft.hours()}h`;
       current = [...current, event];
     } else if (start.isAfter(now)) {
       const diff = start.diff(now);
       const timeUpcoming = dayjs.duration(diff);
-      event.time = timeUpcoming.format(diff > 86400000 ? 'D[d] H[h]' : 'H[h]');
+      event.time =
+        diff > 86400000 ? `${timeUpcoming.asDays().toFixed(0)}d ${timeUpcoming.hours()}h` : `${timeUpcoming.hours()}h`;
       upcoming = [...upcoming, event];
     }
   }
@@ -56,6 +57,9 @@
         checkEvent(event);
       }
     }
+
+    current.sort((a, b) => (dayjs(a.start).isAfter(dayjs(b.start)) ? 1 : -1));
+    upcoming.sort((a, b) => (dayjs(a.start).isAfter(dayjs(b.start)) ? 1 : -1));
   }
 
   onMount(async () => {
@@ -73,7 +77,6 @@
     await tick();
     dispatch('done');
   });
-
 </script>
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
