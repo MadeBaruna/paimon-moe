@@ -1,4 +1,5 @@
 <script>
+  import { createEventDispatcher, tick } from 'svelte';
   import { mdiChevronRight } from '@mdi/js';
 
   import { characters } from '../../data/characters';
@@ -6,11 +7,15 @@
 
   import Icon from '../../components/Icon.svelte';
 
+  const dispatch = createEventDispatcher();
+
   const promoted = ['arataki_itto', 'gorou'];
   let current = 0;
 
-  function change(index) {
+  async function change(index) {
     current = index;
+    await tick();
+    dispatch('done');
   }
 
   $: id = promoted[current];
