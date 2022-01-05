@@ -666,7 +666,7 @@ export const eventsData = [
       image: 'oceansong.jpg',
       start: '2022-01-05 10:00:00',
       end: '2022-02-14 03:59:59',
-      color: '#BCD0FF',
+      color: '#6aa7e8',
       url: 'https://genshin.mihoyo.com/en/news/detail/17132',
       timezoneDependent: true,
     },

@@ -2633,7 +2633,7 @@ export const builds = {
   },
   aloy: {
     roles: {
-      'BURST SUPPORT ✩': {
+      'BURST SUPPORT': {
         recommended: false,
         weapons: [
           {
@@ -2685,6 +2685,28 @@ export const builds = {
         tip: '',
         note:
           "Aloy is much preferred as a Burst Support over Main DPS as getting coil stacks for her Cryo infusion can be quite unreliable. Aloy needs 4 coil stacks to get the Cryo infusion and you can only get 1 stack every 0.1 seconds which is quite hard to do considering the Bomblets are scattered all over the place. One thing to note regarding Aloy's coil stacks is that she can still get coil stacks even when she's off-field.\n\nAloy is very niche as she only performs well in certain comps and even then, she's still completely replaceable by other characters. She can be utilized on a Freeze team where she can be a battery and nuke at the same time since she provides 5 Cryo particles on her Elemental Skill. She can also be utilized on a Melt team where you can melt her Elemental Burst for quite a decent amount of damage.\n\nRegarding Weapon Choice:\nPolar Star: Forcing to get Polar stacks isn't worth due to consuming extra time to get those stacks.\nThe Stringless: Placement was considering Aloy is used on a Reverse Melt team. On Reverse Melt Aloy, Stringless especially at higher refinement levels can pull ahead of Thundering Pulse.\nPrototype Crescent: Assumes the passive is active by proccing a weak point shot. This weapon especially at higher refinement levels can be as good as a Skyward Harp.\nSacrificial Bow: A pretty decent option to make Aloy a Cryo battery as her Elemental Skill provides 5 Cryo particles.\n\nRegarding Artifact Sets:\nBlizzard Strayer (4): This artifact set is best used on a Freeze-focused Aloy as it provides a ton of Crit Value.\nWanderer's Troupe (2): This artifact set bonus only benefits a Melt-focused Aloy, Elemental Mastery provides nothing on a Freeze Aloy.\nNoblesse Oblige (4): Aloy is one of the best Noblesse holders since she has low energy requirements and cooldown for her Elemental Burst.\n\nRegarding Artifact Main Stat and Substats Priority: \nElemental Mastery is only an option if your Aloy is played on a Reverse Melt team as it provides nothing to a Freeze Aloy.",
+      },
+    },
+  },
+  shenhe: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [
+          {
+            id: 'calamity_queller',
+          },
+        ],
+        artifacts: [],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: '',
       },
     },
   },
@@ -3353,6 +3375,24 @@ export const builds = {
           "[C2] extends the duration of Gorou's Elemental Burst from 9 seconds to 12 seconds if you can obtain the required Crystallize shields. This allows his teammates to gain the 3 Geo 15% Geo DMG% bonus for a longer duration, so it's preferable to use Burst as your last ability before swapping into your DPS.",
         note:
           "Gorou is a Support character that can give increasing buffs to your party members from his Elemental Skill and Elemental Burst based on the number of Geo characters in your team (capped at 3). Casting his Elemental Skill sets up a banner which gives flat DEF (1 Geo), Interruption Resistance (2 Geo) and Geo DMG% Bonus (3 Geo) for your active character standing inside the banner radius. Casting his Elemental Burst creates a field following the active character which deals periodic damage and offers the same bonuses given by the Skill, destroying any placed banners in the process. Due to his kit focusing on buffing DEF and Geo DMG, he's a specialised support geared towards Geo DPS that scales with DEF, such as Noelle or Itto. He can see niche use at [C6] with other Geo characters as well.\n\nRegarding Weapon Choices:\nElegy for the End: Elegy offers a helpful ER substat alongside an EM and ATK% buff for your teammates. While not directly useful in teams centered around Noelle or Itto, this could possibly be a good choice for future Geo DPS characters, or in a team which utilizes Geo Resonance.\n\nRegarding Artifact Sets:\nThe Exile (4): Casting Elemental Burst regenerates a total of 6 Energy for each of your party member. This set reduces your Energy Requirements by a bit for all of your party members, which can be quite beneficial. Do note that this is a 4 star set so you're potentially missing out on 5 star stat scaling, which is a 34% difference in mainstat value and 25% difference in individual substat value.\nNoblesse Oblige (4): The effectiveness of this set increases if you've already met the ER requirement for Gorou. At that point, you'd no longer need to run the recommended ER% sets, which means you can opt for this instead. \n\nRegarding Artifact Mainstats and Substats Priority:\nDEF% mainstats and substats (and potentially a Healing Bonus mainstat on Circlet) can be considered at [C4] due to being able to heal the active character based on his DEF during burst. This is useful if you plan to use him as a solo healer.\nCrit Rate circlet and substats can be considered when Gorou is using Favonius Warbow to trigger the passive comfortably.\nER% substats can usually be more important than getting the right mainstat, as Gorou's damage contribution to a team is negligible, while being able to get Energy for his Burst is a lot more important.",
+      },
+    },
+  },
+  yun_jin: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: '',
       },
     },
   },

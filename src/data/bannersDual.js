@@ -23,4 +23,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'The Transcendent One Returns 1': [
+    {
+      name: 'The Transcendent One Returns',
+      image: 1,
+      shortName: 'Shenhe',
+      start: '2022-01-05 06:00:00',
+      end: '2022-01-25 17:59:59',
+      color: '#81DDF0',
+      featured: ['shenhe', 'xiao'],
+      featuredRare: ['yun_jin', 'ningguang', 'chongyun'],
+      timezoneDependent: true,
+    },
+    {
+      name: 'Invitation to Mundane Life',
+      image: 2,
+      shortName: 'Xiao',
+      start: '2022-01-05 06:00:00',
+      end: '2022-01-25 17:59:59',
+      color: '#5AD4D4',
+      featured: ['shenhe', 'xiao'],
+      featuredRare: ['yun_jin', 'ningguang', 'chongyun'],
+      timezoneDependent: true,
+    },
+  ],
 };

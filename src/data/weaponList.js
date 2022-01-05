@@ -7672,4 +7672,63 @@ export const weaponList = {
       },
     ],
   },
+  calamity_queller: {
+    name: 'Calamity Queller',
+    id: 'calamity_queller',
+    rarity: 5,
+    atk: 49,
+    secondary: 'ATK',
+    type: weapons.polearm,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.mist_veiled_lead_elixir, amount: 5 },
+          { item: itemList.mist_grass_pollen, amount: 5 },
+          { item: itemList.whopperflower_nectar, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_mercury_elixir, amount: 5 },
+          { item: itemList.mist_grass_pollen, amount: 18 },
+          { item: itemList.whopperflower_nectar, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_mercury_elixir, amount: 9 },
+          { item: itemList.mist_grass, amount: 9 },
+          { item: itemList.shimmering_nectar, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_gold_elixir, amount: 5 },
+          { item: itemList.mist_grass, amount: 18 },
+          { item: itemList.shimmering_nectar, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_gold_elixir, amount: 9 },
+          { item: itemList.mist_grass_wick, amount: 14 },
+          { item: itemList.energy_nectar, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.mist_veiled_primo_elixir, amount: 6 },
+          { item: itemList.mist_grass_wick, amount: 27 },
+          { item: itemList.energy_nectar, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

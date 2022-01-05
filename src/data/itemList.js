@@ -833,4 +833,11 @@ export const itemList = {
     rarity: 5,
     parent: 'prithiva_topaz_sliver',
   },
+
+  dragonheirs_false_fin: {
+    id: 'dragonheirs_false_fin',
+    name: "Dragonheir's False Fin",
+    rarity: 5,
+    parent: 'shivada_jade_sliver',
+  },
 };
