@@ -13,23 +13,23 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    arataki_itto: {
-      name: 'Itto',
+    xiao: {
+      name: 'Xiao',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    gorou: {
-      name: 'Gorou',
+    shenhe: {
+      name: 'Shenhe',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300023;
-  const image = 'ittogorou.png';
+  const bannerId = 300024;
+  const image = 'shenhexiao.png';
 
   let loading = true;
   let user = '';

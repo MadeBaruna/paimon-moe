@@ -115,6 +115,8 @@
 
       if (res.status === 400) {
         error = 'Not available yet';
+        loading = false;
+        return;
       }
 
       const data = await res.json();
