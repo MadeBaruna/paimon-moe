@@ -13,6 +13,7 @@
 - Add Calamity Queller
 - Update banners
 - Update timeline
+- Update achievement
 
 2021/12/14
 - Add Itto and Gorou
