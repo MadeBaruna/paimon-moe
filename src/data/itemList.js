@@ -826,6 +826,7 @@ export const itemList = {
   concealed_talon: { id: 'concealed_talon', name: 'Concealed Talon' },
 
   fluorescent_fungus: { id: 'fluorescent_fungus', name: 'Fluorescent Fungus' },
+  onikabuto: { id: 'onikabuto', name: 'Onikabuto' },
 
   riftborn_regalia: {
     id: 'riftborn_regalia',
