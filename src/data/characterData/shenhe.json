@@ -433,7 +433,7 @@
     },
     {
       "name": "Spirit Communion Seal",
-      "description": "#After Shenhe uses <span style=\"color: #FFD780FF;\">Spring Spirit Summoning</span>, she will grant all nearby party members the following effects:\\n· {LAYOUT_MOBILE#Tap}{LAYOUT_PC#Press}{LAYOUT_PS#Press}: Elemental Skill and Elemental Burst DMG increased by 15% for 10s.\\n· Hold: Normal, Charged, and Plunging Attack DMG increased by 15% for 15s."
+      "description": "After Shenhe uses <span style=\"color: #FFD780FF;\">Spring Spirit Summoning</span>, she will grant all nearby party members the following effects:\\n· Press: Elemental Skill and Elemental Burst DMG increased by 15% for 10s.\\n· Hold: Normal, Charged, and Plunging Attack DMG increased by 15% for 15s."
     },
     {
       "name": "Precise Comings and Goings",
