@@ -64,11 +64,13 @@ export async function process(id) {
     const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
     const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss');
     const image = `/images/banners/${e.name} ${e.image}.png`;
+    const fullName = `${e.name} ${e.image}`;
 
     return {
       ...e,
       start: start.unix(),
       end: end.unix(),
+      fullName,
       image,
       total: 0,
       legendary: [],

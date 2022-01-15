@@ -2,6 +2,7 @@ import { Workbook } from 'exceljs';
 import dayjs from 'dayjs';
 
 import { banners } from '../data/banners';
+import { bannersDual } from '../data/bannersDual';
 
 import { getTimeOffset } from '../stores/server';
 import { process } from './wish';
@@ -170,7 +171,7 @@ async function addWishHistory(workbook) {
         pull.pity,
         pull.at,
         groupCount,
-        pull.banner.name,
+        pull.code === '400' ? bannersDual[pull.banner.fullName][1].name : pull.banner.name,
       ]);
 
       const bgColor = pull.striped ? 'ffeeeeee' : 'ffffffff';
