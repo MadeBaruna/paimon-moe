@@ -92,24 +92,27 @@
   }
 
   function onChange() {
+    result = [];
     result = null;
   }
 
-  function calculateUsable() {
+  function calculateUsable(sortOrder = true) {
     usable = usable
       .slice()
       .map((e) => {
         const total = e.amount + (e.firstTime ? e.amount : e.bonus);
-        return { ...e, total, perItem: e.price / total };
+        return { ...e, total, perItem: e.price / (e.firstTime ? total * 2 : total) };
       })
-      .sort((a, b) => a.perItem - b.perItem);
+      .sort(sortOrder ? (a, b) => a.perItem - b.perItem : (a, b) => b.total - a.total);
   }
 
-  async function calculate() {
+  function calculate(sortOrder) {
     onChange();
 
     usable = values.slice().map((e, i) => ({ ...e, price: usedPrices[i] }));
-    calculateUsable();
+    calculateUsable(sortOrder);
+
+    console.log(usable.slice());
 
     let currentMoney = money;
     const used = [];
@@ -132,23 +135,25 @@
 
         if (currentUsable.firstTime) {
           currentUsable.firstTime = false;
-          calculateUsable();
+          calculateUsable(sortOrder);
         }
       } else {
         usable.shift();
       }
     }
 
-    result = used;
-    resultTotal = total;
-    resultTotalPrice = totalPrice;
+    return {
+      used,
+      total,
+      totalPrice,
+    };
   }
 
-  async function calculateFate() {
+  function calculateFate(sortOrder) {
     onChange();
 
     usable = values.slice().map((e, i) => ({ ...e, price: usedPrices[i] }));
-    calculateUsable();
+    calculateUsable(sortOrder);
     const usableTemp = usable.slice();
 
     let currentGenesis = fate * 160;
@@ -175,34 +180,68 @@
         if (currentUsable.firstTime) {
           currentUsable.firstTime = false;
           usableTemp.find((e) => e.amount === currentUsable.amount).firstTime = false;
-          calculateUsable();
+          calculateUsable(sortOrder);
         }
       } else {
         usable.shift();
       }
     }
 
-    let min = Number.MAX_SAFE_INTEGER;
-    let current = null;
-    for (const u of usableTemp) {
-      const usageAmount = u.amount + (u.firstTime ? u.amount : u.bonus);
-      if (Math.abs(currentGenesis - usageAmount) < min) {
-        current = u;
-        min = Math.abs(currentGenesis - usageAmount);
+    if (currentGenesis > 0) {
+      let min = Number.MAX_SAFE_INTEGER;
+      let current = null;
+      for (const u of usableTemp) {
+        const usageAmount = u.amount + (u.firstTime ? u.amount : u.bonus);
+        if (Math.abs(currentGenesis - usageAmount) < min) {
+          current = u;
+          min = Math.abs(currentGenesis - usageAmount);
+        }
+      }
+      total += current.amount + (current.firstTime ? current.amount : current.bonus);
+      totalPrice += current.price;
+      const usedItem = used.find((e) => e.amount === current.amount && e.firstTime === current.firstTime);
+      if (usedItem) {
+        usedItem.qty++;
+      } else {
+        used.push({ ...current, qty: 1 });
       }
     }
-    total += current.amount + (current.firstTime ? current.amount : current.bonus);
-    totalPrice += current.price;
-    const usedItem = used.find((e) => e.amount === current.amount && e.firstTime === current.firstTime);
-    if (usedItem) {
-      usedItem.qty++;
-    } else {
-      used.push({ ...current, qty: 1 });
-    }
 
-    result = used;
-    resultTotal = total;
-    resultTotalPrice = totalPrice;
+    return {
+      used,
+      total,
+      totalPrice,
+    };
+  }
+
+  function calculateByMoney() {
+    const res1 = calculate(true);
+    const res2 = calculate(false);
+    result = null;
+    if (res1.total > res2.total) {
+      result = res1.used;
+      resultTotal = res1.total;
+      resultTotalPrice = res1.totalPrice;
+    } else {
+      result = res2.used;
+      resultTotal = res2.total;
+      resultTotalPrice = res2.totalPrice;
+    }
+  }
+
+  function calculateByFate() {
+    const res1 = calculateFate(true);
+    const res2 = calculateFate(false);
+    result = null;
+    if (res1.total > res2.total) {
+      result = res1.used;
+      resultTotal = res1.total;
+      resultTotalPrice = res1.totalPrice;
+    } else {
+      result = res2.used;
+      resultTotal = res2.total;
+      resultTotalPrice = res2.totalPrice;
+    }
   }
 </script>
 
@@ -243,15 +282,15 @@
     </div>
     {#if selected !== null}
       <div>
-        <Input placeholder="Total Money" bind:value={money} type="number" on:change={onChange} />
+        <Input placeholder="Total Money" bind:value={money} type="number" on:input={onChange} />
         <div class="mb-1" />
-        <Button className="w-full" on:click={calculate}>
+        <Button className="w-full" on:click={calculateByMoney}>
           {$t('calculator.fate.calculate', { values: { currency: currencyLabel, value: numberFormat.format(money) } })}
         </Button>
         <p class="text-white my-6 text-center">OR</p>
-        <Input placeholder="Total Fate" bind:value={fate} type="number" on:change={onChange} />
+        <Input placeholder="Total Fate" bind:value={fate} type="number" on:input={onChange} />
         <div class="mb-1" />
-        <Button className="w-full" on:click={calculateFate}>
+        <Button className="w-full" on:click={calculateByFate}>
           {$t('calculator.fate.calculateFate', { values: { value: fate } })}
           <img class="ml-1 w-6 inline" src="/images/intertwined_fate.png" alt="Fate" />
         </Button>

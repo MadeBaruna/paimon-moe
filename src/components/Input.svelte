@@ -1,5 +1,8 @@
 <script>
   import Icon from './Icon.svelte';
+  import { createEventDispatcher } from 'svelte';
+
+  const dispatch = createEventDispatcher();
 
   export let className = '';
   export let icon = null;
@@ -18,13 +21,15 @@
     } else {
       value = event.target.value;
     }
+
+    dispatch('input');
   };
 </script>
 
 <div
   class="flex flex-1 relative items-center bg-background rounded-2xl h-14
    focus-within:border-primary border-2 border-transparent ease-in duration-100 {className}"
-   style="min-height: 3.5rem;"
+  style="min-height: 3.5rem;"
 >
   {#if icon}
     <Icon path={icon} color="white" className="absolute ml-4 w-6 h-6" />
