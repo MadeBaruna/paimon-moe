@@ -397,7 +397,7 @@
         {$t('characters.build')}
         {build.recommended ? '👍' : ''}
       </h3>
-      <p class="whitespace-pre-wrap text-gray-200">{build.note}</p>
+      <p class="whitespace-pre-wrap text-gray-200 character-note">{@html build.note}</p>
       {#if build.tip !== ''}
         <h4 class="font-black font-display text-lg mt-4">ABILITY TIP</h4>
         <p class="whitespace-pre-wrap text-gray-200">{build.tip}</p>
@@ -652,6 +652,11 @@
   .side-detail {
     margin-top: -40vh;
     background: linear-gradient(180deg, rgba(37, 41, 74, 0) 0%, rgba(37, 41, 74, 0.75) 10%);
+  }
+
+  .character-note :global(b) {
+    color: #ffd780ff;
+    font-weight: 400;
   }
 
   @screen xl {
