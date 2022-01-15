@@ -609,7 +609,7 @@
                       : '/images/wish.png'}
                     alt={pull.name}
                   />
-                  <span class="h-8 leading-8 pr-4">{pull.name}</span>
+                  <span class="h-8 leading-8 pr-4">{$t(pull.name)}</span>
                 </td>
                 <td class="border-t border-gray-700 px-2 text-gray-200 text-center">{pull.rarity}</td>
                 <td class="border-t border-gray-700 px-4 text-gray-200">

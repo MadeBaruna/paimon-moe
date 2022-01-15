@@ -1,17 +1,7 @@
-import { addMessages, init, getLocaleFromNavigator, locale as $locale } from 'svelte-i18n';
+import { register, addMessages, init, getLocaleFromNavigator, locale as $locale } from 'svelte-i18n';
 
 import en from './locales/en.json';
-import id from './locales/id.json';
-import ru from './locales/ru.json';
-import ko from './locales/ko.json';
-import fr from './locales/fr.json';
-import zh from './locales/zh.json';
-import pt from './locales/pt.json';
-import tw from './locales/tw.json';
-import es from './locales/es.json';
-import de from './locales/de.json';
-import th from './locales/th.json';
-import vi from './locales/vi.json';
+import enItems from './locales/items/en.json';
 
 const INIT_OPTIONS = {
   fallbackLocale: 'en',
@@ -32,17 +22,29 @@ $locale.subscribe((value) => {
 
 const supportedLanguage = ['en', 'id', 'ru', 'ko', 'fr', 'zh', 'pt', 'tw', 'es', 'de', 'th', 'vi'];
 addMessages('en', en);
-addMessages('id', id);
-addMessages('ru', ru);
-addMessages('ko', ko);
-addMessages('fr', fr);
-addMessages('zh', zh);
-addMessages('pt', pt);
-addMessages('tw', tw);
-addMessages('es', es);
-addMessages('de', de);
-addMessages('th', th);
-addMessages('vi', vi);
+addMessages('en', enItems);
+register('id', () => import('./locales/id.json'));
+register('ru', () => import('./locales/ru.json'));
+register('ko', () => import('./locales/ko.json'));
+register('fr', () => import('./locales/fr.json'));
+register('zh', () => import('./locales/zh.json'));
+register('pt', () => import('./locales/pt.json'));
+register('tw', () => import('./locales/tw.json'));
+register('es', () => import('./locales/es.json'));
+register('de', () => import('./locales/de.json'));
+register('th', () => import('./locales/th.json'));
+register('vi', () => import('./locales/vi.json'));
+register('id', () => import('./locales/items/id.json'));
+register('ru', () => import('./locales/items/ru.json'));
+register('ko', () => import('./locales/items/ko.json'));
+register('fr', () => import('./locales/items/fr.json'));
+register('zh', () => import('./locales/items/zh.json'));
+register('pt', () => import('./locales/items/pt.json'));
+register('tw', () => import('./locales/items/tw.json'));
+register('es', () => import('./locales/items/es.json'));
+register('de', () => import('./locales/items/de.json'));
+register('th', () => import('./locales/items/th.json'));
+register('vi', () => import('./locales/items/vi.json'));
 
 export function startClient() {
   let used = 'en';

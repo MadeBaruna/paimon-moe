@@ -1,4 +1,5 @@
 <script>
+  import { t } from 'svelte-i18n';
   import { mdiStar } from '@mdi/js';
 
   import Icon from '../../components/Icon.svelte';
@@ -17,10 +18,7 @@
   }
 </script>
 
-<div
-  class="bg-item rounded-xl p-4 flex flex-col w-full"
-  style="height: min-content;"
->
+<div class="bg-item rounded-xl p-4 flex flex-col w-full" style="height: min-content;">
   <table>
     <tr>
       <td class="text-white text-md font-semibold pr-2 md:pr-4 flex-1 w-full">{type.name}</td>
@@ -57,9 +55,7 @@
       </td>
     </tr>
     <tr>
-      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
-        └ Character
-      </td>
+      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700"> └ Character </td>
       <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
         {numberFormat.format(avg.rare.character.total)}
       </td>
@@ -71,9 +67,7 @@
       </td>
     </tr>
     <tr>
-      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
-        └ Weapon
-      </td>
+      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700"> └ Weapon </td>
       <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
         {numberFormat.format(avg.rare.weapon.total)}
       </td>
@@ -88,7 +82,7 @@
   {#if avg.legendary.pulls.length > 0}
     <div class="flex flex-wrap mt-2 overflow-y-auto" style="max-height: 500px;">
       {#each avg.legendary.pulls as pull}
-        <span class="pity">{pull.name} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span>
+        <span class="pity">{$t(pull.name)} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span>
       {/each}
     </div>
   {/if}

@@ -197,7 +197,7 @@
       <div class="flex flex-col items-start mt-4 xl:mt-0 side-detail pt-4 xl:pt-0">
         <div class="flex items-center px-4 md:px-8">
           <h1 class="font-display font-black text-4xl leading-10 md:leading-normal md:text-5xl text-white mr-4 z-0">
-            {character.name}
+            {$t(character.name)}
           </h1>
           <img
             class="h-10 mr-4 z-10 object-contain"

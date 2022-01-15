@@ -393,7 +393,7 @@
               <div class="relative overflow-hidden bg-item rounded-b-xl" style="height: 29px">
                 <div class="w-full  overflow-hidden absolute bottom-0">
                   <p class="text-white p-1 text-center text-sm">
-                    {char.name}
+                    {$t(char.name)}
                   </p>
                 </div>
               </div>
@@ -458,7 +458,7 @@
                 <td class="rarity w-16 sticky" style="padding: 0; left: 0px;">
                   <img class="w-12 h-12 rounded-full" src={`/images/characters/${id}.png`} alt={char.name} />
                 </td>
-                <td><a href="/characters/{id}">{char.name}</a></td>
+                <td><a href="/characters/{id}">{$t(char.name)}</a></td>
                 <td class="text-center">
                   <img class="w-8 h-8 inline" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />
                 </td>
