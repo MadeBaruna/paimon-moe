@@ -372,13 +372,13 @@
           <img
             src="/images/banners/{banner.name} {banner.image}.png"
             alt={banner.name}
-            class="rounded-xl w-full h-auto lg:h-64 lg:w-auto mr-4"
+            class="rounded-xl w-full h-auto xl:h-64 lg:w-auto mr-4"
           />
           {#if dual !== undefined}
             <img
               src="/images/banners/{banner2.name} {banner2.image}.png"
               alt={banner2.name}
-              class="rounded-xl w-full h-auto lg:h-64 lg:w-auto"
+              class="rounded-xl w-full h-auto xl:h-64 lg:w-auto"
             />
           {/if}
         </div>
