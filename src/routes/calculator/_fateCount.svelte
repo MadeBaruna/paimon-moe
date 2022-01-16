@@ -124,7 +124,7 @@
                 <tr>
                   <td class="border-t border-gray-700 text-white pr-2">
                     <span class="inline-flex align-middle">
-                      {#if res.image !== null}<img src={res.image} alt={res.name} class="w-6 mr-2" />{/if}
+                      {#if res.image !== null}<img src={res.image} alt={res.name} class="w-6 h-6 mr-2" />{/if}
                       <p class="text-white">{res.name}</p>
                     </span>
                   </td>
