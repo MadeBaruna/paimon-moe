@@ -60,6 +60,7 @@
     }
     if (parameters[0].amount>0) {
       let total = parameters[0].amount*60;
+      totalPrimogem += total;
       result.push({name: $t('calculator.fateCount.dailyCommission'), image: "/images/commission.png", amount: parameters[0].amount, total: total})
     }
   }
