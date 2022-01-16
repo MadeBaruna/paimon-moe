@@ -10,6 +10,7 @@
   import ResinCalculator from './_resin.svelte';
   import FriendshipCalculator from './_friendship.svelte';
   import FatesCalculator from './_fates.svelte';
+  import FateCountCalculator from './_fateCount.svelte';
   import ResinTable from './_resinTable.svelte';
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
@@ -150,6 +151,21 @@
     </h1>
   </div>
   <FatesCalculator />
+  <div
+    id="fateCount"
+    class="flex flex-col items-center md:flex-row-reverse md:justify-end md:items-start lg:items-center mt-8 mb-2"
+  >
+    <Button on:click={() => findPos('character')}>
+      <Icon size={0.8} path={mdiArrowUp} />
+      {$t('calculator.goto', { values: { where: $t('calculator.titleCharacter') } })}
+    </Button>
+    <h1
+      class="font-display font-black text-center mt-2 md:mt-0 md:mr-2 xl:mr-8 text-3xl lg:text-left lg:text-5xl text-white"
+    >
+      {$t('calculator.titleFateCount')}
+    </h1>
+  </div>
+  <FateCountCalculator />
   <div class="mt-8 space-y-4 grid md:grid-cols-2 md:gap-4 md:space-y-0">
     <LevelUpTable />
     <ResinTable />
