@@ -108,7 +108,6 @@
         >{$t('calculator.fateCount.calculate')}</Button
       >
       {#if result !== null}
-        <script>console.log(result);</script>
         <div>
           <div
           transition:fade={{ duration: 100 }}
