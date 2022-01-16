@@ -8,7 +8,17 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre class="text-white px-4 md:px-8">
-2021/01/05
+2022/01/16
+- Add Fate count calculator (thanks to HansonSin)
+- Fix wish tally layout on small screen (thanks to ivas1ly)
+- Update character builds
+- Update timeline
+- Fix excel export dual banner name
+- Add weapon and char translation on wish page
+- Add Japanese locale
+- Update locales
+
+2022/01/05
 - Add Shenhe and Yun Jin
 - Add Calamity Queller
 - Update banners
