@@ -429,6 +429,7 @@
     "titleResin": "Resin Calculator",
     "titleFriendship": "Friendship Exp Calculator",
     "titleFate": "Fate Price Calculator",
+    "titleFateCount": "Fate Count Calculator",
     "goto": "Go To {where}",
     "howToUse": "How to Use",
     "guide": {
@@ -524,6 +525,19 @@
       "totalPrice": "Total Price",
       "calculate": "Calculate how many Genesis Crystal I can get with {currency}{value}",
       "calculateFate": "Calculate how much money I need for {value}"
+    },
+    "fateCount": {
+      "interwinedFate": "Interwined Fate",
+      "starglitter": "Starglitter",
+      "stardust": "Stardust",
+      "primogem": "Primogem",
+      "genesisCrystal": "Genesis Crystal",
+      "welkinMoon": "Welkin Moon (Days)",
+      "dailyCommission": "Daily Commission",
+      "type": "Type",
+      "amount": "Amount",
+      "totalPrimogem": "Total Primogem",
+      "calculate": "Calculate"
     }
   },
   "items": {
