@@ -6,6 +6,7 @@
     mondstadt: [],
     liyue: [],
     inazuma: [],
+    enkanomiya: [],
   };
   for (const [id, location] of Object.entries(locations)) {
     spots[location.location].push({ ...location, id });

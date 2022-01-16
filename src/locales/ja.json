@@ -1,0 +1,837 @@
+{
+  "sidebar": {
+    "home": "ホーム",
+    "character": "キャラクター",
+    "wishCounter": "祈願カウンター",
+    "calculator": "計算ツール",
+    "database": "データベース",
+    "items": "アイテム",
+    "achievement": "アチーブメント",
+    "reminder": "リマインダー",
+    "todoList": "Todoリスト",
+    "timeline": "タイムライン",
+    "furnishing": "調度品",
+    "weapons": "武器",
+    "artifacts": "聖遺物",
+    "fishing": "釣り",
+    "settings": "設定",
+    "donate": "寄付"
+  },
+  "home": {
+    "welcome": "Paimon.moeへようこそ!👋",
+    "message": "あなたの最高の原神ツール！経験値や突破に必要な素材等を計算したり、Todoリストや祈願カウンターで進捗を確認することができます。",
+    "visitor": "過去7日間に訪れた旅人 {count} 名",
+    "banner": {
+      "featured": [
+        "エウルア"
+      ],
+      "summoned": "の排出数",
+      "percentage": "全ての {rarity} のうち",
+      "avg": "天井カウント数の平均",
+      "subtitle": "{user} 人のpaimon.moeユーザーによって送信されたデータから計算されます",
+      "detail": "全世界の祈願統計"
+    },
+    "wish": {
+      "message": "6か月以上の履歴を保存できるようにあなたの祈願履歴をインポートしましょう! また、あなたの天井と祈願を自動的にカウントしてわかりやすい表に表示します。 📊",
+      "latest": "前回の祈願",
+      "banner": "バナー",
+      "time": "時間",
+      "name": "名前",
+      "pity": "天井カウント",
+      "detail": "祈願カウンター"
+    },
+    "reminder": {
+      "message": "リマインダー通知🔔 参量物質変化器とHoYoLAB ログインボーナスはこちらから設定できます！",
+      "detail": "リマインダー"
+    },
+    "event": {
+      "upcoming": "今後のイベント",
+      "current": "開催中のイベント",
+      "detail": "タイムライン"
+    },
+    "discord": {
+      "online": "オンラインメンバー",
+      "message": "Discordに参加して、最新のアップデートを確認しましょう！さらに、原神やpaimon.moeのフィードバックについて話し合うこともできます。",
+      "join": "Discordに参加する"
+    },
+    "items": {
+      "title": "今日の秘境素材",
+      "detail": "アイテム",
+      "sunday": "日曜日には全ての素材を入手できます😁"
+    },
+    "calculator": {
+      "title": "🧮様々な素材の必要数をまとめて計算できます！ 計算結果をTodoリストに追加して、必要な樹脂の量を示すことができます。",
+      "detail": "計算ツール"
+    },
+    "twitter": {
+      "title": "私のTwitterをフォローしてください。paimon.moeの開発進捗やアップデートなどが確認できます!",
+      "detail": "Twitterをフォローする"
+    },
+    "achievement": {
+      "title": "🏆アチーブメントの達成ステータスの確認と管理ができます",
+      "detail": "アチーブメント"
+    },
+    "furnishing": {
+      "title": "セットの構成に必要な調度品や、それぞれの調度品の負荷を確認することができます。",
+      "detail": "調度品"
+    }
+  },
+  "characters": {
+    "title": "キャラクター",
+    "subtitle": "表に示されているデータはレベル80及び突破ランク6時点のステータスになります。表のタイトルをクリックして表示を並べ替えることもできます。",
+    "name": "名前",
+    "element": "元素",
+    "rarity": "レアリティ",
+    "weapon": "武器",
+    "talents": "天賦",
+    "passiveTalents": "固有天賦",
+    "constellations": "命ノ星座",
+    "const": "凸",
+    "asc": "突破",
+    "lvl": "レベル",
+    "hp": "HP",
+    "atk": "攻撃力",
+    "def": "防御力",
+    "hpPercent": "HP%",
+    "atkPercent": "攻撃力%",
+    "defPercent": "防御力%",
+    "critRate": "会心率",
+    "critDamage": "会心ダメージ",
+    "em": "元素熟知",
+    "er": "元素チャージ効率",
+    "healingBonus": "与える治癒効果",
+    "pyroDamageBonus": "炎元素ダメージボーナス",
+    "hydroDamageBonus": "水元素ダメージボーナス",
+    "dendroDamageBonus": "草元素ダメージボーナス",
+    "electroDamageBonus": "雷元素ダメージボーナス",
+    "cryoDamageBonus": "氷元素ダメージボーナス",
+    "anemoDamageBonus": "風元素ダメージボーナス",
+    "physicalDamageBonus": "物理ダメージボーナス",
+    "geoDamageBonus": "岩元素ダメージボーナス",
+    "sortBy": "ソート順...",
+    "talentBook": "天賦育成素材",
+    "bossItem": "ボス",
+    "ascensionMaterial": "突破用素材",
+    "talentStats": "天賦情報",
+    "build": "ビルド",
+    "source": "Genshin Helper Teamがお勧めするキャラクタービルド",
+    "faq": "命ノ星座の開放数は、あなたの祈願履歴から算出されます。そのため、祈願履歴が残っていない場合や、ショップからキャラクターを入手した場合は、命ノ星座の開放数が正確ではない可能性があります! キャラクター名の横にある鉛筆アイコンを押すことで、手動で編集することができます。"
+  },
+  "wish": {
+    "title": "祈願カウンター",
+    "autoImport": "自動インポート",
+    "helpAndSetting": "ヘルプと設定",
+    "helps": "ヘルプ",
+    "settings": "設定",
+    "wishesWorth": "原石換算",
+    "lifetimePulls": "累計祈願数",
+    "guarantee": "前回の天井から{pity} 連",
+    "name": "名前",
+    "time": "時間",
+    "pity": "天井カウント",
+    "welcome": "Paimon.moe 祈願カウンターへようこそ! 自動インポート機能を使って祈願履歴を登録するのがおすすめです。",
+    "welcomeStart1": "始めるには、上にある",
+    "welcomeStart2": "ボタンを押してください",
+    "manual": "もし、手動で祈願のデータを入力したければ、このボタンで有効にできます:",
+    "manualButton": "手動入力を有効にする",
+    "errorBanner": "バナーの時間が一致しません！設定ページでサーバーが正しいか確認してください。まだ動作しない場合、Discordにメッセージを残してください😅",
+    "globalWishTally": "全世界の祈願統計",
+    "pityTooltip": [
+      "{rarity} の現在の天井カウント",
+      "あと {count} 連で {rarity} 確定"
+    ],
+    "import": {
+      "title": "祈願履歴をインポート",
+      "faqsButton": "よくある質問 - はじめにお読みください",
+      "readFaq": "よくある質問を読む",
+      "openFaq": "よくある質問",
+      "choosePlatform": "プラットフォームの選択",
+      "chooseMethod": "希望する方法を選択してください",
+      "nonew": "新規祈願なし",
+      "importNotice1": "インポートされた祈願データは、既存のデータに応じて追加、または置き換えられます",
+      "importNotice2": "以前に保存されたデータがない場合、最初の祈願は天井カウント1として記録されます",
+      "importNotice3": "別のアカウントのデータをインポートする場合は、データが混ざってしまわないよう、設定ページからアカウントを切り替えてください!",
+      "saveData": "祈願データを保存しますか?",
+      "reCalculating": "天井カウントを再計算中...",
+      "processing": "処理中",
+      "banner": "祈願",
+      "page": "ページ",
+      "parsing": "解析中...",
+      "save": "保存",
+      "cancel": "キャンセル",
+      "cancelling": "キャンセル中...",
+      "importNewWishOnly": "新しい祈願のみインポートする",
+      "importNewWishUncheck": "すべての祈願履歴を再インポートする場合にのみ、このオプションのチェックを外してください",
+      "import": "インポート",
+      "close": "閉じる",
+      "invalidLink": "無効なリンクです、もう一度確認してください",
+      "errorApi": "MiHoYo APIでエラーが起きました。しばらくしてからもう一度お試しください!",
+      "errorExpired": "リンクの有効期限が切れました。もう一度お試しください！",
+      "timeout": "接続がタイムアウトしました。しばらく待ってから再試行してください",
+      "differentAccount": "この祈願履歴は別のアカウントのものです。最初に設定メニューでアカウントを分けてください！",
+      "invalidData": "APIから無効なデータが返されました。後でもう一度お試しください。",
+      "noNewData": "新しい祈願記録はありません。祈願記録の更新には1時間ほど要します。後ほどまたご確認ください。",
+      "success": "インポート成功 😀!",
+      "server": "サーバーを選択:",
+      "wishTallyCheck": "天井カウントを祈願統計に登録する",
+      "wishTally": "私達は、祈願の統計を取っています! 祈願データを登録することで参加できます。すべての天井カウントのデータは集計され、paimon.moe 利用者の平均天井カウントを知るために使用されます。",
+      "wishTallyCollected": [
+        "これらの情報が収集されます: あなたの祈願履歴からの",
+        "および",
+        "の天井カウント"
+      ],
+      "forceUpdateCheck": "",
+      "header": [
+        "",
+        "",
+        ""
+      ],
+      "faqs": {
+        "title": "祈願履歴のインポートに関するよくある質問",
+        "q1": "これはどのように動作しますか？",
+        "a1": "原神の祈願履歴は基本的に Web ページなので、Web ページの URL を開くことでアクセスできます。祈願履歴ページまたはフィードバックページを開くと、一時的な認証キーが生成されます。この認証キーを利用して、MiHoYo APIを使用し自動的に祈願履歴を取得します。",
+        "q2": "これは安全ですか？Banされる危険性がありますか？",
+        "a2": "Paimon.moeは、原神が祈願履歴を取得するのと全く同じリクエストを使用しています。 また、Paimon.moeはゲームファイルやメモリを変更する方法は全くないため、安全なはずです。しかし、自己責任で使用してください。(私は私のメインアカウント上でこれを使用しています。) もし不安であれば、あなたは手動でデータを入力することができます。😀",
+        "q3": "これは私のアカウントをハックすることができますか？",
+        "a3": [
+          "Paimon.moe はあなたのアカウントの資格情報のような個人情報を保存することはありません。 (あなたのUIDやニックネームでも同様です。)よって答えはいいえです。また、このプロジェクトは、オープンソースです。不安であれば",
+          "上で実際に使用されているコードを確認することができます。私は他の人のアカウントをハッキングして私自身の評判を損なうつもりはありません。"
+        ],
+        "q4": "ねえ、私はリクエストや機能をチェックしましたが、なぜMiHoYo APIの代わりにあなたのドメインに要求するのですか？",
+        "a4": [
+          "Paimon.moe は、",
+          "による制限のため、直接miHoYoのサーバーにリクエストすることができません。そのため、リクエストは簡単なCORSプロキシを経由して送信されます。ソースコードは",
+          "こちら"
+        ],
+        "q5": "Paimon.moeにおいて、一時キー/祈願履歴は保存されますか？",
+        "a5": [
+          "Paimon.moeではあなたのキーを保存することはなく、HTTPSを使用してあなたのURLをCORSプロキシに渡し、CORSを動作させています。Paimon.moeでは、あなたの祈願履歴を世界中の祈願データ集計のために提供していただければ、あなたの現時点での★4、★5の天井カウントと★5祈願の情報を確認できます(個人情報は保存されません。",
+          "プライバシーポリシー",
+          "を確認してください！)。祈願統計の送信のチェックを外すと、祈願履歴の送信ができなくなります。そうすると、すべての祈願履歴が端末(同期をオンにしている場合はGoogleドライブ) に保存されます。",
+          "もしURLを受け渡したくない場合は、小さなインポートスクリプトを使って、ローカルで祈願履歴を処理できます(PCローカルオプション)。 "
+        ],
+        "q6": "すべての手順を実行したのに、エラーが発生したのですが...?",
+        "a6": "インポートに必要なテキストを見逃してしまったのかもしれません。テキストの全体がコピーされていることを確認してください (モバイル端末の場合は、テキストを長押しし、\"すべて選択\"ボタンを押します)",
+        "q7": "私の全ての祈願履歴を読み込んでくれなかったのですが！？",
+        "a7": "6ヶ月以上前の祈願履歴はmihoyoサーバー自体から削除されますので、どこかにバックアップがない場合は、悲しいことになくなってしまいます。"
+      },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
+      },
+      "guide": {
+        "video": "チュートリアル動画",
+        "pc": [
+          "パイモンメニュー [ESC] を開く",
+          "「報告」をクリックします",
+          "読み込みが終わり、ブラウザが開くまでお待ちください。",
+          "下のテキストボックスにリンクをコピー&ペーストします",
+          "ここにリンクを貼り付けてください。 https://webstatic..."
+        ],
+        "pc2": [
+          "PCで原神を起動する(複数のアカウントを使う場合はゲームを再起動し、ログインし直してください)",
+          "ゲーム内で祈願履歴のページを開き、読み込まれるまで待ちます。",
+          "スタートメニューでPowershellを検索する",
+          "Windows Powershellを起動し、下側のスクリプトをコピーしてPowershellにペーストしてください。",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
+          "スクリプトを",
+          "見る",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "ENTERを押すとリンクがクリップボードにコピーされます。",
+          "下のテキストボックスにリンクを貼り付けてください",
+          "ここにリンクを貼り付けてください。 https://webstatic..."
+        ],
+        "pclog": [
+          "PCで原神を起動する(複数のアカウントを使う場合はゲームを再起動し、ログインし直してください)",
+          "ゲーム内で祈願履歴のページを開き、読み込まれるまで待ちます。",
+          "キーボードでWINDOWSとRを同時に押して、次の内容を入力してください：",
+          "メモ帳が開かれた後、CRTL＋Fを押して次の内容を検索します：",
+          "以下のように https://webstatic から #/log までのリンクをコピーしてください：https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "下のテキストボックスにリンクを貼り付けてください",
+          "ここにリンクを貼り付けてください。https://webstatic..."
+        ],
+        "android": [
+          "(ゲーム内の) 祈願を開いてください。",
+          "祈願履歴をクリックします。",
+          "ロードされるのを待ちます。",
+          "Wi-Fiとデータ接続をOFFにします。",
+          "右上の更新ボタンを押します。",
+          "ページにエラーが表示され、黒いフォントのテキストが表示されるはずです。",
+          "テキストを長押ししてすべてを選択し、そのテキストをコピーします (テキストの一部だけをコピーしないでください)",
+          "Wi-Fiとデータ接続をONにします。",
+          "下のテキストボックスにテキストを貼り付けます。",
+          "ここにテキストを貼り付けてください... ウェブページは利用できません..."
+        ],
+        "ios": [
+          "メニュー画面を開く",
+          "「報告」を押してください",
+          "報告のページが開き、読み込まれるまでお待ちください",
+          "ゲーム内不具合を押す",
+          "マルチモードを押してください",
+          "リプライ下部にあるリンクをクリックしてください",
+          "ブラウザが立ち上がるので、そのリンクをコピーして下のフォームに貼り付けてください",
+          "ここにリンクを貼り付けてください。 https://genshin.mihoyo..."
+        ],
+        "ios2": [
+          "App StoreでStreamをダウンロードしてください",
+          "App Storeリンク",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "Streamを起動してVPN設定を許可してください(設定 > 一般 > VPN)",
+          "CAをインストールしてください(Sniff Nowをタップ > Install CA > Allowをタップ > CAダウンロード完了",
+          "設定 > 一般 > VPNとデバイス管理 > ダウンロード済みプロファイルでStream Generated CAをタップ > インストール",
+          "原神を起動し祈願画面を開いてください",
+          "Stream Appに戻る > I've trustedをタップ > Sniff Nowをタップ",
+          "原神に戻り、祈願履歴をタップしてください",
+          "祈願履歴が表示されるまでお待ちください",
+          "Stream Appに戻り、Stop Sniffingをタップしてください",
+          "Sniff Historyをタップ > Json型のRequestを選択してください(https://hk4e-api-os.mihoyo.com/から始まるリンク)",
+          "Requestタブをタップし、Request Lineの内容をタップしてCopy Urlを選択してください",
+          "ここに貼り付けてください。 https://hk4e-api-os.mihoyo.com...",
+          "",
+          ""
+        ],
+        "ps": [
+          "以下の方法は動作しない可能性があります。PlayStationアカウントをmiHoYoアカウントに紐づけ、pcおよびmobileの手順を用いてインポートすることも可能です。",
+          "この方法はゲーム内メールにおいて、ウェブイベントへのQRコードがある場合のみ使用可能です。",
+          "PlayStationで原神を起動してください",
+          "QRコードが含まれるイベントメールを表示してください",
+          "QRコードを携帯で読み取ってください",
+          "ここにリンクを貼り付けてください...",
+          "ここにリンクを貼り付けてください..."
+        ],
+        "pclocal": [
+          "報告用URLを渡すことに抵抗がある場合は、この方法を使ってあなたのPCで祈願履歴をローカルに処理することができます。このスクリプトは、あなたのPCのログファイルを読み込んで、祈願履歴のURLを取得します。",
+          "スタートメニューを開き、Powershellを検索してください",
+          "Windows Powershellを開き、以下のスクリプトをPowershellにコピー&ペーストしてください",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
+          "スクリプトを確認できます：",
+          "こちら",
+          "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
+          "Enterキーを押してスクリプトを実行し、指示に従ってください",
+          "その後、下にスクリプトの結果を貼り付けてください",
+          "ここに貼り付けてください...",
+          "この機能はまだベータ版です。まずヘルプ&設定メニューから バックアップを作成してExcel にエクスポートしてください。"
+        ]
+      }
+    },
+    "excel": {
+      "title": "Excelからインポート",
+      "subtitle": "Excelを生成したサイトを選択してください：",
+      "default": "Paimon.moeから",
+      "takagg": "TakaGG Gachaから",
+      "genshinwishes": "GenshinWishesから",
+      "wishtally": "WishTallyから",
+      "notice": [
+        "この機能はベータ版です。先に設定からエクセルに出力し、バックアップを取ってください！",
+        "時間と結果が同じ祈願は追加、更新されません。(既存のデータが変更されることはありません。)",
+        "祈願は記録リストの途中に挿入されることはありません。リストの前後に補足されるのみとなります。",
+        "祈願結果は現在英語のみサポートされています。"
+      ],
+      "selectFile": {
+        "default": "Paimon.moe excelファイルをここにアップロード",
+        "takagg": "TakaGG gacha export excelファイルをここにアップロード",
+        "genshinwishes": "GenshinWishes csv ファイルをここにアップロード",
+        "wishtally": "Wish Tally excel ファイルをここにアップロード"
+      },
+      "processing": "処理中...",
+      "addedOn": "挿入先：",
+      "beginning": "開始",
+      "end": "終了",
+      "total": "合計",
+      "saveNotice": "インポートした祈願履歴を保存しますか？",
+      "save": "保存",
+      "success": "Excel インポート成功 😀!",
+      "errorInvalidFile": "無効なExcelファイルです",
+      "errorReadExcel": "Excel読み込みエラー！",
+      "errorExcelPaimon": "これはpaimon.moeからのエクスポートファイルではありません",
+      "errorUnknownItem": "不明なアイテム名があります"
+    },
+    "help": {
+      "title": "祈願統計のヘルプと設定",
+      "exportTitle": "祈願履歴のエクスポートとインポート",
+      "exportMessage": "ここで祈願履歴をexcelファイルとして出力できます。また、paimon.moeやTakaGG Gachaで出力したexcelをインポートすることもできます。",
+      "export": "Excelファイルエクスポート",
+      "exporting": "エクスポート中...",
+      "import": "Excelからインポート",
+      "exportFinish": "エクスポートに成功しました。ファイルがダウンロードされるまでお待ちください！",
+      "wishTallyTitle": "祈願履歴を全世界の祈願記録統計に登録する",
+      "wishTally": "私達は、祈願の統計を取っています! 祈願データを登録することで参加できます。すべての天井カウントのデータは集計され、paimon.moe 利用者の平均天井カウントを知るために使用されます。",
+      "wishTallyCollected": [
+        "これらの情報が収集されます：",
+        "および",
+        "天井カウント"
+      ],
+      "wishTallySubmit": "祈願履歴を全世界の祈願履歴統計に登録する",
+      "wishTallyThankyou": "ご協力ありがとうございました！",
+      "manualTitle": "手動入力の設定",
+      "enableManual": "手動入力を有効にする",
+      "notice": "開発中の機能のため、自動インポートと手動入力を同時に使用することはおすすめしません！",
+      "consider": "最初は自動インポートをお試しください。HowToボタンの隣にあるボタンからアクセスすることができます。",
+      "howto": {
+        "title": "手動入力マニュアル",
+        "subtitle": "祈願1回：",
+        "pressWhenYouGet": "{rarity}★が出た時{button} をクリックしてください",
+        "p1": "5★と 4★の天井カウントは自動的に計算されます",
+        "p2": [
+          "もし",
+          "の天井カウントが10になった場合、自動的に0にリセットされます"
+        ],
+        "p3": [
+          "もし",
+          "の天井カウントが90になった場合、0にリセットされます"
+        ],
+        "p4": [
+          "10連祈願した場合、これをクリック：",
+          "どのタイミングで排出されたかを正確に特定できないため、天井カウントが必ずしも正確だとは限らないことにご留意ください(1回目で出たかもしれないし10回目で出たかもしれません)。正確にカウントしたい場合には、祈願履歴を確認しながら1回ずつ手動で入力する必要があります。"
+        ],
+        "p5": [
+          "また、このボタン",
+          "で手動で編集できます！"
+        ],
+        "p6": [
+          "下にある矢印をクリックすると祈願詳細を確認することができます。",
+          "や",
+          "が出るとポップアップが表示されます。手動で祈願表を調整することもできます。"
+        ]
+      }
+    },
+    "types": {
+      "beginners": "初心者応援祈願",
+      "standard": "通常祈願",
+      "character-event": "イベント祈願・キャラクター",
+      "weapon-event": "イベント祈願・武器"
+    },
+    "detail": {
+      "weapon": "武器",
+      "character": "キャラクター",
+      "time": "日時",
+      "pity": "天井カウント",
+      "name": "名前",
+      "type": "種類",
+      "banner": "バナー",
+      "roll": "バナーごとの祈願数",
+      "totalThisBanner": "このバナーでの祈願回数",
+      "worth": "に使用した原石の合計",
+      "loading": "読み込み中... (固まったら設定でアカウントのサーバを確かめてください)",
+      "guaranteed": "次回の5★はピックアップの排出が確定",
+      "unknown_3_star": "不明の3★"
+    },
+    "tally": {
+      "title": "全世界の祈願統計",
+      "subtitle": "Paimon.moeユーザーの提供による世界平均天井カウント",
+      "update": "更新日時",
+      "summoned": "の排出数",
+      "wonFiftyFifty": "が1回目天井に排出",
+      "fromFiveStar": "すべての5★から",
+      "fromFourStar": "すべての4★から",
+      "fromFourStarFeatured": "ピックアップの4★から",
+      "show": "表示",
+      "name": "名前",
+      "total": "合計",
+      "wishTotal": "祈願合計",
+      "worth": "使用した原石の合計",
+      "weapon": "武器",
+      "character": "キャラクター",
+      "error": "データはまだご利用いただけません 😞",
+      "pity": "天井カウント",
+      "median": "5★ 中央値",
+      "user": "合計ユーザー数",
+      "detail": "詳細"
+    },
+    "note": [
+      "祈願履歴は自動的に更新されません。新しい記録がある場合はもう一度インポートしてください！",
+      "最近6ヶ月間より以前の祈願履歴はmiHoYoサーバーから削除されるため、paimon.moeは取得することができません。",
+      "データはご利用のブラウザに保存されるため、ブラウザのキャッシュをクリアすると削除されます！設定からGoogle Driveを用いてバックアップしておくことをおすすめします！"
+    ]
+  },
+  "calculator": {
+    "titleWeapon": "武器計算ツール",
+    "titleCharacter": "キャラクター計算ツール",
+    "titleResin": "樹脂計算ツール",
+    "titleFriendship": "好感度計算ツール",
+    "titleFate": "祈願出費計算ツール",
+    "goto": "{where} へ移動",
+    "howToUse": "使用方法",
+    "guide": {
+      "clickToMaximize": "画像をクリックで全画面表示",
+      "howToWeapon": "武器計算ツールの使用方法",
+      "howToCharacter": "キャラクター計算ツールの使用方法"
+    },
+    "weapon": {
+      "calculateAscension": "突破素材も計算に含みますか？",
+      "selectRarity": "武器のレアリティを選択",
+      "selectWeapon": "武器を選択",
+      "current": "現在の武器レベル・経験値・突破ランク",
+      "inputCurrentLevel": "現在の武器のレベルを入力...",
+      "inputCurrentExp": "現在の武器の経験値を入力...",
+      "intended": "目標武器レベル・突破ランク",
+      "inputIntendedLevel": "目標武器レベルを入力してください...",
+      "resource": "使用する武器強化素材",
+      "calculate": "計算",
+      "unknownInformation": "不明な情報があります",
+      "ascensionLevel": "目標レベル",
+      "mora": "モラ(誤差 ±40)",
+      "expWasted": "経験値オーバー",
+      "addToTodo": "Todoリストへ追加する",
+      "addedToTodo": "Todoリストへ追加済み"
+    },
+    "character": {
+      "calculateAscension": "突破素材も計算に含みますか？",
+      "selectCharacter": "キャラクター選択",
+      "current": "現在のキャラクターレベル・EXP・突破ランク",
+      "inputCurrentLevel": "現在のキャラクターレベルを入力してください...",
+      "inputCurrentExp": "現在のキャラクターEXPを入力してください...",
+      "intended": "目標キャラクターレベル・突破ランク",
+      "inputIntendedLevel": "目標キャラクターレベルを入力してください...",
+      "resource": "使用するキャラクター経験値素材",
+      "calculateTalent": "天賦素材も計算に含みますか？",
+      "inputTalentLevel": "現在の通常攻撃・元素スキル・元素爆発の天賦レベルをそれぞれ入力してください",
+      "inputTalentNotice": "命ノ星座のLv.+3効果は差し引いてください",
+      "inputTalent": [
+        "通常攻撃天賦Lv.",
+        "元素スキル天賦Lv.",
+        "元素爆発天賦Lv."
+      ],
+      "talentToLevel": "目標レベル",
+      "calculate": "計算",
+      "unknownInformation": "不明な情報があります",
+      "ascensionLevel": "突破ランク",
+      "mora": "モラ (誤差±40)",
+      "expWasted": "EXPオーバー",
+      "addToTodo": "Todoリストに追加",
+      "addedToTodo": "Todoリストへ追加済み",
+      "talent": [
+        "通常攻撃",
+        "元素スキル",
+        "元素爆発"
+      ]
+    },
+    "expTable": {
+      "level": "レベル",
+      "items": "アイテム",
+      "wasted": "EXPオーバー",
+      "mora": "モラ消費量"
+    },
+    "resinTable": {
+      "quantity": "数量",
+      "time": "待ち時間"
+    },
+    "resin": {
+      "currentResin": "現在の天然樹脂数",
+      "desiredResin": "必要な樹脂",
+      "or": "もしくは",
+      "inputCurrentResin": "現在の天然樹脂数を入力...",
+      "inputDesireResin": "目標の天然樹脂数を入力...",
+      "timeFormat": "en",
+      "calculate": "計算",
+      "currentTime": "現在の時刻",
+      "fullTime": "回復する日時",
+      "hours": "時間",
+      "minutes": "分",
+      "seconds": "秒"
+    },
+    "friendship": {
+      "currentLevel": "現在の好感度レベル",
+      "currentExp": "現在の好感度バー(ドラッグで調節できます)",
+      "randomEventFarm": "毎日何回ランダムクエストをこなしていますか？",
+      "calculate": "計算",
+      "based": "冒険ランク {ar} の場合",
+      "change": "(設定で変更できます)",
+      "result": "毎日、依頼任務を全て遂行し、180個の樹脂を使用する場合、好感度レベルが10になるまでに必要な日数",
+      "resultSerenitea": "同時に仲間を塵歌壺に配置すると(好感度経験を最大限取集した場合)",
+      "resultDay": "{result} 日"
+    },
+    "fate": {
+      "currency": "通貨を選択してください...",
+      "firstTime": "初回ボーナス",
+      "amount": "数量",
+      "genesis": "創世結晶",
+      "first": "2倍ボーナス",
+      "total": "合計",
+      "price": "価格",
+      "totalGenesis": "合計創世結晶",
+      "totalPrice": "合計価格",
+      "calculate": "{currency} {value} で入手可能な創世結晶数を計算！",
+      "calculateFate": "{value} 個の入手に必要な金額を計算！"
+    }
+  },
+  "items": {
+    "title": "アイテムリスト",
+    "subtitle": "アイテムをクリックすることでTodoリストに追加できます",
+    "searchCharacter": "キャラクターの検索",
+    "searchWeapon": "武器の検索",
+    "day": "曜日",
+    "material": "素材",
+    "characterWeapons": "キャラクター＆武器",
+    "add": {
+      "rarity": "レアリティを選択",
+      "amount": "数量",
+      "inputAmount": "数量を入力...",
+      "cancel": "キャンセル",
+      "add": "Todoへ追加"
+    }
+  },
+  "days": {
+    "Sunday": "日曜日",
+    "Monday": "月曜日",
+    "Tuesday": "火曜日",
+    "Wednesday": "水曜日",
+    "Thursday": "木曜日",
+    "Friday": "金曜日",
+    "Saturday": "土曜日"
+  },
+  "todo": {
+    "title": "Todoリスト",
+    "summary": "一覧",
+    "empty": [
+      "まだやることはないよ😀",
+      "アイテムページや計算ツールから追加してください！"
+    ],
+    "farmableToday": "本日入手可能",
+    "resin": "必要な樹脂",
+    "based": "冒険ランク：{ar} と世界ランク：{wl} の場合",
+    "change": "(設定で変更できます)",
+    "approximation": "計算結果の引用元：",
+    "delete": {
+      "title": "このTodoを削除しますか？",
+      "cancel": "キャンセル",
+      "delete": "削除する"
+    }
+  },
+  "timeline": {
+    "title": "イベントスケジュール",
+    "localTime": "現地時間を表示",
+    "starting": "開始日時",
+    "ending": "終了日時",
+    "live": "イベント開催中！",
+    "finished": "イベント終了"
+  },
+  "settings": {
+    "version": "データ Ver.",
+    "multiple": "複数のアカウントをお持ちですか？ここからアカウントを選択して祈願とTodoのデータを分けてください",
+    "selectAccount": "アカウントを選択",
+    "reset": "初期化",
+    "delete": "削除",
+    "add": "追加",
+    "server": "サーバー選択：",
+    "drive": [
+      "Paimon.moeは、Google Drive上のアプリケーションデータディレクトリーを使用して、祈願記録やTodoリストの保存と同期を行っています。",
+      "Paimon.moeは、このサイトが作成したファイルしか読み書きできません。"
+    ],
+    "driveError": "Google Drive API を読み込めません",
+    "driveSignIn": "Google Driveにサインイン",
+    "driveSignOut": "Google Driveからサインアウト",
+    "driveSignInErrorScope": "Google Driveへのサインインに失敗しました。もう一度サインインを行って権限の許可をチェックしてください！",
+    "synced": "同期完了",
+    "waiting": "待機中...",
+    "syncing": "同期中...",
+    "syncStatus": "同期ステータス:",
+    "lastSync": "最新の同期：",
+    "feedback": "もしバグや間違ったデータを見つけたり、その他のフィードバックがあれば",
+    "or": "や",
+    "thanks": "へ連絡してください😁！",
+    "modal": {
+      "notice": "全ての祈願記録やTodoは削除されます",
+      "backup": "実行する前にExcelファイルにエクスポートして、祈願記録のバックアップを取ることをおすすめします！",
+      "cancel": "キャンセル",
+      "delete": "削除する",
+      "reset": "初期化"
+    },
+    "changelog": "更新履歴",
+    "exportDescription": "Paimon.moeのデータをここでエクスポート＆インポートできます",
+    "exportButton": "エクスポート/インポート",
+    "export": "データのエクスポート",
+    "download": "ダウンロード",
+    "import": "データのインポート",
+    "selectFile": "JSON Fileを選択",
+    "exportInfo": "Paimon.moeに保存されたすべてのデータのコピーをダウンロードします",
+    "importWarning": "バックアップを忘れないでください！データはすべて置き換えられてしまいます！",
+    "importContinue": "次へ進む",
+    "importSuccess": "インポートに成功しました！5秒後に再読み込みします...",
+    "importFailed": "インポートに失敗しました！",
+    "email": "Eメールアドレス："
+  },
+  "privacypolicy": {
+    "title": "プライバシーポリシー",
+    "subtitle": "Paimon.moeが収集するものとその用途について",
+    "collect": [
+      {
+        "title": "Paimon.moeの訪問url、参照元、ブラウザ、オペレーティングシステム、端末の種類、訪問者の国",
+        "content": [
+          "Paimon.moeは",
+          "plausible.io",
+          "(プライバシーに配慮した分析) を利用して、どの機能がどれだけの人に利用されているかを把握し、どの機能を優先的に実装・改善するかということに役立てています。"
+        ]
+      },
+      {
+        "title": "ウェブサイトからのエラーメッセージと例外",
+        "content": [
+          "Paimon.moeは、Webサイトのエラーや例外を",
+          "sentry.io",
+          "に送信することで、問題を引き起こしている原因を追跡し、修正することができます。"
+        ]
+      },
+      {
+        "title": "祈願天井カウント",
+        "content": [
+          "Paimon.moeは、祈願統計の自動インポートで「全世界の祈願統計のために祈願履歴を提供する」をチェックするか、ヘルプ＆設定メニューで手動入力すると、4★や5★の天井カウント、5★祈願の詳細(時間、アイテム名、天井カウント)が保存されます。Paimon.moeはこのデータを集計し、paimon.moeユーザーの各バナーの平均天井カウントを算出するために使用します。こちらで確認できます：",
+          "全世界の祈願統計"
+        ]
+      }
+    ],
+    "subtitleNotCollect": "Paimon.moeが収集しないもの",
+    "notCollect": [
+      "Paimon.moe はパスワード、uid、ユーザー名、メールアドレス、一時キー、フィードバックURLを収集しません。このサイトはオープンソースであり、以下のサイトでソースコードの確認が可能です：",
+      "paimon-moe-api Github",
+      "または",
+      "paimon-moe Github"
+    ]
+  },
+  "sync": {
+    "message": "このブラウザのローカルデータとGoogle Driveに保存されているデータが競合しています！",
+    "googleDriveData": "Google Driveのデータ",
+    "localData": "このブラウザのデータ",
+    "older": "古い方",
+    "newer": "新しい方",
+    "useGoogleDriveData": "Google Driveのデータを使用する",
+    "useLocalData": "このブラウザのデータを使用する",
+    "download": "両方のデータをダウンロードする",
+    "lastModified": "最終更新日時",
+    "or": "または"
+  },
+  "footer": {
+    "affliate": "Paimon.moe は miHoYo とは関係ありません。",
+    "copyright": "原神、ゲームコンテンツおよび素材は miHoYo の商標および著作権です。",
+    "discord": "Discordに参加する",
+    "community": "コミュニティリンク",
+    "official": "公式リンク"
+  },
+  "donate": {
+    "message": [
+      "ありがとうございます！お役に立てれば幸いです。",
+      "このサイトは暇なときに趣味で作ったものです。 私はゲームの探索や最適化をすることが好きなので、もちろんこれからも更新のたびに機能やデータの追加をしていきます。",
+      "もし寄付をしていただけるならば、あなたの寄付は間違いなくサイトを改善に役立ち、Paimon.moeにもっと多くの機能を追加する原動力になります！ありがとうございます、そして楽しんでください！気に入って頂けたら幸いです。",
+      "プログラミングが好きな方は、こちらのページでプロジェクトに貢献することもできます："
+    ],
+    "kofi": "Ko-fiで寄付",
+    "trakteer": "Trakteerで寄付",
+    "crypto": "仮想通貨で寄付"
+  },
+  "reminder": {
+    "notSupported": "お使いのブラウザはプッシュ通知をサポートしていません。他のブラウザをお試しください！",
+    "blocked": "プッシュ通知がブロックされています。お使いのブラウザで有効にしてください。",
+    "desktop": "ブラウザが実行されていない場合、プッシュ通知を受信できません！",
+    "early": "通知の送信方法の関係で、通知が早く届く場合があります(1～10分程度)",
+    "allowNotification": "通知の表示を許可してください！",
+    "transformer": "参量物質変化器リマインダー",
+    "last": "参量物質変化器を最後に使用した日時を入力してください",
+    "lastHoyolab": "HoYoLabのログインボーナスの通知時間を入力してください",
+    "every": "毎日",
+    "countdown": "参量物質変化器のクールダウン時間を入力してください(明確ではない場合はおおよそでも構いません)",
+    "useLast": "最後に使用した日時を入力する",
+    "useCountdown": "クールダウン時間を入力する",
+    "set": "リマインダーを設定する",
+    "checking": "保存したリマインダーを確認しています...",
+    "errorSelect": "日時を選択してください！",
+    "errorSaving": "リマインダーを保存するときに問題が発生しました 🙁",
+    "current": "現在のリマインダー",
+    "hoyolab": "HoYoLABログインボーナスのリマインダー",
+    "comingsoon": "近日公開！"
+  },
+  "achievement": {
+    "title": "アチーブメント",
+    "of": "/",
+    "sort": "未達成のアチーブメントを優先的に表示",
+    "search": "アチーブメントの検索",
+    "commissions": "任務",
+    "version": "バージョン",
+    "type": "種類",
+    "searchError": "{query} に該当するアチーブメントが見つかりませんでした"
+  },
+  "furnishing": {
+    "title": "調度品",
+    "name": "名前",
+    "energy": "仙力",
+    "load": "負荷",
+    "ratio": "コスパ",
+    "using": "数量",
+    "interior": "屋内",
+    "exterior": "屋外",
+    "info": [
+      "ここでこの地域の負荷量を示しています。各家具の負荷量はここで調べることができます。",
+      "(最大値はまだ確認されていません！)"
+    ],
+    "hall": "ホール",
+    "room": "部屋 {number}",
+    "exteriorNum": "エリア {number}",
+    "corridor": "回廊",
+    "inventoryButton": "倉庫",
+    "listButton": "リスト",
+    "inventory": {
+      "title": "家具倉庫",
+      "subtitle": "壁のような幾つの特別なカテゴリは表示されない",
+      "all": "全て",
+      "openSets": "セットを見る"
+    },
+    "sets": {
+      "title": "調度品セット",
+      "subtitle": "調度品のアイコンをクリックすると詳細が表示され、キャラクターのアイコンをクリックするとマークが表示されます！上のインベントリメニューを開いて、調度品の数を入力してください。",
+      "setPlaced": "設置済みに設定",
+      "setUnplaced": "未設置に設定",
+      "inInventory": "インベントリ",
+      "available": "利用可能",
+      "used": "他のセットで使用中"
+    }
+  },
+  "weapon": {
+    "title": "武器一覧",
+    "subtitle": "ステータスは最大レベルの状態です",
+    "name": "名前",
+    "type": "種類",
+    "rarity": "レアリティ",
+    "atk": "基礎攻撃力",
+    "secondary": "サブステータス",
+    "critRate": "会心率",
+    "critDamage": "会心ダメージ",
+    "em": "元素熟知",
+    "er": "元素チャージ効率",
+    "atkPercent": "攻撃力",
+    "hpPercent": "HP",
+    "defPercent": "防御力",
+    "physicalDamage": "物理ダメージボーナス",
+    "bow": "弓",
+    "polearm": "長柄武器",
+    "sword": "片手剣",
+    "catalyst": "法器",
+    "claymore": "両手剣",
+    "ascensionMaterial": "武器突破素材",
+    "asc": "突破",
+    "lvl": "レベル",
+    "baseAtk": "基礎攻撃力",
+    "recommendedCharacter": "推奨キャラクター"
+  },
+  "artifact": {
+    "title": "聖遺物リスト",
+    "name": "名前",
+    "maxRarity": "最大★",
+    "bonus2": "2セット効果",
+    "bonus4": "4セット効果",
+    "domain": "秘境",
+    "artifact": "聖遺物",
+    "setPiece": "{piece} セット効果",
+    "recommendedCharacter": "{piece} セット効果が推奨されるキャラクター"
+  },
+  "fishing": {
+    "title": "釣りリスト",
+    "subtitle": "すべての魚を釣り上げて「釣り場を空にする」ことでリスポーンタイマーをスタートさせることができるようになりました",
+    "mondstadt": "モンド",
+    "liyue": "璃月",
+    "inazuma": "稲妻",
+    "setEmpty": "釣り場を空にする",
+    "emptyTime": "釣り場が空になった時刻：",
+    "clear": "クリア",
+    "save": "保存",
+    "cancel": "キャンセル"
+  }
+}

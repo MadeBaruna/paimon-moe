@@ -9,10 +9,11 @@
     "achievement": "Thành Tựu",
     "reminder": "Nhắc Nhở",
     "todoList": "Danh Sách Việc Cần Làm",
-    "timeline": "Mốc Thời Gian",
+    "timeline": "Lịch Sự Kiện",
     "furnishing": "Đồ Trang Trí",
     "weapons": "Vũ Khí",
     "artifacts": "Thánh Di Vật",
+    "fishing": "Câu Cá",
     "settings": "Cài Đặt",
     "donate": "Ủng hộ"
   },
@@ -26,17 +27,17 @@
       ],
       "summoned": "Đã cầu nguyện",
       "percentage": "trên toàn bộ {rarity}",
-      "avg": "Pity trung bình",
-      "subtitle": "Được tính toán từ dữ liệu của {user} người dùng của paimon.moe",
+      "avg": "Số lượt quay trung bình",
+      "subtitle": "Được tính toán từ dữ liệu của {user} người dùng paimon.moe",
       "detail": "Lượt Cầu Nguyện Toàn Cầu"
     },
     "wish": {
-      "message": "Hãy nhập lịch sử cầu nguyện của bạn để lưu trữ nó hơn 6 tháng! Paimon.moe cũng đếm pity và thống kê số lượt cầu nguyện của bạn với biểu đồ siêu đẹp 📊",
+      "message": "Hãy nhập lịch sử cầu nguyện của bạn để lưu trữ dữ liệu lâu hơn 6 tháng! Paimon.moe còn tự động đếm bảo hiểm và thống kê lượt cầu nguyện của bạn bằng những biểu đồ siêu đẹp 📊",
       "latest": "Lần Cầu Nguyện Gần Đây Nhất",
       "banner": "Banner",
       "time": "Thời Gian",
       "name": "Vật phẩm",
-      "pity": "Pity",
+      "pity": "Lượt thứ",
       "detail": "Lịch Sử Cầu Nguyện"
     },
     "reminder": {
@@ -46,7 +47,7 @@
     "event": {
       "upcoming": "Những Sự Kiện Sắp Tới",
       "current": "Những Sự Kiện Đang Diễn Ra",
-      "detail": "Timeline"
+      "detail": "Lịch Sự Kiện"
     },
     "discord": {
       "online": "Thành Viên Trực Tuyến",
@@ -109,11 +110,12 @@
     "geoDamageBonus": "Tăng ST NT Nham",
     "sortBy": "Sắp xếp theo...",
     "talentBook": "Sách Thiên Phú",
+    "bossItem": "Boss",
     "ascensionMaterial": "Nguyên Liệu Đột Phá",
     "talentStats": "Chi Tiết Thiên Phú",
     "build": "Build",
     "source": "Build Nhân Vật từ cộng đồng bới Genshin Helper Team",
-    "faq": "Cung Mệnh được tính từ Lịch Sử Cầu Nguyện của bạn. Nếu lịch sử cầu nguyện của bạn hết hạn 6 tháng hoặc bạn mua cung mệnh nhân vật từ cửa hàng hoặc sự kiện, thông tin có thể sẽ sai sót! Nhưng bạn có thể tự chỉnh sửa bằng cánh ấn vào cây bút kế bên tên nhân vật."
+    "faq": "Cung Mệnh được tính từ Lịch Sử Cầu Nguyện của bạn. Nếu lịch sử cầu nguyện của bạn hết hạn 6 tháng hoặc bạn mua cung mệnh nhân vật từ cửa hàng hoặc sự kiện, thông tin có thể sẽ sai sót! Nhưng bạn có thể tự chỉnh sửa bằng cách ấn vào cây bút kế bên tên nhân vật."
   },
   "wish": {
     "title": "Lịch Sử Cầu Nguyện",
@@ -122,12 +124,12 @@
     "helps": "Trợ giúp",
     "settings": "Cài đặt",
     "wishesWorth": "Giá trị tất cả Cầu nguyện",
-    "lifetimePulls": "Tổng Số Lần Đã Cầu Nguyện",
-    "guarantee": "Chắc chắn nhận được ở lần thứ {pity}",
+    "lifetimePulls": "Tổng Số Lần Cầu Nguyện",
+    "guarantee": "Chắc chắn nhận ở lần {pity}",
     "name": "Vật Phẩm",
     "time": "Thời Gian",
-    "pity": "Pity",
-    "welcome": "Chào mừng bạn đến với Paimon.moe Số Lần Cầu Nguyện! Chúng tôi khuyến khích bạn nhập thông tin cầu nguyện bằng Nhập Tự Động.",
+    "pity": "Bảo Hiểm",
+    "welcome": "Chào mừng đến với Lịch Sử Cầu Nguyện của Paimon.moe! Bạn nên bắt đầu bằng cách nhập thông tin vào bằng Tự Động Nhập.",
     "welcomeStart1": "Để bắt đầu, ấn",
     "welcomeStart2": "nút ở bên trên",
     "manual": "Nếu bạn muốn tự nhập dữ liệu, bạn có thể bật nó ở đây:",
@@ -135,18 +137,22 @@
     "errorBanner": "Thời gian của Banner không trùng khớp! Hãy chỉnh server ở trang cài đặt. Vẫn không hoạt động à? Hãy để lại tin nhắn trên Discord 😅",
     "globalWishTally": "Lượt Cầu Nguyện Toàn Cầu",
     "pityTooltip": [
-      "Pity {rarity} hiện tại",
-      "{count} lần cầu nguyện nữa chắc chắn nhận được {rarity}"
+      "Bảo Hiểm {rarity} hiện tại",
+      "{count} lần nữa sẽ đảm bảo nhận {rarity}"
     ],
     "import": {
       "title": "Nhập Lịch Sử Cầu Nguyện",
       "faqsButton": "CÂU HỎI THƯỜNG GẶP - NÊN ĐỌC",
+      "readFaq": "Đọc Câu Hỏi Thường Gặp",
+      "openFaq": "Mở Câu Hỏi Thường Gặp",
+      "choosePlatform": "Chọn Nền Tảng của bạn",
+      "chooseMethod": "Chọn phương thức bạn muốn làm",
       "nonew": "Không Có Lượt Cầu Nguyện Mới",
       "importNotice1": "Khi nhập, lượt cầu nguyện sẽ được thêm vào hoặc bị thay thế để phù hợp với dữ liệu đã có",
-      "importNotice2": "Nếu như không có dữ liệu được lưu trước, lượt cầu nguyện đầu tiên khi nhập dữ liệu sẽ được tính là pity 1",
+      "importNotice2": "Nếu bạn chưa lưu dữ liệu nào trước đó, Bảo Hiểm sẽ được tính từ lượt cầu nguyện đầu tiên mà bạn nhập",
       "importNotice3": "Lưu ý, nếu bạn nhập dữ liệu từ tài khoản khác, hãy chắc chắn là bạn đã chia các tài khoản khác nhau ra trong trang cài đặt, nếu không dữ liệu sẽ bị trộn với nhau!",
       "saveData": "Lưu dữ liệu cầu nguyện?",
-      "reCalculating": "Đang tính toán lại pity...",
+      "reCalculating": "Đang tính lại bảo hiểm...",
       "processing": "Đang xử lý",
       "banner": "Banner",
       "page": "Trang",
@@ -160,24 +166,32 @@
       "close": "Đóng",
       "invalidLink": "Đường liên kết không hợp lệ, vui lòng kiểm tra và thử lại",
       "errorApi": "Lỗi từ API của MiHoYo, vui lòng thử lại sau!",
+      "errorExpired": "Link đã hết hạn, hãy thử lại!",
       "timeout": "Kết nối đã hết hạn, vui lòng chờ và thử lại sau",
       "differentAccount": "Lịch sử cầu nguyện này thuộc về một tài khoản khác, hãy chuyển tài khoản ở trong phần Cài Đặt và thử lại!",
       "invalidData": "Dữ liệu trả về bất thường, vui lòng thử lại sau",
+      "noNewData": "Không phát hiện lượt cầu nguyện mới, hãy đợi khoảng 1 giờ để dữ liệu cầu nguyện được cập nhật!",
       "success": "Nhập dữ liệu thành công 😀!",
       "server": "Hãy chọn server:",
       "wishTallyCheck": "Chia sẽ thông tin cầu nguyện của bạn cho Lượt Cầu Nguyện Toàn Cầu",
-      "wishTally": "Chúng tôi đang thu thập những lượt cầu nguyện đến từ người dùng của chúng tôi! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp và tính toán pity trung bình của người dùng paimon.moe.",
+      "wishTally": "Chúng tôi đang làm thống kê về lượt cầu nguyện toàn cầu! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp và tính toán pity trung bình của người dùng paimon.moe.",
       "wishTallyCollected": [
         "Những thông tin sẽ được thu thập:",
         "và",
-        "pity từ lịch sử cầu nguyện của bạn"
+        "lượt bảo hiểm từ lịch sử cầu nguyện của bạn"
+      ],
+      "forceUpdateCheck": "",
+      "header": [
+        "",
+        "",
+        ""
       ],
       "faqs": {
         "title": "Nhập Lịch Sử Cầu Nguyện FAQ",
         "q1": "Nó hoạt động như thế nào?",
         "a1": "Lịch sử cầu nguyện của Genshin Impact đơn giản là một trang web, bạn có thể truy cập nó bằng cách mở URL của trang web. Một key tạm thời sẽ được tạo ra khi bạn mở Lịch sử cầu nguyện hoặc trang phản hồi, và chúng tôi sẽ tự động dùng MiHoYo API để lấy lịch sử cầu nguyện của bạn.",
         "q2": "Nó có an toàn không? Tôi có thể bị khóa tài khoản không?",
-        "a2": "Paimon.moe làm giống như cách ứng dụng Genshin Impact yêu cầu dữ liệu để lấy lịch sử cầu nguyện, Paimon.moe không thể chỉnh sửa dữ liệu và những gì đã lưu trữ trong game, và có thể nói là nó vô hại. Tuy nhiên, bạn nên lường trước và sẵn sàng chấp nhận rủi ro nếu có (Chúng mình cũng vẫn dùng trên tài khoản chính). Bạn vẫn có thể chọn nhập liệu thủ công 😀.",
+        "a2": "Paimon.moe sử dụng phương thức giống với cách mà Genshin Impact yêu cầu dữ liệu để lấy lịch sử cầu nguyện, và paimon.moe không thể chỉnh sửa dữ liệu và những gì đã lưu trữ trong game, và có thể nói là vô hại. Tuy nhiên, bạn nên lường trước và sẵn sàng chấp nhận rủi ro nếu có (Chúng mình cũng vẫn dùng trên tài khoản chính). Bạn vẫn có thể chọn nhập liệu thủ công 😀.",
         "q3": "Thế paimon.moe có thể hack vào khoản của tôi không?",
         "a3": [
           "Paimon.moe chưa bao giờ lưu thông tin cá nhân như tài khoản của bạn (kể cả UID hoặc biệt danh), nên đáp án là không. Dự án này là một nguồn mở",
@@ -191,7 +205,7 @@
         ],
         "q5": "Thế paimon.moe lưu trữ key tạm thời hay lịch sử cầu nguyện của tôi?",
         "a5": [
-          "Paimon.moe sẽ không bao giờ lưu trữ keys, và dùng HTTPS để chuyển URL của bạn đến CORS proxy để làm CORS hoạt động. Paimon.moe sẽ lưu pity của vật phẩm 4* và 5*, và thông tin cầu nguyện vật phẩm 5* nếu bạn gửi lượt cầu nguyện của bạn cho lượt cầu nguyện toàn cầu (không có thông tin cá nhân nào được lưu! Hãy kiểm tra",
+          "Paimon.moe sẽ không bao giờ lưu trữ khóa của bạn, và sử dụng HTTPS để chuyển URL của bạn đến một proxy CORS để cho CORS hoạt động. Paimon.moe sẽ lưu bảo hiểm của vật phẩm 4* và 5*, và thông tin cầu nguyện vật phẩm 5* nếu bạn gửi lượt cầu nguyện của bạn cho lượt cầu nguyện toàn cầu (không lưu lại bất kỳ thông tin cá nhân nào cả! hãy kiểm tra",
           "Chính sách bảo mật",
           "để có thêm thông tin). Bạn có thể bỏ chọn gửi thông tin đến lượt cầu nguyện toàn cầu để vô hiệu hóa gửi lượt cầu nguyện. Sau đó tất cả lịch sử cầu nguyện của bạn sẽ lưu trên thiết bị mà bạn đang dùng (hoặc Google Drive của bạn nếu bạn mở chức năng đồng bộ).",
           "Nếu bạn không muốn chia sẻ link của mình, bạn có thể dùng mã lệnh dưới đây để nhập trực tiếp từ dữ liệu trên PC (chọn PC Local) "
@@ -201,6 +215,10 @@
         "q7": "Paimon.moe không hiển thị tất cả lịch sử cầu nguyện của tôi!?",
         "a7": "Lịch sử cầu nguyện trên 6 tháng sẽ biến mất hoàn toàn từ server của Mihoyo, nên nếu như bạn không sao lưu dữ liệu trước 6 tháng, nó đã biến mất hoàn toàn"
       },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
+      },
       "guide": {
         "video": "Video hướng dẫn",
         "pc": [
@@ -209,6 +227,29 @@
           "Đợi nó load và sẽ có một trang web được mở từ trình duyệt bạn đang dùng",
           "Sao chép & dán đường liên kết vào hộp văn bản bên dưới",
           "Hãy dán đường liên kết vào đây... https://webstatic..."
+        ],
+        "pc2": [
+          "Mở Genshin Impact trên PC này (nếu bạn dùng nhiều tài khoản thì hãy khởi động lại game)",
+          "Sau đó mở Lịch Sử Cầu Nguyện trong game và đợi tải trang",
+          "Nhấn START trên bàn phím, sau đó tìm kiếm \"Powershell\"",
+          "Chọn Windows Powershell, sau đó sao chép đoạn mã dưới đây vào Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
+          "Bạn có thể xem qua đoạn mã này",
+          "tại đây",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "Nhấn ENTER, sau đó máy sẽ tự động sao chép một đường link cho bạn",
+          "Dán văn bản đó vào hộp văn bản dưới đây",
+          "Dán link vào đây... https://webstatic..."
+        ],
+        "pclog": [
+          "Mở Genshin Impact trên PC này (nếu bạn dùng nhiều tài khoản thì hãy khởi động lại game)",
+          "Sau đó mở Lịch Sử Cầu Nguyện trong game và đợi tải trang",
+          "Nhấn WINDOWS+R trên bàn phím của bạn, và nhập như sau:",
+          "Một cửa sổ notepad sẽ mở, sau đó nhấn CTRL+F và nhập như sau:",
+          "Sao chép toàn bộ link từ https://webstatic cho đến chỗ #/log, link nhìn giống như này: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "Dán văn bản vào hộp văn bản phía dưới",
+          "Dán link vào đây... https://webstatic..."
         ],
         "android": [
           "Mở Cầu Nguyện (trong game)",
@@ -232,13 +273,32 @@
           "Sẽ có một trình duyệt được mở. Sao chép và dán đường liên kết vào bên dưới",
           "Hãy dán đường liên kết vào đây... https://genshin.mihoyo..."
         ],
+        "ios2": [
+          "Tải Stream trên App Store",
+          "tại đây",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "Mở ứng dụng lên, và cho phép VPN trong System Preferences (Cài Đặt > Cài Đặt Chung > VPN)",
+          "Cài CA (nhấn Sniff Now trên ứng dụng Stream > Install CA > một cửa sổ pop-up sẽ hiện lên và chọn cho phép > giờ CA đã được tải",
+          "Vào cài đặt > Cài Đặt Chung > VPN & Quản Lý Thiết Bị > Ấn vào CA được tạo bởi Stream (Stream Generated CA) và cài đặt",
+          "Mở Genshin Impact sau đó mở giao diện Cầu Nguyện, giữ nguyên tại trang đó",
+          "Quay về ứng dụng Stream > Chọn I've trusted > Ấn nút Sniff Now",
+          "Trở lại Genshin Impact và mở trang lịch sử cầu nguyện",
+          "Đợi tải trang",
+          "Trở về ứng dụng Stream > Stop Sniffing",
+          "Chọn Sniff History > Chọn một yêu cầu có kết thúc là .json (link bắt đầu bằng https://hk4e-api-os.mihoyo.com/)",
+          "Chọn mục Request, sau đó copy link đó và dán xuống dưới đây",
+          "Dán link vào đây... https://hk4e-api-os.mihoyo.com...",
+          "",
+          ""
+        ],
         "ps": [
           "Bạn chỉ có thể sử dụng paimon.moe để nhập dữ liệu khi bạn có thư trong game cùng với mã QR để mở một sự kiện trên web",
           "Mở Genshin Impact trên PlayStation của bạn",
           "Mở mail sự kiện có mã QR",
           "Quét mã QR bằng điện thoại của bạn",
           "Sao chép đường link, và dán vào bên dưới",
-          "Dán đường link ở đây..."
+          "Dán đường link ở đây...",
+          "Dán link vào đây..."
         ],
         "pclocal": [
           "Nếu bạn cảm thấy không thoải mái khi nhập link, bạn có thể dùng tính năng này để lấy lịch sử cầu nguyện trực tiếp từ máy tính. Dòng lệnh dưới đây sẽ truy cập file log trên máy bạn để lấy link lịch sử cầu nguyện.",
@@ -260,6 +320,8 @@
       "subtitle": "Hãy chọn nguồn excel của bạn đến từ:",
       "default": "Paimon.moe Export",
       "takagg": "TakaGG Gacha Export",
+      "genshinwishes": "Xuất từ GenshinWishes",
+      "wishtally": "WishTally",
       "notice": [
         "Tính năng này vẫn đang trong giai đoạn BETA, hãy sao lưu một bản sao trước, bằng cách vào phần Cài đặt sau đó ấn Xuất ra Excel!",
         "Cầu nguyện có cùng mốc thời gian và tên vật phẩm sẽ KHÔNG bị ảnh hưởng (nên những cầu nguyện hiện có sẽ không bị thay thế)",
@@ -268,7 +330,9 @@
       ],
       "selectFile": {
         "default": "Kéo & thả Paimon.moe excel file ở đây, hoặc ấn vào đây để chọn",
-        "takagg": "Kéo & thả TakaGG gacha export excel file ở đây, hoặc ấn vào đây để chọn"
+        "takagg": "Kéo & thả TakaGG gacha export excel file ở đây, hoặc ấn vào đây để chọn",
+        "genshinwishes": "Kéo & thả tệp csv GenshinWishes vào đây, hoặc nhấn vào đây để chọn",
+        "wishtally": "Kéo & thả tệp excel Wish Tally vào đây, hoặc nhấn vào đây để chọn"
       },
       "processing": "Đang xử lý...",
       "addedOn": "Chèn vào ở:",
@@ -292,11 +356,11 @@
       "import": "Nhập từ Excel",
       "exportFinish": "Xuất hoàn tất, vui lòng đợi trình duyệt của bạn tải xuống file!",
       "wishTallyTitle": "Gửi Thông Tin Cầu Nguyện",
-      "wishTally": "Chúng tôi đang thu thập những lượt cầu nguyện đến từ người dùng của chúng tôi! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp và tính toán pity trung bình của người dùng paimon.moe.",
+      "wishTally": "Chúng tôi đang thống kê lượt cầu nguyện toàn cầu! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp lại để tính lượt cầu nguyện trung bình của người dùng paimon.moe.",
       "wishTallyCollected": [
         "Những thông tin sẽ được thu thập:",
         "và",
-        "pity từ lịch sử cầu nguyện của bạn"
+        "lượt bảo hiểm từ lịch sử cầu nguyện của bạn"
       ],
       "wishTallySubmit": "Gửi Thông Tin Cầu Nguyện",
       "wishTallyThankyou": "Cảm ơn sự đóng góp của bạn!",
@@ -311,15 +375,15 @@
         "p1": "Sẽ tự động thêm vào tổng số cầu nguyện, 5★, và 4★ pity",
         "p2": [
           "Khi",
-          "pity đến 10, nó sẽ tự động reset về 0"
+          "bảo hiểm đạt tới 10, nó sẽ tự động đặt lại về 0"
         ],
         "p3": [
           "Khi",
-          "pity đến 90, nó sẽ tự động reset về 0"
+          "bảo hiểm đạt tới 90, nó sẽ tự động đặt lại về 0"
         ],
         "p4": [
           "Sau 10x Cầu Nguyện, ấn",
-          "hãy nhớ rằng đếm pity có thể sẽ không chính xác, vì không có cách nào để biết khi nào vật phẩm sẽ xuất hiện (có thể bạn sẽ nhận được nó ở lượt đầu tiên hoặc có thể ở lượt thứ 10). Để chắc chắn đếm pity chính xác, bạn phải kiểm tra lịch sử và thêm từng cái một như lúc bạn cầu nguyện x1."
+          "hãy nhớ rằng bộ đếm bảo hiểm có thể sẽ không chính xác, vì không có cách nào để biết khi nào vật phẩm sẽ xuất hiện (có thể bạn sẽ nhận được nó ở lượt đầu tiên hoặc có thể ở lượt thứ 10). Để đảm bảo bộ đếm vẫn chạy chính xác, bạn phải kiểm tra lịch sử và thêm từng cái một như lúc bạn cầu nguyện x1."
         ],
         "p5": [
           "Bạn cũng có thể ấn",
@@ -342,7 +406,7 @@
       "weapon": "Vũ Khí",
       "character": "Nhân vật",
       "time": "Thời Gian",
-      "pity": "Pity",
+      "pity": "BH",
       "name": "Vật phẩm",
       "type": "Loại",
       "banner": "Banner",
@@ -350,14 +414,14 @@
       "totalThisBanner": "Tổng số lần cầu nguyện của banner",
       "worth": "Giá trí",
       "loading": "Loading... (Nếu bị kẹt, hãy đổi server ở cài đặt)",
-      "guaranteed": "5★ chắc chắn sẽ nhận được nhân vật hoặc vũ khí được rate-up",
+      "guaranteed": "5★ tiếp theo chắc chắn sẽ là nhân vật hoặc vũ khí được rate-up",
       "unknown_3_star": "Không rõ"
     },
     "tally": {
-      "title": "Lượt Cầu Nguyện",
-      "subtitle": "Pity trung bình toàn cầu từ người dùng paimon.moe",
+      "title": "Thống Kê Cầu Nguyện",
+      "subtitle": "Lượt bảo hiểm tổng thể trung bình từ người dùng paimon.moe",
       "update": "Cập nhật",
-      "summoned": "Đã cầu nguyện",
+      "summoned": "đã về nhà",
       "wonFiftyFifty": "thắng 50:50",
       "fromFiveStar": "từ tất cả 5★",
       "fromFourStar": "từ tất cả 4★",
@@ -369,9 +433,9 @@
       "worth": "Giá trí",
       "weapon": "Vũ Khí",
       "character": "Nhân Vật",
-      "error": "Dữ liệu chưa tồn tại 😞",
-      "pity": "Pity",
-      "median": "Trung vị 5★",
+      "error": "Dữ liệu chưa có sẵn 😞",
+      "pity": "BH",
+      "median": "T.Bình ra 5★ ở lượt",
       "user": "Tổng số người dùng",
       "detail": "Chi tiết"
     },
@@ -457,7 +521,7 @@
       "currentResin": "Số nhựa hiện tại",
       "desiredResin": "Số nhựa mong muốn",
       "or": "hoặc",
-      "inputCurrentResin": "Nhập nhựa hiện tại...",
+      "inputCurrentResin": "Nhập số nhựa hiện tại...",
       "inputDesireResin": "Nhập số nhựa bạn muốn...",
       "timeFormat": "vi",
       "calculate": "Tính toán",
@@ -486,7 +550,7 @@
       "first": "Bonus2x",
       "total": "Tổng",
       "price": "Giá",
-      "totalGenesis": "Tổng Đá Sáng Thể",
+      "totalGenesis": "Tổng Đá Sáng Thế",
       "totalPrice": "Tổng giá",
       "calculate": "Tính bao nhiêu Đá Sáng Thể bạn có thể nhận với {currency}{value}",
       "calculateFate": "Tính bao nhiêu tiền bạn cần cho {value}"
@@ -525,7 +589,7 @@
       "Thêm việc cần làm vào từ trang Nguyên Liệu hoặc từ Công Cụ Tính!"
     ],
     "farmableToday": "Nguyên Liệu của Hôm Nay",
-    "resin": "Nhựa cần",
+    "resin": "nhựa cần tiêu hao",
     "based": "Dựa theo HMH:{ar} và Cấp TG:{wl}",
     "change": "(thay đổi trong cài đặt)",
     "approximation": "Tỷ lệ rơi được ước lượng bởi",
@@ -536,11 +600,11 @@
     }
   },
   "timeline": {
-    "title": "Timeline",
+    "title": "Lịch Sự Kiện",
     "localTime": "Hiển thị thời gian địa phương",
     "starting": "Bắt đầu trong",
     "ending": "Kết thúc sau",
-    "live": "Đang trực tiếp!",
+    "live": "Đang diễn ra!",
     "finished": "Đã hoàn thành"
   },
   "settings": {
@@ -555,13 +619,14 @@
       "Paimon.moe dùng Thư mục Dữ liệu Ứng dụng ở Google Drive của bạn để lưu và đồng bộ Lịch sử cầu nguyện và Danh Sách việc cần làm của bạn.",
       "Paimon.moe chỉ có thể đọc và viết những files mà trang web này đã tạo."
     ],
-    "driveError": "Google Drive API không thể tải được",
+    "driveError": "Không thể tải API của Google Drive",
     "driveSignIn": "Đăng nhập vào Google Drive",
     "driveSignOut": "Đăng xuất khỏi Google Drive",
     "driveSignInErrorScope": "Đăng Nhập Drive thất bại! Vui lòng đăng nhập lại và kiểm tra những quyền cần thiết!",
     "synced": "Đã đồng bộ",
     "waiting": "Đang chờ...",
     "syncing": "Đang đồng bộ...",
+    "syncStatus": "Trạng Thái Đồng Bộ:",
     "lastSync": "Lần đồng bộ gần nhất:",
     "feedback": "Nếu bạn tìm thấy bất kì lỗi, dữ liệu sai, hoặc có phản hồi nào khác, vui lòng để lại lời nhắn ở",
     "or": "hoặc",
@@ -572,7 +637,20 @@
       "cancel": "Hủy",
       "delete": "Xóa",
       "reset": "Thiết lập lại"
-    }
+    },
+    "changelog": "Nhật Ký Chỉnh Sửa",
+    "exportDescription": "Bạn có thể xuất & nhập dữ liệu trên Paimon.moe của bạn ở đây",
+    "exportButton": "Xuất & Nhập Dữ Liệu",
+    "export": "Xuất Dữ Liệu",
+    "download": "Tải Dữ Liệu về",
+    "import": "Nhập Dữ Liệu",
+    "selectFile": "Chọn tệp JSON",
+    "exportInfo": "Tải một bản sao của toàn bộ dữ liệu đã lưu của bạn trên Paimon.moe",
+    "importWarning": "Hãy nhớ sao lưu dữ liệu của bạn bằng cách xuất ra trước! Toàn bộ dữ liệu sẽ bị thay thế!",
+    "importContinue": "Tiếp Tục",
+    "importSuccess": "Nhập dữ liệu thành công! Sẽ tải lại trang sau 5 giây...",
+    "importFailed": "Nhập dữ liệu thất bại!",
+    "email": "Email:"
   },
   "privacypolicy": {
     "title": "Chính sách bảo mật",
@@ -595,9 +673,9 @@
         ]
       },
       {
-        "title": "Pity Cầu Nguyện",
+        "title": "Bảo Hiểm Cầu Nguyện",
         "content": [
-          "Paimon.moe sẽ lưu số pity 4*, số pity 5*, và thông tin cầu nguyện 5* (thời gian cầu nguyện, tên vật phẩm, pity) nếu bạn đồng ý 'Chia sẽ thông tin cầu nguyện của bạn cho Lượt Cầu Nguyện Toàn Cầu' ở Tự Động Nhập Cầu Nguyện hoặc Nhập Cầu Nguyện Thủ Công ở Trợ Giúp & Cài Đặt. Paimon.moe sẽ tổng hợp dữ liệu và dùng để thống kê pity trung bình của mỗi banner của người dừng paimon.moe. Bạn có thể kiểm tra ở đây",
+          "Paimon.moe sẽ lưu số bảo hiểm 4*, số bảo hiểm 5*, và thông tin cầu nguyện 5* (thời gian cầu nguyện, tên vật phẩm, lượt nhận) nếu bạn đồng ý 'Chia sẽ thông tin cầu nguyện của bạn cho Lượt Cầu Nguyện Toàn Cầu' ở Tự Động Nhập Cầu Nguyện hoặc Nhập Cầu Nguyện Thủ Công ở Trợ Giúp & Cài Đặt. Paimon.moe sẽ tổng hợp dữ liệu và dùng để thống kê bảo hiểm trung bình của mỗi banner của người dùng paimon.moe. Bạn có thể kiểm tra ở đây",
           "lượt Cầu Nguyện"
         ]
       }
@@ -633,7 +711,7 @@
     "message": [
       "Cảm ơn bạn! Mong bản cảm thấy paimon.moe có ích.",
       "Tôi tạo ra trang web vì niểm vui vào những lúc tôi rãnh. Đương nhiên tôi sẽ thêm nhiều tính năng và cập nhật dữ liệu mỗi update, vì tôi thích khám phá Genshin Impact.",
-      "Nếu bạn muốn donate, thì số tiền đó chắc chắn sẽ giúp để cải thiện trang web và là nguồn động lực của tôi để thêm nhiều thứ cho Paimon.moe! Cảm ơn bạn rất nhiều, hy vọng bạn sẽ thiết paimon.moe của tôi!",
+      "Nếu bạn muốn donate, thì số tiền đó chắc chắn sẽ giúp để cải thiện trang web và là nguồn động lực của tôi để thêm nhiều tính năng mới cho paimon.moe! Cảm ơn bạn rất nhiều, chúc bạn có một ngày vui vẻ và mong bạn thích trang web này!",
       "Nếu như bạn thích coding, bạn có thể đống góp dự án tại"
     ],
     "kofi": "Hỗ trợ tôi trên Ko-fi",
@@ -642,10 +720,10 @@
   },
   "reminder": {
     "notSupported": "Trình duyệt của bạn không hỗ trợ thông báo, hãy thử trình duyệt khác!",
-    "blocked": "Thông báo đã bị chặn, tính năng thông báo của nhắc nhở sẽ không hoạt động! Vui lồng bật thông báo ở trình duyệt của bạn.",
+    "blocked": "Thông báo đã bị chặn, tính năng thông báo của nhắc nhở sẽ không hoạt động! Vui lòng bật thông báo trên trình duyệt của bạn.",
     "desktop": "Trình duyệt máy tính không thể nhận thông báo nếu như trình duyệt không được bật!",
     "early": "Thông báo có thể sẽ báo sớm hơn (tầm 1-10 phút) vì do cách chúng tôi gửi thông báo nó thế",
-    "allowNotification": "Vui lòng đồng ý thông báo khi yêu cầu hiện lên!",
+    "allowNotification": "Vui lòng cho phép thông báo khi cửa sổ yêu cầu hiện lên!",
     "transformer": "Nhắc nhở cho Máy Biến Đổi Tham Số",
     "last": "Nhập thời gian lần cuối bạn sử dụng Máy Biến Đổi Tham Số",
     "lastHoyolab": "Nhập thời gian bạn muốn được nhắc cho đăng nhập hằng ngày của Hoyolab",
@@ -663,13 +741,13 @@
   },
   "achievement": {
     "title": "Thành Tựu",
-    "of": "của",
+    "of": "trên",
     "sort": "Hiện thị thành tựu chưa có trước",
     "search": "Tìm thành tựu",
     "commissions": "ủy thác",
     "version": "Phiên bản",
     "type": "Loại",
-    "searchError": "Không thể tìm thành tựu: {query}"
+    "searchError": "Không tìm thấy thành tựu: {query}"
   },
   "furnishing": {
     "title": "Đồ Trang Trí",
@@ -743,5 +821,17 @@
     "artifact": "Thánh Di Vật",
     "setPiece": "Hiệu quả bộ {piece} món",
     "recommendedCharacter": "Những nhân vật dưới đây nên dùng bộ {piece} món"
+  },
+  "fishing": {
+    "title": "Sách Câu Cá",
+    "subtitle": "Đánh dấu điểm câu cá là đã hết cá khi bạn đã câu hết toàn bộ cá ở đó để bắt đầu tính giờ khi nào cá sẽ hồi sinh lại",
+    "mondstadt": "Mondstadt",
+    "liyue": "Liyue",
+    "inazuma": "Inazuma",
+    "setEmpty": "Đã hết cá",
+    "emptyTime": "Thời gian vị trí này hết cá:",
+    "clear": "Xóa",
+    "save": "Lưu",
+    "cancel": "Hủy"
   }
 }

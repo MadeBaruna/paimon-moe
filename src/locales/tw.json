@@ -13,6 +13,7 @@
     "furnishing": "傢俱",
     "weapons": "武器",
     "artifacts": "聖遺物",
+    "fishing": "釣魚",
     "settings": "設定",
     "donate": "贊助"
   },
@@ -109,6 +110,7 @@
     "geoDamageBonus": "岩元素傷害加成",
     "sortBy": "排序方式...",
     "talentBook": "天賦書",
+    "bossItem": "首領",
     "ascensionMaterial": "突破材料",
     "talentStats": "天賦屬性",
     "build": "配裝",
@@ -141,6 +143,10 @@
     "import": {
       "title": "匯入祈願歷史記錄",
       "faqsButton": "常見問題 - 先讀這個",
+      "readFaq": "閱讀 FAQ",
+      "openFaq": "開啟 FAQ",
+      "choosePlatform": "選擇您的平台",
+      "chooseMethod": "選擇輸入的方式",
       "nonew": "沒有新的記錄",
       "importNotice1": "匯入的祈願記錄會增加或覆蓋到目前資料中",
       "importNotice2": "如果你先前沒有任何記錄, 你的保底進度將從頭開始計算",
@@ -160,9 +166,11 @@
       "close": "關閉",
       "invalidLink": "連結錯誤, 請重新檢查",
       "errorApi": "MiHoYo API 返回錯誤, 請稍後再試!",
+      "errorExpired": "連結已過期，請重試",
       "timeout": "連接超時, 請等一段時間再嘗試",
       "differentAccount": "這個祈願歷史紀錄是另一個帳號的，請先在設定選單中上分開您的帳號！",
       "invalidData": "返回的資料錯誤, 請稍後再試",
+      "noNewData": "沒有找到新的紀錄，請等候祈願資料更新，時間誤差約一小時",
       "success": "匯入成功 😀!",
       "server": "選擇你的伺服器:",
       "wishTallyCheck": "將你的記錄提交到全球祈願統計資料中",
@@ -171,6 +179,12 @@
         "會被收集的資料:",
         "和",
         "你的抽卡歷史記錄"
+      ],
+      "forceUpdateCheck": "",
+      "header": [
+        "",
+        "",
+        ""
       ],
       "faqs": {
         "title": "匯入祈願記錄常見問題",
@@ -201,6 +215,10 @@
         "q7": "它並沒有讀取到我的全部抽卡記錄!?",
         "a7": "超過6個月的祈願記錄會在伺服器中過期, 如果你以前沒備份過, 很遺憾那就沒了."
       },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
+      },
       "guide": {
         "video": "影片教學",
         "pc": [
@@ -209,6 +227,29 @@
           "等待載入出一個瀏覽器頁面",
           "複製貼上連結到下面的輸入欄",
           "連結貼上到這裡 https://webstatic..."
+        ],
+        "pc2": [
+          "在此電腦開啟原神(如果你使用多組帳號，請重新啟動遊戲)",
+          "接著打開祈願紀錄並等待讀取",
+          "在鍵盤點選\"開始\"鍵，並搜尋 Powershell",
+          "點選 Windows Powershell ，接著複製及貼上下列程式碼到 Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
+          "您可以在右側連結檢視程式碼",
+          "這裡",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "按Enter鍵，接著連結會自動複製到剪貼簿",
+          "在下面的文字框貼上",
+          "在這裡貼上連結... https://webstatic..."
+        ],
+        "pclog": [
+          "在此電腦開啟原神(如果你使用多組帳號，請重新啟動遊戲)",
+          "接著打開祈願紀錄並等待讀取",
+          "在鍵盤上點選 開始鍵+R ，並輸入:",
+          "將會開啟一個記事本，在鍵盤點選 CTRL+F鍵，接著輸入",
+          "從 https://webstatic until #/log the url looks like this: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log 複製完整連結",
+          "在下面的文字框貼上",
+          "在這裡貼上連結... https://webstatic..."
         ],
         "android": [
           "打開祈願界面 (遊戲內)",
@@ -232,13 +273,32 @@
           "一個網頁會被打開. 複製連結並貼上到這裡",
           "連結貼上到這裡... https://genshin.mihoyo..."
         ],
+        "ios2": [
+          "在App Store 下載 Stream",
+          "這裡",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "開啟app，接著在系統設定 (設定 > 一般 > VPN與裝置管理) 中同意 VPN",
+          "安裝 CA (在Stream App點選 開始抓包 > 將會出現彈跳視窗並選擇同意 > 安裝 CA > CA 就下載好了",
+          "前往 設定 > 一般 > VPN與裝置管理 > 點選 Stream Generated CA and install",
+          "開啟原神，接著打開祈願畫面，並在這個畫面等待",
+          "回到 Stream App > 選擇 信任 > 按 開始抓包 按鈕",
+          "回到原神，接著開啟祈願歷史紀錄",
+          "等候頁面載入",
+          "回到  Stream App > 停止抓包",
+          "按 抓包歷史 > 選擇一個以.json結尾的歷史紀錄(該連結前面會像是 https://hk4e-api-os.mihoyo.com/)",
+          "點選 \"請求\" 分頁, 接著複製連結並貼到這立",
+          "在這裡貼上連結... https://hk4e-api-os.mihoyo.com...",
+          "",
+          ""
+        ],
         "ps": [
           "只有當你擁有帶網頁活動的 QR Code 的遊戲信箱, 你才能獲得網頁連結, 使用這個匯入功能",
           "在你的 PlayStation 裡打開原神",
           "打開你的信箱 QR Code ",
           "用手機掃描 QR Code 得到連結",
           "複製連結並貼上到這裡",
-          "連結貼上到這裡..."
+          "連結貼上到這裡...",
+          "在這裡貼上連結..."
         ],
         "pclocal": [
           "如果你不想提供你的url，你可以使用這個選項在你的電腦上本機處理祈願歷史記錄。此腳本將讀取您電腦上的日誌文件以獲取祈願url。",
@@ -260,6 +320,8 @@
       "subtitle": "選擇您的 excel 來源：",
       "default": "Paimon.moe 匯出",
       "takagg": "TakaGG Gacha 匯出",
+      "genshinwishes": "匯出原神祈願紀錄",
+      "wishtally": "祈願統計",
       "notice": [
         "此功能仍在測試中，請先前往設定中匯出到Excel進行備份！",
         "相同時間戳和獎賞名稱的祈願不會變更 (因此不會覆蓋現有的祈願紀錄)",
@@ -268,7 +330,9 @@
       ],
       "selectFile": {
         "default": "把 Paimon.moe 匯出的 excel 檔案拖放到此處，或點擊此處選擇",
-        "takagg": "把 TakaGG gacha 匯出的 excel 檔案拖放到此處，或點擊此處選擇"
+        "takagg": "把 TakaGG gacha 匯出的 excel 檔案拖放到此處，或點擊此處選擇",
+        "genshinwishes": "拖曳 原神 csv 檔案到這裡，或點選以開啟檔案選擇工具",
+        "wishtally": "拖曳 祈願統計 excel 檔案到這裡，或點選以開啟檔案選擇工具"
       },
       "processing": "處理中...",
       "addedOn": "插入到：",
@@ -562,6 +626,7 @@
     "synced": "已同步",
     "waiting": "等待中...",
     "syncing": "同步中...",
+    "syncStatus": "同步狀態:",
     "lastSync": "上次同步:",
     "feedback": "如果你發現一些BUG, 資料錯誤, 或者其他意見回饋, 請留言到",
     "or": "或",
@@ -572,7 +637,20 @@
       "cancel": "取消",
       "delete": "刪除",
       "reset": "重設"
-    }
+    },
+    "changelog": "更新紀錄",
+    "exportDescription": "您可以在這裡匯出及匯入你的 Paimon.moe 資料",
+    "exportButton": "匯出及匯入資料",
+    "export": "匯出資料",
+    "download": "下載資料",
+    "import": "匯入資料",
+    "selectFile": "選擇 JSON檔案",
+    "exportInfo": "下載你所有的Paimon.moe 資料備份",
+    "importWarning": "記得先匯出備份您的資料! 所有資料將被覆蓋!",
+    "importContinue": "繼續",
+    "importSuccess": "匯入成功，五秒後重新載入",
+    "importFailed": "匯入失敗!",
+    "email": "信箱:"
   },
   "privacypolicy": {
     "title": "隱私政策",
@@ -743,5 +821,17 @@
     "artifact": "聖遺物",
     "setPiece": "{piece} 件效果",
     "recommendedCharacter": "{piece} 件套裝推薦角色"
+  },
+  "fishing": {
+    "title": "釣點冊",
+    "subtitle": "當您已經釣完所有魚以啟動重生計時的時候，將釣魚點標記為空",
+    "mondstadt": "蒙德城",
+    "liyue": "璃月",
+    "inazuma": "稻妻",
+    "setEmpty": "標記為空",
+    "emptyTime": "釣點為空時間:",
+    "clear": "清除",
+    "save": "儲存",
+    "cancel": "取消"
   }
 }

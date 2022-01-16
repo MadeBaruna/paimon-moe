@@ -21,6 +21,7 @@
     { id: 'en', label: 'English' },
     { id: 'fr', label: 'Français' },
     { id: 'de', label: 'Deutsch' },
+    { id: 'ja', label: '日本語' },
     { id: 'ko', label: '한국어' },
     { id: 'th', label: 'ภาษาไทย' },
     { id: 'vi', label: 'Tiếng Việt' },

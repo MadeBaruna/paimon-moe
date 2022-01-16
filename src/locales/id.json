@@ -13,6 +13,7 @@
     "furnishing": "Furnitur",
     "weapons": "Senjata",
     "artifacts": "Artifak",
+    "fishing": "Memancing",
     "settings": "Pengaturan",
     "donate": "Donasi"
   },
@@ -109,6 +110,7 @@
     "geoDamageBonus": "Geo DMG Bonus",
     "sortBy": "Urutkan...",
     "talentBook": "Buku Talent",
+    "bossItem": "Boss",
     "ascensionMaterial": "Material Ascension",
     "talentStats": "Stat Talent",
     "build": "Build",
@@ -141,6 +143,10 @@
     "import": {
       "title": "Import Riwayat Wish",
       "faqsButton": "FAQS - BACA DULU",
+      "readFaq": "Baca FAQ",
+      "openFaq": "Buka FAQ",
+      "choosePlatform": "Pilih jenis perangkat Anda",
+      "chooseMethod": "Pilih metode yang diinginkan",
       "nonew": "Tdk ada wish baru",
       "importNotice1": "Wish yang diimport akan ditambah atau dihapus sesuai dengan data yang sudah pernah diimport",
       "importNotice2": "Jika kamu tidak mempunyai data yang tersimpan sebelumnya, wish pertama akan dihitung sebagai pity 1.",
@@ -160,9 +166,11 @@
       "close": "Tutup",
       "invalidLink": "Link invalid, silahkan dicek kembali",
       "errorApi": "Error code dikembalikan dari API MiHoYo, coba lagi nanti!",
+      "errorExpired": "Link telah kadaluwarsa, silakan coba lagi!",
       "timeout": "Connection timeout, tunggu sebentar dan coba lagi nanti",
       "differentAccount": "Wish history ini adalah untuk akun lain, pisahkan dulu akun mu di menu Pengaturan!",
       "invalidData": "Invalid data dikembalikan dari API, coba lagi nanti",
+      "noNewData": "Tidak ada wish baru, silahkan tunggu sekitar 1 jam sampai data wish nya telah terupdate!",
       "success": "Import berhasil 😀!",
       "server": "Pilih server mu:",
       "wishTallyCheck": "Submit pity untuk perhitungan pity global",
@@ -171,6 +179,12 @@
         "Yang dikumpulkan:",
         "dan",
         "pity dari riwayat wish mu"
+      ],
+      "forceUpdateCheck": "Paksa update riwayat wish (nyalakan jika riwayat wish kamu tidak mau terupdate)",
+      "header": [
+        "Import dan backup riwayat history Genshin Impact mu dan simpan lebih dari 6 bulan. Juga secara otomatis menghitung pity mu dan statistik dari riwayat wish mu!",
+        "Kamu juga bisa menyalakan Drive Sync di Setting untuk mengsinkronkan dan backup riwayat wish ke Google Drive mu",
+        "Tolong dicatat bahwa link feedback yang lama tidak bisa digunakan lagi, silahkan ikuti langkah-langkah yang baru dibawah!"
       ],
       "faqs": {
         "title": "Import Riwayat Wish FAQS",
@@ -201,6 +215,10 @@
         "q7": "Kok wish nya ada yang gak kebaca!?",
         "a7": "Riwayat wish yang lebih lama dari 6 akan terhapus di gamenya itu sendiri, jadi paimon.moe tidak bisa membaca wish yang sudah terhapus."
       },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
+      },
       "guide": {
         "video": "Video Tutorial",
         "pc": [
@@ -209,6 +227,29 @@
           "Tunggu sampai sudah ke-load dan browser mu akan terbuka",
           "Copy & paste link nya ke input di bawah",
           "Paste link disini... https://webstatic..."
+        ],
+        "pc2": [
+          "Buka Genshin Impact di PC ini (Jika kamu mempunyai beberapa akun, restart dahulu game nya)",
+          "Kemudian buka riwayat history di dalam game dan tunggu sampai terbuka",
+          "Tekan tombol WINDOWS di keyboard mu, kemudian cari Powershell",
+          "Klik Windows Powershell, kemudian copy & paste script dibawah ke Powershell nya",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
+          "Kamu bisa mengecek script nya",
+          "disini",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "Tekan ENTER kemudian link nya akan di copy ke clipboard mu",
+          "Paste text nya di textbox dibawah",
+          "Paste link nya disini... https://webstatic..."
+        ],
+        "pclog": [
+          "Buka Genshin Impact di PC ini (jika kamu mempunyai beberapa akun, restart dahulu game nya)",
+          "KemKemudian buka riwayat history di dalam game dan tunggu sampai terbuka",
+          "Tekan WINDOWS+R di keyboard mu, kemudian masukkan:",
+          "Notepad akan terbuka, tekan CTRL+F kemudian masukkan:",
+          "Copy semua link dari https://webstatic sampai #/log link nya seperti ini: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "Paste text nya ke textbox dibawah",
+          "Paste link nya disini... https://webstatic..."
         ],
         "android": [
           "Buka Permohonan (di dalam game)",
@@ -232,12 +273,31 @@
           "Browser mu akan terbuka, copy link nya dan paste ke input di bawah",
           "Paste link disini... https://genshin.mihoyo..."
         ],
+        "ios2": [
+          "Download Stream di App Store",
+          "disini",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "Buka app nya, kemudian allow VPN di system preferences (Settings > General > VPN)",
+          "Install CA (klik Sniff Now on Stream App > Install CA > Sebuah popup akan muncul, tekan allow > CA akan di download",
+          "Buka settings > General > VPN & Device management > Klik Stream Generated CA kemudian install",
+          "Buka Genshin Impact kemudian buka riwayat wish, tetap diam di halaman ini",
+          "Kembali ke App Stream > Pilih I've trusted > Tekan Tombol Sniff Now",
+          "Kembali ke Genshin Impact kemudian buka halaman riwayat wish",
+          "Tunggu sampai halaman nya terbuka",
+          "Kembali ke App Stream > Stop Sniffing",
+          "Klik Sniff History > Pilih reqeust yang berakhiran .json (link nya dimulai dengan https://hk4e-api-os.mihoyo.com/)",
+          "Klik tab Request, kemudian copy link nya dan paste dibawah",
+          "Paste link disini... https://hk4e-api-os.mihoyo.com...",
+          "Jika kamu mendapat masalah, lihat panduan masalah",
+          "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
+        ],
         "ps": [
           "Kamu hanya bisa mengimport wish mu jika kamu mempunyai mail yang ada QR Code nya (dipakai untuk membuka event web di hp)",
           "Buka Genshin Impact di PlayStation mu",
           "Buka mail event yang ada QR Code nya",
           "Scan QR Code nya dengan HP mu",
           "Copy link nya dan paste ke input di bawah",
+          "Paste link disini...",
           "Paste link disini..."
         ],
         "pclocal": [
@@ -260,6 +320,8 @@
       "subtitle": "Pilih darimana asal file excelnya:",
       "default": "Paimon.moe Export",
       "takagg": "TakaGG Gacha Export",
+      "genshinwishes": "Export GenshinWishes",
+      "wishtally": "WishTally",
       "notice": [
         "Fitur ini masih dalam tahap BETA, harap backup dulu melalui Pengaturan kemudian Export ke Excel!",
         "Wish dengan waktu dan reward yang sama tidak disentuh (agar wish yg sudah tersimpan tidak tertimpa)",
@@ -268,7 +330,9 @@
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe file excel kesini, atau klik disini untuk memilih",
-        "takagg": "Drag & drop TakaGG gacha export file excel kesini, atau klik disini untuk memilih"
+        "takagg": "Drag & drop TakaGG gacha export file excel kesini, atau klik disini untuk memilih",
+        "genshinwishes": "Drag & drop GenshinWishes csv file disini, atau klik disini untuk memilih",
+        "wishtally": "Drag & Drop Wish Tally excel file disini, atau klik disini untuk memilih"
       },
       "processing": "Memproses...",
       "addedOn": "Dimasukkan di bagian:",
@@ -562,6 +626,7 @@
     "synced": "Synced",
     "waiting": "Menunggu...",
     "syncing": "Syncing...",
+    "syncStatus": "Status Sync:",
     "lastSync": "Sync Terakhir:",
     "feedback": "Jika kamu menemukan bug, data yang salah, atau ada feedback, kamu bisa chat di",
     "or": "atau",
@@ -572,7 +637,20 @@
       "cancel": "Batal",
       "delete": "Hapus",
       "reset": "Reset"
-    }
+    },
+    "changelog": "Changelog",
+    "exportDescription": "Kamu bisa export dan import data Paimon.moe mu disini",
+    "exportButton": "Exprt & Import Data",
+    "export": "Export Data",
+    "download": "Download Data",
+    "import": "Import Data",
+    "selectFile": "Pilih File JSON",
+    "exportInfo": "Download sebuah salinan dari semua data mu di Paimon.moe",
+    "importWarning": "Ingat untuk membackup data mu dengan mengexport nya dulu! Semua data akan ditimpa!",
+    "importContinue": "Lanjutkan",
+    "importSuccess": "Import berhasil! Halaman akan refresh dalam 5 detik...",
+    "importFailed": "Import Gagal!",
+    "email": "Email:"
   },
   "privacypolicy": {
     "title": "Kebijakan Privasi",
@@ -743,5 +821,17 @@
     "artifact": "Artifak",
     "setPiece": "Bonus {piece} Set",
     "recommendedCharacter": "Rekomendasi Karakter {piece} Set"
+  },
+  "fishing": {
+    "title": "Buku Memancing",
+    "subtitle": "Tandai spot memancing sebagai kosong ketika kamu sudah menghabiskan semua ikan untuk memulai timer respawn",
+    "mondstadt": "Mondstadt",
+    "liyue": "Liyue",
+    "inazuma": "Inazuma",
+    "setEmpty": "Set sebagai kosong",
+    "emptyTime": "Waktu ketika spot nya kosong:",
+    "clear": "Hapus",
+    "save": "Simpan",
+    "cancel": "Batal"
   }
 }

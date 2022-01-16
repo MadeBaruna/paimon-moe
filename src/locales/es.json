@@ -13,6 +13,7 @@
     "furnishing": "Relajatetera",
     "weapons": "Armas",
     "artifacts": "Artefactos",
+    "fishing": "Pescar",
     "settings": "Configuración",
     "donate": "Donar"
   },
@@ -109,6 +110,7 @@
     "geoDamageBonus": "Bono Daño Geo",
     "sortBy": "Ordenar por...",
     "talentBook": "Libro de Talentos",
+    "bossItem": "Boss",
     "ascensionMaterial": "Materiales de Ascensión",
     "talentStats": "Atributos de Talentos",
     "build": "Build",
@@ -141,6 +143,10 @@
     "import": {
       "title": "Importar Historial de Deseos",
       "faqsButton": "FAQ - LEER PRIMERO",
+      "readFaq": "Leer las FAQ",
+      "openFaq": "Abrir las FAQ",
+      "choosePlatform": "Elige tu plataforma",
+      "chooseMethod": "Elija el método deseado",
       "nonew": "Sin deseos nuevos",
       "importNotice1": "Los deseos importados serán añadidos o reemplazados de acuerdo a los datos existentes",
       "importNotice2": "Si no tienes ningún dato guardado previamente, el primer deseo será contabilizado como 1er pity",
@@ -160,9 +166,11 @@
       "close": "Cerrar",
       "invalidLink": "Link incorrecto, por favor, compruébalo de nuevo",
       "errorApi": "Código de error devuelto por la API de MiHoYo, por favor, ¡inténtalo más tarde!",
+      "errorExpired": "Enlace expirado, por favor vuelva a iniciar el proceso!",
       "timeout": "Tiempo de conexión agotado, por favor, espera un momento e inténtalo más tarde de nuevo",
       "differentAccount": "Este historial de deseos es de otra cuenta, por favor, separa tus cuentas primero en el menú de Configuración!",
       "invalidData": "Datos incorrectos devueltos por la API, inténtalo más tarde",
+      "noNewData": "No hay nuevos deseos, por favor espere alrededor de 1 hora para que los datos de los deseos se actualicen!",
       "success": "Importado correcto 😀!",
       "server": "Selecciona tu servidor:",
       "wishTallyCheck": "Enviar tu pity para recuento global de deseos",
@@ -171,6 +179,12 @@
         "Qué datos se enviarán: los pity de",
         "y",
         "de tu historial de deseos"
+      ],
+      "forceUpdateCheck": "",
+      "header": [
+        "",
+        "",
+        ""
       ],
       "faqs": {
         "title": "FAQ del importado de deseos",
@@ -201,6 +215,10 @@
         "q7": "¡No encuentra todo mi historial de deseos!",
         "a7": "Todo historial de deseos más antiguo de 6 meses desaparecerá del servidor de mihoyo, por lo que si no tienes un backup en algún sitio, se habrá perdido. tristemente"
       },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Impacto de Genshin\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
+      },
       "guide": {
         "video": "Video Tutorial",
         "pc": [
@@ -209,6 +227,29 @@
           "Esperar a que cargue y una página se abrirá en el navegador",
           "Copiar y pegar el link al cuadro de texto de abajo",
           "Pegar link aquí... https://webstatic..."
+        ],
+        "pc2": [
+          "Abre Genshin Impact en una PC (Si utiliza varias cuentas, reinicie el juego)",
+          "Luego abre el historial de tiradas en el juego y espere que cargue",
+          "Presiona START en tu teclado, luego busca Powershell",
+          "Haz click a Windows Powershell, luego copia y pega el script debajo del Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))\nCONTEXTREQUEST",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))\nCONTEXTREQUEST",
+          "Puedes revisar el script",
+          "aquí",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "Pulsa ENTRAR y un enlace se copiará al portapapeles",
+          "Pega el texto al cuadro de texto de abajo",
+          "Pegue el enlace aquí... https://webstatic..."
+        ],
+        "pclog": [
+          "Abre Genshin Impact en tu PC (si tienes cuenta múltiple, reinicie el juego)",
+          "Luego abre el historial de deseos del juego y espera que cargue",
+          "Presiona WINDOWS+R en tu teclado, luego enter.",
+          "Una ventana de windows aparecerá, luego presiona CTRL+F y después presionas enter.",
+          "Copia el link de https://webstatic until #/log the url looks like this: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "Copiar y pegar el link al cuadro de texto de abajo",
+          "Pega el link aquí... https://webstatic..."
         ],
         "android": [
           "Abrir Deseos (en el juego)",
@@ -232,13 +273,32 @@
           "Un navegador debiera abrirse. Copia el link y pégalo aquí abajo",
           "Pegar link aquí... https://genshin.mihoyo..."
         ],
+        "ios2": [
+          "Descarga Stream en la App Store",
+          "aquí",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "Abre la app, luego permite el VPN en tu sistema de preferencia (Settings > General > VPN)",
+          "Instala CA (haz click Sniff Now en la app de Stream > Instala CA > Te aparecerá una ventana y debes de elegir permitir > Ahora CA se ha descargado)",
+          "Ve a Ajustes > General > VPN & Device management > Haga clic en Stream Generated CA e instalelo",
+          "Abre Genshin Impact y  luego abre la pantalla de deseos, mantente en esa página",
+          "Vuelve a la aplicación Stream > Elige mi confianza > Toque el botón ahora",
+          "Vuelve a Genshin Impact y ahora abre el historial de deseos",
+          "Espere que la pagina cargue",
+          "Volver a la aplicación Stream > Detener Sniffing",
+          "Haga clic en Sniff History > Elija una solicitud que finalice por .json (el enlace comienza con https://hk4e-api-os.mihoyo.com/)",
+          "Haga clic en la pestaña Solicitud, luego copie el enlace y péguelo abajo",
+          "Pegar link aquí... https://hk4e-api-os.mihoyo.com...",
+          "",
+          ""
+        ],
         "ps": [
           "Solo puedes usar este importador si tienes un main dentro del juego con un código QR para abrir un evento web",
           "Abre Genshin Impact en tu PlayStation",
           "Abre el mail del evento que contiene el código QR",
           "Escanea el código QR con tu teléfono",
           "Copia el link, y pégalo abajo",
-          "Pegar link aquí..."
+          "Pegar link aquí...",
+          "Pegue el enlace aquí..."
         ],
         "pclocal": [
           "Si no te sientes cómodo pasando tu url de comentarios, puedes usar esta opción para procesar el deseo en tu PC localmente. Este script leerá el archivo de registro en su PC para obtener la url del historial de deseos.",
@@ -260,6 +320,8 @@
       "subtitle": "Selecciona de dónde proviene tu excel:",
       "default": "Exportado de Paimon.moe",
       "takagg": "Exportado de TakaGG Gacha",
+      "genshinwishes": "Exportar GenshinWishes",
+      "wishtally": "Deseos globales",
       "notice": [
         "¡Esta función todavía está en BETA, por favor, haga una copia de seguridad primero yendo a Configuración y luego a Exportar a Excel!",
         "Los deseos con la misma marca de tiempo y nombre de recompensa NO se tocarán (por lo que el deseo existente no se reescribirá)",
@@ -268,7 +330,9 @@
       ],
       "selectFile": {
         "default": "Arrastra y suelta el archivo excel de Paimon.moe aquí, o clica aquí para seleccionarlo",
-        "takagg": "Arrastra y suelta el archivo excel de TakaGG gacha aquí, o clica aquí para seleccionarlo"
+        "takagg": "Arrastra y suelta el archivo excel de TakaGG gacha aquí, o clica aquí para seleccionarlo",
+        "genshinwishes": "Arrastra y suelta el archivo cvs de GenshinWishes aquí, o clica aquí para seleccionarlo",
+        "wishtally": "Arrastra y suelta el archivo excel de los deseos globales aquí, o clica aquí para seleccionarlo"
       },
       "processing": "Procesando...",
       "addedOn": "Insertado en el:",
@@ -562,6 +626,7 @@
     "synced": "Syncronizado",
     "waiting": "Esperando...",
     "syncing": "Syncronizando...",
+    "syncStatus": "Estado de la sincronización:",
     "lastSync": "Última sincronización:",
     "feedback": "Si encuentras algún error, datos erróneos, o algún otro comentario, por favor, deja un mensae en",
     "or": "o",
@@ -572,7 +637,20 @@
       "cancel": "Cancelar",
       "delete": "Borrar",
       "reset": "Reiniciar"
-    }
+    },
+    "changelog": "Changelog",
+    "exportDescription": "Puedes exportar e importar tus datos de Paimon.moe aquí",
+    "exportButton": "Exportar e importar datos",
+    "export": "Exportar datos",
+    "download": "Descargar datos",
+    "import": "Importar datos",
+    "selectFile": "Seleccionar archivo JSON",
+    "exportInfo": "Descargar una copia de todos sus datos guardados en Paimon.moe",
+    "importWarning": "¡Recuerda que debes hacer una copia de seguridad exportando primero! ¡Todos los datos serán reemplazados!",
+    "importContinue": "Continuar",
+    "importSuccess": "¡Importación correcta! Recargando en 5 segundos...",
+    "importFailed": "¡Importación fallida!",
+    "email": "Correo electrónico:"
   },
   "privacypolicy": {
     "title": "Política de privacidad",
@@ -743,5 +821,17 @@
     "artifact": "Artefacto",
     "setPiece": "Bono de conjunto {piece}",
     "recommendedCharacter": "Personajes Recomendados Conjunto {piece} piezas"
+  },
+  "fishing": {
+    "title": "Libro de pesca",
+    "subtitle": "Marca el punto de pesca como vacío cuando ya sacas todos los peces para comenzar el temporizador de reaparición",
+    "mondstadt": "Mondstadt",
+    "liyue": "Liyue",
+    "inazuma": "Inazuma",
+    "setEmpty": "Poner como vacío",
+    "emptyTime": "Tiempo cuando el punto está vacío:",
+    "clear": "Borrar",
+    "save": "Guardar",
+    "cancel": "Cancelar"
   }
 }

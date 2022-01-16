@@ -13,6 +13,7 @@
     "furnishing": "Mobília",
     "weapons": "Armas",
     "artifacts": "Artefatos",
+    "fishing": "Pesca",
     "settings": "Configurações",
     "donate": "Doar"
   },
@@ -109,6 +110,7 @@
     "geoDamageBonus": "Bônus de Dano Geo",
     "sortBy": "Classificar por...",
     "talentBook": "Livro de Talentos",
+    "bossItem": "Chefe",
     "ascensionMaterial": "Materiais de Ascensão",
     "talentStats": "Estatísticas de Talento",
     "build": "Build",
@@ -141,6 +143,10 @@
     "import": {
       "title": "Importar Histórico de Orações",
       "faqsButton": "FAQ - LEIA PRIMEIRO",
+      "readFaq": "Leia o FAQ",
+      "openFaq": "Abrir FAQ",
+      "choosePlatform": "Escolha sua plataforma",
+      "chooseMethod": "Escolha o método desejado",
       "nonew": "Sem Novas Orações",
       "importNotice1": "Orações importadas serão anexadas ou substituídas de acordo com os dados existentes",
       "importNotice2": "Se você não tiver nenhum dado salvo anteriormente, a primeira oração será contabilizada como pity 1",
@@ -160,9 +166,11 @@
       "close": "Fechar",
       "invalidLink": "Link inválido, tente novamente",
       "errorApi": "Código de erro retornado do MiHoYo API, tente novamente mais tarde!",
+      "errorExpired": "Link expirado, por favor tente novamente!",
       "timeout": "Conexão expirou, aguarde um momento e tente novamente mais tarde",
       "differentAccount": "Este histórico de orações é de outra conta, por favor, separe sua conta primeiro no menu de Configurações!",
       "invalidData": "Dados inválidos retornados pelo API, tente novamente mais tarde",
+      "noNewData": "Não há desejos novos, por favor espere em torno de 1 hora para os dados de desejo serem atualizados!",
       "success": "Sucesso na Importação 😀!",
       "server": "Selecione seu servidor:",
       "wishTallyCheck": "Enviar pity para a contagem global de orações",
@@ -171,6 +179,12 @@
         "O que será coletado:",
         "e",
         "pity do seu histórico de orações"
+      ],
+      "forceUpdateCheck": "",
+      "header": [
+        "",
+        "",
+        ""
       ],
       "faqs": {
         "title": "Importar Histórico de Orações FAQ",
@@ -201,6 +215,10 @@
         "q7": "Não leu todo meu histórico!?",
         "a7": "Histórico de orações mais antigos que 6 meses são deletados dos servidores da MiHoYo, então se você não possui um backup em algum lugar, infelizmente se foi"
       },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt"
+      },
       "guide": {
         "video": "Tutorial em Vídeo",
         "pc": [
@@ -208,6 +226,29 @@
           "Clique em Feedback",
           "Espere carregar, e então uma página no navegador será aberta",
           "Copie & cole o link na caixa de texto abaixo",
+          "Cole o link aqui... https://webstatic..."
+        ],
+        "pc2": [
+          "Abra o Genshin Impact nesse PC (Se você utiliza múltiplas contas por favor reinicie o jogo)",
+          "Em seguida abra o histórico de desejos no jogo e espere carregar",
+          "Pressione START no seu teclado e então pesquise por Powershell",
+          "Clique em Windows Powershell e copie e cole o script abaixo para o Powershell",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
+          "Você pode revisar o script",
+          "aqui",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "Pressione ENTER e então um link será copiado para sua área de transferência",
+          "Cole o texto na caixa de texto abaixo",
+          "Cole o link aqui... https://webstatic..."
+        ],
+        "pclog": [
+          "Abra o Genshin Impact nesse PC (Se você utiliza múltiplas contas por favor reinicie o jogo)",
+          "Em seguida abra o histórico de desejos no jogo e espere carregar",
+          "Pressione WINDOWS+R no seu teclado e então insira:",
+          "Uma janela de bloco de notas irá abrir, em seguida pressione CNTRL+F e então insira:",
+          "Copie todo o link de https://webstatic até #/log a url se parecerá com isso: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "Cole o texto na caixa de texto abaixo",
           "Cole o link aqui... https://webstatic..."
         ],
         "android": [
@@ -232,12 +273,31 @@
           "Um navegador deve abrir. Copie o link e cole-o abaixo",
           "Cole o link aqui... https://genshin.mihoyo..."
         ],
+        "ios2": [
+          "Baixe Stream na App Store",
+          "aqui",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "Abra o aplicativo e permita o VPN nas preferências do sistema (Configurações > Geral > VPN)",
+          "Instale CA (clique Sniff Now no aplicativo Stream > Install CA > Uma janela flutuante irá aparecer e escolha permitir > agora CA foi baixado",
+          "Vá em configurações > Geral > VPN * gerenciamento de dispositivos > Clique em Stream Generated CA e instale",
+          "Abra o Genshin Impact e então abra a tela de desejo, fique nessa página",
+          "De volta ao aplicativo Stream > Escolha I've trusted > Clique no botão Sniff Now",
+          "Volte ao Genshin Impact e então abra a tela do histórico de desejos",
+          "Espere o carregamento da página",
+          "Volte ao aplicativo Stream > clique em Stop Sniffing",
+          "Clique Sniff History > Escolha uma requisição que termine com .json (o link irá começar com https://hk4e-api-os.mihoyo.com/)",
+          "Clique na aba Request e então copie o link e o cole abaixo",
+          "Cole o link aqui... https://hk4e-api-os.mihoyo.com...",
+          "",
+          ""
+        ],
         "ps": [
           "Você só pode usar esse método caso tenha um e-mail dentro do jogo com um QR Code para abrir uma página de evento web",
           "Abra Genshin Impact no seu PlayStation",
           "Abra o email do evento que contém QR Code",
           "Escaneie o QR Code com seu celular",
           "Copie o link e cole-o abaixo",
+          "Cole o link aqui...",
           "Cole o link aqui..."
         ],
         "pclocal": [
@@ -260,6 +320,8 @@
       "subtitle": "Selecione o local do seu Excel:",
       "default": "Exportação Paimon.moe",
       "takagg": "Exportação TakaGG Gacha",
+      "genshinwishes": "GenshinWishes Export",
+      "wishtally": "WishTally",
       "notice": [
         "Este recurso ainda está em BETA, por favor faça um backup indo nas Configurações e então Exportar para Excel!",
         "Desejos com o mesmo horário e nome da recompensa NÃO serão tocados (desejos já existentes não serão reescritos)",
@@ -268,7 +330,9 @@
       ],
       "selectFile": {
         "default": "Arraste & solte Paimon.moe arquivo excel pra cá, ou clique aqui para selecionar",
-        "takagg": "Arraste & solte TakaGG gacha arquivo excel pra cá, ou clique aqui para selecionar"
+        "takagg": "Arraste & solte TakaGG gacha arquivo excel pra cá, ou clique aqui para selecionar",
+        "genshinwishes": "Arraste & solte o arquivo csv GenshinWishes aqui, ou clique aqui para selecionar",
+        "wishtally": "Arraste & solte o arquivo excel Wish Tally aqui, ou clique aqui para selecionar"
       },
       "processing": "Processando...",
       "addedOn": "Inserido em:",
@@ -562,6 +626,7 @@
     "synced": "Sincronizado",
     "waiting": "Aguardando...",
     "syncing": "Sincronizando...",
+    "syncStatus": "Status da sincronização:",
     "lastSync": "Última Sincronização:",
     "feedback": "Se você encontrou algum bug, informação incorreta ou tem qualquer outro feedback, por favor deixe uma mensagem em",
     "or": "ou",
@@ -572,7 +637,20 @@
       "cancel": "Cancelar",
       "delete": "Deletar",
       "reset": "Resetar"
-    }
+    },
+    "changelog": "Registro de alterações",
+    "exportDescription": "",
+    "exportButton": "",
+    "export": "",
+    "download": "",
+    "import": "",
+    "selectFile": "",
+    "exportInfo": "",
+    "importWarning": "",
+    "importContinue": "",
+    "importSuccess": "",
+    "importFailed": "",
+    "email": ""
   },
   "privacypolicy": {
     "title": "Política de Privacidade",
@@ -743,5 +821,17 @@
     "artifact": "Artefato",
     "setPiece": "{piece} Bônus do conjunto",
     "recommendedCharacter": "Personagens recomendados {piece} peças"
+  },
+  "fishing": {
+    "title": "",
+    "subtitle": "",
+    "mondstadt": "",
+    "liyue": "",
+    "inazuma": "",
+    "setEmpty": "",
+    "emptyTime": "",
+    "clear": "",
+    "save": "",
+    "cancel": ""
   }
 }

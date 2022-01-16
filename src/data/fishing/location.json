@@ -1,12 +1,7 @@
 {
   "17668": {
     "name": "Windrise",
-    "fish": [
-      "medaka",
-      "aizen_medaka",
-      "venomspine_fish",
-      "tea-colored_shirakodai"
-    ],
+    "fish": ["medaka", "aizen_medaka", "venomspine_fish", "tea-colored_shirakodai"],
     "location": "mondstadt"
   },
   "17669": {
@@ -24,22 +19,12 @@
   },
   "17670": {
     "name": "Stormterror's Lair",
-    "fish": [
-      "medaka",
-      "aizen_medaka",
-      "dawncatcher",
-      "tea-colored_shirakodai"
-    ],
+    "fish": ["medaka", "aizen_medaka", "dawncatcher", "tea-colored_shirakodai"],
     "location": "mondstadt"
   },
   "17671": {
     "name": "Stormterror's Lair",
-    "fish": [
-      "medaka",
-      "aizen_medaka",
-      "dawncatcher",
-      "crystalfish"
-    ],
+    "fish": ["medaka", "aizen_medaka", "dawncatcher", "crystalfish"],
     "location": "mondstadt"
   },
   "17672": {
@@ -57,13 +42,7 @@
   },
   "17673": {
     "name": "Cider Lake",
-    "fish": [
-      "aizen_medaka",
-      "crystalfish",
-      "venomspine_fish",
-      "rusty_koi",
-      "tea-colored_shirakodai"
-    ],
+    "fish": ["aizen_medaka", "crystalfish", "venomspine_fish", "rusty_koi", "tea-colored_shirakodai"],
     "location": "mondstadt"
   },
   "17674": {
@@ -81,226 +60,127 @@
   },
   "17676": {
     "name": "Dragonspine",
-    "fish": [
-      "medaka",
-      "venomspine_fish",
-      "snowstrider",
-      "tea-colored_shirakodai"
-    ],
+    "fish": ["medaka", "venomspine_fish", "snowstrider", "tea-colored_shirakodai"],
     "location": "mondstadt"
   },
   "17675": {
     "name": "Qingce Village",
-    "fish": [
-      "sweet-flower_medaka",
-      "dawncatcher",
-      "crystalfish",
-      "betta",
-      "brown_shirakodai",
-      "bitter_pufferfish"
-    ],
+    "fish": ["sweet-flower_medaka", "dawncatcher", "crystalfish", "betta", "brown_shirakodai", "bitter_pufferfish"],
     "location": "liyue"
   },
   "17677": {
     "name": "Dihua Marsh",
-    "fish": [
-      "medaka",
-      "sweet-flower_medaka",
-      "dawncatcher",
-      "brown_shirakodai"
-    ],
+    "fish": ["medaka", "sweet-flower_medaka", "dawncatcher", "brown_shirakodai"],
     "location": "liyue"
   },
   "17678": {
     "name": "Bishui Plain",
-    "fish": [
-      "medaka",
-      "betta",
-      "brown_shirakodai"
-    ],
+    "fish": ["medaka", "betta", "brown_shirakodai"],
     "location": "liyue"
   },
   "17679": {
     "name": "Bishui Plain",
-    "fish": [
-      "medaka",
-      "dawncatcher",
-      "crystalfish",
-      "brown_shirakodai"
-    ],
+    "fish": ["medaka", "dawncatcher", "crystalfish", "brown_shirakodai"],
     "location": "liyue"
   },
   "17680": {
     "name": "Mt. Aocang",
-    "fish": [
-      "medaka",
-      "sweet-flower_medaka",
-      "dawncatcher",
-      "crystalfish",
-      "abiding_angelfish"
-    ],
+    "fish": ["medaka", "sweet-flower_medaka", "dawncatcher", "crystalfish", "abiding_angelfish"],
     "location": "liyue"
   },
   "17681": {
     "name": "Mt. Hulao",
-    "fish": [
-      "medaka",
-      "sweet-flower_medaka",
-      "dawncatcher",
-      "crystalfish",
-      "betta",
-      "brown_shirakodai"
-    ],
+    "fish": ["medaka", "sweet-flower_medaka", "dawncatcher", "crystalfish", "betta", "brown_shirakodai"],
     "location": "liyue"
   },
   "17682": {
     "name": "Beside Wangshu Inn",
-    "fish": [
-      "sweet-flower_medaka",
-      "betta",
-      "akai_maou",
-      "golden_koi",
-      "rusty_koi",
-      "brown_shirakodai"
-    ],
+    "fish": ["sweet-flower_medaka", "betta", "akai_maou", "golden_koi", "rusty_koi", "brown_shirakodai"],
     "location": "liyue"
   },
   "17683": {
     "name": "Tianqiu Valley",
-    "fish": [
-      "medaka",
-      "crystalfish",
-      "betta"
-    ],
+    "fish": ["medaka", "crystalfish", "betta"],
     "location": "liyue"
   },
   "17684": {
     "name": "Luhua Pool",
-    "fish": [
-      "sweet-flower_medaka",
-      "betta",
-      "akai_maou",
-      "golden_koi",
-      "rusty_koi",
-      "brown_shirakodai"
-    ],
+    "fish": ["sweet-flower_medaka", "betta", "akai_maou", "golden_koi", "rusty_koi", "brown_shirakodai"],
     "location": "liyue"
   },
   "17685": {
     "name": "Beside Guili Plains",
-    "fish": [
-      "sweet-flower_medaka",
-      "betta",
-      "akai_maou",
-      "golden_koi",
-      "rusty_koi",
-      "brown_shirakodai"
-    ],
+    "fish": ["sweet-flower_medaka", "betta", "akai_maou", "golden_koi", "rusty_koi", "brown_shirakodai"],
     "location": "liyue"
   },
   "17686": {
     "name": "Liyue Harbor",
-    "fish": [
-      "sweet-flower_medaka",
-      "dawncatcher",
-      "crystalfish",
-      "betta",
-      "pufferfish"
-    ],
+    "fish": ["sweet-flower_medaka", "dawncatcher", "crystalfish", "betta", "pufferfish"],
     "location": "liyue"
   },
   "17687": {
     "name": "Sangonomiya Shrine",
-    "fish": [
-      "medaka",
-      "glaze_medaka",
-      "dawncatcher",
-      "crystalfish",
-      "lunged_stickleback",
-      "purple_shirakodai"
-    ],
+    "fish": ["medaka", "glaze_medaka", "dawncatcher", "crystalfish", "lunged_stickleback", "purple_shirakodai"],
     "location": "inazuma"
   },
   "17688": {
     "name": "Suigetsu Pool",
-    "fish": [
-      "medaka",
-      "glaze_medaka",
-      "dawncatcher",
-      "crystalfish",
-      "lunged_stickleback",
-      "purple_shirakodai"
-    ],
+    "fish": ["medaka", "glaze_medaka", "dawncatcher", "crystalfish", "lunged_stickleback", "purple_shirakodai"],
     "location": "inazuma"
   },
   "17689": {
     "name": "Nazuchi Beach",
-    "fish": [
-      "medaka",
-      "lunged_stickleback",
-      "purple_shirakodai",
-      "bitter_pufferfish"
-    ],
+    "fish": ["medaka", "lunged_stickleback", "purple_shirakodai", "bitter_pufferfish"],
     "location": "inazuma"
   },
   "17690": {
     "name": "Tatarasuna",
-    "fish": [
-      "raimei_angelfish"
-    ],
+    "fish": ["raimei_angelfish"],
     "location": "inazuma"
   },
   "17691": {
     "name": "Near Koseki Village",
-    "fish": [
-      "medaka",
-      "dawncatcher",
-      "crystalfish",
-      "purple_shirakodai",
-      "pufferfish"
-    ],
+    "fish": ["medaka", "dawncatcher", "crystalfish", "purple_shirakodai", "pufferfish"],
     "location": "inazuma"
   },
   "17694": {
     "name": "Koseki Village",
-    "fish": [
-      "glaze_medaka",
-      "lunged_stickleback",
-      "akai_maou",
-      "golden_koi",
-      "rusty_koi",
-      "purple_shirakodai"
-    ],
+    "fish": ["glaze_medaka", "lunged_stickleback", "akai_maou", "golden_koi", "rusty_koi", "purple_shirakodai"],
     "location": "inazuma"
   },
   "17692": {
     "name": "Ritou",
-    "fish": [
-      "glaze_medaka",
-      "lunged_stickleback",
-      "akai_maou",
-      "pufferfish",
-      "bitter_pufferfish"
-    ],
+    "fish": ["glaze_medaka", "lunged_stickleback", "akai_maou", "pufferfish", "bitter_pufferfish"],
     "location": "inazuma"
   },
   "17693": {
     "name": "Near Amakane Island",
-    "fish": [
-      "glaze_medaka",
-      "lunged_stickleback",
-      "purple_shirakodai"
-    ],
+    "fish": ["glaze_medaka", "lunged_stickleback", "purple_shirakodai"],
     "location": "inazuma"
   },
   "18686": {
     "name": "Chirai Shrine",
-    "fish": [
-      "medaka",
-      "glaze_medaka",
-      "dawncatcher",
-      "crystalfish"
-    ],
+    "fish": ["medaka", "glaze_medaka", "dawncatcher", "crystalfish"],
     "location": "inazuma"
+  },
+  "20055": {
+    "name": "Autake Plains",
+    "fish": ["medaka", "lunged_stickleback", "akai_maou", "purple_shirakodai"],
+    "location": "inazuma"
+  },
+  "22148": {
+    "name": "The Serpent's Bowels",
+    "fish": ["crystalfish", "lunged_stickleback", "divda_ray", "formalo_ray"],
+    "location": "enkanomiya"
+  },
+  "22149": {
+    "name": "The Serpent's Heart",
+    "fish": ["dawncatcher", "purple_shirakodai", "divda_ray", "formalo_ray"],
+    "location": "enkanomiya"
+  },
+  "22150": {
+    "name": "The Serpent's Heart",
+    "fish": ["dawncatcher", "akai_maou", "divda_ray", "formalo_ray"],
+    "location": "enkanomiya"
   }
 }

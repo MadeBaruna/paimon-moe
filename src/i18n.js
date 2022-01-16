@@ -20,11 +20,12 @@ $locale.subscribe((value) => {
   }
 });
 
-const supportedLanguage = ['en', 'id', 'ru', 'ko', 'fr', 'zh', 'pt', 'tw', 'es', 'de', 'th', 'vi'];
+const supportedLanguage = ['en', 'id', 'ru', 'ja', 'ko', 'fr', 'zh', 'pt', 'tw', 'es', 'de', 'th', 'vi'];
 addMessages('en', en);
 addMessages('en', enItems);
 register('id', () => import('./locales/id.json'));
 register('ru', () => import('./locales/ru.json'));
+register('ja', () => import('./locales/ja.json'));
 register('ko', () => import('./locales/ko.json'));
 register('fr', () => import('./locales/fr.json'));
 register('zh', () => import('./locales/zh.json'));
@@ -36,6 +37,7 @@ register('th', () => import('./locales/th.json'));
 register('vi', () => import('./locales/vi.json'));
 register('id', () => import('./locales/items/id.json'));
 register('ru', () => import('./locales/items/ru.json'));
+register('ja', () => import('./locales/items/ja.json'));
 register('ko', () => import('./locales/items/ko.json'));
 register('fr', () => import('./locales/items/fr.json'));
 register('zh', () => import('./locales/items/zh.json'));

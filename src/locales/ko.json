@@ -10,13 +10,21 @@
     "reminder": "리마인더",
     "todoList": "할 일 목록",
     "timeline": "타임라인",
+    "furnishing": "가구",
+    "weapons": "무기",
+    "artifacts": "성유물",
+    "fishing": "낚시",
     "settings": "설정",
     "donate": "후원"
   },
   "home": {
     "welcome": "Paimon.moe에 어서오세요! 👋",
     "message": "최고의 원신 동반자! 돌파 계산기로 파밍 계획을 도와주고, 할 일 목록과 기원 통계를 통해 진척도를 확인해줍니다.",
+    "visitor": "{count} 명의 지난 7일동안의 방문객들",
     "banner": {
+      "featured": [
+        "유라"
+      ],
       "summoned": "획득",
       "percentage": "(모든 {rarity} 중)",
       "avg": "평균 천장",
@@ -62,6 +70,10 @@
     "achievement": {
       "title": "🏆 업적 목록을 확인하고 추적하세요",
       "detail": "업적"
+    },
+    "furnishing": {
+      "title": "세트를 완성하기 위해 필요한 가구를 확인하세요. 각 가구의 하중도 확인할 수 있습니다.",
+      "detail": "가구"
     }
   },
   "characters": {
@@ -74,6 +86,7 @@
     "talents": "전투 특성",
     "passiveTalents": "고유 특성",
     "constellations": "운명의 자리",
+    "const": "별자리",
     "asc": "돌파",
     "lvl": "레벨",
     "hp": "HP",
@@ -94,12 +107,22 @@
     "cryoDamageBonus": "얼음 원소 피해 보너스",
     "anemoDamageBonus": "바람 원소 피해 보너스",
     "physicalDamageBonus": "물리 피해 보너스",
-    "geoDamageBonus": "바위 원소 피해 보너스"
+    "geoDamageBonus": "바위 원소 피해 보너스",
+    "sortBy": "... 별로 분류하다",
+    "talentBook": "특성 책",
+    "bossItem": "보스",
+    "ascensionMaterial": "돌파 재료",
+    "talentStats": "특성 계수",
+    "build": "육성",
+    "source": "커뮤니티 캐릭터 빌드는 Genshin Helper Team이 만들었습니다",
+    "faq": "표시되는 운명의 자리는 제출해 주신 기원 통계 데이터에 기반합니다. 따라서, 기원 통계에 제출하지 못한 채 사라진 기원 데이터가 있거나, 상점에서 캐릭터를 구매했다면 운명의 자리가 정확하지 않을 수 있습니다! 하지만 캐릭터 상세 페이지에서 캐릭터 이름 옆의 연필 모양을 눌러 직접 수정할 수 있습니다."
   },
   "wish": {
     "title": "기원 통계",
     "autoImport": "자동 제출",
     "helpAndSetting": "도움말 & 설정",
+    "helps": "도움말",
+    "settings": "설정",
     "wishesWorth": "기원 가치",
     "lifetimePulls": "총 뽑기 횟수",
     "guarantee": "천장 지수 {pity}에 확정으로 획득",
@@ -120,6 +143,10 @@
     "import": {
       "title": "기원 기록 제출",
       "faqsButton": "FAQ - 먼저 읽어보세요",
+      "readFaq": "FAQ를 읽으십시오",
+      "openFaq": "FAQ 열기",
+      "choosePlatform": "플랫폼을 선택하세요",
+      "chooseMethod": "원하는 방법을 선택하세요",
       "nonew": "새로운 기록이 없습니다",
       "importNotice1": "제출된 기록은 기존 데이터에 따라 덧붙여지거나 대체됩니다",
       "importNotice2": "이전에 저장한 기록이 없다면, 천장 수치는 1부터 시작합니다",
@@ -139,8 +166,11 @@
       "close": "닫기",
       "invalidLink": "유효하지 않은 링크입니다, 다시 확인해보세요",
       "errorApi": "MiHoYo API와 통신 중 오류가 발생했습니다, 나중에 다시 시도해보세요!",
+      "errorExpired": "연결 실패, 다시 시도해주세요.",
       "timeout": "연결 대기 시간이 초과됐습니다, 잠시 기다린 후 다시 시도해보세요",
+      "differentAccount": "이 기원 기록은 다른 계정의 것입니다. 설정 메뉴에서 계정을 추가하세요.",
       "invalidData": "API로 부터 유효하지 않은 정보를 받았습니다, 나중에 다시 시도해보세요",
+      "noNewData": "새로운 기원이 없다면, 기원 데이터가 업데이트될 때까지 1 시간 정도 기다려주세요!",
       "success": "제출 성공 😀!",
       "server": "서버를 선택해주세요:",
       "wishTallyCheck": "전체 기원 총계를 위해 천장 정보 전송",
@@ -149,6 +179,12 @@
         "수집되는 정보:",
         "그리고",
         "당신의 기원 통계에서 확인된 천장 정보"
+      ],
+      "forceUpdateCheck": "",
+      "header": [
+        "",
+        "",
+        ""
       ],
       "faqs": {
         "title": "기원 기록 입력 FAQ",
@@ -179,6 +215,10 @@
         "q7": "제 기원 기록을 모두 읽는 게 아닌가요!? 빠진 게 있는데요",
         "a7": "6개월이 지난 기원 기록들은 미호요 서버 자체에서 삭제됩니다, 그러니 어딘가에 데이터를 백업하신 게 아니라면... 슬프게 됐어요."
       },
+      "logLocation": {
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
+      },
       "guide": {
         "video": "영상 도움말",
         "pc": [
@@ -188,10 +228,33 @@
           "아래 텍스트 박스에 브라우저의 주소를 복사 & 붙여넣기하세요",
           "여기에 주소를 붙여넣기하세요... (https://webstatic...)"
         ],
+        "pc2": [
+          "PC에서 원신을 실행하세요 (만약 여러 개의 계정을 사용한다면 게임을 재시작하세요)",
+          "뽑기 기록이 로딩될 때까지 기다리세요",
+          "윈도우 키를 누르고, Powershell을 검색하세요",
+          "Windows Powershell을 실행하고, 아래 스크립트를 복사해 Powershell에 붙여넣습니다",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
+          "스크립트의 내용을 확인하려면",
+          "여기",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "ENTER 키를 누르면 링크가 클립보드에 복사됩니다",
+          "아래 텍스트 박스에 복사한 문자를 붙여넣기하세요",
+          "여기에 주소를 붙여넣기하세요... (https://webstatic...)"
+        ],
+        "pclog": [
+          "PC에서 원신을 실행하세요 (만약 여러 개의 계정을 사용한다면 게임을 재시작하세요)",
+          "뽑기 기록이 로딩될 때까지 기다리세요",
+          "Windows+R 키를 누르고, 입력하세요:",
+          "메모장이 열리면, CTRL+F 키를 누르고 다음을 입력하세요:",
+          "https://webstatic 부터 #/log 까지의 모든 링크 다음처럼 보이게 복사하세요: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "아래 텍스트 박스에 복사한 문자를 붙여넣기하세요",
+          "여기에 주소를 붙여넣기하세요... https://webstatic..."
+        ],
         "android": [
-          "페이몬 메뉴를 엽니다",
-          "피드백 버튼을 누릅니다",
-          "기다리면 브라우저 화면이 열립니다",
+          "",
+          "",
+          "",
           "Wi-Fi와 데이터 연결을 모두 끄세요",
           "오른쪽 위의 새로고침 버튼을 누르세요",
           "새로고침된 화면에 에러가 나타나고, 검은색으로 오류 내용이 나타납니다",
@@ -210,12 +273,31 @@
           "브라우저가 열릴겁니다. 아래 텍스트 박스에 브라우저의 주소를 복사 & 붙여넣기하세요",
           "여기에 주소를 붙여넣기하세요... (https://genshin.mihoyo...)"
         ],
+        "ios2": [
+          "Stream을 App Store에서 다운로드하세요",
+          "여기",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "앱을 열고, 시스템 기본 설정에서 VPN을 허용하세요 (설정 > 일반 > VPN)",
+          "",
+          "",
+          "원신을 열고 기원 창으로 들어가서, 그 페이지에서 기다리세요",
+          "",
+          "원신으로 돌아가서 뽑기 기록 페이지를 여세요",
+          "기다리면 브라우저 화면이 열립니다",
+          "",
+          "",
+          "요청 창을 클릭하고, 링크를 복사해서 아래에 붙여넣으세요",
+          "여기에 링크를 붙여넣으세요... https://hk4e-api-os.mihoyo.com...",
+          "",
+          ""
+        ],
         "ps": [
           "웹 이벤트 페이지를 열기 위한 QR 코드가 포함된 게임 내 우편이 있는 경우에만 이 기능을 사용할 수 있습니다.",
           "플레이 스테이션에서 원신을 실행하세요",
           "QR 코드가 포함된 이벤트 우편을 엽니다",
           "스마트폰으로 QR 코드를 스캔합니다",
           "주소를 복사해, 아래에 붙여넣기하세요",
+          "여기에 주소를 붙여넣기하세요...",
           "여기에 주소를 붙여넣기하세요..."
         ],
         "pclocal": [
@@ -232,6 +314,38 @@
           "이 기능은 아직 베타 상태입니다, 시도하기 전에 도움말 & 설정 메뉴에서 엑셀로 추출을 눌러 기존 데이터를 백업하세요."
         ]
       }
+    },
+    "excel": {
+      "title": "엑셀 불러오기",
+      "subtitle": "엑셀의 출처를 선택하세요:",
+      "default": "Paimon.moe에서 추출",
+      "takagg": "TakaGG Gacha Export에서 추출",
+      "genshinwishes": "",
+      "wishtally": "글로벌 소원",
+      "notice": [
+        "이 기능은 아직 [베타] 상태입니다. 먼저 설정에서 데이터를 엑셀로 추출하여 백업해주세요!",
+        "",
+        "",
+        "현재는 [영어]로 된 기원 결과 엑셀만 지원합니다."
+      ],
+      "selectFile": {
+        "default": "Paimon.moe에서 추출한 엑셀 파일을 이곳에 드래그 앤 드랍 하거나, 여기를 선택해 직접 선택하세요.",
+        "takagg": "TakaGG Gacha Export에서 추출한 엑셀 파일을 이곳에 드래그 앤 드랍 하거나, 여기를 선택해 직접 선택하세요.",
+        "genshinwishes": "",
+        "wishtally": ""
+      },
+      "processing": "처리중...",
+      "addedOn": "",
+      "beginning": "시작",
+      "end": "종료",
+      "total": "합계",
+      "saveNotice": "입력된 기원 정보를 저장할까요?",
+      "save": "저장",
+      "success": "엑셀 불러오기 성공 😀!",
+      "errorInvalidFile": "잘못된 엑셀 파일",
+      "errorReadExcel": "엑셀 불러오기 실패!",
+      "errorExcelPaimon": "Paimon.moe에서 생성된 엑셀 파일이 아닙니다.",
+      "errorUnknownItem": "알 수 없는 기원 보상 이름이 포함돼있습니다."
     },
     "help": {
       "title": "기원 기록 도움말 & 설정",
@@ -300,7 +414,8 @@
       "totalThisBanner": "이 픽업에서 총 뽑은 횟수",
       "worth": "가치",
       "loading": "로딩 중... (화면이 멈췄다면, 설정 페이지에서 서버를 바꿔주세요)",
-      "guaranteed": "다음 5★ 은 확정 UP 캐릭터 또는 무기입니다"
+      "guaranteed": "다음 5★ 은 확정 UP 캐릭터 또는 무기입니다",
+      "unknown_3_star": "알 수 없음"
     },
     "tally": {
       "title": "기원 총계",
@@ -321,13 +436,21 @@
       "error": "데이터를 아직 사용할 수 없습니다 😞",
       "pity": "천장",
       "median": "5★ 평균",
-      "user": "전체 사용자"
-    }
+      "user": "전체 사용자",
+      "detail": "상세 정보"
+    },
+    "note": [
+      "기원 이력은 자동으로 업데이트되지 않습니다. 자동 제출 기능을 이용해 주세요.",
+      "기원 내역은 6개월이 지나면 miHoYo의 서버에서 삭제되기 때문에 paimon.moe에서 불러올 수 없습니다. 따라서 오래된 내역은 나타나지 않을 수 있습니다.",
+      "데이터는 브라우저에 저장됩니다. 브라우저 캐시를 삭제하면 데이터도 함께 제거됩니다. 설정에서 구글 드라이브 동기화를 활성화하여 데이터를 백업하세요!"
+    ]
   },
   "calculator": {
     "titleWeapon": "무기 계산기",
     "titleCharacter": "캐릭터 계산기",
     "titleResin": "레진 계산기",
+    "titleFriendship": "호감도 계산기",
+    "titleFate": "인연 가격 계산기",
     "goto": "{where}로 이동",
     "howToUse": "사용법",
     "guide": {
@@ -377,7 +500,12 @@
       "mora": "모라 (근사치 ±40)",
       "expWasted": "경험치 초과",
       "addToTodo": "할 일 목록에 추가",
-      "addedToTodo": "할 일 목록에 추가됐습니다"
+      "addedToTodo": "할 일 목록에 추가됐습니다",
+      "talent": [
+        "일반공격",
+        "원소전투스킬",
+        "원소폭발"
+      ]
     },
     "expTable": {
       "level": "레벨",
@@ -402,6 +530,30 @@
       "hours": "시간",
       "minutes": "분",
       "seconds": "초"
+    },
+    "friendship": {
+      "currentLevel": "현재 호감도 레벨",
+      "currentExp": "현재 호감도 게이지 (좌우로 드래그)",
+      "randomEventFarm": "돌발 월드 이벤트를 하루에 얼마나 완수합니까?",
+      "calculate": "계산",
+      "based": "모험레벨 {ar} 기준",
+      "change": "",
+      "result": "매일 의뢰 임무(일일 퀘스트)를 모두 완수하고 180 레진을 사용하는 경우",
+      "resultSerenitea": "그리고 추가로 캐릭터를 속세의 주전자에 배치한 경우 (최고 선계 선력)",
+      "resultDay": "{result}일"
+    },
+    "fate": {
+      "currency": "통화 선택...",
+      "firstTime": "초회",
+      "amount": "수량",
+      "genesis": "창세의 결정",
+      "first": "초회 보너스",
+      "total": "합계",
+      "price": "가격",
+      "totalGenesis": "총 창세의 결정",
+      "totalPrice": "총 가격",
+      "calculate": "{currency}{value}로 얻을 수 있는 창세의 결정 개수 계산",
+      "calculateFate": "필요한 액수 계산: {value}"
     }
   },
   "items": {
@@ -470,9 +622,11 @@
     "driveError": "Google Drive API를 불러올 수 없습니다.",
     "driveSignIn": "Google Drive에 로그인",
     "driveSignOut": "Google Drive 로그아웃",
+    "driveSignInErrorScope": "구글 드라이브 로그인 실패! 요구 권한을 확인하고 다시 시도해 주시기 바랍니다.",
     "synced": "동기화됨",
     "waiting": "대기 중...",
     "syncing": "동기화 중...",
+    "syncStatus": "동기화 상태:",
     "lastSync": "마지막 동기화:",
     "feedback": "버그, 잘못된 데이터를 발견하거나 또는 피드백이 있을 경우 메세지를 남겨주세요:",
     "or": "또는",
@@ -483,7 +637,20 @@
       "cancel": "취소",
       "delete": "삭제",
       "reset": "초기화"
-    }
+    },
+    "changelog": "변경 로그",
+    "exportDescription": "",
+    "exportButton": "데이터 가져오기 / 내보내기",
+    "export": "데이터 내보내기",
+    "download": "데이터 다운로드",
+    "import": "데이터 가져오기",
+    "selectFile": "JSON 파일 선택",
+    "exportInfo": "Paimon.moe에 저장된 모든 데이터 사본을 다운로드합니다",
+    "importWarning": "내보내기 전에 백업하는 것을 잊지 마세요! 모든 데이터가 교체됩니다!",
+    "importContinue": "계속",
+    "importSuccess": "가져오기 성공! 5초 걸립니다...",
+    "importFailed": "수입 실패!",
+    "email": "이메일:"
   },
   "privacypolicy": {
     "title": "개인정보처리방침",
@@ -574,6 +741,97 @@
   },
   "achievement": {
     "title": "업적",
-    "of": "/"
+    "of": "/",
+    "sort": "완료되지 않은 임무 우선 표시",
+    "search": "업적 검색",
+    "commissions": "의뢰 임무 (일일 퀘스트)",
+    "version": "버전",
+    "type": "종류",
+    "searchError": "업적 검색 실패: {query}"
+  },
+  "furnishing": {
+    "title": "가구",
+    "name": "이름",
+    "energy": "선력",
+    "load": "하중",
+    "ratio": "비율",
+    "using": "수량",
+    "interior": "실내",
+    "exterior": "실외",
+    "info": [
+      "해당 구역이 얼마나 많은 하중을 수용할 수 있는지 나타냅니다. 각 가구는 게임 내에 표시되지 않는 하중 값이 있으며, 이는 아래에 정리되어 있습니다.",
+      "(최댓값은 아직 확정되지 않았습니다!)"
+    ],
+    "hall": "거실",
+    "room": "{number}번 방",
+    "exteriorNum": "{number}번 구역",
+    "corridor": "복도",
+    "inventoryButton": "보관함",
+    "listButton": "목록",
+    "inventory": {
+      "title": "가구 보관함",
+      "subtitle": "벽 등 특수 카테고리는 표시되지 않습니다",
+      "all": "모두",
+      "openSets": "세트 보기"
+    },
+    "sets": {
+      "title": "가구 세트",
+      "subtitle": "가구 아이콘을 클릭하면 세부 정보가 나타납니다. 캐릭터 아이콘을 클릭하면 마킹을 할 수 있습니다. 상단의 보관함을 열어서 보유한 가구 개수를 설정하세요.",
+      "setPlaced": "배치됨으로 설정",
+      "setUnplaced": "배치되지 않음으로 설정",
+      "inInventory": "보유량",
+      "available": "배치 가능",
+      "used": "다른 세트에서 사용중"
+    }
+  },
+  "weapon": {
+    "title": "무기 목록",
+    "subtitle": "",
+    "name": "이름",
+    "type": "종류",
+    "rarity": "희귀도",
+    "atk": "공격력",
+    "secondary": "보조",
+    "critRate": "치명타 확률",
+    "critDamage": "치명타 피해",
+    "em": "원소 마스터리",
+    "er": "원소 충전 효율",
+    "atkPercent": "공격력",
+    "hpPercent": "HP",
+    "defPercent": "방어력",
+    "physicalDamage": "물리 피해 보너스",
+    "bow": "활",
+    "polearm": "장병기",
+    "sword": "한손검",
+    "catalyst": "법구",
+    "claymore": "양손검",
+    "ascensionMaterial": "돌파 재료",
+    "asc": "돌파",
+    "lvl": "레벨",
+    "baseAtk": "기본 공격력",
+    "recommendedCharacter": "추천 캐릭터"
+  },
+  "artifact": {
+    "title": "성유물 목록",
+    "name": "이름",
+    "maxRarity": "최대 ★",
+    "bonus2": "2 세트 효과",
+    "bonus4": "4 세트 효과",
+    "domain": "비경",
+    "artifact": "성유물",
+    "setPiece": "{piece} 세트 효과",
+    "recommendedCharacter": "추천 캐릭터 {piece} 세트"
+  },
+  "fishing": {
+    "title": "낚시 사전",
+    "subtitle": "",
+    "mondstadt": "몽그스타드",
+    "liyue": "리유에",
+    "inazuma": "이나즈마",
+    "setEmpty": "빈으로 설정",
+    "emptyTime": "이 자리가 비워진 시간:",
+    "clear": "삭제",
+    "save": "저장",
+    "cancel": "취소"
   }
 }

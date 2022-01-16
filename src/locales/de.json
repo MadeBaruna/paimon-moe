@@ -13,6 +13,7 @@
     "furnishing": "Dekorationen",
     "weapons": "Waffen",
     "artifacts": "Artefakte",
+    "fishing": "",
     "settings": "Einstellungen",
     "donate": "Spenden"
   },
@@ -109,6 +110,7 @@
     "geoDamageBonus": "Geo-SCH-Bonus",
     "sortBy": "Sortieren nach...",
     "talentBook": "Taltentbuch",
+    "bossItem": "",
     "ascensionMaterial": "Aufstiegsmaterialien",
     "talentStats": "Talent Statistik",
     "build": "Build",
@@ -141,6 +143,10 @@
     "import": {
       "title": "Gebetsverlauf importieren",
       "faqsButton": "FAQ - ZUERST LESEN",
+      "readFaq": "",
+      "openFaq": "",
+      "choosePlatform": "",
+      "chooseMethod": "",
       "nonew": "Keine neuen Gebete",
       "importNotice1": "Importierte Gebete werden je nach vorhandenen Daten überschrieben oder hinzugefügt",
       "importNotice2": "Falls du vorher keine Daten importiert hast wird dein erstes Gebet als Garantie 1 gezählt",
@@ -160,9 +166,11 @@
       "close": "Schließen",
       "invalidLink": "Ungültiger Link, bitte erneut überprüfen",
       "errorApi": "Die MiHoYo API hat einen Fehlercode zurück gegeben, bitte versuche es später erneut!",
+      "errorExpired": "",
       "timeout": "Verbindung unterbrochen, bitte versuche es später erneut",
       "differentAccount": "Diese Gebets-Daten sind für einen anderen Account, bitte separiere deine Accounts in den Einstellungen!",
       "invalidData": "Die API gab falsche Daten aus, versuche es später erneut",
+      "noNewData": "",
       "success": "Import erfolgreich 😀!",
       "server": "Wähle deinen Server:",
       "wishTallyCheck": "Reiche deine Gebets-Daten für die globale Anzahl an Gebeten ein",
@@ -171,6 +179,12 @@
         "Was man erhaltet:",
         "und",
         "Garantie aus Ihrem Wunschverlauf"
+      ],
+      "forceUpdateCheck": "",
+      "header": [
+        "",
+        "",
+        ""
       ],
       "faqs": {
         "title": "Gebetsverlauf importieren FAQ",
@@ -201,6 +215,10 @@
         "q7": "Es hat nicht meinen gesamten Gebetsverlauf gelesen!?",
         "a7": "Wunschhistorie, die älter als 6 Monate ist wird vom Mihoyo-Server selbst entfernt. Wenn Sie also igendwo kein Backup haben, ist es leider weg"
       },
+      "logLocation": {
+        "global": "",
+        "china": ""
+      },
       "guide": {
         "video": "Videoanleitung",
         "pc": [
@@ -209,6 +227,29 @@
           "Warte, bis es geladen hat und eine Browser-Seite sollte sich öffnen",
           "Kopiere den Link und füge ihn in in das Textfeld unten ein",
           "Link hier einfügen... https://webstatic..."
+        ],
+        "pc2": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "pclog": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "android": [
           "Öffne Gebet (im Spiel)",
@@ -232,13 +273,32 @@
           "Ein Browser sollte geöffnet werden. Kopieren Sie den Link und fügen Sie ihn unten ein",
           "Link hier einfügen... https://genshin.mihoyo..."
         ],
+        "ios2": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
         "ps": [
           "Du kannst diesen Importer nur verwenden, wenn du eine In-Game-Mail mit QR-Code hast, um das Web-Event zu öffnen",
           "Öffne Genshin Impact auf deiner PlayStation",
           "Öffne die Event-E-Mail mit dem QR-Code",
           "Scanne den QR-Code auf deinem Handy",
           "Kopiere den Link und füge ihn unten ein",
-          "Link hier einfügen..."
+          "Link hier einfügen...",
+          ""
         ],
         "pclocal": [
           "Wenn es Ihnen unangenehm ist, Ihre Feedback-URL zu teilen, können Sie diese Option nutzen, um den Wunsch auf Ihrem PC lokal zu bearbeiten. Dieses Skript liest die Log-Datei auf dem PC, um die Wunsch-Historie-URL zu erhalten.",
@@ -260,6 +320,8 @@
       "subtitle": "Wähle aus von wo deine Excel kommt:",
       "default": "Paimon.moe Export",
       "takagg": "TakaGG Gacha Export",
+      "genshinwishes": "",
+      "wishtally": "",
       "notice": [
         "Diese Funktion ist noch in der BETA bitte backup erst indem du in die Einstellungen gehst und dann auf Export zu Excel gehst!",
         "Wünsche mit dem gleichen Zeitstempel und Belohnungsnamen werden NICHT verändert (vorhandener Wunsch wird nicht neu geschrieben)",
@@ -268,7 +330,9 @@
       ],
       "selectFile": {
         "default": "Drag & Drop Paimon.moe Excel Datei hier oder klicken Sie hier, zum Auszuwählen",
-        "takagg": "Drag & Drop TakaGG gacha Export Excel Datei hier oder klicken Sie hier, zum Auszuwählen"
+        "takagg": "Drag & Drop TakaGG gacha Export Excel Datei hier oder klicken Sie hier, zum Auszuwählen",
+        "genshinwishes": "",
+        "wishtally": ""
       },
       "processing": "Wird verarbeitet...",
       "addedOn": "Eingefügt auf der:",
@@ -562,6 +626,7 @@
     "synced": "Synchronisiert",
     "waiting": "Warten...",
     "syncing": "Synchronisieren...",
+    "syncStatus": "",
     "lastSync": "Zuletzt synchronisiert:",
     "feedback": "Falls du irgendwelche Fehler oder falsche Daten gefunden hast oder ein Feedback geben willst, meld dich gerne",
     "or": "oder",
@@ -572,7 +637,20 @@
       "cancel": "Abbrechen",
       "delete": "Löschen",
       "reset": "Zurücksetzen"
-    }
+    },
+    "changelog": "",
+    "exportDescription": "",
+    "exportButton": "",
+    "export": "",
+    "download": "",
+    "import": "",
+    "selectFile": "",
+    "exportInfo": "",
+    "importWarning": "",
+    "importContinue": "",
+    "importSuccess": "",
+    "importFailed": "",
+    "email": ""
   },
   "privacypolicy": {
     "title": "Datenschutzrichtlinie",
@@ -743,5 +821,17 @@
     "artifact": "Artefakt",
     "setPiece": "{piece} Setbonus",
     "recommendedCharacter": "Empfohlene Figuren {piece} Set"
+  },
+  "fishing": {
+    "title": "",
+    "subtitle": "",
+    "mondstadt": "",
+    "liyue": "",
+    "inazuma": "",
+    "setEmpty": "",
+    "emptyTime": "",
+    "clear": "",
+    "save": "",
+    "cancel": ""
   }
 }
