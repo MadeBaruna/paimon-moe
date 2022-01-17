@@ -180,11 +180,11 @@
         "e",
         "pity do seu histórico de orações"
       ],
-      "forceUpdateCheck": "",
+      "forceUpdateCheck": "Forçar atualização do histórico de desejos (habilite isso apenas se o seu histórico de desejos não estiver atualizando)",
       "header": [
-        "",
-        "",
-        ""
+        "Importe e faça backup do seu histórico de desejos do Genshin Impact para mantê-lo por mais de 6 meses. Também rastreie automaticamente seu pity e estatísticas sobre os seus desejos!",
+        "Você também pode habilitar Drive Sync nas Configurações para sincronizar e fazer backup do seu histórico para o Google Drive",
+        "Entenda que o antigo link de feedback não funciona mais, por favor siga as novas instruções abaixo!"
       ],
       "faqs": {
         "title": "Importar Histórico de Orações FAQ",
@@ -288,8 +288,8 @@
           "Clique Sniff History > Escolha uma requisição que termine com .json (o link irá começar com https://hk4e-api-os.mihoyo.com/)",
           "Clique na aba Request e então copie o link e o cole abaixo",
           "Cole o link aqui... https://hk4e-api-os.mihoyo.com...",
-          "",
-          ""
+          "Se você tiver algum problema, veja o guia de solução de problemas",
+          "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
           "Você só pode usar esse método caso tenha um e-mail dentro do jogo com um QR Code para abrir uma página de evento web",
@@ -639,18 +639,18 @@
       "reset": "Resetar"
     },
     "changelog": "Registro de alterações",
-    "exportDescription": "",
-    "exportButton": "",
-    "export": "",
-    "download": "",
-    "import": "",
-    "selectFile": "",
-    "exportInfo": "",
-    "importWarning": "",
-    "importContinue": "",
-    "importSuccess": "",
-    "importFailed": "",
-    "email": ""
+    "exportDescription": "Você pode exportar e importar seus dados do Paimon.moe aqui",
+    "exportButton": "Exportar / Importar Dados",
+    "export": "Exportar Dados",
+    "download": "Baixar Dados",
+    "import": "Importar Dados",
+    "selectFile": "Selecione o arquivo JSON",
+    "exportInfo": "Baixe uma cópia de todos os seus dados salvos no Paimon.moe",
+    "importWarning": "Lembre-se de fazer backup de seus arquivos exportando primeiro! Todos os dados serão substituídos!",
+    "importContinue": "Continuar",
+    "importSuccess": "Importado com sucesso! Recarregando em 5 segundos...",
+    "importFailed": "Falha ao importar!",
+    "email": "Email:"
   },
   "privacypolicy": {
     "title": "Política de Privacidade",
@@ -823,15 +823,15 @@
     "recommendedCharacter": "Personagens recomendados {piece} peças"
   },
   "fishing": {
-    "title": "",
-    "subtitle": "",
-    "mondstadt": "",
-    "liyue": "",
-    "inazuma": "",
-    "setEmpty": "",
-    "emptyTime": "",
-    "clear": "",
-    "save": "",
-    "cancel": ""
+    "title": "Livro de Pesca",
+    "subtitle": "Marque o local de pesca como vazio quando você terminar de pescar todos os peixes para iniciar o temporizador de renascimento",
+    "mondstadt": "Mondstadt",
+    "liyue": "Liyue",
+    "inazuma": "Inazuma",
+    "setEmpty": "Marcar como vazio",
+    "emptyTime": "Tempo em que o local foi esvaziado:",
+    "clear": "Limpar",
+    "save": "Salvar",
+    "cancel": "Cancelar"
   }
 }
