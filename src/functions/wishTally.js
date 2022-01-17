@@ -58,7 +58,7 @@ export async function submitWishTally() {
       .slice(0, 5)
       .map((e) => [dayjs(e.time).unix().toString(), e.id, e.type, e.pity, e.group === 'group']);
 
-    for (let i = banner.length - 1; i >= Math.max(banner.length - 3, 0); i--) {
+    for (let i = banner.length - 1; i >= Math.max(banner.length - 7, 0); i--) {
       const total = banner[i].total;
       if (total === 0) continue;
 
