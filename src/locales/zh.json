@@ -247,7 +247,7 @@
           "打开祈愿记录的页面并等待祈愿记录刷新",
           "在键盘上按下WINDOWS+R的组合键，然后输入：",
           "将会有一个笔记本窗口自动打开，按下CTRL+F组合键然后搜索：",
-          "复制形如 https://webstatic until #/log the url looks like this: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log 的完整的链接",
+          "复制形如 https://webstatic 的链接直到 #/log ，完整的链接大概长这样: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
           "粘贴复制的内容到下面的文本框",
           "在这里粘贴你的链接... https://webstatic..."
         ],
