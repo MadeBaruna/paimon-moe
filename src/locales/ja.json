@@ -86,7 +86,7 @@
     "talents": "天賦",
     "passiveTalents": "固有天賦",
     "constellations": "命ノ星座",
-    "const": "凸",
+    "const": "命",
     "asc": "突破",
     "lvl": "レベル",
     "hp": "HP",
@@ -180,11 +180,11 @@
         "および",
         "の天井カウント"
       ],
-      "forceUpdateCheck": "",
+      "forceUpdateCheck": "祈願履歴を強制的に更新する (祈願履歴が更新されない場合のみ有効)",
       "header": [
-        "",
-        "",
-        ""
+        "ここで原神の祈願履歴をインポートしてバックアップし、6か月以上保存できます。また、あなたの祈願から天井を自動的にカウントして、統計することができます！",
+        "設定でドライブ同期を有効にして、Google ドライブに履歴をバックアップできます",
+        "バージョン2.3更新後、古いフィードバックリンクはもう動作しません。以下の新しい手順に従ってください!"
       ],
       "faqs": {
         "title": "祈願履歴のインポートに関するよくある質問",
@@ -288,8 +288,8 @@
           "Sniff Historyをタップ > Json型のRequestを選択してください(https://hk4e-api-os.mihoyo.com/から始まるリンク)",
           "Requestタブをタップし、Request Lineの内容をタップしてCopy Urlを選択してください",
           "ここに貼り付けてください。 https://hk4e-api-os.mihoyo.com...",
-          "",
-          ""
+          "何か問題が発生した場合は、トラブルシューティングガイドを参照してください",
+          "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
           "以下の方法は動作しない可能性があります。PlayStationアカウントをmiHoYoアカウントに紐づけ、pcおよびmobileの手順を用いてインポートすることも可能です。",
@@ -770,7 +770,7 @@
     "listButton": "リスト",
     "inventory": {
       "title": "家具倉庫",
-      "subtitle": "壁のような幾つの特別なカテゴリは表示されない",
+      "subtitle": "壁など一部の特殊なカテゴリは表示されません",
       "all": "全て",
       "openSets": "セットを見る"
     },
