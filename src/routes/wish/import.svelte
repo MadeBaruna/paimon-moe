@@ -59,6 +59,7 @@
     android: 'https://youtu.be/pe_aROJ8Av8',
     pc: 'https://www.youtube.com/watch?v=FCwZkHeIezw',
     pclog: 'https://www.youtube.com/watch?v=cl5HDd0bqKw',
+    ios: 'https://www.youtube.com/watch?v=WfBpraUq41c',
   };
 
   let types = {
