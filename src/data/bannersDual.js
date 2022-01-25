@@ -47,4 +47,26 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Gentry of Hermitage 3': [
+    {
+      name: 'Gentry of Hermitage',
+      image: 3,
+      shortName: 'Zhongli',
+      start: '2022-01-25 18:00:00',
+      end: '2022-02-15 14:59:59',
+      color: '#FFF5BF',
+      featured: ['zhongli'],
+      featuredRare: ['xingqiu', 'beidou', 'yanfei'],
+    },
+    {
+      name: 'Adrift in the Harbor',
+      image: 2,
+      shortName: 'Ganyu',
+      start: '2022-01-25 18:00:00',
+      end: '2022-02-15 14:59:59',
+      color: '#FFF5BF',
+      featured: ['ganyu'],
+      featuredRare: ['xingqiu', 'beidou', 'yanfei'],
+    },
+  ],
 };

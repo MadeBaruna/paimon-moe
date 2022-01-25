@@ -9,7 +9,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const promoted = ['xiao', 'shenhe'];
+  const promoted = ['ganyu', 'zhongli'];
   let current = 0;
 
   async function change(index) {
@@ -19,7 +19,7 @@
   }
 
   $: id = promoted[current];
-  $: buildData = Object.entries(builds[id].roles).sort((a, b) => a[1].recommended - b[1].recommended)[0];
+  $: buildData = Object.entries(builds[id].roles).sort((a, b) => b[1].recommended - a[1].recommended)[0];
   $: buildName = buildData[0];
   $: build = buildData[1];
 </script>

@@ -285,6 +285,26 @@ export const banners = {
     //   featuredRare: ['yun_jin', 'ningguang', 'chongyun'],
     //   timezoneDependent: true,
     // },
+    {
+      name: 'Gentry of Hermitage',
+      image: 3,
+      shortName: 'Zhongli',
+      start: '2022-01-25 18:00:00',
+      end: '2022-02-15 14:59:59',
+      color: '#FFF5BF',
+      featured: ['zhongli'],
+      featuredRare: ['xingqiu', 'beidou', 'yanfei'],
+    },
+    // {
+    //   name: 'Adrift in the Harbor',
+    //   image: 2,
+    //   shortName: 'Ganyu',
+    //   start: '2022-01-25 18:00:00',
+    //   end: '2022-02-15 14:59:59',
+    //   color: '#FFF5BF',
+    //   featured: ['ganyu'],
+    //   featuredRare: ['xingqiu', 'beidou', 'yanfei'],
+    // },
   ],
   weapons: [
     {
@@ -521,6 +541,16 @@ export const banners = {
       featured: ['calamity_queller', 'primordial_jade_winged-spear'],
       featuredRare: ['lithic_spear', 'the_flute', 'favonius_greatsword', 'the_widsith', 'favonius_warbow'],
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 24,
+      start: '2022-01-25 18:00:00',
+      end: '2022-02-15 14:59:59',
+      shortName: 'Amos',
+      color: '#b042f5',
+      featured: ['amos_bow', 'vortex_vanquisher'],
+      featuredRare: ['lithic_blade', 'favonius_sword', 'dragons_bane', 'favonius_codex', 'sacrificial_bow'],
     },
   ],
 };

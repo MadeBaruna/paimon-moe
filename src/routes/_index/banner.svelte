@@ -13,23 +13,23 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    xiao: {
-      name: 'Xiao',
+    zhongli: {
+      name: 'Zhongli',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    shenhe: {
-      name: 'Shenhe',
+    ganyu: {
+      name: 'Ganyu',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300024;
-  const image = 'shenhexiao.png';
+  const bannerId = 300025;
+  const image = 'zhongliganyu.png';
 
   let loading = true;
   let user = '';
