@@ -292,7 +292,7 @@ export const banners = {
       start: '2022-01-25 18:00:00',
       end: '2022-02-15 14:59:59',
       color: '#FFF5BF',
-      featured: ['zhongli'],
+      featured: ['zhongli', 'ganyu'],
       featuredRare: ['xingqiu', 'beidou', 'yanfei'],
     },
     // {
@@ -302,7 +302,7 @@ export const banners = {
     //   start: '2022-01-25 18:00:00',
     //   end: '2022-02-15 14:59:59',
     //   color: '#FFF5BF',
-    //   featured: ['ganyu'],
+    //   featured: ['zhongli', 'ganyu'],
     //   featuredRare: ['xingqiu', 'beidou', 'yanfei'],
     // },
   ],
