@@ -1,8 +1,16 @@
 <script>
+  import { onMount } from 'svelte';
+
   export let status;
   export let error;
 
   const dev = process.env.NODE_ENV === 'development';
+
+  let refreshUrl;
+
+  onMount(() => {
+    refreshUrl = `${location.href}?r=${new Date().getTime()}`;
+  });
 </script>
 
 <svelte:head>
@@ -25,7 +33,13 @@
   </p>
 
   {#if status === 500}
-    <p class="text-white text-xl mt-4 text-center">You can try refresh the page by pressing CTRL+F5</p>
+    <a
+      class="px-4 py-2 rounded-xl border-2 border-white border-opacity-25 hover:border-primary text-blue-400 hover:text-primary text-xl mt-4 text-center"
+      href={refreshUrl}
+    >
+      Click here to refresh
+    </a>
+    <p class="text-white text-xl mt-2 text-center">Or you can try refresh the page by pressing CTRL+F5</p>
   {/if}
 
   {#if dev && error.stack}
