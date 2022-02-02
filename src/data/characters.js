@@ -5455,6 +5455,31 @@ export const characters = {
         mora: 120000,
       },
     ],
+    material_atk: {
+      book: [
+        itemList.teachings_of_freedom,
+        itemList.guide_to_resistance,
+        itemList.guide_to_ballad,
+        itemList.guide_to_freedom,
+        itemList.guide_to_resistance,
+        itemList.philosophies_of_ballad,
+        itemList.philosophies_of_freedom,
+        itemList.philosophies_of_resistance,
+        itemList.philosophies_of_ballad,
+      ],
+      material: [
+        itemList.divining_scroll,
+        itemList.sealed_scroll,
+        itemList.sealed_scroll,
+        itemList.sealed_scroll,
+        itemList.sealed_scroll,
+        itemList.forbidden_curse_scroll,
+        itemList.forbidden_curse_scroll,
+        itemList.forbidden_curse_scroll,
+        itemList.forbidden_curse_scroll,
+      ],
+      boss: itemList.dvalins_sigh,
+    },
     material: {
       material: [
         itemList.firm_arrowhead,
