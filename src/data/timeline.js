@@ -1,6 +1,19 @@
 export const eventsData = [
   [
     {
+      name: '2.5 Special Program',
+      pos: '100% 85%',
+      image: 'special_program.jpg',
+      start: '2022-02-04 20:00:00',
+      end: '2022-02-12 00:00:00',
+      color: '#f0e5f6',
+      zoom: '150%',
+      url: 'https://www.twitch.tv/genshinimpactofficial',
+      startOnly: true,
+    },
+  ],
+  [
+    {
       name: 'Let the Arataki Gang Show Begin Web Event',
       pos: '100% 40%',
       image: 'let_the_arataki_gang_show_begin.jpg',
@@ -450,6 +463,16 @@ export const eventsData = [
       color: '#B6A1EA',
       image: 'paimon_bargain.png',
       description: 'Now selling: Barbara, Kaeya, and Blackcliff Weapons.',
+    },
+    {
+      name: "Paimon's Bargain - Beidou, Noelle, and Royal",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2022-02-01 04:00:00',
+      end: '2022-03-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Beidou, Noelle, and Royal Weapons.',
     },
   ],
   [
