@@ -10,6 +10,7 @@ export const eventsData = [
       zoom: '150%',
       url: 'https://www.twitch.tv/genshinimpactofficial',
       startOnly: true,
+      timezoneDependent: true,
     },
   ],
   [
