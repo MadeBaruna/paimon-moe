@@ -1,20 +1,6 @@
 export const eventsData = [
   [
     {
-      name: '2.5 Special Program',
-      pos: '100% 85%',
-      image: 'special_program.jpg',
-      start: '2022-02-04 20:00:00',
-      end: '2022-02-12 00:00:00',
-      color: '#f0e5f6',
-      zoom: '150%',
-      url: 'https://www.twitch.tv/genshinimpactofficial',
-      startOnly: true,
-      timezoneDependent: true,
-    },
-  ],
-  [
-    {
       name: 'Let the Arataki Gang Show Begin Web Event',
       pos: '100% 40%',
       image: 'let_the_arataki_gang_show_begin.jpg',
@@ -115,6 +101,19 @@ export const eventsData = [
       color: '#F18B53',
       zoom: '200%',
       url: 'https://www.hoyolab.com/article/1823190',
+      showOnHome: true,
+    },
+    {
+      name: 'Update Version 2.5',
+      pos: '100% 85%',
+      image: '2.5.jpg',
+      start: '2022-02-16 06:00:00',
+      end: '2022-02-24 00:00:00',
+      color: '#f0e5f6',
+      zoom: '150%',
+      url: 'https://youtu.be/S71sh48SaHc',
+      startOnly: true,
+      timezoneDependent: true,
       showOnHome: true,
     },
   ],

@@ -58,7 +58,7 @@
       }
     }
 
-    current.sort((a, b) => (dayjs(a.start).isAfter(dayjs(b.start)) ? 1 : -1));
+    current.sort((a, b) => (dayjs(a.end).isAfter(dayjs(b.end)) ? 1 : -1));
     upcoming.sort((a, b) => (dayjs(a.start).isAfter(dayjs(b.start)) ? 1 : -1));
   }
 
