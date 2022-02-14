@@ -103,19 +103,6 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/1823190',
       showOnHome: true,
     },
-    {
-      name: 'Update Version 2.5',
-      pos: '100% 85%',
-      image: '2.5.jpg',
-      start: '2022-02-16 06:00:00',
-      end: '2022-02-24 00:00:00',
-      color: '#f0e5f6',
-      zoom: '150%',
-      url: 'https://youtu.be/S71sh48SaHc',
-      startOnly: true,
-      timezoneDependent: true,
-      showOnHome: true,
-    },
   ],
   [
     {
@@ -218,6 +205,17 @@ export const eventsData = [
       image: 'fleeting_colors_in_flight.jpg',
       startOnly: true,
     },
+    {
+      name: 'Divine Ingenuity',
+      pos: '0% 15%',
+      zoom: '100%',
+      image: 'divine_ingenuity.jpg',
+      start: '2022-03-02 10:00:00',
+      end: '2022-03-21 03:59:59',
+      color: '#aad0e1',
+      url: 'https://www.hoyolab.com/article/3356118',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -264,6 +262,17 @@ export const eventsData = [
       end: '2022-02-15 14:59:59',
       color: '#FFF5BF',
       url: 'https://www.hoyolab.com/article/1823206',
+      showOnHome: true,
+    },
+    {
+      name: 'Three Realms Gateway Offering',
+      pos: '0% 0%',
+      zoom: '100%',
+      image: 'three_realms_gateway_offering.jpg',
+      start: '2022-02-17 10:00:00',
+      end: '2022-03-30 06:00:00',
+      color: '#9c9cef',
+      url: 'https://www.hoyolab.com/article/3356118',
       showOnHome: true,
     },
   ],
@@ -314,6 +323,18 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/1823218',
       showOnHome: true,
     },
+    {
+      name: 'Everbloom Violet - Yae Miko Banner',
+      pos: '40% 15%',
+      zoom: '200%',
+      image: 'everbloom_violet_1.jpg',
+      start: '2022-02-16 10:00:00',
+      end: '2022-03-08 17:59:59',
+      color: '#ffd1f9',
+      url: 'https://www.hoyolab.com/article/3355975',
+      showOnHome: true,
+      timezoneDependent: true,
+    },
   ],
   [
     {
@@ -359,6 +380,18 @@ export const eventsData = [
       color: '#FFAA4B',
       url: 'https://www.hoyolab.com/article/1823188',
       showOnHome: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '30% 40%',
+      zoom: '150%',
+      image: 'epitome_invocation_25.jpg',
+      start: '2022-02-16 10:00:00',
+      end: '2022-03-08 17:59:59',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/3355976',
+      showOnHome: true,
+      timezoneDependent: true,
     },
   ],
   [
@@ -432,6 +465,26 @@ export const eventsData = [
       description:
         "When the active character's Normal, Charged, or Plunging Attacks hit opponents multiple times within 2s, the character gains a stack of Emergence for 8s. This effect can be triggered once every 0.1s. Emergence will be cleared when the character goes down or leaves the field. When the character gains 15 Emergence stacks, the stacks will be cleared and a shockwave will be unleashed that deals True DMG to nearby opponents. After a shockwave is unleashed in this way, all party members will deal 25% increased DMG for 10s.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2022-03-01 04:00:00',
+      end: '2022-03-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When opponents take Electro-Charged DMG, their Electro RES decreases by 10% for 10s. Max 4 stacks. Each stack's duration is independent. Each enemy can receive this effect once every 1.2s",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2022-03-16 04:00:00',
+      end: '2022-04-01 04:00:00',
+      color: '#4299E1',
+      description:
+        "When the active character's Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts hit an opponent affected by Electro, a shockwave is created at that opponent's position, dealing True DMG. A shockwave may be produced in this manner every 2s",
+    },
   ],
   [
     {
@@ -494,6 +547,16 @@ export const eventsData = [
       end: '2022-02-14 03:59:59',
       color: '#6aa7e8',
       url: 'https://genshin.mihoyo.com/en/news/detail/17132',
+      timezoneDependent: true,
+    },
+    {
+      name: 'Battle Pass - Into the Shadows',
+      pos: '0% 12%',
+      image: 'into_the_shadows.jpg',
+      start: '2022-02-16 10:00:00',
+      end: '2022-03-28 03:59:59',
+      color: '#828dff',
+      url: 'https://www.hoyolab.com/article/3355980',
       timezoneDependent: true,
     },
   ],
