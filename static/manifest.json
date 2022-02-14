@@ -6,23 +6,10 @@
   "display": "standalone",
   "icons": [
     {
-      "src": "/favicon.png",
+      "src": "/images/manifest/paimon.png",
       "type": "image/png",
       "apple-touch-icon": "#efefef",
       "sizes": "192x192"
-    },
-    {
-      "src": "/favicon.png",
-      "type": "image/png",
-      "apple-touch-icon": "#efefef",
-      "sizes": "512x512"
-    },
-    {
-      "src": "/favicon.png",
-      "type": "image/png",
-      "apple-touch-icon": "#efefef",
-      "purpose": "maskable",
-      "sizes": "512x512"
     }
   ],
   "scope": "/",
@@ -35,8 +22,8 @@
       "url": "/wish",
       "icons": [
         {
-          "src": "/images/wish.png",
-          "sizes": "192x192"
+          "src": "/images/manifest/wish.png",
+          "sizes": "96x96"
         }
       ]
     },
@@ -47,8 +34,8 @@
       "url": "/calculator",
       "icons": [
         {
-          "src": "/images/calculator.png",
-          "sizes": "192x192"
+          "src": "/images/manifest/calculator.png",
+          "sizes": "96x96"
         }
       ]
     },
@@ -59,8 +46,8 @@
       "url": "/todo",
       "icons": [
         {
-          "src": "/images/todos.png",
-          "sizes": "192x192"
+          "src": "/images/manifest/todos.png",
+          "sizes": "96x96"
         }
       ]
     }

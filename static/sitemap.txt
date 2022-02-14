@@ -5,3 +5,8 @@ https://paimon.moe/calculator
 https://paimon.moe/items
 https://paimon.moe/todo
 https://paimon.moe/timeline
+https://paimon.moe/achievement
+https://paimon.moe/furnishing
+https://paimon.moe/weapons
+https://paimon.moe/artifacts
+https://paimon.moe/fishing
