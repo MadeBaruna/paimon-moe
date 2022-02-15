@@ -7731,4 +7731,122 @@ export const weaponList = {
       },
     ],
   },
+  kaguras_verity: {
+    name: "Kagura's Verity",
+    id: 'kaguras_verity',
+    rarity: 5,
+    atk: 46,
+    secondary: 'CRIT DMG',
+    type: weapons.catalyst,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.mask_of_the_wicked_lieutenant, amount: 5 },
+          { item: itemList.concealed_claw, amount: 5 },
+          { item: itemList.spectral_husk, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 5 },
+          { item: itemList.concealed_claw, amount: 18 },
+          { item: itemList.spectral_husk, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 9 },
+          { item: itemList.concealed_unguis, amount: 9 },
+          { item: itemList.spectral_heart, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 5 },
+          { item: itemList.concealed_unguis, amount: 18 },
+          { item: itemList.spectral_heart, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 9 },
+          { item: itemList.concealed_talon, amount: 14 },
+          { item: itemList.spectral_nucleus, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_kijin, amount: 6 },
+          { item: itemList.concealed_talon, amount: 27 },
+          { item: itemList.spectral_nucleus, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  oathsworn_eye: {
+    name: 'Oathsworn Eye',
+    id: 'oathsworn_eye',
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK',
+    type: weapons.catalyst,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.coral_branch_of_a_distant_sea, amount: 3 },
+          { item: itemList.concealed_claw, amount: 3 },
+          { item: itemList.spectral_husk, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.jeweled_branch_of_a_distant_sea, amount: 3 },
+          { item: itemList.concealed_claw, amount: 12 },
+          { item: itemList.spectral_husk, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.jeweled_branch_of_a_distant_sea, amount: 6 },
+          { item: itemList.concealed_unguis, amount: 6 },
+          { item: itemList.spectral_heart, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.jade_branch_of_a_distant_sea, amount: 3 },
+          { item: itemList.concealed_unguis, amount: 12 },
+          { item: itemList.spectral_heart, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.jade_branch_of_a_distant_sea, amount: 6 },
+          { item: itemList.concealed_talon, amount: 9 },
+          { item: itemList.spectral_nucleus, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.golden_branch_of_a_distant_sea, amount: 4 },
+          { item: itemList.concealed_talon, amount: 18 },
+          { item: itemList.spectral_nucleus, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
