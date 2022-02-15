@@ -1470,6 +1470,24 @@ export const builds = {
       },
     },
   },
+  yae_miko: {
+    roles: {
+      'ELECTRO DPS': {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: '',
+      },
+    },
+  },
   xingqiu: {
     roles: {
       'OFF-FIELD DPS': {

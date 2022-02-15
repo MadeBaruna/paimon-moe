@@ -841,4 +841,10 @@ export const itemList = {
     rarity: 5,
     parent: 'shivada_jade_sliver',
   },
+
+  the_meaning_of_aeons: {
+    id: 'the_meaning_of_aeons',
+    name: 'The Meaning of Aeons',
+    rarity: 5,
+  },
 };

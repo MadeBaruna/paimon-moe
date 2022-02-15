@@ -6397,6 +6397,151 @@ export const characters = {
     },
     element: elements.pyro,
   },
+  yae_miko: {
+    id: 'yae_miko',
+    name: 'Yae Miko',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 10372,
+      atk: 340,
+      def: 569,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: 'none',
+            amount: null,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 3,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.dragonheirs_false_fin,
+            amount: 2,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 10,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.dragonheirs_false_fin,
+            amount: 4,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 20,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.dragonheirs_false_fin,
+            amount: 8,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 30,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.dragonheirs_false_fin,
+            amount: 12,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 45,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.dragonheirs_false_fin,
+            amount: 20,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 60,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.old_handguard, itemList.kageuchi_handguard, itemList.famed_handguard],
+      book: [itemList.teachings_of_light, itemList.guide_to_light, itemList.philosophies_of_light],
+      boss: itemList.the_meaning_of_aeons,
+    },
+    element: elements.electro,
+  },
   yanfei: {
     id: 'yanfei',
     name: 'Yanfei',
