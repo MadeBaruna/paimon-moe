@@ -28,6 +28,7 @@
 
 <style>
   .tooltip {
-    @apply text-background rounded-xl bg-gray-400 border border-gray-800 p-2 absolute text-sm;
+    @apply p-2 absolute rounded-xl bg-gray-400 border border-gray-800;
+    @apply text-sm text-background z-10;
   }
 </style>

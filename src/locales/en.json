@@ -448,6 +448,10 @@
       "won": "Won 50:50",
       "lost": "Lost 50:50",
       "guaranteed": "Guaranteed"
+    },
+    "backupReminder": {
+      "title": "All data are saved on your browser!",
+      "desc": "So if by any chance the browser cache got deleted, your wish history will be gone! You can enable Google Drive sync on setting to backup your data, or download the data manually there."
     }
   },
   "calculator": {

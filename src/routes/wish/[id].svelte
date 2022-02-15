@@ -47,6 +47,7 @@
   let errorProcessingPull = null;
 
   const bannerType = bannerTypes[id];
+  const withRateIcon = bannerType === 'characters' || bannerType === 'weapons';
   let bannerChart;
   let pieChart;
 
@@ -208,16 +209,20 @@
       };
 
       if (item.rarity === 5) {
-        newPull.guaranteed = rateUp;
-        rateUp = !currentBanner.featured.includes(newPull.id);
-        newPull.loseRateOff = rateUp;
+        if (withRateIcon) {
+          newPull.guaranteed = rateUp;
+          rateUp = !currentBanner.featured.includes(newPull.id);
+          newPull.loseRateOff = rateUp;
+        }
 
         selectedBanners[currentBannerIndex].legendary.push(newPull);
         allLegendary.push(newPull);
       } else if (item.rarity === 4) {
-        newPull.guaranteed = rateUpRare;
-        rateUpRare = !currentBanner.featuredRare.includes(newPull.id);
-        newPull.loseRateOff = rateUpRare;
+        if (withRateIcon) {
+          newPull.guaranteed = rateUpRare;
+          rateUpRare = !currentBanner.featuredRare.includes(newPull.id);
+          newPull.loseRateOff = rateUpRare;
+        }
 
         allRare.push(newPull);
         if (pull.type === 'character') {
@@ -612,7 +617,7 @@
                           <Icon marginBottom={2} size={0.7} path={mdiStar} />
                         </Tooltip>
                       {/if}
-                    {:else if pull.rarity > 3}
+                    {:else if pull.guaranteed === true && withRateIcon}
                       <Tooltip title={$t('wish.rateon.guaranteed')}>
                         <Icon marginBottom={2} size={0.7} path={mdiStarOutline} className="opacity-50" />
                       </Tooltip>

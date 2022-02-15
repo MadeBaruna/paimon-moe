@@ -21,8 +21,9 @@
   import Input from '../../components/Input.svelte';
   import Select from '../../components/Select.svelte';
   import Icon from '../../components/Icon.svelte';
-  import { server } from '../../stores/server';
+  import { getTimeOffset, server } from '../../stores/server';
   import ImportFaqModal from './_importFaq.svelte';
+  import BackupReminderModal from './_backupReminder.svelte';
   import Textarea from '../../components/Textarea.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { getLocalSaveJson, readSave, updateSave } from '../../stores/saveManager';
@@ -32,6 +33,8 @@
   import { submitWishTally } from '../../functions/wishTally';
   import Ad from '../../components/Ad.svelte';
   import Checkbox from '../../components/Checkbox.svelte';
+  import { driveSignedIn } from '../../stores/dataSync';
+  import { banners } from '../../data/banners';
 
   const numberFormat = Intl.NumberFormat();
   let fetchController;
@@ -106,6 +109,8 @@
   let noNewData = false;
 
   let error = '';
+
+  let bannerList = [];
 
   let wishes = {};
 
@@ -370,6 +375,8 @@
       manualInput: false,
     });
 
+    if ($driveSignedIn === false) openBackupReminder();
+
     pushToast($t('wish.import.success'));
     goto('/wish');
   }
@@ -394,6 +401,9 @@
 
     const combined = [...localWishes, ...importedWishes];
 
+    let latestLegendary = null;
+    let latestRare = null;
+
     let rare = 0;
     let legendary = 0;
     for (let i = 0; i < combined.length; i++) {
@@ -408,14 +418,38 @@
       }
 
       if (rarity === 5) {
+        latestLegendary = combined[i];
         combined[i].pity = legendary;
         legendary = 0;
         // rare = 0;
       } else if (rarity === 4) {
+        latestRare = combined[i];
         combined[i].pity = rare;
         rare = 0;
       } else {
         combined[i].pity = 1;
+      }
+    }
+
+    let rateUpLegendary = false;
+    let rateUpRare = false;
+    if (type.id === 'character-event' || type.id === 'weapon-event') {
+      processBannerList(type.id);
+
+      if (latestLegendary !== null) {
+        const itemBanner = getBannerByTime(latestLegendary.time);
+        console.log(latestLegendary.time, itemBanner);
+        if (itemBanner && itemBanner.featured) {
+          rateUpLegendary = !itemBanner.featured.includes(latestLegendary.id);
+        }
+      }
+
+      if (latestRare !== null) {
+        const itemBanner = getBannerByTime(latestRare.time);
+        console.log(latestRare.time, itemBanner);
+        if (itemBanner && itemBanner.featured) {
+          rateUpRare = !itemBanner.featuredRare.includes(latestRare.id);
+        }
       }
     }
 
@@ -424,6 +458,10 @@
       legendary,
       rare,
       pulls: combined,
+      guaranteed: {
+        legendary: rateUpLegendary,
+        rare: rateUpRare,
+      },
     };
 
     await updateSave(`${prefix}${path}`, data);
@@ -600,6 +638,19 @@
     );
   }
 
+  function openBackupReminder() {
+    openModal(
+      BackupReminderModal,
+      {
+        close: closeModal,
+      },
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '500px' },
+      },
+    );
+  }
+
   function detectPlatform() {
     const userAgent = navigator.userAgent || navigator.vendor;
     if (/android/i.test(userAgent)) {
@@ -626,6 +677,35 @@
     setTimeout(() => {
       closeModal();
     }, 2000);
+  }
+
+  function processBannerList(bannerType) {
+    const type = bannerType === 'character-event' ? 'characters' : 'weapons';
+
+    bannerList = banners[type].map((e) => {
+      // banner data based on Asia time
+      const diff = e.timezoneDependent === true ? 8 - getTimeOffset() : 0;
+
+      const id = `${e.name} ${e.image}`;
+      const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
+      const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss');
+
+      return {
+        ...e,
+        id,
+        start: start.unix(),
+        end: end.unix(),
+      };
+    });
+  }
+
+  function getBannerByTime(time) {
+    const unixTime = dayjs(time).unix();
+    for (let i = bannerList.length - 1; i >= 0; i--) {
+      if (unixTime >= bannerList[i].start && unixTime < bannerList[i].end) {
+        return bannerList[i];
+      }
+    }
   }
 
   function sleep(ms) {

@@ -314,6 +314,17 @@ export const banners = {
     //   featured: ['zhongli', 'ganyu'],
     //   featuredRare: ['xingqiu', 'beidou', 'yanfei'],
     // },
+    {
+      name: 'Everbloom Violet',
+      image: 1,
+      shortName: 'Yae',
+      start: '2022-02-16 06:00:00',
+      end: '2022-03-08 17:59:59',
+      color: '#ffd1f9',
+      featured: ['yae_miko'],
+      featuredRare: ['thoma', 'diona', 'fischl'],
+      timezoneDependent: true,
+    },
   ],
   weapons: [
     {
@@ -580,6 +591,17 @@ export const banners = {
       color: '#b042f5',
       featured: ['amos_bow', 'vortex_vanquisher'],
       featuredRare: ['lithic_blade', 'favonius_sword', 'dragons_bane', 'favonius_codex', 'sacrificial_bow'],
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 25,
+      start: '2022-02-16 06:00:00',
+      end: '2022-03-08 17:59:59',
+      shortName: 'Verity',
+      color: '#b042f5',
+      featured: ['kaguras_verity', 'primordial_jade_cutter'],
+      featuredRare: ['wavebreakers_fin', 'sacrificial_sword', 'rainslasher', 'eye_of_perception', 'the_stringless'],
+      timezoneDependent: true,
     },
   ],
 };

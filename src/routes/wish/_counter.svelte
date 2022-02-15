@@ -3,7 +3,7 @@
 
   import { onMount, getContext } from 'svelte';
   import { slide } from 'svelte/transition';
-  import { mdiPencil, mdiStar, mdiChevronDown, mdiTableOfContents } from '@mdi/js';
+  import { mdiPencil, mdiStar, mdiChevronDown, mdiTableOfContents, mdiArrowUpCircle } from '@mdi/js';
   import debounce from 'lodash/debounce';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
@@ -18,6 +18,7 @@
   import dayjs from 'dayjs';
   import { weaponList } from '../../data/weaponList';
   import { getAccountPrefix } from '../../stores/account';
+  import Tooltip from '../../components/Tooltip.svelte';
 
   let numberFormat = Intl.NumberFormat();
 
@@ -40,6 +41,11 @@
 
   let showRarity = [true, true, false];
   let sortedPull = [];
+
+  let guaranteed = {
+    legendary: false,
+    rare: false,
+  };
 
   $: path = `wish-counter-${id}`;
   $: if ($fromRemote) {
@@ -199,6 +205,11 @@
       legendary = counterData.legendary;
       rare = counterData.rare;
       pulls = counterData.pulls || [];
+
+      if (counterData.guaranteed) {
+        guaranteed.legendary = counterData.guaranteed.legendary;
+        guaranteed.rare = counterData.guaranteed.rare;
+      }
     }
   }
 
@@ -278,7 +289,6 @@
     rare = 0;
     saveData();
   }
-
 </script>
 
 <div class="bg-item rounded-xl p-4 inline-flex flex-col w-full" style="height: min-content;">
@@ -310,7 +320,9 @@
       </span>
       {#if isEdit}
         <Input type="number" min={1} bind:value={totalEdit} />
-      {:else}<span class="font-black text-3xl text-white ml-4">{total}</span>{/if}
+      {:else}
+        <span class="font-black text-3xl text-white ml-4">{total}</span>
+      {/if}
     </div>
     <div
       class={`${
@@ -326,14 +338,20 @@
         </div>
       {/if}
       <span class="text-gray-200 whitespace-no-wrap flex-1">
-        5
-        <Icon path={mdiStar} size={0.75} className="mb-1" />
-        {$t('wish.pity')}
+        5★ {$t('wish.pity')}
         <br /><span class="text-gray-600">{$t('wish.guarantee', { values: { pity: legendaryPity } })}</span>
       </span>
       {#if isEdit}
         <Input type="number" min={1} bind:value={legendaryEdit} />
-      {:else}<span class="font-black text-3xl text-legendary-from ml-4">{legendary}</span>{/if}
+      {:else}
+        {#if guaranteed.legendary}
+          <span class="rate-tooltip" style="margin-bottom: 2px; margin-left: 2px;">
+            <Icon size={1} path={mdiArrowUpCircle} className="text-legendary-from" />
+            <span class="tooltip-content legendary">{$t('wish.detail.guaranteed')}</span>
+          </span>
+        {/if}
+        <span class="font-black text-3xl text-legendary-from ml-4">{legendary}</span>
+      {/if}
     </div>
     <div
       class={`${
@@ -349,14 +367,20 @@
         </div>
       {/if}
       <span class="text-gray-200 whitespace-no-wrap flex-1">
-        4
-        <Icon path={mdiStar} size={0.75} className="mb-1" />
-        {$t('wish.pity')}
+        4★ {$t('wish.pity')}
         <br /><span class="text-gray-600">{$t('wish.guarantee', { values: { pity: 10 } })}</span>
       </span>
       {#if isEdit}
         <Input type="number" min={1} bind:value={rareEdit} />
-      {:else}<span class="font-black text-3xl text-rare-from ml-4">{rare}</span>{/if}
+      {:else}
+        {#if guaranteed.rare}
+          <span class="rate-tooltip" style="margin-bottom: 2px; margin-left: 2px;">
+            <Icon size={1} path={mdiArrowUpCircle} className="text-rare-from" />
+            <span class="tooltip-content rare">{$t('wish.detail.guaranteed')}</span>
+          </span>
+        {/if}
+        <span class="font-black text-3xl text-rare-from ml-4">{rare}</span>
+      {/if}
     </div>
     {#if isEdit}
       <Button on:click={saveEdit} className="mt-4">Save</Button>
@@ -491,4 +515,31 @@
     }
   }
 
+  .rate-tooltip {
+    @apply relative;
+
+    .tooltip-content {
+      top: 30px;
+      right: 0px;
+      width: 250px;
+      @apply absolute;
+      @apply hidden;
+      @apply text-background;
+      @apply rounded-xl;
+      @apply p-2;
+      @apply text-sm z-20;
+      @apply border-background border-2;
+
+      &.legendary {
+        @apply bg-legendary-from;
+      }
+      &.rare {
+        @apply bg-rare-from;
+      }
+    }
+
+    &:hover .tooltip-content {
+      @apply block;
+    }
+  }
 </style>
