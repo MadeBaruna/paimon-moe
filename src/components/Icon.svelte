@@ -4,6 +4,7 @@
   export let color = null;
   export let flip = null;
   export let rotate = 0;
+  export let marginBottom = 0;
   export let spin = false;
   export let title = '';
   export let className = '';
@@ -35,19 +36,15 @@
       styles.push(['transform', transform.join(' ')]);
       styles.push(['transform-origin', 'center']);
     }
+    if (marginBottom > 0) {
+      styles.push(['margin-bottom', `${marginBottom}px`]);
+    }
     return styles.reduce((cur, item) => {
       return `${cur} ${item[0]}:${item[1]};`;
     }, '');
   };
   $: style = getStyles();
 </script>
-
-<style>
-  svg {
-    vertical-align: middle;
-    display: inline-block;
-  }
-</style>
 
 <svg viewBox="0 0 24 24" {style} class={className}>
   {#if title}
@@ -78,3 +75,10 @@
     <path d={path} />
   {/if}
 </svg>
+
+<style>
+  svg {
+    vertical-align: middle;
+    display: inline-block;
+  }
+</style>

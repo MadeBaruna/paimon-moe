@@ -8,7 +8,7 @@
 <script>
   import { t } from 'svelte-i18n';
   import { getContext, onMount, tick } from 'svelte';
-  import { mdiArrowLeft, mdiArrowUpCircle, mdiStar } from '@mdi/js';
+  import { mdiArrowLeft, mdiArrowUpCircle, mdiStar, mdiStarOff, mdiStarOutline } from '@mdi/js';
   import dayjs from 'dayjs';
   import Chart from 'chart.js';
 
@@ -16,6 +16,8 @@
   import { bannersDual } from '../../data/bannersDual';
 
   import Icon from '../../components/Icon.svelte';
+  import Tooltip from '../../components/Tooltip.svelte';
+  import Ad from '../../components/Ad.svelte';
   import TableHeader from '../../components/Table/TableHeader.svelte';
   import WishDetailModal from './_detail.svelte';
 
@@ -25,7 +27,6 @@
   import { fromRemote, readSave } from '../../stores/saveManager';
   import { getTimeOffset, server } from '../../stores/server';
   import { pushToast } from '../../stores/toast';
-  import Ad from '../../components/Ad.svelte';
 
   Chart.defaults.global.defaultFontColor = '#cbd5e0';
   Chart.defaults.global.defaultFontFamily = 'Poppins';
@@ -155,6 +156,7 @@
     let striped = false;
     let startBanner = false;
     let rateUp = false;
+    let rateUpRare = false;
     let lastBanner;
     let lastBannerIndex;
 
@@ -206,14 +208,17 @@
       };
 
       if (item.rarity === 5) {
-        if (currentBanner.featured) {
-          newPull.guaranteed = rateUp;
-          rateUp = !currentBanner.featured.includes(newPull.id);
-        }
+        newPull.guaranteed = rateUp;
+        rateUp = !currentBanner.featured.includes(newPull.id);
+        newPull.loseRateOff = rateUp;
 
         selectedBanners[currentBannerIndex].legendary.push(newPull);
         allLegendary.push(newPull);
       } else if (item.rarity === 4) {
+        newPull.guaranteed = rateUpRare;
+        rateUpRare = !currentBanner.featuredRare.includes(newPull.id);
+        newPull.loseRateOff = rateUpRare;
+
         allRare.push(newPull);
         if (pull.type === 'character') {
           selectedBanners[currentBannerIndex].rare.character.push(newPull);
@@ -454,7 +459,7 @@
 
   function calculateRareColor(percentage) {
     const opacity = percentage + 0.3;
-    return `opacity: ${opacity};`;
+    return `color: rgba(237, 242, 247, ${opacity});`;
   }
 
   function toggleShowRarity(index) {
@@ -596,7 +601,22 @@
                       ? calculateLegendaryColor((90 - pull.pity) / 90)
                       : calculateRareColor((10 - pull.pity) / 10)}
                   >
-                    {pull.pity}
+                    <span class="w-8 inline-block">{pull.pity}</span>
+                    {#if pull.guaranteed === false}
+                      {#if pull.loseRateOff}
+                        <Tooltip title={$t('wish.rateon.lost')}>
+                          <Icon marginBottom={2} size={0.7} path={mdiStarOff} />
+                        </Tooltip>
+                      {:else}
+                        <Tooltip title={$t('wish.rateon.won')}>
+                          <Icon marginBottom={2} size={0.7} path={mdiStar} />
+                        </Tooltip>
+                      {/if}
+                    {:else if pull.rarity > 3}
+                      <Tooltip title={$t('wish.rateon.guaranteed')}>
+                        <Icon marginBottom={2} size={0.7} path={mdiStarOutline} className="opacity-50" />
+                      </Tooltip>
+                    {/if}
                   </span>
                 </td>
                 <td class="border-t border-gray-700 pl-4 text-gray-200">
@@ -748,6 +768,10 @@
       @apply transform;
       @apply -rotate-90;
     }
+  }
+
+  .rate-star {
+    margin-bottom: 2px !important;
   }
 
   .rate-tooltip {

@@ -22,7 +22,9 @@
     "message": "Your best Genshin Impact companion! Help you plan what to farm with ascension calculator, also track your progress with todo and wish counter.",
     "visitor": "{count} visitors in last 7 days",
     "banner": {
-      "featured": ["Eula"],
+      "featured": [
+        "Eula"
+      ],
       "summoned": "Summoned",
       "percentage": "from all {rarity}",
       "avg": "Pity average",
@@ -134,7 +136,10 @@
     "manualButton": "Enable Manual Input",
     "errorBanner": "Banner time missmatch! Please adjust your server on settings page. Still not working? please leave a message on Discord 😅",
     "globalWishTally": "Global Wish Tally",
-    "pityTooltip": ["Shows your current {rarity} pity", "{count} pulls to guaranteed {rarity}"],
+    "pityTooltip": [
+      "Shows your current {rarity} pity",
+      "{count} pulls to guaranteed {rarity}"
+    ],
     "import": {
       "title": "Import Wish History",
       "faqsButton": "FAQ - READ FIRST",
@@ -170,7 +175,11 @@
       "server": "Select your server:",
       "wishTallyCheck": "Submit pity for global wish tally",
       "wishTally": "We are doing a global wish tally! You can submit your wish tally to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "forceUpdateCheck": "Force update wish history (enable only if your wish history is not updating)",
       "header": [
         "Import and backup your Genshin Impact wish history to keep it more than 6 months. Also automatically track your pity and statistic about your wishes!",
@@ -348,7 +357,11 @@
       "exportFinish": "Export success, please wait until the browser download the file!",
       "wishTallyTitle": "Submit Wish Tally",
       "wishTally": "We are doing a global wish tally! You can submit your wish tally to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "wishTallySubmit": "Submit Wish Tally",
       "wishTallyThankyou": "Thankyou for participating!",
       "manualTitle": "Manual Input Setting",
@@ -360,13 +373,22 @@
         "subtitle": "After a 1x Wish:",
         "pressWhenYouGet": "Press {button} when you get {rarity}★",
         "p1": "It will automatically add the lifetime pulls, 5★, and 4★ pity",
-        "p2": ["When the", "pity reaches 10, it will automatically be reset to 0"],
-        "p3": ["When the", "pity reaches 90, it will automatically be reset to 0"],
+        "p2": [
+          "When the",
+          "pity reaches 10, it will automatically be reset to 0"
+        ],
+        "p3": [
+          "When the",
+          "pity reaches 90, it will automatically be reset to 0"
+        ],
         "p4": [
           "After a 10x Wish, press",
           "but keep in mind that the pity counter might not be accurate, because there is no way to tell when the drop occured (maybe you got it on the 1st or even the 10th pull). To ensure that the counter is still accurate, you need to check the history table and add it one-by-one like you do 1x Wishes."
         ],
-        "p5": ["You can also press the", "button to edit the values manually!"],
+        "p5": [
+          "You can also press the",
+          "button to edit the values manually!"
+        ],
         "p6": [
           "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a",
           "or",
@@ -421,7 +443,12 @@
       "Wish history is not updated automatically, please import again to update your history!",
       "Paimon.moe cannot retrieve wish history older than 6 months because it's already deleted on miHoYo server, so your old wishes might not show.",
       "The data are saved on your browser, so it will be deleted if you clear your browser cache! Enable Google Drive sync on setting to backup your data!"
-    ]
+    ],
+    "rateon": {
+      "won": "Won 50:50",
+      "lost": "Lost 50:50",
+      "guaranteed": "Guaranteed"
+    }
   },
   "calculator": {
     "titleWeapon": "Weapon Calculator",
@@ -467,7 +494,11 @@
       "calculateTalent": "Calculate Talent Material?",
       "inputTalentLevel": "Input the 1st, 2nd & 3rd current talent level",
       "inputTalentNotice": "If it has different color, substract it by 3",
-      "inputTalent": ["1st talent lvl", "2nd talent lvl", "3rd talent lvl"],
+      "inputTalent": [
+        "1st talent lvl",
+        "2nd talent lvl",
+        "3rd talent lvl"
+      ],
       "talentToLevel": "to level",
       "calculate": "Calculate",
       "unknownInformation": "There are some unknown information",
@@ -476,7 +507,11 @@
       "expWasted": "EXP Wasted",
       "addToTodo": "Add to Todo List",
       "addedToTodo": "Added to Todo List",
-      "talent": ["Attack", "Skill", "Burst"]
+      "talent": [
+        "Attack",
+        "Skill",
+        "Burst"
+      ]
     },
     "expTable": {
       "level": "Level",
@@ -568,7 +603,10 @@
   "todo": {
     "title": "Todo List",
     "summary": "Summary",
-    "empty": ["Nothing to do yet 😀", "Add some from the Items page or the Calculator!"],
+    "empty": [
+      "Nothing to do yet 😀",
+      "Add some from the Items page or the Calculator!"
+    ],
     "farmableToday": "Farmable Today",
     "resin": "Resin needed",
     "based": "Based on AR:{ar} and WL:{wl}",

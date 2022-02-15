@@ -29,6 +29,7 @@ export const banners = {
       color: '#55E4B0',
       timezoneDependent: true,
       featured: ['venti'],
+      featuredRare: ['barbara', 'fischl', 'xiangling'],
     },
     {
       name: 'Sparkling Steps',
@@ -38,6 +39,7 @@ export const banners = {
       end: '2020-11-10 16:00:00',
       color: '#CA360E',
       featured: ['klee'],
+      featuredRare: ['xingqiu', 'sucrose', 'noelle'],
     },
     {
       name: 'Farewell of Snezhnaya',
@@ -48,6 +50,7 @@ export const banners = {
       color: '#50A3C0',
       timezoneDependent: true,
       featured: ['tartaglia'],
+      featuredRare: ['ningguang', 'beidou', 'diona'],
     },
     {
       name: 'Gentry of Hermitage',
@@ -57,6 +60,7 @@ export const banners = {
       end: '2020-12-22 15:00:00',
       color: '#D1A55C',
       featured: ['zhongli'],
+      featuredRare: ['xinyan', 'razor', 'chongyun'],
     },
     {
       name: 'Secretum Secretorum',
@@ -67,6 +71,7 @@ export const banners = {
       color: '#FCFE83',
       timezoneDependent: true,
       featured: ['albedo'],
+      featuredRare: ['fischl', 'bennett', 'sucrose'],
     },
     {
       name: 'Adrift in the Harbor',
@@ -76,6 +81,7 @@ export const banners = {
       end: '2021-02-02 15:00:00',
       color: '#6994DF',
       featured: ['ganyu'],
+      featuredRare: ['xingqiu', 'xiangling', 'noelle'],
     },
     {
       name: 'Invitation to Mundane Life',
@@ -86,6 +92,7 @@ export const banners = {
       color: '#2BE3F8',
       timezoneDependent: true,
       featured: ['xiao'],
+      featuredRare: ['diona', 'xinyan', 'beidou'],
     },
     {
       name: 'Dance of Lanterns',
@@ -95,6 +102,7 @@ export const banners = {
       end: '2021-03-02 16:00:00',
       color: '#AB6CD7',
       featured: ['keqing'],
+      featuredRare: ['barbara', 'bennett', 'ningguang'],
     },
     {
       name: 'Moment of Bloom',
@@ -104,6 +112,7 @@ export const banners = {
       end: '2021-03-16 15:00:00',
       color: '#BF5042',
       featured: ['hu_tao'],
+      featuredRare: ['xingqiu', 'xiangling', 'chongyun'],
     },
     {
       name: 'Ballad in Goblets',
@@ -316,6 +325,7 @@ export const banners = {
       color: '#f54e42',
       timezoneDependent: true,
       featured: ['aquila_favonia', 'amos_bow'],
+      featuredRare: ['the_flute', 'the_bell', 'the_widsith', 'the_stringless', 'favonius_lance'],
     },
     {
       name: 'Epitome Invocation',
@@ -325,6 +335,13 @@ export const banners = {
       shortName: 'Lost Prayer',
       color: '#f5c242',
       featured: ['lost_prayer_to_the_sacred_winds', 'wolfs_gravestone'],
+      featuredRare: [
+        'sacrificial_sword',
+        'sacrificial_bow',
+        'sacrificial_greatsword',
+        'sacrificial_fragments',
+        'dragons_bane',
+      ],
     },
     {
       name: 'Epitome Invocation',
@@ -335,6 +352,7 @@ export const banners = {
       color: '#f5ef42',
       timezoneDependent: true,
       featured: ['skyward_harp', 'memory_of_dust'],
+      featuredRare: ['the_flute', 'rainslasher', 'eye_of_perception', 'rust', 'favonius_lance'],
     },
     {
       name: 'Epitome Invocation',
@@ -344,6 +362,7 @@ export const banners = {
       shortName: 'Vortex',
       color: '#7ef542',
       featured: ['vortex_vanquisher', 'the_unforged'],
+      featuredRare: ['lions_roar', 'the_bell', 'favonius_codex', 'favonius_warbow', 'dragons_bane'],
     },
     {
       name: 'Epitome Invocation',
@@ -354,6 +373,13 @@ export const banners = {
       color: '#42ecf5',
       timezoneDependent: true,
       featured: ['summit_shaper', 'skyward_atlas'],
+      featuredRare: [
+        'favonius_sword',
+        'favonius_greatsword',
+        'favonius_lance',
+        'sacrificial_fragments',
+        'the_stringless',
+      ],
     },
     {
       name: 'Epitome Invocation',
@@ -363,6 +389,7 @@ export const banners = {
       shortName: 'Amos',
       color: '#424ef5',
       featured: ['amos_bow', 'skyward_pride'],
+      featuredRare: ['sacrificial_sword', 'the_bell', 'dragons_bane', 'eye_of_perception', 'favonius_warbow'],
     },
     {
       name: 'Epitome Invocation',
@@ -373,6 +400,7 @@ export const banners = {
       color: '#b042f5',
       timezoneDependent: true,
       featured: ['primordial_jade_winged-spear', 'primordial_jade_cutter'],
+      featuredRare: ['the_flute', 'sacrificial_greatsword', 'rust', 'eye_of_perception', 'favonius_lance'],
     },
     {
       name: 'Epitome Invocation',
@@ -382,6 +410,7 @@ export const banners = {
       shortName: 'Homa',
       color: '#f542c8',
       featured: ['wolfs_gravestone', 'staff_of_homa'],
+      featuredRare: ['lithic_blade', 'lithic_spear', 'lions_roar', 'sacrificial_bow', 'the_widsith'],
     },
     {
       name: 'Epitome Invocation',
