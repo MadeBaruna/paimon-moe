@@ -1,6 +1,6 @@
 {
   "sidebar": {
-    "home": "Home",
+    "home": "Beranda",
     "character": "Karakter",
     "wishCounter": "Wish Counter",
     "calculator": "Kalkulator",
@@ -443,7 +443,16 @@
       "Wish History tidak update secara otomatis, silahkan import lagi untuk mengupdate history nya!",
       "Paimon.moe hanya bisa mendapatkan history 6 bulan terakhir karena data history yang lama sudah dihapus di server miHoYo, jadi wish lama mu mungkin akan tidak muncul.",
       "Data tersimpan di browser mu, jadi datanya akan terhapus jika kamu menghapus cache browser! Nyalakan Google Drive sync di setting untuk membackup datamu!"
-    ]
+    ],
+    "rateon": {
+      "won": "Menang 50:50",
+      "lost": "Kalah 50:50",
+      "guaranteed": "Dijamin"
+    },
+    "backupReminder": {
+      "title": "Semua data disimpan pada browser mu!",
+      "desc": "Jadi jika terjadi sesuatu yang menyebabkan cache browser mu terhapus, data riwayat wish mu akan hilang! Kamu bisa menyalakan Google Drive sync di setting untuk membackup datamu, atau kamu bisa mendownload secara manual datanya di sana."
+    }
   },
   "calculator": {
     "titleWeapon": "Kalkulator Senjata",
@@ -451,6 +460,7 @@
     "titleResin": "Kalkulator Resin",
     "titleFriendship": "Kalkulator Exp Friendship",
     "titleFate": "Kalkulator Harga Fate",
+    "titleFateCount": "Kalkulator Jumlah Fate",
     "goto": "Ke {where}",
     "howToUse": "Cara Penggunaan",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "Total Harga",
       "calculate": "Hitung berapa banyak Genesis Crystal yang bisa didapatkan dengan {currency}{value}",
       "calculateFate": "Hitung berapa uang yang diperlukan untuk {value}"
+    },
+    "fateCount": {
+      "interwinedFate": "Interwined Fate",
+      "starglitter": "Starglitter",
+      "stardust": "Stardust",
+      "primogem": "Primogem",
+      "genesisCrystal": "Genesis Crystal",
+      "welkinMoon": "Welkin Moon (Hari)",
+      "dailyCommission": "Komisi Harian",
+      "type": "Tipe",
+      "amount": "Jumlah",
+      "totalPrimogem": "Total Primogem",
+      "calculate": "Hitung"
     }
   },
   "items": {
@@ -828,6 +851,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
+    "enkanomiya": "Enkanomiya",
     "setEmpty": "Set sebagai kosong",
     "emptyTime": "Waktu ketika spot nya kosong:",
     "clear": "Hapus",
