@@ -13,23 +13,16 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    zhongli: {
-      name: 'Zhongli',
-      rarity: 'legendary',
-      count: 0,
-      average: '...',
-      percentage: '...',
-    },
-    ganyu: {
-      name: 'Ganyu',
+    yae_miko: {
+      name: 'Yae Miko',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300025;
-  const image = 'zhongliganyu.png';
+  const bannerId = 300026;
+  const image = 'yae.png';
 
   let loading = true;
   let user = '';

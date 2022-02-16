@@ -9,7 +9,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const promoted = ['ganyu', 'zhongli'];
+  const promoted = ['thoma', 'fischl', 'diona'];
   let current = 0;
 
   async function change(index) {
@@ -27,7 +27,10 @@
 <div class="bg-item rounded-xl p-4 flex flex-col">
   <div class="flex items-center">
     {#each promoted as item, i}
-      <button class="pill {i === 0 ? 'mr-2' : ''} {current === i ? 'active' : ''}" on:click={() => change(i)}>
+      <button
+        class="pill {i < promoted.length - 1 ? 'mr-2' : ''} {current === i ? 'active' : ''}"
+        on:click={() => change(i)}
+      >
         {characters[item].name}
       </button>
     {/each}
