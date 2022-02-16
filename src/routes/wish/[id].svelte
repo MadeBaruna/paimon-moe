@@ -672,7 +672,7 @@
               {#if nextRateUp}
                 <span class="rate-tooltip" style="margin-bottom: 2px; margin-left: 2px;">
                   <Icon size={0.8} path={mdiArrowUpCircle} />
-                  <span class="tooltip-content">{$t('wish.detail.guaranteed')}</span>
+                  <span class="tooltip-content">{$t('wish.detail.guaranteed', { values: { rarity: 5 } })}</span>
                 </span>
               {/if}
             </p>

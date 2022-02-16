@@ -292,7 +292,7 @@
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "只有当你拥有带网页活动的二维码的游戏邮箱, 你才能获得网页链接, 使用这个导入功能",
+          "目前无法仅使用PS平台导入祈愿记录。请将您的PSN账号关联到米哈游通行证后使用其他平台导入您的记录。以下的步骤目前无法生效。",
           "在你的 PlayStation 里打开原神",
           "打开你的邮箱二维码",
           "用手机扫描二维码得到链接",
@@ -414,7 +414,7 @@
       "totalThisBanner": "这个池子的总抽数",
       "worth": "价值",
       "loading": "读取中... (如果卡住, 到设置中检查服务器)",
-      "guaranteed": "下一个 5★ 一定会是当期UP",
+      "guaranteed": "下一个 {rarity}★ 一定会是当期UP",
       "unknown_3_star": "未知三星"
     },
     "tally": {
@@ -443,7 +443,16 @@
       "祈愿记录不会自动更新，请手动导入更新祈愿历史。",
       "Paimon.moe 无法获得超过6个月的祈愿历史，因为它已经在 miHoyo 服务器上被删除，所以您的部分旧祈愿可能不会显示。",
       "数据保存在您的浏览器中，如果您清理浏览器缓存，记录会被删除！ 在设置中启用Google Drive 同步，可以备份您的数据！"
-    ]
+    ],
+    "rateon": {
+      "won": "小保底没歪",
+      "lost": "小保底歪了",
+      "guaranteed": "保底"
+    },
+    "backupReminder": {
+      "title": "所有的数据都被保存在浏览器缓存里！",
+      "desc": "也正因此，如果你清空浏览器的缓存，你的祈愿记录也会被一并删除！强烈建议在设置里打开Google Drive备份，或者手动下载数据并备份到个人电脑里。"
+    }
   },
   "calculator": {
     "titleWeapon": "武器计算器",
@@ -451,6 +460,7 @@
     "titleResin": "数值计算器",
     "titleFriendship": "好感度计算器",
     "titleFate": "祈愿价格计算器",
+    "titleFateCount": "攒球计算器",
     "goto": "跳转到 {where}",
     "howToUse": "如何使用",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "价格共计",
       "calculate": "计算{currency}{value} 可以获得多少创世结晶",
       "calculateFate": "计算 {value} 需要多少钱"
+    },
+    "fateCount": {
+      "interwinedFate": "纠缠之缘",
+      "starglitter": "星辉",
+      "stardust": "星尘",
+      "primogem": "原石",
+      "genesisCrystal": "创世结晶",
+      "welkinMoon": "空月祝福（剩余天数）",
+      "dailyCommission": "每日委托",
+      "type": "种类",
+      "amount": "数量",
+      "totalPrimogem": "换算原石",
+      "calculate": "计算"
     }
   },
   "items": {
@@ -701,8 +724,8 @@
     "or": "或"
   },
   "footer": {
-    "affliate": "Paimon.moe 与米哈游无关.",
-    "copyright": "原神的游戏内容和各种素材与商标的版权都属于米哈游.",
+    "affliate": "Paimon.moe 与米哈游无关。",
+    "copyright": "原神的游戏内容和各种素材与商标的版权都属于米哈游。",
     "discord": "加入我们的Discord",
     "community": "社群链接",
     "official": "官方链接"
@@ -828,6 +851,7 @@
     "mondstadt": "蒙德",
     "liyue": "璃月",
     "inazuma": "稻妻",
+    "enkanomiya": "渊下宫",
     "setEmpty": "捞空了",
     "emptyTime": "鱼被摸完的时间：",
     "clear": "复原",

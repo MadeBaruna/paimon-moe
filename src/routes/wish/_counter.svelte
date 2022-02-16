@@ -347,7 +347,7 @@
         {#if guaranteed.legendary}
           <span class="rate-tooltip" style="margin-bottom: 2px; margin-left: 2px;">
             <Icon size={1} path={mdiArrowUpCircle} className="text-legendary-from" />
-            <span class="tooltip-content legendary">{$t('wish.detail.guaranteed')}</span>
+            <span class="tooltip-content legendary">{$t('wish.detail.guaranteed', { values: { rarity: 5 } })}</span>
           </span>
         {/if}
         <span class="font-black text-3xl text-legendary-from ml-4">{legendary}</span>
@@ -376,7 +376,7 @@
         {#if guaranteed.rare}
           <span class="rate-tooltip" style="margin-bottom: 2px; margin-left: 2px;">
             <Icon size={1} path={mdiArrowUpCircle} className="text-rare-from" />
-            <span class="tooltip-content rare">{$t('wish.detail.guaranteed')}</span>
+            <span class="tooltip-content rare">{$t('wish.detail.guaranteed', { values: { rarity: 4 } })}</span>
           </span>
         {/if}
         <span class="font-black text-3xl text-rare-from ml-4">{rare}</span>

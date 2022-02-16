@@ -292,7 +292,7 @@
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "只有當你擁有帶網頁活動的 QR Code 的遊戲信箱, 你才能獲得網頁連結, 使用這個匯入功能",
+          "",
           "在你的 PlayStation 裡打開原神",
           "打開你的信箱 QR Code ",
           "用手機掃描 QR Code 得到連結",
@@ -414,7 +414,7 @@
       "totalThisBanner": "這個池子的總抽數",
       "worth": "價值",
       "loading": "讀取中... (如果卡住, 到設定中檢查伺服器)",
-      "guaranteed": "下一個 5★ 一定會是當期UP",
+      "guaranteed": "下一個 {rarity}★ 一定會是當期UP",
       "unknown_3_star": "未知三星"
     },
     "tally": {
@@ -443,7 +443,16 @@
       "祈願歷史紀錄無法自動更新，請重新匯入以更新歷史紀錄！",
       "Paimon.moe 無法取得超過 6 個月的祈願歷史紀錄，因為它已在 miHoYo 伺服器上刪除，因此您的舊祈願可能不會顯示。",
       "數據儲存在您的瀏覽器中，如果您清除瀏覽器快取數據將被刪除！ 在設定中啟用 Google Drive 同步以備份您的數據！"
-    ]
+    ],
+    "rateon": {
+      "won": "",
+      "lost": "",
+      "guaranteed": ""
+    },
+    "backupReminder": {
+      "title": "",
+      "desc": ""
+    }
   },
   "calculator": {
     "titleWeapon": "武器計算器",
@@ -451,6 +460,7 @@
     "titleResin": "數值計算器",
     "titleFriendship": "好感度計算機",
     "titleFate": "祈願價格計算機",
+    "titleFateCount": "",
     "goto": "跳到 {where}",
     "howToUse": "使用說明",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "總價格",
       "calculate": "計算 {currency}{value} 可獲得多少創世結晶",
       "calculateFate": "計算多少錢才能獲得 {value}"
+    },
+    "fateCount": {
+      "interwinedFate": "",
+      "starglitter": "",
+      "stardust": "",
+      "primogem": "",
+      "genesisCrystal": "",
+      "welkinMoon": "",
+      "dailyCommission": "",
+      "type": "",
+      "amount": "",
+      "totalPrimogem": "",
+      "calculate": ""
     }
   },
   "items": {
@@ -701,8 +724,8 @@
     "or": "或"
   },
   "footer": {
-    "affliate": "Paimon.moe 與米哈游無關.",
-    "copyright": "原神的遊戲內容和各種素材與商標的版權都屬於米哈游.",
+    "affliate": "Paimon.moe 與米哈遊無關。",
+    "copyright": "原神的遊戲內容和各種素材與商標的版權都屬於米哈遊。",
     "discord": "加入我們的Discord",
     "community": "社群連結",
     "official": "官方連結"
@@ -828,6 +851,7 @@
     "mondstadt": "蒙德城",
     "liyue": "璃月",
     "inazuma": "稻妻",
+    "enkanomiya": "",
     "setEmpty": "標記為空",
     "emptyTime": "釣點為空時間:",
     "clear": "清除",

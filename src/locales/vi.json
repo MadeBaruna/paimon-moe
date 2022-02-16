@@ -180,11 +180,11 @@
         "và",
         "lượt bảo hiểm từ lịch sử cầu nguyện của bạn"
       ],
-      "forceUpdateCheck": "",
+      "forceUpdateCheck": "Buộc cập nhật lịch sử cầu nguyện (chỉ bật nếu như lịch sử cầu nguyện đang không cập nhật)",
       "header": [
-        "",
-        "",
-        ""
+        "Nhập và sao lưu lịch sử cầu nguyện Genshin Impact của bạn để lưu trữ dữ liệu lâu hơn 6 tháng. Paimon.moe còn tự động đếm bảo hiểm và thống kê lượt cầu nguyện của bạn đấy!",
+        "Bạn cũng có thể bật Đồng Bộ với Drive trong Cài Đặt để đồng bộ hóa và sao lưu lịch sử của bạn lên Google Drive",
+        "Lưu ý là link Phản Hồi cũ giờ không còn hoạt động nữa, hãy làm theo các phương thức mới dưới đây!"
       ],
       "faqs": {
         "title": "Nhập Lịch Sử Cầu Nguyện FAQ",
@@ -288,11 +288,11 @@
           "Chọn Sniff History > Chọn một yêu cầu có kết thúc là .json (link bắt đầu bằng https://hk4e-api-os.mihoyo.com/)",
           "Chọn mục Request, sau đó copy link đó và dán xuống dưới đây",
           "Dán link vào đây... https://hk4e-api-os.mihoyo.com...",
-          "",
-          ""
+          "Nếu bạn gặp bất kỳ vấn đề gì, xem hướng dẫn xử lý lỗi",
+          "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "Bạn chỉ có thể sử dụng paimon.moe để nhập dữ liệu khi bạn có thư trong game cùng với mã QR để mở một sự kiện trên web",
+          "",
           "Mở Genshin Impact trên PlayStation của bạn",
           "Mở mail sự kiện có mã QR",
           "Quét mã QR bằng điện thoại của bạn",
@@ -414,7 +414,7 @@
       "totalThisBanner": "Tổng số lần cầu nguyện của banner",
       "worth": "Giá trí",
       "loading": "Loading... (Nếu bị kẹt, hãy đổi server ở cài đặt)",
-      "guaranteed": "5★ tiếp theo chắc chắn sẽ là nhân vật hoặc vũ khí được rate-up",
+      "guaranteed": "{rarity}★ tiếp theo chắc chắn sẽ là nhân vật hoặc vũ khí được rate-up",
       "unknown_3_star": "Không rõ"
     },
     "tally": {
@@ -443,7 +443,16 @@
       "Lịch sử cầu nguyên chưa được cập nhật tự động, vui lòng nhập lại để cập nhật lịch sử của bạn!",
       "Paimon.moe chỉ có thể nhập lịch sử cầu nguyện từ 6 tháng gần nhất, vì phần còn lại đã bị xóa khỏi server của miHoYo, nên lượt cầu nguyện cũ của bạn có thể sẽ không hiển thị.",
       "Dữ liệu đã được lưu trên trình duyệt của bạn, nên nó sẽ bị xóa nếu bạn xóa cache của trình duyệt! Hãy bật Google Drive sync trong setting để sao lưu dữ liệu của bạn!"
-    ]
+    ],
+    "rateon": {
+      "won": "",
+      "lost": "",
+      "guaranteed": ""
+    },
+    "backupReminder": {
+      "title": "",
+      "desc": ""
+    }
   },
   "calculator": {
     "titleWeapon": "Công Cụ Tính Cho Vũ Khí",
@@ -451,6 +460,7 @@
     "titleResin": "Công Cụ Tính Số Nhựa",
     "titleFriendship": "Công cụ tính Exp Yêu Thích",
     "titleFate": "Tính giá tiền của Mối Duyên",
+    "titleFateCount": "",
     "goto": "Đi đến {where}",
     "howToUse": "Hướng dẫn sử dụng",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "Tổng giá",
       "calculate": "Tính bao nhiêu Đá Sáng Thể bạn có thể nhận với {currency}{value}",
       "calculateFate": "Tính bao nhiêu tiền bạn cần cho {value}"
+    },
+    "fateCount": {
+      "interwinedFate": "",
+      "starglitter": "",
+      "stardust": "",
+      "primogem": "",
+      "genesisCrystal": "",
+      "welkinMoon": "",
+      "dailyCommission": "",
+      "type": "",
+      "amount": "",
+      "totalPrimogem": "",
+      "calculate": ""
     }
   },
   "items": {
@@ -701,8 +724,8 @@
     "or": "HOẶC"
   },
   "footer": {
-    "affliate": "Paimon.moe không liên kết với miHoYo.",
-    "copyright": "Genshin Impact, nội dung và dữ liệu trò chơi là thương hiệu và bản quyền thuộc miHoYo.",
+    "affliate": "Paimon.moe không liên kết với HoYoverse.",
+    "copyright": "Genshin Impact, nội dung và dữ liệu trò chơi là thương hiệu và bản quyền thuộc HoYoverse.",
     "discord": "Tham gia Discord của chúng tôi",
     "community": "Liên kết Cộng đồng",
     "official": "Liên Kết Chính Thức"
@@ -792,7 +815,7 @@
     "rarity": "Độ Hiếm",
     "atk": "ATK",
     "secondary": "Dòng Phụ",
-    "critRate": "TL Bạo",
+    "critRate": "Tỷ Lệ Bạo Kích",
     "critDamage": "ST Bạo",
     "em": "Tinh Thông Nguyên Tố",
     "er": "Hiệu Quả Nạp",
@@ -828,6 +851,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
+    "enkanomiya": "",
     "setEmpty": "Đã hết cá",
     "emptyTime": "Thời gian vị trí này hết cá:",
     "clear": "Xóa",

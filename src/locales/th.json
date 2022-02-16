@@ -292,7 +292,7 @@
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "คุณสามารถใช้งาน import ก็ต่อเมื่อคุณได้รับจดหมายภายในเกมที่มี QR Code สำหรับเข้ากิจกรรมบนเว็บไซต์",
+          "",
           "เปิด Genshin Impact บนเครื่อง PlayStation ของคุณ",
           "เปิดจดหมายในเกมที่มี QR Code",
           "สแกน QR Code ด้วยมือถือของคุณ",
@@ -414,7 +414,7 @@
       "totalThisBanner": "จำนวน pull ใน banner นี้",
       "worth": "มูลค่า",
       "loading": "กำลังโหลด... (ถ้าพบปัญหา โปรดเปลี่ยนเซิร์ฟเวอร์ในหน้าการตั้งค่า)",
-      "guaranteed": "ไอเทม 5★ จะได้ตัวละคร หรืออาวุธหน้าตู้แน่นอน",
+      "guaranteed": "ไอเทม {rarity}★ จะได้ตัวละคร หรืออาวุธหน้าตู้แน่นอน",
       "unknown_3_star": "Unknown"
     },
     "tally": {
@@ -443,7 +443,16 @@
       "ประวัติการอธิษฐานไม่ได้ถูกอัพเดทโดยระบบอัตโนมัติ กรุณานำเข้าอีกครั้งเพื่ออัพเดทข้อมูล",
       "เว็บไซต์ paimon.moe ไม่สามารถดึงประวัติการอธิษฐานที่เก่ากว่า 6 เดือนได้ เนื่องจากข้อมูลถูกลบออกไปจากเซิรฺ์ฟเวอร์ของ miHoYo แล้ว ดังนั้นประวัติการอธิษฐานเก่าๆ อาจจะไม่สามารถแสดงได้",
       "ข้อมูลต่างๆ ถูกบันทึกไว้บนเว็บเบราเซอร์ ซึ่งจะถูกลบเมื่อคุณล้างข้อมูลแคชบนเบราเซอร์! เปิดการใช้งานซิงค์ข้อมูลผ่าน Google Drive ที่หน้าตั้งค่าเพื่อสำรองข้อมูลของคุณ!"
-    ]
+    ],
+    "rateon": {
+      "won": "",
+      "lost": "",
+      "guaranteed": ""
+    },
+    "backupReminder": {
+      "title": "",
+      "desc": ""
+    }
   },
   "calculator": {
     "titleWeapon": "คำนวณการพัฒนาอาวุธ",
@@ -451,6 +460,7 @@
     "titleResin": "คำนวณจำนวน Resin",
     "titleFriendship": "คำนวณค่ามิตรภาพ",
     "titleFate": "คำนวณราคากาชา",
+    "titleFateCount": "",
     "goto": "ไปที่ {where}",
     "howToUse": "วิธีการใช้งาน",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "ราคารวม",
       "calculate": "คำนวณ Genesis Crystal ที่จะได้รับในจำนวนเงิน {value}{currency}",
       "calculateFate": "คำนวณเงินที่จะต้องใช้สำหรับ {value}"
+    },
+    "fateCount": {
+      "interwinedFate": "",
+      "starglitter": "",
+      "stardust": "",
+      "primogem": "",
+      "genesisCrystal": "",
+      "welkinMoon": "",
+      "dailyCommission": "",
+      "type": "",
+      "amount": "",
+      "totalPrimogem": "",
+      "calculate": ""
     }
   },
   "items": {
@@ -701,8 +724,8 @@
     "or": "หรือ"
   },
   "footer": {
-    "affliate": "Paimon.moe ไม่มีส่วนเกี่ยวข้องใด ๆ กับ miHoYo",
-    "copyright": "Genshin Impact, game content, และ materials เป็น trademarks และ copyrights ของ miHoYo",
+    "affliate": "Paimon.moe ไม่มีส่วนเกี่ยวข้องใด ๆ กับ HoYoverse",
+    "copyright": "Genshin Impact, game content, และ materials เป็น trademarks และ copyrights ของ HoYoverse",
     "discord": "เข้าร่วม Discord ของเรา",
     "community": "ลิงก์ community",
     "official": "ลิงก์ทางการ"
@@ -828,6 +851,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
+    "enkanomiya": "",
     "setEmpty": "ตั้งค่าให้จุดตกปลานี้ว่างเปล่า",
     "emptyTime": "เวลาที่จุดตกปลานี้ว่างเปล่า:",
     "clear": "ล้างข้อมูล",

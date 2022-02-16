@@ -292,7 +292,7 @@
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "Kamu hanya bisa mengimport wish mu jika kamu mempunyai mail yang ada QR Code nya (dipakai untuk membuka event web di hp)",
+          "Langkah di bawah saat ini tidak bisa digunakan, kamu bisa menghubungkan akun PSN mu ke akun miHoYo kemudian gunakan langkah PC/mobile",
           "Buka Genshin Impact di PlayStation mu",
           "Buka mail event yang ada QR Code nya",
           "Scan QR Code nya dengan HP mu",
@@ -414,7 +414,7 @@
       "totalThisBanner": "Total pull di banner ini",
       "worth": "Setara dengan",
       "loading": "Loading... (Kalau tidak selesai-selesai, ganti server di halaman settings)",
-      "guaranteed": "5★ selanjutnya pasti karakter atau senjata promotional",
+      "guaranteed": "{rarity}★ selanjutnya pasti karakter atau senjata promotional",
       "unknown_3_star": "Unknown"
     },
     "tally": {
@@ -724,8 +724,8 @@
     "or": "ATAU"
   },
   "footer": {
-    "affliate": "Paimon.moe tidak berafiliasi dengan miHoYo.",
-    "copyright": "Genshin Impact, konten game dan material adalah trademark dan copyright milik miHoYo.",
+    "affliate": "Paimon.moe tidak berafiliasi dengan HoYoverse.",
+    "copyright": "Genshin Impact, konten game dan material adalah trademark dan copyright milik HoYoverse.",
     "discord": "Gabung ke Discord",
     "community": "Link Komunitas",
     "official": "Link Official"

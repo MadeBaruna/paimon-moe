@@ -414,7 +414,7 @@
       "totalThisBanner": "Total pull on this banner",
       "worth": "Worth",
       "loading": "Loading... (If this stuck, change your server on settings page)",
-      "guaranteed": "The next 5★ is guaranteed to be the promotional character or weapon",
+      "guaranteed": "The next {rarity}★ is guaranteed to be the promotional character or weapon",
       "unknown_3_star": "Unknown"
     },
     "tally": {
@@ -724,8 +724,8 @@
     "or": "OR"
   },
   "footer": {
-    "affliate": "Paimon.moe is not affiliated with miHoYo.",
-    "copyright": "Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.",
+    "affliate": "Paimon.moe is not affiliated with HoYoverse.",
+    "copyright": "Genshin Impact, game content and materials are trademarks and copyrights of HoYoverse.",
     "discord": "Join Our Discord",
     "community": "Community Links",
     "official": "Official Links"

@@ -13,7 +13,7 @@
     "furnishing": "Dekorationen",
     "weapons": "Waffen",
     "artifacts": "Artefakte",
-    "fishing": "",
+    "fishing": "Angeln",
     "settings": "Einstellungen",
     "donate": "Spenden"
   },
@@ -110,7 +110,7 @@
     "geoDamageBonus": "Geo-SCH-Bonus",
     "sortBy": "Sortieren nach...",
     "talentBook": "Taltentbuch",
-    "bossItem": "",
+    "bossItem": "Boss",
     "ascensionMaterial": "Aufstiegsmaterialien",
     "talentStats": "Talent Statistik",
     "build": "Build",
@@ -143,10 +143,10 @@
     "import": {
       "title": "Gebetsverlauf importieren",
       "faqsButton": "FAQ - ZUERST LESEN",
-      "readFaq": "",
-      "openFaq": "",
-      "choosePlatform": "",
-      "chooseMethod": "",
+      "readFaq": "FAQ lesen",
+      "openFaq": "FAQ öffnen",
+      "choosePlatform": "Gerätetyp auswählen",
+      "chooseMethod": "Importverfahren auswählen",
       "nonew": "Keine neuen Gebete",
       "importNotice1": "Importierte Gebete werden je nach vorhandenen Daten überschrieben oder hinzugefügt",
       "importNotice2": "Falls du vorher keine Daten importiert hast wird dein erstes Gebet als Garantie 1 gezählt",
@@ -166,11 +166,11 @@
       "close": "Schließen",
       "invalidLink": "Ungültiger Link, bitte erneut überprüfen",
       "errorApi": "Die MiHoYo API hat einen Fehlercode zurück gegeben, bitte versuche es später erneut!",
-      "errorExpired": "",
+      "errorExpired": "Die URL ist nicht mehr gültig, bitte versuche es erneut!",
       "timeout": "Verbindung unterbrochen, bitte versuche es später erneut",
       "differentAccount": "Diese Gebets-Daten sind für einen anderen Account, bitte separiere deine Accounts in den Einstellungen!",
       "invalidData": "Die API gab falsche Daten aus, versuche es später erneut",
-      "noNewData": "",
+      "noNewData": "Es wurden keine neue Gebete gefunden! Es kann bis 1 Stunde dauern, bis der Gebetsverlauf aktualisiert werden.",
       "success": "Import erfolgreich 😀!",
       "server": "Wähle deinen Server:",
       "wishTallyCheck": "Reiche deine Gebets-Daten für die globale Anzahl an Gebeten ein",
@@ -180,11 +180,11 @@
         "und",
         "Garantie aus Ihrem Wunschverlauf"
       ],
-      "forceUpdateCheck": "",
+      "forceUpdateCheck": "Aktualisierung des Gebetsverlaufs erzwingen (nur aktivieren, wenn Gebetsverlauf sich nicht aktualisieren lässt)",
       "header": [
-        "",
-        "",
-        ""
+        "Importieren und sichern Sie Ihren Genshin Impact Gebetsverlauf, um ihn länger als 6 Monate zu behalten. Auch automatisch verfolgen Sie Ihre Gebetsgarantie und Statistik über Ihre Gebete!",
+        "Sie können Drive Sync in Einstellungen auch aktivieren, um Ihren Gebetsverlauf in Google Drive zu synchronisieren",
+        "Bitte beachten Sie, dass der alte Feedback-Link nicht mehr funktioniert, folgen Sie bitte den neuen Anweisungen unten!"
       ],
       "faqs": {
         "title": "Gebetsverlauf importieren FAQ",
@@ -217,7 +217,7 @@
       },
       "logLocation": {
         "global": "",
-        "china": ""
+        "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
       "guide": {
         "video": "Videoanleitung",
@@ -229,18 +229,18 @@
           "Link hier einfügen... https://webstatic..."
         ],
         "pc2": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Genshin Impact auf diesem PC öffnen (Wenn du mehrere Konten verwendest, starte bitte das Spiel neu)",
+          "Öffne dann den Gebetsverlauf im Spiel und warte darauf, bis er geladen wird",
+          "Drücke die Windows-Logo-Taste auf deiner Tastatur und suche dann nach Powershell",
+          "Öffne Windows Powershell, dann kopiere und füge das folgende Skript in die Powershell ein",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
+          "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
+          "Sie können das Skript",
+          "hier überprüfen",
+          "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
+          "Drücken Sie ENTER, dann wird ein Link in Ihre Zwischenablage kopiert",
+          "Füge den Link in das Textfeld unten ein",
+          "Link hier einfügen... https://webstatic..."
         ],
         "pclog": [
           "",
@@ -292,7 +292,7 @@
           ""
         ],
         "ps": [
-          "Du kannst diesen Importer nur verwenden, wenn du eine In-Game-Mail mit QR-Code hast, um das Web-Event zu öffnen",
+          "",
           "Öffne Genshin Impact auf deiner PlayStation",
           "Öffne die Event-E-Mail mit dem QR-Code",
           "Scanne den QR-Code auf deinem Handy",
@@ -414,7 +414,7 @@
       "totalThisBanner": "Gesamte Gebete auf diesem Banner",
       "worth": "Wert",
       "loading": "Wird geladen... (Wenn dies nicht funktioniert, ändere deinen Server auf in den Einstellungen)",
-      "guaranteed": "Der nächste 5★ ist garantiert die Aktionsfigur oder Waffe",
+      "guaranteed": "Der nächste {rarity}★ ist garantiert die Aktionsfigur oder Waffe",
       "unknown_3_star": "unbekannt"
     },
     "tally": {
@@ -443,7 +443,16 @@
       "Gebetsverlauf wird nicht automatisch aktualisiert, bitte importiere erneut, um deinen Verlauf zu aktualisieren!",
       "Paimon.moe kann ihren Wunschverlauf nicht abrufen, der älter als 6 Monate ist, da er bereits auf dem miHoYo-Server gelöscht wurde, so können möglicherweise ihre alten wünsche nicht abgerufen werden.",
       "Die Daten werden in Ihrem Browser gespeichert, so dass sie gelöscht werden, wenn Sie Ihren Browser-Cache löschen! Aktiviere Google Drive Sync bei denn Einstellung, um ihre Daten zu sichern!"
-    ]
+    ],
+    "rateon": {
+      "won": "",
+      "lost": "",
+      "guaranteed": ""
+    },
+    "backupReminder": {
+      "title": "",
+      "desc": ""
+    }
   },
   "calculator": {
     "titleWeapon": "Waffen-Rechner",
@@ -451,6 +460,7 @@
     "titleResin": "Harz-Rechner",
     "titleFriendship": "Freundes-Exp-Rechner",
     "titleFate": "Gebets-Preis-Rechner",
+    "titleFateCount": "",
     "goto": "Zu {where} gehen",
     "howToUse": "Wie man ... nutzt",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "Gesamtpreis",
       "calculate": "Berechne wie viele Schöpfungskristalle ich mit {currency}{value} bekommen kann",
       "calculateFate": "Berechnen Sie, wie viel Geld ich für {value} brauche"
+    },
+    "fateCount": {
+      "interwinedFate": "",
+      "starglitter": "",
+      "stardust": "",
+      "primogem": "",
+      "genesisCrystal": "",
+      "welkinMoon": "",
+      "dailyCommission": "",
+      "type": "",
+      "amount": "",
+      "totalPrimogem": "",
+      "calculate": ""
     }
   },
   "items": {
@@ -638,19 +661,19 @@
       "delete": "Löschen",
       "reset": "Zurücksetzen"
     },
-    "changelog": "",
+    "changelog": "Was ist neu?",
     "exportDescription": "",
     "exportButton": "",
-    "export": "",
+    "export": "Daten exportieren",
     "download": "",
-    "import": "",
-    "selectFile": "",
-    "exportInfo": "",
-    "importWarning": "",
-    "importContinue": "",
-    "importSuccess": "",
-    "importFailed": "",
-    "email": ""
+    "import": "Daten importieren",
+    "selectFile": "JSON-Datei auswählen",
+    "exportInfo": "Laden Sie eine Kopie aller Ihrer Daten in Paimon.moe herunter",
+    "importWarning": "Denken Sie daran, Ihre Daten durch den Export zuerst zu sichern! Alle Daten werden ersetzt!",
+    "importContinue": "Weiter",
+    "importSuccess": "Import erfolgreich! Laden in 5 Sekunden neu...",
+    "importFailed": "Import fehlgeschlagen!",
+    "email": "E-Mail:"
   },
   "privacypolicy": {
     "title": "Datenschutzrichtlinie",
@@ -701,8 +724,8 @@
     "or": "ODER"
   },
   "footer": {
-    "affliate": "Paimon.moe ist nicht mit miHoYo zugehörig.",
-    "copyright": "Genshin Impact, Spielinhalte und Materialien sind Warenzeichen und Urheberrechte von miHoYo.",
+    "affliate": "Paimon.moe ist nicht mit HoYoverse zugehörig.",
+    "copyright": "Genshin Impact, Spielinhalte und Materialien sind Warenzeichen und Urheberrechte von HoYoverse.",
     "discord": "Tritt unserem Discord Server bei",
     "community": "Community Links",
     "official": "Offizielle Links"
@@ -823,15 +846,16 @@
     "recommendedCharacter": "Empfohlene Figuren {piece} Set"
   },
   "fishing": {
-    "title": "",
-    "subtitle": "",
-    "mondstadt": "",
-    "liyue": "",
-    "inazuma": "",
-    "setEmpty": "",
-    "emptyTime": "",
-    "clear": "",
-    "save": "",
-    "cancel": ""
+    "title": "Angelfangbuch",
+    "subtitle": "Markiere den Angelplatz als leer, wenn du bereits alle Fische ausfischen, um den Respawn-Timer zu starten",
+    "mondstadt": "Mondstadt",
+    "liyue": "Liyue",
+    "inazuma": "Inazuma",
+    "enkanomiya": "",
+    "setEmpty": "Leer setzen",
+    "emptyTime": "Uhrzeit, wenn der Angelplatz geleert wurde:",
+    "clear": "Löschen",
+    "save": "Speichern",
+    "cancel": "Abbrechen"
   }
 }

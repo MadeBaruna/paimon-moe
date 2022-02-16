@@ -292,7 +292,7 @@
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "Você só pode usar esse método caso tenha um e-mail dentro do jogo com um QR Code para abrir uma página de evento web",
+          "",
           "Abra Genshin Impact no seu PlayStation",
           "Abra o email do evento que contém QR Code",
           "Escaneie o QR Code com seu celular",
@@ -414,7 +414,7 @@
       "totalThisBanner": "Total de orações nesse banner",
       "worth": "Valor",
       "loading": "Carregando... (Se travar, troque seu servidor na página de configurações)",
-      "guaranteed": "O próximo 5★ é garantido ser o item promocional, personagem ou arma",
+      "guaranteed": "O próximo {rarity}★ é garantido ser o item promocional, personagem ou arma",
       "unknown_3_star": "Desconhecido"
     },
     "tally": {
@@ -443,7 +443,16 @@
       "O histórico de orações não é atualizado automaticamente, por favor, importe novamente para atualizar o seu histórico!",
       "Paimon.moe não pode recuperar seu histórico de orações de 6 meses atrás pois já foi deletado nos servidores da miHoYo, então talvez suas orações antigas não apareçam.",
       "Os dados estão salvos no seu navegador, então serão deletados se você limpar o cache do navegador! Ative a sincronização do Google Drive nas suas configurações para fazer o backup dos seus dados!"
-    ]
+    ],
+    "rateon": {
+      "won": "",
+      "lost": "",
+      "guaranteed": ""
+    },
+    "backupReminder": {
+      "title": "",
+      "desc": ""
+    }
   },
   "calculator": {
     "titleWeapon": "Calculadora de Armas",
@@ -451,6 +460,7 @@
     "titleResin": "Calculadora de Resina",
     "titleFriendship": "Calculadora de Experiência de Amizade",
     "titleFate": "Calculadora de Preço Fixo",
+    "titleFateCount": "",
     "goto": "Ir para {where}",
     "howToUse": "Como Usar",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "Preço total",
       "calculate": "Calcule quantos Cristais Gênesis eu posso ter com {currency}{value}",
       "calculateFate": "Calcule quanto dinheiro eu preciso para {value}"
+    },
+    "fateCount": {
+      "interwinedFate": "",
+      "starglitter": "",
+      "stardust": "",
+      "primogem": "",
+      "genesisCrystal": "",
+      "welkinMoon": "",
+      "dailyCommission": "",
+      "type": "",
+      "amount": "",
+      "totalPrimogem": "",
+      "calculate": ""
     }
   },
   "items": {
@@ -701,8 +724,8 @@
     "or": "ou"
   },
   "footer": {
-    "affliate": "Paimon.moe não está afiliada com a miHoYo.",
-    "copyright": "Genshin Impact, os conteúdo e materiais do jogo são marcas registradas e de direitos autorais da miHoYo.",
+    "affliate": "Paimon.moe não está afiliada com a HoYoverse.",
+    "copyright": "Genshin Impact, os conteúdo e materiais do jogo são marcas registradas e de direitos autorais da HoYoverse.",
     "discord": "Junte-se ao Discord",
     "community": "Links da Comunidade",
     "official": "Links Oficiais"
@@ -828,6 +851,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
+    "enkanomiya": "",
     "setEmpty": "Marcar como vazio",
     "emptyTime": "Tempo em que o local foi esvaziado:",
     "clear": "Limpar",

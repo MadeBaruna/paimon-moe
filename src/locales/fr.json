@@ -180,11 +180,11 @@
         "et",
         "de votre historique de voeux"
       ],
-      "forceUpdateCheck": "",
+      "forceUpdateCheck": "Forcer la mise à jour de l'historique de vœux (À activer uniquement si votre historique de vœux ne se met pas à jour)",
       "header": [
-        "",
-        "",
-        ""
+        "Importez et sauvegardez votre historique de vœux de Genshin Impact afin de le conserver plus de 6 mois. De plus, suivez automatique votre pity et les statistiques de vos vœux !",
+        "Vous pouvez également activer Drive Sync dans les Paramètres afin de synchroniser et sauvegarder l'historique sur votre Google Drive",
+        "Veuillez noter que l'ancien lien de rétroaction ne fonctionne plus, veuillez suivre les nouvelles instructions ci-dessous !"
       ],
       "faqs": {
         "title": "FAQ de l'importation de l'historique des voeux",
@@ -252,9 +252,9 @@
           "Collez le lien ici... https://webstatic..."
         ],
         "android": [
-          "",
-          "",
-          "",
+          "Ouvrez les Vœux (dans le jeu)",
+          "Cliquez sur Historique",
+          "Attendez le chargement des données",
           "Coupez votre connection internet (Wi-Fi / Données Mobiles)",
           "Cliquez sur rafraîchir dans le coin en haut à droite",
           "La page devrait afficher une erreur et du texte en noir",
@@ -288,11 +288,11 @@
           "Cliquez sur Sniff History > Choisissez une requête qui se termine par .json (le lien commençant par https://hk4e-api-os.mihoyo.com/)",
           "Cliquez sur l'onglet Demander, puis copiez le lien et collez-le ci-dessous",
           "Collez le lien ici... https://hk4e-api-os.mihoyo.com...",
-          "",
-          ""
+          "En cas de problème, consultez le guide de dépannage",
+          "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "Vous pouvez uniquement utiliser l'importation si vous avez un mail en jeu avec un QR code pour ouvrir l'évenement web",
+          "",
           "Ouvrez Genshin Impact sur votre PlayStation",
           "Ouvrez le mail de l'évenement qui contient le QR code",
           "Scannez le QR code avec votre téléphone",
@@ -414,7 +414,7 @@
       "totalThisBanner": "Nombre de voeux sur la bannière",
       "worth": "Valeur",
       "loading": "Chargement... (Si cela ne charge pas, changez le serveur sur la page des paramètres)",
-      "guaranteed": "Le prochain 5★ sera forcément le personnage ou arme en tête de bannière",
+      "guaranteed": "Le prochain {rarity}★ sera forcément le personnage ou arme en tête de bannière",
       "unknown_3_star": "Inconnu"
     },
     "tally": {
@@ -443,7 +443,16 @@
       "L'Historique de Vœux n'est pas mis à jour automatiquement, veuillez importer à nouveau pour mettre à jour votre historique !",
       "Paimon.moe ne peut pas récupérer l'Historique de Vœux de plus de 6 mois car celui-ci a déjà été supprimé des serveurs de miHoYo, donc vos anciens vœux pourraient ne pas être affichés.",
       "Les données sont enregistrées dans votre navigateur, donc elles seront supprimées si vous videz le cache de votre navigateur ! Activez la synchronisation Google Drive dans les paramètres pour sauvegarder vos données !"
-    ]
+    ],
+    "rateon": {
+      "won": "",
+      "lost": "",
+      "guaranteed": ""
+    },
+    "backupReminder": {
+      "title": "",
+      "desc": ""
+    }
   },
   "calculator": {
     "titleWeapon": "Calculateur d'arme",
@@ -451,6 +460,7 @@
     "titleResin": "Calculateur de résine",
     "titleFriendship": "Calculateur d'Exp d'affinité",
     "titleFate": "Calculateur de prix de pierre de vœux",
+    "titleFateCount": "",
     "goto": "Allez sur {where}",
     "howToUse": "Comment utiliser",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "Prix total",
       "calculate": "Calculer combien de Cristaux Primaires je peux avoir avec {currency}{value}",
       "calculateFate": "Calculez combien d'argent j'ai besoin pour {value}"
+    },
+    "fateCount": {
+      "interwinedFate": "",
+      "starglitter": "",
+      "stardust": "",
+      "primogem": "",
+      "genesisCrystal": "",
+      "welkinMoon": "",
+      "dailyCommission": "",
+      "type": "",
+      "amount": "",
+      "totalPrimogem": "",
+      "calculate": ""
     }
   },
   "items": {
@@ -623,7 +646,7 @@
     "driveSignIn": "Connexion avec Google Drive",
     "driveSignOut": "Déconnexion Google Drive",
     "driveSignInErrorScope": "Échec de la connexion au lecteur ! Veuillez vous reconnecter et vérifier les autorisations requises !",
-    "synced": "Synchroniser",
+    "synced": "Synchronisé",
     "waiting": "Attente...",
     "syncing": "Synchronisation...",
     "syncStatus": "Statut de la synchronisation :",
@@ -701,8 +724,8 @@
     "or": "ou"
   },
   "footer": {
-    "affliate": "Paimon.moe n'est pas affilié à miHoYo.",
-    "copyright": "Genshin Impact, les contenus du jeu ainsi que les différents matériaux sont des marques déposées de MiHoYo.",
+    "affliate": "Paimon.moe n'est pas affilié à HoYoverse.",
+    "copyright": "Genshin Impact, les contenus du jeu ainsi que les différents matériaux sont des marques déposées de HoYoverse.",
     "discord": "Rejoignez notre Discord",
     "community": "Liens de la communauté",
     "official": "Liens officiels"
@@ -828,6 +851,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
+    "enkanomiya": "",
     "setEmpty": "Définir comme vide",
     "emptyTime": "Temps où la case est vide :",
     "clear": "Effacer",

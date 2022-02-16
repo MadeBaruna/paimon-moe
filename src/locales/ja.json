@@ -55,7 +55,7 @@
       "join": "Discordに参加する"
     },
     "items": {
-      "title": "今日の秘境素材",
+      "title": "本日入手可能",
       "detail": "アイテム",
       "sunday": "日曜日には全ての素材を入手できます😁"
     },
@@ -414,7 +414,7 @@
       "totalThisBanner": "このバナーでの祈願回数",
       "worth": "に使用した原石の合計",
       "loading": "読み込み中... (固まったら設定でアカウントのサーバを確かめてください)",
-      "guaranteed": "次回の5★はピックアップの排出が確定",
+      "guaranteed": "次回の{rarity}★はピックアップの排出が確定",
       "unknown_3_star": "不明の3★"
     },
     "tally": {
@@ -443,7 +443,16 @@
       "祈願履歴は自動的に更新されません。新しい記録がある場合はもう一度インポートしてください！",
       "最近6ヶ月間より以前の祈願履歴はmiHoYoサーバーから削除されるため、paimon.moeは取得することができません。",
       "データはご利用のブラウザに保存されるため、ブラウザのキャッシュをクリアすると削除されます！設定からGoogle Driveを用いてバックアップしておくことをおすすめします！"
-    ]
+    ],
+    "rateon": {
+      "won": "",
+      "lost": "",
+      "guaranteed": ""
+    },
+    "backupReminder": {
+      "title": "",
+      "desc": ""
+    }
   },
   "calculator": {
     "titleWeapon": "武器計算ツール",
@@ -451,6 +460,7 @@
     "titleResin": "樹脂計算ツール",
     "titleFriendship": "好感度計算ツール",
     "titleFate": "祈願出費計算ツール",
+    "titleFateCount": "",
     "goto": "{where} へ移動",
     "howToUse": "使用方法",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "合計価格",
       "calculate": "{currency} {value} で入手可能な創世結晶数を計算！",
       "calculateFate": "{value} 個の入手に必要な金額を計算！"
+    },
+    "fateCount": {
+      "interwinedFate": "",
+      "starglitter": "",
+      "stardust": "",
+      "primogem": "",
+      "genesisCrystal": "",
+      "welkinMoon": "",
+      "dailyCommission": "",
+      "type": "",
+      "amount": "",
+      "totalPrimogem": "",
+      "calculate": ""
     }
   },
   "items": {
@@ -701,8 +724,8 @@
     "or": "または"
   },
   "footer": {
-    "affliate": "Paimon.moe は miHoYo とは関係ありません。",
-    "copyright": "原神、ゲームコンテンツおよび素材は miHoYo の商標および著作権です。",
+    "affliate": "Paimon.moe は HoYoverse とは関係ありません。",
+    "copyright": "原神、ゲームコンテンツおよび素材は HoYoverse の商標および著作権です。",
     "discord": "Discordに参加する",
     "community": "コミュニティリンク",
     "official": "公式リンク"
@@ -828,6 +851,7 @@
     "mondstadt": "モンド",
     "liyue": "璃月",
     "inazuma": "稲妻",
+    "enkanomiya": "",
     "setEmpty": "釣り場を空にする",
     "emptyTime": "釣り場が空になった時刻：",
     "clear": "クリア",

@@ -292,7 +292,7 @@
           ""
         ],
         "ps": [
-          "Solo puedes usar este importador si tienes un main dentro del juego con un código QR para abrir un evento web",
+          "",
           "Abre Genshin Impact en tu PlayStation",
           "Abre el mail del evento que contiene el código QR",
           "Escanea el código QR con tu teléfono",
@@ -414,7 +414,7 @@
       "totalThisBanner": "Total de tiradas en este banner",
       "worth": "Valor",
       "loading": "Cargando... (Si esto se bloquea, cambia tu servidor en la página de configuración)",
-      "guaranteed": "El siguiente 5★ está garantizado ya que es el personaje o arma promocional",
+      "guaranteed": "El siguiente {rarity}★ está garantizado ya que es el personaje o arma promocional",
       "unknown_3_star": "Unknown"
     },
     "tally": {
@@ -443,7 +443,16 @@
       "¡El Historial de Deseos no se actualiza automáticamente, por favor, importa de nuevo para actualizar tu historial!",
       "Paimon.moe no puede recuperar el historial más antiguo de 6 meses porque ya ha sido borrado del servidor de miHoYo, por lo que tus deseos antiguos podrían no mostrarse.",
       "Los datos son guardados en tu navegador, por lo que ¡serán borrados si limpias la caché de tu navegador! ¡Habilita la sincronización de Google Drive en Configuración para salvaguardar tus datos!"
-    ]
+    ],
+    "rateon": {
+      "won": "",
+      "lost": "",
+      "guaranteed": ""
+    },
+    "backupReminder": {
+      "title": "",
+      "desc": ""
+    }
   },
   "calculator": {
     "titleWeapon": "Calculadora de Armas",
@@ -451,6 +460,7 @@
     "titleResin": "Calculadora de Resina",
     "titleFriendship": "Calculadora de Exp de Amistad",
     "titleFate": "Calculadora de Precio de Tiradas",
+    "titleFateCount": "",
     "goto": "Ir a {where}",
     "howToUse": "Cómo se usa",
     "guide": {
@@ -554,6 +564,19 @@
       "totalPrice": "Precio Total",
       "calculate": "Calcular cuántos Cristales Génesis puedo conseguir con {currency}{value}",
       "calculateFate": "Calcular cuánto dinero necesito para {value}"
+    },
+    "fateCount": {
+      "interwinedFate": "",
+      "starglitter": "",
+      "stardust": "",
+      "primogem": "",
+      "genesisCrystal": "",
+      "welkinMoon": "",
+      "dailyCommission": "",
+      "type": "",
+      "amount": "",
+      "totalPrimogem": "",
+      "calculate": ""
     }
   },
   "items": {
@@ -701,8 +724,8 @@
     "or": "O"
   },
   "footer": {
-    "affliate": "aimon.moe no está afiliado a miHoYo.",
-    "copyright": "Genshin Impact, el contenido del juego y los materiales son marcas comerciales y derechos de autor de miHoYo.",
+    "affliate": "Paimon.moe no está afiliado a HoYoverse.",
+    "copyright": "Genshin Impact, el contenido del juego y los materiales son marcas comerciales y derechos de autor de HoYoverse.",
     "discord": "Únete a nuestro Discord",
     "community": "Enlaces a la comunidad",
     "official": "Links Oficiales"
@@ -828,6 +851,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
+    "enkanomiya": "",
     "setEmpty": "Poner como vacío",
     "emptyTime": "Tiempo cuando el punto está vacío:",
     "clear": "Borrar",
