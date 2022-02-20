@@ -32,7 +32,7 @@
       "detail": "Global Wish Tally"
     },
     "wish": {
-      "message": "Import your wish history to keep it more than 6 months! Also automatically count your pity and statistic about your wishes with fancy charts 📊",
+      "message": "Import your wish history to keep it more than 6 months! Also automatically count your pity and statistics about your wishes with fancy charts 📊",
       "latest": "Your Last Wish",
       "banner": "Banner",
       "time": "Time",
@@ -60,11 +60,11 @@
       "sunday": "Sunday can farm all items 😁"
     },
     "calculator": {
-      "title": "🧮 Calculate Character and Weapons ascension material and talent book! All the calculations can be added to the Todo list, it will show you how much resin you need too!",
+      "title": "🧮 Calculate Character and Weapons ascension material and talent books! All the calculations can be added to the Todo list, which will show you how much resin you need too!",
       "detail": "Calculator"
     },
     "twitter": {
-      "title": "Follow my Twitter, will occasionally post sneak peak what I currently develop and latest update to paimon.moe!",
+      "title": "Follow my Twitter, I will occasionally post sneak peak what I currently develop and latest update to paimon.moe!",
       "detail": "Follow Twitter"
     },
     "achievement": {
@@ -72,7 +72,7 @@
       "detail": "Achievement"
     },
     "furnishing": {
-      "title": "Check what furnishing you need to make to complete a sets. And also you can view the load of each furnishing.",
+      "title": "Check what furnishings you need to make to complete sets. And also you can view the load of each furnishing.",
       "detail": "Furnishing"
     }
   },
@@ -165,12 +165,12 @@
       "import": "Import",
       "close": "Close",
       "invalidLink": "Invalid link, please check it again",
-      "errorApi": "Error code returned from MiHoYo API, please try again later!",
+      "errorApi": "Error code returned from HoYoverse API, please try again later!",
       "errorExpired": "Link expired, please try again!",
       "timeout": "Connection timeout, please wait a moment and try again later",
       "differentAccount": "This wish history is for another account, please separate your account first on Settings menu!",
       "invalidData": "Invalid data returned from API, try again later",
-      "noNewData": "There is no new wish, please wait about 1 hour for the wish data to update!",
+      "noNewData": "There are no new wishes, please wait about 1 hour for the wish data to update!",
       "success": "Import success 😀!",
       "server": "Select your server:",
       "wishTallyCheck": "Submit pity for global wish tally",
@@ -441,8 +441,8 @@
     },
     "note": [
       "Wish history is not updated automatically, please import again to update your history!",
-      "Paimon.moe cannot retrieve wish history older than 6 months because it's already deleted on miHoYo server, so your old wishes might not show.",
-      "The data are saved on your browser, so it will be deleted if you clear your browser cache! Enable Google Drive sync on setting to backup your data!"
+      "Paimon.moe cannot retrieve wish history older than 6 months because it's already deleted on the HoYoverse server, so your old wishes might not show.",
+      "The data is saved on your browser, so it will be deleted if you clear your browser cache! Enable the Google Drive sync on setting to backup your data!"
     ],
     "rateon": {
       "won": "Won 50:50",
@@ -450,7 +450,7 @@
       "guaranteed": "Guaranteed"
     },
     "backupReminder": {
-      "title": "All data are saved on your browser!",
+      "title": "All data is saved on your browser!",
       "desc": "So if by any chance the browser cache got deleted, your wish history will be gone! You can enable Google Drive sync on setting to backup your data, or download the data manually there."
     }
   },
