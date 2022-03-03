@@ -9,7 +9,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const promoted = ['thoma', 'fischl', 'diona'];
+  const promoted = ['yae_miko'];
   let current = 0;
 
   async function change(index) {
@@ -25,7 +25,7 @@
 </script>
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
-  <div class="flex items-center">
+  <!-- <div class="flex items-center flex-wrap">
     {#each promoted as item, i}
       <button
         class="pill {i < promoted.length - 1 ? 'mr-2' : ''} {current === i ? 'active' : ''}"
@@ -34,8 +34,8 @@
         {characters[item].name}
       </button>
     {/each}
-  </div>
-  <div class="mt-4">
+  </div> -->
+  <div>
     <div class="flex items-center">
       <img src="/images/characters/{id}.png" alt={characters[id].name} class="w-12 h-12 mr-2 rounded-full" />
       <p class="font-semibold text-white text-lg">{buildName} Build</p>
