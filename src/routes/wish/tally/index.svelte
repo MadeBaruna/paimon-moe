@@ -3,9 +3,8 @@
   import { onMount, tick } from 'svelte';
   import Chart from 'chart.js';
 
-  import { number, t } from 'svelte-i18n';
+  import { t } from 'svelte-i18n';
   import Ad from '../../../components/Ad.svelte';
-  import Button from '../../../components/Button.svelte';
   import Icon from '../../../components/Icon.svelte';
   import Select from '../../../components/Select.svelte';
   import { banners } from '../../../data/banners';
@@ -41,11 +40,33 @@
     standard: 0,
   };
 
+  let bannerIndex = banners.characters.length - 1;
   let selectedType = types[0];
+
+  if (typeof window !== 'undefined') {
+    const urlParams = new URLSearchParams(window.location.search);
+    const idNumber = urlParams.get('id');
+    if (idNumber) {
+      switch (idNumber.toString()[0]) {
+        case '2':
+          selectedType = types[2];
+          break;
+        case '3':
+          selectedType = types[0];
+          break;
+        case '4':
+          selectedType = types[1];
+          break;
+      }
+
+      bannerIndex = (Number(idNumber) % typeNumber[selectedType.value]) - 1;
+    }
+  }
+
   let type = selectedType.value;
-  let banner = banners.characters[banners.characters.length - 1];
-  let selectedBanner = { label: `${banner.name} ${banner.image}`, value: banners.characters.length - 1 };
-  let selectedIndex = 0;
+  let banner = banners[type][bannerIndex];
+  let selectedBanner = { label: `${banner.name} ${banner.image}`, value: bannerIndex };
+  let selectedIndex = banners[type].length - 1 - bannerIndex;
   let featured = {
     type,
     items: banner.featured,
@@ -86,6 +107,10 @@
     };
 
     getData();
+
+    const url = new URL(window.location.href);
+    url.searchParams.set('id', id);
+    window.history.pushState(null, null, url);
   }
 
   function onChangeBanner() {
@@ -97,6 +122,10 @@
     };
 
     getData();
+
+    const url = new URL(window.location.href);
+    url.searchParams.set('id', id);
+    window.history.pushState(null, null, url);
   }
 
   async function getData() {
