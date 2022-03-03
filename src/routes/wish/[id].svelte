@@ -369,7 +369,14 @@
           },
           scales: {
             yAxes: [{ stacked: true, gridLines: { color: '#2d3748' } }],
-            xAxes: [{ stacked: true }],
+            xAxes: [
+              {
+                stacked: true,
+                ticks: {
+                  autoSkip: false,
+                },
+              },
+            ],
           },
         },
       });
