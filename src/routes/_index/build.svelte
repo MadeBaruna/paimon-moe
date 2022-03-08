@@ -1,6 +1,7 @@
 <script>
   import { createEventDispatcher, tick } from 'svelte';
   import { mdiChevronRight } from '@mdi/js';
+  import { t } from 'svelte-i18n';
 
   import { characters } from '../../data/characters';
   import { builds } from '../../data/build';
@@ -9,7 +10,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const promoted = ['yae_miko'];
+  const promoted = ['raiden_shogun', 'sangonomiya_kokomi'];
   let current = 0;
 
   async function change(index) {
@@ -25,17 +26,14 @@
 </script>
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
-  <!-- <div class="flex items-center flex-wrap">
+  <div class="flex items-center flex-wrap -m-1">
     {#each promoted as item, i}
-      <button
-        class="pill {i < promoted.length - 1 ? 'mr-2' : ''} {current === i ? 'active' : ''}"
-        on:click={() => change(i)}
-      >
-        {characters[item].name}
+      <button class="pill m-1 {current === i ? 'active' : ''}" on:click={() => change(i)}>
+        {$t(characters[item].name)}
       </button>
     {/each}
-  </div> -->
-  <div>
+  </div>
+  <div class="mt-2">
     <div class="flex items-center">
       <img src="/images/characters/{id}.png" alt={characters[id].name} class="w-12 h-12 mr-2 rounded-full" />
       <p class="font-semibold text-white text-lg">{buildName} Build</p>

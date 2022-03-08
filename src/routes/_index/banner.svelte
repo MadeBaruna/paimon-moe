@@ -13,8 +13,15 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yae_miko: {
-      name: 'Yae Miko',
+    sangonomiya_kokomi: {
+      name: 'Kokomi',
+      rarity: 'legendary',
+      count: 0,
+      average: '...',
+      percentage: '...',
+    },
+    raiden_shogun: {
+      name: 'Raiden',
       rarity: 'legendary',
       count: 0,
       average: '...',
@@ -22,7 +29,7 @@
     },
   };
   const bannerId = 300026;
-  const image = 'yae.png';
+  const image = 'raidenkokomi.png';
 
   let loading = true;
   let user = '';
@@ -67,12 +74,12 @@
 <div class="bg-item rounded-xl p-4 flex flex-col">
   <div class="relative">
     <img src="/images/home/{image}" alt="banner" style="min-height: 150px;" />
-    <div class="flex flex-wrap text-white justify-end items-center absolute bottom-0 w-full">
+    <div class="flex flex-wrap text-white justify-between items-center absolute bottom-0 w-full">
       {#each Object.entries(featured) as [_, item], i}
         <div
           class="flex flex-col pt-2"
           style="background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
-          {i === 0 ? 'margin-right: 10%;' : ''}"
+          {i === 0 ? 'margin-right: 10%; margin-left: 30%;' : ''}"
         >
           <h3 class="text-3xl mr-4 font-black leading-6 text-right">
             {#if loading}
