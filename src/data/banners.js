@@ -325,6 +325,26 @@ export const banners = {
       featuredRare: ['thoma', 'diona', 'fischl'],
       timezoneDependent: true,
     },
+    {
+      name: 'Reign of Serenity',
+      image: 2,
+      shortName: 'Raiden',
+      start: '2022-03-08 18:00:00',
+      end: '2022-03-29 14:59:59',
+      color: '#D0AEF2',
+      featured: ['raiden_shogun', 'sangonomiya_kokomi'],
+      featuredRare: ['bennett', 'xinyan', 'kujou_sara'],
+    },
+    // {
+    //   name: 'Drifting Luminescence',
+    //   image: 2,
+    //   shortName: 'Kokomi',
+    //   start: '2022-03-08 18:00:00',
+    //   end: '2022-03-29 14:59:59',
+    //   color: '#53caf3',
+    //   featured: ['raiden_shogun', 'sangonomiya_kokomi'],
+    //   featuredRare: ['bennett', 'xinyan', 'kujou_sara'],
+    // },
   ],
   weapons: [
     {
