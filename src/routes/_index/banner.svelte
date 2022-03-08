@@ -28,7 +28,7 @@
       percentage: '...',
     },
   };
-  const bannerId = 300026;
+  const bannerId = 300027;
   const image = 'raidenkokomi.png';
 
   let loading = true;

@@ -626,9 +626,9 @@ export const banners = {
     {
       name: 'Epitome Invocation',
       image: 26,
-      start: '2022-02-16 06:00:00',
-      end: '2022-03-08 17:59:59',
-      shortName: 'Verity',
+      start: '2022-03-08 18:00:00',
+      end: '2022-03-29 14:59:59',
+      shortName: 'Engulfing',
       color: '#b042f5',
       featured: ['engulfing_lightning', 'everlasting_moonglow'],
       featuredRare: ['akuoumaru', 'mouuns_moon', 'lions_roar', 'favonius_lance', 'sacrificial_fragments'],
