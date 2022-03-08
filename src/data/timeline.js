@@ -116,13 +116,13 @@ export const eventsData = [
     },
     {
       name: 'Of Drink A-Dreaming',
-      pos: '0% 40%',
+      pos: '0% 50%',
       image: 'of_drink_a_dreaming.jpg',
       start: '2022-03-10 10:00:00',
       end: '2022-03-21 03:59:59',
       color: '#e4d9c5',
-      zoom: '130%',
-      url: 'https://www.hoyolab.com/article/3643660',
+      zoom: '180%',
+      url: 'https://www.hoyolab.com/article/3714058',
       showOnHome: true,
     },
     {
