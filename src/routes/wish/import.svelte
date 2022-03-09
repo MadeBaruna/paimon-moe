@@ -97,6 +97,8 @@
   let forceUpdate = false;
   let tallySubmit = true;
 
+  let fetchSize = 20;
+
   let url;
   let region = '';
   let currentBanner = '';
@@ -199,13 +201,9 @@
     url.searchParams.set('auth_appid', 'webview_gacha');
     url.searchParams.set('sign_type', '2');
     url.searchParams.set('init_type', '301');
-    url.searchParams.set('gacha_id', 'b8fd0d8a6c940c7a16a486367de5f6d2232f53');
     url.searchParams.set('lang', 'en');
-    url.searchParams.set('device_type', getDeviceType());
-    url.searchParams.set('plat_type', getDeviceType());
-    if (region !== '') url.searchParams.set('region', region);
     url.searchParams.set('gacha_type', wishNumber);
-    url.searchParams.set('size', 20);
+    url.searchParams.set('size', fetchSize);
     url.searchParams.append('lang', 'en-us');
     url.hash = '';
     url.host = 'hk4e-api-os.mihoyo.com';
@@ -226,6 +224,7 @@
     let result = [];
     let lastTime = 0;
     let lastId = 0;
+    let lastCount = fetchSize;
     do {
       if (cancelled) return;
 
@@ -270,8 +269,17 @@
           throw 'error code';
         }
 
+        if (lastCount < fetchSize && dat.data.list.length > 0) {
+          await fetch(`${__paimon.env.API_HOST}/corsreset`);
+          fetchSize = 6;
+          lastCount = fetchSize;
+          error = $t('wish.import.invalidData');
+          throw 'error code';
+        }
+
         region = dat.data.region;
         result = dat.data.list;
+        lastCount = result.length;
       } catch (err) {
         console.error(err);
         processingLog = false;
