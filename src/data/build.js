@@ -507,9 +507,10 @@ export const builds = {
         talent: [' Normal Attack', ' Burst', ' Skill'],
         tip:
           "Yanfei's Ascension 4 Talent does a second hit after a Crit Charge Attack. This scales 80% of your ATK and can trigger reactions as well due to having a separate internal cooldown on its pyro application.",
-        note: 'DPS',
+        note:
+          "Yanfei can have trouble trying to set up for her reaction. Vaporize is generally the more consistent option and you need Xingqiu to make this work best. When running a Vaporize team with Xingqiu, 3 normal attacks into a charged attack (N1>N2>N3>C) is the safest and most reliable way to vaporize your charged attacks. Make sure you're adding applying hydro first before starting combos.\n\n<b>Regarding Weapon Choices:\nLost Prayer to the Sacred Winds: </b>Bennett buff/ Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) will push Lost Prayer ahead of Skyward Atlas and Memory of Dust<b>\nDodoco Tales: </b>On equal refinements, Widsith is better than Dodoco Tales, but assuming it's <b>[R5]</b> Dodoco Tales vs <b>[R1]</b>-<b>[R3]</b> Widsith, <b>[R5]</b> Dodoco Tales is better. <b>Note that Bennett buff / Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) buff may push Widsith and Solar Pearl above Dodoco Tales, even at low refinements.\n</b>\n<b>Regarding Artifact Set:\nShimenawa's Reminiscence (4): </b>Yanfei will rarely have her burst up due to the 15 energy cost on the 4-piece effect, however she can instead <b>maintain the 4-piece DMG buff over a longer duration, making this set a good alternative to the other options.</b> Note that this set loses out on some value at higher constellations, as she can't get her <b>[C4]</b> and <b>[C6]</b> effects without casting Burst.\n<b>Retracing Bolide (4): </b>Running Yanfei with a shield character also allows you to make use of a full Retracing Bolide 4-set as a placeholder until you're able to find a good Crimson Witch 4-set. \n\n<b>Regarding Artifact Substats Priority: \n</b>Energy Recharge is prioritized over Elemental Mastery here since she has an 80 energy burst cost while her skill is also not very efficient at generating particles for getting it back. A major source of your energy will be coming from enemies as well as potential pyro batteries like Bennett, so be sure to have her pick the particles up as off-field characters only get 0.6x the value of the particles.",
       },
-      'SHIELD SUPPORT ': {
+      'SHIELD SUPPORT': {
         recommended: false,
         weapons: [
           {
@@ -533,7 +534,7 @@ export const builds = {
         tip:
           'Energy Recharge Guidelines\nPrototype Amber [R5]: 210 ER\nPrototype Amber [R1] /Favonius Codex: 240 ER\nThrilling Tales of Dragon Slayers: 250+ ER',
         note:
-          "have trouble trying to set up for her reaction DPS. Vaporize is generally the more consistent option and you need Xingqiu to make this work best. When running a Vaporize team with Xingqiu, 3 normal attacks into a charged attack (N1>N2>N3>C) is the safest and most reliable way to vaporize your charged attacks. Make sure you're adding applying hydro first before starting combos.\n\n<b>Regarding Weapon Choices:\nLost Prayer to the Sacred Winds: </b>Bennett buff/ Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) will push Lost Prayer ahead of Skyward Atlas and Memory of Dust<b>\nDodoco Tales: </b>On equal refinements, Widsith is better than Dodoco Tales, but assuming it's <b>[R5]</b> Dodoco Tales vs <b>[R1]</b>-<b>[R3]</b> Widsith, <b>[R5]</b> Dodoco Tales is better. <b>Note that Bennett buff / Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) buff may push Widsith and Solar Pearl above Dodoco Tales, even at low refinements.\n</b>\n<b>Regarding Artifact Set:\nShimenawa's Reminiscence (4): </b>Yanfei will rarely have her burst up due to the 15 energy cost on the 4-piece effect, however she can instead <b>maintain the 4-piece DMG buff over a longer duration, making this set a good alternative to the other options.</b> Note that this set loses out on some value at higher constellations, as she can't get her <b>[C4]</b> and <b>[C6]</b> effects without casting Burst.\n<b>Retracing Bolide (4): </b>Running Yanfei with a shield character also allows you to make use of a full Retracing Bolide 4-set as a placeholder until you're able to find a good Crimson Witch 4-set. \n\n<b>Regarding Artifact Substats Priority: \n</b>Energy Recharge is prioritized over Elemental Mastery here since she has an 80 energy burst cost while her skill is also not very efficient at generating particles for getting it back. A major source of your energy will be coming from enemies as well as potential pyro batteries like Bennett, so be sure to have her pick the particles up as off-field characters only get 0.6x the value of the particles.\n\nSHIELD SUPPORT<b>\n</b>This section is dedicated to a playstyle where Yanfei is utilised as a primary shielder through her 4th Constellation. Due to the requirement of having to burst off cooldown, this build has <b>high energy requirements.\n</b>",
+          '<b>\n</b>This section is dedicated to a playstyle where Yanfei is utilised as a primary shielder through her 4th Constellation. Due to the requirement of having to burst off cooldown, this build has <b>high energy requirements.\n</b>',
       },
     },
   },
@@ -1864,7 +1865,7 @@ export const builds = {
           goblet: 'HP% / Hydro DMG',
           circlet: 'Healing Bonus',
         },
-        subStats: [' HP%', ' Energy Recharge', ' ATK%', ' Flat HP', ' Flat ATK', '', 'Check Notes'],
+        subStats: [' HP%', ' Energy Recharge', ' ATK%', ' Flat HP', ' Flat ATK'],
         talent: [' Skill', ' Burst'],
         tip:
           "Kokomi's Elemental Burst dynamically alters her skill's damage, this means that you cannot use her Burst to snapshot the buff onto the Skill and swap out.",
