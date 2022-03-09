@@ -8,7 +8,7 @@
     mdiChevronDown,
     mdiCircleMedium,
     mdiClose,
-    mdiCog,
+    mdiContentCopy,
     mdiContentSave,
     mdiDatabaseImport,
     mdiLoading,
@@ -84,6 +84,10 @@
     },
   };
 
+  let powershellScript =
+    "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/75a762795b6b18f3cc7296b908776efd94b3ca2e/getlink.ps1'))";
+  let powershellScriptSource = 'https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235';
+  let copiedScript = false;
   let news = '';
   let showAdvancedOptions = false;
 
@@ -736,6 +740,17 @@
     showAdvancedOptions = !showAdvancedOptions;
   }
 
+  function copyScript() {
+    try {
+      navigator.clipboard.writeText(powershellScript);
+      copiedScript = true;
+
+      setTimeout(() => {
+        copiedScript = false;
+      }, 2000);
+    } catch (err) {}
+  }
+
   $: selectedServer, updateServer();
 
   onMount(() => {
@@ -918,12 +933,19 @@
       </div>
       <div class="content flex-col items-center pb-2">
         <p class="text-white">{$t('wish.import.guide.pc2.3')}</p>
-        <pre class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">
-          {$server === 'China' ? $t('wish.import.guide.pc2.5') : $t('wish.import.guide.pc2.4')}
-        </pre>
+        <div class="flex">
+          <pre
+            class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all flex-1">{powershellScript}</pre>
+          <button
+            on:click={copyScript}
+            class="bg-black bg-opacity-50 hover:bg-opacity-25 text-white px-2 ml-1 rounded-xl"
+          >
+            <Icon path={copiedScript ? mdiCheckBold : mdiContentCopy} color="white" />
+          </button>
+        </div>
         <p class="text-white">
           {$t('wish.import.guide.pc2.6')}
-          <a class="text-blue-400 hover:underline" href={$t('wish.import.guide.pc2.8')} target="_blank">
+          <a class="text-blue-400 hover:underline" href={powershellScriptSource} target="_blank">
             {$t('wish.import.guide.pc2.7')}
           </a>
         </p>
