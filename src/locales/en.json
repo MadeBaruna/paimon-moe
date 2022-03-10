@@ -19,8 +19,8 @@
   },
   "home": {
     "welcome": "Welcome to Paimon.moe! 👋",
-    "message": "Your best Genshin Impact companion! Help you plan what to farm with ascension calculator, also track your progress with todo and wish counter.",
-    "visitor": "{count} visitors in last 7 days",
+    "message": "Your best Genshin Impact companion! paimon.moe helps you plan what to farm with an ascension calculator, and it also tracks your progress with a todo list and wish counter.",
+    "visitor": "{count} visitors in the last 7 days",
     "banner": {
       "featured": [
         "Eula"
