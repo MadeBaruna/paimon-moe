@@ -32,7 +32,7 @@
       "detail": "Global Wish Tally"
     },
     "wish": {
-      "message": "Import your wish history to keep it more than 6 months! Also automatically count your pity and statistic about your wishes with fancy charts 📊",
+      "message": "Import your wish history to keep it for more than 6 months! Also automatically counts your pity and statistics about your wishes with fancy charts 📊",
       "latest": "Your Last Wish",
       "banner": "Banner",
       "time": "Time",
@@ -41,7 +41,7 @@
       "detail": "Wish Counter"
     },
     "reminder": {
-      "message": "You can set up a reminder notification 🔔 for Parametric Transformer and Hoyolab Daily Login here! Click the reminder button below to start!",
+      "message": "You can set up a reminder notification 🔔 for Parametric Transformer and HoYoLab Daily Login here! Click the reminder button below to start!",
       "detail": "Reminder"
     },
     "event": {
@@ -51,20 +51,20 @@
     },
     "discord": {
       "online": "Members Online",
-      "message": "Join our Discord server for latest update announcement! Also discuss about Genshin Impact and feedback for paimon.moe.",
+      "message": "Join our Discord server for the latest updates and announcements! Also discuss about Genshin Impact and feedback for paimon.moe.",
       "join": "Join Our Discord"
     },
     "items": {
       "title": "Farmable Today",
       "detail": "Items",
-      "sunday": "Sunday can farm all items 😁"
+      "sunday": "You can farm all items on Sunday! 😁"
     },
     "calculator": {
-      "title": "🧮 Calculate Character and Weapons ascension material and talent book! All the calculations can be added to the Todo list, it will show you how much resin you need too!",
+      "title": "🧮 Calculate character and weapon ascension materials and talent books! All the calculations can be added to the Todo list, and it will show you how much resin you need too!",
       "detail": "Calculator"
     },
     "twitter": {
-      "title": "Follow my Twitter, will occasionally post sneak peak what I currently develop and latest update to paimon.moe!",
+      "title": "Follow my Twitter, where I will occasionally post sneak peeks about what I'm currently developing and the latest updates to paimon.moe!",
       "detail": "Follow Twitter"
     },
     "achievement": {
@@ -72,13 +72,13 @@
       "detail": "Achievement"
     },
     "furnishing": {
-      "title": "Check what furnishing you need to make to complete a sets. And also you can view the load of each furnishing.",
+      "title": "Check what furnishings you need to make to complete a set. You can also view the load of each furnishing here.",
       "detail": "Furnishing"
     }
   },
   "characters": {
     "title": "Characters",
-    "subtitle": "Stat numbers are at level 80 Ascension 6. You can also click the table header to sort!",
+    "subtitle": "Stat numbers are at Level 80 Ascension 6. You can also click the table header to sort!",
     "name": "Name",
     "element": "Element",
     "rarity": "Rarity",
@@ -115,7 +115,7 @@
     "talentStats": "Talent Stats",
     "build": "Build",
     "source": "Community Character Builds by the Genshin Helper Team",
-    "faq": "Constellation count is calculated from your Wish History data. So if your old wish history already gone or you bought the character from shop or event the count might be not accurate! But you can edit it manually by pressing the pencil icon beside the character name."
+    "faq": "Constellation count is calculated from your Wish History data, so if your old wish history has been removed, or you obtained the character from the shop or an event, the count might be inaccurate! You can edit it manually by pressing the pencil icon beside the character's name."
   },
   "wish": {
     "title": "Wish Counter",
@@ -134,7 +134,7 @@
     "welcomeStart2": "button up there",
     "manual": "If you want to manually input the data, you can enable it here:",
     "manualButton": "Enable Manual Input",
-    "errorBanner": "Banner time missmatch! Please adjust your server on settings page. Still not working? please leave a message on Discord 😅",
+    "errorBanner": "Banner time mismatch! Please adjust your server on the settings page. Still not working? Please leave a message on Discord 😅",
     "globalWishTally": "Global Wish Tally",
     "pityTooltip": [
       "Shows your current {rarity} pity",
@@ -149,8 +149,8 @@
       "chooseMethod": "Choose the desired method",
       "nonew": "No New Wishes",
       "importNotice1": "Imported wishes will be appended or replaced accordingly to existing data",
-      "importNotice2": "If you don't have any data saved before, first wish will be counted as pity 1",
-      "importNotice3": "Please note if you are importing a different account, please make sure to separate your account on the settings page, or your data will be mixed up!",
+      "importNotice2": "If you don't have any data saved before, your first wish will be counted as pity 1",
+      "importNotice3": "Please note that if you are importing a different account, please make sure to separate your account on the settings page, or your data will be mixed up!",
       "saveData": "Save wish data?",
       "reCalculating": "Re-calculating pity...",
       "processing": "Processing",
@@ -160,17 +160,17 @@
       "save": "Save",
       "cancel": "Cancel",
       "cancelling": "Cancelling...",
-      "importNewWishOnly": "Import new wish only",
-      "importNewWishUncheck": "Uncheck only if you need to re-import all your wish history",
+      "importNewWishOnly": "Import new wishes only",
+      "importNewWishUncheck": "Uncheck only if you need to re-import your entire wish history",
       "import": "Import",
       "close": "Close",
       "invalidLink": "Invalid link, please check it again",
-      "errorApi": "Error code returned from MiHoYo API, please try again later!",
+      "errorApi": "Error code returned from HoYoVerse's API, please try again later!",
       "errorExpired": "Link expired, please try again!",
       "timeout": "Connection timeout, please wait a moment and try again later",
       "differentAccount": "This wish history is for another account, please separate your account first on Settings menu!",
       "invalidData": "Invalid data returned from API, try again later",
-      "noNewData": "There is no new wish, please wait about 1 hour for the wish data to update!",
+      "noNewData": "There are no new wishes, please wait about 1 hour for the wish data to update!",
       "success": "Import success 😀!",
       "server": "Select your server:",
       "wishTallyCheck": "Submit pity for global wish tally",
@@ -182,24 +182,24 @@
       ],
       "forceUpdateCheck": "Force update wish history (enable only if your wish history is not updating)",
       "header": [
-        "Import and backup your Genshin Impact wish history to keep it more than 6 months. Also automatically track your pity and statistic about your wishes!",
-        "You can also enable Drive Sync on Setting to synchronize and backup the history to your Google Drive",
+        "Import and backup your Genshin Impact wish history to keep it for more than 6 months. Also automatically tracks your pity and statistics about your wishes!",
+        "You can also enable Drive Sync on Settings to synchronize and backup your wish history to your Google Drive",
         "Please note that the old feedback link does not work anymore, please follow the new instruction below!"
       ],
       "faqs": {
         "title": "Import Wish History FAQ",
         "q1": "How does it work?",
-        "a1": "Genshin Impact wish history is basically a web page, so you can access it by opening the web page url. A temporary key will be generated after you open the wish history page or the feedback page, and the importer will automatically use MiHoYo API to fetch your wish history.",
+        "a1": "Genshin Impact wish history is basically a web page, so you can access it by opening the web page url. A temporary key will be generated after you open the wish history page or the feedback page, and the importer will automatically use HoYoVerse's API to fetch your wish history.",
         "q2": "Is it safe? Will I get banned?",
-        "a2": "Paimon.moe uses the same request that Genshin Impact use to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
+        "a2": "Paimon.moe uses the same request that Genshin Impact uses to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
         "q3": "Can you hack my account then?",
         "a3": [
           "Paimon.moe never saves private information like your account credentials (even your UID or nickname), so the answer is no. This project is open source on",
-          "; I'm not planning to damage my reputation by hacking other people's account."
+          "; I'm not planning to damage my reputation by hacking other people's accounts."
         ],
-        "q4": "Hey I checked the requests and stuff, but why does it request to your domain instead of MiHoYo API?",
+        "q4": "Hey I checked the requests and stuff, but why does it request to your domain instead of HoYoVerse's API?",
         "a4": [
-          "Paimon.moe cannot request directly to MiHoYo API because of",
+          "Paimon.moe cannot request directly to HoYoVerse's API because of",
           ", so the request is redirected to a simple CORS proxy to make it work. You can see the code",
           "here"
         ],
@@ -213,7 +213,7 @@
         "q6": "I've done all the steps, but I got some API error?",
         "a6": "Make sure you copy all the text (hold and press Select All for mobile devices); maybe you missed some text that are needed for the importer to work.",
         "q7": "It didn't read all my wish history!?",
-        "a7": "Wish history older than 6 months will be gone from the mihoyo server itself, so if you don't have a backup somewhere, it's gone sadly"
+        "a7": "Wish history older than 6 months will be gone from HoYoVerse's servers itself, so if you don't have a backup somewhere, it's gone!"
       },
       "logLocation": {
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
