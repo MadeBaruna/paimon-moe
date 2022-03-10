@@ -257,7 +257,7 @@
           "Wait for it to load",
           "Turn off your Wi-Fi and data connection",
           "Press refresh on top right corner",
-          "The page should display an error and show you some text with black font",
+          "The page should display an error and show you some text with a black font",
           "Hold the text and press select all, then copy that text (don't copy only some portion of the text)",
           "Turn on your Wi-Fi or data connection",
           "Paste the text to the textbox below",
@@ -317,16 +317,16 @@
     },
     "excel": {
       "title": "Excel Importer",
-      "subtitle": "Select where your excel come from:",
+      "subtitle": "Select where your excel came from:",
       "default": "Paimon.moe Export",
       "takagg": "TakaGG Gacha Export",
       "genshinwishes": "GenshinWishes Export",
       "wishtally": "WishTally",
       "notice": [
-        "This feature still in BETA please backup first by going to Setting then Export to Excel!",
-        "Wish with the same timestamp and reward name will NOT be touched (so existing wish will not be rewritten)",
-        "Will only append and prepend wishes, this mean nothing will be inserted on the middle of the list",
-        "Currently only support excel with ENGLISH reward name"
+        "This feature still in BETA! Please backup first by going to Settings then Export to Excel!",
+        "Wishes with the same timestamp and reward name will NOT be touched (so existing wish will not be rewritten)",
+        "Will only append and prepend wishes, this means that nothing will be inserted in the middle of the list",
+        "Currently only supports excel with an ENGLISH reward name"
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe excel file here, or click here to select",
@@ -344,7 +344,7 @@
       "success": "Excel import success 😀!",
       "errorInvalidFile": "Invalid excel file",
       "errorReadExcel": "Error reading the excel file!",
-      "errorExcelPaimon": "This is not excel from paimon.moe export",
+      "errorExcelPaimon": "This is not an excel from a paimon.moe export",
       "errorUnknownItem": "Got an unknown reward name"
     },
     "help": {
@@ -354,7 +354,7 @@
       "export": "Export to Excel",
       "exporting": "Exporting...",
       "import": "Import From Excel",
-      "exportFinish": "Export success, please wait until the browser download the file!",
+      "exportFinish": "Export success, please wait until your browser downloads the file!",
       "wishTallyTitle": "Submit Wish Tally",
       "wishTally": "We are doing a global wish tally! You can submit your wish tally to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
       "wishTallyCollected": [
@@ -363,10 +363,10 @@
         "pity from your wish history"
       ],
       "wishTallySubmit": "Submit Wish Tally",
-      "wishTallyThankyou": "Thankyou for participating!",
-      "manualTitle": "Manual Input Setting",
+      "wishTallyThankyou": "Thank you for participating!",
+      "manualTitle": "Manual Input Settings",
       "enableManual": "Enable Manual Input",
-      "notice": "Using Auto Import and manual input together is not recommended as it still requires some more testing!",
+      "notice": "Using Auto Import and Manual Input together is NOT recommended as it still requires some more testing!",
       "consider": "Consider using the Auto Importer first. Access it by clicking the button next to the button you clicked to open this How To.",
       "howto": {
         "title": "How to Use Manual Input",
