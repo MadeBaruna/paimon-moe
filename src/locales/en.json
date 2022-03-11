@@ -339,11 +339,11 @@
       "beginning": "Beginning",
       "end": "End",
       "total": "Total",
-      "saveNotice": "Save the imported wishes?",
+      "saveNotice": "Save imported wishes?",
       "save": "Save",
       "success": "Excel import success 😀!",
       "errorInvalidFile": "Invalid excel file",
-      "errorReadExcel": "Error reading the excel file!",
+      "errorReadExcel": "Error reading excel file!",
       "errorExcelPaimon": "This is not an excel from a paimon.moe export",
       "errorUnknownItem": "Got an unknown reward name"
     },
@@ -419,7 +419,7 @@
     },
     "tally": {
       "title": "Wish Tally",
-      "subtitle": "Global average pity from paimon.moe users submission",
+      "subtitle": "Global average pity from paimon.moe users' submissions",
       "update": "Updated",
       "summoned": "Summoned",
       "wonFiftyFifty": "won 50:50",
