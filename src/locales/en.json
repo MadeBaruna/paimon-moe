@@ -168,7 +168,7 @@
       "errorApi": "Error code returned from HoYoVerse's API, please try again later!",
       "errorExpired": "Link expired, please try again!",
       "timeout": "Connection timeout, please wait a moment and try again later",
-      "differentAccount": "This wish history is for an another account, please separate your account first on Settings menu!",
+      "differentAccount": "This wish history belongs to another account, please separate your account first in the Settings menu!",
       "invalidData": "Invalid data returned from API, try again later",
       "noNewData": "There are no new wishes, please wait about 1 hour for the wish data to update!",
       "success": "Import success 😀!",
