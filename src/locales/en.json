@@ -285,7 +285,7 @@
           "Back to Genshin Impact then open the Wish history page",
           "Wait for page to load",
           "Back to Stream App > Stop Sniffing",
-          "Click Sniff History > Choose a request that end by .json (the link start with https://hk4e-api-os.mihoyo.com/)",
+          "Click Sniff History > Choose a request that ends by .json (the link start with https://hk4e-api-os.mihoyo.com/)",
           "Click Request tab, then copy the link and paste it below",
           "Paste link here... https://hk4e-api-os.mihoyo.com...",
           "If you got any problem, see troubleshooting guide",
