@@ -311,7 +311,7 @@
           "Press enter to run the script, then follow the instructions",
           "After that, paste the result of the script to the input below",
           "Paste the result here...",
-          "This feature is still in beta. Please make a backup first by going to Help & Settings menu then Export to Excel."
+          "This feature is still in BETA! Please make a backup first by going to the Help & Settings menu then Export to Excel."
         ]
       }
     },
@@ -323,7 +323,7 @@
       "genshinwishes": "GenshinWishes Export",
       "wishtally": "WishTally",
       "notice": [
-        "This feature still in BETA! Please backup first by going to Settings then Export to Excel!",
+        "This feature is still in BETA! Please make a backup first by going to the Help & Settings menu then Export to Excel.",
         "Wishes with the same timestamp and reward name will NOT be touched (so existing wish will not be rewritten)",
         "Will only append and prepend wishes, this means that nothing will be inserted in the middle of the list",
         "Currently only supports excel with an ENGLISH reward name"
