@@ -344,7 +344,7 @@
       "success": "Excel import success 😀!",
       "errorInvalidFile": "Invalid excel file",
       "errorReadExcel": "Error reading Excel file!",
-      "errorExcelPaimon": "This is not an excel from a paimon.moe export",
+      "errorExcelPaimon": "This is not an Excel file from a paimon.moe export",
       "errorUnknownItem": "Got an unknown reward name"
     },
     "help": {
