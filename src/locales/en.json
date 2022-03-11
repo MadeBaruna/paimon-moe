@@ -733,7 +733,7 @@
   "donate": {
     "message": [
       "Thank you! Hope you find it useful.",
-      "I made this website for fun when I have some spare time. Obviously will add more feature and update the data every update, because I like to explore the game and kind of min-maxing it.",
+      "I made this website for fun when I have some spare time. I will add more features and update the data every update, because I like to explore the game and I'm kind of min-maxing it.",
       "If you want to donate, your donation will definitely help on improving the site and motivating me to add more stuff to Paimon.moe! Thank you very much and have fun, hope you like it!",
       "If you like coding, you can also contributing to the project on"
     ],
@@ -742,9 +742,9 @@
     "crypto": "Support me with Crypto"
   },
   "reminder": {
-    "notSupported": "Your browser does not support push notification, please try other browser!",
-    "blocked": "Notification is blocked, the reminder notification will not work! Please enable it on your browser.",
-    "desktop": "Desktop browser cannot receive notification if the browser is not running!",
+    "notSupported": "Your browser does not support push notifications, please try a different browser!",
+    "blocked": "Notifications are blocked - the reminder notification will not work! Please enable it on your browser.",
+    "desktop": "Desktop browsers cannot receive notifications if the browser is not running!",
     "early": "The notification may arrive earlier (about 1-10 minutes) because of the way we send the notification",
     "allowNotification": "Please allow the notification prompt that shows up!",
     "transformer": "Parametric Transformer Reminder",
@@ -757,7 +757,7 @@
     "set": "Set Reminder",
     "checking": "Checking saved reminder...",
     "errorSelect": "Please select the day and hour!",
-    "errorSaving": "Something wrong when saving the reminder 🙁",
+    "errorSaving": "Something went wrong when saving the reminder 🙁",
     "current": "Current reminder",
     "hoyolab": "Hoyolab Daily Check-In Reminder",
     "comingsoon": "Coming Soon!"
@@ -770,7 +770,7 @@
     "commissions": "commissions",
     "version": "Version",
     "type": "Type",
-    "searchError": "Cannot found achievement: {query}"
+    "searchError": "Cannot find achievement: {query}"
   },
   "furnishing": {
     "title": "Furnishing",
@@ -793,13 +793,13 @@
     "listButton": "List",
     "inventory": {
       "title": "Furnishing Inventory",
-      "subtitle": "Some special categories like wall are not shown",
+      "subtitle": "Some special categories like walls are not shown",
       "all": "All",
       "openSets": "Open Sets"
     },
     "sets": {
       "title": "Furnishing Sets",
-      "subtitle": "Click the furnishing icon for detail, and you can click the character icon to mark them! Open the Inventory menu above to fill your furnishing items count.",
+      "subtitle": "Click the furnishing icon for details, and you can click the character icon to mark them! Open the Inventory menu above to fill your furnishing item count.",
       "setPlaced": "Set as placed",
       "setUnplaced": "Set as unplaced",
       "inInventory": "In inventory",
@@ -847,7 +847,7 @@
   },
   "fishing": {
     "title": "Fishing Book",
-    "subtitle": "Mark the fishing spot as empty when you already fish out all the fish to start the respawn timer",
+    "subtitle": "Mark the fishing spot as empty when you already fished out all the fish to start the respawn timer",
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
