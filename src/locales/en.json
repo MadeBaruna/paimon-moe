@@ -168,7 +168,7 @@
       "errorApi": "Error code returned from HoYoVerse's API, please try again later!",
       "errorExpired": "Link expired, please try again!",
       "timeout": "Connection timeout, please wait a moment and try again later",
-      "differentAccount": "This wish history is for another account, please separate your account first on Settings menu!",
+      "differentAccount": "This wish history is for an another account, please separate your account first on Settings menu!",
       "invalidData": "Invalid data returned from API, try again later",
       "noNewData": "There are no new wishes, please wait about 1 hour for the wish data to update!",
       "success": "Import success 😀!",
@@ -279,7 +279,7 @@
           "https://apps.apple.com/app/stream/id1312141691",
           "Open the app, then allow VPN in system preferences (Settings > General > VPN)",
           "Install CA (click Sniff Now on Stream App > Install CA > A pop up window will appear and choose allow > Now CA is downloaded",
-          "Go to settings > General > VPN & Device management > Click on Stream Generated CA and install",
+          "Go to Settings > General > VPN & Device management > Click on Stream Generated CA and install",
           "Open Genshin Impact then open Wish screen, stay on that page",
           "Back to Stream App > Choose I've trusted > Tap Sniff Now Button",
           "Back to Genshin Impact then open the Wish history page",
@@ -311,7 +311,7 @@
           "Press enter to run the script, then follow the instructions",
           "After that, paste the result of the script to the input below",
           "Paste the result here...",
-          "This feature is still in BETA! Please make a backup first by going to the Help & Settings menu then Export to Excel."
+          "This feature is still in BETA! Please make a backup first by going to the Settings menu then Export to Excel."
         ]
       }
     },
@@ -323,7 +323,7 @@
       "genshinwishes": "GenshinWishes Export",
       "wishtally": "WishTally",
       "notice": [
-        "This feature is still in BETA! Please make a backup first by going to the Help & Settings menu then Export to Excel.",
+        "This feature is still in BETA! Please make a backup first by going to the Settings menu then Export to Excel.",
         "Wishes with the same timestamp and reward name will NOT be touched (existing wishes will not be rewritten)",
         "This feature will only append and prepend wishes (nothing will be inserted in the middle of the list)",
         "Currently, the importer can only support excel files with an ENGLISH reward name"
@@ -441,8 +441,8 @@
     },
     "note": [
       "Wish history is not updated automatically, please import again to update your history!",
-      "Paimon.moe cannot retrieve wish history older than 6 months because it's already deleted on HoYoVerse's servers, so your old wishes might not show.",
-      "The data is saved on your browser, so it will be deleted if you clear your browser cache! Enable Google Drive sync on settings to backup your data!"
+      "Paimon.moe cannot retrieve wishes older than 6 months because it has already deleted on HoYoVerse's servers, so your old wishes might not show up.",
+      "The data is saved on your browser, so it will be deleted if you clear your browser cache! Enable Google Drive sync on Settings to backup your data!"
     ],
     "rateon": {
       "won": "Won 50:50",
@@ -451,7 +451,7 @@
     },
     "backupReminder": {
       "title": "All data is saved in your browser!",
-      "desc": "So if by any chance the browser cache got deleted, your wish history will be gone! You can enable Google Drive sync on setting to backup your data, or download the data manually there."
+      "desc": "So if by any chance the browser cache got deleted, your wish history will be gone! You can enable Google Drive sync on the Settings menu to backup your data, or download the data manually there."
     }
   },
   "calculator": {
@@ -547,7 +547,7 @@
       "randomEventFarm": "How many Random Events do you farm everyday?",
       "calculate": "Calculate",
       "based": "Based on AR:{ar}",
-      "change": "(change on settings)",
+      "change": "(change on Settings)",
       "result": "To reach Friendship level 10, if you complete all daily commissions and use 180 resin everyday",
       "resultSerenitea": "If you also place the character in the Serenitea Pot (Max Adeptal Energy)",
       "resultDay": "{result} Days"
@@ -712,7 +712,7 @@
     ]
   },
   "sync": {
-    "message": "Your local data in this browser is conflicting with the ones stored in the Google Drive!",
+    "message": "Your local data in this browser is conflicting with the one stored in Google Drive!",
     "googleDriveData": "Google Drive Data",
     "localData": "Local Browser Data",
     "older": "OLDER",
