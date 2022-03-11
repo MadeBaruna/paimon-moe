@@ -182,22 +182,22 @@
       ],
       "forceUpdateCheck": "Force update wish history (enable only if your wish history is not updating)",
       "header": [
-        "Import and backup your Genshin Impact wish history to keep it for more than 6 months. Also automatically tracks your pity and statistics about your wishes!",
+        "Import and backup your Genshin Impact wish history to keep it for more than 6 months. It also automatically tracks your pity and statistics about your wishes!",
         "You can also enable Drive Sync on Settings to synchronize and backup your wish history to your Google Drive",
-        "Please note that the old feedback link does not work anymore, please follow the new instruction below!"
+        "Please note that the old feedback link does not work anymore, please follow the new instructions below!"
       ],
       "faqs": {
         "title": "Import Wish History FAQ",
         "q1": "How does it work?",
-        "a1": "Genshin Impact wish history is basically a web page, so you can access it by opening the web page url. A temporary key will be generated after you open the wish history page or the feedback page, and the importer will automatically use HoYoVerse's API to fetch your wish history.",
+        "a1": "Genshin Impact's wish history is basically a web page, so you can access it by opening the web page url. A temporary key will be generated after you open the wish history page or the feedback page from the game, and the importer will automatically use HoYoVerse's API to fetch your wish history.",
         "q2": "Is it safe? Will I get banned?",
-        "a2": "Paimon.moe uses the same request that Genshin Impact uses to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
+        "a2": "Paimon.moe uses the same requests that Genshin Impact uses to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
         "q3": "Can you hack my account then?",
         "a3": [
           "Paimon.moe never saves private information like your account credentials (even your UID or nickname), so the answer is no. This project is open source on",
           "; I'm not planning to damage my reputation by hacking other people's accounts."
         ],
-        "q4": "Hey I checked the requests and stuff, but why does it request to your domain instead of HoYoVerse's API?",
+        "q4": "I checked the requests and stuff, but why does it request to your domain instead of HoYoVerse's API?",
         "a4": [
           "Paimon.moe cannot request directly to HoYoVerse's API because of",
           ", so the request is redirected to a simple CORS proxy to make it work. You can see the code",
@@ -210,9 +210,9 @@
           "for more information). You can uncheck submit wish tally to disable wish submission. Then all your wish history is saved on your device (or your Google Drive if you turned on sync).",
           "If you don't want any passing around your url, you can use the small importer script to process the wish history on your local PC (PC Local option) "
         ],
-        "q6": "I've done all the steps, but I got some API error?",
+        "q6": "I've done all the steps, but I got some API error",
         "a6": "Make sure you copy all the text (hold and press Select All for mobile devices); maybe you missed some text that are needed for the importer to work.",
-        "q7": "It didn't read all my wish history!?",
+        "q7": "The importer didn't read my entire wish history!",
         "a7": "Wish history older than 6 months will be gone from HoYoVerse's servers itself, so if you don't have a backup somewhere, it's gone!"
       },
       "logLocation": {
