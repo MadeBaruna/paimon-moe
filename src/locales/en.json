@@ -451,7 +451,7 @@
     },
     "backupReminder": {
       "title": "All data is saved in your browser!",
-      "desc": "So if by any chance the browser cache got deleted, your wish history will be gone! You can enable Google Drive sync on the Settings menu to backup your data, or download the data manually there."
+      "desc": "So if by any chance the browser cache got deleted, your wish history will be gone! You can enable Google Drive sync in the Settings menu to backup your data, or download the data manually there."
     }
   },
   "calculator": {
