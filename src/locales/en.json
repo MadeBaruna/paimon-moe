@@ -183,7 +183,7 @@
       "forceUpdateCheck": "Force update wish history (enable only if your wish history is not updating)",
       "header": [
         "Import and backup your Genshin Impact wish history to keep it for more than 6 months. It also automatically tracks your pity and statistics about your wishes!",
-        "You can also enable Drive Sync on Settings to synchronize and backup your wish history to your Google Drive",
+        "You can also enable Drive Sync in the Settings to synchronize and backup your wish history to your Google Drive",
         "Please note that the old feedback link does not work anymore, please follow the new instructions below!"
       ],
       "faqs": {
