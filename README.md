@@ -2,7 +2,7 @@
 
 # [Paimon.moe](https://paimon.moe)
 
-Your best Genshin Impact companion! Help you plan what to farm with ascension calculator and database. Also track your progress with todo and wish counter.
+Your best Genshin Impact companion! Paimon.moe helps you plan what to farm with ascension calculator and database. It also tracks your progress with a todo and wish counter.
 
 Created with [Sapper](https://sapper.svelte.dev/) + [Tailwind CSS](https://tailwindcss.com/)
 
@@ -30,5 +30,5 @@ yarn export
 
 [MIT](https://github.com/MadeBaruna/paimon-moe/blob/main/LICENSE)
 
-This project is not affiliated with miHoYo.
-Genshin Impact, game content and materials are trademarks and copyrights of miHoYo.
+This project is not affiliated with HoYoVerse.
+Genshin Impact, game content and materials are trademarks and copyrights of HoYoVerse.
