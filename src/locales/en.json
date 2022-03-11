@@ -229,7 +229,7 @@
           "Paste link here... https://webstatic..."
         ],
         "pc2": [
-          "Open Genshin Impact in this PC (If you use multiple account please restart the game)",
+          "Open Genshin Impact in this PC (If you use multiple accounts, please restart the game)",
           "Then open the wish history in the game and wait it to load",
           "Press START on your keyboard, then search for Powershell",
           "Click Windows Powershell, then copy & paste the script below to the Powershell",
@@ -238,15 +238,15 @@
           "You can review the script",
           "here",
           "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
-          "Press ENTER then a link will copied to your clipboard",
+          "Press ENTER, and a link will copied to your clipboard",
           "Paste the text to the textbox below",
           "Paste the link here... https://webstatic..."
         ],
         "pclog": [
-          "Open Genshin Impact in this PC (If you use multiple account please restart the game)",
+          "Open Genshin Impact in this PC (If you use multiple accounts, please restart the game)",
           "Then open the wish history in the game and wait it to load",
           "Press WINDOWS+R on your keyboard, then enter:",
-          "A notepad window will open, then press CTRL+F then enter:",
+          "A notepad window will open. Press CTRL+F then enter:",
           "Copy all the link from https://webstatic until #/log the url looks like this: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
           "Paste the text to the textbox below",
           "Paste the link here... https://webstatic..."
@@ -292,8 +292,8 @@
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "The steps below might be not working, you can link your PS account with miHoYo account then use the pc/mobile instruction",
-          "You can only use this importer if you have an in-game mail with QR Code to open the web event",
+          "If the steps below don't work, you can link your PS account with a HoYoVerse account then use the pc/mobile instructions",
+          "You can only use this importer if you have an in-game mail with a QR Code to open the web event",
           "Open Genshin Impact on your PlayStation",
           "Open the event mail that contains the QR Code",
           "Scan the QR Code with your phone",
@@ -302,16 +302,16 @@
         ],
         "pclocal": [
           "If you are not comfortable passing around your feedback url, you can use this option to process the wish on your pc locally. This script will read the log file on your pc to get the wish history url.",
-          "Open Start, then search for Powershell",
+          "Open the Start Menu, then search for Powershell",
           "Open Windows Powershell, then copy & paste the script below to the Powershell",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "You can review the script",
           "here",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
-          "Press enter to run the script, then follow the instruction there",
+          "Press enter to run the script, then follow the instructions",
           "After that, paste the result of the script to the input below",
           "Paste the result here...",
-          "This feature is still in beta, please make a backup first by going to Help & Settings menu then Export to Excel."
+          "This feature is still in beta. Please make a backup first by going to Help & Settings menu then Export to Excel."
         ]
       }
     },
@@ -411,7 +411,7 @@
       "type": "Type",
       "banner": "Banner",
       "roll": "#Roll",
-      "totalThisBanner": "Total pull on this banner",
+      "totalThisBanner": "Total pulls on this banner",
       "worth": "Worth",
       "loading": "Loading... (If this page is stuck, change your server on the settings page)",
       "guaranteed": "The next {rarity}★ is guaranteed to be the promotional character or weapon",
