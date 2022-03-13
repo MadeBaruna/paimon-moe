@@ -1,7 +1,7 @@
 <script>
   import { t } from 'svelte-i18n';
 
-  import { onMount, getContext } from 'svelte';
+  import { onMount, getContext, createEventDispatcher } from 'svelte';
   import { slide } from 'svelte/transition';
   import { mdiPencil, mdiStar, mdiChevronDown, mdiTableOfContents, mdiArrowUpCircle } from '@mdi/js';
   import debounce from 'lodash/debounce';
@@ -18,7 +18,8 @@
   import dayjs from 'dayjs';
   import { weaponList } from '../../data/weaponList';
   import { getAccountPrefix } from '../../stores/account';
-  import Tooltip from '../../components/Tooltip.svelte';
+
+  const dispatch = createEventDispatcher();
 
   let numberFormat = Intl.NumberFormat();
 
@@ -210,6 +211,8 @@
         guaranteed.legendary = counterData.guaranteed.legendary;
         guaranteed.rare = counterData.guaranteed.rare;
       }
+
+      dispatch('counterread', total);
     }
   }
 

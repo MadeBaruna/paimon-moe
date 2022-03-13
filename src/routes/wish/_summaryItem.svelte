@@ -16,12 +16,14 @@
     const hue = percentage * 120;
     return `color: hsl(${hue}, 100%, 60%);`;
   }
+
+  $: textSize = avg.legendary.total > 20 ? 'text-sm' : 'text-base';
 </script>
 
 <div class="bg-item rounded-xl p-4 flex flex-col w-full" style="height: min-content;">
   <table>
     <tr>
-      <td class="text-white text-md font-semibold pr-2 md:pr-4 flex-1 w-full">{type.name}</td>
+      <td class="text-white text-md font-semibold pr-2 md:pr-4 flex-1 w-full">{$t(`wish.types.${type.id}`)}</td>
       <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">Total</td>
       <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">Percent</td>
       <td class="text-gray-400 text-sm font-display text-right whitespace-no-wrap">Pity AVG</td>
@@ -82,7 +84,9 @@
   {#if avg.legendary.pulls.length > 0}
     <div class="flex flex-wrap mt-2 overflow-y-auto" style="max-height: 500px;">
       {#each avg.legendary.pulls as pull}
-        <span class="pity">{$t(pull.name)} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span>
+        <span class="pity {textSize}"
+          >{$t(pull.name)} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span
+        >
       {/each}
     </div>
   {/if}

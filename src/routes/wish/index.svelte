@@ -6,11 +6,11 @@
 
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
-  import ImportModal from '../../components/WishImportModal.svelte';
   import { fromRemote, readSave, updateSave } from '../../stores/saveManager';
 
   import Summary from './_summary.svelte';
   import Counter from './_counter.svelte';
+  import Rank from './_rank.svelte';
   import FirstTimePopup from './_firstTime.svelte';
   import MonthlyGraph from './_monthlyGraph.svelte';
   import HowToModal from './_helpModal.svelte';
@@ -25,6 +25,13 @@
   let counter2;
   let counter3;
   let counter4;
+  let rank;
+
+  let wishTotal = {
+    'character-event': 0,
+    'weapon-event': 0,
+    standard: 0,
+  };
 
   const path = 'wish-counter-setting';
 
@@ -102,6 +109,14 @@
     );
   }
 
+  function setRankWishTotal(type, event) {
+    wishTotal[type] = event.detail;
+
+    if (type === 'character-event') {
+      rank.getData();
+    }
+  }
+
   function closeImportModal() {
     closeModal();
     counter1.readLocalData();
@@ -175,18 +190,37 @@
       <Ad type="mobile" variant="mpu" id="2" />
     </div>
     <div class="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max-w-screen-xl">
-      <Counter bind:this={counter1} manualInput={settings.manualInput} id="character-event" name="Character Event" />
       <Counter
+        on:counterread={(val) => setRankWishTotal('character-event', val)}
+        bind:this={counter1}
+        manualInput={settings.manualInput}
+        id="character-event"
+        name={$t('wish.types.character-event')}
+      />
+      <Counter
+        on:counterread={(val) => setRankWishTotal('weapon-event', val)}
         bind:this={counter2}
         manualInput={settings.manualInput}
         id="weapon-event"
-        name="Weapon Event"
+        name={$t('wish.types.weapon-event')}
         legendaryPity={80}
       />
-      <Counter bind:this={counter3} manualInput={settings.manualInput} id="standard" name="Standard" />
+      <Counter
+        on:counterread={(val) => setRankWishTotal('standard', val)}
+        bind:this={counter3}
+        manualInput={settings.manualInput}
+        id="standard"
+        name={$t('wish.types.standard')}
+      />
       <div class="flex flex-col w-full">
-        <Counter bind:this={counter4} manualInput={settings.manualInput} id="beginners" name="Beginners' Wish" />
+        <Counter
+          bind:this={counter4}
+          manualInput={settings.manualInput}
+          id="beginners"
+          name={$t('wish.types.beginners')}
+        />
         <MonthlyGraph bind:data={monthlyData} />
+        <Rank bind:this={rank} {wishTotal} />
         <div class="mt-4 flex justify-center">
           <Ad type="mobile" variant="mpu" id="1" />
         </div>

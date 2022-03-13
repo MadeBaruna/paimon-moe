@@ -452,6 +452,11 @@
     "backupReminder": {
       "title": "Semua data disimpan pada browser mu!",
       "desc": "Jadi jika terjadi sesuatu yang menyebabkan cache browser mu terhapus, data riwayat wish mu akan hilang! Kamu bisa menyalakan Google Drive sync di setting untuk membackup datamu, atau kamu bisa mendownload secara manual datanya di sana."
+    },
+    "rank": {
+      "level": "Level Whale Mu",
+      "based": "Dari Perhitungan Pity Global",
+      "current": "Median {banner} saat ini {median} pull"
     }
   },
   "calculator": {
@@ -699,7 +704,7 @@
         "title": "Wish Pity",
         "content": [
           "Paimon.moe akan menyimpan perhitungan pity 4*, perhitungan pity 5*, dan informasi wish 5* (yaitu waktu wish, nama item, angka pity) jika kamu mencentang 'Kirim pity untuk perhitungan pity global' di Auto Import Wish atau secara manual mensubmit di menu bantuan dan pengaturan. Paimon.moe akan menyatukan data-datanya kemudian menghitung pity rata-rata tiap banner dari pengguna paimon.moe. Kamu bisa mengecek nya di",
-          "wish tally"
+          "wish stats"
         ]
       }
     ],
