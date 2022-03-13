@@ -19,8 +19,8 @@
   },
   "home": {
     "welcome": "Welcome to Paimon.moe! 👋",
-    "message": "Your best Genshin Impact companion! Help you plan what to farm with ascension calculator, also track your progress with todo and wish counter.",
-    "visitor": "{count} visitors in last 7 days",
+    "message": "Your best Genshin Impact companion! Paimon.moe helps you plan what to farm with an ascension calculator, and it also tracks your progress with a todo list and a wish counter.",
+    "visitor": "{count} visitors in the last 7 days",
     "banner": {
       "featured": [
         "Eula"
@@ -32,7 +32,7 @@
       "detail": "Global Wish Stats"
     },
     "wish": {
-      "message": "Import your wish history to keep it more than 6 months! Also automatically count your pity and statistic about your wishes with fancy charts 📊",
+      "message": "Import your wish history to keep it for more than 6 months! Also automatically counts your pity and statistics about your wishes with fancy charts 📊",
       "latest": "Your Last Wish",
       "banner": "Banner",
       "time": "Time",
@@ -41,7 +41,7 @@
       "detail": "Wish Counter"
     },
     "reminder": {
-      "message": "You can set up a reminder notification 🔔 for Parametric Transformer and Hoyolab Daily Login here! Click the reminder button below to start!",
+      "message": "You can set up a reminder notification 🔔 for Parametric Transformer and HoYoLab Daily Login here! Click the reminder button below to start!",
       "detail": "Reminder"
     },
     "event": {
@@ -51,20 +51,20 @@
     },
     "discord": {
       "online": "Members Online",
-      "message": "Join our Discord server for latest update announcement! Also discuss about Genshin Impact and feedback for paimon.moe.",
+      "message": "Join our Discord server for the latest updates and announcements! Also discuss about Genshin Impact and feedback for paimon.moe.",
       "join": "Join Our Discord"
     },
     "items": {
       "title": "Farmable Today",
       "detail": "Items",
-      "sunday": "Sunday can farm all items 😁"
+      "sunday": "You can farm all items on Sunday! 😁"
     },
     "calculator": {
-      "title": "🧮 Calculate Character and Weapons ascension material and talent book! All the calculations can be added to the Todo list, it will show you how much resin you need too!",
+      "title": "🧮 Calculate character and weapon ascension materials and talent books! All calculations can be added to the Todo list, and it will show you how much resin you need too!",
       "detail": "Calculator"
     },
     "twitter": {
-      "title": "Follow my Twitter, will occasionally post sneak peak what I currently develop and latest update to paimon.moe!",
+      "title": "Follow my Twitter, where I will occasionally post sneak peeks about what I'm currently developing and the latest updates to paimon.moe!",
       "detail": "Follow Twitter"
     },
     "achievement": {
@@ -72,13 +72,13 @@
       "detail": "Achievement"
     },
     "furnishing": {
-      "title": "Check what furnishing you need to make to complete a sets. And also you can view the load of each furnishing.",
+      "title": "Check what furnishings you need to make to complete a set. You can also view the load of each furnishing here.",
       "detail": "Furnishing"
     }
   },
   "characters": {
     "title": "Characters",
-    "subtitle": "Stat numbers are at level 80 Ascension 6. You can also click the table header to sort!",
+    "subtitle": "Stat numbers are at Level 80 Ascension 6. You can also click the table header to sort!",
     "name": "Name",
     "element": "Element",
     "rarity": "Rarity",
@@ -115,7 +115,7 @@
     "talentStats": "Talent Stats",
     "build": "Build",
     "source": "Community Character Builds by the Genshin Helper Team",
-    "faq": "Constellation count is calculated from your Wish History data. So if your old wish history already gone or you bought the character from shop or event the count might be not accurate! But you can edit it manually by pressing the pencil icon beside the character name."
+    "faq": "Constellation count is calculated from your Wish History data, so if your old wish history has been removed, or you obtained the character from the shop or an event, the count might be inaccurate! You can edit it manually by pressing the pencil icon beside the character's name."
   },
   "wish": {
     "title": "Wish Counter",
@@ -134,7 +134,7 @@
     "welcomeStart2": "button up there",
     "manual": "If you want to manually input the data, you can enable it here:",
     "manualButton": "Enable Manual Input",
-    "errorBanner": "Banner time missmatch! Please adjust your server on settings page. Still not working? please leave a message on Discord 😅",
+    "errorBanner": "Banner time mismatch! Please adjust your server on the settings page. Still not working? Please leave a message on Discord 😅",
     "globalWishTally": "Global Wish Stats",
     "pityTooltip": [
       "Shows your current {rarity} pity",
@@ -149,8 +149,8 @@
       "chooseMethod": "Choose the desired method",
       "nonew": "No New Wishes",
       "importNotice1": "Imported wishes will be appended or replaced accordingly to existing data",
-      "importNotice2": "If you don't have any data saved before, first wish will be counted as pity 1",
-      "importNotice3": "Please note if you are importing a different account, please make sure to separate your account on the settings page, or your data will be mixed up!",
+      "importNotice2": "If you don't have any data saved before, your first wish will be counted as pity 1",
+      "importNotice3": "Please note that if you are importing a different account, please make sure to separate your account on the settings page, or your data will be mixed up!",
       "saveData": "Save wish data?",
       "reCalculating": "Re-calculating pity...",
       "processing": "Processing",
@@ -160,17 +160,17 @@
       "save": "Save",
       "cancel": "Cancel",
       "cancelling": "Cancelling...",
-      "importNewWishOnly": "Import new wish only",
-      "importNewWishUncheck": "Uncheck only if you need to re-import all your wish history",
+      "importNewWishOnly": "Import new wishes only",
+      "importNewWishUncheck": "Uncheck only if you need to re-import your entire wish history",
       "import": "Import",
       "close": "Close",
       "invalidLink": "Invalid link, please check it again",
-      "errorApi": "Error code returned from MiHoYo API, please try again later!",
+      "errorApi": "Error code returned from HoYoVerse's API, please try again later!",
       "errorExpired": "Link expired, please try again!",
       "timeout": "Connection timeout, please wait a moment and try again later",
-      "differentAccount": "This wish history is for another account, please separate your account first on Settings menu!",
+      "differentAccount": "This wish history belongs to another account, please separate your account first in the Settings menu!",
       "invalidData": "Invalid data returned from API, try again later",
-      "noNewData": "There is no new wish, please wait about 1 hour for the wish data to update!",
+      "noNewData": "There are no new wishes, please wait about 1 hour for the wish data to update!",
       "success": "Import success 😀!",
       "server": "Select your server:",
       "wishTallyCheck": "Submit pity for global wish stats",
@@ -182,24 +182,24 @@
       ],
       "forceUpdateCheck": "Force update wish history (enable only if your wish history is not updating)",
       "header": [
-        "Import and backup your Genshin Impact wish history to keep it more than 6 months. Also automatically track your pity and statistic about your wishes!",
-        "You can also enable Drive Sync on Setting to synchronize and backup the history to your Google Drive",
-        "Please note that the old feedback link does not work anymore, please follow the new instruction below!"
+        "Import and backup your Genshin Impact wish history to keep it for more than 6 months. It also automatically tracks your pity and statistics about your wishes!",
+        "You can also enable Drive Sync in the Settings to synchronize and backup your wish history to your Google Drive",
+        "Please note that the old feedback link does not work anymore, please follow the new instructions below!"
       ],
       "faqs": {
         "title": "Import Wish History FAQ",
         "q1": "How does it work?",
-        "a1": "Genshin Impact wish history is basically a web page, so you can access it by opening the web page url. A temporary key will be generated after you open the wish history page or the feedback page, and the importer will automatically use MiHoYo API to fetch your wish history.",
+        "a1": "Genshin Impact's wish history is basically a web page, so you can access it by opening the web page url. A temporary key will be generated after you open the wish history page or the feedback page from the game, and the importer will automatically use HoYoVerse's API to fetch your wish history.",
         "q2": "Is it safe? Will I get banned?",
-        "a2": "Paimon.moe uses the same request that Genshin Impact use to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
+        "a2": "Paimon.moe uses the same requests that Genshin Impact uses to get the wish history, and Paimon.moe has no way whatsoever to modify any game files or memory, and it should be safe. But use it at your own risk (well I use it on my main account). You still can input your data manually 😀.",
         "q3": "Can you hack my account then?",
         "a3": [
           "Paimon.moe never saves private information like your account credentials (even your UID or nickname), so the answer is no. This project is open source on",
-          "; I'm not planning to damage my reputation by hacking other people's account."
+          "; I'm not planning to damage my reputation by hacking other people's accounts."
         ],
-        "q4": "Hey I checked the requests and stuff, but why does it request to your domain instead of MiHoYo API?",
+        "q4": "I checked the requests and stuff, but why does it request to your domain instead of HoYoVerse's API?",
         "a4": [
-          "Paimon.moe cannot request directly to MiHoYo API because of",
+          "Paimon.moe cannot request directly to HoYoVerse's API because of",
           ", so the request is redirected to a simple CORS proxy to make it work. You can see the code",
           "here"
         ],
@@ -210,10 +210,10 @@
           "for more information). You can uncheck submit wish stats to disable wish submission. Then all your wish history is saved on your device (or your Google Drive if you turned on sync).",
           "If you don't want any passing around your url, you can use the small importer script to process the wish history on your local PC (PC Local option) "
         ],
-        "q6": "I've done all the steps, but I got some API error?",
+        "q6": "I've done all the steps, but I got some API error",
         "a6": "Make sure you copy all the text (hold and press Select All for mobile devices); maybe you missed some text that are needed for the importer to work.",
-        "q7": "It didn't read all my wish history!?",
-        "a7": "Wish history older than 6 months will be gone from the mihoyo server itself, so if you don't have a backup somewhere, it's gone sadly"
+        "q7": "The importer didn't read my entire wish history!",
+        "a7": "Wish history older than 6 months will be gone from HoYoVerse's servers itself, so if you don't have a backup somewhere, it's gone!"
       },
       "logLocation": {
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
@@ -229,7 +229,7 @@
           "Paste link here... https://webstatic..."
         ],
         "pc2": [
-          "Open Genshin Impact in this PC (If you use multiple account please restart the game)",
+          "Open Genshin Impact in this PC (If you use multiple accounts, please restart the game)",
           "Then open the wish history in the game and wait it to load",
           "Press START on your keyboard, then search for Powershell",
           "Click Windows Powershell, then copy & paste the script below to the Powershell",
@@ -238,15 +238,15 @@
           "You can review the script",
           "here",
           "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
-          "Press ENTER then a link will copied to your clipboard",
+          "Press ENTER, and a link will copied to your clipboard",
           "Paste the text to the textbox below",
           "Paste the link here... https://webstatic..."
         ],
         "pclog": [
-          "Open Genshin Impact in this PC (If you use multiple account please restart the game)",
+          "Open Genshin Impact in this PC (If you use multiple accounts, please restart the game)",
           "Then open the wish history in the game and wait it to load",
           "Press WINDOWS+R on your keyboard, then enter:",
-          "A notepad window will open, then press CTRL+F then enter:",
+          "A notepad window will open. Press CTRL+F then enter:",
           "Copy all the link from https://webstatic until #/log the url looks like this: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
           "Paste the text to the textbox below",
           "Paste the link here... https://webstatic..."
@@ -257,7 +257,7 @@
           "Wait for it to load",
           "Turn off your Wi-Fi and data connection",
           "Press refresh on top right corner",
-          "The page should display an error and show you some text with black font",
+          "The page should display an error and show you some text with a black font",
           "Hold the text and press select all, then copy that text (don't copy only some portion of the text)",
           "Turn on your Wi-Fi or data connection",
           "Paste the text to the textbox below",
@@ -279,21 +279,21 @@
           "https://apps.apple.com/app/stream/id1312141691",
           "Open the app, then allow VPN in system preferences (Settings > General > VPN)",
           "Install CA (click Sniff Now on Stream App > Install CA > A pop up window will appear and choose allow > Now CA is downloaded",
-          "Go to settings > General > VPN & Device management > Click on Stream Generated CA and install",
+          "Go to Settings > General > VPN & Device management > Click on Stream Generated CA and install",
           "Open Genshin Impact then open Wish screen, stay on that page",
           "Back to Stream App > Choose I've trusted > Tap Sniff Now Button",
           "Back to Genshin Impact then open the Wish history page",
           "Wait for page to load",
           "Back to Stream App > Stop Sniffing",
-          "Click Sniff History > Choose a request that end by .json (the link start with https://hk4e-api-os.mihoyo.com/)",
+          "Click Sniff History > Choose a request that ends by .json (the link start with https://hk4e-api-os.mihoyo.com/)",
           "Click Request tab, then copy the link and paste it below",
           "Paste link here... https://hk4e-api-os.mihoyo.com...",
           "If you got any problem, see troubleshooting guide",
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "The steps below might be not working, you can link your PS account with miHoYo account then use the pc/mobile instruction",
-          "You can only use this importer if you have an in-game mail with QR Code to open the web event",
+          "If the steps below don't work, you can link your PS account with a HoYoVerse account then use the pc/mobile instructions",
+          "You can only use this importer if you have an in-game mail with a QR Code to open the web event",
           "Open Genshin Impact on your PlayStation",
           "Open the event mail that contains the QR Code",
           "Scan the QR Code with your phone",
@@ -302,31 +302,31 @@
         ],
         "pclocal": [
           "If you are not comfortable passing around your feedback url, you can use this option to process the wish on your pc locally. This script will read the log file on your pc to get the wish history url.",
-          "Open Start, then search for Powershell",
+          "Open the Start Menu, then search for Powershell",
           "Open Windows Powershell, then copy & paste the script below to the Powershell",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "You can review the script",
           "here",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
-          "Press enter to run the script, then follow the instruction there",
+          "Press enter to run the script, then follow the instructions",
           "After that, paste the result of the script to the input below",
           "Paste the result here...",
-          "This feature is still in beta, please make a backup first by going to Help & Settings menu then Export to Excel."
+          "This feature is still in BETA! Please make a backup first by going to the Settings menu then Export to Excel."
         ]
       }
     },
     "excel": {
       "title": "Excel Importer",
-      "subtitle": "Select where your excel come from:",
+      "subtitle": "Select where your excel came from:",
       "default": "Paimon.moe Export",
       "takagg": "TakaGG Gacha Export",
       "genshinwishes": "GenshinWishes Export",
       "wishtally": "WishTally",
       "notice": [
-        "This feature still in BETA please backup first by going to Setting then Export to Excel!",
-        "Wish with the same timestamp and reward name will NOT be touched (so existing wish will not be rewritten)",
-        "Will only append and prepend wishes, this mean nothing will be inserted on the middle of the list",
-        "Currently only support excel with ENGLISH reward name"
+        "This feature is still in BETA! Please make a backup first by going to the Settings menu then Export to Excel.",
+        "Wishes with the same timestamp and reward name will NOT be touched (existing wishes will not be rewritten)",
+        "This feature will only append and prepend wishes (nothing will be inserted in the middle of the list)",
+        "Currently, the importer can only support excel files with an ENGLISH reward name"
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe excel file here, or click here to select",
@@ -339,12 +339,12 @@
       "beginning": "Beginning",
       "end": "End",
       "total": "Total",
-      "saveNotice": "Save the imported wishes?",
+      "saveNotice": "Save imported wishes?",
       "save": "Save",
       "success": "Excel import success 😀!",
       "errorInvalidFile": "Invalid excel file",
-      "errorReadExcel": "Error reading the excel file!",
-      "errorExcelPaimon": "This is not excel from paimon.moe export",
+      "errorReadExcel": "Error reading Excel file!",
+      "errorExcelPaimon": "This is not an Excel file from a paimon.moe export",
       "errorUnknownItem": "Got an unknown reward name"
     },
     "help": {
@@ -354,7 +354,7 @@
       "export": "Export to Excel",
       "exporting": "Exporting...",
       "import": "Import From Excel",
-      "exportFinish": "Export success, please wait until the browser download the file!",
+      "exportFinish": "Export success, please wait until your browser downloads the file!",
       "wishTallyTitle": "Submit Wish Stats",
       "wishTally": "We are doing a global wish stats! You can submit your wish stats to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
       "wishTallyCollected": [
@@ -363,10 +363,10 @@
         "pity from your wish history"
       ],
       "wishTallySubmit": "Submit Wish Stats",
-      "wishTallyThankyou": "Thankyou for participating!",
-      "manualTitle": "Manual Input Setting",
+      "wishTallyThankyou": "Thank you for participating!",
+      "manualTitle": "Manual Input Settings",
       "enableManual": "Enable Manual Input",
-      "notice": "Using Auto Import and manual input together is not recommended as it still requires some more testing!",
+      "notice": "Using Auto Import and Manual Input together is NOT recommended as it still requires some more testing!",
       "consider": "Consider using the Auto Importer first. Access it by clicking the button next to the button you clicked to open this How To.",
       "howto": {
         "title": "How to Use Manual Input",
@@ -411,15 +411,15 @@
       "type": "Type",
       "banner": "Banner",
       "roll": "#Roll",
-      "totalThisBanner": "Total pull on this banner",
+      "totalThisBanner": "Total pulls on this banner",
       "worth": "Worth",
-      "loading": "Loading... (If this stuck, change your server on settings page)",
+      "loading": "Loading... (If this page is stuck, change your server on the settings page)",
       "guaranteed": "The next {rarity}★ is guaranteed to be the promotional character or weapon",
       "unknown_3_star": "Unknown"
     },
     "tally": {
       "title": "Global Wish Stats",
-      "subtitle": "Global average pity from paimon.moe users submission",
+      "subtitle": "Global average pity from paimon.moe users' submissions",
       "update": "Updated",
       "summoned": "Summoned",
       "wonFiftyFifty": "won 50:50",
@@ -441,8 +441,8 @@
     },
     "note": [
       "Wish history is not updated automatically, please import again to update your history!",
-      "Paimon.moe cannot retrieve wish history older than 6 months because it's already deleted on miHoYo server, so your old wishes might not show.",
-      "The data are saved on your browser, so it will be deleted if you clear your browser cache! Enable Google Drive sync on setting to backup your data!"
+      "Paimon.moe cannot retrieve wishes older than 6 months because it has already deleted on HoYoVerse's servers, so your old wishes might not show up.",
+      "The data is saved on your browser, so it will be deleted if you clear your browser cache! Enable Google Drive sync on Settings to backup your data!"
     ],
     "rateon": {
       "won": "Won 50:50",
@@ -450,8 +450,8 @@
       "guaranteed": "Guaranteed"
     },
     "backupReminder": {
-      "title": "All data are saved on your browser!",
-      "desc": "So if by any chance the browser cache got deleted, your wish history will be gone! You can enable Google Drive sync on setting to backup your data, or download the data manually there."
+      "title": "All data is saved in your browser!",
+      "desc": "So if by any chance the browser cache got deleted, your wish history will be gone! You can enable Google Drive sync in the Settings menu to backup your data, or download the data manually there."
     },
     "rank": {
       "level": "Your Whale Level",
@@ -463,7 +463,7 @@
     "titleWeapon": "Weapon Calculator",
     "titleCharacter": "Character Calculator",
     "titleResin": "Resin Calculator",
-    "titleFriendship": "Friendship Exp Calculator",
+    "titleFriendship": "Friendship EXP Calculator",
     "titleFate": "Fate Price Calculator",
     "titleFateCount": "Fate Count Calculator",
     "goto": "Go To {where}",
@@ -502,7 +502,7 @@
       "resource": "Resource to Use",
       "calculateTalent": "Calculate Talent Material?",
       "inputTalentLevel": "Input the 1st, 2nd & 3rd current talent level",
-      "inputTalentNotice": "If it has different color, substract it by 3",
+      "inputTalentNotice": "If it has a different color, subtract it by 3",
       "inputTalent": [
         "1st talent lvl",
         "2nd talent lvl",
@@ -549,11 +549,11 @@
     "friendship": {
       "currentLevel": "Current Friendship Level",
       "currentExp": "Current Exp Bar (Drag the Bar)",
-      "randomEventFarm": "How many Random Event you farm everyday?",
+      "randomEventFarm": "How many Random Events do you farm everyday?",
       "calculate": "Calculate",
       "based": "Based on AR:{ar}",
-      "change": "(change on settings)",
-      "result": "To reach Friendship level 10 if you complete all daily commission and use 180 resin everyday",
+      "change": "(change in the Settings)",
+      "result": "To reach Friendship level 10, if you complete all daily commissions and use 180 resin everyday",
       "resultSerenitea": "If you also place the character in the Serenitea Pot (Max Adeptal Energy)",
       "resultDay": "{result} Days"
     },
@@ -580,7 +580,7 @@
       "dailyCommission": "Daily Commission",
       "type": "Type",
       "amount": "Amount",
-      "totalPrimogem": "Total Primogem",
+      "totalPrimogem": "Total Primogems",
       "calculate": "Calculate"
     }
   },
@@ -650,7 +650,7 @@
     "driveError": "Google Drive API cannot be loaded",
     "driveSignIn": "Sign in to Google Drive",
     "driveSignOut": "Sign out Google Drive",
-    "driveSignInErrorScope": "Drive Sign In failed! Please sign in again and check the required permission!",
+    "driveSignInErrorScope": "Drive Sign In failed! Please sign in again and check the required permissions!",
     "synced": "Synced",
     "waiting": "Waiting...",
     "syncing": "Syncing...",
@@ -682,48 +682,48 @@
   },
   "privacypolicy": {
     "title": "Privacy Policy",
-    "subtitle": "What paimon.moe collect and what it used for",
+    "subtitle": "What paimon.moe collects and what it is used for",
     "collect": [
       {
         "title": "Visited url at paimon.moe, referer, browser, operating system, device type, visitor country",
         "content": [
           "Paimon.moe use",
           "plausible.io",
-          "(a privacy-friendly analytics) so we can see how many people use which feature, so we can prioritize what feature to implement or improve."
+          "(a privacy-friendly analytics) so we can see how many people use which feature, so we can prioritize what features to implement or improve."
         ]
       },
       {
-        "title": "Error message and exception from the website",
+        "title": "Error messages and exceptions from the website",
         "content": [
-          "Paimon.moe will send error and exception from the website to",
+          "Paimon.moe will send errors and exceptions from the website to",
           "sentry.io",
-          "so we can track what cause problem and fix it accordingly."
+          "so we can track what caused the problem and fix it accordingly."
         ]
       },
       {
         "title": "Wish Pity",
         "content": [
-          "Paimon.moe will save 4* pity count, 5* pity count, and 5* wish information (wish time, item name, pity count) if you check 'Submit pity for global wish stats' on Wish Auto Import or manually submit it on Help & Setting menu. Paimon.moe will aggregate the data and use it to calculate the average pity for each banner on paimon.moe users. You can check it here",
+          "Paimon.moe will save your 4* pity count, 5* pity count, and 5* wish information (wish time, item name, pity count) if you check 'Submit pity for global wish stats' on Wish Auto Import or manually submit it on the Help & Settings menu. Paimon.moe will aggregate the data and use it to calculate the average pity for each banner on paimon.moe users. You can check it here",
           "wish stats"
         ]
       }
     ],
-    "subtitleNotCollect": "What paimon.moe NOT collect",
+    "subtitleNotCollect": "What paimon.moe does NOT collect",
     "notCollect": [
-      "Paimon.moe never save any password, uid, username, email, temporary keys, or feedback url. If you are interested, the project is open source and you can check the source code at",
+      "Paimon.moe will never save passwords, UIDs, usernames, emails, temporary keys, or feedback url's. If you are interested, the project is open source and you can check the source code at",
       "paimon-moe-api Github",
       "and",
       "paimon-moe Github"
     ]
   },
   "sync": {
-    "message": "Your local data in this browser is conflicting with the ones stored in the Google Drive!",
+    "message": "Your local data in this browser is conflicting with the one stored in Google Drive!",
     "googleDriveData": "Google Drive Data",
-    "localData": "This Browser Local Data",
+    "localData": "Local Browser Data",
     "older": "OLDER",
     "newer": "NEWER",
     "useGoogleDriveData": "Use Data From Google Drive",
-    "useLocalData": "Use This Browser Local Data",
+    "useLocalData": "Use Local Browser Data",
     "download": "Download Both Data",
     "lastModified": "Last modified",
     "or": "OR"
@@ -738,7 +738,7 @@
   "donate": {
     "message": [
       "Thank you! Hope you find it useful.",
-      "I made this website for fun when I have some spare time. Obviously will add more feature and update the data every update, because I like to explore the game and kind of min-maxing it.",
+      "I made this website for fun when I have some spare time. I will add more features and update the data every update, because I like to explore the game and I'm kind of min-maxing it.",
       "If you want to donate, your donation will definitely help on improving the site and motivating me to add more stuff to Paimon.moe! Thank you very much and have fun, hope you like it!",
       "If you like coding, you can also contributing to the project on"
     ],
@@ -747,9 +747,9 @@
     "crypto": "Support me with Crypto"
   },
   "reminder": {
-    "notSupported": "Your browser does not support push notification, please try other browser!",
-    "blocked": "Notification is blocked, the reminder notification will not work! Please enable it on your browser.",
-    "desktop": "Desktop browser cannot receive notification if the browser is not running!",
+    "notSupported": "Your browser does not support push notifications, please try a different browser!",
+    "blocked": "Notifications are blocked - the reminder notification will not work! Please enable it on your browser.",
+    "desktop": "Desktop browsers cannot receive notifications if the browser is not running!",
     "early": "The notification may arrive earlier (about 1-10 minutes) because of the way we send the notification",
     "allowNotification": "Please allow the notification prompt that shows up!",
     "transformer": "Parametric Transformer Reminder",
@@ -762,7 +762,7 @@
     "set": "Set Reminder",
     "checking": "Checking saved reminder...",
     "errorSelect": "Please select the day and hour!",
-    "errorSaving": "Something wrong when saving the reminder 🙁",
+    "errorSaving": "Something went wrong when saving the reminder 🙁",
     "current": "Current reminder",
     "hoyolab": "Hoyolab Daily Check-In Reminder",
     "comingsoon": "Coming Soon!"
@@ -775,7 +775,7 @@
     "commissions": "commissions",
     "version": "Version",
     "type": "Type",
-    "searchError": "Cannot found achievement: {query}"
+    "searchError": "Cannot find achievement: {query}"
   },
   "furnishing": {
     "title": "Furnishing",
@@ -798,13 +798,13 @@
     "listButton": "List",
     "inventory": {
       "title": "Furnishing Inventory",
-      "subtitle": "Some special categories like wall are not shown",
+      "subtitle": "Some special categories like walls are not shown",
       "all": "All",
       "openSets": "Open Sets"
     },
     "sets": {
       "title": "Furnishing Sets",
-      "subtitle": "Click the furnishing icon for detail, and you can click the character icon to mark them! Open the Inventory menu above to fill your furnishing items count.",
+      "subtitle": "Click the furnishing icon for details, and you can click the character icon to mark them! Open the Inventory menu above to fill your furnishing item count.",
       "setPlaced": "Set as placed",
       "setUnplaced": "Set as unplaced",
       "inInventory": "In inventory",
@@ -852,7 +852,7 @@
   },
   "fishing": {
     "title": "Fishing Book",
-    "subtitle": "Mark the fishing spot as empty when you already fish out all the fish to start the respawn timer",
+    "subtitle": "Mark the fishing spot as empty when you already fished out all the fish to start the respawn timer",
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
