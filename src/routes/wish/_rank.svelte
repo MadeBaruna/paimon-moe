@@ -59,7 +59,7 @@
       if (qty >= value) break;
     }
 
-    percentage = (totalLower / total) * 100;
+    percentage = 100 - (totalLower / total) * 100;
     console.log(totalLower, percentage, value);
 
     loading = false;
@@ -86,7 +86,7 @@
   <div class="flex flex-row items-end">
     <div class="flex flex-col text-white font-black text-4xl pr-4">
       <span class="text-sm text-left text-gray-400" style="line-height: 0.7;">TOP</span>
-      <span class="text-right leading-none">{loading ? '...' : percentage.toFixed(0)}%</span>
+      <span class="text-right leading-none">{loading ? '...' : percentage.toFixed(percentage < 2 ? 1 : 0)}%</span>
     </div>
     <div class="flex flex-col text-white" style="margin-bottom: 2px;">
       <p>{$t('wish.rank.level')}</p>
