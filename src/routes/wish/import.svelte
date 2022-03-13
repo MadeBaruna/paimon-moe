@@ -153,6 +153,9 @@
 
     try {
       if (selectedType === 'android') {
+        const urlString = genshinLink.match(/https:\/\/.*#/g);
+        url = new URL(urlString);
+      } else if (selectedType === 'pclog') {
         const urlString = genshinLink.match(/https:\/\/.*\//g);
         url = new URL(urlString);
       } else {
@@ -220,6 +223,7 @@
     }
 
     currentBanner = type.name;
+    console.log(url);
 
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
