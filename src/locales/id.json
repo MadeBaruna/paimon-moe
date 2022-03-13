@@ -454,9 +454,11 @@
       "desc": "Jadi jika terjadi sesuatu yang menyebabkan cache browser mu terhapus, data riwayat wish mu akan hilang! Kamu bisa menyalakan Google Drive sync di setting untuk membackup datamu, atau kamu bisa mendownload secara manual datanya di sana."
     },
     "rank": {
-      "level": "Level Whale Mu",
+      "level": "Ranking Total Wish Mu",
       "based": "Dari Perhitungan Pity Global",
-      "current": "Median {banner} saat ini {median} pull"
+      "current": "Median {banner} saat ini {median} pull",
+      "more": "Kamu wish lebih banyak dari {percentage}% pengguna paimon.moe",
+      "less": "Kamu wish lebih sedikit dari {percentage}% pengguna paimon.moe"
     }
   },
   "calculator": {

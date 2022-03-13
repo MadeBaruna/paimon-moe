@@ -69,6 +69,8 @@
     current = type;
     getData();
   }
+
+  $: fixedPoint = percentage < 0.1 ? 2 : percentage < 2 ? 1 : 0;
 </script>
 
 <div class="flex flex-col items-center bg-item rounded-xl p-4 w-full mt-4">
@@ -86,7 +88,7 @@
   <div class="flex flex-row items-end">
     <div class="flex flex-col text-white font-black text-4xl pr-4">
       <span class="text-sm text-left text-gray-400" style="line-height: 0.7;">TOP</span>
-      <span class="text-right leading-none">{loading ? '...' : percentage.toFixed(percentage < 2 ? 1 : 0)}%</span>
+      <span class="text-right leading-none">{loading ? '...' : percentage.toFixed(fixedPoint)}%</span>
     </div>
     <div class="flex flex-col text-white" style="margin-bottom: 2px;">
       <p>{$t('wish.rank.level')}</p>
@@ -95,6 +97,13 @@
   </div>
   <p class="text-sm text-gray-400 mt-2 text-center">
     {$t('wish.rank.current', { values: { median, banner: $t(`wish.types.${current}`) } })}
+  </p>
+  <p class="text-sm text-gray-400 text-center">
+    {#if percentage < 50}
+      {$t('wish.rank.more', { values: { percentage: (100 - percentage).toFixed(fixedPoint) } })}
+    {:else}
+      {$t('wish.rank.less', { values: { percentage: percentage.toFixed(0) } })}
+    {/if}
   </p>
 </div>
 

@@ -454,9 +454,11 @@
       "desc": "So if by any chance the browser cache got deleted, your wish history will be gone! You can enable Google Drive sync in the Settings menu to backup your data, or download the data manually there."
     },
     "rank": {
-      "level": "Your Whale Level",
+      "level": "Your Total Pulls Rank",
       "based": "Based on Global Wish Stats",
-      "current": "Current {banner} median is {median} pulls"
+      "current": "Current {banner} median is {median} pulls",
+      "more": "You have more pull than {percentage}% of paimon.moe users",
+      "less": "You have less pull than {percentage}% of paimon.moe users"
     }
   },
   "calculator": {
