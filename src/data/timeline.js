@@ -22,6 +22,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/1823273',
       showOnHome: true,
     },
+    {
+      name: '2.6 Special Program',
+      pos: '100% 80%',
+      image: 'stream26.png',
+      start: '2022-03-18 20:00:00',
+      end: '2022-03-25 20:00:00',
+      color: '#fff8cf',
+      zoom: '120%',
+      url: 'https://www.twitch.tv/genshinimpactofficial',
+      startOnly: true,
+    },
   ],
   [
     {
