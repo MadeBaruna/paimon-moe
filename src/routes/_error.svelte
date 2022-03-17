@@ -40,6 +40,10 @@
       Click here to refresh
     </a>
     <p class="text-white text-xl mt-2 text-center">Or you can try refresh the page by pressing CTRL+F5</p>
+    <p class="text-white text-xl mt-2 text-center">
+      You might also want to check your extension, like adblock, it sometimes wrongly block the script needed for the
+      site.
+    </p>
   {/if}
 
   {#if dev && error.stack}
