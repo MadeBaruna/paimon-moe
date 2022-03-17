@@ -10,7 +10,6 @@ export const eventsData = [
       zoom: '150%',
       url: 'https://www.hoyolab.com/article/1586790',
       showOnHome: true,
-      timezoneDependent: true,
     },
     {
       name: 'Eight Locales Over Mountains and Seas',
@@ -33,6 +32,7 @@ export const eventsData = [
       zoom: '120%',
       url: 'https://www.twitch.tv/genshinimpactofficial',
       startOnly: true,
+      timezoneDependent: true,
     },
   ],
   [
