@@ -29,9 +29,9 @@
   onMount(() => {
     startSync();
 
-    window.onerror = function () {
-      handleError();
-    };
+    // window.onerror = function () {
+    //   handleError();
+    // };
   });
 
   function startSync() {
