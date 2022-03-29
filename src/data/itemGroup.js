@@ -280,6 +280,10 @@ export const itemGroup = {
   },
   spectral_husk: {
     name: 'Spectral',
-    items: [itemList.concealed_claw, itemList.spectral_heart, itemList.spectral_nucleus],
+    items: [itemList.spectral_husk, itemList.spectral_heart, itemList.spectral_nucleus],
+  },
+  gloomy_statuette: {
+    name: 'Statuette',
+    items: [itemList.gloomy_statuette, itemList.dark_statuette, itemList.deathly_statuette],
   },
 };
