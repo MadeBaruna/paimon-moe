@@ -91,4 +91,28 @@ export const bannersDual = {
       featuredRare: ['bennett', 'xinyan', 'kujou_sara'],
     },
   ],
+  'Azure Excursion 1': [
+    {
+      name: 'Azure Excursion',
+      image: 1,
+      shortName: 'Ayato',
+      start: '2022-03-30 06:00:00',
+      end: '2022-04-19 17:59:59',
+      color: '#90bce9',
+      featured: ['kamisato_ayato', 'venti'],
+      featuredRare: ['yun_jin', 'xiangling', 'sucrose'],
+      timezoneDependent: true,
+    },
+    {
+      name: 'Ballad in Goblets',
+      image: 3,
+      shortName: 'Venti',
+      start: '2022-03-30 06:00:00',
+      end: '2022-04-19 17:59:59',
+      color: '#ffd1f9',
+      featured: ['kamisato_ayato', 'venti'],
+      featuredRare: ['yun_jin', 'xiangling', 'sucrose'],
+      timezoneDependent: true,
+    },
+  ],
 };
