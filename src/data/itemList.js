@@ -847,4 +847,10 @@ export const itemList = {
     name: 'The Meaning of Aeons',
     rarity: 5,
   },
+
+  mudra_of_the_malefic_general: {
+    id: 'mudra_of_the_malefic_general',
+    name: 'Mudra of the Malefic General',
+    rarity: 5,
+  },
 };

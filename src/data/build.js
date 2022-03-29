@@ -2571,6 +2571,24 @@ export const builds = {
       },
     },
   },
+  kamisato_ayato: {
+    roles: {
+      TBD: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
   aloy: {
     roles: {
       'BURST SUPPORT': {
