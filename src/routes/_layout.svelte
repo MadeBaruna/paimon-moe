@@ -26,7 +26,7 @@
   import SettingData from '../components/SettingData.svelte';
   import Toast from '../components/Toast.svelte';
   import Icon from '../components/Icon.svelte';
-  import { mdiDiscord, mdiFacebook, mdiReddit, mdiTelegram, mdiTwitter } from '@mdi/js';
+  import { mdiDiscord, mdiFacebook, mdiGithub, mdiReddit, mdiTelegram, mdiTwitter } from '@mdi/js';
 
   export let segment;
 
@@ -81,11 +81,11 @@
       <span class="text-gray-500">{$t('footer.community')}</span>
       <div>
         <a
-          class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap"
-          href="https://t.me/GenshinImpact_ID"
+          class="text-gray-400 hover:text-primary whitespace-no-wrap"
+          href="https://github.com/MadeBaruna/paimon-moe"
           target="_blank"
         >
-          <Icon path={mdiTelegram} size={1} /> Telegram 🇮🇩
+          <Icon path={mdiGithub} size={1} /> Github
         </a>
         <a
           class="text-gray-400 hover:text-primary whitespace-no-wrap"
@@ -128,13 +128,6 @@
       <a class="text-gray-400 hover:text-primary" href="/privacy-policy">Privacy Policy</a>
       <!-- svelte-ignore a11y-invalid-attribute -->
       <a class="text-gray-400 hover:text-primary nn-cmp-show" href="#">Cookie Settings</a>
-    </div>
-    <div
-      class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center h-full md:pl-4 md:border-l border-gray-600"
-    >
-      <a class="text-gray-400 hover:text-primary" href="https://github.com/MadeBaruna/paimon-moe" target="_blank">
-        Github
-      </a>
     </div>
   </div>
 </div>
