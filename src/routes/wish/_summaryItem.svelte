@@ -3,17 +3,9 @@
   import { mdiStar } from '@mdi/js';
 
   import Icon from '../../components/Icon.svelte';
-  import { onMount } from 'svelte';
 
   export let avg;
   export let type;
-
-  const legendaryStr = JSON.stringify(avg.legendary.pulls);
-  let legendary = JSON.parse(legendaryStr);
-  let legendaryBackup = JSON.parse(legendaryStr);
-  let dropit = false;
-  let stop = false;
-  let running = true;
 
   let numberFormat = Intl.NumberFormat('en', {
     maximumFractionDigits: 1,
@@ -24,47 +16,6 @@
     const hue = percentage * 120;
     return `color: hsl(${hue}, 100%, 60%);`;
   }
-
-  async function suprize() {
-    const randomOrder = [...Array(legendary.length).keys()];
-    for (let i = randomOrder.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [randomOrder[i], randomOrder[j]] = [randomOrder[j], randomOrder[i]];
-    }
-
-    let time = 2000;
-    for (const index of randomOrder) {
-      legendary[index].name = 'Qiqi';
-      await sleep(time);
-      time = Math.max(100, time - 100);
-    }
-
-    running = false;
-    await sleep(20000);
-    if (stop) return;
-    wow();
-  }
-
-  async function wow() {
-    if (running) return;
-    dropit = true;
-    await sleep(3000);
-    dropit = false;
-    legendary = legendaryBackup;
-  }
-
-  function stopit() {
-    stop = true;
-    wow();
-  }
-
-  function sleep(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
-
-  onMount(() => {
-    if (type.id === 'character-event' && Math.random() > 0.5) suprize();
-  });
 
   $: textSize = avg.legendary.total > 20 ? 'text-sm' : 'text-base';
 </script>
@@ -130,12 +81,12 @@
       </td>
     </tr>
   </table>
-  {#if legendary.length > 0}
-    <div class="flex flex-wrap mt-2 overflow-y-auto {dropit ? 'nice' : ''}" style="max-height: 500px;">
-      {#each legendary as pull}
-        <span class="pity {textSize}" on:click={stopit}>
-          {$t(pull.name)} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span>
-        </span>
+  {#if avg.legendary.pulls.length > 0}
+    <div class="flex flex-wrap mt-2 overflow-y-auto" style="max-height: 500px;">
+      {#each avg.legendary.pulls as pull}
+        <span class="pity {textSize}"
+          >{$t(pull.name)} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span
+        >
       {/each}
     </div>
   {/if}
@@ -169,45 +120,5 @@
   ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.35);
     @apply rounded-xl;
-  }
-
-  .nice {
-    animation: 3s wow steps(1);
-  }
-
-  @keyframes wow {
-    0% {
-      filter: invert(1);
-    }
-    5% {
-      filter: invert(0);
-    }
-    15% {
-      filter: drop-shadow(16px 16px 20px red) invert(75%);
-    }
-    20% {
-      filter: invert(0);
-    }
-    30% {
-      filter: invert(0.9);
-    }
-    50% {
-      filter: invert(0);
-    }
-    80% {
-      filter: invert(1);
-    }
-    85% {
-      filter: invert(0);
-    }
-    90% {
-      filter: drop-shadow(16px 16px 20px red) invert(75%);
-    }
-    95% {
-      filter: invert(0);
-    }
-    100% {
-      filter: invert(1);
-    }
   }
 </style>
