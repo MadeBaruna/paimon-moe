@@ -13,23 +13,23 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    sangonomiya_kokomi: {
-      name: 'Kokomi',
+    kamisato_ayato: {
+      name: 'Ayato',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    raiden_shogun: {
-      name: 'Raiden',
+    venti: {
+      name: 'Venti',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300027;
-  const image = 'raidenkokomi.png';
+  const bannerId = 300028;
+  const image = 'ayatoventi.png';
 
   let loading = true;
   let user = '';

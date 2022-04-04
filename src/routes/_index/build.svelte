@@ -10,7 +10,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const promoted = ['raiden_shogun', 'sangonomiya_kokomi'];
+  const promoted = ['venti', 'sucrose', 'yun_jin'];
   let current = 0;
 
   async function change(index) {

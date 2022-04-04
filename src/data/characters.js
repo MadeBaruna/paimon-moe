@@ -2759,6 +2759,151 @@ export const characters = {
     },
     element: elements.cryo,
   },
+  kamisato_ayato: {
+    id: 'kamisato_ayato',
+    name: 'Kamisato Ayato',
+    rarity: 5,
+    weapon: weapons.sword,
+    stats: {
+      hp: 13715,
+      atk: 299,
+      def: 769,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.sakura_bloom,
+            amount: 3,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.dew_of_repudiation,
+            amount: 2,
+          },
+          {
+            item: itemList.sakura_bloom,
+            amount: 10,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.dew_of_repudiation,
+            amount: 4,
+          },
+          {
+            item: itemList.sakura_bloom,
+            amount: 20,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.dew_of_repudiation,
+            amount: 8,
+          },
+          {
+            item: itemList.sakura_bloom,
+            amount: 30,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.dew_of_repudiation,
+            amount: 12,
+          },
+          {
+            item: itemList.sakura_bloom,
+            amount: 45,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.dew_of_repudiation,
+            amount: 20,
+          },
+          {
+            item: itemList.sakura_bloom,
+            amount: 60,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.old_handguard, itemList.kageuchi_handguard, itemList.famed_handguard],
+      book: [itemList.teachings_of_elegance, itemList.guide_to_elegance, itemList.philosophies_of_elegance],
+      boss: itemList.mudra_of_the_malefic_general,
+    },
+    element: elements.hydro,
+  },
   keqing: {
     id: 'keqing',
     name: 'Keqing',
@@ -6415,7 +6560,7 @@ export const characters = {
             amount: 1,
           },
           {
-            item: 'none',
+            item: itemList.none,
             amount: null,
           },
           {

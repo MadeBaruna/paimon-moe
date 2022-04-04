@@ -7849,4 +7849,63 @@ export const weaponList = {
       },
     ],
   },
+  haran_geppaku_futsu: {
+    name: 'Haran Geppaku Futsu',
+    id: 'haran_geppaku_futsu',
+    rarity: 5,
+    atk: 46,
+    secondary: 'CRIT Rate',
+    type: weapons.sword,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.narukamis_wisdom, amount: 5 },
+          { item: itemList.gloomy_statuette, amount: 5 },
+          { item: itemList.old_handguard, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 5 },
+          { item: itemList.gloomy_statuette, amount: 18 },
+          { item: itemList.old_handguard, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_joy, amount: 9 },
+          { item: itemList.dark_statuette, amount: 9 },
+          { item: itemList.kageuchi_handguard, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 5 },
+          { item: itemList.dark_statuette, amount: 18 },
+          { item: itemList.kageuchi_handguard, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_affection, amount: 9 },
+          { item: itemList.deathly_statuette, amount: 14 },
+          { item: itemList.famed_handguard, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.narukamis_valor, amount: 6 },
+          { item: itemList.deathly_statuette, amount: 27 },
+          { item: itemList.famed_handguard, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

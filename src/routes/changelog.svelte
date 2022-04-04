@@ -8,6 +8,15 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre class="text-white px-4 md:px-8">
+2022/03/30
+- Add Kamisato Ayato
+- Add new weapon
+- Add 2 new artifacts
+- Updated 2.6 achievements
+- Update banners
+- Add new items
+- Fix some error message bug
+
 2022/02/16
 - Add 50:50 indicator on wish counter table page
 - Add guarantee indicator on wish counter page
