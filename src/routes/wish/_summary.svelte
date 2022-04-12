@@ -87,14 +87,9 @@
   function isFeatured(bannerId, pull) {
 
     function isFeaturedOnBanner(banners) {
-      const found = banners?.find((banner) => {
-        if(banner?.featured?.includes(pull.id) && dayjs(pull?.time).isBetween(dayjs(banner?.start), dayjs(banner?.end), null, '[]')) {
-          return true;
-        } else {
-          return false;
-        }
-      })
-      return !!found;
+      return !!banners?.find((banner) => 
+        banner?.featured?.includes(pull.id) && dayjs(pull?.time).isBetween(dayjs(banner?.start), dayjs(banner?.end), null, '[]')
+      );
     }
 
     if(bannerId === 'character-event') {
