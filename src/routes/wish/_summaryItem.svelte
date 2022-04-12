@@ -1,7 +1,6 @@
 <script>
   import { t } from 'svelte-i18n';
-  import { mdiStar } from '@mdi/js';
-
+  import { mdiStar, mdiArrowUpBold } from '@mdi/js';
   import Icon from '../../components/Icon.svelte';
 
   export let avg;
@@ -42,6 +41,36 @@
         {numberFormat.format(avg.legendary.pity)}
       </td>
     </tr>
+    {#if type.id === 'character-event' || type.id === 'weapon-event'}
+      <tr>
+        <td class="text-legendary-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
+          └ Featured
+        </td>
+        <td class="text-legendary-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+          {numberFormat.format(avg.legendary.featured)}
+        </td>
+        <td class="text-legendary-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+          {numberFormat.format(avg.legendary.featuredPercentage * 100)}%
+        </td>
+        <td class="text-legendary-from font-semibold text-right border-t border-gray-700">
+          -
+        </td>
+      </tr>
+      <tr>
+        <td class="text-legendary-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
+          └ Standard
+        </td>
+        <td class="text-legendary-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+          {numberFormat.format(avg.legendary.standard)}
+        </td>
+        <td class="text-legendary-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+          {numberFormat.format(avg.legendary.standardPercentage * 100)}%
+        </td>
+        <td class="text-legendary-from font-semibold text-right border-t border-gray-700">
+          -
+        </td>
+      </tr>
+    {/if}
     <tr>
       <td class="text-rare-from font-semibold pr-2 md:pr-4 border-t border-gray-700">
         4 <Icon path={mdiStar} color="#AD76B0" size="0.6" />
@@ -84,9 +113,11 @@
   {#if avg.legendary.pulls.length > 0}
     <div class="flex flex-wrap mt-2 overflow-y-auto" style="max-height: 500px;">
       {#each avg.legendary.pulls as pull}
-        <span class="pity {textSize}"
-          >{$t(pull.name)} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span
-        >
+        <span class="pity {textSize}">
+          {#if pull.featured}<Icon path={mdiArrowUpBold} color="#FFB13F" size="0.6" />{/if}
+          {$t(pull.name)}
+          <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span>
+        </span>
       {/each}
     </div>
   {/if}

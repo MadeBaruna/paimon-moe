@@ -3,11 +3,14 @@
 
   import { onMount } from 'svelte';
   import dayjs from 'dayjs';
+  import isBetween from 'dayjs/plugin/isBetween';
   import debounce from 'lodash/debounce';
 
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
   import { bannerTypes } from '../../data/bannerTypes';
+  import { banners } from '../../data/banners';
+  import { bannersDual } from '../../data/bannersDual';
 
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateTime, fromRemote, updateSave } from '../../stores/saveManager';
@@ -15,6 +18,7 @@
   import Icon from '../../components/Icon.svelte';
   import { mdiEarth } from '@mdi/js';
 
+  dayjs.extend(isBetween);
   let numberFormat = Intl.NumberFormat();
 
   export let monthlyData = {};
@@ -79,7 +83,38 @@
     },
   };
 
-  
+  // determine if the current pull is a featured 
+  function isFeatured(bannerId, pull) {
+
+    function isFeaturedOnBanner(banners) {
+      const found = banners?.find((banner) => {
+        if(banner?.featured?.includes(pull.id) && dayjs(pull?.time).isBetween(dayjs(banner?.start), dayjs(banner?.end), null, '[]')) {
+          return true;
+        } else {
+          return false;
+        }
+      })
+      return !!found;
+    }
+
+    if(bannerId === 'character-event') {
+      // look up character banner
+      const foundOnCharacterBanner = isFeaturedOnBanner(banners.characters);
+
+      // lookup character dual banner (if not found on normal character banner)
+      if(foundOnCharacterBanner) {
+        return foundOnCharacterBanner;
+      } else {
+        return Object.values(bannersDual).some(isFeaturedOnBanner);
+      }
+    } else if(bannerId === 'weapon-event') {
+      // lookup weapon banner 
+      return isFeaturedOnBanner(banners.weapons);
+    } else {
+      // other banner will not have featured
+      return false;
+    }
+  }
 
   export async function readLocalData() {
     let totalWish = 0;
@@ -170,7 +205,7 @@
             legendaryPity += pull.pity;
             currentMonthlyData[time].legendary++;
 
-            legendaryPulls.push({ name: itemName, pity: pull.pity });
+            legendaryPulls.push({ name: itemName, pity: pull.pity, featured: isFeatured(type.id, pull) });
           } else if (rarity === 4) {
             rare++;
             rarePity += pull.pity;
@@ -185,6 +220,9 @@
             }
           }
         }
+
+        const legendaryFeatured = legendaryPulls.filter((pull) => pull.featured).length;
+        const legendaryStandard = legendary - legendaryFeatured;
 
         avg[type.id] = {
           rare: {
@@ -205,6 +243,10 @@
           legendary: {
             total: legendary,
             percentage: total > 0 ? legendary / total : 0,
+            featured: legendaryFeatured,
+            featuredPercentage: legendaryFeatured > 0 ? legendaryFeatured / total : 0,
+            standard: legendaryStandard,
+            standardPercentage: legendaryStandard > 0 ? legendaryStandard / total : 0,
             pity: legendary > 0 ? legendaryPity / legendary : 0,
             pulls: legendaryPulls,
           },
