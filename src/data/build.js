@@ -50,7 +50,7 @@ export const builds = {
         talent: [' Normal Attack', ' Burst', ' Skill'],
         tip: '',
         note:
-          "will be focused on maximizing Charged Shot damage on enemy weak spots as Amber's Ascension 4 Talent increases ATK by 15% for 10s after hitting a weak spot. Crit is also guaranteed when you land your shot on a weak spot so we aim to maximize Crit DMG with little to no dependance on Crit Rate, this could change after <b>[C4]</b>.\nAfter <b>[C4]</b>, the playstyle catering towards her Skill damage becomes available, with this build you will want to run Crimson Witch of Flames (4) while trying to maintain the 1:2 Crit Ratio for more frequent nukes. This playstyle is safer, more consistent and has more AoE damage to play compared to Charge Shot Amber.\n\n<b>Regarding Artifact Sets:</b>\n<b>Shimenawa's Reminiscence:</b> At <b>[C4]</b> this set will beat out Wanderer's Troupe for Amber Charged Shot Main DPS.\n\n<b>Regarding Weapon Choices:</b>\n<b>Prototype Crescent: </b>This bow will beat Skyward Harp if it's <b>[R2+]</b>.\n<b>Hamayumi:</b> This bow will beat Sharpshooter's Oath <b>[R5]</b> if it's <b>[R2+]</b>.",
+          "This build will be focused on maximizing Charged Shot damage on enemy weak spots as Amber's Ascension 4 Talent increases ATK by 15% for 10s after hitting a weak spot. Crit is also guaranteed when you land your shot on a weak spot so we aim to maximize Crit DMG with little to no dependance on Crit Rate, this could change after <b>[C4]</b>.\nAfter <b>[C4]</b>, the playstyle catering towards her Skill damage becomes available, with this build you will want to run Crimson Witch of Flames (4) while trying to maintain the 1:2 Crit Ratio for more frequent nukes. This playstyle is safer, more consistent and has more AoE damage to play compared to Charge Shot Amber.\n\n<b>Regarding Artifact Sets:</b>\n<b>Shimenawa's Reminiscence:</b> At <b>[C4]</b> this set will beat out Wanderer's Troupe for Amber Charged Shot Main DPS.\n\n<b>Regarding Weapon Choices:</b>\n<b>Prototype Crescent: </b>This bow will beat Skyward Harp if it's <b>[R2+]</b>.\n<b>Hamayumi:</b> This bow will beat Sharpshooter's Oath <b>[R5]</b> if it's <b>[R2+]</b>.",
       },
       SUPPORT: {
         recommended: true,
@@ -149,7 +149,7 @@ export const builds = {
         tip:
           'A few commonly used teams for pyro Xiangling are:\nNational Team: Xiangling, Xingqiu, Bennett and a Flex unit (Sucrose/Zhongli/Kazuha/Raiden/Chongyun/etc)\nChilde Team: Childe, Xiangling, Bennett and a Flex unit (Sucrose/Zhongli/Venti/Kazuha/etc)\n\nRecommended ER thresholds: \nNational/Childe Teams: 160-200 ER%\nEnabler for Reverse Melt teams: 200-250 ER%',
         note:
-          "<b>Regarding Weapon Choices: THIS LIST ASSUMES THAT XIANGLING IS RUN WITH BOTH BENNETT AND A SECONDARY BUFFER (i.e. Kazuha/Sucrose)\nWavebreaker's Fin: [R5] Wavebreaker's Fin</b> is equal to or outperforms <b>Staff of Homa,</b> depending on your total team burst cost.<b>\nDragon's Bane: [R5] Dragon's Bane</b> outperforms<b> Primordial Jade-Winged Spear.</b>\n<b>Kitain Cross Spear: Kitain Cross Spear's</b> passive reduces the ER threshold of Xiangling greatly, down to <b>~140 ER% at [R1]</b> and <b>~110 ER% at [R5].</b> This allows you to distribute ER rolls into otherwise offensive substats and due to this, an <b>[R5] Kitain Cross Spear</b> can outperform <b>Primordial Jade-Winged Spear.</b> Due to lowering ER thresholds so much, the <b>Crimson Witch of Flames (4)</b> artifact set will outperform <b>Emblem of Severed Fate (4).</b>\n<b>Lithic Spear: [R5] Lithic Spear</b> with <b>2 stacks</b> performs equal to <b>Primordial Jade-Winged Spear.</b>\n<b>Favonius Lance:</b> The utility provided from a <b>highly refined Favonius Lance</b> can make it a weapon of choice in a team comp where Xiangling is not triggering the reaction and is instead used as an aura. <b>(i.e. Reverse Melt teams)</b>\n\n<b>Regarding Weapons and Artifacts with EM stat:\nDragon's Bane / Kitain Cross Spear / EM substats:</b> In team comps where you can trigger<b> </b>both <b>Vaporise and Overload at the same time</b> (i.e. Raiden National), <b>Elemental Mastery</b> gets more value, pushing these weapons and artifacts ahead in damage.<b>\n\nRegarding Artifact Sets:\nCrimson Witch (4):</b> This set pulls ahead over <b>Emblem of Severed Fate (4)</b> on team comps where Xiangling has lower Energy Recharge requirements (i.e. Raiden National).\n<b>The Exile (2) Scholar (2): </b>This set can be used as a <b>very low investment support build to enable Reverse Melt team comps</b> where Xiangling is not triggering the reaction and is instead used as an aura and needs a lot of Energy Recharge. Note that it is <b>not recommended to stay on this build as Xiangling can still contribute respectable damage with offensive stats.\n\n</b>",
+          "<b>Regarding Weapon Choices: THIS LIST ASSUMES THAT XIANGLING IS RUN WITH BOTH BENNETT AND A SECONDARY BUFFER (i.e. Kazuha/Sucrose)\nWavebreaker's Fin: [R5] Wavebreaker's Fin</b> is equal to or outperforms <b>Staff of Homa,</b> depending on your total team burst cost.<b>\nDragon's Bane: [R5] Dragon's Bane</b> outperforms<b> Primordial Jade-Winged Spear.</b>\n<b>Kitain Cross Spear: Kitain Cross Spear's</b> passive reduces the ER threshold of Xiangling greatly, down to <b>~140 ER% at [R1]</b> and <b>~110 ER% at [R5].</b> This allows you to distribute ER rolls into otherwise offensive substats and due to this, an <b>[R5] Kitain Cross Spear</b> can outperform <b>Primordial Jade-Winged Spear.</b> Due to lowering ER thresholds so much, the <b>Crimson Witch of Flames (4)</b> artifact set will outperform <b>Emblem of Severed Fate (4).</b>\n<b>Lithic Spear: [R5] Lithic Spear</b> with <b>2 stacks</b> performs equal to <b>Primordial Jade-Winged Spear.</b>\n<b>Favonius Lance:</b> The utility provided from a <b>highly refined Favonius Lance</b> can make it a weapon of choice in a team comp where Xiangling is not triggering the reaction and is instead used as an aura. <b>(i.e. Reverse Melt teams)</b>\n\n<b>Regarding Weapons and Artifacts with EM stat:\nDragon's Bane / Kitain Cross Spear / EM substats:</b> In team comps where you can trigger<b> </b>both <b>Vaporise and Overload at the same time</b> (i.e. Raiden National), <b>Elemental Mastery</b> gets more value, pushing these weapons and artifacts ahead in damage.<b>\n\nRegarding Artifact Sets:\nCrimson Witch (4):</b> This set pulls ahead over <b>Emblem of Severed Fate (4)</b> on team comps where Xiangling triggers Overloads in addition to Vaporise (i.e. Raiden National).\n<b>The Exile (2) Scholar (2): </b>This set can be used as a <b>very low investment support build to enable Reverse Melt team comps</b> where Xiangling is not triggering the reaction and is instead used as an aura and needs a lot of Energy Recharge. Note that it is <b>not recommended to stay on this build as Xiangling can still contribute respectable damage with offensive stats.\n\n</b>",
       },
       'PHYSICAL DPS': {
         recommended: false,
@@ -191,7 +191,7 @@ export const builds = {
         talent: [' Normal Attack', ' Burst', ' Skill'],
         tip: '',
         note:
-          '<b>It is not recommended to run Physical Xiangling since Xiangling excels more as an Off-field Pyro DPS. Physical Xiangling is only good for early game.</b>\n\n<b>Regarding Weapon Choices:</b>\n<b>Crescent Pike:</b> Crescent Pike is extremely strong on Xiangling due to the nature of her attack combo, Crescent Pike continues to surpass Primordial Jade Winged-Spear in terms of Normal/Charge Attack Damage.\n\n<b>Regarding Artifact Sets:</b>\n<b>Pale Flame (4): </b>The passive from this set can have 100% uptime through using Guoba off cooldown.',
+          '<b>It is not recommended to run PhysicalDPS Xiangling since Xiangling excels more as an Off-field Pyro DPS. Physical Xiangling is only good for early game.</b>\n\n<b>Regarding Weapon Choices:</b>\n<b>Crescent Pike:</b> Crescent Pike is extremely strong on Xiangling due to the nature of her attack combo, Crescent Pike continues to surpass Primordial Jade Winged-Spear in terms of Normal/Charge Attack Damage.\n\n<b>Regarding Artifact Sets:</b>\n<b>Pale Flame (4): </b>The passive from this set can have 100% uptime through using Guoba off cooldown.',
       },
     },
   },
@@ -470,8 +470,10 @@ export const builds = {
             id: 'lost_prayer_to_the_sacred_winds',
           },
           {
+            id: 'kaguras_verity',
+          },
+          {
             id: 'the_widsith',
-            refine: [5],
           },
           {
             id: 'dodoco_tales',
@@ -479,10 +481,6 @@ export const builds = {
           },
           {
             id: 'solar_pearl',
-          },
-          {
-            id: 'the_widsith',
-            refine: [1, 4],
           },
           {
             id: 'blackcliff_agate',
@@ -508,7 +506,7 @@ export const builds = {
         tip:
           "Yanfei's Ascension 4 Talent does a second hit after a Crit Charge Attack. This scales 80% of your ATK and can trigger reactions as well due to having a separate internal cooldown on its pyro application.",
         note:
-          "Yanfei can have trouble trying to set up for her reaction. Vaporize is generally the more consistent option and you need Xingqiu to make this work best. When running a Vaporize team with Xingqiu, 3 normal attacks into a charged attack (N1>N2>N3>C) is the safest and most reliable way to vaporize your charged attacks. Make sure you're adding applying hydro first before starting combos.\n\n<b>Regarding Weapon Choices:\nLost Prayer to the Sacred Winds: </b>Bennett buff/ Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) will push Lost Prayer ahead of Skyward Atlas and Memory of Dust<b>\nDodoco Tales: </b>On equal refinements, Widsith is better than Dodoco Tales, but assuming it's <b>[R5]</b> Dodoco Tales vs <b>[R1]</b>-<b>[R3]</b> Widsith, <b>[R5]</b> Dodoco Tales is better. <b>Note that Bennett buff / Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) buff may push Widsith and Solar Pearl above Dodoco Tales, even at low refinements.\n</b>\n<b>Regarding Artifact Set:\nShimenawa's Reminiscence (4): </b>Yanfei will rarely have her burst up due to the 15 energy cost on the 4-piece effect, however she can instead <b>maintain the 4-piece DMG buff over a longer duration, making this set a good alternative to the other options.</b> Note that this set loses out on some value at higher constellations, as she can't get her <b>[C4]</b> and <b>[C6]</b> effects without casting Burst.\n<b>Retracing Bolide (4): </b>Running Yanfei with a shield character also allows you to make use of a full Retracing Bolide 4-set as a placeholder until you're able to find a good Crimson Witch 4-set. \n\n<b>Regarding Artifact Substats Priority: \n</b>Energy Recharge is prioritized over Elemental Mastery here since she has an 80 energy burst cost while her skill is also not very efficient at generating particles for getting it back. A major source of your energy will be coming from enemies as well as potential pyro batteries like Bennett, so be sure to have her pick the particles up as off-field characters only get 0.6x the value of the particles.",
+          "Yanfei can have trouble trying to set up for her reaction. Vaporize is generally the more consistent option and you need Xingqiu to make this work best. When running a Vaporize team with Xingqiu, 3 normal attacks into a charged attack (N1>N2>N3>C) is the safest and most reliable way to vaporize your charged attacks. Make sure you're adding applying hydro first before starting combos.\n\n<b>Regarding Weapon Choices:\nLost Prayer to the Sacred Winds: </b>Bennett buff/ Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) will push Lost Prayer ahead of Skyward Atlas and Memory of Dust.\n<b>Kagura's Verity: </b>Do note that with Bennett's Buff / Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4), Kagura's Verity will push ahead of Skyward Atlas and Memory of Dust. \n<b>The Widsith: </b>Note that with strong attack buffs like Bennett's Burst, an <b>[R5] </b>Widsith can outperform most <b>[R1] </b>5-star weapons, with the exception of Lost Prayer to the Sacred Winds.<b>\nDodoco Tales: </b>On equal refinements, Widsith is better than Dodoco Tales, but assuming it's <b>[R5]</b> Dodoco Tales vs <b>[R1]</b>-<b>[R3]</b> Widsith, <b>[R5]</b> Dodoco Tales is better. <b>Note that Bennett buff / Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) buff may push Widsith and Solar Pearl above Dodoco Tales, even at low refinements.\n</b>\n<b>Regarding Artifact Set:\nShimenawa's Reminiscence (4): </b>Yanfei will rarely have her burst up due to the 15 energy cost on the 4-piece effect, however she can instead <b>maintain the 4-piece DMG buff over a longer duration, making this set a good alternative to the other options.</b> Note that this set loses out on some value at higher constellations, as she can't get her <b>[C4]</b> effects without casting Burst.\n<b>Retracing Bolide (4): </b>Running Yanfei with a shield character also allows you to make use of a full Retracing Bolide 4-set as a placeholder until you're able to find a good Crimson Witch 4-set. \n\n<b>Regarding Artifact Substats Priority: \n</b>Energy Recharge is prioritized over Elemental Mastery here since she has an 80 energy burst cost while her skill is also not very efficient at generating particles for getting it back. A major source of your energy will be coming from enemies as well as potential pyro batteries like Bennett, so be sure to have her pick the particles up as off-field characters only get 0.6x the value of the particles.",
       },
       'SHIELD SUPPORT': {
         recommended: false,
@@ -863,7 +861,7 @@ export const builds = {
         subStats: [' Crit Rate / DMG', ' ATK%', ' Energy Recharge', ' Elemental Mastery', ' Flat ATK'],
         talent: [' Normal Attack', ' Skill', ' Burst'],
         tip:
-          'See  here  for more specifics regarding the weapon rankings. \n\nCourtesy of  paraszcazk#0148\n\n Due to how Polar Star works, your optimal rotation would be different from other weapons:\n\n Skill (Burst) > NA > CA > Resummon Oz (To snapshot Polar Star stacks)',
+          'See  https://bit.ly/3xOMZyh  for more specifics regarding the weapon rankings. \n\nCourtesy of  paraszcazk#0148\n\n Due to how Polar Star works, your optimal rotation would be different from other weapons:\n\n Skill (Burst) > NA > CA > Resummon Oz (To snapshot Polar Star stacks)',
         note:
           "<b>[C1] </b>is recommended to even start Fischl's DPS build, with Oz still contributing to Physical DPS even when he's off-field.\n\nThere is an animation cancelling technique with Fischl DPS. After 3 or 5 basic attacks, shoot an Aim Shot to reset your attack combo. The faster you can do this, the better it is. Only use this for animation cancelling when you're out of stamina since it can be pretty hard to replicate consistently.\n\n<b>Regarding [C6] Fischl Build:</b> At <b>[C6]</b>, Oz will be dealing about 60% of the DPS and it'd be better to invest on <b>Gladiator's Finale (2) Thundering Fury (2)</b> until you can obtain <b>Pale Flame (4)</b> with an Electro Goblet.\n\n<b>Regarding Weapon Choices:\nSkyward Harp and Polar Star: </b>Due to the aforementioned Electro/Phys split at <b>[C6]</b>, <b>Polar Star</b> will surpass <b>Skyward Harp.\nViridescent Hunt: </b>Viridescent Hunt is a really good investment that even surpasses Amos in a situation where there are crowds of enemies, although it's not as efficient towards massive single targets or really agile targets. It offers crowd DPS that is severely lacking due to Fischl's single target attacks.<b>\nMitternachts Waltz:</b> Mitternachts Waltz would be prioritized over Amos if you manage to get refinement 5 for pure Physical build Fischl.\n<b>Prototype Crescent:</b> If you manage to weave in a Charged Shot on enemy weak spots once every 9-10 seconds, Prototype Crescent could potentially offer more DPS, this weapon can be an option for those interested in a more challenging playstyle.",
       },
@@ -979,12 +977,12 @@ export const builds = {
           goblet: 'Electro DMG',
           circlet: 'Crit Rate / DMG',
         },
-        subStats: [' Crit Rate / DMG', ' ATK%', ' Energy Recharge', ' Flat ATK', ' Elemental Mastery'],
+        subStats: [' Crit Rate / DMG', ' ATK%', ' Energy Recharge', ' Elemental Mastery', ' Flat ATK'],
         talent: [' Burst', ' Skill'],
         tip:
           "Beidou's skill grants you an Electro status for a brief moment upon holding it. This means it can be used for status-cleansing (No particular effective element). Can only be done on herself.",
         note:
-          "<b>Regarding Weapon Choices:</b>\n<b>Serpent Spine: </b>This weapon can be considered over Wolf's Gravestone for a Sub DPS Beidou, while Wolf's Gravestone is equipped onto another Claymore DPS character with higher field time. Beidou can effectively make use of the full stacks, as long as you have her stacks up before swapped<b> </b>away, the stacks will be maintained even while off-field since her Elemental Burst snapshots her stats. <b>Serpent Spine outperforms Wolf's Gravestone by a significant margin when Bennett/Sara ATK buffs are applied.\nRedhorn Stonethresher: </b>Depending on the amount of ATK% buffs you're getting, this weapon can overtake Wolf's Gravestone in personal damage.<b>\nAkuoumaru (260 team energy assumed): </b>Akuoumaru outperforms <b>Skyward Pride</b> on a <b>low ER requirement Beidou</b> (where she is paired with other Electro characters to battery her energy needs). At <b>[R3+]</b>, it becomes exponentially better and comes very close to <b>Serpent Spine</b> and <b>Wolf's Gravestone. \n</b>\n<b>Regarding Artifact Sets:</b>\n<b>Emblem of Severed Fate (4): </b>Even after considering the 4-piece set effect, you should refrain from investing into <b>Energy Recharge</b> beyond what is needed to burst off cooldown as it will result in a <b>damage loss</b> as compared to prioritising offensive stats such as <b>ATK/Crit</b>. In team comps where Beidou has <b>low ER requirements</b> (i.e. when paired with electro batteries), a <b>Noblesse Oblige (2) / Thundering Fury (2) / +18% ATK set (2) [Choose Two]</b> will outperform<b> Emblem of Severed Fate (4).</b>\n<b>Thundersoother (4):</b> This set seeks to maximise your Burst damage in an Electro-Charged or mono Electro comps, take note that the set could be rendered useless when against enemies with non-Electro elements imbued.\n<b>Noblesse Oblige (4): </b>This set could be considered if your Beidou can get her Elemental Burst off cooldown and the team doesn't have a Noblesse Oblige (4) user yet, do note that sometimes Beidou doesn't benefit from the ATK buff from the 4 piece set if she's the set holder, so Beidou as a Noblesse Oblige (4) holder isn't really recommended.\n<b>Scholar (2) The Exile (2): </b>This set acts as a cheap beginner's option to provide Beidou with 40% Energy Recharge to help maintain her Elemental Burst uptime.",
+          "<b>Regarding Weapon Choices:</b>\n<b>Serpent Spine: </b>This weapon can be considered over Wolf's Gravestone for a Sub DPS Beidou, while Wolf's Gravestone is equipped onto another Claymore DPS character with higher field time. Beidou can effectively make use of the full stacks, as long as you have her stacks up before swapped<b> </b>away, the stacks will be maintained even while off-field since her Elemental Burst snapshots her stats. <b>Serpent Spine outperforms Wolf's Gravestone by a significant margin when Bennett/Sara ATK buffs are applied.\nRedhorn Stonethresher: </b>Depending on the amount of ATK% buffs you're getting, this weapon can overtake Wolf's Gravestone in personal damage.<b>\nAkuoumaru (260 team energy assumed): </b>Akuoumaru outperforms <b>Skyward Pride</b> on a <b>low ER requirement Beidou</b> (where she is paired with other Electro characters to battery her energy needs). At <b>[R3+]</b>, it becomes exponentially better and comes very close to <b>Serpent Spine</b> and <b>Wolf's Gravestone. \n</b>\n<b>Regarding Artifact Sets:</b>\n<b>Emblem of Severed Fate (4): </b>Even after considering the 4-piece set effect, you should refrain from investing into <b>Energy Recharge</b> beyond what is needed to burst off cooldown as it will result in a <b>damage loss</b> as compared to prioritising offensive stats such as <b>ATK/Crit</b>. In team comps where Beidou has <b>low ER requirements</b> (i.e. when paired with electro batteries), a <b>Noblesse Oblige (2) / Thundering Fury (2) / +18% ATK set (2) [Choose Two]</b> will outperform<b> Emblem of Severed Fate (4).</b>\n<b>Thundersoother (4):</b> This set works best in an <b>Electro-Charged or mono Electro comps.</b>\n<b>Noblesse Oblige (4): </b>This set could be considered<b> if the team doesn't have a Noblesse Oblige (4) user</b>, do note that sometimes Beidou doesn't benefit from the ATK buff from the 4 piece set if she's the set holder, so Beidou as a Noblesse Oblige (4) holder isn't really recommended.\n<b>Scholar (2) The Exile (2): </b>This set acts as a cheap beginner's option to provide Beidou with 40% Energy Recharge to help maintain her Elemental Burst uptime.",
       },
     },
   },
@@ -993,6 +991,9 @@ export const builds = {
       'ELECTRO DPS': {
         recommended: false,
         weapons: [
+          {
+            id: 'kaguras_verity',
+          },
           {
             id: 'skyward_atlas',
           },
@@ -1043,7 +1044,7 @@ export const builds = {
         tip:
           'Optimal Lisa String: \nES (Tap) > NA x2 [until 3 stacks] > Fully-charged ES (Hold) > N2C. Repeat N2C until E is off-cooldown, then repeat the string.\n\n*N/NA = Normal attack, C = Charged attack, ES = Elemental Skill',
         note:
-          'S<b>\n</b><b>Regarding Artifact Sets:\nThundersoother (4):</b> For teams that focus on Electro-Charge reactions, <b>Thundersoother (4)</b> can out dps <b>Thundering Fury (2) +18% ATK set (2)</b>, said set is only recommended below <b>Thundering Fury (2) +18% ATK set (2)</b> due to the potential inconsistency.\n<b>\n</b>Electro DPS Lisa plays around Electro-Charge reaction teams ideally, for Overload Lisa teams, you would be building for EM-DPS since you can be the consistent trigger with supports that apply constant Pyro off-field. You can still have an Overload team with an Electro DPS Lisa, however, if the situation prefers it.',
+          "<b>\n</b><b>Regarding Artifact Sets:\nThundersoother (4):</b> For teams that focus on Electro-Charge reactions, <b>Thundersoother (4)</b> can out dps <b>Thundering Fury (2) +18% ATK set (2)</b>, said set is only recommended below <b>Thundering Fury (2) +18% ATK set (2)</b> due to the potential inconsistency.\n<b>\n</b>Electro DPS Lisa plays around Electro-Charge reaction teams ideally, for Overload Lisa teams, you would be building for EM_DPS since you can be the consistent trigger with supports that apply constant Pyro off-field. You can still have an Overload team with an Electro DPS Lisa, however, if the situation prefers it.\n\nRegarding Weapons:\n<b>Kagura's Verity: </b>Kagura's ranking at the top is based on executing the specific rotation of Tap E > N2 > Tap E > N2 > Tap E > Q > N1 > Hold E > N1 > CA > N3 > N2 > CA for max stacks. For more details please see the weapon calculations here.",
       },
       'EM DPS': {
         recommended: false,
@@ -1085,6 +1086,9 @@ export const builds = {
         recommended: true,
         weapons: [
           {
+            id: 'kaguras_verity',
+          },
+          {
             id: 'skyward_atlas',
           },
           {
@@ -1120,7 +1124,7 @@ export const builds = {
         tip:
           "Lisa's Hold cast does not require 4 full seconds of charging to reach maximum damage threshold, as long as the indicator aligns with ring, you can release your cast at max damage.",
         note:
-          "Can be built to set up for either Burst damage or Quickswap Skill Nuke damage.\nLisa works well with anemo characters which can keep enemies in her ultimate radius.\n\n<b>Regarding Weapon Choice:\nThrilling Tales Of Dragon Slayers:</b> This option is <b>only recommended on a low investment Lisa </b>whereby she is focused around buffing her teammates and contributing team DPS over outputting high damage on her own.\n\n<b>Regarding Stats Priority: </b>These options prioritize Lisa's Elemental Burst uptime as a defense shredding tool.",
+          "Can be built to set up for either Burst damage or Quickswap Skill Nuke damage.\nLisa works well with anemo characters which can keep enemies in her ultimate radius.\n\n<b>Regarding Weapon Choice:\nKagura's Verity:</b> Similar to the above mentioning, this weapon's ranking is based on executing a specific rotation, but the rotation is different for Off-Field DPS. The rotation is Tap E > N2 > Tap E > Q > Hold E (3 Stack).<b>\nThrilling Tales Of Dragon Slayers:</b> This option is <b>only recommended on a low investment Lisa </b>whereby she is focused around buffing her teammates and contributing team DPS over outputting high damage on her own.\n\n<b>Regarding Stats Priority: </b>These options prioritize Lisa's Elemental Burst uptime as a defense shredding tool.",
       },
     },
   },
@@ -1150,6 +1154,7 @@ export const builds = {
           },
           {
             id: 'lithic_blade',
+            stack: 2,
           },
           {
             id: 'prototype_archaic',
@@ -1267,8 +1272,9 @@ export const builds = {
           circlet: 'Crit Rate / DMG',
         },
         subStats: [' Energy Recharge', ' ATK%', ' Crit Rate / DMG', ' Flat ATK'],
-        talent: [' Burst', ' Skill'],
-        tip: '',
+        talent: [' Skill', ' Burst'],
+        tip:
+          'It is not recommended to level Elemental Skill and Burst past talent level 7 as the amount of energy generated does not increase.',
         note:
           "<b>\n</b>Traveler can provide a lot of energy and Energy Recharge to the on-field character through their Elemental Skill pick up or Elemental Burst procs. This is especially useful with a damage dealer that doesn't conflict with traveler's element and can benefit from the abundance of energy. Due to the low damage scaling on Electro Traveler's Elemental Skill and Burst, its recommended to build Electro Traveler by just stacking Energy Recharge to amplify the batterying power.",
       },
@@ -1334,7 +1340,7 @@ export const builds = {
           circlet: 'Crit Rate / DMG',
         },
         subStats: [' Crit Rate / DMG', ' ATK%', ' Flat ATK', ' Energy Recharge'],
-        talent: [' Normal Attack', ' Burst', ' Skill', '', '(Refer to Notes below)'],
+        talent: [' Normal Attack', ' Burst', ' Skill'],
         tip: '',
         note:
           'This section is dedicated to a playstyle where Keqing does not infuse her attacks with electro, and instead focuses on physical damage (white numbers). For this reason, you should be charged attacking after casting Stellar Restoration (E) instead of recasting it.\n\n<b>Regarding Artifact Sets:</b>\n<b>Pale Flame (4): </b>This set is the best by far as Keqing can proc its 4 piece set bonus instantly by charge attacking after casting E.\n<b>Pale Flame (2) Bloodstained Chivalry (2): </b> This set should only be used until getting 4PF.\n<b>Bloodstained Chivalry (2) +18% ATK set (2): </b>The generalist Physical DPS set.\n<b>Retracing Bolide (4): </b>This set should only be used with a consistent shielder (i.e. Zhongli/Diona) for obvious reasons.\n<b>Bloodstained Chivalry (4): </b>This set is for general solo and Abyss content where there are multiple mobs that can be killed with charged attacks within 10 seconds, this is for dealing with a crowd, in other words, AoE. I<b>t is not recommended because of the kill condition.</b>',
@@ -1397,7 +1403,7 @@ export const builds = {
   },
   raiden_shogun: {
     roles: {
-      'ELECTRO DPS': {
+      DPS: {
         recommended: true,
         weapons: [
           {
@@ -1452,7 +1458,7 @@ export const builds = {
           goblet: 'Electro DMG / ATK%',
           circlet: 'Crit Rate / DMG',
         },
-        subStats: [' Crit Rate / DMG', ' ATK%', ' Energy Recharge', ' Flat ATK', ' Elemental Mastery'],
+        subStats: [' Crit Rate / DMG', ' ATK%', ' Energy Recharge', ' Elemental Mastery', ' Flat ATK'],
         talent: [' Burst ', ' Skill'],
         tip:
           "Start your rotation with Raiden's Elemental Skill to amplify your party member's Elemental Burst damage.\n\nBurst combo :\n- Skill > Burst > 4NA + CA (2 times) > 2NA + CA (Recommended)\n- Skill > Burst > 3NA + CA (3 times) > 1NA + CA (Optimal)\n\n*NA = Normal Attack, CA = Charged Attack\n\nThe recommended combo provides more room for error and offers slightly better AoE while the optimal combo provides slightly higher damage.",
@@ -1528,6 +1534,9 @@ export const builds = {
             id: 'mistsplitter_reforged',
           },
           {
+            id: 'haran_geppaku_futsu',
+          },
+          {
             id: 'skyward_blade',
           },
           {
@@ -1537,11 +1546,11 @@ export const builds = {
             id: 'favonius_sword',
           },
           {
-            id: 'festering_desire',
-            refine: [5],
+            id: 'amenoma_kageuchi',
           },
           {
-            id: 'amenoma_kageuchi',
+            id: 'festering_desire',
+            refine: [5],
           },
           {
             id: 'skyrider_sword',
@@ -1570,7 +1579,7 @@ export const builds = {
         tip:
           "Activating XQ's Elemental Skill or Elemental Burst applies Hydro to the on-field character with his shield. (Pyro in specific)\n\nCleansing Electro may take an additional switch for your character with the rain swords active, while Cryo would freeze you in place.",
         note:
-          "<b>Regarding Weapon Choices:\n</b>The weapon rankings assume you are running enough Energy Recharge to get Xingqiu's burst up off cooldown. This is usually <b>180-200% ER for Sacrificial Sword before [C6] and 150-170% ER after [C6]</b>, while <b>~240% ER for other weapons before [C6] and ~190% ER after [C6].</b>\n<b>Primordial Jade Cutter: </b>This is Xingqiu's best in slot weapon if ran with sufficient ER (240% ER before <b>[C6]</b> and 190% ER after <b>[C6]</b>).\n<b>Sacrifical Sword</b>: This ranking assumes you can trigger the passive on every Elemental Skill. This is only possible at <b>[R3+]</b> if you are using Elemental Skill off cooldown. <b>At lower refines, this weapon would rank below Skyward Blade.\nFavonius Sword: </b>Although this weapon has lower damage potential on Xingqiu, the <b>extra team energy generated by the passive may be more useful than his personal damage in some teams.</b>\n<b>Harbinger of Dawn</b>: This is a great weapon for Xingqiu, assuming he's either <b>[C6]</b> or teamed with another Hydro character for energy generation.\n\n<b>Regarding Weapon Order on [C6]:</b> When Xingqiu is <b>[C6]</b>, Mistsplitter and Jade Cutter has the best damage potential given enough ER (170-190%), Skyward Blade has the second best damage potential (same ER requirement as Jade), and Sacrificial Sword has the third best damage potential. \n\nBig thanks to Quincy#6965 for helping us with the weapons calculations.\n\n<b>Regarding Artifact Set:</b>\n<b>Emblem of Severed Fate (4):</b> If you already have an invested <b>[C6]</b> Xingqiu build with Noblesse Oblige (2) Heart of Depth (2) and Sacrificial Sword, you don't need to farm for this set. \n<b>Noblesse Oblige (4): </b>Offers party-wide ATK boost, you can use this set on Xingqiu if nobody else on the party is equipping it.\n<b>Thundersoothers (4): </b>This set is only recommended if you're running an electrocharged team. It's essentially the same as Noblesse Oblige (2) Heart of Depth (2) in terms of damage boost, but it also increases Elemental Skill damage, it comes with a condition though; the enemy needs to be affected by Electro aura. <b>Not recommended to specifically farm for this set.</b>\n<b>Blizzard Strayer (4): </b>This set is only recommended on a freeze team to optimize Xingqiu's stats since he can just disregard Crit Rate and build Crit Damage instead for more damage output. Despite it outperforming<b> Emblem of Severed Fate (4)</b> within this niche, <b>it is generally not recommended to specifically farm for this set.</b>\n<b>The Exile (2) Scholar (2): </b>This set is a cheap beginner option to maintain burst uptime well since it gives 40% Energy Recharge. Note that it is <b>not recommended to stay on this set as Xingqiu contributes alot of damage in his teams.</b>\n\n<b>Regarding Main Stats Priority:</b>\nIdeally you would be running ATK% Sands when your ER needs are fulfilled. (~180-200% if Sacrificial Sword, ~240% for others).",
+          "<b>Regarding Weapon Choices:\n</b>The weapon rankings assume you are running enough Energy Recharge to get Xingqiu's burst up off cooldown. This is usually <b>180-200% ER for Sacrificial Sword before [C6] and 150-170% ER after [C6]</b>, while <b>~240% ER for other weapons before [C6] and ~190% ER after [C6].</b>\n<b>Primordial Jade Cutter: </b>This is Xingqiu's best in slot weapon if ran with sufficient ER (240% ER before <b>[C6]</b> and 190% ER after <b>[C6]</b>).\n<b>Sacrifical Sword</b>: This ranking assumes you can trigger the passive on every Elemental Skill. This is only possible at <b>[R3+]</b> if you are using Elemental Skill off cooldown. <b>At lower refines, this weapon would rank below Summit Shaper.\nFavonius Sword: </b>Although this weapon has lower damage potential on Xingqiu, the <b>extra team energy generated by the passive may be more useful than his personal damage in some teams.</b>\n<b>Harbinger of Dawn</b>: This is a great weapon for Xingqiu, assuming he's either <b>[C6]</b> or teamed with another Hydro character for energy generation.\n\n<b>Regarding Weapon Order on [C6]:</b> When Xingqiu is <b>[C6]</b>, Jade Cutter, Mistsplitter, Haran, Skyward Blade, Summit Shaper, and Amenoma Kageuchi (in this order) each have higher damage potential than Sacirifical Sword <b>[R3+]</b>. \n\nBig thanks to Quincy#6965 for helping us with the weapons calculations.\n\n<b>Regarding Artifact Set:</b>\n<b>Emblem of Severed Fate (4):</b> If you already have an invested <b>[C6]</b> Xingqiu build with Noblesse Oblige (2) Heart of Depth (2) and Sacrificial Sword, you don't need to farm for this set. \n<b>Noblesse Oblige (4): </b>Offers party-wide ATK boost, you can use this set on Xingqiu if nobody else on the party is equipping it.\n<b>Thundersoothers (4): </b>This set is only recommended if you're running an electrocharged team. It's essentially the same as Noblesse Oblige (2) Heart of Depth (2) in terms of damage boost, but it also increases Elemental Skill damage, it comes with a condition though; the enemy needs to be affected by Electro aura. <b>Not recommended to specifically farm for this set.</b>\n<b>Blizzard Strayer (4): </b>This set is only recommended on a freeze team to optimize Xingqiu's stats since he can just disregard Crit Rate and build Crit Damage instead for more damage output. Despite it outperforming<b> Emblem of Severed Fate (4)</b> within this niche, <b>it is generally not recommended to specifically farm for this set.</b>\n<b>The Exile (2) Scholar (2): </b>This set is a cheap beginner option to maintain burst uptime well since it gives 40% Energy Recharge. Note that it is <b>not recommended to stay on this set as Xingqiu contributes alot of damage in his teams.</b>\n\n<b>Regarding Main Stats Priority:</b>\nIdeally you would be running ATK% Sands when your ER needs are fulfilled. (~180-200% if Sacrificial Sword, ~240% for others).",
       },
     },
   },
@@ -1586,31 +1595,30 @@ export const builds = {
             id: 'lost_prayer_to_the_sacred_winds',
           },
           {
+            id: 'memory_of_dust',
+          },
+          {
             id: 'the_widsith',
           },
           {
             id: 'dodoco_tales',
           },
           {
-            id: 'memory_of_dust',
+            id: 'blackcliff_agate',
           },
           {
             id: 'solar_pearl',
           },
           {
-            id: 'blackcliff_agate',
-          },
-          {
-            id: 'mappa_mare',
-          },
-          {
             id: 'frostbearer',
           },
-          {
-            id: 'magic_guide',
-          },
         ],
-        artifacts: [['heart_of_depth'], ['wanderers_troupe'], ['heart_of_depth', '+18%_atk_set', 'wanderers_troupe']],
+        artifacts: [
+          ['wanderers_troupe'],
+          ['heart_of_depth'],
+          ['heart_of_depth', '+18%_atk_set', 'wanderers_troupe'],
+          ['ocean-hued_clam'],
+        ],
         mainStats: {
           sands: 'ATK%',
           goblet: 'Hydro DMG',
@@ -1619,15 +1627,18 @@ export const builds = {
         subStats: [' Crit Rate / DMG', ' ATK%', ' Elemental Mastery', ' Flat ATK'],
         talent: [' Normal Attack', ' Skill', ' Burst'],
         tip:
-          "Barbara's skill gives you a pulse of healing every 5 seconds, every pulse will imbue you with a Hydro status, that means it can be used for status-cleansing (Pyro in specific, while other elements may take more pulses).\n\nTake note that Hydro reacting with Cryo status will freeze you in place, her skill should be used in consideration of the environment",
+          'Due to her high stamina cost on charged attacks, her recommended attack strings for Vaporize playstyle is a mix of Charged attack spam and N2CJ (2 normal attacks followed by a charged attack cancelled with a jump animation). \n\nIn Electro-Charged teams, Barbara is expected to weave in attacks in between character swaps.',
         note:
-          "Use Charged Attacks if you're going to be doing Vaporize DPS, Normal Attacks are for Electro-Charge DPS.\nAlways activate your skill first, as it reduces stamina consumption and if you have <b>[C2]</b>, it will give 15% Hydro Damage Bonus.\n\n<b>Regarding Weapon Choices:</b>\n<b>Memory of Dust: </b>This weapon requires stacks to be utilized, and in Vaporize DPS comps, you usually don't want to give up the first few Vaporize hits to stack up Memory of Dust's perk.",
+          "This section is dedicated to the playstyle where Barbara is triggering the vaporize reaction with her charged attack, <b>for an Electro-Charged focused team, follow the weapon choices in the Support section instead. \n</b>For this playstyle, Barbara is heavily recommended to be run with Xiangling, as she is the only character that can keep up with Barbara's hydro application.\nAlways activate your skill first, as it reduces stamina consumption and if you have <b>[C2]</b>, it will give 15% Hydro Damage Bonus.\n\n<b>Regarding Weapon Choices:</b>\n<b>Memory of Dust: </b>This weapon performs poorly due to the need for stacks to be accrued over time.\n<b>Regarding Artifact sets:\nOcean-Hued Clam (4): </b>This is the best set to run in an Electro-Charged focused team, and in this scenario her mainstat choices should be optimised for healing instead of personal damage <b>(HP%/HP%/Healing Bonus).</b>",
       },
       SUPPORT: {
         recommended: true,
         weapons: [
           {
             id: 'thrilling_tales_of_dragon_slayers',
+          },
+          {
+            id: 'everlasting_moonglow',
           },
           {
             id: 'prototype_amber',
@@ -1640,22 +1651,21 @@ export const builds = {
           },
         ],
         artifacts: [
-          ['ocean-hued_clam'],
           ['maiden_beloved'],
-          ['maiden_beloved', 'tenacity_of_the_millelith'],
-          ['noblesse_oblige'],
-          ['maiden_beloved', 'emblem_of_severed_fate'],
+          ['maiden_beloved', 'tenacity_of_the_millelith', 'ocean-hued_clam'],
+          ['instructor'],
         ],
         mainStats: {
-          sands: 'Energy Recharge / HP%',
+          sands: 'HP%',
           goblet: 'HP%',
           circlet: 'Healing Bonus',
         },
-        subStats: [' HP%', ' Energy Recharge', ' Flat HP'],
+        subStats: [' HP%', ' Flat HP'],
         talent: [' Skill', ' Burst'],
-        tip: '',
+        tip:
+          "Barbara's skill gives you a pulse of healing every 5 seconds, every pulse will imbue you with a Hydro status, that means it can be used for status-cleansing (Pyro in specific, while other elements may take more pulses).\n\nTake note that Hydro reacting with Cryo status will freeze you in place, her skill should be used in consideration of the environment",
         note:
-          'Use Elemental Skill and/or Elemental Burst and immediately switch. Generally, run ER if you want more consistent heals from Elemental Burst. \n\n<b>Regarding Artifact Sets:</b>\n<b>Maiden Beloved (2) Tenacity of the Millelith (2):</b> Acts as a place holder set for Maiden Beloved if you want pure healing and have not been able to gather Maiden Beloved (4) yet.\n<b>Noblesse Oblige (4): </b>Usable option if you want Barbara to have more utility, but do note that Barbara might have bad uptime on this set.',
+          'Use Elemental Skill and/or Elemental Burst and immediately switch. Building ER is <b>not recommended</b> on Support Barbara as her burst should be used as a last resort and should not be expected to be cast every rotation. This is further compounded by the fact that Barbara has no particle generation. For this reason, Ocean-Hued Clam is also <b>not recommended</b> for Support Barbara.\n\n<b>Regarding Weapon Choices: \nEverlasting Moonglow:</b> For Electro-Charged teams, this weapon will provide the highest personal damage for Barbara. However, <b>Thrilling Tales of Dragon Slayers</b> will still provide the highest team damage due to its 48 ATK% buff. \n<b>Regarding Artifact Sets:</b>\n<b>Maiden Beloved (4): </b>This is a very resin inefficient set and should not be intentionally farmed for.\n<b>Instructor (4): </b>The hydro application from Elemental Skill can be used to trigger an elemental reaction and provide a teamwide Elemental Mastery buff.',
       },
     },
   },
@@ -1832,7 +1842,7 @@ export const builds = {
         tip:
           "Mona's Burst applies bubble and Omen debuff upon cast, the count down timer only begins when the bubble is broken.\n\nFrozen enemies can have their bubbles preserved as long as enemies stay in a frozen state. This technique makes Mona a priority Support for Freeze DPS teams.",
         note:
-          "Mona's main role on a freeze team is to <b>provide Omen debuff</b> from her burst as <b>it is extendable via Freeze mechanics.</b> Note that you must <b>apply Cryo before casting Mona's Elemental Burst </b>for the extension to happen. Omen Freeze extension can be done by <b>reapplying Cryo and Hydro aura consistently </b>(this can be done with Cryo/ Hydro infused Venti Elemental Burst + on-field Cryo/ Hydro aura).\n\n<b>Regarding Weapon Choices:\nThrilling Tales of Dragon Slayers:</b> Generally the best option on Freeze Support Mona<b> because she can furthermore buff the ATK of your Main DPS</b>. <b>This however comes with an assumption that with TTDS, you still have 100% Elemental Burst uptime.</b> If you do not, pick the other Energy Recharge weapon options for more Elemental Burst uptime.",
+          "Mona's main role on a freeze team is to <b>provide Omen debuff</b> from her burst as <b>it is extendable via Freeze mechanics.</b> Note that you must <b>apply Cryo before casting Mona's Elemental Burst </b>for the extension to happen. Omen Freeze extension can be done by <b>reapplying Cryo and Hydro aura consistently </b>(this can be done with Cryo/ Hydro infused Venti Elemental Burst + on-field Cryo/ Hydro aura).\n\n<b>Regarding Artifact Sets:\nTenacity of the Millelith (4):</b> Run this set if there's already another character with Noblesse Oblige (4) on the team.\n\n<b>Regarding Weapon Choices:\nThrilling Tales of Dragon Slayers:</b> Generally the best option on Freeze Support Mona<b> because she can furthermore buff the ATK of your Main DPS</b>. <b>This however comes with an assumption that with TTDS, you still have 100% Elemental Burst uptime.</b> If you do not, pick the other Energy Recharge weapon options for more Elemental Burst uptime.",
       },
     },
   },
@@ -1861,16 +1871,16 @@ export const builds = {
           ['maiden_beloved', 'ocean-hued_clam', 'tenacity_of_the_millelith'],
         ],
         mainStats: {
-          sands: 'HP% / Energy Recharge',
-          goblet: 'HP% / Hydro DMG',
-          circlet: 'Healing Bonus',
+          sands: 'Energy Recharge / HP%',
+          goblet: 'HP%',
+          circlet: 'Healing Bonus / HP%',
         },
-        subStats: [' HP%', ' Energy Recharge', ' ATK%', ' Flat HP', ' Flat ATK'],
+        subStats: [' Energy Recharge', ' HP%', ' ATK%', ' Flat HP', ' Flat ATK'],
         talent: [' Skill', ' Burst'],
         tip:
           "Kokomi's Elemental Burst dynamically alters her skill's damage, this means that you cannot use her Burst to snapshot the buff onto the Skill and swap out.",
         note:
-          "Support Kokomi focuses on just using her Elemental Burst before her Elemental Skill's duration ends to refresh her skill duration. This allows 100% uptime on Hydro application from her Elemental Skill for Freeze / Electro-charge teams.\n\n<b>Regarding Weapon Choices:\nHakushin Ring: </b>This weapon can provide Elemental DMG% for the team in <b>Electro-charged teams</b> and will outperform Prototype Amber if you value damage more than healing.\n<b>Sacrificial Fragments: </b>Can be useful as Kokomi won't need to use her Elemental Burst to reset her skill duration. This <b>allows for smoother rotations</b> as she will not face the problem of missing out on the reset for her Elemental Skill due to not casting Burst in time.\n\n<b>Regarding Artifact Choices:\nTenacity of the Millelith (4): </b>With proper extension of Kokomi's Elemental Skill, she can maintain near <b>100% uptime on this artifact set's 4 piece effect.</b>\n<b>Ocean Hued Clam (4):</b> This ranking assumes Kokomi is being used <b>only for her Elemental Skill.</b> If she is being used to attack onfield during Elemental Burst, this set may <b>overtake Tenacity of the Millelith (4). </b>\n\n<b>Regarding Main Stats and Sub Stats: \nEnergy Recharge:</b> Prioritise Energy Recharge first to ensure you can always use Elemental Burst before the Elemental Skill expires in order to maintain Hydro application. <b>Without Prototype Amber, Kokomi will need ~200-220% Energy Recharge (170-190% with Prototype Amber at [R1] and 150-170% at [R5])</b>\n<b>Hydro DMG:</b> This can be used to sacrifice some of Kokomi's healing to boost her damage if she is attacking onfield during Elemental Burst.<b>\n\n</b>",
+          "Support Kokomi focuses on just using her Elemental Burst before her Elemental Skill's duration ends to refresh her skill duration. This allows 100% uptime on Hydro application from her Elemental Skill for Freeze / Electro-charge teams.\n\n<b>Regarding Weapon Choices:\nHakushin Ring: </b>This weapon can provide Elemental DMG% for the team in <b>Electro-charged teams</b> and will outperform Prototype Amber if you value damage more than healing.\n<b>Sacrificial Fragments: </b>Can be useful as Kokomi won't need to use her Elemental Burst to reset her skill duration. This <b>allows for smoother rotations</b> as she will not face the problem of missing out on the reset for her Elemental Skill due to not casting Burst in time.\n\n<b>Regarding Artifact Sets:\nTenacity of the Millelith (4): </b>With proper extension of Kokomi's Elemental Skill, she can maintain near <b>100% uptime on this artifact set's 4 piece effect.</b>\n<b>Ocean Hued Clam (4):</b> This ranking assumes Kokomi is being used <b>only for her Elemental Skill.</b> If she is being used to attack onfield during Elemental Burst, this set may <b>overtake Tenacity of the Millelith (4). </b>\n\n<b>Regarding Main Stats and Sub Stats: \nEnergy Recharge:</b> Prioritise Energy Recharge first to ensure you can always use Elemental Burst before the Elemental Skill expires in order to maintain Hydro application. <b>Without Prototype Amber, Kokomi will need ~200-220%+ Energy Recharge (170-190% with Prototype Amber at [R1] and 150-170% at [R5])\n\n</b>",
       },
       DPS: {
         recommended: false,
@@ -1904,7 +1914,66 @@ export const builds = {
         tip:
           "Due to Kokomi's high stamina cost on her Charged Attacks, her best attack strings are: \n\nAt [C0]: N2D \nAt [C1]: N3D*\n\n*N3D might result in a loss of Beidou Stormbreaker hits (DPS loss), and as such is only recommended in a Vaporize comp where the added Hydro application is favoured.\n\n*NA = Normal Attack, D = Dash",
         note:
-          "DPS Kokomi aims to maximise her onfield damage during her Elemental Burst's duration. Outside of her Elemental Burst, her damage is lackluster and not worth building for.\n\n<b>Regarding Weapon Choices:\nThrilling Tales of Dragon Slayers: </b>Although this weapon doesn't provide as much personal damage for Kokomi, the 48% ATK buff is usually more worth in most cases. <b>This can be her best weapon in for overall team DPS if you don't already have another TTDS user in your team.</b>\n<b>Hakushin Ring:</b> This weapon can provide Elemental DMG% for the team in Electro-charged teams, and will usually be the best choice in those situations.\n\n<b>Regarding Artifact Choices:\nTenacity of the Millelith (4): </b>Although this set offers the lowest personal dmg for Kokomi, the 20% ATK team buff can sometimes be better for overall team DPS.",
+          "DPS Kokomi aims to maximise her onfield damage during her Elemental Burst's duration. Outside of her Elemental Burst, her damage is lackluster and not worth building for.\n\n<b>Regarding Weapon Choices:\nThrilling Tales of Dragon Slayers: </b>Although this weapon doesn't provide as much personal damage for Kokomi, the 48% ATK buff is usually more worth in most cases. <b>This can be her best weapon in for overall team DPS if you don't already have another TTDS user in your team.</b>\n<b>Hakushin Ring:</b> This weapon can provide Elemental DMG% for the team in Electro-charged teams, and will usually be the best choice in those situations.\n\n<b>Regarding Artifact Sets:\nTenacity of the Millelith (4): </b>Although this set offers the lowest personal dmg for Kokomi, the 20% ATK team buff can sometimes be better for overall team DPS.",
+      },
+    },
+  },
+  kamisato_ayato: {
+    roles: {
+      DPS: {
+        recommended: false,
+        weapons: [
+          {
+            id: 'haran_geppaku_futsu',
+          },
+          {
+            id: 'primordial_jade_cutter',
+          },
+          {
+            id: 'mistsplitter_reforged',
+          },
+          {
+            id: 'skyward_blade',
+          },
+          {
+            id: 'the_black_sword',
+          },
+          {
+            id: 'amenoma_kageuchi',
+            refine: [3],
+          },
+          {
+            id: 'summit_shaper',
+          },
+          {
+            id: 'blackcliff_longsword',
+          },
+          {
+            id: 'the_flute',
+          },
+          {
+            id: 'lions_roar',
+          },
+        ],
+        artifacts: [
+          ['heart_of_depth'],
+          ['gladiators_finale'],
+          ['heart_of_depth', '+18%_atk_set'],
+          ['blizzard_strayer'],
+          ['thundering_fury'],
+          ['echoes_of_an_offering'],
+        ],
+        mainStats: {
+          sands: 'Attack',
+          goblet: 'Hydro DMG',
+          circlet: 'Crit Rate / DMG',
+        },
+        subStats: [' Crit Rate / DMG', ' ATK%', ' Energy Recharge', ' HP%', ' Elemental Mastery', ' Flat Attack'],
+        talent: [' Skill', ' Burst'],
+        tip:
+          "Always try to activate Ayato's Elemental Burst before using his skill to maximize his Normal Attack DMG. Getting enough Energy Recharge for this is important, and varies based on team. \n\nThe amount of slashes Ayato can do during an Elemental Skill window is sometimes influenced by the player's set FPS.",
+        note:
+          "<b>\n</b>DPS Ayato focuses on doing large amounts of on-field damage with his Elemental Skill, and Elemental Burst. \n\n<b>Regarding Weapon Choices:</b>\n<b>Skyward Blade:</b> If you have <b>a lot of ER% from substats</b>, this weapon <b>performs equal to/below Amenoma Kageuchi</b>.\n<b>Summit Shaper: </b>In teams where <b>ATK buffs are scarce</b>, this weapon has the <b>potential to rival Skyward Blade</b>.\n<b>Lions Roar: </b>In <b>Electro-Charged teams</b>, this weapon <b>performs better than The Black Sword</b>.\n\n<b>Regarding Artifact Sets:</b>\n<b>Echoes of an Offering (4): </b>The performance of this artifact set is <b>inconsistent</b>, and is based on user ping and other factors.\n<b>Blizzard Strayer (4): When run in a Freeze Team</b>, this is Ayato's best set. Note that it is not recommended to farm specifically for this set.\n<b>Thundering Fury (4): When run in an Electro-Charged team</b>, this is Ayato's best set due to the Cooldown Reduction on Elemental Skill allowing for shorter rotations. Note that it is not recommended to farm specifically for this set.",
       },
     },
   },
@@ -1931,7 +2000,7 @@ export const builds = {
           ['emblem_of_severed_fate', 'tenacity_of_the_millelith'],
           ['maiden_beloved', 'tenacity_of_the_millelith'],
           ['maiden_beloved'],
-          ['maiden_beloved', 'emblem_of_severed_fate'],
+          ['maiden_beloved', '+20%_energy_recharge'],
           ['the_exile'],
           ['instructor'],
         ],
@@ -2061,7 +2130,7 @@ export const builds = {
         tip:
           'As a Freeze DPS, he gains over 55%+ Crit Rate with the right team set up:\n- 15% from Cryo Resonance against Cryo affected enemies\n- 40% from Blizzard Strayer against Frozen enemies\n- 15% from [C1] against Cryo affected enemies',
         note:
-          "Cryo DPS Kaeya is recommended over Physical DPS Kaeya since most of his kit scales with Cryo.</b>\n\nKaeya Cryo DPS is mostly used in a team with Chongyun and Xingqiu/Barbara while having Blizzard Strayer (4) equipped. In this team, Kaeya has 55% crit rate against Frozen enemies without any additional Crit stats, which means Crit Rate substats are generally prioritized less than ATK% or Crit DMG.\n\n<b>Regarding Artifact Sets:\nPale Flame (4):</b> This set is difficult to fully utilise due to Kaeya's skill cooldown being 6 seconds. The full set effect requires 2 stacks to be active at any given time, so maintaining stacks can be difficult when considering rotations between characters.",
+          "ya Cryo DPS is mostly used in a team with Chongyun and Xingqiu/Barbara while having Blizzard Strayer (4) equipped. In this team, Kaeya has 55% crit rate against Frozen enemies without any additional Crit stats, which means Crit Rate substats are generally prioritized less than ATK% or Crit DMG.\n\n<b>Regarding Artifact Sets:\nPale Flame (4):</b> This set is difficult to fully utilise due to Kaeya's skill cooldown being 6 seconds. The full set effect requires 2 stacks to be active at any given time, so maintaining stacks can be difficult when considering rotations between characters.",
       },
       'BURST SUPPORT': {
         recommended: true,
@@ -2209,9 +2278,11 @@ export const builds = {
           },
           {
             id: 'blackcliff_pole',
+            stack: 1,
           },
           {
             id: 'lithic_spear',
+            stack: 2,
           },
           {
             id: 'kitain_cross_spear',
@@ -2432,7 +2503,7 @@ export const builds = {
           goblet: 'Cryo DMG',
           circlet: 'Crit Rate / DMG',
         },
-        subStats: [' Energy Recharge ', ' Crit Rate / DMG', ' ATK%', ' Elemental Mastery', ' Flat ATK'],
+        subStats: [' Energy Recharge ', ' Crit Rate / DMG', ' ATK%', ' Elemental Mastery ', ' Flat ATK'],
         talent: [' Burst', ' Skill', ' Normal Attack'],
         tip:
           "When using her Elemental Burst, place her Elemental Skill in the AoE to taunt and keep enemies inside the zone for constant damage.\n\nMake sure to hit enemies with her skill's initial damage and her explosion damage as they both regen energy for her ult.",
@@ -2560,7 +2631,7 @@ export const builds = {
         mainStats: {
           sands: 'ATK%',
           goblet: 'Cryo DMG',
-          circlet: 'Crit Damage / ATK%',
+          circlet: 'Crit DMG / ATK%',
         },
         subStats: [' Crit DMG', ' ATK%', ' Energy Recharge', ' Crit Rate', ' Flat ATK'],
         talent: [' Burst', ' Normal Attack', ' Skill'],
@@ -2568,24 +2639,6 @@ export const builds = {
           "Ayaka's Charged Attack, Elemental Skill and Elemental Burst hits enemies inside Venti's Elemental Burst.\n\nHer Elemental Burst also stays in place on frozen enemies and slightly knocks enemies away when they're not frozen.",
         note:
           "Kamisato Ayaka is a pretty straightforward DPS that <b>deals most of her damage from her Elemental Burst</b>. She has very high scalings on her burst at the cost of it being 80 energy. You will likely need<b> another Cryo battery on the team </b>to provide energy for her (Diona, Kaeya, Rosaria, etc). She has a <b>special dash</b> (like Mona) and after she dashes, she will get a Cryo infusion on her Normal Attacks. Ensure you always have this bonus active to maximise your rotation damage.\n\nShe can be played on a <b>permafreeze team</b> (paired with a Hydro enabler such as Mona, Xingqiu, or even Barbara) where she could gain huge benefits from the <b>Blizzard Strayer (4) artifact set.</b> Blizzard Strayer (4) piece gives a huge amount of stats on a Freeze team, so try to get this artifact set as fast as you can. Her Elemental Burst also sticks on frozen enemies, but it also has a small hitbox so you need to position it well so that it can hit multiple bigger enemies.\n\n<b>Regarding Weapon Choices:</b>\n<b>Aquila Favonia:</b> While Aquila has Physical Damage% as a main stat, which is basically useless on Ayaka, it is still a good statstick as it has a high base ATK and ATK% buff from the passive.\n<b>Primordial Jade Cutter:</b> With Blizzard Strayer (4) and Cryo Resonance, this weapon overcrits, so avoid getting Crit Rate substats.\n<b>Skyward Blade, Blackcliff Longsword, The Black Sword, Amenoma Kageuchi:</b> These 4 weapons will give a similar output, so it's not worth getting or building another when you already have one. Depends on how much Energy Recharge you're running, how much stacks your Blackcliff has, how much time you're gonna spend doing Normal Attacks, and how much you value the passive on Amenoma since it gives you leeway in building Energy Recharge, one can be better than the other. If you're running <b>Skyward Blade</b> or <b>Amenoma Kageuchi</b> (especially with higher refines), avoid getting Energy Recharge substats as their stats / passives assist in elemental burst generation significantly.<b>\nThe Flute:</b> Offers slightly more damage potential than<b> Amenoma Kageuchi</b>, with the tradeoff being losing Kageuchi's energy generation. Decide for yourself which is better for your team and rotations.",
-      },
-    },
-  },
-  kamisato_ayato: {
-    roles: {
-      TBD: {
-        recommended: true,
-        weapons: [],
-        artifacts: [],
-        mainStats: {
-          sands: 'TBD',
-          goblet: 'TBD',
-          circlet: 'TBD',
-        },
-        subStats: ['TBD'],
-        talent: ['TBD'],
-        tip: '',
-        note: 'TBD',
       },
     },
   },
@@ -2715,9 +2768,6 @@ export const builds = {
             id: 'magic_guide',
           },
           {
-            id: 'the_widsith',
-          },
-          {
             id: 'favonius_codex',
           },
         ],
@@ -2727,12 +2777,12 @@ export const builds = {
           goblet: 'Elemental Mastery',
           circlet: 'Elemental Mastery',
         },
-        subStats: [' Elemental Mastery', ' ATK%', ' Crit Rate / DMG', ' Energy Recharge'],
+        subStats: [' Elemental Mastery', ' Energy Recharge', ' ATK%', ' Crit Rate / DMG'],
         talent: [' Skill', ' Burst'],
         tip:
           "When utilized as a Viridescent Venerer (4) artifact set holder, make sure you don't immediately swap away after casting Skill/Burst, you need to be on-field when the swirl reaction happens for you to trigger the 4-set effect.",
         note:
-          "People often compare Sucrose with Venti for Crowd-Control capabilities, but that's not what you'll be looking for. Sucrose is a character that can give Elemental Mastery to her teammates through swirling the correct elements (Ascension 1 Talent), which improves reaction damage for the Characters benefitting from the EM boost. Her Ascension 4 Talent also boosts the entire team's EM by 20% of Sucrose's total EM, this is why you want to stack as much elemental mastery as possible in her artifacts. As a support, most of Sucrose's value lies on her Ascension 1 and 4 talents, hence leveling her other talents (Normal Attack, Skill, and Burst) is not required.\n\n<b>Regarding Weapon Choices: \n</b>It's important to note that these weapons were ranked based on how much EM they offered you. However, this doesn't take into account how much each catalyst benefits your entire team's DPS.\n<b>Thrilling Tales of Dragon Slayers: </b>This weapon does not provide any EM, however it overtakes the other weapons on the list when it comes to enabling your team.<b> It offers 48% ATK boost to the character you swap to which is equivalent to 1 main stat. </b>This enables your DPS more if compared to Sacrificial Fragments which only gives ~44EM, equivalent to only 2 substats.<b>\nHakushin Ring: </b>Hakushin Ring is a good option for teams where Sucrose can <b>swirl Electro</b> to trigger its damage-boosting passive. In Electro - Charged teams, she can buff Hydro DMG% as well.<b>\nWidsith:</b> This weapon is only useful if you get the EM passive from it. As such, it is <b>not recommended for general gameplay</b> but only if you want the highest possible EM buff.\n<b>Favonius Codex</b>: This weapon can be useful if you<b> need Sucrose's Elemental Burst up as often as possible for grouping.</b> You may need to get a few crit rate substats to trigger the passive reliably.\nThere are some team compositions in which Sucrose's Elemental Mastery is not a priority, such as Freeze teams or an Anemo battery for Xiao. In such situations it's better for Sucrose to use to Thrilling Tales of the Dragon Slayers.\n\n<b>Regarding Energy Recharge Priority:</b> \nRanking is based on the assumption that Sucrose has Sacrificial Fragments and is not valued for her Burst in teams that may not want Sucrose's Burst interfering with elemental auras. Energy Recharge could be prioritized higher when Sucrose is utilized in teams that don't really mind which element is being applied first and last (e.g. Electro-charged).",
+          "Sucrose's Ascension 4 Talent boosts the entire team's EM by 20% of Sucrose's total EM, this is why you want to stack as much Elemental Mastery as possible in her artifacts. As a support, most of Sucrose's value lies on her Ascension 1 and 4 talents, hence leveling her other talents (Normal Attack, Skill, Burst) is not required.\n\n<b>Regarding Weapon Choices: </b>\n<b>Thrilling Tales of Dragon Slayers: </b>This weapon does not provide any EM, however it overtakes the other weapons on the list when it comes to buffing your team.<b> It offers 48% ATK boost to the character you swap to </b>which is equivalent to 1 main stat. This buffs your DPS more compared to Sacrificial Fragments which gives ~44EM, equivalent to only 2 substats.<b>\nHakushin Ring: </b>Hakushin Ring is a good option for teams where Sucrose can <b>swirl Electro</b> to trigger its damage-boosting passive. In Electro-Charged teams, she can buff Hydro DMG% as well.\n<b>Favonius Codex</b>: This weapon can be useful if you<b> value the extra energy generation from the passive.</b> You may need to get a few crit rate substats to trigger the passive reliably.\n\nThere are some team compositions in which Sucrose's Elemental Mastery is not a priority, such as Freeze teams or an Anemo battery for Xiao. In such situations it's better for Sucrose to use Thrilling Tales of the Dragon Slayers.",
       },
     },
   },
@@ -2745,13 +2795,13 @@ export const builds = {
             id: 'wolfs_gravestone',
           },
           {
-            id: 'sacrificial_greatsword',
+            id: 'favonius_greatsword',
           },
           {
             id: 'katsuragikiri_nagamasa',
           },
           {
-            id: 'favonius_greatsword',
+            id: 'sacrificial_greatsword',
           },
           {
             id: 'rainslasher',
@@ -2905,6 +2955,7 @@ export const builds = {
           },
           {
             id: 'summit_shaper',
+            stack: 5,
           },
           {
             id: 'skyward_blade',
@@ -2980,6 +3031,9 @@ export const builds = {
             refine: [5],
           },
           {
+            id: 'favonius_warbow',
+          },
+          {
             id: 'raven_bow',
             refine: [5],
           },
@@ -2995,14 +3049,14 @@ export const builds = {
         mainStats: {
           sands: 'Elemental Mastery / ATK%',
           goblet: 'Elemental Mastery / Anemo DMG',
-          circlet: 'Elemental Mastery/ Crit Rate / DMG',
+          circlet: 'Elemental Mastery / Crit Rate / DMG',
         },
         subStats: [' Elemental Mastery', ' Energy Recharge', ' ATK%', ' Crit Rate / DMG', ' Flat ATK'],
         talent: [' Burst', ' Skill'],
         tip:
           "Make sure you don't immediately swap away after casting Burst, you need to be on-field for VV 4-set perk to proc on swirl first.(E > Q to avoid this issue)\n\nYou can infuse elements onto Venti's Burst if you walk up with an element status on you. (e.g. Bennett Burst > Venti Burst > Walk up to infuse Pyro)\n\nCheck out  this link  to see which characters can hit the enemies sucked and ragdolled in Venti's burst. (Sheet has not been updated since Yanfei release)",
         note:
-          "This build focuses on damage over ER because of his ER ascension stat. This weapon order is in the assumption of EM Venti, as Crit Venti's damage potential is limited to either extremely high investment or single target situations.\n\n<b>Regarding Weapon Choices:</b>\n<b>Skyward Harp:</b> Due to EM build assumptions, the stats offered aren't very valuable. Consider reading the In-depth Guide from KQM if you're interested in a Crit-focused build.\n<b>Elegy for the End:</b> Elegy for the End's ATK buff DOES NOT buff Venti's burst if Venti is the one equipping the bow, but the EM buff affects Venti's Swirl reaction. This is due to Venti's burst snapshotting his stats (excluding EM toward transformative reactions such as Swirl) at the time of cast. While an <b>[R1]</b> Elegy of the End yields slightly lower Venti damage compared to an <b>[R5]</b> Stringless (~7% assuming 50% Elegy buff uptime), it provides a party-wide ATK and EM buff which can be better in terms of total team damage and comfortable ER.",
+          "This build focuses on damage over ER because of his ER ascension stat. This weapon order is in the assumption of EM Venti, as Crit Venti's damage potential is limited to either extremely high investment or single target situations.\n\n<b>Regarding Weapon Choices:\nFavonius Warbow: </b>While terrible for personal damage, this weapon allows Venti to provide more energy for his teammates, while also covering his ER needs. Finding Crit Rate in substats is recommended for consistent passive procs.\n<b>Skyward Harp:</b> Due to EM build assumptions, the stats offered aren't very valuable. Consider reading the In-depth Guide from KQM if you're interested in a Crit-focused build.\n<b>Elegy for the End:</b> Elegy for the End's ATK buff DOES NOT buff Venti's burst if Venti is the one equipping the bow, but the EM buff affects Venti's Swirl reaction. This is due to Venti's burst snapshotting his stats (excluding EM toward transformative reactions such as Swirl) at the time of cast. While an <b>[R1]</b> Elegy of the End yields slightly lower Venti damage compared to an <b>[R5]</b> Stringless (~7% assuming 50% Elegy buff uptime), it provides a party-wide ATK and EM buff which can be better in terms of total team damage and comfortable ER.",
       },
     },
   },
@@ -3028,6 +3082,7 @@ export const builds = {
           },
           {
             id: 'lithic_spear',
+            stack: 2,
           },
           {
             id: 'blackcliff_pole',
@@ -3048,7 +3103,7 @@ export const builds = {
             id: 'halberd',
           },
         ],
-        artifacts: [['viridescent_venerer', 'gladiators_finale', 'shimenawas_reminiscence']],
+        artifacts: [['vermillion_hereafter'], ['viridescent_venerer', '+18%_atk_set', '+18%_atk_set']],
         mainStats: {
           sands: 'ATK%',
           goblet: 'Anemo DMG / ATK%',
@@ -3059,7 +3114,7 @@ export const builds = {
         tip:
           "Regarding Xiao's Optimal Skill Rotation:\nSkill -> Skill -> Burst -> Plunge Combo\n\nRegarding Xiao's Plunge Combo:\nBest combo for Xiao when fighting a single target:\nPlunge -> Normal Attack -> Charged Attack -> Plunge\n\nBest combo for Xiao when fighting multiple enemies:\nPlunge -> Normal Attack -> Plunge",
         note:
-          "<b>\n</b>Xiao has issues with Energy regeneration because <b>he cannot generate any particles with his Elemental Skill while his Burst is active</b>, so it is not suggested to use his Elemental Skill during Elemental Burst.\n\nStart off a fight by casting the skill of your Anemo Battery and then casting his skill twice then cast your burst immediately. You will want to be half way through your burst animation before the particles reach you, so this way you can start off your burst with a portion of the energy gauge already filled. Same goes for any other Anemo Battery (recommended below), cast skill and swap back to Xiao to cast burst before the particles reach you.\n\n<b>You'll want to pair Xiao with another Anemo character </b>(Venti, Sucrose, Jean or Anemo Traveler) to help him gain energy while his Elemental Burst is on cooldown. Xiao's Elemental Burst ends when you swap to another character. Although he has two charges of his Elemental Skill, only ONE charge comes back per cooldown.\n\n<b>Regarding Weapon Choices:</b> With a proper anemo battery (e.g. Sucrose), Xiao needs as little as 120-130% ER to maintain a high burst uptime. In these scenarios, unless there are no ER from substats, you should always go for a non-ER weapon as it will result in more damage.\n<b>Calamity Queller: </b>This weapon has a really high Base ATK, which means you benefit more from ATK% buffs (e.g. Thrilling Tales of the Dragon Slayers) if compared with other weapons. \n\n<b>Regarding Artifact Sets: </b>Prioritize Viridescent Venerer over the other 2 +18% ATK sets if there are external ATK% buff sources on your team.\n\n<b>Regarding Artifact Main Stats: </b>Anemo DMG% goblets are recommended for Xiao. ATK% goblets serve as a good alternative for him.",
+          "<b>\n</b>Xiao has issues with Energy regeneration because <b>he cannot generate any particles with his Elemental Skill while his Burst is active</b>, so it is not suggested to use his Elemental Skill during Elemental Burst.\nStart off a fight by casting the skill of your Anemo Battery and then casting his skill twice then cast your burst immediately. You will want to be half way through your burst animation before the particles reach you, so this way you can start off your burst with a portion of the energy gauge already filled.\n<b>You'll want to pair Xiao with another Anemo character </b>(Venti, Sucrose, Jean or Anemo Traveler) to help him gain energy while his Elemental Burst is on cooldown. Xiao's Elemental Burst ends when you swap to another character. Although he has two charges of his Elemental Skill, only ONE charge comes back per cooldown.\n\n<b>Regarding Weapon Choices:</b> With a proper anemo battery (e.g. Sucrose), Xiao needs as little as 120-130% ER to maintain a high burst uptime. In these scenarios, unless there are no ER from substats, you should always go for a non-ER weapon as it will result in more damage.\n<b>Calamity Queller: </b>This weapon has a really high Base ATK, which means you benefit more from ATK% buffs (e.g. Thrilling Tales of the Dragon Slayers) if compared with other weapons. \n\n<b>Regarding Artifact Sets: </b>Prioritize Viridescent Venerer over the other 2 +18% ATK sets if there are external ATK% buff sources on your team. <b>It is worth noting that set bonuses do not increase Xiao's damage by much, due to an oversaturation on DMG% bonuses and ATK% from various sources.</b> For this reason, it is better to opt out for artifact pieces which have higher quality substats instead of trying to maintain a set bonus.\n\n<b>Regarding Artifact Main Stats: </b>Anemo DMG% goblets are recommended for Xiao. ATK% goblets serve as a good alternative for him.",
       },
     },
   },
@@ -3282,7 +3337,7 @@ export const builds = {
             id: 'elegy_for_the_end',
           },
         ],
-        artifacts: [['the_exile'], ['noblesse_oblige'], ['emblem_of_severed_fate', 'the_exile']],
+        artifacts: [['the_exile'], ['noblesse_oblige'], ['emblem_of_severed_fate', '+20%_energy_recharge']],
         mainStats: {
           sands: 'Energy Recharge',
           goblet: 'Geo DMG / DEF%',
@@ -3314,6 +3369,9 @@ export const builds = {
           {
             id: 'prototype_starglitter',
           },
+          {
+            id: 'the_catch',
+          },
         ],
         artifacts: [
           ['husk_of_opulent_dreams'],
@@ -3329,7 +3387,7 @@ export const builds = {
         talent: [' Burst', ' Skill'],
         tip: '',
         note:
-          "Yun Jin is a Support character for Normal Attack focused characters who can deal off-field damage via her Elemental Burst. Yun Jin's <b>Elemental Burst grants nearby party members 30 stacks of additional flat damage bonus on Normal Attacks which scales with Yun Jin's current DEF</b>. This means that external DEF buffs like from Gorou's Elemental Skill and/or Burst doesn't provide much to Yun Jin since it only buffs active characters and not off-field ones.\n\n<b>Regarding Weapon Choices:</b>\n<b>Favonius Lance: </b>With this weapon, try to aim for some Crit Rate stats to trigger the weapon passive reliably.\n<b>Kitain Cross Spear:</b> Although the EM mainstat isn't useful for Yun Jin, the <b>passive decreases her Energy Recharge requirements</b> by alot, especially at higher refinements. <b>It can reduce her ER% reqs from around ~20% at R1 to ~70% at R5. </b>Note that<b> she must cast Elemental Burst first before Skill, as the passive drains 3 energy initially when Skill is cast. </b>If you only care about the Energy Recharge, this weapon can be left at level 1 while still getting full effect from the passive.\n\n<b>Regarding Artifact Main Stats and Substats Priority:</b>\nCrit Rate should only be considered when Yun Jin is equpping Favonius Lance to reliably proc the passive.",
+          "Yun Jin is a Support character for Normal Attack focused characters who can deal off-field damage via her Elemental Burst. Yun Jin's <b>Elemental Burst grants nearby party members 30 stacks of additional flat damage bonus on Normal Attacks which scales with Yun Jin's current DEF</b>. This means that external DEF buffs like from Gorou's Elemental Skill and/or Burst doesn't provide much to Yun Jin since it only buffs active characters and not off-field ones.\n\n<b>Regarding Weapon Choices:</b>\n<b>Favonius Lance: </b>With this weapon, try to aim for some Crit Rate stats to trigger the weapon passive reliably.\n<b>Kitain Cross Spear:</b> Although the EM mainstat isn't useful for Yun Jin, the <b>passive decreases her Energy Recharge requirements</b> by alot, especially at higher refinements. <b>It can reduce her ER% reqs from around ~20% at R1 to ~70% at R5. </b>Note that<b> she must cast Elemental Burst first before Skill, as the passive drains 3 energy initially when Skill is cast. </b>This weapon can be left at level 1 while still getting full effect from the passive.\n\n<b>Regarding Artifact Main Stats and Substats Priority:</b>\nCrit Rate should only be considered when Yun Jin is equpping Favonius Lance to reliably proc the passive.",
       },
     },
   },
@@ -3555,6 +3613,7 @@ export const builds = {
           },
           {
             id: 'lithic_spear',
+            stack: 3,
           },
           {
             id: 'blackcliff_pole',

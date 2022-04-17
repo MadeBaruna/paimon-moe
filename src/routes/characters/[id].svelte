@@ -20,6 +20,7 @@
   import { mdiChevronRight, mdiCircle, mdiContentSave, mdiMinus, mdiPencil, mdiPlus, mdiStar } from '@mdi/js';
   import Icon from '../../components/Icon.svelte';
   import Button from '../../components/Button.svelte';
+  import Tooltip from '../../components/TooltipRelative.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
   import { characters } from '../../data/characters';
@@ -157,6 +158,28 @@
   function selectBuild(index) {
     currentBuild = index;
     window.location.hash = builds[index].name.replace(/[ /]/g, '_').toLowerCase();
+  }
+
+  function getArtifactCommon(id) {
+    switch (id) {
+      case '+18%_atk_set':
+        return 'gladiators_finale';
+      case '+20%_energy_recharge':
+        return 'emblem_of_severed_fate';
+      default:
+        return id;
+    }
+  }
+
+  function getArtifactCommonName(id) {
+    switch (id) {
+      case '+18%_atk_set':
+        return '+18% ATK set';
+      case '+20%_energy_recharge':
+        return '+20% Energy Recharge set';
+      default:
+        return artifacts[id].name;
+    }
   }
 
   onMount(async () => {
@@ -491,7 +514,9 @@
                     >
                   {/if}
                   {#if weapon.stack}
-                    <span class="ml-2 bg-orange-300 rounded-md px-1 text-sm text-gray-900">S{weapon.stack}</span>
+                    <Tooltip title="Stack">
+                      <span class="ml-2 bg-orange-300 rounded-md px-1 text-sm text-gray-900">S{weapon.stack}</span>
+                    </Tooltip>
                   {/if}
                 </p>
               </div>
@@ -520,7 +545,7 @@
                     >
                       <div class="popup-container">
                         <div class="bg-gray-300 text-gray-900 p-2 rounded-md mb-1 shadow-2xl">
-                          {#if artifact !== '+18%_atk_set'}
+                          {#if artifact !== '+18%_atk_set' && artifact !== '+20%_energy_recharge'}
                             {#each artifacts[artifact].bonuses as bonus, i}
                               <div class={i === 1 ? 'mt-2' : ''}>
                                 <p class="font-bold text-primary text-sm">
@@ -529,7 +554,7 @@
                                 <p class="text-gray-900 text-sm">{bonus}</p>
                               </div>
                             {/each}
-                          {:else}
+                          {:else if artifact === '+18%_atk_set'}
                             <a
                               class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
                               href="/artifacts/gladiators_finale"
@@ -542,7 +567,7 @@
                               <span class="font-semibold">Gladiator's Finale</span>
                             </a>
                             <a
-                              class="flex items-center text-primary hover:text-blue-400 pt-1"
+                              class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
                               href="/artifacts/shimenawas_reminiscence"
                             >
                               <img
@@ -552,18 +577,64 @@
                               />
                               <span class="font-semibold">Shimenawa's Reminiscence</span>
                             </a>
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
+                              href="/artifacts/vermillion_hereafter"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/vermillion_hereafter_flower.png"
+                                alt="Vermillion Hereafter"
+                              />
+                              <span class="font-semibold">Vermillion Hereafter</span>
+                            </a>
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pt-1"
+                              href="/artifacts/echoes_of_an_offering"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/echoes_of_an_offering_flower.png"
+                                alt="Echoes of an Offering"
+                              />
+                              <span class="font-semibold">Echoes of an Offering</span>
+                            </a>
+                          {:else}
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                              href="/artifacts/emblem_of_severed_fate"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/emblem_of_severed_fate_flower.png"
+                                alt="Emblem of Severed Fate"
+                              />
+                              <span class="font-semibold">Emblem of Severed Fate</span>
+                            </a>
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
+                              href="/artifacts/the_exile"
+                            >
+                              <img class="h-8 ml-1 mr-2" src="/images/artifacts/the_exile_flower.png" alt="The Exile" />
+                              <span class="font-semibold">The Exile</span>
+                            </a>
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pt-1"
+                              href="/artifacts/scholar"
+                            >
+                              <img class="h-8 ml-1 mr-2" src="/images/artifacts/scholar_flower.png" alt="Scholar" />
+                              <span class="font-semibold">Scholar</span>
+                            </a>
                           {/if}
                         </div>
                       </div>
                       <img
                         class="h-8 mr-2"
-                        src="/images/artifacts/{artifact === '+18%_atk_set'
-                          ? 'gladiators_finale'
-                          : artifact}_flower.png"
-                        alt={artifact === '+18%_atk_set' ? '+18% ATK set' : artifacts[artifact].name}
+                        src="/images/artifacts/{getArtifactCommon(artifact)}_flower.png"
+                        alt={artifact}
                       />
                       <span style="padding-top: 2px;">
-                        {artifact === '+18%_atk_set' ? '+18% ATK Set' : artifacts[artifact].name}
+                        {getArtifactCommonName(artifact)}
                       </span>
                       <span class="ml-2 bg-gray-400 rounded-md px-1 text-sm text-gray-900">
                         {item.length === 1 ? '4' : '2'}

@@ -17,7 +17,14 @@
           if (
             artifact.find((e) => {
               if (e === '+18%_atk_set') {
-                return ['gladiators_finale', 'shimenawas_reminiscence'].includes(artifactId);
+                return [
+                  'gladiators_finale',
+                  'shimenawas_reminiscence',
+                  'vermillion_hereafter',
+                  'echoes_of_an_offering',
+                ].includes(artifactId);
+              } else if (e === '+20%_energy_recharge') {
+                return ['emblem_of_severed_fate', 'the_exile', 'scholar'].includes(artifactId);
               }
 
               return e === artifactId;
