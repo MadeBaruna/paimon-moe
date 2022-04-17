@@ -36,13 +36,12 @@
     if (start.isBefore(now) && end.isAfter(now)) {
       const diff = end.diff(now);
       const timeLeft = dayjs.duration(diff);
-      event.time = diff > 86400000 ? `${timeLeft.asDays().toFixed(0)}d ${timeLeft.hours()}h` : `${timeLeft.hours()}h`;
+      event.time = diff > 86400000 ? timeLeft.format('D[d] H[h]') : timeLeft.format('H[h]');
       current = [...current, event];
     } else if (start.isAfter(now)) {
       const diff = start.diff(now);
       const timeUpcoming = dayjs.duration(diff);
-      event.time =
-        diff > 86400000 ? `${timeUpcoming.asDays().toFixed(0)}d ${timeUpcoming.hours()}h` : `${timeUpcoming.hours()}h`;
+      event.time = diff > 86400000 ? timeUpcoming.format('D[d] H[h]') : timeUpcoming.format('H[h]');
       upcoming = [...upcoming, event];
     }
   }
