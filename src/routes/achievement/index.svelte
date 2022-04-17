@@ -276,6 +276,7 @@
   }
 
   function migrateNewVersion() {
+    console.log('MIGRATING ACHIEVEMENT VERSION ID');
     // version 1.5
     // prettier-ignore
     const movedIds = [
@@ -295,6 +296,12 @@
           checkList['17'][item] = true;
           delete checkList['0'][item];
         }
+      }
+
+      // wrong id Light Up the Dark
+      if (checkList['0'][81219] === true) {
+        checkList['0'][81222] = true;
+        delete checkList['0'][81219];
       }
     }
   }
