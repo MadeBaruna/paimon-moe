@@ -13,23 +13,16 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    kamisato_ayato: {
-      name: 'Ayato',
-      rarity: 'legendary',
-      count: 0,
-      average: '...',
-      percentage: '...',
-    },
-    venti: {
-      name: 'Venti',
+    kamisato_ayaka: {
+      name: 'Ayaka',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300028;
-  const image = 'ayatoventi.png';
+  const bannerId = 300029;
+  const image = 'ayaka.png';
 
   let loading = true;
   let user = '';
