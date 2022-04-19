@@ -1118,4 +1118,130 @@ export const domains = {
     ],
     artifacts: ['defenders_will', 'brave_heart', 'husk_of_opulent_dreams', 'ocean-hued_clam'],
   },
+  the_lost_valley: {
+    name: 'The Lost Valley',
+    domains: [
+      {
+        s: 5125,
+        id: 'domain_of_blessing_machine_nest_i',
+        name: 'Domain of Blessing: Machine Nest I',
+        ar: 30,
+        level: 59,
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
+        monsters: [
+          {
+            id: 'ruin_guard',
+            name: 'Ruin Guard',
+            count: 1,
+          },
+          {
+            id: 'ruin_destroyer',
+            name: 'Ruin Destroyer',
+            count: 1,
+          },
+        ],
+        disorder: ['', ''],
+      },
+      {
+        s: 5126,
+        id: 'domain_of_blessing_machine_nest_ii',
+        name: 'Domain of Blessing: Machine Nest II',
+        ar: 35,
+        level: 69,
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
+        monsters: [
+          {
+            id: 'ruin_guard',
+            name: 'Ruin Guard',
+            count: 1,
+          },
+          {
+            id: 'ruin_scout',
+            name: 'Ruin Scout',
+            count: 1,
+          },
+          {
+            id: 'ruin_cruiser',
+            name: 'Ruin Cruiser',
+            count: 1,
+          },
+          {
+            id: 'ruin_destroyer',
+            name: 'Ruin Destroyer',
+            count: 1,
+          },
+        ],
+        disorder: ['', ''],
+      },
+      {
+        s: 5127,
+        id: 'domain_of_blessing_machine_nest_iii',
+        name: 'Domain of Blessing: Machine Nest III',
+        ar: 40,
+        level: 80,
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
+        monsters: [
+          {
+            id: 'ruin_scout',
+            name: 'Ruin Scout',
+            count: 1,
+          },
+          {
+            id: 'ruin_cruiser',
+            name: 'Ruin Cruiser',
+            count: 2,
+          },
+          {
+            id: 'ruin_destroyer',
+            name: 'Ruin Destroyer',
+            count: 2,
+          },
+        ],
+        disorder: ['', ''],
+      },
+      {
+        s: 5128,
+        id: 'domain_of_blessing_machine_nest_iv',
+        name: 'Domain of Blessing: Machine Nest IV',
+        ar: 45,
+        level: 90,
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
+        monsters: [
+          {
+            id: 'ruin_grader',
+            name: 'Ruin Grader',
+            count: 1,
+          },
+          {
+            id: 'ruin_cruiser',
+            name: 'Ruin Cruiser',
+            count: 1,
+          },
+          {
+            id: 'ruin_destroyer',
+            name: 'Ruin Destroyer',
+            count: 1,
+          },
+        ],
+        disorder: ['', ''],
+      },
+    ],
+    artifacts: ['martial_artist', 'gambler', 'vermillion_hereafter', 'echoes_of_an_offering'],
+  },
 };
