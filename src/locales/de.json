@@ -155,7 +155,7 @@
       "reCalculating": "Rekalkulation der Garantie...",
       "processing": "Wird verarbeitet",
       "banner": "Banner",
-      "page": "Seite",
+      "page": "Seite {page}",
       "parsing": "Wird analysiert...",
       "save": "Speichern",
       "cancel": "Abbrechen",
