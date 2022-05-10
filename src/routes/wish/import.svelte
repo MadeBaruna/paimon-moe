@@ -1257,7 +1257,7 @@
         {#if !finishedProcessingLog}
           <div class="text-white mb-2">
             <p>{$t('wish.import.processing')} {currentBanner} {$t('wish.import.banner')}</p>
-            <p>{$t('wish.import.page')} {currentPage}</p>
+            <p>{$t('wish.import.page'), { values: { page: currentPage } }}</p>
           </div>
         {/if}
         {#if !noNewData}
