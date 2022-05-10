@@ -155,7 +155,7 @@
       "reCalculating": "Đang tính lại bảo hiểm...",
       "processing": "Đang xử lý",
       "banner": "Banner",
-      "page": "Trang",
+      "page": "Trang {page}",
       "parsing": "Đang phân tích...",
       "save": "Lưu",
       "cancel": "Hủy",
