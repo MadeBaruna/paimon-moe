@@ -155,7 +155,7 @@
       "reCalculating": "Re-calculating pity...",
       "processing": "Processing",
       "banner": "Banner",
-      "page": "Page",
+      "page": "Page {page}",
       "parsing": "Parsing...",
       "save": "Save",
       "cancel": "Cancel",
