@@ -155,7 +155,7 @@
       "reCalculating": "천장 재계산 중...",
       "processing": "처리중",
       "banner": "픽업",
-      "page": "페이지",
+      "page": "페이지 {page}",
       "parsing": "파싱 중...",
       "save": "저장",
       "cancel": "취소",
