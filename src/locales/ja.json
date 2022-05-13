@@ -445,13 +445,20 @@
       "データはご利用のブラウザに保存されるため、ブラウザのキャッシュをクリアすると削除されます！設定からGoogle Driveを用いてバックアップしておくことをおすすめします！"
     ],
     "rateon": {
-      "won": "",
-      "lost": "",
-      "guaranteed": ""
+      "won": "ピックアップ",
+      "lost": "すり抜け",
+      "guaranteed": "確定ピックアップ"
     },
     "backupReminder": {
-      "title": "",
-      "desc": ""
+      "title": "全てのデータは、あなたのブラウザーにて保存しています。",
+      "desc": "ブラウザのキャッシュをクリアすると、祈願履歴が削除されます！設定からGoogle Driveを用いてバックアップしておくか、こちらから手動でデータをダウンロードしてください。"
+    },
+    "rank": {
+      "level": "あなたの合計祈願回数ランク",
+      "based": "全世界の祈願統計を基にしています。",
+      "current": "現在の {banner} の中央値は、{median} 回です。",
+      "more": "あなたは、{percentage}%以上のpaimon.moeユーザーより祈願をしています。",
+      "less": "あなたは、{percentage}%以上のpaimon.moeユーザーより祈願をしていません。"
     }
   },
   "calculator": {
@@ -460,7 +467,7 @@
     "titleResin": "樹脂計算ツール",
     "titleFriendship": "好感度計算ツール",
     "titleFate": "祈願出費計算ツール",
-    "titleFateCount": "",
+    "titleFateCount": "祈願可能回数計算ツール",
     "goto": "{where} へ移動",
     "howToUse": "使用方法",
     "guide": {
@@ -566,17 +573,19 @@
       "calculateFate": "{value} 個の入手に必要な金額を計算！"
     },
     "fateCount": {
-      "interwinedFate": "",
-      "starglitter": "",
-      "stardust": "",
-      "primogem": "",
-      "genesisCrystal": "",
-      "welkinMoon": "",
-      "dailyCommission": "",
-      "type": "",
-      "amount": "",
-      "totalPrimogem": "",
-      "calculate": ""
+      "interwinedFate": "紡がれた運命",
+      "starglitter": "スターライト",
+      "stardust": "スターダスト",
+      "primogem": "原石",
+      "genesisCrystal": "創世結晶",
+      "welkinMoon": "空月の祝福(残り日数)",
+      "dailyCommission": "デイリーミッション",
+      "type": "種類",
+      "amount": "数量",
+      "totalPrimogem": "合計原石換算",
+      "calculate": "計算",
+      "days": "経過日数",
+      "monthStardust": "スターダスト交換(残り)"
     }
   },
   "items": {
