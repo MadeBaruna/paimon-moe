@@ -583,9 +583,7 @@
       "type": "種類",
       "amount": "数量",
       "totalPrimogem": "合計原石換算",
-      "calculate": "計算",
-      "days": "経過日数",
-      "monthStardust": "スターダスト交換(残り)"
+      "calculate": "計算"
     }
   },
   "items": {
