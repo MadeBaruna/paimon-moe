@@ -55,6 +55,10 @@
       currency: 'S$',
       values: [1.48, 6.98, 21.98, 44.98, 68.98, 148.98],
     },
+    YEN: {
+      currency: '¥',
+      values: [120, 610, 1840, 3680, 6100, 12000],
+    },
     Custom: {
       currency: 'Custom',
       values: [0.99, 4.99, 14.99, 29.99, 49.99, 99.99],
@@ -75,6 +79,7 @@
     { label: 'GBP (£)', value: 'GBP' },
     { label: 'CNY (¥)', value: 'CNY' },
     { label: 'SGD (S$)', value: 'SGD' },
+    { label: 'YEN (円)', value: 'YEN' },
     { label: 'Custom', value: 'Custom' },
   ];
 
