@@ -706,7 +706,7 @@
         "title": "Wish Pity",
         "content": [
           "Paimon.moe akan menyimpan perhitungan pity 4*, perhitungan pity 5*, dan informasi wish 5* (yaitu waktu wish, nama item, angka pity) jika kamu mencentang 'Kirim pity untuk perhitungan pity global' di Auto Import Wish atau secara manual mensubmit di menu bantuan dan pengaturan. Paimon.moe akan menyatukan data-datanya kemudian menghitung pity rata-rata tiap banner dari pengguna paimon.moe. Kamu bisa mengecek nya di",
-          "wish stats"
+          "wish tally"
         ]
       }
     ],

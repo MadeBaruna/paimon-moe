@@ -292,7 +292,7 @@
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "",
+          "아래의 방법으로 해결이 안된다면, PS 계정을 HoYoVerse 계정과 연동 뒤 PC/모바일 도움말을 사용해주세요.",
           "플레이 스테이션에서 원신을 실행하세요",
           "QR 코드가 포함된 이벤트 우편을 엽니다",
           "스마트폰으로 QR 코드를 스캔합니다",
@@ -445,13 +445,20 @@
       "데이터는 브라우저에 저장됩니다. 브라우저 캐시를 삭제하면 데이터도 함께 제거됩니다. 설정에서 구글 드라이브 동기화를 활성화하여 데이터를 백업하세요!"
     ],
     "rateon": {
-      "won": "",
-      "lost": "",
-      "guaranteed": ""
+      "won": "반천장 획득",
+      "lost": "픽뚫 획득",
+      "guaranteed": "확정천장 획득"
     },
     "backupReminder": {
-      "title": "",
-      "desc": ""
+      "title": "모든 데이터가 브라우저에 저장되었습니다!",
+      "desc": "만약 브라우저의 캐시가 지워지게 된다면, 그동안의 기록들이 전부 없어지게 됩니다!\n설정에서 Google Drive 으로 동기화 하거나 수동으로 데이터를 다운로드 받을 수 있습니다."
+    },
+    "rank": {
+      "level": "",
+      "based": "글로벌 기원 스탯 기반",
+      "current": "현재 {banner}의 중앙값은 {median} 뽑기입니다",
+      "more": "",
+      "less": ""
     }
   },
   "calculator": {
@@ -460,7 +467,7 @@
     "titleResin": "레진 계산기",
     "titleFriendship": "호감도 계산기",
     "titleFate": "인연 가격 계산기",
-    "titleFateCount": "",
+    "titleFateCount": "인연 카운트 계산기",
     "goto": "{where}로 이동",
     "howToUse": "사용법",
     "guide": {
@@ -566,17 +573,17 @@
       "calculateFate": "필요한 액수 계산: {value}"
     },
     "fateCount": {
-      "interwinedFate": "",
-      "starglitter": "",
-      "stardust": "",
-      "primogem": "",
-      "genesisCrystal": "",
-      "welkinMoon": "",
-      "dailyCommission": "",
-      "type": "",
-      "amount": "",
-      "totalPrimogem": "",
-      "calculate": ""
+      "interwinedFate": "뒤얽힌 인연",
+      "starglitter": "스타라이트",
+      "stardust": "스타더스트",
+      "primogem": "원석",
+      "genesisCrystal": "창세의 결정",
+      "welkinMoon": "공월 축복 (일수)",
+      "dailyCommission": "일일 의뢰",
+      "type": "종류",
+      "amount": "개수",
+      "totalPrimogem": "총 원석",
+      "calculate": "계산"
     }
   },
   "items": {
@@ -848,7 +855,7 @@
   "fishing": {
     "title": "낚시 사전",
     "subtitle": "리스폰 타이머를 시작하기 위해 모든 물고기를 잡은 경우 낚시터를 비어있음으로 표시",
-    "mondstadt": "몽그스타드",
+    "mondstadt": "몬드",
     "liyue": "리유에",
     "inazuma": "이나즈마",
     "enkanomiya": "연하궁",

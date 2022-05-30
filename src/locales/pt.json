@@ -292,7 +292,7 @@
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "",
+          "Os passos abaixo podem não estar funcionando, você pode vincular sua conta da PS com uma conta miHoYo e então usar as instruções para pc/mobile",
           "Abra Genshin Impact no seu PlayStation",
           "Abra o email do evento que contém QR Code",
           "Escaneie o QR Code com seu celular",
@@ -445,13 +445,20 @@
       "Os dados estão salvos no seu navegador, então serão deletados se você limpar o cache do navegador! Ative a sincronização do Google Drive nas suas configurações para fazer o backup dos seus dados!"
     ],
     "rateon": {
-      "won": "",
-      "lost": "",
-      "guaranteed": ""
+      "won": "Venceu o 50:50",
+      "lost": "Perdeu o 50:50",
+      "guaranteed": "Garantido"
     },
     "backupReminder": {
-      "title": "",
-      "desc": ""
+      "title": "Todos os dados estão salvos no seu navegador!",
+      "desc": "Se por acaso o cache do navegador for excluído, o seu histórico de desejos irá sumir! Você pode ativar a sincronização com o Google Drive nas configurações para fazer backup dos seus dados, ou então baixar os dados manualmente."
+    },
+    "rank": {
+      "level": "",
+      "based": "Baseado em Estatísticas de Desejos Globais",
+      "current": "",
+      "more": "",
+      "less": ""
     }
   },
   "calculator": {
@@ -460,7 +467,7 @@
     "titleResin": "Calculadora de Resina",
     "titleFriendship": "Calculadora de Experiência de Amizade",
     "titleFate": "Calculadora de Preço Fixo",
-    "titleFateCount": "",
+    "titleFateCount": "Calculadora de Contagem de Destinos",
     "goto": "Ir para {where}",
     "howToUse": "Como Usar",
     "guide": {
@@ -566,17 +573,17 @@
       "calculateFate": "Calcule quanto dinheiro eu preciso para {value}"
     },
     "fateCount": {
-      "interwinedFate": "",
-      "starglitter": "",
-      "stardust": "",
-      "primogem": "",
-      "genesisCrystal": "",
-      "welkinMoon": "",
-      "dailyCommission": "",
-      "type": "",
-      "amount": "",
-      "totalPrimogem": "",
-      "calculate": ""
+      "interwinedFate": "Destino Entrelaçado",
+      "starglitter": "Brilho Estelar",
+      "stardust": "Poeira Estelar",
+      "primogem": "Gema Essencial",
+      "genesisCrystal": "Cristal Gênesis",
+      "welkinMoon": "Bênção da Lua Nova (Dias)",
+      "dailyCommission": "Missão Diária",
+      "type": "Tipo",
+      "amount": "Quantidade",
+      "totalPrimogem": "Quantidade total de Gemas Essenciais",
+      "calculate": "Calcular"
     }
   },
   "items": {
@@ -851,7 +858,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
-    "enkanomiya": "",
+    "enkanomiya": "Enkanomiya",
     "setEmpty": "Marcar como vazio",
     "emptyTime": "Tempo em que o local foi esvaziado:",
     "clear": "Limpar",

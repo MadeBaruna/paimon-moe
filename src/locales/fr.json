@@ -28,7 +28,7 @@
       "summoned": "Invocation",
       "percentage": "parmis tous les {rarity}",
       "avg": "Pity moyenne",
-      "subtitle": "Calculé à partir des données fournis par {user} utilisateurs de paimon.moe",
+      "subtitle": "Calculé à partir des données fournies par {user} utilisateurs de paimon.moe",
       "detail": "Compteur global des voeux"
     },
     "wish": {
@@ -292,7 +292,7 @@
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "",
+          "Si les étapes ci-dessous ne fonctionnent pas, vous pouvez lier votre compte PS avec un compte HoYoVerse puis utiliser les instructions pour pc/mobile",
           "Ouvrez Genshin Impact sur votre PlayStation",
           "Ouvrez le mail de l'évenement qui contient le QR code",
           "Scannez le QR code avec votre téléphone",
@@ -326,7 +326,7 @@
         "Cette fonctionnalité est toujours en bêta, faites d'abord une sauvegarde dans les paramètres avant d'exporter vers Excel !",
         "Les vœux avec le même horodatage et le même nom de récompense ne seront PAS affectés (donc les vœux existants ne seront pas dupliqués)",
         "Les vœux ne seront ajoutés qu'en fin ou début de liste, ce qui veut dire que rien ne sera ajouté en plein milieu de la liste",
-        "Pour le moment, seuls les fichiers Excel avec un nom en ANGLAIS pour les récompenses n'est pris en charge"
+        "Pour le moment, seuls les fichiers avec un nom en ANGLAIS pour les récompenses sont pris en charge"
       ],
       "selectFile": {
         "default": "Glissez & déposez le fichier Excel de Paimon.moe ici, ou cliquez pour en sélectionner un",
@@ -445,13 +445,20 @@
       "Les données sont enregistrées dans votre navigateur, donc elles seront supprimées si vous videz le cache de votre navigateur ! Activez la synchronisation Google Drive dans les paramètres pour sauvegarder vos données !"
     ],
     "rateon": {
-      "won": "",
-      "lost": "",
-      "guaranteed": ""
+      "won": "50:50 gagné",
+      "lost": "50:50 perdu",
+      "guaranteed": "Garanti"
     },
     "backupReminder": {
-      "title": "",
-      "desc": ""
+      "title": "Toutes les données sont sauvegardées dans votre navigateur!",
+      "desc": "Si toutefois le cache du navigateur est supprimé, votre historique de vœux le sera également ! Vous pouvez activer la synchronisation Google Drive dans le menu Réglages pour sauvegarder vos données, ou les télécharger manuellement."
+    },
+    "rank": {
+      "level": "",
+      "based": "Basé sur les statistiques de vœux au niveau mondial",
+      "current": "La médiane actuelle de {banner} est de {median} tirages",
+      "more": "",
+      "less": ""
     }
   },
   "calculator": {
@@ -460,7 +467,7 @@
     "titleResin": "Calculateur de résine",
     "titleFriendship": "Calculateur d'Exp d'affinité",
     "titleFate": "Calculateur de prix de pierre de vœux",
-    "titleFateCount": "",
+    "titleFateCount": "Calculateur de pierres de vœux",
     "goto": "Allez sur {where}",
     "howToUse": "Comment utiliser",
     "guide": {
@@ -566,17 +573,17 @@
       "calculateFate": "Calculez combien d'argent j'ai besoin pour {value}"
     },
     "fateCount": {
-      "interwinedFate": "",
-      "starglitter": "",
-      "stardust": "",
-      "primogem": "",
-      "genesisCrystal": "",
-      "welkinMoon": "",
-      "dailyCommission": "",
-      "type": "",
-      "amount": "",
-      "totalPrimogem": "",
-      "calculate": ""
+      "interwinedFate": "Pierre de la fatalité",
+      "starglitter": "Astérie libre",
+      "stardust": "Astrion libre",
+      "primogem": "Primo-gemme",
+      "genesisCrystal": "Cristal primaire",
+      "welkinMoon": "Faveur de l'astre de la nuit (jours)",
+      "dailyCommission": "Commissions quotidiennes",
+      "type": "Type",
+      "amount": "Quantité",
+      "totalPrimogem": "Primo-gemmes totales",
+      "calculate": "Calculer"
     }
   },
   "items": {
@@ -851,7 +858,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
-    "enkanomiya": "",
+    "enkanomiya": "Enkanomiya",
     "setEmpty": "Définir comme vide",
     "emptyTime": "Temps où la case est vide :",
     "clear": "Effacer",

@@ -9,30 +9,30 @@
     "achievement": "Logros",
     "reminder": "Recordatorio",
     "todoList": "Tareas pendientes",
-    "timeline": "Timeline",
+    "timeline": "Linea de tiempo",
     "furnishing": "Relajatetera",
     "weapons": "Armas",
     "artifacts": "Artefactos",
-    "fishing": "Pescar",
+    "fishing": "Pesca",
     "settings": "Configuración",
     "donate": "Donar"
   },
   "home": {
-    "welcome": "Bienvenido a Paimon.moe! 👋",
-    "message": "¡Tu mejor compañero de Genshin Impact! Te ayuda a planear qué materiales farmear con la calculadora de ascensión, y controla tu progreso con Tareas y Contador de deseos.",
+    "welcome": "¡Bienvenido a Paimon.moe! 👋",
+    "message": "¡Tu mejor compañero en Genshin Impact! Paimon.moe te ayuda a planear qué materiales farmear con una calculadora de ascensión, y registra tu progreso con una lista de tareas pendientes y un contador de deseos.",
     "visitor": "{count} visitantes en los últimos 7 días",
     "banner": {
       "featured": [
         "Eula"
       ],
-      "summoned": "Invocado",
-      "percentage": "de todos los {rarity}",
+      "summoned": "Invocados",
+      "percentage": "de los {rarity}",
       "avg": "Media de Pity",
-      "subtitle": "Calculado de los datos remitidos por {user} usuarios de paimon.moe",
-      "detail": "Recuento Global de Deseos"
+      "subtitle": "Calculado mediante los datos enviados por {user} usuarios de paimon.moe",
+      "detail": "Conteo Global de Deseos"
     },
     "wish": {
-      "message": "¡Importa tu historial de deseos para guardarlo más de 6 meses! Además cuenta automáticamente tu pity y estadísticas de tus deseos con diagramas 📊",
+      "message": "¡Importa tu historial de deseos para guardarlo durante más de 6 meses! Además cuenta automáticamente tu pity y muestra estadísticas de tus deseos con diagramas 📊",
       "latest": "Tu último deseo",
       "banner": "Banner",
       "time": "Fecha",
@@ -41,7 +41,7 @@
       "detail": "Contador de Deseos"
     },
     "reminder": {
-      "message": "¡Puedes configurar una notificación 🔔 para el Transmutador Paramétrico y el Login Diario en Hoyolab aquí! ¡Clicka el botón Recordatorio aquí abajo para empezar!",
+      "message": "¡Puedes configurar una notificación de recordatorio🔔 para el Transmutador Paramétrico y el Login Diario en Hoyolab aquí! ¡Haz click en el botón Recordatorio aquí abajo para empezar!",
       "detail": "Recordatorio"
     },
     "event": {
@@ -171,7 +171,7 @@
       "differentAccount": "Este historial de deseos es de otra cuenta, por favor, separa tus cuentas primero en el menú de Configuración!",
       "invalidData": "Datos incorrectos devueltos por la API, inténtalo más tarde",
       "noNewData": "No hay nuevos deseos, por favor espere alrededor de 1 hora para que los datos de los deseos se actualicen!",
-      "success": "Importado correcto 😀!",
+      "success": "Importación exitosa 😀!",
       "server": "Selecciona tu servidor:",
       "wishTallyCheck": "Enviar tu pity para recuento global de deseos",
       "wishTally": "¡Estamos haciendo un recuento global de deseos! Puedes enviar tu recuento de deseos para participar. Todos los datos pity serán añadidos para saber cual es la media de pity de los usuarios de paimon.moe.",
@@ -180,16 +180,16 @@
         "y",
         "de tu historial de deseos"
       ],
-      "forceUpdateCheck": "",
+      "forceUpdateCheck": "Forzar la actualización del historial de deseos (activar sólo si el historial de deseos no está actualizando)",
       "header": [
-        "",
-        "",
+        "Importa y realiza un backup de tu historial de deseos de Genshin Impact para guardarlo por más de 6 meses. ¡También registra tu pity y estadísticas sobre tus deseos automáticamente!",
+        "También puedes activar Drive Sync en Configuración y hacer un backup de tu historial de deseos en tu Google Drive",
         ""
       ],
       "faqs": {
         "title": "FAQ del importado de deseos",
         "q1": "¿Cómo funciona?",
-        "a1": "El historial de deseos de Genshin Impact es básicamente una página web, por lo que puedes acceder abriendo la URL de la página. Una llave temporal será generada tras abrir la página del historial o la página de comentarios, y el importador usará automáticamente la API de MiHoYo to buscar tu historial de deseos.",
+        "a1": "El historial de deseos de Genshin Impact es básicamente una página web, por lo que puedes acceder abriendo la URL de la página. Una llave temporal será generada tras abrir la página del historial o la página de comentarios, y el importador usará automáticamente la API de MiHoYo para buscar tu historial de deseos.",
         "q2": "¿Es seguro? ¿Seré baneado?",
         "a2": "Paimon.moe usa la misma petición que usa Genshin Impact para recoger el historial de deseos, y Paimon.moe no tiene ninguna manera de modificar ningún archivo del juego o la memoria, y debiera ser seguro. Pero usas el importador bajo tu propia responsabilidad (bueno yo lo uso en mi cuenta principal). Podrías poder introducir tus datos manualmente 😀.",
         "q3": "¿Entonces, podéis hackear mi cuenta?",
@@ -292,7 +292,7 @@
           ""
         ],
         "ps": [
-          "",
+          "Si los pasos a continuación no funcionan, puedes vincular tu cuenta de PS con una cuenta de HoYoVerse y luego seguir las instrucciones para pc/móvil",
           "Abre Genshin Impact en tu PlayStation",
           "Abre el mail del evento que contiene el código QR",
           "Escanea el código QR con tu teléfono",
@@ -364,7 +364,7 @@
       ],
       "wishTallySubmit": "Enviar recuento de Deseos",
       "wishTallyThankyou": "¡Gracias por tu participación!",
-      "manualTitle": "Configuración de intruducción manual",
+      "manualTitle": "Configuración de introducción manual",
       "enableManual": "Habilitar introducción manual",
       "notice": "¡Usar Auto Importar e introducción manual conjuntamente no se recomienda ya que aún requiere algo más de testeo!",
       "consider": "Considera usar el Auto Importador primero. Accede a él clicando el botón al lado del primer botón que clicaste para abrir este Cómo usar.",
@@ -415,7 +415,7 @@
       "worth": "Valor",
       "loading": "Cargando... (Si esto se bloquea, cambia tu servidor en la página de configuración)",
       "guaranteed": "El siguiente {rarity}★ está garantizado ya que es el personaje o arma promocional",
-      "unknown_3_star": "Unknown"
+      "unknown_3_star": "Desconocido"
     },
     "tally": {
       "title": "Recuento de Deseos",
@@ -450,8 +450,15 @@
       "guaranteed": ""
     },
     "backupReminder": {
-      "title": "",
+      "title": "¡Todos los datos están guardados en tu navegador!",
       "desc": ""
+    },
+    "rank": {
+      "level": "",
+      "based": "",
+      "current": "",
+      "more": "",
+      "less": ""
     }
   },
   "calculator": {
@@ -460,7 +467,7 @@
     "titleResin": "Calculadora de Resina",
     "titleFriendship": "Calculadora de Exp de Amistad",
     "titleFate": "Calculadora de Precio de Tiradas",
-    "titleFateCount": "",
+    "titleFateCount": "Calculadora de Deseos",
     "goto": "Ir a {where}",
     "howToUse": "Cómo se usa",
     "guide": {
@@ -472,16 +479,16 @@
       "calculateAscension": "¿Calcular Material de Ascensión?",
       "selectRarity": "Selecciona la rareza del arma",
       "selectWeapon": "Selecciona el arma",
-      "current": "Nivel, EXP, y Ascensión actuales de arma",
-      "inputCurrentLevel": "Introduce el nivel actual de arma...",
-      "inputCurrentExp": "Introduce la EXP actual de arma...",
+      "current": "Nivel, EXP, y Ascensión actuales del arma",
+      "inputCurrentLevel": "Introduce el nivel actual del arma...",
+      "inputCurrentExp": "Introduce la EXP actual del arma...",
       "intended": "Nivel y Ascensión de arma deseados",
-      "inputIntendedLevel": "Introduce nivel de arma deseado...",
+      "inputIntendedLevel": "Introduce nivel del arma deseado...",
       "resource": "Recursos a utilizar",
       "calculate": "Calcular",
       "unknownInformation": "Hay alguna información desconocida",
       "ascensionLevel": "Nivel de Ascensión",
-      "mora": "Mora (approximado ±40)",
+      "mora": "Mora (aproximado ±40)",
       "expWasted": "EXP Perdida",
       "addToTodo": "Añadir a Tareas Pendientes",
       "addedToTodo": "Añadido a Tareas Pendientes"
@@ -499,15 +506,15 @@
       "inputTalentLevel": "Introduce el nivel actual del 1er, 2do y 3er talento",
       "inputTalentNotice": "Si tiene un color diferente, réstale 3 al nivel actual",
       "inputTalent": [
-        "1er nivel de talent",
-        "2do nivel de talent",
-        "3er nivel de talent"
+        "nivel del 1er talento",
+        "nivel del 2do talento",
+        "nivel del 3er talento"
       ],
       "talentToLevel": "a nivel",
       "calculate": "Calcular",
       "unknownInformation": "Hay alguna información desconocida",
       "ascensionLevel": "Nivel de Ascensión",
-      "mora": "Mora (approximado ±40)",
+      "mora": "Mora (aproximado ±40)",
       "expWasted": "EXP Perdida",
       "addToTodo": "Añadir a Tareas Pendientes",
       "addedToTodo": "Añadido a Tareas Pendientes",
@@ -566,17 +573,17 @@
       "calculateFate": "Calcular cuánto dinero necesito para {value}"
     },
     "fateCount": {
-      "interwinedFate": "",
-      "starglitter": "",
-      "stardust": "",
-      "primogem": "",
-      "genesisCrystal": "",
-      "welkinMoon": "",
-      "dailyCommission": "",
-      "type": "",
-      "amount": "",
-      "totalPrimogem": "",
-      "calculate": ""
+      "interwinedFate": "Destino entrelazado",
+      "starglitter": "Brillo estelar sin dueño",
+      "stardust": "Polvo estelar sin dueño",
+      "primogem": "Protogema",
+      "genesisCrystal": "Cristal génesis",
+      "welkinMoon": "Bendición Lunar (Días)",
+      "dailyCommission": "Misión de encargo",
+      "type": "Tipo",
+      "amount": "Cantidad",
+      "totalPrimogem": "Protogemas Totales",
+      "calculate": "Calcular"
     }
   },
   "items": {
@@ -625,7 +632,7 @@
   "timeline": {
     "title": "Timeline",
     "localTime": "Mostrar como hora local",
-    "starting": "SEmpezando en",
+    "starting": "Comienza en",
     "ending": "Acabando en",
     "live": "¡En vivo ahora!",
     "finished": "Acabado"
@@ -646,12 +653,12 @@
     "driveSignIn": "Iniciar sesión en Google Drive",
     "driveSignOut": "Cerrar sesión Google Drive",
     "driveSignInErrorScope": "¡El inicio en Drive ha fallado! ¡Por favor, inicia sesión de nuevo y comprueba los permisos requeridos!",
-    "synced": "Syncronizado",
+    "synced": "Sincronizado",
     "waiting": "Esperando...",
-    "syncing": "Syncronizando...",
+    "syncing": "Sincronizando...",
     "syncStatus": "Estado de la sincronización:",
     "lastSync": "Última sincronización:",
-    "feedback": "Si encuentras algún error, datos erróneos, o algún otro comentario, por favor, deja un mensae en",
+    "feedback": "Si encuentras algún error, datos erróneos, o algún otro comentario, por favor, deja un mensaje en",
     "or": "o",
     "thanks": "Gracias😁!",
     "modal": {
@@ -724,7 +731,7 @@
     "or": "O"
   },
   "footer": {
-    "affliate": "Paimon.moe no está afiliado a HoYoverse.",
+    "affliate": "Paimon.moe no está afiliado a miHoYo.",
     "copyright": "Genshin Impact, el contenido del juego y los materiales son marcas comerciales y derechos de autor de HoYoverse.",
     "discord": "Únete a nuestro Discord",
     "community": "Enlaces a la comunidad",
@@ -795,7 +802,7 @@
       "title": "Inventario de mobiliario",
       "subtitle": "Algunas categorías especiales como el muro no se muestran",
       "all": "All",
-      "openSets": "Open Sets"
+      "openSets": "Abrir conjuntos"
     },
     "sets": {
       "title": "Conjuntos de muebles",
@@ -851,7 +858,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
-    "enkanomiya": "",
+    "enkanomiya": "Enkanomiya",
     "setEmpty": "Poner como vacío",
     "emptyTime": "Tiempo cuando el punto está vacío:",
     "clear": "Borrar",

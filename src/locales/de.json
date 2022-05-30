@@ -216,7 +216,7 @@
         "a7": "Wunschhistorie, die älter als 6 Monate ist wird vom Mihoyo-Server selbst entfernt. Wenn Sie also igendwo kein Backup haben, ist es leider weg"
       },
       "logLocation": {
-        "global": "",
+        "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
       "guide": {
@@ -243,13 +243,13 @@
           "Link hier einfügen... https://webstatic..."
         ],
         "pclog": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Öffnen Sie Genshin Impact auf diesem PC (Wenn Sie mehrere Konten verwenden, starten Sie das Spiel bitte neu)",
+          "Öffnen Sie dann den Wunschverlauf im Spiel und warten Sie, bis er geladen ist",
+          "Drücken Sie WINDOWS+R auf Ihrer Tastatur und geben Sie dann Folgendes ein:",
+          "Ein Notizblock-Fenster wird geöffnet. Drücken Sie STRG+F und geben Sie dann Folgendes ein:",
+          "Kopieren Sie den gesamten Link von https://webstatic zu #/log sieht die URL so aus: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "Fügen Sie den Text in das Textfeld unten ein",
+          "Link hier einfügen... https://webstatic..."
         ],
         "android": [
           "Öffne Gebet (im Spiel)",
@@ -274,31 +274,31 @@
           "Link hier einfügen... https://genshin.mihoyo..."
         ],
         "ios2": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Laden Sie Stream im App Store herunter",
+          "hier",
+          "https://apps.apple.com/app/stream/id1312141691",
+          "Öffnen Sie die App und lassen Sie dann VPN in den Systemeinstellungen zu (Einstellungen > Allgemein > VPN)",
+          "CA installieren (Klicken Sie auf Sniff Now on Stream App > Install CA > Ein Popup-Fenster erscheint und wählen Sie Allow > Now CA is downloaded",
+          "Gehen Sie zu Einstellungen > Allgemein > VPN & Geräteverwaltung > Klicken Sie auf Generäle CA streamen und installieren Sie",
+          "Öffnen Sie Genshin Impact und dann den Wish-Bildschirm, bleiben Sie auf dieser Seite",
+          "Zurück zur Stream-App > Wählen Sie Ich vertraue aus > Tippen Sie auf die Schaltfläche jetzt schnüffeln",
+          "Gehen Sie zurück zu Genshin Impact und öffnen Sie dann die Wish-Verlaufsseite",
+          "Warten Sie, bis die Seite geladen ist",
+          "Zurück zur Stream-App > Stopp Sniffing",
+          "Klicken Sie auf Sniff-Verlauf > Wählen Sie eine Anfrage mit der Endung .json aus (der Link beginnt mit https://hk4e-api-os.mihoyo.com/)",
+          "Klicken Sie auf die Registerkarte Anfrage, kopieren Sie den unten stehenden Link und fügen Sie ihn ein",
+          "Link hier einfügen... https://hk4e-api-os.mihoyo.com...",
+          "Wenn Sie ein Problem haben, lesen Sie die Anleitung zur Fehlerbehebung",
+          "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "",
+          "Wenn die folgenden Schritte nicht funktionieren, können Sie Ihr PS-Konto mit einem HoYoVerse-Konto verknüpfen und dann die Anleitung für PC/Mobilgerät verwenden",
           "Öffne Genshin Impact auf deiner PlayStation",
           "Öffne die Event-E-Mail mit dem QR-Code",
           "Scanne den QR-Code auf deinem Handy",
           "Kopiere den Link und füge ihn unten ein",
           "Link hier einfügen...",
-          ""
+          "Link hier einfügen..."
         ],
         "pclocal": [
           "Wenn es Ihnen unangenehm ist, Ihre Feedback-URL zu teilen, können Sie diese Option nutzen, um den Wunsch auf Ihrem PC lokal zu bearbeiten. Dieses Skript liest die Log-Datei auf dem PC, um die Wunsch-Historie-URL zu erhalten.",
@@ -320,8 +320,8 @@
       "subtitle": "Wähle aus von wo deine Excel kommt:",
       "default": "Paimon.moe Export",
       "takagg": "TakaGG Gacha Export",
-      "genshinwishes": "",
-      "wishtally": "",
+      "genshinwishes": "GenshinWishes Export",
+      "wishtally": "WishTally",
       "notice": [
         "Diese Funktion ist noch in der BETA bitte backup erst indem du in die Einstellungen gehst und dann auf Export zu Excel gehst!",
         "Wünsche mit dem gleichen Zeitstempel und Belohnungsnamen werden NICHT verändert (vorhandener Wunsch wird nicht neu geschrieben)",
@@ -331,8 +331,8 @@
       "selectFile": {
         "default": "Drag & Drop Paimon.moe Excel Datei hier oder klicken Sie hier, zum Auszuwählen",
         "takagg": "Drag & Drop TakaGG gacha Export Excel Datei hier oder klicken Sie hier, zum Auszuwählen",
-        "genshinwishes": "",
-        "wishtally": ""
+        "genshinwishes": "Ziehen Sie die GenshinWishes-Csv-Datei per Drag & Drop hierher oder klicken Sie hier, um sie auszuwählen",
+        "wishtally": "Ziehen Sie die Wish Tally Excel-Datei per Drag-and-drop hierher oder klicken Sie hier, um sie auszuwählen"
       },
       "processing": "Wird verarbeitet...",
       "addedOn": "Eingefügt auf der:",
@@ -445,13 +445,20 @@
       "Die Daten werden in Ihrem Browser gespeichert, so dass sie gelöscht werden, wenn Sie Ihren Browser-Cache löschen! Aktiviere Google Drive Sync bei denn Einstellung, um ihre Daten zu sichern!"
     ],
     "rateon": {
-      "won": "",
-      "lost": "",
-      "guaranteed": ""
+      "won": "50:50 Gewonnen",
+      "lost": "50:50 Verloren",
+      "guaranteed": "Garantiert"
     },
     "backupReminder": {
-      "title": "",
-      "desc": ""
+      "title": "Alle Daten werden in Ihrem Browser gespeichert!",
+      "desc": "Wenn der Browser-Cache versehentlich gelöscht wird, ist Ihr gewünschter Verlauf weg! Sie können die Google Drive-Synchronisierung im Einstellungsmenü aktivieren, um Ihre Daten zu sichern, oder die Daten dort manuell herunterladen."
+    },
+    "rank": {
+      "level": "",
+      "based": "Basierend auf globalen Wish-Statistiken",
+      "current": "Aktueller Median von {banner} ist {median} Pulls",
+      "more": "",
+      "less": ""
     }
   },
   "calculator": {
@@ -460,7 +467,7 @@
     "titleResin": "Harz-Rechner",
     "titleFriendship": "Freundes-Exp-Rechner",
     "titleFate": "Gebets-Preis-Rechner",
-    "titleFateCount": "",
+    "titleFateCount": "Fate-Count-Rechner",
     "goto": "Zu {where} gehen",
     "howToUse": "Wie man ... nutzt",
     "guide": {
@@ -566,17 +573,17 @@
       "calculateFate": "Berechnen Sie, wie viel Geld ich für {value} brauche"
     },
     "fateCount": {
-      "interwinedFate": "",
-      "starglitter": "",
-      "stardust": "",
-      "primogem": "",
-      "genesisCrystal": "",
-      "welkinMoon": "",
-      "dailyCommission": "",
-      "type": "",
-      "amount": "",
-      "totalPrimogem": "",
-      "calculate": ""
+      "interwinedFate": "Verflochtene Schicksale",
+      "starglitter": "Stern-Glitter",
+      "stardust": "Star Staub",
+      "primogem": "Primogem",
+      "genesisCrystal": "Genesis-Kristall",
+      "welkinMoon": "Welkin-Mond (Tage)",
+      "dailyCommission": "Tägliche Provision",
+      "type": "Type",
+      "amount": "Menge",
+      "totalPrimogem": "In Summe Primogems",
+      "calculate": "Berechnung"
     }
   },
   "items": {
@@ -649,7 +656,7 @@
     "synced": "Synchronisiert",
     "waiting": "Warten...",
     "syncing": "Synchronisieren...",
-    "syncStatus": "",
+    "syncStatus": "Synchronisierungsstatus:",
     "lastSync": "Zuletzt synchronisiert:",
     "feedback": "Falls du irgendwelche Fehler oder falsche Daten gefunden hast oder ein Feedback geben willst, meld dich gerne",
     "or": "oder",
@@ -662,10 +669,10 @@
       "reset": "Zurücksetzen"
     },
     "changelog": "Was ist neu?",
-    "exportDescription": "",
-    "exportButton": "",
+    "exportDescription": "Hier können Sie Ihre Paimon. Moe-Daten exportieren und importieren",
+    "exportButton": "Daten exportieren und importieren",
     "export": "Daten exportieren",
-    "download": "",
+    "download": "Daten herunterladen",
     "import": "Daten importieren",
     "selectFile": "JSON-Datei auswählen",
     "exportInfo": "Laden Sie eine Kopie aller Ihrer Daten in Paimon.moe herunter",
@@ -851,7 +858,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
-    "enkanomiya": "",
+    "enkanomiya": "Enkanomiya",
     "setEmpty": "Leer setzen",
     "emptyTime": "Uhrzeit, wenn der Angelplatz geleert wurde:",
     "clear": "Löschen",

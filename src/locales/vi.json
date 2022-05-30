@@ -18,7 +18,7 @@
     "donate": "Ủng hộ"
   },
   "home": {
-    "welcome": "Chào mừng nhà lữ hành đến với Paimon.moe! 👋",
+    "welcome": "Chào mừng đến với Paimon.moe! 👋",
     "message": "Người đồng hành tuyệt vời của bạn! Giúp bạn lập kế hoạch để cày cuốc, bao gồm công cụ tính toán nguyên liệu cần đột phá, theo dõi tiến độ của những việc bạn cần làm và lịch sử cầu nguyện của bạn.",
     "visitor": "{count} nhà lữ hành đã ghé thăm trong 7 ngày qua",
     "banner": {
@@ -122,13 +122,13 @@
     "autoImport": "Tự Động Nhập",
     "helpAndSetting": "Trợ giúp & Cài đặt",
     "helps": "Trợ giúp",
-    "settings": "Cài đặt",
+    "settings": "Thiết Lập",
     "wishesWorth": "Giá trị tất cả Cầu nguyện",
     "lifetimePulls": "Tổng Số Lần Cầu Nguyện",
     "guarantee": "Chắc chắn nhận ở lần {pity}",
     "name": "Vật Phẩm",
     "time": "Thời Gian",
-    "pity": "Bảo Hiểm",
+    "pity": "Đảm Bảo",
     "welcome": "Chào mừng đến với Lịch Sử Cầu Nguyện của Paimon.moe! Bạn nên bắt đầu bằng cách nhập thông tin vào bằng Tự Động Nhập.",
     "welcomeStart1": "Để bắt đầu, ấn",
     "welcomeStart2": "nút ở bên trên",
@@ -165,7 +165,7 @@
       "import": "Nhập",
       "close": "Đóng",
       "invalidLink": "Đường liên kết không hợp lệ, vui lòng kiểm tra và thử lại",
-      "errorApi": "Lỗi từ API của MiHoYo, vui lòng thử lại sau!",
+      "errorApi": "API của HoYoverse trả về mã lỗi, vui lòng thử lại sau!",
       "errorExpired": "Link đã hết hạn, hãy thử lại!",
       "timeout": "Kết nối đã hết hạn, vui lòng chờ và thử lại sau",
       "differentAccount": "Lịch sử cầu nguyện này thuộc về một tài khoản khác, hãy chuyển tài khoản ở trong phần Cài Đặt và thử lại!",
@@ -187,7 +187,7 @@
         "Lưu ý là link Phản Hồi cũ giờ không còn hoạt động nữa, hãy làm theo các phương thức mới dưới đây!"
       ],
       "faqs": {
-        "title": "Nhập Lịch Sử Cầu Nguyện FAQ",
+        "title": "Câu hỏi Thường gặp về Nhập Lịch Sử Cầu Nguyện",
         "q1": "Nó hoạt động như thế nào?",
         "a1": "Lịch sử cầu nguyện của Genshin Impact đơn giản là một trang web, bạn có thể truy cập nó bằng cách mở URL của trang web. Một key tạm thời sẽ được tạo ra khi bạn mở Lịch sử cầu nguyện hoặc trang phản hồi, và chúng tôi sẽ tự động dùng MiHoYo API để lấy lịch sử cầu nguyện của bạn.",
         "q2": "Nó có an toàn không? Tôi có thể bị khóa tài khoản không?",
@@ -197,9 +197,9 @@
           "Paimon.moe chưa bao giờ lưu thông tin cá nhân như tài khoản của bạn (kể cả UID hoặc biệt danh), nên đáp án là không. Dự án này là một nguồn mở",
           "; Chúng tôi không muốn danh tiếng bị ảnh hưởng xấu bởi việc hack vào tài khoản người chơi khác."
         ],
-        "q4": "Này, tôi kiểm tra yêu cầu và một số thứ, nhưng tại sao nó lại yêu cầu đến tên miền của paimon.moe chứ không phải MiHoYo API?",
+        "q4": "Tôi kiểm tra các yêu cầu gửi đi và một số thứ khác rồi, nhưng tại sao nó lại gửi yêu cầu đến tên miền của paimon.moe chứ không phải API của HoYoverse?",
         "a4": [
-          "Paimon.moe không thể yêu cầu trực tiếp từ MiHoYo API vì",
+          "Paimon.moe không thể gửi yêu cầu trực tiếp lên API của HoYoverse được do",
           ", vì vậy yêu cầu được chuyển hướng đến một proxy CORS đơn giản để làm cho nó hoạt động. Bạn có thể xem code",
           "tại đây"
         ],
@@ -213,7 +213,7 @@
         "q6": "Tại sao tôi đã làm như hướng dẫn nhưng lại gặp phải lỗi API?",
         "a6": "Hãy chắc chắn rằng bạn đã copy đủ văn bản (ấn giữ và chọn Select All nếu bạn sử dụng điện thoại); có lẽ bạn đã copy thiếu một số văn bản cần thiết để paimon.moe có thể nhập chính xác.",
         "q7": "Paimon.moe không hiển thị tất cả lịch sử cầu nguyện của tôi!?",
-        "a7": "Lịch sử cầu nguyện trên 6 tháng sẽ biến mất hoàn toàn từ server của Mihoyo, nên nếu như bạn không sao lưu dữ liệu trước 6 tháng, nó đã biến mất hoàn toàn"
+        "a7": "Lịch sử cầu nguyện lâu hơn 6 tháng sẽ biến mất hoàn toàn từ máy chủ của HoYoverse, nên nếu như bạn không có bản sao lưu nào thì giờ nó đã mất rồi!"
       },
       "logLocation": {
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
@@ -222,20 +222,20 @@
       "guide": {
         "video": "Video hướng dẫn",
         "pc": [
-          "Mở Paimon Menu [ESC]",
+          "Mở Giao Diện Paimon [ESC]",
           "Ấn vào Phản Hồi",
           "Đợi nó load và sẽ có một trang web được mở từ trình duyệt bạn đang dùng",
-          "Sao chép & dán đường liên kết vào hộp văn bản bên dưới",
-          "Hãy dán đường liên kết vào đây... https://webstatic..."
+          "Sao chép & dán link vào hộp văn bản bên dưới",
+          "Dán link vào đây... https://webstatic..."
         ],
         "pc2": [
           "Mở Genshin Impact trên PC này (nếu bạn dùng nhiều tài khoản thì hãy khởi động lại game)",
           "Sau đó mở Lịch Sử Cầu Nguyện trong game và đợi tải trang",
           "Nhấn START trên bàn phím, sau đó tìm kiếm \"Powershell\"",
-          "Chọn Windows Powershell, sau đó sao chép đoạn mã dưới đây vào Powershell",
+          "Chọn Windows Powershell, sau đó sao chép đoạn script dưới đây vào Powershell",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
-          "Bạn có thể xem qua đoạn mã này",
+          "Bạn có thể xem qua đoạn script này",
           "tại đây",
           "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
           "Nhấn ENTER, sau đó máy sẽ tự động sao chép một đường link cho bạn",
@@ -254,24 +254,24 @@
         "android": [
           "Mở Cầu Nguyện (trong game)",
           "Ấn vào Lịch Sử",
-          "Đợi nó load",
-          "Tắt Wi-Fi và dữ liệu di động",
+          "Đợi tải trang",
+          "Tắt Wi-Fi và dữ liệu di động của bạn",
           "Sau đó ấn tải lại ở góc trên cùng bên phải",
-          "Trang web sẽ hiển thị error và hiện cho bạn văn bản với font chữ màu đen",
+          "Trang sẽ báo lỗi và hiện cho bạn một đoạn văn bản với phông chữ màu đen",
           "Ấn giữ văn bản và ấn chọn tất cả, sau đó sao chép văn bản đó (Đừng copy một phần của văn bản)",
-          "Mở Wifi và dữ liệu di động",
+          "Bật Wi-Fi hoặc dữ liệu di động của bạn",
           "Dán văn bản vào hộp văn bản bên dưới",
           "Dán văn bán ở đây... Webpage not available..."
         ],
         "ios": [
-          "Mở Paimon Menu",
+          "Mở Giao Diện Paimon",
           "Ấn Phản Hồi",
-          "Đợi nó load và sẽ có trang phản hồi mở ra",
+          "Đợi tải trang và trang phản hồi sẽ hiện lên",
           "Ấn Các vấn đề trong game",
           "Chọn Chế Độ Nhiều Người Chơi",
-          "Sẽ có một đường liên kết ở dưới cùng của câu trả lời; ấn vào nó",
-          "Sẽ có một trình duyệt được mở. Sao chép và dán đường liên kết vào bên dưới",
-          "Hãy dán đường liên kết vào đây... https://genshin.mihoyo..."
+          "Sẽ có một link ở phần dưới cùng của câu trả lời; ấn vào đó",
+          "Trình duyệt sẽ được bật lên. Sao chép và dán đường link xuống dưới đây",
+          "Dán link vào đây... https://genshin.mihoyo..."
         ],
         "ios2": [
           "Tải Stream trên App Store",
@@ -286,32 +286,32 @@
           "Đợi tải trang",
           "Trở về ứng dụng Stream > Stop Sniffing",
           "Chọn Sniff History > Chọn một yêu cầu có kết thúc là .json (link bắt đầu bằng https://hk4e-api-os.mihoyo.com/)",
-          "Chọn mục Request, sau đó copy link đó và dán xuống dưới đây",
+          "Chọn mục Request, sau đó sao chép link đó và dán xuống dưới đây",
           "Dán link vào đây... https://hk4e-api-os.mihoyo.com...",
           "Nếu bạn gặp bất kỳ vấn đề gì, xem hướng dẫn xử lý lỗi",
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
-          "",
+          "Nếu các bước dưới đây không hoạt động, bạn có thể liên kết tài khoản PS của bạn với tài khoản HoYoverse rồi sau đó làm theo hướng dẫn của pc/mobile",
+          "Bạn chỉ có thể dùng trình nhập này nếu trong game của bạn có thư đi kèm với mã QR để mở trang sự kiện web",
           "Mở Genshin Impact trên PlayStation của bạn",
-          "Mở mail sự kiện có mã QR",
+          "Mở thư sự kiện có chứa mã QR",
           "Quét mã QR bằng điện thoại của bạn",
-          "Sao chép đường link, và dán vào bên dưới",
-          "Dán đường link ở đây...",
+          "Sao chép link và dán xuống dưới đây",
           "Dán link vào đây..."
         ],
         "pclocal": [
-          "Nếu bạn cảm thấy không thoải mái khi nhập link, bạn có thể dùng tính năng này để lấy lịch sử cầu nguyện trực tiếp từ máy tính. Dòng lệnh dưới đây sẽ truy cập file log trên máy bạn để lấy link lịch sử cầu nguyện.",
+          "Nếu bạn cảm thấy không thoải mái khi nhập link, bạn có thể dùng tùy chọn này để lấy lịch sử cầu nguyện trong nội bộ máy tính của bạn. Đoạn script này sẽ truy cập tập tin log trên máy bạn để lấy link url sử cầu nguyện.",
           "Bấm Start rồi gõ Powershell trong thanh tìm kiếm",
-          "Mở Windows Powershell rồi nhập mã lệnh dưới đây",
+          "Mở Windows Powershell, sau đó sao chép & dán đoạn script dưới đây vào Powershell",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
-          "Bạn có thể xem script",
-          "ở đây",
+          "Bạn có thể xem đoạn script",
+          "tại đây",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
           "Ấn enter để chạy script, sau đó làm theo hướng dẫn được hiển thị trên màn hình",
-          "Sau đó, dán kết quá của script ở phần nhập bên dưới",
-          "Dán kết quả ở đây...",
-          "Tính năng này vẫn đang trong giai đoạn beta, hãy sao lưu một bản sao trước, bằng cách vào Trợ giúp & Cài đặt sau đó ấn Xuất ra Excel."
+          "Sau đó, dán kết quả của script xuống phần nhập dưới đây",
+          "Dán kết quả tại đây...",
+          "Tính năng này vẫn đang trong giai đoạn BETA! Hãy tạo một bản sao trước bằng cách vào phần Thiếp Lập rồi chọn Xuất sang Excel."
         ]
       }
     },
@@ -350,7 +350,7 @@
     "help": {
       "title": "Số Lần Cầu Nguyện Hỗ Trợ & Cài Đặt",
       "exportTitle": "Xuất & Nhập Lịch Sử Cầu Nguyện",
-      "exportMessage": "Bạn có thể xuất lịch sử cầu nguyenj thành file excel ở đây. Bạn cũng có thể nhập file excel đã xuất từ paimon.moe hoặc TakaGG Gacha Export.",
+      "exportMessage": "Bạn có thể xuất lịch sử cầu nguyện thành tập tin excel tại đây. Bạn cũng có thể nhập tập tin excel đã xuất từ paimon.moe hoặc TakaGG Gacha Export.",
       "export": "Xuất sang Excel",
       "exporting": "Đang xuất...",
       "import": "Nhập từ Excel",
@@ -413,7 +413,7 @@
       "roll": "#Lượt",
       "totalThisBanner": "Tổng số lần cầu nguyện của banner",
       "worth": "Giá trí",
-      "loading": "Loading... (Nếu bị kẹt, hãy đổi server ở cài đặt)",
+      "loading": "Đang tải... (Nếu không tải được, hãy đổi server ở cài đặt)",
       "guaranteed": "{rarity}★ tiếp theo chắc chắn sẽ là nhân vật hoặc vũ khí được rate-up",
       "unknown_3_star": "Không rõ"
     },
@@ -440,18 +440,25 @@
       "detail": "Chi tiết"
     },
     "note": [
-      "Lịch sử cầu nguyên chưa được cập nhật tự động, vui lòng nhập lại để cập nhật lịch sử của bạn!",
-      "Paimon.moe chỉ có thể nhập lịch sử cầu nguyện từ 6 tháng gần nhất, vì phần còn lại đã bị xóa khỏi server của miHoYo, nên lượt cầu nguyện cũ của bạn có thể sẽ không hiển thị.",
+      "Lịch sử cầu nguyên không cập nhật tự động, vui lòng Nhập lại để cập nhật lịch sử của bạn!",
+      "Paimon.moe chỉ có thể nhập lịch sử cầu nguyện từ 6 tháng gần nhất do phần còn lại đã bị xóa khỏi máy chủ của HoYoverse, vì thế nên lượt cầu nguyện cũ của bạn có thể sẽ không hiển thị.",
       "Dữ liệu đã được lưu trên trình duyệt của bạn, nên nó sẽ bị xóa nếu bạn xóa cache của trình duyệt! Hãy bật Google Drive sync trong setting để sao lưu dữ liệu của bạn!"
     ],
     "rateon": {
-      "won": "",
-      "lost": "",
-      "guaranteed": ""
+      "won": "Thắng 50:50",
+      "lost": "Thua 50:50",
+      "guaranteed": "Đã có bảo hiểm"
     },
     "backupReminder": {
-      "title": "",
-      "desc": ""
+      "title": "Toàn bộ dữ liệu được lưu trên trình duyệt của bạn!",
+      "desc": "Do vậy nên nếu cache trình duyệt vô tình bị xóa thì lịch sử cầu nguyện của bạn cũng sẽ bị mất! Bạn có thể bật đồng bộ Google Drive trong Cài Đặt để sao lưu dữ liệu của bạn, hoặc tải về dữ liệu theo cách thủ công ở đó."
+    },
+    "rank": {
+      "level": "",
+      "based": "Dựa trên Lượt Cầu Nguyện Toàn Cầu",
+      "current": "Lượt cầu nguyện trung bình của banner {banner} là {median} lần",
+      "more": "",
+      "less": ""
     }
   },
   "calculator": {
@@ -460,7 +467,7 @@
     "titleResin": "Công Cụ Tính Số Nhựa",
     "titleFriendship": "Công cụ tính Exp Yêu Thích",
     "titleFate": "Tính giá tiền của Mối Duyên",
-    "titleFateCount": "",
+    "titleFateCount": "Bộ đếm tính Mối Duyên",
     "goto": "Đi đến {where}",
     "howToUse": "Hướng dẫn sử dụng",
     "guide": {
@@ -566,17 +573,17 @@
       "calculateFate": "Tính bao nhiêu tiền bạn cần cho {value}"
     },
     "fateCount": {
-      "interwinedFate": "",
-      "starglitter": "",
-      "stardust": "",
-      "primogem": "",
-      "genesisCrystal": "",
-      "welkinMoon": "",
-      "dailyCommission": "",
-      "type": "",
-      "amount": "",
-      "totalPrimogem": "",
-      "calculate": ""
+      "interwinedFate": "Mối Duyên Vương Vấn",
+      "starglitter": "Tinh Huy",
+      "stardust": "Tinh Trần",
+      "primogem": "Nguyên Thạch",
+      "genesisCrystal": "Đá Sáng Thế",
+      "welkinMoon": "Không Nguyệt Chúc Phúc (Ngày)",
+      "dailyCommission": "Ủy Thác Mỗi Ngày",
+      "type": "Loại",
+      "amount": "SL",
+      "totalPrimogem": "Tổng Nguyên Thạch",
+      "calculate": "Tính"
     }
   },
   "items": {
@@ -851,7 +858,7 @@
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
-    "enkanomiya": "",
+    "enkanomiya": "Enkanomiya",
     "setEmpty": "Đã hết cá",
     "emptyTime": "Thời gian vị trí này hết cá:",
     "clear": "Xóa",
