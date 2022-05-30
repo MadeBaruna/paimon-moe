@@ -155,7 +155,7 @@
       "reCalculating": "กำลังคำนวณค่า pity อีกครั้ง...",
       "processing": "กำลังประมวลผล",
       "banner": "Banner",
-      "page": "หน้า",
+      "page": "หน้า {page}",
       "parsing": "กำลังอ่านค่า...",
       "save": "บันทึก",
       "cancel": "ยกเลิก",

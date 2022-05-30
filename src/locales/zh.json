@@ -155,7 +155,7 @@
       "reCalculating": "重新计算保底...",
       "processing": "处理中",
       "banner": "祈愿池",
-      "page": "页",
+      "page": "第 {page} 页",
       "parsing": "解析中...",
       "save": "保存",
       "cancel": "取消",

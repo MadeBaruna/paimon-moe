@@ -155,7 +155,7 @@
       "reCalculating": "Menghitung pity...",
       "processing": "Memproses",
       "banner": "Banner",
-      "page": "Halaman",
+      "page": "Halaman {page}",
       "parsing": "Membaca...",
       "save": "Simpan",
       "cancel": "Batal",
