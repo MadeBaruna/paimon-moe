@@ -155,7 +155,7 @@
       "reCalculating": "天井カウントを再計算中...",
       "processing": "処理中",
       "banner": "祈願",
-      "page": "ページ",
+      "page": "ページ {page}",
       "parsing": "解析中...",
       "save": "保存",
       "cancel": "キャンセル",

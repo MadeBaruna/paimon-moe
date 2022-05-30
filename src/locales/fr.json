@@ -155,7 +155,7 @@
       "reCalculating": "Recalcul de la pity...",
       "processing": "Traitement de la",
       "banner": "Bannière",
-      "page": "Page",
+      "page": "Page {page}",
       "parsing": "Analyse...",
       "save": "Sauvegarder",
       "cancel": "Annuler",
