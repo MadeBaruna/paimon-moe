@@ -708,5 +708,22 @@ export const banners = {
       featured: ['mistsplitter_reforged', 'the_unforged'],
       featuredRare: ['favonius_sword', 'the_bell', 'favonius_lance', 'favonius_codex', 'favonius_warbow'],
     },
+    {
+      name: 'Epitome Invocation',
+      image: 29,
+      start: '2022-05-31 06:00:00',
+      end: '2022-06-21 17:59:59',
+      shortName: 'Aqua',
+      color: '#eae5e1',
+      featured: ['aqua_simulacra', 'primordial_jade_winged-spear'],
+      featuredRare: [
+        'lithic_spear',
+        'sacrificial_sword',
+        'favonius_greatsword',
+        'eye_of_perception',
+        'sacrificial_bow',
+      ],
+      timezoneDependent: true,
+    },
   ],
 };
