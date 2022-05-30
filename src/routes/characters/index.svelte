@@ -13,6 +13,8 @@
   import Button from '../../components/Button.svelte';
   import Ad from '../../components/Ad.svelte';
 
+  import CharacterGridItem from './_characterGridItem.svelte';
+
   const sortOptions = [
     { label: $t('characters.name'), value: 'name' },
     { label: $t('characters.element'), value: 'element' },
@@ -57,9 +59,9 @@
       switch (sortBy) {
         case 'name':
           if (sortOrder) {
-            return a[1].name.localeCompare(b[1].name);
+            return $t(a[1].name).localeCompare($t(b[1].name));
           } else {
-            return b[1].name.localeCompare(a[1].name);
+            return $t(b[1].name).localeCompare($t(a[1].name));
           }
         case 'element':
           if (sortOrder) {
@@ -258,13 +260,6 @@
     } catch (error) {}
   }
 
-  function getNameStyle(name) {
-    if (name.length > 11) {
-      return 'font-size: 12px; line-height: 1; word-spacing: 200px; padding-bottom: 3px;';
-    }
-    return '';
-  }
-
   onMount(async () => {
     await getConstellation();
   });
@@ -433,46 +428,7 @@
         </div>
         <div class="px-4 md:pl-6 md:pr-4 flex flex-wrap max-w-screen-xl mt-2">
           {#each chars as [id, char] (id)}
-            <a
-              href="/characters/{id}"
-              class="m-2 cell relative cursor-pointer transition duration-100 hover:opacity-100 hover:shadow-xl rounded-xl {!showConstellation ||
-              constellation[id]
-                ? ''
-                : 'opacity-50'}"
-            >
-              <div
-                class="w-full rounded-t-xl bg-opacity-50 overflow-hidden {char.rarity === 5
-                  ? 'bg-legendary-from'
-                  : 'bg-rare-from'}"
-              >
-                <img
-                  class="w-full h-full"
-                  width="106"
-                  height="106"
-                  src={`/images/characters/${id}.png`}
-                  alt={char.name}
-                  loading="lazy"
-                />
-              </div>
-              <div
-                class="absolute top-0 right-0 bg-black bg-opacity-75 rounded-full flex items-center shadow-md"
-                style="padding: 4px; margin: -10px;"
-              >
-                {#if constellation[id]}
-                  <span class="mx-1 text-white text-xs font-semibold">
-                    C{Math.max(0, constellation[id].default + constellation[id].wish + constellation[id].manual - 1)}
-                  </span>
-                {/if}
-                <img class="w-4 h-4" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />
-              </div>
-              <div class="relative overflow-hidden bg-item rounded-b-xl" style="height: 29px">
-                <div class="w-full  overflow-hidden absolute bottom-0">
-                  <p class="text-white p-1 text-center text-sm" style={getNameStyle($t(char.name))}>
-                    {$t(char.name)}
-                  </p>
-                </div>
-              </div>
-            </a>
+            <CharacterGridItem {id} {char} {showConstellation} constellation={constellation[id]} name={$t(char.name)} />
           {/each}
         </div>
         {#if showConstellation}
