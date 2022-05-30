@@ -10,7 +10,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const promoted = ['kamisato_ayaka', 'rosaria', 'sayu', 'razor'];
+  const promoted = ['xiao'];
   let current = 0;
 
   async function change(index) {
@@ -47,6 +47,8 @@
             title={weapon.id}
             alt={weapon.id}
             class="bg-background-secondary rounded-md p-1 m-1 w-12 h-12"
+            width="48"
+            height="48"
           />
         {/each}
       </div>
@@ -62,6 +64,8 @@
                 alt={artifact}
                 title={artifact}
                 class="w-12 h-12"
+                width="48"
+                height="48"
               />
             {/each}
           </div>
@@ -72,15 +76,36 @@
       <p class="text-white mb-1">Stats</p>
       <div class="flex flex-wrap -m-1">
         <div class="rounded-md p-1 bg-background-secondary m-1 flex items-center">
-          <img src="/images/artifacts/adventurer_sands.png" alt="SANDS" title="SANDS" class="w-8 h-8 mr-1" />
+          <img
+            src="/images/artifacts/adventurer_sands.png"
+            alt="SANDS"
+            title="SANDS"
+            class="w-8 h-8 mr-1"
+            width="32"
+            height="32"
+          />
           <p class="text-white text-sm">{build.mainStats.sands}</p>
         </div>
         <div class="rounded-md p-1 bg-background-secondary m-1 flex items-center">
-          <img src="/images/artifacts/adventurer_goblet.png" alt="GOBLET" title="GOBLET" class="w-8 h-8 mr-1" />
+          <img
+            src="/images/artifacts/adventurer_goblet.png"
+            alt="GOBLET"
+            title="GOBLET"
+            class="w-8 h-8 mr-1"
+            width="32"
+            height="32"
+          />
           <p class="text-white text-sm">{build.mainStats.goblet}</p>
         </div>
         <div class="rounded-md p-1 bg-background-secondary m-1 flex items-center">
-          <img src="/images/artifacts/adventurer_circlet.png" alt="CIRCLET" title="CIRCLET" class="w-8 h-8 mr-1" />
+          <img
+            src="/images/artifacts/adventurer_circlet.png"
+            alt="CIRCLET"
+            title="CIRCLET"
+            class="w-8 h-8 mr-1"
+            width="32"
+            height="32"
+          />
           <p class="text-white text-sm">{build.mainStats.circlet}</p>
         </div>
       </div>

@@ -82,6 +82,8 @@
                   src="/images/characters/{char}.png"
                   alt={char}
                   title={char}
+                  width="40"
+                  height="40"
                 />
               </a>
             {/each}

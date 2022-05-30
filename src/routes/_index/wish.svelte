@@ -67,6 +67,8 @@
             ? `/images/weapons/${latestPull.id}.png`
             : '/images/wish.png'}
           alt={latestPull.id}
+          width="64"
+          height="64"
         />
       </div>
       <table class="text-white">

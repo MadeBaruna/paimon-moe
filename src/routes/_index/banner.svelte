@@ -13,16 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    kamisato_ayaka: {
-      name: 'Ayaka',
+    yelan: {
+      name: 'Yelan',
+      rarity: 'legendary',
+      count: 0,
+      average: '...',
+      percentage: '...',
+    },
+    xiao: {
+      name: 'xiao',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300029;
-  const image = 'ayaka.png';
+  const bannerId = 300030;
+  const image = 'yelanxiao.png';
+  const width = 800;
+  const height = 455;
 
   let loading = true;
   let user = '';
@@ -66,7 +75,7 @@
 
 <div class="bg-item rounded-xl p-4 flex flex-col">
   <div class="relative">
-    <img src="/images/home/{image}" alt="banner" style="min-height: 150px;" />
+    <img src="/images/home/{image}" alt="banner" style="min-height: 150px;" {width} {height} />
     <div class="flex flex-wrap text-white justify-end items-center absolute bottom-0 w-full">
       {#each Object.entries(featured) as [_, item], i}
         <div

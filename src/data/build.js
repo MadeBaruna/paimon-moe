@@ -3125,7 +3125,7 @@ export const builds = {
             id: 'halberd',
           },
         ],
-        artifacts: [['vermillion_hereafter'], ['viridescent_venerer', '+18%_atk_set', '+18%_atk_set']],
+        artifacts: [['vermillion_hereafter'], ['viridescent_venerer', '+18%_atk_set']],
         mainStats: {
           sands: 'ATK%',
           goblet: 'Anemo DMG / ATK%',
