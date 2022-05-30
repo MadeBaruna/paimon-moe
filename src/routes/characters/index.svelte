@@ -43,9 +43,16 @@
     catalyst: true,
     bow: true,
   };
+  let rarityFilter = {
+    4: true,
+    5: true,
+  };
+  let firstClickElement = true;
+  let firstClickWeapon = true;
+  let firstClicRarity = true;
 
   $: chars = Object.entries(characters)
-    .filter((e) => elementFilter[e[1].element.id] && weaponFilter[e[1].weapon.id])
+    .filter((e) => elementFilter[e[1].element.id] && weaponFilter[e[1].weapon.id] && rarityFilter[e[1].rarity])
     .sort((a, b) => {
       switch (sortBy) {
         case 'name':
@@ -122,11 +129,47 @@
   }
 
   function toggleElement(element) {
+    if (firstClickElement) {
+      firstClickElement = false;
+      elementFilter = {
+        pyro: false,
+        hydro: false,
+        anemo: false,
+        electro: false,
+        cryo: false,
+        dendro: false,
+        geo: false,
+      };
+    }
+
     elementFilter[element] = !elementFilter[element];
   }
 
   function toggleWeapon(weapon) {
+    if (firstClickWeapon) {
+      firstClickWeapon = false;
+      weaponFilter = {
+        sword: false,
+        claymore: false,
+        polearm: false,
+        catalyst: false,
+        bow: false,
+      };
+    }
+
     weaponFilter[weapon] = !weaponFilter[weapon];
+  }
+
+  function toggleRarity(rarity) {
+    if (firstClicRarity) {
+      firstClicRarity = false;
+      rarityFilter = {
+        4: false,
+        5: false,
+      };
+    }
+
+    rarityFilter[rarity] = !rarityFilter[rarity];
   }
 
   async function processWishes() {
@@ -213,6 +256,13 @@
     try {
       window.reloadAdSlots();
     } catch (error) {}
+  }
+
+  function getNameStyle(name) {
+    if (name.length > 11) {
+      return 'font-size: 12px; line-height: 1; word-spacing: 200px; padding-bottom: 3px;';
+    }
+    return '';
   }
 
   onMount(async () => {
@@ -360,6 +410,24 @@
               >
                 <img src="/images/weapons/bow.png" alt="bow" class="w-8 h-8" style="min-width: 2rem;" />
               </button>
+              <button
+                on:click={() => toggleRarity(5)}
+                style="line-height: 0.9;"
+                class="lg:ml-2 rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-4xl text-legendary-from {rarityFilter[5]
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                ★
+              </button>
+              <button
+                on:click={() => toggleRarity(4)}
+                style="line-height: 0.9;"
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-4xl text-rare-from {rarityFilter[4]
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                ★
+              </button>
             </div>
           </div>
         </div>
@@ -399,7 +467,7 @@
               </div>
               <div class="relative overflow-hidden bg-item rounded-b-xl" style="height: 29px">
                 <div class="w-full  overflow-hidden absolute bottom-0">
-                  <p class="text-white p-1 text-center text-sm">
+                  <p class="text-white p-1 text-center text-sm" style={getNameStyle($t(char.name))}>
                     {$t(char.name)}
                   </p>
                 </div>
