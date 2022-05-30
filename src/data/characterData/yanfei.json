@@ -759,9 +759,9 @@
       "Low/High Plunge DMG"
     ],
     "skillStatsLabels": [
-      "{0:p}",
-      "{0:p}",
-      "{0:p}",
+      "{0:1p}",
+      "{0:1p}",
+      "{0:1p}",
       "{0:p}/{1:p}/{2:p}/{3:p}/{4:p}",
       "{0:1f}",
       "{0:1p} Per Seal",

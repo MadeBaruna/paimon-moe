@@ -411,7 +411,7 @@
     },
     {
       "name": "Cloudburst",
-      "description": "Increases the Level of <span style=\"color: #FFD780FF;\">Spirit Blade: Cloud-parting Star</span> by 3.\\nMaximum upgrade level is 15."
+      "description": "Increases the Level of <span style=\"color: #FFD780FF;\">Spirit Blade: Cloud-Parting Star</span> by 3.\\nMaximum upgrade level is 15."
     },
     {
       "name": "Frozen Skies",
@@ -423,7 +423,7 @@
     },
     {
       "name": "Rally of Four Blades",
-      "description": "<span style=\"color: #FFD780FF;\">Spirit Blade: Cloud-parting Star</span> deals 15% more DMG to opponents with a lower percentage of their Max HP remaining than Chongyun.\\nThis skill will also summon 1 additional spirit blade."
+      "description": "<span style=\"color: #FFD780FF;\">Spirit Blade: Cloud-Parting Star</span> deals 15% more DMG to opponents with a lower percentage of their Max HP remaining than Chongyun.\\nThis skill will also summon 1 additional spirit blade."
     }
   ],
   "passives": [
@@ -599,12 +599,12 @@
   },
   "attack": {
     "name": "Normal Attack: Demonbane",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\\nAt end of the sequence, perform a more powerful slash. \\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\\nAt the end of the sequence, perform a more powerful slash. \\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
       "3-Hit DMG",
-      "4-hit DMG",
+      "4-Hit DMG",
       "Charged Attack Spinning DMG",
       "Charged Attack Final DMG",
       "Charged Attack Stamina Cost",

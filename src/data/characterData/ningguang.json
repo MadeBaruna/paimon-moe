@@ -410,7 +410,7 @@
       "description": "When <span style=\"color: #FFD780FF;\">Jade Screen</span> is shattered, its CD will reset.\\nCan occur once every 6s."
     },
     {
-      "name": "Majesty be the Array of Stars",
+      "name": "Majesty Be the Array of Stars",
       "description": "Increases the Level of <span style=\"color: #FFD780FF;\">Starshatter</span> by 3.\\nMaximum upgrade level is 15."
     },
     {
@@ -418,11 +418,11 @@
       "description": "<span style=\"color: #FFD780FF;\">Jade Screen</span> increases nearby characters' Elemental RES by 10%."
     },
     {
-      "name": "Invincible be the Jade Screen",
+      "name": "Invincible Be the Jade Screen",
       "description": "Increases the Level of <span style=\"color: #FFD780FF;\">Jade Screen</span> by 3.\\nMaximum upgrade level is 15."
     },
     {
-      "name": "Grandeur be the Seven Stars",
+      "name": "Grandeur Be the Seven Stars",
       "description": "When <span style=\"color: #FFD780FF;\">Starshatter</span> is used, Ningguang gains 7 Star Jades."
     }
   ],
@@ -437,7 +437,7 @@
     },
     {
       "name": "Trove of Marvelous Treasures",
-      "description": "Displays the location of nearby <span style=\"color: #FFD780FF;\">ore veins</span> (Iron Ore, White Iron Ore, Crystal Ore, Magical Crystal Ore, and Starsilver) on the mini-map."
+      "description": "Displays the location of nearby <span style=\"color: #FFD780FF;\">ore veins used in forging</span> on the mini-map."
     }
   ],
   "burst": {

@@ -433,7 +433,7 @@
     },
     {
       "name": "Nice and Clean",
-      "description": "Every 4 Normal or Charged Attack hits will decrease the CD of <span style=\"color: #FFD780FF;\">Breastplate</span> by 1s.\\nHitting multiple opponents with a single attack is only counted as 1 hit."
+      "description": "Noelle will decrease the CD of <span style=\"color: #FFD780FF;\">Breastplate</span> by 1s for every 4 Normal or Charged Attack hits she scores on opponents.\\nOne hit may be counted every 0.1s."
     },
     {
       "name": "Maid's Knighthood",
@@ -746,12 +746,12 @@
   },
   "attack": {
     "name": "Normal Attack: Favonius Bladework - Maid",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\\nAt end of the sequence, perform a more powerful slash. \\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\\nAt the end of the sequence, perform a more powerful slash. \\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
       "3-Hit DMG",
-      "4-hit DMG",
+      "4-Hit DMG",
       "Charged Attack Spinning DMG",
       "Charged Attack Final DMG",
       "Charged Attack Stamina Cost",

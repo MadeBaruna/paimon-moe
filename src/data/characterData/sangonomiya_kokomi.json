@@ -423,13 +423,13 @@
     },
     {
       "name": "Sango Isshin",
-      "description": "While donning the Ceremonial Garment created by <span style=\"color: #FFD780FF;\">Nereid's Ascension</span>, Sangonomiya Kokomi gains a 40% <span style=\"color: #80C0FFFF;\">Hydro DMG Bonus</span> for 4s after her Normal and Charged Attacks heal a character with 80% or more HP."
+      "description": "While donning the Ceremonial Garment created by <span style=\"color: #FFD780FF;\">Nereid's Ascension</span>, Sangonomiya Kokomi gains a 40% <span style=\"color: #80C0FFFF;\">Hydro DMG Bonus</span> for 4s when her Normal and Charged Attacks heal, or would heal, any party member with 80% or more HP."
     }
   ],
   "passives": [
     {
       "name": "Tamanooya's Casket",
-      "description": "If Sangonomiya Kokomi's own Bake-Kurage are on the field when she uses <span style=\"color: #FFD780FF;\">Nereid's Ascension</span>, the Bake-Kurage's duration will be refreshed."
+      "description": "If Sangonomiya Kokomi's own Bake-Kurage is on the field when she uses <span style=\"color: #FFD780FF;\">Nereid's Ascension</span>, the Bake-Kurage's duration will be refreshed."
     },
     {
       "name": "Song of Pearls",
@@ -446,7 +446,7 @@
   ],
   "burst": {
     "name": "Nereid's Ascension",
-    "description": "The might of Watatsumi descends, dealing <span style=\"color: #80C0FFFF;\">Hydro DMG</span> to surrounding opponents, before robing Kokomi in a Ceremonial Garment made from the flowing waters of Sangonomiya.\\n\\n<span style=\"color: #FFD780FF;\">Ceremonial Garment</span>\\n·Sangonomiya Kokomi's Normal Attack, Charged Attack and Bake-Kurage DMG are increased based on her Max HP.\\n·When her Normal and Charged Attacks hit opponents, Kokomi will restore HP for all nearby party members, and the amount restored is based on her Max HP.\\n·Increases Sangonomiya Kokomi's resistance to interruption and allows her to move on the water's surface.\\n\\nThese effects will be cleared once Sangonomiya Kokomi leaves the field.\\n\\n<i>Clear light coalesces into robes around Her Excellency, Sangonomiya Kokomi, reflecting her magnificent form.</i>",
+    "description": "Summons the might of Watatsumi, dealing <span style=\"color: #80C0FFFF;\">Hydro DMG</span> to surrounding opponents, before robing Kokomi in a Ceremonial Garment made from the flowing waters of Sangonomiya.\\n\\n<span style=\"color: #FFD780FF;\">Ceremonial Garment</span>\\n·Sangonomiya Kokomi's Normal Attack, Charged Attack and Bake-Kurage DMG are increased based on her Max HP.\\n·When her Normal and Charged Attacks hit opponents, Kokomi will restore HP for all nearby party members, and the amount restored is based on her Max HP.\\n·Increases Sangonomiya Kokomi's resistance to interruption and allows her to walk on the water's surface.\\n\\nThese effects will be cleared once Sangonomiya Kokomi leaves the field.\\n\\n<i>Clear light coalesces into robes around Her Excellency, Sangonomiya Kokomi, reflecting her magnificent form.</i>",
     "skillLabels": [
       "Skill DMG",
       "Normal Attack DMG Bonus",
@@ -1231,7 +1231,7 @@
   },
   "elementalSkill": {
     "name": "Kurage's Oath",
-    "description": "Summons a \"bake-kurage\" created from water that can heal her allies.\\nUsing this skill will apply the <span style=\"color: #80C0FFFF;\">Wet</span> status to Sangonomiya Kokomi.\\n\\n<span style=\"color: #FFD780FF;\">Bake-Kurage</span>\\nDeals <span style=\"color: #80C0FFFF;\">Hydro DMG</span> to surrounding opponents and heal nearby active characters at fixed intervals. This healing is based on Kokomi's Max HP.\\n\\n<i>Kokomi needs timely \"refreshment\" in order to maintain optimal work efficiency</i>.",
+    "description": "Summons a \"Bake-Kurage\" created from water that can heal her allies.\\nUsing this skill will apply the <span style=\"color: #80C0FFFF;\">Wet</span> status to Sangonomiya Kokomi.\\n\\n<span style=\"color: #FFD780FF;\">Bake-Kurage</span>\\nDeals <span style=\"color: #80C0FFFF;\">Hydro DMG</span> to surrounding opponents and heals nearby active characters at fixed intervals. This healing is based on Kokomi's Max HP.\\n\\n<i>Kokomi needs timely \"refreshment\" in order to maintain optimal work efficiency</i>.",
     "skillLabels": [
       "Regeneration",
       "Ripple DMG",

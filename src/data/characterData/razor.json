@@ -442,7 +442,7 @@
   ],
   "burst": {
     "name": "Lightning Fang",
-    "description": "Summons the Wolf Within which deals <span style=\"color: #FFACFFFF;\">Electro DMG</span> to all nearby opponents. This clears all of Razor's Electro Sigils, which will be converted into elemental energy for him.\\nThe Wolf Within will fight alongside Razor for the skill's duration.\\n\\n<span style=\"color: #FFD780FF;\">The Wolf Within</span>\\n·Strikes alongside Razor's normal attacks, dealing <span style=\"color: #FFACFFFF;\">Electro DMG</span>.\\n·Raises Razor's ATK SPD and <span style=\"color: #FFACFFFF;\">Electro RES</span>.\\n·Causes Razor to be immune to DMG inflicted by the <span style=\"color: #FFACFFFF;\">Electro-Charged</span> status.\\n·Disables Razor's Charged Attacks.\\n·Increases Razor's resistance to interruption.\\n\\nThese effects end when Razor leaves the battlefield.\\nWhen Razor leaves the field, a maximum of 10 Energy will be returned to him based off the duration remaining on this skill.\\n\\n<i>The wolf has awoken. The hunt is on.</i>",
+    "description": "Summons the Wolf Within, which deals <span style=\"color: #FFACFFFF;\">Electro DMG</span> to all nearby opponents. This clears all of Razor's Electro Sigils, which will be converted into Elemental Energy for him.\\nThe Wolf Within will fight alongside Razor for the skill's duration.\\n\\n<span style=\"color: #FFD780FF;\">The Wolf Within</span>\\n·Strikes alongside Razor's normal attacks, dealing <span style=\"color: #FFACFFFF;\">Electro DMG</span>.\\n·Raises Razor's ATK SPD and <span style=\"color: #FFACFFFF;\">Electro RES</span>.\\n·Causes Razor to be immune to DMG inflicted by the <span style=\"color: #FFACFFFF;\">Electro-Charged</span> status.\\n·Disables Razor's Charged Attacks.\\n·Increases Razor's resistance to interruption.\\n\\nThese effects end when Razor leaves the battlefield.\\nWhen Razor leaves the field, a maximum of 10 Energy will be returned to him based off the duration remaining on this skill.\\n\\n<i>The wolf has awoken. The hunt is on.</i>",
     "skillLabels": [
       "Elemental Burst DMG",
       "Soul Companion DMG",
@@ -795,12 +795,12 @@
   },
   "attack": {
     "name": "Normal Attack: Steel Fang",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\\nAt end of the sequence, perform a more powerful slash. \\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\\nAt the end of the sequence, perform a more powerful slash. \\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
-      "3-hit DMG",
-      "4-hit DMG",
+      "3-Hit DMG",
+      "4-Hit DMG",
       "Charged Attack Spinning DMG",
       "Charged Attack Final DMG",
       "Charged Attack Stamina Cost",
@@ -1310,7 +1310,7 @@
   },
   "elementalSkill": {
     "name": "Claw and Thunder",
-    "description": "Hunts his prey using the techniques taught to him by his master and his Lupical.\\n\\n<span style=\"color: #FFD780FF;\">Press</span>\\nSwings the Thunder Wolf Claw, dealing <span style=\"color: #FFACFFFF;\">Electro DMG</span> to opponents in front of Razor.\\nUpon striking an opponent, Razor will gain an Electro Sigil, which increases his Energy Recharge rate.\\nRazor can have up to 3 Electro Sigils simultaneously, and gaining a new Electro Sigil refreshes their duration.\\n\\n<span style=\"color: #FFD780FF;\">Hold</span>\\nGathers Electro energy to unleash a lightning storm over a small AoE, causing massive <span style=\"color: #FFACFFFF;\">Electro DMG</span>, and clears all of Razor's Electro Sigils.\\nEach Electro Sigil cleared in this manner will be converted into Energy for Razor.\\n\\n<i>In the moment when lightning strikes, you can sometimes glimpse the look of a predator sizing up his prey deep within Razor's eyes.</i>",
+    "description": "Hunts his prey using the techniques taught to him by his master and his lupical.\\n\\n<span style=\"color: #FFD780FF;\">Press</span>\\nSwings the Thunder Wolf Claw, dealing <span style=\"color: #FFACFFFF;\">Electro DMG</span> to opponents in front of Razor.\\nUpon striking an opponent, Razor will gain an Electro Sigil, which increases his Energy Recharge rate.\\nRazor can have up to 3 Electro Sigils simultaneously, and gaining a new Electro Sigil refreshes their duration.\\n\\n<span style=\"color: #FFD780FF;\">Hold</span>\\nGathers Electro energy to unleash a lightning storm over a small AoE, causing massive <span style=\"color: #FFACFFFF;\">Electro DMG</span>, and clears all of Razor's Electro Sigils.\\nEach Electro Sigil cleared in this manner will be converted into Energy for Razor.\\n\\n<i>In the moment when lightning strikes, you can sometimes glimpse the look of a predator sizing up his prey deep within Razor's eyes.</i>",
     "skillLabels": [
       "Press Skill DMG",
       "Hold Skill DMG",

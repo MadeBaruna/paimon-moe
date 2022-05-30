@@ -1276,7 +1276,7 @@
   },
   "elementalSkill": {
     "name": "Guoba Attack",
-    "description": "Summons Guoba the Panda. Guoba continuously breathes fire at opponents, dealing <span style=\"color: #FF9999FF;\">AoE Pyro DMG</span>.\\n\\n<i>Guoba loves to eat spicy food. Problem is, his stomach can't handle something this spicy.</i>",
+    "description": "Summons Guoba, who will continuously breathe fire at opponents, dealing <span style=\"color: #FF9999FF;\">AoE Pyro DMG</span>.\\n\\n<i>Guoba loves to eat spicy food. Problem is, his stomach can't handle something this spicy.</i>",
     "skillLabels": [
       "Flame DMG",
       "CD"

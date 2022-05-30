@@ -442,7 +442,7 @@
   ],
   "burst": {
     "name": "Dawn",
-    "description": "Releases intense flames to knock nearby opponents back, dealing <span style=\"color: #FF9999FF;\">Pyro DMG</span>. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive <span style=\"color: #FF9999FF;\">Pyro DMG</span> to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of <span style=\"color: #FF9999FF;\">AoE Pyro DMG</span>.\\nThe searing flames that run down his blade cause it to be infused with <span style=\"color: #FF9999FF;\">Pyro</span>.\\n\\n<i>The only reason to walk in the darkness is to light it up. Behold, that fleeing light in the dead of night is the herald of the coming dawn.</i>",
+    "description": "Releases intense flames to knock back nearby opponents, dealing <span style=\"color: #FF9999FF;\">Pyro DMG</span>. The flames then converge into the weapon, summoning a Phoenix that flies forward and deals massive <span style=\"color: #FF9999FF;\">Pyro DMG</span> to all opponents in its path. The Phoenix explodes upon reaching its destination, causing a large amount of <span style=\"color: #FF9999FF;\">AoE Pyro DMG</span>.\\nThe searing flames that run down his blade cause it to be infused with <span style=\"color: #FF9999FF;\">Pyro</span>.\\n\\n<i>The only reason to walk in the darkness is to light it up. Behold, that fleeing light in the dead of night is the herald of the coming dawn.</i>",
     "skillLabels": [
       "Slashing DMG",
       "DoT",
@@ -746,12 +746,12 @@
   },
   "attack": {
     "name": "Normal Attack: Tempered Sword",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous slashes.\\nAt end of the sequence, perform a more powerful slash.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous slashes.\\nAt the end of the sequence, perform a more powerful slash.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
       "3-Hit DMG",
-      "4-hit DMG",
+      "4-Hit DMG",
       "Charged Attack Spinning DMG",
       "Charged Attack Final DMG",
       "Charged Attack Stamina Cost",
@@ -1261,11 +1261,11 @@
   },
   "elementalSkill": {
     "name": "Searing Onslaught",
-    "description": "Performs a forward slash that deals <span style=\"color: #FF9999FF;\">Pyro DMG</span>.\\n\\nThis skill can be used 3 times consecutively. Enters CD if not cast again within a short period.\\n\\n<i>The slashes represent the values that Diluc holds dear: one for justice, one for courage, and one for duty.</i>",
+    "description": "Performs a forward slash that deals <span style=\"color: #FF9999FF;\">Pyro DMG</span>.\\n\\nThis skill can be consecutively used 3 times. Enters CD if not cast again within a short period.\\n\\n<i>The slashes represent the values that Diluc holds dear: one for justice, one for courage, and one for duty.</i>",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
-      "3-hit DMG",
+      "3-Hit DMG",
       "CD"
     ],
     "skillStatsLabels": [

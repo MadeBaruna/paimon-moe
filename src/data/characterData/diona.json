@@ -418,7 +418,7 @@
       "description": "Within the radius of <span style=\"color: #FFD780FF;\">Signature Mix</span>, Diona's charge time for aimed shots is reduced by 60%"
     },
     {
-      "name": "Double Shot, On The Rocks",
+      "name": "Double Shot, on the Rocks",
       "description": "Increases the Level of <span style=\"color: #FFD780FF;\">Icy Paws</span> by 3.\\nMaximum upgrade level is 15."
     },
     {
@@ -1238,7 +1238,7 @@
     "skillStatsLabels": [
       "{0:1p} per Paw",
       "{0:1p} Max HP+{1:i}",
-      "{0:1f}s per Claw",
+      "{0:1f}s per Paw",
       "{0:1f}s",
       "{0:1f}s"
     ],

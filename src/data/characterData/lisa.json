@@ -1065,7 +1065,7 @@
   },
   "elementalSkill": {
     "name": "Violet Arc",
-    "description": "Channels the power of lightning to sweep bothersome matters away.\\n\\n<span style=\"color: #FFD780FF;\">Press</span>\\nReleases a homing Lightning Orb.\\nOn hit, it deals <span style=\"color: #FFACFFFF;\">Electro DMG</span>, and applies a stack of the Conductive status (Max 3 stacks) to opponents in a small AoE.\\n\\n<span style=\"color: #FFD780FF;\">Hold</span>\\nAfter an extended casting time, calls down lightning from the heavens, dealing massive <span style=\"color: #FFACFFFF;\">Electro DMG</span> to all nearby opponents.\\nDeals great amounts of extra damage to opponents based on the number of Conductive stacks applied to them, and clears their Conductive status.\\n\\n<i>Electro Purple is the raiment of the Witch of Purple Rose.</i>",
+    "description": "Channels the power of lightning to sweep bothersome matters away.\\n\\n<span style=\"color: #FFD780FF;\">Press</span>\\nReleases a homing Lightning Orb.\\nOn hit, it deals <span style=\"color: #FFACFFFF;\">Electro DMG</span> and applies a stack of the Conductive status (max 3 stacks) to opponents in a small AoE.\\n\\n<span style=\"color: #FFD780FF;\">Hold</span>\\nAfter an extended casting time, calls down lightning from the heavens, dealing massive <span style=\"color: #FFACFFFF;\">Electro DMG</span> to all nearby opponents.\\nDeals great amounts of extra damage to opponents based on the number of Conductive stacks applied to them, and clears their Conductive status.\\n\\n<i>Electro Purple is the raiment of the Witch of Purple Rose.</i>",
     "skillLabels": [
       "Press DMG",
       "Press CD",

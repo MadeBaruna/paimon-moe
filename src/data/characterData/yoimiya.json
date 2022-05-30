@@ -1,6 +1,6 @@
 {
   "id": "yoimiya",
-  "description": "Owner of Naganohara Fireworks. Known as \"Queen of the Summer Festival,\" she excels in her craft of creating fireworks that symbolize people's hopes and dreams.",
+  "description": "Owner of Naganohara Fireworks. Known as the \"Queen of the Summer Festival,\" she excels in her craft of creating fireworks that symbolize people's hopes and dreams.",
   "weapon": "bow",
   "rarity": "legendary",
   "hp": [
@@ -423,7 +423,7 @@
     },
     {
       "name": "Naganohara Meteor Swarm",
-      "description": "During <span style=\"color: #FFD780FF;\">Niwabi Fire-Dance</span>, Yoimiya's Normal Attacks have a 50% chance of firing an extra Kindling Arrow that deals 60% of its original DMG. This DMG is considered Normal Attack DMG."
+      "description": "During <span style=\"color: #FFD780FF;\">Niwabi Fire-Dance</span>, Yoimiya's Normal Attacks have a 50% chance of firing an extra Blazing Arrow that deals 60% of its original DMG. This DMG is considered Normal Attack DMG."
     }
   ],
   "passives": [

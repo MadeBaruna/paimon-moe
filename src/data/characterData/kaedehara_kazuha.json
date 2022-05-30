@@ -407,7 +407,7 @@
     },
     {
       "name": "Yamaarashi Tailwind",
-      "description": "The Autumn Whirlwind field created by <span style=\"color: #FFD780FF;\">Kazuha Slash</span> has the following effects:\\n· Increases Kaedehara Kazuha's own Elemental Mastery by 200.\\n· Increases the Elemental Mastery of characters within the field by 200.\\n\\nThe Elemental Mastery-increasing effects of this Constellation do not stack."
+      "description": "The Autumn Whirlwind field created by <span style=\"color: #FFD780FF;\">Kazuha Slash</span> has the following effects:\\n· Increases Kaedehara Kazuha's own Elemental Mastery by 200 for its duration.\\n· Increases the Elemental Mastery of characters within the field by 200.\\n\\nThe Elemental Mastery-increasing effects of this Constellation do not stack."
     },
     {
       "name": "Maple Monogatari",
@@ -423,17 +423,17 @@
     },
     {
       "name": "Crimson Momiji",
-      "description": "After using <span style=\"color: #FFD780FF;\">Chihayaburu</span> or <span style=\"color: #FFD780FF;\">Kazuha Slash</span>, Kaedehara Kazuha gains an <span style=\"color: #80FFD7FF;\">Anemo Infusion</span> for 5s. Additionally, each point of Elemental Mastery will increase the DMG dealt by Kaedehara Kazuha's Normal, Charged, and Plunging Attack by 0.2%."
+      "description": "After using <span style=\"color: #FFD780FF;\">Chihayaburu</span> or <span style=\"color: #FFD780FF;\">Kazuha Slash</span>, Kaedehara Kazuha gains an <span style=\"color: #80FFD7FF;\">Anemo Infusion</span> for 5s. Additionally, each point of Elemental Mastery will increase the DMG dealt by Kaedehara Kazuha's Normal, Charged, and Plunging Attacks by 0.2%."
     }
   ],
   "passives": [
     {
       "name": "Soumon Swordsmanship",
-      "description": "If <span style=\"color: #FFD780FF;\">Chihayaburu</span> comes into contact with <span style=\"color: #80C0FFFF;\">Hydro</span>/<span style=\"color: #FF9999FF;\">Pyro</span>/<span style=\"color: #99FFFFFF;\">Cryo</span>/<span style=\"color: #FFACFFFF;\">Electro</span> when cast, <span style=\"color: #FFD780FF;\">Chihayaburu</span> will absorb that element and if Plunging Attack: Midare Ranzan is used before the effect expires, it will deal an additional 200% ATK of the absorbed elemental type as DMG. This will be considered Plunging Attack DMG.\\nElemental Absorption may only occur once per use of <span style=\"color: #FFD780FF;\">Chihayaburu</span>."
+      "description": "If <span style=\"color: #FFD780FF;\">Chihayaburu</span> comes into contact with <span style=\"color: #80C0FFFF;\">Hydro</span>/<span style=\"color: #FF9999FF;\">Pyro</span>/<span style=\"color: #99FFFFFF;\">Cryo</span>/<span style=\"color: #FFACFFFF;\">Electro</span> when cast, this <span style=\"color: #FFD780FF;\">Chihayaburu</span> will absorb that element and if Plunging Attack: Midare Ranzan is used before the effect expires, it will deal an additional 200% ATK of the absorbed elemental type as DMG. This will be considered Plunging Attack DMG.\\nElemental Absorption may only occur once per use of <span style=\"color: #FFD780FF;\">Chihayaburu</span>."
     },
     {
       "name": "Poetics of Fuubutsu",
-      "description": "Upon triggering a Swirl reaction, Kaedehara Kazuha will grant teammates a 0.04% Elemental DMG Bonus to their corresponding Element for every point of Elemental Mastery he has for 8s. Bonuses for different elements obtained through this method can co-exist."
+      "description": "Upon triggering a Swirl reaction, Kaedehara Kazuha will grant all party members a 0.04% Elemental DMG Bonus to the element absorbed by Swirl for every point of Elemental Mastery he has for 8s. Bonuses for different elements obtained through this method can co-exist."
     },
     {
       "name": "Cloud Strider",
@@ -1247,7 +1247,7 @@
       "Press Skill DMG",
       "Press CD",
       "Hold Skill DMG",
-      "CD (hold)"
+      "Hold CD"
     ],
     "skillStatsLabels": [
       "{0:p}",

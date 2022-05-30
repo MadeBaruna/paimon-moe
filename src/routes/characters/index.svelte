@@ -377,7 +377,14 @@
                   ? 'bg-legendary-from'
                   : 'bg-rare-from'}"
               >
-                <img class="w-full h-full" src={`/images/characters/${id}.png`} alt={char.name} />
+                <img
+                  class="w-full h-full"
+                  width="106"
+                  height="106"
+                  src={`/images/characters/${id}.png`}
+                  alt={char.name}
+                  loading="lazy"
+                />
               </div>
               <div
                 class="absolute top-0 right-0 bg-black bg-opacity-75 rounded-full flex items-center shadow-md"

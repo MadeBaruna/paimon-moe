@@ -403,7 +403,7 @@
   "constellations": [
     {
       "name": "Dew-Drinker",
-      "description": "Taking DMG from a Charge Level 2 Frostflake Arrow or Frostflake Arrow Bloom decreases opponents' <span style=\"color: #99FFFFFF;\">Cryo RES</span> by 15% for 6s.\\nA hit regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hit the target."
+      "description": "Charge Level 2 Frostflake Arrows or Frostflake Arrow Blooms decrease opponents' <span style=\"color: #99FFFFFF;\">Cryo RES</span> by 15% for 6s upon hit.\\nA hit also regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hits the target."
     },
     {
       "name": "The Auspicious",
@@ -432,7 +432,7 @@
       "description": "After firing a Frostflake Arrow, the CRIT Rate of subsequent Frostflake Arrows and their resulting bloom effects is increased by 20% for 5s."
     },
     {
-      "name": "Harmony between Heaven and Earth",
+      "name": "Harmony Between Heaven and Earth",
       "description": "<span style=\"color: #FFD780FF;\">Celestial Shower</span> grants a 20% <span style=\"color: #99FFFFFF;\">Cryo DMG Bonus</span> to active party members in the AoE."
     },
     {

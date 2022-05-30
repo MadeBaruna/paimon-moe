@@ -415,7 +415,7 @@
     },
     {
       "name": "Alchemania",
-      "description": "Every 7 Normal and Charged Attacks, Sucrose will reduce the CD of <span style=\"color: #FFD780FF;\">Astable Anemohypostasis Creation - 6308</span> by 1-7s."
+      "description": "Sucrose will reduce the CD of <span style=\"color: #FFD780FF;\">Astable Anemohypostasis Creation - 6308</span> by 1-7s for every 7 Normal or Charged Attack hits she scores against opponents.\\nOne hit may be counted every 0.1s."
     },
     {
       "name": "Caution: Standard Flask",

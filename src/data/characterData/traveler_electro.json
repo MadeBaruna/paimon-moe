@@ -423,7 +423,7 @@
     },
     {
       "name": "World-Shaker",
-      "description": "Every 2 Falling Thunder attacks triggered by <span style=\"color: #FFD780FF;\">Bellowing Thunder</span> will increase the DMG dealt by the next Falling Thunder by 100%, and will restore an additional 1 Energy to the current character."
+      "description": "Every 2 Falling Thunder attacks triggered by <span style=\"color: #FFD780FF;\">Bellowing Thunder</span> will greatly increase the DMG dealt by the next Falling Thunder, which will deal 200% of its original DMG and will restore an additional 1 Energy to the current character."
     }
   ],
   "passives": [
@@ -1234,7 +1234,7 @@
     ],
     "skillStatsLabels": [
       "{0:p}",
-      "{0:1f}",
+      "{0:1f} Per Amulet",
       "{0:p}",
       "{0:1f}s",
       "{0:1f}",

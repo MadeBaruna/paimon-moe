@@ -640,6 +640,7 @@
                       ? `/images/weapons/${pull.id}.png`
                       : '/images/wish.png'}
                     alt={pull.name}
+                    loading="lazy"
                   />
                   <span class="h-8 leading-8 pr-4">{$t(pull.name)}</span>
                 </td>

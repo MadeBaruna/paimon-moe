@@ -428,7 +428,7 @@
   ],
   "passives": [
     {
-      "name": "\"The Show Goes On, Even Without An Audience...\"",
+      "name": "\"The Show Goes On, Even Without an Audience...\"",
       "description": "Decreases the number of opponents <span style=\"color: #FFD780FF;\">Sweeping Fervor</span> must hit to trigger each level of shielding.\\n·Shield Level 2: Lead-In requirement reduced to 1 opponent hit.\\n·Shield Level 3: Rave requirement reduced to 2 opponents hit or more."
     },
     {
@@ -697,7 +697,7 @@
   },
   "attack": {
     "name": "Normal Attack: Dance on Fire",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\\nAt end of the sequence, perform a more powerful slash. \\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 4 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous spinning attacks against all nearby opponents.\\nAt the end of the sequence, perform a more powerful slash. \\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

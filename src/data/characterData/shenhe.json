@@ -407,7 +407,7 @@
     },
     {
       "name": "Centered Spirit",
-      "description": "<span style=\"color: #FFD780FF;\">Divine Maiden's Deliverance</span> lasts for 6 seconds longer. Active characters within the skill's field deals 15% increased <span style=\"color: #99FFFFFF;\">Cryo</span> CRIT DMG."
+      "description": "<span style=\"color: #FFD780FF;\">Divine Maiden's Deliverance</span> lasts for 6 seconds longer. Active characters within the skill's field deal 15% increased <span style=\"color: #99FFFFFF;\">Cryo</span> CRIT DMG."
     },
     {
       "name": "Seclusion",
@@ -1223,9 +1223,7 @@
           4.270410060882568
         ]
       ]
-    ],
-    "books": {},
-    "bossItem": "hellfire_butterfly"
+    ]
   },
   "elementalSkill": {
     "name": "Spring Spirit Summoning",
@@ -1608,8 +1606,6 @@
           15
         ]
       ]
-    ],
-    "books": {},
-    "bossItem": "hellfire_butterfly"
+    ]
   }
 }

@@ -407,7 +407,7 @@
     },
     {
       "name": "Steelbreaker",
-      "description": "<span style=\"color: #FFD780FF;\">Secret Art: Musou Shinsetsu</span>'s Musou no Hitotachi and Musou Isshin attacks will ignore 60% of opponents' DEF."
+      "description": "While using Musou no Hitotachi and in the Musou Isshin state applied by <span style=\"color: #FFD780FF;\">Secret Art: Musou Shinsetsu</span>, the Raiden Shogun's attacks ignore 60% of opponents' DEF."
     },
     {
       "name": "Shinkage Bygones",
@@ -434,6 +434,10 @@
     {
       "name": "Enlightened One",
       "description": "Each 1% above 100% Energy Recharge that the Raiden Shogun possesses grants her:\\n·0.6% greater Energy restoration from <span style=\"color: #FFD780FF;\">Musou Isshin</span>\\n·0.4% <span style=\"color: #FFACFFFF;\">Electro DMG Bonus</span>."
+    },
+    {
+      "name": "",
+      "description": ""
     },
     {
       "name": "All-Preserver",

@@ -444,7 +444,7 @@
     "name": "Bane of All Evil",
     "description": "Xiao dons the Yaksha Mask that set gods and demons trembling millennia ago.\\n\\n<span style=\"color: #FFD780FF;\">Yaksha's Mask</span>\\n·Greatly increases Xiao's jumping ability.\\n·Increases his attack AoE and attack DMG.\\n·Converts attack DMG into <span style=\"color: #80FFD7FF;\">Anemo DMG</span>, which cannot be overridden by any other elemental infusion.\\n\\nIn this state, Xiao will continuously lose HP.\\nThe effects of this skill end when Xiao leaves the field.\\n\\n<i>Donning the Mask of the Yaksha, Xiao takes the terrifying, demon-conquering form of the Vigilant Yaksha. But this great power has also brought him great suffering. Some call him \"The Bane of All Evil.\"</i>",
     "skillLabels": [
-      "Normal Attack/Charged Attack/Plunging Attack DMG Bonus",
+      "Normal/Charged/Plunging Attack DMG Bonus",
       "Life Drain",
       "Duration",
       "CD",

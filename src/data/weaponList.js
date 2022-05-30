@@ -7908,4 +7908,122 @@ export const weaponList = {
       },
     ],
   },
+  aqua_simulacra: {
+    name: 'Aqua Simulacra',
+    id: 'aqua_simulacra',
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.bow,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          { item: itemList.luminous_sands_from_guyun, amount: 5 },
+          { item: itemList.gloomy_statuette, amount: 5 },
+          { item: itemList.spectral_husk, amount: 3 },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          { item: itemList.lustrous_stone_from_guyun, amount: 5 },
+          { item: itemList.gloomy_statuette, amount: 18 },
+          { item: itemList.spectral_husk, amount: 12 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.lustrous_stone_from_guyun, amount: 9 },
+          { item: itemList.dark_statuette, amount: 9 },
+          { item: itemList.spectral_heart, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.relic_from_guyun, amount: 5 },
+          { item: itemList.dark_statuette, amount: 18 },
+          { item: itemList.spectral_heart, amount: 14 },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          { item: itemList.relic_from_guyun, amount: 9 },
+          { item: itemList.deathly_statuette, amount: 14 },
+          { item: itemList.spectral_nucleus, amount: 9 },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          { item: itemList.divine_body_from_guyun, amount: 6 },
+          { item: itemList.deathly_statuette, amount: 27 },
+          { item: itemList.spectral_nucleus, amount: 18 },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  fading_twilight: {
+    name: 'Fading Twilight',
+    id: 'fading_twilight',
+    rarity: 4,
+    atk: 44,
+    secondary: 'Energy Recharge',
+    type: weapons.bow,
+    source: 'event exclusive',
+    ascension: [
+      {
+        items: [
+          { item: itemList.grain_of_aerosiderite, amount: 3 },
+          { item: itemList.hunters_sacrificial_knife, amount: 3 },
+          { item: itemList.divining_scroll, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.piece_of_aerosiderite, amount: 3 },
+          { item: itemList.hunters_sacrificial_knife, amount: 12 },
+          { item: itemList.divining_scroll, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.piece_of_aerosiderite, amount: 6 },
+          { item: itemList.agents_sacrificial_knife, amount: 6 },
+          { item: itemList.sealed_scroll, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.bit_of_aerosiderite, amount: 3 },
+          { item: itemList.agents_sacrificial_knife, amount: 12 },
+          { item: itemList.sealed_scroll, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.bit_of_aerosiderite, amount: 6 },
+          { item: itemList.inspectors_sacrificial_knife, amount: 9 },
+          { item: itemList.forbidden_curse_scroll, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.chunk_of_aerosiderite, amount: 4 },
+          { item: itemList.inspectors_sacrificial_knife, amount: 18 },
+          { item: itemList.forbidden_curse_scroll, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };

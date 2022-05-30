@@ -206,6 +206,7 @@
                         class="w-full max-h-full object-contain"
                         src={`/images/items/${itemName}.png`}
                         alt={itemName}
+                        loading="lazy"
                       />
                     </div>
                     <span>{itemGroup[itemName].name}</span>
@@ -223,6 +224,7 @@
                         src={`/images/characters/${char}.png`}
                         alt={char}
                         title={characters[char].name}
+                        loading="lazy"
                       />
                     </a>
                   {/each}
@@ -251,6 +253,7 @@
                         class="w-full max-h-full object-contain"
                         src={`/images/items/${itemName}.png`}
                         alt={itemName}
+                        loading="lazy"
                       />
                     </div>
                     <span class="whitespace-normal text-left w-20">{itemGroup[itemName].name}</span>
@@ -268,6 +271,7 @@
                         src={`/images/weapons/${weapon}.png`}
                         alt={weapon}
                         title={weaponList[weapon].name}
+                        loading="lazy"
                       />
                     </a>
                   {/each}
@@ -303,6 +307,7 @@
                       class="w-full max-h-full object-contain"
                       src={`/images/items/${itemName}.png`}
                       alt={itemName}
+                      loading="lazy"
                     />
                   </div>
                   <span>{itemList[itemName].name}</span>
@@ -320,6 +325,7 @@
                       src={`/images/${type}/${charName}.png`}
                       alt={charName}
                       title={type === 'characters' ? characters[charName].name : weaponList[charName].name}
+                      loading="lazy"
                     />
                   </a>
                 {/each}

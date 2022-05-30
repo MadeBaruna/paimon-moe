@@ -142,7 +142,14 @@
             <a href="/weapons/{weapon.id}" style="display: contents;">
               <tr class="cursor-pointer hover:bg-background">
                 <td class="border-gray-700 border-t py-1 text-center h-12">
-                  <img src="/images/weapons/{weapon.id}.png" alt={weapon.type} class="h-full w-auto inline" />
+                  <img
+                    src="/images/weapons/{weapon.id}.png"
+                    alt={weapon.type}
+                    class="h-full w-auto inline"
+                    width="39"
+                    height="39"
+                    loading="lazy"
+                  />
                 </td>
                 <td class="border-gray-700 border-t py-1 pl-4 pr-2">
                   {weapon.name}

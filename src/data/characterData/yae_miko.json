@@ -1,6 +1,6 @@
 {
   "id": "yae_miko",
-  "description": "Lady Guuji of the Grand Narukami Shrine also serves as the editor-in-chief of Yae Publishing House. Unimaginable intelligence and cunning are hidden under her beautiful appearance.",
+  "description": "Lady Guuji of the Grand Narukami Shrine. Also serves as the editor-in-chief of Yae Publishing House. Unimaginable intelligence and cunning are hidden under her beautiful appearance.",
   "weapon": "catalyst",
   "rarity": "legendary",
   "hp": [
@@ -1012,9 +1012,7 @@
           3.795919895172119
         ]
       ]
-    ],
-    "books": {},
-    "bossItem": "the_meaning_of_aeons"
+    ]
   },
   "elementalSkill": {
     "name": "Yakan Evocation: Sesshou Sakura",
@@ -1318,8 +1316,6 @@
           4
         ]
       ]
-    ],
-    "books": {},
-    "bossItem": "the_meaning_of_aeons"
+    ]
   }
 }

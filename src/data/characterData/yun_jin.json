@@ -1238,9 +1238,7 @@
           4.270410060882568
         ]
       ]
-    ],
-    "books": {},
-    "bossItem": "ashen_heart"
+    ]
   },
   "elementalSkill": {
     "name": "Opening Flourish",
@@ -1510,8 +1508,6 @@
           9
         ]
       ]
-    ],
-    "books": {},
-    "bossItem": "ashen_heart"
+    ]
   }
 }

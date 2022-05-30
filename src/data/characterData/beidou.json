@@ -415,7 +415,7 @@
     },
     {
       "name": "Stunning Revenge",
-      "description": "Within 10s of taking DMG, Beidou's Normal Attacks gain 20% additional <span style=\"color: #FFACFFFF;\">Electro DMG</span>."
+      "description": "Upon being attacked, Beidou's Normal Attacks gain an additional instance of 20% <span style=\"color: #FFACFFFF;\">Electro DMG</span> for 10s."
     },
     {
       "name": "Crimson Tidewalker",
@@ -746,7 +746,7 @@
   },
   "attack": {
     "name": "Normal Attack: Oceanborne",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 5 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous slashes.\\nAt end of the sequence, perform a more powerful slash.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerform up to 5 consecutive strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nDrains Stamina over time to perform continuous slashes.\\nAt the end of the sequence, perform a more powerful slash.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

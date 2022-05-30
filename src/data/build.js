@@ -1977,6 +1977,28 @@ export const builds = {
       },
     },
   },
+  yelan: {
+    roles: {
+      'SUB DPS': {
+        recommended: true,
+        weapons: [
+          {
+            id: 'aqua_simulacra',
+          },
+        ],
+        artifacts: [['emblem_of_severed_fate']],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: ['Burst', 'Skill'],
+        tip: '',
+        note: '',
+      },
+    },
+  },
   diona: {
     roles: {
       SUPPORT: {
