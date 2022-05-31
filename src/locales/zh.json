@@ -18,7 +18,7 @@
     "donate": "赞助"
   },
   "home": {
-    "welcome": "欢迎来到 Paimon.moe! 👋",
+    "welcome": "欢迎来到 Paimon.moe！👋",
     "message": "你最好的原神伙伴！帮助你规划材料收集与体力消耗，记录你的游戏进度与祈愿结果。",
     "visitor": "过去七天有 {count} 位访客",
     "banner": {
@@ -454,11 +454,11 @@
       "desc": "也正因此，如果你清空浏览器的缓存，你的祈愿记录也会被一并删除！强烈建议在设置里打开Google Drive备份，或者手动下载数据并备份到个人电脑里。"
     },
     "rank": {
-      "level": "",
+      "level": "你的总抽卡排名",
       "based": "基于全球祈愿统计",
       "current": "当前 {banner} 中位数是 {median} 抽",
-      "more": "",
-      "less": ""
+      "more": "你的抽卡次数多于 {percentage}% 的 Paimon.moe 用户",
+      "less": "你的抽卡次数少于 {percentage}% 的 Paimon.moe 用户"
     }
   },
   "calculator": {

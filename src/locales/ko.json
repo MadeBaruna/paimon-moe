@@ -278,17 +278,17 @@
           "여기",
           "https://apps.apple.com/app/stream/id1312141691",
           "앱을 열고, 시스템 기본 설정에서 VPN을 허용하세요 (설정 > 일반 > VPN)",
-          "",
-          "",
+          "CA 인증서 설치하기 (Stream 앱에서 [Sniff Now] 클릭 > [Install CA] > 팝업 창이 나타나면 [허용] > CA 인증서가 설치됩니다.",
+          "설정 > 일반 > VPN 및 기기 관리 > Stream Generated CA 선택 후 [설치]",
           "원신을 열고 기원 창으로 들어가서, 그 페이지에서 기다리세요",
-          "",
+          "Stream 앱 > [I've trusted] 선택 > [Sniff Now] 버튼",
           "원신으로 돌아가서 뽑기 기록 페이지를 여세요",
           "기다리면 브라우저 화면이 열립니다",
-          "",
-          "",
+          "Stream 앱 > [Stop Sniffing]",
+          "[Sniff History] 클릭 > [.json]으로 끝나는 request 선택 (링크 주소는 https://hk4e-api-os.mihoyo.com/ 로 시작합니다)",
           "요청 창을 클릭하고, 링크를 복사해서 아래에 붙여넣으세요",
           "여기에 링크를 붙여넣으세요... https://hk4e-api-os.mihoyo.com...",
-          "",
+          "시도 중 문제가 발생하면, 문제 해결 가이드를 참조하세요.",
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
@@ -454,11 +454,11 @@
       "desc": "만약 브라우저의 캐시가 지워지게 된다면, 그동안의 기록들이 전부 없어지게 됩니다!\n설정에서 Google Drive 으로 동기화 하거나 수동으로 데이터를 다운로드 받을 수 있습니다."
     },
     "rank": {
-      "level": "",
+      "level": "총 기원 횟수 순위",
       "based": "글로벌 기원 스탯 기반",
       "current": "현재 {banner}의 중앙값은 {median} 뽑기입니다",
-      "more": "",
-      "less": ""
+      "more": "{percentage}%의 paimon.moe 사용자들보다 더 많이 뽑았습니다.",
+      "less": "{percentage}%의 paimon.moe 사용자들보다 더 적게 뽑았습니다."
     }
   },
   "calculator": {
