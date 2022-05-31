@@ -376,12 +376,13 @@ export const banners = {
       color: '#FFFBF7',
       featured: ['kamisato_ayaka'],
       featuredRare: ['sayu', 'razor', 'rosaria'],
+      timezoneDependentEnd: true,
     },
     {
       name: 'Discerner of Enigmas',
       image: 1,
       shortName: 'Yelan',
-      start: '2022-05-31 06:00:00',
+      start: '2022-05-31 09:00:00',
       end: '2022-06-21 17:59:59',
       color: '#7de6fd',
       featured: ['yelan', 'xiao'],
@@ -711,7 +712,7 @@ export const banners = {
     {
       name: 'Epitome Invocation',
       image: 29,
-      start: '2022-05-31 06:00:00',
+      start: '2022-05-31 09:00:00',
       end: '2022-06-21 17:59:59',
       shortName: 'Aqua',
       color: '#eae5e1',

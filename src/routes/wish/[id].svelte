@@ -26,12 +26,9 @@
   import { getAccountPrefix } from '../../stores/account';
   import { fromRemote, readSave } from '../../stores/saveManager';
   import { getTimeOffset, server } from '../../stores/server';
-  import { pushToast } from '../../stores/toast';
 
   Chart.defaults.global.defaultFontColor = '#cbd5e0';
   Chart.defaults.global.defaultFontFamily = 'Poppins';
-
-  let numberFormat = Intl.NumberFormat();
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -73,31 +70,34 @@
 
   let showRarity = [true, true, true];
 
-  selectedBanners = banners[bannerType].map((e) => {
-    // banner data based on Asia time
-    const diff = e.timezoneDependent === true ? 8 - getTimeOffset() : 0;
+  function processBannersTime() {
+    selectedBanners = banners[bannerType].map((e) => {
+      // banner data based on Asia time
+      const diff = e.timezoneDependent === true ? 8 - getTimeOffset() : 0;
+      const diffEnd = e.timezoneDependentEnd === true ? 8 - getTimeOffset() : 0;
 
-    const id = `${e.name} ${e.image}`;
-    const dual = bannersDual[id] !== undefined;
-    const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
-    const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss');
-    const image = `/images/banners/${id}.png`;
+      const id = `${e.name} ${e.image}`;
+      const dual = bannersDual[id] !== undefined;
+      const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
+      const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss').subtract(diffEnd, 'hour');
+      const image = `/images/banners/${id}.png`;
 
-    return {
-      ...e,
-      id,
-      dual,
-      start: start.unix(),
-      end: end.unix(),
-      image,
-      total: 0,
-      legendary: [],
-      rare: {
-        character: [],
-        weapon: [],
-      },
-    };
-  });
+      return {
+        ...e,
+        id,
+        dual,
+        start: start.unix(),
+        end: end.unix(),
+        image,
+        total: 0,
+        legendary: [],
+        rare: {
+          character: [],
+          weapon: [],
+        },
+      };
+    });
+  }
 
   function openDetail(banner, isDual) {
     let secondBanner;
@@ -434,6 +434,7 @@
       server.set(serverSave);
     }
 
+    processBannersTime();
     await readLocalData();
 
     isSafari =
