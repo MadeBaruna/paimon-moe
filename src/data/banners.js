@@ -702,7 +702,7 @@ export const banners = {
       name: 'Epitome Invocation',
       image: 28,
       start: '2022-04-19 18:00:00',
-      end: '2022-06-07 14:59:59',
+      end: '2022-05-31 05:59:59',
       shortName: 'Mistsplitter',
       color: '#eae5e1',
       featured: ['mistsplitter_reforged', 'the_unforged'],
