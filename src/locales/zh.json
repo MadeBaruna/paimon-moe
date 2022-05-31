@@ -8,7 +8,7 @@
     "items": "素材道具",
     "achievement": "成就",
     "reminder": "提醒器",
-    "todoList": "Todo 规划",
+    "todoList": "养成规划",
     "timeline": "时间线",
     "furnishing": "摆设",
     "weapons": "武器",
@@ -60,7 +60,7 @@
       "sunday": "周日可以刷所有东西 😁"
     },
     "calculator": {
-      "title": "🧮 计算角色、武器升级所需的材料！所有的计算都可以添加到 养成规划里, 还可以显示你需要多少树脂！",
+      "title": "🧮 计算角色、武器升级所需的材料！所有的计算都可以添加到养成规划里，还可以显示你需要多少树脂！",
       "detail": "计算器"
     },
     "twitter": {
@@ -183,7 +183,7 @@
       "forceUpdateCheck": "强制更新祈愿记录（仅在导入祈愿记录却没有反应时启用）",
       "header": [
         "在这里导入并备份的原神祈愿记录不仅可以保存超过六个月，同时也可以自动分析你的保底和出率！",
-        "您也可以在设置中启用数据备份将您的祈愿记录自动同步到Google Drive",
+        "你也可以在设置中启用数据备份，将你的祈愿记录自动同步到 Google 云端硬盘",
         "2.3版本前的获取祈愿历史链接的方式已不再有效，请按照以下指示的操作获取新的祈愿历史链接！"
       ],
       "faqs": {
@@ -207,7 +207,7 @@
         "a5": [
           "Paimon.moe 不会存储秘钥，只会通过 HTTPS 递交你的 URL 给 CORS 代理以绕过 CORS 限制。若你提交记录到全球祈愿统计中，Paimon.moe 会保存你的 4* 记录，5* 记录，以及 5* 祈愿信息（没有其他个人信息记录！请查阅",
           "隐私政策",
-          "了解更多）。你可以取消勾选提交记录，以禁用提交功能。这样你的所有祈愿记录会保存在你的电脑上（或你的 Google Drive，如果你设置了同步功能）。",
+          "了解更多）。你可以取消勾选提交记录，以禁用提交功能。这样你的所有祈愿记录会保存在你的电脑上（或你的 Google 云端硬盘，如果你设置了同步功能）。",
           "如果你不想通过 URL 传递任何信息，你可以在本地PC使用便捷导入脚本（本地PC选项） "
         ],
         "q6": "我按流程操作了，但提示 API 错误？",
@@ -442,7 +442,7 @@
     "note": [
       "祈愿记录不会自动更新，请手动导入更新祈愿历史。",
       "Paimon.moe 无法获得超过6个月的祈愿历史，因为它已经在 HoYoVerse 服务器上被删除，所以您的部分旧祈愿可能不会显示。",
-      "数据保存在您的浏览器中，如果您清理浏览器缓存，记录会被删除！ 在设置中启用Google Drive 同步，可以备份您的数据！"
+      "数据保存在你的浏览器中，如果你清理浏览器缓存，记录会被删除！ 在设置中启用 Google 云端硬盘同步，可以备份你的数据！"
     ],
     "rateon": {
       "won": "小保底没歪",
@@ -451,7 +451,7 @@
     },
     "backupReminder": {
       "title": "所有的数据都被保存在浏览器缓存里！",
-      "desc": "也正因此，如果你清空浏览器的缓存，你的祈愿记录也会被一并删除！强烈建议在设置里打开Google Drive备份，或者手动下载数据并备份到个人电脑里。"
+      "desc": "也正因此，如果你清空浏览器的缓存，你的祈愿记录也会被一并删除！强烈建议在设置里打开 Google 云端硬盘备份，或者手动下载数据并备份到个人电脑里。"
     },
     "rank": {
       "level": "你的总抽卡排名",
@@ -476,7 +476,7 @@
       "howToCharacter": "如何使用角色升级计算器"
     },
     "weapon": {
-      "calculateAscension": "计算突破材料?",
+      "calculateAscension": "计算突破材料？",
       "selectRarity": "选择武器稀有度",
       "selectWeapon": "选择武器",
       "current": "当前武器等级、经验、突破阶段",
@@ -490,11 +490,11 @@
       "ascensionLevel": "突破阶段",
       "mora": "摩拉（误差 ±40）",
       "expWasted": "溢出经验",
-      "addToTodo": "添加到Todo",
-      "addedToTodo": "已添加到Todo"
+      "addToTodo": "添加到养成规划",
+      "addedToTodo": "已添加到养成规划"
     },
     "character": {
-      "calculateAscension": "计算突破材料?",
+      "calculateAscension": "计算突破材料？",
       "selectCharacter": "选择角色",
       "current": "当前角色等级、经验、突破阶段",
       "inputCurrentLevel": "输入当前角色等级...",
@@ -502,7 +502,7 @@
       "intended": "目标角色等级 & 突破情况",
       "inputIntendedLevel": "输入目标角色等级...",
       "resource": "需要的资源",
-      "calculateTalent": "计算天赋材料?",
+      "calculateTalent": "计算天赋材料？",
       "inputTalentLevel": "输入三个技能当前等级",
       "inputTalentNotice": "如果被命座+3（显示上有变色），请减掉3",
       "inputTalent": [
@@ -516,8 +516,8 @@
       "ascensionLevel": "突破阶段",
       "mora": "摩拉（误差 ±40）",
       "expWasted": "溢出经验",
-      "addToTodo": "添加到Todo",
-      "addedToTodo": "已添加到Todo",
+      "addToTodo": "添加到养成规划",
+      "addedToTodo": "已添加到养成规划",
       "talent": [
         "普攻",
         "战技",
@@ -588,7 +588,7 @@
   },
   "items": {
     "title": "物品列表",
-    "subtitle": "点击图标添加到Todo",
+    "subtitle": "点击图标添加到养成规划",
     "searchCharacter": "搜索角色",
     "searchWeapon": "搜索武器",
     "day": "日期",
@@ -599,7 +599,7 @@
       "amount": "数量",
       "inputAmount": "输入数量...",
       "cancel": "取消",
-      "add": "添加到Todo"
+      "add": "添加到养成规划"
     }
   },
   "days": {
@@ -612,7 +612,7 @@
     "Saturday": "周六"
   },
   "todo": {
-    "title": "素材规划列表",
+    "title": "养成规划",
     "summary": "总结",
     "empty": [
       "没啥要做的 😀",
@@ -639,19 +639,19 @@
   },
   "settings": {
     "version": "数据版本:",
-    "multiple": "有多个账号? 在这里切换，以区分不同的祈愿历史记录和素材规划",
+    "multiple": "有多个账号？在这里切换来区分不同的祈愿历史记录和养成规划",
     "selectAccount": "选择你的账号",
     "reset": "重置",
     "delete": "删除",
     "add": "添加",
     "server": "选择服务器:",
     "drive": [
-      "Paimon.moe 利用 Google 云端硬盘的应用数据文件夹来保存和同步你的祈愿记录和 Todo 列表。",
+      "Paimon.moe 利用 Google 云端硬盘的应用数据文件夹来保存和同步你的祈愿记录和养成规划。",
       "Paimon.moe 只能修改读取由本网站生成的文件."
     ],
-    "driveError": "谷歌网盘API无法加载",
-    "driveSignIn": "登录谷歌网盘",
-    "driveSignOut": "登出谷歌网盘",
+    "driveError": "Google 云端硬盘 API 无法加载",
+    "driveSignIn": "登录 Google 云端硬盘",
+    "driveSignOut": "登出 Google 云端硬盘",
     "driveSignInErrorScope": "云盘登录失败！请重新登录并检查所需要的权限！",
     "synced": "已同步",
     "waiting": "等待中…",
@@ -662,7 +662,7 @@
     "or": "或",
     "thanks": "谢谢😁!",
     "modal": {
-      "notice": "所有Todo和祈愿记录将被删除",
+      "notice": "所有养成规划和祈愿记录将被删除",
       "backup": "你可以通过导出Excel备份你的抽卡记录!",
       "cancel": "取消",
       "delete": "删除",
@@ -719,12 +719,12 @@
     ]
   },
   "sync": {
-    "message": "你的本地记录与谷歌网盘的记录冲突了!",
-    "googleDriveData": "谷歌网盘数据",
+    "message": "你的本地记录与 Google 云端硬盘的记录冲突了！",
+    "googleDriveData": "Google 云端硬盘数据",
     "localData": "浏览器本地数据",
     "older": "旧",
     "newer": "新",
-    "useGoogleDriveData": "使用谷歌网盘数据",
+    "useGoogleDriveData": "使用 Google 云端硬盘数据",
     "useLocalData": "使用浏览器本地数据",
     "download": "两份都下载",
     "lastModified": "上次修改时间",
