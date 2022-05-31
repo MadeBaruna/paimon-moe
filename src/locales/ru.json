@@ -457,8 +457,8 @@
       "level": "Ваш процент круток",
       "based": "По сравнению с глобальной статистикой",
       "current": "Текущая медиана на {banner}: {median} круток",
-      "more": "У вас круток больше, чем у {percentage}% пользователей paimon.moe",
-      "less": "У вас круток меньше, чем у {percentage}% пользователей paimon.moe"
+      "more": "У вас больше круток, чем у {percentage}% пользователей paimon.moe",
+      "less": "У вас меньше круток, чем у {percentage}% пользователей paimon.moe"
     }
   },
   "calculator": {

@@ -29,7 +29,7 @@
       "percentage": "trên toàn bộ {rarity}",
       "avg": "Số lượt quay trung bình",
       "subtitle": "Được tính toán từ dữ liệu của {user} người dùng paimon.moe",
-      "detail": "Lượt Cầu Nguyện Toàn Cầu"
+      "detail": "Thống Kê Cầu Nguyện"
     },
     "wish": {
       "message": "Hãy nhập lịch sử cầu nguyện của bạn để lưu trữ dữ liệu lâu hơn 6 tháng! Paimon.moe còn tự động đếm bảo hiểm và thống kê lượt cầu nguyện của bạn bằng những biểu đồ siêu đẹp 📊",
@@ -135,7 +135,7 @@
     "manual": "Nếu bạn muốn tự nhập dữ liệu, bạn có thể bật nó ở đây:",
     "manualButton": "Bật Nhập Thủ Công",
     "errorBanner": "Thời gian của Banner không trùng khớp! Hãy chỉnh server ở trang cài đặt. Vẫn không hoạt động à? Hãy để lại tin nhắn trên Discord 😅",
-    "globalWishTally": "Lượt Cầu Nguyện Toàn Cầu",
+    "globalWishTally": "Thống Kê Cầu Nguyện",
     "pityTooltip": [
       "Bảo Hiểm {rarity} hiện tại",
       "{count} lần nữa sẽ đảm bảo nhận {rarity}"
@@ -173,8 +173,8 @@
       "noNewData": "Không phát hiện lượt cầu nguyện mới, hãy đợi khoảng 1 giờ để dữ liệu cầu nguyện được cập nhật!",
       "success": "Nhập dữ liệu thành công 😀!",
       "server": "Hãy chọn server:",
-      "wishTallyCheck": "Chia sẽ thông tin cầu nguyện của bạn cho Lượt Cầu Nguyện Toàn Cầu",
-      "wishTally": "Chúng tôi đang làm thống kê về lượt cầu nguyện toàn cầu! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp và tính toán pity trung bình của người dùng paimon.moe.",
+      "wishTallyCheck": "Chia sẽ thông tin cầu nguyện của bạn cho Thống Kê Cầu Nguyện",
+      "wishTally": "Chúng tôi đang thực hiện một bản Thống Kê Cầu Nguyện! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp và tính toán bảo hiểm trung bình của người dùng paimon.moe.",
       "wishTallyCollected": [
         "Những thông tin sẽ được thu thập:",
         "và",
@@ -205,7 +205,7 @@
         ],
         "q5": "Thế paimon.moe lưu trữ key tạm thời hay lịch sử cầu nguyện của tôi?",
         "a5": [
-          "Paimon.moe sẽ không bao giờ lưu trữ khóa của bạn, và sử dụng HTTPS để chuyển URL của bạn đến một proxy CORS để cho CORS hoạt động. Paimon.moe sẽ lưu bảo hiểm của vật phẩm 4* và 5*, và thông tin cầu nguyện vật phẩm 5* nếu bạn gửi lượt cầu nguyện của bạn cho lượt cầu nguyện toàn cầu (không lưu lại bất kỳ thông tin cá nhân nào cả! hãy kiểm tra",
+          "Paimon.moe sẽ không bao giờ lưu trữ khóa của bạn, và sử dụng HTTPS để chuyển URL của bạn đến một proxy CORS để cho CORS hoạt động. Paimon.moe sẽ lưu bảo hiểm của vật phẩm 4* và 5*, và thông tin của vật phẩm cầu nguyện 5* nếu bạn gửi lượt cầu nguyện của bạn cho Thống Kê Cầu Nguyện (không lưu lại bất kỳ thông tin cá nhân nào cả! hãy kiểm tra",
           "Chính sách bảo mật",
           "để có thêm thông tin). Bạn có thể bỏ chọn gửi thông tin đến lượt cầu nguyện toàn cầu để vô hiệu hóa gửi lượt cầu nguyện. Sau đó tất cả lịch sử cầu nguyện của bạn sẽ lưu trên thiết bị mà bạn đang dùng (hoặc Google Drive của bạn nếu bạn mở chức năng đồng bộ).",
           "Nếu bạn không muốn chia sẻ link của mình, bạn có thể dùng mã lệnh dưới đây để nhập trực tiếp từ dữ liệu trên PC (chọn PC Local) "
@@ -356,7 +356,7 @@
       "import": "Nhập từ Excel",
       "exportFinish": "Xuất hoàn tất, vui lòng đợi trình duyệt của bạn tải xuống file!",
       "wishTallyTitle": "Gửi Thông Tin Cầu Nguyện",
-      "wishTally": "Chúng tôi đang thống kê lượt cầu nguyện toàn cầu! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp lại để tính lượt cầu nguyện trung bình của người dùng paimon.moe.",
+      "wishTally": "Chúng tôi đang thực hiện một bản Thống Kê Cầu Nguyện! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp và tính toán bảo hiểm trung bình của người dùng paimon.moe.",
       "wishTallyCollected": [
         "Những thông tin sẽ được thu thập:",
         "và",
@@ -440,7 +440,7 @@
       "detail": "Chi tiết"
     },
     "note": [
-      "Lịch sử cầu nguyên không cập nhật tự động, vui lòng Nhập lại để cập nhật lịch sử của bạn!",
+      "Lịch sử cầu nguyện không cập nhật tự động, vui lòng Nhập lại để cập nhật lịch sử của bạn!",
       "Paimon.moe chỉ có thể nhập lịch sử cầu nguyện từ 6 tháng gần nhất do phần còn lại đã bị xóa khỏi máy chủ của HoYoverse, vì thế nên lượt cầu nguyện cũ của bạn có thể sẽ không hiển thị.",
       "Dữ liệu đã được lưu trên trình duyệt của bạn, nên nó sẽ bị xóa nếu bạn xóa cache của trình duyệt! Hãy bật Google Drive sync trong setting để sao lưu dữ liệu của bạn!"
     ],
@@ -454,11 +454,11 @@
       "desc": "Do vậy nên nếu cache trình duyệt vô tình bị xóa thì lịch sử cầu nguyện của bạn cũng sẽ bị mất! Bạn có thể bật đồng bộ Google Drive trong Cài Đặt để sao lưu dữ liệu của bạn, hoặc tải về dữ liệu theo cách thủ công ở đó."
     },
     "rank": {
-      "level": "",
-      "based": "Dựa trên Lượt Cầu Nguyện Toàn Cầu",
+      "level": "Thứ Hạng Roll Của Bạn",
+      "based": "Dựa trên Thống Kê Cầu Nguyện",
       "current": "Lượt cầu nguyện trung bình của banner {banner} là {median} lần",
-      "more": "",
-      "less": ""
+      "more": "Bạn đã roll nhiều hơn {percentage}% người dùng paimon.moe",
+      "less": "Bạn đã roll ít hơn {percentage}% người dùng paimon.moe"
     }
   },
   "calculator": {
@@ -705,7 +705,7 @@
       {
         "title": "Bảo Hiểm Cầu Nguyện",
         "content": [
-          "Paimon.moe sẽ lưu số bảo hiểm 4*, số bảo hiểm 5*, và thông tin cầu nguyện 5* (thời gian cầu nguyện, tên vật phẩm, lượt nhận) nếu bạn đồng ý 'Chia sẽ thông tin cầu nguyện của bạn cho Lượt Cầu Nguyện Toàn Cầu' ở Tự Động Nhập Cầu Nguyện hoặc Nhập Cầu Nguyện Thủ Công ở Trợ Giúp & Cài Đặt. Paimon.moe sẽ tổng hợp dữ liệu và dùng để thống kê bảo hiểm trung bình của mỗi banner của người dùng paimon.moe. Bạn có thể kiểm tra ở đây",
+          "Paimon.moe sẽ lưu số bảo hiểm 4*, số bảo hiểm 5*, và thông tin cầu nguyện 5* (thời gian cầu nguyện, tên vật phẩm, lượt nhận) nếu bạn đồng ý \"Chia sẻ thông tin cầu nguyện của bạn cho Thống Kê Cầu Nguyện\" ở Tự Động Nhập Cầu Nguyện hoặc Nhập Cầu Nguyện Thủ Công ở Trợ Giúp & Cài Đặt. Paimon.moe sẽ tổng hợp dữ liệu và dùng để thống kê bảo hiểm trung bình của mỗi banner của người dùng paimon.moe. Bạn có thể kiểm tra tại đây",
           "lượt Cầu Nguyện"
         ]
       }
