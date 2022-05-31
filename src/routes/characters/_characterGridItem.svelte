@@ -71,4 +71,12 @@
     padding-bottom: 3px;
     word-spacing: 200px;
   }
+
+  .cell {
+    width: calc(33.33333% - 1rem);
+
+    @screen md {
+      @apply w-24;
+    }
+  }
 </style>

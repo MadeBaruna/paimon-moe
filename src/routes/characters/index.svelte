@@ -364,7 +364,7 @@
                 <img src="/images/elements/geo.png" alt="geo" class="w-8 h-8" style="min-width: 2rem;" />
               </button>
             </div>
-            <div class="flex items-center justify-center md:justify-start">
+            <div class="flex items-center justify-center md:justify-start flex-wrap">
               <button
                 on:click={() => toggleWeapon('sword')}
                 class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {weaponFilter.sword
@@ -405,24 +405,26 @@
               >
                 <img src="/images/weapons/bow.png" alt="bow" class="w-8 h-8" style="min-width: 2rem;" />
               </button>
-              <button
-                on:click={() => toggleRarity(5)}
-                style="line-height: 0.9;"
-                class="lg:ml-2 rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-4xl text-legendary-from {rarityFilter[5]
-                  ? ''
-                  : 'opacity-25'}"
-              >
-                ★
-              </button>
-              <button
-                on:click={() => toggleRarity(4)}
-                style="line-height: 0.9;"
-                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-4xl text-rare-from {rarityFilter[4]
-                  ? ''
-                  : 'opacity-25'}"
-              >
-                ★
-              </button>
+              <div class="flex">
+                <button
+                  on:click={() => toggleRarity(5)}
+                  style="line-height: 0.9;"
+                  class="lg:ml-2 rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-4xl text-legendary-from {rarityFilter[5]
+                    ? ''
+                    : 'opacity-25'}"
+                >
+                  ★
+                </button>
+                <button
+                  on:click={() => toggleRarity(4)}
+                  style="line-height: 0.9;"
+                  class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none text-4xl text-rare-from {rarityFilter[4]
+                    ? ''
+                    : 'opacity-25'}"
+                >
+                  ★
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -520,14 +522,6 @@
 </div>
 
 <style>
-  .cell {
-    width: calc(33.33333% - 1rem);
-
-    @screen md {
-      @apply w-24;
-    }
-  }
-
   tr.rare:hover {
     background: linear-gradient(
       90deg,
