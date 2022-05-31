@@ -708,6 +708,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['mistsplitter_reforged', 'the_unforged'],
       featuredRare: ['favonius_sword', 'the_bell', 'favonius_lance', 'favonius_codex', 'favonius_warbow'],
+      timezoneDependentEnd: true,
     },
     {
       name: 'Epitome Invocation',
