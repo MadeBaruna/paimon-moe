@@ -4,7 +4,6 @@
   export async function preload() {
     return { data, categories };
   }
-
 </script>
 
 <script>
@@ -127,7 +126,6 @@
       changeLocale(val);
     });
   });
-
 </script>
 
 <svelte:head>
@@ -194,6 +192,7 @@
                 alt=""
                 class="h-16 w-16 image relative"
                 style="min-width: 4rem;"
+                loading="lazy"
               />
             </div>
             <div class="ml-2 flex flex-col">
@@ -262,5 +261,4 @@
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
   }
-
 </style>

@@ -3,7 +3,6 @@
   export async function preload() {
     return { data };
   }
-
 </script>
 
 <script>
@@ -169,7 +168,6 @@
       changeLocale(val);
     });
   });
-
 </script>
 
 <svelte:head>
@@ -314,6 +312,7 @@
                   alt=""
                   class="h-12 w-12 image relative"
                   style="min-width: 3rem;"
+                  loading="lazy"
                 />
               </td>
               <td class="px-4 text-gray-200">{item.name}</td>
@@ -377,5 +376,4 @@
     @apply block absolute top-0 left-0 w-full h-full bg-item;
     content: '';
   }
-
 </style>

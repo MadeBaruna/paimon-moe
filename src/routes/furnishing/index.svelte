@@ -170,6 +170,9 @@
                 src="/images/furnishing/sets/{set.id}.png"
                 alt=""
                 class="w-full image relative object-contain rounded-xl"
+                width="640"
+                height="320"
+                loading="lazy"
               />
               {#if placed[set.id]}
                 <div class="text-green-300 absolute bottom-0 right-0 p-2">
@@ -183,7 +186,14 @@
                 <div class="flex -m-1 py-1">
                   {#each set.characters as char}
                     <div class="relative cursor-pointer" on:click={() => checkCharacter(set.id, char)}>
-                      <img src="/images/characters/{char}.png" class="w-10 h-10 rounded-full m-1" alt={char} />
+                      <img
+                        src="/images/characters/{char}.png"
+                        class="w-10 h-10 rounded-full m-1"
+                        alt={char}
+                        width="40"
+                        height="40"
+                        loading="lazy"
+                      />
                       {#if character[set.id]?.[char]}
                         <div class="text-green-300 absolute bottom-0 right-0">
                           <Icon path={mdiCheckCircleOutline} size={1} />
@@ -202,7 +212,14 @@
                     style="margin: 2px;"
                   >
                     <div class="flex items-center">
-                      <img src="/images/furnishing/{item}.png" class="w-8 h-8" alt={item} />
+                      <img
+                        src="/images/furnishing/{item}.png"
+                        class="w-8 h-8"
+                        alt={item}
+                        loading="lazy"
+                        width="32"
+                        height="32"
+                      />
                       <Icon path={mdiClose} size={0.5} />
                       <span class="inline-block w-2">{amount}</span>
                     </div>
