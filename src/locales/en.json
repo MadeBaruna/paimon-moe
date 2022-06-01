@@ -645,6 +645,8 @@
     "delete": "Delete",
     "add": "Add",
     "server": "Select your server:",
+    "ar": "AR:",
+    "wl": "WL:",
     "drive": [
       "Paimon.moe uses the Application Data Directory on your Google Drive to save and sync your Wish counter and Todo list.",
       "Paimon.moe can only read and write files that this site created."
@@ -661,12 +663,16 @@
     "feedback": "If you found any bugs, wrong data, or any other feedback, please leave a message on",
     "or": "or",
     "thanks": "Thanks😁!",
+    "setMainAccount": "Set As Main Account",
     "modal": {
       "notice": "All Todo and Wish history data will be deleted",
       "backup": "You can backup your wish history first by exporting it to an excel file!",
+      "setMain": "Change main account?",
+      "setMainNotice": "This will change the account:",
       "cancel": "Cancel",
       "delete": "Delete",
-      "reset": "Reset"
+      "reset": "Reset",
+      "continue": "Continue"
     },
     "changelog": "Changelog",
     "exportDescription": "You can export & import your Paimon.moe data here",
@@ -680,7 +686,11 @@
     "importContinue": "Continue",
     "importSuccess": "Import Success! Reloading in 5 seconds...",
     "importFailed": "Import Failed!",
-    "email": "Email:"
+    "email": "Email:",
+    "mainAccountChanged": "Main account changed, reloading in 5 seconds...",
+    "dataDeleted": "Data has been deleted",
+    "dataReset": "Data has been reset",
+    "accountAdded": "Account {accountNumber} added, select it on the account list!"
   },
   "privacypolicy": {
     "title": "Privacy Policy",

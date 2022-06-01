@@ -13,6 +13,7 @@
   import ResetAccountModal from './_resetAccount.svelte';
   import DonateModal from '../../components/DonateModal.svelte';
   import ExportImportModal from './_importExportModal.svelte';
+  import SetMainaccountModal from './_setMainAccount.svelte';
 
   import {
     driveSignedIn,
@@ -108,7 +109,7 @@
         .join(','),
     );
 
-    pushToast(`Account ${accountNumber} added, select it on the account list!`);
+    pushToast($t('settings.accountAdded', { values: { accountNumber } }));
   }
 
   async function selectAccount() {
@@ -166,6 +167,10 @@
       'achievement',
       'collectables-updated',
       'furnishing',
+      'furnishing-inventory',
+      'furnishing-set-placed',
+      'furnishing-set-character',
+      'fishing',
     ];
 
     for (let k of keyWillBeDeleted) {
@@ -184,7 +189,7 @@
       await updateSave('accounts', undefined);
     }
 
-    pushToast('Data deleted');
+    pushToast($t('settings.dataDeleted'));
     closeModal();
   }
 
@@ -202,6 +207,10 @@
       'achievement',
       'collectables-updated',
       'furnishing',
+      'furnishing-inventory',
+      'furnishing-set-placed',
+      'furnishing-set-character',
+      'fishing',
     ];
 
     for (let k of keyWillBeDeleted) {
@@ -211,7 +220,7 @@
     await updateSave(`${prefix}todos`, undefined, true);
     await updateSave(`${prefix}todos`, []);
 
-    pushToast('Data deleted');
+    pushToast($t('settings.dataReset'));
     closeModal();
   }
 
@@ -223,6 +232,46 @@
       accountList.push({ ...acc, label: `${acc.label} ${uid !== null ? `UID:${uid}` : ''}` });
       console.log(prefix, uid);
     }
+  }
+
+  async function setMainAccount() {
+    const prefix = getAccountPrefix();
+    const keyWillBeMoved = [
+      'server',
+      'ar',
+      'wl',
+      'todos',
+      'wish-counter-character-event',
+      'wish-counter-weapon-event',
+      'wish-counter-standard',
+      'wish-counter-beginners',
+      'wish-uid',
+      'characters',
+      'achievement',
+      'collectables-updated',
+      'furnishing',
+      'furnishing-inventory',
+      'furnishing-set-placed',
+      'furnishing-set-character',
+      'fishing',
+    ];
+
+    const temp = {};
+    for (let k of keyWillBeMoved) {
+      temp[k] = await localforage.getItem(k);
+    }
+
+    for (let k of keyWillBeMoved) {
+      const data = await localforage.getItem(`${prefix}${k}`);
+      await localforage.setItem(k, data);
+      await localforage.setItem(`${prefix}${k}`, temp[k]);
+    }
+
+    pushToast($t('settings.mainAccountChanged'));
+    setTimeout(() => {
+      window.location.reload();
+    }, 5000);
+    closeModal();
   }
 
   function openDeleteAccount() {
@@ -277,6 +326,21 @@
     );
   }
 
+  function openChangeMainaccountModal() {
+    openModal(
+      SetMainaccountModal,
+      {
+        account: currentAccount,
+        setMainAccount,
+        cancel: closeModal,
+      },
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '500px' },
+      },
+    );
+  }
+
   $: currentAccount, selectAccount();
   $: selectedServer, updateServer();
   $: arInput, updateAR();
@@ -307,12 +371,15 @@
         options={accountList}
         placeholder={$t('settings.selectAccount')}
       />
-      <div class="flex flex-1 mt-2 md:mt-0">
-        <Button on:click={openResetAccount} className="mr-2 w-24" color="red">{$t('settings.reset')}</Button>
+      <div class="flex flex-1 mt-2 md:mt-0 flex-wrap gap-2">
+        <Button on:click={openResetAccount} color="red">{$t('settings.reset')}</Button>
         {#if currentAccount.value !== 'main'}
-          <Button on:click={openDeleteAccount} className="mr-2 w-24" color="red">{$t('settings.delete')}</Button>
+          <Button on:click={openDeleteAccount} color="red">{$t('settings.delete')}</Button>
         {/if}
-        <Button className="w-24" on:click={addAccount}>{$t('settings.add')}</Button>
+        <Button on:click={addAccount}>{$t('settings.add')}</Button>
+        {#if currentAccount.value !== 'main'}
+          <Button on:click={openChangeMainaccountModal}>{$t('settings.setMainAccount')}</Button>
+        {/if}
       </div>
     </div>
   </div>
@@ -323,11 +390,11 @@
     </div>
     <div class="flex mt-2 md:mt-0">
       <div class="flex flex-col md:flex-row md:items-center w-32 mr-2">
-        <p class="text-white mr-2">AR:</p>
+        <p class="text-white mr-2">{$t('settings.ar')}</p>
         <Input bind:value={arInput} placeholder="AR" type="number" min="1" />
       </div>
       <div class="flex flex-col md:flex-row md:items-center w-32 mr-2">
-        <p class="text-white mr-2">WL:</p>
+        <p class="text-white mr-2">{$t('settings.wl')}</p>
         <Input bind:value={wlInput} placeholder="WL" type="number" min="1" />
       </div>
     </div>
