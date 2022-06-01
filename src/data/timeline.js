@@ -1,17 +1,6 @@
 export const eventsData = [
   [
     {
-      name: 'When Flowers Bloom',
-      pos: '0% 30%',
-      image: 'when_flowers_bloom.jpg',
-      start: '2022-03-25 12:00:00',
-      end: '2022-03-30 23:59:59',
-      color: '#8481da',
-      zoom: '170%',
-      url: 'https://www.hoyolab.com/article/3949309',
-      showOnHome: true,
-    },
-    {
       name: 'Marvelous Merchandise',
       pos: '0% 80%',
       image: 'marvelous_merchandise_event.jpg',
@@ -25,17 +14,6 @@ export const eventsData = [
   ],
   [
     {
-      name: 'Hyakunin Ikki',
-      pos: '0% 70%',
-      image: 'hyakunin_ikki.jpg',
-      start: '2022-03-18 10:00:00',
-      end: '2022-03-28 03:59:59',
-      color: '#dfabbb',
-      zoom: '200%',
-      url: 'https://www.hoyolab.com/article/3643660',
-      showOnHome: true,
-    },
-    {
       name: 'Ley Line Overflow',
       pos: '0% 20%',
       image: 'leyline_overflow.jpg',
@@ -48,28 +26,6 @@ export const eventsData = [
     },
   ],
   [
-    {
-      name: 'Of Drink A-Dreaming',
-      pos: '0% 50%',
-      image: 'of_drink_a_dreaming.jpg',
-      start: '2022-03-10 10:00:00',
-      end: '2022-03-21 03:59:59',
-      color: '#e4d9c5',
-      zoom: '180%',
-      url: 'https://www.hoyolab.com/article/3714058',
-      showOnHome: true,
-    },
-    {
-      name: 'Overflowing Mastery',
-      pos: '0% 50%',
-      image: 'overflowing_mastery.jpg',
-      start: '2022-03-21 04:00:00',
-      end: '2022-03-28 03:59:59',
-      color: '#f5debc',
-      zoom: '200%',
-      url: 'https://www.hoyolab.com/article/3643660',
-      showOnHome: true,
-    },
     {
       name: 'Outside the Canvas, Inside the Lens',
       pos: '0% 100%',
@@ -106,17 +62,6 @@ export const eventsData = [
   ],
   [
     {
-      name: 'Divine Ingenuity',
-      pos: '0% 30%',
-      zoom: '170%',
-      image: 'divine_ingenuity.jpg',
-      start: '2022-03-02 10:00:00',
-      end: '2022-03-21 03:59:59',
-      color: '#aad0e1',
-      url: 'https://www.hoyolab.com/article/3611497',
-      showOnHome: true,
-    },
-    {
       name: 'Hues of the Violet Garden',
       pos: '0% 15%',
       zoom: '200%',
@@ -151,17 +96,6 @@ export const eventsData = [
     },
   ],
   [
-    {
-      name: 'Three Realms Gateway Offering',
-      pos: '0% 0%',
-      zoom: '100%',
-      image: 'three_realms_gateway_offering.jpg',
-      start: '2022-02-17 10:00:00',
-      end: '2022-03-30 06:00:00',
-      color: '#9c9cef',
-      url: 'https://www.hoyolab.com/article/3356118',
-      showOnHome: true,
-    },
     {
       name: 'Act I',
       start: '2022-04-07 10:00:00',
@@ -208,17 +142,6 @@ export const eventsData = [
   ],
   [
     {
-      name: 'Reign of Serenity - Raiden Banner',
-      pos: '40% 15%',
-      zoom: '200%',
-      image: 'reign_of_serenity_2.jpg',
-      start: '2022-03-08 18:00:00',
-      end: '2022-03-29 14:59:59',
-      color: '#D0AEF2',
-      url: 'https://www.hoyolab.com/article/3643652',
-      showOnHome: true,
-    },
-    {
       name: 'Azure Excursion - Ayato Banner',
       pos: '20% 15%',
       zoom: '200%',
@@ -244,29 +167,6 @@ export const eventsData = [
     },
   ],
   [
-    {
-      name: 'Everbloom Violet - Yae Miko Banner',
-      pos: '40% 15%',
-      zoom: '200%',
-      image: 'everbloom_violet_1.jpg',
-      start: '2022-02-16 10:00:00',
-      end: '2022-03-08 17:59:59',
-      color: '#ffd1f9',
-      url: 'https://www.hoyolab.com/article/3355975',
-      showOnHome: true,
-      timezoneDependent: true,
-    },
-    {
-      name: 'Drifting Luminescence - Kokomi Banner',
-      pos: '40% 15%',
-      zoom: '200%',
-      image: 'drifting_luminescence_2.jpg',
-      start: '2022-03-08 18:00:00',
-      end: '2022-03-29 14:59:59',
-      color: '#53caf3',
-      url: 'https://www.hoyolab.com/article/3643654',
-      showOnHome: true,
-    },
     {
       name: 'Ballad in Goblets - Venti Banner',
       pos: '20% 15%',
@@ -306,29 +206,6 @@ export const eventsData = [
   [
     {
       name: 'Epitome Invocation - Weapon Banner',
-      pos: '30% 40%',
-      zoom: '150%',
-      image: 'epitome_invocation_25.jpg',
-      start: '2022-02-16 10:00:00',
-      end: '2022-03-08 17:59:59',
-      color: '#FFAA4B',
-      url: 'https://www.hoyolab.com/article/3355976',
-      showOnHome: true,
-      timezoneDependent: true,
-    },
-    {
-      name: 'Epitome Invocation - Weapon Banner',
-      pos: '30% 30%',
-      zoom: '150%',
-      image: 'epitome_invocation_26.jpg',
-      start: '2022-03-08 18:00:00',
-      end: '2022-03-29 14:59:59',
-      color: '#FFAA4B',
-      url: 'https://www.hoyolab.com/article/3643657',
-      showOnHome: true,
-    },
-    {
-      name: 'Epitome Invocation - Weapon Banner',
       pos: '30% 30%',
       zoom: '150%',
       image: 'epitome_invocation_27.jpg',
@@ -363,36 +240,6 @@ export const eventsData = [
     },
   ],
   [
-    {
-      name: 'Spiral Abyss',
-      image: 'spiral_abyss.jpg',
-      pos: '50% 20%',
-      start: '2022-02-16 04:00:00',
-      end: '2022-03-01 04:00:00',
-      color: '#4299E1',
-      description:
-        "When the active character's Normal, Charged, or Plunging Attacks hit opponents multiple times within 2s, the character gains a stack of Emergence for 8s. This effect can be triggered once every 0.1s. Emergence will be cleared when the character goes down or leaves the field. When the character gains 15 Emergence stacks, the stacks will be cleared and a shockwave will be unleashed that deals True DMG to nearby opponents. After a shockwave is unleashed in this way, all party members will deal 25% increased DMG for 10s.",
-    },
-    {
-      name: 'Spiral Abyss',
-      image: 'spiral_abyss.jpg',
-      pos: '50% 20%',
-      start: '2022-03-01 04:00:00',
-      end: '2022-03-16 04:00:00',
-      color: '#4299E1',
-      description:
-        "When opponents take Electro-Charged DMG, their Electro RES decreases by 10% for 10s. Max 4 stacks. Each stack's duration is independent. Each enemy can receive this effect once every 1.2s",
-    },
-    {
-      name: 'Spiral Abyss',
-      image: 'spiral_abyss.jpg',
-      pos: '50% 20%',
-      start: '2022-03-16 04:00:00',
-      end: '2022-04-01 04:00:00',
-      color: '#4299E1',
-      description:
-        "When the active character's Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts hit an opponent affected by Electro, a shockwave is created at that opponent's position, dealing True DMG. A shockwave may be produced in this manner every 2s",
-    },
     {
       name: 'Spiral Abyss',
       image: 'spiral_abyss.jpg',
@@ -466,26 +313,6 @@ export const eventsData = [
   ],
   [
     {
-      name: "Paimon's Bargain - Beidou, Noelle, and Royal",
-      pos: '0% 50%',
-      zoom: '150%',
-      start: '2022-02-01 04:00:00',
-      end: '2022-03-01 04:00:00',
-      color: '#B6A1EA',
-      image: 'paimon_bargain.png',
-      description: 'Now selling: Beidou, Noelle, and Royal Weapons.',
-    },
-    {
-      name: "Paimon's Bargain - Ningguang, Xingqiu, and Blackcliff",
-      pos: '0% 50%',
-      zoom: '150%',
-      start: '2022-03-01 04:00:00',
-      end: '2022-04-01 04:00:00',
-      color: '#B6A1EA',
-      image: 'paimon_bargain.png',
-      description: 'Now selling: Ningguang, Xingqiu, and Blackcliff Weapons.',
-    },
-    {
       name: "Paimon's Bargain - Razor, Amber, and Royal",
       pos: '0% 50%',
       zoom: '150%',
@@ -505,18 +332,18 @@ export const eventsData = [
       image: 'paimon_bargain.png',
       description: 'Now selling: Bennett, Lisa, and Blackcliff Weapons.',
     },
+    {
+      name: "Paimon's Bargain - Barbara, Kaeya, and Royal",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2022-06-01 04:00:00',
+      end: '2022-07-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Barbara, Kaeya, and Royal Weapons.',
+    },
   ],
   [
-    {
-      name: 'Battle Pass - Into the Shadows',
-      pos: '0% 12%',
-      image: 'into_the_shadows.jpg',
-      start: '2022-02-16 10:00:00',
-      end: '2022-03-28 03:59:59',
-      color: '#828dff',
-      url: 'https://www.hoyolab.com/article/3355980',
-      timezoneDependent: true,
-    },
     {
       name: 'Battle Pass - Luxuriant Vibrance',
       pos: '0% 12%',
