@@ -212,7 +212,7 @@
         ],
         "q6": "我按流程操作了，但提示 API 错误？",
         "a6": "确保你复制了完整的链接（移动设备需要长按并全选）；可能你漏掉了链接的一部分。",
-        "q7": "它并没有读取到我的全部抽卡记录!?",
+        "q7": "导入器并没有读取到我的全部抽卡记录！",
         "a7": "超过6个月的祈愿记录会在HoYoVerse的服务器上被删除，如果你以前没备份过，那就永远消失了。"
       },
       "logLocation": {
@@ -222,7 +222,7 @@
       "guide": {
         "video": "视频教程",
         "pc": [
-          "打开派蒙按钮 [ESC]",
+          "打开派蒙菜单 [ESC]",
           "点击反馈",
           "等待加载出一个浏览器页面",
           "复制并粘贴链接到下面的文本框",
@@ -230,7 +230,7 @@
         ],
         "pc2": [
           "打开原神客户端（如果你拥有多个米哈游通行证，重新启动游戏并登录到你希望的账号）",
-          "打开祈愿记录的页面并等待祈愿记录刷新",
+          "打开祈愿记录的页面并等待祈愿记录的读取",
           "打开Windows的「开始」菜单，搜索Powershell",
           "打开Windows Powershell，接着复制下方的脚本并粘贴到Powershell里",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
@@ -244,7 +244,7 @@
         ],
         "pclog": [
           "打开原神客户端（如果你拥有多个米哈游通行证，重新启动游戏并登录到你希望的账号）",
-          "打开祈愿记录的页面并等待祈愿记录刷新",
+          "打开祈愿记录的页面并等待祈愿记录的读取",
           "在键盘上按下Windows+R的组合键，然后输入：",
           "将会有一个笔记本窗口自动打开，按下Ctrl+F的组合键然后搜索：",
           "复制完整的链接，从 https://webstatic 开头，以 #/log 结尾。完整链接类似于这样：https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
@@ -311,7 +311,7 @@
           "粘贴后回车即可运行脚本，然后跟着说明走即可",
           "之后，把脚本输出的结果粘贴到这里",
           "粘贴结果到这里...",
-          "这个功能还在开发中。请先到“帮助&设置”界面，选择“导出到Excel”来备份一下你原来的记录。"
+          "这个功能还在开发中。请先到“帮助 & 设置”界面，选择“导出到Excel”来备份一下你原来的记录。"
         ]
       }
     },
@@ -349,7 +349,7 @@
     },
     "help": {
       "title": "祈愿统计 帮助 & 设置",
-      "exportTitle": "导出祈愿记录",
+      "exportTitle": "导出 / 导入祈愿记录",
       "exportMessage": "你可以在这里将祈愿记录导出为Excel",
       "export": "导出到Excel",
       "exporting": "导出中...",
@@ -482,7 +482,7 @@
       "current": "当前武器等级、经验、突破阶段",
       "inputCurrentLevel": "输入当前武器等级...",
       "inputCurrentExp": "输入当前武器经验...",
-      "intended": "武器目标等级 & 突破情况",
+      "intended": "目标武器等级与突破情况",
       "inputIntendedLevel": "输入目标武器等级...",
       "resource": "需要的资源",
       "calculate": "计算",
@@ -499,7 +499,7 @@
       "current": "当前角色等级、经验、突破阶段",
       "inputCurrentLevel": "输入当前角色等级...",
       "inputCurrentExp": "输入当前角色经验...",
-      "intended": "目标角色等级 & 突破情况",
+      "intended": "目标角色等级与突破情况",
       "inputIntendedLevel": "输入目标角色等级...",
       "resource": "需要的资源",
       "calculateTalent": "计算天赋材料？",
@@ -644,10 +644,10 @@
     "reset": "重置",
     "delete": "删除",
     "add": "添加",
-    "server": "选择服务器:",
+    "server": "选择服务器：",
     "drive": [
       "Paimon.moe 利用 Google 云端硬盘的应用数据文件夹来保存和同步你的祈愿记录和养成规划。",
-      "Paimon.moe 只能修改读取由本网站生成的文件."
+      "Paimon.moe 只能读取和修改由本网站创建的文件。"
     ],
     "driveError": "Google 云端硬盘 API 无法加载",
     "driveSignIn": "登录 Google 云端硬盘",
@@ -669,7 +669,7 @@
       "reset": "重置"
     },
     "changelog": "更新日志",
-    "exportDescription": "您可以在这导出&导入您的 Paimon.moe 数据",
+    "exportDescription": "你可以在此处导出或导入 Paimon.moe 的数据",
     "exportButton": "导出 / 导入数据",
     "export": "导出数据",
     "download": "下载数据",

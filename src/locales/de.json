@@ -454,11 +454,11 @@
       "desc": "Wenn der Browser-Cache versehentlich gelöscht wird, ist Ihr gewünschter Verlauf weg! Sie können die Google Drive-Synchronisierung im Einstellungsmenü aktivieren, um Ihre Daten zu sichern, oder die Daten dort manuell herunterladen."
     },
     "rank": {
-      "level": "",
+      "level": "Dein Rang nach gesamten Gebete",
       "based": "Basierend auf globalen Wish-Statistiken",
       "current": "Aktueller Median von {banner} ist {median} Pulls",
-      "more": "",
-      "less": ""
+      "more": "Du hast mehr Gebete als {percentage}% von paimon.moe Benutzer",
+      "less": "Du hast weniger Gebete als {percentage}% von paimon.moe Benutzer"
     }
   },
   "calculator": {
