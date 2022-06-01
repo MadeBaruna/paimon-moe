@@ -60,9 +60,10 @@ export async function process(id) {
   const selectedBanners = banners[bannerType].map((e) => {
     // banner data based on Asia time
     const diff = e.timezoneDependent === true ? 8 - getTimeOffset() : 0;
+    const diffEnd = e.timezoneDependentEnd === true ? 8 - getTimeOffset() : 0;
 
     const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
-    const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss');
+    const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss').subtract(diffEnd, 'hour');
     const image = `/images/banners/${e.name} ${e.image}.png`;
     const fullName = `${e.name} ${e.image}`;
 
