@@ -64,7 +64,10 @@
   };
   $: currentLoad = Object.entries(currentUsage[type]).reduce(
     (prev, [id, val]) => {
-      prev.load += data[id].load * val;
+      let reduced = Math.max(val - 1, 0);
+      let first = Math.min(1, val);
+      prev.load += data[id].load * first;
+      prev.load += data[id].reduced * reduced;
       prev.energy += data[id].energy * val;
       return prev;
     },
@@ -92,6 +95,9 @@
           case 'load':
             if (sortOrder) return a.load - b.load;
             else return b.load - a.load;
+          case 'reduced':
+            if (sortOrder) return a.reduced - b.reduced;
+            else return b.reduced - a.reduced;
           case 'using':
             if (sortOrder) return (currentUsage[type][a.id] || 0) - (currentUsage[type][b.id] || 0);
             else return (currentUsage[type][b.id] || 0) - (currentUsage[type][a.id] || 0);
@@ -287,6 +293,15 @@
             </TableHeader>
             <TableHeader
               className="sticky top-0 bg-item z-30"
+              on:click={() => sort('reduced')}
+              sort={sortBy === 'reduced'}
+              order={sortOrder}
+              align="center"
+            >
+              {$t('furnishing.reduced')}
+            </TableHeader>
+            <TableHeader
+              className="sticky top-0 bg-item z-30"
               on:click={() => sort('ratio')}
               sort={sortBy === 'ratio'}
               order={sortOrder}
@@ -315,9 +330,10 @@
                   loading="lazy"
                 />
               </td>
-              <td class="px-4 text-gray-200">{item.name}</td>
+              <td class="px-4 text-gray-200 name-row">{item.name}</td>
               <td class="px-4 text-gray-200 text-center">{item.energy}</td>
               <td class="px-4 text-gray-200 text-center">{item.load}</td>
+              <td class="px-4 text-gray-200 text-center">{item.reduced}</td>
               <td class="px-4 text-gray-200 text-center" style={calculateColor(item.ratio)}>{item.ratio.toFixed(2)}</td>
               <td class="px-4">
                 <div
@@ -375,5 +391,10 @@
   .image[alt]:after {
     @apply block absolute top-0 left-0 w-full h-full bg-item;
     content: '';
+  }
+
+  .name-row {
+    max-width: 400px;
+    white-space: break-spaces;
   }
 </style>

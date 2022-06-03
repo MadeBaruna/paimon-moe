@@ -794,6 +794,7 @@
     "name": "Name",
     "energy": "Energy",
     "load": "Load",
+    "reduced": "Reduced",
     "ratio": "Ratio",
     "using": "Amount",
     "interior": "Interior",
