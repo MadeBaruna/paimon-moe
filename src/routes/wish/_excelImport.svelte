@@ -199,7 +199,11 @@
     const chars = Object.values(characters);
 
     for (const [id, category] of Object.entries(bannerCategories)) {
-      const sheet = workbook.getWorksheet(category);
+      let sheet = workbook.getWorksheet(category);
+      if (id === 'beginners' && sheet === undefined) {
+        sheet = workbook.getWorksheet('Beginners Wish');
+      }
+
       const wishes = [];
       sheet.eachRow((row, index) => {
         if (index === 1) return;
