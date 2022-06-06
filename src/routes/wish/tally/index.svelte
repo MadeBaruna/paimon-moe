@@ -2,6 +2,7 @@
   import { mdiLoading, mdiStar } from '@mdi/js';
   import { onMount, tick } from 'svelte';
   import Chart from 'chart.js';
+  import dayjs from 'dayjs';
 
   import { t } from 'svelte-i18n';
   import Ad from '../../../components/Ad.svelte';
@@ -92,6 +93,7 @@
 
   let chart;
   let chart2;
+  let chartPullByDay;
 
   let error;
 
@@ -304,6 +306,47 @@
                 },
               },
             ],
+          },
+        },
+      });
+
+      new Chart(chartPullByDay, {
+        type: 'line',
+        data: {
+          labels: data.pullByDay.map((e) => dayjs(e.day).format('MM/DD')),
+          datasets: [
+            {
+              label: 'Pull By Day %',
+              data: data.pullByDay.map((e) => e.percentage * 100),
+              borderColor: '#4E7CFF',
+              backgroundColor: '#4E7CFF',
+              borderWidth: 3,
+              pointRadius: 2,
+              fill: false,
+              type: 'line',
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          interaction: {
+            mode: 'index',
+            intersect: false,
+          },
+          tooltips: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              title: (tooltipItem) => {
+                return dayjs(data.pullByDay[tooltipItem[0].index].day).format('dddd, MMM DD YYYY');
+              },
+              label: (tooltipItem) => {
+                return `Pull by day: ${numberFormatSecondary.format(
+                  data.pullByDay[tooltipItem.index].percentage * totalWish,
+                )} (${numberFormat.format(tooltipItem.value)}%)`;
+              },
+            },
           },
         },
       });
@@ -545,6 +588,9 @@
               </tr>
             </table>
           </div>
+        </div>
+        <div class="bg-background rounded-xl p-4 relative mb-4" style="height: 200px; width: 100%;">
+          <canvas bind:this={chartPullByDay} />
         </div>
         <div class="bg-background rounded-xl p-4 relative mb-4" style="height: 200px; width: 100%;">
           <canvas bind:this={chart} />
