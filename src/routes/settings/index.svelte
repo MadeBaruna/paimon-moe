@@ -171,6 +171,7 @@
       'furnishing-set-placed',
       'furnishing-set-character',
       'fishing',
+      'spincrystals',
     ];
 
     for (let k of keyWillBeDeleted) {
@@ -211,6 +212,7 @@
       'furnishing-set-placed',
       'furnishing-set-character',
       'fishing',
+      'spincrystals',
     ];
 
     for (let k of keyWillBeDeleted) {
@@ -254,6 +256,7 @@
       'furnishing-set-placed',
       'furnishing-set-character',
       'fishing',
+      'spincrystals',
     ];
 
     const temp = {};

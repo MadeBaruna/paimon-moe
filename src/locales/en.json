@@ -14,6 +14,7 @@
     "weapons": "Weapons",
     "artifacts": "Artifacts",
     "fishing": "Fishing",
+    "radiantSpincrystal": "Radiant Spincrystal",
     "settings": "Settings",
     "donate": "Donate"
   },
@@ -875,5 +876,8 @@
     "clear": "Clear",
     "save": "Save",
     "cancel": "Cancel"
+  },
+  "radiantSpincrystal": {
+    "title": "Radiant Spincrystals"
   }
 }

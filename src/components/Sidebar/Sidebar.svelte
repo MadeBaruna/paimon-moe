@@ -97,7 +97,15 @@
       {mobile}
       {segment}
       on:clicked={close}
-      active={['items', 'achievement', 'reminder', 'furnishing', 'weapons', 'artifacts'].includes(segment)}
+      active={[
+        'items',
+        'achievement',
+        'reminder',
+        'furnishing',
+        'weapons',
+        'artifacts',
+        'radiant-spincrystal',
+      ].includes(segment)}
       image="/images/items.png"
       label={$t('sidebar.database')}
       items={[
@@ -108,6 +116,7 @@
         { label: $t('sidebar.weapons'), href: '/weapons' },
         { label: $t('sidebar.artifacts'), href: '/artifacts' },
         { label: $t('sidebar.fishing'), href: '/fishing' },
+        { label: $t('sidebar.radiantSpincrystal'), href: '/radiant-spincrystal' },
       ]}
     />
     <SidebarItem
