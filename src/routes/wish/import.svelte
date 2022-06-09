@@ -703,10 +703,11 @@
     bannerList = banners[type].map((e) => {
       // banner data based on Asia time
       const diff = e.timezoneDependent === true ? 8 - getTimeOffset() : 0;
+      const diffEnd = e.timezoneDependentEnd === true ? 8 - getTimeOffset() : 0;
 
       const id = `${e.name} ${e.image}`;
       const start = dayjs(e.start, 'YYYY-MM-DD HH:mm:ss').subtract(diff, 'hour');
-      const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss');
+      const end = dayjs(e.end, 'YYYY-MM-DD HH:mm:ss').subtract(diffEnd, 'hour');
 
       return {
         ...e,
