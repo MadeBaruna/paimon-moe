@@ -14,6 +14,7 @@
     "weapons": "Vũ Khí",
     "artifacts": "Thánh Di Vật",
     "fishing": "Câu Cá",
+    "radiantSpincrystal": "Ngọc Thạch Âm Vang",
     "settings": "Cài Đặt",
     "donate": "Ủng hộ"
   },
@@ -28,7 +29,7 @@
       "summoned": "Đã cầu nguyện",
       "percentage": "trên toàn bộ {rarity}",
       "avg": "Số lượt quay trung bình",
-      "subtitle": "Được tính toán từ dữ liệu của {user} người dùng paimon.moe",
+      "subtitle": "Được thống kê từ dữ liệu của {user} người dùng paimon.moe",
       "detail": "Thống Kê Cầu Nguyện"
     },
     "wish": {
@@ -37,17 +38,17 @@
       "banner": "Banner",
       "time": "Thời Gian",
       "name": "Vật phẩm",
-      "pity": "Lượt thứ",
+      "pity": "Pity",
       "detail": "Lịch Sử Cầu Nguyện"
     },
     "reminder": {
-      "message": "Bạn có thể bật thông báo 🔔 cho Máy Biến đổi Tham Số và Đăng nhập hằng ngày của Hoyolab ở đây! Ấn vào nút nhắc nhở bên dưới để bắt đầu!",
+      "message": "Bạn có thể bật thông báo nhắc nhở 🔔 cho Máy Biến Đổi Tham Số và Điểm Danh Hằng Ngày của HoYoLab tại đây! Nhấn vào nút nhắc nhở bên dưới để bắt đầu!",
       "detail": "Nhắc Nhở"
     },
     "event": {
-      "upcoming": "Những Sự Kiện Sắp Tới",
-      "current": "Những Sự Kiện Đang Diễn Ra",
-      "detail": "Lịch Sự Kiện"
+      "upcoming": "Hoạt Động Sắp Tới",
+      "current": "Hoạt Động Đang Diễn Ra",
+      "detail": "Lịch Hoạt Động"
     },
     "discord": {
       "online": "Thành Viên Trực Tuyến",
@@ -60,7 +61,7 @@
       "sunday": "Vào ngày chủ nhật có thể farm tất cả nguyên liệu 😁"
     },
     "calculator": {
-      "title": "🧮 Tính toán Đạo Cụ Bồi Dưỡng và Sách Thiên Phú! Những tính toán của bạn có thể thêm vào Danh sách cần làm, nó cũng sẽ cho bạn biết số nhựa cần để farm!",
+      "title": "🧮 Tính toán đạo cụ bồi dưỡng nhân vật, vũ khí và sách thiên phú! Những tính toán đó sau đó có thể được thêm vào Danh Sách Việc Cần Làm, nó còn hiện số nhựa bạn cần để farm nữa!",
       "detail": "Công cụ tính"
     },
     "twitter": {
@@ -81,7 +82,7 @@
     "subtitle": "Chỉ số nhân vật được lấy ở cấp 80 bậc đột phá 6. Bạn cũng có thể ấn vào 4 ô vuông để sắp xếp!",
     "name": "Tên",
     "element": "Nguyên tố",
-    "rarity": "Độ Hiếm",
+    "rarity": "Phẩm Chất",
     "weapon": "Vũ khí",
     "talents": "Thiên Phú",
     "passiveTalents": "Thiên Phú Cố Định",
@@ -90,11 +91,11 @@
     "asc": "ĐP",
     "lvl": "LVL",
     "hp": "HP",
-    "atk": "ATK",
-    "def": "DEF",
+    "atk": "T.Công",
+    "def": "P. Ngự",
     "hpPercent": "HP%",
-    "atkPercent": "ATK%",
-    "defPercent": "DEF%",
+    "atkPercent": "%T.Công",
+    "defPercent": "% P. Ngự",
     "critRate": "TL Bạo",
     "critDamage": "ST Bạo",
     "em": "Tinh Thông Nguyên Tố",
@@ -329,7 +330,7 @@
         "Hiện tại chỉ hỗ trợ excel có vật phẩm tên TIẾNG ANH"
       ],
       "selectFile": {
-        "default": "Kéo & thả Paimon.moe excel file ở đây, hoặc ấn vào đây để chọn",
+        "default": "Kéo & thả file excel do Paimon.moe tạo vào đây, hoặc ấn vào đây để chọn",
         "takagg": "Kéo & thả TakaGG gacha export excel file ở đây, hoặc ấn vào đây để chọn",
         "genshinwishes": "Kéo & thả tệp csv GenshinWishes vào đây, hoặc nhấn vào đây để chọn",
         "wishtally": "Kéo & thả tệp excel Wish Tally vào đây, hoặc nhấn vào đây để chọn"
@@ -477,7 +478,7 @@
     },
     "weapon": {
       "calculateAscension": "Tính Nguyên Liệu Đột Phá?",
-      "selectRarity": "Chọn độ hiếm của vũ khí",
+      "selectRarity": "Chọn phẩm chất vũ khí",
       "selectWeapon": "Chọn vũ khí",
       "current": "Cấp Vũ Khí, EXP, & Đột Phá Hiện tại",
       "inputCurrentLevel": "Nhập cấp vũ khí hiện tại...",
@@ -528,7 +529,7 @@
       "level": "Cấp độ",
       "items": "Nguyên Liệu",
       "wasted": "EXP dư",
-      "mora": "Tốn Mora"
+      "mora": "Mora Cần"
     },
     "resinTable": {
       "quantity": "Số lượng",
@@ -551,7 +552,7 @@
     "friendship": {
       "currentLevel": "Exp yêu thích hiện tại",
       "currentExp": "Thanh Exp hiện tại (Kéo thanh bên dưới)",
-      "randomEventFarm": "Bạn cày bao nhiêu sự kiện ngẫu nhiên mỗi ngày?",
+      "randomEventFarm": "Bạn cày bao nhiêu sự kiện đột xuất mỗi ngày?",
       "calculate": "Tính toán",
       "based": "Dựa theo HMH:{ar}",
       "change": "(thay đổi trong cài đặt)",
@@ -595,7 +596,7 @@
     "material": "Nguyên liệu",
     "characterWeapons": "Nhân Vật & Vũ Khí",
     "add": {
-      "rarity": "Chọn Độ Hiếm",
+      "rarity": "Chọn Phẩm Chất",
       "amount": "Số lượng",
       "inputAmount": "Nhập số lượng...",
       "cancel": "Hủy",
@@ -604,12 +605,12 @@
   },
   "days": {
     "Sunday": "Chủ nhật",
-    "Monday": "Thứ hai",
+    "Monday": "Thứ Hai",
     "Tuesday": "Thứ Ba",
-    "Wednesday": "Thứ tư",
-    "Thursday": "Thứ năm",
-    "Friday": "Thứ sáu",
-    "Saturday": "Thứ bảy"
+    "Wednesday": "Thứ Tư",
+    "Thursday": "Thứ Năm",
+    "Friday": "Thứ Sáu",
+    "Saturday": "Thứ Bảy"
   },
   "todo": {
     "title": "Danh Sách Việc Cần Làm",
@@ -630,7 +631,7 @@
     }
   },
   "timeline": {
-    "title": "Lịch Sự Kiện",
+    "title": "Lịch Hoạt Động",
     "localTime": "Hiển thị thời gian địa phương",
     "starting": "Bắt đầu trong",
     "ending": "Kết thúc sau",
@@ -645,6 +646,8 @@
     "delete": "Xóa",
     "add": "Thêm vào",
     "server": "Hãy chọn server:",
+    "ar": "HMH:",
+    "wl": "Cấp TG:",
     "drive": [
       "Paimon.moe dùng Thư mục Dữ liệu Ứng dụng ở Google Drive của bạn để lưu và đồng bộ Lịch sử cầu nguyện và Danh Sách việc cần làm của bạn.",
       "Paimon.moe chỉ có thể đọc và viết những files mà trang web này đã tạo."
@@ -661,12 +664,16 @@
     "feedback": "Nếu bạn tìm thấy bất kì lỗi, dữ liệu sai, hoặc có phản hồi nào khác, vui lòng để lại lời nhắn ở",
     "or": "hoặc",
     "thanks": "Cảm ơn bạn 😁!",
+    "setMainAccount": "Đặt Làm Tài Khoản Chính",
     "modal": {
       "notice": "Tất cả Việc Cần Làm và Lịch Sử Cầu Nguyện sẽ bị xóa",
       "backup": "Bạn có thể sao lưu lịch sử cầu nguyện bằng cách xuất nó ra file excel!",
+      "setMain": "Đổi tài khoản chính?",
+      "setMainNotice": "Sẽ đổi tài khoản:",
       "cancel": "Hủy",
       "delete": "Xóa",
-      "reset": "Thiết lập lại"
+      "reset": "Thiết lập lại",
+      "continue": "Tiếp Tục"
     },
     "changelog": "Nhật Ký Chỉnh Sửa",
     "exportDescription": "Bạn có thể xuất & nhập dữ liệu trên Paimon.moe của bạn ở đây",
@@ -680,7 +687,11 @@
     "importContinue": "Tiếp Tục",
     "importSuccess": "Nhập dữ liệu thành công! Sẽ tải lại trang sau 5 giây...",
     "importFailed": "Nhập dữ liệu thất bại!",
-    "email": "Email:"
+    "email": "Email:",
+    "mainAccountChanged": "Đã đổi tài khoản chính, tải lại sau 5 giây...",
+    "dataDeleted": "Dữ liệu đã được xoá",
+    "dataReset": "Dữ liệu đã được đặt lại",
+    "accountAdded": "Đã thêm tài khoản {accountNumber}, chọn nó ở danh sách tài khoản!"
   },
   "privacypolicy": {
     "title": "Chính sách bảo mật",
@@ -752,13 +763,13 @@
     "notSupported": "Trình duyệt của bạn không hỗ trợ thông báo, hãy thử trình duyệt khác!",
     "blocked": "Thông báo đã bị chặn, tính năng thông báo của nhắc nhở sẽ không hoạt động! Vui lòng bật thông báo trên trình duyệt của bạn.",
     "desktop": "Trình duyệt máy tính không thể nhận thông báo nếu như trình duyệt không được bật!",
-    "early": "Thông báo có thể sẽ báo sớm hơn (tầm 1-10 phút) vì do cách chúng tôi gửi thông báo nó thế",
+    "early": "Thông báo có thể sẽ báo sớm hơn (tầm 1-10 phút) do phương thức chúng tôi gửi thông báo",
     "allowNotification": "Vui lòng cho phép thông báo khi cửa sổ yêu cầu hiện lên!",
     "transformer": "Nhắc nhở cho Máy Biến Đổi Tham Số",
     "last": "Nhập thời gian lần cuối bạn sử dụng Máy Biến Đổi Tham Số",
-    "lastHoyolab": "Nhập thời gian bạn muốn được nhắc cho đăng nhập hằng ngày của Hoyolab",
+    "lastHoyolab": "Nhập thời gian bạn muốn được nhắc điểm danh hằng ngày",
     "every": "Mỗi ngày lúc",
-    "countdown": "Nhập thời gian đếm ngược của Máy Biến Đổi Tham số (Nếu bạn không nhớ thời gian chính xác, hãy ước chừng)",
+    "countdown": "Nhập thời gian đếm ngược của Máy Biến Đổi Tham số (Nếu bạn không nhớ chính xác thời gian thì có thể dùng thời gian ước chừng)",
     "useLast": "Dùng thời gian đã sử dụng lần cuối",
     "useCountdown": "Dùng thời gian đếm ngược",
     "set": "Đặt lời nhắc",
@@ -766,7 +777,7 @@
     "errorSelect": "Vui lòng kiểm tra ngày và giờ!",
     "errorSaving": "Trong khi lưu lời nhắc đã xảy ra lỗi 🙁",
     "current": "Lời nhắc hiện tại",
-    "hoyolab": "Lời nhắc cho đăng nhập hằng ngày tại Hoyolab",
+    "hoyolab": "Nhắc nhở Điểm Danh Hằng Ngày HoYoLab",
     "comingsoon": "Sắp ra mắt!"
   },
   "achievement": {
@@ -784,6 +795,7 @@
     "name": "Tên vật phẩm",
     "energy": "Tiên Lực",
     "load": "Khối Lượng",
+    "reduced": "KL Được Giảm",
     "ratio": "Tỉ lệ",
     "using": "Số lượng",
     "interior": "Trong Nhà",
@@ -811,7 +823,7 @@
       "setUnplaced": "Đánh dấu chưa đặt",
       "inInventory": "Trong túi đồ",
       "available": "Có sẵn",
-      "used": "Đang được dùng trong bộ khác"
+      "used": "Dùng trong bộ khác"
     }
   },
   "weapon": {
@@ -819,16 +831,16 @@
     "subtitle": "Thuộc tính vũ khí khi đạt cấp cuối",
     "name": "Tên vũ khí",
     "type": "Loại",
-    "rarity": "Độ Hiếm",
-    "atk": "ATK",
-    "secondary": "Dòng Phụ",
+    "rarity": "Phẩm Chất",
+    "atk": "Tấn Công",
+    "secondary": "Thuộc Tính Phụ",
     "critRate": "Tỷ Lệ Bạo Kích",
     "critDamage": "ST Bạo",
     "em": "Tinh Thông Nguyên Tố",
     "er": "Hiệu Quả Nạp",
-    "atkPercent": "ATK",
+    "atkPercent": "Tấn Công",
     "hpPercent": "HP",
-    "defPercent": "DEF",
+    "defPercent": "Phòng Ngự",
     "physicalDamage": "Tăng ST Vật Lý",
     "bow": "Cung",
     "polearm": "Vũ khí cán dài",
@@ -838,7 +850,7 @@
     "ascensionMaterial": "Nguyên Liệu Đột Phá",
     "asc": "ĐP",
     "lvl": "Cấp",
-    "baseAtk": "Tấn công cơ bản",
+    "baseAtk": "Tấn Công Căn Bản",
     "recommendedCharacter": "Đề Xuất Nhân Vật"
   },
   "artifact": {
@@ -864,5 +876,8 @@
     "clear": "Xóa",
     "save": "Lưu",
     "cancel": "Hủy"
+  },
+  "radiantSpincrystal": {
+    "title": "Ngọc Thạch Âm Vang"
   }
 }

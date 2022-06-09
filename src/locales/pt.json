@@ -14,6 +14,7 @@
     "weapons": "Armas",
     "artifacts": "Artefatos",
     "fishing": "Pesca",
+    "radiantSpincrystal": "",
     "settings": "Configurações",
     "donate": "Doar"
   },
@@ -645,6 +646,8 @@
     "delete": "Deletar",
     "add": "Adicionar",
     "server": "Selecione seu servidor:",
+    "ar": "",
+    "wl": "",
     "drive": [
       "Paimon.moe usa o diretório Application Data em seu Google Drive para salvar e sincronizar seu Histórico de Orações e Lista de Afazeres.",
       "Paimon.moe pode apenas ler e escrever em arquivos que o site criou."
@@ -661,12 +664,16 @@
     "feedback": "Se você encontrou algum bug, informação incorreta ou tem qualquer outro feedback, por favor deixe uma mensagem em",
     "or": "ou",
     "thanks": "Obrigado😁!",
+    "setMainAccount": "",
     "modal": {
       "notice": "Todos os dados da Lista de Afazeres e Histórico de Orações serão apagados",
       "backup": "Você pode fazer um backup do seu histórico de orações através de uma exportação para um arquivo do Excel!",
+      "setMain": "",
+      "setMainNotice": "",
       "cancel": "Cancelar",
       "delete": "Deletar",
-      "reset": "Resetar"
+      "reset": "Resetar",
+      "continue": ""
     },
     "changelog": "Registro de alterações",
     "exportDescription": "Você pode exportar e importar seus dados do Paimon.moe aqui",
@@ -680,7 +687,11 @@
     "importContinue": "Continuar",
     "importSuccess": "Importado com sucesso! Recarregando em 5 segundos...",
     "importFailed": "Falha ao importar!",
-    "email": "Email:"
+    "email": "Email:",
+    "mainAccountChanged": "",
+    "dataDeleted": "",
+    "dataReset": "",
+    "accountAdded": ""
   },
   "privacypolicy": {
     "title": "Política de Privacidade",
@@ -784,6 +795,7 @@
     "name": "Nome",
     "energy": "Energia",
     "load": "Carga",
+    "reduced": "",
     "ratio": "Proporção",
     "using": "Quantidade",
     "interior": "Interior",
@@ -864,5 +876,8 @@
     "clear": "Limpar",
     "save": "Salvar",
     "cancel": "Cancelar"
+  },
+  "radiantSpincrystal": {
+    "title": ""
   }
 }

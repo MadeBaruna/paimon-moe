@@ -7,13 +7,14 @@
     "database": "数据库",
     "items": "素材道具",
     "achievement": "成就",
-    "reminder": "提醒器",
+    "reminder": "提醒",
     "todoList": "养成规划",
     "timeline": "时间线",
     "furnishing": "摆设",
     "weapons": "武器",
     "artifacts": "圣遗物",
     "fishing": "钓鱼",
+    "radiantSpincrystal": "旋曜玉帛",
     "settings": "设置",
     "donate": "赞助"
   },
@@ -28,7 +29,7 @@
       "summoned": "被抽到",
       "percentage": "占比于 {rarity}",
       "avg": "平均出金抽数",
-      "subtitle": "计算数据来自 {user} 位 paimon.moe 用户提交的祈愿记录",
+      "subtitle": "计算数据来自 {user} 位 Paimon.moe 用户提交的祈愿记录",
       "detail": "全球祈愿统计"
     },
     "wish": {
@@ -41,8 +42,8 @@
       "detail": "祈愿统计"
     },
     "reminder": {
-      "message": "你可以通过计时器 🔔 来提醒使用参量质变仪和HoYoLab（米游社）签到的时间！点击下方按钮来设置！",
-      "detail": "提醒器"
+      "message": "你可以通过计时器 🔔 来提醒使用参量质变仪和HoYoLAB（米游社）签到的时间！点击下方按钮来设置！",
+      "detail": "提醒"
     },
     "event": {
       "upcoming": "活动预告",
@@ -51,7 +52,7 @@
     },
     "discord": {
       "online": "位在线成员",
-      "message": "加入我们的 Discord 来获取最新通知！一起讨论原神以及对paimon.moe的反馈。",
+      "message": "加入我们的 Discord 来获取最新通知！一起讨论原神以及对 Paimon.moe 的反馈。",
       "join": "加入我们的 Discord"
     },
     "items": {
@@ -64,7 +65,7 @@
       "detail": "计算器"
     },
     "twitter": {
-      "title": "关注我的 Twitter，我会把目前开发的东西和 paimon.moe 的最新更新发布上去！",
+      "title": "关注我的 Twitter，我会把目前开发的东西和Paimon.moe 的最新更新发布上去！",
       "detail": "关注 Twitter"
     },
     "achievement": {
@@ -168,7 +169,7 @@
       "errorApi": "HoYoVerse API 返回错误，请稍后再试！",
       "errorExpired": "链接已超时，请重试！",
       "timeout": "连接超时，请等待一段时间后再试",
-      "differentAccount": "这份祈愿记录属于其他账户，请先在设置菜单中分离并选择账户！",
+      "differentAccount": "这份祈愿记录属于其他账号，请先在设置菜单中分离并选择账号！",
       "invalidData": "返回的数据错误，请稍后再试",
       "noNewData": "没有新的祈愿信息，请等待约1小时后再次尝试！",
       "success": "导入成功 😀！",
@@ -182,28 +183,28 @@
       ],
       "forceUpdateCheck": "强制更新祈愿记录（仅在导入祈愿记录却没有反应时启用）",
       "header": [
-        "在这里导入并备份的原神祈愿记录不仅可以保存超过六个月，同时也可以自动分析你的保底和出率！",
+        "在这里导入并备份的原神祈愿记录不仅可以保存超过六个月，同时也可以自动分析你的保底和出货情况！",
         "你也可以在设置中启用数据备份，将你的祈愿记录自动同步到 Google 云端硬盘",
         "2.3版本前的获取祈愿历史链接的方式已不再有效，请按照以下指示的操作获取新的祈愿历史链接！"
       ],
       "faqs": {
         "title": "导入祈愿记录常见问题",
-        "q1": "这是怎么做到的?",
+        "q1": "这是怎么做到的？",
         "a1": "原神的祈愿历史记录是一个网页，所以你可以通过打开网页的网址来访问它。在打开祈愿历史页面时，将生成一个临时密钥，我们的导入程序将自动使用 HoYoVerse API 来获取抽卡记录。",
-        "q2": "安全吗? 会封号吗?",
+        "q2": "安全吗？会封号吗？",
         "a2": "Paimon.moe 与原神程序本身调取抽卡记录的方式是一致的，并且 Paimon.moe 没办法修改游戏资源文件或内存，整个流程应当是安全的。不过依然，如有疑问，我只能说风险自负（反正我的大号是一直这样用的）。你也可以手动上传你的数据 😀。",
-        "q3": "会被盗号吗?",
+        "q3": "会被盗号吗？",
         "a3": [
-          "Paimon.moe 从不会保存你的账号秘钥等个人信息（甚至你的UID和游戏名也不会），所以你的账号并不会被盗取。这个网站是开源的",
+          "Paimon.moe 从不会保存你的账号秘钥等个人信息（甚至你的UID和游戏名也不会），所以你的账号并不会被盗取。这个网站开源于",
           "；我不可能尝试盗号来毁自己名声。"
         ],
         "q4": "我查看了一下网站请求之类的，但为什么它用的是你的域名，而不是HoYoVerse API的？",
         "a4": [
-          "Paimon.moe 并不能直接向 HoYoVerse API 发出请求，因为",
-          "，所以链接会被重定向到 CORS 代理 来实现。你可以查看源代码",
+          "Paimon.moe 并不能直接向 HoYoVerse API 发出请求，因为存在",
+          "（跨域资源共享机制），所以链接会被重定向到 CORS 代理来实现。你可以查看源代码：",
           "在这里"
         ],
-        "q5": "网站会保存临时秘钥或祈愿记录吗?",
+        "q5": "网站会保存临时秘钥或祈愿记录吗？",
         "a5": [
           "Paimon.moe 不会存储秘钥，只会通过 HTTPS 递交你的 URL 给 CORS 代理以绕过 CORS 限制。若你提交记录到全球祈愿统计中，Paimon.moe 会保存你的 4* 记录，5* 记录，以及 5* 祈愿信息（没有其他个人信息记录！请查阅",
           "隐私政策",
@@ -231,7 +232,7 @@
         "pc2": [
           "打开原神客户端（如果你拥有多个米哈游通行证，重新启动游戏并登录到你希望的账号）",
           "打开祈愿记录的页面并等待祈愿记录的读取",
-          "打开Windows的「开始」菜单，搜索Powershell",
+          "打开Windows的“开始”菜单，搜索Powershell",
           "打开Windows Powershell，接着复制下方的脚本并粘贴到Powershell里",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
@@ -302,7 +303,7 @@
         ],
         "pclocal": [
           "如果你不想提供你的URL，你可以使用这个选项在你的电脑上本地处理祈愿历史记录。此脚本将读取您电脑上的日志文件以获取祈愿URL。",
-          "打开「开始」菜单，搜索Powershell",
+          "打开“开始”菜单，搜索Powershell",
           "打开Windows Powershell，然后复制粘贴脚本到Powershell里",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "你可以查看这个脚本",
@@ -324,9 +325,9 @@
       "wishtally": "WishTally文件",
       "notice": [
         "此功能还在测试中，请先在设置中导出到excel进行备份！",
-        "相同时间和奖励的祈愿不会被改变（不会重写已有的祈愿记录）",
+        "具有相同时间戳和物品名称的祈愿不会被改动（不会重写已有的祈愿记录）",
         "只会在后续添加和前置补充祈愿，不会在记录的中间插入内容",
-        "目前只支持文件名为英文的Excel文件"
+        "目前只支持记录内容为英文的Excel文件"
       ],
       "selectFile": {
         "default": "拖放 Paimon.moe 的 Excel 文件到此处，或点击这里选择",
@@ -344,8 +345,8 @@
       "success": "Excel 导入成功 😀！",
       "errorInvalidFile": "无效的excel文件",
       "errorReadExcel": "读取Excel文件时出错！",
-      "errorExcelPaimon": "这不是paimon.moe导出的excel",
-      "errorUnknownItem": "存在未知的奖励名称"
+      "errorExcelPaimon": "这不是 Paimon.moe 导出的 Excel 文件",
+      "errorUnknownItem": "存在未知的物品名称"
     },
     "help": {
       "title": "祈愿统计 帮助 & 设置",
@@ -356,22 +357,22 @@
       "import": "导入",
       "exportFinish": "导出成功，请等待浏览器下载文件！",
       "wishTallyTitle": "提交祈愿到全球统计",
-      "wishTally": "我们在统计全球的祈愿数据! 你可以提交你的记录参与进来. 所有祈愿数据会统一整合, 用来考察 paimon.moe 用户的平均情况.",
+      "wishTally": "我们在统计全球的祈愿数据！你可以提交你的记录参与进来。所有祈愿数据会统一整合，用来考察 Paimon.moe 用户的平均情况。",
       "wishTallyCollected": [
         "会被收集的内容:",
         "和",
         "你的祈愿记录"
       ],
       "wishTallySubmit": "提交祈愿到全球统计",
-      "wishTallyThankyou": "感谢你的参与!",
+      "wishTallyThankyou": "感谢你的参与！",
       "manualTitle": "手动输入设置",
       "enableManual": "启用手动输入",
       "notice": "并不建议同时使用自动导入与手动导入，二者混用还有待测试！",
-      "consider": "请优先考虑自动导入. 点击打开这份教程的按钮旁边的另一个按钮即可.",
+      "consider": "请优先考虑自动导入。点击打开该界面的按钮旁边的另一个按钮即可。",
       "howto": {
         "title": "如何使用手动导入",
-        "subtitle": "抽卡1次后:",
-        "pressWhenYouGet": "按 {button} 当你得到 {rarity}★",
+        "subtitle": "抽卡1次后：",
+        "pressWhenYouGet": "当你得到 {rarity}★ 时按 {button}",
         "p1": "会自动计算总抽数、5★ 以及 4★ 保底计数",
         "p2": [
           "当",
@@ -387,7 +388,7 @@
         ],
         "p5": [
           "你也可以按",
-          "按钮来手动修改数值!"
+          "按钮来手动修改数值！"
         ],
         "p6": [
           "点击按钮上的箭头来查看你的具体抽卡细节。会自动弹出提示你获得一个",
@@ -419,7 +420,7 @@
     },
     "tally": {
       "title": "祈愿统计",
-      "subtitle": "全球 paimon.moe 用户们提交的平均统计情况",
+      "subtitle": "全球 Paimon.moe 用户们提交的平均统计情况",
       "update": "更新于",
       "summoned": "被抽到",
       "wonFiftyFifty": "小保底没歪",
@@ -456,7 +457,7 @@
     "rank": {
       "level": "你的总抽卡排名",
       "based": "基于全球祈愿统计",
-      "current": "当前 {banner} 中位数是 {median} 抽",
+      "current": "当前{banner}中位数是 {median} 抽",
       "more": "你的抽卡次数多于 {percentage}% 的 Paimon.moe 用户",
       "less": "你的抽卡次数少于 {percentage}% 的 Paimon.moe 用户"
     }
@@ -464,7 +465,7 @@
   "calculator": {
     "titleWeapon": "武器计算器",
     "titleCharacter": "角色计算器",
-    "titleResin": "数值计算器",
+    "titleResin": "树脂计算器",
     "titleFriendship": "好感度计算器",
     "titleFate": "祈愿价格计算器",
     "titleFateCount": "攒球计算器",
@@ -553,7 +554,7 @@
       "currentExp": "当前经验值（拖动滑条）",
       "randomEventFarm": "每天完成几个随机事件？",
       "calculate": "计算",
-      "based": "基于AR等级:{ar}",
+      "based": "基于冒险等阶：{ar}",
       "change": "（可在设置中更改）",
       "result": "如果每天完成每日任务并使用180树脂，达到好感10需要的时间",
       "resultSerenitea": "如果你同时也把角色放在尘歌壶中（最大仙力）",
@@ -620,7 +621,7 @@
     ],
     "farmableToday": "今日可刷取",
     "resin": "树脂需求",
-    "based": "基于冒险等级:{ar} 和 世界等级:{wl}",
+    "based": "基于冒险等阶：{ar} 和世界等级：{wl}",
     "change": "（可在设置中更改）",
     "approximation": "掉率估算数值来自于",
     "delete": {
@@ -638,13 +639,15 @@
     "finished": "已结束"
   },
   "settings": {
-    "version": "数据版本:",
+    "version": "数据版本：",
     "multiple": "有多个账号？在这里切换来区分不同的祈愿历史记录和养成规划",
     "selectAccount": "选择你的账号",
     "reset": "重置",
     "delete": "删除",
     "add": "添加",
     "server": "选择服务器：",
+    "ar": "冒险等阶：",
+    "wl": "世界等级：",
     "drive": [
       "Paimon.moe 利用 Google 云端硬盘的应用数据文件夹来保存和同步你的祈愿记录和养成规划。",
       "Paimon.moe 只能读取和修改由本网站创建的文件。"
@@ -657,16 +660,20 @@
     "waiting": "等待中…",
     "syncing": "同步中…",
     "syncStatus": "同步状态：",
-    "lastSync": "上次同步:",
+    "lastSync": "上次同步：",
     "feedback": "如果你发现了 Bug、数据错误，或有其他问题要反馈，请留言至",
     "or": "或",
-    "thanks": "谢谢😁!",
+    "thanks": "谢谢😁！",
+    "setMainAccount": "设为主账号",
     "modal": {
       "notice": "所有养成规划和祈愿记录将被删除",
       "backup": "你可以通过导出Excel备份你的抽卡记录!",
+      "setMain": "更改主账号？",
+      "setMainNotice": "账号更改：",
       "cancel": "取消",
       "delete": "删除",
-      "reset": "重置"
+      "reset": "重置",
+      "continue": "继续"
     },
     "changelog": "更新日志",
     "exportDescription": "你可以在此处导出或导入 Paimon.moe 的数据",
@@ -675,23 +682,27 @@
     "download": "下载数据",
     "import": "导入数据",
     "selectFile": "选择 JSON 文件",
-    "exportInfo": "下载保存在Paimon.moe中的所有数据的副本",
+    "exportInfo": "下载保存在 Paimon.moe 中的所有数据的副本",
     "importWarning": "请记住先导出数据以备份！所有数据将被替换！",
     "importContinue": "继续",
     "importSuccess": "导入成功！5秒后将重新加载...",
     "importFailed": "导入失败！",
-    "email": "Email:"
+    "email": "邮箱：",
+    "mainAccountChanged": "主账号已更改，5秒后将重新加载…",
+    "dataDeleted": "数据已删除",
+    "dataReset": "数据已重置",
+    "accountAdded": "账号 {accountNumber} 已添加，请在账号列表中选择！"
   },
   "privacypolicy": {
     "title": "隐私政策",
-    "subtitle": "paimon.moe 会收集什么信息以及如何使用",
+    "subtitle": "Paimon.moe 收集的信息及其会被如何使用",
     "collect": [
       {
         "title": "Paimon.moe 中被点击的链接、引用页面、浏览器、操作系统、设备类型、来源国家",
         "content": [
           "Paimon.moe 使用",
           "plausible.io",
-          "（保护隐私分析方法）查看有多少人使用网站的什么功能，所以我们可以优先考虑要实现或改进的功能。"
+          "（一项保护隐私的分析服务）查看有多少人使用网站的什么功能，以便我们优先考虑要实现或改进的功能。"
         ]
       },
       {
@@ -699,7 +710,7 @@
         "content": [
           "Paimon.moe 会发送报错与异常情况到",
           "sentry.io",
-          "来追踪问题来源并修复."
+          "来追踪问题来源并修复。"
         ]
       },
       {
@@ -710,7 +721,7 @@
         ]
       }
     ],
-    "subtitleNotCollect": "paimon.moe 不会收集",
+    "subtitleNotCollect": "Paimon.moe 不会收集",
     "notCollect": [
       "Paimon.moe 不会保存任何密码、UID、邮箱、临时秘钥或反馈文件。如果你感兴趣，这个网站是开源的，你可以在这里查看源代码",
       "paimon-moe-api Github",
@@ -744,29 +755,29 @@
       "如果你想要捐赠，你的捐赠会一定会有利于改善这个网站并激励我为 Paimon.moe 加入更多的内容！非常感谢，希望你能喜欢，愿你用的开心！",
       "如果你喜欢编程开发，你也可以在这里为项目提供帮助"
     ],
-    "kofi": "在这里赞助 Ko-fi",
-    "trakteer": "在这里赞助 Trakteer",
+    "kofi": "在 Ko-fi 上赞助",
+    "trakteer": "在 Trakteer 上赞助",
     "crypto": "利用虚拟货币赞助"
   },
   "reminder": {
     "notSupported": "你的浏览器不支持推送通知，请更换其他浏览器！",
     "blocked": "通知被禁用了，计时提醒功能无法工作！请在浏览器上启用该功能。",
-    "desktop": "如果浏览器未运行，将无法接收通知!",
-    "early": "由于我们发送通知的方式，通知可能会提前到达（大约1-10分钟）",
-    "allowNotification": "请允许出现通知提示!",
+    "desktop": "如果浏览器未运行，将无法接收通知！",
+    "early": "由于我们发送通知的方式，通知可能会提前到达（大约1~10分钟）",
+    "allowNotification": "请允许显示通知提示！",
     "transformer": "参量质变仪使用提醒",
     "last": "输入上次使用参量质变仪的时间",
-    "lastHoyolab": "输入你想被提醒米游社签到的时间",
+    "lastHoyolab": "输入你想被提醒每日签到的时间",
     "every": "每天的",
     "countdown": "输入参量质变仪的倒计时（如果不记得确切时间，则需要近似值）",
     "useLast": "使用上次用它的时间",
     "useCountdown": "使用倒计时代替",
-    "set": "设置提醒器",
+    "set": "设置提醒",
     "checking": "检查已保存的提醒…",
-    "errorSelect": "请选择日期和时间!",
-    "errorSaving": "保存提醒器时出错了 🙁",
-    "current": "当前提醒器",
-    "hoyolab": "米游社每日签到提醒器",
+    "errorSelect": "请选择日期和时间！",
+    "errorSaving": "保存提醒时出错了 🙁",
+    "current": "当前提醒",
+    "hoyolab": "HoYoLAB（米游社）每日签到提醒",
     "comingsoon": "敬请期待"
   },
   "achievement": {
@@ -777,19 +788,20 @@
     "commissions": "委托",
     "version": "版本",
     "type": "类型",
-    "searchError": "未发现成就: {query}"
+    "searchError": "找不到成就： {query}"
   },
   "furnishing": {
     "title": "摆设",
     "name": "名称",
     "energy": "仙力",
     "load": "负荷",
+    "reduced": "多件负荷",
     "ratio": "性价比",
     "using": "数量",
     "interior": "室内",
     "exterior": "室外",
     "info": [
-      "这表明该区域可以承受多大的负荷. 每个家具都有一个隐藏的负荷值, 可以在下面查看.",
+      "这表明该区域可以承受多大的负荷。 每个摆设都有一个隐藏的负荷值，可以在下面查看。",
       "（最大值尚未确定！）"
     ],
     "hall": "大厅",
@@ -799,13 +811,13 @@
     "inventoryButton": "仓库",
     "listButton": "列表",
     "inventory": {
-      "title": "家具仓库",
+      "title": "摆设清单",
       "subtitle": "并未显示一些特殊分类例如墙壁",
       "all": "全部",
       "openSets": "打开套装"
     },
     "sets": {
-      "title": "家具套装",
+      "title": "摆设套装",
       "subtitle": "点击摆设图标查看详情，然后可以点击角色图标来标记！点击上面摆设清单按钮可以填写你拥有的摆设数量。",
       "setPlaced": "设为已放置",
       "setUnplaced": "设为未放置",
@@ -864,5 +876,8 @@
     "clear": "复原",
     "save": "保存",
     "cancel": "取消"
+  },
+  "radiantSpincrystal": {
+    "title": "旋曜玉帛"
   }
 }

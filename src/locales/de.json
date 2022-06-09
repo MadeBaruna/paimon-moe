@@ -14,6 +14,7 @@
     "weapons": "Waffen",
     "artifacts": "Artefakte",
     "fishing": "Angeln",
+    "radiantSpincrystal": "Strahlender Drehkristall",
     "settings": "Einstellungen",
     "donate": "Spenden"
   },
@@ -645,6 +646,8 @@
     "delete": "Löschen",
     "add": "Hinzufügen",
     "server": "Wählen Sie Ihren Server:",
+    "ar": "AR:",
+    "wl": "WL:",
     "drive": [
       "Paimon.moe verwendet das Anwendungsdatenverzeichnis auf Ihrem Google Drive um Ihren Wunschzähler und Ihre Todo-Liste zu speichern und zu synchronisieren.",
       "Paimon.moe kann nur Dateien lesen und schreiben, die diese Seite erstellt hat."
@@ -661,12 +664,16 @@
     "feedback": "Falls du irgendwelche Fehler oder falsche Daten gefunden hast oder ein Feedback geben willst, meld dich gerne",
     "or": "oder",
     "thanks": "Vielen Dank😁!",
+    "setMainAccount": "Als Haupt-Konto setzen",
     "modal": {
       "notice": "Sämtliche Todo- und Wunschhistoriendaten werden gelöscht werden",
       "backup": "Sie können Ihre Wunschhistorie zuerst sichern, indem Sie sie in eine Excel-Datei exportieren!",
+      "setMain": "Haupt-Konto wechseln?",
+      "setMainNotice": "Diese Konten werden getäuscht:",
       "cancel": "Abbrechen",
       "delete": "Löschen",
-      "reset": "Zurücksetzen"
+      "reset": "Zurücksetzen",
+      "continue": "Weiter"
     },
     "changelog": "Was ist neu?",
     "exportDescription": "Hier können Sie Ihre Paimon. Moe-Daten exportieren und importieren",
@@ -680,7 +687,11 @@
     "importContinue": "Weiter",
     "importSuccess": "Import erfolgreich! Laden in 5 Sekunden neu...",
     "importFailed": "Import fehlgeschlagen!",
-    "email": "E-Mail:"
+    "email": "E-Mail:",
+    "mainAccountChanged": "Haupt-Konto geändert, wird in 5 Sekunden neu geladen...",
+    "dataDeleted": "Kontodaten wurde gelöscht",
+    "dataReset": "Kontodaten wurde zurückgesetzt",
+    "accountAdded": "Konto {accountNumber} wird hinzugefügt, wähle es in der Kontoliste aus!"
   },
   "privacypolicy": {
     "title": "Datenschutzrichtlinie",
@@ -784,6 +795,7 @@
     "name": "Name",
     "energy": "Energie",
     "load": "Last",
+    "reduced": "Reduziert",
     "ratio": "Verhältnis",
     "using": "Betrag",
     "interior": "Innere",
@@ -864,5 +876,8 @@
     "clear": "Löschen",
     "save": "Speichern",
     "cancel": "Abbrechen"
+  },
+  "radiantSpincrystal": {
+    "title": "Strahlender Drehkristall"
   }
 }

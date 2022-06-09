@@ -14,6 +14,7 @@
     "weapons": "Armas",
     "artifacts": "Artefactos",
     "fishing": "Pesca",
+    "radiantSpincrystal": "Girocristal radiante",
     "settings": "Configuración",
     "donate": "Donar"
   },
@@ -184,7 +185,7 @@
       "header": [
         "Importa y realiza un backup de tu historial de deseos de Genshin Impact para guardarlo por más de 6 meses. ¡También registra tu pity y estadísticas sobre tus deseos automáticamente!",
         "También puedes activar Drive Sync en Configuración y hacer un backup de tu historial de deseos en tu Google Drive",
-        ""
+        "Por favor, ten en cuenta que el antiguo enlace de feedback ya no funciona, por favor sigue las nuevas instrucciones a continuación!"
       ],
       "faqs": {
         "title": "FAQ del importado de deseos",
@@ -288,7 +289,7 @@
           "Haga clic en Sniff History > Elija una solicitud que finalice por .json (el enlace comienza con https://hk4e-api-os.mihoyo.com/)",
           "Haga clic en la pestaña Solicitud, luego copie el enlace y péguelo abajo",
           "Pegar link aquí... https://hk4e-api-os.mihoyo.com...",
-          "",
+          "Si tienes algún problema, consulta la guía de resolución de problemas",
           ""
         ],
         "ps": [
@@ -445,20 +446,20 @@
       "Los datos son guardados en tu navegador, por lo que ¡serán borrados si limpias la caché de tu navegador! ¡Habilita la sincronización de Google Drive en Configuración para salvaguardar tus datos!"
     ],
     "rateon": {
-      "won": "",
-      "lost": "",
-      "guaranteed": ""
+      "won": "50:50 Ganado",
+      "lost": "50:50 perdido",
+      "guaranteed": "Garantizado"
     },
     "backupReminder": {
       "title": "¡Todos los datos están guardados en tu navegador!",
-      "desc": ""
+      "desc": "Así que si por casualidad se eliminó la caché del navegador, su historial de deseos desaparecerá! Puede habilitar la sincronización de Google Drive en el menú Configuración para hacer una copia de seguridad de sus datos o descargar los datos manualmente allí."
     },
     "rank": {
-      "level": "",
-      "based": "",
-      "current": "",
-      "more": "",
-      "less": ""
+      "level": "Tu rango total de tiradas",
+      "based": "Basado en estadísticas globales de deseos",
+      "current": "La media actual de {banner} es {median} tiradas",
+      "more": "Tienes más tiradas que el {percentage}% de usuarios de paimon.moe",
+      "less": "Tienes menos tiradas que el {percentage}% de usuarios de paimon.moe"
     }
   },
   "calculator": {
@@ -645,6 +646,8 @@
     "delete": "Borrar",
     "add": "Añadir",
     "server": "Selecciona tu servidor:",
+    "ar": "Rango de aventura:",
+    "wl": "Nivel de mundo:",
     "drive": [
       "Paimon.moe utiliza el Directorio de Datos de Aplicación en tu Google Drive para guardar y sincronizar tu contador de deseos y tu lista de tareas.",
       "Paimon.moe sólo puede leer y escribir archivos creados por este sitio."
@@ -661,12 +664,16 @@
     "feedback": "Si encuentras algún error, datos erróneos, o algún otro comentario, por favor, deja un mensaje en",
     "or": "o",
     "thanks": "Gracias😁!",
+    "setMainAccount": "Establecer como cuenta principal",
     "modal": {
       "notice": "Todas las Tareas Pendientes y los datos del Historial de Deseos serán borrados",
       "backup": "¡Puedes hacer una copia de seguridad de tu historial de deseos inicialmente exportándolo a un archivo excel!",
+      "setMain": "¿Cambiar cuenta principal?",
+      "setMainNotice": "Esto cambiará la cuenta:",
       "cancel": "Cancelar",
       "delete": "Borrar",
-      "reset": "Reiniciar"
+      "reset": "Reiniciar",
+      "continue": "Continuar"
     },
     "changelog": "Changelog",
     "exportDescription": "Puedes exportar e importar tus datos de Paimon.moe aquí",
@@ -680,7 +687,11 @@
     "importContinue": "Continuar",
     "importSuccess": "¡Importación correcta! Recargando en 5 segundos...",
     "importFailed": "¡Importación fallida!",
-    "email": "Correo electrónico:"
+    "email": "Correo electrónico:",
+    "mainAccountChanged": "Cuenta principal cambiada, recargando en 5 segundos...",
+    "dataDeleted": "Los datos han sido eliminados",
+    "dataReset": "Los datos han sido reiniciados",
+    "accountAdded": "Cuenta {accountNumber} añadida, selecciónala en la lista de cuentas!"
   },
   "privacypolicy": {
     "title": "Política de privacidad",
@@ -784,6 +795,7 @@
     "name": "Nombre",
     "energy": "Energía",
     "load": "Carga",
+    "reduced": "Reducido",
     "ratio": "Relación",
     "using": "Cantidad",
     "interior": "Interior",
@@ -864,5 +876,8 @@
     "clear": "Borrar",
     "save": "Guardar",
     "cancel": "Cancelar"
+  },
+  "radiantSpincrystal": {
+    "title": "Girocristal radiante"
   }
 }

@@ -14,6 +14,7 @@
     "weapons": "Senjata",
     "artifacts": "Artifak",
     "fishing": "Memancing",
+    "radiantSpincrystal": "Radiant Spincrystal",
     "settings": "Pengaturan",
     "donate": "Donasi"
   },
@@ -645,6 +646,8 @@
     "delete": "Hapus",
     "add": "Tambah",
     "server": "Pilih server mu:",
+    "ar": "AR:",
+    "wl": "WL:",
     "drive": [
       "Paimon.moe menggunakan folder Application Data di Google Drive mu untuk menyimpan riwayat wish dan todo list.",
       "Paimon.moe hanya bisa membaca dan menulis file yang dibuat oleh website ini."
@@ -661,12 +664,16 @@
     "feedback": "Jika kamu menemukan bug, data yang salah, atau ada feedback, kamu bisa chat di",
     "or": "atau",
     "thanks": "Terima Kasih!",
+    "setMainAccount": "Atur Sebagai Akun Utama",
     "modal": {
       "notice": "Semua todo dan riwayat wish akan dihapus",
       "backup": "Kamu bisa backup dulu riwayat history dengan mengexport nya ke file excel!",
+      "setMain": "Ganti akun utama?",
+      "setMainNotice": "Ini akan mengubah akun:",
       "cancel": "Batal",
       "delete": "Hapus",
-      "reset": "Reset"
+      "reset": "Reset",
+      "continue": "Lanjutkan"
     },
     "changelog": "Changelog",
     "exportDescription": "Kamu bisa export dan import data Paimon.moe mu disini",
@@ -680,7 +687,11 @@
     "importContinue": "Lanjutkan",
     "importSuccess": "Import berhasil! Halaman akan refresh dalam 5 detik...",
     "importFailed": "Import Gagal!",
-    "email": "Email:"
+    "email": "Email:",
+    "mainAccountChanged": "Akun utama dirubah, reload dalam 5 detik...",
+    "dataDeleted": "Data sudah dihapus",
+    "dataReset": "Data sudah direset",
+    "accountAdded": "Akun {accountNumber} ditambahkan, silahkan pilih di daftar akun!"
   },
   "privacypolicy": {
     "title": "Kebijakan Privasi",
@@ -784,6 +795,7 @@
     "name": "Nama",
     "energy": "Energi",
     "load": "Beban",
+    "reduced": "Dikurangi",
     "ratio": "Rasio",
     "using": "Jumlah",
     "interior": "Interior",
@@ -864,5 +876,8 @@
     "clear": "Hapus",
     "save": "Simpan",
     "cancel": "Batal"
+  },
+  "radiantSpincrystal": {
+    "title": "Radiant Spincrystal"
   }
 }

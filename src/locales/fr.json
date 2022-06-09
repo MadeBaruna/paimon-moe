@@ -14,6 +14,7 @@
     "weapons": "Armes",
     "artifacts": "Artéfacts",
     "fishing": "Pêche",
+    "radiantSpincrystal": "Gyrocristal radiant",
     "settings": "Paramètres",
     "donate": "Donner"
   },
@@ -454,11 +455,11 @@
       "desc": "Si toutefois le cache du navigateur est supprimé, votre historique de vœux le sera également ! Vous pouvez activer la synchronisation Google Drive dans le menu Réglages pour sauvegarder vos données, ou les télécharger manuellement."
     },
     "rank": {
-      "level": "",
+      "level": "Votre classement au nombre total de Vœux",
       "based": "Basé sur les statistiques de vœux au niveau mondial",
       "current": "La médiane actuelle de {banner} est de {median} tirages",
-      "more": "",
-      "less": ""
+      "more": "Vous avez fait plus de vœux que {percentage}% des utilisateurs de paimon.moe",
+      "less": "Vous avez fait moins de vœux que {percentage}% des utilisateurs de paimon.moe"
     }
   },
   "calculator": {
@@ -645,6 +646,8 @@
     "delete": "Supprimer",
     "add": "Ajouter",
     "server": "Sélectionner votre serveur:",
+    "ar": "Niveau d'aventure :",
+    "wl": "Niveau de monde :",
     "drive": [
       "Paimon.moe utilise l'Application Data Directory sur votre Google Drive pour sauvegarder et synchroniser vos voeux et vos listes de tâches.",
       "Paimon.moe peut uniquement lire et modifier les fichiers que le site a créé."
@@ -661,12 +664,16 @@
     "feedback": "Si vous trouvez des bugs, données incorrectes ou voulez donner vos retours, laissez un message sur",
     "or": "ou",
     "thanks": "Merci 😁!",
+    "setMainAccount": "Définir comme compte principal",
     "modal": {
       "notice": "Toutes les listes de tâches et l'historique des voeux seront supprimés",
       "backup": "Vous pouvez sauvegarder votre historique de voeux avant en l'exportant dans un fichier excel !",
+      "setMain": "Modifier le compte principal?",
+      "setMainNotice": "Ceci va changer le compte:",
       "cancel": "Annuler",
       "delete": "Supprimer",
-      "reset": "Réinitialiser"
+      "reset": "Réinitialiser",
+      "continue": "Continuer"
     },
     "changelog": "Changelog / Journal des modifications",
     "exportDescription": "Vous pouvez exporter et importer vos données Paimon.moe ici",
@@ -680,7 +687,11 @@
     "importContinue": "Continuer",
     "importSuccess": "Importation réussie! Rechargement dans 5 secondes...",
     "importFailed": "L'importation a échoué !",
-    "email": "E-mail :"
+    "email": "E-mail :",
+    "mainAccountChanged": "Compte principal changé, rechargement dans 5 secondes...",
+    "dataDeleted": "Les données ont été supprimées",
+    "dataReset": "Les données ont été réinitialisées",
+    "accountAdded": "Compte {accountNumber} ajouté, sélectionnez-le dans la liste des comptes!"
   },
   "privacypolicy": {
     "title": "Politique de confidentialité",
@@ -784,6 +795,7 @@
     "name": "Nom",
     "energy": "Énergie",
     "load": "Charge",
+    "reduced": "Réduit",
     "ratio": "Ratio",
     "using": "Quantité",
     "interior": "Intérieur",
@@ -864,5 +876,8 @@
     "clear": "Effacer",
     "save": "Sauvegarder",
     "cancel": "Annuler"
+  },
+  "radiantSpincrystal": {
+    "title": "Gyrocristaux radiants"
   }
 }

@@ -14,6 +14,7 @@
     "weapons": "武器",
     "artifacts": "聖遺物",
     "fishing": "釣り",
+    "radiantSpincrystal": "旋曜玉帛",
     "settings": "設定",
     "donate": "寄付"
   },
@@ -645,6 +646,8 @@
     "delete": "削除",
     "add": "追加",
     "server": "サーバー選択：",
+    "ar": "冒険ランク:",
+    "wl": "世界ランク:",
     "drive": [
       "Paimon.moeは、Google Drive上のアプリケーションデータディレクトリーを使用して、祈願記録やTodoリストの保存と同期を行っています。",
       "Paimon.moeは、このサイトが作成したファイルしか読み書きできません。"
@@ -661,12 +664,16 @@
     "feedback": "もしバグや間違ったデータを見つけたり、その他のフィードバックがあれば",
     "or": "や",
     "thanks": "へ連絡してください😁！",
+    "setMainAccount": "メインアカウントとして設定",
     "modal": {
       "notice": "全ての祈願記録やTodoは削除されます",
       "backup": "実行する前にExcelファイルにエクスポートして、祈願記録のバックアップを取ることをおすすめします！",
+      "setMain": "メインアカウントを変更しますか？",
+      "setMainNotice": "以下の通りでアカウントを変更します:",
       "cancel": "キャンセル",
       "delete": "削除する",
-      "reset": "初期化"
+      "reset": "初期化",
+      "continue": "次へ進む"
     },
     "changelog": "更新履歴",
     "exportDescription": "Paimon.moeのデータをここでエクスポート＆インポートできます",
@@ -680,7 +687,11 @@
     "importContinue": "次へ進む",
     "importSuccess": "インポートに成功しました！5秒後に再読み込みします...",
     "importFailed": "インポートに失敗しました！",
-    "email": "Eメールアドレス："
+    "email": "Eメールアドレス：",
+    "mainAccountChanged": "メインアカウントが変更されました。5秒後に再読み込みします...",
+    "dataDeleted": "データが削除されました。",
+    "dataReset": "データが初期化されました。",
+    "accountAdded": "アカウント {accountNumber} が追加されました。アカウントリストから選択してください！"
   },
   "privacypolicy": {
     "title": "プライバシーポリシー",
@@ -784,6 +795,7 @@
     "name": "名前",
     "energy": "仙力",
     "load": "負荷",
+    "reduced": "軽減",
     "ratio": "コスパ",
     "using": "数量",
     "interior": "屋内",
@@ -864,5 +876,8 @@
     "clear": "クリア",
     "save": "保存",
     "cancel": "キャンセル"
+  },
+  "radiantSpincrystal": {
+    "title": "旋曜玉帛"
   }
 }
