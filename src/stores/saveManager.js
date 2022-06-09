@@ -2,6 +2,7 @@ import dayjs from 'dayjs';
 import { writable } from 'svelte/store';
 import debounce from 'lodash/debounce';
 import localforage from 'localforage';
+import { t as $t } from 'svelte-i18n';
 
 import { synced, saveId, localModified, lastSyncTime, driveSignedIn } from './dataSync';
 import { pushToast } from './toast';
@@ -11,6 +12,9 @@ export const fromRemote = writable(false);
 
 export const UPDATE_TIME_KEY = 'update-time';
 export const CONVERTED_KEY = 'converted';
+
+let t;
+$t.subscribe((f) => (t = f));
 
 let saveFileId = '';
 let signedIn = false;
@@ -43,7 +47,7 @@ async function saveData(data) {
     synced.set(true);
     localModified.set(false);
 
-    pushToast('Data has been synced!');
+    pushToast(t('common.dataSynced'));
   } catch (err) {
     console.error(err);
     pushToast('Error when uploading your data!', 'error');

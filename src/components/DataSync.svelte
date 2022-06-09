@@ -59,7 +59,7 @@
     driveLoading.set(false);
     driveError.set(true);
     synced.set(true);
-    pushToast('Drive sync not available right now 😔', 'error');
+    pushToast($t('common.driveError'), 'error');
   }
 
   function handleClientLoad() {
@@ -224,7 +224,7 @@
         );
       } else {
         synced.set(true);
-        pushToast('Data has been synced!');
+        pushToast($t('common.dataSynced'));
       }
     } catch (err) {
       console.error(err);

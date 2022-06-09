@@ -879,5 +879,9 @@
   },
   "radiantSpincrystal": {
     "title": "Radiant Spincrystals"
+  },
+  "common": {
+    "dataSynced": "Data has been synced!",
+    "driveError": "Drive sync not available right now 😔"
   }
 }
