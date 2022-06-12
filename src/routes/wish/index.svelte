@@ -32,6 +32,7 @@
     'weapon-event': 0,
     standard: 0,
   };
+  let wishPercentage;
 
   const path = 'wish-counter-setting';
 
@@ -115,6 +116,11 @@
     if (type === 'character-event') {
       rank.getData();
     }
+  }
+
+  function setRankWishPercentage(event) {
+    wishPercentage = event.detail;
+    rank.getDataLuckAll(event.detail);
   }
 
   function closeImportModal() {
@@ -220,12 +226,12 @@
           name={$t('wish.types.beginners')}
         />
         <MonthlyGraph bind:data={monthlyData} />
-        <Rank bind:this={rank} {wishTotal} />
+        <Rank bind:this={rank} {wishTotal} {wishPercentage} />
         <div class="mt-4 flex justify-center">
           <Ad type="mobile" variant="mpu" id="1" />
         </div>
       </div>
-      <Summary bind:monthlyData />
+      <Summary bind:monthlyData on:summaryread={(val) => setRankWishPercentage(val)} />
     </div>
     <div class="hidden md:flex flex-1">
       <Ad class="ml-4" type="desktop" variant="mpu" id="1" />

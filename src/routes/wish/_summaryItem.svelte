@@ -8,7 +8,7 @@
   export let type;
 
   let numberFormat = Intl.NumberFormat('en', {
-    maximumFractionDigits: 1,
+    maximumFractionDigits: 2,
     minimumFractionDigits: 0,
   });
 

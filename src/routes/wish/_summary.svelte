@@ -1,7 +1,7 @@
 <script>
   import { t } from 'svelte-i18n';
 
-  import { onMount } from 'svelte';
+  import { createEventDispatcher, onMount } from 'svelte';
   import dayjs from 'dayjs';
   import debounce from 'lodash/debounce';
 
@@ -15,6 +15,8 @@
   import Icon from '../../components/Icon.svelte';
   import { mdiEarth } from '@mdi/js';
 
+  const dispatch = createEventDispatcher();
+
   let numberFormat = Intl.NumberFormat();
 
   export let monthlyData = {};
@@ -24,6 +26,7 @@
   let loading = true;
   let wishCount = 0;
   const avg = {};
+  const percentages = {};
 
   const readDebounced = debounce(() => {
     readLocalData();
@@ -78,8 +81,6 @@
       manual: 0,
     },
   };
-
-  
 
   export async function readLocalData() {
     let totalWish = 0;
@@ -209,6 +210,11 @@
             pulls: legendaryPulls,
           },
         };
+
+        percentages[type.id] = {
+          legendary: avg[type.id].legendary.percentage,
+          rare: avg[type.id].rare.percentage,
+        };
       }
     }
 
@@ -221,10 +227,10 @@
       await updateSave(`${prefix}collectables-updated`, false);
     }
 
-    // console.log(avg);
+    dispatch('summaryread', percentages);
+
     loading = false;
   }
-
 </script>
 
 {#if !loading}
