@@ -507,7 +507,7 @@
                 <Icon className={rarityColor[weaponList[weapon.id].rarity]} path={mdiStar} size={0.8} />
                 <img class="h-8 mr-2 ml-2" src="/images/weapons/{weapon.id}.png" alt={weaponList[weapon.id].name} />
                 <p class="pl-1 pr-2" style="padding-top: 2px;">
-                  <span>{weaponList[weapon.id].name}</span>
+                  <span>{$t(weaponList[weapon.id].name)}</span>
                   {#if weapon.refine}
                     <span class="ml-2 bg-blue-300 rounded-md px-1 text-sm text-gray-900"
                       >R{weapon.refine.join('-')}</span
