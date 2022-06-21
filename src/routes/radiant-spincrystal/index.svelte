@@ -83,9 +83,9 @@
     </p>
   </div>
   <div class="pt-4 space-y-1 max-w-lg">
-    {#each spincrystals as crystal (crystal.number)}
+    {#each spincrystals as crystal}
       <div class="bg-item rounded-xl p-2 flex items-center text-white">
-        <p class="font-black text-2xl w-16 text-center">{crystal.number}</p>
+        <p class="font-black text-2xl w-16 text-center">{crystal.number === 0 ? '#' : crystal.number}</p>
         <div class="flex flex-col flex-1 pr-2 justify-center text-gray-400 text-xs md:text-base">
           <div class="flex items-center mb-1">
             <div class="w-6 h-6">
@@ -93,22 +93,38 @@
             </div>
             <p class="pl-1 text-white text">{crystal.song}</p>
           </div>
-          <a
-            href="https://genshin-impact.fandom.com/wiki/Radiant_Spincrystal_{crystal.number}"
-            target="_blank"
-            class="flex items-center group"
-          >
-            <div class="w-6 h-6 group-hover:text-primary">
-              <Icon size={0.9} path={mdiMapMarker} />
+          {#if crystal.number === 0}
+            <div class="flex items-center group">
+              <div class="w-6 h-6">
+                <Icon size={0.9} path={mdiMapMarker} />
+              </div>
+              <p class="px-1 text-white leading text">
+                {crystal.source}
+              </p>
             </div>
-            <p class="px-1 text-white group-hover:text-primary leading text">
-              {crystal.source}
-              <span class="text-gray-400 group-hover:text-primary"><Icon path={mdiOpenInNew} size={0.7} /></span>
-            </p>
-          </a>
+          {:else}
+            <a
+              href="https://genshin-impact.fandom.com/wiki/Radiant_Spincrystal_{crystal.number}"
+              target="_blank"
+              class="flex items-center group"
+            >
+              <div class="w-6 h-6 group-hover:text-primary">
+                <Icon size={0.9} path={mdiMapMarker} />
+              </div>
+              <p class="px-1 text-white group-hover:text-primary leading text">
+                {crystal.source}
+                <span class="text-gray-400 group-hover:text-primary"><Icon path={mdiOpenInNew} size={0.7} /></span>
+              </p>
+            </a>
+          {/if}
         </div>
         <div>
-          <Check inverted checked={checkList[crystal.number]} on:change={() => toggle(crystal.number)} />
+          <Check
+            inverted
+            disabled={crystal.number === 0}
+            checked={crystal.number === 0 || checkList[crystal.number]}
+            on:change={() => toggle(crystal.number)}
+          />
         </div>
       </div>
     {/each}
