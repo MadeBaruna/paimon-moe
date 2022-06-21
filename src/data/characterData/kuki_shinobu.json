@@ -1155,9 +1155,7 @@
           4.270410060882568
         ]
       ]
-    ],
-    "books": {},
-    "bossItem": "tears_of_the_calamitous_god"
+    ]
   },
   "elementalSkill": {
     "name": "Sanctifying Ring",
@@ -1476,8 +1474,6 @@
           15
         ]
       ]
-    ],
-    "books": {},
-    "bossItem": "tears_of_the_calamitous_god"
+    ]
   }
 }

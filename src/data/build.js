@@ -1244,6 +1244,23 @@ export const builds = {
       },
     },
   },
+  kuki_shinobu: {
+    roles: {
+      TBD: {
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: 'TBD',
+          goblet: 'TBD',
+          circlet: 'TBD',
+        },
+        subStats: ['TBD'],
+        talent: [],
+        tip: '',
+        note: '',
+      },
+    },
+  },
   traveler_electro: {
     roles: {
       SUPPORT: {

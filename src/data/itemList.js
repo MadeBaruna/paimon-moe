@@ -885,6 +885,7 @@ export const itemList = {
   gloomy_statuette: { id: 'gloomy_statuette', name: 'Gloomy Statuette' },
   dark_statuette: { id: 'dark_statuette', name: 'Dark Statuette' },
   deathly_statuette: { id: 'deathly_statuette', name: 'Deathly Statuette' },
+  tears_of_the_calamitous_god: { id: 'tears_of_the_calamitous_god', name: 'Tears of the Calamitous God' },
 
   runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
 };

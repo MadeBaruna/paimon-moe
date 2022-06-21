@@ -3339,6 +3339,151 @@ export const characters = {
     },
     element: elements.electro,
   },
+  kuki_shinobu: {
+    id: 'kuki_shinobu',
+    name: 'Kuki Shinobu',
+    rarity: 4,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12289,
+      atk: 212,
+      def: 751,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.naku_weed,
+            amount: 3,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 2,
+          },
+          {
+            item: itemList.naku_weed,
+            amount: 10,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 4,
+          },
+          {
+            item: itemList.naku_weed,
+            amount: 20,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 8,
+          },
+          {
+            item: itemList.naku_weed,
+            amount: 30,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 12,
+          },
+          {
+            item: itemList.naku_weed,
+            amount: 45,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 20,
+          },
+          {
+            item: itemList.naku_weed,
+            amount: 60,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.spectral_husk, itemList.spectral_heart, itemList.spectral_nucleus],
+      book: [itemList.teachings_of_elegance, itemList.guide_to_elegance, itemList.philosophies_of_elegance],
+      boss: itemList.tears_of_the_calamitous_god,
+    },
+    element: elements.electro,
+  },
   lisa: {
     id: 'lisa',
     name: 'Lisa',
