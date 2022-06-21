@@ -6,6 +6,7 @@
 
   export let avg;
   export let type;
+  export let order = 0;
   export let legendaryPity = 90;
   export let colorMultiplier = 120;
 
@@ -22,7 +23,10 @@
   $: textSize = avg.legendary.total > 20 ? 'text-sm' : 'text-base';
 </script>
 
-<div class="bg-item rounded-xl p-4 flex flex-col w-full" style="height: min-content;">
+<div
+  class="bg-item rounded-xl p-4 flex flex-col w-full half-width summary-item"
+  style="height: min-content; order: {order};"
+>
   <table>
     <tr>
       <td class="text-white text-md font-semibold pr-2 md:pr-4 flex-1 w-full">{$t(`wish.types.${type.id}`)}</td>
@@ -123,5 +127,15 @@
   ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.35);
     @apply rounded-xl;
+  }
+
+  @screen md {
+    .summary-item {
+      margin: 0;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      margin-bottom: 1rem;
+      break-inside: avoid;
+    }
   }
 </style>

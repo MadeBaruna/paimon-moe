@@ -234,32 +234,51 @@
 </script>
 
 {#if !loading}
-  <div class="flex flex-col space-y-4">
-    {#if avg[types[0].id]}
-      <SummaryItem avg={avg[types[0].id]} type={types[0]} />
-    {/if}
-    {#if avg[types[1].id]}
-      <SummaryItem avg={avg[types[1].id]} type={types[1]} legendaryPity={80} />
-    {/if}
-  </div>
-  <div class="flex flex-col space-y-4">
-    {#if avg[types[2].id]}
-      <SummaryItem avg={avg[types[2].id]} type={types[2]} />
-    {/if}
-    {#if avg[types[3].id]}
-      <SummaryItem avg={avg[types[3].id]} type={types[3]} />
-    {/if}
-    <div class="bg-item rounded-xl p-4 flex items-center w-full text-white" style="height: min-content;">
-      {$t('wish.wishesWorth')} <img class="w-4 h-4 mx-2" src="/images/primogem.png" alt="primogem" />
-      {numberFormat.format(wishCount * 160)}
+  <div class="col-span-1 md:col-span-2 w-full">
+    <div class="container">
+      {#if avg[types[0].id]}
+        <SummaryItem avg={avg[types[0].id]} type={types[0]} order={1} />
+      {/if}
+      {#if avg[types[2].id]}
+        <SummaryItem avg={avg[types[2].id]} type={types[2]} order={3} />
+      {/if}
+      {#if avg[types[1].id]}
+        <SummaryItem avg={avg[types[1].id]} type={types[1]} legendaryPity={80} order={2} />
+      {/if}
+      <div class="order-4">
+        {#if avg[types[3].id]}
+          <SummaryItem avg={avg[types[3].id]} type={types[3]} />
+          <div class="h-4 md:h-0" />
+        {/if}
+        <div class="flex flex-col">
+          <div class="bg-item rounded-xl p-4 flex items-center w-full text-white mb-4" style="height: min-content;">
+            {$t('wish.wishesWorth')} <img class="w-4 h-4 mx-2" src="/images/primogem.png" alt="primogem" />
+            {numberFormat.format(wishCount * 160)}
+          </div>
+          <a
+            href="/wish/tally"
+            class="bg-item rounded-xl p-4 flex items-center w-full text-white hover:text-primary"
+            style="height: min-content;"
+          >
+            <Icon path={mdiEarth} className="mr-2" />
+            {$t('wish.globalWishTally')}
+          </a>
+        </div>
+      </div>
     </div>
-    <a
-      href="/wish/tally"
-      class="bg-item rounded-xl p-4 flex items-center w-full text-white hover:text-primary"
-      style="height: min-content;"
-    >
-      <Icon path={mdiEarth} className="mr-2" />
-      {$t('wish.globalWishTally')}
-    </a>
   </div>
 {/if}
+
+<style>
+  .container {
+    @apply flex flex-col gap-4;
+  }
+
+  @screen md {
+    .container {
+      @apply block gap-0;
+      column-count: 2;
+      column-gap: 1rem;
+    }
+  }
+</style>

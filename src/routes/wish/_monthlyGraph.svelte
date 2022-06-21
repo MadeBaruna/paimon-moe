@@ -83,6 +83,6 @@
   $: data, createGraph();
 </script>
 
-<div class="flex flex-col bg-item rounded-xl p-4 w-full mt-4" style="height: 200px;">
+<div class="flex flex-col bg-item rounded-xl p-4 w-full" style="height: 200px;">
   <canvas width="500" height="200" bind:this={chart} />
 </div>
