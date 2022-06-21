@@ -239,7 +239,7 @@
       <SummaryItem avg={avg[types[0].id]} type={types[0]} />
     {/if}
     {#if avg[types[1].id]}
-      <SummaryItem avg={avg[types[1].id]} type={types[1]} />
+      <SummaryItem avg={avg[types[1].id]} type={types[1]} legendaryPity={80} />
     {/if}
   </div>
   <div class="flex flex-col space-y-4">

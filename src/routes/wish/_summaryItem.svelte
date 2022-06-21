@@ -6,6 +6,8 @@
 
   export let avg;
   export let type;
+  export let legendaryPity = 90;
+  export let colorMultiplier = 120;
 
   let numberFormat = Intl.NumberFormat('en', {
     maximumFractionDigits: 2,
@@ -13,7 +15,7 @@
   });
 
   function calculateColor(percentage) {
-    const hue = percentage * 120;
+    const hue = percentage * colorMultiplier;
     return `color: hsl(${hue}, 100%, 60%);`;
   }
 
@@ -85,7 +87,8 @@
     <div class="flex flex-wrap mt-2 overflow-y-auto" style="max-height: 500px;">
       {#each avg.legendary.pulls as pull}
         <span class="pity {textSize}"
-          >{$t(pull.name)} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span
+          >{$t(pull.name)}
+          <span style={calculateColor((legendaryPity - pull.pity) / legendaryPity)}>{pull.pity}</span></span
         >
       {/each}
     </div>
