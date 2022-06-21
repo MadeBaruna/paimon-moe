@@ -436,10 +436,6 @@
       "description": "Each 1% above 100% Energy Recharge that the Raiden Shogun possesses grants her:\\n·0.6% greater Energy restoration from <span style=\"color: #FFD780FF;\">Musou Isshin</span>\\n·0.4% <span style=\"color: #FFACFFFF;\">Electro DMG Bonus</span>."
     },
     {
-      "name": "",
-      "description": ""
-    },
-    {
       "name": "All-Preserver",
       "description": "Mora expended when ascending Swords and Polearms is decreased by 50%."
     }
