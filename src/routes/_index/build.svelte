@@ -10,7 +10,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const promoted = ['xiao'];
+  const promoted = ['arataki_itto'];
   let current = 0;
 
   async function change(index) {

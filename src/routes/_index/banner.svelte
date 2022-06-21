@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yelan: {
-      name: 'Yelan',
+    arataki_itto: {
+      name: 'Arataki Itto',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    xiao: {
-      name: 'xiao',
+    kuki_shinobu: {
+      name: 'Kuki Shinobu',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300030;
-  const image = 'yelanxiao.png';
+  const bannerId = 300031;
+  const image = 'itto_kuki.png';
   const width = 800;
-  const height = 455;
+  const height = 464;
 
   let loading = true;
   let user = '';
@@ -90,7 +90,7 @@
               {item.count}
             {/if}
           </h3>
-          <p class="mr-4 font-sm leading-2 text-right">{item.name}</p>
+          <p class="mr-4 font-sm leading-2 text-right">{$t(item.name)}</p>
         </div>
       {/each}
     </div>
