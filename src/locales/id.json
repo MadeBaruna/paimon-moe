@@ -461,7 +461,6 @@
       "current": "Median {banner} saat ini {median} pull",
       "more": "Kamu wish lebih banyak dari {percentage}% pengguna paimon.moe",
       "less": "Kamu wish lebih sedikit dari {percentage}% pengguna paimon.moe",
-      "luck": "Ranking Keberuntunganmu",
       "currentLuck": "Median {banner} saat ini {median}%",
       "totalPull": "Total Wish",
       "luck5": "Keberuntungan 5★",
@@ -891,5 +890,9 @@
   },
   "radiantSpincrystal": {
     "title": "Radiant Spincrystal"
+  },
+  "common": {
+    "dataSynced": "Data sudah disinkronkan!",
+    "driveError": "Drive Sync tidak tersedia saat ini 😔"
   }
 }

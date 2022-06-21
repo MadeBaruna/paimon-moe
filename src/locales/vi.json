@@ -4,12 +4,12 @@
     "character": "Nhân Vật",
     "wishCounter": "Lịch Sử Cầu Nguyện",
     "calculator": "Công cụ tính",
-    "database": "Cơ sở Dữ liệu",
+    "database": "Cơ Sở Dữ Liệu",
     "items": "Nguyên Liệu",
     "achievement": "Thành Tựu",
     "reminder": "Nhắc Nhở",
     "todoList": "Danh Sách Việc Cần Làm",
-    "timeline": "Lịch Sự Kiện",
+    "timeline": "Lịch Hoạt Động",
     "furnishing": "Đồ Trang Trí",
     "weapons": "Vũ Khí",
     "artifacts": "Thánh Di Vật",
@@ -135,7 +135,7 @@
     "welcomeStart2": "nút ở bên trên",
     "manual": "Nếu bạn muốn tự nhập dữ liệu, bạn có thể bật nó ở đây:",
     "manualButton": "Bật Nhập Thủ Công",
-    "errorBanner": "Thời gian của Banner không trùng khớp! Hãy chỉnh server ở trang cài đặt. Vẫn không hoạt động à? Hãy để lại tin nhắn trên Discord 😅",
+    "errorBanner": "Thời gian của Banner không trùng khớp! Hãy chỉnh server ở trang cài đặt. Vẫn không hoạt động à? Hãy để lại lời nhắn trên Discord 😅",
     "globalWishTally": "Thống Kê Cầu Nguyện",
     "pityTooltip": [
       "Bảo Hiểm {rarity} hiện tại",
@@ -387,8 +387,8 @@
           "hãy nhớ rằng bộ đếm bảo hiểm có thể sẽ không chính xác, vì không có cách nào để biết khi nào vật phẩm sẽ xuất hiện (có thể bạn sẽ nhận được nó ở lượt đầu tiên hoặc có thể ở lượt thứ 10). Để đảm bảo bộ đếm vẫn chạy chính xác, bạn phải kiểm tra lịch sử và thêm từng cái một như lúc bạn cầu nguyện x1."
         ],
         "p5": [
-          "Bạn cũng có thể ấn",
-          "nút để edit giá trí thủ công!"
+          "Bạn cũng có thể nhấn nút",
+          "để sửa giá trị một cách thủ công!"
         ],
         "p6": [
           "Ấn vào mũi tên ở dưới để xem thông tin chi tiết lượt cầu nguyện. Sẽ có một popup hiện ra khi bạn nhận được",
@@ -399,13 +399,13 @@
     },
     "types": {
       "beginners": "Cầu Nguyện Tân Thủ",
-      "standard": "Cầu Nguyện Thường",
+      "standard": "Thường",
       "character-event": "Cầu Nguyện Nhân Vật",
       "weapon-event": "Cầu Nguyện Vũ Khí"
     },
     "detail": {
       "weapon": "Vũ Khí",
-      "character": "Nhân vật",
+      "character": "Nhân Vật",
       "time": "Thời Gian",
       "pity": "BH",
       "name": "Vật phẩm",
@@ -413,7 +413,7 @@
       "banner": "Banner",
       "roll": "#Lượt",
       "totalThisBanner": "Tổng số lần cầu nguyện của banner",
-      "worth": "Giá trí",
+      "worth": "Giá trị",
       "loading": "Đang tải... (Nếu không tải được, hãy đổi server ở cài đặt)",
       "guaranteed": "{rarity}★ tiếp theo chắc chắn sẽ là nhân vật hoặc vũ khí được rate-up",
       "unknown_3_star": "Không rõ"
@@ -431,12 +431,12 @@
       "name": "Vật phẩm",
       "total": "Tổng",
       "wishTotal": "Tổng lượt cầu nguyện",
-      "worth": "Giá trí",
+      "worth": "Giá trị",
       "weapon": "Vũ Khí",
       "character": "Nhân Vật",
       "error": "Dữ liệu chưa có sẵn 😞",
       "pity": "BH",
-      "median": "T.Bình ra 5★ ở lượt",
+      "median": "Trung bình ra 5★ ở lượt",
       "user": "Tổng số người dùng",
       "detail": "Chi tiết"
     },
@@ -455,11 +455,22 @@
       "desc": "Do vậy nên nếu cache trình duyệt vô tình bị xóa thì lịch sử cầu nguyện của bạn cũng sẽ bị mất! Bạn có thể bật đồng bộ Google Drive trong Cài Đặt để sao lưu dữ liệu của bạn, hoặc tải về dữ liệu theo cách thủ công ở đó."
     },
     "rank": {
-      "level": "Thứ Hạng Roll Của Bạn",
+      "title": "Thứ Hạng Toàn Cục Của Bạn",
+      "level": "Thứ Hạng Quay Của Bạn",
       "based": "Dựa trên Thống Kê Cầu Nguyện",
       "current": "Lượt cầu nguyện trung bình của banner {banner} là {median} lần",
-      "more": "Bạn đã roll nhiều hơn {percentage}% người dùng paimon.moe",
-      "less": "Bạn đã roll ít hơn {percentage}% người dùng paimon.moe"
+      "more": "Bạn đã quay nhiều hơn {percentage}% người dùng paimon.moe",
+      "less": "Bạn đã quay ít hơn {percentage}% người dùng paimon.moe",
+      "currentLuck": "Trung bình của banner {banner} hiện tại là {median}%",
+      "totalPull": "Tổng Số Lần Quay",
+      "luck5": "Độ May Mắn 5★",
+      "luck4": "Độ May Mắn 4★",
+      "medianTotal": "Trung bình toàn cục là {median} lần",
+      "medianLuck": "Trung bình toàn cục là {median}%",
+      "moreTotal": "Quay nhiều hơn {percentage}% người dùng paimon.moe",
+      "lessTotal": "Quay ít hơn {percentage}% người dùng paimon.moe",
+      "moreLuck": "May mắn hơn {percentage}% người dùng paimon.moe",
+      "lessLuck": "Kém may mắn hơn {percentage}% người dùng paimon.moe"
     }
   },
   "calculator": {
@@ -632,7 +643,7 @@
   },
   "timeline": {
     "title": "Lịch Hoạt Động",
-    "localTime": "Hiển thị thời gian địa phương",
+    "localTime": "Dùng giờ địa phương",
     "starting": "Bắt đầu trong",
     "ending": "Kết thúc sau",
     "live": "Đang diễn ra!",
@@ -744,7 +755,7 @@
   "footer": {
     "affliate": "Paimon.moe không liên kết với HoYoverse.",
     "copyright": "Genshin Impact, nội dung và dữ liệu trò chơi là thương hiệu và bản quyền thuộc HoYoverse.",
-    "discord": "Tham gia Discord của chúng tôi",
+    "discord": "Tham gia Discord của trang",
     "community": "Liên kết Cộng đồng",
     "official": "Liên Kết Chính Thức"
   },
@@ -796,7 +807,7 @@
     "energy": "Tiên Lực",
     "load": "Khối Lượng",
     "reduced": "KL Được Giảm",
-    "ratio": "Tỉ lệ",
+    "ratio": "Tỷ lệ",
     "using": "Số lượng",
     "interior": "Trong Nhà",
     "exterior": "Sân Vườn",
@@ -835,7 +846,7 @@
     "atk": "Tấn Công",
     "secondary": "Thuộc Tính Phụ",
     "critRate": "Tỷ Lệ Bạo Kích",
-    "critDamage": "ST Bạo",
+    "critDamage": "ST Bạo Kích",
     "em": "Tinh Thông Nguyên Tố",
     "er": "Hiệu Quả Nạp",
     "atkPercent": "Tấn Công",
@@ -879,5 +890,9 @@
   },
   "radiantSpincrystal": {
     "title": "Ngọc Thạch Âm Vang"
+  },
+  "common": {
+    "dataSynced": "Dữ liệu đã được đồng bộ!",
+    "driveError": "Đồng bộ với Drive hiện không có sẵn 😔"
   }
 }

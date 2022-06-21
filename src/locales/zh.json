@@ -27,7 +27,7 @@
         "优菈"
       ],
       "summoned": "被抽到",
-      "percentage": "占比于 {rarity}",
+      "percentage": "占比于所有 {rarity}",
       "avg": "平均出金抽数",
       "subtitle": "计算数据来自 {user} 位 Paimon.moe 用户提交的祈愿记录",
       "detail": "全球祈愿统计"
@@ -184,7 +184,7 @@
       "forceUpdateCheck": "强制更新祈愿记录（仅在导入祈愿记录却没有反应时启用）",
       "header": [
         "在这里导入并备份的原神祈愿记录不仅可以保存超过六个月，同时也可以自动分析你的保底和出货情况！",
-        "你也可以在设置中启用数据备份，将你的祈愿记录自动同步到 Google 云端硬盘",
+        "你也可以在设置中启用云端同步以备份数据，将你的祈愿记录自动同步到 Google 云端硬盘",
         "2.3版本前的获取祈愿历史链接的方式已不再有效，请按照以下指示的操作获取新的祈愿历史链接！"
       ],
       "faqs": {
@@ -411,7 +411,7 @@
       "name": "名称",
       "type": "类型",
       "banner": "卡池",
-      "roll": "#Roll",
+      "roll": "第几抽",
       "totalThisBanner": "这个池子的总抽数",
       "worth": "价值",
       "loading": "加载中…（若卡住，请到设置中检查服务器）",
@@ -424,9 +424,9 @@
       "update": "更新于",
       "summoned": "被抽到",
       "wonFiftyFifty": "小保底没歪",
-      "fromFiveStar": "在所有 5★",
-      "fromFourStar": "在所有 4★",
-      "fromFourStarFeatured": "在UP 4★",
+      "fromFiveStar": "占比于所有 5★",
+      "fromFourStar": "占比于所有 4★",
+      "fromFourStarFeatured": "占比于当期UP 4★",
       "show": "显示",
       "name": "名字",
       "total": "总计",
@@ -455,11 +455,22 @@
       "desc": "也正因此，如果你清空浏览器的缓存，你的祈愿记录也会被一并删除！强烈建议在设置里打开 Google 云端硬盘备份，或者手动下载数据并备份到个人电脑里。"
     },
     "rank": {
+      "title": "你的全球排名",
       "level": "你的总抽卡排名",
       "based": "基于全球祈愿统计",
       "current": "当前{banner}中位数是 {median} 抽",
       "more": "你的抽卡次数多于 {percentage}% 的 Paimon.moe 用户",
-      "less": "你的抽卡次数少于 {percentage}% 的 Paimon.moe 用户"
+      "less": "你的抽卡次数少于 {percentage}% 的 Paimon.moe 用户",
+      "currentLuck": "当前{banner}中位数是 {median}%",
+      "totalPull": "总抽数",
+      "luck5": "5★ 欧气指数",
+      "luck4": "4★ 欧气指数",
+      "medianTotal": "全球中位数 {median} 抽",
+      "medianLuck": "全球中位数 {median}%",
+      "moreTotal": "抽卡次数多于 {percentage}% 的 Paimon.moe 用户",
+      "lessTotal": "抽卡次数少于 {percentage}% 的 Paimon.moe 用户",
+      "moreLuck": "比 {percentage}% 的 Paimon.moe 用户要欧",
+      "lessLuck": "比 {percentage}% 的 Paimon.moe 用户要非"
     }
   },
   "calculator": {
@@ -723,7 +734,7 @@
     ],
     "subtitleNotCollect": "Paimon.moe 不会收集",
     "notCollect": [
-      "Paimon.moe 不会保存任何密码、UID、邮箱、临时秘钥或反馈文件。如果你感兴趣，这个网站是开源的，你可以在这里查看源代码",
+      "Paimon.moe 不会保存任何密码、UID、邮箱、临时密钥或反馈文件。如果你感兴趣，这个网站是开源的，你可以在这里查看源代码",
       "paimon-moe-api Github",
       "以及",
       "paimon-moe Github"
@@ -808,7 +819,7 @@
     "room": "屋子 {number}",
     "exteriorNum": "区域 {number}",
     "corridor": "走廊",
-    "inventoryButton": "仓库",
+    "inventoryButton": "摆设清单",
     "listButton": "列表",
     "inventory": {
       "title": "摆设清单",
@@ -879,5 +890,9 @@
   },
   "radiantSpincrystal": {
     "title": "旋曜玉帛"
+  },
+  "common": {
+    "dataSynced": "数据已同步！",
+    "driveError": "云端同步现在不可用 😔"
   }
 }

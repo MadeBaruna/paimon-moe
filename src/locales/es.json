@@ -290,7 +290,7 @@
           "Haga clic en la pestaña Solicitud, luego copie el enlace y péguelo abajo",
           "Pegar link aquí... https://hk4e-api-os.mihoyo.com...",
           "Si tienes algún problema, consulta la guía de resolución de problemas",
-          ""
+          "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
         "ps": [
           "Si los pasos a continuación no funcionan, puedes vincular tu cuenta de PS con una cuenta de HoYoVerse y luego seguir las instrucciones para pc/móvil",
@@ -455,11 +455,22 @@
       "desc": "Así que si por casualidad se eliminó la caché del navegador, su historial de deseos desaparecerá! Puede habilitar la sincronización de Google Drive en el menú Configuración para hacer una copia de seguridad de sus datos o descargar los datos manualmente allí."
     },
     "rank": {
+      "title": "Tu ranking Global",
       "level": "Tu rango total de tiradas",
       "based": "Basado en estadísticas globales de deseos",
       "current": "La media actual de {banner} es {median} tiradas",
       "more": "Tienes más tiradas que el {percentage}% de usuarios de paimon.moe",
-      "less": "Tienes menos tiradas que el {percentage}% de usuarios de paimon.moe"
+      "less": "Tienes menos tiradas que el {percentage}% de usuarios de paimon.moe",
+      "currentLuck": "La media actual de {banner} es {median} tiradas%",
+      "totalPull": "Total de tiradas",
+      "luck5": "5★ Suertudas",
+      "luck4": "4★ Suertudas",
+      "medianTotal": "Promedio global {median} tiradas",
+      "medianLuck": "Promedio global {median}%",
+      "moreTotal": "Tienes más tiradas que el {percentage}% de usuarios de paimon.moe",
+      "lessTotal": "Tienes menos tiradas que el {percentage}% de usuarios de paimon.moe",
+      "moreLuck": "",
+      "lessLuck": ""
     }
   },
   "calculator": {
@@ -879,5 +890,9 @@
   },
   "radiantSpincrystal": {
     "title": "Girocristal radiante"
+  },
+  "common": {
+    "dataSynced": "",
+    "driveError": ""
   }
 }

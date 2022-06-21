@@ -455,11 +455,22 @@
       "desc": "もし、ブラウザのキャッシュが削除されてしまいましたら、祈願履歴が消えます！設定メニューでデータをダウンロードするか、Googleドライブ同期を有効したり、データをバックアップしたりすることができます。"
     },
     "rank": {
+      "title": "あなたの全世界ランク",
       "level": "あなたの祈願合計のランキング",
       "based": "全世界の祈願統計に基づく",
       "current": "{banner} における祈願の中央値は{median} 回です",
       "more": "あなたは{percentage}%のpaimon.moeのユーザーより祈願回数が多いです。",
-      "less": "あなたは{percentage}%のpaimon.moeのユーザーより祈願回数が少ないです。"
+      "less": "あなたは{percentage}%のpaimon.moeのユーザーより祈願回数が少ないです。",
+      "currentLuck": "現在の {banner} における祈願回数の中央値は{median}% です。",
+      "totalPull": "祈願回数の合計",
+      "luck5": "5★ 運の良さ",
+      "luck4": "4★ 運の良さ",
+      "medianTotal": "全世界における祈願回数の中央値 {median} 回",
+      "medianLuck": "全世界の中央値 {median}%",
+      "moreTotal": "{percentage}%のpaimon.moeのユーザーより祈願回数が多いです。",
+      "lessTotal": "{percentage}%のpaimon.moeのユーザーより祈願回数が少ないです。",
+      "moreLuck": "{percentage}%のpaimon.moeのユーザーより運が良いです。",
+      "lessLuck": "{percentage}%のpaimon.moeのユーザーより運が悪いです。"
     }
   },
   "calculator": {
@@ -879,5 +890,9 @@
   },
   "radiantSpincrystal": {
     "title": "旋曜玉帛"
+  },
+  "common": {
+    "dataSynced": "データの同期が成功しました！",
+    "driveError": "現在、Googleドライブ同期が利用できません 😔"
   }
 }

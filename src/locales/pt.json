@@ -455,11 +455,22 @@
       "desc": "Se por acaso o cache do navegador for excluído, o seu histórico de desejos irá sumir! Você pode ativar a sincronização com o Google Drive nas configurações para fazer backup dos seus dados, ou então baixar os dados manualmente."
     },
     "rank": {
+      "title": "",
       "level": "",
       "based": "Baseado em Estatísticas de Desejos Globais",
       "current": "",
       "more": "",
-      "less": ""
+      "less": "",
+      "currentLuck": "",
+      "totalPull": "",
+      "luck5": "",
+      "luck4": "",
+      "medianTotal": "",
+      "medianLuck": "",
+      "moreTotal": "",
+      "lessTotal": "",
+      "moreLuck": "",
+      "lessLuck": ""
     }
   },
   "calculator": {
@@ -879,5 +890,9 @@
   },
   "radiantSpincrystal": {
     "title": ""
+  },
+  "common": {
+    "dataSynced": "",
+    "driveError": ""
   }
 }

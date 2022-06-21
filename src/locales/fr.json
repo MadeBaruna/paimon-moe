@@ -455,11 +455,22 @@
       "desc": "Si toutefois le cache du navigateur est supprimé, votre historique de vœux le sera également ! Vous pouvez activer la synchronisation Google Drive dans le menu Réglages pour sauvegarder vos données, ou les télécharger manuellement."
     },
     "rank": {
+      "title": "Votre rang mondial",
       "level": "Votre classement au nombre total de Vœux",
       "based": "Basé sur les statistiques de vœux au niveau mondial",
       "current": "La médiane actuelle de {banner} est de {median} tirages",
       "more": "Vous avez fait plus de vœux que {percentage}% des utilisateurs de paimon.moe",
-      "less": "Vous avez fait moins de vœux que {percentage}% des utilisateurs de paimon.moe"
+      "less": "Vous avez fait moins de vœux que {percentage}% des utilisateurs de paimon.moe",
+      "currentLuck": "La médiane actuelle de {banner} est de {median} tirages%",
+      "totalPull": "Total des tirages",
+      "luck5": "Chance 5★",
+      "luck4": "Chance 4★",
+      "medianTotal": "Médiane mondiale {median} tirages",
+      "medianLuck": "Médiane mondiale {median}%",
+      "moreTotal": "Plus de tirages que {percentage}% des utilisateurs de paimon.moe",
+      "lessTotal": "Moins de tirages que {percentage}% des utilisateurs de paimon.moe",
+      "moreLuck": "Plus chanceux que {percentage}% des utilisateurs de paimon.moe",
+      "lessLuck": "Moins chanceux que {percentage}% des utilisateurs de paimon.moe"
     }
   },
   "calculator": {
@@ -879,5 +890,9 @@
   },
   "radiantSpincrystal": {
     "title": "Gyrocristaux radiants"
+  },
+  "common": {
+    "dataSynced": "Les données ont été resynchronisées !",
+    "driveError": "La synchronisation Drive n'est pas disponible pour le moment 😔"
   }
 }

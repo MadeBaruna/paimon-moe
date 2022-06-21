@@ -455,11 +455,22 @@
       "desc": "Wenn der Browser-Cache versehentlich gelöscht wird, ist Ihr gewünschter Verlauf weg! Sie können die Google Drive-Synchronisierung im Einstellungsmenü aktivieren, um Ihre Daten zu sichern, oder die Daten dort manuell herunterladen."
     },
     "rank": {
+      "title": "",
       "level": "Dein Rang nach gesamten Gebete",
       "based": "Basierend auf globalen Wish-Statistiken",
       "current": "Aktueller Median von {banner} ist {median} Pulls",
       "more": "Du hast mehr Gebete als {percentage}% von paimon.moe Benutzer",
-      "less": "Du hast weniger Gebete als {percentage}% von paimon.moe Benutzer"
+      "less": "Du hast weniger Gebete als {percentage}% von paimon.moe Benutzer",
+      "currentLuck": "",
+      "totalPull": "",
+      "luck5": "",
+      "luck4": "",
+      "medianTotal": "",
+      "medianLuck": "",
+      "moreTotal": "",
+      "lessTotal": "",
+      "moreLuck": "",
+      "lessLuck": ""
     }
   },
   "calculator": {
@@ -879,5 +890,9 @@
   },
   "radiantSpincrystal": {
     "title": "Strahlender Drehkristall"
+  },
+  "common": {
+    "dataSynced": "",
+    "driveError": ""
   }
 }
