@@ -400,6 +400,16 @@ export const banners = {
     //   featuredRare: ['barbara', 'noelle', 'yanfei'],
     //   timezoneDependent: true,
     // },
+    {
+      name: "Oni's Royale",
+      image: 2,
+      shortName: 'Itto',
+      start: '2022-06-21 18:00:00',
+      end: '2022-07-12 14:59:59',
+      color: '#FFB455',
+      featured: ['arataki_itto'],
+      featuredRare: ['chongyun', 'gorou', 'kuki_shinobu'],
+    },
   ],
   weapons: [
     {
@@ -716,7 +726,7 @@ export const banners = {
       start: '2022-05-31 09:00:00',
       end: '2022-06-21 17:59:59',
       shortName: 'Aqua',
-      color: '#eae5e1',
+      color: '#ffb169',
       featured: ['aqua_simulacra', 'primordial_jade_winged-spear'],
       featuredRare: [
         'lithic_spear',
@@ -726,6 +736,16 @@ export const banners = {
         'sacrificial_bow',
       ],
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 30,
+      start: '2022-06-21 18:00:00',
+      end: '2022-07-12 14:59:59',
+      shortName: 'Redhorn',
+      color: '#eae5e1',
+      featured: ['redhorn_stonethresher', 'memory_of_dust'],
+      featuredRare: ['lithic_blade', 'lions_roar', 'dragons_bane', 'sacrificial_fragments', 'the_stringless'],
     },
   ],
 };
