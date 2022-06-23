@@ -92,7 +92,7 @@
           href="https://twitter.com/MadeBaruna"
           target="_blank"
         >
-          <Icon path={mdiTwitter} size={1} /> {$t('footer.link.devtwitter')}
+          <Icon path={mdiTwitter} size={1} /> {$t('footer.link.devTwitter')}
         </a>
       </div>
     </div>
@@ -125,9 +125,9 @@
     <div
       class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center h-full md:pl-4 md:border-l border-gray-600"
     >
-      <a class="text-gray-400 hover:text-primary" href="/privacy-policy">{$t('footer.link.privacypolicy')}</a>
+      <a class="text-gray-400 hover:text-primary" href="/privacy-policy">{$t('footer.link.privacyPolicy')}</a>
       <!-- svelte-ignore a11y-invalid-attribute -->
-      <a class="text-gray-400 hover:text-primary nn-cmp-show" href="#">{$t('footer.link.cookiesettings')}</a>
+      <a class="text-gray-400 hover:text-primary nn-cmp-show" href="#">{$t('footer.link.cookieSettings')}</a>
     </div>
   </div>
 </div>

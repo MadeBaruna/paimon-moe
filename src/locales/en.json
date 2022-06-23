@@ -761,11 +761,11 @@
     "link": {
       "github": "GitHub",
       "discord": "Discord",
-      "devtwitter": "Dev Twitter",
+      "devTwitter": "Dev Twitter",
       "reddit": "Reddit",
       "facebook": "Facebook",
-      "cookiesettings": "Cookie Settings",
-      "privacypolicy": "Privacy Policy"
+      "cookieSettings": "Cookie Settings",
+      "privacyPolicy": "Privacy Policy"
     }
   },
   "donate": {
