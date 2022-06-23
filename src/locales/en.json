@@ -412,7 +412,11 @@
       "worth": "Worth",
       "loading": "Loading... (If this page is stuck, change your server on the settings page)",
       "guaranteed": "The next {rarity}★ is guaranteed to be the promotional character or weapon",
-      "unknown_3_star": "Unknown"
+      "unknown_3_star": "Unknown",
+      "rarity": "Rarity",
+      "total": "Total",
+      "percent": "Percent",
+      "pityAverage": "Pity AVG"
     },
     "tally": {
       "title": "Global Wish Stats",
