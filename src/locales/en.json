@@ -678,6 +678,23 @@
     "feedback": "If you found any bugs, wrong data, or any other feedback, please leave a message on",
     "or": "or",
     "thanks": "Thanks😁!",
+    "credits": {
+      "title": "Credits",
+      "items": [
+        {
+          "name": "Data and images",
+          "value": "Genshin Impact Wiki"
+        },
+        {
+          "name": "Stats data",
+          "value": "Dimbreath Genshin Data"
+        },
+        {
+          "name": "Drop rates for resin calculation",
+          "value": "Data Gathering Discord"
+        }
+      ]
+    },
     "setMainAccount": "Set As Main Account",
     "modal": {
       "notice": "All Todo and Wish history data will be deleted",

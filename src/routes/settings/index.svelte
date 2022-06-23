@@ -478,29 +478,29 @@
     </Button>
   </div>
   <div class="bg-item rounded-xl mb-4 p-4 text-white">
-    <p class="font-semibold">Credits</p>
+    <p class="font-semibold">{$t('settings.credits.title')}</p>
     <table>
       <tr>
-        <td class="pr-1 align-top border-b border-gray-700">Data and images</td>
+        <td class="pr-1 align-top border-b border-gray-700">{$t('settings.credits.items.0.name')}</td>
         <td class="pr-1 align-top border-b border-gray-700">
           <a class="text-blue-400 hover:underline" href="https://genshin-impact.fandom.com/" target="_blank">
-            Genshin Impact Wiki
+            {$t('settings.credits.items.0.value')}
           </a>
         </td>
       </tr>
       <tr>
-        <td class="pr-1 align-top border-b border-gray-700">Stats data</td>
+        <td class="pr-1 align-top border-b border-gray-700">{$t('settings.credits.items.1.name')}</td>
         <td class="pr-1 align-top border-b border-gray-700">
           <a class="text-blue-400 hover:underline" href="https://github.com/Dimbreath/GenshinData" target="_blank">
-            Dimbreath Genshin Data
+            {$t('settings.credits.items.1.value')}
           </a>
         </td>
       </tr>
       <tr>
-        <td class="pr-1 align-top">Drop rates for resin calculation</td>
+        <td class="pr-1 align-top">{$t('settings.credits.items.2.name')}</td>
         <td class="pr-1 align-top">
           <a class="text-blue-400 hover:underline" href="https://discord.gg/ydwdYmr" target="_blank">
-            Data Gathering Discord
+            {$t('settings.credits.items.2.value')}
           </a>
         </td>
       </tr>
