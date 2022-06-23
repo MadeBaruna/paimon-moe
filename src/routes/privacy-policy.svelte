@@ -54,6 +54,6 @@
     <a class="text-primary hover:underline" href="https://www.network-n.com/network-cookie-policy/">{$t('privacypolicy.ad.4')}</a>
     {$t('privacypolicy.ad.5')}
     <!-- svelte-ignore a11y-invalid-attribute -->
-    <a class="text-primary hover:underline nn-cmp-show" href="#">{$t('privacypolicy.Ad.6')}</a>
+    <a class="text-primary hover:underline nn-cmp-show" href="#">{$t('privacypolicy.ad.6')}</a>
   </div>
 </div>
