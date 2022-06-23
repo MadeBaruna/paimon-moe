@@ -22,7 +22,7 @@
     },
     kuki_shinobu: {
       name: 'Kuki Shinobu',
-      rarity: 'legendary',
+      rarity: 'rare',
       count: 0,
       average: '...',
       percentage: '...',
