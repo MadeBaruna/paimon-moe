@@ -757,7 +757,16 @@
     "copyright": "Genshin Impact, game content and materials are trademarks and copyrights of HoYoverse.",
     "discord": "Join Our Discord",
     "community": "Community Links",
-    "official": "Official Links"
+    "official": "Official Links",
+    "link": {
+      "github": "GitHub",
+      "discord": "Discord",
+      "devtwitter": "Dev Twitter",
+      "reddit": "Reddit",
+      "facebook": "Facebook",
+      "cookiesettings": "Cookie Settings",
+      "privacypolicy": "Privacy Policy"
+    }
   },
   "donate": {
     "message": [
