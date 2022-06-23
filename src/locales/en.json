@@ -824,6 +824,7 @@
     "corridor": "Corridor",
     "inventoryButton": "Inventory",
     "listButton": "List",
+    "selectCharacter": "Select character...",
     "inventory": {
       "title": "Furnishing Inventory",
       "subtitle": "Some special categories like walls are not shown",
