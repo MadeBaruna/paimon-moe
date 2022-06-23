@@ -39,21 +39,21 @@
     <p>
       {$t('privacypolicy.notCollect.0')}
       <a target="_blank" class="text-primary hover:underline" href="https://github.com/MadeBaruna/paimon-moe-api">
-        {$t(`privacypolicy.notCollect.1`)}
+        {$t('privacypolicy.notCollect.1')}
       </a>
       {$t('privacypolicy.notCollect.2')}
       <a target="_blank" class="text-primary hover:underline" href="https://github.com/MadeBaruna/paimon-moe">
-        {$t(`privacypolicy.notCollect.3`)}
+        {$t('privacypolicy.notCollect.3')}
       </a>
     </p>
-    <h3 class="text-xl font-bold mt-4">Advertisements</h3>
-    We use third party advertisements to support our site. Some of these advertisers may be served from our third party advertiser.
-    You can view their
-    <a class="text-primary hover:underline" href="https://www.network-n.com/network-privacy-policy/"> privacy policy</a>
-    and
-    <a class="text-primary hover:underline" href="https://www.network-n.com/network-cookie-policy/">cookie policy</a>
-    here. You can manage your cookies
+    <h3 class="text-xl font-bold mt-4">{$t('privacypolicy.subtitleAd')}</h3>
+    {$t('privacypolicy.Ad.0')}
+    {$t('privacypolicy.Ad.1')}
+    <a class="text-primary hover:underline" href="https://www.network-n.com/network-privacy-policy/">{$t('privacypolicy.Ad.2')}</a>
+    {$t('privacypolicy.Ad.3')}
+    <a class="text-primary hover:underline" href="https://www.network-n.com/network-cookie-policy/">{$t('privacypolicy.Ad.4')}</a>
+    {$t('privacypolicy.Ad.5')}
     <!-- svelte-ignore a11y-invalid-attribute -->
-    <a class="text-primary hover:underline nn-cmp-show" href="#">here</a>
+    <a class="text-primary hover:underline nn-cmp-show" href="#">{$t('privacypolicy.Ad.6')}</a>
   </div>
 </div>
