@@ -390,11 +390,7 @@
           "Du kannst auch den",
           "Knopf drücken, um die Werte manuell zu bearbeiten!"
         ],
-        "p6": [
-          "Drücke Sie auf den Pfeil nach unten um die Details Ihrer Pulls zu sehen. Ein Popup wird angezeigt, wenn du ein",
-          "oder",
-          "Sie können die Tabelle auch manuell hinzufügen oder bearbeiten."
-        ]
+        "p6": "Drücke Sie auf den Pfeil nach unten um die Details Ihrer Pulls zu sehen. Ein Popup wird angezeigt, wenn du ein 5★ oder 4★. Sie können die Tabelle auch manuell hinzufügen oder bearbeiten."
       }
     },
     "types": {

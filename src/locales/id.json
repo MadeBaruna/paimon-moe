@@ -390,11 +390,7 @@
           "Kamu juga bisa menekan",
           "untuk mengedit nilai nya secara manual!"
         ],
-        "p6": [
-          "Tekan tombol panah dibawah untuk melihat detail riwayat mu. Sebuah form akan muncul ketika kamu mendapat",
-          "atau",
-          "Atau kamu bisa menambahkan atau mengedit tabel nya secara manual."
-        ]
+        "p6": "Tekan tombol panah dibawah untuk melihat detail riwayat mu. Sebuah form akan muncul ketika kamu mendapat 5★ atau 4★. Atau kamu bisa menambahkan atau mengedit tabel nya secara manual."
       }
     },
     "types": {

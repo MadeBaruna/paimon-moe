@@ -390,11 +390,7 @@
           "You can also press the",
           "button to edit the values manually!"
         ],
-        "p6": [
-          "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a",
-          "or",
-          "You can also add or edit the table manually."
-        ]
+        "p6": "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a 5★ or 4★. You can also add or edit the table manually."
       }
     },
     "types": {
@@ -439,6 +435,13 @@
       "median": "5★ Median",
       "user": "Total Users",
       "detail": "Detail"
+    },
+    "summary": {
+      "total": "Total",
+      "percent": "Percent",
+      "pityAverage": "Pity AVG",
+      "character": "Character",
+      "weapon": "Weapon"
     },
     "note": [
       "Wish history is not updated automatically, please import again to update your history!",

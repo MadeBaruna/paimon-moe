@@ -390,11 +390,7 @@
           "Você também pode pressionar o botão",
           "para editar os valores manualmente!"
         ],
-        "p6": [
-          "Pressione a seta abaixo para visualizar os detalhes das orações. Um pop-up irá aparecer quando você conseguir um item",
-          "ou",
-          "Você também pode adicionar ou editar a tabela manualmente."
-        ]
+        "p6": "Pressione a seta abaixo para visualizar os detalhes das orações. Um pop-up irá aparecer quando você conseguir um item 5★ ou 4★. Você também pode adicionar ou editar a tabela manualmente."
       }
     },
     "types": {

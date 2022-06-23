@@ -390,11 +390,7 @@
           "Bạn cũng có thể nhấn nút",
           "để sửa giá trị một cách thủ công!"
         ],
-        "p6": [
-          "Ấn vào mũi tên ở dưới để xem thông tin chi tiết lượt cầu nguyện. Sẽ có một popup hiện ra khi bạn nhận được",
-          "hoặc",
-          "Bạn cũng có thể thêm hoặc chỉnh sử bảng này thủ công."
-        ]
+        "p6": "Ấn vào mũi tên ở dưới để xem thông tin chi tiết lượt cầu nguyện. Sẽ có một popup hiện ra khi bạn nhận được 5★ hoặc 4★. Bạn cũng có thể thêm hoặc chỉnh sử bảng này thủ công."
       }
     },
     "types": {
