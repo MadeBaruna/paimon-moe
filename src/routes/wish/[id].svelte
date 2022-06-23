@@ -493,7 +493,7 @@
       <Icon path={mdiArrowLeft} size={1.2} />
     </a>
     <h2 class="font-display font-bold text-2xl text-gray-400 flex-1">
-      Wish Counter
+      {$t('wish.title')}
       <span class="text-white">{$t(`wish.types.${id}`)}</span>
     </h2>
   </div>

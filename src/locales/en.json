@@ -390,11 +390,7 @@
           "You can also press the",
           "button to edit the values manually!"
         ],
-        "p6": [
-          "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a",
-          "or",
-          "You can also add or edit the table manually."
-        ]
+        "p6": "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a 5★ or 4★. You can also add or edit the table manually."
       }
     },
     "types": {
@@ -439,6 +435,13 @@
       "median": "5★ Median",
       "user": "Total Users",
       "detail": "Detail"
+    },
+    "summary": {
+      "total": "Total",
+      "percent": "Percent",
+      "pityAverage": "Pity AVG",
+      "character": "Character",
+      "weapon": "Weapon"
     },
     "note": [
       "Wish history is not updated automatically, please import again to update your history!",
@@ -675,6 +678,23 @@
     "feedback": "If you found any bugs, wrong data, or any other feedback, please leave a message on",
     "or": "or",
     "thanks": "Thanks😁!",
+    "credits": {
+      "title": "Credits",
+      "items": [
+        {
+          "name": "Data and images",
+          "value": "Genshin Impact Wiki"
+        },
+        {
+          "name": "Stats data",
+          "value": "Dimbreath Genshin Data"
+        },
+        {
+          "name": "Drop rates for resin calculation",
+          "value": "Data Gathering Discord"
+        }
+      ]
+    },
     "setMainAccount": "Set As Main Account",
     "modal": {
       "notice": "All Todo and Wish history data will be deleted",
@@ -830,6 +850,7 @@
     "corridor": "Corridor",
     "inventoryButton": "Inventory",
     "listButton": "List",
+    "selectCharacter": "Select character...",
     "inventory": {
       "title": "Furnishing Inventory",
       "subtitle": "Some special categories like walls are not shown",

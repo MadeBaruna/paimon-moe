@@ -65,15 +65,6 @@
     {$t('wish.help.howto.p5.1')}
   </div>
   <div class="text-white p-2 bg-background rounded-xl mt-4">
-    {$t('wish.help.howto.p6.0')}
-    <span class="inline-flex items-center"
-      >5
-      <Icon path={mdiStar} size={0.7} /></span
-    >
-    {$t('wish.help.howto.p6.1')}
-    <span class="inline-flex items-center"
-      >4
-      <Icon path={mdiStar} size={0.7} /></span
-    >. {$t('wish.help.howto.p6.2')}
+    {$t('wish.help.howto.p6')}
   </div>
 </div>

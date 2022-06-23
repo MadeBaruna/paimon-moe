@@ -156,7 +156,10 @@
       ※ {$t('furnishing.sets.subtitle')}
     </p>
     <div class="w-full md:w-64">
-      <CharacterSelect bind:selected={charFilter} />
+      <CharacterSelect
+        bind:selected={charFilter}
+        placeholder={$t('furnishing.selectCharacter')}
+      />
     </div>
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-2 flex-1 mt-2"

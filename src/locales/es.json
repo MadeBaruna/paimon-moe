@@ -390,11 +390,7 @@
           "¡Puedes además pulsar el botón",
           "para editar los valores manualmente!"
         ],
-        "p6": [
-          "Pulsa la flecha sobre el botón para ver los detalles de tus tiradas. Una ventana emergente mostrará cuando conseguiste un",
-          "o",
-          "Puedes además añadir o editar la tabla manualmente."
-        ]
+        "p6": "Pulsa la flecha sobre el botón para ver los detalles de tus tiradas. Una ventana emergente mostrará cuando conseguiste un 5★ o 4★. Puedes además añadir o editar la tabla manualmente."
       }
     },
     "types": {
