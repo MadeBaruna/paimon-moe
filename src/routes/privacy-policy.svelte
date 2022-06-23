@@ -47,12 +47,12 @@
       </a>
     </p>
     <h3 class="text-xl font-bold mt-4">{$t('privacypolicy.subtitleAd')}</h3>
-    {$t('privacypolicy.Ad.0')}
-    {$t('privacypolicy.Ad.1')}
-    <a class="text-primary hover:underline" href="https://www.network-n.com/network-privacy-policy/">{$t('privacypolicy.Ad.2')}</a>
-    {$t('privacypolicy.Ad.3')}
-    <a class="text-primary hover:underline" href="https://www.network-n.com/network-cookie-policy/">{$t('privacypolicy.Ad.4')}</a>
-    {$t('privacypolicy.Ad.5')}
+    {$t('privacypolicy.ad.0')}
+    {$t('privacypolicy.ad.1')}
+    <a class="text-primary hover:underline" href="https://www.network-n.com/network-privacy-policy/">{$t('privacypolicy.ad.2')}</a>
+    {$t('privacypolicy.ad.3')}
+    <a class="text-primary hover:underline" href="https://www.network-n.com/network-cookie-policy/">{$t('privacypolicy.ad.4')}</a>
+    {$t('privacypolicy.ad.5')}
     <!-- svelte-ignore a11y-invalid-attribute -->
     <a class="text-primary hover:underline nn-cmp-show" href="#">{$t('privacypolicy.Ad.6')}</a>
   </div>
