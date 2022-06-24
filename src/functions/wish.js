@@ -83,6 +83,15 @@ export async function process(id) {
       },
       featured: e.featured,
       featuredRare: e.featuredRare,
+      rateOffLegendary: {
+        win: 0,
+        lose: 0,
+      },
+      rateOffRare: {
+        win: 0,
+        lose: 0,
+      },
+      constellation: {},
     };
   });
 
@@ -95,6 +104,7 @@ export async function process(id) {
   const currentPulls = [];
   const allLegendary = [];
   const allRare = [];
+  const constellation = {};
   let currentBanner = null;
   let grouped = false;
   let striped = false;
@@ -105,6 +115,18 @@ export async function process(id) {
   let hasManualInput = false;
   let lastBanner;
   let lastBannerIndex;
+  let rateOffLegendary = {
+    win: 0,
+    lose: 0,
+    maxStreak: 0,
+    currentStreak: 0,
+  };
+  let rateOffRare = {
+    win: 0,
+    lose: 0,
+    maxStreak: 0,
+    currentStreak: 0,
+  };
 
   let pity = 0;
   for (let i = 0; i < pullData.length; i++) {
@@ -161,6 +183,16 @@ export async function process(id) {
       if (currentBanner.featured) {
         newPull.guaranteed = rateUp;
         rateUp = !currentBanner.featured.includes(newPull.id);
+        if (rateUp) {
+          selectedBanners[currentBannerIndex].rateOffLegendary.lose++;
+          rateOffLegendary.lose++;
+          rateOffLegendary.maxStreak = Math.max(rateOffLegendary.maxStreak, rateOffLegendary.currentStreak);
+          rateOffLegendary.currentStreak = 0;
+        } else if (newPull.guaranteed === false) {
+          selectedBanners[currentBannerIndex].rateOffLegendary.win++;
+          rateOffLegendary.win++;
+          rateOffLegendary.currentStreak++;
+        }
       }
 
       selectedBanners[currentBannerIndex].legendary.push(newPull);
@@ -170,6 +202,17 @@ export async function process(id) {
       if (currentBanner.featuredRare) {
         newPull.guaranteed = rateUpRare;
         rateUpRare = !currentBanner.featuredRare.includes(newPull.id);
+
+        if (rateUpRare) {
+          selectedBanners[currentBannerIndex].rateOffRare.lose++;
+          rateOffRare.lose++;
+          rateOffRare.maxStreak = Math.max(rateOffRare.maxStreak, rateOffRare.currentStreak);
+          rateOffRare.currentStreak = 0;
+        } else if (newPull.guaranteed === false) {
+          selectedBanners[currentBannerIndex].rateOffRare.win++;
+          rateOffRare.win++;
+          rateOffRare.currentStreak++;
+        }
       }
 
       allRare.push(newPull);
@@ -179,6 +222,20 @@ export async function process(id) {
       } else if (pull.type === 'weapon') {
         selectedBanners[currentBannerIndex].rare.weapon.push(newPull);
       }
+    }
+
+    if (newPull.id === 'raiden_shogun') console.log(newPull);
+
+    if (newPull.rarity > 3) {
+      if (selectedBanners[currentBannerIndex].constellation[newPull.id] === undefined) {
+        selectedBanners[currentBannerIndex].constellation[newPull.id] = 0;
+      }
+      selectedBanners[currentBannerIndex].constellation[newPull.id]++;
+
+      if (constellation[newPull.id] === undefined) {
+        constellation[newPull.id] = 0;
+      }
+      constellation[newPull.id]++;
     }
 
     if (!grouped && pull.time === next.time) {
@@ -208,6 +265,8 @@ export async function process(id) {
     currentPulls.push(newPull);
   }
 
+  console.log(constellation);
+
   return {
     pulls: currentPulls,
     banner: selectedBanners,
@@ -216,6 +275,9 @@ export async function process(id) {
       allTotal: data.total,
       legendaryTotal: allLegendary.length,
       rareTotal: allRare.length,
+      rateOffLegendary,
+      rateOffRare,
+      constellation,
     },
   };
 }

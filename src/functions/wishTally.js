@@ -29,11 +29,25 @@ async function sendWishTotal(data) {
   }
 }
 
+async function sendWishConstellation(data) {
+  try {
+    await fetch(`${__paimon.env.API_HOST}/wish/constellation`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    });
+  } catch (err) {
+    console.error(err);
+  }
+}
+
 export async function submitWishTally() {
   let prefixId = 0;
 
   const prefixAccount = getAccountPrefix();
   const uid = await readSave(`${prefixAccount}wish-uid`);
+
+  const constellations = {};
 
   for (const id of bannerCategories) {
     prefixId += 100000;
@@ -52,6 +66,8 @@ export async function submitWishTally() {
       total: tally.allTotal,
       legendary: tally.legendaryTotal,
       rare: tally.rareTotal,
+      rateOffLegendary: tally.rateOffLegendary,
+      rateOffRare: tally.rateOffRare,
     });
 
     const firstFivePulls = pulls
@@ -118,6 +134,22 @@ export async function submitWishTally() {
         pityCount,
         uid,
       });
+
+      await sendWishConstellation({
+        banner: prefixId + i + 1,
+        uid,
+        items: Object.entries(banner[i].constellation).map(([name, count]) => [name, count]),
+      });
+    }
+
+    for (const [id, count] of Object.entries(tally.constellation)) {
+      if (constellations[id] === undefined) constellations[id] = 0;
+      constellations[id] += count;
     }
   }
+
+  await sendWishConstellation({
+    uid,
+    items: Object.entries(constellations).map(([name, count]) => [name, count]),
+  });
 }
