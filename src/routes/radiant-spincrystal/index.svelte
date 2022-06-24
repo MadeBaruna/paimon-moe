@@ -20,7 +20,7 @@
 
   let spincrystals = data;
   let checkList = {};
-  let total = data.length;
+  let total = data.filter((e) => e.number !== 0).length;
   let current = 0;
 
   async function changeLocale(locale) {
