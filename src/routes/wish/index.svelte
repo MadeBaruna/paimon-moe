@@ -195,7 +195,7 @@
     <div class="mb-4 flex justify-center">
       <Ad type="mobile" variant="mpu" id="2" />
     </div>
-    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max-w-screen-xl">
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max-w-screen-xl w-full">
       <Counter
         on:counterread={(val) => setRankWishTotal('character-event', val)}
         bind:this={counter1}
@@ -225,7 +225,11 @@
           id="beginners"
           name={$t('wish.types.beginners')}
         />
-        <MonthlyGraph bind:data={monthlyData} />
+        {#if Object.keys(monthlyData).length > 0}
+          <MonthlyGraph bind:data={monthlyData} />
+        {:else}
+          <div class="-mb-4" />
+        {/if}
         <Rank bind:this={rank} {wishTotal} {wishPercentage} />
         <div class="mt-4 flex justify-center">
           <Ad type="mobile" variant="mpu" id="1" />

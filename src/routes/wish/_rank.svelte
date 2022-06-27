@@ -34,6 +34,8 @@
     median = '...';
     wishCount = wishTotal[current];
 
+    if (wishCount === 0) return;
+
     try {
       const url = new URL(`${__paimon.env.API_HOST}/wish/summary`);
       const query = new URLSearchParams({ banner: current });
@@ -80,6 +82,8 @@
     loading[rarity] = true;
     percentageLuck[rarity] = 0;
     medianLuck[rarity] = '...';
+
+    if (percentages[current] === undefined) return;
 
     try {
       const url = new URL(`${__paimon.env.API_HOST}/wish/summary/luck`);

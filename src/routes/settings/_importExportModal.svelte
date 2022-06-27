@@ -33,6 +33,7 @@
     reader.onload = async () => {
       try {
         const data = JSON.parse(reader.result);
+        await localforage.clear();
         for (const key in data) {
           await updateSave(key, data[key], true);
         }

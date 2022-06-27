@@ -224,8 +224,6 @@ export async function process(id) {
       }
     }
 
-    if (newPull.id === 'raiden_shogun') console.log(newPull);
-
     if (newPull.rarity > 3) {
       if (selectedBanners[currentBannerIndex].constellation[newPull.id] === undefined) {
         selectedBanners[currentBannerIndex].constellation[newPull.id] = 0;
@@ -265,7 +263,8 @@ export async function process(id) {
     currentPulls.push(newPull);
   }
 
-  console.log(constellation);
+  rateOffLegendary.maxStreak = Math.max(rateOffLegendary.maxStreak, rateOffLegendary.currentStreak);
+  rateOffRare.maxStreak = Math.max(rateOffRare.maxStreak, rateOffRare.currentStreak);
 
   return {
     pulls: currentPulls,

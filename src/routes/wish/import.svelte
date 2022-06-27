@@ -119,6 +119,12 @@
   let error = '';
 
   let bannerList = [];
+  let currentSelectedBanner = null;
+  let currentBannerIndex = -1;
+  let lastBannerIndex;
+  let lastBanner;
+  let rateUp = false;
+  let rateUpRare = false;
 
   let wishes = {};
 
@@ -405,6 +411,7 @@
 
     const path = `wish-counter-${type.id}`;
     const localData = await readSave(`${prefix}${path}`);
+    const withRate = type.id === 'character-event' || type.id === 'weapon-event';
 
     let localWishes = [];
     if (localData !== null) {
@@ -416,6 +423,29 @@
     const oldestWish = importedWishes[0];
 
     localWishes = localWishes.slice().filter((e) => dayjs(e.time).isBefore(dayjs(oldestWish.time)));
+
+    currentBanner = null;
+    currentSelectedBanner = null;
+    currentBannerIndex = -1;
+    lastBannerIndex = undefined;
+    lastBanner = undefined;
+    rateUp = false;
+    rateUpRare = false;
+
+    let rateOffLegendary = {
+      win: 0,
+      lose: 0,
+      maxStreak: 0,
+      currentStreak: 0,
+    };
+    let rateOffRare = {
+      win: 0,
+      lose: 0,
+      maxStreak: 0,
+      currentStreak: 0,
+    };
+
+    if (withRate) processBannerList(type.id);
 
     const combined = [...localWishes, ...importedWishes];
 
@@ -435,12 +465,66 @@
         rarity = weaponList[combined[i].id].rarity;
       }
 
+      const unixTime = dayjs(combined[i].time).unix();
+      if (withRate && (currentSelectedBanner === null || currentSelectedBanner.end < unixTime)) {
+        lastBannerIndex = currentBannerIndex;
+
+        const nextBanner = getNextBanner(unixTime);
+
+        if (nextBanner === undefined) {
+          currentBannerIndex = lastBannerIndex;
+          currentSelectedBanner = lastBanner;
+        } else {
+          currentSelectedBanner = nextBanner.selectedBanner;
+          currentBannerIndex = nextBanner.currentBannerIndex;
+          lastBanner = currentSelectedBanner;
+        }
+      }
+
+      // guaranteed + winrateoff
+      // f + f = 0 = los 50:50
+      // f + t = 1 = win 50:50
+      // t + t = 2 = guaranteed
+
       if (rarity === 5) {
+        if (withRate) {
+          const guaranteed = rateUp;
+          const winRateOff = currentSelectedBanner.featured.includes(combined[i].id);
+          rateUp = !winRateOff;
+          combined[i].rate = guaranteed + winRateOff;
+          console.log(combined[i], guaranteed, winRateOff, currentSelectedBanner);
+
+          if (rateUp) {
+            rateOffLegendary.lose++;
+            rateOffLegendary.maxStreak = Math.max(rateOffLegendary.maxStreak, rateOffLegendary.currentStreak);
+            rateOffLegendary.currentStreak = 0;
+          } else if (!guaranteed) {
+            rateOffLegendary.win++;
+            rateOffLegendary.currentStreak++;
+          }
+        }
+
         latestLegendary = combined[i];
         combined[i].pity = legendary;
         legendary = 0;
         // rare = 0;
       } else if (rarity === 4) {
+        if (withRate) {
+          const guaranteed = rateUpRare;
+          const winRateOff = currentSelectedBanner.featuredRare.includes(combined[i].id);
+          rateUpRare = !winRateOff;
+          combined[i].rate = guaranteed + winRateOff;
+
+          if (rateUpRare) {
+            rateOffRare.lose++;
+            rateOffRare.maxStreak = Math.max(rateOffRare.maxStreak, rateOffRare.currentStreak);
+            rateOffRare.currentStreak = 0;
+          } else if (!guaranteed) {
+            rateOffRare.win++;
+            rateOffRare.currentStreak++;
+          }
+        }
+
         latestRare = combined[i];
         combined[i].pity = rare;
         rare = 0;
@@ -449,38 +533,37 @@
       }
     }
 
-    let rateUpLegendary = false;
-    let rateUpRare = false;
-    if (type.id === 'character-event' || type.id === 'weapon-event') {
-      processBannerList(type.id);
-
-      if (latestLegendary !== null) {
-        const itemBanner = getBannerByTime(latestLegendary.time);
-        console.log(latestLegendary.time, itemBanner);
-        if (itemBanner && itemBanner.featured) {
-          rateUpLegendary = !itemBanner.featured.includes(latestLegendary.id);
-        }
-      }
-
-      if (latestRare !== null) {
-        const itemBanner = getBannerByTime(latestRare.time);
-        console.log(latestRare.time, itemBanner);
-        if (itemBanner && itemBanner.featured) {
-          rateUpRare = !itemBanner.featuredRare.includes(latestRare.id);
-        }
-      }
-    }
-
     const data = {
       total: combined.length,
       legendary,
       rare,
       pulls: combined,
-      guaranteed: {
-        legendary: rateUpLegendary,
-        rare: rateUpRare,
-      },
     };
+
+    if (withRate) {
+      let rateUp5 = false;
+      let rateUp4 = false;
+      if (latestLegendary !== null) {
+        rateUp5 = latestLegendary.rate === 0;
+      }
+
+      if (latestRare !== null) {
+        rateUp4 = latestRare.rate === 0;
+      }
+
+      rateOffLegendary.maxStreak = Math.max(rateOffLegendary.maxStreak, rateOffLegendary.currentStreak);
+      rateOffRare.maxStreak = Math.max(rateOffRare.maxStreak, rateOffRare.currentStreak);
+
+      data.guaranteed = {
+        legendary: rateUp5,
+        rare: rateUp4,
+      };
+
+      data.rateoff = {
+        legendary: rateOffLegendary,
+        rare: rateOffRare,
+      };
+    }
 
     await updateSave(`${prefix}${path}`, data);
   }
@@ -718,11 +801,10 @@
     });
   }
 
-  function getBannerByTime(time) {
-    const unixTime = dayjs(time).unix();
-    for (let i = bannerList.length - 1; i >= 0; i--) {
-      if (unixTime >= bannerList[i].start && unixTime < bannerList[i].end) {
-        return bannerList[i];
+  function getNextBanner(time) {
+    for (let i = currentBannerIndex + 1; i < bannerList.length; i++) {
+      if (time >= bannerList[i].start && time < bannerList[i].end) {
+        return { currentBannerIndex: i, selectedBanner: bannerList[i] };
       }
     }
   }

@@ -25,6 +25,7 @@
 
   let loading = true;
   let wishCount = 0;
+  let box = [0, 1, 2, 3];
   const avg = {};
   const percentages = {};
 
@@ -171,7 +172,7 @@
             legendaryPity += pull.pity;
             currentMonthlyData[time].legendary++;
 
-            legendaryPulls.push({ name: itemName, pity: pull.pity });
+            legendaryPulls.push({ name: itemName, pity: pull.pity, rate: pull.rate });
           } else if (rarity === 4) {
             rare++;
             rarePity += pull.pity;
@@ -211,6 +212,23 @@
           },
         };
 
+        if (counterData.rateoff !== undefined) {
+          if (avg[type.id].rare.total > 0) {
+            avg[type.id].rare.rateOff = {
+              total: counterData.rateoff.rare.win,
+              percentage: counterData.rateoff.rare.win / (counterData.rateoff.rare.win + counterData.rateoff.rare.lose),
+            };
+          }
+          if (avg[type.id].legendary.total > 0) {
+            avg[type.id].legendary.rateOff = {
+              total: counterData.rateoff.legendary.win,
+              percentage:
+                counterData.rateoff.legendary.win /
+                (counterData.rateoff.legendary.win + counterData.rateoff.legendary.lose),
+            };
+          }
+        }
+
         percentages[type.id] = {
           legendary: avg[type.id].legendary.percentage,
           rare: avg[type.id].rare.percentage,
@@ -220,6 +238,14 @@
 
     wishCount = totalWish;
     monthlyData = currentMonthlyData;
+
+    if (
+      avg['weapon-event'] !== undefined &&
+      avg['standard'] !== undefined &&
+      avg['weapon-event'].legendary.total > avg['standard'].legendary.total
+    ) {
+      box = [0, 2, 1, 3];
+    }
 
     if (updateCollectedCharacters && totalWish > 0) {
       console.log('updating collectables');
@@ -236,21 +262,21 @@
 {#if !loading}
   <div class="col-span-1 md:col-span-2 w-full">
     <div class="container">
-      {#if avg[types[0].id]}
-        <SummaryItem avg={avg[types[0].id]} type={types[0]} order={1} />
+      {#if avg[types[box[0]].id]}
+        <SummaryItem avg={avg[types[box[0]].id]} type={types[box[0]]} order={1} />
       {/if}
-      {#if avg[types[2].id]}
-        <SummaryItem avg={avg[types[2].id]} type={types[2]} order={3} />
+      {#if avg[types[box[1]].id]}
+        <SummaryItem avg={avg[types[box[1]].id]} type={types[box[1]]} order={box[1] + 1} />
       {/if}
-      {#if avg[types[1].id]}
-        <SummaryItem avg={avg[types[1].id]} type={types[1]} legendaryPity={80} order={2} />
+      {#if avg[types[box[2]].id]}
+        <SummaryItem avg={avg[types[box[2]].id]} type={types[box[2]]} order={box[2] + 1} />
       {/if}
       <div class="order-4">
-        {#if avg[types[3].id]}
-          <SummaryItem avg={avg[types[3].id]} type={types[3]} />
+        {#if avg[types[box[3]].id]}
+          <SummaryItem avg={avg[types[box[3]].id]} type={types[box[3]]} />
           <div class="h-4 md:h-0" />
         {/if}
-        <div class="flex flex-col">
+        <div class="flex flex-col summary-item">
           <div class="bg-item rounded-xl p-4 flex items-center w-full text-white mb-4" style="height: min-content;">
             {$t('wish.wishesWorth')} <img class="w-4 h-4 mx-2" src="/images/primogem.png" alt="primogem" />
             {numberFormat.format(wishCount * 160)}
@@ -279,6 +305,16 @@
       @apply block gap-0;
       column-count: 2;
       column-gap: 1rem;
+    }
+  }
+
+  @screen md {
+    .summary-item {
+      margin: 0;
+      display: grid;
+      grid-template-rows: 1fr auto;
+      margin-bottom: 1rem;
+      break-inside: avoid;
     }
   }
 </style>
