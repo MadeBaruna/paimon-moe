@@ -77,7 +77,9 @@
       </td>
     </tr>
     <tr>
-      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700"> └ {$t('wish.summary.character')} </td>
+      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
+        └ {$t('wish.summary.character')}
+      </td>
       <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
         {numberFormat.format(avg.rare.character.total)}
       </td>
@@ -89,7 +91,9 @@
       </td>
     </tr>
     <tr>
-      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700"> └ {$t('wish.summary.weapon')} </td>
+      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
+        └ {$t('wish.summary.weapon')}
+      </td>
       <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
         {numberFormat.format(avg.rare.weapon.total)}
       </td>
@@ -102,7 +106,9 @@
     </tr>
     {#if avg.rare.rateOff !== undefined}
       <tr>
-        <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700"> └ Win 50:50 </td>
+        <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
+          └ {$t('wish.summary.winRateOff')}
+        </td>
         <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
           {numberFormat.format(avg.rare.rateOff.total)}
         </td>

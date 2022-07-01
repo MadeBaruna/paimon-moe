@@ -1,4 +1,5 @@
 <script>
+  import { t } from 'svelte-i18n';
   import { createEventDispatcher } from 'svelte';
   import VirtualList from './VirtualList.svelte';
   import { fade } from 'svelte/transition';
@@ -106,6 +107,67 @@
   $: iconClasses = focused ? 'transform rotate-180' : '';
 </script>
 
+<svelte:window on:click={onWindowClick} on:keydown={onKeyDown} />
+
+<div class="select-none relative" bind:this={container}>
+  <div
+    class={`flex w-full relative items-center px-4 bg-background rounded-2xl h-14 focus-within:outline-none 
+      focus-within:border-primary border-2 border-transparent ease-in duration-100 ${classes}`}
+    on:click={toggleOptions}
+  >
+    {#if !nothingSelected}
+      <img class="w-6 h-6 mr-2" src={`/images/weapons/${selected.id}.png`} alt={selected.name} />
+    {/if}
+    <input
+      bind:this={input}
+      class={`bg-transparent focus:outline-none h-full max-w-full ${nothingSelected ? 'text-gray-500' : 'text-white'}`}
+      {placeholder}
+      value={nothingSelected || focused ? search : label}
+      on:input={onInput}
+    />
+    {#if selected}
+      <div class="absolute right-0 mr-4 cursor-pointer" on:click|stopPropagation={() => select(null)}>
+        <Icon path={mdiCloseCircle} color="white" className={`${iconClasses}`} />
+      </div>
+    {:else}
+      <Icon
+        path={mdiChevronDown}
+        color="white"
+        className={`absolute right-0 mr-4 duration-100 ease-in ${iconClasses}`}
+      />
+    {/if}
+  </div>
+  {#if focused}
+    <div
+      transition:fade={{ duration: 100 }}
+      class="options bg-item rounded-2xl absolute mt-2 pl-2 w-full min-h-full z-50 flex flex-col text-white shadow-xl border border-background"
+    >
+      {#if filteredWeapons.length}
+        <VirtualList
+          itemHeight={48}
+          height={`${maxItemRow * 48 + 16}px`}
+          items={filteredWeapons}
+          let:item={[id, weapon]}
+          let:index
+        >
+          <span
+            on:click={() => select(weapon)}
+            on:mouseenter={() => onHover(index)}
+            class={`p-3 rounded-xl cursor-pointer flex mr-2
+            ${index === 0 ? 'mt-2' : ''}
+            ${index === weapons.length ? 'mb-2' : ''}
+            ${!nothingSelected && selected.id === id ? 'text-primary font-semibold' : ''}
+            ${hoveredIndex === index ? 'hovered' : ''}`}
+          >
+            <img class="w-6 h-6 mr-2" src={`/images/weapons/${id}.png`} alt={weapon.name} />
+            <span class="flex-1">{$t(weapon.name)}</span>
+          </span>
+        </VirtualList>
+      {:else}<span class="p-3 rounded-xl cursor-pointer flex mr-2 my-2"> Weapon not found </span>{/if}
+    </div>
+  {/if}
+</div>
+
 <style>
   .hovered {
     @apply text-white !important;
@@ -117,58 +179,3 @@
     overflow-y: auto;
   }
 </style>
-
-<svelte:window on:click={onWindowClick} on:keydown={onKeyDown} />
-
-<div class="select-none relative" bind:this={container}>
-  <div
-    class={`flex w-full relative items-center px-4 bg-background rounded-2xl h-14 focus-within:outline-none 
-      focus-within:border-primary border-2 border-transparent ease-in duration-100 ${classes}`}
-    on:click={toggleOptions}>
-    {#if !nothingSelected}
-      <img class="w-6 h-6 mr-2" src={`/images/weapons/${selected.id}.png`} alt={selected.name} />
-    {/if}
-    <input
-      bind:this={input}
-      class={`bg-transparent focus:outline-none h-full max-w-full ${nothingSelected ? 'text-gray-500' : 'text-white'}`}
-      {placeholder}
-      value={nothingSelected || focused ? search : label}
-      on:input={onInput} />
-    {#if selected}
-      <div class="absolute right-0 mr-4 cursor-pointer" on:click|stopPropagation={() => select(null)}>
-        <Icon path={mdiCloseCircle} color="white" className={`${iconClasses}`} />
-      </div>
-    {:else}
-      <Icon
-        path={mdiChevronDown}
-        color="white"
-        className={`absolute right-0 mr-4 duration-100 ease-in ${iconClasses}`} />
-    {/if}
-  </div>
-  {#if focused}
-    <div
-      transition:fade={{ duration: 100 }}
-      class="options bg-item rounded-2xl absolute mt-2 pl-2 w-full min-h-full z-50 flex flex-col text-white shadow-xl border border-background">
-      {#if filteredWeapons.length}
-        <VirtualList
-          itemHeight={48}
-          height={`${maxItemRow * 48 + 16}px`}
-          items={filteredWeapons}
-          let:item={[id, weapon]}
-          let:index>
-          <span
-            on:click={() => select(weapon)}
-            on:mouseenter={() => onHover(index)}
-            class={`p-3 rounded-xl cursor-pointer flex mr-2
-            ${index === 0 ? 'mt-2' : ''}
-            ${index === weapons.length ? 'mb-2' : ''}
-            ${!nothingSelected && selected.id === id ? 'text-primary font-semibold' : ''}
-            ${hoveredIndex === index ? 'hovered' : ''}`}>
-            <img class="w-6 h-6 mr-2" src={`/images/weapons/${id}.png`} alt={weapon.name} />
-            <span class="flex-1">{weapon.name}</span>
-          </span>
-        </VirtualList>
-      {:else}<span class="p-3 rounded-xl cursor-pointer flex mr-2 my-2"> Weapon not found </span>{/if}
-    </div>
-  {/if}
-</div>

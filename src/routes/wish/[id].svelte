@@ -673,9 +673,12 @@
             class="bg-background px-4 py-2 rounded-xl flex flex-col items-center justify-center mr-4"
             style="height: 200px;"
           >
-            <p class="text-gray-400 font-body">Total</p>
+            <p class="text-gray-400 font-body">{$t('wish.summary.total')}</p>
             <p class="text-gray-400 font-body text-xl font-bold">{total}</p>
-            <p class="text-gray-400 font-body mt-2 flex items-center">5<Icon size={0.7} path={mdiStar} /> Pity</p>
+            <p class="text-gray-400 font-body mt-2 flex items-center">
+              5<Icon size={0.7} path={mdiStar} />
+              {$t('wish.detail.pity')}
+            </p>
             <p class="text-legendary-from font-body text-xl font-bold flex items-center">
               {legendary}
               {#if nextRateUp}
@@ -685,7 +688,10 @@
                 </span>
               {/if}
             </p>
-            <p class="text-gray-400 font-body mt-2 flex items-center">4<Icon size={0.7} path={mdiStar} /> Pity</p>
+            <p class="text-gray-400 font-body mt-2 flex items-center">
+              4<Icon size={0.7} path={mdiStar} />
+              {$t('wish.detail.pity')}
+            </p>
             <p class="text-rare-from font-body text-xl font-bold">{rare}</p>
           </div>
           <div class="bg-background rounded-xl inline-block mb-4 p-2 pie-chart mr-4">
