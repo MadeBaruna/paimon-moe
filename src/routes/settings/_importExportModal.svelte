@@ -1,5 +1,6 @@
 <script>
   import { mdiLoading } from '@mdi/js';
+  import { onMount } from 'svelte';
 
   import { t } from 'svelte-i18n';
   import Button from '../../components/Button.svelte';
@@ -10,6 +11,7 @@
   let input;
   let files = null;
   let loading = false;
+  export let immediate = false;
 
   async function exportData() {
     downloadData(await getLocalSaveJson(), 'paimon-moe-local-data');
@@ -49,6 +51,10 @@
       window.location.reload();
     }, 5000);
   }
+
+  onMount(() => {
+    if (immediate) exportData();
+  });
 </script>
 
 <div class="bg-background rounded-xl p-4 mb-4">

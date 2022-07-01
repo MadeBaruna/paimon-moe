@@ -73,6 +73,21 @@
     });
 
     mounted = true;
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const download = urlParams.get('download');
+    if (download === 'json') {
+      openModal(
+        ExportImportModal,
+        {
+          immediate: true,
+        },
+        {
+          closeButton: false,
+          styleWindow: { background: '#25294A', width: '500px' },
+        },
+      );
+    }
   });
 
   function updateServer() {
