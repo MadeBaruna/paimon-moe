@@ -116,7 +116,13 @@
     "talentStats": "Stat Talent",
     "build": "Build",
     "source": "Community Character Builds oleh the Genshin Helper Team",
-    "faq": "Constellation dihitung dari data riwayat wish mu. Jadi jika riwayat wish mu yang lama sudah hilang atau kamu membeli karakter nya di shop atau event, jumlah constellation nya mungkin tidak akurat! Namun kamu bisa mengubah nya secara manual dengan menekan tombol pensil disebelah nama karakter."
+    "faq": "Constellation dihitung dari data riwayat wish mu. Jadi jika riwayat wish mu yang lama sudah hilang atau kamu membeli karakter nya di shop atau event, jumlah constellation nya mungkin tidak akurat! Namun kamu bisa mengubah nya secara manual dengan menekan tombol pensil disebelah nama karakter.",
+    "mainStats": "MAIN STATS",
+    "subStats": "SUB STATS",
+    "talentPriority": "PRIORITAS TALENT",
+    "abilityTip": "TIP ABILITY",
+    "weapons": "SENJATA",
+    "artifacts": "ARTIFAK"
   },
   "wish": {
     "title": "Wish Counter",
@@ -390,7 +396,7 @@
           "Kamu juga bisa menekan",
           "untuk mengedit nilai nya secara manual!"
         ],
-        "p6": "Tekan tombol panah dibawah untuk melihat detail riwayat mu. Sebuah form akan muncul ketika kamu mendapat 5★ atau 4★. Atau kamu bisa menambahkan atau mengedit tabel nya secara manual."
+        "p6": "Tekan panah di bawah untuk melihat detail wish mu. Sebuah popup juga akan muncul saat kamu mendapatkan 5★ atau 4★. Kamu juga bisa menambahkan atau mengubah tabel nya secara manual."
       }
     },
     "types": {
@@ -412,7 +418,11 @@
       "worth": "Setara dengan",
       "loading": "Loading... (Kalau tidak selesai-selesai, ganti server di halaman settings)",
       "guaranteed": "{rarity}★ selanjutnya pasti karakter atau senjata promotional",
-      "unknown_3_star": "Unknown"
+      "unknown_3_star": "Unknown",
+      "rarity": "Rarity",
+      "total": "Total",
+      "percent": "Persen",
+      "pityAverage": "Rerata Pity"
     },
     "tally": {
       "title": "Perhitungan Pity Wish",
@@ -435,6 +445,14 @@
       "median": "5★ Median",
       "user": "Total User",
       "detail": "Detail"
+    },
+    "summary": {
+      "total": "Total",
+      "percent": "Persen",
+      "pityAverage": "Rerata Pity",
+      "character": "Karakter",
+      "weapon": "Senjata",
+      "winRateOff": "Menang 50:50"
     },
     "note": [
       "Wish History tidak update secara otomatis, silahkan import lagi untuk mengupdate history nya!",
@@ -466,7 +484,9 @@
       "moreTotal": "Lebih banyak dari {percentage}% pengguna paimon.moe",
       "lessTotal": "Lebih sedikit dari {percentage}% pengguna paimon.moe",
       "moreLuck": "Lebih beruntung dari {percentage}% pengguna paimon.moe",
-      "lessLuck": "Lebih sial dari {percentage}% pengguna paimon.moe"
+      "lessLuck": "Lebih sial dari {percentage}% pengguna paimon.moe",
+      "top": "TOP",
+      "bottom": "BOTTOM"
     }
   },
   "calculator": {
@@ -671,6 +691,23 @@
     "feedback": "Jika kamu menemukan bug, data yang salah, atau ada feedback, kamu bisa chat di",
     "or": "atau",
     "thanks": "Terima Kasih!",
+    "credits": {
+      "title": "Kredit",
+      "items": [
+        {
+          "name": "Data dan gambar",
+          "value": "Genshin Impact Wiki"
+        },
+        {
+          "name": "Data stats",
+          "value": "Dimbreath Genshin Data"
+        },
+        {
+          "name": "Rate drop untuk kalkulasi resin",
+          "value": "Data Gathering Discord"
+        }
+      ]
+    },
     "setMainAccount": "Atur Sebagai Akun Utama",
     "modal": {
       "notice": "Semua todo dan riwayat wish akan dihapus",
@@ -734,6 +771,16 @@
       "paimon-moe-api Github",
       "dan",
       "paimon-moe Github"
+    ],
+    "subtitleAd": "Iklan",
+    "ad": [
+      "Kami menggunakan iklan pihak ketiga untuk mendukung website kami. Beberapa dari pengiklan mungkin disediakan oleh pengiklan pihak ketiga.",
+      "Kamu bisa melihat",
+      " kebijakan privasi",
+      "dan",
+      "kebijakan cookie",
+      "disini. Kamu bisa mengatur cookie mu",
+      "disini"
     ]
   },
   "sync": {
@@ -753,7 +800,16 @@
     "copyright": "Genshin Impact, konten game dan material adalah trademark dan copyright milik HoYoverse.",
     "discord": "Gabung ke Discord",
     "community": "Link Komunitas",
-    "official": "Link Official"
+    "official": "Link Official",
+    "link": {
+      "github": "GitHub",
+      "discord": "Discord",
+      "devTwitter": "Twitter Dev",
+      "reddit": "Reddit",
+      "facebook": "Facebook",
+      "cookieSettings": "Pengaturan Kuki",
+      "privacyPolicy": "Kebijakan Privasi"
+    }
   },
   "donate": {
     "message": [
@@ -817,6 +873,7 @@
     "corridor": "Koridor",
     "inventoryButton": "Inventory",
     "listButton": "Daftar",
+    "selectCharacter": "Pilih karakter...",
     "inventory": {
       "title": "Inventory Furnitur",
       "subtitle": "Beberapa kategori special seperti dinding tidak ditampilkan",
@@ -869,7 +926,12 @@
     "domain": "Domain",
     "artifact": "Artifak",
     "setPiece": "Bonus {piece} Set",
-    "recommendedCharacter": "Rekomendasi Karakter {piece} Set"
+    "recommendedCharacter": "Rekomendasi Karakter {piece} Set",
+    "18ATKSet": "Set +18% ATK",
+    "20EnergyRechargeSet": "Set 20% Energy Recharge",
+    "sands": "SANDS",
+    "goblet": "GOBLET",
+    "circlet": "CIRCLET"
   },
   "fishing": {
     "title": "Buku Memancing",

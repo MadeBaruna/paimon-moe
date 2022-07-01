@@ -116,7 +116,13 @@
     "talentStats": "특성 계수",
     "build": "육성",
     "source": "커뮤니티 캐릭터 빌드는 Genshin Helper Team이 만들었습니다",
-    "faq": "표시되는 운명의 자리는 제출해 주신 기원 통계 데이터에 기반합니다. 따라서, 기원 통계에 제출하지 못한 채 사라진 기원 데이터가 있거나, 상점에서 캐릭터를 구매했다면 운명의 자리가 정확하지 않을 수 있습니다! 하지만 캐릭터 상세 페이지에서 캐릭터 이름 옆의 연필 모양을 눌러 직접 수정할 수 있습니다."
+    "faq": "표시되는 운명의 자리는 제출해 주신 기원 통계 데이터에 기반합니다. 따라서, 기원 통계에 제출하지 못한 채 사라진 기원 데이터가 있거나, 상점에서 캐릭터를 구매했다면 운명의 자리가 정확하지 않을 수 있습니다! 하지만 캐릭터 상세 페이지에서 캐릭터 이름 옆의 연필 모양을 눌러 직접 수정할 수 있습니다.",
+    "mainStats": "",
+    "subStats": "",
+    "talentPriority": "",
+    "abilityTip": "",
+    "weapons": "",
+    "artifacts": ""
   },
   "wish": {
     "title": "기원 통계",
@@ -390,7 +396,7 @@
           "또는",
           "버튼을 눌러 값들을 직접 고칠 수도 있습니다!"
         ],
-        "p6": "아래쪽에 있는 화살표를 눌러 상세 뽑기 결과를 볼 수 있습니다. 5★ 또는 4★ 를 누르면 팝업이 나타나, 데이터를 수정할 수 있고 데이터를 수동으로 추가할 수도 있습니다."
+        "p6": ""
       }
     },
     "types": {
@@ -412,7 +418,11 @@
       "worth": "가치",
       "loading": "로딩 중... (화면이 멈췄다면, 설정 페이지에서 서버를 바꿔주세요)",
       "guaranteed": "다음 {rarity}★ 은 확정 UP 캐릭터 또는 무기입니다",
-      "unknown_3_star": "알 수 없음"
+      "unknown_3_star": "알 수 없음",
+      "rarity": "",
+      "total": "",
+      "percent": "",
+      "pityAverage": ""
     },
     "tally": {
       "title": "기원 총계",
@@ -435,6 +445,14 @@
       "median": "5★ 평균",
       "user": "전체 사용자",
       "detail": "상세 정보"
+    },
+    "summary": {
+      "total": "",
+      "percent": "",
+      "pityAverage": "",
+      "character": "",
+      "weapon": "",
+      "winRateOff": ""
     },
     "note": [
       "기원 이력은 자동으로 업데이트되지 않습니다. 자동 제출 기능을 이용해 주세요.",
@@ -466,7 +484,9 @@
       "moreTotal": "전체 paimon.moe 유저의 {percentage}%보다 많은 뽑기 횟수",
       "lessTotal": "전체 paimon.moe 유저의 {percentage}%보다 적은 뽑기 횟수",
       "moreLuck": "전체 paimon.moe 유저의 {percentage}%보다 운이 좋음",
-      "lessLuck": "전체 paimon.moe 유저의 {percentage}%보다 운이 나쁨"
+      "lessLuck": "전체 paimon.moe 유저의 {percentage}%보다 운이 나쁨",
+      "top": "",
+      "bottom": ""
     }
   },
   "calculator": {
@@ -671,6 +691,23 @@
     "feedback": "버그, 잘못된 데이터를 발견하거나 또는 피드백이 있을 경우 메세지를 남겨주세요:",
     "or": "또는",
     "thanks": "감사합니다 😁!",
+    "credits": {
+      "title": "",
+      "items": [
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        }
+      ]
+    },
     "setMainAccount": "주 계정으로 설정하기",
     "modal": {
       "notice": "모든 할 일 목록과 기원 기록 정보가 삭제됩니다",
@@ -734,6 +771,16 @@
       "paimon-moe-api Github",
       "and",
       "paimon-moe Github"
+    ],
+    "subtitleAd": "",
+    "ad": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ]
   },
   "sync": {
@@ -753,7 +800,16 @@
     "copyright": "Genshin Impact, 게임의 콘텐츠와 소재의 트레이드마크와 저작권은 HoYoverse에 있습니다.",
     "discord": "Discord 참가",
     "community": "커뮤니티 링크",
-    "official": "공식 링크"
+    "official": "공식 링크",
+    "link": {
+      "github": "",
+      "discord": "",
+      "devTwitter": "",
+      "reddit": "",
+      "facebook": "",
+      "cookieSettings": "",
+      "privacyPolicy": ""
+    }
   },
   "donate": {
     "message": [
@@ -817,6 +873,7 @@
     "corridor": "복도",
     "inventoryButton": "보관함",
     "listButton": "목록",
+    "selectCharacter": "",
     "inventory": {
       "title": "가구 보관함",
       "subtitle": "벽 등 특수 카테고리는 표시되지 않습니다",
@@ -869,7 +926,12 @@
     "domain": "비경",
     "artifact": "성유물",
     "setPiece": "{piece} 세트 효과",
-    "recommendedCharacter": "추천 캐릭터 {piece} 세트"
+    "recommendedCharacter": "추천 캐릭터 {piece} 세트",
+    "18ATKSet": "",
+    "20EnergyRechargeSet": "",
+    "sands": "",
+    "goblet": "",
+    "circlet": ""
   },
   "fishing": {
     "title": "낚시 사전",

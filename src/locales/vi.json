@@ -116,7 +116,13 @@
     "talentStats": "Chi Tiết Thiên Phú",
     "build": "Build",
     "source": "Build Nhân Vật từ cộng đồng bới Genshin Helper Team",
-    "faq": "Cung Mệnh được tính từ Lịch Sử Cầu Nguyện của bạn. Nếu lịch sử cầu nguyện của bạn hết hạn 6 tháng hoặc bạn mua cung mệnh nhân vật từ cửa hàng hoặc sự kiện, thông tin có thể sẽ sai sót! Nhưng bạn có thể tự chỉnh sửa bằng cách ấn vào cây bút kế bên tên nhân vật."
+    "faq": "Cung Mệnh được tính từ Lịch Sử Cầu Nguyện của bạn. Nếu lịch sử cầu nguyện của bạn hết hạn 6 tháng hoặc bạn mua cung mệnh nhân vật từ cửa hàng hoặc sự kiện, thông tin có thể sẽ sai sót! Nhưng bạn có thể tự chỉnh sửa bằng cách ấn vào cây bút kế bên tên nhân vật.",
+    "mainStats": "",
+    "subStats": "",
+    "talentPriority": "",
+    "abilityTip": "",
+    "weapons": "",
+    "artifacts": ""
   },
   "wish": {
     "title": "Lịch Sử Cầu Nguyện",
@@ -390,7 +396,7 @@
           "Bạn cũng có thể nhấn nút",
           "để sửa giá trị một cách thủ công!"
         ],
-        "p6": "Ấn vào mũi tên ở dưới để xem thông tin chi tiết lượt cầu nguyện. Sẽ có một popup hiện ra khi bạn nhận được 5★ hoặc 4★. Bạn cũng có thể thêm hoặc chỉnh sử bảng này thủ công."
+        "p6": ""
       }
     },
     "types": {
@@ -412,7 +418,11 @@
       "worth": "Giá trị",
       "loading": "Đang tải... (Nếu không tải được, hãy đổi server ở cài đặt)",
       "guaranteed": "{rarity}★ tiếp theo chắc chắn sẽ là nhân vật hoặc vũ khí được rate-up",
-      "unknown_3_star": "Không rõ"
+      "unknown_3_star": "Không rõ",
+      "rarity": "",
+      "total": "",
+      "percent": "",
+      "pityAverage": ""
     },
     "tally": {
       "title": "Thống Kê Cầu Nguyện",
@@ -435,6 +445,14 @@
       "median": "Trung bình ra 5★ ở lượt",
       "user": "Tổng số người dùng",
       "detail": "Chi tiết"
+    },
+    "summary": {
+      "total": "",
+      "percent": "",
+      "pityAverage": "",
+      "character": "",
+      "weapon": "",
+      "winRateOff": ""
     },
     "note": [
       "Lịch sử cầu nguyện không cập nhật tự động, vui lòng Nhập lại để cập nhật lịch sử của bạn!",
@@ -466,7 +484,9 @@
       "moreTotal": "Quay nhiều hơn {percentage}% người dùng paimon.moe",
       "lessTotal": "Quay ít hơn {percentage}% người dùng paimon.moe",
       "moreLuck": "May mắn hơn {percentage}% người dùng paimon.moe",
-      "lessLuck": "Kém may mắn hơn {percentage}% người dùng paimon.moe"
+      "lessLuck": "Kém may mắn hơn {percentage}% người dùng paimon.moe",
+      "top": "",
+      "bottom": ""
     }
   },
   "calculator": {
@@ -671,6 +691,23 @@
     "feedback": "Nếu bạn tìm thấy bất kì lỗi, dữ liệu sai, hoặc có phản hồi nào khác, vui lòng để lại lời nhắn ở",
     "or": "hoặc",
     "thanks": "Cảm ơn bạn 😁!",
+    "credits": {
+      "title": "",
+      "items": [
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        }
+      ]
+    },
     "setMainAccount": "Đặt Làm Tài Khoản Chính",
     "modal": {
       "notice": "Tất cả Việc Cần Làm và Lịch Sử Cầu Nguyện sẽ bị xóa",
@@ -734,6 +771,16 @@
       "paimon-moe-api Github",
       "và",
       "paimon-moe Github"
+    ],
+    "subtitleAd": "",
+    "ad": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ]
   },
   "sync": {
@@ -753,7 +800,16 @@
     "copyright": "Genshin Impact, nội dung và dữ liệu trò chơi là thương hiệu và bản quyền thuộc HoYoverse.",
     "discord": "Tham gia Discord của trang",
     "community": "Liên kết Cộng đồng",
-    "official": "Liên Kết Chính Thức"
+    "official": "Liên Kết Chính Thức",
+    "link": {
+      "github": "",
+      "discord": "",
+      "devTwitter": "",
+      "reddit": "",
+      "facebook": "",
+      "cookieSettings": "",
+      "privacyPolicy": ""
+    }
   },
   "donate": {
     "message": [
@@ -817,6 +873,7 @@
     "corridor": "Hành lang",
     "inventoryButton": "Túi Đồ",
     "listButton": "Danh sách",
+    "selectCharacter": "",
     "inventory": {
       "title": "Túi Đồ Trang Trí",
       "subtitle": "Một số mục đặt biệt như tường không được hiển thị",
@@ -869,7 +926,12 @@
     "domain": "Bí Cảnh",
     "artifact": "Thánh Di Vật",
     "setPiece": "Hiệu quả bộ {piece} món",
-    "recommendedCharacter": "Những nhân vật dưới đây nên dùng bộ {piece} món"
+    "recommendedCharacter": "Những nhân vật dưới đây nên dùng bộ {piece} món",
+    "18ATKSet": "",
+    "20EnergyRechargeSet": "",
+    "sands": "",
+    "goblet": "",
+    "circlet": ""
   },
   "fishing": {
     "title": "Sách Câu Cá",

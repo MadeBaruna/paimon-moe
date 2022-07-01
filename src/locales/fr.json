@@ -116,7 +116,13 @@
     "talentStats": "Stats d'aptitude",
     "build": "Build",
     "source": "Community Character Builds de la Genshin Helper Team",
-    "faq": "Le nombre de constellations est calculé à partir de vos données d'Historique de Vœux. Si votre ancien historique de souhaits a déjà disparu ou si vous avez obtenu le personnage depuis la boutique ou lors d'un événement, le nombre pourrait ne pas être exact ! Mais vous pouvez le modifier manuellement en appuyant sur l'icône de crayon à côté du nom du personnage."
+    "faq": "Le nombre de constellations est calculé à partir de vos données d'Historique de Vœux. Si votre ancien historique de souhaits a déjà disparu ou si vous avez obtenu le personnage depuis la boutique ou lors d'un événement, le nombre pourrait ne pas être exact ! Mais vous pouvez le modifier manuellement en appuyant sur l'icône de crayon à côté du nom du personnage.",
+    "mainStats": "",
+    "subStats": "",
+    "talentPriority": "",
+    "abilityTip": "",
+    "weapons": "",
+    "artifacts": ""
   },
   "wish": {
     "title": "Compteur de voeux",
@@ -390,7 +396,7 @@
           "Vous pouvez aussi cliquer sur le bouton",
           "pour éditer les valeurs manuellement !"
         ],
-        "p6": "Cliquez sur la flèche en bas pour voir les détails de vos voeux. Une popup va apparaître quand vous aurez un 5★ ou un 4★. Vous pouvez aussi éditer le tableau manuellement."
+        "p6": ""
       }
     },
     "types": {
@@ -412,7 +418,11 @@
       "worth": "Valeur",
       "loading": "Chargement... (Si cela ne charge pas, changez le serveur sur la page des paramètres)",
       "guaranteed": "Le prochain {rarity}★ sera forcément le personnage ou arme en tête de bannière",
-      "unknown_3_star": "Inconnu"
+      "unknown_3_star": "Inconnu",
+      "rarity": "",
+      "total": "",
+      "percent": "",
+      "pityAverage": ""
     },
     "tally": {
       "title": "Voeux globaux",
@@ -435,6 +445,14 @@
       "median": "Médiane 5★",
       "user": "Nombre total d'utilisateurs",
       "detail": "Détails"
+    },
+    "summary": {
+      "total": "",
+      "percent": "",
+      "pityAverage": "",
+      "character": "",
+      "weapon": "",
+      "winRateOff": ""
     },
     "note": [
       "L'Historique de Vœux n'est pas mis à jour automatiquement, veuillez importer à nouveau pour mettre à jour votre historique !",
@@ -466,7 +484,9 @@
       "moreTotal": "Plus de tirages que {percentage}% des utilisateurs de paimon.moe",
       "lessTotal": "Moins de tirages que {percentage}% des utilisateurs de paimon.moe",
       "moreLuck": "Plus chanceux que {percentage}% des utilisateurs de paimon.moe",
-      "lessLuck": "Moins chanceux que {percentage}% des utilisateurs de paimon.moe"
+      "lessLuck": "Moins chanceux que {percentage}% des utilisateurs de paimon.moe",
+      "top": "",
+      "bottom": ""
     }
   },
   "calculator": {
@@ -671,6 +691,23 @@
     "feedback": "Si vous trouvez des bugs, données incorrectes ou voulez donner vos retours, laissez un message sur",
     "or": "ou",
     "thanks": "Merci 😁!",
+    "credits": {
+      "title": "",
+      "items": [
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        }
+      ]
+    },
     "setMainAccount": "Définir comme compte principal",
     "modal": {
       "notice": "Toutes les listes de tâches et l'historique des voeux seront supprimés",
@@ -734,6 +771,16 @@
       "paimon-moe-api Github",
       "et",
       "paimon-moe Github"
+    ],
+    "subtitleAd": "",
+    "ad": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ]
   },
   "sync": {
@@ -753,7 +800,16 @@
     "copyright": "Genshin Impact, les contenus du jeu ainsi que les différents matériaux sont des marques déposées de HoYoverse.",
     "discord": "Rejoignez notre Discord",
     "community": "Liens de la communauté",
-    "official": "Liens officiels"
+    "official": "Liens officiels",
+    "link": {
+      "github": "",
+      "discord": "",
+      "devTwitter": "",
+      "reddit": "",
+      "facebook": "",
+      "cookieSettings": "",
+      "privacyPolicy": ""
+    }
   },
   "donate": {
     "message": [
@@ -817,6 +873,7 @@
     "corridor": "Couloir",
     "inventoryButton": "Inventaire",
     "listButton": "Liste",
+    "selectCharacter": "",
     "inventory": {
       "title": "Inventaire des décorations",
       "subtitle": "Certaines catégories spéciales comme les murs ne sont pas affichées",
@@ -869,7 +926,12 @@
     "domain": "Domaine",
     "artifact": "Artéfact",
     "setPiece": "Bonus du set de {piece} pièce(s)",
-    "recommendedCharacter": "Personnages recommandés pour le set de {piece} pièce(s)"
+    "recommendedCharacter": "Personnages recommandés pour le set de {piece} pièce(s)",
+    "18ATKSet": "",
+    "20EnergyRechargeSet": "",
+    "sands": "",
+    "goblet": "",
+    "circlet": ""
   },
   "fishing": {
     "title": "Recueil de pêche",

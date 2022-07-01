@@ -116,7 +116,13 @@
     "talentStats": "天賦情報",
     "build": "ビルド",
     "source": "Genshin Helper Teamがお勧めするキャラクタービルド",
-    "faq": "命ノ星座の開放数は、あなたの祈願履歴から算出されます。そのため、祈願履歴が残っていない場合や、ショップからキャラクターを入手した場合は、命ノ星座の開放数が正確ではない可能性があります! キャラクター名の横にある鉛筆アイコンを押すことで、手動で編集することができます。"
+    "faq": "命ノ星座の開放数は、あなたの祈願履歴から算出されます。そのため、祈願履歴が残っていない場合や、ショップからキャラクターを入手した場合は、命ノ星座の開放数が正確ではない可能性があります! キャラクター名の横にある鉛筆アイコンを押すことで、手動で編集することができます。",
+    "mainStats": "",
+    "subStats": "",
+    "talentPriority": "",
+    "abilityTip": "",
+    "weapons": "",
+    "artifacts": ""
   },
   "wish": {
     "title": "祈願カウンター",
@@ -390,7 +396,7 @@
           "また、このボタン",
           "で手動で編集できます！"
         ],
-        "p6": "下にある矢印をクリックすると祈願詳細を確認することができます。5★ や 4★ が出るとポップアップが表示されます。手動で祈願表を調整することもできます。"
+        "p6": ""
       }
     },
     "types": {
@@ -412,7 +418,11 @@
       "worth": "に使用した原石の合計",
       "loading": "読み込み中... (固まったら設定でアカウントのサーバを確かめてください)",
       "guaranteed": "次回の{rarity}★はピックアップの排出が確定",
-      "unknown_3_star": "不明の3★"
+      "unknown_3_star": "不明の3★",
+      "rarity": "",
+      "total": "",
+      "percent": "",
+      "pityAverage": ""
     },
     "tally": {
       "title": "全世界の祈願統計",
@@ -435,6 +445,14 @@
       "median": "5★ 中央値",
       "user": "合計ユーザー数",
       "detail": "詳細"
+    },
+    "summary": {
+      "total": "",
+      "percent": "",
+      "pityAverage": "",
+      "character": "",
+      "weapon": "",
+      "winRateOff": ""
     },
     "note": [
       "祈願履歴は自動的に更新されません。新しい記録がある場合はもう一度インポートしてください！",
@@ -466,7 +484,9 @@
       "moreTotal": "{percentage}%のpaimon.moeのユーザーより祈願回数が多いです。",
       "lessTotal": "{percentage}%のpaimon.moeのユーザーより祈願回数が少ないです。",
       "moreLuck": "{percentage}%のpaimon.moeのユーザーより運が良いです。",
-      "lessLuck": "{percentage}%のpaimon.moeのユーザーより運が悪いです。"
+      "lessLuck": "{percentage}%のpaimon.moeのユーザーより運が悪いです。",
+      "top": "",
+      "bottom": ""
     }
   },
   "calculator": {
@@ -671,6 +691,23 @@
     "feedback": "もしバグや間違ったデータを見つけたり、その他のフィードバックがあれば",
     "or": "や",
     "thanks": "へ連絡してください😁！",
+    "credits": {
+      "title": "",
+      "items": [
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        }
+      ]
+    },
     "setMainAccount": "メインアカウントとして設定",
     "modal": {
       "notice": "全ての祈願記録やTodoは削除されます",
@@ -734,6 +771,16 @@
       "paimon-moe-api Github",
       "または",
       "paimon-moe Github"
+    ],
+    "subtitleAd": "",
+    "ad": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
     ]
   },
   "sync": {
@@ -753,7 +800,16 @@
     "copyright": "原神、ゲームコンテンツおよび素材は HoYoverse の商標および著作権です。",
     "discord": "Discordに参加する",
     "community": "コミュニティリンク",
-    "official": "公式リンク"
+    "official": "公式リンク",
+    "link": {
+      "github": "",
+      "discord": "",
+      "devTwitter": "",
+      "reddit": "",
+      "facebook": "",
+      "cookieSettings": "",
+      "privacyPolicy": ""
+    }
   },
   "donate": {
     "message": [
@@ -817,6 +873,7 @@
     "corridor": "回廊",
     "inventoryButton": "倉庫",
     "listButton": "リスト",
+    "selectCharacter": "",
     "inventory": {
       "title": "家具倉庫",
       "subtitle": "壁など一部の特殊なカテゴリは表示されません",
@@ -869,7 +926,12 @@
     "domain": "秘境",
     "artifact": "聖遺物",
     "setPiece": "{piece} セット効果",
-    "recommendedCharacter": "{piece} セット効果が推奨されるキャラクター"
+    "recommendedCharacter": "{piece} セット効果が推奨されるキャラクター",
+    "18ATKSet": "",
+    "20EnergyRechargeSet": "",
+    "sands": "",
+    "goblet": "",
+    "circlet": ""
   },
   "fishing": {
     "title": "釣りリスト",
