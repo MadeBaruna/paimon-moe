@@ -411,7 +411,7 @@
 
     const path = `wish-counter-${type.id}`;
     const localData = await readSave(`${prefix}${path}`);
-    const withRate = type.id === 'character-event' || type.id === 'weapon-event';
+    let withRate = type.id === 'character-event' || type.id === 'weapon-event';
 
     let localWishes = [];
     if (localData !== null) {
@@ -465,20 +465,25 @@
         rarity = weaponList[combined[i].id].rarity;
       }
 
-      const unixTime = dayjs(combined[i].time).unix();
-      if (withRate && (currentSelectedBanner === null || currentSelectedBanner.end < unixTime)) {
-        lastBannerIndex = currentBannerIndex;
+      try {
+        const unixTime = dayjs(combined[i].time).unix();
+        if (withRate && (currentSelectedBanner === null || currentSelectedBanner.end < unixTime)) {
+          lastBannerIndex = currentBannerIndex;
 
-        const nextBanner = getNextBanner(unixTime);
+          const nextBanner = getNextBanner(unixTime);
 
-        if (nextBanner === undefined) {
-          currentBannerIndex = lastBannerIndex;
-          currentSelectedBanner = lastBanner;
-        } else {
-          currentSelectedBanner = nextBanner.selectedBanner;
-          currentBannerIndex = nextBanner.currentBannerIndex;
-          lastBanner = currentSelectedBanner;
+          if (nextBanner === undefined) {
+            currentBannerIndex = lastBannerIndex;
+            currentSelectedBanner = lastBanner;
+          } else {
+            currentSelectedBanner = nextBanner.selectedBanner;
+            currentBannerIndex = nextBanner.currentBannerIndex;
+            lastBanner = currentSelectedBanner;
+          }
         }
+      } catch (err) {
+        withRate = false;
+        console.log('ERROR PARSE BANNER', combined[i]);
       }
 
       // guaranteed + winrateoff
