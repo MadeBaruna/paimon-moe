@@ -36,12 +36,14 @@
         <div
           on:click={() => select(index, item)}
           class={`h-20 w-20 p-2 mr-2 flex items-center justify-center cursor-pointer rounded-xl transition duration-300
-        ${selected === index ? 'bg-background border-primary border-2' : ''}`}>
+        ${selected === index ? 'bg-background border-primary border-2' : ''}`}
+        >
           <img
             class="w-full max-h-full object-contain"
             src={`/images/items/${item.id}.png`}
             alt={item.name}
-            title={item.name} />
+            title={item.name}
+          />
         </div>
       {/each}
     </div>
@@ -52,7 +54,8 @@
           class="w-full max-h-full object-contain"
           src={`/images/items/${item}.png`}
           alt={itemList[item].name}
-          title={itemList[item].name} />
+          title={itemList[item].name}
+        />
       </div>
     </div>
   {/if}
@@ -68,9 +71,10 @@
         class="w-full max-h-full object-contain"
         src={`/images/items/${selectedItem.id}.png`}
         alt={selectedItem.name}
-        title={selectedItem.name} />
+        title={selectedItem.name}
+      />
     </div>
-    <span>{selectedItem.name}</span>
+    <span>{$t(selectedItem.name)}</span>
     <div class="mx-2 w-4 flex-shrink-0">
       <Icon size={0.5} path={mdiClose} />
     </div>

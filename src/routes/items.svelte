@@ -310,7 +310,7 @@
                       loading="lazy"
                     />
                   </div>
-                  <span>{itemList[itemName].name}</span>
+                  <span>{$t(itemList[itemName].name)}</span>
                 </div>
               </td>
               <td class="border-gray-700 border-b align-middle pt-2 weapon-cell">
