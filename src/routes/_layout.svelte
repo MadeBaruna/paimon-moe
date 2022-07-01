@@ -85,14 +85,14 @@
           href="https://github.com/MadeBaruna/paimon-moe"
           target="_blank"
         >
-          <Icon path={mdiGithub} size={1} /> Github
+          <Icon path={mdiGithub} size={1} /> {$t('footer.link.github')}
         </a>
         <a
           class="text-gray-400 hover:text-primary whitespace-no-wrap"
           href="https://twitter.com/MadeBaruna"
           target="_blank"
         >
-          <Icon path={mdiTwitter} size={1} /> Dev Twitter
+          <Icon path={mdiTwitter} size={1} /> {$t('footer.link.devTwitter')}
         </a>
       </div>
     </div>
@@ -104,30 +104,30 @@
           href="https://discord.gg/4nbWsCGjjE"
           target="_blank"
         >
-          <Icon path={mdiDiscord} size={1} /> Discord
+          <Icon path={mdiDiscord} size={1} /> {$t('footer.link.discord')}
         </a>
         <a
           class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap"
           href="https://www.facebook.com/Genshinimpact/"
           target="_blank"
         >
-          <Icon path={mdiFacebook} size={1} /> Facebook
+          <Icon path={mdiFacebook} size={1} /> {$t('footer.link.facebook')}
         </a>
         <a
           class="text-gray-400 hover:text-primary whitespace-no-wrap"
           href="https://www.reddit.com/r/Genshin_Impact/"
           target="_blank"
         >
-          <Icon path={mdiReddit} size={1} /> Reddit
+          <Icon path={mdiReddit} size={1} /> {$t('footer.link.reddit')}
         </a>
       </div>
     </div>
     <div
       class="text-gray-400 mt-4 md:mt-0 md:ml-4 flex flex-col justify-center h-full md:pl-4 md:border-l border-gray-600"
     >
-      <a class="text-gray-400 hover:text-primary" href="/privacy-policy">Privacy Policy</a>
+      <a class="text-gray-400 hover:text-primary" href="/privacy-policy">{$t('footer.link.privacyPolicy')}</a>
       <!-- svelte-ignore a11y-invalid-attribute -->
-      <a class="text-gray-400 hover:text-primary nn-cmp-show" href="#">Cookie Settings</a>
+      <a class="text-gray-400 hover:text-primary nn-cmp-show" href="#">{$t('footer.link.cookieSettings')}</a>
     </div>
   </div>
 </div>

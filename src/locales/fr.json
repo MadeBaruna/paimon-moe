@@ -390,11 +390,7 @@
           "Vous pouvez aussi cliquer sur le bouton",
           "pour éditer les valeurs manuellement !"
         ],
-        "p6": [
-          "Cliquez sur la flèche en bas pour voir les détails de vos voeux. Une popup va apparaître quand vous aurez un",
-          "ou un",
-          "Vous pouvez aussi éditer le tableau manuellement."
-        ]
+        "p6": "Cliquez sur la flèche en bas pour voir les détails de vos voeux. Une popup va apparaître quand vous aurez un 5★ ou un 4★. Vous pouvez aussi éditer le tableau manuellement."
       }
     },
     "types": {

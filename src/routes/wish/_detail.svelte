@@ -67,10 +67,10 @@
   </p>
   <table class="mt-4">
     <tr>
-      <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-left">Rarity</td>
-      <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">Total</td>
-      <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">Percent</td>
-      <td class="text-gray-400 text-sm font-display text-right whitespace-no-wrap">Pity AVG</td>
+      <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-left">{$t('wish.detail.rarity')}</td>
+      <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">{$t('wish.detail.total')}</td>
+      <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">{$t('wish.detail.percent')}</td>
+      <td class="text-gray-400 text-sm font-display text-right whitespace-no-wrap">{$t('wish.detail.pityAverage')}</td>
     </tr>
     <tr>
       <td class="text-legendary-from font-semibold pr-2 md:pr-4 border-t border-gray-700">
@@ -102,7 +102,7 @@
     </tr>
     <tr>
       <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700 whitespace-no-wrap">
-        └ Character
+        └ {$t('wish.detail.character')}
       </td>
       <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
         {numberFormat.format(banner.rare.character.length)}
@@ -116,7 +116,7 @@
     </tr>
     <tr>
       <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700 whitespace-no-wrap">
-        └ Weapon
+        └ {$t('wish.detail.weapon')}
       </td>
       <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
         {numberFormat.format(banner.rare.weapon.length)}
