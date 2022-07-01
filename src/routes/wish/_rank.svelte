@@ -170,9 +170,15 @@
       </p>
     </div>
     <div class="pl-1">
-      <span class="text-sm font-black text-white opacity-75 block leading-none">TOP</span>
+      <span class="text-sm font-black text-white opacity-75 block leading-none">
+        {$t(`wish.rank.${percentage < 50 ? 'top' : 'bottom'}`)}
+      </span>
       <span class="text-white font-black text-3xl leading-none block" style="line-height: 0.75;">
-        {loading.total ? '...' : percentage.toFixed(fixedPoint)}%
+        {loading.total
+          ? '...'
+          : percentage < 50
+          ? percentage.toFixed(fixedPoint)
+          : (100 - percentage).toFixed(fixedPoint)}%
       </span>
     </div>
   </div>
@@ -198,9 +204,15 @@
       </p>
     </div>
     <div class="pl-1">
-      <span class="text-sm font-black text-legendary-from opacity-75 block leading-none">TOP</span>
+      <span class="text-sm font-black text-legendary-from opacity-75 block leading-none">
+        {loading.legendary ? $t('wish.rank.top') : $t(`wish.rank.${percentageLuck.legendary < 50 ? 'top' : 'bottom'}`)}
+      </span>
       <span class="text-legendary-from font-black text-3xl leading-none block" style="line-height: 0.75;">
-        {loading.legendary ? '...' : percentageLuck.legendary.toFixed(fixedPointLegendary)}%
+        {loading.legendary
+          ? '...'
+          : percentageLuck.legendary < 50
+          ? percentageLuck.legendary.toFixed(fixedPointLegendary)
+          : (100 - percentageLuck.legendary).toFixed(fixedPointLegendary)}%
       </span>
     </div>
   </div>
@@ -224,9 +236,15 @@
       </p>
     </div>
     <div class="pl-1">
-      <span class="text-sm font-black text-rare-from opacity-75 block leading-none">TOP</span>
+      <span class="text-sm font-black text-rare-from opacity-75 block leading-none">
+        {loading.rare ? $t('wish.rank.top') : $t(`wish.rank.${percentageLuck.rare < 50 ? 'top' : 'bottom'}`)}
+      </span>
       <span class="text-rare-from font-black text-3xl leading-none block" style="line-height: 0.75;">
-        {loading.rare ? '...' : percentageLuck.rare.toFixed(fixedPointRare)}%
+        {loading.rare
+          ? '...'
+          : percentageLuck.rare < 50
+          ? percentageLuck.rare.toFixed(fixedPointRare)
+          : (100 - percentageLuck.rare).toFixed(fixedPointRare)}%
       </span>
     </div>
   </div>

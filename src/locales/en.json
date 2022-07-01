@@ -484,7 +484,9 @@
       "moreTotal": "More pulls than {percentage}% of paimon.moe users",
       "lessTotal": "Less pulls than {percentage}% of paimon.moe users",
       "moreLuck": "Luckier than {percentage}% of paimon.moe users",
-      "lessLuck": "Less lucky than {percentage}% of paimon.moe users"
+      "lessLuck": "Less lucky than {percentage}% of paimon.moe users",
+      "top": "TOP",
+      "bottom": "BOTTOM"
     }
   },
   "calculator": {
