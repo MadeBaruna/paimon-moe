@@ -174,9 +174,9 @@
   function getArtifactCommonName(id) {
     switch (id) {
       case '+18%_atk_set':
-        return '+18% ATK set';
+        return 'artifact.18ATKSet';
       case '+20%_energy_recharge':
-        return '+20% Energy Recharge set';
+        return 'artifact.20EnergyRechargeSet';
       default:
         return artifacts[id].name;
     }
@@ -422,36 +422,36 @@
       </h3>
       <p class="whitespace-pre-wrap text-gray-200 character-note">{@html build.note}</p>
       {#if build.tip !== ''}
-        <h4 class="font-black font-display text-lg mt-4">ABILITY TIP</h4>
+        <h4 class="font-black font-display text-lg mt-4">{$t('characters.abilityTip')}</h4>
         <p class="whitespace-pre-wrap text-gray-200">{build.tip}</p>
       {/if}
       <div class="flex mt-2 -mx-4 flex-wrap">
         <div class="mx-4 mt-4">
-          <h4 class="font-black font-display text-lg">MAIN STATS</h4>
+          <h4 class="font-black font-display text-lg">{$t('characters.mainStats')}</h4>
           <div class="flex items-center">
             <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
               <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_sands.png" alt="SANDS" />
-              <span class="font-semibold">SANDS</span>
+              <span class="font-semibold">{$t('artifact.sands')}</span>
             </div>
             <p>{build.mainStats.sands}</p>
           </div>
           <div class="flex items-center mt-1">
             <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
               <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_goblet.png" alt="GOBLET" />
-              <span class="font-semibold">GOBLET</span>
+              <span class="font-semibold">{$t('artifact.goblet')}</span>
             </div>
             <p>{build.mainStats.goblet}</p>
           </div>
           <div class="flex items-center mt-1">
             <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
               <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_circlet.png" alt="CIRCLET" />
-              <span class="font-semibold">CIRCLET</span>
+              <span class="font-semibold">{$t('artifact.circlet')}</span>
             </div>
             <p>{build.mainStats.circlet}</p>
           </div>
         </div>
         <div class="mt-4  mx-4">
-          <h4 class="font-black font-display text-lg">SUB STATS</h4>
+          <h4 class="font-black font-display text-lg">{$t('characters.subStats')}</h4>
           <div class="decimal-list">
             {#each build.subStats as stat, i}
               <p><span class="font-semibold w-4 inline-block">{i + 1}.</span> {stat}</p>
@@ -459,7 +459,7 @@
           </div>
         </div>
         <div class="mt-4 mx-4">
-          <h4 class="font-black font-display text-lg">TALENT PRIORITY</h4>
+          <h4 class="font-black font-display text-lg">{$t('characters.talentPriority')}</h4>
           <div class="flex items-center">
             {#each build.talent as talent, i}
               <p class="mr-1">{talent}</p>
@@ -472,7 +472,7 @@
       </div>
       <div class="flex -mx-4 flex-wrap">
         <div class="mt-4 mx-4 -mb-1">
-          <h4 class="font-black font-display text-lg">WEAPONS</h4>
+          <h4 class="font-black font-display text-lg">{$t('characters.weapons')}</h4>
           {#each build.weapons as weapon, i}
             <a class="popup flex mb-1" href="/weapons/{weapon.id}">
               <div class="popup-container">
@@ -524,7 +524,7 @@
           {/each}
         </div>
         <div class="mt-4 mx-4 -mb-1 md:max-w-screen-sm">
-          <h4 class="font-black font-display text-lg">ARTIFACTS</h4>
+          <h4 class="font-black font-display text-lg">{$t('characters.artifacts')}</h4>
           {#each build.artifacts as item, i}
             <div class="flex mb-1">
               <div class="flex items-center justify-center bg-background rounded-md px-1 mr-1">
@@ -564,7 +564,7 @@
                                 src="/images/artifacts/gladiators_finale_flower.png"
                                 alt="Gladiator's Finale"
                               />
-                              <span class="font-semibold">Gladiator's Finale</span>
+                              <span class="font-semibold">{$t("Gladiator's Finale")}</span>
                             </a>
                             <a
                               class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
@@ -575,7 +575,7 @@
                                 src="/images/artifacts/shimenawas_reminiscence_flower.png"
                                 alt="Shimenawa's Reminiscence"
                               />
-                              <span class="font-semibold">Shimenawa's Reminiscence</span>
+                              <span class="font-semibold">{$t("Shimenawa's Reminiscence")}</span>
                             </a>
                             <a
                               class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
@@ -586,7 +586,7 @@
                                 src="/images/artifacts/vermillion_hereafter_flower.png"
                                 alt="Vermillion Hereafter"
                               />
-                              <span class="font-semibold">Vermillion Hereafter</span>
+                              <span class="font-semibold">{$t('Vermillion Hereafter')}</span>
                             </a>
                             <a
                               class="flex items-center text-primary hover:text-blue-400 pt-1"
@@ -597,7 +597,7 @@
                                 src="/images/artifacts/echoes_of_an_offering_flower.png"
                                 alt="Echoes of an Offering"
                               />
-                              <span class="font-semibold">Echoes of an Offering</span>
+                              <span class="font-semibold">{$t('Echoes of an Offering')}</span>
                             </a>
                           {:else}
                             <a
@@ -609,21 +609,21 @@
                                 src="/images/artifacts/emblem_of_severed_fate_flower.png"
                                 alt="Emblem of Severed Fate"
                               />
-                              <span class="font-semibold">Emblem of Severed Fate</span>
+                              <span class="font-semibold">{$t('Emblem of Severed Fate')}</span>
                             </a>
                             <a
                               class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
                               href="/artifacts/the_exile"
                             >
                               <img class="h-8 ml-1 mr-2" src="/images/artifacts/the_exile_flower.png" alt="The Exile" />
-                              <span class="font-semibold">The Exile</span>
+                              <span class="font-semibold">{$t('The Exile')}</span>
                             </a>
                             <a
                               class="flex items-center text-primary hover:text-blue-400 pt-1"
                               href="/artifacts/scholar"
                             >
                               <img class="h-8 ml-1 mr-2" src="/images/artifacts/scholar_flower.png" alt="Scholar" />
-                              <span class="font-semibold">Scholar</span>
+                              <span class="font-semibold">{$t('Scholar')}</span>
                             </a>
                           {/if}
                         </div>
@@ -634,7 +634,7 @@
                         alt={artifact}
                       />
                       <span style="padding-top: 2px;">
-                        {getArtifactCommonName(artifact)}
+                        {$t(getArtifactCommonName(artifact))}
                       </span>
                       <span class="ml-2 bg-gray-400 rounded-md px-1 text-sm text-gray-900">
                         {item.length === 1 ? '4' : '2'}

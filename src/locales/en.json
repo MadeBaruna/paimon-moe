@@ -116,7 +116,13 @@
     "talentStats": "Talent Stats",
     "build": "Build",
     "source": "Community Character Builds by the Genshin Helper Team",
-    "faq": "Constellation count is calculated from your Wish History data, so if your old wish history has been removed, or you obtained the character from the shop or an event, the count might be inaccurate! You can edit it manually by pressing the pencil icon beside the character's name."
+    "faq": "Constellation count is calculated from your Wish History data, so if your old wish history has been removed, or you obtained the character from the shop or an event, the count might be inaccurate! You can edit it manually by pressing the pencil icon beside the character's name.",
+    "mainStats": "MAIN STATS",
+    "subStats": "SUB STATS",
+    "talentPriority": "TALENT PRIORITY",
+    "abilityTip": "ABILITY TIP",
+    "weapons": "WEAPONS",
+    "artifacts": "ARTIFACTS"
   },
   "wish": {
     "title": "Wish Counter",
@@ -918,7 +924,12 @@
     "domain": "Domain",
     "artifact": "Artifact",
     "setPiece": "{piece} Set Bonus",
-    "recommendedCharacter": "Recommended Characters {piece} Set"
+    "recommendedCharacter": "Recommended Characters {piece} Set",
+    "18ATKSet": "+18% ATK set",
+    "20EnergyRechargeSet": "20% Energy Recharge set",
+    "sands": "SANDS",
+    "goblet": "GOBLET",
+    "circlet": "CIRCLET"
   },
   "fishing": {
     "title": "Fishing Book",
