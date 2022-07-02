@@ -227,9 +227,17 @@
                 (counterData.rateoff.legendary.win + counterData.rateoff.legendary.lose),
             };
           }
+
+          percentages[type.id] = {
+            winRateOff: {
+              legendary: avg[type.id].legendary.rateOff.percentage,
+              rare: avg[type.id].rare.rateOff.percentage,
+            },
+          };
         }
 
         percentages[type.id] = {
+          ...percentages[type.id],
           legendary: avg[type.id].legendary.percentage,
           rare: avg[type.id].rare.percentage,
         };

@@ -479,6 +479,7 @@
       "totalPull": "Total Wish",
       "luck5": "Keberuntungan 5★",
       "luck4": "Keberuntungan 4★",
+      "luckWinRateOff": "Keberuntungan Menang 50:50",
       "medianTotal": "Median Global {median} pull",
       "medianLuck": "Median Global {median}%",
       "moreTotal": "Lebih banyak dari {percentage}% pengguna paimon.moe",

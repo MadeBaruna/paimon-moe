@@ -22,11 +22,25 @@
     legendary: '...',
     rare: '...',
   };
+  let percentageWinRateOff = {
+    legendary: 0,
+    rare: 0,
+  };
+  let medianWinRateOff = {
+    legendary: '...',
+    rare: '...',
+  };
   let loading = {
     total: true,
     legendary: true,
     rare: true,
+    winRateOff: {
+      legendary: true,
+      rare: true,
+    },
   };
+
+  let disableWinRateOff = false;
 
   export async function getData() {
     loading.total = true;
@@ -73,7 +87,6 @@
     }
 
     percentage = 100 - (totalLower / total) * 100;
-    console.log(totalLower, percentage, value);
 
     loading.total = false;
   }
@@ -122,9 +135,60 @@
     }
 
     percentageLuck[rarity] = 100 - (totalLower / total) * 100;
-    console.log(totalLower, percentage, value);
 
     loading[rarity] = false;
+  }
+
+  export async function getDataWinRateOff(rarity, percentages) {
+    loading.winRateOff[rarity] = true;
+    percentageWinRateOff[rarity] = 0;
+    medianWinRateOff[rarity] = '...';
+
+    if (percentages[current] === undefined) return;
+    if (percentages[current].winRateOff === undefined) {
+      disableWinRateOff = true;
+      return;
+    }
+
+    try {
+      const url = new URL(`${__paimon.env.API_HOST}/wish/summary/winrateoff`);
+      const query = new URLSearchParams({ banner: current, rarity });
+      url.search = query.toString();
+
+      const res = await fetch(url, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+      });
+
+      data = await res.json();
+
+      total = 0;
+      const sorted = [];
+      for (const item of data) {
+        total += item[1];
+        sorted.push(...new Array(item[1]).fill(item[0]));
+      }
+      medianWinRateOff[rarity] = (sorted[Math.round(sorted.length / 2)] * 100).toFixed(2);
+
+      getPercentileWinRateOff(percentages[current].winRateOff[rarity], rarity);
+    } catch (err) {
+      console.error(err);
+    }
+  }
+
+  function getPercentileWinRateOff(value, rarity) {
+    let totalLower = 0;
+    for (const item of data) {
+      const qty = item[0];
+      const amount = item[1];
+      totalLower += amount;
+
+      if (qty >= value) break;
+    }
+
+    percentageWinRateOff[rarity] = 100 - (totalLower / total) * 100;
+
+    loading.winRateOff[rarity] = false;
   }
 
   export function getDataLuckAll(percentages) {
@@ -132,6 +196,8 @@
 
     getDataLuck('legendary', sources);
     getDataLuck('rare', sources);
+
+    getDataWinRateOff('legendary', sources);
   }
 
   function change(type) {
@@ -143,6 +209,7 @@
   $: fixedPoint = percentage < 0.1 ? 2 : percentage < 2 ? 1 : 0;
   $: fixedPointLegendary = percentageLuck.legendary < 0.1 ? 2 : percentageLuck.legendary < 2 ? 1 : 0;
   $: fixedPointRare = percentageLuck.rare < 0.1 ? 2 : percentageLuck.rare < 2 ? 1 : 0;
+  $: fixedPointWinRateOff = percentageWinRateOff < 0.1 ? 2 : percentageWinRateOff < 2 ? 1 : 0;
 </script>
 
 <div class="flex flex-col items-center bg-item rounded-xl p-4 w-full mt-4">
@@ -182,6 +249,44 @@
       </span>
     </div>
   </div>
+  {#if current !== 'standard' && !disableWinRateOff}
+    <div class="bg-background flex-row items-center justify-center mb-2 p-4 rounded-xl flex relative group w-full">
+      <div
+        class="group-hover:flex hidden absolute left-0 items-center z-10"
+        style="max-width: 80%; bottom: 12px; left: 12px;"
+      >
+        <div class="bg-gray-200 text-gray-900 px-4 py-1 rounded-xl text-sm md:text-base">
+          {$t('wish.rank.medianLuck', { values: { median: medianWinRateOff.legendary } })}
+        </div>
+      </div>
+      <div class="text-gray-200 flex-1">
+        <p class="text-gray-200">{$t('wish.rank.luckWinRateOff')}</p>
+        <p class="text-sm text-gray-600 leading-none">
+          {#if percentageWinRateOff.legendary < 50}
+            {$t('wish.rank.moreLuck', {
+              values: { percentage: (100 - percentageWinRateOff.legendary).toFixed(fixedPointRare) },
+            })}
+          {:else}
+            {$t('wish.rank.lessLuck', { values: { percentage: percentageWinRateOff.legendary.toFixed(0) } })}
+          {/if}
+        </p>
+      </div>
+      <div class="pl-3">
+        <span class="text-sm font-black text-white opacity-75 block leading-none">
+          {loading.winRateOff.legendary
+            ? $t('wish.rank.top')
+            : $t(`wish.rank.${percentageWinRateOff.legendary < 50 ? 'top' : 'bottom'}`)}
+        </span>
+        <span class="text-white font-black text-3xl leading-none block" style="line-height: 0.75;">
+          {loading.winRateOff.legendary
+            ? '...'
+            : percentageWinRateOff.legendary < 50
+            ? percentageWinRateOff.legendary.toFixed(fixedPointWinRateOff)
+            : (100 - percentageWinRateOff.legendary).toFixed(fixedPointWinRateOff)}%
+        </span>
+      </div>
+    </div>
+  {/if}
   <div class="bg-background flex-row items-center justify-center mb-2 p-4 rounded-xl flex relative group w-full">
     <div
       class="group-hover:flex hidden absolute left-0 items-center z-10"

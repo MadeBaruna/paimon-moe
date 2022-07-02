@@ -479,6 +479,7 @@
       "totalPull": "Total Pull",
       "luck5": "Luckiness 5★",
       "luck4": "Luckiness 4★",
+      "luckWinRateOff": "Luckiness Win 50:50",
       "medianTotal": "Global Median {median} pulls",
       "medianLuck": "Global Median {median}%",
       "moreTotal": "More pulls than {percentage}% of paimon.moe users",
