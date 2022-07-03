@@ -213,11 +213,17 @@
         };
 
         if (counterData.rateoff !== undefined) {
+          percentages[type.id] = {
+            winRateOff: {},
+          };
+
           if (avg[type.id].rare.total > 0) {
             avg[type.id].rare.rateOff = {
               total: counterData.rateoff.rare.win,
               percentage: counterData.rateoff.rare.win / (counterData.rateoff.rare.win + counterData.rateoff.rare.lose),
             };
+
+            percentages[type.id].winRateOff.rare = avg[type.id].rare.rateOff.percentage;
           }
           if (avg[type.id].legendary.total > 0) {
             avg[type.id].legendary.rateOff = {
@@ -226,14 +232,9 @@
                 counterData.rateoff.legendary.win /
                 (counterData.rateoff.legendary.win + counterData.rateoff.legendary.lose),
             };
-          }
 
-          percentages[type.id] = {
-            winRateOff: {
-              legendary: avg[type.id].legendary.rateOff.percentage,
-              rare: avg[type.id].rare.rateOff.percentage,
-            },
-          };
+            percentages[type.id].winRateOff.legendary = avg[type.id].legendary.rateOff.percentage;
+          }
         }
 
         percentages[type.id] = {

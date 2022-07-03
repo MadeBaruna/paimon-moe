@@ -202,6 +202,8 @@
 
   function change(type) {
     current = type;
+    disableWinRateOff = false;
+
     getData();
     getDataLuckAll();
   }
