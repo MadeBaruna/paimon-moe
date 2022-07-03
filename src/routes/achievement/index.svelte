@@ -14,7 +14,7 @@
   import Check from '../../components/Check.svelte';
   import Checkbox from '../../components/Checkbox.svelte';
   import { getAccountPrefix } from '../../stores/account';
-  import { readSave, updateSave } from '../../stores/saveManager';
+  import { readSave, updateSave, fromRemote } from '../../stores/saveManager';
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
   import Select from '../../components/Select.svelte';
@@ -307,15 +307,24 @@
     }
   }
 
-  onMount(async () => {
+  async function process() {
     await readLocalData();
     parseCategories();
     changeCategory('0', 0, true);
+  }
+
+  onMount(async () => {
+    process();
 
     locale.subscribe((val) => {
       changeLocale(val);
     });
   });
+
+  $: if ($fromRemote) {
+    console.log('update from google drive');
+    process();
+  }
 </script>
 
 <svelte:head>
