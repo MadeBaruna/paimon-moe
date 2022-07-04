@@ -1135,7 +1135,7 @@ export const builds = {
         ],
         mainStats: {
           sands: ['ATK%', 'Energy Recharge'],
-          goblet: ['Electro Damage'],
+          goblet: ['Electro DMG'],
           circlet: ['Crit Rate', 'DMG'],
         },
         subStats: ['Energy Recharge', 'Crit Rate / DMG', 'ATK%', 'Elemental Mastery', 'Flat ATK'],
@@ -2050,7 +2050,7 @@ export const builds = {
           ['echoes_of_an_offering'],
         ],
         mainStats: {
-          sands: ['Attack'],
+          sands: ['ATK%'],
           goblet: ['Hydro DMG'],
           circlet: ['Crit Rate', 'DMG'],
         },
@@ -2106,9 +2106,9 @@ export const builds = {
           ['emblem_of_severed_fate', 'tenacity_of_the_millelith', 'heart_of_depth', 'noblesse_oblige'],
         ],
         mainStats: {
-          sands: ['Sands: Energy Recharge', 'HP%'],
-          goblet: ['Goblet: Hydro DMG', 'HP%'],
-          circlet: ['Circlet: Crit Rate', 'Crit DMG', 'HP%'],
+          sands: ['Energy Recharge', 'HP%'],
+          goblet: ['Hydro DMG', 'HP%'],
+          circlet: ['Crit Rate', 'Crit DMG', 'HP%'],
         },
         subStats: ['Energy Recharge', 'HP / Crit Rate / Crit DMG', 'Flat HP'],
         talent: ['Burst', 'Skill', 'Normal Attacks'],
@@ -3145,7 +3145,7 @@ export const builds = {
         ],
         mainStats: {
           sands: ['ATK%', 'Energy Recharge', 'Elemental Mastery'],
-          goblet: ['Anemo Damage', 'Elemental Mastery'],
+          goblet: ['Anemo DMG', 'Elemental Mastery'],
           circlet: ['Crit Rate', 'DMG', 'Elemental Mastery'],
         },
         subStats: ['Crit Rate / DMG', 'ATK%', 'Energy Recharge', 'Elemental Mastery', 'Flat ATK'],
@@ -3493,7 +3493,7 @@ export const builds = {
         mainStats: {
           sands: ['Energy Recharge'],
           goblet: ['Geo DMG', 'DEF%'],
-          circlet: ['Crit Rate', 'DEF%', 'Healing Bonus*'],
+          circlet: ['Crit Rate', 'DEF%', 'Healing Bonus'],
         },
         subStats: ['Energy Recharge', 'DEF%', 'Crit Rate'],
         talent: ['Skill'],

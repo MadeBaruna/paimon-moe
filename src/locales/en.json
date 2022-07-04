@@ -934,7 +934,9 @@
     "sands": "SANDS",
     "goblet": "GOBLET",
     "circlet": "CIRCLET",
-    "choose2": "Choose 2"
+    "choose2": "Choose 2",
+    "pieceStat": "Character that maybe use this {piece} piece with main stat:",
+    "pieceInfo": "Click the artifact image to see recommended character main stat"
   },
   "fishing": {
     "title": "Fishing Book",

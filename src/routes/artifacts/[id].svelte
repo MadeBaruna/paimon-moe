@@ -5,6 +5,12 @@
   function getCharacter(artifactId) {
     const collection2 = {};
     const collection4 = {};
+    const collectionPiece = {
+      sands: {},
+      goblet: {},
+      circlet: {},
+    };
+
     const chars = Object.entries(builds);
     for (const [charId, char] of chars) {
       const roles = Object.entries(char.roles);
@@ -25,6 +31,8 @@
                 ].includes(artifactId);
               } else if (e === '+20%_energy_recharge') {
                 return ['emblem_of_severed_fate', 'the_exile', 'scholar'].includes(artifactId);
+              } else if (e === '+25%_physical_dmg') {
+                return ['bloodstained_chivalry', 'pale_flame'].includes(artifactId);
               }
 
               return e === artifactId;
@@ -32,6 +40,15 @@
           ) {
             if (artifact.length === 1) found4 = true;
             else found2 = true;
+
+            for (const piece of ['sands', 'goblet', 'circlet']) {
+              for (const stat of role.mainStats[piece]) {
+                let statName = stat;
+                if (stat === 'DMG') statName = 'Crit DMG';
+                if (collectionPiece[piece][statName] === undefined) collectionPiece[piece][statName] = {};
+                collectionPiece[piece][statName][charId] = true;
+              }
+            }
           }
         }
 
@@ -62,6 +79,7 @@
     return {
       two: Object.values(collection2).sort((a, b) => a.id.localeCompare(b.id)),
       four: Object.values(collection4).sort((a, b) => a.id.localeCompare(b.id)),
+      pieces: collectionPiece,
     };
   }
 
@@ -75,12 +93,15 @@
 </script>
 
 <script>
-  import { onMount } from 'svelte';
+  import { getContext, onMount } from 'svelte';
   import { mdiChevronRight, mdiCircle, mdiStar } from '@mdi/js';
   import { locale, t } from 'svelte-i18n';
   import Icon from '../../components/Icon.svelte';
   import { domains } from '../../data/domain.js';
   import { characters } from '../../data/characters';
+  import PieceModal from './_pieceModal.svelte';
+
+  const { open: openModal } = getContext('simple-modal');
 
   const rarityList = {
     1: 'text-white',
@@ -90,15 +111,39 @@
     5: 'text-legendary-from',
   };
 
+  const pieces = ['flower', 'plume', 'sands', 'goblet', 'circlet'];
+
   export let id;
   export let artifact;
   export let recommendedCharacter;
-  // console.log(recommendedCharacter);
+  // console.log(recommendedCharacter.pieces);
   let images = [];
 
   async function changeLocale(locale) {
     const _data = await import(`../../data/artifacts/${locale}.json`);
     artifact = _data.default[id];
+  }
+
+  function openPieceModal(i) {
+    if (i < 2) return;
+
+    const piece = pieces[i];
+    const current = Object.entries(recommendedCharacter.pieces[piece]).map((e) => [
+      e[0],
+      Object.keys(e[1]).sort((a, b) => a.localeCompare(b)),
+    ]);
+
+    openModal(
+      PieceModal,
+      {
+        pieces: current,
+        name: piece,
+      },
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '816px' },
+      },
+    );
   }
 
   onMount(async () => {
@@ -132,9 +177,12 @@
         <p class="text-base text-white font-semibold mt-1">{$t(`artifact.artifact`)}</p>
       </div>
     </div>
-    <div class="px-4 pt-4 flex flex-wrap space-x-2">
-      {#each images as image}
-        <img src="/images/artifacts/{image}" alt={id} class="w-24 h-24" />
+    <p class="pt-1 pl-4 text-gray-400">※ {$t('artifact.pieceInfo')}</p>
+    <div class="px-4 pt-4 flex flex-wrap space-x-2 justify-center">
+      {#each images as image, i}
+        <div class={i > 1 ? 'hover:bg-background rounded-xl cursor-pointer' : ''} on:click={() => openPieceModal(i)}>
+          <img src="/images/artifacts/{image}" alt={id} class="w-24 h-24" />
+        </div>
       {/each}
     </div>
     <div class="px-4 pt-4 flex flex-col space-y-2 max-w-xl w-full">
