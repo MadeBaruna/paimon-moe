@@ -1,12 +1,14 @@
 <script context="module">
   import { builds as buildsJson } from '../../data/build';
+  import artifactData from '../../data/artifacts/en.json';
+  import weaponData from '../../data/weapons/en.json';
 
   export async function preload(page) {
     const { id } = page.params;
     const data = await import(`../../data/characterData/${id}.json`);
     const buildData = buildsJson[id];
 
-    return { id, data, buildData };
+    return { id, data, buildData, artifactData, weaponData };
   }
 </script>
 
@@ -14,9 +16,11 @@
   export let id;
   export let data;
   export let buildData;
+  export let artifactData;
+  export let weaponData;
 
   import { onMount } from 'svelte';
-  import { t } from 'svelte-i18n';
+  import { t, locale } from 'svelte-i18n';
   import { mdiChevronRight, mdiCircle, mdiContentSave, mdiMinus, mdiPencil, mdiPlus, mdiStar } from '@mdi/js';
   import Icon from '../../components/Icon.svelte';
   import Button from '../../components/Button.svelte';
@@ -29,8 +33,6 @@
   import SkillCard from './_skillCard.svelte';
   import PassiveSkillCard from './_passiveSkillCard.svelte';
   import { weaponList } from '../../data/weaponList';
-  import artifacts from '../../data/artifacts/en.json';
-  import weapons from '../../data/weapons/en.json';
   import Ad from '../../components/Ad.svelte';
   import { formatStat } from '../../helper';
 
@@ -48,6 +50,9 @@
     .sort((a, b) => b[1].recommended - a[1].recommended)
     .map((e) => ({ name: e[0], build: e[1] }));
   let currentBuild = 0;
+  const artifactsEn = artifactData;
+  let artifacts = artifactData;
+  let weapons = weaponData;
 
   const defaultChars = {
     amber: {
@@ -166,6 +171,8 @@
         return 'gladiators_finale';
       case '+20%_energy_recharge':
         return 'emblem_of_severed_fate';
+      case '+25%_physical_dmg':
+        return 'bloodstained_chivalry';
       default:
         return id;
     }
@@ -177,20 +184,33 @@
         return 'artifact.18ATKSet';
       case '+20%_energy_recharge':
         return 'artifact.20EnergyRechargeSet';
+      case '+25%_physical_dmg':
+        return 'artifact.25PhysicalDmgSet';
       default:
-        return artifacts[id].name;
+        return artifactsEn[id].name;
     }
+  }
+
+  async function changeLocale(locale) {
+    console.log('change locale');
+    const _dataArtifact = await import(`../../data/artifacts/${locale}.json`);
+    const _dataWeapon = await import(`../../data/weapons/${locale}.json`);
+    artifacts = _dataArtifact.default;
+    weapons = _dataWeapon.default;
   }
 
   onMount(async () => {
     const buildHash = window.location.hash.substring(1);
-    console.log(buildHash);
     const foundBuild = builds.findIndex((e) => e.name.replace(/[ /]/g, '_').toLowerCase() === buildHash);
     if (foundBuild > -1) {
       currentBuild = foundBuild;
     }
 
     await getConstellationCount();
+
+    locale.subscribe((val) => {
+      changeLocale(val);
+    });
   });
 
   $: constellationCountTotal = constellationCount + manualCount;
@@ -433,21 +453,21 @@
               <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_sands.png" alt="SANDS" />
               <span class="font-semibold">{$t('artifact.sands')}</span>
             </div>
-            <p>{build.mainStats.sands}</p>
+            <p>{build.mainStats.sands.join(' / ')}</p>
           </div>
           <div class="flex items-center mt-1">
             <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
               <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_goblet.png" alt="GOBLET" />
               <span class="font-semibold">{$t('artifact.goblet')}</span>
             </div>
-            <p>{build.mainStats.goblet}</p>
+            <p>{build.mainStats.goblet.join(' / ')}</p>
           </div>
           <div class="flex items-center mt-1">
             <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
               <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_circlet.png" alt="CIRCLET" />
               <span class="font-semibold">{$t('artifact.circlet')}</span>
             </div>
-            <p>{build.mainStats.circlet}</p>
+            <p>{build.mainStats.circlet.join(' / ')}</p>
           </div>
         </div>
         <div class="mt-4  mx-4">
@@ -485,7 +505,7 @@
                   </p>
                   <div class="flex mt-2">
                     <div class="mr-4">
-                      <p class="font-bold text-primary text-sm">ATK</p>
+                      <p class="font-bold text-primary text-sm">{$t('weapon.atk')}</p>
                       <p class="text-gray-900 text-sm">{Math.round(weapons[weapon.id].atk[96])}</p>
                     </div>
                     {#if weapons[weapon.id].secondary.stats}
@@ -536,16 +556,18 @@
                         class="flex items-center justify-center bg-background rounded-md px-2 py-1 mb-1 mr-1"
                         style="height: 40px;"
                       >
-                        <p class="text-center whitespace-no-wrap text-primary" style="padding-top: 2px;">Choose 2</p>
+                        <p class="text-center whitespace-no-wrap text-primary" style="padding-top: 2px;">
+                          {$t('artifact.choose2')}
+                        </p>
                       </div>
                     {/if}
                     <a
                       class="popup bg-background rounded-md py-1 pl-1 pr-2 mr-1 mb-1 flex items-center"
-                      href={artifact === '+18%_atk_set' ? undefined : `/artifacts/${artifact}`}
+                      href={artifact.startsWith('+') ? undefined : `/artifacts/${artifact}`}
                     >
                       <div class="popup-container">
                         <div class="bg-gray-300 text-gray-900 p-2 rounded-md mb-1 shadow-2xl">
-                          {#if artifact !== '+18%_atk_set' && artifact !== '+20%_energy_recharge'}
+                          {#if !artifact.startsWith('+')}
                             {#each artifacts[artifact].bonuses as bonus, i}
                               <div class={i === 1 ? 'mt-2' : ''}>
                                 <p class="font-bold text-primary text-sm">
@@ -599,7 +621,7 @@
                               />
                               <span class="font-semibold">{$t('Echoes of an Offering')}</span>
                             </a>
-                          {:else}
+                          {:else if artifact === '+20%_energy_recharge'}
                             <a
                               class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
                               href="/artifacts/emblem_of_severed_fate"
@@ -624,6 +646,29 @@
                             >
                               <img class="h-8 ml-1 mr-2" src="/images/artifacts/scholar_flower.png" alt="Scholar" />
                               <span class="font-semibold">{$t('Scholar')}</span>
+                            </a>
+                          {:else if artifact === '+25%_physical_dmg'}
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                              href="/artifacts/bloodstained_chivalry"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/bloodstained_chivalry_flower.png"
+                                alt="Bloodstained Chivalry"
+                              />
+                              <span class="font-semibold">{$t('Bloodstained Chivalry')}</span>
+                            </a>
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pt-1"
+                              href="/artifacts/pale_flame"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/pale_flame_flower.png"
+                                alt="Pale Flame"
+                              />
+                              <span class="font-semibold">{$t('Pale Flame')}</span>
                             </a>
                           {/if}
                         </div>

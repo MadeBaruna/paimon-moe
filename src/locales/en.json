@@ -928,11 +928,13 @@
     "artifact": "Artifact",
     "setPiece": "{piece} Set Bonus",
     "recommendedCharacter": "Recommended Characters {piece} Set",
-    "18ATKSet": "+18% ATK set",
-    "20EnergyRechargeSet": "20% Energy Recharge set",
+    "18ATKSet": "ATK +18% set",
+    "20EnergyRechargeSet": "Energy Recharge +20% set",
+    "25PhysicalDmgSet": "Physical DMG +25% set",
     "sands": "SANDS",
     "goblet": "GOBLET",
-    "circlet": "CIRCLET"
+    "circlet": "CIRCLET",
+    "choose2": "Choose 2"
   },
   "fishing": {
     "title": "Fishing Book",
