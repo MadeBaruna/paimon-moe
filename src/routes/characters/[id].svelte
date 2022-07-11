@@ -775,6 +775,14 @@
     font-weight: 400;
   }
 
+  .character-note :global(a) {
+    @apply text-blue-400;
+
+    &:hover {
+      @apply text-blue-200;
+    }
+  }
+
   @screen xl {
     .character-image {
       max-width: 550px;

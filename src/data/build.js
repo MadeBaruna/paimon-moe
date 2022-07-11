@@ -189,7 +189,7 @@ export const builds = {
           ['pale_flame'],
           ['pale_flame', 'bloodstained_chivalry'],
           ['gladiators_finale'],
-          ['bloodstained_chivalry', 'pale_flame', '+18%_atk_set'],
+          ['+25%_physical_dmg', '+18%_atk_set'],
         ],
         mainStats: {
           sands: ['ATK%'],
@@ -466,7 +466,7 @@ export const builds = {
         talent: ['Skill', 'Burst'],
         tip: '',
         note:
-          "<b>Regarding Artifact Sets: \nNoblesse Oblige (4): </b>This set can be used on Xinyan if nobody else on the team is using this set for the partywide ATK buff.\n\n<b>Regarding Tenacity of the Millelith (4) and Sacrificial Greatsword: </b>\nXinyan support is mostly used for her Shield and/or Elemental Burst damage. If you want to use her as a Physical Support, she needs both her Ascension 4 Talent and <b>[C4]</b> to maximize her support capabilities, making her a somewhat expensive choice to be considered for Physical Support role. However, the Tenacity of the Millelith set gives her a new role with a lower Constellation level prerequisite.\n\n<b>Tenacity of the Millelith: </b>This set gives Xinyan a unique role among the shielders. Currently, Xinyan is one of the few shielders in the game who can make full use of the Tenacity set's effects. If you can maximize the uptime of Xinyan's Level 3 shield, she can provide a constant 30% Shield Strength and 20% Atk boost to the team (as long as the pulses hit an enemy). This means that <b>Sacrificial Greatsword</b> and Xinyan's <b>[C2]</b> are crucial to making this set shine on her. This set isn't as recommended for her if you have neither of the two.\n\nShield uptime is also crucial to maximizing her Physical/Shield Support capabilities. If you have neither Sacrificial Greatsword nor at least <b>[C2] </b>(but ideally <b>[C4]</b>) on Xinyan, you may want to build her as a Burst Support instead of Physical/Shield Support.\nAt<b> [C2]</b>, her burst \"Riff Revolution\" has a 100% Crit Rate, which means you can build solely Crit Dmg (instead of trying to get a 1:2 Crit Rate:Crit DMG ratio) if you're building her as a Physical Burst support.\n<b>Generally not recommended for Pyro Applications, as the pulses only happen at Shield Level 3, and are not very efficient at breaking Cryo shields.\n\n</b>Set 1-4: Sub-DPS, run DPS stats\nSet 5-9: Shield Support, ER takes priority over ATK%<b>\n</b>",
+          "<b>Regarding Artifact Sets: \nNoblesse Oblige (4): </b>This set can be used on Xinyan if nobody else on the team is using this set for the partywide ATK buff.\n\n<b>Regarding Tenacity of the Millelith (4) and Sacrificial Greatsword: </b>\nXinyan support is mostly used for her Shield and/or Elemental Burst damage. If you want to use her as a Physical Support, she needs both her Ascension 4 Talent and <b>[C4]</b> to maximize her support capabilities, making her a somewhat expensive choice to be considered for Physical Support role. However, the Tenacity of the Millelith set gives her a new role with a lower Constellation level prerequisite.\n\n<b>Tenacity of the Millelith: </b>This set gives Xinyan a unique role among the shielders. Currently, Xinyan is one of the few shielders in the game who can make full use of the Tenacity set's effects. If you can maximize the uptime of Xinyan's Level 3 shield, she can provide a constant 30% Shield Strength and 20% Atk boost to the team (as long as the pulses hit an enemy). This means that <b>Sacrificial Greatsword</b> and Xinyan's <b>[C2]</b> are crucial to making this set shine on her. This set isn't as recommended for her if you have neither of the two.\n\nShield uptime is also crucial to maximizing her Physical/Shield Support capabilities. If you have neither Sacrificial Greatsword nor at least <b>[C2] </b>(but ideally <b>[C4]</b>) on Xinyan, you may want to build her as a Burst Support instead of Physical/Shield Support.\nAt<b> [C2]</b>, her burst \"Riff Revolution\" has a 100% Crit Rate, which means you can build solely Crit Dmg (instead of trying to get a 1:2 Crit Rate:Crit DMG ratio) if you're building her as a Physical Burst support.\n<b>Generally not recommended for Pyro Applications, as the pulses only happen at Shield Level 3, and are not very efficient at breaking Cryo shields.\n</b>\nRun DPS stats if you're using artifact set 1-4. Artifact set 5-9 is for Shield Support. If shield support, ER takes priority over ATK%.",
       },
     },
   },
@@ -547,7 +547,7 @@ export const builds = {
         tip:
           'Energy Recharge Guidelines\nPrototype Amber [R5]: 210 ER\nPrototype Amber [R1] /Favonius Codex: 240 ER\nThrilling Tales of Dragon Slayers: 250+ ER',
         note:
-          "<b></b>[C4+ REQUIRED] This section is dedicated to a playstyle where Yanfei is utilised as a primary shielder through her 4th Constellation. Due to the requirement of having to burst off cooldown, this build has <b>high energy requirements.\n</b>\n\nYanfei's talent levels provide nothing for this role and it is not recommended to level them.",
+          "[C4+ REQUIRED]<b>\n</b>This section is dedicated to a playstyle where Yanfei is utilised as a primary shielder through her 4th Constellation. Due to the requirement of having to burst off cooldown, this build has <b>high energy requirements.\n</b>\n\nYanfei's talent levels provide nothing for this role and it is not recommended to level them.",
       },
     },
   },
@@ -587,11 +587,11 @@ export const builds = {
           goblet: ['HP%'],
           circlet: ['HP%'],
         },
-        subStats: ['Energy Recharge', 'HP%', 'Crit Rate'],
+        subStats: ['Energy Recharge', 'HP%', 'Crit Rate', 'Flat HP'],
         talent: ['Skill', 'Burst'],
         tip: '',
         note:
-          '<b></b>Thoma ideally wants to focus on shield over damage, and his burst uptime is required to achieve better shields, which is why he needs ER% on top of HP%.\n<b>\nRegarding Weapon Choices:\nBlack Tassel: </b>At<b> [C4]</b>, Thoma gains 15 energy when he fires his Elemental Burst. This effectively reduces his energy cost to 65 and makes it possible to use Black Tassel with ER sands instead of ER weapon with ER sands to further strengthen his shield.\n\n4. Flat HP\n\n**Crit Rate is an option when using Favonius Lance.',
+          '<b></b>Thoma ideally wants to focus on shield over damage, and his burst uptime is required to achieve better shields, which is why he needs ER% on top of HP%.\n<b>\nRegarding Weapon Choices:\nBlack Tassel: </b>At<b> [C4]</b>, Thoma gains 15 energy when he fires his Elemental Burst. This effectively reduces his energy cost to 65 and makes it possible to use Black Tassel with ER sands instead of ER weapon with ER sands to further strengthen his shield.\n\nCrit Rate is an option when using Favonius Lance.',
       },
     },
   },
@@ -712,7 +712,7 @@ export const builds = {
         tip:
           "Klee's Attacks have a 50% chance of spawning a floating star. Floating star removes the stamina cost for the next Charged Attack and increases 50% of its damage.",
         note:
-          "Extremely squishy, Klee requires great positioning. Being tiny, this is hard to achieve. Constant jumping during your Charged Attacks can help. \n\n<b>Regarding Weapon Choice:\nLost Prayer to the Sacred Winds: </b>Bennett buff/ Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) will push Lost Prayer ahead of Skyward Atlas and Memory of Dust<b>\nDodoco Tales:</b> On equal refinements, Widsith and Solar Pearl are better than Dodoco Tales, but when assuming <b>[R5]</b> Dodoco Tales vs <b>[R1]</b>-<b>[R3]</b> Widsith/Pearl, Dodoco Tales is better. <b>Note that Bennett buff / Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) buff may push Widsith and Solar Pearl above Dodoco Tales, even at low refinements.</b>\n\n<b>Regarding Artifact Sets:</b>\n<b>Lavawalker (4): </b>Klee's kit makes it harder to utilize Vaporize and Melt the same way another pyro carry would, but her constant pyro application makes Lavawalkers a viable set. See KleefulFrame's great number breakdown here.\n<b>Crimson Witch of Flames (4): </b>This set is best used on a Vaporize Klee, but do note that due to Klee's fast Pyro application from all of her kits, she may not be able to vape most of her Normal/ Charged Attacks. \n<b>Wanderer's Troupe (4): </b>Wanderer's Troupe increases the Charged Attack by another 35% Damage Bonus. It can serve as a decent DPS choice but due to how clunky Klee's attack animations are, it's hard to put this in actual practise as it requires you to dodge more and consume more stamina, not to mention how the DPS gets caught up by the other builds mentioned above.",
+          "Extremely squishy, Klee requires great positioning. Being tiny, this is hard to achieve. Constant jumping during your Charged Attacks can help. \n\n<b>Regarding Weapon Choice:\nLost Prayer to the Sacred Winds: </b>Bennett buff/ Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) will push Lost Prayer ahead of Skyward Atlas and Memory of Dust<b>\nDodoco Tales:</b> On equal refinements, Widsith and Solar Pearl are better than Dodoco Tales, but when assuming <b>[R5]</b> Dodoco Tales vs <b>[R1]</b>-<b>[R3]</b> Widsith/Pearl, Dodoco Tales is better. <b>Note that Bennett buff / Thrilling Tales of Dragon Slayer's buff + Noblesse Oblige (4) buff may push Widsith and Solar Pearl above Dodoco Tales, even at low refinements.</b>\n\n<b>Regarding Artifact Sets:</b>\n<b>Lavawalker (4): </b>Klee's kit makes it harder to utilize Vaporize and Melt the same way another pyro carry would, but her constant pyro application makes Lavawalkers a viable set. See KleefulFrame's great number breakdown <a href=\"https://docs.google.com/spreadsheets/d/1JJZPMoNOqXhX8Ez1cl63fNXESJZXx7kQaJEeQ-WLOEY/edit\">here.</a>\n<b>Crimson Witch of Flames (4): </b>This set is best used on a Vaporize Klee, but do note that due to Klee's fast Pyro application from all of her kits, she may not be able to vape most of her Normal/ Charged Attacks. \n<b>Wanderer's Troupe (4): </b>Wanderer's Troupe increases the Charged Attack by another 35% Damage Bonus. It can serve as a decent DPS choice but due to how clunky Klee's attack animations are, it's hard to put this in actual practise as it requires you to dodge more and consume more stamina, not to mention how the DPS gets caught up by the other builds mentioned above.",
       },
     },
   },
@@ -1063,7 +1063,7 @@ export const builds = {
         tip:
           'Optimal Lisa String: \nES (Tap) > NA x2 [until 3 stacks] > Fully-charged ES (Hold) > N2C. Repeat N2C until E is off-cooldown, then repeat the string.\n\n*N/NA = Normal attack, C = Charged attack, ES = Elemental Skill',
         note:
-          "<b>Regarding Artifact Sets:\nThundersoother (4):</b> For teams that focus on Electro-Charge reactions, <b>Thundersoother (4)</b> can out dps <b>Thundering Fury (2) +18% ATK set (2)</b>, said set is only recommended below <b>Thundering Fury (2) +18% ATK set (2)</b> due to the potential inconsistency.\n<b>\n</b>Electro-DPS Lisa plays around Electro-Charge reaction teams ideally, for Overload Lisa teams, you would be building for EM-DPS since you can be the consistent trigger with supports that apply constant Pyro off-field. You can still have an Overload team with an Electro-DPS Lisa, however, if the situation prefers it.\n\nRegarding Weapons:\n<b>Kagura's Verity: </b>Kagura's ranking at the top is based on executing the specific rotation of Tap E > N2 > Tap E > N2 > Tap E > Q > N1 > Hold E > N1 > CA > N3 > N2 > CA for max stacks. For more details please see the weapon calculations here.",
+          '<b></b><b>Regarding Artifact Sets:\nThundersoother (4):</b> For teams that focus on Electro-Charge reactions, <b>Thundersoother (4)</b> can out dps <b>Thundering Fury (2) +18% ATK set (2)</b>, said set is only recommended below <b>Thundering Fury (2) +18% ATK set (2)</b> due to the potential inconsistency.\n<b>\n</b>Electro DPS Lisa plays around Electro-Charge reaction teams ideally, for Overload Lisa teams, you would be building for EM-DPS since you can be the consistent trigger with supports that apply constant Pyro off-field. You can still have an Overload team with an Electro DPS Lisa, however, if the situation prefers it.\n\nRegarding Weapons:\n<b>Kagura\'s Verity: </b>Kagura\'s ranking at the top is based on executing the specific rotation of Tap E > N2 > Tap E > N2 > Tap E > Q > N1 > Hold E > N1 > CA > N3 > N2 > CA for max stacks. For more details please see the weapon calculations <a href="https://docs.google.com/spreadsheets/d/1kBaIxbNUUkShl-OwbOxMK4wyPQvL-WWeOko7yfWRIxw/edit">here</a>.',
       },
       'EM DPS': {
         recommended: false,
@@ -1135,7 +1135,7 @@ export const builds = {
         ],
         mainStats: {
           sands: ['ATK%', 'Energy Recharge'],
-          goblet: ['Electro DMG'],
+          goblet: ['Electro Damage'],
           circlet: ['Crit Rate', 'DMG'],
         },
         subStats: ['Energy Recharge', 'Crit Rate / DMG', 'ATK%', 'Elemental Mastery', 'Flat ATK'],
@@ -1194,7 +1194,7 @@ export const builds = {
         tip:
           "Razor's EB grants you an Electro Status when you basic attack while burst is in-effect, that means it can be used for status-cleansing (no particular effective element).  Can only be done on himself.",
         note:
-          "<b>Regarding Weapon Choices:</b>\n<b>Wolf's Gravestone</b>: Wolf's Gravestone (inactive) outperforms Skyward Pride in every scenario except crowd battles.\n<b>Redhorn Stonethresher: </b>Depending on the amount of ATK% buffs you're getting, this weapon can overtake Wolf's Gravestone in personal damage.\n<b>The Unforged</b>: The playstyle with this weapon becomes a lot more comfortable without having to worry about snapshotting Wolf's Gravestone / Song of Broken Pines buffs for Sub DPSes, while also granting more Shield Bonus for better Shield uptime. A shielder is required for this, with Zhongli being the most ideal option.\n<b>Serpent Spine</b>: At <b>[C6] </b>and high refinement Serpent Spine, it is better to run an ATK% Goblet over Physical Damage% with Serpent Spine. This is due to the oversaturation of damage bonuses (ascension stat + Serpent Spine) in addition to the fact that Electro accounts for a significant portion of Razor's damage. An in-depth explanation can be found here. <b>It is also worth noting that an [R5] Serpent Spine with max stacks can outperform all 5✩ weapons at [R1].</b>\n<b>Skyward Pride</b>: Skyward Pride is viable with a Physical DMG goblet, as the damage dealt through its passive scales with Physical%.\n\n<b>Regarding Artifact Sets: \nPale Flame (2) Bloodstained Chivalry (2): </b>This set is better if your ATK% is covered by your substats, otherwise you would be better off running Gladiator's Finale (4).<b> This is only recommended to those who have no immediate access to a decent Pale Flame (4) set, otherwise you would be better off investing on Pale Flame pieces, regardless of weapon choice.\n</b>",
+          "<b>Regarding Weapon Choices:</b>\n<b>Wolf's Gravestone</b>: Wolf's Gravestone (inactive) outperforms Skyward Pride in every scenario except crowd battles.\n<b>Redhorn Stonethresher: </b>Depending on the amount of ATK% buffs you're getting, this weapon can overtake Wolf's Gravestone in personal damage.\n<b>The Unforged</b>: The playstyle with this weapon becomes a lot more comfortable without having to worry about snapshotting Wolf's Gravestone / Song of Broken Pines buffs for Sub DPSes, while also granting more Shield Bonus for better Shield uptime. A shielder is required for this, with Zhongli being the most ideal option.\n<b>Serpent Spine</b>: At <b>[C6] </b>and high refinement Serpent Spine, it is better to run an ATK% Goblet over Physical Damage% with Serpent Spine. This is due to the oversaturation of damage bonuses (ascension stat + Serpent Spine) in addition to the fact that Electro accounts for a significant portion of Razor's damage. An in-depth explanation can be found <a href=\"https://tinyurl.com/razoratk\">here</a>. <b>It is also worth noting that an [R5] Serpent Spine with max stacks can outperform all 5✩ weapons at [R1].</b>\n<b>Skyward Pride</b>: Skyward Pride is viable with a Physical DMG goblet, as the damage dealt through its passive scales with Physical%.\n\n<b>Regarding Artifact Sets: \nPale Flame (2) Bloodstained Chivalry (2): </b>This set is better if your ATK% is covered by your substats, otherwise you would be better off running Gladiator's Finale (4).<b> This is only recommended to those who have no immediate access to a decent Pale Flame (4) set, otherwise you would be better off investing on Pale Flame pieces, regardless of weapon choice.\n</b>",
       },
     },
   },
@@ -1265,19 +1265,35 @@ export const builds = {
   },
   kuki_shinobu: {
     roles: {
-      TBD: {
-        recommended: false,
-        weapons: [],
-        artifacts: [],
+      SUPPORT: {
+        recommended: true,
+        weapons: [
+          {
+            id: 'favonius_sword',
+          },
+          {
+            id: 'freedom-sworn',
+          },
+          {
+            id: 'iron_sting',
+          },
+        ],
+        artifacts: [
+          ['tenacity_of_the_millelith'],
+          ['noblesse_oblige'],
+          ['ocean-hued_clam'],
+          ['instructor', 'the_exile'],
+        ],
         mainStats: {
-          sands: [],
-          goblet: [],
-          circlet: [],
+          sands: ['HP%', 'Elemental Mastery', 'Energy Recharge'],
+          goblet: ['HP%', 'Elemental Mastery'],
+          circlet: ['Healing Bonus', 'HP%', 'Elemental Mastery'],
         },
-        subStats: [],
-        talent: [],
+        subStats: ['HP%', 'Crit Rate', 'Elemental Mastery / Flat HP'],
+        talent: ['Skill', 'Burst'],
         tip: '',
-        note: '',
+        note:
+          "Kuki Shinobu's base damage is too low that building a regular Crit build is usually not worth the investment. A full Elemental Mastery build can instead be considered in teams where she can reliably trigger reactions (i.e. Overload teams).\n\n<b>Regarding Weapon Choices:</b>\n<b>Favonius Sword:</b> The passive lets her provide energy to the rest of the team. <b>A crit rate circlet or substats should be considered to reliably trigger the passive.</b>\n<b>Freedom-Sworn:</b> In teams where Kuki can<b> reliably trigger reactions</b>, the teamwide buff from this weapon can make it preferable over <b>Favonius Sword.</b>\n\n<b>Regarding Artifact Choices:</b>\n<b>Noblesse Oblige (4):</b> When using this set, make sure to build enough Energy Recharge to cast Burst off cooldown and keep good uptime on Noblesse passive.\n<b>Ocean-Hued Clam (4): </b>Provides a decent amount of extra damage on a full healing build.\n<b>Instructors (4) / The Exile (4):</b> Can be a cheap alternative on teams where the extra ATK% buff from Tenacity of the Millelith (4) or Noblesse Oblige (4) is not as useful.\n\nCrit Rate is useful only when using Favonius Sword",
       },
     },
   },
@@ -1432,7 +1448,7 @@ export const builds = {
         tip:
           "Preferred Skill Combo: ES (Place stiletto, don't reactivate yet) -> EB -> ES (Reactivation) -> Spam AA -> Repeat\n\nRegarding Roles:\nBoth physical and electro keqing are good and viable. You'd usually want to decide which build to go for depending on your weapon gacha luck. For example, Lion's Roar = Electro, Flute will be equally good on Electro/Phys, etc.",
         note:
-          "<b>Regarding Weapon Choices: \nLion's Roar: </b>This weapon is only recommended on Pure Electro/Electro-charged teams. In teams where the Electro Aura can be easily removed OR when facing enemies with innate elements, this weapon <b>will severely underperform.</b> \n<b>The Black Sword:</b> On a quickswap Keqing, this weapon will be shifted below Harbinger of Dawn <b>[R5]</b>.\n\n<b>Regarding Artifact Sets: \nThundering Fury (2) +18% ATK set (2): </b>This set is a generalist set, which means it can be used generally anywhere, whether it be Co-op or Abyss, or other singleplayer content. This has a lot of consistency due to its independence from electro aura, and it is more viable in abyss.\n<b>+18% ATK set (2) / +18% ATK set (2): </b>While it is slightly behind Thundering Fury (2) +18% ATK set (2), this set is preferred to farm for due to the resin efficiency of Shimenawa's Reminiscence's Domain.\n<b>Thundersoother (4): </b>This set should be used with Electro-charged team compositions (Keqing + Xingqiu) or mono-electro team comp (Not Suggested). This set has a 35% Dmg modifier which increases all damage from all sources, although that modifier is a bit unstable due to its dependency to the sustainability of Electro aura on enemies.\n<b>Thundering Fury (2) Noblesse Oblige (2): </b>This set is used for Burst/Quickswap AoE Keqing. With this set, you'd want to be using Starward Sword (Q) all the time, which is your main source of DPS with this set.\n\nSince Keqing uses burst to get an extra 15% crit, it's much better in leveling it.  Best course of action is to level NA and Burst together. Don't forget to level skill to a decent level.",
+          "<b>Regarding Weapon Choices: \nLion's Roar: </b>This weapon is only recommended on Pure Electro/Electro-charged teams. In teams where the Electro Aura can be easily removed OR when facing enemies with innate elements, this weapon <b>will severely underperform.</b> \n<b>The Black Sword:</b> On a quickswap Keqing, this weapon will be shifted below Harbinger of Dawn <b>[R5]</b>.\n\n<b>Regarding Artifact Sets: \nThundering Fury (2) +18% ATK set (2): </b>This set is a generalist set, which means it can be used generally anywhere, whether it be Co-op or Abyss, or other singleplayer content. This has a lot of consistency due to its independence from electro aura, and it is more viable in abyss.\n<b>+18% ATK set (2) / +18% ATK set (2): </b>While it is slightly behind Thundering Fury (2) +18% ATK set (2), this set is preferred to farm for due to the resin efficiency of Shimenawa's Reminiscence's Domain.\n<b>Thundersoother (4): </b>This set should be used with Electro-charged team compositions (Keqing + Xingqiu) or mono-electro team comp (Not Suggested). This set has a 35% Dmg modifier which increases all damage from all sources, although that modifier is a bit unstable due to its dependency to the sustainability of Electro aura on enemies.\n<b>Thundering Fury (2) Noblesse Oblige (2): </b>This set is used for Burst/Quickswap AoE Keqing. With this set, you'd want to be using Starward Sword (Q) all the time, which is your main source of DPS with this set.\n\nNote: Since Keqing uses burst to get an extra 15% crit, it's much better in leveling it.  Best course of action is to level NA and Burst together. Don't forget to level skill to a decent level.",
       },
     },
   },
@@ -1497,7 +1513,7 @@ export const builds = {
         tip:
           "Start your rotation with Raiden's Elemental Skill to amplify your party member's Elemental Burst damage.\n\nBurst combo :\n- Skill > Burst > 4NA + CA (2 times) > 2NA + CA (Recommended)\n- Skill > Burst > 3NA + CA (3 times) > 1NA + CA (Optimal)\n\n*NA = Normal Attack, CA = Charged Attack\n\nThe recommended combo provides more room for error and offers slightly better AoE while the optimal combo provides slightly higher damage.",
         note:
-          "Raiden's Elemental Burst damage depends on her <b>team's energy consumption prior to her Burst</b>, and her Burst <b>restores a comfortable amount of energy for her team</b> (which is further amplified by her passive). This is especially convenient on teams that doesn't conflict with her element and wants the energy provision. (i.e. Eula, Electro, National teams, etc.). Raiden has no issues with firing her ult off cooldown after reaching about 200% Energy Recharge, but it is possible to raise it higher for better energy restoration for her team.\n\n<b>Regarding Weapon Choices: This list assumes the average across a variety of buffs. \nSkyward Spine: </b>Assumes that you are utilizing the ATK SPD buff to access higher damage combos. \n<b>Wavebreaker's Fin: [R5] </b>Wavebreaker's Fin is relatively equal, to Staff of Homa, depending on your total team burst cost.\n\n<b>Regarding Artifact Sets:\nTenacity of the Millelith (4): T</b>his set acts as a low investment support oriented set. Raiden is an excellent ToTM holder since her Elemental Skill has 100% uptime and procs very easily. Do note that if your Raiden is equipping this set, then she will sacrifice her personal damage.\n<b>\nRegarding Main Stats Priority: \n</b>Raiden's main stat priority for Sands and Goblet entirely depends on the substats, whether she has external buffs, and which weapon she is running. You can find a more detailed list of suggestions from ZΛNTO#4984's mastersheet here or run it on a calculator/optimizer.",
+          "Raiden's Elemental Burst damage depends on her <b>team's energy consumption prior to her Burst</b>, and her Burst <b>restores a comfortable amount of energy for her team</b> (which is further amplified by her passive). This is especially convenient on teams that doesn't conflict with her element and wants the energy provision. (i.e. Eula, Electro, National teams, etc.). Raiden has no issues with firing her ult off cooldown after reaching about 200% Energy Recharge, but it is possible to raise it higher for better energy restoration for her team.\n\n<b>Regarding Weapon Choices: This list assumes the average across a variety of buffs. \nSkyward Spine: </b>Assumes that you are utilizing the ATK SPD buff to access higher damage combos. \n<b>Wavebreaker's Fin: [R5] </b>Wavebreaker's Fin is relatively equal, to Staff of Homa, depending on your total team burst cost.\n\n<b>Regarding Artifact Sets:\nTenacity of the Millelith (4): T</b>his set acts as a low investment support oriented set. Raiden is an excellent ToTM holder since her Elemental Skill has 100% uptime and procs very easily. Do note that if your Raiden is equipping this set, then she will sacrifice her personal damage.\n<b>\nRegarding Main Stats Priority: \n</b>Raiden's main stat priority for Sands and Goblet entirely depends on the substats, whether she has external buffs, and which weapon she is running. You can find a more detailed list of suggestions from <a href=\"https://docs.google.com/spreadsheets/d/1VdRUAKFUoKkceIghV5tCfr3kfoiH59mcFOMorI9jYrw/edit\">ZΛNTO#4984's mastersheet here</a><a href=\"https://docs.google.com/spreadsheets/d/1VdRUAKFUoKkceIghV5tCfr3kfoiH59mcFOMorI9jYrw/edit\"> </a>or run it on a calculator/optimizer.",
       },
     },
   },
@@ -1589,6 +1605,10 @@ export const builds = {
             id: 'royal_longsword',
           },
           {
+            id: 'harbinger_of_dawn',
+            refine: [5],
+          },
+          {
             id: 'sacrificial_sword',
             refine: [1, 2],
           },
@@ -1612,7 +1632,7 @@ export const builds = {
         tip:
           "Activating XQ's Elemental Skill or Elemental Burst applies Hydro to the on-field character with his shield. (Pyro in specific)\n\nCleansing Electro may take an additional switch for your character with the rain swords active, while Cryo would freeze you in place.",
         note:
-          "C6 stands for \"Constellation 6\" and C0-C5  refers to a Xingqiu that is not yet Constellation 6.\n\n<b>Regarding Weapon Choices:\nThe weapon rankings assume you are running enough Energy Recharge to get Xingqiu's burst up off cooldown. </b>\n<b>Favonius Sword: </b>This weapon is better than Sacrifical Sword [R3+] if you intend on using Xingqiu in teams where there is not a second hydro unit.\n<b>Sacificial Sword [R3+]: </b>This weapon is better than Favonius Sword when running Xingqiu in a team with more than one hydro unit. \n\nBig thanks to Quincy#6965 for helping us with the weapon calculations.\n\n<b>Regarding Artifact Set:\nEmblem of Severed Fate (4):</b> If you already have an invested [C6] Xingqiu with Sacrificial Sword [R3+]  then you don't need to farm for this set.\n<b>Noblesse Oblige (4): </b>Offers party-wide ATK boost, you can use this set on Xingqiu<b> if nobody else on the party is able to use it better</b>.\n<b>Blizzard Strayer (4): </b>This set is <b>only recommended on a freeze team</b> to optimize Xingqiu's stats since he can mildly disregard Crit Rate and build Crit Damage instead for more damage output. Despite it outperforming Emblem of Severed Fate (4) within this niche,<b> it is generally not recommended to specifically farm for this set.</b>\n<b>The Exile (2) / Scholar (2) / Emblem of Severed Fate (2) [Choose Two]*: </b>This set is a cheap beginner option to maintain burst uptime well since it gives 40% Energy Recharge. Note that <b>it is not recommended to stay on this set</b> as Xingqiu contributes alot of damage in his teams.\n\n<b>Regarding Main Stats Priority:</b>\nIdeally you would be running ATK% Sands when your ER needs are fulfilled. ER needs can be found in the Xingqiu Mastersheet.<b>\n</b><b>\n\nPrioritize Energy Recharge first if you can't burst off cooldown",
+          'C6 stands for "Constellation 6" and C0-C5  refers to a Xingqiu that is not yet C6.\n\n<b>Regarding Weapon Choices:\nThe weapon rankings assume you are running enough Energy Recharge to get Xingqiu\'s burst up off cooldown. </b>\n<b>Favonius Sword: </b>This weapon is better than Sacrifical Sword [R3+] if you intend on using Xingqiu in teams where there is not a second hydro unit.\n<b>Sacificial Sword [R3+]: </b>This weapon is better than Favonius Sword when running Xingqiu in a team with more than one hydro unit. \n<b>Harbinger of Dawn [R5]</b>: At <b>constellation 6, </b>if you can consistently keep the passive active, this has the potential <b>to equal Favonius Sword/Sacrificial Sword [R3+]</b>\n\nBig thanks to Quincy#6965 for helping us with the <a href="https://docs.google.com/spreadsheets/d/1wv1WXpkFkTX8SLCWLoQXlyxwnB2ZXZqQ6c9tSSVCAvQ/edit?usp=sharing">weapon calculations</a>.\n\n<b>Regarding Artifact Set:\nEmblem of Severed Fate (4):</b> If you already have an invested [C6] Xingqiu with Sacrificial Sword [R3+]  then you don\'t need to farm for this set.\n<b>Noblesse Oblige (4): </b>Offers party-wide ATK boost, you can use this set on Xingqiu<b> if nobody else on the party is able to use it better</b>.\n<b>Blizzard Strayer (4): </b>This set is <b>only recommended on a freeze team</b> to optimize Xingqiu\'s stats since he can mildly disregard Crit Rate and build Crit Damage instead for more damage output. Despite it outperforming Emblem of Severed Fate (4) within this niche,<b> it is generally not recommended to specifically farm for this set.</b>\n<b>The Exile (2) / Scholar (2) / Emblem of Severed Fate (2) [Choose Two]*: </b>This set is a cheap beginner option to maintain burst uptime well since it gives 40% Energy Recharge. Note that <b>it is not recommended to stay on this set</b> as Xingqiu contributes alot of damage in his teams.\n\n<b>Regarding Main Stats Priority:</b>\nIdeally you would be running ATK% Sands when your ER needs are fulfilled. ER needs can be found in the <a href="https://docs.google.com/spreadsheets/d/1wv1WXpkFkTX8SLCWLoQXlyxwnB2ZXZqQ6c9tSSVCAvQ/edit?usp=sharing">Xingqiu Mastersheet</a>.\n\nPrioritize Energy Recharge first if you can\'t burst off cooldown',
       },
       'OFF-FIELD DPS (C0-C5)': {
         recommended: true,
@@ -1646,6 +1666,10 @@ export const builds = {
             id: 'sacrificial_sword',
             refine: [1, 2],
           },
+          {
+            id: 'harbinger_of_dawn',
+            refine: [5],
+          },
         ],
         artifacts: [
           ['emblem_of_severed_fate'],
@@ -1665,7 +1689,7 @@ export const builds = {
         talent: ['Burst', 'Skill'],
         tip:
           "Activating XQ's Elemental Skill or Elemental Burst applies Hydro to the on-field character with his shield. (Pyro in specific)\n\nCleansing Electro may take an additional switch for your character with the rain swords active, while Cryo would freeze you in place.",
-        note: "</b>\n\nPrioritize Energy Recharge first if you can't burst off cooldown",
+        note: "<b></b>\n\nPrioritize Energy Recharge first if you can't burst off cooldown",
       },
     },
   },
@@ -2050,7 +2074,7 @@ export const builds = {
           ['echoes_of_an_offering'],
         ],
         mainStats: {
-          sands: ['ATK%'],
+          sands: ['Attack'],
           goblet: ['Hydro DMG'],
           circlet: ['Crit Rate', 'DMG'],
         },
@@ -2106,15 +2130,15 @@ export const builds = {
           ['emblem_of_severed_fate', 'tenacity_of_the_millelith', 'heart_of_depth', 'noblesse_oblige'],
         ],
         mainStats: {
-          sands: ['Energy Recharge', 'HP%'],
-          goblet: ['Hydro DMG', 'HP%'],
-          circlet: ['Crit Rate', 'Crit DMG', 'HP%'],
+          sands: ['Sands: Energy Recharge', 'HP%'],
+          goblet: ['Goblet: Hydro DMG', 'HP%'],
+          circlet: ['Circlet: Crit Rate', 'Crit DMG', 'HP%'],
         },
         subStats: ['Energy Recharge', 'HP / Crit Rate / Crit DMG', 'Flat HP'],
         talent: ['Burst', 'Skill', 'Normal Attacks'],
         tip: '',
         note:
-          "Yelan is an off-field DPS who is able to <b>apply Hydro off-field via her Elemental Burst</b>, this part of her kit acts similarly like Xingqiu's Elemental Burst. <b>Yelan mainly scales off HP%</b>, so don't build her with ATK%. <b>Yelan also wants a lot of Energy Recharge to be able to maintain her Elemental Burst uptime (up to ~250 ER)</b>, this can decrease depending on the number of Hydro units or energy providers in the team.\n\n<b>Regarding Weapon Choices:</b>\n<b>Elegy for the End: </b>This weapon is to be used <b>only in reaction based comps such as Vape Hu Tao,</b> Yelan's personal damage is lower than other options on this list, but is more beneficial for the team's damage per rotation.\n<b>Mouun's Moon: </b>This weapon <b>works best at [R3]+ </b>and <b>makes HP% Goblet potentially a stronger option instead of Hydro Bonus especially in comps with strong DMG% buffs</b>.\n\n<b>Regarding Artifact Main Stats:</b>\n<b>Goblet: </b>HP% Goblet is to be used <b>only if Hydro DMG% option is very bad and HP% option is very good</b>, or <b>if Yelan has strong DMG% buffs</b> such as Emblem of Severed Fate (4) + Mouun's Moon (especially with refinements) or Raiden + Kazuha and so on.\n\n<b>Regarding Talent Priority:\nNormal Attacks: </b>Level this up only if you want to constantly use her Breakthrough Barbs.\n\nBig thanks to Vladone ツ#9281 and jstern25#1399 from Yelan Mains for helping us with the calculations.\n\n",
+          "Yelan is an off-field DPS who is able to <b>apply Hydro off-field via her Elemental Burst</b>, this part of her kit acts similarly like Xingqiu's Elemental Burst. <b>Yelan mainly scales off HP%</b>, so don't build her with ATK%. <b>Yelan also wants a lot of Energy Recharge to be able to maintain her Elemental Burst uptime (up to ~250 ER)</b>, this can decrease depending on the number of Hydro units or energy providers in the team.\n\n<b>Regarding Weapon Choices:</b>\n<b>Elegy for the End: </b>This weapon is to be used <b>only in reaction based comps such as Vape Hu Tao,</b> Yelan's personal damage is lower than other options on this list, but is more beneficial for the team's damage per rotation.\n<b>Mouun's Moon: </b>This weapon <b>works best at [R3]+ </b>and <b>makes HP% Goblet potentially a stronger option instead of Hydro Bonus especially in comps with strong DMG% buffs</b>.\n\n<b>Regarding Artifact Main Stats:</b>\n<b>Goblet: </b>HP% Goblet is to be used <b>only if Hydro DMG% option is very bad and HP% option is very good</b>, or <b>if Yelan has strong DMG% buffs</b> such as Emblem of Severed Fate (4) + Mouun's Moon (especially with refinements) or Raiden + Kazuha and so on.\n\n<b>Regarding Talent Priority:\nNormal Attacks: </b>Level this up only if you want to constantly use her Breakthrough Barbs.\n\nBig thanks to Vladone ツ#9281 and jstern25#1399 from Yelan Mains for helping us with the <a href=\"https://docs.google.com/spreadsheets/d/1ULEvZVo1Er1N-1_f729qiheMZusEC6qpJ5Yn8vyrqr8/edit?usp=sharing\">calculations</a>.\n\n",
       },
     },
   },
@@ -2266,18 +2290,12 @@ export const builds = {
           goblet: ['Cryo DMG'],
           circlet: ['Crit DMG'],
         },
-        subStats: [
-          'Crit DMG',
-          'ATK%',
-          'Energy Recharge',
-          'Crit Rate Generally has less value than the other offensive stats due to Blizzard Strayer and Cryo Resonance',
-          'Flat ATK',
-        ],
+        subStats: ['Crit DMG', 'ATK%', 'Energy Recharge', 'Crit Rate', 'Flat ATK'],
         talent: ['Burst', 'Normal Attack', 'Skill'],
         tip:
           'As a Freeze DPS, he gains over 55%+ Crit Rate with the right team set up:\n- 15% from Cryo Resonance against Cryo affected enemies\n- 40% from Blizzard Strayer against Frozen enemies\n- 15% from [C1] against Cryo affected enemies',
         note:
-          'ya Cryo DPS is mostly used in a team with Chongyun and Xingqiu/Barbara while having Blizzard Strayer (4) equipped. In this team, Kaeya has 55% crit rate against Frozen enemies without any additional Crit stats, which means Crit Rate substats are generally prioritized less than ATK% or Crit DMG.\n\nIf not paired with Chongyun, Skill takes priority over Normal Attacks',
+          'Kaeya Cryo DPS is mostly used in a team with Chongyun and Xingqiu/Barbara while having Blizzard Strayer (4) equipped. In this team, Kaeya has 55% crit rate against Frozen enemies without any additional Crit stats, which means Crit Rate substats are generally prioritized less than ATK% or Crit DMG.\n\nCR Generally has less value than the other offensive stats due to Blizzard Strayer and Cryo Resonance\nIf not paired with Chongyun, Skill takes priority over Normal Attacks',
       },
       'BURST SUPPORT': {
         recommended: true,
@@ -2650,13 +2668,7 @@ export const builds = {
           goblet: ['Cryo DMG'],
           circlet: ['Crit Rate', 'DMG'],
         },
-        subStats: [
-          'Energy Recharge (until needed)',
-          'Crit Rate / DMG',
-          'ATK%',
-          'Elemental Mastery (on a non Freeze comp)',
-          'Flat ATK',
-        ],
+        subStats: ['Energy Recharge', 'Crit Rate / DMG', 'ATK%', 'Elemental Mastery', 'Flat ATK'],
         talent: ['Burst', 'Skill', 'Normal Attack'],
         tip:
           "When using her Elemental Burst, place her Elemental Skill in the AoE to taunt and keep enemies inside the zone for constant damage.\n\nMake sure to hit enemies with her skill's initial damage and her explosion damage as they both regen energy for her ult.",
@@ -3145,7 +3157,7 @@ export const builds = {
         ],
         mainStats: {
           sands: ['ATK%', 'Energy Recharge', 'Elemental Mastery'],
-          goblet: ['Anemo DMG', 'Elemental Mastery'],
+          goblet: ['Anemo Damage', 'Elemental Mastery'],
           circlet: ['Crit Rate', 'DMG', 'Elemental Mastery'],
         },
         subStats: ['Crit Rate / DMG', 'ATK%', 'Energy Recharge', 'Elemental Mastery', 'Flat ATK'],
@@ -3158,7 +3170,7 @@ export const builds = {
   },
   venti: {
     roles: {
-      'OFF-FIELD DPS': {
+      'EM BUILD': {
         recommended: true,
         weapons: [
           {
@@ -3192,16 +3204,16 @@ export const builds = {
         ],
         artifacts: [['viridescent_venerer'], ['noblesse_oblige']],
         mainStats: {
-          sands: ['Elemental Mastery', 'ATK%'],
-          goblet: ['Elemental Mastery', 'Anemo DMG'],
-          circlet: ['Elemental Mastery', 'Crit Rate', 'DMG'],
+          sands: ['Elemental Mastery'],
+          goblet: ['Elemental Mastery'],
+          circlet: ['Elemental Mastery'],
         },
         subStats: ['Elemental Mastery', 'Energy Recharge', 'ATK%', 'Crit Rate / DMG', 'Flat ATK'],
         talent: ['Burst', 'Skill'],
         tip:
-          "Make sure you don't immediately swap away after casting Burst, you need to be on-field for VV 4-set perk to proc on swirl first.(E > Q to avoid this issue)\n\nYou can infuse elements onto Venti's Burst if you walk up with an element status on you. (e.g. Bennett Burst > Venti Burst > Walk up to infuse Pyro)\n\nCheck out  this link  to see which characters can hit the enemies sucked and ragdolled in Venti's burst. (Sheet has not been updated since Yanfei release)",
+          "Make sure you don't immediately swap away after casting Burst, you need to be on-field for VV 4-set perk to proc on swirl first.(E > Q to avoid this issue)\n\nYou can infuse elements onto Venti's Burst if you walk up with an element status on you. (e.g. Bennett Burst > Venti Burst > Walk up to infuse Pyro)\n\nCheck out  this link  to see which characters can hit the enemies sucked and ragdolled in Venti's burst.",
         note:
-          "This build focuses on damage over ER because of his ER ascension stat. This weapon order is in the assumption of EM Venti, as Crit Venti's damage potential is limited to either extremely high investment or single target situations.\n\n<b>Regarding Weapon Choices:\nFavonius Warbow: </b>While terrible for personal damage, this weapon allows Venti to provide more energy for his teammates, while also covering his ER needs. Finding Crit Rate in substats is recommended for consistent passive procs.\n<b>Skyward Harp:</b> Due to EM build assumptions, the stats offered aren't very valuable. Consider reading the In-depth Guide from KQM if you're interested in a Crit-focused build.\n<b>Elegy for the End:</b> Elegy for the End's ATK buff DOES NOT buff Venti's burst if Venti is the one equipping the bow, but the EM buff affects Venti's Swirl reaction. This is due to Venti's burst snapshotting his stats (excluding EM toward transformative reactions such as Swirl) at the time of cast. While an <b>[R1]</b> Elegy of the End yields slightly lower Venti damage compared to an <b>[R5]</b> Stringless (~7% assuming 50% Elegy buff uptime), it provides a party-wide ATK and EM buff which can be better in terms of total team damage and comfortable ER.\n\nCrit Rate / DMG isn't as important in a triple EM build, which is what is assumed here.\nFor an EM-focused build, upgrading Venti's talent levels isn't a necessity.",
+          "LD DPS\nThis build focuses on damage over ER because of his ER ascension stat. This weapon order is in the assumption of <b>EM</b> <b>Venti</b>, as Crit Venti's damage potential is limited to either extremely high investment or single target situations. <b>Consider reading the In-depth Guide from KQM if you're interested in a Crit-focused build.</b>\n\n<b>Regarding Weapon Choices:\nFavonius Warbow: </b>While terrible for personal damage, this weapon allows Venti to provide more energy for his teammates, while also covering his ER needs. Finding Crit Rate in substats is recommended for consistent passive procs.\n<b>Skyward Harp:</b> Due to EM build assumptions, the stats offered aren't very valuable. \n<b>Elegy for the End:</b> Elegy for the End's ATK buff <b>DOES NOT</b> buff Venti's burst if Venti is the one equipping the bow, but the EM buff affects Venti's Swirl reaction. This is due to Venti's burst snapshotting his stats (excluding EM toward transformative reactions such as Swirl) at the time of cast. While an <b>[R1]</b> Elegy of the End yields slightly lower Venti damage compared to an <b>[R5]</b> Stringless (~7% assuming 50% Elegy buff uptime), it provides a party-wide ATK and EM buff which can be better in terms of total team damage and comfortable ER.\n\nFor an EM-focused build, upgrading Venti's talent levels isn't a necessity.",
       },
     },
   },
@@ -3439,12 +3451,12 @@ export const builds = {
           goblet: ['Geo DMG'],
           circlet: ['Crit Rate', 'DMG'],
         },
-        subStats: ['Crit Rate / DMG', 'Energy Recharge (~20-30%)', 'DEF%'],
+        subStats: ['Crit Rate / DMG', 'Energy Recharge', 'DEF%'],
         talent: ['Normal Attack', 'Burst', 'Skill'],
         tip:
           "Optimal attack rotation is N1>N2>N3>N4>dash/hop, where N refers to each normal attack in her 4 hit combo. This isn't always feasible due to cast time and N4 covers a lesser AoE than N1-3 (as well as knockback issues), so the recommended rotation is N1>N2>N3>dash/hop.",
         note:
-          "<b>It's recommended to avoid building a DPS Noelle if she's not [C5+].\n</b>Noelle DPS is best optimized at <b>[C6]</b> where she converts an additional 50% DEF into ATK. Her ability to sustain her team with shields, heals and AOE damage makes for a reliable DPS when your team is built around her.\n\n<b>Regarding Weapon Choices:\n[C6] is assumed for weapon ranking.\nSerpent Spine: </b>When using Husk of Opulent Dreams, Serpent Spine stacks are prioritized over Husk of the Opulent Dreams stacks, due to their conflicting nature in gaining stacks (Off-field and on-field)\n<b>Skyward Pride: </b>Useful if you are unable to get ER from your substats. Does really well while its passive is active, but falls off in sustained fights. Comfort option that can lose to a high refined Whiteblind with stacks.\n<b>Favonius Greatsword: </b>Only recommended with high refines, as its usefulness scales with its particle generation capabilities. R5 allows her to self-battery assuming some additional particles from enemies, but a second Geo is always recommended regardless for resonance. \n\n<b>Regarding Artifact Sets:\nHusk of Opulent Dreams (4): </b>Noelle snapshots her DEF on burst cast. To get the full 4 stacks' DEF% boost during your first burst, you need to wait 12 seconds off field before swapping in. In abyss, time spent before the chamber starts still generates stacks.<b>\nRetracing Bolide (4): </b>Optimally offers slightly less damage than Gladiator's, but is much easier to farm per resin and can have 100% uptime with crystallise shields. Consider Gladiator's Finale if you don't want to farm for Archaic Petra as Artifact Strongbox is much more effective than elite bosses in terms of artifacts per resin.\n\nATK% sands when below C6 and below Talent Level 9 Burst.",
+          "[C6] is assumed for the weapon ranking.\n<b>It's recommended to avoid building a DPS Noelle if she's not [C5+].\n</b>Noelle DPS is best optimized at <b>[C6]</b> where she converts an additional 50% DEF into ATK. Her ability to sustain her team with shields, heals and AOE damage makes for a reliable DPS when your team is built around her.\n\n<b>Regarding Weapon Choices:\nSerpent Spine: </b>When using Husk of Opulent Dreams, Serpent Spine stacks are prioritized over Husk of the Opulent Dreams stacks, due to their conflicting nature in gaining stacks (Off-field and on-field)\n<b>Skyward Pride: </b>Useful if you are unable to get ER from your substats. Does really well while its passive is active, but falls off in sustained fights. Comfort option that can lose to a high refined Whiteblind with stacks.\n<b>Favonius Greatsword: </b>Only recommended with high refines, as its usefulness scales with its particle generation capabilities. R5 allows her to self-battery assuming some additional particles from enemies, but a second Geo is always recommended regardless for resonance. \n\n<b>Regarding Artifact Sets:\nHusk of Opulent Dreams (4): </b>Noelle snapshots her DEF on burst cast. To get the full 4 stacks' DEF% boost during your first burst, you need to wait 12 seconds off field before swapping in. In abyss, time spent before the chamber starts still generates stacks.<b>\nRetracing Bolide (4): </b>Optimally offers slightly less damage than Gladiator's, but is much easier to farm per resin and can have 100% uptime with crystallise shields. Consider Gladiator's Finale if you don't want to farm for Archaic Petra as Artifact Strongbox is much more effective than elite bosses in terms of artifacts per resin.\n\nER Needed ~20-30%\n\nATK% sands when below C6 and below Talent Level 9 Burst.",
       },
       SUPPORT: {
         recommended: false,
@@ -3757,14 +3769,14 @@ export const builds = {
         recommended: true,
         weapons: [
           {
-            id: 'primordial_jade_cutter',
-          },
-          {
             id: 'cinnabar_spindle',
             refine: [5],
           },
           {
             id: 'harbinger_of_dawn',
+          },
+          {
+            id: 'primordial_jade_cutter',
           },
           {
             id: 'mistsplitter_reforged',
@@ -3789,7 +3801,7 @@ export const builds = {
         talent: ['Skill', 'Burst'],
         tip: "Albedo's Elemental Skill particle generation is completely RNG like Zhongli, but with better odds.",
         note:
-          "Albedo is a character that can summon a Geo Construct from his Elemental Skill which deals damage on a 2 second interval whenever enemies in the field are damaged. His Elemental Burst provides 125 EM to the party, which is good on teams that rely on amplification reactions, such as Vaporize. It is worth noting that since his stat priority is focused on DEF (Elemental Skill scaling), you might want to skip casting Elemental Burst if your team doesn't benefit from the 125 EM buff. Another option is to build him with ATK-DEF Hybrid, which ends up with lower Skill damage but higher Burst damage.\n\n<b>Regarding Weapon Choices:</b>\n<b>Primordial Jade Cutter:</b> On a Hybrid build where Albedo casts his Elemental Burst, this weapon can be a better option than Cinnabar Spindle on certain situations, such as AoE where Albedo's Burst hits multiple enemies or when there are external ATK buffs like Bennett's Burst. On a pure Elemental Skill focused Albedo or Single Target situations for Hybrid Albedo, Cinnabar Spindle is the better option, so choose wisely.\n<b>Harbinger of Dawn:</b> Albedo's Elemental Skill scales with Defense, which is why the Base ATK from the weapon doesn't matter that much. Harbinger of Dawn offers a lot of Crit stats which is why it is one of the strongest weapons for him despite being a 3 star weapon. The downside of this weapon is that you'd need to keep Albedo's HP at 90% or higher to benefit from the passive, so it might be annoying to use against certain enemies which has a HP lowering debuff, even when off-field, such as Corrosion.\n<b>Mistsplitter Reforged</b>: Realistically you are only able to get 2 stacks of this weapon's passive and this requires setup. Generally just use Harbinger of Dawn instead and give your Mistsplitter Reforged to another sword DPS character.\n<b>Freedom-Sworn:</b> Equipping this weapon will decrease Albedo's own damage significantly but he is one of the better Freedom-Sworn holders since he can trigger the passive quite easily to buff your other party members.\n\n<b>Regarding Artifact Sets:</b>\n<b>Husk of Opulent Dreams (4):</b> Due to Albedo's skill snapshotting upon cast, you need to either wait ~12 seconds before starting a domain/fight to reach max stacks or recast his skill to benefit from the DEF and Geo DMG bonus provided by the 4 piece set effect.\n<b>Tenacity of the Milelith (4):</b> This set is used for the 4 piece set effect which has good uptime on Albedo. Worth noting that this set decreases your Elemental Skill damage by a lot if compared to the other offensive sets.\n<b>Noblesse Oblige (4):</b> If you don't have another character in your party that has this set, you can use this set on Albedo. You might want to get some Energy Recharge substats to maintain your Elemental Burst uptime for this. It is also worth noting that this set decreases your Elemental Skill damage by a lot if compared to the other offensive sets.\n\n<b>Regarding Artifact Substats Priority:</b>\nATK and Energy Recharge substats are only valuable on a Hybrid Albedo that casts his Elemental Burst.",
+          "Albedo is a character that can summon a Geo Construct from his Elemental Skill which deals damage on a 2 second interval whenever enemies in the field are damaged. His Elemental Burst provides 125 EM to the party, which is good on teams that rely on amplification reactions, such as Vaporize. It is worth noting that since his stat priority is focused on DEF (Elemental Skill scaling), you might want to skip casting Elemental Burst if your team doesn't benefit from the 125 EM buff. Another option is to build him with ATK-DEF Hybrid, which ends up with lower Skill damage but higher Burst damage.\n\n<b>Regarding Weapon Choices:</b>\n<b>Harbinger of Dawn:</b> Albedo's Elemental Skill scales with Defense, which is why the Base ATK from the weapon doesn't matter that much. Harbinger of Dawn offers a lot of Crit stats which is why it is one of the strongest weapons for him despite being a 3 star weapon. The downside of this weapon is that you'd need to keep Albedo's HP at 90% or higher to benefit from the passive, so it might be annoying to use against certain enemies which has a HP lowering debuff, even when off-field, such as Corrosion.\n<b>Mistsplitter Reforged</b>: Realistically you are only able to get 2 stacks of this weapon's passive and this requires setup. Generally just use Harbinger of Dawn instead and give your Mistsplitter Reforged to another sword DPS character.\n<b>Freedom-Sworn:</b> Equipping this weapon will decrease Albedo's own damage significantly but he is one of the better Freedom-Sworn holders since he can trigger the passive quite easily to buff your other party members.\n\n<b>Regarding Artifact Sets:</b>\n<b>Husk of Opulent Dreams (4):</b> Due to Albedo's skill snapshotting upon cast, you need to either wait ~12 seconds before starting a domain/fight to reach max stacks or recast his skill to benefit from the DEF and Geo DMG bonus provided by the 4 piece set effect.\n<b>Tenacity of the Milelith (4):</b> This set is used for the 4 piece set effect which has good uptime on Albedo. Worth noting that this set decreases your Elemental Skill damage by a lot if compared to the other offensive sets.\n<b>Noblesse Oblige (4):</b> If you don't have another character in your party that has this set, you can use this set on Albedo. You might want to get some Energy Recharge substats to maintain your Elemental Burst uptime for this. It is also worth noting that this set decreases your Elemental Skill damage by a lot if compared to the other offensive sets.\n\n<b>Regarding Artifact Substats Priority:</b>\nATK and Energy Recharge substats are only valuable on a Hybrid Albedo that casts his Elemental Burst.",
       },
     },
   },

@@ -10,7 +10,7 @@
 
   const dispatch = createEventDispatcher();
 
-  const promoted = ['arataki_itto'];
+  const promoted = ['arataki_itto', 'kuki_shinobu'];
   let current = 0;
 
   async function change(index) {
@@ -84,7 +84,7 @@
             width="32"
             height="32"
           />
-          <p class="text-white text-sm">{build.mainStats.sands}</p>
+          <p class="text-white text-sm">{build.mainStats.sands.join(' / ')}</p>
         </div>
         <div class="rounded-md p-1 bg-background-secondary m-1 flex items-center">
           <img
@@ -95,7 +95,7 @@
             width="32"
             height="32"
           />
-          <p class="text-white text-sm">{build.mainStats.goblet}</p>
+          <p class="text-white text-sm">{build.mainStats.goblet.join(' / ')}</p>
         </div>
         <div class="rounded-md p-1 bg-background-secondary m-1 flex items-center">
           <img
@@ -106,7 +106,7 @@
             width="32"
             height="32"
           />
-          <p class="text-white text-sm">{build.mainStats.circlet}</p>
+          <p class="text-white text-sm">{build.mainStats.circlet.join(' / ')}</p>
         </div>
       </div>
     </div>
