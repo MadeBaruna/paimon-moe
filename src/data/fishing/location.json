@@ -182,5 +182,15 @@
     "name": "The Serpent's Heart",
     "fish": ["dawncatcher", "akai_maou", "divda_ray", "formalo_ray"],
     "location": "enkanomiya"
+  },
+  "25943": {
+    "name": "Underground Waterway",
+    "fish": ["medaka", "betta", "akai_maou", "brown_shirakodai", "bitter_pufferfish"],
+    "location": "chasm"
+  },
+  "25944": {
+    "name": "Underground Waterway",
+    "fish": ["sweet-flower_medaka", "dawncatcher", "crystalfish", "akai_maou", "pufferfish"],
+    "location": "chasm"
   }
 }
