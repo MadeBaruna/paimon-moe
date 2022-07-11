@@ -1,3 +1,4 @@
+import dayjs from 'dayjs';
 import { register, addMessages, init, getLocaleFromNavigator, locale as $locale } from 'svelte-i18n';
 
 import en from './locales/en.json';
@@ -17,6 +18,7 @@ $locale.subscribe((value) => {
 
   if (typeof window !== 'undefined') {
     localStorage.setItem('locale', value);
+    dayjsLocales[value]().then(() => dayjs.locale(value));
   }
 });
 
@@ -47,6 +49,22 @@ register('es', () => import('./locales/items/es.json'));
 register('de', () => import('./locales/items/de.json'));
 register('th', () => import('./locales/items/th.json'));
 register('vi', () => import('./locales/items/vi.json'));
+
+const dayjsLocales = {
+  en: () => import('dayjs/locale/en'),
+  id: () => import('dayjs/locale/id'),
+  ru: () => import('dayjs/locale/ru'),
+  ja: () => import('dayjs/locale/ja'),
+  ko: () => import('dayjs/locale/ko'),
+  fr: () => import('dayjs/locale/fr'),
+  zh: () => import('dayjs/locale/zh'),
+  pt: () => import('dayjs/locale/pt'),
+  tw: () => import('dayjs/locale/zh-tw'),
+  es: () => import('dayjs/locale/es'),
+  de: () => import('dayjs/locale/de'),
+  th: () => import('dayjs/locale/th'),
+  vi: () => import('dayjs/locale/vi'),
+};
 
 export function startClient() {
   let used = 'en';

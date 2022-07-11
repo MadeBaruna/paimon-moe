@@ -146,7 +146,10 @@
       monthList[i][1].offset = i - 1 >= 0 ? monthList[i - 1][1].total + monthList[i - 1][1].offset : 0;
     }
 
-    dates = [...new Array(dayTotal)].map((_, i) => firstDay.add(i, 'day').date());
+    dates = [...new Array(dayTotal)].map((_, i) => {
+      const cur = firstDay.add(i, 'day');
+      return [cur.date(), cur.format('dd')];
+    });
   }
 
   async function toggleLocalTime() {
@@ -266,21 +269,21 @@
             style={`width: 1px; height: calc(100% - ${eventHeight}px); position: absolute; 
           left: ${i * dayWidth}px; top: ${eventHeight}px;`}
           >
-            <span
-              class="absolute top-0 text-gray-200 text-center pb-1 bg-background-secondary"
-              style="width: 20px; left: -10px;"
-            >
-              {date}
+            <span class="absolute top-0 text-gray-200 text-center pb-1 " style="width: 20px; left: -10px;">
+              {date[0]}
+            </span>
+            <span class="absolute top-0 text-gray-600 text-center pb-1 " style="width: 20px; left: -10px; top: -24px;">
+              {date[1]}
             </span>
           </div>
         {/each}
         <!-- MONTH TITLE -->
         {#each monthList as [month, item]}
           <div
-            class="absolute bg-background-secondary pr-4"
+            class="absolute pr-4"
             style={`top: 12px; width: ${item.total * dayWidth}px; left: ${item.offset * dayWidth}px;`}
           >
-            <span class="text-legendary-from font-bold sticky left-0">{month}</span>
+            <span class="text-legendary-from font-bold sticky left-0 month">{month}</span>
           </div>
         {/each}
         <!-- EVENT STRIP -->
@@ -342,5 +345,23 @@
   ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.35);
     @apply rounded-xl;
+  }
+
+  .month::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: inline-block;
+    padding: 0 50px;
+    position: absolute;
+    left: calc(50% - 50px);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgb(37, 41, 74, 100) 10%,
+      rgb(37, 41, 74, 100) 90%,
+      rgba(0, 0, 0, 0) 100%
+    );
   }
 </style>
