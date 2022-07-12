@@ -479,6 +479,7 @@
       "totalPull": "Total de tiradas",
       "luck5": "5★ Suertudas",
       "luck4": "4★ Suertudas",
+      "luckWinRateOff": "",
       "medianTotal": "Promedio global {median} tiradas",
       "medianLuck": "Promedio global {median}%",
       "moreTotal": "Tienes más tiradas que el {percentage}% de usuarios de paimon.moe",
@@ -793,7 +794,8 @@
     "useLocalData": "Utilizar los datos locales del navegador",
     "download": "Descargar ambos datos",
     "lastModified": "Última modificación",
-    "or": "O"
+    "or": "O",
+    "smallSizeWarning": ""
   },
   "footer": {
     "affliate": "Paimon.moe no está afiliado a miHoYo.",
@@ -929,9 +931,13 @@
     "recommendedCharacter": "Personajes Recomendados Conjunto {piece} piezas",
     "18ATKSet": "",
     "20EnergyRechargeSet": "",
+    "25PhysicalDmgSet": "",
     "sands": "",
     "goblet": "",
-    "circlet": ""
+    "circlet": "",
+    "choose2": "",
+    "pieceStat": "",
+    "pieceInfo": ""
   },
   "fishing": {
     "title": "Libro de pesca",
@@ -940,6 +946,7 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
+    "chasm": "",
     "setEmpty": "Poner como vacío",
     "emptyTime": "Tiempo cuando el punto está vacío:",
     "clear": "Borrar",

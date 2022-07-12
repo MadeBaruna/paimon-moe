@@ -479,6 +479,7 @@
       "totalPull": "",
       "luck5": "",
       "luck4": "",
+      "luckWinRateOff": "",
       "medianTotal": "",
       "medianLuck": "",
       "moreTotal": "",
@@ -793,7 +794,8 @@
     "useLocalData": "ใช้ข้อมูลจากเบราว์เซอร์นี้",
     "download": "ดาวน์โหลดข้อมูลทั้งคู่",
     "lastModified": "แก้ไขล่าสุด",
-    "or": "หรือ"
+    "or": "หรือ",
+    "smallSizeWarning": ""
   },
   "footer": {
     "affliate": "Paimon.moe ไม่มีส่วนเกี่ยวข้องใด ๆ กับ HoYoverse",
@@ -929,9 +931,13 @@
     "recommendedCharacter": "ตัวละครที่แนะนำสำหรับเซ็ต {piece} อัน",
     "18ATKSet": "",
     "20EnergyRechargeSet": "",
+    "25PhysicalDmgSet": "",
     "sands": "",
     "goblet": "",
-    "circlet": ""
+    "circlet": "",
+    "choose2": "",
+    "pieceStat": "",
+    "pieceInfo": ""
   },
   "fishing": {
     "title": "สมุดตกปลา",
@@ -940,6 +946,7 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
+    "chasm": "",
     "setEmpty": "ตั้งค่าให้จุดตกปลานี้ว่างเปล่า",
     "emptyTime": "เวลาที่จุดตกปลานี้ว่างเปล่า:",
     "clear": "ล้างข้อมูล",

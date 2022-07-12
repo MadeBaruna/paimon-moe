@@ -81,9 +81,9 @@
     "title": "Nhân Vật",
     "subtitle": "Chỉ số nhân vật được lấy ở cấp 80 bậc đột phá 6. Bạn cũng có thể ấn vào 4 ô vuông để sắp xếp!",
     "name": "Tên",
-    "element": "Nguyên tố",
-    "rarity": "Phẩm Chất",
-    "weapon": "Vũ khí",
+    "element": "Nguyên Tố",
+    "rarity": "Độ Hiếm",
+    "weapon": "Vũ Khí",
     "talents": "Thiên Phú",
     "passiveTalents": "Thiên Phú Cố Định",
     "constellations": "Cung Mệnh",
@@ -117,12 +117,12 @@
     "build": "Build",
     "source": "Build Nhân Vật từ cộng đồng bới Genshin Helper Team",
     "faq": "Cung Mệnh được tính từ Lịch Sử Cầu Nguyện của bạn. Nếu lịch sử cầu nguyện của bạn hết hạn 6 tháng hoặc bạn mua cung mệnh nhân vật từ cửa hàng hoặc sự kiện, thông tin có thể sẽ sai sót! Nhưng bạn có thể tự chỉnh sửa bằng cách ấn vào cây bút kế bên tên nhân vật.",
-    "mainStats": "",
-    "subStats": "",
-    "talentPriority": "",
-    "abilityTip": "",
-    "weapons": "",
-    "artifacts": ""
+    "mainStats": "THUỘC TÍNH CHÍNH",
+    "subStats": "THUỘC TÍNH PHỤ",
+    "talentPriority": "THIÊN PHÚ ƯU TIÊN",
+    "abilityTip": "MẸO KHI SỬ DỤNG",
+    "weapons": "VŨ KHÍ",
+    "artifacts": "THÁNH DI VẬT"
   },
   "wish": {
     "title": "Lịch Sử Cầu Nguyện",
@@ -144,7 +144,7 @@
     "errorBanner": "Thời gian của Banner không trùng khớp! Hãy chỉnh server ở trang cài đặt. Vẫn không hoạt động à? Hãy để lại lời nhắn trên Discord 😅",
     "globalWishTally": "Thống Kê Cầu Nguyện",
     "pityTooltip": [
-      "Bảo Hiểm {rarity} hiện tại",
+      "Lượt đảm bảo {rarity} hiện tại",
       "{count} lần nữa sẽ đảm bảo nhận {rarity}"
     ],
     "import": {
@@ -396,7 +396,7 @@
           "Bạn cũng có thể nhấn nút",
           "để sửa giá trị một cách thủ công!"
         ],
-        "p6": ""
+        "p6": "Nhấn vào mũi tên ở phía dưới để xem thông tin chi tiết lượt quay. Một cửa sổ bật lên sẽ hiển thị khi nào bạn nhận được 5★ hoặc 4★. Bạn cũng có thể thêm hoặc sửa đổi bảng này bằng cách thủ công."
       }
     },
     "types": {
@@ -419,10 +419,10 @@
       "loading": "Đang tải... (Nếu không tải được, hãy đổi server ở cài đặt)",
       "guaranteed": "{rarity}★ tiếp theo chắc chắn sẽ là nhân vật hoặc vũ khí được rate-up",
       "unknown_3_star": "Không rõ",
-      "rarity": "",
-      "total": "",
-      "percent": "",
-      "pityAverage": ""
+      "rarity": "Độ Hiếm",
+      "total": "Tổng",
+      "percent": "Phần Trăm",
+      "pityAverage": "Lượt Ra TB"
     },
     "tally": {
       "title": "Thống Kê Cầu Nguyện",
@@ -447,12 +447,12 @@
       "detail": "Chi tiết"
     },
     "summary": {
-      "total": "",
-      "percent": "",
-      "pityAverage": "",
-      "character": "",
-      "weapon": "",
-      "winRateOff": ""
+      "total": "Tổng",
+      "percent": "Phần Trăm",
+      "pityAverage": "Lượt Ra TB",
+      "character": "Nhân Vật",
+      "weapon": "Vũ Khí",
+      "winRateOff": "Thắng 50:50"
     },
     "note": [
       "Lịch sử cầu nguyện không cập nhật tự động, vui lòng Nhập lại để cập nhật lịch sử của bạn!",
@@ -462,7 +462,7 @@
     "rateon": {
       "won": "Thắng 50:50",
       "lost": "Thua 50:50",
-      "guaranteed": "Đã có bảo hiểm"
+      "guaranteed": "Có bảo hiểm"
     },
     "backupReminder": {
       "title": "Toàn bộ dữ liệu được lưu trên trình duyệt của bạn!",
@@ -479,14 +479,15 @@
       "totalPull": "Tổng Số Lần Quay",
       "luck5": "Độ May Mắn 5★",
       "luck4": "Độ May Mắn 4★",
+      "luckWinRateOff": "Độ May Mắn Thắng 50:50",
       "medianTotal": "Trung bình toàn cục là {median} lần",
       "medianLuck": "Trung bình toàn cục là {median}%",
       "moreTotal": "Quay nhiều hơn {percentage}% người dùng paimon.moe",
       "lessTotal": "Quay ít hơn {percentage}% người dùng paimon.moe",
       "moreLuck": "May mắn hơn {percentage}% người dùng paimon.moe",
       "lessLuck": "Kém may mắn hơn {percentage}% người dùng paimon.moe",
-      "top": "",
-      "bottom": ""
+      "top": "TOP ĐẦU",
+      "bottom": "TOP CUỐI"
     }
   },
   "calculator": {
@@ -692,19 +693,19 @@
     "or": "hoặc",
     "thanks": "Cảm ơn bạn 😁!",
     "credits": {
-      "title": "",
+      "title": "Chân thành cảm ơn",
       "items": [
         {
-          "name": "",
-          "value": ""
+          "name": "Dữ liệu và hình ảnh",
+          "value": "Wiki Genshin Impact"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "Dữ liệu thuộc tính",
+          "value": "Dimbreath Genshin Data"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "Xác suất rơi cho bộ tính nhựa",
+          "value": "Discord của Data Gathering (Thu Thập Dữ Liệu)"
         }
       ]
     },
@@ -742,15 +743,15 @@
     "subtitle": "Paimon.moe thu thập những gì và dùng để làm gì",
     "collect": [
       {
-        "title": "Hãy ghé thăm url tại paimon.moe, liên kết giới thiệu, trình duyệt, hệ điều hành, loại thiết bị, quốc gia của người dùng truy cập",
+        "title": "Những url đã truy cập trên paimon.moe, referer, trình duyệt, hệ điều hành, loại thiết bị, quốc gia của người truy cập",
         "content": [
           "Paimon.moe dùng",
           "plausible.io",
-          "(một phần mềm phân tích quyên riêng tư một cách an toàn) để chúng tôi có thể thấy bao nhiêu người sử dụng tính năng nào, để chúng tôi có thể ưu tiên cải thiện tính năng đó."
+          "(một trình phân tích quyền riêng tư một cách an toàn) để chúng tôi có thể thấy bao nhiêu người sử dụng tính năng nào, để chúng tôi có thể ưu tiên cải thiện tính năng đó."
         ]
       },
       {
-        "title": "Thông báo lỗi và ngoại lệ từ website",
+        "title": "Thông báo lỗi và ngoại lệ (exception) từ trang web",
         "content": [
           "Paimon.moe sẽ gửi lỗi và ngoại lệ từ trang web đến",
           "sentry.io",
@@ -772,15 +773,15 @@
       "và",
       "paimon-moe Github"
     ],
-    "subtitleAd": "",
+    "subtitleAd": "Quảng cáo",
     "ad": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Chúng tôi sử dụng quảng cáo bên thứ ba để hỗ trợ trang chúng tôi. Một số quảng cáo này có thể được phân phối từ nhà quảng cáo bên thứ ba của chúng tôi.",
+      "Bạn có thể xem",
+      " chính sách bảo mật",
+      "và",
+      "chính sách cookie",
+      "của họ tại đây. Bạn có thể quản lý cookie của bạn",
+      "tại đây"
     ]
   },
   "sync": {
@@ -793,22 +794,23 @@
     "useLocalData": "Dùng dữ liệu cục bộ của trình duyệt",
     "download": "Tải xuống cả hai dữ liệu",
     "lastModified": "Sửa đổi lần cuối",
-    "or": "HOẶC"
+    "or": "HOẶC",
+    "smallSizeWarning": ""
   },
   "footer": {
     "affliate": "Paimon.moe không liên kết với HoYoverse.",
     "copyright": "Genshin Impact, nội dung và dữ liệu trò chơi là thương hiệu và bản quyền thuộc HoYoverse.",
-    "discord": "Tham gia Discord của trang",
+    "discord": "Tham gia Discord",
     "community": "Liên kết Cộng đồng",
     "official": "Liên Kết Chính Thức",
     "link": {
-      "github": "",
-      "discord": "",
-      "devTwitter": "",
-      "reddit": "",
-      "facebook": "",
-      "cookieSettings": "",
-      "privacyPolicy": ""
+      "github": "GitHub",
+      "discord": "Discord",
+      "devTwitter": "Twitter Lập Trình Viên",
+      "reddit": "Reddit",
+      "facebook": "Facebook",
+      "cookieSettings": "Cài đặt Cookie",
+      "privacyPolicy": "Chính sách bảo mật"
     }
   },
   "donate": {
@@ -873,7 +875,7 @@
     "corridor": "Hành lang",
     "inventoryButton": "Túi Đồ",
     "listButton": "Danh sách",
-    "selectCharacter": "",
+    "selectCharacter": "Chọn nhân vật...",
     "inventory": {
       "title": "Túi Đồ Trang Trí",
       "subtitle": "Một số mục đặt biệt như tường không được hiển thị",
@@ -907,7 +909,7 @@
     "defPercent": "Phòng Ngự",
     "physicalDamage": "Tăng ST Vật Lý",
     "bow": "Cung",
-    "polearm": "Vũ khí cán dài",
+    "polearm": "Vũ Khí Cán Dài",
     "sword": "Kiếm",
     "catalyst": "Pháp Khí",
     "claymore": "Trọng Kiếm",
@@ -921,17 +923,21 @@
     "title": "Danh Sách Thánh Di Vật",
     "name": "Tên",
     "maxRarity": "★Tối Đa",
-    "bonus2": "Hiệu quả bộ 2 món",
-    "bonus4": "Hiệu quả bộ 4 món",
+    "bonus2": "Hiệu Quả Bộ 2 Món",
+    "bonus4": "Hiệu Quả Bộ 4 Món",
     "domain": "Bí Cảnh",
     "artifact": "Thánh Di Vật",
-    "setPiece": "Hiệu quả bộ {piece} món",
+    "setPiece": "Hiệu Quả Bộ {piece} Món",
     "recommendedCharacter": "Những nhân vật dưới đây nên dùng bộ {piece} món",
-    "18ATKSet": "",
-    "20EnergyRechargeSet": "",
-    "sands": "",
-    "goblet": "",
-    "circlet": ""
+    "18ATKSet": "Bộ tăng 18% Tấn Công",
+    "20EnergyRechargeSet": "Bộ tăng 20% Hiệu Quả Nạp",
+    "25PhysicalDmgSet": "Bộ tăng 25% ST Vật Lý",
+    "sands": "CÁT THỜI GIAN",
+    "goblet": "LY KHÔNG GIAN",
+    "circlet": "NÓN LÝ TRÍ",
+    "choose2": "Chọn 2",
+    "pieceStat": "Những nhân vật có thể sử dụng món {piece} này với thuộc tính chính tương ứng:",
+    "pieceInfo": "Nhấn vào hình ảnh thánh di vật để xem thuộc tính chính khuyên dùng cho nhân vật"
   },
   "fishing": {
     "title": "Sách Câu Cá",
@@ -940,6 +946,7 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
+    "chasm": "",
     "setEmpty": "Đã hết cá",
     "emptyTime": "Thời gian vị trí này hết cá:",
     "clear": "Xóa",

@@ -117,12 +117,12 @@
     "build": "ビルド",
     "source": "Genshin Helper Teamがお勧めするキャラクタービルド",
     "faq": "命ノ星座の開放数は、あなたの祈願履歴から算出されます。そのため、祈願履歴が残っていない場合や、ショップからキャラクターを入手した場合は、命ノ星座の開放数が正確ではない可能性があります! キャラクター名の横にある鉛筆アイコンを押すことで、手動で編集することができます。",
-    "mainStats": "",
-    "subStats": "",
-    "talentPriority": "",
-    "abilityTip": "",
-    "weapons": "",
-    "artifacts": ""
+    "mainStats": "メインステータス",
+    "subStats": "サブステータス",
+    "talentPriority": "天賦育成の優先順位",
+    "abilityTip": "性能のコツ",
+    "weapons": "武器",
+    "artifacts": "聖遺物"
   },
   "wish": {
     "title": "祈願カウンター",
@@ -396,7 +396,7 @@
           "また、このボタン",
           "で手動で編集できます！"
         ],
-        "p6": ""
+        "p6": "下のボタンを押して祈願詳細を確認することができます。5★ または 4★ が排出されるポップアップが表示します。表を手動で追加し、編集することもできます。"
       }
     },
     "types": {
@@ -419,10 +419,10 @@
       "loading": "読み込み中... (固まったら設定でアカウントのサーバを確かめてください)",
       "guaranteed": "次回の{rarity}★はピックアップの排出が確定",
       "unknown_3_star": "不明の3★",
-      "rarity": "",
-      "total": "",
-      "percent": "",
-      "pityAverage": ""
+      "rarity": "レア度",
+      "total": "合計",
+      "percent": "百分率",
+      "pityAverage": "天井カウント数の平均"
     },
     "tally": {
       "title": "全世界の祈願統計",
@@ -447,12 +447,12 @@
       "detail": "詳細"
     },
     "summary": {
-      "total": "",
-      "percent": "",
-      "pityAverage": "",
-      "character": "",
-      "weapon": "",
-      "winRateOff": ""
+      "total": "合計",
+      "percent": "百分率",
+      "pityAverage": "天井カウント数の平均",
+      "character": "キャラクター",
+      "weapon": "武器",
+      "winRateOff": "排出"
     },
     "note": [
       "祈願履歴は自動的に更新されません。新しい記録がある場合はもう一度インポートしてください！",
@@ -469,7 +469,7 @@
       "desc": "もし、ブラウザのキャッシュが削除されてしまいましたら、祈願履歴が消えます！設定メニューでデータをダウンロードするか、Googleドライブ同期を有効したり、データをバックアップしたりすることができます。"
     },
     "rank": {
-      "title": "あなたの全世界ランク",
+      "title": "あなたの全世界ランキング",
       "level": "あなたの祈願合計のランキング",
       "based": "全世界の祈願統計に基づく",
       "current": "{banner} における祈願の中央値は{median} 回です",
@@ -479,14 +479,15 @@
       "totalPull": "祈願回数の合計",
       "luck5": "5★ 運の良さ",
       "luck4": "4★ 運の良さ",
+      "luckWinRateOff": "1回目天井に排出 運の良さ",
       "medianTotal": "全世界における祈願回数の中央値 {median} 回",
       "medianLuck": "全世界の中央値 {median}%",
       "moreTotal": "{percentage}%のpaimon.moeのユーザーより祈願回数が多いです。",
       "lessTotal": "{percentage}%のpaimon.moeのユーザーより祈願回数が少ないです。",
       "moreLuck": "{percentage}%のpaimon.moeのユーザーより運が良いです。",
       "lessLuck": "{percentage}%のpaimon.moeのユーザーより運が悪いです。",
-      "top": "",
-      "bottom": ""
+      "top": "上位",
+      "bottom": "下位"
     }
   },
   "calculator": {
@@ -692,19 +693,19 @@
     "or": "や",
     "thanks": "へ連絡してください😁！",
     "credits": {
-      "title": "",
+      "title": "謝辞",
       "items": [
         {
-          "name": "",
-          "value": ""
+          "name": "データと画像",
+          "value": "原神 Wiki"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "統計データ",
+          "value": "Dimbreathさんによる原神データ"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "天然樹脂のドロップ率計算",
+          "value": "データ収集 Discord"
         }
       ]
     },
@@ -772,15 +773,15 @@
       "または",
       "paimon-moe Github"
     ],
-    "subtitleAd": "",
+    "subtitleAd": "広告について",
     "ad": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "このサイトをサポートするため、第三者配信を利用しています。第三者配信による広告を提供されることがあります。",
+      "事業者様の",
+      " プライバシーポリシー",
+      "と",
+      "Cookieポリシー",
+      "はこちらへ確認することができます。Cookieを管理することには",
+      "こちらへ"
     ]
   },
   "sync": {
@@ -793,7 +794,8 @@
     "useLocalData": "このブラウザのデータを使用する",
     "download": "両方のデータをダウンロードする",
     "lastModified": "最終更新日時",
-    "or": "または"
+    "or": "または",
+    "smallSizeWarning": ""
   },
   "footer": {
     "affliate": "Paimon.moe は HoYoverse とは関係ありません。",
@@ -802,13 +804,13 @@
     "community": "コミュニティリンク",
     "official": "公式リンク",
     "link": {
-      "github": "",
-      "discord": "",
-      "devTwitter": "",
-      "reddit": "",
-      "facebook": "",
-      "cookieSettings": "",
-      "privacyPolicy": ""
+      "github": "GitHub",
+      "discord": "Discord",
+      "devTwitter": "開発者のTwitter",
+      "reddit": "Reddit",
+      "facebook": "Facebook",
+      "cookieSettings": "Cookieの設定",
+      "privacyPolicy": "プライバシーポリシー"
     }
   },
   "donate": {
@@ -873,7 +875,7 @@
     "corridor": "回廊",
     "inventoryButton": "倉庫",
     "listButton": "リスト",
-    "selectCharacter": "",
+    "selectCharacter": "キャラクターを選択...",
     "inventory": {
       "title": "家具倉庫",
       "subtitle": "壁など一部の特殊なカテゴリは表示されません",
@@ -927,11 +929,15 @@
     "artifact": "聖遺物",
     "setPiece": "{piece} セット効果",
     "recommendedCharacter": "{piece} セット効果が推奨されるキャラクター",
-    "18ATKSet": "",
-    "20EnergyRechargeSet": "",
-    "sands": "",
-    "goblet": "",
-    "circlet": ""
+    "18ATKSet": "+18% 攻撃力セット",
+    "20EnergyRechargeSet": "20% 元素チャージ効率セット",
+    "25PhysicalDmgSet": "物理ダメージ +25%セット",
+    "sands": "時の砂",
+    "goblet": "空の杯",
+    "circlet": "理の冠",
+    "choose2": "2つのセットを選択してください",
+    "pieceStat": "この {piece} のメインステータスを使用できるかもしれないキャラクター",
+    "pieceInfo": "聖遺物をクリックしてキャラクターに推奨するメインステータスを表示します"
   },
   "fishing": {
     "title": "釣りリスト",
@@ -940,6 +946,7 @@
     "liyue": "璃月",
     "inazuma": "稲妻",
     "enkanomiya": "淵下宮",
+    "chasm": "",
     "setEmpty": "釣り場を空にする",
     "emptyTime": "釣り場が空になった時刻：",
     "clear": "クリア",

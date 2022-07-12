@@ -117,12 +117,12 @@
     "build": "Build",
     "source": "Community Character Builds de la Genshin Helper Team",
     "faq": "Le nombre de constellations est calculé à partir de vos données d'Historique de Vœux. Si votre ancien historique de souhaits a déjà disparu ou si vous avez obtenu le personnage depuis la boutique ou lors d'un événement, le nombre pourrait ne pas être exact ! Mais vous pouvez le modifier manuellement en appuyant sur l'icône de crayon à côté du nom du personnage.",
-    "mainStats": "",
-    "subStats": "",
-    "talentPriority": "",
-    "abilityTip": "",
-    "weapons": "",
-    "artifacts": ""
+    "mainStats": "STATS PRINCIPALES",
+    "subStats": "SOUS STATS",
+    "talentPriority": "PRIORITÉ DES APTITUDES",
+    "abilityTip": "CONSEIL D'APTITUDE",
+    "weapons": "ARMES",
+    "artifacts": "ARTÉFACTS"
   },
   "wish": {
     "title": "Compteur de voeux",
@@ -396,7 +396,7 @@
           "Vous pouvez aussi cliquer sur le bouton",
           "pour éditer les valeurs manuellement !"
         ],
-        "p6": ""
+        "p6": "Cliquez sur la flèche du bas pour voir les détails de vos tirages. Une popup s'affichera quand vous obtiendrez un 5★ ou un 4★. Vous pouvez également ajouter ou éditer le tableau manuellement."
       }
     },
     "types": {
@@ -419,10 +419,10 @@
       "loading": "Chargement... (Si cela ne charge pas, changez le serveur sur la page des paramètres)",
       "guaranteed": "Le prochain {rarity}★ sera forcément le personnage ou arme en tête de bannière",
       "unknown_3_star": "Inconnu",
-      "rarity": "",
-      "total": "",
-      "percent": "",
-      "pityAverage": ""
+      "rarity": "Rareté",
+      "total": "Total",
+      "percent": "Pourcent",
+      "pityAverage": "Pity moyenne"
     },
     "tally": {
       "title": "Voeux globaux",
@@ -447,12 +447,12 @@
       "detail": "Détails"
     },
     "summary": {
-      "total": "",
-      "percent": "",
-      "pityAverage": "",
-      "character": "",
-      "weapon": "",
-      "winRateOff": ""
+      "total": "Total",
+      "percent": "Pourcent",
+      "pityAverage": "Pity MOY",
+      "character": "Personnage",
+      "weapon": "Arme",
+      "winRateOff": "Gagne le 50:50"
     },
     "note": [
       "L'Historique de Vœux n'est pas mis à jour automatiquement, veuillez importer à nouveau pour mettre à jour votre historique !",
@@ -479,14 +479,15 @@
       "totalPull": "Total des tirages",
       "luck5": "Chance 5★",
       "luck4": "Chance 4★",
+      "luckWinRateOff": "Chance de Gain de 50/50",
       "medianTotal": "Médiane mondiale {median} tirages",
       "medianLuck": "Médiane mondiale {median}%",
       "moreTotal": "Plus de tirages que {percentage}% des utilisateurs de paimon.moe",
       "lessTotal": "Moins de tirages que {percentage}% des utilisateurs de paimon.moe",
       "moreLuck": "Plus chanceux que {percentage}% des utilisateurs de paimon.moe",
       "lessLuck": "Moins chanceux que {percentage}% des utilisateurs de paimon.moe",
-      "top": "",
-      "bottom": ""
+      "top": "TOP",
+      "bottom": "DERNIERS"
     }
   },
   "calculator": {
@@ -692,19 +693,19 @@
     "or": "ou",
     "thanks": "Merci 😁!",
     "credits": {
-      "title": "",
+      "title": "Crédits",
       "items": [
         {
-          "name": "",
-          "value": ""
+          "name": "Donnée et images",
+          "value": "Wiki Genshin Impact"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "Données des statistiques",
+          "value": "Données Genshin de Dimbreath"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "Taux d'obtention pour le calcul de la résine",
+          "value": "Collecte de données Discord"
         }
       ]
     },
@@ -772,15 +773,15 @@
       "et",
       "paimon-moe Github"
     ],
-    "subtitleAd": "",
+    "subtitleAd": "Publicités",
     "ad": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Nous utilisons des publicités tierces pour soutenir notre site. Certains de ces annonceurs peuvent être fournis par notre annonceur tiers.",
+      "Vous pouvez voir leur",
+      " politique de confidentialité",
+      "et",
+      "politique des cookie",
+      "ici. Vous pouvez gérer vos cookies",
+      "ici"
     ]
   },
   "sync": {
@@ -793,7 +794,8 @@
     "useLocalData": "Utiliser les données du navigateur",
     "download": "Télécharger toutes les données",
     "lastModified": "Dernière modification",
-    "or": "ou"
+    "or": "ou",
+    "smallSizeWarning": ""
   },
   "footer": {
     "affliate": "Paimon.moe n'est pas affilié à HoYoverse.",
@@ -802,13 +804,13 @@
     "community": "Liens de la communauté",
     "official": "Liens officiels",
     "link": {
-      "github": "",
-      "discord": "",
-      "devTwitter": "",
-      "reddit": "",
-      "facebook": "",
-      "cookieSettings": "",
-      "privacyPolicy": ""
+      "github": "GitHub",
+      "discord": "Discord",
+      "devTwitter": "Dév Twitter",
+      "reddit": "Reddit",
+      "facebook": "Facebook",
+      "cookieSettings": "Paramètres des cookies",
+      "privacyPolicy": "Politique de confidentialité"
     }
   },
   "donate": {
@@ -873,7 +875,7 @@
     "corridor": "Couloir",
     "inventoryButton": "Inventaire",
     "listButton": "Liste",
-    "selectCharacter": "",
+    "selectCharacter": "Selectionnez un personnage...",
     "inventory": {
       "title": "Inventaire des décorations",
       "subtitle": "Certaines catégories spéciales comme les murs ne sont pas affichées",
@@ -927,11 +929,15 @@
     "artifact": "Artéfact",
     "setPiece": "Bonus du set de {piece} pièce(s)",
     "recommendedCharacter": "Personnages recommandés pour le set de {piece} pièce(s)",
-    "18ATKSet": "",
-    "20EnergyRechargeSet": "",
-    "sands": "",
-    "goblet": "",
-    "circlet": ""
+    "18ATKSet": "Set ATQ +18%",
+    "20EnergyRechargeSet": "Set Recharge d'Énergie 20%",
+    "25PhysicalDmgSet": "Set +25% DMG physiques",
+    "sands": "SABLES",
+    "goblet": "COUPE",
+    "circlet": "DIADÈME",
+    "choose2": "Choisir 2",
+    "pieceStat": "Personnage qui peut utiliser cette {piece} pièce avec cette statistique principale :",
+    "pieceInfo": "Cliquez sur l'image de l'artéfact pour voir les statistiques principales recommandées pour le personnage"
   },
   "fishing": {
     "title": "Recueil de pêche",
@@ -940,6 +946,7 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
+    "chasm": "",
     "setEmpty": "Définir comme vide",
     "emptyTime": "Temps où la case est vide :",
     "clear": "Effacer",

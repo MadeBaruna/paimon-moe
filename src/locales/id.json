@@ -794,7 +794,8 @@
     "useLocalData": "Gunakan Data Dari Browser Ini",
     "download": "Download Kedua Data",
     "lastModified": "Terakhir dimodifikasi",
-    "or": "ATAU"
+    "or": "ATAU",
+    "smallSizeWarning": "HATI-HATI, UKURAN FILE NYA JAUH LEBIH KECIL!"
   },
   "footer": {
     "affliate": "Paimon.moe tidak berafiliasi dengan HoYoverse.",
@@ -930,9 +931,13 @@
     "recommendedCharacter": "Rekomendasi Karakter {piece} Set",
     "18ATKSet": "Set +18% ATK",
     "20EnergyRechargeSet": "Set 20% Energy Recharge",
+    "25PhysicalDmgSet": "Set Physical DMG +25%",
     "sands": "SANDS",
     "goblet": "GOBLET",
-    "circlet": "CIRCLET"
+    "circlet": "CIRCLET",
+    "choose2": "Pilih 2",
+    "pieceStat": "Karakter yang mungkin bisa memakai {piece} dengan stat utama:",
+    "pieceInfo": "Klik gambar artifak untuk melihat rekomendasi main stat karakter"
   },
   "fishing": {
     "title": "Buku Memancing",
@@ -941,6 +946,7 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
+    "chasm": "Chasm",
     "setEmpty": "Set sebagai kosong",
     "emptyTime": "Waktu ketika spot nya kosong:",
     "clear": "Hapus",

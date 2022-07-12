@@ -479,6 +479,7 @@
       "totalPull": "총 기원",
       "luck5": "행운 5★",
       "luck4": "행운 4★",
+      "luckWinRateOff": "",
       "medianTotal": "전세계 중앙값 뽑기 {median}회",
       "medianLuck": "전세계 중앙값 {median}%",
       "moreTotal": "전체 paimon.moe 유저의 {percentage}%보다 많은 뽑기 횟수",
@@ -793,7 +794,8 @@
     "useLocalData": "현재 브라우저에 저장된 데이터 사용",
     "download": "둘 다 다운로드",
     "lastModified": "마지막 변경",
-    "or": "또는"
+    "or": "또는",
+    "smallSizeWarning": ""
   },
   "footer": {
     "affliate": "Paimon.moe는 HoYoverse와 연관이 없습니다.",
@@ -929,9 +931,13 @@
     "recommendedCharacter": "추천 캐릭터 {piece} 세트",
     "18ATKSet": "",
     "20EnergyRechargeSet": "",
+    "25PhysicalDmgSet": "",
     "sands": "",
     "goblet": "",
-    "circlet": ""
+    "circlet": "",
+    "choose2": "",
+    "pieceStat": "",
+    "pieceInfo": ""
   },
   "fishing": {
     "title": "낚시 사전",
@@ -940,6 +946,7 @@
     "liyue": "리유에",
     "inazuma": "이나즈마",
     "enkanomiya": "연하궁",
+    "chasm": "",
     "setEmpty": "비어있음으로 설정",
     "emptyTime": "이 자리가 비워진 시간:",
     "clear": "삭제",

@@ -479,6 +479,7 @@
       "totalPull": "",
       "luck5": "",
       "luck4": "",
+      "luckWinRateOff": "",
       "medianTotal": "",
       "medianLuck": "",
       "moreTotal": "",
@@ -793,7 +794,8 @@
     "useLocalData": "Lokale Daten des Browsers verwenden",
     "download": "Beide Daten herunterladen",
     "lastModified": "Zuletzt geändert",
-    "or": "ODER"
+    "or": "ODER",
+    "smallSizeWarning": ""
   },
   "footer": {
     "affliate": "Paimon.moe ist nicht mit HoYoverse zugehörig.",
@@ -929,9 +931,13 @@
     "recommendedCharacter": "Empfohlene Figuren {piece} Set",
     "18ATKSet": "",
     "20EnergyRechargeSet": "",
+    "25PhysicalDmgSet": "",
     "sands": "",
     "goblet": "",
-    "circlet": ""
+    "circlet": "",
+    "choose2": "",
+    "pieceStat": "",
+    "pieceInfo": ""
   },
   "fishing": {
     "title": "Angelfangbuch",
@@ -940,6 +946,7 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
+    "chasm": "",
     "setEmpty": "Leer setzen",
     "emptyTime": "Uhrzeit, wenn der Angelplatz geleert wurde:",
     "clear": "Löschen",

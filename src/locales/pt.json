@@ -479,6 +479,7 @@
       "totalPull": "",
       "luck5": "",
       "luck4": "",
+      "luckWinRateOff": "",
       "medianTotal": "",
       "medianLuck": "",
       "moreTotal": "",
@@ -793,7 +794,8 @@
     "useLocalData": "Usar Dados Locais Deste Navegador",
     "download": "Baixar Ambos os Dados",
     "lastModified": "Última modificação",
-    "or": "ou"
+    "or": "ou",
+    "smallSizeWarning": ""
   },
   "footer": {
     "affliate": "Paimon.moe não está afiliada com a HoYoverse.",
@@ -929,9 +931,13 @@
     "recommendedCharacter": "Personagens recomendados {piece} peças",
     "18ATKSet": "",
     "20EnergyRechargeSet": "",
+    "25PhysicalDmgSet": "",
     "sands": "",
     "goblet": "",
-    "circlet": ""
+    "circlet": "",
+    "choose2": "",
+    "pieceStat": "",
+    "pieceInfo": ""
   },
   "fishing": {
     "title": "Livro de Pesca",
@@ -940,6 +946,7 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
+    "chasm": "",
     "setEmpty": "Marcar como vazio",
     "emptyTime": "Tempo em que o local foi esvaziado:",
     "clear": "Limpar",
