@@ -8,6 +8,34 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre class="text-white px-4 md:px-8">
+2022/07/13
+- Add Heizou
+- Various data update
+- Various bug fixes
+
+2022/06/28
+- Add Rate off summary on wish counter page
+
+2022/06/21
+- Add Kuki Shinobu
+- Update timeline
+- Localization on character build weapon and artifact
+- Adjust pity color on weapon banner
+- Auto hide beginner wish if empty
+
+2022/06/12
+- Add luckiness rate on wish counter
+
+2022/06/08
+- Add radiant spincrystal tracker
+- Add reduced load value on furnishing
+- Add pull by day on global wish stats
+- Adjust sidebar on smaller screen
+- More localization update
+
+2022/06/01
+- Add ability to swap main account
+
 2022/06/01
 - Add ability to swap main account
 
