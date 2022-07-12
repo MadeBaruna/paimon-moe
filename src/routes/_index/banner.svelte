@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    arataki_itto: {
-      name: 'Arataki Itto',
-      rarity: 'legendary',
-      count: 0,
-      average: '...',
-      percentage: '...',
-    },
-    kuki_shinobu: {
-      name: 'Kuki Shinobu',
+    shikanoin_heizou: {
+      name: 'Heizou',
       rarity: 'rare',
       count: 0,
       average: '...',
       percentage: '...',
     },
+    kaedehara_kazuha: {
+      name: 'Kazuha',
+      rarity: 'legendary',
+      count: 0,
+      average: '...',
+      percentage: '...',
+    },
   };
-  const bannerId = 300031;
-  const image = 'itto_kuki.png';
+  const bannerId = 300032;
+  const image = 'kazuha_heizo.png';
   const width = 800;
-  const height = 464;
+  const height = 488;
 
   let loading = true;
   let user = '';
