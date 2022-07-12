@@ -145,7 +145,7 @@ export const eventsData = [
       showOnHome: true,
     },
     {
-      name: 'Leaves in the Wind - Klee Banner',
+      name: 'Sparkling Steps - Klee Banner',
       pos: '35% 25%',
       zoom: '200%',
       image: 'sparkling_steps_3.jpg',
