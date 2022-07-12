@@ -139,4 +139,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Leaves in the Wind 2': [
+    {
+      name: 'Leaves in the Wind',
+      image: 2,
+      shortName: 'Kazuha',
+      start: '2022-07-13 06:00:00',
+      end: '2022-08-02 17:59:59',
+      color: '#7edec3',
+      featured: ['kaedehara_kazuha', 'klee'],
+      featuredRare: ['ningguang', 'thoma', 'shikanoin_heizou'],
+      timezoneDependent: true,
+    },
+    {
+      name: 'Sparkling Steps',
+      image: 3,
+      shortName: 'Klee',
+      start: '2022-07-13 06:00:00',
+      end: '2022-08-02 17:59:59',
+      color: '#ff7763',
+      featured: ['kaedehara_kazuha', 'klee'],
+      featuredRare: ['ningguang', 'thoma', 'shikanoin_heizou'],
+      timezoneDependent: true,
+    },
+  ],
 };
