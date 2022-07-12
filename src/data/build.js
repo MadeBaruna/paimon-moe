@@ -2981,6 +2981,24 @@ export const builds = {
       },
     },
   },
+  shikanoin_heizou: {
+    roles: {
+      SUPPORT: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: [],
+          goblet: [],
+          circlet: [],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
   traveler_anemo: {
     roles: {
       'ANEMO DPS': {

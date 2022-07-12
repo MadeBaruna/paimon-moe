@@ -8026,4 +8026,63 @@ export const weaponList = {
       },
     ],
   },
+  kagotsurube_isshin: {
+    name: 'Kagotsurube Isshin',
+    id: 'kagotsurube_isshin',
+    rarity: 4,
+    atk: 42,
+    secondary: 'ATK',
+    type: weapons.sword,
+    source: 'Story Quest',
+    ascension: [
+      {
+        items: [
+          { item: itemList.mask_of_the_wicked_lieutenant, amount: 3 },
+          { item: itemList.gloomy_statuette, amount: 3 },
+          { item: itemList.spectral_husk, amount: 2 },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 3 },
+          { item: itemList.gloomy_statuette, amount: 12 },
+          { item: itemList.spectral_husk, amount: 8 },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_tigers_bite, amount: 6 },
+          { item: itemList.dark_statuette, amount: 6 },
+          { item: itemList.spectral_heart, amount: 6 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 3 },
+          { item: itemList.dark_statuette, amount: 12 },
+          { item: itemList.spectral_heart, amount: 9 },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_one_horned, amount: 6 },
+          { item: itemList.deathly_statuette, amount: 9 },
+          { item: itemList.spectral_nucleus, amount: 6 },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          { item: itemList.mask_of_the_kijin, amount: 4 },
+          { item: itemList.deathly_statuette, amount: 18 },
+          { item: itemList.spectral_nucleus, amount: 12 },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };

@@ -5079,6 +5079,151 @@ export const characters = {
     },
     element: elements.cryo,
   },
+  shikanoin_heizou: {
+    id: 'shikanoin_heizou',
+    name: 'Shikanoin Heizou',
+    rarity: 4,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 10657,
+      atk: 225,
+      def: 684,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.onikabuto,
+            amount: 3,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 2,
+          },
+          {
+            item: itemList.onikabuto,
+            amount: 10,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 4,
+          },
+          {
+            item: itemList.onikabuto,
+            amount: 20,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 8,
+          },
+          {
+            item: itemList.onikabuto,
+            amount: 30,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 12,
+          },
+          {
+            item: itemList.onikabuto,
+            amount: 45,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.runic_fang,
+            amount: 20,
+          },
+          {
+            item: itemList.onikabuto,
+            amount: 60,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.treasure_hoarder_insignia, itemList.silver_raven_insignia, itemList.golden_raven_insignia],
+      book: [itemList.teachings_of_transience, itemList.guide_to_transience, itemList.philosophies_of_transience],
+      boss: itemList.the_meaning_of_aeons,
+    },
+    element: elements.anemo,
+  },
   sucrose: {
     id: 'sucrose',
     name: 'Sucrose',
