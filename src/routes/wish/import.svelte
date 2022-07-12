@@ -510,7 +510,11 @@
         }
 
         latestLegendary = combined[i];
-        combined[i].pity = legendary;
+
+        if (combined[i].manualInput !== true) {
+          combined[i].pity = legendary;
+        }
+
         legendary = 0;
         // rare = 0;
       } else if (rarity === 4) {
@@ -531,7 +535,11 @@
         }
 
         latestRare = combined[i];
-        combined[i].pity = rare;
+
+        if (combined[i].manualInput !== true) {
+          combined[i].pity = rare;
+        }
+
         rare = 0;
       } else {
         combined[i].pity = 1;
