@@ -761,7 +761,8 @@
     "useLocalData": "Use Local Browser Data",
     "download": "Download Both Data",
     "lastModified": "Last modified",
-    "or": "OR"
+    "or": "OR",
+    "smallSizeWarning": "CAREFUL, THE SIZE IS MUCH SMALLER!"
   },
   "footer": {
     "affliate": "Paimon.moe is not affiliated with HoYoverse.",

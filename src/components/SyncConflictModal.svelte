@@ -51,6 +51,9 @@
     <span>- {numberFormat.format(remoteSize)} KB</span>
   </p>
   <p class="text-gray-400 mt-1">{$t('sync.lastModified')}: {remoteFormatted}</p>
+  {#if remoteSize / localSize < 0.3}
+    <p class="text-red-400 font-bold mt-1">{$t('sync.smallSizeWarning')}</p>
+  {/if}
   <Button disabled={loading} className="mt-2 w-full" on:click={useRemoteData}>
     <Icon path={loading ? mdiLoading : mdiDownload} spin={loading} className="mr-1" />{$t('sync.useGoogleDriveData')}
   </Button>
@@ -66,6 +69,9 @@
     <span>- {numberFormat.format(localSize)} KB</span>
   </p>
   <p class="text-gray-400 mt-1">{$t('sync.lastModified')}: {localFormatted}</p>
+  {#if localSize / remoteSize < 0.3}
+    <p class="text-red-400 font-bold mt-1">{$t('sync.smallSizeWarning')}</p>
+  {/if}
   <Button disabled={loading} className="mt-2 w-full" on:click={useLocalData}>
     <Icon path={loading ? mdiLoading : mdiUpload} spin={loading} className="mr-1" />{$t('sync.useLocalData')}
   </Button>
