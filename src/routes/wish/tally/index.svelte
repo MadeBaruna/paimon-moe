@@ -7,6 +7,7 @@
   import { t } from 'svelte-i18n';
   import Ad from '../../../components/Ad.svelte';
   import Icon from '../../../components/Icon.svelte';
+  import Button from '../../../components/Button.svelte';
   import Select from '../../../components/Select.svelte';
   import { banners } from '../../../data/banners';
   import { bannersDual } from '../../../data/bannersDual';
@@ -75,6 +76,8 @@
   let id = typeNumber[type] + selectedBanner.value + 1;
 
   let loading = true;
+  let loadingCons = true;
+  let hidePullByDay = false;
   let featuredValues = [];
   let legendary = {
     total: 0,
@@ -90,9 +93,13 @@
   let worth = 0;
   let legendaryList = [];
   let rareList = [];
+  let itemRarity = {};
+  let consData;
 
   let chart;
   let chart2;
+  let chart3;
+  let constChart;
   let chartPullByDay;
 
   let error;
@@ -133,6 +140,7 @@
   async function getData() {
     error = undefined;
     loading = true;
+    loadingCons = true;
 
     const url = new URL(`${__paimon.env.API_HOST}/wish`);
     const query = new URLSearchParams({ banner: id });
@@ -153,6 +161,7 @@
       const data = await res.json();
 
       const values = [0, 0];
+      const cutoff = (0.2 / 100) * data.total.rare;
 
       legendaryList = [];
       rareList = [];
@@ -164,8 +173,10 @@
           if (character.rarity === 5) {
             legendaryList = [...legendaryList, feat];
             values[0] += feat.count;
+            itemRarity[feat.name] = 5;
           } else {
-            rareList = [...rareList, feat];
+            itemRarity[feat.name] = 4;
+            if (feat.count >= cutoff) rareList = [...rareList, feat];
           }
         } else if (feat.type === 'weapon') {
           const weapon = weaponList[feat.name];
@@ -173,8 +184,10 @@
           if (weapon.rarity === 5) {
             legendaryList = [...legendaryList, feat];
             values[1] += feat.count;
+            itemRarity[feat.name] = 5;
           } else {
-            rareList = [...rareList, feat];
+            itemRarity[feat.name] = 4;
+            if (feat.count >= cutoff) rareList = [...rareList, feat];
           }
         }
       }
@@ -240,6 +253,10 @@
 
       loading = false;
       await tick();
+      if (Object.keys(data).length > 0) {
+        consData = data.constellation;
+        showDataCons();
+      }
 
       Chart.defaults.global.defaultFontColor = '#ffffff';
       Chart.defaults.global.defaultFontFamily = 'Poppins';
@@ -383,10 +400,95 @@
           },
         },
       });
+
+      if (data.pullByDay.length === 0) hidePullByDay = true;
     } catch (err) {
       console.error(err);
       error = err;
     }
+  }
+
+  async function showDataCons(rarity) {
+    const dataLabel = ['C0', 'C1', 'C2', 'C3', 'C4', 'C5', 'C6', '>C6'];
+    const bgColor = ['#DDDDDD', '#F24A72', '#FDAF75', '#EAEA7F', '#6CC4A1', '#4D96FF', '#FF6FB5', '#AB46D2'];
+    const datasets = [];
+    for (let i = 0; i < 8; i++) {
+      datasets.push({
+        label: dataLabel[i],
+        data: [],
+        backgroundColor: bgColor[i],
+        borderWidth: 0,
+      });
+    }
+
+    let sorted = Object.entries(consData)
+      .map((e) => [...e, e[1].reduce((prev, cur) => prev + cur, 0)])
+      .sort((a, b) => b[2] - a[2]);
+
+    if (rarity !== undefined) {
+      sorted = sorted.filter((e) => itemRarity[e[0]] === rarity);
+    }
+
+    const labels = [];
+    const maxValue = sorted[0][2];
+    const cutoff4 = (0.2 / 100) * rare.total;
+    const cutoff5 = (0.2 / 100) * legendary.total;
+    for (const [name, count, total] of sorted) {
+      if (itemRarity[name] === 5 && total < cutoff5) continue;
+      if (itemRarity[name] === 4 && total < cutoff4) continue;
+      labels.push(name);
+
+      for (let i = 0; i < 8; i++) {
+        const e = count[i] || 0;
+        datasets[i].data.push((e / maxValue) * 100);
+      }
+    }
+
+    loadingCons = false;
+    await tick();
+
+    if (constChart) constChart.destroy();
+    constChart = new Chart(chart3, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets,
+      },
+      options: {
+        tooltips: {
+          mode: 'index',
+        },
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          xAxes: [
+            {
+              stacked: true,
+            },
+          ],
+          yAxes: [
+            {
+              ticks: {
+                min: 0,
+                max: 100,
+              },
+              stacked: true,
+            },
+          ],
+        },
+        tooltips: {
+          mode: 'index',
+          intersect: false,
+          callbacks: {
+            label: (tooltipItem) => {
+              return `${dataLabel[tooltipItem.datasetIndex]}: ${numberFormat.format(tooltipItem.value)}% (${
+                sorted[tooltipItem.index][1][tooltipItem.datasetIndex] || 0
+              })`;
+            },
+          },
+        },
+      },
+    });
   }
 
   onMount(() => {
@@ -589,12 +691,26 @@
             </table>
           </div>
         </div>
-        <div class="bg-background rounded-xl p-4 relative mb-4" style="height: 200px; width: 100%;">
-          <canvas bind:this={chartPullByDay} />
-        </div>
+        {#if !hidePullByDay}
+          <div class="bg-background rounded-xl p-4 relative mb-4" style="height: 200px; width: 100%;">
+            <canvas bind:this={chartPullByDay} />
+          </div>
+        {/if}
         <div class="bg-background rounded-xl p-4 relative mb-4" style="height: 200px; width: 100%;">
           <canvas bind:this={chart} />
         </div>
+        {#if !loadingCons}
+          <div class="bg-background rounded-xl p-4 relative mb-4" style="width: 100%;">
+            <div style="height: 400px; width: 100%;">
+              <canvas bind:this={chart3} />
+            </div>
+            <div>
+              <Button size="sm" on:click={() => showDataCons(5)}>5★</Button>
+              <Button size="sm" on:click={() => showDataCons(4)}>4★</Button>
+              <Button size="sm" on:click={() => showDataCons()}>Show All</Button>
+            </div>
+          </div>
+        {/if}
         <div class="flex flex-col xl:flex-row xl:space-x-4">
           <div class="bg-background rounded-xl p-4 relative mb-4 flex-1" style="height: fit-content;">
             <p class="font-bold text-legendary-from text-center mb-2">5★ List</p>
@@ -610,13 +726,13 @@
                   <td class="py-1 border-t border-gray-700">
                     <img
                       src="/images/{item.type}s/{item.name}.png"
-                      alt={item.name}
+                      alt={item.fullname}
                       class="h-8 w-8"
                       style="min-width: 2rem;"
                     />
                   </td>
                   <td class="text-white px-4 py-1 border-t border-gray-700">
-                    {item.fullname}
+                    {$t(item.fullname)}
                   </td>
                   <td
                     class="text-gray-200 text-right pr-4 py-1 font-bold border-t border-gray-700"
@@ -656,13 +772,13 @@
                   <td class="py-1 border-t border-gray-700">
                     <img
                       src="/images/{item.type}s/{item.name}.png"
-                      alt={item.name}
+                      alt={item.fullname}
                       class="h-8 w-8"
                       style="min-width: 2rem;"
                     />
                   </td>
                   <td class="text-white px-4 py-1 border-t border-gray-700">
-                    {item.fullname}
+                    {$t(item.fullname)}
                   </td>
                   <td
                     class="text-gray-200 text-right pr-4 py-1 font-bold border-t border-gray-700"
