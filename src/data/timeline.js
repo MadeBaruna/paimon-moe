@@ -90,7 +90,7 @@ export const eventsData = [
       start: '2022-07-15 10:00:00',
       end: '2022-08-24 06:00:00',
       color: '#7eebff',
-      url: 'https://www.hoyolab.com/article/5916190',
+      url: 'https://www.hoyolab.com/article/5958494',
       showOnHome: true,
     },
   ],
@@ -310,7 +310,7 @@ export const eventsData = [
       timezoneDependent: true,
     },
     {
-      name: 'Battle Pass - Gorge Sunset',
+      name: 'Battle Pass - Azure Main',
       pos: '0% 12%',
       image: 'azure_main.jpg',
       start: '2022-07-13 06:00:00',
