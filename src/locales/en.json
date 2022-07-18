@@ -430,7 +430,8 @@
       "pityAverage": "Pity AVG",
       "character": "Character",
       "weapon": "Weapon",
-      "winRateOff": "Win 50:50"
+      "winRateOff": "Win 50:50",
+      "winRateOffWeapon": "Win 75:25"
     },
     "note": [
       "Wish history is not updated automatically, please import again to update your history!",

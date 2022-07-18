@@ -51,7 +51,7 @@
     {#if avg.legendary.rateOff !== undefined}
       <tr>
         <td class="text-legendary-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
-          └ {$t('wish.summary.winRateOff')}
+          └ {$t(type.id === 'weapon-event' ? 'wish.summary.winRateOffWeapon' : 'wish.summary.winRateOff')}
         </td>
         <td class="text-legendary-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
           {numberFormat.format(avg.legendary.rateOff.total)}
