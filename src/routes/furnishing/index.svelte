@@ -9,14 +9,17 @@
 <script>
   import { locale, t } from 'svelte-i18n';
   import debounce from 'lodash/debounce';
+  import { mdiCheckCircleOutline, mdiClose } from '@mdi/js';
 
   import Button from '../../components/Button.svelte';
   import CharacterSelect from '../../components/CharacterSelect.svelte';
-  import { onMount } from 'svelte';
+  import { getContext, onMount } from 'svelte';
   import Icon from '../../components/Icon.svelte';
-  import { mdiCheckCircleOutline, mdiClose } from '@mdi/js';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
+  import CalculateModal from './_calculateModal.svelte';
+
+  const { open: openModal } = getContext('simple-modal');
 
   export let data;
   export let setsData;
@@ -51,6 +54,7 @@
 
     for (const set of setsData.sort((a, b) => b.gift - a.gift)) {
       set.enough = {};
+      set.needed = {};
       set.canBePlaced = true;
 
       for (const [item, amount] of Object.entries(set.items)) {
@@ -59,6 +63,7 @@
           enough = saved[item] >= amount;
         }
 
+        set.needed[item] = amount - (saved[item] || 0);
         set.enough[item] = enough;
         if (!enough) set.canBePlaced = false;
       }
@@ -101,6 +106,20 @@
     if (savedSetCharacters !== null) {
       character = savedSetCharacters;
     }
+  }
+
+  function calculate(index) {
+    openModal(
+      CalculateModal,
+      {
+        set: sets[index],
+        furnishing: data,
+      },
+      {
+        closeButton: false,
+        styleWindow: { background: '#25294A', width: '400px' },
+      },
+    );
   }
 
   async function changeLocale(locale) {
@@ -156,16 +175,13 @@
       ※ {$t('furnishing.sets.subtitle')}
     </p>
     <div class="w-full md:w-64">
-      <CharacterSelect
-        bind:selected={charFilter}
-        placeholder={$t('furnishing.selectCharacter')}
-      />
+      <CharacterSelect bind:selected={charFilter} placeholder={$t('furnishing.selectCharacter')} />
     </div>
     <div
       class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-2 flex-1 mt-2"
       style="height: fit-content;"
     >
-      {#each sets as set (set.id)}
+      {#each sets as set, i (set.id)}
         {#if charFilter === null || (charFilter !== null && set.characters && set.characters.includes(charFilter.id))}
           <div class="text-white p-2 rounded-xl flex flex-col bg-item">
             <div class="w-full flex items-center justify-center relative">
@@ -247,6 +263,9 @@
                 {/each}
               </div>
               <div class="flex-1" />
+              <Button className="mt-2" on:click={() => calculate(i)}>
+                {$t('furnishing.sets.calculate')}
+              </Button>
               <Button className="mt-2" disabled={!set.canBePlaced} on:click={() => place(set.id)}>
                 {placed[set.id] ? $t('furnishing.sets.setUnplaced') : $t('furnishing.sets.setPlaced')}
               </Button>

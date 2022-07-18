@@ -857,7 +857,9 @@
       "setUnplaced": "Set as unplaced",
       "inInventory": "In inventory",
       "available": "Available",
-      "used": "Used in other set"
+      "used": "Used in other set",
+      "calculate": "Calculate Materials",
+      "exludeOwned": "Exclude owned furniture"
     }
   },
   "weapon": {
