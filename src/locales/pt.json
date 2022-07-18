@@ -452,7 +452,8 @@
       "pityAverage": "",
       "character": "",
       "weapon": "",
-      "winRateOff": ""
+      "winRateOff": "",
+      "winRateOffWeapon": ""
     },
     "note": [
       "O histórico de orações não é atualizado automaticamente, por favor, importe novamente para atualizar o seu histórico!",
@@ -889,7 +890,9 @@
       "setUnplaced": "Definir como não colocado",
       "inInventory": "No inventário",
       "available": "Disponível",
-      "used": "Usado em outro conjunto"
+      "used": "Usado em outro conjunto",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {

@@ -452,7 +452,8 @@
       "pityAverage": "",
       "character": "",
       "weapon": "",
-      "winRateOff": ""
+      "winRateOff": "",
+      "winRateOffWeapon": ""
     },
     "note": [
       "ประวัติการอธิษฐานไม่ได้ถูกอัพเดทโดยระบบอัตโนมัติ กรุณานำเข้าอีกครั้งเพื่ออัพเดทข้อมูล",
@@ -889,7 +890,9 @@
       "setUnplaced": "เลือกว่ายังไม่ได้วาง",
       "inInventory": "ในช่องเก็บของ",
       "available": "พร้อมใช้งาน",
-      "used": "กำลังใช้ในเซ็ตอื่น"
+      "used": "กำลังใช้ในเซ็ตอื่น",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {

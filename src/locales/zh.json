@@ -141,7 +141,7 @@
     "welcomeStart2": "上面的按钮即可",
     "manual": "如果你想手动输入数据，你可以在这里启用该功能：",
     "manualButton": "启用手动输入",
-    "errorBanner": "卡池时间不匹配！请在设置页面修改你所属的服务器。如果还是有问题，请到 Discord 中反馈 😅",
+    "errorBanner": "卡池时间不匹配！请在设置页面修改你所属的服务器。如果问题依然存在，请到 Discord 中反馈 😅",
     "globalWishTally": "全球祈愿统计",
     "pityTooltip": [
       "显示你当前 {rarity} 保底进度",
@@ -452,7 +452,8 @@
       "pityAverage": "出货均数",
       "character": "角色",
       "weapon": "武器",
-      "winRateOff": "小保底没歪"
+      "winRateOff": "小保底没歪",
+      "winRateOffWeapon": ""
     },
     "note": [
       "祈愿记录不会自动更新，请手动导入更新祈愿历史。",
@@ -795,7 +796,7 @@
     "download": "两份都下载",
     "lastModified": "上次修改时间",
     "or": "或",
-    "smallSizeWarning": ""
+    "smallSizeWarning": "请注意！文件大小似乎过小！"
   },
   "footer": {
     "affliate": "Paimon.moe 与米哈游无关。",
@@ -889,7 +890,9 @@
       "setUnplaced": "设为未放置",
       "inInventory": "在清单中",
       "available": "可用",
-      "used": "已在其他套装使用"
+      "used": "已在其他套装使用",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {
@@ -946,7 +949,7 @@
     "liyue": "璃月",
     "inazuma": "稻妻",
     "enkanomiya": "渊下宫",
-    "chasm": "",
+    "chasm": "层岩巨渊",
     "setEmpty": "捞空了",
     "emptyTime": "鱼被摸完的时间：",
     "clear": "复原",

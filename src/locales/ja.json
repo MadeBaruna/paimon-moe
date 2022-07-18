@@ -452,7 +452,8 @@
       "pityAverage": "天井カウント数の平均",
       "character": "キャラクター",
       "weapon": "武器",
-      "winRateOff": "排出"
+      "winRateOff": "排出",
+      "winRateOffWeapon": ""
     },
     "note": [
       "祈願履歴は自動的に更新されません。新しい記録がある場合はもう一度インポートしてください！",
@@ -889,7 +890,9 @@
       "setUnplaced": "未設置に設定",
       "inInventory": "インベントリ",
       "available": "利用可能",
-      "used": "他のセットで使用中"
+      "used": "他のセットで使用中",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {

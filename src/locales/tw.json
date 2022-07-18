@@ -452,7 +452,8 @@
       "pityAverage": "出貨均數",
       "character": "角色",
       "weapon": "武器",
-      "winRateOff": "小保底沒歪"
+      "winRateOff": "小保底沒歪",
+      "winRateOffWeapon": ""
     },
     "note": [
       "祈願歷史紀錄無法自動更新，請重新匯入以更新歷史紀錄！",
@@ -795,7 +796,7 @@
     "download": "兩份都下載",
     "lastModified": "上次修改時間",
     "or": "或",
-    "smallSizeWarning": ""
+    "smallSizeWarning": "請注意！檔案大小似乎過小！"
   },
   "footer": {
     "affliate": "Paimon.moe 與米哈遊無關。",
@@ -889,7 +890,9 @@
       "setUnplaced": "設為未放置",
       "inInventory": "在庫存中",
       "available": "可用",
-      "used": "已在其他套裝使用"
+      "used": "已在其他套裝使用",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {
@@ -946,7 +949,7 @@
     "liyue": "璃月",
     "inazuma": "稻妻",
     "enkanomiya": "淵下宫",
-    "chasm": "",
+    "chasm": "層岩巨淵",
     "setEmpty": "標記為空",
     "emptyTime": "釣點為空時間：",
     "clear": "清除",

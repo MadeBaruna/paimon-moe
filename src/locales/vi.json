@@ -171,7 +171,7 @@
       "importNewWishUncheck": "Hãy bỏ chọn khi bạn cần nhập lại tất cả dữ liệu lịch sử cầu nguyện",
       "import": "Nhập",
       "close": "Đóng",
-      "invalidLink": "Đường liên kết không hợp lệ, vui lòng kiểm tra và thử lại",
+      "invalidLink": "Link không hợp lệ, vui lòng kiểm tra lại",
       "errorApi": "API của HoYoverse trả về mã lỗi, vui lòng thử lại sau!",
       "errorExpired": "Link đã hết hạn, hãy thử lại!",
       "timeout": "Kết nối đã hết hạn, vui lòng chờ và thử lại sau",
@@ -452,7 +452,8 @@
       "pityAverage": "Lượt Ra TB",
       "character": "Nhân Vật",
       "weapon": "Vũ Khí",
-      "winRateOff": "Thắng 50:50"
+      "winRateOff": "Thắng 50:50",
+      "winRateOffWeapon": ""
     },
     "note": [
       "Lịch sử cầu nguyện không cập nhật tự động, vui lòng Nhập lại để cập nhật lịch sử của bạn!",
@@ -795,14 +796,14 @@
     "download": "Tải xuống cả hai dữ liệu",
     "lastModified": "Sửa đổi lần cuối",
     "or": "HOẶC",
-    "smallSizeWarning": ""
+    "smallSizeWarning": "HÃY CẨN THẬN, KÍCH CỠ QUÁ NHỎ!"
   },
   "footer": {
     "affliate": "Paimon.moe không liên kết với HoYoverse.",
     "copyright": "Genshin Impact, nội dung và dữ liệu trò chơi là thương hiệu và bản quyền thuộc HoYoverse.",
     "discord": "Tham gia Discord",
-    "community": "Liên kết Cộng đồng",
-    "official": "Liên Kết Chính Thức",
+    "community": "Liên kết cộng đồng",
+    "official": "Liên kết chính thức",
     "link": {
       "github": "GitHub",
       "discord": "Discord",
@@ -889,7 +890,9 @@
       "setUnplaced": "Đánh dấu chưa đặt",
       "inInventory": "Trong túi đồ",
       "available": "Có sẵn",
-      "used": "Dùng trong bộ khác"
+      "used": "Dùng trong bộ khác",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {
@@ -946,7 +949,7 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
-    "chasm": "",
+    "chasm": "Vực Đá Sâu",
     "setEmpty": "Đã hết cá",
     "emptyTime": "Thời gian vị trí này hết cá:",
     "clear": "Xóa",

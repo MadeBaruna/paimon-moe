@@ -452,7 +452,8 @@
       "pityAverage": "",
       "character": "",
       "weapon": "",
-      "winRateOff": ""
+      "winRateOff": "",
+      "winRateOffWeapon": ""
     },
     "note": [
       "¡El Historial de Deseos no se actualiza automáticamente, por favor, importa de nuevo para actualizar tu historial!",
@@ -889,7 +890,9 @@
       "setUnplaced": "Marcar como no colocado",
       "inInventory": "En inventario",
       "available": "Disponible",
-      "used": "Usado en otro Conjunto"
+      "used": "Usado en otro Conjunto",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {

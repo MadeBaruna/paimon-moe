@@ -189,7 +189,7 @@
       ],
       "forceUpdateCheck": "Forcer la mise à jour de l'historique de vœux (À activer uniquement si votre historique de vœux ne se met pas à jour)",
       "header": [
-        "Importez et sauvegardez votre historique de vœux de Genshin Impact afin de le conserver plus de 6 mois. De plus, suivez automatique votre pity et les statistiques de vos vœux !",
+        "Importez et sauvegardez votre historique de vœux de Genshin Impact afin de le conserver plus de 6 mois. De plus, suivez automatiquement votre pity et les statistiques de vos vœux !",
         "Vous pouvez également activer Drive Sync dans les Paramètres afin de synchroniser et sauvegarder l'historique sur votre Google Drive",
         "Veuillez noter que l'ancien lien de rétroaction ne fonctionne plus, veuillez suivre les nouvelles instructions ci-dessous !"
       ],
@@ -452,7 +452,8 @@
       "pityAverage": "Pity MOY",
       "character": "Personnage",
       "weapon": "Arme",
-      "winRateOff": "Gagne le 50:50"
+      "winRateOff": "Gagne le 50:50",
+      "winRateOffWeapon": ""
     },
     "note": [
       "L'Historique de Vœux n'est pas mis à jour automatiquement, veuillez importer à nouveau pour mettre à jour votre historique !",
@@ -889,7 +890,9 @@
       "setUnplaced": "Définir comme étant non placé",
       "inInventory": "Dans l'inventaire",
       "available": "Disponible",
-      "used": "Utilisé dans un autre set"
+      "used": "Utilisé dans un autre set",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {

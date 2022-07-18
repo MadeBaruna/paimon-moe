@@ -452,7 +452,8 @@
       "pityAverage": "",
       "character": "",
       "weapon": "",
-      "winRateOff": ""
+      "winRateOff": "",
+      "winRateOffWeapon": ""
     },
     "note": [
       "Gebetsverlauf wird nicht automatisch aktualisiert, bitte importiere erneut, um deinen Verlauf zu aktualisieren!",
@@ -889,7 +890,9 @@
       "setUnplaced": "Als nicht platziert makieren",
       "inInventory": "Im Inventar",
       "available": "Verfügbar",
-      "used": "In einem anderen Set verwendet"
+      "used": "In einem anderen Set verwendet",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {

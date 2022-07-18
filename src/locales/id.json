@@ -452,7 +452,8 @@
       "pityAverage": "Rerata Pity",
       "character": "Karakter",
       "weapon": "Senjata",
-      "winRateOff": "Menang 50:50"
+      "winRateOff": "Menang 50:50",
+      "winRateOffWeapon": "Win 75:25"
     },
     "note": [
       "Wish History tidak update secara otomatis, silahkan import lagi untuk mengupdate history nya!",
@@ -889,7 +890,9 @@
       "setUnplaced": "Set belum ditempatkan",
       "inInventory": "Di inventory",
       "available": "Tersedia",
-      "used": "Digunakan di set lain"
+      "used": "Digunakan di set lain",
+      "calculate": "Hitung Material",
+      "exludeOwned": "Tidak hitung furniture yang sudah dipunya"
     }
   },
   "weapon": {

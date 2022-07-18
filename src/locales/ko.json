@@ -452,7 +452,8 @@
       "pityAverage": "",
       "character": "",
       "weapon": "",
-      "winRateOff": ""
+      "winRateOff": "",
+      "winRateOffWeapon": ""
     },
     "note": [
       "기원 이력은 자동으로 업데이트되지 않습니다. 자동 제출 기능을 이용해 주세요.",
@@ -889,7 +890,9 @@
       "setUnplaced": "배치되지 않음으로 설정",
       "inInventory": "보유량",
       "available": "배치 가능",
-      "used": "다른 세트에서 사용중"
+      "used": "다른 세트에서 사용중",
+      "calculate": "",
+      "exludeOwned": ""
     }
   },
   "weapon": {
