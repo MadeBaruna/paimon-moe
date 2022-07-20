@@ -1,12 +1,11 @@
 <script context="module">
-  import { builds as buildsJson } from '../../data/build';
   import artifactData from '../../data/artifacts/en.json';
   import weaponData from '../../data/weapons/en.json';
 
-  export async function load({ params }) {
+  export async function load({ params, fetch }) {
     const { id } = params;
     const data = await import(`../../data/characterData/${id}.json`);
-    const buildData = buildsJson[id];
+    const buildData = await (await fetch(`/characters/build/${id}.json`)).json();
 
     return { props: { id, data, buildData } };
   }
