@@ -62,7 +62,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   @screen md {
     .not-supported {
       width: fit-content;

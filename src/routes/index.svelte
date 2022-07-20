@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import debounce from 'lodash/debounce';
+  import debounce from 'lodash.debounce';
   import { locale } from 'svelte-i18n';
 
   import Masonry from '../components/Masonry.svelte';

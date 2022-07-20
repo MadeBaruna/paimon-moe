@@ -1,8 +1,5 @@
 <script context="module">
   import data from '../../data/weapons/en.json';
-  export async function preload() {
-    return { data };
-  }
 </script>
 
 <script>
@@ -12,7 +9,7 @@
   import { formatStat } from '../../helper';
   import Ad from '../../components/Ad.svelte';
 
-  export let data;
+  let weaponData = data;
   let weaponList = [];
   let sortBy = 'name';
   let sortOrder = true;
@@ -34,7 +31,7 @@
 
   function process() {
     const _weapons = [];
-    for (const [id, weapon] of Object.entries(data)) {
+    for (const [id, weapon] of Object.entries(weaponData)) {
       if (['amber_bead', 'ebony_bow', 'quartz', 'the_flagstaff'].includes(id)) continue;
 
       _weapons.push({
@@ -94,7 +91,7 @@
 
   async function changeLocale(locale) {
     const _data = await import(`../../data/weapons/${locale}.json`);
-    data = _data.default;
+    weaponData = _data.default;
     process();
   }
 
@@ -115,7 +112,7 @@
   <p class="text-gray-400 px-4 md:px-8 font-medium pb-4" style="margin-top: -1rem;">
     ※ {$t('weapon.subtitle')}
   </p>
-  <div class="block overflow-x-auto whitespace-no-wrap pb-8 relative">
+  <div class="block overflow-x-auto whitespace-nowrap pb-8 relative">
     <Ad type="desktop" variant="mpu" id="1" class="absolute top-0" style="right: 50px;" />
     <div class="px-4 md:px-8 table max-w-full">
       <table class="w-full block p-4 bg-item rounded-xl">

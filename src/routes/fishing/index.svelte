@@ -1,5 +1,5 @@
 <script context="module">
-  import data from '../../data/fishing/en.json';
+  import dataJson from '../../data/fishing/en.json';
   import locations from '../../data/fishing/location.json';
 
   let spots = {
@@ -13,8 +13,8 @@
     spots[location.location].push({ ...location, id });
   }
 
-  export async function preload() {
-    return { data, spots };
+  export async function load() {
+    return { props: { spots } };
   }
 </script>
 
@@ -34,7 +34,7 @@
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
-  export let data;
+  let data = dataJson;
   export let spots;
 
   let fishList = data;

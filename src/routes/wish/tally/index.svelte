@@ -142,7 +142,7 @@
     loading = true;
     loadingCons = true;
 
-    const url = new URL(`${__paimon.env.API_HOST}/wish`);
+    const url = new URL(`${import.meta.env.VITE_API_HOST}/wish`);
     const query = new URLSearchParams({ banner: id });
     url.search = query.toString();
 
@@ -626,7 +626,7 @@
                 {numberFormat.format(legendary.percentage)}%
               </td>
               <td class="bg-background rounded-r-xl py-4 pr-4 text-legendary-from">
-                <p class="font-semibold whitespace-no-wrap">
+                <p class="font-semibold whitespace-nowrap">
                   <Icon path={mdiStar} size={0.8} />
                   <Icon path={mdiStar} size={0.8} />
                   <Icon path={mdiStar} size={0.8} />
@@ -644,7 +644,7 @@
                 {numberFormat.format(rare.percentage)}%
               </td>
               <td class="bg-background rounded-r-xl py-4 pr-4 text-rare-from">
-                <p class="font-semibold whitespace-no-wrap">
+                <p class="font-semibold whitespace-nowrap">
                   <Icon path={mdiStar} size={0.8} />
                   <Icon path={mdiStar} size={0.8} />
                   <Icon path={mdiStar} size={0.8} />
@@ -818,7 +818,7 @@
   <Ad type="mobile" variant="lb" id="2" />
 </div>
 
-<style>
+<style lang="postcss">
   @screen md {
     .select-name {
       width: 100%;

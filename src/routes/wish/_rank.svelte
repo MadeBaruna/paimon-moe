@@ -51,7 +51,7 @@
     if (wishCount === 0) return;
 
     try {
-      const url = new URL(`${__paimon.env.API_HOST}/wish/summary`);
+      const url = new URL(`${import.meta.env.VITE_API_HOST}/wish/summary`);
       const query = new URLSearchParams({ banner: current });
       url.search = query.toString();
 
@@ -99,7 +99,7 @@
     if (percentages[current] === undefined) return;
 
     try {
-      const url = new URL(`${__paimon.env.API_HOST}/wish/summary/luck`);
+      const url = new URL(`${import.meta.env.VITE_API_HOST}/wish/summary/luck`);
       const query = new URLSearchParams({ banner: current, rarity });
       url.search = query.toString();
 
@@ -151,7 +151,7 @@
     }
 
     try {
-      const url = new URL(`${__paimon.env.API_HOST}/wish/summary/winrateoff`);
+      const url = new URL(`${import.meta.env.VITE_API_HOST}/wish/summary/winrateoff`);
       const query = new URLSearchParams({ banner: current, rarity });
       url.search = query.toString();
 
@@ -368,7 +368,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .pill {
     @apply text-sm;
     @apply rounded-2xl;

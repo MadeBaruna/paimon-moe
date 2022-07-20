@@ -270,7 +270,6 @@
 
   $: $todos, updateSummary();
   $: columnCount, updateId();
-
 </script>
 
 <svelte:head>
@@ -304,7 +303,7 @@
             {#each Object.entries(todayOnlyItems) as [id, amount]}
               <tr class="today-only">
                 <td class="text-right border-b border-gray-700 py-1">
-                  <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-no-wrap`}>
+                  <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-nowrap`}>
                     {numberFormat.format(amount)}
                     <Icon size={0.5} path={mdiClose} /></span
                   >
@@ -339,7 +338,7 @@
                   <tr>
                     <td class="text-right border-b border-gray-700 py-1">
                       <div class="flex justify-end items-center">
-                        <span class="text-white mr-2 whitespace-no-wrap">
+                        <span class="text-white mr-2 whitespace-nowrap">
                           {numberFormat.format(amount)}
                         </span>
                         <img src="/images/resin.png" alt="resin" class="w-6 h-6 mr-2" />
@@ -375,7 +374,7 @@
         {#each Object.entries(summary) as [id, amount]}
           <tr>
             <td class="text-right border-b border-gray-700 py-1">
-              <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-no-wrap`}>
+              <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-nowrap`}>
                 {numberFormat.format(amount)}
                 <Icon size={0.5} path={mdiClose} /></span
               >
@@ -460,7 +459,7 @@
           {#each Object.entries(todo.resources).sort((a, b) => b[1] - a[1]) as [id, amount]}
             <tr>
               <td class="text-right border-b border-gray-700 py-1">
-                <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-no-wrap`}>
+                <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-nowrap`}>
                   {numberFormat.format(amount)}
                   <Icon size={0.5} path={mdiClose} /></span
                 >
@@ -491,11 +490,10 @@
   </Masonry>
 </div>
 
-<style>
+<style lang="postcss">
   tr.today-only:last-child {
     td {
       @apply border-b-0;
     }
   }
-
 </style>

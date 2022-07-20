@@ -12,7 +12,7 @@
   // let count = '...';
 
   // async function getData() {
-  //   const url = new URL(`${__paimon.env.API_HOST}/visitor`);
+  //   const url = new URL(`${import.meta.env.VITE_API_HOST}/visitor`);
 
   //   try {
   //     const res = await fetch(url, {

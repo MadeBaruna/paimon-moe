@@ -1,8 +1,5 @@
 <script context="module">
-  import data from '../../data/artifacts/en.json';
-  export async function preload() {
-    return { data };
-  }
+  import dataJson from '../../data/artifacts/en.json';
 </script>
 
 <script>
@@ -11,7 +8,7 @@
   import TableHeader from '../../components/Table/TableHeader.svelte';
   import { domains } from '../../data/domain.js';
 
-  export let data;
+  let data = dataJson;
   let artifactList = [];
   let artifacts = [];
   let sortBy = 'maxRarity';
@@ -118,7 +115,7 @@
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('artifact.title')}</h1>
-  <div class="block overflow-x-auto whitespace-no-wrap pb-8">
+  <div class="block overflow-x-auto whitespace-nowrap pb-8">
     <div class="px-4 md:px-8 table max-w-full">
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>

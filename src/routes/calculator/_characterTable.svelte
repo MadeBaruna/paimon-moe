@@ -109,7 +109,7 @@
   }
 </script>
 
-<div class="block overflow-x-auto whitespace-no-wrap pb-1">
+<div class="block overflow-x-auto whitespace-nowrap pb-1">
   <div class="table w-full">
     <div class="bg-item rounded-xl p-4 w-full">
       <table>
@@ -126,7 +126,7 @@
               ><Icon className="mb-1 text-gray-400" path={mdiArrowRight} size={0.7} /></td
             >
             <td class="pr-2 text-white text-center">{step[i + 1]}</td>
-            <td class="px-2 text-white whitespace-no-wrap" style="min-width: 180px;">
+            <td class="px-2 text-white whitespace-nowrap" style="min-width: 180px;">
               {#each resources as res, j}
                 {#if row.usage[j] > 0}
                   <span class="mr-2">
@@ -145,7 +145,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   td,
   th {
     @apply py-1;

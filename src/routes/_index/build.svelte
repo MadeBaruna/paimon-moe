@@ -121,7 +121,7 @@ bg-background-secondary rounded-xl py-2 px-4 hover:bg-background transition-colo
   </a>
 </div>
 
-<style>
+<style lang="postcss">
   .pill {
     @apply rounded-2xl;
     @apply border-2;

@@ -27,7 +27,7 @@
   />
 </div>
 
-<style>
+<style lang="postcss">
   .container {
     height: fit-content;
   }

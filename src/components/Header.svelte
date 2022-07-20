@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .header::after {
     content: '';
     top: -40px;

@@ -64,7 +64,7 @@
     {#each result as [item, amount], i}
       <tr>
         <td class="text-right border-gray-700 py-1 {i === 0 ? '' : 'border-t'}">
-          <span class="text-white mr-2 whitespace-no-wrap">
+          <span class="text-white mr-2 whitespace-nowrap">
             {amount}
             <Icon size={0.5} path={mdiClose} />
           </span>
@@ -82,7 +82,7 @@
     {#if coins > 0}
       <tr>
         <td class="text-right border-t border-gray-700 py-1">
-          <span class="text-white mr-2 whitespace-no-wrap">
+          <span class="text-white mr-2 whitespace-nowrap">
             {coins}
             <Icon size={0.5} path={mdiClose} />
           </span>

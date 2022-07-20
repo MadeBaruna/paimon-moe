@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import { writable } from 'svelte/store';
-import debounce from 'lodash/debounce';
+import debounce from 'lodash.debounce';
 import localforage from 'localforage';
 import { t as $t } from 'svelte-i18n';
 

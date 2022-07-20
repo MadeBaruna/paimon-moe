@@ -83,12 +83,12 @@
     };
   }
 
-  export async function preload(page) {
-    const { id } = page.params;
+  export async function load({ params }) {
+    const { id } = params;
     const artifact = data[id];
     const recommendedCharacter = getCharacter(id);
 
-    return { id, artifact, recommendedCharacter };
+    return { props: { id, artifact, recommendedCharacter } };
   }
 </script>
 

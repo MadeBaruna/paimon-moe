@@ -84,7 +84,7 @@
     <div class="flex flex-col">
       {#each upcoming as item}
         <div class="pl-2 pr-1 py-1 rounded-xl mb-1 flex" style="background: {item.color};">
-          <span class="whitespace-no-wrap overflow-x-hidden flex-1 mr-1 text-sm" style="text-overflow: ellipsis;">
+          <span class="whitespace-nowrap overflow-x-hidden flex-1 mr-1 text-sm" style="text-overflow: ellipsis;">
             {item.name}
           </span>
           <span class="bg-black bg-opacity-50 rounded-xl px-2 text-white text-sm">{item.time}</span>
@@ -97,7 +97,7 @@
     <div class="flex flex-col">
       {#each current as item}
         <div class="pl-2 pr-1 py-1 rounded-xl mb-1 flex" style="background: {item.color};">
-          <span class="whitespace-no-wrap overflow-x-hidden flex-1 mr-1 text-sm" style="text-overflow: ellipsis;">
+          <span class="whitespace-nowrap overflow-x-hidden flex-1 mr-1 text-sm" style="text-overflow: ellipsis;">
             {item.name}
           </span>
           <span class="bg-black bg-opacity-50 rounded-xl px-2 text-white text-sm">{item.time}</span>

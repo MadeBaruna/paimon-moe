@@ -1,14 +1,11 @@
 <script context="module">
-  import data from '../../data/achievement/en.json';
-  export async function preload() {
-    return { data };
-  }
+  import achievementData from '../../data/achievement/en.json';
 </script>
 
 <script>
   import { locale, t } from 'svelte-i18n';
   import { onMount, tick } from 'svelte';
-  import debounce from 'lodash/debounce';
+  import debounce from 'lodash.debounce';
   import { mdiFilter } from '@mdi/js';
 
   import Check from '../../components/Check.svelte';
@@ -21,9 +18,9 @@
   import { pushToast } from '../../stores/toast';
   import Ad from '../../components/Ad.svelte';
 
-  export let data;
-
   let achievementContainer;
+
+  let data = achievementData;
 
   let achievement = data;
   let checkList = {};
@@ -494,7 +491,7 @@
 <Ad type="desktop" variant="lb" id="2" />
 <Ad type="mobile" variant="lb" id="1" />
 
-<style>
+<style lang="postcss">
   .category {
     width: 100%;
   }

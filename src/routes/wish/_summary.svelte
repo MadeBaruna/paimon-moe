@@ -3,7 +3,7 @@
 
   import { createEventDispatcher, onMount } from 'svelte';
   import dayjs from 'dayjs';
-  import debounce from 'lodash/debounce';
+  import debounce from 'lodash.debounce';
 
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
@@ -304,7 +304,7 @@
   </div>
 {/if}
 
-<style>
+<style lang="postcss">
   .container {
     @apply flex flex-col gap-4;
   }

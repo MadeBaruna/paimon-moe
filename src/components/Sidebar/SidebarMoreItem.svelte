@@ -80,7 +80,7 @@
   </div>
 {/if}
 
-<style>
+<style lang="postcss">
   .active {
     @apply bg-primary;
     @apply bg-opacity-75;

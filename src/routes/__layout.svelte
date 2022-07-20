@@ -1,21 +1,16 @@
-<script context="module">
-  import { waitLocale } from 'svelte-i18n';
-
-  export async function preload() {
-    return waitLocale();
-  }
-</script>
-
 <script>
+  import '../app.css';
+
   import { onMount } from 'svelte';
-  import { fade } from 'svelte/transition';
   import { derived } from 'svelte/store';
-  import { stores } from '@sapper/app';
+  import { fade } from 'svelte/transition';
+  import localforage from 'localforage';
   import { t } from 'svelte-i18n';
+  import { startClient } from '../i18n.js';
+  import { navigating, page } from '$app/stores';
 
   import Modal from 'svelte-simple-modal';
 
-  import Tailwind from '../components/Tailwindcss.svelte';
   import Sidebar from '../components/Sidebar/Sidebar.svelte';
   import Header from '../components/Header.svelte';
   import DataSync from '../components/DataSync.svelte';
@@ -26,28 +21,52 @@
   import SettingData from '../components/SettingData.svelte';
   import Toast from '../components/Toast.svelte';
   import Icon from '../components/Icon.svelte';
-  import { mdiDiscord, mdiFacebook, mdiGithub, mdiReddit, mdiTelegram, mdiTwitter } from '@mdi/js';
+  import { mdiDiscord, mdiFacebook, mdiGithub, mdiReddit, mdiTwitter } from '@mdi/js';
 
-  export let segment;
-
-  const { preloading, page } = stores();
-  const delayedPreloading = derived(preloading, (currentPreloading, set) => {
-    setTimeout(() => set(currentPreloading), 250);
+  const delayedPreloading = derived(navigating, (_, set) => {
+    set(true);
+    setTimeout(() => set(true), 250);
   });
 
-  // check local storage save on load
+  startClient();
+
+  page.subscribe(() => {
+    try {
+      window.reloadAdSlots();
+    } catch (error) {}
+  });
+
   onMount(async () => {
+    console.log('localforage config');
+    localforage.config({
+      driver: [localforage.INDEXEDDB, localforage.LOCALSTORAGE],
+      name: 'paimonmoe',
+      version: 1.0,
+      description: 'paimonmoe local storage',
+    });
+    window.localforage = localforage;
     await checkLocalSave();
 
-    page.subscribe(() => {
-      try {
-        window.reloadAdSlots();
-      } catch (error) {}
-    });
+    if ('serviceWorker' in navigator && import.meta.env.PROD) {
+      navigator.serviceWorker
+        .register('/service-worker.js', {
+          scope: 'firebase-cloud-messaging-push-scope',
+        })
+        .then(
+          function (registration) {
+            console.log('Service worker registration succeeded');
+          },
+          function (error) {
+            console.log('Service worker registration failed:', error);
+          },
+        );
+    } else {
+      console.log('Service workers are not supported.');
+    }
   });
-</script>
 
-<Tailwind />
+  $: segment = $page.url.pathname.substring(1).split('/')[0];
+</script>
 
 <Header />
 <Modal>
@@ -64,7 +83,7 @@
     </main>
   </DataSync>
 </Modal>
-{#if $preloading && $delayedPreloading}
+{#if $navigating && $delayedPreloading}
   <div transition:fade class="loading-bar" />
 {/if}
 <div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col md:pb-24">
@@ -81,18 +100,20 @@
       <span class="text-gray-500">{$t('footer.community')}</span>
       <div>
         <a
-          class="text-gray-400 hover:text-primary whitespace-no-wrap"
+          class="text-gray-400 hover:text-primary whitespace-nowrap"
           href="https://github.com/MadeBaruna/paimon-moe"
           target="_blank"
         >
-          <Icon path={mdiGithub} size={1} /> {$t('footer.link.github')}
+          <Icon path={mdiGithub} size={1} />
+          {$t('footer.link.github')}
         </a>
         <a
-          class="text-gray-400 hover:text-primary whitespace-no-wrap"
+          class="text-gray-400 hover:text-primary whitespace-nowrap"
           href="https://twitter.com/MadeBaruna"
           target="_blank"
         >
-          <Icon path={mdiTwitter} size={1} /> {$t('footer.link.devTwitter')}
+          <Icon path={mdiTwitter} size={1} />
+          {$t('footer.link.devTwitter')}
         </a>
       </div>
     </div>
@@ -100,25 +121,28 @@
       <span class="text-gray-500">{$t('footer.official')}</span>
       <div>
         <a
-          class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap"
+          class="text-gray-400 hover:text-primary mr-1 whitespace-nowrap"
           href="https://discord.gg/4nbWsCGjjE"
           target="_blank"
         >
-          <Icon path={mdiDiscord} size={1} /> {$t('footer.link.discord')}
+          <Icon path={mdiDiscord} size={1} />
+          {$t('footer.link.discord')}
         </a>
         <a
-          class="text-gray-400 hover:text-primary mr-1 whitespace-no-wrap"
+          class="text-gray-400 hover:text-primary mr-1 whitespace-nowrap"
           href="https://www.facebook.com/Genshinimpact/"
           target="_blank"
         >
-          <Icon path={mdiFacebook} size={1} /> {$t('footer.link.facebook')}
+          <Icon path={mdiFacebook} size={1} />
+          {$t('footer.link.facebook')}
         </a>
         <a
-          class="text-gray-400 hover:text-primary whitespace-no-wrap"
+          class="text-gray-400 hover:text-primary whitespace-nowrap"
           href="https://www.reddit.com/r/Genshin_Impact/"
           target="_blank"
         >
-          <Icon path={mdiReddit} size={1} /> {$t('footer.link.reddit')}
+          <Icon path={mdiReddit} size={1} />
+          {$t('footer.link.reddit')}
         </a>
       </div>
     </div>
@@ -132,7 +156,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .loading-bar {
     position: fixed;
     top: 0;

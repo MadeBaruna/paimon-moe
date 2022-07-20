@@ -255,7 +255,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   @media (min-width: 1920px) {
     .top-header {
       @apply flex-row;
