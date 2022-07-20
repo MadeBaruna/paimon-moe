@@ -1,4 +1,4 @@
-const fs = require('fs');
+import fs from 'fs';
 
 let envString = '';
 envString += `VITE_GOOGLE_DRIVE_CLIENT_ID=${process.env.GOOGLE_DRIVE_CLIENT_ID}\n`;
