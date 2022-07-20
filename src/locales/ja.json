@@ -452,6 +452,7 @@
       "pityAverage": "天井カウント数の平均",
       "character": "キャラクター",
       "weapon": "武器",
+      "featured": "ピックアップ",
       "winRateOff": "排出",
       "winRateOffWeapon": ""
     },

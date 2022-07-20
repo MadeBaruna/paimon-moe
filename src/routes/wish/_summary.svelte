@@ -232,6 +232,13 @@
                 counterData.rateoff.legendary.win /
                 (counterData.rateoff.legendary.win + counterData.rateoff.legendary.lose),
             };
+            avg[type.id].legendary.featured = {
+              total: avg[type.id].legendary.total - counterData.rateoff.legendary.lose,
+              percentage:
+                (avg[type.id].legendary.total - counterData.rateoff.legendary.lose) /
+                avg[type.id].legendary.total,
+              pity: legendary > 0 ? legendaryPity / (avg[type.id].legendary.total - counterData.rateoff.legendary.lose) : 0,
+            };
 
             percentages[type.id].winRateOff.legendary = avg[type.id].legendary.rateOff.percentage;
           }

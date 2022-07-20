@@ -452,6 +452,7 @@
       "pityAverage": "Rerata Pity",
       "character": "Karakter",
       "weapon": "Senjata",
+      "featured": "Promotional",
       "winRateOff": "Menang 50:50",
       "winRateOffWeapon": "Win 75:25"
     },
