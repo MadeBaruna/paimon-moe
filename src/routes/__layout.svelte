@@ -10,6 +10,7 @@
   import { navigating, page } from '$app/stores';
 
   import Modal from 'svelte-simple-modal';
+  import { mdiDiscord, mdiFacebook, mdiGithub, mdiReddit, mdiTwitter } from '@mdi/js';
 
   import Sidebar from '../components/Sidebar/Sidebar.svelte';
   import Header from '../components/Header.svelte';
@@ -21,7 +22,7 @@
   import SettingData from '../components/SettingData.svelte';
   import Toast from '../components/Toast.svelte';
   import Icon from '../components/Icon.svelte';
-  import { mdiDiscord, mdiFacebook, mdiGithub, mdiReddit, mdiTwitter } from '@mdi/js';
+  import ServiceWorker from '../components/ServiceWorker.svelte';
 
   const delayedPreloading = derived(navigating, (_, set) => {
     set(true);
@@ -30,14 +31,9 @@
 
   startClient();
 
-  let broadcastChannel;
-  page.subscribe((p) => {
+  page.subscribe(() => {
     try {
       window.reloadAdSlots();
-      broadcastChannel.postMessage({
-        type: 'fetch-doc',
-        path: p.url.pathname,
-      });
     } catch (error) {}
   });
 
@@ -51,24 +47,6 @@
     });
     window.localforage = localforage;
     await checkLocalSave();
-
-    if ('serviceWorker' in navigator) {
-      broadcastChannel = new BroadcastChannel('paimonmoe-sw');
-      broadcastChannel.addEventListener('message', (event) => {
-        if (event.data.type === 'update') window.location.reload();
-      });
-
-      navigator.serviceWorker.register('/service-worker.js').then(
-        function () {
-          console.log('service worker registration succeeded');
-        },
-        function (error) {
-          console.log('service worker registration failed:', error);
-        },
-      );
-    } else {
-      console.log('service workers are not supported');
-    }
   });
 
   $: segment = $page.url.pathname.substring(1).split('/')[0];
@@ -88,6 +66,7 @@
       <slot />
     </main>
   </DataSync>
+  <ServiceWorker />
 </Modal>
 {#if $navigating && $delayedPreloading}
   <div transition:fade class="loading-bar" />
