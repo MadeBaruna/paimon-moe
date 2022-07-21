@@ -21,6 +21,8 @@
 
   onMount(() => {
     refreshUrl = `${location.href}?r=${new Date().getTime()}`;
+    window.location.reload();
+    console.error(error);
   });
 </script>
 
@@ -47,6 +49,7 @@
     <a
       class="px-4 py-2 rounded-xl border-2 border-white border-opacity-25 hover:border-primary text-blue-400 hover:text-primary text-xl mt-4 text-center"
       href={refreshUrl}
+      rel="external"
     >
       Click here to refresh
     </a>
