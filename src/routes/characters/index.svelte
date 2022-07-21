@@ -450,7 +450,7 @@
     <p class="text-gray-400 px-4 md:px-8 font-medium pb-2 mt-4">
       ※ {$t('characters.subtitle')}
     </p>
-    <div class="block overflow-x-auto whitespace-no-wrap pb-8">
+    <div class="block overflow-x-auto whitespace-nowrap pb-8">
       <div class="px-4 md:px-8 table">
         <table class="w-full block p-4 bg-item rounded-xl">
           <thead>
@@ -521,7 +521,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   tr.rare:hover {
     background: linear-gradient(
       90deg,

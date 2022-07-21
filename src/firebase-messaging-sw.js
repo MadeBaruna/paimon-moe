@@ -2,12 +2,12 @@ importScripts('https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/8.3.2/firebase-messaging.js');
 
 const firebaseConfig = {
-  apiKey: __paimon.env.FIREBASE_API_KEY,
-  authDomain: __paimon.env.FIREBASE_AUTH_DOMAIN,
-  projectId: __paimon.env.FIREBASE_PROJECT_ID,
-  storageBucket: __paimon.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: __paimon.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: __paimon.env.FIREBASE_APP_ID,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 firebase.initializeApp(firebaseConfig);

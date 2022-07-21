@@ -12,8 +12,8 @@
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
-  const CLIENT_ID = __paimon.env.GOOGLE_DRIVE_CLIENT_ID;
-  const API_KEY = __paimon.env.GOOGLE_DRIVE_API_KEY;
+  const CLIENT_ID = import.meta.env.VITE_GOOGLE_DRIVE_CLIENT_ID;
+  const API_KEY = import.meta.env.VITE_GOOGLE_DRIVE_API_KEY;
   const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'];
   const SCOPES = 'https://www.googleapis.com/auth/drive.appdata';
 

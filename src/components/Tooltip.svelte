@@ -18,7 +18,7 @@
   }
 </script>
 
-<i on:mouseover={mouseOver} on:mouseleave={mouseLeave} on:mousemove={mouseMove}>
+<i on:mouseover={mouseOver} on:focus={mouseOver} on:mouseleave={mouseLeave} on:mousemove={mouseMove}>
   <slot />
 </i>
 
@@ -26,7 +26,7 @@
   <div style="top: {y}px; left: {x}px;" class="tooltip">{title}</div>
 {/if}
 
-<style>
+<style lang="postcss">
   .tooltip {
     @apply p-2 absolute rounded-xl bg-gray-400 border border-gray-800;
     @apply text-sm text-background z-10;

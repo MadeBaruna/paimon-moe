@@ -475,14 +475,14 @@
     <a
       href="https://discord.gg/tPURAYgHV9"
       target="_blank"
-      class="whitespace-no-wrap bg-background rounded-xl pr-2 text-blue-400 hover:underline"
+      class="whitespace-nowrap bg-background rounded-xl pr-2 text-blue-400 hover:underline"
       ><Icon path={mdiDiscord} /> Discord</a
     >
     {$t('settings.or')}
     <a
       href="https://github.com/MadeBaruna/paimon-moe/issues"
       target="_blank"
-      class="whitespace-no-wrap bg-background rounded-xl pr-2 text-blue-400 hover:underline"
+      class="whitespace-nowrap bg-background rounded-xl pr-2 text-blue-400 hover:underline"
       ><Icon path={mdiGithub} /> Github Issues</a
     >
     {$t('settings.thanks')}

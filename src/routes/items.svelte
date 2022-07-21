@@ -169,7 +169,7 @@
     <CharacterSelect bind:selected={selectedCharacter} placeholder={$t('items.searchCharacter')} />
     <WeaponSelect bind:selected={selectedWeapon} placeholder={$t('items.searchWeapon')} />
   </div>
-  <div class="block overflow-x-auto whitespace-no-wrap pb-8">
+  <div class="block overflow-x-auto whitespace-nowrap pb-8">
     <div class="px-4 md:px-8 table max-w-full">
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>
@@ -283,7 +283,7 @@
       </table>
     </div>
   </div>
-  <div class="block overflow-x-auto whitespace-no-wrap pb-8">
+  <div class="block overflow-x-auto whitespace-nowrap pb-8">
     <div class="px-4 md:px-8 table max-w-full">
       <table class="w-full block p-4 bg-item rounded-xl">
         <thead>
@@ -338,7 +338,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   td {
     @apply text-white;
     @apply px-4;

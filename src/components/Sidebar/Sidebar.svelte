@@ -1,6 +1,5 @@
 <script>
   import { fly } from 'svelte/transition';
-  import { getContext } from 'svelte';
   import { mdiCloseCircle } from '@mdi/js';
   import { locale, t } from 'svelte-i18n';
 
@@ -30,7 +29,8 @@
     { id: 'pt', label: 'Português' },
     { id: 'ru', label: 'Русский' },
   ];
-  $: currentLocale = languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' };
+  $: currentLocale =
+    $locale !== null ? languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' } : '';
   $: locales = languages.filter((e) => e.id !== currentLocale.id);
 
   function close() {
@@ -60,7 +60,7 @@
     {/if}
     <SidebarItem
       on:clicked={close}
-      active={segment === undefined}
+      active={segment === ''}
       image="/images/home.png"
       label={$t('sidebar.home')}
       href="/"
@@ -160,7 +160,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .paimon-bg::after {
     content: '';
     top: -50px;

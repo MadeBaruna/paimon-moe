@@ -84,13 +84,13 @@
           <p class="block text-center text-gray-400">{$t('calculator.friendship.based', { values: { ar: $ar } })}</p>
           <table class="text-gray-200">
             <tr>
-              <td class="text-xl font-bold text-primary whitespace-no-wrap pr-4 border-b border-gray-700 pb-1">
+              <td class="text-xl font-bold text-primary whitespace-nowrap pr-4 border-b border-gray-700 pb-1">
                 {$t('calculator.friendship.resultDay', { values: { result } })}
               </td>
               <td class="border-b border-gray-700 pb-1">{$t('calculator.friendship.result')}</td>
             </tr>
             <tr>
-              <td class="text-xl font-bold text-primary whitespace-no-wrap pr-4 pt-1">
+              <td class="text-xl font-bold text-primary whitespace-nowrap pr-4 pt-1">
                 {$t('calculator.friendship.resultDay', { values: { result: resultSerenitea } })}
               </td>
               <td class="pt-1">{$t('calculator.friendship.resultSerenitea')}</td>
@@ -102,7 +102,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .slider {
     @apply w-full h-4 rounded-xl;
     -webkit-appearance: none;

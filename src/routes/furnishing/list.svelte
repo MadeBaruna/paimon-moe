@@ -1,14 +1,11 @@
 <script context="module">
-  import data from '../../data/furnishing/en.json';
-  export async function preload() {
-    return { data };
-  }
+  import dataJson from '../../data/furnishing/en.json';
 </script>
 
 <script>
   import { onMount } from 'svelte';
   import { locale, t } from 'svelte-i18n';
-  import debounce from 'lodash/debounce';
+  import debounce from 'lodash.debounce';
   import { mdiInformationOutline, mdiMinus, mdiPlus } from '@mdi/js';
 
   import TableHeader from '../../components/Table/TableHeader.svelte';
@@ -17,7 +14,7 @@
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
 
-  export let data;
+  let data = dataJson;
 
   let type = 'hall';
   let items = [];
@@ -259,7 +256,7 @@
     </div>
   {/if}
   <div class="flex mt-4 wrapper">
-    <div class="block overflow-x-auto xl:overflow-x-visible whitespace-no-wrap">
+    <div class="block overflow-x-auto xl:overflow-x-visible whitespace-nowrap">
       <div class="px-4 table">
         <table class="w-full block pl-4 pr-4 py-2 md:pl-8 md:py-4 bg-item rounded-xl">
           <tr>
@@ -363,7 +360,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .pill {
     @apply rounded-2xl;
     @apply border-2;
@@ -375,7 +372,7 @@
     @apply outline-none;
     @apply transition;
     @apply duration-100;
-    @apply whitespace-no-wrap;
+    @apply whitespace-nowrap;
 
     &:hover {
       @apply border-primary;

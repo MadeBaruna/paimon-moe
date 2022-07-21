@@ -4,13 +4,13 @@
   import { t } from 'svelte-i18n';
 
   import { characters } from '../../data/characters';
-  import { builds } from '../../data/build';
 
   import Icon from '../../components/Icon.svelte';
 
   const dispatch = createEventDispatcher();
 
-  const promoted = ['kaedehara_kazuha', 'shikanoin_heizou'];
+  export let builds;
+  const promoted = Object.keys(builds);
   let current = 0;
 
   async function change(index) {
@@ -121,7 +121,7 @@ bg-background-secondary rounded-xl py-2 px-4 hover:bg-background transition-colo
   </a>
 </div>
 
-<style>
+<style lang="postcss">
   .pill {
     @apply rounded-2xl;
     @apply border-2;

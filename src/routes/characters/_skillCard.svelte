@@ -107,7 +107,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   td:not(:last-child) {
     @apply border-r;
   }

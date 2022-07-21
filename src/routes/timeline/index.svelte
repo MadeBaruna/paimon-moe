@@ -332,7 +332,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   ::-webkit-scrollbar {
     height: 8px;
   }

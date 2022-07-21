@@ -630,7 +630,7 @@
               {#if currentMax.usage[i] > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-no-wrap"
+                    <span class="text-white mr-2 whitespace-nowrap"
                       >{currentMax.usage[i]}
                       <Icon size={0.5} path={mdiClose} /></span
                     >
@@ -652,7 +652,7 @@
               {#if item.amount > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-no-wrap"
+                    <span class="text-white mr-2 whitespace-nowrap"
                       >{item.amount}
                       <Icon size={0.5} path={mdiClose} /></span
                     >
@@ -670,7 +670,7 @@
             {/each}
             <tr>
               <td class="text-right border-b border-gray-700 py-1">
-                <span class="text-white mr-2 whitespace-no-wrap"
+                <span class="text-white mr-2 whitespace-nowrap"
                   >{numberFormat.format(moraNeeded)}
                   <Icon size={0.5} path={mdiClose} /></span
                 >

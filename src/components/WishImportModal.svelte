@@ -190,7 +190,7 @@
 
       try {
         const res = await fetchRetry(
-          `${__paimon.env.API_HOST}/corsproxy`,
+          `${import.meta.env.VITE_API_HOST}/corsproxy`,
           {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -527,7 +527,7 @@
             </td>
             <td class="border-b border-gray-700 py-1">
               {#if wishes[code] !== undefined}
-                <span class="text-white mr-2 whitespace-no-wrap">
+                <span class="text-white mr-2 whitespace-nowrap">
                   <Icon size={0.5} path={mdiClose} />
                   {numberFormat.format(wishes[code].length)}
                 </span>
@@ -585,10 +585,10 @@
           {#if wishes[code] !== undefined}
             <tr>
               <td class="border-b border-gray-700 py-1">
-                <span class="text-white mr-2 whitespace-no-wrap">{type.name} Banner</span>
+                <span class="text-white mr-2 whitespace-nowrap">{type.name} Banner</span>
               </td>
               <td class="border-b border-gray-700 py-1">
-                <span class="text-white mr-2 whitespace-no-wrap">
+                <span class="text-white mr-2 whitespace-nowrap">
                   <Icon size={0.5} path={mdiClose} />
                   {numberFormat.format(wishes[code].length)}
                 </span>
@@ -788,7 +788,7 @@
   <div class="pb-16 md:pb-0" />
 {/if}
 
-<style>
+<style lang="postcss">
   .pill {
     @apply rounded-2xl;
     @apply border-2;

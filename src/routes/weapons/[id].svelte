@@ -35,13 +35,13 @@
     return Object.values(collection).sort((a, b) => a.id.localeCompare(b.id));
   }
 
-  export async function preload(page) {
-    const { id } = page.params;
+  export async function load({ params }) {
+    const { id } = params;
     const weapon = data[id];
     const materials = weaponList[id].ascension[0].items;
     const recommendedCharacter = getCharacter(id);
 
-    return { id, weapon, materials, recommendedCharacter };
+    return { props: { id, weapon, materials, recommendedCharacter } };
   }
 </script>
 
@@ -137,22 +137,22 @@
         </div>
       {/if}
 
-      <div class="mt-4 flex overflow-x-auto whitespace-no-wrap md:w-auto">
+      <div class="mt-4 flex overflow-x-auto whitespace-nowrap md:w-auto">
         <div style="width: min-content;">
           <div class="table max-w-full rounded-xl border border-gray-200 border-opacity-25">
             <table class="text-gray-200 w-full">
               <tr>
-                <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                   {$t('weapon.asc')}
                 </td>
-                <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                   {$t('weapon.lvl')}
                 </td>
-                <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                   {$t('weapon.baseAtk')}
                 </td>
                 {#if weapon.secondary.name}
-                  <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                     {$t(`weapon.${weapon.secondary.name}`)}
                   </td>
                 {/if}
@@ -185,7 +185,7 @@
   <Ad type="mobile" variant="lb" id="1" />
 </div>
 
-<style>
+<style lang="postcss">
   td:not(:last-child) {
     @apply border-r;
   }

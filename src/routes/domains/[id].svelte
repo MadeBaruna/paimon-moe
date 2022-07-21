@@ -1,11 +1,11 @@
 <script context="module">
-  import artifacts from '../../data/artifacts/en.json';
+  import artifactsJson from '../../data/artifacts/en.json';
   import { domains } from '../../data/domain.js';
-  export async function preload(page) {
-    const { id } = page.params;
+  export async function load({ params }) {
+    const { id } = params;
     const domain = domains[id];
 
-    return { id, artifacts, domain };
+    return { props: { id, domain } };
   }
 </script>
 
@@ -17,8 +17,8 @@
   import Button from '../../components/Button.svelte';
 
   export let id;
-  export let artifacts;
   export let domain;
+  let artifacts = artifactsJson;
 
   let currentArtifacts = [];
 

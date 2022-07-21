@@ -25,7 +25,6 @@
   $: prevEnded = prev !== null && now.isAfter(prev.end);
   $: shouldShowHourStart = diffStart <= 86400000 || event.duration > 6.5 || !prevNearby;
   $: shouldShowHourEnd = diffEnd <= 86400000 || event.duration > 6.5 || !prevNearby;
-
 </script>
 
 <div
@@ -43,7 +42,7 @@
 >
   <div class="event-item {nextDiff < 1 ? '' : 'rounded-xl'}" />
   <span
-    class="event-name text sticky left-0 font-display text-base md:text-lg text-black font-bold whitespace-no-wrap overflow-hidden"
+    class="event-name text sticky left-0 font-display text-base md:text-lg text-black font-bold whitespace-nowrap overflow-hidden"
   >
     {event.name}
   </span>
@@ -82,7 +81,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   div.event-item {
     position: absolute;
     opacity: 1;
@@ -102,5 +101,4 @@
     text-shadow: var(--color) -1px -1px 4px, var(--color) 1px -1px 4px, var(--color) -1px 1px 4px,
       var(--color) 1px 1px 4px, var(--color) 0 0 10px;
   }
-
 </style>
