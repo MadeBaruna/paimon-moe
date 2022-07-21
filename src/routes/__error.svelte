@@ -20,9 +20,8 @@
   let refreshUrl;
 
   onMount(() => {
+    console.error('ERROR', error);
     refreshUrl = `${location.href}?r=${new Date().getTime()}`;
-    window.location.reload();
-    console.error(error);
   });
 </script>
 
