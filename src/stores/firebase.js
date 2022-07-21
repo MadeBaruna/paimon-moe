@@ -75,10 +75,8 @@ async function getToken() {
   console.log('request token');
 
   try {
-    const swRegistration = await navigator.serviceWorker.getRegistration('/firebase-cloud-messaging-push-scope');
     const token = await messaging.getToken({
       vapidKey: 'BA6niiIWa_QP2SXMTjS8gBtM3M7m0q0n0_ZWjECw3Z_iEFujzPG2VdAAvNFJ5btbgpEiRe2B80M4QKxRSxtmvDw',
-      serviceWorkerRegistration: swRegistration,
     });
 
     if (token) {

@@ -46,23 +46,6 @@
     });
     window.localforage = localforage;
     await checkLocalSave();
-
-    if ('serviceWorker' in navigator && import.meta.env.PROD) {
-      navigator.serviceWorker
-        .register('/service-worker.js', {
-          scope: 'firebase-cloud-messaging-push-scope',
-        })
-        .then(
-          function (registration) {
-            console.log('Service worker registration succeeded');
-          },
-          function (error) {
-            console.log('Service worker registration failed:', error);
-          },
-        );
-    } else {
-      console.log('Service workers are not supported.');
-    }
   });
 
   $: segment = $page.url.pathname.substring(1).split('/')[0];
