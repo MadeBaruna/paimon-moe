@@ -30,9 +30,14 @@
 
   startClient();
 
-  page.subscribe(() => {
+  let broadcastChannel;
+  page.subscribe((p) => {
     try {
       window.reloadAdSlots();
+      broadcastChannel.postMessage({
+        type: 'fetch-doc',
+        path: p.url.pathname,
+      });
     } catch (error) {}
   });
 
@@ -46,6 +51,24 @@
     });
     window.localforage = localforage;
     await checkLocalSave();
+
+    if ('serviceWorker' in navigator) {
+      broadcastChannel = new BroadcastChannel('paimonmoe-sw');
+      broadcastChannel.addEventListener('message', (event) => {
+        if (event.data.type === 'update') window.location.reload();
+      });
+
+      navigator.serviceWorker.register('/service-worker.js').then(
+        function () {
+          console.log('service worker registration succeeded');
+        },
+        function (error) {
+          console.log('service worker registration failed:', error);
+        },
+      );
+    } else {
+      console.log('service workers are not supported');
+    }
   });
 
   $: segment = $page.url.pathname.substring(1).split('/')[0];
