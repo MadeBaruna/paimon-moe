@@ -30,7 +30,7 @@
   }
 
   onMount(() => {
-    if ('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator && import.meta.env.PROD) {
       broadcastChannel = new BroadcastChannel('paimonmoe-sw');
       broadcastChannel.addEventListener('message', (event) => {
         if (event.data.type === 'update') refreshUpdate();
