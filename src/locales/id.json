@@ -23,9 +23,6 @@
     "message": "Your best Genshin Impact companion! Membantu kamu merencanakan apa yang harus di farm dengan kalkulator ascension, juga catat progress mu dengan todo dan wish counter.",
     "visitor": "{count} pengunjung dalam 7 hari terakhir",
     "banner": {
-      "featured": [
-        "Eula"
-      ],
       "summoned": "Pulang",
       "percentage": "dari semua {rarity}",
       "avg": "Pity rata-rata",
@@ -962,5 +959,12 @@
   "common": {
     "dataSynced": "Data sudah disinkronkan!",
     "driveError": "Drive Sync tidak tersedia saat ini 😔"
+  },
+  "update": {
+    "newUpdate": "Paimon.moe ada update baru!",
+    "updateRefresh": "Klik refresh untuk mendapatkan updatenya",
+    "whatsNew": "Apa yang baru",
+    "later": "Nanti",
+    "refresh": "Refresh"
   }
 }

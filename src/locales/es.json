@@ -23,9 +23,6 @@
     "message": "¡Tu mejor compañero en Genshin Impact! Paimon.moe te ayuda a planear qué materiales farmear con una calculadora de ascensión, y registra tu progreso con una lista de tareas pendientes y un contador de deseos.",
     "visitor": "{count} visitantes en los últimos 7 días",
     "banner": {
-      "featured": [
-        "Eula"
-      ],
       "summoned": "Invocados",
       "percentage": "de los {rarity}",
       "avg": "Media de Pity",
@@ -960,7 +957,14 @@
     "title": "Girocristal radiante"
   },
   "common": {
-    "dataSynced": "",
-    "driveError": ""
+    "dataSynced": "¡Los datos han sido sincronizados!",
+    "driveError": "Sincronización de Drive no disponible en este momento 😔"
+  },
+  "update": {
+    "newUpdate": "",
+    "updateRefresh": "",
+    "whatsNew": "",
+    "later": "",
+    "refresh": ""
   }
 }

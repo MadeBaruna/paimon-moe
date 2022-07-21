@@ -23,9 +23,6 @@
     "message": "Người đồng hành tuyệt vời của bạn! Giúp bạn lập kế hoạch để cày cuốc, bao gồm công cụ tính toán nguyên liệu cần đột phá, theo dõi tiến độ của những việc bạn cần làm và lịch sử cầu nguyện của bạn.",
     "visitor": "{count} nhà lữ hành đã ghé thăm trong 7 ngày qua",
     "banner": {
-      "featured": [
-        "Eula"
-      ],
       "summoned": "Đã cầu nguyện",
       "percentage": "trên toàn bộ {rarity}",
       "avg": "Số lượt quay trung bình",
@@ -453,7 +450,7 @@
       "character": "Nhân Vật",
       "weapon": "Vũ Khí",
       "winRateOff": "Thắng 50:50",
-      "winRateOffWeapon": ""
+      "winRateOffWeapon": "Thắng 75:25"
     },
     "note": [
       "Lịch sử cầu nguyện không cập nhật tự động, vui lòng Nhập lại để cập nhật lịch sử của bạn!",
@@ -891,8 +888,8 @@
       "inInventory": "Trong túi đồ",
       "available": "Có sẵn",
       "used": "Dùng trong bộ khác",
-      "calculate": "",
-      "exludeOwned": ""
+      "calculate": "Tính Nguyên Liệu",
+      "exludeOwned": "Loại trừ đồ trang trí đã có"
     }
   },
   "weapon": {
@@ -962,5 +959,12 @@
   "common": {
     "dataSynced": "Dữ liệu đã được đồng bộ!",
     "driveError": "Đồng bộ với Drive hiện không có sẵn 😔"
+  },
+  "update": {
+    "newUpdate": "",
+    "updateRefresh": "",
+    "whatsNew": "",
+    "later": "",
+    "refresh": ""
   }
 }

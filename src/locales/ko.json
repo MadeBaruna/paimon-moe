@@ -23,9 +23,6 @@
     "message": "최고의 원신 동반자! 돌파 계산기로 파밍 계획을 도와주고, 할 일 목록과 기원 통계를 통해 진척도를 확인해줍니다.",
     "visitor": "{count} 명의 지난 7일동안의 방문객들",
     "banner": {
-      "featured": [
-        "유라"
-      ],
       "summoned": "획득",
       "percentage": "(모든 {rarity} 중)",
       "avg": "평균 천장",
@@ -117,12 +114,12 @@
     "build": "육성",
     "source": "커뮤니티 캐릭터 빌드는 Genshin Helper Team이 만들었습니다",
     "faq": "표시되는 운명의 자리는 제출해 주신 기원 통계 데이터에 기반합니다. 따라서, 기원 통계에 제출하지 못한 채 사라진 기원 데이터가 있거나, 상점에서 캐릭터를 구매했다면 운명의 자리가 정확하지 않을 수 있습니다! 하지만 캐릭터 상세 페이지에서 캐릭터 이름 옆의 연필 모양을 눌러 직접 수정할 수 있습니다.",
-    "mainStats": "",
-    "subStats": "",
-    "talentPriority": "",
-    "abilityTip": "",
-    "weapons": "",
-    "artifacts": ""
+    "mainStats": "주 옵션",
+    "subStats": "부 옵션",
+    "talentPriority": "특성 우선 순위",
+    "abilityTip": "능력 팁",
+    "weapons": "무기",
+    "artifacts": "성유물"
   },
   "wish": {
     "title": "기원 통계",
@@ -422,7 +419,7 @@
       "rarity": "",
       "total": "",
       "percent": "",
-      "pityAverage": ""
+      "pityAverage": "평균 천장"
     },
     "tally": {
       "title": "기원 총계",
@@ -449,9 +446,9 @@
     "summary": {
       "total": "",
       "percent": "",
-      "pityAverage": "",
-      "character": "",
-      "weapon": "",
+      "pityAverage": "평균 천장",
+      "character": "캐릭터",
+      "weapon": "무기",
       "winRateOff": "",
       "winRateOffWeapon": ""
     },
@@ -487,8 +484,8 @@
       "lessTotal": "전체 paimon.moe 유저의 {percentage}%보다 적은 뽑기 횟수",
       "moreLuck": "전체 paimon.moe 유저의 {percentage}%보다 운이 좋음",
       "lessLuck": "전체 paimon.moe 유저의 {percentage}%보다 운이 나쁨",
-      "top": "",
-      "bottom": ""
+      "top": "상위",
+      "bottom": "하위"
     }
   },
   "calculator": {
@@ -694,19 +691,19 @@
     "or": "또는",
     "thanks": "감사합니다 😁!",
     "credits": {
-      "title": "",
+      "title": "크레딧",
       "items": [
         {
-          "name": "",
-          "value": ""
+          "name": "데이터와 이미지",
+          "value": "Genshin Impact Wiki"
+        },
+        {
+          "name": "통계 데이터",
+          "value": "Dimbreath Genshin Data"
         },
         {
           "name": "",
-          "value": ""
-        },
-        {
-          "name": "",
-          "value": ""
+          "value": "Data Gathering Discord"
         }
       ]
     },
@@ -774,15 +771,15 @@
       "and",
       "paimon-moe Github"
     ],
-    "subtitleAd": "",
+    "subtitleAd": "광고",
     "ad": [
       "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "그들의",
+      " 개인정보처리방침",
+      "과",
+      "쿠키 정책",
+      "을 확인할 수 있습니다. 쿠키를 관리하려면",
+      "여기를 누르세요."
     ]
   },
   "sync": {
@@ -806,12 +803,12 @@
     "official": "공식 링크",
     "link": {
       "github": "",
-      "discord": "",
-      "devTwitter": "",
-      "reddit": "",
-      "facebook": "",
-      "cookieSettings": "",
-      "privacyPolicy": ""
+      "discord": "디스코드",
+      "devTwitter": "개발자 트위터",
+      "reddit": "레딧",
+      "facebook": "페이스북",
+      "cookieSettings": "쿠키 설정",
+      "privacyPolicy": "개인정보처리방침"
     }
   },
   "donate": {
@@ -876,7 +873,7 @@
     "corridor": "복도",
     "inventoryButton": "보관함",
     "listButton": "목록",
-    "selectCharacter": "",
+    "selectCharacter": "캐릭터를 선택해주세요...",
     "inventory": {
       "title": "가구 보관함",
       "subtitle": "벽 등 특수 카테고리는 표시되지 않습니다",
@@ -891,8 +888,8 @@
       "inInventory": "보유량",
       "available": "배치 가능",
       "used": "다른 세트에서 사용중",
-      "calculate": "",
-      "exludeOwned": ""
+      "calculate": "재료 계산",
+      "exludeOwned": "보유한 가구 제외하기"
     }
   },
   "weapon": {
@@ -932,15 +929,15 @@
     "artifact": "성유물",
     "setPiece": "{piece} 세트 효과",
     "recommendedCharacter": "추천 캐릭터 {piece} 세트",
-    "18ATKSet": "",
-    "20EnergyRechargeSet": "",
-    "25PhysicalDmgSet": "",
+    "18ATKSet": "공격력 +18% 세트",
+    "20EnergyRechargeSet": "원소 충전 효율 +20% 세트",
+    "25PhysicalDmgSet": "물리 피해 보너스 +25% 세트",
     "sands": "",
     "goblet": "",
     "circlet": "",
     "choose2": "",
     "pieceStat": "",
-    "pieceInfo": ""
+    "pieceInfo": "성유물 이미지를 클릭해 추천되는 주 옵션을 확인하세요"
   },
   "fishing": {
     "title": "낚시 사전",
@@ -962,5 +959,12 @@
   "common": {
     "dataSynced": "데이터가 연동되었습니다!",
     "driveError": "현재 드라이브와 연동이 불가능합니다 😔"
+  },
+  "update": {
+    "newUpdate": "",
+    "updateRefresh": "",
+    "whatsNew": "",
+    "later": "",
+    "refresh": ""
   }
 }

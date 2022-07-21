@@ -23,9 +23,6 @@
     "message": "Votre meilleur compagnon pour Genshin Impact ! Vous aide à planifier ce que vous souhaitez farmer avec le calculateur d'élévation et vous permet de suivre votre progression avec la liste de tâches et le compteur de voeux.",
     "visitor": "{count} visiteurs au cours des 7 derniers jours",
     "banner": {
-      "featured": [
-        "Eula"
-      ],
       "summoned": "Invocation",
       "percentage": "parmis tous les {rarity}",
       "avg": "Pity moyenne",
@@ -962,5 +959,12 @@
   "common": {
     "dataSynced": "Les données ont été resynchronisées !",
     "driveError": "La synchronisation Drive n'est pas disponible pour le moment 😔"
+  },
+  "update": {
+    "newUpdate": "",
+    "updateRefresh": "",
+    "whatsNew": "",
+    "later": "",
+    "refresh": ""
   }
 }

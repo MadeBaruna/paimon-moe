@@ -23,9 +23,6 @@
     "message": "Dein bester Begleiter für Genshin Impact! Nutze den Aufstiegsrechner, um zu planen, welche Gegenstände du farmen möchtest und verfolge deinen Fortschritt mit dem Gebetezähler und der To-Do-Liste.",
     "visitor": "{count} Besucher in den letzten 7 Tagen",
     "banner": {
-      "featured": [
-        "Eula"
-      ],
       "summoned": "Gezogen",
       "percentage": "aus allen {rarity}",
       "avg": "Garantie Durchschnitt",
@@ -962,5 +959,12 @@
   "common": {
     "dataSynced": "",
     "driveError": ""
+  },
+  "update": {
+    "newUpdate": "",
+    "updateRefresh": "",
+    "whatsNew": "",
+    "later": "",
+    "refresh": ""
   }
 }
