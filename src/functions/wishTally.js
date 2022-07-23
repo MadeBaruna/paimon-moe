@@ -7,7 +7,7 @@ const bannerCategories = ['beginners', 'standard', 'character-event', 'weapon-ev
 
 async function sendWish(data) {
   try {
-    await fetch(`${__paimon.env.API_HOST}/wish`, {
+    await fetch(`${import.meta.env.VITE_API_HOST}/wish`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
@@ -19,7 +19,7 @@ async function sendWish(data) {
 
 async function sendWishTotal(data) {
   try {
-    await fetch(`${__paimon.env.API_HOST}/wish/total`, {
+    await fetch(`${import.meta.env.VITE_API_HOST}/wish/total`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
@@ -31,7 +31,7 @@ async function sendWishTotal(data) {
 
 async function sendWishConstellation(data) {
   try {
-    await fetch(`${__paimon.env.API_HOST}/wish/constellation`, {
+    await fetch(`${import.meta.env.VITE_API_HOST}/wish/constellation`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),

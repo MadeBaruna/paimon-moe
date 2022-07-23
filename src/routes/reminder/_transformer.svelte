@@ -45,7 +45,7 @@
     if ($firebaseToken === '') return;
 
     console.log('get reminder');
-    const url = new URL(`${__paimon.env.API_HOST}/reminder`);
+    const url = new URL(`${import.meta.env.VITE_API_HOST}/reminder`);
     const query = new URLSearchParams({ token: $firebaseToken, type: 'transformer' });
     url.search = query.toString();
 
@@ -70,7 +70,7 @@
 
   async function deleteCurrentReminder() {
     console.log('delete reminder');
-    const url = new URL(`${__paimon.env.API_HOST}/reminder`);
+    const url = new URL(`${import.meta.env.VITE_API_HOST}/reminder`);
     const query = new URLSearchParams({ token: $firebaseToken, type: 'transformer' });
     url.search = query.toString();
 
@@ -109,7 +109,7 @@
     }
 
     try {
-      const res = await fetch(`${__paimon.env.API_HOST}/reminder`, {
+      const res = await fetch(`${import.meta.env.VITE_API_HOST}/reminder`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

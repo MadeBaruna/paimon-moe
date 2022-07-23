@@ -1,23 +1,20 @@
 <script context="module">
-  import data from '../../data/furnishing/en.json';
-  import categories from '../../data/furnishing/category/en.json';
-  export async function preload() {
-    return { data, categories };
-  }
+  import dataJson from '../../data/furnishing/en.json';
+  import categoriesJson from '../../data/furnishing/category/en.json';
 </script>
 
 <script>
   import { locale, t } from 'svelte-i18n';
   import { onMount, tick } from 'svelte';
   import { mdiMinus, mdiPlus } from '@mdi/js';
-  import debounce from 'lodash/debounce';
+  import debounce from 'lodash.debounce';
   import Icon from '../../components/Icon.svelte';
   import { readSave, updateSave } from '../../stores/saveManager';
   import { getAccountPrefix } from '../../stores/account';
   import Button from '../../components/Button.svelte';
 
-  export let data;
-  export let categories;
+  let data = dataJson;
+  let categories = categoriesJson;
 
   let loading = true;
   let active = {
@@ -221,7 +218,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   .category {
     width: 100%;
   }

@@ -4,7 +4,7 @@
   import { onMount, getContext, createEventDispatcher } from 'svelte';
   import { slide } from 'svelte/transition';
   import { mdiPencil, mdiStar, mdiChevronDown, mdiTableOfContents, mdiArrowUpCircle } from '@mdi/js';
-  import debounce from 'lodash/debounce';
+  import debounce from 'lodash.debounce';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
@@ -319,7 +319,7 @@
         isEdit ? 'bg-item flex-col py-2' : 'bg-background flex-row items-center justify-center mb-2 p-4'
       } rounded-xl flex relative`}
     >
-      <span class="text-gray-200 whitespace-no-wrap flex-1">
+      <span class="text-gray-200 whitespace-nowrap flex-1">
         {$t('wish.lifetimePulls')}<br />
         <span class="flex items-center text-gray-600">
           <img class="w-4 h-4 mr-2" src="/images/primogem.png" alt="primogem" />
@@ -345,7 +345,7 @@
           </div>
         </div>
       {/if}
-      <span class="text-gray-200 whitespace-no-wrap flex-1">
+      <span class="text-gray-200 whitespace-nowrap flex-1">
         5★ {$t('wish.pity')}
         <br /><span class="text-gray-600">{$t('wish.guarantee', { values: { pity: legendaryPity } })}</span>
       </span>
@@ -374,7 +374,7 @@
           </div>
         </div>
       {/if}
-      <span class="text-gray-200 whitespace-no-wrap flex-1">
+      <span class="text-gray-200 whitespace-nowrap flex-1">
         4★ {$t('wish.pity')}
         <br /><span class="text-gray-600">{$t('wish.guarantee', { values: { pity: 10 } })}</span>
       </span>
@@ -476,7 +476,7 @@
             {:else if pull.type === 'unknown_3_star'}
               <td class="border-b border-gray-700 py-1 pl-2 font-semibold text-primary">Unknown</td>
             {/if}
-            <td class="border-b border-gray-700 text-xs py-1 px-2 whitespace-no-wrap" style="font-family: monospace;">
+            <td class="border-b border-gray-700 text-xs py-1 px-2 whitespace-nowrap" style="font-family: monospace;">
               {pull.time}
             </td>
             <td class="text-right border-b border-gray-700 py-1">{pull.pity}</td>
@@ -487,7 +487,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   .pill {
     @apply rounded-2xl;
     @apply border-2;

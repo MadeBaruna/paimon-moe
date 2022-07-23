@@ -32,7 +32,7 @@
       <td class="text-white text-md font-semibold pr-2 md:pr-4 flex-1 w-full">{$t(`wish.types.${type.id}`)}</td>
       <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">{$t('wish.summary.total')}</td>
       <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">{$t('wish.summary.percent')}</td>
-      <td class="text-gray-400 text-sm font-display text-right whitespace-no-wrap">{$t('wish.summary.pityAverage')}</td>
+      <td class="text-gray-400 text-sm font-display text-right whitespace-nowrap">{$t('wish.summary.pityAverage')}</td>
     </tr>
     <tr>
       <td class="text-legendary-from font-semibold pr-2 md:pr-4 border-t border-gray-700">
@@ -146,13 +146,13 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   span.pity {
     @apply rounded-xl;
     @apply text-gray-400;
     @apply border;
     @apply border-legendary-from;
-    @apply whitespace-no-wrap;
+    @apply whitespace-nowrap;
     @apply px-2;
     @apply mb-1;
     @apply mr-1;

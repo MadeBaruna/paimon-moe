@@ -1,14 +1,11 @@
 <script context="module">
-  import data from '../../data/radiantSpincrystal/en.json';
-  export async function preload() {
-    return { data };
-  }
+  import dataJson from '../../data/radiantSpincrystal/en.json';
 </script>
 
 <script>
   import { onMount } from 'svelte';
   import { locale, t } from 'svelte-i18n';
-  import debounce from 'lodash/debounce';
+  import debounce from 'lodash.debounce';
   import { mdiMapMarker, mdiMusic, mdiOpenInNew } from '@mdi/js';
   import Icon from '../../components/Icon.svelte';
   import Check from '../../components/Check.svelte';
@@ -16,7 +13,7 @@
   import { readSave, updateSave } from '../../stores/saveManager';
   import Ad from '../../components/Ad.svelte';
 
-  export let data;
+  let data = dataJson;
 
   let spincrystals = data;
   let checkList = {};
@@ -136,7 +133,7 @@
 <Ad type="desktop" variant="lb" id="2" />
 <Ad type="mobile" variant="lb" id="1" />
 
-<style>
+<style lang="postcss">
   .text {
     line-height: initial;
   }

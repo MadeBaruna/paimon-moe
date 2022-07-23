@@ -52,7 +52,7 @@
   {/if}
   {#if spin !== false}
     {#if inverse}
-      <style>
+      <style lang="postcss">
         @keyframes spin-inverse {
           to {
             transform: rotate(-360deg);
@@ -60,7 +60,7 @@
         }
       </style>
     {:else}
-      <style>
+      <style lang="postcss">
         @keyframes spin {
           to {
             transform: rotate(360deg);
@@ -76,7 +76,7 @@
   {/if}
 </svg>
 
-<style>
+<style lang="postcss">
   svg {
     vertical-align: middle;
     display: inline-block;

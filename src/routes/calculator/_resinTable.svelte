@@ -31,7 +31,7 @@
   counTimeRelative();
 </script>
 
-<div class="block overflow-x-auto whitespace-no-wrap pb-1">
+<div class="block overflow-x-auto whitespace-nowrap pb-1">
   <div class="table w-full">
     <div class="bg-item rounded-xl p-4 w-full">
       <table class="w-full">
@@ -57,7 +57,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   td,
   th {
     @apply py-1;

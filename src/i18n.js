@@ -1,23 +1,22 @@
 import dayjs from 'dayjs';
 import { register, addMessages, init, getLocaleFromNavigator, locale as $locale } from 'svelte-i18n';
+import { browser } from '$app/env';
 
 import en from './locales/en.json';
 import enItems from './locales/items/en.json';
 
 const INIT_OPTIONS = {
   fallbackLocale: 'en',
-  initialLocale: null,
+  initialLocale: 'en',
 };
 
-let currentLocale = null;
-
+let isLoaded = false;
 $locale.subscribe((value) => {
-  if (value == null) return;
+  if (value === null) return;
 
-  currentLocale = value;
+  if (isLoaded) localStorage.setItem('locale', value);
 
   if (typeof window !== 'undefined') {
-    localStorage.setItem('locale', value);
     dayjsLocales[value]().then(() => dayjs.locale(value));
   }
 });
@@ -66,51 +65,27 @@ const dayjsLocales = {
   vi: () => import('dayjs/locale/vi'),
 };
 
-export function startClient() {
-  let used = 'en';
-  const savedLocale = localStorage.getItem('locale');
-  const detectedLocale = getLocaleFromNavigator().substring(0, 2);
-  if (savedLocale !== null) {
-    if (!supportedLanguage.includes(savedLocale)) {
-      localStorage.setItem('locale', 'en');
-    } else {
-      used = savedLocale;
-    }
-  } else if (supportedLanguage.includes(detectedLocale)) {
-    used = detectedLocale;
-  }
-
+export async function startClient() {
   init({
     ...INIT_OPTIONS,
-    initialLocale: used,
   });
-}
 
-const DOCUMENT_REGEX = /(^([^.?#@]+)?([?#](.+)?)?|service-worker.*?\.html)$/;
-export function i18nMiddleware() {
-  init(INIT_OPTIONS);
-
-  return (req, res, next) => {
-    const isDocument = DOCUMENT_REGEX.test(req.originalUrl);
-    if (!isDocument) {
-      next();
-      return;
-    }
-
-    let locale = 'en';
-    if (req.headers['accept-language']) {
-      const headerLang = req.headers['accept-language'].split(',')[0].trim();
-      if (headerLang.length > 1) {
-        locale = headerLang;
+  if (browser) {
+    let used = 'en';
+    const savedLocale = localStorage.getItem('locale');
+    const detectedLocale = getLocaleFromNavigator().substring(0, 2);
+    if (savedLocale !== null) {
+      if (!supportedLanguage.includes(savedLocale)) {
+        localStorage.setItem('locale', 'en');
+      } else {
+        used = savedLocale;
       }
-    } else {
-      locale = INIT_OPTIONS.initialLocale || INIT_OPTIONS.fallbackLocale;
+    } else if (supportedLanguage.includes(detectedLocale)) {
+      used = detectedLocale;
     }
 
-    if (locale != null && locale !== currentLocale) {
-      $locale.set(locale.substring(0, 2));
-    }
-
-    next();
-  };
+    $locale.set(used);
+    isLoaded = true;
+    console.log('change i18n', used);
+  }
 }

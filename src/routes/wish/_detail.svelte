@@ -70,7 +70,7 @@
       <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-left">{$t('wish.detail.rarity')}</td>
       <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">{$t('wish.detail.total')}</td>
       <td class="text-gray-400 text-sm font-display pr-2 md:pr-4 text-right">{$t('wish.detail.percent')}</td>
-      <td class="text-gray-400 text-sm font-display text-right whitespace-no-wrap">{$t('wish.detail.pityAverage')}</td>
+      <td class="text-gray-400 text-sm font-display text-right whitespace-nowrap">{$t('wish.detail.pityAverage')}</td>
     </tr>
     <tr>
       <td class="text-legendary-from font-semibold pr-2 md:pr-4 border-t border-gray-700">
@@ -101,7 +101,7 @@
       </td>
     </tr>
     <tr>
-      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700 whitespace-no-wrap">
+      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700 whitespace-nowrap">
         └ {$t('wish.detail.character')}
       </td>
       <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
@@ -115,7 +115,7 @@
       </td>
     </tr>
     <tr>
-      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700 whitespace-no-wrap">
+      <td class="text-rare-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700 whitespace-nowrap">
         └ {$t('wish.detail.weapon')}
       </td>
       <td class="text-rare-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
@@ -136,13 +136,13 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   span.pity {
     @apply rounded-xl;
     @apply text-gray-400;
     @apply border;
     @apply border-legendary-from;
-    @apply whitespace-no-wrap;
+    @apply whitespace-nowrap;
     @apply px-2;
     @apply mb-1;
     @apply mr-1;

@@ -82,27 +82,6 @@
 </script>
 
 <!-- 
-$w: var(--col-width); // minmax(Min(20em, 100%), 1fr);
-$s: var(--grid-gap); // .5em;
--->
-<style>
-  :global(.__grid--masonry) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, var(--col-width));
-    grid-template-rows: masonry;
-    justify-content: center;
-    grid-gap: var(--grid-gap);
-    padding: var(--grid-gap);
-  }
-  :global(.__grid--masonry > *) {
-    align-self: start;
-  }
-  :global(.__grid--masonry.__stretch-first > *:first-child) {
-    grid-column: 1/ -1;
-  }
-</style>
-
-<!-- 
   An almost direct copy and paste of: https://css-tricks.com/a-lightweight-masonry-solution
   Usage:
     - stretchFirst stretches the first item across the top
@@ -124,6 +103,28 @@ $s: var(--grid-gap); // .5em;
 <div
   bind:this={masonryElement}
   class={`__grid--masonry ${stretchFirst ? '__stretch-first' : ''}`}
-  style={`--grid-gap: ${gridGap}; --col-width: ${colWidth};`}>
+  style={`--grid-gap: ${gridGap}; --col-width: ${colWidth};`}
+>
   <slot />
 </div>
+
+<!-- 
+$w: var(--col-width); // minmax(Min(20em, 100%), 1fr);
+$s: var(--grid-gap); // .5em;
+-->
+<style lang="postcss">
+  :global(.__grid--masonry) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--col-width));
+    grid-template-rows: masonry;
+    justify-content: center;
+    grid-gap: var(--grid-gap);
+    padding: var(--grid-gap);
+  }
+  :global(.__grid--masonry > *) {
+    align-self: start;
+  }
+  :global(.__grid--masonry.__stretch-first > *:first-child) {
+    grid-column: 1/ -1;
+  }
+</style>

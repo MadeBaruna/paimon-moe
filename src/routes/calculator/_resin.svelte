@@ -132,7 +132,7 @@
           <table class="w-full">
             <tr>
               <td class="text-right border-b border-gray-700 py-1">
-                <span class="text-white mr-2 whitespace-no-wrap"
+                <span class="text-white mr-2 whitespace-nowrap"
                   >{resinOutput.resin}
                   <Icon size={0.5} path={mdiClose} /></span
                 >
@@ -150,7 +150,7 @@
               <tr><td colspan="2" class="text-white text-center pt-2">{$t('calculator.resin.or')}</td></tr>
               <tr>
                 <td class="text-right border-b border-gray-700 py-1">
-                  <span class="text-white mr-2 whitespace-no-wrap"
+                  <span class="text-white mr-2 whitespace-nowrap"
                     >{resinOutput.condensed.resin}
                     <Icon size={0.5} path={mdiClose} /></span
                   >
@@ -166,7 +166,7 @@
               </tr>
               <tr>
                 <td class="text-right border-b border-gray-700 py-1">
-                  <span class="text-white mr-2 whitespace-no-wrap"
+                  <span class="text-white mr-2 whitespace-nowrap"
                     >{resinOutput.condensed.condensedResin}
                     <Icon size={0.5} path={mdiClose} /></span
                   >
@@ -184,7 +184,9 @@
             <tr>
               <td class="text-red-400" colspan="2">
                 {$t('calculator.resin.fullTime')}:
-                {fullTime.locale($t('calculator.resin.timeFormat')).format('dddd HH:mm:ss')} ({fullTime.locale($t('calculator.resin.timeFormat')).fromNow()})
+                {fullTime.locale($t('calculator.resin.timeFormat')).format('dddd HH:mm:ss')} ({fullTime
+                  .locale($t('calculator.resin.timeFormat'))
+                  .fromNow()})
               </td>
             </tr>
           </table>

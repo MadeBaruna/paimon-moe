@@ -1,4 +1,3 @@
-import { Workbook } from 'exceljs';
 import dayjs from 'dayjs';
 
 import { banners } from '../data/banners';
@@ -7,6 +6,8 @@ import { bannersDual } from '../data/bannersDual';
 import { getTimeOffset } from '../stores/server';
 import { process } from './wish';
 
+let Workbook;
+
 const bannerCategories = {
   'character-event': 'Character Event',
   'weapon-event': 'Weapon Event',
@@ -14,7 +15,9 @@ const bannerCategories = {
   beginners: "Beginners' Wish",
 };
 
-function createWorkbook() {
+async function createWorkbook() {
+  Workbook = (await import('exceljs')).Workbook;
+
   const workbook = new Workbook();
   workbook.creator = 'Paimon.moe';
   workbook.created = new Date();
@@ -223,7 +226,7 @@ async function downloadFile(workbook) {
 }
 
 export async function exportToExcel() {
-  const workbook = createWorkbook();
+  const workbook = await createWorkbook();
 
   addSheet(workbook);
   await addBanners(workbook);

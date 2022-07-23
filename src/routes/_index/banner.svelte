@@ -37,7 +37,7 @@
   let user = '';
 
   async function getData() {
-    const url = new URL(`${__paimon.env.API_HOST}/wish`);
+    const url = new URL(`${import.meta.env.VITE_API_HOST}/wish`);
     const query = new URLSearchParams({ banner: bannerId });
     url.search = query.toString();
 

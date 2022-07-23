@@ -703,7 +703,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   .pill {
     @apply rounded-2xl;
     @apply border-2;

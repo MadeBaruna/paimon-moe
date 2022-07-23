@@ -1,7 +1,7 @@
 <script context="module">
-  export async function preload(page) {
-    const { id } = page.params;
-    return { id };
+  export async function load({ params }) {
+    const { id } = params;
+    return { props: { id } };
   }
 </script>
 
@@ -510,7 +510,7 @@
     </div>
   {:else}
     <div class="flex mt-4 wrapper">
-      <div class="block overflow-x-auto xl:overflow-x-visible whitespace-no-wrap px">
+      <div class="block overflow-x-auto xl:overflow-x-visible whitespace-nowrap px">
         <div class="flex pl-4 md:pl-8 mb-2">
           <button on:click={() => toggleShowRarity(0)} class={`pill legendary ${showRarity[0] ? 'active' : ''}`}>
             5 <Icon path={mdiStar} size={0.75} className="mb-1" />
@@ -600,7 +600,7 @@
                   : ''}"
               >
                 <td
-                  class="border-t border-gray-700 px-4 text-gray-200 whitespace-no-wrap relative"
+                  class="border-t border-gray-700 px-4 text-gray-200 whitespace-nowrap relative"
                   style="font-family: monospace;"
                 >
                   {pull.formattedTime}
@@ -710,19 +710,18 @@
   <Ad type="mobile" variant="lb" id="1" />
 </div>
 
-<style>
+<style lang="postcss">
   .wrapper {
     @apply flex-col-reverse;
 
     .chart-area {
       @apply px-4;
-
-      @screen md {
-        @apply px-8;
-      }
+      @apply md:px-8;
     }
+  }
 
-    @media (min-width: 1920px) {
+  @media (min-width: 1920px) {
+    .wrapper {
       @apply flex-row;
 
       .chart-area {

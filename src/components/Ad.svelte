@@ -2,7 +2,7 @@
   export let type;
   export let variant;
   export let id;
-  export let style;
+  export let style = '';
 
   let _class = '';
   export { _class as class };

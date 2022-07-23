@@ -1,14 +1,13 @@
 <script context="module">
-  import { builds as buildsJson } from '../../data/build';
   import artifactData from '../../data/artifacts/en.json';
   import weaponData from '../../data/weapons/en.json';
 
-  export async function preload(page) {
-    const { id } = page.params;
+  export async function load({ params, fetch }) {
+    const { id } = params;
     const data = await import(`../../data/characterData/${id}.json`);
-    const buildData = buildsJson[id];
+    const buildData = await (await fetch(`/characters/build/${id}.json`)).json();
 
-    return { id, data, buildData, artifactData, weaponData };
+    return { props: { id, data, buildData } };
   }
 </script>
 
@@ -16,8 +15,6 @@
   export let id;
   export let data;
   export let buildData;
-  export let artifactData;
-  export let weaponData;
 
   import { onMount } from 'svelte';
   import { t, locale } from 'svelte-i18n';
@@ -340,34 +337,34 @@
             </div>
           </div>
         </div>
-        <div class="md:px-4 mt-4 block overflow-x-auto whitespace-no-wrap w-screen md:w-auto">
+        <div class="md:px-4 mt-4 block overflow-x-auto whitespace-nowrap w-screen md:w-auto">
           <div class="px-4" style="width: min-content;">
             <div class="table max-w-full rounded-xl border border-gray-200 border-opacity-25">
               <table class="text-gray-200 w-full">
                 <tr>
-                  <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                     {$t('characters.asc')}
                   </td>
-                  <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                     {$t('characters.lvl')}
                   </td>
-                  <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                     {$t('characters.hp')}
                   </td>
-                  <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                     {$t('characters.atk')}
                   </td>
-                  <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                     {$t('characters.def')}
                   </td>
-                  <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2"
+                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2"
                     >{$t('characters.critRate')}
                   </td>
-                  <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2"
+                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2"
                     >{$t('characters.critDamage')}
                   </td>
                   {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage'}
-                    <td class="text-center whitespace-no-wrap border-gray-700 font-semibold px-2">
+                    <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                       {$t(`characters.${data.statGrow}`)}
                     </td>
                   {/if}
@@ -556,7 +553,7 @@
                         class="flex items-center justify-center bg-background rounded-md px-2 py-1 mb-1 mr-1"
                         style="height: 40px;"
                       >
-                        <p class="text-center whitespace-no-wrap text-primary" style="padding-top: 2px;">
+                        <p class="text-center whitespace-nowrap text-primary" style="padding-top: 2px;">
                           {$t('artifact.choose2')}
                         </p>
                       </div>
@@ -735,7 +732,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .pill {
     @apply rounded-2xl;
     @apply border-2;

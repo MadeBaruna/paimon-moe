@@ -145,7 +145,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   .hovered {
     @apply text-white !important;
     @apply bg-primary;

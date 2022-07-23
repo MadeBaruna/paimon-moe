@@ -1,14 +1,11 @@
 <script context="module">
-  import setsData from '../../data/furnishing/sets/en.json';
-  import data from '../../data/furnishing/en.json';
-  export async function preload() {
-    return { data, setsData };
-  }
+  import setsDataJson from '../../data/furnishing/sets/en.json';
+  import furnishingDataJson from '../../data/furnishing/en.json';
 </script>
 
 <script>
   import { locale, t } from 'svelte-i18n';
-  import debounce from 'lodash/debounce';
+  import debounce from 'lodash.debounce';
   import { mdiCheckCircleOutline, mdiClose } from '@mdi/js';
 
   import Button from '../../components/Button.svelte';
@@ -21,8 +18,8 @@
 
   const { open: openModal } = getContext('simple-modal');
 
-  export let data;
-  export let setsData;
+  let data = furnishingDataJson;
+  let setsData = setsDataJson;
 
   let loading = true;
   let furnishing = {};
@@ -277,7 +274,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   .popup {
     @apply text-sm pt-1 hidden p-2 rounded-xl;
   }

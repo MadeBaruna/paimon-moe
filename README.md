@@ -4,13 +4,13 @@
 
 Your best Genshin Impact companion! Paimon.moe helps you plan what to farm with ascension calculator and database. It also tracks your progress with a todo list and a wish counter.
 
-Created with [Sapper](https://sapper.svelte.dev/) + [Tailwind CSS](https://tailwindcss.com/)
+Created with [SvelteKit](https://kit.svelte.dev/) + [Tailwind CSS](https://tailwindcss.com/)
 
 # Development
 
 ```
 # install dependencies
-yarn
+pnpm i
 
 # you need the api to run wish importer and wish tally
 git clone https://github.com/MadeBaruna/paimon-moe-api
@@ -20,10 +20,10 @@ docker-compose up -d
 # run in dev mode
 cp .env.example .env
 vi .env
-yarn dev
+pnpm dev
 
 # export as production static site
-yarn export
+pnpm build
 ```
 
 # License

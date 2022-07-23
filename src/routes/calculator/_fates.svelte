@@ -334,7 +334,7 @@
             </tr>
           {/each}
           <tr>
-            <td class="border-t border-gray-700 text-white text-right whitespace-no-wrap" colspan={5}>
+            <td class="border-t border-gray-700 text-white text-right whitespace-nowrap" colspan={5}>
               {$t('calculator.fate.totalGenesis')}
               {numberFormat.format(resultTotal)}
               <img class="mr-1 w-6 inline" src="/images/genesis_crystal.png" alt="Genesis" />
@@ -343,7 +343,7 @@
             </td>
           </tr>
           <tr>
-            <td class="border-t border-gray-700 text-white text-right whitespace-no-wrap" colspan={5}>
+            <td class="border-t border-gray-700 text-white text-right whitespace-nowrap" colspan={5}>
               {$t('calculator.fate.totalPrice')}
               {currencyLabel}{numberFormat.format(resultTotalPrice)}
             </td>

@@ -23,9 +23,6 @@
     "message": "Your best Genshin Impact companion! Paimon.moe helps you plan what to farm with an ascension calculator, and it also tracks your progress with a todo list and a wish counter.",
     "visitor": "{count} visitors in the last 7 days",
     "banner": {
-      "featured": [
-        "Eula"
-      ],
       "summoned": "Summoned",
       "percentage": "from all {rarity}",
       "avg": "Pity average",
@@ -963,5 +960,12 @@
   "common": {
     "dataSynced": "Data has been synced!",
     "driveError": "Drive sync not available right now 😔"
+  },
+  "update": {
+    "newUpdate": "Paimon.moe has a new update!",
+    "updateRefresh": "Click refresh to get the new update",
+    "whatsNew": "What's new",
+    "later": "Later",
+    "refresh": "Refresh"
   }
 }

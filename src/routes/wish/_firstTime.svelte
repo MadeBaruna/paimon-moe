@@ -43,7 +43,7 @@
     </p>
     <p class="mb-2">
       {$t('wish.welcomeStart1')}
-      <span class="bg-background px-2 rounded-xl font-bold whitespace-no-wrap">{$t('wish.autoImport')}</span>
+      <span class="bg-background px-2 rounded-xl font-bold whitespace-nowrap">{$t('wish.autoImport')}</span>
       {$t('wish.welcomeStart2')}
       <Icon path={mdiArrowUp} size={1.2} />
     </p>
@@ -54,7 +54,7 @@
   </div>
 </div>
 
-<style>
+<style lang="postcss">
   .bubble::after {
     content: '';
     position: absolute;

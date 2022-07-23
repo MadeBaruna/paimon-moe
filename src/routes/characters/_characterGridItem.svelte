@@ -1,5 +1,5 @@
 <script>
-  import { afterUpdate, onMount, tick } from 'svelte';
+  import { onMount, tick } from 'svelte';
 
   export let id;
   export let char;
@@ -64,7 +64,7 @@
   </div>
 </a>
 
-<style>
+<style lang="postcss">
   .small {
     font-size: 12px;
     line-height: 1;
@@ -75,8 +75,6 @@
   .cell {
     width: calc(33.33333% - 1rem);
 
-    @screen md {
-      @apply w-24;
-    }
+    @apply md:w-24;
   }
 </style>

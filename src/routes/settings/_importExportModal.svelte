@@ -67,7 +67,7 @@
   <p class="text-red-400 mb-2">{$t('settings.importWarning')}</p>
   {#if !loading}
     <div class="flex">
-      <Button className="mr-2 overflow-hidden whitespace-no-wrap" on:click={() => input.click()}>
+      <Button className="mr-2 overflow-hidden whitespace-nowrap" on:click={() => input.click()}>
         {files !== null && files[0] ? files[0].name : $t('settings.selectFile')}
       </Button>
       {#if files !== null && files[0]}

@@ -23,9 +23,6 @@
     "message": "Seu melhor companheiro de Genshin Impact! Planeje seu farm com a calculadora de ascensão e acompanhe seu progresso com a lista de afazeres e o histórico de orações.",
     "visitor": "{count} visitantes nos últimos 7 dias",
     "banner": {
-      "featured": [
-        "Eula"
-      ],
       "summoned": "Invocados",
       "percentage": "de todos {rarity}",
       "avg": "Pity médio",
@@ -963,5 +960,12 @@
   "common": {
     "dataSynced": "",
     "driveError": ""
+  },
+  "update": {
+    "newUpdate": "",
+    "updateRefresh": "",
+    "whatsNew": "",
+    "later": "",
+    "refresh": ""
   }
 }

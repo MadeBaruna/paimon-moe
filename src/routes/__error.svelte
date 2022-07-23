@@ -1,14 +1,26 @@
+<script context="module">
+  export function load({ error, status }) {
+    return {
+      props: {
+        status,
+        error,
+      },
+    };
+  }
+</script>
+
 <script>
   import { onMount } from 'svelte';
 
   export let status;
   export let error;
 
-  const dev = process.env.NODE_ENV === 'development';
+  const dev = import.meta.env.DEV;
 
   let refreshUrl;
 
   onMount(() => {
+    console.error('ERROR', error);
     refreshUrl = `${location.href}?r=${new Date().getTime()}`;
   });
 </script>
@@ -36,10 +48,11 @@
     <a
       class="px-4 py-2 rounded-xl border-2 border-white border-opacity-25 hover:border-primary text-blue-400 hover:text-primary text-xl mt-4 text-center"
       href={refreshUrl}
+      rel="external"
     >
       Click here to refresh
     </a>
-    <p class="text-white text-xl mt-2 text-center">Or you can try refresh the page by pressing CTRL+F5</p>
+    <p class="text-white text-xl mt-2 text-center">Or you can try refresh the page by pressing CTRL+SHIFT+R</p>
     <p class="text-white text-xl mt-2 text-center">
       You might also want to check your extension, like adblock, it sometimes wrongly block the script needed for the
       site.

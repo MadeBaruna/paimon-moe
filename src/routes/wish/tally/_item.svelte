@@ -104,11 +104,11 @@
     min: 0,
     max: 0,
   };
-  
+
   const rareInclude = {
-  300011: ['rosaria'],
-  300012: ['yanfei', 'noelle', 'diona'],
-};
+    300011: ['rosaria'],
+    300012: ['yanfei', 'noelle', 'diona'],
+  };
   let promotedRarePercentage = 0;
 
   let legendaryList = [];
@@ -122,7 +122,7 @@
   });
 
   async function getData() {
-    const url = new URL(`${__paimon.env.API_HOST}/wish`);
+    const url = new URL(`${import.meta.env.VITE_API_HOST}/wish`);
     const query = new URLSearchParams({ banner: id });
     url.search = query.toString();
 
@@ -173,19 +173,22 @@
 
       // only for zhongli banner upward
       if (id > 300011 && id < 400000) {
-        const totalRare = data.list.reduce((prev, current) => {
-          if (rareInclude[id].includes(current.name)) {
-            prev.total += current.count;
-          }
-          if (featured[1] === current.name) {
-            prev.featured = current.count;
-          }
-          return prev;
-        }, {
-          total: 0,
-          featured: 0,
-        });
-        promotedRarePercentage = totalRare.featured / totalRare.total * 100
+        const totalRare = data.list.reduce(
+          (prev, current) => {
+            if (rareInclude[id].includes(current.name)) {
+              prev.total += current.count;
+            }
+            if (featured[1] === current.name) {
+              prev.featured = current.count;
+            }
+            return prev;
+          },
+          {
+            total: 0,
+            featured: 0,
+          },
+        );
+        promotedRarePercentage = (totalRare.featured / totalRare.total) * 100;
       }
 
       legendary = {
@@ -340,7 +343,7 @@
                             100,
                         )}%
                         {$t('wish.tally.wonFiftyFifty')}
-                        {:else if id > 300011 && id < 400000 && i === 1}
+                      {:else if id > 300011 && id < 400000 && i === 1}
                         {numberFormat.format(promotedRarePercentage)}%
                         {$t('wish.tally.fromFourStarFeatured')}
                       {:else}
@@ -365,7 +368,7 @@
             {numberFormat.format(legendary.percentage)}%
           </p>
           <div class="flex flex-col flex-1">
-            <p class="font-semibold whitespace-no-wrap">
+            <p class="font-semibold whitespace-nowrap">
               <Icon path={mdiStar} size={0.8} />
               <Icon path={mdiStar} size={0.8} />
               <Icon path={mdiStar} size={0.8} />
@@ -380,7 +383,7 @@
             {numberFormatSecondary.format(rare.percentage)}%
           </p>
           <div class="flex flex-col flex-1">
-            <p class="font-semibold whitespace-no-wrap">
+            <p class="font-semibold whitespace-nowrap">
               <Icon path={mdiStar} size={0.8} />
               <Icon path={mdiStar} size={0.8} />
               <Icon path={mdiStar} size={0.8} />
@@ -489,7 +492,7 @@
       <table class="text-white w-full table-fixed text-sm">
         <tr>
           <td
-            class="font-display text-gray-200 font-semibold px-2 py-1 whitespace-no-wrap text-right border-b border-background"
+            class="font-display text-gray-200 font-semibold px-2 py-1 whitespace-nowrap text-right border-b border-background"
           >
             5★<br />{$t('wish.tally.pity')}
           </td>
@@ -535,11 +538,14 @@
       </table>
     </div>
     <div class="flex flex-wrap">
-      <div class="border border-background rounded-xl hidden xl:block overflow-hidden mr-4 mb-2" style="width: fit-content;">
+      <div
+        class="border border-background rounded-xl hidden xl:block overflow-hidden mr-4 mb-2"
+        style="width: fit-content;"
+      >
         <table class="text-white text-sm">
           <tr>
             <td
-              class="font-display text-gray-200 font-semibold px-2 py-1 whitespace-no-wrap text-right border-b border-background"
+              class="font-display text-gray-200 font-semibold px-2 py-1 whitespace-nowrap text-right border-b border-background"
             >
               4★ {$t('wish.tally.pity')}
             </td>
@@ -578,20 +584,20 @@
       </div>
       <div class="flex flex-wrap text-white -mt-2 mb-2">
         <div class="space-y-2 flex flex-col flex-wrap mr-2 mt-2">
-          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
+          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-nowrap">
             {$t('wish.tally.wishTotal')} <span class="font-semibold ml-2">{numberFormat.format(data.total.all)}</span>
           </div>
-          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
+          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-nowrap">
             {$t('wish.tally.worth')} <img class="w-4 h-4 inline mx-1" src="/images/primogem.png" alt="primogem" />
             <span class="font-semibold">{numberFormat.format(data.total.all * 160)}</span>
           </div>
         </div>
         <div class="space-y-2 flex flex-col flex-wrap mt-2">
-          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
+          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-nowrap">
             {$t('wish.tally.median')}
             <span class="font-semibold ml-2">{numberFormat.format(data.median.legendary)}</span>
           </div>
-          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-no-wrap">
+          <div class="bg-background rounded-xl px-4 py-2 flex-1 flex items-center whitespace-nowrap">
             {$t('wish.tally.user')} <span class="font-semibold ml-2">{numberFormat.format(data.total.users)}</span>
           </div>
         </div>
@@ -603,7 +609,7 @@
   {/if}
 </div>
 
-<style>
+<style lang="postcss">
   @screen xl {
     .pity-summary {
       min-width: 320px;

@@ -1,7 +1,7 @@
 <script>
   import { getContext, onMount } from 'svelte';
   import { slide } from 'svelte/transition';
-  import { goto } from '@sapper/app';
+  import { goto } from '$app/navigation';
   import { t } from 'svelte-i18n';
   import {
     mdiCheckBold,
@@ -251,7 +251,7 @@
 
       try {
         const res = await fetchRetry(
-          `${__paimon.env.API_HOST}/corsproxy`,
+          `${import.meta.env.VITE_API_HOST}/corsproxy`,
           {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
@@ -286,7 +286,7 @@
         }
 
         if (lastCount < fetchSize && dat.data.list.length > 0) {
-          await fetch(`${__paimon.env.API_HOST}/corsreset`);
+          await fetch(`${import.meta.env.VITE_API_HOST}/corsreset`);
           fetchSize = 6;
           lastCount = fetchSize;
           error = $t('wish.import.invalidData');
@@ -828,7 +828,7 @@
 
   async function getNews() {
     try {
-      const res = await fetch(`${__paimon.env.API_HOST}/news/wish`);
+      const res = await fetch(`${import.meta.env.VITE_API_HOST}/news/wish`);
       if (res.status === 200) {
         const json = await res.json();
         news = json.message;
@@ -1037,9 +1037,10 @@
         <p class="text-white">{$t('wish.import.guide.pc2.3')}</p>
         <div class="flex">
           <pre
-            class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all flex-1">
-            {$server === 'China' ? powershellScriptChina : powershellScript}
-          </pre>
+            class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all flex-1">{$server ===
+            'China'
+              ? powershellScriptChina
+              : powershellScript}</pre>
           <button
             on:click={copyScript}
             class="bg-black bg-opacity-50 hover:bg-opacity-25 text-white px-2 ml-1 rounded-xl"
@@ -1101,9 +1102,11 @@
       </div>
       <div class="content flex-col items-center pb-2">
         <p class="text-white">{$t('wish.import.guide.pclog.2')}</p>
-        <pre class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">
-          {$server === 'China' ? $t('wish.import.logLocation.china') : $t('wish.import.logLocation.global')}
-        </pre>
+        <pre
+          class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all">{$server ===
+          'China'
+            ? $t('wish.import.logLocation.china')
+            : $t('wish.import.logLocation.global')}</pre>
       </div>
     </div>
     <div class="flex space-x-3 mb-2">
@@ -1363,10 +1366,10 @@
                 {#if wishes[code] !== undefined}
                   <tr>
                     <td class="px-2 py-1">
-                      <span class="text-white mr-2 whitespace-no-wrap">{type.name} Banner</span>
+                      <span class="text-white mr-2 whitespace-nowrap">{type.name} Banner</span>
                     </td>
                     <td class="pr-2 py-1">
-                      <span class="text-white mr-2 whitespace-no-wrap">
+                      <span class="text-white mr-2 whitespace-nowrap">
                         <Icon size={0.5} path={mdiClose} />
                         {numberFormat.format(wishes[code].length)}
                       </span>
@@ -1416,7 +1419,7 @@
   <Ad class="ml-4" type="desktop" variant="mpu" id="1" />
 </div>
 
-<style>
+<style lang="postcss">
   .step-number {
     min-height: 2rem;
   }

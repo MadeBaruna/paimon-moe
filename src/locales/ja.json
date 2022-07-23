@@ -23,9 +23,6 @@
     "message": "あなたの最高の原神ツール！経験値や突破に必要な素材等を計算したり、Todoリストや祈願カウンターで進捗を確認したりすることができます。",
     "visitor": "過去7日間に訪れた旅人 {count} 名",
     "banner": {
-      "featured": [
-        "エウルア"
-      ],
       "summoned": "の排出数",
       "percentage": "全ての {rarity} のうち",
       "avg": "天井カウント数の平均",
@@ -963,5 +960,12 @@
   "common": {
     "dataSynced": "データの同期が成功しました！",
     "driveError": "現在、Googleドライブ同期が利用できません 😔"
+  },
+  "update": {
+    "newUpdate": "",
+    "updateRefresh": "",
+    "whatsNew": "",
+    "later": "",
+    "refresh": ""
   }
 }

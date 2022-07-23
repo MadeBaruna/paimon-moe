@@ -6,18 +6,28 @@
   import dayjs from 'dayjs';
 
   let fateValues = [
-    { id: "interwinedFate", name: $t('calculator.fateCount.interwinedFate'), image: "/images/intertwined_fate.png", amount: 0 },
-    { id: "starglitter", name: $t('calculator.fateCount.starglitter'), image: "/images/starglitter.png", amount: 0 },
-    { id: "stardust", name: $t('calculator.fateCount.stardust'), image: "/images/stardust.png", amount: 0 },
-    { id: "primogem", name: $t('calculator.fateCount.primogem'), image: "/images/primogem.png", amount: 0 },
-    { id: "genesisCrystal", name: $t('calculator.fateCount.genesisCrystal'), image: "/images/genesis_crystal.png", amount: 0 },
-    { id: "welkinMoon", name: $t('calculator.fateCount.welkinMoon'), image: "/images/welkin_moon.png", amount: 0 },
+    {
+      id: 'interwinedFate',
+      name: $t('calculator.fateCount.interwinedFate'),
+      image: '/images/intertwined_fate.png',
+      amount: 0,
+    },
+    { id: 'starglitter', name: $t('calculator.fateCount.starglitter'), image: '/images/starglitter.png', amount: 0 },
+    { id: 'stardust', name: $t('calculator.fateCount.stardust'), image: '/images/stardust.png', amount: 0 },
+    { id: 'primogem', name: $t('calculator.fateCount.primogem'), image: '/images/primogem.png', amount: 0 },
+    {
+      id: 'genesisCrystal',
+      name: $t('calculator.fateCount.genesisCrystal'),
+      image: '/images/genesis_crystal.png',
+      amount: 0,
+    },
+    { id: 'welkinMoon', name: $t('calculator.fateCount.welkinMoon'), image: '/images/welkin_moon.png', amount: 0 },
   ];
 
   let parameters = [
-    { name: "Days until pull", amount: 0 },
-    { name: "Stardust Wishes (left this month)", amount: 5 }
-  ]
+    { name: 'Days until pull', amount: 0 },
+    { name: 'Stardust Wishes (left this month)', amount: 5 },
+  ];
 
   let result = null;
   let totalPrimogem = 0;
@@ -29,39 +39,44 @@
       if (value.amount >= 0) {
         let total = 0;
         switch (value.id) {
-          case "interwinedFate":
-            total = value.amount*160;
+          case 'interwinedFate':
+            total = value.amount * 160;
             break;
-          case "starglitter":
-            total = Math.floor(value.amount/5)*160;
+          case 'starglitter':
+            total = Math.floor(value.amount / 5) * 160;
             break;
-          case "stardust":
+          case 'stardust':
             let dateNow = dayjs();
             let monthPull = dateNow.add(parameters[0].amount, 'day').startOf('month');
             let monthDiff = monthPull.diff(dateNow, 'month');
-            let maxStardustFate = monthDiff*5+parameters[1].amount;
-            total = Math.min(Math.floor(value.amount/75), maxStardustFate)*160;
+            let maxStardustFate = monthDiff * 5 + parameters[1].amount;
+            total = Math.min(Math.floor(value.amount / 75), maxStardustFate) * 160;
             break;
-          case "primogem":
+          case 'primogem':
             total = value.amount;
             break;
-          case "genesisCrystal":
+          case 'genesisCrystal':
             total = value.amount;
             break;
-          case "welkinMoon":
-            let days = Math.min(value.amount, parameters[0].amount)
-            total = Math.floor(days/30)*300 + days*90
+          case 'welkinMoon':
+            let days = Math.min(value.amount, parameters[0].amount);
+            total = Math.floor(days / 30) * 300 + days * 90;
         }
-        if (total>0) {
-          totalPrimogem += total
-          result.push({name: value.name, image: value.image, amount: value.amount, total: total })
+        if (total > 0) {
+          totalPrimogem += total;
+          result.push({ name: value.name, image: value.image, amount: value.amount, total: total });
         }
       }
     }
-    if (parameters[0].amount>0) {
-      let total = parameters[0].amount*60;
+    if (parameters[0].amount > 0) {
+      let total = parameters[0].amount * 60;
       totalPrimogem += total;
-      result.push({name: $t('calculator.fateCount.dailyCommission'), image: "/images/commission.png", amount: parameters[0].amount, total: total})
+      result.push({
+        name: $t('calculator.fateCount.dailyCommission'),
+        image: '/images/commission.png',
+        amount: parameters[0].amount,
+        total: total,
+      });
     }
   }
 
@@ -83,7 +98,15 @@
             </div>
             <div class="flex flex-row items-center">
               <div class="w-full">
-                <Input className="text-center" bind:value={value.amount} on:change={onChange} type="number" min="0" step="1" pattern="\d*" />
+                <Input
+                  className="text-center"
+                  bind:value={value.amount}
+                  on:change={onChange}
+                  type="number"
+                  min="0"
+                  step="1"
+                  pattern="\d*"
+                />
               </div>
             </div>
           </div>
@@ -98,22 +121,28 @@
           </div>
           <div class="flex flex-row items-center">
             <div class="w-full">
-              <Input className="text-center" bind:value={value.amount} on:change={onChange} type="number" min="0" step="1" pattern="\d*" />
+              <Input
+                className="text-center"
+                bind:value={value.amount}
+                on:change={onChange}
+                type="number"
+                min="0"
+                step="1"
+                pattern="\d*"
+              />
             </div>
           </div>
         </div>
       {/each}
     </div>
     <div class="md:col-span-2 xl:col-span-1">
-      <Button className="block w-full md:w-auto" on:click={calculate}
-        >{$t('calculator.fateCount.calculate')}</Button
-      >
+      <Button className="block w-full md:w-auto" on:click={calculate}>{$t('calculator.fateCount.calculate')}</Button>
       {#if result !== null}
         <div>
           <div
-          transition:fade={{ duration: 100 }}
-          class="rounded-xl bg-background p-4 block md:inline-block"
-          style="height: fit-content; width: fit-content;"
+            transition:fade={{ duration: 100 }}
+            class="rounded-xl bg-background p-4 block md:inline-block"
+            style="height: fit-content; width: fit-content;"
           >
             <table>
               <tr>
@@ -138,7 +167,7 @@
                 </tr>
               {/each}
               <tr>
-                <td class="border-t border-gray-700 text-white text-right whitespace-no-wrap" colspan={5}>
+                <td class="border-t border-gray-700 text-white text-right whitespace-nowrap" colspan={5}>
                   {$t('calculator.fateCount.totalPrimogem')}
                   {totalPrimogem}
                   <img class="mr-1 w-6 inline" src="/images/primogem.png" alt="Primogem" />
