@@ -449,6 +449,7 @@
       "pityAverage": "Pity MOY",
       "character": "Personnage",
       "weapon": "Arme",
+      "featured": "Bannière",
       "winRateOff": "Gagne le 50:50",
       "winRateOffWeapon": ""
     },

@@ -449,6 +449,7 @@
       "pityAverage": "Pity AVG",
       "character": "Character",
       "weapon": "Weapon",
+      "featured": "Featured",
       "winRateOff": "Win 50:50",
       "winRateOffWeapon": "Win 75:25"
     },

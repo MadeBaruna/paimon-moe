@@ -449,6 +449,7 @@
       "pityAverage": "Среднее значение",
       "character": "Персонаж",
       "weapon": "Оружие",
+      "featured": "Баннера",
       "winRateOff": "Выигрыш 50:50",
       "winRateOffWeapon": "Выигрыш 75:25"
     },

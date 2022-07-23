@@ -449,6 +449,7 @@
       "pityAverage": "평균 천장",
       "character": "캐릭터",
       "weapon": "무기",
+      "featured": "",
       "winRateOff": "",
       "winRateOffWeapon": ""
     },

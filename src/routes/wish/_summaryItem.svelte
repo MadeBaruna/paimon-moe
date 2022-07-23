@@ -51,6 +51,21 @@
     {#if avg.legendary.rateOff !== undefined}
       <tr>
         <td class="text-legendary-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
+          └ {$t('wish.summary.featured')}
+        </td>
+        <td class="text-legendary-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+          {numberFormat.format(avg.legendary.featured.total)}
+        </td>
+        <td class="text-legendary-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
+          {numberFormat.format(avg.legendary.featured.percentage * 100)}%
+        </td>  
+        <td class="text-legendary-from font-semibold text-right border-t border-gray-700">
+          {numberFormat.format(avg.legendary.featured.pity)}
+        </td>
+        <td class="text-legendary-from font-semibold text-right border-t border-gray-700" />
+      </tr>
+      <tr>
+        <td class="text-legendary-from font-semibold pl-4 md:pl-4 pr-2 md:pr-4 border-t border-gray-700">
           └ {$t(type.id === 'weapon-event' ? 'wish.summary.winRateOffWeapon' : 'wish.summary.winRateOff')}
         </td>
         <td class="text-legendary-from font-semibold pr-2 md:pr-4 text-right border-t border-gray-700">
