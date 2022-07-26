@@ -22,6 +22,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/5444663',
       showOnHome: true,
     },
+    {
+      name: 'Mesmerizing Dream at Sea',
+      pos: '20% 23%',
+      image: 'mesmerizing_dream_at_sea.jpg',
+      start: '2022-07-22 10:00:00',
+      end: '2022-07-31 23:59:59',
+      color: '#8cd8f1',
+      zoom: '300%',
+      url: 'https://www.hoyolab.com/article/6129641',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -48,12 +59,12 @@ export const eventsData = [
     },
     {
       name: 'Hidden Strife',
-      pos: '0% 20%',
+      pos: '0% 30%',
       image: 'hidden_strife.jpg',
       start: '2022-07-27 10:00:00',
       end: '2022-08-15 03:59:59',
       color: '#ff7c84',
-      zoom: '200%',
+      zoom: '220%',
       url: 'https://www.hoyolab.com/article/5916190',
       showOnHome: true,
     },

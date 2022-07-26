@@ -2,7 +2,7 @@ import { version } from '$service-worker';
 
 const CACHE = `cache${version}`;
 
-const IMAGE_CACHE_VER = '2';
+const IMAGE_CACHE_VER = '1658847850';
 const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
