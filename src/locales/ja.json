@@ -450,7 +450,7 @@
       "character": "キャラクター",
       "weapon": "武器",
       "winRateOff": "排出",
-      "winRateOffWeapon": ""
+      "winRateOffWeapon": "排出"
     },
     "note": [
       "祈願履歴は自動的に更新されません。新しい記録がある場合はもう一度インポートしてください！",
@@ -793,7 +793,7 @@
     "download": "両方のデータをダウンロードする",
     "lastModified": "最終更新日時",
     "or": "または",
-    "smallSizeWarning": ""
+    "smallSizeWarning": "ご注意！ファイルのサイズは元より小さくなります。"
   },
   "footer": {
     "affliate": "Paimon.moe は HoYoverse とは関係ありません。",
@@ -888,8 +888,8 @@
       "inInventory": "インベントリ",
       "available": "利用可能",
       "used": "他のセットで使用中",
-      "calculate": "",
-      "exludeOwned": ""
+      "calculate": "材料の計算",
+      "exludeOwned": "所有している調度品を除く"
     }
   },
   "weapon": {
@@ -946,7 +946,7 @@
     "liyue": "璃月",
     "inazuma": "稲妻",
     "enkanomiya": "淵下宮",
-    "chasm": "",
+    "chasm": "層岩巨淵",
     "setEmpty": "釣り場を空にする",
     "emptyTime": "釣り場が空になった時刻：",
     "clear": "クリア",
@@ -961,10 +961,10 @@
     "driveError": "現在、Googleドライブ同期が利用できません 😔"
   },
   "update": {
-    "newUpdate": "",
-    "updateRefresh": "",
-    "whatsNew": "",
-    "later": "",
-    "refresh": ""
+    "newUpdate": "Paimon.moeは新しいアップデートが到着しました!",
+    "updateRefresh": "「更新」をクリックして、ページを更新します。",
+    "whatsNew": "新着情報",
+    "later": "後で",
+    "refresh": "更新"
   }
 }

@@ -450,7 +450,7 @@
       "character": "Personnage",
       "weapon": "Arme",
       "winRateOff": "Gagne le 50:50",
-      "winRateOffWeapon": ""
+      "winRateOffWeapon": "Gagne le 75:25"
     },
     "note": [
       "L'Historique de Vœux n'est pas mis à jour automatiquement, veuillez importer à nouveau pour mettre à jour votre historique !",
@@ -793,7 +793,7 @@
     "download": "Télécharger toutes les données",
     "lastModified": "Dernière modification",
     "or": "ou",
-    "smallSizeWarning": ""
+    "smallSizeWarning": "ATTENTION, LA TAILLE EST BEAUCOUP PLUS PETITE !"
   },
   "footer": {
     "affliate": "Paimon.moe n'est pas affilié à HoYoverse.",
@@ -888,8 +888,8 @@
       "inInventory": "Dans l'inventaire",
       "available": "Disponible",
       "used": "Utilisé dans un autre set",
-      "calculate": "",
-      "exludeOwned": ""
+      "calculate": "Calcul des matériaux",
+      "exludeOwned": "Exclure le mobilier possédé"
     }
   },
   "weapon": {
@@ -946,7 +946,7 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
-    "chasm": "",
+    "chasm": "Gouffre",
     "setEmpty": "Définir comme vide",
     "emptyTime": "Temps où la case est vide :",
     "clear": "Effacer",
@@ -961,10 +961,10 @@
     "driveError": "La synchronisation Drive n'est pas disponible pour le moment 😔"
   },
   "update": {
-    "newUpdate": "",
-    "updateRefresh": "",
-    "whatsNew": "",
-    "later": "",
-    "refresh": ""
+    "newUpdate": "Paimon.moe a une nouvelle mise à jour !",
+    "updateRefresh": "Cliquer sur Rafraîchir pour obtenir la nouvelle mise à jour",
+    "whatsNew": "Nouveautés",
+    "later": "Plus tard",
+    "refresh": "Rafraîchir"
   }
 }

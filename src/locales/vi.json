@@ -961,10 +961,10 @@
     "driveError": "Đồng bộ với Drive hiện không có sẵn 😔"
   },
   "update": {
-    "newUpdate": "",
-    "updateRefresh": "",
-    "whatsNew": "",
-    "later": "",
-    "refresh": ""
+    "newUpdate": "Paimon.moe có cập nhật mới!",
+    "updateRefresh": "Nhấn tải lại để nhận cập nhật mới",
+    "whatsNew": "Có gì mới",
+    "later": "Để sau đi",
+    "refresh": "Tải lại"
   }
 }

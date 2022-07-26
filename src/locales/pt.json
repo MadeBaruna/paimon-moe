@@ -114,12 +114,12 @@
     "build": "Build",
     "source": "Criações de Personagem Comunitária por Equipe de Auxiliar Genshin",
     "faq": "A contagem de constelação é calculada a partir dos dados do seu Histórico de Orações. Então se seu histórico de orações antigo está desatualizado ou se você comprou o personagem pela loja ou evento, a contagem pode não estar correta! Mas você pode editá-la manualmente apertando o ícone de lápis ao lado do nome do personagem.",
-    "mainStats": "",
+    "mainStats": "Estatísticas Principais",
     "subStats": "",
     "talentPriority": "",
     "abilityTip": "",
-    "weapons": "",
-    "artifacts": ""
+    "weapons": "ARMAS",
+    "artifacts": "ARTEFATOS"
   },
   "wish": {
     "title": "Histórico de Orações",
@@ -416,10 +416,10 @@
       "loading": "Carregando... (Se travar, troque seu servidor na página de configurações)",
       "guaranteed": "O próximo {rarity}★ é garantido ser o item promocional, personagem ou arma",
       "unknown_3_star": "Desconhecido",
-      "rarity": "",
-      "total": "",
-      "percent": "",
-      "pityAverage": ""
+      "rarity": "Raridade",
+      "total": "Total",
+      "percent": "Porcentagem",
+      "pityAverage": "Pity AVG"
     },
     "tally": {
       "title": "Contagem de Orações",
@@ -444,13 +444,13 @@
       "detail": "Detalhes"
     },
     "summary": {
-      "total": "",
-      "percent": "",
-      "pityAverage": "",
-      "character": "",
-      "weapon": "",
-      "winRateOff": "",
-      "winRateOffWeapon": ""
+      "total": "Total",
+      "percent": "Por cento",
+      "pityAverage": "Pity AVG",
+      "character": "Personagem",
+      "weapon": "Arma",
+      "winRateOff": "Venceu o 50:50",
+      "winRateOffWeapon": "Venceu o 75:25"
     },
     "note": [
       "O histórico de orações não é atualizado automaticamente, por favor, importe novamente para atualizar o seu histórico!",
@@ -467,25 +467,25 @@
       "desc": "Se por acaso o cache do navegador for excluído, o seu histórico de desejos irá sumir! Você pode ativar a sincronização com o Google Drive nas configurações para fazer backup dos seus dados, ou então baixar os dados manualmente."
     },
     "rank": {
-      "title": "",
-      "level": "",
+      "title": "Seu Rank Global",
+      "level": "Seu Rank de Pulls totais",
       "based": "Baseado em Estatísticas de Desejos Globais",
       "current": "",
-      "more": "",
-      "less": "",
+      "more": "Você orou mais do que {percentage}% dos usuários do paimon.moe ",
+      "less": "Você orou menos que {percentage}% dos usuários do paimon.moe",
       "currentLuck": "",
-      "totalPull": "",
-      "luck5": "",
-      "luck4": "",
-      "luckWinRateOff": "",
+      "totalPull": "Total de pulls",
+      "luck5": "Sorte 5★",
+      "luck4": "Sorte 4★",
+      "luckWinRateOff": "Sorte da vitória do 50:50",
       "medianTotal": "",
       "medianLuck": "",
-      "moreTotal": "",
-      "lessTotal": "",
+      "moreTotal": "Você orou mais do que {percentage}% dos usuários do paimon.moe ",
+      "lessTotal": "Você orou mais do que {percentage}% dos usuários do paimon.moe",
       "moreLuck": "",
       "lessLuck": "",
-      "top": "",
-      "bottom": ""
+      "top": "TOP",
+      "bottom": "BOTÃO"
     }
   },
   "calculator": {
@@ -672,8 +672,8 @@
     "delete": "Deletar",
     "add": "Adicionar",
     "server": "Selecione seu servidor:",
-    "ar": "",
-    "wl": "",
+    "ar": "RANK DE AVENTURA:",
+    "wl": "NÍVEL DE MUNDO:",
     "drive": [
       "Paimon.moe usa o diretório Application Data em seu Google Drive para salvar e sincronizar seu Histórico de Orações e Lista de Afazeres.",
       "Paimon.moe pode apenas ler e escrever em arquivos que o site criou."
@@ -691,32 +691,32 @@
     "or": "ou",
     "thanks": "Obrigado😁!",
     "credits": {
-      "title": "",
+      "title": "Créditos",
       "items": [
         {
-          "name": "",
+          "name": "Data e imagens",
+          "value": "Genshin Impact Wiki"
+        },
+        {
+          "name": "Status Data",
           "value": ""
         },
         {
           "name": "",
-          "value": ""
-        },
-        {
-          "name": "",
-          "value": ""
+          "value": "Coleta de Dados do Discord"
         }
       ]
     },
-    "setMainAccount": "",
+    "setMainAccount": "Definir como conta principal",
     "modal": {
       "notice": "Todos os dados da Lista de Afazeres e Histórico de Orações serão apagados",
       "backup": "Você pode fazer um backup do seu histórico de orações através de uma exportação para um arquivo do Excel!",
-      "setMain": "",
-      "setMainNotice": "",
+      "setMain": "Alterar conta principal?",
+      "setMainNotice": "Isso irá mudar de conta:",
       "cancel": "Cancelar",
       "delete": "Deletar",
       "reset": "Resetar",
-      "continue": ""
+      "continue": "Continuar"
     },
     "changelog": "Registro de alterações",
     "exportDescription": "Você pode exportar e importar seus dados do Paimon.moe aqui",
@@ -732,8 +732,8 @@
     "importFailed": "Falha ao importar!",
     "email": "Email:",
     "mainAccountChanged": "",
-    "dataDeleted": "",
-    "dataReset": "",
+    "dataDeleted": "Os dados foram deletados!",
+    "dataReset": "Os dados foram resetados!",
     "accountAdded": ""
   },
   "privacypolicy": {
@@ -771,15 +771,15 @@
       "e",
       "paimon-moe Github"
     ],
-    "subtitleAd": "",
+    "subtitleAd": "Anúncios",
     "ad": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Usamos anúncios de terceiros para apoiar nosso site. Alguns destes anunciantes podem ser servidos de nossos anunciantes de terceiros.",
+      "Você pode ver seus",
+      "Política de Privacidade",
+      "e",
+      "Política de Cookies",
+      "Aqui você pode gerenciar seus cookies",
+      "aqui"
     ]
   },
   "sync": {

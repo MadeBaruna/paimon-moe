@@ -40,10 +40,10 @@
     },
     "reminder": {
       "message": "Kamu bisa mengatur notifikasi 🔔 pengigat untuk Parametric Transformer dan Hoyolab Login Harian disini! Klik tombol reminder dibawah untuk mulai!",
-      "detail": "Reminder"
+      "detail": "Pengingat"
     },
     "event": {
-      "upcoming": "Event Akan Datang",
+      "upcoming": "Event Mendatang",
       "current": "Event Sekarang",
       "detail": "Timeline"
     },
