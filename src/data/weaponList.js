@@ -7089,7 +7089,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'Energy Recharge',
     type: weapons.polearm,
-    source: 'wish',
+    source: 'fishing trade',
     ascension: [
       {
         items: [

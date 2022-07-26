@@ -139,14 +139,16 @@
             <a href="/weapons/{weapon.id}" style="display: contents;">
               <tr class="cursor-pointer hover:bg-background">
                 <td class="border-gray-700 border-t py-1 text-center h-12">
-                  <img
-                    src="/images/weapons/{weapon.id}.png"
-                    alt={weapon.type}
-                    class="h-full w-auto inline"
-                    width="39"
-                    height="39"
-                    loading="lazy"
-                  />
+                  <span class="inline-block weapon">
+                    <img
+                      src="/images/weapons/{weapon.id}.png"
+                      alt={weapon.type}
+                      class="h-full w-auto inline"
+                      width="39"
+                      height="39"
+                      loading="lazy"
+                    />
+                  </span>
                 </td>
                 <td class="border-gray-700 border-t py-1 pl-4 pr-2">
                   {weapon.name}
@@ -171,3 +173,10 @@
   <Ad type="desktop" variant="lb" id="2" />
   <Ad type="mobile" variant="lb" id="1" />
 </div>
+
+<style lang="postcss">
+  .weapon {
+    width: 39px;
+    height: 39px;
+  }
+</style>

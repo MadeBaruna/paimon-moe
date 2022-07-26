@@ -31,4 +31,8 @@
     @apply p-2 absolute rounded-xl bg-gray-400 border border-gray-800;
     @apply text-sm text-background z-10;
   }
+
+  i {
+    font-style: normal;
+  }
 </style>

@@ -5,3 +5,8 @@ export function formatStat(value, type) {
 
   return Math.round(value);
 }
+
+export const numberFormat = Intl.NumberFormat('en', {
+  maximumFractionDigits: 1,
+  minimumFractionDigits: 0,
+});

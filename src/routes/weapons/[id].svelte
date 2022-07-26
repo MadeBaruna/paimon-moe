@@ -38,21 +38,23 @@
   export async function load({ params }) {
     const { id } = params;
     const weapon = data[id];
-    const materials = weaponList[id].ascension[0].items;
+    const ascensions = weaponList[id].ascension;
+    const source = weaponList[id].source;
     const recommendedCharacter = getCharacter(id);
 
-    return { props: { id, weapon, materials, recommendedCharacter } };
+    return { props: { id, weapon, recommendedCharacter, source, ascensions } };
   }
 </script>
 
 <script>
-  import { mdiCircle, mdiStar } from '@mdi/js';
+  import { mdiCircle, mdiClose, mdiStar } from '@mdi/js';
   import { locale, t } from 'svelte-i18n';
   import Icon from '../../components/Icon.svelte';
   import { onMount } from 'svelte';
   import { characters } from '../../data/characters';
-  import { formatStat } from '../../helper';
+  import { formatStat, numberFormat } from '../../helper';
   import Ad from '../../components/Ad.svelte';
+  import Tooltip from '../../components/Tooltip.svelte';
 
   const rarity = {
     1: 'text-white',
@@ -63,7 +65,7 @@
   };
 
   /* prettier-ignore */
-  const showedIndex = [1, 6, 11, 16, 20, 21, 26, 31, 36, 41, 42, 47, 52, 53, 58, 63, 64, 69, 74, 75, 80, 85, 86, 91, 96];
+  let showedIndex = [1, 6, 11, 16, 20, 21, 26, 31, 36, 41, 42, 47, 52, 53, 58, 63, 64, 69, 74, 75, 80, 85, 86, 91, 96];
   const level = [1, 5, 10, 15, 20, 20, 25, 30, 35, 40, 40, 45, 50, 50, 55, 60, 60, 65, 70, 70, 75, 80, 80, 85, 90];
   const ascen = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6];
   const ascenSpan = [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3];
@@ -71,7 +73,12 @@
   export let id;
   export let weapon;
   export let recommendedCharacter;
-  // export let materials;
+  export let source;
+  export let ascensions;
+
+  if (weapon.rarity < 3) {
+    showedIndex = [1, 6, 11, 16, 20, 21, 26, 31, 36, 41, 42, 47, 52, 53, 58, 63, 64, 69, 74];
+  }
 
   async function changeLocale(locale) {
     const _data = await import(`../../data/weapons/${locale}.json`);
@@ -83,17 +90,14 @@
       changeLocale(val);
     });
   });
-
-  $: multiplier = weapon.secondary.name === 'em' ? 1 : 100;
-  $: suffix = weapon.secondary.name === 'em' ? '' : '%';
 </script>
 
 <svelte:head>
   <title>{weapon.name} - Paimon.moe</title>
 </svelte:head>
-<div class="lg:ml-64 pt-20 lg:pt-8 max-w-screen-xl md:pl-4">
+<div class="lg:ml-64 pt-20 lg:pt-8 max-w-screen-xl">
   <div class="flex flex-col-reverse xl:flex-row items-start">
-    <div class="px-4">
+    <div class="px-4 md:px-8">
       <h1 class="font-display font-black text-4xl md:text-5xl text-white">{weapon.name}</h1>
       <div class="{rarity[weapon.rarity]} text-2xl flex items-center z-0 -mt-2 md:-mt-4">
         {#each [...new Array(weapon.rarity)] as _}
@@ -101,6 +105,8 @@
         {/each}
         <Icon path={mdiCircle} size={0.4} className="mx-2 mt-1" color="white" />
         <p class="text-base text-white font-semibold mt-1">{$t(`weapon.${weapon.type}`)}</p>
+        <Icon path={mdiCircle} size={0.4} className="mx-2 mt-1" color="white" />
+        <p class="text-base text-white font-semibold mt-1 capitalize">{source}</p>
       </div>
       <p class="text-gray-200">{@html weapon.description.replace(/\\n/g, '<br/>')}</p>
       {#if weapon.skill.name}
@@ -136,57 +142,71 @@
           </div>
         </div>
       {/if}
-
-      <div class="mt-4 flex overflow-x-auto whitespace-nowrap md:w-auto">
-        <div style="width: min-content;">
-          <div class="table max-w-full rounded-xl border border-gray-200 border-opacity-25">
-            <table class="text-gray-200 w-full">
-              <tr>
-                <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
-                  {$t('weapon.asc')}
-                </td>
-                <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
-                  {$t('weapon.lvl')}
-                </td>
-                <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
-                  {$t('weapon.baseAtk')}
-                </td>
-                {#if weapon.secondary.name}
-                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
-                    {$t(`weapon.${weapon.secondary.name}`)}
-                  </td>
-                {/if}
-              </tr>
-              {#each showedIndex as index, i}
-                <tr>
-                  {#if [0, 5, 10, 13, 16, 19, 22].includes(i)}
-                    <td rowspan={ascenSpan[i]} class="text-center border-t border-gray-700 px-2">{ascen[i]}</td>
-                  {/if}
-                  <td class="text-center border-t border-gray-700 px-2">{level[i]}</td>
-                  <td class="text-center border-t border-gray-700 px-2">{Math.round(weapon.atk[index])}</td>
-                  {#if weapon.secondary.stats}
-                    <td class="text-center border-t border-gray-700 px-2">
-                      {formatStat(weapon.secondary.stats[index], weapon.secondary.name)}
-                    </td>
-                  {/if}
-                </tr>
-              {/each}
-            </table>
-          </div>
-        </div>
-        <div class="hidden lg:block">
-          <Ad type="desktop" variant="mpu" id="1" class="ml-8" />
-        </div>
-      </div>
     </div>
     <img class="h-64 w-auto ml-4 max-w-full" src="/images/weapons/{id}.png" alt={weapon.name} />
+  </div>
+  <div class="mt-4 block overflow-x-auto whitespace-nowrap w-screen md:w-auto px-4 md:px-8">
+    <div class="table max-w-full rounded-xl border border-gray-200 border-opacity-25">
+      <table class="text-gray-200 w-full">
+        <tr>
+          <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
+            {$t('weapon.asc')}
+          </td>
+          <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
+            {$t('weapon.lvl')}
+          </td>
+          <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
+            {$t('weapon.baseAtk')}
+          </td>
+          {#if weapon.secondary.name}
+            <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
+              {$t(`weapon.${weapon.secondary.name}`)}
+            </td>
+          {/if}
+          <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
+            {$t('weapon.ascensionMaterial')}
+          </td>
+        </tr>
+        {#each showedIndex as index, i}
+          <tr>
+            {#if [0, 5, 10, 13, 16, 19, 22].includes(i)}
+              <td rowspan={ascenSpan[i]} class="text-center border-t border-r border-gray-700 px-2">{ascen[i]}</td>
+            {/if}
+            <td class="text-center border-t border-r border-gray-700 px-2">{level[i]}</td>
+            <td class="text-center border-t border-r border-gray-700 px-2">{Math.round(weapon.atk[index])}</td>
+            {#if weapon.secondary.stats}
+              <td class="text-center border-t border-r border-gray-700 px-2">
+                {formatStat(weapon.secondary.stats[index], weapon.secondary.name)}
+              </td>
+            {/if}
+            {#if [0, 5, 10, 13, 16, 19, 22].includes(i)}
+              <td rowspan={ascenSpan[i]} class="text-center border-t border-gray-700 pl-2">
+                <span class="w-max inline-block">
+                  {#if ascen[i] > 0}
+                    {#each ascensions[ascen[i - 1]].items as obj}
+                      <Tooltip title={$t(obj.item.name)}>
+                        <span class="mr-2 bg-background rounded-xl">
+                          <img src="/images/items/{obj.item.id}.png" alt={obj.item} class="inline w-8 h-8" />
+                          <Icon size={0.5} path={mdiClose} /><span>{obj.amount}</span>
+                        </span>
+                      </Tooltip>
+                    {/each}
+                    <span class="pt-2 block">
+                      <img src="/images/mora.png" alt="mora" class="inline w-6 h-6" />
+                      <span>{numberFormat.format(ascensions[ascen[i - 1]].mora)}</span>
+                    </span>
+                  {/if}
+                </span>
+              </td>
+            {/if}
+          </tr>
+        {/each}
+      </table>
+    </div>
+    <div class="hidden lg:block">
+      <Ad type="desktop" variant="mpu" id="1" class="ml-8" />
+    </div>
   </div>
   <Ad type="desktop" variant="lb" id="2" />
   <Ad type="mobile" variant="lb" id="1" />
 </div>
-
-<style lang="postcss">
-  td:not(:last-child) {
-    @apply border-r;
-  }
-</style>
