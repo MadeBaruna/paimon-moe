@@ -16,14 +16,16 @@
     }
   });
 
-  async function refreshUpdate() {
+  async function refreshUpdate(changelog) {
     open(
       UpdateModal,
       {
         close,
+        changelog,
       },
       {
         closeButton: false,
+        closeOnOuterClick: false,
         styleWindow: { background: '#25294A', width: '500px' },
       },
     );
@@ -33,7 +35,7 @@
     if ('serviceWorker' in navigator && import.meta.env.PROD) {
       broadcastChannel = new BroadcastChannel('paimonmoe-sw');
       broadcastChannel.addEventListener('message', (event) => {
-        if (event.data.type === 'update') refreshUpdate();
+        if (event.data.type === 'update') refreshUpdate(event.data.changelog);
       });
 
       navigator.serviceWorker.register('/service-worker.js').then(

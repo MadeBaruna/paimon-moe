@@ -4,6 +4,7 @@
   import Button from '../components/Button.svelte';
 
   export let close;
+  export let changelog;
 
   function reload() {
     window.location.reload();
@@ -16,7 +17,9 @@
   <div class="rounded-xl bg-background p-4 mb-4">
     <p class="text-gray-200">{$t('update.whatsNew')}</p>
     <ul class="list-disc text-white list-inside">
-      <li>Bug Fixes</li>
+      {#each changelog as c}
+        <li>{c}</li>
+      {/each}
     </ul>
   </div>
   <div class="flex justify-end space-x-2">

@@ -1,10 +1,18 @@
 import { version } from '$service-worker';
 
 const CACHE = `cache${version}`;
+
+const IMAGE_CACHE_VER = '2';
+const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
+
+const IMAGE_URL = `${self.location.origin}/images/`;
+
+const changelog = ['Update timeline', 'Update locales'];
+
 const channel = new BroadcastChannel('paimonmoe-sw');
 
-self.addEventListener('install', (event) => {
-  event.waitUntil(self.skipWaiting());
+self.addEventListener('install', () => {
+  self.skipWaiting();
 });
 
 async function fetchAddCache(url) {
@@ -27,7 +35,7 @@ self.addEventListener('activate', (event) => {
       let needUpdate = false;
       // delete old caches
       for (const key of keys) {
-        if (key !== CACHE) {
+        if (key !== CACHE && key !== IMAGE_CACHE) {
           await caches.delete(key);
           needUpdate = true;
         }
@@ -38,7 +46,7 @@ self.addEventListener('activate', (event) => {
       if (needUpdate) {
         channel.postMessage({
           type: 'update',
-          version,
+          changelog,
         });
       }
 
@@ -53,11 +61,12 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', async (event) => {
-  if (!event.request.url.startsWith(self.location.origin) || event.request.method !== 'GET') return;
+  if (event.request.url.indexOf(self.location.origin) !== 0 || event.request.method !== 'GET') return;
 
   event.respondWith(
     (async () => {
-      const cache = await caches.open(CACHE);
+      const cachePath = event.request.url.indexOf(IMAGE_URL) === 0 ? IMAGE_CACHE : CACHE;
+      const cache = await caches.open(cachePath);
       const cachedRes = await cache.match(event.request);
 
       if (cachedRes) {
