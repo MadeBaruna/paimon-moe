@@ -203,8 +203,8 @@
         {/each}
       </table>
     </div>
-    <div class="hidden lg:block">
-      <Ad type="desktop" variant="mpu" id="1" class="ml-8" />
+    <div class="fixed top-0 right-0 m-8">
+      <Ad class="ml-4" type="desktop" variant="mpu" id="1" />
     </div>
   </div>
   <Ad type="desktop" variant="lb" id="2" />
