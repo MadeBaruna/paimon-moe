@@ -18,7 +18,7 @@
 
   import { onMount } from 'svelte';
   import { t, locale } from 'svelte-i18n';
-  import { mdiChevronRight, mdiCircle, mdiContentSave, mdiMinus, mdiPencil, mdiPlus, mdiStar } from '@mdi/js';
+  import { mdiChevronRight, mdiCircle, mdiClose, mdiContentSave, mdiMinus, mdiPencil, mdiPlus, mdiStar } from '@mdi/js';
   import Icon from '../../components/Icon.svelte';
   import Button from '../../components/Button.svelte';
   import Tooltip from '../../components/TooltipRelative.svelte';
@@ -99,6 +99,7 @@
   const book = itemGroup[bookId];
   const materials = character.ascension[1].items;
   const bossItem = character.material.boss;
+  const ascMaterials = character.ascension;
 
   let chars = {};
   let constellationCount = -1;
@@ -228,13 +229,13 @@
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <div class="flex">
-    <div class="flex flex-col xl:flex-row items-start max-w-screen-xl">
+    <div class="flex flex-col xl:flex-row items-start max-w-screen-2xl w-[calc(100%-1rem)]">
       <img
         class="character-image object-cover md:pl-8 self-center xl:self-auto"
         src="/images/characters/full/{id}.png"
         alt={character.name}
       />
-      <div class="flex flex-col items-start mt-4 xl:mt-0 side-detail pt-4 xl:pt-0">
+      <div class="flex flex-col items-start mt-4 xl:mt-0 flex-1 side-detail pt-4 xl:pt-0 min-w-0">
         <div class="flex items-center px-4 md:px-8">
           <h1 class="font-display font-black text-4xl leading-10 md:leading-normal md:text-5xl text-white mr-4 z-0">
             {$t(character.name)}
@@ -337,68 +338,95 @@
             </div>
           </div>
         </div>
-        <div class="md:px-4 mt-4 block overflow-x-auto whitespace-nowrap w-screen md:w-auto">
+        <div class="md:ml-4 mt-4 block overflow-x-auto whitespace-nowrap w-screen 2xl:w-auto max-w-full">
           <div class="px-4" style="width: min-content;">
             <div class="table max-w-full rounded-xl border border-gray-200 border-opacity-25">
               <table class="text-gray-200 w-full">
                 <tr>
-                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
                     {$t('characters.asc')}
                   </td>
-                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
                     {$t('characters.lvl')}
                   </td>
-                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
                     {$t('characters.hp')}
                   </td>
-                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
                     {$t('characters.atk')}
                   </td>
-                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
+                  <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
                     {$t('characters.def')}
                   </td>
-                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2"
-                    >{$t('characters.critRate')}
+                  <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
+                    {$t('characters.critRate')}
                   </td>
-                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2"
-                    >{$t('characters.critDamage')}
+                  <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
+                    {$t('characters.critDamage')}
                   </td>
                   {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage'}
-                    <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
+                    <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
                       {$t(`characters.${data.statGrow}`)}
                     </td>
                   {/if}
+                  <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
+                    {$t('characters.ascensionMaterial')}
+                  </td>
                 </tr>
                 {#each showedIndex as index, i}
                   <tr>
                     {#if i % 2 === 0}
-                      <td rowspan={2} class="text-center border-t border-gray-700 px-2">{ascen[i]}</td>
+                      <td rowspan={2} class="text-center border-t border-gray-700 border-r px-2">{ascen[i]}</td>
                     {/if}
-                    <td class="text-center border-t border-gray-700 px-2">{level[i]}</td>
-                    <td class="text-center border-t border-gray-700 px-2">{Math.round(data.hp[index])}</td>
-                    <td class="text-center border-t border-gray-700 px-2">{Math.round(data.atk[index])}</td>
-                    <td class="text-center border-t border-gray-700 px-2">{Math.round(data.def[index])}</td>
+                    <td class="text-center border-t border-gray-700 border-r px-2">{level[i]}</td>
+                    <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(data.hp[index])}</td>
+                    <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(data.atk[index])}</td>
+                    <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(data.def[index])}</td>
                     {#if data.statGrow === 'critRate'}
-                      <td class="text-center border-t border-gray-700 px-2">
+                      <td class="text-center border-t border-gray-700 border-r px-2">
                         {numberFormat.format(data.critRate[index] * 100)}%
                       </td>
                     {:else}
-                      <td class="text-center border-t border-gray-700 px-2">5%</td>
+                      <td class="text-center border-t border-gray-700 border-r px-2">5%</td>
                     {/if}
                     {#if data.statGrow === 'critDamage'}
-                      <td class="text-center border-t border-gray-700 px-2">
+                      <td class="text-center border-t border-gray-700 border-r px-2">
                         {numberFormat.format(data.critDamage[index] * 100)}%
                       </td>
                     {:else}
-                      <td class="text-center border-t border-gray-700 px-2">50%</td>
+                      <td class="text-center border-t border-gray-700 border-r px-2">50%</td>
                     {/if}
                     {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage' && data.statGrow !== 'em'}
-                      <td class="text-center border-t border-gray-700 px-2">
+                      <td class="text-center border-t border-gray-700 border-r px-2">
                         {numberFormat.format(data[data.statGrow][index] * 100)}%
                       </td>
                     {:else if data.statGrow === 'em'}
-                      <td class="text-center border-t border-gray-700 px-2">
+                      <td class="text-center border-t border-gray-700 border-r px-2">
                         {numberFormat.format(data[data.statGrow][index])}
+                      </td>
+                    {/if}
+                    {#if i % 2 === 0}
+                      <td rowspan={2} class="text-center border-t border-gray-700 px-2">
+                        <span class="w-max inline-block h-16">
+                          {#if ascen[i] > 0}
+                            {#each ascMaterials[ascen[i - 1]].items as obj}
+                              {#if obj.item.id !== 'none'}
+                                <Tooltip title={$t(obj.item.name)}>
+                                  <span class="mr-2 bg-background rounded-xl">
+                                    <span class="w-8 h-8 inline-block">
+                                      <img src="/images/items/{obj.item.id}.png" alt={obj.item} class="inline h-full" />
+                                    </span>
+                                    <Icon size={0.5} path={mdiClose} /><span>{obj.amount}</span>
+                                  </span>
+                                </Tooltip>
+                              {/if}
+                            {/each}
+                            <span class="pt-1 block">
+                              <img src="/images/mora.png" alt="mora" class="inline w-6 h-6" />
+                              <span>{numberFormat.format(ascMaterials[ascen[i - 1]].mora)}</span>
+                            </span>
+                          {/if}
+                        </span>
                       </td>
                     {/if}
                   </tr>
@@ -420,7 +448,7 @@
     <Ad class="ml-4" type="desktop" variant="mpu" id="1" />
   </div>
   <Ad class="flex justify-center my-4" type="mobile" variant="mpu" id="2" />
-  <div class="flex flex-col mt-4 text-white px-4 md:px-8 max-w-screen-xl">
+  <div class="flex flex-col mt-4 text-white px-4 md:px-8 max-w-screen-2xl">
     {#if builds.length > 1}
       <div class="flex mt-4 items-center">
         {#each builds as item, i}
@@ -700,7 +728,7 @@
   </a>
   <Ad class="ml-8 mt-4 mb-2" type="desktop" variant="lb" id="1" />
   <Ad type="desktop" variant="lb" id="2" />
-  <div class="flex flex-col mt-4 text-white px-4 md:px-8 max-w-screen-xl" bind:this={talentDiv}>
+  <div class="flex flex-col mt-4 text-white px-4 md:px-8 max-w-screen-2xl" bind:this={talentDiv}>
     <a href="/characters/{id}/#talents" class="font-black font-display text-2xl mt-4">
       {$t('characters.talents')}
     </a>
@@ -708,7 +736,7 @@
     <SkillCard {id} image="talent_2" data={data.elementalSkill} withQuote={true} />
     <SkillCard {id} image="talent_3" data={data.burst} withQuote={true} />
   </div>
-  <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-xl">
+  <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl">
     <p class="font-black font-display text-2xl mt-4">{$t('characters.passiveTalents')}</p>
     {#each data.passives as passive, i}
       <PassiveSkillCard {id} image="talent_{i + 4}" data={passive} />
@@ -717,7 +745,7 @@
   <Ad class="ml-8 mt-4 mb-2" type="desktop" variant="lb" id="3" />
   <Ad class="flex justify-center mt-4 mb-2" type="mobile" variant="mpu" id="1" />
   <Ad type="mobile" variant="lb" id="1" />
-  <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-xl" id="constellations" bind:this={constellationDiv}>
+  <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl" id="constellations" bind:this={constellationDiv}>
     <a href="/characters/{id}/#constellations" class="font-black font-display text-2xl mt-4">
       {$t('characters.constellations')}
     </a>
@@ -790,10 +818,6 @@
     }
   }
 
-  td:not(:last-child) {
-    @apply border-r;
-  }
-
   .popup {
     @apply relative;
 
@@ -813,6 +837,21 @@
       .popup-container {
         @apply block;
       }
+    }
+  }
+
+  @screen lg {
+    ::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      @apply bg-transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.35);
+      @apply rounded-xl;
     }
   }
 </style>
