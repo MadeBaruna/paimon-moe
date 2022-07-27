@@ -229,13 +229,13 @@
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <div class="flex">
-    <div class="flex flex-col xl:flex-row items-start max-w-screen-2xl w-[calc(100%-1rem)]">
+    <div class="flex flex-col xl:flex-row items-start max-w-screen-2xl w-full md:w-[calc(100%-1rem)]">
       <img
         class="character-image object-cover md:pl-8 self-center xl:self-auto"
         src="/images/characters/full/{id}.png"
         alt={character.name}
       />
-      <div class="flex flex-col items-start mt-4 xl:mt-0 flex-1 side-detail pt-4 xl:pt-0 min-w-0">
+      <div class="flex flex-col items-start mt-4 xl:mt-0 flex-1 side-detail pt-4 xl:pt-0 min-w-0 max-w-full">
         <div class="flex items-center px-4 md:px-8">
           <h1 class="font-display font-black text-4xl leading-10 md:leading-normal md:text-5xl text-white mr-4 z-0">
             {$t(character.name)}
@@ -445,10 +445,10 @@
         </div>
       </div>
     </div>
-    <Ad class="ml-4" type="desktop" variant="mpu" id="1" />
   </div>
-  <Ad class="flex justify-center my-4" type="mobile" variant="mpu" id="2" />
-  <div class="flex flex-col mt-4 text-white px-4 md:px-8 max-w-screen-2xl">
+  <Ad class="mt-4 max-w-screen-2xl flex justify-center" type="desktop" variant="lb" id="1" />
+  <Ad class="flex justify-center mt-4" type="mobile" variant="mpu" id="2" />
+  <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl">
     {#if builds.length > 1}
       <div class="flex mt-4 items-center">
         {#each builds as item, i}
@@ -726,8 +726,8 @@
   >
     {$t('characters.source')}
   </a>
-  <Ad class="ml-8 mt-4 mb-2" type="desktop" variant="lb" id="1" />
-  <Ad type="desktop" variant="lb" id="2" />
+  <Ad class="mt-2 max-w-screen-2xl flex justify-center" type="desktop" variant="lb" id="2" />
+  <Ad type="mobile" variant="lb" id="2" />
   <div class="flex flex-col mt-4 text-white px-4 md:px-8 max-w-screen-2xl" bind:this={talentDiv}>
     <a href="/characters/{id}/#talents" class="font-black font-display text-2xl mt-4">
       {$t('characters.talents')}
@@ -742,7 +742,7 @@
       <PassiveSkillCard {id} image="talent_{i + 4}" data={passive} />
     {/each}
   </div>
-  <Ad class="ml-8 mt-4 mb-2" type="desktop" variant="lb" id="3" />
+  <Ad class="mt-2 max-w-screen-2xl flex justify-center" type="desktop" variant="lb" id="3" />
   <Ad class="flex justify-center mt-4 mb-2" type="mobile" variant="mpu" id="1" />
   <Ad type="mobile" variant="lb" id="1" />
   <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl" id="constellations" bind:this={constellationDiv}>
