@@ -2,12 +2,12 @@ import { version } from '$service-worker';
 
 const CACHE = `cache${version}`;
 
-const IMAGE_CACHE_VER = '1658847850';
+const IMAGE_CACHE_VER = '1658928624';
 const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Update timeline', 'Update locales', 'Adjust weapon detail page'];
+const changelog = ['Update timeline', 'Adjust character detail page'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 

@@ -33,6 +33,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/6129641',
       showOnHome: true,
     },
+    {
+      name: 'Reminiscent Regimen',
+      pos: '0% 30%',
+      image: 'reminiscent_regimen.jpg',
+      start: '2022-08-04 10:00:00',
+      end: '2022-08-15 03:59:59',
+      color: '#82cff9',
+      zoom: '100%',
+      url: 'https://www.hoyolab.com/article/6197391',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -65,7 +76,7 @@ export const eventsData = [
       end: '2022-08-15 03:59:59',
       color: '#ff7c84',
       zoom: '220%',
-      url: 'https://www.hoyolab.com/article/5916190',
+      url: 'https://www.hoyolab.com/article/6171423',
       showOnHome: true,
     },
   ],
@@ -130,6 +141,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Evermotion Mechanical Painting',
+      pos: '0% 30%',
+      image: 'evermotion_mechanical_painting.jpg',
+      start: '2022-08-12 10:00:00',
+      end: '2022-08-22 03:59:59',
+      color: '#ffc284',
+      zoom: '100%',
+      url: 'https://www.ho9yolab.com/article/617391',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -167,6 +189,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Tapestry of Golden Flames - Yoimiya Banner',
+      pos: '30% 25%',
+      zoom: '200%',
+      image: 'tapestry_of_golden_flames_2.jpg',
+      start: '2022-08-02 18:00:00',
+      end: '2022-08-23 14:59:59',
+      color: '#fc8976',
+      url: 'https://www.hoyolab.com/article/6197311',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -203,6 +236,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/5915986',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '30% 30%',
+      zoom: '150%',
+      image: 'epitome_invocation_32.jpg',
+      start: '2022-08-02 18:00:00',
+      end: '2022-08-23 14:59:59',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/6197314',
+      showOnHome: true,
     },
   ],
   [
