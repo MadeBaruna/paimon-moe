@@ -93,6 +93,7 @@
     // collected characters stuff
     let updateCollectedCharacters = false;
     let collectedCharacters = {};
+    let collectedWeapons = {};
     const collectedCharactersData = await readSave(`${prefix}characters`);
     if (collectedCharactersData !== null) {
       collectedCharacters = collectedCharactersData;
@@ -154,6 +155,18 @@
             rarity = weaponList[pull.id].rarity;
             itemName = weaponList[pull.id].name;
             currentType = 'weapon';
+
+            if (updateCollectedCharacters) {
+              if (collectedWeapons[pull.id]) {
+                collectedWeapons[pull.id].wish += 1;
+              } else {
+                collectedWeapons[pull.id] = {
+                  default: 0,
+                  manual: 0,
+                  wish: 1,
+                };
+              }
+            }
           }
 
           const time = dayjs(pull.time).format('YYYY-MM');
@@ -259,6 +272,7 @@
     if (updateCollectedCharacters && totalWish > 0) {
       console.log('updating collectables');
       await updateSave(`${prefix}characters`, collectedCharacters);
+      await updateSave(`${prefix}weapons`, collectedWeapons);
       await updateSave(`${prefix}collectables-updated`, false);
     }
 

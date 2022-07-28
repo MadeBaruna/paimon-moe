@@ -8,11 +8,15 @@
   import TableHeader from '../../components/Table/TableHeader.svelte';
   import { formatStat } from '../../helper';
   import Ad from '../../components/Ad.svelte';
+  import { getAccountPrefix } from '../../stores/account';
+  import { readSave } from '../../stores/saveManager';
 
   let weaponData = data;
   let weaponList = [];
   let sortBy = 'name';
   let sortOrder = true;
+  let showCount = false;
+  let counts = {};
 
   const rarity = {
     2: 'text-green-400',
@@ -86,8 +90,23 @@
         } else {
           return b.secondary.localeCompare(a.secondary);
         }
+      case 'pull':
+        if (sortOrder) {
+          return (counts[a.id]?.wish || 0) - (counts[b.id]?.wish || 0);
+        } else {
+          return (counts[b.id]?.wish || 0) - (counts[a.id]?.wish || 0);
+        }
     }
   });
+
+  async function getPullCount() {
+    const prefix = getAccountPrefix();
+    const data = await readSave(`${prefix}weapons`);
+    if (data !== null) {
+      counts = data;
+      showCount = true;
+    }
+  }
 
   async function changeLocale(locale) {
     const _data = await import(`../../data/weapons/${locale}.json`);
@@ -96,6 +115,7 @@
   }
 
   onMount(async () => {
+    getPullCount();
     locale.subscribe((val) => {
       changeLocale(val);
     });
@@ -133,6 +153,11 @@
           <TableHeader on:click={() => sort('secondary')} sort={sortBy === 'secondary'} order={sortOrder}>
             {$t('weapon.secondary')}
           </TableHeader>
+          {#if showCount}
+            <TableHeader on:click={() => sort('pull')} sort={sortBy === 'pull'} order={sortOrder}>
+              {$t('wish.rank.totalPull')}
+            </TableHeader>
+          {/if}
         </thead>
         <tbody class="text-white">
           {#each weapons as weapon (weapon.id)}
@@ -163,6 +188,11 @@
                 <td class="border-gray-700 border-t py-1 pl-4">
                   {weapon.secondary}
                 </td>
+                {#if showCount}
+                  <td class="border-gray-700 border-t py-1 pl-4 text-center">
+                    {counts[weapon.id]?.wish || ''}
+                  </td>
+                {/if}
               </tr>
             </a>
           {/each}

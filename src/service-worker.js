@@ -7,7 +7,11 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Add commissions location to achievement tracker', 'Adjust character detail page'];
+const changelog = [
+  'Add total pull on weapon list page',
+  'Adjust wish counter layout for small resolution',
+  'Add commissions location to achievement tracker',
+];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
