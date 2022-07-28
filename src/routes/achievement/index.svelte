@@ -63,7 +63,12 @@
   }));
   let versionFilter = [];
 
-  const types = [{ label: $t('achievement.commissions'), value: 'commissions' }];
+  const types = [
+    { label: $t('achievement.commissions'), value: 'commissions' },
+    { label: $t('fishing.mondstadt'), value: 'mondstadt' },
+    { label: $t('fishing.liyue'), value: 'liyue' },
+    { label: $t('fishing.inazuma'), value: 'inazuma' },
+  ];
   let typeFilter = [];
 
   function parseCategories() {
@@ -176,7 +181,15 @@
     const filterVersion = versionFilter.length > 0;
     const filteredVersion = versionFilter.map((e) => e.value);
 
-    const filterComission = typeFilter.map((e) => e.value).includes('commissions');
+    let filterComission = [];
+    for (const e of typeFilter) {
+      if (e.value === 'commissions') {
+        filterComission = ['mondstadt', 'liyue', 'inazuma'];
+        break;
+      }
+
+      filterComission.push(e.value);
+    }
 
     const filterName = nameFilter !== '';
     const query = nameFilter.toLowerCase();
@@ -190,12 +203,12 @@
       .filter((e) => {
         if (Array.isArray(e)) {
           if (filterVersion && !filteredVersion.includes(e[0].ver)) return false;
-          if (filterComission && !e[0].commissions) return false;
+          if (filterComission.length > 0 && !filterComission.includes(e[0].commissions)) return false;
           if (filterName && !e[0].name.toLowerCase().includes(query)) return false;
           return true;
         } else {
           if (filterVersion && !filteredVersion.includes(e.ver)) return false;
-          if (filterComission && !e.commissions) return false;
+          if (filterComission.length > 0 && !filterComission.includes(e.commissions)) return false;
           if (filterName && !e.name.toLowerCase().includes(query)) return false;
           return true;
         }
@@ -428,9 +441,12 @@
                       <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
                         {it.ver}
                       </span>
-                      {#if it.commissions}
+                      {#if it.commissions !== undefined}
                         <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
                           {$t('achievement.commissions')}
+                        </span>
+                        <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                          {$t(`fishing.${it.commissions}`)}
                         </span>
                       {/if}
                     </p>
@@ -459,9 +475,12 @@
                   <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
                     {el.ver}
                   </span>
-                  {#if el.commissions}
+                  {#if el.commissions !== undefined}
                     <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
                       {$t('achievement.commissions')}
+                    </span>
+                    <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                      {$t(`fishing.${el.commissions}`)}
                     </span>
                   {/if}
                 </p>

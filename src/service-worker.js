@@ -7,7 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Update timeline', 'Adjust character detail page'];
+const changelog = ['Add commissions location to achievement tracker', 'Adjust character detail page'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
