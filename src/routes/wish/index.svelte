@@ -195,7 +195,7 @@
     <div class="mb-4 flex justify-center">
       <Ad type="mobile" variant="mpu" id="2" />
     </div>
-    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3 max-w-screen-xl w-full">
+    <div class="grid gap-4 grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 max-w-screen-xl w-full">
       <Counter
         on:counterread={(val) => setRankWishTotal('character-event', val)}
         bind:this={counter1}
