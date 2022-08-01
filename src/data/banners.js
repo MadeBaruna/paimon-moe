@@ -432,6 +432,16 @@ export const banners = {
     //   featuredRare: ['ningguang', 'thoma', 'shikanoin_heizou'],
     //   timezoneDependent: true,
     // },
+    {
+      name: 'Tapestry of Golden Flames',
+      image: 2,
+      shortName: 'Yoimiya',
+      start: '2022-08-02 18:00:00',
+      end: '2022-08-23 14:59:59',
+      color: '#fc8976',
+      featured: ['yoimiya'],
+      featuredRare: ['yun_jin', 'xinyan', 'bennett'],
+    },
   ],
   weapons: [
     {
@@ -779,6 +789,16 @@ export const banners = {
       featured: ['freedom-sworn', 'lost_prayer_to_the_sacred_winds'],
       featuredRare: ['the_alley_flash', 'mitternachts_waltz', 'rainslasher', 'favonius_lance', 'the_widsith'],
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation',
+      image: 32,
+      start: '2022-08-02 18:00:00',
+      end: '2022-08-23 14:59:59',
+      shortName: 'Thundering',
+      color: '#eae5e1',
+      featured: ['thundering_pulse', 'summit_shaper'],
+      featuredRare: ['wine_and_song', 'alley_hunter', 'the_flute', 'sacrificial_greatsword', 'dragons_bane'],
     },
   ],
 };

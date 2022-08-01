@@ -13,25 +13,18 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    shikanoin_heizou: {
-      name: 'Heizou',
-      rarity: 'rare',
-      count: 0,
-      average: '...',
-      percentage: '...',
-    },
-    kaedehara_kazuha: {
-      name: 'Kazuha',
+    yoimiya: {
+      name: 'Yoimiya',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300032;
-  const image = 'kazuha_heizo.png';
+  const bannerId = 300033;
+  const image = 'yoimiya.png';
   const width = 800;
-  const height = 488;
+  const height = 495;
 
   let loading = true;
   let user = '';
