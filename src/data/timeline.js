@@ -149,7 +149,7 @@ export const eventsData = [
       end: '2022-08-22 03:59:59',
       color: '#ffc284',
       zoom: '100%',
-      url: 'https://www.ho9yolab.com/article/617391',
+      url: 'https://www.hoyolab.com/article/617391',
       showOnHome: true,
     },
   ],
