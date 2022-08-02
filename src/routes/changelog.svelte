@@ -8,6 +8,20 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre class="text-white px-4 md:px-8">
+2022/08/02
+- Update Yoimiya banner
+- Add connstellation count to global stats
+- Update furnishing data
+- Add constellation items to weapon and character page
+- Update timeline
+- Add weapon total pull to weapon list page
+- Improve website caching for faster loading
+
+2022/07/13
+- Add Heizou
+- Various data update
+- Various bug fixes
+
 2022/07/13
 - Add Heizou
 - Various data update
