@@ -29,7 +29,7 @@ async function fetchAddCache(url) {
     if (cachedRes) return;
 
     const res = await fetch(url);
-    cache.put(url, res.clone());
+    if (res.ok) cache.put(url, res.clone());
   } catch (err) {
     console.error(err);
   }
@@ -80,7 +80,7 @@ self.addEventListener('fetch', async (event) => {
       }
 
       const res = await fetch(event.request);
-      cache.put(event.request, res.clone());
+      if (res.ok) cache.put(event.request, res.clone());
       return res;
     })(),
   );
