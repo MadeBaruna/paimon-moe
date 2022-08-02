@@ -2,12 +2,13 @@ import { version } from '$service-worker';
 
 const CACHE = `cache${version}`;
 
-const IMAGE_CACHE_VER = '1658928624';
+const IMAGE_CACHE_VER = '1659457045';
 const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
 const changelog = [
+  'Update timeline',
   'Fix missing banner image',
   'Add Yoimiya & the weapon banner',
   'Add total pull on weapon list page',
