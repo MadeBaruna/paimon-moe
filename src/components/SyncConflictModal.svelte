@@ -21,11 +21,19 @@
   let loading = false;
 
   function useLocalData() {
+    if (localSize / remoteSize < 0.3) {
+      downloadBackup();
+    }
+
     loading = true;
     useLocal();
   }
 
   function useRemoteData() {
+    if (remoteSize / localSize < 0.3) {
+      downloadBackup();
+    }
+
     loading = true;
     useRemote();
   }
