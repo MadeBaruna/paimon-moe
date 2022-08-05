@@ -7,13 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = [
-  'Update timeline',
-  'Fix missing banner image',
-  'Add Yoimiya & the weapon banner',
-  'Add total pull on weapon list page',
-  'Add commissions location to achievement tracker',
-];
+const changelog = ['Update timeline', 'Fix item list on safari', 'Fix summit shaper materials'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
