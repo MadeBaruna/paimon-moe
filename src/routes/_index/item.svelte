@@ -72,7 +72,7 @@
       {#each Object.entries(characterItems) as [id, characters]}
         <tr>
           <td class="border-b border-gray-700 h-14 w-14 pr-2 py-2 align-middle">
-            <img class="h-full" src="/images/items/{id}.png" alt={id} title={id} />
+            <img class="w-full" src="/images/items/{id}.png" alt={id} title={id} />
           </td>
           <td class="border-b border-gray-700 pt-2 align-middle">
             {#each characters as char}
@@ -93,9 +93,7 @@
       <tr>
         <td colspan="2" class="py-2 align-middle">
           {#each Object.entries(weaponItems) as [id, _]}
-            <div class="h-10 w-10 mr-4 inline-block">
-              <img class="h-full" src="/images/items/{id}.png" alt={id} title={id} />
-            </div>
+            <img class="max-w-[2.5rem] h-auto inline-block mr-4" src="/images/items/{id}.png" alt={id} title={id} />
           {/each}
         </td>
       </tr>
