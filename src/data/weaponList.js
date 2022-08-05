@@ -605,7 +605,7 @@ export const weaponList = {
         items: [
           { item: itemList.luminous_sands_from_guyun, amount: 5 },
           { item: itemList.hunters_sacrificial_knife, amount: 5 },
-          { item: itemList.treasure_hoarder_insignia, amount: 3 },
+          { item: itemList.damaged_mask, amount: 3 },
         ],
         mora: 10000,
       },
@@ -613,7 +613,7 @@ export const weaponList = {
         items: [
           { item: itemList.lustrous_stone_from_guyun, amount: 5 },
           { item: itemList.hunters_sacrificial_knife, amount: 18 },
-          { item: itemList.treasure_hoarder_insignia, amount: 12 },
+          { item: itemList.damaged_mask, amount: 12 },
         ],
         mora: 20000,
       },
@@ -621,7 +621,7 @@ export const weaponList = {
         items: [
           { item: itemList.lustrous_stone_from_guyun, amount: 9 },
           { item: itemList.agents_sacrificial_knife, amount: 9 },
-          { item: itemList.silver_raven_insignia, amount: 9 },
+          { item: itemList.stained_mask, amount: 9 },
         ],
         mora: 30000,
       },
@@ -629,7 +629,7 @@ export const weaponList = {
         items: [
           { item: itemList.relic_from_guyun, amount: 5 },
           { item: itemList.agents_sacrificial_knife, amount: 18 },
-          { item: itemList.silver_raven_insignia, amount: 14 },
+          { item: itemList.stained_mask, amount: 14 },
         ],
         mora: 45000,
       },
@@ -637,7 +637,7 @@ export const weaponList = {
         items: [
           { item: itemList.relic_from_guyun, amount: 9 },
           { item: itemList.inspectors_sacrificial_knife, amount: 14 },
-          { item: itemList.golden_raven_insignia, amount: 9 },
+          { item: itemList.ominous_mask, amount: 9 },
         ],
         mora: 55000,
       },
@@ -645,7 +645,7 @@ export const weaponList = {
         items: [
           { item: itemList.divine_body_from_guyun, amount: 6 },
           { item: itemList.inspectors_sacrificial_knife, amount: 27 },
-          { item: itemList.golden_raven_insignia, amount: 18 },
+          { item: itemList.ominous_mask, amount: 18 },
         ],
         mora: 65000,
       },
