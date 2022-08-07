@@ -135,7 +135,7 @@
       minAscension = 0;
     }
 
-    currentAscension = Math.max(currentAscension, minAscension);
+    currentAscension = minAscension;
   }
 
   function updateMinIntendedAscension() {
@@ -155,7 +155,7 @@
       minIntendedAscension = 0;
     }
 
-    intendedAscension = Math.max(intendedAscension, minIntendedAscension);
+    intendedAscension = minIntendedAscension;
   }
 
   function onChange() {
