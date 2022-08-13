@@ -253,6 +253,8 @@
           currentMaterial = selectedCharacter.material_atk.material[j];
         }
 
+        const key = selectedCharacter.id === characters.traveler_geo.id && i === 'first' ? 'material_atk' : 'material';
+
         const bookAmount = talent[j].book.amount;
         const commonMaterial = talent[j].commonMaterial.amount;
         const bossMaterial = talent[j].bossMaterial;
@@ -269,13 +271,13 @@
         talentMaterial.items[currentMaterial.id].amount += commonMaterial;
 
         if (bossMaterial > 0) {
-          if (talentMaterial.items[selectedCharacter.material.boss.id] === undefined) {
-            talentMaterial.items[selectedCharacter.material.boss.id] = {
-              ...selectedCharacter.material.boss,
+          if (talentMaterial.items[selectedCharacter[key].boss.id] === undefined) {
+            talentMaterial.items[selectedCharacter[key].boss.id] = {
+              ...selectedCharacter[key].boss,
               amount: 0,
             };
           }
-          talentMaterial.items[selectedCharacter.material.boss.id].amount += bossMaterial;
+          talentMaterial.items[selectedCharacter[key].boss.id].amount += bossMaterial;
         }
 
         if (eventMaterial > 0) {
