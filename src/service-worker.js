@@ -7,7 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Update timeline', 'Fix item list on safari', 'Fix summit shaper materials'];
+const changelog = ['Added calendar (database > calendar)', 'Minor fixes'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 

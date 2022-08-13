@@ -4,12 +4,28 @@
   import dayjs from 'dayjs';
   import { onMount } from 'svelte';
 
+  import { bannersDual } from '../../data/bannersDual';
+
+  export let type;
   export let event;
   export let timeDifference;
 
+  let start = dayjs(event.start);
+  let end = dayjs(event.end);
+
   let now = dayjs().add(timeDifference, 'minute');
 
+  let image = type === 'banners' ? `${event.name} ${event.image}.png` : event.image;
+  let banner2 = null;
+
   onMount(() => {
+    console.log(bannersDual[`${event.name} ${event.image}`]);
+    if (type === 'banners') {
+      if (bannersDual[`${event.name} ${event.image}`] !== undefined) {
+        banner2 = bannersDual[`${event.name} ${event.image}`][1];
+      }
+    }
+
     const interval = setInterval(() => {
       now = dayjs().add(timeDifference, 'minute');
     }, 1000);
@@ -21,22 +37,28 @@
 
   $: started = now.isAfter(event.start);
   $: ended = now.isAfter(event.end);
-  $: diffStart = event.start.diff(now);
-  $: diffEnd = event.end.diff(now);
+  $: diffStart = start.diff(now);
+  $: diffEnd = end.diff(now);
 </script>
 
 <div>
   {#if event.image}
-    <img src="/images/events/{event.image}" class="w-full rounded-lg mb-4" alt={event.name} />
+    <img src="/images/{type}/{image}" class="w-full rounded-lg mb-4" alt={event.name} />
+  {/if}
+  {#if banner2}
+    <img src="/images/banners/{banner2.name} {banner2.image}.png" class="w-full rounded-lg mb-4" alt={banner2.name} />
   {/if}
   <h1 class="text-white font-display font-semibold text-xl">{event.name}</h1>
+  {#if banner2}
+    <h1 class="text-white font-display font-semibold text-xl mb-2">{banner2.name}</h1>
+  {/if}
   <p class="text-gray-400 font-body flex flex-col md:flex-row">
     <span class="flex">
-      <span>{event.start.format('ddd, D MMM YYYY HH:mm')}</span>
+      <span>{start.format('ddd, D MMM YYYY HH:mm')}</span>
       {#if !event.startOnly}<span class="mx-2">-</span>{/if}
     </span>
     {#if !event.startOnly}
-      <span>{event.end.format('ddd, D MMM YYYY HH:mm')}</span>
+      <span>{end.format('ddd, D MMM YYYY HH:mm')}</span>
     {/if}
   </p>
   {#if event.url}

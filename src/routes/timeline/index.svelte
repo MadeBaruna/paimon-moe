@@ -13,7 +13,7 @@
 
   import Checkbox from '../../components/Checkbox.svelte';
   import EventItem from './_item.svelte';
-  import DetailModal from './_detail.svelte';
+  import DetailModal from '../calendar/_detail.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave } from '../../stores/saveManager';
   import Ad from '../../components/Ad.svelte';

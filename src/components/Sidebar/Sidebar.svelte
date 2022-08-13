@@ -105,6 +105,7 @@
         'weapons',
         'artifacts',
         'radiant-spincrystal',
+        'calendar',
       ].includes(segment)}
       image="/images/items.png"
       label={$t('sidebar.database')}
@@ -117,6 +118,7 @@
         { label: $t('sidebar.artifacts'), href: '/artifacts' },
         { label: $t('sidebar.fishing'), href: '/fishing' },
         { label: $t('sidebar.radiantSpincrystal'), href: '/radiant-spincrystal' },
+        { label: $t('sidebar.calendar'), href: '/calendar' },
       ]}
     />
     <SidebarItem
