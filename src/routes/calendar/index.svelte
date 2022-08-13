@@ -318,6 +318,17 @@
   });
 </script>
 
+<svelte:head>
+  <title>Calendar - Paimon.moe</title>
+  <meta
+    name="description"
+    content="Genshin Impact Calendar to show genshin impact events, banner, and birthday dates!"
+  />
+  <meta
+    property="og:description"
+    content="Genshin Impact Calendar to show genshin impact events, banner, and birthday dates!"
+  />
+</svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8 max-w-screen-xl">
   <div class="px-4 2xl:px-8 mb-4 flex flex-col">
     <div class="mb-1 flex gap-1">
