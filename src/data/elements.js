@@ -9,6 +9,11 @@ export const elements = {
     name: 'Anemo',
     simpleName: 'Wind',
   },
+  dendro: {
+    id: 'dendro',
+    name: 'Dendro',
+    simpleName: "Plant",
+  },
   pyro: {
     id: 'pyro',
     name: 'Pyro',
