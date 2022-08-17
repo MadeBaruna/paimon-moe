@@ -887,9 +887,9 @@ export const itemList = {
     parent: "nagadus_emerald_sliver"
   },
 
-  magestic_hooked_beak: {
-    id: "magestic_hooked_beak",
-    name: "Magestic Hooked Beak",
+  majestic_hooked_beak: {
+    id: "majestic_hooked_beak",
+    name: "Majestic Hooked Beak",
     rarity: 4
   },
 
