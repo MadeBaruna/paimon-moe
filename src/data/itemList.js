@@ -860,4 +860,109 @@ export const itemList = {
   tears_of_the_calamitous_god: { id: 'tears_of_the_calamitous_god', name: 'Tears of the Calamitous God' },
 
   runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
+
+
+  // SUMERU
+  nagadus_emerald_sliver: {
+    id: "nagadus_emerald_sliver",
+    name: "Nagadus Emerald Sliver",
+    rarity: 1
+  },
+  nagadus_emerald_fragment: {
+    id: "nagadus_emerald_fragment",
+    name: "Nagadus Emerald Fragment",
+    rarity: 2,
+    parent: "nagadus_emerald_sliver"
+  },
+  nagadus_emerald_chunk: {
+    id: "nagadus_emerald_chunk",
+    name: "Nagadus Emerald Chunk",
+    rarity: 3,
+    parent: "nagadus_emerald_sliver"
+  },
+  nagadus_emerald_gemstone: {
+    id: "nagadus_emerald_gemstone",
+    name: "Nagadus Emerald Gemstone",
+    rarity: 4,
+    parent: "nagadus_emerald_sliver"
+  },
+
+  magestic_hooked_beak: {
+    id: "magestic_hooked_beak",
+    name: "Magestic Hooked Beak",
+    rarity: 4
+  },
+
+  thunderclap_fruitcore: {
+    id: "thunderclap_fruitcore",
+    name: "Thunderclap Fruitcore",
+    rarity: 4
+  },
+
+  chaos_storage: {
+    id: "chaos_storage",
+    name: "Chaos Storage",
+  },
+  chaos_module: {
+    id: "chaos_module",
+    name: "Chaos Module",
+  },
+  chaos_bolt: {
+    id: "chaos_bolt",
+    name: "Chaos Bolt",
+  },
+
+  faded_red_satin: {
+    id: "faded_red_satin",
+    name: "Faded Red Satin",
+  },
+  trimmed_red_silk: {
+    id: "trimmed_red_silk",
+    name: "Trimmed Red Silk",
+  },
+  rich_red_brocade: {
+    id: "rich_red_brocade",
+    name: "Rich Red Brocade",
+  },
+
+  inactivated_fungal_nucleus: {
+    id: "inactivated_fungal_nucleus",
+    name: "Inactivated Fungal Nucleus",
+  },
+  dormant_fungal_nucleus: {
+    id: "dormant_fungal_nucleus",
+    name: "Dormant Fungal Nucleus",
+  },
+  robust_fungal_nucleus: {
+    id: "robust_fungal_nucleus",
+    name: "Robust Fungal Nucleus",
+  },
+
+  fungal_spores: {
+    id: "fungal_spores",
+    name: "Fungal Spores",
+  },
+  luminescent_pollen: {
+    id: "luminescent_pollen",
+    name: "Luminescent Pollen",
+  },
+  crystalline_cyst_dust: {
+    id: "crystalline_cyst_dust",
+    name: "Crystalline Cyst Dust",
+  },
+
+  rukkhashava_mushrooms: {
+    id: "rukkhashava_mushrooms",
+    name: "Rukkhashava Mushrooms"
+  },
+  nilotpala_lotus: {
+    id: "nilotpala_lotus",
+    name: "Nilotpala Lotus"
+  },
+  kalpata_lotus: {
+    id: "kalpata_lotus",
+    name: "Kalpata Lotus"
+  },
+
+
 };
