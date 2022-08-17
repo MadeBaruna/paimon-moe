@@ -1244,4 +1244,71 @@ export const domains = {
     ],
     artifacts: ['martial_artist', 'gambler', 'vermillion_hereafter', 'echoes_of_an_offering'],
   },
+  spire_of_solitary_enlightenment: {
+    // TODO : COMPLETE WHEN AVAILABLE
+    name: 'Spire of Solitary Enlightenment',
+    domains: [
+      {
+        s: 5050,
+        id: 'domain_of_blessing_seven_senses_i',
+        name: 'Domain of Blessing: Seven Senses I',
+        ar: null,
+        level: null,
+        reward: {
+          adventureExp: '100',
+          mora: '1850',
+          friendshipExp: '15',
+        },
+        monsters: [
+        ],
+        disorder: ['', ''],
+      },
+      {
+        s: 5051,
+        id: 'domain_of_blessing_seven_senses_ii',
+        name: 'Domain of Blessing: Seven Senses II',
+        ar: null,
+        level: null,
+        reward: {
+          adventureExp: '100',
+          mora: '2025',
+          friendshipExp: '20',
+        },
+        monsters: [
+        ],
+        disorder: ['', ''],
+      },
+      {
+        s: 5052,
+        id: 'domain_of_blessing_seven_senses_iii',
+        name: 'Domain of Blessing: Seven Senses III',
+        ar: null,
+        level: null,
+        reward: {
+          adventureExp: '100',
+          mora: '2200',
+          friendshipExp: '20',
+        },
+        monsters: [
+        ],
+        disorder: ['', ''],
+      },
+      {
+        s: 5053,
+        id: 'domain_of_blessing_seven_senses_iv',
+        name: 'Domain of Blessing: Seven Senses IV',
+        ar: null,
+        level: null,
+        reward: {
+          adventureExp: '100',
+          mora: '2525',
+          friendshipExp: '20',
+        },
+        monsters: [
+        ],
+        disorder: ['', ''],
+      },
+    ],
+    artifacts: ['deepwood_memories', 'gilded_dreams'],
+  },
 };
