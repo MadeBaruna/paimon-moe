@@ -854,34 +854,6 @@ export const itemList = {
     rarity: 5,
   },
 
-  mask_of_the_wicked_lieutenant: {
-    id: 'mask_of_the_wicked_lieutenant',
-    name: 'Mask of the Wicked Lieutenant',
-    day: ['wednesday', 'saturday'],
-    rarity: 1,
-  },
-  mask_of_the_tigers_bite: {
-    id: 'mask_of_the_tigers_bite',
-    name: "Mask of the Tiger's Bite",
-    day: ['wednesday', 'saturday'],
-    rarity: 2,
-    parent: 'mask_of_the_wicked_lieutenant',
-  },
-  mask_of_the_one_horned: {
-    id: 'mask_of_the_one_horned',
-    name: 'Mask of the One-Horned',
-    day: ['wednesday', 'saturday'],
-    rarity: 3,
-    parent: 'mask_of_the_wicked_lieutenant',
-  },
-  mask_of_the_kijin: {
-    id: 'mask_of_the_kijin',
-    name: 'Mask of the Kijin',
-    day: ['wednesday', 'saturday'],
-    rarity: 4,
-    parent: 'mask_of_the_wicked_lieutenant',
-  },
-
   gloomy_statuette: { id: 'gloomy_statuette', name: 'Gloomy Statuette' },
   dark_statuette: { id: 'dark_statuette', name: 'Dark Statuette' },
   deathly_statuette: { id: 'deathly_statuette', name: 'Deathly Statuette' },
