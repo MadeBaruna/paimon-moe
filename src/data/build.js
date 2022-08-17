@@ -3966,4 +3966,58 @@ export const builds = {
       },
     },
   },
+  collei: {
+    roles: {
+      TBD: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD']
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: '',
+      }
+    }
+  },
+  dori: {
+    roles: {
+      TBD: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD']
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: '',
+      }
+    }
+  },
+  tighnari: {
+    roles: {
+      TBD: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD']
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: '',
+      }
+    }
+  }
 };
