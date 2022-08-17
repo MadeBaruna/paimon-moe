@@ -46,6 +46,21 @@ export const itemGroup = {
     items: [itemList.teachings_of_light, itemList.guide_to_light, itemList.philosophies_of_light],
     type: 'book',
   },
+  teachings_of_admonition: {
+    name: 'Admonition',
+    items: [itemList.teachings_of_admonition, itemList.guide_to_admonition, itemList.philosophies_of_admonition],
+    type: 'book',
+  },
+  teachings_of_ingenuity: {
+    name: 'Ingenuity',
+    items: [itemList.teachings_of_ingenuity, itemList.guide_to_ingenuity, itemList.philosophies_of_ingenuity],
+    type: 'book',
+  },
+  teachings_of_praxis: {
+    name: 'Praxis',
+    items: [itemList.teachings_of_praxis, itemList.guide_to_praxis, itemList.philosophies_of_praxis],
+    type: 'book',
+  },
   tile_of_decarabians_tower: {
     name: 'Decarabian',
     items: [
@@ -150,6 +165,16 @@ export const itemGroup = {
       itemList.brilliant_diamond_gemstone,
     ],
     type: 'ascension_gem',
+  },
+  nagadus_emerald_sliver: {
+    name: "Nagadus Emerald",
+    items: [
+        itemList.nagadus_emerald_sliver,
+        itemList.nagadus_emerald_fragment,
+        itemList.nagadus_emerald_chunk,
+        itemList.nagadus_emerald_gemstone,
+    ],
+    type: "ascension_gem"
   },
   prithiva_topaz_sliver: {
     name: 'Prithiva Topaz',
@@ -285,5 +310,22 @@ export const itemGroup = {
   gloomy_statuette: {
     name: 'Statuette',
     items: [itemList.gloomy_statuette, itemList.dark_statuette, itemList.deathly_statuette],
+  },
+
+  chaos_storage: {
+    name: "Chaos Storage",
+    items: [itemList.chaos_storage, itemList.chaos_module, itemList.chaos_bolt],
+  },
+  faded_red_satin: {
+    name: "Red Satin",
+    itemList: [itemList.faded_red_satin, itemList.faded_red_satin, itemList.rich_red_brocade],
+  },
+  inactivated_fungal_nucleus: {
+    name: "Fungal Nucleus",
+    itemList: [itemList.inactivated_fungal_nucleus, itemList.dormant_fungal_nucleus, itemList.robust_fungal_nucleus],
+  },
+  fungal_spores: {
+    name: "Fungal Spores",
+    itemList: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
   },
 };

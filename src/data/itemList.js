@@ -899,6 +899,69 @@ export const itemList = {
     rarity: 4
   },
 
+  teachings_of_admonition: {
+    id: 'teachings_of_admonition',
+    name: 'Teachings of Admonition',
+    day: ['monday', 'thursday'],
+    rarity: 2,
+  },
+  guide_to_admonition: {
+    id: 'guide_to_admonition',
+    name: 'Guide to Admonition',
+    day: ['monday', 'thursday'],
+    rarity: 3,
+    parent: 'teachings_of_admonition',
+  },
+  philosophies_of_admonition: {
+    id: 'philosophies_of_admonition',
+    name: 'Philosophies of Admonition',
+    day: ['monday', 'thursday'],
+    rarity: 4,
+    parent: 'teachings_of_admonition',
+  },
+
+  teachings_of_ingenuity: {
+    id: 'teachings_of_ingenuity',
+    name: 'Teachings of Ingenuity',
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+  },
+  guide_to_ingenuity: {
+    id: 'guide_to_ingenuity',
+    name: 'Guide to Ingenuity',
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'teachings_of_ingenuity',
+  },
+  philosophies_of_ingenuity: {
+    id: 'philosophies_of_ingenuity',
+    name: 'Philosophies of Ingenuity',
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'teachings_of_ingenuity',
+  },
+
+  teachings_of_praxis: {
+    id: 'teachings_of_praxis',
+    name: 'Teachings of Praxis',
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+  },
+  guide_to_praxis: {
+    id: 'guide_to_praxis',
+    name: 'Guide to Praxis',
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'teachings_of_praxis',
+  },
+  philosophies_of_praxis: {
+    id: 'philosophies_of_praxis',
+    name: 'Philosophies of Praxis',
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'teachings_of_praxis',
+  },
+
   chaos_storage: {
     id: "chaos_storage",
     name: "Chaos Storage",
@@ -963,6 +1026,4 @@ export const itemList = {
     id: "kalpata_lotus",
     name: "Kalpata Lotus"
   },
-
-
 };
