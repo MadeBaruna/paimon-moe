@@ -962,6 +962,93 @@ export const itemList = {
     parent: 'teachings_of_praxis',
   },
 
+
+  // TODO: Change their name and IDs when well know their real name, as well as the images related to them
+  iron_talisman_1: {
+    id: 'iron_talisman_1',
+    name: "???",
+    day: ['monday', 'thursday'],
+    rarity: 2,
+  },
+  iron_talisman_2: {
+    id: 'iron_talisman_2',
+    name: "???",
+    day: ['monday', 'thursday'],
+    rarity: 3,
+    parent: 'iron_talisman_1',
+  },
+  iron_talisman_3: {
+    id: 'iron_talisman_3',
+    name: "???",
+    day: ['monday', 'thursday'],
+    rarity: 4,
+    parent: 'iron_talisman_1',
+  },
+  iron_talisman_4: {
+    id: 'iron_talisman_4',
+    name: "???",
+    day: ['monday', 'thursday'],
+    rarity: 5,
+    parent: 'iron_talisman_1',
+  },
+
+  oasis_garden_1: {
+    id: 'oasis_garden_1',
+    name: "???",
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+  },
+  oasis_garden_2: {
+    id: 'oasis_garden_2',
+    name: "???",
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'oasis_garden_1',
+  },
+  oasis_garden_3: {
+    id: 'oasis_garden_3',
+    name: "???",
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'oasis_garden_1',
+  },
+  oasis_garden_4: {
+    id: 'oasis_garden_4',
+    name: "???",
+    day: ['tuesday', 'friday'],
+    rarity: 5,
+    parent: 'oasis_garden_1',
+  },
+
+  remnant_glow_1: {
+    id: 'remnant_glow_1',
+    name: "???",
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+  },
+  remnant_glow_2: {
+    id: 'remnant_glow_2',
+    name: "???",
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'remnant_glow_1'
+  },
+  remnant_glow_3: {
+    id: 'remnant_glow_3',
+    name: "???",
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'remnant_glow_1'
+  },
+  remnant_glow_4: {
+    id: 'remnant_glow_4',
+    name: "???",
+    day: ['wednesday', 'saturday'],
+    rarity: 5,
+    parent: 'remnant_glow_1'
+  },
+  // END TODO
+
   chaos_storage: {
     id: "chaos_storage",
     name: "Chaos Storage",

@@ -146,6 +146,40 @@ export const itemGroup = {
     ],
     type: 'weapon',
   },
+
+  // TODO: change ID's when we'll know their real name
+  iron_talisman_of_the_forest_dew: {
+    name: 'Talisman',
+    items: [
+        itemList.iron_talisman_1,
+        itemList.iron_talisman_2,
+        itemList.iron_talisman_3,
+        itemList.iron_talisman_4,
+    ],
+    type: 'weapon'
+  },
+  oasis_garden_kindness: {
+    name: 'Oasis Garden',
+    items: [
+        itemList.oasis_garden_1,
+        itemList.oasis_garden_2,
+        itemList.oasis_garden_3,
+        itemList.oasis_garden_4,
+    ],
+    type: 'weapon'
+  },
+  remnant_glow_of_scorching_might: {
+    name: 'Remnant Glow',
+    items: [
+        itemList.remnant_glow_1,
+        itemList.remnant_glow_2,
+        itemList.remnant_glow_3,
+        itemList.remnant_glow_4
+    ],
+    type: 'weapon'
+  },
+
+
   agnidus_agate_sliver: {
     name: 'Agnidus Agate',
     items: [
