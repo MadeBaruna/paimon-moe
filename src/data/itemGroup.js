@@ -148,7 +148,7 @@ export const itemGroup = {
   },
 
   // TODO: change ID's when we'll know their real name
-  iron_talisman_of_the_forest_dew: {
+  iron_talisman_1: {
     name: 'Talisman',
     items: [
         itemList.iron_talisman_1,
@@ -158,7 +158,7 @@ export const itemGroup = {
     ],
     type: 'weapon'
   },
-  oasis_garden_kindness: {
+  oasis_garden_1: {
     name: 'Oasis Garden',
     items: [
         itemList.oasis_garden_1,
@@ -168,7 +168,7 @@ export const itemGroup = {
     ],
     type: 'weapon'
   },
-  remnant_glow_of_scorching_might: {
+  remnant_glow_1: {
     name: 'Remnant Glow',
     items: [
         itemList.remnant_glow_1,
