@@ -4019,5 +4019,23 @@ export const builds = {
         note: '',
       }
     }
+  },
+  traveler_dendro: {
+    roles: {
+      TBD: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD']
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: '',
+      }
+    }
   }
 };
