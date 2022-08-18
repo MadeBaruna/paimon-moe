@@ -348,6 +348,14 @@
                 <img src="/images/elements/electro.png" alt="electro" class="w-8 h-8" style="min-width: 2rem;" />
               </button>
               <button
+                on:click={() => toggleElement('dendro')}
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.dendro
+                  ? ''
+                  : 'opacity-25'}"
+              >
+                <img src="/images/elements/dendro.png" alt="dendro" class="w-8 h-8" style="min-width: 2rem;" />
+              </button>
+              <button
                 on:click={() => toggleElement('cryo')}
                 class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.cryo
                   ? ''
