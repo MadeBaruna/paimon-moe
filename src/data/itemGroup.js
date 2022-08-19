@@ -352,14 +352,14 @@ export const itemGroup = {
   },
   faded_red_satin: {
     name: "Red Satin",
-    itemList: [itemList.faded_red_satin, itemList.faded_red_satin, itemList.rich_red_brocade],
+    items: [itemList.faded_red_satin, itemList.faded_red_satin, itemList.rich_red_brocade],
   },
   inactivated_fungal_nucleus: {
     name: "Fungal Nucleus",
-    itemList: [itemList.inactivated_fungal_nucleus, itemList.dormant_fungal_nucleus, itemList.robust_fungal_nucleus],
+    items: [itemList.inactivated_fungal_nucleus, itemList.dormant_fungal_nucleus, itemList.robust_fungal_nucleus],
   },
   fungal_spores: {
     name: "Fungal Spores",
-    itemList: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
+    items: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
   },
 };
