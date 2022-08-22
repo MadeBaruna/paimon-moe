@@ -147,7 +147,6 @@ export const itemGroup = {
     type: 'weapon',
   },
 
-  // TODO: change ID's when we'll know their real name
   copper_talisman_of_the_forest_dew: {
     name: 'Talisman of the Forest Dew',
     items: [
