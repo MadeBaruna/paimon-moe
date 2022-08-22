@@ -85,11 +85,11 @@
     <CharacterSelect bind:selected={name} />
   {/if}
   <div class="h-4" />
-  <Input type="datetime-local" step="1" bind:value={time} />
+  <Input type="datetime-local" step="1" max="9999-12-31T23:59:59" bind:value={time} />
   <div class="h-4" />
   <div class="flex items-center">
     <p class="ml-4 mr-4">At Pity:</p>
-    <Input type="number" bind:value={pity} />
+    <Input type="number" min="1" bind:value={pity} />
   </div>
   {#if isEdit}
     <div class="flex mt-32">
