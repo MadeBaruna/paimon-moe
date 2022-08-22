@@ -1317,5 +1317,25 @@
         ]
       ]
     ]
+  },
+  "dashSkill": {
+    "name": "Illusory Torrent",
+    "description": "<span style=\"color:#FFD780FF\">Alternate Sprint</span>\\nMona cloaks herself within the water's flow, consuming Stamina to move rapidly.\\n\\nWhen under the effect of Illusory Torrent, Mona can move at high speed on water.\\nApplies the <span style=\"color:#80C0FFFF\">Wet</span> status to nearby opponents when she reappears.\\n\\n<i>This is something that Mona can do, but her teacher cannot. Well, but it's not as if her teacher would pursue any matter concerning Hydro Visions anyway...</i>",
+    "skillLabels": [
+      "Activation Stamina Consumption",
+      "Stamina Drain"
+    ],
+    "skillStatsLabels": [
+      "{0:2f}",
+      "{0:2f}/s"
+    ],
+    "skillStats": [
+      [
+        [10]
+      ],
+      [
+        [15]
+      ]
+    ]
   }
 }
