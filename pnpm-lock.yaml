@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@mdi/js': ^5.9.55
-  '@sveltejs/adapter-static': 1.0.0-next.37
+  '@sveltejs/adapter-static': 1.0.0-next.39
   '@sveltejs/kit': 1.0.0-next.405
   autoprefixer: ^10.4.7
   chart.js: ^2.9.4
@@ -24,7 +24,7 @@ specifiers:
 
 devDependencies:
   '@mdi/js': 5.9.55
-  '@sveltejs/adapter-static': 1.0.0-next.37
+  '@sveltejs/adapter-static': 1.0.0-next.39
   '@sveltejs/kit': 1.0.0-next.405_svelte@3.49.0+vite@3.0.2
   autoprefixer: 10.4.7_postcss@8.4.14
   chart.js: 2.9.4
@@ -136,10 +136,8 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-static/1.0.0-next.37:
-    resolution: {integrity: sha512-BDFkx4CGAd6pG4e3+zYjy/eM9UDbhkRgXqavUzCO5oT8xXao5TeprY1AIbdzjMTmFjsWdeSXE9TbIsT0iikpyQ==}
-    dependencies:
-      tiny-glob: 0.2.9
+  /@sveltejs/adapter-static/1.0.0-next.39:
+    resolution: {integrity: sha512-EeD39H6iEe0UEKnKxLFTZFZpi/FcX5xfbAvsMQ+B09aDZccpQmkJBSIo+4kq1JsQGSjwi/+J3aE9bR67R6CIyQ==}
     dev: true
 
   /@sveltejs/kit/1.0.0-next.405_svelte@3.49.0+vite@3.0.2:
