@@ -449,6 +449,8 @@
       sheet.eachRow((row, index) => {
         if (index === 1) return;
         const type = row.getCell(4).text.toLowerCase();
+        if (type === '') return;
+
         let time = row.getCell(5);
         const fullName = row.getCell(6).text;
 
