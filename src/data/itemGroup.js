@@ -148,33 +148,33 @@ export const itemGroup = {
   },
 
   // TODO: change ID's when we'll know their real name
-  iron_talisman_1: {
-    name: 'Talisman',
+  copper_talisman_of_the_forest_dew: {
+    name: 'Talisman of the Forest Dew',
     items: [
-        itemList.iron_talisman_1,
-        itemList.iron_talisman_2,
-        itemList.iron_talisman_3,
-        itemList.iron_talisman_4,
+        itemList.copper_talisman_of_the_forest_dew,
+        itemList.iron_talisman_of_the_forest_dew,
+        itemList.silver_talisman_of_the_forest_dew,
+        itemList.golden_talisman_of_the_forest_dew,
     ],
     type: 'weapon'
   },
-  oasis_garden_1: {
+  oasis_gardens_reminiscence: {
     name: 'Oasis Garden',
     items: [
-        itemList.oasis_garden_1,
-        itemList.oasis_garden_2,
-        itemList.oasis_garden_3,
-        itemList.oasis_garden_4,
+        itemList.oasis_gardens_reminiscence,
+        itemList.oasis_gardens_kindness,
+        itemList.oasis_gardens_mourning,
+        itemList.oasis_gardens_truth,
     ],
     type: 'weapon'
   },
-  remnant_glow_1: {
-    name: 'Remnant Glow',
+  echo_of_scorching_might: {
+    name: 'Scorching Might',
     items: [
-        itemList.remnant_glow_1,
-        itemList.remnant_glow_2,
-        itemList.remnant_glow_3,
-        itemList.remnant_glow_4
+        itemList.echo_of_scorching_might,
+        itemList.remnant_glow_of_scorching_might,
+        itemList.dream_of_scorching_might,
+        itemList.olden_days_scorching_might
     ],
     type: 'weapon'
   },

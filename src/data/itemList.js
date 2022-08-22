@@ -964,90 +964,89 @@ export const itemList = {
 
 
   // TODO: Change their name and IDs when well know their real name, as well as the images related to them
-  iron_talisman_1: {
-    id: 'iron_talisman_1',
-    name: "???",
+  copper_talisman_of_the_forest_dew: {
+    id: 'copper_talisman_of_the_forest_dew',
+    name: "Copper Talisman of the Forest Dew",
     day: ['monday', 'thursday'],
     rarity: 2,
   },
-  iron_talisman_2: {
-    id: 'iron_talisman_2',
-    name: "???",
+  iron_talisman_of_the_forest_dew: {
+    id: 'iron_talisman_of_the_forest_dew',
+    name: "Iron Talisman of the Forest Dew",
     day: ['monday', 'thursday'],
     rarity: 3,
-    parent: 'iron_talisman_1',
+    parent: 'copper_talisman_of_the_forest_dew',
   },
-  iron_talisman_3: {
-    id: 'iron_talisman_3',
-    name: "???",
+  silver_talisman_of_the_forest_dew: {
+    id: 'silver_talisman_of_the_forest_dew',
+    name: "Silver Talisman of the Forest Dew",
     day: ['monday', 'thursday'],
     rarity: 4,
-    parent: 'iron_talisman_1',
+    parent: 'copper_talisman_of_the_forest_dew',
   },
-  iron_talisman_4: {
-    id: 'iron_talisman_4',
-    name: "???",
+  golden_talisman_of_the_forest_dew: {
+    id: 'golden_talisman_of_the_forest_dew',
+    name: "Golden Talisman of the Forest Dew",
     day: ['monday', 'thursday'],
     rarity: 5,
-    parent: 'iron_talisman_1',
+    parent: 'copper_talisman_of_the_forest_dew',
   },
 
-  oasis_garden_1: {
-    id: 'oasis_garden_1',
-    name: "???",
+  oasis_gardens_reminiscence: {
+    id: 'oasis_gardens_reminiscence',
+    name: "Oasis Garden's Reminiscence",
     day: ['tuesday', 'friday'],
     rarity: 2,
   },
-  oasis_garden_2: {
-    id: 'oasis_garden_2',
-    name: "???",
+  oasis_gardens_kindness: {
+    id: 'oasis_gardens_kindness',
+    name: "Oasis Garden's Kindness",
     day: ['tuesday', 'friday'],
     rarity: 3,
-    parent: 'oasis_garden_1',
+    parent: 'oasis_gardens_reminiscence',
   },
-  oasis_garden_3: {
-    id: 'oasis_garden_3',
-    name: "???",
+  oasis_gardens_mourning: {
+    id: 'oasis_gardens_mourning',
+    name: "Oasis Garden's Mourning",
     day: ['tuesday', 'friday'],
     rarity: 4,
-    parent: 'oasis_garden_1',
+    parent: 'oasis_gardens_reminiscence',
   },
-  oasis_garden_4: {
-    id: 'oasis_garden_4',
-    name: "???",
+  oasis_gardens_truth: {
+    id: 'oasis_gardens_truth',
+    name: "Oasis Garden's Truth",
     day: ['tuesday', 'friday'],
     rarity: 5,
-    parent: 'oasis_garden_1',
+    parent: 'oasis_gardens_reminiscence',
   },
 
-  remnant_glow_1: {
-    id: 'remnant_glow_1',
-    name: "???",
+    echo_of_scorching_might: {
+    id: 'echo_of_scorching_might',
+    name: "Echo of Scorching Might",
     day: ['wednesday', 'saturday'],
     rarity: 2,
   },
-  remnant_glow_2: {
-    id: 'remnant_glow_2',
-    name: "???",
+  remnant_glow_of_scorching_might: {
+    id: 'remnant_glow_of_scorching_might',
+    name: "Remnant Glow of Scorching Might",
     day: ['wednesday', 'saturday'],
     rarity: 3,
-    parent: 'remnant_glow_1'
+    parent: 'echo_of_scorching_might'
   },
-  remnant_glow_3: {
-    id: 'remnant_glow_3',
-    name: "???",
+  dream_of_scorching_might: {
+    id: 'dream_of_scorching_might',
+    name: "Dream of Scorching Might",
     day: ['wednesday', 'saturday'],
     rarity: 4,
-    parent: 'remnant_glow_1'
+    parent: 'echo_of_scorching_might'
   },
-  remnant_glow_4: {
-    id: 'remnant_glow_4',
-    name: "???",
+  olden_days_scorching_might: {
+    id: 'olden_days_scorching_might',
+    name: "Olden Days of Scorching Might",
     day: ['wednesday', 'saturday'],
     rarity: 5,
-    parent: 'remnant_glow_1'
+    parent: 'echo_of_scorching_might'
   },
-  // END TODO
 
   chaos_storage: {
     id: "chaos_storage",
