@@ -46,6 +46,21 @@ export const itemGroup = {
     items: [itemList.teachings_of_light, itemList.guide_to_light, itemList.philosophies_of_light],
     type: 'book',
   },
+  teachings_of_admonition: {
+    name: 'Admonition',
+    items: [itemList.teachings_of_admonition, itemList.guide_to_admonition, itemList.philosophies_of_admonition],
+    type: 'book',
+  },
+  teachings_of_ingenuity: {
+    name: 'Ingenuity',
+    items: [itemList.teachings_of_ingenuity, itemList.guide_to_ingenuity, itemList.philosophies_of_ingenuity],
+    type: 'book',
+  },
+  teachings_of_praxis: {
+    name: 'Praxis',
+    items: [itemList.teachings_of_praxis, itemList.guide_to_praxis, itemList.philosophies_of_praxis],
+    type: 'book',
+  },
   tile_of_decarabians_tower: {
     name: 'Decarabian',
     items: [
@@ -201,6 +216,16 @@ export const itemGroup = {
     ],
     type: 'ascension_gem',
   },
+  nagadus_emerald_sliver: {
+    name: 'Nagadus Emerald',
+    items: [
+      itemList.nagadus_emerald_sliver,
+      itemList.nagadus_emerald_fragment,
+      itemList.nagadus_emerald_chunk,
+      itemList.nagadus_emerald_gemstone,
+    ],
+    type: 'ascension_gem',
+  },
   juvenile_jade: {
     name: 'Juvenile Jade',
     items: [itemList.juvenile_jade],
@@ -285,5 +310,9 @@ export const itemGroup = {
   gloomy_statuette: {
     name: 'Statuette',
     items: [itemList.gloomy_statuette, itemList.dark_statuette, itemList.deathly_statuette],
+  },
+  fungal_spores: {
+    name: 'Spores',
+    items: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
   },
 };

@@ -24,6 +24,11 @@ export const elements = {
     name: 'Electro',
     simpleName: 'Electro',
   },
+  dendro: {
+    id: 'dendro',
+    name: 'Dendro',
+    simpleName: 'Grass',
+  },
   cryo: {
     id: 'cryo',
     name: 'Cryo',

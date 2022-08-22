@@ -1164,6 +1164,151 @@ export const characters = {
     },
     element: elements.cryo,
   },
+  collei: {
+    id: 'collei',
+    name: 'Collei',
+    rarity: 4,
+    weapon: weapons.bow,
+    stats: {
+      hp: 9787,
+      atk: 200,
+      def: 601,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 3,
+          },
+          {
+            item: itemList.firm_arrowhead,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 2,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 10,
+          },
+          {
+            item: itemList.firm_arrowhead,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 4,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 20,
+          },
+          {
+            item: itemList.sharp_arrowhead,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 8,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 30,
+          },
+          {
+            item: itemList.sharp_arrowhead,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 12,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 45,
+          },
+          {
+            item: itemList.weathered_arrowhead,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 20,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 60,
+          },
+          {
+            item: itemList.weathered_arrowhead,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.firm_arrowhead, itemList.sharp_arrowhead, itemList.weathered_arrowhead],
+      book: [itemList.teachings_of_praxis, itemList.guide_to_praxis, itemList.philosophies_of_praxis],
+      boss: itemList.tears_of_the_calamitous_god,
+    },
+    element: elements.dendro,
+  },
   diluc: {
     id: 'diluc',
     name: 'Diluc',
@@ -5659,6 +5804,151 @@ export const characters = {
     },
     element: elements.pyro,
   },
+  tighnari: {
+    id: 'tighnari',
+    name: 'Tighnari',
+    rarity: 5,
+    weapon: weapons.bow,
+    stats: {
+      hp: 10850,
+      atk: 268,
+      def: 630,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 3,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 2,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 10,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 4,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 20,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 8,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 30,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 12,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 45,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.majestic_hooked_beak,
+            amount: 20,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 60,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
+      book: [itemList.teachings_of_admonition, itemList.guide_to_admonition, itemList.philosophies_of_admonition],
+      boss: itemList.the_meaning_of_aeons,
+    },
+    element: elements.dendro,
+  },
   traveler_anemo: {
     name: 'Traveler (Anemo)',
     id: 'traveler_anemo',
@@ -5957,7 +6247,170 @@ export const characters = {
       boss: itemList.dragon_lords_crown,
     },
   },
-
+  traveler_dendro: {
+    id: 'traveler_dendro',
+    name: 'Traveler (Dendro)',
+    rarity: 5,
+    element: elements.dendro,
+    weapon: weapons.sword,
+    stats: {
+      hp: 10875,
+      atk: 212,
+      def: 683,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.brilliant_diamond_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.windwheel_aster,
+            amount: 3,
+          },
+          {
+            item: itemList.damaged_mask,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.brilliant_diamond_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.windwheel_aster,
+            amount: 10,
+          },
+          {
+            item: itemList.damaged_mask,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.brilliant_diamond_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.windwheel_aster,
+            amount: 20,
+          },
+          {
+            item: itemList.stained_mask,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.brilliant_diamond_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.windwheel_aster,
+            amount: 30,
+          },
+          {
+            item: itemList.stained_mask,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.brilliant_diamond_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.windwheel_aster,
+            amount: 45,
+          },
+          {
+            item: itemList.ominous_mask,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.brilliant_diamond_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.windwheel_aster,
+            amount: 60,
+          },
+          {
+            item: itemList.ominous_mask,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [
+        itemList.fungal_spores,
+        itemList.luminescent_pollen,
+        itemList.luminescent_pollen,
+        itemList.luminescent_pollen,
+        itemList.luminescent_pollen,
+        itemList.crystalline_cyst_dust,
+        itemList.crystalline_cyst_dust,
+        itemList.crystalline_cyst_dust,
+        itemList.crystalline_cyst_dust,
+      ],
+      book: [
+        itemList.teachings_of_admonition,
+        itemList.guide_to_ingenuity,
+        itemList.guide_to_praxis,
+        itemList.guide_to_admonition,
+        itemList.philosophies_of_praxis,
+        itemList.philosophies_of_admonition,
+        itemList.philosophies_of_ingenuity,
+      ],
+      boss: itemList.mudra_of_the_malefic_general,
+    },
+    element: elements.dendro,
+  },
   venti: {
     id: 'venti',
     name: 'Venti',

@@ -26,6 +26,7 @@
   import BirthdayModal from './_birthday.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave } from '../../stores/saveManager';
+  import { bannersDual } from '../../data/bannersDual';
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -68,12 +69,14 @@
     'traveler_anemo',
     'traveler_geo',
     'traveler_electro',
+    'traveler_dendro',
     'aloy',
     'diluc',
     'keqing',
     'qiqi',
     'jean',
     'mona',
+    'tighnari',
   ];
 
   let ignoredRare = ['amber', 'kaeya', 'lisa'];
@@ -165,6 +168,20 @@
         lastBannerDate[char] = dayjs.duration(dayjs(banner.end).diff(dayjs()));
         lastBannerStart[char] = banner;
       }
+
+      const dualBanner = bannersDual[`${banner.name} ${banner.image}`]?.[1];
+      if (dualBanner) {
+        for (const char of dualBanner.featured) {
+          lastLegendary[char] = 0;
+          lastBannerDate[char] = dayjs.duration(dayjs(banner.end).diff(dayjs()));
+          lastBannerStart[char] = banner;
+        }
+        for (const char of dualBanner.featuredRare) {
+          lastRare[char] = 0;
+          lastBannerDate[char] = dayjs.duration(dayjs(banner.end).diff(dayjs()));
+          lastBannerStart[char] = banner;
+        }
+      }
     }
 
     for (const c of ignoredLegendary) {
@@ -176,6 +193,8 @@
 
     sortedLegendary = Object.entries(lastLegendary).sort((a, b) => b[1] - a[1]);
     sortedRare = Object.entries(lastRare).sort((a, b) => b[1] - a[1]);
+
+    console.log(sortedLegendary);
   }
 
   function processBirthday() {

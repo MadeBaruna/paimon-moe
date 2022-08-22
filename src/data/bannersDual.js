@@ -163,4 +163,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Viridescent Vigil 1': [
+    {
+      name: 'Viridescent Vigil',
+      image: 1,
+      shortName: 'Tighnari',
+      start: '2022-08-24 06:00:00',
+      end: '2022-09-09 17:59:59',
+      color: '#76df81',
+      featured: ['tighnari'],
+      featuredRare: ['collei', 'fischl', 'diona'],
+      timezoneDependent: true,
+    },
+    {
+      name: 'Gentry of Hermitage',
+      image: 4,
+      shortName: 'Zhongli',
+      start: '2022-08-24 06:00:00',
+      end: '2022-09-09 17:59:59',
+      color: '#D1A55C',
+      featured: ['zhongli'],
+      featuredRare: ['collei', 'fischl', 'diona'],
+      timezoneDependent: true,
+    },
+  ],
 };
