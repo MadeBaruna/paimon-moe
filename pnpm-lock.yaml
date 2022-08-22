@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@mdi/js': ^5.9.55
   '@sveltejs/adapter-static': 1.0.0-next.37
-  '@sveltejs/kit': ^1.0.0-next.379
+  '@sveltejs/kit': 1.0.0-next.405
   autoprefixer: ^10.4.7
   chart.js: ^2.9.4
   dayjs: ^1.9.4
@@ -25,7 +25,7 @@ specifiers:
 devDependencies:
   '@mdi/js': 5.9.55
   '@sveltejs/adapter-static': 1.0.0-next.37
-  '@sveltejs/kit': 1.0.0-next.379_svelte@3.49.0+vite@3.0.2
+  '@sveltejs/kit': 1.0.0-next.405_svelte@3.49.0+vite@3.0.2
   autoprefixer: 10.4.7_postcss@8.4.14
   chart.js: 2.9.4
   dayjs: 1.11.4
@@ -41,7 +41,7 @@ devDependencies:
   svelte-i18n: 3.4.0_svelte@3.49.0
   svelte-preprocess: 4.10.7_nxvsp6sjiltnatqa6jdm4mr6zu
   svelte-simple-modal: 0.6.1_svelte@3.49.0
-  tailwindcss: 3.1.6
+  tailwindcss: 3.1.6_postcss@8.4.14
   vite: 3.0.2
 
 packages:
@@ -142,10 +142,11 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.379_svelte@3.49.0+vite@3.0.2:
-    resolution: {integrity: sha512-mhy0GW4KUJ3tq6mDMF0fs/B6Nh2oJM6ZAA2fwilTOdqzhKD3f2WJLH9RXx1Z5/8eodFeQsURTPRn5a0r3QAZew==}
+  /@sveltejs/kit/1.0.0-next.405_svelte@3.49.0+vite@3.0.2:
+    resolution: {integrity: sha512-jHSa74F7k+hC+0fof75g/xm/+1M5sM66Qt6v8eLLMSgjkp36Lb5xOioBhbl6w0NYoE5xysLsBWuu+yHytfvCBA==}
     engines: {node: '>=16.9'}
     hasBin: true
+    requiresBuild: true
     peerDependencies:
       svelte: ^3.44.0
       vite: ^3.0.0
@@ -154,6 +155,7 @@ packages:
       chokidar: 3.5.3
       sade: 1.8.1
       svelte: 3.49.0
+      tiny-glob: 0.2.9
       vite: 3.0.2
     transitivePeerDependencies:
       - diff-match-patch
@@ -1526,10 +1528,12 @@ packages:
     engines: {node: '>= 8'}
     dev: true
 
-  /tailwindcss/3.1.6:
+  /tailwindcss/3.1.6_postcss@8.4.14:
     resolution: {integrity: sha512-7skAOY56erZAFQssT1xkpk+kWt2NrO45kORlxFPXUt3CiGsVPhH1smuH5XoDH6sGPXLyBv+zgCKA2HWBsgCytg==}
     engines: {node: '>=12.13.0'}
     hasBin: true
+    peerDependencies:
+      postcss: ^8.0.9
     dependencies:
       arg: 5.0.2
       chokidar: 3.5.3
