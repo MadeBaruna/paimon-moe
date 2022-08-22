@@ -8195,8 +8195,8 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_4, amount: 4 },
-          { item: itemList.golden_talisman_of_the_forest_dew, amount: 18 },
+          { item: itemList.golden_talisman_of_the_forest_dew, amount: 4 },
+          { item: itemList.chaos_bolt, amount: 18 },
           { item: itemList.rich_red_brocade, amount: 12 },
         ],
         mora: 45000,
