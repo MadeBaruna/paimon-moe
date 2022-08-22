@@ -962,8 +962,6 @@ export const itemList = {
     parent: 'teachings_of_praxis',
   },
 
-
-  // TODO: Change their name and IDs when well know their real name, as well as the images related to them
   copper_talisman_of_the_forest_dew: {
     id: 'copper_talisman_of_the_forest_dew',
     name: "Copper Talisman of the Forest Dew",
@@ -1020,7 +1018,7 @@ export const itemList = {
     parent: 'oasis_gardens_reminiscence',
   },
 
-    echo_of_scorching_might: {
+  echo_of_scorching_might: {
     id: 'echo_of_scorching_might',
     name: "Echo of Scorching Might",
     day: ['wednesday', 'saturday'],

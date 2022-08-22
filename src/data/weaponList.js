@@ -8096,7 +8096,7 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.iron_talisman_1, amount: 3 },
+          { item: itemList.copper_talisman_of_the_forest_dew, amount: 3 },
           { item: itemList.chaos_storage, amount: 3 },
           { item: itemList.faded_red_satin, amount: 2 },
         ],
@@ -8104,7 +8104,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_2, amount: 3 },
+          { item: itemList.iron_talisman_of_the_forest_dew, amount: 3 },
           { item: itemList.chaos_storage, amount: 12 },
           { item: itemList.faded_red_satin, amount: 8 },
         ],
@@ -8112,7 +8112,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_2, amount: 6 },
+          { item: itemList.iron_talisman_of_the_forest_dew, amount: 6 },
           { item: itemList.chaos_module, amount: 6 },
           { item: itemList.trimmed_red_silk, amount: 6 },
         ],
@@ -8120,7 +8120,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_3, amount: 3 },
+          { item: itemList.silver_talisman_of_the_forest_dew, amount: 3 },
           { item: itemList.chaos_module, amount: 12 },
           { item: itemList.trimmed_red_silk, amount: 9 },
         ],
@@ -8128,7 +8128,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_3, amount: 6 },
+          { item: itemList.silver_talisman_of_the_forest_dew, amount: 6 },
           { item: itemList.chaos_bolt, amount: 9 },
           { item: itemList.rich_red_brocade, amount: 6 },
         ],
@@ -8136,7 +8136,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_4, amount: 4 },
+          { item: itemList.golden_talisman_of_the_forest_dew, amount: 4 },
           { item: itemList.chaos_bolt, amount: 18 },
           { item: itemList.rich_red_brocade, amount: 12 },
         ],
@@ -8155,7 +8155,7 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.iron_talisman_1, amount: 3 },
+          { item: itemList.copper_talisman_of_the_forest_dew, amount: 3 },
           { item: itemList.chaos_storage, amount: 3 },
           { item: itemList.faded_red_satin, amount: 2 },
         ],
@@ -8163,7 +8163,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_2, amount: 3 },
+          { item: itemList.iron_talisman_of_the_forest_dew, amount: 3 },
           { item: itemList.chaos_storage, amount: 12 },
           { item: itemList.faded_red_satin, amount: 8 },
         ],
@@ -8171,7 +8171,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_2, amount: 6 },
+          { item: itemList.iron_talisman_of_the_forest_dew, amount: 6 },
           { item: itemList.chaos_module, amount: 6 },
           { item: itemList.trimmed_red_silk, amount: 6 },
         ],
@@ -8179,7 +8179,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_3, amount: 3 },
+          { item: itemList.silver_talisman_of_the_forest_dew, amount: 3 },
           { item: itemList.chaos_module, amount: 12 },
           { item: itemList.trimmed_red_silk, amount: 9 },
         ],
@@ -8187,7 +8187,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.iron_talisman_3, amount: 6 },
+          { item: itemList.silver_talisman_of_the_forest_dew, amount: 6 },
           { item: itemList.chaos_bolt, amount: 9 },
           { item: itemList.rich_red_brocade, amount: 6 },
         ],
@@ -8196,7 +8196,7 @@ export const weaponList = {
       {
         items: [
           { item: itemList.iron_talisman_4, amount: 4 },
-          { item: itemList.chaos_bolt, amount: 18 },
+          { item: itemList.golden_talisman_of_the_forest_dew, amount: 18 },
           { item: itemList.rich_red_brocade, amount: 12 },
         ],
         mora: 45000,
@@ -8214,7 +8214,7 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.oasis_garden_1, amount: 3 },
+          { item: itemList.oasis_gardens_reminiscence, amount: 3 },
           { item: itemList.chaos_storage, amount: 3 },
           { item: itemList.faded_red_satin, amount: 2 },
         ],
@@ -8222,7 +8222,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_2, amount: 3 },
+          { item: itemList.oasis_gardens_kindness, amount: 3 },
           { item: itemList.chaos_storage, amount: 12 },
           { item: itemList.faded_red_satin, amount: 8 },
         ],
@@ -8230,7 +8230,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_2, amount: 6 },
+          { item: itemList.oasis_gardens_kindness, amount: 6 },
           { item: itemList.chaos_module, amount: 6 },
           { item: itemList.sergeants_insignia, amount: 6 },
         ],
@@ -8238,7 +8238,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_3, amount: 3 },
+          { item: itemList.oasis_gardens_mourning, amount: 3 },
           { item: itemList.chaos_module, amount: 12 },
           { item: itemList.sergeants_insignia, amount: 9 },
         ],
@@ -8246,7 +8246,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_3, amount: 6 },
+          { item: itemList.oasis_gardens_mourning, amount: 6 },
           { item: itemList.chaos_bolt, amount: 9 },
           { item: itemList.lieutenants_insignia, amount: 6 },
         ],
@@ -8254,7 +8254,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_4, amount: 4 },
+          { item: itemList.oasis_gardens_truth, amount: 4 },
           { item: itemList.chaos_bolt, amount: 18 },
           { item: itemList.lieutenants_insignia, amount: 12 },
         ],
@@ -8273,7 +8273,7 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.oasis_garden_1, amount: 3 },
+          { item: itemList.oasis_gardens_reminiscence, amount: 3 },
           { item: itemList.gloomy_statuette, amount: 3 },
           { item: itemList.fungal_spores, amount: 2 },
         ],
@@ -8281,7 +8281,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_2, amount: 3 },
+          { item: itemList.oasis_gardens_kindness, amount: 3 },
           { item: itemList.gloomy_statuette, amount: 12 },
           { item: itemList.fungal_spores, amount: 8 },
         ],
@@ -8289,7 +8289,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_2, amount: 6 },
+          { item: itemList.oasis_gardens_kindness, amount: 6 },
           { item: itemList.dark_statuette, amount: 6 },
           { item: itemList.luminescent_pollen, amount: 6 },
         ],
@@ -8297,7 +8297,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_3, amount: 3 },
+          { item: itemList.oasis_gardens_mourning, amount: 3 },
           { item: itemList.dark_statuette, amount: 12 },
           { item: itemList.luminescent_pollen, amount: 9 },
         ],
@@ -8305,7 +8305,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_3, amount: 6 },
+          { item: itemList.oasis_gardens_mourning, amount: 6 },
           { item: itemList.deathly_statuette, amount: 9 },
           { item: itemList.crystalline_cyst_dust, amount: 6 },
         ],
@@ -8313,7 +8313,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.oasis_garden_4, amount: 4 },
+          { item: itemList.oasis_gardens_truth, amount: 4 },
           { item: itemList.deathly_statuette, amount: 18 },
           { item: itemList.crystalline_cyst_dust, amount: 12 },
         ],
@@ -8332,7 +8332,7 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.remnant_glow_1, amount: 3 },
+          { item: itemList.echo_of_scorching_might, amount: 3 },
           { item: itemList.inactivated_fungal_nucleus, amount: 3 },
           { item: itemList.firm_arrowhead, amount: 2 },
         ],
@@ -8340,7 +8340,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_2, amount: 3 },
+          { item: itemList.remnant_glow_of_scorching_might, amount: 3 },
           { item: itemList.inactivated_fungal_nucleus, amount: 12 },
           { item: itemList.firm_arrowhead, amount: 8 },
         ],
@@ -8348,7 +8348,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_2, amount: 6 },
+          { item: itemList.remnant_glow_of_scorching_might, amount: 6 },
           { item: itemList.dormant_fungal_nucleus, amount: 6 },
           { item: itemList.sharp_arrowhead, amount: 6 },
         ],
@@ -8356,7 +8356,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_3, amount: 3 },
+          { item: itemList.dream_of_scorching_might, amount: 3 },
           { item: itemList.dormant_fungal_nucleus, amount: 12 },
           { item: itemList.sharp_arrowhead, amount: 9 },
         ],
@@ -8364,7 +8364,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_3, amount: 6 },
+          { item: itemList.dream_of_scorching_might, amount: 6 },
           { item: itemList.robust_fungal_nucleus, amount: 9 },
           { item: itemList.weathered_arrowhead, amount: 6 },
         ],
@@ -8372,7 +8372,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_4, amount: 4 },
+          { item: itemList.olden_days_scorching_might, amount: 4 },
           { item: itemList.robust_fungal_nucleus, amount: 18 },
           { item: itemList.weathered_arrowhead, amount: 12 },
         ],
@@ -8391,7 +8391,7 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.remnant_glow_1, amount: 3 },
+          { item: itemList.echo_of_scorching_might, amount: 3 },
           { item: itemList.inactivated_fungal_nucleus, amount: 3 },
           { item: itemList.fungal_spores, amount: 2 },
         ],
@@ -8399,7 +8399,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_2, amount: 3 },
+          { item: itemList.remnant_glow_of_scorching_might, amount: 3 },
           { item: itemList.inactivated_fungal_nucleus, amount: 12 },
           { item: itemList.fungal_spores, amount: 8 },
         ],
@@ -8407,7 +8407,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_2, amount: 6 },
+          { item: itemList.remnant_glow_of_scorching_might, amount: 6 },
           { item: itemList.dormant_fungal_nucleus, amount: 6 },
           { item: itemList.luminescent_pollen, amount: 6 },
         ],
@@ -8415,7 +8415,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_3, amount: 3 },
+          { item: itemList.dream_of_scorching_might, amount: 3 },
           { item: itemList.dormant_fungal_nucleus, amount: 12 },
           { item: itemList.luminescent_pollen, amount: 9 },
         ],
@@ -8423,7 +8423,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_3, amount: 6 },
+          { item: itemList.dream_of_scorching_might, amount: 6 },
           { item: itemList.robust_fungal_nucleus, amount: 9 },
           { item: itemList.crystalline_cyst_dust, amount: 6 },
         ],
@@ -8431,7 +8431,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_4, amount: 4 },
+          { item: itemList.olden_days_scorching_might, amount: 4 },
           { item: itemList.robust_fungal_nucleus, amount: 18 },
           { item: itemList.crystalline_cyst_dust, amount: 12 },
         ],
@@ -8450,7 +8450,7 @@ export const weaponList = {
     ascension: [
       {
         items: [
-          { item: itemList.remnant_glow_1, amount: 5 },
+          { item: itemList.echo_of_scorching_might, amount: 5 },
           { item: itemList.inactivated_fungal_nucleus, amount: 5 },
           { item: itemList.faded_red_satin, amount: 3 },
         ],
@@ -8458,7 +8458,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_2, amount: 5 },
+          { item: itemList.remnant_glow_of_scorching_might, amount: 5 },
           { item: itemList.inactivated_fungal_nucleus, amount: 18 },
           { item: itemList.faded_red_satin, amount: 9 },
         ],
@@ -8466,7 +8466,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_2, amount: 9 },
+          { item: itemList.remnant_glow_of_scorching_might, amount: 9 },
           { item: itemList.dormant_fungal_nucleus, amount: 9 },
           { item: itemList.trimmed_red_silk, amount: 9 },
         ],
@@ -8474,7 +8474,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_3, amount: 5 },
+          { item: itemList.dream_of_scorching_might, amount: 5 },
           { item: itemList.dormant_fungal_nucleus, amount: 18 },
           { item: itemList.trimmed_red_silk, amount: 14 },
         ],
@@ -8482,7 +8482,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_3, amount: 9 },
+          { item: itemList.dream_of_scorching_might, amount: 9 },
           { item: itemList.robust_fungal_nucleus, amount: 14 },
           { item: itemList.rich_red_brocade, amount: 9 },
         ],
@@ -8490,7 +8490,7 @@ export const weaponList = {
       },
       {
         items: [
-          { item: itemList.remnant_glow_4, amount: 6 },
+          { item: itemList.olden_days_scorching_might, amount: 6 },
           { item: itemList.robust_fungal_nucleus, amount: 27 },
           { item: itemList.rich_red_brocade, amount: 18 },
         ],
