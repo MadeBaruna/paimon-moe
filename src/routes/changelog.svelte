@@ -8,6 +8,19 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre class="text-white px-4 md:px-8">
+2022/08/24
+- Update Tighnari Banner
+- Update weapons
+- Update timeline
+- Update furnishing
+- Update achievement
+- Add edit furnishing inventory directly on furnishing set
+- Adjust item order on calculator result
+- Bug fixes
+
+2022/08/13
+- Add Calendar
+
 2022/08/02
 - Update Yoimiya banner
 - Add connstellation count to global stats
