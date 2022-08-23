@@ -4,17 +4,20 @@
 </script>
 
 <script>
+  import { getContext, onMount } from 'svelte';
+  import { fade } from 'svelte/transition';
   import { locale, t } from 'svelte-i18n';
   import debounce from 'lodash.debounce';
-  import { mdiCheckCircleOutline, mdiClose } from '@mdi/js';
+  import { mdiCheck, mdiCheckCircleOutline, mdiClose, mdiContentSave } from '@mdi/js';
 
   import Button from '../../components/Button.svelte';
   import CharacterSelect from '../../components/CharacterSelect.svelte';
-  import { getContext, onMount } from 'svelte';
   import Icon from '../../components/Icon.svelte';
+  import Input from '../../components/Input.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
   import CalculateModal from './_calculateModal.svelte';
+  import { pushToast } from '../../stores/toast';
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -30,6 +33,13 @@
   let placed = {};
   let character = {};
   let charFilter = null;
+
+  let openItemSaved = false;
+  let openItemDetail = {
+    set: '',
+    item: '',
+    amount: 0,
+  };
 
   function parseSets() {
     const _sets = [];
@@ -119,6 +129,26 @@
     );
   }
 
+  function openItem(set, item) {
+    openItemDetail = {
+      set,
+      item,
+      amount: _saved[item] || 0,
+    };
+  }
+
+  function saveInventory() {
+    _saved[openItemDetail.item] = openItemDetail.amount;
+
+    const prefix = getAccountPrefix();
+    updateSave(`${prefix}furnishing-inventory`, _saved);
+    openItemSaved = true;
+    parseSets();
+    setTimeout(() => {
+      openItemSaved = false;
+    }, 2000);
+  }
+
   async function changeLocale(locale) {
     data = (await import(`../../data/furnishing/${locale}.json`)).default;
     setsData = (await import(`../../data/furnishing/sets/${locale}.json`)).default;
@@ -131,12 +161,6 @@
     await updateSave(`${prefix}furnishing-set-character`, character);
   }, 1000);
 
-  function onCharFilterChanged() {
-    if (!loading) {
-      parseSets();
-    }
-  }
-
   onMount(async () => {
     await readLocalData();
 
@@ -144,8 +168,6 @@
       changeLocale(val);
     });
   });
-
-  // $: charFilter, onCharFilterChanged();
 </script>
 
 <svelte:head>
@@ -224,10 +246,10 @@
                   <button
                     class="rounded-xl {set.enough[item] === true
                       ? 'bg-background'
-                      : 'bg-red-900'} text-white px-2 furnishing-item focus:outline-none filter"
+                      : 'bg-red-900'} text-white px-2 furnishing-item focus:outline-none hover:bg-opacity-50"
                     style="margin: 2px;"
                   >
-                    <div class="flex items-center">
+                    <div class="flex items-center" on:click={() => openItem(set.id, item)}>
                       <img
                         src="/images/furnishing/{item}.png"
                         class="w-8 h-8"
@@ -239,26 +261,44 @@
                       <Icon path={mdiClose} size={0.5} />
                       <span class="inline-block w-2">{amount}</span>
                     </div>
-                    <div class="popup text-left">
-                      <p class="text-left mb-1">{furnishing[item].name}</p>
-                      <table>
-                        <tr>
-                          <td>{$t('furnishing.sets.inInventory')}</td>
-                          <td class="pl-2 text-center">{_saved[item] || 0}</td>
-                        </tr>
-                        <tr>
-                          <td>{$t('furnishing.sets.used')}</td>
-                          <td class="pl-2 text-center">{used[item] || 0}</td>
-                        </tr>
-                        <tr>
-                          <td>{$t('furnishing.sets.available')}</td>
-                          <td class="pl-2 text-center">{saved[item] || 0}</td>
-                        </tr>
-                      </table>
-                    </div>
                   </button>
                 {/each}
               </div>
+              {#if openItemDetail.set === set.id}
+                <div transition:fade={{ duration: 100 }} class="mt-2 py-2 rounded-md">
+                  <div class="flex gap-2 items-center">
+                    <img
+                      src="/images/furnishing/{openItemDetail.item}.png"
+                      class="w-16 h-16"
+                      alt={openItemDetail.item}
+                      loading="lazy"
+                      width="64"
+                      height="64"
+                    />
+                    <p class="text-left mb-1 font-bold">{furnishing[openItemDetail.item].name}</p>
+                  </div>
+                  <table>
+                    <tr>
+                      <td>{$t('furnishing.sets.used')}</td>
+                      <td class="pl-2 text-center">{used[openItemDetail.item] || 0}</td>
+                    </tr>
+                    <tr>
+                      <td>{$t('furnishing.sets.available')}</td>
+                      <td class="pl-2 text-center">{saved[openItemDetail.item] || 0}</td>
+                    </tr>
+                    <tr>
+                      <td>{$t('furnishing.sets.inInventory')} :</td>
+                      <td class="pl-2 text-center" />
+                    </tr>
+                  </table>
+                  <div class="flex gap-2">
+                    <Input type="number" min={0} bind:value={openItemDetail.amount} />
+                    <Button size="sm" className="w-16" on:click={saveInventory}>
+                      <Icon path={openItemSaved ? mdiCheck : mdiContentSave} />
+                    </Button>
+                  </div>
+                </div>
+              {/if}
               <div class="flex-1" />
               <Button className="mt-2" on:click={() => calculate(i)}>
                 {$t('furnishing.sets.calculate')}
@@ -273,17 +313,3 @@
     </div>
   {/if}
 </div>
-
-<style lang="postcss">
-  .popup {
-    @apply text-sm pt-1 hidden p-2 rounded-xl;
-  }
-
-  .furnishing-item:focus {
-    @apply w-full;
-
-    .popup {
-      @apply block;
-    }
-  }
-</style>
