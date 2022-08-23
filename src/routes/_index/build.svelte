@@ -19,6 +19,17 @@
     dispatch('done');
   }
 
+  function getArtifactImage(artifact) {
+    switch (artifact) {
+      case '+18%_atk_set':
+        return 'gladiators_finale';
+      case '+20%_energy_recharge':
+        return 'emblem_of_severed_fate';
+      default:
+        return artifact;
+    }
+  }
+
   $: id = promoted[current];
   $: buildData = Object.entries(builds[id].roles).sort((a, b) => b[1].recommended - a[1].recommended)[0];
   $: buildName = buildData[0];
@@ -60,7 +71,7 @@
           <div class="rounded-md p-1 bg-background-secondary m-1 flex">
             {#each artifacts as artifact}
               <img
-                src="/images/artifacts/{artifact === '+18%_atk_set' ? 'gladiators_finale' : artifact}_flower.png"
+                src="/images/artifacts/{getArtifactImage(artifact)}_flower.png"
                 alt={artifact}
                 title={artifact}
                 class="w-12 h-12"

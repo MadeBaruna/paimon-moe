@@ -13,18 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yoimiya: {
-      name: 'Yoimiya',
+    collei: {
+      name: 'Collei',
+      rarity: 'rare',
+      count: 0,
+      average: '...',
+      percentage: '...',
+    },
+    tighnari: {
+      name: 'Tighnari',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300033;
-  const image = 'yoimiya.png';
+  const bannerId = 300034;
+  const image = 'tighnari_collei.png';
   const width = 800;
-  const height = 495;
+  const height = 593;
 
   let loading = true;
   let user = '';

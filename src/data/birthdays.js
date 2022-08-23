@@ -14,6 +14,7 @@ export const birthdays = {
   xiao: [4, 17],
   yelan: [4, 20],
   diluc: [4, 30],
+  collei: [5, 8],
   gorou: [5, 18],
   yun_jin: [5, 21],
   fischl: [5, 27],
@@ -49,5 +50,6 @@ export const birthdays = {
   sucrose: [11, 26],
   kaeya: [11, 30],
   ganyu: [12, 2],
+  tighnari: [12, 29],
   zhongli: [12, 31],
 };
