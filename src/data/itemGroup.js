@@ -146,6 +146,36 @@ export const itemGroup = {
     ],
     type: 'weapon',
   },
+  echo_of_scorching_might: {
+    name: 'Scorching Might',
+    items: [
+      itemList.echo_of_scorching_might,
+      itemList.remnant_glow_of_scorching_might,
+      itemList.dream_of_scorching_might,
+      itemList.olden_days_of_scorching_might,
+    ],
+    type: 'weapon',
+  },
+  copper_talisman_of_the_forest_dew: {
+    name: 'Forest Dew',
+    items: [
+      itemList.copper_talisman_of_the_forest_dew,
+      itemList.iron_talisman_of_the_forest_dew,
+      itemList.silver_talisman_of_the_forest_dew,
+      itemList.golden_talisman_of_the_forest_dew,
+    ],
+    type: 'weapon',
+  },
+  oasis_gardens_reminiscence: {
+    name: 'Oasis Garden',
+    items: [
+      itemList.oasis_gardens_reminiscence,
+      itemList.oasis_gardens_kindness,
+      itemList.oasis_gardens_mourning,
+      itemList.oasis_gardens_truth,
+    ],
+    type: 'weapon',
+  },
   agnidus_agate_sliver: {
     name: 'Agnidus Agate',
     items: [
@@ -314,5 +344,13 @@ export const itemGroup = {
   fungal_spores: {
     name: 'Spores',
     items: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
+  },
+  inactivated_fungal_nucleus: {
+    name: 'Fungal Nucleus',
+    items: [itemList.inactivated_fungal_nucleus, itemList.dormant_fungal_nucleus, itemList.robust_fungal_nucleus],
+  },
+  chaos_storage: {
+    name: 'Chaos Storage',
+    items: [itemList.chaos_storage, itemList.chaos_module, itemList.chaos_bolt],
   },
 };

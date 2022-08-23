@@ -186,7 +186,7 @@
                     {#each ascensions[ascen[i - 1]].items as obj}
                       <Tooltip title={$t(obj.item.name)}>
                         <span class="mr-2 bg-background rounded-xl">
-                          <img src="/images/items/{obj.item.id}.png" alt={obj.item} class="inline w-8 h-8" />
+                          <img src="/images/items/{obj.item.id}.png" alt={obj.item.name} class="inline w-8 h-8" />
                           <Icon size={0.5} path={mdiClose} /><span>{obj.amount}</span>
                         </span>
                       </Tooltip>

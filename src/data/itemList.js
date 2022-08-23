@@ -963,4 +963,100 @@ export const itemList = {
   },
   crystalline_cyst_dust: { id: 'crystalline_cyst_dust', name: 'Crystalline Cyst Dust' },
   rukkhashava_mushrooms: { id: 'rukkhashava_mushrooms', name: 'Rukkhashava Mushrooms' },
+
+  echo_of_scorching_might: {
+    id: 'echo_of_scorching_might',
+    name: 'Echo of Scorching Might',
+    day: ['wednesday', 'saturday'],
+    rarity: 1,
+  },
+  remnant_glow_of_scorching_might: {
+    id: 'remnant_glow_of_scorching_might',
+    name: 'Remnant Glow of Scorching Might',
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+    parent: 'echo_of_scorching_might',
+  },
+  dream_of_scorching_might: {
+    id: 'dream_of_scorching_might',
+    name: 'Dream of Scorching Might',
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'echo_of_scorching_might',
+  },
+  olden_days_of_scorching_might: {
+    id: 'olden_days_of_scorching_might',
+    name: 'Olden Days of Scorching Might',
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'echo_of_scorching_might',
+  },
+
+  inactivated_fungal_nucleus: { id: 'inactivated_fungal_nucleus', name: 'Inactivated Fungal Nucleus' },
+  dormant_fungal_nucleus: { id: 'dormant_fungal_nucleus', name: 'Dormant Fungal Nucleus' },
+  robust_fungal_nucleus: { id: 'robust_fungal_nucleus', name: 'Robust Fungal Nucleus' },
+
+  faded_red_satin: { id: 'faded_red_satin', name: 'Faded Red Satin' },
+  trimmed_red_silk: { id: 'trimmed_red_silk', name: 'Trimmed Red Silk' },
+  rich_red_brocade: { id: 'rich_red_brocade', name: 'Rich Red Brocade' },
+
+  copper_talisman_of_the_forest_dew: {
+    id: 'copper_talisman_of_the_forest_dew',
+    name: 'Copper Talisman of the Forest Dew',
+    day: ['monday', 'thursday'],
+    rarity: 1,
+  },
+  iron_talisman_of_the_forest_dew: {
+    id: 'iron_talisman_of_the_forest_dew',
+    name: 'Iron Talisman of the Forest Dew',
+    day: ['monday', 'thursday'],
+    rarity: 2,
+    parent: 'copper_talisman_of_the_forest_dew',
+  },
+  silver_talisman_of_the_forest_dew: {
+    id: 'silver_talisman_of_the_forest_dew',
+    name: 'Silver Talisman of the Forest Dew',
+    day: ['monday', 'thursday'],
+    rarity: 3,
+    parent: 'copper_talisman_of_the_forest_dew',
+  },
+  golden_talisman_of_the_forest_dew: {
+    id: 'golden_talisman_of_the_forest_dew',
+    name: 'Golden Talisman of the Forest Dew',
+    day: ['monday', 'thursday'],
+    rarity: 4,
+    parent: 'copper_talisman_of_the_forest_dew',
+  },
+
+  chaos_storage: { id: 'chaos_storage', name: 'Chaos Storage' },
+  chaos_module: { id: 'chaos_module', name: 'Chaos Module' },
+  chaos_bolt: { id: 'chaos_bolt', name: 'Chaos Bolt' },
+
+  oasis_gardens_reminiscence: {
+    id: 'oasis_gardens_reminiscence',
+    name: "Oasis Garden's Reminiscence",
+    day: ['tuesday', 'friday'],
+    rarity: 1,
+  },
+  oasis_gardens_kindness: {
+    id: 'oasis_gardens_kindness',
+    name: "Oasis Garden's Kindness",
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+    parent: 'oasis_gardens_reminiscence',
+  },
+  oasis_gardens_mourning: {
+    id: 'oasis_gardens_mourning',
+    name: "Oasis Garden's Mourning",
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'oasis_gardens_reminiscence',
+  },
+  oasis_gardens_truth: {
+    id: 'oasis_gardens_truth',
+    name: "Oasis Garden's Truth",
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'oasis_gardens_reminiscence',
+  },
 };
