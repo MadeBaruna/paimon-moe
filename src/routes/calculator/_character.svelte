@@ -70,6 +70,8 @@
   let moraNeeded = 0;
   let changed = false;
 
+  let calcResult = [];
+
   let currentTalentLevel = {
     first: 1,
     second: 1,
@@ -223,7 +225,7 @@
           }
 
           if (items[item.item.id] === undefined) {
-            items[item.item.id] = { ...item.item, amount: 0 };
+            items[item.item.id] = { ...item.item, amount: 0, order: i };
           }
           items[item.item.id].amount += item.amount;
         }
@@ -423,6 +425,8 @@
         }
       }
     }
+
+    calcResult = Object.entries(ascensionResouce).sort((a, b) => a[1].order - b[1].order);
 
     changed = false;
   }
@@ -650,7 +654,7 @@
                 </tr>
               {/if}
             {/each}
-            {#each Object.entries(ascensionResouce) as [id, item]}
+            {#each calcResult as [id, item]}
               {#if item.amount > 0}
                 <tr>
                   <td class="text-right border-b border-gray-700 py-1">
