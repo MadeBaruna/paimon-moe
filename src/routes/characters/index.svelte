@@ -202,6 +202,16 @@
         wish: 0,
         manual: 0,
       },
+      traveler_electro: {
+        default: 1,
+        wish: 0,
+        manual: 0,
+      },
+      traveler_dendro: {
+        default: 1,
+        wish: 0,
+        manual: 0,
+      },
       barbara: {
         default: 1,
         wish: 0,
