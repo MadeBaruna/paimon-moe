@@ -8380,9 +8380,9 @@ export const weaponList = {
       },
     ],
   },
-  trawler: {
-    name: 'Trawler',
-    id: 'trawler',
+  end_of_the_line: {
+    name: 'End of the Line',
+    id: 'end_of_the_line',
     rarity: 4,
     atk: 42,
     secondary: 'Energy Recharge',
