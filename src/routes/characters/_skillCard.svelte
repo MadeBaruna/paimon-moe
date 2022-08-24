@@ -4,14 +4,15 @@
   import Icon from '../../components/Icon.svelte';
   import { mdiChevronDown } from '@mdi/js';
 
-  export let id;
-  export let image;
-  export let data;
-  export let withQuote;
+  export let id = "";
+  export let image = "";
+  export let data = {};
+  export let withQuote = false;
+  export let withSingleLevel = false
 
   let showStat = false;
 
-  let iter = [...new Array(13)];
+  let iter = [...new Array(withSingleLevel ? 1 : 13)];
 
   const lastIndex = withQuote ? data.description.indexOf('<i>') : data.description.length;
   const description = data.description.substring(0, lastIndex).replace(/\\n/g, '<br/>').replace(/·/g, '- ');

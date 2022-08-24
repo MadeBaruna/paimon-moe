@@ -745,6 +745,9 @@
     <SkillCard {id} image="talent_1" data={data.attack} withQuote={false} />
     <SkillCard {id} image="talent_2" data={data.elementalSkill} withQuote={true} />
     <SkillCard {id} image="talent_3" data={data.burst} withQuote={true} />
+    {#if data.dashSkill}
+      <SkillCard {id} image="talent_7" data={data.dashSkill} withQuote={true} withSingleLevel={true}/>
+    {/if}
   </div>
   <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl">
     <p class="font-black font-display text-2xl mt-4">{$t('characters.passiveTalents')}</p>

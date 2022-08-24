@@ -1268,5 +1268,30 @@
         ]
       ]
     ]
+  },
+  "dashSkill": {
+    "name": "Kamisato Art: Senho",
+    "description": "<span style=\"color:#FFD780FF\">Alternate Sprint</span>\\nAyaka consumes Stamina and cloaks herself in a frozen fog that moves with her.\\n\\nIn Senho form, she moves swiftly upon water.\\nWhen she reappears, the following effects occur:\\n·Ayaka unleashes frigid energy to apply <span style=\"color:#99FFFFFF\">Cryo</span> on nearby opponents.\\n·Coldness condenses around Ayaka's blade, infusing her attacks with <span style=\"color:#99FFFFFF\">Cryo</span> for a brief period.\\n\\n<i>\"Feathers fleeting wet / the white heron treads water / a sight without flaw\"</i>",
+    "skillLabels": [
+      "Activation Stamina Consumption",
+      "Stamina Drain",
+      "Infusion Duration"
+    ],
+    "skillStatsLabels": [
+      "{0:1f}",
+      "{0:1f}",
+      "{0:1f}"
+    ],
+    "skillStats": [
+      [
+        [10]
+      ],
+      [
+        [15]
+      ],
+      [
+        [5]
+      ]
+    ]
   }
 }
