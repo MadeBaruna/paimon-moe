@@ -443,6 +443,26 @@ export const eventsData = [
       description:
         "After the active character's Normal, Charged, or Plunging Attacks hit opponents, that character's Normal, Charged, and Plunging Attack DMG is increased by 12% for 8s. This effect can be triggered once every 0.1s. Max 4 stacks. Each stack's duration is counted independently. This effect will be cleared if the character leaves the field.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2022-09-01 04:00:00',
+      end: '2022-09-16 04:00:00',
+      color: '#4299E1',
+      description:
+        'After characters deal DMG to opponents with a Dendro Core (including Burgeon and Hyperbloom), their ATK will be increased by 15% for 8s. This effect can stack up to 4 times, and can be triggered once every 0.1s.      ',
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2022-09-16 04:00:00',
+      end: '2022-10-01 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character triggers Quicken on an opponent, that opponent's DEF is decreased by 35% for 10s after they are affected by the reaction.",
+    },
   ],
   [
     {
