@@ -45,11 +45,14 @@
     />
   </div>
   <div
-    class="absolute top-0 right-0 bg-black bg-opacity-75 rounded-full flex items-center shadow-md"
+    class="absolute top-0 right-0 bg-black bg-opacity-75 rounded-full flex items-center shadow-md {constellation &&
+    Math.max(0, constellation.default + constellation.wish + constellation.manual - 1) >= 6
+      ? 'text-legendary-from'
+      : 'text-white'}"
     style="padding: 4px; margin: -10px;"
   >
     {#if constellation}
-      <span class="mx-1 text-white text-xs font-semibold">
+      <span class="mx-1 text-xs font-semibold">
         C{Math.max(0, constellation.default + constellation.wish + constellation.manual - 1)}
       </span>
     {/if}
