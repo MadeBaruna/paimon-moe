@@ -15,6 +15,7 @@
     "artifacts": "圣遗物",
     "fishing": "钓鱼",
     "radiantSpincrystal": "旋曜玉帛",
+    "calendar": "日历",
     "settings": "设置",
     "donate": "赞助"
   },
@@ -888,8 +889,8 @@
       "inInventory": "在清单中",
       "available": "可用",
       "used": "已在其他套装使用",
-      "calculate": "",
-      "exludeOwned": ""
+      "calculate": "计算材料",
+      "exludeOwned": "排除所有的家具"
     }
   },
   "weapon": {
@@ -966,5 +967,11 @@
     "whatsNew": "",
     "later": "",
     "refresh": ""
+  },
+  "calendar": {
+    "lastAppearance": "最后一次登陆卡池",
+    "lastAppearanceDesc": "角色最后一次出现在限定卡池上是什么时候",
+    "bannerHover": "X个卡池前",
+    "birthday": "生日"
   }
 }
