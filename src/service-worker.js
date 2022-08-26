@@ -7,7 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Update wish import instruction'];
+const changelog = ['Update wish import instruction', 'Fix Traveler Dendro talent calculator'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 

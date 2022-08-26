@@ -409,7 +409,8 @@
         if (
           selectedCharacter.id === characters.traveler_anemo.id ||
           selectedCharacter.id === characters.traveler_geo.id ||
-          selectedCharacter.id === characters.traveler_electro.id
+          selectedCharacter.id === characters.traveler_electro.id ||
+          selectedCharacter.id === characters.traveler_dendro.id
         ) {
           calculateTalentTraveler();
         } else {
