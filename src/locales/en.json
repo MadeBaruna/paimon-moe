@@ -184,6 +184,7 @@
         "You can also enable Drive Sync in the Settings to synchronize and backup your wish history to your Google Drive",
         "Please note that the old feedback link does not work anymore, please follow the new instructions below!"
       ],
+      "notice30": "Wish history is changed on v3.0, please follow the new instruction below!",
       "faqs": {
         "title": "Import Wish History FAQ",
         "q1": "How does it work?",

@@ -7,16 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = [
-  'Update Tighnari banner',
-  'Update weapons',
-  'Update timeline',
-  'Update furnishing',
-  'Update achievement',
-  'Add edit furnishing inventory directly on furnishing set',
-  'Adjust item order on calculator result',
-  'Bug fixes',
-];
+const changelog = ['Update wish import instruction'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 

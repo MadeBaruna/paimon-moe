@@ -12,6 +12,7 @@
     mdiContentSave,
     mdiDatabaseImport,
     mdiLoading,
+    mdiYoutube,
   } from '@mdi/js';
   import dayjs from 'dayjs';
   import isSameOrBefore from 'dayjs/plugin/isSameOrBefore';
@@ -52,14 +53,14 @@
   const steps = {
     pc: 7,
     pclog: 7,
-    android: 9,
+    android: 1,
     ios: 11,
     ps: 5,
     pclocal: 5,
   };
 
   const videoTutorial = {
-    android: 'https://youtu.be/pe_aROJ8Av8',
+    android: 'https://www.youtube.com/watch?v=6C5Zqhcm3NI',
     pc: 'https://www.youtube.com/watch?v=FCwZkHeIezw',
     pclog: 'https://www.youtube.com/watch?v=cl5HDd0bqKw',
     ios: 'https://www.youtube.com/watch?v=WfBpraUq41c',
@@ -85,9 +86,9 @@
   };
 
   let powershellScript =
-    "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/41853f2b76dcb845cf8cb0c44174fb63459920f4/getlink_global.ps1'))";
+    'iex(irm https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/d40fa0fd74d85d692543c1621669f5f9375b5975/getlink.ps1)';
   let powershellScriptChina =
-    "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/41853f2b76dcb845cf8cb0c44174fb63459920f4/getlink_china.ps1'))";
+    'iex "&{$(irm https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/d40fa0fd74d85d692543c1621669f5f9375b5975/getlink.ps1)} china"';
   let powershellScriptSource = 'https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235';
   let copiedScript = false;
   let news = '';
@@ -889,6 +890,9 @@
       </div>
     </div>
   </div>
+  <h1 class="font-body bg-background text-orange-400 rounded-xl p-4 mb-4">
+    {$t('wish.import.notice30')}
+  </h1>
   <div class="flex space-x-3 mb-2">
     <div class="flex flex-col items-center step">
       <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
@@ -950,17 +954,17 @@
         >
           iOS
         </button>
-        <button
+        <!-- <button
           disabled={processingLog}
           on:click={() => changeSelectedType('ps')}
           class="pill {selectedType === 'ps' ? 'active' : ''}"
         >
           PS
-        </button>
+        </button> -->
       </div>
     </div>
   </div>
-  {#if ['pc', 'pclog', 'pclocal'].includes(selectedType)}
+  <!-- {#if ['pc', 'pclog', 'pclocal'].includes(selectedType)}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
@@ -968,7 +972,7 @@
         </div>
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
-      <div class="content flex flex-col pb-4 pt-1">
+      <div class="content flex flex-col pb-6 pt-1">
         <p class="text-white">{$t('wish.import.chooseMethod')}</p>
         <div class="flex mt-4 flex-wrap">
           <button
@@ -995,7 +999,7 @@
         </div>
       </div>
     </div>
-  {/if}
+  {/if} -->
   {#if videoTutorial[selectedType] !== undefined}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
@@ -1004,9 +1008,14 @@
         </div>
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
-      <div class="content flex-col items-center">
-        <a href={videoTutorial[selectedType]} target="_blank" class="text-primary hover:underline">
-          {$t('wish.import.guide.video')}
+      <div class="content flex-col items-center pb-4 -mt-2">
+        <a
+          href={videoTutorial[selectedType]}
+          target="_blank"
+          class="flex items-center text-white py-2 px-4 ring-2 ring-white ring-opacity-25 rounded-2xl hover:ring-opacity-100 hover:ring-primary"
+        >
+          <Icon path={mdiYoutube} />
+          <span class="pl-2">{$t('wish.import.guide.video')}</span>
         </a>
       </div>
     </div>
@@ -1263,7 +1272,18 @@
       </div>
     </div>
   {:else}
-    {#each Array(steps[selectedType]) as _, i}
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="w-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">4</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex-col items-center pb-8">
+        <p class="text-white">Text tutorial is coming soon, for now please watch the video above!</p>
+      </div>
+    </div>
+    <!-- {#each Array(steps[selectedType]) as _, i}
       <div class="flex space-x-3 mb-2">
         <div class="flex flex-col items-center step">
           <div class="w-8 rounded-full flex justify-center items-center">
@@ -1275,7 +1295,7 @@
           <p class="text-white">{$t(`wish.import.guide.${selectedType}.${i}`)}</p>
         </div>
       </div>
-    {/each}
+    {/each} -->
   {/if}
   <div class="flex space-x-3 mb-2">
     <div class="flex flex-col items-center step">
@@ -1296,7 +1316,7 @@
       {:else if selectedType === 'ios'}
         <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.ios2.13')} />
       {:else}
-        <Input bind:value={genshinLink} placeholder={$t(`wish.import.guide.${selectedType}.${steps[selectedType]}`)} />
+        <Input bind:value={genshinLink} placeholder={$t(`wish.import.guide.android.9`)} />
       {/if}
       <div class="h-4" />
       {#if !processingLog}
