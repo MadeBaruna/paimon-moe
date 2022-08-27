@@ -15,6 +15,7 @@
     "artifacts": "Artifak",
     "fishing": "Memancing",
     "radiantSpincrystal": "Radiant Spincrystal",
+    "calendar": "Kalender",
     "settings": "Pengaturan",
     "donate": "Donasi"
   },
@@ -190,6 +191,8 @@
         "Kamu juga bisa menyalakan Drive Sync di Setting untuk mengsinkronkan dan backup riwayat wish ke Google Drive mu",
         "Tolong dicatat bahwa link feedback yang lama tidak bisa digunakan lagi, silahkan ikuti langkah-langkah yang baru dibawah!"
       ],
+      "notice30": "History Wish berubah di v3.0, silahkan ikuti instruksi yang baru dibawah!",
+      "soon30": "Tutorial dalam bentuk teks akan segera di update, untuk sekarang silahkan tonton video diatas!",
       "faqs": {
         "title": "Import Riwayat Wish FAQS",
         "q1": "Cara kerjanya gimana?",
@@ -223,6 +226,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
+      "method": {
+        "pc": "Metode 1",
+        "pc3": "Metode 2",
+        "android": "Wifi",
+        "android2": "Paket Data",
+        "android3": "Alternatif"
+      },
       "guide": {
         "video": "Video Tutorial",
         "pc": [
@@ -244,6 +254,16 @@
           "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
           "Tekan ENTER kemudian link nya akan di copy ke clipboard mu",
           "Paste text nya di textbox dibawah",
+          "Paste link nya disini... https://webstatic..."
+        ],
+        "pc3": [
+          "Pencet WINDOWS di keyboard mu, kemudian buka Powershell",
+          "Klik Windows Powershell, kemudian copy & paste script berikut ke Powershellnya, kemudian tekan ENTER (jika pesan 'Press Enter to continue...' belum muncul)",
+          "Buka Genshin Impact di PC ini",
+          "Buka wish history di dalam game nya, dan tunggu sampai selesai loading",
+          "Klik tabel nya, kemudian tekan CTRL+A dan CTRL+C",
+          "Alt+Tab ke powershell, kemudian tekan ENTER, link nya akan otomatis tercopy",
+          "Paste text nya ke input di bawah",
           "Paste link nya disini... https://webstatic..."
         ],
         "pclog": [
@@ -660,7 +680,7 @@
     "title": "Timeline",
     "localTime": "Tampilkan sebagai waktu lokal",
     "starting": "Dimulai dalam",
-    "ending": "Selesai dalam",
+    "ending": "Berakhir dalam",
     "live": "Live Sekarang!",
     "finished": "Sudah Selesai"
   },
@@ -720,7 +740,7 @@
     },
     "changelog": "Changelog",
     "exportDescription": "Kamu bisa export dan import data Paimon.moe mu disini",
-    "exportButton": "Exprt & Import Data",
+    "exportButton": "Export & Import Data",
     "export": "Export Data",
     "download": "Download Data",
     "import": "Import Data",
@@ -828,14 +848,14 @@
     "desktop": "Browser dekstop tidak bisa menerima notifikasi jika browser tidak berjalan!",
     "early": "Notifikasi mungkin akan muncul lebih awal (sekitar 1-10 menit) karena limitasi dalam pengiriman notifikasi.",
     "allowNotification": "Harap izinkan permintaan notifikasi yang muncul!",
-    "transformer": "Reminder Parametric Transformer",
+    "transformer": "Pengingat Parametric Transformer",
     "last": "Masukkan kapan kamu terakhir menggunakan Parametric Transformer",
     "lastHoyolab": "Masukkan jam berapa kamu ingin diingatkan untuk daily check-in nya",
     "every": "Setiap hari jam",
-    "countdown": "Masukkan waktu countdown Parametric Transformer (jika kamu tidak ingat waktu pasti nya, kamu perlu mengira-ngira-kannya)",
+    "countdown": "Masukkan waktu countdown Parametric Transformer (jika kamu tidak ingat waktu pasti nya, kamu perlu memperkirakannya)",
     "useLast": "Gunakan waktu terakhir menggunakan",
     "useCountdown": "Gunakan waktu countdown",
-    "set": "Set Reminder",
+    "set": "Atur pengingat",
     "checking": "Mengecek reminder tersimpan...",
     "errorSelect": "Silahkan pilih sisa hari dan jam nya!",
     "errorSaving": "Error saat menyimpan reminder 🙁",
@@ -966,5 +986,11 @@
     "whatsNew": "Apa yang baru",
     "later": "Nanti",
     "refresh": "Refresh"
+  },
+  "calendar": {
+    "lastAppearance": "Banner Terakhir",
+    "lastAppearanceDesc": "Kapan karakter terakhir muncul di limited banner",
+    "bannerHover": "X Banner lalu",
+    "birthday": "Ulang Tahun"
   }
 }

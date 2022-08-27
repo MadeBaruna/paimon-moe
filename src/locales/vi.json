@@ -15,6 +15,7 @@
     "artifacts": "Thánh Di Vật",
     "fishing": "Câu Cá",
     "radiantSpincrystal": "Ngọc Thạch Âm Vang",
+    "calendar": "Lịch Biểu",
     "settings": "Cài Đặt",
     "donate": "Ủng hộ"
   },
@@ -190,6 +191,8 @@
         "Bạn cũng có thể bật Đồng Bộ với Drive trong Cài Đặt để đồng bộ hóa và sao lưu lịch sử của bạn lên Google Drive",
         "Lưu ý là link Phản Hồi cũ giờ không còn hoạt động nữa, hãy làm theo các phương thức mới dưới đây!"
       ],
+      "notice30": "",
+      "soon30": "",
       "faqs": {
         "title": "Câu hỏi Thường gặp về Nhập Lịch Sử Cầu Nguyện",
         "q1": "Nó hoạt động như thế nào?",
@@ -223,6 +226,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
+      },
       "guide": {
         "video": "Video hướng dẫn",
         "pc": [
@@ -245,6 +255,16 @@
           "Nhấn ENTER, sau đó máy sẽ tự động sao chép một đường link cho bạn",
           "Dán văn bản đó vào hộp văn bản dưới đây",
           "Dán link vào đây... https://webstatic..."
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "pclog": [
           "Mở Genshin Impact trên PC này (nếu bạn dùng nhiều tài khoản thì hãy khởi động lại game)",
@@ -917,7 +937,7 @@
     "asc": "ĐP",
     "lvl": "Cấp",
     "baseAtk": "Tấn Công Căn Bản",
-    "recommendedCharacter": "Đề Xuất Nhân Vật"
+    "recommendedCharacter": "Nhân Vật Đề Xuất"
   },
   "artifact": {
     "title": "Danh Sách Thánh Di Vật",
@@ -966,5 +986,11 @@
     "whatsNew": "Có gì mới",
     "later": "Để sau đi",
     "refresh": "Tải lại"
+  },
+  "calendar": {
+    "lastAppearance": "Lần Xuất Hiện Cuối Cùng Trên Banner",
+    "lastAppearanceDesc": "Lần xuất hiện cuối cùng của nhân vật trên một banner giới hạn",
+    "bannerHover": "X Banner Trước",
+    "birthday": "Sinh Nhật"
   }
 }

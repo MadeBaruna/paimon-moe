@@ -15,6 +15,7 @@
     "artifacts": "Artefatos",
     "fishing": "Pesca",
     "radiantSpincrystal": "",
+    "calendar": "",
     "settings": "Configurações",
     "donate": "Doar"
   },
@@ -190,6 +191,8 @@
         "Você também pode habilitar Drive Sync nas Configurações para sincronizar e fazer backup do seu histórico para o Google Drive",
         "Entenda que o antigo link de feedback não funciona mais, por favor siga as novas instruções abaixo!"
       ],
+      "notice30": "",
+      "soon30": "",
       "faqs": {
         "title": "Importar Histórico de Orações FAQ",
         "q1": "Como funciona?",
@@ -223,6 +226,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt"
       },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
+      },
       "guide": {
         "video": "Tutorial em Vídeo",
         "pc": [
@@ -245,6 +255,16 @@
           "Pressione ENTER e então um link será copiado para sua área de transferência",
           "Cole o texto na caixa de texto abaixo",
           "Cole o link aqui... https://webstatic..."
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "pclog": [
           "Abra o Genshin Impact nesse PC (Se você utiliza múltiplas contas por favor reinicie o jogo)",
@@ -966,5 +986,11 @@
     "whatsNew": "",
     "later": "",
     "refresh": ""
+  },
+  "calendar": {
+    "lastAppearance": "",
+    "lastAppearanceDesc": "",
+    "bannerHover": "",
+    "birthday": ""
   }
 }

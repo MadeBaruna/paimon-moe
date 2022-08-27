@@ -15,6 +15,7 @@
     "artifacts": "Artefactos",
     "fishing": "Pesca",
     "radiantSpincrystal": "Girocristal radiante",
+    "calendar": "Calendario",
     "settings": "Configuración",
     "donate": "Donar"
   },
@@ -114,12 +115,12 @@
     "build": "Build",
     "source": "Builds Comunitarias de Personajes por el Equipo Genshin Helper",
     "faq": "El conteo de Constelaciones es calculado de los datos de tu Historial de Deseos. Por lo que si tu historial antiguo de deseos ya ha desaparecido o si has comprado el personaje desde tienda o evento, ¡el conteo podría no ser preciso! Pero puedes editarlo manualmente pulsando en el icono de lápiz al lado del nombre del personaje.",
-    "mainStats": "",
-    "subStats": "",
-    "talentPriority": "",
-    "abilityTip": "",
-    "weapons": "",
-    "artifacts": ""
+    "mainStats": "ESTADÍSTICAS PRINCIPALES",
+    "subStats": "ATRIBUTOS SECUNDARIOS",
+    "talentPriority": "PRIORIDAD DE TALENTOS",
+    "abilityTip": "CONSEJO DE HABILIDAD",
+    "weapons": "ARMAS",
+    "artifacts": "ARTEFACTOS"
   },
   "wish": {
     "title": "Contador de Deseos",
@@ -190,6 +191,8 @@
         "También puedes activar Drive Sync en Configuración y hacer un backup de tu historial de deseos en tu Google Drive",
         "Por favor, ten en cuenta que el antiguo enlace de feedback ya no funciona, por favor sigue las nuevas instrucciones a continuación!"
       ],
+      "notice30": "",
+      "soon30": "",
       "faqs": {
         "title": "FAQ del importado de deseos",
         "q1": "¿Cómo funciona?",
@@ -223,6 +226,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Impacto de Genshin\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
+      },
       "guide": {
         "video": "Video Tutorial",
         "pc": [
@@ -245,6 +255,16 @@
           "Pulsa ENTRAR y un enlace se copiará al portapapeles",
           "Pega el texto al cuadro de texto de abajo",
           "Pegue el enlace aquí... https://webstatic..."
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "pclog": [
           "Abre Genshin Impact en tu PC (si tienes cuenta múltiple, reinicie el juego)",
@@ -393,7 +413,7 @@
           "¡Puedes además pulsar el botón",
           "para editar los valores manualmente!"
         ],
-        "p6": ""
+        "p6": "Presione la flecha en la parte inferior para ver los detalles de sus tiros. Se mostrará una ventana emergente cuando recibas un 5★ o 4★ También puedes añadir o editar la tabla manualmente."
       }
     },
     "types": {
@@ -416,10 +436,10 @@
       "loading": "Cargando... (Si esto se bloquea, cambia tu servidor en la página de configuración)",
       "guaranteed": "El siguiente {rarity}★ está garantizado ya que es el personaje o arma promocional",
       "unknown_3_star": "Desconocido",
-      "rarity": "",
-      "total": "",
-      "percent": "",
-      "pityAverage": ""
+      "rarity": "Rareza",
+      "total": "Total",
+      "percent": "Porcentaje",
+      "pityAverage": "Media Pity"
     },
     "tally": {
       "title": "Recuento de Deseos",
@@ -444,13 +464,13 @@
       "detail": "Detalles"
     },
     "summary": {
-      "total": "",
-      "percent": "",
-      "pityAverage": "",
-      "character": "",
-      "weapon": "",
-      "winRateOff": "",
-      "winRateOffWeapon": ""
+      "total": "Total",
+      "percent": "Porcentaje",
+      "pityAverage": "Media Pity",
+      "character": "Personaje",
+      "weapon": "Arma",
+      "winRateOff": "Gana 50:50",
+      "winRateOffWeapon": "Gana 75:25"
     },
     "note": [
       "¡El Historial de Deseos no se actualiza automáticamente, por favor, importa de nuevo para actualizar tu historial!",
@@ -477,15 +497,15 @@
       "totalPull": "Total de tiradas",
       "luck5": "5★ Suertudas",
       "luck4": "4★ Suertudas",
-      "luckWinRateOff": "",
+      "luckWinRateOff": "Suerte Gana 50:50",
       "medianTotal": "Promedio global {median} tiradas",
       "medianLuck": "Promedio global {median}%",
       "moreTotal": "Tienes más tiradas que el {percentage}% de usuarios de paimon.moe",
       "lessTotal": "Tienes menos tiradas que el {percentage}% de usuarios de paimon.moe",
       "moreLuck": "Más suerte que el {percentage}% de los usuarios paimon.moe",
       "lessLuck": "Menos suerte que el {percentage}% de los usuarios paimon.moe",
-      "top": "",
-      "bottom": ""
+      "top": "Mejor",
+      "bottom": "Peor"
     }
   },
   "calculator": {
@@ -691,19 +711,19 @@
     "or": "o",
     "thanks": "Gracias😁!",
     "credits": {
-      "title": "",
+      "title": "Créditos",
       "items": [
         {
-          "name": "",
-          "value": ""
+          "name": "Datos e imágenes",
+          "value": "Wiki de Genshin Impact"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "Datos estadísticos",
+          "value": "Dimbreath Genshin Data"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "Prob. de cálculo de resina",
+          "value": "Discord de Recolección de Datos"
         }
       ]
     },
@@ -771,15 +791,15 @@
       "y",
       "paimon-moe Github"
     ],
-    "subtitleAd": "",
+    "subtitleAd": "Publicidad",
     "ad": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Utilizamos anuncios de terceros para apoyar nuestra página web.",
+      "Puedes ver su",
+      " política de privacidad",
+      "y",
+      "política de cookies",
+      "aquí. Puedes administrar tus cookies",
+      "aquí"
     ]
   },
   "sync": {
@@ -793,7 +813,7 @@
     "download": "Descargar ambos datos",
     "lastModified": "Última modificación",
     "or": "O",
-    "smallSizeWarning": ""
+    "smallSizeWarning": "¡CUIDADO, EL ARCHIVO ES MÁS PEQUEÑO!"
   },
   "footer": {
     "affliate": "Paimon.moe no está afiliado a miHoYo.",
@@ -802,13 +822,13 @@
     "community": "Enlaces a la comunidad",
     "official": "Links Oficiales",
     "link": {
-      "github": "",
-      "discord": "",
-      "devTwitter": "",
-      "reddit": "",
-      "facebook": "",
-      "cookieSettings": "",
-      "privacyPolicy": ""
+      "github": "GitHub",
+      "discord": "Discord",
+      "devTwitter": "Dev Twitter",
+      "reddit": "Reddit",
+      "facebook": "Facebook",
+      "cookieSettings": "Ajustes de Cookies",
+      "privacyPolicy": "Política de Privacidad"
     }
   },
   "donate": {
@@ -873,7 +893,7 @@
     "corridor": "Pasillo",
     "inventoryButton": "Inventario",
     "listButton": "Lista",
-    "selectCharacter": "",
+    "selectCharacter": "Elige tu personaje...",
     "inventory": {
       "title": "Inventario de mobiliario",
       "subtitle": "Algunas categorías especiales como el muro no se muestran",
@@ -888,8 +908,8 @@
       "inInventory": "En inventario",
       "available": "Disponible",
       "used": "Usado en otro Conjunto",
-      "calculate": "",
-      "exludeOwned": ""
+      "calculate": "Calcular materiales",
+      "exludeOwned": "Excluir muebles propios"
     }
   },
   "weapon": {
@@ -929,9 +949,9 @@
     "artifact": "Artefacto",
     "setPiece": "Bono de conjunto {piece}",
     "recommendedCharacter": "Personajes Recomendados Conjunto {piece} piezas",
-    "18ATKSet": "",
-    "20EnergyRechargeSet": "",
-    "25PhysicalDmgSet": "",
+    "18ATKSet": "Conjunto de ATK +18%",
+    "20EnergyRechargeSet": "Conjunto de Recarga de Energía +20%",
+    "25PhysicalDmgSet": "Conjunto de Daño Físico +25%",
     "sands": "",
     "goblet": "",
     "circlet": "",
@@ -966,5 +986,11 @@
     "whatsNew": "",
     "later": "",
     "refresh": ""
+  },
+  "calendar": {
+    "lastAppearance": "",
+    "lastAppearanceDesc": "",
+    "bannerHover": "",
+    "birthday": ""
   }
 }

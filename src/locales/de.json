@@ -15,6 +15,7 @@
     "artifacts": "Artefakte",
     "fishing": "Angeln",
     "radiantSpincrystal": "Strahlender Drehkristall",
+    "calendar": "",
     "settings": "Einstellungen",
     "donate": "Spenden"
   },
@@ -190,6 +191,8 @@
         "Sie können Drive Sync in Einstellungen auch aktivieren, um Ihren Gebetsverlauf in Google Drive zu synchronisieren",
         "Bitte beachten Sie, dass der alte Feedback-Link nicht mehr funktioniert, folgen Sie bitte den neuen Anweisungen unten!"
       ],
+      "notice30": "",
+      "soon30": "",
       "faqs": {
         "title": "Gebetsverlauf importieren FAQ",
         "q1": "Wie funktioniert es?",
@@ -223,6 +226,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
+      },
       "guide": {
         "video": "Videoanleitung",
         "pc": [
@@ -245,6 +255,16 @@
           "Drücken Sie ENTER, dann wird ein Link in Ihre Zwischenablage kopiert",
           "Füge den Link in das Textfeld unten ein",
           "Link hier einfügen... https://webstatic..."
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "pclog": [
           "Öffnen Sie Genshin Impact auf diesem PC (Wenn Sie mehrere Konten verwenden, starten Sie das Spiel bitte neu)",
@@ -966,5 +986,11 @@
     "whatsNew": "",
     "later": "",
     "refresh": ""
+  },
+  "calendar": {
+    "lastAppearance": "",
+    "lastAppearanceDesc": "",
+    "bannerHover": "",
+    "birthday": ""
   }
 }

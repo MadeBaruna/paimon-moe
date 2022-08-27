@@ -15,6 +15,7 @@
     "artifacts": "聖遺物",
     "fishing": "釣り",
     "radiantSpincrystal": "旋曜玉帛",
+    "calendar": "カレンダー",
     "settings": "設定",
     "donate": "寄付"
   },
@@ -190,6 +191,8 @@
         "設定でドライブ同期を有効にして、Google ドライブに履歴をバックアップできます",
         "バージョン2.3更新後、古いフィードバックリンクはもう動作しません。以下の新しい手順に従ってください!"
       ],
+      "notice30": "",
+      "soon30": "",
       "faqs": {
         "title": "祈願履歴のインポートに関するよくある質問",
         "q1": "これはどのように動作しますか？",
@@ -223,6 +226,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
+      },
       "guide": {
         "video": "チュートリアル動画",
         "pc": [
@@ -245,6 +255,16 @@
           "ENTERを押すとリンクがクリップボードにコピーされます。",
           "下のテキストボックスにリンクを貼り付けてください",
           "ここにリンクを貼り付けてください。 https://webstatic..."
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "pclog": [
           "PCで原神を起動する(複数のアカウントを使う場合はゲームを再起動し、ログインし直してください)",
@@ -966,5 +986,11 @@
     "whatsNew": "新着情報",
     "later": "後で",
     "refresh": "更新"
+  },
+  "calendar": {
+    "lastAppearance": "ピックアップ履歴",
+    "lastAppearanceDesc": "各キャラクターが最後のピックアップされてからいつ",
+    "bannerHover": "",
+    "birthday": "誕生日\t"
   }
 }

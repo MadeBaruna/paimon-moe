@@ -15,6 +15,7 @@
     "artifacts": "อาร์ติแฟกต์",
     "fishing": "ตกปลา",
     "radiantSpincrystal": "Radiant Spincrystal",
+    "calendar": "",
     "settings": "การตั้งค่า",
     "donate": "Donate"
   },
@@ -190,6 +191,8 @@
         "คุณสามารถเปิดใช้ Drive Sync ได้ในหน้าการตั้งค่าเพื่อสำรองข้อมูลไปยัง Google Drive ของคุณ",
         "โปรดทราบว่าลิงก์ข้อเสนอแนะไม่สามารถใช้งานได้อีกต่อไป โดยกรุณาทำตามวิธีใหม่ด้านล่างนี้"
       ],
+      "notice30": "",
+      "soon30": "",
       "faqs": {
         "title": "FAQ ของการนำเข้าประวัติการอธิษฐาน",
         "q1": "ระบบทำงานอย่างไร?",
@@ -223,6 +226,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
+      },
       "guide": {
         "video": "วิดีโอแนะนำการใช้งาน",
         "pc": [
@@ -245,6 +255,16 @@
           "กด ENTER แล้วลิงก์จะถูกคัดลอกไว้ใน clipboard",
           "วางข้อความลงไปในกล่องข้อความด้านล่างนี้",
           "วางลิงก์ที่นี่... https://webstatic..."
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "pclog": [
           "เปิด Genshin Impact ใน PC (ถ้าคุณมีหลายบัญชีโปรดปิดเกมและเปิดใหม่อีกครั้ง)",
@@ -966,5 +986,11 @@
     "whatsNew": "",
     "later": "",
     "refresh": ""
+  },
+  "calendar": {
+    "lastAppearance": "",
+    "lastAppearanceDesc": "",
+    "bannerHover": "",
+    "birthday": ""
   }
 }

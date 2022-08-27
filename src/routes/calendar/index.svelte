@@ -475,11 +475,11 @@
       <table class="text-white">
         <tr>
           <td class="text-white font-semibold py-1" />
-          <td class="text-white font-semibold py-1 px-4">Name</td>
+          <td class="text-white font-semibold py-1 px-4">{$t('wish.detail.name')}</td>
           <td class="text-white font-semibold py-1 px-4 text-center">
-            <Tooltip title={$t('calendar.bannerHover')}>Banner</Tooltip>
+            <Tooltip title={$t('calendar.bannerHover')}>{$t('wish.detail.banner')}</Tooltip>
           </td>
-          <td class="text-white font-semibold py-1">Time</td>
+          <td class="text-white font-semibold py-1">{$t('wish.detail.time')}</td>
         </tr>
         {#each sortedLegendary as [char, val]}
           <tr on:click={() => goToBannerTime(lastBannerStart[char])}>

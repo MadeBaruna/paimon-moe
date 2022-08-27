@@ -15,6 +15,7 @@
     "artifacts": "Artéfacts",
     "fishing": "Pêche",
     "radiantSpincrystal": "Gyrocristal radiant",
+    "calendar": "Calendrier",
     "settings": "Paramètres",
     "donate": "Donner"
   },
@@ -190,6 +191,8 @@
         "Vous pouvez également activer Drive Sync dans les Paramètres afin de synchroniser et sauvegarder l'historique sur votre Google Drive",
         "Veuillez noter que l'ancien lien de rétroaction ne fonctionne plus, veuillez suivre les nouvelles instructions ci-dessous !"
       ],
+      "notice30": "",
+      "soon30": "",
       "faqs": {
         "title": "FAQ de l'importation de l'historique des voeux",
         "q1": "Comment ça marche ?",
@@ -223,6 +226,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
+      },
       "guide": {
         "video": "Tutoriel vidéo",
         "pc": [
@@ -245,6 +255,16 @@
           "Appuyez sur ENTRÉE puis un lien sera copié dans votre presse-papiers",
           "Collez le texte ci-dessous",
           "Collez le lien ici... https://webstatic..."
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "pclog": [
           "Ouvrez Genshin Impact dans ce PC (Si vous utilisez plusieurs comptes, veuillez redémarrer le jeu)",
@@ -966,5 +986,11 @@
     "whatsNew": "Nouveautés",
     "later": "Plus tard",
     "refresh": "Rafraîchir"
+  },
+  "calendar": {
+    "lastAppearance": "Dernière apparition de la bannière",
+    "lastAppearanceDesc": "Quelle est la dernière apparition du personnage sur une bannière limitée",
+    "bannerHover": "Il y a X bannières",
+    "birthday": "Anniversaire"
   }
 }

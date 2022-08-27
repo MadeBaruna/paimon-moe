@@ -15,6 +15,7 @@
     "artifacts": "성유물",
     "fishing": "낚시",
     "radiantSpincrystal": "빛나는 결정",
+    "calendar": "달력",
     "settings": "설정",
     "donate": "후원"
   },
@@ -190,6 +191,8 @@
         "또한 드라이브 동기화를 활성화하여 Google Drive에 기록을 동기화하고 백업할 수 있습니다",
         "이전의 방법은 더이상 작동하지 않습니다, 아래의 새 방법을 따라주세요!"
       ],
+      "notice30": "",
+      "soon30": "",
       "faqs": {
         "title": "기원 기록 입력 FAQ",
         "q1": "어떤 원리로 동작하나요?",
@@ -223,6 +226,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
+      },
       "guide": {
         "video": "영상 도움말",
         "pc": [
@@ -245,6 +255,16 @@
           "ENTER 키를 누르면 링크가 클립보드에 복사됩니다",
           "아래 텍스트 박스에 복사한 문자를 붙여넣기하세요",
           "여기에 주소를 붙여넣기하세요... (https://webstatic...)"
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "pclog": [
           "PC에서 원신을 실행하세요 (만약 여러 개의 계정을 사용한다면 게임을 재시작하세요)",
@@ -393,7 +413,7 @@
           "또는",
           "버튼을 눌러 값들을 직접 고칠 수도 있습니다!"
         ],
-        "p6": ""
+        "p6": "화살표 버튼을 클릭해 뽑기 상세 내용을 확인할 수 있습니다. 5★ or 4★을 획득하면 팝업이 표시됩니다. 수동으로 뽑기 기록을 추가하거나 편집할 수 있습니다."
       }
     },
     "types": {
@@ -416,9 +436,9 @@
       "loading": "로딩 중... (화면이 멈췄다면, 설정 페이지에서 서버를 바꿔주세요)",
       "guaranteed": "다음 {rarity}★ 은 확정 UP 캐릭터 또는 무기입니다",
       "unknown_3_star": "알 수 없음",
-      "rarity": "",
-      "total": "",
-      "percent": "",
+      "rarity": "등급",
+      "total": "총 횟수",
+      "percent": "백분율",
       "pityAverage": "평균 천장"
     },
     "tally": {
@@ -444,13 +464,13 @@
       "detail": "상세 정보"
     },
     "summary": {
-      "total": "",
-      "percent": "",
+      "total": "총 횟수",
+      "percent": "백분율",
       "pityAverage": "평균 천장",
       "character": "캐릭터",
       "weapon": "무기",
-      "winRateOff": "",
-      "winRateOffWeapon": ""
+      "winRateOff": "반천장 획득",
+      "winRateOffWeapon": "반천장 획득"
     },
     "note": [
       "기원 이력은 자동으로 업데이트되지 않습니다. 자동 제출 기능을 이용해 주세요.",
@@ -477,7 +497,7 @@
       "totalPull": "총 기원",
       "luck5": "행운 5★",
       "luck4": "행운 4★",
-      "luckWinRateOff": "",
+      "luckWinRateOff": "반천장 행운",
       "medianTotal": "전세계 중앙값 뽑기 {median}회",
       "medianLuck": "전세계 중앙값 {median}%",
       "moreTotal": "전체 paimon.moe 유저의 {percentage}%보다 많은 뽑기 횟수",
@@ -702,7 +722,7 @@
           "value": "Dimbreath Genshin Data"
         },
         {
-          "name": "",
+          "name": "퓨어 레진 드랍률 계산",
           "value": "Data Gathering Discord"
         }
       ]
@@ -773,7 +793,7 @@
     ],
     "subtitleAd": "광고",
     "ad": [
-      "",
+      "이 사이트를 지원하기 위해 서드파티 광고를 이용하고 있습니다. 일부 광고주들의 광고가 서드파티 광고를 통해 제공될 수 있습니다.",
       "그들의",
       " 개인정보처리방침",
       "과",
@@ -793,7 +813,7 @@
     "download": "둘 다 다운로드",
     "lastModified": "마지막 변경",
     "or": "또는",
-    "smallSizeWarning": ""
+    "smallSizeWarning": "주의하세요, 이 쪽 사이즈가 더 작습니다!"
   },
   "footer": {
     "affliate": "Paimon.moe는 HoYoverse와 연관이 없습니다.",
@@ -932,11 +952,11 @@
     "18ATKSet": "공격력 +18% 세트",
     "20EnergyRechargeSet": "원소 충전 효율 +20% 세트",
     "25PhysicalDmgSet": "물리 피해 보너스 +25% 세트",
-    "sands": "",
-    "goblet": "",
-    "circlet": "",
-    "choose2": "",
-    "pieceStat": "",
+    "sands": "시간의 모래",
+    "goblet": "공간의 성배",
+    "circlet": "이성의 왕관",
+    "choose2": "성유물 2세트 두 종류를 선택하세요.",
+    "pieceStat": "아래의 캐릭터가 주 스텟에 따라 {piece} 부위를 사용할 수 있습니다.",
     "pieceInfo": "성유물 이미지를 클릭해 추천되는 주 옵션을 확인하세요"
   },
   "fishing": {
@@ -966,5 +986,11 @@
     "whatsNew": "새로운 기능",
     "later": "나중에",
     "refresh": "새로고침"
+  },
+  "calendar": {
+    "lastAppearance": "마지막 픽업 출현",
+    "lastAppearanceDesc": "마지막으로 출현한 캐릭터가 한정 캐릭터인 경우",
+    "bannerHover": "X 픽업 이벤트 전",
+    "birthday": "생일"
   }
 }

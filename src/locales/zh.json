@@ -15,6 +15,7 @@
     "artifacts": "圣遗物",
     "fishing": "钓鱼",
     "radiantSpincrystal": "旋曜玉帛",
+    "calendar": "日程",
     "settings": "设置",
     "donate": "赞助"
   },
@@ -30,7 +31,7 @@
       "detail": "全球祈愿统计"
     },
     "wish": {
-      "message": "为避免超过6个月后祈愿数据消失，请导入你的祈愿记录！你的祈愿与保底情况会以表格形式自动计算展示。 📊",
+      "message": "为避免超过6个月后祈愿数据消失，导入你的祈愿记录吧！你的祈愿与保底情况会以表格形式自动计算展示。 📊",
       "latest": "你上一次抽卡",
       "banner": "祈愿池",
       "time": "时间",
@@ -190,6 +191,8 @@
         "你也可以在设置中启用云端同步以备份数据，将你的祈愿记录自动同步到 Google 云端硬盘",
         "2.3版本前的获取祈愿历史链接的方式已不再有效，请按照以下指示的操作获取新的祈愿历史链接！"
       ],
+      "notice30": "",
+      "soon30": "",
       "faqs": {
         "title": "导入祈愿记录常见问题",
         "q1": "这是怎么做到的？",
@@ -216,12 +219,19 @@
         ],
         "q6": "我按流程操作了，但提示 API 错误？",
         "a6": "确保你复制了完整的链接（移动设备需要长按并全选）；可能你漏掉了链接的一部分。",
-        "q7": "导入器并没有读取到我的全部抽卡记录！",
+        "q7": "怎么没有读取到我的全部抽卡记录？！",
         "a7": "超过6个月的祈愿记录会在HoYoVerse的服务器上被删除，如果你以前没备份过，那就永远消失了。"
       },
       "logLocation": {
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
+      },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
       },
       "guide": {
         "video": "视频教程",
@@ -245,6 +255,16 @@
           "轻按回车键（Enter），然后将程序返回的链接粘贴到下方的文本框中",
           "粘贴复制的内容到下面的文本框",
           "在这里粘贴你的链接… https://webstatic…"
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
         ],
         "pclog": [
           "打开原神客户端（如果你拥有多个米哈游通行证，重新启动游戏并登录到你希望的账号）",
@@ -450,11 +470,11 @@
       "character": "角色",
       "weapon": "武器",
       "winRateOff": "小保底没歪",
-      "winRateOffWeapon": ""
+      "winRateOffWeapon": "小保底没歪"
     },
     "note": [
-      "祈愿记录不会自动更新，请手动导入更新祈愿历史。",
-      "Paimon.moe 无法获得超过6个月的祈愿历史，因为它已经在 HoYoVerse 服务器上被删除，所以你的部分旧祈愿可能不会显示。",
+      "祈愿记录不会自动更新，更新祈愿历史需要再次导入。",
+      "Paimon.moe 无法获得超过6个月的祈愿历史，因为这部分记录已在 HoYoVerse 服务器上被删除，所以早期的祈愿记录可能不会显示。",
       "数据保存在你的浏览器中，如果你清理浏览器缓存，记录会被删除！ 在设置中启用 Google 云端硬盘同步，可以备份你的数据！"
     ],
     "rateon": {
@@ -474,14 +494,14 @@
       "more": "你的抽卡次数多于 {percentage}% 的 Paimon.moe 用户",
       "less": "你的抽卡次数少于 {percentage}% 的 Paimon.moe 用户",
       "currentLuck": "当前{banner}中位数是 {median}%",
-      "totalPull": "总抽数",
+      "totalPull": "总抽卡次数",
       "luck5": "5★ 欧气指数",
       "luck4": "4★ 欧气指数",
       "luckWinRateOff": "小保底没歪比例",
       "medianTotal": "全球中位数 {median} 抽",
       "medianLuck": "全球中位数 {median}%",
-      "moreTotal": "抽卡次数多于 {percentage}% 的 Paimon.moe 用户",
-      "lessTotal": "抽卡次数少于 {percentage}% 的 Paimon.moe 用户",
+      "moreTotal": "比 {percentage}% 的 Paimon.moe 用户要多",
+      "lessTotal": "比 {percentage}% 的 Paimon.moe 用户要少",
       "moreLuck": "比 {percentage}% 的 Paimon.moe 用户要欧",
       "lessLuck": "比 {percentage}% 的 Paimon.moe 用户要非",
       "top": "前",
@@ -680,7 +700,7 @@
     ],
     "driveError": "Google 云端硬盘 API 无法加载",
     "driveSignIn": "登录 Google 云端硬盘",
-    "driveSignOut": "登出 Google 云端硬盘",
+    "driveSignOut": "退出登录 Google 云端硬盘",
     "driveSignInErrorScope": "登录 Google 云端硬盘失败！请重新登录并检查所需要的权限！",
     "synced": "已同步",
     "waiting": "等待中…",
@@ -760,7 +780,7 @@
         "title": "抽卡保底",
         "content": [
           "如果你在自动导入功能中勾选“提交祈愿到全球统计”，或在帮助 & 设置菜单中手动提交，Paimon.moe 会保存四星、五星的保底进度，以及5星祈愿详情（抽卡时间、出货内容、保底计数）。Paimon.moe 会统计以上信息并用于计算每个池子本站用户的平均出货次数。你可以在这里查看",
-          "祈愿总计"
+          "祈愿统计"
         ]
       }
     ],
@@ -888,8 +908,8 @@
       "inInventory": "在清单中",
       "available": "可用",
       "used": "已在其他套装使用",
-      "calculate": "",
-      "exludeOwned": ""
+      "calculate": "计算所需材料",
+      "exludeOwned": "排除已拥有的摆设"
     }
   },
   "weapon": {
@@ -961,10 +981,16 @@
     "driveError": "云端同步现在不可用 😔"
   },
   "update": {
-    "newUpdate": "",
-    "updateRefresh": "",
-    "whatsNew": "",
-    "later": "",
-    "refresh": ""
+    "newUpdate": "Paimon.moe 更新啦！",
+    "updateRefresh": "点击“刷新”进行更新",
+    "whatsNew": "更新内容",
+    "later": "稍后再说",
+    "refresh": "刷新"
+  },
+  "calendar": {
+    "lastAppearance": "等  复  刻",
+    "lastAppearanceDesc": "角色最近一次出现在活动祈愿的时间列表",
+    "bannerHover": "距上次复刻过了多少期",
+    "birthday": "生日"
   }
 }
