@@ -8,6 +8,12 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre class="text-white px-4 md:px-8">
+2022/08/27
+- Update wish import instruction
+- Update radiant spincrystal list
+- Fix commission achievement tag
+- Adjust constellation color if C6+
+
 2022/08/24
 - Update Tighnari Banner
 - Update weapons
