@@ -8656,7 +8656,7 @@ export const weaponList = {
     rarity: 4,
     atk: 44,
     secondary: 'Elemental Mastery',
-    type: 'polearm',
+    type: weapons.polearm,
     source: 'forging',
     ascension: [
       {
@@ -8767,7 +8767,7 @@ export const weaponList = {
     id: 'sapwood_blade',
     name: 'Sapwood Blade',
     rarity: 4,
-    atk: '44',
+    atk: 44,
     secondary: 'Energy Recharge',
     type: weapons.sword,
     source: 'forging',
