@@ -52,8 +52,11 @@
 
   const steps = {
     pc: 7,
+    pc3: 8,
     pclog: 7,
     android: 1,
+    android2: 1,
+    android3: 1,
     ios: 11,
     ps: 5,
     pclocal: 5,
@@ -61,7 +64,10 @@
 
   const videoTutorial = {
     android: 'https://www.youtube.com/watch?v=6C5Zqhcm3NI',
+    android2: 'https://www.youtube.com/watch?v=rHN1iRjmKmc',
+    android3: 'https://www.youtube.com/watch?v=jAKq94KpGHA',
     pc: 'https://www.youtube.com/watch?v=FCwZkHeIezw',
+    pc3: 'https://www.youtube.com/watch?v=ojZzl3dmppI',
     pclog: 'https://www.youtube.com/watch?v=cl5HDd0bqKw',
     ios: 'https://www.youtube.com/watch?v=WfBpraUq41c',
   };
@@ -90,6 +96,8 @@
   let powershellScriptChina =
     'iex "&{$(irm https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/d40fa0fd74d85d692543c1621669f5f9375b5975/getlink.ps1)} china"';
   let powershellScriptSource = 'https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235';
+  let powershellScriptAlt =
+    'pause;$m=(((Get-Clipboard -TextFormatType Html) | sls "(https:/.+log)").Matches[0].Value);$m;Set-Clipboard -Value $m';
   let copiedScript = false;
   let news = '';
   let showAdvancedOptions = false;
@@ -854,6 +862,17 @@
     } catch (err) {}
   }
 
+  function copyScriptAlt() {
+    try {
+      navigator.clipboard.writeText(powershellScriptAlt);
+      copiedScript = true;
+
+      setTimeout(() => {
+        copiedScript = false;
+      }, 2000);
+    } catch (err) {}
+  }
+
   $: selectedServer, updateServer();
 
   onMount(() => {
@@ -936,14 +955,14 @@
         <button
           disabled={processingLog}
           on:click={() => changeSelectedType('pc')}
-          class="pill {['pc', 'pclog', 'pclocal'].includes(selectedType) ? 'active' : ''}"
+          class="pill {['pc', 'pc3', 'pclocal'].includes(selectedType) ? 'active' : ''}"
         >
           PC
         </button>
         <button
           disabled={processingLog}
           on:click={() => changeSelectedType('android')}
-          class="pill {selectedType === 'android' ? 'active' : ''}"
+          class="pill {['android', 'android2', 'android3'].includes(selectedType) ? 'active' : ''}"
         >
           Android
         </button>
@@ -964,7 +983,7 @@
       </div>
     </div>
   </div>
-  <!-- {#if ['pc', 'pclog', 'pclocal'].includes(selectedType)}
+  {#if ['pc', 'pc3', 'pclocal'].includes(selectedType)}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
@@ -980,26 +999,62 @@
             on:click={() => changeSelectedType('pc')}
             class="pill {selectedType === 'pc' ? 'active' : ''}"
           >
-            Script
+            {$t('wish.import.method.pc')}
           </button>
           <button
             disabled={processingLog}
-            on:click={() => changeSelectedType('pclog')}
-            class="pill {selectedType === 'pclog' ? 'active' : ''}"
+            on:click={() => changeSelectedType('pc3')}
+            class="pill {selectedType === 'pc3' ? 'active' : ''}"
           >
-            No Script
+            {$t('wish.import.method.pc3')}
           </button>
-          <button
+          <!-- <button
             disabled={processingLog}
             on:click={() => changeSelectedType('pclocal')}
             class="pill {selectedType === 'pclocal' ? 'active' : ''}"
           >
             Local Importer
+          </button> -->
+        </div>
+      </div>
+    </div>
+  {/if}
+  {#if ['android', 'android2', 'android3'].includes(selectedType)}
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">4</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex flex-col pb-6 pt-1">
+        <p class="text-white">{$t('wish.import.chooseMethod')}</p>
+        <div class="flex mt-4 flex-wrap">
+          <button
+            disabled={processingLog}
+            on:click={() => changeSelectedType('android')}
+            class="pill {selectedType === 'android' ? 'active' : ''}"
+          >
+            {$t('wish.import.method.android')}
+          </button>
+          <button
+            disabled={processingLog}
+            on:click={() => changeSelectedType('android2')}
+            class="pill {selectedType === 'android2' ? 'active' : ''}"
+          >
+            {$t('wish.import.method.android2')}
+          </button>
+          <button
+            disabled={processingLog}
+            on:click={() => changeSelectedType('android3')}
+            class="pill {selectedType === 'android3' ? 'active' : ''}"
+          >
+            {$t('wish.import.method.android3')}
           </button>
         </div>
       </div>
     </div>
-  {/if} -->
+  {/if}
   {#if videoTutorial[selectedType] !== undefined}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
@@ -1087,6 +1142,53 @@
         <p class="text-white">{$t('wish.import.guide.pc2.10')}</p>
       </div>
     </div>
+  {:else if selectedType === 'pc3'}
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="w-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">5</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex-col items-center">
+        <p class="text-white">{$t(`wish.import.guide.pc3.0`)}</p>
+      </div>
+    </div>
+
+    <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="w-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">6</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex-col items-center pb-2">
+        <p class="text-white">{$t('wish.import.guide.pc3.1')}</p>
+        <div class="flex">
+          <pre
+            class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all flex-1">{powershellScriptAlt}</pre>
+          <button
+            on:click={copyScriptAlt}
+            class="bg-black bg-opacity-50 hover:bg-opacity-25 text-white px-2 ml-1 rounded-xl"
+          >
+            <Icon path={copiedScript ? mdiCheckBold : mdiContentCopy} color="white" />
+          </button>
+        </div>
+      </div>
+    </div>
+    {#each Array(5) as _, i}
+      <div class="flex space-x-3 mb-2">
+        <div class="flex flex-col items-center step">
+          <div class="w-8 rounded-full flex justify-center items-center">
+            <span class="text-white font-bold">{7 + i}</span>
+          </div>
+          <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+        </div>
+        <div class="content flex-col items-center {i === 4 ? 'pb-8' : ''}">
+          <p class="text-white">{$t(`wish.import.guide.pc3.${2 + i}`)}</p>
+        </div>
+      </div>
+    {/each}
   {:else if selectedType === 'pclog'}
     {#each Array(2) as _, i}
       <div class="flex space-x-3 mb-2">
@@ -1280,7 +1382,7 @@
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
       <div class="content flex-col items-center pb-8">
-        <p class="text-white">Text tutorial is coming soon, for now please watch the video above!</p>
+        <p class="text-white">{$t('wish.import.soon30')}</p>
       </div>
     </div>
     <!-- {#each Array(steps[selectedType]) as _, i}

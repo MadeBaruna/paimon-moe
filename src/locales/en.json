@@ -185,6 +185,7 @@
         "Please note that the old feedback link does not work anymore, please follow the new instructions below!"
       ],
       "notice30": "Wish history is changed on v3.0, please follow the new instruction below!",
+      "soon30": "Text tutorial is coming soon, for now please watch the video above!",
       "faqs": {
         "title": "Import Wish History FAQ",
         "q1": "How does it work?",
@@ -218,6 +219,13 @@
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
+      "method": {
+        "pc": "Method 1",
+        "pc3": "Method 2",
+        "android": "Wifi",
+        "android2": "Cell Data",
+        "android3": "Alternative"
+      },
       "guide": {
         "video": "Video Tutorial",
         "pc": [
@@ -238,6 +246,16 @@
           "here",
           "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
           "Press ENTER, and a link will copied to your clipboard",
+          "Paste the text to the textbox below",
+          "Paste the link here... https://webstatic..."
+        ],
+        "pc3": [
+          "Press START on your keyboard, then search for Powershell",
+          "Click Windows Powershell, then copy & paste the script below to the Powershell, then press ENTER (only when 'Press Enter to continue...' message is not showing yet)",
+          "Open Genshin Impact in this PC",
+          "Then open the wish history in the game and wait it to load",
+          "Click the table, then press CTRL+A then CTRL+C",
+          "Alt+Tab to the powershell, then press ENTER, the link will be copied to your clipboard",
           "Paste the text to the textbox below",
           "Paste the link here... https://webstatic..."
         ],
