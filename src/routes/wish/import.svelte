@@ -167,7 +167,7 @@
     processingLog = true;
 
     try {
-      if (selectedType === 'android') {
+      if (selectedType.startsWith('android')) {
         const urlString = genshinLink.match(/https:\/\/.*#/g);
         url = new URL(urlString);
       } else if (selectedType === 'pclog') {
