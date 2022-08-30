@@ -68,6 +68,7 @@
     android3: 'https://www.youtube.com/watch?v=jAKq94KpGHA',
     pc: 'https://www.youtube.com/watch?v=FCwZkHeIezw',
     pc3: 'https://www.youtube.com/watch?v=ojZzl3dmppI',
+    pc4: 'https://www.youtube.com/watch?v=ojZzl3dmppI',
     pclog: 'https://www.youtube.com/watch?v=cl5HDd0bqKw',
     ios: 'https://www.youtube.com/watch?v=WfBpraUq41c',
   };
@@ -92,12 +93,14 @@
   };
 
   let powershellScript =
-    'iex(irm https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/d40fa0fd74d85d692543c1621669f5f9375b5975/getlink.ps1)';
+    'iex "&{$(irm https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/f7f8d9029122e29e366c65afaea236eb3abb1179/getlink.ps1)} global"';
   let powershellScriptChina =
-    'iex "&{$(irm https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/d40fa0fd74d85d692543c1621669f5f9375b5975/getlink.ps1)} china"';
+    'iex "&{$(irm https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/f7f8d9029122e29e366c65afaea236eb3abb1179/getlink.ps1)} china"';
   let powershellScriptSource = 'https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235';
   let powershellScriptAlt =
     'pause;$m=(((Get-Clipboard -TextFormatType Html) | sls "(https:/.+log)").Matches[0].Value);$m;Set-Clipboard -Value $m';
+  let powershellScriptAlt2 =
+    "$p = [Enum]::ToObject([System.Net.SecurityProtocolType], 3072); [System.Net.ServicePointManager]::SecurityProtocol = $p; iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/bf36bad751dc9221067ca1e31ab08255/raw/20664d5df5e916cbab169500536d7f366de29395/read.ps1'))";
   let copiedScript = false;
   let news = '';
   let showAdvancedOptions = false;
@@ -864,7 +867,7 @@
 
   function copyScriptAlt() {
     try {
-      navigator.clipboard.writeText(powershellScriptAlt);
+      navigator.clipboard.writeText(selectedType === 'pc3' ? powershellScriptAlt : powershellScriptAlt2);
       copiedScript = true;
 
       setTimeout(() => {
@@ -955,7 +958,7 @@
         <button
           disabled={processingLog}
           on:click={() => changeSelectedType('pc')}
-          class="pill {['pc', 'pc3', 'pclocal'].includes(selectedType) ? 'active' : ''}"
+          class="pill {['pc', 'pc3', 'pc4', 'pclocal'].includes(selectedType) ? 'active' : ''}"
         >
           PC
         </button>
@@ -983,7 +986,7 @@
       </div>
     </div>
   </div>
-  {#if ['pc', 'pc3', 'pclocal'].includes(selectedType)}
+  {#if ['pc', 'pc3', 'pc4', 'pclocal'].includes(selectedType)}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
@@ -1007,6 +1010,13 @@
             class="pill {selectedType === 'pc3' ? 'active' : ''}"
           >
             {$t('wish.import.method.pc3')}
+          </button>
+          <button
+            disabled={processingLog}
+            on:click={() => changeSelectedType('pc4')}
+            class="pill {selectedType === 'pc4' ? 'active' : ''}"
+          >
+            {$t('wish.import.method.pc4')}
           </button>
           <!-- <button
             disabled={processingLog}
@@ -1142,7 +1152,7 @@
         <p class="text-white">{$t('wish.import.guide.pc2.10')}</p>
       </div>
     </div>
-  {:else if selectedType === 'pc3'}
+  {:else if selectedType === 'pc3' || selectedType === 'pc4'}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="w-8 rounded-full flex justify-center items-center">
@@ -1166,7 +1176,10 @@
         <p class="text-white">{$t('wish.import.guide.pc3.1')}</p>
         <div class="flex">
           <pre
-            class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all flex-1">{powershellScriptAlt}</pre>
+            class="bg-black text-white bg-opacity-50 whitespace-pre-wrap break-all p-2 rounded-xl text-xs select-all flex-1">{selectedType ===
+            'pc3'
+              ? powershellScriptAlt
+              : powershellScriptAlt2}</pre>
           <button
             on:click={copyScriptAlt}
             class="bg-black bg-opacity-50 hover:bg-opacity-25 text-white px-2 ml-1 rounded-xl"

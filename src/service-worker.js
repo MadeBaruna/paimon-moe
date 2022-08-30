@@ -7,12 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = [
-  'Update wish import instruction',
-  'Update radiant spincrystal list',
-  'Fix commission achievement tag',
-  'Adjust constellation color if C6+',
-];
+const changelog = ['Update wish import instruction for pc', 'Update fishing book'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
