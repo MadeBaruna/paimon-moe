@@ -8,6 +8,7 @@
     inazuma: [],
     enkanomiya: [],
     chasm: [],
+    sumeru: [],
   };
   for (const [id, location] of Object.entries(locations)) {
     spots[location.location].push({ ...location, id });

@@ -192,5 +192,68 @@
     "name": "Underground Waterway",
     "fish": ["sweet-flower_medaka", "dawncatcher", "crystalfish", "akai_maou", "pufferfish"],
     "location": "chasm"
+  },
+  "30463": {
+    "name": "Sumeru City",
+    "fish": ["dawncatcher", "sandstorm_angler", "sunset_cloud_angler", "lazurite_axe_marlin"],
+    "location": "sumeru"
+  },
+  "30462": {
+    "name": "Yazadaha Pool",
+    "fish": [
+      "akai_maou",
+      "true_fruit_angler",
+      "sandstorm_angler",
+      "sunset_cloud_angler",
+      "lazurite_axe_marlin",
+      "halcyon_jade_axe_marlin"
+    ],
+    "location": "sumeru"
+  },
+  "30461": {
+    "name": "Vimara Village",
+    "fish": [
+      "medaka",
+      "true_fruit_angler",
+      "sandstorm_angler",
+      "sunset_cloud_angler",
+      "lazurite_axe_marlin",
+      "halcyon_jade_axe_marlin"
+    ],
+    "location": "sumeru"
+  },
+  "30459": {
+    "name": "Port Ormos",
+    "fish": [
+      "crystalfish",
+      "true_fruit_angler",
+      "sandstorm_angler",
+      "sunset_cloud_angler",
+      "lazurite_axe_marlin",
+      "halcyon_jade_axe_marlin"
+    ],
+    "location": "sumeru"
+  },
+  "30460": {
+    "name": "Devantaka Mountain",
+    "fish": ["dawncatcher", "true_fruit_angler", "sunset_cloud_angler", "halcyon_jade_axe_marlin"],
+    "location": "sumeru"
+  },
+  "30465": {
+    "name": "Mawtiyima Forest",
+    "fish": ["peach_of_the_deep_waves", "sunset_cloud_angler", "lazurite_axe_marlin", "halcyon_jade_axe_marlin"],
+    "location": "sumeru"
+  },
+  "30464": {
+    "name": "Vanarana",
+    "fish": [
+      "medaka",
+      "true_fruit_angler",
+      "sandstorm_angler",
+      "sunset_cloud_angler",
+      "lazurite_axe_marlin",
+      "halcyon_jade_axe_marlin"
+    ],
+    "location": "sumeru"
   }
 }
