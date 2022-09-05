@@ -223,6 +223,7 @@
         "pc": "Method 1",
         "pc3": "Method 2",
         "pc4": "Method 2 Alt",
+        "pc5": "Manual",
         "android": "Wifi",
         "android2": "Cell Data",
         "android3": "Alternative"
@@ -257,6 +258,17 @@
           "Then open the wish history in the game and wait it to load",
           "Click the table, then press CTRL+A then CTRL+C",
           "Alt+Tab to the powershell, then press ENTER, the link will be copied to your clipboard",
+          "Paste the text to the textbox below",
+          "Paste the link here... https://webstatic..."
+        ],
+        "pc5": [
+          "Open Genshin Impact in this PC (If you use multiple accounts, please restart the game)",
+          "Then open the wish history in the game and wait it to load",
+          "Then open the folder where your game is installed (example: C:\\Games\\Genshin Impact)",
+          "Then open folder GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "Right click \"data_2\" file then click \"Open with\" then select Notepad (If you get error like \"The process cannot access the file because it is being used y another process\" please exit the game first",
+          "Press CTRL+F then check \"Wrap around\" and select direction \"Up\" then in the input box search for \"e20190909gacha-v2\" (without the quote) then click Find Next",
+          "Copy all the link from https://webstatic until game_biz=hk4e_global the url looks like this: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
           "Paste the text to the textbox below",
           "Paste the link here... https://webstatic..."
         ],
