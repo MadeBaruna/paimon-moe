@@ -75,6 +75,11 @@
   let typeFilter = [];
 
   function parseCategories() {
+    totalAchievement = 0;
+    finishedAchievement = 0;
+    totalPrimogem = 0;
+    obtainedPrimogem = 0;
+
     categories = Object.entries(achievement)
       .map(([id, data]) => ({
         id,

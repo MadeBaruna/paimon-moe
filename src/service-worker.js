@@ -7,7 +7,12 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Update wish import instruction for pc', 'Update fishing book'];
+const changelog = [
+  'Add checklist to achievement',
+  'Update achievement commission list',
+  'Update wish import instruction for pc',
+  'Adjust calendar view on mobile',
+];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
