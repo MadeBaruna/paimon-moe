@@ -349,128 +349,130 @@
   />
 </svelte:head>
 <div class="lg:ml-64 pt-20 lg:pt-8 max-w-screen-xl">
-  <div class="px-4 2xl:px-8 mb-4 flex flex-col">
-    <div class="mb-1 flex gap-1">
-      <button
-        class="ring-primary hover:ring-2 bg-background rounded-xl px-3 text-white"
-        on:click={() => changeMonth(-1)}
-      >
-        <Icon path={mdiChevronLeft} />
-      </button>
-      <button
-        class="ring-primary hover:ring-2 bg-background rounded-xl px-3 text-white"
-        on:click={() => changeMonth(1)}
-      >
-        <Icon path={mdiChevronRight} />
-      </button>
-      <div class="bg-background rounded-xl h-10 font-bold flex w-full">
-        <p class=" font-normal text-sm text-gray-600 rounded-xl leading-10 px-8">
-          {browserTimeZone}
-        </p>
-        <p class="leading-10 px-2 text-white flex-1 text-center text-xl">
-          {monthName}
-          {selectedYear}
-        </p>
-        <p class="font-normal text-sm text-gray-600 rounded-xl leading-10 px-8">
-          {$server} Server
-        </p>
-      </div>
-      <button
-        class="ring-primary hover:ring-2 bg-background rounded-xl px-3 text-white"
-        on:click={() => changeMonth(-1)}
-      >
-        <Icon path={mdiChevronLeft} />
-      </button>
-      <button
-        class="ring-primary hover:ring-2 bg-background rounded-xl px-3 text-white"
-        on:click={() => changeMonth(1)}
-      >
-        <Icon path={mdiChevronRight} />
-      </button>
-    </div>
-    <div class="grid grid-cols-7 gap-x-1">
-      {#each weekNames as day}
-        <div class="text-white font-bold bg-background rounded-xl text-center h-10 leading-10">
-          {day}
+  <div class="w-full overflow-x-auto pt-1">
+    <div class="px-4 2xl:px-8 mb-4 flex flex-col min-w-[768px]">
+      <div class="mb-1 flex gap-1">
+        <button
+          class="ring-primary hover:ring-2 bg-background rounded-xl px-3 text-white"
+          on:click={() => changeMonth(-1)}
+        >
+          <Icon path={mdiChevronLeft} />
+        </button>
+        <button
+          class="ring-primary hover:ring-2 bg-background rounded-xl px-3 text-white"
+          on:click={() => changeMonth(1)}
+        >
+          <Icon path={mdiChevronRight} />
+        </button>
+        <div class="bg-background rounded-xl h-10 font-bold flex w-full">
+          <p class=" font-normal text-sm text-gray-600 rounded-xl leading-10 px-8">
+            {browserTimeZone}
+          </p>
+          <p class="leading-10 px-2 text-white flex-1 text-center text-xl">
+            {monthName}
+            {selectedYear}
+          </p>
+          <p class="font-normal text-sm text-gray-600 rounded-xl leading-10 px-8">
+            {$server} Server
+          </p>
         </div>
-      {/each}
-    </div>
-    {#each month as week}
-      <div class="grid grid-cols-7 gap-x-1 pt-1">
-        {#each week as day}
-          <div
-            class="scrollbar overflow-y-auto bg-background rounded-xl h-28 relative flex flex-col {day.t
-              ? 'ring-2 ring-primary'
-              : ''} {day.h ? 'ring-2 ring-green-400' : ''}"
-          >
-            <p class="select-none pl-2 {day.c}">{day.d}</p>
-            <div class="flex flex-wrap gap-1 px-2 pb-1">
-              {#if day.wc}
-                <div
-                  on:click={() => openDetail('banners', day.wc)}
-                  style="--tw-ring-color: {day.wc.color}; background-color: {day.wc.color};"
-                  class="cursor-pointer rounded-md inline-flex items-center text-sm px-2 space-x-1 ring-offset-1 ring-offset-background hover:ring-2"
-                >
-                  <!-- {day.w.name} -->
-                  {#each day.wc.featured as char}
-                    <img class="w-6 h-6 inline" src="/images/characters/{char}.png" alt={char} />
-                  {/each}
-                  {#each day.wc.featuredRare as char}
-                    <img class="w-6 h-6 inline" src="/images/characters/{char}.png" alt={char} />
-                  {/each}
-                  <!-- <img class="w-6 h-6 inline" src="/images/intertwined_fate.png" alt="fate" /> -->
-                </div>
-              {/if}
-              {#if day.wp}
-                <div
-                  on:click={() => openDetail('banners', day.wp)}
-                  class="cursor-pointer bg-orange-200 rounded-md inline-flex items-center text-sm px-2 ring-orange-200 ring-offset-1 ring-offset-background hover:ring-2"
-                >
-                  <!-- {day.w.name} -->
-                  {#each day.wp.featured as weapon}
-                    <img class="w-6 h-6 inline" src="/images/weapons/{weapon}.png" alt={weapon} />
-                  {/each}
-                  <!-- <img class="w-6 h-6 inline" src="/images/intertwined_fate.png" alt="fate" /> -->
-                </div>
-              {/if}
-              {#if day.b}
-                <div
-                  on:click={() => openBirthday(day.b, day.d, day.m)}
-                  class="cursor-pointer bg-purple-400 rounded-md inline-flex items-center px-2 ring-purple-400 ring-offset-1 ring-offset-background hover:ring-2"
-                >
-                  {#each day.b as char}
-                    <img class="w-6 h-6 inline mr-2" src="/images/characters/{char}.png" alt={char} />
-                  {/each}
-                  <span class="text-sm">🎁</span>
-                </div>
-              {/if}
-              {#if day.e}
-                {#each day.e as event}
-                  <div
-                    on:mouseenter={() => hoverEvent(event.e.name)}
-                    on:mouseleave={() => hoverEvent('')}
-                    on:click={() => openDetail('events', event.e)}
-                    style="--tw-ring-color: {event.e.color}; --color: {event.e.color};"
-                    class="cursor-pointer rounded-md ring-offset-1 ring-offset-background h-6 w-full inline-flex items-center text-xs px-2 space-x-1 event-strip {event.s
-                      ? ''
-                      : 'end'} {hovered === event.e.name ? 'ring-2' : ''}"
-                  >
-                    <p class="max-h-full w-full overflow-hidden text-ellipsis whitespace-nowrap">{event.e.name}</p>
-                  </div>
-                {/each}
-              {/if}
-            </div>
+        <button
+          class="ring-primary hover:ring-2 bg-background rounded-xl px-3 text-white"
+          on:click={() => changeMonth(-1)}
+        >
+          <Icon path={mdiChevronLeft} />
+        </button>
+        <button
+          class="ring-primary hover:ring-2 bg-background rounded-xl px-3 text-white"
+          on:click={() => changeMonth(1)}
+        >
+          <Icon path={mdiChevronRight} />
+        </button>
+      </div>
+      <div class="grid grid-cols-7 gap-x-1">
+        {#each weekNames as day}
+          <div class="text-white font-bold bg-background rounded-xl text-center h-10 leading-10">
+            {day}
           </div>
         {/each}
       </div>
-    {/each}
+      {#each month as week}
+        <div class="grid grid-cols-7 gap-x-1 pt-1">
+          {#each week as day}
+            <div
+              class="scrollbar overflow-y-auto bg-background rounded-xl h-28 relative flex flex-col {day.t
+                ? 'ring-2 ring-primary'
+                : ''} {day.h ? 'ring-2 ring-green-400' : ''}"
+            >
+              <p class="select-none pl-2 {day.c}">{day.d}</p>
+              <div class="flex flex-wrap gap-1 px-2 pb-1">
+                {#if day.wc}
+                  <div
+                    on:click={() => openDetail('banners', day.wc)}
+                    style="--tw-ring-color: {day.wc.color}; background-color: {day.wc.color};"
+                    class="cursor-pointer rounded-md inline-flex items-center text-sm px-2 space-x-1 ring-offset-1 ring-offset-background hover:ring-2"
+                  >
+                    <!-- {day.w.name} -->
+                    {#each day.wc.featured as char}
+                      <img class="w-6 h-6 inline" src="/images/characters/{char}.png" alt={char} />
+                    {/each}
+                    {#each day.wc.featuredRare as char}
+                      <img class="w-6 h-6 inline" src="/images/characters/{char}.png" alt={char} />
+                    {/each}
+                    <!-- <img class="w-6 h-6 inline" src="/images/intertwined_fate.png" alt="fate" /> -->
+                  </div>
+                {/if}
+                {#if day.wp}
+                  <div
+                    on:click={() => openDetail('banners', day.wp)}
+                    class="cursor-pointer bg-orange-200 rounded-md inline-flex items-center text-sm px-2 ring-orange-200 ring-offset-1 ring-offset-background hover:ring-2"
+                  >
+                    <!-- {day.w.name} -->
+                    {#each day.wp.featured as weapon}
+                      <img class="w-6 h-6 inline" src="/images/weapons/{weapon}.png" alt={weapon} />
+                    {/each}
+                    <!-- <img class="w-6 h-6 inline" src="/images/intertwined_fate.png" alt="fate" /> -->
+                  </div>
+                {/if}
+                {#if day.b}
+                  <div
+                    on:click={() => openBirthday(day.b, day.d, day.m)}
+                    class="cursor-pointer bg-purple-400 rounded-md inline-flex items-center px-2 ring-purple-400 ring-offset-1 ring-offset-background hover:ring-2"
+                  >
+                    {#each day.b as char}
+                      <img class="w-6 h-6 inline mr-2" src="/images/characters/{char}.png" alt={char} />
+                    {/each}
+                    <span class="text-sm">🎁</span>
+                  </div>
+                {/if}
+                {#if day.e}
+                  {#each day.e as event}
+                    <div
+                      on:mouseenter={() => hoverEvent(event.e.name)}
+                      on:mouseleave={() => hoverEvent('')}
+                      on:click={() => openDetail('events', event.e)}
+                      style="--tw-ring-color: {event.e.color}; --color: {event.e.color};"
+                      class="cursor-pointer rounded-md ring-offset-1 ring-offset-background h-6 w-full inline-flex items-center text-xs px-2 space-x-1 event-strip {event.s
+                        ? ''
+                        : 'end'} {hovered === event.e.name ? 'ring-2' : ''}"
+                    >
+                      <p class="max-h-full w-full overflow-hidden text-ellipsis whitespace-nowrap">{event.e.name}</p>
+                    </div>
+                  {/each}
+                {/if}
+              </div>
+            </div>
+          {/each}
+        </div>
+      {/each}
+    </div>
   </div>
 
   <h1 class="font-display px-4 md:px-8 font-black text-3xl text-white mt-8">{$t('calendar.lastAppearance')}</h1>
   <p class="text-gray-400 px-4 md:px-8 font-medium pb-4 -mt-2">
     ※ {$t('calendar.lastAppearanceDesc')}
   </p>
-  <div class="flex gap-4 px-8">
+  <div class="flex gap-4 md:px-8 px-4 md:flex-row flex-col">
     <div class="p-4 bg-background rounded-xl">
       <table class="text-white">
         <tr>
@@ -484,11 +486,13 @@
         {#each sortedLegendary as [char, val]}
           <tr on:click={() => goToBannerTime(lastBannerStart[char])}>
             <td class="cursor-pointer text-white py-1 border-t border-gray-700">
-              <img class="w-8 h-8" src="/images/characters/{char}.png" alt={char} />
+              <img class="w-8 h-8 min-w-[2rem]" src="/images/characters/{char}.png" alt={char} />
             </td>
-            <td class="cursor-pointer text-white px-4 py-1 border-t border-gray-700">{characters[char].name}</td>
+            <td class="cursor-pointer text-xs md:text-base text-white px-4 py-1 border-t border-gray-700"
+              >{characters[char].name}</td
+            >
             <td class="cursor-pointer text-white px-4 py-1 border-t border-gray-700 text-center">{val}</td>
-            <td class="cursor-pointer text-white py-1 border-t border-gray-700">
+            <td class="cursor-pointer text-xs md:text-base text-white py-1 border-t border-gray-700">
               {lastBannerDate[char].humanize(true)}
             </td>
           </tr>
@@ -508,11 +512,13 @@
         {#each sortedRare as [char, val]}
           <tr on:click={() => goToBannerTime(lastBannerStart[char])}>
             <td class="cursor-pointer text-white py-1 border-t border-gray-700">
-              <img class="w-8 h-8" src="/images/characters/{char}.png" alt={char} />
+              <img class="w-8 h-8 min-w-[2rem]" src="/images/characters/{char}.png" alt={char} />
             </td>
-            <td class="cursor-pointer text-white px-4 py-1 border-t border-gray-700">{characters[char].name}</td>
+            <td class="cursor-pointer text-xs md:text-base text-white px-4 py-1 border-t border-gray-700"
+              >{characters[char].name}</td
+            >
             <td class="cursor-pointer text-white px-4 py-1 border-t border-gray-700 text-center">{val}</td>
-            <td class="cursor-pointer text-white py-1 border-t border-gray-700">
+            <td class="cursor-pointer text-xs md:text-base text-white py-1 border-t border-gray-700">
               {lastBannerDate[char].humanize(true)}
             </td>
           </tr>
