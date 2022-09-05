@@ -328,7 +328,7 @@
             <div class="flex items-center justify-center md:justify-start md:mr-4">
               <button
                 on:click={() => toggleElement('pyro')}
-                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.pyro
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer pr-2 focus:outline-none {elementFilter.pyro
                   ? ''
                   : 'opacity-25'}"
               >
@@ -376,7 +376,7 @@
               </button>
               <button
                 on:click={() => toggleElement('geo')}
-                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.geo
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer pl-2 focus:outline-none {elementFilter.geo
                   ? ''
                   : 'opacity-25'}"
               >
