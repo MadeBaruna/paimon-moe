@@ -6,7 +6,7 @@
   import { locale, t } from 'svelte-i18n';
   import { onMount, tick } from 'svelte';
   import debounce from 'lodash.debounce';
-  import { mdiFilter } from '@mdi/js';
+  import { mdiFilter, mdiOpenInNew } from '@mdi/js';
 
   import Check from '../../components/Check.svelte';
   import Checkbox from '../../components/Checkbox.svelte';
@@ -24,6 +24,7 @@
 
   let achievement = data;
   let checkList = {};
+  let achievementChecklist = {};
   let list = [];
   let active = '0';
   let activeIndex = 0;
@@ -69,6 +70,7 @@
     { label: $t('fishing.mondstadt'), value: 'mondstadt' },
     { label: $t('fishing.liyue'), value: 'liyue' },
     { label: $t('fishing.inazuma'), value: 'inazuma' },
+    { label: $t('fishing.sumeru'), value: 'sumeru' },
   ];
   let typeFilter = [];
 
@@ -136,9 +138,11 @@
 
   const saveData = debounce(async () => {
     const data = checkList;
+    const dataChecklist = achievementChecklist;
 
     const prefix = getAccountPrefix();
     await updateSave(`${prefix}achievement`, data);
+    await updateSave(`${prefix}achievement-checklist`, dataChecklist);
   }, 2000);
 
   const search = debounce(async () => {
@@ -185,7 +189,7 @@
     let filterComission = [];
     for (const e of typeFilter) {
       if (e.value === 'commissions') {
-        filterComission = ['mondstadt', 'liyue', 'inazuma'];
+        filterComission = ['mondstadt', 'liyue', 'inazuma', 'sumeru'];
         break;
       }
 
@@ -269,6 +273,16 @@
     saveData();
   }
 
+  function toggleChecklist(achievementId, subindex) {
+    if (achievementChecklist[achievementId] === undefined) {
+      achievementChecklist[achievementId] = {};
+    }
+
+    achievementChecklist[achievementId][subindex] = !achievementChecklist[achievementId][subindex];
+
+    saveData();
+  }
+
   async function changeLocale(locale) {
     const data = await import(`../../data/achievement/${locale}.json`);
     achievement = data.default;
@@ -285,6 +299,11 @@
     if (achievementData !== null) {
       checkList = achievementData;
       migrateNewVersion();
+    }
+
+    const achievementChecklistData = await readSave(`${prefix}achievement-checklist`);
+    if (achievementChecklistData !== null) {
+      achievementChecklist = achievementChecklistData;
     }
   }
 
@@ -469,35 +488,62 @@
               {/each}
             </div>
           {:else}
-            <div class="bg-item rounded-xl px-2 py-1 text-white flex items-center">
-              <div class="flex-1 pr-1">
-                <p class="font-semibold">
-                  {el.name}
-                  <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
-                    {el.ver}
-                  </span>
-                  {#if el.commissions !== undefined}
-                    <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
-                      {$t('achievement.commissions')}
-                    </span>
-                    <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
-                      {$t(`fishing.${el.commissions}`)}
-                    </span>
-                  {/if}
-                </p>
-                <p class="text-gray-400">{el.desc}</p>
-              </div>
+            <div class="bg-item rounded-xl px-2 py-1 text-white">
               <div class="flex items-center">
-                <p class="mr-1">{el.reward}</p>
-                <img src="/images/primogem.png" class="w-8 h-8" alt="primogem" />
+                <div class="flex-1 pr-1">
+                  <p class="font-semibold">
+                    {el.name}
+                    <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                      {el.ver}
+                    </span>
+                    {#if el.commissions !== undefined}
+                      <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                        {$t('achievement.commissions')}
+                      </span>
+                      <span class="ml-1 rounded-xl bg-background px-2 text-gray-400 text-sm font-normal select-none">
+                        {$t(`fishing.${el.commissions}`)}
+                      </span>
+                    {/if}
+                  </p>
+                  <p class="text-gray-400">{el.desc}</p>
+                </div>
+                <div class="flex items-center">
+                  <p class="mr-1">{el.reward}</p>
+                  <img src="/images/primogem.png" class="w-8 h-8" alt="primogem" />
+                </div>
+                <div>
+                  <Check
+                    checked={list[index].checked}
+                    on:change={() => toggle({ index, primogem: el.reward })}
+                    inverted
+                  />
+                </div>
               </div>
-              <div>
-                <Check
-                  checked={list[index].checked}
-                  on:change={() => toggle({ index, primogem: el.reward })}
-                  inverted
-                />
-              </div>
+              {#if el.quest !== undefined}
+                <div class="bg-background p-4 mt-2 mb-1 rounded-xl md:w-fit">
+                  <p class="text-gray-400">
+                    <b>{$t('achievement.quest')}:</b>
+                    {#each el.quest.id as q, qi}
+                      <a
+                        class="hover:text-primary text-blue-300 mr-2 last:mr-0"
+                        href="https://genshin-impact.fandom.com/{q}"
+                        target="__blank">{el.quest.name[qi]} <Icon path={mdiOpenInNew} size={0.7} /></a
+                      >
+                    {/each}
+                  </p>
+                  {#if el.checklist !== undefined}
+                    <p class="text-gray-400 font-bold">{$t('achievement.checklist')}:</p>
+                    {#each el.checklist as ch, chIndex}
+                      <div class="text-gray-400 flex border-b border-gray-700 last:border-none">
+                        <Checkbox
+                          checked={achievementChecklist[el.id] ? achievementChecklist[el.id][chIndex] : false}
+                          on:change={() => toggleChecklist(el.id, chIndex)}><span>{ch}</span></Checkbox
+                        >
+                      </div>
+                    {/each}
+                  {/if}
+                </div>
+              {/if}
             </div>
           {/if}
         {/each}

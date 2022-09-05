@@ -841,7 +841,9 @@
     "commissions": "commissions",
     "version": "Version",
     "type": "Type",
-    "searchError": "Cannot find achievement: {query}"
+    "searchError": "Cannot find achievement: {query}",
+    "quest": "Quest",
+    "checklist": "Checklist"
   },
   "furnishing": {
     "title": "Furnishing",
