@@ -16,6 +16,7 @@
     "fishing": "Fishing",
     "radiantSpincrystal": "Radiant Spincrystal",
     "calendar": "Calendar",
+    "banners": "Character Reruns",
     "settings": "Settings",
     "donate": "Donate"
   },
@@ -976,6 +977,10 @@
     "lastAppearance": "Last Banner Appearance",
     "lastAppearanceDesc": "When is the character's last appearance on a limited banner",
     "bannerHover": "X Banner Ago",
-    "birthday": "Birthday"
+    "birthday": "Birthday",
+    "sortByTime": "Sorted by first release",
+    "sortByRerun": "Sorted by oldest re-run",
+    "bannerTitle": "Character Release Timeline",
+    "bannerSubtitle": "See when the character is released and their last re-run"
   }
 }

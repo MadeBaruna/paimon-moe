@@ -30,6 +30,7 @@ export const banners = {
       timezoneDependent: true,
       featured: ['venti'],
       featuredRare: ['barbara', 'fischl', 'xiangling'],
+      version: '1.0',
     },
     {
       name: 'Sparkling Steps',
@@ -40,6 +41,7 @@ export const banners = {
       color: '#CA360E',
       featured: ['klee'],
       featuredRare: ['xingqiu', 'sucrose', 'noelle'],
+      version: '1.0',
     },
     {
       name: 'Farewell of Snezhnaya',
@@ -51,6 +53,7 @@ export const banners = {
       timezoneDependent: true,
       featured: ['tartaglia'],
       featuredRare: ['ningguang', 'beidou', 'diona'],
+      version: '1.1',
     },
     {
       name: 'Gentry of Hermitage',
@@ -61,6 +64,7 @@ export const banners = {
       color: '#D1A55C',
       featured: ['zhongli'],
       featuredRare: ['xinyan', 'razor', 'chongyun'],
+      version: '1.1',
     },
     {
       name: 'Secretum Secretorum',
@@ -72,6 +76,7 @@ export const banners = {
       timezoneDependent: true,
       featured: ['albedo'],
       featuredRare: ['fischl', 'bennett', 'sucrose'],
+      version: '1.2',
     },
     {
       name: 'Adrift in the Harbor',
@@ -82,6 +87,7 @@ export const banners = {
       color: '#6994DF',
       featured: ['ganyu'],
       featuredRare: ['xingqiu', 'xiangling', 'noelle'],
+      version: '1.2',
     },
     {
       name: 'Invitation to Mundane Life',
@@ -93,6 +99,7 @@ export const banners = {
       timezoneDependent: true,
       featured: ['xiao'],
       featuredRare: ['diona', 'xinyan', 'beidou'],
+      version: '1.3',
     },
     {
       name: 'Dance of Lanterns',
@@ -103,6 +110,7 @@ export const banners = {
       color: '#AB6CD7',
       featured: ['keqing'],
       featuredRare: ['barbara', 'bennett', 'ningguang'],
+      version: '1.3',
     },
     {
       name: 'Moment of Bloom',
@@ -113,6 +121,7 @@ export const banners = {
       color: '#BF5042',
       featured: ['hu_tao'],
       featuredRare: ['xingqiu', 'xiangling', 'chongyun'],
+      version: '1.3',
     },
     {
       name: 'Ballad in Goblets',
@@ -124,6 +133,7 @@ export const banners = {
       featured: ['venti'],
       featuredRare: ['sucrose', 'razor', 'noelle'],
       timezoneDependent: true,
+      version: '1.4',
     },
     {
       name: 'Farewell of Snezhnaya',
@@ -134,6 +144,7 @@ export const banners = {
       color: '#50A3C0',
       featured: ['tartaglia'],
       featuredRare: ['rosaria', 'fischl', 'barbara'],
+      version: '1.4',
     },
     {
       name: 'Gentry of Hermitage',
@@ -145,6 +156,7 @@ export const banners = {
       featured: ['zhongli'],
       featuredRare: ['yanfei', 'noelle', 'diona'],
       timezoneDependent: true,
+      version: '1.5',
     },
     {
       name: 'Born of Ocean Swell',
@@ -155,6 +167,7 @@ export const banners = {
       color: '#A6D6E0',
       featured: ['eula'],
       featuredRare: ['xingqiu', 'beidou', 'xinyan'],
+      version: '1.5',
     },
     {
       name: 'Sparkling Steps',
@@ -166,6 +179,7 @@ export const banners = {
       featured: ['klee'],
       featuredRare: ['fischl', 'sucrose', 'barbara'],
       timezoneDependent: true,
+      version: '1.6',
     },
     {
       name: 'Leaves in the Wind',
@@ -176,6 +190,7 @@ export const banners = {
       color: '#8FFFDE',
       featured: ['kaedehara_kazuha'],
       featuredRare: ['bennett', 'razor', 'rosaria'],
+      version: '1.6',
     },
     {
       name: 'The Herons Court',
@@ -187,6 +202,7 @@ export const banners = {
       featured: ['kamisato_ayaka'],
       featuredRare: ['chongyun', 'ningguang', 'yanfei'],
       timezoneDependent: true,
+      version: '2.0',
     },
     {
       name: 'Tapestry of Golden Flames',
@@ -197,6 +213,7 @@ export const banners = {
       color: '#F7D69F',
       featured: ['yoimiya'],
       featuredRare: ['sayu', 'diona', 'xinyan'],
+      version: '2.0',
     },
     {
       name: 'Reign of Serenity',
@@ -208,6 +225,7 @@ export const banners = {
       featured: ['raiden_shogun'],
       featuredRare: ['xiangling', 'sucrose', 'kujou_sara'],
       timezoneDependent: true,
+      version: '2.1',
     },
     {
       name: 'Drifting Luminescence',
@@ -218,6 +236,7 @@ export const banners = {
       color: '#FF7B69',
       featured: ['sangonomiya_kokomi'],
       featuredRare: ['rosaria', 'beidou', 'xingqiu'],
+      version: '2.1',
     },
     {
       name: 'Farewell of Snezhnaya',
@@ -229,6 +248,7 @@ export const banners = {
       featured: ['tartaglia'],
       featuredRare: ['ningguang', 'chongyun', 'yanfei'],
       timezoneDependent: true,
+      version: '2.2',
     },
     {
       name: 'Moment of Bloom',
@@ -239,6 +259,7 @@ export const banners = {
       color: '#FF7966',
       featured: ['hu_tao'],
       featuredRare: ['thoma', 'diona', 'sayu'],
+      version: '2.2',
     },
     {
       name: 'Secretum Secretorum',
@@ -250,6 +271,7 @@ export const banners = {
       featured: ['albedo', 'eula'],
       featuredRare: ['rosaria', 'noelle', 'bennett'],
       timezoneDependent: true,
+      version: '2.3',
     },
     // {
     //   name: 'Born of Ocean Swell',
@@ -261,6 +283,7 @@ export const banners = {
     //   featured: ['eula'],
     //   featuredRare: ['rosaria', 'noelle', 'bennett'],
     //   timezoneDependent: true,
+    //   version: '2.3'
     // },
     {
       name: "Oni's Royale",
@@ -271,6 +294,7 @@ export const banners = {
       color: '#FFB455',
       featured: ['arataki_itto'],
       featuredRare: ['gorou', 'xiangling', 'barbara'],
+      version: '2.3',
     },
     {
       name: 'The Transcendent One Returns',
@@ -282,6 +306,7 @@ export const banners = {
       featured: ['shenhe', 'xiao'],
       featuredRare: ['yun_jin', 'ningguang', 'chongyun'],
       timezoneDependent: true,
+      version: '2.4',
     },
     // {
     //   name: 'Invitation to Mundane Life',
@@ -293,6 +318,7 @@ export const banners = {
     //   featured: ['shenhe', 'xiao'],
     //   featuredRare: ['yun_jin', 'ningguang', 'chongyun'],
     //   timezoneDependent: true,
+    //   version: '2.4'
     // },
     {
       name: 'Gentry of Hermitage',
@@ -303,6 +329,7 @@ export const banners = {
       color: '#FFF5BF',
       featured: ['zhongli', 'ganyu'],
       featuredRare: ['xingqiu', 'beidou', 'yanfei'],
+      version: '2.4',
     },
     // {
     //   name: 'Adrift in the Harbor',
@@ -324,6 +351,7 @@ export const banners = {
       featured: ['yae_miko'],
       featuredRare: ['thoma', 'diona', 'fischl'],
       timezoneDependent: true,
+      version: '2.5',
     },
     {
       name: 'Reign of Serenity',
@@ -334,6 +362,7 @@ export const banners = {
       color: '#D0AEF2',
       featured: ['raiden_shogun', 'sangonomiya_kokomi'],
       featuredRare: ['bennett', 'xinyan', 'kujou_sara'],
+      version: '2.5',
     },
     // {
     //   name: 'Drifting Luminescence',
@@ -344,6 +373,7 @@ export const banners = {
     //   color: '#53caf3',
     //   featured: ['raiden_shogun', 'sangonomiya_kokomi'],
     //   featuredRare: ['bennett', 'xinyan', 'kujou_sara'],
+    //   version: '2.5'
     // },
     {
       name: 'Azure Excursion',
@@ -355,6 +385,7 @@ export const banners = {
       featured: ['kamisato_ayato', 'venti'],
       featuredRare: ['yun_jin', 'xiangling', 'sucrose'],
       timezoneDependent: true,
+      version: '2.6',
     },
     // {
     //   name: 'Ballad in Goblets',
@@ -366,6 +397,7 @@ export const banners = {
     //   featured: ['kamisato_ayato', 'venti'],
     //   featuredRare: ['yun_jin', 'xiangling', 'sucrose'],
     //   timezoneDependent: true,
+    //   version: '2.6'
     // },
     {
       name: 'The Herons Court',
@@ -377,6 +409,7 @@ export const banners = {
       featured: ['kamisato_ayaka'],
       featuredRare: ['sayu', 'razor', 'rosaria'],
       timezoneDependentEnd: true,
+      version: '2.6',
     },
     {
       name: 'Discerner of Enigmas',
@@ -388,6 +421,7 @@ export const banners = {
       featured: ['yelan', 'xiao'],
       featuredRare: ['barbara', 'noelle', 'yanfei'],
       timezoneDependent: true,
+      version: '2.7',
     },
     // {
     //   name: 'Invitation to Mundane Life',
@@ -409,6 +443,7 @@ export const banners = {
       color: '#FFB455',
       featured: ['arataki_itto'],
       featuredRare: ['chongyun', 'gorou', 'kuki_shinobu'],
+      version: '2.7',
     },
     {
       name: 'Leaves in the Wind',
@@ -420,6 +455,7 @@ export const banners = {
       featured: ['kaedehara_kazuha', 'klee'],
       featuredRare: ['ningguang', 'thoma', 'shikanoin_heizou'],
       timezoneDependent: true,
+      version: '2.8',
     },
     // {
     //   name: "Sparkling Steps",
@@ -431,6 +467,7 @@ export const banners = {
     //   featured: ['kaedehara_kazuha', 'klee'],
     //   featuredRare: ['ningguang', 'thoma', 'shikanoin_heizou'],
     //   timezoneDependent: true,
+    //   version: '2.8'
     // },
     {
       name: 'Tapestry of Golden Flames',
@@ -441,6 +478,7 @@ export const banners = {
       color: '#fc8976',
       featured: ['yoimiya'],
       featuredRare: ['yun_jin', 'xinyan', 'bennett'],
+      version: '2.8',
     },
     {
       name: 'Viridescent Vigil',
@@ -452,6 +490,7 @@ export const banners = {
       featured: ['tighnari', 'zhongli'],
       featuredRare: ['collei', 'fischl', 'diona'],
       timezoneDependent: true,
+      version: '3.0',
     },
     // {
     //   name: 'Gentry of Hermitage',
@@ -463,6 +502,7 @@ export const banners = {
     //   featured: ['tighnari', 'zhongli'],
     //   featuredRare: ['collei', 'fischl', 'diona'],
     //   timezoneDependent: true,
+    //   version: '3.0'
     // },
   ],
   weapons: [

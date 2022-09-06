@@ -27,6 +27,7 @@
   import { getAccountPrefix } from '../../stores/account';
   import { readSave } from '../../stores/saveManager';
   import { bannersDual } from '../../data/bannersDual';
+  import Ad from '../../components/Ad.svelte';
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -527,6 +528,8 @@
     </div>
   </div>
 </div>
+<Ad type="desktop" variant="lb" id="2" />
+<Ad type="mobile" variant="lb" id="1" />
 
 <style lang="postcss">
   .event-strip {

@@ -10,6 +10,7 @@ export const bannersDual = {
       featured: ['albedo', 'eula'],
       featuredRare: ['rosaria', 'noelle', 'bennett'],
       timezoneDependent: true,
+      version: '2.3',
     },
     {
       name: 'Born of Ocean Swell',
@@ -21,6 +22,7 @@ export const bannersDual = {
       featured: ['albedo', 'eula'],
       featuredRare: ['rosaria', 'noelle', 'bennett'],
       timezoneDependent: true,
+      version: '2.3',
     },
   ],
   'The Transcendent One Returns 1': [
@@ -34,6 +36,7 @@ export const bannersDual = {
       featured: ['shenhe', 'xiao'],
       featuredRare: ['yun_jin', 'ningguang', 'chongyun'],
       timezoneDependent: true,
+      version: '2.4',
     },
     {
       name: 'Invitation to Mundane Life',
@@ -45,6 +48,7 @@ export const bannersDual = {
       featured: ['shenhe', 'xiao'],
       featuredRare: ['yun_jin', 'ningguang', 'chongyun'],
       timezoneDependent: true,
+      version: '2.4',
     },
   ],
   'Gentry of Hermitage 3': [
@@ -57,6 +61,7 @@ export const bannersDual = {
       color: '#FFF5BF',
       featured: ['zhongli', 'ganyu'],
       featuredRare: ['xingqiu', 'beidou', 'yanfei'],
+      version: '2.4',
     },
     {
       name: 'Adrift in the Harbor',
@@ -67,6 +72,7 @@ export const bannersDual = {
       color: '#FFF5BF',
       featured: ['zhongli', 'ganyu'],
       featuredRare: ['xingqiu', 'beidou', 'yanfei'],
+      version: '2.4',
     },
   ],
   'Reign of Serenity 2': [
@@ -79,6 +85,7 @@ export const bannersDual = {
       color: '#D0AEF2',
       featured: ['raiden_shogun', 'sangonomiya_kokomi'],
       featuredRare: ['bennett', 'xinyan', 'kujou_sara'],
+      version: '2.5',
     },
     {
       name: 'Drifting Luminescence',
@@ -89,6 +96,7 @@ export const bannersDual = {
       color: '#53caf3',
       featured: ['raiden_shogun', 'sangonomiya_kokomi'],
       featuredRare: ['bennett', 'xinyan', 'kujou_sara'],
+      version: '2.5',
     },
   ],
   'Azure Excursion 1': [
@@ -102,6 +110,7 @@ export const bannersDual = {
       featured: ['kamisato_ayato', 'venti'],
       featuredRare: ['yun_jin', 'xiangling', 'sucrose'],
       timezoneDependent: true,
+      version: '2.6',
     },
     {
       name: 'Ballad in Goblets',
@@ -113,6 +122,7 @@ export const bannersDual = {
       featured: ['kamisato_ayato', 'venti'],
       featuredRare: ['yun_jin', 'xiangling', 'sucrose'],
       timezoneDependent: true,
+      version: '2.6',
     },
   ],
   'Discerner of Enigmas 1': [
@@ -126,6 +136,7 @@ export const bannersDual = {
       featured: ['yelan', 'xiao'],
       featuredRare: ['barbara', 'noelle', 'yanfei'],
       timezoneDependent: true,
+      version: '2.7',
     },
     {
       name: 'Invitation to Mundane Life',
@@ -137,6 +148,7 @@ export const bannersDual = {
       featured: ['yelan', 'xiao'],
       featuredRare: ['barbara', 'noelle', 'yanfei'],
       timezoneDependent: true,
+      version: '2.7',
     },
   ],
   'Leaves in the Wind 2': [
@@ -150,6 +162,7 @@ export const bannersDual = {
       featured: ['kaedehara_kazuha', 'klee'],
       featuredRare: ['ningguang', 'thoma', 'shikanoin_heizou'],
       timezoneDependent: true,
+      version: '2.8',
     },
     {
       name: 'Sparkling Steps',
@@ -161,6 +174,7 @@ export const bannersDual = {
       featured: ['kaedehara_kazuha', 'klee'],
       featuredRare: ['ningguang', 'thoma', 'shikanoin_heizou'],
       timezoneDependent: true,
+      version: '2.8',
     },
   ],
   'Viridescent Vigil 1': [
@@ -174,6 +188,7 @@ export const bannersDual = {
       featured: ['tighnari', 'zhongli'],
       featuredRare: ['collei', 'fischl', 'diona'],
       timezoneDependent: true,
+      version: '3.0',
     },
     {
       name: 'Gentry of Hermitage',
@@ -185,6 +200,7 @@ export const bannersDual = {
       featured: ['tighnari', 'zhongli'],
       featuredRare: ['collei', 'fischl', 'diona'],
       timezoneDependent: true,
+      version: '3.0',
     },
   ],
 };
