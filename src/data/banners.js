@@ -516,6 +516,7 @@ export const banners = {
       timezoneDependent: true,
       featured: ['aquila_favonia', 'amos_bow'],
       featuredRare: ['the_flute', 'the_bell', 'the_widsith', 'the_stringless', 'favonius_lance'],
+      version: '1.0',
     },
     {
       name: 'Epitome Invocation',
@@ -532,6 +533,7 @@ export const banners = {
         'sacrificial_fragments',
         'dragons_bane',
       ],
+      version: '1.0',
     },
     {
       name: 'Epitome Invocation',
@@ -543,6 +545,7 @@ export const banners = {
       timezoneDependent: true,
       featured: ['skyward_harp', 'memory_of_dust'],
       featuredRare: ['the_flute', 'rainslasher', 'eye_of_perception', 'rust', 'favonius_lance'],
+      version: '1.1',
     },
     {
       name: 'Epitome Invocation',
@@ -553,6 +556,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['vortex_vanquisher', 'the_unforged'],
       featuredRare: ['lions_roar', 'the_bell', 'favonius_codex', 'favonius_warbow', 'dragons_bane'],
+      version: '1.1',
     },
     {
       name: 'Epitome Invocation',
@@ -570,6 +574,7 @@ export const banners = {
         'sacrificial_fragments',
         'the_stringless',
       ],
+      version: '1.2',
     },
     {
       name: 'Epitome Invocation',
@@ -580,6 +585,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['amos_bow', 'skyward_pride'],
       featuredRare: ['sacrificial_sword', 'the_bell', 'dragons_bane', 'eye_of_perception', 'favonius_warbow'],
+      version: '1.2',
     },
     {
       name: 'Epitome Invocation',
@@ -591,6 +597,7 @@ export const banners = {
       timezoneDependent: true,
       featured: ['primordial_jade_winged-spear', 'primordial_jade_cutter'],
       featuredRare: ['the_flute', 'sacrificial_greatsword', 'rust', 'eye_of_perception', 'favonius_lance'],
+      version: '1.3',
     },
     {
       name: 'Epitome Invocation',
@@ -601,6 +608,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['wolfs_gravestone', 'staff_of_homa'],
       featuredRare: ['lithic_blade', 'lithic_spear', 'lions_roar', 'sacrificial_bow', 'the_widsith'],
+      version: '1.3',
     },
     {
       name: 'Epitome Invocation',
@@ -612,6 +620,7 @@ export const banners = {
       timezoneDependent: true,
       featured: ['elegy_for_the_end', 'skyward_blade'],
       featuredRare: ['the_alley_flash', 'wine_and_song', 'favonius_greatsword', 'favonius_warbow', 'dragons_bane'],
+      version: '1.4',
     },
     {
       name: 'Epitome Invocation',
@@ -622,6 +631,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['skyward_harp', 'lost_prayer_to_the_sacred_winds'],
       featuredRare: ['alley_hunter', 'favonius_codex', 'favonius_lance', 'sacrificial_greatsword', 'favonius_sword'],
+      version: '1.4',
     },
     {
       name: 'Epitome Invocation',
@@ -633,6 +643,7 @@ export const banners = {
       timezoneDependent: true,
       featured: ['summit_shaper', 'memory_of_dust'],
       featuredRare: ['lithic_blade', 'lithic_spear', 'sacrificial_bow', 'eye_of_perception', 'the_flute'],
+      version: '1.5',
     },
     {
       name: 'Epitome Invocation',
@@ -643,6 +654,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['song_of_broken_pines', 'aquila_favonia'],
       featuredRare: ['rust', 'sacrificial_fragments', 'dragons_bane', 'rainslasher', 'sacrificial_sword'],
+      version: '1.5',
     },
     {
       name: 'Epitome Invocation',
@@ -654,6 +666,7 @@ export const banners = {
       featured: ['lost_prayer_to_the_sacred_winds', 'skyward_pride'],
       featuredRare: ['mitternachts_waltz', 'lions_roar', 'the_bell', 'favonius_lance', 'the_widsith'],
       timezoneDependent: true,
+      version: '1.6',
     },
     {
       name: 'Epitome Invocation',
@@ -664,6 +677,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['freedom-sworn', 'skyward_atlas'],
       featuredRare: ['the_alley_flash', 'wine_and_song', 'alley_hunter', 'favonius_greatsword', 'dragons_bane'],
+      version: '1.6',
     },
     {
       name: 'Epitome Invocation',
@@ -675,6 +689,7 @@ export const banners = {
       featured: ['mistsplitter_reforged', 'skyward_spine'],
       featuredRare: ['favonius_sword', 'sacrificial_greatsword', 'favonius_lance', 'favonius_codex', 'the_stringless'],
       timezoneDependent: true,
+      version: '2.0',
     },
     {
       name: 'Epitome Invocation',
@@ -685,6 +700,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['thundering_pulse', 'skyward_blade'],
       featuredRare: ['sacrificial_sword', 'rainslasher', 'dragons_bane', 'sacrificial_fragments', 'favonius_warbow'],
+      version: '2.0',
     },
     {
       name: 'Epitome Invocation',
@@ -696,6 +712,7 @@ export const banners = {
       featured: ['engulfing_lightning', 'the_unforged'],
       featuredRare: ['lions_roar', 'the_bell', 'favonius_lance', 'the_widsith', 'sacrificial_bow'],
       timezoneDependent: true,
+      version: '2.1',
     },
     {
       name: 'Epitome Invocation',
@@ -706,6 +723,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['primordial_jade_cutter', 'everlasting_moonglow'],
       featuredRare: ['the_flute', 'favonius_greatsword', 'dragons_bane', 'favonius_codex', 'the_stringless'],
+      version: '2.1',
     },
     {
       name: 'Epitome Invocation',
@@ -717,6 +735,7 @@ export const banners = {
       featured: ['polar_star', 'memory_of_dust'],
       featuredRare: ['akuoumaru', 'favonius_sword', 'favonius_lance', 'eye_of_perception', 'rust'],
       timezoneDependent: true,
+      version: '2.2',
     },
     {
       name: 'Epitome Invocation',
@@ -727,6 +746,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['staff_of_homa', 'elegy_for_the_end'],
       featuredRare: ['wavebreakers_fin', 'mouuns_moon', 'sacrificial_sword', 'rainslasher', 'the_widsith'],
+      version: '2.2',
     },
     {
       name: 'Epitome Invocation',
@@ -738,6 +758,7 @@ export const banners = {
       featured: ['freedom-sworn', 'song_of_broken_pines'],
       featuredRare: ['wine_and_song', 'alley_hunter', 'lions_roar', 'sacrificial_greatsword', 'dragons_bane'],
       timezoneDependent: true,
+      version: '2.3',
     },
     {
       name: 'Epitome Invocation',
@@ -749,6 +770,7 @@ export const banners = {
       featured: ['redhorn_stonethresher', 'skyward_harp'],
       featuredRare: ['the_alley_flash', 'mitternachts_waltz', 'the_bell', 'favonius_lance', 'sacrificial_fragments'],
       timezoneDependent: true,
+      version: '2.3',
     },
     {
       name: 'Epitome Invocation',
@@ -760,6 +782,7 @@ export const banners = {
       featured: ['calamity_queller', 'primordial_jade_winged-spear'],
       featuredRare: ['lithic_spear', 'the_flute', 'favonius_greatsword', 'the_widsith', 'favonius_warbow'],
       timezoneDependent: true,
+      version: '2.4',
     },
     {
       name: 'Epitome Invocation',
@@ -770,6 +793,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['amos_bow', 'vortex_vanquisher'],
       featuredRare: ['lithic_blade', 'favonius_sword', 'dragons_bane', 'favonius_codex', 'sacrificial_bow'],
+      version: '2.4',
     },
     {
       name: 'Epitome Invocation',
@@ -781,6 +805,7 @@ export const banners = {
       featured: ['kaguras_verity', 'primordial_jade_cutter'],
       featuredRare: ['wavebreakers_fin', 'sacrificial_sword', 'rainslasher', 'eye_of_perception', 'the_stringless'],
       timezoneDependent: true,
+      version: '2.5',
     },
     {
       name: 'Epitome Invocation',
@@ -791,6 +816,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['engulfing_lightning', 'everlasting_moonglow'],
       featuredRare: ['akuoumaru', 'mouuns_moon', 'lions_roar', 'favonius_lance', 'sacrificial_fragments'],
+      version: '2.5',
     },
     {
       name: 'Epitome Invocation',
@@ -802,6 +828,7 @@ export const banners = {
       featured: ['haran_geppaku_futsu', 'elegy_for_the_end'],
       featuredRare: ['the_flute', 'sacrificial_greatsword', 'dragons_bane', 'the_widsith', 'rust'],
       timezoneDependent: true,
+      version: '2.6',
     },
     {
       name: 'Epitome Invocation',
@@ -813,6 +840,7 @@ export const banners = {
       featured: ['mistsplitter_reforged', 'the_unforged'],
       featuredRare: ['favonius_sword', 'the_bell', 'favonius_lance', 'favonius_codex', 'favonius_warbow'],
       timezoneDependentEnd: true,
+      version: '2.6',
     },
     {
       name: 'Epitome Invocation',
@@ -830,6 +858,7 @@ export const banners = {
         'sacrificial_bow',
       ],
       timezoneDependent: true,
+      version: '2.7',
     },
     {
       name: 'Epitome Invocation',
@@ -840,6 +869,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['redhorn_stonethresher', 'memory_of_dust'],
       featuredRare: ['lithic_blade', 'lions_roar', 'dragons_bane', 'sacrificial_fragments', 'the_stringless'],
+      version: '2.7',
     },
     {
       name: 'Epitome Invocation',
@@ -851,6 +881,7 @@ export const banners = {
       featured: ['freedom-sworn', 'lost_prayer_to_the_sacred_winds'],
       featuredRare: ['the_alley_flash', 'mitternachts_waltz', 'rainslasher', 'favonius_lance', 'the_widsith'],
       timezoneDependent: true,
+      version: '2.8',
     },
     {
       name: 'Epitome Invocation',
@@ -861,6 +892,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['thundering_pulse', 'summit_shaper'],
       featuredRare: ['wine_and_song', 'alley_hunter', 'the_flute', 'sacrificial_greatsword', 'dragons_bane'],
+      version: '2.8',
     },
     {
       name: 'Epitome Invocation',
@@ -872,6 +904,7 @@ export const banners = {
       featured: ['hunters_path', 'vortex_vanquisher'],
       featuredRare: ['favonius_sword', 'the_bell', 'favonius_lance', 'favonius_codex', 'the_stringless'],
       timezoneDependent: true,
+      version: '3.0',
     },
   ],
 };

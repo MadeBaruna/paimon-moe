@@ -4,6 +4,7 @@
 
   import { banners } from '../../data/banners';
   import { characters } from '../../data/characters';
+  import { weaponList } from '../../data/weaponList';
 
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
@@ -15,13 +16,19 @@
   let length = 0;
   let versions = [];
   let rows = [[]];
+  let rowsWep = [[]];
   let names = [{ name: '', length: 0 }];
+  let namesWep = [{ name: '', length: 0 }];
   let hovered = -1;
 
   let __rows5;
   let __rows4;
   let __names5;
   let __names4;
+  let __rowsWep5;
+  let __rowsWep4;
+  let __namesWep5;
+  let __namesWep4;
 
   let sort = false;
 
@@ -101,8 +108,81 @@
     __names5 = _names5;
     __names4 = _names4;
 
-    rows = [..._rows5, new Array(length).fill({ l: '' }), ..._rows4];
-    names = [..._names5, { name: '', length: 0 }, ..._names4];
+    rows = [..._rows5, new Array(length).fill({ l: '' }), ..._rows4, new Array(length).fill({ l: '' })];
+    names = [..._names5, { name: '', length: 0 }, ..._names4, { name: '', length: 0 }];
+
+    await processWeapons();
+  }
+
+  async function processWeapons() {
+    const weaponsBanners = [...banners.weapons];
+    weaponsBanners.splice(8, 0, banners.weapons[7]);
+
+    let _chars5 = {};
+    let _chars4 = {};
+    let _rows5 = [];
+    let _rows4 = [];
+    let _names5 = [];
+    let _names4 = [];
+
+    let pos5 = 0;
+    let pos4 = 0;
+    let len = 0;
+
+    for (const banner of weaponsBanners) {
+      for (const ch of Object.keys(_chars5)) {
+        _chars5[ch].length++;
+        _names5[_chars5[ch].pos].length++;
+        _rows5[_chars5[ch].pos][len] = { l: _chars5[ch].length, m: 15 };
+      }
+      for (const ch of Object.keys(_chars4)) {
+        _chars4[ch].length++;
+        _names4[_chars4[ch].pos].length++;
+        _rows4[_chars4[ch].pos][len] = { l: _chars4[ch].length, m: 9 };
+      }
+
+      for (const char of banner.featured) {
+        if (_chars5[char] === undefined) {
+          _chars5[char] = {
+            pos: pos5,
+            length: 0,
+          };
+          _names5[pos5] = { name: weaponList[char].name, length: 0 };
+          _rows5[pos5] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
+          pos5++;
+        } else {
+          _rows5[_chars5[char].pos][len] = { char, l: 0 };
+          _names5[_chars5[char].pos].length = 0;
+          _chars5[char].length = 0;
+        }
+      }
+
+      for (const char of banner.featuredRare) {
+        if (_chars4[char] === undefined) {
+          _chars4[char] = {
+            pos: pos4,
+            length: 0,
+          };
+          _names4[pos4] = { name: weaponList[char].name, length: 0 };
+          _rows4[pos4] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
+          pos4++;
+        } else {
+          _rows4[_chars4[char].pos][len] = { char, l: 0 };
+          _names4[_chars4[char].pos].length = 0;
+          _chars4[char].length = 0;
+        }
+      }
+
+      len++;
+    }
+
+    __rowsWep5 = _rows5;
+    __rowsWep4 = _rows4;
+    __namesWep5 = _names5;
+    __namesWep4 = _names4;
+
+    rowsWep = [..._rows5, new Array(length).fill({ l: '' }), ..._rows4];
+    namesWep = [..._names5, { name: '', length: 0 }, ..._names4];
 
     await tick();
 
@@ -126,11 +206,15 @@
     const _rows4 = [...__rows4].sort((a, b) => b[length - 1].l - a[length - 1].l);
     const _names5 = [...__names5].sort((a, b) => b.length - a.length);
     const _names4 = [...__names4].sort((a, b) => b.length - a.length);
+    const _rowsWep5 = [...__rowsWep5].sort((a, b) => b[length - 1].l - a[length - 1].l);
+    const _rowsWep4 = [...__rowsWep4].sort((a, b) => b[length - 1].l - a[length - 1].l);
+    const _namesWep5 = [...__namesWep5].sort((a, b) => b.length - a.length);
+    const _namesWep4 = [...__namesWep4].sort((a, b) => b.length - a.length);
 
-    console.log(_rows5);
-
-    rows = [..._rows5, new Array(length).fill({ l: '' }), ..._rows4];
-    names = [..._names5, { name: '', length: 0 }, ..._names4];
+    rows = [..._rows5, new Array(length).fill({ l: '' }), ..._rows4, new Array(length).fill({ l: '' })];
+    names = [..._names5, { name: '', length: 0 }, ..._names4, { name: '', length: 0 }];
+    rowsWep = [..._rowsWep5, new Array(length).fill({ l: '' }), ..._rowsWep4];
+    namesWep = [..._namesWep5, { name: '', length: 0 }, ..._namesWep4];
   }
 
   function getColor(index, max) {
@@ -172,7 +256,7 @@
     <table class="table-fixed">
       <tbody>
         <tr>
-          {#each versions as v, index}
+          {#each versions as v}
             <td class="text-center border border-gray-600 text-white font-bold relative" colspan={v.length}
               >{v.version}</td
             >
@@ -193,7 +277,27 @@
                 >
               {/if}
             {/each}
-            <td class="border border-gray-600 text-white px-2">{$t(names[rowIndex].name)}</td>
+            <td class="border border-gray-600 text-white px-2 text-xs">{$t(names[rowIndex].name)}</td>
+          </tr>
+        {/each}
+        {#each rowsWep as r, rowIndex}
+          <tr>
+            {#each r as col, index}
+              {#if col.char}
+                <td on:mouseenter={() => onHover(index)} class="cell {hovered === index ? 'hovered' : ''}">
+                  <img class="w-full h-full" src="/images/weapons/{col.char}.png" alt={col.char} />
+                </td>
+              {:else}
+                <td
+                  on:mouseenter={() => onHover(index)}
+                  class="cell {hovered === index ? 'hovered' : ''}"
+                  style="background: {getColor(col.l, col.m)};">{col.l}</td
+                >
+              {/if}
+            {/each}
+            <td class="border border-gray-600 text-white px-2 text-xs max-w-[2rem] whitespace-pre-wrap"
+              >{$t(namesWep[rowIndex].name)}</td
+            >
           </tr>
         {/each}
       </tbody>
