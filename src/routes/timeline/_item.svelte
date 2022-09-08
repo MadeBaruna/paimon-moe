@@ -14,8 +14,8 @@
 
   $: prevDiff = prev !== null ? event.start.diff(prev.end, 'hour') : Number.MAX_VALUE;
   $: nextDiff = next !== null ? next.start.diff(event.end, 'hour') : Number.MAX_VALUE;
-  $: prevNearby = prev !== null && prevDiff < 24;
-  $: nextNearby = next !== null && nextDiff < 24;
+  $: prevNearby = prev !== null && prevDiff < 48;
+  $: nextNearby = next !== null && nextDiff < 48;
   $: started = now.isAfter(event.start);
   $: ended = now.isAfter(event.end);
   $: diffStart = event.start.diff(now);

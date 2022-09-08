@@ -1599,6 +1599,151 @@ export const characters = {
     },
     element: elements.cryo,
   },
+  dori: {
+    id: 'dori',
+    name: 'Dori',
+    rarity: 4,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 0,
+      atk: 0,
+      def: 0,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 3,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.thunderclap_fruitcore,
+            amount: 2,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 10,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.thunderclap_fruitcore,
+            amount: 4,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 20,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.thunderclap_fruitcore,
+            amount: 8,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 30,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.thunderclap_fruitcore,
+            amount: 12,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 45,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.thunderclap_fruitcore,
+            amount: 20,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 60,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.faded_red_satin, itemList.trimmed_red_silk, itemList.rich_red_brocade],
+      book: [itemList.teachings_of_ingenuity, itemList.guide_to_ingenuity, itemList.philosophies_of_ingenuity],
+      boss: itemList.thunderclap_fruitcore,
+    },
+    element: elements.electro,
+  },
   eula: {
     id: 'eula',
     name: 'Eula',

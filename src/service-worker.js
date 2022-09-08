@@ -8,9 +8,9 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 const IMAGE_URL = `${self.location.origin}/images/`;
 
 const changelog = [
+  'Update timelines',
   'Add character & weapons release timeline (Database > Character Reruns)',
   'Add checklist to achievement',
-  'Update achievement commission list',
 ];
 
 const channel = new BroadcastChannel('paimonmoe-sw');

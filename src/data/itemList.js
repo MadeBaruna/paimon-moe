@@ -952,6 +952,7 @@ export const itemList = {
 
   majestic_hooked_beak: { id: 'majestic_hooked_beak', name: 'Majestic Hooked Beak', rarity: 5 },
   nilotpala_lotus: { id: 'nilotpala_lotus', name: 'Nilotpala Lotus' },
+  kalpalata_lotus: { id: 'kalpalata_lotus', name: 'Kalpalata Lotus' },
 
   fungal_spores: {
     id: 'fungal_spores',
@@ -1058,5 +1059,12 @@ export const itemList = {
     day: ['tuesday', 'friday'],
     rarity: 4,
     parent: 'oasis_gardens_reminiscence',
+  },
+
+  thunderclap_fruitcore: {
+    id: 'thunderclap_fruitcore',
+    name: 'Thunderclap Fruitcore',
+    rarity: 5,
+    parent: 'vajrada_amethyst_sliver',
   },
 };

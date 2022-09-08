@@ -203,4 +203,28 @@ export const bannersDual = {
       version: '3.0',
     },
   ],
+  'Adrift in the Harbor 3': [
+    {
+      name: 'Adrift in the Harbor',
+      image: 3,
+      shortName: 'Ganyu',
+      start: '2022-09-09 18:00:00',
+      end: '2022-09-27 14:59:59',
+      color: '#ceebf3',
+      featured: ['ganyu', 'sangonomiya_kokomi'],
+      featuredRare: ['xingqiu', 'sucrose', 'dori'],
+      version: '3.0',
+    },
+    {
+      name: 'Drifting Luminescence',
+      image: 3,
+      shortName: 'Kokomi',
+      start: '2022-09-09 18:00:00',
+      end: '2022-09-27 14:59:59',
+      color: '#ceebf3',
+      featured: ['ganyu', 'sangonomiya_kokomi'],
+      featuredRare: ['xingqiu', 'sucrose', 'dori'],
+      version: '3.0',
+    },
+  ],
 };
