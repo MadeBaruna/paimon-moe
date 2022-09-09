@@ -1605,9 +1605,9 @@ export const characters = {
     rarity: 4,
     weapon: weapons.claymore,
     stats: {
-      hp: 0,
-      atk: 0,
-      def: 0,
+      hp: 12397,
+      atk: 223,
+      def: 723,
     },
     ascension: [
       {
@@ -1740,7 +1740,7 @@ export const characters = {
     material: {
       material: [itemList.faded_red_satin, itemList.trimmed_red_silk, itemList.rich_red_brocade],
       book: [itemList.teachings_of_ingenuity, itemList.guide_to_ingenuity, itemList.philosophies_of_ingenuity],
-      boss: itemList.thunderclap_fruitcore,
+      boss: itemList.bloodjade_branch,
     },
     element: elements.electro,
   },

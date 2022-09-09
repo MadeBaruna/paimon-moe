@@ -4,7 +4,7 @@
   "description": "A collection of tools to help playing Genshin Impact",
   "version": "0.0.1",
   "scripts": {
-    "dev": "vite dev --port 3000",
+    "dev": "vite dev --port 4000",
     "build": "NODE_OPTIONS=--max_old_space_size=4096 vite build",
     "preview": "vite preview",
     "start": "node build"

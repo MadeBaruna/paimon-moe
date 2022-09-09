@@ -8,6 +8,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 const IMAGE_URL = `${self.location.origin}/images/`;
 
 const changelog = [
+  'Update banner',
   'Update timelines',
   'Add character & weapons release timeline (Database > Character Reruns)',
   'Add checklist to achievement',

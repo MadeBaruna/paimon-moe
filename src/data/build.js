@@ -2857,7 +2857,7 @@ export const builds = {
   },
   sucrose: {
     roles: {
-      'EM BUILD': {
+      EM: {
         recommended: true,
         weapons: [
           {

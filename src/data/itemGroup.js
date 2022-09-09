@@ -353,4 +353,8 @@ export const itemGroup = {
     name: 'Chaos Storage',
     items: [itemList.chaos_storage, itemList.chaos_module, itemList.chaos_bolt],
   },
+  faded_red_satin: {
+    name: 'Satin',
+    items: [itemList.faded_red_satin, itemList.trimmed_red_silk, itemList.rich_red_brocade],
+  },
 };

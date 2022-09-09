@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    collei: {
-      name: 'Collei',
-      rarity: 'rare',
+    ganyu: {
+      name: 'Ganyu',
+      rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    tighnari: {
-      name: 'Tighnari',
+    sangonomiya_kokomi: {
+      name: 'Sangonomiya Kokomi',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300034;
-  const image = 'tighnari_collei.png';
+  const bannerId = 300035;
+  const image = 'ganyukokomi.png';
   const width = 800;
-  const height = 593;
+  const height = 515;
 
   let loading = true;
   let user = '';
