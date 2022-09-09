@@ -531,7 +531,7 @@
                     {#each el.quest.id as q, qi}
                       <a
                         class="hover:text-primary text-blue-300 mr-2 last:mr-0"
-                        href="https://genshin-impact.fandom.com/{q}"
+                        href="https://genshin-impact.fandom.com/wiki/{q.replace(/\?/g, '%3F')}"
                         target="__blank">{el.quest.name[qi]} <Icon path={mdiOpenInNew} size={0.7} /></a
                       >
                     {/each}
