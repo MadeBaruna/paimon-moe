@@ -16,6 +16,7 @@
     "fishing": "Pesca",
     "radiantSpincrystal": "",
     "calendar": "",
+    "banners": "",
     "settings": "Configurações",
     "donate": "Doar"
   },
@@ -229,6 +230,8 @@
       "method": {
         "pc": "",
         "pc3": "",
+        "pc4": "",
+        "pc5": "",
         "android": "",
         "android2": "",
         "android3": ""
@@ -257,6 +260,17 @@
           "Cole o link aqui... https://webstatic..."
         ],
         "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "pc5": [
+          "",
           "",
           "",
           "",
@@ -871,7 +885,9 @@
     "commissions": "Comissões",
     "version": "Versão",
     "type": "Tipo",
-    "searchError": "Não foi possível encontrar a conquista: {query}"
+    "searchError": "Não foi possível encontrar a conquista: {query}",
+    "quest": "",
+    "checklist": ""
   },
   "furnishing": {
     "title": "Mobília",
@@ -967,6 +983,7 @@
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
     "chasm": "",
+    "sumeru": "",
     "setEmpty": "Marcar como vazio",
     "emptyTime": "Tempo em que o local foi esvaziado:",
     "clear": "Limpar",
@@ -991,6 +1008,10 @@
     "lastAppearance": "",
     "lastAppearanceDesc": "",
     "bannerHover": "",
-    "birthday": ""
+    "birthday": "",
+    "sortByTime": "",
+    "sortByRerun": "",
+    "bannerTitle": "",
+    "bannerSubtitle": ""
   }
 }

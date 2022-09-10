@@ -15,7 +15,8 @@
     "artifacts": "Artefakte",
     "fishing": "Angeln",
     "radiantSpincrystal": "Strahlender Drehkristall",
-    "calendar": "",
+    "calendar": "Kalender",
+    "banners": "Figuren-Reruns",
     "settings": "Einstellungen",
     "donate": "Spenden"
   },
@@ -115,12 +116,12 @@
     "build": "Build",
     "source": "Figuren builds vom Genshin Helper Team",
     "faq": "Sternbildanzahl wird aus deinem Gebetsverlauf berechnet. Wenn also dein alter Gebetsverlauf bereits vergangen ist oder du die Figur beim Händler oder bei einer Aktion gekauft hast, ist die Anzahl möglicherweise nicht korrekt! Du kannst sie aber manuell bearbeiten, indem du neben dem Figurnamen auf das Stift-Symbol klickst.",
-    "mainStats": "",
-    "subStats": "",
-    "talentPriority": "",
-    "abilityTip": "",
-    "weapons": "",
-    "artifacts": ""
+    "mainStats": "HAUPTSTATISTIK",
+    "subStats": "SUB STATS",
+    "talentPriority": "VORGEZOGENE TALENT",
+    "abilityTip": "FÄHIGKEIT TIPPS",
+    "weapons": "WAFFEN",
+    "artifacts": "ARTEFAKTE"
   },
   "wish": {
     "title": "Gebetszähler",
@@ -191,8 +192,8 @@
         "Sie können Drive Sync in Einstellungen auch aktivieren, um Ihren Gebetsverlauf in Google Drive zu synchronisieren",
         "Bitte beachten Sie, dass der alte Feedback-Link nicht mehr funktioniert, folgen Sie bitte den neuen Anweisungen unten!"
       ],
-      "notice30": "",
-      "soon30": "",
+      "notice30": "Gebetsverlauf wurde in v3.0 geändert, bitte den neuen Anweisungen unten folgen!",
+      "soon30": "Text-Anleitung kommt bald, schaue bitte derzeit das Video oben!",
       "faqs": {
         "title": "Gebetsverlauf importieren FAQ",
         "q1": "Wie funktioniert es?",
@@ -227,11 +228,13 @@
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
       "method": {
-        "pc": "",
-        "pc3": "",
-        "android": "",
-        "android2": "",
-        "android3": ""
+        "pc": "1. Methode",
+        "pc3": "Methode 2",
+        "pc4": "2. Methode (alt.)",
+        "pc5": "Manuell",
+        "android": "WLAN",
+        "android2": "Mobile Daten",
+        "android3": "Alternativ"
       },
       "guide": {
         "video": "Videoanleitung",
@@ -257,14 +260,25 @@
           "Link hier einfügen... https://webstatic..."
         ],
         "pc3": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Drücke die Windows-Logo-Taste auf deiner Tastatur und suche dann nach PowerShell",
+          "Öffne Windows PowerShell, dann kopiere und füge das folgende Skript in die PowerShell ein. (Falls \"Drücken Sie die Eingabetaste, um den Vorgang fortzusetzen...\" nicht auftritt, drücke einmal die Eingabetaste)",
+          "Genshin Impact auf diesem PC öffnen",
+          "Öffnen Sie dann den Wunschverlauf im Spiel und warten Sie, bis er geladen ist",
+          "Klicke auf die Tabelle, dann drücke STRG + A dann STRG + C",
+          "Alt+Tab in die PowerShell, dann drücke die Eingabetaste. Der Link wird in die Zwischenablage kopiert.",
+          "Füge den Link in das Textfeld unten ein",
+          "Link hier einfügen... https://webstatic..."
+        ],
+        "pc5": [
+          "Öffne Genshin Impact auf diesem PC (Wenn du mehrere Konten benutzt, bitte starte das Spiell erneut)",
+          "Öffne den Gebetsverlauf im Spiel und warte darauf, bis er geladen ist",
+          "Danach öffne das Verzeichnis, in dem das Spiel installiert ist (z.B. C:\\Games\\Genshin Impact)",
+          "Öffne das Verzeichnis GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "Die Datei \"data_2\" rechtsklicken, \"Öffnen mit...\", Notepad auswählen. (Falls die Fehlermeldung \"Der Prozess kann nicht auf die Datei zugreifen, da sie von einem anderen Prozess verwendet wird.\" auftritt, bitte beende erst das Spiel)",
+          "Drücke STRG+F, dann \"Am Ende von vorne beginnen\" aktivieren und Suchrichtung \"Nach oben\" auswählen. In das Textfeld \"e20190909gacha-v2\" (ohne Anführungszeichen) eintippen und auf \"Weitersuchen\" klicken",
+          "Kopiere den gesamten Link von https://webstatic bis die URL wie folgt aussieht: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
+          "Füge den Text in das Textfeld unten ein",
+          "Link hier einfügen... https://webstatic..."
         ],
         "pclog": [
           "Öffnen Sie Genshin Impact auf diesem PC (Wenn Sie mehrere Konten verwenden, starten Sie das Spiel bitte neu)",
@@ -413,7 +427,7 @@
           "Du kannst auch den",
           "Knopf drücken, um die Werte manuell zu bearbeiten!"
         ],
-        "p6": ""
+        "p6": "Drücke den Pfeil unten um die Details deiner Gebeten zu sehen. Ein Popup wird angezeigt, wenn du ein 5★ oder 4★ bekommst. Du kannst auch die Tabelle manuell eintragen oder bearbeiten."
       }
     },
     "types": {
@@ -436,10 +450,10 @@
       "loading": "Wird geladen... (Wenn dies nicht funktioniert, ändere deinen Server auf in den Einstellungen)",
       "guaranteed": "Der nächste {rarity}★ ist garantiert die Aktionsfigur oder Waffe",
       "unknown_3_star": "unbekannt",
-      "rarity": "",
-      "total": "",
-      "percent": "",
-      "pityAverage": ""
+      "rarity": "Qualität",
+      "total": "Gesamt",
+      "percent": "Prozent",
+      "pityAverage": "Garantie MW"
     },
     "tally": {
       "title": "Wunschliste",
@@ -464,13 +478,13 @@
       "detail": "Einzelheiten"
     },
     "summary": {
-      "total": "",
-      "percent": "",
-      "pityAverage": "",
-      "character": "",
-      "weapon": "",
-      "winRateOff": "",
-      "winRateOffWeapon": ""
+      "total": "Gesamt",
+      "percent": "Prozent",
+      "pityAverage": "Garantie MW",
+      "character": "Figur",
+      "weapon": "Waffe",
+      "winRateOff": "50:50 Gewonnen",
+      "winRateOffWeapon": "75:25 Gewonnen"
     },
     "note": [
       "Gebetsverlauf wird nicht automatisch aktualisiert, bitte importiere erneut, um deinen Verlauf zu aktualisieren!",
@@ -487,25 +501,25 @@
       "desc": "Wenn der Browser-Cache versehentlich gelöscht wird, ist Ihr gewünschter Verlauf weg! Sie können die Google Drive-Synchronisierung im Einstellungsmenü aktivieren, um Ihre Daten zu sichern, oder die Daten dort manuell herunterladen."
     },
     "rank": {
-      "title": "",
+      "title": "Dein globaler Rang",
       "level": "Dein Rang nach gesamten Gebete",
       "based": "Basierend auf globalen Wish-Statistiken",
       "current": "Aktueller Median von {banner} ist {median} Pulls",
       "more": "Du hast mehr Gebete als {percentage}% von paimon.moe Benutzer",
       "less": "Du hast weniger Gebete als {percentage}% von paimon.moe Benutzer",
-      "currentLuck": "",
-      "totalPull": "",
-      "luck5": "",
-      "luck4": "",
-      "luckWinRateOff": "",
-      "medianTotal": "",
-      "medianLuck": "",
-      "moreTotal": "",
-      "lessTotal": "",
-      "moreLuck": "",
-      "lessLuck": "",
-      "top": "",
-      "bottom": ""
+      "currentLuck": "Aktueller {banner} Median ist {median}%",
+      "totalPull": "Gebete insgesamt",
+      "luck5": "Gewinnchance 5★",
+      "luck4": "Gewinnchance 4★",
+      "luckWinRateOff": "Gewinnchance 50:50",
+      "medianTotal": "Globale Median {median} Gebete",
+      "medianLuck": "Globaler Median {median}%",
+      "moreTotal": "Du hast mehr Gebete als {percentage}% von paimon.moe Benutzer",
+      "lessTotal": "Du hast weniger Gebete als {percentage}% von paimon.moe Benutzer",
+      "moreLuck": "Du hast mehr Glück als {percentage}% von paimon.moe Benutzer",
+      "lessLuck": "Du hast weniger Glück als {percentage}% von paimon.moe Benutzer",
+      "top": "VON OBEN",
+      "bottom": "VON UNTEN"
     }
   },
   "calculator": {
@@ -711,19 +725,19 @@
     "or": "oder",
     "thanks": "Vielen Dank😁!",
     "credits": {
-      "title": "",
+      "title": "Danksagung",
       "items": [
         {
-          "name": "",
-          "value": ""
+          "name": "Daten und Bilder",
+          "value": "Genshin Impact Wiki"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "Statistikdaten",
+          "value": "Dimbreath Genshin-Daten"
         },
         {
-          "name": "",
-          "value": ""
+          "name": "Drop-Rate für Harz-Berechnung",
+          "value": "Data Gathering Discord"
         }
       ]
     },
@@ -791,15 +805,15 @@
       "und",
       "paimon-moe Github"
     ],
-    "subtitleAd": "",
+    "subtitleAd": "Werbung",
     "ad": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Wir verwenden Werbung von Drittanbietern, um unsere Website zu unterstützen, einige dieser Inserenten können von unseren Drittanbieterwerber bedient werden.",
+      "Du kannst die",
+      " Datenschutzrichtlinie",
+      "und",
+      "Verwendung von Cookies",
+      "hier ansehen. Du kannst deine Cookies",
+      "hier verwalten"
     ]
   },
   "sync": {
@@ -813,7 +827,7 @@
     "download": "Beide Daten herunterladen",
     "lastModified": "Zuletzt geändert",
     "or": "ODER",
-    "smallSizeWarning": ""
+    "smallSizeWarning": "ACHTUNG, DIE GRÖßE DIESER DATEI IST VIEL KLEINER!"
   },
   "footer": {
     "affliate": "Paimon.moe ist nicht mit HoYoverse zugehörig.",
@@ -822,13 +836,13 @@
     "community": "Community Links",
     "official": "Offizielle Links",
     "link": {
-      "github": "",
-      "discord": "",
-      "devTwitter": "",
-      "reddit": "",
-      "facebook": "",
-      "cookieSettings": "",
-      "privacyPolicy": ""
+      "github": "GitHub",
+      "discord": "Discord",
+      "devTwitter": "Dev Twitter",
+      "reddit": "Reddit",
+      "facebook": "Facebook",
+      "cookieSettings": "Cookie-Einstellungen",
+      "privacyPolicy": "Datenschutzrichtlinie"
     }
   },
   "donate": {
@@ -871,7 +885,9 @@
     "commissions": "Aufträge",
     "version": "Version",
     "type": "Typ",
-    "searchError": "Erfolg: {query} konnte nicht gefunden werden"
+    "searchError": "Erfolg: {query} konnte nicht gefunden werden",
+    "quest": "Quest",
+    "checklist": "Checkliste"
   },
   "furnishing": {
     "title": "Dekorationen",
@@ -893,7 +909,7 @@
     "corridor": "Flur",
     "inventoryButton": "Inventar",
     "listButton": "Liste",
-    "selectCharacter": "",
+    "selectCharacter": "Figur auswählen...",
     "inventory": {
       "title": "Dekorationsinventar",
       "subtitle": "Einige Sonderkategorien, wie Wände werden nicht angezeigt",
@@ -908,8 +924,8 @@
       "inInventory": "Im Inventar",
       "available": "Verfügbar",
       "used": "In einem anderen Set verwendet",
-      "calculate": "",
-      "exludeOwned": ""
+      "calculate": "Materialien berechnen",
+      "exludeOwned": "Dekorationen im Besitz ausschließen"
     }
   },
   "weapon": {
@@ -949,15 +965,15 @@
     "artifact": "Artefakt",
     "setPiece": "{piece} Setbonus",
     "recommendedCharacter": "Empfohlene Figuren {piece} Set",
-    "18ATKSet": "",
-    "20EnergyRechargeSet": "",
-    "25PhysicalDmgSet": "",
-    "sands": "",
-    "goblet": "",
-    "circlet": "",
-    "choose2": "",
-    "pieceStat": "",
-    "pieceInfo": ""
+    "18ATKSet": "ANG +18% Set",
+    "20EnergyRechargeSet": "Aufladerate +20% Set",
+    "25PhysicalDmgSet": "Phys. Schaden +25% Set",
+    "sands": "SAND",
+    "goblet": "KELCH",
+    "circlet": "KREIS",
+    "choose2": "Wähle 2 aus",
+    "pieceStat": "Figuren, die mit diesen {piece} Artefakt mit folgenden Hauptstatistiken ausgerüstet werden könnte:",
+    "pieceInfo": "Klicke auf das Bild des Artefakts, um die empfohlene Hauptstatistiken für die Figuren anzusehen"
   },
   "fishing": {
     "title": "Angelfangbuch",
@@ -966,7 +982,8 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
-    "chasm": "",
+    "chasm": "Die Große Kluft",
+    "sumeru": "Sumeru",
     "setEmpty": "Leer setzen",
     "emptyTime": "Uhrzeit, wenn der Angelplatz geleert wurde:",
     "clear": "Löschen",
@@ -977,20 +994,24 @@
     "title": "Strahlender Drehkristall"
   },
   "common": {
-    "dataSynced": "",
-    "driveError": ""
+    "dataSynced": "Daten wurden synchronisiert!",
+    "driveError": "Drive Sync derzeit nicht verfügbar 😔"
   },
   "update": {
-    "newUpdate": "",
-    "updateRefresh": "",
-    "whatsNew": "",
-    "later": "",
-    "refresh": ""
+    "newUpdate": "Paimon.moe hat ein neues Update!",
+    "updateRefresh": "Klicke auf \"Neu laden\", um das Update zu bekommen",
+    "whatsNew": "Was gibt's Neues?",
+    "later": "Später",
+    "refresh": "Neu laden"
   },
   "calendar": {
-    "lastAppearance": "",
-    "lastAppearanceDesc": "",
-    "bannerHover": "",
-    "birthday": ""
+    "lastAppearance": "Letztes Banner",
+    "lastAppearanceDesc": "Wann nimmt die Figur zuletzt in einem limitierten Banner teil",
+    "bannerHover": "X Banner vor",
+    "birthday": "Geburtstag",
+    "sortByTime": "Nach erster Erscheinung sortiert",
+    "sortByRerun": "Nach letzter Erscheinung sortiert",
+    "bannerTitle": "Figurvorstellung-Chronik",
+    "bannerSubtitle": "Erkunde die erste und letzte Erscheinung eines Figurs"
   }
 }

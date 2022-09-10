@@ -16,6 +16,7 @@
     "fishing": "Câu Cá",
     "radiantSpincrystal": "Ngọc Thạch Âm Vang",
     "calendar": "Lịch Biểu",
+    "banners": "",
     "settings": "Cài Đặt",
     "donate": "Ủng hộ"
   },
@@ -191,8 +192,8 @@
         "Bạn cũng có thể bật Đồng Bộ với Drive trong Cài Đặt để đồng bộ hóa và sao lưu lịch sử của bạn lên Google Drive",
         "Lưu ý là link Phản Hồi cũ giờ không còn hoạt động nữa, hãy làm theo các phương thức mới dưới đây!"
       ],
-      "notice30": "",
-      "soon30": "",
+      "notice30": "Lịch sử cầu nguyện đã có chỉnh sửa trong v3.0, vui lòng làm theo hướng dẫn mới bên dưới!",
+      "soon30": "Hướng dẫn bằng văn bản sẽ sớm được viết, hãy xem video phía trên trong thời gian hiện tại!",
       "faqs": {
         "title": "Câu hỏi Thường gặp về Nhập Lịch Sử Cầu Nguyện",
         "q1": "Nó hoạt động như thế nào?",
@@ -227,11 +228,13 @@
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
       "method": {
-        "pc": "",
-        "pc3": "",
-        "android": "",
-        "android2": "",
-        "android3": ""
+        "pc": "Cách 1",
+        "pc3": "Cách 2",
+        "pc4": "",
+        "pc5": "",
+        "android": "Wifi",
+        "android2": "Dữ Liệu Di Động",
+        "android3": "Cách Khác"
       },
       "guide": {
         "video": "Video hướng dẫn",
@@ -257,14 +260,25 @@
           "Dán link vào đây... https://webstatic..."
         ],
         "pc3": [
+          "Nhấn START trên bàn phím của bạn, sau đó tìm kiếm Powershell",
+          "Chọn mở Windows Powershell, sau đó sao chép & dán đoạn script sau vào Powershell và nhấn ENTER (chỉ nhấn khi thông điệp \"Press Enter to continue...\" vẫn chưa hiện ra)",
+          "Mở Genshin Impact trên PC này",
+          "Sau đó mở lịch sử cầu nguyên trong game và đợi tải trang",
+          "Nhấn vào bảng, sau đó nhấn CTRL+A và CTRL+C theo thứ tự",
+          "Alt+Tab sang Powershell rồi nhấn ENTER, link sẽ được sao chép vào bộ nhớ tạm của bạn",
+          "Dán văn bản đó vào hộp văn bản dưới đây",
+          "Dán link vào đây... https://webstatic..."
+        ],
+        "pc5": [
+          "Mở Genshin Impact trên PC này (nếu bạn dùng nhiều tài khoản thì hãy khởi động lại game)",
+          "Sau đó mở lịch sử cầu nguyên trong game và đợi tải trang",
+          "Sau đó mở thư mục cài đặt game (ví dụ: C:\\Games\\Genshin Impact)",
+          "Sau đó mở thư mục GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "Chuột phải vào tập tin \"data_2\" và rồi chọn \"Mở bằng\" và chọn Notepad (Nếu bạn gặp lỗi như \"The process cannot access the file because it is being used by another process\" thì hãy thoát game trước khi tiếp tục)",
           "",
           "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Dán văn bản vào hộp văn bản phía dưới",
+          "Dán link vào đây... https://webstatic..."
         ],
         "pclog": [
           "Mở Genshin Impact trên PC này (nếu bạn dùng nhiều tài khoản thì hãy khởi động lại game)",
@@ -688,9 +702,9 @@
     "version": "Data Version:",
     "multiple": "Có nhiều tài khoản? Chọn tài khoản ở đây để chia dữ liệu Cầu Nguyện và Những Việc Cần Làm",
     "selectAccount": "Chọn tài khoản của bạn",
-    "reset": "Thiết lập lại",
+    "reset": "Thiết Lập Lại",
     "delete": "Xóa",
-    "add": "Thêm vào",
+    "add": "Thêm Mới",
     "server": "Hãy chọn server:",
     "ar": "HMH:",
     "wl": "Cấp TG:",
@@ -705,9 +719,9 @@
     "synced": "Đã đồng bộ",
     "waiting": "Đang chờ...",
     "syncing": "Đang đồng bộ...",
-    "syncStatus": "Trạng Thái Đồng Bộ:",
+    "syncStatus": "Trạng thái đồng bộ:",
     "lastSync": "Lần đồng bộ gần nhất:",
-    "feedback": "Nếu bạn tìm thấy bất kì lỗi, dữ liệu sai, hoặc có phản hồi nào khác, vui lòng để lại lời nhắn ở",
+    "feedback": "Nếu bạn tìm thấy bất kì lỗi, dữ liệu sai hoặc có phản hồi nào khác, vui lòng để lại lời nhắn ở",
     "or": "hoặc",
     "thanks": "Cảm ơn bạn 😁!",
     "credits": {
@@ -735,7 +749,7 @@
       "setMainNotice": "Sẽ đổi tài khoản:",
       "cancel": "Hủy",
       "delete": "Xóa",
-      "reset": "Thiết lập lại",
+      "reset": "Thiết Lập Lại",
       "continue": "Tiếp Tục"
     },
     "changelog": "Nhật Ký Chỉnh Sửa",
@@ -824,7 +838,7 @@
     "link": {
       "github": "GitHub",
       "discord": "Discord",
-      "devTwitter": "Twitter Lập Trình Viên",
+      "devTwitter": "Twitter của Dev",
       "reddit": "Reddit",
       "facebook": "Facebook",
       "cookieSettings": "Cài đặt Cookie",
@@ -871,7 +885,9 @@
     "commissions": "ủy thác",
     "version": "Phiên bản",
     "type": "Loại",
-    "searchError": "Không tìm thấy thành tựu: {query}"
+    "searchError": "Không tìm thấy thành tựu: {query}",
+    "quest": "Nhiệm Vụ",
+    "checklist": ""
   },
   "furnishing": {
     "title": "Đồ Trang Trí",
@@ -967,6 +983,7 @@
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
     "chasm": "Vực Đá Sâu",
+    "sumeru": "Sumeru",
     "setEmpty": "Đã hết cá",
     "emptyTime": "Thời gian vị trí này hết cá:",
     "clear": "Xóa",
@@ -991,6 +1008,10 @@
     "lastAppearance": "Lần Xuất Hiện Cuối Cùng Trên Banner",
     "lastAppearanceDesc": "Lần xuất hiện cuối cùng của nhân vật trên một banner giới hạn",
     "bannerHover": "X Banner Trước",
-    "birthday": "Sinh Nhật"
+    "birthday": "Sinh Nhật",
+    "sortByTime": "",
+    "sortByRerun": "",
+    "bannerTitle": "",
+    "bannerSubtitle": ""
   }
 }

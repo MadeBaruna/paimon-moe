@@ -16,6 +16,7 @@
     "fishing": "Memancing",
     "radiantSpincrystal": "Radiant Spincrystal",
     "calendar": "Kalender",
+    "banners": "Rerun Karakter",
     "settings": "Pengaturan",
     "donate": "Donasi"
   },
@@ -229,6 +230,8 @@
       "method": {
         "pc": "Metode 1",
         "pc3": "Metode 2",
+        "pc4": "Metode 2 Alt",
+        "pc5": "Manual",
         "android": "Wifi",
         "android2": "Paket Data",
         "android3": "Alternatif"
@@ -264,6 +267,17 @@
           "Klik tabel nya, kemudian tekan CTRL+A dan CTRL+C",
           "Alt+Tab ke powershell, kemudian tekan ENTER, link nya akan otomatis tercopy",
           "Paste text nya ke input di bawah",
+          "Paste link nya disini... https://webstatic..."
+        ],
+        "pc5": [
+          "Buka Genshin Impact di PC ini (Jika mempunyai beberapa akun, restart dulu game nya)",
+          "Buka riwayat history di dalam game nya, dan tunggu sampai selesai loading",
+          "Kemudian buka folder dimana game nya ter-install (contoh: C:\\Games\\Genshin Impact)",
+          "Kemudian buka folder GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "Klik kanan \"data_2\" kemudian klik \"Open with\" kemudian pilih Notepad (Jika kamu mendapatkan error seperti \"The process cannot access the file because it is being used by another process\" silahkan tutup dahulu game nya)",
+          "Tekan CTRL+F kemudian centang \"Wrap around\" dan pilih direction \"Up\" dan di kotak input nya masukkan \"e20190909gacha-v2\" (tanpa petik) kemudian klik Find Next",
+          "Copy semua link nya dari https://webstatic sampai game_biz=hk4e_global link nya seperti ini: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
+          "Paste link nya ke textbox dibawah",
           "Paste link nya disini... https://webstatic..."
         ],
         "pclog": [
@@ -343,7 +357,7 @@
       "title": "Excel Import",
       "subtitle": "Pilih darimana asal file excelnya:",
       "default": "Paimon.moe Export",
-      "takagg": "TakaGG Gacha Export",
+      "takagg": "Biuuu Gacha Export",
       "genshinwishes": "Export GenshinWishes",
       "wishtally": "WishTally",
       "notice": [
@@ -354,7 +368,7 @@
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe file excel kesini, atau klik disini untuk memilih",
-        "takagg": "Drag & drop TakaGG gacha export file excel kesini, atau klik disini untuk memilih",
+        "takagg": "Drag & drop Biuuu/TakaGG gacha export file excel kesini, atau klik disini untuk memilih",
         "genshinwishes": "Drag & drop GenshinWishes csv file disini, atau klik disini untuk memilih",
         "wishtally": "Drag & Drop Wish Tally excel file disini, atau klik disini untuk memilih"
       },
@@ -871,7 +885,9 @@
     "commissions": "komisi",
     "version": "Versi",
     "type": "Tipe",
-    "searchError": "Tidak dapat menemukan achievement: {query}"
+    "searchError": "Tidak dapat menemukan achievement: {query}",
+    "quest": "Quest",
+    "checklist": "Checklist"
   },
   "furnishing": {
     "title": "Furnitur",
@@ -967,6 +983,7 @@
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
     "chasm": "Chasm",
+    "sumeru": "Sumeru",
     "setEmpty": "Set sebagai kosong",
     "emptyTime": "Waktu ketika spot nya kosong:",
     "clear": "Hapus",
@@ -991,6 +1008,10 @@
     "lastAppearance": "Banner Terakhir",
     "lastAppearanceDesc": "Kapan karakter terakhir muncul di limited banner",
     "bannerHover": "X Banner lalu",
-    "birthday": "Ulang Tahun"
+    "birthday": "Ulang Tahun",
+    "sortByTime": "Diurutkan dari rilis pertama",
+    "sortByRerun": "Diurutkan dari rerun terlama",
+    "bannerTitle": "Timeline Rilis Karakter",
+    "bannerSubtitle": "Lihat kapan suatu karakter dirilis dan rerun terakhirnya"
   }
 }

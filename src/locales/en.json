@@ -142,7 +142,10 @@
     "manualButton": "Enable Manual Input",
     "errorBanner": "Banner time mismatch! Please adjust your server on the settings page. Still not working? Please leave a message on Discord 😅",
     "globalWishTally": "Global Wish Stats",
-    "pityTooltip": ["Shows your current {rarity} pity", "{count} pulls to guaranteed {rarity}"],
+    "pityTooltip": [
+      "Shows your current {rarity} pity",
+      "{count} pulls to guaranteed {rarity}"
+    ],
     "import": {
       "title": "Import Wish History",
       "faqsButton": "FAQ - READ FIRST",
@@ -178,7 +181,11 @@
       "server": "Select your server:",
       "wishTallyCheck": "Submit pity for global wish stats",
       "wishTally": "We are doing a global wish stats! You can submit your wish stats to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "forceUpdateCheck": "Force update wish history (enable only if your wish history is not updating)",
       "header": [
         "Import and backup your Genshin Impact wish history to keep it for more than 6 months. It also automatically tracks your pity and statistics about your wishes!",
@@ -267,7 +274,7 @@
           "Then open the wish history in the game and wait it to load",
           "Then open the folder where your game is installed (example: C:\\Games\\Genshin Impact)",
           "Then open folder GenshinImpact_Data → webCaches → Cache → Cache_Data",
-          "Right click \"data_2\" file then click \"Open with\" then select Notepad (If you get error like \"The process cannot access the file because it is being used y another process\" please exit the game first",
+          "Right click \"data_2\" file then click \"Open with\" then select Notepad (If you get error like \"The process cannot access the file because it is being used by another process\" please exit the game first)",
           "Press CTRL+F then check \"Wrap around\" and select direction \"Up\" then in the input box search for \"e20190909gacha-v2\" (without the quote) then click Find Next",
           "Copy all the link from https://webstatic until game_biz=hk4e_global the url looks like this: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
           "Paste the text to the textbox below",
@@ -350,7 +357,7 @@
       "title": "Excel Importer",
       "subtitle": "Select where your excel came from:",
       "default": "Paimon.moe Export",
-      "takagg": "TakaGG Gacha Export",
+      "takagg": "Biuuu Gacha Export",
       "genshinwishes": "GenshinWishes Export",
       "wishtally": "WishTally",
       "notice": [
@@ -361,7 +368,7 @@
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe excel file here, or click here to select",
-        "takagg": "Drag & drop TakaGG gacha export excel file here, or click here to select",
+        "takagg": "Drag & drop Biuuu/TakaGG gacha export excel file here, or click here to select",
         "genshinwishes": "Drag & drop GenshinWishes csv file here, or click here to select",
         "wishtally": "Drag & drop Wish Tally excel file here, or click here to select"
       },
@@ -388,7 +395,11 @@
       "exportFinish": "Export success, please wait until your browser downloads the file!",
       "wishTallyTitle": "Submit Wish Stats",
       "wishTally": "We are doing a global wish stats! You can submit your wish stats to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "wishTallySubmit": "Submit Wish Stats",
       "wishTallyThankyou": "Thank you for participating!",
       "manualTitle": "Manual Input Settings",
@@ -400,13 +411,22 @@
         "subtitle": "After a 1x Wish:",
         "pressWhenYouGet": "Press {button} when you get {rarity}★",
         "p1": "It will automatically add the lifetime pulls, 5★, and 4★ pity",
-        "p2": ["When the", "pity reaches 10, it will automatically be reset to 0"],
-        "p3": ["When the", "pity reaches 90, it will automatically be reset to 0"],
+        "p2": [
+          "When the",
+          "pity reaches 10, it will automatically be reset to 0"
+        ],
+        "p3": [
+          "When the",
+          "pity reaches 90, it will automatically be reset to 0"
+        ],
         "p4": [
           "After a 10x Wish, press",
           "but keep in mind that the pity counter might not be accurate, because there is no way to tell when the drop occured (maybe you got it on the 1st or even the 10th pull). To ensure that the counter is still accurate, you need to check the history table and add it one-by-one like you do 1x Wishes."
         ],
-        "p5": ["You can also press the", "button to edit the values manually!"],
+        "p5": [
+          "You can also press the",
+          "button to edit the values manually!"
+        ],
         "p6": "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a 5★ or 4★. You can also add or edit the table manually."
       }
     },
@@ -546,7 +566,11 @@
       "calculateTalent": "Calculate Talent Material?",
       "inputTalentLevel": "Input the 1st, 2nd & 3rd current talent level",
       "inputTalentNotice": "If it has a different color, subtract it by 3",
-      "inputTalent": ["1st talent lvl", "2nd talent lvl", "3rd talent lvl"],
+      "inputTalent": [
+        "1st talent lvl",
+        "2nd talent lvl",
+        "3rd talent lvl"
+      ],
       "talentToLevel": "to level",
       "calculate": "Calculate",
       "unknownInformation": "There are some unknown information",
@@ -555,7 +579,11 @@
       "expWasted": "EXP Wasted",
       "addToTodo": "Add to Todo List",
       "addedToTodo": "Added to Todo List",
-      "talent": ["Attack", "Skill", "Burst"]
+      "talent": [
+        "Attack",
+        "Skill",
+        "Burst"
+      ]
     },
     "expTable": {
       "level": "Level",
@@ -647,7 +675,10 @@
   "todo": {
     "title": "Todo List",
     "summary": "Summary",
-    "empty": ["Nothing to do yet 😀", "Add some from the Items page or the Calculator!"],
+    "empty": [
+      "Nothing to do yet 😀",
+      "Add some from the Items page or the Calculator!"
+    ],
     "farmableToday": "Farmable Today",
     "resin": "Resin needed",
     "based": "Based on AR:{ar} and WL:{wl}",

@@ -16,6 +16,7 @@
     "fishing": "钓鱼",
     "radiantSpincrystal": "旋曜玉帛",
     "calendar": "日程",
+    "banners": "角色复刻",
     "settings": "设置",
     "donate": "赞助"
   },
@@ -191,8 +192,8 @@
         "你也可以在设置中启用云端同步以备份数据，将你的祈愿记录自动同步到 Google 云端硬盘",
         "2.3版本前的获取祈愿历史链接的方式已不再有效，请按照以下指示的操作获取新的祈愿历史链接！"
       ],
-      "notice30": "",
-      "soon30": "",
+      "notice30": "由于3.0版本更新了祈愿历史，以往的方式不再有效。请重新阅读并按照以下指示的操作获取祈愿历史链接！",
+      "soon30": "文字教程稍后发布，请先观看上方的视频教程！",
       "faqs": {
         "title": "导入祈愿记录常见问题",
         "q1": "这是怎么做到的？",
@@ -227,11 +228,13 @@
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
       "method": {
-        "pc": "",
-        "pc3": "",
-        "android": "",
-        "android2": "",
-        "android3": ""
+        "pc": "方法 1",
+        "pc3": "方法 2",
+        "pc4": "方法 2 的替代",
+        "pc5": "手动",
+        "android": "Wi-Fi",
+        "android2": "数据流量",
+        "android3": "备选办法"
       },
       "guide": {
         "video": "视频教程",
@@ -240,40 +243,51 @@
           "点击反馈",
           "等待加载出一个浏览器页面",
           "复制并粘贴链接到下面的文本框",
-          "链接粘贴到这里 https://webstatic…"
+          "在这里粘贴链接… https://webstatic…"
         ],
         "pc2": [
           "打开原神客户端（如果你拥有多个米哈游通行证，重新启动游戏并登录到你希望的账号）",
-          "打开祈愿记录的页面并等待祈愿记录的读取",
-          "打开Windows的“开始”菜单，搜索Powershell",
-          "打开Windows Powershell，接着复制下方的脚本并粘贴到Powershell里",
+          "打开游戏中的祈愿历史记录，等待页面加载完毕",
+          "打开 Windows 的“开始”菜单，搜索 PowerShell",
+          "打开Windows PowerShell，接着复制下方的脚本并粘贴到PowerShell里",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_china.ps1'))",
-          "你可以在这里查看这个脚本的具体内容",
+          "要查看这个脚本的具体内容，点击以下链接：",
           "这里",
           "https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235",
           "轻按回车键（Enter），然后将程序返回的链接粘贴到下方的文本框中",
           "粘贴复制的内容到下面的文本框",
-          "在这里粘贴你的链接… https://webstatic…"
+          "在这里粘贴链接… https://webstatic…"
         ],
         "pc3": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "按下键盘上的 Windows 键，打开“开始”菜单并搜索 PowerShell",
+          "打开 Windows PowerShell，接着复制下方的脚本并粘贴到 PowerShell 里，然后按 1 次回车键（Enter），此时会出现“按 Enter 键继续”的提示，出现后不要再按下回车键",
+          "打开原神客户端",
+          "打开游戏中的祈愿历史记录，等待页面加载完毕",
+          "点击一次页面，按下 Ctrl+A 然后再按下 Ctrl+C（此时应该会看到页面文字被全部选中）",
+          "按 Alt+Tab 切换到 PowerShell，然后再按回车键（Enter），此时链接应该已经复制到了剪贴板上",
+          "粘贴复制的内容到下面的文本框",
+          "在这里粘贴链接… https://webstatic…"
+        ],
+        "pc5": [
+          "打开原神客户端（如果你拥有多个米哈游通行证，重新启动游戏并登录到你希望的账号）",
+          "打开游戏中的祈愿历史记录，等待页面加载完毕",
+          "接着打开游戏安装的位置（例如：C:\\Games\\Genshin Impact）",
+          "然后打开文件夹 GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "右键单击 “data_2” 文件，点击“打开方式”，选择“记事本”（如果报错，比如“另一个程序正在使用此文件，进程无法访问”等，请先退出游戏）",
+          "按 Ctrl+F，在选项中打开“循环”，搜索方向选择“向上”，然后在文本栏中输入“e20190909gacha-v2”（注意去掉引号），点击“查找下一个”",
+          "复制完整的链接，以 https://webstatic 开头，以 game_biz=hk4e_global 结尾。完整链接类似于这样：https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?……&game_biz=hk4e_global",
+          "粘贴复制的内容到下面的文本框",
+          "在这里粘贴链接… https://webstatic…"
         ],
         "pclog": [
           "打开原神客户端（如果你拥有多个米哈游通行证，重新启动游戏并登录到你希望的账号）",
-          "打开祈愿记录的页面并等待祈愿记录的读取",
-          "在键盘上按下Windows+R的组合键，然后输入：",
-          "将会有一个笔记本窗口自动打开，按下Ctrl+F的组合键然后搜索：",
-          "复制完整的链接，从 https://webstatic 开头，以 #/log 结尾。完整链接类似于这样：https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "打开游戏中的祈愿历史记录，等待页面加载完毕",
+          "在键盘上按下 Windows+R 的组合键，然后输入：",
+          "将会有一个记事本窗口自动打开，按下 Ctrl+F 的组合键然后搜索：",
+          "复制完整的链接，以 https://webstatic 开头，以 #/log 结尾。完整链接类似于这样：https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
           "粘贴复制的内容到下面的文本框",
-          "在这里粘贴你的链接… https://webstatic…"
+          "在这里粘贴链接… https://webstatic…"
         ],
         "android": [
           "打开祈愿界面（游戏内）",
@@ -285,7 +299,7 @@
           "长按并全选，复制所有文本（不要仅复制某一部分）",
           "重新连接网络（连回Wi-Fi或数据流量）",
           "粘贴复制的内容到下面的文本框",
-          "文本粘贴到这里… Webpage not available…"
+          "在这里粘贴文本… Webpage not available…"
         ],
         "ios": [
           "打开派蒙菜单",
@@ -295,7 +309,7 @@
           "点击多人游戏模式",
           "系统回复的最下面有一个链接; 点击它",
           "一个网页会被打开。复制链接并粘贴到这里",
-          "链接粘贴到这里… https://genshin.mihoyo…"
+          "在这里粘贴链接… https://genshin.mihoyo…"
         ],
         "ios2": [
           "前往 App Store 下载Stream App",
@@ -307,11 +321,11 @@
           "打开原神客户端，然后打开祈愿页面，保持不动",
           "回到Stream App中 > 选择我已经信任 > 点击开始抓包",
           "回到原神，并打开祈愿页面",
-          "等待历史记录页面被完全加载，直到可以看见祈愿记录",
+          "等待历史记录页面加载完毕",
           "回到Stream App > 停止抓包",
           "选择抓包历史 > 选择一个JSON类型的请求（会是一个以https://hk4e-api-os.mihoyo.com/起始的链接）",
           "点击位于总览右侧的请求标签页，然后点击请求信息，选择复制请求链接",
-          "将链接粘贴在这里… https://hk4e-api-os.mihoyo.com…",
+          "在这里粘贴链接… https://hk4e-api-os.mihoyo.com…",
           "遇到问题时请查看常见问题解答",
           "https://docs.google.com/document/d/1U8pf9lqKALtMSWI11t_6npYlVOCpIFZZRvhrC_9-2ek/edit"
         ],
@@ -322,19 +336,19 @@
           "用手机扫描二维码得到链接",
           "复制链接并粘贴到这里",
           "链接粘贴到这里…",
-          "粘贴到这里…"
+          "在这里粘贴链接…"
         ],
         "pclocal": [
           "如果你不想提供你的URL，你可以使用这个选项在你的电脑上本地处理祈愿历史记录。此脚本将读取你电脑上的日志文件以获取祈愿URL。",
-          "打开“开始”菜单，搜索Powershell",
-          "打开Windows Powershell，然后复制粘贴脚本到Powershell里",
+          "打开“开始”菜单，搜索 PowerShell",
+          "打开Windows PowerShell，然后复制粘贴脚本到PowerShell里",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "你可以查看这个脚本",
           "这里",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
           "粘贴后回车即可运行脚本，然后跟着说明走即可",
           "之后，把脚本输出的结果粘贴到这里",
-          "粘贴结果到这里…",
+          "在这里粘贴结果…",
           "这个功能还在开发中。请先到“帮助 & 设置”界面，选择“导出到Excel”来备份一下你原来的记录。"
         ]
       }
@@ -343,7 +357,7 @@
       "title": "Excel 导入器",
       "subtitle": "选择你的表格来源：",
       "default": "Paimon.moe 导出",
-      "takagg": "TakaGG Gacha 导出",
+      "takagg": "Biuuu Gacha 导出",
       "genshinwishes": "GenshinWishes 导出",
       "wishtally": "WishTally文件",
       "notice": [
@@ -354,7 +368,7 @@
       ],
       "selectFile": {
         "default": "拖放 Paimon.moe 的 Excel 文件到此处，或点击这里选择",
-        "takagg": "拖放TakaGG gacha导出的Excel文件到此处，或点击这里选择",
+        "takagg": "拖放Biuuu/TakaGG gacha导出的Excel文件到此处，或点击这里选择",
         "genshinwishes": "拖动 GenshinWishes 的 CSV 文件到此处，或点击这里选择文件",
         "wishtally": "拖动 Wish Tally 的 Excel 文件到此处，或点击这里选择文件"
       },
@@ -786,7 +800,7 @@
     ],
     "subtitleNotCollect": "Paimon.moe 不会收集",
     "notCollect": [
-      "Paimon.moe 不会保存任何密码、UID、邮箱、临时密钥或反馈文件。如果你感兴趣，这个网站是开源的，你可以在这里查看源代码",
+      "Paimon.moe 不会保存任何密码、UID、邮箱、临时密钥或反馈文件。如果你感兴趣，这个网站是开源的，你可以查看源代码：",
       "paimon-moe-api Github",
       "以及",
       "paimon-moe Github"
@@ -871,7 +885,9 @@
     "commissions": "委托",
     "version": "版本",
     "type": "类型",
-    "searchError": "找不到成就： {query}"
+    "searchError": "找不到成就： {query}",
+    "quest": "任务",
+    "checklist": "核对清单"
   },
   "furnishing": {
     "title": "摆设",
@@ -967,6 +983,7 @@
     "inazuma": "稻妻",
     "enkanomiya": "渊下宫",
     "chasm": "层岩巨渊",
+    "sumeru": "须弥",
     "setEmpty": "捞空了",
     "emptyTime": "鱼被摸完的时间：",
     "clear": "复原",
@@ -988,9 +1005,13 @@
     "refresh": "刷新"
   },
   "calendar": {
-    "lastAppearance": "等  复  刻",
+    "lastAppearance": "等　复　刻",
     "lastAppearanceDesc": "角色最近一次出现在活动祈愿的时间列表",
     "bannerHover": "距上次复刻过了多少期",
-    "birthday": "生日"
+    "birthday": "生日",
+    "sortByTime": "按首次入池排序",
+    "sortByRerun": "按最后复刻排序",
+    "bannerTitle": "角色卡池时间一览",
+    "bannerSubtitle": "查看角色入池时间及复刻情况"
   }
 }

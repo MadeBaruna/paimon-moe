@@ -16,6 +16,7 @@
     "fishing": "Pêche",
     "radiantSpincrystal": "Gyrocristal radiant",
     "calendar": "Calendrier",
+    "banners": "",
     "settings": "Paramètres",
     "donate": "Donner"
   },
@@ -191,8 +192,8 @@
         "Vous pouvez également activer Drive Sync dans les Paramètres afin de synchroniser et sauvegarder l'historique sur votre Google Drive",
         "Veuillez noter que l'ancien lien de rétroaction ne fonctionne plus, veuillez suivre les nouvelles instructions ci-dessous !"
       ],
-      "notice30": "",
-      "soon30": "",
+      "notice30": "L'historique des souhaits est modifié sur la v3.0, veuillez suivre les nouvelles instructions ci-dessous !",
+      "soon30": "Le tutoriel textuel arrive bientôt, pour l'instant, veuillez regarder la vidéo ci-dessus !",
       "faqs": {
         "title": "FAQ de l'importation de l'historique des voeux",
         "q1": "Comment ça marche ?",
@@ -227,11 +228,13 @@
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
       "method": {
-        "pc": "",
-        "pc3": "",
-        "android": "",
-        "android2": "",
-        "android3": ""
+        "pc": "Méthode 1",
+        "pc3": "Méthode 2",
+        "pc4": "",
+        "pc5": "",
+        "android": "Wifi",
+        "android2": "Données de cellule",
+        "android3": "Alternative"
       },
       "guide": {
         "video": "Tutoriel vidéo",
@@ -257,6 +260,17 @@
           "Collez le lien ici... https://webstatic..."
         ],
         "pc3": [
+          "Appuyez sur START sur votre clavier, puis recherchez Powershell",
+          "Cliquez sur Windows Powershell, puis copiez et collez le script ci-dessous dans le shell Powershell, puis appuyez sur ENTRÉE (uniquement lorsque le message \"Appuyez sur Entrée pour continuer...\"' ne s'affiche pas encore)",
+          "Ouvrez Genshin Impact sur ce PC",
+          "Ouvrez ensuite l'historique de vœux dans le jeu et attendez qu'il charge",
+          "Cliquez sur le tableau, et pressez CTRL+A puis CTRL+C",
+          "Alt+Tab vers le powershell, puis appuyez sur ENTRÉE, le lien sera copié dans votre presse-papiers",
+          "Collez le texte dans la zone de texte ci-dessous",
+          "Collez le lien ici... https://webstatic..."
+        ],
+        "pc5": [
+          "",
           "",
           "",
           "",
@@ -871,7 +885,9 @@
     "commissions": "missions quotidiennes",
     "version": "Version",
     "type": "Catégorie",
-    "searchError": "Impossible de trouver la réalisation: {query}"
+    "searchError": "Impossible de trouver la réalisation: {query}",
+    "quest": "",
+    "checklist": ""
   },
   "furnishing": {
     "title": "Décorations",
@@ -967,6 +983,7 @@
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
     "chasm": "Gouffre",
+    "sumeru": "",
     "setEmpty": "Définir comme vide",
     "emptyTime": "Temps où la case est vide :",
     "clear": "Effacer",
@@ -991,6 +1008,10 @@
     "lastAppearance": "Dernière apparition de la bannière",
     "lastAppearanceDesc": "Quelle est la dernière apparition du personnage sur une bannière limitée",
     "bannerHover": "Il y a X bannières",
-    "birthday": "Anniversaire"
+    "birthday": "Anniversaire",
+    "sortByTime": "",
+    "sortByRerun": "",
+    "bannerTitle": "",
+    "bannerSubtitle": ""
   }
 }

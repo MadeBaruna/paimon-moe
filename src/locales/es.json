@@ -16,6 +16,7 @@
     "fishing": "Pesca",
     "radiantSpincrystal": "Girocristal radiante",
     "calendar": "Calendario",
+    "banners": "",
     "settings": "Configuración",
     "donate": "Donar"
   },
@@ -229,6 +230,8 @@
       "method": {
         "pc": "",
         "pc3": "",
+        "pc4": "",
+        "pc5": "",
         "android": "",
         "android2": "",
         "android3": ""
@@ -257,6 +260,17 @@
           "Pegue el enlace aquí... https://webstatic..."
         ],
         "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "pc5": [
+          "",
           "",
           "",
           "",
@@ -871,7 +885,9 @@
     "commissions": "encargos",
     "version": "Versión",
     "type": "Tipo",
-    "searchError": "No se pudo encontrar el logro: {query}"
+    "searchError": "No se pudo encontrar el logro: {query}",
+    "quest": "",
+    "checklist": ""
   },
   "furnishing": {
     "title": "Relajatetera",
@@ -967,6 +983,7 @@
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
     "chasm": "",
+    "sumeru": "",
     "setEmpty": "Poner como vacío",
     "emptyTime": "Tiempo cuando el punto está vacío:",
     "clear": "Borrar",
@@ -991,6 +1008,10 @@
     "lastAppearance": "",
     "lastAppearanceDesc": "",
     "bannerHover": "",
-    "birthday": ""
+    "birthday": "",
+    "sortByTime": "",
+    "sortByRerun": "",
+    "bannerTitle": "",
+    "bannerSubtitle": ""
   }
 }
