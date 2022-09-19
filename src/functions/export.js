@@ -141,7 +141,8 @@ async function addWishHistory(workbook) {
       { header: 'Pity', width: 4, style: { alignment: { horizontal: 'center' } } },
       { header: '#Roll', width: 7, style: { alignment: { horizontal: 'center' } } },
       { header: 'Group', width: 7, style: { alignment: { horizontal: 'center' } } },
-      { header: 'Banner', width: 24 },
+      { header: 'Banner', width: 30 },
+      { header: 'Part', width: 9 },
       // { header: 'Icon', width: 5.5 },
     ];
 
@@ -175,10 +176,11 @@ async function addWishHistory(workbook) {
         pull.at,
         groupCount,
         pull.code === '400' ? bannersDual[pull.banner.fullName][1].name : pull.banner.name,
+        pull.code === '400' ? 'Wish 2' : '',
       ]);
 
       const bgColor = pull.striped ? 'ffeeeeee' : 'ffffffff';
-      for (let i = 1; i <= 8; i++) {
+      for (let i = 1; i <= 9; i++) {
         row.getCell(i).fill = {
           type: 'pattern',
           pattern: 'solid',
