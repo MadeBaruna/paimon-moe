@@ -71,9 +71,24 @@
     };
 
     charactersDays = {
-      monday_thursday: {},
-      tuesday_friday: {},
-      wednesday_saturday: {},
+      monday_thursday: {
+        teachings_of_freedom: [],
+        teachings_of_prosperity: [],
+        teachings_of_transience: [],
+        teachings_of_admonition: [],
+      },
+      tuesday_friday: {
+        teachings_of_resistance: [],
+        teachings_of_diligence: [],
+        teachings_of_elegance: [],
+        teachings_of_ingenuity: [],
+      },
+      wednesday_saturday: {
+        teachings_of_ballad: [],
+        teachings_of_gold: [],
+        teachings_of_light: [],
+        teachings_of_praxis: [],
+      },
     };
 
     weaponsDays = {
@@ -97,6 +112,17 @@
           charactersDays[item.day.join('_')][item.id] = [];
         }
         charactersDays[item.day.join('_')][item.id].push(character.id);
+
+        if (character.id.startsWith('traveler')) {
+          for (let i = 1; i <= 2; i++) {
+            const e = character.material.book[i];
+            const parent = itemList[e.parent];
+            if (charactersDays[parent.day.join('_')][parent.id] === undefined) {
+              charactersDays[parent.day.join('_')][parent.id] = [];
+            }
+            charactersDays[parent.day.join('_')][parent.id].push(character.id);
+          }
+        }
 
         const ascension = character.ascension[1];
         for (const item of ascension.items) {
@@ -217,7 +243,7 @@
                     <a
                       href="/characters/{char}"
                       class="h-12 w-12 md:h-14 md:w-14 cursor-pointer mr-2 hover:bg-background rounded-xl 
-                       inline-flex items-center justify-center align-top"
+                       inline-flex items-center justify-center align-top relative"
                     >
                       <img
                         class="w-full max-h-full object-contain"
@@ -226,6 +252,14 @@
                         title={characters[char].name}
                         loading="lazy"
                       />
+                      {#if char.startsWith('traveler')}
+                        <img
+                          class="w-6 h-6 object-contain absolute bottom-0 right-0"
+                          src={`/images/elements/${char.split('_')[1]}.png`}
+                          alt=""
+                          loading="lazy"
+                        />
+                      {/if}
                     </a>
                   {/each}
                 </td>

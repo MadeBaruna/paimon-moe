@@ -12,21 +12,47 @@
   const dispatch = createEventDispatcher();
 
   let today = getCurrentDay();
-  let characterItems = {};
+  let characterItems = [];
   let weaponItems = {};
+
+  const order = {
+    teachings_of_freedom: 0,
+    teachings_of_prosperity: 1,
+    teachings_of_transience: 2,
+    teachings_of_admonition: 3,
+    teachings_of_resistance: 4,
+    teachings_of_diligence: 5,
+    teachings_of_elegance: 6,
+    teachings_of_ingenuity: 7,
+    teachings_of_ballad: 8,
+    teachings_of_gold: 9,
+    teachings_of_light: 10,
+    teachings_of_praxis: 11,
+  };
 
   function parseTalentBook() {
     const _characters = {};
     const _weapons = {};
 
     for (const [_, character] of Object.entries(characters)) {
+      const isTraveler = character.id.startsWith('traveler');
       const item = character.material.book[0];
-      if (!item.day.includes(today)) continue;
-
-      if (_characters[item.id] === undefined) {
-        _characters[item.id] = [];
+      if (!isTraveler) {
+        if (!item.day.includes(today)) continue;
+        if (_characters[item.id] === undefined) {
+          _characters[item.id] = [];
+        }
+        _characters[item.id].push(character.id);
+      } else {
+        for (let i = 0; i <= 2; i++) {
+          const e = character.material.book[i];
+          if (!e.day.includes(today)) continue;
+          if (_characters[e.parent] === undefined) {
+            _characters[e.parent] = [];
+          }
+          _characters[e.parent].push(character.id);
+        }
       }
-      _characters[item.id].push(character.id);
     }
 
     for (const [_, weapon] of Object.entries(weaponList)) {
@@ -41,7 +67,7 @@
       }
     }
 
-    characterItems = _characters;
+    characterItems = Object.entries(_characters).sort((a, b) => order[a[0]] - order[b[0]]);
     weaponItems = _weapons;
   }
 
@@ -69,22 +95,30 @@
     <div class="text-white">{$t('home.items.sunday')}</div>
   {:else}
     <table>
-      {#each Object.entries(characterItems) as [id, characters]}
+      {#each characterItems as [id, characters]}
         <tr>
           <td class="border-b border-gray-700 h-14 w-14 pr-2 py-2 align-middle">
             <img class="w-full" src="/images/items/{id}.png" alt={id} title={id} />
           </td>
           <td class="border-b border-gray-700 pt-2 align-middle">
             {#each characters as char}
-              <a href="/characters/{char}">
+              <a href="/characters/{char}" class="relative">
                 <img
-                  class="h-10 w-auto mb-2 mr-2 inline rounded-full"
+                  class="h-10 w-auto mb-2 mr-1 inline rounded-full"
                   src="/images/characters/{char}.png"
                   alt={char}
                   title={char}
                   width="40"
                   height="40"
                 />
+                {#if char.startsWith('traveler')}
+                  <img
+                    class="w-6 h-6 object-contain absolute -bottom-2 right-2"
+                    src={`/images/elements/${char.split('_')[1]}.png`}
+                    alt=""
+                    loading="lazy"
+                  />
+                {/if}
               </a>
             {/each}
           </td>
@@ -93,7 +127,7 @@
       <tr>
         <td colspan="2" class="py-2 align-middle">
           {#each Object.entries(weaponItems) as [id, _]}
-            <img class="max-w-[2.5rem] h-auto inline-block mr-4" src="/images/items/{id}.png" alt={id} title={id} />
+            <img class="max-w-[2.5rem] h-auto inline-block mr-3" src="/images/items/{id}.png" alt={id} title={id} />
           {/each}
         </td>
       </tr>
