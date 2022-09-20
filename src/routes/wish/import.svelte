@@ -95,7 +95,7 @@
   };
 
   let powershellScript = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/f35a446e3ad08bff3ebcfa250ec46d0ea4bde225/getlink.ps1'))} global"`;
-  let powershellScriptChina = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/f35a446e3ad08bff3ebcfa250ec46d0ea4bde225/getlink.ps1'))} global"`;
+  let powershellScriptChina = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/f35a446e3ad08bff3ebcfa250ec46d0ea4bde225/getlink.ps1'))} china"`;
   let powershellScriptSource = 'https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235';
   let powershellScriptAlt = `iex('Write-Host "Copy the wish history table!";while(1) { $c = Get-Clipboard -TextFormatType Html; if ($c -match "^SourceURL:https:/.+log") { break; }; for($i=5; $i -gt 0; $i--) { Write-Host "\`rChecking in $i" -NoNewline; Sleep 1; }; }; Write-Host " OK"; $m=(((Get-Clipboard -TextFormatType Html) | Select-String "(https:/.+log)").Matches[0].Value);$m; Set-Clipboard -Value $m;')`;
   let powershellScriptAlt2 =
