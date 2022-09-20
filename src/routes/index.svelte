@@ -1,6 +1,6 @@
 <script context="module">
   export async function load({ fetch }) {
-    const promoted = ['xingqiu', 'sucrose'];
+    const promoted = ['ganyu', 'sangonomiya_kokomi'];
     const builds = {};
     for (const p of promoted) {
       const response = await fetch(`/characters/build/${p}.json`);
