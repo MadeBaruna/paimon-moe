@@ -7,11 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = [
-  'Adjust item list for traveler',
-  'Update excel import to support other language',
-  'Update character guides',
-];
+const changelog = ['Bug fixes', 'Update excel import to support other language'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
