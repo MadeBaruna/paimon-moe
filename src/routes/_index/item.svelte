@@ -44,7 +44,7 @@
         }
         _characters[item.id].push(character.id);
       } else {
-        for (let i = 0; i <= 2; i++) {
+        for (let i = 1; i <= 3; i++) {
           const e = character.material.book[i];
           if (!e.day.includes(today)) continue;
           if (_characters[e.parent] === undefined) {
