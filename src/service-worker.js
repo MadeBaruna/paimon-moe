@@ -7,7 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Bug fixes', 'Update excel import to support other language'];
+const changelog = ['Update timeline'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 

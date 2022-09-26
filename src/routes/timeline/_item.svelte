@@ -50,7 +50,9 @@
   {#if started && !ended && !event.startOnly && !attachedNext}
     <div
       class="absolute pl-3"
-      style="top: 6px; right: {nextNearby ? '-55px' : '-120px'}; width: {shouldShowHourEnd ? '120px' : '40px'};"
+      style="top: 6px; right: {nextNearby ? '-55px' : shouldShowHourEnd ? '-120px' : '-40px'}; width: {shouldShowHourEnd
+        ? '120px'
+        : '40px'};"
     >
       <span class="text-sm rounded-xl text-black font-semibold bg-white bg-opacity-75 px-1">
         {diffEnd > 86400000
