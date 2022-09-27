@@ -8881,6 +8881,7 @@ export const weaponList = {
     name: 'Staff of the Scarlet Sands',
     rarity: 5,
     atk: 44,
+    source: 'wish',
     secondary: 'Crit Rate',
     type: weapons.polearm,
     ascension: [
@@ -8993,6 +8994,7 @@ export const weaponList = {
     name: 'Key of Khaj-Nisut',
     rarity: 5,
     atk: 44,
+    source: 'wish',
     secondary: 'HP',
     type: weapons.sword,
     ascension: [
@@ -9105,6 +9107,7 @@ export const weaponList = {
     name: 'Makhaira Aquamarine',
     rarity: 4,
     atk: 42,
+    source: 'wish',
     secondary: 'Elemental Mastery',
     type: weapons.claymore,
     ascension: [
@@ -9217,6 +9220,7 @@ export const weaponList = {
     name: "Xiphos' Moonlight",
     rarity: 4,
     atk: 42,
+    source: 'wish',
     secondary: 'Elemental Mastery',
     type: weapons.sword,
     ascension: [
@@ -9329,6 +9333,7 @@ export const weaponList = {
     name: 'Wandering Evenstar',
     rarity: 4,
     atk: 42,
+    source: 'wish',
     secondary: 'Elemental Mastery',
     type: weapons.catalyst,
     ascension: [
@@ -9441,6 +9446,7 @@ export const weaponList = {
     name: 'Missive Windspear',
     rarity: 4,
     atk: 42,
+    source: 'Of Ballads and Brews Event',
     secondary: 'ATK',
     type: weapons.polearm,
     ascension: [
