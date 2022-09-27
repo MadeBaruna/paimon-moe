@@ -8876,4 +8876,676 @@ export const weaponList = {
       },
     ],
   },
+  staff_of_the_scarlet_sands: {
+    id: 'staff_of_the_scarlet_sands',
+    name: 'Staff of the Scarlet Sands',
+    rarity: 5,
+    atk: 44,
+    secondary: 'Crit Rate',
+    type: weapons.polearm,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_reminiscence,
+            amount: 5,
+          },
+          {
+            item: itemList.chaos_storage,
+            amount: 5,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 5,
+          },
+          {
+            item: itemList.chaos_storage,
+            amount: 18,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 9,
+          },
+          {
+            item: itemList.chaos_module,
+            amount: 9,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 5,
+          },
+          {
+            item: itemList.chaos_module,
+            amount: 18,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 9,
+          },
+          {
+            item: itemList.chaos_bolt,
+            amount: 14,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_truth,
+            amount: 6,
+          },
+          {
+            item: itemList.chaos_bolt,
+            amount: 27,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  'key_of_khaj-nisut': {
+    id: 'key_of_khaj-nisut',
+    name: 'Key of Khaj-Nisut',
+    rarity: 5,
+    atk: 44,
+    secondary: 'HP',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.copper_talisman_of_the_forest_dew,
+            amount: 5,
+          },
+          {
+            item: itemList.damaged_prism,
+            amount: 5,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 5,
+          },
+          {
+            item: itemList.damaged_prism,
+            amount: 18,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 9,
+          },
+          {
+            item: itemList.turbid_prism,
+            amount: 9,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 5,
+          },
+          {
+            item: itemList.turbid_prism,
+            amount: 18,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 9,
+          },
+          {
+            item: itemList.radiant_prism,
+            amount: 14,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_talisman_of_the_forest_dew,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_prism,
+            amount: 27,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  makhaira_aquamarine: {
+    id: 'makhaira_aquamarine',
+    name: 'Makhaira Aquamarine',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Elemental Mastery',
+    type: weapons.claymore,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.echo_of_scorching_might,
+            amount: 3,
+          },
+          {
+            item: itemList.chaos_storage,
+            amount: 3,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.remnant_glow_of_scorching_might,
+            amount: 3,
+          },
+          {
+            item: itemList.chaos_storage,
+            amount: 12,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.remnant_glow_of_scorching_might,
+            amount: 6,
+          },
+          {
+            item: itemList.chaos_module,
+            amount: 6,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_scorching_might,
+            amount: 3,
+          },
+          {
+            item: itemList.chaos_module,
+            amount: 12,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_scorching_might,
+            amount: 6,
+          },
+          {
+            item: itemList.chaos_bolt,
+            amount: 9,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.olden_days_of_scorching_might,
+            amount: 4,
+          },
+          {
+            item: itemList.chaos_bolt,
+            amount: 18,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  xiphos_moonlight: {
+    id: 'xiphos_moonlight',
+    name: "Xiphos' Moonlight",
+    rarity: 4,
+    atk: 42,
+    secondary: 'Elemental Mastery',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.copper_talisman_of_the_forest_dew,
+            amount: 3,
+          },
+          {
+            item: itemList.damaged_prism,
+            amount: 3,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 3,
+          },
+          {
+            item: itemList.damaged_prism,
+            amount: 12,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 6,
+          },
+          {
+            item: itemList.turbid_prism,
+            amount: 6,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 3,
+          },
+          {
+            item: itemList.turbid_prism,
+            amount: 12,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_prism,
+            amount: 9,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_talisman_of_the_forest_dew,
+            amount: 4,
+          },
+          {
+            item: itemList.radiant_prism,
+            amount: 18,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  wandering_evenstar: {
+    id: 'wandering_evenstar',
+    name: 'Wandering Evenstar',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Elemental Mastery',
+    type: weapons.catalyst,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_reminiscence,
+            amount: 3,
+          },
+          {
+            item: itemList.inactivated_fungal_nucleus,
+            amount: 3,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 3,
+          },
+          {
+            item: itemList.inactivated_fungal_nucleus,
+            amount: 12,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 6,
+          },
+          {
+            item: itemList.dormant_fungal_nucleus,
+            amount: 6,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 3,
+          },
+          {
+            item: itemList.dormant_fungal_nucleus,
+            amount: 12,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 6,
+          },
+          {
+            item: itemList.robust_fungal_nucleus,
+            amount: 9,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_truth,
+            amount: 4,
+          },
+          {
+            item: itemList.robust_fungal_nucleus,
+            amount: 18,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  missive_windspear: {
+    id: 'missive_windspear',
+    name: 'Missive Windspear',
+    rarity: 4,
+    atk: 42,
+    secondary: 'ATK',
+    type: weapons.polearm,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_milk_tooth,
+            amount: 3,
+          },
+          {
+            item: itemList.gloomy_statuette,
+            amount: 3,
+          },
+          {
+            item: itemList.slime_condensate,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_cracked_tooth,
+            amount: 3,
+          },
+          {
+            item: itemList.gloomy_statuette,
+            amount: 12,
+          },
+          {
+            item: itemList.slime_condensate,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_cracked_tooth,
+            amount: 6,
+          },
+          {
+            item: itemList.dark_statuette,
+            amount: 6,
+          },
+          {
+            item: itemList.slime_secretions,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_broken_fang,
+            amount: 3,
+          },
+          {
+            item: itemList.dark_statuette,
+            amount: 12,
+          },
+          {
+            item: itemList.slime_secretions,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_broken_fang,
+            amount: 6,
+          },
+          {
+            item: itemList.deathly_statuette,
+            amount: 9,
+          },
+          {
+            item: itemList.slime_concentrate,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_nostalgia,
+            amount: 4,
+          },
+          {
+            item: itemList.deathly_statuette,
+            amount: 18,
+          },
+          {
+            item: itemList.slime_concentrate,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };

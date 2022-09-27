@@ -1076,4 +1076,17 @@ export const itemList = {
     rarity: 5,
     parent: 'vajrada_amethyst_sliver',
   },
+
+  damaged_prism: {
+    id: 'damaged_prism',
+    name: 'Damaged Prism',
+  },
+  turbid_prism: {
+    id: 'turbid_prism',
+    name: 'Turbid Prism',
+  },
+  radiant_prism: {
+    id: 'radiant_prism',
+    name: 'Radiant Prism',
+  },
 };
