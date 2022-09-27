@@ -1067,4 +1067,13 @@ export const itemList = {
     rarity: 5,
     parent: 'vajrada_amethyst_sliver',
   },
+
+  scarab: { id: 'scarab', name: 'Scarab' },
+  redcrest: { id: 'redcrest', name: 'Redcrest' },
+  light_guiding_tetrahedron: {
+    id: 'light_guiding_tetrahedron',
+    name: 'Light Guiding Tetrahedron',
+    rarity: 5,
+    parent: 'vajrada_amethyst_sliver',
+  },
 };

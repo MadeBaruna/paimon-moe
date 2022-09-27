@@ -1532,6 +1532,24 @@ export const builds = {
       },
     },
   },
+  cyno: {
+    roles: {
+      TBD: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
   xingqiu: {
     roles: {
       'OFF-FIELD DPS (C6)': {
@@ -1733,6 +1751,24 @@ export const builds = {
         talent: ['Skill', 'Burst'],
         tip: "Barbara's skill gives you a pulse of healing every 5 seconds, every pulse will imbue you with a Hydro status, that means it can be used for status-cleansing (Pyro in specific, while other elements may take more pulses).\n\nTake note that Hydro reacting with Cryo status will freeze you in place, her skill should be used in consideration of the environment",
         note: 'Use Elemental Skill and/or Elemental Burst and immediately switch. Building ER is <b>not recommended</b> on Support Barbara as her burst should be used as a last resort and should not be expected to be cast every rotation. This is further compounded by the fact that Barbara has no particle generation. For this reason, Ocean-Hued Clam is also <b>not recommended</b> for Support Barbara.\n\n<b>Regarding Weapon Choices: \nEverlasting Moonglow:</b> For Electro-Charged teams, this weapon will provide the highest personal damage for Barbara. However, <b>Thrilling Tales of Dragon Slayers</b> will still provide the highest team damage due to its 48 ATK% buff. \n\n<b>Regarding Artifact Sets:</b>\n<b>Maiden Beloved (4): </b>This is a very resin inefficient set and should not be intentionally farmed for.\n<b>Instructor (4): </b>The hydro application from Elemental Skill can be used to trigger an elemental reaction and provide a teamwide Elemental Mastery buff.',
+      },
+    },
+  },
+  candace: {
+    roles: {
+      TBD: {
+        recommended: true,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
       },
     },
   },
