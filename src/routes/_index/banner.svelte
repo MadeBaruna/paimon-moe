@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    ganyu: {
-      name: 'Ganyu',
+    venti: {
+      name: 'Venti',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    sangonomiya_kokomi: {
-      name: 'Sangonomiya Kokomi',
+    cyno: {
+      name: 'Cyno',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300035;
-  const image = 'ganyukokomi.png';
+  const bannerId = 300036;
+  const image = 'venticyno.png';
   const width = 800;
-  const height = 515;
+  const height = 523;
 
   let loading = true;
   let user = '';
