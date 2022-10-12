@@ -65,9 +65,9 @@
   };
 
   const videoTutorial = {
-    android: 'https://www.youtube.com/watch?v=6C5Zqhcm3NI',
-    android2: 'https://www.youtube.com/watch?v=rHN1iRjmKmc',
-    android3: 'https://www.youtube.com/watch?v=jAKq94KpGHA',
+    // android: 'https://www.youtube.com/watch?v=6C5Zqhcm3NI',
+    // android2: 'https://www.youtube.com/watch?v=rHN1iRjmKmc',
+    // android3: 'https://www.youtube.com/watch?v=jAKq94KpGHA',
     pc: 'https://www.youtube.com/watch?v=FCwZkHeIezw',
     pc3: 'https://www.youtube.com/watch?v=ojZzl3dmppI',
     pc4: 'https://www.youtube.com/watch?v=ojZzl3dmppI',
@@ -1035,7 +1035,7 @@
       </div>
     </div>
   {/if}
-  {#if ['android', 'android2', 'android3'].includes(selectedType)}
+  <!-- {#if ['android', 'android2', 'android3'].includes(selectedType)}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
@@ -1070,7 +1070,7 @@
         </div>
       </div>
     </div>
-  {/if}
+  {/if} -->
   {#if videoTutorial[selectedType] !== undefined}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
@@ -1345,7 +1345,10 @@
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
       <div class="content flex-col items-center pb-8">
-        <p class="text-white">{$t('wish.import.soon30')}</p>
+        <p class="text-white">
+          The old android method is not working on 3.1, please join our Discord server for updates!
+        </p>
+        <p class="text-white">If you can get the link, you can use the import as usual.</p>
       </div>
     </div>
     <!-- {#each Array(steps[selectedType]) as _, i}
