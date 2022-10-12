@@ -7,14 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = [
-  'Added Cyno & Candace',
-  'Added new weapons',
-  'Added new banners',
-  'Update achievements',
-  'Update furnishing',
-  'Update timeline',
-];
+const changelog = ['Update timeline'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
