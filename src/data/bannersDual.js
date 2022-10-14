@@ -253,4 +253,28 @@ export const bannersDual = {
       version: '3.1',
     },
   ],
+  'Twirling Lotus 1': [
+    {
+      name: 'Twirling Lotus',
+      image: 1,
+      shortName: 'Nilou',
+      start: '2022-10-14 18:00:00',
+      end: '2022-11-01 14:59:59',
+      color: '#b2e0f0',
+      featured: ['nilou', 'albedo'],
+      featuredRare: ['barbara', 'xiangling', 'beidou'],
+      version: '3.2',
+    },
+    {
+      name: 'Secretum Secretorum',
+      image: 3,
+      shortName: 'Nilou',
+      start: '2022-10-14 18:00:00',
+      end: '2022-11-01 14:59:59',
+      color: '#b2e0f0',
+      featured: ['nilou', 'albedo'],
+      featuredRare: ['barbara', 'xiangling', 'beidou'],
+      version: '3.2',
+    },
+  ],
 };
