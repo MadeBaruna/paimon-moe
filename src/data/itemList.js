@@ -1089,4 +1089,14 @@ export const itemList = {
     id: 'radiant_prism',
     name: 'Radiant Prism',
   },
+
+  perpetual_caliber: {
+    id: 'perpetual_caliber',
+    name: 'Perpetual Caliber',
+    rarity: 4,
+  },
+  padisarah: {
+    id: 'padisarah',
+    name: 'Padisarah',
+  },
 };

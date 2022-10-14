@@ -424,7 +424,11 @@
                                 <Tooltip title={$t(obj.item.name)}>
                                   <span class="mr-2 bg-background rounded-xl">
                                     <span class="w-8 h-8 inline-block">
-                                      <img src="/images/items/{obj.item.id}.png" alt={obj.item} class="inline h-full" />
+                                      <img
+                                        src="/images/items/{obj.item.id}.png"
+                                        alt={obj.item.name}
+                                        class="inline h-full"
+                                      />
                                     </span>
                                     <Icon size={0.5} path={mdiClose} /><span>{obj.amount}</span>
                                   </span>
@@ -746,7 +750,7 @@
     <SkillCard {id} image="talent_2" data={data.elementalSkill} withQuote={true} />
     <SkillCard {id} image="talent_3" data={data.burst} withQuote={true} />
     {#if data.dashSkill}
-      <SkillCard {id} image="talent_7" data={data.dashSkill} withQuote={true} withSingleLevel={true}/>
+      <SkillCard {id} image="talent_7" data={data.dashSkill} withQuote={true} withSingleLevel={true} />
     {/if}
   </div>
   <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl">
