@@ -14,24 +14,24 @@
 
   const featured = {
     venti: {
-      name: 'Venti',
+      name: 'Nilou',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
     cyno: {
-      name: 'Cyno',
+      name: 'Albedo',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300036;
-  const image = 'venticyno.png';
+  const bannerId = 300037;
+  const image = 'nilou_albedo.png';
   const width = 800;
-  const height = 523;
+  const height = 490;
 
   let loading = true;
   let user = '';
