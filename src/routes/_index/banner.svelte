@@ -13,14 +13,14 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    venti: {
+    nilou: {
       name: 'Nilou',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    cyno: {
+    albedo: {
       name: 'Albedo',
       rarity: 'legendary',
       count: 0,

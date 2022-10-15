@@ -1004,7 +1004,7 @@ export const banners = {
       end: '2022-11-01 14:59:59',
       shortName: 'Nisut',
       color: '#eae5e1',
-      featured: ['key_of_khaj-nisut', 'primordial_jade_winged-spear'],
+      featured: ['key_of_khaj-nisut', 'primordial_jade_cutter'],
       featuredRare: ['xiphos_moonlight', 'wandering_evenstar', 'rainslasher', 'dragons_bane', 'sacrificial_bow'],
       version: '3.2',
     },
