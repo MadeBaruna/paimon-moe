@@ -69,12 +69,13 @@
             pos: pos5,
             length: 0,
           };
-          _names5[pos5] = { name: characters[char].name, length: 0 };
+          _names5[pos5] = { name: characters[char].name, length: 0, runs: 1 };
           _rows5[pos5] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
           pos5++;
         } else {
           _rows5[_chars5[char].pos][len] = { char, l: 0 };
           _names5[_chars5[char].pos].length = 0;
+          _names5[_chars5[char].pos].runs++;
           _chars5[char].length = 0;
         }
       }
@@ -85,12 +86,13 @@
             pos: pos4,
             length: 0,
           };
-          _names4[pos4] = { name: characters[char].name, length: 0 };
+          _names4[pos4] = { name: characters[char].name, length: 0, runs: 1 };
           _rows4[pos4] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
           pos4++;
         } else {
           _rows4[_chars4[char].pos][len] = { char, l: 0 };
           _names4[_chars4[char].pos].length = 0;
+          _names4[_chars4[char].pos].runs++;
           _chars4[char].length = 0;
         }
       }
@@ -147,12 +149,13 @@
             pos: pos5,
             length: 0,
           };
-          _names5[pos5] = { name: weaponList[char].name, length: 0 };
+          _names5[pos5] = { name: weaponList[char].name, length: 0, runs: 1 };
           _rows5[pos5] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
           pos5++;
         } else {
           _rows5[_chars5[char].pos][len] = { char, l: 0 };
           _names5[_chars5[char].pos].length = 0;
+          _names5[_chars5[char].pos].runs++;
           _chars5[char].length = 0;
         }
       }
@@ -163,12 +166,13 @@
             pos: pos4,
             length: 0,
           };
-          _names4[pos4] = { name: weaponList[char].name, length: 0 };
+          _names4[pos4] = { name: weaponList[char].name, length: 0, runs: 1 };
           _rows4[pos4] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
           pos4++;
         } else {
           _rows4[_chars4[char].pos][len] = { char, l: 0 };
           _names4[_chars4[char].pos].length = 0;
+          _names4[_chars4[char].pos].runs++;
           _chars4[char].length = 0;
         }
       }
@@ -277,7 +281,11 @@
                 >
               {/if}
             {/each}
-            <td class="border border-gray-600 text-white px-2 text-xs">{$t(names[rowIndex].name)}</td>
+            {#if names[rowIndex].runs}
+              <td class="border border-gray-600 text-white px-2 text-xs">{$t(names[rowIndex].name)} ({names[rowIndex].runs})</td>
+            {:else}
+              <td class="border border-gray-600 text-white px-2 text-xs">{$t(names[rowIndex].name)}</td>
+            {/if}
           </tr>
         {/each}
         {#each rowsWep as r, rowIndex}
@@ -295,9 +303,15 @@
                 >
               {/if}
             {/each}
-            <td class="border border-gray-600 text-white px-2 text-xs max-w-[2rem] whitespace-pre-wrap"
-              >{$t(namesWep[rowIndex].name)}</td
-            >
+            {#if namesWep[rowIndex].runs}
+              <td class="border border-gray-600 text-white px-2 text-xs max-w-[2rem] whitespace-pre-wrap"
+                >{$t(namesWep[rowIndex].name)} ({namesWep[rowIndex].runs})</td
+              >
+            {:else}
+              <td class="border border-gray-600 text-white px-2 text-xs max-w-[2rem] whitespace-pre-wrap"
+                >{$t(namesWep[rowIndex].name)}</td
+              >
+            {/if}
           </tr>
         {/each}
       </tbody>
