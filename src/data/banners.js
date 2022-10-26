@@ -559,7 +559,7 @@ export const banners = {
       color: '#b2e0f0',
       featured: ['nilou', 'albedo'],
       featuredRare: ['barbara', 'xiangling', 'beidou'],
-      version: '3.2',
+      version: '3.1',
     },
     // {
     //   name: 'Secretum Secretorum',
