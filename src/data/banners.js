@@ -1006,7 +1006,7 @@ export const banners = {
       color: '#eae5e1',
       featured: ['key_of_khaj-nisut', 'primordial_jade_cutter'],
       featuredRare: ['xiphos_moonlight', 'wandering_evenstar', 'rainslasher', 'dragons_bane', 'sacrificial_bow'],
-      version: '3.2',
+      version: '3.1',
     },
   ],
 };
