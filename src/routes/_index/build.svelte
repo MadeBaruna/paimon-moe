@@ -25,6 +25,8 @@
         return 'gladiators_finale';
       case '+20%_energy_recharge':
         return 'emblem_of_severed_fate';
+      case '+25%_physical_dmg':
+        return 'pale_flame';
       default:
         return artifact;
     }
