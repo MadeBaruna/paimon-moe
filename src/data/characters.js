@@ -4354,6 +4354,151 @@ export const characters = {
     },
     element: elements.hydro,
   },
+  nahida: {
+    id: 'nahida',
+    name: 'Nahida',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 10360,
+      atk: 299,
+      def: 630,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 3,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 2,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 10,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 4,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 20,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 8,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 30,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 12,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 45,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 20,
+          },
+          {
+            item: itemList.kalpalata_lotus,
+            amount: 60,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.fungal_spores, itemList.luminescent_pollen, itemList.crystalline_cyst_dust],
+      book: [itemList.teachings_of_ingenuity, itemList.guide_to_ingenuity, itemList.philosophies_of_ingenuity],
+      boss: itemList.puppet_strings,
+    },
+    element: elements.dendro,
+  },
   nilou: {
     id: 'nilou',
     name: 'Nilou',

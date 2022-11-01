@@ -1099,4 +1099,14 @@ export const itemList = {
     id: 'padisarah',
     name: 'Padisarah',
   },
+  quelled_creeper: {
+    id: 'quelled_creeper',
+    name: 'Quelled Creeper',
+    rarity: 5,
+    parent: 'nagadus_emerald_sliver',
+  },
+  puppet_strings: {
+    id: 'puppet_strings',
+    name: 'Puppet Strings',
+  },
 };
