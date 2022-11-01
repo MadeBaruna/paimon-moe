@@ -215,7 +215,7 @@ export const eventsData = [
       showOnHome: true,
     },
     {
-      name: "The Moongrass' Enlightenment",
+      name: "The Moongrass' Enlightenment - Nahida Banner",
       pos: '30% 15%',
       zoom: '200%',
       image: 'the_moongrass_enlightenment_1.jpg',
