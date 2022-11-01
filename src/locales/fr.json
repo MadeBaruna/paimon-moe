@@ -9,14 +9,14 @@
     "achievement": "Succès",
     "reminder": "Rappel",
     "todoList": "Liste de tâches",
-    "timeline": "Calendrier",
+    "timeline": "Ligne de temps",
     "furnishing": "Décorations",
     "weapons": "Armes",
     "artifacts": "Artéfacts",
     "fishing": "Pêche",
     "radiantSpincrystal": "Gyrocristal radiant",
     "calendar": "Calendrier",
-    "banners": "",
+    "banners": "Apparitions des personnages",
     "settings": "Paramètres",
     "donate": "Donner"
   },
@@ -188,7 +188,7 @@
       ],
       "forceUpdateCheck": "Forcer la mise à jour de l'historique de vœux (À activer uniquement si votre historique de vœux ne se met pas à jour)",
       "header": [
-        "Importez et sauvegardez votre historique de vœux de Genshin Impact afin de le conserver plus de 6 mois. De plus, suivez automatiquement votre pity et les statistiques de vos vœux !",
+        "Importez et sauvegardez votre historique de vœux de Genshin Impact afin de le conserver plus de 6 mois. De plus, suivez automatique votre pity et les statistiques de vos vœux !",
         "Vous pouvez également activer Drive Sync dans les Paramètres afin de synchroniser et sauvegarder l'historique sur votre Google Drive",
         "Veuillez noter que l'ancien lien de rétroaction ne fonctionne plus, veuillez suivre les nouvelles instructions ci-dessous !"
       ],
@@ -230,8 +230,8 @@
       "method": {
         "pc": "Méthode 1",
         "pc3": "Méthode 2",
-        "pc4": "",
-        "pc5": "",
+        "pc4": "Méthode 2 alternative",
+        "pc5": "Manuelle",
         "android": "Wifi",
         "android2": "Données de cellule",
         "android3": "Alternative"
@@ -270,15 +270,15 @@
           "Collez le lien ici... https://webstatic..."
         ],
         "pc5": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Ouvrez Genshin Impact sur ce PC (Si vous utilisez plusieurs comptes, veuillez redémarrer le jeu)",
+          "Ouvrez ensuite l'historique de vœux dans le jeu et attendez qu'il charge",
+          "Puis ouvrez le dossier où votre jeu est installé (exemple : C:\\Games\\Genshin Impact)",
+          "Ouvrez ensuite le dossier GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "Faites un clic droit sur le fichier \"data_2\" puis cliquez sur \"Ouvrir avec\" puis sélectionnez Bloc-notes (Si vous obtenez une erreur comme \"Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus\", veuillez d'abord quitter le jeu)",
+          "Appuyez sur CTRL+F puis cochez \"Retour à la ligne\" et sélectionnez la direction \"Haut\" puis dans la zone de saisie rechercher \"e20190909gacha-v2\" (sans les guillemets) puis cliquez sur \"Suivant\"",
+          "Copiez tout le lien depuis https://webstatic jusqu'à game_biz=hk4e_global, l'url ressemble à ceci : https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
+          "Collez le texte dans la zone de texte ci-dessous",
+          "Collez le lien ici... https://webstatic..."
         ],
         "pclog": [
           "Ouvrez Genshin Impact dans ce PC (Si vous utilisez plusieurs comptes, veuillez redémarrer le jeu)",
@@ -886,8 +886,8 @@
     "version": "Version",
     "type": "Catégorie",
     "searchError": "Impossible de trouver la réalisation: {query}",
-    "quest": "",
-    "checklist": ""
+    "quest": "Quête",
+    "checklist": "Check-list"
   },
   "furnishing": {
     "title": "Décorations",
@@ -983,7 +983,7 @@
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
     "chasm": "Gouffre",
-    "sumeru": "",
+    "sumeru": "Sumeru",
     "setEmpty": "Définir comme vide",
     "emptyTime": "Temps où la case est vide :",
     "clear": "Effacer",
@@ -1009,9 +1009,9 @@
     "lastAppearanceDesc": "Quelle est la dernière apparition du personnage sur une bannière limitée",
     "bannerHover": "Il y a X bannières",
     "birthday": "Anniversaire",
-    "sortByTime": "",
-    "sortByRerun": "",
-    "bannerTitle": "",
-    "bannerSubtitle": ""
+    "sortByTime": "Triés par première apparition",
+    "sortByRerun": "Triés par plus ancienne apparition",
+    "bannerTitle": "Chronologie des sorties de personnages",
+    "bannerSubtitle": "Voir les sorties de personnages et leurs dernières apparitions"
   }
 }

@@ -16,7 +16,7 @@
     "fishing": "Pesca",
     "radiantSpincrystal": "Girocristal radiante",
     "calendar": "Calendario",
-    "banners": "",
+    "banners": "Reruns del personaje",
     "settings": "Configuración",
     "donate": "Donar"
   },
@@ -192,8 +192,8 @@
         "También puedes activar Drive Sync en Configuración y hacer un backup de tu historial de deseos en tu Google Drive",
         "Por favor, ten en cuenta que el antiguo enlace de feedback ya no funciona, por favor sigue las nuevas instrucciones a continuación!"
       ],
-      "notice30": "",
-      "soon30": "",
+      "notice30": "El historial de deseos ha cambiado con la versión 3.0, ¡por favor, sigue los nuevos pasos a continuación!",
+      "soon30": "El tutorial de texto viene pronto, por ahora ¡por favor mira el video de arriba!",
       "faqs": {
         "title": "FAQ del importado de deseos",
         "q1": "¿Cómo funciona?",
@@ -228,13 +228,13 @@
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\原神\\output_log.txt"
       },
       "method": {
-        "pc": "",
-        "pc3": "",
-        "pc4": "",
-        "pc5": "",
-        "android": "",
-        "android2": "",
-        "android3": ""
+        "pc": "Método 1",
+        "pc3": "Método 2",
+        "pc4": "Método 2 Alt",
+        "pc5": "Manual",
+        "android": "Wifi",
+        "android2": "Cell Data",
+        "android3": "Alternative"
       },
       "guide": {
         "video": "Video Tutorial",
@@ -260,25 +260,25 @@
           "Pegue el enlace aquí... https://webstatic..."
         ],
         "pc3": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Presiona START en tu teclado, luego busca Powershell",
+          "Haga clic en Windows Powershell, luego copie y pegue el script de abajo en Powershell, luego presione ENTRAR (sólo cuando el mensaje 'Pulse Entrar para continuar...' no se muestra todavía)",
+          "Abrir Genshin Impact en este PC",
+          "Luego abre el historial de deseos del juego y espera que cargue",
+          "Haz clic en la tabla, luego presiona CTRL + A y luego CTRL + C",
+          "Alt+Tab a powershell, luego presiona ENTRAR, el enlace se copiará al portapapeles",
+          "Pega el texto al cuadro de texto de abajo",
+          "Pegue el enlace aquí... https://webstatic..."
         ],
         "pc5": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Abre Genshin Impact en una PC (Si utiliza varias cuentas, reinicie el juego)",
+          "Luego abre el historial de deseos del juego y espera que cargue",
+          "Luego abre la carpeta donde está instalado tu juego (ejemplo: C:\\Games\\Genshin Impact)",
+          "Luego abre la carpeta GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "Haga clic con el botón derecho en el archivo \"data_2\" y luego haga clic en \"Abrir con\" y seleccione Bloc de notas (Si obtiene un error como \"El proceso no puede acceder al archivo porque está siendo utilizado por otro proceso\", por favor salga del juego primero)",
+          "Presiona CTRL+F y luego marca \"Envolver alrededor\" y selecciona la dirección \"Arriba\" y luego en el cuadro de búsqueda de \"e20190909gacha-v2\" (sin comillas) y luego haz clic en Buscar Siguiente",
+          "Copiar todo el enlace desde https://webstatic hasta game_biz=hk4e_global para que la url se vea así: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.....&game_biz=hk4e_global",
+          "Pega el texto en el cuadro de texto de abajo",
+          "Pegue el enlace aquí... https://webstatic..."
         ],
         "pclog": [
           "Abre Genshin Impact en tu PC (si tienes cuenta múltiple, reinicie el juego)",
@@ -886,8 +886,8 @@
     "version": "Versión",
     "type": "Tipo",
     "searchError": "No se pudo encontrar el logro: {query}",
-    "quest": "",
-    "checklist": ""
+    "quest": "Misión",
+    "checklist": "Lista de verificación"
   },
   "furnishing": {
     "title": "Relajatetera",
@@ -968,12 +968,12 @@
     "18ATKSet": "Conjunto de ATK +18%",
     "20EnergyRechargeSet": "Conjunto de Recarga de Energía +20%",
     "25PhysicalDmgSet": "Conjunto de Daño Físico +25%",
-    "sands": "",
-    "goblet": "",
-    "circlet": "",
-    "choose2": "",
-    "pieceStat": "",
-    "pieceInfo": ""
+    "sands": "ARENAS",
+    "goblet": "CÁLIZ",
+    "circlet": "TIARA",
+    "choose2": "Elegir 2",
+    "pieceStat": "Personaje que tal vez use esta pieza {piece} con estadística principal:",
+    "pieceInfo": "Haz clic en la imagen del artefacto para ver la estadística principal de personaje recomendada"
   },
   "fishing": {
     "title": "Libro de pesca",
@@ -982,8 +982,8 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
-    "chasm": "",
-    "sumeru": "",
+    "chasm": "Sima",
+    "sumeru": "Sumeru",
     "setEmpty": "Poner como vacío",
     "emptyTime": "Tiempo cuando el punto está vacío:",
     "clear": "Borrar",
@@ -998,20 +998,20 @@
     "driveError": "Sincronización de Drive no disponible en este momento 😔"
   },
   "update": {
-    "newUpdate": "",
-    "updateRefresh": "",
-    "whatsNew": "",
-    "later": "",
-    "refresh": ""
+    "newUpdate": "Paimon.moe tiene una nueva actualización!",
+    "updateRefresh": "Haga clic en actualizar para obtener la nueva actualización",
+    "whatsNew": "Novedades",
+    "later": "Después",
+    "refresh": "Actualizar"
   },
   "calendar": {
-    "lastAppearance": "",
-    "lastAppearanceDesc": "",
-    "bannerHover": "",
-    "birthday": "",
-    "sortByTime": "",
-    "sortByRerun": "",
-    "bannerTitle": "",
-    "bannerSubtitle": ""
+    "lastAppearance": "Última aparición en banner",
+    "lastAppearanceDesc": "Cuándo es la última aparición del personaje en un banner limitado",
+    "bannerHover": "Hace X Banners",
+    "birthday": "Cumpleaños",
+    "sortByTime": "Ordenado por primera aparición",
+    "sortByRerun": "Ordenado por reaparición más antigua",
+    "bannerTitle": "Línea de tiempo de lanzamiento del personaje",
+    "bannerSubtitle": "Ver cuando el personaje es liberado y su último re-run"
   }
 }

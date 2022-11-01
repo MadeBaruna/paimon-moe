@@ -144,7 +144,7 @@
     "globalWishTally": "全球祈愿统计",
     "pityTooltip": [
       "显示你当前 {rarity} 保底进度",
-      "{count} 抽可获得 {rarity}"
+      "{count} 抽必定获得 {rarity}"
     ],
     "import": {
       "title": "导入祈愿历史记录",
@@ -180,7 +180,7 @@
       "success": "导入成功 😀！",
       "server": "选择你的服务器：",
       "wishTallyCheck": "将你的记录提交到全球祈愿统计数据中",
-      "wishTally": "我们在统计全球的祈愿数据！你可以提交你的记录参与进来。所有祈愿数据会统一整合，用来考察 paimon.moe 用户的平均祈愿情况。",
+      "wishTally": "我们在统计全球的祈愿数据！你可以提交你的记录参与进来。所有祈愿数据会统一整合，用来考察 Paimon.moe 用户的平均祈愿情况。",
       "wishTallyCollected": [
         "会被收集的数据：",
         "和",
@@ -341,7 +341,7 @@
         "pclocal": [
           "如果你不想提供你的URL，你可以使用这个选项在你的电脑上本地处理祈愿历史记录。此脚本将读取你电脑上的日志文件以获取祈愿URL。",
           "打开“开始”菜单，搜索 PowerShell",
-          "打开Windows PowerShell，然后复制粘贴脚本到PowerShell里",
+          "打开 Windows PowerShell，然后复制粘贴脚本到 PowerShell 里",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "你可以查看这个脚本",
           "这里",
@@ -380,7 +380,7 @@
       "saveNotice": "保存导入的祈愿记录？",
       "save": "保存",
       "success": "Excel 导入成功 😀！",
-      "errorInvalidFile": "无效的excel文件",
+      "errorInvalidFile": "无效的 Excel 文件",
       "errorReadExcel": "读取Excel文件时出错！",
       "errorExcelPaimon": "这不是 Paimon.moe 导出的 Excel 文件",
       "errorUnknownItem": "存在未知的物品名称"
@@ -388,15 +388,15 @@
     "help": {
       "title": "祈愿统计 帮助 & 设置",
       "exportTitle": "导出 / 导入祈愿记录",
-      "exportMessage": "你可以在这里将祈愿记录导出为Excel",
-      "export": "导出到Excel",
+      "exportMessage": "你可以在这里将祈愿记录导出为 Excel。你也可以在此导入从 Paimon.moe 或 TakaGG Gacha 导出的 Excel。",
+      "export": "导出到 Excel",
       "exporting": "导出中…",
-      "import": "导入",
+      "import": "从 Excel 导入",
       "exportFinish": "导出成功，请等待浏览器下载文件！",
       "wishTallyTitle": "提交祈愿到全球统计",
       "wishTally": "我们在统计全球的祈愿数据！你可以提交你的记录参与进来。所有祈愿数据会统一整合，用来考察 Paimon.moe 用户的平均情况。",
       "wishTallyCollected": [
-        "会被收集的内容:",
+        "会被收集的内容：",
         "和",
         "你的祈愿记录"
       ],
@@ -431,7 +431,7 @@
       }
     },
     "types": {
-      "beginners": "初行者推荐祈愿",
+      "beginners": "新手祈愿",
       "standard": "常驻祈愿",
       "character-event": "角色活动祈愿",
       "weapon-event": "武器活动祈愿"
@@ -605,7 +605,7 @@
       "calculate": "计算",
       "currentTime": "当前时间",
       "fullTime": "将在多久回满",
-      "hours": "时",
+      "hours": "小时",
       "minutes": "分",
       "seconds": "秒"
     },
@@ -621,7 +621,7 @@
       "resultDay": "{result} 天"
     },
     "fate": {
-      "currency": "选择货币",
+      "currency": "选择货币...",
       "firstTime": "第一次",
       "amount": "数量",
       "genesis": "创世结晶",
@@ -832,7 +832,7 @@
   "footer": {
     "affliate": "Paimon.moe 与米哈游无关。",
     "copyright": "原神的游戏内容和各种素材与商标的版权都属于米哈游。",
-    "discord": "加入我们的Discord",
+    "discord": "加入我们的 Discord",
     "community": "社区链接",
     "official": "官方链接",
     "link": {

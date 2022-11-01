@@ -16,7 +16,7 @@
     "fishing": "Câu Cá",
     "radiantSpincrystal": "Ngọc Thạch Âm Vang",
     "calendar": "Lịch Biểu",
-    "banners": "",
+    "banners": "Rerun Nhân Vật",
     "settings": "Cài Đặt",
     "donate": "Ủng hộ"
   },
@@ -179,7 +179,7 @@
       "noNewData": "Không phát hiện lượt cầu nguyện mới, hãy đợi khoảng 1 giờ để dữ liệu cầu nguyện được cập nhật!",
       "success": "Nhập dữ liệu thành công 😀!",
       "server": "Hãy chọn server:",
-      "wishTallyCheck": "Chia sẽ thông tin cầu nguyện của bạn cho Thống Kê Cầu Nguyện",
+      "wishTallyCheck": "Chia sẻ thông tin cầu nguyện của bạn cho Thống Kê Cầu Nguyện",
       "wishTally": "Chúng tôi đang thực hiện một bản Thống Kê Cầu Nguyện! Bạn có thể gửi lượt cầu nguyện của bạn để tham gia. Tất cả dữ liệu sẽ được tổng hợp và tính toán bảo hiểm trung bình của người dùng paimon.moe.",
       "wishTallyCollected": [
         "Những thông tin sẽ được thu thập:",
@@ -197,31 +197,31 @@
       "faqs": {
         "title": "Câu hỏi Thường gặp về Nhập Lịch Sử Cầu Nguyện",
         "q1": "Nó hoạt động như thế nào?",
-        "a1": "Lịch sử cầu nguyện của Genshin Impact đơn giản là một trang web, bạn có thể truy cập nó bằng cách mở URL của trang web. Một key tạm thời sẽ được tạo ra khi bạn mở Lịch sử cầu nguyện hoặc trang phản hồi, và chúng tôi sẽ tự động dùng MiHoYo API để lấy lịch sử cầu nguyện của bạn.",
+        "a1": "Lịch sử cầu nguyện của Genshin Impact chỉ đơn giản là một trang web, bạn có thể truy cập bằng cách mở URL của trang web đó. Một khóa tạm thời sẽ được tạo ra khi bạn mở lịch sử cầu nguyện hoặc trang phản hồi trong game, và trình nhập sẽ tự động dùng API của HoYoverse để lấy lịch sử cầu nguyện của bạn.",
         "q2": "Nó có an toàn không? Tôi có thể bị khóa tài khoản không?",
-        "a2": "Paimon.moe sử dụng phương thức giống với cách mà Genshin Impact yêu cầu dữ liệu để lấy lịch sử cầu nguyện, và paimon.moe không thể chỉnh sửa dữ liệu và những gì đã lưu trữ trong game, và có thể nói là vô hại. Tuy nhiên, bạn nên lường trước và sẵn sàng chấp nhận rủi ro nếu có (Chúng mình cũng vẫn dùng trên tài khoản chính). Bạn vẫn có thể chọn nhập liệu thủ công 😀.",
+        "a2": "Paimon.moe sử dụng phương thức giống với cách mà Genshin Impact yêu cầu dữ liệu để lấy lịch sử cầu nguyện, và paimon.moe không thể chỉnh sửa dữ liệu và những gì đã lưu trữ trong game - nên có thể nói là vô hại. Tuy nhiên bạn vẫn nên lường trước và sẵn sàng chấp nhận rủi ro nếu có (ừm thì, chúng tôi vẫn đang dùng trên tài khoản chính). Bạn vẫn có thể chọn nhập liệu thủ công 😀.",
         "q3": "Thế paimon.moe có thể hack vào khoản của tôi không?",
         "a3": [
-          "Paimon.moe chưa bao giờ lưu thông tin cá nhân như tài khoản của bạn (kể cả UID hoặc biệt danh), nên đáp án là không. Dự án này là một nguồn mở",
+          "Paimon.moe không bao giờ lưu thông tin cá nhân như thông tin tài khoản của bạn (kể cả UID hay biệt danh) nên câu trả lời là không. Dự án này là một dự án mã nguồn mở trên",
           "; Chúng tôi không muốn danh tiếng bị ảnh hưởng xấu bởi việc hack vào tài khoản người chơi khác."
         ],
-        "q4": "Tôi kiểm tra các yêu cầu gửi đi và một số thứ khác rồi, nhưng tại sao nó lại gửi yêu cầu đến tên miền của paimon.moe chứ không phải API của HoYoverse?",
+        "q4": "Tôi có xem qua các yêu cầu gửi đi và một số thứ rồi, nhưng tại sao nó lại gửi yêu cầu đến tên miền của paimon.moe chứ không phải API của HoYoverse?",
         "a4": [
           "Paimon.moe không thể gửi yêu cầu trực tiếp lên API của HoYoverse được do",
           ", vì vậy yêu cầu được chuyển hướng đến một proxy CORS đơn giản để làm cho nó hoạt động. Bạn có thể xem code",
           "tại đây"
         ],
-        "q5": "Thế paimon.moe lưu trữ key tạm thời hay lịch sử cầu nguyện của tôi?",
+        "q5": "Paimon.moe có lưu trữ khóa tạm thời hay lịch sử cầu nguyện của tôi không?",
         "a5": [
-          "Paimon.moe sẽ không bao giờ lưu trữ khóa của bạn, và sử dụng HTTPS để chuyển URL của bạn đến một proxy CORS để cho CORS hoạt động. Paimon.moe sẽ lưu bảo hiểm của vật phẩm 4* và 5*, và thông tin của vật phẩm cầu nguyện 5* nếu bạn gửi lượt cầu nguyện của bạn cho Thống Kê Cầu Nguyện (không lưu lại bất kỳ thông tin cá nhân nào cả! hãy kiểm tra",
+          "Paimon.moe sẽ không bao giờ lưu trữ khóa của bạn, và chúng tôi sử dụng HTTPS để chuyển URL của bạn đến một proxy CORS để cho CORS hoạt động. Paimon.moe sẽ lưu bảo hiểm của vật phẩm 4* và 5*, và thông tin của vật phẩm cầu nguyện 5* nếu bạn gửi lượt cầu nguyện của bạn cho Thống Kê Cầu Nguyện (không lưu lại bất kỳ thông tin cá nhân nào cả! hãy xem",
           "Chính sách bảo mật",
-          "để có thêm thông tin). Bạn có thể bỏ chọn gửi thông tin đến lượt cầu nguyện toàn cầu để vô hiệu hóa gửi lượt cầu nguyện. Sau đó tất cả lịch sử cầu nguyện của bạn sẽ lưu trên thiết bị mà bạn đang dùng (hoặc Google Drive của bạn nếu bạn mở chức năng đồng bộ).",
-          "Nếu bạn không muốn chia sẻ link của mình, bạn có thể dùng mã lệnh dưới đây để nhập trực tiếp từ dữ liệu trên PC (chọn PC Local) "
+          "để có thêm thông tin). Bạn có thể bỏ chọn gửi thông tin để vô hiệu tính năng gửi lượt cầu nguyện. Sau đó tất cả lịch sử cầu nguyện đó sẽ lưu trên thiết bị của bạn (hoặc trên Google Drive của bạn nếu bạn bật tính năng đồng bộ).",
+          "Nếu bạn không muốn chia sẻ link của mình, bạn có thể dùng một đoạn mã lệnh nhập liệu để nhập trực tiếp từ dữ liệu trên PC cục bộ của bạn (chọn PC > Thủ Công) "
         ],
         "q6": "Tại sao tôi đã làm như hướng dẫn nhưng lại gặp phải lỗi API?",
         "a6": "Hãy chắc chắn rằng bạn đã copy đủ văn bản (ấn giữ và chọn Select All nếu bạn sử dụng điện thoại); có lẽ bạn đã copy thiếu một số văn bản cần thiết để paimon.moe có thể nhập chính xác.",
         "q7": "Paimon.moe không hiển thị tất cả lịch sử cầu nguyện của tôi!?",
-        "a7": "Lịch sử cầu nguyện lâu hơn 6 tháng sẽ biến mất hoàn toàn từ máy chủ của HoYoverse, nên nếu như bạn không có bản sao lưu nào thì giờ nó đã mất rồi!"
+        "a7": "Lịch sử cầu nguyện được thực hiện lâu hơn 6 tháng trước sẽ biến mất hoàn toàn trên máy chủ của HoYoverse, vì thế nếu như bạn không có bản sao lưu nào thì giờ nó đã mất rồi!"
       },
       "logLocation": {
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
@@ -230,8 +230,8 @@
       "method": {
         "pc": "Cách 1",
         "pc3": "Cách 2",
-        "pc4": "",
-        "pc5": "",
+        "pc4": "Cách 2 - 2",
+        "pc5": "Thủ Công",
         "android": "Wifi",
         "android2": "Dữ Liệu Di Động",
         "android3": "Cách Khác"
@@ -275,8 +275,8 @@
           "Sau đó mở thư mục cài đặt game (ví dụ: C:\\Games\\Genshin Impact)",
           "Sau đó mở thư mục GenshinImpact_Data → webCaches → Cache → Cache_Data",
           "Chuột phải vào tập tin \"data_2\" và rồi chọn \"Mở bằng\" và chọn Notepad (Nếu bạn gặp lỗi như \"The process cannot access the file because it is being used by another process\" thì hãy thoát game trước khi tiếp tục)",
-          "",
-          "",
+          "Nhấn CTRL+F, tích chọn \"Bao quanh\" và chọn hướng \"Lên\", sau đó nhập vào ô tìm kiếm \"e20190909gacha-v2\" (không bao gồm dấu ngoặc kép) và nhấn Tìm tiếp",
+          "Sao chép toàn bộ link từ https://webstatic cho đến chỗ game_biz=hk4e_global, link nhìn giống như sau: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
           "Dán văn bản vào hộp văn bản phía dưới",
           "Dán link vào đây... https://webstatic..."
         ],
@@ -299,7 +299,7 @@
           "Ấn giữ văn bản và ấn chọn tất cả, sau đó sao chép văn bản đó (Đừng copy một phần của văn bản)",
           "Bật Wi-Fi hoặc dữ liệu di động của bạn",
           "Dán văn bản vào hộp văn bản bên dưới",
-          "Dán văn bán ở đây... Webpage not available..."
+          "Dán văn bản vào đây... Webpage not available..."
         ],
         "ios": [
           "Mở Giao Diện Paimon",
@@ -489,7 +489,7 @@
     "note": [
       "Lịch sử cầu nguyện không cập nhật tự động, vui lòng Nhập lại để cập nhật lịch sử của bạn!",
       "Paimon.moe chỉ có thể nhập lịch sử cầu nguyện từ 6 tháng gần nhất do phần còn lại đã bị xóa khỏi máy chủ của HoYoverse, vì thế nên lượt cầu nguyện cũ của bạn có thể sẽ không hiển thị.",
-      "Dữ liệu đã được lưu trên trình duyệt của bạn, nên nó sẽ bị xóa nếu bạn xóa cache của trình duyệt! Hãy bật Google Drive sync trong setting để sao lưu dữ liệu của bạn!"
+      "Dữ liệu được lưu trên trình duyệt của bạn, nên nó sẽ bị xóa nếu bạn xóa cache của trình duyệt! Hãy bật đồng bộ với Google Drive trong Cài Đặt để sao lưu dữ liệu của bạn!"
     ],
     "rateon": {
       "won": "Thắng 50:50",
@@ -794,13 +794,13 @@
         "title": "Bảo Hiểm Cầu Nguyện",
         "content": [
           "Paimon.moe sẽ lưu số bảo hiểm 4*, số bảo hiểm 5*, và thông tin cầu nguyện 5* (thời gian cầu nguyện, tên vật phẩm, lượt nhận) nếu bạn đồng ý \"Chia sẻ thông tin cầu nguyện của bạn cho Thống Kê Cầu Nguyện\" ở Tự Động Nhập Cầu Nguyện hoặc Nhập Cầu Nguyện Thủ Công ở Trợ Giúp & Cài Đặt. Paimon.moe sẽ tổng hợp dữ liệu và dùng để thống kê bảo hiểm trung bình của mỗi banner của người dùng paimon.moe. Bạn có thể kiểm tra tại đây",
-          "lượt Cầu Nguyện"
+          "thống kê cầu nguyện"
         ]
       }
     ],
     "subtitleNotCollect": "Những thứ mà paimon.moe KHÔNG thu thập",
     "notCollect": [
-      "Paimon.moe không bao giờ lưu bất kì mật khẩu, uid, tài khoản, email, key tạm thời, hoặc url phản hồi. Nếu bạn quan tâm, dự án này là một nguồn mở và bạn có thể kiếm tra mã nguồn ở",
+      "Paimon.moe không bao giờ lưu bất kì mật khẩu, UID, tên người dùng, email, khóa tạm thời hay url phản hồi. Nếu bạn quan tâm, dự án này là một dự án mã nguồn mở và bạn có thể xem mã nguồn tại",
       "paimon-moe-api Github",
       "và",
       "paimon-moe Github"
@@ -887,7 +887,7 @@
     "type": "Loại",
     "searchError": "Không tìm thấy thành tựu: {query}",
     "quest": "Nhiệm Vụ",
-    "checklist": ""
+    "checklist": "Checklist"
   },
   "furnishing": {
     "title": "Đồ Trang Trí",
@@ -1001,7 +1001,7 @@
     "newUpdate": "Paimon.moe có cập nhật mới!",
     "updateRefresh": "Nhấn tải lại để nhận cập nhật mới",
     "whatsNew": "Có gì mới",
-    "later": "Để sau đi",
+    "later": "Để sau",
     "refresh": "Tải lại"
   },
   "calendar": {
@@ -1009,9 +1009,9 @@
     "lastAppearanceDesc": "Lần xuất hiện cuối cùng của nhân vật trên một banner giới hạn",
     "bannerHover": "X Banner Trước",
     "birthday": "Sinh Nhật",
-    "sortByTime": "",
-    "sortByRerun": "",
-    "bannerTitle": "",
-    "bannerSubtitle": ""
+    "sortByTime": "Xếp theo lần ra mắt đầu tiên",
+    "sortByRerun": "Xếp theo rerun lâu nhất",
+    "bannerTitle": "Lịch Ra Mắt Nhân Vật",
+    "bannerSubtitle": "Xem thời gian mà nhân vật nào đó được ra mắt và lần rerun cuối cùng của họ"
   }
 }
