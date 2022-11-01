@@ -9554,4 +9554,116 @@ export const weaponList = {
       },
     ],
   },
+  a_thousand_floating_dreams: {
+    id: 'a_thousand_floating_dreams',
+    name: 'A Thousand Floating Dreams',
+    rarity: 5,
+    atk: 44,
+    secondary: 'Elemental Mastery',
+    type: weapons.catalyst,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_reminiscence,
+            amount: 5,
+          },
+          {
+            item: itemList.damaged_prism,
+            amount: 5,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 5,
+          },
+          {
+            item: itemList.damaged_prism,
+            amount: 18,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 9,
+          },
+          {
+            item: itemList.turbid_prism,
+            amount: 9,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 5,
+          },
+          {
+            item: itemList.turbid_prism,
+            amount: 18,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 9,
+          },
+          {
+            item: itemList.radiant_prism,
+            amount: 14,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_truth,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_prism,
+            amount: 27,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
