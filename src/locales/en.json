@@ -364,7 +364,7 @@
         "This feature is still in BETA! Please make a backup first by going to the Settings menu then Export to Excel.",
         "Wishes with the same timestamp and reward name will NOT be touched (existing wishes will not be rewritten)",
         "This feature will only append and prepend wishes (nothing will be inserted in the middle of the list)",
-        "Currently, the importer can only support excel files with an ENGLISH reward name"
+        "Please change the website language first according to your excel file language"
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe excel file here, or click here to select",

@@ -655,7 +655,7 @@
         <li class="text-red-300">{$t('wish.excel.notice.0')}</li>
         <li class="text-white">{$t('wish.excel.notice.1')}</li>
         <li class="text-white">{$t('wish.excel.notice.2')}</li>
-        <li class="text-white">{$t('wish.excel.notice.4')}</li>
+        <li class="text-white">{$t('wish.excel.notice.3')}</li>
       </ol>
     </div>
     <p class="text-gray-200 mb-2">{$t('wish.excel.subtitle')}</p>

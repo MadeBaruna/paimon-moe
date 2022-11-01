@@ -364,7 +364,7 @@
         "Diese Funktion ist noch in der BETA bitte backup erst indem du in die Einstellungen gehst und dann auf Export zu Excel gehst!",
         "Wünsche mit dem gleichen Zeitstempel und Belohnungsnamen werden NICHT verändert (vorhandener Wunsch wird nicht neu geschrieben)",
         "Fügt nur Wünsche am Anfang und Ende der Liste hinzu, es kann also nichts in die Mitte der Liste eingefügt werden",
-        "Momentan nur Excel mit Namen der ENGLISH Belohnungsnamen"
+        ""
       ],
       "selectFile": {
         "default": "Drag & Drop Paimon.moe Excel Datei hier oder klicken Sie hier, zum Auszuwählen",

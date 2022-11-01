@@ -364,7 +364,7 @@
         "Fitur ini masih dalam tahap BETA, harap backup dulu melalui Pengaturan kemudian Export ke Excel!",
         "Wish dengan waktu dan reward yang sama tidak disentuh (agar wish yg sudah tersimpan tidak tertimpa)",
         "Hanya akan menambahkan wish di akhir dan di awal, yang artinya tidak ada wish yang dimasukkan di tengah-tengah data yang sudah ada",
-        "Saat ini hanya bisa digunakan untuk reward dengan nama item yang berbahasa INGGRIS"
+        "Silahkan ganti dahulu bahasa website sesuai dengan bahasa file excel nya"
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe file excel kesini, atau klik disini untuk memilih",

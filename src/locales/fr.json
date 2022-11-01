@@ -364,7 +364,7 @@
         "Cette fonctionnalité est toujours en bêta, faites d'abord une sauvegarde dans les paramètres avant d'exporter vers Excel !",
         "Les vœux avec le même horodatage et le même nom de récompense ne seront PAS affectés (donc les vœux existants ne seront pas dupliqués)",
         "Les vœux ne seront ajoutés qu'en fin ou début de liste, ce qui veut dire que rien ne sera ajouté en plein milieu de la liste",
-        "Pour le moment, seuls les fichiers avec un nom en ANGLAIS pour les récompenses sont pris en charge"
+        ""
       ],
       "selectFile": {
         "default": "Glissez & déposez le fichier Excel de Paimon.moe ici, ou cliquez pour en sélectionner un",
