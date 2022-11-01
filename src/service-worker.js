@@ -7,7 +7,15 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Update timeline'];
+const changelog = [
+  'Add Nahida',
+  'Update weapons',
+  'Update achievement',
+  'Update banner',
+  'Update radiant spincrystal',
+  'Update timeline',
+  'Update locales',
+];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
