@@ -94,7 +94,7 @@
           <div class="mb-1 rounded-xl border-background border p-2">
             <div class="flex flex-row items-center mb-1">
               <img src={value.image} alt={value.name} class="w-6 mr-2" />
-              <p class="text-white">{value.name}</p>
+              <p class="text-white">{$t(value.name)}</p>
             </div>
             <div class="flex flex-row items-center">
               <div class="w-full">
@@ -155,7 +155,7 @@
                   <td class="border-t border-gray-700 text-white pr-2">
                     <span class="inline-flex align-middle">
                       {#if res.image !== null}<img src={res.image} alt={res.name} class="w-6 h-6 mr-2" />{/if}
-                      <p class="text-white">{res.name}</p>
+                      <p class="text-white">{$t(res.name)}</p>
                     </span>
                   </td>
                   <td class="border-t border-gray-700 text-white pr-2 text-center">

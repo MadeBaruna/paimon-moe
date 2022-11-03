@@ -477,7 +477,7 @@
                       <span class="w-6 inline-block">
                         <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={item.name} />
                       </span>
-                      {item.name}
+                      {$t(item.name)}
                     </span>
                   </td>
                 </tr>
