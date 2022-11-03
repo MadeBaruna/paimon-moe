@@ -322,7 +322,7 @@
                         alt={itemList[id].name}
                       />
                     </span>
-                    {itemList[id].name}
+                    {$t(itemList[id].name)}
                   </span>
                 </td>
               </tr>
@@ -362,7 +362,7 @@
                             alt={itemList[id].name}
                           />
                         </span>
-                        {itemGroup[id].name}
+                        {$t(itemGroup[id].name)}
                       </span>
                     </td>
                   </tr>
@@ -401,7 +401,7 @@
                     alt={itemList[id].name}
                   />
                 </span>
-                {itemList[id].name}
+                {$t(itemList[id].name)}
               </span>
               {#if id === 'mora'}
                 <Button size="sm" disabled={amount === 0 && !adding} on:click={() => decrease(id, 1000)}>
@@ -439,7 +439,7 @@
               alt={todo.weapon ? todo.weapon.name : `Weapon Level ${todo.level.from}-${todo.level.to}`}
             />
             <div class="flex-1">
-              <p class="font-bold">{todo.weapon ? todo.weapon.name : 'Weapon'}</p>
+              <p class="font-bold">{todo.weapon ? $t(todo.weapon.name) : 'Weapon'}</p>
               <p class="text-gray-500">Level {`${todo.level.from}-${todo.level.to}`}</p>
             </div>
           {:else if todo.type === 'character'}
@@ -449,7 +449,7 @@
               alt={todo.character ? todo.character.name : `Character Level ${todo.level.from}-${todo.level.to}`}
             />
             <div class="flex-1">
-              <p class="font-bold">{todo.character ? todo.character.name : 'Character'}</p>
+              <p class="font-bold">{todo.character ? $t(todo.character.name) : 'Character'}</p>
               <p class="text-gray-500">Level {`${todo.level.from}-${todo.level.to}`}</p>
             </div>
           {:else if todo.type === 'item'}
@@ -490,7 +490,7 @@
                       alt={itemList[id].name}
                     />
                   </span>
-                  {itemList[id].name}
+                  {$t(itemList[id].name)}
                 </span>
               </td>
             </tr>
