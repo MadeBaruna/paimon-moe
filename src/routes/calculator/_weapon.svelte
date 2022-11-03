@@ -412,7 +412,7 @@
                   <img class="h-6 inline-block mr-1" src={res.image} alt={res.label} />
                 </span>
               {/if}
-              {res.label}
+              {$t(res.label)}
             </span>
           </Checkbox>
         </div>
@@ -457,7 +457,7 @@
                           <img class="h-6 inline-block mr-1" src={res.image} alt={res.label} />
                         </span>
                       {/if}
-                      {res.label}
+                      {$t(res.label)}
                     </span>
                   </td>
                 </tr>
