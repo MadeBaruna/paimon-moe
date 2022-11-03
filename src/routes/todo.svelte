@@ -479,7 +479,7 @@
           <p class="flex-1 text-gray-400"># {i + 1}</p>
           <Button on:click={() => askDeleteTodo(i)} size="sm" className="px-2">
             <Icon path={mdiClose} color="white" size={0.8} />
-            Delete
+            {$t('todo.delete.delete')}
           </Button>
         </div>
       </div>
