@@ -220,8 +220,8 @@
   function getColor(index, max) {
     if (index === '') return 'none';
 
-    const hue = ((max - index) / max) * 100;
-    return `hsl(${hue}, 60%, 70%)`;
+    const lightness = 100 - Math.min(70, 20 + ((max + index) / max) * 25);
+    return `hsl(210, 60%, ${lightness}%)`;
   }
 
   function onHover(index) {
