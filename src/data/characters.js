@@ -4064,6 +4064,151 @@ export const characters = {
     },
     element: elements.electro,
   },
+  layla: {
+    id: 'layla',
+    name: 'Layla',
+    rarity: 4,
+    weapon: weapons.sword,
+    stats: {
+      hp: 11092,
+      atk: 217,
+      def: 655,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 3,
+          },
+          {
+            item: itemList.divining_scroll,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 2,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 10,
+          },
+          {
+            item: itemList.divining_scroll,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 4,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 20,
+          },
+          {
+            item: itemList.sealed_scroll,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 8,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 30,
+          },
+          {
+            item: itemList.sealed_scroll,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 12,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 45,
+          },
+          {
+            item: itemList.forbidden_curse_scroll,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 20,
+          },
+          {
+            item: itemList.nilotpala_lotus,
+            amount: 60,
+          },
+          {
+            item: itemList.forbidden_curse_scroll,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.divining_scroll, itemList.sealed_scroll, itemList.forbidden_curse_scroll],
+      book: [itemList.teachings_of_ingenuity, itemList.guide_to_ingenuity, itemList.philosophies_of_ingenuity],
+      boss: itemList.mirror_of_mushin,
+    },
+    element: elements.cryo,
+  },
   lisa: {
     id: 'lisa',
     name: 'Lisa',

@@ -1109,4 +1109,8 @@ export const itemList = {
     id: 'puppet_strings',
     name: 'Puppet Strings',
   },
+  mirror_of_mushin: {
+    id: 'mirror_of_mushin',
+    name: 'Mirror of Mushin',
+  },
 };
