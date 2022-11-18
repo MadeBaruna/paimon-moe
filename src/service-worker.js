@@ -8,11 +8,9 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 const IMAGE_URL = `${self.location.origin}/images/`;
 
 const changelog = [
-  'Add Nahida',
-  'Update weapons',
-  'Update achievement',
-  'Update banner',
-  'Update radiant spincrystal',
+  'Add Layla',
+  'Update furnishing sets',
+  'Update achievement commission data',
   'Update timeline',
   'Update locales',
 ];
