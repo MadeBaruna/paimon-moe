@@ -13,23 +13,23 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yoimiya: {
-      name: 'Yoimiya',
+    tartaglia: {
+      name: 'Tartaglia',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    nahida: {
-      name: 'Nahida',
+    yae_miko: {
+      name: 'Yae Miko',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300038;
-  const image = 'nahida_yoimiya.png';
+  const bannerId = 300039;
+  const image = 'tartaglia_yae.png';
   const width = 800;
   const height = 595;
 
@@ -82,7 +82,7 @@
           class="flex flex-col pt-2 max-w-[60%]"
           style="background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%);"
         >
-          <h3 class="text-3xl font-black leading-6 text-right {i === 0 ? 'ml-4' : ''}">
+          <h3 class="text-3xl font-black leading-6 text-right {i === 0 ? 'ml-4' : 'pr-4'}">
             {#if loading}
               <Icon path={mdiLoading} spin size={0.8} />
             {:else}
@@ -92,7 +92,7 @@
           <p
             class="font-sm leading-2 whitespace-nowrap overflow-hidden text-ellipsis {i === 0
               ? 'ml-4 text-left'
-              : 'text-right'}"
+              : 'pr-4 text-right'}"
             style="direction: rtl;"
           >
             {$t(item.name)}
