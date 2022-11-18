@@ -43,7 +43,7 @@
       }
     }
 
-    result = Object.entries(final);
+    result = Object.entries(final).sort((a, b) => b[0].endsWith('wood') - a[0].endsWith('wood'));
   }
 
   async function start() {
