@@ -142,7 +142,10 @@
     "manualButton": "Habilitar Inserção Manual",
     "errorBanner": "Incompatibilidade no tempo do banner! Ajuste seu servidor na página de configurações. Ainda não está funcionando? Por favor, deixe uma mensagem no Discord 😅",
     "globalWishTally": "Contagem Global de Orações",
-    "pityTooltip": ["Informa seu pity atual para {rarity}", "{count} orações para um {rarity} garantido"],
+    "pityTooltip": [
+      "Informa seu pity atual para {rarity}",
+      "{count} orações para um {rarity} garantido"
+    ],
     "import": {
       "title": "Importar Histórico de Orações",
       "faqsButton": "PERGUNTAS FREQUENTES - LEIA PRIMEIRO",
@@ -178,7 +181,11 @@
       "server": "Selecione seu servidor:",
       "wishTallyCheck": "Enviar pity para a contagem global de orações",
       "wishTally": "Estamos fazendo uma contagem global de orações! Você pode enviar sua contagem de orações para participar. Todas as informações do pity serão agregadas para saber qual a média de pity dos usuários do paimon.moe.",
-      "wishTallyCollected": ["O que será coletado:", "e", "pity do seu histórico de orações"],
+      "wishTallyCollected": [
+        "O que será coletado:",
+        "e",
+        "pity do seu histórico de orações"
+      ],
       "forceUpdateCheck": "Forçar atualização do histórico de orações (habilite isso apenas se o seu histórico de orações não estiver atualizando)",
       "header": [
         "Importe e salve o seu histórico de orações do Genshin Impact para mantê-lo por mais de 6 meses. Paimon.moe também rastreia automaticamente seu pity e visualiza estatísticas sobre as suas orações!",
@@ -388,7 +395,11 @@
       "exportFinish": "Exportado com sucesso, aguarde até que o navegador realize o download do arquivo!",
       "wishTallyTitle": "Enviar Contagem de Orações",
       "wishTally": "Estamos fazendo uma contagem global de orações! Você pode enviar sua contagem de orações para participar. Todas as informações do pity serão agregadas para saber qual a média de pity dos usuários do paimon.moe.",
-      "wishTallyCollected": ["O que será coletado:", "e", "pity do seu histórico de orações"],
+      "wishTallyCollected": [
+        "O que será coletado:",
+        "e",
+        "pity do seu histórico de orações"
+      ],
       "wishTallySubmit": "Enviar Contagem de Orações",
       "wishTallyThankyou": "Obrigado por participar!",
       "manualTitle": "Configuração de Inserção Manual",
@@ -400,13 +411,22 @@
         "subtitle": "Após 1x Oração:",
         "pressWhenYouGet": "Pressione {button} quando você conseguir um item {rarity}★",
         "p1": "Será adicionado automaticamente no seu total de orações realizadas, pity de 5★ e pity de 4★",
-        "p2": ["Quando o pity de", "chegar a 10, seu valor será automaticamente restaurado para 0"],
-        "p3": ["Quando o pity de", "chegar a 90, seu valor será automaticamente restaurado para 0"],
+        "p2": [
+          "Quando o pity de",
+          "chegar a 10, seu valor será automaticamente restaurado para 0"
+        ],
+        "p3": [
+          "Quando o pity de",
+          "chegar a 90, seu valor será automaticamente restaurado para 0"
+        ],
         "p4": [
           "Depois de realizar uma 10x Orações, pressione",
           "mas tenha em mente que o contador de pity pode não ser preciso, pois não há como saber quando o drop ocorreu (talvez você tenha pego o item na 1ª ou mesmo na 10ª oração). Para garantir que o contador irá se manter preciso, você precisa verificar a tabela de histórico e adicionar um por um igual é feito em 1x Oração."
         ],
-        "p5": ["Você também pode pressionar o botão", "para editar os valores manualmente!"],
+        "p5": [
+          "Você também pode pressionar o botão",
+          "para editar os valores manualmente!"
+        ],
         "p6": "Clique na seta inferior para ver os detalhes das suas orações. Um pop-up aparecerá quando você receber um 5★ ou 4★. Também é possível acrescentar à tabela ou editá-la manualmente."
       }
     },
@@ -546,7 +566,11 @@
       "calculateTalent": "Calcular Materiais de Elevação de Talentos?",
       "inputTalentLevel": "Informe os níveis atuais do 1º, 2º e 3º talento",
       "inputTalentNotice": "Se algum talento possuir cor diferente, subtraia 3",
-      "inputTalent": ["Nível do 1º talento", "Nível do 2º talento", "Nível do 3º talento"],
+      "inputTalent": [
+        "Nível do 1º talento",
+        "Nível do 2º talento",
+        "Nível do 3º talento"
+      ],
       "talentToLevel": "para o nível",
       "calculate": "Calcular",
       "unknownInformation": "Há alguma informação desconhecida",
@@ -555,7 +579,11 @@
       "expWasted": "EXP Desperdiçada",
       "addToTodo": "Adicionar na Lista de Afazeres",
       "addedToTodo": "Adicionado na Lista de Afazeres",
-      "talent": ["Ataque", "Habilidade", "Supremo"]
+      "talent": [
+        "Ataque",
+        "Habilidade",
+        "Supremo"
+      ]
     },
     "expTable": {
       "level": "Nível",
@@ -647,7 +675,10 @@
   "todo": {
     "title": "Lista de Afazeres",
     "summary": "Resumo",
-    "empty": ["Nada para fazer ainda 😀", "Adicione algumas coisas a partir da Calculadora ou da página de Itens!"],
+    "empty": [
+      "Nada para fazer ainda 😀",
+      "Adicione algumas coisas a partir da Calculadora ou da página de Itens!"
+    ],
     "farmableToday": "Farmáveis hoje",
     "resin": "Resina necessária",
     "based": "Baseado no Rank de Aventura: {ar} e Nível de Mundo: {wl}",

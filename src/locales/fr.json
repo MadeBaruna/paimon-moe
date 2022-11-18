@@ -9,30 +9,30 @@
     "achievement": "Succès",
     "reminder": "Rappel",
     "todoList": "Liste de tâches",
-    "timeline": "Ligne de temps",
+    "timeline": "Chronologie",
     "furnishing": "Décorations",
     "weapons": "Armes",
     "artifacts": "Artéfacts",
     "fishing": "Pêche",
     "radiantSpincrystal": "Gyrocristal radiant",
     "calendar": "Calendrier",
-    "banners": "Apparitions des personnages",
+    "banners": "Retour de personnages",
     "settings": "Paramètres",
     "donate": "Donner"
   },
   "home": {
     "welcome": "Bienvenue sur Paimon.moe! 👋",
-    "message": "Votre meilleur compagnon pour Genshin Impact ! Vous aide à planifier ce que vous souhaitez farmer avec le calculateur d'élévation et vous permet de suivre votre progression avec la liste de tâches et le compteur de voeux.",
+    "message": "Votre meilleur compagnon pour Genshin Impact ! Paimon.moe vous aide à planifier ce que vous souhaitez farmer avec le calculateur d'élévation et vous permet de suivre votre progression avec la liste de tâches et le compteur de vœux.",
     "visitor": "{count} visiteurs au cours des 7 derniers jours",
     "banner": {
       "summoned": "Invocation",
       "percentage": "parmis tous les {rarity}",
       "avg": "Pity moyenne",
       "subtitle": "Calculé à partir des données fournies par {user} utilisateurs de paimon.moe",
-      "detail": "Compteur global des voeux"
+      "detail": "Compteur global des vœux"
     },
     "wish": {
-      "message": "Importez votre historique de voeux pour le garder plus de 6 mois ! Compte aussi automatiquement votre pity et vos statistiques dans de jolis graphiques 📊",
+      "message": "Importez votre historique de vœux pour le garder plus de 6 mois ! Compte aussi automatiquement votre pity et vos statistiques dans de jolis graphiques 📊",
       "latest": "Votre dernier voeu",
       "banner": "Bannière",
       "time": "Temps",
@@ -41,17 +41,17 @@
       "detail": "Compteur de voeux"
     },
     "reminder": {
-      "message": "Vous pouvez définir une notification de rappel 🔔 pour le Transformateur Paramétrique et les récompenses quotidiennes d'Hoyolab! Cliquez sur le bouton de rappel ci-dessous pour commencer !",
+      "message": "Vous pouvez définir une notification de rappel 🔔 pour le Transformateur paramétrique et les récompenses quotidiennes d'Hoyolab ! Cliquez sur le bouton de rappel ci-dessous pour commencer !",
       "detail": "Rappel"
     },
     "event": {
-      "upcoming": "Évenement en approche",
+      "upcoming": "Évènements à venir",
       "current": "Évenement actuel",
-      "detail": "Calendrier"
+      "detail": "Chronologie"
     },
     "discord": {
       "online": "Membres en ligne",
-      "message": "Rejoignez notre serveur Discord pour les dernières annonces de mise à jour ! Discutez aussi de Genshn Impact et donnez vos retours à propos de paimon.moe.",
+      "message": "Rejoignez notre serveur Discord pour les dernières annonces et mises à jour! Discutez aussi de Genshn Impact et donnez vos retours à propos de paimon.moe.",
       "join": "Rejoignez notre Discord"
     },
     "items": {
@@ -68,7 +68,7 @@
       "detail": "Suivez mon Twitter"
     },
     "achievement": {
-      "title": "🏆 Regardez et suivez votre liste de succès ici",
+      "title": "🏆 Voir et suivre votre liste de succès ici",
       "detail": "Succès"
     },
     "furnishing": {
@@ -78,7 +78,7 @@
   },
   "characters": {
     "title": "Personnages",
-    "subtitle": "Les statistiques valent pour un niveau 80 et élévation 6. Vous pouvez aussi cliquez sur l'en-tête du tableau pour trier les données !",
+    "subtitle": "Les statistiques valent pour un personnage de niveau 80 et d'élévation 6. Vous pouvez aussi cliquez sur l'en-tête du tableau pour trier les données !",
     "name": "Nom",
     "element": "Élément",
     "rarity": "Rareté",
@@ -98,7 +98,7 @@
     "critRate": "Taux CRIT",
     "critDamage": "DGT CRIT",
     "em": "Maîtrise Élémentaire",
-    "er": "Recharge d'Énergie",
+    "er": "Recharge d'énergie",
     "healingBonus": "Bonus de soin",
     "pyroDamageBonus": "Bonus de DGT Pyro",
     "hydroDamageBonus": "Bonus de DGT Hydro",
@@ -114,10 +114,10 @@
     "ascensionMaterial": "Matériaux d'élévation",
     "talentStats": "Stats d'aptitude",
     "build": "Build",
-    "source": "Community Character Builds de la Genshin Helper Team",
-    "faq": "Le nombre de constellations est calculé à partir de vos données d'Historique de Vœux. Si votre ancien historique de souhaits a déjà disparu ou si vous avez obtenu le personnage depuis la boutique ou lors d'un événement, le nombre pourrait ne pas être exact ! Mais vous pouvez le modifier manuellement en appuyant sur l'icône de crayon à côté du nom du personnage.",
+    "source": "Builds communautaires de personnages créés par la Genshin Helper Team",
+    "faq": "Le nombre de constellations est calculé à partir de votre historique de vœux. Si votre ancien historique de vœux a déjà disparu ou si vous avez obtenu le personnage depuis la boutique ou lors d'un événement, le compte pourrait ne pas être exact ! Mais vous pouvez le modifier manuellement en appuyant sur l'icône de crayon à côté du nom du personnage.",
     "mainStats": "STATS PRINCIPALES",
-    "subStats": "SOUS STATS",
+    "subStats": "STATS SECONDAIRES",
     "talentPriority": "PRIORITÉ DES APTITUDES",
     "abilityTip": "CONSEIL D'APTITUDE",
     "weapons": "ARMES",
@@ -126,7 +126,7 @@
   "wish": {
     "title": "Compteur de voeux",
     "autoImport": "Importation auto",
-    "helpAndSetting": "Paramètres et aides",
+    "helpAndSetting": "Paramètres et aide",
     "helps": "Aide",
     "settings": "Paramètres",
     "wishesWorth": "Valeurs des voeux",
@@ -135,12 +135,12 @@
     "name": "Nom",
     "time": "Temps",
     "pity": "Pity",
-    "welcome": "Bienvenue sur le compteur de voeux de Paimon.moe ! Il est recommandé d'importer l'historique des voeux avec l'importation auto.",
+    "welcome": "Bienvenue sur le compteur de vœux de Paimon.moe ! Il est recommandé d'importer l'historique des vœux avec l'importation auto.",
     "welcomeStart1": "Pour commencer, appuyez ici",
     "welcomeStart2": "bouton plus haut",
     "manual": "Si vous voulez importer manuellement vos données, vous pouvez l'activer ici :",
     "manualButton": "Activer l'importation manuelle",
-    "errorBanner": "Les dates de bannières ne correspondent pas ! Veuillez ajuster votre serveur dans les paramètres. Cela ne marche toujours pas ? Laissez un message sur Discord 😅",
+    "errorBanner": "Les dates de bannières ne correspondent pas ! Veillez à bien sélectionner votre région dans les paramètres. Cela ne marche toujours pas ? Laissez un message sur Discord 😅",
     "globalWishTally": "Compteur global des voeux",
     "pityTooltip": [
       "Montre votre pity pour les {rarity}",
@@ -154,8 +154,8 @@
       "choosePlatform": "Sélectionnez votre plateforme",
       "chooseMethod": "Choisissez la méthode désirée",
       "nonew": "Pas de nouveaux voeux",
-      "importNotice1": "Les voeux importés serons ajoutés ou remplacés en fonction des données existantes",
-      "importNotice2": "Si aucune donnée n'est présente, le premier voeux comptera comme la pity 1",
+      "importNotice1": "Les vœux importés seront ajoutés ou remplacés en fonction des données existantes",
+      "importNotice2": "Si aucune donnée n'est présente, le premier vœu comptera comme 1 de pity",
       "importNotice3": "Faites attention si vous importez des données de plusieurs comptes, soyez sûrs de séparer vos comptes dans les paramètres, ou vos données seront complètement mélangées !",
       "saveData": "Sauvegarder les données des voeux?",
       "reCalculating": "Recalcul de la pity...",
@@ -166,7 +166,7 @@
       "save": "Sauvegarder",
       "cancel": "Annuler",
       "cancelling": "Annulation...",
-      "importNewWishOnly": "Importer uniquement les nouveaux voeux",
+      "importNewWishOnly": "Importer uniquement les nouveaux vœux",
       "importNewWishUncheck": "Décochez uniquement si vous avez besoin de réimporter la totalité de votre historique de voeux",
       "import": "Importer",
       "close": "Fermer",
@@ -188,7 +188,7 @@
       ],
       "forceUpdateCheck": "Forcer la mise à jour de l'historique de vœux (À activer uniquement si votre historique de vœux ne se met pas à jour)",
       "header": [
-        "Importez et sauvegardez votre historique de vœux de Genshin Impact afin de le conserver plus de 6 mois. De plus, suivez automatique votre pity et les statistiques de vos vœux !",
+        "Importez et sauvegardez votre historique de vœux de Genshin Impact afin de le conserver plus de 6 mois. De plus, suivez automatiquement votre pity et les statistiques de vos vœux !",
         "Vous pouvez également activer Drive Sync dans les Paramètres afin de synchroniser et sauvegarder l'historique sur votre Google Drive",
         "Veuillez noter que l'ancien lien de rétroaction ne fonctionne plus, veuillez suivre les nouvelles instructions ci-dessous !"
       ],
@@ -308,7 +308,7 @@
           "Cliquez sur Problèmes",
           "Cliquez sur mode Co-Op",
           "Il y a un lien en bas de la réponse, cliquez là-desssus",
-          "Un navigateur devrait s'ouvrir, copier le lien et collez le ci-dessous",
+          "Un navigateur devrait s'ouvrir, copiez le lien et collez le ci-dessous",
           "Collez le lien ici... https://genshin.mihoyo..."
         ],
         "ios2": [
@@ -364,7 +364,7 @@
         "Cette fonctionnalité est toujours en bêta, faites d'abord une sauvegarde dans les paramètres avant d'exporter vers Excel !",
         "Les vœux avec le même horodatage et le même nom de récompense ne seront PAS affectés (donc les vœux existants ne seront pas dupliqués)",
         "Les vœux ne seront ajoutés qu'en fin ou début de liste, ce qui veut dire que rien ne sera ajouté en plein milieu de la liste",
-        ""
+        "Veuillez d'abord modifier la langue du site en fonction de la langue de votre fichier Excel"
       ],
       "selectFile": {
         "default": "Glissez & déposez le fichier Excel de Paimon.moe ici, ou cliquez pour en sélectionner un",

@@ -364,7 +364,7 @@
         "¡Esta función todavía está en BETA, por favor, haga una copia de seguridad primero yendo a Configuración y luego a Exportar a Excel!",
         "Los deseos con la misma marca de tiempo y nombre de recompensa NO se tocarán (por lo que el deseo existente no se reescribirá)",
         "Sólo agregará y prepondrá deseos, esto significa que no se insertará nada en la mitad de la lista",
-        ""
+        "Por favor, cambie primero el idioma del sitio web, de acuerdo al idioma de su archivo Excel"
       ],
       "selectFile": {
         "default": "Arrastra y suelta el archivo excel de Paimon.moe aquí, o clica aquí para seleccionarlo",

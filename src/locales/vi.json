@@ -364,7 +364,7 @@
         "Tính năng này vẫn đang trong giai đoạn BETA, hãy sao lưu một bản sao trước, bằng cách vào phần Cài đặt sau đó ấn Xuất ra Excel!",
         "Cầu nguyện có cùng mốc thời gian và tên vật phẩm sẽ KHÔNG bị ảnh hưởng (nên những cầu nguyện hiện có sẽ không bị thay thế)",
         "Chỉ thêm những lượt cầu nguyện ở đầu và cuối của danh sách được nhập, có nghĩa là sẽ không có gì được chèn thêm vào giữa lịch sử cầu nguyện hiện tại cả",
-        ""
+        "Vui lòng thay đổi ngôn ngữ trang web ứng với ngôn ngữ của tập tin excel của bạn trước"
       ],
       "selectFile": {
         "default": "Kéo & thả file excel do Paimon.moe tạo vào đây, hoặc ấn vào đây để chọn",
