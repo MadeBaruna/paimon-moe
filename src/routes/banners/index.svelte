@@ -220,7 +220,7 @@
   function getColor(index, max) {
     if (index === '') return 'none';
 
-    const lightness = 100 - Math.min(70, 20 + ((max + index) / max) * 25);
+    const lightness = 100 - Math.min(75, 45 + Math.floor((index / max) * 30));
     return `hsl(210, 60%, ${lightness}%)`;
   }
 
