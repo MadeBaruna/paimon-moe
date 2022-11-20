@@ -8,6 +8,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 const IMAGE_URL = `${self.location.origin}/images/`;
 
 const changelog = [
+  'Update character builds',
   'Add Layla',
   'Update furnishing sets',
   'Update achievement commission data',
