@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    tartaglia: {
-      name: 'Tartaglia',
+    wanderer: {
+      name: 'Wanderer',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    yae_miko: {
-      name: 'Yae Miko',
-      rarity: 'legendary',
+    faruzan: {
+      name: 'Faruzan',
+      rarity: 'rare',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300039;
-  const image = 'tartaglia_yae.png';
+  const bannerId = 300040;
+  const image = 'wanderer_faruzan.png';
   const width = 800;
-  const height = 595;
+  const height = 431;
 
   let loading = true;
   let user = '';
