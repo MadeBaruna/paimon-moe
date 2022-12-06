@@ -3459,6 +3459,24 @@ export const builds = {
       },
     },
   },
+  faruzan: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
   traveler_anemo: {
     roles: {
       'ANEMO DPS': {
@@ -3797,6 +3815,24 @@ export const builds = {
         talent: ['Burst', 'Normal Attack', 'Skill'],
         tip: "The element which is absorbed by Kazuha's elemental burst follows the priority of Pyro > Hydro > Electro > Cryo, and can be absorbed from both the active character and enemies. (i.e. Standing in Bennett 's Elemental Burst will result in Kazuha's Elemental Burst infusing Pyro as Bennett's Elemental Burst applies Pyro to the active character)\n\nRecommended ER Thresholds: \nWith Raiden: ~160 ER%\nGeneral Teams: ~180 ER%\nMelt Ganyu: ~200 ER%",
         note: "<b></b>Kazuha's 4th Ascension Passive encourages players to maximise Elemental Mastery in order to maximise his utility. \n\n<b>Similar to Venti, due to the EM buffs, a triple EM build will out-damage a regular ATK-EM/Anemo/Crit build as long as there are 2+ enemies due to the amount of swirls involved. Because of this, an ADC (Attack/Damage/Crit) build isn't recommended unless he is in a team whereby he cannot make use of his A4 passive or swirls. (i.e. mono Anemo/Geo teams)\n</b>\n<b>Regarding Weapon Choices: \n</b>The ultimate goal is to try<b> stack as much EM while getting enough ER for a consistent Burst uptime</b>. Having <b>Sacrificial Sword</b> or a second Anemo character in the team will also help reduce the needs for ER and prioritize EM substats more.\n<b>Favonius Sword: </b>With this weapon, try to aim for some Crit Rate stats to trigger the weapon passive reliably.\n<b>Xiphos' Moonlight:</b> In teams where you can meet energy requirements without needing the extra particles from <b>Favonius Sword</b> this is a better choice with stronger personal damage and buffing. Also at high refinements <b>[R4-R5]</b> it starts beating <b>Favonius Sword</b> in team energy generation too.\n<b>Iron Sting: </b>This weapon will yield the joint highest upfront EM and teamwide buff if compared to the other 4 star options,<b> if you manage to meet his energy needs or simply don't need more than one rotation, this would be the better option if compared to the Energy Recharge weapons.\nAmenoma Kageuchi: </b>At <b>[R5]</b>, <b>Amenoma Kageuchi</b> needs no extra ER, and can focus building entirely EM. This makes it roughly equal to <b>Iron Sting.</b> At <b>[R1]</b>, <b>Amenoma Kageuchi</b> needs <b>138% Energy Recharge </b>to burst consistently.<b>\nSapwood Blade: </b>Only really viable at high refinement in specific dendro teams where you can trigger dendro reactions usually through swirling Electro/Hydro on enemies with dendro applied to them (most consistently done in aggravate reaction comps).\n<b>\nRegarding Artifact Sets:\nThundering Fury (4): </b>This is a niche build that excels <b>only in AOE situations and with specific teams.</b> This teams includes an <b>off-field</b> <b>Hydro and Electro support to allow Kazuha to constantly trigger the 4p effect and spam his Elemental Skill, aswell as another Anemo support to hold the Viridiscent Venerer (4) set.</b> Such teams can be <b>Kazuha + Kokomi + Fischl + Venti</b>, with <b>Barbara and Sucrose</b> being weaker replacements for Kokomi and Venti. This team triggers <b>multiple fall damage instances against enemies that can be Crowd Controlled by Kazuha.</b> Fischl can use <b>The Viridiscent Hunt</b> bow to allow for more fall damage instances. <b>**NOTE: This team performs very poorly in pure single target situations.</b>\n\nPrioritize Energy Recharge if his Energy Requirements are not met yet.\nFor an EM-focused build, upgrading Kazuha's talent levels isn't a necessity. Note that upgrading Kazuha's NA talent increases the damage of his plunge attacks.",
+      },
+    },
+  },
+  wanderer: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
       },
     },
   },
