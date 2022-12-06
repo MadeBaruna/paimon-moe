@@ -50,8 +50,8 @@ register('es', () => import('./locales/items/es.json'));
 register('de', () => import('./locales/items/de.json'));
 register('th', () => import('./locales/items/th.json'));
 register('vi', () => import('./locales/items/vi.json'));
-register('tr', () => import('./locales/items/en.json'));
-register('it', () => import('./locales/items/en.json'));
+register('tr', () => import('./locales/items/tr.json'));
+register('it', () => import('./locales/items/it.json'));
 
 const dayjsLocales = {
   en: () => import('dayjs/locale/en'),
