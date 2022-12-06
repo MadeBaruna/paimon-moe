@@ -8,12 +8,16 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 const IMAGE_URL = `${self.location.origin}/images/`;
 
 const changelog = [
-  'Update character builds',
-  'Add Layla',
-  'Update furnishing sets',
-  'Update achievement commission data',
+  'Add Wanderer and Faruzan',
+  'Add Turkey and Italian language (only for the item names, if you want to help translate please check our Discord!)',
   'Update timeline',
-  'Update locales',
+  'Update achievement',
+  'Update weapons',
+  'Update banners',
+  'Update artifacts',
+  'Update furnishing',
+  'Update fishing book',
+  'Update radiant spincrystal',
 ];
 
 const channel = new BroadcastChannel('paimonmoe-sw');

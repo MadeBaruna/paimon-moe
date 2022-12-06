@@ -376,7 +376,7 @@
 
 <div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8 max-w-screen-xl">
   <div class="bg-item rounded-xl mb-4 p-4">
-    <p class="text-white inline-block mr-4">{$t('settings.version')} <b>3.2</b></p>
+    <p class="text-white inline-block mr-4">{$t('settings.version')} <b>3.3</b></p>
     <a href="/changelog">
       <Button>
         {$t('settings.changelog')}
