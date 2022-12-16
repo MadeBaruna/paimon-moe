@@ -72,13 +72,13 @@ export const eventsData = [
     },
     {
       name: 'Akitsu Kimodameshi',
-      pos: '0% 10%',
-      zoom: '100%',
-      image: 'akitsu_kimodameshi_temp.jpg',
+      pos: '0% 15%',
+      zoom: '220%',
+      image: 'akitsu_kimodameshi.jpg',
       start: '2022-12-15 10:00:00',
       end: '2023-01-02 03:59:59',
-      color: '#ebcdaa',
-      url: 'https://www.hoyolab.com/article/14149689',
+      color: '#c2a5f1',
+      url: 'https://www.hoyolab.com/article/14330068',
       showOnHome: true,
     },
   ],
@@ -108,12 +108,12 @@ export const eventsData = [
     {
       name: 'Misty Dungeon: Realm of Sand',
       pos: '0% 50%',
-      zoom: '100%',
-      image: 'misty_dungeon_realm_of_sand_temp.jpg',
+      zoom: '300%',
+      image: 'misty_dungeon_realm_of_sand.jpg',
       start: '2022-12-09 10:00:00',
       end: '2022-12-19 03:59:59',
       color: '#fceea3',
-      url: 'https://www.hoyolab.com/article/14149689',
+      url: 'https://www.hoyolab.com/article/14201704',
       showOnHome: true,
     },
   ],
@@ -247,7 +247,7 @@ export const eventsData = [
       end: '2022-12-01 04:00:00',
       color: '#4299E1',
       description:
-        "After a character triggers Bloom, Hyperbloom, or Burgeon, all party members will have their Elemental Mastery increased by 40 for 10s. This effect can be triggered once every 0.1s. Max 5 stacks. Each stack's duration is counted independently.",
+        "When characters deal DMG to an opponent, a shockwave will be unleashed at that opponent's position, dealing True DMG. Each Elemental DMG Type (including Physical DMG) can unleash a shockwave this way every 8s.",
     },
     {
       name: 'Spiral Abyss',
@@ -257,7 +257,7 @@ export const eventsData = [
       end: '2022-12-16 04:00:00',
       color: '#4299E1',
       description:
-        'After opponents take DMG from Dendro Cores (this includes Burgeon and Hyperbloom DMG), their All Elemental and Physical RES will decrease by 8% for 6s. Max 4 stacks.',
+        "When characters trigger Burning, Quicken, Aggravate, Spread, Bloom, Hyperbloom, or Burgeon on an opponent, all party members will gain 10% Dendro DMG Bonus for 10s. This bonus can be triggered once every 5s. Max 4 stacks. Once 4 stacks have been gained, when characters deal Dendro DMG to an opponent, a shockwave will be unleashed at that opponent's position, dealing True DMG. A shockwave can be unleashed in this way once every 5s.",
     },
     {
       name: 'Spiral Abyss',
@@ -267,7 +267,27 @@ export const eventsData = [
       end: '2023-01-01 04:00:00',
       color: '#4299E1',
       description:
-        "When Dendro Core attacks (this includes Burgeon and Hyperbloom attacks) hit an opponent, a shockwave will be unleashed at that opponent's position, dealing True DMG. A shockwave can be unleashed this way every 2s.",
+        "After the active character's Normal, Charged, or Plunging Attack deals DMG to an opponent, the character will gain a 10% corresponding Elemental or Physical DMG Bonus of that attack for 4s. This effect can be triggered once every 1s. Max 6 stacks. It will be removed when the character leaves the field or deals a different type of Elemental or Physical DMG.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-01-01 04:00:00',
+      end: '2023-01-16 04:00:00',
+      color: '#4299E1',
+      description:
+        'After the active character triggers a Swirl reaction, all party members will have their CRIT DMG increased by 20% for 8s. Max 3 stacks. This effect can be triggered once every 1s',
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-01-16 04:00:00',
+      end: '2023-02-01 04:00:00',
+      color: '#4299E1',
+      description:
+        "When the active character deals consecutive instances of Elemental DMG of the same Elemental Type using Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts to an opponent, they will gain 1 count stack. 1 stack can be gained every 1s. After 5 stacks have been gained, a shockwave will be unleashed at the opponent's position, dealing True DMG and clearing all heretofore accumulated stacks. Should the active character leave the field or deal a different type of Elemental DMG, these stacks will also be cleared. Dealing Physical DMG will not clear the stacks.",
     },
   ],
   [
