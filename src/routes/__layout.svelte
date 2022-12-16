@@ -53,7 +53,7 @@
 </script>
 
 <Header />
-<Modal>
+<Modal styleWindowWrap={{ margin: '1rem' }}>
   <Sidebar {segment} />
   {#if $showSidebar}
     <Sidebar {segment} mobile />

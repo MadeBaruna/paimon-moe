@@ -1,0 +1,3587 @@
+[
+  {
+    "_id": 1101,
+    "id": "ganyu",
+    "type": "character",
+    "name": "Ganyu",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11011,
+        "type": "Attaque normale",
+        "name": "Archerie Liutian",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11012,
+        "type": "Compétence élémentaire",
+        "name": "Trace de Qilin",
+        "desc": "Inflige 1 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et crée un <span style=\"color: #FFFFFFFF;\">Lotus de glace</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111012,
+          "id": "ice_lotus",
+          "name": "Lotus de glace",
+          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit des DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 11013,
+        "type": "Attaque normale",
+        "name": "Flèche de givre",
+        "desc": "Inflige 3 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages ennemis en attente.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "_id": 11014,
+        "type": "Déchaînement élémentaire",
+        "name": "Baptême céleste",
+        "desc": "Inflige 1 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>, inflige <span style=\"color: #FFFFFFFF;\">1 pt de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages adverses en attente et invoque une <span style=\"color: #FFFFFFFF;\">Perle de glace</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111011,
+          "id": "sacred_cryo_pearl",
+          "name": "Perle de glace",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 1 pt de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et inflige 1 pt de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span> à tous les personnages adverses en attente.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1102,
+    "id": "diona",
+    "type": "character",
+    "name": "Diona",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11021,
+        "type": "Attaque normale",
+        "name": "Archerie de chasse",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11022,
+        "type": "Compétence élémentaire",
+        "name": "Griffes Cryo",
+        "desc": "Inflige 2 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et crée un <span style=\"color: #FFFFFFFF;\">Bouclier de griffes</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111021,
+          "id": "cat-claw_shield",
+          "name": "Bouclier de griffes",
+          "desc": "Accorde <span style=\"color: #FFFFFFFF;\">1 pt de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span></span> à votre personnage actif."
+        }
+      },
+      {
+        "_id": 11023,
+        "type": "Déchaînement élémentaire",
+        "name": "Cuvée spéciale",
+        "desc": "Inflige 1 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span>, soigne ce personnage pour 2 pts et invoque un <span style=\"color: #FFFFFFFF;\">Champ de vapeur d'alcool</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111023,
+          "id": "drunken_mist",
+          "name": "Champ de vapeur d'alcool",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 1 pt de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et soigne votre personnage actif pour 2 pts.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1103,
+    "id": "kaeya",
+    "type": "character",
+    "name": "Kaeya",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11031,
+        "type": "Attaque normale",
+        "name": "Passe d'armes",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11032,
+        "type": "Compétence élémentaire",
+        "name": "Attaque givrée",
+        "desc": "Inflige 3 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11033,
+        "type": "Déchaînement élémentaire",
+        "name": "Valse glaciale",
+        "desc": "Inflige 1 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et crée une <span style=\"color: #FFFFFFFF;\">Stalactite</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111031,
+          "id": "icicle",
+          "name": "Stalactite",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Après que vous basculez de personnage : </span>Inflige 2 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1104,
+    "id": "chongyun",
+    "type": "character",
+    "name": "Chongyun",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11041,
+        "type": "Attaque normale",
+        "name": "Fléau des démons",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11042,
+        "type": "Compétence élémentaire",
+        "name": "Givre superposé",
+        "desc": "Inflige 3 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et crée un <span style=\"color: #FFFFFFFF;\">Champ de givre</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111041,
+          "id": "chonghua_frost_field",
+          "name": "Champ de givre",
+          "desc": "Les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés par votre personnage avec une épée à une main, à deux mains ou une arme d'hast sont convertis en <span style=\"color: #99FFFFFF;\">DGT Cryo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 11043,
+        "type": "Déchaînement élémentaire",
+        "name": "Chute d'étoiles",
+        "desc": "Inflige 7 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1105,
+    "id": "kamisato_ayaka",
+    "type": "character",
+    "name": "Kamisato Ayaka",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11051,
+        "type": "Attaque normale",
+        "name": "École Kamisato : Sveltesse",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11052,
+        "type": "Compétence élémentaire",
+        "name": "École Kamisato : Fleur de glace",
+        "desc": "Inflige 3 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11053,
+        "type": "Déchaînement élémentaire",
+        "name": "École Kamisato : Givre mortel",
+        "desc": "Inflige 4 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et invoque un <span style=\"color: #FFFFFFFF;\">Tourbillon givré</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111051,
+          "id": "frostflake_seki_no_to",
+          "name": "Tourbillon givré",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 2 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 11054,
+        "type": "Capacité passive",
+        "name": "École Kamisato : Sentier de givre",
+        "desc": "(Passif) Lorsque ce personnage devient le personnage actif, accorde un <span style=\"color: #FFFFFFFF;\">Enchantement Cryo</span>.",
+        "cost": [],
+        "sub": {
+          "_id": 111052,
+          "id": "cryo_elemental_infusion",
+          "name": "Enchantement Cryo",
+          "desc": "Les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés par le personnage affecté sont convertis en <span style=\"color: #99FFFFFF;\">DGT Cryo</span>.\\n(Dure jusqu'à la fin de la manche)"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1201,
+    "id": "barbara",
+    "type": "character",
+    "name": "Barbara",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12011,
+        "type": "Attaque normale",
+        "name": "Murmure de l'eau",
+        "desc": "Inflige 1 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12012,
+        "type": "Compétence élémentaire",
+        "name": "C'est parti pour le show ♪",
+        "desc": "Inflige 1 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> et invoque un <span style=\"color: #FFFFFFFF;\">Cercle de mélodie</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112011,
+          "id": "melody_loop",
+          "name": "Cercle de mélodie",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Soigne tous vos personnages pour 1 pt et <span style=\"color: #80C0FFFF;\">Application Hydro</span> au personnage actif.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 12013,
+        "type": "Déchaînement élémentaire",
+        "name": "Miracle brillant ♪",
+        "desc": "Soigne tous vos personnages pour 4 pts.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1202,
+    "id": "xingqiu",
+    "type": "character",
+    "name": "Xingqiu",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12021,
+        "type": "Attaque normale",
+        "name": "Style Guhua",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12022,
+        "type": "Compétence élémentaire",
+        "name": "Pluie battante",
+        "desc": "Inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>, <span style=\"color: #80C0FFFF;\">Application Hydro</span> au personnage et crée une <span style=\"color: #FFFFFFFF;\">Épée de pluie</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112021,
+          "id": "rain_sword",
+          "name": "Épée de pluie",
+          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit au moins 3 pts de DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 12023,
+        "type": "Déchaînement élémentaire",
+        "name": "Pluie et arc-en-ciel",
+        "desc": "Inflige 1 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>, <span style=\"color: #80C0FFFF;\">Application Hydro</span> au personnage et crée une <span style=\"color: #FFFFFFFF;\">Lame arc-en-ciel</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112022,
+          "id": "rainbow_bladework",
+          "name": "Lame arc-en-ciel",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage a utilisé une attaque normale : </span>Inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1203,
+    "id": "mona",
+    "type": "character",
+    "name": "Mona",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12031,
+        "type": "Attaque normale",
+        "name": "Ondes du destin",
+        "desc": "Inflige 1 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12032,
+        "type": "Compétence élémentaire",
+        "name": "Mirage aqueux",
+        "desc": "Inflige 1 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> et invoque un <span style=\"color: #FFFFFFFF;\">Mirage</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112031,
+          "id": "reflection",
+          "name": "Mirage",
+          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit des DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 1</span>, mais la carte n'est pas défaussée une fois épuisée.\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Défausse cette carte et inflige 1 pt de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>."
+        }
+      },
+      {
+        "_id": 12033,
+        "type": "Déchaînement élémentaire",
+        "name": "Voie divine",
+        "desc": "Inflige 4 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> et crée une <span style=\"color: #FFFFFFFF;\">Bulle nocturne</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112032,
+          "id": "illusory_bubble",
+          "name": "Bulle nocturne",
+          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque vous infligez des DGT en utilisant une capacité: </span>Annule l'état et double les DGT actuels."
+        }
+      },
+      {
+        "_id": 12034,
+        "type": "Capacité passive",
+        "name": "Vicissitude",
+        "desc": "(Passif) <span style=\"color: #FFFFFFFF;\">Lorsque ce personnage est actif et que vous basculez de personnage : </span>Considère ce changement comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action rapide</span>, et pas comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span>. (1 fois par manche)",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1301,
+    "id": "diluc",
+    "type": "character",
+    "name": "Diluc",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 13011,
+        "type": "Attaque normale",
+        "name": "Épée trempée",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13012,
+        "type": "Compétence élémentaire",
+        "name": "Assaut brûlant",
+        "desc": "Inflige 5 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span>. Lors de la troisième utilisation de cette capacité à chaque manche, DGT +2.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13013,
+        "type": "Déchaînement élémentaire",
+        "name": "Aurore",
+        "desc": "Inflige 8 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> et accorde un <span style=\"color: #FFFFFFFF;\">Enchantement Pyro</span> au personnage.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113011,
+          "id": "pyro_infusion",
+          "name": "Enchantement Pyro",
+          "desc": "Les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés par le personnage affecté sont convertis en <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1302,
+    "id": "xiangling",
+    "type": "character",
+    "name": "Xiangling",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 13021,
+        "type": "Attaque normale",
+        "name": "Cuisine-fu",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13022,
+        "type": "Compétence élémentaire",
+        "name": "Attaque Gooba",
+        "desc": "Invoque un <span style=\"color: #FFFFFFFF;\">Gooba</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113021,
+          "id": "guoba",
+          "name": "Gooba",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 2 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 13023,
+        "type": "Déchaînement élémentaire",
+        "name": "Pyrotation",
+        "desc": "Inflige 2 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> et crée une <span style=\"color: #FFFFFFFF;\">Pyrotation</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113022,
+          "id": "pyronado",
+          "name": "Pyrotation",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage a utilisé une capacité : </span>Inflige 2 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1303,
+    "id": "bennett",
+    "type": "character",
+    "name": "Bennett",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 13031,
+        "type": "Attaque normale",
+        "name": "Épée chanceuse",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13032,
+        "type": "Compétence élémentaire",
+        "name": "Surpassion",
+        "desc": "Inflige 3 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13033,
+        "type": "Déchaînement élémentaire",
+        "name": "Merveilleux voyage",
+        "desc": "Inflige 2 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> et crée un <span style=\"color: #FFFFFFFF;\">Champ vertueux</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113031,
+          "id": "inspiration_field",
+          "name": "Champ vertueux",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage utilise une capacité : </span>Si ce personnage a au moins 7 PV, DGT supplémentaires actuels +2. Après le calcul de la capacité, si ce personnage a 6 PV ou moins, soigne le personnage pour 2 pts.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1305,
+    "id": "yoimiya",
+    "type": "character",
+    "name": "Yoimiya",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 13051,
+        "type": "Attaque normale",
+        "name": "Flambée pyrotechnique",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13052,
+        "type": "Compétence élémentaire",
+        "name": "#Danse du feu « Niwabi»",
+        "desc": "Accorde un <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> au personnage. (Cette capacité n'accorde pas de charge)",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          }
+        ],
+        "sub": {
+          "_id": 113051,
+          "id": "niwabi_enshou",
+          "name": "Niwabi Enshou",
+          "desc": "Les DGT des <span style=\"color: #FFFFFFFF;\">attaques normales</span> du personnage affecté augmentent de 1 et ses <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés sont convertis en <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 13053,
+        "type": "Déchaînement élémentaire",
+        "name": "Saxifrage Ryuukin",
+        "desc": "Inflige 3 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> et crée une <span style=\"color: #FFFFFFFF;\">Flamme Ryuukin</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113052,
+          "id": "aurous_blaze",
+          "name": "Flamme Ryuukin",
+          "desc": "Lorsqu'un de vos personnages autre que Yoimiya a utilisé une capacité : Inflige 1 pt de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1401,
+    "id": "fischl",
+    "type": "character",
+    "name": "Fischl",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14011,
+        "type": "Attaque normale",
+        "name": "Flèche de culpabilité",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14012,
+        "type": "Compétence élémentaire",
+        "name": "Ailes de surveillance nocturne",
+        "desc": "Inflige 1 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span> et invoque un <span style=\"color: #FFFFFFFF;\">Oz</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114011,
+          "id": "oz",
+          "name": "Oz",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 1 pt de <span style=\"color: #FFACFFFF;\">DGT Électro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 14013,
+        "type": "Déchaînement élémentaire",
+        "name": "Incarnation de la nuit",
+        "desc": "Inflige 4 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages ennemis en attente.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1402,
+    "id": "razor",
+    "type": "character",
+    "name": "Razor",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14021,
+        "type": "Attaque normale",
+        "name": "Croc d'acier",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14022,
+        "type": "Compétence élémentaire",
+        "name": "Griffe et tonnerre",
+        "desc": "Inflige 3 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14023,
+        "type": "Déchaînement élémentaire",
+        "name": "Croc éclair",
+        "desc": "Inflige 5 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span> et accorde un <span style=\"color: #FFFFFFFF;\">Loup de tonnerre</span> au personnage.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114021,
+          "id": "the_wolf_within",
+          "name": "Loup de tonnerre",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage affecté a utilisé une attaque normale ou une compétence élémentaire : </span>Inflige 2 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1403,
+    "id": "keqing",
+    "type": "character",
+    "name": "Keqing",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 14031,
+        "type": "Attaque normale",
+        "name": "Escrime des nuages",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14032,
+        "type": "Compétence élémentaire",
+        "name": "Retour des étoiles",
+        "desc": "Inflige 3 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span> et crée une <span style=\"color: #FFFFFFFF;\">Lame de foudre</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114031,
+          "id": "lightning_stiletto",
+          "name": "Lame de foudre",
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Déploie Keqing sur le terrain pour utiliser Retour des étoiles immédiatement. Cette fois, Retour des étoiles accorde à Keqing un <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enchantement Électro</span>, mais ne génère pas de lame de foudre.\\n(Lorsque Keqing utilise Retour des étoiles, si cette carte est dans votre main : Au lieu de créer une autre lame de foudre, défausse la carte pour accorder à Keqing un <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enchantement Électro</span>)"
+        }
+      },
+      {
+        "_id": 14033,
+        "type": "Déchaînement élémentaire",
+        "name": "Promenade céleste",
+        "desc": "Inflige 4 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">3 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages ennemis en attente.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1404,
+    "id": "cyno",
+    "type": "character",
+    "name": "Cyno",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 14041,
+        "type": "Attaque normale",
+        "name": "Lance d'invocation",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14042,
+        "type": "Compétence élémentaire",
+        "name": "Rite : Traversée abyssale",
+        "desc": "Inflige 3 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14043,
+        "type": "Déchaînement élémentaire",
+        "name": "Liturgie : Rapidité lupine",
+        "desc": "Inflige 4 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span>.\\nNiv. de Possession d'<span style=\"color: #FFFFFFFF;\">Éclaireur sermenté</span> +2.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "Éclaireur sermenté",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Cumule 1 niv. de Possession.\\n<span style=\"color: #FFFFFFFF;\">Accorde les effets suivants selon le niv. de Possession :</span>\\nSupérieur ou égal à 2 : Les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> sont convertis en <span style=\"color: #FFACFFFF;\">DGT Électro</span>.\\nSupérieur ou égal à 4 : DGT infligés +2.\\nSupérieur ou égal à 6 : Niv. de Possession -4."
+        }
+      },
+      {
+        "_id": 14044,
+        "type": "Capacité passive",
+        "name": "Exécution légale",
+        "desc": "(Passif) Accorde un <span style=\"color: #FFFFFFFF;\">Éclaireur sermenté</span> au début du combat.",
+        "cost": [],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "Éclaireur sermenté",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Cumule 1 niv. de Possession.\\n<span style=\"color: #FFFFFFFF;\">Accorde les effets suivants selon le niv. de Possession :</span>\\nSupérieur ou égal à 2 : Les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> sont convertis en <span style=\"color: #FFACFFFF;\">DGT Électro</span>.\\nSupérieur ou égal à 4 : DGT infligés +2.\\nSupérieur ou égal à 6 : Niv. de Possession -4."
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1501,
+    "id": "sucrose",
+    "type": "character",
+    "name": "Sucrose",
+    "hp": 10,
+    "energy": 2,
+    "element": "anemo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 15011,
+        "type": "Attaque normale",
+        "name": "Esprit du vent",
+        "desc": "Inflige 1 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15012,
+        "type": "Compétence élémentaire",
+        "name": "Esprit du vent : Sujet 6308",
+        "desc": "Inflige 3 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et bascule de force la cible pour le personnage précédent.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15013,
+        "type": "Déchaînement élémentaire",
+        "name": "#Esprit du vent : Isomorphe 75 TypeII",
+        "desc": "Inflige 1 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et invoque un <span style=\"color: #FFFFFFFF;\">Esprit du vent de grande taille</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 115011,
+          "id": "large_wind_spirit",
+          "name": "Esprit du vent de grande taille",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 2 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 3</span>\\n\\nLorsqu'un de vos personnages ou invocations ont déclenché une réaction de Dispersion : Convertit le type élémentaire de cette carte et modifie les DGT infligés en l'élément dispersé. (Ne peut être utilisé qu'une seule fois avant de quitter le terrain)"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1502,
+    "id": "jean",
+    "type": "character",
+    "name": "Jean",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 15021,
+        "type": "Attaque normale",
+        "name": "Escrime de Favonius",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15022,
+        "type": "Compétence élémentaire",
+        "name": "Épée de tourbillon",
+        "desc": "Inflige 3 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et bascule de force la cible pour le personnage suivant.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15023,
+        "type": "Déchaînement élémentaire",
+        "name": "Brise de pissenlit",
+        "desc": "Soigne tous vos personnages pour 2 pts et invoque un <span style=\"color: #FFFFFFFF;\">Champ de pissenlits</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 115021,
+          "id": "dandelion_field",
+          "name": "Champ de pissenlits",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 2 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et soigne votre personnage actif pour 1 pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1601,
+    "id": "ningguang",
+    "type": "character",
+    "name": "Ningguang",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 16011,
+        "type": "Attaque normale",
+        "name": "Géo-dispersion",
+        "desc": "Inflige 1 pts de <span style=\"color: #FFE699FF;\">DGT Géo</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16012,
+        "type": "Compétence élémentaire",
+        "name": "Paravent d'astrolabe",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFE699FF;\">DGT Géo</span> et crée un <span style=\"color: #FFFFFFFF;\">Paravent d'astrolabe</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "Paravent d'astrolabe",
+          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit au moins 2 pts de DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 16013,
+        "type": "Déchaînement élémentaire",
+        "name": "Éclatement des étoiles",
+        "desc": "Inflige 6 pts de <span style=\"color: #FFE699FF;\">DGT Géo</span>. Si un <span style=\"color: #FFFFFFFF;\">Paravent d'astrolabe</span> est sur le terrain, DGT +2.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "Paravent d'astrolabe",
+          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit au moins 2 pts de DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1602,
+    "id": "noelle",
+    "type": "character",
+    "name": "Noëlle",
+    "hp": 10,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16021,
+        "type": "Attaque normale",
+        "name": "Escrime de Favonius : Servante",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16022,
+        "type": "Compétence élémentaire",
+        "name": "Armure de cœur",
+        "desc": "Inflige 1 pts de <span style=\"color: #FFE699FF;\">DGT Géo</span> et crée une <span style=\"color: #FFFFFFFF;\">Armure complète</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116021,
+          "id": "full_plate",
+          "name": "Armure complète",
+          "desc": "Accorde <span style=\"color: #FFFFFFFF;\">2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span></span> à votre personnage actif.\\nAvant que ce <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span> ne soit épuisé, les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> que vous subissez diminuent de moitié. (Arrondi à l'entier supérieur)"
+        }
+      },
+      {
+        "_id": 16023,
+        "type": "Déchaînement élémentaire",
+        "name": "Grand ménage",
+        "desc": "Inflige 4 pts de <span style=\"color: #FFE699FF;\">DGT Géo</span> et accorde un <span style=\"color: #FFFFFFFF;\">Grand ménage</span> au personnage.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 116022,
+          "id": "sweeping_time",
+          "name": "Grand ménage",
+          "desc": "Lorsque le personnage utilise une attaque normale : Dépense 1 dé <span style=\"color: #FFE699FF;\">Géo</span> en moins. (1 fois par manche)\\nDGT infligés par l'<span style=\"color: #FFFFFFFF;\">attaque normale</span> du personnage +2 et les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés sont convertis en <span style=\"color: #FFE699FF;\">DGT Géo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1701,
+    "id": "collei",
+    "type": "character",
+    "name": "Collei",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17011,
+        "type": "Attaque normale",
+        "name": "Archerie de l'implorant",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17012,
+        "type": "Compétence élémentaire",
+        "name": "Brosse florale",
+        "desc": "Inflige 3 pts de <span style=\"color: #7EC236FF;\">DGT Dendro</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 17013,
+        "type": "Déchaînement élémentaire",
+        "name": "Atout félin",
+        "desc": "Inflige 2 pts de <span style=\"color: #7EC236FF;\">DGT Dendro</span> et invoque un <span style=\"color: #FFFFFFFF;\">Cuilein-Anbar</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 117011,
+          "id": "cuilein-anbar",
+          "name": "Cuilein-Anbar",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 2 pts de <span style=\"color: #7EC236FF;\">DGT Dendro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2201,
+    "id": "rhodeia_of_loch",
+    "type": "character",
+    "name": "Océanide - Rhodeia",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22011,
+        "type": "Attaque normale",
+        "name": "Déferlante",
+        "desc": "Inflige 1 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22012,
+        "type": "Compétence élémentaire",
+        "name": "Mimétisme océanique",
+        "desc": "Invoque aléatoirement un type de <span style=\"color: #FFFFFFFF;\">Mimiqueur Hydro</span>. (Priorité accordée aux types différents)",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "Mimiqueur Hydro",
+          "desc": "Il existe 3 types de Mimiqueurs Hydro :\\n<span style=\"color: #FFFFFFFF;\">Écureuil</span> : Inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> pendant la phase finale. Peut être utilisé 2 fois.\\n<span style=\"color: #FFFFFFFF;\">Faucon</span> : Inflige 1 pt de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> pendant la phase finale. Peut être utilisé 3 fois.\\n<span style=\"color: #FFFFFFFF;\">Grenouille</span> : Peut bloquer 2 pts de DGT, et inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> une fois épuisé."
+        }
+      },
+      {
+        "_id": 22013,
+        "type": "Compétence élémentaire",
+        "name": "Myriade sauvage",
+        "desc": "Invoque aléatoirement deux types de <span style=\"color: #FFFFFFFF;\">Mimiqueur Hydro</span>. (Priorité accordée aux types différents)",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 5
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "Mimiqueur Hydro",
+          "desc": "Il existe 3 types de Mimiqueurs Hydro :\\n<span style=\"color: #FFFFFFFF;\">Écureuil</span> : Inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> pendant la phase finale. Peut être utilisé 2 fois.\\n<span style=\"color: #FFFFFFFF;\">Faucon</span> : Inflige 1 pt de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> pendant la phase finale. Peut être utilisé 3 fois.\\n<span style=\"color: #FFFFFFFF;\">Grenouille</span> : Peut bloquer 2 pts de DGT, et inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> une fois épuisé."
+        }
+      },
+      {
+        "_id": 22014,
+        "type": "Déchaînement élémentaire",
+        "name": "Marée et torrent",
+        "desc": "Inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>. Pour chacune de vos invocations, DGT +2.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2202,
+    "id": "mirror_maiden",
+    "type": "character",
+    "name": "Suivante miroir des Fatui",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22021,
+        "type": "Attaque normale",
+        "name": "Boule d'eau",
+        "desc": "Inflige 1 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22022,
+        "type": "Compétence élémentaire",
+        "name": "Explosion d'afflux",
+        "desc": "Inflige 3 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> et inflige un <span style=\"color: #FFFFFFFF;\">Éclat de miroir d'eau</span> au personnage choisi.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122021,
+          "id": "refraction",
+          "name": "Éclat de miroir d'eau",
+          "desc": "DGT Hydro subis par le personnage affecté +1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>\\n(Un seul de ces états peut exister à la fois dans un même camp)"
+        }
+      },
+      {
+        "_id": 22023,
+        "type": "Déchaînement élémentaire",
+        "name": "Réflexion ondulée",
+        "desc": "Inflige 5 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2301,
+    "id": "fatui_pyro_agent",
+    "type": "character",
+    "name": "Usurier Pyro des Fatui",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 23011,
+        "type": "Attaque normale",
+        "name": "Poussée",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23012,
+        "type": "Compétence élémentaire",
+        "name": "Opportunité",
+        "desc": "Inflige 1 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> et accorde une <span style=\"color: #FFFFFFFF;\">Infiltration</span> au personnage.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "Infiltration",
+          "desc": "#DGT subis par le personnage affecté -1 et DGT qu'il inflige+1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2"
+        }
+      },
+      {
+        "_id": 23013,
+        "type": "Déchaînement élémentaire",
+        "name": "Lame incinératrice",
+        "desc": "Inflige 5 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23014,
+        "type": "Capacité passive",
+        "name": "Expert en infiltration",
+        "desc": "(Passif) Accorde une <span style=\"color: #FFFFFFFF;\">Infiltration</span> au début du combat.",
+        "cost": [],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "Infiltration",
+          "desc": "#DGT subis par le personnage affecté -1 et DGT qu'il inflige+1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2501,
+    "id": "maguu_kenki",
+    "type": "character",
+    "name": "Lame oni",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 25011,
+        "type": "Attaque normale",
+        "name": "Ichimonji",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 25012,
+        "type": "Compétence élémentaire",
+        "name": "Lame fulgurante",
+        "desc": "Inflige 1 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et invoque une <span style=\"color: #FFFFFFFF;\">Épée d'ombre : Brise</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125011,
+          "id": "shadowsword_lone_gale",
+          "name": "Épée d'ombre : Brise",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 1 pt de <span style=\"color: #80FFD7FF;\">DGT Anémo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 25013,
+        "type": "Compétence élémentaire",
+        "name": "Assaut givré",
+        "desc": "Inflige 1 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et invoque une <span style=\"color: #FFFFFFFF;\">Épée d'ombre : Givre</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125012,
+          "id": "shadowsword_galloping_frost",
+          "name": "Épée d'ombre : Givre",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 1 pt de <span style=\"color: #99FFFFFF;\">DGT Cryo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 25014,
+        "type": "Déchaînement élémentaire",
+        "name": "Balayage tengu falsifié",
+        "desc": "Inflige 6 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et déclenche les effets de toutes vos invocations de type <span style=\"color: #FFFFFFFF;\">Épée d'ombre</span>. (Ne consomme pas d'utilisation)",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2601,
+    "id": "stonehide_lawachurl",
+    "type": "character",
+    "name": "Chef Brutorocheux",
+    "hp": 8,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 26011,
+        "type": "Attaque normale",
+        "name": "Plama Lawa",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26012,
+        "type": "Compétence élémentaire",
+        "name": "Movo Lawa",
+        "desc": "Inflige 3 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 26013,
+        "type": "Déchaînement élémentaire",
+        "name": "Upa Shato",
+        "desc": "Inflige 5 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26014,
+        "type": "Capacité passive",
+        "name": "Peau-pierre infusée",
+        "desc": "(Passif) Accorde une <span style=\"color: #FFFFFFFF;\">Peau-pierre</span> et une <span style=\"color: #FFFFFFFF;\">Force de pierre</span> au début du combat.",
+        "cost": [],
+        "sub": {
+          "_id": 126011,
+          "id": "stonehide",
+          "name": "Peau-pierre",
+          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque le personnage affecté subit des DGT : </span>Diminue les DGT de 1pt. Lorsque des DGT Géo sont diminués, consomme le <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> pour 1 de plus.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2701,
+    "id": "jadeplume_terrorshroom",
+    "type": "character",
+    "name": "Champieffroi panaché",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 27011,
+        "type": "Attaque normale",
+        "name": "Danse majestueuse",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 27012,
+        "type": "Compétence élémentaire",
+        "name": "Nuage de spores instables",
+        "desc": "Inflige 3 pts de <span style=\"color: #7EC236FF;\">DGT Dendro</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 27013,
+        "type": "Déchaînement élémentaire",
+        "name": "Épandage de plumes",
+        "desc": "Inflige 4 pts de <span style=\"color: #7EC236FF;\">DGT Dendro</span> et consomme tous les cumuls de <span style=\"color: #FFFFFFFF;\">Vitalité radicale</span> pour augmenter ces DGT de 1 par cumul consommé.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 27014,
+        "type": "Capacité passive",
+        "name": "Vitalité radicale",
+        "desc": "(Passif) Accorde une <span style=\"color: #FFFFFFFF;\">Vitalité radicale</span> au début du combat.",
+        "cost": [],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "Vitalité radicale",
+          "desc": "Lorsque le personnage inflige ou subit des DGT élémentaires : Accorde 1 cumul de Vitalité radicale. (Peut être cumulé 3 fois maximum)\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Si les cumuls de Vitalité radicale sont au maximum, ils sont effacés et le personnage perd toutes ses charges."
+        }
+      }
+    ]
+  },
+  {
+    "_id": 211011,
+    "id": "undivided_heart",
+    "type": "talent",
+    "name": "Cœur indivisible",
+    "requirement": "ganyu",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 5
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Ganyu</span>, équipe cette carte.\\nUne fois Ganyu équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Cœur indivisible</span> une fois.\\nLorsque Ganyu, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Cœur indivisible</span> : Si cette capacité a déjà été utilisée pendant cette partie, [K101] infligés +1 et inflige maintenant 3 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span> aux personnages adverses en attente.\\n(Votre deck doit contenir Ganyu pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 211021,
+    "id": "shaken,_not_purred",
+    "type": "talent",
+    "name": "On the rocks",
+    "requirement": "diona",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Diona</span>, équipe cette carte.\\nUne fois Diona équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">On the rocks</span> une fois.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span> accordé par le <span style=\"color: #FFFFFFFF;\">Bouclier de griffes</span> créé par Diona équipée de cette carte +1 pt.\\n(Votre deck doit contenir Diona pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 211031,
+    "id": "cold-blooded_strike",
+    "type": "talent",
+    "name": "Épée de la cruauté",
+    "requirement": "kaeya",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Kaeya</span>, équipe cette carte.\\nUne fois Kaeya équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Épée de la cruauté</span> une fois.\\nLorsque Kaeya, équipé de cette carte, a utilisé <span style=\"color: #FFFFFFFF;\">Épée de la cruauté</span> : Se soigne pour 2 pts. (1 fois par manche)\\n(Votre deck doit contenir Kaeya pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 211041,
+    "id": "steady_breathing",
+    "type": "talent",
+    "name": "Respiration stable",
+    "requirement": "chongyun",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Chongyun</span>, équipe cette carte.\\nUne fois Chongyun équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Respiration stable</span> une fois.\\nLe <span style=\"color: #FFFFFFFF;\">Champ de givre</span> créé par Chongyun équipé de cette carte déclenche les effets suivants :\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> de départ du Champ de givre +1 et DGT des <span style=\"color: #FFFFFFFF;\">attaques normales</span> de vos personnages avec une épée à une main, à deux mains ou une arme d'hast +1.\\n(Votre deck doit contenir Chongyun pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 211051,
+    "id": "kanten_senmyou_blessing",
+    "type": "talent",
+    "name": "Bénédiction de Kanten Senmyou",
+    "requirement": "kamisato_ayaka",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 2
+        }
+      ],
+      "desc": "L'<span style=\"color: #FFFFFFFF;\">Enchantement Cryo</span> créé par <span style=\"color: #FFFFFFFF;\">Kamisato Ayaka</span> équipée de cette carte augmente les <span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">DGT Cryo</span></span> infligés par le personnage affecté de 1.\\nEn basculant pour Kamisato Ayaka équipée de cette carte : Dépense 1 dé élémentaire en moins. (1 fois par manche)\\n(Votre deck doit contenir Kamisato Ayaka pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 212011,
+    "id": "glorious_season",
+    "type": "talent",
+    "name": "Splendide saison",
+    "requirement": "barbara",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Barbara</span>, équipe cette carte.\\nUne fois Barbara équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Splendide saison</span> une fois.\\nLorsque Barbara, équipée de cette carte, est sur le terrain, le <span style=\"color: #FFFFFFFF;\">Cercle de mélodie</span> vous permet de dépenser 1 dé élémentaire en moins lorsque vous basculez de personnage. (1 fois par manche)\\n(Votre deck doit contenir Barbara pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 212021,
+    "id": "the_scent_remained",
+    "type": "talent",
+    "name": "Parfum persistant",
+    "requirement": "xingqiu",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Xingqiu</span>, équipe cette carte.\\nUne fois Xingqiu équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Parfum persistant</span> une fois.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> de départ de l'<span style=\"color: #FFFFFFFF;\">Épée de pluie</span> créée par Xingqiu équipé de cette carte +1.\\n(Votre deck doit contenir Xingqiu pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 212031,
+    "id": "prophecy_of_submersion",
+    "type": "talent",
+    "name": "Prophétie immersive",
+    "requirement": "mona",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Mona</span>, équipe cette carte.\\nUne fois Mona équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Prophétie immersive</span> une fois.\\nPendant que Mona, équipée de cette carte, est active, les DGT supplémentaires des <span style=\"color: #80C0FFFF;\">Réaction liée à l'élément Hydro</span> que vous déclenchez augmentent de 2.\\n(Votre deck doit contenir Mona pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 213011,
+    "id": "flowing_flame",
+    "type": "talent",
+    "name": "Flamme courante",
+    "requirement": "diluc",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Diluc</span>, équipe cette carte.\\nUne fois Diluc équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Flamme courante</span> une fois.\\nChaque fois que Diluc, équipé de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Flamme courante</span> pour la 2e fois dans une manche : Dépense 1 dé <span style=\"color: #FF9999FF;\">Pyro</span> en moins.\\n(Votre deck doit contenir Diluc pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 213021,
+    "id": "crossfire",
+    "type": "talent",
+    "name": "Feux croisés",
+    "requirement": "xiangling",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Xiangling</span>, équipe cette carte.\\nUne fois Xiangling équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Feux croisés</span> une fois.\\nLorsque Xiangling, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Feux croisés</span>, elle inflige également 1 pt de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n(Votre deck doit contenir Xiangling pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 213031,
+    "id": "grand_expectation",
+    "type": "talent",
+    "name": "Perspective de voyage",
+    "requirement": "bennett",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Bennett</span>, équipe cette carte.\\nUne fois Bennett équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Perspective de voyage</span> une fois.\\nLe bonus de DGT du <span style=\"color: #FFFFFFFF;\">Champ vertueux</span> créé par Bennett équipé de cette carte est toujours actif et n'a plus de restriction de PV.\\n(Votre deck doit contenir Bennett pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 213051,
+    "id": "naganohara_meteor_swarm",
+    "type": "talent",
+    "name": "Pluie de météores de Naganohara",
+    "requirement": "yoimiya",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Yoimiya</span>, équipe cette carte.\\nUne fois Yoimiya équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Pluie de météores de Naganohara</span> une fois.\\nLorsque Yoimiya, équipée de cette carte, a déclenché <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> : inflige 1 pt de <span style=\"color: #FF9999FF;\">DGT Pyro</span> supplémentaires.\\n(Votre deck doit contenir Yoimiya pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 214011,
+    "id": "stellar_predator",
+    "type": "talent",
+    "name": "Corbeau maléfique",
+    "requirement": "fischl",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Fischl</span>, équipe cette carte.\\nUne fois Fischl équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Corbeau maléfique</span> une fois.\\nL'<span style=\"color: #FFFFFFFF;\">Oz</span> créé par Fischl équipée de cette carte inflige 2 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span> après une <span style=\"color: #FFFFFFFF;\">attaque normale</span> de Fischl. (Diminue le <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span>)\\n(Votre deck doit contenir Fischl pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 214021,
+    "id": "awakening",
+    "type": "talent",
+    "name": "Éveil",
+    "requirement": "razor",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Razor</span>, équipe cette carte.\\nUne fois Razor équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Éveil</span> une fois.\\nLorsque Razor, équipé de cette carte, <span style=\"color: #FFFFFFFF;\">a utilisé Éveil</span> : Accorde 1 charge à un de vos personnages Électro. (Priorité au personnage actif)\\n(Votre deck doit contenir Razor pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 214031,
+    "id": "thundering_penance",
+    "type": "talent",
+    "name": "Pénitence retentissante",
+    "requirement": "keqing",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "#<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Keqing</span>, équipe cette carte.\\nUne fois Keqing équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Pénitence retentissante</span> une fois.\\nL'<span style=\"color: #FFFFFFFF;\">Enchantement Électro</span> créé par Keqing équipée de cette carte déclenche les effets suivants:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> de départ de l'Enchantement Électro +1 et <span style=\"color: #FFACFFFF;\">DGT Électro</span> infligés par les personnages affectés +1.\\n(Votre deck doit contenir Keqing pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 214041,
+    "id": "featherfall_judgment",
+    "type": "talent",
+    "name": "Jugement des plumes",
+    "requirement": "cyno",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Cyno</span>, équipe cette carte.\\nUne fois Cyno équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Jugement des plumes</span> une fois.\\nLorsque Cyno, équipé de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Jugement des plumes</span> avec un niv. de Possession de l'<span style=\"color: #FFFFFFFF;\">Éclaireur sermenté</span> de 3 ou 5, DGT supplémentaires infligés +1.\\n(Votre deck doit contenir Cyno pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 215011,
+    "id": "chaotic_entropy",
+    "type": "talent",
+    "name": "Théorie de l'entropie",
+    "requirement": "sucrose",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Sucrose</span>, équipe cette carte.\\nUne fois Sucrose équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Théorie de l'entropie</span> une fois.\\nLorsque l'<span style=\"color: #FFFFFFFF;\">Esprit du vent de grande taille</span> créé par Sucrose équipée de cette carte a converti son type élémentaire : DGT de ce type élémentaire que vous infligez +1.\\n(Votre deck doit contenir Sucrose pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 215021,
+    "id": "lands_of_dandelion",
+    "type": "talent",
+    "name": "Territoire des pissenlits",
+    "requirement": "jean",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Jean</span>, équipe cette carte.\\nUne fois Jean équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Territoire des pissenlits</span> une fois.\\nLorsque Jean, équipée de cette carte, est sur le terrain, le <span style=\"color: #FFFFFFFF;\">Champ de pissenlits</span> augmente les <span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">DGT Anémo</span></span> que vous infligez de 1.\\n(Votre deck doit contenir Jean pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 216011,
+    "id": "strategic_reserve",
+    "type": "talent",
+    "name": "Réserve stratégique",
+    "requirement": "ningguang",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Ningguang</span>, équipe cette carte.\\nUne fois Ningguang équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Réserve stratégique</span> une fois.\\nLorsque Ningguang, équipée de cette carte, est sur le terrain, le <span style=\"color: #FFFFFFFF;\">Paravent d'astrolabe</span> augmente les <span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">DGT Géo</span></span> que vous infligez de 1.\\n(Votre deck doit contenir Ningguang pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 216021,
+    "id": "i_got_your_back",
+    "type": "talent",
+    "name": "J'assure vos arrières",
+    "requirement": "noelle",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Noëlle</span>, équipe cette carte.\\nUne fois Noëlle équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">J'assure vos arrières</span> une fois.\\nLorsque Noëlle, équipée de cette carte, a utilisé une <span style=\"color: #FFFFFFFF;\">attaque normale</span>, l'<span style=\"color: #FFFFFFFF;\">Armure complète</span> créée par Noëlle soigne tous vos personnages pour 1 pt. (1 fois par manche)\\n(Votre deck doit contenir Noëlle pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 217011,
+    "id": "floral_sidewinder",
+    "type": "talent",
+    "name": "Retour folié",
+    "requirement": "collei",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Collei</span>, équipe cette carte.\\nUne fois Collei équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Retour folié</span> une fois.\\nPendant la manche durant laquelle Collei, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Retour folié</span>, si une capacité d'un de vos personnages a déclenché une <span style=\"color: #7EC236FF;\">Réaction liée à l'élément Dendro</span> : Inflige 1 pt de <span style=\"color: #7EC236FF;\">DGT Dendro</span>. (1 fois par manche)\\n(Votre deck doit contenir Collei pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 222011,
+    "id": "streaming_surge",
+    "type": "talent",
+    "name": "Torrent déchaîné",
+    "requirement": "rhodeia_of_loch",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est l'<span style=\"color: #FFFFFFFF;\">Océanide - Rhodeia</span>, équipe cette carte.\\nUne fois l'Océanide - Rhodeia équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Torrent déchaîné</span> une fois.\\nLorsque l'Océanide - Rhodeia, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Torrent déchaîné</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> de toutes vos invocations +1.\\n(Votre deck doit contenir l'Océanide - Rhodeia pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 222021,
+    "id": "mirror_cage",
+    "type": "talent",
+    "name": "Prison de miroir",
+    "requirement": "mirror_maiden",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est la <span style=\"color: #FFFFFFFF;\">Suivante miroir des Fatui</span>, équipe cette carte.\\nUne fois la Suivante miroir des Fatui équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Prison de miroir</span> une fois.\\nL'<span style=\"color: #FFFFFFFF;\">Éclat de miroir d'eau</span> créé par la Suivante miroir des Fatui équipée de cette carte déclenche les effets suivants :\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> de départ de l'Éclat de miroir d'eau +1 et nombre de dés élémentaires à utiliser pour basculer le personnage affecté pour un autre personnage +1.\\n(Votre deck doit contenir la Suivante miroir des Fatui pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 223011,
+    "id": "paid_in_full",
+    "type": "talent",
+    "name": "Paiement total",
+    "requirement": "fatui_pyro_agent",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "#<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est l'<span style=\"color: #FFFFFFFF;\">Usurier Pyro des Fatui</span>, équipe cette carte.\\nUne fois l'Usurier Pyro des Fatui équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Paiement total</span> une fois.\\nL'<span style=\"color: #FFFFFFFF;\">Infiltration</span> créée par l'Usurier Pyro des Fatui équipé de cette carte déclenche les effets suivants:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> de départ de l'Infiltration +1 et convertit les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés par le personnage affecté en <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n(Votre deck doit contenir l'Usurier Pyro des Fatui pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 225011,
+    "id": "transcendent_automaton",
+    "type": "talent",
+    "name": "Automate transcendant",
+    "requirement": "maguu_kenki",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est la <span style=\"color: #FFFFFFFF;\">Lame oni</span>, équipe cette carte.\\nUne fois la Lame oni équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Automate transcendant</span> une fois.\\nLorsque la Lame oni, équipée de cette carte, a utilisé <span style=\"color: #FFFFFFFF;\">Automate transcendant</span>, vous basculez pour le personnage suivant. Lorsqu'elle a utilisé <span style=\"color: #FFFFFFFF;\">Automate transcendant</span>, vous basculez pour le personnage précédent.\\n(Votre deck doit contenir la Lame oni pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 226011,
+    "id": "stonehide_reforged",
+    "type": "talent",
+    "name": "Peau-pierre reforgée",
+    "requirement": "stonehide_lawachurl",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est le <span style=\"color: #FFFFFFFF;\">Chef Brutorocheux</span>, équipe cette carte.\\nUne fois le Chef Brutorocheux équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Peau-pierre reforgée</span> une fois.\\nLorsque le Chef Brutorocheux, équipé de cette carte, élimine un personnage adverse : Le Chef Brutorocheux obtient à nouveau les effets de <span style=\"color: #FFFFFFFF;\">Peau-pierre</span> et de <span style=\"color: #FFFFFFFF;\">Force de pierre</span>.\\n(Votre deck doit contenir le Chef Brutorocheux pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 227011,
+    "id": "proliferating_spores",
+    "type": "talent",
+    "name": "Spores proliférantes",
+    "requirement": "jadeplume_terrorshroom",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est le <span style=\"color: #FFFFFFFF;\">Champieffroi panaché</span>, équipe cette carte.\\nUne fois le Champieffroi panaché équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Spores proliférantes</span> une fois.\\nLe Champieffroi panaché équipé de cette carte peut obtenir 1 cumul de Vitalité radicale en plus.\\n(Votre deck doit contenir le Champieffroi panaché pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 311101,
+    "id": "magic_guide",
+    "type": "weapon",
+    "name": "Guide de magie",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n(Peut uniquement être équipé par un personnage utilisant un <span style=\"color: #FFFFFFFF;\">catalyseur</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311102,
+    "id": "sacrificial_fragments",
+    "type": "weapon",
+    "name": "Mémoires de rituels",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a utilisé une compétence élémentaire : </span>Crée 1 dé de l'élément du personnage. (1 fois par manche)\\n(Peut uniquement être équipé par un personnage utilisant un <span style=\"color: #FFFFFFFF;\">catalyseur</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311103,
+    "id": "skyward_atlas",
+    "type": "weapon",
+    "name": "Atlas de la Voûte d'Azur",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Une fois par manche : </span>DGT supplémentaires infligés par l'attaque normale du personnage +1.\\n(Peut uniquement être équipé par un personnage utilisant un <span style=\"color: #FFFFFFFF;\">catalyseur</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311201,
+    "id": "raven_bow",
+    "type": "weapon",
+    "name": "Arc du corbeau",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n(Peut uniquement être équipé par un personnage utilisant un <span style=\"color: #FFFFFFFF;\">arc</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311202,
+    "id": "sacrificial_bow",
+    "type": "weapon",
+    "name": "Arc rituel",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a utilisé une compétence élémentaire : </span>Crée 1 dé de l'élément du personnage. (1 fois par manche)\\n(Peut uniquement être équipé par un personnage utilisant un <span style=\"color: #FFFFFFFF;\">arc</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311203,
+    "id": "skyward_harp",
+    "type": "weapon",
+    "name": "Ailes de la Voûte d'Azur",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Une fois par manche : </span>DGT supplémentaires infligés par l'attaque normale du personnage +1.\\n(Peut uniquement être équipé par un personnage utilisant un <span style=\"color: #FFFFFFFF;\">arc</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311301,
+    "id": "white_iron_greatsword",
+    "type": "weapon",
+    "name": "Grande épée en fer blanc",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">épée à deux mains</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311302,
+    "id": "sacrificial_greatsword",
+    "type": "weapon",
+    "name": "Espadon rituel",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a utilisé une compétence élémentaire : </span>Crée 1 dé de l'élément du personnage. (1 fois par manche)\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">épée à deux mains</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311303,
+    "id": "wolfs_gravestone",
+    "type": "weapon",
+    "name": "Mort-du-loup",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\nEn attaquant une cible ayant 6 PV ou moins, DGT supplémentaires +2.\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">épée à deux mains</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311401,
+    "id": "white_tassel",
+    "type": "weapon",
+    "name": "Pampille blanche",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">arme d'hast</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311402,
+    "id": "lithic_spear",
+    "type": "weapon",
+    "name": "Lance des Millelithes",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\nEn arrivant sur le terrain : Accorde au personnage affecté <span style=\"color: #FFFFFFFF;\">1 pt de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span></span> pour chaque personnage de Liyue dans l'équipe. (3 pts maximum)\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">arme d'hast</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311403,
+    "id": "skyward_spine",
+    "type": "weapon",
+    "name": "Berge de la Voûte d'Azur",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Une fois par manche : </span>DGT supplémentaires infligés par l'attaque normale du personnage +1.\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">arme d'hast</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311501,
+    "id": "travelers_handy_sword",
+    "type": "weapon",
+    "name": "Épée du voyageur",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">épée à une main</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311502,
+    "id": "sacrificial_sword",
+    "type": "weapon",
+    "name": "Épée rituelle",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a utilisé une compétence élémentaire : </span>Crée 1 dé de l'élément du personnage. (1 fois par manche)\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">épée à une main</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 311503,
+    "id": "aquila_favonia",
+    "type": "weapon",
+    "name": "Épée du faucon",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Lorsque l'adversaire a utilisé une capacité : </span>Si le personnage affecté est actif, le soigne pour 1 pt. (2 fois maximum par manche)\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">épée à une main</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
+    "_id": 312001,
+    "id": "adventurers_bandana",
+    "type": "artifact",
+    "name": "Bandeau de l'Aventurier",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a utilisé une attaque normale : </span>Soigne le personnage pour 1 pt. (3 fois maximum par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312002,
+    "id": "lucky_dogs_silver_circlet",
+    "type": "artifact",
+    "name": "Diadème d'argent du Chanceux",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a utilisé une compétence élémentaire : </span>Soigne le personnage pour 2 pts. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312003,
+    "id": "traveling_doctors_handkerchief",
+    "type": "artifact",
+    "name": "Mouchoir du Médecin itinérant",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a utilisé un déchaînement élémentaire : </span>Soigne tous vos personnages pour 1 pt. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312004,
+    "id": "gamblers_earrings",
+    "type": "artifact",
+    "name": "Boucles d'oreilles du Parieur",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsqu'un personnage adverse a été éliminé : </span>Si le personnage affecté est actif, crée 2 dés <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span>.\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312005,
+    "id": "instructors_cap",
+    "type": "artifact",
+    "name": "Chapeau de l'Instructeur",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a déclenché une réaction élémentaire : </span>Crée 1 dé de l'élément du personnage. (3 fois maximum par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312006,
+    "id": "exiles_circlet",
+    "type": "artifact",
+    "name": "Diadème de l'Exilé",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a utilisé un déchaînement élémentaire : </span>Accorde 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span> à tous vos personnages en attente. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312101,
+    "id": "broken_rimes_echo",
+    "type": "artifact",
+    "name": "Écho de l'hiver",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #99FFFFFF;\">Cryo</span> en moins. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312102,
+    "id": "blizzard_strayer",
+    "type": "artifact",
+    "name": "Briseur de glace",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #99FFFFFF;\">Cryo</span> en moins. (1 fois par manche)\\n<span style=\"color: #FFFFFFFF;\">Phase de lancer : </span>2 des dés élémentaires lancés au début sont des dés <span style=\"color: #99FFFFFF;\">Cryo</span>.\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312201,
+    "id": "wine-stained_tricorne",
+    "type": "artifact",
+    "name": "Calot taché de vin",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #80C0FFFF;\">Hydro</span> en moins. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312202,
+    "id": "heart_of_depth",
+    "type": "artifact",
+    "name": "Âme des profondeurs",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #80C0FFFF;\">Hydro</span> en moins. (1 fois par manche)\\n<span style=\"color: #FFFFFFFF;\">Phase de lancer : </span>2 des dés élémentaires lancés au début sont des dés <span style=\"color: #80C0FFFF;\">Hydro</span>.\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312301,
+    "id": "witchs_scorching_hat",
+    "type": "artifact",
+    "name": "Chapeau brûlé de la Sorcière",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #FF9999FF;\">Pyro</span> en moins. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312302,
+    "id": "crimson_witch_of_flames",
+    "type": "artifact",
+    "name": "Sorcière des flammes ardentes",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #FF9999FF;\">Pyro</span> en moins. (1 fois par manche)\\n<span style=\"color: #FFFFFFFF;\">Phase de lancer : </span>2 des dés élémentaires lancés au début sont des dés <span style=\"color: #FF9999FF;\">Pyro</span>.\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312401,
+    "id": "thunder_summoners_crown",
+    "type": "artifact",
+    "name": "Diadème de l'invocateur de tonnerre",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #FFACFFFF;\">Électro</span> en moins. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312402,
+    "id": "thundering_fury",
+    "type": "artifact",
+    "name": "Colère de tonnerre",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #FFACFFFF;\">Électro</span> en moins. (1 fois par manche)\\n<span style=\"color: #FFFFFFFF;\">Phase de lancer : </span>2 des dés élémentaires lancés au début sont des dés <span style=\"color: #FFACFFFF;\">Électro</span>.\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312501,
+    "id": "viridescent_venerers_diadem",
+    "type": "artifact",
+    "name": "Diadème de la Verte Chasseuse",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #80FFD7FF;\">Anémo</span> en moins. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312502,
+    "id": "viridescent_venerer",
+    "type": "artifact",
+    "name": "Ombre de la Verte Chasseuse",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #80FFD7FF;\">Anémo</span> en moins. (1 fois par manche)\\n<span style=\"color: #FFFFFFFF;\">Phase de lancer : </span>2 des dés élémentaires lancés au début sont des dés <span style=\"color: #80FFD7FF;\">Anémo</span>.\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312601,
+    "id": "mask_of_solitude_basalt",
+    "type": "artifact",
+    "name": "Masque en basalte inerte",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #FFE699FF;\">Géo</span> en moins. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312602,
+    "id": "archaic_petra",
+    "type": "artifact",
+    "name": "Roche ancienne",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #FFE699FF;\">Géo</span> en moins. (1 fois par manche)\\n<span style=\"color: #FFFFFFFF;\">Phase de lancer : </span>2 des dés élémentaires lancés au début sont des dés <span style=\"color: #FFE699FF;\">Géo</span>.\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312701,
+    "id": "laurel_coronet",
+    "type": "artifact",
+    "name": "Couronne de laurier",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #99FF88FF;\">Dendro</span> en moins. (1 fois par manche)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312702,
+    "id": "deepwood_memories",
+    "type": "artifact",
+    "name": "Souvenir de forêt",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage utilise une capacité ou équipe une aptitude : </span>Dépense 1 dé <span style=\"color: #99FF88FF;\">Dendro</span> en moins. (1 fois par manche)\\n<span style=\"color: #FFFFFFFF;\">Phase de lancer : </span>2 des dés élémentaires lancés au début sont des dés <span style=\"color: #99FF88FF;\">Dendro</span>.\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 321001,
+    "id": "liyue_harbor_wharf",
+    "type": "place",
+    "name": "Quai du Port de Liyue",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Pioche 2 cartes.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2"
+    }
+  },
+  {
+    "_id": 321002,
+    "id": "knights_of_favonius_library",
+    "type": "place",
+    "name": "Bibliothèque de l'Ordre de Favonius",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">En arrivant sur le terrain : </span>Permet de choisir des dés élémentaires à relancer.\\n<span style=\"color: #FFFFFFFF;\">Phase de lancer : </span>Accorde une occasion supplémentaire de relancer."
+    }
+  },
+  {
+    "_id": 321003,
+    "id": "jade_chamber",
+    "type": "place",
+    "name": "Chambre de Jade",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Phase de lancer : </span>2 des dés élémentaires lancés au début sont du type élémentaire de votre personnage actif."
+    }
+  },
+  {
+    "_id": 321004,
+    "id": "dawn_winery",
+    "type": "place",
+    "name": "Domaine de l'Aurore",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque vous basculez de personnage : </span>Dépense 1 dé élémentaire en moins. (1 fois par manche)"
+    }
+  },
+  {
+    "_id": 321005,
+    "id": "wangshu_inn",
+    "type": "place",
+    "name": "Auberge Wangshu",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Soigne votre personnage en attente ayant subi le plus de DGT pour 2 pts.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+    }
+  },
+  {
+    "_id": 321006,
+    "id": "favonius_cathedral",
+    "type": "place",
+    "name": "Cathédrale de Favonius",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Soigne votre personnage actif pour 2 pts.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+    }
+  },
+  {
+    "_id": 322001,
+    "id": "paimon",
+    "type": "ally",
+    "name": "Paimon",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "#<span style=\"color: #FFFFFFFF;\">Au début de la phase d'action: </span>Crée 2 dés <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+    }
+  },
+  {
+    "_id": 322002,
+    "id": "katheryne",
+    "type": "ally",
+    "name": "Catherine",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque vous basculez de personnage : </span>Considère ce changement comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action rapide</span>, et non pas comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span>. (1 fois par manche)"
+    }
+  },
+  {
+    "_id": 322003,
+    "id": "timaeus",
+    "type": "ally",
+    "name": "Timaeus",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "En arrivant sur le terrain, crée 2 matériaux de synthèse.\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Crée 1 matériau de synthèse.\\n<span style=\"color: #FFFFFFFF;\">En jouant une carte d'artéfact : </span>Si possible, consomme des matériaux de synthèse équivalant au coût total de l'artéfact et équipe gratuitement l'artéfact. (1 fois par manche)"
+    }
+  },
+  {
+    "_id": 322004,
+    "id": "wagner",
+    "type": "ally",
+    "name": "Wagner",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "#En arrivant sur le terrain, crée 2 billettes de forge.\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Crée 1 billette de forge.\\n<span style=\"color: #FFFFFFFF;\">En jouant une carte d'arme: </span>Si possible, consomme des billettes de forge équivalant au coût total de l'arme et équipe gratuitement l'arme. (1 fois par manche)"
+    }
+  },
+  {
+    "_id": 322005,
+    "id": "chef_mao",
+    "type": "ally",
+    "name": "Chef Mao",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Après avoir joué une carte d'événement de plat : </span>Crée aléatoirement 1 dé élémentaire. (1 fois par manche)"
+    }
+  },
+  {
+    "_id": 322006,
+    "id": "tubby",
+    "type": "ally",
+    "name": "Taby",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">En jouant une carte de soutien de terrain : </span>Dépense 2 dés élémentaires en moins. (1 fois par manche)"
+    }
+  },
+  {
+    "_id": 322007,
+    "id": "timmie",
+    "type": "ally",
+    "name": "Timmy",
+    "skills": {
+      "cost": [],
+      "desc": "#<span style=\"color: #FFFFFFFF;\">Se déclenche automatiquement 1 fois par manche : </span>Cette carte cumule <span style=\"color: #FFFFFFFF;\">1 pigeon</span>.\\nSi la carte a cumulé <span style=\"color: #FFFFFFFF;\">3 pigeons</span>: Défausse la carte, pioche 1 carte et crée 1 dé <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span>."
+    }
+  },
+  {
+    "_id": 322008,
+    "id": "liben",
+    "type": "ally",
+    "name": "Li le fiable",
+    "skills": {
+      "cost": [],
+      "desc": "#<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Récupère tous vos dés élémentaires non utilisés. (Maximum 1 par type)\\n<span style=\"color: #FFFFFFFF;\">Au début de la phase d'action: </span>Si la carte a récupéré 3 dés élémentaires, pioche 2 cartes, crée 2 dés <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span> et défausse cette carte."
+    }
+  },
+  {
+    "_id": 322009,
+    "id": "chang_the_ninth",
+    "type": "ally",
+    "name": "Chang le Neuvième",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsqu'un des camps a utilisé une capacité : </span>Si des <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> ou des <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span> sont infligés ou une <span style=\"color: #FFFFFFFF;\">réaction élémentaire</span> est déclenchée, cette carte cumule <span style=\"color: #FFFFFFFF;\">1 inspiration</span>.\\nSi la carte a cumulé <span style=\"color: #FFFFFFFF;\">3 inspirations</span>, défausse la carte : Pioche 2 cartes."
+    }
+  },
+  {
+    "_id": 322010,
+    "id": "ellin",
+    "type": "ally",
+    "name": "Eileen",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque vous utilisez une capacité qui a déjà été utilisée pendant la manche actuelle : </span>Dépense 1 dé élémentaire en moins. (1 fois par manche)"
+    }
+  },
+  {
+    "_id": 322011,
+    "id": "iron_tongue_tian",
+    "type": "ally",
+    "name": "Tian la langue de fer",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Accorde 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span> à un de vos personnages dont les charges ne sont pas au maximum. (Priorité au personnage actif)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+    }
+  },
+  {
+    "_id": 322012,
+    "id": "liu_su",
+    "type": "ally",
+    "name": "Liu Su",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Après que vous basculez de personnage : </span>Si le nouveau personnage n'a pas de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span>, il obtient 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span>. (1 fois par manche)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+    }
+  },
+  {
+    "_id": 323001,
+    "id": "parametric_transformer",
+    "type": "item",
+    "name": "Transformateur paramétrique",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsqu'un des camps a utilisé une capacité : </span>Si des DGT élémentaires sont infligés, cette carte cumule <span style=\"color: #FFFFFFFF;\">1 progrès qualitatif</span>.\\nSi la carte a cumulé <span style=\"color: #FFFFFFFF;\">3 progrès qualitatifs</span> : Défausse la carte et crée 3 dés élémentaires de base différents."
+    }
+  },
+  {
+    "_id": 323002,
+    "id": "nre",
+    "type": "item",
+    "name": "Poche nutritive",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">En arrivant sur le terrain : </span>Pioche aléatoirement 1 carte d'événement de plat dans le deck.\\n<span style=\"color: #FFFFFFFF;\">Si vous jouez une carte d'événement de plat : </span>Pioche aléatoirement 1 carte d'événement de plat dans le deck. (1 fois par manche)"
+    }
+  },
+  {
+    "_id": 331101,
+    "id": "elemental_resonance_woven_ice",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Glace tissée",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [],
+      "desc": "Crée 1 <span style=\"color: #99FFFFFF;\">dé Cryo</span>.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #99FFFFFF;\">Cryo</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331102,
+    "id": "elemental_resonance_shattering_ice",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Gel pulvérisateur",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 1
+        }
+      ],
+      "desc": "Prochains DGT infligés par votre personnage actif actuel pendant la manche +2.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #99FFFFFF;\">Cryo</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331201,
+    "id": "elemental_resonance_woven_waters",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Eau tissée",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [],
+      "desc": "Crée 1 <span style=\"color: #80C0FFFF;\">dé Hydro</span>.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #80C0FFFF;\">Hydro</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331202,
+    "id": "elemental_resonance_soothing_water",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Eau salvatrice",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 1
+        }
+      ],
+      "desc": "Soigne votre personnage actif pour 2 pts, puis soigne tous vos personnages en attente pour 1 pt.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #80C0FFFF;\">Hydro</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331301,
+    "id": "elemental_resonance_woven_flames",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Feu tissé",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [],
+      "desc": "Crée 1 <span style=\"color: #FF9999FF;\">dé Pyro</span>.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #FF9999FF;\">Pyro</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331302,
+    "id": "elemental_resonance_fervent_flames",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Flammes de la ferveur",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 1
+        }
+      ],
+      "desc": "La prochaine fois que votre personnage actif actuel déclenche une <span style=\"color: #FF9999FF;\">Réaction liée à l'élément Pyro</span> pendant la manche, DGT infligés +3.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #FF9999FF;\">Pyro</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331401,
+    "id": "elemental_resonance_woven_thunder",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Éclair tissé",
+    "requirement": "electro",
+    "skills": {
+      "cost": [],
+      "desc": "Crée 1 <span style=\"color: #FFACFFFF;\">dé Électro</span>.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #FFACFFFF;\">Électro</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331402,
+    "id": "elemental_resonance_high_voltage",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Tonnerre puissant",
+    "requirement": "electro",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 1
+        }
+      ],
+      "desc": "Accorde 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span> à un de vos personnages dont les charges ne sont pas au maximum. (Priorité au personnage actif)\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #FFACFFFF;\">Électro</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331501,
+    "id": "elemental_resonance_woven_winds",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Vent tissé",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [],
+      "desc": "Crée 1 <span style=\"color: #80FFD7FF;\">dé Anémo</span>.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #80FFD7FF;\">Anémo</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331502,
+    "id": "elemental_resonance_impetuous_winds",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Vents de la célérité",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 1
+        }
+      ],
+      "desc": "Bascule pour le personnage choisi et crée 1 dé <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span>.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #80FFD7FF;\">Anémo</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331601,
+    "id": "elemental_resonance_woven_stone",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Terre tissée",
+    "requirement": "geo",
+    "skills": {
+      "cost": [],
+      "desc": "Crée 1 <span style=\"color: #FFE699FF;\">dé Géo</span>.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #FFE699FF;\">Géo</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331602,
+    "id": "elemental_resonance_enduring_rock",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Roc inamovible",
+    "requirement": "geo",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        }
+      ],
+      "desc": "La prochaine fois que votre personnage a infligé des <span style=\"color: #FFE699FF;\">DGT Géo</span> pendant la manche : Accorde 3 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span> supplémentaire à un état de déploiement disposant déjà d'un <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span> dans votre camp.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #FFE699FF;\">Géo</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331701,
+    "id": "elemental_resonance_woven_weeds",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Herbe tissée",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [],
+      "desc": "Crée 1 <span style=\"color: #99FF88FF;\">dé Dendro</span>.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #99FF88FF;\">Dendro</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 331702,
+    "id": "elemental_resonance_sprawling_greenery",
+    "type": "resonance",
+    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Plante grimpante",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 1
+        }
+      ],
+      "desc": "La prochaine fois que vous déclenchez une réaction élémentaire pendant la manche, DGT infligés +2.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> des <span style=\"color: #FFFFFFFF;\">Flamme brûlante, Noyau Dendro et Champ catalyseur</span> sur le terrain +1.\\n(Votre deck doit contenir au moins 2 personnages <span style=\"color: #99FF88FF;\">Dendro</span> pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 332001,
+    "id": "the_bestest_travel_companion!",
+    "type": "none",
+    "name": "La meilleure des amies !",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "Convertit 2 dés élémentaires en dés <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span>."
+    }
+  },
+  {
+    "_id": 332002,
+    "id": "changing_shifts",
+    "type": "none",
+    "name": "Relève",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque vous basculez de personnage : </span>Dépense 1 dé élémentaire en moins."
+    }
+  },
+  {
+    "_id": 332003,
+    "id": "toss-up",
+    "type": "none",
+    "name": "Lancer en l'air",
+    "skills": {
+      "cost": [],
+      "desc": "Permet de <span style=\"color: #FFFFFFFF;\">relancer</span> n'importe quel dé élémentaire. (2 fois)"
+    }
+  },
+  {
+    "_id": 332004,
+    "id": "strategize",
+    "type": "none",
+    "name": "Stratège",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Pioche 2 cartes."
+    }
+  },
+  {
+    "_id": 332005,
+    "id": "i_havent_lost_yet!",
+    "type": "none",
+    "name": "#Pas encore perdu{NON_BREAK_SPACE}!",
+    "skills": {
+      "cost": [],
+      "desc": "Jouable si un de vos personnages a été éliminé pendant la manche :\\nCrée 1 dé <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span> et accorde 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span> à votre personnage actif."
+    }
+  },
+  {
+    "_id": 332006,
+    "id": "leave_it_to_me!",
+    "type": "none",
+    "name": "Je m'en charge !",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque vous basculez de personnage : </span>Considère ce changement comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action rapide</span>, et non pas comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span>."
+    }
+  },
+  {
+    "_id": 332007,
+    "id": "when_the_crane_returned",
+    "type": "none",
+    "name": "Retour de la grue",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">La prochaine fois que vous avez utilisé une capacité : </span>Bascule pour votre prochain personnage en attente sur le terrain."
+    }
+  },
+  {
+    "_id": 332008,
+    "id": "starsigns",
+    "type": "none",
+    "name": "Présage astrologique",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Accorde 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span></span> à votre personnage actif actuel."
+    }
+  },
+  {
+    "_id": 332009,
+    "id": "calxs_arts",
+    "type": "none",
+    "name": "Arts de Calx",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Transfère 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span> d'au maximum 2 de vos personnages en attente à votre personnage actif."
+    }
+  },
+  {
+    "_id": 332010,
+    "id": "master_of_weaponry",
+    "type": "none",
+    "name": "Maîtrise de l'armement",
+    "skills": {
+      "cost": [],
+      "desc": "Transfère 1 carte d'équipement d'arme équipée sur un de vos personnages à un autre de vos personnages utilisant le même type d'arme."
+    }
+  },
+  {
+    "_id": 332011,
+    "id": "blessing_of_the_divine_relics_installation",
+    "type": "none",
+    "name": "Bénédiction de relique divine",
+    "skills": {
+      "cost": [],
+      "desc": "Transfère 1 carte d'équipement d'artéfact équipée sur un de vos personnages à un autre de vos personnages."
+    }
+  },
+  {
+    "_id": 332012,
+    "id": "quick_knit",
+    "type": "none",
+    "name": "Tricot rapide",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> +1 pour une de vos invocations de votre choix."
+    }
+  },
+  {
+    "_id": 332013,
+    "id": "send_off",
+    "type": "none",
+    "name": "Adios",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "Détruit une invocation adverse de votre choix."
+    }
+  },
+  {
+    "_id": 332014,
+    "id": "guardians_oath",
+    "type": "none",
+    "name": "Serment du gardien",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 4
+        }
+      ],
+      "desc": "Élimine toutes les invocations. (Affecte les deux camps !)"
+    }
+  },
+  {
+    "_id": 332015,
+    "id": "abyssal_summons",
+    "type": "none",
+    "name": "Appel de l'Abîme",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "Appelle une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Invocation aléatoire de Brutocollinus</span> !\\n(Votre deck doit contenir au moins 2 personnages de type monstre pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 333001,
+    "id": "jueyun_guoba",
+    "type": "food",
+    "name": "Gooba de Jueyun",
+    "skills": {
+      "cost": [],
+      "desc": "Pendant la manche, DGT infligés par la prochaine <span style=\"color: #FFFFFFFF;\">attaque normale</span> du personnage choisi +1.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+    }
+  },
+  {
+    "_id": 333002,
+    "id": "adeptus_temptation",
+    "type": "food",
+    "name": "Attrape-Adepte",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "Pendant la manche, DGT infligés par le prochain <span style=\"color: #FFFFFFFF;\">déchaînement élémentaire</span> du personnage choisi +3.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+    }
+  },
+  {
+    "_id": 333003,
+    "id": "lotus_flower_crisp",
+    "type": "food",
+    "name": "Beignets lotus",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Pendant la manche, prochains DGT subis par le personnage choisi -3.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+    }
+  },
+  {
+    "_id": 333004,
+    "id": "northern_smoked_chicken",
+    "type": "food",
+    "name": "Poulet fumé nordique",
+    "skills": {
+      "cost": [],
+      "desc": "Pendant la manche, la prochaine <span style=\"color: #FFFFFFFF;\">attaque normale</span> du personnage choisi coûte 1 dé d'<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Élément neutre</span> en moins.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+    }
+  },
+  {
+    "_id": 333005,
+    "id": "sweet_madame",
+    "type": "food",
+    "name": "Poulet mariné aux fleurs sucrantes",
+    "skills": {
+      "cost": [],
+      "desc": "Soigne le personnage choisi pour 1 pt.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+    }
+  },
+  {
+    "_id": 333006,
+    "id": "mondstadt_hash_brown",
+    "type": "food",
+    "name": "Galette de pomme de terre mondstadtoise",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Soigne le personnage choisi pour 2 pts.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+    }
+  },
+  {
+    "_id": 333007,
+    "id": "mushroom_pizza",
+    "type": "food",
+    "name": "Pizza aux champignons",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Soigne le personnage choisi pour 1 pt et le soigne à nouveau pour 1 pt pendant la phase finale des deux prochaines manches.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+    }
+  },
+  {
+    "_id": 333008,
+    "id": "minty_meat_rolls",
+    "type": "food",
+    "name": "Rouleaux de viande à la menthe",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Avant la fin de la manche, toutes les <span style=\"color: #FFFFFFFF;\">attaques normales</span> du personnage choisi coûtent 1 dé d'<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Élément neutre</span> en moins.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+    }
+  }
+]
