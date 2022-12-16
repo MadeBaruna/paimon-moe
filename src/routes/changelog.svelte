@@ -8,6 +8,11 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre class="text-white px-4 md:px-8">
+2022/12/17
+- Add TCG Deck builder
+- Fix todo crash
+- Update timeline
+
 2022/12/07
 - Add Wanderer and Faruzan
 - Add Turkey and Italian language

@@ -8,16 +8,9 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 const IMAGE_URL = `${self.location.origin}/images/`;
 
 const changelog = [
-  'Add Wanderer and Faruzan',
-  'Add Turkey and Italian language (only for the item names, if you want to help translate please check our Discord!)',
+  'Add TCG Deck builder, check it out on TCG menu!',
+  'Fix todo crash caused by Redcrest renamed to Henna Berry',
   'Update timeline',
-  'Update achievement',
-  'Update weapons',
-  'Update banners',
-  'Update artifacts',
-  'Update furnishing',
-  'Update fishing book',
-  'Update radiant spincrystal',
 ];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
