@@ -6,7 +6,7 @@
   import { mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiClose, mdiInformation, mdiLoading } from '@mdi/js';
   import { todos, loading } from '../stores/todo';
   import { ar, wl } from '../stores/server';
-  import { itemList } from '../data/itemList';
+  import { itemList as itemListData } from '../data/itemList';
   import Masonry from '../components/Masonry.svelte';
   import Icon from '../components/Icon.svelte';
   import Button from '../components/Button.svelte';
@@ -16,6 +16,11 @@
   import { dropRates } from '../data/dropRates';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
+
+  const itemList = {
+    ...itemListData,
+    redcrest: { id: 'henna_berry', name: 'Henna Berry' },
+  };
 
   let refreshLayout;
   let columnCount = 1;
@@ -311,7 +316,11 @@
                 <td class="border-b border-gray-700 py-1">
                   <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} block`}>
                     <span class="w-6 inline-block">
-                      <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={itemList[id].name} />
+                      <img
+                        class="h-6 inline-block mr-1"
+                        src={`/images/items/${itemList[id].id}.png`}
+                        alt={itemList[id].name}
+                      />
                     </span>
                     {itemList[id].name}
                   </span>
@@ -347,7 +356,11 @@
                     <td class="border-b border-gray-700 py-1">
                       <span class="text-white block">
                         <span class="w-6 inline-block">
-                          <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={itemList[id].name} />
+                          <img
+                            class="h-6 inline-block mr-1"
+                            src={`/images/items/${itemList[id].id}.png`}
+                            alt={itemList[id].name}
+                          />
                         </span>
                         {itemGroup[id].name}
                       </span>
@@ -382,7 +395,11 @@
             <td class="border-b border-gray-700 py-1">
               <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} block mb-1`}>
                 <span class="w-6 inline-block">
-                  <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={itemList[id].name} />
+                  <img
+                    class="h-6 inline-block mr-1"
+                    src={`/images/items/${itemList[id].id}.png`}
+                    alt={itemList[id].name}
+                  />
                 </span>
                 {itemList[id].name}
               </span>
@@ -467,7 +484,11 @@
               <td class="border-b border-gray-700 py-1">
                 <span class={amount === 0 ? 'line-through text-gray-600' : 'text-white'}>
                   <span class="w-6 inline-block">
-                    <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={itemList[id].name} />
+                    <img
+                      class="h-6 inline-block mr-1"
+                      src={`/images/items/${itemList[id].id}.png`}
+                      alt={itemList[id].name}
+                    />
                   </span>
                   {itemList[id].name}
                 </span>
