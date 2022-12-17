@@ -1046,6 +1046,8 @@
     "loadingLinkError": "Error membuat link 😥",
     "shareDeck": "Share Deck \"{name}\"",
     "removeCompare": "Hilangkan Komparasi",
-    "shareNotComplete": "Silahkan lengkapi dulu deck dengan 3 karakter dan 30 kartu aksi!"
+    "shareNotComplete": "Silahkan lengkapi dulu deck dengan 3 karakter dan 30 kartu aksi!",
+    "characterCard": "Kartu Karakter",
+    "actionCard": "Kartu Aksi"
   }
 }
