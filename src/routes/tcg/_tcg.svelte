@@ -341,6 +341,7 @@
       {sharedDeck}
       {sharedId}
       {swapCharacterCardPos}
+      {tags}
       on:toggleDeck={toggleShowDeck}
       on:save={() => saveData()}
       on:saveShared={saveSharedDeck}
@@ -349,10 +350,10 @@
   <div class="flex gap-2 justify-center md:justify-start">
     <div class="flex">
       <button on:click={() => changeDisplay('character')} class="pill {display === 'character' ? 'active' : ''}">
-        Character Card
+        {$t('tcg.characterCard')}
       </button>
       <button on:click={() => changeDisplay('action')} class="pill {display === 'action' ? 'active' : ''}">
-        Action Card
+        {$t('tcg.actionCard')}
       </button>
     </div>
     <div class="flex">
@@ -385,6 +386,7 @@
           {size}
           {showDetail}
           {smallScreen}
+          {tags}
           count={deck.characters[card.id]}
           on:compare={() => setCompare(card)}
           on:addToDeck={() => addToDeck('characters', card)}
@@ -401,6 +403,7 @@
           {size}
           {showDetail}
           {smallScreen}
+          {tags}
           count={deck.actions[card.id]}
           on:compare={() => setCompare(card)}
           on:addToDeck={() => addToDeck('actions', card)}

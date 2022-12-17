@@ -6,6 +6,7 @@
   import DetailModal from './_detailModal.svelte';
   import { t } from 'svelte-i18n';
 
+  export let tags;
   export let card;
   export let compare;
   export let count = 0;
@@ -266,10 +267,10 @@
         style="top: {y}px; left: {x}px;"
         bind:this={detailContainer}
       >
-        <Detail {card} {smallScreen} />
+        <Detail {tags} {card} {smallScreen} />
         {#if showCompare}
           <div class="w-2" />
-          <Detail card={compare} {smallScreen} />
+          <Detail {tags} card={compare} {smallScreen} />
         {/if}
       </div>
     {/if}

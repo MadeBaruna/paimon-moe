@@ -1,8 +1,5 @@
-<script context="module">
-  import tagsJson from '../../data/tcg/tags/en.json';
-</script>
-
 <script>
+  export let tags;
   export let card;
   export let smallScreen = false;
   export let withBackground = true;
@@ -27,8 +24,6 @@
       padding: 'p-1',
     },
   };
-
-  let tags = tagsJson;
 
   $: size = sizes[smallScreen ? 'small' : 'base'];
 </script>

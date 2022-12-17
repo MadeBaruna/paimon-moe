@@ -1046,6 +1046,8 @@
     "loadingLinkError": "Error generating link 😥",
     "shareDeck": "Share Deck \"{name}\"",
     "removeCompare": "Remove Compare",
-    "shareNotComplete": "Please complete the deck with 3 characters and 30 action cards to share!"
+    "shareNotComplete": "Please complete the deck with 3 characters and 30 action cards to share!",
+    "characterCard": "Character Card",
+    "actionCard": "Action Card"
   }
 }

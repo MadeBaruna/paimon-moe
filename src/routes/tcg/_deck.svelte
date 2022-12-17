@@ -1,6 +1,6 @@
 <script>
-  import { mdiContentSave, mdiDownload, mdiPencil, mdiShareVariant } from '@mdi/js';
-  import { createEventDispatcher, getContext, onMount } from 'svelte';
+  import { mdiContentSave, mdiPencil, mdiShareVariant } from '@mdi/js';
+  import { createEventDispatcher, getContext } from 'svelte';
   import { t } from 'svelte-i18n';
   import { slide } from 'svelte/transition';
   import Button from '../../components/Button.svelte';
