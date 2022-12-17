@@ -52,7 +52,7 @@
       },
       {
         closeButton: false,
-        styleWindow: { background: '#25294A', width: '400px' },
+        styleWindow: { background: '#25294A', width: '500px' },
       },
     );
   }
