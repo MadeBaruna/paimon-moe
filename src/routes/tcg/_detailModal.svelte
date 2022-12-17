@@ -4,6 +4,7 @@
   import Card from './_card.svelte';
   import Detail from './_detail.svelte';
 
+  export let tags;
   export let card;
   export let showCompare;
   export let compare;
@@ -35,9 +36,9 @@
       </Button>
     {/if}
   </div>
-  <Detail {card} withBackground={false} />
+  <Detail {tags} {card} withBackground={false} />
   {#if showCompare}
     <div class="w-2" />
-    <Detail card={compare} withBackground={false} />
+    <Detail {tags} card={compare} withBackground={false} />
   {/if}
 </div>

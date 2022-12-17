@@ -140,6 +140,7 @@
     open(
       DetailModal,
       {
+        tags,
         card,
         compare,
         showCompare,
