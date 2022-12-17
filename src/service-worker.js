@@ -11,6 +11,8 @@ const changelog = [
   'Add TCG Deck builder, check it out on TCG menu!',
   'Fix todo crash caused by Redcrest renamed to Henna Berry',
   'Update timeline',
+  'Bug fixes',
+  'Update locales',
 ];
 
 const channel = new BroadcastChannel('paimonmoe-sw');

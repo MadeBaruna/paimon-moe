@@ -14,7 +14,7 @@
   const dispatch = createEventDispatcher();
   const { open, close } = getContext('simple-modal');
 
-  export let cards, decks, deck, size, characterCount, actionCount, compare, showDetail;
+  export let cards, decks, deck, size, characterCount, actionCount, compare, showDetail, tags;
   export let sharedDeck, sharedId;
   export let setCompare, addToDeck, removeFromDeck, selectDeck, loadDeck, swapCharacterCardPos;
 
@@ -198,6 +198,7 @@
         {compare}
         {showDetail}
         {index}
+        {tags}
         draggable
         count={1}
         on:compare={() => setCompare(cards[id])}
@@ -215,6 +216,7 @@
         {compare}
         {count}
         {showDetail}
+        {tags}
         on:compare={() => setCompare(cards[id])}
         on:addToDeck={() => addToDeck('actions', cards[id])}
         on:removeFromDeck={() => removeFromDeck('actions', cards[id])}
