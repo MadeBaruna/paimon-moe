@@ -58,7 +58,7 @@
     }
   });
 
-  $: generatedLink = `paimon.moe/deck/${id}`;
+  $: generatedLink = `https://paimon.moe/deck/${id}`;
 </script>
 
 {#if loading}
