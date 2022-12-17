@@ -436,7 +436,7 @@
       on:click={removeCompare}
       transition:fly={{ duration: 100, y: 100 }}
     >
-      <p>Remove Compare</p>
+      <p>{$t('tcg.removeCompare')}</p>
     </button>
   {/if}
 </div>

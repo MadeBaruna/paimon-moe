@@ -1044,6 +1044,8 @@
     "selectDeck": "Select Deck",
     "loadingLink": "Generating link...",
     "loadingLinkError": "Error generating link 😥",
-    "shareDeck": "Share Deck \"{name}\""
+    "shareDeck": "Share Deck \"{name}\"",
+    "removeCompare": "Remove Compare",
+    "shareNotComplete": "Please complete the deck with 3 characters and 30 action cards to share!"
   }
 }

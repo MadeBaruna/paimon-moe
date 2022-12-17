@@ -6,6 +6,7 @@
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
   import Input from '../../components/Input.svelte';
+  import { pushToast } from '../../stores/toast';
   import Card from './_card.svelte';
   import DeckModal from './_deckModal.svelte';
   import ShareModal from './_shareModal.svelte';
@@ -37,6 +38,11 @@
   }
 
   function share() {
+    if (characterCount !== 3 || actionCount !== 30) {
+      pushToast($t('tcg.shareNotComplete'));
+      return;
+    }
+
     open(
       ShareModal,
       {
