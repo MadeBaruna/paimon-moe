@@ -39,7 +39,7 @@
       if (value.amount >= 0) {
         let total = 0;
         switch (value.id) {
-          case 'interwinedFate':
+          case 'intertwinedFate':
             total = value.amount * 160;
             break;
           case 'starglitter':
