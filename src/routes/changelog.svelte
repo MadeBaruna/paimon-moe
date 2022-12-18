@@ -8,6 +8,52 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre class="text-white px-4 md:px-8">
+2022/12/17
+- Add TCG Deck builder
+- Fix todo crash
+- Update timeline
+
+2022/12/07
+- Add Wanderer and Faruzan
+- Add Turkey and Italian language
+- Update timeline
+- Update achievement
+- Update weapons
+- Update banners
+- Update artifacts
+- Update furnishing
+- Update fishing book
+- Update radiant spincrystal
+
+2022/11/18
+- Add Layla
+- Update achievement commission
+- Update furnishing
+- Update timeline
+
+2022/11/02
+- Add Nahida
+- Update weapons
+- Update achievement
+- Update timeline
+
+2022/09/28
+- Update characters
+- Update weapons
+- Update timeline
+- Update furnishing
+- Update achievement
+
+2022/09/20
+- Update excel import to accept other language
+
+2022/09/06
+- Added checklist for commission achievements
+- Added character & weapon reruns timeline
+
+2022/08/30
+- Update fishing spot
+
 2022/08/27
 - Update wish import instruction
 - Update radiant spincrystal list

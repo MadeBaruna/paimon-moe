@@ -255,5 +255,15 @@
       "halcyon_jade_axe_marlin"
     ],
     "location": "sumeru"
+  },
+  "38143": {
+    "name": "Aaru Village",
+    "fish": ["medaka", "crystalfish", "sandstorm_angler", "sunset_cloud_angler", "halcyon_jade_axe_marlin"],
+    "location": "sumeru"
+  },
+  "38144": {
+    "name": "Land of Lower Setekh",
+    "fish": ["medaka", "dawncatcher", "akai_maou", "true_fruit_angler", "lazurite_axe_marlin"],
+    "location": "sumeru"
   }
 }

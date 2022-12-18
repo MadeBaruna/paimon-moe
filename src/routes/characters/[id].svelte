@@ -181,6 +181,10 @@
         return 'emblem_of_severed_fate';
       case '+25%_physical_dmg':
         return 'bloodstained_chivalry';
+      case '+80_em':
+        return 'gilded_dreams';
+      case '+15%_healing_bonus_set':
+        return 'ocean-hued_clam';
       default:
         return id;
     }
@@ -194,6 +198,10 @@
         return 'artifact.20EnergyRechargeSet';
       case '+25%_physical_dmg':
         return 'artifact.25PhysicalDmgSet';
+      case '+80_em':
+        return 'artifact.80EMSet';
+      case '+15%_healing_bonus_set':
+        return 'artifact.15HealingBonusSet';
       default:
         return artifactsEn[id].name;
     }
@@ -424,7 +432,11 @@
                                 <Tooltip title={$t(obj.item.name)}>
                                   <span class="mr-2 bg-background rounded-xl">
                                     <span class="w-8 h-8 inline-block">
-                                      <img src="/images/items/{obj.item.id}.png" alt={obj.item} class="inline h-full" />
+                                      <img
+                                        src="/images/items/{obj.item.id}.png"
+                                        alt={obj.item.name}
+                                        class="inline h-full"
+                                      />
                                     </span>
                                     <Icon size={0.5} path={mdiClose} /><span>{obj.amount}</span>
                                   </span>
@@ -705,6 +717,52 @@
                               />
                               <span class="font-semibold">{$t('Pale Flame')}</span>
                             </a>
+                          {:else if artifact === '+80_em'}
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                              href="/artifacts/gilded_dreams"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/gilded_dreams_flower.png"
+                                alt="Gilded Dreams"
+                              />
+                              <span class="font-semibold">{$t('Gilded Dreams')}</span>
+                            </a>
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pt-1"
+                              href="/artifacts/wanderers_troupe"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/wanderers_troupe_flower.png"
+                                alt="Wanderer's Troupe"
+                              />
+                              <span class="font-semibold">{$t("Wanderer's Troupe")}</span>
+                            </a>
+                          {:else if artifact === '+15%_healing_bonus_set'}
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                              href="/artifacts/ocean-hued_clam"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/ocean-hued_clam_flower.png"
+                                alt="Ocean-Hued Clam"
+                              />
+                              <span class="font-semibold">{$t('Ocean-Hued Clam')}</span>
+                            </a>
+                            <a
+                              class="flex items-center text-primary hover:text-blue-400 pt-1"
+                              href="/artifacts/maiden_beloved"
+                            >
+                              <img
+                                class="h-8 ml-1 mr-2"
+                                src="/images/artifacts/maiden_beloved_flower.png"
+                                alt="Maiden Beloved"
+                              />
+                              <span class="font-semibold">{$t('Maiden Beloved')}</span>
+                            </a>
                           {/if}
                         </div>
                       </div>
@@ -746,7 +804,7 @@
     <SkillCard {id} image="talent_2" data={data.elementalSkill} withQuote={true} />
     <SkillCard {id} image="talent_3" data={data.burst} withQuote={true} />
     {#if data.dashSkill}
-      <SkillCard {id} image="talent_7" data={data.dashSkill} withQuote={true} withSingleLevel={true}/>
+      <SkillCard {id} image="talent_7" data={data.dashSkill} withQuote={true} withSingleLevel={true} />
     {/if}
   </div>
   <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl">

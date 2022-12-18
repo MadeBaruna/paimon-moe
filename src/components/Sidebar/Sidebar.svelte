@@ -28,6 +28,8 @@
     { id: 'es', label: 'Español' },
     { id: 'pt', label: 'Português' },
     { id: 'ru', label: 'Русский' },
+    { id: 'tr', label: 'Türkçe' },
+    { id: 'it', label: 'Italiano' },
   ];
   $: currentLocale =
     $locale !== null ? languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' } : '';
@@ -132,6 +134,13 @@
     />
     <SidebarItem
       on:clicked={close}
+      active={segment === 'tcg'}
+      image="/images/tcg.png"
+      label={$t('sidebar.tcg')}
+      href="/tcg"
+    />
+    <SidebarItem
+      on:clicked={close}
       active={segment === 'settings'}
       image="/images/settings.png"
       label={$t('sidebar.settings')}
@@ -148,17 +157,18 @@
     >
       <img class="w-4 h-4 rounded-full mr-2" alt={currentLocale.label} src="/images/locales/{currentLocale.id}.svg" />
       <span class="text-gray-400">{currentLocale.label}</span>
-      <div class="locale-dropdown" style="top: {locales.length * -45}px;">
-        {#each locales as locale}
-          <div
-            class="flex items-center justify-center py-2 cursor-pointer rounded-xl bg-black hover:bg-gray-900"
-            on:click={() => changeLocale(locale.id)}
-          >
-            <img class="w-4 h-4 rounded-full mr-2" alt={locale.label} src="/images/locales/{locale.id}.svg" />
-            <span class="text-gray-400">{locale.label}</span>
-          </div>
-          <div class="w-40" style="height: 5px;" />
-        {/each}
+      <div class="locale-dropdown">
+        <div class="bg-black grid grid-cols-2 rounded-xl overflow-hidden">
+          {#each locales as locale}
+            <div
+              class="flex items-center justify-center py-2 cursor-pointer hover:bg-gray-900"
+              on:click={() => changeLocale(locale.id)}
+            >
+              <img class="w-4 h-4 rounded-full mr-2" alt={locale.label} src="/images/locales/{locale.id}.svg" />
+              <span class="text-gray-400">{locale.label}</span>
+            </div>
+          {/each}
+        </div>
       </div>
     </div>
   </div>
@@ -178,9 +188,7 @@
   }
 
   .locale-dropdown {
-    @apply hidden;
-    @apply absolute;
-    @apply w-40;
+    @apply hidden absolute w-80 -left-20 md:left-0 pb-2 bottom-10;
   }
 
   .locale-selector:hover {

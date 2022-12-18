@@ -65,9 +65,9 @@
   };
 
   const videoTutorial = {
-    android: 'https://www.youtube.com/watch?v=6C5Zqhcm3NI',
-    android2: 'https://www.youtube.com/watch?v=rHN1iRjmKmc',
-    android3: 'https://www.youtube.com/watch?v=jAKq94KpGHA',
+    // android: 'https://www.youtube.com/watch?v=6C5Zqhcm3NI',
+    // android2: 'https://www.youtube.com/watch?v=rHN1iRjmKmc',
+    // android3: 'https://www.youtube.com/watch?v=jAKq94KpGHA',
     pc: 'https://www.youtube.com/watch?v=FCwZkHeIezw',
     pc3: 'https://www.youtube.com/watch?v=ojZzl3dmppI',
     pc4: 'https://www.youtube.com/watch?v=ojZzl3dmppI',
@@ -94,13 +94,12 @@
     },
   };
 
-  let powershellScript = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/f35a446e3ad08bff3ebcfa250ec46d0ea4bde225/getlink.ps1'))} global"`;
-  let powershellScriptChina = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/f35a446e3ad08bff3ebcfa250ec46d0ea4bde225/getlink.ps1'))} global"`;
+  let powershellScript = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/702e34117b07294e6959928963b76cfdafdd94f3/getlink.ps1'))} global"`;
+  let powershellScriptChina = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/702e34117b07294e6959928963b76cfdafdd94f3/getlink.ps1'))} china"`;
   let powershellScriptSource = 'https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235';
-  let powershellScriptAlt =
-    'Read-Host -Prompt "Press Enter to continue";$m=(((Get-Clipboard -TextFormatType Html) | Select-String "(https:/.+log)").Matches[0].Value);$m;Set-Clipboard -Value $m';
+  let powershellScriptAlt = `iex('Write-Host "Copy the wish history table!";while(1) { $c = Get-Clipboard -TextFormatType Html; if ($c -match "^SourceURL:https:/.+log") { break; }; for($i=5; $i -gt 0; $i--) { Write-Host "\`rChecking in $i" -NoNewline; Sleep 1; }; }; Write-Host " OK"; $m=(((Get-Clipboard -TextFormatType Html) | Select-String "(https:/.+log)").Matches[0].Value);$m; Set-Clipboard -Value $m;')`;
   let powershellScriptAlt2 =
-    "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/bf36bad751dc9221067ca1e31ab08255/raw/20664d5df5e916cbab169500536d7f366de29395/read.ps1'))";
+    "Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/bf36bad751dc9221067ca1e31ab08255/raw/cb73a9f46f08fad6f27581ebb1a6249ba086af13/read.ps1'))";
   let copiedScript = false;
   let news = '';
   let showAdvancedOptions = false;
@@ -171,8 +170,8 @@
 
     try {
       if (selectedType.startsWith('android')) {
-        const urlString = genshinLink.match(/https:\/\/.*#/g);
-        url = new URL(urlString);
+        const urlString = genshinLink.match(/https:\/\/[^\s]+/g);
+        url = new URL(urlString[0]);
       } else if (selectedType === 'pclog') {
         const urlString = genshinLink.match(/https:\/\/.*\//g);
         url = new URL(urlString);
@@ -233,7 +232,7 @@
     url.searchParams.set('size', fetchSize);
     url.searchParams.append('lang', 'en-us');
     url.hash = '';
-    url.host = 'hk4e-api-os.mihoyo.com';
+    url.host = 'hk4e-api-os.hoyoverse.com';
     url.pathname = 'event/gacha_info/api/getGachaLog';
 
     if ($server === 'China') {
@@ -1036,7 +1035,7 @@
       </div>
     </div>
   {/if}
-  {#if ['android', 'android2', 'android3'].includes(selectedType)}
+  <!-- {#if ['android', 'android2', 'android3'].includes(selectedType)}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
@@ -1071,7 +1070,7 @@
         </div>
       </div>
     </div>
-  {/if}
+  {/if} -->
   {#if videoTutorial[selectedType] !== undefined}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
@@ -1346,7 +1345,10 @@
         <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
       </div>
       <div class="content flex-col items-center pb-8">
-        <p class="text-white">{$t('wish.import.soon30')}</p>
+        <p class="text-white">
+          The old android method is not working on 3.1, please join our Discord server for updates!
+        </p>
+        <p class="text-white">If you can get the link, you can use the import as usual.</p>
       </div>
     </div>
     <!-- {#each Array(steps[selectedType]) as _, i}

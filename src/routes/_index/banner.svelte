@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    ganyu: {
-      name: 'Ganyu',
+    wanderer: {
+      name: 'Wanderer',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    sangonomiya_kokomi: {
-      name: 'Sangonomiya Kokomi',
-      rarity: 'legendary',
+    faruzan: {
+      name: 'Faruzan',
+      rarity: 'rare',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300035;
-  const image = 'ganyukokomi.png';
+  const bannerId = 300040;
+  const image = 'wanderer_faruzan.png';
   const width = 800;
-  const height = 515;
+  const height = 431;
 
   let loading = true;
   let user = '';
@@ -76,21 +76,27 @@
 <div class="bg-item rounded-xl p-4 flex flex-col">
   <div class="relative">
     <img src="/images/home/{image}" alt="banner" style="min-height: 150px;" {width} {height} />
-    <div class="flex flex-wrap text-white justify-end items-center absolute bottom-0 w-full">
+    <div class="flex flex-wrap text-white justify-between items-center absolute bottom-0 w-full">
       {#each Object.entries(featured) as [_, item], i}
         <div
-          class="flex flex-col pt-2"
-          style="background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%); 
-          {i === 0 ? 'margin-right: 10%;' : ''}"
+          class="flex flex-col pt-2 max-w-[60%]"
+          style="background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 17%, rgba(0,0,0,0.75) 70%, rgba(0,0,0,0) 100%);"
         >
-          <h3 class="text-3xl mr-4 font-black leading-6 text-right">
+          <h3 class="text-3xl font-black leading-6 text-right {i === 0 ? 'ml-4' : 'pr-4'}">
             {#if loading}
               <Icon path={mdiLoading} spin size={0.8} />
             {:else}
-              {item.count}
+              {(item.count / 1000).toFixed(1)}K
             {/if}
           </h3>
-          <p class="mr-4 font-sm leading-2 text-right">{$t(item.name)}</p>
+          <p
+            class="font-sm leading-2 whitespace-nowrap overflow-hidden text-ellipsis {i === 0
+              ? 'ml-4 text-left'
+              : 'pr-4 text-right'}"
+            style="direction: rtl;"
+          >
+            {$t(item.name)}
+          </p>
         </div>
       {/each}
     </div>

@@ -17,6 +17,7 @@
     "radiantSpincrystal": "Radiant Spincrystal",
     "calendar": "Calendar",
     "banners": "Character Reruns",
+    "tcg": "TCG",
     "settings": "Settings",
     "donate": "Donate"
   },
@@ -364,7 +365,7 @@
         "This feature is still in BETA! Please make a backup first by going to the Settings menu then Export to Excel.",
         "Wishes with the same timestamp and reward name will NOT be touched (existing wishes will not be rewritten)",
         "This feature will only append and prepend wishes (nothing will be inserted in the middle of the list)",
-        "Currently, the importer can only support excel files with an ENGLISH reward name"
+        "Please change the website language first according to your excel file language"
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe excel file here, or click here to select",
@@ -968,6 +969,8 @@
     "18ATKSet": "ATK +18% set",
     "20EnergyRechargeSet": "Energy Recharge +20% set",
     "25PhysicalDmgSet": "Physical DMG +25% set",
+    "80EMSet": "Elemental Mastery +80 set",
+    "15HealingBonusSet": "Healing Bonus +15% set",
     "sands": "SANDS",
     "goblet": "GOBLET",
     "circlet": "CIRCLET",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "Data has been synced!",
-    "driveError": "Drive sync not available right now 😔"
+    "driveError": "Drive sync not available right now 😔",
+    "open": "Open",
+    "delete": "Delete",
+    "deleteConfirm": "Delete?"
   },
   "update": {
     "newUpdate": "Paimon.moe has a new update!",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "Sorted by oldest re-run",
     "bannerTitle": "Character Release Timeline",
     "bannerSubtitle": "See when the character is released and their last re-run"
+  },
+  "tcg": {
+    "title": "Genius Invokation TCG",
+    "requirementResonance": "You need at least 2 {element} characters in your deck to add this card!",
+    "requirementTalent": "You need {character} in your deck to add this card!",
+    "addedToDeck": "Added to deck!",
+    "deletedFromDeck": "Deleted from deck!",
+    "removedFromDeck": "Removed one from deck!",
+    "alreadyMaxCharacters": "You already have 3 character cards in the deck!",
+    "alreadyMaxActions": "You already have 30 action cards in the deck!",
+    "requirementInDeck": "You need to remove {card} card to remove {character} from your deck!",
+    "addToDeck": "Add to Deck",
+    "removeFromDeck": "{type} from Deck",
+    "delete": "Delete",
+    "remove": "Remove",
+    "compare": "Compare",
+    "noCardOnDeck": "There is no card yet in this deck",
+    "loadDefaultDeck": "Load Starter Deck",
+    "saveDeck": "Save Deck",
+    "hideDeck": "Hide Deck",
+    "showDeck": "Show Deck",
+    "addDeck": "Add Deck",
+    "selectDeck": "Select Deck",
+    "loadingLink": "Generating link...",
+    "loadingLinkError": "Error generating link 😥",
+    "shareDeck": "Share Deck \"{name}\"",
+    "removeCompare": "Remove Compare",
+    "shareNotComplete": "Please complete the deck with 3 characters and 30 action cards to share!",
+    "characterCard": "Character Card",
+    "actionCard": "Action Card"
   }
 }

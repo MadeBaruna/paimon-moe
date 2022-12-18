@@ -17,6 +17,7 @@
     "radiantSpincrystal": "旋曜玉帛",
     "calendar": "行事曆",
     "banners": "角色復刻",
+    "tcg": "七聖召喚",
     "settings": "設定",
     "donate": "贊助"
   },
@@ -72,7 +73,7 @@
       "detail": "成就"
     },
     "furnishing": {
-      "title": "檢視套裝需要哪些家具，也可以檢視各個家具的負荷",
+      "title": "檢視套裝需要哪些擺設，也可以檢視各個擺設的負荷",
       "detail": "擺設"
     }
   },
@@ -144,7 +145,7 @@
     "globalWishTally": "全球祈願統計",
     "pityTooltip": [
       "顯示你目前 {rarity} 保底進度",
-      "{count} 抽可獲得 {rarity}"
+      "{count} 抽必定獲得 {rarity}"
     ],
     "import": {
       "title": "匯入祈願歷史紀錄",
@@ -197,15 +198,15 @@
       "faqs": {
         "title": "匯入祈願紀錄常見問題",
         "q1": "這是怎麼做到的？",
-        "a1": "原神的祈願歷史紀錄是一個網頁，所以你可以透過打開網頁的網址來訪問它。在打開祈願歷史頁面時，將生成一個臨時密鑰，我們的匯入程式將自動使用 HoYoVerse API 來取得抽卡紀錄。",
+        "a1": "原神的祈願歷史紀錄是一個網頁，所以你可以透過打開網頁的網址來造訪它。打開祈願歷史頁面時會產生一個臨時密鑰，我們的匯入程式將自動使用 HoYoVerse API 來取得抽卡紀錄。",
         "q2": "安全嗎？會封號嗎？",
-        "a2": "Paimon.moe 與原神程式本身查詢抽卡紀錄的方式是一致的，並且 Paimon.moe 沒辦法修改遊戲內存，這本身是安全的，但只能說風險自負（我的大號是一直用的）。你也可以手動上傳你的資料 😀。",
+        "a2": "Paimon.moe 與原神程式本身查詢抽卡紀錄的方式是一致的，並且 Paimon.moe 沒辦法修改遊戲資源檔案或遊戲所使用的記憶體內容，整個流程應當是安全的，但只能說風險自負（我的大號是一直用的）。你也可以手動上傳你的資料 😀。",
         "q3": "會被盜號嗎？",
         "a3": [
           "Paimon.moe 從不會儲存你的帳號密鑰等個人資訊（甚至您的 UID 和遊戲名也不會），所以並不會被盜號。這個網站開放原始碼於",
           "；我不可能嘗試盜號來毀自己名聲。"
         ],
-        "q4": "我查了一下網站請求之類的，但為什麼它用的是你的功能變數名稱，而不是HoYoVerse API的？",
+        "q4": "我查了一下網站請求之類的，但為什麼它用的是你的網域，而不是HoYoVerse API的？",
         "a4": [
           "Paimon.moe 並不能直接從HoYoVerse API 獲得東西，因為",
           "，所以連結會被重定向到 CORS proxy 來實現。你可以檢視源代碼",
@@ -362,9 +363,9 @@
       "wishtally": "WishTally 檔案",
       "notice": [
         "此功能仍在測試中，請先前往設定中匯出到Excel進行備份！",
-        "相同時間戳和獎賞名稱的祈願不會變更（因此不會覆蓋現有的祈願紀錄）",
+        "具有相同時間戳和物品名稱的祈願不會變更（因此不會覆蓋現有的祈願紀錄）",
         "只會在開頭和結尾處添加祈願紀錄，不會在工作表中間插入內容",
-        "目前僅支援內容為英文的 Excel 檔案"
+        "請先將本站使用的語言變更為您 Excel 檔案使用的語言"
       ],
       "selectFile": {
         "default": "把 Paimon.moe 匯出的 Excel 檔案拖放到此處，或點擊此處選擇",
@@ -388,10 +389,10 @@
     "help": {
       "title": "祈願統計 說明 & 設定",
       "exportTitle": "匯出及匯入祈願紀錄",
-      "exportMessage": "你可以在這裡將祈願紀錄匯出為Excel",
-      "export": "匯出到Excel",
+      "exportMessage": "您可以在這裡將祈願紀錄匯出為 Excel。您也可以在這裡匯入自 Paimon.moe 或 TakaGG Gacha 匯出的 Excel。",
+      "export": "匯出到 Excel",
       "exporting": "匯出中…",
-      "import": "匯入",
+      "import": "從 Excel 匯入",
       "exportFinish": "匯出成功，請等待瀏覽器下載檔案！",
       "wishTallyTitle": "提交祈願到全球統計",
       "wishTally": "我們在統計全球的祈願資料！你可以提交你的紀錄參與進來。所有祈願資料會統一整合，用來統計 Paimon.moe 使用者的平均情況。",
@@ -484,7 +485,7 @@
       "character": "角色",
       "weapon": "武器",
       "winRateOff": "小保底沒歪",
-      "winRateOffWeapon": "小保底沒歪"
+      "winRateOffWeapon": "沒歪成常駐"
     },
     "note": [
       "祈願歷史紀錄無法自動更新，更新歷史紀錄需要重新匯入！",
@@ -557,10 +558,10 @@
     "character": {
       "calculateAscension": "計算突破材料？",
       "selectCharacter": "選擇角色",
-      "current": "目前角色等級，經驗，& 突破階段",
+      "current": "目前角色等級、經驗、突破階段",
       "inputCurrentLevel": "輸入目前角色等級…",
       "inputCurrentExp": "輸入目前角色經驗…",
-      "intended": "目標角色等級 & 突破情況",
+      "intended": "目標角色等級及突破情況",
       "inputIntendedLevel": "輸入目標角色等級…",
       "resource": "需要的資源",
       "calculateTalent": "計算天賦材料？",
@@ -605,7 +606,7 @@
       "calculate": "計算",
       "currentTime": "目前時間",
       "fullTime": "將在多久回滿",
-      "hours": "時",
+      "hours": "小時",
       "minutes": "分",
       "seconds": "秒"
     },
@@ -616,7 +617,7 @@
       "calculate": "計算",
       "based": "基於冒險等階：{ar}",
       "change": "（可在設定中變更）",
-      "result": "達到好感度等級 10，需完成所有每日委託且每天使用 180 樹脂。",
+      "result": "如果完成所有每日委託且每天使用 180 樹脂，達到好感度等級 10 所需要的時間",
       "resultSerenitea": "如果您也把角色放入塵歌壺（最大洞天仙力）",
       "resultDay": "{result} 天"
     },
@@ -652,7 +653,7 @@
     "subtitle": "點擊圖示增加到待辦事項",
     "searchCharacter": "搜尋角色",
     "searchWeapon": "搜尋武器",
-    "day": "日子",
+    "day": "日期",
     "material": "材料",
     "characterWeapons": "角色 & 武器",
     "add": {
@@ -676,7 +677,7 @@
     "title": "待辦事項",
     "summary": "總結",
     "empty": [
-      "沒啥要做的 😀",
+      "暫時沒有需要做的事情 😀",
       "從物品頁面或計算機加點東西來！"
     ],
     "farmableToday": "今日秘境掉落",
@@ -709,10 +710,10 @@
     "ar": "冒險等階：",
     "wl": "世界等級：",
     "drive": [
-      "Paimon.moe 可以利用你的 Google 雲端硬碟和同步功能，來儲存你的祈願紀錄和待辦事項",
+      "Paimon.moe 利用 Google 雲端硬碟的「應用程式資料」資料夾，來儲存和同步你的祈願紀錄和待辦事項。",
       "Paimon.moe 只能修改讀取由本網站生成的檔案。"
     ],
-    "driveError": " Google 雲端硬碟API無法載入",
+    "driveError": "Google 雲端硬碟 API 無法載入",
     "driveSignIn": "登入 Google 雲端硬碟",
     "driveSignOut": "登出 Google 雲端硬碟",
     "driveSignInErrorScope": "雲端登入失敗！ 請重新登入並檢查所需要的權限！",
@@ -721,7 +722,7 @@
     "syncing": "同步中…",
     "syncStatus": "同步狀態：",
     "lastSync": "上次同步：",
-    "feedback": "如果你發現一些BUG，資料錯誤，或是其他意見回饋，請留言到",
+    "feedback": "如果您有發現 Bug、資料錯誤，或是有其他意見回饋，請留言到",
     "or": "或",
     "thanks": "謝謝😁！",
     "credits": {
@@ -832,7 +833,7 @@
   "footer": {
     "affliate": "Paimon.moe 與米哈遊無關。",
     "copyright": "原神的遊戲內容和各種素材與商標的版權都屬於米哈遊。",
-    "discord": "加入我們的Discord",
+    "discord": "加入我們的 Discord",
     "community": "社群連結",
     "official": "官方連結",
     "link": {
@@ -849,7 +850,7 @@
     "message": [
       "謝謝！希望本網站對您有所幫助。",
       "我出於興趣在業餘時間製作了這個網站，隨著更新加入了越來越多的功能與資料。因為我喜歡探索遊戲，並簡化各種內容",
-      "如果你想要贊助，你的捐贈會一定會有利於改善這個網站並激勵我加入更多的內容倒 Paimon.moe！非常感謝，希望你能喜歡，願你玩得開心！",
+      "如果你想要贊助，你的捐贈會一定會有利於改善這個網站並激勵我為 Paimon.moe 加入更多的內容！非常感謝，希望你能喜歡，願你用得開心！",
       "如果您喜歡程式設計，您也可以在這裡為本網站貢獻"
     ],
     "kofi": "在 Ko-fi 上贊助",
@@ -968,6 +969,8 @@
     "18ATKSet": "+18% 攻擊力套",
     "20EnergyRechargeSet": "+20% 元素充能效率套",
     "25PhysicalDmgSet": "+25% 物理傷害加成套",
+    "80EMSet": "+80 元素精通套",
+    "15HealingBonusSet": "+15% 治療加成套",
     "sands": "時之沙",
     "goblet": "空之杯",
     "circlet": "理之冠",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "資料已同步！",
-    "driveError": "雲端同步目前不可用 😔"
+    "driveError": "雲端同步目前不可用 😔",
+    "open": "開啟",
+    "delete": "刪除",
+    "deleteConfirm": "刪除？"
   },
   "update": {
     "newUpdate": "Paimon.moe 更新啦！",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "依最後復刻排序",
     "bannerTitle": "角色復刻時間一覽",
     "bannerSubtitle": "檢視角色發佈時間以及復刻情況"
+  },
+  "tcg": {
+    "title": "七聖召喚",
+    "requirementResonance": "牌組中需要有至少 2 位{character}角色才能將此牌加入牌組！",
+    "requirementTalent": "牌組中需要有{character}才能將此牌加入牌組！",
+    "addedToDeck": "已加入牌組！",
+    "deletedFromDeck": "已移出牌組！",
+    "removedFromDeck": "已從牌組中移除一張！",
+    "alreadyMaxCharacters": "此牌組已有 3 張角色牌！",
+    "alreadyMaxActions": "此牌組已有 30 張行動牌！",
+    "requirementInDeck": "在移除{character}前，請先從牌組中移除卡牌「{card}」！",
+    "addToDeck": "加入牌組",
+    "removeFromDeck": "從牌組中{type}",
+    "delete": "刪除",
+    "remove": "移除",
+    "compare": "選中作為比較",
+    "noCardOnDeck": "此牌組中還沒有卡牌",
+    "loadDefaultDeck": "載入起始牌組",
+    "saveDeck": "儲存牌組",
+    "hideDeck": "隱藏牌組",
+    "showDeck": "顯示牌組",
+    "addDeck": "新增牌組",
+    "selectDeck": "選擇牌組",
+    "loadingLink": "正在產生連結…",
+    "loadingLinkError": "產生連結時發生錯誤 😥",
+    "shareDeck": "分享牌組「{name}」",
+    "removeCompare": "取消比較",
+    "shareNotComplete": "分享牌組前，請確保牌組滿足出戰條件（有 3 張角色牌和 30 張行動牌）！",
+    "characterCard": "角色牌",
+    "actionCard": "行動牌"
   }
 }

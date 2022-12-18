@@ -1067,4 +1067,54 @@ export const itemList = {
     rarity: 5,
     parent: 'vajrada_amethyst_sliver',
   },
+
+  scarab: { id: 'scarab', name: 'Scarab' },
+  henna_berry: { id: 'henna_berry', name: 'Henna Berry' },
+  light_guiding_tetrahedron: {
+    id: 'light_guiding_tetrahedron',
+    name: 'Light Guiding Tetrahedron',
+    rarity: 5,
+    parent: 'vajrada_amethyst_sliver',
+  },
+
+  damaged_prism: {
+    id: 'damaged_prism',
+    name: 'Damaged Prism',
+  },
+  turbid_prism: {
+    id: 'turbid_prism',
+    name: 'Turbid Prism',
+  },
+  radiant_prism: {
+    id: 'radiant_prism',
+    name: 'Radiant Prism',
+  },
+
+  perpetual_caliber: {
+    id: 'perpetual_caliber',
+    name: 'Perpetual Caliber',
+    rarity: 4,
+  },
+  padisarah: {
+    id: 'padisarah',
+    name: 'Padisarah',
+  },
+  quelled_creeper: {
+    id: 'quelled_creeper',
+    name: 'Quelled Creeper',
+    rarity: 5,
+    parent: 'nagadus_emerald_sliver',
+  },
+  puppet_strings: {
+    id: 'puppet_strings',
+    name: 'Puppet Strings',
+  },
+  mirror_of_mushin: {
+    id: 'mirror_of_mushin',
+    name: 'Mirror of Mushin',
+  },
+  dakas_bell: {
+    id: 'dakas_bell',
+    name: "Daka's Bell",
+  },
 };

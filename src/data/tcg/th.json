@@ -1,0 +1,3593 @@
+[
+  {
+    "_id": 1101,
+    "id": "ganyu",
+    "type": "character",
+    "name": "Ganyu",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11011,
+        "type": "โจมตีปกติ",
+        "name": "Liutian Archery",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11012,
+        "type": "สกิลธาตุ",
+        "name": "Trail of the Qilin",
+        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 1 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Ice Lotus</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111012,
+          "id": "ice_lotus",
+          "name": "Ice Lotus",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครเข้าต่อสู้ของฝ่ายเราได้รับความเสียหาย:</span> ลบล้างความเสียหาย 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 11013,
+        "type": "โจมตีปกติ",
+        "name": "Frostflake Arrow",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 3 หน่วย และสร้าง<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายทะลวง</span> 2 หน่วย</span> ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "_id": 11014,
+        "type": "ท่าไม้ตาย",
+        "name": "Celestial Shower",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 1 หน่วย สร้าง<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายทะลวง</span> 1 หน่วย</span> ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู และเรียก <span style=\"color: #FFFFFFFF;\">Sacred Cryo Pearl</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111011,
+          "id": "sacred_cryo_pearl",
+          "name": "Sacred Cryo Pearl",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 1 หน่วย และสร้าง<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายทะลวง</span> 1 หน่วย แก่ตัวละครนอกสนามทั้งหมดของฝ่ายศัตรู\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1102,
+    "id": "diona",
+    "type": "character",
+    "name": "Diona",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11021,
+        "type": "โจมตีปกติ",
+        "name": "Kätzlein Style",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11022,
+        "type": "สกิลธาตุ",
+        "name": "Icy Paws",
+        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 2 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Cat-Claw Shield</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111021,
+          "id": "cat-claw_shield",
+          "name": "Cat-Claw Shield",
+          "desc": "มอบ<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span> 1 หน่วย</span> ให้แก่ตัวละครที่เข้าต่อสู้ของฝ่ายเรา"
+        }
+      },
+      {
+        "_id": 11023,
+        "type": "ท่าไม้ตาย",
+        "name": "Signature Mix",
+        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 1 หน่วย รักษาตัวละครนี้ 2 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Drunken Mist</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111023,
+          "id": "drunken_mist",
+          "name": "Drunken Mist",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 1 หน่วย และรักษาตัวละครที่เข้าต่อสู้ของฝ่ายเรา 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1103,
+    "id": "kaeya",
+    "type": "character",
+    "name": "Kaeya",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11031,
+        "type": "โจมตีปกติ",
+        "name": "Ceremonial Bladework",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11032,
+        "type": "สกิลธาตุ",
+        "name": "Frostgnaw",
+        "desc": "จะสร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 3 หน่วย",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11033,
+        "type": "ท่าไม้ตาย",
+        "name": "Glacial Waltz",
+        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 1 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Icicle</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111031,
+          "id": "icicle",
+          "name": "Icicle",
+          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ฝ่ายเราเปลี่ยนตัวละคร:</span> สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1104,
+    "id": "chongyun",
+    "type": "character",
+    "name": "Chongyun",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11041,
+        "type": "โจมตีปกติ",
+        "name": "Demonbane",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11042,
+        "type": "สกิลธาตุ",
+        "name": "Chonghua's Layered Frost",
+        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 3 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Chonghua Frost Field</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111041,
+          "id": "chonghua_frost_field",
+          "name": "Chonghua Frost Field",
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ของตัวละครที่ใช้อาวุธดาบ ดาบใหญ่ หรือหอกของฝ่ายเราสร้าง จะกลายเป็น<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span>\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 11043,
+        "type": "ท่าไม้ตาย",
+        "name": "Cloud-Parting Star",
+        "desc": "จะสร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 7 หน่วย",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1105,
+    "id": "kamisato_ayaka",
+    "type": "character",
+    "name": "Kamisato Ayaka",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11051,
+        "type": "โจมตีปกติ",
+        "name": "Kamisato Art: Kabuki",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11052,
+        "type": "สกิลธาตุ",
+        "name": "Kamisato Art: Hyouka",
+        "desc": "จะสร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 3 หน่วย",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11053,
+        "type": "ท่าไม้ตาย",
+        "name": "Kamisato Art: Soumetsu",
+        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 4 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Frostflake Seki no To</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111051,
+          "id": "frostflake_seki_no_to",
+          "name": "Frostflake Seki no To",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 11054,
+        "type": "สกิลติดตัว",
+        "name": "Kamisato Art: Senho",
+        "desc": "[ติดตัว] เมื่อตัวละครนี้ถูกเปลี่ยนเป็น \"ตัวละครที่เข้าต่อสู้\" จะได้รับ <span style=\"color: #FFFFFFFF;\">Cryo Elemental Infusion</span>",
+        "cost": [],
+        "sub": {
+          "_id": 111052,
+          "id": "cryo_elemental_infusion",
+          "name": "Cryo Elemental Infusion",
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ของตัวละครที่มีการ์ดใบนี้ จะเปลี่ยนเป็น<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span>\\n(ไปจนกว่าจะจบเทิร์น)"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1201,
+    "id": "barbara",
+    "type": "character",
+    "name": "Barbara",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12011,
+        "type": "โจมตีปกติ",
+        "name": "Whisper of Water",
+        "desc": "จะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12012,
+        "type": "สกิลธาตุ",
+        "name": "Let the Show Begin♪",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Melody Loop</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112011,
+          "id": "melody_loop",
+          "name": "Melody Loop",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> รักษา 1 หน่วย ให้ตัวละครฝ่ายเราทั้งหมด จากนั้นทำให้ตัวละครที่เข้าต่อสู้ของฝ่ายเรา<span style=\"color: #80C0FFFF;\">ติดสถานะธาตุน้ำ</span>\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12013,
+        "type": "ท่าไม้ตาย",
+        "name": "Shining Miracle♪",
+        "desc": "รักษาตัวละครทั้งหมดของฝ่ายเรา 4 หน่วย",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1202,
+    "id": "xingqiu",
+    "type": "character",
+    "name": "Xingqiu",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12021,
+        "type": "โจมตีปกติ",
+        "name": "Guhua Style",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12022,
+        "type": "สกิลธาตุ",
+        "name": "Fatal Rainscreen",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย ทำให้ตัวละครนี้<span style=\"color: #80C0FFFF;\">ติดสถานะธาตุน้ำ</span> และสร้าง <span style=\"color: #FFFFFFFF;\">Rain Sword</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112021,
+          "id": "rain_sword",
+          "name": "Rain Sword",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราได้รับความเสียหายอย่างน้อย 3 หน่วย:</span> ลบล้างความเสียหาย 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12023,
+        "type": "ท่าไม้ตาย",
+        "name": "Raincutter",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย ทำให้ตัวละครนี้<span style=\"color: #80C0FFFF;\">ติดสถานะธาตุน้ำ</span> และสร้าง <span style=\"color: #FFFFFFFF;\">Rainbow Bladework</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112022,
+          "id": "rainbow_bladework",
+          "name": "Rainbow Bladework",
+          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ฝ่ายเราใช้การโจมตีปกติ:</span> สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1203,
+    "id": "mona",
+    "type": "character",
+    "name": "Mona",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12031,
+        "type": "โจมตีปกติ",
+        "name": "Ripple of Fate",
+        "desc": "จะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12032,
+        "type": "สกิลธาตุ",
+        "name": "Mirror Reflection of Doom",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Reflection</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112031,
+          "id": "reflection",
+          "name": "Reflection",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราได้รับความเสียหาย:</span> ลบล้างความเสียหาย 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 1</span> ครั้ง และเมื่อถูกใช้หมดจะไม่ทิ้งการ์ดใบนี้\\n<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> ทิ้งการ์ดใบนี้ และสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย"
+        }
+      },
+      {
+        "_id": 12033,
+        "type": "ท่าไม้ตาย",
+        "name": "Stellaris Phantasm",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 4 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Illusory Bubble</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112032,
+          "id": "illusory_bubble",
+          "name": "Illusory Bubble",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อฝ่ายเราทำให้เกิดความเสียหายสกิล:</span> จะลบล้างสถานะนี้ และทำให้ความเสียหายในครั้งนี้เพิ่มขึ้นสองเท่า"
+        }
+      },
+      {
+        "_id": 12034,
+        "type": "สกิลติดตัว",
+        "name": "Illusory Torrent",
+        "desc": "[ติดตัว] ตอน<span style=\"color: #FFFFFFFF;\">ตัวละครนี้เป็นตัวละครที่เข้าต่อสู้ เมื่อฝ่ายเราทำการเปลี่ยนตัวละคร:</span> จะมองการเปลี่ยนนี้เป็น \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการด่วน</span>\" แทนที่ \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>\" (เทิร์นละ 1 ครั้ง)",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1301,
+    "id": "diluc",
+    "type": "character",
+    "name": "Diluc",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 13011,
+        "type": "โจมตีปกติ",
+        "name": "Tempered Sword",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13012,
+        "type": "สกิลธาตุ",
+        "name": "Searing Onslaught",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 5 หน่วย โดยที่ในแต่ละเทิร์น เมื่อใช้สกิลนี้เป็นครั้งที่สาม ความเสียหาย +2",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13013,
+        "type": "ท่าไม้ตาย",
+        "name": "Dawn",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 8 หน่วย และตัวละครนี้จะได้รับ <span style=\"color: #FFFFFFFF;\">Pyro Infusion</span>",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113011,
+          "id": "pyro_infusion",
+          "name": "Pyro Infusion",
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ของตัวละครที่มีการ์ดใบนี้ จะเปลี่ยนเป็น<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span>\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1302,
+    "id": "xiangling",
+    "type": "character",
+    "name": "Xiangling",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 13021,
+        "type": "โจมตีปกติ",
+        "name": "Dough-Fu",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13022,
+        "type": "สกิลธาตุ",
+        "name": "Guoba Attack",
+        "desc": "เรียก <span style=\"color: #FFFFFFFF;\">Guoba</span>",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113021,
+          "id": "guoba",
+          "name": "Guoba",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 13023,
+        "type": "ท่าไม้ตาย",
+        "name": "Pyronado",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 2 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Pyronado</span>",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113022,
+          "id": "pyronado",
+          "name": "Pyronado",
+          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครฝ่ายเราใช้สกิล:</span> สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1303,
+    "id": "bennett",
+    "type": "character",
+    "name": "Bennett",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 13031,
+        "type": "โจมตีปกติ",
+        "name": "Strike of Fortune",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13032,
+        "type": "สกิลธาตุ",
+        "name": "Passion Overload",
+        "desc": "จะสร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 3 หน่วย",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13033,
+        "type": "ท่าไม้ตาย",
+        "name": "Fantastic Voyage",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 2 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Inspiration Field</span>",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113031,
+          "id": "inspiration_field",
+          "name": "Inspiration Field",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครฝ่ายเราใช้สกิล:</span> หากตัวละครดังกล่าว มีค่าพลังชีวิตอย่างน้อย 7 หน่วย จะทำให้ความเสียหายนี้ +2; หลังจบสกิล หากตัวละครดังกล่าว มีค่าพลังชีวิตไม่เกิน 6 หน่วย จะทำการรักษาตัวละครนี้ 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1305,
+    "id": "yoimiya",
+    "type": "character",
+    "name": "Yoimiya",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 13051,
+        "type": "โจมตีปกติ",
+        "name": "Firework Flare-Up",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13052,
+        "type": "สกิลธาตุ",
+        "name": "Niwabi Fire-Dance",
+        "desc": "ตัวละครนี้เข้าสู่สภาวะ <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> (สกิลนี้ไม่ก่อให้เกิดพลังงาน)",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          }
+        ],
+        "sub": {
+          "_id": 113051,
+          "id": "niwabi_enshou",
+          "name": "Niwabi Enshou",
+          "desc": "<span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ของตัวละครที่มีการ์ดใบนี้ จะสร้างความเสียหาย +1 และ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ที่สร้าง จะเปลี่ยนเป็น <span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span>\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 13053,
+        "type": "ท่าไม้ตาย",
+        "name": "Ryuukin Saxifrage",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 3 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Aurous Blaze</span>",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113052,
+          "id": "aurous_blaze",
+          "name": "Aurous Blaze",
+          "desc": "หลังจากตัวละครฝ่ายเราที่ไม่ใช่ Yoimiya ใช้สกิล: สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1401,
+    "id": "fischl",
+    "type": "character",
+    "name": "Fischl",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14011,
+        "type": "โจมตีปกติ",
+        "name": "Bolts of Downfall",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14012,
+        "type": "สกิลธาตุ",
+        "name": "Nightrider",
+        "desc": "สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Oz</span>",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114011,
+          "id": "oz",
+          "name": "Oz",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 14013,
+        "type": "ท่าไม้ตาย",
+        "name": "Midnight Phantasmagoria",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 4 หน่วย และจะสร้าง<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายทะลวง</span></span> 2 หน่วย ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายตรงข้าม",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1402,
+    "id": "razor",
+    "type": "character",
+    "name": "Razor",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14021,
+        "type": "โจมตีปกติ",
+        "name": "Steel Fang",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14022,
+        "type": "สกิลธาตุ",
+        "name": "Claw and Thunder",
+        "desc": "จะสร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 3 หน่วย",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14023,
+        "type": "ท่าไม้ตาย",
+        "name": "Lightning Fang",
+        "desc": "สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 5 หน่วย และตัวละครนี้จะได้รับ <span style=\"color: #FFFFFFFF;\">The Wolf Within</span>",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114021,
+          "id": "the_wolf_within",
+          "name": "The Wolf Within",
+          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครที่มีการ์ดใบนี้ ใช้การโจมตีปกติหรือสกิลธาตุ:</span> สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1403,
+    "id": "keqing",
+    "type": "character",
+    "name": "Keqing",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 14031,
+        "type": "โจมตีปกติ",
+        "name": "Yunlai Swordsmanship",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14032,
+        "type": "สกิลธาตุ",
+        "name": "Stellar Restoration",
+        "desc": "สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 3 หน่วย และสร้างการ์ด <span style=\"color: #FFFFFFFF;\">Lightning Stiletto</span>",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114031,
+          "id": "lightning_stiletto",
+          "name": "Lightning Stiletto",
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เปลี่ยน Keqing เข้าสนาม และใช้ Stellar Restoration โดยทันที ซึ่ง Stellar Restoration ในครั้งนี้ จะทำให้ Keqing ได้รับ <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Electro Infusion</span></span> แต่จะไม่ทำให้เกิด Lightning Stiletto อีก\\n(เมื่อ Keqing ใช้ Stellar Restoration หากมีการ์ดใบนี้อยู่ในมือ: จะไม่ทำให้เกิด Lightning Stiletto อีก แต่จะเปลี่ยนเป็นการทิ้งการ์ดใบนี้ และมอบ <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Electro Infusion</span></span> ให้แก่ Keqing)"
+        }
+      },
+      {
+        "_id": 14033,
+        "type": "ท่าไม้ตาย",
+        "name": "Starward Sword",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 4 หน่วย และสร้าง<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายทะลวง</span> 3 หน่วย</span> ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายตรงข้าม",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1404,
+    "id": "cyno",
+    "type": "character",
+    "name": "Cyno",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 14041,
+        "type": "โจมตีปกติ",
+        "name": "Invoker's Spear",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14042,
+        "type": "สกิลธาตุ",
+        "name": "Secret Rite: Chasmic Soulfarer",
+        "desc": "จะสร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 3 หน่วย",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14043,
+        "type": "ท่าไม้ตาย",
+        "name": "Sacred Rite: Wolf's Swiftness",
+        "desc": "สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 4 หน่วย\\nระดับการ [ประทับร่าง] ของ <span style=\"color: #FFFFFFFF;\">Pactsworn Pathclearer</span> +2",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "Pactsworn Pathclearer",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span>สะสมระดับการ \"ประทับร่าง\" 1 ระดับ\\n<span style=\"color: #FFFFFFFF;\">มอบเอฟเฟกต์โดยขึ้นกับระดับของการ \"ประทับร่าง\":</span>\\nมากกว่า หรือเท่ากับระดับ 2: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>เปลี่ยนเป็น<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span>;\\nมากกว่า หรือเท่ากับระดับ 4: สร้างความเสียหาย +2;\\nมากกว่า หรือเท่ากับระดับ 6: ระดับของการ \"ประทับร่าง\" -4"
+        }
+      },
+      {
+        "_id": 14044,
+        "type": "สกิลติดตัว",
+        "name": "Lawful Enforcer",
+        "desc": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับสถานะ <span style=\"color: #FFFFFFFF;\">Pactsworn Pathclearer</span>",
+        "cost": [],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "Pactsworn Pathclearer",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span>สะสมระดับการ \"ประทับร่าง\" 1 ระดับ\\n<span style=\"color: #FFFFFFFF;\">มอบเอฟเฟกต์โดยขึ้นกับระดับของการ \"ประทับร่าง\":</span>\\nมากกว่า หรือเท่ากับระดับ 2: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>เปลี่ยนเป็น<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span>;\\nมากกว่า หรือเท่ากับระดับ 4: สร้างความเสียหาย +2;\\nมากกว่า หรือเท่ากับระดับ 6: ระดับของการ \"ประทับร่าง\" -4"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1501,
+    "id": "sucrose",
+    "type": "character",
+    "name": "Sucrose",
+    "hp": 10,
+    "energy": 2,
+    "element": "anemo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 15011,
+        "type": "โจมตีปกติ",
+        "name": "Wind Spirit Creation",
+        "desc": "จะสร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 1 หน่วย",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15012,
+        "type": "สกิลธาตุ",
+        "name": "Astable Anemohypostasis Creation - 6308",
+        "desc": "สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 3 หน่วย และบังคับฝ่ายตรงข้าม ให้สลับไปใช้ตัวละครก่อนหน้า",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15013,
+        "type": "ท่าไม้ตาย",
+        "name": "Forbidden Creation - Isomer 75 / Type II",
+        "desc": "สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Large Wind Spirit</span>",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 115011,
+          "id": "large_wind_spirit",
+          "name": "Large Wind Spirit",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 3</span>\\n\\nหลังจากที่ตัวละครฝ่ายเรา หรือสิ่งอัญเชิญ ทำให้เกิดปฏิกิริยากระจาย: จะเกิดการเปลี่ยนประเภทธาตุของการ์ดใบนี้ และจะสร้างความเสียหายของประเภทธาตุที่กระจายแทน (จำกัดหนึ่งครั้งก่อนออกสนาม)"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1502,
+    "id": "jean",
+    "type": "character",
+    "name": "Jean",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 15021,
+        "type": "โจมตีปกติ",
+        "name": "Favonius Bladework",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15022,
+        "type": "สกิลธาตุ",
+        "name": "Gale Blade",
+        "desc": "สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 3 หน่วย และบังคับฝ่ายตรงข้าม ให้สลับไปใช้ตัวละครถัดไป",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15023,
+        "type": "ท่าไม้ตาย",
+        "name": "Dandelion Breeze",
+        "desc": "รักษาตัวละครทั้งหมดของฝ่ายเรา 2 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Dandelion Field</span>",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 115021,
+          "id": "dandelion_field",
+          "name": "Dandelion Field",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 2 หน่วย และรักษาตัวละครที่เข้าต่อสู้ของฝ่ายเรา 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1601,
+    "id": "ningguang",
+    "type": "character",
+    "name": "Ningguang",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 16011,
+        "type": "โจมตีปกติ",
+        "name": "Sparkling Scatter",
+        "desc": "จะสร้าง<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span> 1 หน่วย",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16012,
+        "type": "สกิลธาตุ",
+        "name": "Jade Screen",
+        "desc": "สร้าง<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span> 2 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Jade Screen</span>",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "Jade Screen",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราได้รับความเสียหายอย่างน้อย 2 หน่วย:</span> ลบล้างความเสียหาย 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 16013,
+        "type": "ท่าไม้ตาย",
+        "name": "Starshatter",
+        "desc": "สร้าง<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span> 6 หน่วย; หากมี <span style=\"color: #FFFFFFFF;\">Jade Screen</span> อยู่ในสนาม จะทำให้ความเสียหายนี้ +2",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "Jade Screen",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราได้รับความเสียหายอย่างน้อย 2 หน่วย:</span> ลบล้างความเสียหาย 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1602,
+    "id": "noelle",
+    "type": "character",
+    "name": "Noelle",
+    "hp": 10,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16021,
+        "type": "โจมตีปกติ",
+        "name": "Favonius Bladework - Maid",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16022,
+        "type": "สกิลธาตุ",
+        "name": "Breastplate",
+        "desc": "สร้าง<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span> 1 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Full Plate</span>",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116021,
+          "id": "full_plate",
+          "name": "Full Plate",
+          "desc": "มอบ<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span> 2 หน่วย</span> ให้แก่ตัวละครที่เข้าต่อสู้ของฝ่ายเรา\\nก่อนที่<span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span>นี้จะถูกใช้จนหมด <span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ที่ฝ่ายเราได้รับจะลดลงครึ่งหนึ่ง (ปัดเศษขึ้น)"
+        }
+      },
+      {
+        "_id": 16023,
+        "type": "ท่าไม้ตาย",
+        "name": "Sweeping Time",
+        "desc": "สร้าง<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span> 4 หน่วย และตัวละครนี้จะได้รับ <span style=\"color: #FFFFFFFF;\">Sweeping Time</span>",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 116022,
+          "id": "sweeping_time",
+          "name": "Sweeping Time",
+          "desc": "เมื่อตัวละครใช้การโจมตีปกติ: จะใช้<span style=\"color: #FFE699FF;\">ธาตุหิน</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n<span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ของตัวละครสร้างความเสียหาย +2 และ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ที่สร้าง จะเปลี่ยนเป็น<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span>\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1701,
+    "id": "collei",
+    "type": "character",
+    "name": "Collei",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17011,
+        "type": "โจมตีปกติ",
+        "name": "Supplicant's Bowmanship",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17012,
+        "type": "สกิลธาตุ",
+        "name": "Floral Brush",
+        "desc": "จะสร้าง<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> 3 หน่วย",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 17013,
+        "type": "ท่าไม้ตาย",
+        "name": "Trump-Card Kitty",
+        "desc": "สร้าง<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> 2 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Cuilein-Anbar</span>",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 117011,
+          "id": "cuilein-anbar",
+          "name": "Cuilein-Anbar",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2201,
+    "id": "rhodeia_of_loch",
+    "type": "character",
+    "name": "Oceanid - Rhodeia",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22011,
+        "type": "โจมตีปกติ",
+        "name": "Surge",
+        "desc": "จะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22012,
+        "type": "สกิลธาตุ",
+        "name": "Oceanid Mimic Summoning",
+        "desc": "สุ่มเรียก <span style=\"color: #FFFFFFFF;\">Oceanid Mimic</span> 1 ชนิด (ให้ความสำคัญกับการสร้างประเภทที่แตกต่างกันก่อน)",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "Oceanid Mimic",
+          "desc": "Oceanid Mimic มีอยู่ทั้งหมด 3 ชนิด:\\n<span style=\"color: #FFFFFFFF;\">Ferret</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย สามารถใช้ได้ 2 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย สามารถใช้ได้ 3 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: สามารถป้องกันความเสียหายได้ 2 หน่วย และสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย ในตอนที่ถูกใช้จนหมด"
+        }
+      },
+      {
+        "_id": 22013,
+        "type": "สกิลธาตุ",
+        "name": "The Myriad Wilds",
+        "desc": "สุ่มเรียก <span style=\"color: #FFFFFFFF;\">Oceanid Mimic</span> 2 ชนิด (ให้ความสำคัญกับการสร้างประเภทที่แตกต่างกันก่อน)",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 5
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "Oceanid Mimic",
+          "desc": "Oceanid Mimic มีอยู่ทั้งหมด 3 ชนิด:\\n<span style=\"color: #FFFFFFFF;\">Ferret</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย สามารถใช้ได้ 2 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย สามารถใช้ได้ 3 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: สามารถป้องกันความเสียหายได้ 2 หน่วย และสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย ในตอนที่ถูกใช้จนหมด"
+        }
+      },
+      {
+        "_id": 22014,
+        "type": "ท่าไม้ตาย",
+        "name": "Tide and Torrent",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย; สิ่งอัญเชิญทุก 1 ชิ้น ของฝ่ายเรา จะทำให้ความเสียหายนี้ +2",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2202,
+    "id": "mirror_maiden",
+    "type": "character",
+    "name": "Fatui - Mirror Maiden",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22021,
+        "type": "โจมตีปกติ",
+        "name": "Water Ball",
+        "desc": "จะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22022,
+        "type": "สกิลธาตุ",
+        "name": "Influx Blast",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 3 หน่วย และทำให้ตัวละครเป้าหมายได้รับ <span style=\"color: #FFFFFFFF;\">Refraction</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122021,
+          "id": "refraction",
+          "name": "Refraction",
+          "desc": "ตัวละครที่มีการ์ดใบนี้ จะได้รับความเสียหายน้ำ +1\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>\\n(แต่ละฝ่ายจะมีสถานะนี้ในสนาม ได้มากสุดหนึ่งอย่าง)"
+        }
+      },
+      {
+        "_id": 22023,
+        "type": "ท่าไม้ตาย",
+        "name": "Rippled Reflection",
+        "desc": "จะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 5 หน่วย",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2301,
+    "id": "fatui_pyro_agent",
+    "type": "character",
+    "name": "Fatui - Pyro Agent",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 23011,
+        "type": "โจมตีปกติ",
+        "name": "Thrust",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23012,
+        "type": "สกิลธาตุ",
+        "name": "Prowl",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 1 หน่วย และตัวละครนี้จะได้รับ <span style=\"color: #FFFFFFFF;\">Stealth</span>",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "Stealth",
+          "desc": "ตัวละครที่มีการ์ดใบนี้ได้รับความเสียหาย -1 และสร้างความเสียหาย +1\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2"
+        }
+      },
+      {
+        "_id": 23013,
+        "type": "ท่าไม้ตาย",
+        "name": "Blade Ablaze",
+        "desc": "จะสร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 5 หน่วย",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23014,
+        "type": "สกิลติดตัว",
+        "name": "Stealth Master",
+        "desc": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับสถานะ <span style=\"color: #FFFFFFFF;\">Stealth</span>",
+        "cost": [],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "Stealth",
+          "desc": "ตัวละครที่มีการ์ดใบนี้ได้รับความเสียหาย -1 และสร้างความเสียหาย +1\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2501,
+    "id": "maguu_kenki",
+    "type": "character",
+    "name": "Maguu Kenki",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 25011,
+        "type": "โจมตีปกติ",
+        "name": "Ichimonji",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 25012,
+        "type": "สกิลธาตุ",
+        "name": "Blustering Blade",
+        "desc": "สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Shadowsword: Lone Gale</span>",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125011,
+          "id": "shadowsword_lone_gale",
+          "name": "Shadowsword: Lone Gale",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 25013,
+        "type": "สกิลธาตุ",
+        "name": "Frosty Assault",
+        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Shadowsword: Galloping Frost</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125012,
+          "id": "shadowsword_galloping_frost",
+          "name": "Shadowsword: Galloping Frost",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 25014,
+        "type": "ท่าไม้ตาย",
+        "name": "Pseudo Tengu Sweeper",
+        "desc": "สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 6 หน่วย และทำให้เกิดเอฟเฟกต์ของสิ่งอัญเชิญ <span style=\"color: #FFFFFFFF;\">Shadowsword</span> ทั้งหมดของฝ่ายเรา (ไม่ลดจำนวนครั้งที่สามารถใช้ได้)",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2601,
+    "id": "stonehide_lawachurl",
+    "type": "character",
+    "name": "Stonehide Lawachurl",
+    "hp": 8,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 26011,
+        "type": "โจมตีปกติ",
+        "name": "Plama Lawa",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26012,
+        "type": "สกิลธาตุ",
+        "name": "Movo Lawa",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 3 หน่วย",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 26013,
+        "type": "ท่าไม้ตาย",
+        "name": "Upa Shato",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 5 หน่วย",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26014,
+        "type": "สกิลติดตัว",
+        "name": "Infused Stonehide",
+        "desc": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับสถานะ <span style=\"color: #FFFFFFFF;\">Stonehide</span>และ<span style=\"color: #FFFFFFFF;\">Stone Force</span>",
+        "cost": [],
+        "sub": {
+          "_id": 126011,
+          "id": "stonehide",
+          "name": "Stonehide",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครที่มีการ์ดใบนี้ได้รับความเสียหาย:</span> ลบล้างความเสียหาย 1 หน่วย และในตอนที่ลบล้างความเสียหายหิน จะต้องเสีย<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>เพิ่ม 1 ครั้ง\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2701,
+    "id": "jadeplume_terrorshroom",
+    "type": "character",
+    "name": "Jadeplume Terrorshroom",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 27011,
+        "type": "โจมตีปกติ",
+        "name": "Majestic Dance",
+        "desc": "จะสร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 27012,
+        "type": "สกิลธาตุ",
+        "name": "Volatile Spore Cloud",
+        "desc": "จะสร้าง<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> 3 หน่วย",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 27013,
+        "type": "ท่าไม้ตาย",
+        "name": "Feather Spreading",
+        "desc": "สร้าง<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> 4 หน่วย และใช้ <span style=\"color: #FFFFFFFF;\">Radical Vitality</span> ทุกชั้นที่มี โดยที่แต่ละชั้น จะทำให้ความเสียหายนี้ +1",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "Radical Vitality",
+          "desc": "หลังจากที่ตัวละครนี้สร้างหรือได้รับความเสียหายธาตุ: สะสม \"Radical Vitality\" 1 ชั้น (สูงสุด 3 ชั้น)\\n<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> หากจำนวนชั้นของ \"Radical Vitality\" ถึงขีดสูงสุด จะลบล้างทั้งหมด และตัวละครจะสูญเสียพลังงานทั้งหมดไป"
+        }
+      },
+      {
+        "_id": 27014,
+        "type": "สกิลติดตัว",
+        "name": "Radical Vitality",
+        "desc": "[ติดตัว] เมื่อเริ่มการต่อสู้ ในตอนแรกเริ่มจะได้รับสถานะ <span style=\"color: #FFFFFFFF;\">Radical Vitality</span>",
+        "cost": [],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "Radical Vitality",
+          "desc": "หลังจากที่ตัวละครนี้สร้างหรือได้รับความเสียหายธาตุ: สะสม \"Radical Vitality\" 1 ชั้น (สูงสุด 3 ชั้น)\\n<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> หากจำนวนชั้นของ \"Radical Vitality\" ถึงขีดสูงสุด จะลบล้างทั้งหมด และตัวละครจะสูญเสียพลังงานทั้งหมดไป"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 211011,
+    "id": "undivided_heart",
+    "type": "talent",
+    "name": "Undivided Heart",
+    "requirement": "ganyu",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 5
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Ganyu</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Ganyu ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Undivided Heart</span> หนึ่งครั้งโดยทันที\\nเมื่อ Ganyu ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Undivided Heart</span>: หากสกิลนี้เคยถูกใช้ในการดูเอลครั้งนี้ไปก่อนแล้ว <span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span>ที่เธอสร้างจะ +1 และเปลี่ยนเป็นสร้าง<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายทะลวง</span> 3 หน่วย แก่ตัวละครนอกสนามของฝ่ายศัตรู\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Ganyu อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 211021,
+    "id": "shaken,_not_purred",
+    "type": "talent",
+    "name": "Shaken, Not Purred",
+    "requirement": "diona",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Diona</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Diona ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Shaken, Not Purred</span> หนึ่งครั้งโดยทันที\\n<span style=\"color: #FFFFFFFF;\">Cat-Claw Shield</span> ที่ Diona ที่มีการ์ดใบนี้สร้างขึ้น จะมอบ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span>ให้ +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Diona อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 211031,
+    "id": "cold-blooded_strike",
+    "type": "talent",
+    "name": "Cold-Blooded Strike",
+    "requirement": "kaeya",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Kaeya</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Kaeya ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Cold-Blooded Strike</span> หนึ่งครั้งโดยทันที\\nหลังจาก Kaeya ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Cold-Blooded Strike</span>: รักษาตัวเอง 2 หน่วย (เทิร์นละ 1 ครั้ง)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Kaeya อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 211041,
+    "id": "steady_breathing",
+    "type": "talent",
+    "name": "Steady Breathing",
+    "requirement": "chongyun",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Chongyun</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Chongyun ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Steady Breathing</span> หนึ่งครั้งโดยทันที\\n<span style=\"color: #FFFFFFFF;\">Chonghua Frost Field</span> ที่เกิดจาก Chongyun ที่ติดตั้งการ์ดใบนี้ จะได้รับเอฟเฟกต์ดังต่อไปนี้:\\nในตอนเริ่มจะมี<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span> +1 และจะทำให้<span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ของตัวละครที่ใช้อาวุธ ดาบ ดาบใหญ่ หรือหอกของฝ่ายเรา สร้างความเสียหาย +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Chongyun อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 211051,
+    "id": "kanten_senmyou_blessing",
+    "type": "talent",
+    "name": "Kanten Senmyou Blessing",
+    "requirement": "kamisato_ayaka",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 2
+        }
+      ],
+      "desc": "เมื่อ <span style=\"color: #FFFFFFFF;\">Kamisato Ayaka</span> ที่ติดตั้งการ์ดใบนี้ก่อให้เกิด <span style=\"color: #FFFFFFFF;\">Cryo Elemental Infusion</span> จะทำให้<span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span></span>ที่สร้าง +1\\nเมื่อเปลี่ยนเป็น Kamisato Ayaka ที่มีการ์ดใบนี้: จะใช้ Elemental Dice น้อยลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Kamisato Ayaka อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 212011,
+    "id": "glorious_season",
+    "type": "talent",
+    "name": "Glorious Season",
+    "requirement": "barbara",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Barbara</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Barbara ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Glorious Season</span> หนึ่งครั้งโดยทันที\\nเมื่อ Barbara ที่มีการ์ดใบนี้อยู่ในสนาม <span style=\"color: #FFFFFFFF;\">Melody Loop</span> จะทำให้การ \"เปลี่ยนตัวละคร\" ของฝ่ายเราใช้ Elemental Dice ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Barbara อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 212021,
+    "id": "the_scent_remained",
+    "type": "talent",
+    "name": "The Scent Remained",
+    "requirement": "xingqiu",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Xingqiu</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Xingqiu ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">The Scent Remained</span> หนึ่งครั้งโดยทันที\\n<span style=\"color: #FFFFFFFF;\">Rain Sword</span> ของ Xingqiu ที่มีการ์ดใบนี้สร้างขึ้น ในตอนเริ่มจะมี<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span> +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Xingqiu อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 212031,
+    "id": "prophecy_of_submersion",
+    "type": "talent",
+    "name": "Prophecy of Submersion",
+    "requirement": "mona",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Mona</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Mona ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Prophecy of Submersion</span> หนึ่งครั้งโดยทันที\\nระหว่างช่วงเวลาที่ Mona ที่มีการ์ดใบนี้เข้าสู่การต่อสู้ ความเสียหายเพิ่มเติมของ<span style=\"color: #80C0FFFF;\">ปฏิกิริยาที่เกี่ยวกับธาตุน้ำ</span> ที่ฝ่ายเราทำให้เกิดจะ +2\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Mona อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 213011,
+    "id": "flowing_flame",
+    "type": "talent",
+    "name": "Flowing Flame",
+    "requirement": "diluc",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Diluc</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Diluc ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Flowing Flame</span> หนึ่งครั้งโดยทันที\\nในแต่ละเทิร์นที่ Diluc ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Flowing Flame</span> เป็นครั้งที่ 2 จะใช้<span style=\"color: #FF9999FF;\">ธาตุไฟ</span>น้อยลง 1 ลูก\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Diluc อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 213021,
+    "id": "crossfire",
+    "type": "talent",
+    "name": "Crossfire",
+    "requirement": "xiangling",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Xiangling</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Xiangling ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Crossfire</span> หนึ่งครั้งโดยทันที\\nเมื่อ Xiangling ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Crossfire</span> ตัวของเธอเองก็จะสร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span>ด้วย 1 หน่วย\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Xiangling อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 213031,
+    "id": "grand_expectation",
+    "type": "talent",
+    "name": "Grand Expectation",
+    "requirement": "bennett",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Bennett</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Bennett ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Grand Expectation</span> หนึ่งครั้งโดยทันที\\nเอฟเฟกต์การเพิ่มความเสียหายของ <span style=\"color: #FFFFFFFF;\">Inspiration Field</span> ที่ Bennett ที่มีการ์ดใบนี้สร้าง จะเปลี่ยนเป็นเกิดผลตลอดเวลา โดยไม่มีข้อจำกัดของค่าพลังชีวิตอีกต่อไป\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Bennett อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 213051,
+    "id": "naganohara_meteor_swarm",
+    "type": "talent",
+    "name": "Naganohara Meteor Swarm",
+    "requirement": "yoimiya",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Yoimiya</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Yoimiya ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Naganohara Meteor Swarm</span> หนึ่งครั้งโดยทันที\\nหลังจาก Yoimiya ที่มีการ์ดใบนี้ทำให้เกิด <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> เธอจะสร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> อีก 1 หน่วย\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Yoimiya อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 214011,
+    "id": "stellar_predator",
+    "type": "talent",
+    "name": "Stellar Predator",
+    "requirement": "fischl",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Fischl</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Fischl ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Stellar Predator</span> หนึ่งครั้งโดยทันที\\nเมื่อ Fischl ที่ติดตั้งการ์ดใบนี้ สร้าง <span style=\"color: #FFFFFFFF;\">Oz</span> ขึ้น และใช้การ<span style=\"color: #FFFFFFFF;\">โจมตีปกติ</span> จะทำให้เกิด <span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 2 หน่วย (ต้องใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Fischl อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 214021,
+    "id": "awakening",
+    "type": "talent",
+    "name": "Awakening",
+    "requirement": "razor",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Razor</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Razor ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Awakening</span> หนึ่งครั้งโดยทันที\\nหลังจาก Razor ที่มีการ์ดใบนี้<span style=\"color: #FFFFFFFF;\">ใช้ Awakening</span>: จะทำให้ตัวละครธาตุไฟฟ้าหนึ่งตัวของฝ่ายเรา ได้รับพลังงาน 1 หน่วย (ให้ความสำคัญกับตัวละครที่เข้าต่อสู้ก่อน)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Razor อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 214031,
+    "id": "thundering_penance",
+    "type": "talent",
+    "name": "Thundering Penance",
+    "requirement": "keqing",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Keqing</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Keqing ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Thundering Penance</span> หนึ่งครั้งโดยทันที\\n<span style=\"color: #FFFFFFFF;\">Electro Elemental Infusion</span> ของ Keqing ที่มีการ์ดใบนี้สร้างขึ้น จะได้รับเอฟเฟกต์ดังต่อไปนี้:\\nในตอนเริ่มจะมี<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span> +1 และจะทำให้ตัวละครที่ได้รับสร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Keqing อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 214041,
+    "id": "featherfall_judgment",
+    "type": "talent",
+    "name": "Featherfall Judgment",
+    "requirement": "cyno",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Cyno</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Cyno ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Featherfall Judgment</span> หนึ่งครั้งโดยทันที\\nในตอนที่การ \"ประทับร่าง\" ของ <span style=\"color: #FFFFFFFF;\">Pactsworn Pathclearer</span> ถึงระดับ 3 หรือ 5 เมื่อ Cyno ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Featherfall Judgment</span> ความเสียหายที่สร้างจะเพิ่มเติม +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Cyno อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 215011,
+    "id": "chaotic_entropy",
+    "type": "talent",
+    "name": "Chaotic Entropy",
+    "requirement": "sucrose",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Sucrose</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Sucrose ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Chaotic Entropy</span> หนึ่งครั้งโดยทันที\\nหลังจาก <span style=\"color: #FFFFFFFF;\">Large Wind Spirit</span> ของ Sucrose ที่มีการ์ดใบนี้สร้าง ได้เปลี่ยนเป็นธาตุชนิดอื่นแล้ว: ความเสียหายธาตุชนิดนี้ ที่ฝ่ายเราสร้างจะ +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Sucrose อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 215021,
+    "id": "lands_of_dandelion",
+    "type": "talent",
+    "name": "Lands of Dandelion",
+    "requirement": "jean",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Jean</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Jean ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Lands of Dandelion</span> หนึ่งครั้งโดยทันที\\nเมื่อ Jean ที่มีการ์ดใบนี้อยู่ในสนาม <span style=\"color: #FFFFFFFF;\">Dandelion Field</span> จะทำให้<span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">ความเสียหายลม</span></span>ที่ฝ่ายเราสร้าง +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Jean อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 216011,
+    "id": "strategic_reserve",
+    "type": "talent",
+    "name": "Strategic Reserve",
+    "requirement": "ningguang",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Ningguang</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Ningguang ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Strategic Reserve</span> หนึ่งครั้งโดยทันที\\nเมื่อ Ningguang ที่มีการ์ดใบนี้อยู่ในสนาม <span style=\"color: #FFFFFFFF;\">Jade Screen</span> จะทำให้<span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">ความเสียหายหิน</span></span>ที่ฝ่ายเราสร้าง +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Ningguang อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 216021,
+    "id": "i_got_your_back",
+    "type": "talent",
+    "name": "I Got Your Back",
+    "requirement": "noelle",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Noelle</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Noelle ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">I Got Your Back</span> หนึ่งครั้งโดยทันที\\n<span style=\"color: #FFFFFFFF;\">Full Plate</span> ของ Noelle ที่มีการ์ดใบนี้สร้าง จะทำการรักษาตัวละครฝ่ายเราทั้งหมด 1 หน่วย หลังจากที่ Noelle ใช้<span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span> (เทิร์นละ 1 ครั้ง)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Noelle อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 217011,
+    "id": "floral_sidewinder",
+    "type": "talent",
+    "name": "Floral Sidewinder",
+    "requirement": "collei",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Collei</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Collei ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Floral Sidewinder</span> หนึ่งครั้งโดยทันที\\nในเทิร์นที่ Collei ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Floral Sidewinder</span> หลังจากสกิลของตัวละครฝ่ายเราทำให้เกิด<span style=\"color: #7EC236FF;\">ปฏิกิริยาที่เกี่ยวกับธาตุไม้</span>: สร้าง<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> 1 หน่วย (เทิร์นละ 1 ครั้ง)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Collei อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 222011,
+    "id": "streaming_surge",
+    "type": "talent",
+    "name": "Streaming Surge",
+    "requirement": "rhodeia_of_loch",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Oceanid - Rhodeia</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Oceanid - Rhodeia ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Streaming Surge</span> หนึ่งครั้งโดยทันที\\nเมื่อ Oceanid - Rhodeia ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Streaming Surge</span> จะทำให้สิ่งอัญเชิญทั้งหมดของฝ่ายเรา ได้รับ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span> +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Oceanid - Rhodeia อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 222021,
+    "id": "mirror_cage",
+    "type": "talent",
+    "name": "Mirror Cage",
+    "requirement": "mirror_maiden",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Fatui - Mirror Maiden</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Fatui - Mirror Maiden ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Mirror Cage</span> หนึ่งครั้งโดยทันที\\n<span style=\"color: #FFFFFFFF;\">Refraction</span> ของ Fatui - Mirror Maiden ที่มีการ์ดใบนี้สร้าง จะได้รับเอฟเฟกต์ดังต่อไปนี้:\\nในตอนเริ่มจะมี<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span> +1 และเมื่อเปลี่ยนตัวละครที่มีการ์ดใบนี้เป็นตัวละครอื่น Elemental Dice ที่ต้องใช้จะ +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Fatui - Mirror Maiden อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 223011,
+    "id": "paid_in_full",
+    "type": "talent",
+    "name": "Paid in Full",
+    "requirement": "fatui_pyro_agent",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Fatui - Pyro Agent</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Fatui - Pyro Agent ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Paid in Full</span> หนึ่งครั้งโดยทันที\\n<span style=\"color: #FFFFFFFF;\">Stealth</span> ที่ Fatui - Pyro Agent ที่มีการ์ดใบนี้สร้าง จะได้รับเอฟเฟกต์ดังต่อไปนี้:\\nในตอนเริ่ม<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>จะ +1 และจะทำให้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ของตัวละครที่ได้รับ เปลี่ยนเป็น<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span>\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Fatui - Pyro Agent อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 225011,
+    "id": "transcendent_automaton",
+    "type": "talent",
+    "name": "Transcendent Automaton",
+    "requirement": "maguu_kenki",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Maguu Kenki</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Maguu Kenki ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Transcendent Automaton</span> หนึ่งครั้งโดยทันที\\nMaguu Kenki ที่มีการ์ดใบนี้ หลังจากใช้ <span style=\"color: #FFFFFFFF;\">Transcendent Automaton</span> ตัวละครของฝ่ายเราจะเปลี่ยนเป็นตัวถัดไป; หลังจากใช้ <span style=\"color: #FFFFFFFF;\">Transcendent Automaton</span> ตัวละครของฝ่ายเราจะเปลี่ยนเป็นตัวก่อนหน้า\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Maguu Kenki อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 226011,
+    "id": "stonehide_reforged",
+    "type": "talent",
+    "name": "Stonehide Reforged",
+    "requirement": "stonehide_lawachurl",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Stonehide Lawachurl</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Stonehide Lawachurl ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Stonehide Reforged</span> หนึ่งครั้งโดยทันที\\nหลังจาก Stonehide Lawachurl ที่มีการ์ดใบนี้เอาชนะตัวละครฝ่ายศัตรูได้; Stonehide Lawachurl จะกลับมามี <span style=\"color: #FFFFFFFF;\">Stonehide</span> และ <span style=\"color: #FFFFFFFF;\">Stone Force</span> อีกครั้ง\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Stonehide Lawachurl อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 227011,
+    "id": "proliferating_spores",
+    "type": "talent",
+    "name": "Proliferating Spores",
+    "requirement": "jadeplume_terrorshroom",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Jadeplume Terrorshroom</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Jadeplume Terrorshroom ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Proliferating Spores</span> หนึ่งครั้งโดยทันที\\nจำนวนชั้น \"Radical Vitality\" ซึ่งสามารถสะสมได้ของ Jadeplume Terrorshroom ที่มีการ์ดใบนี้จะ +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Jadeplume Terrorshroom อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 311101,
+    "id": "magic_guide",
+    "type": "weapon",
+    "name": "Magic Guide",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"สื่อเวท\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311102,
+    "id": "sacrificial_fragments",
+    "type": "weapon",
+    "name": "Sacrificial Fragments",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครใช้ \"สกิลธาตุ\":</span> ทำให้เกิด Elemental Dice ที่มีธาตุชนิดเดียวกับตัวละครนี้ 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"สื่อเวท\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311103,
+    "id": "skyward_atlas",
+    "type": "weapon",
+    "name": "Skyward Atlas",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>;\\n<span style=\"color: #FFFFFFFF;\">เทิร์นละ 1 ครั้ง:</span> \"การโจมตีปกติ\" ของตัวละครสร้างความเสียหายเพิ่มเติม +1\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"สื่อเวท\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311201,
+    "id": "raven_bow",
+    "type": "weapon",
+    "name": "Raven Bow",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ธนู\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311202,
+    "id": "sacrificial_bow",
+    "type": "weapon",
+    "name": "Sacrificial Bow",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครใช้ \"สกิลธาตุ\":</span> ทำให้เกิด Elemental Dice ที่มีธาตุชนิดเดียวกับตัวละครนี้ 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ธนู\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311203,
+    "id": "skyward_harp",
+    "type": "weapon",
+    "name": "Skyward Harp",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>;\\n<span style=\"color: #FFFFFFFF;\">เทิร์นละ 1 ครั้ง:</span> \"การโจมตีปกติ\" ของตัวละครสร้างความเสียหายเพิ่มเติม +1\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ธนู\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311301,
+    "id": "white_iron_greatsword",
+    "type": "weapon",
+    "name": "White Iron Greatsword",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ดาบใหญ่\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311302,
+    "id": "sacrificial_greatsword",
+    "type": "weapon",
+    "name": "Sacrificial Greatsword",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครใช้ \"สกิลธาตุ\":</span> ทำให้เกิด Elemental Dice ที่มีธาตุชนิดเดียวกับตัวละครนี้ 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ดาบใหญ่\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311303,
+    "id": "wolfs_gravestone",
+    "type": "weapon",
+    "name": "Wolf's Gravestone",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\nเมื่อโจมตีเป้าหมายที่เหลือพลังชีวิตไม่เกิน 6 จะสร้างความเสียหาย +2\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ดาบใหญ่\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311401,
+    "id": "white_tassel",
+    "type": "weapon",
+    "name": "White Tassel",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"หอก\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311402,
+    "id": "lithic_spear",
+    "type": "weapon",
+    "name": "Lithic Spear",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\nเมื่อเข้าสนาม: ตัวละครจาก \"Liyue\" แต่ละตัวในทีม จะทำให้การ์ดใบนี้มอบ<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span> 1 หน่วย</span> ให้แก่ตัวละครที่สวมใส่การ์ดใบนี้ (มากสุด 3 หน่วย)\\n(<span style=\"color: #FFFFFFFF;\">สวมใส่ได้กับตัวละครประเภท \"หอก\" เท่านั้น</span> ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311403,
+    "id": "skyward_spine",
+    "type": "weapon",
+    "name": "Skyward Spine",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>;\\n<span style=\"color: #FFFFFFFF;\">เทิร์นละ 1 ครั้ง:</span> \"การโจมตีปกติ\" ของตัวละครสร้างความเสียหายเพิ่มเติม +1\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"หอก\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311501,
+    "id": "travelers_handy_sword",
+    "type": "weapon",
+    "name": "Traveler's Handy Sword",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ดาบ\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311502,
+    "id": "sacrificial_sword",
+    "type": "weapon",
+    "name": "Sacrificial Sword",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครใช้ \"สกิลธาตุ\":</span> ทำให้เกิด Elemental Dice ที่มีธาตุชนิดเดียวกับตัวละครนี้ 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ดาบ\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 311503,
+    "id": "aquila_favonia",
+    "type": "weapon",
+    "name": "Aquila Favonia",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n<span style=\"color: #FFFFFFFF;\">หลังจากที่ฝ่ายตรงข้ามใช้สกิล:</span> หากตัวละครที่มีการ์ดใบนี้เป็น \"ตัวละครที่เข้าต่อสู้\" จะรักษาตัวละครนี้ 1 หน่วย (มากสุด 2 ครั้ง ต่อเทิร์น)\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ดาบ\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312001,
+    "id": "adventurers_bandana",
+    "type": "artifact",
+    "name": "Adventurer's Bandana",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครใช้ \"การโจมตีปกติ\":</span> รักษาตัวเอง 1 หน่วย (มากสุด 3 ครั้ง ต่อเทิร์น)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312002,
+    "id": "lucky_dogs_silver_circlet",
+    "type": "artifact",
+    "name": "Lucky Dog's Silver Circlet",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครใช้ \"สกิลธาตุ\":</span> รักษาตัวเอง 2 หน่วย (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312003,
+    "id": "traveling_doctors_handkerchief",
+    "type": "artifact",
+    "name": "Traveling Doctor's Handkerchief",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครใช้ \"ท่าไม้ตาย\":</span> รักษาตัวละครฝ่ายเราทั้งหมด 1 หน่วย (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312004,
+    "id": "gamblers_earrings",
+    "type": "artifact",
+    "name": "Gambler's Earrings",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครฝ่ายศัตรูถูกเอาชนะ:</span> หากตัวละครที่มีการ์ดใบนี้เป็น \"ตัวละครที่เข้าต่อสู้\" จะทำให้เกิด <span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 2 ลูก\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312005,
+    "id": "instructors_cap",
+    "type": "artifact",
+    "name": "Instructor's Cap",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครทำให้เกิดปฏิกิริยาธาตุ:</span> ทำให้เกิด Elemental Dice ที่มีธาตุชนิดเดียวกับตัวละครนี้ 1 ลูก (มากสุด 3 ครั้ง ต่อเทิร์น)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312006,
+    "id": "exiles_circlet",
+    "type": "artifact",
+    "name": "Exile's Circlet",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครใช้ \"ท่าไม้ตาย\":</span> ตัวละครนอกสนามทั้งหมดของฝ่ายเรา จะได้รับ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312101,
+    "id": "broken_rimes_echo",
+    "type": "artifact",
+    "name": "Broken Rime's Echo",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #99FFFFFF;\">ธาตุน้ำแข็ง</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312102,
+    "id": "blizzard_strayer",
+    "type": "artifact",
+    "name": "Blizzard Strayer",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #99FFFFFF;\">ธาตุน้ำแข็ง</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n<span style=\"color: #FFFFFFFF;\">เฟสทอยลูกเต๋า:</span> Elemental Dice 2 ลูก ในตอนเริ่มทอยจะออกเป็น<span style=\"color: #99FFFFFF;\">ธาตุน้ำแข็ง</span>เสมอ\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312201,
+    "id": "wine-stained_tricorne",
+    "type": "artifact",
+    "name": "Wine-Stained Tricorne",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #80C0FFFF;\">ธาตุน้ำ</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312202,
+    "id": "heart_of_depth",
+    "type": "artifact",
+    "name": "Heart of Depth",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #80C0FFFF;\">ธาตุน้ำ</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n<span style=\"color: #FFFFFFFF;\">เฟสทอยลูกเต๋า:</span> Elemental Dice 2 ลูก ในตอนเริ่มทอยจะออกเป็น<span style=\"color: #80C0FFFF;\">ธาตุน้ำ</span>เสมอ\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312301,
+    "id": "witchs_scorching_hat",
+    "type": "artifact",
+    "name": "Witch's Scorching Hat",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #FF9999FF;\">ธาตุไฟ</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312302,
+    "id": "crimson_witch_of_flames",
+    "type": "artifact",
+    "name": "Crimson Witch of Flames",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #FF9999FF;\">ธาตุไฟ</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n<span style=\"color: #FFFFFFFF;\">เฟสทอยลูกเต๋า:</span> Elemental Dice 2 ลูก ในตอนเริ่มทอยจะออกเป็น<span style=\"color: #FF9999FF;\">ธาตุไฟ</span>เสมอ\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312401,
+    "id": "thunder_summoners_crown",
+    "type": "artifact",
+    "name": "Thunder Summoner's Crown",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #FFACFFFF;\">ธาตุไฟฟ้า</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312402,
+    "id": "thundering_fury",
+    "type": "artifact",
+    "name": "Thundering Fury",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #FFACFFFF;\">ธาตุไฟฟ้า</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n<span style=\"color: #FFFFFFFF;\">เฟสทอยลูกเต๋า:</span> Elemental Dice 2 ลูก ในตอนเริ่มทอยจะออกเป็น<span style=\"color: #FFACFFFF;\">ธาตุไฟฟ้า</span>เสมอ\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312501,
+    "id": "viridescent_venerers_diadem",
+    "type": "artifact",
+    "name": "Viridescent Venerer's Diadem",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #80FFD7FF;\">ธาตุลม</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312502,
+    "id": "viridescent_venerer",
+    "type": "artifact",
+    "name": "Viridescent Venerer",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #80FFD7FF;\">ธาตุลม</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n<span style=\"color: #FFFFFFFF;\">เฟสทอยลูกเต๋า:</span> Elemental Dice 2 ลูก ในตอนเริ่มทอยจะออกเป็น<span style=\"color: #80FFD7FF;\">ธาตุลม</span>เสมอ\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312601,
+    "id": "mask_of_solitude_basalt",
+    "type": "artifact",
+    "name": "Mask of Solitude Basalt",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #FFE699FF;\">ธาตุหิน</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312602,
+    "id": "archaic_petra",
+    "type": "artifact",
+    "name": "Archaic Petra",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #FFE699FF;\">ธาตุหิน</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n<span style=\"color: #FFFFFFFF;\">เฟสทอยลูกเต๋า:</span> Elemental Dice 2 ลูก ในตอนเริ่มทอยจะออกเป็น<span style=\"color: #FFE699FF;\">ธาตุหิน</span>เสมอ\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312701,
+    "id": "laurel_coronet",
+    "type": "artifact",
+    "name": "Laurel Coronet",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #99FF88FF;\">ธาตุไม้</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312702,
+    "id": "deepwood_memories",
+    "type": "artifact",
+    "name": "Deepwood Memories",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครใช้สกิล หรือสวมใส่ \"พรสวรรค์\":</span> ใช้<span style=\"color: #99FF88FF;\">ธาตุไม้</span>ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)\\n<span style=\"color: #FFFFFFFF;\">เฟสทอยลูกเต๋า:</span> Elemental Dice 2 ลูก ในตอนเริ่มทอยจะออกเป็น<span style=\"color: #99FF88FF;\">ธาตุไม้</span>เสมอ\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 321001,
+    "id": "liyue_harbor_wharf",
+    "type": "place",
+    "name": "Liyue Harbor Wharf",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> จั่วการ์ด 2 ใบ\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2"
+    }
+  },
+  {
+    "_id": 321002,
+    "id": "knights_of_favonius_library",
+    "type": "place",
+    "name": "Knights of Favonius Library",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อเข้าสนาม:</span> เลือก Elemental Dice ใดก็ได้เพื่อทอยใหม่\\n<span style=\"color: #FFFFFFFF;\">เฟสทอยลูกเต๋า:</span> ได้รับโอกาสทอยใหม่เพิ่มหนึ่งครั้ง"
+    }
+  },
+  {
+    "_id": 321003,
+    "id": "jade_chamber",
+    "type": "place",
+    "name": "Jade Chamber",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เฟสทอยลูกเต๋า:</span> Elemental Dice 2 ลูก ในตอนเริ่มทอย จะออกเป็นชนิดธาตุเดียวกันกับตัวละครที่เข้าต่อสู้ของฝ่ายเราเสมอ"
+    }
+  },
+  {
+    "_id": 321004,
+    "id": "dawn_winery",
+    "type": "place",
+    "name": "Dawn Winery",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อฝ่ายเราทำการเปลี่ยนตัวละคร:</span> ใช้ Elemental Dice ลดลง 1 ลูก (เทิร์นละ 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 321005,
+    "id": "wangshu_inn",
+    "type": "place",
+    "name": "Wangshu Inn",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> รักษาตัวละครนอกสนามของฝ่ายเรา ที่ได้รับความเสียหายมากที่สุด 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 321006,
+    "id": "favonius_cathedral",
+    "type": "place",
+    "name": "Favonius Cathedral",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> ทำการรักษาตัวละครที่เข้าต่อสู้ของฝ่ายเรา 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 322001,
+    "id": "paimon",
+    "type": "ally",
+    "name": "Paimon",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อแอ็กชันเฟสเริ่มต้น:</span> จะก่อให้เกิด<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 2 ลูก\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 322002,
+    "id": "katheryne",
+    "type": "ally",
+    "name": "Katheryne",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อฝ่ายเราทำการเปลี่ยนตัวละคร:</span> จะมองการเปลี่ยนนี้เป็น \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการด่วน</span>\" แทนที่ \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>\" (เทิร์นละ 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 322003,
+    "id": "timaeus",
+    "type": "ally",
+    "name": "Timaeus",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "เมื่อเข้าสนาม จะนำ \"วัตถุดิบ\" 2 ชิ้น ติดมาด้วย\\n<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> ได้รับ \"วัตถุดิบ\" 1 ชิ้น\\n<span style=\"color: #FFFFFFFF;\">เมื่อใช้การ์ด \"อาร์ติแฟกต์\":</span> หากเป็นไปได้ จะจ่าย \"วัตถุดิบ\" เท่ากับค่าร่ายทั้งหมดของ \"อาร์ติแฟกต์\" เพื่อติดตั้ง \"อาร์ติแฟกต์\" นี้โดยไม่เสียค่าร่าย (เทิร์นละ 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 322004,
+    "id": "wagner",
+    "type": "ally",
+    "name": "Wagner",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "เมื่อเข้าสนาม จะนำ \"Forging Billet\" 2 ชิ้น ติดมาด้วย\\n<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> ได้รับ \"Forging Billet\" 1 ชิ้น\\n<span style=\"color: #FFFFFFFF;\">เมื่อใช้การ์ด \"อาวุธ\":</span> หากเป็นไปได้ จะจ่าย \"Forging Billet\" เท่ากับค่าร่ายทั้งหมดของ \"อาวุธ\" เพื่อติดตั้ง \"อาวุธ\" นี้โดยไม่เสียค่าร่าย (เทิร์นละ 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 322005,
+    "id": "chef_mao",
+    "type": "ally",
+    "name": "เชฟ Mao",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากใช้การ์ดเหตุการณ์ \"อาหาร\":</span> สุ่มทำให้เกิด Elemental Dice พื้นฐาน 1 ลูก (เทิร์นละ 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 322006,
+    "id": "tubby",
+    "type": "ally",
+    "name": "Tubby",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อใช้การ์ดสนับสนุน \"สถานที่\":</span> ใช้ Elemental Dice น้อยลง 2 ลูก (เทิร์นละ 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 322007,
+    "id": "timmie",
+    "type": "ally",
+    "name": "Timmie",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ในแต่ละเทิร์นจะเกิดขึ้น 1 ครั้ง โดยอัตโนมัติ:</span> การ์ดใบนี้จะสะสม <span style=\"color: #FFFFFFFF;\">\"Pigeon\" 1 ตัว</span>\\nหากการ์ดใบนี้สะสม <span style=\"color: #FFFFFFFF;\">\"Pigeon\" ได้ครบ 3 ตัว</span> จะทิ้งการ์ดใบนี้: จั่วการ์ด 1 ใบ และทำให้เกิด<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 1 ลูก"
+    }
+  },
+  {
+    "_id": 322008,
+    "id": "liben",
+    "type": "ally",
+    "name": "Liben",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> รวบรวม Elemental Dice ที่ยังไม่ได้ใช้ของฝ่ายเรา (แค่ละชนิดมากสุด 1 ลูก)\\n<span style=\"color: #FFFFFFFF;\">เมื่อเริ่มแอ็กชันเฟส:</span> หากการ์ดใบนี้รวบรวม Elemental Dice ได้ครบ 3 ลูก จะจั่วการ์ด 2 ใบ และทำให้เกิด<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 2 ลูก จากนั้นจะทิ้งการ์ดใบนี้"
+    }
+  },
+  {
+    "_id": 322009,
+    "id": "chang_the_ninth",
+    "type": "ally",
+    "name": "Chang ที่เก้า",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครฝ่ายใดฝ่ายหนึ่งใช้สกิล:</span> หากสร้าง<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายทะลวง</span> หรือทำให้เกิด<span style=\"color: #FFFFFFFF;\">ปฏิกิริยาธาตุ</span> การ์ดใบนี้จะสะสม <span style=\"color: #FFFFFFFF;\">\"แรงบันดาลใจ\" 1 หน่วย</span>\\nหากการ์ดใบนี้สะสม <span style=\"color: #FFFFFFFF;\">\"แรงบันดาลใจ\" ได้ครบ 3 หน่วย</span> จะทิ้งการ์ดใบนี้ และจั่วการ์ด 2 ใบ"
+    }
+  },
+  {
+    "_id": 322010,
+    "id": "ellin",
+    "type": "ally",
+    "name": "Ellin",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครฝ่ายเราใช้สกิลที่เคยถูกใช้ไปแล้วในเทิร์นนี้:</span> ใช้ Elemental Dice น้อยลง 1 ลูก (เทิร์นละ 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 322011,
+    "id": "iron_tongue_tian",
+    "type": "ally",
+    "name": "Tian จอมคารมคมคาย",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> ตัวละครหนึ่งตัวของฝ่ายเราที่พลังงานยังไม่เต็ม จะได้รับ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย (ให้ความสำคัญกับตัวละครที่เข้าต่อสู้ก่อน)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 322012,
+    "id": "liu_su",
+    "type": "ally",
+    "name": "Liu Su",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อฝ่ายเราเปลี่ยนตัวละคร:</span> หากตัวละครที่เปลี่ยนไม่มี<span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> ตัวละครดังกล่าวจะได้รับ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย (เทิร์นละ 1 ครั้ง)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 323001,
+    "id": "parametric_transformer",
+    "type": "item",
+    "name": "Parametric Transformer",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครฝ่ายใดฝ่ายหนึ่งใช้สกิล:</span> หากทำให้เกิดความเสียหายธาตุ การ์ดใบนี้จะสะสม <span style=\"color: #FFFFFFFF;\">\"ความก้าวหน้าเชิงคุณภาพ\" 1 หน่วย</span>\\nเมื่อการ์ดใบนี้สะสม <span style=\"color: #FFFFFFFF;\">\"ความก้าวหน้าเชิงคุณภาพ\" ได้ครบ 3 หน่วย</span> จะทิ้งการ์ดใบนี้ และทำให้เกิด Elemental Dice พื้นฐานที่แตกต่างกัน 3 ลูก"
+    }
+  },
+  {
+    "_id": 323002,
+    "id": "nre",
+    "type": "item",
+    "name": "NRE",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อเข้าสนาม:</span> จะสุ่มจับการ์ดเหตุการณ์ \"อาหาร\" ขึ้นมาจากเด็ค 1 ใบ\\n<span style=\"color: #FFFFFFFF;\">เมื่อฝ่ายเราใช้การ์ดเหตุการณ์ \"อาหาร\": </span>จะสุ่มจับการ์ดเหตุการณ์ \"อาหาร\" ขึ้นมาจากเด็ค 1 ใบ (เทิร์นละ 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 331101,
+    "id": "elemental_resonance_woven_ice",
+    "type": "resonance",
+    "name": "Elemental Resonance: Woven Ice",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [],
+      "desc": "ทำให้เกิด<span style=\"color: #99FFFFFF;\">ลูกเต๋าธาตุน้ำแข็ง</span> 1 ลูก\\n(ต้องมีตัวละคร<span style=\"color: #99FFFFFF;\">ธาตุน้ำแข็ง</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331102,
+    "id": "elemental_resonance_shattering_ice",
+    "type": "resonance",
+    "name": "Elemental Resonance: Shattering Ice",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 1
+        }
+      ],
+      "desc": "ในเทิร์นนี้ ตัวละครที่เข้าต่อสู้ของฝ่ายเราในขณะนี้ จะสร้างความเสียหาย +2 ในครั้งถัดไป\\n(ต้องมีตัวละคร<span style=\"color: #99FFFFFF;\">ธาตุน้ำแข็ง</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331201,
+    "id": "elemental_resonance_woven_waters",
+    "type": "resonance",
+    "name": "Elemental Resonance: Woven Waters",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [],
+      "desc": "ทำให้เกิด<span style=\"color: #80C0FFFF;\">ลูกเต๋าธาตุน้ำ</span> 1 ลูก\\n(ต้องมีตัวละคร<span style=\"color: #80C0FFFF;\">ธาตุน้ำ</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331202,
+    "id": "elemental_resonance_soothing_water",
+    "type": "resonance",
+    "name": "Elemental Resonance: Soothing Water",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 1
+        }
+      ],
+      "desc": "รักษาตัวละครที่เข้าต่อสู้ของฝ่ายเรา 2 หน่วย และรักษาตัวละครนอกสนามทั้งหมดของฝ่ายเรา 1 หน่วย\\n(ต้องมีตัวละคร<span style=\"color: #80C0FFFF;\">ธาตุน้ำ</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331301,
+    "id": "elemental_resonance_woven_flames",
+    "type": "resonance",
+    "name": "Elemental Resonance: Woven Flames",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [],
+      "desc": "ทำให้เกิด<span style=\"color: #FF9999FF;\">ลูกเต๋าธาตุไฟ</span> 1 ลูก\\n(ต้องมีตัวละคร<span style=\"color: #FF9999FF;\">ธาตุไฟ</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331302,
+    "id": "elemental_resonance_fervent_flames",
+    "type": "resonance",
+    "name": "Elemental Resonance: Fervent Flames",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 1
+        }
+      ],
+      "desc": "ภายในเทิร์นนี้ ครั้งถัดไปที่ตัวละครที่เข้าต่อสู้ของฝ่ายเราในปัจจุบัน ทำให้เกิด<span style=\"color: #FF9999FF;\">ปฏิกิริยาที่เกี่ยวกับธาตุไฟ</span> ความเสียหายที่สร้างจะ +3\\n(ต้องมีตัวละคร<span style=\"color: #FF9999FF;\">ธาตุไฟ</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331401,
+    "id": "elemental_resonance_woven_thunder",
+    "type": "resonance",
+    "name": "Elemental Resonance: Woven Thunder",
+    "requirement": "electro",
+    "skills": {
+      "cost": [],
+      "desc": "ทำให้เกิด<span style=\"color: #FFACFFFF;\">ลูกเต๋าธาตุไฟฟ้า</span> 1 ลูก\\n(ต้องมีตัวละคร<span style=\"color: #FFACFFFF;\">ธาตุไฟฟ้า</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331402,
+    "id": "elemental_resonance_high_voltage",
+    "type": "resonance",
+    "name": "Elemental Resonance: High Voltage",
+    "requirement": "electro",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 1
+        }
+      ],
+      "desc": "ตัวละครหนึ่งตัวของฝ่ายเราที่พลังงานยังไม่เต็ม จะได้รับ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย (ให้ความสำคัญกับตัวละครที่เข้าต่อสู้ก่อน)\\n(ต้องมีตัวละคร<span style=\"color: #FFACFFFF;\">ธาตุไฟฟ้า</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331501,
+    "id": "elemental_resonance_woven_winds",
+    "type": "resonance",
+    "name": "Elemental Resonance: Woven Winds",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [],
+      "desc": "ทำให้เกิด<span style=\"color: #80FFD7FF;\">ลูกเต๋าธาตุลม</span> 1 ลูก\\n(ต้องมีตัวละคร<span style=\"color: #80FFD7FF;\">ธาตุลม</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331502,
+    "id": "elemental_resonance_impetuous_winds",
+    "type": "resonance",
+    "name": "Elemental Resonance: Impetuous Winds",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 1
+        }
+      ],
+      "desc": "เปลี่ยนเป็นตัวละครเป้าหมาย และทำให้เกิด<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 1 ลูก\\n(ต้องมีตัวละคร<span style=\"color: #80FFD7FF;\">ธาตุลม</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331601,
+    "id": "elemental_resonance_woven_stone",
+    "type": "resonance",
+    "name": "Elemental Resonance: Woven Stone",
+    "requirement": "geo",
+    "skills": {
+      "cost": [],
+      "desc": "ทำให้เกิด<span style=\"color: #FFE699FF;\">ลูกเต๋าธาตุหิน</span> 1 ลูก\\n(ต้องมีตัวละคร<span style=\"color: #FFE699FF;\">ธาตุหิน</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331602,
+    "id": "elemental_resonance_enduring_rock",
+    "type": "resonance",
+    "name": "Elemental Resonance: Enduring Rock",
+    "requirement": "geo",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        }
+      ],
+      "desc": "ในเทิร์นนี้ หลังจากครั้งต่อไปที่ตัวละครฝ่ายเราทำให้เกิด<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span>: หากฝ่ายเรามีสถานะการต่อสู้ที่มอบ \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span>\" จะเสริม \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span>\" 3 หน่วย ให้แก่สถานะการต่อสู้ประเภทนี้ 1 ครั้ง\\n(ต้องมีตัวละคร<span style=\"color: #FFE699FF;\">ธาตุหิน</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331701,
+    "id": "elemental_resonance_woven_weeds",
+    "type": "resonance",
+    "name": "Elemental Resonance: Woven Weeds",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [],
+      "desc": "ทำให้เกิด<span style=\"color: #99FF88FF;\">ลูกเต๋าธาตุไม้</span> 1 ลูก\\n(ต้องมีตัวละคร<span style=\"color: #99FF88FF;\">ธาตุไม้</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 331702,
+    "id": "elemental_resonance_sprawling_greenery",
+    "type": "resonance",
+    "name": "Elemental Resonance: Sprawling Greenery",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 1
+        }
+      ],
+      "desc": "ในเทิร์นนี้ ครั้งต่อไปที่ฝ่ายเราทำให้เกิดปฏิกิริยาธาตุ จะสร้างความเสียหาย +2\\nทำให้ <span style=\"color: #FFFFFFFF;\">Burning Flame, Dendro Core และ Catalyzing Field</span> ในสนามของฝ่ายเรามี \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>\" +1\\n(ต้องมีตัวละคร<span style=\"color: #99FF88FF;\">ธาตุไม้</span>อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 332001,
+    "id": "the_bestest_travel_companion!",
+    "type": "none",
+    "name": "The Bestest Travel Companion!",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "เปลี่ยน Elemental Dice ที่จ่ายเป็น <span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 2 ลูก"
+    }
+  },
+  {
+    "_id": 332002,
+    "id": "changing_shifts",
+    "type": "none",
+    "name": "Changing Shifts",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อฝ่ายเราทำการเปลี่ยนตัวละครในครั้งถัดไป:</span> ใช้ Elemental Dice ลดลง 1 ลูก"
+    }
+  },
+  {
+    "_id": 332003,
+    "id": "toss-up",
+    "type": "none",
+    "name": "Toss-Up",
+    "skills": {
+      "cost": [],
+      "desc": "เลือก Elemental Dice ใดก็ได้เพื่อ<span style=\"color: #FFFFFFFF;\">ทอยใหม่</span> โดยจะสามารถทอยใหม่ได้ 2 ครั้ง"
+    }
+  },
+  {
+    "_id": 332004,
+    "id": "strategize",
+    "type": "none",
+    "name": "Strategize",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "จั่วการ์ด 2 ใบ"
+    }
+  },
+  {
+    "_id": 332005,
+    "id": "i_havent_lost_yet!",
+    "type": "none",
+    "name": "I Haven't Lost Yet!",
+    "skills": {
+      "cost": [],
+      "desc": "จะสามารถใช้ได้ เมื่อมีตัวละครของฝ่ายเราพ่ายแพ้ในเทิร์นนี้:\\nจะทำให้เกิด<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 1 ลูก และตัวละครเข้าต่อสู้ฝ่ายเราในขณะนั้น จะได้รับ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย"
+    }
+  },
+  {
+    "_id": 332006,
+    "id": "leave_it_to_me!",
+    "type": "none",
+    "name": "Leave It to Me!",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อฝ่ายเราทำการเปลี่ยนตัวละครในครั้งถัดไป:</span> จะมองการเปลี่ยนนี้เป็น \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการด่วน</span>\" แทนที่ \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>\""
+    }
+  },
+  {
+    "_id": 332007,
+    "id": "when_the_crane_returned",
+    "type": "none",
+    "name": "When the Crane Returned",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ฝ่ายเราใช้สกิลครั้งต่อไป:</span> จะทำการเปลี่ยนตัวละครนอกสนามตัวต่อไปของฝ่ายเราเข้าสู่สนาม"
+    }
+  },
+  {
+    "_id": 332008,
+    "id": "starsigns",
+    "type": "none",
+    "name": "Starsigns",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "ตัวละครที่เข้าต่อสู้ขณะนั้นของฝ่ายเรา จะ<span style=\"color: #FFFFFFFF;\">ได้รับ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย</span>"
+    }
+  },
+  {
+    "_id": 332009,
+    "id": "calxs_arts",
+    "type": "none",
+    "name": "Calx's Arts",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "ย้าย <span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย จากตัวละครนอกสนามฝ่ายเราอย่างมาก 2 ตัว มาให้ตัวละครที่เข้าต่อสู้ของฝ่ายเรา"
+    }
+  },
+  {
+    "_id": 332010,
+    "id": "master_of_weaponry",
+    "type": "none",
+    "name": "Master of Weaponry",
+    "skills": {
+      "cost": [],
+      "desc": "ย้ายการ์ดอุปกรณ์ \"อาวุธ\" หนึ่งใบที่ติดตั้งอยู่กับตัวละครของฝ่ายเรา ไปยังตัวละครของฝ่ายเราอีกตัวหนึ่ง ที่มีประเภทอาวุธเหมือนกัน"
+    }
+  },
+  {
+    "_id": 332011,
+    "id": "blessing_of_the_divine_relics_installation",
+    "type": "none",
+    "name": "Blessing of the Divine Relic's Installation",
+    "skills": {
+      "cost": [],
+      "desc": "ย้ายการ์ดอุปกรณ์ \"อาร์ติแฟกต์\" หนึ่งใบที่ติดตั้งอยู่กับตัวละครของฝ่ายเรา ไปยังตัวละครของฝ่ายเราอีกตัวหนึ่ง"
+    }
+  },
+  {
+    "_id": 332012,
+    "id": "quick_knit",
+    "type": "none",
+    "name": "Quick Knit",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "เลือก \"สิ่งอัญเชิญ\" ของฝ่ายเราหนึ่งอย่าง และทำให้ \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>\" +1"
+    }
+  },
+  {
+    "_id": 332013,
+    "id": "send_off",
+    "type": "none",
+    "name": "Send Off",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "เลือก \"สิ่งอัญเชิญ\" ของฝ่ายศัตรูหนึ่งอย่าง เพื่อทำลาย"
+    }
+  },
+  {
+    "_id": 332014,
+    "id": "guardians_oath",
+    "type": "none",
+    "name": "Guardian's Oath",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 4
+        }
+      ],
+      "desc": "ทำลาย \"สิ่งอัญเชิญ\" ทั้งหมด (ทั้งฝ่ายเราและศัตรู!)"
+    }
+  },
+  {
+    "_id": 332015,
+    "id": "abyssal_summons",
+    "type": "none",
+    "name": "Abyssal Summons",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "อัญเชิญ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">สิ่งอัญเชิญ \"Hilichurl\" แบบสุ่ม</span> ออกมาหนึ่งตัว!\\n(ต้องมีตัวละคร \"มอนสเตอร์\" อย่างน้อย 2 ตัว อยู่ภายในเด็ค จึงจะสามารถเข้าสู่เด็คได้)"
+    }
+  },
+  {
+    "_id": 333001,
+    "id": "jueyun_guoba",
+    "type": "food",
+    "name": "Jueyun Guoba",
+    "skills": {
+      "cost": [],
+      "desc": "ในเทิร์นนี้ <span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ครั้งต่อไป ของตัวละครเป้าหมาย จะสร้างความเสียหาย +1\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 333002,
+    "id": "adeptus_temptation",
+    "type": "food",
+    "name": "Adeptus' Temptation",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "ในเทิร์นนี้ <span style=\"color: #FFFFFFFF;\">ท่าไม้ตาย</span>ครั้งต่อไป ของตัวละครเป้าหมาย จะสร้างความเสียหาย +3\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 333003,
+    "id": "lotus_flower_crisp",
+    "type": "food",
+    "name": "Lotus Flower Crisp",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "ในเทิร์นนี้ ตัวละครเป้าหมายจะได้รับความเสียหาย -3\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 333004,
+    "id": "northern_smoked_chicken",
+    "type": "food",
+    "name": "Northern Smoked Chicken",
+    "skills": {
+      "cost": [],
+      "desc": "ในเทิร์นนี้ <span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ครั้งต่อไป ของตัวละครเป้าหมาย จะใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุไร้สี</span> น้อยลง 1 หน่วย\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 333005,
+    "id": "sweet_madame",
+    "type": "food",
+    "name": "Sweet Madame",
+    "skills": {
+      "cost": [],
+      "desc": "รักษาตัวละครเป้าหมาย 1 หน่วย\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 333006,
+    "id": "mondstadt_hash_brown",
+    "type": "food",
+    "name": "Mondstadt Hash Brown",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "รักษาตัวละครเป้าหมาย 2 หน่วย\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 333007,
+    "id": "mushroom_pizza",
+    "type": "food",
+    "name": "Mushroom Pizza",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "รักษาตัวละครเป้าหมาย 1 หน่วย และภายในสองเทิร์น จะรักษาตัวละครนี้อีก 1 หน่วย ในตอนจบเฟส\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+    }
+  },
+  {
+    "_id": 333008,
+    "id": "minty_meat_rolls",
+    "type": "food",
+    "name": "Minty Meat Rolls",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "ก่อนที่เทิร์นนี้จะจบลง <span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ทั้งหมด ของตัวละครเป้าหมาย จะใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุไร้สี</span> น้อยลง 1 หน่วย\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+    }
+  }
+]

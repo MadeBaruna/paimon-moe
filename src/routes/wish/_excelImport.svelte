@@ -1,5 +1,5 @@
 <script>
-  import { t } from 'svelte-i18n';
+  import { t, dictionary, locale } from 'svelte-i18n';
   import { Workbook, ValueType } from 'exceljs';
   import dayjs from 'dayjs';
 
@@ -103,20 +103,34 @@
       const { path, data } = await readLocalData(id);
       const { append, prepend } = added[id];
 
-      const beginning = prepend.map((e) => ({
-        id: e[2],
-        time: e[1],
-        type: e[0],
-        pity: 0,
-        manualInput: true,
-      }));
-      const end = append.map((e) => ({
-        id: e[2],
-        time: e[1],
-        type: e[0],
-        pity: 0,
-        manualInput: true,
-      }));
+      const beginning = prepend.map((e) => {
+        const d = {
+          id: e[2],
+          time: e[1],
+          type: e[0],
+          pity: 0,
+          manualInput: true,
+        };
+
+        if (e[3] !== undefined) {
+          d.code = e[3];
+        }
+        return d;
+      });
+      const end = append.map((e) => {
+        const d = {
+          id: e[2],
+          time: e[1],
+          type: e[0],
+          pity: 0,
+          manualInput: true,
+        };
+
+        if (e[3] !== undefined) {
+          d.code = e[3];
+        }
+        return d;
+      });
 
       const combined = [...beginning, ...data, ...end];
 
@@ -210,6 +224,7 @@
         const type = row.getCell(1).text.toLowerCase();
         let time = row.getCell(3);
         const fullName = row.getCell(2).text;
+        const wish2 = row.getCell(9).text === 'Wish 2';
 
         if (time.type === ValueType.Date) {
           time = dayjs.utc(time.value).format('YYYY-MM-DD HH:mm:ss');
@@ -258,7 +273,11 @@
           throw 'unknown reward name';
         }
 
-        wishes.push([type, time, name]);
+        const w = [type, time, name];
+        if (wish2) {
+          w[3] = '400';
+        }
+        wishes.push(w);
       });
 
       console.log('from excel', category, wishes.length);
@@ -270,24 +289,41 @@
   }
 
   async function readGachaExportExcel(workbook) {
-    const bannerCategories = {
-      'character-event': 'Character Event Wish',
-      'weapon-event': 'Weapon Event Wish',
-      standard: 'Permanent Wish',
-      beginners: 'Novice Wishes',
-    };
+    const itemNames = {};
+    for (const [k, v] of Object.entries($dictionary[$locale])) {
+      itemNames[v] = k;
+    }
+    console.log(itemNames);
+
+    const bannerCategories = ['character-event', 'weapon-event', 'standard', 'beginners'];
+    const bannerCodes = ['301', '302', '200', '100'];
 
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
 
-    for (const [id, category] of Object.entries(bannerCategories)) {
-      const sheet = workbook.getWorksheet(category);
+    const typeWeaponTranslate = $t('wish.detail.weapon');
+    const typeCharacterTranslate = $t('wish.detail.character');
+
+    for (let i = 0; i < 4; i++) {
+      const sheet = workbook.worksheets[i];
+      const id = bannerCategories[i];
+      let code = bannerCodes[i];
       const wishes = [];
       sheet.eachRow((row, index) => {
         if (index === 1) return;
-        const type = row.getCell(3).text.toLowerCase();
+        const typeRaw = row.getCell(3).text;
+        let type = typeRaw;
+        if (typeWeaponTranslate === typeRaw) {
+          type = 'weapon';
+        } else if (typeCharacterTranslate === typeRaw) {
+          type = 'character';
+        }
+
         let time = row.getCell(1);
-        const fullName = row.getCell(2).text;
+        const fullName = itemNames[row.getCell(2).text];
+        if (i === 0) {
+          code = row.getCell(7).text.indexOf('2') > -1 ? '400' : '301';
+        }
 
         if (time.type === ValueType.Date) {
           time = dayjs.utc(time.value).format('YYYY-MM-DD HH:mm:ss');
@@ -299,9 +335,9 @@
         if (type === 'weapon') {
           const weapon = weapons.find((e) => e.name === fullName);
           if (weapon === undefined) {
-            pushToast($t('wish.excel.errorUnknownItem'), 'error');
+            pushToast($t('wish.excel.errorUnknownItem') + ` [${id} ${type} ${index}: ${fullName}]`, 'error');
             error = {
-              banner: category,
+              banner: id,
               line: index,
               name: fullName,
               type,
@@ -315,7 +351,7 @@
         } else if (type === 'character') {
           const character = chars.find((e) => e.name === fullName);
           if (character === undefined) {
-            pushToast($t('wish.excel.errorUnknownItem'), 'error');
+            pushToast($t('wish.excel.errorUnknownItem') + ` [${id} ${type} ${index}: ${fullName}]`, 'error');
             error = {
               banner: category,
               line: index,
@@ -331,15 +367,15 @@
         }
 
         if (name === '') {
-          pushToast($t('wish.excel.errorUnknownItem'), 'error');
+          pushToast($t('wish.excel.errorUnknownItem') + ` [${id} ${type} ${index}: ${fullName}]`, 'error');
           loading = false;
           throw 'unknown reward name';
         }
 
-        wishes.push([type, time, name]);
+        wishes.push([type, time, name, code]);
       });
 
-      console.log('from excel', category, wishes.length);
+      console.log('from excel', id, wishes.length);
       await parseData(id, wishes);
     }
 

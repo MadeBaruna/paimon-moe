@@ -17,6 +17,7 @@
     "radiantSpincrystal": "Radiant Spincrystal",
     "calendar": "Kalender",
     "banners": "Rerun Karakter",
+    "tcg": "TCG",
     "settings": "Pengaturan",
     "donate": "Donasi"
   },
@@ -364,7 +365,7 @@
         "Fitur ini masih dalam tahap BETA, harap backup dulu melalui Pengaturan kemudian Export ke Excel!",
         "Wish dengan waktu dan reward yang sama tidak disentuh (agar wish yg sudah tersimpan tidak tertimpa)",
         "Hanya akan menambahkan wish di akhir dan di awal, yang artinya tidak ada wish yang dimasukkan di tengah-tengah data yang sudah ada",
-        "Saat ini hanya bisa digunakan untuk reward dengan nama item yang berbahasa INGGRIS"
+        "Silahkan ganti dahulu bahasa website sesuai dengan bahasa file excel nya"
       ],
       "selectFile": {
         "default": "Drag & drop Paimon.moe file excel kesini, atau klik disini untuk memilih",
@@ -968,6 +969,8 @@
     "18ATKSet": "Set +18% ATK",
     "20EnergyRechargeSet": "Set 20% Energy Recharge",
     "25PhysicalDmgSet": "Set Physical DMG +25%",
+    "80EMSet": "Set Elemental Mastery +80",
+    "15HealingBonusSet": "Set Healing Bonus +15%",
     "sands": "SANDS",
     "goblet": "GOBLET",
     "circlet": "CIRCLET",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "Data sudah disinkronkan!",
-    "driveError": "Drive Sync tidak tersedia saat ini 😔"
+    "driveError": "Drive Sync tidak tersedia saat ini 😔",
+    "open": "Pilih",
+    "delete": "Hapus",
+    "deleteConfirm": "Hapus?"
   },
   "update": {
     "newUpdate": "Paimon.moe ada update baru!",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "Diurutkan dari rerun terlama",
     "bannerTitle": "Timeline Rilis Karakter",
     "bannerSubtitle": "Lihat kapan suatu karakter dirilis dan rerun terakhirnya"
+  },
+  "tcg": {
+    "title": "Genius Invokation TCG",
+    "requirementResonance": "Kamu memerlukan 2 karakter {element} di deck mu untuk menambahkan kartu ini!",
+    "requirementTalent": "Kamu perlu {character} di deck mu untuk menambahkan kartu ini!",
+    "addedToDeck": "Ditambahkan ke deck!",
+    "deletedFromDeck": "Dihapus dari deck!",
+    "removedFromDeck": "Dikurangi dari deck!",
+    "alreadyMaxCharacters": "Kamu sudah punya 3 karakter di deck mu!",
+    "alreadyMaxActions": "Kamu sudah punya 30 kartu aksi di deck mu!",
+    "requirementInDeck": "Kamu perlu menghapus kartu {card} untuk menghapus {character} dari deck mu!",
+    "addToDeck": "Tambah ke Deck",
+    "removeFromDeck": "{type} from Deck",
+    "delete": "Hapus",
+    "remove": "Kurangi",
+    "compare": "Bandingkan",
+    "noCardOnDeck": "Belum ada kartu di dalam deck ini",
+    "loadDefaultDeck": "Buka Deck Awal",
+    "saveDeck": "Simpan Deck",
+    "hideDeck": "Sembunyikan Deck",
+    "showDeck": "Tampilkan Deck",
+    "addDeck": "Tambah Deck",
+    "selectDeck": "Pilih Deck",
+    "loadingLink": "Membuat link...",
+    "loadingLinkError": "Error membuat link 😥",
+    "shareDeck": "Share Deck \"{name}\"",
+    "removeCompare": "Hilangkan Komparasi",
+    "shareNotComplete": "Silahkan lengkapi dulu deck dengan 3 karakter dan 30 kartu aksi!",
+    "characterCard": "Kartu Karakter",
+    "actionCard": "Kartu Aksi"
   }
 }

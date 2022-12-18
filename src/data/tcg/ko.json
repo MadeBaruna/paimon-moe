@@ -1,0 +1,3593 @@
+[
+  {
+    "_id": 1101,
+    "id": "ganyu",
+    "type": "character",
+    "name": "감우",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11011,
+        "type": "일반 공격",
+        "name": "유천 사격술",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11012,
+        "type": "원소전투 스킬",
+        "name": "산과 강의 기린 흔적",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 1pt 주고 <span style=\"color: #FFFFFFFF;\">얼음 연꽃</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111012,
+          "id": "ice_lotus",
+          "name": "얼음 연꽃",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군 출전 캐릭터가 받는 피해</span>-1pt\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 11013,
+        "type": "일반 공격",
+        "name": "서리꽃 화살",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 3pt 주고 적의 모든 대기 캐릭터에게 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">관통 피해</span>를 2pt</span> 준다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "_id": 11014,
+        "type": "원소폭발",
+        "name": "쏟아지는 천화",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 1pt 주고 적의 모든 대기 캐릭터에게 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">관통 피해</span>를 1pt</span> 주며 <span style=\"color: #FFFFFFFF;\">빙령주</span>를 소환한다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111011,
+          "id": "sacred_cryo_pearl",
+          "name": "빙령주",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 1pt 가하고 적의 모든 대기 캐릭터에게 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">관통 피해</span>를 1pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1102,
+    "id": "diona",
+    "type": "character",
+    "name": "디오나",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11021,
+        "type": "일반 공격",
+        "name": "사냥꾼의 사격술",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11022,
+        "type": "원소전투 스킬",
+        "name": "꽁꽁젤리",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 2pt 주고 <span style=\"color: #FFFFFFFF;\">꽁꽁젤리 보호막</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111021,
+          "id": "cat-claw_shield",
+          "name": "꽁꽁젤리 보호막",
+          "desc": "아군 캐릭터에게 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">보호막</span>을 1pt</span> 제공한다."
+        }
+      },
+      {
+        "_id": 11023,
+        "type": "원소폭발",
+        "name": "특제 칵테일",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 1pt 주고 해당 캐릭터의 HP를 2pt 치유하며 <span style=\"color: #FFFFFFFF;\">술 안개 영역</span>을 소환한다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111023,
+          "id": "drunken_mist",
+          "name": "술 안개 영역",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 1pt 가하고 아군 출전 캐릭터의 HP를 2pt 치유한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1103,
+    "id": "kaeya",
+    "type": "character",
+    "name": "케이아",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11031,
+        "type": "일반 공격",
+        "name": "의전 검술",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11032,
+        "type": "원소전투 스킬",
+        "name": "서리 엄습",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 3pt 준다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11033,
+        "type": "원소폭발",
+        "name": "살을 에는 윤무",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 1pt 주고 <span style=\"color: #FFFFFFFF;\">얼음 기둥</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111031,
+          "id": "icicle",
+          "name": "얼음 기둥",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군 캐릭터 교체 후:</span> <span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 2pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1104,
+    "id": "chongyun",
+    "type": "character",
+    "name": "중운",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11041,
+        "type": "일반 공격",
+        "name": "악멸의 사식",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11042,
+        "type": "원소전투 스킬",
+        "name": "중첩의 서리",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 3pt 주고 <span style=\"color: #FFFFFFFF;\">중첩의 서리 영역</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111041,
+          "id": "chonghua_frost_field",
+          "name": "중첩의 서리 영역",
+          "desc": "아군의 한손검, 양손검 혹은 장병기 캐릭터가 가하는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>가 <span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>로 전환된다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 11043,
+        "type": "원소폭발",
+        "name": "떨어지는 별",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 7pt 준다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1105,
+    "id": "kamisato_ayaka",
+    "type": "character",
+    "name": "카미사토 아야카",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11051,
+        "type": "일반 공격",
+        "name": "카미사토류·경(傾)",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11052,
+        "type": "원소전투 스킬",
+        "name": "카미사토류·얼음꽃",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 3pt 준다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11053,
+        "type": "원소폭발",
+        "name": "카미사토류·멸망의 서리",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 4pt 주고 <span style=\"color: #FFFFFFFF;\">서리의 관문</span>을 소환한다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111051,
+          "id": "frostflake_seki_no_to",
+          "name": "서리의 관문",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 2pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 11054,
+        "type": "패시브 스킬",
+        "name": "카미사토류·싸락눈 걸음",
+        "desc": "[패시브] 해당 캐릭터를 출전 캐릭터로 교체할 시, <span style=\"color: #FFFFFFFF;\">얼음 원소 부여</span> 효과가 제공된다.",
+        "cost": [],
+        "sub": {
+          "_id": 111052,
+          "id": "cryo_elemental_infusion",
+          "name": "얼음 원소 부여",
+          "desc": "부착 캐릭터가 가하는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>가 <span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>로 전환된다.\\n(턴 종료까지 지속)"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1201,
+    "id": "barbara",
+    "type": "character",
+    "name": "바바라",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12011,
+        "type": "일반 공격",
+        "name": "물의 노래",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 준다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12012,
+        "type": "원소전투 스킬",
+        "name": "공연, 시작♪",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 주고 <span style=\"color: #FFFFFFFF;\">노래의 고리</span>를 소환한다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112011,
+          "id": "melody_loop",
+          "name": "노래의 고리",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 모든 아군 캐릭터의 HP를 1pt 치유하고 아군 출전 캐릭터에게 <span style=\"color: #80C0FFFF;\">물 원소 부착</span> 효과를 준다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12013,
+        "type": "원소폭발",
+        "name": "빛나는 기적♪",
+        "desc": "모든 아군 캐릭터의 HP를 4pt 치유한다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1202,
+    "id": "xingqiu",
+    "type": "character",
+    "name": "행추",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12021,
+        "type": "일반 공격",
+        "name": "고화 검법",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12022,
+        "type": "원소전투 스킬",
+        "name": "화우농산",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 2pt 주고 본 캐릭터에게 <span style=\"color: #80C0FFFF;\">물 원소 부착</span> 효과를 주며 <span style=\"color: #FFFFFFFF;\">우렴검</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112021,
+          "id": "rain_sword",
+          "name": "우렴검",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군 출전 캐릭터가 3pt 이상의 피해를 받을 시:</span> 받는 피해-1pt\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12023,
+        "type": "원소폭발",
+        "name": "재우유홍",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 주고 본 캐릭터에게 <span style=\"color: #80C0FFFF;\">물 원소 부착</span> 효과를 주며 <span style=\"color: #FFFFFFFF;\">홍검세</span>를 생성한다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112022,
+          "id": "rainbow_bladework",
+          "name": "홍검세",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군 캐릭터가 일반 공격 후:</span> <span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 2pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1203,
+    "id": "mona",
+    "type": "character",
+    "name": "모나",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12031,
+        "type": "일반 공격",
+        "name": "인과 간파",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 준다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12032,
+        "type": "원소전투 스킬",
+        "name": "수중 환원",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 주고 <span style=\"color: #FFFFFFFF;\">허영</span>을 소환한다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112031,
+          "id": "reflection",
+          "name": "허영",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군 출전 캐릭터가 받는 피해</span>-1pt\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 1</span>, 사용 횟수를 소진해도 해당 카드를 버리지 않는다.\\n<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 해당 카드를 버리고 <span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 가한다."
+        }
+      },
+      {
+        "_id": 12033,
+        "type": "원소폭발",
+        "name": "별의 운명",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 4pt 주고 <span style=\"color: #FFFFFFFF;\">포영</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112032,
+          "id": "illusory_bubble",
+          "name": "포영",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군이 스킬 피해를 가할 시:</span> 해당 상태가 제거되고 이번에 가하는 피해가 2배가 된다."
+        }
+      },
+      {
+        "_id": 12034,
+        "type": "패시브 스킬",
+        "name": "흐르는 허와 실",
+        "desc": "[패시브] <span style=\"color: #FFFFFFFF;\">해당 캐릭터가 출전 캐릭터이며 아군이 「캐릭터 교체」 행동 진행 시:</span> 이번 교체를 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>」이 아닌 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">빠른 행동</span>」으로 간주한다. (턴당 1회)",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1301,
+    "id": "diluc",
+    "type": "character",
+    "name": "다이루크",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 13011,
+        "type": "일반 공격",
+        "name": "단련의 검",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13012,
+        "type": "원소전투 스킬",
+        "name": "역날의 화염",
+        "desc": "<span style=\"color: #FF9999FF;\">불 원소 피해</span>를 5pt 준다. 매 턴에서 해당 스킬을 세 번째 사용 시 피해량이 2pt 증가한다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13013,
+        "type": "원소폭발",
+        "name": "여명",
+        "desc": "<span style=\"color: #FF9999FF;\">불 원소 피해</span>를 8pt 주고 본 캐릭터에게 <span style=\"color: #FFFFFFFF;\">불 원소 부여</span> 효과가 제공된다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113011,
+          "id": "pyro_infusion",
+          "name": "불 원소 부여",
+          "desc": "부착 캐릭터가 가하는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>가 <span style=\"color: #FF9999FF;\">불 원소 피해</span>로 전환된다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1302,
+    "id": "xiangling",
+    "type": "character",
+    "name": "향릉",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 13021,
+        "type": "일반 공격",
+        "name": "밀가루 음식 솜씨",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13022,
+        "type": "원소전투 스킬",
+        "name": "누룽지 출격",
+        "desc": "<span style=\"color: #FFFFFFFF;\">누룽지</span>를 소환한다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113021,
+          "id": "guoba",
+          "name": "누룽지",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #FF9999FF;\">불 원소 피해</span>를 2pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 13023,
+        "type": "원소폭발",
+        "name": "화륜",
+        "desc": "<span style=\"color: #FF9999FF;\">불 원소 피해</span>를 2pt 주고 <span style=\"color: #FFFFFFFF;\">화륜</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113022,
+          "id": "pyronado",
+          "name": "화륜",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군 캐릭터가 스킬 사용 후:</span> <span style=\"color: #FF9999FF;\">불 원소 피해</span>를 2pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1303,
+    "id": "bennett",
+    "type": "character",
+    "name": "베넷",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 13031,
+        "type": "일반 공격",
+        "name": "행운의 검",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13032,
+        "type": "원소전투 스킬",
+        "name": "열정 과부하",
+        "desc": "<span style=\"color: #FF9999FF;\">불 원소 피해</span>를 3pt 준다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13033,
+        "type": "원소폭발",
+        "name": "아름다운 여정",
+        "desc": "<span style=\"color: #FF9999FF;\">불 원소 피해</span>를 2pt 주고 <span style=\"color: #FFFFFFFF;\">격려의 영역</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113031,
+          "id": "inspiration_field",
+          "name": "격려의 영역",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군 캐릭터가 스킬 사용 시:</span> 해당 캐릭터의 HP가 7pt 이상이면 추가 피해+2pt, 스킬이 적용된 후 해당 캐릭터의 HP가 6pt 이하이면 해당 캐릭터의 HP를 2pt 치유한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1305,
+    "id": "yoimiya",
+    "type": "character",
+    "name": "요이미야",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 13051,
+        "type": "일반 공격",
+        "name": "쏘아 올린 불꽃",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13052,
+        "type": "원소전투 스킬",
+        "name": "염초 정화(庭火)의 춤",
+        "desc": "본 캐릭터에게 <span style=\"color: #FFFFFFFF;\">정화 염초</span>가 부착된다. (해당 스킬은 원소 에너지가 생성되지 않음)",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          }
+        ],
+        "sub": {
+          "_id": 113051,
+          "id": "niwabi_enshou",
+          "name": "정화 염초",
+          "desc": "부착 캐릭터의 <span style=\"color: #FFFFFFFF;\">일반 공격</span> 피해+1pt, 가하는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>가 <span style=\"color: #FF9999FF;\">불 원소 피해</span>로 전환된다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 13053,
+        "type": "원소폭발",
+        "name": "유금 운간초",
+        "desc": "<span style=\"color: #FF9999FF;\">불 원소 피해</span>를 3pt 주고 <span style=\"color: #FFFFFFFF;\">유금화광</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113052,
+          "id": "aurous_blaze",
+          "name": "유금화광",
+          "desc": "요이미야 이외의 아군 캐릭터가 스킬 사용 후: <span style=\"color: #FF9999FF;\">불 원소 피해</span>를 1pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1401,
+    "id": "fischl",
+    "type": "character",
+    "name": "피슬",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14011,
+        "type": "일반 공격",
+        "name": "죄멸의 화살",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14012,
+        "type": "원소전투 스킬",
+        "name": "밤을 순찰하는 그림자 날개",
+        "desc": "<span style=\"color: #FFACFFFF;\">번개 원소 피해</span>를 1pt 주고 <span style=\"color: #FFFFFFFF;\">오즈</span>를 소환한다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114011,
+          "id": "oz",
+          "name": "오즈",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #FFACFFFF;\">번개 원소 피해</span>를 1pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 14013,
+        "type": "원소폭발",
+        "name": "암야의 환상",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 4pt 주고 상대의 모든 대기 캐릭터에게 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">관통 피해</span></span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1402,
+    "id": "razor",
+    "type": "character",
+    "name": "레이저",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14021,
+        "type": "일반 공격",
+        "name": "강철 마루",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14022,
+        "type": "원소전투 스킬",
+        "name": "날카로운 발톱과 창뢰",
+        "desc": "<span style=\"color: #FFACFFFF;\">번개 원소 피해</span>를 3pt 준다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14023,
+        "type": "원소폭발",
+        "name": "뇌아",
+        "desc": "<span style=\"color: #FFACFFFF;\">번개 원소 피해</span>를 5pt 주고 본 캐릭터에게 <span style=\"color: #FFFFFFFF;\">썬더울프</span>가 부착된다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114021,
+          "id": "the_wolf_within",
+          "name": "썬더울프",
+          "desc": "<span style=\"color: #FFFFFFFF;\">부착 캐릭터가 일반 공격 혹은 원소전투 스킬 발동 후:</span> <span style=\"color: #FFACFFFF;\">번개 원소 피해</span>를 2pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1403,
+    "id": "keqing",
+    "type": "character",
+    "name": "각청",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 14031,
+        "type": "일반 공격",
+        "name": "운래 검법",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14032,
+        "type": "원소전투 스킬",
+        "name": "성신 회귀",
+        "desc": "<span style=\"color: #FFACFFFF;\">번개 원소 피해</span>를 3pt 주고 <span style=\"color: #FFFFFFFF;\">뇌설</span> 카드를 생성한다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114031,
+          "id": "lightning_stiletto",
+          "name": "뇌설",
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 각청을 필드로 교체하고 성신 회귀를 즉시 발동한다. 해당 성신 회귀는 각청에게 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">번개 원소 부여</span></span> 효과를 주지만 뇌설을 재생성하지 않는다.\\n(각청이 성신 회귀를 사용 시, 만약 핸드에 이 카드가 있으면 뇌설을 재생성하지 않고 카드를 버린다. 또한 각청에게 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">번개 원소 부여</span></span> 효과를 준다)"
+        }
+      },
+      {
+        "_id": 14033,
+        "type": "원소폭발",
+        "name": "천가 순유",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 4pt 주고 상대의 모든 대기 캐릭터에게 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">관통 피해</span>를 3pt</span> 준다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1404,
+    "id": "cyno",
+    "type": "character",
+    "name": "사이노",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 14041,
+        "type": "일반 공격",
+        "name": "일곱 성인의 창술",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14042,
+        "type": "원소전투 스킬",
+        "name": "비밀스러운 의식·명계의 인도자",
+        "desc": "<span style=\"color: #FFACFFFF;\">번개 원소 피해</span>를 3pt 준다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14043,
+        "type": "원소폭발",
+        "name": "성스러운 의식·이리의 질주",
+        "desc": "<span style=\"color: #FFACFFFF;\">번개 원소 피해</span>를 4pt 주고\\n<span style=\"color: #FFFFFFFF;\">길을 여는 사자</span>의 [빙의]가 2레벨 증가한다.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "길을 여는 사자",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 「빙의」 1레벨 증가\\n<span style=\"color: #FFFFFFFF;\">「빙의」 레벨에 따른 효과:</span>\\nLv.2 이상: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>가 <span style=\"color: #FFACFFFF;\">번개 원소 피해</span>로 전환된다.\\nLv.4 이상: 가하는 피해+2pt\\nLv.6 이상: 「빙의」 4레벨 감소"
+        }
+      },
+      {
+        "_id": 14044,
+        "type": "패시브 스킬",
+        "name": "징벌 집행",
+        "desc": "[패시브] 전투 시작 시, 처음부터 <span style=\"color: #FFFFFFFF;\">길을 여는 사자</span>가 부착된다.",
+        "cost": [],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "길을 여는 사자",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 「빙의」 1레벨 증가\\n<span style=\"color: #FFFFFFFF;\">「빙의」 레벨에 따른 효과:</span>\\nLv.2 이상: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>가 <span style=\"color: #FFACFFFF;\">번개 원소 피해</span>로 전환된다.\\nLv.4 이상: 가하는 피해+2pt\\nLv.6 이상: 「빙의」 4레벨 감소"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1501,
+    "id": "sucrose",
+    "type": "character",
+    "name": "설탕",
+    "hp": 10,
+    "energy": 2,
+    "element": "anemo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 15011,
+        "type": "일반 공격",
+        "name": "약식 풍령 작성",
+        "desc": "<span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 1pt 준다.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15012,
+        "type": "원소전투 스킬",
+        "name": "풍령 작성·육삼공팔",
+        "desc": "<span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 3pt 주고 상대의 출전 캐릭터를 이전 캐릭터로 강제 교체한다.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15013,
+        "type": "원소폭발",
+        "name": "금기·풍령 작성·칠오 동구 이형",
+        "desc": "<span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 1pt 주고 <span style=\"color: #FFFFFFFF;\">거대 풍령</span>을 소환한다.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 115011,
+          "id": "large_wind_spirit",
+          "name": "거대 풍령",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 2pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 3</span>\\n\\n아군 캐릭터 또는 소환물이 확산 반응 발동 후: 해당 카드의 원소 타입이 전환되고, 확산된 원소 타입의 피해로 바뀐다. (필드를 떠나기 전에 1회만 발동)"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1502,
+    "id": "jean",
+    "type": "character",
+    "name": "진",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 15021,
+        "type": "일반 공격",
+        "name": "페보니우스 검술",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15022,
+        "type": "원소전투 스킬",
+        "name": "풍압검",
+        "desc": "<span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 3pt 주고 상대의 출전 캐릭터를 다음 캐릭터로 강제 교체한다.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15023,
+        "type": "원소폭발",
+        "name": "민들레 바람",
+        "desc": "모든 아군 캐릭터의 HP를 2pt 치유하고 <span style=\"color: #FFFFFFFF;\">민들레 영역</span>을 소환한다.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 115021,
+          "id": "dandelion_field",
+          "name": "민들레 영역",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 2pt 가하고 아군 출전 캐릭터의 HP를 1pt 치유한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1601,
+    "id": "ningguang",
+    "type": "character",
+    "name": "응광",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 16011,
+        "type": "일반 공격",
+        "name": "천금투",
+        "desc": "<span style=\"color: #FFE699FF;\">바위 원소 피해</span>를 1pt 준다.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16012,
+        "type": "원소전투 스킬",
+        "name": "선기 병풍",
+        "desc": "<span style=\"color: #FFE699FF;\">바위 원소 피해</span>를 2pt 주고 <span style=\"color: #FFFFFFFF;\">선기 병풍</span>을 생성한다.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "선기 병풍",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군 출전 캐릭터가 2pt 이상의 피해를 받을 시:</span> 받는 피해-1pt\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 16013,
+        "type": "원소폭발",
+        "name": "천권 붕옥",
+        "desc": "<span style=\"color: #FFE699FF;\">바위 원소 피해</span>를 6pt 준다. 만약 필드에 <span style=\"color: #FFFFFFFF;\">선기 병풍</span>이 있을 시, 이번 피해가 2pt 증가한다.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "선기 병풍",
+          "desc": "<span style=\"color: #FFFFFFFF;\">아군 출전 캐릭터가 2pt 이상의 피해를 받을 시:</span> 받는 피해-1pt\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1602,
+    "id": "noelle",
+    "type": "character",
+    "name": "노엘",
+    "hp": 10,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16021,
+        "type": "일반 공격",
+        "name": "페보니우스 검술·메이드",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16022,
+        "type": "원소전투 스킬",
+        "name": "호심경",
+        "desc": "<span style=\"color: #FFE699FF;\">바위 원소 피해</span>를 1pt 주고 <span style=\"color: #FFFFFFFF;\">바위 갑주</span>를 생성한다.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116021,
+          "id": "full_plate",
+          "name": "바위 갑주",
+          "desc": "아군 출전 캐릭터에게 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">보호막</span>을 2pt</span> 제공한다.\\n해당 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">보호막</span>이 소진되기 전까지 아군이 받는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>가 50% 감소한다. (올림 처리)"
+        }
+      },
+      {
+        "_id": 16023,
+        "type": "원소폭발",
+        "name": "대청소",
+        "desc": "<span style=\"color: #FFE699FF;\">바위 원소 피해</span>를 4pt 주고 본 캐릭터에게 <span style=\"color: #FFFFFFFF;\">대청소</span>가 부착된다.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 116022,
+          "id": "sweeping_time",
+          "name": "대청소",
+          "desc": "캐릭터가 일반 공격 시: <span style=\"color: #FFE699FF;\">바위 원소</span> 소모 개수-1 (턴당 1회)\\n캐릭터의 <span style=\"color: #FFFFFFFF;\">일반 공격</span>으로 가하는 피해+2pt, 가하는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>가 <span style=\"color: #FFE699FF;\">바위 원소 피해</span>로 전환된다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1701,
+    "id": "collei",
+    "type": "character",
+    "name": "콜레이",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17011,
+        "type": "일반 공격",
+        "name": "기원 사격술",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17012,
+        "type": "원소전투 스킬",
+        "name": "스쳐 지나가는 풀잎",
+        "desc": "<span style=\"color: #7EC236FF;\">풀 원소 피해</span>를 3pt 준다.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 17013,
+        "type": "원소폭발",
+        "name": "냥냥 비책",
+        "desc": "<span style=\"color: #7EC236FF;\">풀 원소 피해</span>를 2pt 주고 <span style=\"color: #FFFFFFFF;\">콜린엔바</span>를 소환한다.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 117011,
+          "id": "cuilein-anbar",
+          "name": "콜린엔바",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #7EC236FF;\">풀 원소 피해</span>를 2pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2201,
+    "id": "rhodeia_of_loch",
+    "type": "character",
+    "name": "물의 정령·로데이아",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22011,
+        "type": "일반 공격",
+        "name": "솟구침",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 준다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22012,
+        "type": "원소전투 스킬",
+        "name": "물의 환상",
+        "desc": "1종류의 <span style=\"color: #FFFFFFFF;\">물의 환형</span>을 랜덤으로 소환한다. (다른 종류를 우선적으로 생성)",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "물의 환형",
+          "desc": "「물의 환형」 총 3종:\\n<span style=\"color: #FFFFFFFF;\">다람쥐</span>: 종료 단계에서 <span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 2pt 가한다. 사용 횟수: 2회\\n<span style=\"color: #FFFFFFFF;\">솔개</span>: 종료 단계에서 <span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 가한다. 사용 횟수: 3회\\n<span style=\"color: #FFFFFFFF;\">개구리</span>: 피해를 2pt 상쇄한다. 소진 후 <span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 2pt 가한다."
+        }
+      },
+      {
+        "_id": 22013,
+        "type": "원소전투 스킬",
+        "name": "임야백태",
+        "desc": "2종류의 <span style=\"color: #FFFFFFFF;\">물의 환형</span>을 랜덤으로 소환한다. (다른 종류를 우선적으로 생성)",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 5
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "물의 환형",
+          "desc": "「물의 환형」 총 3종:\\n<span style=\"color: #FFFFFFFF;\">다람쥐</span>: 종료 단계에서 <span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 2pt 가한다. 사용 횟수: 2회\\n<span style=\"color: #FFFFFFFF;\">솔개</span>: 종료 단계에서 <span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 가한다. 사용 횟수: 3회\\n<span style=\"color: #FFFFFFFF;\">개구리</span>: 피해를 2pt 상쇄한다. 소진 후 <span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 2pt 가한다."
+        }
+      },
+      {
+        "_id": 22014,
+        "type": "원소폭발",
+        "name": "밀물과 급류",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 2pt 준다. 아군의 소환물이 1개 있을 때마다 이번 피해가 2pt 증가한다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2202,
+    "id": "mirror_maiden",
+    "type": "character",
+    "name": "우인단·거울의 여인",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22021,
+        "type": "일반 공격",
+        "name": "물폭탄",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 1pt 준다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22022,
+        "type": "원소전투 스킬",
+        "name": "물결 폭파",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 3pt 주고 대상 캐릭터에게 <span style=\"color: #FFFFFFFF;\">깨진 물빛 거울</span>이 부착된다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122021,
+          "id": "refraction",
+          "name": "깨진 물빛 거울",
+          "desc": "부착 캐릭터가 받는 물 원소 피해+1pt\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>: 2</span>\\n(해당 상태는 한쪽에 하나만 존재할 수 있다)"
+        }
+      },
+      {
+        "_id": 22023,
+        "type": "원소폭발",
+        "name": "굴절된 거울의 빛",
+        "desc": "<span style=\"color: #80C0FFFF;\">물 원소 피해</span>를 5pt 준다.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2301,
+    "id": "fatui_pyro_agent",
+    "type": "character",
+    "name": "우인단·화염 채무 처리인",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 23011,
+        "type": "일반 공격",
+        "name": "찌르기",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23012,
+        "type": "원소전투 스킬",
+        "name": "기회 포착",
+        "desc": "<span style=\"color: #FF9999FF;\">불 원소 피해</span>를 1pt 주고 본 캐릭터에게 <span style=\"color: #FFFFFFFF;\">잠행</span>이 부착된다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "잠행",
+          "desc": "부착 캐릭터가 받는 피해-1pt 및 가하는 피해+1pt\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2"
+        }
+      },
+      {
+        "_id": 23013,
+        "type": "원소폭발",
+        "name": "불태워진 칼날",
+        "desc": "<span style=\"color: #FF9999FF;\">불 원소 피해</span>를 5pt 준다.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23014,
+        "type": "패시브 스킬",
+        "name": "잠행 마스터",
+        "desc": "[패시브] 전투 시작 시, 처음부터 <span style=\"color: #FFFFFFFF;\">잠행</span>이 부착된다.",
+        "cost": [],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "잠행",
+          "desc": "부착 캐릭터가 받는 피해-1pt 및 가하는 피해+1pt\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2501,
+    "id": "maguu_kenki",
+    "type": "character",
+    "name": "꼭두각시 검귀",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 25011,
+        "type": "일반 공격",
+        "name": "이치몬지",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 25012,
+        "type": "원소전투 스킬",
+        "name": "고독한 바람의 검세",
+        "desc": "<span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 1pt 주고 <span style=\"color: #FFFFFFFF;\">검의 그림자·고독한 바람</span>을 소환한다.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125011,
+          "id": "shadowsword_lone_gale",
+          "name": "검의 그림자·고독한 바람",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 1pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 25013,
+        "type": "원소전투 스킬",
+        "name": "서리 낀 그림자의 돌진",
+        "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 1pt 주고 <span style=\"color: #FFFFFFFF;\">검의 그림자·흩날리는 서리</span>를 소환한다.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125012,
+          "id": "shadowsword_galloping_frost",
+          "name": "검의 그림자·흩날리는 서리",
+          "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> <span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>를 1pt 가한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 25014,
+        "type": "원소폭발",
+        "name": "기계 텐구쇼",
+        "desc": "<span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 6pt 주고 아군의 모든 <span style=\"color: #FFFFFFFF;\">검의 그림자</span> 소환물 효과를 발동한다. (사용 가능 횟수를 소모하지 않음)",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2601,
+    "id": "stonehide_lawachurl",
+    "type": "character",
+    "name": "츄츄 바위왕",
+    "hp": 8,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 26011,
+        "type": "일반 공격",
+        "name": "Plama Lawa",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26012,
+        "type": "원소전투 스킬",
+        "name": "Movo Lawa",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 3pt 준다.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 26013,
+        "type": "원소폭발",
+        "name": "Upa Shato",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 5pt 준다.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26014,
+        "type": "패시브 스킬",
+        "name": "악마화: 바위 투구",
+        "desc": "[패시브] 전투 시작 시, 처음부터 <span style=\"color: #FFFFFFFF;\">바위 투구</span>와 <span style=\"color: #FFFFFFFF;\">견고한 바위의 힘</span>이 부착된다.",
+        "cost": [],
+        "sub": {
+          "_id": 126011,
+          "id": "stonehide",
+          "name": "바위 투구",
+          "desc": "<span style=\"color: #FFFFFFFF;\">부착 캐릭터가 피격 시:</span> 피해를 1pt 상쇄한다. 바위 원소 피해를 상쇄 시, 추가로 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>를 1회 소모한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2701,
+    "id": "jadeplume_terrorshroom",
+    "type": "character",
+    "name": "공포의 취령 버섯",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 27011,
+        "type": "일반 공격",
+        "name": "균왕의 춤",
+        "desc": "<span style=\"color: #FFFFFFFF;\">물리 피해</span>를 2pt 준다.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 27012,
+        "type": "원소전투 스킬",
+        "name": "불안정한 포자 구름",
+        "desc": "<span style=\"color: #7EC236FF;\">풀 원소 피해</span>를 3pt 준다.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 27013,
+        "type": "원소폭발",
+        "name": "깃털 펼치기",
+        "desc": "<span style=\"color: #7EC236FF;\">풀 원소 피해</span>를 4pt 주고 모든 <span style=\"color: #FFFFFFFF;\">활력 자극</span> 스택을 소모하며 스택당 이번 피해가 1pt씩 증가한다.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "활력 자극",
+          "desc": "본 캐릭터가 원소 피해를 가하거나 피격된 후: 「활력 자극」이 1스택 누적된다. (최대 중첩수: 3스택)\\n<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 「활력 자극」이 최대 스택을 달성하면 스택이 전부 사라지며 캐릭터는 모든 원소 에너지를 잃는다."
+        }
+      },
+      {
+        "_id": 27014,
+        "type": "패시브 스킬",
+        "name": "활력 자극",
+        "desc": "[패시브] 전투 시작 시, 처음부터 <span style=\"color: #FFFFFFFF;\">활력 자극</span>이 부착된다.",
+        "cost": [],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "활력 자극",
+          "desc": "본 캐릭터가 원소 피해를 가하거나 피격된 후: 「활력 자극」이 1스택 누적된다. (최대 중첩수: 3스택)\\n<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 「활력 자극」이 최대 스택을 달성하면 스택이 전부 사라지며 캐릭터는 모든 원소 에너지를 잃는다."
+        }
+      }
+    ]
+  },
+  {
+    "_id": 211011,
+    "id": "undivided_heart",
+    "type": "talent",
+    "name": "단 하나의 마음",
+    "requirement": "ganyu",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 5
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">감우</span>일 때 해당 카드를 장착할 수 있다.\\n감우가 해당 카드를 장착 후 즉시 <span style=\"color: #FFD780FF;\">단 하나의 마음</span>을 1회 사용한다.\\n해당 카드를 장착한 감우가 <span style=\"color: #FFFFFFFF;\">단 하나의 마음</span> 사용 시: 만약 이번 대전에서 해당 스킬을 사용한 적이 있으면 <span style=\"color: #99FFFFFF;\">얼음 원소 피해</span>가 1pt 증가하고 적의 대기 캐릭터에게 가하는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">관통 피해</span>가 3pt로 전환된다.\\n(카드 덱에 감우가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 211021,
+    "id": "shaken,_not_purred",
+    "type": "talent",
+    "name": "꽁꽁젤리 쉐이큰",
+    "requirement": "diona",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">디오나</span>일 때 해당 카드를 장착할 수 있다.\\n디오나가 해당 카드를 장착 후 즉시 <span style=\"color: #FFD780FF;\">꽁꽁젤리 쉐이큰</span>를 1회 사용한다.\\n해당 카드를 장착한 디오나가 생성한 <span style=\"color: #FFFFFFFF;\">꽁꽁젤리 보호막</span>의 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">보호막</span>+1pt\\n(카드 덱에 디오나가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 211031,
+    "id": "cold-blooded_strike",
+    "type": "talent",
+    "name": "냉혈의 검",
+    "requirement": "kaeya",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">케이아</span>일 때 해당 카드를 장착할 수 있다.\\n케이아가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">냉혈의 검</span>을 1회 사용한다.\\n해당 카드를 장착한 케이아가 <span style=\"color: #FFFFFFFF;\">냉혈의 검</span> 사용 후: 자신의 HP를 2pt 치유한다. (턴당 1회)\\n(카드 덱에 케이아가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 211041,
+    "id": "steady_breathing",
+    "type": "talent",
+    "name": "진기 토납",
+    "requirement": "chongyun",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">중운</span>일 때 해당 카드를 장착할 수 있다.\\n중운이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">진기 토납</span>를 1회 사용한다.\\n해당 카드를 장착한 중운이 생성한 <span style=\"color: #FFFFFFFF;\">중첩의 서리 영역</span>이 아래의 효과를 획득한다.\\n기본 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>+1 및 아군의 한손검, 양손검 혹은 장병기 캐릭터가 가하는 <span style=\"color: #FFFFFFFF;\">일반 공격</span> 피해+1pt\\n(카드 덱에 중운이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 211051,
+    "id": "kanten_senmyou_blessing",
+    "type": "talent",
+    "name": "한천선명 축사",
+    "requirement": "kamisato_ayaka",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 2
+        }
+      ],
+      "desc": "해당 카드를 장착한 <span style=\"color: #FFFFFFFF;\">카미사토 아야카</span>가 <span style=\"color: #FFFFFFFF;\">얼음 원소 부여</span>를 발동 시: 부착 캐릭터가 가하는 <span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">얼음 원소 피해</span></span>+1pt\\n해당 카드를 장착한 카미사토 아야카로 교체 시: 원소 주사위 소모 개수-1 (턴당 1회)\\n(카드 덱에 카미사토 아야카가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 212011,
+    "id": "glorious_season",
+    "type": "talent",
+    "name": "광휘의 계절",
+    "requirement": "barbara",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">바바라</span>일 때 해당 카드를 장착할 수 있다.\\n바바라가 해당 카드를 장착 후 즉시 <span style=\"color: #FFD780FF;\">광휘의 계절</span>을 1회 사용한다.\\n해당 카드를 장착한 바바라가 필드에 있을 시, <span style=\"color: #FFFFFFFF;\">노래의 고리</span>는 아군이 「캐릭터 교체」 행동 시 소모되는 원소 주사위를 1개 감소시킨다. (턴당 1회)\\n(카드 덱에 바바라가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 212021,
+    "id": "the_scent_remained",
+    "type": "talent",
+    "name": "장막의 잔향",
+    "requirement": "xingqiu",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">행추</span>일 때 해당 카드를 장착할 수 있다.\\n행추가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">장막의 잔향</span>을 1회 사용한다.\\n해당 카드를 장착한 행추가 생성한 <span style=\"color: #FFFFFFFF;\">우렴검</span>의 기본 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>+1\\n(카드 덱에 행추가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 212031,
+    "id": "prophecy_of_submersion",
+    "type": "talent",
+    "name": "침몰한 예언",
+    "requirement": "mona",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">모나</span>일 때 해당 카드를 장착할 수 있다.\\n모나가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">침몰한 예언</span>을 1회 사용한다.\\n해당 카드를 장착한 모나가 출전하는 동안 아군이 발동한 <span style=\"color: #80C0FFFF;\">물 원소 관련 반응</span> 피해+2pt\\n(카드 덱에 모나가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 213011,
+    "id": "flowing_flame",
+    "type": "talent",
+    "name": "유화의 화상",
+    "requirement": "diluc",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">다이루크</span>일 때 해당 카드를 장착할 수 있다.\\n다이루크가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">유화의 화상</span>을 1회 사용한다.\\n해당 카드를 장착한 다이루크가 매 턴에서 <span style=\"color: #FFFFFFFF;\">유화의 화상</span>을 두 번째 사용 시 <span style=\"color: #FF9999FF;\">불 원소</span> 소모 개수-1\\n(카드 덱에 다이루크가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 213021,
+    "id": "crossfire",
+    "type": "talent",
+    "name": "교차 화력",
+    "requirement": "xiangling",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">향릉</span>일 때 해당 카드를 장착할 수 있다.\\n향릉이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">교차 화력</span>을 1회 사용한다.\\n해당 카드를 장착한 향릉이 <span style=\"color: #FFFFFFFF;\">교차 화력</span>을 발동 시 자신도 <span style=\"color: #FF9999FF;\">불 원소 피해</span>를 1pt 가한다.\\n(카드 덱에 향릉이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 213031,
+    "id": "grand_expectation",
+    "type": "talent",
+    "name": "모험 동경",
+    "requirement": "bennett",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">베넷</span>일 때 해당 카드를 장착할 수 있다.\\n베넷이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">모험 동경</span>을 1회 사용한다.\\n해당 카드를 장착한 베넷이 생성한 <span style=\"color: #FFFFFFFF;\">격려의 영역</span>의 피해 증가 효과가 상시 발동으로 바뀌며 HP 제한 조건이 사라진다.\\n(카드 덱에 베넷이 카드 덱에 있어야만 추가 가능)"
+    }
+  },
+  {
+    "_id": 213051,
+    "id": "naganohara_meteor_swarm",
+    "type": "talent",
+    "name": "나가노하라 유성군",
+    "requirement": "yoimiya",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">요이미야</span>일 때 해당 카드를 장착할 수 있다.\\n요이미야가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">나가노하라 유성군</span>을 1회 사용한다.\\n해당 카드를 장착한 요이미야가 <span style=\"color: #FFFFFFFF;\">정화 염초</span>를 발동 후: 추가로 <span style=\"color: #FF9999FF;\">불 원소 피해</span>를 1pt 가한다.\\n(카드 덱에 요이미야가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 214011,
+    "id": "stellar_predator",
+    "type": "talent",
+    "name": "별을 삼킨 까마귀",
+    "requirement": "fischl",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">피슬</span>일 때 해당 카드를 장착할 수 있다.\\n피슬이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">별을 삼킨 까마귀</span>를 1회 사용한다.\\n해당 카드를 장착한 피슬이 소환한 <span style=\"color: #FFFFFFFF;\">오즈</span>는 피슬이 <span style=\"color: #FFFFFFFF;\">일반 공격</span> 발동 시 <span style=\"color: #FFACFFFF;\">번개 원소 피해</span>를 2pt 가한다. (<span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span> 소모 필요)\\n(카드 덱에 피슬이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 214021,
+    "id": "awakening",
+    "type": "talent",
+    "name": "각성",
+    "requirement": "razor",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">레이저</span>일 때 해당 카드를 장착할 수 있다.\\n레이저가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">각성</span>를 1회 사용한다.\\n해당 카드를 장착한 레이저가 <span style=\"color: #FFFFFFFF;\">각성를 사용 시</span>: 아군의 번개 원소 캐릭터 1명이 원소 에너지를 1pt 획득한다. (출전 캐릭터 우선)\\n(카드 덱에 레이저가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 214031,
+    "id": "thundering_penance",
+    "type": "talent",
+    "name": "하늘에 닿은 뇌벌",
+    "requirement": "keqing",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">각청</span>일 때 해당 카드를 장착할 수 있다.\\n각청이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">하늘에 닿은 뇌벌</span>를 1회 사용한다.\\n해당 카드를 장착한 각청이 생성한 <span style=\"color: #FFFFFFFF;\">번개 원소 부여</span>가 아래의 효과를 획득한다.\\n기본 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>+1 및 부착 캐릭터가 가하는 <span style=\"color: #FFACFFFF;\">번개 원소 피해</span>+1pt\\n(카드 덱에 각청이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 214041,
+    "id": "featherfall_judgment",
+    "type": "talent",
+    "name": "낙하하는 깃털의 심판",
+    "requirement": "cyno",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">사이노</span>일 때 해당 카드를 장착할 수 있다.\\n사이노가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">낙하하는 깃털의 심판</span>를 1회 사용한다.\\n해당 카드를 장착한 사이노의 <span style=\"color: #FFFFFFFF;\">길을 여는 사자</span> 「빙의」가 Lv.3 혹은 Lv.5일 때 <span style=\"color: #FFFFFFFF;\">낙하하는 깃털의 심판</span>를 발동하면 가하는 피해+1pt\\n(카드 덱에 사이노가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 215011,
+    "id": "chaotic_entropy",
+    "type": "talent",
+    "name": "혼돈의 엔트로피",
+    "requirement": "sucrose",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">설탕</span>일 때 해당 카드를 장착할 수 있다.\\n설탕이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">혼돈의 엔트로피</span>을 1회 사용한다.\\n해당 카드를 장착한 설탕이 생성한 <span style=\"color: #FFFFFFFF;\">거대 풍령</span>이 다른 원소로 전환된 후: 아군이 해당 원소 타입으로 가하는 피해+1pt\\n(카드 덱에 설탕이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 215021,
+    "id": "lands_of_dandelion",
+    "type": "talent",
+    "name": "민들레의 국토",
+    "requirement": "jean",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">진</span>일 때 해당 카드를 장착할 수 있다.\\n진이 해당 카드를 장착 후 즉시 <span style=\"color: #FFD780FF;\">민들레의 국토</span>을 1회 사용한다.\\n해당 카드를 장착한 진이 필드에 있을 시, <span style=\"color: #FFFFFFFF;\">민들레 영역</span>은 아군이 가하는 <span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">바람 원소 피해</span></span>를 1pt 증가시킨다.\\n(카드 덱에 진이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 216011,
+    "id": "strategic_reserve",
+    "type": "talent",
+    "name": "사전 준비",
+    "requirement": "ningguang",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">응광</span>일 때 해당 카드를 장착할 수 있다.\\n응광이 해당 카드를 장착 후 즉시 <span style=\"color: #FFD780FF;\">사전 준비</span>을 1회 사용한다.\\n해당 카드를 장착한 응광이 필드에 있을 시, <span style=\"color: #FFFFFFFF;\">선기 병풍</span>은 아군이 가하는 <span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">바위 원소 피해</span></span>를 1pt 증가시킨다.\\n(카드 덱에 응광이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 216021,
+    "id": "i_got_your_back",
+    "type": "talent",
+    "name": "지원은 저한테 맡기세요",
+    "requirement": "noelle",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">노엘</span>일 때 해당 카드를 장착할 수 있다.\\n노엘이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">지원은 저한테 맡기세요</span>을 1회 사용한다.\\n해당 카드를 장착한 노엘이 <span style=\"color: #FFFFFFFF;\">바위 갑주</span>를 생성하면 노엘이 <span style=\"color: #FFFFFFFF;\">일반 공격</span> 발동 후 모든 아군 캐릭터의 HP가 1pt 치유된다. (턴당 1회)\\n(카드 덱에 노엘이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 217011,
+    "id": "floral_sidewinder",
+    "type": "talent",
+    "name": "되돌아오는 잎새",
+    "requirement": "collei",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">콜레이</span>일 때 해당 카드를 장착할 수 있다.\\n콜레이가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">되돌아오는 잎새</span>을 1회 사용한다.\\n해당 카드를 장착한 콜레이가 <span style=\"color: #FFFFFFFF;\">되돌아오는 잎새</span>을 사용한 턴에서 아군 캐릭터가 스킬로 <span style=\"color: #7EC236FF;\">풀 원소 관련 반응</span>을 유발 후: <span style=\"color: #7EC236FF;\">풀 원소 피해</span>를 1pt 가한다. (턴당 1회)\\n(카드 덱에 콜레이가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 222011,
+    "id": "streaming_surge",
+    "type": "talent",
+    "name": "세찬 격류",
+    "requirement": "rhodeia_of_loch",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">물의 정령·로데이아</span>일 때 해당 카드를 장착할 수 있다.\\n물의 정령·로데이아가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">세찬 격류</span>를 1회 사용한다.\\n해당 카드를 장착한 물의 정령·로데이아가 <span style=\"color: #FFFFFFFF;\">세찬 격류</span>를 발동 시 모든 아군 소환물의 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>+1\\n(카드 덱에 물의 정령·로데이아가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 222021,
+    "id": "mirror_cage",
+    "type": "talent",
+    "name": "거울의 속박",
+    "requirement": "mirror_maiden",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">우인단·거울의 여인</span>일 때 해당 카드를 장착할 수 있다.\\n우인단·거울의 여인이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">거울의 속박</span>를 1회 사용한다.\\n해당 카드를 장착한 우인단·거울의 여인이 생성한 <span style=\"color: #FFFFFFFF;\">깨진 물빛 거울</span>이 아래의 효과를 획득한다.\\n기본 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">지속 턴</span>+1 및 부착 캐릭터를 다른 캐릭터로 교체 시 원소 주사위 소모 개수+1\\n(카드 덱에 우인단·거울의 여인이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 223011,
+    "id": "paid_in_full",
+    "type": "talent",
+    "name": "전부 되돌려주지",
+    "requirement": "fatui_pyro_agent",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">우인단·화염 채무 처리인</span>일 때 해당 카드를 장착할 수 있다.\\n우인단·화염 채무 처리인이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">전부 되돌려주지</span>을 1회 사용한다.\\n해당 카드를 장착한 우인단·화염 채무 처리인이 생성한 <span style=\"color: #FFFFFFFF;\">잠행</span>이 아래의 효과를 획득한다.\\n기본 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>+1 및 부착 캐릭터가 가하는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>가 <span style=\"color: #FF9999FF;\">불 원소 피해</span>로 전환된다.\\n(카드 덱에 우인단·화염 채무 처리인이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 225011,
+    "id": "transcendent_automaton",
+    "type": "talent",
+    "name": "신통방통",
+    "requirement": "maguu_kenki",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">꼭두각시 검귀</span>일 때 해당 카드를 장착할 수 있다.\\n꼭두각시 검귀가 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">신통방통</span>를 1회 사용한다.\\n해당 카드를 장착한 꼭두각시 검귀가 <span style=\"color: #FFFFFFFF;\">신통방통</span>를 발동하면 다음 아군 캐릭터로 교체되며 <span style=\"color: #FFFFFFFF;\">신통방통</span>을 발동하면 이전 아군 캐릭터로 교체된다.\\n(카드 덱에 꼭두각시 검귀가 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 226011,
+    "id": "stonehide_reforged",
+    "type": "talent",
+    "name": "재건: 바위 투구",
+    "requirement": "stonehide_lawachurl",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">츄츄 바위왕</span>일 때 해당 카드를 장착할 수 있다.\\n츄츄 바위왕이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">재건: 바위 투구</span>를 1회 사용한다.\\n해당 카드를 장착한 츄츄 바위왕이 상대 캐릭터를 처치하면 츄츄 바위왕에게 <span style=\"color: #FFFFFFFF;\">바위 투구</span>와 <span style=\"color: #FFFFFFFF;\">견고한 바위의 힘</span>이 다시 부착된다.\\n(카드 덱에 츄츄 바위왕이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 227011,
+    "id": "proliferating_spores",
+    "type": "talent",
+    "name": "포자 증식",
+    "requirement": "jadeplume_terrorshroom",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>: 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\">공포의 취령 버섯</span>일 때 해당 카드를 장착할 수 있다.\\n공포의 취령 버섯이 해당 카드를 장착하면 즉시 <span style=\"color: #FFD780FF;\">포자 증식</span>을 1회 사용한다.\\n해당 카드를 장착한 공포의 취령 버섯의 「활력 자극」 누적 스택 최대치+1\\n(카드 덱에 공포의 취령 버섯이 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 311101,
+    "id": "magic_guide",
+    "type": "weapon",
+    "name": "마도 서론",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n(<span style=\"color: #FFFFFFFF;\">「법구」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311102,
+    "id": "sacrificial_fragments",
+    "type": "weapon",
+    "name": "제례의 악장",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n<span style=\"color: #FFFFFFFF;\">캐릭터가 「원소전투 스킬」 사용 후:</span> 해당 캐릭터와 동일한 타입의 원소 주사위를 1개 생성한다. (턴당 1회)\\n(<span style=\"color: #FFFFFFFF;\">「법구」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311103,
+    "id": "skyward_atlas",
+    "type": "weapon",
+    "name": "천공의 두루마리",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n<span style=\"color: #FFFFFFFF;\">턴당 1회:</span> 캐릭터가 「일반 공격」으로 가하는 피해+1pt\\n(<span style=\"color: #FFFFFFFF;\">「법구」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311201,
+    "id": "raven_bow",
+    "type": "weapon",
+    "name": "까마귀깃 활",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n(<span style=\"color: #FFFFFFFF;\">「활」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311202,
+    "id": "sacrificial_bow",
+    "type": "weapon",
+    "name": "제례활",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n<span style=\"color: #FFFFFFFF;\">캐릭터가 「원소전투 스킬」 사용 후:</span> 해당 캐릭터와 동일한 타입의 원소 주사위를 1개 생성한다. (턴당 1회)\\n(<span style=\"color: #FFFFFFFF;\">「활」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311203,
+    "id": "skyward_harp",
+    "type": "weapon",
+    "name": "천공의 날개",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n<span style=\"color: #FFFFFFFF;\">턴당 1회:</span> 캐릭터가 「일반 공격」으로 가하는 피해+1pt\\n(<span style=\"color: #FFFFFFFF;\">「활」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311301,
+    "id": "white_iron_greatsword",
+    "type": "weapon",
+    "name": "백철 대검",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n(<span style=\"color: #FFFFFFFF;\">「양손검」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311302,
+    "id": "sacrificial_greatsword",
+    "type": "weapon",
+    "name": "제례 대검",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n<span style=\"color: #FFFFFFFF;\">캐릭터가 「원소전투 스킬」 사용 후:</span> 해당 캐릭터와 동일한 타입의 원소 주사위를 1개 생성한다. (턴당 1회)\\n(<span style=\"color: #FFFFFFFF;\">「양손검」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311303,
+    "id": "wolfs_gravestone",
+    "type": "weapon",
+    "name": "늑대의 말로",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\nHP가 6pt 이하인 대상을 공격 시 추가로 2pt의 피해를 가한다.\\n(<span style=\"color: #FFFFFFFF;\">「양손검」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311401,
+    "id": "white_tassel",
+    "type": "weapon",
+    "name": "백술창",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n(<span style=\"color: #FFFFFFFF;\">「장병기」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311402,
+    "id": "lithic_spear",
+    "type": "weapon",
+    "name": "천암장창",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n필드 입장 시: 파티에 「리월」 캐릭터가 1명 존재할 때마다 해당 카드는 부착 캐릭터에게 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">보호막</span>을 1pt 제공한다</span>. (최대 3pt)\\n(<span style=\"color: #FFFFFFFF;\">「장병기」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311403,
+    "id": "skyward_spine",
+    "type": "weapon",
+    "name": "천공의 마루",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n<span style=\"color: #FFFFFFFF;\">턴당 1회:</span> 캐릭터가 「일반 공격」으로 가하는 피해+1pt\\n(<span style=\"color: #FFFFFFFF;\">「장병기」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311501,
+    "id": "travelers_handy_sword",
+    "type": "weapon",
+    "name": "여행자의 검",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n(<span style=\"color: #FFFFFFFF;\">「한손검」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311502,
+    "id": "sacrificial_sword",
+    "type": "weapon",
+    "name": "제례검",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n<span style=\"color: #FFFFFFFF;\">캐릭터가 「원소전투 스킬」 사용 후:</span> 해당 캐릭터와 동일한 타입의 원소 주사위를 1개 생성한다. (턴당 1회)\\n(<span style=\"color: #FFFFFFFF;\">「한손검」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 311503,
+    "id": "aquila_favonia",
+    "type": "weapon",
+    "name": "매의 검",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 가하는 피해+1pt</span>\\n<span style=\"color: #FFFFFFFF;\">상대방이 스킬 사용 후:</span> 부착 캐릭터가 「출전 캐릭터」일 경우, 해당 캐릭터의 HP를 1pt 치유한다. (턴당 최대 2회)\\n(<span style=\"color: #FFFFFFFF;\">「한손검」 캐릭터</span>만 장착 가능. 캐릭터는 「무기」를 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312001,
+    "id": "adventurers_bandana",
+    "type": "artifact",
+    "name": "모험가의 머리띠",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 「일반 공격」 사용 후:</span> 자신의 HP를 1pt 치유한다. (턴당 최대 3회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312002,
+    "id": "lucky_dogs_silver_circlet",
+    "type": "artifact",
+    "name": "행운아의 은관",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 「원소전투 스킬」 사용 후:</span> 자신의 HP를 2pt 치유한다. (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312003,
+    "id": "traveling_doctors_handkerchief",
+    "type": "artifact",
+    "name": "떠돌이 의사의 두건",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 「원소폭발」 사용 후:</span> 모든 아군 캐릭터 HP를 1pt 치유한다. (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312004,
+    "id": "gamblers_earrings",
+    "type": "artifact",
+    "name": "노름꾼의 귀걸이",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">상대 캐릭터 처치 후:</span> 부착 캐릭터가 「출전 캐릭터」일 경우 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">만능 원소</span>를 2개 생성한다.\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312005,
+    "id": "instructors_cap",
+    "type": "artifact",
+    "name": "교관의 모자",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 원소 반응 발동 후:</span> 해당 캐릭터 원소 타입의 원소 주사위를 1개 생성한다. (턴당 최대 3회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312006,
+    "id": "exiles_circlet",
+    "type": "artifact",
+    "name": "유배자의 머리장식",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 원소폭발 사용 후:</span> 대기 상태인 모든 아군 캐릭터의 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">원소 에너지</span>+1pt (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312101,
+    "id": "broken_rimes_echo",
+    "type": "artifact",
+    "name": "빙설을 밟는 소리",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #99FFFFFF;\">얼음 원소</span> 소모 개수-1 (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312102,
+    "id": "blizzard_strayer",
+    "type": "artifact",
+    "name": "얼음바람 속에서 길잃은 용사",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #99FFFFFF;\">얼음 원소</span> 소모 개수-1 (턴당 1회)\\n<span style=\"color: #FFFFFFFF;\">주사위 단계:</span> 처음 주사위를 굴릴 때 확정으로 <span style=\"color: #99FFFFFF;\">얼음 원소</span>를 2개 획득한다.\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312201,
+    "id": "wine-stained_tricorne",
+    "type": "artifact",
+    "name": "술로 얼룩진 수병모",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #80C0FFFF;\">물 원소</span> 소모 개수-1 (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312202,
+    "id": "heart_of_depth",
+    "type": "artifact",
+    "name": "몰락한 마음",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #80C0FFFF;\">물 원소</span> 소모 개수-1 (턴당 1회)\\n<span style=\"color: #FFFFFFFF;\">주사위 단계:</span> 처음 주사위를 굴릴 때 확정으로 <span style=\"color: #80C0FFFF;\">물 원소</span>를 2개 획득한다.\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312301,
+    "id": "witchs_scorching_hat",
+    "type": "artifact",
+    "name": "불타오르는 마녀 모자",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #FF9999FF;\">불 원소</span> 소모 개수-1 (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312302,
+    "id": "crimson_witch_of_flames",
+    "type": "artifact",
+    "name": "불타오르는 화염의 마녀",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #FF9999FF;\">불 원소</span> 소모 개수-1 (턴당 1회)\\n<span style=\"color: #FFFFFFFF;\">주사위 단계:</span> 처음 주사위를 굴릴 때 확정으로 <span style=\"color: #FF9999FF;\">불 원소</span>를 2개 획득한다.\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312401,
+    "id": "thunder_summoners_crown",
+    "type": "artifact",
+    "name": "번개를 부르는 모자",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #FFACFFFF;\">번개 원소</span> 소모 개수-1 (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312402,
+    "id": "thundering_fury",
+    "type": "artifact",
+    "name": "번개 같은 분노",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #FFACFFFF;\">번개 원소</span> 소모 개수-1 (턴당 1회)\\n<span style=\"color: #FFFFFFFF;\">주사위 단계:</span> 처음 주사위를 굴릴 때 확정으로 <span style=\"color: #FFACFFFF;\">번개 원소</span>를 2개 획득한다.\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312501,
+    "id": "viridescent_venerers_diadem",
+    "type": "artifact",
+    "name": "청록색 사냥꾼의 모자",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #80FFD7FF;\">바람 원소</span> 소모 개수-1 (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312502,
+    "id": "viridescent_venerer",
+    "type": "artifact",
+    "name": "청록색 그림자",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #80FFD7FF;\">바람 원소</span> 소모 개수-1 (턴당 1회)\\n<span style=\"color: #FFFFFFFF;\">주사위 단계:</span> 처음 주사위를 굴릴 때 확정으로 <span style=\"color: #80FFD7FF;\">바람 원소</span>를 2개 획득한다.\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312601,
+    "id": "mask_of_solitude_basalt",
+    "type": "artifact",
+    "name": "부동현석의 상",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #FFE699FF;\">바위 원소</span> 소모 개수-1 (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312602,
+    "id": "archaic_petra",
+    "type": "artifact",
+    "name": "유구한 반암",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #FFE699FF;\">바위 원소</span> 소모 개수-1 (턴당 1회)\\n<span style=\"color: #FFFFFFFF;\">주사위 단계:</span> 처음 주사위를 굴릴 때 확정으로 <span style=\"color: #FFE699FF;\">바위 원소</span>를 2개 획득한다.\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312701,
+    "id": "laurel_coronet",
+    "type": "artifact",
+    "name": "월계수 왕관",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #99FF88FF;\">풀 원소</span> 소모 개수-1 (턴당 1회)\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 312702,
+    "id": "deepwood_memories",
+    "type": "artifact",
+    "name": "숲의 기억",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">캐릭터가 스킬 사용 혹은 「특성」 장착 시:</span> <span style=\"color: #99FF88FF;\">풀 원소</span> 소모 개수-1 (턴당 1회)\\n<span style=\"color: #FFFFFFFF;\">주사위 단계:</span> 처음 주사위를 굴릴 때 확정으로 <span style=\"color: #99FF88FF;\">풀 원소</span>를 2개 획득한다.\\n(캐릭터는 「성유물」을 1개만 장착할 수 있다)"
+    }
+  },
+  {
+    "_id": 321001,
+    "id": "liyue_harbor_wharf",
+    "type": "place",
+    "name": "리월 항구",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 카드를 2장 드로우한다.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2"
+    }
+  },
+  {
+    "_id": 321002,
+    "id": "knights_of_favonius_library",
+    "type": "place",
+    "name": "기사단 도서관",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">필드 입장 시:</span> 임의의 원소 주사위를 선택 후 다시 굴린다.\\n<span style=\"color: #FFFFFFFF;\">주사위 단계:</span> 다시 굴리기 기회를 추가로 1회 획득한다."
+    }
+  },
+  {
+    "_id": 321003,
+    "id": "jade_chamber",
+    "type": "place",
+    "name": "군옥각",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">주사위 단계:</span> 처음 주사위를 굴릴 때 확정으로 아군 출전 캐릭터와 같은 원소 타입을 2개 획득한다."
+    }
+  },
+  {
+    "_id": 321004,
+    "id": "dawn_winery",
+    "type": "place",
+    "name": "다운 와이너리",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">아군이 「캐릭터 교체」 행동 진행 시:</span> 원소 주사위 소모 개수-1 (턴당 1회)"
+    }
+  },
+  {
+    "_id": 321005,
+    "id": "wangshu_inn",
+    "type": "place",
+    "name": "망서 객잔",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 피해를 가장 많이 받은 아군 대기 캐릭터의 HP를 2pt 치유한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 321006,
+    "id": "favonius_cathedral",
+    "type": "place",
+    "name": "페보니우스 대성당",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 아군 출전 캐릭터의 HP를 2pt 치유한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 322001,
+    "id": "paimon",
+    "type": "ally",
+    "name": "페이몬",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">행동 단계 시작 시:</span> <span style=\"color: #FFFFFFFF; text-decoration: underline;\">만능 원소</span>를 2개 생성한다.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 322002,
+    "id": "katheryne",
+    "type": "ally",
+    "name": "캐서린",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">아군이 「캐릭터 교체」 행동 진행 시:</span> 이번 교체를 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>」이 아닌 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">빠른 행동</span>」으로 간주한다. (턴당 1회)"
+    }
+  },
+  {
+    "_id": 322003,
+    "id": "timaeus",
+    "type": "ally",
+    "name": "데마로우스",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "필드 입장 시 「합성 재료」 2개 보유.\\n<span style=\"color: #FFFFFFFF;\">종료 단계</span>: 「합성 재료」를 1개 보충한다.\\n<span style=\"color: #FFFFFFFF;\">「성유물」 카드 사용 시:</span> 조건에 부합하면 「성유물」의 총 코스트와 동일한 「합성 재료」를 소모하여 해당 「성유물」을 무료로 장착한다. (턴당 1회)"
+    }
+  },
+  {
+    "_id": 322004,
+    "id": "wagner",
+    "type": "ally",
+    "name": "바그너",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "필드 입장 시 「단조 원형」 2개 보유.\\n<span style=\"color: #FFFFFFFF;\">종료 단계</span>: 「단조 원형」을 1개 보충한다.\\n<span style=\"color: #FFFFFFFF;\">「무기」 카드 사용 시:</span> 조건에 부합하면 「무기」의 총 코스트와 동일한 「단조 원형」을 소모하여 해당 「무기」를 무료로 장착한다. (턴당 1회)"
+    }
+  },
+  {
+    "_id": 322005,
+    "id": "chef_mao",
+    "type": "ally",
+    "name": "묘 사부",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">「요리」 이벤트 카드 사용 후: </span>랜덤으로 일반 원소 주사위를 1개 생성한다. (턴당 1회)"
+    }
+  },
+  {
+    "_id": 322006,
+    "id": "tubby",
+    "type": "ally",
+    "name": "포롱이",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">「필드」 서포트 카드 사용 시:</span> 원소 주사위 소모 개수-2 (턴당 1회)"
+    }
+  },
+  {
+    "_id": 322007,
+    "id": "timmie",
+    "type": "ally",
+    "name": "티미",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">턴마다 자동으로 1회 발동:</span> <span style=\"color: #FFFFFFFF;\">「비둘기」를 1마리</span> 누적한다.\\n해당 카드로 <span style=\"color: #FFFFFFFF;\">「비둘기」 3마리</span> 누적 시 이 카드를 버린 후: 카드를 1장 드로우하고 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">만능 원소</span>를 1개 생성한다."
+    }
+  },
+  {
+    "_id": 322008,
+    "id": "liben",
+    "type": "ally",
+    "name": "본이",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 아군이 사용하지 않은 원소 주사위를 수집한다. (원소 타입마다 최대 1개)\\n<span style=\"color: #FFFFFFFF;\">행동 단계 시작 시:</span> 만약 해당 카드로 원소 주사위를 3개 수집했다면 카드를 2장 드로우하고 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">만능 원소</span>를 2개 생성한 후 해당 카드를 버린다."
+    }
+  },
+  {
+    "_id": 322009,
+    "id": "chang_the_ninth",
+    "type": "ally",
+    "name": "상구야",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">양측 캐릭터가 스킬 사용 후:</span> <span style=\"color: #FFFFFFFF; text-decoration: underline;\">물리 피해</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">관통 피해</span>를 주거나, <span style=\"color: #FFFFFFFF;\">원소 반응</span>을 발동한 경우, 해당 카드는 <span style=\"color: #FFFFFFFF;\">「영감」을 1개</span> 누적한다.\\n해당 카드로 <span style=\"color: #FFFFFFFF;\">「영감」 3개</span> 누적 시 이 카드를 버린 후: 카드를 2장 드로우한다."
+    }
+  },
+  {
+    "_id": 322010,
+    "id": "ellin",
+    "type": "ally",
+    "name": "엘린",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">아군 캐릭터가 이번 턴에 사용했던 스킬 사용 시:</span> 원소 주사위 소모 개수-1 (턴당 1회)"
+    }
+  },
+  {
+    "_id": 322011,
+    "id": "iron_tongue_tian",
+    "type": "ally",
+    "name": "전달변",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">종료 단계:</span> 원소 에너지가 가득 차지 않은 아군 캐릭터 1명이 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">원소 에너지</span>를 1pt 획득한다. (출전 캐릭터 우선)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 322012,
+    "id": "liu_su",
+    "type": "ally",
+    "name": "유소",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">아군 캐릭터 교체 후:</span> 교체 후 출전한 캐릭터에게 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">원소 에너지</span>가 없으면 해당 캐릭터가 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">원소 에너지</span>를 1pt 획득한다. (턴당 1회)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 323001,
+    "id": "parametric_transformer",
+    "type": "item",
+    "name": "매개 변수 변환기",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">양측 캐릭터가 스킬 사용 후:</span> 원소 피해를 가할 경우 해당 카드는 <span style=\"color: #FFFFFFFF;\">「질적 변화 진도」를 1개</span> 누적한다.\\n해당 카드로 <span style=\"color: #FFFFFFFF;\">「질적 변화 진도」 3개</span> 누적 시 이 카드를 버린 후: 각각 다른 타입의 일반 원소 주사위를 3개 생성한다."
+    }
+  },
+  {
+    "_id": 323002,
+    "id": "nre",
+    "type": "item",
+    "name": "영양키트",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">필드 입장 시:</span> 덱에서 랜덤으로 「요리」 이벤트 카드를 1장 드로우한다.\\n<span style=\"color: #FFFFFFFF;\">아군이 「요리」 이벤트 카드 사용 시:</span> 덱에서 랜덤으로 「요리」 이벤트 카드를 1장 드로우한다. (턴당 1회)"
+    }
+  },
+  {
+    "_id": 331101,
+    "id": "elemental_resonance_woven_ice",
+    "type": "resonance",
+    "name": "원소 공명: 뒤엉킨 얼음",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #99FFFFFF;\">얼음 원소 주사위</span>를 1개 생성한다.\\n(카드 덱에 <span style=\"color: #99FFFFFF;\">얼음 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331102,
+    "id": "elemental_resonance_shattering_ice",
+    "type": "resonance",
+    "name": "원소 공명: 분쇄의 얼음",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 1
+        }
+      ],
+      "desc": "이번 턴에서 현재 아군 출전 캐릭터가 다음번에 가하는 피해+2pt\\n(카드 덱에 <span style=\"color: #99FFFFFF;\">얼음 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331201,
+    "id": "elemental_resonance_woven_waters",
+    "type": "resonance",
+    "name": "원소 공명: 뒤엉킨 물",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #80C0FFFF;\">물 원소 주사위</span>를 1개 생성한다.\\n(카드 덱에 <span style=\"color: #80C0FFFF;\">물 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331202,
+    "id": "elemental_resonance_soothing_water",
+    "type": "resonance",
+    "name": "원소 공명: 치유의 물",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 1
+        }
+      ],
+      "desc": "아군 출전 캐릭터의 HP를 2pt 치유하고 모든 아군 대기 캐릭터의 HP를 1pt 치유한다.\\n(카드 덱에 <span style=\"color: #80C0FFFF;\">물 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331301,
+    "id": "elemental_resonance_woven_flames",
+    "type": "resonance",
+    "name": "원소 공명: 뒤엉킨 불",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FF9999FF;\">불 원소 주사위</span>를 1개 생성한다.\\n(카드 덱에 <span style=\"color: #FF9999FF;\">불 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331302,
+    "id": "elemental_resonance_fervent_flames",
+    "type": "resonance",
+    "name": "원소 공명: 열정의 불",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 1
+        }
+      ],
+      "desc": "현재 아군 출전 캐릭터가 이번 턴에서 다음번에 <span style=\"color: #FF9999FF;\">불 원소 관련 반응</span>을 발동하면 가하는 피해+3pt\\n(카드 덱에 <span style=\"color: #FF9999FF;\">불 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331401,
+    "id": "elemental_resonance_woven_thunder",
+    "type": "resonance",
+    "name": "원소 공명: 뒤엉킨 번개",
+    "requirement": "electro",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFACFFFF;\">번개 원소 주사위</span>를 1개 생성한다.\\n(카드 덱에 <span style=\"color: #FFACFFFF;\">번개 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331402,
+    "id": "elemental_resonance_high_voltage",
+    "type": "resonance",
+    "name": "원소 공명: 고에너지의 번개",
+    "requirement": "electro",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 1
+        }
+      ],
+      "desc": "원소 에너지가 가득 차지 않은 아군 캐릭터 1명이 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">원소 에너지</span>를 1pt 획득한다. (출전 캐릭터 우선)\\n(카드 덱에 <span style=\"color: #FFACFFFF;\">번개 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331501,
+    "id": "elemental_resonance_woven_winds",
+    "type": "resonance",
+    "name": "원소 공명: 뒤엉킨 바람",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #80FFD7FF;\">바람 원소 주사위</span>를 1개 생성한다.\\n(카드 덱에 <span style=\"color: #80FFD7FF;\">바람 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331502,
+    "id": "elemental_resonance_impetuous_winds",
+    "type": "resonance",
+    "name": "원소 공명: 신속의 바람",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 1
+        }
+      ],
+      "desc": "대상 캐릭터로 교체하고 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">만능 원소</span>를 1개 생성한다.\\n(카드 덱에 <span style=\"color: #80FFD7FF;\">바람 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331601,
+    "id": "elemental_resonance_woven_stone",
+    "type": "resonance",
+    "name": "원소 공명: 뒤엉킨 바위",
+    "requirement": "geo",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFE699FF;\">바위 원소 주사위</span>를 1개 생성한다.\\n(카드 덱에 <span style=\"color: #FFE699FF;\">바위 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331602,
+    "id": "elemental_resonance_enduring_rock",
+    "type": "resonance",
+    "name": "원소 공명: 부동의 바위",
+    "requirement": "geo",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        }
+      ],
+      "desc": "아군 캐릭터가 이번 턴에서 다음번에 <span style=\"color: #FFE699FF;\">바위 원소 피해</span>를 가한 후: 아군에 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">보호막</span>」을 제공하는 출전 상태가 존재하는 경우, 해당 유형의 출전 상태 1개에 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">보호막</span>」을 3pt 보충한다.\\n(카드 덱에 <span style=\"color: #FFE699FF;\">바위 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331701,
+    "id": "elemental_resonance_woven_weeds",
+    "type": "resonance",
+    "name": "원소 공명: 뒤엉킨 풀",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #99FF88FF;\">풀 원소 주사위</span>를 1개 생성한다.\\n(카드 덱에 <span style=\"color: #99FF88FF;\">풀 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 331702,
+    "id": "elemental_resonance_sprawling_greenery",
+    "type": "resonance",
+    "name": "원소 공명: 만생의 풀",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 1
+        }
+      ],
+      "desc": "아군이 이번 턴에서 다음번에 원소 반응 발동 시 가하는 피해+2pt\\n아군 필드 위의 <span style=\"color: #FFFFFFFF;\">불타는 화염, 풀 원핵, 격화 영역</span>의 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>」+1\\n(카드 덱에 <span style=\"color: #99FF88FF;\">풀 원소</span> 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 332001,
+    "id": "the_bestest_travel_companion!",
+    "type": "none",
+    "name": "최고의 파트너!",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "해당 카드를 사용할 때 소모한 원소 주사위를 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">만능 원소</span> 2개로 전환한다."
+    }
+  },
+  {
+    "_id": 332002,
+    "id": "changing_shifts",
+    "type": "none",
+    "name": "근무 교대 시간",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">아군이 다음번에 「캐릭터 교체」 행동 진행 시:</span> 원소 주사위 소모 개수-1"
+    }
+  },
+  {
+    "_id": 332003,
+    "id": "toss-up",
+    "type": "none",
+    "name": "건곤일척",
+    "skills": {
+      "cost": [],
+      "desc": "임의의 원소 주사위를 골라 최대 2회 <span style=\"color: #FFFFFFFF;\">다시 굴릴 수 있다</span>."
+    }
+  },
+  {
+    "_id": 332004,
+    "id": "strategize",
+    "type": "none",
+    "name": "전략 구상",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "카드를 2장 드로우한다."
+    }
+  },
+  {
+    "_id": 332005,
+    "id": "i_havent_lost_yet!",
+    "type": "none",
+    "name": "이 몸은 아직 지지 않았어!",
+    "skills": {
+      "cost": [],
+      "desc": "이번 턴에 아군 캐릭터가 처치됐을 경우 사용 가능:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">만능 원소</span>를 1개 생성하고 아군 출전 캐릭터가 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">원소 에너지</span>를 1pt 획득한다."
+    }
+  },
+  {
+    "_id": 332006,
+    "id": "leave_it_to_me!",
+    "type": "none",
+    "name": "제게 맡기세요!",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">아군이 다음 「캐릭터 교체」 행동 진행 시:</span> 이번 교체를 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">전투 행동</span>」이 아닌 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">빠른 행동</span>」으로 간주한다."
+    }
+  },
+  {
+    "_id": 332007,
+    "id": "when_the_crane_returned",
+    "type": "none",
+    "name": "학이 돌아올 때",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">아군이 다음번에 스킬 사용 후:</span> 아군의 다음 대기 캐릭터가 출전 캐릭터로 교체된다."
+    }
+  },
+  {
+    "_id": 332008,
+    "id": "starsigns",
+    "type": "none",
+    "name": "별하늘의 징조",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "아군의 현재 출전 캐릭터가 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">원소 에너지</span>를 1pt 획득한다</span>."
+    }
+  },
+  {
+    "_id": 332009,
+    "id": "calxs_arts",
+    "type": "none",
+    "name": "백악의 술법",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "아군 대기 캐릭터 최대 2명의 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">원소 에너지</span> 1pt를 아군 출전 캐릭터에게 이전시킨다."
+    }
+  },
+  {
+    "_id": 332010,
+    "id": "master_of_weaponry",
+    "type": "none",
+    "name": "무기 마스터리",
+    "skills": {
+      "cost": [],
+      "desc": "아군 캐릭터에게 장착한 「무기」 장비 카드를 무기 유형이 동일한 다른 아군 캐릭터에게 장착한다."
+    }
+  },
+  {
+    "_id": 332011,
+    "id": "blessing_of_the_divine_relics_installation",
+    "type": "none",
+    "name": "성물 안치 축사",
+    "skills": {
+      "cost": [],
+      "desc": "아군 캐릭터에게 장착한 「성유물」 장비 카드를 다른 아군 캐릭터에게 이전한다."
+    }
+  },
+  {
+    "_id": 332012,
+    "id": "quick_knit",
+    "type": "none",
+    "name": "빠른 바느질 기술",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "아군 「소환물」을 1개 선택하고 해당 소환물의 「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">사용 가능 횟수</span>」를 1회 증가시킨다."
+    }
+  },
+  {
+    "_id": 332013,
+    "id": "send_off",
+    "type": "none",
+    "name": "널 저세상으로 데려다줄게",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "상대방의 「소환물」을 1개 선택하여 소멸시킨다."
+    }
+  },
+  {
+    "_id": 332014,
+    "id": "guardians_oath",
+    "type": "none",
+    "name": "호법의 맹세",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 4
+        }
+      ],
+      "desc": "모든 「소환물」을 소멸시킨다. (적군 및 아군 포함!)"
+    }
+  },
+  {
+    "_id": 332015,
+    "id": "abyssal_summons",
+    "type": "none",
+    "name": "심연의 부름",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">랜덤 「츄츄족」 소환물</span>을 1종 소환한다!\\n(카드 덱에 「마물」 캐릭터가 2명 이상 있어야만 카드 덱에 추가 가능)"
+    }
+  },
+  {
+    "_id": 333001,
+    "id": "jueyun_guoba",
+    "type": "food",
+    "name": "절운 누룽지",
+    "skills": {
+      "cost": [],
+      "desc": "대상 캐릭터가 이번 턴에서 가하는 다음번 <span style=\"color: #FFFFFFFF;\">일반 공격</span> 피해+1pt\\n(각 캐릭터는 턴마다 「요리」를 최대 1회 섭취할 수 있다)"
+    }
+  },
+  {
+    "_id": 333002,
+    "id": "adeptus_temptation",
+    "type": "food",
+    "name": "선도장",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "대상 캐릭터가 이번 턴에서 가하는 다음번 <span style=\"color: #FFFFFFFF;\">원소폭발</span> 피해+3pt\\n(각 캐릭터는 턴마다 「요리」를 최대 1회 섭취할 수 있다)"
+    }
+  },
+  {
+    "_id": 333003,
+    "id": "lotus_flower_crisp",
+    "type": "food",
+    "name": "연꽃 파이",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "대상 캐릭터가 이번 턴에서 받는 다음번 피해-3pt\\n(각 캐릭터는 턴마다 「요리」를 최대 1회 섭취할 수 있다)"
+    }
+  },
+  {
+    "_id": 333004,
+    "id": "northern_smoked_chicken",
+    "type": "food",
+    "name": "북극 훈제 닭",
+    "skills": {
+      "cost": [],
+      "desc": "대상 캐릭터가 이번 턴에서 다음번 <span style=\"color: #FFFFFFFF;\">일반 공격</span> 발동 시 소모하는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">무색 원소</span>-1\\n(각 캐릭터는 턴마다 「요리」를 최대 1회 섭취할 수 있다)"
+    }
+  },
+  {
+    "_id": 333005,
+    "id": "sweet_madame",
+    "type": "food",
+    "name": "달콤달콤 닭고기 스튜",
+    "skills": {
+      "cost": [],
+      "desc": "대상 캐릭터의 HP를 1pt 치유한다.\\n(각 캐릭터는 턴마다 「요리」를 최대 1회 섭취할 수 있다)"
+    }
+  },
+  {
+    "_id": 333006,
+    "id": "mondstadt_hash_brown",
+    "type": "food",
+    "name": "몬드 감자전",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "대상 캐릭터의 HP를 2pt 치유한다.\\n(각 캐릭터는 턴마다 「요리」를 최대 1회 섭취할 수 있다)"
+    }
+  },
+  {
+    "_id": 333007,
+    "id": "mushroom_pizza",
+    "type": "food",
+    "name": "버섯피자",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "대상 캐릭터의 HP를 1pt 치유하고 2턴 동안 종료 단계에서 다시 해당 캐릭터의 HP를 1pt 치유한다.\\n(각 캐릭터는 턴마다 「요리」를 최대 1회 섭취할 수 있다)"
+    }
+  },
+  {
+    "_id": 333008,
+    "id": "minty_meat_rolls",
+    "type": "food",
+    "name": "허브 고기말이",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "대상 캐릭터가 이번 턴이 종료되기 전까지 발동하는 모든 <span style=\"color: #FFFFFFFF;\">일반 공격</span>에서 소모하는 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">무색 원소</span>가 1개 감소한다.\\n(각 캐릭터는 턴마다 「요리」를 최대 1회 섭취할 수 있다)"
+    }
+  }
+]

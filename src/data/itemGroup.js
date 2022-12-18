@@ -357,4 +357,8 @@ export const itemGroup = {
     name: 'Satin',
     items: [itemList.faded_red_satin, itemList.trimmed_red_silk, itemList.rich_red_brocade],
   },
+  damaged_prism: {
+    name: 'Damaged Prism',
+    items: [itemList.damaged_prism, itemList.turbid_prism, itemList.radiant_prism],
+  },
 };

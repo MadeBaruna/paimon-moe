@@ -17,6 +17,7 @@
     "radiantSpincrystal": "旋曜玉帛",
     "calendar": "日程",
     "banners": "角色复刻",
+    "tcg": "七圣召唤",
     "settings": "设置",
     "donate": "赞助"
   },
@@ -144,7 +145,7 @@
     "globalWishTally": "全球祈愿统计",
     "pityTooltip": [
       "显示你当前 {rarity} 保底进度",
-      "{count} 抽可获得 {rarity}"
+      "{count} 抽必定获得 {rarity}"
     ],
     "import": {
       "title": "导入祈愿历史记录",
@@ -180,7 +181,7 @@
       "success": "导入成功 😀！",
       "server": "选择你的服务器：",
       "wishTallyCheck": "将你的记录提交到全球祈愿统计数据中",
-      "wishTally": "我们在统计全球的祈愿数据！你可以提交你的记录参与进来。所有祈愿数据会统一整合，用来考察 paimon.moe 用户的平均祈愿情况。",
+      "wishTally": "我们在统计全球的祈愿数据！你可以提交你的记录参与进来。所有祈愿数据会统一整合，用来考察 Paimon.moe 用户的平均祈愿情况。",
       "wishTallyCollected": [
         "会被收集的数据：",
         "和",
@@ -341,7 +342,7 @@
         "pclocal": [
           "如果你不想提供你的URL，你可以使用这个选项在你的电脑上本地处理祈愿历史记录。此脚本将读取你电脑上的日志文件以获取祈愿URL。",
           "打开“开始”菜单，搜索 PowerShell",
-          "打开Windows PowerShell，然后复制粘贴脚本到PowerShell里",
+          "打开 Windows PowerShell，然后复制粘贴脚本到 PowerShell 里",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "你可以查看这个脚本",
           "这里",
@@ -364,7 +365,7 @@
         "此功能还在测试中，请先在设置中导出到excel进行备份！",
         "具有相同时间戳和物品名称的祈愿不会被改动（不会重写已有的祈愿记录）",
         "只会在后续添加和前置补充祈愿，不会在记录的中间插入内容",
-        "目前只支持记录内容为英文的Excel文件"
+        "请先将本站使用的语言更改为你Excel文件使用的语言"
       ],
       "selectFile": {
         "default": "拖放 Paimon.moe 的 Excel 文件到此处，或点击这里选择",
@@ -380,7 +381,7 @@
       "saveNotice": "保存导入的祈愿记录？",
       "save": "保存",
       "success": "Excel 导入成功 😀！",
-      "errorInvalidFile": "无效的excel文件",
+      "errorInvalidFile": "无效的 Excel 文件",
       "errorReadExcel": "读取Excel文件时出错！",
       "errorExcelPaimon": "这不是 Paimon.moe 导出的 Excel 文件",
       "errorUnknownItem": "存在未知的物品名称"
@@ -388,15 +389,15 @@
     "help": {
       "title": "祈愿统计 帮助 & 设置",
       "exportTitle": "导出 / 导入祈愿记录",
-      "exportMessage": "你可以在这里将祈愿记录导出为Excel",
-      "export": "导出到Excel",
+      "exportMessage": "你可以在这里将祈愿记录导出为 Excel。你也可以在此导入从 Paimon.moe 或 TakaGG Gacha 导出的 Excel。",
+      "export": "导出到 Excel",
       "exporting": "导出中…",
-      "import": "导入",
+      "import": "从 Excel 导入",
       "exportFinish": "导出成功，请等待浏览器下载文件！",
       "wishTallyTitle": "提交祈愿到全球统计",
       "wishTally": "我们在统计全球的祈愿数据！你可以提交你的记录参与进来。所有祈愿数据会统一整合，用来考察 Paimon.moe 用户的平均情况。",
       "wishTallyCollected": [
-        "会被收集的内容:",
+        "会被收集的内容：",
         "和",
         "你的祈愿记录"
       ],
@@ -431,7 +432,7 @@
       }
     },
     "types": {
-      "beginners": "初行者推荐祈愿",
+      "beginners": "新手祈愿",
       "standard": "常驻祈愿",
       "character-event": "角色活动祈愿",
       "weapon-event": "武器活动祈愿"
@@ -484,7 +485,7 @@
       "character": "角色",
       "weapon": "武器",
       "winRateOff": "小保底没歪",
-      "winRateOffWeapon": "小保底没歪"
+      "winRateOffWeapon": "没歪成常驻"
     },
     "note": [
       "祈愿记录不会自动更新，更新祈愿历史需要再次导入。",
@@ -605,7 +606,7 @@
       "calculate": "计算",
       "currentTime": "当前时间",
       "fullTime": "将在多久回满",
-      "hours": "时",
+      "hours": "小时",
       "minutes": "分",
       "seconds": "秒"
     },
@@ -621,7 +622,7 @@
       "resultDay": "{result} 天"
     },
     "fate": {
-      "currency": "选择货币",
+      "currency": "选择货币...",
       "firstTime": "第一次",
       "amount": "数量",
       "genesis": "创世结晶",
@@ -832,7 +833,7 @@
   "footer": {
     "affliate": "Paimon.moe 与米哈游无关。",
     "copyright": "原神的游戏内容和各种素材与商标的版权都属于米哈游。",
-    "discord": "加入我们的Discord",
+    "discord": "加入我们的 Discord",
     "community": "社区链接",
     "official": "官方链接",
     "link": {
@@ -968,6 +969,8 @@
     "18ATKSet": "+18% 攻击力套",
     "20EnergyRechargeSet": "+20% 元素充能效率套",
     "25PhysicalDmgSet": "+25% 物理伤害加成套",
+    "80EMSet": "+80 元素精通套",
+    "15HealingBonusSet": "+15% 治疗加成套",
     "sands": "时之沙",
     "goblet": "空之杯",
     "circlet": "理之冠",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "数据已同步！",
-    "driveError": "云端同步现在不可用 😔"
+    "driveError": "云端同步现在不可用 😔",
+    "open": "打开",
+    "delete": "删除",
+    "deleteConfirm": "删除？"
   },
   "update": {
     "newUpdate": "Paimon.moe 更新啦！",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "按最后复刻排序",
     "bannerTitle": "角色卡池时间一览",
     "bannerSubtitle": "查看角色入池时间及复刻情况"
+  },
+  "tcg": {
+    "title": "七圣召唤",
+    "requirementResonance": "牌组中需要有至少 2 位{character}角色才能将此牌加入牌组！",
+    "requirementTalent": "牌组中需要有{character}才能将此牌加入牌组！",
+    "addedToDeck": "已加入牌组！",
+    "deletedFromDeck": "已移出牌组！",
+    "removedFromDeck": "已将一张移出牌组！",
+    "alreadyMaxCharacters": "此牌组已有 3 张角色牌！",
+    "alreadyMaxActions": "此牌组已有 30 张行动牌！",
+    "requirementInDeck": "在移除{character}前，请先从牌组中移除卡牌“{card}”！",
+    "addToDeck": "加入牌组",
+    "removeFromDeck": "从牌组中{type}",
+    "delete": "删除",
+    "remove": "移除",
+    "compare": "选中作为比较",
+    "noCardOnDeck": "此牌组中还没有卡牌",
+    "loadDefaultDeck": "加载初始牌组",
+    "saveDeck": "保存牌组",
+    "hideDeck": "隐藏牌组",
+    "showDeck": "显示牌组",
+    "addDeck": "添加牌组",
+    "selectDeck": "选择牌组",
+    "loadingLink": "正在生成链接…",
+    "loadingLinkError": "生成链接时出现错误 😥",
+    "shareDeck": "分享牌组“{name}”",
+    "removeCompare": "取消比较",
+    "shareNotComplete": "要分享牌组，请确保牌组满足出战条件（有 3 张角色牌和 30 张行动牌）！",
+    "characterCard": "角色牌",
+    "actionCard": "行动牌"
   }
 }

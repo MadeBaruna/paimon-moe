@@ -14,15 +14,15 @@
     "weapons": "Armas",
     "artifacts": "Artefatos",
     "fishing": "Pesca",
-    "radiantSpincrystal": "",
-    "calendar": "",
-    "banners": "",
+    "radiantSpincrystal": "Cristal Rodopiante Radiante",
+    "calendar": "Calendário",
+    "banners": "Relançamentos de Personagens",
     "settings": "Configurações",
     "donate": "Doar"
   },
   "home": {
     "welcome": "Boas-vindas ao Paimon.moe! 👋",
-    "message": "Seu melhor companheiro de Genshin Impact! Planeje seu farm com a calculadora de ascensão e acompanhe seu progresso com a lista de afazeres e o histórico de orações.",
+    "message": "Seu melhor companheiro de Genshin Impact! Paimon.moe te ajuda a farmar com a Calculadora de Ascensão e acompanha seu progresso com a Lista de Afazeres e o Histórico de Orações.",
     "visitor": "{count} visitantes nos últimos 7 dias",
     "banner": {
       "summoned": "Invocados",
@@ -55,12 +55,12 @@
       "join": "Junte-se ao Discord"
     },
     "items": {
-      "title": "Farmaveis Hoje",
+      "title": "Farmáveis Hoje",
       "detail": "Itens",
       "sunday": "Todos os itens podem ser farmados aos domingos 😁"
     },
     "calculator": {
-      "title": "🧮 Calcule materiais de ascensão de Personagens, Armas e elevação de talento! Todos os cálculos podem ser adicionados na Lista de Afazeres. Também mostra quantas resinas você irá precisar!",
+      "title": "🧮 Calcule materiais de ascensão de Personagens, Armas e elevação de talento! Todos os cálculos podem ser adicionados na Lista de Afazeres. Também mostra de quanta resina você irá precisar!",
       "detail": "Calculadora"
     },
     "twitter": {
@@ -78,7 +78,7 @@
   },
   "characters": {
     "title": "Personagens",
-    "subtitle": "Os números dos status são do Nível 80, Ascensão 6. Você pode clicar nos índices da tabela para ordenar!",
+    "subtitle": "Os valores dos atributos são ao Nível 80, Ascenção 6. Você pode clicar no cabeçalho da tabela para alterar a ordem de visualização dela!",
     "name": "Nome",
     "element": "Elemento",
     "rarity": "Raridade",
@@ -87,16 +87,16 @@
     "passiveTalents": "Talentos Passivos",
     "constellations": "Constelações",
     "const": "Conste",
-    "asc": "ASC",
-    "lvl": "NV",
-    "hp": "HP",
-    "atk": "ATK",
+    "asc": "Ascenção",
+    "lvl": "Nível",
+    "hp": "Vida",
+    "atk": "ATQ",
     "def": "DEF",
-    "hpPercent": "HP%",
-    "atkPercent": "ATK%",
+    "hpPercent": "Vida%",
+    "atkPercent": "ATQ%",
     "defPercent": "DEF%",
-    "critRate": "Chance CRIT",
-    "critDamage": "Dano CRIT",
+    "critRate": "Taxa Crítica",
+    "critDamage": "Dano Crítico",
     "em": "Proficiência Elemental",
     "er": "Recarga de Energia",
     "healingBonus": "Bônus de Cura",
@@ -112,21 +112,21 @@
     "talentBook": "Livro de Talentos",
     "bossItem": "Chefe",
     "ascensionMaterial": "Materiais de Ascensão",
-    "talentStats": "Estatísticas de Talento",
+    "talentStats": "Atributos do Talento",
     "build": "Build",
-    "source": "Criações de Personagem Comunitária por Equipe de Auxiliar Genshin",
+    "source": "Builds de Personagem Comunitárias pelo Genshin Helper Team",
     "faq": "A contagem de constelação é calculada a partir dos dados do seu Histórico de Orações. Então se seu histórico de orações antigo está desatualizado ou se você comprou o personagem pela loja ou evento, a contagem pode não estar correta! Mas você pode editá-la manualmente apertando o ícone de lápis ao lado do nome do personagem.",
-    "mainStats": "Estatísticas Principais",
-    "subStats": "",
-    "talentPriority": "",
-    "abilityTip": "",
+    "mainStats": "ATRIBUTOS PRINCIPAIS",
+    "subStats": "ATRIBUTOS SECUNDÁRIOS",
+    "talentPriority": "PRIORIDADE DE TALENTOS",
+    "abilityTip": "DICA DE HABILIDADE",
     "weapons": "ARMAS",
     "artifacts": "ARTEFATOS"
   },
   "wish": {
     "title": "Histórico de Orações",
     "autoImport": "Importar Automaticamente",
-    "helpAndSetting": "Ajuda & Configurações",
+    "helpAndSetting": "Ajuda e Configurações",
     "helps": "Ajuda",
     "settings": "Configurações",
     "wishesWorth": "Valor das Orações",
@@ -148,8 +148,8 @@
     ],
     "import": {
       "title": "Importar Histórico de Orações",
-      "faqsButton": "FAQ - LEIA PRIMEIRO",
-      "readFaq": "Leia o FAQ",
+      "faqsButton": "PERGUNTAS FREQUENTES - LEIA PRIMEIRO",
+      "readFaq": "Leia as Perguntas Frequentes",
       "openFaq": "Abrir FAQ",
       "choosePlatform": "Escolha sua plataforma",
       "chooseMethod": "Escolha o método desejado",
@@ -162,12 +162,12 @@
       "processing": "Processando",
       "banner": "Banner",
       "page": "Página {page}",
-      "parsing": "Parsing...",
+      "parsing": "Analizando...",
       "save": "Salvar",
       "cancel": "Cancelar",
       "cancelling": "Cancelando...",
       "importNewWishOnly": "Importar apenas novas orações",
-      "importNewWishUncheck": "Desmarque apenas caso você precise importar novamente todo seu histórico de orações",
+      "importNewWishUncheck": "Desmarque apenas se você precisar reimportar o seu histórico de orações por completo",
       "import": "Importar",
       "close": "Fechar",
       "invalidLink": "Link inválido, tente novamente",
@@ -176,7 +176,7 @@
       "timeout": "Conexão expirou, aguarde um momento e tente novamente mais tarde",
       "differentAccount": "Este histórico de orações é de outra conta, por favor, separe sua conta primeiro no menu de Configurações!",
       "invalidData": "Dados inválidos retornados pelo API, tente novamente mais tarde",
-      "noNewData": "Não há desejos novos, por favor espere em torno de 1 hora para os dados de desejo serem atualizados!",
+      "noNewData": "Não há nenhuma oração nova, por favor espere por volta de 1 hora para que os dados das orações sejam atualizados!",
       "success": "Sucesso na Importação 😀!",
       "server": "Selecione seu servidor:",
       "wishTallyCheck": "Enviar pity para a contagem global de orações",
@@ -186,28 +186,28 @@
         "e",
         "pity do seu histórico de orações"
       ],
-      "forceUpdateCheck": "Forçar atualização do histórico de desejos (habilite isso apenas se o seu histórico de desejos não estiver atualizando)",
+      "forceUpdateCheck": "Forçar atualização do histórico de orações (habilite isso apenas se o seu histórico de orações não estiver atualizando)",
       "header": [
-        "Importe e faça backup do seu histórico de desejos do Genshin Impact para mantê-lo por mais de 6 meses. Também rastreie automaticamente seu pity e estatísticas sobre os seus desejos!",
-        "Você também pode habilitar Drive Sync nas Configurações para sincronizar e fazer backup do seu histórico para o Google Drive",
-        "Entenda que o antigo link de feedback não funciona mais, por favor siga as novas instruções abaixo!"
+        "Importe e salve o seu histórico de orações do Genshin Impact para mantê-lo por mais de 6 meses. Paimon.moe também rastreia automaticamente seu pity e visualiza estatísticas sobre as suas orações!",
+        "Você também pode habilitar a sincronização com o Drive nas Configurações para sincronizá-lo e fazer backup do seu histórico de orações para o Google Drive",
+        "O antigo link de feedback não funciona mais, por favor siga as novas instruções abaixo!"
       ],
-      "notice30": "",
-      "soon30": "",
+      "notice30": "O histórico de orações foi alterado na versão 3.0, por favor siga as instruções atualizadas abaixo!",
+      "soon30": "Tutorial em texto virá em breve. Por enquanto, favor assistir ao vídeo acima!",
       "faqs": {
-        "title": "Importar Histórico de Orações FAQ",
+        "title": "Perguntas Frequentes sobre importar o Histórico de Orações",
         "q1": "Como funciona?",
         "a1": "O histórico de orações de Genshin Impact é basicamente uma página na internet, então você consegue acessá-lo através de uma URL. Uma chave temporária será gerada após você abrir a página do histórico de orações ou de feedback, e o importador irá automaticamente utilizar o MiHoYo API para buscar seu histórico de orações.",
         "q2": "É seguro? Eu serei banido?",
-        "a2": "Paimon.moe utiliza a mesma requisição que Genshin Impact utiliza para buscar o histórico de orações, e Paimon.moe não consegue de maneira alguma modificar quaisquer arquivos ou dados do jogo, e isso deve ser seguro. Mas use por sua própria conta e risco (bom, eu uso na minha conta principal). Você ainda pode inserir seus dados manualmente 😀.",
+        "a2": "Paimon.moe utiliza a mesma solicitação que o Genshin Impact utiliza para buscar o histórico de orações, e não consegue de maneira alguma modificar quaisquer arquivos ou dados do jogo. Paimon.moe deve ser seguro, mas use-o por sua própria conta e risco (eu uso na minha conta principal). De qualquer forma, você pode inserir seus dados manualmente 😀.",
         "q3": "Então você pode hackear minha conta?",
         "a3": [
           "Paimon.moe nunca salva informações pessoais como suas credenciais (nem mesmo UID ou apelido), então a resposta é não. Este projeto é de código aberto em",
           "; Não estou planejando manchar minha reputação hackeando a conta de outras pessoas."
         ],
-        "q4": "Ei, eu verifiquei as requisições e tal, mas por que as requisições são feitas em seu próprio domínio ao invés do MiHoYo API?",
+        "q4": "Eu verifiquei as solicitações e tal, mas por que elas são feitas no seu próprio domínio ao invés do MiHoYo API?",
         "a4": [
-          "Paimon.moe não pode fazer uma requisição diretamente para o MiHoYo API devido ao",
+          "Paimon.moe não fazer uma solicitação diretamente para o MiHoYo API devido ao",
           ", então a requisição é redirecionada para um simples proxy CORS para que funcione. Você pode ver o código",
           "aqui"
         ],
@@ -219,22 +219,22 @@
           "Se você não deseja compartilhar sua URL, você pode utilizar um pequeno script de importação para salvar seu histórico de orações em seu PC (opção para PC Local)"
         ],
         "q6": "Eu fiz todos os procedimentos, mas tive um erro na API?",
-        "a6": "Certifique-se de copiar todo o texto (segure e pressione Selecionar Tudo para dispositivos móveis); talvez você tenha esquecido alguns caracteres que não necessários para o funcionamento da importação.",
-        "q7": "Não leu todo meu histórico!?",
-        "a7": "Histórico de orações mais antigos que 6 meses são deletados dos servidores da MiHoYo, então se você não possui um backup em algum lugar, infelizmente se foi"
+        "a6": "Certifique-se de copiar todo o texto (segure e pressione Selecionar Tudo em dispositivos móveis); talvez você tenha esquecido de copiar caracteres necessários para o funcionamento da importação.",
+        "q7": "A leitura do histórico de orações está incompleta!",
+        "a7": "O histórico de orações mais antigo é deletado dos servidores da MiHoYo após 6 meses. Se você não possui um backup em algum lugar, não há como recuperá-lo."
       },
       "logLocation": {
         "global": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt",
         "china": "%userprofile%\\AppData\\LocalLow\\miHoYo\\Genshin Impact\\output_log.txt"
       },
       "method": {
-        "pc": "",
-        "pc3": "",
-        "pc4": "",
-        "pc5": "",
-        "android": "",
-        "android2": "",
-        "android3": ""
+        "pc": "Método 1",
+        "pc3": "Método 2",
+        "pc4": "Método 2 — Alternativo",
+        "pc5": "Manual",
+        "android": "Wifi",
+        "android2": "Dados Móveis",
+        "android3": "Alternativo"
       },
       "guide": {
         "video": "Tutorial em Vídeo",
@@ -242,12 +242,12 @@
           "Abra o menu da Paimon [ESC]",
           "Clique em Feedback",
           "Espere carregar, e então uma página no navegador será aberta",
-          "Copie & cole o link na caixa de texto abaixo",
+          "Copie e cole o link na caixa de texto abaixo",
           "Cole o link aqui... https://webstatic..."
         ],
         "pc2": [
           "Abra o Genshin Impact nesse PC (Se você utiliza múltiplas contas por favor reinicie o jogo)",
-          "Em seguida abra o histórico de desejos no jogo e espere carregar",
+          "Em seguida, abra o seu histórico de orações no jogo e espere até que carregue.",
           "Pressione START no seu teclado e então pesquise por Powershell",
           "Clique em Windows Powershell e copie e cole o script abaixo para o Powershell",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/b75733bd23e19145bf992da941ffa943619a92b4/getlink_global.ps1'))",
@@ -260,37 +260,37 @@
           "Cole o link aqui... https://webstatic..."
         ],
         "pc3": [
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Pressione a tecla do Windows no seu teclado, depois pesquise por Powershell",
+          "Clique em Windows Powershell. Em seguida copie e cole o seguinte código ao Powershell e aperte ENTER (somente enquanto 'Press Enter to continue...' ainda não apareceu na tela)",
+          "Abra o Genshin Impact neste computador",
+          "Abra o histórico de orações no jogo e espere até que carregue",
+          "Clique na tabela e então aperte CTRL+A e então CTRL+C",
+          "Altere para o Powershell usando Alt+Tab e aperte ENTER. O link será copiado",
+          "Cole o texto copiado na caixa de texto abaixo",
+          "Cole o link aqui... https://webstatic..."
         ],
         "pc5": [
+          "Abra o Genshin Impact neste computador (Se você usa várias contas, reinicie o jogo)",
+          "Em seguida abra o histórico de orações no jogo e espere até que carregue",
+          "Então abra a pasta onde seu jogo está instalado (por exemplo: C:\\Games\\Genshin Impact)",
+          "Então abra a pasta GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "Clique com o botão direito no arquivo \"data_2\" e selecione \"Abrir com...\" e escolha Bloco de Notas (Se você obtiver um erro como \"O processo não pode acessar o arquivo porque já está sendo usado por outro processo\" saia do jogo antes)",
           "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          "",
-          ""
+          "Copie o link por inteiro, de \"https://webstatic\" até \"game_biz=hk4e_global\". O URL será parecido com esse: \"https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global\"",
+          "Cole o texto copiado na caixa de texto abaixo",
+          "Cole o link aqui… https://webstatic..."
         ],
         "pclog": [
           "Abra o Genshin Impact nesse PC (Se você utiliza múltiplas contas por favor reinicie o jogo)",
-          "Em seguida abra o histórico de desejos no jogo e espere carregar",
+          "Em seguida, abra seu histórico de orações dentro do jogo e espere até que carregue",
           "Pressione WINDOWS+R no seu teclado e então insira:",
-          "Uma janela de bloco de notas irá abrir, em seguida pressione CNTRL+F e então insira:",
-          "Copie todo o link de https://webstatic até #/log a url se parecerá com isso: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
+          "Uma janela do Bloco de Notas irá abrir, então pressione CTRL+F e digite:",
+          "Copie todo o link de https://webstatic até #/log — O Url será como esse: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
           "Cole o texto na caixa de texto abaixo",
           "Cole o link aqui... https://webstatic..."
         ],
         "android": [
-          "Abra Orações (dentro do jogo)",
+          "Abra o menu Orar (dentro do jogo)",
           "Pressione Histórico",
           "Aguarde o carregamento",
           "Desligue seu Wi-Fi e o tráfego de dados móveis",
@@ -316,11 +316,11 @@
           "aqui",
           "https://apps.apple.com/app/stream/id1312141691",
           "Abra o aplicativo e permita o VPN nas preferências do sistema (Configurações > Geral > VPN)",
-          "Instale CA (clique Sniff Now no aplicativo Stream > Install CA > Uma janela flutuante irá aparecer e escolha permitir > agora CA foi baixado",
-          "Vá em configurações > Geral > VPN * gerenciamento de dispositivos > Clique em Stream Generated CA e instale",
-          "Abra o Genshin Impact e então abra a tela de desejo, fique nessa página",
+          "Instale CA (clique Sniff Now no aplicativo Stream > Install CA > Uma janela flutuante irá aparecer e escolha Allow > agora CA está instalado)",
+          "Vá em Settings > General > VPN & Device management > Clique em Stream Generated CA e instale",
+          "Abra o Genshin Impact e então vá para a tela Orar. Continue nessa página",
           "De volta ao aplicativo Stream > Escolha I've trusted > Clique no botão Sniff Now",
-          "Volte ao Genshin Impact e então abra a tela do histórico de desejos",
+          "Volte ao Genshin Impact e abra o Histórico de Orações",
           "Espere o carregamento da página",
           "Volte ao aplicativo Stream > clique em Stop Sniffing",
           "Clique Sniff History > Escolha uma requisição que termine com .json (o link irá começar com https://hk4e-api-os.mihoyo.com/)",
@@ -340,14 +340,14 @@
         ],
         "pclocal": [
           "Se você não se sente confortável em compartilhar sua URL de feedback, você pode usar esta opção para processar seu histórico de orações em seu PC localmente. Este script irá ler o log em seu PC para gerar a URL do histórico de orações.",
-          "Abra o menu Iniciar, e então procure por Powershell",
-          "Abra o Powershell do Windows, e então copie & cole o script abaixo no Powershell",
+          "Abra o menu Iniciar do Windows e procure por Powershell",
+          "Abra o Windows Powershell, e então copie e cole o código abaixo no Powershell",
           "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18/raw/a281cb0c131e1402885cc7201b73ceacdb139f94/importer.ps1'))",
           "Você pode revisar o script",
           "aqui",
           "https://gist.github.com/MadeBaruna/9ff8b7a2af11f3002395af7963b5ed18",
           "Pressione Enter para rodar o script, e então siga as instruções",
-          "Depois disso, cole o resultado do script na caixa de texto abaixo",
+          "Depois disso, cole o resultado do código na caixa de texto abaixo",
           "Cole o resultado aqui...",
           "Esse recurso ainda está em fase beta, então por favor faça um backup antes indo no menu de Ajuda & Configurações, e então Exportar para Excel."
         ]
@@ -362,15 +362,15 @@
       "wishtally": "WishTally",
       "notice": [
         "Este recurso ainda está em BETA, por favor faça um backup indo nas Configurações e então Exportar para Excel!",
-        "Desejos com o mesmo horário e nome da recompensa NÃO serão tocados (desejos já existentes não serão reescritos)",
-        "Irá apenas anexar e prefixar desejos, isso significa que nada será inserido no meio da lista",
-        "Atualmente há suporte excel apenas com nome de recompensa em inglês"
+        "Orações com o mesmo horário e recompensa NÃO serão alterados (orações já listadas não serão reescritas)",
+        "Esta função irá apenas acrescentar ao começo e final das orações, isso significa que nenhum dado será inserido no no meio do seu histórico atual",
+        "Favor primeiro alterar o idioma do site de acordo com o idioma do seu arquivo excel"
       ],
       "selectFile": {
-        "default": "Arraste & solte Paimon.moe arquivo excel pra cá, ou clique aqui para selecionar",
-        "takagg": "Arraste & solte TakaGG gacha arquivo excel pra cá, ou clique aqui para selecionar",
+        "default": "Arraste e solte arquivo Excel do Paimon.moe para cá, ou clique aqui para selecionar",
+        "takagg": "Arraste e solte o arquivo Excel TakaGG para cá, ou clique aqui para selecioná-lo",
         "genshinwishes": "Arraste & solte o arquivo csv GenshinWishes aqui, ou clique aqui para selecionar",
-        "wishtally": "Arraste & solte o arquivo excel Wish Tally aqui, ou clique aqui para selecionar"
+        "wishtally": "Arraste e solte o arquivo Excel Wish Tally aqui, ou clique aqui para selecioná-lo"
       },
       "processing": "Processando...",
       "addedOn": "Inserido em:",
@@ -386,12 +386,12 @@
       "errorUnknownItem": "Tem um nome de recompensa desconhecido"
     },
     "help": {
-      "title": "Ajuda & Configurações do Histórico de Orações",
-      "exportTitle": "Exportar Histórico de Orações",
+      "title": "Ajuda e Configurações do Histórico de Orações",
+      "exportTitle": "Exportar e Importar Histórico de Orações",
       "exportMessage": "Você pode exportar seu histórico de orações para um arquivo Excel aqui",
       "export": "Exportar para Excel",
       "exporting": "Exportando...",
-      "import": "Importar",
+      "import": "Importar do Excel",
       "exportFinish": "Exportado com sucesso, aguarde até que o navegador realize o download do arquivo!",
       "wishTallyTitle": "Enviar Contagem de Orações",
       "wishTally": "Estamos fazendo uma contagem global de orações! Você pode enviar sua contagem de orações para participar. Todas as informações do pity serão agregadas para saber qual a média de pity dos usuários do paimon.moe.",
@@ -410,7 +410,7 @@
         "title": "Como Utilizar a Inserção Manual",
         "subtitle": "Após 1x Oração:",
         "pressWhenYouGet": "Pressione {button} quando você conseguir um item {rarity}★",
-        "p1": "Será adicionado automaticamente no seu total de orações realizadas, pity de 5★, de pity de 4★",
+        "p1": "Será adicionado automaticamente no seu total de orações realizadas, pity de 5★ e pity de 4★",
         "p2": [
           "Quando o pity de",
           "chegar a 10, seu valor será automaticamente restaurado para 0"
@@ -427,11 +427,11 @@
           "Você também pode pressionar o botão",
           "para editar os valores manualmente!"
         ],
-        "p6": ""
+        "p6": "Clique na seta inferior para ver os detalhes das suas orações. Um pop-up aparecerá quando você receber um 5★ ou 4★. Também é possível acrescentar à tabela ou editá-la manualmente."
       }
     },
     "types": {
-      "beginners": "Desejo dos Novatos",
+      "beginners": "Oração de Novatos",
       "standard": "Invocação do Mochileiro",
       "character-event": "Evento de Personagem",
       "weapon-event": "Evento de Arma"
@@ -453,7 +453,7 @@
       "rarity": "Raridade",
       "total": "Total",
       "percent": "Porcentagem",
-      "pityAverage": "Pity AVG"
+      "pityAverage": "Média de Pity"
     },
     "tally": {
       "title": "Contagem de Orações",
@@ -479,8 +479,8 @@
     },
     "summary": {
       "total": "Total",
-      "percent": "Por cento",
-      "pityAverage": "Pity AVG",
+      "percent": "Porcentagem",
+      "pityAverage": "Média de Pity",
       "character": "Personagem",
       "weapon": "Arma",
       "winRateOff": "Venceu o 50:50",
@@ -498,28 +498,28 @@
     },
     "backupReminder": {
       "title": "Todos os dados estão salvos no seu navegador!",
-      "desc": "Se por acaso o cache do navegador for excluído, o seu histórico de desejos irá sumir! Você pode ativar a sincronização com o Google Drive nas configurações para fazer backup dos seus dados, ou então baixar os dados manualmente."
+      "desc": "Então se por acaso o cache do seu navegador for excluído, o seu histórico de orações irá sumir! Você pode ativar a sincronização com o Google Drive nas Configurações para fazer backup dos seus dados, ou então baixar os dados manualmente."
     },
     "rank": {
       "title": "Seu Rank Global",
-      "level": "Seu Rank de Pulls totais",
-      "based": "Baseado em Estatísticas de Desejos Globais",
-      "current": "",
+      "level": "Seu Rank de Orações Totais",
+      "based": "Baseado nas Estatísticas Globais de Orações",
+      "current": "A mediana atual de {banner} é {median} orações",
       "more": "Você orou mais do que {percentage}% dos usuários do paimon.moe ",
       "less": "Você orou menos que {percentage}% dos usuários do paimon.moe",
-      "currentLuck": "",
-      "totalPull": "Total de pulls",
+      "currentLuck": "A mediana atual de {banner} é de {median}%",
+      "totalPull": "Orações Totais",
       "luck5": "Sorte 5★",
       "luck4": "Sorte 4★",
-      "luckWinRateOff": "Sorte da vitória do 50:50",
-      "medianTotal": "",
-      "medianLuck": "",
+      "luckWinRateOff": "Sorte Vencer 50:50",
+      "medianTotal": "Mediana global {median} orações",
+      "medianLuck": "Mediana global {median}%",
       "moreTotal": "Você orou mais do que {percentage}% dos usuários do paimon.moe ",
-      "lessTotal": "Você orou mais do que {percentage}% dos usuários do paimon.moe",
-      "moreLuck": "",
-      "lessLuck": "",
-      "top": "TOP",
-      "bottom": "BOTÃO"
+      "lessTotal": "Você orou menos do que {percentage}% dos usuários do paimon.moe",
+      "moreLuck": "Mais sorte do que {percentage}% dos usuários paimon.moe",
+      "lessLuck": "Menos sorte do que {percentage}% dos usuários paimon.moe",
+      "top": "PRIMEIROS",
+      "bottom": "ÚLTIMOS"
     }
   },
   "calculator": {
@@ -527,7 +527,7 @@
     "titleCharacter": "Calculadora de Personagens",
     "titleResin": "Calculadora de Resina",
     "titleFriendship": "Calculadora de Experiência de Amizade",
-    "titleFate": "Calculadora de Preço Fixo",
+    "titleFate": "Calculadora de Preço do Destino",
     "titleFateCount": "Calculadora de Contagem de Destinos",
     "goto": "Ir para {where}",
     "howToUse": "Como Usar",
@@ -540,10 +540,10 @@
       "calculateAscension": "Calcular Materiais de Ascensão?",
       "selectRarity": "Selecione a raridade da arma",
       "selectWeapon": "Selecione a arma",
-      "current": "Nível, EXP, & Ascenção Atual da Arma",
+      "current": "Nível, EXP e Ascenção Atual da Arma",
       "inputCurrentLevel": "Informe o nível atual da arma...",
       "inputCurrentExp": "Informe a EXP atual da arma...",
-      "intended": "Nível & Ascenção de Arma Desejados",
+      "intended": "Nível e Ascenção de Arma Desejados",
       "inputIntendedLevel": "Informe o nível desejado para a arma...",
       "resource": "Recursos para Usar",
       "calculate": "Calcular",
@@ -557,10 +557,10 @@
     "character": {
       "calculateAscension": "Calcular Materiais de Ascensão?",
       "selectCharacter": "Selecione o personagem",
-      "current": "Nível, EXP, & Ascenção Atual do Personagem",
+      "current": "Nível, EXP e Ascenção Atual do Personagem",
       "inputCurrentLevel": "Informe o nível atual do personagem...",
       "inputCurrentExp": "Informe a EXP atual do personagem...",
-      "intended": "Nível & Ascenção de Personagem Desejados",
+      "intended": "Nível e Ascenção de Personagem Desejados",
       "inputIntendedLevel": "Informe o nível desejado para o personagem...",
       "resource": "Recursos para Usar",
       "calculateTalent": "Calcular Materiais de Elevação de Talentos?",
@@ -600,7 +600,7 @@
       "desiredResin": "Resina Desejada",
       "or": "ou",
       "inputCurrentResin": "Informe a quantidade de resina atual...",
-      "inputDesireResin": "Informe quantas resinas você quer esperar...",
+      "inputDesireResin": "Informe até quanta resina você quer esperar...",
       "timeFormat": "en",
       "calculate": "Calcular",
       "currentTime": "Horário Atual",
@@ -616,8 +616,8 @@
       "calculate": "Calcular",
       "based": "Baseado no RA:{ar}",
       "change": "(alterar nas configurações)",
-      "result": "Para alcançar o nível de amizade 10 se você completar todas as comissões diárias e usar 180 resin todos os dias",
-      "resultSerenitea": "Se você também colocar o personagem no Bule de Relachá (Energia Máxima de Adepto)",
+      "result": "Para alcançar o nível de amizade 10, se você completar todas as Missões de Aventura diárias e usar 180 de resina todos os dias",
+      "resultSerenitea": "Se você também colocar o personagem no Bule de Relachá (Força Adepti Máxima)",
       "resultDay": "{result} Dias"
     },
     "fate": {
@@ -625,12 +625,12 @@
       "firstTime": "Primeira Vez",
       "amount": "Quantidade",
       "genesis": "Genesis",
-      "first": "2x Bônus",
+      "first": "Bônus 2x",
       "total": "Total",
       "price": "Preço",
       "totalGenesis": "Gênesis total",
       "totalPrice": "Preço total",
-      "calculate": "Calcule quantos Cristais Gênesis eu posso ter com {currency}{value}",
+      "calculate": "Calcule quantos Cristais Gênesis eu posso comprar com {currency}{value}",
       "calculateFate": "Calcule quanto dinheiro eu preciso para {value}"
     },
     "fateCount": {
@@ -643,7 +643,7 @@
       "dailyCommission": "Missão Diária",
       "type": "Tipo",
       "amount": "Quantidade",
-      "totalPrimogem": "Quantidade total de Gemas Essenciais",
+      "totalPrimogem": "Total de Gemas Essenciais",
       "calculate": "Calcular"
     }
   },
@@ -654,7 +654,7 @@
     "searchWeapon": "Buscar arma",
     "day": "Dias",
     "material": "Materiais",
-    "characterWeapons": "Personagens & Armas",
+    "characterWeapons": "Personagens e Armas",
     "add": {
       "rarity": "Selecione a Raridade",
       "amount": "Quantidade",
@@ -674,14 +674,14 @@
   },
   "todo": {
     "title": "Lista de Afazeres",
-    "summary": "Sumário",
+    "summary": "Resumo",
     "empty": [
       "Nada para fazer ainda 😀",
       "Adicione algumas coisas a partir da Calculadora ou da página de Itens!"
     ],
     "farmableToday": "Farmáveis hoje",
-    "resin": "Resinas necessárias",
-    "based": "Baseado no AR:{ar} e WL:{wl}",
+    "resin": "Resina necessária",
+    "based": "Baseado no Rank de Aventura: {ar} e Nível de Mundo: {wl}",
     "change": "(alterar nas configurações)",
     "approximation": "Aproximação calculada a partir da taxa de drops por",
     "delete": {
@@ -728,16 +728,16 @@
       "title": "Créditos",
       "items": [
         {
-          "name": "Data e imagens",
+          "name": "Dados e imagens",
           "value": "Genshin Impact Wiki"
         },
         {
-          "name": "Status Data",
-          "value": ""
+          "name": "Dados dos Atributos",
+          "value": "Dimbreath Genshin Data"
         },
         {
-          "name": "",
-          "value": "Coleta de Dados do Discord"
+          "name": "Taxas para cálculo da resina",
+          "value": "Data Gathering Discord"
         }
       ]
     },
@@ -752,7 +752,7 @@
       "reset": "Resetar",
       "continue": "Continuar"
     },
-    "changelog": "Registro de alterações",
+    "changelog": "Histórico de Mudanças",
     "exportDescription": "Você pode exportar e importar seus dados do Paimon.moe aqui",
     "exportButton": "Exportar / Importar Dados",
     "export": "Exportar Dados",
@@ -760,15 +760,15 @@
     "import": "Importar Dados",
     "selectFile": "Selecione o arquivo JSON",
     "exportInfo": "Baixe uma cópia de todos os seus dados salvos no Paimon.moe",
-    "importWarning": "Lembre-se de fazer backup de seus arquivos exportando primeiro! Todos os dados serão substituídos!",
+    "importWarning": "Lembre-se de fazer backup de seus dados exportando-os primeiro! Todas as informações serão substituídas após importar!",
     "importContinue": "Continuar",
     "importSuccess": "Importado com sucesso! Recarregando em 5 segundos...",
     "importFailed": "Falha ao importar!",
     "email": "Email:",
-    "mainAccountChanged": "",
+    "mainAccountChanged": "Conta principal alterada, recarregando em 5 segundos...",
     "dataDeleted": "Os dados foram deletados!",
     "dataReset": "Os dados foram resetados!",
-    "accountAdded": ""
+    "accountAdded": "Conta {accountNumber} adicionada, selecione-a na lista de contas!"
   },
   "privacypolicy": {
     "title": "Política de Privacidade",
@@ -807,12 +807,12 @@
     ],
     "subtitleAd": "Anúncios",
     "ad": [
-      "Usamos anúncios de terceiros para apoiar nosso site. Alguns destes anunciantes podem ser servidos de nossos anunciantes de terceiros.",
-      "Você pode ver seus",
+      "Usamos anúncios de terceiros para apoiar nosso site. Alguns destes anúncios podem ser providenciados pelos nossos anunciantes de terceiros.",
+      "Você pode ver suas",
       "Política de Privacidade",
       "e",
       "Política de Cookies",
-      "Aqui você pode gerenciar seus cookies",
+      "aqui. Você pode gerenciar seus cookies",
       "aqui"
     ]
   },
@@ -826,23 +826,23 @@
     "useLocalData": "Usar Dados Locais Deste Navegador",
     "download": "Baixar Ambos os Dados",
     "lastModified": "Última modificação",
-    "or": "ou",
-    "smallSizeWarning": ""
+    "or": "OU",
+    "smallSizeWarning": "CUIDADO, O ARQUIVO É MUITO MENOR!"
   },
   "footer": {
-    "affliate": "Paimon.moe não está afiliada com a HoYoverse.",
-    "copyright": "Genshin Impact, os conteúdo e materiais do jogo são marcas registradas e de direitos autorais da HoYoverse.",
+    "affliate": "Paimon.moe não é afiliado à HoYoverse.",
+    "copyright": "Genshin Impact, seu conteúdo e materiais do jogo são marcas registradas e de direitos autorais da HoYoverse.",
     "discord": "Junte-se ao Discord",
     "community": "Links da Comunidade",
     "official": "Links Oficiais",
     "link": {
-      "github": "",
-      "discord": "",
-      "devTwitter": "",
-      "reddit": "",
-      "facebook": "",
-      "cookieSettings": "",
-      "privacyPolicy": ""
+      "github": "Github",
+      "discord": "Discord",
+      "devTwitter": "Twitter do desenvolvedor",
+      "reddit": "Reddit",
+      "facebook": "Facebook",
+      "cookieSettings": "Definições de Cookies",
+      "privacyPolicy": "Política de Privacidade"
     }
   },
   "donate": {
@@ -850,7 +850,7 @@
       "Muito obrigado! Espero que ache isso útil.",
       "Fiz este site para me divertir quando tenho um tempo livre. Obviamente irei adicionar mais recursos e atualizarei os dados a cada nova atualização, pois gosto de explorar o jogo e tentar maximizar minha experiência",
       "Se você quiser doar, sua doação definitivamente irá ajudar a melhorar o site e me motivar a adicionar mais conteúdo para Paimon.moe! Muito obrigado e divirta-se, espero que goste!",
-      "Se você gosta de codificar, você também pode contribuir para o projeto em"
+      "Se você gosta de programar, você também pode contribuir para o projeto em"
     ],
     "kofi": "Apoie-me no Ko-fi",
     "trakteer": "Apoie-me no Trakteer",
@@ -859,7 +859,7 @@
   "reminder": {
     "notSupported": "Seu navegador não suporta notificações por push, por favor tente outro navegador!",
     "blocked": "Notificações estão bloqueadas, as notificações de lembrete não irão funcionar! Por favor ative-as em seu navegador.",
-    "desktop": "Navegador desktop não pode receber notificações caso não esteja rodando!",
+    "desktop": "Navegadores desktop não recebem notificações se não estiverem rodando!",
     "early": "A notificação poderá chegar mais cedo (cerca de 1-10 minutos) devido ao modo que enviamos a notificação",
     "allowNotification": "Por favor, permita o prompt de notificação!",
     "transformer": "Lembrete do Transformador Paramétrico",
@@ -886,15 +886,15 @@
     "version": "Versão",
     "type": "Tipo",
     "searchError": "Não foi possível encontrar a conquista: {query}",
-    "quest": "",
-    "checklist": ""
+    "quest": "Missão",
+    "checklist": "Checklist"
   },
   "furnishing": {
     "title": "Mobília",
     "name": "Nome",
     "energy": "Energia",
     "load": "Carga",
-    "reduced": "",
+    "reduced": "Reduzido",
     "ratio": "Proporção",
     "using": "Quantidade",
     "interior": "Interior",
@@ -909,7 +909,7 @@
     "corridor": "Corredor",
     "inventoryButton": "Inventário",
     "listButton": "Lista",
-    "selectCharacter": "",
+    "selectCharacter": "Selecione a personagem...",
     "inventory": {
       "title": "Inventário de Móveis",
       "subtitle": "Algumas categorias especiais como paredes não são mostradas",
@@ -924,8 +924,8 @@
       "inInventory": "No inventário",
       "available": "Disponível",
       "used": "Usado em outro conjunto",
-      "calculate": "",
-      "exludeOwned": ""
+      "calculate": "Calcular Materiais",
+      "exludeOwned": "Excluir mobília já possuída"
     }
   },
   "weapon": {
@@ -951,29 +951,29 @@
     "claymore": "Espadão",
     "ascensionMaterial": "Materiais de Ascensão",
     "asc": "Ascensão",
-    "lvl": "NVL",
+    "lvl": "Nível",
     "baseAtk": "ATQ Base",
     "recommendedCharacter": "Personagens Recomendados"
   },
   "artifact": {
     "title": "Lista de Artefatos",
     "name": "Nome",
-    "maxRarity": "Máximo ★",
+    "maxRarity": "★ Máx.",
     "bonus2": "Bônus de 2 peças",
     "bonus4": "Bônus de 4 peças",
     "domain": "Domínio",
     "artifact": "Artefato",
-    "setPiece": "{piece} Bônus do conjunto",
-    "recommendedCharacter": "Personagens recomendados {piece} peças",
-    "18ATKSet": "",
-    "20EnergyRechargeSet": "",
-    "25PhysicalDmgSet": "",
-    "sands": "",
-    "goblet": "",
-    "circlet": "",
-    "choose2": "",
-    "pieceStat": "",
-    "pieceInfo": ""
+    "setPiece": "Bônus do Conjunto de {piece}",
+    "recommendedCharacter": "Personagens Recomendados {piece} Peças",
+    "18ATKSet": "Conjunto ATQ +18%",
+    "20EnergyRechargeSet": "Conjunto de Recarga de Energia +20%",
+    "25PhysicalDmgSet": "Conjunto de Dano Físico +25%",
+    "sands": "AREIA",
+    "goblet": "CÁLICE",
+    "circlet": "TIARA",
+    "choose2": "Escolher 2",
+    "pieceStat": "Personagem que pode utilizar este item {piece} com atributo principal:",
+    "pieceInfo": "Clique no ícone do artefato para ver o atributo principal recomendado para o personagem"
   },
   "fishing": {
     "title": "Livro de Pesca",
@@ -982,36 +982,36 @@
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
-    "chasm": "",
-    "sumeru": "",
+    "chasm": "Despenhadeiro",
+    "sumeru": "Sumeru",
     "setEmpty": "Marcar como vazio",
-    "emptyTime": "Tempo em que o local foi esvaziado:",
+    "emptyTime": "Horário em que o local foi esvaziado:",
     "clear": "Limpar",
     "save": "Salvar",
     "cancel": "Cancelar"
   },
   "radiantSpincrystal": {
-    "title": ""
+    "title": "Cristais Rodopiantes Radiantes"
   },
   "common": {
-    "dataSynced": "",
-    "driveError": ""
+    "dataSynced": "Dados foram sincronizados!",
+    "driveError": "Sincronização com o Drive indisponível no momento 😔"
   },
   "update": {
-    "newUpdate": "",
-    "updateRefresh": "",
-    "whatsNew": "",
-    "later": "",
-    "refresh": ""
+    "newUpdate": "Paimon.moe tem uma nova atualização!",
+    "updateRefresh": "Clique em recarregar para obter a nova atualização",
+    "whatsNew": "Novidades",
+    "later": "Mais tarde",
+    "refresh": "Recarregar"
   },
   "calendar": {
-    "lastAppearance": "",
-    "lastAppearanceDesc": "",
-    "bannerHover": "",
-    "birthday": "",
-    "sortByTime": "",
-    "sortByRerun": "",
-    "bannerTitle": "",
-    "bannerSubtitle": ""
+    "lastAppearance": "Última inclusão em banner",
+    "lastAppearanceDesc": "Quando foi a última inclusão do personagem num banner limitado",
+    "bannerHover": "Há X Banners",
+    "birthday": "Aniversário",
+    "sortByTime": "Ordenado por ordem de lançamento",
+    "sortByRerun": "Ordenado pelo relançamento mais velho",
+    "bannerTitle": "Linha do Tempo de Lançamento dos Personagens",
+    "bannerSubtitle": "Ver quando o personagem foi lançado e o seu último relançamento"
   }
 }

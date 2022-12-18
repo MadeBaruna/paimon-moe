@@ -8,8 +8,11 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 const IMAGE_URL = `${self.location.origin}/images/`;
 
 const changelog = [
-  'Update sumeru commission achievement checklist',
-  'Add character & weapons release timeline (Database > Character Reruns)',
+  'Add TCG Deck builder, check it out on TCG menu!',
+  'Fix todo crash caused by Redcrest renamed to Henna Berry',
+  'Update timeline',
+  'Bug fixes',
+  'Update locales',
 ];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
