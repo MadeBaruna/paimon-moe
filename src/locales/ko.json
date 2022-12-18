@@ -634,7 +634,7 @@
       "calculateFate": "필요한 액수 계산: {value}"
     },
     "fateCount": {
-      "interwinedFate": "뒤얽힌 인연",
+      "intertwinedFate": "뒤얽힌 인연",
       "starglitter": "스타라이트",
       "stardust": "스타더스트",
       "primogem": "원석",
