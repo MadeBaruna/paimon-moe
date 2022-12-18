@@ -634,7 +634,7 @@
       "calculateFate": "Calcule quanto dinheiro eu preciso para {value}"
     },
     "fateCount": {
-      "interwinedFate": "Destino Entrelaçado",
+      "intertwinedFate": "Destino Entrelaçado",
       "starglitter": "Brilho Estelar",
       "stardust": "Poeira Estelar",
       "primogem": "Gema Essencial",
