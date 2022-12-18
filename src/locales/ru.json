@@ -634,7 +634,7 @@
       "calculateFate": "Посчитать, сколько денег мне нужно для {value}"
     },
     "fateCount": {
-      "interwinedFate": "Переплетающиеся судьбы",
+      "intertwinedFate": "Переплетающиеся судьбы",
       "starglitter": "Звёздный блеск",
       "stardust": "Звёздная пыль",
       "primogem": "Камни Истока",
