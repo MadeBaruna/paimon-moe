@@ -7,8 +7,8 @@
 
   let fateValues = [
     {
-      id: 'interwinedFate',
-      name: $t('calculator.fateCount.interwinedFate'),
+      id: 'intertwinedFate',
+      name: $t('calculator.fateCount.intertwinedFate'),
       image: '/images/intertwined_fate.png',
       amount: 0,
     },
