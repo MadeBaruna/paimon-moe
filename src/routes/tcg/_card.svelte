@@ -165,7 +165,7 @@
     isHovered = false;
     isDragging = true;
     e.dataTransfer.effectAllowed = 'move';
-    e.dataTransfer.setData('text/plain', index);
+    e.dataTransfer.setData('cardindex', index);
   }
 
   function handleDragEnd() {
@@ -186,8 +186,12 @@
 
   function handleDrop(e) {
     e.stopPropagation();
+
     isDragHovered = false;
-    const sourceIndex = Number(e.dataTransfer.getData('text/plain'));
+    const sourceData = e.dataTransfer.getData('cardindex');
+    if (sourceData === '') return;
+
+    const sourceIndex = Number(sourceData);
     dispatch('swapOrder', { from: index, to: sourceIndex });
   }
 
