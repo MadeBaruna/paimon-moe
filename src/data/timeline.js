@@ -22,6 +22,17 @@ export const eventsData = [
       url: 'https://hoyo.link/3b28BJAd',
       showOnHome: true,
     },
+    {
+      name: 'Wishes From Teyvat',
+      pos: '0% 45%',
+      image: 'wishes_from_teyvat.jpg',
+      start: '2022-12-20 12:00:00',
+      end: '2023-01-09 23:59:59',
+      color: '#fef6e7',
+      zoom: '100%',
+      url: 'https://hoyo.link/395dBCAd',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -168,7 +179,7 @@ export const eventsData = [
       timezoneDependent: true,
     },
     {
-      name: 'Everbloom Violet - Tartaglia Banner',
+      name: 'Farewell of Snezhnaya - Tartaglia Banner',
       pos: '30% 15%',
       zoom: '200%',
       image: 'farewell_of_snezhnaya_4.jpg',
