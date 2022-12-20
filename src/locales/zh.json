@@ -635,7 +635,6 @@
       "calculateFate": "计算 {value} 需要多少钱"
     },
     "fateCount": {
-      "intertwinedFate": "纠缠之缘",
       "starglitter": "星辉",
       "stardust": "星尘",
       "primogem": "原石",
@@ -645,7 +644,8 @@
       "type": "种类",
       "amount": "数量",
       "totalPrimogem": "换算原石",
-      "calculate": "计算"
+      "calculate": "计算",
+      "intertwinedFate": "纠缠之缘"
     }
   },
   "items": {
@@ -1001,7 +1001,7 @@
     "driveError": "云端同步现在不可用 😔",
     "open": "打开",
     "delete": "删除",
-    "deleteConfirm": "删除？"
+    "deleteConfirm": "确定删除？"
   },
   "update": {
     "newUpdate": "Paimon.moe 更新啦！",
@@ -1022,7 +1022,7 @@
   },
   "tcg": {
     "title": "七圣召唤",
-    "requirementResonance": "牌组中需要有至少 2 位{character}角色才能将此牌加入牌组！",
+    "requirementResonance": "牌组中需要有至少 2 位{element}角色才能将此牌加入牌组！",
     "requirementTalent": "牌组中需要有{character}才能将此牌加入牌组！",
     "addedToDeck": "已加入牌组！",
     "deletedFromDeck": "已移出牌组！",

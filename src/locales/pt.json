@@ -17,6 +17,7 @@
     "radiantSpincrystal": "Cristal Rodopiante Radiante",
     "calendar": "Calendário",
     "banners": "Relançamentos de Personagens",
+    "tcg": "Jogo de Cartas",
     "settings": "Configurações",
     "donate": "Doar"
   },
@@ -275,7 +276,7 @@
           "Então abra a pasta onde seu jogo está instalado (por exemplo: C:\\Games\\Genshin Impact)",
           "Então abra a pasta GenshinImpact_Data → webCaches → Cache → Cache_Data",
           "Clique com o botão direito no arquivo \"data_2\" e selecione \"Abrir com...\" e escolha Bloco de Notas (Se você obtiver um erro como \"O processo não pode acessar o arquivo porque já está sendo usado por outro processo\" saia do jogo antes)",
-          "",
+          "Use CTRL+F e então selecione \"Continuar automaticamente\". Na caixa de pesquisa, coloque \"e20190909gacha-v2\" (sem as aspas) e então clique na seta para baixo",
           "Copie o link por inteiro, de \"https://webstatic\" até \"game_biz=hk4e_global\". O URL será parecido com esse: \"https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global\"",
           "Cole o texto copiado na caixa de texto abaixo",
           "Cole o link aqui… https://webstatic..."
@@ -634,7 +635,6 @@
       "calculateFate": "Calcule quanto dinheiro eu preciso para {value}"
     },
     "fateCount": {
-      "intertwinedFate": "Destino Entrelaçado",
       "starglitter": "Brilho Estelar",
       "stardust": "Poeira Estelar",
       "primogem": "Gema Essencial",
@@ -644,7 +644,8 @@
       "type": "Tipo",
       "amount": "Quantidade",
       "totalPrimogem": "Total de Gemas Essenciais",
-      "calculate": "Calcular"
+      "calculate": "Calcular",
+      "intertwinedFate": "Destino Entrelaçado"
     }
   },
   "items": {
@@ -968,6 +969,8 @@
     "18ATKSet": "Conjunto ATQ +18%",
     "20EnergyRechargeSet": "Conjunto de Recarga de Energia +20%",
     "25PhysicalDmgSet": "Conjunto de Dano Físico +25%",
+    "80EMSet": "Conjunto de Proficiência Elemental +80",
+    "15HealingBonusSet": "Conjunto de Bônus de Cura +15%",
     "sands": "AREIA",
     "goblet": "CÁLICE",
     "circlet": "TIARA",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "Dados foram sincronizados!",
-    "driveError": "Sincronização com o Drive indisponível no momento 😔"
+    "driveError": "Sincronização com o Drive indisponível no momento 😔",
+    "open": "Ver",
+    "delete": "Deletar",
+    "deleteConfirm": "Excluir?"
   },
   "update": {
     "newUpdate": "Paimon.moe tem uma nova atualização!",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "Ordenado pelo relançamento mais velho",
     "bannerTitle": "Linha do Tempo de Lançamento dos Personagens",
     "bannerSubtitle": "Ver quando o personagem foi lançado e o seu último relançamento"
+  },
+  "tcg": {
+    "title": "Chamado Sagrado dos Sete",
+    "requirementResonance": "Você precisa de pelo menos 2 personagens {element} para adicionar essa carta!",
+    "requirementTalent": "Você precisa de {character} no seu Deck para adicionar essa carta!",
+    "addedToDeck": "Incluído no Deck!",
+    "deletedFromDeck": "Excluído do Deck!",
+    "removedFromDeck": "Removido do Deck!",
+    "alreadyMaxCharacters": "Você já tem 3 cartas de personagem no Deck!",
+    "alreadyMaxActions": "Você já tem 30 cartas de ação no Deck!",
+    "requirementInDeck": "Você precisa remover a carta {card} antes de remover {character} do seu Deck!",
+    "addToDeck": "Incluir no Deck",
+    "removeFromDeck": "{type} do Deck",
+    "delete": "Remover",
+    "remove": "Remover",
+    "compare": "Comparar",
+    "noCardOnDeck": "Ainda não há cartas neste Deck",
+    "loadDefaultDeck": "Carregar o Deck Inicial",
+    "saveDeck": "Salvar Deck",
+    "hideDeck": "Ocultar o Deck",
+    "showDeck": "Mostrar o Deck",
+    "addDeck": "Adicionar Deck",
+    "selectDeck": "Escolher Deck",
+    "loadingLink": "Gerando o link...",
+    "loadingLinkError": "Erro ao gerar link 😥",
+    "shareDeck": "Compartilhar o Deck \"{name}\"",
+    "removeCompare": "Ocultar Comparação",
+    "shareNotComplete": "Complete o Deck com 3 Cartas de Personagem e 30 Cartas de Ação antes de compartilhar!",
+    "characterCard": "Cartas de Personagem",
+    "actionCard": "Cartas de Ação"
   }
 }

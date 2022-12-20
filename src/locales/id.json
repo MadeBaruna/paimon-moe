@@ -635,7 +635,6 @@
       "calculateFate": "Hitung berapa uang yang diperlukan untuk {value}"
     },
     "fateCount": {
-      "intertwinedFate": "Intertwined Fate",
       "starglitter": "Starglitter",
       "stardust": "Stardust",
       "primogem": "Primogem",
@@ -645,7 +644,8 @@
       "type": "Tipe",
       "amount": "Jumlah",
       "totalPrimogem": "Total Primogem",
-      "calculate": "Hitung"
+      "calculate": "Hitung",
+      "intertwinedFate": "Intertwined Fate"
     }
   },
   "items": {

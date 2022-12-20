@@ -17,6 +17,7 @@
     "radiantSpincrystal": "Radiant Spincrystal",
     "calendar": "ปฏิทิน",
     "banners": "ตัวละครรีรัน",
+    "tcg": "",
     "settings": "การตั้งค่า",
     "donate": "Donate"
   },
@@ -634,7 +635,6 @@
       "calculateFate": "คำนวณเงินที่จะต้องใช้สำหรับ {value}"
     },
     "fateCount": {
-      "intertwinedFate": "Intertwined Fate",
       "starglitter": "Starglitter",
       "stardust": "Stardust",
       "primogem": "Primogem",
@@ -644,7 +644,8 @@
       "type": "ประเภท",
       "amount": "จำนวน",
       "totalPrimogem": "Primogem ทั้งหมด",
-      "calculate": "คำนวณ"
+      "calculate": "คำนวณ",
+      "intertwinedFate": "Interwined Fate"
     }
   },
   "items": {
@@ -968,6 +969,8 @@
     "18ATKSet": "เซ็ตเพิ่มพลังโจมตี 18%",
     "20EnergyRechargeSet": "เซ็ตเพิ่มฟื้นฟูพลังงาน 20%",
     "25PhysicalDmgSet": "เซ็ตเพิ่มโบนัสความเสียหายกายภาพ 25%",
+    "80EMSet": "",
+    "15HealingBonusSet": "",
     "sands": "นาฬิกา",
     "goblet": "ถ้วยทรงสูง",
     "circlet": "มงกุฎ",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "ซิงค์ข้อมูลเรียบร้อยแล้ว!",
-    "driveError": "ไม่สามารถซิงค์กับไดร์ฟได้ในขณะนี้ 😔"
+    "driveError": "ไม่สามารถซิงค์กับไดร์ฟได้ในขณะนี้ 😔",
+    "open": "",
+    "delete": "",
+    "deleteConfirm": ""
   },
   "update": {
     "newUpdate": "Paimon.moe มีการอัปเดตใหม่!",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "เรียงตามลำดับการรีรันเก่าที่สุด",
     "bannerTitle": "ไทม์ไลน์การปล่อยตัวละคร",
     "bannerSubtitle": "ดูว่าตัวละครจะออกตอนไหน และการรีรันครั้งสุดท้ายของพวกเขา"
+  },
+  "tcg": {
+    "title": "เกมกลเจ็ดอัจฉริยะ",
+    "requirementResonance": "",
+    "requirementTalent": "",
+    "addedToDeck": "",
+    "deletedFromDeck": "",
+    "removedFromDeck": "",
+    "alreadyMaxCharacters": "",
+    "alreadyMaxActions": "",
+    "requirementInDeck": "",
+    "addToDeck": "",
+    "removeFromDeck": "",
+    "delete": "",
+    "remove": "",
+    "compare": "",
+    "noCardOnDeck": "",
+    "loadDefaultDeck": "",
+    "saveDeck": "",
+    "hideDeck": "",
+    "showDeck": "",
+    "addDeck": "",
+    "selectDeck": "",
+    "loadingLink": "",
+    "loadingLinkError": "",
+    "shareDeck": "",
+    "removeCompare": "",
+    "shareNotComplete": "",
+    "characterCard": "",
+    "actionCard": ""
   }
 }

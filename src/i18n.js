@@ -10,6 +10,42 @@ const INIT_OPTIONS = {
   initialLocale: 'en',
 };
 
+const htmlLocaleCode = {
+  en: 'en',
+  id: 'id',
+  ru: 'ru',
+  ja: 'ja',
+  ko: 'ko',
+  fr: 'fr',
+  zh: 'zh-CN',
+  pt: 'pt',
+  tw: 'zh-TW',
+  es: 'es',
+  de: 'de',
+  th: 'th',
+  vi: 'vi',
+  tr: 'tr',
+  it: 'it',
+};
+
+const dayjsLocales = {
+  en: () => import('dayjs/locale/en'),
+  id: () => import('dayjs/locale/id'),
+  ru: () => import('dayjs/locale/ru'),
+  ja: () => import('dayjs/locale/ja'),
+  ko: () => import('dayjs/locale/ko'),
+  fr: () => import('dayjs/locale/fr'),
+  zh: () => import('dayjs/locale/zh'),
+  pt: () => import('dayjs/locale/pt'),
+  tw: () => import('dayjs/locale/zh-tw'),
+  es: () => import('dayjs/locale/es'),
+  de: () => import('dayjs/locale/de'),
+  th: () => import('dayjs/locale/th'),
+  vi: () => import('dayjs/locale/vi'),
+  tr: () => import('dayjs/locale/tr'),
+  it: () => import('dayjs/locale/it'),
+};
+
 let isLoaded = false;
 $locale.subscribe((value) => {
   if (value === null) return;
@@ -18,6 +54,7 @@ $locale.subscribe((value) => {
 
   if (typeof window !== 'undefined') {
     dayjsLocales[value]().then(() => dayjs.locale(value));
+    document.documentElement.setAttribute('lang', htmlLocaleCode[value]);
   }
 });
 
@@ -53,24 +90,6 @@ register('vi', () => import('./locales/items/vi.json'));
 register('tr', () => import('./locales/items/tr.json'));
 register('it', () => import('./locales/items/it.json'));
 
-const dayjsLocales = {
-  en: () => import('dayjs/locale/en'),
-  id: () => import('dayjs/locale/id'),
-  ru: () => import('dayjs/locale/ru'),
-  ja: () => import('dayjs/locale/ja'),
-  ko: () => import('dayjs/locale/ko'),
-  fr: () => import('dayjs/locale/fr'),
-  zh: () => import('dayjs/locale/zh'),
-  pt: () => import('dayjs/locale/pt'),
-  tw: () => import('dayjs/locale/zh-tw'),
-  es: () => import('dayjs/locale/es'),
-  de: () => import('dayjs/locale/de'),
-  th: () => import('dayjs/locale/th'),
-  vi: () => import('dayjs/locale/vi'),
-  tr: () => import('dayjs/locale/tr'),
-  it: () => import('dayjs/locale/it'),
-};
-
 export async function startClient() {
   init({
     ...INIT_OPTIONS,
@@ -92,6 +111,8 @@ export async function startClient() {
 
     $locale.set(used);
     isLoaded = true;
+
+    document.documentElement.setAttribute('lang', htmlLocaleCode[used]);
     console.log('change i18n', used);
   }
 }

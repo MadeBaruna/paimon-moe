@@ -1,0 +1,1053 @@
+{
+  "sidebar": {
+    "home": "",
+    "character": "Karakter",
+    "wishCounter": "",
+    "calculator": "",
+    "database": "",
+    "items": "",
+    "achievement": "Başarımlar",
+    "reminder": "",
+    "todoList": "",
+    "timeline": "",
+    "furnishing": "",
+    "weapons": "Silahlar",
+    "artifacts": "Yadigarlar",
+    "fishing": "",
+    "radiantSpincrystal": "",
+    "calendar": "",
+    "banners": "",
+    "tcg": "Dehanın Yakarışı Kart Oyunu",
+    "settings": "",
+    "donate": ""
+  },
+  "home": {
+    "welcome": "",
+    "message": "",
+    "visitor": "",
+    "banner": {
+      "summoned": "",
+      "percentage": "",
+      "avg": "",
+      "subtitle": "",
+      "detail": ""
+    },
+    "wish": {
+      "message": "",
+      "latest": "",
+      "banner": "",
+      "time": "",
+      "name": "",
+      "pity": "",
+      "detail": ""
+    },
+    "reminder": {
+      "message": "",
+      "detail": ""
+    },
+    "event": {
+      "upcoming": "",
+      "current": "",
+      "detail": ""
+    },
+    "discord": {
+      "online": "",
+      "message": "",
+      "join": ""
+    },
+    "items": {
+      "title": "",
+      "detail": "",
+      "sunday": ""
+    },
+    "calculator": {
+      "title": "",
+      "detail": ""
+    },
+    "twitter": {
+      "title": "",
+      "detail": ""
+    },
+    "achievement": {
+      "title": "",
+      "detail": ""
+    },
+    "furnishing": {
+      "title": "",
+      "detail": ""
+    }
+  },
+  "characters": {
+    "title": "",
+    "subtitle": "",
+    "name": "",
+    "element": "",
+    "rarity": "",
+    "weapon": "",
+    "talents": "",
+    "passiveTalents": "",
+    "constellations": "",
+    "const": "",
+    "asc": "",
+    "lvl": "",
+    "hp": "",
+    "atk": "",
+    "def": "",
+    "hpPercent": "",
+    "atkPercent": "",
+    "defPercent": "",
+    "critRate": "",
+    "critDamage": "",
+    "em": "",
+    "er": "",
+    "healingBonus": "",
+    "pyroDamageBonus": "",
+    "hydroDamageBonus": "",
+    "dendroDamageBonus": "",
+    "electroDamageBonus": "",
+    "cryoDamageBonus": "",
+    "anemoDamageBonus": "",
+    "physicalDamageBonus": "",
+    "geoDamageBonus": "",
+    "sortBy": "",
+    "talentBook": "",
+    "bossItem": "",
+    "ascensionMaterial": "",
+    "talentStats": "",
+    "build": "",
+    "source": "",
+    "faq": "",
+    "mainStats": "",
+    "subStats": "",
+    "talentPriority": "",
+    "abilityTip": "",
+    "weapons": "",
+    "artifacts": ""
+  },
+  "wish": {
+    "title": "",
+    "autoImport": "",
+    "helpAndSetting": "",
+    "helps": "",
+    "settings": "",
+    "wishesWorth": "",
+    "lifetimePulls": "",
+    "guarantee": "",
+    "name": "",
+    "time": "",
+    "pity": "",
+    "welcome": "",
+    "welcomeStart1": "",
+    "welcomeStart2": "",
+    "manual": "",
+    "manualButton": "",
+    "errorBanner": "",
+    "globalWishTally": "",
+    "pityTooltip": [
+      "",
+      ""
+    ],
+    "import": {
+      "title": "",
+      "faqsButton": "",
+      "readFaq": "",
+      "openFaq": "",
+      "choosePlatform": "",
+      "chooseMethod": "",
+      "nonew": "",
+      "importNotice1": "",
+      "importNotice2": "",
+      "importNotice3": "",
+      "saveData": "",
+      "reCalculating": "",
+      "processing": "",
+      "banner": "",
+      "page": "",
+      "parsing": "",
+      "save": "",
+      "cancel": "",
+      "cancelling": "",
+      "importNewWishOnly": "",
+      "importNewWishUncheck": "",
+      "import": "",
+      "close": "",
+      "invalidLink": "",
+      "errorApi": "",
+      "errorExpired": "",
+      "timeout": "",
+      "differentAccount": "",
+      "invalidData": "",
+      "noNewData": "",
+      "success": "",
+      "server": "",
+      "wishTallyCheck": "",
+      "wishTally": "",
+      "wishTallyCollected": [
+        "",
+        "",
+        ""
+      ],
+      "forceUpdateCheck": "",
+      "header": [
+        "",
+        "",
+        ""
+      ],
+      "notice30": "",
+      "soon30": "",
+      "faqs": {
+        "title": "",
+        "q1": "",
+        "a1": "",
+        "q2": "",
+        "a2": "",
+        "q3": "",
+        "a3": [
+          "",
+          ""
+        ],
+        "q4": "",
+        "a4": [
+          "",
+          "",
+          ""
+        ],
+        "q5": "",
+        "a5": [
+          "",
+          "",
+          "",
+          ""
+        ],
+        "q6": "",
+        "a6": "",
+        "q7": "",
+        "a7": ""
+      },
+      "logLocation": {
+        "global": "",
+        "china": ""
+      },
+      "method": {
+        "pc": "",
+        "pc3": "",
+        "pc4": "",
+        "pc5": "",
+        "android": "",
+        "android2": "",
+        "android3": ""
+      },
+      "guide": {
+        "video": "",
+        "pc": [
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "pc2": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "pc3": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "pc5": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "pclog": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "android": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "ios": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "ios2": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "ps": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ],
+        "pclocal": [
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          "",
+          ""
+        ]
+      }
+    },
+    "excel": {
+      "title": "",
+      "subtitle": "",
+      "default": "",
+      "takagg": "",
+      "genshinwishes": "",
+      "wishtally": "",
+      "notice": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "selectFile": {
+        "default": "",
+        "takagg": "",
+        "genshinwishes": "",
+        "wishtally": ""
+      },
+      "processing": "",
+      "addedOn": "",
+      "beginning": "",
+      "end": "",
+      "total": "",
+      "saveNotice": "",
+      "save": "",
+      "success": "",
+      "errorInvalidFile": "",
+      "errorReadExcel": "",
+      "errorExcelPaimon": "",
+      "errorUnknownItem": ""
+    },
+    "help": {
+      "title": "",
+      "exportTitle": "",
+      "exportMessage": "",
+      "export": "",
+      "exporting": "",
+      "import": "",
+      "exportFinish": "",
+      "wishTallyTitle": "",
+      "wishTally": "",
+      "wishTallyCollected": [
+        "",
+        "",
+        ""
+      ],
+      "wishTallySubmit": "",
+      "wishTallyThankyou": "",
+      "manualTitle": "",
+      "enableManual": "",
+      "notice": "",
+      "consider": "",
+      "howto": {
+        "title": "",
+        "subtitle": "",
+        "pressWhenYouGet": "",
+        "p1": "",
+        "p2": [
+          "",
+          ""
+        ],
+        "p3": [
+          "",
+          ""
+        ],
+        "p4": [
+          "",
+          ""
+        ],
+        "p5": [
+          "",
+          ""
+        ],
+        "p6": ""
+      }
+    },
+    "types": {
+      "beginners": "",
+      "standard": "",
+      "character-event": "",
+      "weapon-event": ""
+    },
+    "detail": {
+      "weapon": "",
+      "character": "",
+      "time": "",
+      "pity": "",
+      "name": "",
+      "type": "",
+      "banner": "",
+      "roll": "",
+      "totalThisBanner": "",
+      "worth": "",
+      "loading": "",
+      "guaranteed": "",
+      "unknown_3_star": "",
+      "rarity": "",
+      "total": "",
+      "percent": "",
+      "pityAverage": ""
+    },
+    "tally": {
+      "title": "",
+      "subtitle": "",
+      "update": "",
+      "summoned": "",
+      "wonFiftyFifty": "",
+      "fromFiveStar": "",
+      "fromFourStar": "",
+      "fromFourStarFeatured": "",
+      "show": "",
+      "name": "",
+      "total": "",
+      "wishTotal": "",
+      "worth": "",
+      "weapon": "",
+      "character": "",
+      "error": "",
+      "pity": "",
+      "median": "",
+      "user": "",
+      "detail": ""
+    },
+    "summary": {
+      "total": "",
+      "percent": "",
+      "pityAverage": "",
+      "character": "",
+      "weapon": "",
+      "winRateOff": "",
+      "winRateOffWeapon": ""
+    },
+    "note": [
+      "",
+      "",
+      ""
+    ],
+    "rateon": {
+      "won": "",
+      "lost": "",
+      "guaranteed": ""
+    },
+    "backupReminder": {
+      "title": "",
+      "desc": ""
+    },
+    "rank": {
+      "title": "",
+      "level": "",
+      "based": "",
+      "current": "",
+      "more": "",
+      "less": "",
+      "currentLuck": "",
+      "totalPull": "",
+      "luck5": "",
+      "luck4": "",
+      "luckWinRateOff": "",
+      "medianTotal": "",
+      "medianLuck": "",
+      "moreTotal": "",
+      "lessTotal": "",
+      "moreLuck": "",
+      "lessLuck": "",
+      "top": "",
+      "bottom": ""
+    }
+  },
+  "calculator": {
+    "titleWeapon": "",
+    "titleCharacter": "",
+    "titleResin": "",
+    "titleFriendship": "",
+    "titleFate": "",
+    "titleFateCount": "",
+    "goto": "",
+    "howToUse": "",
+    "guide": {
+      "clickToMaximize": "",
+      "howToWeapon": "",
+      "howToCharacter": ""
+    },
+    "weapon": {
+      "calculateAscension": "",
+      "selectRarity": "",
+      "selectWeapon": "",
+      "current": "",
+      "inputCurrentLevel": "",
+      "inputCurrentExp": "",
+      "intended": "",
+      "inputIntendedLevel": "",
+      "resource": "",
+      "calculate": "",
+      "unknownInformation": "",
+      "ascensionLevel": "",
+      "mora": "",
+      "expWasted": "",
+      "addToTodo": "",
+      "addedToTodo": ""
+    },
+    "character": {
+      "calculateAscension": "",
+      "selectCharacter": "",
+      "current": "",
+      "inputCurrentLevel": "",
+      "inputCurrentExp": "",
+      "intended": "",
+      "inputIntendedLevel": "",
+      "resource": "",
+      "calculateTalent": "",
+      "inputTalentLevel": "",
+      "inputTalentNotice": "",
+      "inputTalent": [
+        "",
+        "",
+        ""
+      ],
+      "talentToLevel": "",
+      "calculate": "",
+      "unknownInformation": "",
+      "ascensionLevel": "",
+      "mora": "",
+      "expWasted": "",
+      "addToTodo": "",
+      "addedToTodo": "",
+      "talent": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "expTable": {
+      "level": "",
+      "items": "",
+      "wasted": "",
+      "mora": ""
+    },
+    "resinTable": {
+      "quantity": "",
+      "time": ""
+    },
+    "resin": {
+      "currentResin": "",
+      "desiredResin": "",
+      "or": "",
+      "inputCurrentResin": "",
+      "inputDesireResin": "",
+      "timeFormat": "",
+      "calculate": "",
+      "currentTime": "",
+      "fullTime": "",
+      "hours": "",
+      "minutes": "",
+      "seconds": ""
+    },
+    "friendship": {
+      "currentLevel": "",
+      "currentExp": "",
+      "randomEventFarm": "",
+      "calculate": "",
+      "based": "",
+      "change": "",
+      "result": "",
+      "resultSerenitea": "",
+      "resultDay": ""
+    },
+    "fate": {
+      "currency": "",
+      "firstTime": "",
+      "amount": "",
+      "genesis": "",
+      "first": "",
+      "total": "",
+      "price": "",
+      "totalGenesis": "",
+      "totalPrice": "",
+      "calculate": "",
+      "calculateFate": ""
+    },
+    "fateCount": {
+      "starglitter": "",
+      "stardust": "",
+      "primogem": "",
+      "genesisCrystal": "",
+      "welkinMoon": "",
+      "dailyCommission": "",
+      "type": "",
+      "amount": "",
+      "totalPrimogem": "",
+      "calculate": "",
+      "intertwinedFate": ""
+    }
+  },
+  "items": {
+    "title": "",
+    "subtitle": "",
+    "searchCharacter": "",
+    "searchWeapon": "",
+    "day": "",
+    "material": "",
+    "characterWeapons": "",
+    "add": {
+      "rarity": "",
+      "amount": "",
+      "inputAmount": "",
+      "cancel": "",
+      "add": ""
+    }
+  },
+  "days": {
+    "Sunday": "",
+    "Monday": "",
+    "Tuesday": "",
+    "Wednesday": "",
+    "Thursday": "",
+    "Friday": "",
+    "Saturday": ""
+  },
+  "todo": {
+    "title": "",
+    "summary": "",
+    "empty": [
+      "",
+      ""
+    ],
+    "farmableToday": "",
+    "resin": "",
+    "based": "",
+    "change": "",
+    "approximation": "",
+    "delete": {
+      "title": "",
+      "cancel": "",
+      "delete": ""
+    }
+  },
+  "timeline": {
+    "title": "",
+    "localTime": "",
+    "starting": "",
+    "ending": "",
+    "live": "",
+    "finished": ""
+  },
+  "settings": {
+    "version": "",
+    "multiple": "",
+    "selectAccount": "",
+    "reset": "",
+    "delete": "",
+    "add": "",
+    "server": "",
+    "ar": "",
+    "wl": "",
+    "drive": [
+      "",
+      ""
+    ],
+    "driveError": "",
+    "driveSignIn": "",
+    "driveSignOut": "",
+    "driveSignInErrorScope": "",
+    "synced": "",
+    "waiting": "",
+    "syncing": "",
+    "syncStatus": "",
+    "lastSync": "",
+    "feedback": "",
+    "or": "",
+    "thanks": "",
+    "credits": {
+      "title": "",
+      "items": [
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        },
+        {
+          "name": "",
+          "value": ""
+        }
+      ]
+    },
+    "setMainAccount": "",
+    "modal": {
+      "notice": "",
+      "backup": "",
+      "setMain": "",
+      "setMainNotice": "",
+      "cancel": "",
+      "delete": "",
+      "reset": "",
+      "continue": ""
+    },
+    "changelog": "",
+    "exportDescription": "",
+    "exportButton": "",
+    "export": "",
+    "download": "",
+    "import": "",
+    "selectFile": "",
+    "exportInfo": "",
+    "importWarning": "",
+    "importContinue": "",
+    "importSuccess": "",
+    "importFailed": "",
+    "email": "",
+    "mainAccountChanged": "",
+    "dataDeleted": "",
+    "dataReset": "",
+    "accountAdded": ""
+  },
+  "privacypolicy": {
+    "title": "",
+    "subtitle": "",
+    "collect": [
+      {
+        "title": "",
+        "content": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "title": "",
+        "content": [
+          "",
+          "",
+          ""
+        ]
+      },
+      {
+        "title": "",
+        "content": [
+          "",
+          ""
+        ]
+      }
+    ],
+    "subtitleNotCollect": "",
+    "notCollect": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "subtitleAd": "",
+    "ad": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "sync": {
+    "message": "",
+    "googleDriveData": "",
+    "localData": "",
+    "older": "",
+    "newer": "",
+    "useGoogleDriveData": "",
+    "useLocalData": "",
+    "download": "",
+    "lastModified": "",
+    "or": "",
+    "smallSizeWarning": ""
+  },
+  "footer": {
+    "affliate": "",
+    "copyright": "",
+    "discord": "",
+    "community": "",
+    "official": "",
+    "link": {
+      "github": "",
+      "discord": "",
+      "devTwitter": "",
+      "reddit": "",
+      "facebook": "",
+      "cookieSettings": "",
+      "privacyPolicy": ""
+    }
+  },
+  "donate": {
+    "message": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "kofi": "",
+    "trakteer": "",
+    "crypto": ""
+  },
+  "reminder": {
+    "notSupported": "",
+    "blocked": "",
+    "desktop": "",
+    "early": "",
+    "allowNotification": "",
+    "transformer": "",
+    "last": "",
+    "lastHoyolab": "",
+    "every": "",
+    "countdown": "",
+    "useLast": "",
+    "useCountdown": "",
+    "set": "",
+    "checking": "",
+    "errorSelect": "",
+    "errorSaving": "",
+    "current": "",
+    "hoyolab": "",
+    "comingsoon": ""
+  },
+  "achievement": {
+    "title": "",
+    "of": "",
+    "sort": "",
+    "search": "",
+    "commissions": "",
+    "version": "",
+    "type": "",
+    "searchError": "",
+    "quest": "",
+    "checklist": ""
+  },
+  "furnishing": {
+    "title": "",
+    "name": "",
+    "energy": "",
+    "load": "",
+    "reduced": "",
+    "ratio": "",
+    "using": "",
+    "interior": "",
+    "exterior": "",
+    "info": [
+      "",
+      ""
+    ],
+    "hall": "",
+    "room": "",
+    "exteriorNum": "",
+    "corridor": "",
+    "inventoryButton": "",
+    "listButton": "",
+    "selectCharacter": "",
+    "inventory": {
+      "title": "",
+      "subtitle": "",
+      "all": "",
+      "openSets": ""
+    },
+    "sets": {
+      "title": "",
+      "subtitle": "",
+      "setPlaced": "",
+      "setUnplaced": "",
+      "inInventory": "",
+      "available": "",
+      "used": "",
+      "calculate": "",
+      "exludeOwned": ""
+    }
+  },
+  "weapon": {
+    "title": "",
+    "subtitle": "",
+    "name": "",
+    "type": "",
+    "rarity": "",
+    "atk": "",
+    "secondary": "",
+    "critRate": "",
+    "critDamage": "",
+    "em": "",
+    "er": "",
+    "atkPercent": "",
+    "hpPercent": "",
+    "defPercent": "",
+    "physicalDamage": "",
+    "bow": "",
+    "polearm": "",
+    "sword": "",
+    "catalyst": "",
+    "claymore": "",
+    "ascensionMaterial": "",
+    "asc": "",
+    "lvl": "",
+    "baseAtk": "",
+    "recommendedCharacter": ""
+  },
+  "artifact": {
+    "title": "",
+    "name": "",
+    "maxRarity": "",
+    "bonus2": "",
+    "bonus4": "",
+    "domain": "",
+    "artifact": "",
+    "setPiece": "",
+    "recommendedCharacter": "",
+    "18ATKSet": "",
+    "20EnergyRechargeSet": "",
+    "25PhysicalDmgSet": "",
+    "80EMSet": "",
+    "15HealingBonusSet": "",
+    "sands": "",
+    "goblet": "",
+    "circlet": "",
+    "choose2": "",
+    "pieceStat": "",
+    "pieceInfo": ""
+  },
+  "fishing": {
+    "title": "",
+    "subtitle": "",
+    "mondstadt": "Mondstadt",
+    "liyue": "Liyue",
+    "inazuma": "Inazuma",
+    "enkanomiya": "Enkanomiya",
+    "chasm": "Kanyon",
+    "sumeru": "Sumeru",
+    "setEmpty": "",
+    "emptyTime": "",
+    "clear": "",
+    "save": "",
+    "cancel": ""
+  },
+  "radiantSpincrystal": {
+    "title": ""
+  },
+  "common": {
+    "dataSynced": "",
+    "driveError": "",
+    "open": "",
+    "delete": "",
+    "deleteConfirm": ""
+  },
+  "update": {
+    "newUpdate": "",
+    "updateRefresh": "",
+    "whatsNew": "",
+    "later": "",
+    "refresh": ""
+  },
+  "calendar": {
+    "lastAppearance": "",
+    "lastAppearanceDesc": "",
+    "bannerHover": "",
+    "birthday": "",
+    "sortByTime": "",
+    "sortByRerun": "",
+    "bannerTitle": "",
+    "bannerSubtitle": ""
+  },
+  "tcg": {
+    "title": "Dehanın Yakarışı Kart Oyunu",
+    "requirementResonance": "",
+    "requirementTalent": "",
+    "addedToDeck": "",
+    "deletedFromDeck": "",
+    "removedFromDeck": "",
+    "alreadyMaxCharacters": "",
+    "alreadyMaxActions": "",
+    "requirementInDeck": "",
+    "addToDeck": "",
+    "removeFromDeck": "",
+    "delete": "",
+    "remove": "",
+    "compare": "",
+    "noCardOnDeck": "",
+    "loadDefaultDeck": "",
+    "saveDeck": "",
+    "hideDeck": "",
+    "showDeck": "",
+    "addDeck": "",
+    "selectDeck": "",
+    "loadingLink": "",
+    "loadingLinkError": "",
+    "shareDeck": "",
+    "removeCompare": "",
+    "shareNotComplete": "",
+    "characterCard": "",
+    "actionCard": ""
+  }
+}
