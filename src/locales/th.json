@@ -634,7 +634,7 @@
       "calculateFate": "คำนวณเงินที่จะต้องใช้สำหรับ {value}"
     },
     "fateCount": {
-      "interwinedFate": "Interwined Fate",
+      "intertwinedFate": "Intertwined Fate",
       "starglitter": "Starglitter",
       "stardust": "Stardust",
       "primogem": "Primogem",

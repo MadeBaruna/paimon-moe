@@ -7,8 +7,8 @@
 
   let fateValues = [
     {
-      id: 'interwinedFate',
-      name: $t('calculator.fateCount.interwinedFate'),
+      id: 'intertwinedFate',
+      name: $t('calculator.fateCount.intertwinedFate'),
       image: '/images/intertwined_fate.png',
       amount: 0,
     },
@@ -39,7 +39,7 @@
       if (value.amount >= 0) {
         let total = 0;
         switch (value.id) {
-          case 'interwinedFate':
+          case 'intertwinedFate':
             total = value.amount * 160;
             break;
           case 'starglitter':

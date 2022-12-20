@@ -634,7 +634,7 @@
       "calculateFate": "Berechnen Sie, wie viel Geld ich für {value} brauche"
     },
     "fateCount": {
-      "interwinedFate": "Verflochtene Schicksale",
+      "intertwinedFate": "Verflochtene Schicksale",
       "starglitter": "Stern-Glitter",
       "stardust": "Star Staub",
       "primogem": "Primogem",

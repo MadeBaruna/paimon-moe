@@ -634,7 +634,7 @@
       "calculateFate": "Calcular cuánto dinero necesito para {value}"
     },
     "fateCount": {
-      "interwinedFate": "Destino entrelazado",
+      "intertwinedFate": "Destino entrelazado",
       "starglitter": "Brillo estelar sin dueño",
       "stardust": "Polvo estelar sin dueño",
       "primogem": "Protogema",

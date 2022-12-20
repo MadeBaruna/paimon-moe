@@ -634,7 +634,7 @@
       "calculateFate": "Calculez combien d'argent j'ai besoin pour {value}"
     },
     "fateCount": {
-      "interwinedFate": "Pierre de la fatalité",
+      "intertwinedFate": "Pierre de la fatalité",
       "starglitter": "Astérie libre",
       "stardust": "Astrion libre",
       "primogem": "Primo-gemme",
