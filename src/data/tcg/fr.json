@@ -3099,7 +3099,7 @@
     "_id": 331101,
     "id": "elemental_resonance_woven_ice",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Glace tissée",
+    "name": "Résonance élémentaire : Glace tissée",
     "requirement": "cryo",
     "skills": {
       "cost": [],
@@ -3110,7 +3110,7 @@
     "_id": 331102,
     "id": "elemental_resonance_shattering_ice",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Gel pulvérisateur",
+    "name": "Résonance élémentaire : Gel pulvérisateur",
     "requirement": "cryo",
     "skills": {
       "cost": [
@@ -3126,7 +3126,7 @@
     "_id": 331201,
     "id": "elemental_resonance_woven_waters",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Eau tissée",
+    "name": "Résonance élémentaire : Eau tissée",
     "requirement": "hydro",
     "skills": {
       "cost": [],
@@ -3137,7 +3137,7 @@
     "_id": 331202,
     "id": "elemental_resonance_soothing_water",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Eau salvatrice",
+    "name": "Résonance élémentaire : Eau salvatrice",
     "requirement": "hydro",
     "skills": {
       "cost": [
@@ -3153,7 +3153,7 @@
     "_id": 331301,
     "id": "elemental_resonance_woven_flames",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Feu tissé",
+    "name": "Résonance élémentaire : Feu tissé",
     "requirement": "pyro",
     "skills": {
       "cost": [],
@@ -3164,7 +3164,7 @@
     "_id": 331302,
     "id": "elemental_resonance_fervent_flames",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Flammes de la ferveur",
+    "name": "Résonance élémentaire : Flammes de la ferveur",
     "requirement": "pyro",
     "skills": {
       "cost": [
@@ -3180,7 +3180,7 @@
     "_id": 331401,
     "id": "elemental_resonance_woven_thunder",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Éclair tissé",
+    "name": "Résonance élémentaire : Éclair tissé",
     "requirement": "electro",
     "skills": {
       "cost": [],
@@ -3191,7 +3191,7 @@
     "_id": 331402,
     "id": "elemental_resonance_high_voltage",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Tonnerre puissant",
+    "name": "Résonance élémentaire : Tonnerre puissant",
     "requirement": "electro",
     "skills": {
       "cost": [
@@ -3207,7 +3207,7 @@
     "_id": 331501,
     "id": "elemental_resonance_woven_winds",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Vent tissé",
+    "name": "Résonance élémentaire : Vent tissé",
     "requirement": "anemo",
     "skills": {
       "cost": [],
@@ -3218,7 +3218,7 @@
     "_id": 331502,
     "id": "elemental_resonance_impetuous_winds",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Vents de la célérité",
+    "name": "Résonance élémentaire : Vents de la célérité",
     "requirement": "anemo",
     "skills": {
       "cost": [
@@ -3234,7 +3234,7 @@
     "_id": 331601,
     "id": "elemental_resonance_woven_stone",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Terre tissée",
+    "name": "Résonance élémentaire : Terre tissée",
     "requirement": "geo",
     "skills": {
       "cost": [],
@@ -3245,7 +3245,7 @@
     "_id": 331602,
     "id": "elemental_resonance_enduring_rock",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Roc inamovible",
+    "name": "Résonance élémentaire : Roc inamovible",
     "requirement": "geo",
     "skills": {
       "cost": [
@@ -3261,7 +3261,7 @@
     "_id": 331701,
     "id": "elemental_resonance_woven_weeds",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Herbe tissée",
+    "name": "Résonance élémentaire : Herbe tissée",
     "requirement": "dendro",
     "skills": {
       "cost": [],
@@ -3272,7 +3272,7 @@
     "_id": 331702,
     "id": "elemental_resonance_sprawling_greenery",
     "type": "resonance",
-    "name": "#Résonance élémentaire{NON_BREAK_SPACE}: Plante grimpante",
+    "name": "Résonance élémentaire : Plante grimpante",
     "requirement": "dendro",
     "skills": {
       "cost": [
@@ -3338,7 +3338,7 @@
     "_id": 332005,
     "id": "i_havent_lost_yet!",
     "type": "none",
-    "name": "#Pas encore perdu{NON_BREAK_SPACE}!",
+    "name": "#Pas encore perdu !",
     "skills": {
       "cost": [],
       "desc": "Jouable si un de vos personnages a été éliminé pendant la manche :\\nCrée 1 dé <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span> et accorde 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span> à votre personnage actif."
