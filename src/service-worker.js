@@ -7,13 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = [
-  'Add TCG Deck builder, check it out on TCG menu!',
-  'Fix todo crash caused by Redcrest renamed to Henna Berry',
-  'Update timeline',
-  'Bug fixes',
-  'Update locales',
-];
+const changelog = ['Bug fixes', 'Update timeline', 'Update locales', 'Add TCG Deck builder, check it out on TCG menu!'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
