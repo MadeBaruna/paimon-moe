@@ -11,6 +11,30 @@
   import { mdiSwapVertical } from '@mdi/js';
   import Ad from '../../components/Ad.svelte';
 
+  // temporary until update banners
+  banners.characters.push({
+    name: 'Reign of Serenity',
+    image: 3,
+    shortName: 'Raiden',
+    start: '2022-12-27 18:00:00',
+    end: '2023-01-17 14:59:59',
+    color: '#D0AEF2',
+    featured: ['raiden_shogun', 'kamisato_ayato'],
+    featuredRare: ['sayu', 'rosaria', 'kujou_sara'],
+    version: '3.4',
+  });
+  banners.weapons.push({
+    name: 'Epitome Invocation',
+    image: 40,
+    shortName: 'Egulfing',
+    start: '2022-12-27 18:00:00',
+    end: '2023-01-17 14:59:59',
+    color: '#D0AEF2',
+    featured: ['engulfing_lightning', 'haran_geppaku_futsu'],
+    featuredRare: ['akuoumaru', 'mouuns_moon', 'lions_roar', 'favonius_lance', 'sacrificial_fragments'],
+    version: '3.4',
+  });
+
   let container;
 
   let length = 0;
