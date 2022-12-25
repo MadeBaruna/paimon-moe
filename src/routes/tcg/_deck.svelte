@@ -10,6 +10,8 @@
   import Card from './_card.svelte';
   import DeckModal from './_deckModal.svelte';
   import ShareModal from './_shareModal.svelte';
+  import { readCards } from '../../functions/deckUtils';
+  import cv from 'opencv-ts';
 
   const dispatch = createEventDispatcher();
   const { open, close } = getContext('simple-modal');
@@ -20,6 +22,9 @@
 
   let editName = false;
   let name = '';
+  let fileInput;
+  let opencvTcgDeck;
+  let importDeckURL = '';
 
   function showDeckSelectionModal() {
     open(
@@ -123,6 +128,40 @@
       },
     );
   }
+
+  function selectFile() {
+    fileInput.click();
+  }
+
+  function onImportFileChange(event) {
+    const files = event.target.files;
+    if (files === null || files.length === 0) return;
+    const file = files[0];
+    const acceptedFileTypes = ['image/png', 'image/jpeg', 'image/webp', 'image/gif'];
+    if (acceptedFileTypes.includes(file.type)) {
+      importDeckURL = URL.createObjectURL(file);
+    } else {
+      pushToast($t('tcg.errorInvalidFile', { values: { filetype: file.type } }), 'error');
+    }
+  }
+
+  function onImportImageLoad() {
+    console.log('Image loaded!');
+    let queryMat = cv.imread('opencv-tcg-deck');
+    console.log('OpenCV Read')
+    try {
+      let [characters, actions] = readCards(queryMat);
+      loadDeck(characters, actions);
+    } catch (err) {
+      console.error(err);
+      if (err instanceof RangeError) {
+        pushToast($t('tcg.errorInvalidImageSize', 'error'));
+      }
+    } finally {
+      queryMat.delete();
+      importDeckURL = '';
+    }
+  }
 </script>
 
 <div class="relative bg-black bg-opacity-50 px-4 pt-4 pb-2 rounded-xl mb-4" transition:slide={{ duration: 200 }}>
@@ -188,6 +227,9 @@
     <div>
       <p class="text-white text-lg pb-2">{$t('tcg.noCardOnDeck')}</p>
       <Button on:click={loadDefaultDeck}>{$t('tcg.loadDefaultDeck')}</Button>
+      <img id="opencv-tcg-deck" src={importDeckURL} alt="" on:load={onImportImageLoad} style="display:none;" bind:this={opencvTcgDeck} />
+      <input on:change={onImportFileChange} type="file" style="display: none;" bind:this={fileInput} />
+      <Button on:click={selectFile}>{$t('tcg.importDeck')}</Button>
     </div>
   {/if}
   <div class="flex flex-wrap gap-x-4 gap-y-3 pb-4">
