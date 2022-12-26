@@ -1035,7 +1035,13 @@
     "delete": "Delete",
     "remove": "Remove",
     "compare": "Compare",
-    "noCardOnDeck": "There is no card yet in this deck",
+    "noCardOnDeck": "There are no cards yet in this deck. You can choose to load the starter deck or import an existing deck from the game. To import a deck:",
+    "importDeckGuide": {
+      "step-1": "Open Casket of Tomes.",
+      "step-2": "Click on the drop-down menu on a deck and select \"Preview Image\".",
+      "step-3": "Click on the share button and click on save image. The image will be saved to the game's ScreenShot folder.",
+      "step-4": "Click on \"{importDeckButton}\" and select the image from your ScreenShot folder."
+    },
     "loadDefaultDeck": "Load Starter Deck",
     "saveDeck": "Save Deck",
     "hideDeck": "Hide Deck",

@@ -148,7 +148,7 @@
   function onImportImageLoad() {
     console.log('Image loaded!');
     let queryMat = cv.imread('opencv-tcg-deck');
-    console.log('OpenCV Read')
+    console.log('OpenCV Read');
     try {
       let [characters, actions] = readCards(queryMat);
       delete characters['blank'];
@@ -227,9 +227,32 @@
   </div>
   {#if characterCount === 0 && actionCount === 0}
     <div>
+      <iframe
+        class="pb-2"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/jXrEg9kGDnM"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
       <p class="text-white text-lg pb-2">{$t('tcg.noCardOnDeck')}</p>
+      <ol class="list-decimal list-inside text-white text-lg pb-2">
+        <li>{$t('tcg.importDeckGuide.step-1')}</li>
+        <li>{$t('tcg.importDeckGuide.step-2')}</li>
+        <li>{$t('tcg.importDeckGuide.step-3')}</li>
+        <li>{$t('tcg.importDeckGuide.step-4', { values: { importDeckButton: $t('tcg.importDeck') } })}</li>
+      </ol>
       <Button on:click={loadDefaultDeck}>{$t('tcg.loadDefaultDeck')}</Button>
-      <img id="opencv-tcg-deck" src={importDeckURL} alt="" on:load={onImportImageLoad} style="display:none;" bind:this={opencvTcgDeck} />
+      <img
+        id="opencv-tcg-deck"
+        src={importDeckURL}
+        alt=""
+        on:load={onImportImageLoad}
+        style="display:none;"
+        bind:this={opencvTcgDeck}
+      />
       <input on:change={onImportFileChange} type="file" style="display: none;" bind:this={fileInput} />
       <Button on:click={selectFile}>{$t('tcg.importDeck')}</Button>
     </div>
