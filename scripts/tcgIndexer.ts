@@ -1,4 +1,4 @@
-// Run with "npm run index"
+// Run with "npm run index-tcg"
 import * as fs from 'fs';
 import * as path from 'path';
 import cv from 'opencv-ts';
@@ -22,27 +22,21 @@ async function onRuntimeInitialized() {
   console.log(`Found ${actions.length} action cards.`);
 
   // Generate features
-  let charactersIndex: { name: string, data: Float32Array }[] = [];
-  for (let characterName of characters) {
-    // Read image into fs
-    let imageFile = fs.readFileSync(path.join(imagesPath, characterName + '.png'));
-    // Convert image in fs to ImageData object
-    let imageData = getSync(imageFile) as ImageData;
-    // Now we can run OpenCV without reading from a DOM
-    let imageMat = cv.matFromImageData(imageData);
-    let features = CD.describeImage(imageMat);
-    imageMat.delete();
-    charactersIndex.push({ name: characterName, data: features });
-  }
-
-  let actionsIndex: { name: string, data: Float32Array }[] = [];
-  for (let actionName of actions) {
-    let imageFile = fs.readFileSync(path.join(imagesPath, actionName + '.png'));
-    let imageData = getSync(imageFile);
-    let imageMat = cv.matFromImageData(imageData);
-    let features = CD.describeImage(imageMat);
-    imageMat.delete();
-    actionsIndex.push({ name: actionName, data: features });
+  const charactersIndex: { name: string, data: Float32Array }[] = [];
+  const actionsIndex: { name: string, data: Float32Array }[] = [];
+  const queues = [{ cards: characters, index: charactersIndex }, { cards: actions, index: actionsIndex }];
+  for (let queue of queues) {
+    for (let cardName of queue.cards) {
+      // Read image into fs
+      let imageFile = fs.readFileSync(path.join(imagesPath, cardName + '.png'));
+      // Convert image in fs to ImageData object
+      let imageData = getSync(imageFile) as ImageData;
+      // Now we can run OpenCV without reading from a DOM
+      let imageMat = cv.matFromImageData(imageData);
+      let features = CD.describeImage(imageMat);
+      imageMat.delete();
+      queue.index.push({ name: cardName, data: features });
+    }
   }
 
   console.log(`Generated features for ${charactersIndex.length} character cards.`);
