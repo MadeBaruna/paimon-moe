@@ -157,7 +157,7 @@
     } catch (err) {
       console.error(err);
       if (err instanceof RangeError) {
-        pushToast($t('tcg.errorInvalidImageSize', 'error'));
+        pushToast($t('tcg.errorInvalidImageSize'), 'error');
       }
     } finally {
       importDeckURL = '';
