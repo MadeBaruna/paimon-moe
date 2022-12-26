@@ -145,7 +145,7 @@
     }
   }
 
-  function onImportImageLoad() {
+  async function onImportImageLoad() {
     console.log('Image loaded!');
     let queryMat = cv.imread('opencv-tcg-deck');
     console.log('OpenCV Read');
