@@ -151,6 +151,8 @@
     console.log('OpenCV Read')
     try {
       let [characters, actions] = readCards(queryMat);
+      delete characters['blank'];
+      delete actions['blank'];
       loadDeck(characters, actions);
     } catch (err) {
       console.error(err);
@@ -158,8 +160,8 @@
         pushToast($t('tcg.errorInvalidImageSize', 'error'));
       }
     } finally {
-      queryMat.delete();
       importDeckURL = '';
+      queryMat.delete();
     }
   }
 </script>

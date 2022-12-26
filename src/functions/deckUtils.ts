@@ -2,7 +2,6 @@ import cv, { Mat } from "opencv-ts";
 import { tcgIndex } from "../data/tcgIndex.js";
 import { CD, ColorDescriptor } from "./colorDescriptor";
 
-
 // Positions of cards on generated screenshot image
 const DIMENSIONS = {
   "characters": {
@@ -73,10 +72,10 @@ class Searcher {
 
 }
 
-export const CharacterSearcher = new Searcher(tcgIndex.characters.map(
+const CharacterSearcher = new Searcher(tcgIndex.characters.map(
   (v) => ({ "name": v.name, "data": new Float32Array(v.data) }
   )));
-export const ActionSearcher = new Searcher(tcgIndex.actions.map(
+const ActionSearcher = new Searcher(tcgIndex.actions.map(
   (v) => ({ "name": v.name, "data": new Float32Array(v.data) }
   )));
 
@@ -113,8 +112,6 @@ function cropCard(image: Mat, x: number, y: number, w: number, h: number): Mat {
 /**
  * 
  * @param queryImage cv.Mat object of the whole screenshot image
- * @param characterSearcher Search object with character cards index
- * @param actionsSearcher Search object with action cards index
  * @returns `[{[id: string]: number}, {[id: string]: number}]` --
  * The first item contains the character cards identified, the second item contains the action cards identified. 
  * There should be 3 character cards and 30 action cards identified.
