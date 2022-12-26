@@ -227,16 +227,16 @@
   </div>
   {#if characterCount === 0 && actionCount === 0}
     <div>
-      <iframe
-        class="pb-2"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/jXrEg9kGDnM"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      />
+      <div class="relative max-w-[560px] max-h-[315px] mt-4 mb-4" style="padding-bottom: min(315px, 56.25%);">
+        <iframe
+          class="absolute w-full h-full left-0 top-0 border-0"
+          src="https://www.youtube.com/embed/jXrEg9kGDnM?modestbranding=1&rel=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div>
       <p class="text-white text-lg pb-2">{$t('tcg.noCardOnDeck')}</p>
       <ol class="list-decimal list-inside text-white text-lg pb-2">
         <li>{$t('tcg.importDeckGuide.step-1')}</li>
