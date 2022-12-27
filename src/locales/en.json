@@ -1056,6 +1056,7 @@
     "characterCard": "Character Card",
     "actionCard": "Action Card",
     "importDeck": "Import Deck",
+    "importerLoading": "Loading deck importer...",
     "errorInvalidFile": "Invalid image file! Only PNG, JPG, WEBP, and GIF allowed! Selected file was \"{filetype}\"",
     "errorInvalidImageSize": "Image must be exactly 1200x1630 pixels!"
   }
