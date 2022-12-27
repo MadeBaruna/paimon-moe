@@ -635,7 +635,6 @@
       "calculateFate": "Calculate how much money I need for {value}"
     },
     "fateCount": {
-      "intertwinedFate": "Intertwined Fate",
       "starglitter": "Starglitter",
       "stardust": "Stardust",
       "primogem": "Primogem",
@@ -645,7 +644,8 @@
       "type": "Type",
       "amount": "Amount",
       "totalPrimogem": "Total Primogems",
-      "calculate": "Calculate"
+      "calculate": "Calculate",
+      "intertwinedFate": "Intertwined Fate"
     }
   },
   "items": {

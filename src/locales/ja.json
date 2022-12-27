@@ -1029,7 +1029,7 @@
     "removedFromDeck": "デッキから1枚を除去しました！",
     "alreadyMaxCharacters": "既にデッキにキャラカードが3枚入っています！",
     "alreadyMaxActions": "既にデッキにアクションカードが30枚入っています！",
-    "requirementInDeck": "デッキから{card}を削除するには、 {character}を削除する必要があります！",
+    "requirementInDeck": "デッキから{character}を削除するには、「{card}」を削除する必要があります！",
     "addToDeck": "デッキに追加",
     "removeFromDeck": "デッキから{type}",
     "delete": "削除",
