@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "元素爆發",
         "name": "機巧偽天狗抄",
-        "desc": "造成6點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，觸發我方所有<span style=\"color: #FFFFFFFF;\">劍影</span>召喚物的效果。（不消耗其可用次數）",
+        "desc": "造成4點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，觸發我方所有<span style=\"color: #FFFFFFFF;\">劍影</span>召喚物的效果。（不消耗其可用次數）",
         "cost": [
           {
             "type": "anemo",

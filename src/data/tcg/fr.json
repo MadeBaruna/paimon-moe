@@ -40,7 +40,7 @@
           "_id": 111012,
           "id": "ice_lotus",
           "name": "Lotus de glace",
-          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit des DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit des DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
         }
       },
       {
@@ -449,7 +449,7 @@
           "_id": 112021,
           "id": "rain_sword",
           "name": "Épée de pluie",
-          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit au moins 3 pts de DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit au moins 3 pts de DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
         }
       },
       {
@@ -517,7 +517,7 @@
           "_id": 112031,
           "id": "reflection",
           "name": "Mirage",
-          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit des DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 1</span>, mais la carte n'est pas défaussée une fois épuisée.\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Défausse cette carte et inflige 1 pt de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>."
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit des DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 1</span>, mais la carte n'est pas défaussée une fois épuisée.\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Défausse cette carte et inflige 1 pt de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>."
         }
       },
       {
@@ -539,7 +539,7 @@
           "_id": 112032,
           "id": "illusory_bubble",
           "name": "Bulle nocturne",
-          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque vous infligez des DGT en utilisant une capacité: </span>Annule l'état et double les DGT actuels."
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque vous infligez des DGT en utilisant une capacité: </span>Annule l'état et double les DGT actuels."
         }
       },
       {
@@ -772,7 +772,7 @@
       {
         "_id": 13052,
         "type": "Compétence élémentaire",
-        "name": "#Danse du feu « Niwabi»",
+        "name": "Danse du feu « Niwabi»",
         "desc": "Accorde un <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> au personnage. (Cette capacité n'accorde pas de charge)",
         "cost": [
           {
@@ -1113,7 +1113,7 @@
       {
         "_id": 15013,
         "type": "Déchaînement élémentaire",
-        "name": "#Esprit du vent : Isomorphe 75 TypeII",
+        "name": "Esprit du vent : Isomorphe 75 TypeII",
         "desc": "Inflige 1 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et invoque un <span style=\"color: #FFFFFFFF;\">Esprit du vent de grande taille</span>.",
         "cost": [
           {
@@ -1237,7 +1237,7 @@
           "_id": 116011,
           "id": "jade_screen",
           "name": "Paravent d'astrolabe",
-          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit au moins 2 pts de DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit au moins 2 pts de DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
         }
       },
       {
@@ -1259,7 +1259,7 @@
           "_id": 116011,
           "id": "jade_screen",
           "name": "Paravent d'astrolabe",
-          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit au moins 2 pts de DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit au moins 2 pts de DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
         }
       }
     ]
@@ -1577,7 +1577,7 @@
           "_id": 123011,
           "id": "stealth",
           "name": "Infiltration",
-          "desc": "#DGT subis par le personnage affecté -1 et DGT qu'il inflige+1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2"
+          "desc": "DGT subis par le personnage affecté -1 et DGT qu'il inflige+1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2"
         }
       },
       {
@@ -1606,7 +1606,7 @@
           "_id": 123011,
           "id": "stealth",
           "name": "Infiltration",
-          "desc": "#DGT subis par le personnage affecté -1 et DGT qu'il inflige+1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2"
+          "desc": "DGT subis par le personnage affecté -1 et DGT qu'il inflige+1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2"
         }
       }
     ]
@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "Déchaînement élémentaire",
         "name": "Balayage tengu falsifié",
-        "desc": "Inflige 6 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et déclenche les effets de toutes vos invocations de type <span style=\"color: #FFFFFFFF;\">Épée d'ombre</span>. (Ne consomme pas d'utilisation)",
+        "desc": "Inflige 4 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et déclenche les effets de toutes vos invocations de type <span style=\"color: #FFFFFFFF;\">Épée d'ombre</span>. (Ne consomme pas d'utilisation)",
         "cost": [
           {
             "type": "anemo",
@@ -1755,7 +1755,7 @@
           "_id": 126011,
           "id": "stonehide",
           "name": "Peau-pierre",
-          "desc": "#<span style=\"color: #FFFFFFFF;\">Lorsque le personnage affecté subit des DGT : </span>Diminue les DGT de 1pt. Lorsque des DGT Géo sont diminués, consomme le <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> pour 1 de plus.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage affecté subit des DGT : </span>Diminue les DGT de 1pt. Lorsque des DGT Géo sont diminués, consomme le <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> pour 1 de plus.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 3</span>"
         }
       }
     ]
@@ -2074,7 +2074,7 @@
           "count": 3
         }
       ],
-      "desc": "#<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Keqing</span>, équipe cette carte.\\nUne fois Keqing équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Pénitence retentissante</span> une fois.\\nL'<span style=\"color: #FFFFFFFF;\">Enchantement Électro</span> créé par Keqing équipée de cette carte déclenche les effets suivants:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> de départ de l'Enchantement Électro +1 et <span style=\"color: #FFACFFFF;\">DGT Électro</span> infligés par les personnages affectés +1.\\n(Votre deck doit contenir Keqing pour pouvoir y ajouter cette carte)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Keqing</span>, équipe cette carte.\\nUne fois Keqing équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Pénitence retentissante</span> une fois.\\nL'<span style=\"color: #FFFFFFFF;\">Enchantement Électro</span> créé par Keqing équipée de cette carte déclenche les effets suivants:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> de départ de l'Enchantement Électro +1 et <span style=\"color: #FFACFFFF;\">DGT Électro</span> infligés par les personnages affectés +1.\\n(Votre deck doit contenir Keqing pour pouvoir y ajouter cette carte)"
     }
   },
   {
@@ -2230,7 +2230,7 @@
           "count": 3
         }
       ],
-      "desc": "#<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est l'<span style=\"color: #FFFFFFFF;\">Usurier Pyro des Fatui</span>, équipe cette carte.\\nUne fois l'Usurier Pyro des Fatui équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Paiement total</span> une fois.\\nL'<span style=\"color: #FFFFFFFF;\">Infiltration</span> créée par l'Usurier Pyro des Fatui équipé de cette carte déclenche les effets suivants:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> de départ de l'Infiltration +1 et convertit les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés par le personnage affecté en <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n(Votre deck doit contenir l'Usurier Pyro des Fatui pour pouvoir y ajouter cette carte)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est l'<span style=\"color: #FFFFFFFF;\">Usurier Pyro des Fatui</span>, équipe cette carte.\\nUne fois l'Usurier Pyro des Fatui équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Paiement total</span> une fois.\\nL'<span style=\"color: #FFFFFFFF;\">Infiltration</span> créée par l'Usurier Pyro des Fatui équipé de cette carte déclenche les effets suivants:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> de départ de l'Infiltration +1 et convertit les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés par le personnage affecté en <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n(Votre deck doit contenir l'Usurier Pyro des Fatui pour pouvoir y ajouter cette carte)"
     }
   },
   {
@@ -2912,7 +2912,7 @@
           "count": 3
         }
       ],
-      "desc": "#<span style=\"color: #FFFFFFFF;\">Au début de la phase d'action: </span>Crée 2 dés <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Au début de la phase d'action: </span>Crée 2 dés <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
     }
   },
   {
@@ -2957,7 +2957,7 @@
           "count": 2
         }
       ],
-      "desc": "#En arrivant sur le terrain, crée 2 billettes de forge.\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Crée 1 billette de forge.\\n<span style=\"color: #FFFFFFFF;\">En jouant une carte d'arme: </span>Si possible, consomme des billettes de forge équivalant au coût total de l'arme et équipe gratuitement l'arme. (1 fois par manche)"
+      "desc": "En arrivant sur le terrain, crée 2 billettes de forge.\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Crée 1 billette de forge.\\n<span style=\"color: #FFFFFFFF;\">En jouant une carte d'arme: </span>Si possible, consomme des billettes de forge équivalant au coût total de l'arme et équipe gratuitement l'arme. (1 fois par manche)"
     }
   },
   {
@@ -2997,7 +2997,7 @@
     "name": "Timmy",
     "skills": {
       "cost": [],
-      "desc": "#<span style=\"color: #FFFFFFFF;\">Se déclenche automatiquement 1 fois par manche : </span>Cette carte cumule <span style=\"color: #FFFFFFFF;\">1 pigeon</span>.\\nSi la carte a cumulé <span style=\"color: #FFFFFFFF;\">3 pigeons</span>: Défausse la carte, pioche 1 carte et crée 1 dé <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span>."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Se déclenche automatiquement 1 fois par manche : </span>Cette carte cumule <span style=\"color: #FFFFFFFF;\">1 pigeon</span>.\\nSi la carte a cumulé <span style=\"color: #FFFFFFFF;\">3 pigeons</span>: Défausse la carte, pioche 1 carte et crée 1 dé <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span>."
     }
   },
   {
@@ -3007,7 +3007,7 @@
     "name": "Li le fiable",
     "skills": {
       "cost": [],
-      "desc": "#<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Récupère tous vos dés élémentaires non utilisés. (Maximum 1 par type)\\n<span style=\"color: #FFFFFFFF;\">Au début de la phase d'action: </span>Si la carte a récupéré 3 dés élémentaires, pioche 2 cartes, crée 2 dés <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span> et défausse cette carte."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Récupère tous vos dés élémentaires non utilisés. (Maximum 1 par type)\\n<span style=\"color: #FFFFFFFF;\">Au début de la phase d'action: </span>Si la carte a récupéré 3 dés élémentaires, pioche 2 cartes, crée 2 dés <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span> et défausse cette carte."
     }
   },
   {
@@ -3099,7 +3099,7 @@
     "_id": 331101,
     "id": "elemental_resonance_woven_ice",
     "type": "resonance",
-    "name": "Résonance élémentaire : Glace tissée",
+    "name": "Résonance élémentaire: Glace tissée",
     "requirement": "cryo",
     "skills": {
       "cost": [],
@@ -3110,7 +3110,7 @@
     "_id": 331102,
     "id": "elemental_resonance_shattering_ice",
     "type": "resonance",
-    "name": "Résonance élémentaire : Gel pulvérisateur",
+    "name": "Résonance élémentaire: Gel pulvérisateur",
     "requirement": "cryo",
     "skills": {
       "cost": [
@@ -3126,7 +3126,7 @@
     "_id": 331201,
     "id": "elemental_resonance_woven_waters",
     "type": "resonance",
-    "name": "Résonance élémentaire : Eau tissée",
+    "name": "Résonance élémentaire: Eau tissée",
     "requirement": "hydro",
     "skills": {
       "cost": [],
@@ -3137,7 +3137,7 @@
     "_id": 331202,
     "id": "elemental_resonance_soothing_water",
     "type": "resonance",
-    "name": "Résonance élémentaire : Eau salvatrice",
+    "name": "Résonance élémentaire: Eau salvatrice",
     "requirement": "hydro",
     "skills": {
       "cost": [
@@ -3153,7 +3153,7 @@
     "_id": 331301,
     "id": "elemental_resonance_woven_flames",
     "type": "resonance",
-    "name": "Résonance élémentaire : Feu tissé",
+    "name": "Résonance élémentaire: Feu tissé",
     "requirement": "pyro",
     "skills": {
       "cost": [],
@@ -3164,7 +3164,7 @@
     "_id": 331302,
     "id": "elemental_resonance_fervent_flames",
     "type": "resonance",
-    "name": "Résonance élémentaire : Flammes de la ferveur",
+    "name": "Résonance élémentaire: Flammes de la ferveur",
     "requirement": "pyro",
     "skills": {
       "cost": [
@@ -3180,7 +3180,7 @@
     "_id": 331401,
     "id": "elemental_resonance_woven_thunder",
     "type": "resonance",
-    "name": "Résonance élémentaire : Éclair tissé",
+    "name": "Résonance élémentaire: Éclair tissé",
     "requirement": "electro",
     "skills": {
       "cost": [],
@@ -3191,7 +3191,7 @@
     "_id": 331402,
     "id": "elemental_resonance_high_voltage",
     "type": "resonance",
-    "name": "Résonance élémentaire : Tonnerre puissant",
+    "name": "Résonance élémentaire: Tonnerre puissant",
     "requirement": "electro",
     "skills": {
       "cost": [
@@ -3207,7 +3207,7 @@
     "_id": 331501,
     "id": "elemental_resonance_woven_winds",
     "type": "resonance",
-    "name": "Résonance élémentaire : Vent tissé",
+    "name": "Résonance élémentaire: Vent tissé",
     "requirement": "anemo",
     "skills": {
       "cost": [],
@@ -3218,7 +3218,7 @@
     "_id": 331502,
     "id": "elemental_resonance_impetuous_winds",
     "type": "resonance",
-    "name": "Résonance élémentaire : Vents de la célérité",
+    "name": "Résonance élémentaire: Vents de la célérité",
     "requirement": "anemo",
     "skills": {
       "cost": [
@@ -3234,7 +3234,7 @@
     "_id": 331601,
     "id": "elemental_resonance_woven_stone",
     "type": "resonance",
-    "name": "Résonance élémentaire : Terre tissée",
+    "name": "Résonance élémentaire: Terre tissée",
     "requirement": "geo",
     "skills": {
       "cost": [],
@@ -3245,7 +3245,7 @@
     "_id": 331602,
     "id": "elemental_resonance_enduring_rock",
     "type": "resonance",
-    "name": "Résonance élémentaire : Roc inamovible",
+    "name": "Résonance élémentaire: Roc inamovible",
     "requirement": "geo",
     "skills": {
       "cost": [
@@ -3261,7 +3261,7 @@
     "_id": 331701,
     "id": "elemental_resonance_woven_weeds",
     "type": "resonance",
-    "name": "Résonance élémentaire : Herbe tissée",
+    "name": "Résonance élémentaire: Herbe tissée",
     "requirement": "dendro",
     "skills": {
       "cost": [],
@@ -3272,7 +3272,7 @@
     "_id": 331702,
     "id": "elemental_resonance_sprawling_greenery",
     "type": "resonance",
-    "name": "Résonance élémentaire : Plante grimpante",
+    "name": "Résonance élémentaire: Plante grimpante",
     "requirement": "dendro",
     "skills": {
       "cost": [
@@ -3338,7 +3338,7 @@
     "_id": 332005,
     "id": "i_havent_lost_yet!",
     "type": "none",
-    "name": "#Pas encore perdu !",
+    "name": "Pas encore perdu!",
     "skills": {
       "cost": [],
       "desc": "Jouable si un de vos personnages a été éliminé pendant la manche :\\nCrée 1 dé <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni</span> et accorde 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span> à votre personnage actif."

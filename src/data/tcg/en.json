@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "Elemental Burst",
         "name": "Pseudo Tengu Sweeper",
-        "desc": "Deals 6 <span style=\"color: #80FFD7FF;\">Anemo DMG</span>, triggers the effect(s) of all your <span style=\"color: #FFFFFFFF;\">Shadowsword</span> Summon(s). (Does not consume their Usages)",
+        "desc": "Deals 4 <span style=\"color: #80FFD7FF;\">Anemo DMG</span>, triggers the effect(s) of all your <span style=\"color: #FFFFFFFF;\">Shadowsword</span> Summon(s). (Does not consume their Usages)",
         "cost": [
           {
             "type": "anemo",

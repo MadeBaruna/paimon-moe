@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "ท่าไม้ตาย",
         "name": "Pseudo Tengu Sweeper",
-        "desc": "สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 6 หน่วย และทำให้เกิดเอฟเฟกต์ของสิ่งอัญเชิญ <span style=\"color: #FFFFFFFF;\">Shadowsword</span> ทั้งหมดของฝ่ายเรา (ไม่ลดจำนวนครั้งที่สามารถใช้ได้)",
+        "desc": "สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 4 หน่วย และทำให้เกิดเอฟเฟกต์ของสิ่งอัญเชิญ <span style=\"color: #FFFFFFFF;\">Shadowsword</span> ทั้งหมดของฝ่ายเรา (ไม่ลดจำนวนครั้งที่สามารถใช้ได้)",
         "cost": [
           {
             "type": "anemo",
