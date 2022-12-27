@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "원소폭발",
         "name": "기계 텐구쇼",
-        "desc": "<span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 6pt 주고 아군의 모든 <span style=\"color: #FFFFFFFF;\">검의 그림자</span> 소환물 효과를 발동한다. (사용 가능 횟수를 소모하지 않음)",
+        "desc": "<span style=\"color: #80FFD7FF;\">바람 원소 피해</span>를 4pt 주고 아군의 모든 <span style=\"color: #FFFFFFFF;\">검의 그림자</span> 소환물 효과를 발동한다. (사용 가능 횟수를 소모하지 않음)",
         "cost": [
           {
             "type": "anemo",

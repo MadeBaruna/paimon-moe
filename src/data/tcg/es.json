@@ -1671,7 +1671,7 @@
         "_id": 25014,
         "type": "Habilidad Definitiva",
         "name": "Emulación de corte Tengu",
-        "desc": "Inflige 6 pts. de <span style=\"color: #80FFD7FF;\">Daño Anemo</span> y activa los efectos de todas tus invocaciones <span style=\"color: #FFFFFFFF;\">Espadachín sombrío</span> (no consume sus usos).",
+        "desc": "Inflige 4 pts. de <span style=\"color: #80FFD7FF;\">Daño Anemo</span> y activa los efectos de todas tus invocaciones <span style=\"color: #FFFFFFFF;\">Espadachín sombrío</span> (no consume sus usos).",
         "cost": [
           {
             "type": "anemo",
