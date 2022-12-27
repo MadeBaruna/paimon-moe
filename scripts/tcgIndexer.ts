@@ -58,5 +58,3 @@ async function onRuntimeInitialized() {
 
 // Set above function to run only after OpenCV is initialized.
 cv.onRuntimeInitialized = onRuntimeInitialized;
-
-export { };
