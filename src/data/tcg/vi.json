@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "Kỹ Năng Nộ",
         "name": "Tengu Càn Quét Giả Mạo",
-        "desc": "Gây 6 điểm <span style=\"color: #80FFD7FF;\">Sát Thương Nguyên Tố Phong</span>, kích hoạt tất cả hiệu quả vật triệu hồi của <span style=\"color: #FFFFFFFF;\">Kiếm Ảnh</span> phe ta. (Không tiêu hao Số Lần Khả Dụng)",
+        "desc": "Gây 4 điểm <span style=\"color: #80FFD7FF;\">Sát Thương Nguyên Tố Phong</span>, kích hoạt tất cả hiệu quả vật triệu hồi của <span style=\"color: #FFFFFFFF;\">Kiếm Ảnh</span> phe ta. (Không tiêu hao Số Lần Khả Dụng)",
         "cost": [
           {
             "type": "anemo",

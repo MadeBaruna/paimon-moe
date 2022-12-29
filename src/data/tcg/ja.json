@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "元素爆発",
         "name": "機巧偽天狗抄",
-        "desc": "<span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を6与え、味方のすべての<span style=\"color: #FFFFFFFF;\">剣影</span>召喚物の効果を発動する。（使用可能回数は消費しない）",
+        "desc": "<span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を4与え、味方のすべての<span style=\"color: #FFFFFFFF;\">剣影</span>召喚物の効果を発動する。（使用可能回数は消費しない）",
         "cost": [
           {
             "type": "anemo",

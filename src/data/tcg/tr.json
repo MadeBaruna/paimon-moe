@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "Element Patlaması",
         "name": "Sahte Tengu Savuran",
-        "desc": "6 <span style=\"color: #80FFD7FF;\">Rüzgar Hasarı</span> verir ve tüm <span style=\"color: #FFFFFFFF;\">Gölge Kılıcı</span> Minyonlarının etkilerini tetikler. (Kullanım Hakkı harcamaz.)",
+        "desc": "4 <span style=\"color: #80FFD7FF;\">Rüzgar Hasarı</span> verir ve tüm <span style=\"color: #FFFFFFFF;\">Gölge Kılıcı</span> Minyonlarının etkilerini tetikler. (Kullanım Hakkı harcamaz.)",
         "cost": [
           {
             "type": "anemo",

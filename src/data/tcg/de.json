@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "Spezialfähigkeit",
         "name": "Maschineller Tengu-Feger",
-        "desc": "Verursacht 6 Pkt. <span style=\"color: #80FFD7FF;\">Anemo-Schaden</span>|s1:<span style=\"color: #80FFD7FF;\">Anemo-SCH</span>, löst den Effekt aller eigenen Beschwörungen von <span style=\"color: #FFFFFFFF;\">Schwertschatten</span> aus (Kein Verbrauch ihrer Einsatzmöglichkeiten).",
+        "desc": "Verursacht 4 Pkt. <span style=\"color: #80FFD7FF;\">Anemo-Schaden</span>|s1:<span style=\"color: #80FFD7FF;\">Anemo-SCH</span>, löst den Effekt aller eigenen Beschwörungen von <span style=\"color: #FFFFFFFF;\">Schwertschatten</span> aus (Kein Verbrauch ihrer Einsatzmöglichkeiten).",
         "cost": [
           {
             "type": "anemo",

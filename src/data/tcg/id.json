@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "Elemental Burst",
         "name": "Pseudo Tengu Sweeper",
-        "desc": "Mengakibatkan 6 poin <span style=\"color: #80FFD7FF;\">Anemo DMG</span> dan memicu efek dari semua Panggilan <span style=\"color: #FFFFFFFF;\">Shadowsword</span> milikmu (Penggunaannya tidak terkonsumsi)",
+        "desc": "Mengakibatkan 4 poin <span style=\"color: #80FFD7FF;\">Anemo DMG</span> dan memicu efek dari semua Panggilan <span style=\"color: #FFFFFFFF;\">Shadowsword</span> milikmu (Penggunaannya tidak terkonsumsi)",
         "cost": [
           {
             "type": "anemo",

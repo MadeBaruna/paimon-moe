@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "Tripudio elementale",
         "name": "Clone Tengu",
-        "desc": "Infligge 6 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>, attiva l'effetto d'invocazione di tutte le tue <span style=\"color: #FFFFFFFF;\">Spade d'Ombra</span> (non influisce sul numero di Utilizzi).",
+        "desc": "Infligge 4 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>, attiva l'effetto d'invocazione di tutte le tue <span style=\"color: #FFFFFFFF;\">Spade d'Ombra</span> (non influisce sul numero di Utilizzi).",
         "cost": [
           {
             "type": "anemo",

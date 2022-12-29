@@ -1677,7 +1677,7 @@
         "_id": 25014,
         "type": "Supremo",
         "name": "Clone Tengu",
-        "desc": "Causa 6 pontos de <span style=\"color: #80FFD7FF;\">Dano Anemo</span>, desencadeia o efeito de invocação de todas as suas <span style=\"color: #FFFFFFFF;\">Espadas Sombra</span>. (Não consome o seu número de Usos)",
+        "desc": "Causa 4 pontos de <span style=\"color: #80FFD7FF;\">Dano Anemo</span>, desencadeia o efeito de invocação de todas as suas <span style=\"color: #FFFFFFFF;\">Espadas Sombra</span>. (Não consome o seu número de Usos)",
         "cost": [
           {
             "type": "anemo",
