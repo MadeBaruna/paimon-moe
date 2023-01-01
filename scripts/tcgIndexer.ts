@@ -1,4 +1,4 @@
-// Run with "npm run index-tcg"
+// Run with "pnpm index-tcg"
 import * as fs from 'fs';
 import * as path from 'path';
 import cv from 'opencv-ts';
@@ -47,9 +47,9 @@ async function onRuntimeInitialized() {
     "characters": charactersIndex,
     "actions": actionsIndex
   },
-    (k, v) => ArrayBuffer.isView(v) ? Array.from(v as unknown as ArrayLike<unknown>) : v, 2);
+    (k, v) => ArrayBuffer.isView(v) ? Array.from(v as unknown as ArrayLike<unknown>) : v, 0);
   try {
-    fs.writeFileSync(indexFilename, "export const tcgIndex = " + cardsIndexJson);
+    fs.writeFileSync(indexFilename, "export const tcgIndex=" + cardsIndexJson);
     console.log(`Saved index data to ${indexFilename}`);
   } catch (err) {
     console.error(err);
