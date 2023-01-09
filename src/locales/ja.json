@@ -17,6 +17,7 @@
     "radiantSpincrystal": "旋曜玉帛",
     "calendar": "カレンダー",
     "banners": "キャラクターの復刻",
+    "tcg": "七聖召喚",
     "settings": "設定",
     "donate": "寄付"
   },
@@ -634,7 +635,6 @@
       "calculateFate": "{value} 個の入手に必要な金額を計算！"
     },
     "fateCount": {
-      "interwinedFate": "紡がれた運命",
       "starglitter": "スターライト",
       "stardust": "スターダスト",
       "primogem": "原石",
@@ -644,7 +644,8 @@
       "type": "種類",
       "amount": "数量",
       "totalPrimogem": "合計原石",
-      "calculate": "計算"
+      "calculate": "計算",
+      "intertwinedFate": "紡がれた運命"
     }
   },
   "items": {
@@ -968,6 +969,8 @@
     "18ATKSet": "+18% 攻撃力セット",
     "20EnergyRechargeSet": "20% 元素チャージ効率セット",
     "25PhysicalDmgSet": "物理ダメージ +25%セット",
+    "80EMSet": "元素熟知 +80セット",
+    "15HealingBonusSet": "治療ボーナス +15%セット",
     "sands": "時の砂",
     "goblet": "空の杯",
     "circlet": "理の冠",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "データの同期が成功しました！",
-    "driveError": "現在、Googleドライブ同期が利用できません 😔"
+    "driveError": "現在、Googleドライブ同期が利用できません 😔",
+    "open": "開く",
+    "delete": "削除",
+    "deleteConfirm": "削除する？"
   },
   "update": {
     "newUpdate": "Paimon.moeは新しいアップデートが到着しました!",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "最も復刻されていない順でソート",
     "bannerTitle": "キャラクター復刻のタイムライン",
     "bannerSubtitle": "キャラクターの実装時期や最終復刻時期を見る"
+  },
+  "tcg": {
+    "title": "七聖召喚",
+    "requirementResonance": "このカードを追加するには、デッキに{element}のキャラが2枚以上必要です！",
+    "requirementTalent": "このカードを追加するには、デッキに{character}が必要です！",
+    "addedToDeck": "デッキに追加しました！",
+    "deletedFromDeck": "デッキから削除しました！",
+    "removedFromDeck": "デッキから1枚を除去しました！",
+    "alreadyMaxCharacters": "既にデッキにキャラカードが3枚入っています！",
+    "alreadyMaxActions": "既にデッキにアクションカードが30枚入っています！",
+    "requirementInDeck": "デッキから{character}を削除するには、「{card}」を削除する必要があります！",
+    "addToDeck": "デッキに追加",
+    "removeFromDeck": "デッキから{type}",
+    "delete": "削除",
+    "remove": "除去",
+    "compare": "比較",
+    "noCardOnDeck": "このデッキにはまだカードがありません",
+    "loadDefaultDeck": "初期デッキを読み込む",
+    "saveDeck": "デッキを保存",
+    "hideDeck": "デッキを非表示",
+    "showDeck": "デッキを表示",
+    "addDeck": "デッキを追加",
+    "selectDeck": "デッキ選択",
+    "loadingLink": "リンクを生成中...",
+    "loadingLinkError": "リンクの生成中にエラーが発生しました 😥",
+    "shareDeck": "デッキ「{name}」を共有",
+    "removeCompare": "比較を削除",
+    "shareNotComplete": "デッキを共有するには、3枚のキャラカードと30枚のアクションカードでデッキを完成させてください！",
+    "characterCard": "キャラカード",
+    "actionCard": "アクションカード"
   }
 }

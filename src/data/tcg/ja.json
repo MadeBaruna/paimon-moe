@@ -1,0 +1,3593 @@
+[
+  {
+    "_id": 1101,
+    "id": "ganyu",
+    "type": "character",
+    "name": "甘雨",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11011,
+        "type": "通常攻撃",
+        "name": "流天射術",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11012,
+        "type": "元素スキル",
+        "name": "山沢麟跡",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">氷蓮</span>を生成する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111012,
+          "id": "ice_lotus",
+          "name": "氷蓮",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方の出撃キャラがダメージを受けた時</span>、ダメージを1相殺してくれる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 11013,
+        "type": "通常攻撃",
+        "name": "霜華の矢",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を3与え、相手の待機キャラ全員に<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">貫通ダメージ</span>を2</span>与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "_id": 11014,
+        "type": "元素爆発",
+        "name": "降衆天華",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を1与え、相手の待機キャラ全員に<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">貫通ダメージ</span>を1</span>与える。<span style=\"color: #FFFFFFFF;\">氷霊珠</span>を召喚する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111011,
+          "id": "sacred_cryo_pearl",
+          "name": "氷霊珠",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を1与え、相手の待機キャラ全員に<span style=\"color: #FFFFFFFF; text-decoration: underline;\">貫通ダメージ</span>を1与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1102,
+    "id": "diona",
+    "type": "character",
+    "name": "ディオナ",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11021,
+        "type": "通常攻撃",
+        "name": "狩人の射術",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11022,
+        "type": "元素スキル",
+        "name": "フリーズキャッツクロー",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を2与え、<span style=\"color: #FFFFFFFF;\">キャッツクローシールド</span>を生成する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111021,
+          "id": "cat-claw_shield",
+          "name": "キャッツクローシールド",
+          "desc": "味方の出撃キャラは<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を1</span>獲得する。"
+        }
+      },
+      {
+        "_id": 11023,
+        "type": "元素爆発",
+        "name": "特製スピリッツ",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を1与え、このキャラのHPを2回復し、<span style=\"color: #FFFFFFFF;\">酒霧エリア</span>を召喚する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111023,
+          "id": "drunken_mist",
+          "name": "酒霧エリア",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を1与え、味方の出撃キャラのHPを2回復する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1103,
+    "id": "kaeya",
+    "type": "character",
+    "name": "ガイア",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11031,
+        "type": "通常攻撃",
+        "name": "儀典の剣術",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11032,
+        "type": "元素スキル",
+        "name": "霜の襲撃",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を3与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11033,
+        "type": "元素爆発",
+        "name": "凛冽なる輪舞",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">氷柱</span>を生成する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111031,
+          "id": "icicle",
+          "name": "氷柱",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方がキャラチェンジした後</span>、<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1104,
+    "id": "chongyun",
+    "type": "character",
+    "name": "重雲",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11041,
+        "type": "通常攻撃",
+        "name": "滅邪四式",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11042,
+        "type": "元素スキル",
+        "name": "重華積霜",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を3与え、<span style=\"color: #FFFFFFFF;\">重華積霜エリア</span>を生成する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111041,
+          "id": "chonghua_frost_field",
+          "name": "重華積霜エリア",
+          "desc": "味方の片手剣、両手剣、長柄武器のキャラの与える<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>へと変わる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 11043,
+        "type": "元素爆発",
+        "name": "雲開星落",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を7与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1105,
+    "id": "kamisato_ayaka",
+    "type": "character",
+    "name": "神里綾華",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11051,
+        "type": "通常攻撃",
+        "name": "神里流·傾き",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11052,
+        "type": "元素スキル",
+        "name": "神里流·氷華",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を3与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11053,
+        "type": "元素爆発",
+        "name": "神里流·霜滅",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を4与え、<span style=\"color: #FFFFFFFF;\">霜見雪関扉</span>を召喚する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111051,
+          "id": "frostflake_seki_no_to",
+          "name": "霜見雪関扉",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 11054,
+        "type": "固有スキル",
+        "name": "神里流·霰歩",
+        "desc": "【固有】このキャラが「出撃キャラ」へとチェンジした時、<span style=\"color: #FFFFFFFF;\">氷元素付与</span>が付与される。",
+        "cost": [],
+        "sub": {
+          "_id": 111052,
+          "id": "cryo_elemental_infusion",
+          "name": "氷元素付与",
+          "desc": "付与されたキャラの<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>へと変わる。\\n（ラウンド終了まで続く）"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1201,
+    "id": "barbara",
+    "type": "character",
+    "name": "バーバラ",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12011,
+        "type": "通常攻撃",
+        "name": "水の囁き",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与える。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12012,
+        "type": "元素スキル",
+        "name": "公演、開始♪",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">歌声の輪</span>を召喚する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112011,
+          "id": "melody_loop",
+          "name": "歌声の輪",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>味方のチーム全員のHPを1回復し、味方の出撃キャラに<span style=\"color: #80C0FFFF;\">水元素付着</span>を与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 12013,
+        "type": "元素爆発",
+        "name": "シャイニングミラクル♪",
+        "desc": "味方のチーム全員のHPを4回復する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1202,
+    "id": "xingqiu",
+    "type": "character",
+    "name": "行秋",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12021,
+        "type": "通常攻撃",
+        "name": "古華剣法",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12022,
+        "type": "元素スキル",
+        "name": "画雨籠山",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与え、本キャラは<span style=\"color: #80C0FFFF;\">水元素付着</span>状態になり、<span style=\"color: #FFFFFFFF;\">雨すだれの剣</span>を生成する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112021,
+          "id": "rain_sword",
+          "name": "雨すだれの剣",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方の出撃キャラが3以上のダメージを受けた時</span>、ダメージを1相殺してくれる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 12023,
+        "type": "元素爆発",
+        "name": "裁雨留虹",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与え、本キャラは<span style=\"color: #80C0FFFF;\">水元素付着</span>状態になり、<span style=\"color: #FFFFFFFF;\">虹剣勢</span>を生成する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112022,
+          "id": "rainbow_bladework",
+          "name": "虹剣勢",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方のキャラが通常攻撃を発動した後</span>、<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1203,
+    "id": "mona",
+    "type": "character",
+    "name": "モナ",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12031,
+        "type": "通常攻撃",
+        "name": "因果点破",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与える。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12032,
+        "type": "元素スキル",
+        "name": "水中幻願",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">虚影</span>を召喚する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112031,
+          "id": "reflection",
+          "name": "虚影",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方の出撃キャラがダメージを受けた時</span>、ダメージを1相殺してくれる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：1</span>（回数が尽きても破棄されることはない）。\\n<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>このカードを破棄し、<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与える。"
+        }
+      },
+      {
+        "_id": 12033,
+        "type": "元素爆発",
+        "name": "星命定軌",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を4与え、<span style=\"color: #FFFFFFFF;\">泡影</span>を生成する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112032,
+          "id": "illusory_bubble",
+          "name": "泡影",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方がスキルでダメージを与えた時</span>、この状態を解除して今回のダメージを倍にする。"
+        }
+      },
+      {
+        "_id": 12034,
+        "type": "固有スキル",
+        "name": "虚実流動",
+        "desc": "【固有】<span style=\"color: #FFFFFFFF;\">本キャラが出撃キャラであり、味方がキャラチェンジを行う時</span>、それが「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>」ではなく、「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">クイックアクション</span>」とみなされる。（各ラウンドで1回のみ）",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1301,
+    "id": "diluc",
+    "type": "character",
+    "name": "ディルック",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 13011,
+        "type": "通常攻撃",
+        "name": "百煉の剣",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13012,
+        "type": "元素スキル",
+        "name": "逆焔の刃",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を5与える。このスキルが各ラウンド3回目に発動されると、ダメージ+2。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13013,
+        "type": "元素爆発",
+        "name": "黎明",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を8与え、本キャラは<span style=\"color: #FFFFFFFF;\">炎元素付与</span>状態を獲得する。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113011,
+          "id": "pyro_infusion",
+          "name": "炎元素付与",
+          "desc": "付与されたキャラの<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>へと変わる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1302,
+    "id": "xiangling",
+    "type": "character",
+    "name": "香菱",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 13021,
+        "type": "通常攻撃",
+        "name": "料理技法",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13022,
+        "type": "元素スキル",
+        "name": "グゥオパァー出撃",
+        "desc": "<span style=\"color: #FFFFFFFF;\">グゥオパァー</span>を召喚する。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113021,
+          "id": "guoba",
+          "name": "グゥオパァー",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 13023,
+        "type": "元素爆発",
+        "name": "旋火輪",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を2与え、<span style=\"color: #FFFFFFFF;\">旋火輪</span>を生成する。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113022,
+          "id": "pyronado",
+          "name": "旋火輪",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方のキャラがスキルを発動した後</span>、<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1303,
+    "id": "bennett",
+    "type": "character",
+    "name": "ベネット",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 13031,
+        "type": "通常攻撃",
+        "name": "好運の剣",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13032,
+        "type": "元素スキル",
+        "name": "溢れる情熱",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を3与える。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13033,
+        "type": "元素爆発",
+        "name": "素晴らしい旅",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を2与え、<span style=\"color: #FFFFFFFF;\">鼓舞エリア</span>を生成する。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113031,
+          "id": "inspiration_field",
+          "name": "鼓舞エリア",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方のキャラがスキルを発動する際</span>、そのキャラのHPが7以上の場合、該当ダメージがさらに+2。スキル発動完了後、そのキャラのHPが6以下の場合、そのキャラのHPを2回復する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1305,
+    "id": "yoimiya",
+    "type": "character",
+    "name": "宵宮",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 13051,
+        "type": "通常攻撃",
+        "name": "打ち上げ花火",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13052,
+        "type": "元素スキル",
+        "name": "焔硝の庭火舞い",
+        "desc": "本キャラに<span style=\"color: #FFFFFFFF;\">庭火の焔硝</span>を付与する。（このスキルはチャージを獲得することができない）",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          }
+        ],
+        "sub": {
+          "_id": 113051,
+          "id": "niwabi_enshou",
+          "name": "庭火の焔硝",
+          "desc": "付与されたキャラの<span style=\"color: #FFFFFFFF;\">通常攻撃</span>ダメージ+1。また、与える<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>へと変わる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 13053,
+        "type": "元素爆発",
+        "name": "琉金の雲間草",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を3与え、<span style=\"color: #FFFFFFFF;\">琉金の炎</span>を生成する。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113052,
+          "id": "aurous_blaze",
+          "name": "琉金の炎",
+          "desc": "宵宮以外の味方のキャラがスキルを発動した後、<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1401,
+    "id": "fischl",
+    "type": "character",
+    "name": "フィッシュル",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14011,
+        "type": "通常攻撃",
+        "name": "罪滅ぼしの矢",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14012,
+        "type": "元素スキル",
+        "name": "夜巡りの翼",
+        "desc": "<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">オズ</span>を召喚する。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114011,
+          "id": "oz",
+          "name": "オズ",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を1与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 14013,
+        "type": "元素爆発",
+        "name": "夜の幻現",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を4与え、相手の待機キャラ全員に<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">貫通ダメージ</span></span>を2与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1402,
+    "id": "razor",
+    "type": "character",
+    "name": "レザー",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14021,
+        "type": "通常攻撃",
+        "name": "鋼の脊",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14022,
+        "type": "元素スキル",
+        "name": "鋭い爪と蒼雷",
+        "desc": "<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を3与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14023,
+        "type": "元素爆発",
+        "name": "雷牙",
+        "desc": "<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を5与え、本キャラに<span style=\"color: #FFFFFFFF;\">雷狼</span>を付与する。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114021,
+          "id": "the_wolf_within",
+          "name": "雷狼",
+          "desc": "<span style=\"color: #FFFFFFFF;\">付与されたキャラが通常攻撃、または元素スキルを発動した後</span>、<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1403,
+    "id": "keqing",
+    "type": "character",
+    "name": "刻晴",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 14031,
+        "type": "通常攻撃",
+        "name": "雲来剣法",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14032,
+        "type": "元素スキル",
+        "name": "星辰帰位",
+        "desc": "<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を3与え、手札に<span style=\"color: #FFFFFFFF;\">雷楔</span>を生成する。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114031,
+          "id": "lightning_stiletto",
+          "name": "雷楔",
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：刻晴を出撃キャラにチェンジし、直ちに星辰帰位を発動する。この星辰帰位は刻晴に<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">雷元素付与</span></span>を与える。ただし、雷楔は生成しない。\\n（刻晴が星辰帰位を発動する時、このカードが手札にある場合：雷楔が生成されない代わりに、このカードを破棄し、刻晴に<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">雷元素付与</span></span>を与える）"
+        }
+      },
+      {
+        "_id": 14033,
+        "type": "元素爆発",
+        "name": "天街巡遊",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を4与え、相手の待機キャラ全員に<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">貫通ダメージ</span>を3</span>与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1404,
+    "id": "cyno",
+    "type": "character",
+    "name": "セノ",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 14041,
+        "type": "通常攻撃",
+        "name": "七聖槍術",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14042,
+        "type": "元素スキル",
+        "name": "秘儀·律淵渡魂",
+        "desc": "<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を3与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14043,
+        "type": "元素爆発",
+        "name": "聖儀·狼駆憑走",
+        "desc": "<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を4与える。\\n<span style=\"color: #FFFFFFFF;\">啓途誓使</span>の「憑依」レベル+2。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "啓途誓使",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>「憑依」を1レベル重ねる。\\n<span style=\"color: #FFFFFFFF;\">「憑依」のレベルによって以下の効果を得る。</span>\\nレベル2以上：<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>へと変わる。\\nレベル4以上：与えるダメージ+2。\\nレベル6以上：「憑依」のレベル-4。"
+        }
+      },
+      {
+        "_id": 14044,
+        "type": "固有スキル",
+        "name": "行度誓戒",
+        "desc": "【固有】戦闘開始時、<span style=\"color: #FFFFFFFF;\">啓途誓使</span>が付与される。",
+        "cost": [],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "啓途誓使",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>「憑依」を1レベル重ねる。\\n<span style=\"color: #FFFFFFFF;\">「憑依」のレベルによって以下の効果を得る。</span>\\nレベル2以上：<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>へと変わる。\\nレベル4以上：与えるダメージ+2。\\nレベル6以上：「憑依」のレベル-4。"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1501,
+    "id": "sucrose",
+    "type": "character",
+    "name": "スクロース",
+    "hp": 10,
+    "energy": 2,
+    "element": "anemo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 15011,
+        "type": "通常攻撃",
+        "name": "簡式風霊作成",
+        "desc": "<span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を1与える。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15012,
+        "type": "元素スキル",
+        "name": "風霊作成·六三〇八",
+        "desc": "<span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を3与え、相手のキャラを一つ前のキャラにチェンジさせる。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15013,
+        "type": "元素爆発",
+        "name": "禁·風霊作成·七五同構弐型",
+        "desc": "<span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">大型風霊</span>を召喚する。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 115011,
+          "id": "large_wind_spirit",
+          "name": "大型風霊",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：3</span>\\n\\n味方のキャラまたは召喚物が拡散反応を起こした後、このカードの元素タイプは拡散された元素タイプへと変わる。（退場するまで1回のみ変化可能）"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1502,
+    "id": "jean",
+    "type": "character",
+    "name": "ジン",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 15021,
+        "type": "通常攻撃",
+        "name": "西風剣術",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15022,
+        "type": "元素スキル",
+        "name": "風圧剣",
+        "desc": "<span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を3与え、相手のキャラを次のキャラにチェンジさせる。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15023,
+        "type": "元素爆発",
+        "name": "蒲公英の風",
+        "desc": "味方のチーム全員のHPを2回復する。また、<span style=\"color: #FFFFFFFF;\">蒲公英エリア</span>を召喚する。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 115021,
+          "id": "dandelion_field",
+          "name": "蒲公英エリア",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を2与え、味方の出撃キャラのHPを1回復する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1601,
+    "id": "ningguang",
+    "type": "character",
+    "name": "凝光",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 16011,
+        "type": "通常攻撃",
+        "name": "千金擲",
+        "desc": "<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>を1与える。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16012,
+        "type": "元素スキル",
+        "name": "璇璣屏",
+        "desc": "<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>を2与え、<span style=\"color: #FFFFFFFF;\">璇璣屏</span>を生成する。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "璇璣屏",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方の出撃キャラが2以上のダメージを受けた時</span>、ダメージを1相殺してくれる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 16013,
+        "type": "元素爆発",
+        "name": "天権崩玉",
+        "desc": "<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>を6与える。もし<span style=\"color: #FFFFFFFF;\">璇璣屏</span>がフィールドに存在する場合、このダメージ+2。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "璇璣屏",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方の出撃キャラが2以上のダメージを受けた時</span>、ダメージを1相殺してくれる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1602,
+    "id": "noelle",
+    "type": "character",
+    "name": "ノエル",
+    "hp": 10,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16021,
+        "type": "通常攻撃",
+        "name": "西風剣術·メイド",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16022,
+        "type": "元素スキル",
+        "name": "護心鎧",
+        "desc": "<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">護身の岩鎧</span>を生成する。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116021,
+          "id": "full_plate",
+          "name": "護身の岩鎧",
+          "desc": "味方の出撃キャラは<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を2</span>獲得する。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>が継続している間、味方の受ける<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が半減する。（切り上げ）"
+        }
+      },
+      {
+        "_id": 16023,
+        "type": "元素爆発",
+        "name": "大掃除",
+        "desc": "<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>を4与え、本キャラに<span style=\"color: #FFFFFFFF;\">大掃除</span>を付与する。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 116022,
+          "id": "sweeping_time",
+          "name": "大掃除",
+          "desc": "キャラが通常攻撃をする時、必要な<span style=\"color: #FFE699FF;\">岩元素</span>サイコロの数-1。（各ラウンドで1回のみ）\\nキャラの<span style=\"color: #FFFFFFFF;\">通常攻撃</span>の与えるダメージ+2、かつ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>へと変わる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1701,
+    "id": "collei",
+    "type": "character",
+    "name": "コレイ",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17011,
+        "type": "通常攻撃",
+        "name": "祈りの射技",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17012,
+        "type": "元素スキル",
+        "name": "花触葉讃",
+        "desc": "<span style=\"color: #7EC236FF;\">草元素ダメージ</span>を3与える。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 17013,
+        "type": "元素爆発",
+        "name": "ニャンコトレジャー",
+        "desc": "<span style=\"color: #7EC236FF;\">草元素ダメージ</span>を2与え、<span style=\"color: #FFFFFFFF;\">コレアンバー</span>を召喚する。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 117011,
+          "id": "cuilein-anbar",
+          "name": "コレアンバー",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #7EC236FF;\">草元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2201,
+    "id": "rhodeia_of_loch",
+    "type": "character",
+    "name": "純水精霊·ローデシア",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22011,
+        "type": "通常攻撃",
+        "name": "荒波",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与える。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22012,
+        "type": "元素スキル",
+        "name": "純水幻造",
+        "desc": "1種類の<span style=\"color: #FFFFFFFF;\">純水の幻形</span>をランダムで召喚する。（異なる種類を優先的に生成する）",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "純水の幻形",
+          "desc": "「純水の幻形」は3種類ある。\\n<span style=\"color: #FFFFFFFF;\">リス</span>：エンドフェーズで<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与える。使用可能回数2回。\\n<span style=\"color: #FFFFFFFF;\">トビ</span>：エンドフェーズで<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与える。使用可能回数3回。\\n<span style=\"color: #FFFFFFFF;\">カエル</span>：ダメージを2相殺してくれる。使用回数を使い切った後、<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与える。"
+        }
+      },
+      {
+        "_id": 22013,
+        "type": "元素スキル",
+        "name": "あらゆる形へ",
+        "desc": "2種類の<span style=\"color: #FFFFFFFF;\">純水の幻形</span>をランダムで召喚する。（異なる種類を優先的に生成する）",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 5
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "純水の幻形",
+          "desc": "「純水の幻形」は3種類ある。\\n<span style=\"color: #FFFFFFFF;\">リス</span>：エンドフェーズで<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与える。使用可能回数2回。\\n<span style=\"color: #FFFFFFFF;\">トビ</span>：エンドフェーズで<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与える。使用可能回数3回。\\n<span style=\"color: #FFFFFFFF;\">カエル</span>：ダメージを2相殺してくれる。使用回数を使い切った後、<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与える。"
+        }
+      },
+      {
+        "_id": 22014,
+        "type": "元素爆発",
+        "name": "潮汐と激流",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与える。味方の召喚物1つにつき、このダメージ+2。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2202,
+    "id": "mirror_maiden",
+    "type": "character",
+    "name": "ファデュイ·ミラーメイデン",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22021,
+        "type": "通常攻撃",
+        "name": "水弾",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与える。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22022,
+        "type": "元素スキル",
+        "name": "溢れる波の満潮",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を3与え、目標キャラに<span style=\"color: #FFFFFFFF;\">水光破鏡</span>を付与する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122021,
+          "id": "refraction",
+          "name": "水光破鏡",
+          "desc": "装備キャラの受ける水元素ダメージ+1。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>。\\n（この状態は、同一サイドに1つだけ存在可能）"
+        }
+      },
+      {
+        "_id": 22023,
+        "type": "元素爆発",
+        "name": "照り返す水鏡",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を5与える。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2301,
+    "id": "fatui_pyro_agent",
+    "type": "character",
+    "name": "ファデュイ·デットエージェント·炎",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 23011,
+        "type": "通常攻撃",
+        "name": "突刺",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23012,
+        "type": "元素スキル",
+        "name": "隙を狙う",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与え、本キャラに<span style=\"color: #FFFFFFFF;\">潜行</span>を付与する。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "潜行",
+          "desc": "付与されたキャラの受けるダメージ-1、与えるダメージ+1。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2"
+        }
+      },
+      {
+        "_id": 23013,
+        "type": "元素爆発",
+        "name": "焼き払う刃先",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を5与える。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23014,
+        "type": "固有スキル",
+        "name": "潜行マスター",
+        "desc": "【固有】戦闘開始時、<span style=\"color: #FFFFFFFF;\">潜行</span>が付与される。",
+        "cost": [],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "潜行",
+          "desc": "付与されたキャラの受けるダメージ-1、与えるダメージ+1。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2501,
+    "id": "maguu_kenki",
+    "type": "character",
+    "name": "魔偶剣鬼",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 25011,
+        "type": "通常攻撃",
+        "name": "一文字",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 25012,
+        "type": "元素スキル",
+        "name": "孤風刀勢",
+        "desc": "<span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">剣影·孤風</span>を召喚する。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125011,
+          "id": "shadowsword_lone_gale",
+          "name": "剣影·孤風",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を1与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 25013,
+        "type": "元素スキル",
+        "name": "霜馳影突",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">剣影·霜馳</span>を召喚する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125012,
+          "id": "shadowsword_galloping_frost",
+          "name": "剣影·霜馳",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を1与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 25014,
+        "type": "元素爆発",
+        "name": "機巧偽天狗抄",
+        "desc": "<span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を4与え、味方のすべての<span style=\"color: #FFFFFFFF;\">剣影</span>召喚物の効果を発動する。（使用可能回数は消費しない）",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2601,
+    "id": "stonehide_lawachurl",
+    "type": "character",
+    "name": "ヒルチャール·岩兜の王",
+    "hp": 8,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 26011,
+        "type": "通常攻撃",
+        "name": "Plama Lawa",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26012,
+        "type": "元素スキル",
+        "name": "Movo Lawa",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を3与える。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 26013,
+        "type": "元素爆発",
+        "name": "Upa Shato",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を5与える。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26014,
+        "type": "固有スキル",
+        "name": "魔化：岩兜",
+        "desc": "【固有】戦闘開始時、<span style=\"color: #FFFFFFFF;\">岩兜</span>と<span style=\"color: #FFFFFFFF;\">堅岩の力</span>が付与される。",
+        "cost": [],
+        "sub": {
+          "_id": 126011,
+          "id": "stonehide",
+          "name": "岩兜",
+          "desc": "<span style=\"color: #FFFFFFFF;\">付与されたキャラがダメージを受けた時</span>、ダメージを1相殺してくれる。岩ダメージを相殺する時、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>は追加で1消費される。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2701,
+    "id": "jadeplume_terrorshroom",
+    "type": "character",
+    "name": "マッシュラプトル",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 27011,
+        "type": "通常攻撃",
+        "name": "キノコン王のステップ",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 27012,
+        "type": "元素スキル",
+        "name": "不安定な胞子雲",
+        "desc": "<span style=\"color: #7EC236FF;\">草元素ダメージ</span>を3与える。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 27013,
+        "type": "元素爆発",
+        "name": "奔放な尾羽",
+        "desc": "<span style=\"color: #7EC236FF;\">草元素ダメージ</span>を4与える。また、<span style=\"color: #FFFFFFFF;\">活発激能</span>の層数を全て消費し、層ごとにダメージ+1。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "活発激能",
+          "desc": "本キャラが元素ダメージを与える、または受ける時、「活発激能」を1層重ねる。（最大3層まで重ね掛け可能）\\n<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>「活発激能」の層数が上限に達した場合、層数がクリアされる。同時に、キャラはすべてのチャージを失う。"
+        }
+      },
+      {
+        "_id": 27014,
+        "type": "固有スキル",
+        "name": "活発激能",
+        "desc": "【固有】戦闘開始時、<span style=\"color: #FFFFFFFF;\">活発激能</span>が付与される。",
+        "cost": [],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "活発激能",
+          "desc": "本キャラが元素ダメージを与える、または受ける時、「活発激能」を1層重ねる。（最大3層まで重ね掛け可能）\\n<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>「活発激能」の層数が上限に達した場合、層数がクリアされる。同時に、キャラはすべてのチャージを失う。"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 211011,
+    "id": "undivided_heart",
+    "type": "talent",
+    "name": "唯一の心",
+    "requirement": "ganyu",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 5
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">甘雨</span>の時、このカードを装備できる。\\n甘雨がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">唯一の心</span>を1回発動する。\\nこのカードを装備した甘雨が<span style=\"color: #FFFFFFFF;\">唯一の心</span>を発動する時、該当スキルがこの対戦で既に使用されている場合、与える氷元素ダメージ+1、相手の待機キャラ全員に<span style=\"color: #FFFFFFFF; text-decoration: underline;\">貫通ダメージ</span>を3与えるようになる。\\n（このカードはデッキに甘雨が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 211021,
+    "id": "shaken,_not_purred",
+    "type": "talent",
+    "name": "クールキャッツクロー",
+    "requirement": "diona",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ディオナ</span>の時、このカードを装備できる。\\nディオナがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">クールキャッツクロー</span>を1回発動する。\\nこのカードを装備したディオナの生成した<span style=\"color: #FFFFFFFF;\">キャッツクローシールド</span>は、初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を+1できる。\\n（このカードはデッキにディオナが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 211031,
+    "id": "cold-blooded_strike",
+    "type": "talent",
+    "name": "冷血の剣",
+    "requirement": "kaeya",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ガイア</span>の時、このカードを装備できる。\\nガイアがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">冷血の剣</span>を1回発動する。\\nこのカードを装備したガイアが<span style=\"color: #FFFFFFFF;\">冷血の剣</span>を発動した後、自身のHPを2回復する。（各ラウンドで1回のみ）\\n（このカードはデッキにガイアが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 211041,
+    "id": "steady_breathing",
+    "type": "talent",
+    "name": "吐納真定",
+    "requirement": "chongyun",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">重雲</span>の時、このカードを装備できる。\\n重雲がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">吐納真定</span>を1回発動する。\\nこのカードを装備した重雲の生成した<span style=\"color: #FFFFFFFF;\">重華積霜エリア</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>+1、味方の片手剣、両手剣、長柄武器のキャラの与える<span style=\"color: #FFFFFFFF;\">通常攻撃</span>のダメージ+1。\\n（このカードはデッキに重雲が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 211051,
+    "id": "kanten_senmyou_blessing",
+    "type": "talent",
+    "name": "寒空の宣命祝詞",
+    "requirement": "kamisato_ayaka",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 2
+        }
+      ],
+      "desc": "このカードを装備した<span style=\"color: #FFFFFFFF;\">神里綾華</span>が生成した<span style=\"color: #FFFFFFFF;\">氷元素付与</span>は、付与されたキャラの<span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">氷元素ダメージ</span></span>+1。\\nこのカードを装備した神里綾華にチェンジする時、必要な元素サイコロの数-1。（各ラウンドで1回のみ）\\n（このカードはデッキに神里綾華が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 212011,
+    "id": "glorious_season",
+    "type": "talent",
+    "name": "輝く季節",
+    "requirement": "barbara",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">バーバラ</span>の時、このカードを装備できる。\\nバーバラがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">輝く季節</span>を1回発動する。\\nこのカードを装備したバーバラがフィールドに存在する時、<span style=\"color: #FFFFFFFF;\">歌声の輪</span>は味方が「キャラチェンジ」を行う時に必要な元素サイコロの数を-1できる。（各ラウンドで1回のみ）\\n（デッキにバーバラが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 212021,
+    "id": "the_scent_remained",
+    "type": "talent",
+    "name": "すだれの残香",
+    "requirement": "xingqiu",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">行秋</span>の時、このカードを装備できる。\\n行秋がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">すだれの残香</span>を1回発動する。\\nこのカードを装備した行秋の生成した<span style=\"color: #FFFFFFFF;\">雨すだれの剣</span>は、初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1。\\n（このカードはデッキに行秋が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 212031,
+    "id": "prophecy_of_submersion",
+    "type": "talent",
+    "name": "沈没の預言",
+    "requirement": "mona",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">モナ</span>の時、このカードを装備できる。\\nモナがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">沈没の預言</span>を1回発動する。\\nこのカードを装備したモナの出撃中、味方が引き起こした<span style=\"color: #80C0FFFF;\">水元素関連反応</span>のダメージがさらに+2。\\n（このカードはデッキにモナが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 213011,
+    "id": "flowing_flame",
+    "type": "talent",
+    "name": "流火焼灼",
+    "requirement": "diluc",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ディルック</span>の時、このカードを装備できる。\\nディルックがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">流火焼灼</span>を1回発動する。\\nこのカードを装備したディルックが各ラウンドで2回目に<span style=\"color: #FFFFFFFF;\">流火焼灼</span>を発動する時、必要な<span style=\"color: #FF9999FF;\">炎元素</span>-1。\\n（デッキにディルックが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 213021,
+    "id": "crossfire",
+    "type": "talent",
+    "name": "交差する炎",
+    "requirement": "xiangling",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">香菱</span>の時、このカードを装備できる。\\n香菱がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">交差する炎</span>を1回発動する。\\nこのカードを装備した香菱が<span style=\"color: #FFFFFFFF;\">交差する炎</span>を発動する時、自身も<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与える。\\n（このカードはデッキに香菱が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 213031,
+    "id": "grand_expectation",
+    "type": "talent",
+    "name": "冒険の憧れ",
+    "requirement": "bennett",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ベネット</span>の時、このカードを装備できる。\\nベネットがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">冒険の憧れ</span>を1回発動する。\\nこのカードを装備したベネットの生成した<span style=\"color: #FFFFFFFF;\">鼓舞エリア</span>のダメージアップ効果は、HPによる制限がなくなり、常時発動になる。\\n（このカードはデッキにベネットが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 213051,
+    "id": "naganohara_meteor_swarm",
+    "type": "talent",
+    "name": "長野原龍勢流星群",
+    "requirement": "yoimiya",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">宵宮</span>の時、このカードを装備できる。\\n宵宮がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">長野原龍勢流星群</span>を1回発動する。\\nこのカードを装備した宵宮が<span style=\"color: #FFFFFFFF;\">庭火の焔硝</span>を発動した後、追加で<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与える。\\n（このカードはデッキに宵宮が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 214011,
+    "id": "stellar_predator",
+    "type": "talent",
+    "name": "星喰いの鴉",
+    "requirement": "fischl",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">フィッシュル</span>の時、このカードを装備できる。\\nフィッシュルがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">星喰いの鴉</span>を1回発動する。\\nこのカードを装備したフィッシュルの生成した<span style=\"color: #FFFFFFFF;\">オズ</span>は、フィッシュルが<span style=\"color: #FFFFFFFF;\">通常攻撃</span>を行った後、<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を2与える。（<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>の消費が必要）\\n（このカードはデッキにフィッシュルが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 214021,
+    "id": "awakening",
+    "type": "talent",
+    "name": "覚醒",
+    "requirement": "razor",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">レザー</span>の時、このカードを装備できる。\\nレザーがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">覚醒</span>を1回発動する。\\nこのカードを装備したレザー<span style=\"color: #FFFFFFFF;\">が覚醒を発動した後</span>、味方の雷元素キャラの1体がチャージを1獲得する。（出撃キャラ優先）\\n（デッキにレザーが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 214031,
+    "id": "thundering_penance",
+    "type": "talent",
+    "name": "抵天の雷罰",
+    "requirement": "keqing",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">刻晴</span>の時、このカードを装備できる。\\n刻晴がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">抵天の雷罰</span>を1回発動する。\\nこのカードを装備した刻晴の生成した<span style=\"color: #FFFFFFFF;\">雷元素付与</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>+1、付与されたキャラの与える<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>+1。\\n（このカードはデッキに刻晴が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 214041,
+    "id": "featherfall_judgment",
+    "type": "talent",
+    "name": "落羽の裁決",
+    "requirement": "cyno",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">セノ</span>の時、このカードを装備できる。\\nセノがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">落羽の裁決</span>を1回発動する。\\nこのカードを装備したセノは、<span style=\"color: #FFFFFFFF;\">啓途誓使</span>の「憑依」レベルが3または5の時に<span style=\"color: #FFFFFFFF;\">落羽の裁決</span>を使うと、与えるダメージがさらに+1。\\n（このカードはデッキにセノが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 215011,
+    "id": "chaotic_entropy",
+    "type": "talent",
+    "name": "混元熵增論",
+    "requirement": "sucrose",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">スクロース</span>の時、このカードを装備できる。\\nスクロースがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">混元熵增論</span>を1回発動する。\\nこのカードを装備したスクロースの生成した<span style=\"color: #FFFFFFFF;\">大型風霊</span>が他の元素タイプへと変わった時、味方が与える該当元素タイプのダメージ+1。\\n（このカードはデッキにスクロースが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 215021,
+    "id": "lands_of_dandelion",
+    "type": "talent",
+    "name": "蒲公英の国土",
+    "requirement": "jean",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ジン</span>の時、このカードを装備できる。\\nジンがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">蒲公英の国土</span>を1回発動する。\\nこのカードを装備したジンがフィールドに存在する時、<span style=\"color: #FFFFFFFF;\">蒲公英エリア</span>は味方の与える<span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">風元素ダメージ</span></span>を+1できる。\\n（このカードはデッキにジンが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 216011,
+    "id": "strategic_reserve",
+    "type": "talent",
+    "name": "備えあれば憂いなし",
+    "requirement": "ningguang",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">凝光</span>の時、このカードを装備できる。\\n凝光がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">備えあれば憂いなし</span>を1回発動する。\\nこのカードを装備した凝光がフィールドに存在する時、<span style=\"color: #FFFFFFFF;\">璇璣屏</span>は味方の与える<span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">岩元素ダメージ</span></span>を+1できる。\\n（このカードはデッキに凝光が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 216021,
+    "id": "i_got_your_back",
+    "type": "talent",
+    "name": "支援はお任せください",
+    "requirement": "noelle",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ノエル</span>の時、このカードを装備できる。\\nノエルがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">支援はお任せください</span>を1回発動する。\\nこのカードを装備したノエルの生成した<span style=\"color: #FFFFFFFF;\">護身の岩鎧</span>は、ノエルが<span style=\"color: #FFFFFFFF;\">通常攻撃</span>を発動した後、味方のチーム全員のHPを1回復する。（各ラウンドで1回のみ）\\n（このカードはデッキにノエルが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 217011,
+    "id": "floral_sidewinder",
+    "type": "talent",
+    "name": "フライリーフワインダー",
+    "requirement": "collei",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">コレイ</span>の時、このカードを装備できる。\\nコレイがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">フライリーフワインダー</span>を1回発動する。\\nこのカードを装備したコレイが<span style=\"color: #FFFFFFFF;\">フライリーフワインダー</span>を発動したラウンドにおいて、味方のキャラのスキルが<span style=\"color: #7EC236FF;\">草元素関連反応</span>を引き起こすと<span style=\"color: #7EC236FF;\">草元素ダメージ</span>を1与える。（各ラウンドで1回のみ）\\n（このカードはデッキにコレイが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 222011,
+    "id": "streaming_surge",
+    "type": "talent",
+    "name": "百川奔流",
+    "requirement": "rhodeia_of_loch",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">純水精霊·ローデシア</span>の時、このカードを装備できる。\\n純水精霊·ローデシアがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">百川奔流</span>を1回発動する。\\nこのカードを装備した純水精霊·ローデシアが<span style=\"color: #FFFFFFFF;\">百川奔流</span>を発動する時、味方のすべての召喚物の<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1。\\n（このカードはデッキに純水精霊·ローデシアが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 222021,
+    "id": "mirror_cage",
+    "type": "talent",
+    "name": "鏡の檻",
+    "requirement": "mirror_maiden",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ファデュイ·ミラーメイデン</span>の時、このカードを装備できる。\\nファデュイ·ミラーメイデンがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">鏡の檻</span>を1回発動する。\\nこのカードを装備したファデュイ·ミラーメイデンの生成した<span style=\"color: #FFFFFFFF;\">水光破鏡</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>+1、付与されたキャラを他のキャラにチェンジする際に必要な元素サイコロ+1。\\n（このカードはデッキにファデュイ·ミラーメイデンが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 223011,
+    "id": "paid_in_full",
+    "type": "talent",
+    "name": "目には目を",
+    "requirement": "fatui_pyro_agent",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ファデュイ·デットエージェント·炎</span>の時、このカードを装備できる。\\nファデュイ·デットエージェント·炎がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">目には目を</span>を1回発動する。\\nこのカードを装備したファデュイ·デットエージェント·炎の生成した<span style=\"color: #FFFFFFFF;\">潜行</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1、付与されたキャラの与える<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>へと変わる。\\n（このカードはデッキにファデュイ·デットエージェント·炎が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 225011,
+    "id": "transcendent_automaton",
+    "type": "talent",
+    "name": "からくり神通",
+    "requirement": "maguu_kenki",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">魔偶剣鬼</span>の時、このカードを装備できる。\\n魔偶剣鬼がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">からくり神通</span>を1回発動する。\\nこのカードを装備した魔偶剣鬼が<span style=\"color: #FFFFFFFF;\">からくり神通</span>を発動した後、味方の次のキャラへとチェンジする。<span style=\"color: #FFFFFFFF;\">からくり神通</span>を発動した後、味方の前のキャラへとチェンジする。\\n（このカードはデッキに魔偶剣鬼が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 226011,
+    "id": "stonehide_reforged",
+    "type": "talent",
+    "name": "鋳直し：岩兜",
+    "requirement": "stonehide_lawachurl",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ヒルチャール·岩兜の王</span>の時、このカードを装備できる。\\nヒルチャール·岩兜の王がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">鋳直し：岩兜</span>を1回発動する。\\nこのカードを装備したヒルチャール·岩兜の王が敵を倒した後、<span style=\"color: #FFFFFFFF;\">岩兜</span>と<span style=\"color: #FFFFFFFF;\">堅岩の力</span>が再びヒルチャール·岩兜の王に付与される。\\n（このカードはデッキにヒルチャール·岩兜の王が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 227011,
+    "id": "proliferating_spores",
+    "type": "talent",
+    "name": "胞子増殖",
+    "requirement": "jadeplume_terrorshroom",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">マッシュラプトル</span>の時、このカードを装備できる。\\nマッシュラプトルがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">胞子増殖</span>を1回発動する。\\nこのカードを装備したマッシュラプトルは、「活発激能」の重ね掛け可能層数+1。\\n（このカードはデッキにマッシュラプトルが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 311101,
+    "id": "magic_guide",
+    "type": "weapon",
+    "name": "魔導緒論",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「法器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311102,
+    "id": "sacrificial_fragments",
+    "type": "weapon",
+    "name": "祭礼の断片",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">キャラが「元素スキル」を発動した後</span>、該当キャラの元素タイプに応じた元素サイコロが1個生成される。（各ラウンドで1回のみ）\\n（<span style=\"color: #FFFFFFFF;\">「法器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311103,
+    "id": "skyward_atlas",
+    "type": "weapon",
+    "name": "天空の巻",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">各ラウンドで1回のみ</span>、キャラの「通常攻撃」によるダメージがさらに+1。\\n（<span style=\"color: #FFFFFFFF;\">「法器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311201,
+    "id": "raven_bow",
+    "type": "weapon",
+    "name": "鴉羽の弓",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「弓」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311202,
+    "id": "sacrificial_bow",
+    "type": "weapon",
+    "name": "祭礼の弓",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">キャラが「元素スキル」を発動した後</span>、該当キャラの元素タイプに応じた元素サイコロが1個生成される。（各ラウンドで1回のみ）\\n（<span style=\"color: #FFFFFFFF;\">「弓」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311203,
+    "id": "skyward_harp",
+    "type": "weapon",
+    "name": "天空の翼",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">各ラウンドで1回のみ、</span>キャラの「通常攻撃」によるダメージがさらに+1。\\n（<span style=\"color: #FFFFFFFF;\">「弓」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311301,
+    "id": "white_iron_greatsword",
+    "type": "weapon",
+    "name": "白鉄の大剣",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「両手剣」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311302,
+    "id": "sacrificial_greatsword",
+    "type": "weapon",
+    "name": "祭礼の大剣",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">キャラが「元素スキル」を発動した後</span>、該当キャラの元素タイプに応じた元素サイコロが1個生成される。（各ラウンドで1回のみ）\\n（<span style=\"color: #FFFFFFFF;\">「両手剣」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311303,
+    "id": "wolfs_gravestone",
+    "type": "weapon",
+    "name": "狼の末路",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n残りHPが6以下の目標を攻撃する時、ダメージがさらに+2。\\n（<span style=\"color: #FFFFFFFF;\">「両手剣」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311401,
+    "id": "white_tassel",
+    "type": "weapon",
+    "name": "白纓槍",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311402,
+    "id": "lithic_spear",
+    "type": "weapon",
+    "name": "千岩長槍",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n登場時、チームに「璃月」のキャラが1体存在するごとに、このカードは装備キャラに<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を1</span>提供する。（最大3まで）\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311403,
+    "id": "skyward_spine",
+    "type": "weapon",
+    "name": "天空の脊",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">各ラウンドで1回のみ</span>、キャラの「通常攻撃」によるダメージがさらに+1。\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311501,
+    "id": "travelers_handy_sword",
+    "type": "weapon",
+    "name": "旅道の剣",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「片手剣」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311502,
+    "id": "sacrificial_sword",
+    "type": "weapon",
+    "name": "祭礼の剣",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">キャラが「元素スキル」を発動した後</span>、該当キャラの元素タイプに応じた元素サイコロが1個生成される。（各ラウンドで1回のみ）\\n（<span style=\"color: #FFFFFFFF;\">「片手剣」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311503,
+    "id": "aquila_favonia",
+    "type": "weapon",
+    "name": "風鷹剣",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">相手がスキルを発動した後</span>、装備キャラが「出撃キャラ」である場合、該当キャラのHPを1回復する。（各ラウンド最大2回まで）\\n（<span style=\"color: #FFFFFFFF;\">「片手剣」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312001,
+    "id": "adventurers_bandana",
+    "type": "artifact",
+    "name": "冒険者のバンダナ",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラが「通常攻撃」を発動した後</span>、自身のHPを1回復する。（各ラウンド最大3回まで）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312002,
+    "id": "lucky_dogs_silver_circlet",
+    "type": "artifact",
+    "name": "幸運の冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラが「元素スキル」を発動した後</span>、自身のHPを2回復する。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312003,
+    "id": "traveling_doctors_handkerchief",
+    "type": "artifact",
+    "name": "医者の方巾",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラが「元素爆発」を発動した後</span>、味方のチーム全員のHPを1回復する。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312004,
+    "id": "gamblers_earrings",
+    "type": "artifact",
+    "name": "博徒のピアス",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">相手のキャラを倒した後：</span>装備キャラが「出撃キャラ」の場合、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>を2個生成する。\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312005,
+    "id": "instructors_cap",
+    "type": "artifact",
+    "name": "教官の帽子",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラが元素反応を起こした後</span>、該当キャラの元素タイプに応じた元素サイコロが1個生成される。（各ラウンド最大3回まで）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312006,
+    "id": "exiles_circlet",
+    "type": "artifact",
+    "name": "亡命者の冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラが元素爆発を発動した後</span>、味方の待機キャラ全員が<span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を1獲得する。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312101,
+    "id": "broken_rimes_echo",
+    "type": "artifact",
+    "name": "氷雪を踏む音",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #99FFFFFF;\">氷元素</span>-1。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312102,
+    "id": "blizzard_strayer",
+    "type": "artifact",
+    "name": "氷風を彷徨う勇士",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #99FFFFFF;\">氷元素</span>-1。（各ラウンドで1回のみ）\\n<span style=\"color: #FFFFFFFF;\">ロールフェーズ：</span>初期元素サイコロのうち、常に2個が<span style=\"color: #99FFFFFF;\">氷元素</span>となる。\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312201,
+    "id": "wine-stained_tricorne",
+    "type": "artifact",
+    "name": "酒に漬けた帽子",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #80C0FFFF;\">水元素</span>-1。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312202,
+    "id": "heart_of_depth",
+    "type": "artifact",
+    "name": "沈淪の心",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #80C0FFFF;\">水元素</span>-1。（各ラウンドで1回のみ）\\n<span style=\"color: #FFFFFFFF;\">ロールフェーズ：</span>初期元素サイコロのうち、常に2個が<span style=\"color: #80C0FFFF;\">水元素</span>となる。\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312301,
+    "id": "witchs_scorching_hat",
+    "type": "artifact",
+    "name": "焦げた魔女の帽子",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #FF9999FF;\">炎元素</span>-1。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312302,
+    "id": "crimson_witch_of_flames",
+    "type": "artifact",
+    "name": "燃え盛る炎の魔女",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #FF9999FF;\">炎元素</span>-1。（各ラウンドで1回のみ）\\n<span style=\"color: #FFFFFFFF;\">ロールフェーズ：</span>初期元素サイコロのうち、常に2個が<span style=\"color: #FF9999FF;\">炎元素</span>となる。\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312401,
+    "id": "thunder_summoners_crown",
+    "type": "artifact",
+    "name": "雷を呼ぶ冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #FFACFFFF;\">雷元素</span>-1。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312402,
+    "id": "thundering_fury",
+    "type": "artifact",
+    "name": "雷のような怒り",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #FFACFFFF;\">雷元素</span>-1。（各ラウンドで1回のみ）\\n<span style=\"color: #FFFFFFFF;\">ロールフェーズ：</span>初期元素サイコロのうち、常に2個が<span style=\"color: #FFACFFFF;\">雷元素</span>となる。\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312501,
+    "id": "viridescent_venerers_diadem",
+    "type": "artifact",
+    "name": "緑の狩人の冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #80FFD7FF;\">風元素</span>-1。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312502,
+    "id": "viridescent_venerer",
+    "type": "artifact",
+    "name": "翠緑の影",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #80FFD7FF;\">風元素</span>-1。（各ラウンドで1回のみ）\\n<span style=\"color: #FFFFFFFF;\">ロールフェーズ：</span>初期元素サイコロのうち、常に2個が<span style=\"color: #80FFD7FF;\">風元素</span>となる。\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312601,
+    "id": "mask_of_solitude_basalt",
+    "type": "artifact",
+    "name": "不動玄石の相",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #FFE699FF;\">岩元素</span>-1。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312602,
+    "id": "archaic_petra",
+    "type": "artifact",
+    "name": "悠久の磐岩",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #FFE699FF;\">岩元素</span>-1。（各ラウンドで1回のみ）\\n<span style=\"color: #FFFFFFFF;\">ロールフェーズ：</span>初期元素サイコロのうち、常に2個が<span style=\"color: #FFE699FF;\">岩元素</span>となる。\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312701,
+    "id": "laurel_coronet",
+    "type": "artifact",
+    "name": "月桂の宝冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #99FF88FF;\">草元素</span>-1。（各ラウンドで1回のみ）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312702,
+    "id": "deepwood_memories",
+    "type": "artifact",
+    "name": "深林の記憶",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラがスキル発動、または「天賦」を装備する時</span>、必要な<span style=\"color: #99FF88FF;\">草元素</span>-1。（各ラウンドで1回のみ）\\n<span style=\"color: #FFFFFFFF;\">ロールフェーズ：</span>初期元素サイコロのうち、常に2個が<span style=\"color: #99FF88FF;\">草元素</span>となる。\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 321001,
+    "id": "liyue_harbor_wharf",
+    "type": "place",
+    "name": "璃月港口",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>手札を2枚引く。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2"
+    }
+  },
+  {
+    "_id": 321002,
+    "id": "knights_of_favonius_library",
+    "type": "place",
+    "name": "騎士団図書館",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">登場時</span>、任意の元素サイコロを選択し、リロールできる。\\n<span style=\"color: #FFFFFFFF;\">ロールフェーズ：</span>リロール可能回数+1。"
+    }
+  },
+  {
+    "_id": 321003,
+    "id": "jade_chamber",
+    "type": "place",
+    "name": "群玉閣",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ロールフェーズ：</span>初期元素サイコロのうち、常に2個が味方の出撃キャラの元素タイプとなる。"
+    }
+  },
+  {
+    "_id": 321004,
+    "id": "dawn_winery",
+    "type": "place",
+    "name": "アカツキワイナリー",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">味方がキャラチェンジを行う時</span>、必要な元素サイコロの数-1。（各ラウンドで1回のみ）"
+    }
+  },
+  {
+    "_id": 321005,
+    "id": "wangshu_inn",
+    "type": "place",
+    "name": "望舒旅館",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>味方の残りHPが最も低い待機キャラに対して、HPを2回復する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+    }
+  },
+  {
+    "_id": 321006,
+    "id": "favonius_cathedral",
+    "type": "place",
+    "name": "西風大聖堂",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>味方の出撃キャラのHPを2回復する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+    }
+  },
+  {
+    "_id": 322001,
+    "id": "paimon",
+    "type": "ally",
+    "name": "パイモン",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">アクションフェーズ開始時：</span><span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>を2個生成する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+    }
+  },
+  {
+    "_id": 322002,
+    "id": "katheryne",
+    "type": "ally",
+    "name": "キャサリン",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">味方がキャラチェンジを行う時</span>、それが「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>」ではなく、「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">クイックアクション</span>」とみなされる。（各ラウンドで1回のみ）"
+    }
+  },
+  {
+    "_id": 322003,
+    "id": "timaeus",
+    "type": "ally",
+    "name": "ティマイオス",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "登場時「合成材料」を2つ持ち込む。\\n<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>「合成材料」を1つ補充する。\\n<span style=\"color: #FFFFFFFF;\">手札から「聖遺物」のカードを使用する時</span>、可能であれば、「聖遺物」の総コストに相当する「合成材料」を支払うことで、「聖遺物」をコストなしで装備できるようになる。（各ラウンドで1回のみ）"
+    }
+  },
+  {
+    "_id": 322004,
+    "id": "wagner",
+    "type": "ally",
+    "name": "ワーグナー",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "登場時「鍛造原型」を2つ持ち込む。\\n<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>「鍛造原型」を1つ補充する。\\n<span style=\"color: #FFFFFFFF;\">手札から「武器」のカードを使用する時</span>、可能であれば、「武器」の総コストに相当する「鍛造原型」を支払うことで、「武器」をコストなしで装備できるようになる。（各ラウンドで1回のみ）"
+    }
+  },
+  {
+    "_id": 322005,
+    "id": "chef_mao",
+    "type": "ally",
+    "name": "卯師匠",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">「料理」イベントカードを使用した後、</span>基本元素サイコロをランダムで1つ生成する。（各ラウンドで1回のみ）"
+    }
+  },
+  {
+    "_id": 322006,
+    "id": "tubby",
+    "type": "ally",
+    "name": "マル",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">「フィールド」支援カードを使用する時</span>、必要な元素サイコロの数-2。（各ラウンドで1回のみ）"
+    }
+  },
+  {
+    "_id": 322007,
+    "id": "timmie",
+    "type": "ally",
+    "name": "ティミー",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">各ラウンドで自動的に1回発動される：</span>このカードに<span style=\"color: #FFFFFFFF;\">「ハト」を1羽</span>重ねる。\\n<span style=\"color: #FFFFFFFF;\">3羽の「ハト」</span>を重ねたとき、このカードは破棄される。同時に、手札を1枚引き、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>を1個獲得する。"
+    }
+  },
+  {
+    "_id": 322008,
+    "id": "liben",
+    "type": "ally",
+    "name": "立本",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>味方の未使用の元素サイコロ（各種最大1個）を集める。\\n<span style=\"color: #FFFFFFFF;\">アクションフェーズ開始時：</span>3個の元素サイコロを集めたとき、手札を2枚引き、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>を2個獲得する。その後、このカードを破棄する。"
+    }
+  },
+  {
+    "_id": 322009,
+    "id": "chang_the_ninth",
+    "type": "ally",
+    "name": "常九",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">双方のキャラがスキルを発動した後</span>、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">貫通ダメージ</span>を与える、または<span style=\"color: #FFFFFFFF;\">元素反応</span>を起こした場合、このカードに<span style=\"color: #FFFFFFFF;\">「アイデア」を1つ</span>重ねる。\\n<span style=\"color: #FFFFFFFF;\">3つの「アイデア」</span>を重ねたとき、このカードを破棄し、手札を2枚引く。"
+    }
+  },
+  {
+    "_id": 322010,
+    "id": "ellin",
+    "type": "ally",
+    "name": "エリン",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">味方のキャラが本ラウンドで発動済みのスキルを再び発動する時</span>、必要な元素サイコロの数-1。（各ラウンドで1回のみ）"
+    }
+  },
+  {
+    "_id": 322011,
+    "id": "iron_tongue_tian",
+    "type": "ally",
+    "name": "田饒舌",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>味方のうち、チャージがMaxになっていないキャラ1体が<span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を1獲得する。（出撃キャラ優先）\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+    }
+  },
+  {
+    "_id": 322012,
+    "id": "liu_su",
+    "type": "ally",
+    "name": "劉蘇",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">味方がキャラチェンジした後、</span>変更後のキャラが<span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を有していない場合、該当キャラは<span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を1獲得する。（各ラウンドで1回のみ）\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+    }
+  },
+  {
+    "_id": 323001,
+    "id": "parametric_transformer",
+    "type": "item",
+    "name": "参量物質変化器",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">双方のキャラがスキルを発動した後</span>、元素ダメージを与えた場合、このカードに<span style=\"color: #FFFFFFFF;\">「物質変化進捗」を1つ</span>重ねる。\\n<span style=\"color: #FFFFFFFF;\">3つの「物質変化進捗」</span>を重ねたとき、このカードを破棄し、元素タイプの異なる基本元素サイコロを3つ生成する。"
+    }
+  },
+  {
+    "_id": 323002,
+    "id": "nre",
+    "type": "item",
+    "name": "携帯式栄養袋",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">登場時、</span>デッキからランダムで「料理」イベントカードを1枚引く。\\n<span style=\"color: #FFFFFFFF;\">味方が「料理」イベントカードを使用した時</span>、デッキからランダムで「料理」イベントを1枚引く。（各ラウンドで1回のみ）"
+    }
+  },
+  {
+    "_id": 331101,
+    "id": "elemental_resonance_woven_ice",
+    "type": "resonance",
+    "name": "元素共鳴：交錯の氷",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #99FFFFFF;\">氷元素サイコロ</span>を1個生成する。\\n（デッキに<span style=\"color: #99FFFFFF;\">氷元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331102,
+    "id": "elemental_resonance_shattering_ice",
+    "type": "resonance",
+    "name": "元素共鳴：粉砕の氷",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 1
+        }
+      ],
+      "desc": "本ラウンドにおいて、味方の現在の出撃キャラの次に与えるダメージ+2。\\n（デッキに<span style=\"color: #99FFFFFF;\">氷元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331201,
+    "id": "elemental_resonance_woven_waters",
+    "type": "resonance",
+    "name": "元素共鳴：交錯の水",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #80C0FFFF;\">水元素サイコロ</span>を1個生成する。\\n（デッキに<span style=\"color: #80C0FFFF;\">水元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331202,
+    "id": "elemental_resonance_soothing_water",
+    "type": "resonance",
+    "name": "元素共鳴：治療の水",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 1
+        }
+      ],
+      "desc": "味方の出撃キャラのHPを2回復する。その後、味方の待機キャラ全員のHPを1回復する。\\n（デッキに<span style=\"color: #80C0FFFF;\">水元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331301,
+    "id": "elemental_resonance_woven_flames",
+    "type": "resonance",
+    "name": "元素共鳴：交錯の炎",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FF9999FF;\">炎元素サイコロ</span>を1個生成する。\\n（デッキに<span style=\"color: #FF9999FF;\">炎元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331302,
+    "id": "elemental_resonance_fervent_flames",
+    "type": "resonance",
+    "name": "元素共鳴：熱誠の炎",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 1
+        }
+      ],
+      "desc": "本ラウンドにおいて、味方の現在の出撃キャラが次に<span style=\"color: #FF9999FF;\">炎元素関連反応</span>を引き起こした時、与えるダメージ+3。\\n（デッキに<span style=\"color: #FF9999FF;\">炎元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331401,
+    "id": "elemental_resonance_woven_thunder",
+    "type": "resonance",
+    "name": "元素共鳴：交錯の雷",
+    "requirement": "electro",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFACFFFF;\">雷元素サイコロ</span>を1個生成する。\\n（デッキに<span style=\"color: #FFACFFFF;\">雷元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331402,
+    "id": "elemental_resonance_high_voltage",
+    "type": "resonance",
+    "name": "元素共鳴：強権の雷",
+    "requirement": "electro",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 1
+        }
+      ],
+      "desc": "味方のチャージがMaxになっていないキャラ1体が<span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を1獲得する。（出撃キャラ優先）\\n（デッキに<span style=\"color: #FFACFFFF;\">雷元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331501,
+    "id": "elemental_resonance_woven_winds",
+    "type": "resonance",
+    "name": "元素共鳴：交錯の風",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #80FFD7FF;\">風元素サイコロ</span>を1個生成する。\\n（デッキに<span style=\"color: #80FFD7FF;\">風元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331502,
+    "id": "elemental_resonance_impetuous_winds",
+    "type": "resonance",
+    "name": "元素共鳴：迅速の風",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 1
+        }
+      ],
+      "desc": "目標のキャラにチェンジし、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>を1個生成する。\\n（デッキに<span style=\"color: #80FFD7FF;\">風元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331601,
+    "id": "elemental_resonance_woven_stone",
+    "type": "resonance",
+    "name": "元素共鳴：交錯の岩",
+    "requirement": "geo",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFE699FF;\">岩元素サイコロ</span>を1個生成する。\\n（デッキに<span style=\"color: #FFE699FF;\">岩元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331602,
+    "id": "elemental_resonance_enduring_rock",
+    "type": "resonance",
+    "name": "元素共鳴：不動の岩",
+    "requirement": "geo",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        }
+      ],
+      "desc": "本ラウンドにおいて、味方が次に<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>を与えた後、味方の場に「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>」を提供する出撃状態が存在する場合、このタイプの出撃状態に「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>」を3補充する。\\n（デッキに<span style=\"color: #FFE699FF;\">岩元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331701,
+    "id": "elemental_resonance_woven_weeds",
+    "type": "resonance",
+    "name": "元素共鳴：交錯の草",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #99FF88FF;\">草元素サイコロ</span>を1個生成する。\\n（デッキに<span style=\"color: #99FF88FF;\">草元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 331702,
+    "id": "elemental_resonance_sprawling_greenery",
+    "type": "resonance",
+    "name": "元素共鳴：蔓生の草",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 1
+        }
+      ],
+      "desc": "本ラウンドで、味方が次に引き起こす元素反応によるダメージ+2。\\n味方のフィールドに存在する<span style=\"color: #FFFFFFFF;\">燃焼烈焔、草原核、激化領域</span>の「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>」+1。\\n（デッキに<span style=\"color: #99FF88FF;\">草元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 332001,
+    "id": "the_bestest_travel_companion!",
+    "type": "none",
+    "name": "最高の仲間！",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "支払った元素サイコロを2個の<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>に変える。"
+    }
+  },
+  {
+    "_id": 332002,
+    "id": "changing_shifts",
+    "type": "none",
+    "name": "シフト交代の時間",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">味方が次にキャラチェンジを行う時</span>、必要な元素サイコロの数-1。"
+    }
+  },
+  {
+    "_id": 332003,
+    "id": "toss-up",
+    "type": "none",
+    "name": "乾坤一擲",
+    "skills": {
+      "cost": [],
+      "desc": "任意の元素サイコロを選んで<span style=\"color: #FFFFFFFF;\">リロール</span>する。最大2回までリロール可能。"
+    }
+  },
+  {
+    "_id": 332004,
+    "id": "strategize",
+    "type": "none",
+    "name": "権謀術数",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "手札を2枚引く。"
+    }
+  },
+  {
+    "_id": 332005,
+    "id": "i_havent_lost_yet!",
+    "type": "none",
+    "name": "俺様はまだ負けちゃいねぇ！",
+    "skills": {
+      "cost": [],
+      "desc": "本ラウンドで味方のキャラが倒された場合のみ使用できる。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>を1個生成する。また、味方の現在の出撃キャラは<span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を1獲得する。"
+    }
+  },
+  {
+    "_id": 332006,
+    "id": "leave_it_to_me!",
+    "type": "none",
+    "name": "お任せください！",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">味方が次にキャラチェンジを行う時</span>、それが「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>」ではなく、「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">クイックアクション</span>」とみなされる。"
+    }
+  },
+  {
+    "_id": 332007,
+    "id": "when_the_crane_returned",
+    "type": "none",
+    "name": "鶴の帰郷",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">次回、味方がスキルを発動した後</span>、味方の次の待機キャラを出撃キャラにチェンジする。"
+    }
+  },
+  {
+    "_id": 332008,
+    "id": "starsigns",
+    "type": "none",
+    "name": "星天の兆",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "味方の現在の出撃キャラは<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を1獲得する</span>。"
+    }
+  },
+  {
+    "_id": 332009,
+    "id": "calxs_arts",
+    "type": "none",
+    "name": "白亜の術",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "味方の待機キャラ（最大2体）から、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を1移し、味方の出撃キャラに付与する。"
+    }
+  },
+  {
+    "_id": 332010,
+    "id": "master_of_weaponry",
+    "type": "none",
+    "name": "武芸マスター",
+    "skills": {
+      "cost": [],
+      "desc": "味方のキャラに装備している「武器」装備カードを、同じ武器タイプの自身の他のキャラに移す。"
+    }
+  },
+  {
+    "_id": 332011,
+    "id": "blessing_of_the_divine_relics_installation",
+    "type": "none",
+    "name": "神宝遷宮祝詞",
+    "skills": {
+      "cost": [],
+      "desc": "味方のキャラに装備している「聖遺物」装備カードを、自身の他のキャラに移す。"
+    }
+  },
+  {
+    "_id": 332012,
+    "id": "quick_knit",
+    "type": "none",
+    "name": "迅速裁縫の術",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "味方の「召喚物」を一つ選び、その「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>」を+1。"
+    }
+  },
+  {
+    "_id": 332013,
+    "id": "send_off",
+    "type": "none",
+    "name": "送ってあげよ～！",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "相手の「召喚物」を一つ選び、それを破壊する。"
+    }
+  },
+  {
+    "_id": 332014,
+    "id": "guardians_oath",
+    "type": "none",
+    "name": "護法の誓い",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 4
+        }
+      ],
+      "desc": "すべての「召喚物」を破壊する。（敵味方を区別せず！）"
+    }
+  },
+  {
+    "_id": 332015,
+    "id": "abyssal_summons",
+    "type": "none",
+    "name": "アビスの呼びかけ",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ランダム召喚物「ヒルチャール」</span>を1つ召喚する！\\n（デッキに「魔物」キャラが2体以上含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 333001,
+    "id": "jueyun_guoba",
+    "type": "food",
+    "name": "絶雲お焦げ",
+    "skills": {
+      "cost": [],
+      "desc": "本ラウンドで、目標キャラの次の<span style=\"color: #FFFFFFFF;\">通常攻撃</span>で与えるダメージ+1。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+    }
+  },
+  {
+    "_id": 333002,
+    "id": "adeptus_temptation",
+    "type": "food",
+    "name": "仙跳牆",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "本ラウンドで、目標キャラの次の<span style=\"color: #FFFFFFFF;\">元素爆発</span>で与えるダメージ+3。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+    }
+  },
+  {
+    "_id": 333003,
+    "id": "lotus_flower_crisp",
+    "type": "food",
+    "name": "ハスの花パイ",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "本ラウンドで、目標キャラの次に受けるダメージ-3。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+    }
+  },
+  {
+    "_id": 333004,
+    "id": "northern_smoked_chicken",
+    "type": "food",
+    "name": "北地のスモークチキン",
+    "skills": {
+      "cost": [],
+      "desc": "本ラウンドで、目標キャラの次の<span style=\"color: #FFFFFFFF;\">通常攻撃</span>に必要な<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>の数-1。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+    }
+  },
+  {
+    "_id": 333005,
+    "id": "sweet_madame",
+    "type": "food",
+    "name": "鳥肉のスイートフラワー漬け焼き",
+    "skills": {
+      "cost": [],
+      "desc": "目標キャラのHPを1回復する。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+    }
+  },
+  {
+    "_id": 333006,
+    "id": "mondstadt_hash_brown",
+    "type": "food",
+    "name": "モンド風ハッシュドポテト",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "目標キャラのHPを2回復する。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+    }
+  },
+  {
+    "_id": 333007,
+    "id": "mushroom_pizza",
+    "type": "food",
+    "name": "キノコピザ",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "目標キャラのHPを1回復する。さらに2ラウンドの間、エンドフェーズでキャラのHPを1回復する。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+    }
+  },
+  {
+    "_id": 333008,
+    "id": "minty_meat_rolls",
+    "type": "food",
+    "name": "ミントの獣肉巻き",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "目標キャラが本ラウンド終了まで、<span style=\"color: #FFFFFFFF;\">通常攻撃</span>に必要な<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>の数-1。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+    }
+  }
+]

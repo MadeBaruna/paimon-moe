@@ -17,6 +17,7 @@
     "radiantSpincrystal": "Gyrocristal radiant",
     "calendar": "Calendrier",
     "banners": "Retour de personnages",
+    "tcg": "JCC",
     "settings": "Paramètres",
     "donate": "Donner"
   },
@@ -634,7 +635,6 @@
       "calculateFate": "Calculez combien d'argent j'ai besoin pour {value}"
     },
     "fateCount": {
-      "interwinedFate": "Pierre de la fatalité",
       "starglitter": "Astérie libre",
       "stardust": "Astrion libre",
       "primogem": "Primo-gemme",
@@ -644,7 +644,8 @@
       "type": "Type",
       "amount": "Quantité",
       "totalPrimogem": "Primo-gemmes totales",
-      "calculate": "Calculer"
+      "calculate": "Calculer",
+      "intertwinedFate": "Pierre de la fatalité"
     }
   },
   "items": {
@@ -968,6 +969,8 @@
     "18ATKSet": "Set ATQ +18%",
     "20EnergyRechargeSet": "Set Recharge d'Énergie 20%",
     "25PhysicalDmgSet": "Set +25% DMG physiques",
+    "80EMSet": "Set de Maîtrise Élémentaire +80",
+    "15HealingBonusSet": "Set de Bonus de soin +15%",
     "sands": "SABLES",
     "goblet": "COUPE",
     "circlet": "DIADÈME",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "Les données ont été resynchronisées !",
-    "driveError": "La synchronisation Drive n'est pas disponible pour le moment 😔"
+    "driveError": "La synchronisation Drive n'est pas disponible pour le moment 😔",
+    "open": "Ouvrir",
+    "delete": "Supprimer",
+    "deleteConfirm": "Supprimer ?"
   },
   "update": {
     "newUpdate": "Paimon.moe a une nouvelle mise à jour !",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "Triés par plus ancienne apparition",
     "bannerTitle": "Chronologie des sorties de personnages",
     "bannerSubtitle": "Voir les sorties de personnages et leurs dernières apparitions"
+  },
+  "tcg": {
+    "title": "Invocation des Sept : JCC",
+    "requirementResonance": "Vous devez avoir au moins 2 personnages {element} dans votre deck pour ajouter cette carte !",
+    "requirementTalent": "Vous devez avoir {character} dans votre deck pour ajouter cette carte !",
+    "addedToDeck": "Ajouté au deck !",
+    "deletedFromDeck": "Supprimé du deck !",
+    "removedFromDeck": "Un exemplaire a été retiré du deck !",
+    "alreadyMaxCharacters": "Vous avez déjà 3 cartes de personnage dans le deck !",
+    "alreadyMaxActions": "Vous avez déjà 30 cartes d'action dans le deck !",
+    "requirementInDeck": "Vous devez retirer la carte {card} pour enlever {character} de votre deck !",
+    "addToDeck": "Ajouter au Deck",
+    "removeFromDeck": "{type} du Deck",
+    "delete": "Supprimer",
+    "remove": "Retirer",
+    "compare": "Comparer",
+    "noCardOnDeck": "Il n'y a pas encore de carte dans ce deck",
+    "loadDefaultDeck": "Charger le Deck du Débutant",
+    "saveDeck": "Sauvegarder le Deck",
+    "hideDeck": "Masquer le Deck",
+    "showDeck": "Afficher le Deck",
+    "addDeck": "Ajouter le Deck",
+    "selectDeck": "Sélectionner le Deck",
+    "loadingLink": "Génération du lien...",
+    "loadingLinkError": "Erreur lors de la génération du lien 😥",
+    "shareDeck": "Partager le Deck \"{name}\"",
+    "removeCompare": "Supprimer la comparaison",
+    "shareNotComplete": "Veuillez compléter le deck avec 3 cartes de personnage ainsi que 30 cartes d'action afin de le partager !",
+    "characterCard": "Carte de Personnage",
+    "actionCard": "Carte d'Action"
   }
 }

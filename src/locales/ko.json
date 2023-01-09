@@ -17,6 +17,7 @@
     "radiantSpincrystal": "빛나는 결정",
     "calendar": "달력",
     "banners": "캐릭터 복각",
+    "tcg": "일곱 성인의 소환",
     "settings": "설정",
     "donate": "후원"
   },
@@ -28,8 +29,8 @@
       "summoned": "획득",
       "percentage": "(모든 {rarity} 중)",
       "avg": "평균 천장",
-      "subtitle": "{user}명의 paimon.moe 사용자가 제공한 데이터로 계산되었습니다",
-      "detail": "전체 기원 총계"
+      "subtitle": "{user}명의 Paimon.moe 사용자가 제공한 데이터로 계산됨",
+      "detail": "전 세계 기원 통계"
     },
     "wish": {
       "message": "기원 통계를 제출해 여러분의 기원 기록을 6개월 이상 보존하세요! 자동으로 천장을 계산하고 보기좋은 차트로 통계도 만들어 드립니다 📊",
@@ -60,7 +61,7 @@
       "sunday": "일요일에는 모든 아이템을 파밍할 수 있습니다. 😁"
     },
     "calculator": {
-      "title": "🧮 캐릭터와 무기의 돌파 필요 재료와 특성 책 재료를 계산해드립니다! 모든 계산된 내용은 할 일 목록에 추가할 수 있습니다, 추가하면 레진이 얼마나 필요한 지 알려줘요!",
+      "title": "🧮 캐릭터와 무기의 육성에 필요한 자원을 계산해보세요! 계산한 내용은 할 일 목록에 추가할 수 있으며, 추가하면 레진이 얼마나 필요한지도 알려줘요!",
       "detail": "계산기"
     },
     "twitter": {
@@ -108,7 +109,7 @@
     "anemoDamageBonus": "바람 원소 피해 보너스",
     "physicalDamageBonus": "물리 피해 보너스",
     "geoDamageBonus": "바위 원소 피해 보너스",
-    "sortBy": "... 별로 분류하다",
+    "sortBy": "정렬하기",
     "talentBook": "특성 책",
     "bossItem": "보스",
     "ascensionMaterial": "돌파 재료",
@@ -131,11 +132,11 @@
     "settings": "설정",
     "wishesWorth": "기원 가치",
     "lifetimePulls": "총 뽑기 횟수",
-    "guarantee": "천장 지수 {pity}에 확정으로 획득",
+    "guarantee": "{pity} 번째 기원에 확정 획득",
     "name": "이름",
     "time": "시간",
     "pity": "천장",
-    "welcome": "기원 통계에 어서오세요! 우선은 자동 제출기능을 통해 기원 기록을 제출하기를 권장드립니다.",
+    "welcome": "Paimon.moe 기원 통계에 어서오세요! 우선은 자동 제출을 통해 기원 기록을 제출해보세요.",
     "welcomeStart1": "시작하려면, 상단의",
     "welcomeStart2": "버튼을 누르세요",
     "manual": "수동으로 데이터를 입력하려면, 여기를 활성화하세요:",
@@ -634,7 +635,6 @@
       "calculateFate": "필요한 액수 계산: {value}"
     },
     "fateCount": {
-      "interwinedFate": "뒤얽힌 인연",
       "starglitter": "스타라이트",
       "stardust": "스타더스트",
       "primogem": "원석",
@@ -644,7 +644,8 @@
       "type": "종류",
       "amount": "개수",
       "totalPrimogem": "총 원석",
-      "calculate": "계산"
+      "calculate": "계산",
+      "intertwinedFate": "뒤얽힌 인연"
     }
   },
   "items": {
@@ -968,6 +969,8 @@
     "18ATKSet": "공격력 +18% 세트",
     "20EnergyRechargeSet": "원소 충전 효율 +20% 세트",
     "25PhysicalDmgSet": "물리 피해 보너스 +25% 세트",
+    "80EMSet": "원소 마스터리 +80 세트",
+    "15HealingBonusSet": "치유 보너스 +15% 세트",
     "sands": "시간의 모래",
     "goblet": "공간의 성배",
     "circlet": "이성의 왕관",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "데이터가 연동되었습니다!",
-    "driveError": "현재 드라이브와 연동이 불가능합니다 😔"
+    "driveError": "현재 드라이브와 연동이 불가능합니다 😔",
+    "open": "열기 ",
+    "delete": "삭제",
+    "deleteConfirm": "삭제하시겠습니까?"
   },
   "update": {
     "newUpdate": "Paimon.moe가 업데이트되었습니다!",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "제일 오래 복각하지 않은 순서대로 정렬",
     "bannerTitle": "캐릭터 출시 타임라인",
     "bannerSubtitle": "캐릭터가 언제 출시되고 복각되었는지 확인하세요."
+  },
+  "tcg": {
+    "title": "일곱 성인의 소환",
+    "requirementResonance": "이 카드를 추가하려면 덱에 최소 2장의 {element} 캐릭터 카드가 필요합니다!",
+    "requirementTalent": "이 카드를 추가하려면 덱에 {character} 카드가 필요합니다!",
+    "addedToDeck": "덱에 추가되었습니다!",
+    "deletedFromDeck": "덱에서 삭제되었습니다!",
+    "removedFromDeck": "덱에서 한 장을 제거했습니다!",
+    "alreadyMaxCharacters": "당신은 이미 3장의 캐릭터 카드를 가지고 있습니다!",
+    "alreadyMaxActions": "당신은 이미 30장의 행동 카드를 가지고 있습니다!",
+    "requirementInDeck": "덱에서 {character} 카드를 제거하려면 {card} 카드를 먼저 제거해야 합니다!",
+    "addToDeck": "덱에 추가하기",
+    "removeFromDeck": "덱에서 {type}",
+    "delete": "삭제",
+    "remove": "제거",
+    "compare": "비교하기",
+    "noCardOnDeck": "이 덱에 아직 카드가 없습니다",
+    "loadDefaultDeck": "기본 덱 가져오기",
+    "saveDeck": "덱 저장하기",
+    "hideDeck": "덱 숨기기",
+    "showDeck": "덱 보기",
+    "addDeck": "덱 추가",
+    "selectDeck": "덱 선택",
+    "loadingLink": "링크 생성 중…",
+    "loadingLinkError": "링크 생성 오류 😥",
+    "shareDeck": "\"{name}\" 덱 공유하기",
+    "removeCompare": "비교 제거하기",
+    "shareNotComplete": "3장의 캐릭터 카드와 30장의 행동 카드로 덱을 완성한 후 공유해주세요!",
+    "characterCard": "캐릭터 카드",
+    "actionCard": "행동 카드"
   }
 }

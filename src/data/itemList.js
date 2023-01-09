@@ -1069,7 +1069,7 @@ export const itemList = {
   },
 
   scarab: { id: 'scarab', name: 'Scarab' },
-  redcrest: { id: 'redcrest', name: 'Redcrest' },
+  henna_berry: { id: 'henna_berry', name: 'Henna Berry' },
   light_guiding_tetrahedron: {
     id: 'light_guiding_tetrahedron',
     name: 'Light Guiding Tetrahedron',
@@ -1112,5 +1112,9 @@ export const itemList = {
   mirror_of_mushin: {
     id: 'mirror_of_mushin',
     name: 'Mirror of Mushin',
+  },
+  dakas_bell: {
+    id: 'dakas_bell',
+    name: "Daka's Bell",
   },
 };

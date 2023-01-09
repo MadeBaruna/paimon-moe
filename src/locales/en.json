@@ -17,6 +17,7 @@
     "radiantSpincrystal": "Radiant Spincrystal",
     "calendar": "Calendar",
     "banners": "Character Reruns",
+    "tcg": "TCG",
     "settings": "Settings",
     "donate": "Donate"
   },
@@ -142,7 +143,10 @@
     "manualButton": "Enable Manual Input",
     "errorBanner": "Banner time mismatch! Please adjust your server on the settings page. Still not working? Please leave a message on Discord 😅",
     "globalWishTally": "Global Wish Stats",
-    "pityTooltip": ["Shows your current {rarity} pity", "{count} pulls to guaranteed {rarity}"],
+    "pityTooltip": [
+      "Shows your current {rarity} pity",
+      "{count} pulls to guaranteed {rarity}"
+    ],
     "import": {
       "title": "Import Wish History",
       "faqsButton": "FAQ - READ FIRST",
@@ -178,7 +182,11 @@
       "server": "Select your server:",
       "wishTallyCheck": "Submit pity for global wish stats",
       "wishTally": "We are doing a global wish stats! You can submit your wish stats to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "forceUpdateCheck": "Force update wish history (enable only if your wish history is not updating)",
       "header": [
         "Import and backup your Genshin Impact wish history to keep it for more than 6 months. It also automatically tracks your pity and statistics about your wishes!",
@@ -388,7 +396,11 @@
       "exportFinish": "Export success, please wait until your browser downloads the file!",
       "wishTallyTitle": "Submit Wish Stats",
       "wishTally": "We are doing a global wish stats! You can submit your wish stats to participate. All pity data will be aggregated to know what is the average pity of paimon.moe users.",
-      "wishTallyCollected": ["What will be collected:", "and", "pity from your wish history"],
+      "wishTallyCollected": [
+        "What will be collected:",
+        "and",
+        "pity from your wish history"
+      ],
       "wishTallySubmit": "Submit Wish Stats",
       "wishTallyThankyou": "Thank you for participating!",
       "manualTitle": "Manual Input Settings",
@@ -400,13 +412,22 @@
         "subtitle": "After a 1x Wish:",
         "pressWhenYouGet": "Press {button} when you get {rarity}★",
         "p1": "It will automatically add the lifetime pulls, 5★, and 4★ pity",
-        "p2": ["When the", "pity reaches 10, it will automatically be reset to 0"],
-        "p3": ["When the", "pity reaches 90, it will automatically be reset to 0"],
+        "p2": [
+          "When the",
+          "pity reaches 10, it will automatically be reset to 0"
+        ],
+        "p3": [
+          "When the",
+          "pity reaches 90, it will automatically be reset to 0"
+        ],
         "p4": [
           "After a 10x Wish, press",
           "but keep in mind that the pity counter might not be accurate, because there is no way to tell when the drop occured (maybe you got it on the 1st or even the 10th pull). To ensure that the counter is still accurate, you need to check the history table and add it one-by-one like you do 1x Wishes."
         ],
-        "p5": ["You can also press the", "button to edit the values manually!"],
+        "p5": [
+          "You can also press the",
+          "button to edit the values manually!"
+        ],
         "p6": "Press the arrow on the bottom to see your pulls' details. A popup will show up when you get a 5★ or 4★. You can also add or edit the table manually."
       }
     },
@@ -546,7 +567,11 @@
       "calculateTalent": "Calculate Talent Material?",
       "inputTalentLevel": "Input the 1st, 2nd & 3rd current talent level",
       "inputTalentNotice": "If it has a different color, subtract it by 3",
-      "inputTalent": ["1st talent lvl", "2nd talent lvl", "3rd talent lvl"],
+      "inputTalent": [
+        "1st talent lvl",
+        "2nd talent lvl",
+        "3rd talent lvl"
+      ],
       "talentToLevel": "to level",
       "calculate": "Calculate",
       "unknownInformation": "There are some unknown information",
@@ -555,7 +580,11 @@
       "expWasted": "EXP Wasted",
       "addToTodo": "Add to Todo List",
       "addedToTodo": "Added to Todo List",
-      "talent": ["Attack", "Skill", "Burst"]
+      "talent": [
+        "Attack",
+        "Skill",
+        "Burst"
+      ]
     },
     "expTable": {
       "level": "Level",
@@ -606,7 +635,6 @@
       "calculateFate": "Calculate how much money I need for {value}"
     },
     "fateCount": {
-      "interwinedFate": "Interwined Fate",
       "starglitter": "Starglitter",
       "stardust": "Stardust",
       "primogem": "Primogem",
@@ -616,7 +644,8 @@
       "type": "Type",
       "amount": "Amount",
       "totalPrimogem": "Total Primogems",
-      "calculate": "Calculate"
+      "calculate": "Calculate",
+      "intertwinedFate": "Intertwined Fate"
     }
   },
   "items": {
@@ -647,7 +676,10 @@
   "todo": {
     "title": "Todo List",
     "summary": "Summary",
-    "empty": ["Nothing to do yet 😀", "Add some from the Items page or the Calculator!"],
+    "empty": [
+      "Nothing to do yet 😀",
+      "Add some from the Items page or the Calculator!"
+    ],
     "farmableToday": "Farmable Today",
     "resin": "Resin needed",
     "based": "Based on AR:{ar} and WL:{wl}",
@@ -966,7 +998,10 @@
   },
   "common": {
     "dataSynced": "Data has been synced!",
-    "driveError": "Drive sync not available right now 😔"
+    "driveError": "Drive sync not available right now 😔",
+    "open": "Open",
+    "delete": "Delete",
+    "deleteConfirm": "Delete?"
   },
   "update": {
     "newUpdate": "Paimon.moe has a new update!",
@@ -984,5 +1019,35 @@
     "sortByRerun": "Sorted by oldest re-run",
     "bannerTitle": "Character Release Timeline",
     "bannerSubtitle": "See when the character is released and their last re-run"
+  },
+  "tcg": {
+    "title": "Genius Invokation TCG",
+    "requirementResonance": "You need at least 2 {element} characters in your deck to add this card!",
+    "requirementTalent": "You need {character} in your deck to add this card!",
+    "addedToDeck": "Added to deck!",
+    "deletedFromDeck": "Deleted from deck!",
+    "removedFromDeck": "Removed one from deck!",
+    "alreadyMaxCharacters": "You already have 3 character cards in the deck!",
+    "alreadyMaxActions": "You already have 30 action cards in the deck!",
+    "requirementInDeck": "You need to remove {card} card to remove {character} from your deck!",
+    "addToDeck": "Add to Deck",
+    "removeFromDeck": "{type} from Deck",
+    "delete": "Delete",
+    "remove": "Remove",
+    "compare": "Compare",
+    "noCardOnDeck": "There is no card yet in this deck",
+    "loadDefaultDeck": "Load Starter Deck",
+    "saveDeck": "Save Deck",
+    "hideDeck": "Hide Deck",
+    "showDeck": "Show Deck",
+    "addDeck": "Add Deck",
+    "selectDeck": "Select Deck",
+    "loadingLink": "Generating link...",
+    "loadingLinkError": "Error generating link 😥",
+    "shareDeck": "Share Deck \"{name}\"",
+    "removeCompare": "Remove Compare",
+    "shareNotComplete": "Please complete the deck with 3 characters and 30 action cards to share!",
+    "characterCard": "Character Card",
+    "actionCard": "Action Card"
   }
 }

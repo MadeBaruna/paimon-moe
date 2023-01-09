@@ -27,8 +27,8 @@
     "svelte": "^3.17.3",
     "svelte-i18n": "^3.4.0",
     "svelte-preprocess": "^4.10.7",
-    "svelte-simple-modal": "^0.6.1",
-    "tailwindcss": "^3.1.6",
+    "svelte-simple-modal": "^1.4.5",
+    "tailwindcss": "^3.2.4",
     "vite": "^3.0.2"
   }
 }

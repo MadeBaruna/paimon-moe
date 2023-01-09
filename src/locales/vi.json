@@ -17,6 +17,7 @@
     "radiantSpincrystal": "Ngọc Thạch Âm Vang",
     "calendar": "Lịch Biểu",
     "banners": "Rerun Nhân Vật",
+    "tcg": "Thất Thánh Triệu Hồi",
     "settings": "Cài Đặt",
     "donate": "Ủng hộ"
   },
@@ -55,9 +56,9 @@
       "join": "Tham gia Discord của chúng tôi"
     },
     "items": {
-      "title": "Nguyên Liệu của Hôm Nay",
+      "title": "Nguyên liệu của hôm nay",
       "detail": "Nguyên Liệu",
-      "sunday": "Vào ngày chủ nhật có thể farm tất cả nguyên liệu 😁"
+      "sunday": "Bạn có thể farm tất cả các nguyên liệu vào ngày Chủ Nhật! 😁"
     },
     "calculator": {
       "title": "🧮 Tính toán đạo cụ bồi dưỡng nhân vật, vũ khí và sách thiên phú! Những tính toán đó sau đó có thể được thêm vào Danh Sách Việc Cần Làm, nó còn hiện số nhựa bạn cần để farm nữa!",
@@ -115,7 +116,7 @@
     "talentStats": "Chi Tiết Thiên Phú",
     "build": "Build",
     "source": "Build Nhân Vật từ cộng đồng bới Genshin Helper Team",
-    "faq": "Cung Mệnh được tính từ Lịch Sử Cầu Nguyện của bạn. Nếu lịch sử cầu nguyện của bạn hết hạn 6 tháng hoặc bạn mua cung mệnh nhân vật từ cửa hàng hoặc sự kiện, thông tin có thể sẽ sai sót! Nhưng bạn có thể tự chỉnh sửa bằng cách ấn vào cây bút kế bên tên nhân vật.",
+    "faq": "Cung Mệnh được tính từ Lịch Sử Cầu Nguyện của bạn. Nếu lịch sử cầu nguyện của bạn hết hạn 6 tháng hoặc bạn mua cung mệnh nhân vật từ cửa hàng hoặc sự kiện, thông tin có thể sẽ sai sót! Bạn có thể tự chỉnh sửa bằng cách nhấn vào cây bút kế bên tên nhân vật.",
     "mainStats": "THUỘC TÍNH CHÍNH",
     "subStats": "THUỘC TÍNH PHỤ",
     "talentPriority": "THIÊN PHÚ ƯU TIÊN",
@@ -634,7 +635,6 @@
       "calculateFate": "Tính bao nhiêu tiền bạn cần cho {value}"
     },
     "fateCount": {
-      "interwinedFate": "Mối Duyên Vương Vấn",
       "starglitter": "Tinh Huy",
       "stardust": "Tinh Trần",
       "primogem": "Nguyên Thạch",
@@ -644,7 +644,8 @@
       "type": "Loại",
       "amount": "SL",
       "totalPrimogem": "Tổng Nguyên Thạch",
-      "calculate": "Tính"
+      "calculate": "Tính",
+      "intertwinedFate": "Mối Duyên Vương Vấn"
     }
   },
   "items": {
@@ -679,11 +680,11 @@
       "Không có gì để làm cả 😀",
       "Thêm việc cần làm vào từ trang Nguyên Liệu hoặc từ Công Cụ Tính!"
     ],
-    "farmableToday": "Nguyên Liệu của Hôm Nay",
+    "farmableToday": "Nguyên liệu của hôm nay",
     "resin": "nhựa cần tiêu hao",
-    "based": "Dựa theo HMH:{ar} và Cấp TG:{wl}",
+    "based": "Dựa trên HMH:{ar} và Cấp TG:{wl}",
     "change": "(thay đổi trong cài đặt)",
-    "approximation": "Tỷ lệ rơi được ước lượng bởi",
+    "approximation": "Ước lượng được dựa trên xác suất rơi đạo cụ được tính bởi",
     "delete": {
       "title": "Xóa việc cần làm này?",
       "cancel": "Hủy",
@@ -710,7 +711,7 @@
     "wl": "Cấp TG:",
     "drive": [
       "Paimon.moe dùng Thư mục Dữ liệu Ứng dụng ở Google Drive của bạn để lưu và đồng bộ Lịch sử cầu nguyện và Danh Sách việc cần làm của bạn.",
-      "Paimon.moe chỉ có thể đọc và viết những files mà trang web này đã tạo."
+      "Paimon.moe chỉ có thể đọc và viết những tập tin mà trang này đã tạo."
     ],
     "driveError": "Không thể tải API của Google Drive",
     "driveSignIn": "Đăng nhập vào Google Drive",
@@ -736,7 +737,7 @@
           "value": "Dimbreath Genshin Data"
         },
         {
-          "name": "Xác suất rơi cho bộ tính nhựa",
+          "name": "Xác suất rơi cho bộ ước tính nhựa",
           "value": "Discord của Data Gathering (Thu Thập Dữ Liệu)"
         }
       ]
@@ -753,7 +754,7 @@
       "continue": "Tiếp Tục"
     },
     "changelog": "Nhật Ký Chỉnh Sửa",
-    "exportDescription": "Bạn có thể xuất & nhập dữ liệu trên Paimon.moe của bạn ở đây",
+    "exportDescription": "Bạn có thể xuất & nhập dữ liệu của bạn trên Paimon.moe tại đây",
     "exportButton": "Xuất & Nhập Dữ Liệu",
     "export": "Xuất Dữ Liệu",
     "download": "Tải Dữ Liệu về",
@@ -848,13 +849,13 @@
   "donate": {
     "message": [
       "Cảm ơn bạn! Mong bản cảm thấy paimon.moe có ích.",
-      "Tôi tạo ra trang web vì niểm vui vào những lúc tôi rãnh. Đương nhiên tôi sẽ thêm nhiều tính năng và cập nhật dữ liệu mỗi update, vì tôi thích khám phá Genshin Impact.",
-      "Nếu bạn muốn donate, thì số tiền đó chắc chắn sẽ giúp để cải thiện trang web và là nguồn động lực của tôi để thêm nhiều tính năng mới cho paimon.moe! Cảm ơn bạn rất nhiều, chúc bạn có một ngày vui vẻ và mong bạn thích trang web này!",
-      "Nếu như bạn thích coding, bạn có thể đống góp dự án tại"
+      "Tôi thực ra ban đầu tạo ra tạo ra trang web này chỉ cho vui vào những lúc tôi rảnh mà thôi. Tôi sẽ thêm nhiều tính năng và cập nhật nữa mỗi khi game có cập nhật do tôi rất thích khám phá game này, và tôi cũng đang khá là \"min-maxing\" nó nữa.",
+      "Nếu bạn muốn ủng hộ thì số tiền đó chắc chắn sẽ giúp để cải thiện trang web và là nguồn động lực của tôi để thêm nhiều tính năng mới cho Paimon.moe! Cảm ơn bạn rất nhiều, chúc bạn có một ngày vui vẻ và mong bạn thích trang web này!",
+      "Nếu như bạn thích coding, bạn cũng có thể đóng góp cho dự án này tại"
     ],
-    "kofi": "Hỗ trợ tôi trên Ko-fi",
-    "trakteer": "Hỗ trợ tôi trên Trakteer",
-    "crypto": "Hỗ trợ tôi trên Crypto"
+    "kofi": "Ủng hộ tôi trên Ko-fi",
+    "trakteer": "Ủng hộ tôi trên Trakteer",
+    "crypto": "Ủng hộ tôi bằng Tiền ảo"
   },
   "reminder": {
     "notSupported": "Trình duyệt của bạn không hỗ trợ thông báo, hãy thử trình duyệt khác!",
@@ -968,6 +969,8 @@
     "18ATKSet": "Bộ tăng 18% Tấn Công",
     "20EnergyRechargeSet": "Bộ tăng 20% Hiệu Quả Nạp",
     "25PhysicalDmgSet": "Bộ tăng 25% ST Vật Lý",
+    "80EMSet": "Bộ tăng 80 Tinh Thông Nguyên Tố",
+    "15HealingBonusSet": "Bộ tăng 15% hiệu quả trị liệu",
     "sands": "CÁT THỜI GIAN",
     "goblet": "LY KHÔNG GIAN",
     "circlet": "NÓN LÝ TRÍ",
@@ -977,14 +980,14 @@
   },
   "fishing": {
     "title": "Sách Câu Cá",
-    "subtitle": "Đánh dấu điểm câu cá là đã hết cá khi bạn đã câu hết toàn bộ cá ở đó để bắt đầu tính giờ khi nào cá sẽ hồi sinh lại",
+    "subtitle": "Đánh dấu điểm câu cá là đã hết cá khi bạn đã câu hết toàn bộ cá ở đó để bắt đầu đếm ngược thời gian cá hồi lại",
     "mondstadt": "Mondstadt",
     "liyue": "Liyue",
     "inazuma": "Inazuma",
     "enkanomiya": "Enkanomiya",
     "chasm": "Vực Đá Sâu",
     "sumeru": "Sumeru",
-    "setEmpty": "Đã hết cá",
+    "setEmpty": "Đã hết cá?",
     "emptyTime": "Thời gian vị trí này hết cá:",
     "clear": "Xóa",
     "save": "Lưu",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "Dữ liệu đã được đồng bộ!",
-    "driveError": "Đồng bộ với Drive hiện không có sẵn 😔"
+    "driveError": "Đồng bộ với Drive hiện không có sẵn 😔",
+    "open": "Mở",
+    "delete": "Xóa",
+    "deleteConfirm": "Xóa?"
   },
   "update": {
     "newUpdate": "Paimon.moe có cập nhật mới!",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "Xếp theo rerun lâu nhất",
     "bannerTitle": "Lịch Ra Mắt Nhân Vật",
     "bannerSubtitle": "Xem thời gian mà nhân vật nào đó được ra mắt và lần rerun cuối cùng của họ"
+  },
+  "tcg": {
+    "title": "Thất Thánh Triệu Hồi",
+    "requirementResonance": "Bộ bài có tối thiểu 2 nhân vật nguyên tố {element} mới có thể thêm!",
+    "requirementTalent": "Bộ bài có {character} mới có thể thêm!",
+    "addedToDeck": "Đã thêm vào bộ bài!",
+    "deletedFromDeck": "Đã xóa khỏi bộ bài!",
+    "removedFromDeck": "Đã bỏ một lá trong bộ bài!",
+    "alreadyMaxCharacters": "Bộ bài đã có đủ 3 thẻ nhân vật rồi!",
+    "alreadyMaxActions": "Bộ bài đã có đủ 30 thẻ hành động rồi!",
+    "requirementInDeck": "Cần phải bỏ lá {card} trước khi bỏ {character} ra khỏi bộ bài!",
+    "addToDeck": "Thêm vào bộ",
+    "removeFromDeck": "{type} khỏi bộ bài",
+    "delete": "Xóa",
+    "remove": "Bỏ",
+    "compare": "So sánh",
+    "noCardOnDeck": "Bộ bài chưa có lá nào",
+    "loadDefaultDeck": "Tải Bộ khởi đầu",
+    "saveDeck": "Lưu bộ bài",
+    "hideDeck": "Ẩn bộ bài",
+    "showDeck": "Hiện bộ bài",
+    "addDeck": "Thêm bộ bài",
+    "selectDeck": "Chọn bộ bài",
+    "loadingLink": "Đang tạo liên kết...",
+    "loadingLinkError": "Có lỗi khi tạo liên kết 😥",
+    "shareDeck": "Chia sẻ bộ \"{name}\"",
+    "removeCompare": "Bỏ so sánh",
+    "shareNotComplete": "Bộ bài cần có đủ 3 thẻ nhân vật và 30 thẻ hành động để có thể chia sẻ!",
+    "characterCard": "Thẻ Nhân Vật",
+    "actionCard": "Thẻ Hành Động"
   }
 }

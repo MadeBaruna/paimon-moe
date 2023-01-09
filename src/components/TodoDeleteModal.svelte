@@ -17,7 +17,7 @@
         src={`/images/weapons/${todo.weapon ? todo.weapon.id : 'any_weapon_1'}.png`}
         alt={todo.weapon ? todo.weapon.name : `Weapon Level ${todo.level.from}-${todo.level.to}`} />
       <div class="flex-1">
-        <p class="font-bold">{todo.weapon ? todo.weapon.name : 'Weapon'}</p>
+        <p class="font-bold">{todo.weapon ? $t(todo.weapon.name) : 'Weapon'}</p>
         <p class="text-gray-500">Level {`${todo.level.from}-${todo.level.to}`}</p>
       </div>
     {:else if todo.type === 'character'}
@@ -26,7 +26,7 @@
         src={`/images/characters/${todo.character ? todo.character.id : 'characters'}.png`}
         alt={todo.character ? todo.character.name : `Character Level ${todo.level.from}-${todo.level.to}`} />
       <div class="flex-1">
-        <p class="font-bold">{todo.character ? todo.character.name : 'Character'}</p>
+        <p class="font-bold">{todo.character ? $t(todo.character.name) : 'Character'}</p>
         <p class="text-gray-500">Level {`${todo.level.from}-${todo.level.to}`}</p>
       </div>
     {/if}

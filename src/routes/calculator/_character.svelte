@@ -542,7 +542,7 @@
                   <img class="h-6 inline-block mr-1" src={res.image} alt={res.label} />
                 </span>
               {/if}
-              {res.label}
+              {$t(res.label)}
             </span>
           </Checkbox>
         </div>
@@ -649,7 +649,7 @@
                           <img class="h-6 inline-block mr-1" src={res.image} alt={res.label} />
                         </span>
                       {/if}
-                      {res.label}
+                      {$t(res.label)}
                     </span>
                   </td>
                 </tr>
@@ -669,7 +669,7 @@
                       <span class="w-6 inline-block">
                         <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={item.name} />
                       </span>
-                      {item.name}
+                      {$t(item.name)}
                     </span>
                   </td>
                 </tr>

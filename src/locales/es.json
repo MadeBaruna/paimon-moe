@@ -17,6 +17,7 @@
     "radiantSpincrystal": "Girocristal radiante",
     "calendar": "Calendario",
     "banners": "Reruns del personaje",
+    "tcg": "JCC",
     "settings": "Configuración",
     "donate": "Donar"
   },
@@ -634,7 +635,6 @@
       "calculateFate": "Calcular cuánto dinero necesito para {value}"
     },
     "fateCount": {
-      "interwinedFate": "Destino entrelazado",
       "starglitter": "Brillo estelar sin dueño",
       "stardust": "Polvo estelar sin dueño",
       "primogem": "Protogema",
@@ -644,7 +644,8 @@
       "type": "Tipo",
       "amount": "Cantidad",
       "totalPrimogem": "Protogemas Totales",
-      "calculate": "Calcular"
+      "calculate": "Calcular",
+      "intertwinedFate": "Destino entrelazado"
     }
   },
   "items": {
@@ -968,6 +969,8 @@
     "18ATKSet": "Conjunto de ATK +18%",
     "20EnergyRechargeSet": "Conjunto de Recarga de Energía +20%",
     "25PhysicalDmgSet": "Conjunto de Daño Físico +25%",
+    "80EMSet": "Conjunto de Maestría Elemental +80",
+    "15HealingBonusSet": "Conjunto de Bono Curación +15%",
     "sands": "ARENAS",
     "goblet": "CÁLIZ",
     "circlet": "TIARA",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "¡Los datos han sido sincronizados!",
-    "driveError": "Sincronización de Drive no disponible en este momento 😔"
+    "driveError": "Sincronización de Drive no disponible en este momento 😔",
+    "open": "Abrir",
+    "delete": "Borrar",
+    "deleteConfirm": "¿Borrar?"
   },
   "update": {
     "newUpdate": "Paimon.moe tiene una nueva actualización!",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "Ordenado por reaparición más antigua",
     "bannerTitle": "Línea de tiempo de lanzamiento del personaje",
     "bannerSubtitle": "Ver cuando el personaje es liberado y su último re-run"
+  },
+  "tcg": {
+    "title": "JCC Invocación de los Sabios",
+    "requirementResonance": "¡Necesitas al menos 2 personajes {element} en tu mazo para añadir esta carta!",
+    "requirementTalent": "¡Necesitas a {character} en tu mazo para añadir esta carta!",
+    "addedToDeck": "¡Añadido al mazo!",
+    "deletedFromDeck": "¡Eliminado del mazo!",
+    "removedFromDeck": "¡Se ha eliminado una del mazo!",
+    "alreadyMaxCharacters": "¡Ya tienes 3 cartas de personajes en la baraja!",
+    "alreadyMaxActions": "¡Ya tienes 30 cartas de acción en la baraja!",
+    "requirementInDeck": "¡Necesitas quitar la tarjeta {card} para eliminar a {character} de tu mazo!",
+    "addToDeck": "Añadir al mazo",
+    "removeFromDeck": "{type} desde el mazo",
+    "delete": "Borrar",
+    "remove": "Quitar",
+    "compare": "Comparar",
+    "noCardOnDeck": "Todavía no hay ninguna carta en este mazo",
+    "loadDefaultDeck": "Cargar mazo inicial",
+    "saveDeck": "Guardar Mazo",
+    "hideDeck": "Ocultar Mazo",
+    "showDeck": "Mostrar Mazo",
+    "addDeck": "Agregar Mazo",
+    "selectDeck": "Seleccionar Mazo",
+    "loadingLink": "Generando enlace...",
+    "loadingLinkError": "Error generando enlace 😥",
+    "shareDeck": "Compartir mazo \"{name}\"",
+    "removeCompare": "Quitar comparación",
+    "shareNotComplete": "¡Por favor, completa la baraja con 3 personajes y 30 cartas de acción para compartir!",
+    "characterCard": "Carta de Personaje",
+    "actionCard": "Carta de Acción"
   }
 }

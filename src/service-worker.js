@@ -7,14 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = [
-  'Update character builds',
-  'Add Layla',
-  'Update furnishing sets',
-  'Update achievement commission data',
-  'Update timeline',
-  'Update locales',
-];
+const changelog = ['Update banners', 'Bug fixes', 'Add TCG Deck builder, check it out on TCG menu!'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 

@@ -1,0 +1,3593 @@
+[
+  {
+    "_id": 1101,
+    "id": "ganyu",
+    "type": "character",
+    "name": "甘雨",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11011,
+        "type": "普通攻擊",
+        "name": "流天射術",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11012,
+        "type": "元素戰技",
+        "name": "山澤麟跡",
+        "desc": "造成1點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">冰蓮</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111012,
+          "id": "ice_lotus",
+          "name": "冰蓮",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方出戰角色受到傷害時：</span>抵消1點傷害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 11013,
+        "type": "普通攻擊",
+        "name": "霜華矢",
+        "desc": "造成3點<span style=\"color: #FFFFFFFF;\">物理傷害</span>，對所有敵方後臺角色造成<span style=\"color: #FFFFFFFF;\">2點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透傷害</span></span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "_id": 11014,
+        "type": "元素爆發",
+        "name": "降眾天華",
+        "desc": "造成1點<span style=\"color: #FFFFFFFF;\">物理傷害</span>，對所有敵方後臺角色造成<span style=\"color: #FFFFFFFF;\">1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透傷害</span></span>，召喚<span style=\"color: #FFFFFFFF;\">冰靈珠</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111011,
+          "id": "sacred_cryo_pearl",
+          "name": "冰靈珠",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成1點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，對所有敵方後臺角色造成1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1102,
+    "id": "diona",
+    "type": "character",
+    "name": "迪奧娜",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11021,
+        "type": "普通攻擊",
+        "name": "獵人射術",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11022,
+        "type": "元素戰技",
+        "name": "貓爪凍凍",
+        "desc": "造成2點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">貓爪護盾</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111021,
+          "id": "cat-claw_shield",
+          "name": "貓爪護盾",
+          "desc": "為我方出戰角色提供<span style=\"color: #FFFFFFFF;\">1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span></span>。"
+        }
+      },
+      {
+        "_id": 11023,
+        "type": "元素爆發",
+        "name": "最烈特調",
+        "desc": "造成1點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，治療此角色2點，召喚<span style=\"color: #FFFFFFFF;\">酒霧領域</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111023,
+          "id": "drunken_mist",
+          "name": "酒霧領域",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成1點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，治療我方出戰角色2點。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1103,
+    "id": "kaeya",
+    "type": "character",
+    "name": "凱亞",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11031,
+        "type": "普通攻擊",
+        "name": "儀典劍術",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11032,
+        "type": "元素戰技",
+        "name": "霜襲",
+        "desc": "造成3點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11033,
+        "type": "元素爆發",
+        "name": "凜冽輪舞",
+        "desc": "造成1點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">寒冰之稜</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111031,
+          "id": "icicle",
+          "name": "寒冰之稜",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方切換角色後：</span>造成2點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1104,
+    "id": "chongyun",
+    "type": "character",
+    "name": "重雲",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11041,
+        "type": "普通攻擊",
+        "name": "滅邪四式",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11042,
+        "type": "元素戰技",
+        "name": "重華疊霜",
+        "desc": "造成3點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">重華疊霜領域</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111041,
+          "id": "chonghua_frost_field",
+          "name": "重華疊霜領域",
+          "desc": "我方單手劍、雙手劍或長柄武器角色造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>變為<span style=\"color: #99FFFFFF;\">冰元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>：2</span>"
+        }
+      },
+      {
+        "_id": 11043,
+        "type": "元素爆發",
+        "name": "雲開星落",
+        "desc": "造成7點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1105,
+    "id": "kamisato_ayaka",
+    "type": "character",
+    "name": "神里綾華",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11051,
+        "type": "普通攻擊",
+        "name": "神里流·傾",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11052,
+        "type": "元素戰技",
+        "name": "神里流·冰華",
+        "desc": "造成3點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11053,
+        "type": "元素爆發",
+        "name": "神里流·霜滅",
+        "desc": "造成4點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">霜見雪關扉</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111051,
+          "id": "frostflake_seki_no_to",
+          "name": "霜見雪關扉",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成2點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 11054,
+        "type": "被動技能",
+        "name": "神里流·霰步",
+        "desc": "【被動】此角色被切換為「出戰角色」時，附屬<span style=\"color: #FFFFFFFF;\">冰元素附魔</span>。",
+        "cost": [],
+        "sub": {
+          "_id": 111052,
+          "id": "cryo_elemental_infusion",
+          "name": "冰元素附魔",
+          "desc": "所附屬角色造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>變為<span style=\"color: #99FFFFFF;\">冰元素傷害</span>。\\n（持續到回合結束）"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1201,
+    "id": "barbara",
+    "type": "character",
+    "name": "芭芭拉",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12011,
+        "type": "普通攻擊",
+        "name": "水之淺唱",
+        "desc": "造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12012,
+        "type": "元素戰技",
+        "name": "演唱，開始♪",
+        "desc": "造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">歌聲之環</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112011,
+          "id": "melody_loop",
+          "name": "歌聲之環",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>治療所有我方角色1點，然後對我方出戰角色<span style=\"color: #80C0FFFF;\">附著水元素</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 12013,
+        "type": "元素爆發",
+        "name": "閃耀奇跡♪",
+        "desc": "治療我方所有角色4點。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1202,
+    "id": "xingqiu",
+    "type": "character",
+    "name": "行秋",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12021,
+        "type": "普通攻擊",
+        "name": "古華劍法",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12022,
+        "type": "元素戰技",
+        "name": "畫雨籠山",
+        "desc": "造成2點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，本角色<span style=\"color: #80C0FFFF;\">附著水元素</span>，生成<span style=\"color: #FFFFFFFF;\">雨簾劍</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112021,
+          "id": "rain_sword",
+          "name": "雨簾劍",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方出戰角色受到至少為3的傷害時：</span>抵消1點傷害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 12023,
+        "type": "元素爆發",
+        "name": "裁雨留虹",
+        "desc": "造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，本角色<span style=\"color: #80C0FFFF;\">附著水元素</span>，生成<span style=\"color: #FFFFFFFF;\">虹劍勢</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112022,
+          "id": "rainbow_bladework",
+          "name": "虹劍勢",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻擊後：</span>造成2點<span style=\"color: #80C0FFFF;\">水元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1203,
+    "id": "mona",
+    "type": "character",
+    "name": "莫娜",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12031,
+        "type": "普通攻擊",
+        "name": "因果點破",
+        "desc": "造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12032,
+        "type": "元素戰技",
+        "name": "水中幻願",
+        "desc": "造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">虛影</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112031,
+          "id": "reflection",
+          "name": "虛影",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方出戰角色受到傷害時：</span>抵消1點傷害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：1</span>，耗盡時不棄置此牌。\\n<span style=\"color: #FFFFFFFF;\">結束階段：</span>棄置此牌，造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>。"
+        }
+      },
+      {
+        "_id": 12033,
+        "type": "元素爆發",
+        "name": "星命定軌",
+        "desc": "造成4點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">泡影</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112032,
+          "id": "illusory_bubble",
+          "name": "泡影",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方造成技能傷害時：</span>移除此狀態，使本次傷害加倍。"
+        }
+      },
+      {
+        "_id": 12034,
+        "type": "被動技能",
+        "name": "虛實流動",
+        "desc": "【被動】<span style=\"color: #FFFFFFFF;\">此角色為出戰角色，我方執行「切換角色」行動時：</span>將此次切換視為「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">快速行動</span>」而非「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>」。（每回合1次）",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1301,
+    "id": "diluc",
+    "type": "character",
+    "name": "迪盧克",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 13011,
+        "type": "普通攻擊",
+        "name": "淬煉之劍",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13012,
+        "type": "元素戰技",
+        "name": "逆焰之刃",
+        "desc": "造成5點<span style=\"color: #FF9999FF;\">火元素傷害</span>。每回合第三次使用本技能時，傷害+2。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13013,
+        "type": "元素爆發",
+        "name": "黎明",
+        "desc": "造成8點<span style=\"color: #FF9999FF;\">火元素傷害</span>，本角色附屬<span style=\"color: #FFFFFFFF;\">火元素附魔</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113011,
+          "id": "pyro_infusion",
+          "name": "火元素附魔",
+          "desc": "所附屬角色造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>，變為<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1302,
+    "id": "xiangling",
+    "type": "character",
+    "name": "香菱",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 13021,
+        "type": "普通攻擊",
+        "name": "白案功夫",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13022,
+        "type": "元素戰技",
+        "name": "鍋巴出擊",
+        "desc": "召喚<span style=\"color: #FFFFFFFF;\">鍋巴</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113021,
+          "id": "guoba",
+          "name": "鍋巴",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成2點<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 13023,
+        "type": "元素爆發",
+        "name": "旋火輪",
+        "desc": "造成2點<span style=\"color: #FF9999FF;\">火元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">旋火輪</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113022,
+          "id": "pyronado",
+          "name": "旋火輪",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用技能後：</span>造成2點<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1303,
+    "id": "bennett",
+    "type": "character",
+    "name": "班尼特",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 13031,
+        "type": "普通攻擊",
+        "name": "好運劍",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13032,
+        "type": "元素戰技",
+        "name": "熱情超載",
+        "desc": "造成3點<span style=\"color: #FF9999FF;\">火元素傷害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13033,
+        "type": "元素爆發",
+        "name": "美妙旅程",
+        "desc": "造成2點<span style=\"color: #FF9999FF;\">火元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">鼓舞領域</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113031,
+          "id": "inspiration_field",
+          "name": "鼓舞領域",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用技能時：</span>如果該角色生命值至少為7，則使此傷害額外+2；技能結算後，如果該角色生命值不多於6，則治療該角色2點。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1305,
+    "id": "yoimiya",
+    "type": "character",
+    "name": "宵宮",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 13051,
+        "type": "普通攻擊",
+        "name": "煙火打揚",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13052,
+        "type": "元素戰技",
+        "name": "焰硝庭火舞",
+        "desc": "本角色附屬<span style=\"color: #FFFFFFFF;\">庭火焰硝</span>。（此技能不產生充能）",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          }
+        ],
+        "sub": {
+          "_id": 113051,
+          "id": "niwabi_enshou",
+          "name": "庭火焰硝",
+          "desc": "所附屬角色<span style=\"color: #FFFFFFFF;\">普通攻擊</span>傷害+1，造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>變為<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 13053,
+        "type": "元素爆發",
+        "name": "琉金雲間草",
+        "desc": "造成3點<span style=\"color: #FF9999FF;\">火元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">琉金火光</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113052,
+          "id": "aurous_blaze",
+          "name": "琉金火光",
+          "desc": "宵宮以外的我方角色使用技能後：造成1點<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1401,
+    "id": "fischl",
+    "type": "character",
+    "name": "菲謝爾",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14011,
+        "type": "普通攻擊",
+        "name": "罪滅之矢",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14012,
+        "type": "元素戰技",
+        "name": "夜巡影翼",
+        "desc": "造成1點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">奧茲</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114011,
+          "id": "oz",
+          "name": "奧茲",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成1點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 14013,
+        "type": "元素爆發",
+        "name": "至夜幻現",
+        "desc": "造成4點<span style=\"color: #FFFFFFFF;\">物理傷害</span>，對所有敵方後臺角色造成2點<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透傷害</span></span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1402,
+    "id": "razor",
+    "type": "character",
+    "name": "雷澤",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14021,
+        "type": "普通攻擊",
+        "name": "鋼脊",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14022,
+        "type": "元素戰技",
+        "name": "利爪與蒼雷",
+        "desc": "造成3點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14023,
+        "type": "元素爆發",
+        "name": "雷牙",
+        "desc": "造成5點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>，本角色附屬<span style=\"color: #FFFFFFFF;\">雷狼</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114021,
+          "id": "the_wolf_within",
+          "name": "雷狼",
+          "desc": "<span style=\"color: #FFFFFFFF;\">所附屬角色使用普通攻擊或元素戰技後：</span>造成2點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1403,
+    "id": "keqing",
+    "type": "character",
+    "name": "刻晴",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 14031,
+        "type": "普通攻擊",
+        "name": "雲來劍法",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14032,
+        "type": "元素戰技",
+        "name": "星斗歸位",
+        "desc": "造成3點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>，生成手牌<span style=\"color: #FFFFFFFF;\">雷楔</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114031,
+          "id": "lightning_stiletto",
+          "name": "雷楔",
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：將刻晴切換到場上，立刻使用星斗歸位。本次星斗歸位會為刻晴附加<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">雷元素附魔</span></span>，但是不會再生成雷楔。\\n（刻晴使用星斗歸位時，如果此牌在手中：不會再生成雷楔，而是改為棄置此牌，並為刻晴附加<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">雷元素附魔</span></span>）"
+        }
+      },
+      {
+        "_id": 14033,
+        "type": "元素爆發",
+        "name": "天街巡遊",
+        "desc": "造成4點<span style=\"color: #FFFFFFFF;\">物理傷害</span>，對所有敵方後臺角色造成<span style=\"color: #FFFFFFFF;\">3點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透傷害</span></span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1404,
+    "id": "cyno",
+    "type": "character",
+    "name": "賽諾",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 14041,
+        "type": "普通攻擊",
+        "name": "七聖槍術",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14042,
+        "type": "元素戰技",
+        "name": "秘儀·律淵渡魂",
+        "desc": "造成3點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14043,
+        "type": "元素爆發",
+        "name": "聖儀·煟煌隨狼行",
+        "desc": "造成4點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>，\\n<span style=\"color: #FFFFFFFF;\">啟途誓使</span>的[憑依]級數+2。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "啟途誓使",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>累積1級「憑依」。\\n<span style=\"color: #FFFFFFFF;\">根據「憑依」級，提供效果：</span>\\n大於等於2級：<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>轉化為<span style=\"color: #FFACFFFF;\">雷元素傷害</span>；\\n大於等於4級：造成的傷害+2；\\n大於等於6級時：「憑依」級數-4。"
+        }
+      },
+      {
+        "_id": 14044,
+        "type": "被動技能",
+        "name": "行度誓懲",
+        "desc": "【被動】戰鬥開始時，初始附屬<span style=\"color: #FFFFFFFF;\">啟途誓使</span>。",
+        "cost": [],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "啟途誓使",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>累積1級「憑依」。\\n<span style=\"color: #FFFFFFFF;\">根據「憑依」級，提供效果：</span>\\n大於等於2級：<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>轉化為<span style=\"color: #FFACFFFF;\">雷元素傷害</span>；\\n大於等於4級：造成的傷害+2；\\n大於等於6級時：「憑依」級數-4。"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1501,
+    "id": "sucrose",
+    "type": "character",
+    "name": "砂糖",
+    "hp": 10,
+    "energy": 2,
+    "element": "anemo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 15011,
+        "type": "普通攻擊",
+        "name": "簡式風靈作成",
+        "desc": "造成1點<span style=\"color: #80FFD7FF;\">風元素傷害</span>。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15012,
+        "type": "元素戰技",
+        "name": "風靈作成·陸參零捌",
+        "desc": "造成3點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，使對方強制切換到前一個角色。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15013,
+        "type": "元素爆發",
+        "name": "禁·風靈作成·柒伍同構貳型",
+        "desc": "造成1點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">大型風靈</span>。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 115011,
+          "id": "large_wind_spirit",
+          "name": "大型風靈",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成2點<span style=\"color: #80FFD7FF;\">風元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：3</span>\\n\\n我方角色或召喚物引發擴散反應後：轉換此牌的元素類型，改為造成被擴散的元素類型的傷害。（離場前僅限一次）"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1502,
+    "id": "jean",
+    "type": "character",
+    "name": "琴",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 15021,
+        "type": "普通攻擊",
+        "name": "西風劍術",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15022,
+        "type": "元素戰技",
+        "name": "風壓劍",
+        "desc": "造成3點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，使對方強制切換到下一個角色。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15023,
+        "type": "元素爆發",
+        "name": "蒲公英之風",
+        "desc": "治療我方所有角色2點，召喚<span style=\"color: #FFFFFFFF;\">蒲公英領域</span>。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 115021,
+          "id": "dandelion_field",
+          "name": "蒲公英領域",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成2點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，治療我方出戰角色1點。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1601,
+    "id": "ningguang",
+    "type": "character",
+    "name": "凝光",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 16011,
+        "type": "普通攻擊",
+        "name": "千金擲",
+        "desc": "造成1點<span style=\"color: #FFE699FF;\">岩元素傷害</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16012,
+        "type": "元素戰技",
+        "name": "璇璣屏",
+        "desc": "造成2點<span style=\"color: #FFE699FF;\">岩元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">璇璣屏</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "璇璣屏",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方出戰角色受到至少為2的傷害時：</span>抵消1點傷害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 16013,
+        "type": "元素爆發",
+        "name": "天權崩玉",
+        "desc": "造成6點<span style=\"color: #FFE699FF;\">岩元素傷害</span>；如果<span style=\"color: #FFFFFFFF;\">璇璣屏</span>在場，就使此傷害+2。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "璇璣屏",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方出戰角色受到至少為2的傷害時：</span>抵消1點傷害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1602,
+    "id": "noelle",
+    "type": "character",
+    "name": "諾艾爾",
+    "hp": 10,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16021,
+        "type": "普通攻擊",
+        "name": "西風劍術·女僕",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16022,
+        "type": "元素戰技",
+        "name": "護心鎧",
+        "desc": "造成1點<span style=\"color: #FFE699FF;\">岩元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">護體岩鎧</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116021,
+          "id": "full_plate",
+          "name": "護體岩鎧",
+          "desc": "為我方出戰角色提供<span style=\"color: #FFFFFFFF;\">2點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span></span>。\\n此<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span>耗盡前，我方受到的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>減半。（無條件進位至整數）"
+        }
+      },
+      {
+        "_id": 16023,
+        "type": "元素爆發",
+        "name": "大掃除",
+        "desc": "造成4點<span style=\"color: #FFE699FF;\">岩元素傷害</span>，本角色附屬<span style=\"color: #FFFFFFFF;\">大掃除</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 116022,
+          "id": "sweeping_time",
+          "name": "大掃除",
+          "desc": "角色使用普通攻擊時：少花費1個<span style=\"color: #FFE699FF;\">岩元素</span>。（每回合1次）\\n角色<span style=\"color: #FFFFFFFF;\">普通攻擊</span>造成的傷害+2，造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>變為<span style=\"color: #FFE699FF;\">岩元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1701,
+    "id": "collei",
+    "type": "character",
+    "name": "柯萊",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17011,
+        "type": "普通攻擊",
+        "name": "祈頌射藝",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17012,
+        "type": "元素戰技",
+        "name": "拂花偈葉",
+        "desc": "造成3點<span style=\"color: #7EC236FF;\">草元素傷害</span>。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 17013,
+        "type": "元素爆發",
+        "name": "貓貓秘寶",
+        "desc": "造成2點<span style=\"color: #7EC236FF;\">草元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">柯里安巴</span>。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 117011,
+          "id": "cuilein-anbar",
+          "name": "柯里安巴",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成2點<span style=\"color: #7EC236FF;\">草元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2201,
+    "id": "rhodeia_of_loch",
+    "type": "character",
+    "name": "純水精靈·洛蒂婭",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22011,
+        "type": "普通攻擊",
+        "name": "翻湧",
+        "desc": "造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22012,
+        "type": "元素戰技",
+        "name": "純水幻造",
+        "desc": "隨機召喚1種<span style=\"color: #FFFFFFFF;\">純水幻形</span>。（優先生成不同的類型）",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "純水幻形",
+          "desc": "「純水幻形」共有3種：\\n<span style=\"color: #FFFFFFFF;\">花鼠</span>：結束階段造成2點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，可用2次。\\n<span style=\"color: #FFFFFFFF;\">飛鳶</span>：結束階段造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，可用3次。\\n<span style=\"color: #FFFFFFFF;\">蛙</span>：可抵擋2點傷害，並在耗盡後造成2點<span style=\"color: #80C0FFFF;\">水元素傷害</span>。"
+        }
+      },
+      {
+        "_id": 22013,
+        "type": "元素戰技",
+        "name": "林野百態",
+        "desc": "隨機召喚2種<span style=\"color: #FFFFFFFF;\">純水幻形</span>。（優先生成不同的類型）",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 5
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "純水幻形",
+          "desc": "「純水幻形」共有3種：\\n<span style=\"color: #FFFFFFFF;\">花鼠</span>：結束階段造成2點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，可用2次。\\n<span style=\"color: #FFFFFFFF;\">飛鳶</span>：結束階段造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，可用3次。\\n<span style=\"color: #FFFFFFFF;\">蛙</span>：可抵擋2點傷害，並在耗盡後造成2點<span style=\"color: #80C0FFFF;\">水元素傷害</span>。"
+        }
+      },
+      {
+        "_id": 22014,
+        "type": "元素爆發",
+        "name": "潮湧與激流",
+        "desc": "造成2點<span style=\"color: #80C0FFFF;\">水元素傷害</span>；我方每有1個召喚物，再使此傷害+2。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2202,
+    "id": "mirror_maiden",
+    "type": "character",
+    "name": "愚人眾·藏鏡仕女",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22021,
+        "type": "普通攻擊",
+        "name": "水彈",
+        "desc": "造成1點<span style=\"color: #80C0FFFF;\">水元素傷害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22022,
+        "type": "元素戰技",
+        "name": "瀲波綻破",
+        "desc": "造成3點<span style=\"color: #80C0FFFF;\">水元素傷害</span>，目標角色附屬<span style=\"color: #FFFFFFFF;\">水光破鏡</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122021,
+          "id": "refraction",
+          "name": "水光破鏡",
+          "desc": "所附屬角色受到的水元素傷害+1。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>：2</span>\\n（同一方場上最多存在一個此狀態）"
+        }
+      },
+      {
+        "_id": 22023,
+        "type": "元素爆發",
+        "name": "粼鏡折光",
+        "desc": "造成5點<span style=\"color: #80C0FFFF;\">水元素傷害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2301,
+    "id": "fatui_pyro_agent",
+    "type": "character",
+    "name": "愚人眾·火之債務處理人",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 23011,
+        "type": "普通攻擊",
+        "name": "突刺",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23012,
+        "type": "元素戰技",
+        "name": "伺機而動",
+        "desc": "造成1點<span style=\"color: #FF9999FF;\">火元素傷害</span>，本角色附屬<span style=\"color: #FFFFFFFF;\">潛行</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "潛行",
+          "desc": "所附屬角色受到的傷害-1，造成的傷害+1。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2"
+        }
+      },
+      {
+        "_id": 23013,
+        "type": "元素爆發",
+        "name": "焚毀之鋒",
+        "desc": "造成5點<span style=\"color: #FF9999FF;\">火元素傷害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23014,
+        "type": "被動技能",
+        "name": "潛行大師",
+        "desc": "【被動】戰鬥開始時，初始附屬<span style=\"color: #FFFFFFFF;\">潛行</span>。",
+        "cost": [],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "潛行",
+          "desc": "所附屬角色受到的傷害-1，造成的傷害+1。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2501,
+    "id": "maguu_kenki",
+    "type": "character",
+    "name": "魔偶劍鬼",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 25011,
+        "type": "普通攻擊",
+        "name": "一文字",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 25012,
+        "type": "元素戰技",
+        "name": "孤風刀勢",
+        "desc": "造成1點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">劍影·孤風</span>。",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125011,
+          "id": "shadowsword_lone_gale",
+          "name": "劍影·孤風",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成1點<span style=\"color: #80FFD7FF;\">風元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 25013,
+        "type": "元素戰技",
+        "name": "霜馳影突",
+        "desc": "造成1點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">劍影·霜馳</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125012,
+          "id": "shadowsword_galloping_frost",
+          "name": "劍影·霜馳",
+          "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>造成1點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+        }
+      },
+      {
+        "_id": 25014,
+        "type": "元素爆發",
+        "name": "機巧偽天狗抄",
+        "desc": "造成4點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，觸發我方所有<span style=\"color: #FFFFFFFF;\">劍影</span>召喚物的效果。（不消耗其可用次數）",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2601,
+    "id": "stonehide_lawachurl",
+    "type": "character",
+    "name": "丘丘岩盔王",
+    "hp": 8,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 26011,
+        "type": "普通攻擊",
+        "name": "Plama Lawa",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26012,
+        "type": "元素戰技",
+        "name": "Movo Lawa",
+        "desc": "造成3點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 26013,
+        "type": "元素爆發",
+        "name": "Upa Shato",
+        "desc": "造成5點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26014,
+        "type": "被動技能",
+        "name": "魔化：岩盔",
+        "desc": "【被動】戰鬥開始時，初始附屬<span style=\"color: #FFFFFFFF;\">岩盔</span>和<span style=\"color: #FFFFFFFF;\">堅岩之力</span>。",
+        "cost": [],
+        "sub": {
+          "_id": 126011,
+          "id": "stonehide",
+          "name": "岩盔",
+          "desc": "<span style=\"color: #FFFFFFFF;\">所附屬角色受到傷害時：</span>抵消1點傷害。抵消岩傷害時，需額外消耗1次<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2701,
+    "id": "jadeplume_terrorshroom",
+    "type": "character",
+    "name": "翠翎恐蕈",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 27011,
+        "type": "普通攻擊",
+        "name": "菌王舞步",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 27012,
+        "type": "元素戰技",
+        "name": "不穩定孢子雲",
+        "desc": "造成3點<span style=\"color: #7EC236FF;\">草元素傷害</span>。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 27013,
+        "type": "元素爆發",
+        "name": "尾羽豪放",
+        "desc": "造成4點<span style=\"color: #7EC236FF;\">草元素傷害</span>，消耗所有<span style=\"color: #FFFFFFFF;\">活化激能</span>層數，每層使此傷害+1。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "活化激能",
+          "desc": "本角色造成或受到元素傷害後：累積1層「活化激能」。（最多累積3層）\\n<span style=\"color: #FFFFFFFF;\">結束階段：</span>如果「活化激能」層數已達到上限，就將其清空。同時，角色失去所有充能。"
+        }
+      },
+      {
+        "_id": 27014,
+        "type": "被動技能",
+        "name": "活化激能",
+        "desc": "【被動】戰鬥開始時，初始附屬<span style=\"color: #FFFFFFFF;\">活化激能</span>。",
+        "cost": [],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "活化激能",
+          "desc": "本角色造成或受到元素傷害後：累積1層「活化激能」。（最多累積3層）\\n<span style=\"color: #FFFFFFFF;\">結束階段：</span>如果「活化激能」層數已達到上限，就將其清空。同時，角色失去所有充能。"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 211011,
+    "id": "undivided_heart",
+    "type": "talent",
+    "name": "唯此一心",
+    "requirement": "ganyu",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 5
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">甘雨</span>時，裝備此牌。\\n甘雨裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">唯此一心</span>。\\n裝備有此牌的甘雨使用<span style=\"color: #FFFFFFFF;\">唯此一心</span>時：如果此技能在本場對局中曾經被使用過，則其造成的<span style=\"color: #99FFFFFF;\">冰元素傷害</span>+1，並且改為對敵方後臺角色造成3點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透傷害</span>。\\n（牌組中包含甘雨，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 211021,
+    "id": "shaken,_not_purred",
+    "type": "talent",
+    "name": "貓爪冰搖",
+    "requirement": "diona",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">迪奧娜</span>時，裝備此牌。\\n迪奧娜裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">貓爪冰搖</span>。\\n裝備有此牌的迪奧娜生成的<span style=\"color: #FFFFFFFF;\">貓爪護盾</span>，所提供的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span>值+1。\\n（牌組中包含迪奧娜，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 211031,
+    "id": "cold-blooded_strike",
+    "type": "talent",
+    "name": "冷血之劍",
+    "requirement": "kaeya",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">凱亞</span>時，裝備此牌。\\n凱亞裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">冷血之劍</span>。\\n裝備有此牌的凱亞使用<span style=\"color: #FFFFFFFF;\">冷血之劍</span>後：治療自身2點。（每回合1次）\\n（牌組中包含凱亞，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 211041,
+    "id": "steady_breathing",
+    "type": "talent",
+    "name": "吐納真定",
+    "requirement": "chongyun",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">重雲</span>時，裝備此牌。\\n重雲裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">吐納真定</span>。\\n裝備有此牌的重雲生成的<span style=\"color: #FFFFFFFF;\">重華疊霜領域</span>獲得以下效果：\\n初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>+1，並且使我方單手劍、雙手劍或長柄武器角色的<span style=\"color: #FFFFFFFF;\">普通攻擊</span>傷害+1。\\n（牌組中包含重雲，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 211051,
+    "id": "kanten_senmyou_blessing",
+    "type": "talent",
+    "name": "寒天宣命祝詞",
+    "requirement": "kamisato_ayaka",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 2
+        }
+      ],
+      "desc": "裝備有此牌的<span style=\"color: #FFFFFFFF;\">神里綾華</span>生成的<span style=\"color: #FFFFFFFF;\">冰元素附魔</span>會使所附屬角色造成的<span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">冰元素傷害</span></span>+1。\\n切換到裝備有此牌的神里綾華時：少花費1個元素骰。（每回合1次）\\n（牌組中包含神里綾華，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 212011,
+    "id": "glorious_season",
+    "type": "talent",
+    "name": "光輝的季節",
+    "requirement": "barbara",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">芭芭拉</span>時，裝備此牌。\\n芭芭拉裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">光輝的季節</span>。\\n裝備有此牌的芭芭拉在場時，<span style=\"color: #FFFFFFFF;\">歌聲之環</span>會使我方執行「切換角色」行動時少花費1個元素骰。（每回合1次）\\n（牌組中包含芭芭拉，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 212021,
+    "id": "the_scent_remained",
+    "type": "talent",
+    "name": "重簾留香",
+    "requirement": "xingqiu",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">行秋</span>時，裝備此牌。\\n行秋裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">重簾留香</span>。\\n裝備有此牌的行秋生成的<span style=\"color: #FFFFFFFF;\">雨簾劍</span>，初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>+1。\\n（牌組中包含行秋，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 212031,
+    "id": "prophecy_of_submersion",
+    "type": "talent",
+    "name": "沉沒的預言",
+    "requirement": "mona",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">莫娜</span>時，裝備此牌。\\n莫娜裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">沉沒的預言</span>。\\n裝備有此牌的莫娜出戰期間，我方引發的<span style=\"color: #80C0FFFF;\">水元素相關反應</span>傷害額外+2。\\n（牌組中包含莫娜，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 213011,
+    "id": "flowing_flame",
+    "type": "talent",
+    "name": "流火焦灼",
+    "requirement": "diluc",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">迪盧克</span>時，裝備此牌。\\n迪盧克裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">流火焦灼</span>。\\n裝備有此牌的迪盧克每回合第2次使用<span style=\"color: #FFFFFFFF;\">流火焦灼</span>時，少花費1個<span style=\"color: #FF9999FF;\">火元素</span>。\\n（牌組中包含迪盧克，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 213021,
+    "id": "crossfire",
+    "type": "talent",
+    "name": "交叉火力",
+    "requirement": "xiangling",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">香菱</span>時，裝備此牌。\\n香菱裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">交叉火力</span>。\\n裝備有此牌的香菱施放<span style=\"color: #FFFFFFFF;\">交叉火力</span>時，自身也會造成1點<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n（牌組中包含香菱，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 213031,
+    "id": "grand_expectation",
+    "type": "talent",
+    "name": "冒險憧憬",
+    "requirement": "bennett",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">班尼特</span>時，裝備此牌。\\n班尼特裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">冒險憧憬</span>。\\n裝備有此牌的班尼特生成的<span style=\"color: #FFFFFFFF;\">鼓舞領域</span>，其傷害提升效果改為總是生效，不再具有生命值限制。\\n（牌組中包含班尼特，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 213051,
+    "id": "naganohara_meteor_swarm",
+    "type": "talent",
+    "name": "長野原龍勢流星群",
+    "requirement": "yoimiya",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">宵宮</span>時，裝備此牌。\\n宵宮裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">長野原龍勢流星群</span>。\\n裝備有此牌的宵宮觸發<span style=\"color: #FFFFFFFF;\">庭火焰硝</span>後：額外造成1點<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n（牌組中包含宵宮，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 214011,
+    "id": "stellar_predator",
+    "type": "talent",
+    "name": "噬星魔鴉",
+    "requirement": "fischl",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">菲謝爾</span>時，裝備此牌。\\n菲謝爾裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">噬星魔鴉</span>。\\n裝備有此牌的菲謝爾生成的<span style=\"color: #FFFFFFFF;\">奧茲</span>，會在菲謝爾<span style=\"color: #FFFFFFFF;\">普通攻擊</span>後造成2點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>。（需消耗<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>）\\n（牌組中包含菲謝爾，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 214021,
+    "id": "awakening",
+    "type": "talent",
+    "name": "覺醒",
+    "requirement": "razor",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">雷澤</span>時，裝備此牌。\\n雷澤裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">覺醒</span>。\\n裝備有此牌的雷澤<span style=\"color: #FFFFFFFF;\">使用覺醒後</span>：使我方一個雷元素角色獲得1點充能。（出戰角色優先）\\n（牌組中包含雷澤，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 214031,
+    "id": "thundering_penance",
+    "type": "talent",
+    "name": "抵天雷罰",
+    "requirement": "keqing",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">刻晴</span>時，裝備此牌。\\n刻晴裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">抵天雷罰</span>。\\n裝備有此牌的刻晴生成的<span style=\"color: #FFFFFFFF;\">雷元素附魔</span>獲得以下效果：\\n初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>+1，並且會使所附屬角色造成的<span style=\"color: #FFACFFFF;\">雷元素傷害</span>+1。\\n（牌組中包含刻晴，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 214041,
+    "id": "featherfall_judgment",
+    "type": "talent",
+    "name": "落羽的裁擇",
+    "requirement": "cyno",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">賽諾</span>時，裝備此牌。\\n賽諾裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">落羽的裁擇</span>。\\n裝備有此牌的賽諾在<span style=\"color: #FFFFFFFF;\">啟途誓使</span>的「憑依」級數為3或5時使用<span style=\"color: #FFFFFFFF;\">落羽的裁擇</span>時，造成的傷害額外+1。\\n（牌組中包含賽諾，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 215011,
+    "id": "chaotic_entropy",
+    "type": "talent",
+    "name": "混元熵增論",
+    "requirement": "sucrose",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">砂糖</span>時，裝備此牌。\\n砂糖裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">混元熵增論</span>。\\n裝備有此牌的砂糖生成的<span style=\"color: #FFFFFFFF;\">大型風靈</span>已轉換成另一種元素後：我方造成的此類元素傷害+1。\\n（牌組中包含砂糖，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 215021,
+    "id": "lands_of_dandelion",
+    "type": "talent",
+    "name": "蒲公英的國土",
+    "requirement": "jean",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">琴</span>時，裝備此牌。\\n琴裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">蒲公英的國土</span>。\\n裝備有此牌的琴在場時，<span style=\"color: #FFFFFFFF;\">蒲公英領域</span>會使我方造成的<span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">風元素傷害</span></span>+1。\\n（牌組中包含琴，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 216011,
+    "id": "strategic_reserve",
+    "type": "talent",
+    "name": "儲之千日，用之一刻",
+    "requirement": "ningguang",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">凝光</span>時，裝備此牌。\\n凝光裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">儲之千日，用之一刻</span>。\\n裝備有此牌的凝光在場時，<span style=\"color: #FFFFFFFF;\">璇璣屏</span>會使我方造成的<span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">岩元素傷害</span></span>+1。\\n（牌組中包含凝光，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 216021,
+    "id": "i_got_your_back",
+    "type": "talent",
+    "name": "支援就交給我吧",
+    "requirement": "noelle",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">諾艾爾</span>時，裝備此牌。\\n諾艾爾裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">支援就交給我吧</span>。\\n裝備有此牌的諾艾爾生成的<span style=\"color: #FFFFFFFF;\">護體岩鎧</span>，會在諾艾爾使用<span style=\"color: #FFFFFFFF;\">普通攻擊</span>後，治療我方所有角色1點。（每回合1次）\\n（牌組中包含諾艾爾，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 217011,
+    "id": "floral_sidewinder",
+    "type": "talent",
+    "name": "飛葉迴斜",
+    "requirement": "collei",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">柯萊</span>時，裝備此牌。\\n柯萊裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">飛葉迴斜</span>。\\n裝備有此牌的柯萊使用了<span style=\"color: #FFFFFFFF;\">飛葉迴斜</span>的回合中，我方角色的技能引發<span style=\"color: #7EC236FF;\">草元素相關反應</span>後：造成1點<span style=\"color: #7EC236FF;\">草元素傷害</span>。（每回合1次）\\n（牌組中包含柯萊，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 222011,
+    "id": "streaming_surge",
+    "type": "talent",
+    "name": "百川奔流",
+    "requirement": "rhodeia_of_loch",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">純水精靈·洛蒂婭</span>時，裝備此牌。\\n純水精靈·洛蒂婭裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">百川奔流</span>。\\n裝備有此牌的純水精靈·洛蒂婭施放<span style=\"color: #FFFFFFFF;\">百川奔流</span>時，使我方所有召喚物<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>+1。\\n（牌組中包含純水精靈·洛蒂婭，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 222021,
+    "id": "mirror_cage",
+    "type": "talent",
+    "name": "鏡錮之籠",
+    "requirement": "mirror_maiden",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">愚人眾·藏鏡仕女</span>時，裝備此牌。\\n愚人眾·藏鏡仕女裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">鏡錮之籠</span>。\\n裝備有此牌的愚人眾·藏鏡仕女生成的<span style=\"color: #FFFFFFFF;\">水光破鏡</span>獲得以下效果：\\n初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>+1，並且會使所附屬角色切換到其他角色時元素骰費用+1。\\n（牌組中包含愚人眾·藏鏡仕女，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 223011,
+    "id": "paid_in_full",
+    "type": "talent",
+    "name": "悉數討回",
+    "requirement": "fatui_pyro_agent",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">愚人眾·火之債務處理人</span>時，裝備此牌。\\n愚人眾·火之債務處理人裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">悉數討回</span>。\\n裝備有此牌的愚人眾·火之債務處理人生成的<span style=\"color: #FFFFFFFF;\">潛行</span>獲得以下效果：\\n初始<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>+1，並且使所附屬角色造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>變為<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n（牌組中包含愚人眾·火之債務處理人，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 225011,
+    "id": "transcendent_automaton",
+    "type": "talent",
+    "name": "機巧神通",
+    "requirement": "maguu_kenki",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">魔偶劍鬼</span>時，裝備此牌。\\n魔偶劍鬼裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">機巧神通</span>。\\n裝備有此牌的魔偶劍鬼施放<span style=\"color: #FFFFFFFF;\">機巧神通</span>後，我方切換到後一個角色；施放<span style=\"color: #FFFFFFFF;\">機巧神通</span>後，我方切換到前一個角色。\\n（牌組中包含魔偶劍鬼，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 226011,
+    "id": "stonehide_reforged",
+    "type": "talent",
+    "name": "重鑄：岩盔",
+    "requirement": "stonehide_lawachurl",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">丘丘岩盔王</span>時，裝備此牌。\\n丘丘岩盔王裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">重鑄：岩盔</span>。\\n裝備有此牌的丘丘岩盔王擊倒敵方角色後；丘丘岩盔王重新附屬<span style=\"color: #FFFFFFFF;\">岩盔</span>和<span style=\"color: #FFFFFFFF;\">堅岩之力</span>。\\n（牌組中包含丘丘岩盔王，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 227011,
+    "id": "proliferating_spores",
+    "type": "talent",
+    "name": "孢子增殖",
+    "requirement": "jadeplume_terrorshroom",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">翠翎恐蕈</span>時，裝備此牌。\\n翠翎恐蕈裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">孢子增殖</span>。\\n裝備有此牌的翠翎恐蕈，可累積的「活化激能」層數+1。\\n（牌組中包含翠翎恐蕈，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 311101,
+    "id": "magic_guide",
+    "type": "weapon",
+    "name": "魔導緒論",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「法器」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311102,
+    "id": "sacrificial_fragments",
+    "type": "weapon",
+    "name": "祭禮殘章",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素戰技」後：</span>生成1個此角色類型的元素骰。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「法器」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311103,
+    "id": "skyward_atlas",
+    "type": "weapon",
+    "name": "天空之卷",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">每回合1次：</span>角色使用「普通攻擊」造成的傷害額外+1。\\n（<span style=\"color: #FFFFFFFF;\">「法器」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311201,
+    "id": "raven_bow",
+    "type": "weapon",
+    "name": "鴉羽弓",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「弓」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311202,
+    "id": "sacrificial_bow",
+    "type": "weapon",
+    "name": "祭禮弓",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素戰技」後：</span>生成1個此角色類型的元素骰。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「弓」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311203,
+    "id": "skyward_harp",
+    "type": "weapon",
+    "name": "天空之翼",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">每回合1次：</span>角色使用「普通攻擊」造成的傷害額外+1。\\n（<span style=\"color: #FFFFFFFF;\">「弓」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311301,
+    "id": "white_iron_greatsword",
+    "type": "weapon",
+    "name": "白鐵大劍",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「雙手劍」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311302,
+    "id": "sacrificial_greatsword",
+    "type": "weapon",
+    "name": "祭禮大劍",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素戰技」後：</span>生成1個此角色類型的元素骰。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「雙手劍」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311303,
+    "id": "wolfs_gravestone",
+    "type": "weapon",
+    "name": "狼的末路",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n攻擊剩餘生命值不多於6的目標時，傷害額外+2。\\n（<span style=\"color: #FFFFFFFF;\">「雙手劍」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311401,
+    "id": "white_tassel",
+    "type": "weapon",
+    "name": "白纓槍",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311402,
+    "id": "lithic_spear",
+    "type": "weapon",
+    "name": "千岩長槍",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>\\n入場時：隊伍中每有一名「璃月」角色，此牌就為附屬的角色提供<span style=\"color: #FFFFFFFF;\">1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span></span>。（最多3點）\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311403,
+    "id": "skyward_spine",
+    "type": "weapon",
+    "name": "天空之脊",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">每回合1次：</span>角色使用「普通攻擊」造成的傷害額外+1。\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311501,
+    "id": "travelers_handy_sword",
+    "type": "weapon",
+    "name": "旅行劍",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n（<span style=\"color: #FFFFFFFF;\">「單手劍」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311502,
+    "id": "sacrificial_sword",
+    "type": "weapon",
+    "name": "祭禮劍",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素戰技」後：</span>生成1個此角色類型的元素骰。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「單手劍」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 311503,
+    "id": "aquila_favonia",
+    "type": "weapon",
+    "name": "風鷹劍",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">對方使用技能後：</span>如果所附屬角色為「出戰角色」，則治療該角色1點。（每回合至多2次）\\n（<span style=\"color: #FFFFFFFF;\">「單手劍」角色</span>才能裝備。角色最多裝備1件「武器」）"
+    }
+  },
+  {
+    "_id": 312001,
+    "id": "adventurers_bandana",
+    "type": "artifact",
+    "name": "冒險家頭帶",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用「普通攻擊」後：</span>治療自身1點。（每回合至多3次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312002,
+    "id": "lucky_dogs_silver_circlet",
+    "type": "artifact",
+    "name": "幸運兒銀冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用「元素戰技」後：</span>治療自身2點。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312003,
+    "id": "traveling_doctors_handkerchief",
+    "type": "artifact",
+    "name": "遊醫的方巾",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用「元素爆發」後：</span>治療所有我方角色1點。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312004,
+    "id": "gamblers_earrings",
+    "type": "artifact",
+    "name": "賭徒的耳環",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">敵方角色被擊倒後：</span>如果所附屬角色為「出戰角色」，則生成2個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">萬能元素</span>。\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312005,
+    "id": "instructors_cap",
+    "type": "artifact",
+    "name": "教官的帽子",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色引發元素反應後：</span>生成1個此角色元素類型的元素骰。（每回合至多3次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312006,
+    "id": "exiles_circlet",
+    "type": "artifact",
+    "name": "流放者頭冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用元素爆發後：</span>所有我方後臺角色獲得1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312101,
+    "id": "broken_rimes_echo",
+    "type": "artifact",
+    "name": "破冰踏雪的回音",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #99FFFFFF;\">冰元素</span>。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312102,
+    "id": "blizzard_strayer",
+    "type": "artifact",
+    "name": "冰風迷途的勇士",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #99FFFFFF;\">冰元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">擲骰階段：</span>2個元素骰初始總是擲出<span style=\"color: #99FFFFFF;\">冰元素</span>。\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312201,
+    "id": "wine-stained_tricorne",
+    "type": "artifact",
+    "name": "酒漬船帽",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #80C0FFFF;\">水元素</span>。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312202,
+    "id": "heart_of_depth",
+    "type": "artifact",
+    "name": "沉淪之心",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #80C0FFFF;\">水元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">擲骰階段：</span>2個元素骰初始總是擲出<span style=\"color: #80C0FFFF;\">水元素</span>。\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312301,
+    "id": "witchs_scorching_hat",
+    "type": "artifact",
+    "name": "焦灼的魔女帽",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #FF9999FF;\">火元素</span>。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312302,
+    "id": "crimson_witch_of_flames",
+    "type": "artifact",
+    "name": "熾烈的炎之魔女",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #FF9999FF;\">火元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">擲骰階段：</span>2個元素骰初始總是擲出<span style=\"color: #FF9999FF;\">火元素</span>。\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312401,
+    "id": "thunder_summoners_crown",
+    "type": "artifact",
+    "name": "喚雷的頭冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #FFACFFFF;\">雷元素</span>。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312402,
+    "id": "thundering_fury",
+    "type": "artifact",
+    "name": "如雷的盛怒",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #FFACFFFF;\">雷元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">擲骰階段：</span>2個元素骰初始總是擲出<span style=\"color: #FFACFFFF;\">雷元素</span>。\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312501,
+    "id": "viridescent_venerers_diadem",
+    "type": "artifact",
+    "name": "翠綠的獵人之冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #80FFD7FF;\">風元素</span>。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312502,
+    "id": "viridescent_venerer",
+    "type": "artifact",
+    "name": "翠綠之影",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #80FFD7FF;\">風元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">擲骰階段：</span>2個元素骰初始總是擲出<span style=\"color: #80FFD7FF;\">風元素</span>。\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312601,
+    "id": "mask_of_solitude_basalt",
+    "type": "artifact",
+    "name": "不動玄石之相",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #FFE699FF;\">岩元素</span>。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312602,
+    "id": "archaic_petra",
+    "type": "artifact",
+    "name": "悠古的磐岩",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #FFE699FF;\">岩元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">擲骰階段：</span>2個元素骰初始總是擲出<span style=\"color: #FFE699FF;\">岩元素</span>。\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312701,
+    "id": "laurel_coronet",
+    "type": "artifact",
+    "name": "月桂的寶冠",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #99FF88FF;\">草元素</span>。（每回合1次）\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 312702,
+    "id": "deepwood_memories",
+    "type": "artifact",
+    "name": "深林的記憶",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色使用技能或裝備「天賦」時：</span>少花費1個<span style=\"color: #99FF88FF;\">草元素</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\">擲骰階段：</span>2個元素骰初始總是擲出<span style=\"color: #99FF88FF;\">草元素</span>。\\n（角色最多裝備1件「聖遺物」）"
+    }
+  },
+  {
+    "_id": 321001,
+    "id": "liyue_harbor_wharf",
+    "type": "place",
+    "name": "璃月港口",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>抽2張牌。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2"
+    }
+  },
+  {
+    "_id": 321002,
+    "id": "knights_of_favonius_library",
+    "type": "place",
+    "name": "騎士團圖書館",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">入場時：</span>選擇任意元素骰重擲。\\n<span style=\"color: #FFFFFFFF;\">擲骰階段：</span>獲得額外一次重擲機會。"
+    }
+  },
+  {
+    "_id": 321003,
+    "id": "jade_chamber",
+    "type": "place",
+    "name": "群玉閣",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">擲骰階段：</span>2個元素骰初始總是擲出我方出戰角色類型的元素。"
+    }
+  },
+  {
+    "_id": 321004,
+    "id": "dawn_winery",
+    "type": "place",
+    "name": "晨曦酒莊",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">我方執行「切換角色」行動時：</span>少花費1個元素骰。（每回合1次）"
+    }
+  },
+  {
+    "_id": 321005,
+    "id": "wangshu_inn",
+    "type": "place",
+    "name": "望舒客棧",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>治療受傷最多的我方後臺角色2點。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+    }
+  },
+  {
+    "_id": 321006,
+    "id": "favonius_cathedral",
+    "type": "place",
+    "name": "西風大教堂",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>治療我方出戰角色2點。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+    }
+  },
+  {
+    "_id": 322001,
+    "id": "paimon",
+    "type": "ally",
+    "name": "派蒙",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">行動階段開始時：</span>生成2點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">萬能元素</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+    }
+  },
+  {
+    "_id": 322002,
+    "id": "katheryne",
+    "type": "ally",
+    "name": "凱瑟琳",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">我方執行「切換角色」行動時：</span>將此次切換視為「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">快速行動</span>」而非「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>」。（每回合1次）"
+    }
+  },
+  {
+    "_id": 322003,
+    "id": "timaeus",
+    "type": "ally",
+    "name": "蒂瑪烏斯",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "入場時附帶2個「合成素材」。\\n<span style=\"color: #FFFFFFFF;\">結束階段：</span>補充1個「合成素材」。\\n<span style=\"color: #FFFFFFFF;\">打出「聖遺物」手牌時：</span>如可能，則支付等同於「聖遺物」總費用數量的「合成素材」，以免費裝備此「聖遺物」。（每回合1次）"
+    }
+  },
+  {
+    "_id": 322004,
+    "id": "wagner",
+    "type": "ally",
+    "name": "瓦格納",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "入場時附帶2個「鍛造原胚」。\\n<span style=\"color: #FFFFFFFF;\">結束階段：</span>補充1個「鍛造原胚」。\\n<span style=\"color: #FFFFFFFF;\">打出「武器」手牌時：</span>如可能，則支付等同於「武器」總費用數量的「鍛造原胚」，以免費裝備此「武器」。（每回合1次）"
+    }
+  },
+  {
+    "_id": 322005,
+    "id": "chef_mao",
+    "type": "ally",
+    "name": "卯師傅",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">打出「料理」事件牌後：</span>生成1個隨機基礎元素骰。（每回合1次）"
+    }
+  },
+  {
+    "_id": 322006,
+    "id": "tubby",
+    "type": "ally",
+    "name": "阿圓",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">打出「場地」支援牌時：</span>少花費2個元素骰。（每回合1次）"
+    }
+  },
+  {
+    "_id": 322007,
+    "id": "timmie",
+    "type": "ally",
+    "name": "提米",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">每回合自動觸發1次：</span>此牌累積<span style=\"color: #FFFFFFFF;\">1隻「鴿子」</span>。\\n如果此牌已累積<span style=\"color: #FFFFFFFF;\">3隻「鴿子」</span>，則棄置此牌：抽1張牌，生成一點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">萬能元素</span>。"
+    }
+  },
+  {
+    "_id": 322008,
+    "id": "liben",
+    "type": "ally",
+    "name": "立本",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>收集我方未使用的元素骰（每種最多1個）。\\n<span style=\"color: #FFFFFFFF;\">行動階段開始時：</span>如果此牌已收集3個元素骰，則抽2張牌，生成2點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">萬能元素</span>，然後棄置此牌。"
+    }
+  },
+  {
+    "_id": 322009,
+    "id": "chang_the_ninth",
+    "type": "ally",
+    "name": "常九爺",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">雙方角色使用技能後：</span>如果造成了<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透傷害</span>或引發了<span style=\"color: #FFFFFFFF;\">元素反應</span>，此牌累積<span style=\"color: #FFFFFFFF;\">1個「靈感」</span>。\\n如果此牌已累積<span style=\"color: #FFFFFFFF;\">3個「靈感」</span>，棄置此牌：抽2張牌。"
+    }
+  },
+  {
+    "_id": 322010,
+    "id": "ellin",
+    "type": "ally",
+    "name": "艾琳",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用本回合使用過的技能時：</span>少花費1個元素骰。（每回合1次）"
+    }
+  },
+  {
+    "_id": 322011,
+    "id": "iron_tongue_tian",
+    "type": "ally",
+    "name": "田鐵嘴",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">結束階段：</span>我方一名充能未滿的角色獲得1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（出戰角色優先）\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+    }
+  },
+  {
+    "_id": 322012,
+    "id": "liu_su",
+    "type": "ally",
+    "name": "劉蘇",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">我方切換角色後：</span>如果切換到的角色沒有<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>，則使該角色獲得1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（每回合1次）\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
+    }
+  },
+  {
+    "_id": 323001,
+    "id": "parametric_transformer",
+    "type": "item",
+    "name": "參數質變儀",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">雙方角色使用技能後：</span>如果造成了元素傷害，此牌累積<span style=\"color: #FFFFFFFF;\">1個「質變進度」</span>。\\n當此牌已累積<span style=\"color: #FFFFFFFF;\">3個「質變進度」</span>時，棄置此牌：生成3個不同的基礎元素骰子。"
+    }
+  },
+  {
+    "_id": 323002,
+    "id": "nre",
+    "type": "item",
+    "name": "隨身營養袋",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">入場時：</span>從牌組中隨機抽取1張「料理」事件。\\n<span style=\"color: #FFFFFFFF;\">我方打出「料理」事件牌時：</span>從牌組中隨機抽取1張「料理」事件。（每回合1次）"
+    }
+  },
+  {
+    "_id": 331101,
+    "id": "elemental_resonance_woven_ice",
+    "type": "resonance",
+    "name": "元素共鳴：交織之冰",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [],
+      "desc": "生成1個<span style=\"color: #99FFFFFF;\">冰元素骰</span>。\\n（牌組包含至少2個<span style=\"color: #99FFFFFF;\">冰元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331102,
+    "id": "elemental_resonance_shattering_ice",
+    "type": "resonance",
+    "name": "元素共鳴：粉碎之冰",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 1
+        }
+      ],
+      "desc": "本回合中，我方目前出戰角色下一次造成的傷害+2。\\n（牌組包含至少2個<span style=\"color: #99FFFFFF;\">冰元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331201,
+    "id": "elemental_resonance_woven_waters",
+    "type": "resonance",
+    "name": "元素共鳴：交織之水",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [],
+      "desc": "生成1個<span style=\"color: #80C0FFFF;\">水元素骰</span>。\\n（牌組包含至少2個<span style=\"color: #80C0FFFF;\">水元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331202,
+    "id": "elemental_resonance_soothing_water",
+    "type": "resonance",
+    "name": "元素共鳴：癒療之水",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 1
+        }
+      ],
+      "desc": "治療我方出戰角色2點。然後，治療所有我方後臺角色1點。\\n（牌組包含至少2個<span style=\"color: #80C0FFFF;\">水元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331301,
+    "id": "elemental_resonance_woven_flames",
+    "type": "resonance",
+    "name": "元素共鳴：交織之火",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [],
+      "desc": "生成1個<span style=\"color: #FF9999FF;\">火元素骰</span>。\\n（牌組包含至少2個<span style=\"color: #FF9999FF;\">火元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331302,
+    "id": "elemental_resonance_fervent_flames",
+    "type": "resonance",
+    "name": "元素共鳴：熱誠之火",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 1
+        }
+      ],
+      "desc": "本回合中，我方目前出戰角色下一次引發<span style=\"color: #FF9999FF;\">火元素相關反應</span>時，造成的傷害+3。\\n（牌組包含至少2個<span style=\"color: #FF9999FF;\">火元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331401,
+    "id": "elemental_resonance_woven_thunder",
+    "type": "resonance",
+    "name": "元素共鳴：交織之雷",
+    "requirement": "electro",
+    "skills": {
+      "cost": [],
+      "desc": "生成1個<span style=\"color: #FFACFFFF;\">雷元素骰</span>。\\n（牌組包含至少2個<span style=\"color: #FFACFFFF;\">雷元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331402,
+    "id": "elemental_resonance_high_voltage",
+    "type": "resonance",
+    "name": "元素共鳴：強能之雷",
+    "requirement": "electro",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 1
+        }
+      ],
+      "desc": "我方一名充能未滿的角色獲得1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（出戰角色優先）\\n（牌組包含至少2個<span style=\"color: #FFACFFFF;\">雷元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331501,
+    "id": "elemental_resonance_woven_winds",
+    "type": "resonance",
+    "name": "元素共鳴：交織之風",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [],
+      "desc": "生成1個<span style=\"color: #80FFD7FF;\">風元素骰</span>。\\n（牌組包含至少2個<span style=\"color: #80FFD7FF;\">風元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331502,
+    "id": "elemental_resonance_impetuous_winds",
+    "type": "resonance",
+    "name": "元素共鳴：迅捷之風",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 1
+        }
+      ],
+      "desc": "切換到目標角色，並生成1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">萬能元素</span>。\\n（牌組包含至少2個<span style=\"color: #80FFD7FF;\">風元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331601,
+    "id": "elemental_resonance_woven_stone",
+    "type": "resonance",
+    "name": "元素共鳴：交織之岩",
+    "requirement": "geo",
+    "skills": {
+      "cost": [],
+      "desc": "生成1個<span style=\"color: #FFE699FF;\">岩元素骰</span>。\\n（牌組包含至少2個<span style=\"color: #FFE699FF;\">岩元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331602,
+    "id": "elemental_resonance_enduring_rock",
+    "type": "resonance",
+    "name": "元素共鳴：堅定之岩",
+    "requirement": "geo",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        }
+      ],
+      "desc": "本回合中，我方角色下一次造成<span style=\"color: #FFE699FF;\">岩元素傷害</span>後：如果我方存在提供「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span>」的出戰狀態，則為一個此類出戰狀態補充3點「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span>」。\\n（牌組包含至少2個<span style=\"color: #FFE699FF;\">岩元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331701,
+    "id": "elemental_resonance_woven_weeds",
+    "type": "resonance",
+    "name": "元素共鳴：交織之草",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [],
+      "desc": "生成1個<span style=\"color: #99FF88FF;\">草元素骰</span>。\\n（牌組包含至少2個<span style=\"color: #99FF88FF;\">草元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 331702,
+    "id": "elemental_resonance_sprawling_greenery",
+    "type": "resonance",
+    "name": "元素共鳴：蔓生之草",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 1
+        }
+      ],
+      "desc": "本回合中，我方下一次引發元素反應時，造成的傷害+2。\\n使我方場上的<span style=\"color: #FFFFFFFF;\">燃燒烈焰、草原核、和激化領域</span>「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>」+1。\\n（牌組包含至少2個<span style=\"color: #99FF88FF;\">草元素</span>角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 332001,
+    "id": "the_bestest_travel_companion!",
+    "type": "none",
+    "name": "最好的夥伴！",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "將所花費的元素骰轉換為2個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">萬能元素</span>。"
+    }
+  },
+  {
+    "_id": 332002,
+    "id": "changing_shifts",
+    "type": "none",
+    "name": "換班時間",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">我方下次執行「切換角色」行動時：</span>少花費1個元素骰。"
+    }
+  },
+  {
+    "_id": 332003,
+    "id": "toss-up",
+    "type": "none",
+    "name": "一擲乾坤",
+    "skills": {
+      "cost": [],
+      "desc": "選擇任意元素骰<span style=\"color: #FFFFFFFF;\">重擲</span>，可重擲2次。"
+    }
+  },
+  {
+    "_id": 332004,
+    "id": "strategize",
+    "type": "none",
+    "name": "運籌帷幄",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "抽2張牌。"
+    }
+  },
+  {
+    "_id": 332005,
+    "id": "i_havent_lost_yet!",
+    "type": "none",
+    "name": "本大爺還沒有輸！",
+    "skills": {
+      "cost": [],
+      "desc": "本回合有我方角色被擊倒，才能打出：\\n生成1個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">萬能元素</span>，我方目前出戰角色獲得1個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。"
+    }
+  },
+  {
+    "_id": 332006,
+    "id": "leave_it_to_me!",
+    "type": "none",
+    "name": "交給我吧！",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">我方下次執行「切換角色」行動時：</span>將此次切換視為「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">快速行動</span>」而非「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>」。"
+    }
+  },
+  {
+    "_id": 332007,
+    "id": "when_the_crane_returned",
+    "type": "none",
+    "name": "鶴歸之時",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">我方下一次使用技能後：</span>將下一個我方後臺角色切換到場上。"
+    }
+  },
+  {
+    "_id": 332008,
+    "id": "starsigns",
+    "type": "none",
+    "name": "星天之兆",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "我方目前出戰角色<span style=\"color: #FFFFFFFF;\">獲得1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span></span>。"
+    }
+  },
+  {
+    "_id": 332009,
+    "id": "calxs_arts",
+    "type": "none",
+    "name": "白堊之術",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "從最多2個我方後臺角色身上，轉移1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>到我方出戰角色。"
+    }
+  },
+  {
+    "_id": 332010,
+    "id": "master_of_weaponry",
+    "type": "none",
+    "name": "諸武精通",
+    "skills": {
+      "cost": [],
+      "desc": "將一個裝備在我方角色的「武器」裝備牌，轉移給另一個武器類型相同的我方角色。"
+    }
+  },
+  {
+    "_id": 332011,
+    "id": "blessing_of_the_divine_relics_installation",
+    "type": "none",
+    "name": "神寶遷宮祝詞",
+    "skills": {
+      "cost": [],
+      "desc": "將一個裝備在我方角色的「聖遺物」裝備牌，轉移給另一個我方角色。"
+    }
+  },
+  {
+    "_id": 332012,
+    "id": "quick_knit",
+    "type": "none",
+    "name": "快快縫補術",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "選擇一個我方「召喚物」，使其「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>」+1。"
+    }
+  },
+  {
+    "_id": 332013,
+    "id": "send_off",
+    "type": "none",
+    "name": "送你一程",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "選擇一個敵方「召喚物」，將其消滅。"
+    }
+  },
+  {
+    "_id": 332014,
+    "id": "guardians_oath",
+    "type": "none",
+    "name": "護法之誓",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 4
+        }
+      ],
+      "desc": "消滅所有「召喚物」。（不分敵我！）"
+    }
+  },
+  {
+    "_id": 332015,
+    "id": "abyssal_summons",
+    "type": "none",
+    "name": "深淵的呼喚",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "召喚一個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">隨機「丘丘人」召喚物</span>！\\n（牌組包含至少2個「魔物」角色，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 333001,
+    "id": "jueyun_guoba",
+    "type": "food",
+    "name": "絕雲鍋巴",
+    "skills": {
+      "cost": [],
+      "desc": "本回合中，目標角色下一次<span style=\"color: #FFFFFFFF;\">普通攻擊</span>造成的傷害+1。\\n（每回合每個角色最多食用1次「料理」）"
+    }
+  },
+  {
+    "_id": 333002,
+    "id": "adeptus_temptation",
+    "type": "food",
+    "name": "仙跳牆",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "本回合中，目標角色下一次<span style=\"color: #FFFFFFFF;\">元素爆發</span>造成的傷害+3。\\n（每回合每個角色最多食用1次「料理」）"
+    }
+  },
+  {
+    "_id": 333003,
+    "id": "lotus_flower_crisp",
+    "type": "food",
+    "name": "蓮花酥",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "本回合中，目標角色下次受到的傷害-3。\\n（每回合中每個角色最多食用1次「料理」）"
+    }
+  },
+  {
+    "_id": 333004,
+    "id": "northern_smoked_chicken",
+    "type": "food",
+    "name": "北地煙燻雞",
+    "skills": {
+      "cost": [],
+      "desc": "本回合中，目標角色下一次<span style=\"color: #FFFFFFFF;\">普通攻擊</span>少花費1<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>。\\n（每回合每個角色最多食用1次「料理」）"
+    }
+  },
+  {
+    "_id": 333005,
+    "id": "sweet_madame",
+    "type": "food",
+    "name": "甜甜花釀雞",
+    "skills": {
+      "cost": [],
+      "desc": "治療目標角色1點。\\n（每回合每個角色最多食用1次「料理」）"
+    }
+  },
+  {
+    "_id": 333006,
+    "id": "mondstadt_hash_brown",
+    "type": "food",
+    "name": "蒙德薯餅",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "治療目標角色2點。\\n（每回合每個角色最多食用1次「料理」）"
+    }
+  },
+  {
+    "_id": 333007,
+    "id": "mushroom_pizza",
+    "type": "food",
+    "name": "烤蘑菇披薩",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "治療目標角色1點，兩回合內結束階段再治療此角色1點。\\n（每回合每個角色最多食用1次「料理」）"
+    }
+  },
+  {
+    "_id": 333008,
+    "id": "minty_meat_rolls",
+    "type": "food",
+    "name": "獸肉薄荷捲",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "目標角色在本回合結束前，所有<span style=\"color: #FFFFFFFF;\">普通攻擊</span>都少花費1<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>。\\n（每回合每個角色最多食用1次「料理」）"
+    }
+  }
+]

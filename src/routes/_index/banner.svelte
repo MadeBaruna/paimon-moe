@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    tartaglia: {
-      name: 'Tartaglia',
+    kamisato_ayato: {
+      name: 'Kamisato Ayato',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    yae_miko: {
-      name: 'Yae Miko',
+    raiden_shogun: {
+      name: 'Raiden Shogun',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300039;
-  const image = 'tartaglia_yae.png';
+  const bannerId = 300041;
+  const image = 'ayato_raiden.png';
   const width = 800;
-  const height = 595;
+  const height = 481;
 
   let loading = true;
   let user = '';

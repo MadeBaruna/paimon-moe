@@ -9559,6 +9559,7 @@ export const weaponList = {
     name: 'A Thousand Floating Dreams',
     rarity: 5,
     atk: 44,
+    source: 'Wish',
     secondary: 'Elemental Mastery',
     type: weapons.catalyst,
     ascension: [
@@ -9663,6 +9664,232 @@ export const weaponList = {
           },
         ],
         mora: 65000,
+      },
+    ],
+  },
+  tulaytullahs_remembrance: {
+    id: 'tulaytullahs_remembrance',
+    name: "Tulaytullah's Remembrance",
+    rarity: 5,
+    atk: 48,
+    source: 'Wish',
+    secondary: 'CRIT Damage',
+    type: weapons.catalyst,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.echo_of_scorching_might,
+            amount: 5,
+          },
+          {
+            item: itemList.inactivated_fungal_nucleus,
+            amount: 5,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.remnant_glow_of_scorching_might,
+            amount: 5,
+          },
+          {
+            item: itemList.inactivated_fungal_nucleus,
+            amount: 18,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.remnant_glow_of_scorching_might,
+            amount: 9,
+          },
+          {
+            item: itemList.dormant_fungal_nucleus,
+            amount: 9,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_scorching_might,
+            amount: 5,
+          },
+          {
+            item: itemList.dormant_fungal_nucleus,
+            amount: 18,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_scorching_might,
+            amount: 9,
+          },
+          {
+            item: itemList.robust_fungal_nucleus,
+            amount: 14,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.olden_days_of_scorching_might,
+            amount: 6,
+          },
+          {
+            item: itemList.robust_fungal_nucleus,
+            amount: 27,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  toukabou_shigure: {
+    id: 'toukabou_shigure',
+    name: 'Toukabou Shigure',
+    rarity: 4,
+    atk: 42,
+    source: 'Akitsu Kimodameshi Event',
+    secondary: 'Elemental Mastery',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.narukamis_wisdom,
+            amount: 3,
+          },
+          {
+            item: itemList.damaged_prism,
+            amount: 3,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_joy,
+            amount: 3,
+          },
+          {
+            item: itemList.damaged_prism,
+            amount: 12,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_joy,
+            amount: 6,
+          },
+          {
+            item: itemList.turbid_prism,
+            amount: 6,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_affection,
+            amount: 3,
+          },
+          {
+            item: itemList.turbid_prism,
+            amount: 12,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_affection,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_prism,
+            amount: 9,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_valor,
+            amount: 4,
+          },
+          {
+            item: itemList.radiant_prism,
+            amount: 18,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
       },
     ],
   },

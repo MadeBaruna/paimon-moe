@@ -461,7 +461,7 @@
                     : characters[pull.id].rarity === 4
                     ? 'text-rare-from'
                     : 'text-primary'
-                }`}>{characters[pull.id].name}</td
+                }`}>{$t(characters[pull.id].name)}</td
               >
             {:else if pull.type === 'weapon'}
               <td
@@ -471,7 +471,7 @@
                     : weaponList[pull.id].rarity === 4
                     ? 'text-rare-from'
                     : 'text-primary'
-                }`}>{weaponList[pull.id].name}</td
+                }`}>{$t(weaponList[pull.id].name)}</td
               >
             {:else if pull.type === 'unknown_3_star'}
               <td class="border-b border-gray-700 py-1 pl-2 font-semibold text-primary">Unknown</td>

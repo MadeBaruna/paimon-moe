@@ -1041,7 +1041,7 @@ export const characters = {
             amount: null,
           },
           {
-            item: itemList.redcrest,
+            item: itemList.henna_berry,
             amount: 3,
           },
           {
@@ -1062,7 +1062,7 @@ export const characters = {
             amount: 2,
           },
           {
-            item: itemList.redcrest,
+            item: itemList.henna_berry,
             amount: 10,
           },
           {
@@ -1083,7 +1083,7 @@ export const characters = {
             amount: 4,
           },
           {
-            item: itemList.redcrest,
+            item: itemList.henna_berry,
             amount: 20,
           },
           {
@@ -1104,7 +1104,7 @@ export const characters = {
             amount: 8,
           },
           {
-            item: itemList.redcrest,
+            item: itemList.henna_berry,
             amount: 30,
           },
           {
@@ -1125,7 +1125,7 @@ export const characters = {
             amount: 12,
           },
           {
-            item: itemList.redcrest,
+            item: itemList.henna_berry,
             amount: 45,
           },
           {
@@ -1146,7 +1146,7 @@ export const characters = {
             amount: 20,
           },
           {
-            item: itemList.redcrest,
+            item: itemList.henna_berry,
             amount: 60,
           },
           {
@@ -2178,6 +2178,151 @@ export const characters = {
       boss: itemList.dragon_lords_crown,
     },
     element: elements.cryo,
+  },
+  faruzan: {
+    id: 'faruzan',
+    name: 'Faruzan',
+    rarity: 4,
+    weapon: weapons.bow,
+    stats: {
+      hp: 9570,
+      atk: 196,
+      def: 628,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.henna_berry,
+            amount: 3,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 2,
+          },
+          {
+            item: itemList.henna_berry,
+            amount: 10,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 4,
+          },
+          {
+            item: itemList.henna_berry,
+            amount: 20,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 8,
+          },
+          {
+            item: itemList.henna_berry,
+            amount: 30,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 12,
+          },
+          {
+            item: itemList.henna_berry,
+            amount: 45,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 20,
+          },
+          {
+            item: itemList.henna_berry,
+            amount: 60,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.faded_red_satin, itemList.trimmed_red_silk, itemList.rich_red_brocade],
+      book: [itemList.teachings_of_admonition, itemList.guide_to_admonition, itemList.philosophies_of_admonition],
+      boss: itemList.puppet_strings,
+    },
+    element: elements.anemo,
   },
   fischl: {
     id: 'fischl',
@@ -7425,6 +7570,151 @@ export const characters = {
       material: [itemList.slime_condensate, itemList.slime_secretions, itemList.slime_concentrate],
       book: [itemList.teachings_of_ballad, itemList.guide_to_ballad, itemList.philosophies_of_ballad],
       boss: itemList.tail_of_boreas,
+    },
+    element: elements.anemo,
+  },
+  wanderer: {
+    id: 'wanderer',
+    name: 'Wanderer',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 10164,
+      atk: 328,
+      def: 607,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 3,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 2,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 10,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 4,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 20,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 8,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 30,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 12,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 45,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.perpetual_caliber,
+            amount: 20,
+          },
+          {
+            item: itemList.rukkhashava_mushrooms,
+            amount: 60,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.old_handguard, itemList.kageuchi_handguard, itemList.famed_handguard],
+      book: [itemList.teachings_of_praxis, itemList.guide_to_praxis, itemList.philosophies_of_praxis],
+      boss: itemList.dakas_bell,
     },
     element: elements.anemo,
   },

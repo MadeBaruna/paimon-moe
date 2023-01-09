@@ -1,0 +1,3593 @@
+[
+  {
+    "_id": 1101,
+    "id": "ganyu",
+    "type": "character",
+    "name": "Ganyu",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11011,
+        "type": "Attacco normale",
+        "name": "Arciere di Liutian",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11012,
+        "type": "Abilità elementale",
+        "name": "Scia del Qilin",
+        "desc": "Infligge 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>, crea un <span style=\"color: #FFFFFFFF;\">Loto di ghiaccio</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111012,
+          "id": "ice_lotus",
+          "name": "Loto di ghiaccio",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio attivo subisce DAN: </span>riduce di 1 i DAN subiti.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 11013,
+        "type": "Attacco normale",
+        "name": "Freccia Fiocco di ghiaccio",
+        "desc": "Infligge 3 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>, infligge <span style=\"color: #FFFFFFFF;\">2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span></span> a tutti i personaggi inattivi avversari.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 5
+          }
+        ]
+      },
+      {
+        "_id": 11014,
+        "type": "Tripudio elementale",
+        "name": "Pioggia celestiale",
+        "desc": "Infligge 1 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>, infligge <span style=\"color: #FFFFFFFF;\">1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span></span> a tutti i personaggi inattivi avversari, invoca 1 <span style=\"color: #FFFFFFFF;\">Perla sacra di Cryo</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111011,
+          "id": "sacred_cryo_pearl",
+          "name": "Perla sacra di Cryo",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span> e 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span> a tutti i personaggi inattivi avversari.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1102,
+    "id": "diona",
+    "type": "character",
+    "name": "Diona",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 11021,
+        "type": "Attacco normale",
+        "name": "Stile Kätzlein",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11022,
+        "type": "Abilità elementale",
+        "name": "Zampe glaciali",
+        "desc": "Infligge 2 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>, crea uno <span style=\"color: #FFFFFFFF;\">Scudo felino</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111021,
+          "id": "cat-claw_shield",
+          "name": "Scudo felino",
+          "desc": "Conferisce <span style=\"color: #FFFFFFFF;\">1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span></span> al tuo personaggio attivo."
+        }
+      },
+      {
+        "_id": 11023,
+        "type": "Tripudio elementale",
+        "name": "Miscela d'autore",
+        "desc": "Infligge 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>, cura questo personaggio di 2 punti, invoca <span style=\"color: #FFFFFFFF;\">Foschia ubriaca</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111023,
+          "id": "drunken_mist",
+          "name": "Foschia ubriaca",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span> e rigenera 2 PS al tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1103,
+    "id": "kaeya",
+    "type": "character",
+    "name": "Kaeya",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11031,
+        "type": "Attacco normale",
+        "name": "Tecnica cerimoniale",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11032,
+        "type": "Abilità elementale",
+        "name": "Attacco gelante",
+        "desc": "Infligge 3 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11033,
+        "type": "Tripudio elementale",
+        "name": "Valzer glaciale",
+        "desc": "Infligge 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>, crea una <span style=\"color: #FFFFFFFF;\">Stalattite</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111031,
+          "id": "icicle",
+          "name": "Stalattite",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Dopo aver cambiato personaggio:</span> infligge 2 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1104,
+    "id": "chongyun",
+    "type": "character",
+    "name": "Chongyun",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11041,
+        "type": "Attacco normale",
+        "name": "Assillo demoniaco",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11042,
+        "type": "Abilità elementale",
+        "name": "Gelo stratificato di Chonghua",
+        "desc": "Infligge 3 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>, genera un <span style=\"color: #FFFFFFFF;\">Campo di gelo Chonghua</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111041,
+          "id": "chonghua_frost_field",
+          "name": "Campo di gelo Chonghua",
+          "desc": "I <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti dai tuoi personaggi che usano la spada, la claymore o la lancia sono convertiti in <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 11043,
+        "type": "Tripudio elementale",
+        "name": "Stella squarcianuvole",
+        "desc": "Infligge 7 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1105,
+    "id": "kamisato_ayaka",
+    "type": "character",
+    "name": "Kamisato Ayaka",
+    "hp": 10,
+    "energy": 3,
+    "element": "cryo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 11051,
+        "type": "Attacco normale",
+        "name": "Arte Kamisato: Kabuki",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11052,
+        "type": "Abilità elementale",
+        "name": "Arte Kamisato: Hyouka",
+        "desc": "Infligge 3 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 11053,
+        "type": "Tripudio elementale",
+        "name": "Arte Kamisato: Soumetsu",
+        "desc": "Infligge 4 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>, invoca un <span style=\"color: #FFFFFFFF;\">Fiocco di ghiaccio Seki no Tou</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111051,
+          "id": "frostflake_seki_no_to",
+          "name": "Fiocco di ghiaccio Seki no Tou",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 11054,
+        "type": "Abilità passiva",
+        "name": "Arte Kamisato: Senho",
+        "desc": "(Passiva) Quando questo personaggio diventa personaggio attivo, ottiene <span style=\"color: #FFFFFFFF;\">Infusione di Cryo</span>.",
+        "cost": [],
+        "sub": {
+          "_id": 111052,
+          "id": "cryo_elemental_infusion",
+          "name": "Infusione di Cryo",
+          "desc": "I <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti dal personaggio associato sono convertiti in <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>.\\n(Dura fino alla fine del turno.)"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1201,
+    "id": "barbara",
+    "type": "character",
+    "name": "Barbara",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12011,
+        "type": "Attacco normale",
+        "name": "Sussurro d'acqua",
+        "desc": "Infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12012,
+        "type": "Abilità elementale",
+        "name": "Che lo spettacolo abbia inizio♪",
+        "desc": "Infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>, invoca un <span style=\"color: #FFFFFFFF;\">Cerchio melodioso</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112011,
+          "id": "melody_loop",
+          "name": "Cerchio melodioso",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> rigenera 1 PS a tutti i tuoi personaggi e il tuo personaggio attivo riceve <span style=\"color: #80C0FFFF;\">Applicazione di Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12013,
+        "type": "Tripudio elementale",
+        "name": "Miracolo fulgido♪",
+        "desc": "Cura 4 punti vita a tutti i personaggi che controlli.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1202,
+    "id": "xingqiu",
+    "type": "character",
+    "name": "Xingqiu",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12021,
+        "type": "Attacco normale",
+        "name": "Stile Guhua",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12022,
+        "type": "Abilità elementale",
+        "name": "Schermo di pioggia fatale",
+        "desc": "Infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>, questo personaggio riceve <span style=\"color: #80C0FFFF;\">Applicazione di Hydro</span> e crea una <span style=\"color: #FFFFFFFF;\">Spada della pioggia</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112021,
+          "id": "rain_sword",
+          "name": "Spada della pioggia",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio attivo subisce almeno 3 DAN: </span>riduce di 1 i DAN subiti.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12023,
+        "type": "Tripudio elementale",
+        "name": "Fendipioggia",
+        "desc": "Infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>, questo personaggio riceve <span style=\"color: #80C0FFFF;\">Applicazione di Hydro</span> e crea 1 <span style=\"color: #FFFFFFFF;\">Tecnica dell'iridescenza</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112022,
+          "id": "rainbow_bladework",
+          "name": "Tecnica dell'iridescenza",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio usa un attacco normale:</span> infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1203,
+    "id": "mona",
+    "type": "character",
+    "name": "Mona",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12031,
+        "type": "Attacco normale",
+        "name": "Increspatura del fato",
+        "desc": "Infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12032,
+        "type": "Abilità elementale",
+        "name": "Condanna riflessa",
+        "desc": "Infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>, invoca un <span style=\"color: #FFFFFFFF;\">Riflesso</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112031,
+          "id": "reflection",
+          "name": "Riflesso",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio attivo subisce DAN: </span>riduci di 1 i DAN subiti.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 1</span>.\\nQuando l'utilizzo viene consumato, questa carta non verrà rimossa.\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> rimuovi questa carta, infliggi 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>."
+        }
+      },
+      {
+        "_id": 12033,
+        "type": "Tripudio elementale",
+        "name": "Fantasma stellaris",
+        "desc": "Infligge 4 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span> e crea una <span style=\"color: #FFFFFFFF;\">Bolla illusoria</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112032,
+          "id": "illusory_bubble",
+          "name": "Bolla illusoria",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Infliggendo DAN da abilità:</span> rimuovi questo stato e raddoppi i DAN inflitti."
+        }
+      },
+      {
+        "_id": 12034,
+        "type": "Abilità passiva",
+        "name": "Torrente illusorio",
+        "desc": "(Passiva) <span style=\"color: #FFFFFFFF;\">Quando usi Cambia personaggio mentre Mona è il tuo personaggio attivo</span>, questo cambio è considerato come <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione rapida</span> invece che <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span> (una volta per turno).",
+        "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1301,
+    "id": "diluc",
+    "type": "character",
+    "name": "Diluc",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 13011,
+        "type": "Attacco normale",
+        "name": "Spada temprata",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13012,
+        "type": "Abilità elementale",
+        "name": "Assalto fiammante",
+        "desc": "Infligge 5 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>. Se nello stesso turno questa abilità è usata per 3 volte, infligge DAN +2.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13013,
+        "type": "Tripudio elementale",
+        "name": "Alba",
+        "desc": "Infligge 8 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>, questo personaggio ottiene <span style=\"color: #FFFFFFFF;\">Infusione di Pyro</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113011,
+          "id": "pyro_infusion",
+          "name": "Infusione di Pyro",
+          "desc": "I <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti dal personaggio associato sono convertiti in <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1302,
+    "id": "xiangling",
+    "type": "character",
+    "name": "Xiangling",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 13021,
+        "type": "Attacco normale",
+        "name": "Kung food",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13022,
+        "type": "Abilità elementale",
+        "name": "Guobattacco",
+        "desc": "Invoca 1 <span style=\"color: #FFFFFFFF;\">Guoba</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113021,
+          "id": "guoba",
+          "name": "Guoba",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 13023,
+        "type": "Tripudio elementale",
+        "name": "Pyronado",
+        "desc": "Infligge 2 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>, genera un <span style=\"color: #FFFFFFFF;\">Pyronado</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113022,
+          "id": "pyronado",
+          "name": "Pyronado",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio usa un'abilità:</span> infligge 2 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1303,
+    "id": "bennett",
+    "type": "character",
+    "name": "Bennett",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 13031,
+        "type": "Attacco normale",
+        "name": "Colpo di fortuna",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13032,
+        "type": "Abilità elementale",
+        "name": "Sovraccarico di passione",
+        "desc": "Infligge 3 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 13033,
+        "type": "Tripudio elementale",
+        "name": "Viaggio fantastico",
+        "desc": "Infligge 2 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>, crea un <span style=\"color: #FFFFFFFF;\">Campo d'ispirazione</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113031,
+          "id": "inspiration_field",
+          "name": "Campo d'ispirazione",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio usa un'abilità:</span> se ha almeno 7 PS, infligge DAN +2.\\nDopo che il conteggio dei DAN delle abilità è stato completato, se i suoi PS non sono maggiori di 6, recupera 2 PS.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1305,
+    "id": "yoimiya",
+    "type": "character",
+    "name": "Yoimiya",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 13051,
+        "type": "Attacco normale",
+        "name": "Vampata pirotecnica",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13052,
+        "type": "Abilità elementale",
+        "name": "Danza del fuoco Niwabi",
+        "desc": "Questo personaggio ottiene l'effetto <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span>. (Questa abilità non conferisce carica.)",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          }
+        ],
+        "sub": {
+          "_id": 113051,
+          "id": "niwabi_enshou",
+          "name": "Niwabi Enshou",
+          "desc": "L'<span style=\"color: #FFFFFFFF;\">attacco normale</span> del personaggio a cui è associato infligge DAN +1 e i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti sono convertiti in <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 13053,
+        "type": "Tripudio elementale",
+        "name": "Sassifraga Ryuukin",
+        "desc": "Infligge 3 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>, genera una <span style=\"color: #FFFFFFFF;\">Vampata aurea</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 113052,
+          "id": "aurous_blaze",
+          "name": "Vampata aurea",
+          "desc": "Quando i personaggi (esclusa Yoimiya) usano le abilità: infligge 1 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1401,
+    "id": "fischl",
+    "type": "character",
+    "name": "Fischl",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14011,
+        "type": "Attacco normale",
+        "name": "Cascata di dardi",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14012,
+        "type": "Abilità elementale",
+        "name": "Cavaliere della notte",
+        "desc": "Infligge 1 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>, invoca 1 <span style=\"color: #FFFFFFFF;\">Oz</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114011,
+          "id": "oz",
+          "name": "Oz",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infliggi 1 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 14013,
+        "type": "Tripudio elementale",
+        "name": "Fantasmagoria di mezzanotte",
+        "desc": "Infligge 4 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>, infligge <span style=\"color: #FFFFFFFF;\">2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span></span> a tutti i personaggi inattivi.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1402,
+    "id": "razor",
+    "type": "character",
+    "name": "Razor",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14021,
+        "type": "Attacco normale",
+        "name": "Zanna d'acciaio",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14022,
+        "type": "Abilità elementale",
+        "name": "Artiglio tonante",
+        "desc": "Infligge 3 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14023,
+        "type": "Tripudio elementale",
+        "name": "Zanna fulminante",
+        "desc": "Infligge 5 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>, questo personaggio ottiene l'effetto <span style=\"color: #FFFFFFFF;\">Lupo interiore</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114021,
+          "id": "the_wolf_within",
+          "name": "Lupo interiore",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il personaggio che ha ottenuto questo stato usa un attacco normale o un'abilità elementale</span>: infligge 2 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1403,
+    "id": "keqing",
+    "type": "character",
+    "name": "Keqing",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 14031,
+        "type": "Attacco normale",
+        "name": "Arte della spada Yunlai",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14032,
+        "type": "Abilità elementale",
+        "name": "Ripristino stellare",
+        "desc": "Infligge 3 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>, genera una carta <span style=\"color: #FFFFFFFF;\">Stiletto saettante</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114031,
+          "id": "lightning_stiletto",
+          "name": "Stiletto saettante",
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: cambia il tuo personaggio attivo in campo in Keqing e usa immediatamente Ripristino stellare. Questa volta, Ripristino stellare farà ottenere a Keqing <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Infusione di Electro</span></span>, ma non creerà uno Stiletto saettante.\\n(Quando Keqing usa Ripristino stellare, se questa carta è in mano: invece di creare un altro Stiletto saettante, rimuovi questa carta e Keqing ottiene <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Infusione di Electro</span></span>.)"
+        }
+      },
+      {
+        "_id": 14033,
+        "type": "Tripudio elementale",
+        "name": "Spada celestiale",
+        "desc": "Infligge 4 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>, infligge <span style=\"color: #FFFFFFFF;\">3 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span></span> a tutti i personaggi inattivi dell'avversario.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 1404,
+    "id": "cyno",
+    "type": "character",
+    "name": "Cyno",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "pole",
+    "skills": [
+      {
+        "_id": 14041,
+        "type": "Attacco normale",
+        "name": "Lancia dell'evocatore",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14042,
+        "type": "Abilità elementale",
+        "name": "Rito arcano: Guida delle anime del baratro",
+        "desc": "Infligge 3 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 14043,
+        "type": "Tripudio elementale",
+        "name": "Rito sacro: Destrezza del lupo",
+        "desc": "Infligge 4 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>,\\nAumenta di 2 il livello di Possessione di <span style=\"color: #FFFFFFFF;\">Precorritore giurato</span>",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "Precorritore giurato",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span>\\nottieni 1 livello di Possessione.\\n<span style=\"color: #FFFFFFFF;\">Crea i seguenti effetti sulla base del livello di Possessione</span>:\\n· se è pari o superiore a 2, i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti sono convertiti in <span style=\"color: #FFACFFFF;\">DAN da Electro</span>;\\n· se è pari o superiore a 4, DAN inflitti +2;\\n· se è pari o superiore a 6, livello Possessione -4."
+        }
+      },
+      {
+        "_id": 14044,
+        "type": "Abilità passiva",
+        "name": "Tutore della legge",
+        "desc": "(Passiva) Quando inizia la battaglia, ottiene <span style=\"color: #FFFFFFFF;\">Precorritore giurato</span>.",
+        "cost": [],
+        "sub": {
+          "_id": 114041,
+          "id": "pactsworn_pathclearer",
+          "name": "Precorritore giurato",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span>\\nottieni 1 livello di Possessione.\\n<span style=\"color: #FFFFFFFF;\">Crea i seguenti effetti sulla base del livello di Possessione</span>:\\n· se è pari o superiore a 2, i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti sono convertiti in <span style=\"color: #FFACFFFF;\">DAN da Electro</span>;\\n· se è pari o superiore a 4, DAN inflitti +2;\\n· se è pari o superiore a 6, livello Possessione -4."
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1501,
+    "id": "sucrose",
+    "type": "character",
+    "name": "Sucrose",
+    "hp": 10,
+    "energy": 2,
+    "element": "anemo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 15011,
+        "type": "Attacco normale",
+        "name": "Creazione dello spirito dei venti",
+        "desc": "Infligge 1 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15012,
+        "type": "Abilità elementale",
+        "name": "Creazione Anemoipostasi astabile n. 6308",
+        "desc": "Infligge 3 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>. Obbliga l'avversario a passare al personaggio precedente.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15013,
+        "type": "Tripudio elementale",
+        "name": "Creazione proibita: Isomero 75 Tipo II",
+        "desc": "Infligge 1 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>, invoca un <span style=\"color: #FFFFFFFF;\">Grande Spirito dei venti</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 115011,
+          "id": "large_wind_spirit",
+          "name": "Grande Spirito dei venti",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 3</span>\\n\\nDopo che questa carta o il tuo personaggio innesca reazioni di Turbinio: converte il tipo elementale della carta e infligge DAN elementali dell'elemento corrispondente (si può convertire una sola volta prima di abbandonare il campo)."
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1502,
+    "id": "jean",
+    "type": "character",
+    "name": "Jean",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 15021,
+        "type": "Attacco normale",
+        "name": "Tecnica di Favonius",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 15022,
+        "type": "Abilità elementale",
+        "name": "Lama burrascosa",
+        "desc": "Infligge 3 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>. Obbliga l'avversario a passare al personaggio successivo.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 15023,
+        "type": "Tripudio elementale",
+        "name": "Brezza dei denti di leone",
+        "desc": "Ripristina 2 punti a tutti i tuoi personaggi, invoca un <span style=\"color: #FFFFFFFF;\">Campo di denti di leone</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 115021,
+          "id": "dandelion_field",
+          "name": "Campo di denti di leone",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span> e rigenera 1 PS al tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1601,
+    "id": "ningguang",
+    "type": "character",
+    "name": "Ningguang",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 16011,
+        "type": "Attacco normale",
+        "name": "Dispersione scintillante",
+        "desc": "Infligge 1 <span style=\"color: #FFE699FF;\">DAN da Geo</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16012,
+        "type": "Abilità elementale",
+        "name": "Paravento di giada",
+        "desc": "Infligge 2 <span style=\"color: #FFE699FF;\">DAN da Geo</span>, genera un <span style=\"color: #FFFFFFFF;\">Paravento di giada</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "Paravento di giada",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio attivo subisce almeno 2 DAN: </span>riduce di 1 i DAN subiti.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 16013,
+        "type": "Tripudio elementale",
+        "name": "Spaccastelle",
+        "desc": "Infligge 6 <span style=\"color: #FFE699FF;\">DAN da Geo</span>, se <span style=\"color: #FFFFFFFF;\">Paravento di giada</span> è sul campo, DAN inflitti da questo attacco +2.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116011,
+          "id": "jade_screen",
+          "name": "Paravento di giada",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio attivo subisce almeno 2 DAN: </span>riduce di 1 i DAN subiti.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1602,
+    "id": "noelle",
+    "type": "character",
+    "name": "Noelle",
+    "hp": 10,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16021,
+        "type": "Attacco normale",
+        "name": "Tecnica di Favonius - Domestica",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16022,
+        "type": "Abilità elementale",
+        "name": "Corazza",
+        "desc": "Infligge 1 <span style=\"color: #FFE699FF;\">DAN da Geo</span>, crea una <span style=\"color: #FFFFFFFF;\">Corazza completa</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116021,
+          "id": "full_plate",
+          "name": "Corazza completa",
+          "desc": "Conferisce <span style=\"color: #FFFFFFFF;\">2 punti di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span></span> al tuo personaggio attivo.\\nPrima che lo <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span> si consumi completamente, i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> che subisci vengono dimezzati (quantità arrotondata per eccesso)."
+        }
+      },
+      {
+        "_id": 16023,
+        "type": "Tripudio elementale",
+        "name": "Pulizia completa",
+        "desc": "Infligge 4 <span style=\"color: #FFE699FF;\">DAN da Geo</span>, questo personaggio ottiene <span style=\"color: #FFFFFFFF;\">Pulizia completa</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 116022,
+          "id": "sweeping_time",
+          "name": "Pulizia completa",
+          "desc": "Quando il tuo personaggio usa un attacco normale, consumi 1 <span style=\"color: #FFE699FF;\">dado di Geo</span> in meno (una volta per turno).\\nL'<span style=\"color: #FFFFFFFF;\">attacco normale</span> del personaggio infligge DAN +2, e i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti sono convertiti in <span style=\"color: #FFE699FF;\">DAN da Geo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1701,
+    "id": "collei",
+    "type": "character",
+    "name": "Collei",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17011,
+        "type": "Attacco normale",
+        "name": "Freccia del supplicante",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17012,
+        "type": "Abilità elementale",
+        "name": "Pennello floreale",
+        "desc": "Infligge 3 <span style=\"color: #7EC236FF;\">DAN da Dendro</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 17013,
+        "type": "Tripudio elementale",
+        "name": "Micio asso vincente",
+        "desc": "Infligge 2 <span style=\"color: #7EC236FF;\">DAN da Dendro</span>, invoca un <span style=\"color: #FFFFFFFF;\">Cuilein-Anbar</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 117011,
+          "id": "cuilein-anbar",
+          "name": "Cuilein-Anbar",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #7EC236FF;\">DAN da Dendro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2201,
+    "id": "rhodeia_of_loch",
+    "type": "character",
+    "name": "Rhodeia di Loch",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22011,
+        "type": "Attacco normale",
+        "name": "Sovratensione",
+        "desc": "Infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22012,
+        "type": "Abilità elementale",
+        "name": "Illusione acquatica",
+        "desc": "Invoca 1 tipo casuale di <span style=\"color: #FFFFFFFF;\">Imitatore dell'Oceanide</span> (con priorità per i diversi tipi).",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "Imitatore dell'Oceanide",
+          "desc": "Ci sono 3 tipi di Imitatore dell'Oceanide:\\n<span style=\"color: #FFFFFFFF;\">Furetto</span>: infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span> durante la fase finale (si può utilizzare 2 volte);\\n<span style=\"color: #FFFFFFFF;\">Falco</span>: infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span> durante la fase finale (si può utilizzare 3 volte);\\n<span style=\"color: #FFFFFFFF;\">Rana</span>: può bloccare 2 DAN. Quando questa carta non può più essere utilizzata, infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>."
+        }
+      },
+      {
+        "_id": 22013,
+        "type": "Abilità elementale",
+        "name": "Forme dell'acqua",
+        "desc": "Invoca 2 tipi casuali di <span style=\"color: #FFFFFFFF;\">Imitatore dell'Oceanide</span> (con priorità per i diversi tipi).",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 5
+          }
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "Imitatore dell'Oceanide",
+          "desc": "Ci sono 3 tipi di Imitatore dell'Oceanide:\\n<span style=\"color: #FFFFFFFF;\">Furetto</span>: infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span> durante la fase finale (si può utilizzare 2 volte);\\n<span style=\"color: #FFFFFFFF;\">Falco</span>: infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span> durante la fase finale (si può utilizzare 3 volte);\\n<span style=\"color: #FFFFFFFF;\">Rana</span>: può bloccare 2 DAN. Quando questa carta non può più essere utilizzata, infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>."
+        }
+      },
+      {
+        "_id": 22014,
+        "type": "Tripudio elementale",
+        "name": "Correnti e maree",
+        "desc": "Infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>. Infligge ulteriori DAN +2 per ogni invocazione in tuo possesso.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2202,
+    "id": "mirror_maiden",
+    "type": "character",
+    "name": "Sacerdotessa degli specchi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 22021,
+        "type": "Attacco normale",
+        "name": "Hydrobomba",
+        "desc": "Infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 22022,
+        "type": "Abilità elementale",
+        "name": "Spezzaonde",
+        "desc": "Infligge 3 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>, il personaggio bersaglio ottiene <span style=\"color: #FFFFFFFF;\">Rifrazione</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 122021,
+          "id": "refraction",
+          "name": "Rifrazione",
+          "desc": "Il personaggio associato subisce DAN da Hydro +1\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>\\n(Solo uno stato di questo tipo può essere applicato sullo stesso campo per volta.)"
+        }
+      },
+      {
+        "_id": 22023,
+        "type": "Tripudio elementale",
+        "name": "Rifrazione scintillante",
+        "desc": "Infligge 5 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2301,
+    "id": "fatui_pyro_agent",
+    "type": "character",
+    "name": "Agente dei Fatui di Pyro",
+    "hp": 10,
+    "energy": 2,
+    "element": "pyro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 23011,
+        "type": "Attacco normale",
+        "name": "Pugnalata",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23012,
+        "type": "Abilità elementale",
+        "name": "Attacco pianificato",
+        "desc": "Infligge 1 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>, questo personaggio ottiene l'effetto <span style=\"color: #FFFFFFFF;\">Furtività</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "Furtività",
+          "desc": "I DAN subiti dal personaggio associato si riducono di 1, i DAN inflitti aumentano di 1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2"
+        }
+      },
+      {
+        "_id": 23013,
+        "type": "Tripudio elementale",
+        "name": "Fiamme incineranti",
+        "desc": "Infligge 5 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 23014,
+        "type": "Abilità passiva",
+        "name": "Maestro della furtività",
+        "desc": "(Passiva) Quando inizia la battaglia, ottiene l'effetto <span style=\"color: #FFFFFFFF;\">Furtività</span>.",
+        "cost": [],
+        "sub": {
+          "_id": 123011,
+          "id": "stealth",
+          "name": "Furtività",
+          "desc": "I DAN subiti dal personaggio associato si riducono di 1, i DAN inflitti aumentano di 1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2501,
+    "id": "maguu_kenki",
+    "type": "character",
+    "name": "Maguu Kenki",
+    "hp": 10,
+    "energy": 3,
+    "element": "anemo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 25011,
+        "type": "Attacco normale",
+        "name": "Ichimonji",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 25012,
+        "type": "Abilità elementale",
+        "name": "Lama del vento solitario",
+        "desc": "Infligge 1 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>, invoca una <span style=\"color: #FFFFFFFF;\">Lamaombra: Burrasca solitaria</span>.",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125011,
+          "id": "shadowsword_lone_gale",
+          "name": "Lamaombra: Burrasca solitaria",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infliggi 1 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 25013,
+        "type": "Abilità elementale",
+        "name": "Ombra gelida",
+        "desc": "Infligge 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>, invoca una <span style=\"color: #FFFFFFFF;\">Lamaombra: Gelo galoppante</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 125012,
+          "id": "shadowsword_galloping_frost",
+          "name": "Lamaombra: Gelo galoppante",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infliggi 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 25014,
+        "type": "Tripudio elementale",
+        "name": "Clone Tengu",
+        "desc": "Infligge 4 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>, attiva l'effetto d'invocazione di tutte le tue <span style=\"color: #FFFFFFFF;\">Spade d'Ombra</span> (non influisce sul numero di Utilizzi).",
+        "cost": [
+          {
+            "type": "anemo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": 2601,
+    "id": "stonehide_lawachurl",
+    "type": "character",
+    "name": "Lawachurl Mantodipietra",
+    "hp": 8,
+    "energy": 2,
+    "element": "geo",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 26011,
+        "type": "Attacco normale",
+        "name": "Plama Lawa",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26012,
+        "type": "Abilità elementale",
+        "name": "Movo Lawa",
+        "desc": "Infligge 3 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 26013,
+        "type": "Tripudio elementale",
+        "name": "Upa Shato",
+        "desc": "Infligge 5 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 26014,
+        "type": "Abilità passiva",
+        "name": "Incantamento: Mantodipietra",
+        "desc": "(Passiva) Quando inizia la battaglia, ottiene <span style=\"color: #FFFFFFFF;\">Mantodipietra</span> e <span style=\"color: #FFFFFFFF;\">Forza della pietra</span>.",
+        "cost": [],
+        "sub": {
+          "_id": 126011,
+          "id": "stonehide",
+          "name": "Mantodipietra",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il personaggio associato subisce DAN:</span> blocca 1 DAN. Bloccando DAN da Geo, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> -1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 3</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2701,
+    "id": "jadeplume_terrorshroom",
+    "type": "character",
+    "name": "Fungostro Cresta di giada",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "none",
+    "skills": [
+      {
+        "_id": 27011,
+        "type": "Attacco normale",
+        "name": "Danza del Re dei funghi",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 27012,
+        "type": "Abilità elementale",
+        "name": "Nube di spore volatili",
+        "desc": "Infligge 3 <span style=\"color: #7EC236FF;\">DAN da Dendro</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 27013,
+        "type": "Tripudio elementale",
+        "name": "Piume maestose",
+        "desc": "Infligge 4 <span style=\"color: #7EC236FF;\">DAN da Dendro</span>, consuma tutte le cariche di <span style=\"color: #FFFFFFFF;\">Vitalità radicale</span>, ogni carica conferisce DAN +1 a questo attacco.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "Vitalità radicale",
+          "desc": "Quando questo personaggio infligge o subisce DAN elementali, otterrai 1 carica di Vitalità radicale. (Cumulabile fino a 3 volte)\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> se ottieni il numero massimo di cariche di Vitalità radicale, tutte le cariche verranno rimosse."
+        }
+      },
+      {
+        "_id": 27014,
+        "type": "Abilità passiva",
+        "name": "Vitalità radicale",
+        "desc": "(Passiva) Quando inizia la battaglia, questo personaggio ottiene <span style=\"color: #FFFFFFFF;\">Vitalità radicale</span>.",
+        "cost": [],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "Vitalità radicale",
+          "desc": "Quando questo personaggio infligge o subisce DAN elementali, otterrai 1 carica di Vitalità radicale. (Cumulabile fino a 3 volte)\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> se ottieni il numero massimo di cariche di Vitalità radicale, tutte le cariche verranno rimosse."
+        }
+      }
+    ]
+  },
+  {
+    "_id": 211011,
+    "id": "undivided_heart",
+    "type": "talent",
+    "name": "Cuore indivisibile",
+    "requirement": "ganyu",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 5
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Ganyu</span>, equipaggia questa carta.\\nDopo che Ganyu equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Cuore indivisibile</span> una volta.\\nQuando Ganyu, che ha questa carta equipaggiata, usa <span style=\"color: #FFFFFFFF;\">Cuore indivisibile</span>: <span style=\"color: #99FFFFFF;\">DAN da Cryo</span> inflitti +1 se quest'abilità è già stata usata nella stessa partita, e ora invece infligge 3 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span> a tutti i personaggi inattivi avversari.\\n(Per aggiungere questa carta al tuo mazzo, devi avere Ganyu.)"
+    }
+  },
+  {
+    "_id": 211021,
+    "id": "shaken,_not_purred",
+    "type": "talent",
+    "name": "Agitato, non \"miaoscolato\"",
+    "requirement": "diona",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: Quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Diona</span>, equipaggia questa carta.\\nDopo che Diona equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Agitato, non \"miaoscolato\"</span> una volta.\\nQuando la tua Diona, che ha questa carta equipaggiata, crea uno <span style=\"color: #FFFFFFFF;\">Scudo felino</span>, punti di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span> +1.\\n(Per aggiungere questa carta al tuo mazzo, devi avere Diona.)"
+    }
+  },
+  {
+    "_id": 211031,
+    "id": "cold-blooded_strike",
+    "type": "talent",
+    "name": "A sangue freddo",
+    "requirement": "kaeya",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Kaeya</span>, equipaggia questa carta.\\nDopo che Kaeya equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">A sangue freddo</span> una volta.\\nDopo che il tuo Kaeya, che ha questa carta equipaggiata, utilizza <span style=\"color: #FFFFFFFF;\">A sangue freddo</span>, recupera 2 PS (una volta per turno).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Kaeya.)"
+    }
+  },
+  {
+    "_id": 211041,
+    "id": "steady_breathing",
+    "type": "talent",
+    "name": "Respiro regolare",
+    "requirement": "chongyun",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Chongyun</span>, equipaggia questa carta.\\nDopo che Chongyun equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Respiro regolare</span> una volta.\\nQuando Chongyun, che ha questa carta equipaggiata, crea un <span style=\"color: #FFFFFFFF;\">Campo di gelo Chonghua</span>, ottiene gli effetti seguenti: una quantità iniziale di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span> +1, gli <span style=\"color: #FFFFFFFF;\">attacchi normali</span> dei tuoi personaggi che brandiscono spada, claymore o lancia infliggono DAN +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Chongyun.)"
+    }
+  },
+  {
+    "_id": 211051,
+    "id": "kanten_senmyou_blessing",
+    "type": "talent",
+    "name": "Benedizione Kanten Senmyou",
+    "requirement": "kamisato_ayaka",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">L'Infusione di Cryo</span> creata dalla tua <span style=\"color: #FFFFFFFF;\">Kamisato Ayaka</span>, che ha questa carta equipaggiata, permette al personaggio a cui è associata di infliggere <span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">DAN da Cryo</span></span> +1.\\nQuando cambi personaggio in Kamisato Ayaka, che ha questa carta equipaggiata: spendi 1 dado elementale in meno (una volta per turno).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Kamisato Ayaka.)"
+    }
+  },
+  {
+    "_id": 212011,
+    "id": "glorious_season",
+    "type": "talent",
+    "name": "Stagione gloriosa",
+    "requirement": "barbara",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Barbara</span>, equipaggia questa carta.\\nDopo che Barbara equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Stagione gloriosa</span> una volta.\\nQuando Barbara si trova sul campo con con questa equipaggiata, <span style=\"color: #FFFFFFFF;\">Cerchio melodioso</span> ti permette di consumare 1 dado elementale in meno la prossima volta che usi Cambia personaggio.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Barbara.)"
+    }
+  },
+  {
+    "_id": 212021,
+    "id": "the_scent_remained",
+    "type": "talent",
+    "name": "Aroma persistente",
+    "requirement": "xingqiu",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Xingqiu</span>, equipaggia questa carta.\\nDopo che Xingqiu equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Aroma persistente</span> una volta.\\nQuando Xingqiu è equipaggiato con questa carta, crea una <span style=\"color: #FFFFFFFF;\">Spada della pioggia</span> con una quantità iniziale di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Xingqiu.)"
+    }
+  },
+  {
+    "_id": 212031,
+    "id": "prophecy_of_submersion",
+    "type": "talent",
+    "name": "Profezia sommersa",
+    "requirement": "mona",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Mona</span>, equipaggia questa carta.\\nQuando Mona equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Profezia sommersa</span> una volta.\\nQuando Mona, che ha questa carta equipaggiata, è il personaggio attivo, le <span style=\"color: #80C0FFFF;\">Reazioni di Hydro</span> che inneschi infliggono DAN aggiuntivi +2.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Mona.)"
+    }
+  },
+  {
+    "_id": 213011,
+    "id": "flowing_flame",
+    "type": "talent",
+    "name": "Corrente di fiamme",
+    "requirement": "diluc",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Diluc</span>, equipaggia questa carta.\\nDopo che Diluc equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Corrente di fiamme</span> una volta.\\nQuando Diluc, che ha questa carta equipaggiata, utilizza <span style=\"color: #FFFFFFFF;\">Corrente di fiamme</span> per la seconda volta in un turno, spendi 1 <span style=\"color: #FF9999FF;\">dado di Pyro</span> in meno.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Diluc.)"
+    }
+  },
+  {
+    "_id": 213021,
+    "id": "crossfire",
+    "type": "talent",
+    "name": "Fuoco incrociato",
+    "requirement": "xiangling",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Xiangling</span>, equipaggia questa carta.\\nDopo che Xiangling equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Fuoco incrociato</span> una volta.\\nQuando Xiangling, che ha questa carta equipaggiata, utilizza <span style=\"color: #FFFFFFFF;\">Fuoco incrociato</span>, infligge anche lei 1 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Xiangling.)"
+    }
+  },
+  {
+    "_id": 213031,
+    "id": "grand_expectation",
+    "type": "talent",
+    "name": "Desiderio di avventura",
+    "requirement": "bennett",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Bennett</span>, equipaggia questa carta.\\nDopo che Bennett equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Desiderio di avventura</span> una volta.\\nQuando Bennett, che ha questa carta equipaggiata, crea un <span style=\"color: #FFFFFFFF;\">Campo d'ispirazione</span>, il suo bonus DAN è adesso sempre attivo e non avrà più restrizioni di PS.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Bennett.)"
+    }
+  },
+  {
+    "_id": 213051,
+    "id": "naganohara_meteor_swarm",
+    "type": "talent",
+    "name": "Sciame di meteoriti di Naganohara",
+    "requirement": "yoimiya",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Yoimiya</span>, equipaggia questa carta.\\nDopo che Yoimiya equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Sciame di meteoriti di Naganohara</span> una volta.\\nQuando Yoimiya è equipaggiata con questa carta e usa <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span>, infligge 1 ulteriore <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Yoimiya.)"
+    }
+  },
+  {
+    "_id": 214011,
+    "id": "stellar_predator",
+    "type": "talent",
+    "name": "Predatore di stelle",
+    "requirement": "fischl",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Fischl</span>, equipaggia questa carta.\\nDopo che Fischl equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Predatore di stelle</span> una volta.\\nDopo che la tua Fischl, che ha questa carta equipaggiata, crea un <span style=\"color: #FFFFFFFF;\">Oz</span>, e dopo che Fischl utilizza un <span style=\"color: #FFFFFFFF;\">attacco normale</span>: infligge 2 <span style=\"color: #FFACFFFF;\">DAN da Electro</span> (consuma <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Fischl.)"
+    }
+  },
+  {
+    "_id": 214021,
+    "id": "awakening",
+    "type": "talent",
+    "name": "Risveglio",
+    "requirement": "razor",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Razor</span>, equipaggia questa carta.\\nDopo che Razor equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Risveglio</span> una volta.\\nQuando Razor, che è equipaggiato con questa carta, usa <span style=\"color: #FFFFFFFF;\">Risveglio</span>, 1 dei tuoi personaggi di Electro ottiene 1 punto di carica (priorità al personaggio attivo).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Razor.)"
+    }
+  },
+  {
+    "_id": 214031,
+    "id": "thundering_penance",
+    "type": "talent",
+    "name": "Penitenza del tuono",
+    "requirement": "keqing",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Keqing</span>, equipaggia questa carta.\\nDopo che Keqing equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Penitenza del tuono</span> una volta.\\nQuando Keqing, che ha questa carta equipaggiata, crea un <span style=\"color: #FFFFFFFF;\">Infusione di Electro</span>, ottiene gli effetti seguenti:\\nuna quantità iniziale di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span> +1 e <span style=\"color: #FFACFFFF;\">DAN da Electro</span> +1 inflitti dal personaggio.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Keqing.)"
+    }
+  },
+  {
+    "_id": 214041,
+    "id": "featherfall_judgment",
+    "type": "talent",
+    "name": "Giudizio della piuma cadente",
+    "requirement": "cyno",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Cyno</span>, equipaggia questa carta.\\nDopo che Cyno equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Giudizio della piuma cadente</span> una volta.\\nQuando Cyno, che ha questa carta equipaggiata, utilizza <span style=\"color: #FFFFFFFF;\">Giudizio della piuma cadente</span> con il livello 3 o 5 dell'effetto Possessione di <span style=\"color: #FFFFFFFF;\">Precorritore giurato</span>, infligge DAN +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Cyno.)"
+    }
+  },
+  {
+    "_id": 215011,
+    "id": "chaotic_entropy",
+    "type": "talent",
+    "name": "Entropia caotica",
+    "requirement": "sucrose",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Sucrose</span>, equipaggia questa carta.\\nDopo che Sucrose equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Entropia caotica</span> una volta.\\nDopo che il <span style=\"color: #FFFFFFFF;\">Grande Spirito dei venti</span> creato da Sucrose, che aveva questa carta equipaggiata, è passato a un altro tipo elementale: infligge DAN +1 di questo tipo elementale.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Sucrose.)"
+    }
+  },
+  {
+    "_id": 215021,
+    "id": "lands_of_dandelion",
+    "type": "talent",
+    "name": "Regno dei denti di leone",
+    "requirement": "jean",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Jean</span>, equipaggia questa carta.\\nDopo che Jean equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Regno dei denti di leone</span> una volta.\\nQuando Jean si trova sul campo con questa carta equipaggiata,<span style=\"color: #FFFFFFFF;\">Campo di denti di leone</span> ti permette di infliggere <span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">DAN da Anemo</span></span> +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Jean.)"
+    }
+  },
+  {
+    "_id": 216011,
+    "id": "strategic_reserve",
+    "type": "talent",
+    "name": "Riserva strategica",
+    "requirement": "ningguang",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Ningguang</span>, equipaggia questa carta.\\nDopo che Ningguang equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Riserva strategica</span> una volta.\\nQuando Ningguang si trova sul campo con questa carta equipaggiata, <span style=\"color: #FFFFFFFF;\">Paravento di giada</span> ti permette di infliggere <span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">DAN da Geo</span></span> +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Ningguang.)"
+    }
+  },
+  {
+    "_id": 216021,
+    "id": "i_got_your_back",
+    "type": "talent",
+    "name": "Ti guardo le spalle",
+    "requirement": "noelle",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Noelle</span>, equipaggia questa carta.\\nDopo che Noelle equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Ti guardo le spalle</span> una volta.\\nQuando Noelle, che ha questa carta equipaggiata, crea <span style=\"color: #FFFFFFFF;\">Corazza completa</span>, rigenera 1 PS a tutti i tuoi personaggi dopo che Noelle sferra un <span style=\"color: #FFFFFFFF;\">attacco normale</span>. (Per aggiungere questa carta, il tuo mazzo deve contenere Noelle.)"
+    }
+  },
+  {
+    "_id": 217011,
+    "id": "floral_sidewinder",
+    "type": "talent",
+    "name": "Brezza di ritorno floreale",
+    "requirement": "collei",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Collei</span>, equipaggia questa carta.\\nDopo che Collei equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Brezza di ritorno floreale</span> una volta.\\nDopo che la tua Collei, che ha questa carta equipaggiata, usa <span style=\"color: #FFFFFFFF;\">Brezza di ritorno floreale</span>, durante questo turno, dopo che l'abilità del tuo personaggio innesca <span style=\"color: #7EC236FF;\">Reazioni di Dendro</span>: infligge 1 <span style=\"color: #7EC236FF;\">DAN da Dendro</span> (una volta per turno).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Collei.)"
+    }
+  },
+  {
+    "_id": 222011,
+    "id": "streaming_surge",
+    "type": "talent",
+    "name": "Ondata torrenziale",
+    "requirement": "rhodeia_of_loch",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Rhodeia di Loch</span>, equipaggia questa carta.\\nDopo che Rhodeia di Loch equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Ondata torrenziale</span> una volta.\\nQuando Rhodeia di Loch, che ha questa carta equipaggiata, usa <span style=\"color: #FFFFFFFF;\">Ondata torrenziale</span>, tutte le tue invocazioni ottengono <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Rhodeia di Loch.)"
+    }
+  },
+  {
+    "_id": 222021,
+    "id": "mirror_cage",
+    "type": "talent",
+    "name": "Gabbia di specchi",
+    "requirement": "mirror_maiden",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Sacerdotessa degli specchi</span>, equipaggia questa carta.\\nDopo che Sacerdotessa degli specchi equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Gabbia di specchi</span> una volta.\\nQuando Sacerdotessa degli specchi, che ha questa carta equipaggiata, crea una <span style=\"color: #FFFFFFFF;\">Rifrazione</span>, ottiene i seguenti effetti: quantità iniziale di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span> +1 e aumenta di 1 il costo di dadi elementali per cambiare il personaggio a cui viene associata.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Sacerdotessa degli specchi.)"
+    }
+  },
+  {
+    "_id": 223011,
+    "id": "paid_in_full",
+    "type": "talent",
+    "name": "Pagamento saldato",
+    "requirement": "fatui_pyro_agent",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Agente dei Fatui di Pyro</span>, equipaggia questa carta.\\nDopo che Agente dei Fatui di Pyro equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Pagamento saldato</span> una volta.\\nQuando Agente dei Fatui di Pyro, che ha questa carta equipaggiata crea un <span style=\"color: #FFFFFFFF;\">Furtività</span>, ottiene i seguenti effetti:\\nuna quantità iniziale di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> +1, e i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> che questo personaggio infligge sono convertiti in <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Agente dei Fatui di Pyro.)"
+    }
+  },
+  {
+    "_id": 225011,
+    "id": "transcendent_automaton",
+    "type": "talent",
+    "name": "Automa trascendente",
+    "requirement": "maguu_kenki",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Maguu Kenki</span>, equipaggia questa carta.\\nDopo che Maguu Kenki equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Automa trascendente</span> una volta.\\nQuando Maguu Kenki è equipaggiato con questa carta e usa <span style=\"color: #FFFFFFFF;\">Automa trascendente</span>, passa al personaggio successivo. Se Maguu Kenki, che è equipaggiato con questa carta, usa <span style=\"color: #FFFFFFFF;\">Automa trascendente</span>, passa al personaggio precedente.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Maguu Kenki.)"
+    }
+  },
+  {
+    "_id": 226011,
+    "id": "stonehide_reforged",
+    "type": "talent",
+    "name": "Mantodipietra riforgiato",
+    "requirement": "stonehide_lawachurl",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Lawachurl Mantodipietra</span>, equipaggia questa carta.\\nDopo che Lawachurl Mantodipietra equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Mantodipietra riforgiato</span> una volta.\\nQuando Lawachurl Mantodipietra, che ha questa carta equipaggiata, sconfigge un personaggio nemico: Lawachurl Mantodipietra equipaggia di nuovo <span style=\"color: #FFFFFFFF;\">Mantodipietra</span> e <span style=\"color: #FFFFFFFF;\">Forza della pietra</span>.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Lawachurl Mantodipietra.)"
+    }
+  },
+  {
+    "_id": 227011,
+    "id": "proliferating_spores",
+    "type": "talent",
+    "name": "Spore proliferanti",
+    "requirement": "jadeplume_terrorshroom",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Fungostro Cresta di giada</span>, equipaggia questa carta.\\nDopo che Fungostro Cresta di giada equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Spore proliferanti</span> una volta.\\nIl tuo Fungostro Cresta di giada, che ha questa carta equipaggiata, può accumulare 1 carica extra di Vitalità radicale.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Fungostro Cresta di giada.)"
+    }
+  },
+  {
+    "_id": 311101,
+    "id": "magic_guide",
+    "type": "weapon",
+    "name": "Manuale di magia",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con catalizzatore</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311102,
+    "id": "sacrificial_fragments",
+    "type": "weapon",
+    "name": "Frammenti sacrificali",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1 </span>.\\n<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio usa un'abilità elementale:</span> crea 1 dado elementale dello stesso tipo elementale del personaggio (una volta per turno).\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con catalizzatore</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311103,
+    "id": "skyward_atlas",
+    "type": "weapon",
+    "name": "Atlante celeste",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Una volta per turno:</span> DAN da attacco normale inflitti da questo personaggio +1.\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con catalizzatore</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311201,
+    "id": "raven_bow",
+    "type": "weapon",
+    "name": "Arco corvino",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>. \\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con arco</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311202,
+    "id": "sacrificial_bow",
+    "type": "weapon",
+    "name": "Arco sacrificale",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio usa un'abilità elementale:</span> crea 1 dado elementale dello stesso tipo elementale del personaggio (una volta per turno). \\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con arco</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311203,
+    "id": "skyward_harp",
+    "type": "weapon",
+    "name": "Arpa celeste",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Una volta per turno:</span> DAN da attacco normale inflitti da questo personaggio +1.\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con arco</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311301,
+    "id": "white_iron_greatsword",
+    "type": "weapon",
+    "name": "Spadone di ferro bianco",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>. \\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con claymore</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311302,
+    "id": "sacrificial_greatsword",
+    "type": "weapon",
+    "name": "Spadone sacrificale",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio usa un'abilità elementale:</span> crea 1 dado elementale dello stesso tipo elementale del personaggio (una volta per turno).\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con claymore</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311303,
+    "id": "wolfs_gravestone",
+    "type": "weapon",
+    "name": "Trapasso ululante",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n DAN inflitti +2 se i PS rimanenti del bersaglio sono uguali o minori di 6.\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con claymore</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311401,
+    "id": "white_tassel",
+    "type": "weapon",
+    "name": "Pennacchio bianco",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>. \\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con lancia</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311402,
+    "id": "lithic_spear",
+    "type": "weapon",
+    "name": "Lancia litica",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\nSe giocata: per ogni personaggio di Liyue nella tua squadra aggiungi <span style=\"color: #FFFFFFFF;\">1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span></span> al personaggio associato (massimo 3 punti).\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con lancia</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311403,
+    "id": "skyward_spine",
+    "type": "weapon",
+    "name": "Lancia d'osso celeste",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Una volta per turno:</span> DAN da attacco normale inflitti da questo personaggio +1.\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con lancia</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311501,
+    "id": "travelers_handy_sword",
+    "type": "weapon",
+    "name": "Spada del viaggiatore",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con spada</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311502,
+    "id": "sacrificial_sword",
+    "type": "weapon",
+    "name": "Spada sacrificale",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio usa un'abilità elementale:</span> crea 1 dado elementale dello stesso tipo elementale del personaggio (una volta per turno).\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con spada</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+    }
+  },
+  {
+    "_id": 311503,
+    "id": "aquila_favonia",
+    "type": "weapon",
+    "name": "Aquila Favonia",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio avversario usa un'abilità:</span> se il personaggio associato a questa carta è il personaggio attivo, guarisci quel personaggio di 1 PS (non più di due volte per ogni turno).\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con spada</span>. I personaggi possono equipaggiare un massimo di 1 arma)"
+    }
+  },
+  {
+    "_id": 312001,
+    "id": "adventurers_bandana",
+    "type": "artifact",
+    "name": "Bandana dell'avventuriere",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio usa un attacco normale:</span> recupera 1 PS (massimo 3 volte per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312002,
+    "id": "lucky_dogs_silver_circlet",
+    "type": "artifact",
+    "name": "Corona d'argento di Fortunato",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio usa un'abilità elementale:</span> recupera 2 PS (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312003,
+    "id": "traveling_doctors_handkerchief",
+    "type": "artifact",
+    "name": "Fazzoletto della dottoressa errante",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio usa un Tripudio elementale:</span> rigenera 1 PS a tutti i personaggi (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312004,
+    "id": "gamblers_earrings",
+    "type": "artifact",
+    "name": "Orecchini della scommettitrice",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio avversario viene sconfitto:</span> se il personaggio associato a questa carta è attivo, crea <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span> ×2.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312005,
+    "id": "instructors_cap",
+    "type": "artifact",
+    "name": "Cappello dell'istruttore",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio innesca una reazione elementale:</span> crea 1 dado elementale che corrisponde al tipo elementale di questo personaggio (massimo 3 volte per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312006,
+    "id": "exiles_circlet",
+    "type": "artifact",
+    "name": "Corona dell'esule",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio usa un Tripudio elementale:</span> tutti i tuoi personaggi inattivi ottengono 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312101,
+    "id": "broken_rimes_echo",
+    "type": "artifact",
+    "name": "Eco dell'inverno",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #99FFFFFF;\">dado di Cryo</span> in meno (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312102,
+    "id": "blizzard_strayer",
+    "type": "artifact",
+    "name": "Nomade della tormenta",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #99FFFFFF;\">dado di Cryo</span> in meno (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> 2 dei dadi elementali che lanci all'inizio saranno sempre dei <span style=\"color: #99FFFFFF;\">dadi di Cryo</span>.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312201,
+    "id": "wine-stained_tricorne",
+    "type": "artifact",
+    "name": "Tricorno macchiato di vino",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #80C0FFFF;\">dado di Hydro</span> in meno (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312202,
+    "id": "heart_of_depth",
+    "type": "artifact",
+    "name": "Cuore profondo",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #80C0FFFF;\">dado di Hydro</span> in meno (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> 2 dei dadi elementali che lanci all'inizio saranno sempre dei <span style=\"color: #80C0FFFF;\">dadi di Hydro</span>.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312301,
+    "id": "witchs_scorching_hat",
+    "type": "artifact",
+    "name": "Cappello infuocato della strega",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #FF9999FF;\">dado di Pyro</span> in meno (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312302,
+    "id": "crimson_witch_of_flames",
+    "type": "artifact",
+    "name": "Strega cremisi delle fiamme",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #FF9999FF;\">dado di Pyro</span> in meno (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> 2 dei dadi elementali che lanci all'inizio saranno sempre dei <span style=\"color: #FF9999FF;\">dadi di Pyro</span>.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312401,
+    "id": "thunder_summoners_crown",
+    "type": "artifact",
+    "name": "Corona dell'invocatore di fulmini",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #FFACFFFF;\">dado di Electro</span> in meno (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312402,
+    "id": "thundering_fury",
+    "type": "artifact",
+    "name": "Furia tonante",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #FFACFFFF;\">dado di Electro</span> in meno (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> 2 dei dadi elementali che lanci all'inizio saranno sempre dei <span style=\"color: #FFACFFFF;\">dadi di Electro</span>.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312501,
+    "id": "viridescent_venerers_diadem",
+    "type": "artifact",
+    "name": "Diadema della Cacciatrice smeraldo",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #80FFD7FF;\">dado di Anemo</span> in meno (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312502,
+    "id": "viridescent_venerer",
+    "type": "artifact",
+    "name": "Cacciatrice smeraldo",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #80FFD7FF;\">dado di Anemo</span> in meno (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> 2 dei dadi elementali che lanci all'inizio saranno sempre dei <span style=\"color: #80FFD7FF;\">dadi di Anemo</span>.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312601,
+    "id": "mask_of_solitude_basalt",
+    "type": "artifact",
+    "name": "Maschera di basalto inerte",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #FFE699FF;\">dado di Geo</span> in meno (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312602,
+    "id": "archaic_petra",
+    "type": "artifact",
+    "name": "Roccia arcaica",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #FFE699FF;\">dado di Geo</span> in meno (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> 2 dei dadi elementali che lanci all'inizio saranno sempre dei <span style=\"color: #FFE699FF;\">dadi di Geo</span>.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312701,
+    "id": "laurel_coronet",
+    "type": "artifact",
+    "name": "Corona d'alloro",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #99FF88FF;\">dado di Dendro</span> in meno (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312702,
+    "id": "deepwood_memories",
+    "type": "artifact",
+    "name": "Memorie di Boscoprofondo",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio usa un'abilità o equipaggia un talento:</span> consuma 1 <span style=\"color: #99FF88FF;\">dado di Dendro</span> in meno (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> 2 dei dadi elementali che lanci all'inizio saranno sempre dei <span style=\"color: #99FF88FF;\">dadi di Dendro</span>.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 321001,
+    "id": "liyue_harbor_wharf",
+    "type": "place",
+    "name": "Molo del Porto di Liyue",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> pesca 2 carte.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2"
+    }
+  },
+  {
+    "_id": 321002,
+    "id": "knights_of_favonius_library",
+    "type": "place",
+    "name": "Biblioteca dei Cavalieri di Favonius",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Se giocata:</span> seleziona i dadi elementali da rilanciare.\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> ottieni un'altra possibilità di lancio."
+    }
+  },
+  {
+    "_id": 321003,
+    "id": "jade_chamber",
+    "type": "place",
+    "name": "Dimora di giada",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> al momento del lancio, 2 dadi elementali corrispondono sempre al tipo elementale del personaggio attivo."
+    }
+  },
+  {
+    "_id": 321004,
+    "id": "dawn_winery",
+    "type": "place",
+    "name": "Vigneto Prima Luce",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando usi Cambia personaggio:</span> usa 1 dado elementale in meno (una volta per turno)."
+    }
+  },
+  {
+    "_id": 321005,
+    "id": "wangshu_inn",
+    "type": "place",
+    "name": "Locanda Wangshu",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> rigenera 2 PS al tuo personaggio inattivo con i PS più bassi.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 321006,
+    "id": "favonius_cathedral",
+    "type": "place",
+    "name": "Cattedrale di Favonius",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> rigenera 2 PS al tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 322001,
+    "id": "paimon",
+    "type": "ally",
+    "name": "Paimon",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">All'inizio della fase di azione:</span> crea <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span> ×2.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 322002,
+    "id": "katheryne",
+    "type": "ally",
+    "name": "Katheryne",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando usi Cambia personaggio:</span> questo cambio è considerato come <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione rapida</span> invece che <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span> (una volta per turno)."
+    }
+  },
+  {
+    "_id": 322003,
+    "id": "timaeus",
+    "type": "ally",
+    "name": "Timaeus",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "Se giocata, ha 2 materiali da trasmutazione.\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> aggiungi 1 materiale da trasmutazione.\\n<span style=\"color: #FFFFFFFF;\">Quando viene giocata una carta manufatto:</span> se possibile, paga una quantità di materiali da trasmutazione pari al costo della carta manufatto ed equipaggia questo manufatto gratuitamente (una volta per turno)."
+    }
+  },
+  {
+    "_id": 322004,
+    "id": "wagner",
+    "type": "ally",
+    "name": "Wagner",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "Se giocata, ha 2 billette da forgiatura.\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> aggiungi 1 billetta da forgiatura.\\n<span style=\"color: #FFFFFFFF;\">Quando viene giocata una carta arma:</span> se possibile, paga un numero di billette da forgiatura pari al costo dell'arma ed equipaggia quest'arma gratuitamente (una volta per turno)."
+    }
+  },
+  {
+    "_id": 322005,
+    "id": "chef_mao",
+    "type": "ally",
+    "name": "Chef Mao",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo aver giocato una carta evento cibo</span> crea 1 dado elementale casuale (una volta per turno)."
+    }
+  },
+  {
+    "_id": 322006,
+    "id": "tubby",
+    "type": "ally",
+    "name": "Tonda",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando viene giocata una carta di supporto luogo</span> consuma 2 dadi elementali in meno (una volta per turno)."
+    }
+  },
+  {
+    "_id": 322007,
+    "id": "timmie",
+    "type": "ally",
+    "name": "Timmie",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Si innesca automaticamente una volta per turno:</span> questa carta ottiene <span style=\"color: #FFFFFFFF;\">1 piccione</span>.\\nSe questa carta ha accumulato <span style=\"color: #FFFFFFFF;\">3 piccioni</span>, rimuovi questa carta, pesca 1 carta e crea 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span>."
+    }
+  },
+  {
+    "_id": 322008,
+    "id": "liben",
+    "type": "ally",
+    "name": "Liben",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> raccogli i tuoi dadi elementali non utilizzati (massimo 1 per ogni tipo).\\n<span style=\"color: #FFFFFFFF;\">All'inizio della fase di azione:</span> se questa carta ha raccolto 3 dadi elementali, pesca 2 carte e crea <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span> ×2, poi rimuovi questa carta."
+    }
+  },
+  {
+    "_id": 322009,
+    "id": "chang_the_ninth",
+    "type": "ally",
+    "name": "Chang il Nono",
+    "skills": {
+      "cost": [],
+      "desc": "Quando una delle fazioni usa un'abilità: se sono stati inflitti <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span> o viene innescata una <span style=\"color: #FFFFFFFF;\">reazione elementale</span>: questa carta ottiene <span style=\"color: #FFFFFFFF;\">1 punto Ispirazione</span>\\nSe questa carta ha già ottenuto <span style=\"color: #FFFFFFFF;\">3 punti Ispirazione</span>, rimuovila, poi pesca 2 carte."
+    }
+  },
+  {
+    "_id": 322010,
+    "id": "ellin",
+    "type": "ally",
+    "name": "Ellin",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando usi un'abilità che è già stata usata in questo turno:</span> usa 1 dado elementale in meno (una volta per turno)."
+    }
+  },
+  {
+    "_id": 322011,
+    "id": "iron_tongue_tian",
+    "type": "ally",
+    "name": "Tian Lingua di ferro",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> uno dei tuoi personaggi che non ha raggiunto l'energia massima ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> (priorità al personaggio attivo).\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 322012,
+    "id": "liu_su",
+    "type": "ally",
+    "name": "Liu Su",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo aver cambiato personaggio:</span> se il personaggio per cui hai cambiato non ha punti di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span>, ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 323001,
+    "id": "parametric_transformer",
+    "type": "item",
+    "name": "Modificatore parametrico",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando una delle fazioni usa un'abilità:</span> se sono stati inflitti dei DAN elementali, questa carta ottiene <span style=\"color: #FFFFFFFF;\">1 Progresso qualitativo</span>.\\nQuando questa carta ottiene <span style=\"color: #FFFFFFFF;\">3 Progressi qualitativi</span>, rimuovila, poi crea 3 diversi dadi elementali di base."
+    }
+  },
+  {
+    "_id": 323002,
+    "id": "nre",
+    "type": "item",
+    "name": "Sacca di nutrienti",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando giocata</span> pesca 1  carta evento cibo dal tuo mazzo.\\n<span style=\"color: #FFFFFFFF;\">Quando giochi una carta evento cibo:</span> pesca 1 carta evento cibo dal tuo mazzo (una volta per turno)."
+    }
+  },
+  {
+    "_id": 331101,
+    "id": "elemental_resonance_woven_ice",
+    "type": "resonance",
+    "name": "Risonanza elementale: Ghiaccio intrecciato",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [],
+      "desc": "Crea 1 <span style=\"color: #99FFFFFF;\">dado di Cryo</span>.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #99FFFFFF;\">Cryo</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331102,
+    "id": "elemental_resonance_shattering_ice",
+    "type": "resonance",
+    "name": "Risonanza elementale: Ghiaccio dirompente",
+    "requirement": "cryo",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 1
+        }
+      ],
+      "desc": "In questo turno, il tuo personaggio attivo infligge DAN +2 nel suo prossimo attacco.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #99FFFFFF;\">Cryo</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331201,
+    "id": "elemental_resonance_woven_waters",
+    "type": "resonance",
+    "name": "Risonanza elementale: Acque intrecciate",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [],
+      "desc": "Crea 1 <span style=\"color: #80C0FFFF;\">dado di Hydro</span>.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #80C0FFFF;\">Hydro</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331202,
+    "id": "elemental_resonance_soothing_water",
+    "type": "resonance",
+    "name": "Risonanza elementale: Placide acque",
+    "requirement": "hydro",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 1
+        }
+      ],
+      "desc": "Ripristina 2 PS al tuo personaggio attivo e 1 PS a tutti i tuoi personaggi inattivi.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #80C0FFFF;\">Hydro</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331301,
+    "id": "elemental_resonance_woven_flames",
+    "type": "resonance",
+    "name": "Risonanza elementale: Fiamme intrecciate",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [],
+      "desc": "Crea 1 <span style=\"color: #FF9999FF;\">dado di Pyro</span>.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #FF9999FF;\">Pyro</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331302,
+    "id": "elemental_resonance_fervent_flames",
+    "type": "resonance",
+    "name": "Risonanza elementale: Fiamme impetuose",
+    "requirement": "pyro",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 1
+        }
+      ],
+      "desc": "La prossima volta che in questo turno il tuo personaggio attivo attuale innesca <span style=\"color: #FF9999FF;\">Reazioni di Pyro</span>, DAN inflitti +3.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #FF9999FF;\">Pyro</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331401,
+    "id": "elemental_resonance_woven_thunder",
+    "type": "resonance",
+    "name": "Risonanza elementale: Tuono intrecciato",
+    "requirement": "electro",
+    "skills": {
+      "cost": [],
+      "desc": "Crea 1 <span style=\"color: #FFACFFFF;\">dado di Electro</span>.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #FFACFFFF;\">Electro</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331402,
+    "id": "elemental_resonance_high_voltage",
+    "type": "resonance",
+    "name": "Risonanza elementale: Alta tensione",
+    "requirement": "electro",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 1
+        }
+      ],
+      "desc": "Uno dei tuoi personaggi che non ha raggiunto l'energia massima ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> (priorità al personaggio attivo).\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #FFACFFFF;\">Electro</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331501,
+    "id": "elemental_resonance_woven_winds",
+    "type": "resonance",
+    "name": "Risonanza elementale: Venti intrecciati",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [],
+      "desc": "Crea 1 <span style=\"color: #80FFD7FF;\">dado di Anemo</span>.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #80FFD7FF;\">Anemo</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331502,
+    "id": "elemental_resonance_impetuous_winds",
+    "type": "resonance",
+    "name": "Risonanza elementale: Venti impetuosi",
+    "requirement": "anemo",
+    "skills": {
+      "cost": [
+        {
+          "type": "anemo",
+          "count": 1
+        }
+      ],
+      "desc": "Cambia per il personaggio scelto e crea <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span> ×1.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #80FFD7FF;\">Anemo</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331601,
+    "id": "elemental_resonance_woven_stone",
+    "type": "resonance",
+    "name": "Risonanza elementale: Pietra intrecciata",
+    "requirement": "geo",
+    "skills": {
+      "cost": [],
+      "desc": "Crea 1 <span style=\"color: #FFE699FF;\">dado di Geo</span>.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #FFE699FF;\">Geo</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331602,
+    "id": "elemental_resonance_enduring_rock",
+    "type": "resonance",
+    "name": "Risonanza elementale: Roccia infrangibile",
+    "requirement": "geo",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        }
+      ],
+      "desc": "In questo turno, la prossima volta che il tuo personaggio infligge <span style=\"color: #FFE699FF;\">DAN da Geo</span>: se dal tuo lato c'è qualche stato di combattimento che fornisce punti di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span>, dai a quello stato 3 punti extra di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span>. (Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #FFE699FF;\">Geo</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331701,
+    "id": "elemental_resonance_woven_weeds",
+    "type": "resonance",
+    "name": "Risonanza elementale: Grovigli intrecciati",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [],
+      "desc": "Crea 1 <span style=\"color: #99FF88FF;\">dado di Dendro</span>.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #99FF88FF;\">Dendro</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 331702,
+    "id": "elemental_resonance_sprawling_greenery",
+    "type": "resonance",
+    "name": "Risonanza elementale: Vegetazione proliferante",
+    "requirement": "dendro",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 1
+        }
+      ],
+      "desc": "La prossima volta che inneschi una reazione elementale in questo turno, infliggi DAN +2.\\n<span style=\"color: #FFFFFFFF;\">Fiammardente, Nucleo di Dendro e Campo catalizzante ottengono <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> +1</span>.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #99FF88FF;\">Dendro</span> nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 332001,
+    "id": "the_bestest_travel_companion!",
+    "type": "none",
+    "name": "La miglior compagna di viaggio!",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "Converti i dadi elementali usati in <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span> ×2."
+    }
+  },
+  {
+    "_id": 332002,
+    "id": "changing_shifts",
+    "type": "none",
+    "name": "Cambio di turno",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">La prossima volta che usi Cambia personaggio:</span> usa 1 dado elementale in meno."
+    }
+  },
+  {
+    "_id": 332003,
+    "id": "toss-up",
+    "type": "none",
+    "name": "Testa o croce",
+    "skills": {
+      "cost": [],
+      "desc": "Seleziona qualsiasi numero di dadi elementali da <span style=\"color: #FFFFFFFF;\">rilanciare</span>. Possono essere rilanciati 2 volte."
+    }
+  },
+  {
+    "_id": 332004,
+    "id": "strategize",
+    "type": "none",
+    "name": "Pianifica",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Pesca 2 carte."
+    }
+  },
+  {
+    "_id": 332005,
+    "id": "i_havent_lost_yet!",
+    "type": "none",
+    "name": "Non ho ancora perso!",
+    "skills": {
+      "cost": [],
+      "desc": "Giocabile solo se uno dei tuoi personaggi viene sconfitto in questo turno:\\nCrea 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span> e il tuo personaggio attivo ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span>."
+    }
+  },
+  {
+    "_id": 332006,
+    "id": "leave_it_to_me!",
+    "type": "none",
+    "name": "Lascia fare a me!",
+    "skills": {
+      "cost": [],
+      "desc": "<span style=\"color: #FFFFFFFF;\">La prossima volta che usi Cambia personaggio:</span> questo cambio è considerato come <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione rapida</span> invece che <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span> (una volta per turno)."
+    }
+  },
+  {
+    "_id": 332007,
+    "id": "when_the_crane_returned",
+    "type": "none",
+    "name": "Quando ritornò la gru",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">La prossima volta che usi un'abilità:</span> passa al personaggio successivo come personaggio attivo."
+    }
+  },
+  {
+    "_id": 332008,
+    "id": "starsigns",
+    "type": "none",
+    "name": "Presagio stellare",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "Il tuo personaggio attivo <span style=\"color: #FFFFFFFF;\">ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span></span>."
+    }
+  },
+  {
+    "_id": 332009,
+    "id": "calxs_arts",
+    "type": "none",
+    "name": "Arti di Calx",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Trasferisci 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> da un massimo di 2 dei tuoi personaggi inattivi al tuo personaggio attivo."
+    }
+  },
+  {
+    "_id": 332010,
+    "id": "master_of_weaponry",
+    "type": "none",
+    "name": "Maestro degli armamenti",
+    "skills": {
+      "cost": [],
+      "desc": "Trasferisci 1 carta equipaggiamento arma da uno dei tuoi personaggi a un altro personaggio con lo stesso tipo di arma."
+    }
+  },
+  {
+    "_id": 332011,
+    "id": "blessing_of_the_divine_relics_installation",
+    "type": "none",
+    "name": "Benedizione della reliquia divina",
+    "skills": {
+      "cost": [],
+      "desc": "Trasferisci 1 carta equipaggiamento manufatto equipaggiata da uno dei tuoi personaggi a un altro personaggio."
+    }
+  },
+  {
+    "_id": 332012,
+    "id": "quick_knit",
+    "type": "none",
+    "name": "Intreccio rapido",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Scegli una tua invocazione, ottiene <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> +1."
+    }
+  },
+  {
+    "_id": 332013,
+    "id": "send_off",
+    "type": "none",
+    "name": "Espulsione",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "Scegli un'invocazione dell'avversario e distruggila."
+    }
+  },
+  {
+    "_id": 332014,
+    "id": "guardians_oath",
+    "type": "none",
+    "name": "Giuramento del Guardiano",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 4
+        }
+      ],
+      "desc": "Distruggi tutte le invocazioni (ha effetto su entrambi i giocatori)."
+    }
+  },
+  {
+    "_id": 332015,
+    "id": "abyssal_summons",
+    "type": "none",
+    "name": "Chiamata abissale",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "Invoca 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hilichurl casuale</span>!(Questa carta può essere aggiunta solo se ci sono almeno 2 carte personaggio mostro nel tuo mazzo.)"
+    }
+  },
+  {
+    "_id": 333001,
+    "id": "jueyun_guoba",
+    "type": "food",
+    "name": "Guoba di Jueyun",
+    "skills": {
+      "cost": [],
+      "desc": "La prossima volta che in questo turno il tuo personaggio attivo usa un <span style=\"color: #FFFFFFFF;\">attacco normale</span>, infligge DAN +1.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+    }
+  },
+  {
+    "_id": 333002,
+    "id": "adeptus_temptation",
+    "type": "food",
+    "name": "Tentazione dell'Adeptus",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "La prossima volta che in questo turno il tuo personaggio attivo usa un <span style=\"color: #FFFFFFFF;\">Tripudio elementale</span>, DAN inflitti +3.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+    }
+  },
+  {
+    "_id": 333003,
+    "id": "lotus_flower_crisp",
+    "type": "food",
+    "name": "Frittelle di loto",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Durante questo turno, il personaggio bersaglio subisce DAN -3 la volta successiva.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+    }
+  },
+  {
+    "_id": 333004,
+    "id": "northern_smoked_chicken",
+    "type": "food",
+    "name": "Pollo affumicato del Nord",
+    "skills": {
+      "cost": [],
+      "desc": "La prossima volta che in questo turno il tuo personaggio attivo usa un <span style=\"color: #FFFFFFFF;\">attacco normale</span>, costerà 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">elemento indefinito</span> in meno.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+    }
+  },
+  {
+    "_id": 333005,
+    "id": "sweet_madame",
+    "type": "food",
+    "name": "Pollo ai Fiordolci",
+    "skills": {
+      "cost": [],
+      "desc": "Rigenera 1 PS al tuo personaggio attivo.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+    }
+  },
+  {
+    "_id": 333006,
+    "id": "mondstadt_hash_brown",
+    "type": "food",
+    "name": "Frittelle di patate di Mondstadt",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Rigenera 2 PS al tuo personaggio attivo.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+    }
+  },
+  {
+    "_id": 333007,
+    "id": "mushroom_pizza",
+    "type": "food",
+    "name": "Pizza ai funghi",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Rigenera 1 PS al tuo personaggio attivo. Per i prossimi due turni durante la fase finale, a questo personaggio verrà rigenerato 1 PS.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+    }
+  },
+  {
+    "_id": 333008,
+    "id": "minty_meat_rolls",
+    "type": "food",
+    "name": "Involtini di carne alla menta",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 1
+        }
+      ],
+      "desc": "Prima della fine del turno, tutti gli <span style=\"color: #FFFFFFFF;\">attacchi normali</span> del personaggio bersaglio costeranno 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">elemento indefinito</span> in meno.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+    }
+  }
+]

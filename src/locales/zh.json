@@ -17,8 +17,9 @@
     "radiantSpincrystal": "旋曜玉帛",
     "calendar": "日程",
     "banners": "角色复刻",
+    "tcg": "七圣召唤",
     "settings": "设置",
-    "donate": "赞助"
+    "donate": "捐赠"
   },
   "home": {
     "welcome": "欢迎来到 Paimon.moe！👋",
@@ -634,7 +635,6 @@
       "calculateFate": "计算 {value} 需要多少钱"
     },
     "fateCount": {
-      "interwinedFate": "纠缠之缘",
       "starglitter": "星辉",
       "stardust": "星尘",
       "primogem": "原石",
@@ -644,7 +644,8 @@
       "type": "种类",
       "amount": "数量",
       "totalPrimogem": "换算原石",
-      "calculate": "计算"
+      "calculate": "计算",
+      "intertwinedFate": "纠缠之缘"
     }
   },
   "items": {
@@ -968,6 +969,8 @@
     "18ATKSet": "+18% 攻击力套",
     "20EnergyRechargeSet": "+20% 元素充能效率套",
     "25PhysicalDmgSet": "+25% 物理伤害加成套",
+    "80EMSet": "+80 元素精通套",
+    "15HealingBonusSet": "+15% 治疗加成套",
     "sands": "时之沙",
     "goblet": "空之杯",
     "circlet": "理之冠",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "数据已同步！",
-    "driveError": "云端同步现在不可用 😔"
+    "driveError": "云端同步现在不可用 😔",
+    "open": "打开",
+    "delete": "删除",
+    "deleteConfirm": "确定删除？"
   },
   "update": {
     "newUpdate": "Paimon.moe 更新啦！",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "按最后复刻排序",
     "bannerTitle": "角色卡池时间一览",
     "bannerSubtitle": "查看角色入池时间及复刻情况"
+  },
+  "tcg": {
+    "title": "七圣召唤",
+    "requirementResonance": "牌组中需要有至少 2 位{element}角色才能将此牌加入牌组！",
+    "requirementTalent": "牌组中需要有{character}才能将此牌加入牌组！",
+    "addedToDeck": "已加入牌组！",
+    "deletedFromDeck": "已移出牌组！",
+    "removedFromDeck": "已将一张移出牌组！",
+    "alreadyMaxCharacters": "此牌组已有 3 张角色牌！",
+    "alreadyMaxActions": "此牌组已有 30 张行动牌！",
+    "requirementInDeck": "在移除{character}前，请先从牌组中移除卡牌“{card}”！",
+    "addToDeck": "加入牌组",
+    "removeFromDeck": "从牌组中{type}",
+    "delete": "删除",
+    "remove": "移除",
+    "compare": "选中作为比较",
+    "noCardOnDeck": "此牌组中还没有卡牌",
+    "loadDefaultDeck": "加载初始牌组",
+    "saveDeck": "保存牌组",
+    "hideDeck": "隐藏牌组",
+    "showDeck": "显示牌组",
+    "addDeck": "添加牌组",
+    "selectDeck": "选择牌组",
+    "loadingLink": "正在生成链接…",
+    "loadingLinkError": "生成链接时出现错误 😥",
+    "shareDeck": "分享牌组“{name}”",
+    "removeCompare": "取消比较",
+    "shareNotComplete": "要分享牌组，请确保牌组满足出战条件（有 3 张角色牌和 30 张行动牌）！",
+    "characterCard": "角色牌",
+    "actionCard": "行动牌"
   }
 }

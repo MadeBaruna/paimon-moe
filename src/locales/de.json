@@ -17,6 +17,7 @@
     "radiantSpincrystal": "Strahlender Drehkristall",
     "calendar": "Kalender",
     "banners": "Figuren-Reruns",
+    "tcg": "",
     "settings": "Einstellungen",
     "donate": "Spenden"
   },
@@ -634,7 +635,6 @@
       "calculateFate": "Berechnen Sie, wie viel Geld ich für {value} brauche"
     },
     "fateCount": {
-      "interwinedFate": "Verflochtene Schicksale",
       "starglitter": "Stern-Glitter",
       "stardust": "Star Staub",
       "primogem": "Primogem",
@@ -644,7 +644,8 @@
       "type": "Type",
       "amount": "Menge",
       "totalPrimogem": "In Summe Primogems",
-      "calculate": "Berechnung"
+      "calculate": "Berechnung",
+      "intertwinedFate": "Verflochtene Schicksale"
     }
   },
   "items": {
@@ -968,6 +969,8 @@
     "18ATKSet": "ANG +18% Set",
     "20EnergyRechargeSet": "Aufladerate +20% Set",
     "25PhysicalDmgSet": "Phys. Schaden +25% Set",
+    "80EMSet": "",
+    "15HealingBonusSet": "",
     "sands": "SAND",
     "goblet": "KELCH",
     "circlet": "KREIS",
@@ -995,7 +998,10 @@
   },
   "common": {
     "dataSynced": "Daten wurden synchronisiert!",
-    "driveError": "Drive Sync derzeit nicht verfügbar 😔"
+    "driveError": "Drive Sync derzeit nicht verfügbar 😔",
+    "open": "",
+    "delete": "",
+    "deleteConfirm": ""
   },
   "update": {
     "newUpdate": "Paimon.moe hat ein neues Update!",
@@ -1013,5 +1019,35 @@
     "sortByRerun": "Nach letzter Erscheinung sortiert",
     "bannerTitle": "Figurvorstellung-Chronik",
     "bannerSubtitle": "Erkunde die erste und letzte Erscheinung eines Figurs"
+  },
+  "tcg": {
+    "title": "Geniale Beschwörung",
+    "requirementResonance": "",
+    "requirementTalent": "",
+    "addedToDeck": "",
+    "deletedFromDeck": "",
+    "removedFromDeck": "",
+    "alreadyMaxCharacters": "",
+    "alreadyMaxActions": "",
+    "requirementInDeck": "",
+    "addToDeck": "",
+    "removeFromDeck": "",
+    "delete": "",
+    "remove": "",
+    "compare": "",
+    "noCardOnDeck": "",
+    "loadDefaultDeck": "",
+    "saveDeck": "",
+    "hideDeck": "",
+    "showDeck": "",
+    "addDeck": "",
+    "selectDeck": "",
+    "loadingLink": "",
+    "loadingLinkError": "",
+    "shareDeck": "",
+    "removeCompare": "",
+    "shareNotComplete": "",
+    "characterCard": "Figurenkarten",
+    "actionCard": "Aktionskarten"
   }
 }
