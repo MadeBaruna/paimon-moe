@@ -1117,4 +1117,14 @@ export const itemList = {
     id: 'dakas_bell',
     name: "Daka's Bell",
   },
+
+  pseudo_stamens: {
+    id: 'pseudo_stamens',
+    name: 'Pseudo-Stamens',
+    rarity: 4,
+  },
+  sand_grease_pupa: {
+    id: 'sand_grease_pupa',
+    name: 'Sand Grease Pupa',
+  },
 };
