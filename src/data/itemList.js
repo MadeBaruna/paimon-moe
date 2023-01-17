@@ -1127,4 +1127,20 @@ export const itemList = {
     id: 'sand_grease_pupa',
     name: 'Sand Grease Pupa',
   },
+
+  desiccated_shell: {
+    id: 'desiccated_shell',
+    name: 'Desiccated Shell',
+    rarity: 2,
+  },
+  sturdy_shell: {
+    id: 'sturdy_shell',
+    name: 'Sturdy Shell',
+    rarity: 3,
+  },
+  marked_shell: {
+    id: 'marked_shell',
+    name: 'Marked Shell',
+    rarity: 4,
+  },
 };
