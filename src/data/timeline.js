@@ -379,6 +379,36 @@ export const eventsData = [
       description:
         "When the active character deals consecutive instances of Elemental DMG of the same Elemental Type using Normal, Charged, and Plunging Attacks, Elemental Skills, and Elemental Bursts to an opponent, they will gain 1 count stack. 1 stack can be gained every 1s. After 5 stacks have been gained, a shockwave will be unleashed at the opponent's position, dealing True DMG and clearing all heretofore accumulated stacks. Should the active character leave the field or deal a different type of Elemental DMG, these stacks will also be cleared. Dealing Physical DMG will not clear the stacks.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-02-01 04:00:00',
+      end: '2023-02-16 04:00:00',
+      color: '#4299E1',
+      description:
+        'The Dendro RES and Electro RES will be decreased by 30% for opponents that are under the Quickened state. This effect will be removed 2s after the Quickened state ends.',
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-02-16 04:00:00',
+      end: '2023-03-01 04:00:00',
+      color: '#4299E1',
+      description:
+        "After a character deals Dendro DMG to opponents through Normal Attack, Charged Attack, Plunging Attack, Elemental Skill, or Elemental Burst, the character will gain one stack of Verdant Vigor: DMG dealt by the character will be increased by 8% for 6s. This effect can be triggered once every 0.1s. Max 6 stacks. Each stack's duration is counted independently.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-03-01 04:00:00',
+      end: '2023-03-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character triggers a Spread or Aggravate reaction on an opponent, a shockwave will be unleashed at the opponent's position, dealing True DMG. A shockwave can be unleashed this way every 3s.",
+    },
   ],
   [
     {
