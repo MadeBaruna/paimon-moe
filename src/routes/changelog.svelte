@@ -14,6 +14,7 @@
 - Update achievements
 - Update banners
 - Update timeline
+- Update TCG cards
 
 2022/12/17
 - Add TCG Deck builder

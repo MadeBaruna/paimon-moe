@@ -13,6 +13,7 @@ const changelog = [
   'Update achievements',
   'Update banners',
   'Update timeline',
+  'Update TCG cards',
 ];
 
 const channel = new BroadcastChannel('paimonmoe-sw');

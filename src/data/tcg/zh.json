@@ -394,7 +394,7 @@
         "_id": 12013,
         "type": "元素爆发",
         "name": "闪耀奇迹♪",
-        "desc": "治疗我方所有角色4点。",
+        "desc": "治疗所有我方角色4点。",
         "cost": [
           {
             "type": "hydro",
@@ -749,7 +749,7 @@
     "type": "character",
     "name": "宵宫",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "元素爆发",
         "name": "琉金云间草",
-        "desc": "造成3点<span style=\"color: #FF9999FF;\">火元素伤害</span>，生成<span style=\"color: #FFFFFFFF;\">琉金火光</span>。",
+        "desc": "造成4点<span style=\"color: #FF9999FF;\">火元素伤害</span>，生成<span style=\"color: #FFFFFFFF;\">琉金火光</span>。",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "琉金火光",
           "desc": "宵宫以外的我方角色使用技能后：造成1点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "可莉",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "普通攻击",
+        "name": "砰砰",
+        "desc": "造成1点<span style=\"color: #FF9999FF;\">火元素伤害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "元素战技",
+        "name": "蹦蹦炸弹",
+        "desc": "造成3点<span style=\"color: #FF9999FF;\">火元素伤害</span>，本角色附属<span style=\"color: #FFFFFFFF;\">爆裂火花</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "爆裂火花",
+          "desc": "<span style=\"color: #FFFFFFFF;\">所附属角色进行<span style=\"color: #FFFFFFFF; text-decoration: underline;\">重击</span>时：</span>少花费1个<span style=\"color: #FF9999FF;\">火元素</span>，并且伤害+1。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "元素爆发",
+        "name": "轰轰火花",
+        "desc": "造成3点<span style=\"color: #FF9999FF;\">火元素伤害</span>，在对方场上生成<span style=\"color: #FFFFFFFF;\">轰轰火花</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "轰轰火花",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用技能后：</span>对我方出战角色造成2点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
         }
       }
     ]
@@ -1073,6 +1141,81 @@
     ]
   },
   {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "北斗",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "普通攻击",
+        "name": "征涛",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "元素战技",
+        "name": "捉浪",
+        "desc": "本角色附属<span style=\"color: #FFFFFFFF;\">捉浪·涛拥之守</span>并<span style=\"color: #FFFFFFFF; text-decoration: underline;\">准备技能</span>：<span style=\"color: #FFFFFFFF;\">踏潮</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "捉浪·涛拥之守",
+          "desc": "本角色将在下次行动时，直接使用技能：<span style=\"color: #FFFFFFFF;\">捉浪</span>。\\n准备技能期间：提供2点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span>，保护所附属的角色。"
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "元素爆发",
+        "name": "斫雷",
+        "desc": "造成3点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，生成<span style=\"color: #FFFFFFFF;\">雷兽之盾</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "雷兽之盾",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻击后：</span>造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\">我方角色受到至少为3的伤害时：</span>抵消其中1点伤害。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "元素战技",
+        "name": "踏潮",
+        "desc": "（需准备1个行动轮）\\n造成2点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>。",
+        "cost": []
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1176,7 +1319,7 @@
         "_id": 15023,
         "type": "元素爆发",
         "name": "蒲公英之风",
-        "desc": "治疗我方所有角色2点，召唤<span style=\"color: #FFFFFFFF;\">蒲公英领域</span>。",
+        "desc": "治疗所有我方角色2点，召唤<span style=\"color: #FFFFFFFF;\">蒲公英领域</span>。",
         "cost": [
           {
             "type": "anemo",
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "元素战技",
         "name": "孤风刀势",
-        "desc": "造成1点<span style=\"color: #80FFD7FF;\">风元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">剑影·孤风</span>。",
+        "desc": "召唤<span style=\"color: #FFFFFFFF;\">剑影·孤风</span>。",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "元素战技",
         "name": "霜驰影突",
-        "desc": "造成1点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">剑影·霜驰</span>。",
+        "desc": "召唤<span style=\"color: #FFFFFFFF;\">剑影·霜驰</span>。",
         "cost": [
           {
             "type": "cryo",
@@ -1677,7 +1820,7 @@
         "_id": 25014,
         "type": "元素爆发",
         "name": "机巧伪天狗抄",
-        "desc": "造成4点<span style=\"color: #80FFD7FF;\">风元素伤害</span>，触发我方所有<span style=\"color: #FFFFFFFF;\">剑影</span>召唤物的效果。（不消耗其可用次数）",
+        "desc": "造成4点<span style=\"color: #80FFD7FF;\">风元素伤害</span>，触发所有我方<span style=\"color: #FFFFFFFF;\">剑影</span>召唤物的效果。（不消耗其可用次数）",
         "cost": [
           {
             "type": "anemo",
@@ -2036,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "砰砰礼物",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">可莉</span>时，装备此牌。\\n可莉装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">砰砰礼物</span>。\\n装备有此牌的可莉生成的<span style=\"color: #FFFFFFFF;\">爆裂火花</span>的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>+1。\\n（牌组中包含可莉，才能加入牌组）"
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">雷泽</span>时，装备此牌。\\n雷泽装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">觉醒</span>。\\n装备有此牌的雷泽<span style=\"color: #FFFFFFFF;\">使用觉醒后</span>：使我方一个雷元素角色获得1点充能。（出战角色优先）\\n（牌组中包含雷泽，才能加入牌组）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">雷泽</span>时，装备此牌。\\n雷泽装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">觉醒</span>。\\n装备有此牌的雷泽使用<span style=\"color: #FFFFFFFF;\">觉醒</span>后：使我方一个雷元素角色获得1点充能。（出战角色优先）\\n（牌组中包含雷泽，才能加入牌组）"
     }
   },
   {
@@ -2097,6 +2256,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">赛诺</span>时，装备此牌。\\n赛诺装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">落羽的裁择</span>。\\n装备有此牌的赛诺在<span style=\"color: #FFFFFFFF;\">启途誓使</span>的「凭依」级数为3或5时使用<span style=\"color: #FFFFFFFF;\">落羽的裁择</span>时，造成的伤害额外+1。\\n（牌组中包含赛诺，才能加入牌组）"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "霹雳连霄",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">北斗</span>时，装备此牌。\\n北斗装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">霹雳连霄</span>。\\n装备有此牌的北斗使用<span style=\"color: #FFFFFFFF;\">霹雳连霄</span>时：如果<span style=\"color: #FFFFFFFF; text-decoration: underline;\">准备技能</span>期间受到过伤害，则使北斗本回合内「普通攻击」少花费1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">无色元素</span>。（最多触发2次）\\n（牌组中包含北斗，才能加入牌组）"
     }
   },
   {
@@ -2181,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">柯莱</span>时，装备此牌。\\n柯莱装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">飞叶迴斜</span>。\\n装备有此牌的柯莱使用了<span style=\"color: #FFFFFFFF;\">飞叶迴斜</span>的回合中，我方角色的技能引发<span style=\"color: #7EC236FF;\">草元素相关反应</span>后：造成1点<span style=\"color: #7EC236FF;\">草元素伤害</span>。（每回合1次）\\n（牌组中包含柯莱，才能加入牌组）"
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>\\n入场时：队伍中每有一名「璃月」角色，此牌就为附属的角色提供<span style=\"color: #FFFFFFFF;\">1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span></span>。（最多3点）\\n（<span style=\"color: #FFFFFFFF;\">「长柄武器」角色</span>才能装备。角色最多装备1件「武器」）"
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">入场时：</span>队伍中每有一名「璃月」角色，此牌就为附属的角色提供<span style=\"color: #FFFFFFFF;\">1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span></span>。（最多3点）\\n（<span style=\"color: #FFFFFFFF;\">「长柄武器」角色</span>才能装备。角色最多装备1件「武器」）"
     }
   },
   {
@@ -3287,7 +3462,7 @@
           "count": 1
         }
       ],
-      "desc": "本回合中，我方下一次引发元素反应时，造成的伤害+2。\\n使我方场上的<span style=\"color: #FFFFFFFF;\">燃烧烈焰、草原核、和激化领域</span>「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>」+1。\\n（牌组包含至少2个<span style=\"color: #99FF88FF;\">草元素</span>角色，才能加入牌组）"
+      "desc": "本回合中，我方下一次引发元素反应时，造成的伤害+2。\\n使我方场上的<span style=\"color: #FFFFFFFF;\">燃烧烈焰、草原核和激化领域</span>「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>」+1。\\n（牌组包含至少2个<span style=\"color: #99FF88FF;\">草元素</span>角色，才能加入牌组）"
     }
   },
   {
@@ -3347,7 +3522,7 @@
     "name": "本大爷还没有输！",
     "skills": {
       "cost": [],
-      "desc": "本回合有我方角色被击倒，才能打出：\\n生成1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>，我方当前出战角色获得1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。"
+      "desc": "本回合有我方角色被击倒，才能打出：\\n生成1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">万能元素</span>，我方当前出战角色获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。"
     }
   },
   {
@@ -3532,7 +3707,7 @@
     "name": "北地烟熏鸡",
     "skills": {
       "cost": [],
-      "desc": "本回合中，目标角色下一次<span style=\"color: #FFFFFFFF;\">普通攻击</span>少花费1<span style=\"color: #FFFFFFFF; text-decoration: underline;\">无色元素</span>。\\n（每回合每个角色最多食用1次「料理」）"
+      "desc": "本回合中，目标角色下一次<span style=\"color: #FFFFFFFF;\">普通攻击</span>少花费1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">无色元素</span>。\\n（每回合每个角色最多食用1次「料理」）"
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "目标角色在本回合结束前，所有<span style=\"color: #FFFFFFFF;\">普通攻击</span>都少花费1<span style=\"color: #FFFFFFFF; text-decoration: underline;\">无色元素</span>。\\n（每回合每个角色最多食用1次「料理」）"
+      "desc": "目标角色在本回合结束前，之后三次<span style=\"color: #FFFFFFFF;\">普通攻击</span>都少花费1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">无色元素</span>。\\n（每回合每个角色最多食用1次「料理」）"
     }
   }
 ]
