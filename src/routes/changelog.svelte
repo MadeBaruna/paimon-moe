@@ -8,6 +8,13 @@
 <div class="lg:ml-64 pt-20 lg:pt-8">
   <h1 class="font-display px-4 md:px-8 font-black text-5xl text-white">{$t('settings.changelog')}</h1>
   <pre class="text-white px-4 md:px-8">
+2023/01/18
+- Add Alhaitham and Yaoyao
+- Update weapons
+- Update achievements
+- Update banners
+- Update timeline
+
 2022/12/17
 - Add TCG Deck builder
 - Fix todo crash
