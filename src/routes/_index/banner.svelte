@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    kamisato_ayato: {
-      name: 'Kamisato Ayato',
+    xiao: {
+      name: 'Xiao',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    raiden_shogun: {
-      name: 'Raiden Shogun',
+    alhaitham: {
+      name: 'Alhaitham',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300041;
-  const image = 'ayato_raiden.png';
+  const bannerId = 300042;
+  const image = 'xiao_alhaitham.png';
   const width = 800;
-  const height = 481;
+  const height = 500;
 
   let loading = true;
   let user = '';

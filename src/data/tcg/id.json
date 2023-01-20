@@ -387,7 +387,7 @@
           "_id": 112011,
           "id": "melody_loop",
           "name": "Melody Loop",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Tahap Selesai:</span> Memulihkan 1 poin HP seluruh Karakter Aktifmu, lalu <span style=\"color: #80C0FFFF;\">memberikan efek Hydro</span> kepada Karakter aktifmu.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Tahap Selesai:</span> Memulihkan 1 poin HP seluruh Karaktermu, lalu <span style=\"color: #80C0FFFF;\">memberikan efek Hydro</span> kepada Karakter aktifmu.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span>: 2</span>"
         }
       },
       {
@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Yoimiya",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "Elemental Burst",
         "name": "Ryuukin Saxifrage",
-        "desc": "Mengakibatkan 3 poin <span style=\"color: #FF9999FF;\">Pyro DMG</span> dan menciptakan <span style=\"color: #FFFFFFFF;\">Aurous Blaze</span>.",
+        "desc": "Mengakibatkan 4 poin <span style=\"color: #FF9999FF;\">Pyro DMG</span> dan menciptakan <span style=\"color: #FFFFFFFF;\">Aurous Blaze</span>.",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Aurous Blaze",
           "desc": "Setelah Karaktermu selain Yoimiya menggunakan Skill: Mengakibatkan 1 <span style=\"color: #FF9999FF;\">Pyro DMG</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durasi (Ronde)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Klee",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "Normal Attack",
+        "name": "Kaboom!",
+        "desc": "Mengakibatkan 1 poin <span style=\"color: #FF9999FF;\">Pyro DMG</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "Elemental Skill",
+        "name": "Jumpy Dumpty",
+        "desc": "Mengakibatkan 3 poin <span style=\"color: #FF9999FF;\">Pyro DMG</span>.\\nKarakter ini menerima status <span style=\"color: #FFFFFFFF;\">Explosive Spark</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Explosive Spark",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Saat Karakter yang terpengaruh melakukan <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charged Attack</span>: </span>Akan menghabiskan 1 <span style=\"color: #FF9999FF;\">Pyro</span> lebih sedikit dan DMG +1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "Elemental Burst",
+        "name": "Sparks 'n' Splash",
+        "desc": "Mengakibatkan 3 poin <span style=\"color: #FF9999FF;\">Pyro DMG</span> dan menciptakan <span style=\"color: #FFFFFFFF;\">Sparks 'n' Splash</span> di area bermain lawan.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Sparks 'n' Splash",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Setelah Karaktermu menggunakan Skill:</span> Mengakibatkan 2 poin <span style=\"color: #FF9999FF;\">Pyro DMG</span> kepada Karakter aktifmu.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span>: 2</span>"
         }
       }
     ]
@@ -1069,6 +1137,81 @@
           "name": "Pactsworn Pathclearer",
           "desc": "<span style=\"color: #FFFFFFFF;\">Tahap Selesai:</span>Memperoleh 1 Level Indwelling.\\n<span style=\"color: #FFFFFFFF;\">Berdasarkan Level Indwelling, mendapatkan efek berikut ini</span>:\\nJika Lv. 2 atau lebih: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span> yang diakibatkan diubah menjadi <span style=\"color: #FFACFFFF;\">Electro DMG</span>;\\nJika Lv. 4 atau lebih: DMG yang diakibatkan +2 poin;\\nJika Lv. 6 atau lebih: Level Indwelling -4."
         }
+      }
+    ]
+  },
+  {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Beidou",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "Normal Attack",
+        "name": "Oceanborne",
+        "desc": "Mengakibatkan 2 poin <span style=\"color: #FFFFFFFF;\">Physical DMG</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "Elemental Skill",
+        "name": "Tidecaller",
+        "desc": "Karakter ini memperoleh <span style=\"color: #FFFFFFFF;\">Tidecaller: Surf Embrace</span> dan <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Mempersiapkan Skill</span>: <span style=\"color: #FFFFFFFF;\">Wavestrider</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Tidecaller: Surf Embrace",
+          "desc": "Karakter ini akan langsung melancarkan <span style=\"color: #FFFFFFFF;\">Tidecaller</span> saat melakukan Aksi selanjutnya.\\nSaat mempersiapkan Skill ini: Memberikan 2 poin <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Perisai</span> dan melindungi Karakter yang terpengaruh."
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "Elemental Burst",
+        "name": "Stormbreaker",
+        "desc": "Mengakibatkan 3 poin <span style=\"color: #FFACFFFF;\">Electro DMG</span> dan menciptakan <span style=\"color: #FFFFFFFF;\">Thunderbeast's Targe</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Thunderbeast's Targe",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Setelah Karaktermu menggunakan Normal Attack:</span> Mengakibatkan 1 poin <span style=\"color: #FFACFFFF;\">Electro DMG</span>.\\n<span style=\"color: #FFFFFFFF;\">Saat Karaktermu menerima minimum 3 DMG:</span> Mengurangi DMG yang diterima sebanyak 1 poin.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durasi (Ronde)</span>: 2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "Elemental Skill",
+        "name": "Wavestrider",
+        "desc": "Butuh persiapan selama 1 tahap aksi.\\nMengakibatkan 2 poin <span style=\"color: #FFACFFFF;\">Electro DMG</span>.",
+        "cost": []
       }
     ]
   },
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "Elemental Skill",
         "name": "Blustering Blade",
-        "desc": "Mengakibatkan 1 poin <span style=\"color: #80FFD7FF;\">Anemo DMG</span> dan memanggil <span style=\"color: #FFFFFFFF;\">Shadowsword: Lone Gale</span>.",
+        "desc": "Memanggil <span style=\"color: #FFFFFFFF;\">Shadowsword: Lone Gale</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "Elemental Skill",
         "name": "Frosty Assault",
-        "desc": "Mengakibatkan 1 poin <span style=\"color: #99FFFFFF;\">Cryo DMG</span> dan memanggil <span style=\"color: #FFFFFFFF;\">Shadowsword: Galloping Frost</span>.",
+        "desc": "Memanggil <span style=\"color: #FFFFFFFF;\">Shadowsword: Galloping Frost</span>.",
         "cost": [
           {
             "type": "cryo",
@@ -1848,7 +1991,7 @@
           "count": 5
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Ganyu</span>, kenakanlah kartu ini.\\nSetelah Ganyu mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Undivided Heart</span> sekali.\\nSaat Karakter Ganyu milikmu yang sudah mengenakan kartu ini menggunakan <span style=\"color: #FFFFFFFF;\">Undivided Heart</span>: Jika selama pertandingan ini Skill ini sudah pernah digunakan, maka <span style=\"color: #99FFFFFF;\">Cryo DMG</span> yang diakibatkan oleh Skill ini +1, dan mengakibatkan 3 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Piercing DMG</span> ke seluruh Karakter standby lawan.\\n(Kamu harus punya Ganyu di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Ganyu</span> sebagai Karakter aktif.\\nGanyu akan langsung melancarkan <span style=\"color: #FFD780FF;\">Undivided Heart</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF;\">Undivided Heart</span> akan mengakibatkan +1 <span style=\"color: #99FFFFFF;\">Cryo DMG</span> dan 3 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Piercing DMG</span> ke seluruh Karakter standby lawan jika Ganyu pernah melancarkan Skill ini selama pertandingan.\\n(Kamu harus punya Ganyu di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -1864,7 +2007,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Diona</span>, kenakanlah kartu ini.\\nSetelah Diona mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Shaken, Not Purred</span> sekali.\\nSaat Diona milikmu yang sudah mengenakan kartu ini menciptakan <span style=\"color: #FFFFFFFF;\">Cat-Claw Shield</span>, maka poin <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Perisai</span>-nya +1.\\n(Kamu harus punya Diona di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Diona</span> sebagai Karakter aktif.\\nDiona akan langsung melancarkan <span style=\"color: #FFD780FF;\">Shaken, Not Purred</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, poin <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Perisai</span> dari <span style=\"color: #FFFFFFFF;\">Cat-Claw Shield</span> yang diciptakan Diona +1.\\n(Kamu harus punya Diona di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -1880,7 +2023,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Kaeya</span>, kenakanlah kartu ini.\\nSetelah Kaeya mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Cold-Blooded Strike</span> sekali.\\nSetelah Kaeya milikmu yang sudah mengenakan kartu ini menggunakan <span style=\"color: #FFFFFFFF;\">Cold-Blooded Strike</span>, dia akan memulihkan 2 poin HP diri sendiri. (Sekali setiap Ronde)\\n(Kamu harus punya Kaeya di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Kaeya</span> sebagai Karakter aktif.\\nKaeya akan langsung melancarkan <span style=\"color: #FFD780FF;\">Cold-Blooded Strike</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, Kaeya akan memulihkan 2 poin HP diri sendiri saat melancarkan <span style=\"color: #FFFFFFFF;\">Cold-Blooded Strike</span>. (Sekali setiap Ronde)\\n(Kamu harus punya Kaeya di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -1928,7 +2071,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Barbara</span>, kenakanlah kartu ini.\\nSetelah Barbara mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Glorious Season</span> sekali.\\nSaat Barbara milikmu yang sudah mengenakan kartu ini berada di arena, maka <span style=\"color: #FFFFFFFF;\">Melody Loop</span> akan membuatmu menghabiskan 1 Dadu Elemental lebih sedikit saat melakukan Aksi \"bertukar Karakter\". (Sekali setiap Ronde)\\n(Kamu harus punya Barbara di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Barbara</span> sebagai Karakter aktif.\\nBarbara akan langsung melancarkan <span style=\"color: #FFD780FF;\">Glorious Season</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF;\">Melody Loop</span> akan mengurangi 1 Dadu Elemental yang dibutuhkan saat melakukan Aksi \"bertukar Karakter\" (satu kali setiap Ronde) selama Barbara belum kalah.\\n(Kamu harus punya Barbara di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -1944,7 +2087,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Xingqiu</span>, kenakanlah kartu ini.\\nSetelah Xingqiu mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">The Scent Remained</span> sekali.\\nSaat Xingqiu milikmu yang sudah mengenakan kartu ini menciptakan <span style=\"color: #FFFFFFFF;\">Rain Sword</span>, maka <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span> awal +1.\\n(Kamu harus punya Xingqiu di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Xingqiu</span> sebagai Karakter aktif.\\nXingqiu akan langsung melancarkan <span style=\"color: #FFD780FF;\">The Scent Remained</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span> awal dari <span style=\"color: #FFFFFFFF;\">Rain Sword</span> yang diciptakan Xingqiu +1.\\n(Kamu harus punya Xingqiu di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -1964,7 +2107,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Mona</span>, kenakanlah kartu ini.\\nSetelah Mona mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Prophecy of Submersion</span> sekali.\\nSaat Mona milikmu yang sudah mengenakan kartu ini adalah Karakter Aktif, <span style=\"color: #80C0FFFF;\">Reaksi Terkait Hydro</span> yang kamu picu mengakibatkan +2 poin DMG tambahan.\\n(Kamu harus punya Mona di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Mona</span> sebagai Karakter aktif.\\nMona akan langsung melancarkan <span style=\"color: #FFD780FF;\">Prophecy of Submersion</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #80C0FFFF;\">Reaksi Terkait Hydro</span> yang terpicu akan mengakibatkan +2 poin DMG selama Mona terpilih sebagai Karakter Aktif.\\n(Kamu harus punya Mona di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -1980,7 +2123,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Diluc</span>, kenakanlah kartu ini.\\nSetelah Diluc mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Flowing Flame</span> sekali.\\nSetiap kali Karakter Diluc milikmu yang sudah mengenakan kartu ini menggunakan <span style=\"color: #FFFFFFFF;\">Flowing Flame</span> kedua kalinya dalam satu Ronde, maka akan menghabiskan 1  <span style=\"color: #FF9999FF;\">Dadu Pyro</span> lebih sedikit.\\n(Kamu harus punya Diluc di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Diluc</span> sebagai Karakter aktif.\\nDiluc akan langsung melancarkan <span style=\"color: #FFD780FF;\">Flowing Flame</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, penggunaan <span style=\"color: #FFFFFFFF;\">Flowing Flame</span> kedua kalinya pada setiap ronde akan menghabiskan 1  <span style=\"color: #FF9999FF;\">Dadu Pyro</span> lebih sedikit.\\n(Kamu harus punya Karakter Diluc di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -1996,7 +2139,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Xiangling</span>, kenakanlah kartu ini.\\nSetelah Xiangling mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Crossfire</span> sekali.\\nSaat Xiangling milikmu yang sudah mengenakan kartu ini menggunakan <span style=\"color: #FFFFFFFF;\">Crossfire</span>, dia juga akan mengakibatkan 1 <span style=\"color: #FF9999FF;\">Pyro DMG</span>.\\n(Kamu harus punya Xiangling di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Xiangling</span> sebagai Karakter aktif.\\nXiangling akan langsung melancarkan <span style=\"color: #FFD780FF;\">Crossfire</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, Xiangling juga akan mengakibatkan 1 <span style=\"color: #FF9999FF;\">Pyro DMG</span> saat melancarkan <span style=\"color: #FFFFFFFF;\">Crossfire</span>.\\n(Kamu harus punya Xiangling di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2016,7 +2159,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Bennett</span>, kenakanlah kartu ini.\\nSetelah Bennett mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Grand Expectation</span> sekali.\\nSaat Karakter Bennett milikmu yang sudah mengenakan kartu ini menciptakan <span style=\"color: #FFFFFFFF;\">Inspiration Field</span>, Bonus DMG-nya kini selalu aktif dan tidak akan lagi memiliki batasan HP.\\n(Kamu harus punya Bennett di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Bennett</span> sebagai Karakter aktif.\\nBennett akan langsung melancarkan <span style=\"color: #FFD780FF;\">Grand Expectation</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, Bonus DMG dari <span style=\"color: #FFFFFFFF;\">Inspiration Field</span> yang diciptakan Bennett akan menjadi selalu aktif dan tidak lagi memiliki batasan HP.\\n(Kamu harus punya Bennett di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2032,7 +2175,23 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Yoimiya</span>, kenakanlah kartu ini.\\nSetelah Yoimiya mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Naganohara Meteor Swarm</span> sekali.\\nSetelah Yoimiya milikmu yang sudah mengenakan kartu ini memicu <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span>: mengakibatkan 1 poin <span style=\"color: #FF9999FF;\">Pyro DMG</span> tambahan.\\n(Kamu harus punya Yoimiya di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Yoimiya</span> sebagai Karakter aktif.\\nYoimiya akan langsung melancarkan <span style=\"color: #FFD780FF;\">Naganohara Meteor Swarm</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> yang dipicu oleh Yoimiya akan mengakibatkan 1 poin <span style=\"color: #FF9999FF;\">Pyro DMG</span> tambahan.\\n(Kamu harus punya Yoimiya di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
+    }
+  },
+  {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Pounding Surprise",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Klee</span> sebagai Karakter aktif.\\nKlee akan langsung melancarkan <span style=\"color: #FFD780FF;\">Pounding Surprise</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span> awal dari <span style=\"color: #FFFFFFFF;\">Explosive Spark</span> yang diciptakan oleh Klee +1.\\n(Kamu harus punya Klee di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2048,7 +2207,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Fischl</span>, kenakanlah kartu ini.\\nSetelah Fischl mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Stellar Predator</span> sekali.\\nSaat Fischl milikmu yang mengenakan kartu ini menciptakan <span style=\"color: #FFFFFFFF;\">Oz</span> maka setelah Fischl melancarkan <span style=\"color: #FFFFFFFF;\">Normal Attack</span>: mengakibatkan 2 poin <span style=\"color: #FFACFFFF;\">Electro DMG</span>.(Mengonsumsi <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span>)\\n(Kamu harus punya Fischl di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Fischl</span> sebagai Karakter aktif.\\nFischl akan langsung melancarkan <span style=\"color: #FFD780FF;\">Stellar Predator</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF;\">Oz</span> yang diciptakan juga akan mengakibatkan 2 poin <span style=\"color: #FFACFFFF;\">Electro DMG</span> (mengonsumsi <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span>) saat Fischl melancarkan <span style=\"color: #FFFFFFFF;\">Normal Attack</span>.\\n(Kamu harus punya Fischl di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Razor</span>, kenakanlah kartu ini.\\nSetelah Razor mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Awakening</span> sekali.\\nSetelah Karakter Razor milikmu yang sudah mengenakan kartu ini menggunakan <span style=\"color: #FFFFFFFF;\">Awakening</span>: membuat 1 Karakter berelemen Electro milikmu memperoleh 1 poin Energy (Diutamakan untuk Karakter Aktif).\\n(Kamu harus punya Razor di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Razor</span> sebagai Karakter aktif.\\nRazor akan langsung melancarkan <span style=\"color: #FFD780FF;\">Awakening</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, salah satu Karakter berelemen Electro milikmu akan memperoleh 1 poin Energy (diutamakan untuk Karakter Aktif) setelah Razor melancarkan <span style=\"color: #FFFFFFFF;\">Awakening</span>.\\n(Kamu harus punya Razor di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2080,7 +2239,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Keqing</span>, kenakanlah kartu ini.\\nSetelah Keqing mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Thundering Penance</span> sekali.\\nSaat Keqing milikmu yang sudah mengenakan kartu ini menciptakan <span style=\"color: #FFFFFFFF;\">Electro Elemental Infusion</span>, maka akan mendapatkan efek berikut ini:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durasi (Ronde)</span> awal +1 dan <span style=\"color: #FFACFFFF;\">Electro DMG</span> yang diakibatkan Karakter yang terpengaruh +1.\\n(Kamu harus punya Keqing di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Keqing</span> sebagai Karakter aktif.\\nKeqing akan langsung melancarkan <span style=\"color: #FFD780FF;\">Thundering Penance</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF;\">Electro Elemental Infusion</span> yang diciptakan Keqing akan mendapatkan efek berikut:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durasi (Ronde)</span> awal +1\\n<span style=\"color: #FFACFFFF;\">Electro DMG</span> yang diakibatkan +1.\\n(Kamu harus punya Keqing di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2096,7 +2255,23 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Cyno</span>, kenakanlah kartu ini.\\nSetelah Cyno mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Featherfall Judgment</span> sekali.\\nSaat mengenakan kartu ini, Karakter Cyno milikmu dapat menggunakan <span style=\"color: #FFFFFFFF;\">Featherfall Judgment</span> saat efek Indwelling <span style=\"color: #FFFFFFFF;\">Pactsworn Pathclearer</span>-nya level 3 atau 5, mengakibatkan +1 poin DMG tambahan.\\n(Kamu harus punya Cyno di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Cyno</span> sebagai Karakter aktif.\\nCyno akan langsung melancarkan <span style=\"color: #FFD780FF;\">Featherfall Judgment</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, jika efek Indwelling <span style=\"color: #FFFFFFFF;\">Pactsworn Pathclearer</span> Cyno mencapai Lv. 3 atau Lv. 5, akan mengakibatkan +1 poin DMG tambahan saat melancarkan <span style=\"color: #FFFFFFFF;\">Featherfall Judgment</span>.\\n(Kamu harus punya Cyno di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Lightning Storm",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Beidou</span> sebagai Karakter aktif.\\nBeidou akan langsung melancarkan <span style=\"color: #FFD780FF;\">Lightning Storm</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, lalu Beidou melancarkan <span style=\"color: #FFFFFFFF;\">Lightning Storm</span>, maka Normal Attack Beidou dalam Ronde ini akan menghabiskan 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemen Tidak Selaras</span> lebih sedikit jika menerima DMG selama durasi <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Mempersiapkan Skill</span> berlangsung. (Dapat terpicu maksimum 2 kali)\\n(Kamu harus punya Beidou di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2116,7 +2291,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Sucrose</span>, kenakanlah kartu ini.\\nSetelah Sucrose mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Chaotic Entropy</span> sekali.\\nSaat Karakter Sucrose milikmu yang sudah mengenakan kartu ini menciptakan <span style=\"color: #FFFFFFFF;\">Large Wind Spirit</span> dan itu sudah diubah menjadi elemen lain, kamu akan mengakibatkan +1 poin DMG untuk elemen ini.\\n(Kamu harus punya Sucrose di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Sucrose</span> sebagai Karakter aktif.\\nSucrose akan langsung melancarkan <span style=\"color: #FFD780FF;\">Chaotic Entropy</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF;\">Large Wind Spirit</span> yang diciptakan Sucrose dan telah terpengaruh elemen lain setelah memicu Swirl akan mengakibatkan +1 poin DMG dengan elemen yang sesuai. \\n(Kamu harus punya Sucrose di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2136,7 +2311,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Jean</span>, kenakanlah kartu ini.\\nSetelah Jean mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Lands of Dandelion</span> sekali.\\nSaat Karakter Jean milikmu yang sudah mengenakan kartu ini berada di arena, maka <span style=\"color: #FFFFFFFF;\">Dandelion Field</span> dapat membuatmu mengakibatkan +1 <span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">Anemo DMG</span></span>.\\n(Kamu harus punya Jean di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Jean</span> sebagai Karakter aktif.\\nJean akan langsung melancarkan <span style=\"color: #FFD780FF;\">Lands of Dandelion</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF;\">Dandelion Field</span> akan mengakibatkan +1 <span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">Anemo DMG</span></span> selama Jean belum kalah.\\n(Kamu harus punya Jean di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2152,7 +2327,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Ningguang</span>, kenakanlah kartu ini.\\nSetelah Ningguang mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Strategic Reserve</span> sekali.\\nSaat Karakter Ningguang milikmu yang sudah mengenakan kartu ini berada di arena, maka <span style=\"color: #FFFFFFFF;\">Jade Screen</span> dapat membuatmu mengakibatkan +1 <span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">Geo DMG</span></span>.\\n(Kamu harus punya Ningguang di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Ningguang</span> sebagai Karakter aktif.\\nNingguang akan langsung melancarkan <span style=\"color: #FFD780FF;\">Strategic Reserve</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF;\">Jade Screen</span> akan mengakibatkan +1 <span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">Geo DMG</span></span> selama Ningguang belum kalah.\\n(Kamu harus punya Ningguang di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2168,7 +2343,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Noelle</span>, kenakanlah kartu ini.\\nSetelah Noelle mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">I Got Your Back</span> sekali.\\nSaat Noelle milikmu yang sudah mengenakan kartu ini menciptakan <span style=\"color: #FFFFFFFF;\">Full Plate</span>, itu akan memulihkan 1 poin HP seluruh Karakter milikmu setelah Noelle menggunakan <span style=\"color: #FFFFFFFF;\">Normal Attack</span>. (Sekali setiap Ronde)\\n(Kamu harus punya Noelle di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Noelle</span> sebagai Karakter aktif.\\nNoelle akan langsung melancarkan <span style=\"color: #FFD780FF;\">I Got Your Back</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, <span style=\"color: #FFFFFFFF;\">Full Plate</span> yang diciptakan Noelle akan memulihkan 1 poin HP seluruh Karakter milikmu saat Noelle melancarkan <span style=\"color: #FFFFFFFF;\">Normal Attack</span>. (Satu kali setiap Ronde)\\n(Kamu harus punya Noelle di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2181,10 +2356,10 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu adalah <span style=\"color: #FFFFFFFF;\">Collei</span>, kenakanlah kartu ini.\\nSetelah Collei mengenakannya, akan langsung menggunakan<span style=\"color: #FFD780FF;\">Floral Sidewinder</span> sekali.\\nSetelah Collei milikmu yang sudah mengenakan kartu ini <span style=\"color: #FFFFFFFF;\">menggunakan Floral Sidewinder</span> pada Ronde ini, setelah Skill Karakter-mu memicu <span style=\"color: #7EC236FF;\">Reaksi Terkait Dendro</span>: mengakibatkan 1 poin <span style=\"color: #7EC236FF;\">Dendro DMG</span>. (Sekali setiap Ronde)\\n(Kamu harus punya Collei di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Collei</span> sebagai Karakter aktif.\\nCollei akan langsung melancarkan <span style=\"color: #FFD780FF;\">Floral Sidewinder</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, Karakter aktifmu akan mengakibatkan +1 poin <span style=\"color: #7EC236FF;\">Dendro DMG</span> saat memicu <span style=\"color: #7EC236FF;\">Reaksi Terkait Dendro</span> (satu kali setiap Ronde), jika Collei melancarkan <span style=\"color: #FFFFFFFF;\">Floral Sidewinder</span> pada Ronde tersebut.\\n(Kamu harus punya Collei di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2204,7 +2379,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Rhodeia of Loch</span>, kenakanlah kartu ini.\\nSetelah Rhodeia of Loch mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Streaming Surge</span> sekali.\\nSaat Rhodeia of Loch milikmu yang sudah mengenakan kartu ini menggunakan <span style=\"color: #FFFFFFFF;\">Streaming Surge</span>, semua Panggilan-mu memperoleh +1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span>.\\n(Kamu harus punya Rhodeia of Loch di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Rhodeia of Loch</span> sebagai Karakter aktif.\\nRhodeia of Loch akan langsung melancarkan <span style=\"color: #FFD780FF;\">Streaming Surge</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, semua Panggilan-mu akan memperoleh +1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Penggunaan</span> saat Rhodeia of Loch melancarkan <span style=\"color: #FFFFFFFF;\">Streaming Surge</span>.\\n(Kamu harus punya Rhodeia of Loch di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2220,7 +2395,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Saat Karakter aktifmu <span style=\"color: #FFFFFFFF;\">Mirror Maiden</span>, kenakanlah kartu ini.\\nSetelah Mirror Maiden mengenakannya, langsung gunakanlah <span style=\"color: #FFD780FF;\">Mirror Cage</span> sekali.\\nSaat Mirror Maiden milikmu yang sudah mengenakan kartu ini menciptakan <span style=\"color: #FFFFFFFF;\">Refraction</span>, maka akan mendapatkan efek berikut ini:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durasi (Ronde)</span> awal +1, dan itu akan meningkatkan 1 biaya Dadu Elemental untuk berganti dari Karakter yang terpengaruh efek ke Karakter lain.\\n(Kamu harus punya Mirror Maiden di Dek-mu untuk menambahkan kartu ini ke Dek-mu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>: Kartu ini dapat dikenakan saat menggunakan <span style=\"color: #FFFFFFFF;\">Mirror Maiden</span> sebagai Karakter aktif.\\nMirror Maiden akan langsung melancarkan <span style=\"color: #FFD780FF;\">Mirror Cage</span> satu kali setelah mengenakannya.\\nKetika mengenakan kartu ini, Mirror Maiden milikmu akan mendapatkan efek berikut setelah menciptakan <span style=\"color: #FFFFFFFF;\">Refraction</span>:\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durasi (Ronde)</span> awal +1\\nMeningkatkan 1 biaya Dadu Elemental untuk berganti dari Karakter yang terpengaruh efek ke Karakter lain.\\n(Kamu harus punya Mirror Maiden di dalam Dek-mu untuk menambahkan kartu ini ke dalam Dek)"
     }
   },
   {
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Karakter mengakibatkan +1 DMG</span>.\\nSaat dimainkan: Setiap 1 Karakter \"Liyue\" yang ada dalam tim, kartu ini akan menyediakan<span style=\"color: #FFFFFFFF;\">1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Perisai</span></span> untuk Karakter yang terpengaruh. (Maksimum 3 poin)\\n(<span style=\"color: #FFFFFFFF;\">Hanya Karakter pengguna Polearm</span> yang dapat mengenakan ini. Karakter maksimum dapat mengenakan 1 buah Senjata)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Karakter mengakibatkan +1 DMG</span>.\\n<span style=\"color: #FFFFFFFF;\">Saat dimainkan:</span> ntuk setiap 1 Karakter \"Liyue\" yang ada di dalam tim, kartu ini akan memberikan <span style=\"color: #FFFFFFFF;\">1 poin <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Perisai</span></span> untuk Karakter yang mengenakan kartu ini. (Maksimum 3 poin)\\n(<span style=\"color: #FFFFFFFF;\">Hanya Karakter pengguna Polearm</span> yang dapat mengenakan ini. Karakter dapat mengenakan maksimum 1 Senjata)"
     }
   },
   {
@@ -2948,7 +3123,7 @@
           "count": 2
         }
       ],
-      "desc": "Masuk ke arena dengan 2 \"Transmutation Material\" saat dimainkan.\\n<span style=\"color: #FFFFFFFF;\">Tahap Selesai:</span> Memperoleh 1 \"Transmutation Material\".\\n<span style=\"color: #FFFFFFFF;\">Saat memainkan Kartu Artefak:</span> Jika memungkinkan, habiskan \"Transmutation Material\" sejumlah dengan total biaya dari Artefak untuk mengenakan Artefak secara cuma-cuma. (Sekali setiap Ronde)"
+      "desc": "Masuk ke arena dengan 2 \"Transmutation Material\" saat dimainkan.\\n<span style=\"color: #FFFFFFFF;\">Tahap Selesai:</span> Memperoleh 1 \"Transmutation Material\".\\n<span style=\"color: #FFFFFFFF;\">Saat memainkan Kartu Artefak:</span> Jika memungkinkan, habiskan \"Transmutation Material\" sejumlah dengan total biaya dari Artefak untuk mengenakan Artefak secara gratis. (Sekali setiap Ronde)"
     }
   },
   {
@@ -2963,7 +3138,7 @@
           "count": 2
         }
       ],
-      "desc": "Masuk ke arena dengan 2 \"Forging Billet\" saat dimainkan.\\n<span style=\"color: #FFFFFFFF;\">Tahap Selesai:</span> Memperoleh 1 \"Forging Billet\".\\n<span style=\"color: #FFFFFFFF;\">Saat memainkan Kartu Senjata:</span> Jika memungkinkan, habiskan Forging Billet sejumlah dengan total biaya dari Senjata ini untuk mengenakan Senjata ini secara cuma-cuma. (Sekali setiap Ronde)"
+      "desc": "Masuk ke arena dengan 2 \"Forging Billet\" saat dimainkan.\\n<span style=\"color: #FFFFFFFF;\">Tahap Selesai:</span> Memperoleh 1 \"Forging Billet\".\\n<span style=\"color: #FFFFFFFF;\">Saat memainkan Kartu Senjata:</span> Jika memungkinkan, habiskan Forging Billet sejumlah dengan total biaya dari Senjata ini untuk mengenakan Senjata ini secara gratis. (Sekali setiap Ronde)"
     }
   },
   {
@@ -3023,7 +3198,7 @@
     "name": "Chang the Ninth",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Setelah Karakter kedua pemain menggunakan Skill:</span> Jika mengakibatkan <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Piercing DMG</span>, atau memicu <span style=\"color: #FFFFFFFF;\">Reaksi Elemental</span>, kartu ini memperoleh <span style=\"color: #FFFFFFFF;\">1 \"Inspiration\"</span>\\nSaat kartu ini memperoleh <span style=\"color: #FFFFFFFF;\">3 \"Inspiration\"</span>, buang kartu ini, lalu ambil 2 kartu."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Setelah Karakter salah satu pemain menggunakan Skill:</span> jika mengakibatkan <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Piercing DMG</span>, atau memicu <span style=\"color: #FFFFFFFF;\">Reaksi Elemental</span>, kartu ini memperoleh <span style=\"color: #FFFFFFFF;\">1 \"Inspiration\"</span>\\nSaat kartu ini memperoleh <span style=\"color: #FFFFFFFF;\">3 \"Inspiration\"</span>, buang kartu ini, lalu ambil 2 kartu."
     }
   },
   {
@@ -3312,7 +3487,7 @@
     "name": "Changing Shifts",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Saat kali selanjutnya kamu melakukan Aksi \"bertukar Karakter\":</span> Akan menghabiskan 1 Dadu Elemental lebih sedikit."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Saat kamu melakukan Aksi \"bertukar Karakter\" yang selanjutnya:</span> Akan menghabiskan 1 Dadu Elemental lebih sedikit."
     }
   },
   {
@@ -3347,7 +3522,7 @@
     "name": "I Haven't Lost Yet!",
     "skills": {
       "cost": [],
-      "desc": "Hanya dapat dimainkan jika salah satu Karaktermu dikalahkan di Ronde ini:\\nMenciptakan 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemen Omni</span> dan Karakter Aktifmu saat ini memperoleh 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energy</span>."
+      "desc": "Hanya dapat dimainkan jika salah satu Karaktermu dikalahkan di Ronde ini:\\nMenciptakan 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemen Omni</span> dan Karakter Aktifmu saat ini memperoleh 1 poin <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energy</span>."
     }
   },
   {
@@ -3357,7 +3532,7 @@
     "name": "Leave It to Me!",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Saat kali selanjutnya kamu melakukan Aksi \"bertukar Karakter\":</span> Pertukaran ini dianggap sebagai <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Cepat</span>, bukan <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Saat kamu melakukan Aksi \"bertukar Karakter\" yang selanjutnya:</span> Pertukaran ini dianggap sebagai <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Cepat</span>, bukan <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aksi Tempur</span>."
     }
   },
   {
@@ -3532,7 +3707,7 @@
     "name": "Northern Smoked Chicken",
     "skills": {
       "cost": [],
-      "desc": "Selama Ronde ini, <span style=\"color: #FFFFFFFF;\">Normal Attack</span> Karakter target yang berikutnya akan menghabiskan biaya 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemen Tidak Selaras</span> lebih sedikit.\\n(Karakter dapat mengonsumsi paling banyak 1 Makanan per Ronde)"
+      "desc": "Selama Ronde ini, <span style=\"color: #FFFFFFFF;\">Normal Attack</span> Karakter target yang berikutnya akan menghabiskan biaya 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemen Tidak Selaras</span> lebih sedikit.\\n(Karakter dapat mengonsumsi maksimum 1 Makanan per Ronde)"
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "Sebelum Ronde ini berakhir, biaya dari <span style=\"color: #FFFFFFFF;\">Normal Attack</span> Karakter target akan menghabiskan 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemen Tidak Selaras</span> lebih sedikit.\\n(Karakter dapat mengonsumsi paling banyak 1 Makanan per Ronde)"
+      "desc": "Sebelum Ronde ini berakhir, biaya dari 3 kali <span style=\"color: #FFFFFFFF;\">Normal Attack</span> Karakter target selanjutnya akan menghabiskan 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemen Tidak Selaras</span> lebih sedikit.\\n(Karakter dapat mengonsumsi maksimum 1 Makanan per Ronde)"
     }
   }
 ]

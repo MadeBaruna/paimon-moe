@@ -9893,4 +9893,117 @@ export const weaponList = {
       },
     ],
   },
+  light_of_foliar_incision: {
+    id: 'light_of_foliar_incision',
+    name: 'Light of Foliar Incision',
+    rarity: 5,
+    atk: 44,
+    source: 'Wish',
+    secondary: 'CRIT DMG',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.copper_talisman_of_the_forest_dew,
+            amount: 5,
+          },
+          {
+            item: itemList.desiccated_shell,
+            amount: 5,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 5,
+          },
+          {
+            item: itemList.desiccated_shell,
+            amount: 18,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 9,
+          },
+          {
+            item: itemList.sturdy_shell,
+            amount: 9,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 5,
+          },
+          {
+            item: itemList.sturdy_shell,
+            amount: 18,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 9,
+          },
+          {
+            item: itemList.marked_shell,
+            amount: 14,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_talisman_of_the_forest_dew,
+            amount: 6,
+          },
+          {
+            item: itemList.marked_shell,
+            amount: 27,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

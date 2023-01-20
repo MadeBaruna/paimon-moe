@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Yoimiya",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "Elemental Burst",
         "name": "Ryuukin Saxifrage",
-        "desc": "Deals 3 <span style=\"color: #FF9999FF;\">Pyro DMG</span>, creates 1 <span style=\"color: #FFFFFFFF;\">Aurous Blaze</span>.",
+        "desc": "Deals 4 <span style=\"color: #FF9999FF;\">Pyro DMG</span>, creates 1 <span style=\"color: #FFFFFFFF;\">Aurous Blaze</span>.",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Aurous Blaze",
           "desc": "After your character other than Yoimiya uses a Skill: Deal 1 <span style=\"color: #FF9999FF;\">Pyro DMG</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duration (Rounds)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Klee",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "Normal Attack",
+        "name": "Kaboom!",
+        "desc": "Deals 1 <span style=\"color: #FF9999FF;\">Pyro DMG</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "Elemental Skill",
+        "name": "Jumpy Dumpty",
+        "desc": "Deals 3 <span style=\"color: #FF9999FF;\">Pyro DMG</span>. This character gains <span style=\"color: #FFFFFFFF;\">Explosive Spark</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Explosive Spark",
+          "desc": "<span style=\"color: #FFFFFFFF;\">When the character to which this is attached uses a <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charged Attack</span>: </span>Spend 1 less <span style=\"color: #FF9999FF;\">Pyro</span> and deal +1 DMG.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "Elemental Burst",
+        "name": "Sparks 'n' Splash",
+        "desc": "Deals 3 <span style=\"color: #FF9999FF;\">Pyro DMG</span>, creates 1 <span style=\"color: #FFFFFFFF;\">Sparks 'n' Splash</span> at the opponent's play area.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Sparks 'n' Splash",
+          "desc": "<span style=\"color: #FFFFFFFF;\">After your character uses a Skill:</span> Sparks 'n' Splash deals 2 <span style=\"color: #FF9999FF;\">Pyro DMG</span> to your active character.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 2</span>"
         }
       }
     ]
@@ -1069,6 +1137,81 @@
           "name": "Pactsworn Pathclearer",
           "desc": "<span style=\"color: #FFFFFFFF;\">End Phase:</span> Gain 1 level of Indwelling.\\n<span style=\"color: #FFFFFFFF;\">Create the following effects based on the Indwelling Level</span>:\\nIf equal to or greater than 2: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span> dealt is converted to <span style=\"color: #FFACFFFF;\">Electro DMG</span>;\\nIf equal to or greater than 4: DMG dealt +2;\\nIf equal to or greater than 6: Indwelling Level -4."
         }
+      }
+    ]
+  },
+  {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Beidou",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "Normal Attack",
+        "name": "Oceanborne",
+        "desc": "Deals 2 <span style=\"color: #FFFFFFFF;\">Physical DMG</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "Elemental Skill",
+        "name": "Tidecaller",
+        "desc": "This character gains a <span style=\"color: #FFFFFFFF;\">Tidecaller: Surf Embrace</span>. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Prepare Skill</span>: <span style=\"color: #FFFFFFFF;\">Wavestrider</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Tidecaller: Surf Embrace",
+          "desc": "The next time this character acts, they will immediately use the Skill <span style=\"color: #FFFFFFFF;\">Tidecaller</span>.\\nWhile preparing this Skill: Grant 2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Shield</span> points to the character to which this is attached."
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "Elemental Burst",
+        "name": "Stormbreaker",
+        "desc": "Deals 3 <span style=\"color: #FFACFFFF;\">Electro DMG</span>, creates 1 <span style=\"color: #FFFFFFFF;\">Thunderbeast's Targe</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Thunderbeast's Targe",
+          "desc": "<span style=\"color: #FFFFFFFF;\">After your character uses a Normal Attack:</span> Deal 1 <span style=\"color: #FFACFFFF;\">Electro DMG</span>.\\n<span style=\"color: #FFFFFFFF;\">When your character receives at least 3 DMG: </span>Decrease DMG taken by 1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duration (Rounds)</span>: 2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "Elemental Skill",
+        "name": "Wavestrider",
+        "desc": "(Prepare for 1 turn)\\nDeals 2 <span style=\"color: #FFACFFFF;\">Electro DMG</span>.",
+        "cost": []
       }
     ]
   },
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "Elemental Skill",
         "name": "Blustering Blade",
-        "desc": "Deals 1 <span style=\"color: #80FFD7FF;\">Anemo DMG</span>, summons 1 <span style=\"color: #FFFFFFFF;\">Shadowsword: Lone Gale</span>.",
+        "desc": "Summons 1 <span style=\"color: #FFFFFFFF;\">Shadowsword: Lone Gale</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "Elemental Skill",
         "name": "Frosty Assault",
-        "desc": "Deals 1 <span style=\"color: #99FFFFFF;\">Cryo DMG</span>, summons 1 <span style=\"color: #FFFFFFFF;\">Shadowsword: Galloping Frost</span>.",
+        "desc": "Summons 1 <span style=\"color: #FFFFFFFF;\">Shadowsword: Galloping Frost</span>.",
         "cost": [
           {
             "type": "cryo",
@@ -2036,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Pounding Surprise",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Klee</span>, equip this card.\\nAfter Klee equips this card, immediately use <span style=\"color: #FFD780FF;\">Pounding Surprise</span> once.\\nWhen your Klee, who has this card equipped, creates an <span style=\"color: #FFFFFFFF;\">Explosive Spark</span>, its <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span> +1.\\n(You must have Klee in your deck to add this card to your deck.)"
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Razor</span>, equip this card.\\nAfter Razor equips this card, immediately use <span style=\"color: #FFD780FF;\">Awakening</span> once.\\nAfter your Razor, who has this card equipped, <span style=\"color: #FFFFFFFF;\">uses Awakening</span>: 1 of your Electro characters gains 1 Energy. (Active Character prioritized)\\n(You must have Razor in your deck to add this card to your deck.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Razor</span>, equip this card.\\nAfter Razor equips this card, immediately use <span style=\"color: #FFD780FF;\">Awakening</span> once.\\nAfter your Razor, who has this card equipped, uses <span style=\"color: #FFFFFFFF;\">Awakening</span>: 1 of your Electro characters gains 1 Energy. (Active Character prioritized)\\n(You must have Razor in your deck to add this card to your deck.)"
     }
   },
   {
@@ -2097,6 +2256,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Cyno</span>, equip this card.\\nAfter Cyno equips this card, immediately use <span style=\"color: #FFD780FF;\">Featherfall Judgment</span> once.\\nWhen your Cyno, who has this card equipped, uses <span style=\"color: #FFFFFFFF;\">Featherfall Judgment</span> with 3 or 5 levels of <span style=\"color: #FFFFFFFF;\">Pactsworn Pathclearer</span>'s Indwelling effect, deal +1 additional DMG.\\n(You must have Cyno in your deck to add this card to your deck.)"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Lightning Storm",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Beidou</span>, equip this card.\\nAfter Beidou equips this card, immediately use <span style=\"color: #FFD780FF;\">Lightning Storm</span> once.\\nWhen Beidou, who has this card equipped, uses <span style=\"color: #FFFFFFFF;\">Lightning Storm</span>: If DMG is taken while <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Prepare Skill</span> is active, Beidou's Normal Attacks this Round will cost 1 less <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Unaligned Element</span>. (Can be triggered 2 times)\\n(You must have Beidou in your deck to add this card to your deck.)"
     }
   },
   {
@@ -2181,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Collei</span>, equip this card.\\nAfter Collei equips this card, immediately use <span style=\"color: #FFD780FF;\">Floral Sidewinder</span> once.\\nAfter your Collei, who has this card equipped, <span style=\"color: #FFFFFFFF;\">uses Floral Sidewinder</span>, during this Round, when your characters' Skills trigger <span style=\"color: #7EC236FF;\">Dendro-Related Reactions</span>: Deal 1 <span style=\"color: #7EC236FF;\">Dendro DMG</span>. (Once per Round)\\n(You must have Collei in your deck to add this card to your deck.)"
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">The character deals +1 DMG</span>.\\nWhen played: For each party member from Liyue, grant <span style=\"color: #FFFFFFFF;\">1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Shield</span> point</span> to the character to which this is attached. (Max 3 points)\\n(<span style=\"color: #FFFFFFFF;\">Only Polearm Characters</span> can equip this. A character can equip a maximum of 1 Weapon)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">The character deals +1 DMG</span>.\\n<span style=\"color: #FFFFFFFF;\">When played:</span> For each party member from Liyue, grant <span style=\"color: #FFFFFFFF;\">1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Shield</span> point</span> to the character to which this is attached. (Max 3 points)\\n(<span style=\"color: #FFFFFFFF;\">Only Polearm Characters</span> can equip this. A character can equip a maximum of 1 Weapon)"
     }
   },
   {
@@ -2543,7 +2718,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">After the character uses an Elemental Skill:</span> Heal self for 2 HP. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">After a character uses an Elemental Skill:</span> Heal self for 2 HP. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)"
     }
   },
   {
@@ -3023,7 +3198,7 @@
     "name": "Chang the Ninth",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">When either side uses a Skill:</span> If <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span> or <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Piercing DMG</span> was dealt, or an <span style=\"color: #FFFFFFFF;\">Elemental Reaction</span> was triggered, this card gains <span style=\"color: #FFFFFFFF;\">1 Inspiration</span>.\\nWhen this card gains <span style=\"color: #FFFFFFFF;\">3 Inspiration</span>, discard this card, then draw 2 cards."
+      "desc": "<span style=\"color: #FFFFFFFF;\">After either side uses a Skill:</span> If <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span> or <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Piercing DMG</span> was dealt, or an <span style=\"color: #FFFFFFFF;\">Elemental Reaction</span> was triggered, this card gains <span style=\"color: #FFFFFFFF;\">1 Inspiration</span>.\\nWhen this card gains <span style=\"color: #FFFFFFFF;\">3 Inspiration</span>, discard this card, then draw 2 cards."
     }
   },
   {
@@ -3322,7 +3497,7 @@
     "name": "Toss-Up",
     "skills": {
       "cost": [],
-      "desc": "Select any Elemental Die to <span style=\"color: #FFFFFFFF;\">reroll</span>. Can reroll 2 times."
+      "desc": "Select any Elemental Dice to <span style=\"color: #FFFFFFFF;\">reroll</span>. Can reroll 2 times."
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "Before this Round ends, the target character's <span style=\"color: #FFFFFFFF;\">Normal Attacks</span> cost 1 less <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Unaligned Element</span>.\\n(A character can consume at most 1 Food per Round)"
+      "desc": "Before this Round ends, the target character's next 3 <span style=\"color: #FFFFFFFF;\">Normal Attacks</span> cost 1 less <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Unaligned Element</span>.\\n(A character can consume at most 1 Food per Round)"
     }
   }
 ]

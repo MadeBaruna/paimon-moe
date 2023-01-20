@@ -749,7 +749,7 @@
     "type": "character",
     "name": "宵宮",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "元素爆発",
         "name": "琉金の雲間草",
-        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を3与え、<span style=\"color: #FFFFFFFF;\">琉金の炎</span>を生成する。",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を4与え、<span style=\"color: #FFFFFFFF;\">琉金の炎</span>を生成する。",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "琉金の炎",
           "desc": "宵宮以外の味方のキャラがスキルを発動した後、<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "クレー",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "通常攻撃",
+        "name": "バンバン",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与える。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "元素スキル",
+        "name": "ボンボン爆弾",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を3与え、本キャラに<span style=\"color: #FFFFFFFF;\">爆裂花火</span>を付与する。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "爆裂花火",
+          "desc": "<span style=\"color: #FFFFFFFF;\">付与されたキャラが<span style=\"color: #FFFFFFFF; text-decoration: underline;\">重撃</span>を行う時</span>、必要な<span style=\"color: #FF9999FF;\">炎元素</span>-1、かつ与えるダメージ+1。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "元素爆発",
+        "name": "ドッカン花火",
+        "desc": "<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を3与え、相手のフィールドに<span style=\"color: #FFFFFFFF;\">ドッカン花火</span>を生成する。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "ドッカン花火",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方のキャラがスキルを発動した後</span>、相手の出撃キャラに<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
         }
       }
     ]
@@ -1069,6 +1137,81 @@
           "name": "啓途誓使",
           "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>「憑依」を1レベル重ねる。\\n<span style=\"color: #FFFFFFFF;\">「憑依」のレベルによって以下の効果を得る。</span>\\nレベル2以上：<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>へと変わる。\\nレベル4以上：与えるダメージ+2。\\nレベル6以上：「憑依」のレベル-4。"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "北斗",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "通常攻撃",
+        "name": "征浪",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "元素スキル",
+        "name": "浪追い",
+        "desc": "本キャラに<span style=\"color: #FFFFFFFF;\">浪追い·波囲の守り</span>を付与し、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">スキル準備</span>に入る：<span style=\"color: #FFFFFFFF;\">潮踏み</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "浪追い·波囲の守り",
+          "desc": "本キャラは次のアクションでスキル<span style=\"color: #FFFFFFFF;\">浪追い</span>を直接発動する。\\nスキル準備期間中：<span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を2提供し、付与されたキャラを守る。"
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "元素爆発",
+        "name": "雷斫り",
+        "desc": "<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を3与え、<span style=\"color: #FFFFFFFF;\">雷獣の盾</span>を生成する。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "雷獣の盾",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方のキャラが通常攻撃を発動した後</span>、<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を1与える。\\n<span style=\"color: #FFFFFFFF;\">味方の出撃キャラが3以上のダメージを受けた時</span>、ダメージを1相殺してくれる。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "元素スキル",
+        "name": "潮踏み",
+        "desc": "（1ターン準備必要）\\n<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を2与える。",
+        "cost": []
       }
     ]
   },
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "元素スキル",
         "name": "孤風刀勢",
-        "desc": "<span style=\"color: #80FFD7FF;\">風元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">剣影·孤風</span>を召喚する。",
+        "desc": "<span style=\"color: #FFFFFFFF;\">剣影·孤風</span>を召喚する。",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "元素スキル",
         "name": "霜馳影突",
-        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">剣影·霜馳</span>を召喚する。",
+        "desc": "<span style=\"color: #FFFFFFFF;\">剣影·霜馳</span>を召喚する。",
         "cost": [
           {
             "type": "cryo",
@@ -1880,7 +2023,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ガイア</span>の時、このカードを装備できる。\\nガイアがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">冷血の剣</span>を1回発動する。\\nこのカードを装備したガイアが<span style=\"color: #FFFFFFFF;\">冷血の剣</span>を発動した後、自身のHPを2回復する。（各ラウンドで1回のみ）\\n（このカードはデッキにガイアが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ガイア</span>の時、このカードを装備できる。\\nガイアがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">冷血の剣</span>を1回発動する。\\nこのカードを装備したガイアが<span style=\"color: #FFFFFFFF;\">冷血の剣</span>を発動した後、自身のHPを2回復する。（各ラウンドで1回のみ）\\n（このカードはデッキにガイアが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -1896,7 +2039,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">重雲</span>の時、このカードを装備できる。\\n重雲がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">吐納真定</span>を1回発動する。\\nこのカードを装備した重雲の生成した<span style=\"color: #FFFFFFFF;\">重華積霜エリア</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>+1、味方の片手剣、両手剣、長柄武器のキャラの与える<span style=\"color: #FFFFFFFF;\">通常攻撃</span>のダメージ+1。\\n（このカードはデッキに重雲が含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">重雲</span>の時、このカードを装備できる。\\n重雲がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">吐納真定</span>を1回発動する。\\nこのカードを装備した重雲の生成した<span style=\"color: #FFFFFFFF;\">重華積霜エリア</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>+1、味方の片手剣、両手剣、長柄武器のキャラの与える<span style=\"color: #FFFFFFFF;\">通常攻撃</span>のダメージ+1。\\n（このカードはデッキに重雲が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -1944,7 +2087,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">行秋</span>の時、このカードを装備できる。\\n行秋がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">すだれの残香</span>を1回発動する。\\nこのカードを装備した行秋の生成した<span style=\"color: #FFFFFFFF;\">雨すだれの剣</span>は、初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1。\\n（このカードはデッキに行秋が含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">行秋</span>の時、このカードを装備できる。\\n行秋がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">すだれの残香</span>を1回発動する。\\nこのカードを装備した行秋の生成した<span style=\"color: #FFFFFFFF;\">雨すだれの剣</span>は、初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1。\\n（このカードはデッキに行秋が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -1964,7 +2107,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">モナ</span>の時、このカードを装備できる。\\nモナがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">沈没の預言</span>を1回発動する。\\nこのカードを装備したモナの出撃中、味方が引き起こした<span style=\"color: #80C0FFFF;\">水元素関連反応</span>のダメージがさらに+2。\\n（このカードはデッキにモナが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">モナ</span>の時、このカードを装備できる。\\nモナがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">沈没の預言</span>を1回発動する。\\nこのカードを装備したモナの出撃中、味方が引き起こした<span style=\"color: #80C0FFFF;\">水元素関連反応</span>のダメージがさらに+2。\\n（このカードはデッキにモナが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -1980,7 +2123,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ディルック</span>の時、このカードを装備できる。\\nディルックがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">流火焼灼</span>を1回発動する。\\nこのカードを装備したディルックが各ラウンドで2回目に<span style=\"color: #FFFFFFFF;\">流火焼灼</span>を発動する時、必要な<span style=\"color: #FF9999FF;\">炎元素</span>-1。\\n（デッキにディルックが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ディルック</span>の時、このカードを装備できる。\\nディルックがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">流火焼灼</span>を1回発動する。\\nこのカードを装備したディルックが各ラウンドで2回目に<span style=\"color: #FFFFFFFF;\">流火焼灼</span>を発動する時、必要な<span style=\"color: #FF9999FF;\">炎元素</span>-1。\\n（デッキにディルックが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -1996,7 +2139,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">香菱</span>の時、このカードを装備できる。\\n香菱がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">交差する炎</span>を1回発動する。\\nこのカードを装備した香菱が<span style=\"color: #FFFFFFFF;\">交差する炎</span>を発動する時、自身も<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与える。\\n（このカードはデッキに香菱が含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">香菱</span>の時、このカードを装備できる。\\n香菱がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">交差する炎</span>を1回発動する。\\nこのカードを装備した香菱が<span style=\"color: #FFFFFFFF;\">交差する炎</span>を発動する時、自身も<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与える。\\n（このカードはデッキに香菱が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2016,7 +2159,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ベネット</span>の時、このカードを装備できる。\\nベネットがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">冒険の憧れ</span>を1回発動する。\\nこのカードを装備したベネットの生成した<span style=\"color: #FFFFFFFF;\">鼓舞エリア</span>のダメージアップ効果は、HPによる制限がなくなり、常時発動になる。\\n（このカードはデッキにベネットが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ベネット</span>の時、このカードを装備できる。\\nベネットがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">冒険の憧れ</span>を1回発動する。\\nこのカードを装備したベネットの生成した<span style=\"color: #FFFFFFFF;\">鼓舞エリア</span>のダメージアップ効果は、HPによる制限がなくなり、常時発動になる。\\n（このカードはデッキにベネットが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2032,7 +2175,23 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">宵宮</span>の時、このカードを装備できる。\\n宵宮がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">長野原龍勢流星群</span>を1回発動する。\\nこのカードを装備した宵宮が<span style=\"color: #FFFFFFFF;\">庭火の焔硝</span>を発動した後、追加で<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与える。\\n（このカードはデッキに宵宮が含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">宵宮</span>の時、このカードを装備できる。\\n宵宮がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">長野原龍勢流星群</span>を1回発動する。\\nこのカードを装備した宵宮が<span style=\"color: #FFFFFFFF;\">庭火の焔硝</span>を発動した後、追加で<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を1与える。\\n（このカードはデッキに宵宮が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "こんこんプレゼント",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">クレー</span>の時、このカードを装備できる。\\nクレーがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">こんこんプレゼント</span>を1回発動する。\\nこのカードを装備したクレーの生成した<span style=\"color: #FFFFFFFF;\">爆裂花火</span>は、初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1。\\n（このカードはデッキにクレーが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2048,7 +2207,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">フィッシュル</span>の時、このカードを装備できる。\\nフィッシュルがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">星喰いの鴉</span>を1回発動する。\\nこのカードを装備したフィッシュルの生成した<span style=\"color: #FFFFFFFF;\">オズ</span>は、フィッシュルが<span style=\"color: #FFFFFFFF;\">通常攻撃</span>を行った後、<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を2与える。（<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>の消費が必要）\\n（このカードはデッキにフィッシュルが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">フィッシュル</span>の時、このカードを装備できる。\\nフィッシュルがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">星喰いの鴉</span>を1回発動する。\\nこのカードを装備したフィッシュルの生成した<span style=\"color: #FFFFFFFF;\">オズ</span>は、フィッシュルが<span style=\"color: #FFFFFFFF;\">通常攻撃</span>を行った後、<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を2与える。（<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>の消費が必要）\\n（このカードはデッキにフィッシュルが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">レザー</span>の時、このカードを装備できる。\\nレザーがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">覚醒</span>を1回発動する。\\nこのカードを装備したレザー<span style=\"color: #FFFFFFFF;\">が覚醒を発動した後</span>、味方の雷元素キャラの1体がチャージを1獲得する。（出撃キャラ優先）\\n（デッキにレザーが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">レザー</span>の時、このカードを装備できる。\\nレザーがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">覚醒</span>を1回発動する。\\nこのカードを装備したレザー<span style=\"color: #FFFFFFFF;\">が覚醒を発動した後</span>、味方の雷元素キャラの1体がチャージを1獲得する。（出撃キャラ優先）\\n（デッキにレザーが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2080,7 +2239,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">刻晴</span>の時、このカードを装備できる。\\n刻晴がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">抵天の雷罰</span>を1回発動する。\\nこのカードを装備した刻晴の生成した<span style=\"color: #FFFFFFFF;\">雷元素付与</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>+1、付与されたキャラの与える<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>+1。\\n（このカードはデッキに刻晴が含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">刻晴</span>の時、このカードを装備できる。\\n刻晴がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">抵天の雷罰</span>を1回発動する。\\nこのカードを装備した刻晴の生成した<span style=\"color: #FFFFFFFF;\">雷元素付与</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>+1、付与されたキャラの与える<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>+1。\\n（このカードはデッキに刻晴が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2096,7 +2255,23 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">セノ</span>の時、このカードを装備できる。\\nセノがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">落羽の裁決</span>を1回発動する。\\nこのカードを装備したセノは、<span style=\"color: #FFFFFFFF;\">啓途誓使</span>の「憑依」レベルが3または5の時に<span style=\"color: #FFFFFFFF;\">落羽の裁決</span>を使うと、与えるダメージがさらに+1。\\n（このカードはデッキにセノが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">セノ</span>の時、このカードを装備できる。\\nセノがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">落羽の裁決</span>を1回発動する。\\nこのカードを装備したセノは、<span style=\"color: #FFFFFFFF;\">啓途誓使</span>の「憑依」レベルが3または5の時に<span style=\"color: #FFFFFFFF;\">落羽の裁決</span>を使うと、与えるダメージがさらに+1。\\n（このカードはデッキにセノが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "満天の霹靂",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">北斗</span>の時、このカードを装備できる。\\n北斗がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">満天の霹靂</span>を1回発動する。\\nこのカードを装備した北斗が<span style=\"color: #FFFFFFFF;\">満天の霹靂</span>を発動すると、もし<span style=\"color: #FFFFFFFF; text-decoration: underline;\">スキル準備</span>期間中にダメージを受けた場合、本ラウンドで北斗の「通常攻撃」に必要な<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>-1。（最大2回のみ発動可能）\\n（このカードはデッキに北斗が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2116,7 +2291,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">スクロース</span>の時、このカードを装備できる。\\nスクロースがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">混元熵增論</span>を1回発動する。\\nこのカードを装備したスクロースの生成した<span style=\"color: #FFFFFFFF;\">大型風霊</span>が他の元素タイプへと変わった時、味方が与える該当元素タイプのダメージ+1。\\n（このカードはデッキにスクロースが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">スクロース</span>の時、このカードを装備できる。\\nスクロースがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">混元熵增論</span>を1回発動する。\\nこのカードを装備したスクロースの生成した<span style=\"color: #FFFFFFFF;\">大型風霊</span>が他の元素タイプへと変わった時、味方が与える該当元素タイプのダメージ+1。\\n（このカードはデッキにスクロースが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2168,7 +2343,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ノエル</span>の時、このカードを装備できる。\\nノエルがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">支援はお任せください</span>を1回発動する。\\nこのカードを装備したノエルの生成した<span style=\"color: #FFFFFFFF;\">護身の岩鎧</span>は、ノエルが<span style=\"color: #FFFFFFFF;\">通常攻撃</span>を発動した後、味方のチーム全員のHPを1回復する。（各ラウンドで1回のみ）\\n（このカードはデッキにノエルが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ノエル</span>の時、このカードを装備できる。\\nノエルがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">支援はお任せください</span>を1回発動する。\\nこのカードを装備したノエルの生成した<span style=\"color: #FFFFFFFF;\">護身の岩鎧</span>は、ノエルが<span style=\"color: #FFFFFFFF;\">通常攻撃</span>を発動した後、味方のチーム全員のHPを1回復する。（各ラウンドで1回のみ）\\n（このカードはデッキにノエルが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2181,10 +2356,10 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">コレイ</span>の時、このカードを装備できる。\\nコレイがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">フライリーフワインダー</span>を1回発動する。\\nこのカードを装備したコレイが<span style=\"color: #FFFFFFFF;\">フライリーフワインダー</span>を発動したラウンドにおいて、味方のキャラのスキルが<span style=\"color: #7EC236FF;\">草元素関連反応</span>を引き起こすと<span style=\"color: #7EC236FF;\">草元素ダメージ</span>を1与える。（各ラウンドで1回のみ）\\n（このカードはデッキにコレイが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">コレイ</span>の時、このカードを装備できる。\\nコレイがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">フライリーフワインダー</span>を1回発動する。\\nこのカードを装備したコレイが<span style=\"color: #FFFFFFFF;\">フライリーフワインダー</span>を発動したラウンドにおいて、味方のキャラのスキルが<span style=\"color: #7EC236FF;\">草元素関連反応</span>を引き起こすと<span style=\"color: #7EC236FF;\">草元素ダメージ</span>を1与える。（各ラウンドで1回のみ）\\n（このカードはデッキにコレイが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2204,7 +2379,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">純水精霊·ローデシア</span>の時、このカードを装備できる。\\n純水精霊·ローデシアがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">百川奔流</span>を1回発動する。\\nこのカードを装備した純水精霊·ローデシアが<span style=\"color: #FFFFFFFF;\">百川奔流</span>を発動する時、味方のすべての召喚物の<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1。\\n（このカードはデッキに純水精霊·ローデシアが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">純水精霊·ローデシア</span>の時、このカードを装備できる。\\n純水精霊·ローデシアがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">百川奔流</span>を1回発動する。\\nこのカードを装備した純水精霊·ローデシアが<span style=\"color: #FFFFFFFF;\">百川奔流</span>を発動する時、味方のすべての召喚物の<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1。\\n（このカードはデッキに純水精霊·ローデシアが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2220,7 +2395,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ファデュイ·ミラーメイデン</span>の時、このカードを装備できる。\\nファデュイ·ミラーメイデンがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">鏡の檻</span>を1回発動する。\\nこのカードを装備したファデュイ·ミラーメイデンの生成した<span style=\"color: #FFFFFFFF;\">水光破鏡</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>+1、付与されたキャラを他のキャラにチェンジする際に必要な元素サイコロ+1。\\n（このカードはデッキにファデュイ·ミラーメイデンが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ファデュイ·ミラーメイデン</span>の時、このカードを装備できる。\\nファデュイ·ミラーメイデンがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">鏡の檻</span>を1回発動する。\\nこのカードを装備したファデュイ·ミラーメイデンの生成した<span style=\"color: #FFFFFFFF;\">水光破鏡</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>+1、付与されたキャラを他のキャラにチェンジする際に必要な元素サイコロ+1。\\n（このカードはデッキにファデュイ·ミラーメイデンが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2236,7 +2411,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ファデュイ·デットエージェント·炎</span>の時、このカードを装備できる。\\nファデュイ·デットエージェント·炎がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">目には目を</span>を1回発動する。\\nこのカードを装備したファデュイ·デットエージェント·炎の生成した<span style=\"color: #FFFFFFFF;\">潜行</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1、付与されたキャラの与える<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>へと変わる。\\n（このカードはデッキにファデュイ·デットエージェント·炎が含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ファデュイ·デットエージェント·炎</span>の時、このカードを装備できる。\\nファデュイ·デットエージェント·炎がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">目には目を</span>を1回発動する。\\nこのカードを装備したファデュイ·デットエージェント·炎の生成した<span style=\"color: #FFFFFFFF;\">潜行</span>は以下の効果を獲得する。\\n初期<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>+1、付与されたキャラの与える<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>へと変わる。\\n（このカードはデッキにファデュイ·デットエージェント·炎が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2252,7 +2427,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">魔偶剣鬼</span>の時、このカードを装備できる。\\n魔偶剣鬼がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">からくり神通</span>を1回発動する。\\nこのカードを装備した魔偶剣鬼が<span style=\"color: #FFFFFFFF;\">からくり神通</span>を発動した後、味方の次のキャラへとチェンジする。<span style=\"color: #FFFFFFFF;\">からくり神通</span>を発動した後、味方の前のキャラへとチェンジする。\\n（このカードはデッキに魔偶剣鬼が含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">魔偶剣鬼</span>の時、このカードを装備できる。\\n魔偶剣鬼がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">からくり神通</span>を1回発動する。\\nこのカードを装備した魔偶剣鬼が<span style=\"color: #FFFFFFFF;\">からくり神通</span>を発動した後、味方の次のキャラへとチェンジする。<span style=\"color: #FFFFFFFF;\">からくり神通</span>を発動した後、味方の前のキャラへとチェンジする。\\n（このカードはデッキに魔偶剣鬼が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2272,7 +2447,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ヒルチャール·岩兜の王</span>の時、このカードを装備できる。\\nヒルチャール·岩兜の王がこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">鋳直し：岩兜</span>を1回発動する。\\nこのカードを装備したヒルチャール·岩兜の王が敵を倒した後、<span style=\"color: #FFFFFFFF;\">岩兜</span>と<span style=\"color: #FFFFFFFF;\">堅岩の力</span>が再びヒルチャール·岩兜の王に付与される。\\n（このカードはデッキにヒルチャール·岩兜の王が含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ヒルチャール·岩兜の王</span>の時、このカードを装備できる。\\nヒルチャール·岩兜の王がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">鋳直し：岩兜</span>を1回発動する。\\nこのカードを装備したヒルチャール·岩兜の王が敵を倒した後、<span style=\"color: #FFFFFFFF;\">岩兜</span>と<span style=\"color: #FFFFFFFF;\">堅岩の力</span>が再びヒルチャール·岩兜の王に付与される。\\n（このカードはデッキにヒルチャール·岩兜の王が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2288,7 +2463,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">マッシュラプトル</span>の時、このカードを装備できる。\\nマッシュラプトルがこのカードを装備すると、直ちに<span style=\"color: #FFD780FF;\">胞子増殖</span>を1回発動する。\\nこのカードを装備したマッシュラプトルは、「活発激能」の重ね掛け可能層数+1。\\n（このカードはデッキにマッシュラプトルが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">マッシュラプトル</span>の時、このカードを装備できる。\\nマッシュラプトルがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">胞子増殖</span>を1回発動する。\\nこのカードを装備したマッシュラプトルは、「活発激能」の重ね掛け可能層数+1。\\n（このカードはデッキにマッシュラプトルが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n登場時、チームに「璃月」のキャラが1体存在するごとに、このカードは装備キャラに<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を1</span>提供する。（最大3まで）\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">登場時、</span>チームに「璃月」のキャラが1体存在するごとに、このカードは装備キャラに<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を1</span>提供する。（最大3まで）\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
     }
   },
   {
@@ -3125,7 +3300,7 @@
           "count": 1
         }
       ],
-      "desc": "本ラウンドにおいて、味方の現在の出撃キャラの次に与えるダメージ+2。\\n（デッキに<span style=\"color: #99FFFFFF;\">氷元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
+      "desc": "本ラウンドにおいて、味方の現在の出撃キャラが次に与えるダメージ+2。\\n（デッキに<span style=\"color: #99FFFFFF;\">氷元素</span>のキャラが2体以上含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -3489,7 +3664,7 @@
     "_id": 333001,
     "id": "jueyun_guoba",
     "type": "food",
-    "name": "絶雲お焦げ",
+    "name": "絶雲のお焦げ",
     "skills": {
       "cost": [],
       "desc": "本ラウンドで、目標キャラの次の<span style=\"color: #FFFFFFFF;\">通常攻撃</span>で与えるダメージ+1。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
@@ -3532,7 +3707,7 @@
     "name": "北地のスモークチキン",
     "skills": {
       "cost": [],
-      "desc": "本ラウンドで、目標キャラの次の<span style=\"color: #FFFFFFFF;\">通常攻撃</span>に必要な<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>の数-1。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+      "desc": "本ラウンドで、目標キャラの次の<span style=\"color: #FFFFFFFF;\">通常攻撃</span>に必要な<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>-1。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "目標キャラが本ラウンド終了まで、<span style=\"color: #FFFFFFFF;\">通常攻撃</span>に必要な<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>の数-1。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
+      "desc": "目標キャラは本ラウンド終了まで、この後の3回の<span style=\"color: #FFFFFFFF;\">通常攻撃</span>に必要な<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>-1。\\n（各キャラは各ラウンドで「料理」を1回のみ使用可能）"
     }
   }
 ]
