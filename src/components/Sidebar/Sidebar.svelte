@@ -121,6 +121,7 @@
         { label: $t('sidebar.artifacts'), href: '/artifacts' },
         { label: $t('sidebar.fishing'), href: '/fishing' },
         { label: $t('sidebar.radiantSpincrystal'), href: '/radiant-spincrystal' },
+        { label: $t('sidebar.recipe'), href: '/recipe' },
         { label: $t('sidebar.calendar'), href: '/calendar' },
         { label: $t('sidebar.banners'), href: '/banners' },
       ]}
