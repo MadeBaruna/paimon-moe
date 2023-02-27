@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    xiao: {
-      name: 'Xiao',
+    hu_tao: {
+      name: 'Hu Tao',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    alhaitham: {
-      name: 'Alhaitham',
+    yelan: {
+      name: 'Yelan',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300042;
-  const image = 'xiao_alhaitham.png';
+  const bannerId = 300043;
+  const image = 'hutao_yelan.png';
   const width = 800;
-  const height = 500;
+  const height = 433;
 
   let loading = true;
   let user = '';
