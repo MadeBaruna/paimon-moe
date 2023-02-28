@@ -10006,4 +10006,230 @@ export const weaponList = {
       },
     ],
   },
+  beacon_of_the_reed_sea: {
+    id: 'beacon_of_the_reed_sea',
+    name: 'Beacon of the Reed Sea',
+    rarity: 5,
+    atk: 46,
+    secondary: 'CRIT Rate',
+    type: weapons.claymore,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.echo_of_scorching_might,
+            amount: 5,
+          },
+          {
+            item: itemList.desiccated_shell,
+            amount: 5,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.remnant_glow_of_scorching_might,
+            amount: 5,
+          },
+          {
+            item: itemList.desiccated_shell,
+            amount: 18,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.remnant_glow_of_scorching_might,
+            amount: 9,
+          },
+          {
+            item: itemList.sturdy_shell,
+            amount: 9,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_scorching_might,
+            amount: 5,
+          },
+          {
+            item: itemList.sturdy_shell,
+            amount: 18,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_scorching_might,
+            amount: 9,
+          },
+          {
+            item: itemList.marked_shell,
+            amount: 14,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.olden_days_of_scorching_might,
+            amount: 6,
+          },
+          {
+            item: itemList.marked_shell,
+            amount: 27,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  mailed_flower: {
+    id: 'mailed_flower',
+    name: 'Mailed Flower',
+    rarity: 4,
+    atk: 44,
+    secondary: 'Elemental Mastery',
+    type: weapons.claymore,
+    source: 'Windblumes Breath Event',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fetters_of_the_dandelion_gladiator,
+            amount: 3,
+          },
+          {
+            item: itemList.desiccated_shell,
+            amount: 3,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chains_of_the_dandelion_gladiator,
+            amount: 3,
+          },
+          {
+            item: itemList.desiccated_shell,
+            amount: 12,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chains_of_the_dandelion_gladiator,
+            amount: 6,
+          },
+          {
+            item: itemList.sturdy_shell,
+            amount: 6,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shackles_of_the_dandelion_gladiator,
+            amount: 3,
+          },
+          {
+            item: itemList.sturdy_shell,
+            amount: 12,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shackles_of_the_dandelion_gladiator,
+            amount: 6,
+          },
+          {
+            item: itemList.marked_shell,
+            amount: 9,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_the_dandelion_gladiator,
+            amount: 4,
+          },
+          {
+            item: itemList.marked_shell,
+            amount: 18,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
