@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    hu_tao: {
-      name: 'Hu Tao',
+    dehya: {
+      name: 'Dehya',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    yelan: {
-      name: 'Yelan',
+    cyno: {
+      name: 'Cyno',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300043;
-  const image = 'hutao_yelan.png';
+  const bannerId = 300044;
+  const image = 'dehya_cyno.png';
   const width = 800;
-  const height = 433;
+  const height = 519;
 
   let loading = true;
   let user = '';
