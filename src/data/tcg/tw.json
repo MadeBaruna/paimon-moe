@@ -394,7 +394,7 @@
         "_id": 12013,
         "type": "元素爆發",
         "name": "閃耀奇跡♪",
-        "desc": "治療我方所有角色4點。",
+        "desc": "治療所有我方角色4點。",
         "cost": [
           {
             "type": "hydro",
@@ -749,7 +749,7 @@
     "type": "character",
     "name": "宵宮",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "元素爆發",
         "name": "琉金雲間草",
-        "desc": "造成3點<span style=\"color: #FF9999FF;\">火元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">琉金火光</span>。",
+        "desc": "造成4點<span style=\"color: #FF9999FF;\">火元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">琉金火光</span>。",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "琉金火光",
           "desc": "宵宮以外的我方角色使用技能後：造成1點<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "可莉",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "普通攻擊",
+        "name": "砰砰",
+        "desc": "造成1點<span style=\"color: #FF9999FF;\">火元素傷害</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "元素戰技",
+        "name": "蹦蹦炸彈",
+        "desc": "造成3點<span style=\"color: #FF9999FF;\">火元素傷害</span>，本角色附屬<span style=\"color: #FFFFFFFF;\">爆裂火花</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "爆裂火花",
+          "desc": "<span style=\"color: #FFFFFFFF;\">所附屬角色進行<span style=\"color: #FFFFFFFF; text-decoration: underline;\">重擊</span>時：</span>少花費1個<span style=\"color: #FF9999FF;\">火元素</span>，並且傷害+1。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "元素爆發",
+        "name": "轟轟火花",
+        "desc": "造成3點<span style=\"color: #FF9999FF;\">火元素傷害</span>，在對方場上生成<span style=\"color: #FFFFFFFF;\">轟轟火花</span>。",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "轟轟火花",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用技能後：</span>對我方出戰角色造成2點<span style=\"color: #FF9999FF;\">火元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>：2</span>"
         }
       }
     ]
@@ -1073,6 +1141,81 @@
     ]
   },
   {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "北斗",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "普通攻擊",
+        "name": "征濤",
+        "desc": "造成2點<span style=\"color: #FFFFFFFF;\">物理傷害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "元素戰技",
+        "name": "捉浪",
+        "desc": "本角色附屬<span style=\"color: #FFFFFFFF;\">捉浪·濤擁之守</span>並<span style=\"color: #FFFFFFFF; text-decoration: underline;\">準備技能</span>：<span style=\"color: #FFFFFFFF;\">踏潮</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "捉浪·濤擁之守",
+          "desc": "本角色將在下次行動時，直接使用技能：<span style=\"color: #FFFFFFFF;\">捉浪</span>。\\n準備技能期間：提供2點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span>，保護所附屬的角色。"
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "元素爆發",
+        "name": "斫雷",
+        "desc": "造成3點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>，生成<span style=\"color: #FFFFFFFF;\">雷獸之盾</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "雷獸之盾",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻擊後：</span>造成1點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>。\\n<span style=\"color: #FFFFFFFF;\">我方角色受到至少為3的傷害時：</span>抵消其中1點傷害。\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">持續回合</span>：2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "元素戰技",
+        "name": "踏潮",
+        "desc": "（需準備1個行動輪）\\n造成2點<span style=\"color: #FFACFFFF;\">雷元素傷害</span>。",
+        "cost": []
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1176,7 +1319,7 @@
         "_id": 15023,
         "type": "元素爆發",
         "name": "蒲公英之風",
-        "desc": "治療我方所有角色2點，召喚<span style=\"color: #FFFFFFFF;\">蒲公英領域</span>。",
+        "desc": "治療所有我方角色2點，召喚<span style=\"color: #FFFFFFFF;\">蒲公英領域</span>。",
         "cost": [
           {
             "type": "anemo",
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "元素戰技",
         "name": "孤風刀勢",
-        "desc": "造成1點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">劍影·孤風</span>。",
+        "desc": "召喚<span style=\"color: #FFFFFFFF;\">劍影·孤風</span>。",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "元素戰技",
         "name": "霜馳影突",
-        "desc": "造成1點<span style=\"color: #99FFFFFF;\">冰元素傷害</span>，召喚<span style=\"color: #FFFFFFFF;\">劍影·霜馳</span>。",
+        "desc": "召喚<span style=\"color: #FFFFFFFF;\">劍影·霜馳</span>。",
         "cost": [
           {
             "type": "cryo",
@@ -1677,7 +1820,7 @@
         "_id": 25014,
         "type": "元素爆發",
         "name": "機巧偽天狗抄",
-        "desc": "造成4點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，觸發我方所有<span style=\"color: #FFFFFFFF;\">劍影</span>召喚物的效果。（不消耗其可用次數）",
+        "desc": "造成4點<span style=\"color: #80FFD7FF;\">風元素傷害</span>，觸發所有我方<span style=\"color: #FFFFFFFF;\">劍影</span>召喚物的效果。（不消耗其可用次數）",
         "cost": [
           {
             "type": "anemo",
@@ -2036,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "砰砰禮物",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">可莉</span>時，裝備此牌。\\n可莉裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">砰砰禮物</span>。\\n裝備有此牌的可莉生成的<span style=\"color: #FFFFFFFF;\">爆裂火花</span>的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>+1。\\n（牌組中包含可莉，才能加入牌組）"
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">雷澤</span>時，裝備此牌。\\n雷澤裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">覺醒</span>。\\n裝備有此牌的雷澤<span style=\"color: #FFFFFFFF;\">使用覺醒後</span>：使我方一個雷元素角色獲得1點充能。（出戰角色優先）\\n（牌組中包含雷澤，才能加入牌組）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">雷澤</span>時，裝備此牌。\\n雷澤裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">覺醒</span>。\\n裝備有此牌的雷澤使用<span style=\"color: #FFFFFFFF;\">覺醒</span>後：使我方一個雷元素角色獲得1點充能。（出戰角色優先）\\n（牌組中包含雷澤，才能加入牌組）"
     }
   },
   {
@@ -2097,6 +2256,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">賽諾</span>時，裝備此牌。\\n賽諾裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">落羽的裁擇</span>。\\n裝備有此牌的賽諾在<span style=\"color: #FFFFFFFF;\">啟途誓使</span>的「憑依」級數為3或5時使用<span style=\"color: #FFFFFFFF;\">落羽的裁擇</span>時，造成的傷害額外+1。\\n（牌組中包含賽諾，才能加入牌組）"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "霹靂連霄",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">北斗</span>時，裝備此牌。\\n北斗裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">霹靂連霄</span>。\\n裝備有此牌的北斗使用<span style=\"color: #FFFFFFFF;\">霹靂連霄</span>時：如果<span style=\"color: #FFFFFFFF; text-decoration: underline;\">準備技能</span>期間受到過傷害，則使北斗本回合內「普通攻擊」少花費1個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>。（最多觸發2次）\\n（牌組中包含北斗，才能加入牌組）"
     }
   },
   {
@@ -2181,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戰鬥行動</span>：我方出戰角色為<span style=\"color: #FFFFFFFF;\">柯萊</span>時，裝備此牌。\\n柯萊裝備此牌後，立刻使用一次<span style=\"color: #FFD780FF;\">飛葉迴斜</span>。\\n裝備有此牌的柯萊使用了<span style=\"color: #FFFFFFFF;\">飛葉迴斜</span>的回合中，我方角色的技能引發<span style=\"color: #7EC236FF;\">草元素相關反應</span>後：造成1點<span style=\"color: #7EC236FF;\">草元素傷害</span>。（每回合1次）\\n（牌組中包含柯萊，才能加入牌組）"
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>\\n入場時：隊伍中每有一名「璃月」角色，此牌就為附屬的角色提供<span style=\"color: #FFFFFFFF;\">1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span></span>。（最多3點）\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」角色</span>才能裝備。角色最多裝備1件「武器」）"
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的傷害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">入場時：</span>隊伍中每有一名「璃月」角色，此牌就為附屬的角色提供<span style=\"color: #FFFFFFFF;\">1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">護盾</span></span>。（最多3點）\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」角色</span>才能裝備。角色最多裝備1件「武器」）"
     }
   },
   {
@@ -3023,7 +3198,7 @@
     "name": "常九爺",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">雙方角色使用技能後：</span>如果造成了<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透傷害</span>或引發了<span style=\"color: #FFFFFFFF;\">元素反應</span>，此牌累積<span style=\"color: #FFFFFFFF;\">1個「靈感」</span>。\\n如果此牌已累積<span style=\"color: #FFFFFFFF;\">3個「靈感」</span>，棄置此牌：抽2張牌。"
+      "desc": "<span style=\"color: #FFFFFFFF;\">雙方角色使用技能後：</span>如果造成了<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理傷害</span>、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透傷害</span>或引發了<span style=\"color: #FFFFFFFF;\">元素反應</span>，此牌累積<span style=\"color: #FFFFFFFF;\">1個「靈感」</span>。\\n如果此牌已累積<span style=\"color: #FFFFFFFF;\">3個「靈感」</span>，棄置此牌：抓2張牌。"
     }
   },
   {
@@ -3287,7 +3462,7 @@
           "count": 1
         }
       ],
-      "desc": "本回合中，我方下一次引發元素反應時，造成的傷害+2。\\n使我方場上的<span style=\"color: #FFFFFFFF;\">燃燒烈焰、草原核、和激化領域</span>「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>」+1。\\n（牌組包含至少2個<span style=\"color: #99FF88FF;\">草元素</span>角色，才能加入牌組）"
+      "desc": "本回合中，我方下一次引發元素反應時，造成的傷害+2。\\n使我方場上的<span style=\"color: #FFFFFFFF;\">燃燒烈焰、草原核和激化領域</span>「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次數</span>」+1。\\n（牌組包含至少2個<span style=\"color: #99FF88FF;\">草元素</span>角色，才能加入牌組）"
     }
   },
   {
@@ -3347,7 +3522,7 @@
     "name": "本大爺還沒有輸！",
     "skills": {
       "cost": [],
-      "desc": "本回合有我方角色被擊倒，才能打出：\\n生成1個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">萬能元素</span>，我方目前出戰角色獲得1個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。"
+      "desc": "本回合有我方角色被擊倒，才能打出：\\n生成1個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">萬能元素</span>，我方目前出戰角色獲得1點<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。"
     }
   },
   {
@@ -3532,7 +3707,7 @@
     "name": "北地煙燻雞",
     "skills": {
       "cost": [],
-      "desc": "本回合中，目標角色下一次<span style=\"color: #FFFFFFFF;\">普通攻擊</span>少花費1<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>。\\n（每回合每個角色最多食用1次「料理」）"
+      "desc": "本回合中，目標角色下一次<span style=\"color: #FFFFFFFF;\">普通攻擊</span>少花費1個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>。\\n（每回合每個角色最多食用1次「料理」）"
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "目標角色在本回合結束前，所有<span style=\"color: #FFFFFFFF;\">普通攻擊</span>都少花費1<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>。\\n（每回合每個角色最多食用1次「料理」）"
+      "desc": "目標角色在本回合結束前，之後三次<span style=\"color: #FFFFFFFF;\">普通攻擊</span>都少花費1個<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>。\\n（每回合每個角色最多食用1次「料理」）"
     }
   }
 ]

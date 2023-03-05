@@ -47,7 +47,7 @@
         "_id": 11013,
         "type": "Attaque normale",
         "name": "Flèche de givre",
-        "desc": "Inflige 3 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages ennemis en attente.",
+        "desc": "Inflige 3 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages adverses en attente.",
         "cost": [
           {
             "type": "cryo",
@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Yoimiya",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "Déchaînement élémentaire",
         "name": "Saxifrage Ryuukin",
-        "desc": "Inflige 3 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> et crée une <span style=\"color: #FFFFFFFF;\">Flamme Ryuukin</span>.",
+        "desc": "Inflige 4 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> et crée une <span style=\"color: #FFFFFFFF;\">Flamme Ryuukin</span>.",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Flamme Ryuukin",
           "desc": "Lorsqu'un de vos personnages autre que Yoimiya a utilisé une capacité : Inflige 1 pt de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Klee",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "Attaque normale",
+        "name": "Boum ! Boum !",
+        "desc": "Inflige 1 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "Compétence élémentaire",
+        "name": "Bombe rebondissante",
+        "desc": "Inflige 3 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> et accorde une <span style=\"color: #FFFFFFFF;\">Étincelle explosive</span> au personnage.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Étincelle explosive",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage affecté utilise une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Attaque chargée</span> :</span> Dépense 1 dé <span style=\"color: #FF9999FF;\">Pyro</span> en moins et DGT +1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "Déchaînement élémentaire",
+        "name": "Fleur bombardier",
+        "desc": "Inflige 3 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> et crée une <span style=\"color: #FFFFFFFF;\">Fleur bombardier</span> sur le terrain adverse.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Fleur bombardier",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage a utilisé une capacité : </span>Inflige 2 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> à votre personnage actif.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
         }
       }
     ]
@@ -859,7 +927,7 @@
         "_id": 14013,
         "type": "Déchaînement élémentaire",
         "name": "Incarnation de la nuit",
-        "desc": "Inflige 4 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages ennemis en attente.",
+        "desc": "Inflige 4 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages adverses en attente.",
         "cost": [
           {
             "type": "electro",
@@ -983,7 +1051,7 @@
         "_id": 14033,
         "type": "Déchaînement élémentaire",
         "name": "Promenade céleste",
-        "desc": "Inflige 4 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">3 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages ennemis en attente.",
+        "desc": "Inflige 4 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">3 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages adverses en attente.",
         "cost": [
           {
             "type": "electro",
@@ -1069,6 +1137,81 @@
           "name": "Éclaireur sermenté",
           "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Cumule 1 niv. de Possession.\\n<span style=\"color: #FFFFFFFF;\">Accorde les effets suivants selon le niv. de Possession :</span>\\nSupérieur ou égal à 2 : Les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> sont convertis en <span style=\"color: #FFACFFFF;\">DGT Électro</span>.\\nSupérieur ou égal à 4 : DGT infligés +2.\\nSupérieur ou égal à 6 : Niv. de Possession -4."
         }
+      }
+    ]
+  },
+  {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Beidou",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "Attaque normale",
+        "name": "Conquête des mers",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "Compétence élémentaire",
+        "name": "Invocation des marées",
+        "desc": "Accorde une <span style=\"color: #FFFFFFFF;\">Embrasse marine des marées</span> et <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Préparation de capacité</span> : <span style=\"color: #FFFFFFFF;\">Conquête des marées</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Embrasse marine des marées",
+          "desc": "Lors de son prochain tour, le personnage utilise directement la capacité : <span style=\"color: #FFFFFFFF;\">Invocation des marées</span>.\\nPendant la préparation de la capacité : Accorde 2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span> au personnage affecté."
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "Déchaînement élémentaire",
+        "name": "Brisure d'orage",
+        "desc": "Inflige 3 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span> et crée un <span style=\"color: #FFFFFFFF;\">Bouclier de foudre</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Bouclier de foudre",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage a utilisé une attaque normale : </span>Inflige 1 pt de <span style=\"color: #FFACFFFF;\">DGT Électro</span>.\\n<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage subit au moins 3 pts de DGT : </span>Protège pour 1 pt de DGT.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "Compétence élémentaire",
+        "name": "Conquête des marées",
+        "desc": "(À préparer pendant 1 tour)\\nInflige 2 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span>.",
+        "cost": []
       }
     ]
   },
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "Compétence élémentaire",
         "name": "Lame fulgurante",
-        "desc": "Inflige 1 pts de <span style=\"color: #80FFD7FF;\">DGT Anémo</span> et invoque une <span style=\"color: #FFFFFFFF;\">Épée d'ombre : Brise</span>.",
+        "desc": "Invoque une <span style=\"color: #FFFFFFFF;\">Épée d'ombre : Brise</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "Compétence élémentaire",
         "name": "Assaut givré",
-        "desc": "Inflige 1 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et invoque une <span style=\"color: #FFFFFFFF;\">Épée d'ombre : Givre</span>.",
+        "desc": "Invoque une <span style=\"color: #FFFFFFFF;\">Épée d'ombre : Givre</span>.",
         "cost": [
           {
             "type": "cryo",
@@ -1812,7 +1955,13 @@
             "type": "energy",
             "count": 2
           }
-        ]
+        ],
+        "sub": {
+          "_id": 127011,
+          "id": "radical_vitality",
+          "name": "Vitalité radicale",
+          "desc": "Lorsque le personnage inflige ou subit des DGT élémentaires : Accorde 1 cumul de vitalité radicale. (Peut être cumulé 3 fois maximum)\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Si les cumuls de vitalité radicale sont au maximum, ils sont effacés et le personnage perd toutes ses charges."
+        }
       },
       {
         "_id": 27014,
@@ -1824,7 +1973,7 @@
           "_id": 127011,
           "id": "radical_vitality",
           "name": "Vitalité radicale",
-          "desc": "Lorsque le personnage inflige ou subit des DGT élémentaires : Accorde 1 cumul de Vitalité radicale. (Peut être cumulé 3 fois maximum)\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Si les cumuls de Vitalité radicale sont au maximum, ils sont effacés et le personnage perd toutes ses charges."
+          "desc": "Lorsque le personnage inflige ou subit des DGT élémentaires : Accorde 1 cumul de vitalité radicale. (Peut être cumulé 3 fois maximum)\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Si les cumuls de vitalité radicale sont au maximum, ils sont effacés et le personnage perd toutes ses charges."
         }
       }
     ]
@@ -1842,7 +1991,7 @@
           "count": 5
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Ganyu</span>, équipe cette carte.\\nUne fois Ganyu équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Cœur indivisible</span> une fois.\\nLorsque Ganyu, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Cœur indivisible</span> : Si cette capacité a déjà été utilisée pendant cette partie, [K101] infligés +1 et inflige maintenant 3 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span> aux personnages adverses en attente.\\n(Votre deck doit contenir Ganyu pour pouvoir y ajouter cette carte)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Ganyu</span>, équipe cette carte.\\nUne fois Ganyu équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Cœur indivisible</span> une fois.\\nLorsque Ganyu, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Cœur indivisible</span> : Si cette capacité a déjà été utilisée pendant cette partie, <span style=\"color: #99FFFFFF;\">DGT Cryo</span> infligés +1 et inflige maintenant 3 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span> aux personnages adverses en attente.\\n(Votre deck doit contenir Ganyu pour pouvoir y ajouter cette carte)"
     }
   },
   {
@@ -2030,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Cadeau explosif",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Klee</span>, équipe cette carte.\\nUne fois Klee équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Cadeau explosif</span> une fois.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> de l'<span style=\"color: #FFFFFFFF;\">Étincelle explosive</span> créée par Klee équipée de cette carte +1.\\n(Votre deck doit contenir Klee pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2058,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Razor</span>, équipe cette carte.\\nUne fois Razor équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Éveil</span> une fois.\\nLorsque Razor, équipé de cette carte, <span style=\"color: #FFFFFFFF;\">a utilisé Éveil</span> : Accorde 1 charge à un de vos personnages Électro. (Priorité au personnage actif)\\n(Votre deck doit contenir Razor pour pouvoir y ajouter cette carte)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Razor</span>, équipe cette carte.\\nUne fois Razor équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Éveil</span> une fois.\\nLorsque Razor, équipé de cette carte, a utilisé <span style=\"color: #FFFFFFFF;\">Éveil</span> : Accorde 1 charge à un de vos personnages Électro. (Priorité au personnage actif)\\n(Votre deck doit contenir Razor pour pouvoir y ajouter cette carte)"
     }
   },
   {
@@ -2091,6 +2256,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Cyno</span>, équipe cette carte.\\nUne fois Cyno équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Jugement des plumes</span> une fois.\\nLorsque Cyno, équipé de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Jugement des plumes</span> avec un niv. de Possession de l'<span style=\"color: #FFFFFFFF;\">Éclaireur sermenté</span> de 3 ou 5, DGT supplémentaires infligés +1.\\n(Votre deck doit contenir Cyno pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Tempête de coups de tonnerre",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Beidou</span>, équipe cette carte.\\nUne fois Beidou équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Tempête de coups de tonnerre</span> une fois.\\nLorsque Beidou, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Tempête de coups de tonnerre</span> : si elle subit des DGT pendant qu'elle <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Préparation de capacité</span>, l'attaque normale de Beidou dépense 1 dé d'<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Élément neutre</span> en moins pendant la manche. (Déclenché 2 fois maximum)\\n(Votre deck doit contenir Beidou pour pouvoir y ajouter cette carte)"
     }
   },
   {
@@ -2175,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Collei</span>, équipe cette carte.\\nUne fois Collei équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Retour folié</span> une fois.\\nPendant la manche durant laquelle Collei, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Retour folié</span>, si une capacité d'un de vos personnages a déclenché une <span style=\"color: #7EC236FF;\">Réaction liée à l'élément Dendro</span> : Inflige 1 pt de <span style=\"color: #7EC236FF;\">DGT Dendro</span>. (1 fois par manche)\\n(Votre deck doit contenir Collei pour pouvoir y ajouter cette carte)"
@@ -2282,7 +2463,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est le <span style=\"color: #FFFFFFFF;\">Champieffroi panaché</span>, équipe cette carte.\\nUne fois le Champieffroi panaché équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Spores proliférantes</span> une fois.\\nLe Champieffroi panaché équipé de cette carte peut obtenir 1 cumul de Vitalité radicale en plus.\\n(Votre deck doit contenir le Champieffroi panaché pour pouvoir y ajouter cette carte)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est le <span style=\"color: #FFFFFFFF;\">Champieffroi panaché</span>, équipe cette carte.\\nUne fois le Champieffroi panaché équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Spores proliférantes</span> une fois.\\nLe Champieffroi panaché équipé de cette carte peut obtenir 1 cumul de vitalité radicale en plus.\\n(Votre deck doit contenir le Champieffroi panaché pour pouvoir y ajouter cette carte)"
     }
   },
   {
@@ -2447,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\nEn arrivant sur le terrain : Accorde au personnage affecté <span style=\"color: #FFFFFFFF;\">1 pt de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span></span> pour chaque personnage de Liyue dans l'équipe. (3 pts maximum)\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">arme d'hast</span>, un personnage peut équiper au maximum 1 arme)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">En arrivant sur le terrain :</span> Accorde au personnage affecté <span style=\"color: #FFFFFFFF;\">1 pt de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span></span> pour chaque personnage de Liyue dans l'équipe. (3 pts maximum)\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">arme d'hast</span>, un personnage peut équiper au maximum 1 arme)"
     }
   },
   {
@@ -3017,7 +3198,7 @@
     "name": "Chang le Neuvième",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsqu'un des camps a utilisé une capacité : </span>Si des <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> ou des <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span> sont infligés ou une <span style=\"color: #FFFFFFFF;\">réaction élémentaire</span> est déclenchée, cette carte cumule <span style=\"color: #FFFFFFFF;\">1 inspiration</span>.\\nSi la carte a cumulé <span style=\"color: #FFFFFFFF;\">3 inspirations</span>, défausse la carte : Pioche 2 cartes."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsqu'un des camps a utilisé une capacité : </span>Si des <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> ou des <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span> ont été infligés ou si une <span style=\"color: #FFFFFFFF;\">réaction élémentaire</span> a été déclenchée, cette carte cumule <span style=\"color: #FFFFFFFF;\">1 inspiration</span>.\\nSi la carte a cumulé <span style=\"color: #FFFFFFFF;\">3 inspirations</span> : Défausse la carte et pioche 2 cartes."
     }
   },
   {
@@ -3526,7 +3707,7 @@
     "name": "Poulet fumé nordique",
     "skills": {
       "cost": [],
-      "desc": "Pendant la manche, la prochaine <span style=\"color: #FFFFFFFF;\">attaque normale</span> du personnage choisi coûte 1 dé d'<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Élément neutre</span> en moins.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+      "desc": "Pendant la manche, la prochaine <span style=\"color: #FFFFFFFF;\">attaque normale</span> du personnage choisi dépense 1 dé d'<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Élément neutre</span> en moins.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
     }
   },
   {
@@ -3581,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "Avant la fin de la manche, toutes les <span style=\"color: #FFFFFFFF;\">attaques normales</span> du personnage choisi coûtent 1 dé d'<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Élément neutre</span> en moins.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
+      "desc": "Les trois prochaines <span style=\"color: #FFFFFFFF;\">attaques normales</span> du personnage choisi avant la fin de la manche dépensent 1 dé d'<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Élément neutre</span> en moins.\\n(Un personnage peut consommer au maximum 1 plat par manche)"
     }
   }
 ]

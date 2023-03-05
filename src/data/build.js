@@ -873,6 +873,24 @@ export const builds = {
       },
     },
   },
+  dehya: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
   fischl: {
     roles: {
       DPS: {
@@ -4525,6 +4543,42 @@ export const builds = {
         talent: ['Skill', 'Burst'],
         tip: '',
         note: "<b>[WIP]\nRegarding Weapon Choices:\nMappa Mare:</b> This weapon will perform better if you cannot maintain high uptime on <b>Magic Guide's</b> passive.\n<b>Favonius Codex,</b> <b>Hakushin Ring</b> and <b>Thrilling Tales of Dragon Slayers:</b> These weapons are not as strong as other options for Nahida's personal damage, but the support value they provide can be better for overall team damage.\n<b>\nRegarding Artifact Sets:</b>\n<b>Deepwood Memories (4):</b> This is her best set if no one else is wearing this set.",
+      },
+    },
+  },
+  alhaitham: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
+  yaoyao: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
       },
     },
   },

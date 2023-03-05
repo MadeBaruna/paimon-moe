@@ -7,7 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Update banners', 'Bug fixes', 'Add TCG Deck builder, check it out on TCG menu!'];
+const changelog = ['Update Dehya', 'Update New Weapons', 'Update Achievement', 'Update Timeline'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
