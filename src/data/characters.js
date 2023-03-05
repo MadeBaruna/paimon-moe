@@ -1744,6 +1744,151 @@ export const characters = {
     },
     element: elements.electro,
   },
+  dehya: {
+    id: 'dehya',
+    name: 'Dehya',
+    rarity: 5,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 15675,
+      atk: 265,
+      def: 628,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 3,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 2,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 10,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 4,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 20,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 8,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 30,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 12,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 45,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 20,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 60,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.faded_red_satin, itemList.trimmed_red_silk, itemList.rich_red_brocade],
+      book: [itemList.teachings_of_praxis, itemList.guide_to_praxis, itemList.philosophies_of_praxis],
+      boss: itemList.puppet_strings,
+    },
+    element: elements.pyro,
+  },
   diluc: {
     id: 'diluc',
     name: 'Diluc',

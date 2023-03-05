@@ -873,6 +873,24 @@ export const builds = {
       },
     },
   },
+  dehya: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
   fischl: {
     roles: {
       DPS: {

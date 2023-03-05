@@ -7,14 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = [
-  'Add Alhaitham and Yaoyao',
-  'Update weapons',
-  'Update achievements',
-  'Update banners',
-  'Update timeline',
-  'Update TCG cards',
-];
+const changelog = ['Update Dehya', 'Update New Weapons', 'Update Achievement', 'Update Timeline'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
