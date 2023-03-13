@@ -577,7 +577,7 @@
         <Icon path={mdiLoading} spin color="white" />
         <div class="ml-2">
           <p>{$t('wish.import.processing')} {currentBanner} {$t('wish.import.banner')}</p>
-          <p>{$t('wish.import.page', values: { page: currentPage } )}</p>
+          <p>{$t('wish.import.page', { values: { page: currentPage } })}</p>
         </div>
       </div>
       <table class="min-w-full md:min-w-0 mt-2">
