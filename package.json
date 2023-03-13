@@ -7,6 +7,7 @@
     "dev": "vite dev --port 3000",
     "build": "NODE_OPTIONS=--max_old_space_size=4096 vite build",
     "preview": "vite preview",
+    "lint": "pnpm run lint:svelte",
     "lint:svelte": "svelte-check",
     "start": "node build"
   },
