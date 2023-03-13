@@ -17,6 +17,8 @@
   import HowToModal from '../../components/CalculatorHowToModal.svelte';
   import Ad from '../../components/Ad.svelte';
 
+  export let data;
+
   const { open: openModal } = getContext('simple-modal');
 
   function openHowTo() {

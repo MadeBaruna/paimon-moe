@@ -1,7 +1,3 @@
-<script context="module">
-  import dataJson from '../../data/radiantSpincrystal/en.json';
-</script>
-
 <script>
   import { onMount } from 'svelte';
   import { locale, t } from 'svelte-i18n';
@@ -12,6 +8,7 @@
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
   import Ad from '../../components/Ad.svelte';
+  import dataJson from '../../data/radiantSpincrystal/en.json';
 
   let data = dataJson;
 

@@ -1,60 +1,16 @@
-<script context="module">
-  import data from '../../data/weapons/en.json';
-  import { weaponList } from '../../data/weaponList.js';
-  import { builds } from '../../data/build';
-
-  function getCharacter(weaponId) {
-    const collection = {};
-    const chars = Object.entries(builds);
-    for (const [charId, char] of chars) {
-      const roles = Object.entries(char.roles);
-      for (const [roleName, role] of roles) {
-        if (!role.recommended) continue;
-
-        let found = false;
-        for (const weapon of role.weapons) {
-          if (weapon.id === weaponId) {
-            found = true;
-            break;
-          }
-        }
-
-        if (found) {
-          if (collection[charId] === undefined) {
-            collection[charId] = {
-              id: charId,
-              roles: [],
-            };
-          }
-
-          collection[charId].roles.push(roleName);
-        }
-      }
-    }
-
-    return Object.values(collection).sort((a, b) => a.id.localeCompare(b.id));
-  }
-
-  export async function load({ params }) {
-    const { id } = params;
-    const weapon = data[id];
-    const ascensions = weaponList[id].ascension;
-    const source = weaponList[id].source;
-    const recommendedCharacter = getCharacter(id);
-
-    return { props: { id, weapon, recommendedCharacter, source, ascensions } };
-  }
-</script>
-
 <script>
   import { mdiCircle, mdiClose, mdiStar } from '@mdi/js';
   import { locale, t } from 'svelte-i18n';
-  import Icon from '../../components/Icon.svelte';
+  import Icon from '../../../components/Icon.svelte';
   import { onMount } from 'svelte';
-  import { characters } from '../../data/characters';
-  import { formatStat, numberFormat } from '../../helper';
-  import Ad from '../../components/Ad.svelte';
-  import Tooltip from '../../components/Tooltip.svelte';
+  import { characters } from '../../../data/characters';
+  import { formatStat, numberFormat } from '../../../helper';
+  import Ad from '../../../components/Ad.svelte';
+  import Tooltip from '../../../components/Tooltip.svelte';
+
+  export let data;
+
+  let { id, weapon, recommendedCharacter, source, ascensions } = data;
 
   const rarity = {
     1: 'text-white',
@@ -70,18 +26,12 @@
   const ascen = [0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5, 5, 6, 6, 6];
   const ascenSpan = [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3];
 
-  export let id;
-  export let weapon;
-  export let recommendedCharacter;
-  export let source;
-  export let ascensions;
-
   if (weapon.rarity < 3) {
     showedIndex = [1, 6, 11, 16, 20, 21, 26, 31, 36, 41, 42, 47, 52, 53, 58, 63, 64, 69, 74];
   }
 
   async function changeLocale(locale) {
-    const _data = await import(`../../data/weapons/${locale}.json`);
+    const _data = await import(`../../../data/weapons/${locale}.json`);
     weapon = _data.default[id];
   }
 

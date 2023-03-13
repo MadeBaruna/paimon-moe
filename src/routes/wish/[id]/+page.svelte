@@ -1,10 +1,3 @@
-<script context="module">
-  export async function load({ params }) {
-    const { id } = params;
-    return { props: { id } };
-  }
-</script>
-
 <script>
   import { t } from 'svelte-i18n';
   import { getContext, onMount, tick } from 'svelte';
@@ -12,27 +5,29 @@
   import dayjs from 'dayjs';
   import Chart from 'chart.js';
 
-  import { banners } from '../../data/banners';
-  import { bannersDual } from '../../data/bannersDual';
+  import { banners } from '../../../data/banners';
+  import { bannersDual } from '../../../data/bannersDual';
 
-  import Icon from '../../components/Icon.svelte';
-  import Tooltip from '../../components/Tooltip.svelte';
-  import Ad from '../../components/Ad.svelte';
-  import TableHeader from '../../components/Table/TableHeader.svelte';
-  import WishDetailModal from './_detail.svelte';
+  import Icon from '../../../components/Icon.svelte';
+  import Tooltip from '../../../components/Tooltip.svelte';
+  import Ad from '../../../components/Ad.svelte';
+  import TableHeader from '../../../components/Table/TableHeader.svelte';
+  import WishDetailModal from '../_detail.svelte';
 
-  import { characters } from '../../data/characters';
-  import { weaponList } from '../../data/weaponList';
-  import { getAccountPrefix } from '../../stores/account';
-  import { fromRemote, readSave } from '../../stores/saveManager';
-  import { getTimeOffset, server } from '../../stores/server';
+  import { characters } from '../../../data/characters';
+  import { weaponList } from '../../../data/weaponList';
+  import { getAccountPrefix } from '../../../stores/account';
+  import { fromRemote, readSave } from '../../../stores/saveManager';
+  import { getTimeOffset, server } from '../../../stores/server';
 
   Chart.defaults.global.defaultFontColor = '#cbd5e0';
   Chart.defaults.global.defaultFontFamily = 'Poppins';
 
   const { open: openModal } = getContext('simple-modal');
 
-  export let id;
+  export let data;
+
+  let { id } = data;
 
   const bannerTypes = {
     'character-event': 'characters',

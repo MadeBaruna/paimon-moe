@@ -1,8 +1,3 @@
-<script context="module">
-  import setsDataJson from '../../data/furnishing/sets/en.json';
-  import furnishingDataJson from '../../data/furnishing/en.json';
-</script>
-
 <script>
   import { getContext, onMount } from 'svelte';
   import { fade } from 'svelte/transition';
@@ -18,6 +13,8 @@
   import { readSave, updateSave } from '../../stores/saveManager';
   import CalculateModal from './_calculateModal.svelte';
   import { pushToast } from '../../stores/toast';
+  import setsDataJson from '../../data/furnishing/sets/en.json';
+  import furnishingDataJson from '../../data/furnishing/en.json';
 
   const { open: openModal } = getContext('simple-modal');
 

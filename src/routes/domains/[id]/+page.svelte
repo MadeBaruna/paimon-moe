@@ -1,23 +1,15 @@
-<script context="module">
-  import artifactsJson from '../../data/artifacts/en.json';
-  import { domains } from '../../data/domain.js';
-  export async function load({ params }) {
-    const { id } = params;
-    const domain = domains[id];
-
-    return { props: { id, domain } };
-  }
-</script>
-
 <script>
   import { onMount } from 'svelte';
   import { mdiChevronRight, mdiCircle, mdiClose, mdiStar } from '@mdi/js';
   import { locale, t } from 'svelte-i18n';
-  import Icon from '../../components/Icon.svelte';
-  import Button from '../../components/Button.svelte';
+  import Icon from '../../../components/Icon.svelte';
+  import Button from '../../../components/Button.svelte';
+  import artifactsJson from '../../../data/artifacts/en.json';
 
-  export let id;
-  export let domain;
+  export let data;
+
+  let {id, domain} = data;
+
   let artifacts = artifactsJson;
 
   let currentArtifacts = [];
@@ -37,7 +29,7 @@
   }
 
   async function changeLocale(locale) {
-    const _data = await import(`../../data/artifacts/${locale}.json`);
+    const _data = await import(`../../../data/artifacts/${locale}.json`);
     artifacts = _data.default;
     process();
   }

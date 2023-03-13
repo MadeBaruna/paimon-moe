@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import { register, addMessages, init, getLocaleFromNavigator, locale as $locale } from 'svelte-i18n';
-import { browser } from '$app/env';
+import { browser } from '$app/environment';
 
 import en from './locales/en.json';
 import enItems from './locales/items/en.json';

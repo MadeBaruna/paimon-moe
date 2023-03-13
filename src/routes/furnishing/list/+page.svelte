@@ -1,18 +1,15 @@
-<script context="module">
-  import dataJson from '../../data/furnishing/en.json';
-</script>
-
 <script>
   import { onMount } from 'svelte';
   import { locale, t } from 'svelte-i18n';
   import debounce from 'lodash.debounce';
   import { mdiInformationOutline, mdiMinus, mdiPlus } from '@mdi/js';
 
-  import TableHeader from '../../components/Table/TableHeader.svelte';
-  import Icon from '../../components/Icon.svelte';
-  import Button from '../../components/Button.svelte';
-  import { getAccountPrefix } from '../../stores/account';
-  import { readSave, updateSave } from '../../stores/saveManager';
+  import TableHeader from '../../../components/Table/TableHeader.svelte';
+  import Icon from '../../../components/Icon.svelte';
+  import Button from '../../../components/Button.svelte';
+  import { getAccountPrefix } from '../../../stores/account';
+  import { readSave, updateSave } from '../../../stores/saveManager';
+  import dataJson from '../../../data/furnishing/en.json';
 
   let data = dataJson;
 
@@ -130,7 +127,7 @@
   }
 
   async function changeLocale(locale) {
-    data = (await import(`../../data/furnishing/${locale}.json`)).default;
+    data = (await import(`../../../data/furnishing/${locale}.json`)).default;
     parseFurnishing();
   }
 

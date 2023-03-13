@@ -1,3 +1,4 @@
+/// <reference types="@sveltejs/kit" />
 import { version } from '$service-worker';
 
 const CACHE = `cache${version}`;

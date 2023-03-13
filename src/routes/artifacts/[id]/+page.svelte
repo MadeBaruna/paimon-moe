@@ -1,105 +1,11 @@
-<script context="module">
-  import data from '../../data/artifacts/en.json';
-  import { builds } from '../../data/build';
-
-  function getCharacter(artifactId) {
-    const collection2 = {};
-    const collection4 = {};
-    const collectionPiece = {
-      sands: {},
-      goblet: {},
-      circlet: {},
-    };
-
-    const chars = Object.entries(builds);
-    for (const [charId, char] of chars) {
-      const roles = Object.entries(char.roles);
-      for (const [roleName, role] of roles) {
-        if (!role.recommended) continue;
-
-        let found2 = false;
-        let found4 = false;
-        for (const artifact of role.artifacts) {
-          if (
-            artifact.find((e) => {
-              if (e === '+18%_atk_set') {
-                return [
-                  'gladiators_finale',
-                  'shimenawas_reminiscence',
-                  'vermillion_hereafter',
-                  'echoes_of_an_offering',
-                ].includes(artifactId);
-              } else if (e === '+20%_energy_recharge') {
-                return ['emblem_of_severed_fate', 'the_exile', 'scholar'].includes(artifactId);
-              } else if (e === '+25%_physical_dmg') {
-                return ['bloodstained_chivalry', 'pale_flame'].includes(artifactId);
-              }
-
-              return e === artifactId;
-            })
-          ) {
-            if (artifact.length === 1) found4 = true;
-            else found2 = true;
-
-            for (const piece of ['sands', 'goblet', 'circlet']) {
-              for (const stat of role.mainStats[piece]) {
-                let statName = stat;
-                if (stat === 'DMG') statName = 'Crit DMG';
-                if (collectionPiece[piece][statName] === undefined) collectionPiece[piece][statName] = {};
-                collectionPiece[piece][statName][charId] = true;
-              }
-            }
-          }
-        }
-
-        if (found2) {
-          if (collection2[charId] === undefined) {
-            collection2[charId] = {
-              id: charId,
-              roles: [],
-            };
-          }
-
-          collection2[charId].roles.push(roleName);
-        }
-
-        if (found4) {
-          if (collection4[charId] === undefined) {
-            collection4[charId] = {
-              id: charId,
-              roles: [],
-            };
-          }
-
-          collection4[charId].roles.push(roleName);
-        }
-      }
-    }
-
-    return {
-      two: Object.values(collection2).sort((a, b) => a.id.localeCompare(b.id)),
-      four: Object.values(collection4).sort((a, b) => a.id.localeCompare(b.id)),
-      pieces: collectionPiece,
-    };
-  }
-
-  export async function load({ params }) {
-    const { id } = params;
-    const artifact = data[id];
-    const recommendedCharacter = getCharacter(id);
-
-    return { props: { id, artifact, recommendedCharacter } };
-  }
-</script>
-
 <script>
   import { getContext, onMount } from 'svelte';
   import { mdiChevronRight, mdiCircle, mdiStar } from '@mdi/js';
   import { locale, t } from 'svelte-i18n';
-  import Icon from '../../components/Icon.svelte';
-  import { domains } from '../../data/domain.js';
-  import { characters } from '../../data/characters';
-  import PieceModal from './_pieceModal.svelte';
+  import Icon from '../../../components/Icon.svelte';
+  import { domains } from '../../../data/domain.js';
+  import { characters } from '../../../data/characters';
+  import PieceModal from '../_pieceModal.svelte';
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -113,14 +19,14 @@
 
   const pieces = ['flower', 'plume', 'sands', 'goblet', 'circlet'];
 
-  export let id;
-  export let artifact;
-  export let recommendedCharacter;
+  export let data;
+
+  let { id, artifact, recommendedCharacter } = data;
   // console.log(recommendedCharacter.pieces);
   let images = [];
 
   async function changeLocale(locale) {
-    const _data = await import(`../../data/artifacts/${locale}.json`);
+    const _data = await import(`../../../data/artifacts/${locale}.json`);
     artifact = _data.default[id];
   }
 
@@ -165,6 +71,7 @@
 <svelte:head>
   <title>{artifact.name} - Paimon.moe</title>
 </svelte:head>
+
 <div class="lg:ml-64 pt-20 lg:pt-8 max-w-screen-xl md:pl-4">
   <div class="flex flex-col items-start">
     <div class="px-4">

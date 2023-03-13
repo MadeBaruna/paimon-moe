@@ -1,28 +1,29 @@
 <script>
   import '../app.css';
 
+  import { navigating, page } from '$app/stores';
+
+  import { mdiDiscord, mdiFacebook, mdiGithub, mdiReddit, mdiTwitter } from '@mdi/js';
+  import localforage from 'localforage';
   import { onMount } from 'svelte';
   import { derived } from 'svelte/store';
   import { fade } from 'svelte/transition';
-  import localforage from 'localforage';
   import { t } from 'svelte-i18n';
-  import { startClient } from '../i18n.js';
-  import { navigating, page } from '$app/stores';
-
   import Modal from 'svelte-simple-modal';
-  import { mdiDiscord, mdiFacebook, mdiGithub, mdiReddit, mdiTwitter } from '@mdi/js';
 
-  import Sidebar from '../components/Sidebar/Sidebar.svelte';
-  import Header from '../components/Header.svelte';
+  import { startClient } from '../i18n.js';
+
   import DataSync from '../components/DataSync.svelte';
+  import Icon from '../components/Icon.svelte';
+  import Header from '../components/Header.svelte';
+  import SettingData from '../components/SettingData.svelte';
+  import Sidebar from '../components/Sidebar/Sidebar.svelte';
+  import ServiceWorker from '../components/ServiceWorker.svelte';
+  import Toast from '../components/Toast.svelte';
+  import TodoData from '../components/TodoData.svelte';
 
   import { showSidebar } from '../stores/sidebar';
   import { checkLocalSave } from '../stores/saveManager';
-  import TodoData from '../components/TodoData.svelte';
-  import SettingData from '../components/SettingData.svelte';
-  import Toast from '../components/Toast.svelte';
-  import Icon from '../components/Icon.svelte';
-  import ServiceWorker from '../components/ServiceWorker.svelte';
 
   const delayedPreloading = derived(navigating, (_, set) => {
     set(true);
@@ -68,9 +69,11 @@
   </DataSync>
   <ServiceWorker />
 </Modal>
+
 {#if $navigating && $delayedPreloading}
   <div transition:fade class="loading-bar" />
 {/if}
+
 <div class="lg:ml-64 px-4 md:px-8 py-8 flex flex-col md:pb-24">
   <p class="text-gray-400">
     {$t('footer.affliate')}<br />

@@ -1,12 +1,9 @@
-<script context="module">
-  import dataJson from '../../data/artifacts/en.json';
-</script>
-
 <script>
   import { onMount } from 'svelte';
   import { locale, t } from 'svelte-i18n';
   import TableHeader from '../../components/Table/TableHeader.svelte';
   import { domains } from '../../data/domain.js';
+  import dataJson from '../../data/artifacts/en.json';
 
   let data = dataJson;
   let artifactList = [];

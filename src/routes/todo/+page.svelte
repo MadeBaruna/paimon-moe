@@ -4,16 +4,16 @@
   import { getContext, onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
   import { mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiClose, mdiInformation, mdiLoading } from '@mdi/js';
-  import { todos, loading } from '../stores/todo';
-  import { ar, wl } from '../stores/server';
-  import { itemList as itemListData } from '../data/itemList';
-  import Masonry from '../components/Masonry.svelte';
-  import Icon from '../components/Icon.svelte';
-  import Button from '../components/Button.svelte';
-  import TodoDeleteModal from '../components/TodoDeleteModal.svelte';
-  import { getCurrentDay } from '../stores/server';
-  import { itemGroup } from '../data/itemGroup';
-  import { dropRates } from '../data/dropRates';
+  import { todos, loading } from '../../stores/todo';
+  import { ar, wl } from '../../stores/server';
+  import { itemList as itemListData } from '../../data/itemList';
+  import Masonry from '../../components/Masonry.svelte';
+  import Icon from '../../components/Icon.svelte';
+  import Button from '../../components/Button.svelte';
+  import TodoDeleteModal from '../../components/TodoDeleteModal.svelte';
+  import { getCurrentDay } from '../../stores/server';
+  import { itemGroup } from '../../data/itemGroup';
+  import { dropRates } from '../../data/dropRates';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 

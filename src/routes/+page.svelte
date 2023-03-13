@@ -1,19 +1,3 @@
-<script context="module">
-  export async function load({ fetch }) {
-    const promoted = ['barbara', 'collei', 'bennett'];
-    const builds = {};
-    for (const p of promoted) {
-      const response = await fetch(`/characters/build/${p}.json`);
-      const b = await response.json();
-      builds[p] = b;
-    }
-
-    return {
-      props: { builds },
-    };
-  }
-</script>
-
 <script>
   import { onMount } from 'svelte';
   import debounce from 'lodash.debounce';
@@ -35,7 +19,7 @@
   import Build from './_index/build.svelte';
   import Ad from '../components/Ad.svelte';
 
-  export let builds;
+  export let data;
 
   let refreshLayout;
   let isMobile = false;
@@ -82,7 +66,7 @@
         <Ad type="mobile" variant="mpu" id="1" />
       </div>
     {/if}
-    <Build on:done={onDone} {builds} />
+    <Build on:done={onDone} builds={data.builds} />
     <Event on:done={onDone} />
     <Item on:done={onDone} />
     <Discord on:done={onDone} />

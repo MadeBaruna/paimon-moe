@@ -1,37 +1,26 @@
-<script context="module">
-  import artifactData from '../../data/artifacts/en.json';
-  import weaponData from '../../data/weapons/en.json';
-
-  export async function load({ params, fetch }) {
-    const { id } = params;
-    const data = await import(`../../data/characterData/${id}.json`);
-    const buildData = await (await fetch(`/characters/build/${id}.json`)).json();
-
-    return { props: { id, data, buildData } };
-  }
-</script>
-
 <script>
-  export let id;
-  export let data;
-  export let buildData;
-
   import { onMount } from 'svelte';
   import { t, locale } from 'svelte-i18n';
   import { mdiChevronRight, mdiCircle, mdiClose, mdiContentSave, mdiMinus, mdiPencil, mdiPlus, mdiStar } from '@mdi/js';
-  import Icon from '../../components/Icon.svelte';
-  import Button from '../../components/Button.svelte';
-  import Tooltip from '../../components/TooltipRelative.svelte';
-  import { getAccountPrefix } from '../../stores/account';
-  import { readSave, updateSave } from '../../stores/saveManager';
-  import { characters } from '../../data/characters';
-  import { itemGroup } from '../../data/itemGroup';
+  import Icon from '../../../components/Icon.svelte';
+  import Button from '../../../components/Button.svelte';
+  import Tooltip from '../../../components/TooltipRelative.svelte';
+  import { getAccountPrefix } from '../../../stores/account';
+  import { readSave, updateSave } from '../../../stores/saveManager';
+  import { characters } from '../../../data/characters';
+  import { itemGroup } from '../../../data/itemGroup';
+  import artifactData from '../../../data/artifacts/en.json';
+  import weaponData from '../../../data/weapons/en.json';
 
-  import SkillCard from './_skillCard.svelte';
-  import PassiveSkillCard from './_passiveSkillCard.svelte';
-  import { weaponList } from '../../data/weaponList';
-  import Ad from '../../components/Ad.svelte';
-  import { formatStat } from '../../helper';
+  import SkillCard from '../_skillCard.svelte';
+  import PassiveSkillCard from '../_passiveSkillCard.svelte';
+  import { weaponList } from '../../../data/weaponList';
+  import Ad from '../../../components/Ad.svelte';
+  import { formatStat } from '../../../helper';
+
+  export let data;
+
+  let { id, character: characterData, build: buildData } = data;
 
   const rarityColor = {
     1: 'text-white',
@@ -209,8 +198,8 @@
 
   async function changeLocale(locale) {
     console.log('change locale');
-    const _dataArtifact = await import(`../../data/artifacts/${locale}.json`);
-    const _dataWeapon = await import(`../../data/weapons/${locale}.json`);
+    const _dataArtifact = await import(`../../../data/artifacts/${locale}.json`);
+    const _dataWeapon = await import(`../../../data/weapons/${locale}.json`);
     artifacts = _dataArtifact.default;
     weapons = _dataWeapon.default;
   }
@@ -312,7 +301,7 @@
           <Icon path={mdiCircle} size={0.4} className="mx-2 mt-1" color="white" />
           <p class="text-base text-white font-semibold mt-1">{character.weapon.name}</p>
         </div>
-        <p class="text-gray-200 px-4 md:px-8">{data.description}</p>
+        <p class="text-gray-200 px-4 md:px-8">{characterData.description}</p>
         <div class="flex flex-col md:flex-row mt-4 space-y-4 md:space-y-0 md:space-x-4 px-4 md:px-8">
           <div class="text-gray-200 rounded-xl border border-gray-200 border-opacity-25 p-4 flex">
             <div class="mr-4">
@@ -382,9 +371,9 @@
                   <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
                     {$t('characters.critDamage')}
                   </td>
-                  {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage'}
+                  {#if characterData.statGrow !== 'critRate' && characterData.statGrow !== 'critDamage'}
                     <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
-                      {$t(`characters.${data.statGrow}`)}
+                      {$t(`characters.${characterData.statGrow}`)}
                     </td>
                   {/if}
                   <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
@@ -397,30 +386,30 @@
                       <td rowspan={2} class="text-center border-t border-gray-700 border-r px-2">{ascen[i]}</td>
                     {/if}
                     <td class="text-center border-t border-gray-700 border-r px-2">{level[i]}</td>
-                    <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(data.hp[index])}</td>
-                    <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(data.atk[index])}</td>
-                    <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(data.def[index])}</td>
-                    {#if data.statGrow === 'critRate'}
+                    <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(characterData.hp[index])}</td>
+                    <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(characterData.atk[index])}</td>
+                    <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(characterData.def[index])}</td>
+                    {#if characterData.statGrow === 'critRate'}
                       <td class="text-center border-t border-gray-700 border-r px-2">
-                        {numberFormat.format(data.critRate[index] * 100)}%
+                        {numberFormat.format(characterData.critRate[index] * 100)}%
                       </td>
                     {:else}
                       <td class="text-center border-t border-gray-700 border-r px-2">5%</td>
                     {/if}
-                    {#if data.statGrow === 'critDamage'}
+                    {#if characterData.statGrow === 'critDamage'}
                       <td class="text-center border-t border-gray-700 border-r px-2">
-                        {numberFormat.format(data.critDamage[index] * 100)}%
+                        {numberFormat.format(characterData.critDamage[index] * 100)}%
                       </td>
                     {:else}
                       <td class="text-center border-t border-gray-700 border-r px-2">50%</td>
                     {/if}
-                    {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage' && data.statGrow !== 'em'}
+                    {#if characterData.statGrow !== 'critRate' && characterData.statGrow !== 'critDamage' && characterData.statGrow !== 'em'}
                       <td class="text-center border-t border-gray-700 border-r px-2">
-                        {numberFormat.format(data[data.statGrow][index] * 100)}%
+                        {numberFormat.format(characterData[characterData.statGrow][index] * 100)}%
                       </td>
-                    {:else if data.statGrow === 'em'}
+                    {:else if characterData.statGrow === 'em'}
                       <td class="text-center border-t border-gray-700 border-r px-2">
-                        {numberFormat.format(data[data.statGrow][index])}
+                        {numberFormat.format(characterData[characterData.statGrow][index])}
                       </td>
                     {/if}
                     {#if i % 2 === 0}
@@ -800,16 +789,16 @@
     <a href="/characters/{id}/#talents" class="font-black font-display text-2xl mt-4">
       {$t('characters.talents')}
     </a>
-    <SkillCard {id} image="talent_1" data={data.attack} withQuote={false} />
-    <SkillCard {id} image="talent_2" data={data.elementalSkill} withQuote={true} />
-    <SkillCard {id} image="talent_3" data={data.burst} withQuote={true} />
-    {#if data.dashSkill}
-      <SkillCard {id} image="talent_7" data={data.dashSkill} withQuote={true} withSingleLevel={true} />
+    <SkillCard {id} image="talent_1" data={characterData.attack} withQuote={false} />
+    <SkillCard {id} image="talent_2" data={characterData.elementalSkill} withQuote={true} />
+    <SkillCard {id} image="talent_3" data={characterData.burst} withQuote={true} />
+    {#if characterData.dashSkill}
+      <SkillCard {id} image="talent_7" data={characterData.dashSkill} withQuote={true} withSingleLevel={true} />
     {/if}
   </div>
   <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl">
     <p class="font-black font-display text-2xl mt-4">{$t('characters.passiveTalents')}</p>
-    {#each data.passives as passive, i}
+    {#each characterData.passives as passive, i}
       <PassiveSkillCard {id} image="talent_{i + 4}" data={passive} />
     {/each}
   </div>
@@ -820,7 +809,7 @@
     <a href="/characters/{id}/#constellations" class="font-black font-display text-2xl mt-4">
       {$t('characters.constellations')}
     </a>
-    {#each data.constellations as constellation, i}
+    {#each characterData.constellations as constellation, i}
       <PassiveSkillCard
         {id}
         fade={constellationCountTotal > -1 && constellationCountTotal < i + 1}

@@ -3,15 +3,15 @@
 
   import { getContext } from 'svelte';
 
-  import { characters } from '../data/characters';
-  import { itemGroup } from '../data/itemGroup';
-  import { itemList } from '../data/itemList';
-  import { weaponList } from '../data/weaponList';
+  import { characters } from '../../data/characters';
+  import { itemGroup } from '../../data/itemGroup';
+  import { itemList } from '../../data/itemList';
+  import { weaponList } from '../../data/weaponList';
 
-  import CharacterSelect from '../components/CharacterSelect.svelte';
-  import WeaponSelect from '../components/WeaponSelect.svelte';
-  import TodoAddModal from '../components/TodoAddModal.svelte';
-  import { addTodo } from '../stores/todo';
+  import CharacterSelect from '../../components/CharacterSelect.svelte';
+  import WeaponSelect from '../../components/WeaponSelect.svelte';
+  import TodoAddModal from '../../components/TodoAddModal.svelte';
+  import { addTodo } from '../../stores/todo';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 

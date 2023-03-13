@@ -1,7 +1,3 @@
-<script context="module">
-  import data from '../../data/weapons/en.json';
-</script>
-
 <script>
   import { onMount } from 'svelte';
   import { locale, t } from 'svelte-i18n';
@@ -10,6 +6,7 @@
   import Ad from '../../components/Ad.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave } from '../../stores/saveManager';
+  import data from '../../data/weapons/en.json';
 
   let weaponData = data;
   let weaponList = [];

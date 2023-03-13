@@ -1,10 +1,3 @@
-<script context="module">
-  import { banners } from '../../data/banners';
-  import { characters } from '../../data/characters';
-  import { birthdays } from '../../data/birthdays';
-  import { events } from '../../data/events';
-</script>
-
 <script>
   import { getContext, onMount } from 'svelte';
   import dayjs from 'dayjs';
@@ -28,6 +21,11 @@
   import { readSave } from '../../stores/saveManager';
   import { bannersDual } from '../../data/bannersDual';
   import Ad from '../../components/Ad.svelte';
+  
+  import { banners } from '../../data/banners';
+  import { characters } from '../../data/characters';
+  import { birthdays } from '../../data/birthdays';
+  import { events } from '../../data/events';
 
   const { open: openModal } = getContext('simple-modal');
 

@@ -1,5 +1,5 @@
 <script>
-  import Ad from '../components/Ad.svelte';
+  import Ad from '../../components/Ad.svelte';
 </script>
 
 <div class="pt-20 lg:ml-64 lg:pt-8 px-4 md:px-8 max-w-screen-lg">

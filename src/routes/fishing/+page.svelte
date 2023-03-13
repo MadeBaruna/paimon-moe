@@ -1,24 +1,3 @@
-<script context="module">
-  import dataJson from '../../data/fishing/en.json';
-  import locations from '../../data/fishing/location.json';
-
-  let spots = {
-    mondstadt: [],
-    liyue: [],
-    inazuma: [],
-    enkanomiya: [],
-    chasm: [],
-    sumeru: [],
-  };
-  for (const [id, location] of Object.entries(locations)) {
-    spots[location.location].push({ ...location, id });
-  }
-
-  export async function load() {
-    return { props: { spots } };
-  }
-</script>
-
 <script>
   import { locale, t } from 'svelte-i18n';
   import { getContext, onMount } from 'svelte';
@@ -32,13 +11,15 @@
   import { readSave, updateSave } from '../../stores/saveManager';
   import { getAccountPrefix } from '../../stores/account';
   import EditModal from './_editModal.svelte';
+  import dataJson from '../../data/fishing/en.json';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
-  let data = dataJson;
-  export let spots;
+  export let data;
 
-  let fishList = data;
+  let { spots } = data;
+
+  let fishList = dataJson;
   let timer = {};
   let now = dayjs();
 

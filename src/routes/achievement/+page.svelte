@@ -1,7 +1,3 @@
-<script context="module">
-  import achievementData from '../../data/achievement/en.json';
-</script>
-
 <script>
   import { locale, t } from 'svelte-i18n';
   import { onMount, tick } from 'svelte';
@@ -17,6 +13,7 @@
   import Select from '../../components/Select.svelte';
   import { pushToast } from '../../stores/toast';
   import Ad from '../../components/Ad.svelte';
+  import achievementData from '../../data/achievement/en.json';
 
   let achievementContainer;
 

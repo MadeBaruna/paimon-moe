@@ -1,15 +1,3 @@
-// const sveltePreprocess = require('svelte-preprocess');
-// const postcss = require('./postcss.config');
-
-// const preprocess = sveltePreprocess({
-//   defaults: {
-//     style: 'postcss',
-//   },
-//   postcss,
-// });
-
-// module.exports = { preprocess };
-
 import preprocess from 'svelte-preprocess';
 import adapter from '@sveltejs/adapter-static';
 
@@ -17,18 +5,16 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
   kit: {
     adapter: adapter(),
-    prerender: {
-      default: true,
+    env: {
+      publicPrefix: ''
     },
     serviceWorker: {
       register: false,
     },
   },
-  preprocess: [
-    preprocess({
-      postcss: true,
-    }),
-  ],
+  preprocess: preprocess({
+    postcss: true,
+  }),
 };
 
 export default config;
