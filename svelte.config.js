@@ -6,7 +6,7 @@ const config = {
   kit: {
     adapter: adapter(),
     env: {
-      publicPrefix: ''
+      publicPrefix: 'VITE_'
     },
     serviceWorker: {
       register: false,
