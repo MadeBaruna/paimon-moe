@@ -7,7 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Update Dehya', 'Update New Weapons', 'Update Achievement', 'Update Timeline'];
+const changelog = ['Update Mika', 'Update Banners', 'Update Timeline'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
