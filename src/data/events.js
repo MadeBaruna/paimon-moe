@@ -1205,7 +1205,7 @@ export const events = [
     start: '2023-03-31 10:00:00',
     end: '2023-04-10 03:59:59',
     color: '#83bfb4',
-    url: 'https://www.hoyolab.com/article/17043974',
+    url: 'https://www.hoyolab.com/article/17337582',
     showOnHome: true,
   },
   {
@@ -1216,7 +1216,7 @@ export const events = [
     start: '2023-04-03 04:00:00',
     end: '2023-04-10 03:59:59',
     color: '#5baced',
-    url: 'https://www.hoyolab.com/article/17043974',
+    url: 'https://www.hoyolab.com/article/17374982',
     showOnHome: true,
   },
 ];
