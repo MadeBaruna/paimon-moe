@@ -3,15 +3,12 @@
   import { mdiStar } from '@mdi/js';
 
   import Icon from '../../components/Icon.svelte';
-  import { onMount } from 'svelte';
 
   export let avg;
   export let type;
   export let order = 0;
   export let legendaryPity = type.id === 'weapon-event' ? 80 : 90;
   export let colorMultiplier = 120;
-
-  const original = [...avg.legendary.pulls];
 
   let numberFormat = Intl.NumberFormat('en', {
     maximumFractionDigits: 2,
@@ -22,27 +19,6 @@
     const hue = percentage * colorMultiplier;
     return `color: hsl(${hue}, 100%, 60%);`;
   }
-
-  function wow() {
-    for (const pull of avg.legendary.pulls) {
-      if (pull.pity >= 90) continue;
-      pull.pity += 1;
-    }
-
-    avg.legendary.pulls = avg.legendary.pulls;
-  }
-
-  let interval;
-  onMount(() => {
-    interval = setInterval(() => {
-      wow();
-    }, 500);
-
-    setTimeout(() => {
-      clearInterval(interval);
-      avg.legendary.pulls = original;
-    }, 60000);
-  });
 
   $: textSize = avg.legendary.total > 20 ? 'text-sm' : 'text-base';
 </script>
@@ -148,9 +124,8 @@
       {#each avg.legendary.pulls as pull}
         <span class="pity rate-{pull.rate} {textSize}"
           >{$t(pull.name)}
-          <!-- <span style={calculateColor((legendaryPity - pull.pity) / legendaryPity)}>{pull.pity}</span> -->
-          <span class="rainbow">{pull.pity}</span>
-        </span>
+          <span style={calculateColor((legendaryPity - pull.pity) / legendaryPity)}>{pull.pity}</span></span
+        >
       {/each}
     </div>
   {/if}
@@ -198,26 +173,6 @@
       grid-template-rows: 1fr auto;
       margin-bottom: 1rem;
       break-inside: avoid;
-    }
-  }
-
-  .rainbow {
-    background-image: repeating-linear-gradient(45deg, green, yellow, orange, red);
-    background-size: 800% 800%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: rainbow 5s ease-in-out infinite;
-  }
-
-  @keyframes rainbow {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 25%;
-    }
-    100% {
-      background-position: 0% 50%;
     }
   }
 </style>
