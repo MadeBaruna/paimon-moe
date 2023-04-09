@@ -2881,6 +2881,24 @@ export const builds = {
       },
     },
   },
+  mika: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        tip: '',
+        note: 'TBD',
+      },
+    },
+  },
   qiqi: {
     roles: {
       SUPPORT: {

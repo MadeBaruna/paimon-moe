@@ -453,4 +453,28 @@ export const bannersDual = {
       version: '3.5',
     },
   ],
+  'The Transcendent One Returns 2': [
+    {
+      name: 'The Transcendent One Returns',
+      image: 2,
+      shortName: 'Shenhe',
+      start: '2023-03-21 18:00:00',
+      end: '2023-04-11 14:59:59',
+      color: '#81DDF0',
+      featured: ['shenhe', 'kamisato_ayaka'],
+      featuredRare: ['diona', 'sucrose', 'mika'],
+      version: '3.5',
+    },
+    {
+      name: 'The Herons Court',
+      image: 3,
+      shortName: 'Shenhe',
+      start: '2023-03-21 18:00:00',
+      end: '2023-04-11 14:59:59',
+      color: '#FFFBF7',
+      featured: ['shenhe', 'kamisato_ayaka'],
+      featuredRare: ['diona', 'sucrose', 'mika'],
+      version: '3.5',
+    },
+  ],
 };
