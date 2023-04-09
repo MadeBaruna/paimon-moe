@@ -394,7 +394,7 @@
         "_id": 12013,
         "type": "Supremo",
         "name": "Milagre Brilhante ♪",
-        "desc": "Cura 4 pontos de Vida de todos os seus personagens.",
+        "desc": "Cura todos os seus personagens em 4 pontos.",
         "cost": [
           {
             "type": "hydro",
@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Yoimiya",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "Supremo",
         "name": "Saxifraga Ryukin",
-        "desc": "Causa 3 pontos de <span style=\"color: #FF9999FF;\">Dano Pyro</span>, gera <span style=\"color: #FFFFFFFF;\">Flama Dourada</span>.",
+        "desc": "Causa 4 pontos de <span style=\"color: #FF9999FF;\">Dano Pyro</span>, gera <span style=\"color: #FFFFFFFF;\">Flama Dourada</span>.",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Flama Dourada",
           "desc": "Após qualquer um de seus personagens além de Yoimiya usar uma habilidade: Causa 1 ponto de <span style=\"color: #FF9999FF;\">Dano Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Klee",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "Ataque Normal",
+        "name": "Caboom",
+        "desc": "Causa 1 pontos de <span style=\"color: #FF9999FF;\">Dano Pyro</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "Habilidade Elemental",
+        "name": "Bomba Saltitante",
+        "desc": "Causa 3 pontos de <span style=\"color: #FF9999FF;\">Dano Pyro</span>, este personagem é afetado por <span style=\"color: #FFFFFFFF;\">Lampejo Explosivo</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Lampejo Explosivo",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando o personagem afetado executa um <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ataque Carregado</span>:</span> consome 1 <span style=\"color: #FF9999FF;\">Pyro</span> a menos, e aumenta o Dano em 1 ponto.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "Supremo",
+        "name": "Faíscas Explosivas",
+        "desc": "Causa 3 pontos de <span style=\"color: #FF9999FF;\">Dano Pyro</span>, gera <span style=\"color: #FFFFFFFF;\">Faíscas Explosivas no campo do oponente</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Faíscas Explosivas",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Após o Personagem usar uma habilidade: </span>Causa 2 pontos de <span style=\"color: #FF9999FF;\">Dano Pyro</span> no seu Personagem em Combate.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>"
         }
       }
     ]
@@ -1069,6 +1137,81 @@
           "name": "Juramento Desbravador",
           "desc": "<span style=\"color: #FFFFFFFF;\">Fase Final:</span> Ganha 1 Nv. de Confiança.\\n<span style=\"color: #FFFFFFFF;\">De acordo com o Nv. de Confiança, recebe os seguintes efeitos:</span>\\nMaior ou igual a 2: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dano Físico</span> causado é convertido em <span style=\"color: #FFACFFFF;\">Dano Electro</span>;\\nMaior ou igual a 4: Dano causado +2;\\nMaior ou igual a 6: Nv. de Confiança -4."
         }
+      }
+    ]
+  },
+  {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Beidou",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "Ataque Normal",
+        "name": "Jornada Marítima",
+        "desc": "Causa 2 pontos de <span style=\"color: #FFFFFFFF;\">Dano Físico</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "Habilidade Elemental",
+        "name": "Invocadora da Maré",
+        "desc": "Este personagem é afetado por <span style=\"color: #FFFFFFFF;\">Invocadora da Maré - Protetora das Ondas</span> e <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Preparar Habilidade</span>: <span style=\"color: #FFFFFFFF;\">Conquistadora das Marés</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Invocadora da Maré - Protetora das Ondas",
+          "desc": "Em sua próxima ação, este personagem usará a habilidade:  <span style=\"color: #FFFFFFFF;\">Invocadora da Maré</span>.\\nDurante a preparação da habilidade: Dá 2 pontos de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> e protege o personagem afetado."
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "Supremo",
+        "name": "Quebrador de Tempestades",
+        "desc": "Causa 3 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span>, gera <span style=\"color: #FFFFFFFF;\">Escudo do Trovão</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Escudo do Trovão",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Após um Ataque Normal de personagem: </span>Causa 1 ponto de <span style=\"color: #FFACFFFF;\">Dano Electro</span>.\\n<span style=\"color: #FFFFFFFF;\">Quando um personagem seu recebe pelo menos 3 pontos de Dano: </span>Cancela 1 ponto de dano.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span>: 2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "Habilidade Elemental",
+        "name": "Conquistadora das Marés",
+        "desc": "(Precisa de 1 rodada de ação para preparação)\\nCausa 2 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span>.",
+        "cost": []
       }
     ]
   },
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "Habilidade Elemental",
         "name": "Lâmina do Vento Solitário",
-        "desc": "Causa 1 pontos de <span style=\"color: #80FFD7FF;\">Dano Anemo</span>, invoca <span style=\"color: #FFFFFFFF;\">Espada Sombra - Vento Solitário</span>.",
+        "desc": "Invoca <span style=\"color: #FFFFFFFF;\">Espada Sombra - Vento Solitário</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "Habilidade Elemental",
         "name": "Sombra Congelante",
-        "desc": "Causa 1 pontos de <span style=\"color: #99FFFFFF;\">Dano Cryo</span>, invoca <span style=\"color: #FFFFFFFF;\">Espada Sombra - Gelo Galopante</span>.",
+        "desc": "Invoca <span style=\"color: #FFFFFFFF;\">Espada Sombra - Gelo Galopante</span>.",
         "cost": [
           {
             "type": "cryo",
@@ -1817,7 +1960,7 @@
           "_id": 127011,
           "id": "radical_vitality",
           "name": "Estímulo de Ativação",
-          "desc": "Quando este personagem causa ou recebe Dano Elemental: recebe 1 acúmulo de \"Estímulo de Ativação\". (Acumula no máximo 3)\\n<span style=\"color: #FFFFFFFF;\">Fase Final:</span> Se o \"Estímulo de Ativação\" tiver chegado no máximo de acumulações, ele é zerado. Ao mesmo tempo, o personagem perde sua Carga."
+          "desc": "Quando este personagem causa ou recebe Dano Elemental: recebe 1 acúmulo de \"Estímulo de Ativação\". (Acumula no máximo 3)\\n<span style=\"color: #FFFFFFFF;\">Fase Final:</span> Se o \"Estímulo de Ativação\" tiver chegado no máximo de acumulações, ele é zerado. Ao mesmo tempo, o personagem perde todas as suas Cargas."
         }
       },
       {
@@ -1830,7 +1973,7 @@
           "_id": 127011,
           "id": "radical_vitality",
           "name": "Estímulo de Ativação",
-          "desc": "Quando este personagem causa ou recebe Dano Elemental: recebe 1 acúmulo de \"Estímulo de Ativação\". (Acumula no máximo 3)\\n<span style=\"color: #FFFFFFFF;\">Fase Final:</span> Se o \"Estímulo de Ativação\" tiver chegado no máximo de acumulações, ele é zerado. Ao mesmo tempo, o personagem perde sua Carga."
+          "desc": "Quando este personagem causa ou recebe Dano Elemental: recebe 1 acúmulo de \"Estímulo de Ativação\". (Acumula no máximo 3)\\n<span style=\"color: #FFFFFFFF;\">Fase Final:</span> Se o \"Estímulo de Ativação\" tiver chegado no máximo de acumulações, ele é zerado. Ao mesmo tempo, o personagem perde todas as suas Cargas."
         }
       }
     ]
@@ -1864,7 +2007,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Diona</span>.\\nApós equipar esta carta, Diona instantaneamente usará <span style=\"color: #FFD780FF;\">Garra de Gato Tremendo de Frio</span> uma vez.\\nA carta <span style=\"color: #FFFFFFFF;\">Escudo Garra de Gato</span> gerada por Diona com esta carta equipada, tem o valor de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> fornecido aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Diona)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Diona</span>.\\nApós equipar esta carta, Diona instantaneamente usará <span style=\"color: #FFD780FF;\">Garra de Gato Tremendo de Frio</span> uma vez.\\nQuando Diona usar <span style=\"color: #FFFFFFFF;\">Escudo Garra de Gato</span> com esta carta equipada, seu valor de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> será aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Diona)"
     }
   },
   {
@@ -1896,7 +2039,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Chongyun</span>.\\nApós equipar esta carta, Chongyun instantaneamente usará <span style=\"color: #FFD780FF;\">Respiração Constante</span> uma vez.\\nA carta <span style=\"color: #FFFFFFFF;\">Área de Geada de Chongyun</span> gerada por Chongyun com esta carta equipada tem os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span> aumentado em 1 ponto e o Dano causado por <span style=\"color: #FFFFFFFF;\">Ataque Normal</span> de seus personagens portadores de Espada, Espadão ou Lança é aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Chongyun)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Chongyun</span>.\\nApós equipar esta carta, Chongyun instantaneamente usará <span style=\"color: #FFD780FF;\">Respiração Constante</span> uma vez.\\nQuando Chongyun usar <span style=\"color: #FFFFFFFF;\">Área de Geada de Chongyun</span> com esta carta equipada, haverão os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span> aumentado em 1 ponto e o Dano causado por <span style=\"color: #FFFFFFFF;\">Ataque Normal</span> de seus personagens portadores de Espada, Espadão ou Lança é aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Chongyun)"
     }
   },
   {
@@ -1944,7 +2087,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Xingqiu</span>.\\nApós equipar esta carta, Xingqiu instantaneamente usará <span style=\"color: #FFD780FF;\">O Aroma Remanescente</span> uma vez.\\nA carta <span style=\"color: #FFFFFFFF;\">Chuva das Espadas</span> gerada por Xingqiu com esta carta equipada, tem <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Xingqiu)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Xingqiu</span>.\\nApós equipar esta carta, Xingqiu instantaneamente usará <span style=\"color: #FFD780FF;\">O Aroma Remanescente</span> uma vez.\\nQuando Xingqiu usa <span style=\"color: #FFFFFFFF;\">Chuva das Espadas</span> com esta carta equipada, tem <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Xingqiu)"
     }
   },
   {
@@ -2016,7 +2159,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Bennett</span>.\\nApós equipar esta carta, Bennett instantaneamente usará <span style=\"color: #FFD780FF;\">Grande Expectativa</span> uma vez.\\nA carta <span style=\"color: #FFFFFFFF;\">Área Estimulada</span> gerada por Bennett com esta carta equipada, tem seu efeito de aumento de Dano convertido em efeito permanente e não é mais limitado aos pontos de vida.\\n(Essa carta só pode ser colocada em Decks que incluam Bennett)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Bennett</span>.\\nApós equipar esta carta, Bennett instantaneamente usará <span style=\"color: #FFD780FF;\">Grande Expectativa</span> uma vez.\\nQuando Bennett usa <span style=\"color: #FFFFFFFF;\">Área Estimulada</span> com esta carta equipada, seu efeito de aumento de Dano não é mais limitado aos pontos de vida.\\n(Essa carta só pode ser colocada em Decks que incluam Bennett)"
     }
   },
   {
@@ -2036,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Presente Explosivo",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Klee</span>.\\nApós equipar esta carta, Klee instantaneamente usará <span style=\"color: #FFD780FF;\">Presente Explosivo</span> uma vez.\\nO <span style=\"color: #FFFFFFFF;\">Lampejo Explosivo</span> gerado por Klee com esta carta equipada, tem <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Klee)"
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2048,7 +2207,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Fischl</span>.\\nApós equipar esta carta, Fischl instantaneamente usará <span style=\"color: #FFD780FF;\">Predador Estelar</span> uma vez.\\nA carta <span style=\"color: #FFFFFFFF;\">Oz</span> gerada por Fischl com esta carta equipada, após Fischl executar um <span style=\"color: #FFFFFFFF;\">Ataque Normal</span>, causa 2 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span>. (Consome <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>)\\n(Essa carta só pode ser colocada em Decks que incluam Fischl)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Fischl</span>.\\nApós equipar esta carta, Fischl instantaneamente usará <span style=\"color: #FFD780FF;\">Predador Estelar</span> uma vez.\\nQuando Fischl aplicar <span style=\"color: #FFFFFFFF;\">Oz</span> com esta carta equipada, causa 2 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span> após Fischl executar um <span style=\"color: #FFFFFFFF;\">Ataque Normal</span>. (Consome <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>)\\n(Essa carta só pode ser colocada em Decks que incluam Fischl)"
     }
   },
   {
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Razor</span>.\\nApós equipar esta carta, Razor instantaneamente usa <span style=\"color: #FFD780FF;\">Despertamento</span> uma vez.\\nQuando Razor, que está com esta carta equipada, <span style=\"color: #FFFFFFFF;\">usa Despertamento</span>: Dá 1 ponto de Carga para um de seus personagens Electro. (O Personagem em Combate tem prioridade)\\n(Você precisa ter Razor em seu deck para adicionar esta carta a ele)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Razor</span>.\\nApós equipar esta carta, Razor instantaneamente usa <span style=\"color: #FFD780FF;\">Despertamento</span> uma vez.\\nApós Razor usar <span style=\"color: #FFFFFFFF;\">Despertamento</span> com esta carta equipada: Dá 1 ponto de Carga para um de seus personagens Electro. (O Personagem em Combate tem prioridade)\\n(Você precisa ter Razor em seu deck para adicionar esta carta a ele)"
     }
   },
   {
@@ -2080,7 +2239,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Keqing</span>.\\nApós equipar esta carta, Keqing instantaneamente usará <span style=\"color: #FFD780FF;\">Penitência do Trovão</span> uma vez.\\nA carta <span style=\"color: #FFFFFFFF;\">Encantamento Electro</span> gerada por Keqing com esta carta equipada tem os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span> aumentado em 1 ponto e faz com que o <span style=\"color: #FFACFFFF;\">Dano Electro</span> causado pelo personagem afetado seja aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Keqing)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Keqing</span>.\\nApós equipar esta carta, Keqing instantaneamente usará <span style=\"color: #FFD780FF;\">Penitência do Trovão</span> uma vez.\\nQuando Keqing gera <span style=\"color: #FFFFFFFF;\">Encantamento Electro</span> com esta carta equipada, haverão os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span> aumentado em 1 ponto e faz com que o <span style=\"color: #FFACFFFF;\">Dano Electro</span> causado pelo personagem afetado seja aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Keqing)"
     }
   },
   {
@@ -2100,6 +2259,22 @@
     }
   },
   {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Tormenta Elétrica",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Beidou</span>.\\nApós equipar esta carta, Beidou instantaneamente usará <span style=\"color: #FFD780FF;\">Tormenta Elétrica</span> uma vez.\\nQuando Beidou usar <span style=\"color: #FFFFFFFF;\">Tormenta Elétrica</span> com esta carta equipada: caso receba Dano durante <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Preparar Habilidade</span>, os Ataques Normais de Beidou terão seu custo reduzido em 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemento Indefinido</span> durante este turno.(Pode ser desencadeado no máx. 2 vezes)\\n(Essa carta só pode ser colocada em Decks que incluam Beidou)"
+    }
+  },
+  {
     "_id": 215011,
     "id": "chaotic_entropy",
     "type": "talent",
@@ -2116,7 +2291,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Sucrose</span>.\\nApós equipar esta carta, Sucrose instantaneamente usará <span style=\"color: #FFD780FF;\">Entropia Caótica</span> uma vez.\\nApós a carta <span style=\"color: #FFFFFFFF;\">Grande Espírito do Vento</span> gerada por Sucrose com esta carta equipada já ter se convertido para outro tipo Elemental: Aumenta o Dano Elemental deste novo tipo em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Sucrose)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Sucrose</span>.\\nApós equipar esta carta, Sucrose instantaneamente usará <span style=\"color: #FFD780FF;\">Entropia Caótica</span> uma vez.\\nApós <span style=\"color: #FFFFFFFF;\">Grande Espírito do Vento</span> já ter se convertido para outro tipo Elemental ao ser usado por Sucrose com esta carta equipada: Aumenta o Dano Elemental deste novo tipo em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Sucrose)"
     }
   },
   {
@@ -2168,7 +2343,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Noelle</span>.\\nApós equipar esta carta, Noelle instantaneamente usará <span style=\"color: #FFD780FF;\">Estou na sua Retaguarda</span> uma vez.\\nA carta <span style=\"color: #FFFFFFFF;\">Armadura Protetora</span> gerada por Noelle com esta carta equipada, após Noelle usar <span style=\"color: #FFFFFFFF;\">Ataque Normal</span>, cura 1 ponto de Vida de todos os seus personagens. (Uma vez por turno)\\n(Essa carta só pode ser colocada em Decks que incluam Noelle)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Noelle</span>.\\nApós equipar esta carta, Noelle instantaneamente usará <span style=\"color: #FFD780FF;\">Estou na sua Retaguarda</span> uma vez.\\nQuando Noelle usar <span style=\"color: #FFFFFFFF;\">Armadura Protetora</span> com esta carta equipada, após Noelle usar <span style=\"color: #FFFFFFFF;\">Ataque Normal</span>, cura 1 ponto de Vida de todos os seus personagens. (1 vez por turno)\\n(Essa carta só pode ser colocada em Decks que incluam Noelle)"
     }
   },
   {
@@ -2181,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Collei</span>.\\nApós equipar esta carta, Collei instantaneamente usará <span style=\"color: #FFD780FF;\">Retorno Floral</span> uma vez.\\nNo turno em que Collei usar <span style=\"color: #FFFFFFFF;\">Retorno Floral</span> com esta carta equipada e após a habilidade de seu personagem desencadear <span style=\"color: #7EC236FF;\">Reações Dendro</span>: Causa 1 ponto de <span style=\"color: #7EC236FF;\">Dano Dendro</span>. (1 vez por turno)\\n(Essa carta só pode ser colocada em Decks que incluam Collei)"
@@ -2220,7 +2395,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Fatui - Dama do Espelho</span>.\\nApós equipar esta carta, Fatui - Dama do Espelho instantaneamente usará <span style=\"color: #FFD780FF;\">Gaiola de Espelhos</span> uma vez.\\nA carta <span style=\"color: #FFFFFFFF;\">Refração</span> gerada por Fatui - Dama do Espelho com esta carta equipada, tem os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span> aumentado em 1 ponto e reduz 1 Dado Elemental do custo de troca de personagem quando o personagem afetado for trocado por outro personagem.\\n(Essa carta só pode ser colocada em Decks que incluam Fatui - Dama do Espelho)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Fatui - Dama do Espelho</span>.\\nApós equipar esta carta, Fatui - Dama do Espelho instantaneamente usará <span style=\"color: #FFD780FF;\">Gaiola de Espelhos</span> uma vez.\\nQuando Fatui - Dama do Espelho usar <span style=\"color: #FFFFFFFF;\">Refração</span> com esta carta equipada, haverão os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span> aumentado em 1 ponto e reduz 1 Dado Elemental do custo de troca de personagem quando o personagem afetado for trocado por outro personagem.\\n(Essa carta só pode ser colocada em Decks que incluam Fatui - Dama do Espelho)"
     }
   },
   {
@@ -2236,7 +2411,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Fatui - Agente Pyro</span>.\\nApós equipar esta carta, Fatui - Agente Pyro instantaneamente usará <span style=\"color: #FFD780FF;\">Recuperar Tudo</span> uma vez.\\nA carta <span style=\"color: #FFFFFFFF;\">Furtividade</span> gerada por Fatui - Agente Pyro com esta carta equipada, tem os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> aumentado em 1 ponto e converte o <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dano Físico</span> causado pelo personagem afetado em <span style=\"color: #FF9999FF;\">Dano Pyro</span>.\\n(Essa carta só pode ser colocada em Decks que incluam Fatui - Agente Pyro)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Fatui - Agente Pyro</span>.\\nApós equipar esta carta, Fatui - Agente Pyro instantaneamente usará <span style=\"color: #FFD780FF;\">Recuperar Tudo</span> uma vez.\\nQuando Fatui - Agente Pyro usar <span style=\"color: #FFFFFFFF;\">Furtividade</span> com esta carta equipada, haverão os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> aumentado em 1 ponto e converte o <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dano Físico</span> causado pelo personagem afetado em <span style=\"color: #FF9999FF;\">Dano Pyro</span>.\\n(Essa carta só pode ser colocada em Decks que incluam Fatui - Agente Pyro)"
     }
   },
   {
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Aumenta o Dano causado pelo personagem em 1 ponto</span>.\\nQuando jogada: Para cada membro de Liyue na equipe, esta carta adiciona <span style=\"color: #FFFFFFFF;\">1 ponto de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span></span> ao personagem afetado. (Máximo de 3)\\n(Somente <span style=\"color: #FFFFFFFF;\">personagens usuários de Lança</span> podem equipar esta carta. Cada personagem pode equipar no máximo 1 Arma)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Aumenta o Dano causado pelo personagem em 1 ponto</span>.\\n<span style=\"color: #FFFFFFFF;\">Quando jogada:</span> Para cada membro de Liyue na equipe, esta carta adiciona <span style=\"color: #FFFFFFFF;\">1 ponto de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span></span> ao personagem afetado. (Máximo de 3)\\n(Somente <span style=\"color: #FFFFFFFF;\">personagens usuários de Lança</span> podem equipar esta carta. Cada personagem pode equipar no máximo 1 Arma)"
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "Antes do fim deste turno, o custo para executar todos os <span style=\"color: #FFFFFFFF;\">Ataques Normais</span> do personagem alvo é reduzido em 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemento Indefinido</span>.\\n(Cada personagem pode consumir 1 Prato por turno)"
+      "desc": "Antes do fim deste turno, o custo para executar os próximos 3 <span style=\"color: #FFFFFFFF;\">Ataques Normais</span> do personagem alvo será reduzido em 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemento Indefinido</span>.\\n(Cada personagem pode consumir 1 Prato por turno)"
     }
   }
 ]

@@ -394,7 +394,7 @@
         "_id": 12013,
         "type": "Habilidad Definitiva",
         "name": "Milagro brillante ♪",
-        "desc": "Cura 4 pts. a todos tus personajes.",
+        "desc": "Todos tus personajes obtienen Vida +4.",
         "cost": [
           {
             "type": "hydro",
@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Yoimiya",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "Habilidad Definitiva",
         "name": "Saxifraga de oro",
-        "desc": "Inflige 3 pts. de <span style=\"color: #FF9999FF;\">Daño Pyro</span> y crea una <span style=\"color: #FFFFFFFF;\">Ascua dorada</span>.",
+        "desc": "Inflige 4 pts. de <span style=\"color: #FF9999FF;\">Daño Pyro</span> y crea una <span style=\"color: #FFFFFFFF;\">Ascua dorada</span>.",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Ascua dorada",
           "desc": "Cuando uno de tus personajes (a excepción de Yoimiya) usa una habilidad, inflige 1 pt. de <span style=\"color: #FF9999FF;\">Daño Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duración de rondas</span>: 2</span>."
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Klee",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "Ataque Normal",
+        "name": "¡Buuum!",
+        "desc": "Inflige 1 pts. de <span style=\"color: #FF9999FF;\">Daño Pyro</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "Habilidad Elemental",
+        "name": "Bomba saltarina",
+        "desc": "Inflige 3 pts. de <span style=\"color: #FF9999FF;\">Daño Pyro</span> y este personaje entra en el estado de <span style=\"color: #FFFFFFFF;\">Flor explosiva</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Flor explosiva",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje que obtiene este efecto ejecuta un <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ataque Cargado</span></span>, gasta 1 <span style=\"color: #FF9999FF;\">Pyro</span> menos e inflige daño +1.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 1</span>."
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "Habilidad Definitiva",
+        "name": "Chispas explosivas",
+        "desc": "Inflige 3 pts. de <span style=\"color: #FF9999FF;\">Daño Pyro</span> y crea unas <span style=\"color: #FFFFFFFF;\">Chispas explosivas</span> en el campo del rival.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Chispas explosivas",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Cuando tu personaje usa una habilidad</span>, inflige 2 pts. de <span style=\"color: #FF9999FF;\">Daño Pyro</span> a tu personaje en combate.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>."
         }
       }
     ]
@@ -824,7 +892,7 @@
       {
         "_id": 14011,
         "type": "Ataque Normal",
-        "name": "Flechas del juicio",
+        "name": "Flecha del juicio",
         "desc": "Inflige 2 pts. de <span style=\"color: #FFFFFFFF;\">Daño Físico</span>.",
         "cost": [
           {
@@ -1073,6 +1141,81 @@
     ]
   },
   {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Beidou",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "Ataque Normal",
+        "name": "Conquista del océano",
+        "desc": "Inflige 2 pts. de <span style=\"color: #FFFFFFFF;\">Daño Físico</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "Habilidad Elemental",
+        "name": "Invocadora de mareas",
+        "desc": "Este personaje entra en el estado de <span style=\"color: #FFFFFFFF;\">Invocadora de mareas: Protección del oleaje</span> y <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Preparación de habilidad</span> <span style=\"color: #FFFFFFFF;\">Conquistadora de mareas</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Invocadora de mareas: Protección del oleaje",
+          "desc": "Este personaje usará directamente <span style=\"color: #FFFFFFFF;\">Invocadora de mareas</span> la próxima vez que lleve a cabo una acción.\\nMientras prepara esta habilidad, otorga <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> +2 al personaje que obtiene este efecto."
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "Habilidad Definitiva",
+        "name": "Quebrantatormentas",
+        "desc": "Inflige 3 pts. de <span style=\"color: #FFACFFFF;\">Daño Electro</span> y crea un <span style=\"color: #FFFFFFFF;\">Escudo del trueno</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Escudo del trueno",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Tras ejecutar un Ataque Normal</span>, tu personaje en combate inflige <span style=\"color: #FFACFFFF;\">Daño Electro</span> +1.\\n<span style=\"color: #FFFFFFFF;\">Si tu personaje recibe al menos 3pts. de daño</span>, mitiga 1pt.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duración de rondas</span>: 2."
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "Habilidad Elemental",
+        "name": "Conquistadora de mareas",
+        "desc": "Necesita prepararse durante 1 turno.\\nInflige 2 pts. de <span style=\"color: #FFACFFFF;\">Daño Electro</span>.",
+        "cost": []
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1176,7 +1319,7 @@
         "_id": 15023,
         "type": "Habilidad Definitiva",
         "name": "Brisa de Dandelion",
-        "desc": "Vida +2 a todos tus personajes. Crea un <span style=\"color: #FFFFFFFF;\">Campo de dientes de león</span>.",
+        "desc": "Todos tus personajes obtienen Vida +2. Crea un <span style=\"color: #FFFFFFFF;\">Campo de dientes de león</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1498,7 +1641,7 @@
         "_id": 22022,
         "type": "Habilidad Elemental",
         "name": "Explosión acuática",
-        "desc": "Inflige 3 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> y el personaje objetivo entra en estado de <span style=\"color: #FFFFFFFF;\">Refracción</span>.",
+        "desc": "Inflige 3 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> y el personaje objetivo entra en el estado de <span style=\"color: #FFFFFFFF;\">Refracción</span>.",
         "cost": [
           {
             "type": "hydro",
@@ -1509,7 +1652,7 @@
           "_id": 122021,
           "id": "refraction",
           "name": "Refracción",
-          "desc": "El personaje que obtiene este efecto recibe 1 pt. de Daño Hydro.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duración de rondas</span>: 2</span>.\\nSolo puede haber un estado de este tipo a la vez por bando."
+          "desc": "El personaje que obtiene este efecto recibe Daño Hydro +1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duración de rondas</span>: 2</span>.\\nSolo puede haber un único estado igual en el mismo lado."
         }
       },
       {
@@ -1635,7 +1778,7 @@
         "_id": 25012,
         "type": "Habilidad Elemental",
         "name": "Filo ventoso",
-        "desc": "Inflige 1 pts. de <span style=\"color: #80FFD7FF;\">Daño Anemo</span> e invoca un <span style=\"color: #FFFFFFFF;\">Espadachín sombrío: Viento solitario</span>.",
+        "desc": "Invoca a un <span style=\"color: #FFFFFFFF;\">Espadachín sombrío: Viento solitario</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1653,7 +1796,7 @@
         "_id": 25013,
         "type": "Habilidad Elemental",
         "name": "Asalto de escarcha",
-        "desc": "Inflige 1 pts. de <span style=\"color: #99FFFFFF;\">Daño Cryo</span> e invoca un <span style=\"color: #FFFFFFFF;\">Espadachín sombrío: Escarcha veloz</span>.",
+        "desc": "Invoca a un <span style=\"color: #FFFFFFFF;\">Espadachín sombrío: Escarcha veloz</span>.",
         "cost": [
           {
             "type": "cryo",
@@ -1671,7 +1814,7 @@
         "_id": 25014,
         "type": "Habilidad Definitiva",
         "name": "Emulación de corte Tengu",
-        "desc": "Inflige 4 pts. de <span style=\"color: #80FFD7FF;\">Daño Anemo</span> y activa los efectos de todas tus invocaciones <span style=\"color: #FFFFFFFF;\">Espadachín sombrío</span> (no consume sus usos).",
+        "desc": "Inflige 4 pts. de <span style=\"color: #80FFD7FF;\">Daño Anemo</span> y activa los efectos de todas tus invocaciones de <span style=\"color: #FFFFFFFF;\">Espadachín sombrío</span> (no consume sus usos).",
         "cost": [
           {
             "type": "anemo",
@@ -2030,6 +2173,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Regalo explosivo",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Klee</span>.\\nTras ello, Klee usa una vez <span style=\"color: #FFD780FF;\">Regalo explosivo</span> de inmediato.\\nCuando Klee crea una <span style=\"color: #FFFFFFFF;\">Flor explosiva</span> mientras tiene esta carta equipada, número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> +1.\\nSolo puedes añadir esta carta al mazo si tienes a Klee en él."
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2058,7 +2217,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Razor</span>.\\nTras ello, Razor usa una vez <span style=\"color: #FFD780FF;\">Despertar</span> de inmediato.\\nCuando Razor <span style=\"color: #FFFFFFFF;\">usa Despertar</span> mientras tiene esta carta equipada, uno de tus personajes Electro obtiene Energía +1 (se dará prioridad al personaje en combate).\\nSolo puedes añadir esta carta al mazo si tienes a Razor en él."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Razor</span>.\\nTras ello, Razor usa una vez <span style=\"color: #FFD780FF;\">Despertar</span> de inmediato.\\nCuando Razor usa <span style=\"color: #FFFFFFFF;\">Despertar</span> mientras tiene esta carta equipada, uno de tus personajes Electro obtiene Energía +1 (se dará prioridad al personaje en combate).\\nSolo puedes añadir esta carta al mazo si tienes a Razor en él."
     }
   },
   {
@@ -2094,6 +2253,22 @@
     }
   },
   {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Tormenta eléctrica",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Beidou</span>.\\nTras ello, Beidou usa una vez <span style=\"color: #FFD780FF;\">Tormenta eléctrica</span> de inmediato.\\nCuando Beidou usa <span style=\"color: #FFFFFFFF;\">Tormenta eléctrica</span> al tener esta carta equipada, si mientras <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Preparación de habilidad</span> recibe daño, sus Ataques Normales gastan 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dado indefinido</span> menos durante esta ronda (se puede activar hasta 2 veces).\\nSolo puedes añadir esta carta al mazo si tienes a Beidou en él."
+    }
+  },
+  {
     "_id": 215011,
     "id": "chaotic_entropy",
     "type": "talent",
@@ -2110,7 +2285,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Sacarosa</span>.\\nTras ello, Sacarosa usa una vez <span style=\"color: #FFD780FF;\">Entropía caótica</span> de inmediato.\\nCuando Sacarosa crea un <span style=\"color: #FFFFFFFF;\">Gran espíritu del viento</span> que ha cambiado a otro elemento mientras tiene esta carta equipada, inflige Daño Elemental +1.\\nSolo puedes añadir esta carta al mazo si tienes a Sacarosa en él."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Sacarosa</span>.\\nTras ello, Sacarosa usa una vez <span style=\"color: #FFD780FF;\">Entropía caótica</span> de inmediato.\\nCuando Sacarosa tiene esta carta equipada, si el <span style=\"color: #FFFFFFFF;\">Gran espíritu del viento</span> ha cambiado a otro elemento, inflige Daño Elemental +1.\\nSolo puedes añadir esta carta al mazo si tienes a Sacarosa en él."
     }
   },
   {
@@ -2175,7 +2350,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Collei</span>.\\nTras ello, Collei usa una vez <span style=\"color: #FFD780FF;\">Retorno foliáceo</span> de inmediato.\\nSi, durante la ronda, Collei ha usado <span style=\"color: #FFFFFFFF;\">Retorno foliáceo</span> mientras tiene esta carta equipada, y alguno de tus personajes causa una <span style=\"color: #7EC236FF;\">Reacciones Elementales Dendro</span> por medio de una habilidad, inflige 1 pt. de <span style=\"color: #7EC236FF;\">Daño Dendro</span> (1 vez por ronda).\\nSolo puedes añadir esta carta al mazo si tienes a Collei en él."
@@ -2266,7 +2441,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es el <span style=\"color: #FFFFFFFF;\">Lawachurl Acorazado</span>.\\nTras ello, el Lawachurl Acorazado usa una vez <span style=\"color: #FFD780FF;\">Refundición: Geoarmadura</span> de inmediato.\\nCuando el Lawachurl Acorazado derrota a un personaje enemigo mientras tiene esta carta equipada, vuelve a entrar en los estados de <span style=\"color: #FFFFFFFF;\">Geoarmadura</span> y <span style=\"color: #FFFFFFFF;\">Robustez rocosa</span>.\\nSolo puedes añadir esta carta al mazo si tienes al Lawachurl Acorazado en él."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es el <span style=\"color: #FFFFFFFF;\">Lawachurl Acorazado</span>.\\nTras ello, el Lawachurl Acorazado usa una vez <span style=\"color: #FFD780FF;\">Refundición: Geoarmadura</span> de inmediato.\\nCuando el Lawachurl Acorazado derrota a un personaje enemigo mientras tiene esta carta equipada, vuelve a entrar en los estados de <span style=\"color: #FFFFFFFF;\">Geoarmadura</span> y de <span style=\"color: #FFFFFFFF;\">Robustez rocosa</span>.\\nSolo puedes añadir esta carta al mazo si tienes al Lawachurl Acorazado en él."
     }
   },
   {
@@ -2447,7 +2622,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Daño +1</span>.\\nAl entrar en el campo de batalla, esta carta otorga <span style=\"color: #FFFFFFFF;\">1 pt. de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> al personaje que la lleve equipada</span> por cada personaje de Liyue que haya en el equipo (acumulable hasta 3 pts.).\\nSolo pueden llevarla equipada los <span style=\"color: #FFFFFFFF;\">personajes que usan lanza</span>. Cada personaje solo puede llevar equipada 1 arma."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Daño +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Al entrar en el campo de batalla</span>, esta carta otorga <span style=\"color: #FFFFFFFF;\">1 pt. de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> al personaje que la lleve equipada</span> por cada personaje de Liyue que haya en el equipo (acumulable hasta 3 pts.).\\nSolo pueden llevarla equipada los <span style=\"color: #FFFFFFFF;\">personajes que usan lanza</span>. Cada personaje solo puede llevar equipada 1 arma."
     }
   },
   {
@@ -2627,7 +2802,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #99FFFFFF;\">dado Cryo</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #99FFFFFF;\">Cryo</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #99FFFFFF;\">dado Cryo</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #99FFFFFF;\">dado Cryo</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
     }
   },
   {
@@ -2657,7 +2832,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #80C0FFFF;\">dado Hydro</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #80C0FFFF;\">Hydro</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #80C0FFFF;\">dado Hydro</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #80C0FFFF;\">dado Hydro</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
     }
   },
   {
@@ -2687,7 +2862,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #FF9999FF;\">dado Pyro</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #FF9999FF;\">Pyro</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #FF9999FF;\">dado Pyro</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #FF9999FF;\">dado Pyro</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
     }
   },
   {
@@ -2717,7 +2892,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #FFACFFFF;\">dado Electro</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #FFACFFFF;\">Electro</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #FFACFFFF;\">dado Electro</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #FFACFFFF;\">dado Electro</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
     }
   },
   {
@@ -2747,7 +2922,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #80FFD7FF;\">dado Anemo</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #80FFD7FF;\">Anemo</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #80FFD7FF;\">dado Anemo</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #80FFD7FF;\">dado Anemo</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
     }
   },
   {
@@ -2777,7 +2952,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #FFE699FF;\">dado Geo</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #FFE699FF;\">Geo</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #FFE699FF;\">dado Geo</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #FFE699FF;\">dado Geo</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
     }
   },
   {
@@ -2807,7 +2982,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #99FF88FF;\">dado Dendro</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #99FF88FF;\">Dendro</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una habilidad o se equipa un talento</span>, gasta 1 <span style=\"color: #99FF88FF;\">dado Dendro</span> menos (1 vez por ronda).\\nDurante la <span style=\"color: #FFFFFFFF;\">fase de lanzamiento</span>, 2 de los dados elementales iniciales que lances siempre serán <span style=\"color: #99FF88FF;\">dado Dendro</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
     }
   },
   {
@@ -3017,7 +3192,7 @@
     "name": "Chang el Noveno",
     "skills": {
       "cost": [],
-      "desc": "Después de que algún personaje de cualquiera de los jugadores inflija <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Daño Físico</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Daño Penetrante</span> o cause una <span style=\"color: #FFFFFFFF;\">Reacción Elemental</span> tras usar una habilidad, esta carta acumula <span style=\"color: #FFFFFFFF;\">1 carga de inspiración</span>.\\nSi esta carta ha acumulado <span style=\"color: #FFFFFFFF;\">3 cargas de inspiración</span>, tomas 2 cartas y se descarta."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Después de que algún personaje de cualquiera de los jugadores cause una reacción elemental</span>, si infligieron <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Daño Físico</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Daño Penetrante</span> o causaron una <span style=\"color: #FFFFFFFF;\">Reacción Elemental</span> tras usar una habilidad, esta carta acumula <span style=\"color: #FFFFFFFF;\">1 carga de inspiración</span>.\\nSi esta carta ha acumulado <span style=\"color: #FFFFFFFF;\">3 cargas de inspiración</span>, tomas 2 cartas y se descarta."
     }
   },
   {
@@ -3581,7 +3756,7 @@
           "count": 1
         }
       ],
-      "desc": "Antes de que termine esta ronda, todos los <span style=\"color: #FFFFFFFF;\">Ataques Normales</span> del personaje objetivo consumen 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dado indefinido</span> menos.\\nCada personaje solo puede consumir 1 comida por ronda."
+      "desc": "Antes de que termine esta ronda, los 3 próximos <span style=\"color: #FFFFFFFF;\">Ataques Normales</span> del personaje objetivo consumen 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dado indefinido</span> menos.\\nCada personaje solo puede consumir 1 comida por ronda."
     }
   }
 ]

@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Ёимия",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "Взрыв стихии",
         "name": "Камнеломка Рюкин",
-        "desc": "Наносит <span style=\"color: #FF9999FF;\">Пиро урон</span>, 3 ед. и создаёт <span style=\"color: #FFFFFFFF;\">Золотое сияние</span>.",
+        "desc": "Наносит <span style=\"color: #FF9999FF;\">Пиро урон</span>, 4 ед. и создаёт <span style=\"color: #FFFFFFFF;\">Золотое сияние</span>.",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Золотое сияние",
           "desc": "После того как любой персонаж, кроме Ёимия, использует навык: наносит <span style=\"color: #FF9999FF;\">Пиро урон</span>, 1 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Продолжительность (в раундах)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Кли",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "Обычная атака",
+        "name": "Бабах!",
+        "desc": "Наносит <span style=\"color: #FF9999FF;\">Пиро урон</span>, 1 ед.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "Элементальный навык",
+        "name": "Прыг-скок бомба",
+        "desc": "Наносит <span style=\"color: #FF9999FF;\">Пиро урон</span>, 3 ед. Персонажу достаётся <span style=\"color: #FFFFFFFF;\">Взрывная искра</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Взрывная искра",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж с этой картой использует <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Заряженная атака</span>:</span> расходуется на 1 <span style=\"color: #FF9999FF;\">Пиро дайс</span> меньше, а урон увеличивается на 1 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "Взрыв стихии",
+        "name": "Грохот и искры",
+        "desc": "Наносит <span style=\"color: #FF9999FF;\">Пиро урон</span>, 3 ед. Создаёт <span style=\"color: #FFFFFFFF;\">Грохот и искры</span> в области противника.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Грохот и искры",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Когда ваш персонаж использует навык: </span>вашему активному персонажу наносится <span style=\"color: #FF9999FF;\">Пиро урон</span>, 2 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 2</span>"
         }
       }
     ]
@@ -1073,6 +1141,81 @@
     ]
   },
   {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Бэй Доу",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "Обычная атака",
+        "name": "По волнам",
+        "desc": "Наносит <span style=\"color: #FFFFFFFF;\">Физический урон</span>, 2 ед.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "Элементальный навык",
+        "name": "Призыв волны",
+        "desc": "Персонаж получает <span style=\"color: #FFFFFFFF;\">Призыв волны: Охват прибоя</span> и <span style=\"color: #FFFFFFFF;\">Покоритель волн</span> (<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Подготовка навыка</span>).",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Призыв волны: Охват прибоя",
+          "desc": "Во время следующего действия этот персонаж использует навык: <span style=\"color: #FFFFFFFF;\">Призыв волны</span>.\\nПри подготовке навыка: даёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, 2 ед., для защиты этого персонажа."
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "Взрыв стихии",
+        "name": "Крушитель бури",
+        "desc": "Наносит <span style=\"color: #FFACFFFF;\">Электро урон</span>, 3 ед. и создаёт <span style=\"color: #FFFFFFFF;\">Громовой щит</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Громовой щит",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Когда ваш персонаж использует обычную атаку:</span> наносит <span style=\"color: #FFACFFFF;\">Электро урон</span>, 1 ед.\\n<span style=\"color: #FFFFFFFF;\">Когда ваш персонаж получает не менее 3 ед. урона:</span> снижает этот получаемый урон на 1 ед.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Продолжительность (в раундах)</span>: 2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "Элементальный навык",
+        "name": "Покоритель волн",
+        "desc": "(На подготовку нужен 1 ход)\\nНаносит <span style=\"color: #FFACFFFF;\">Электро урон</span>, 2 ед.",
+        "cost": []
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1176,7 +1319,7 @@
         "_id": 15023,
         "type": "Взрыв стихии",
         "name": "Одуванчиковый бриз",
-        "desc": "Восстанавливает 2 HP всем вашим персонажам и призывает помощника: <span style=\"color: #FFFFFFFF;\">Поле одуванчиков</span>.",
+        "desc": "Восстанавливает 2 HP всем вашим персонажам, призывает помощника: <span style=\"color: #FFFFFFFF;\">Поле одуванчиков</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "Элементальный навык",
         "name": "Одинокий шторм",
-        "desc": "Наносит <span style=\"color: #80FFD7FF;\">Анемо урон</span>, 1 ед. и призывает помощника: <span style=\"color: #FFFFFFFF;\">Теневой клинок: Одинокий ветер</span>.",
+        "desc": "Призывает 1 помощника: <span style=\"color: #FFFFFFFF;\">Теневой клинок: Одинокий ветер</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "Элементальный навык",
         "name": "Морозная тень",
-        "desc": "Наносит <span style=\"color: #99FFFFFF;\">Крио урон</span>, 1 ед. и призывает помощника: <span style=\"color: #FFFFFFFF;\">Теневой клинок: Бегущий иней</span>.",
+        "desc": "Призывает 1 помощника: <span style=\"color: #FFFFFFFF;\">Теневой клинок: Бегущий иней</span>.",
         "cost": [
           {
             "type": "cryo",
@@ -1677,7 +1820,7 @@
         "_id": 25014,
         "type": "Взрыв стихии",
         "name": "Ложный тэнгу",
-        "desc": "Наносит 4 ед. <span style=\"color: #80FFD7FF;\">Анемо урон</span>, вызывает эффекты всех <span style=\"color: #FFFFFFFF;\">Теневых мечей</span> (не расходует их применения).",
+        "desc": "Наносит <span style=\"color: #80FFD7FF;\">Анемо урон</span>, 4 ед., вызывает эффекты всех <span style=\"color: #FFFFFFFF;\">Теневых мечей</span> (не расходует их применения).",
         "cost": [
           {
             "type": "anemo",
@@ -1864,7 +2007,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Диона</span>.\\nКогда Диона экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Взболтать, но не мурлыкать</span> (1 раз).\\nКогда Диона с этой картой создаёт <span style=\"color: #FFFFFFFF;\">Щит кошачьих коготочков</span>, начальное <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span> увеличивается на 1 ед.\\nЭту карту можно добавить в колоду, только если в колоде уже есть Диона."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Диона</span>, экипируйте эту карту.\\nКогда Диона экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Взболтать, но не мурлыкать</span> (1 раз).\\nКогда Диона с этой картой создаёт <span style=\"color: #FFFFFFFF;\">Щит кошачьих коготочков</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span> +1.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Диона."
     }
   },
   {
@@ -1928,7 +2071,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Барбара</span>.\\nКогда Барбара экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Урожайный сезон</span> (1 раз).\\nКогда Син Цю с этой картой создаёт <span style=\"color: #FFFFFFFF;\">Кольцо мелодии</span>, смена персонажа для вас обойдётся на 1 дайс дешевле (1 раз за раунд).\\nЭту карту можно добавить в колоду, только если в колоде уже есть Барбара."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Барбара</span>.\\nКогда Барбара экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Урожайный сезон</span> (1 раз).\\nКогда Барбара с этой картой на поле, создаётся <span style=\"color: #FFFFFFFF;\">Кольцо мелодии</span>, смена персонажа для вас обойдётся на 1 дайс дешевле (1 раз за раунд).\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Барбара."
     }
   },
   {
@@ -2036,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Тук-тук, кто там?",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Кли</span>.\\nКогда Кли экипирует эту карту, сразу используется <span style=\"color: #FFD780FF;\">Тук-тук, кто там?</span> 1 раз.\\n<span style=\"color: #FFFFFFFF;\">Когда у персонажа Кли с этой картой создаётся Взрывная искра</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span> +1.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Кли."
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Рэйзор</span>.\\nКогда Рэйзор экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Пробуждение</span> (1 раз).\\nКогда Рэйзор с этой картой <span style=\"color: #FFFFFFFF;\">использует Пробуждение</span>: один из ваших Электро персонажей получит 1 ед. энергии (в первую очередь - активный персонаж).\\nЭту карту можно добавить в колоду, только если в колоде уже есть Рэйзор."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Рэйзор</span>.\\nКогда Рэйзор экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Пробуждение</span> (1 раз).\\nКогда Рэйзор с этой картой использует <span style=\"color: #FFFFFFFF;\">Пробуждение</span>: один из ваших Электро персонажей получит 1 ед. энергии (в первую очередь - активный персонаж).\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Рэйзор."
     }
   },
   {
@@ -2097,6 +2256,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Сайно</span>.\\nКогда Сайно экипирует эту карту, сразу используется <span style=\"color: #FFD780FF;\">Суд пера</span> 1 раз.\\nВаш персонаж Сайно с этой картой может использовать <span style=\"color: #FFFFFFFF;\">Суд пера</span>, когда останется 3 или 5 уровней [состояния] Зависимости карты <span style=\"color: #FFFFFFFF;\">Поклявшийся прокладывать путь</span>, наносит дополнительно 1 ед. урона.\\nЭту карту можно добавить в колоду, только если в колоде уже есть Сайно."
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Гром и молния",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Бэй Доу</span>.\\nКогда Бэй Доу экипирует эту карту, сразу используется <span style=\"color: #FFD780FF;\">Гром и молния</span>, 1 раз.\\nКогда Бэй Доу с этой картой использует <span style=\"color: #FFFFFFFF;\">Гром и молния</span>: если на этапе <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Подготовка навыка</span> ваш персонаж получает урон, то обычная атака Бэй Доу будет стоить на 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Неопределённый элемент</span> меньше. Вызывается до 2 раз.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Бэй Доу."
     }
   },
   {
@@ -2136,7 +2311,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если активным персонажем является <span style=\"color: #FFFFFFFF;\">Джинн</span>.\\nКогда Джинн экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Королевство Одуванчиков</span> (1 раз).\\nДжинн с этой картой создаёт <span style=\"color: #FFFFFFFF;\">Поле одуванчиков</span>, ваш <span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">Анемо урон</span></span> увеличивается на 1 ед.\\nЭту карту можно добавить в колоду, только если в колоде уже есть Джинн."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Джинн</span>.\\nКогда Джинн экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Королевство Одуванчиков</span> (1 раз).\\nКогда Джинн с этой картой на поле, создаётся <span style=\"color: #FFFFFFFF;\">Поле одуванчиков</span>, ваш <span style=\"color: #80FFD7FF;\"><span style=\"color: #80FFD7FF;\">Анемо урон</span></span> увеличивается на 1 ед.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Джинн."
     }
   },
   {
@@ -2152,7 +2327,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Нин Гуан</span>.\\nКогда Нин Гуан экипирует эту карту, сразу используется <span style=\"color: #FFD780FF;\">Стратегические запасы</span> (1 раз).\\nНин Гуан с этой картой создаёт <span style=\"color: #FFFFFFFF;\">Нефритовая ширма</span>, ваш <span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">Гео урон</span></span> увеличивается на 1 ед.\\nЭту карту можно добавить в колоду, только если в колоде уже есть Нин Гуан."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Нин Гуан</span>.\\nКогда Нин Гуан экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Стратегические запасы</span> (1 раз).\\nКогда Нин Гуан с этой картой на поле, создаётся <span style=\"color: #FFFFFFFF;\">Нефритовая ширма</span>, ваш <span style=\"color: #FFE699FF;\"><span style=\"color: #FFE699FF;\">Гео урон</span></span> увеличивается на 1 ед.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Нин Гуан."
     }
   },
   {
@@ -2181,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Коллеи</span>.\\nКогда Коллеи экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Возвращение цветов</span>, 1 раз.\\nКогда Коллеи с этой картой <span style=\"color: #FFFFFFFF;\">использует Возвращение цветов</span> в этом раунде, и когда навык персонажа вызывает <span style=\"color: #7EC236FF;\">Дендро реакция</span>: наносит <span style=\"color: #7EC236FF;\">Дендро урон</span>, 1 ед. (1 раз за раунд).\\nЭту карту можно добавить в колоду, только если в колоде уже есть Коллеи."
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Персонаж наносит на 1 ед. урона больше</span>.\\nПри розыгрыше: за каждого персонажа из Ли Юэ персонаж с этой картой получает <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, 1 ед.</span> (но не более ×3).\\n(<span style=\"color: #FFFFFFFF;\">Только для персонажей  с Древковым оружием</span>. Персонаж может экипировать только одну карту оружия)."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Персонаж наносит на 1 ед. урона больше</span>.\\n<span style=\"color: #FFFFFFFF;\">При розыгрыше</span>: за каждого персонажа из Ли Юэ персонаж с этой картой получает <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, 1 ед.</span> (но не более 3 ед.).\\n(<span style=\"color: #FFFFFFFF;\">Только для персонажей с Древковым оружием</span>. Персонаж может экипировать только одну карту оружия)."
     }
   },
   {
@@ -3179,7 +3354,7 @@
           "count": 1
         }
       ],
-      "desc": "В текущем раунде, когда вашим активным персонаже в следующий раз будет вызвана <span style=\"color: #FF9999FF;\">Пиро реакция</span>, увеличивает урон на 3 ед.\\nМожно добавить в колоду, только если там уже есть не менее 2 персонажей <span style=\"color: #FF9999FF;\">Пиро</span>."
+      "desc": "В текущем раунде, когда вашим активным персонажем в следующий раз будет вызвана <span style=\"color: #FF9999FF;\">Пиро реакция</span>, увеличивает урон на 3 ед.\\nМожно добавить в колоду, только если там уже есть не менее 2 персонажей <span style=\"color: #FF9999FF;\">Пиро</span>."
     }
   },
   {
@@ -3260,7 +3435,7 @@
           "count": 1
         }
       ],
-      "desc": "Когда ваш персонаж нанесёт <span style=\"color: #FFE699FF;\">Гео урон</span> в следующий раз в течение этого раунда: если у вас есть любой боевой статус, которы даёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, то <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span> пополняется на 3 ед.\\nМожно добавить только тогда, когда у вас есть хотя бы 2 <span style=\"color: #FFE699FF;\">Гео</span> персонажа."
+      "desc": "Когда ваш персонаж нанесёт <span style=\"color: #FFE699FF;\">Гео урон</span> в следующий раз в течение этого раунда: если у вас есть любой боевой статус, который даёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, то <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span> пополняется на 3 ед.\\nМожно добавить только тогда, когда у вас есть хотя бы 2 <span style=\"color: #FFE699FF;\">Гео</span> персонажа."
     }
   },
   {
@@ -3287,7 +3462,7 @@
           "count": 1
         }
       ],
-      "desc": "В этом раунде увеличивает урон следующей элементальной реакции, которую вызовет ваш персонаж, на 2 ед.\\nЕсли у вас активны <span style=\"color: #FFFFFFFF;\">Яркое пламя, Дендро ядро или Область катализа</span>, их <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span> +1 .\\nМожно добавить в колоду, только если там уже есть не менее 2 персонажей <span style=\"color: #99FF88FF;\">Дендро</span>."
+      "desc": "В этом раунде увеличивает урон следующей элементальной реакции, которую вызовет ваш персонаж, на 2 ед.\\nЕсли у вас активны <span style=\"color: #FFFFFFFF;\">Яркое пламя, Дендро ядро или Область катализа</span>, их <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span> +1.\\nМожно добавить в колоду, только если там уже есть не менее 2 персонажей <span style=\"color: #99FF88FF;\">Дендро</span>."
     }
   },
   {
@@ -3347,7 +3522,7 @@
     "name": "Это ещё не конец!",
     "skills": {
       "cost": [],
-      "desc": "Сработает, только если один из ваших персонажей был повержен в этом раунде:\\nсоздаёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Универсальный элемент</span> ×1, активному персонажу добавляется <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span> ×1."
+      "desc": "Сработает, только если один из ваших персонажей был повержен в этом раунде:\\nсоздаёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Универсальный элемент</span> ×1, активному персонажу добавляется <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span>, 1 ед."
     }
   },
   {
@@ -3402,7 +3577,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span> (по 1 ед.) перемещается с двух неактивных персонажей к активному персонажу."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span> (по 1 ед.) перемещается с максимум двух неактивных персонажей к активному персонажу."
     }
   },
   {
@@ -3557,7 +3732,7 @@
           "count": 1
         }
       ],
-      "desc": "Восстанавливает 2 HP цели.\\nЗа раунд персонаж может не более 1 блюда."
+      "desc": "Восстанавливает 2 HP цели.\\nЗа раунд персонаж может съесть не более 1 блюда."
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "Все <span style=\"color: #FFFFFFFF;\">обычные атаки</span> цели стоят на 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Неопределённый элемент</span> меньше до конца текущего раунда.\\n(Персонаж может съесть не более 1 блюда за 1 раунд)"
+      "desc": "Следующие три <span style=\"color: #FFFFFFFF;\">обычные атаки</span> цели стоят на 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Неопределённый элемент</span> меньше до конца текущего раунда.\\n(Персонаж может съесть не более 1 блюда за 1 раунд)"
     }
   }
 ]

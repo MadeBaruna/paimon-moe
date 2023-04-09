@@ -40,8 +40,10 @@
       current = [...current, event];
     } else if (start.isAfter(now)) {
       const diff = start.diff(now);
-      const timeUpcoming = dayjs.duration(diff);
-      event.time = diff > 86400000 ? timeUpcoming.format('D[d] H[h]') : timeUpcoming.format('H[h]');
+      event.time =
+        diff > 86400000
+          ? `${Math.trunc(dayjs.duration(diff).asDays())}d ${dayjs.duration(diff).format('H[h]')}`
+          : dayjs.duration(diff).format('H[h]');
       upcoming = [...upcoming, event];
     }
   }
