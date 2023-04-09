@@ -4789,6 +4789,151 @@ export const characters = {
     },
     element: elements.electro,
   },
+  mika: {
+    id: 'mika',
+    name: 'Mika',
+    rarity: 4,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 12506,
+      atk: 223,
+      def: 713,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 3,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 2,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 10,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 4,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 20,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 8,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 30,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 12,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 45,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 20,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 60,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
+      book: [itemList.teachings_of_ballad, itemList.guide_to_ballad, itemList.philosophies_of_ballad],
+      boss: itemList.mirror_of_mushin,
+    },
+    element: elements.cryo,
+  },
   mona: {
     id: 'mona',
     name: 'Mona',
