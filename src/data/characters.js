@@ -149,6 +149,151 @@ export const characters = {
     },
     element: elements.geo,
   },
+  alhaitham: {
+    id: 'alhaitham',
+    name: 'Alhaitham',
+    rarity: 5,
+    weapon: weapons.sword,
+    stats: {
+      hp: 13348,
+      atk: 313,
+      def: 782,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 3,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 2,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 10,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 4,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 20,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 8,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 30,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 12,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 45,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 20,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 60,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.faded_red_satin, itemList.trimmed_red_silk, itemList.rich_red_brocade],
+      book: [itemList.teachings_of_ingenuity, itemList.guide_to_ingenuity, itemList.philosophies_of_ingenuity],
+      boss: itemList.mirror_of_mushin,
+    },
+    element: elements.dendro,
+  },
   aloy: {
     id: 'aloy',
     name: 'Aloy',
@@ -1598,6 +1743,151 @@ export const characters = {
       boss: itemList.mudra_of_the_malefic_general,
     },
     element: elements.electro,
+  },
+  dehya: {
+    id: 'dehya',
+    name: 'Dehya',
+    rarity: 5,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 15675,
+      atk: 265,
+      def: 628,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 3,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 2,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 10,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 4,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 20,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 8,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 30,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 12,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 45,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.light_guiding_tetrahedron,
+            amount: 20,
+          },
+          {
+            item: itemList.sand_grease_pupa,
+            amount: 60,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.faded_red_satin, itemList.trimmed_red_silk, itemList.rich_red_brocade],
+      book: [itemList.teachings_of_praxis, itemList.guide_to_praxis, itemList.philosophies_of_praxis],
+      boss: itemList.puppet_strings,
+    },
+    element: elements.pyro,
   },
   diluc: {
     id: 'diluc',
@@ -4498,6 +4788,151 @@ export const characters = {
       boss: itemList.dvalins_claw,
     },
     element: elements.electro,
+  },
+  mika: {
+    id: 'mika',
+    name: 'Mika',
+    rarity: 4,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 12506,
+      atk: 223,
+      def: 713,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 3,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 2,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 10,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 4,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 20,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 8,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 30,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 12,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 45,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.pseudo_stamens,
+            amount: 20,
+          },
+          {
+            item: itemList.wolfhook,
+            amount: 60,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
+      book: [itemList.teachings_of_ballad, itemList.guide_to_ballad, itemList.philosophies_of_ballad],
+      boss: itemList.mirror_of_mushin,
+    },
+    element: elements.cryo,
   },
   mona: {
     id: 'mona',
@@ -8587,6 +9022,151 @@ export const characters = {
       boss: itemList.bloodjade_branch,
     },
     element: elements.pyro,
+  },
+  yaoyao: {
+    id: 'yaoyao',
+    name: 'Yaoyao',
+    rarity: 4,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 12289,
+      atk: 212,
+      def: 751,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.jueyun_chili,
+            amount: 3,
+          },
+          {
+            item: itemList.slime_condensate,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 2,
+          },
+          {
+            item: itemList.jueyun_chili,
+            amount: 10,
+          },
+          {
+            item: itemList.slime_condensate,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 4,
+          },
+          {
+            item: itemList.jueyun_chili,
+            amount: 20,
+          },
+          {
+            item: itemList.slime_secretions,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 8,
+          },
+          {
+            item: itemList.jueyun_chili,
+            amount: 30,
+          },
+          {
+            item: itemList.slime_secretions,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 12,
+          },
+          {
+            item: itemList.jueyun_chili,
+            amount: 45,
+          },
+          {
+            item: itemList.slime_concentrate,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.quelled_creeper,
+            amount: 20,
+          },
+          {
+            item: itemList.jueyun_chili,
+            amount: 60,
+          },
+          {
+            item: itemList.slime_concentrate,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.slime_condensate, itemList.slime_secretions, itemList.slime_concentrate],
+      book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
+      boss: itemList.dakas_bell,
+    },
+    element: elements.dendro,
   },
   yelan: {
     id: 'yelan',

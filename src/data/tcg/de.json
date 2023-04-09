@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Yoimiya",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "Spezialfähigkeit",
         "name": "Ryuukin-Steinbrech",
-        "desc": "Verursacht 3 Pkt. <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>|s1:<span style=\"color: #FF9999FF;\">Pyro-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Ryuukin-Lohe</span>.",
+        "desc": "Verursacht 4 Pkt. <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>|s1:<span style=\"color: #FF9999FF;\">Pyro-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Ryuukin-Lohe</span>.",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Ryuukin-Lohe",
           "desc": "Nach Anwenden einer Fähigkeit deiner Figuren außer Yoimiya: Verursacht 1 Pkt. <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Klee",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "Standardangriff",
+        "name": "Bumm-Bumm",
+        "desc": "Verursacht 1 Pkt. <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>|s1:<span style=\"color: #FF9999FF;\">Pyro-SCH</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "Elementarfähigkeit",
+        "name": "Bimm-Bamm-Bombe",
+        "desc": "Verursacht 3 Pkt. <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>|s1:<span style=\"color: #FF9999FF;\">Pyro-SCH</span>, erhält selbst <span style=\"color: #FFFFFFFF;\">Explosiver Funke</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Explosiver Funke",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Führt die davon betroffene Figur <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Heftiger Schlag</span> aus:</span> <span style=\"color: #FF9999FF;\">Pyro</span>-Verbrauch -1, verursachter SCH +1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "Spezialfähigkeit",
+        "name": "Funkelfunken",
+        "desc": "Verursacht 3 Pkt. <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>|s1:<span style=\"color: #FF9999FF;\">Pyro-SCH</span>, erschafft auf dem Feld deines Gegners <span style=\"color: #FFFFFFFF;\">Funkelfunken</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Funkelfunken",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden einer Fähigkeit deiner Figuren:</span> Fügt deiner aktiven Figur 2 Pkt. <span style=\"color: #FF9999FF;\">Pyro-Schaden</span> zu.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
         }
       }
     ]
@@ -1069,6 +1137,81 @@
           "name": "Paktverschworener Pfadklärer",
           "desc": "<span style=\"color: #FFFFFFFF;\">Endphase:</span>Verwandlungsstufe +1\\n<span style=\"color: #FFFFFFFF;\">Boni je nach der Verwandlungsstufe:</span>\\nNicht weniger als Stufe 2: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> wird nun <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>;\\nNicht weniger als Stufe 4: Verursachter SCH +2;\\nNicht weniger als Stufe 6: Verwandlungsstufe -4."
         }
+      }
+    ]
+  },
+  {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Beidou",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "Standardangriff",
+        "name": "Meeresbezwinger",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #FFFFFFFF;\">Physischer Schaden</span>|s1:<span style=\"color: #FFFFFFFF;\">phys. SCH</span>|s2:<span style=\"color: #FFFFFFFF;\">Phys. SCH</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "Elementarfähigkeit",
+        "name": "Wellenfänger",
+        "desc": "Erhält selbst <span style=\"color: #FFFFFFFF;\">Wellenfänger – Umarmende Brandung</span> und <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Vorbereiten der Fähigkeiten</span>: <span style=\"color: #FFFFFFFF;\">Gebieter der Gezeiten</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Wellenfänger – Umarmende Brandung",
+          "desc": "Diese Figur wird bei ihrer nächsten Aktion sofort die Fähigkeit <span style=\"color: #FFFFFFFF;\">Wellenfänger</span> anwenden.\\nWährend der Vorbereitungszeit: Verleiht der davon betroffenen Figur 2 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schild</span>."
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "Spezialfähigkeit",
+        "name": "Blitzbrecher",
+        "desc": "Verursacht 3 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>|s1:<span style=\"color: #FFACFFFF;\">Elektro-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Donnerschild</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Donnerschild",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Nach Standardangriff deiner Figur:</span> Verursacht 1 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\">Erleidet deine Figur mindestens 3 Pkt. SCH:</span> Wehrt 1 Pkt. SCH ab.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span>: 2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "Elementarfähigkeit",
+        "name": "Gebieter der Gezeiten",
+        "desc": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht 2 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>|s1:<span style=\"color: #FFACFFFF;\">Elektro-SCH</span>.",
+        "cost": []
       }
     ]
   },
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "Elementarfähigkeit",
         "name": "Einsamer Sturm",
-        "desc": "Verursacht 1 Pkt. <span style=\"color: #80FFD7FF;\">Anemo-Schaden</span>|s1:<span style=\"color: #80FFD7FF;\">Anemo-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Schwertschatten – Einsamer Sturm</span>.",
+        "desc": "Erschafft 1 <span style=\"color: #FFFFFFFF;\">Schwertschatten – Einsamer Sturm</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "Elementarfähigkeit",
         "name": "Frostiger Schatten",
-        "desc": "Verursacht 1 Pkt. <span style=\"color: #99FFFFFF;\">Kryo-Schaden</span>|s1:<span style=\"color: #99FFFFFF;\">Kryo-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Schwertschatten – Galoppierender Frost</span>.",
+        "desc": "Erschafft 1 <span style=\"color: #FFFFFFFF;\">Schwertschatten – Galoppierender Frost</span>.",
         "cost": [
           {
             "type": "cryo",
@@ -2036,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Explosives Geschenk",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Klee</span>, ist diese Karte anzulegen.\\nLegt Klee sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Explosives Geschenk</span> angewendet.\\nErschafft Klee ausgerüstet mit dieser Karte 1 <span style=\"color: #FFFFFFFF;\">Explosiver Funke</span>: Seine anfängliche <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span> +1.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Klee enthält.)"
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Razor</span>, ist diese Karte anzulegen.\\nLegt Razor sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Erwachen</span> angewendet.\\nNachdem Razor ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Erwachen angewendet hat</span>, erhält 1 deiner Elektro-Figuren 1 Pkt. Aufladung. (Priorität für die aktive Figur)\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Razor enthält.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Razor</span>, ist diese Karte anzulegen.\\nLegt Razor sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Erwachen</span> angewendet.\\nNachdem Razor ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Erwachen</span> angewendet hat, erhält 1 deiner Elektro-Figuren 1 Pkt. Aufladung (Priorität für die aktive Figur).\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Razor enthält.)"
     }
   },
   {
@@ -2097,6 +2256,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Cyno</span>, ist diese Karte anzulegen.\\nLegt Cyno sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Urteil der Federn</span> angewendet.\\nWendet Cyno ausgerüstet mit dieser Karte bei der Verwandlungsstufe 3 oder 5 von <span style=\"color: #FFFFFFFF;\">Paktverschworener Pfadklärer</span> <span style=\"color: #FFFFFFFF;\">Urteil der Federn</span> an: Erhöht den verursachten SCH zusätzlich um 1 Pkt.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Cyno enthält.)"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Donnern am Firmament",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Beidou</span>, ist diese Karte anzulegen.\\nLegt Beidou sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Donnern am Firmament</span> angewendet.\\nWendet Beidou ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Donnern am Firmament</span> an: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span>-Verbrauch für Standardangriffe durch Beidou in dieser Runde -1, wenn sie beim <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Vorbereiten der Fähigkeiten</span> SCH erlitten hat (Einsatzmöglichkeit: 2).\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Beidou enthält.)"
     }
   },
   {
@@ -2181,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Collei</span>, ist diese Karte anzulegen.\\nLegt Collei sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Wiederkehr des fliegenden Laubs</span> angewendet.\\nNachdem Collei ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Wiederkehr des fliegenden Laubs</span> angewendet hat und Fähigkeiten deiner Figuren in derselben Runde <span style=\"color: #7EC236FF;\">Dendro-Reaktionen</span> ausgelöst haben: Verursacht 1 Pkt. <span style=\"color: #7EC236FF;\">Dendro-Schaden</span> (1-mal pro Runde).\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Collei enthält.)"
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">SCH durch die Figur +1</span>.\\nBeim Ausspielen: Verleiht der damit ausgerüsteten Figur für jede Figur aus Liyue in der Truppe <span style=\"color: #FFFFFFFF;\">1 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schild</span></span> (max. 3 Pkt.).\\n(Nur für <span style=\"color: #FFFFFFFF;\">Stangenwaffennutzer</span> anlegbar, und zwar max. 1 Waffe.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">SCH durch die Figur +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Beim Ausspielen:</span> Verleiht der damit ausgerüsteten Figur für jede Figur aus Liyue in der Truppe <span style=\"color: #FFFFFFFF;\">1 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schild</span></span> (max. 3 Pkt.).\\n(Nur für <span style=\"color: #FFFFFFFF;\">Stangenwaffennutzer</span> anlegbar, und zwar max. 1 Waffe.)"
     }
   },
   {
@@ -3023,7 +3198,7 @@
     "name": "Chang IX.",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden der Fähigkeiten einer Figur auf dem Spielfeld:</span> Sammelt beim Verursachen des <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> und <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durchdringender Schaden</span> oder Auslösen von <span style=\"color: #FFFFFFFF;\">Elementarreaktionen</span> <span style=\"color: #FFFFFFFF;\">1 Einfall</span>.\\nWenn <span style=\"color: #FFFFFFFF;\">3 Einfälle</span> gesammelt, wird diese Karte abgeworfen: Zieht 2 Karten."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden der Fähigkeiten einer Figur auf dem Spielfeld:</span> Hat sie <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> oder <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durchdringender Schaden</span> verursacht oder <span style=\"color: #FFFFFFFF;\">Elementarreaktionen</span> ausgelöst, sammelt <span style=\"color: #FFFFFFFF;\">1 Einfall</span>.\\nWenn 3 Einfälle gesammelt, wird diese Karte abgeworfen: Zieht 2 Karten."
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span>-Verbrauch für alle <span style=\"color: #FFFFFFFF;\">Standardangriffe</span> durch die gewählte Figur vor Ende dieser Runde -1.\\n(Jede Figur kann max. 1-mal pro Runde Gericht essen.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span> -Verbrauch für die nächsten 3 <span style=\"color: #FFFFFFFF;\">Standardangriffe</span> durch die gewählte Figur vor Ende dieser Runde -1.\\n(Jede Figur kann max. 1-mal pro Runde Gericht essen.)"
     }
   }
 ]

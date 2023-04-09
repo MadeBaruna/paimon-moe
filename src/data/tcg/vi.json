@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Yoimiya",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "Kỹ Năng Nộ",
         "name": "Cỏ Ryuukin",
-        "desc": "Gây 3 điểm <span style=\"color: #FF9999FF;\">Sát Thương Nguyên Tố Hỏa</span>, tạo ra <span style=\"color: #FFFFFFFF;\">Lưu Kim Hoả Quang</span>.",
+        "desc": "Gây 4 điểm <span style=\"color: #FF9999FF;\">Sát Thương Nguyên Tố Hỏa</span>, tạo ra <span style=\"color: #FFFFFFFF;\">Lưu Kim Hoả Quang</span>.",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Lưu Kim Hoả Quang",
           "desc": "Sau khi nhân vật phe ta ngoại trừ Yoimiya dùng kỹ năng: Gây 1 điểm <span style=\"color: #FF9999FF;\">Sát Thương Nguyên Tố Hỏa</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Hiệp Duy Trì</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Klee",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "Tấn Công Thường",
+        "name": "Bằng Bằng",
+        "desc": "Gây 1 điểm <span style=\"color: #FF9999FF;\">Sát Thương Nguyên Tố Hỏa</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "Kỹ Năng Nguyên Tố",
+        "name": "Bom Nảy",
+        "desc": "Gây 3 điểm <span style=\"color: #FF9999FF;\">Sát Thương Nguyên Tố Hỏa</span>, nhân vật này nhận <span style=\"color: #FFFFFFFF;\">Hoa Tia Lửa</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Hoa Tia Lửa",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Khi nhân vật áp dụng tiến hành <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Trọng Kích</span>:</span> Giảm tiêu hao 1 <span style=\"color: #FF9999FF;\">Nguyên Tố Hỏa</span>, đồng thời +1 sát thương.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "Kỹ Năng Nộ",
+        "name": "Tia Lửa Mãnh Liệt",
+        "desc": "Gây 3 điểm <span style=\"color: #FF9999FF;\">Sát Thương Nguyên Tố Hỏa</span>, tạo ra <span style=\"color: #FFFFFFFF;\">Tia Lửa Mãnh Liệt</span> trên sân đối phương.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Tia Lửa Mãnh Liệt",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật phe ta dùng kỹ năng:</span> Gây 2 điểm <span style=\"color: #FF9999FF;\">Sát Thương Nguyên Tố Hỏa</span> cho nhân vật xuất chiến phe ta.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 2</span>"
         }
       }
     ]
@@ -1069,6 +1137,81 @@
           "name": "Sứ Giả Dẫn Lối",
           "desc": "<span style=\"color: #FFFFFFFF;\">Giai Đoạn Kết Thúc:</span> Tích lũy 1 cấp [Hộ Thể].\\n<span style=\"color: #FFFFFFFF;\">Dựa theo cấp [Hộ Thể] để nhận hiệu quả:</span>\\nTừ cấp 2 trở lên: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Vật Lý</span> chuyển thành <span style=\"color: #FFACFFFF;\">Sát Thương Nguyên Tố Lôi</span>;\\nTừ cấp 4 trở lên: Sát thương gây ra +2；\\nTừ cấp 6 trở lên: Cấp [Hộ Thể] -4."
         }
+      }
+    ]
+  },
+  {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Beidou",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "Tấn Công Thường",
+        "name": "Đại Dương",
+        "desc": "Gây 2 điểm <span style=\"color: #FFFFFFFF;\">Sát Thương Vật Lý</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "Kỹ Năng Nguyên Tố",
+        "name": "Bắt Sóng",
+        "desc": "Nhân vật này nhận <span style=\"color: #FFFFFFFF;\">Bắt Sóng - Làn Sóng Quẩn Quanh</span> và <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Chuẩn Bị Kỹ Năng</span>: <span style=\"color: #FFFFFFFF;\">Sóng Vỗ</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Bắt Sóng - Làn Sóng Quẩn Quanh",
+          "desc": "Nhân vật này trong lần hành động sau, trực tiếp dùng kỹ năng: <span style=\"color: #FFFFFFFF;\">Bắt Sóng</span>.\\nTrong thời gian chuẩn bị kỹ năng: Cung cấp 2 điểm <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Khiên</span>, bảo vệ cho nhân vật áp dụng."
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "Kỹ Năng Nộ",
+        "name": "Chước Lôi",
+        "desc": "Gây 3 điểm <span style=\"color: #FFACFFFF;\">Sát Thương Nguyên Tố Lôi</span>, tạo ra <span style=\"color: #FFFFFFFF;\">Tấm Khiên Lôi Thú</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Tấm Khiên Lôi Thú",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật phe ta tấn công thường:</span> Gây 1 điểm <span style=\"color: #FFACFFFF;\">Sát Thương Nguyên Tố Lôi</span>.\\n<span style=\"color: #FFFFFFFF;\">Khi nhân vật phe ta chịu tối thiểu 3 sát thương:</span> Giảm trừ 1 điểm sát thương trong đó.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Hiệp Duy Trì</span>: 2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "Kỹ Năng Nguyên Tố",
+        "name": "Sóng Vỗ",
+        "desc": "(Cần chuẩn bị 1 lượt hành động)\\nGây 2 điểm <span style=\"color: #FFACFFFF;\">Sát Thương Nguyên Tố Lôi</span>.",
+        "cost": []
       }
     ]
   },
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "Kỹ Năng Nguyên Tố",
         "name": "Chém Gió",
-        "desc": "Gây 1 điểm <span style=\"color: #80FFD7FF;\">Sát Thương Nguyên Tố Phong</span>, triệu hồi <span style=\"color: #FFFFFFFF;\">Kiếm Ảnh - Cô Phong</span>.",
+        "desc": "Triệu hồi <span style=\"color: #FFFFFFFF;\">Kiếm Ảnh - Cô Phong</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "Kỹ Năng Nguyên Tố",
         "name": "Đột Kích Băng Giá",
-        "desc": "Gây 1 điểm <span style=\"color: #99FFFFFF;\">Sát Thương Nguyên Tố Băng</span>, triệu hồi <span style=\"color: #FFFFFFFF;\">Kiếm Ảnh - Sương Phủ</span>.",
+        "desc": "Triệu hồi <span style=\"color: #FFFFFFFF;\">Kiếm Ảnh - Sương Phủ</span>.",
         "cost": [
           {
             "type": "cryo",
@@ -2036,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Món Quà Bằng Bằng",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Klee</span>.\\nSau khi Klee trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Món Quà Bằng Bằng</span>.\\n<span style=\"color: #FFFFFFFF;\">Hoa Tia Lửa</span> sinh ra khi Klee trang bị thẻ bài này có <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span> +1.\\n(Bộ bài có Klee, mới có thể thêm)"
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Razor</span>.\\nRazor sau khi trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Thức Tỉnh</span>.\\nSau khi Razor có trang bị thẻ bài này <span style=\"color: #FFFFFFFF;\">dùng Thức Tỉnh</span>: Một nhân vật nguyên tố Lôi của phe ta sẽ nhận 1 điểm Năng Lượng. (Ưu tiên nhân vật xuất chiến)\\n(Bộ bài có Razor mới có thể thêm)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Razor</span>.\\nRazor sau khi trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Thức Tỉnh</span>.\\nRazor trang bị thẻ bài này sau khi dùng <span style=\"color: #FFFFFFFF;\">Thức Tỉnh</span>: Một nhân vật nguyên tố Lôi của phe ta nhận 1 điểm Năng Lượng. (Ưu tiên nhân vật xuất chiến)\\n(Bộ bài có Razor, mới có thể thêm)"
     }
   },
   {
@@ -2097,6 +2256,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Cyno</span>.\\nCyno sau khi trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Lạc Vũ Phán Quyết</span>.\\nCyno có trang bị thẻ bài này khi \"Hộ Thể\" của <span style=\"color: #FFFFFFFF;\">Sứ Giả Dẫn Lối</span> là cấp 3 hoặc 5 dùng <span style=\"color: #FFFFFFFF;\">Lạc Vũ Phán Quyết</span>, sát thương gây ra tăng thêm +1.\\n(Bộ bài có Cyno mới có thể thêm)"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Sấm Sét Đầy Trời",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Beidou</span>.\\nBeidou sau khi trang bị thẻ bài này lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Sấm Sét Đầy Trời</span>.\\nBeidou trang bị thẻ bài này khi sử dụng <span style=\"color: #FFFFFFFF;\">Sấm Sét Đầy Trời</span>: Nếu trong thời gian <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Chuẩn Bị Kỹ Năng</span> từng chịu sát thương sẽ khiến \"Tấn Công Thường\" của Beidou trong lượt này giảm tiêu hao 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nguyên Tố Không Màu</span>. (Tối đa kích hoạt 2 lần)\\n(Bộ bài có Beidou, mới có thể thêm)"
     }
   },
   {
@@ -2181,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Collei</span>.\\nCollei sau khi trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Lá Khẽ Bay Nghiêng</span>.\\nTrong hiệp mà Collei có trang bị thẻ bài này đã dùng <span style=\"color: #FFFFFFFF;\">Lá Khẽ Bay Nghiêng</span>, sau khi nhân vật phe ta dùng kỹ năng kích hoạt <span style=\"color: #7EC236FF;\">Phản Ứng Nguyên Tố Thảo</span>: Gây 1 điểm <span style=\"color: #7EC236FF;\">Sát Thương Nguyên Tố Thảo</span>. (Mỗi hiệp 1 lần)\\n(Bộ bài có Collei mới có thể thêm)"
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Sát thương nhân vật tạo ra +1</span>\\nKhi vào trận: Mỗi nhân vật Liyue trong đội, sẽ tăng <span style=\"color: #FFFFFFFF;\">1 điểm <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Khiên</span></span> cho nhân vật áp dụng thẻ bài này. (Tối đa 3 điểm)\\n(<span style=\"color: #FFFFFFFF;\">Nhân vật dùng Vũ Khí Cán Dài</span> mới có thể trang bị. Nhân vật tối đa trang bị 1 vũ khí)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Sát thương nhân vật tạo ra +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Khi vào trận:</span> Mỗi nhân vật Liyue trong đội, sẽ tăng <span style=\"color: #FFFFFFFF;\">1 điểm <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Khiên</span></span> cho nhân vật áp dụng thẻ bài này. (Tối đa 3 điểm)\\n(<span style=\"color: #FFFFFFFF;\">Nhân vật dùng Vũ Khí Cán Dài</span> mới có thể trang bị. Nhân vật tối đa trang bị 1 vũ khí)"
     }
   },
   {
@@ -3023,7 +3198,7 @@
     "name": "Thường Cửu Gia",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật một trong hai phe sử dụng kỹ năng:</span> Nếu gây ra <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Vật Lý</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Xuyên Thấu</span> hoặc kích hoạt <span style=\"color: #FFFFFFFF;\">phản ứng nguyên tố</span>, thẻ bài này sẽ tích lũy <span style=\"color: #FFFFFFFF;\">1 Cảm Hứng</span>.\\nNếu thẻ bài này đã tích lũy <span style=\"color: #FFFFFFFF;\">3 Cảm Hứng</span>, sẽ hủy bỏ thẻ bài này: Rút 2 thẻ bài."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật một trong hai phe dùng kỹ năng:</span> Nếu đã tạo ra <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Vật Lý</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Xuyên Thấu</span> hoặc đã kích hoạt <span style=\"color: #FFFFFFFF;\">phản ứng nguyên tố</span>, thẻ bài này tích lũy <span style=\"color: #FFFFFFFF;\">1 Cảm Hứng</span>.\\nNếu thẻ bài này đã tích lũy <span style=\"color: #FFFFFFFF;\">3 Cảm Hứng</span>, sẽ hủy bỏ thẻ bài này: Rút 2 thẻ bài."
     }
   },
   {
@@ -3347,7 +3522,7 @@
     "name": "Bổn Đại Gia Chưa Thua Đâu!",
     "skills": {
       "cost": [],
-      "desc": "Trong hiệp này khi có nhân vật phe ta bị đánh bại, mới có thể đánh ra:\\nSinh ra 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nguyên Tố Vạn Năng</span>, nhân vật xuất chiến hiện tại của phe ta nhận 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Năng Lượng</span>."
+      "desc": "Trong hiệp này khi có nhân vật phe ta bị đánh bại, mới có thể đánh ra:\\nSinh ra 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nguyên Tố Vạn Năng</span>, nhân vật xuất chiến hiện tại của phe ta nhận 1 điểm <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Năng Lượng</span>."
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "Nhân vật mục tiêu trước khi kết thúc hiệp này, tất cả <span style=\"color: #FFFFFFFF;\">tấn công thường</span> đều giảm tiêu hao 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nguyên Tố Không Màu</span>.\\n(Mỗi hiệp mỗi nhân vật tối đa dùng 1 lần Món Ăn)"
+      "desc": "Nhân vật mục tiêu trước khi kết thúc hiệp này, <span style=\"color: #FFFFFFFF;\">tấn công thường</span> 3 lần sau đó đều giảm tiêu hao 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nguyên Tố Không Màu</span>.\\n(Mỗi hiệp mỗi nhân vật tối đa dùng 1 lần Món Ăn)"
     }
   }
 ]

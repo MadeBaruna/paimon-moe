@@ -1117,4 +1117,30 @@ export const itemList = {
     id: 'dakas_bell',
     name: "Daka's Bell",
   },
+
+  pseudo_stamens: {
+    id: 'pseudo_stamens',
+    name: 'Pseudo-Stamens',
+    rarity: 4,
+  },
+  sand_grease_pupa: {
+    id: 'sand_grease_pupa',
+    name: 'Sand Grease Pupa',
+  },
+
+  desiccated_shell: {
+    id: 'desiccated_shell',
+    name: 'Desiccated Shell',
+    rarity: 2,
+  },
+  sturdy_shell: {
+    id: 'sturdy_shell',
+    name: 'Sturdy Shell',
+    rarity: 3,
+  },
+  marked_shell: {
+    id: 'marked_shell',
+    name: 'Marked Shell',
+    rarity: 4,
+  },
 };

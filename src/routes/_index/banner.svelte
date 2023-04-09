@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    kamisato_ayato: {
-      name: 'Kamisato Ayato',
+    shenhe: {
+      name: 'Shenhe',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    raiden_shogun: {
-      name: 'Raiden Shogun',
+    kamisato_ayaka: {
+      name: 'Kamisato Ayaka',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300041;
-  const image = 'ayato_raiden.png';
+  const bannerId = 300045;
+  const image = 'shenhe_ayaka.png';
   const width = 800;
-  const height = 481;
+  const height = 402;
 
   let loading = true;
   let user = '';
