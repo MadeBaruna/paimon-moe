@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Yoimiya",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "ท่าไม้ตาย",
         "name": "Ryuukin Saxifrage",
-        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 3 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Aurous Blaze</span>",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 4 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Aurous Blaze</span>",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Aurous Blaze",
           "desc": "หลังจากตัวละครฝ่ายเราที่ไม่ใช่ Yoimiya ใช้สกิล: สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Klee",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "โจมตีปกติ",
+        "name": "Kaboom!",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 1 หน่วย",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "สกิลธาตุ",
+        "name": "Jumpy Dumpty",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 3 หน่วย และตัวละครนี้ได้รับ <span style=\"color: #FFFFFFFF;\">Explosive Spark</span>",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Explosive Spark",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครที่มีการ์ดใบนี้ใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ชาร์จโจมตี</span>:</span> จะใช้<span style=\"color: #FF9999FF;\">ธาตุไฟ</span>น้อยลง 1 ลูก และสร้างความเสียหาย +1\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "ท่าไม้ตาย",
+        "name": "Sparks 'n' Splash",
+        "desc": "สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 3 หน่วย และทำให้เกิด <span style=\"color: #FFFFFFFF;\">Sparks 'n' Splash</span> แก่ตัวละครในสนามของฝ่ายตรงข้าม",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Sparks 'n' Splash",
+          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครฝ่ายเราใช้สกิล:</span> สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 2 หน่วย ให้แก่ตัวละครที่เข้าต่อสู้ของฝ่ายเรา\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
         }
       }
     ]
@@ -1069,6 +1137,81 @@
           "name": "Pactsworn Pathclearer",
           "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span>สะสมระดับการ \"ประทับร่าง\" 1 ระดับ\\n<span style=\"color: #FFFFFFFF;\">มอบเอฟเฟกต์โดยขึ้นกับระดับของการ \"ประทับร่าง\":</span>\\nมากกว่า หรือเท่ากับระดับ 2: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>เปลี่ยนเป็น<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span>;\\nมากกว่า หรือเท่ากับระดับ 4: สร้างความเสียหาย +2;\\nมากกว่า หรือเท่ากับระดับ 6: ระดับของการ \"ประทับร่าง\" -4"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Beidou",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "โจมตีปกติ",
+        "name": "Oceanborne",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "สกิลธาตุ",
+        "name": "Tidecaller",
+        "desc": "ตัวละครนี้จะได้รับ <span style=\"color: #FFFFFFFF;\">Tidecaller: Surf Embrace</span> และการ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">เตรียมสกิล</span>: <span style=\"color: #FFFFFFFF;\">Wavestrider</span>",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Tidecaller: Surf Embrace",
+          "desc": "แอ็กชันต่อไปของตัวละครนี้ จะใช้สกิลนี้โดยทันที: <span style=\"color: #FFFFFFFF;\">Tidecaller</span>\\nระหว่างเตรียมสกิล: มอบ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span> 2 หน่วย เพื่อปกป้องตัวละครที่มีการ์ดใบนี้"
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "ท่าไม้ตาย",
+        "name": "Stormbreaker",
+        "desc": "สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 3 หน่วย และสร้าง <span style=\"color: #FFFFFFFF;\">Thunderbeast's Targe</span>",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Thunderbeast's Targe",
+          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครฝ่ายเราใช้การโจมตีปกติ:</span> สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครฝ่ายเราได้รับความเสียหายอย่างน้อย 3 หน่วย:</span> ลบล้างความเสียหายที่ได้รับ 1 หน่วย\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "สกิลธาตุ",
+        "name": "Wavestrider",
+        "desc": "(ต้องใช้เวลาเตรียม 1 เทิร์น)\\nสร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 2 หน่วย",
+        "cost": []
       }
     ]
   },
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "สกิลธาตุ",
         "name": "Blustering Blade",
-        "desc": "สร้าง<span style=\"color: #80FFD7FF;\">ความเสียหายลม</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Shadowsword: Lone Gale</span>",
+        "desc": "เรียก <span style=\"color: #FFFFFFFF;\">Shadowsword: Lone Gale</span>",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "สกิลธาตุ",
         "name": "Frosty Assault",
-        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Shadowsword: Galloping Frost</span>",
+        "desc": "เรียก <span style=\"color: #FFFFFFFF;\">Shadowsword: Galloping Frost</span>",
         "cost": [
           {
             "type": "cryo",
@@ -2036,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Pounding Surprise",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Klee</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Klee ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Pounding Surprise</span> หนึ่งครั้งโดยทันที\\n<span style=\"color: #FFFFFFFF;\">Explosive Spark</span> ของ Klee ที่มีการ์ดใบนี้สร้างขึ้น <span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>จะ +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Klee อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2064,7 +2223,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Razor</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Razor ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Awakening</span> หนึ่งครั้งโดยทันที\\nหลังจาก Razor ที่มีการ์ดใบนี้<span style=\"color: #FFFFFFFF;\">ใช้ Awakening</span>: จะทำให้ตัวละครธาตุไฟฟ้าหนึ่งตัวของฝ่ายเรา ได้รับพลังงาน 1 หน่วย (ให้ความสำคัญกับตัวละครที่เข้าต่อสู้ก่อน)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Razor อยู่ภายในเด็คเท่านั้น)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Razor</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Razor ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Awakening</span> หนึ่งครั้งโดยทันที\\nหลังจาก Razor ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Awakening</span>: จะทำให้ตัวละครธาตุไฟฟ้าหนึ่งตัวของฝ่ายเรา ได้รับพลังงาน 1 หน่วย (ให้ความสำคัญกับตัวละครที่เข้าต่อสู้ก่อน)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Razor อยู่ภายในเด็คเท่านั้น)"
     }
   },
   {
@@ -2097,6 +2256,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Cyno</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Cyno ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Featherfall Judgment</span> หนึ่งครั้งโดยทันที\\nในตอนที่การ \"ประทับร่าง\" ของ <span style=\"color: #FFFFFFFF;\">Pactsworn Pathclearer</span> ถึงระดับ 3 หรือ 5 เมื่อ Cyno ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Featherfall Judgment</span> ความเสียหายที่สร้างจะเพิ่มเติม +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Cyno อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Lightning Storm",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Beidou</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Beidou ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Lightning Storm</span> หนึ่งครั้งโดยทันที\\nเมื่อ Beidou ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Lightning Storm</span>: หากเคยได้รับความเสียหายระหว่างช่วงเวลาที่<span style=\"color: #FFFFFFFF; text-decoration: underline;\">เตรียมสกิล</span> จะทำให้ \"การโจมตีปกติ\" ของ Beidou ในเทิร์นนี้ ใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุไร้สี</span>น้อยลง 1 ลูก (เกิดขึ้นมากสุด 2 ครั้ง)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Beidou อยู่ภายในเด็คเท่านั้น)"
     }
   },
   {
@@ -2181,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Collei</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Collei ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Floral Sidewinder</span> หนึ่งครั้งโดยทันที\\nในเทิร์นที่ Collei ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Floral Sidewinder</span> หลังจากสกิลของตัวละครฝ่ายเราทำให้เกิด<span style=\"color: #7EC236FF;\">ปฏิกิริยาที่เกี่ยวกับธาตุไม้</span>: สร้าง<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> 1 หน่วย (เทิร์นละ 1 ครั้ง)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Collei อยู่ภายในเด็คเท่านั้น)"
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\nเมื่อเข้าสนาม: ตัวละครจาก \"Liyue\" แต่ละตัวในทีม จะทำให้การ์ดใบนี้มอบ<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span> 1 หน่วย</span> ให้แก่ตัวละครที่สวมใส่การ์ดใบนี้ (มากสุด 3 หน่วย)\\n(<span style=\"color: #FFFFFFFF;\">สวมใส่ได้กับตัวละครประเภท \"หอก\" เท่านั้น</span> ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n<span style=\"color: #FFFFFFFF;\">เมื่อเข้าสนาม:</span> ตัวละครจาก \"Liyue\" แต่ละตัวในทีม จะทำให้การ์ดใบนี้มอบ<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span> 1 หน่วย</span> ให้แก่ตัวละครที่สวมใส่การ์ดใบนี้ (มากสุด 3 หน่วย)\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"หอก\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
     }
   },
   {
@@ -3013,7 +3188,7 @@
     "name": "Liben",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> รวบรวม Elemental Dice ที่ยังไม่ได้ใช้ของฝ่ายเรา (แค่ละชนิดมากสุด 1 ลูก)\\n<span style=\"color: #FFFFFFFF;\">เมื่อเริ่มแอ็กชันเฟส:</span> หากการ์ดใบนี้รวบรวม Elemental Dice ได้ครบ 3 ลูก จะจั่วการ์ด 2 ใบ และทำให้เกิด<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 2 ลูก จากนั้นจะทิ้งการ์ดใบนี้"
+      "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> รวบรวม Elemental Dice ที่ยังไม่ได้ใช้ของฝ่ายเรา (ชนิดละมากสุด 1 ลูก)\\n<span style=\"color: #FFFFFFFF;\">เมื่อเริ่มแอ็กชันเฟส:</span> หากการ์ดใบนี้รวบรวม Elemental Dice ได้ครบ 3 ลูก จะจั่วการ์ด 2 ใบ และทำให้เกิด<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 2 ลูก จากนั้นจะทิ้งการ์ดใบนี้"
     }
   },
   {
@@ -3347,7 +3522,7 @@
     "name": "I Haven't Lost Yet!",
     "skills": {
       "cost": [],
-      "desc": "จะสามารถใช้ได้ เมื่อมีตัวละครของฝ่ายเราพ่ายแพ้ในเทิร์นนี้:\\nจะทำให้เกิด<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 1 ลูก และตัวละครเข้าต่อสู้ฝ่ายเราในขณะนั้น จะได้รับ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย"
+      "desc": "จะสามารถใช้ได้ เมื่อมีตัวละครของฝ่ายเราพ่ายแพ้ในเทิร์นนี้:\\nจะทำให้เกิด<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุสารพัดประโยชน์</span> 1 ลูก และตัวละครที่เข้าต่อสู้ของฝ่ายเราในขณะนั้น จะได้รับ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย"
     }
   },
   {
@@ -3532,7 +3707,7 @@
     "name": "Northern Smoked Chicken",
     "skills": {
       "cost": [],
-      "desc": "ในเทิร์นนี้ <span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ครั้งต่อไป ของตัวละครเป้าหมาย จะใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุไร้สี</span> น้อยลง 1 หน่วย\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+      "desc": "ในเทิร์นนี้ <span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ครั้งต่อไป ของตัวละครเป้าหมาย จะใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุไร้สี</span> น้อยลง 1 ลูก\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "ก่อนที่เทิร์นนี้จะจบลง <span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ทั้งหมด ของตัวละครเป้าหมาย จะใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุไร้สี</span> น้อยลง 1 หน่วย\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
+      "desc": "ก่อนที่เทิร์นนี้จะจบลง <span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>สามครั้งหลังจากนี้ของตัวละครเป้าหมาย จะใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุไร้สี</span> น้อยลง 1 ลูก\\n(ในแต่ละเทิร์น ตัวละครแต่ละตัวกิน \"อาหาร\" ได้มากสุด 1 ครั้ง)"
     }
   }
 ]

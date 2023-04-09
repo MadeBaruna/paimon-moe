@@ -394,7 +394,7 @@
         "_id": 12013,
         "type": "Tripudio elementale",
         "name": "Miracolo fulgido♪",
-        "desc": "Cura 4 punti vita a tutti i personaggi che controlli.",
+        "desc": "Cura 4 PS a tutti i personaggi che controlli.",
         "cost": [
           {
             "type": "hydro",
@@ -437,7 +437,7 @@
       {
         "_id": 12022,
         "type": "Abilità elementale",
-        "name": "Schermo di pioggia fatale",
+        "name": "Velo di pioggia fatale",
         "desc": "Infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>, questo personaggio riceve <span style=\"color: #80C0FFFF;\">Applicazione di Hydro</span> e crea una <span style=\"color: #FFFFFFFF;\">Spada della pioggia</span>.",
         "cost": [
           {
@@ -749,7 +749,7 @@
     "type": "character",
     "name": "Yoimiya",
     "hp": 10,
-    "energy": 2,
+    "energy": 3,
     "element": "pyro",
     "weapon": "bow",
     "skills": [
@@ -791,15 +791,15 @@
         "_id": 13053,
         "type": "Tripudio elementale",
         "name": "Sassifraga Ryuukin",
-        "desc": "Infligge 3 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>, genera una <span style=\"color: #FFFFFFFF;\">Vampata aurea</span>.",
+        "desc": "Infligge 4 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>, genera una <span style=\"color: #FFFFFFFF;\">Vampata aurea</span>.",
         "cost": [
           {
             "type": "pyro",
-            "count": 3
+            "count": 4
           },
           {
             "type": "energy",
-            "count": 2
+            "count": 3
           }
         ],
         "sub": {
@@ -807,6 +807,74 @@
           "id": "aurous_blaze",
           "name": "Vampata aurea",
           "desc": "Quando i personaggi (esclusa Yoimiya) usano le abilità: infligge 1 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1306,
+    "id": "klee",
+    "type": "character",
+    "name": "Klee",
+    "hp": 10,
+    "energy": 3,
+    "element": "pyro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 13061,
+        "type": "Attacco normale",
+        "name": "Megaboom!",
+        "desc": "Infligge 1 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 13062,
+        "type": "Abilità elementale",
+        "name": "Coniglio Bumbum",
+        "desc": "Infligge 3 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>, questo personaggio ottiene <span style=\"color: #FFFFFFFF;\">Scintilla esplosiva</span>.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113061,
+          "id": "explosive_spark",
+          "name": "Scintilla esplosiva",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il personaggio associato usa <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Attacco caricato</span>: </span>spende 1 <span style=\"color: #FF9999FF;\">Pyro</span> in meno e infligge DAN +1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 13063,
+        "type": "Tripudio elementale",
+        "name": "Schizzi e scintille",
+        "desc": "Infligge 3 <span style=\"color: #FF9999FF;\">DAN da Pyro</span>, genera 1 <span style=\"color: #FFFFFFFF;\">Schizzi e scintille</span> nel campo avversario.",
+        "cost": [
+          {
+            "type": "pyro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 113063,
+          "id": "sparks_n_splash",
+          "name": "Schizzi e scintille",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio usa un'abilità:</span> infligge 2 <span style=\"color: #FF9999FF;\">DAN da Pyro</span> al tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
         }
       }
     ]
@@ -840,7 +908,7 @@
       {
         "_id": 14012,
         "type": "Abilità elementale",
-        "name": "Cavaliere della notte",
+        "name": "Guardiano della notte",
         "desc": "Infligge 1 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>, invoca 1 <span style=\"color: #FFFFFFFF;\">Oz</span>.",
         "cost": [
           {
@@ -1073,6 +1141,81 @@
     ]
   },
   {
+    "_id": 1405,
+    "id": "beidou",
+    "type": "character",
+    "name": "Beidou",
+    "hp": 10,
+    "energy": 3,
+    "element": "electro",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 14051,
+        "type": "Attacco normale",
+        "name": "Portato dall'oceano",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14052,
+        "type": "Abilità elementale",
+        "name": "Governamaree",
+        "desc": "Questo personaggio ottiene <span style=\"color: #FFFFFFFF;\">Governamaree: Abbraccio spumoso</span>. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Prepara abilità</span>: <span style=\"color: #FFFFFFFF;\">Passi sulle onde</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114051,
+          "id": "tidecaller_surf_embrace",
+          "name": "Governamaree: Abbraccio spumoso",
+          "desc": "La volta seguente che esegue un'azione, questo personaggio usa immediatamente l'abilità <span style=\"color: #FFFFFFFF;\">Governamaree</span>.\\nDurante la preparazione di quest'abilità: garantisci al personaggio associato 2 punti di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span>."
+        }
+      },
+      {
+        "_id": 14053,
+        "type": "Tripudio elementale",
+        "name": "Tempesta tagliente",
+        "desc": "Infligge 3 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>, genera 1 <span style=\"color: #FFFFFFFF;\">Egida della bestia di tuono</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114053,
+          "id": "thunderbeasts_targe",
+          "name": "Egida della bestia di tuono",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio attivo usa un attacco normale: </span>infligge 1 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>.\\n<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio subisce almeno 3 DAN: </span>riduce i DAN subiti di 1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2"
+        }
+      },
+      {
+        "_id": 14054,
+        "type": "Abilità elementale",
+        "name": "Passi sulle onde",
+        "desc": "(Prepara per 1 turno)\\nInfligge 2 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>.",
+        "cost": []
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1176,7 +1319,7 @@
         "_id": 15023,
         "type": "Tripudio elementale",
         "name": "Brezza dei denti di leone",
-        "desc": "Ripristina 2 punti a tutti i tuoi personaggi, invoca un <span style=\"color: #FFFFFFFF;\">Campo di denti di leone</span>.",
+        "desc": "Ripristina 2 PS a tutti i tuoi personaggi, invoca un <span style=\"color: #FFFFFFFF;\">Campo di denti di leone</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1641,7 +1784,7 @@
         "_id": 25012,
         "type": "Abilità elementale",
         "name": "Lama del vento solitario",
-        "desc": "Infligge 1 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span>, invoca una <span style=\"color: #FFFFFFFF;\">Lamaombra: Burrasca solitaria</span>.",
+        "desc": "Invoca 1 <span style=\"color: #FFFFFFFF;\">Lamaombra: Burrasca solitaria</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1659,7 +1802,7 @@
         "_id": 25013,
         "type": "Abilità elementale",
         "name": "Ombra gelida",
-        "desc": "Infligge 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>, invoca una <span style=\"color: #FFFFFFFF;\">Lamaombra: Gelo galoppante</span>.",
+        "desc": "Invoca 1 <span style=\"color: #FFFFFFFF;\">Lamaombra: Gelo galoppante</span>.",
         "cost": [
           {
             "type": "cryo",
@@ -2036,6 +2179,22 @@
     }
   },
   {
+    "_id": 213061,
+    "id": "pounding_surprise",
+    "type": "talent",
+    "name": "Batosta a sorpresa",
+    "requirement": "klee",
+    "skills": {
+      "cost": [
+        {
+          "type": "pyro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: Quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Klee</span>, equipaggia questa carta.\\nDopo che Klee equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Batosta a sorpresa</span> una volta.\\nQuando la tua Klee, che ha questa carta equipaggiata, crea una <span style=\"color: #FFFFFFFF;\">Scintilla esplosiva</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Klee.)"
+    }
+  },
+  {
     "_id": 214011,
     "id": "stellar_predator",
     "type": "talent",
@@ -2097,6 +2256,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Cyno</span>, equipaggia questa carta.\\nDopo che Cyno equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Giudizio della piuma cadente</span> una volta.\\nQuando Cyno, che ha questa carta equipaggiata, utilizza <span style=\"color: #FFFFFFFF;\">Giudizio della piuma cadente</span> con il livello 3 o 5 dell'effetto Possessione di <span style=\"color: #FFFFFFFF;\">Precorritore giurato</span>, infligge DAN +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Cyno.)"
+    }
+  },
+  {
+    "_id": 214051,
+    "id": "lightning_storm",
+    "type": "talent",
+    "name": "Tempesta di fulmini",
+    "requirement": "beidou",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Beidou</span>, equipaggia questa carta.\\nQuando Beidou equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Tempesta di fulmini</span> una volta.\\nQuando Beidou, che ha questa carta equipaggiata, usa <span style=\"color: #FFFFFFFF;\">Tempesta di fulmini</span>, se vengono subiti DAN mentre <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Prepara abilità</span> è attivo, in questo turno gli attacchi normali del personaggio costano 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">elemento indefinito</span> in meno (può essere attivato 2 volte).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Beidou.)"
     }
   },
   {
@@ -2181,7 +2356,7 @@
       "cost": [
         {
           "type": "dendro",
-          "count": 3
+          "count": 4
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Collei</span>, equipaggia questa carta.\\nDopo che Collei equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Brezza di ritorno floreale</span> una volta.\\nDopo che la tua Collei, che ha questa carta equipaggiata, usa <span style=\"color: #FFFFFFFF;\">Brezza di ritorno floreale</span>, durante questo turno, dopo che l'abilità del tuo personaggio innesca <span style=\"color: #7EC236FF;\">Reazioni di Dendro</span>: infligge 1 <span style=\"color: #7EC236FF;\">DAN da Dendro</span> (una volta per turno).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Collei.)"
@@ -2236,7 +2411,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Agente dei Fatui di Pyro</span>, equipaggia questa carta.\\nDopo che Agente dei Fatui di Pyro equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Pagamento saldato</span> una volta.\\nQuando Agente dei Fatui di Pyro, che ha questa carta equipaggiata crea un <span style=\"color: #FFFFFFFF;\">Furtività</span>, ottiene i seguenti effetti:\\nuna quantità iniziale di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> +1, e i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> che questo personaggio infligge sono convertiti in <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Agente dei Fatui di Pyro.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Agente dei Fatui di Pyro</span>, equipaggia questa carta.\\nDopo che Agente dei Fatui di Pyro equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Pagamento saldato</span> una volta.\\nQuando Agente dei Fatui di Pyro, che ha questa carta equipaggiata ottiene lo stato <span style=\"color: #FFFFFFFF;\">Furtività</span>, ottiene i seguenti effetti:\\nuna quantità iniziale di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> +1, e i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> che questo personaggio infligge sono convertiti in <span style=\"color: #FF9999FF;\">DAN da Pyro</span>.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Agente dei Fatui di Pyro.)"
     }
   },
   {
@@ -2453,7 +2628,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\nSe giocata: per ogni personaggio di Liyue nella tua squadra aggiungi <span style=\"color: #FFFFFFFF;\">1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span></span> al personaggio associato (massimo 3 punti).\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con lancia</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Se giocata:</span> per ogni personaggio di Liyue nel tuo gruppo aggiungi <span style=\"color: #FFFFFFFF;\">1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span></span> al personaggio associato (massimo 3 punti).\\n(Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con lancia</span>. Il personaggio può equipaggiare un massimo di 1 arma.)"
     }
   },
   {
@@ -2843,7 +3018,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Se giocata:</span> seleziona i dadi elementali da rilanciare.\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> ottieni un'altra possibilità di lancio."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Se giocata:</span> seleziona qualsiasi dado elementale da rilanciare.\\n<span style=\"color: #FFFFFFFF;\">Fase di lancio:</span> ottieni un'altra possibilità di lancio."
     }
   },
   {
@@ -2873,7 +3048,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Quando usi Cambia personaggio:</span> usa 1 dado elementale in meno (una volta per turno)."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando usi Cambia personaggio:</span> spendi 1 dado elementale in meno (una volta per turno)."
     }
   },
   {
@@ -2993,7 +3168,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Quando viene giocata una carta di supporto luogo</span> consuma 2 dadi elementali in meno (una volta per turno)."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando viene giocata una carta di supporto posizione</span> consuma 2 dadi elementali in meno (una volta per turno)."
     }
   },
   {
@@ -3023,7 +3198,7 @@
     "name": "Chang il Nono",
     "skills": {
       "cost": [],
-      "desc": "Quando una delle fazioni usa un'abilità: se sono stati inflitti <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span> o viene innescata una <span style=\"color: #FFFFFFFF;\">reazione elementale</span>: questa carta ottiene <span style=\"color: #FFFFFFFF;\">1 punto Ispirazione</span>\\nSe questa carta ha già ottenuto <span style=\"color: #FFFFFFFF;\">3 punti Ispirazione</span>, rimuovila, poi pesca 2 carte."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando una delle fazioni usa un'abilità:</span> se sono stati inflitti <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span> o viene innescata una <span style=\"color: #FFFFFFFF;\">reazione elementale</span>, questa carta ottiene <span style=\"color: #FFFFFFFF;\">1 punto Ispirazione</span>.\\nUna volta ottenuti <span style=\"color: #FFFFFFFF;\">3 punti Ispirazione</span>, rimuovi questa carta, poi pescane altre 2."
     }
   },
   {
@@ -3312,7 +3487,7 @@
     "name": "Cambio di turno",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">La prossima volta che usi Cambia personaggio:</span> usa 1 dado elementale in meno."
+      "desc": "<span style=\"color: #FFFFFFFF;\">La prossima volta che usi Cambia personaggio:</span> spendi 1 dado elementale in meno."
     }
   },
   {
@@ -3587,7 +3762,7 @@
           "count": 1
         }
       ],
-      "desc": "Prima della fine del turno, tutti gli <span style=\"color: #FFFFFFFF;\">attacchi normali</span> del personaggio bersaglio costeranno 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">elemento indefinito</span> in meno.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+      "desc": "Prima della fine del turno, i successivi 3 <span style=\"color: #FFFFFFFF;\">attacchi normali</span> del personaggio bersaglio costeranno 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">elemento indefinito</span> in meno.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
     }
   }
 ]
