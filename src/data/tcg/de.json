@@ -40,7 +40,7 @@
           "_id": 111012,
           "id": "ice_lotus",
           "name": "Eislotos",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Erleidet deine aktive Figur SCH,</span> wird 1 Pkt. SCH abgewehrt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Erleidet deine aktive Figur SCH:</span> Wehrt 1 Pkt. SCH ab.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
         }
       },
       {
@@ -341,7 +341,75 @@
           "_id": 111052,
           "id": "cryo_elemental_infusion",
           "name": "Kryo-Kraft",
-          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch die Figuren mit dem Attribut wird nun <span style=\"color: #99FFFFFF;\">Kryo-Schaden</span>.\\n(Bis zum Ende dieser Runde)"
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch die Figuren mit diesem Attribut wird nun <span style=\"color: #99FFFFFF;\">Kryo-Schaden</span>.\\n(Bis zum Ende dieser Runde)"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Eula",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "Standardangriff",
+        "name": "Favonius-Schwertkunst – Adelshaus",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #FFFFFFFF;\">Physischer Schaden</span>|s1:<span style=\"color: #FFFFFFFF;\">phys. SCH</span>|s2:<span style=\"color: #FFFFFFFF;\">Phys. SCH</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "Elementarfähigkeit",
+        "name": "Eisiger Strudel",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #99FFFFFF;\">Kryo-Schaden</span>|s1:<span style=\"color: #99FFFFFF;\">Kryo-SCH</span>. Verleiht der Figur <span style=\"color: #FFFFFFFF;\">Kaltes Herz</span>, wenn sie nicht damit ausgerüstet ist.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Kaltes Herz",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Führt die hiermit ausgerüstete Figur Eisiger Strudel aus:</span> Dieser Zustand wird entfernt, diesmaliger SCH +2."
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "Spezialfähigkeit",
+        "name": "Schwert der Brandung",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #99FFFFFF;\">Kryo-Schaden</span>|s1:<span style=\"color: #99FFFFFF;\">Kryo-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Schwert des Lichtfalls</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Schwert des Lichtfalls",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Beim Anwenden des Standardangriffs oder der Elementarfähigkeit von Eula:</span> Verleiht dieser Karte 2 Energie-Stapelungen, aber Eula erhält keine Aufladung.\\n<span style=\"color: #FFFFFFFF;\">Endphase:</span> Diese Karte wird abgeworfen, verursacht dabei 2 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span>. Jede Energie-Stapelung erhöht diesen SCH um 1 Pkt.\\n(Effekte auf <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span> dieser Karte wirken auf ihre <span style=\"color: #FFFFFFFF;\">Energie-Stapelungen</span>.)"
         }
       }
     ]
@@ -421,7 +489,7 @@
       {
         "_id": 12021,
         "type": "Standardangriff",
-        "name": "Guhua-Schwertkunst",
+        "name": "Guhua-Stil",
         "desc": "Verursacht 2 Pkt. <span style=\"color: #FFFFFFFF;\">Physischer Schaden</span>|s1:<span style=\"color: #FFFFFFFF;\">phys. SCH</span>|s2:<span style=\"color: #FFFFFFFF;\">Phys. SCH</span>.",
         "cost": [
           {
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "Regenbogentechnik",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Nach Standardangriffen deiner Figuren:</span> Verursacht 2 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Nach Standardangriffen deiner Figuren:</span> Verursacht 1 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 3</span>"
         }
       }
     ]
@@ -517,7 +585,7 @@
           "_id": 112031,
           "id": "reflection",
           "name": "Trugbild",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Erleidet deine aktive Figur SCH,</span> wird 1 Pkt. SCH abgewehrt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 1</span>. Ist sie aufgebraucht, wird die Karte nicht abgeworfen.\\n<span style=\"color: #FFFFFFFF;\">Endphase:</span> Verursacht 1 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span> beim Abwerfen dieser Karte."
+          "desc": "<span style=\"color: #FFFFFFFF;\">Erleidet deine aktive Figur SCH:</span> Wehrt 1 Pkt. SCH ab.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 1</span>. Ist sie aufgebraucht, wird die entsprechende Karte nicht abgeworfen.\\n<span style=\"color: #FFFFFFFF;\">Endphase:</span> Verursacht 1 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span> beim Abwerfen dieser Karte."
         }
       },
       {
@@ -548,6 +616,142 @@
         "name": "Irreführende Strömung",
         "desc": "Passiv – <span style=\"color: #FFFFFFFF;\">Beim Wechseln deiner Figuren, wenn aber Mona jetzt die aktive Figur ist:</span> Dieser Wechsel gilt nicht als „<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>“, sondern als „<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schnellaktion</span>“ (1-mal pro Runde).",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Sangonomiya Kokomi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "Standardangriff",
+        "name": "Form des Wassers",
+        "desc": "Verursacht 1 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span>|s1:<span style=\"color: #80C0FFFF;\">Hydro-SCH</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "Elementarfähigkeit",
+        "name": "Eid des Kurage",
+        "desc": "Verleiht der Figur das <span style=\"color: #80C0FFFF;\">Hydro-Attribut</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Bakekurage</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "Bakekurage",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Endphase:</span> Verursacht 1 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span>. Stellt deiner aktiven Figur 1 LP wieder her.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "Spezialfähigkeit",
+        "name": "Nereidenaufstieg",
+        "desc": "Verursacht 3 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span>|s1:<span style=\"color: #80C0FFFF;\">Hydro-SCH</span>, stellt all deinen Figuren 1 LP wieder her und erhält selbst <span style=\"color: #FFFFFFFF;\">Rituelles Federkleid</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Rituelles Federkleid",
+          "desc": "SCH der <span style=\"color: #FFFFFFFF;\">Standardangriffe</span> durch die hiermit ausgerüstete Figur +1.\\nStellt <span style=\"color: #FFFFFFFF;\">nach 1 Standardangriff der hiermit ausgerüsteten Figur</span> all deinen Figuren 1 LP wieder her.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Kamisato Ayato",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "Standardangriff",
+        "name": "Kamisato-Stil – Marobashi",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #FFFFFFFF;\">Physischer Schaden</span>|s1:<span style=\"color: #FFFFFFFF;\">phys. SCH</span>|s2:<span style=\"color: #FFFFFFFF;\">Phys. SCH</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "Elementarfähigkeit",
+        "name": "Kamisato-Stil – Kyouka",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span>|s1:<span style=\"color: #80C0FFFF;\">Hydro-SCH</span>, erhält selbst <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Takimeguri Kanka",
+          "desc": "SCH der <span style=\"color: #FFFFFFFF;\">Standardangriffe</span> durch die hiermit ausgerüstete Figur +1, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch sie wird nun <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "Spezialfähigkeit",
+        "name": "Kamisato-Stil – Suiyuu",
+        "desc": "Verursacht 3 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span>|s1:<span style=\"color: #80C0FFFF;\">Hydro-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Garten der Reinheit</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Garten der Reinheit",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Endphase:</span> Verursacht 2 Pkt. <span style=\"color: #80C0FFFF;\">Hydro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">Ist diese Beschwörung auf dem Spielfeld:</span> Erhöht den SCH der Standardangriffe deiner Figuren zusätzlich um 1."
+        }
       }
     ]
   },
@@ -608,7 +812,7 @@
           "_id": 113011,
           "id": "pyro_infusion",
           "name": "Pyro-Kraft",
-          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch die Figuren mit dem Attribut wird nun <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch die Figuren mit diesem Attribut wird nun <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span>: 2</span>"
         }
       }
     ]
@@ -784,7 +988,7 @@
           "_id": 113051,
           "id": "niwabi_enshou",
           "name": "Niwabi Enshou",
-          "desc": "SCH der <span style=\"color: #FFFFFFFF;\">Standardangriffe</span> durch die davon betroffene Figur +1, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch sie wird nun <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
+          "desc": "SCH der <span style=\"color: #FFFFFFFF;\">Standardangriffe</span> durch die damit ausgerüstete Figur +1, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch sie wird nun <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
         }
       },
       {
@@ -852,7 +1056,7 @@
           "_id": 113061,
           "id": "explosive_spark",
           "name": "Explosiver Funke",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Führt die davon betroffene Figur <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Heftiger Schlag</span> aus:</span> <span style=\"color: #FF9999FF;\">Pyro</span>-Verbrauch -1, verursachter SCH +1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 1</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Führt die damit ausgerüstete Figur <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Heftiger Schlag</span> aus:</span> <span style=\"color: #FF9999FF;\">Pyro</span>-Verbrauch -1, verursachter SCH +1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 1</span>"
         }
       },
       {
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Funkelfunken",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden einer Fähigkeit deiner Figuren:</span> Fügt deiner aktiven Figur 2 Pkt. <span style=\"color: #FF9999FF;\">Pyro-Schaden</span> zu.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden einer Fähigkeit der Figuren der hiervon betroffenen Seite:</span> Fügt der aktiven Figur der hiervon betroffenen Seite 2 Pkt. <span style=\"color: #FF9999FF;\">Pyro-Schaden</span> zu.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
         }
       }
     ]
@@ -998,7 +1202,7 @@
           "_id": 114021,
           "id": "the_wolf_within",
           "name": "Blitzwolf",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden der Standardangriffe/Elementarfähigkeiten deiner davon betroffenen Figur:</span> Verursacht 2 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden der Standardangriffe/Elementarfähigkeiten deiner damit ausgerüsteten Figur:</span> Verursacht 2 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span>: 2</span>"
         }
       }
     ]
@@ -1153,7 +1357,7 @@
       {
         "_id": 14051,
         "type": "Standardangriff",
-        "name": "Meeresbezwinger",
+        "name": "Vorstoß aus der Brandung",
         "desc": "Verursacht 2 Pkt. <span style=\"color: #FFFFFFFF;\">Physischer Schaden</span>|s1:<span style=\"color: #FFFFFFFF;\">phys. SCH</span>|s2:<span style=\"color: #FFFFFFFF;\">Phys. SCH</span>.",
         "cost": [
           {
@@ -1181,7 +1385,7 @@
           "_id": 114051,
           "id": "tidecaller_surf_embrace",
           "name": "Wellenfänger – Umarmende Brandung",
-          "desc": "Diese Figur wird bei ihrer nächsten Aktion sofort die Fähigkeit <span style=\"color: #FFFFFFFF;\">Wellenfänger</span> anwenden.\\nWährend der Vorbereitungszeit: Verleiht der davon betroffenen Figur 2 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schild</span>."
+          "desc": "Diese Figur wird bei ihrer nächsten Aktion sofort die Fähigkeit <span style=\"color: #FFFFFFFF;\">Wellenfänger</span> anwenden.\\nWährend der Vorbereitungszeit: Verleiht der damit ausgerüsteten Figur 2 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schild</span>."
         }
       },
       {
@@ -1212,6 +1416,74 @@
         "name": "Gebieter der Gezeiten",
         "desc": "(Die Vorbereitung dauert 1 Zug)\\nVerursacht 2 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>|s1:<span style=\"color: #FFACFFFF;\">Elektro-SCH</span>.",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Kujou Sara",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "Standardangriff",
+        "name": "Tengu-Schießkunst",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #FFFFFFFF;\">Physischer Schaden</span>|s1:<span style=\"color: #FFFFFFFF;\">phys. SCH</span>|s2:<span style=\"color: #FFFFFFFF;\">Phys. SCH</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "Elementarfähigkeit",
+        "name": "Tengu-Sturmbeschwörung",
+        "desc": "Verursacht 1 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>|s1:<span style=\"color: #FFACFFFF;\">Elektro-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Tengu Juurai – Hinterhalt</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Tengu Juurai – Hinterhalt",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Endphase:</span> Verursacht 1 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>. Verleiht deiner aktiven Figur <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kraft der Krähenfeder</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "Spezialfähigkeit",
+        "name": "Unterwerfung – Koukou Sendou",
+        "desc": "Verursacht 1 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>|s1:<span style=\"color: #FFACFFFF;\">Elektro-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Tengu Juurai – Blitzbündel</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Tengu Juurai – Blitzbündel",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Endphase:</span> Verursacht 2 Pkt. <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span>. Verleiht deiner aktiven Figur <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kraft der Krähenfeder</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
+        }
       }
     ]
   },
@@ -1319,7 +1591,7 @@
         "_id": 15023,
         "type": "Spezialfähigkeit",
         "name": "Löwenzahnbrise",
-        "desc": "Stellt allen deinen Figuren 2 LP wieder her, erschafft 1 <span style=\"color: #FFFFFFFF;\">Löwenzahnfeld</span>.",
+        "desc": "Stellt all deinen Figuren 2 LP wieder her, erschafft 1 <span style=\"color: #FFFFFFFF;\">Löwenzahnfeld</span>.",
         "cost": [
           {
             "type": "anemo",
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Arataki Itto",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "Standardangriff",
+        "name": "Lärmende Legende",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #FFFFFFFF;\">Physischer Schaden</span>|s1:<span style=\"color: #FFFFFFFF;\">phys. SCH</span>|s2:<span style=\"color: #FFFFFFFF;\">Phys. SCH</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "Elementarfähigkeit",
+        "name": "Masatsu Zetsugi – Akaushi-Wurf!",
+        "desc": "Verursacht 1 Pkt. <span style=\"color: #FFE699FF;\">Geo-Schaden</span>|s1:<span style=\"color: #FFE699FF;\">Geo-SCH</span>, erschafft 1 <span style=\"color: #FFFFFFFF;\">Ushi</span>, erhält selbst <span style=\"color: #FFFFFFFF;\">Superstarke Superkraft</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Ushi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Erleidet deine aktive Figur SCH:</span> Wehrt 1 Pkt. SCH ab.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 1</span>. Ist sie aufgebraucht, wird die entsprechende Karte nicht abgeworfen.\\n<span style=\"color: #FFFFFFFF;\">Während diese Beschwörung auf dem Spielfeld ist, kann der folgende Effekt 1-mal ausgelöst werden:</span> Verleiht Arataki Itto <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superstarke Superkraft</span>, nachdem deine aktive Figur SCH erlitten hat.\\n<span style=\"color: #FFFFFFFF;\">Endphase:</span> Verursacht 1 Pkt. <span style=\"color: #FFE699FF;\">Geo-Schaden</span> beim Abwerfen dieser Karte."
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "Spezialfähigkeit",
+        "name": "Schrecklicher Oni-König – Itto bricht vor!",
+        "desc": "Verursacht 5 Pkt. <span style=\"color: #FFE699FF;\">Geo-Schaden</span>|s1:<span style=\"color: #FFE699FF;\">Geo-SCH</span>, erhält selbst <span style=\"color: #FFFFFFFF;\">Wütender Oni-König</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Wütender Oni-König",
+          "desc": "SCH der <span style=\"color: #FFFFFFFF;\">Standardangriffe</span> durch die hiermit ausgerüstete Figur +2, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch sie wird nun <span style=\"color: #FFE699FF;\">Geo-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span>: 2</span>\\n<span style=\"color: #FFFFFFFF;\">Nach 1 Standardangriff durch diese Figur:</span> Verleiht ihr <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superstarke Superkraft</span> (1-mal pro Runde)."
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1534,6 +1874,68 @@
           "name": "Cuilein-Anbar",
           "desc": "<span style=\"color: #FFFFFFFF;\">Endphase:</span> Verursacht 2 Pkt. <span style=\"color: #7EC236FF;\">Dendro-Schaden</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Tighnari",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "Standardangriff",
+        "name": "Khanda-Barrieren-Zerstörer",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #FFFFFFFF;\">Physischer Schaden</span>|s1:<span style=\"color: #FFFFFFFF;\">phys. SCH</span>|s2:<span style=\"color: #FFFFFFFF;\">Phys. SCH</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "Elementarfähigkeit",
+        "name": "Vijnana-Phala-Mine",
+        "desc": "Verursacht 2 Pkt. <span style=\"color: #7EC236FF;\">Dendro-Schaden</span>|s1:<span style=\"color: #7EC236FF;\">Dendro-SCH</span>, erhält selbst <span style=\"color: #FFFFFFFF;\">Vijnana-Durchbruch</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Vijnana-Durchbruch",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Führt die hiermit ausgerüstete Figur <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Heftiger Schlag</span> aus:</span> <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch sie wird nun <span style=\"color: #7EC236FF;\">Dendro-Schaden</span>, erschafft nach Auswertung der Fähigkeit <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Khanda-Blütenpfeil</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "Spezialfähigkeit",
+        "name": "Des Erschaffers Schlingstängel-Pfeil",
+        "desc": "Verursacht 4 Pkt. <span style=\"color: #FFFFFFFF;\">Physischer Schaden</span>|s1:<span style=\"color: #FFFFFFFF;\">phys. SCH</span>|s2:<span style=\"color: #FFFFFFFF;\">Phys. SCH</span>, fügt allen inaktiven Figuren des Gegners 1 Pkt. <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durchdringender Schaden</span></span> zu.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
       }
     ]
   },
@@ -1720,7 +2122,7 @@
           "_id": 123011,
           "id": "stealth",
           "name": "Einschleichen",
-          "desc": "SCH an der davon betroffenen Figur -1, SCH durch sie +1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2"
+          "desc": "SCH an der damit ausgerüsteten Figur -1, SCH durch sie +1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2"
         }
       },
       {
@@ -1749,7 +2151,7 @@
           "_id": 123011,
           "id": "stealth",
           "name": "Einschleichen",
-          "desc": "SCH an der davon betroffenen Figur -1, SCH durch sie +1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2"
+          "desc": "SCH an der damit ausgerüsteten Figur -1, SCH durch sie +1.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 2"
         }
       }
     ]
@@ -1898,7 +2300,7 @@
           "_id": 126011,
           "id": "stonehide",
           "name": "Steinhaut",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Erleidet die davon betroffene Figur SCH:</span> Wehrt 1 Pkt. SCH ab. Abwehr von Geo-SCH kostet zusätzlich 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Erleidet die damit ausgerüstete Figur SCH:</span> Wehrt 1 Pkt. SCH ab. Abwehr von Geo-SCH kostet zusätzlich 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 3</span>"
         }
       }
     ]
@@ -2055,7 +2457,27 @@
           "count": 2
         }
       ],
-      "desc": "Erschafft <span style=\"color: #FFFFFFFF;\">Kamisato Ayaka</span> ausgerüstet mit dieser Karte die <span style=\"color: #FFFFFFFF;\">Kryo-Kraft</span>, <span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">Kryo-Schaden</span></span> durch die davon betroffene Figur +1.\\nBeim Einwechseln von Kamisato Ayaka, die diese Karte angelegt hat: Elementarwürfel-Verbrauch -1 (1-mal pro Runde).\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Kamisato Ayaka enthält.)"
+      "desc": "Verleiht <span style=\"color: #FFFFFFFF;\">Kamisato Ayaka</span> ausgerüstet mit dieser Karte die <span style=\"color: #FFFFFFFF;\">Kryo-Kraft</span>, <span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">Kryo-Schaden</span></span> durch die damit ausgerüstete Figur +1.\\nBeim Einwechseln von Kamisato Ayaka, die diese Karte angelegt hat: Elementarwürfel-Verbrauch -1 (1-mal pro Runde).\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Kamisato Ayaka enthält.)"
+    }
+  },
+  {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Sprudelnde Kampflust",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Eula</span>, ist diese Karte anzulegen.\\nLegt Eula sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Sprudelnde Kampflust</span> angewendet.\\nWendet Eula ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Sprudelnde Kampflust</span> an: Verleiht <span style=\"color: #FFFFFFFF;\">Schwert des Lichtfalls</span> zusätzlich 1 Energie-Stapelung.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Eula enthält.)"
     }
   },
   {
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Mona</span>, ist diese Karte anzulegen.\\nLegt Mona sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Prophezeiung des Untergangs</span> angewendet.\\nIst Mona ausgerüstet mit dieser Karte deine aktive Figur: Erhöht den SCH der <span style=\"color: #80C0FFFF;\">Hydro-Reaktionen</span> durch deine Figuren zusätzlich um 2 Pkt.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Mona enthält.)"
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Tamanooyas Kästchen",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Sangonomiya Kokomi</span>, ist diese Karte anzulegen.\\nLegt Sangonomiya Kokomi sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Tamanooyas Kästchen</span> angewendet.\\nWendet Sangonomiya Kokomi ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Tamanooyas Kästchen</span> an: Setzt, wenn <span style=\"color: #FFFFFFFF;\">Bakekurage</span> auf dem Spielfeld ist, seine <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span> zurück.\\nSolange <span style=\"color: #FFFFFFFF;\">Rituelles Federkleid</span> auf dem Spielfeld ist: SCH von <span style=\"color: #FFFFFFFF;\">Bakekurage</span> +1.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Sangonomiya Kokomi enthält.)"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Kyouka Fuushi",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Kamisato Ayato</span>, ist diese Karte anzulegen.\\nLegt Kamisato Ayato sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Kyouka Fuushi</span> angewendet.\\nLöst Kamisato Ayato ausgerüstet mit dieser Karte den Effekt von <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span> aus: Erhöht seinen SCH an gegnerischen Figuren mit nicht mehr als 6 LP zusätzlich um 1 Pkt.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Kamisato Ayato enthält.)"
     }
   },
   {
@@ -2239,7 +2697,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Keqing</span>, ist diese Karte anzulegen.\\nLegt Keqing sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Donnernde Strafe</span> angewendet.\\nErschafft Keqing ausgerüstet mit dieser Karte 1 <span style=\"color: #FFFFFFFF;\">Elektro-Kraft</span>:\\nSeine anfängliche <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span> +1, <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span> durch die davon betroffene Figur +1.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Keqingenthält.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Keqing</span>, ist diese Karte anzulegen.\\nLegt Keqing sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Donnernde Strafe</span> angewendet.\\nVerleiht Keqing ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Elektro-Kraft</span>:\\nIhre anfängliche <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dauer (Runden)</span> +1, <span style=\"color: #FFACFFFF;\">Elektro-Schaden</span> durch die damit ausgerüstete Figur +1.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Keqing enthält.)"
     }
   },
   {
@@ -2271,7 +2729,27 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Beidou</span>, ist diese Karte anzulegen.\\nLegt Beidou sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Donnern am Firmament</span> angewendet.\\nWendet Beidou ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Donnern am Firmament</span> an: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span>-Verbrauch für Standardangriffe durch Beidou in dieser Runde -1, wenn sie beim <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Vorbereiten der Fähigkeiten</span> SCH erlitten hat (Einsatzmöglichkeit: 2).\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Beidou enthält.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Beidou</span>, ist diese Karte anzulegen.\\nLegt Beidou sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Donnern am Firmament</span> angewendet.\\nWendet Beidou ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Donnern am Firmament</span> an: In dieser Runde wird für Standardangriffe durch Beidou 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span> weniger verbraucht, wenn sie beim <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Vorbereiten der Fähigkeiten</span> SCH erlitten hat (Einsatzmöglichkeit: 2).\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Beidou enthält.)"
+    }
+  },
+  {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Sünde des Stolzes",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Kujou Sara</span>, ist diese Karte anzulegen.\\nLegt Kujou Sara sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Sünde des Stolzes</span> angewendet.\\nErhöht den SCH der <span style=\"color: #FFFFFFFF;\">Elementarfähigkeit</span> und <span style=\"color: #FFFFFFFF;\">Spezialfähigkeit</span> deiner mit <span style=\"color: #FFFFFFFF;\">Kraft der Krähenfeder</span> ausgerüsteten <span style=\"color: #FFACFFFF;\">Elektro</span>-Figur zusätzlich um 1 Pkt, wenn die mit dieser Karte ausgerüstete Kujou Sara auf dem Spielfeld ist.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Kujou Sara enthält.)"
     }
   },
   {
@@ -2347,6 +2825,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Arataki Ichiban",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Arataki Itto</span>, ist diese Karte anzulegen.\\nLegt Arataki Itto sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Arataki Ichiban</span> angewendet.\\nAb dem 2. Mal in jeder Runde, dass Arataki Itto ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Arataki Ichiban</span> anwendet: Erhöht, wenn dabei <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superstarke Superkraft</span> ausgelöst wird, den SCH zusätzlich um 1 Pkt.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Arataki Itto enthält.)"
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Collei</span>, ist diese Karte anzulegen.\\nLegt Collei sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Wiederkehr des fliegenden Laubs</span> angewendet.\\nNachdem Collei ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Wiederkehr des fliegenden Laubs</span> angewendet hat und Fähigkeiten deiner Figuren in derselben Runde <span style=\"color: #7EC236FF;\">Dendro-Reaktionen</span> ausgelöst haben: Verursacht 1 Pkt. <span style=\"color: #7EC236FF;\">Dendro-Schaden</span> (1-mal pro Runde).\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Collei enthält.)"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Scharfblick",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Tighnari</span>, ist diese Karte anzulegen.\\nLegt Tighnari sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Scharfblick</span> angewendet.\\nBefindet sich Tighnari ausgerüstet mit dieser Karte im Zustand <span style=\"color: #FFFFFFFF;\">Vijnana-Durchbruch</span>, wird für <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Heftiger Schlag</span> durch diese Figur 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span> weniger verbraucht.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Tighnari enthält.)"
     }
   },
   {
@@ -2411,7 +2925,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Fatui – Pyro-Schuldeneintreiber</span>, ist diese Karte anzulegen.\\nLegt Fatui – Pyro-Schuldeneintreiber sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Komplett beglichen</span> angewendet.\\nErschafft Fatui – Pyro-Schuldeneintreiber ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Einschleichen</span>:\\nSeine <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span> +1. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch die davon betroffene Figur wird nun <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Fatui – Pyro-Schuldeneintreiber enthält.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>: Ist deine aktive Figur <span style=\"color: #FFFFFFFF;\">Fatui – Pyro-Schuldeneintreiber</span>, ist diese Karte anzulegen.\\nLegt Fatui – Pyro-Schuldeneintreiber sie an, wird sofort 1-mal <span style=\"color: #FFD780FF;\">Komplett beglichen</span> angewendet.\\nErschafft Fatui – Pyro-Schuldeneintreiber ausgerüstet mit dieser Karte <span style=\"color: #FFFFFFFF;\">Einschleichen</span>:\\nSeine <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span> +1. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> durch die damit ausgerüstete Figur wird nun <span style=\"color: #FF9999FF;\">Pyro-Schaden</span>.\\n(Diese Karte kann nur einem Deck hinzugefügt werden, das Fatui – Pyro-Schuldeneintreiber enthält.)"
     }
   },
   {
@@ -2628,7 +3142,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">SCH durch die Figur +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Beim Ausspielen:</span> Verleiht der damit ausgerüsteten Figur für jede Figur aus Liyue in der Truppe <span style=\"color: #FFFFFFFF;\">1 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schild</span></span> (max. 3 Pkt.).\\n(Nur für <span style=\"color: #FFFFFFFF;\">Stangenwaffennutzer</span> anlegbar, und zwar max. 1 Waffe.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">SCH durch die Figur +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Beim Ausspielen:</span> Verleiht der hiermit ausgerüsteten Figur für jede Figur aus Liyue in der Truppe <span style=\"color: #FFFFFFFF;\">1 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schild</span></span> (max. 3 Pkt.).\\n(Nur für <span style=\"color: #FFFFFFFF;\">Stangenwaffennutzer</span> anlegbar, und zwar max. 1 Waffe.)"
     }
   },
   {
@@ -2692,6 +3206,21 @@
     }
   },
   {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Favonius-Schwert",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">SCH durch die Figur +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Nach Anwenden der Elementarfähigkeit durch die Figur:</span> Verleiht dieser Figur zusätzlich 1 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aufladung</span> (1-mal pro Runde).\\n(Nur für <span style=\"color: #FFFFFFFF;\">Einhändernutzer</span> anlegbar, und zwar max. 1 Waffe.)"
+    }
+  },
+  {
     "_id": 312001,
     "id": "adventurers_bandana",
     "type": "artifact",
@@ -2733,7 +3262,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden von Spezialfähigkeiten durch die Figur:</span> Stellt allen deiner Figuren 1 LP wieder her (1-mal pro Runde).\\n(Jede Figur kann max. 1 Artefakt anlegen.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden von Spezialfähigkeiten durch die Figur:</span> Stellt all deinen Figuren 1 LP wieder her (1-mal pro Runde).\\n(Jede Figur kann max. 1 Artefakt anlegen.)"
     }
   },
   {
@@ -2748,7 +3277,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Wird eine gegnerische Figur ausgeschaltet:</span> Erschafft 2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni-Würfel</span>.\\n(Jede Figur kann max. 1 Artefakt anlegen.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Wird eine gegnerische Figur ausgeschaltet:</span> Erschafft 2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni-Würfel</span>, wenn die damit ausgerüstete Figur aktiv ist.\\n(Jede Figur kann max. 1 Artefakt anlegen.)"
     }
   },
   {
@@ -2782,6 +3311,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "Verzierter Helm",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden von Spezialfähigkeiten durch deine anderen Figuren:</span> Verleiht der hiermit ausgerüsteten Figur 1 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Aufladung</span>.\\n(Jede Figur kann max. 1 Artefakt anlegen.)"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "Generalshelm",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "Verleiht <span style=\"color: #FFFFFFFF;\">zu Beginn der Zugphase</span> der hiermit ausgerüsteten Figur <span style=\"color: #FFFFFFFF;\">Unbeirrbare Gipfel</span>. (Verleiht dieser Figur 2 Pkt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schild</span>.)\\n(Jede Figur kann max. 1 Artefakt anlegen.)"
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Großer Narukami-Schrein",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Wird automatisch 1-mal pro Runde ausgelöst:</span> Erschafft 1 Würfel zufälligen Elements.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Einsatzmöglichkeit</span>: 3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Beim Wechseln deiner Figuren:</span> Dieser Wechsel gilt nicht als „<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kampfaktion</span>“, sondern als „<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Schnellaktion</span>“ (1-mal pro Runde)."
@@ -3198,7 +3772,7 @@
     "name": "Chang IX.",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden der Fähigkeiten einer Figur auf dem Spielfeld:</span> Hat sie <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> oder <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durchdringender Schaden</span> verursacht oder <span style=\"color: #FFFFFFFF;\">Elementarreaktionen</span> ausgelöst, sammelt <span style=\"color: #FFFFFFFF;\">1 Einfall</span>.\\nWenn 3 Einfälle gesammelt, wird diese Karte abgeworfen: Zieht 2 Karten."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Nach Anwenden der Fähigkeiten einer Figur auf dem Spielfeld:</span> Hat sie <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physischer Schaden</span> oder <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durchdringender Schaden</span> verursacht oder <span style=\"color: #FFFFFFFF;\">Elementarreaktionen</span> ausgelöst, sammelt <span style=\"color: #FFFFFFFF;\">1 Einfall</span>.\\nWenn <span style=\"color: #FFFFFFFF;\">3 Einfälle</span> gesammelt, wird diese Karte abgeworfen: Zieht 2 Karten."
     }
   },
   {
@@ -3707,7 +4281,7 @@
     "name": "Räuchergeflügel nach Art des Nordens",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span>-Verbrauch für den nächsten <span style=\"color: #FFFFFFFF;\">Standardangriff</span> durch die gewählte Figur in dieser Runde -1.\\n(Jede Figur kann max. 1-mal pro Runde Gericht essen.)"
+      "desc": "In dieser Runde wird für den nächsten <span style=\"color: #FFFFFFFF;\">Standardangriff</span> durch die gewählte Figur 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span> weniger verbraucht.\\n(Jede Figur kann max. 1-mal pro Runde Gericht essen.)"
     }
   },
   {
@@ -3762,7 +4336,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span> -Verbrauch für die nächsten 3 <span style=\"color: #FFFFFFFF;\">Standardangriffe</span> durch die gewählte Figur vor Ende dieser Runde -1.\\n(Jede Figur kann max. 1-mal pro Runde Gericht essen.)"
+      "desc": "Vor Ende dieser Runde wird für die nächsten 3 <span style=\"color: #FFFFFFFF;\">Standardangriffe</span> durch die gewählte Figur 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Würfel (beliebig)</span> weniger verbraucht.\\n(Jede Figur kann max. 1-mal pro Runde Gericht essen.)"
     }
   }
 ]

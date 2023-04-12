@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Eula",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "Ataque Normal",
+        "name": "Técnica de espada Favonius: Nobleza",
+        "desc": "Inflige 2 pts. de <span style=\"color: #FFFFFFFF;\">Daño Físico</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "Habilidad Elemental",
+        "name": "Vórtice helado",
+        "desc": "Inflige 2 pts. de <span style=\"color: #99FFFFFF;\">Daño Cryo</span> y obtiene el efecto de <span style=\"color: #FFFFFFFF;\">Corazón impasible</span> si el personaje aún no lo tiene.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Corazón impasible",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje que obtenga este efecto use Vórtice helado</span>, se libera de este estado e inflige daño +2."
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "Habilidad Definitiva",
+        "name": "Fulgor glacial",
+        "desc": "Inflige 2 pts. de <span style=\"color: #99FFFFFF;\">Daño Cryo</span> e invoca una <span style=\"color: #FFFFFFFF;\">Espada luminosa</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Espada luminosa",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Cuando Eula use el Ataque Normal o la Habilidad Elemental</span>, esta carta acumula 2 cargas de energía, pero Eula no obtendrá Energía.\\n<span style=\"color: #FFFFFFFF;\">Fase final:</span> descarta esta carta e inflige 2 pts. de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Daño Físico</span>. Por cada carga de energía acumulada, inflige daño +1.\\nLos efectos que influyan en el número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> de esta carta se aplicarán a las <span style=\"color: #FFFFFFFF;\">cargas de energía acumuladas</span>."
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -456,7 +524,7 @@
         "_id": 12023,
         "type": "Habilidad Definitiva",
         "name": "Sable de lluvia",
-        "desc": "Inflige 1 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> y crea una <span style=\"color: #FFFFFFFF;\">Espada arcoíris</span>.",
+        "desc": "Inflige 1 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span>. Recibe una <span style=\"color: #80C0FFFF;\">Aplicación Hydro</span> y crea una <span style=\"color: #FFFFFFFF;\">Espada arcoíris</span>.",
         "cost": [
           {
             "type": "hydro",
@@ -466,13 +534,7 @@
             "type": "energy",
             "count": 2
           }
-        ],
-        "sub": {
-          "_id": 112022,
-          "id": "rainbow_bladework",
-          "name": "Espada arcoíris",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Tras ejecutar un Ataque Normal</span>, tu personaje en combate inflige 2 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 3</span>."
-        }
+        ]
       }
     ]
   },
@@ -552,6 +614,136 @@
     ]
   },
   {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Sangonomiya Kokomi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "Ataque Normal",
+        "name": "La forma del agua",
+        "desc": "Inflige 1 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "Habilidad Elemental",
+        "name": "Juramento de la medusa",
+        "desc": "El personaje recibe una <span style=\"color: #80C0FFFF;\">Aplicación Hydro</span> e invoca una <span style=\"color: #FFFFFFFF;\">Medusa</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ]
+      },
+      {
+        "_id": 12053,
+        "type": "Habilidad Definitiva",
+        "name": "Encarnación de las nereidas",
+        "desc": "Inflige 3 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span>. Todos tus personajes obtienen Vida +1. Este personaje obtiene el efecto de <span style=\"color: #FFFFFFFF;\">Manto ceremonial</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Manto ceremonial",
+          "desc": "El <span style=\"color: #FFFFFFFF;\">Ataque Normal</span> del personaje que obtiene este efecto inflige daño +1.\\n<span style=\"color: #FFFFFFFF;\">Cuando dicho personaje ejecuta un Ataque Normal</span>, todos tus personajes obtienen Vida +1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duración de rondas</span>：2</span>."
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Kamisato Ayato",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "Ataque Normal",
+        "name": "Estilo Kamisato - Marobashi",
+        "desc": "Inflige 2 pts. de <span style=\"color: #FFFFFFFF;\">Daño Físico</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "Habilidad Elemental",
+        "name": "Estilo Kamisato: Belleza reflejada",
+        "desc": "Inflige 2 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> y este personaje entra en el estado de <span style=\"color: #FFFFFFFF;\">Reflejo torrencial</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Reflejo torrencial",
+          "desc": "Daño de <span style=\"color: #FFFFFFFF;\">Ataque Normal</span> +1. El <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Daño Físico</span> se convierte en <span style=\"color: #80C0FFFF;\">Daño Hydro</span>. \\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>."
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "Habilidad Definitiva",
+        "name": "Estilo Kamisato: Jardín ácueo",
+        "desc": "Inflige 3 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> e invoca un <span style=\"color: #FFFFFFFF;\">Jardín de paz</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Jardín de paz",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase final:</span> inflige 2 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>.\\n\\n<span style=\"color: #FFFFFFFF;\">Cuando esta invocación está en juego</span>, daño de Ataque Normal de tu personaje +1."
+        }
+      }
+    ]
+  },
+  {
     "_id": 1301,
     "id": "diluc",
     "type": "character",
@@ -626,7 +818,7 @@
       {
         "_id": 13021,
         "type": "Ataque Normal",
-        "name": "Kung-Fu pasta",
+        "name": "Kung-fu pasta",
         "desc": "Inflige 2 pts. de <span style=\"color: #FFFFFFFF;\">Daño Físico</span>.",
         "cost": [
           {
@@ -874,7 +1066,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Chispas explosivas",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Cuando tu personaje usa una habilidad</span>, inflige 2 pts. de <span style=\"color: #FF9999FF;\">Daño Pyro</span> a tu personaje en combate.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>."
+          "desc": "<span style=\"color: #FFFFFFFF;\">Cuando un personaje del equipo usa una habilidad</span>, inflige 2 pts. de <span style=\"color: #FF9999FF;\">Daño Pyro</span> al personaje en combate de dicho equipo.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>."
         }
       }
     ]
@@ -1216,6 +1408,74 @@
     ]
   },
   {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Kujou Sara",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "Ataque Normal",
+        "name": "Técnica de arco Tengu",
+        "desc": "Inflige 2 pts. de <span style=\"color: #FFFFFFFF;\">Daño Físico</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "Habilidad Elemental",
+        "name": "Electroinvocación tengu",
+        "desc": "Inflige 1 pts. de <span style=\"color: #FFACFFFF;\">Daño Electro</span> y causa una <span style=\"color: #FFFFFFFF;\">Maldición tengu: emboscada</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Maldición tengu: emboscada",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase final:</span> inflige 1 pt. de <span style=\"color: #FFACFFFF;\">Daño Electro</span> y tu personaje en combate obtiene un <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Amparo plumífero</span>.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 1</span>."
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "Habilidad Definitiva",
+        "name": "Aplacamiento: Camino de la luz",
+        "desc": "Inflige 1 pts. de <span style=\"color: #FFACFFFF;\">Daño Electro</span> y causa una <span style=\"color: #FFFFFFFF;\">Maldición tengu: tormenta pétrea</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Maldición tengu: tormenta pétrea",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase final:</span> inflige 2 pts. de <span style=\"color: #FFACFFFF;\">Daño Electro</span> y tu personaje en combate obtiene un <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Amparo plumífero</span>.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>."
+        }
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1476,6 +1736,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Arataki Itto",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "Ataque Normal",
+        "name": "Héroe del combate",
+        "desc": "Inflige 2 pts. de <span style=\"color: #FFFFFFFF;\">Daño Físico</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "Habilidad Elemental",
+        "name": "Exterminio del mal: ¡Embestida taurina!",
+        "desc": "Inflige 1 pts. de <span style=\"color: #FFE699FF;\">Daño Geo</span> e invoca a <span style=\"color: #FFFFFFFF;\">Ushi</span>. Este personaje obtiene una carga de <span style=\"color: #FFFFFFFF;\">Fuerza sobrenatural</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Ushi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Cuando tu personaje en combate recibe daño</span>, se mitiga 1 pt. de ese daño.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 1</span>. Al consumir los usos, la carta no es descartada.\\n<span style=\"color: #FFFFFFFF;\">Mientras esta carta de invocación esté en juego, se puede activar una vez el siguiente efecto: </span>después de que el personaje en combate reciba daño, otorga a Arataki Itto una carga de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fuerza sobrenatural</span>.\\n<span style=\"color: #FFFFFFFF;\">Fase final:</span> descarta esta carta e inflige 1 pt. de <span style=\"color: #FFE699FF;\">Daño Geo</span>."
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "Habilidad Definitiva",
+        "name": "Rey oni maligno: ¡Itto contra todos!",
+        "desc": "Inflige 5 pts. de <span style=\"color: #FFE699FF;\">Daño Geo</span> y este personaje entra en el estado de <span style=\"color: #FFFFFFFF;\">Rey oni enfurecido</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Rey oni enfurecido",
+          "desc": "Daño de <span style=\"color: #FFFFFFFF;\">Ataque Normal</span> +2. El <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Daño Físico</span> se convierte en <span style=\"color: #FFE699FF;\">Daño Geo</span>. \\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duración de rondas</span>: 2</span>.\\n<span style=\"color: #FFFFFFFF;\">Tras ejecutar un Ataque Normal</span>, tu personaje obtiene una carga de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fuerza sobrenatural</span> (1 vez por ronda)."
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1538,6 +1866,68 @@
     ]
   },
   {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Tignari",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "Ataque Normal",
+        "name": "Khanda rompebarreras",
+        "desc": "Inflige 2 pts. de <span style=\"color: #FFFFFFFF;\">Daño Físico</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "Habilidad Elemental",
+        "name": "Frutos del vijñana",
+        "desc": "Inflige 2 pts. de <span style=\"color: #7EC236FF;\">Daño Dendro</span> y este personaje entra en el estado de <span style=\"color: #FFFFFFFF;\">Perforación vijñana</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Perforación vijñana",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el personaje afectado ejecuta un <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ataque Cargado</span></span>, el <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Daño Físico</span> infligido se convierte en <span style=\"color: #7EC236FF;\">Daño Dendro</span> y, tras finalizar la habilidad, invoca unas <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Flechas de inflorescencia</span>.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>."
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "Habilidad Definitiva",
+        "name": "Flecha enredadora artificial",
+        "desc": "Inflige 4 pts. de <span style=\"color: #FFFFFFFF;\">Daño Físico</span>, así como <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Daño Penetrante</span></span> +1 contra todos los personajes en reserva enemigos.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
     "_id": 2201,
     "id": "rhodeia_of_loch",
     "type": "character",
@@ -1567,7 +1957,7 @@
         "_id": 22012,
         "type": "Habilidad Elemental",
         "name": "Invocación hidromimética",
-        "desc": "Crea 1 <span style=\"color: #FFFFFFFF;\">Animal hidromimético</span> al azar. Priorizará la creación de un tipo diferente a los ya existentes.",
+        "desc": "Crea 1 <span style=\"color: #FFFFFFFF;\">Animal Hidromimético</span> al azar. Priorizará la creación de un tipo diferente a los ya existentes.",
         "cost": [
           {
             "type": "hydro",
@@ -1577,21 +1967,27 @@
         "sub": {
           "_id": 122010,
           "id": "oceanid_mimic",
-          "name": "Animal hidromimético",
-          "desc": "Hay 3 tipos de animales hidromiméticos:\\n<span style=\"color: #FFFFFFFF;\">Ardilla</span>: inflige 2 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> en la fase final. Se puede usar 2 veces.\\n<span style=\"color: #FFFFFFFF;\">Ave rapaz</span>: inflige 1 pt. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> en la fase final. Se puede usar 3 veces.\\n<span style=\"color: #FFFFFFFF;\">Rana</span>: puede bloquear 2 pts. de daño. Inflige 2 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> al consumirse."
+          "name": "Animal Hidromimético",
+          "desc": "Hay 3 tipos de Animales Hidromiméticos:\\n<span style=\"color: #FFFFFFFF;\">Ardilla</span>: inflige 2 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> en la fase final. Se puede usar 2 veces.\\n<span style=\"color: #FFFFFFFF;\">Ave Rapaz</span>: inflige 1 pt. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> en la fase final. Se puede usar 3 veces.\\n<span style=\"color: #FFFFFFFF;\">Rana</span>: puede bloquear 2 pts. de daño. Inflige 2 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> al consumirse."
         }
       },
       {
         "_id": 22013,
         "type": "Habilidad Elemental",
         "name": "Diversidad salvaje",
-        "desc": "Crea 2 <span style=\"color: #FFFFFFFF;\">Animal hidromimético</span> al azar. Priorizará la creación de tipos diferentes a los ya existentes.",
+        "desc": "Crea 2 <span style=\"color: #FFFFFFFF;\">Animal Hidromimético</span> al azar. Priorizará la creación de tipos diferentes a los ya existentes.",
         "cost": [
           {
             "type": "hydro",
             "count": 5
           }
-        ]
+        ],
+        "sub": {
+          "_id": 122010,
+          "id": "oceanid_mimic",
+          "name": "Animal Hidromimético",
+          "desc": "Hay 3 tipos de Animales Hidromiméticos:\\n<span style=\"color: #FFFFFFFF;\">Ardilla</span>: inflige 2 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> en la fase final. Se puede usar 2 veces.\\n<span style=\"color: #FFFFFFFF;\">Ave Rapaz</span>: inflige 1 pt. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> en la fase final. Se puede usar 3 veces.\\n<span style=\"color: #FFFFFFFF;\">Rana</span>: puede bloquear 2 pts. de daño. Inflige 2 pts. de <span style=\"color: #80C0FFFF;\">Daño Hydro</span> al consumirse."
+        }
       },
       {
         "_id": 22014,
@@ -2001,7 +2397,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Diona</span>.\\nTras ello, Diona usa una vez <span style=\"color: #FFD780FF;\">Ronroneo glacial</span> de inmediato.\\nCuando Diona tiene esta carta equipada, el <span style=\"color: #FFFFFFFF;\">Escudo de zarpas</span> que crea otorga <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> +1.\\nSolo puedes añadir esta carta al mazo si tienes a Diona en tu mazo."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Diona</span>.\\nTras ello, Diona usa una vez <span style=\"color: #FFD780FF;\">Ronroneo glacial</span> de inmediato.\\nCuando Diona tiene esta carta equipada, el <span style=\"color: #FFFFFFFF;\">Escudo de zarpas</span> que crea otorga <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> +1.\\nSolo puedes añadir esta carta al mazo si tienes a Diona en él."
     }
   },
   {
@@ -2050,6 +2446,26 @@
         }
       ],
       "desc": "Cuando <span style=\"color: #FFFFFFFF;\">Kamisato Ayaka</span> obtiene un <span style=\"color: #FFFFFFFF;\">Imbuimiento Cryo</span> mientras tiene esta carta equipada, inflige <span style=\"color: #99FFFFFF;\"><span style=\"color: #99FFFFFF;\">Daño Cryo</span></span> +1.\\nAl cambiar a Kamisato Ayaka mientras tiene esta carta equipada, gastas un dado elemental menos (1 vez por ronda).\\nSolo puedes añadir esta carta al mazo si tienes a Kamisato Ayaka en él."
+    }
+  },
+  {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Ansia de guerra",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando tu personaje en combate es <span style=\"color: #FFFFFFFF;\">Eula</span>.\\nTras ello, usa una vez <span style=\"color: #FFD780FF;\">Ansia de guerra</span> de inmediato.\\nCuando Eula usa <span style=\"color: #FFFFFFFF;\">Ansia de guerra</span> al tener esta carta equipada, acumula 1 carga de energía adicional para la <span style=\"color: #FFFFFFFF;\">Espada luminosa</span>.\\nSolo puedes añadir esta carta al mazo si tienes a Eula en él."
     }
   },
   {
@@ -2102,6 +2518,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Mona</span>.\\nTras ello, Mona usa una vez <span style=\"color: #FFD780FF;\">Profecía de sumersión</span> de inmediato.\\nCuando Mona está en combate mientras tiene esta carta equipada, cualquier <span style=\"color: #80C0FFFF;\">Reacciones Elementales Hydro</span> provocada por ti inflige daño +2.\\nSolo puedes añadir esta carta al mazo si tienes a Mona en él."
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Bendición de Tamanooya",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando tu personaje en combate es <span style=\"color: #FFFFFFFF;\">Sangonomiya Kokomi</span>.\\nTras ello, Sangonomiya Kokomi usa una vez <span style=\"color: #FFD780FF;\">Bendición de Tamanooya</span> de inmediato.\\nCuando Sangonomiya Kokomi usa <span style=\"color: #FFFFFFFF;\">Bendición de Tamanooya</span> mientras tiene esta carta equipada, se reinicia el número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> de la <span style=\"color: #FFFFFFFF;\">Medusa</span> en el caso de que esta se encuentre ya en el campo de batalla.\\nMientras el efecto del <span style=\"color: #FFFFFFFF;\">Manto ceremonial</span> esté activo, la <span style=\"color: #FFFFFFFF;\">Medusa</span> inflige daño +1.\\nSolo puedes añadir esta carta al mazo si tienes a Sangonomiya Kokomi en él."
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Reflejo grácil",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Kamisato Ayato</span>.\\nTras ello, Kamisato Ayato usa una vez <span style=\"color: #FFD780FF;\">Reflejo grácil</span> de inmediato.\\nCuando Kamisato Ayato libera el efecto de <span style=\"color: #FFFFFFFF;\">Reflejo torrencial</span>, inflige daño adicional +1 a los enemigos con 6 o menos pts. de Vida.\\nSolo puedes añadir esta carta al mazo si tienes a Kamisato Ayato en él."
     }
   },
   {
@@ -2269,6 +2721,26 @@
     }
   },
   {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Pecado del orgullo",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Kujou Sara</span>.\\nTras ello, Kujou Sara usa una vez <span style=\"color: #FFD780FF;\">Pecado del orgullo</span> de inmediato.\\nSi Kujou Sara tiene esta carta equipada mientras está en juego, tus personajes <span style=\"color: #FFACFFFF;\">Electro</span> que estén bajo el efecto de <span style=\"color: #FFFFFFFF;\">Amparo plumífero</span> infligen daño adicional +1 con sus <span style=\"color: #FFFFFFFF;\">Habilidades Elementales y Definitivas</span>.\\nSolo puedes añadir esta carta al mazo si tienes a Kujou Sara en él."
+    }
+  },
+  {
     "_id": 215011,
     "id": "chaotic_entropy",
     "type": "talent",
@@ -2341,6 +2813,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Itto, el ónico e inimitable",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>： esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Arataki Itto</span>.\\nTras ello, Arataki Itto usa una vez <span style=\"color: #FFD780FF;\">Itto, el ónico e inimitable</span> de inmediato.\\nCuando Arataki Itto use <span style=\"color: #FFFFFFFF;\">Itto, el ónico e inimitable</span> por segunda vez o más en una ronda mientras tiene esta carta equipada y consume una carga de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fuerza sobrenatural</span>, inflige daño adicional +1.\\nSolo puedes añadir esta carta al mazo si tienes a Arataki Itto en él."
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2354,6 +2846,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando el personaje en combate es <span style=\"color: #FFFFFFFF;\">Collei</span>.\\nTras ello, Collei usa una vez <span style=\"color: #FFD780FF;\">Retorno foliáceo</span> de inmediato.\\nSi, durante la ronda, Collei ha usado <span style=\"color: #FFFFFFFF;\">Retorno foliáceo</span> mientras tiene esta carta equipada, y alguno de tus personajes causa una <span style=\"color: #7EC236FF;\">Reacciones Elementales Dendro</span> por medio de una habilidad, inflige 1 pt. de <span style=\"color: #7EC236FF;\">Daño Dendro</span> (1 vez por ronda).\\nSolo puedes añadir esta carta al mazo si tienes a Collei en él."
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Visión aguda",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span>: esta carta se equipa cuando tu personaje en combate es <span style=\"color: #FFFFFFFF;\">Tignari</span>.\\nTras ello, Tignari usa una vez <span style=\"color: #FFD780FF;\">Visión aguda</span> de inmediato.\\nCuando Tignari obtiene el efecto de <span style=\"color: #FFFFFFFF;\">Perforación vijñana</span> mientras tiene esta carta equipada, gasta 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dado indefinido</span> menos al ejecutar un <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ataque Cargado</span>.\\nSolo puedes añadir esta carta al mazo si tienes a Tignari en él."
     }
   },
   {
@@ -2622,7 +3130,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Daño +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Al entrar en el campo de batalla</span>, esta carta otorga <span style=\"color: #FFFFFFFF;\">1 pt. de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> al personaje que la lleve equipada</span> por cada personaje de Liyue que haya en el equipo (acumulable hasta 3 pts.).\\nSolo pueden llevarla equipada los <span style=\"color: #FFFFFFFF;\">personajes que usan lanza</span>. Cada personaje solo puede llevar equipada 1 arma."
+      "desc": "<span style=\"color: #FFFFFFFF;\">El personaje inflige daño +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Al entrar en el campo de batalla</span>, por cada personaje de Liyue que haya en el equipo, esta carta otorga <span style=\"color: #FFFFFFFF;\">1 pt. de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> al personaje que la lleve equipada</span> (acumulable hasta 3 pts.).\\nSolo pueden llevarla equipada los <span style=\"color: #FFFFFFFF;\">personajes que usan lanza</span>. Cada personaje solo puede llevar equipada 1 arma."
     }
   },
   {
@@ -2683,6 +3191,21 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Daño +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Cuando el rival utiliza una habilidad</span>, si el personaje que ha obtenido este efecto está en combate, obtiene Vida +1 (hasta 2 veces por ronda).\\nSolo pueden llevarla equipada los <span style=\"color: #FFFFFFFF;\">personajes que usan espada ligera</span>. Cada personaje solo puede llevar equipada 1 arma."
+    }
+  },
+  {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Espada de Favonius",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Daño +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Cuando el personaje usa una Habilidad Elemental</span>, este obtiene 1 pt. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energía</span> adicional (1 vez por ronda).\\nSolo pueden llevarla equipada los <span style=\"color: #FFFFFFFF;\">personajes que usan espada ligera</span>. Cada personaje solo puede llevar equipada 1 arma."
     }
   },
   {
@@ -2776,6 +3299,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "Casco Ornamentado",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Cuando el resto de tus personajes usen una Habilidad Definitiva</span>, el personaje que obtenga este efecto obtendrá 1 pt. de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energía</span>.\\nCada personaje solo puede llevar equipado 1 artefacto."
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "Yelmo Vetusto del General",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Al principio de la fase de acciones</span>, hace que el personaje entre en el estado de <span style=\"color: #FFFFFFFF;\">Inamovible como un peñasco</span> (otorga 2 pts. de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> para protegerle).\\nCada personaje solo puede llevar equipado 1 artefacto."
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2798,7 +3351,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2828,7 +3381,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2858,7 +3411,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2888,7 +3441,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2918,7 +3471,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2948,7 +3501,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2978,7 +3531,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3076,6 +3629,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Gran Santuario Narukami",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Se activa automáticamente una vez por ronda:</span> crea un dado elemental aleatorio.\\n<span style=\"color: #FFFFFFFF;\">Número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 3</span>."
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3098,8 +3666,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Cuando cambias de personaje</span>, dicho cambio se considera una <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción rápida</span> en vez de una <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Acción de combate</span> (1 vez por ronda)."
@@ -3321,7 +3889,7 @@
           "count": 1
         }
       ],
-      "desc": "El personaje en combate obtiene Vida +2. Todos tus personajes en reserva obtienen Vida +1.\\nSolo puedes añadir esta carta al mazo si en él hay al menos 2 personajes <span style=\"color: #80C0FFFF;\">Hydro</span>."
+      "desc": "Cura 2 pts. de Vida a tu personaje en combate, y luego cura 1 pt. a todos tus personajes en reserva.\\nSolo puedes añadir esta carta al mazo si en él hay al menos 2 personajes <span style=\"color: #80C0FFFF;\">Hydro</span>."
     }
   },
   {
@@ -3348,7 +3916,7 @@
           "count": 1
         }
       ],
-      "desc": "La próxima vez que tu personaje en combate actual cause una <span style=\"color: #FF9999FF;\">Reacciones Elementales Pyro</span> en esta ronda, daño infligido +3.\\nSolo puedes añadir esta carta al mazo si en él hay al menos 2 personajes <span style=\"color: #FF9999FF;\">Pyro</span>."
+      "desc": "La próxima vez que tu personaje en combate actual cause una <span style=\"color: #FF9999FF;\">Reacciones Elementales Pyro</span> en esta ronda, infligirá daño +3.\\nSolo puedes añadir esta carta al mazo si en él hay al menos 2 personajes <span style=\"color: #FF9999FF;\">Pyro</span>."
     }
   },
   {
@@ -3429,7 +3997,7 @@
           "count": 1
         }
       ],
-      "desc": "En esta ronda, si la próxima vez que tu personaje inflija <span style=\"color: #FFE699FF;\">Daño Geo</span> hay activo un estado en combate que otorgue algún <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span>, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> +3.\\nSolo puedes añadir esta carta al mazo si en él hay al menos 2 personajes <span style=\"color: #FFE699FF;\">Geo</span>."
+      "desc": "En esta ronda, si la próxima vez que tu personaje inflija <span style=\"color: #FFE699FF;\">Daño Geo</span> hay activo un estado en combate que otorgue un <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span>, otorga <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> +3.\\nSolo puedes añadir esta carta al mazo si en él hay al menos 2 personajes <span style=\"color: #FFE699FF;\">Geo</span>."
     }
   },
   {
@@ -3456,7 +4024,7 @@
           "count": 1
         }
       ],
-      "desc": "La próxima vez que causes una Reacción Elemental en esta ronda, daño infligido +2.\\nAdemás, al crear en el campo de batalla <span style=\"color: #FFFFFFFF;\">una reacción de Llama ardiente, Núcleo Dendro o Campo catalítico</span>, obtienes 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> adicional.\\nSolo puedes añadir esta carta al mazo si en él hay al menos 2 personajes <span style=\"color: #99FF88FF;\">Dendro</span>."
+      "desc": "La próxima vez que causes una Reacción Elemental en esta ronda, daño infligido +2.\\nAdemás, <span style=\"color: #FFFFFFFF;\">la Llama ardiente, el Núcleo Dendro y el Campo catalítico</span> que haya en el campo de batalla obtienen 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> adicional.\\nSolo puedes añadir esta carta al mazo si en él hay al menos 2 personajes <span style=\"color: #99FF88FF;\">Dendro</span>."
     }
   },
   {

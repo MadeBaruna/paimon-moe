@@ -142,7 +142,7 @@
           "_id": 111023,
           "id": "drunken_mist",
           "name": "Foschia ubriaca",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span> e rigenera 2 PS al tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 1 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span> e ripristina 2 PS del tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
         }
       }
     ]
@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Eula",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "Attacco normale",
+        "name": "Tecnica di Favonius - Edel",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "Abilità elementale",
+        "name": "Vortice algido",
+        "desc": "Infligge 2 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>. Se questo personaggio non ha ancora ottenuto <span style=\"color: #FFFFFFFF;\">Cuortetro</span>, acquisisce <span style=\"color: #FFFFFFFF;\">Cuortetro</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Cuortetro",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio che ha ottenuto questo stato usa Vortice algido:</span> rimuovi questo stato, DAN inflitti +2."
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "Tripudio elementale",
+        "name": "Illuminazione glaciale",
+        "desc": "Infligge 2 <span style=\"color: #99FFFFFF;\">DAN da Cryo</span>, evoca 1 <span style=\"color: #FFFFFFFF;\">Spada di luce cadente</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Spada di luce cadente",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando Eula usa un attacco normale o un'abilità elementale</span>, questa carta ottiene 2 accumuli di Solerzia, ma Eula non riceve nessun punto di energia.\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> rimuovi questa carta e infliggi 2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span>. Ogni accumulo di Solerzia aumenta i DAN di 1.\\n(Gli effetti sulla quantità di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> di questa carta si applicano agli accumuli di <span style=\"color: #FFFFFFFF;\">Solerzia</span>.)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -387,7 +455,7 @@
           "_id": 112011,
           "id": "melody_loop",
           "name": "Cerchio melodioso",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> rigenera 1 PS a tutti i tuoi personaggi e il tuo personaggio attivo riceve <span style=\"color: #80C0FFFF;\">Applicazione di Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> ripristina 1 PS di tutti i tuoi personaggi e il tuo personaggio attivo riceve <span style=\"color: #80C0FFFF;\">Applicazione di Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
         }
       },
       {
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "Tecnica dell'iridescenza",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio usa un attacco normale:</span> infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio usa un attacco normale:</span> infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "Torrente illusorio",
         "desc": "(Passiva) <span style=\"color: #FFFFFFFF;\">Quando usi Cambia personaggio mentre Mona è il tuo personaggio attivo</span>, questo cambio è considerato come <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione rapida</span> invece che <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span> (una volta per turno).",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Sangonomiya Kokomi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "Attacco normale",
+        "name": "Forma dell'acqua",
+        "desc": "Infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "Abilità elementale",
+        "name": "Giuramento di Kurage",
+        "desc": "Questo personaggio ottiene <span style=\"color: #80C0FFFF;\">Applicazione di Hydro</span> ed evoca 1 <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "Bake-Kurage",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 1 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span> e ripristina 1 PS al tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "Tripudio elementale",
+        "name": "Ascensione della Nereide",
+        "desc": "Infligge 3 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>. Ripristina 1 PS a tutti i personaggi alleati. Questo personaggio ottiene l'effetto <span style=\"color: #FFFFFFFF;\">Abito cerimoniale</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Abito cerimoniale",
+          "desc": "L'<span style=\"color: #FFFFFFFF;\">attacco normale</span> del personaggio a cui è associato infligge DAN +1.\\n<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio associato usa un attacco normale:</span> ripristina 1 PS di tutti i tuoi personaggi.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Kamisato Ayato",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "Attacco normale",
+        "name": "Arte Kamisato: Marobashi",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "Abilità elementale",
+        "name": "Arte Kamisato: Kyouka",
+        "desc": "Infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>, questo personaggio ottiene <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Takimeguri Kanka",
+          "desc": "L'<span style=\"color: #FFFFFFFF;\">attacco normale</span> del personaggio a cui è associata infligge DAN +1, e i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti sono convertiti in <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "Tripudio elementale",
+        "name": "Arte Kamisato: Suiyuu",
+        "desc": "Infligge 3 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>, invoca 1 <span style=\"color: #FFFFFFFF;\">Giardino di purezza</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Giardino di purezza",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #80C0FFFF;\">DAN da Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">Quando questa invocazione è in campo:</span> gli attacchi normali dei tuoi personaggi infliggono DAN +1."
+        }
       }
     ]
   },
@@ -773,7 +977,7 @@
         "_id": 13052,
         "type": "Abilità elementale",
         "name": "Danza del fuoco Niwabi",
-        "desc": "Questo personaggio ottiene l'effetto <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span>. (Questa abilità non conferisce carica.)",
+        "desc": "Questo personaggio ottiene l'effetto <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span>. (Questa abilità non conferisce energia.)",
         "cost": [
           {
             "type": "pyro",
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Schizzi e scintille",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio usa un'abilità:</span> infligge 2 <span style=\"color: #FF9999FF;\">DAN da Pyro</span> al tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando un personaggio della squadra a cui è associato Schizzi e scintille usa un'abilità:</span> infligge 2 <span style=\"color: #FF9999FF;\">DAN da Pyro</span> al personaggio attivo della squadra.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
         }
       }
     ]
@@ -1216,6 +1420,74 @@
     ]
   },
   {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Kujou Sara",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "Attacco normale",
+        "name": "Arcieria tengu",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "Abilità elementale",
+        "name": "Richiamo tengu della tempesta",
+        "desc": "Infligge 1 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>, evoca 1 <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Imboscata</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Tengu Juurai: Imboscata",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 1 <span style=\"color: #FFACFFFF;\">DAN da Electro</span> e applica <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Copertura della Piuma corvina</span> al personaggio alleato attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "Tripudio elementale",
+        "name": "Soggiogamento: Koukou Sendou",
+        "desc": "Infligge 1 <span style=\"color: #FFACFFFF;\">DAN da Electro</span>, evoca 1 <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Ammassatempesta</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Tengu Juurai: Ammassatempesta",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #FFACFFFF;\">DAN da Electro</span> e applica <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Copertura della Piuma corvina</span> al personaggio alleato attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1334,7 +1606,7 @@
           "_id": 115021,
           "id": "dandelion_field",
           "name": "Campo di denti di leone",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span> e rigenera 1 PS al tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #80FFD7FF;\">DAN da Anemo</span> e ripristina 1 PS del tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
         }
       }
     ]
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Arataki Itto",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "Attacco normale",
+        "name": "Leggenda della lotta",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "Abilità elementale",
+        "name": "Masatsu Zetsugi: Scoppio Akaushi!",
+        "desc": "Infligge 1 <span style=\"color: #FFE699FF;\">DAN da Geo</span>. Invoca <span style=\"color: #FFFFFFFF;\">Ushi</span>. Questo personaggio ottiene <span style=\"color: #FFFFFFFF;\">Superforza superlativa</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Ushi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il tuo personaggio attivo subisce DAN: </span>riduce di 1 i DAN subiti.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 1</span>.\\nQuando l'utilizzo viene consumato, questa carta non verrà rimossa.\\n<span style=\"color: #FFFFFFFF;\">Può attivarsi una volta mentre questa invocazione è presente: </span>quando il tuo personaggio attivo subisce danni, Arataki Itto ottiene <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superforza superlativa</span>.\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> rimuovi questa carta, infliggi 1 <span style=\"color: #FFE699FF;\">DAN da Geo</span>."
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "Tripudio elementale",
+        "name": "Discesa regale: Osservate, Itto il Malvagio!",
+        "desc": "Infligge 5 <span style=\"color: #FFE699FF;\">DAN da Geo</span>, questo personaggio ottiene <span style=\"color: #FFFFFFFF;\">Furia del Re oni</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Furia del Re oni",
+          "desc": "L'<span style=\"color: #FFFFFFFF;\">attacco normale</span> del personaggio a cui è associata infligge DAN +2, e i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti sono convertiti in <span style=\"color: #FFE699FF;\">DAN da Geo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durata (in turni)</span>: 2</span>\\n<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio a cui è associata questa carta utilizza un attacco normale:</span> ottiene <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superforza superlativa</span> (una volta per turno)."
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1534,6 +1874,68 @@
           "name": "Cuilein-Anbar",
           "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> infligge 2 <span style=\"color: #7EC236FF;\">DAN da Dendro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Tighnari",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "Attacco normale",
+        "name": "Khanda rompibarriere",
+        "desc": "Infligge 2 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "Abilità elementale",
+        "name": "Bomba Vijnana-Phala",
+        "desc": "Infligge 2 <span style=\"color: #7EC236FF;\">DAN da Dendro</span>, questo personaggio ottiene l'effetto <span style=\"color: #FFFFFFFF;\">Effusione Vijnana</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Effusione Vijnana",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando il personaggio associato usa <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Attacco caricato</span>: </span>i <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN fisici</span> inflitti vengono convertiti in <span style=\"color: #7EC236FF;\">DAN da Dendro</span> e, dopo che il conteggio dei DAN delle abilità è stato completato, invoca 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Frecce a grappolo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "Tripudio elementale",
+        "name": "Frecce a groviglio",
+        "desc": "Infligge 4 <span style=\"color: #FFFFFFFF;\">DAN fisici</span>, infligge <span style=\"color: #FFFFFFFF;\">1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DAN da perforazione</span></span> a tutti i personaggi avversari inattivi.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
       }
     ]
   },
@@ -1945,7 +2347,7 @@
         "_id": 27013,
         "type": "Tripudio elementale",
         "name": "Piume maestose",
-        "desc": "Infligge 4 <span style=\"color: #7EC236FF;\">DAN da Dendro</span>, consuma tutte le cariche di <span style=\"color: #FFFFFFFF;\">Vitalità radicale</span>, ogni carica conferisce DAN +1 a questo attacco.",
+        "desc": "Infligge 4 <span style=\"color: #7EC236FF;\">DAN da Dendro</span>, consuma tutti gli accumuli di <span style=\"color: #FFFFFFFF;\">Vitalità radicale</span>, ogni accumulo conferisce DAN +1 a questo attacco.",
         "cost": [
           {
             "type": "dendro",
@@ -1960,7 +2362,7 @@
           "_id": 127011,
           "id": "radical_vitality",
           "name": "Vitalità radicale",
-          "desc": "Quando questo personaggio infligge o subisce DAN elementali, otterrai 1 carica di Vitalità radicale. (Cumulabile fino a 3 volte)\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> se ottieni il numero massimo di cariche di Vitalità radicale, tutte le cariche verranno rimosse."
+          "desc": "Quando questo personaggio infligge o subisce DAN elementali, otterrai 1 accumulo di Vitalità radicale. (Cumulabile fino a 3 volte)\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> se ottieni il numero massimo di accumuli di Vitalità radicale, il personaggio perde tutta la sua energia."
         }
       },
       {
@@ -1973,7 +2375,7 @@
           "_id": 127011,
           "id": "radical_vitality",
           "name": "Vitalità radicale",
-          "desc": "Quando questo personaggio infligge o subisce DAN elementali, otterrai 1 carica di Vitalità radicale. (Cumulabile fino a 3 volte)\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> se ottieni il numero massimo di cariche di Vitalità radicale, tutte le cariche verranno rimosse."
+          "desc": "Quando questo personaggio infligge o subisce DAN elementali, otterrai 1 accumulo di Vitalità radicale. (Cumulabile fino a 3 volte)\\n<span style=\"color: #FFFFFFFF;\">Fase finale:</span> se ottieni il numero massimo di accumuli di Vitalità radicale, il personaggio perde tutta la sua energia."
         }
       }
     ]
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Spirito belligerante",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Eula</span>, equipaggia questa carta.\\nDopo che Eula equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Spirito belligerante</span> una volta.\\nQuando Eula, che ha questa carta equipaggiata, utilizza <span style=\"color: #FFFFFFFF;\">Spirito belligerante</span>, genera 1 ulteriore accumulo di Solerzia per <span style=\"color: #FFFFFFFF;\">Spada di luce cadente</span>.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Eula.)"
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Mona</span>, equipaggia questa carta.\\nQuando Mona equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Profezia sommersa</span> una volta.\\nQuando Mona, che ha questa carta equipaggiata, è il personaggio attivo, le <span style=\"color: #80C0FFFF;\">Reazioni di Hydro</span> che inneschi infliggono DAN aggiuntivi +2.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Mona.)"
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Scrigno di Tamanooya",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Sangonomiya Kokomi</span>, equipaggia questa carta.\\nDopo che Sangonomiya Kokomi equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Scrigno di Tamanooya</span> una volta.\\nQuando Sangonomiya Kokomi, che ha questa carta equipaggiata, utilizza <span style=\"color: #FFFFFFFF;\">Scrigno di Tamanooya</span>: se <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> è in campo, la sua quantità di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span> viene ripristinata.\\nMentre l'effetto di <span style=\"color: #FFFFFFFF;\">Abito cerimoniale</span> è attivo, <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> infligge DAN +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Sangonomiya Kokomi.)"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Kyouka Fuushi",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Kamisato Ayato</span>, equipaggia questa carta.\\nDopo che Kamisato Ayato equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Kyouka Fuushi</span> una volta.\\nQuando Kamisato Ayato, che ha questa carta equipaggiata, innesca gli effetti di <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span>, infligge DAN +1 se i PS rimanenti del bersaglio sono uguali o inferiori a 6.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Kamisato Ayato.)"
     }
   },
   {
@@ -2207,7 +2665,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Fischl</span>, equipaggia questa carta.\\nDopo che Fischl equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Predatore di stelle</span> una volta.\\nDopo che la tua Fischl, che ha questa carta equipaggiata, crea un <span style=\"color: #FFFFFFFF;\">Oz</span>, e dopo che Fischl utilizza un <span style=\"color: #FFFFFFFF;\">attacco normale</span>: infligge 2 <span style=\"color: #FFACFFFF;\">DAN da Electro</span> (consuma <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Fischl.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Fischl</span>, equipaggia questa carta.\\nDopo che Fischl equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Predatore di stelle</span> una volta.\\nDopo che la tua Fischl, che ha questa carta equipaggiata, crea un <span style=\"color: #FFFFFFFF;\">Oz</span>, il <span style=\"color: #FFFFFFFF;\">Oz</span> ottiene il seguente effetto: dopo che Fischl utilizza un <span style=\"color: #FFFFFFFF;\">attacco normale</span>: infligge 2 <span style=\"color: #FFACFFFF;\">DAN da Electro</span> (consuma <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Fischl.)"
     }
   },
   {
@@ -2223,7 +2681,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Razor</span>, equipaggia questa carta.\\nDopo che Razor equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Risveglio</span> una volta.\\nQuando Razor, che è equipaggiato con questa carta, usa <span style=\"color: #FFFFFFFF;\">Risveglio</span>, 1 dei tuoi personaggi di Electro ottiene 1 punto di carica (priorità al personaggio attivo).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Razor.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Razor</span>, equipaggia questa carta.\\nDopo che Razor equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Risveglio</span> una volta.\\nQuando Razor, che è equipaggiato con questa carta, usa <span style=\"color: #FFFFFFFF;\">Risveglio</span>, 1 dei tuoi personaggi di Electro ottiene 1 punto di energia (priorità al personaggio attivo).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Razor.)"
     }
   },
   {
@@ -2272,6 +2730,26 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Beidou</span>, equipaggia questa carta.\\nQuando Beidou equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Tempesta di fulmini</span> una volta.\\nQuando Beidou, che ha questa carta equipaggiata, usa <span style=\"color: #FFFFFFFF;\">Tempesta di fulmini</span>, se vengono subiti DAN mentre <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Prepara abilità</span> è attivo, in questo turno gli attacchi normali del personaggio costano 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">elemento indefinito</span> in meno (può essere attivato 2 volte).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Beidou.)"
+    }
+  },
+  {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Peccato d'orgoglio",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Kujou Sara</span>, equipaggia questa carta.\\nDopo che Kujou Sara equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Peccato d'orgoglio</span> una volta.\\nQuando Kujou Sara è attivo ed equipaggia questa carta, le <span style=\"color: #FFFFFFFF;\">abilità elementali</span> e i <span style=\"color: #FFFFFFFF;\">Tripudi elementali</span> di tutti gli alleati di <span style=\"color: #FFACFFFF;\">Electro</span> equipaggiati con <span style=\"color: #FFFFFFFF;\">Copertura della Piuma corvina</span> infliggono DAN +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Kujou Sara.)"
     }
   },
   {
@@ -2343,7 +2821,27 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Noelle</span>, equipaggia questa carta.\\nDopo che Noelle equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Ti guardo le spalle</span> una volta.\\nQuando Noelle, che ha questa carta equipaggiata, crea <span style=\"color: #FFFFFFFF;\">Corazza completa</span>, rigenera 1 PS a tutti i tuoi personaggi dopo che Noelle sferra un <span style=\"color: #FFFFFFFF;\">attacco normale</span>. (Per aggiungere questa carta, il tuo mazzo deve contenere Noelle.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Noelle</span>, equipaggia questa carta.\\nDopo che Noelle equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Ti guardo le spalle</span> una volta.\\nQuando Noelle, che ha questa carta equipaggiata, crea <span style=\"color: #FFFFFFFF;\">Corazza completa</span>, ripristina 1 PS di tutti i tuoi personaggi dopo che Noelle sferra un <span style=\"color: #FFFFFFFF;\">attacco normale</span>. (Per aggiungere questa carta, il tuo mazzo deve contenere Noelle.)"
+    }
+  },
+  {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Arataki Ichiban",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Arataki Itto</span>, equipaggia questa carta.\\nDopo che Arataki Itto equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Arataki Ichiban</span> una volta.\\nDopo che Arataki Itto, che ha questa carta equipaggiata, utilizza <span style=\"color: #FFFFFFFF;\">Arataki Ichiban</span> per due o più volte in un turno: se s'innesca <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superforza superlativa</span>, infligge DAN +1.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Arataki Itto.)"
     }
   },
   {
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Collei</span>, equipaggia questa carta.\\nDopo che Collei equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Brezza di ritorno floreale</span> una volta.\\nDopo che la tua Collei, che ha questa carta equipaggiata, usa <span style=\"color: #FFFFFFFF;\">Brezza di ritorno floreale</span>, durante questo turno, dopo che l'abilità del tuo personaggio innesca <span style=\"color: #7EC236FF;\">Reazioni di Dendro</span>: infligge 1 <span style=\"color: #7EC236FF;\">DAN da Dendro</span> (una volta per turno).\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Collei.)"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Vista acuta",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Tighnari</span>, equipaggia questa carta.\\nDopo che Tighnari equipaggia questa carta, utilizza immediatamente <span style=\"color: #FFD780FF;\">Vista acuta</span> una volta.\\nQuando Tighnari, che ha questa carta equipaggiata, è sotto l'effetto di <span style=\"color: #FFFFFFFF;\">Effusione Vijnana</span>, l'<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Attacco caricato</span> del personaggio costa 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">elemento indefinito</span> in meno.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Tighnari.)"
     }
   },
   {
@@ -2463,7 +2977,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Fungostro Cresta di giada</span>, equipaggia questa carta.\\nDopo che Fungostro Cresta di giada equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Spore proliferanti</span> una volta.\\nIl tuo Fungostro Cresta di giada, che ha questa carta equipaggiata, può accumulare 1 carica extra di Vitalità radicale.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Fungostro Cresta di giada.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span>: quando il tuo personaggio attivo è <span style=\"color: #FFFFFFFF;\">Fungostro Cresta di giada</span>, equipaggia questa carta.\\nDopo che Fungostro Cresta di giada equipaggia questa carta, usa immediatamente <span style=\"color: #FFD780FF;\">Spore proliferanti</span> una volta.\\nIl tuo Fungostro Cresta di giada, che ha questa carta equipaggiata, può accumulare 1 accumulo extra di Vitalità radicale.\\n(Per aggiungere questa carta, il tuo mazzo deve contenere Fungostro Cresta di giada.)"
     }
   },
   {
@@ -2692,6 +3206,21 @@
     }
   },
   {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Spada di Favonius",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Il personaggio infligge DAN +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio utilizza un'abilità elementale:</span> il personaggio ottiene <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span> +1 (una volta per turno). Equipaggiabile <span style=\"color: #FFFFFFFF;\">solo da personaggi con spada</span>. Il personaggio può equipaggiare un massimo di 1 arma."
+    }
+  },
+  {
     "_id": 312001,
     "id": "adventurers_bandana",
     "type": "artifact",
@@ -2710,7 +3239,7 @@
     "_id": 312002,
     "id": "lucky_dogs_silver_circlet",
     "type": "artifact",
-    "name": "Corona d'argento di Fortunato",
+    "name": "Corona d'argento di Fortunello",
     "skills": {
       "cost": [
         {
@@ -2718,7 +3247,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che il personaggio usa un'abilità elementale:</span> recupera 2 PS (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio usa un'abilità elementale:</span> recupera 2 PS (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
     }
   },
   {
@@ -2733,7 +3262,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio usa un Tripudio elementale:</span> rigenera 1 PS a tutti i personaggi (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio usa un Tripudio elementale:</span> ripristina 1 PS di tutti i personaggi (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
     }
   },
   {
@@ -2778,7 +3307,37 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio usa un Tripudio elementale:</span> tutti i tuoi personaggi inattivi ottengono 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un personaggio usa un Tripudio elementale:</span> tutti i tuoi personaggi inattivi ottengono 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span> (una volta per turno).\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "Kabuto decorato",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo che un altro dei tuoi personaggi usa un Tripudio elementale:</span> il personaggio associato a questa carta ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span>.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "Elmetto antico del generale",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Quando inizia la fase di azione</span>: il personaggio associato a questa carta ottiene <span style=\"color: #FFFFFFFF;\">Montagna inamovibile</span>, che fornisce 2 punti di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">scudo</span>.\\n(Il personaggio può equipaggiare un massimo di 1 manufatto.)"
     }
   },
   {
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3063,7 +3622,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> rigenera 2 PS al tuo personaggio inattivo con i PS più bassi.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> ripristina 2 PS del tuo personaggio inattivo con i PS più bassi.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
     }
   },
   {
@@ -3078,7 +3637,22 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> rigenera 2 PS al tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> ripristina 2 PS del tuo personaggio attivo.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+    }
+  },
+  {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Gran Santuario di Narukami",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Si innesca automaticamente una volta per turno:</span> crea 1 dado elementale casuale.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>：3</span>"
     }
   },
   {
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Quando usi Cambia personaggio:</span> questo cambio è considerato come <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione rapida</span> invece che <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Azione di combattimento</span> (una volta per turno)."
@@ -3228,7 +3802,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> uno dei tuoi personaggi che non ha raggiunto l'energia massima ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> (priorità al personaggio attivo).\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Fase finale:</span> uno dei tuoi personaggi che non ha raggiunto l'energia massima ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span> (priorità al personaggio attivo).\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
     }
   },
   {
@@ -3243,7 +3817,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo aver cambiato personaggio:</span> se il personaggio per cui hai cambiato non ha punti di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span>, ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Dopo aver cambiato personaggio:</span> se il personaggio per cui hai cambiato non ha punti di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span>, ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span> (una volta per turno).\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Utilizzi</span>: 2</span>"
     }
   },
   {
@@ -3327,7 +3901,7 @@
           "count": 1
         }
       ],
-      "desc": "Ripristina 2 PS al tuo personaggio attivo e 1 PS a tutti i tuoi personaggi inattivi.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #80C0FFFF;\">Hydro</span> nel tuo mazzo.)"
+      "desc": "Ripristina 2 PS del tuo personaggio attivo e 1 PS di tutti i tuoi personaggi inattivi.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #80C0FFFF;\">Hydro</span> nel tuo mazzo.)"
     }
   },
   {
@@ -3381,7 +3955,7 @@
           "count": 1
         }
       ],
-      "desc": "Uno dei tuoi personaggi che non ha raggiunto l'energia massima ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> (priorità al personaggio attivo).\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #FFACFFFF;\">Electro</span> nel tuo mazzo.)"
+      "desc": "Uno dei tuoi personaggi che non ha raggiunto la quantità di energia massima ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span> (priorità al personaggio attivo).\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #FFACFFFF;\">Electro</span> nel tuo mazzo.)"
     }
   },
   {
@@ -3408,7 +3982,7 @@
           "count": 1
         }
       ],
-      "desc": "Cambia per il personaggio scelto e crea <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span> ×1.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #80FFD7FF;\">Anemo</span> nel tuo mazzo.)"
+      "desc": "Cambia nel personaggio bersaglio e crea 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span>.\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 personaggi di <span style=\"color: #80FFD7FF;\">Anemo</span> nel tuo mazzo.)"
     }
   },
   {
@@ -3497,7 +4071,7 @@
     "name": "Testa o croce",
     "skills": {
       "cost": [],
-      "desc": "Seleziona qualsiasi numero di dadi elementali da <span style=\"color: #FFFFFFFF;\">rilanciare</span>. Possono essere rilanciati 2 volte."
+      "desc": "Seleziona qualsiasi dado elementale da <span style=\"color: #FFFFFFFF;\">rilanciare</span>. Può essere rilanciato 2 volte."
     }
   },
   {
@@ -3522,7 +4096,7 @@
     "name": "Non ho ancora perso!",
     "skills": {
       "cost": [],
-      "desc": "Giocabile solo se uno dei tuoi personaggi viene sconfitto in questo turno:\\nCrea 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span> e il tuo personaggio attivo ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span>."
+      "desc": "Giocabile solo se uno dei tuoi personaggi viene sconfitto in questo turno:\\nCrea 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omnielemento</span> e il tuo personaggio attivo ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span>."
     }
   },
   {
@@ -3562,7 +4136,7 @@
           "count": 2
         }
       ],
-      "desc": "Il tuo personaggio attivo <span style=\"color: #FFFFFFFF;\">ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span></span>."
+      "desc": "Il tuo personaggio attivo <span style=\"color: #FFFFFFFF;\">ottiene 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span></span>."
     }
   },
   {
@@ -3577,7 +4151,7 @@
           "count": 1
         }
       ],
-      "desc": "Trasferisci 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">carica</span> da un massimo di 2 dei tuoi personaggi inattivi al tuo personaggio attivo."
+      "desc": "Trasferisci 1 punto di <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energia</span> da un massimo di 2 dei tuoi personaggi inattivi al tuo personaggio attivo."
     }
   },
   {
@@ -3657,7 +4231,7 @@
           "count": 2
         }
       ],
-      "desc": "Invoca 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hilichurl casuale</span>!(Questa carta può essere aggiunta solo se ci sono almeno 2 carte personaggio mostro nel tuo mazzo.)"
+      "desc": "Evoca 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hilichurl casuale</span>!\\n(Questa carta può essere aggiunta solo se ci sono almeno 2 carte personaggio mostro nel tuo mazzo.)"
     }
   },
   {
@@ -3667,7 +4241,7 @@
     "name": "Guoba di Jueyun",
     "skills": {
       "cost": [],
-      "desc": "La prossima volta che in questo turno il tuo personaggio attivo usa un <span style=\"color: #FFFFFFFF;\">attacco normale</span>, infligge DAN +1.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+      "desc": "La prossima volta che in questo turno il personaggio bersaglio usa un <span style=\"color: #FFFFFFFF;\">attacco normale</span>, infligge DAN +1.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
     }
   },
   {
@@ -3682,7 +4256,7 @@
           "count": 2
         }
       ],
-      "desc": "La prossima volta che in questo turno il tuo personaggio attivo usa un <span style=\"color: #FFFFFFFF;\">Tripudio elementale</span>, DAN inflitti +3.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+      "desc": "La prossima volta che in questo turno il personaggio bersaglio usa un <span style=\"color: #FFFFFFFF;\">Tripudio elementale</span>, DAN inflitti +3.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
     }
   },
   {
@@ -3707,7 +4281,7 @@
     "name": "Pollo affumicato del Nord",
     "skills": {
       "cost": [],
-      "desc": "La prossima volta che in questo turno il tuo personaggio attivo usa un <span style=\"color: #FFFFFFFF;\">attacco normale</span>, costerà 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">elemento indefinito</span> in meno.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+      "desc": "La prossima volta che in questo turno il personaggio bersaglio usa un <span style=\"color: #FFFFFFFF;\">attacco normale</span>, costerà 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">elemento indefinito</span> in meno.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
     }
   },
   {
@@ -3717,7 +4291,7 @@
     "name": "Pollo ai Fiordolci",
     "skills": {
       "cost": [],
-      "desc": "Rigenera 1 PS al tuo personaggio attivo.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+      "desc": "Ripristina 1 PS del personaggio bersaglio.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
     }
   },
   {
@@ -3732,7 +4306,7 @@
           "count": 1
         }
       ],
-      "desc": "Rigenera 2 PS al tuo personaggio attivo.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+      "desc": "Ripristina 2 PS del personaggio bersaglio.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
     }
   },
   {
@@ -3747,7 +4321,7 @@
           "count": 1
         }
       ],
-      "desc": "Rigenera 1 PS al tuo personaggio attivo. Per i prossimi due turni durante la fase finale, a questo personaggio verrà rigenerato 1 PS.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
+      "desc": "Ripristina 1 PS del personaggio bersaglio. Per i prossimi due turni durante la fase finale, a questo personaggio verrà ripristinato 1 PS.\\n(Ogni personaggio può consumare 1 cibo una volta per turno.)"
     }
   },
   {

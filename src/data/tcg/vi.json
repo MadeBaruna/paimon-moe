@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Eula",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "Tấn Công Thường",
+        "name": "Tây Phong Kiếm - Tông Thất",
+        "desc": "Gây 2 điểm <span style=\"color: #FFFFFFFF;\">Sát Thương Vật Lý</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "Kỹ Năng Nguyên Tố",
+        "name": "Lốc Xoáy Băng Hàn",
+        "desc": "Gây 2 điểm <span style=\"color: #99FFFFFF;\">Sát Thương Nguyên Tố Băng</span>, nếu nhân vật này chưa có <span style=\"color: #FFFFFFFF;\">Trái Tim Băng Giá</span>, sẽ khiến nhân vật này nhận <span style=\"color: #FFFFFFFF;\">Trái Tim Băng Giá</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Trái Tim Băng Giá",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Khi nhân vật áp dụng sử dụng Lốc Xoáy Băng Hàn:</span> Xóa trạng thái này, sát thương lần này +2."
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "Kỹ Năng Nộ",
+        "name": "Thanh Kiếm Sóng Nước",
+        "desc": "Gây 2 điểm <span style=\"color: #99FFFFFF;\">Sát Thương Nguyên Tố Băng</span>, triệu hồi <span style=\"color: #FFFFFFFF;\">Kiếm Ánh Sáng</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Kiếm Ánh Sáng",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Khi Eula dùng Tấn Công Thường hoặc Kỹ Năng Nguyên Tố:</span> Thẻ bài này tích lũy 2 điểm \"Số Tầng Năng Lượng\", nhưng Eula sẽ không nhận được Năng Lượng.\\n<span style=\"color: #FFFFFFFF;\">Giai Đoạn Kết Thúc:</span> Hủy bỏ thẻ bài này, gây 2 điểm <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Vật Lý</span>; mỗi 1 điểm \"Số Tầng Năng Lượng\" sẽ +1 sát thương này.\\n(Hiệu quả ảnh hưởng đến <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span> của thẻ bài này sẽ tính vào <span style=\"color: #FFFFFFFF;\">Số Tầng Năng Lượng</span>.)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "Kiếm Cầu Vồng",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật phe ta tấn công thường:</span> Gây 2 điểm <span style=\"color: #80C0FFFF;\">Sát Thương Nguyên Tố Thủy</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật phe ta tấn công thường:</span> Gây 1 điểm <span style=\"color: #80C0FFFF;\">Sát Thương Nguyên Tố Thủy</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "Dòng Chảy Ảo",
         "desc": "(Bị động) <span style=\"color: #FFFFFFFF;\">Nhân vật này là nhân vật xuất chiến, khi phe ta đổi nhân vật: </span>Lần thay đổi này xem như <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Nhanh</span>, không phải <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>. (Mỗi hiệp 1 lần)",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Sangonomiya Kokomi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "Tấn Công Thường",
+        "name": "Hình Dạng Nước Trong",
+        "desc": "Gây 1 điểm <span style=\"color: #80C0FFFF;\">Sát Thương Nguyên Tố Thủy</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "Kỹ Năng Nguyên Tố",
+        "name": "Lời Thề Ánh Trăng Biển",
+        "desc": "Nhân vật này nhận <span style=\"color: #80C0FFFF;\">Gán ấn Nguyên Tố Thủy</span>, triệu hồi <span style=\"color: #FFFFFFFF;\">Vầng Trăng Biển</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "Vầng Trăng Biển",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Giai Đoạn Kết Thúc:</span> Gây 1 điểm <span style=\"color: #80C0FFFF;\">Sát Thương Nguyên Tố Thủy</span>, chữa trị 1 điểm cho nhân vật xuất chiến phe ta.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "Kỹ Năng Nộ",
+        "name": "Nghi Lễ Nereid",
+        "desc": "Gây 3 điểm <span style=\"color: #80C0FFFF;\">Sát Thương Nguyên Tố Thủy</span>, chữa trị 1 điểm cho tất cả nhân vật phe ta, nhân vật này áp dụng <span style=\"color: #FFFFFFFF;\">Lễ Phục Nghi Thức</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Lễ Phục Nghi Thức",
+          "desc": "Nhân vật áp dụng sẽ +1 sát thương do <span style=\"color: #FFFFFFFF;\">Tấn Công Thường</span> gây ra.\\n<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật áp dụng hiệu ứng này sử dụng Tấn Công Thường:</span> Chữa trị 1 điểm cho tất cả nhân vật phe ta.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Hiệp Duy Trì</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Kamisato Ayato",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "Tấn Công Thường",
+        "name": "Trường Phái Kamisato: Marobashi",
+        "desc": "Gây 2 điểm <span style=\"color: #FFFFFFFF;\">Sát Thương Vật Lý</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "Kỹ Năng Nguyên Tố",
+        "name": "Trường Phái Kamisato - Kyouka",
+        "desc": "Gây 2 điểm <span style=\"color: #80C0FFFF;\">Sát Thương Nguyên Tố Thủy</span>, nhân vật này nhận <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Takimeguri Kanka",
+          "desc": "Nhân vật áp dụng sẽ +1 sát thương do <span style=\"color: #FFFFFFFF;\">tấn công thường</span> gây ra, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Vật Lý</span> gây ra chuyển thành <span style=\"color: #80C0FFFF;\">Sát Thương Nguyên Tố Thủy</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "Kỹ Năng Nộ",
+        "name": "Trường Phái Kamisato - Suiyuu",
+        "desc": "Gây 3 điểm <span style=\"color: #80C0FFFF;\">Sát Thương Nguyên Tố Thủy</span>, triệu hồi <span style=\"color: #FFFFFFFF;\">Khu Vườn Thanh Tịnh</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Khu Vườn Thanh Tịnh",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Giai Đoạn Kết Thúc:</span> Gây 2 điểm <span style=\"color: #80C0FFFF;\">Sát Thương Nguyên Tố Thủy</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">Khi vật triệu hồi này trong trận:</span> Sát thương do \"Tấn Công Thường\" của nhân vật phe ta gây ra sẽ +1."
+        }
       }
     ]
   },
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Tia Lửa Mãnh Liệt",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật phe ta dùng kỹ năng:</span> Gây 2 điểm <span style=\"color: #FF9999FF;\">Sát Thương Nguyên Tố Hỏa</span> cho nhân vật xuất chiến phe ta.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật của phe sở tại dùng kỹ năng:</span> Gây 2 điểm <span style=\"color: #FF9999FF;\">Sát Thương Nguyên Tố Hỏa</span> cho nhân vật xuất chiến của phe sở tại.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 2</span>"
         }
       }
     ]
@@ -1216,6 +1420,74 @@
     ]
   },
   {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Kujou Sara",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "Tấn Công Thường",
+        "name": "Cung Thuật Tengu",
+        "desc": "Gây 2 điểm <span style=\"color: #FFFFFFFF;\">Sát Thương Vật Lý</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "Kỹ Năng Nguyên Tố",
+        "name": "Bão Sét Tengu",
+        "desc": "Gây 1 điểm <span style=\"color: #FFACFFFF;\">Sát Thương Nguyên Tố Lôi</span>, triệu hồi <span style=\"color: #FFFFFFFF;\">Tengu Juurai - Phục Kích</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Tengu Juurai - Phục Kích",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Giai Đoạn Kết Thúc:</span> Gây 1 điểm <span style=\"color: #FFACFFFF;\">Sát Thương Nguyên Tố Lôi</span>, nhân vật xuất chiến phe ta áp dụng <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Lông Quạ Bao Phủ</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "Kỹ Năng Nộ",
+        "name": "Bí Thức - Koukou Sendou",
+        "desc": "Gây 1 điểm <span style=\"color: #FFACFFFF;\">Sát Thương Nguyên Tố Lôi</span>, triệu hồi <span style=\"color: #FFFFFFFF;\">Tengu Juurai - Tụ Sấm</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Tengu Juurai - Tụ Sấm",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Giai Đoạn Kết Thúc:</span> Gây 2 điểm <span style=\"color: #FFACFFFF;\">Sát Thương Nguyên Tố Lôi</span>, nhân vật xuất chiến phe ta áp dụng <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Lông Quạ Bao Phủ</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Arataki Itto",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "Tấn Công Thường",
+        "name": "Huyền Thoại Đấm Nhau",
+        "desc": "Gây 2 điểm <span style=\"color: #FFFFFFFF;\">Sát Thương Vật Lý</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "Kỹ Năng Nguyên Tố",
+        "name": "Tuyệt Kỹ Masatsu - Akaushi Công Phá!",
+        "desc": "Gây 1 điểm <span style=\"color: #FFE699FF;\">Sát Thương Nguyên Tố Nham</span>, triệu hồi <span style=\"color: #FFFFFFFF;\">Ushi</span>, nhân vật này áp dụng <span style=\"color: #FFFFFFFF;\">Quỷ Lực Vô Song</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Ushi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Khi nhân vật xuất chiến phe ta chịu sát thương:</span> Giảm bớt 1 điểm sát thương phải chịu.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 1</span>, khi dùng hết không hủy bỏ thẻ bài này.\\n<span style=\"color: #FFFFFFFF;\">Trong thời gian vật triệu hồi này ở trong trận có thể kích hoạt 1 lần:</span> Sau khi nhân vật xuất chiến phe ta chịu sát thương, sẽ áp dụng <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Quỷ Lực Vô Song</span> cho Arataki Itto.\\n<span style=\"color: #FFFFFFFF;\">Giai Đoạn Kết Thúc:</span> Hủy bỏ thẻ bài này, gây 1 điểm <span style=\"color: #FFE699FF;\">Sát Thương Nguyên Tố Nham</span>."
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "Kỹ Năng Nộ",
+        "name": "Siêu Cấp Quỷ Vương - Itto Giáng Lâm!",
+        "desc": "Gây 5 điểm <span style=\"color: #FFE699FF;\">Sát Thương Nguyên Tố Nham</span>, nhân vật này áp dụng <span style=\"color: #FFFFFFFF;\">Nộ Mục Quỷ Vương</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Nộ Mục Quỷ Vương",
+          "desc": "Nhân vật áp dụng sẽ +2 sát thương do <span style=\"color: #FFFFFFFF;\">Tấn Công Thường</span> gây ra, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Vật Lý</span> gây ra chuyển thành <span style=\"color: #FFE699FF;\">Sát Thương Nguyên Tố Nham</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Hiệp Duy Trì</span>: 2</span>\\n<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật áp dụng tiến hành tấn công thường:</span> Áp dụng <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Quỷ Lực Vô Song</span> cho nhân vật đó. (Mỗi hiệp 1 lần)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1534,6 +1874,68 @@
           "name": "Cuilein-Anbar",
           "desc": "<span style=\"color: #FFFFFFFF;\">Giai Đoạn Kết Thúc:</span> Gây 2 điểm <span style=\"color: #7EC236FF;\">Sát Thương Nguyên Tố Thảo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 2</span>"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Tighnari",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "Tấn Công Thường",
+        "name": "Phá Bỏ Chướng Ngại",
+        "desc": "Gây 2 điểm <span style=\"color: #FFFFFFFF;\">Sát Thương Vật Lý</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "Kỹ Năng Nguyên Tố",
+        "name": "Hạt Giống Vijnana-Phala",
+        "desc": "Gây 2 điểm <span style=\"color: #7EC236FF;\">Sát Thương Nguyên Tố Thảo</span>, nhân vật này nhận <span style=\"color: #FFFFFFFF;\">Vijnana Lan Tràn</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Vijnana Lan Tràn",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Khi nhân vật áp dụng tiến hành <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Trọng Kích</span>:</span> <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Vật Lý</span> gây ra chuyển thành <span style=\"color: #7EC236FF;\">Sát Thương Nguyên Tố Thảo</span>, đồng thời khi kết thúc kỹ năng sẽ triệu hồi <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Mũi Tên Bung Tỏa</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "Kỹ Năng Nộ",
+        "name": "Dây Leo Sinh Trưởng",
+        "desc": "Gây 4 điểm <span style=\"color: #FFFFFFFF;\">Sát Thương Vật Lý</span>, gây 1 điểm <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Sát Thương Xuyên Thấu</span></span> cho tất cả nhân vật dự bị của kẻ địch.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
       }
     ]
   },
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Lòng Hiếu Chiến Trỗi Dậy",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Eula</span>.\\nEula sau khi sử dụng thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Lòng Hiếu Chiến Trỗi Dậy</span>.\\nKhi Eula trang bị thẻ bài này sử dụng <span style=\"color: #FFFFFFFF;\">Lòng Hiếu Chiến Trỗi Dậy</span>, sẽ tích lũy thêm 1 điểm Số Tầng Năng Lượng cho <span style=\"color: #FFFFFFFF;\">Kiếm Ánh Sáng</span>.\\n(Bộ bài có Eula mới có thể thêm)"
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Mona</span>.\\nMona sau khi trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Tiên Tri Chìm Đắm</span>.\\nTrong thời gian Mona có trang bị thẻ bài này xuất chiến, sát thương <span style=\"color: #80C0FFFF;\">Phản Ứng Nguyên Tố Thủy</span> do phe ta kích hoạt sẽ tăng thêm +2.\\n(Bộ bài có Mona mới có thể thêm)"
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Rương Báu Tamanooya",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Sangonomiya Kokomi</span>.\\nSangonomiya Kokomi sau khi trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Rương Báu Tamanooya</span>.\\nSangonomiya Kokomi có trang bị thẻ bài này khi sử dụng <span style=\"color: #FFFFFFFF;\">Rương Báu Tamanooya</span>: Nếu <span style=\"color: #FFFFFFFF;\">Vầng Trăng Biển</span> trong trận, sẽ tạo mới <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>.\\nTrong thời gian <span style=\"color: #FFFFFFFF;\">Lễ Phục Nghi Thức</span> tồn tại, sát thương do <span style=\"color: #FFFFFFFF;\">Vầng Trăng Biển</span> gây ra +1.\\n(Bộ bài có Sangonomiya Kokomi mới có thể thêm)"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Kyouka Fuushi",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Kamisato Ayato</span>.\\nSau khi Kamisato Ayato trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Kyouka Fuushi</span>.\\nKamisato Ayato có trang bị thẻ bài này khi kích hoạt hiệu quả <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span>, sẽ +1 sát thương thêm cho kẻ địch có HP bằng hoặc ít hơn 6.\\n(Bộ bài có Kamisato Ayato, mới có thể thêm)"
     }
   },
   {
@@ -2275,6 +2733,26 @@
     }
   },
   {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Bản Ngã",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Khi nhân vật xuất chiến của phe ta là <span style=\"color: #FFFFFFFF;\">Kujou Sara</span>, trang bị thẻ bài này.\\nSau khi Kujou Sara trang bị thẻ bài này, lập tức dùng một lần <span style=\"color: #FFD780FF;\">Bản Ngã</span>.\\nKhi Kujou Sara trang bị thẻ bài này có mặt trong khu vực chiến đấu, nhân vật phe ta có <span style=\"color: #FFFFFFFF;\">Lông Quạ Bao Phủ</span> <span style=\"color: #FFACFFFF;\">Nguyên Tố Lôi</span>, sát thương do <span style=\"color: #FFFFFFFF;\">Kỹ Năng Nguyên Tố</span> và <span style=\"color: #FFFFFFFF;\">Kỹ Năng Nộ</span> gây ra +1.\\n(Bộ bài bao gồm Kujou Sara mới có thể thêm)"
+    }
+  },
+  {
     "_id": 215011,
     "id": "chaotic_entropy",
     "type": "talent",
@@ -2347,6 +2825,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Arataki Đệ Nhất",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Arataki Itto</span>.\\nArataki Itto sau khi trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Arataki Đệ Nhất</span>.\\nArataki Itto có trang bị thẻ bài này trong mỗi hiệp dùng <span style=\"color: #FFFFFFFF;\">Arataki Đệ Nhất</span> từ lần thứ hai trở đi: Nếu kích hoạt <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Quỷ Lực Vô Song</span>, sát thương tăng thêm +1.\\n(Bộ bài có Arataki Itto mới có thể thêm)"
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Collei</span>.\\nCollei sau khi trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Lá Khẽ Bay Nghiêng</span>.\\nTrong hiệp mà Collei có trang bị thẻ bài này đã dùng <span style=\"color: #FFFFFFFF;\">Lá Khẽ Bay Nghiêng</span>, sau khi nhân vật phe ta dùng kỹ năng kích hoạt <span style=\"color: #7EC236FF;\">Phản Ứng Nguyên Tố Thảo</span>: Gây 1 điểm <span style=\"color: #7EC236FF;\">Sát Thương Nguyên Tố Thảo</span>. (Mỗi hiệp 1 lần)\\n(Bộ bài có Collei mới có thể thêm)"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Tầm Nhìn Sắc Sảo",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>: Trang bị thẻ bài này khi nhân vật xuất chiến phe ta là <span style=\"color: #FFFFFFFF;\">Tighnari</span>.\\nTighnari sau khi trang bị thẻ bài này, lập tức dùng 1 lần <span style=\"color: #FFD780FF;\">Tầm Nhìn Sắc Sảo</span>.\\nTighnari có trang bị thẻ bài này trong thời gian áp dụng <span style=\"color: #FFFFFFFF;\">Vijnana Lan Tràn</span>, khi tiến hành <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Trọng Kích</span> sẽ giảm tiêu hao 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nguyên Tố Không Màu</span>.\\n(Bộ bài có Tighnari mới có thể thêm)"
     }
   },
   {
@@ -2692,6 +3206,21 @@
     }
   },
   {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Tây Phong Kiếm",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Sát thương nhân vật tạo ra +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật dùng \"Kỹ Năng Nguyên Tố\":</span> Nhân vật nhận được thêm 1 điểm <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Năng Lượng</span>. (Mỗi hiệp 1 lần)\\n(<span style=\"color: #FFFFFFFF;\">Nhân vật Kiếm Đơn</span> mới có thể trang bị. Nhân vật tối đa trang bị 1 Vũ Khí)"
+    }
+  },
+  {
     "_id": 312001,
     "id": "adventurers_bandana",
     "type": "artifact",
@@ -2782,6 +3311,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "Nón Hoa Mỹ",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Sau khi nhân vật khác của phe ta sử dụng Kỹ Năng Nộ:</span> Nhân vật áp dụng nhận 1 điểm <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Năng Lượng</span>.\\n(Nhân vật tối đa trang bị 1 Thánh Di Vật)"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "Nón Nguyên Soái",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Khi bắt đầu Giai Đoạn Hành Động:</span> Áp dụng <span style=\"color: #FFFFFFFF;\">Thái Sơn Vững Chãi</span> cho nhân vật. (Cung cấp 2 điểm <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Khiên</span>, bảo vệ nhân vật này.)\\n(Nhân vật tối đa trang bị 1 Thánh Di Vật)"
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Đền Narukami",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Mỗi hiệp tự động kích hoạt 1 lần:</span> Sinh ra 1 Xúc Xắc Nguyên Tố ngẫu nhiên.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Số Lần Khả Dụng</span>: 3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Khi phe ta đổi nhân vật: </span>Lần thay đổi này xem như <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Nhanh</span>, không phải <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hành Động Chiến Đấu</span>. (Mỗi hiệp 1 lần)"

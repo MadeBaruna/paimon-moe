@@ -78,6 +78,7 @@
     'jean',
     'mona',
     'tighnari',
+    'dehya',
   ];
 
   let ignoredRare = ['amber', 'kaeya', 'lisa'];

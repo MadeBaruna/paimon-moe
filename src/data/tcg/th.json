@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Eula",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "โจมตีปกติ",
+        "name": "Favonius Bladework - Edel",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "สกิลธาตุ",
+        "name": "Icetide Vortex",
+        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 2 หน่วย และหากตัวละครนี้ยังไม่ได้รับ <span style=\"color: #FFFFFFFF;\">Grimheart</span> จะทำให้ได้รับ <span style=\"color: #FFFFFFFF;\">Grimheart</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Grimheart",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครที่มีการ์ดใบนี้ใช้ Icetide Vortex:</span> ลบล้างสถานะนี้ และทำให้ความเสียหายในครั้งนี้ +2"
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "ท่าไม้ตาย",
+        "name": "Glacial Illumination",
+        "desc": "สร้าง<span style=\"color: #99FFFFFF;\">ความเสียหายน้ำแข็ง</span> 2 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Lightfall Sword</span>",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Lightfall Sword",
+          "desc": "เมื่อ <span style=\"color: #FFFFFFFF;\">Eula ใช้ \"การโจมตีปกติ\" หรือ \"สกิลธาตุ\":</span> การ์ดใบนี้จะสะสม \"ชั้นพลังงาน\" 2 หน่วย แต่ Eula จะไม่ได้รับพลังงาน\\n<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> ทิ้งการ์ดใบนี้ และสร้าง<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span> 2 หน่วย; ทุก 1 หน่วย ของ \"ชั้นพลังงาน\" จะทำให้ความเสียหายนี้ +1\\n(เอฟเฟกต์ที่ส่งผลกระทบต่อ \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>\" ของการ์ดใบนี้ จะถูกใช้เป็น \"<span style=\"color: #FFFFFFFF;\">ชั้นพลังงาน</span>\")"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "Rainbow Bladework",
-          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ฝ่ายเราใช้การโจมตีปกติ:</span> สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครฝ่ายเราใช้การโจมตีปกติ:</span> สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "Illusory Torrent",
         "desc": "[ติดตัว] ตอน<span style=\"color: #FFFFFFFF;\">ตัวละครนี้เป็นตัวละครที่เข้าต่อสู้ เมื่อฝ่ายเราทำการเปลี่ยนตัวละคร:</span> จะมองการเปลี่ยนนี้เป็น \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการด่วน</span>\" แทนที่ \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>\" (เทิร์นละ 1 ครั้ง)",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Sangonomiya Kokomi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "โจมตีปกติ",
+        "name": "The Shape of Water",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "สกิลธาตุ",
+        "name": "Kurage's Oath",
+        "desc": "ตัวละครนี้จะ<span style=\"color: #80C0FFFF;\">ติดสถานะธาตุน้ำ</span> และเรียก <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "Bake-Kurage",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย และรักษาตัวละครที่เข้าต่อสู้ของฝ่ายเรา 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "ท่าไม้ตาย",
+        "name": "Nereid's Ascension",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 3 หน่วย รักษาตัวละครทั้งหมดของฝ่ายเรา 1 หน่วย และตัวละครนี้จะได้รับ <span style=\"color: #FFFFFFFF;\">Ceremonial Garment</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Ceremonial Garment",
+          "desc": "<span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ของตัวละครที่ได้รับการ์ดใบนี้ จะสร้างความเสียหาย +1\\n<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครที่ได้รับการ์ดใบนี้ใช้การโจมตีปกติ:</span> รักษาตัวละครทั้งหมดของฝ่ายเรา 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Kamisato Ayato",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "โจมตีปกติ",
+        "name": "Kamisato Art: Marobashi",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "สกิลธาตุ",
+        "name": "Kamisato Art: Kyouka",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย และตัวละครนี้ได้รับ <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Takimeguri Kanka",
+          "desc": "<span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ของตัวละครที่มีการ์ดใบนี้ จะสร้างความเสียหาย +1 และ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ที่สร้าง จะเปลี่ยนเป็น <span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span>\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "ท่าไม้ตาย",
+        "name": "Kamisato Art: Suiyuu",
+        "desc": "สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 3 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Garden of Purity</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Garden of Purity",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">เมื่อสิ่งอัญเชิญนี้อยู่ในสนาม:</span> \"การโจมตีปกติ\" ของฝ่ายเรา จะสร้างความเสียหาย +1"
+        }
       }
     ]
   },
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Sparks 'n' Splash",
-          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครฝ่ายเราใช้สกิล:</span> สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span> 2 หน่วย ให้แก่ตัวละครที่เข้าต่อสู้ของฝ่ายเรา\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครฝ่ายเดียวกันใช้สกิล:</span> สร้าง<span style=\"color: #FF9999FF;\">ความเสียหายไฟ</span>แก่ตัวละครที่เข้าต่อสู้ของฝ่ายเดียวกัน 2 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
         }
       }
     ]
@@ -1216,6 +1420,74 @@
     ]
   },
   {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Kujou Sara",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "โจมตีปกติ",
+        "name": "Tengu Bowmanship",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "สกิลธาตุ",
+        "name": "Tengu Stormcall",
+        "desc": "สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Ambush</span>",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Tengu Juurai: Ambush",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 1 หน่วย และตัวละครที่เข้าต่อสู้ของฝ่ายเราได้รับ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Crowfeather Cover</span>\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "ท่าไม้ตาย",
+        "name": "Subjugation: Koukou Sendou",
+        "desc": "สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 1 หน่วย และเรียก <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Stormcluster</span>",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Tengu Juurai: Stormcluster",
+          "desc": "<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> สร้าง<span style=\"color: #FFACFFFF;\">ความเสียหายไฟฟ้า</span> 2 หน่วย และตัวละครที่เข้าต่อสู้ของฝ่ายเราได้รับ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Crowfeather Cover</span>\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Arataki Itto",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "โจมตีปกติ",
+        "name": "Fight Club Legend",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "สกิลธาตุ",
+        "name": "Masatsu Zetsugi: Akaushi Burst!",
+        "desc": "สร้าง<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span> 1 หน่วย เรียก <span style=\"color: #FFFFFFFF;\">Ushi</span> และตัวละครนี้จะได้รับ <span style=\"color: #FFFFFFFF;\">Superlative Superstrength</span>",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Ushi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราได้รับความเสียหาย:</span> ลบล้างความเสียหาย 1 หน่วย\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 1</span> ครั้ง และเมื่อถูกใช้หมดจะไม่ทิ้งการ์ดใบนี้\\n<span style=\"color: #FFFFFFFF;\">ระหว่างที่สิ่งอัญเชิญนี้อยู่ในสนาม จะเกิดขึ้นได้ 1 ครั้ง:</span> หลังจากที่ตัวละครที่เข้าต่อสู้ของฝ่ายเราได้รับความเสียหาย จะมอบ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superlative Superstrength</span> ให้แก่ Arataki Itto\\n<span style=\"color: #FFFFFFFF;\">จบเฟส:</span> ทิ้งการ์ดใบนี้ และสร้าง<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span> 1 หน่วย"
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "ท่าไม้ตาย",
+        "name": "Royal Descent: Behold, Itto the Evil!",
+        "desc": "สร้าง<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span> 5 หน่วย และตัวละครนี้จะได้รับ <span style=\"color: #FFFFFFFF;\">Raging Oni King</span>",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Raging Oni King",
+          "desc": "<span style=\"color: #FFFFFFFF;\">การโจมตีปกติ</span>ของตัวละครที่มีการ์ดใบนี้ จะสร้างความเสียหาย +2 และ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ที่สร้าง จะเปลี่ยนเป็น<span style=\"color: #FFE699FF;\">ความเสียหายหิน</span>\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>\\n<span style=\"color: #FFFFFFFF;\">หลังจากตัวละครที่มีการ์ดใบนี้ ใช้การโจมตีปกติ:</span> ได้รับ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superlative Superstrength</span> (เทิร์นละ 1 ครั้ง)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1538,6 +1878,68 @@
     ]
   },
   {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Tighnari",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "โจมตีปกติ",
+        "name": "Khanda Barrier-Buster",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 2 หน่วย",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "สกิลธาตุ",
+        "name": "Vijnana-Phala Mine",
+        "desc": "สร้าง<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> 2 หน่วย และตัวละครนี้จะได้รับ <span style=\"color: #FFFFFFFF;\">Vijnana Suffusion</span>",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Vijnana Suffusion",
+          "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อตัวละครที่มีการ์ดใบนี้ใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ชาร์จโจมตี</span>:</span> <span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายกายภาพ</span>ที่สร้างจะเปลี่ยนเป็น<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> และจะอัญเชิญ <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Clusterbloom Arrow</span> ออกมาเมื่อจบสกิล\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "ท่าไม้ตาย",
+        "name": "Fashioner's Tanglevine Shaft",
+        "desc": "สร้าง<span style=\"color: #FFFFFFFF;\">ความเสียหายกายภาพ</span> 4 หน่วย และจะสร้าง<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">ความเสียหายทะลวง</span></span> 1 หน่วย ให้แก่ตัวละครนอกสนามทั้งหมดของฝ่ายตรงข้าม",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
     "_id": 2201,
     "id": "rhodeia_of_loch",
     "type": "character",
@@ -1578,7 +1980,7 @@
           "_id": 122010,
           "id": "oceanid_mimic",
           "name": "Oceanid Mimic",
-          "desc": "Oceanid Mimic มีอยู่ทั้งหมด 3 ชนิด:\\n<span style=\"color: #FFFFFFFF;\">Ferret</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย สามารถใช้ได้ 2 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย สามารถใช้ได้ 3 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: สามารถป้องกันความเสียหายได้ 2 หน่วย และสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย ในตอนที่ถูกใช้จนหมด"
+          "desc": "Oceanid Mimic มีอยู่ทั้งหมด 3 ชนิด:\\n<span style=\"color: #FFFFFFFF;\">Squirrel</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย สามารถใช้ได้ 2 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย สามารถใช้ได้ 3 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: สามารถป้องกันความเสียหายได้ 2 หน่วย และสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย ในตอนที่ถูกใช้จนหมด"
         }
       },
       {
@@ -1596,7 +1998,7 @@
           "_id": 122010,
           "id": "oceanid_mimic",
           "name": "Oceanid Mimic",
-          "desc": "Oceanid Mimic มีอยู่ทั้งหมด 3 ชนิด:\\n<span style=\"color: #FFFFFFFF;\">Ferret</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย สามารถใช้ได้ 2 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย สามารถใช้ได้ 3 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: สามารถป้องกันความเสียหายได้ 2 หน่วย และสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย ในตอนที่ถูกใช้จนหมด"
+          "desc": "Oceanid Mimic มีอยู่ทั้งหมด 3 ชนิด:\\n<span style=\"color: #FFFFFFFF;\">Squirrel</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย สามารถใช้ได้ 2 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: เมื่อจบเฟสจะสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 1 หน่วย สามารถใช้ได้ 3 ครั้ง\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: สามารถป้องกันความเสียหายได้ 2 หน่วย และสร้าง<span style=\"color: #80C0FFFF;\">ความเสียหายน้ำ</span> 2 หน่วย ในตอนที่ถูกใช้จนหมด"
         }
       },
       {
@@ -1658,7 +2060,7 @@
           "_id": 122021,
           "id": "refraction",
           "name": "Refraction",
-          "desc": "ตัวละครที่มีการ์ดใบนี้ จะได้รับความเสียหายน้ำ +1\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>\\n(แต่ละฝ่ายจะมีสถานะนี้ในสนาม ได้มากสุดหนึ่งอย่าง)"
+          "desc": "ตัวละครที่มีการ์ดใบนี้ จะได้รับความเสียหายน้ำ +1\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนเทิร์นต่อเนื่อง</span>: 2</span>\\n(แต่ละฝ่ายจะมีสถานะนี้ในสนาม ได้มากสุดหนึ่งอัน)"
         }
       },
       {
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Wellspring of War-Lust",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Eula</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Eula ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Wellspring of War-Lust</span> หนึ่งครั้งโดยทันที\\nเมื่อ Eula ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Wellspring of War-Lust</span> จะสะสม \"ชั้นพลังงาน\" ให้แก่ <span style=\"color: #FFFFFFFF;\">Lightfall Sword</span> เพิ่มอีก 1 หน่วย\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Eula อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Mona</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Mona ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Prophecy of Submersion</span> หนึ่งครั้งโดยทันที\\nระหว่างช่วงเวลาที่ Mona ที่มีการ์ดใบนี้เข้าสู่การต่อสู้ ความเสียหายเพิ่มเติมของ<span style=\"color: #80C0FFFF;\">ปฏิกิริยาที่เกี่ยวกับธาตุน้ำ</span> ที่ฝ่ายเราทำให้เกิดจะ +2\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Mona อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Tamanooya's Casket",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Sangonomiya Kokomi</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Sangonomiya Kokomi ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Tamanooya's Casket</span> หนึ่งครั้งโดยทันที\\nเมื่อ Sangonomiya Kokomi ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Tamanooya's Casket</span>: หากมี <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> อยู่ในสนาม จะรีเฟรช<span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>ของมัน\\nระหว่างช่วงเวลาคงอยู่ของ <span style=\"color: #FFFFFFFF;\">Ceremonial Garment</span> <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> จะสร้างความเสียหาย +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Sangonomiya Kokomi อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Kyouka Fuushi",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Kamisato Ayato</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Kamisato Ayato ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Kyouka Fuushi</span> หนึ่งครั้งโดยทันที\\nเมื่อ Kamisato Ayato ที่มีการ์ดใบนี้ทำให้เกิดเอฟเฟกต์ของ <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span> จะสร้างความเสียหายแก่ศัตรูที่มีค่าพลังชีวิตไม่เกิน 6 หน่วย เพิ่มเติม +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Kamisato Ayato อยู่ภายในเด็คเท่านั้น)"
     }
   },
   {
@@ -2275,6 +2733,26 @@
     }
   },
   {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Sin of Pride",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Kujou Sara</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Kujou Sara ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Sin of Pride</span> หนึ่งครั้งโดยทันที\\nเมื่อ Kujou Sara ที่มีการ์ดใบนี้อยู่ในสนาม ตัวละคร<span style=\"color: #FFACFFFF;\">ธาตุไฟฟ้า</span>ที่มี <span style=\"color: #FFFFFFFF;\">Crowfeather Cover</span> ของฝ่ายเรา จะสร้างความเสียหายจาก<span style=\"color: #FFFFFFFF;\">สกิลธาตุ</span> และ<span style=\"color: #FFFFFFFF;\">ท่าไม้ตาย</span>เพิ่มเติม +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Kujou Sara อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
     "_id": 215011,
     "id": "chaotic_entropy",
     "type": "talent",
@@ -2347,6 +2825,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Arataki Ichiban",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Arataki Itto</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Arataki Itto ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Arataki Ichiban</span> หนึ่งครั้งโดยทันที\\nในแต่ละเทิร์นเมื่อ Arataki Itto ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Arataki Ichiban</span> เป็นครั้งที่ 2 รวมถึงหลังจากนั้น: หากทำให้เกิด <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superlative Superstrength</span> จะสร้างความเสียหายเพิ่มเติม +1\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Arataki Itto อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Collei</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Collei ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Floral Sidewinder</span> หนึ่งครั้งโดยทันที\\nในเทิร์นที่ Collei ที่มีการ์ดใบนี้ใช้ <span style=\"color: #FFFFFFFF;\">Floral Sidewinder</span> หลังจากสกิลของตัวละครฝ่ายเราทำให้เกิด<span style=\"color: #7EC236FF;\">ปฏิกิริยาที่เกี่ยวกับธาตุไม้</span>: สร้าง<span style=\"color: #7EC236FF;\">ความเสียหายไม้</span> 1 หน่วย (เทิร์นละ 1 ครั้ง)\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Collei อยู่ภายในเด็คเท่านั้น)"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Keen Sight",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>: เมื่อตัวละครที่เข้าต่อสู้ของฝ่ายเราเป็น <span style=\"color: #FFFFFFFF;\">Tighnari</span> และติดตั้งการ์ดใบนี้\\nหลังจากที่ Tighnari ติดตั้งการ์ดใบนี้ จะใช้ <span style=\"color: #FFD780FF;\">Keen Sight</span> หนึ่งครั้งโดยทันที\\nระหว่างช่วงเวลาที่ Tighnari ที่มีการ์ดใบนี้อยู่ในสถานะ <span style=\"color: #FFFFFFFF;\">Vijnana Suffusion</span> เมื่อใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ชาร์จโจมตี</span> จะใช้<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ธาตุไร้สี</span>น้อยลง 1 ลูก\\n(เข้าร่วมเด็คได้ต่อเมื่อมี Tighnari อยู่ภายในเด็คเท่านั้น)"
     }
   },
   {
@@ -2692,6 +3206,21 @@
     }
   },
   {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Favonius Sword",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ตัวละครสร้างความเสียหาย +1</span>\\n<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครใช้ \"สกิลธาตุ\":</span> ตัวละครได้รับ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> เพิ่ม 1 หน่วย (เทิร์นละ 1 ครั้ง)\\n(สวมใส่ได้กับ<span style=\"color: #FFFFFFFF;\">ตัวละครประเภท \"ดาบ\"</span> เท่านั้น ตัวละครจะสามารถสวมใส่ \"อาวุธ\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
     "_id": 312001,
     "id": "adventurers_bandana",
     "type": "artifact",
@@ -2782,6 +3311,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "Ornate Kabuto",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">หลังจากที่ตัวละครอื่นของฝ่ายเราใช้ท่าไม้ตาย:</span> ตัวละครที่มีการ์ดใบนี้จะได้รับ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">พลังงาน</span> 1 หน่วย\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "General's Ancient Helm",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อแอ็กชันเฟสเริ่มต้น:</span> มอบ <span style=\"color: #FFFFFFFF;\">\"Unmovable Mountain\"</span> ให้แก่ตัวละคร (มอบ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">โล่ป้องกัน</span> 2 หน่วย เพื่อปกป้องตัวละครนี้)\\n(ตัวละครจะสามารถสวมใส่ \"อาร์ติแฟกต์\" ได้มากสุด 1 ชิ้น)"
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Grand Narukami Shrine",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">ในแต่ละเทิร์นจะเกิดขึ้น 1 ครั้ง โดยอัตโนมัติ:</span> สุ่มทำให้เกิด Elemental Dice พื้นฐาน 1 ลูก\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">จำนวนครั้งที่ใช้ได้</span>: 3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">เมื่อฝ่ายเราทำการเปลี่ยนตัวละคร:</span> จะมองการเปลี่ยนนี้เป็น \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการด่วน</span>\" แทนที่ \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">ดำเนินการต่อสู้</span>\" (เทิร์นละ 1 ครั้ง)"

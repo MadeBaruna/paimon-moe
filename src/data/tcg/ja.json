@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "エウルア",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "通常攻撃",
+        "name": "西風剣術·旧貴族",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "元素スキル",
+        "name": "氷潮の渦",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を2与える。本キャラに<span style=\"color: #FFFFFFFF;\">冷酷な心</span>が付与されていない場合、<span style=\"color: #FFFFFFFF;\">冷酷な心</span>を付与する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "冷酷な心",
+          "desc": "<span style=\"color: #FFFFFFFF;\">付与されたキャラが氷潮の渦を発動した時</span>、この状態を解除して今回のダメージ+2。"
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "元素爆発",
+        "name": "氷浪の光剣",
+        "desc": "<span style=\"color: #99FFFFFF;\">氷元素ダメージ</span>を2与え、<span style=\"color: #FFFFFFFF;\">光臨の剣</span>を召喚する。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "光臨の剣",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エウルアが「通常攻撃」または「元素スキル」を発動すると</span>、このカードに「エネルギー量」を2層重ねる。ただし、エウルアはチャージを獲得できない。\\n<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>このカードを破棄し、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>を2与える。「エネルギー量」1層につき、このダメージ+1。\\n（このカードの「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>」に影響を与える効果は代わりに「<span style=\"color: #FFFFFFFF;\">エネルギー量</span>」に影響を与えるようになる。）"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "虹剣勢",
-          "desc": "<span style=\"color: #FFFFFFFF;\">味方のキャラが通常攻撃を発動した後</span>、<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方のキャラが通常攻撃を発動した後</span>、<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "虚実流動",
         "desc": "【固有】<span style=\"color: #FFFFFFFF;\">本キャラが出撃キャラであり、味方がキャラチェンジを行う時</span>、それが「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>」ではなく、「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">クイックアクション</span>」とみなされる。（各ラウンドで1回のみ）",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "珊瑚宮心海",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "通常攻撃",
+        "name": "水の常形",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与える。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "元素スキル",
+        "name": "海月の誓い",
+        "desc": "本キャラは<span style=\"color: #80C0FFFF;\">水元素付着</span>状態になり、<span style=\"color: #FFFFFFFF;\">化海月</span>を召喚する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "化海月",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を1与え、味方の出撃キャラのHPを1回復する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "元素爆発",
+        "name": "海人の羽衣",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を3与え、味方のチーム全員のHPを1回復し、本キャラに<span style=\"color: #FFFFFFFF;\">儀来羽衣</span>を付与する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "儀来羽衣",
+          "desc": "付与されたキャラの<span style=\"color: #FFFFFFFF;\">通常攻撃</span>の与えるダメージ+1。\\n<span style=\"color: #FFFFFFFF;\">付与されたキャラが通常攻撃を発動した後</span>、味方のチーム全員のHPを1回復する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "神里綾人",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "通常攻撃",
+        "name": "神里流·転",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "元素スキル",
+        "name": "神里流·鏡花",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与え、本キャラに<span style=\"color: #FFFFFFFF;\">滝廻鑑花</span>を付与する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "滝廻鑑花",
+          "desc": "付与されたキャラの<span style=\"color: #FFFFFFFF;\">通常攻撃</span>の与えるダメージ+1、かつ与える<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>へと変わる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "元素爆発",
+        "name": "神里流·水囿",
+        "desc": "<span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を3与え、<span style=\"color: #FFFFFFFF;\">清浄之園囿</span>を召喚する。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "清浄之園囿",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #80C0FFFF;\">水元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">この召喚物がフィールドに存在する時</span>、味方キャラの「通常攻撃」の与えるダメージ+1。"
+        }
       }
     ]
   },
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "ドッカン花火",
-          "desc": "<span style=\"color: #FFFFFFFF;\">味方のキャラがスキルを発動した後</span>、相手の出撃キャラに<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">チームのキャラがスキルを発動した後</span>、そのチームの出撃キャラに<span style=\"color: #FF9999FF;\">炎元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
         }
       }
     ]
@@ -1216,6 +1420,74 @@
     ]
   },
   {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "九条裟羅",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "通常攻撃",
+        "name": "天狗伝弓術",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "元素スキル",
+        "name": "烏天狗雷霆召呪",
+        "desc": "<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">天狗呪雷·伏</span>を召喚する。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "天狗呪雷·伏",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を1与え、味方の出撃キャラに<span style=\"color: #FFFFFFFF; text-decoration: underline;\">鳴煌護持</span>を付与する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "元素爆発",
+        "name": "煌煌千道鎮式",
+        "desc": "<span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">天狗呪雷·雷礫</span>を召喚する。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "天狗呪雷·雷礫",
+          "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #FFACFFFF;\">雷元素ダメージ</span>を2与え、味方の出撃キャラに<span style=\"color: #FFFFFFFF; text-decoration: underline;\">鳴煌護持</span>を付与する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1470,7 +1742,75 @@
           "_id": 116022,
           "id": "sweeping_time",
           "name": "大掃除",
-          "desc": "キャラが通常攻撃をする時、必要な<span style=\"color: #FFE699FF;\">岩元素</span>サイコロの数-1。（各ラウンドで1回のみ）\\nキャラの<span style=\"color: #FFFFFFFF;\">通常攻撃</span>の与えるダメージ+2、かつ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>へと変わる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+          "desc": "キャラが通常攻撃をする時、必要な<span style=\"color: #FFE699FF;\">岩元素</span>-1。（各ラウンドで1回のみ）\\nキャラの<span style=\"color: #FFFFFFFF;\">通常攻撃</span>の与えるダメージ+2、かつ<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>へと変わる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "荒瀧一斗",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "通常攻撃",
+        "name": "喧嘩屋伝説",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "元素スキル",
+        "name": "魔殺絶技·岩牛発破！",
+        "desc": "<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>を1与え、<span style=\"color: #FFFFFFFF;\">丑雄</span>を召喚し、本キャラに<span style=\"color: #FFFFFFFF;\">乱神の怪力</span>を付与する。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "丑雄",
+          "desc": "<span style=\"color: #FFFFFFFF;\">味方の出撃キャラがダメージを受けた時</span>、ダメージを1相殺してくれる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：1</span>（回数が尽きても破棄されることはない）。\\n<span style=\"color: #FFFFFFFF;\">この召喚物がフィールドに存在する時、下記効果を1回発動できる</span>。味方の出撃キャラがダメージを受けた後、荒瀧一斗に<span style=\"color: #FFFFFFFF; text-decoration: underline;\">乱神の怪力</span>を付与する。\\n<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span>このカードを破棄し、<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>を1与える。"
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "元素爆発",
+        "name": "最凶鬼王·一斗轟臨！！",
+        "desc": "<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>を5与え、本キャラに<span style=\"color: #FFFFFFFF;\">憤怒の鬼王</span>を付与する。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "憤怒の鬼王",
+          "desc": "付与されたキャラの<span style=\"color: #FFFFFFFF;\">通常攻撃</span>の与えるダメージ+2、かつ与える<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #FFE699FF;\">岩元素ダメージ</span>へと変わる。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">継続ラウンド数</span>：2</span>\\n<span style=\"color: #FFFFFFFF;\">付与されたキャラが通常攻撃を発動した後</span>、付与されたキャラに<span style=\"color: #FFFFFFFF; text-decoration: underline;\">乱神の怪力</span>を付与する。（各ラウンドで1回のみ）"
         }
       }
     ]
@@ -1534,6 +1874,68 @@
           "name": "コレアンバー",
           "desc": "<span style=\"color: #FFFFFFFF;\">エンドフェーズ：</span><span style=\"color: #7EC236FF;\">草元素ダメージ</span>を2与える。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "ティナリ",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "通常攻撃",
+        "name": "蔵蘊散悩",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を2与える。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "元素スキル",
+        "name": "識果榴弾",
+        "desc": "<span style=\"color: #7EC236FF;\">草元素ダメージ</span>を2与え、本キャラに<span style=\"color: #FFFFFFFF;\">通塞識</span>を付与する。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "通塞識",
+          "desc": "<span style=\"color: #FFFFFFFF;\">付与されたキャラが<span style=\"color: #FFFFFFFF; text-decoration: underline;\">重撃</span>を行う時</span>、与える<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理ダメージ</span>が<span style=\"color: #7EC236FF;\">草元素ダメージ</span>へと変わる。また、スキル発動完了後、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">蔵蘊の花矢</span>を召喚する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "元素爆発",
+        "name": "造生·蔓纏いの矢",
+        "desc": "<span style=\"color: #FFFFFFFF;\">物理ダメージ</span>を4与え、相手の待機キャラ全員に<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">貫通ダメージ</span></span>を1与える。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
       }
     ]
   },
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "戦意の表れ",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">エウルア</span>の時、このカードを装備できる。\\nエウルアがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">戦意の表れ</span>を1回発動する。\\nこのカードを装備したエウルアが<span style=\"color: #FFFFFFFF;\">戦意の表れ</span>を発動する時、追加で<span style=\"color: #FFFFFFFF;\">光臨の剣</span>に「エネルギー量」を1層重ねる。\\n（デッキにエウルアが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">モナ</span>の時、このカードを装備できる。\\nモナがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">沈没の預言</span>を1回発動する。\\nこのカードを装備したモナの出撃中、味方が引き起こした<span style=\"color: #80C0FFFF;\">水元素関連反応</span>のダメージがさらに+2。\\n（このカードはデッキにモナが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "葛籠の中の玉櫛",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">珊瑚宮心海</span>の時、このカードを装備できる。\\n珊瑚宮心海がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">葛籠の中の玉櫛</span>を1回発動する。\\nこのカードを装備した珊瑚宮心海が<span style=\"color: #FFFFFFFF;\">葛籠の中の玉櫛</span>を発動する時、もし<span style=\"color: #FFFFFFFF;\">化海月</span>がフィールドに存在する場合、その<span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>を更新する。\\n<span style=\"color: #FFFFFFFF;\">儀来羽衣</span>が存在する間、<span style=\"color: #FFFFFFFF;\">化海月</span>の与えるダメージ+1。\\n（デッキに珊瑚宮心海が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "鏡華風姿",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">神里綾人</span>の時、このカードを装備できる。\\n神里綾人がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">鏡華風姿</span>を1回発動する。\\nこのカードを装備した神里綾人が<span style=\"color: #FFFFFFFF;\">滝廻鑑花</span>の効果を発動する時、残りHPが6以下の目標へのダメージがさらに+1。\\n（このカードはデッキに神里綾人が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2223,7 +2681,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">レザー</span>の時、このカードを装備できる。\\nレザーがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">覚醒</span>を1回発動する。\\nこのカードを装備したレザー<span style=\"color: #FFFFFFFF;\">が覚醒を発動した後</span>、味方の雷元素キャラの1体がチャージを1獲得する。（出撃キャラ優先）\\n（デッキにレザーが含まれている場合のみ、デッキに追加できる）"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">レザー</span>の時、このカードを装備できる。\\nレザーがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">覚醒</span>を1回発動する。\\nこのカードを装備したレザーが<span style=\"color: #FFFFFFFF;\">覚醒</span>を発動した後、味方の雷元素キャラの1体がチャージを1獲得する。（出撃キャラ優先）\\n（デッキにレザーが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2272,6 +2730,26 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">北斗</span>の時、このカードを装備できる。\\n北斗がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">満天の霹靂</span>を1回発動する。\\nこのカードを装備した北斗が<span style=\"color: #FFFFFFFF;\">満天の霹靂</span>を発動すると、もし<span style=\"color: #FFFFFFFF; text-decoration: underline;\">スキル準備</span>期間中にダメージを受けた場合、本ラウンドで北斗の「通常攻撃」に必要な<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>-1。（最大2回のみ発動可能）\\n（このカードはデッキに北斗が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "我界",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">九条裟羅</span>の時、このカードを装備できる。\\n九条裟羅がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">我界</span>を1回発動する。\\nこのカードを装備した九条裟羅がフィールドにいる時、<span style=\"color: #FFFFFFFF;\">鳴煌護持</span>が付与されている味方の<span style=\"color: #FFACFFFF;\">雷元素</span>キャラの<span style=\"color: #FFFFFFFF;\">元素スキル</span>および<span style=\"color: #FFFFFFFF;\">元素爆発</span>の与えるダメージがさらに+1。\\n（このカードはデッキに九条裟羅が含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2347,6 +2825,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "荒瀧第一",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">荒瀧一斗</span>の時、このカードを装備できる。\\n荒瀧一斗がこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">荒瀧第一</span>を1回発動する。\\nこのカードを装備した荒瀧一斗が各ラウンドで2回以上<span style=\"color: #FFFFFFFF;\">荒瀧第一</span>を発動する時、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">乱神の怪力</span>が発動するとダメージがさらに+1。\\n（このカードはデッキに荒瀧一斗が含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">コレイ</span>の時、このカードを装備できる。\\nコレイがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">フライリーフワインダー</span>を1回発動する。\\nこのカードを装備したコレイが<span style=\"color: #FFFFFFFF;\">フライリーフワインダー</span>を発動したラウンドにおいて、味方のキャラのスキルが<span style=\"color: #7EC236FF;\">草元素関連反応</span>を引き起こすと<span style=\"color: #7EC236FF;\">草元素ダメージ</span>を1与える。（各ラウンドで1回のみ）\\n（このカードはデッキにコレイが含まれている場合のみ、デッキに追加できる）"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "深き眼識",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>：味方の出撃キャラが<span style=\"color: #FFFFFFFF;\">ティナリ</span>の時、このカードを装備できる。\\nティナリがこのカードを装備した後、直ちに<span style=\"color: #FFD780FF;\">深き眼識</span>を1回発動する。\\nこのカードを装備したティナリが<span style=\"color: #FFFFFFFF;\">通塞識</span>状態中、<span style=\"color: #FFFFFFFF; text-decoration: underline;\">重撃</span>を行う時に必要な<span style=\"color: #FFFFFFFF; text-decoration: underline;\">無色元素</span>-1。\\n（このカードはデッキにティナリが含まれている場合のみ、デッキに追加できる）"
     }
   },
   {
@@ -2628,7 +3142,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">登場時、</span>チームに「璃月」のキャラが1体存在するごとに、このカードは装備キャラに<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を1</span>提供する。（最大3まで）\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">登場時</span>、チームに「璃月」のキャラが1体存在するごとに、このカードは装備キャラに<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を1</span>提供する。（最大3まで）\\n（<span style=\"color: #FFFFFFFF;\">「長柄武器」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
     }
   },
   {
@@ -2689,6 +3203,21 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">相手がスキルを発動した後</span>、装備キャラが「出撃キャラ」である場合、該当キャラのHPを1回復する。（各ラウンド最大2回まで）\\n（<span style=\"color: #FFFFFFFF;\">「片手剣」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "西風剣",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">キャラの与えるダメージ+1</span>。\\n<span style=\"color: #FFFFFFFF;\">キャラが「元素スキル」を発動した後</span>、追加で<span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を1獲得する。（各ラウンドで1回のみ）\\n（<span style=\"color: #FFFFFFFF;\">「片手剣」キャラ</span>のみ装備可能。キャラが装備できる「武器」は最大1つまで）"
     }
   },
   {
@@ -2782,6 +3311,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "華飾の兜",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">他の味方キャラが元素爆発を発動した後</span>、装備キャラが<span style=\"color: #FFFFFFFF; text-decoration: underline;\">チャージ</span>を1獲得する。\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "将帥の兜",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">アクションフェーズ開始時</span>、キャラに<span style=\"color: #FFFFFFFF;\">「揺るぎない」</span>を付与する。（<span style=\"color: #FFFFFFFF; text-decoration: underline;\">シールド</span>を2提供し、該当キャラを守る。）\\n（キャラが装備できる「聖遺物」は最大1つまで）"
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "鳴神大社",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">各ラウンドで自動的に1回発動される：</span>基本元素サイコロをランダムで1つ生成する。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">使用可能回数</span>：3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">味方がキャラチェンジを行う時</span>、それが「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">戦闘アクション</span>」ではなく、「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">クイックアクション</span>」とみなされる。（各ラウンドで1回のみ）"
