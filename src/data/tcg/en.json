@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Eula",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "Normal Attack",
+        "name": "Favonius Bladework - Edel",
+        "desc": "Deals 2 <span style=\"color: #FFFFFFFF;\">Physical DMG</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "Elemental Skill",
+        "name": "Icetide Vortex",
+        "desc": "Deals 2 <span style=\"color: #99FFFFFF;\">Cryo DMG</span>. If this character has not yet gained <span style=\"color: #FFFFFFFF;\">Grimheart</span>, they will gain <span style=\"color: #FFFFFFFF;\">Grimheart</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Grimheart",
+          "desc": "<span style=\"color: #FFFFFFFF;\">After the character to which this is attached uses Icetide Vortex:</span> Remove this status, DMG +2 for this instance."
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "Elemental Burst",
+        "name": "Glacial Illumination",
+        "desc": "Deals 2 <span style=\"color: #99FFFFFF;\">Cryo DMG</span>, summons 1 <span style=\"color: #FFFFFFFF;\">Lightfall Sword</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Lightfall Sword",
+          "desc": "<span style=\"color: #FFFFFFFF;\">When Eula uses a Normal Attack or Elemental Skill</span>, this card will accumulate 2 Zeal stacks, but Eula will not gain Energy.\\n<span style=\"color: #FFFFFFFF;\">End Phase:</span> Discard this card and deal 2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span>. Each Zeal stack adds 1 DMG to this damage instance.\\n(Effects on this card's <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span> will apply to <span style=\"color: #FFFFFFFF;\">Zeal</span>.)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "Rainbow Bladework",
-          "desc": "<span style=\"color: #FFFFFFFF;\">After your character uses a Normal Attack:</span> Deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">After your character uses a Normal Attack:</span> Deal 1 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "Illusory Torrent",
         "desc": "(Passive) <span style=\"color: #FFFFFFFF;\">When you perform \"Switch Character\" while Mona is your active character:</span> This switch is considered a <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fast Action</span> instead of a <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>. (Once per Round)",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Sangonomiya Kokomi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "Normal Attack",
+        "name": "The Shape of Water",
+        "desc": "Deals 1 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "Elemental Skill",
+        "name": "Kurage's Oath",
+        "desc": "This character gains <span style=\"color: #80C0FFFF;\">Hydro Application</span> and summons 1 <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "Bake-Kurage",
+          "desc": "<span style=\"color: #FFFFFFFF;\">End Phase:</span> Deal 1 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>, heal your active character for 1 HP.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "Elemental Burst",
+        "name": "Nereid's Ascension",
+        "desc": "Deals 3 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>. Heals all allied characters for 1 point. This character gains <span style=\"color: #FFFFFFFF;\">Ceremonial Garment</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Ceremonial Garment",
+          "desc": "The character to which this is attached has their <span style=\"color: #FFFFFFFF;\">Normal Attacks</span> deal +1 DMG.\\n<span style=\"color: #FFFFFFFF;\">After the character to which this is attached uses a Normal Attack:</span> Heal 1 HP for all your characters.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duration (Rounds)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Kamisato Ayato",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "Normal Attack",
+        "name": "Kamisato Art: Marobashi",
+        "desc": "Deals 2 <span style=\"color: #FFFFFFFF;\">Physical DMG</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "Elemental Skill",
+        "name": "Kamisato Art: Kyouka",
+        "desc": "Deals 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>. This character gains <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Takimeguri Kanka",
+          "desc": "The character to which this is attached has their <span style=\"color: #FFFFFFFF;\">Normal Attacks</span> deal +1 DMG, and their <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span> dealt converted to <span style=\"color: #80C0FFFF;\">Hydro DMG</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "Elemental Burst",
+        "name": "Kamisato Art: Suiyuu",
+        "desc": "Deals 3 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>, summons 1 <span style=\"color: #FFFFFFFF;\">Garden of Purity</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Garden of Purity",
+          "desc": "<span style=\"color: #FFFFFFFF;\">End Phase:</span> Deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">When this Summon is on the field:</span> Your characters' Normal Attacks deal +1 DMG."
+        }
       }
     ]
   },
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Sparks 'n' Splash",
-          "desc": "<span style=\"color: #FFFFFFFF;\">After your character uses a Skill:</span> Sparks 'n' Splash deals 2 <span style=\"color: #FF9999FF;\">Pyro DMG</span> to your active character.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">After a character to which Sparks 'n' Splash is attached uses a Skill:</span> Deals 2 <span style=\"color: #FF9999FF;\">Pyro DMG</span> to their team's active character.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 2</span>"
         }
       }
     ]
@@ -1216,6 +1420,74 @@
     ]
   },
   {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Kujou Sara",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "Normal Attack",
+        "name": "Tengu Bowmanship",
+        "desc": "Deals 2 <span style=\"color: #FFFFFFFF;\">Physical DMG</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "Elemental Skill",
+        "name": "Tengu Stormcall",
+        "desc": "Deals 1 <span style=\"color: #FFACFFFF;\">Electro DMG</span>, summons 1 <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Ambush</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Tengu Juurai: Ambush",
+          "desc": "<span style=\"color: #FFFFFFFF;\">End Phase:</span> Deal 1 <span style=\"color: #FFACFFFF;\">Electro DMG</span>, applies <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Crowfeather Cover</span> to friendly active character.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "Elemental Burst",
+        "name": "Subjugation: Koukou Sendou",
+        "desc": "Deals 1 <span style=\"color: #FFACFFFF;\">Electro DMG</span>, summons 1 <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Stormcluster</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Tengu Juurai: Stormcluster",
+          "desc": "<span style=\"color: #FFFFFFFF;\">End Phase:</span> Deal 2 <span style=\"color: #FFACFFFF;\">Electro DMG</span>, applies <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Crowfeather Cover</span> to friendly active character.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Arataki Itto",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "Normal Attack",
+        "name": "Fight Club Legend",
+        "desc": "Deals 2 <span style=\"color: #FFFFFFFF;\">Physical DMG</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "Elemental Skill",
+        "name": "Masatsu Zetsugi: Akaushi Burst!",
+        "desc": "Deals 1 <span style=\"color: #FFE699FF;\">Geo DMG</span>. Summons <span style=\"color: #FFFFFFFF;\">Ushi</span>. This character gains <span style=\"color: #FFFFFFFF;\">Superlative Superstrength</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Ushi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">When your active character receives DMG: </span>Decrease DMG taken by 1.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 1</span>. When the Usage is depleted, this card will not be discarded.\\n<span style=\"color: #FFFFFFFF;\">Can be triggered once while this Summon is present: </span>When your active character receives DMG, Arataki Itto gains <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superlative Superstrength</span>.\\n<span style=\"color: #FFFFFFFF;\">End Phase:</span> Discard this card, deal 1 <span style=\"color: #FFE699FF;\">Geo DMG</span>."
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "Elemental Burst",
+        "name": "Royal Descent: Behold, Itto the Evil!",
+        "desc": "Deals 5 <span style=\"color: #FFE699FF;\">Geo DMG</span>. This character gains <span style=\"color: #FFFFFFFF;\">Raging Oni King</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Raging Oni King",
+          "desc": "The character to which this is attached has their <span style=\"color: #FFFFFFFF;\">Normal Attacks</span> deal +2 DMG, and their <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span> dealt converted to <span style=\"color: #FFE699FF;\">Geo DMG</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duration (Rounds)</span>: 2</span>\\n<span style=\"color: #FFFFFFFF;\">After the character to which this is attached uses a Normal Attack:</span> Gains <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superlative Superstrength</span>. (Once per Round)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1538,6 +1878,68 @@
     ]
   },
   {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Tighnari",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "Normal Attack",
+        "name": "Khanda Barrier-Buster",
+        "desc": "Deals 2 <span style=\"color: #FFFFFFFF;\">Physical DMG</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "Elemental Skill",
+        "name": "Vijnana-Phala Mine",
+        "desc": "Deals 2 <span style=\"color: #7EC236FF;\">Dendro DMG</span>. This character gains <span style=\"color: #FFFFFFFF;\">Vijnana Suffusion</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Vijnana Suffusion",
+          "desc": "<span style=\"color: #FFFFFFFF;\">When the character to which this is attached uses a <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charged Attack</span>: </span>Their <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Physical DMG</span> dealt will be converted to <span style=\"color: #7EC236FF;\">Dendro DMG</span> and after the Skill DMG is finalized, summon 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Clusterbloom Arrow</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "Elemental Burst",
+        "name": "Fashioner's Tanglevine Shaft",
+        "desc": "Deals 4 <span style=\"color: #FFFFFFFF;\">Physical DMG</span>, deals 1 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Piercing DMG</span></span> to all opposing characters on standby.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
     "_id": 2201,
     "id": "rhodeia_of_loch",
     "type": "character",
@@ -1578,7 +1980,7 @@
           "_id": 122010,
           "id": "oceanid_mimic",
           "name": "Oceanid Mimic",
-          "desc": "There are 3 kinds of Oceanid Mimic in total:\\n<span style=\"color: #FFFFFFFF;\">Ferret</span>: Deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 2 Uses.\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: Deal 1 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 3 Uses.\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: Can block 2 DMG. Once this effect is depleted, deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>."
+          "desc": "There are 3 kinds of Oceanid Mimic in total:\\n<span style=\"color: #FFFFFFFF;\">Squirrel</span>: Deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 2 Uses.\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: Deal 1 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 3 Uses.\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: Can block 2 DMG. Once this effect is depleted, deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>."
         }
       },
       {
@@ -1596,7 +1998,7 @@
           "_id": 122010,
           "id": "oceanid_mimic",
           "name": "Oceanid Mimic",
-          "desc": "There are 3 kinds of Oceanid Mimic in total:\\n<span style=\"color: #FFFFFFFF;\">Ferret</span>: Deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 2 Uses.\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: Deal 1 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 3 Uses.\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: Can block 2 DMG. Once this effect is depleted, deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>."
+          "desc": "There are 3 kinds of Oceanid Mimic in total:\\n<span style=\"color: #FFFFFFFF;\">Squirrel</span>: Deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 2 Uses.\\n<span style=\"color: #FFFFFFFF;\">Raptor</span>: Deal 1 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 3 Uses.\\n<span style=\"color: #FFFFFFFF;\">Frog</span>: Can block 2 DMG. Once this effect is depleted, deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>."
         }
       },
       {
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Wellspring of War-Lust",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Eula</span>, equip this card.\\nAfter Eula equips this card, immediately use <span style=\"color: #FFD780FF;\">Wellspring of War-Lust</span> once.\\nWhen your Eula, who has this card equipped, uses <span style=\"color: #FFFFFFFF;\">Wellspring of War-Lust</span>, this will generate 1 more Zeal for <span style=\"color: #FFFFFFFF;\">Lightfall Sword</span>.\\n(You must have Eula in your deck to add this card to your deck.)"
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Mona</span>, equip this card.\\nWhen Mona equips this card, immediately use <span style=\"color: #FFD780FF;\">Prophecy of Submersion</span> once.\\nWhen your Mona, who has this card equipped, is the active character, the <span style=\"color: #80C0FFFF;\">Hydro-Related Reactions</span> you trigger deal +2 additional DMG.\\n(You must have Mona in your deck to add this card to your deck.)"
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Tamanooya's Casket",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Sangonomiya Kokomi</span>, equip this card.\\nAfter Sangonomiya Kokomi equips this card, immediately use <span style=\"color: #FFD780FF;\">Tamanooya's Casket</span> once.\\nWhen your Sangonomiya Kokomi, who has this card equipped, uses <span style=\"color: #FFFFFFFF;\">Tamanooya's Casket</span>: If <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> is on the field, its <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span> will be refreshed.\\nWhile <span style=\"color: #FFFFFFFF;\">Ceremonial Garment</span> exists, <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> deals +1 DMG.\\n(You must have Sangonomiya Kokomi in your deck to add this card to your deck.)"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Kyouka Fuushi",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Kamisato Ayato</span>, equip this card.\\nAfter Kamisato Ayato equips this card, immediately use <span style=\"color: #FFD780FF;\">Kyouka Fuushi</span> once.\\nWhen your Kamisato Ayato, who has this card equipped, triggers the effects of <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span>, deal +1 additional DMG if the target's remaining HP is equal to or less than 6.\\n(You must have Kamisato Ayato in your deck to add this card to your deck.)"
     }
   },
   {
@@ -2207,7 +2665,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Fischl</span>, equip this card.\\nAfter Fischl equips this card, immediately use <span style=\"color: #FFD780FF;\">Stellar Predator</span> once.\\nWhen your Fischl, who has this card equipped, creates an <span style=\"color: #FFFFFFFF;\">Oz</span>, and after Fischl uses a <span style=\"color: #FFFFFFFF;\">Normal Attack</span>: Deal 2 <span style=\"color: #FFACFFFF;\">Electro DMG</span>. (Consumes <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>)\\n(You must have Fischl in your deck to add this card to your deck.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Fischl</span>, equip this card.\\nAfter Fischl equips this card, immediately use <span style=\"color: #FFD780FF;\">Stellar Predator</span> once.\\nWhen your Fischl, who has this card equipped, creates an <span style=\"color: #FFFFFFFF;\">Oz</span>, <span style=\"color: #FFFFFFFF;\">Oz</span> will gain the following effect:  after Fischl uses a <span style=\"color: #FFFFFFFF;\">Normal Attack</span>: Deal 2 <span style=\"color: #FFACFFFF;\">Electro DMG</span>. (Consumes <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>)\\n(You must have Fischl in your deck to add this card to your deck.)"
     }
   },
   {
@@ -2272,6 +2730,26 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Beidou</span>, equip this card.\\nAfter Beidou equips this card, immediately use <span style=\"color: #FFD780FF;\">Lightning Storm</span> once.\\nWhen Beidou, who has this card equipped, uses <span style=\"color: #FFFFFFFF;\">Lightning Storm</span>: If DMG is taken while <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Prepare Skill</span> is active, Beidou's Normal Attacks this Round will cost 1 less <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Unaligned Element</span>. (Can be triggered 2 times)\\n(You must have Beidou in your deck to add this card to your deck.)"
+    }
+  },
+  {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Sin of Pride",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Kujou Sara</span>, equip this card.\\nAfter Kujou Sara equips this card, immediately use <span style=\"color: #FFD780FF;\">Sin of Pride</span> once.\\nWhen Kujou Sara is active and has this card equipped, all allied <span style=\"color: #FFACFFFF;\">Electro</span> characters with <span style=\"color: #FFFFFFFF;\">Crowfeather Cover</span> will deal +1 additional <span style=\"color: #FFFFFFFF;\">Elemental Skill</span> and <span style=\"color: #FFFFFFFF;\">Elemental Burst</span> DMG.\\n(You must have Kujou Sara in your deck to add this card to your deck.)"
     }
   },
   {
@@ -2347,6 +2825,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Arataki Ichiban",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Arataki Itto</span>, equip this card.\\nAfter Arataki Itto equips this card, immediately use <span style=\"color: #FFD780FF;\">Arataki Ichiban</span> once.\\nAfter your Arataki Itto, who has this card equipped, uses <span style=\"color: #FFFFFFFF;\">Arataki Ichiban</span> for the second time or more in one Round: If <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superlative Superstrength</span> is triggered, deal +1 additional DMG.\\n(You must have Arataki Itto in your deck to add this card to your deck.)"
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Collei</span>, equip this card.\\nAfter Collei equips this card, immediately use <span style=\"color: #FFD780FF;\">Floral Sidewinder</span> once.\\nAfter your Collei, who has this card equipped, <span style=\"color: #FFFFFFFF;\">uses Floral Sidewinder</span>, during this Round, when your characters' Skills trigger <span style=\"color: #7EC236FF;\">Dendro-Related Reactions</span>: Deal 1 <span style=\"color: #7EC236FF;\">Dendro DMG</span>. (Once per Round)\\n(You must have Collei in your deck to add this card to your deck.)"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Keen Sight",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>: When your active character is <span style=\"color: #FFFFFFFF;\">Tighnari</span>, equip this card.\\nAfter Tighnari equips this card, immediately use <span style=\"color: #FFD780FF;\">Keen Sight</span> once.\\nWhen your Tighnari, who has this card equipped, is affected by <span style=\"color: #FFFFFFFF;\">Vijnana Suffusion</span>, the character's <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charged Attack</span> costs 1 less <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Unaligned Element</span>.\\n(You must have Tighnari in your deck to add this card to your deck.)"
     }
   },
   {
@@ -2692,6 +3206,21 @@
     }
   },
   {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Favonius Sword",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">The character deals +1 DMG</span>.\\n<span style=\"color: #FFFFFFFF;\">After the character uses an Elemental Skill:</span> The character gains 1 additional <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energy</span>. (Once per Round)\\n(<span style=\"color: #FFFFFFFF;\">Only Sword Characters</span> can equip this. A character can equip a maximum of 1 Weapon)"
+    }
+  },
+  {
     "_id": 312001,
     "id": "adventurers_bandana",
     "type": "artifact",
@@ -2782,6 +3311,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "Ornate Kabuto",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">After another character of yours uses an Elemental Burst: </span>The character to which this is attached gains 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Energy</span>.\\n(A character can equip a maximum of 1 Artifact)"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "General's Ancient Helm",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">When Action Phase begins:</span> The character to which this is attached gains <span style=\"color: #FFFFFFFF;\">Unmovable Mountain</span> that provides 2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Shield</span> points.\\n(A character can equip a maximum of 1 Artifact)"
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Grand Narukami Shrine",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Triggers automatically once per Round:</span> Create 1 random Elemental Die.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usage(s)</span>：3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">When you perform \"Switch Character\":</span> This switch is considered a <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fast Action</span> instead of a <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Combat Action</span>. (Once per Round)"
@@ -3408,7 +3982,7 @@
           "count": 1
         }
       ],
-      "desc": "Switch to the target character and create <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni Element</span> ×1.\\n(You must have at least 2 <span style=\"color: #80FFD7FF;\">Anemo</span> characters in your deck to add this card to your deck.)"
+      "desc": "Switch to the target character and creates 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Omni Element</span>.\\n(You must have at least 2 <span style=\"color: #80FFD7FF;\">Anemo</span> characters in your deck to add this card to your deck.)"
     }
   },
   {

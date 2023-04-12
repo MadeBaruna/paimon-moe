@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Eula",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "Attaque normale",
+        "name": "Escrime de Favonius : Aristocratie",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "Compétence élémentaire",
+        "name": "Vortex des mers glacées",
+        "desc": "Inflige 2 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span>. Si le personnage n'est pas affecté par un <span style=\"color: #FFFFFFFF;\">Cœur de glace</span>, il obtient un <span style=\"color: #FFFFFFFF;\">Cœur de glace</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Cœur de glace",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage affecté utilise Vortex des mers glacées : </span>Annule cet état et augmente ces DGT de 2."
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "Déchaînement élémentaire",
+        "name": "Lame de fond",
+        "desc": "Inflige 2 pts de <span style=\"color: #99FFFFFF;\">DGT Cryo</span> et invoque une <span style=\"color: #FFFFFFFF;\">Épée de lumière</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Épée de lumière",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsqu'Eula utilise une attaque normale ou une compétence élémentaire : </span>Cette carte obtient 2 cumuls d'énergie, mais Eula ne peut plus obtenir de charges.\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Défausse la carte et inflige 2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span>, chaque cumul d'énergie augmentant ces DGT de 1.\\n(Les effets affectant le <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> de cette carte s'appliquent aux <span style=\"color: #FFFFFFFF;\">cumuls d'énergie</span>.)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "Lame arc-en-ciel",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage a utilisé une attaque normale : </span>Inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage a utilisé une attaque normale : </span>Inflige 1 pt de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "Vicissitude",
         "desc": "(Passif) <span style=\"color: #FFFFFFFF;\">Lorsque ce personnage est actif et que vous basculez de personnage : </span>Considère ce changement comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action rapide</span>, et pas comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span>. (1 fois par manche)",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Sangonomiya Kokomi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "Attaque normale",
+        "name": "Forme de l'eau",
+        "desc": "Inflige 1 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "Compétence élémentaire",
+        "name": "Serment de Kurage",
+        "desc": "<span style=\"color: #80C0FFFF;\">Application Hydro</span> au personnage et invoque une <span style=\"color: #FFFFFFFF;\">Méduse fantôme</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "Méduse fantôme",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 1 pt de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> et soigne votre personnage actif pour 1 pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "Déchaînement élémentaire",
+        "name": "Ascension de la néréide",
+        "desc": "Inflige 3 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>, soigne tous vos personnages pour 1 pt et accorde une <span style=\"color: #FFFFFFFF;\">Parure cérémoniale</span> au personnage.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Parure cérémoniale",
+          "desc": "DGT infligés par l'<span style=\"color: #FFFFFFFF;\">attaque normale</span> du personnage affecté +1.\\n<span style=\"color: #FFFFFFFF;\">Lorsque le personnage affecté a utilisé une attaque normale : </span>Soigne tous vos personnages pour 1 pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Kamisato Ayato",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "Attaque normale",
+        "name": "École Kamisato : Transition",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "Compétence élémentaire",
+        "name": "École Kamisato : Beauté réfléchie",
+        "desc": "Inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> et accorde une <span style=\"color: #FFFFFFFF;\">Réflexion torrentielle</span> au personnage.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Réflexion torrentielle",
+          "desc": "Les DGT infligés par les <span style=\"color: #FFFFFFFF;\">attaques normales</span> du personnage affecté augmentent de 1 et ses <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés sont convertis en <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "Déchaînement élémentaire",
+        "name": "École Kamisato : Jardin d'eau",
+        "desc": "Inflige 3 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span> et invoque un <span style=\"color: #FFFFFFFF;\">Jardin de pureté</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Jardin de pureté",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 2 pts de <span style=\"color: #80C0FFFF;\">DGT Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">Lorsque cette invocation est sur le terrain : </span>DGT infligés par les attaques normales de votre personnage +1."
+        }
       }
     ]
   },
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Fleur bombardier",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage a utilisé une capacité : </span>Inflige 2 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> à votre personnage actif.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage du camp affecté a utilisé une capacité : </span>Inflige 2 pts de <span style=\"color: #FF9999FF;\">DGT Pyro</span> au personnage actif du camp concerné.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
         }
       }
     ]
@@ -1170,7 +1374,7 @@
         "_id": 14052,
         "type": "Compétence élémentaire",
         "name": "Invocation des marées",
-        "desc": "Accorde une <span style=\"color: #FFFFFFFF;\">Embrasse marine des marées</span> et <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Préparation de capacité</span> : <span style=\"color: #FFFFFFFF;\">Conquête des marées</span>.",
+        "desc": "Accorde une <span style=\"color: #FFFFFFFF;\">Embrasse marine des marées</span> au personnage et <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Préparation de capacité</span> : <span style=\"color: #FFFFFFFF;\">Conquête des marées</span>.",
         "cost": [
           {
             "type": "electro",
@@ -1212,6 +1416,74 @@
         "name": "Conquête des marées",
         "desc": "(À préparer pendant 1 tour)\\nInflige 2 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span>.",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Kujou Sara",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "Attaque normale",
+        "name": "Archerie tengu",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "Compétence élémentaire",
+        "name": "Tempestrier tengu",
+        "desc": "Inflige 1 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span> et invoque un <span style=\"color: #FFFFFFFF;\">#Tengu Juurai{NON_BREAK_SPACE}: Embuscade</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Tengu Juurai{NON_BREAK_SPACE}: Embuscade",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 1 pt de <span style=\"color: #FFACFFFF;\">DGT Électro</span> et accorde <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Couverture corvidée</span> à votre personnage actif.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "Déchaînement élémentaire",
+        "name": "Soumission : Chemin de lumière",
+        "desc": "Inflige 1 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span> et invoque un <span style=\"color: #FFFFFFFF;\">#Tengu Juurai{NON_BREAK_SPACE}: Tempête de pierres</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Tengu Juurai{NON_BREAK_SPACE}: Tempête de pierres",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 2 pts de <span style=\"color: #FFACFFFF;\">DGT Électro</span> et accorde <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Couverture corvidée</span> à votre personnage actif.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
       }
     ]
   },
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Arataki Itto",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "Attaque normale",
+        "name": "Légende de la baston",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "Compétence élémentaire",
+        "name": "Zetsugi anti-démon : Catapultage d'akaushi",
+        "desc": "Inflige 1 pts de <span style=\"color: #FFE699FF;\">DGT Géo</span>, invoque <span style=\"color: #FFFFFFFF;\">Ushi</span> et accorde une <span style=\"color: #FFFFFFFF;\">Mégaforce superlative</span> au personnage.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Ushi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque votre personnage actif subit des DGT : </span>Diminue les DGT de 1pt.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 1</span>, mais la carte n'est pas défaussée une fois épuisée.\\n<span style=\"color: #FFFFFFFF;\">Peut se déclencher une fois lorsque cette invocation est sur le terrain : </span>Lorsque votre personnage actif a subi des DGT, Arataki Itto obtient une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Mégaforce superlative</span>.\\n<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Défausse cette carte et inflige 1 pt de <span style=\"color: #FFE699FF;\">DGT Géo</span>."
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "Déchaînement élémentaire",
+        "name": "Roi oni maléfique : Avènement d'Itto",
+        "desc": "Inflige 5 pts de <span style=\"color: #FFE699FF;\">DGT Géo</span> et accorde un état de <span style=\"color: #FFFFFFFF;\">Roi oni courroucé</span> au personnage.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Roi oni courroucé",
+          "desc": "Les DGT infligés par les <span style=\"color: #FFFFFFFF;\">attaques normales</span> du personnage affecté augmentent de 2 et ses <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés sont convertis en <span style=\"color: #FFE699FF;\">DGT Géo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Durée en manches</span> : 2</span>\\n<span style=\"color: #FFFFFFFF;\">Lorsque le personnage affecté a utilisé une attaque normale : </span>Lui accorde une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Mégaforce superlative</span>. (1 fois par manche)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1534,6 +1874,68 @@
           "name": "Cuilein-Anbar",
           "desc": "<span style=\"color: #FFFFFFFF;\">Phase finale : </span>Inflige 2 pts de <span style=\"color: #7EC236FF;\">DGT Dendro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Tighnari",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "Attaque normale",
+        "name": "Khanda anti-barrière",
+        "desc": "Inflige 2 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "Compétence élémentaire",
+        "name": "Mine de vijnana-phala",
+        "desc": "Inflige 2 pts de <span style=\"color: #7EC236FF;\">DGT Dendro</span> et accorde une <span style=\"color: #FFFFFFFF;\">Suffusion de vijnana</span> au personnage.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Suffusion de vijnana",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque le personnage affecté utilise une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Attaque chargée</span> :</span> Les <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT physiques</span> infligés sont convertis en <span style=\"color: #7EC236FF;\">DGT Dendro</span> et une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Flèche fleuronnée</span> est invoquée après le calcul de la capacité.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "Déchaînement élémentaire",
+        "name": "Flèche de liane artificielle",
+        "desc": "Inflige 4 pts de <span style=\"color: #FFFFFFFF;\">DGT physiques</span> et inflige <span style=\"color: #FFFFFFFF;\">1 pt de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">DGT de perforation</span></span> à tous les personnages adverses en attente.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
       }
     ]
   },
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Esprit belligérant",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Eula</span>, équipe cette carte.\\nUne fois Eula équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Esprit belligérant</span> une fois.\\nLorsqu'Eula, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Esprit belligérant</span> : Accorde 1 cumul d'énergie supplémentaire à l'<span style=\"color: #FFFFFFFF;\">Épée de lumière</span>.\\n(Votre deck doit contenir Eula pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2111,6 +2533,42 @@
     }
   },
   {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Coffret de Tamanooya",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Sangonomiya Kokomi</span>, équipe cette carte.\\nUne fois Sangonomiya Kokomi équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Coffret de Tamanooya</span> une fois.\\nLorsque Sangonomiya Kokomi, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Coffret de Tamanooya</span> : Si une <span style=\"color: #FFFFFFFF;\">Méduse fantôme</span> est sur le terrain, réinitialise son <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span>.\\nTant qu'une <span style=\"color: #FFFFFFFF;\">Parure cérémoniale</span> est présente, DGT infligés par les <span style=\"color: #FFFFFFFF;\">Méduse fantôme</span> +1.\\n(Votre deck doit contenir Sangonomiya Kokomi pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Reflet gracieux",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Kamisato Ayato</span>, équipe cette carte.\\nUne fois Kamisato Ayato équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Reflet gracieux</span> une fois.\\nLorsque Kamisato Ayato, équipé de cette carte, déclenche les effets de <span style=\"color: #FFFFFFFF;\">Réflexion torrentielle</span> : DGT supplémentaires infligés aux adversaires n'ayant pas plus de 6 PV restants +1.\\n(Votre deck doit contenir Kamisato Ayato pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
     "_id": 213011,
     "id": "flowing_flame",
     "type": "talent",
@@ -2139,7 +2597,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Xiangling</span>, équipe cette carte.\\nUne fois Xiangling équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Feux croisés</span> une fois.\\nLorsque Xiangling, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Feux croisés</span>, elle inflige également 1 pt de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n(Votre deck doit contenir Xiangling pour pouvoir y ajouter cette carte)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Xiangling</span>, équipe cette carte.\\nUne fois Xiangling équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Feux croisés</span> une fois.\\nLorsque Xiangling, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Feux croisés</span> : Elle inflige également 1 pt de <span style=\"color: #FF9999FF;\">DGT Pyro</span>.\\n(Votre deck doit contenir Xiangling pour pouvoir y ajouter cette carte)"
     }
   },
   {
@@ -2175,7 +2633,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Yoimiya</span>, équipe cette carte.\\nUne fois Yoimiya équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Pluie de météores de Naganohara</span> une fois.\\nLorsque Yoimiya, équipée de cette carte, a déclenché <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> : inflige 1 pt de <span style=\"color: #FF9999FF;\">DGT Pyro</span> supplémentaires.\\n(Votre deck doit contenir Yoimiya pour pouvoir y ajouter cette carte)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Yoimiya</span>, équipe cette carte.\\nUne fois Yoimiya équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Pluie de météores de Naganohara</span> une fois.\\nLorsque Yoimiya, équipée de cette carte, a déclenché <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> : Inflige 1 pt de <span style=\"color: #FF9999FF;\">DGT Pyro</span> supplémentaires.\\n(Votre deck doit contenir Yoimiya pour pouvoir y ajouter cette carte)"
     }
   },
   {
@@ -2275,6 +2733,26 @@
     }
   },
   {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Péché d'orgueil",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Kujou Sara</span>, équipe cette carte.\\nUne fois Kujou Sara équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Péché d'orgueil</span> une fois.\\nLorsque Kujou Sara, équipée de cette carte, est sur le terrain : DGT supplémentaires infligés par les <span style=\"color: #FFFFFFFF;\">compétences</span><span style=\"color: #FFFFFFFF;\"> et déchaînements élémentaires</span> de vos personnages <span style=\"color: #FFACFFFF;\">Électro</span> affectés par <span style=\"color: #FFFFFFFF;\">Couverture corvidée</span> +1.\\n(Votre deck doit contenir Kujou Sara pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
     "_id": 215011,
     "id": "chaotic_entropy",
     "type": "talent",
@@ -2347,6 +2825,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Arataki au top",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Arataki Itto</span>, équipe cette carte.\\nUne fois Arataki Itto équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Arataki au top</span> une fois.\\nLorsqu'Arataki Itto, équipé de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Arataki au top</span> une 2e fois ou plus lors d'une manche : Si une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Mégaforce superlative</span> est déclenchée, DGT supplémentaires +1.\\n(Votre deck doit contenir Arataki Itto pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Collei</span>, équipe cette carte.\\nUne fois Collei équipée de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Retour folié</span> une fois.\\nPendant la manche durant laquelle Collei, équipée de cette carte, utilise <span style=\"color: #FFFFFFFF;\">Retour folié</span>, si une capacité d'un de vos personnages a déclenché une <span style=\"color: #7EC236FF;\">Réaction liée à l'élément Dendro</span> : Inflige 1 pt de <span style=\"color: #7EC236FF;\">DGT Dendro</span>. (1 fois par manche)\\n(Votre deck doit contenir Collei pour pouvoir y ajouter cette carte)"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Vue aiguë",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span> : Lorsque votre personnage actif est <span style=\"color: #FFFFFFFF;\">Tighnari</span>, équipe cette carte.\\nUne fois Tighnari équipé de cette carte, utilise immédiatement <span style=\"color: #FFD780FF;\">Vue aiguë</span> une fois.\\nPendant que Tighnari, équipé de cette carte, est affecté par l'état <span style=\"color: #FFFFFFFF;\">Suffusion de vijnana</span>, utiliser une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Attaque chargée</span> dépense 1 dé d'<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Élément neutre</span> en moins.\\n(Votre deck doit contenir Tighnari pour pouvoir y ajouter cette carte)"
     }
   },
   {
@@ -2692,6 +3206,21 @@
     }
   },
   {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Épée de Favonius",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">DGT infligés par le personnage +1</span>.\\n<span style=\"color: #FFFFFFFF;\">Lorsque le personnage a utilisé une compétence élémentaire : </span>Accorde 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span> supplémentaire au personnage. (1 fois par manche)\\n(Peut uniquement être équipé par un personnage utilisant une <span style=\"color: #FFFFFFFF;\">épée à une main</span>, un personnage peut équiper au maximum 1 arme)"
+    }
+  },
+  {
     "_id": 312001,
     "id": "adventurers_bandana",
     "type": "artifact",
@@ -2782,6 +3311,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "Kabuto orné",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Lorsqu'un autre de vos personnages a utilisé un déchaînement élémentaire : </span>Accorde 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Charge</span> au personnage affecté.\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "Ancien heaume de Général",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Au début de la phase d'action: </span>Accorde <span style=\"color: #FFFFFFFF;\">« Aussi immobile que la montagne »</span> au personnage affecté. (Accorde 2 pts de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Bouclier</span> au personnage)\\n(Un personnage peut équiper au maximum 1 artéfact)"
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Sanctuaire de Narukami",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Se déclenche automatiquement 1 fois par manche : </span>Crée aléatoirement 1 dé élémentaire.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nombre d'utilisations</span> : 3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Lorsque vous basculez de personnage : </span>Considère ce changement comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action rapide</span>, et non pas comme une <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Action de combat</span>. (1 fois par manche)"
