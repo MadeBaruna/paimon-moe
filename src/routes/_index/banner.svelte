@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    nilou: {
-      name: 'Nilou',
+    baizhu: {
+      name: 'Baizhu',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    nahida: {
-      name: 'Nahida',
+    ganyu: {
+      name: 'Ganyu',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300046;
-  const image = 'nilou_nahida.png';
+  const bannerId = 300047;
+  const image = 'baizhu_ganyu.png';
   const width = 800;
-  const height = 416;
+  const height = 438;
 
   let loading = true;
   let user = '';

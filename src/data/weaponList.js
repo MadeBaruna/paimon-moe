@@ -10232,4 +10232,117 @@ export const weaponList = {
       },
     ],
   },
+  jadefalls_splendor: {
+    id: 'jadefalls_splendor',
+    name: "Jadefall's Splendor",
+    rarity: 5,
+    atk: 46,
+    secondary: 'HP',
+    type: weapons.catalyst,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.luminous_sands_from_guyun,
+            amount: 5,
+          },
+          {
+            item: itemList.a_flower_yet_to_bloom,
+            amount: 5,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.lustrous_stone_from_guyun,
+            amount: 5,
+          },
+          {
+            item: itemList.a_flower_yet_to_bloom,
+            amount: 18,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.lustrous_stone_from_guyun,
+            amount: 9,
+          },
+          {
+            item: itemList.treasured_flower,
+            amount: 9,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.relic_from_guyun,
+            amount: 5,
+          },
+          {
+            item: itemList.treasured_flower,
+            amount: 18,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.relic_from_guyun,
+            amount: 9,
+          },
+          {
+            item: itemList.wanderers_blooming_flower,
+            amount: 14,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.divine_body_from_guyun,
+            amount: 6,
+          },
+          {
+            item: itemList.wanderers_blooming_flower,
+            amount: 27,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

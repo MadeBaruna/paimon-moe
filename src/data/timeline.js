@@ -44,6 +44,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/17591460',
       showOnHome: true,
     },
+    {
+      name: "The Recollector's Path",
+      pos: '50% 40%',
+      zoom: '200%',
+      image: 'the_recollectors_path_temp.png',
+      start: '2023-05-08 10:00:00',
+      end: '2023-05-22 03:59:59',
+      color: '#efa7a9',
+      url: 'https://www.hoyolab.com/article/18031376',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -81,13 +92,24 @@ export const eventsData = [
     },
     {
       name: 'A Parade of Providence',
-      pos: '20% 20%',
-      zoom: '150%',
-      image: 'a_parade_of_providence.png',
+      pos: '40% 20%',
+      zoom: '100%',
+      image: 'a_parade_of_providence_full.jpg',
       start: '2023-04-27 10:00:00',
       end: '2023-05-15 03:59:59',
       color: '#e98a4a',
-      url: 'https://www.hoyolab.com/article/17591460',
+      url: 'https://www.hoyolab.com/article/17950597',
+      showOnHome: true,
+    },
+    {
+      name: 'Overflowing Mastery',
+      pos: '0% 50%',
+      image: 'overflowing_mastery.jpg',
+      start: '2023-05-15 04:00:00',
+      end: '2023-05-22 03:59:59',
+      color: '#f5debc',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/18031376',
       showOnHome: true,
     },
   ],
@@ -127,6 +149,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Immaculate Pulse - Baizhu Banner',
+      pos: '20% 15%',
+      zoom: '200%',
+      image: 'immaculate_pulse_1.jpg',
+      start: '2023-05-02 18:00:00',
+      end: '2023-05-23 14:59:59',
+      color: '#8fdaa0',
+      url: 'https://www.hoyolab.com/article/18031187',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -163,6 +196,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/17591331',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Adrift in the Harbor - Ganyu Banner',
+      pos: '10% 15%',
+      zoom: '150%',
+      image: 'adrift_in_the_harbor_4.jpg',
+      start: '2023-05-02 18:00:00',
+      end: '2023-05-23 14:59:59',
+      color: '#6994DF',
+      url: 'https://www.hoyolab.com/article/18031187',
+      showOnHome: true,
     },
   ],
   [
@@ -201,6 +245,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '30% 35%',
+      zoom: '150%',
+      image: 'epitome_invocation_46.jpg',
+      start: '2023-05-02 18:00:00',
+      end: '2023-05-23 14:59:59',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/18031187',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -233,6 +288,36 @@ export const eventsData = [
       description:
         "When a character's HP decreases, release a shockwave at the current active character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 3s.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-04-16 04:00:00',
+      end: '2023-05-01 04:00:00',
+      color: '#4299E1',
+      description:
+        "When the active character's HP decreases, a shockwave will be unleashed at the character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 0.8s.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-05-01 04:00:00',
+      end: '2023-05-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "After a character triggers a Bloom reaction, all characters' Bloom, Hyperbloom, and Burgeon DMG dealt is increased by 35% for 6s. This effect can be triggered once every 0.1s. Max 4 stacks. Each stack's duration is counted independently.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-05-16 04:00:00',
+      end: '2023-06-01 04:00:00',
+      color: '#4299E1',
+      description:
+        'When DMG dealt by Dendro Cores (including DMG from Hyperbloom and Burgeon reactions) hits a character, Elemental Mastery will be increased by 200 for all characters in the party for 4s.',
+    },
   ],
   [
     {
@@ -255,6 +340,16 @@ export const eventsData = [
       image: 'paimon_bargain.png',
       description: 'Now selling: Razor, Amber, and Royal Weapons.',
     },
+    {
+      name: "Paimon's Bargain - Bennett, Lisa, and Blackcliff",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2023-05-01 04:00:00',
+      end: '2023-06-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Razor, Amber, and Blackcliff Weapons.',
+    },
   ],
   [
     {
@@ -272,7 +367,7 @@ export const eventsData = [
       pos: '0% 12%',
       image: 'crown_of_glory.jpg',
       start: '2023-04-12 06:00:00',
-      end: '2023-05-12 03:59:59',
+      end: '2023-05-22 03:59:59',
       color: '#c8d18f',
       url: 'https://www.hoyolab.com/article/17591460',
       timezoneDependent: true,

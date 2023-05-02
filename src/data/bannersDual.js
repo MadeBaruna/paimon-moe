@@ -503,4 +503,28 @@ export const bannersDual = {
       version: '3.6',
     },
   ],
+  'Immaculate Pulse 1': [
+    {
+      name: 'Immaculate Pulse',
+      image: 1,
+      shortName: 'Baizhu',
+      start: '2023-05-02 18:00:00',
+      end: '2023-05-23 14:59:59',
+      color: '#8fdaa0',
+      featured: ['baizhu', 'ganyu'],
+      featuredRare: ['kaveh', 'candace', 'fischl'],
+      version: '3.6',
+    },
+    {
+      name: 'Adrift in the Harbor',
+      image: 4,
+      shortName: 'Ganyu',
+      start: '2023-05-02 18:00:00',
+      end: '2023-05-23 14:59:59',
+      color: '#6994DF',
+      featured: ['baizhu', 'ganyu'],
+      featuredRare: ['kaveh', 'candace', 'fischl'],
+      version: '3.6',
+    },
+  ],
 };
