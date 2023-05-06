@@ -6,7 +6,7 @@
   import { locale, t } from 'svelte-i18n';
   import { onMount, tick } from 'svelte';
   import debounce from 'lodash.debounce';
-  import { mdiFilter, mdiOpenInNew } from '@mdi/js';
+  import { mdiFilter, mdiOpenInNew, mdiClose } from '@mdi/js';
 
   import Check from '../../components/Check.svelte';
   import Checkbox from '../../components/Checkbox.svelte';
@@ -14,6 +14,7 @@
   import { readSave, updateSave, fromRemote } from '../../stores/saveManager';
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
+  import InputSearch from '../../components/InputSearch.svelte';
   import Select from '../../components/Select.svelte';
   import { pushToast } from '../../stores/toast';
   import Ad from '../../components/Ad.svelte';
@@ -405,19 +406,12 @@
       </div>
     </div>
     {#if showFilter}
-      <div class="mb-2 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-        <div
-          class="flex flex-1 relative items-center bg-background rounded-2xl h-14
-       focus-within:border-primary border-2 border-transparent ease-in duration-100"
-          style="min-height: 3.5rem;"
-        >
-          <input
-            placeholder={$t('achievement.search')}
-            on:input={search}
-            bind:value={nameFilter}
-            class="pl-4 w-full min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none"
-          />
-        </div>
+      <div class="mb-2 flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-2">
+        <InputSearch
+          placeholder={$t('achievement.search')} 
+          on:input={search}
+          bind:value={nameFilter}
+        />
         <Select
           multiselect
           options={versions}
@@ -439,6 +433,7 @@
     <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
       <div class="flex flex-col space-y-2 lg:h-screen lg:overflow-auto lg:sticky lg:pr-1 pb-4 category">
         {#each categories as category, index (category.id)}
+          <!-- svelte-ignore a11y-click-events-have-key-events -->
           <div
             class="rounded-xl p-2 cursor-pointer flex flex-col {category.id === active ? 'bg-primary' : 'bg-item'}"
             on:click={() => changeCategory(category.id, index)}

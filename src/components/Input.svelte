@@ -44,8 +44,20 @@
     {pattern}
     on:change
     on:input={handleInput}
+    on:focus={() => { dispatch('focus'); }}
+    on:blur={() => { dispatch('blur'); }}
     class={`w-full ${
       icon ? 'pl-12' : 'pl-4'
     } min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none`}
   />
 </div>
+
+<style lang="postcss">
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration, 
+  input[type="search"]::-webkit-search-results-button, 
+  input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+  }
+</style>
