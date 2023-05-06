@@ -6,7 +6,7 @@
   import { locale, t } from 'svelte-i18n';
   import { onMount, tick } from 'svelte';
   import debounce from 'lodash.debounce';
-  import { mdiFilter, mdiOpenInNew, mdiClose } from '@mdi/js';
+  import { mdiFilter, mdiOpenInNew } from '@mdi/js';
 
   import Check from '../../components/Check.svelte';
   import Checkbox from '../../components/Checkbox.svelte';
