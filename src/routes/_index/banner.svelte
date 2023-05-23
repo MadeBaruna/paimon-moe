@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    baizhu: {
-      name: 'Baizhu',
+    yoimiya: {
+      name: 'Yoimiya',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    ganyu: {
-      name: 'Ganyu',
+    yae_miko: {
+      name: 'Yae Miko',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300047;
-  const image = 'baizhu_ganyu.png';
+  const bannerId = 300048;
+  const image = 'yoimiya-yae.png';
   const width = 800;
-  const height = 438;
+  const height = 539;
 
   let loading = true;
   let user = '';
