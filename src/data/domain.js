@@ -403,6 +403,60 @@ export const domains = {
     ],
     artifacts: ['resolution_of_sojourner', 'brave_heart', 'desert_pavilion_chronicle', 'flower_of_paradise_lost'],
   },
+  molten_iron_fortress: {
+    name: 'Molten Iron Fortress',
+    domains: [
+      {
+        s: 5064,
+        id: 'domain_of_blessing_forsaken_rampart_i',
+        name: 'Domain of Blessing: Forsaken Rampart I',
+        ar: 30,
+        level: 59,
+        reward: { adventureExp: '100', mora: '1850', friendshipExp: '15' },
+        monsters: [],
+        disorder: [
+          'When a party member triggers a Dendro-related Elemental Reaction, the Elemental Mastery of all party members is increased by 150 for 8s. This effect can be triggered at most once every 1s.',
+        ],
+      },
+      {
+        s: 5065,
+        id: 'domain_of_blessing_forsaken_rampart_ii',
+        name: 'Domain of Blessing: Forsaken Rampart II',
+        ar: 35,
+        level: 69,
+        reward: { adventureExp: '100', mora: '2025', friendshipExp: '20' },
+        monsters: [],
+        disorder: [
+          'When a party member triggers a Dendro-related Elemental Reaction, the Elemental Mastery of all party members is increased by 150 for 8s. This effect can be triggered at most once every 1s.',
+        ],
+      },
+      {
+        s: 5066,
+        id: 'domain_of_blessing_forsaken_rampart_iii',
+        name: 'Domain of Blessing: Forsaken Rampart III',
+        ar: 40,
+        level: 80,
+        reward: { adventureExp: '100', mora: '2200', friendshipExp: '20' },
+        monsters: [],
+        disorder: [
+          'When a party member triggers a Dendro-related Elemental Reaction, the Elemental Mastery of all party members is increased by 150 for 8s. This effect can be triggered at most once every 1s.',
+        ],
+      },
+      {
+        s: 5067,
+        id: 'domain_of_blessing_forsaken_rampart_iv',
+        name: 'Domain of Blessing: Forsaken Rampart IV',
+        ar: 45,
+        level: 90,
+        reward: { adventureExp: '100', mora: '2525', friendshipExp: '20' },
+        monsters: [],
+        disorder: [
+          'When a party member triggers a Dendro-related Elemental Reaction, the Elemental Mastery of all party members is increased by 150 for 8s. This effect can be triggered at most once every 1s.',
+        ],
+      },
+    ],
+    artifacts: ['martial_artist', 'scholar', 'nymphs_dream', 'vourukashas_glow'],
+  },
   domain_of_guyun: {
     name: 'Domain of Guyun',
     domains: [

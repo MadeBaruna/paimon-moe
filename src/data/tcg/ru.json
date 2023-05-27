@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Эола",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "Обычная атака",
+        "name": "Фехтовальный стиль Фавония: Аристократы",
+        "desc": "Наносит <span style=\"color: #FFFFFFFF;\">Физический урон</span>, 2 ед.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "Элементальный навык",
+        "name": "Ледяной прибой",
+        "desc": "Наносит <span style=\"color: #99FFFFFF;\">Крио урон</span>, 2 ед. Если у текущего персонажа нет эффекта <span style=\"color: #FFFFFFFF;\">Холодное сердце</span>, то даёт эффект <span style=\"color: #FFFFFFFF;\">Холодное сердце</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Холодное сердце",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж с этой картой использует Ледяной прибой: </span>снимает это состояние и увеличивает урон текущего удара на 2 ед."
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "Взрыв стихии",
+        "name": "Сумеречный меч",
+        "desc": "Наносит <span style=\"color: #99FFFFFF;\">Крио урон</span>, 2 ед. и призывает помощника: <span style=\"color: #FFFFFFFF;\">Меч света</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Меч света",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Когда Эола использует обычную атаку или элементальный навык:</span> эта карта получает 2 уровня энергии, но Эола энергию не получит.\\n<span style=\"color: #FFFFFFFF;\">Финальная фаза:</span> карта сбрасывается, наносит <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Физический урон</span>, 2 ед. За каждый уровень энергии добавляется 1 ед. урона.\\nЭффекты, влияющие на <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span> этой карты, будут применяться к <span style=\"color: #FFFFFFFF;\">уровням энергии</span>."
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "Радужная стойка",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Когда ваш персонаж использует обычную атаку:</span> наносит <span style=\"color: #80C0FFFF;\">Гидро урон</span>, 2 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Когда ваш персонаж использует обычную атаку:</span> наносится <span style=\"color: #80C0FFFF;\">Гидро урон</span>, 1 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "Иллюзорный поток",
         "desc": "(Пассивный навык) <span style=\"color: #FFFFFFFF;\">Когда этот персонаж является активным, ваша смена персонажа:</span> считается как <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Быстрое действие</span>, а не как <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>. Только 1 раз за раунд.",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Сангономия Кокоми",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "Обычная атака",
+        "name": "Форма воды",
+        "desc": "Наносит <span style=\"color: #80C0FFFF;\">Гидро урон</span>, 1 ед.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "Элементальный навык",
+        "name": "Клятва курагэ",
+        "desc": "Текущий персонаж получает <span style=\"color: #80C0FFFF;\">Эффект Гидро</span>, призывает <span style=\"color: #FFFFFFFF;\">Бакэ-курагэ</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "Бакэ-курагэ",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Финальная фаза:</span> наносит <span style=\"color: #80C0FFFF;\">Гидро урон</span>, 1 ед., восстанавливает 1 HP активному персонажу.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "Взрыв стихии",
+        "name": "Вознесение нереиды",
+        "desc": "Наносит <span style=\"color: #80C0FFFF;\">Гидро урон</span>, 3 ед. Восстанавливает 1 HP всем вашим персонажам. Текущий персонаж получает <span style=\"color: #FFFFFFFF;\">Церемониальное одеяние</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Церемониальное одеяние",
+          "desc": "Когда персонаж с этой картой совершает <span style=\"color: #FFFFFFFF;\">обычную атаку</span>, урон увеличивается на 1 ед.\\n<span style=\"color: #FFFFFFFF;\">После того, как персонаж с этой картой совершает обычную атаку:</span> исцеляет 1 HP всем вашим персонажам.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Продолжительность (в раундах)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Камисато Аято",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "Обычная атака",
+        "name": "Искусство Камисато: Маробаси",
+        "desc": "Наносит <span style=\"color: #FFFFFFFF;\">Физический урон</span>, 2 ед.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "Элементальный навык",
+        "name": "Искусство Камисато: Кёка",
+        "desc": "Наносит <span style=\"color: #80C0FFFF;\">Гидро урон</span>, 2 ед. Персонажу достаётся <span style=\"color: #FFFFFFFF;\">Такимэгури канка</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Такимэгури канка",
+          "desc": "Персонаж с этой картой получает +1 урона к <span style=\"color: #FFFFFFFF;\">обычной атаке</span>, а нанесённый <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Физический урон</span> превращается в <span style=\"color: #80C0FFFF;\">Гидро урон</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "Взрыв стихии",
+        "name": "Искусство Камисато: Суйю",
+        "desc": "Наносит <span style=\"color: #80C0FFFF;\">Гидро урон</span>, 3 ед. и призывает помощника: <span style=\"color: #FFFFFFFF;\">Безмятежный сад</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Безмятежный сад",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Финальная фаза:</span> наносит <span style=\"color: #80C0FFFF;\">Гидро урон</span>, 2 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">Когда этот помощник на поле боя: </span>обычная атака вашего персонажа наносит на 1 ед. урона больше."
+        }
       }
     ]
   },
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Грохот и искры",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Когда ваш персонаж использует навык: </span>вашему активному персонажу наносится <span style=\"color: #FF9999FF;\">Пиро урон</span>, 2 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж в отряде использует навык: </span>активному персонажу наносится <span style=\"color: #FF9999FF;\">Пиро урон</span>, 2 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 2</span>"
         }
       }
     ]
@@ -1216,6 +1420,74 @@
     ]
   },
   {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Кудзё Сара",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "Обычная атака",
+        "name": "Стрелковое искусство тэнгу",
+        "desc": "Наносит <span style=\"color: #FFFFFFFF;\">Физический урон</span>, 2 ед.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "Элементальный навык",
+        "name": "Призыв грозы тэнгу",
+        "desc": "Наносит <span style=\"color: #FFACFFFF;\">Электро урон</span>, 1 ед. и призывает помощника: <span style=\"color: #FFFFFFFF;\">Тэнгу дзюрай: Засада</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Тэнгу дзюрай: Засада",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Финальная фаза: </span>наносит <span style=\"color: #FFACFFFF;\">Электро урон</span>, 1 ед., применяет <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Воронье покрывало</span> к вашему активному персонажу.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "Взрыв стихии",
+        "name": "Подчинение: Коко сэндо",
+        "desc": "Наносит <span style=\"color: #FFACFFFF;\">Электро урон</span>, 1 ед. и призывает помощника: <span style=\"color: #FFFFFFFF;\">Тэнгу дзюрай: Громокластер</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Тэнгу дзюрай: Громокластер",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Финальная фаза:</span> наносит <span style=\"color: #FFACFFFF;\">Электро урон</span>, 2 ед., применяет <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Воронье покрывало</span> к вашему активному персонажу.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Аратаки Итто",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "Обычная атака",
+        "name": "Легенда бойцовского клуба",
+        "desc": "Наносит <span style=\"color: #FFFFFFFF;\">Физический урон</span>, 2 ед.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "Элементальный навык",
+        "name": "Масацу дзэцуги: Взрыв акауси!",
+        "desc": "Наносит <span style=\"color: #FFE699FF;\">Гео урон</span>, 1 ед. и призывает помощника: <span style=\"color: #FFFFFFFF;\">Уси</span>. Персонажу достаётся <span style=\"color: #FFFFFFFF;\">Невероятная сила</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Уси",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Когда ваш активный персонаж получает урон: </span>снижает получаемый урон на 1 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 1</span>, карта не сбрасывается после использования.\\n<span style=\"color: #FFFFFFFF;\">Может активироваться 1 раз, когда этот помощник на поле боя:</span> когда ваш активный персонаж получает урон, у Аратаки Итто добавляется <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Невероятная сила</span>.\\n<span style=\"color: #FFFFFFFF;\">Финальная фаза:</span> карта сбрасывается и наносит <span style=\"color: #FFE699FF;\">Гео урон</span>, 1 ед."
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "Взрыв стихии",
+        "name": "Явление короля: Итто Жестокий!",
+        "desc": "Наносит <span style=\"color: #FFE699FF;\">Гео урон</span>, 5 ед. Персонажу достаётся <span style=\"color: #FFFFFFFF;\">Яростный король óни</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Яростный король óни",
+          "desc": "Персонаж с этой картой при <span style=\"color: #FFFFFFFF;\">обычной атаке</span> наносит на 2 ед. урона больше, а нанесённый <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Физический урон</span> превращается в <span style=\"color: #FFE699FF;\">Гео урон</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Продолжительность (в раундах)</span>: 2</span>\\n<span style=\"color: #FFFFFFFF;\">Когда персонаж с этой картой совершает обычную атаку:</span> ему добавляется <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Невероятная сила</span> (1 раз за раунд)."
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1534,6 +1874,68 @@
           "name": "Куйлейн-Анбар",
           "desc": "<span style=\"color: #FFFFFFFF;\">Финальная фаза:</span> наносит <span style=\"color: #7EC236FF;\">Дендро урон</span>, 2 ед.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 2</span>"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Тигнари",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "Обычная атака",
+        "name": "Крушащая преграды кханда",
+        "desc": "Наносит <span style=\"color: #FFFFFFFF;\">Физический урон</span>, 2 ед.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "Элементальный навык",
+        "name": "Мина виджняны-пхалы",
+        "desc": "Наносит <span style=\"color: #7EC236FF;\">Дендро урон</span>, 2 ед. Персонажу достаётся <span style=\"color: #FFFFFFFF;\">Прорыв виджняны</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Прорыв виджняны",
+          "desc": "<span style=\"color: #FFFFFFFF;\">С этой картой <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Заряженная атака</span> персонажа</span> меняет наносимый <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Физический урон</span> на <span style=\"color: #7EC236FF;\">Дендро урон</span>, после подсчёта урона призывается 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Стрела соцветия</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "Взрыв стихии",
+        "name": "Стрела-лиана жизни",
+        "desc": "Наносит <span style=\"color: #FFFFFFFF;\">Физический урон</span>, 4 ед., наносит <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Проникающий урон</span>, 1 ед.</span> всем неактивным персонажам противника.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
       }
     ]
   },
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Прилив войны",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Когда вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Эола</span>, экипируйте эту карту.\\nКогда Эола экипирует эту карту, сразу используется <span style=\"color: #FFD780FF;\">Прилив войны</span> 1 раз.\\nКогда персонаж Эола с этой картой использует <span style=\"color: #FFFFFFFF;\">Прилив войны</span>, <span style=\"color: #FFFFFFFF;\">Меч света</span> накапливает 1 уровень энергии.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Эола."
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Мона</span>.\\nКогда Мона экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Пророчество потопа</span> (1 раз).\\nПока эта карта у активного персонажа Мона, <span style=\"color: #80C0FFFF;\">Гидро реакция</span>, которую вы можете вызывать, получает +2 ед. урона.\\nЭту карту можно добавить в колоду, только если в колоде уже есть Мона."
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Шкатулка таманои",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Когда вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Сангономия Кокоми</span>, экипируйте эту карту.\\nКогда Сангономия Кокоми экипирует эту карту, сразу используется <span style=\"color: #FFD780FF;\">Шкатулка таманои</span> 1 раз.\\nЕсли <span style=\"color: #FFFFFFFF;\">Бакэ-курагэ</span> уже на поле и Сангономия Кокоми с этой картой использует <span style=\"color: #FFFFFFFF;\">Шкатулка таманои</span>, то <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span> будет обновлено.\\nПока <span style=\"color: #FFFFFFFF;\">Церемониальное одеяние</span> существует, <span style=\"color: #FFFFFFFF;\">Бакэ-курагэ</span> наносит на 1 ед. урона больше.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Сангономия Кокоми."
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Кёка фуси",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, когда вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Камисато Аято</span>.\\nКогда Камисато Аято экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Кёка фуси</span> (1 раз).\\nКогда Камисато Аято с этой картой вызывает <span style=\"color: #FFFFFFFF;\">Такимэгури канка</span>, врагам с HP не более 6 ед. наносится дополнительно 1 ед. урона.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Камисато Аято."
     }
   },
   {
@@ -2275,6 +2733,26 @@
     }
   },
   {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Грех гордыни",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Когда вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Кудзё Сара</span>, экипируйте эту карту.\\nКогда Кудзё Сара экипирует эту карту, сразу используется <span style=\"color: #FFD780FF;\">Грех гордыни</span> 1 раз.\\nКогда персонаж Кудзё Сара с этой картой на поле боя, у ваших <span style=\"color: #FFACFFFF;\">Электро</span> персонажей в статусе <span style=\"color: #FFFFFFFF;\">Воронье покрывало</span><span style=\"color: #FFFFFFFF;\">элементальный навык</span> и <span style=\"color: #FFFFFFFF;\">взрыв стихии</span> наносят дополнительно 1 ед. урона.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Кудзё Сара."
+    }
+  },
+  {
     "_id": 215011,
     "id": "chaotic_entropy",
     "type": "talent",
@@ -2347,6 +2825,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Аратаки итибан",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Аратаки Итто</span>.\\nКогда Аратаки Итто экипирует эту карту, сразу используется <span style=\"color: #FFD780FF;\">Аратаки итибан</span> (1 раз).\\nВ каждом раунде, когда Аратаки Итто с этой картой использует атаку <span style=\"color: #FFFFFFFF;\">Аратаки итибан</span> второй раз и далее: если вызвана <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Невероятная сила</span>, она наносит дополнительно 1 ед. урона.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Аратаки Итто."
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Коллеи</span>.\\nКогда Коллеи экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Возвращение цветов</span>, 1 раз.\\nКогда Коллеи с этой картой <span style=\"color: #FFFFFFFF;\">использует Возвращение цветов</span> в этом раунде, и когда навык персонажа вызывает <span style=\"color: #7EC236FF;\">Дендро реакция</span>: наносит <span style=\"color: #7EC236FF;\">Дендро урон</span>, 1 ед. (1 раз за раунд).\\nЭту карту можно добавить в колоду, только если в колоде уже есть Коллеи."
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Острый глаз",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Тигнари</span>.\\nКогда Тигнари экипирует эту карту, сразу используется <span style=\"color: #FFD780FF;\">Острый глаз</span>.\\n<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Заряженная атака</span> персонажа Тигнари с этой картой и статусом <span style=\"color: #FFFFFFFF;\">Прорыв виджняны</span> тратит на 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Неопределённый элемент</span> меньше.\\nЧтобы добавить эту карту в колоду, там уже должна быть карта Тигнари."
     }
   },
   {
@@ -2395,7 +2909,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Зеркальная дева Фатуи</span>.\\nКогда Зеркальная дева Фатуи экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Зеркальная клетка</span> (1 раз).\\nКогда Зеркальная дева Фатуи с этой картой создаёт <span style=\"color: #FFFFFFFF;\">Меч дождя</span>, получит следующие эффекты:\\nНачальная <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Продолжительность (в раундах)</span> +1, увеличивает стоимость переключения персонажа с этой картой на 1 Элементальный дайс.\\nЭту карту можно добавить в колоду, только если в колоде уже есть Зеркальная дева Фатуи."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Зеркальная дева Фатуи</span>.\\nКогда Зеркальная дева Фатуи экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Зеркальная клетка</span> (1 раз).\\nКогда Зеркальная дева Фатуи с этой картой создаёт <span style=\"color: #FFFFFFFF;\">Преломление</span>, получит следующие эффекты:\\nНачальная <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Продолжительность (в раундах)</span> +1, увеличивает стоимость переключения персонажа с этой картой на 1 Элементальный дайс.\\nЭту карту можно добавить в колоду, только если в колоде уже есть Зеркальная дева Фатуи."
     }
   },
   {
@@ -2463,7 +2977,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Пернатый плесенник</span>.\\nКогда Пернатый плесенник экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Живучие споры</span> (1 раз).\\nПернатый плесенник с этой картой может получить больше одного уровня Силы оживления.\\nЭту карту можно добавить в колоду, только если в колоде уже есть Пернатый плесенник."
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>: Эта карта экипируется, если вашим активным персонажем является <span style=\"color: #FFFFFFFF;\">Пернатый плесенник</span>.\\nКогда Пернатый плесенник экипирует эту карту, сразу же используется <span style=\"color: #FFD780FF;\">Живучие споры</span> (1 раз).\\nПернатый плесенник с этой картой может получить на один уровень Силы оживления больше.\\nЭту карту можно добавить в колоду, только если в колоде уже есть Пернатый плесенник."
     }
   },
   {
@@ -2628,7 +3142,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Персонаж наносит на 1 ед. урона больше</span>.\\n<span style=\"color: #FFFFFFFF;\">При розыгрыше</span>: за каждого персонажа из Ли Юэ персонаж с этой картой получает <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, 1 ед.</span> (но не более 3 ед.).\\n(<span style=\"color: #FFFFFFFF;\">Только для персонажей с Древковым оружием</span>. Персонаж может экипировать только одну карту оружия)."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Персонаж наносит на 1 ед. урона больше</span>.\\n<span style=\"color: #FFFFFFFF;\">При розыгрыше</span>: за каждого персонажа из Ли Юэ персонаж с этой картой получает <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, 1 ед.</span> (но не более 3 ед.).\\n(<span style=\"color: #FFFFFFFF;\">Только для персонажей с древковым оружием</span>. Персонаж может экипировать только одну карту оружия)."
     }
   },
   {
@@ -2643,7 +3157,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Персонаж наносит на 1 ед. урона больше</span>.\\n<span style=\"color: #FFFFFFFF;\">Один раз за раунд:</span> нормальная атака персонажа наносит 1 дополнительную единицу урона..\\n(<span style=\"color: #FFFFFFFF;\">Может экипировать только персонаж с Древковым оружием</span>. Персонаж может иметь только 1 оружие)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Персонаж наносит на 1 ед. урона больше</span>.\\n<span style=\"color: #FFFFFFFF;\">Один раз за раунд:</span> обычная атака персонажа наносит 1 дополнительную единицу урона.\\n(<span style=\"color: #FFFFFFFF;\">Может экипировать только персонаж с Древковым оружием</span>. Персонаж может иметь только 1 оружие)"
     }
   },
   {
@@ -2689,6 +3203,21 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Персонаж наносит на 1 ед. урона больше.</span>.\\n<span style=\"color: #FFFFFFFF;\">Когда противник использует навык:</span> если персонаж с этой картой является активным, восстанавливает 1 HP этого персонажа (до 2 раз за раунд).\\n(<span style=\"color: #FFFFFFFF;\">только персонаж с одноручным оружием</span> может экипировать эту карту. Персонаж может иметь только 1 оружие)"
+    }
+  },
+  {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Меч Фавония",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Персонаж наносит на 1 ед. урона больше</span>.\\n<span style=\"color: #FFFFFFFF;\">Когда персонаж использует элементальный навык:</span> персонажу дополнительно добавляется <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span>, 1 ед. (1 раз за раунд).\\n(<span style=\"color: #FFFFFFFF;\">Только персонажи с одноручным оружием</span> могут экипировать эту карту. Персонаж может иметь только 1 оружие)"
     }
   },
   {
@@ -2782,6 +3311,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "Украшенный кабуто",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">После взрыва стихии другого вашего персонажа: </span>у персонажа с этой картой добавляется <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span> ×1. \\nПерсонаж может экипировать только 1 артефакт."
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "Древний шлем генерала",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">В начале фазы ходов:</span> персонаж получает эффект <span style=\"color: #FFFFFFFF;\">Неподвижные скалы</span>: даёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, 2 ед., для защиты этого персонажа.\\nПерсонаж может иметь только 1 артефакт."
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2793,7 +3352,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #99FFFFFF;\">Крио дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #99FFFFFF;\">Крио дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2804,11 +3363,11 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #99FFFFFF;\">Крио дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #99FFFFFF;\">Крио</span>. Персонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #99FFFFFF;\">Крио дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #99FFFFFF;\">Крио</span>. Персонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2823,7 +3382,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #80C0FFFF;\">Гидро дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #80C0FFFF;\">Гидро дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2834,11 +3393,11 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #80C0FFFF;\">Гидро дайс</span> меньше (один раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #80C0FFFF;\">Гидро</span>.\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #80C0FFFF;\">Гидро дайс</span> меньше (один раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #80C0FFFF;\">Гидро</span>.\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2853,7 +3412,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #FF9999FF;\">Пиро дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #FF9999FF;\">Пиро дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2864,11 +3423,11 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #FF9999FF;\">Пиро дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #FF9999FF;\">Пиро</span>.\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #FF9999FF;\">Пиро дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #FF9999FF;\">Пиро</span>.\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2883,7 +3442,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #FFACFFFF;\">Электро дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #FFACFFFF;\">Электро дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2894,11 +3453,11 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #FFACFFFF;\">Электро дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #FFACFFFF;\">Электро</span>.\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #FFACFFFF;\">Электро дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #FFACFFFF;\">Электро</span>.\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2913,7 +3472,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #80FFD7FF;\">Анемо дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #80FFD7FF;\">Анемо дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2924,11 +3483,11 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #80FFD7FF;\">Анемо дайс</span> меньше (один раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #80FFD7FF;\">Анемо</span>.\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #80FFD7FF;\">Анемо дайс</span> меньше (один раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #80FFD7FF;\">Анемо</span>.\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2943,7 +3502,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #FFE699FF;\">Гео дайс</span> меньше (один раз за раунд).\\n(Персонаж может экипировать не более 1 артефакта)."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #FFE699FF;\">Гео дайс</span> меньше (один раз за раунд).\\n(Персонаж может экипировать не более 1 артефакта)."
     }
   },
   {
@@ -2954,11 +3513,11 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #FFE699FF;\">Гео дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #FFE699FF;\">Гео</span>.\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #FFE699FF;\">Гео дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #FFE699FF;\">Гео</span>.\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2973,7 +3532,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #99FF88FF;\">Дендро дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #99FF88FF;\">Дендро дайс</span> меньше (один раз за раунд).\\nПерсонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -2984,11 +3543,11 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span>, расходуется на 1 <span style=\"color: #99FF88FF;\">Дендро дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #99FF88FF;\">Дендро</span>. Персонаж может экипировать не более 1 артефакта."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Когда персонаж использует навык или экипирует талант:</span> расходуется на 1 <span style=\"color: #99FF88FF;\">Дендро дайс</span> меньше (1 раз за раунд).\\n<span style=\"color: #FFFFFFFF;\">Фаза броска:</span> два из брошенных дайсов обязательно будут <span style=\"color: #99FF88FF;\">Дендро</span>. Персонаж может экипировать не более 1 артефакта."
     }
   },
   {
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Великий храм Наруками",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Вызывается автоматически 1 раз в каждом раунде:</span> создаёт 1 дайс случайного элемента.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span>: 3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Смена персонажа:</span> смена персонажей считается как <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Быстрое действие</span>, а не как <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Боевое действие</span>. Только 1 раз за раунд."
@@ -3153,7 +3727,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">После разыгрывания карты еды события:</span> создаёт 1 случайный Элементальный дайс. Только 1 раз за раунд."
+      "desc": "<span style=\"color: #FFFFFFFF;\">После разыгрывания карты  еды:</span> создаёт 1 случайный Элементальный дайс. Только 1 раз за раунд."
     }
   },
   {
@@ -3178,7 +3752,7 @@
     "name": "Тимми",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Активируется 1 раз в каждом раунде:</span> эта карта даёт <span style=\"color: #FFFFFFFF;\">1 голубя</span>.\\nПосле получения <span style=\"color: #FFFFFFFF;\">3 голубей</span> сбросьте карту: при этом выдаётся новая карта и создаётся <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Универсальный элемент</span>."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Активируется 1 раз в каждом раунде:</span> эта карта даёт <span style=\"color: #FFFFFFFF;\">1 голубя</span>.\\nПосле получения <span style=\"color: #FFFFFFFF;\">3 голубей</span> карта сбрасывается, при этом выдаётся новая карта и создаётся <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Универсальный элемент</span>."
     }
   },
   {
@@ -3188,7 +3762,7 @@
     "name": "Ли Бэнь",
     "skills": {
       "cost": [],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Финальная фаза:</span> собирает неиспользованные вами Элементальные дайсы (не более 1 дайса каждого элемента).\\nВ начале <span style=\"color: #FFFFFFFF;\">фазы ходов</span>: если эта карта уже накопила 3 дайса, сбросьте карту: вам даются 2 карты и создаётся <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Универсальный элемент</span> ×2."
+      "desc": "<span style=\"color: #FFFFFFFF;\">Финальная фаза:</span> собирает неиспользованные вами Элементальные дайсы (не более 1 дайса каждого элемента).\\nВ начале <span style=\"color: #FFFFFFFF;\">фазы ходов</span>: если эта карта уже накопила 3 дайса, карта сбрасывается, вам даются 2 карты и создаётся <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Универсальный элемент</span> ×2."
     }
   },
   {
@@ -3381,7 +3955,7 @@
           "count": 1
         }
       ],
-      "desc": "Вашим персонажам с неполной энергией дообавляется <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span> ×1 (активные персонажи в первую очередь).\\nМожно добавить только тогда, когда у вас есть хотя бы 2 <span style=\"color: #FFACFFFF;\">Электро</span> персонажа."
+      "desc": "Вашим персонажам с неполной энергией добавляется <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span> ×1 (активному персонажу в первую очередь).\\nМожно добавить в колоду, только если там уже есть не менее 2 персонажей <span style=\"color: #FFACFFFF;\">Электро</span>."
     }
   },
   {
@@ -3408,7 +3982,7 @@
           "count": 1
         }
       ],
-      "desc": "Переключает на выбранного персонажа и создаёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Универсальный элемент</span> ×1.\\nМожно добавить только тогда, когда у вас есть хотя бы 2 <span style=\"color: #80FFD7FF;\">Анемо</span> персонажа."
+      "desc": "Переключает на выбранного персонажа и создаёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Универсальный элемент</span> ×1.\\nМожно добавить в колоду, только если там уже есть не менее 2 персонажей <span style=\"color: #80FFD7FF;\">Анемо</span>."
     }
   },
   {
@@ -3435,7 +4009,7 @@
           "count": 1
         }
       ],
-      "desc": "Когда ваш персонаж нанесёт <span style=\"color: #FFE699FF;\">Гео урон</span> в следующий раз в течение этого раунда: если у вас есть любой боевой статус, который даёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, то <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span> пополняется на 3 ед.\\nМожно добавить только тогда, когда у вас есть хотя бы 2 <span style=\"color: #FFE699FF;\">Гео</span> персонажа."
+      "desc": "Когда ваш персонаж нанесёт <span style=\"color: #FFE699FF;\">Гео урон</span> в следующий раз в течение этого раунда: если у вас есть любой боевой статус, который даёт <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span>, то <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Щит</span> пополняется на 3 ед.\\nМожно добавить в колоду, только если там уже есть не менее 2 персонажей <span style=\"color: #FFE699FF;\">Гео</span>."
     }
   },
   {
@@ -3462,7 +4036,7 @@
           "count": 1
         }
       ],
-      "desc": "В этом раунде увеличивает урон следующей элементальной реакции, которую вызовет ваш персонаж, на 2 ед.\\nЕсли у вас активны <span style=\"color: #FFFFFFFF;\">Яркое пламя, Дендро ядро или Область катализа</span>, их <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span> +1.\\nМожно добавить в колоду, только если там уже есть не менее 2 персонажей <span style=\"color: #99FF88FF;\">Дендро</span>."
+      "desc": "Увеличивает урон следующей элементальной реакции в этом раунде, которую вызовет ваш персонаж, на 2 ед.\\nЕсли у вас активны <span style=\"color: #FFFFFFFF;\">Яркое пламя, Дендро ядро или Область катализа</span>, их <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Кол-во применений</span> +1.\\nМожно добавить в колоду, только если там уже есть не менее 2 персонажей <span style=\"color: #99FF88FF;\">Дендро</span>."
     }
   },
   {
@@ -3562,7 +4136,7 @@
           "count": 2
         }
       ],
-      "desc": "Ваш текущий активный персонаж <span style=\"color: #FFFFFFFF;\">получает 1 ед. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span></span>."
+      "desc": "Ваш текущий активный персонаж <span style=\"color: #FFFFFFFF;\">получает: <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Энергия</span> ×1</span>."
     }
   },
   {
@@ -3587,7 +4161,7 @@
     "name": "Мастерское владение оружием",
     "skills": {
       "cost": [],
-      "desc": "Передаёт карту оружия у текущего персонажа следующему персонажу с таким же типом оружия."
+      "desc": "Передаёт карту оружия от текущего персонажа следующему персонажу с таким же типом оружия."
     }
   },
   {
@@ -3657,7 +4231,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Призыв случайного хиличурла</span>!\\nЧтобы добавить эту карту, в колоде уже должны быть 2 карты персонажей-монстров."
+      "desc": "Призывает одного помощника - <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Призыв случайного хиличурла</span>!\\nЧтобы добавить эту карту, в колоде уже должны быть 2 карты персонажей-монстров."
     }
   },
   {
@@ -3732,7 +4306,7 @@
           "count": 1
         }
       ],
-      "desc": "Восстанавливает 2 HP цели.\\nЗа раунд персонаж может съесть не более 1 блюда."
+      "desc": "Восстанавливает 2 HP цели.\\n(Персонаж может съесть не более 1 блюда за 1 раунд)"
     }
   },
   {

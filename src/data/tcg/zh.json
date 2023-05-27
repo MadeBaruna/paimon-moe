@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "优菈",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "普通攻击",
+        "name": "西风剑术·宗室",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "元素战技",
+        "name": "冰潮的涡旋",
+        "desc": "造成2点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>，如果本角色未附属<span style=\"color: #FFFFFFFF;\">冷酷之心</span>，则使其附属<span style=\"color: #FFFFFFFF;\">冷酷之心</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "冷酷之心",
+          "desc": "<span style=\"color: #FFFFFFFF;\">所附属角色使用冰潮的涡旋时：</span>移除此状态，使本次伤害+2。"
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "元素爆发",
+        "name": "凝浪之光剑",
+        "desc": "造成2点<span style=\"color: #99FFFFFF;\">冰元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">光降之剑</span>。",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "光降之剑",
+          "desc": "<span style=\"color: #FFFFFFFF;\">优菈使用「普通攻击」或「元素战技」时：</span>此牌累积2点「能量层数」，但是优菈不会获得充能。\\n<span style=\"color: #FFFFFFFF;\">结束阶段：</span>弃置此牌，造成2点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>；每有1点「能量层数」，都使此伤害+1。\\n（影响此牌「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>」的效果会作用于「<span style=\"color: #FFFFFFFF;\">能量层数</span>」。）"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "虹剑势",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻击后：</span>造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色普通攻击后：</span>造成1点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "虚实流动",
         "desc": "【被动】<span style=\"color: #FFFFFFFF;\">此角色为出战角色，我方执行「切换角色」行动时：</span>将此次切换视为「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">快速行动</span>」而非「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>」。（每回合1次）",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "珊瑚宫心海",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "普通攻击",
+        "name": "水有常形",
+        "desc": "造成1点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "元素战技",
+        "name": "海月之誓",
+        "desc": "本角色<span style=\"color: #80C0FFFF;\">附着水元素</span>，召唤<span style=\"color: #FFFFFFFF;\">化海月</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "化海月",
+          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，治疗我方出战角色1点。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "元素爆发",
+        "name": "海人化羽",
+        "desc": "造成3点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，治疗所有我方角色1点，本角色附属<span style=\"color: #FFFFFFFF;\">仪来羽衣</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "仪来羽衣",
+          "desc": "所附属角色<span style=\"color: #FFFFFFFF;\">普通攻击</span>造成的伤害+1。\\n<span style=\"color: #FFFFFFFF;\">所附属角色普通攻击后：</span>治疗所有我方角色1点。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "神里绫人",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "普通攻击",
+        "name": "神里流·转",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "元素战技",
+        "name": "神里流·镜花",
+        "desc": "造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，本角色附属<span style=\"color: #FFFFFFFF;\">泷廻鉴花</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "泷廻鉴花",
+          "desc": "所附属角色<span style=\"color: #FFFFFFFF;\">普通攻击</span>造成的伤害+1，造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>变为<span style=\"color: #80C0FFFF;\">水元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "元素爆发",
+        "name": "神里流·水囿",
+        "desc": "造成3点<span style=\"color: #80C0FFFF;\">水元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">清净之园囿</span>。",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "清净之园囿",
+          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #80C0FFFF;\">水元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">此召唤物在场时：</span>我方角色「普通攻击」造成的伤害+1。"
+        }
       }
     ]
   },
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "轰轰火花",
-          "desc": "<span style=\"color: #FFFFFFFF;\">我方角色使用技能后：</span>对我方出战角色造成2点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">所在阵营的角色使用技能后：</span>对所在阵营的出战角色造成2点<span style=\"color: #FF9999FF;\">火元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
         }
       }
     ]
@@ -1216,6 +1420,74 @@
     ]
   },
   {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "九条裟罗",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "普通攻击",
+        "name": "天狗传弓术",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "元素战技",
+        "name": "鸦羽天狗霆雷召咒",
+        "desc": "造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">天狗咒雷·伏</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "天狗咒雷·伏",
+          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，我方出战角色附属<span style=\"color: #FFFFFFFF; text-decoration: underline;\">鸣煌护持</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "元素爆发",
+        "name": "煌煌千道镇式",
+        "desc": "造成1点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">天狗咒雷·雷砾</span>。",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "天狗咒雷·雷砾",
+          "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #FFACFFFF;\">雷元素伤害</span>，我方出战角色附属<span style=\"color: #FFFFFFFF; text-decoration: underline;\">鸣煌护持</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "荒泷一斗",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "普通攻击",
+        "name": "喧哗屋传说",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "元素战技",
+        "name": "魔杀绝技·赤牛发破！",
+        "desc": "造成1点<span style=\"color: #FFE699FF;\">岩元素伤害</span>，召唤<span style=\"color: #FFFFFFFF;\">阿丑</span>，本角色附属<span style=\"color: #FFFFFFFF;\">乱神之怪力</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "阿丑",
+          "desc": "<span style=\"color: #FFFFFFFF;\">我方出战角色受到伤害时：</span>抵消1点伤害。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：1</span>，耗尽时不弃置此牌。\\n<span style=\"color: #FFFFFFFF;\">此召唤物在场期间可触发1次：</span>我方出战角色受到伤害后，为荒泷一斗附属<span style=\"color: #FFFFFFFF; text-decoration: underline;\">乱神之怪力</span>。\\n<span style=\"color: #FFFFFFFF;\">结束阶段：</span>弃置此牌，造成1点<span style=\"color: #FFE699FF;\">岩元素伤害</span>。"
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "元素爆发",
+        "name": "最恶鬼王·一斗轰临！！",
+        "desc": "造成5点<span style=\"color: #FFE699FF;\">岩元素伤害</span>，本角色附属<span style=\"color: #FFFFFFFF;\">怒目鬼王</span>。",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "怒目鬼王",
+          "desc": "所附属角色<span style=\"color: #FFFFFFFF;\">普通攻击</span>造成的伤害+2，造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>变为<span style=\"color: #FFE699FF;\">岩元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">持续回合</span>：2</span>\\n<span style=\"color: #FFFFFFFF;\">所附属角色普通攻击后：</span>为其附属<span style=\"color: #FFFFFFFF; text-decoration: underline;\">乱神之怪力</span>。（每回合1次）"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1534,6 +1874,68 @@
           "name": "柯里安巴",
           "desc": "<span style=\"color: #FFFFFFFF;\">结束阶段：</span>造成2点<span style=\"color: #7EC236FF;\">草元素伤害</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "提纳里",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "普通攻击",
+        "name": "藏蕴破障",
+        "desc": "造成2点<span style=\"color: #FFFFFFFF;\">物理伤害</span>。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "元素战技",
+        "name": "识果种雷",
+        "desc": "造成2点<span style=\"color: #7EC236FF;\">草元素伤害</span>，本角色附属<span style=\"color: #FFFFFFFF;\">通塞识</span>。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "通塞识",
+          "desc": "<span style=\"color: #FFFFFFFF;\">所附属角色进行<span style=\"color: #FFFFFFFF; text-decoration: underline;\">重击</span>时：</span>造成的<span style=\"color: #FFFFFFFF; text-decoration: underline;\">物理伤害</span>变为<span style=\"color: #7EC236FF;\">草元素伤害</span>，并且会在技能结算后召唤<span style=\"color: #FFFFFFFF; text-decoration: underline;\">藏蕴花矢</span>。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "元素爆发",
+        "name": "造生缠藤箭",
+        "desc": "造成4点<span style=\"color: #FFFFFFFF;\">物理伤害</span>，对所有敌方后台角色造成1点<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">穿透伤害</span></span>。",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
       }
     ]
   },
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "战欲涌现",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">优菈</span>时，装备此牌。\\n优菈装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">战欲涌现</span>。\\n装备有此牌的优菈使用<span style=\"color: #FFFFFFFF;\">战欲涌现</span>时，会额外为<span style=\"color: #FFFFFFFF;\">光降之剑</span>累积1点「能量层数」。\\n（牌组中包含优菈，才能加入牌组）"
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">莫娜</span>时，装备此牌。\\n莫娜装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">沉没的预言</span>。\\n装备有此牌的莫娜出战期间，我方引发的<span style=\"color: #80C0FFFF;\">水元素相关反应</span>伤害额外+2。\\n（牌组中包含莫娜，才能加入牌组）"
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "匣中玉栉",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">珊瑚宫心海</span>时，装备此牌。\\n珊瑚宫心海装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">匣中玉栉</span>。\\n装备有此牌的珊瑚宫心海使用<span style=\"color: #FFFFFFFF;\">匣中玉栉</span>时：如果<span style=\"color: #FFFFFFFF;\">化海月</span>在场，则刷新其<span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>。\\n<span style=\"color: #FFFFFFFF;\">仪来羽衣</span>存在期间，<span style=\"color: #FFFFFFFF;\">化海月</span>造成的伤害+1。\\n（牌组中包含珊瑚宫心海，才能加入牌组）"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "镜华风姿",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">神里绫人</span>时，装备此牌。\\n神里绫人装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">镜华风姿</span>。\\n装备有此牌的神里绫人触发<span style=\"color: #FFFFFFFF;\">泷廻鉴花</span>的效果时，对于生命值不多于6的敌人伤害额外+1。\\n（牌组中包含神里绫人，才能加入牌组）"
     }
   },
   {
@@ -2275,6 +2733,26 @@
     }
   },
   {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "我界",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">九条裟罗</span>时，装备此牌。\\n九条裟罗装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">我界</span>。\\n装备有此牌的九条裟罗在场时，我方附属有<span style=\"color: #FFFFFFFF;\">鸣煌护持</span>的<span style=\"color: #FFACFFFF;\">雷元素</span>角色，<span style=\"color: #FFFFFFFF;\">元素战技</span>和<span style=\"color: #FFFFFFFF;\">元素爆发</span>造成的伤害额外+1。\\n（牌组中包含九条裟罗，才能加入牌组）"
+    }
+  },
+  {
     "_id": 215011,
     "id": "chaotic_entropy",
     "type": "talent",
@@ -2347,6 +2825,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "荒泷第一",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">荒泷一斗</span>时，装备此牌。\\n荒泷一斗装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">荒泷第一</span>。\\n装备有此牌的荒泷一斗每回合第2次及以后使用<span style=\"color: #FFFFFFFF;\">荒泷第一</span>时：如果触发<span style=\"color: #FFFFFFFF; text-decoration: underline;\">乱神之怪力</span>，伤害额外+1。\\n（牌组中包含荒泷一斗，才能加入牌组）"
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">柯莱</span>时，装备此牌。\\n柯莱装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">飞叶迴斜</span>。\\n装备有此牌的柯莱使用了<span style=\"color: #FFFFFFFF;\">飞叶迴斜</span>的回合中，我方角色的技能引发<span style=\"color: #7EC236FF;\">草元素相关反应</span>后：造成1点<span style=\"color: #7EC236FF;\">草元素伤害</span>。（每回合1次）\\n（牌组中包含柯莱，才能加入牌组）"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "眼识殊明",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>：我方出战角色为<span style=\"color: #FFFFFFFF;\">提纳里</span>时，装备此牌。\\n提纳里装备此牌后，立刻使用一次<span style=\"color: #FFD780FF;\">眼识殊明</span>。\\n装备有此牌的提纳里在附属<span style=\"color: #FFFFFFFF;\">通塞识</span>状态期间，进行<span style=\"color: #FFFFFFFF; text-decoration: underline;\">重击</span>时少花费1个<span style=\"color: #FFFFFFFF; text-decoration: underline;\">无色元素</span>。\\n（牌组中包含提纳里，才能加入牌组）"
     }
   },
   {
@@ -2692,6 +3206,21 @@
     }
   },
   {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "西风剑",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">角色造成的伤害+1</span>。\\n<span style=\"color: #FFFFFFFF;\">角色使用「元素战技」后：</span>角色额外获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。（每回合1次）\\n（<span style=\"color: #FFFFFFFF;\">「单手剑」角色</span>才能装备。角色最多装备1件「武器」）"
+    }
+  },
+  {
     "_id": 312001,
     "id": "adventurers_bandana",
     "type": "artifact",
@@ -2782,6 +3311,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "华饰之兜",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">其他我方角色使用元素爆发后：</span>所附属角色获得1点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">充能</span>。\\n（角色最多装备1件「圣遗物」）"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "将帅兜鍪",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">行动阶段开始时：</span>为角色附属<span style=\"color: #FFFFFFFF;\">「重嶂不移」</span>。（提供2点<span style=\"color: #FFFFFFFF; text-decoration: underline;\">护盾</span>，保护该角色。）\\n（角色最多装备1件「圣遗物」）"
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "鸣神大社",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">每回合自动触发1次：</span>生成1个随机的基础元素骰。\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">可用次数</span>：3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">我方执行「切换角色」行动时：</span>将此次切换视为「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">快速行动</span>」而非「<span style=\"color: #FFFFFFFF; text-decoration: underline;\">战斗行动</span>」。（每回合1次）"

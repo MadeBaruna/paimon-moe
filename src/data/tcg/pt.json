@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Eula",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "Ataque Normal",
+        "name": "Técnica da Espada de Favonius - Nobreza",
+        "desc": "Causa 2 pontos de <span style=\"color: #FFFFFFFF;\">Dano Físico</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "Habilidade Elemental",
+        "name": "Vórtice Gelado",
+        "desc": "Causa 2 pontos de <span style=\"color: #99FFFFFF;\">Dano Cryo</span>, caso este personagem não esteja afetado por <span style=\"color: #FFFFFFFF;\">Coração Impassível</span>, afeta-o com <span style=\"color: #FFFFFFFF;\">Coração Impassível</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Coração Impassível",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando o personagem que ganha esse efeito usa Vórtice Gelado</span>, ele sai desse estado e causa +2 de Dano."
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "Supremo",
+        "name": "Espada das Ondas Congeladas",
+        "desc": "Causa 2 pontos de <span style=\"color: #99FFFFFF;\">Dano Cryo</span>, invoca <span style=\"color: #FFFFFFFF;\">Espada Luminosa</span>.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Espada Luminosa",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando Eula usa um Ataque Normal ou Habilidade Elemental</span>, esta carta acumula 2 cargas de energia, mas Eula não ganha energia em si.\\n<span style=\"color: #FFFFFFFF;\">Fase Final: </span> esta carta é descartada para infligir 2 pontos de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dano Físico</span>. Para cada carga de energia armazenada, causa +1 de dano.\\nEfeitos que afetam o número de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span> nesta carta serão aplicados a <span style=\"color: #FFFFFFFF;\">cargas de energia armazenada</span>."
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "Poder das Lâminas do Arco-íris",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Após um Ataque Normal de personagem: </span>Causa 2 pontos de <span style=\"color: #80C0FFFF;\">Dano Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Após um Ataque Normal de personagem: </span>Causa 1 ponto de <span style=\"color: #80C0FFFF;\">Dano Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "Vicissitude",
         "desc": "(Passiva) <span style=\"color: #FFFFFFFF;\">Quando este personagem é seu Personagem em Combate e você realiza uma ação de troca de personagem: </span> Essa troca será considerada como \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações Rápidas</span>\" e não como \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>\". (Uma vez por turno)",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Sangonomiya Kokomi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "Ataque Normal",
+        "name": "Forma da Água",
+        "desc": "Causa 1 pontos de <span style=\"color: #80C0FFFF;\">Dano Hydro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "Habilidade Elemental",
+        "name": "Juramento Kurage",
+        "desc": "Este personagem ganha uma <span style=\"color: #80C0FFFF;\">Aplicação Hydro</span> e invoca <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "Bake-Kurage",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase Final: </span>Causa 1 ponto de <span style=\"color: #80C0FFFF;\">Dano Hydro</span>, cura seu Personagem em Combate em 1 ponto.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "Supremo",
+        "name": "Cerimônia Kaijin",
+        "desc": "Causa 3 de <span style=\"color: #80C0FFFF;\">Dano Hydro</span>, cura todos os seus personagens em 1 ponto, este personagem é afetado por <span style=\"color: #FFFFFFFF;\">Vestimenta Cerimonial</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Vestimenta Cerimonial",
+          "desc": "O <span style=\"color: #FFFFFFFF;\">Ataque Normal</span> do personagem que recebe este efeito causa +1 de Dano.\\n<span style=\"color: #FFFFFFFF;\">Quando esse personagem realiza um Ataque Normal</span>, todos os seus personagens curam 1 de Vida.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Kamisato Ayato",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "Ataque Normal",
+        "name": "Arte Kamisato - Giro",
+        "desc": "Causa 2 de <span style=\"color: #FFFFFFFF;\">Dano Físico</span>",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "Habilidade Elemental",
+        "name": "Arte Kamisato: Beleza Refletida",
+        "desc": "Causa 2 pontos de <span style=\"color: #80C0FFFF;\">Dano Hydro</span>, este personagem é afetado por <span style=\"color: #FFFFFFFF;\">Reflexão Torrencial</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Reflexão Torrencial",
+          "desc": "Os <span style=\"color: #FFFFFFFF;\">Ataques Normais</span> do personagem afetado causam +1 de Dano e o <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dano Físico</span> causado é convertido em <span style=\"color: #80C0FFFF;\">Dano Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "Supremo",
+        "name": "Arte Kamisato: Jardim Aquático",
+        "desc": "Causa 3 pontos de <span style=\"color: #80C0FFFF;\">Dano Hydro</span>, invoca um <span style=\"color: #FFFFFFFF;\">Jardim Puro</span>.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Jardim Puro",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase Final:</span> Causa 2 pontos de <span style=\"color: #80C0FFFF;\">Dano Hydro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">Quando esta invocação estiver em campo: </span>O Ataque Normal de seu personagem causará +1 de Dano."
+        }
       }
     ]
   },
@@ -825,7 +1029,7 @@
         "_id": 13061,
         "type": "Ataque Normal",
         "name": "Caboom",
-        "desc": "Causa 1 pontos de <span style=\"color: #FF9999FF;\">Dano Pyro</span>.",
+        "desc": "Causa 1 ponto de <span style=\"color: #FF9999FF;\">Dano Pyro</span>.",
         "cost": [
           {
             "type": "pyro",
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Faíscas Explosivas",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Após o Personagem usar uma habilidade: </span>Causa 2 pontos de <span style=\"color: #FF9999FF;\">Dano Pyro</span> no seu Personagem em Combate.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Após o Personagem da equipe usar uma habilidade: </span>Causa 2 pontos de <span style=\"color: #FF9999FF;\">Dano Pyro</span> no seu Personagem em Combate.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>"
         }
       }
     ]
@@ -1181,7 +1385,7 @@
           "_id": 114051,
           "id": "tidecaller_surf_embrace",
           "name": "Invocadora da Maré - Protetora das Ondas",
-          "desc": "Em sua próxima ação, este personagem usará a habilidade:  <span style=\"color: #FFFFFFFF;\">Invocadora da Maré</span>.\\nDurante a preparação da habilidade: Dá 2 pontos de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> e protege o personagem afetado."
+          "desc": "Em sua próxima ação, este personagem usará a habilidade: <span style=\"color: #FFFFFFFF;\">Invocadora da Maré</span>.\\nDurante a preparação da habilidade: Dá 2 pontos de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> e protege o personagem afetado."
         }
       },
       {
@@ -1212,6 +1416,74 @@
         "name": "Conquistadora das Marés",
         "desc": "(Precisa de 1 rodada de ação para preparação)\\nCausa 2 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span>.",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Kujou Sara",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "Ataque Normal",
+        "name": "Tiro com Arco Tengu",
+        "desc": "Causa 2 pontos de <span style=\"color: #FFFFFFFF;\">Dano Físico</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "Habilidade Elemental",
+        "name": "Invocação da Tempestade Tengu",
+        "desc": "Causa 1 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span>, invoca <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Emboscada</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Tengu Juurai: Emboscada",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase Final: </span>Causa 1 ponto de <span style=\"color: #FFACFFFF;\">Dano Electro</span>, seu Personagem em Combate é afetado por <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Proteção da Pena do Corvo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "Supremo",
+        "name": "Subjugação: Koukou Sendou",
+        "desc": "Causa 1 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span>, invoca <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Aglomerado de Tempestades</span>.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Tengu Juurai: Aglomerado de Tempestades",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Fase Final: </span>Causa 2 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span>, seu Personagem em Combate é afetado por <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Proteção da Pena do Corvo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>"
+        }
       }
     ]
   },
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Arataki Itto",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "Ataque Normal",
+        "name": "Lenda do Combate",
+        "desc": "Causa 2 de <span style=\"color: #FFFFFFFF;\">Dano Físico</span>",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "Habilidade Elemental",
+        "name": "Masatsu Zetsugi: Explosão Akaushi!",
+        "desc": "Causa 1 de <span style=\"color: #FFE699FF;\">Dano Geo</span>, invoca <span style=\"color: #FFFFFFFF;\">Ushi</span> e este personagem é afetado por <span style=\"color: #FFFFFFFF;\">Superforça Superlativa</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Ushi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando seu Personagem em Combate sofrer Dano:</span> reduz 1 ponto de Dano.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 1</span>, quando os Usos esgotarem, essa carta não será descartada.\\n<span style=\"color: #FFFFFFFF;\">Pode desencadear uma vez quando estiver invocada:</span> depois de seu Personagem em Combate sofrer Dano, afetará <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superforça Superlativa</span> com Arataki Itto.\\n<span style=\"color: #FFFFFFFF;\">Fase Final:</span> descarta essa carta e causa 1 de <span style=\"color: #FFE699FF;\">Dano Geo</span>."
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "Supremo",
+        "name": "Descendência Real: Contemplem, Itto, o Maligno!",
+        "desc": "Causa 5 pontos de <span style=\"color: #FFE699FF;\">Dano Geo</span>, este personagem é afetado por <span style=\"color: #FFFFFFFF;\">Rei Oni Furioso</span>.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Rei Oni Furioso",
+          "desc": "Os <span style=\"color: #FFFFFFFF;\">Ataques Normais</span> do personagem afetado causam +2 de Dano e o <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dano Físico</span> causado é convertido em <span style=\"color: #FFE699FF;\">Dano Geo</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span>: 2</span>\\n<span style=\"color: #FFFFFFFF;\">Após o personagem afetado usar um Ataque Normal:</span> tem <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superforça Superlativa</span> aplicado em si. (1 vez por turno)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1534,6 +1874,68 @@
           "name": "Collambei",
           "desc": "<span style=\"color: #FFFFFFFF;\">Fase Final: </span>Causa 2 pontos de <span style=\"color: #7EC236FF;\">Dano Dendro</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Tighnari",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "Ataque Normal",
+        "name": "Rompedor de Barreiras Khanda",
+        "desc": "Causa 2 de <span style=\"color: #FFFFFFFF;\">Dano Físico</span>",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "Habilidade Elemental",
+        "name": "Mina Vijnana-Phala",
+        "desc": "Causa 2 pontos de <span style=\"color: #7EC236FF;\">Dano Dendro</span>, este personagem é afetado por <span style=\"color: #FFFFFFFF;\">Perfurador Vijnana</span>.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Perfurador Vijnana",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Quando o personagem afetado realizar um <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ataque Carregado</span>: </span>Converte o <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dano Físico</span> causado em <span style=\"color: #7EC236FF;\">Dano Dendro</span> e após a contabilização invoca <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Flechas Florescentes</span>.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "Supremo",
+        "name": "Flecha Enraizadora Artificial",
+        "desc": "Causa 4 pontos de <span style=\"color: #FFFFFFFF;\">Dano Físico</span>, causa 1 ponto de <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Dano Perfurante</span></span> a todos os Personagens Inativos do oponente.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
       }
     ]
   },
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Desejo de Lutar",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Eula</span>.\\nApós equipar esta carta, Eula usará instantaneamente <span style=\"color: #FFD780FF;\">Desejo de Lutar</span> uma vez.\\nQuando Eula usa <span style=\"color: #FFFFFFFF;\">Desejo de Lutar</span> com esta carta equipada, acumulará 1 ponto extra de \"Acúmulo de Energia\" para <span style=\"color: #FFFFFFFF;\">Espada Luminosa</span>.\\n(Essa carta só pode ser colocada em Decks que incluam Eula)"
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Mona</span>.\\nApós equipar esta carta, Mona instantaneamente usará <span style=\"color: #FFD780FF;\">Profecia da Submersão</span> uma vez.\\nAs <span style=\"color: #80C0FFFF;\">Reações Hydro</span> desencadeadas por Mona com esta carta equipada têm 2 pontos extras de dano.\\n(Essa carta só pode ser colocada em Decks que incluam Mona)"
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Caixão Haworthia",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Sangonomiya Kokomi</span>.\\nApós equipar esta carta, Sangonomiya Kokomi usará instantaneamente <span style=\"color: #FFD780FF;\">Caixão Haworthia</span> uma vez.\\nQuando Sangonomiya Kokomi usa <span style=\"color: #FFFFFFFF;\">Caixão Haworthia</span> com esta carta equipada, caso <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> esteja em campo, redefine <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>.\\nEnquanto <span style=\"color: #FFFFFFFF;\">Vestimenta Cerimonial</span> existir, o Dano causado por <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> é aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Sangonomiya Kokomi)"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Reflexo Gracioso",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Kamisato Ayato</span>, equipe esta carta.\\nApós Kamisato Ayato equipar esta carta, imediatamente utilizará <span style=\"color: #FFD780FF;\">Reflexo Gracioso</span> uma vez.\\nQuando Kamisato Ayato, equipado com esta carta, desencadear o efeito <span style=\"color: #FFFFFFFF;\">Reflexão Torrencial</span>, causará +1 de Dano adicional contra inimigos com Vida igual ou inferior a 6.\\n(Esta carta só pode ser colocada em Decks que incluam Kamisato Ayato)"
     }
   },
   {
@@ -2207,7 +2665,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Fischl</span>.\\nApós equipar esta carta, Fischl instantaneamente usará <span style=\"color: #FFD780FF;\">Predador Estelar</span> uma vez.\\nQuando Fischl aplicar <span style=\"color: #FFFFFFFF;\">Oz</span> com esta carta equipada, causa 2 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span> após Fischl executar um <span style=\"color: #FFFFFFFF;\">Ataque Normal</span>. (Consome <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>)\\n(Essa carta só pode ser colocada em Decks que incluam Fischl)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Fischl</span>.\\nApós equipar esta carta, Fischl instantaneamente usará <span style=\"color: #FFD780FF;\">Predador Estelar</span> uma vez.\\nQuando Fischl usar <span style=\"color: #FFFFFFFF;\">Oz</span> com esta carta equipada, causa 2 pontos de <span style=\"color: #FFACFFFF;\">Dano Electro</span> após Fischl executar um <span style=\"color: #FFFFFFFF;\">Ataque Normal</span>. (Consome <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>)\\n(Essa carta só pode ser colocada em Decks que incluam Fischl)"
     }
   },
   {
@@ -2239,7 +2697,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Keqing</span>.\\nApós equipar esta carta, Keqing instantaneamente usará <span style=\"color: #FFD780FF;\">Penitência do Trovão</span> uma vez.\\nQuando Keqing gera <span style=\"color: #FFFFFFFF;\">Encantamento Electro</span> com esta carta equipada, haverão os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span> aumentado em 1 ponto e faz com que o <span style=\"color: #FFACFFFF;\">Dano Electro</span> causado pelo personagem afetado seja aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Keqing)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Keqing</span>.\\nApós equipar esta carta, Keqing instantaneamente usará <span style=\"color: #FFD780FF;\">Penitência do Trovão</span> uma vez.\\nQuando Keqing aplicar <span style=\"color: #FFFFFFFF;\">Encantamento Electro</span> com esta carta equipada, haverão os seguintes efeitos:\\nComeça com <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Duração (Turnos)</span> aumentado em 1 ponto e faz com que o <span style=\"color: #FFACFFFF;\">Dano Electro</span> causado pelo personagem afetado seja aumentado em 1 ponto.\\n(Essa carta só pode ser colocada em Decks que incluam Keqing)"
     }
   },
   {
@@ -2271,7 +2729,27 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Beidou</span>.\\nApós equipar esta carta, Beidou instantaneamente usará <span style=\"color: #FFD780FF;\">Tormenta Elétrica</span> uma vez.\\nQuando Beidou usar <span style=\"color: #FFFFFFFF;\">Tormenta Elétrica</span> com esta carta equipada: caso receba Dano durante <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Preparar Habilidade</span>, os Ataques Normais de Beidou terão seu custo reduzido em 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemento Indefinido</span> durante este turno.(Pode ser desencadeado no máx. 2 vezes)\\n(Essa carta só pode ser colocada em Decks que incluam Beidou)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Beidou</span>.\\nApós equipar esta carta, Beidou instantaneamente usará <span style=\"color: #FFD780FF;\">Tormenta Elétrica</span> uma vez.\\nQuando Beidou usar <span style=\"color: #FFFFFFFF;\">Tormenta Elétrica</span> com esta carta equipada: caso receba Dano durante <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Preparar Habilidade</span>, os Ataques Normais de Beidou terão seu custo reduzido em 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemento Indefinido</span> durante este turno. (Pode ser desencadeado no máx. 2 vezes)\\n(Essa carta só pode ser colocada em Decks que incluam Beidou)"
+    }
+  },
+  {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Meu Mundo",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Kujou Sara</span>.\\nApós equipar esta carta, Kujou Sara instantaneamente usa <span style=\"color: #FFD780FF;\">Meu Mundo</span> uma vez.\\nQuando Kujou Sara que estiver com esta carta equipada estiver ativo, seu personagem <span style=\"color: #FFACFFFF;\">Electro</span> afetado por <span style=\"color: #FFFFFFFF;\">Proteção da Pena do Corvo</span>, terá o Dano de sua <span style=\"color: #FFFFFFFF;\">Habilidade Elemental</span> e de seu <span style=\"color: #FFFFFFFF;\">Supremo</span> aumentados em 1 ponto.\\n(Você precisa ter Kujou Sara em seu deck para adicionar esta carta a ele)"
     }
   },
   {
@@ -2347,6 +2825,26 @@
     }
   },
   {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Arataki Ichiban",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Arataki Itto</span>, equipe esta carta.\\nApós Arataki Itto equipar esta carta, utilizará imediatamente <span style=\"color: #FFD780FF;\">Arataki Ichiban</span> uma vez.\\nDepois que Arataki Itto, que está com a carta equipada, usar <span style=\"color: #FFFFFFFF;\">Arataki Ichiban</span> pela segunda vez ou mais na rodada: se desencadear <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Superforça Superlativa</span>, causa +1 de Dano adicional.\\n(É necessário ter Arataki Itto no Deck para adicionar essa carta ao Deck.)"
+    }
+  },
+  {
     "_id": 217011,
     "id": "floral_sidewinder",
     "type": "talent",
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Collei</span>.\\nApós equipar esta carta, Collei instantaneamente usará <span style=\"color: #FFD780FF;\">Retorno Floral</span> uma vez.\\nNo turno em que Collei usar <span style=\"color: #FFFFFFFF;\">Retorno Floral</span> com esta carta equipada e após a habilidade de seu personagem desencadear <span style=\"color: #7EC236FF;\">Reações Dendro</span>: Causa 1 ponto de <span style=\"color: #7EC236FF;\">Dano Dendro</span>. (1 vez por turno)\\n(Essa carta só pode ser colocada em Decks que incluam Collei)"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Visão Aguçada",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>: Equipe esta carta quando seu Personagem em Combate for <span style=\"color: #FFFFFFFF;\">Tighnari</span>.\\nApós equipar esta carta, Tighnari instantaneamente usará <span style=\"color: #FFD780FF;\">Visão Aguçada</span> uma vez.\\nQuando Tighnari, com esta carta equipada, estiver afetado pelo estado <span style=\"color: #FFFFFFFF;\">Perfurador Vijnana</span>, ao executar <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ataque Carregado</span>, terá o custo reduzido em 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Elemento Indefinido</span>.\\n(Essa carta só pode ser colocada em Decks que incluam Tighnari)"
     }
   },
   {
@@ -2692,6 +3206,21 @@
     }
   },
   {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Espada de Favonius",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Aumenta o Dano causado pelo personagem em 1 ponto</span>.\\n<span style=\"color: #FFFFFFFF;\">Após o personagem usar a Habilidade Elemental:</span> O personagem obtém 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Carga</span> adicional. (Uma vez por turno)\\n(Somente <span style=\"color: #FFFFFFFF;\">personagens usuários de Espada</span> podem equipar esta carta. Cada personagem pode equipar no máximo 1 Arma)"
+    }
+  },
+  {
     "_id": 312001,
     "id": "adventurers_bandana",
     "type": "artifact",
@@ -2782,6 +3311,36 @@
     }
   },
   {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "Capacete Ornamentado",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Após outro personagem aliado desencadear seu Supremo: </span>O personagem afetado recebe 1 ponto de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Carga</span>.\\n(Cada personagem pode equipar no máximo 1 Artefato)"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "Capacete do Comandante",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">No início da Fase de Ação</span>, faz com que o personagem entre no estado <span style=\"color: #FFFFFFFF;\">Montanha Imóvel</span>. Concede 2 pontos de <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Escudo</span> para protegê-lo.\\n(Cada personagem pode equipar no máximo 1 Artefato)."
+    }
+  },
+  {
     "_id": 312101,
     "id": "broken_rimes_echo",
     "type": "artifact",
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Grande Santuário Narukami",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Desencadeia uma vez por turno:</span> Gera um Dado Elemental aleatório.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Usos</span>: 3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Quando você realiza a ação de troca de personagem: </span> Essa troca será considerada como \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações Rápidas</span>\" e não como \"<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Ações de Combate</span>\". (Uma vez por turno)"

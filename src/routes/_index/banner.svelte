@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    shenhe: {
-      name: 'Shenhe',
+    yoimiya: {
+      name: 'Yoimiya',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    kamisato_ayaka: {
-      name: 'Kamisato Ayaka',
+    yae_miko: {
+      name: 'Yae Miko',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300045;
-  const image = 'shenhe_ayaka.png';
+  const bannerId = 300048;
+  const image = 'yoimiya-yae.png';
   const width = 800;
-  const height = 402;
+  const height = 539;
 
   let loading = true;
   let user = '';

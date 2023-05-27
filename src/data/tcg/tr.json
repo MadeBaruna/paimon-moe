@@ -347,6 +347,74 @@
     ]
   },
   {
+    "_id": 1106,
+    "id": "eula",
+    "type": "character",
+    "name": "Eula",
+    "hp": 10,
+    "energy": 2,
+    "element": "cryo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 11061,
+        "type": "Normal Saldırı",
+        "name": "Favonius Kılıç Tekniği - Edel",
+        "desc": "2 <span style=\"color: #FFFFFFFF;\">Fiziksel Hasar</span> verir.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 11062,
+        "type": "Element Becerisi",
+        "name": "Buz Dalgası Girdabı",
+        "desc": "2 <span style=\"color: #99FFFFFF;\">Buz Hasarı</span> verir ve bu karakter henüz <span style=\"color: #FFFFFFFF;\">Buz Yürek</span> elde etmediyse <span style=\"color: #FFFFFFFF;\">Buz Yürek</span> kazanır.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 111061,
+          "id": "grimheart",
+          "name": "Buz Yürek",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Bu kartı kuşanmış karakter Buz Dalgası Girdabı kullandıktan sonra</span> bu durum kaldırılır ve bu seferki Hasar 2 artar."
+        }
+      },
+      {
+        "_id": 11063,
+        "type": "Element Patlaması",
+        "name": "Buzul Aydınlık",
+        "desc": "2 <span style=\"color: #99FFFFFF;\">Buz Hasarı</span> verir ve 1 <span style=\"color: #FFFFFFFF;\">Işıksaçan Kılıcı</span> çağırır.",
+        "cost": [
+          {
+            "type": "cryo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 111062,
+          "id": "lightfall_sword",
+          "name": "Işıksaçan Kılıcı",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Eula, bir Normal Saldırı ya da Element Becerisi kullandığında</span> bu kart 2 kademe Azim biriktirir ancak Eula Enerji kazanmaz.\\n<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> Bu kartı atarak 2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fiziksel Hasar</span> verebilirsin. Her bir Azim kademesi bu seferki Hasarı 1 artırır.\\n(Bu kartın <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> üzerindeki etkiler <span style=\"color: #FFFFFFFF;\">Azim</span> için uygulanır.)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1201,
     "id": "barbara",
     "type": "character",
@@ -471,7 +539,7 @@
           "_id": 112022,
           "id": "rainbow_bladework",
           "name": "Gökkuşağı Kılıcı Tekniği",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Karakterin Normal Saldırı yaptıktan sonra</span> 2 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 3</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Karakterin Normal Saldırı yaptıktan sonra</span> 1 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 3</span>"
         }
       }
     ]
@@ -548,6 +616,142 @@
         "name": "Hayali Akıntı",
         "desc": "(Pasif) <span style=\"color: #FFFFFFFF;\">Aktif karakterin Mona'yken \"Karakter Değiştir\" kullandığında</span> bu değişiklik, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span> yerine <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hızlı Hamle</span> sayılır. (Her Turda bir defa)",
         "cost": []
+      }
+    ]
+  },
+  {
+    "_id": 1205,
+    "id": "sangonomiya_kokomi",
+    "type": "character",
+    "name": "Sangonomiya Kokomi",
+    "hp": 10,
+    "energy": 2,
+    "element": "hydro",
+    "weapon": "catalyst",
+    "skills": [
+      {
+        "_id": 12051,
+        "type": "Normal Saldırı",
+        "name": "Suyun Şekli",
+        "desc": "1 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12052,
+        "type": "Element Becerisi",
+        "name": "Kurage Yemini",
+        "desc": "Bu karakter <span style=\"color: #80C0FFFF;\">Su Etkisi</span> kazanır ve 1 <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> çağırır.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112051,
+          "id": "bake-kurage",
+          "name": "Bake-Kurage",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> 1 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir, aktif karakterin için 1 Can yeniler.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12053,
+        "type": "Element Patlaması",
+        "name": "Nereid'in Yükselişi",
+        "desc": "3 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir. Tüm müttefik karakterler için 1 Can yeniler. Bu karakter <span style=\"color: #FFFFFFFF;\">Merasim Elbisesi</span> kazanır.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 112052,
+          "id": "ceremonial_garment",
+          "name": "Merasim Elbisesi",
+          "desc": "Bu kartı kuşanmış karakterin <span style=\"color: #FFFFFFFF;\">Normal Saldırıları</span> fazladan 1 Hasar verir.\\n<span style=\"color: #FFFFFFFF;\">Bu kartı kuşanmış karakter bir Normal Saldırı yaptıktan sonra</span> tüm karakterlerin için 1 Can yeniler.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Tur Süresi</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 1206,
+    "id": "kamisato_ayato",
+    "type": "character",
+    "name": "Kamisato Ayato",
+    "hp": 10,
+    "energy": 3,
+    "element": "hydro",
+    "weapon": "sword",
+    "skills": [
+      {
+        "_id": 12061,
+        "type": "Normal Saldırı",
+        "name": "Kamisato Sanatı: Marobashi",
+        "desc": "2 <span style=\"color: #FFFFFFFF;\">Fiziksel Hasar</span> verir.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 12062,
+        "type": "Element Becerisi",
+        "name": "Kamisato Sanatı: Kyouka",
+        "desc": "2 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir ve bu karakter <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span> kazanır.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112061,
+          "id": "takimeguri_kanka",
+          "name": "Takimeguri Kanka",
+          "desc": "Bu kartı kuşanmış karakterin <span style=\"color: #FFFFFFFF;\">Normal Saldırıları</span> fazladan 1 Hasar verir, verdiği <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fiziksel Hasar</span>, <span style=\"color: #80C0FFFF;\">Su Hasarı</span> olarak değişir.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 12063,
+        "type": "Element Patlaması",
+        "name": "Kamisato Sanatı: Suiyuu",
+        "desc": "3 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir ve 1 <span style=\"color: #FFFFFFFF;\">Saflık Bahçesi</span> çağırır.",
+        "cost": [
+          {
+            "type": "hydro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 112062,
+          "id": "garden_of_purity",
+          "name": "Saflık Bahçesi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> 2 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>\\n\\n<span style=\"color: #FFFFFFFF;\">Bu Minyon savaş alanındayken</span> karakterlerinin Normal Saldırıları fazladan 1 Hasar verir."
+        }
       }
     ]
   },
@@ -773,7 +977,7 @@
         "_id": 13052,
         "type": "Element Becerisi",
         "name": "Niwabi Ateş Dansı",
-        "desc": "Bu karaktere <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> eklenir. (Bu beceri Enerji Yükü oluşturmaz.)",
+        "desc": "Bu karaktere <span style=\"color: #FFFFFFFF;\">Niwabi Enshou</span> eklenir. (Bu beceri Enerji oluşturmaz.)",
         "cost": [
           {
             "type": "pyro",
@@ -874,7 +1078,7 @@
           "_id": 113063,
           "id": "sparks_n_splash",
           "name": "Kıvılcımlar ve Patlama",
-          "desc": "<span style=\"color: #FFFFFFFF;\">Karakterin bir Beceri kullandıktan sonra aktif karakterine </span>2 <span style=\"color: #FF9999FF;\">Ateş Hasarı</span> verir.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
+          "desc": "<span style=\"color: #FFFFFFFF;\">Kıvılcımlar ve Patlama kuşanmış bir karakter bir Beceri kullandıktan sonra aktif karakterine </span>2 <span style=\"color: #FF9999FF;\">Ateş Hasarı</span> verir.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
         }
       }
     ]
@@ -1216,6 +1420,74 @@
     ]
   },
   {
+    "_id": 1406,
+    "id": "kujou_sara",
+    "type": "character",
+    "name": "Kujou Sara",
+    "hp": 10,
+    "energy": 2,
+    "element": "electro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 14061,
+        "type": "Normal Saldırı",
+        "name": "Tengu Okçuluğu",
+        "desc": "2 <span style=\"color: #FFFFFFFF;\">Fiziksel Hasar</span> verir.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 14062,
+        "type": "Element Becerisi",
+        "name": "Fırtına Habercisi Tengu",
+        "desc": "1 <span style=\"color: #FFACFFFF;\">Elektrik Hasarı</span> verir ve 1 <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Pusu</span> çağırır.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 114061,
+          "id": "tengu_juurai_ambush",
+          "name": "Tengu Juurai: Pusu",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> 1 <span style=\"color: #FFACFFFF;\">Elektrik Hasarı</span> verir, aktif karakterine <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Karga Tüyünün Himayesi</span> uygular.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 1</span>"
+        }
+      },
+      {
+        "_id": 14063,
+        "type": "Element Patlaması",
+        "name": "Fetih: Koukou Sendou",
+        "desc": "1 <span style=\"color: #FFACFFFF;\">Elektrik Hasarı</span> verir ve 1 <span style=\"color: #FFFFFFFF;\">Tengu Juurai: Yıldırım Kümesi</span> çağırır.",
+        "cost": [
+          {
+            "type": "electro",
+            "count": 4
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ],
+        "sub": {
+          "_id": 114062,
+          "id": "tengu_juurai_stormcluster",
+          "name": "Tengu Juurai: Yıldırım Kümesi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> 2 <span style=\"color: #FFACFFFF;\">Elektrik Hasarı</span> verir, aktif karakterine <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Karga Tüyünün Himayesi</span> uygular.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1501,
     "id": "sucrose",
     "type": "character",
@@ -1476,6 +1748,74 @@
     ]
   },
   {
+    "_id": 1605,
+    "id": "arataki_itto",
+    "type": "character",
+    "name": "Arataki Itto",
+    "hp": 10,
+    "energy": 3,
+    "element": "geo",
+    "weapon": "claymore",
+    "skills": [
+      {
+        "_id": 16051,
+        "type": "Normal Saldırı",
+        "name": "Dövüş Kulübü Efsanesi",
+        "desc": "2 <span style=\"color: #FFFFFFFF;\">Fiziksel Hasar</span> verir.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 16052,
+        "type": "Element Becerisi",
+        "name": "Masatsu Zetsugi: Akaushi Patlaması!",
+        "desc": "1 <span style=\"color: #FFE699FF;\">Toprak Hasarı</span> verir. <span style=\"color: #FFFFFFFF;\">Ushi</span> çağırır. Bu karakter <span style=\"color: #FFFFFFFF;\">Doğaüstü Güç</span> kazanır.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116051,
+          "id": "ushi",
+          "name": "Ushi",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Aktif karakterin Hasar aldığında </span>alınan Hasar 1 azalır.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 1</span>. Bu kart, Kullanım Hakkı sınırına ulaştığında atılmaz.\\n<span style=\"color: #FFFFFFFF;\">Aşağıdaki etki, bu Minyon varken bir defa tetiklenebilir. </span>Aktif karakterin Hasar aldığında Arataki Itto <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Doğaüstü Güç</span> kazanır.\\n<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> Bu kartı atarak 1 <span style=\"color: #FFE699FF;\">Toprak Hasarı</span> verebilirsin."
+        }
+      },
+      {
+        "_id": 16053,
+        "type": "Element Patlaması",
+        "name": "Belalı Oni Kral: Itto, Dünyaya Karşı!",
+        "desc": "5 <span style=\"color: #FFE699FF;\">Toprak Hasarı</span> verir ve bu karakter <span style=\"color: #FFFFFFFF;\">Kızgın Oni Kralı</span> kazanır.",
+        "cost": [
+          {
+            "type": "geo",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 116053,
+          "id": "raging_oni_king",
+          "name": "Kızgın Oni Kralı",
+          "desc": "Bu kartı kuşanmış karakterin <span style=\"color: #FFFFFFFF;\">Normal Saldırıları</span> fazladan 2 Hasar verir ve verdiği <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fiziksel Hasar</span>, <span style=\"color: #FFE699FF;\">Toprak Hasarı</span> olarak değişir.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Tur Süresi</span>: 2</span>\\n<span style=\"color: #FFFFFFFF;\">Bu kartı kuşanmış karakter bir Normal Saldırı yaptıktan sonra</span> <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Doğaüstü Güç</span> kazanır. (Her Turda bir defa)"
+        }
+      }
+    ]
+  },
+  {
     "_id": 1701,
     "id": "collei",
     "type": "character",
@@ -1534,6 +1874,68 @@
           "name": "Cuilein-Anbar",
           "desc": "<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> 2 <span style=\"color: #7EC236FF;\">Doğa Hasarı</span> verir.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
         }
+      }
+    ]
+  },
+  {
+    "_id": 1702,
+    "id": "tighnari",
+    "type": "character",
+    "name": "Tighnari",
+    "hp": 10,
+    "energy": 2,
+    "element": "dendro",
+    "weapon": "bow",
+    "skills": [
+      {
+        "_id": 17021,
+        "type": "Normal Saldırı",
+        "name": "Khanda Bariyer Kırıcı",
+        "desc": "2 <span style=\"color: #FFFFFFFF;\">Fiziksel Hasar</span> verir.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 1
+          },
+          {
+            "type": "void",
+            "count": 2
+          }
+        ]
+      },
+      {
+        "_id": 17022,
+        "type": "Element Becerisi",
+        "name": "Vijnana-Phala Mayını",
+        "desc": "2 <span style=\"color: #7EC236FF;\">Doğa Hasarı</span> verir ve bu karakter <span style=\"color: #FFFFFFFF;\">Vijnana Yayılması</span> kazanır.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          }
+        ],
+        "sub": {
+          "_id": 117021,
+          "id": "vijnana_suffusion",
+          "name": "Vijnana Yayılması",
+          "desc": "<span style=\"color: #FFFFFFFF;\">Bunu kuşanmış karakter <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Yüklü Saldırı</span> kullandığında</span> karakterin verdiği <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fiziksel Hasar</span>, <span style=\"color: #7EC236FF;\">Doğa Hasarı</span> olarak değişir ve Beceri Hasarından sonra 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Çiçeklenen Ok</span> çağırır.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
+        }
+      },
+      {
+        "_id": 17023,
+        "type": "Element Patlaması",
+        "name": "Serseri Sarmaşık Ok",
+        "desc": "4 <span style=\"color: #FFFFFFFF;\">Fiziksel Hasar</span> verir ve rakibin hazırdaki karakterlerine 1 <span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Delme Hasarı</span></span> verir.",
+        "cost": [
+          {
+            "type": "dendro",
+            "count": 3
+          },
+          {
+            "type": "energy",
+            "count": 2
+          }
+        ]
       }
     ]
   },
@@ -1603,7 +2005,7 @@
         "_id": 22014,
         "type": "Element Patlaması",
         "name": "Gelgit ve Tufan",
-        "desc": "2 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir ve bu Hasar, alandaki her bir dost Minyon için 2 artar.",
+        "desc": "2 <span style=\"color: #80C0FFFF;\">Su Hasarı</span> verir ve bu Hasar, alandaki her bir Minyonun için 2 artar.",
         "cost": [
           {
             "type": "hydro",
@@ -1960,7 +2362,7 @@
           "_id": 127011,
           "id": "radical_vitality",
           "name": "Radikal Canlılık",
-          "desc": "Bu karakter Element Hasarı verdiğinde veya aldığında 1 kademe Radikal Canlılık kazanırsın. (3 kademeye kadar birikir.)\\n<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> Radikal Canlılık maksimum kademe sayısına ulaştığında sıfırlanır ve karakter tüm Enerji Yüklerini kaybeder."
+          "desc": "Bu karakter Element Hasarı verdiğinde veya aldığında 1 kademe Radikal Canlılık kazanırsın. (3 kademeye kadar birikir.)\\n<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> Radikal Canlılık maksimum kademe sayısına ulaştığında sıfırlanır ve karakter tüm Enerjisini kaybeder."
         }
       },
       {
@@ -1973,7 +2375,7 @@
           "_id": 127011,
           "id": "radical_vitality",
           "name": "Radikal Canlılık",
-          "desc": "Bu karakter Element Hasarı verdiğinde veya aldığında 1 kademe Radikal Canlılık kazanırsın. (3 kademeye kadar birikir.)\\n<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> Radikal Canlılık maksimum kademe sayısına ulaştığında sıfırlanır ve karakter tüm Enerji Yüklerini kaybeder."
+          "desc": "Bu karakter Element Hasarı verdiğinde veya aldığında 1 kademe Radikal Canlılık kazanırsın. (3 kademeye kadar birikir.)\\n<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> Radikal Canlılık maksimum kademe sayısına ulaştığında sıfırlanır ve karakter tüm Enerjisini kaybeder."
         }
       }
     ]
@@ -2059,6 +2461,26 @@
     }
   },
   {
+    "_id": 211061,
+    "id": "wellspring_of_war-lust",
+    "type": "talent",
+    "name": "Savaş Arzusu Dehlizi",
+    "requirement": "eula",
+    "skills": {
+      "cost": [
+        {
+          "type": "cryo",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Eula</span> olduğunda bu kartı kuşan.\\nEula bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Savaş Arzusu Dehlizi</span> kullanır.\\nBu kartı kuşanmış Eula bir <span style=\"color: #FFFFFFFF;\">Savaş Arzusu Dehlizi</span> kullandığında bu, <span style=\"color: #FFFFFFFF;\">Işıksaçan Kılıcı</span> için 1 Azim daha oluşturur.\\n(Bu kartı destene eklemek için destende Eula olmalıdır.)"
+    }
+  },
+  {
     "_id": 212011,
     "id": "glorious_season",
     "type": "talent",
@@ -2071,7 +2493,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Barbara</span> olduğunda bu kartı kuşan.\\nBarbara, bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Muhteşem Sezon</span> kullanır.\\nBu kartı kuşanmış Barbara alandayken <span style=\"color: #FFFFFFFF;\">Melodi Döngüsü</span>, bir sonraki \"Karakter Değiştir\" kullanışında 1 adet daha az Element Zarı harcanmasını sağlar. (Her Turda bir defa)\\n(Bu kartı destene eklemek için destende Barbara olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Barbara</span> olduğunda bu kartı kuşan.\\nBarbara bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Muhteşem Sezon</span> kullanır.\\nBu kartı kuşanmış Barbara alandayken <span style=\"color: #FFFFFFFF;\">Melodi Döngüsü</span>, bir sonraki \"Karakter Değiştir\" kullanışında 1 adet daha az Element Zarı harcanmasını sağlar. (Her Turda bir defa)\\n(Bu kartı destene eklemek için destende Barbara olmalıdır.)"
     }
   },
   {
@@ -2087,7 +2509,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Xingqiu</span> olduğunda bu kartı kuşan.\\nXingqiu, bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Yağmur Kokusu</span> kullanır.\\nBu kartı kuşanmış Xingqiu, bir <span style=\"color: #FFFFFFFF;\">Yağmur Kılıcı</span> oluşturduğunda başlangıçtaki <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> 1 artar.\\n(Bu kartı destene eklemek için destende Xingqiu olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Xingqiu</span> olduğunda bu kartı kuşan.\\nXingqiu bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Yağmur Kokusu</span> kullanır.\\nBu kartı kuşanmış Xingqiu, bir <span style=\"color: #FFFFFFFF;\">Yağmur Kılıcı</span> oluşturduğunda başlangıçtaki <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> 1 artar.\\n(Bu kartı destene eklemek için destende Xingqiu olmalıdır.)"
     }
   },
   {
@@ -2108,6 +2530,42 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Mona</span> olduğunda bu kartı kuşan.\\nMona bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Batışın Kehaneti</span> kullanır.\\nBu kartı kuşanmış Mona aktif karakter olarak kaldığı sürece tetikleyebileceğin <span style=\"color: #80C0FFFF;\">Su ile İlgili Tepkimeler</span> tarafından verilen Hasar fazladan 2 daha artar.\\n(Bu kartı destene eklemek için destende Mona olmalıdır.)"
+    }
+  },
+  {
+    "_id": 212051,
+    "id": "tamanooyas_casket",
+    "type": "talent",
+    "name": "Tamanooya'nın Sepeti",
+    "requirement": "sangonomiya_kokomi",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Sangonomiya Kokomi</span> olduğunda bu kartı kuşan.\\nSangonomiya Kokomi bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Tamanooya'nın Sepeti</span> kullanır.\\nBu kartı kuşanmış Sangonomiya Kokomi, <span style=\"color: #FFFFFFFF;\">Tamanooya'nın Sepeti</span> kullandığında <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> alandaysa <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> yenilenir.\\n<span style=\"color: #FFFFFFFF;\">Merasim Elbisesi</span> alandayken <span style=\"color: #FFFFFFFF;\">Bake-Kurage</span> fazladan 1 Hasar verir.\\n(Bu kartı destene eklemek için destende Sangonomiya Kokomi olmalıdır.)"
+    }
+  },
+  {
+    "_id": 212061,
+    "id": "kyouka_fuushi",
+    "type": "talent",
+    "name": "Kyouka Fuushi",
+    "requirement": "kamisato_ayato",
+    "skills": {
+      "cost": [
+        {
+          "type": "hydro",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Kamisato Ayato</span> olduğunda bu kartı kuşan.\\nKamisato Ayato bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Kyouka Fuushi</span> kullanır.\\nBu kartı kuşanmış Kamisato Ayato, <span style=\"color: #FFFFFFFF;\">Takimeguri Kanka</span> etkilerini tetiklediğinde hedefin kalan Canı 6 veya daha azsa fazladan 1 Hasar verir.\\n(Bu kartı destene eklemek için destende Kamisato Ayato olmalıdır.)"
     }
   },
   {
@@ -2159,7 +2617,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Bennett</span> olduğunda bu kartı kuşan.\\nBennett, bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Büyük Umutlar</span> kullanır.\\nBu kartı kuşanmış Bennett, bir <span style=\"color: #FFFFFFFF;\">İlham Alanı</span> oluşturduğunda Hasar Bonusu artık Can kısıtlaması olmadan sürekli etkin olur.\\n(Bu kartı destene eklemek için destende Bennett olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Bennett</span> olduğunda bu kartı kuşan.\\nBennett bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Büyük Umutlar</span> kullanır.\\nBu kartı kuşanmış Bennett, bir <span style=\"color: #FFFFFFFF;\">İlham Alanı</span> oluşturduğunda Hasar Bonusu artık Can kısıtlaması olmadan sürekli etkin olur.\\n(Bu kartı destene eklemek için destende Bennett olmalıdır.)"
     }
   },
   {
@@ -2191,7 +2649,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Klee</span> olduğunda bu kartı kuşan.\\nKlee, bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Ezici Sürpriz</span> kullanır.\\nBu kartı kuşanmış Klee, bir <span style=\"color: #FFFFFFFF;\">Patlayıcı Kıvılcım</span> oluşturduğunda <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> 1 artar.\\n(Bu kartı destene eklemek için destende Klee olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Klee</span> olduğunda bu kartı kuşan.\\nKlee bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Ezici Sürpriz</span> kullanır.\\nBu kartı kuşanmış Klee, bir <span style=\"color: #FFFFFFFF;\">Patlayıcı Kıvılcım</span> oluşturduğunda <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> 1 artar.\\n(Bu kartı destene eklemek için destende Klee olmalıdır.)"
     }
   },
   {
@@ -2207,7 +2665,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Fischl</span> olduğunda bu kartı kuşan.\\nFischl bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Yıldız Yiyen Kuzgun</span> kullanır.\\nBu kartı kuşanan Fischl bir <span style=\"color: #FFFFFFFF;\">Oz</span> oluşturur. Ayrıca Fischl <span style=\"color: #FFFFFFFF;\">Normal Saldırı</span> yaptıktan sonra 2 <span style=\"color: #FFACFFFF;\">Elektrik Hasarı</span> verir. (Bu, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> harcar.)\\n(Bu kartı destene eklemek için destende Fischl olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Fischl</span> olduğunda bu kartı kuşan.\\nFischl bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Yıldız Yiyen Kuzgun</span> kullanır.\\nBu kartı kuşanan Fischl bir <span style=\"color: #FFFFFFFF;\">Oz</span> oluşturur, <span style=\"color: #FFFFFFFF;\">Oz</span> bu etkiyi kazanır: Fischl <span style=\"color: #FFFFFFFF;\">Normal Saldırı</span> yaptıktan sonra 2 <span style=\"color: #FFACFFFF;\">Elektrik Hasarı</span> verir. (Bu, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> harcar.)\\n(Bu kartı destene eklemek için destende Fischl olmalıdır.)"
     }
   },
   {
@@ -2223,7 +2681,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Razor</span> olduğunda bu kartı kuşan.\\nRazor bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Uyanış</span> kullanır.\\nBu kartı kuşanmış Razor bir <span style=\"color: #FFFFFFFF;\">Uyanış</span> kullandığında Elektrik karakterlerinden biri 1 Enerji Yükü kazanır. (Aktif Karakter önceliklidir)\\n(Bu kartı destene eklemek için destende Razor olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Razor</span> olduğunda bu kartı kuşan.\\nRazor bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Uyanış</span> kullanır.\\nBu kartı kuşanmış Razor bir <span style=\"color: #FFFFFFFF;\">Uyanış</span> kullandığında Elektrik karakterlerinden biri 1 Enerji kazanır. (Aktif Karakter önceliklidir)\\n(Bu kartı destene eklemek için destende Razor olmalıdır.)"
     }
   },
   {
@@ -2239,7 +2697,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Keqing</span> olduğunda bu kartı kuşan.\\nKeqing, bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Yıldırım Cezası</span> kullanır.\\nBu kartı kuşanmış Keqing bir <span style=\"color: #FFFFFFFF;\">Elektrik Element Tesiri</span> oluşturduğunda şu etkileri kazanır: Başlangıçtaki <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Tur Süresi</span> 1 ve eklenen karakterin verdiği <span style=\"color: #FFACFFFF;\">Elektrik Hasarı</span> 1 artar.\\n(Bu kartı destene eklemek için destende Keqing olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Keqing</span> olduğunda bu kartı kuşan.\\nKeqing bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Yıldırım Cezası</span> kullanır.\\nBu kartı kuşanmış Keqing bir <span style=\"color: #FFFFFFFF;\">Elektrik Element Tesiri</span> oluşturduğunda şu etkileri kazanır: Başlangıçtaki <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Tur Süresi</span> 1 ve eklenen karakterin verdiği <span style=\"color: #FFACFFFF;\">Elektrik Hasarı</span> 1 artar.\\n(Bu kartı destene eklemek için destende Keqing olmalıdır.)"
     }
   },
   {
@@ -2271,7 +2729,27 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Beidou</span> olduğunda bu kartı kuşan.\\nBeidou, bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Şimşek Fırtınası</span> kullanır.\\nBu kartı kuşanmış Beidou, <span style=\"color: #FFFFFFFF;\">Şimşek Fırtınası</span> kullandığında <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Beceri Hazırlama</span> etkinken Hasar alınırsa bu Tur için Beidou karakterinin Normal Saldırısının <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nötr Element</span> maliyeti 1 azalır. (2 defa tetiklenebilir)\\n(Bu kartı destene eklemek için destende Beidou olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Beidou</span> olduğunda bu kartı kuşan.\\nBeidou bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Şimşek Fırtınası</span> kullanır.\\nBu kartı kuşanmış Beidou, <span style=\"color: #FFFFFFFF;\">Şimşek Fırtınası</span> kullandığında <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Beceri Hazırlama</span> etkinken Hasar alınırsa bu Tur için Beidou karakterinin Normal Saldırısının <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nötr Element</span> maliyeti 1 azalır. (2 defa tetiklenebilir)\\n(Bu kartı destene eklemek için destende Beidou olmalıdır.)"
+    }
+  },
+  {
+    "_id": 214061,
+    "id": "sin_of_pride",
+    "type": "talent",
+    "name": "Kibir",
+    "requirement": "kujou_sara",
+    "skills": {
+      "cost": [
+        {
+          "type": "electro",
+          "count": 4
+        },
+        {
+          "type": "energy",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Kujou Sara</span> olduğunda bu kartı kuşan.\\nKujou Sara bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Kibir</span> kullanır.\\nKujou Sara aktif karakter olduğunda ve bu kartı kuşandığında <span style=\"color: #FFFFFFFF;\">Karga Tüyünün Himayesi</span> kuşanmış tüm müttefik <span style=\"color: #FFACFFFF;\">Elektrik</span> karakterleri fazladan 1 <span style=\"color: #FFFFFFFF;\">Element Becerisi</span> ve <span style=\"color: #FFFFFFFF;\">Element Patlaması</span> Hasarı verir.\\n(Bu kartı destene eklemek için destende Kujou Sara olmalıdır.)"
     }
   },
   {
@@ -2343,7 +2821,27 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Noelle</span> olduğunda bu kartı kuşan.\\nNoelle, bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Bana Güven</span> kullanır.\\nBu kartı kuşanmış Noelle, bir <span style=\"color: #FFFFFFFF;\">Tam Zırh</span> oluşturduğunda Noelle <span style=\"color: #FFFFFFFF;\">Normal Saldırı</span> yaptıktan sonra tüm karakterlerin için 1 Can yenilenir. (Her Turda bir defa)\\n(Bu kartı destene eklemek için destende Noelle olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Noelle</span> olduğunda bu kartı kuşan.\\nNoelle bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Bana Güven</span> kullanır.\\nBu kartı kuşanmış Noelle, bir <span style=\"color: #FFFFFFFF;\">Tam Zırh</span> oluşturduğunda Noelle <span style=\"color: #FFFFFFFF;\">Normal Saldırı</span> yaptıktan sonra tüm karakterlerin için 1 Can yenilenir. (Her Turda bir defa)\\n(Bu kartı destene eklemek için destende Noelle olmalıdır.)"
+    }
+  },
+  {
+    "_id": 216051,
+    "id": "arataki_ichiban",
+    "type": "talent",
+    "name": "Arataki Ichiban",
+    "requirement": "arataki_itto",
+    "skills": {
+      "cost": [
+        {
+          "type": "geo",
+          "count": 1
+        },
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Arataki Itto</span> olduğunda bu kartı kuşan.\\nArataki Itto bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Arataki Ichiban</span> kullanır.\\nBu kartı kuşanmış Arataki Itto, bir Turda iki veya daha fazla defa <span style=\"color: #FFFFFFFF;\">Arataki Ichiban</span> kullandığında <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Doğaüstü Güç</span> tetiklenmişse fazladan 1 Hasar verir.\\n(Bu kartı destene eklemek için destende Arataki Itto olmalıdır.)"
     }
   },
   {
@@ -2360,6 +2858,22 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Collei</span> olduğunda bu kartı kuşan.\\nCollei bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Yandan Uçan Yapraklar</span> kullanır.\\nBu kartı kuşanmış Collei, bir <span style=\"color: #FFFFFFFF;\">Yandan Uçan Yapraklar</span> kullandığında bu Turda karakterinin Becerisi <span style=\"color: #7EC236FF;\">Doğa ile İlgili Tepkimeler</span> tetiklediğinde 1 <span style=\"color: #7EC236FF;\">Doğa Hasarı</span> verir.(Her Turda bir defa)\\n(Bu kartı destene eklemek için destende Collei olmalıdır.)"
+    }
+  },
+  {
+    "_id": 217021,
+    "id": "keen_sight",
+    "type": "talent",
+    "name": "Keskin Görüş",
+    "requirement": "tighnari",
+    "skills": {
+      "cost": [
+        {
+          "type": "dendro",
+          "count": 4
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Tighnari</span> olduğunda bu kartı kuşan.\\nTighnari bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Keskin Görüş</span> kullanır.\\nBu kartı kuşanmış Tighnari, <span style=\"color: #FFFFFFFF;\">Vijnana Yayılması</span> etkisindeyken karakterin <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Yüklü Saldırı</span> sırasında harcadığı <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Nötr Element</span> maliyeti 1 azalır.\\n(Bu kartı destene eklemen için destende Tighnari olmalıdır.)"
     }
   },
   {
@@ -2395,7 +2909,7 @@
           "count": 4
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Aynalı Rahibe</span> olduğunda bu kartı kuşan.\\nAynalı Rahibe, bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Aynalı Kafes</span> kullanır.\\nBu kartı kuşanmış Aynalı Rahibe, bir <span style=\"color: #FFFFFFFF;\">Kırılım</span> oluşturduğunda şu etkileri kazanır:\\nBaşlangıçtaki <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Tur Süresi</span> 1 artar. Ayrıca bu kartın eklendiği karakterin başka karakterle değiştirilmesi için gereken Element Zarı da 1 artar.\\n(Bu kartı destene eklemek için destende Aynalı Rahibe olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Aynalı Rahibe</span> olduğunda bu kartı kuşan.\\nAynalı Rahibe bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Aynalı Kafes</span> kullanır.\\nBu kartı kuşanmış Aynalı Rahibe, bir <span style=\"color: #FFFFFFFF;\">Kırılım</span> oluşturduğunda şu etkileri kazanır:\\nBaşlangıçtaki <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Tur Süresi</span> 1 artar. Ayrıca bu kartın eklendiği karakterin başka karakterle değiştirilmesi için gereken Element Zarı da 1 artar.\\n(Bu kartı destene eklemek için destende Aynalı Rahibe olmalıdır.)"
     }
   },
   {
@@ -2411,7 +2925,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Fatui Ateş Tetikçisi</span> olduğunda bu kartı kuşan.\\nFatui Ateş Tetikçisi, bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Ödenmiş Hesap</span> kullanır.\\nBu kartı kuşanmış Fatui Ateş Tetikçisi, <span style=\"color: #FFFFFFFF;\">Gizlilik</span> oluşturduğunda şu etkileri kazanır:\\nBaşlangıçtaki <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> 1 artar ve eklenen karakterin verdiği <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fiziksel Hasar</span>, <span style=\"color: #FF9999FF;\">Ateş Hasarı</span> olarak değişir.\\n(Bu kartı destene eklemek için destende Fatui Ateş Tetikçisi olmalıdır.)"
+      "desc": "<span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span>: Aktif karakterin <span style=\"color: #FFFFFFFF;\">Fatui Ateş Tetikçisi</span> olduğunda bu kartı kuşan.\\nFatui Ateş Tetikçisi bu kartı kuşandıktan sonra hemen bir defa <span style=\"color: #FFD780FF;\">Ödenmiş Hesap</span> kullanır.\\nBu kartı kuşanmış Fatui Ateş Tetikçisi, <span style=\"color: #FFFFFFFF;\">Gizlilik</span> oluşturduğunda şu etkileri kazanır:\\nBaşlangıçtaki <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span> 1 artar ve eklenen karakterin verdiği <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Fiziksel Hasar</span>, <span style=\"color: #FF9999FF;\">Ateş Hasarı</span> olarak değişir.\\n(Bu kartı destene eklemek için destende Fatui Ateş Tetikçisi olmalıdır.)"
     }
   },
   {
@@ -2628,7 +3142,7 @@
           "count": 3
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Karakterin verdiği Hasar 1 artar.</span>\\n<span style=\"color: #FFFFFFFF;\">Oynandığında</span> Liyueli her grup üyesi bu kartı kuşanmış karaktere <span style=\"color: #FFFFFFFF;\">1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kalkan</span> puanı</span> ekler. (En fazla 3 puan)\\n(<span style=\"color: #FFFFFFFF;\">YalnızcaMızrak Karakterleri</span> bunu kuşanabilir. Bir karakter en fazla 1 Silah kuşanabilir.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Karakterin verdiği Hasar 1 artar.</span>\\n<span style=\"color: #FFFFFFFF;\">Oynandığında</span> Liyueli her grup üyesi bu kartı kuşanmış karaktere <span style=\"color: #FFFFFFFF;\">1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kalkan</span> puanı</span> ekler. (En fazla 3 puan)\\n(<span style=\"color: #FFFFFFFF;\">Yalnızca Mızrak Karakterleri</span> bunu kuşanabilir. Bir karakter en fazla 1 Silah kuşanabilir.)"
     }
   },
   {
@@ -2689,6 +3203,21 @@
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">Karakterin verdiği Hasar 1 artar.</span>\\n<span style=\"color: #FFFFFFFF;\">Rakip karakter bir Element Becerisi kullandığında</span> bu ekli karakter aktif karakterse bu karakter için 1 Can yeniler. (Her Turda en fazla iki defa.)\\n(<span style=\"color: #FFFFFFFF;\">YalnızcaKılıç Karakterleri</span> bunu kuşanabilir. Bir karakter en fazla 1 Silah kuşanabilir.)"
+    }
+  },
+  {
+    "_id": 311505,
+    "id": "favonius_sword",
+    "type": "weapon",
+    "name": "Favonius Kılıcı",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 3
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Karakterin verdiği Hasar 1 artar.</span>\\n<span style=\"color: #FFFFFFFF;\">Karakter bir Element Becerisi kullandıktan sonra</span> fazladan 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span> kazanır. (Her Turda bir defa)\\n(<span style=\"color: #FFFFFFFF;\">Yalnızca Kılıç Karakterleri</span> bunu kuşanabilir. Bir karakter en fazla 1 Silah kuşanabilir.)"
     }
   },
   {
@@ -2778,7 +3307,37 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Bir karakter Element Patlaması kullandıktan sonra</span> hazırdaki tüm karakterlerin 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji Yükü</span> kazanır. (Her Turda bir defa)\\n(Bir karakter en fazla 1 Yadigar kuşanabilir.)"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Bir karakter Element Patlaması kullandıktan sonra</span> hazırdaki tüm karakterlerin 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span> kazanır. (Her Turda bir defa)\\n(Bir karakter en fazla 1 Yadigar kuşanabilir.)"
+    }
+  },
+  {
+    "_id": 312007,
+    "id": "ornate_kabuto",
+    "type": "artifact",
+    "name": "İşlemeli Kabuto",
+    "skills": {
+      "cost": [
+        {
+          "type": "void",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Başka bir karakterin Element Patlaması kullandıktan sonra</span> bu kartı kuşanan karakter 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span> kazanır.\\n(Bir karakter en fazla 1 Yadigar kuşanabilir.)"
+    }
+  },
+  {
+    "_id": 312009,
+    "id": "generals_ancient_helm",
+    "type": "artifact",
+    "name": "Kadim General Miğferi",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Hamle Aşaması başladığında</span> bu kartı kuşanan karaktere 2 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kalkan</span> puanı sağlayan <span style=\"color: #FFFFFFFF;\">Yerinden Oynamayan Dağ</span> kazandırır.\\n(Bir karakter en fazla 1 Yadigar kuşanabilir.)"
     }
   },
   {
@@ -2804,7 +3363,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2834,7 +3393,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2864,7 +3423,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2894,7 +3453,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2924,7 +3483,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2954,7 +3513,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -2984,7 +3543,7 @@
     "skills": {
       "cost": [
         {
-          "type": "same",
+          "type": "void",
           "count": 3
         }
       ],
@@ -3082,6 +3641,21 @@
     }
   },
   {
+    "_id": 321008,
+    "id": "grand_narukami_shrine",
+    "type": "place",
+    "name": "Büyük Narukami Tapınağı",
+    "skills": {
+      "cost": [
+        {
+          "type": "same",
+          "count": 2
+        }
+      ],
+      "desc": "<span style=\"color: #FFFFFFFF;\">Her Turda bir defa otomatik tetiklenir.</span> Rastgele 1 Element Zarı oluşur.\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 3</span>"
+    }
+  },
+  {
     "_id": 322001,
     "id": "paimon",
     "type": "ally",
@@ -3104,8 +3678,8 @@
     "skills": {
       "cost": [
         {
-          "type": "void",
-          "count": 2
+          "type": "same",
+          "count": 1
         }
       ],
       "desc": "<span style=\"color: #FFFFFFFF;\">\"Karakter Değiştir\" kullandığında</span> bu değişiklik, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Savaş Hamlesi</span> yerine <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Hızlı Hamle</span> sayılır. (Her Turda bir defa)"
@@ -3228,7 +3802,7 @@
           "count": 2
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> Maksimum Enerji Yüküne sahip olmayan karakterlerinden biri, 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji Yükü</span> kazanır.(Aktif karakter önceliklidir)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Son Aşama:</span> Maksimum Enerjiye sahip olmayan karakterlerinden biri, 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span> kazanır. (Aktif karakter önceliklidir)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
     }
   },
   {
@@ -3243,7 +3817,7 @@
           "count": 1
         }
       ],
-      "desc": "<span style=\"color: #FFFFFFFF;\">Karakter değiştirdikten sonra</span> geçiş yaptığın karakterde <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji Yükü</span> yoksa 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji Yükü</span> elde eder. (Her Turda bir defa)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
+      "desc": "<span style=\"color: #FFFFFFFF;\">Karakter değiştirdikten sonra</span> geçiş yaptığın karakterde <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span> yoksa 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span> elde eder. (Her Turda bir defa)\\n<span style=\"color: #FFFFFFFF;\"><span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kullanım Hakkı</span>: 2</span>"
     }
   },
   {
@@ -3381,7 +3955,7 @@
           "count": 1
         }
       ],
-      "desc": "Maksimum Enerji Yüküne sahip olmayan bir karakterin, 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji Yükü</span> kazanır. (Aktif Karakter önceliklidir)\\n(Bu kartı destene eklemek için destende en az 2 <span style=\"color: #FFACFFFF;\">Elektrik</span> karakteri olmalıdır.)"
+      "desc": "Maksimum Enerjiye sahip olmayan karakterlerinden biri, 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span> kazanır. (Aktif Karakter önceliklidir)\\n(Bu kartı destene eklemek için destende en az 2 <span style=\"color: #FFACFFFF;\">Elektrik</span> karakteri olmalıdır.)"
     }
   },
   {
@@ -3435,7 +4009,7 @@
           "count": 1
         }
       ],
-      "desc": "Bu turda karakterin bir dahaki sefere <span style=\"color: #FFE699FF;\">Toprak Hasarı</span> verdikten sonra, <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kalkan</span> veren herhangi bir Savaş Durumun olursa 3 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kalkan</span> puanı olan böyle bir Durumdan verilir.\\n(Bu kartı destene eklemek için destende en az 2 <span style=\"color: #FFE699FF;\">Toprak</span> karakteri olmalıdır.)"
+      "desc": "Bu turda karakterin bir dahaki sefere <span style=\"color: #FFE699FF;\">Toprak Hasarı</span> verdikten sonra <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kalkan</span> veren herhangi bir Savaş Durumun olursa 3 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kalkan</span> puanı olan böyle bir Durumdan verilir.\\n(Bu kartı destene eklemek için destende en az 2 <span style=\"color: #FFE699FF;\">Toprak</span> karakteri olmalıdır.)"
     }
   },
   {
@@ -3522,7 +4096,7 @@
     "name": "Henüz Kaybetmedim!",
     "skills": {
       "cost": [],
-      "desc": "Ancak bu turda yenilen bir karakterin olduğunda oynanabilir.\\n1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kararsız Element</span> oluşturur ve aktif karakterin 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji Yükü</span> kazanır."
+      "desc": "Ancak bu turda yenilen bir karakterin olduğunda oynanabilir.\\n1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Kararsız Element</span> oluşturur ve aktif karakterin 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span> kazanır."
     }
   },
   {
@@ -3562,7 +4136,7 @@
           "count": 2
         }
       ],
-      "desc": "Mevcut Aktif Karakterin <span style=\"color: #FFFFFFFF;\">1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji Yükü</span></span> kazanır."
+      "desc": "Mevcut Aktif Karakterin <span style=\"color: #FFFFFFFF;\">1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span></span> kazanır."
     }
   },
   {
@@ -3577,7 +4151,7 @@
           "count": 1
         }
       ],
-      "desc": "En fazla hazırdaki 2 karakterden 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji Yükü</span> alıp aktif karaktere verir."
+      "desc": "En fazla hazırdaki 2 karakterden 1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Enerji</span> alıp aktif karaktere verir."
     }
   },
   {
@@ -3657,7 +4231,7 @@
           "count": 2
         }
       ],
-      "desc": "1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Rastgele Dağ Yabanisi Minyonu Çağırma</span> çağır!\\n(Bu kartı destene eklemek için destende en az 2 Canavar karakteri olmalıdır.)"
+      "desc": "1 <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Rastgele Dağ Yabanisi Minyonu</span> çağır!\\n(Bu kartı destene eklemek için destende en az 2 Canavar karakteri olmalıdır.)"
     }
   },
   {
