@@ -1705,6 +1705,9 @@ export const builds = {
             refine: [5],
           },
           {
+            id: 'skyward_spine'
+          },
+          {
             id: 'vortex_vanquisher',
           },
           {
