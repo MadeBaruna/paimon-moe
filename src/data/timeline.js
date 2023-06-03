@@ -232,6 +232,36 @@ export const eventsData = [
       description:
         'When DMG dealt by Dendro Cores (including DMG from Hyperbloom and Burgeon reactions) hits a character, Elemental Mastery will be increased by 200 for all characters in the party for 4s.',
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-06-01 04:00:00',
+      end: '2023-06-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "After the character's Normal Attack hits an opponent, this opponent will be afflicted with a Sign of Snaring. After 3s, the Sign will be removed, dealing True DMG to this opponent. After a character's Normal Attack hits an opponent with a Sign of Snaring, the DMG dealt by the Sign's removal will be increased. This DMG can be increased for no more than 9 times.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-06-16 04:00:00',
+      end: '2023-07-01 04:00:00',
+      color: '#4299E1',
+      description:
+        "After the active character's Normal Attacks hit opponents, the DMG dealt by this character will increase by 12% for 2s. This effect can stack up to 5 times. Each stack's duration is counted independently. This effect can be triggered once every 0.05s. This effect will be canceled when the character leaves the field.will be removed, dealing True DMG to this opponent. After a character's Normal Attack hits an opponent with a Sign of Snaring, the DMG dealt by the Sign's removal will be increased. This DMG can be increased for no more than 9 times.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-07-01 04:00:00',
+      end: '2023-07-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "After the character's Normal Attack hits an opponent, the Physical or Elemental RES of this opponent will decrease by 6% for 2s, matching the Attribute of that attack. This can stack up to 6 times. RES decreases of different types can co-exist, and their stacks and timers will be independent of each other.",
+    },
   ],
   [
     {
@@ -253,6 +283,16 @@ export const eventsData = [
       color: '#B6A1EA',
       image: 'paimon_bargain.png',
       description: 'Now selling: Razor, Amber, and Blackcliff Weapons.',
+    },
+    {
+      name: "Paimon's Bargain - Barbara, Kaeya, and Royal",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2023-06-01 04:00:00',
+      end: '2023-07-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Barbara, Kaeya, and Royal Weapons.',
     },
   ],
   [
