@@ -553,4 +553,28 @@ export const bannersDual = {
       version: '3.7',
     },
   ],
+  'Caution in Confidence 2': [
+    {
+      name: 'Caution in Confidence',
+      image: 2,
+      shortName: 'Alhaitham',
+      start: '2023-06-13 18:00:00',
+      end: '2023-07-04 14:59:59',
+      color: '#5bcbd1',
+      featured: ['alhaitham', 'kaedehara_kazuha'],
+      featuredRare: ['yaoyao', 'shikanoin_heizou', 'xiangling'],
+      version: '3.7',
+    },
+    {
+      name: 'Leaves in the Wind',
+      image: 3,
+      shortName: 'Kazuha',
+      start: '2023-06-13 18:00:00',
+      end: '2023-07-04 14:59:59',
+      color: '#5bcbd1',
+      featured: ['alhaitham', 'kaedehara_kazuha'],
+      featuredRare: ['yaoyao', 'shikanoin_heizou', 'xiangling'],
+      version: '3.7',
+    },
+  ],
 };
