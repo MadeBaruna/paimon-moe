@@ -13,15 +13,15 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yoimiya: {
-      name: 'Alhaitham',
+    kaedehara_kazuha: {
+      name: 'Kaedehara Kazuha',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    yae_miko: {
-      name: 'Kaedehara Kazuha',
+    alhaitham: {
+      name: 'Alhaitham',
       rarity: 'legendary',
       count: 0,
       average: '...',
