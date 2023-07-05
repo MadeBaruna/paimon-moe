@@ -1170,4 +1170,6 @@ export const itemList = {
     name: "Wanderer's Blooming Flower",
     rarity: 4,
   },
+
+  everamber: { id: 'everamber', name: 'Everamber' },
 };

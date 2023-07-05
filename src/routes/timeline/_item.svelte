@@ -37,7 +37,7 @@
         {prevNearby && !started && (attachedPrev || prevEnded) && prevNearby
     ? 'padding-left: 35px;'
     : 'padding-left: 10px;'}
-    --image: url(/images/events/{event.image}); --pos: {event.pos}; --color: {event.color}; 
+    --image: url('/images/events/{event.image}'); --pos: {event.pos}; --color: {event.color}; 
     --zoom: {event.zoom ? event.zoom : '200%'};"
 >
   <div class="event-item {nextDiff < 1 ? '' : 'rounded-xl'}" />
