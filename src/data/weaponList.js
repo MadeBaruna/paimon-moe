@@ -10345,4 +10345,117 @@ export const weaponList = {
       },
     ],
   },
+  ibis_piercer: {
+    id: 'ibis_piercer',
+    name: 'Ibis Piercer',
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK%',
+    type: 'bow',
+    source: "Duel! The Summoners' Summit! Event",
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.copper_talisman_of_the_forest_dew,
+            amount: 3,
+          },
+          {
+            item: itemList.a_flower_yet_to_bloom,
+            amount: 3,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 3,
+          },
+          {
+            item: itemList.a_flower_yet_to_bloom,
+            amount: 12,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 6,
+          },
+          {
+            item: itemList.treasured_flower,
+            amount: 6,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 3,
+          },
+          {
+            item: itemList.treasured_flower,
+            amount: 12,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 6,
+          },
+          {
+            item: itemList.wanderers_blooming_flower,
+            amount: 9,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_talisman_of_the_forest_dew,
+            amount: 4,
+          },
+          {
+            item: itemList.wanderers_blooming_flower,
+            amount: 18,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };

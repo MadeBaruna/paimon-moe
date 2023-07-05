@@ -4354,6 +4354,151 @@ export const characters = {
     },
     element: elements.electro,
   },
+  kirara: {
+    id: 'kirara',
+    name: 'Kirara',
+    rarity: 4,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12180,
+      atk: 223,
+      def: 546,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 3,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 2,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 10,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 4,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 20,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 8,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 30,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 12,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 45,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.evergloom_ring,
+            amount: 20,
+          },
+          {
+            item: itemList.amakumo_fruit,
+            amount: 60,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.spectral_husk, itemList.spectral_heart, itemList.spectral_nucleus],
+      book: [itemList.teachings_of_transience, itemList.guide_to_transience, itemList.philosophies_of_transience],
+      boss: itemList.everamber,
+    },
+    element: elements.dendro,
+  },
   klee: {
     id: 'klee',
     name: 'Klee',

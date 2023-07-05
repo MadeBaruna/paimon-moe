@@ -43,9 +43,13 @@
 
   let constellationDiv;
   let talentDiv;
-  const builds = Object.entries(buildData.roles)
-    .sort((a, b) => b[1].recommended - a[1].recommended)
-    .map((e) => ({ name: e[0], build: e[1] }));
+  const builds =
+    Object.keys(buildData).length > 0
+      ? Object.entries(buildData.roles)
+          .sort((a, b) => b[1].recommended - a[1].recommended)
+          .map((e) => ({ name: e[0], build: e[1] }))
+      : null;
+
   let currentBuild = 0;
   const artifactsEn = artifactData;
   let artifacts = artifactData;
@@ -179,6 +183,12 @@
         return 'gladiators_finale';
       case '+20%_energy_recharge':
         return 'emblem_of_severed_fate';
+      case '+20%_hp_set':
+        return 'tenacity_of_the_millelith';
+      case '+15%_hydro_dmg_set':
+        return 'heart_of_depth';
+      case '+15%_anemo_dmg_set':
+        return 'viridescent_venerer';
       case '+25%_physical_dmg':
         return 'bloodstained_chivalry';
       case '+80_em':
@@ -196,6 +206,12 @@
         return 'artifact.18ATKSet';
       case '+20%_energy_recharge':
         return 'artifact.20EnergyRechargeSet';
+      case '+20%_hp_set':
+        return 'artifact.20HPSet';
+      case '+15%_hydro_dmg_set':
+        return 'artifact.15HydroDmgSet';
+      case '+15%_anemo_dmg_set':
+        return 'artifact.15AnemoDmgSet';
       case '+25%_physical_dmg':
         return 'artifact.25PhysicalDmgSet';
       case '+80_em':
@@ -230,8 +246,8 @@
   });
 
   $: constellationCountTotal = constellationCount + manualCount;
-  $: buildName = builds[currentBuild].name;
-  $: build = builds[currentBuild].build;
+  $: buildName = builds ? builds[currentBuild].name : '';
+  $: build = builds ? builds[currentBuild].build : '';
 </script>
 
 <svelte:head>
@@ -470,330 +486,405 @@
   </div>
   <Ad class="mt-4 max-w-screen-2xl flex justify-center" type="desktop" variant="lb" id="1" />
   <Ad class="flex justify-center mt-4" type="mobile" variant="mpu" id="2" />
-  <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl">
-    {#if builds.length > 1}
-      <div class="flex mt-4 items-center">
-        {#each builds as item, i}
-          <button class="pill mr-2 {currentBuild === i ? 'active' : ''}" on:click={() => selectBuild(i)}>
-            {item.name}
-            {item.build.recommended ? '👍' : ''}
-          </button>
-        {/each}
-      </div>
-    {/if}
-    <div class="p-4 mt-2 rounded-xl bg-item flex flex-col">
-      <h3 class="font-black font-display text-xl">
-        {buildName}
-        {$t('characters.build')}
-        {build.recommended ? '👍' : ''}
-      </h3>
-      <p class="whitespace-pre-wrap text-gray-200 character-note">{@html build.note}</p>
-      {#if build.tip !== ''}
-        <h4 class="font-black font-display text-lg mt-4">{$t('characters.abilityTip')}</h4>
-        <p class="whitespace-pre-wrap text-gray-200">{build.tip}</p>
+  {#if builds}
+    <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl">
+      {#if builds.length > 1}
+        <div class="flex mt-4 items-center">
+          {#each builds as item, i}
+            <button class="pill mr-2 {currentBuild === i ? 'active' : ''}" on:click={() => selectBuild(i)}>
+              {item.name}
+              {item.build.recommended ? '👍' : ''}
+            </button>
+          {/each}
+        </div>
       {/if}
-      <div class="flex mt-2 -mx-4 flex-wrap">
-        <div class="mx-4 mt-4">
-          <h4 class="font-black font-display text-lg">{$t('characters.mainStats')}</h4>
-          <div class="flex items-center">
-            <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
-              <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_sands.png" alt="SANDS" />
-              <span class="font-semibold">{$t('artifact.sands')}</span>
+      <div class="p-4 mt-2 rounded-xl bg-item flex flex-col">
+        <h3 class="font-black font-display text-xl">
+          {buildName}
+          {$t('characters.build')}
+          {build.recommended ? '👍' : ''}
+        </h3>
+        <p class="whitespace-pre-wrap text-gray-200 character-note">{@html build.note}</p>
+        {#if build.tip !== ''}
+          <h4 class="font-black font-display text-lg mt-4">{$t('characters.abilityTip')}</h4>
+          <p class="whitespace-pre-wrap text-gray-200">{build.tip}</p>
+        {/if}
+        <div class="flex mt-2 -mx-4 flex-wrap">
+          <div class="mx-4 mt-4">
+            <h4 class="font-black font-display text-lg">{$t('characters.mainStats')}</h4>
+            <div class="flex items-center">
+              <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
+                <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_sands.png" alt="SANDS" />
+                <span class="font-semibold">{$t('artifact.sands')}</span>
+              </div>
+              <p>{build.mainStats.sands.join(' / ')}</p>
             </div>
-            <p>{build.mainStats.sands.join(' / ')}</p>
+            <div class="flex items-center mt-1">
+              <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
+                <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_goblet.png" alt="GOBLET" />
+                <span class="font-semibold">{$t('artifact.goblet')}</span>
+              </div>
+              <p>{build.mainStats.goblet.join(' / ')}</p>
+            </div>
+            <div class="flex items-center mt-1">
+              <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
+                <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_circlet.png" alt="CIRCLET" />
+                <span class="font-semibold">{$t('artifact.circlet')}</span>
+              </div>
+              <p>{build.mainStats.circlet.join(' / ')}</p>
+            </div>
           </div>
-          <div class="flex items-center mt-1">
-            <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
-              <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_goblet.png" alt="GOBLET" />
-              <span class="font-semibold">{$t('artifact.goblet')}</span>
+          <div class="mt-4 mx-4">
+            <h4 class="font-black font-display text-lg">{$t('characters.subStats')}</h4>
+            <div class="decimal-list">
+              {#each build.subStats as stat, i}
+                <p><span class="font-semibold w-4 inline-block">{i + 1}.</span> {stat}</p>
+              {/each}
             </div>
-            <p>{build.mainStats.goblet.join(' / ')}</p>
           </div>
-          <div class="flex items-center mt-1">
-            <div class="px-2 py-1 mr-3 bg-background rounded-md w-32">
-              <img class="w-8 h-8 inline mr-1" src="/images/artifacts/adventurer_circlet.png" alt="CIRCLET" />
-              <span class="font-semibold">{$t('artifact.circlet')}</span>
+          <div class="mt-4 mx-4">
+            <h4 class="font-black font-display text-lg">{$t('characters.talentPriority')}</h4>
+            <div class="flex items-center">
+              {#each build.talent as talent, i}
+                <p class="mr-1">{talent}</p>
+                {#if i !== build.talent.length - 1}
+                  <Icon className="mr-1" path={mdiChevronRight} />
+                {/if}
+              {/each}
             </div>
-            <p>{build.mainStats.circlet.join(' / ')}</p>
           </div>
         </div>
-        <div class="mt-4  mx-4">
-          <h4 class="font-black font-display text-lg">{$t('characters.subStats')}</h4>
-          <div class="decimal-list">
-            {#each build.subStats as stat, i}
-              <p><span class="font-semibold w-4 inline-block">{i + 1}.</span> {stat}</p>
-            {/each}
-          </div>
-        </div>
-        <div class="mt-4 mx-4">
-          <h4 class="font-black font-display text-lg">{$t('characters.talentPriority')}</h4>
-          <div class="flex items-center">
-            {#each build.talent as talent, i}
-              <p class="mr-1">{talent}</p>
-              {#if i !== build.talent.length - 1}
-                <Icon className="mr-1" path={mdiChevronRight} />
-              {/if}
-            {/each}
-          </div>
-        </div>
-      </div>
-      <div class="flex -mx-4 flex-wrap">
-        <div class="mt-4 mx-4 -mb-1">
-          <h4 class="font-black font-display text-lg">{$t('characters.weapons')}</h4>
-          {#each build.weapons as weapon, i}
-            <a class="popup flex mb-1" href="/weapons/{weapon.id}">
-              <div class="popup-container">
-                <div class="bg-gray-300 text-gray-900 p-2 rounded-md mb-1 shadow-2xl">
-                  <p class="font-bold text-primary text-sm">
-                    {weapons[weapon.id].skill.name}
-                  </p>
-                  <p class="text-gray-900 text-sm break-words" style="filter: brightness(0);">
-                    {@html weapons[weapon.id].skill.description}
-                  </p>
-                  <div class="flex mt-2">
-                    <div class="mr-4">
-                      <p class="font-bold text-primary text-sm">{$t('weapon.atk')}</p>
-                      <p class="text-gray-900 text-sm">{Math.round(weapons[weapon.id].atk[96])}</p>
-                    </div>
-                    {#if weapons[weapon.id].secondary.stats}
-                      <div>
-                        <p class="font-bold text-primary text-sm">
-                          {$t(`weapon.${weapons[weapon.id].secondary.name}`)}
-                        </p>
-                        <p class="text-gray-900 text-sm">
-                          {formatStat(weapons[weapon.id].secondary.stats[96], weapons[weapon.id].secondary.name)}
-                        </p>
+        <div class="flex -mx-4 flex-wrap">
+          <div class="mt-4 mx-4 -mb-1">
+            <h4 class="font-black font-display text-lg">{$t('characters.weapons')}</h4>
+            {#each build.weapons as weapon, i}
+              <a class="popup flex mb-1" href="/weapons/{weapon.id}">
+                <div class="popup-container">
+                  <div class="bg-gray-300 text-gray-900 p-2 rounded-md mb-1 shadow-2xl">
+                    <p class="font-bold text-primary text-sm">
+                      {weapons[weapon.id].skill.name}
+                    </p>
+                    <p class="text-gray-900 text-sm break-words" style="filter: brightness(0);">
+                      {@html weapons[weapon.id].skill.description}
+                    </p>
+                    <div class="flex mt-2">
+                      <div class="mr-4">
+                        <p class="font-bold text-primary text-sm">{$t('weapon.atk')}</p>
+                        <p class="text-gray-900 text-sm">{Math.round(weapons[weapon.id].atk[96])}</p>
                       </div>
+                      {#if weapons[weapon.id].secondary.stats}
+                        <div>
+                          <p class="font-bold text-primary text-sm">
+                            {$t(`weapon.${weapons[weapon.id].secondary.name}`)}
+                          </p>
+                          <p class="text-gray-900 text-sm">
+                            {formatStat(weapons[weapon.id].secondary.stats[96], weapons[weapon.id].secondary.name)}
+                          </p>
+                        </div>
+                      {/if}
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex items-center bg-background rounded-md p-1 mr-1">
+                  <p class="w-6 text-center mr-1" style="padding-top: 2px;">{i + 1}</p>
+                  <Icon className={rarityColor[weaponList[weapon.id].rarity]} path={mdiStar} size={0.8} />
+                  <img class="h-8 mr-2 ml-2" src="/images/weapons/{weapon.id}.png" alt={weaponList[weapon.id].name} />
+                  <p class="pl-1 pr-2" style="padding-top: 2px;">
+                    <span>{$t(weaponList[weapon.id].name)}</span>
+                    {#if weapon.refine}
+                      <span class="ml-2 bg-blue-300 rounded-md px-1 text-sm text-gray-900"
+                        >R{weapon.refine.join('-')}</span
+                      >
                     {/if}
+                    {#if weapon.stack}
+                      <Tooltip title="Stack">
+                        <span class="ml-2 bg-orange-300 rounded-md px-1 text-sm text-gray-900">S{weapon.stack}</span>
+                      </Tooltip>
+                    {/if}
+                  </p>
+                </div>
+              </a>
+            {/each}
+          </div>
+          <div class="mt-4 mx-4 -mb-1 md:max-w-screen-sm">
+            <h4 class="font-black font-display text-lg">{$t('characters.artifacts')}</h4>
+            {#each build.artifacts as item, i}
+              <div class="flex mb-1">
+                <div class="flex items-center justify-center bg-background rounded-md px-1 mr-1">
+                  <p class="w-6 text-center" style="min-width: 1.5rem; padding-top: 2px;">{i + 1}</p>
+                  <div class="flex flex-wrap -mb-1">
+                    {#each item as artifact, i}
+                      {#if item.length > 2 && i === 0}
+                        <div
+                          class="flex items-center justify-center bg-background rounded-md px-2 py-1 mb-1 mr-1"
+                          style="height: 40px;"
+                        >
+                          <p class="text-center whitespace-nowrap text-primary" style="padding-top: 2px;">
+                            {$t('artifact.choose2')}
+                          </p>
+                        </div>
+                      {/if}
+                      <a
+                        class="popup bg-background rounded-md py-1 pl-1 pr-2 mr-1 mb-1 flex items-center"
+                        href={artifact.startsWith('+') ? undefined : `/artifacts/${artifact}`}
+                      >
+                        <div class="popup-container">
+                          <div class="bg-gray-300 text-gray-900 p-2 rounded-md mb-1 shadow-2xl">
+                            {#if !artifact.startsWith('+')}
+                              {#each artifacts[artifact].bonuses as bonus, i}
+                                <div class={i === 1 ? 'mt-2' : ''}>
+                                  <p class="font-bold text-primary text-sm">
+                                    {$t('artifact.setPiece', { values: { piece: (i + 1) * 2 } })}
+                                  </p>
+                                  <p class="text-gray-900 text-sm">{bonus}</p>
+                                </div>
+                              {/each}
+                            {:else if artifact === '+18%_atk_set'}
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                                href="/artifacts/gladiators_finale"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/gladiators_finale_flower.png"
+                                  alt="Gladiator's Finale"
+                                />
+                                <span class="font-semibold">{$t("Gladiator's Finale")}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
+                                href="/artifacts/shimenawas_reminiscence"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/shimenawas_reminiscence_flower.png"
+                                  alt="Shimenawa's Reminiscence"
+                                />
+                                <span class="font-semibold">{$t("Shimenawa's Reminiscence")}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
+                                href="/artifacts/vermillion_hereafter"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/vermillion_hereafter_flower.png"
+                                  alt="Vermillion Hereafter"
+                                />
+                                <span class="font-semibold">{$t('Vermillion Hereafter')}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pt-1"
+                                href="/artifacts/echoes_of_an_offering"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/echoes_of_an_offering_flower.png"
+                                  alt="Echoes of an Offering"
+                                />
+                                <span class="font-semibold">{$t('Echoes of an Offering')}</span>
+                              </a>
+                            {:else if artifact === '+20%_energy_recharge'}
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                                href="/artifacts/emblem_of_severed_fate"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/emblem_of_severed_fate_flower.png"
+                                  alt="Emblem of Severed Fate"
+                                />
+                                <span class="font-semibold">{$t('Emblem of Severed Fate')}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
+                                href="/artifacts/the_exile"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/the_exile_flower.png"
+                                  alt="The Exile"
+                                />
+                                <span class="font-semibold">{$t('The Exile')}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pt-1"
+                                href="/artifacts/scholar"
+                              >
+                                <img class="h-8 ml-1 mr-2" src="/images/artifacts/scholar_flower.png" alt="Scholar" />
+                                <span class="font-semibold">{$t('Scholar')}</span>
+                              </a>
+                            {:else if artifact === '+25%_physical_dmg'}
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                                href="/artifacts/bloodstained_chivalry"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/bloodstained_chivalry_flower.png"
+                                  alt="Bloodstained Chivalry"
+                                />
+                                <span class="font-semibold">{$t('Bloodstained Chivalry')}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pt-1"
+                                href="/artifacts/pale_flame"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/pale_flame_flower.png"
+                                  alt="Pale Flame"
+                                />
+                                <span class="font-semibold">{$t('Pale Flame')}</span>
+                              </a>
+                            {:else if artifact === '+20%_hp_set'}
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                                href="/artifacts/tenacity_of_the_millelith"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/tenacity_of_the_millelith_flower.png"
+                                  alt="Tenacity of the Millelith"
+                                />
+                                <span class="font-semibold">{$t('Tenacity of the Millelith')}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pt-1"
+                                href="/artifacts/vourukashas_glow"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/vourukashas_glow_flower.png"
+                                  alt="Vourukasha's Glow"
+                                />
+                                <span class="font-semibold">{$t("Vourukasha's Glow")}</span>
+                              </a>
+                            {:else if artifact === '+15%_anemo_dmg_set'}
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                                href="/artifacts/viridescent_venerer"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/viridescent_venerer_flower.png"
+                                  alt="Viridescent Venerer"
+                                />
+                                <span class="font-semibold">{$t('Viridescent Venerer')}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pt-1"
+                                href="/artifacts/desert_pavilion_chronicle"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/desert_pavilion_chronicle_flower.png"
+                                  alt="Desert Pavilion Chronicle"
+                                />
+                                <span class="font-semibold">{$t('Desert Pavilion Chronicle')}</span>
+                              </a>
+                            {:else if artifact === '+15%_hydro_dmg_set'}
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                                href="/artifacts/heart_of_depth"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/heart_of_depth_flower.png"
+                                  alt="Heart of Depth"
+                                />
+                                <span class="font-semibold">{$t('Heart of Depth')}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pt-1"
+                                href="/artifacts/nymphs_dream"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/nymphs_dream_flower.png"
+                                  alt="Nymph's Dream"
+                                />
+                                <span class="font-semibold">{$t("Nymph's Dream")}</span>
+                              </a>
+                            {:else if artifact === '+80_em'}
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                                href="/artifacts/gilded_dreams"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/gilded_dreams_flower.png"
+                                  alt="Gilded Dreams"
+                                />
+                                <span class="font-semibold">{$t('Gilded Dreams')}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pt-1"
+                                href="/artifacts/wanderers_troupe"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/wanderers_troupe_flower.png"
+                                  alt="Wanderer's Troupe"
+                                />
+                                <span class="font-semibold">{$t("Wanderer's Troupe")}</span>
+                              </a>
+                            {:else if artifact === '+15%_healing_bonus_set'}
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
+                                href="/artifacts/ocean-hued_clam"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/ocean-hued_clam_flower.png"
+                                  alt="Ocean-Hued Clam"
+                                />
+                                <span class="font-semibold">{$t('Ocean-Hued Clam')}</span>
+                              </a>
+                              <a
+                                class="flex items-center text-primary hover:text-blue-400 pt-1"
+                                href="/artifacts/maiden_beloved"
+                              >
+                                <img
+                                  class="h-8 ml-1 mr-2"
+                                  src="/images/artifacts/maiden_beloved_flower.png"
+                                  alt="Maiden Beloved"
+                                />
+                                <span class="font-semibold">{$t('Maiden Beloved')}</span>
+                              </a>
+                            {/if}
+                          </div>
+                        </div>
+                        <img
+                          class="h-8 mr-2"
+                          src="/images/artifacts/{getArtifactCommon(artifact)}_flower.png"
+                          alt={artifact}
+                        />
+                        <span style="padding-top: 2px;">
+                          {$t(getArtifactCommonName(artifact))}
+                        </span>
+                        <span class="ml-2 bg-gray-400 rounded-md px-1 text-sm text-gray-900">
+                          {item.length === 1 ? '4' : '2'}
+                        </span>
+                      </a>
+                    {/each}
                   </div>
                 </div>
               </div>
-
-              <div class="flex items-center bg-background rounded-md p-1 mr-1">
-                <p class="w-6 text-center mr-1" style="padding-top: 2px;">{i + 1}</p>
-                <Icon className={rarityColor[weaponList[weapon.id].rarity]} path={mdiStar} size={0.8} />
-                <img class="h-8 mr-2 ml-2" src="/images/weapons/{weapon.id}.png" alt={weaponList[weapon.id].name} />
-                <p class="pl-1 pr-2" style="padding-top: 2px;">
-                  <span>{$t(weaponList[weapon.id].name)}</span>
-                  {#if weapon.refine}
-                    <span class="ml-2 bg-blue-300 rounded-md px-1 text-sm text-gray-900"
-                      >R{weapon.refine.join('-')}</span
-                    >
-                  {/if}
-                  {#if weapon.stack}
-                    <Tooltip title="Stack">
-                      <span class="ml-2 bg-orange-300 rounded-md px-1 text-sm text-gray-900">S{weapon.stack}</span>
-                    </Tooltip>
-                  {/if}
-                </p>
-              </div>
-            </a>
-          {/each}
-        </div>
-        <div class="mt-4 mx-4 -mb-1 md:max-w-screen-sm">
-          <h4 class="font-black font-display text-lg">{$t('characters.artifacts')}</h4>
-          {#each build.artifacts as item, i}
-            <div class="flex mb-1">
-              <div class="flex items-center justify-center bg-background rounded-md px-1 mr-1">
-                <p class="w-6 text-center" style="min-width: 1.5rem; padding-top: 2px;">{i + 1}</p>
-                <div class="flex flex-wrap -mb-1">
-                  {#each item as artifact, i}
-                    {#if item.length > 2 && i === 0}
-                      <div
-                        class="flex items-center justify-center bg-background rounded-md px-2 py-1 mb-1 mr-1"
-                        style="height: 40px;"
-                      >
-                        <p class="text-center whitespace-nowrap text-primary" style="padding-top: 2px;">
-                          {$t('artifact.choose2')}
-                        </p>
-                      </div>
-                    {/if}
-                    <a
-                      class="popup bg-background rounded-md py-1 pl-1 pr-2 mr-1 mb-1 flex items-center"
-                      href={artifact.startsWith('+') ? undefined : `/artifacts/${artifact}`}
-                    >
-                      <div class="popup-container">
-                        <div class="bg-gray-300 text-gray-900 p-2 rounded-md mb-1 shadow-2xl">
-                          {#if !artifact.startsWith('+')}
-                            {#each artifacts[artifact].bonuses as bonus, i}
-                              <div class={i === 1 ? 'mt-2' : ''}>
-                                <p class="font-bold text-primary text-sm">
-                                  {$t('artifact.setPiece', { values: { piece: (i + 1) * 2 } })}
-                                </p>
-                                <p class="text-gray-900 text-sm">{bonus}</p>
-                              </div>
-                            {/each}
-                          {:else if artifact === '+18%_atk_set'}
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
-                              href="/artifacts/gladiators_finale"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/gladiators_finale_flower.png"
-                                alt="Gladiator's Finale"
-                              />
-                              <span class="font-semibold">{$t("Gladiator's Finale")}</span>
-                            </a>
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
-                              href="/artifacts/shimenawas_reminiscence"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/shimenawas_reminiscence_flower.png"
-                                alt="Shimenawa's Reminiscence"
-                              />
-                              <span class="font-semibold">{$t("Shimenawa's Reminiscence")}</span>
-                            </a>
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
-                              href="/artifacts/vermillion_hereafter"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/vermillion_hereafter_flower.png"
-                                alt="Vermillion Hereafter"
-                              />
-                              <span class="font-semibold">{$t('Vermillion Hereafter')}</span>
-                            </a>
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pt-1"
-                              href="/artifacts/echoes_of_an_offering"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/echoes_of_an_offering_flower.png"
-                                alt="Echoes of an Offering"
-                              />
-                              <span class="font-semibold">{$t('Echoes of an Offering')}</span>
-                            </a>
-                          {:else if artifact === '+20%_energy_recharge'}
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
-                              href="/artifacts/emblem_of_severed_fate"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/emblem_of_severed_fate_flower.png"
-                                alt="Emblem of Severed Fate"
-                              />
-                              <span class="font-semibold">{$t('Emblem of Severed Fate')}</span>
-                            </a>
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 py-1 border-b border-gray-400"
-                              href="/artifacts/the_exile"
-                            >
-                              <img class="h-8 ml-1 mr-2" src="/images/artifacts/the_exile_flower.png" alt="The Exile" />
-                              <span class="font-semibold">{$t('The Exile')}</span>
-                            </a>
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pt-1"
-                              href="/artifacts/scholar"
-                            >
-                              <img class="h-8 ml-1 mr-2" src="/images/artifacts/scholar_flower.png" alt="Scholar" />
-                              <span class="font-semibold">{$t('Scholar')}</span>
-                            </a>
-                          {:else if artifact === '+25%_physical_dmg'}
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
-                              href="/artifacts/bloodstained_chivalry"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/bloodstained_chivalry_flower.png"
-                                alt="Bloodstained Chivalry"
-                              />
-                              <span class="font-semibold">{$t('Bloodstained Chivalry')}</span>
-                            </a>
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pt-1"
-                              href="/artifacts/pale_flame"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/pale_flame_flower.png"
-                                alt="Pale Flame"
-                              />
-                              <span class="font-semibold">{$t('Pale Flame')}</span>
-                            </a>
-                          {:else if artifact === '+80_em'}
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
-                              href="/artifacts/gilded_dreams"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/gilded_dreams_flower.png"
-                                alt="Gilded Dreams"
-                              />
-                              <span class="font-semibold">{$t('Gilded Dreams')}</span>
-                            </a>
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pt-1"
-                              href="/artifacts/wanderers_troupe"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/wanderers_troupe_flower.png"
-                                alt="Wanderer's Troupe"
-                              />
-                              <span class="font-semibold">{$t("Wanderer's Troupe")}</span>
-                            </a>
-                          {:else if artifact === '+15%_healing_bonus_set'}
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pb-1 border-b border-gray-400"
-                              href="/artifacts/ocean-hued_clam"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/ocean-hued_clam_flower.png"
-                                alt="Ocean-Hued Clam"
-                              />
-                              <span class="font-semibold">{$t('Ocean-Hued Clam')}</span>
-                            </a>
-                            <a
-                              class="flex items-center text-primary hover:text-blue-400 pt-1"
-                              href="/artifacts/maiden_beloved"
-                            >
-                              <img
-                                class="h-8 ml-1 mr-2"
-                                src="/images/artifacts/maiden_beloved_flower.png"
-                                alt="Maiden Beloved"
-                              />
-                              <span class="font-semibold">{$t('Maiden Beloved')}</span>
-                            </a>
-                          {/if}
-                        </div>
-                      </div>
-                      <img
-                        class="h-8 mr-2"
-                        src="/images/artifacts/{getArtifactCommon(artifact)}_flower.png"
-                        alt={artifact}
-                      />
-                      <span style="padding-top: 2px;">
-                        {$t(getArtifactCommonName(artifact))}
-                      </span>
-                      <span class="ml-2 bg-gray-400 rounded-md px-1 text-sm text-gray-900">
-                        {item.length === 1 ? '4' : '2'}
-                      </span>
-                    </a>
-                  {/each}
-                </div>
-              </div>
-            </div>
-          {/each}
+            {/each}
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <a
-    class="mx-4 md:mx-8 px-2 py-1 bg-background hover:bg-item text-primary mt-2 rounded-md inline-block"
-    href="https://tinyurl.com/genshinbuilds"
-    target="_blank"
-  >
-    {$t('characters.source')}
-  </a>
+    <a
+      class="mx-4 md:mx-8 px-2 py-1 bg-background hover:bg-item text-primary mt-2 rounded-md inline-block"
+      href="https://tinyurl.com/genshinbuilds"
+      target="_blank"
+    >
+      {$t('characters.source')}
+    </a>
+  {/if}
   <Ad class="mt-2 max-w-screen-2xl flex justify-center" type="desktop" variant="lb" id="2" />
   <Ad type="mobile" variant="lb" id="2" />
   <div class="flex flex-col mt-4 text-white px-4 md:px-8 max-w-screen-2xl" bind:this={talentDiv}>
