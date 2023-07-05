@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    kaedehara_kazuha: {
-      name: 'Kaedehara Kazuha',
+    klee: {
+      name: 'Klee',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    alhaitham: {
-      name: 'Alhaitham',
+    eula: {
+      name: 'Eula',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300049;
-  const image = 'kazuha_alhaitham.png';
+  const bannerId = 300050;
+  const image = 'eula_klee.png';
   const width = 800;
-  const height = 453;
+  const height = 515;
 
   let loading = true;
   let user = '';
