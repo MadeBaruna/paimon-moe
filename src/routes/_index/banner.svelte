@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yoimiya: {
-      name: 'Yoimiya',
+    klee: {
+      name: 'Klee',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    yae_miko: {
-      name: 'Yae Miko',
+    eula: {
+      name: 'Eula',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300048;
-  const image = 'yoimiya-yae.png';
+  const bannerId = 300050;
+  const image = 'eula_klee.png';
   const width = 800;
-  const height = 539;
+  const height = 515;
 
   let loading = true;
   let user = '';

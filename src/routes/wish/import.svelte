@@ -94,8 +94,8 @@
     },
   };
 
-  let powershellScript = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/702e34117b07294e6959928963b76cfdafdd94f3/getlink.ps1'))} global"`;
-  let powershellScriptChina = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/702e34117b07294e6959928963b76cfdafdd94f3/getlink.ps1'))} china"`;
+  let powershellScript = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/649a9e3a4e88f3bffdd0fe6dd8eeed23737b15da/getlink.ps1'))} global"`;
+  let powershellScriptChina = `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex "&{$((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235/raw/649a9e3a4e88f3bffdd0fe6dd8eeed23737b15da/getlink.ps1'))} china"`;
   let powershellScriptSource = 'https://gist.github.com/MadeBaruna/1d75c1d37d19eca71591ec8a31178235';
   let powershellScriptAlt = `iex('Write-Host "Copy the wish history table!";while(1) { $c = Get-Clipboard -TextFormatType Html; if ($c -match "^SourceURL:https:/.+log") { break; }; for($i=5; $i -gt 0; $i--) { Write-Host "\`rChecking in $i" -NoNewline; Sleep 1; }; }; Write-Host " OK"; $m=(((Get-Clipboard -TextFormatType Html) | Select-String "(https:/.+log)").Matches[0].Value);$m; Set-Clipboard -Value $m;')`;
   let powershellScriptAlt2 =
@@ -902,10 +902,10 @@
   </h1>
   <div class="mt-4 mb-4 md:flex items-center bg-background rounded-xl p-4 relative">
     <img class="h-16 hidden md:block mr-0" src="/images/paimon_faq.png" alt="Paimon" />
-    <div class="md:ml-4 ">
+    <div class="md:ml-4">
       <p class="text-white font-bold">{$t('wish.import.header.0')}</p>
       <p class="text-gray-200 text-sm">{$t('wish.import.header.1')}</p>
-      <div class="flex items-center mt-2 md:mt-0 bg-background-secondary md:bg-transparent p-2 md:p-0 rounded-xl ">
+      <div class="flex items-center mt-2 md:mt-0 bg-background-secondary md:bg-transparent p-2 md:p-0 rounded-xl">
         <img class="h-16 md:hidden mr-2" src="/images/paimon_faq.png" alt="Paimon" />
         <p class="text-yellow-300 text-sm">{$t('wish.import.header.2')}</p>
       </div>
@@ -1391,7 +1391,7 @@
         <div class="flex">
           <div class="flex mr-4">
             <button
-              class="text-green-400 border-r border-t-2 border-b-2 border-l-2 border-white border-opacity-25 rounded-l-xl 
+              class="text-green-400 border-r border-t-2 border-b-2 border-l-2 border-white border-opacity-25 rounded-l-xl
               px-4 py-2 transition duration-100 focus:border-green-400 hover:border-green-400 focus:outline-none"
               on:click={startImport}
             >

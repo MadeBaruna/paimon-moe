@@ -7,7 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Add Kirara', 'Update banners', 'Update timeline', 'Update achievements'];
+const changelog = ['Update achievement', 'Update import on pc', 'Update banners', 'Update timeline'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 
