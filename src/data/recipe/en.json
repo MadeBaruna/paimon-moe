@@ -1,1 +1,1254 @@
-{"0":{"name":"Permanent","recipes":[{"id":"chicken_mushroom_skewer","name":"Chicken-Mushroom Skewer","location":"Available by default","proficiency":5,"default":true,"rarity":1,"type":"Healing","ver":"1.0"},{"id":"teyvat_fried_egg","name":"Teyvat Fried Egg","location":"Available by default","proficiency":5,"default":true,"rarity":1,"type":"Revive","ver":"1.0"},{"id":"steak","name":"Steak","location":"Available by default","proficiency":5,"default":true,"rarity":1,"type":"Revive","ver":"1.0"},{"id":"radish_veggie_soup","name":"Radish Veggie Soup","location":"Available by default","proficiency":5,"default":true,"rarity":1,"type":"Healing","ver":"1.0"},{"id":"mondstadt_grilled_fish","name":"Mondstadt Grilled Fish","location":"Available by default","proficiency":5,"default":true,"rarity":1,"type":"Revive","ver":"1.0"},{"id":"mint_jelly","name":"Mint Jelly","location":"Sold by Sara","proficiency":5,"rarity":1,"type":"Healing","ver":"1.4"},{"id":"mora_meat","name":"Mora Meat","location":"Obtained from a Chest near Mingyun Village","proficiency":5,"rarity":1,"type":"Revive","ver":"1.0"},{"id":"stir_fried_filet","name":"Stir-Fried Filet","location":"Obtained from a Chest on Mt. Tianheng","proficiency":5,"rarity":1,"type":"Revive","ver":"1.0"},{"id":"grilled_tiger_fish","name":"Grilled Tiger Fish","location":"Sold by Chef Mao","proficiency":5,"rarity":1,"type":"Healing","ver":"1.0"},{"id":"rice_buns","name":"Rice Buns","location":"Sold by Chef Mao","proficiency":5,"rarity":1,"type":"Healing","ver":"1.6"},{"id":"egg_roll","name":"Egg Roll","location":"Sold by Shimura Kanbei","proficiency":5,"rarity":1,"type":"Revive","ver":"2.0"},{"id":"dry_braised_salted_fish","name":"Dry-Braised Salted Fish","location":"Sold by Ryouko","proficiency":5,"rarity":1,"type":"Healing","ver":"2.0"},{"id":"miso_soup","name":"Miso Soup","location":"Sold by Shimura Kanbei","proficiency":5,"rarity":1,"type":"Healing","ver":"2.0"},{"id":"sweet_shrimp_sushi","name":"Sweet Shrimp Sushi","location":"Sold by Shimura Kanbei","proficiency":5,"rarity":1,"type":"Revive","ver":"2.1"},{"id":"bird_egg_sushi","name":"Bird Egg Sushi","location":"Sold by Shimura Kanbei","proficiency":5,"rarity":1,"type":"Healing","ver":"2.1"},{"id":"soba_noodles","name":"Soba Noodles","location":"Sold by Kiminami Anna","proficiency":5,"rarity":1,"type":"Healing","ver":"2.2"},{"id":"minty_bean_soup","name":"Minty Bean Soup","location":"Sold by Lambad","proficiency":5,"rarity":1,"type":"Revive","ver":"3.0"},{"id":"lambad_fish_roll","name":"Lambad Fish Roll","location":"Sold by Lambad","proficiency":5,"rarity":1,"type":"Healing","ver":"3.0"},{"id":"flaming_red_bolognese","name":"Flaming Red Bolognese","location":"Sold by Good Hunter","proficiency":10,"rarity":2,"type":"Healing","ver":"1.0"},{"id":"sweet_madame","name":"Sweet Madame","location":"Available by default","proficiency":10,"default":true,"rarity":2,"type":"Healing","ver":"1.0"},{"id":"northern_smoked_chicken","name":"Northern Smoked Chicken","location":"Obtained from a Chest in Stormterror's Lair","proficiency":10,"rarity":2,"type":"Adventurer","ver":"1.0"},{"id":"cream_stew","name":"Cream Stew","location":"Sold by Sara","proficiency":10,"rarity":2,"type":"Adventurer","ver":"1.0"},{"id":"tea_break_pancake","name":"Tea Break Pancake","location":"Sold by Good Hunter","proficiency":10,"rarity":2,"type":"Revive","ver":"1.0"},{"id":"fried_radish_balls","name":"Fried Radish Balls","location":"Available by default","proficiency":10,"default":true,"rarity":2,"type":"ATK-Boosting","ver":"1.0"},{"id":"satisfying_salad","name":"Satisfying Salad","location":"Available by default","proficiency":10,"default":true,"rarity":2,"type":"ATK-Boosting","ver":"1.0"},{"id":"fishermans_toast","name":"Fisherman's Toast","location":"Available by default","proficiency":10,"default":true,"rarity":2,"type":"DEF-Boosting","ver":"1.0"},{"id":"goulash","name":"Goulash","location":"Complete Ah, Fresh Meat!","proficiency":10,"rarity":2,"type":"Adventurer","ver":"1.2"},{"id":"almond_tofu","name":"Almond Tofu","location":"Interactable point in Wangshu Inn","proficiency":10,"rarity":2,"type":"ATK-Boosting","ver":"1.0"},{"id":"jueyun_chili_chicken","name":"Jueyun Chili Chicken","location":"Sold by Chef Mao","proficiency":10,"rarity":2,"type":"ATK-Boosting","ver":"1.0"},{"id":"jewelry_soup","name":"Jewelry Soup","location":"Obtained during Custodian of Clouds","proficiency":10,"rarity":2,"type":"DEF-Boosting","ver":"1.0"},{"id":"matsutake_meat_rolls","name":"Matsutake Meat Rolls","location":"Obtained during Custodian of Clouds","proficiency":10,"rarity":2,"type":"Healing","ver":"1.0"},{"id":"crystal_shrimp","name":"Crystal Shrimp","location":"Sold by Chef Mao","proficiency":10,"rarity":2,"type":"Healing","ver":"1.0"},{"id":"lotus_seed_and_bird_egg_soup","name":"Lotus Seed and Bird Egg Soup","location":"Sold by Herbalist Gui","proficiency":10,"rarity":2,"type":"Adventurer","ver":"1.0"},{"id":"noodles_with_mountain_delicacies","name":"Noodles with Mountain Delicacies","location":"Sold by Ms. Bai","proficiency":10,"rarity":2,"type":"Adventurer","ver":"1.0"},{"id":"vegetarian_abalone","name":"Vegetarian Abalone","location":"Sold by Verr Goldet","proficiency":10,"rarity":2,"type":"Revive","ver":"1.3"},{"id":"stone_harbor_delicacies","name":"Stone Harbor Delicacies","location":"Sold by Licai","proficiency":10,"rarity":2,"type":"ATK-Boosting","ver":"1.3"},{"id":"mint_salad","name":"Mint Salad","location":"Sold by Wanmin Restaurant","proficiency":10,"rarity":2,"type":"ATK-Boosting","ver":"1.4"},{"id":"crab_roe_tofu","name":"Crab Roe Tofu","location":"Sold by Chef Mao","proficiency":10,"rarity":2,"type":"Revive","ver":"1.5"},{"id":"stir_fried_fish_noodles","name":"Stir-Fried Fish Noodles","location":"Sold by Xinyue Kiosk","proficiency":10,"rarity":2,"type":"Healing","ver":"1.5"},{"id":"tuna_sushi","name":"Tuna Sushi","location":"Sold by Kiminami Anna","proficiency":10,"rarity":2,"type":"Healing","ver":"2.0"},{"id":"onigiri","name":"Onigiri","location":"Complete The Gourmet Supremos: The Deep Divers Quest","proficiency":10,"rarity":2,"type":"Healing","ver":"2.0"},{"id":"mixed_yakisoba","name":"Mixed Yakisoba","location":"Sold by Shimura Kanbei","proficiency":10,"rarity":2,"type":"Revive","ver":"2.0"},{"id":"crab_roe_kourayaki","name":"Crab Roe Kourayaki","location":"Complete The Gourmet Supremos: The Seashore Strider","proficiency":10,"rarity":2,"type":"ATK-Boosting","ver":"2.0"},{"id":"grilled_unagi_fillet","name":"Grilled Unagi Fillet","location":"Sold by Shimura Kanbei","proficiency":10,"rarity":2,"type":"Healing","ver":"2.1"},{"id":"wakatakeni","name":"Wakatakeni","location":"Sold by Kiminami Anna","proficiency":10,"rarity":2,"type":"DEF-Boosting","ver":"2.2"},{"id":"radish_and_fish_stew","name":"Radish and Fish Stew","location":"Sold by Kiminami Anna","proficiency":10,"rarity":2,"type":"ATK-Boosting","ver":"2.2"},{"id":"berry_mizu_manjuu","name":"Berry Mizu Manjuu","location":"Sold by Kiminami Anna","proficiency":10,"rarity":2,"type":"Healing","ver":"2.2"},{"id":"sangayaki","name":"Sangayaki","location":"Sold by Shimura Kanbei","proficiency":10,"rarity":2,"type":"Adventurer","ver":"2.5"},{"id":"udon_noodles","name":"Udon Noodles","location":"Sold by Shimura Kanbei","proficiency":10,"rarity":2,"type":"Revive","ver":"2.5"},{"id":"katsu_sandwich","name":"Katsu Sandwich","location":"Sold by Ryouko","proficiency":10,"rarity":2,"type":"ATK-Boosting","ver":"2.6"},{"id":"shawarma_wrap","name":"Shawarma Wrap","location":"Sold by Lambad","proficiency":10,"rarity":2,"type":"ATK-Boosting","ver":"3.0"},{"id":"selva_salad","name":"Selva Salad","location":"Complete Cooking, a Pleasant Memory","proficiency":10,"rarity":2,"type":"Adventurer","ver":"3.0"},{"id":"masala_cheese_balls","name":"Masala Cheese Balls","location":"Complete Cooking, the Aroma of Homecoming","proficiency":10,"rarity":2,"type":"ATK-Boosting","ver":"3.0"},{"id":"mushroom_hodgepodge","name":"Mushroom Hodgepodge","location":"Complete Cooking, the Flavor of Nature","proficiency":10,"rarity":2,"type":"DEF-Boosting","ver":"3.0"},{"id":"panipuri","name":"Panipuri","location":"Sold by Jahangir","proficiency":10,"rarity":2,"type":"Revive","ver":"3.0"},{"id":"curry_shrimp","name":"Curry Shrimp","location":"Sold by Jahangir","proficiency":10,"rarity":2,"type":"Healing","ver":"3.0"},{"id":"fish_with_cream_sauce","name":"Fish With Cream Sauce","location":"Complete The Gourmet Supremos: Cleanup","proficiency":10,"rarity":2,"type":"Healing","ver":"3.0"},{"id":"aaru_mixed_rice","name":"Aaru Mixed Rice","location":"Sold by Azalai","proficiency":10,"rarity":2,"type":"Adventurer","ver":"3.1"},{"id":"rose_custard","name":"Rose Custard","location":"Sold by Enteka","proficiency":10,"rarity":2,"type":"Healing","ver":"3.2"},{"id":"samosa","name":"Samosa","location":"Sold by Jahangir","proficiency":10,"rarity":2,"type":"Healing","ver":"3.3"},{"id":"golden_shrimp_balls","name":"Golden Shrimp Balls","location":"Reach Reputation Level 1 in Liyue","proficiency":15,"rarity":3,"type":"Revive","ver":"1.1"},{"id":"calla_lily_seafood_soup","name":"Calla Lily Seafood Soup","location":"Sold by Sara","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"1.0"},{"id":"sautéed_matsutake","name":"Sautéed Matsutake","location":"Sold by Sara","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"1.0"},{"id":"cold_cut_platter","name":"Cold Cut Platter","location":"Eagle's Gate Domain","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"1.0"},{"id":"sticky_honey_roast","name":"Sticky Honey Roast","location":"Obtained during Sara's Worries","proficiency":15,"rarity":3,"type":"Adventurer","ver":"1.0"},{"id":"crab_ham_veggie_bake","name":"Crab, Ham & Veggie Bake","location":"Complete the Lively Orlean version of Food Delivery","proficiency":15,"rarity":3,"type":"Revive","ver":"1.0"},{"id":"mushroom_pizza","name":"Mushroom Pizza","location":"Obtained from a Chest in Stormterror's Lair","proficiency":15,"rarity":3,"type":"Healing","ver":"1.0"},{"id":"mondstadt_hash_brown","name":"Mondstadt Hash Brown","location":"Temple of the Wolf Domain","proficiency":15,"rarity":3,"type":"Healing","ver":"1.0"},{"id":"pile_em_up","name":"\"Pile 'Em Up\"","location":"Sold by Sara","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"1.0"},{"id":"barbatos_ratatouille","name":"Barbatos Ratatouille","location":"Talk to Vind","proficiency":15,"rarity":3,"type":"Adventurer","ver":"1.0"},{"id":"adventurers_breakfast_sandwich","name":"Adventurer's Breakfast Sandwich","location":"Reach Reputation Level 4 in Mondstadt","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"1.1"},{"id":"northern_apple_stew","name":"Northern Apple Stew","location":"Reach Reputation Level 1 in Mondstadt","proficiency":15,"rarity":3,"type":"Healing","ver":"1.1"},{"id":"sunshine_sprat","name":"Sunshine Sprat","location":"Obtained during The Second Experiment: The World","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"1.2"},{"id":"crispy_potato_shrimp_platter","name":"Crispy Potato Shrimp Platter","location":"Sold by Sara","proficiency":15,"rarity":3,"type":"Healing","ver":"1.4"},{"id":"zhongyuan_chop_suey","name":"Zhongyuan Chop Suey","location":"Complete Old Tastes Die Hard","proficiency":15,"rarity":3,"type":"Adventurer","ver":"1.0"},{"id":"black_back_perch_stew","name":"Black-Back Perch Stew","location":"Sold by Chef Mao","proficiency":15,"rarity":3,"type":"Healing","ver":"1.0"},{"id":"squirrel_fish","name":"Squirrel Fish","location":"Sold by Chef Mao","proficiency":15,"rarity":3,"type":"Healing","ver":"1.0"},{"id":"qingce_stir_fry","name":"Qingce Stir Fry","location":"Sold by Ms. Bai","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"1.0"},{"id":"come_and_get_it","name":"Come and Get It","location":"Sold by Chef Mao","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"1.0"},{"id":"bamboo_shoot_soup","name":"Bamboo Shoot Soup","location":"Sold by Verr Goldet","proficiency":15,"rarity":3,"type":"Healing","ver":"1.1"},{"id":"triple_layered_consommé","name":"Triple-Layered Consommé","location":"Sold by Chef Mao","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"1.1"},{"id":"lotus_flower_crisp","name":"Lotus Flower Crisp","location":"Reach Reputation Level 4 in Liyue","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"1.1"},{"id":"universal_peace","name":"Universal Peace","location":"Sold by Chef Mao","proficiency":15,"rarity":3,"type":"Healing","ver":"1.2"},{"id":"jueyun_guoba","name":"Jueyun Guoba","location":"Sold by Ms. Bai","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"1.2"},{"id":"fullmoon_egg","name":"Fullmoon Egg","location":"Sold by Yueshu","proficiency":15,"rarity":3,"type":"Revive","ver":"1.3"},{"id":"minty_meat_rolls","name":"Minty Meat Rolls","location":"Sold by Chef Mao","proficiency":15,"rarity":3,"type":"Adventurer","ver":"1.4"},{"id":"cured_pork_dry_hotpot","name":"Cured Pork Dry Hotpot","location":"Sold by Licai","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"1.5"},{"id":"stir_fried_shrimp","name":"Stir-Fried Shrimp","location":"Sold by Verr Goldet","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"1.6"},{"id":"tricolor_dango","name":"Tricolor Dango","location":"Sold by Kiminami Anna","proficiency":15,"rarity":3,"type":"Healing","ver":"2.0"},{"id":"tonkotsu_ramen","name":"Tonkotsu Ramen","location":"Sold by Shimura Kanbei","proficiency":15,"rarity":3,"type":"Healing","ver":"2.0"},{"id":"tri_flavored_skewer","name":"Tri-Flavored Skewer","location":"Sold by Kiminami Anna","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"2.0"},{"id":"imported_poultry","name":"Imported Poultry","location":"Complete Gazing Three Thousand Miles Away","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"2.0"},{"id":"sakura_mochi","name":"Sakura Mochi","location":"Obtained during With You","proficiency":15,"rarity":3,"type":"Revive","ver":"2.0"},{"id":"konda_cuisine","name":"Konda Cuisine","location":"Reach Reputation Level 1 in Inazuma","proficiency":15,"rarity":3,"type":"Revive","ver":"2.0"},{"id":"rice_cake_soup","name":"Rice Cake Soup","location":"Reach Reputation Level 4 in Inazuma","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"2.0"},{"id":"sakura_tempura","name":"Sakura Tempura","location":"Complete Gourmet Supremos, Assemble!","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"2.0"},{"id":"invigorating_kitty_meal","name":"Invigorating Kitty Meal","location":"Complete Neko Is a Cat: Shrine","proficiency":15,"rarity":3,"type":"Healing","ver":"2.1"},{"id":"omelette_rice","name":"Omelette Rice","location":"Sold by Shimura Kanbei","proficiency":15,"rarity":3,"type":"Adventurer","ver":"2.1"},{"id":"taiyaki","name":"Taiyaki","location":"Sold by Kiminami Anna","proficiency":15,"rarity":3,"type":"Healing","ver":"2.1"},{"id":"more_and_more","name":"More-and-More","location":"Sold by Kiminami Anna","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"2.1"},{"id":"unagi_chazuke","name":"Unagi Chazuke","location":"Sold by Shimura Kanbei","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"2.3"},{"id":"five_pickled_treasures","name":"Five Pickled Treasures","location":"Sold by Shimura Kanbei","proficiency":15,"rarity":3,"type":"Adventurer","ver":"2.3"},{"id":"sakura_shrimp_crackers","name":"Sakura Shrimp Crackers","location":"Sold by Shimura Kanbei","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"2.3"},{"id":"dragon_beard_noodles","name":"Dragon Beard Noodles","location":"Sold by Chef Mao","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"2.4"},{"id":"butter_chicken","name":"Butter Chicken","location":"Reach Reputation Level 1 in Sumeru.","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"3.0"},{"id":"pita_pocket","name":"Pita Pocket","location":"Complete Silent Seeker of Knowledge","proficiency":15,"rarity":3,"type":"Healing","ver":"3.0"},{"id":"tahchin","name":"Tahchin","location":"Reach Reputation Level 4 in Sumeru","proficiency":15,"rarity":3,"type":"Healing","ver":"3.0"},{"id":"potato_boat","name":"Potato Boat","location":"Complete The Gourmet Supremos: Cleanup","proficiency":15,"rarity":3,"type":"Revive","ver":"3.0"},{"id":"baklava","name":"Baklava","location":"Sold by Enteka","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"3.1"},{"id":"candied_ajilenakh_nut","name":"Candied Ajilenakh Nut","location":"Sold by Enteka","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"3.1"},{"id":"padisarah_pudding","name":"Padisarah Pudding","location":"Sold by Enteka","proficiency":15,"rarity":3,"type":"Adventurer","ver":"3.1"},{"id":"charcoal_baked_ajilenakh_cake","name":"Charcoal-Baked Ajilenakh Cake","location":"Sold by Lambad","proficiency":15,"rarity":3,"type":"Revive","ver":"3.1"},{"id":"fruits_of_the_festival","name":"Fruits of the Festival","location":"Sold by Charles and Georg","proficiency":15,"rarity":3,"type":"DEF-Boosting","ver":"3.1"},{"id":"sabz_meat_stew","name":"Sabz Meat Stew","location":"Sold by Lambad","proficiency":15,"rarity":3,"type":"Healing","ver":"3.4"},{"id":"scented_meat_balls","name":"Scented Meat Balls","location":"Sold by Lambad","proficiency":15,"rarity":3,"type":"Healing","ver":"3.4"},{"id":"moon_pie","name":"Moon Pie","location":"Reach Reputation Level 7 in Mondstadt","proficiency":20,"rarity":4,"type":"DEF-Boosting","ver":"1.1"},{"id":"jade_parcels","name":"Jade Parcels","location":"Obtained during Cooking Showdown","proficiency":20,"rarity":4,"type":"ATK-Boosting","ver":"1.0"},{"id":"golden_crab","name":"Golden Crab","location":"Obtained during To Mondstadt","proficiency":20,"rarity":4,"type":"DEF-Boosting","ver":"1.0"},{"id":"tianshu_meat","name":"Tianshu Meat","location":"Reach Reputation Level 7 in Liyue","proficiency":20,"rarity":4,"type":"ATK-Boosting","ver":"1.1"},{"id":"chicken_tofu_pudding","name":"Chicken Tofu Pudding","location":"Complete A Dish Beyond Mortal Ken","proficiency":20,"rarity":4,"type":"ATK-Boosting","ver":"1.6"},{"id":"sashimi_platter","name":"Sashimi Platter","location":"Complete The Gourmet Supremos: The Importance of Eating Well","proficiency":20,"rarity":4,"type":"ATK-Boosting","ver":"2.0"},{"id":"butter_crab","name":"Butter Crab","location":"Reach Reputation Level 7 in Inazuma","proficiency":20,"rarity":4,"type":"DEF-Boosting","ver":"2.0"},{"id":"biryani","name":"Biryani","location":"Reach Reputation Level 7 in Sumeru","proficiency":20,"rarity":4,"type":"DEF-Boosting","ver":"3.0"},{"id":"tandoori_roast_chicken","name":"Tandoori Roast Chicken","location":"Complete The Gourmet Supremos: Cleanup","proficiency":20,"rarity":4,"type":"ATK-Boosting","ver":"3.0"},{"id":"adeptus_temptation","name":"Adeptus' Temptation","location":"Obtained from the Luxurious Chest above Qingyun Peak","proficiency":25,"rarity":5,"type":"ATK-Boosting","ver":"1.0"}]},"1":{"name":"Event-Exclusive","recipes":[{"id":"fragrant_mashed_potatoes","name":"Fragrant Mashed Potatoes","location":"Outland Gastronomy Event","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"1.4"},{"id":"golden_chicken_burger","name":"Golden Chicken Burger","location":"Outland Gastronomy Event","proficiency":15,"rarity":3,"type":"Healing","ver":"1.4"},{"id":"rice_pudding","name":"Rice Pudding","location":"Complete Contraption-Contrived Cooking Course: Part II","proficiency":15,"rarity":3,"type":"Adventurer","ver":"2.1"},{"id":"braised_meat","name":"Braised Meat","location":"Complete Contraption-Contrived Cooking Course: Part III","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"2.1"},{"id":"oncidium_tofu","name":"Oncidium Tofu","location":"Complete Contraption-Contrived Cooking Course: Part I","proficiency":15,"rarity":3,"type":"Adventurer","ver":"2.1"},{"id":"rainbow_aster","name":"Rainbow Aster","location":"Complete About That Time We Saved the Tanuki Photo Board","proficiency":15,"rarity":3,"type":"Adventurer","ver":"2.6"},{"id":"sunset_berry_tea","name":"Sunset Berry Tea","location":"New  Rewards Mail","proficiency":15,"rarity":3,"type":"ATK-Boosting","ver":"3.0"},{"id":"milky_mushroom_crisp_tower","name":"Milky Mushroom Crisp Tower","location":"New  Rewards Mail","proficiency":15,"rarity":3,"type":"Healing","ver":"3.0"},{"id":"golden_fried_chicken","name":"Golden Fried Chicken","location":"Outland Gastronomy Event","proficiency":20,"rarity":4,"type":"ATK-Boosting","ver":"1.4"},{"id":"chili_mince_cornbread_buns","name":"Chili-Mince Cornbread Buns","location":"Obtained during Three to Get Ready, and Here We Go","proficiency":20,"rarity":4,"type":"DEF-Boosting","ver":"2.1"},{"id":"bountiful_year","name":"Bountiful Year","location":"Fleeting Colors in Flight Event","proficiency":20,"rarity":4,"type":"ATK-Boosting","ver":"2.4"},{"id":"meat_lovers_mushroom_pizza","name":"Meat Lovers' Mushroom Pizza","location":"New  Rewards Mail","proficiency":20,"rarity":4,"type":"ATK-Boosting","ver":"3.0"}]}}
+{
+  "0": {
+    "name": "Permanent",
+    "recipes": [
+      {
+        "id": "chicken_mushroom_skewer",
+        "name": "Chicken-Mushroom Skewer",
+        "location": "Available by default",
+        "proficiency": 5,
+        "default": true,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "teyvat_fried_egg",
+        "name": "Teyvat Fried Egg",
+        "location": "Available by default",
+        "proficiency": 5,
+        "default": true,
+        "rarity": 1,
+        "type": "Revive",
+        "ver": "1.0"
+      },
+      {
+        "id": "steak",
+        "name": "Steak",
+        "location": "Available by default",
+        "proficiency": 5,
+        "default": true,
+        "rarity": 1,
+        "type": "Revive",
+        "ver": "1.0"
+      },
+      {
+        "id": "radish_veggie_soup",
+        "name": "Radish Veggie Soup",
+        "location": "Available by default",
+        "proficiency": 5,
+        "default": true,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "mondstadt_grilled_fish",
+        "name": "Mondstadt Grilled Fish",
+        "location": "Available by default",
+        "proficiency": 5,
+        "default": true,
+        "rarity": 1,
+        "type": "Revive",
+        "ver": "1.0"
+      },
+      {
+        "id": "mint_jelly",
+        "name": "Mint Jelly",
+        "location": "Sold by Sara",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "1.4"
+      },
+      {
+        "id": "mora_meat",
+        "name": "Mora Meat",
+        "location": "Obtained from a Chest near Mingyun Village",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Revive",
+        "ver": "1.0"
+      },
+      {
+        "id": "stir_fried_filet",
+        "name": "Stir-Fried Filet",
+        "location": "Obtained from a Chest on Mt. Tianheng",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Revive",
+        "ver": "1.0"
+      },
+      {
+        "id": "grilled_tiger_fish",
+        "name": "Grilled Tiger Fish",
+        "location": "Sold by Chef Mao",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "rice_buns",
+        "name": "Rice Buns",
+        "location": "Sold by Chef Mao",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "1.6"
+      },
+      {
+        "id": "egg_roll",
+        "name": "Egg Roll",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Revive",
+        "ver": "2.0"
+      },
+      {
+        "id": "dry_braised_salted_fish",
+        "name": "Dry-Braised Salted Fish",
+        "location": "Sold by Ryouko",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "2.0"
+      },
+      {
+        "id": "miso_soup",
+        "name": "Miso Soup",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "2.0"
+      },
+      {
+        "id": "sweet_shrimp_sushi",
+        "name": "Sweet Shrimp Sushi",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Revive",
+        "ver": "2.1"
+      },
+      {
+        "id": "bird_egg_sushi",
+        "name": "Bird Egg Sushi",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "2.1"
+      },
+      {
+        "id": "soba_noodles",
+        "name": "Soba Noodles",
+        "location": "Sold by Kiminami Anna",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "2.2"
+      },
+      {
+        "id": "minty_bean_soup",
+        "name": "Minty Bean Soup",
+        "location": "Sold by Lambad",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Revive",
+        "ver": "3.0"
+      },
+      {
+        "id": "lambad_fish_roll",
+        "name": "Lambad Fish Roll",
+        "location": "Sold by Lambad",
+        "proficiency": 5,
+        "rarity": 1,
+        "type": "Healing",
+        "ver": "3.0"
+      },
+      {
+        "id": "flaming_red_bolognese",
+        "name": "Flaming Red Bolognese",
+        "location": "Sold by Good Hunter",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "sweet_madame",
+        "name": "Sweet Madame",
+        "location": "Available by default",
+        "proficiency": 10,
+        "default": true,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "northern_smoked_chicken",
+        "name": "Northern Smoked Chicken",
+        "location": "Obtained from a Chest in Stormterror's Lair",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Adventurer",
+        "ver": "1.0"
+      },
+      {
+        "id": "cream_stew",
+        "name": "Cream Stew",
+        "location": "Sold by Sara",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Adventurer",
+        "ver": "1.0"
+      },
+      {
+        "id": "tea_break_pancake",
+        "name": "Tea Break Pancake",
+        "location": "Sold by Good Hunter",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Revive",
+        "ver": "1.0"
+      },
+      {
+        "id": "fried_radish_balls",
+        "name": "Fried Radish Balls",
+        "location": "Available by default",
+        "proficiency": 10,
+        "default": true,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "satisfying_salad",
+        "name": "Satisfying Salad",
+        "location": "Available by default",
+        "proficiency": 10,
+        "default": true,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "fishermans_toast",
+        "name": "Fisherman's Toast",
+        "location": "Available by default",
+        "proficiency": 10,
+        "default": true,
+        "rarity": 2,
+        "type": "DEF-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "goulash",
+        "name": "Goulash",
+        "location": "Complete Ah, Fresh Meat!",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Adventurer",
+        "ver": "1.2"
+      },
+      {
+        "id": "almond_tofu",
+        "name": "Almond Tofu",
+        "location": "Interactable point in Wangshu Inn",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "jueyun_chili_chicken",
+        "name": "Jueyun Chili Chicken",
+        "location": "Sold by Chef Mao",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "jewelry_soup",
+        "name": "Jewelry Soup",
+        "location": "Obtained during Custodian of Clouds",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "DEF-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "matsutake_meat_rolls",
+        "name": "Matsutake Meat Rolls",
+        "location": "Obtained during Custodian of Clouds",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "crystal_shrimp",
+        "name": "Crystal Shrimp",
+        "location": "Sold by Chef Mao",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "lotus_seed_and_bird_egg_soup",
+        "name": "Lotus Seed and Bird Egg Soup",
+        "location": "Sold by Herbalist Gui",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Adventurer",
+        "ver": "1.0"
+      },
+      {
+        "id": "noodles_with_mountain_delicacies",
+        "name": "Noodles with Mountain Delicacies",
+        "location": "Sold by Ms. Bai",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Adventurer",
+        "ver": "1.0"
+      },
+      {
+        "id": "vegetarian_abalone",
+        "name": "Vegetarian Abalone",
+        "location": "Sold by Verr Goldet",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Revive",
+        "ver": "1.3"
+      },
+      {
+        "id": "stone_harbor_delicacies",
+        "name": "Stone Harbor Delicacies",
+        "location": "Sold by Licai",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "1.3"
+      },
+      {
+        "id": "mint_salad",
+        "name": "Mint Salad",
+        "location": "Sold by Wanmin Restaurant",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "1.4"
+      },
+      {
+        "id": "crab_roe_tofu",
+        "name": "Crab Roe Tofu",
+        "location": "Sold by Chef Mao",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Revive",
+        "ver": "1.5"
+      },
+      {
+        "id": "stir_fried_fish_noodles",
+        "name": "Stir-Fried Fish Noodles",
+        "location": "Sold by Xinyue Kiosk",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "1.5"
+      },
+      {
+        "id": "tuna_sushi",
+        "name": "Tuna Sushi",
+        "location": "Sold by Kiminami Anna",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "2.0"
+      },
+      {
+        "id": "onigiri",
+        "name": "Onigiri",
+        "location": "Complete The Gourmet Supremos: The Deep Divers Quest",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "2.0"
+      },
+      {
+        "id": "mixed_yakisoba",
+        "name": "Mixed Yakisoba",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Revive",
+        "ver": "2.0"
+      },
+      {
+        "id": "crab_roe_kourayaki",
+        "name": "Crab Roe Kourayaki",
+        "location": "Complete The Gourmet Supremos: The Seashore Strider",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "2.0"
+      },
+      {
+        "id": "grilled_unagi_fillet",
+        "name": "Grilled Unagi Fillet",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "2.1"
+      },
+      {
+        "id": "wakatakeni",
+        "name": "Wakatakeni",
+        "location": "Sold by Kiminami Anna",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "DEF-Boosting",
+        "ver": "2.2"
+      },
+      {
+        "id": "radish_and_fish_stew",
+        "name": "Radish and Fish Stew",
+        "location": "Sold by Kiminami Anna",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "2.2"
+      },
+      {
+        "id": "berry_mizu_manjuu",
+        "name": "Berry Mizu Manjuu",
+        "location": "Sold by Kiminami Anna",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "2.2"
+      },
+      {
+        "id": "sangayaki",
+        "name": "Sangayaki",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Adventurer",
+        "ver": "2.5"
+      },
+      {
+        "id": "udon_noodles",
+        "name": "Udon Noodles",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Revive",
+        "ver": "2.5"
+      },
+      {
+        "id": "katsu_sandwich",
+        "name": "Katsu Sandwich",
+        "location": "Sold by Ryouko",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "2.6"
+      },
+      {
+        "id": "shawarma_wrap",
+        "name": "Shawarma Wrap",
+        "location": "Sold by Lambad",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "3.0"
+      },
+      {
+        "id": "selva_salad",
+        "name": "Selva Salad",
+        "location": "Complete Cooking, a Pleasant Memory",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Adventurer",
+        "ver": "3.0"
+      },
+      {
+        "id": "masala_cheese_balls",
+        "name": "Masala Cheese Balls",
+        "location": "Complete Cooking, the Aroma of Homecoming",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "ATK-Boosting",
+        "ver": "3.0"
+      },
+      {
+        "id": "mushroom_hodgepodge",
+        "name": "Mushroom Hodgepodge",
+        "location": "Complete Cooking, the Flavor of Nature",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "DEF-Boosting",
+        "ver": "3.0"
+      },
+      {
+        "id": "panipuri",
+        "name": "Panipuri",
+        "location": "Sold by Jahangir",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Revive",
+        "ver": "3.0"
+      },
+      {
+        "id": "curry_shrimp",
+        "name": "Curry Shrimp",
+        "location": "Sold by Jahangir",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "3.0"
+      },
+      {
+        "id": "fish_with_cream_sauce",
+        "name": "Fish With Cream Sauce",
+        "location": "Complete The Gourmet Supremos: Cleanup",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "3.0"
+      },
+      {
+        "id": "aaru_mixed_rice",
+        "name": "Aaru Mixed Rice",
+        "location": "Sold by Azalai",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Adventurer",
+        "ver": "3.1"
+      },
+      {
+        "id": "rose_custard",
+        "name": "Rose Custard",
+        "location": "Sold by Enteka",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "3.2"
+      },
+      {
+        "id": "samosa",
+        "name": "Samosa",
+        "location": "Sold by Jahangir",
+        "proficiency": 10,
+        "rarity": 2,
+        "type": "Healing",
+        "ver": "3.3"
+      },
+      {
+        "id": "golden_shrimp_balls",
+        "name": "Golden Shrimp Balls",
+        "location": "Reach Reputation Level 1 in Liyue",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Revive",
+        "ver": "1.1"
+      },
+      {
+        "id": "calla_lily_seafood_soup",
+        "name": "Calla Lily Seafood Soup",
+        "location": "Sold by Sara",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "sautéed_matsutake",
+        "name": "Sautéed Matsutake",
+        "location": "Sold by Sara",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "cold_cut_platter",
+        "name": "Cold Cut Platter",
+        "location": "Eagle's Gate Domain",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "sticky_honey_roast",
+        "name": "Sticky Honey Roast",
+        "location": "Obtained during Sara's Worries",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "1.0"
+      },
+      {
+        "id": "crab_ham_veggie_bake",
+        "name": "Crab, Ham & Veggie Bake",
+        "location": "Complete the Lively Orlean version of Food Delivery",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Revive",
+        "ver": "1.0"
+      },
+      {
+        "id": "mushroom_pizza",
+        "name": "Mushroom Pizza",
+        "location": "Obtained from a Chest in Stormterror's Lair",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "mondstadt_hash_brown",
+        "name": "Mondstadt Hash Brown",
+        "location": "Temple of the Wolf Domain",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "pile_em_up",
+        "name": "\"Pile 'Em Up\"",
+        "location": "Sold by Sara",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "barbatos_ratatouille",
+        "name": "Barbatos Ratatouille",
+        "location": "Talk to Vind",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "1.0"
+      },
+      {
+        "id": "adventurers_breakfast_sandwich",
+        "name": "Adventurer's Breakfast Sandwich",
+        "location": "Reach Reputation Level 4 in Mondstadt",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "1.1"
+      },
+      {
+        "id": "northern_apple_stew",
+        "name": "Northern Apple Stew",
+        "location": "Reach Reputation Level 1 in Mondstadt",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "1.1"
+      },
+      {
+        "id": "sunshine_sprat",
+        "name": "Sunshine Sprat",
+        "location": "Obtained during The Second Experiment: The World",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "1.2"
+      },
+      {
+        "id": "crispy_potato_shrimp_platter",
+        "name": "Crispy Potato Shrimp Platter",
+        "location": "Sold by Sara",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "1.4"
+      },
+      {
+        "id": "zhongyuan_chop_suey",
+        "name": "Zhongyuan Chop Suey",
+        "location": "Complete Old Tastes Die Hard",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "1.0"
+      },
+      {
+        "id": "black_back_perch_stew",
+        "name": "Black-Back Perch Stew",
+        "location": "Sold by Chef Mao",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "squirrel_fish",
+        "name": "Squirrel Fish",
+        "location": "Sold by Chef Mao",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "1.0"
+      },
+      {
+        "id": "qingce_stir_fry",
+        "name": "Qingce Stir Fry",
+        "location": "Sold by Ms. Bai",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "come_and_get_it",
+        "name": "Come and Get It",
+        "location": "Sold by Chef Mao",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "bamboo_shoot_soup",
+        "name": "Bamboo Shoot Soup",
+        "location": "Sold by Verr Goldet",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "1.1"
+      },
+      {
+        "id": "triple_layered_consommé",
+        "name": "Triple-Layered Consommé",
+        "location": "Sold by Chef Mao",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "1.1"
+      },
+      {
+        "id": "lotus_flower_crisp",
+        "name": "Lotus Flower Crisp",
+        "location": "Reach Reputation Level 4 in Liyue",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "1.1"
+      },
+      {
+        "id": "universal_peace",
+        "name": "Universal Peace",
+        "location": "Sold by Chef Mao",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "1.2"
+      },
+      {
+        "id": "jueyun_guoba",
+        "name": "Jueyun Guoba",
+        "location": "Sold by Ms. Bai",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "1.2"
+      },
+      {
+        "id": "fullmoon_egg",
+        "name": "Fullmoon Egg",
+        "location": "Sold by Yueshu",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Revive",
+        "ver": "1.3"
+      },
+      {
+        "id": "minty_meat_rolls",
+        "name": "Minty Meat Rolls",
+        "location": "Sold by Chef Mao",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "1.4"
+      },
+      {
+        "id": "cured_pork_dry_hotpot",
+        "name": "Cured Pork Dry Hotpot",
+        "location": "Sold by Licai",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "1.5"
+      },
+      {
+        "id": "stir_fried_shrimp",
+        "name": "Stir-Fried Shrimp",
+        "location": "Sold by Verr Goldet",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "1.6"
+      },
+      {
+        "id": "tricolor_dango",
+        "name": "Tricolor Dango",
+        "location": "Sold by Kiminami Anna",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "2.0"
+      },
+      {
+        "id": "tonkotsu_ramen",
+        "name": "Tonkotsu Ramen",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "2.0"
+      },
+      {
+        "id": "tri_flavored_skewer",
+        "name": "Tri-Flavored Skewer",
+        "location": "Sold by Kiminami Anna",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "2.0"
+      },
+      {
+        "id": "imported_poultry",
+        "name": "Imported Poultry",
+        "location": "Complete Gazing Three Thousand Miles Away",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "2.0"
+      },
+      {
+        "id": "sakura_mochi",
+        "name": "Sakura Mochi",
+        "location": "Obtained during With You",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Revive",
+        "ver": "2.0"
+      },
+      {
+        "id": "konda_cuisine",
+        "name": "Konda Cuisine",
+        "location": "Reach Reputation Level 1 in Inazuma",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Revive",
+        "ver": "2.0"
+      },
+      {
+        "id": "rice_cake_soup",
+        "name": "Rice Cake Soup",
+        "location": "Reach Reputation Level 4 in Inazuma",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "2.0"
+      },
+      {
+        "id": "sakura_tempura",
+        "name": "Sakura Tempura",
+        "location": "Complete Gourmet Supremos, Assemble!",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "2.0"
+      },
+      {
+        "id": "invigorating_kitty_meal",
+        "name": "Invigorating Kitty Meal",
+        "location": "Complete Neko Is a Cat: Shrine",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "2.1"
+      },
+      {
+        "id": "omelette_rice",
+        "name": "Omelette Rice",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "2.1"
+      },
+      {
+        "id": "taiyaki",
+        "name": "Taiyaki",
+        "location": "Sold by Kiminami Anna",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "2.1"
+      },
+      {
+        "id": "more_and_more",
+        "name": "More-and-More",
+        "location": "Sold by Kiminami Anna",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "2.1"
+      },
+      {
+        "id": "unagi_chazuke",
+        "name": "Unagi Chazuke",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "2.3"
+      },
+      {
+        "id": "five_pickled_treasures",
+        "name": "Five Pickled Treasures",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "2.3"
+      },
+      {
+        "id": "sakura_shrimp_crackers",
+        "name": "Sakura Shrimp Crackers",
+        "location": "Sold by Shimura Kanbei",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "2.3"
+      },
+      {
+        "id": "dragon_beard_noodles",
+        "name": "Dragon Beard Noodles",
+        "location": "Sold by Chef Mao",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "2.4"
+      },
+      {
+        "id": "butter_chicken",
+        "name": "Butter Chicken",
+        "location": "Reach Reputation Level 1 in Sumeru.",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "3.0"
+      },
+      {
+        "id": "pita_pocket",
+        "name": "Pita Pocket",
+        "location": "Complete Silent Seeker of Knowledge",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "3.0"
+      },
+      {
+        "id": "tahchin",
+        "name": "Tahchin",
+        "location": "Reach Reputation Level 4 in Sumeru",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "3.0"
+      },
+      {
+        "id": "potato_boat",
+        "name": "Potato Boat",
+        "location": "Complete The Gourmet Supremos: Cleanup",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Revive",
+        "ver": "3.0"
+      },
+      {
+        "id": "baklava",
+        "name": "Baklava",
+        "location": "Sold by Enteka",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "3.1"
+      },
+      {
+        "id": "candied_ajilenakh_nut",
+        "name": "Candied Ajilenakh Nut",
+        "location": "Sold by Enteka",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "3.1"
+      },
+      {
+        "id": "padisarah_pudding",
+        "name": "Padisarah Pudding",
+        "location": "Sold by Enteka",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "3.1"
+      },
+      {
+        "id": "charcoal_baked_ajilenakh_cake",
+        "name": "Charcoal-Baked Ajilenakh Cake",
+        "location": "Sold by Lambad",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Revive",
+        "ver": "3.1"
+      },
+      {
+        "id": "fruits_of_the_festival",
+        "name": "Fruits of the Festival",
+        "location": "Sold by Charles and Georg",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "DEF-Boosting",
+        "ver": "3.1"
+      },
+      {
+        "id": "sabz_meat_stew",
+        "name": "Sabz Meat Stew",
+        "location": "Sold by Lambad",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "3.4"
+      },
+      {
+        "id": "scented_meat_balls",
+        "name": "Scented Meat Balls",
+        "location": "Sold by Lambad",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "3.4"
+      },
+      {
+        "id": "moon_pie",
+        "name": "Moon Pie",
+        "location": "Reach Reputation Level 7 in Mondstadt",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "DEF-Boosting",
+        "ver": "1.1"
+      },
+      {
+        "id": "jade_parcels",
+        "name": "Jade Parcels",
+        "location": "Obtained during Cooking Showdown",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "golden_crab",
+        "name": "Golden Crab",
+        "location": "Obtained during To Mondstadt",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "DEF-Boosting",
+        "ver": "1.0"
+      },
+      {
+        "id": "tianshu_meat",
+        "name": "Tianshu Meat",
+        "location": "Reach Reputation Level 7 in Liyue",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "ATK-Boosting",
+        "ver": "1.1"
+      },
+      {
+        "id": "chicken_tofu_pudding",
+        "name": "Chicken Tofu Pudding",
+        "location": "Complete A Dish Beyond Mortal Ken",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "ATK-Boosting",
+        "ver": "1.6"
+      },
+      {
+        "id": "sashimi_platter",
+        "name": "Sashimi Platter",
+        "location": "Complete The Gourmet Supremos: The Importance of Eating Well",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "ATK-Boosting",
+        "ver": "2.0"
+      },
+      {
+        "id": "butter_crab",
+        "name": "Butter Crab",
+        "location": "Reach Reputation Level 7 in Inazuma",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "DEF-Boosting",
+        "ver": "2.0"
+      },
+      {
+        "id": "biryani",
+        "name": "Biryani",
+        "location": "Reach Reputation Level 7 in Sumeru",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "DEF-Boosting",
+        "ver": "3.0"
+      },
+      {
+        "id": "tandoori_roast_chicken",
+        "name": "Tandoori Roast Chicken",
+        "location": "Complete The Gourmet Supremos: Cleanup",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "ATK-Boosting",
+        "ver": "3.0"
+      },
+      {
+        "id": "adeptus_temptation",
+        "name": "Adeptus' Temptation",
+        "location": "Obtained from the Luxurious Chest above Qingyun Peak",
+        "proficiency": 25,
+        "rarity": 5,
+        "type": "ATK-Boosting",
+        "ver": "1.0"
+      }
+    ]
+  },
+  "1": {
+    "name": "Event-Exclusive",
+    "recipes": [
+      {
+        "id": "fragrant_mashed_potatoes",
+        "name": "Fragrant Mashed Potatoes",
+        "location": "Outland Gastronomy Event",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "1.4"
+      },
+      {
+        "id": "golden_chicken_burger",
+        "name": "Golden Chicken Burger",
+        "location": "Outland Gastronomy Event",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "1.4"
+      },
+      {
+        "id": "rice_pudding",
+        "name": "Rice Pudding",
+        "location": "Complete Contraption-Contrived Cooking Course: Part II",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "2.1"
+      },
+      {
+        "id": "braised_meat",
+        "name": "Braised Meat",
+        "location": "Complete Contraption-Contrived Cooking Course: Part III",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "2.1"
+      },
+      {
+        "id": "oncidium_tofu",
+        "name": "Oncidium Tofu",
+        "location": "Complete Contraption-Contrived Cooking Course: Part I",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "2.1"
+      },
+      {
+        "id": "rainbow_aster",
+        "name": "Rainbow Aster",
+        "location": "Complete About That Time We Saved the Tanuki Photo Board",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Adventurer",
+        "ver": "2.6"
+      },
+      {
+        "id": "sunset_berry_tea",
+        "name": "Sunset Berry Tea",
+        "location": "New  Rewards Mail",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "ATK-Boosting",
+        "ver": "3.0"
+      },
+      {
+        "id": "milky_mushroom_crisp_tower",
+        "name": "Milky Mushroom Crisp Tower",
+        "location": "New  Rewards Mail",
+        "proficiency": 15,
+        "rarity": 3,
+        "type": "Healing",
+        "ver": "3.0"
+      },
+      {
+        "id": "golden_fried_chicken",
+        "name": "Golden Fried Chicken",
+        "location": "Outland Gastronomy Event",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "ATK-Boosting",
+        "ver": "1.4"
+      },
+      {
+        "id": "chili_mince_cornbread_buns",
+        "name": "Chili-Mince Cornbread Buns",
+        "location": "Obtained during Three to Get Ready, and Here We Go",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "DEF-Boosting",
+        "ver": "2.1"
+      },
+      {
+        "id": "bountiful_year",
+        "name": "Bountiful Year",
+        "location": "Fleeting Colors in Flight Event",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "ATK-Boosting",
+        "ver": "2.4"
+      },
+      {
+        "id": "meat_lovers_mushroom_pizza",
+        "name": "Meat Lovers' Mushroom Pizza",
+        "location": "New  Rewards Mail",
+        "proficiency": 20,
+        "rarity": 4,
+        "type": "ATK-Boosting",
+        "ver": "3.0"
+      }
+    ]
+  }
+}
