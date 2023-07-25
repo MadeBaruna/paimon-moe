@@ -614,7 +614,6 @@ export const bannersDual = {
       featured: ['sangonomiya_kokomi', 'wanderer'],
       featuredRare: ['yanfei', 'faruzan', 'rosaria'],
       version: '3.8',
-      timezoneDependent: true,
     },
     {
       name: 'From Ashes Reborn',
@@ -626,7 +625,6 @@ export const bannersDual = {
       featured: ['sangonomiya_kokomi', 'wanderer'],
       featuredRare: ['yanfei', 'faruzan', 'rosaria'],
       version: '3.8',
-      timezoneDependent: true,
     },
   ],
 };
