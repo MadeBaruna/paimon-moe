@@ -29,6 +29,8 @@
         return 'pale_flame';
       case '+80_em':
         return 'gilded_dreams';
+      case '+15%_anemo_dmg_set':
+        return 'viridescent_venerer';
       default:
         return artifact;
     }
@@ -128,7 +130,7 @@
   </div>
   <a
     href="/characters/{id}"
-    class="flex justify-end items-center self-end lg:self-start text-white mt-4 
+    class="flex justify-end items-center self-end lg:self-start text-white mt-4
 bg-background-secondary rounded-xl py-2 px-4 hover:bg-background transition-colors duration-100"
   >
     {characters[id].name} Build

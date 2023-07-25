@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    klee: {
-      name: 'Klee',
+    wanderer: {
+      name: 'Wanderer',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    eula: {
-      name: 'Eula',
+    sangonomiya_kokomi: {
+      name: 'Sangonomiya Kokomi',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300050;
-  const image = 'eula_klee.png';
+  const bannerId = 300051;
+  const image = 'wanderer_kokomi.png';
   const width = 800;
-  const height = 515;
+  const height = 409;
 
   let loading = true;
   let user = '';

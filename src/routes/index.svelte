@@ -1,6 +1,6 @@
 <script context="module">
   export async function load({ fetch }) {
-    const promoted = ['eula', 'klee'];
+    const promoted = ['sangonomiya_kokomi', 'wanderer'];
     const builds = {};
     for (const p of promoted) {
       const response = await fetch(`/characters/build/${p}.json`);
@@ -95,7 +95,7 @@
     {/if}
     <Achievement on:done={onDone} />
     <Furnishing on:done={onDone} />
-    <Twitter on:done={onDone} />
+    <!-- <Twitter on:done={onDone} /> -->
     <!-- <div class="flex flex-col space-y-4">
     </div> -->
   </Masonry>
