@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    wanderer: {
-      name: 'Wanderer',
+    lyney: {
+      name: 'Lyney',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    sangonomiya_kokomi: {
-      name: 'Sangonomiya Kokomi',
+    yelan: {
+      name: 'Yelan',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300051;
-  const image = 'wanderer_kokomi.png';
+  const bannerId = 300052;
+  const image = 'lyney_yelan.png';
   const width = 800;
-  const height = 409;
+  const height = 499;
 
   let loading = true;
   let user = '';

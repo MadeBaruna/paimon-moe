@@ -1314,4 +1314,62 @@ export const itemList = {
     name: 'Newborn Tainted Hydro Phantasm',
     rarity: 4,
   },
+
+  broken_goblet_of_the_pristine_sea: {
+    id: 'broken_goblet_of_the_pristine_sea',
+    name: 'Broken Goblet of the Pristine Sea',
+    rarity: 2,
+  },
+  wine_goblet_of_the_pristine_sea: {
+    id: 'wine_goblet_of_the_pristine_sea',
+    name: 'Wine Goblet of the Pristine Sea',
+    rarity: 3,
+  },
+  silver_goblet_of_the_pristine_sea: {
+    id: 'silver_goblet_of_the_pristine_sea',
+    name: 'Silver Goblet of the Pristine Sea',
+    rarity: 4,
+  },
+  golden_goblet_of_the_pristine_sea: {
+    id: 'golden_goblet_of_the_pristine_sea',
+    name: 'Golden Goblet of the Pristine Sea',
+    rarity: 5,
+  },
+
+  dross_of_pure_sacred_dewdrop: {
+    id: 'dross_of_pure_sacred_dewdrop',
+    name: 'Dross of Pure Sacred Dewdrop',
+    rarity: 2,
+  },
+  sublimation_of_pure_sacred_dewdrop: {
+    id: 'sublimation_of_pure_sacred_dewdrop',
+    name: 'Sublimation of Pure Sacred Dewdrop',
+    rarity: 3,
+  },
+  spring_of_pure_sacred_dewdrop: {
+    id: 'spring_of_pure_sacred_dewdrop',
+    name: 'Spring of Pure Sacred Dewdrop',
+    rarity: 4,
+  },
+  essence_of_pure_sacred_dewdrop: {
+    id: 'essence_of_pure_sacred_dewdrop',
+    name: 'Essence of Pure Sacred Dewdrop',
+    rarity: 5,
+  },
+
+  rift_core: {
+    id: 'rift_core',
+    name: 'Rift Core',
+    rarity: 2,
+  },
+  foreign_synapse: {
+    id: 'foreign_synapse',
+    name: 'Foreign Synapse',
+    rarity: 3,
+  },
+  alien_life_core: {
+    id: 'alien_life_core',
+    name: 'Alien Life Core',
+    rarity: 4,
+  },
 };
