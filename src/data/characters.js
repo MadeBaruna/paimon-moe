@@ -5224,6 +5224,296 @@ export const characters = {
     },
     element: elements.electro,
   },
+  lynette: {
+    id: 'lynette',
+    name: 'Lynette',
+    rarity: 4,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12397,
+      atk: 232,
+      def: 712,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 2,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 10,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 4,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 20,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 8,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 30,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 12,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 45,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 20,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 60,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.meshing_gear, itemList.mechanical_spur_gear, itemList.artificed_dynamic_gear],
+      book: [itemList.teachings_of_order, itemList.guide_to_order, itemList.philosophies_of_order],
+      boss: itemList.everamber,
+    },
+    element: elements.anemo,
+  },
+  lyney: {
+    id: 'lyney',
+    name: 'Lyney',
+    rarity: 5,
+    weapon: weapons.bow,
+    stats: {
+      hp: 11021,
+      atk: 318,
+      def: 538,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 3,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 2,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 10,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 4,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 20,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 8,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 30,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 12,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 45,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 20,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 60,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
+      book: [itemList.teachings_of_equity, itemList.guide_to_equity, itemList.philosophies_of_equity],
+      boss: itemList.primordial_greenbloom,
+    },
+    element: elements.pyro,
+  },
   mika: {
     id: 'mika',
     name: 'Mika',

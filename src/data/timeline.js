@@ -135,7 +135,7 @@ export const eventsData = [
       showOnHome: true,
     },
     {
-      name: 'Born of Ocean Swell - Eula Banner',
+      name: 'Discerner of Enigmas - Yelan Banner',
       pos: '30% 15%',
       zoom: '200%',
       image: 'Discerner of Enigmas 3.jpg',

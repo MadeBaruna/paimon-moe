@@ -1172,4 +1172,146 @@ export const itemList = {
   },
 
   everamber: { id: 'everamber', name: 'Everamber' },
+
+  artificed_spare_clockwork_component_coppelius: {
+    id: 'artificed_spare_clockwork_component_coppelius',
+    name: 'Artificed Spare Clockwork Component — Coppelius',
+    rarity: 4,
+  },
+  lumidouce_bell: {
+    id: 'lumidouce_bell',
+    name: 'Lumidouce Bell',
+  },
+  mechanical_spur_gear: {
+    id: 'mechanical_spur_gear',
+    name: 'Mechanical Spur Gear',
+    rarity: 2,
+  },
+  artificed_dynamic_gear: {
+    id: 'artificed_dynamic_gear',
+    name: 'Artificed Dynamic Gear',
+    rarity: 3,
+  },
+  meshing_gear: {
+    id: 'meshing_gear',
+    name: 'Meshing Gear',
+    rarity: 1,
+  },
+  rainbow_rose: {
+    id: 'rainbow_rose',
+    name: 'Rainbow Rose',
+  },
+  emperors_resolution: {
+    id: 'emperors_resolution',
+    name: "Emperor's Resolution",
+    rarity: 4,
+  },
+
+  teachings_of_order: {
+    id: 'teachings_of_order',
+    name: 'Teachings of Order',
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+  },
+  guide_to_order: {
+    id: 'guide_to_order',
+    name: 'Guide to Order',
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'teachings_of_order',
+  },
+  philosophies_of_order: {
+    id: 'philosophies_of_order',
+    name: 'Philosophies of Order',
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'teachings_of_order',
+  },
+
+  teachings_of_equity: {
+    id: 'teachings_of_equity',
+    name: 'Teachings of Equity',
+    day: ['monday', 'thursday'],
+    rarity: 2,
+  },
+  guide_to_equity: {
+    id: 'guide_to_equity',
+    name: 'Guide to Equity',
+    day: ['monday', 'thursday'],
+    rarity: 3,
+    parent: 'teachings_of_equity',
+  },
+  philosophies_of_equity: {
+    id: 'philosophies_of_equity',
+    name: 'Philosophies of Equity',
+    day: ['monday', 'thursday'],
+    rarity: 4,
+    parent: 'teachings_of_equity',
+  },
+
+  fragment_of_an_ancient_chord: {
+    id: 'fragment_of_an_ancient_chord',
+    name: 'Fragment of an Ancient Chord',
+    rarity: 2,
+  },
+  chapter_of_an_ancient_chord: {
+    id: 'chapter_of_an_ancient_chord',
+    name: 'Chapter of an Ancient Chord',
+    rarity: 3,
+  },
+  movement_of_an_ancient_chord: {
+    id: 'movement_of_an_ancient_chord',
+    name: 'Movement of an Ancient Chord',
+    rarity: 4,
+  },
+  echo_of_an_ancient_chord: {
+    id: 'echo_of_an_ancient_chord',
+    name: 'Echo of an Ancient Chord',
+    rarity: 5,
+  },
+  transoceanic_pearl: {
+    id: 'transoceanic_pearl',
+    name: 'Transoceanic Pearl',
+    rarity: 1,
+  },
+  transoceanic_chunk: {
+    id: 'transoceanic_chunk',
+    name: 'Transoceanic Chunk',
+    rarity: 2,
+  },
+  xenochromatic_crystal: {
+    id: 'xenochromatic_crystal',
+    name: 'Xenochromatic Crystal',
+    rarity: 3,
+  },
+  dross_of_pure_sacred_dewdrop: {
+    id: 'dross_of_pure_sacred_dewdrop',
+    name: 'Dross of Pure Sacred Dewdrop',
+    rarity: 2,
+  },
+  drop_of_tainted_water: {
+    id: 'drop_of_tainted_water',
+    name: 'Drop of Tainted Water',
+    rarity: 2,
+  },
+  sublimation_of_pure_sacred_dewdrop: {
+    id: 'sublimation_of_pure_sacred_dewdrop',
+    name: 'Sublimation of Pure Sacred Dewdrop',
+    rarity: 3,
+  },
+  scoop_of_tainted_water: {
+    id: 'scoop_of_tainted_water',
+    name: 'Scoop of Tainted Water',
+    rarity: 3,
+  },
+  spring_of_pure_sacred_dewdrop: {
+    id: 'spring_of_pure_sacred_dewdrop',
+    name: 'Spring of Pure Sacred Dewdrop',
+    rarity: 4,
+  },
+  newborn_tainted_hydro_phantasm: {
+    id: 'newborn_tainted_hydro_phantasm',
+    name: 'Newborn Tainted Hydro Phantasm',
+    rarity: 4,
+  },
 };

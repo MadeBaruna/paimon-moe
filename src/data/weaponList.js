@@ -10351,7 +10351,7 @@ export const weaponList = {
     rarity: 4,
     atk: 44,
     secondary: 'ATK%',
-    type: 'bow',
+    type: weapons.bow,
     source: "Duel! The Summoners' Summit! Event",
     ascension: [
       {
@@ -10455,6 +10455,119 @@ export const weaponList = {
           },
         ],
         mora: 45000,
+      },
+    ],
+  },
+  the_first_great_magic: {
+    id: 'the_first_great_magic',
+    name: 'The First Great Magic',
+    rarity: 5,
+    atk: 46,
+    secondary: 'CRIT DMG',
+    type: weapons.bow,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 5,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 9,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 14,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 27,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
       },
     ],
   },
