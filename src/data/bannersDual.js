@@ -653,4 +653,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Gentry of Hermitage 5': [
+    {
+      name: 'Gentry of Hermitage',
+      image: 5,
+      shortName: 'Zhongli',
+      start: '2023-09-05 18:00:00',
+      end: '2023-09-26 14:59:59',
+      color: '#D1A55C',
+      featured: ['tartaglia', 'zhongli'],
+      featuredRare: ['freminet', 'sayu', 'noelle'],
+      version: '4.0',
+    },
+    {
+      name: 'Farewell of Snezhnaya',
+      image: 5,
+      shortName: 'Tartaglia',
+      start: '2023-09-05 18:00:00',
+      end: '2023-09-26 14:59:59',
+      color: '#4ED8F3',
+      featured: ['tartaglia', 'zhongli'],
+      featuredRare: ['freminet', 'sayu', 'noelle'],
+      version: '4.0',
+    },
+  ],
 };

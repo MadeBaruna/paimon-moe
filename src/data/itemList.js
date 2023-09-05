@@ -1249,6 +1249,27 @@ export const itemList = {
     parent: 'teachings_of_equity',
   },
 
+  teachings_of_justice: {
+    id: 'teachings_of_justice',
+    name: 'Teachings of Justice',
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+  },
+  guide_to_justice: {
+    id: 'guide_to_justice',
+    name: 'Guide to Justice',
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'teachings_of_justice',
+  },
+  philosophies_of_justice: {
+    id: 'philosophies_of_justice',
+    name: 'Philosophies of Justice',
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'teachings_of_justice',
+  },
+
   fragment_of_an_ancient_chord: {
     id: 'fragment_of_an_ancient_chord',
     name: 'Fragment of an Ancient Chord',
@@ -1371,5 +1392,10 @@ export const itemList = {
     id: 'alien_life_core',
     name: 'Alien Life Core',
     rarity: 4,
+  },
+
+  romaritime_flower: {
+    id: 'romaritime_flower',
+    name: 'Romaritime Flower',
   },
 };

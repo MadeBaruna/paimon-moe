@@ -371,4 +371,9 @@ export const itemGroup = {
     items: [itemList.teachings_of_equity, itemList.guide_to_equity, itemList.philosophies_of_equity],
     type: 'book',
   },
+  teachings_of_justice: {
+    name: 'Justice',
+    items: [itemList.teachings_of_justice, itemList.guide_to_justice, itemList.philosophies_of_justice],
+    type: 'book',
+  },
 };

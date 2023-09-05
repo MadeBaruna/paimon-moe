@@ -2904,6 +2904,151 @@ export const characters = {
     },
     element: elements.electro,
   },
+  freminet: {
+    id: 'freminet',
+    name: 'Freminet',
+    rarity: 4,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 12071,
+      atk: 255,
+      def: 708,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 2,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 10,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 4,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 20,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 8,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 30,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 12,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 45,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 20,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 60,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.transoceanic_pearl, itemList.transoceanic_chunk, itemList.xenochromatic_crystal],
+      book: [itemList.teachings_of_justice, itemList.guide_to_justice, itemList.philosophies_of_justice],
+      boss: itemList.worldspan_fern,
+    },
+    element: elements.cryo,
+  },
   ganyu: {
     id: 'ganyu',
     name: 'Ganyu',

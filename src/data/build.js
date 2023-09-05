@@ -5114,4 +5114,21 @@ export const builds = {
       },
     },
   },
+  freminet: {
+    roles: {
+      TBD: {
+        recommended: false,
+        weapons: [],
+        artifacts: [],
+        mainStats: {
+          sands: ['TBD'],
+          goblet: ['TBD'],
+          circlet: ['TBD'],
+        },
+        subStats: ['TBD'],
+        talent: ['TBD'],
+        note: 'TBD',
+      },
+    },
+  },
 };
