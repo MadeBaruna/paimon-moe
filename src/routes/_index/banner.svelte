@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    lyney: {
-      name: 'Lyney',
+    zhongli: {
+      name: 'Zhongli',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    yelan: {
-      name: 'Yelan',
+    tartaglia: {
+      name: 'Tartaglia',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300052;
-  const image = 'lyney_yelan.png';
+  const bannerId = 300053;
+  const image = 'zhongli_tartaglia.png';
   const width = 800;
-  const height = 499;
+  const height = 517;
 
   let loading = true;
   let user = '';
