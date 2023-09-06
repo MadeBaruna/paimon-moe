@@ -1173,6 +1173,11 @@ export const itemList = {
 
   everamber: { id: 'everamber', name: 'Everamber' },
 
+	artificed_spare_clockwork_component_coppelia: {
+    id: 'artificed_spare_clockwork_component_coppelia',
+    name: 'Artificed Spare Clockwork Component — Coppelia',
+    rarity: 4,
+  },
   artificed_spare_clockwork_component_coppelius: {
     id: 'artificed_spare_clockwork_component_coppelius',
     name: 'Artificed Spare Clockwork Component — Coppelius',
