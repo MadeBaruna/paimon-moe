@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    zhongli: {
-      name: 'Zhongli',
+    hu_tao: {
+      name: 'Hu Tao',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    tartaglia: {
-      name: 'Tartaglia',
+    neuvillette: {
+      name: 'Neuvillette',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300053;
-  const image = 'zhongli_tartaglia.png';
+  const bannerId = 300054;
+  const image = 'hutao neuvillette.png';
   const width = 800;
-  const height = 517;
+  const height = 424;
 
   let loading = true;
   let user = '';
