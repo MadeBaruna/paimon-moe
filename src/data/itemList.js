@@ -1398,4 +1398,30 @@ export const itemList = {
     id: 'romaritime_flower',
     name: 'Romaritime Flower',
   },
+
+  fontemer_unihorn: {
+    id: 'fontemer_unihorn',
+    name: 'Fontemer Unihorn',
+    rarity: 4,
+  },
+  lumitoile: {
+    id: 'lumitoile',
+    name: 'Lumitoile',
+  },
+
+  old_operatives_pocket_watch: {
+    id: 'old_operatives_pocket_watch',
+    name: "Old Operative's Pocket Watch",
+    rarity: 2,
+  },
+  operatives_standard_pocket_watch: {
+    id: 'operatives_standard_pocket_watch',
+    name: "Operative's Standard Pocket Watch",
+    rarity: 3,
+  },
+  operatives_constancy: {
+    id: 'operatives_constancy',
+    name: "Operative's Constancy",
+    rarity: 4,
+  },
 };

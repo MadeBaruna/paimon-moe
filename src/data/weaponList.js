@@ -11803,4 +11803,343 @@ export const weaponList = {
       },
     ],
   },
+  tome_of_the_eternal_flow: {
+    id: 'tome_of_the_eternal_flow',
+    name: 'Tome of the Eternal Flow',
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.catalyst,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 5,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 18,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 9,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 18,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 14,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 27,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  the_dockhands_assistant: {
+    id: 'the_dockhands_assistant',
+    name: "The Dockhand's Assistant",
+    rarity: 4,
+    atk: 42,
+    secondary: 'HP%',
+    type: weapons.sword,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 6,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 9,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 4,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 18,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  portable_power_saw: {
+    id: 'portable_power_saw',
+    name: 'Portable Power Saw',
+    rarity: 4,
+    atk: 41,
+    secondary: 'HP%',
+    type: weapons.claymore,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 12,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 6,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 12,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 9,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 4,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 18,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };

@@ -6094,6 +6094,151 @@ export const characters = {
     },
     element: elements.dendro,
   },
+  neuvillette: {
+    id: 'neuvillette',
+    name: 'Neuvillette',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 14695,
+      atk: 208,
+      def: 576,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 2,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 10,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 4,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 20,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 8,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 30,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 12,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 45,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 20,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 60,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.transoceanic_pearl, itemList.transoceanic_chunk, itemList.xenochromatic_crystal],
+      book: [itemList.teachings_of_equity, itemList.guide_to_equity, itemList.philosophies_of_equity],
+      boss: itemList.everamber,
+    },
+    element: elements.hydro,
+  },
   nilou: {
     id: 'nilou',
     name: 'Nilou',
