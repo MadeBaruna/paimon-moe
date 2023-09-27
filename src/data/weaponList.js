@@ -12142,4 +12142,452 @@ export const weaponList = {
       },
     ],
   },
+  ballad_of_the_boundless_blue: {
+    id: 'ballad_of_the_boundless_blue',
+    name: 'Ballad of the Boundless Blue',
+    rarity: 4,
+    atk: '44',
+    secondary: 'er',
+    type: 'catalyst',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_milk_tooth,
+            amount: 3,
+          },
+          {
+            item: itemList.fragile_bone_shard,
+            amount: 3,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_cracked_tooth,
+            amount: 3,
+          },
+          {
+            item: itemList.fragile_bone_shard,
+            amount: 12,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_cracked_tooth,
+            amount: 6,
+          },
+          {
+            item: itemList.sturdy_bone_shard,
+            amount: 6,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_broken_fang,
+            amount: 3,
+          },
+          {
+            item: itemList.sturdy_bone_shard,
+            amount: 12,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_broken_fang,
+            amount: 6,
+          },
+          {
+            item: itemList.fossilized_bone_shard,
+            amount: 9,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_nostalgia,
+            amount: 4,
+          },
+          {
+            item: itemList.fossilized_bone_shard,
+            amount: 18,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  cashflow_supervision: {
+    id: 'cashflow_supervision',
+    name: 'Cashflow Supervision',
+    rarity: 5,
+    atk: '48',
+    secondary: 'critRate',
+    type: 'catalyst',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 5,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 9,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 9,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 9,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 14,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 27,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  prospectors_drill: {
+    id: 'prospectors_drill',
+    name: "Prospector's Drill",
+    rarity: 4,
+    atk: '44',
+    secondary: 'atkPercent',
+    type: 'polearm',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 6,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 9,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 4,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 18,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  range_gauge: {
+    id: 'range_gauge',
+    name: 'Range Gauge',
+    rarity: 4,
+    atk: '44',
+    secondary: 'atkPercent',
+    type: 'bow',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 6,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 9,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 4,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 18,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
