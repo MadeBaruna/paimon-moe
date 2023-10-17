@@ -11,6 +11,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/21853732',
       showOnHome: true,
     },
+    {
+      name: 'Overflowing Mastery',
+      pos: '0% 50%',
+      image: 'overflowing_mastery.jpg',
+      start: '2023-10-30 04:00:00',
+      end: '2023-11-06 03:59:59',
+      color: '#f5debc',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/22272349',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -44,6 +55,17 @@ export const eventsData = [
       end: '2023-10-16 03:59:59',
       color: '#ffa2b5',
       url: 'https://www.hoyolab.com/article/21872779',
+      showOnHome: true,
+    },
+    {
+      name: 'The Peaks and Troughs of Life',
+      pos: '0% 40%',
+      zoom: '100%',
+      image: 'The Peaks and Troughs of Life tmp.png',
+      start: '2023-10-23 10:00:00',
+      end: '2023-11-06 03:59:59',
+      color: '#a6ceb3',
+      url: 'https://www.hoyolab.com/article/22272349',
       showOnHome: true,
     },
   ],
@@ -141,6 +163,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Tempestuous Destiny - Wriothesley Banner',
+      pos: '30% 10%',
+      zoom: '200%',
+      image: 'Tempestuous Destiny 1.jpg',
+      start: '2023-10-17 18:00:00',
+      end: '2023-11-17 14:59:59',
+      color: '#b3d7f1',
+      url: 'https://www.hoyolab.com/article/22272212',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -178,6 +211,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Ballad in Goblets - Venti Banner',
+      pos: '30% 15%',
+      zoom: '200%',
+      image: 'Ballad in Goblets 5.jpg',
+      start: '2023-10-17 18:00:00',
+      end: '2023-11-17 14:59:59',
+      color: '#96f6de',
+      url: 'https://www.hoyolab.com/article/22272212',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -214,6 +258,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/21853619',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '30% 25%',
+      zoom: '150%',
+      image: 'Epitome Invocation 54.jpg',
+      start: '2023-10-17 18:00:00',
+      end: '2023-11-17 14:59:59',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/22272212',
+      showOnHome: true,
     },
   ],
   [
@@ -267,6 +322,36 @@ export const eventsData = [
       description:
         'When a character recovers or loses HP, that character gains 40% increased All Elemental and Physical DMG Bonus for 3s.',
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-10-01 04:00:00',
+      end: '2023-10-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When the character's HP increases or decreases, their Normal Attack and Charged Attack DMG will be increased by 16% for 6s. This effect can be triggered once every 0.5s. Max 3 stacks.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-10-16 04:00:00',
+      end: '2023-11-01 04:00:00',
+      color: '#4299E1',
+      description:
+        "After the character's Charged Attack hits an opponent, the character will receive a 20% Elemental or Physical DMG Bonus, corresponding to the Elemental or Physical DMG type of the Charged Attack, for 5s. This effect can be triggered once every 0.5s. Max 3 stacks. Charged Attack DMG bonuses from different Elemental types or Physical DMG are counted independently.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2023-11-01 04:00:00',
+      end: '2023-11-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "After the active character's Normal or Charged Attack hits an opponent, that character's Normal and Charged Attack CRIT Rate is increased by 6% for 5s. This effect can be triggered once every 0.1s. Max 5 stacks. Each stack's duration is counted independently. This effect will be cleared if the character leaves the field.",
+    },
   ],
   [
     {
@@ -288,6 +373,16 @@ export const eventsData = [
       color: '#B6A1EA',
       image: 'paimon_bargain.png',
       description: 'Now selling: Ningguang, Xingqiu, and Blackcliff Weapons.',
+    },
+    {
+      name: "Paimon's Bargain - Razor, Amber, and Royal",
+      pos: '0% 50%',
+      zoom: '150%',
+      start: '2023-10-01 04:00:00',
+      end: '2023-11-01 04:00:00',
+      color: '#B6A1EA',
+      image: 'paimon_bargain.png',
+      description: 'Now selling: Razor, Amber, and Royal Weapons.',
     },
   ],
   [
