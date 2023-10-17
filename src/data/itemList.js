@@ -1424,4 +1424,14 @@ export const itemList = {
     name: "Operative's Constancy",
     rarity: 4,
   },
+
+  subdetection_unit: {
+    id: 'subdetection_unit',
+    name: 'Subdetection Unit',
+  },
+  tourbillon_device: {
+    id: 'tourbillon_device',
+    name: '"Tourbillon Device"',
+    rarity: 4,
+  },
 };

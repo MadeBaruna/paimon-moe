@@ -9168,6 +9168,151 @@ export const characters = {
     },
     element: elements.anemo,
   },
+  wriothesley: {
+    id: 'wriothesley',
+    name: 'Wriothesley',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 13593,
+      atk: 311,
+      def: 763,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 2,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 10,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 4,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 20,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 8,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 30,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 12,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 45,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 20,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 60,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.meshing_gear, itemList.mechanical_spur_gear, itemList.artificed_dynamic_gear],
+      book: [itemList.teachings_of_order, itemList.guide_to_order, itemList.philosophies_of_order],
+      boss: itemList.primordial_greenbloom,
+    },
+    element: elements.cryo,
+  },
   xiangling: {
     id: 'xiangling',
     name: 'Xiangling',
