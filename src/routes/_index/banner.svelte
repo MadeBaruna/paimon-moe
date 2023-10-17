@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    hu_tao: {
-      name: 'Hu Tao',
+    wriothesley: {
+      name: 'Wriothesley',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    neuvillette: {
-      name: 'Neuvillette',
+    venti: {
+      name: 'Venti',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300054;
-  const image = 'hutao neuvillette.png';
+  const bannerId = 300055;
+  const image = 'wriothesley venti.png';
   const width = 800;
-  const height = 424;
+  const height = 518;
 
   let loading = true;
   let user = '';
