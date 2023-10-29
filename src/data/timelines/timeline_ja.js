@@ -94,7 +94,7 @@ export const eventsData = [
       showOnHome: true,
     },
     {
-      name: 'Ley Line Overflow',
+      name: 'ゆえなく煙る霧雨のように',
       pos: '0% 40%',
       zoom: '200%',
       image: 'leyline_overflow.jpg',
@@ -105,7 +105,7 @@ export const eventsData = [
       showOnHome: true,
     },
     {
-      name: 'Radiant Harvest',
+      name: '光と彩を集めて',
       pos: '0% 20%',
       zoom: '200%',
       image: 'Radiant Harvest.jpg',
