@@ -10,27 +10,11 @@
   import SidebarMoreItem from './SidebarMoreItem.svelte';
 
   import { showSidebar } from '../../stores/sidebar';
+  import { languages } from '../../data/languages';
 
   export let segment;
   export let mobile = false;
 
-  const languages = [
-    { id: 'zh', label: '中文(简体)' },
-    { id: 'tw', label: '中文(繁體)' },
-    { id: 'en', label: 'English' },
-    { id: 'fr', label: 'Français' },
-    { id: 'de', label: 'Deutsch' },
-    { id: 'ja', label: '日本語' },
-    { id: 'ko', label: '한국어' },
-    { id: 'th', label: 'ภาษาไทย' },
-    { id: 'vi', label: 'Tiếng Việt' },
-    { id: 'id', label: 'Indonesia' },
-    { id: 'es', label: 'Español' },
-    { id: 'pt', label: 'Português' },
-    { id: 'ru', label: 'Русский' },
-    { id: 'tr', label: 'Türkçe' },
-    { id: 'it', label: 'Italiano' },
-  ];
   $: currentLocale =
     $locale !== null ? languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' } : '';
   $: locales = languages.filter((e) => e.id !== currentLocale.id);
@@ -152,7 +136,7 @@
     style="width: 248px; background: linear-gradient(180deg, rgba(32, 36, 66, 0) 0%, rgba(32, 36, 66, 1) 10%);"
   >
     <div
-      class="locale-selector flex items-center justify-center mb-4 mt-0 py-2 cursor-pointer 
+      class="locale-selector flex items-center justify-center mb-4 mt-0 py-2 cursor-pointer
     rounded-xl hover:bg-black hover:bg-opacity-50 relative w-40"
     >
       <img class="w-4 h-4 rounded-full mr-2" alt={currentLocale.label} src="/images/locales/{currentLocale.id}.svg" />

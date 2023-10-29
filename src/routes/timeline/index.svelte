@@ -1,5 +1,5 @@
 <script>
-  import { t } from 'svelte-i18n';
+  import { locale, t } from 'svelte-i18n';
 
   import { getContext, onMount, tick } from 'svelte';
   import dayjs from 'dayjs';
@@ -9,7 +9,7 @@
   dayjs.extend(timezone);
 
   import { getTimeDifference, getTimeDifferenceAsia, getTimeOffset, server } from '../../stores/server';
-  import { eventsData } from '../../data/timeline';
+  import { eventsData } from '../../data/timelines/timeline';
 
   import Checkbox from '../../components/Checkbox.svelte';
   import EventItem from './_item.svelte';
@@ -17,6 +17,7 @@
   import { getAccountPrefix } from '../../stores/account';
   import { readSave } from '../../stores/saveManager';
   import Ad from '../../components/Ad.svelte';
+  import { languages } from '../../data/languages';
 
   const { open: openModal } = getContext('simple-modal');
 
@@ -82,8 +83,13 @@
     };
   }
 
+  $: currentLocale =
+    $locale !== null ? languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' } : '';
+  $: locales = languages.filter((e) => e.id !== currentLocale.id);
+
   function processEvent() {
-    events = eventsData.map((e, i) => {
+    const eventdata = languages.find(language => language.id == currentLocale.id).eventdata;
+    events = eventdata.map((e, i) => {
       if (Array.isArray(e)) {
         return e.map((item) => convertToDate(item, i));
       }
@@ -129,6 +135,7 @@
     const dayTotal = Math.abs(Math.ceil(firstDay.diff(lastEventTime, 'day', true))) + 2 * padding;
 
     months = [];
+    dayjs.locale(currentLocale.id);
     for (let i = 0; i < dayTotal; i++) {
       const month = firstDay.add(i, 'day').format('MMMM');
       if (months[month] === undefined) {
@@ -269,10 +276,10 @@
             style={`width: 1px; height: calc(100% - ${eventHeight}px); position: absolute; 
           left: ${i * dayWidth}px; top: ${eventHeight}px;`}
           >
-            <span class="absolute top-0 text-gray-200 text-center pb-1 " style="width: 20px; left: -10px;">
+            <span class="absolute top-0 text-gray-200 text-center pb-1" style="width: 20px; left: -10px;">
               {date[0]}
             </span>
-            <span class="absolute top-0 text-gray-600 text-center pb-1 " style="width: 20px; left: -10px; top: -24px;">
+            <span class="absolute top-0 text-gray-600 text-center pb-1" style="width: 20px; left: -10px; top: -24px;">
               {date[1]}
             </span>
           </div>

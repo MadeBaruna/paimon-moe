@@ -1,0 +1,52 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Next.js: debug server-side",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "pnpm run dev"
+      },
+      {
+        "name": "Next.js: debug client-side",
+        "type": "firefox",
+        "request": "launch",
+        "url": "http://localhost:3000",
+        "profile": "dev",
+        "keepProfileChanges": true,
+        "pathMappings": [
+          {
+            "url": "http://localhost:3000/src/routes",
+            "path": "${workspaceFolder}/src/routes"
+          },
+          {
+            "url": "http://localhost:3000/src/routes",
+            "path": "${workspaceFolder}/src/routes"
+          },
+          {
+            "url": "http://localhost:3000/src/routes",
+            "path": "${workspaceFolder}/src/routes"
+          },
+          {
+            "url": "webpack://_n_e",
+            "path": "${workspaceFolder}"
+          },
+          {
+            "url": "webpack://_n_e/src/app/accounts",
+            "path": "${workspaceFolder}/src/app"
+          }
+        ]
+      },
+      {
+        "name": "Next.js: debug full stack",
+        "type": "node-terminal",
+        "request": "launch",
+        "command": "pnpm run dev",
+        "serverReadyAction": {
+          "pattern": "started server on .+, url: (https?://.+)",
+          "uriFormat": "%s",
+          "action": "debugWithChrome"
+        }
+      }
+    ]
+}
