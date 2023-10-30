@@ -3,6 +3,6 @@
   "editor.detectIndentation": false,
   "prettier.disableLanguages": [],
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }

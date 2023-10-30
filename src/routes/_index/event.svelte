@@ -1,5 +1,5 @@
 <script>
-  import { t } from 'svelte-i18n';
+  import { locale, t } from 'svelte-i18n';
   import { createEventDispatcher, onMount, tick } from 'svelte';
   import { mdiChevronRight } from '@mdi/js';
   import dayjs from 'dayjs';
@@ -7,11 +7,11 @@
   dayjs.extend(duration);
 
   import Icon from '../../components/Icon.svelte';
-  import { eventsData } from '../../data/timeline';
+  import { eventsData } from '../../data/timelines/timeline';
   import { getTimeDifference, getTimeDifferenceAsia, server } from '../../stores/server';
   import { getAccountPrefix } from '../../stores/account';
-  import { readSave } from '../../stores/saveManager';
-
+  import { getLocalSaveJson, readSave } from '../../stores/saveManager';
+  import { languages } from '../../data/languages';
   const dispatch = createEventDispatcher();
 
   let now;
@@ -48,15 +48,17 @@
     }
   }
 
+  $: currentLocale =
+    $locale !== null ? languages.find((e) => e.id === $locale.substring(0, 2)) || { id: 'en', label: 'English' } : '';
+  $: locales = languages.filter((e) => e.id !== currentLocale.id);
+
   function parseEvents() {
-    for (const event of eventsData) {
-      if (Array.isArray(event)) {
-        for (const ev of event) {
-          checkEvent(ev);
-        }
-      } else {
-        checkEvent(event);
+    if (Array.isArray(eventsData)) {
+      for (const ev of eventsData) {
+        checkEvent(ev);
       }
+    } else {
+      checkEvent(event);
     }
 
     current.sort((a, b) => (dayjs(a.end).isAfter(dayjs(b.end)) ? 1 : -1));
@@ -109,7 +111,7 @@
   {/if}
   <a
     href="/timeline"
-    class="flex justify-end items-center self-end lg:self-start text-white mt-4 
+    class="flex justify-end items-center self-end lg:self-start text-white mt-4
     bg-background-secondary rounded-xl py-2 px-4 hover:bg-background transition-colors duration-100"
   >
     <img src="/images/timeline.png" alt="wish" class="mr-2 h-6 w-6" />
