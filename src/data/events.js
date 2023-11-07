@@ -1456,7 +1456,7 @@ export const events = [
     name: 'The Peaks and Troughs of Life',
     pos: '0% 40%',
     zoom: '100%',
-    image: 'The Peaks and Troughs of Life tmp.png',
+    image: 'The Peaks and Troughs of Life.png',
     start: '2023-10-23 10:00:00',
     end: '2023-11-06 03:59:59',
     color: '#a6ceb3',
