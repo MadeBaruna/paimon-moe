@@ -1434,4 +1434,20 @@ export const itemList = {
     name: '"Tourbillon Device"',
     rarity: 4,
   },
+
+  beryl_conch: {
+    id: 'beryl_conch',
+    name: 'Beryl Conch',
+  },
+  lakelight_lily: {
+    id: 'lakelight_lily',
+    name: 'Lakelight Lily',
+  },
+  water_that_failed_to_transcend: {
+    id: 'water_that_failed_to_transcend',
+    name: 'Water That Failed To Transcend',
+    rarity: 4,
+  },
+  lightless_silk_string: { id: 'lightless_silk_string', name: 'Lightless Silk String' },
+  lightless_mass: { id: 'lightless_mass', name: 'Lightless Mass' },
 };

@@ -1454,6 +1454,151 @@ export const characters = {
     },
     element: elements.hydro,
   },
+  charlotte: {
+    id: 'charlotte',
+    name: 'Charlotte',
+    rarity: 4,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 10766,
+      atk: 173,
+      def: 546,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 2,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 10,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 4,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 20,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 8,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 30,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 12,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 45,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.tourbillon_device,
+            amount: 20,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 60,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.meshing_gear, itemList.mechanical_spur_gear, itemList.artificed_dynamic_gear],
+      book: [itemList.teachings_of_justice, itemList.guide_to_justice, itemList.philosophies_of_justice],
+      boss: itemList.lightless_silk_string,
+    },
+    element: elements.cryo,
+  },
   chongyun: {
     id: 'chongyun',
     name: 'Chongyun',
@@ -3048,6 +3193,151 @@ export const characters = {
       boss: itemList.worldspan_fern,
     },
     element: elements.cryo,
+  },
+  furina: {
+    id: 'furina',
+    name: 'Furina',
+    rarity: 5,
+    weapon: weapons.sword,
+    stats: {
+      hp: 15307,
+      atk: 244,
+      def: 696,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 3,
+          },
+          {
+            item: itemList.whopperflower_nectar,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 2,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 10,
+          },
+          {
+            item: itemList.whopperflower_nectar,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 4,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 20,
+          },
+          {
+            item: itemList.shimmering_nectar,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 8,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 30,
+          },
+          {
+            item: itemList.shimmering_nectar,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 12,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 45,
+          },
+          {
+            item: itemList.energy_nectar,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 20,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 60,
+          },
+          {
+            item: itemList.energy_nectar,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
+      book: [itemList.teachings_of_justice, itemList.guide_to_justice, itemList.philosophies_of_justice],
+      boss: itemList.lightless_mass,
+    },
+    element: elements.hydro,
   },
   ganyu: {
     id: 'ganyu',
