@@ -12146,9 +12146,9 @@ export const weaponList = {
     id: 'ballad_of_the_boundless_blue',
     name: 'Ballad of the Boundless Blue',
     rarity: 4,
-    atk: '44',
-    secondary: 'er',
-    type: 'catalyst',
+    atk: 44,
+    secondary: 'Energy Recharge',
+    type: weapons.catalyst,
     ascension: [
       {
         items: [
@@ -12258,9 +12258,9 @@ export const weaponList = {
     id: 'cashflow_supervision',
     name: 'Cashflow Supervision',
     rarity: 5,
-    atk: '48',
-    secondary: 'critRate',
-    type: 'catalyst',
+    atk: 48,
+    secondary: 'CRIT RATE',
+    type: weapons.catalyst,
     ascension: [
       {
         items: [
@@ -12370,9 +12370,9 @@ export const weaponList = {
     id: 'prospectors_drill',
     name: "Prospector's Drill",
     rarity: 4,
-    atk: '44',
-    secondary: 'atkPercent',
-    type: 'polearm',
+    atk: 44,
+    secondary: 'ATK%',
+    type: weapons.polearm,
     ascension: [
       {
         items: [
@@ -12482,9 +12482,9 @@ export const weaponList = {
     id: 'range_gauge',
     name: 'Range Gauge',
     rarity: 4,
-    atk: '44',
-    secondary: 'atkPercent',
-    type: 'bow',
+    atk: 44,
+    secondary: 'ATK%',
+    type: weapons.bow,
     ascension: [
       {
         items: [
@@ -12587,6 +12587,119 @@ export const weaponList = {
           },
         ],
         mora: 45000,
+      },
+    ],
+  },
+  splendor_of_tranquil_waters: {
+    id: 'splendor_of_tranquil_waters',
+    name: 'Splendor of Tranquil Waters',
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.sword,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 5,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 9,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 14,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 27,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
       },
     ],
   },
