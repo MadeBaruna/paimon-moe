@@ -1,6 +1,6 @@
 <script context="module">
   export async function load({ fetch }) {
-    const promoted = ['venti'];
+    const promoted = ['baizhu', 'collei', 'beidou'];
     const builds = {};
     for (const p of promoted) {
       const response = await fetch(`/characters/build/${p}.json`);
@@ -29,7 +29,7 @@
   import Item from './_index/item.svelte';
   import Calculator from './_index/calculator.svelte';
   import Discord from './_index/discord.svelte';
-  import Twitter from './_index/twitter.svelte';
+  // import Twitter from './_index/twitter.svelte';
   import Achievement from './_index/achievement.svelte';
   import Furnishing from './_index/furnishing.svelte';
   import Build from './_index/build.svelte';
