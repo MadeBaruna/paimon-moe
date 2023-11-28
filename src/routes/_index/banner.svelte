@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    baizhu: {
-      name: 'Baizhu',
+    kamisato_ayato: {
+      name: 'Kamisato Ayato',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    furina: {
-      name: 'Furina',
+    cyno: {
+      name: 'Cyno',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300056;
-  const image = 'baizhu furina.png';
+  const bannerId = 300057;
+  const image = 'ayato cyno.png';
   const width = 800;
-  const height = 490;
+  const height = 467;
 
   let loading = true;
   let user = '';
