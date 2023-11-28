@@ -753,4 +753,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Twilight Arbiter 3': [
+    {
+      name: 'Twilight Arbiter',
+      image: 3,
+      shortName: 'Cyno',
+      start: '2023-11-28 18:00:00',
+      end: '2023-12-19 14:59:59',
+      color: '#d8b8f7',
+      featured: ['cyno', 'kamisato_ayato'],
+      featuredRare: ['kuki_shinobu', 'xiangling', 'kirara'],
+      version: '4.2',
+    },
+    {
+      name: 'Azure Excursion',
+      image: 3,
+      shortName: 'Ayato',
+      start: '2023-11-28 18:00:00',
+      end: '2023-12-19 14:59:59',
+      color: '#90bce9',
+      featured: ['cyno', 'kamisato_ayato'],
+      featuredRare: ['kuki_shinobu', 'xiangling', 'kirara'],
+      version: '4.2',
+    },
+  ],
 };
