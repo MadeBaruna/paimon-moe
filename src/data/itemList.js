@@ -1450,4 +1450,9 @@ export const itemList = {
   },
   lightless_silk_string: { id: 'lightless_silk_string', name: 'Lightless Silk String' },
   lightless_mass: { id: 'lightless_mass', name: 'Lightless Mass' },
+
+  spring_of_the_first_dewdrop: {
+    id: 'spring_of_the_first_dewdrop',
+    name: 'Spring of the First Dewdrop',
+  },
 };

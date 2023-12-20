@@ -6384,6 +6384,151 @@ export const characters = {
     },
     element: elements.dendro,
   },
+  navia: {
+    id: 'navia',
+    name: 'Navia',
+    rarity: 5,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 12650,
+      atk: 352,
+      def: 793,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.spring_of_the_first_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 2,
+          },
+          {
+            item: itemList.spring_of_the_first_dewdrop,
+            amount: 10,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 4,
+          },
+          {
+            item: itemList.spring_of_the_first_dewdrop,
+            amount: 20,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 8,
+          },
+          {
+            item: itemList.spring_of_the_first_dewdrop,
+            amount: 30,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 12,
+          },
+          {
+            item: itemList.spring_of_the_first_dewdrop,
+            amount: 45,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 20,
+          },
+          {
+            item: itemList.spring_of_the_first_dewdrop,
+            amount: 60,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.transoceanic_pearl, itemList.transoceanic_chunk, itemList.xenochromatic_crystal],
+      book: [itemList.teachings_of_equity, itemList.guide_to_equity, itemList.philosophies_of_equity],
+      boss: itemList.lightless_silk_string,
+    },
+    element: elements.geo,
+  },
   neuvillette: {
     id: 'neuvillette',
     name: 'Neuvillette',
