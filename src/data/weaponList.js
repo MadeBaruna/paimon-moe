@@ -12703,4 +12703,229 @@ export const weaponList = {
       },
     ],
   },
+  verdict: {
+    id: 'verdict',
+    name: 'Verdict',
+    rarity: 5,
+    atk: 48,
+    secondary: 'CRIT Rate',
+    type: weapons.claymore,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 5,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 18,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 9,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 18,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 14,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 27,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  ultimate_overlords_mega_magic_sword: {
+    id: 'ultimate_overlords_mega_magic_sword',
+    name: '"Ultimate Overlord\'s Mega Magic Sword"',
+    rarity: 4,
+    atk: 44,
+    secondary: 'Energy Recharge',
+    type: weapons.claymore,
+    source: 'Event',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 6,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 9,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 4,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 18,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
