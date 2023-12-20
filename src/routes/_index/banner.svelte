@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    kamisato_ayato: {
-      name: 'Kamisato Ayato',
+    kamisato_ayaka: {
+      name: 'Kamisato Ayaka',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    cyno: {
-      name: 'Cyno',
+    navia: {
+      name: 'Navia',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300057;
-  const image = 'ayato cyno.png';
+  const bannerId = 300058;
+  const image = 'navia ayaka.png';
   const width = 800;
-  const height = 467;
+  const height = 576;
 
   let loading = true;
   let user = '';
