@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    wanderer: {
-      name: 'Wanderer',
+    kamisato_ayaka: {
+      name: 'Kamisato Ayaka',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    sangonomiya_kokomi: {
-      name: 'Sangonomiya Kokomi',
+    navia: {
+      name: 'Navia',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300051;
-  const image = 'wanderer_kokomi.png';
+  const bannerId = 300058;
+  const image = 'navia ayaka.png';
   const width = 800;
-  const height = 409;
+  const height = 576;
 
   let loading = true;
   let user = '';

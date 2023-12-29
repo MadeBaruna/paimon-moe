@@ -233,9 +233,12 @@
 
   onMount(async () => {
     const buildHash = window.location.hash.substring(1);
-    const foundBuild = builds.findIndex((e) => e.name.replace(/[ /]/g, '_').toLowerCase() === buildHash);
-    if (foundBuild > -1) {
-      currentBuild = foundBuild;
+
+    if (builds) {
+      const foundBuild = builds.findIndex((e) => e.name.replace(/[ /]/g, '_').toLowerCase() === buildHash);
+      if (foundBuild > -1) {
+        currentBuild = foundBuild;
+      }
     }
 
     await getConstellationCount();

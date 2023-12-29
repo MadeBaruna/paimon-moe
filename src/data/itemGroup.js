@@ -361,4 +361,19 @@ export const itemGroup = {
     name: 'Damaged Prism',
     items: [itemList.damaged_prism, itemList.turbid_prism, itemList.radiant_prism],
   },
+  teachings_of_order: {
+    name: 'Order',
+    items: [itemList.teachings_of_order, itemList.guide_to_order, itemList.philosophies_of_order],
+    type: 'book',
+  },
+  teachings_of_equity: {
+    name: 'Equity',
+    items: [itemList.teachings_of_equity, itemList.guide_to_equity, itemList.philosophies_of_equity],
+    type: 'book',
+  },
+  teachings_of_justice: {
+    name: 'Justice',
+    items: [itemList.teachings_of_justice, itemList.guide_to_justice, itemList.philosophies_of_justice],
+    type: 'book',
+  },
 };

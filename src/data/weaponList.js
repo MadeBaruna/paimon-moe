@@ -10351,7 +10351,7 @@ export const weaponList = {
     rarity: 4,
     atk: 44,
     secondary: 'ATK%',
-    type: 'bow',
+    type: weapons.bow,
     source: "Duel! The Summoners' Summit! Event",
     ascension: [
       {
@@ -10451,6 +10451,2476 @@ export const weaponList = {
           },
           {
             item: itemList.rich_red_brocade,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  the_first_great_magic: {
+    id: 'the_first_great_magic',
+    name: 'The First Great Magic',
+    rarity: 5,
+    atk: 46,
+    secondary: 'CRIT DMG',
+    type: weapons.bow,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 5,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 9,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 14,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 27,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  ballad_of_the_fjords: {
+    id: 'ballad_of_the_fjords',
+    name: 'Ballad of the Fjords',
+    rarity: 4,
+    atk: 42,
+    secondary: 'CRIT Rate',
+    type: weapons.polearm,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.a_flower_yet_to_bloom,
+            amount: 3,
+          },
+          {
+            item: itemList.whopperflower_nectar,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.a_flower_yet_to_bloom,
+            amount: 12,
+          },
+          {
+            item: itemList.whopperflower_nectar,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.treasured_flower,
+            amount: 6,
+          },
+          {
+            item: itemList.shimmering_nectar,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.treasured_flower,
+            amount: 12,
+          },
+          {
+            item: itemList.shimmering_nectar,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.wanderers_blooming_flower,
+            amount: 9,
+          },
+          {
+            item: itemList.energy_nectar,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 4,
+          },
+          {
+            item: itemList.wanderers_blooming_flower,
+            amount: 18,
+          },
+          {
+            item: itemList.energy_nectar,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  finale_of_the_deep: {
+    id: 'finale_of_the_deep',
+    name: 'Finale of the Deep',
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK%',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 3,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 6,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 9,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 4,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 18,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  fleuve_cendre_ferryman: {
+    id: 'fleuve_cendre_ferryman',
+    name: 'Fleuve Cendre Ferryman',
+    rarity: 4,
+    atk: 42,
+    secondary: 'ER',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 6,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 9,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 4,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 18,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  flowing_purity: {
+    id: 'flowing_purity',
+    name: 'Flowing Purity',
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK%',
+    type: weapons.catalyst,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 6,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 9,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 4,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 18,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  rightful_reward: {
+    id: 'rightful_reward',
+    name: 'Rightful Reward',
+    rarity: 4,
+    atk: 44,
+    secondary: 'HP%',
+    type: weapons.polearm,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 12,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 6,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 12,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 9,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 4,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 18,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  scion_of_the_blazing_sun: {
+    id: 'scion_of_the_blazing_sun',
+    name: 'Scion of the Blazing Sun',
+    rarity: 4,
+    atk: 44,
+    secondary: 'CRIT Rate',
+    type: weapons.bow,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.echo_of_scorching_might,
+            amount: 3,
+          },
+          {
+            item: itemList.a_flower_yet_to_bloom,
+            amount: 3,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.remnant_glow_of_scorching_might,
+            amount: 3,
+          },
+          {
+            item: itemList.a_flower_yet_to_bloom,
+            amount: 12,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.remnant_glow_of_scorching_might,
+            amount: 6,
+          },
+          {
+            item: itemList.treasured_flower,
+            amount: 6,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_scorching_might,
+            amount: 3,
+          },
+          {
+            item: itemList.treasured_flower,
+            amount: 12,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_scorching_might,
+            amount: 6,
+          },
+          {
+            item: itemList.wanderers_blooming_flower,
+            amount: 9,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.olden_days_of_scorching_might,
+            amount: 4,
+          },
+          {
+            item: itemList.wanderers_blooming_flower,
+            amount: 18,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  song_of_stillness: {
+    id: 'song_of_stillness',
+    name: 'Song of Stillness',
+    rarity: 4,
+    atk: 42,
+    secondary: 'ATK%',
+    type: weapons.bow,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 3,
+          },
+          {
+            item: itemList.firm_arrowhead,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.firm_arrowhead,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 6,
+          },
+          {
+            item: itemList.sharp_arrowhead,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.sharp_arrowhead,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 9,
+          },
+          {
+            item: itemList.weathered_arrowhead,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 4,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 18,
+          },
+          {
+            item: itemList.weathered_arrowhead,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  talking_stick: {
+    id: 'talking_stick',
+    name: 'Talking Stick',
+    rarity: 4,
+    atk: 44,
+    secondary: 'CRIT Rate',
+    type: weapons.claymore,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_reminiscence,
+            amount: 3,
+          },
+          {
+            item: itemList.desiccated_shell,
+            amount: 3,
+          },
+          {
+            item: itemList.slime_condensate,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 3,
+          },
+          {
+            item: itemList.desiccated_shell,
+            amount: 12,
+          },
+          {
+            item: itemList.slime_condensate,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 6,
+          },
+          {
+            item: itemList.sturdy_shell,
+            amount: 6,
+          },
+          {
+            item: itemList.slime_secretions,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 3,
+          },
+          {
+            item: itemList.sturdy_shell,
+            amount: 12,
+          },
+          {
+            item: itemList.slime_secretions,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 6,
+          },
+          {
+            item: itemList.marked_shell,
+            amount: 9,
+          },
+          {
+            item: itemList.slime_concentrate,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_truth,
+            amount: 4,
+          },
+          {
+            item: itemList.marked_shell,
+            amount: 18,
+          },
+          {
+            item: itemList.slime_concentrate,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  tidal_shadow: {
+    id: 'tidal_shadow',
+    name: 'Tidal Shadow',
+    rarity: 4,
+    atk: 42,
+    secondary: 'ATK%',
+    type: weapons.claymore,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 12,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 6,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 12,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 9,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 4,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 18,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  'wolf-fang': {
+    id: 'wolf-fang',
+    name: 'Wolf-Fang',
+    rarity: 4,
+    atk: 42,
+    secondary: 'CRIT Rate',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.tile_of_decarabians_tower,
+            amount: 3,
+          },
+          {
+            item: itemList.chaos_device,
+            amount: 3,
+          },
+          {
+            item: itemList.damaged_mask,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.debris_of_decarabians_city,
+            amount: 3,
+          },
+          {
+            item: itemList.chaos_device,
+            amount: 12,
+          },
+          {
+            item: itemList.damaged_mask,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.debris_of_decarabians_city,
+            amount: 6,
+          },
+          {
+            item: itemList.chaos_circuit,
+            amount: 6,
+          },
+          {
+            item: itemList.stained_mask,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.fragment_of_decarabians_epic,
+            amount: 3,
+          },
+          {
+            item: itemList.chaos_circuit,
+            amount: 12,
+          },
+          {
+            item: itemList.stained_mask,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.fragment_of_decarabians_epic,
+            amount: 6,
+          },
+          {
+            item: itemList.chaos_core,
+            amount: 9,
+          },
+          {
+            item: itemList.ominous_mask,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.scattered_piece_of_decarabians_dream,
+            amount: 4,
+          },
+          {
+            item: itemList.chaos_core,
+            amount: 18,
+          },
+          {
+            item: itemList.ominous_mask,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  sacrificial_jade: {
+    id: 'sacrificial_jade',
+    name: 'Sacrificial Jade',
+    rarity: 4,
+    atk: 41,
+    secondary: 'CRIT Rate',
+    type: weapons.catalyst,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.luminous_sands_from_guyun,
+            amount: 3,
+          },
+          {
+            item: itemList.mist_grass_pollen,
+            amount: 3,
+          },
+          {
+            item: itemList.divining_scroll,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.lustrous_stone_from_guyun,
+            amount: 3,
+          },
+          {
+            item: itemList.mist_grass_pollen,
+            amount: 12,
+          },
+          {
+            item: itemList.divining_scroll,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.lustrous_stone_from_guyun,
+            amount: 6,
+          },
+          {
+            item: itemList.mist_grass,
+            amount: 6,
+          },
+          {
+            item: itemList.sealed_scroll,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.relic_from_guyun,
+            amount: 3,
+          },
+          {
+            item: itemList.mist_grass,
+            amount: 12,
+          },
+          {
+            item: itemList.sealed_scroll,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.relic_from_guyun,
+            amount: 6,
+          },
+          {
+            item: itemList.mist_grass_wick,
+            amount: 9,
+          },
+          {
+            item: itemList.forbidden_curse_scroll,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.divine_body_from_guyun,
+            amount: 4,
+          },
+          {
+            item: itemList.mist_grass_wick,
+            amount: 18,
+          },
+          {
+            item: itemList.forbidden_curse_scroll,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  tome_of_the_eternal_flow: {
+    id: 'tome_of_the_eternal_flow',
+    name: 'Tome of the Eternal Flow',
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.catalyst,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 5,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 18,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 9,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 18,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 14,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 27,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  the_dockhands_assistant: {
+    id: 'the_dockhands_assistant',
+    name: "The Dockhand's Assistant",
+    rarity: 4,
+    atk: 42,
+    secondary: 'HP%',
+    type: weapons.sword,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 6,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 3,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 9,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 4,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 18,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  portable_power_saw: {
+    id: 'portable_power_saw',
+    name: 'Portable Power Saw',
+    rarity: 4,
+    atk: 41,
+    secondary: 'HP%',
+    type: weapons.claymore,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 12,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 6,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 12,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 9,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 4,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 18,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  ballad_of_the_boundless_blue: {
+    id: 'ballad_of_the_boundless_blue',
+    name: 'Ballad of the Boundless Blue',
+    rarity: 4,
+    atk: 44,
+    secondary: 'Energy Recharge',
+    type: weapons.catalyst,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_milk_tooth,
+            amount: 3,
+          },
+          {
+            item: itemList.fragile_bone_shard,
+            amount: 3,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_cracked_tooth,
+            amount: 3,
+          },
+          {
+            item: itemList.fragile_bone_shard,
+            amount: 12,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_cracked_tooth,
+            amount: 6,
+          },
+          {
+            item: itemList.sturdy_bone_shard,
+            amount: 6,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_broken_fang,
+            amount: 3,
+          },
+          {
+            item: itemList.sturdy_bone_shard,
+            amount: 12,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_broken_fang,
+            amount: 6,
+          },
+          {
+            item: itemList.fossilized_bone_shard,
+            amount: 9,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.boreal_wolfs_nostalgia,
+            amount: 4,
+          },
+          {
+            item: itemList.fossilized_bone_shard,
+            amount: 18,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  cashflow_supervision: {
+    id: 'cashflow_supervision',
+    name: 'Cashflow Supervision',
+    rarity: 5,
+    atk: 48,
+    secondary: 'CRIT RATE',
+    type: weapons.catalyst,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 5,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 9,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 9,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 9,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 14,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 27,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  prospectors_drill: {
+    id: 'prospectors_drill',
+    name: "Prospector's Drill",
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK%',
+    type: weapons.polearm,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 6,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 9,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 4,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 18,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  range_gauge: {
+    id: 'range_gauge',
+    name: 'Range Gauge',
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK%',
+    type: weapons.bow,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 6,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 9,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 4,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 18,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  splendor_of_tranquil_waters: {
+    id: 'splendor_of_tranquil_waters',
+    name: 'Splendor of Tranquil Waters',
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.sword,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 5,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 9,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 14,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 27,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  verdict: {
+    id: 'verdict',
+    name: 'Verdict',
+    rarity: 5,
+    atk: 48,
+    secondary: 'CRIT Rate',
+    type: weapons.claymore,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 5,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.rift_core,
+            amount: 18,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 9,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.foreign_synapse,
+            amount: 18,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 14,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.alien_life_core,
+            amount: 27,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  ultimate_overlords_mega_magic_sword: {
+    id: 'ultimate_overlords_mega_magic_sword',
+    name: '"Ultimate Overlord\'s Mega Magic Sword"',
+    rarity: 4,
+    atk: 44,
+    secondary: 'Energy Recharge',
+    type: weapons.claymore,
+    source: 'Event',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 6,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 3,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 12,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 9,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 4,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 18,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
             amount: 12,
           },
         ],

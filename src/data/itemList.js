@@ -1172,4 +1172,287 @@ export const itemList = {
   },
 
   everamber: { id: 'everamber', name: 'Everamber' },
+
+  artificed_spare_clockwork_component_coppelius: {
+    id: 'artificed_spare_clockwork_component_coppelius',
+    name: 'Artificed Spare Clockwork Component — Coppelius',
+    rarity: 4,
+  },
+  lumidouce_bell: {
+    id: 'lumidouce_bell',
+    name: 'Lumidouce Bell',
+  },
+  mechanical_spur_gear: {
+    id: 'mechanical_spur_gear',
+    name: 'Mechanical Spur Gear',
+    rarity: 2,
+  },
+  artificed_dynamic_gear: {
+    id: 'artificed_dynamic_gear',
+    name: 'Artificed Dynamic Gear',
+    rarity: 3,
+  },
+  meshing_gear: {
+    id: 'meshing_gear',
+    name: 'Meshing Gear',
+    rarity: 1,
+  },
+  rainbow_rose: {
+    id: 'rainbow_rose',
+    name: 'Rainbow Rose',
+  },
+  emperors_resolution: {
+    id: 'emperors_resolution',
+    name: "Emperor's Resolution",
+    rarity: 4,
+  },
+
+  teachings_of_order: {
+    id: 'teachings_of_order',
+    name: 'Teachings of Order',
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+  },
+  guide_to_order: {
+    id: 'guide_to_order',
+    name: 'Guide to Order',
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'teachings_of_order',
+  },
+  philosophies_of_order: {
+    id: 'philosophies_of_order',
+    name: 'Philosophies of Order',
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'teachings_of_order',
+  },
+
+  teachings_of_equity: {
+    id: 'teachings_of_equity',
+    name: 'Teachings of Equity',
+    day: ['monday', 'thursday'],
+    rarity: 2,
+  },
+  guide_to_equity: {
+    id: 'guide_to_equity',
+    name: 'Guide to Equity',
+    day: ['monday', 'thursday'],
+    rarity: 3,
+    parent: 'teachings_of_equity',
+  },
+  philosophies_of_equity: {
+    id: 'philosophies_of_equity',
+    name: 'Philosophies of Equity',
+    day: ['monday', 'thursday'],
+    rarity: 4,
+    parent: 'teachings_of_equity',
+  },
+
+  teachings_of_justice: {
+    id: 'teachings_of_justice',
+    name: 'Teachings of Justice',
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+  },
+  guide_to_justice: {
+    id: 'guide_to_justice',
+    name: 'Guide to Justice',
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'teachings_of_justice',
+  },
+  philosophies_of_justice: {
+    id: 'philosophies_of_justice',
+    name: 'Philosophies of Justice',
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'teachings_of_justice',
+  },
+
+  fragment_of_an_ancient_chord: {
+    id: 'fragment_of_an_ancient_chord',
+    name: 'Fragment of an Ancient Chord',
+    rarity: 2,
+  },
+  chapter_of_an_ancient_chord: {
+    id: 'chapter_of_an_ancient_chord',
+    name: 'Chapter of an Ancient Chord',
+    rarity: 3,
+  },
+  movement_of_an_ancient_chord: {
+    id: 'movement_of_an_ancient_chord',
+    name: 'Movement of an Ancient Chord',
+    rarity: 4,
+  },
+  echo_of_an_ancient_chord: {
+    id: 'echo_of_an_ancient_chord',
+    name: 'Echo of an Ancient Chord',
+    rarity: 5,
+  },
+  transoceanic_pearl: {
+    id: 'transoceanic_pearl',
+    name: 'Transoceanic Pearl',
+    rarity: 1,
+  },
+  transoceanic_chunk: {
+    id: 'transoceanic_chunk',
+    name: 'Transoceanic Chunk',
+    rarity: 2,
+  },
+  xenochromatic_crystal: {
+    id: 'xenochromatic_crystal',
+    name: 'Xenochromatic Crystal',
+    rarity: 3,
+  },
+  dross_of_pure_sacred_dewdrop: {
+    id: 'dross_of_pure_sacred_dewdrop',
+    name: 'Dross of Pure Sacred Dewdrop',
+    rarity: 2,
+  },
+  drop_of_tainted_water: {
+    id: 'drop_of_tainted_water',
+    name: 'Drop of Tainted Water',
+    rarity: 2,
+  },
+  sublimation_of_pure_sacred_dewdrop: {
+    id: 'sublimation_of_pure_sacred_dewdrop',
+    name: 'Sublimation of Pure Sacred Dewdrop',
+    rarity: 3,
+  },
+  scoop_of_tainted_water: {
+    id: 'scoop_of_tainted_water',
+    name: 'Scoop of Tainted Water',
+    rarity: 3,
+  },
+  spring_of_pure_sacred_dewdrop: {
+    id: 'spring_of_pure_sacred_dewdrop',
+    name: 'Spring of Pure Sacred Dewdrop',
+    rarity: 4,
+  },
+  newborn_tainted_hydro_phantasm: {
+    id: 'newborn_tainted_hydro_phantasm',
+    name: 'Newborn Tainted Hydro Phantasm',
+    rarity: 4,
+  },
+
+  broken_goblet_of_the_pristine_sea: {
+    id: 'broken_goblet_of_the_pristine_sea',
+    name: 'Broken Goblet of the Pristine Sea',
+    rarity: 2,
+  },
+  wine_goblet_of_the_pristine_sea: {
+    id: 'wine_goblet_of_the_pristine_sea',
+    name: 'Wine Goblet of the Pristine Sea',
+    rarity: 3,
+  },
+  silver_goblet_of_the_pristine_sea: {
+    id: 'silver_goblet_of_the_pristine_sea',
+    name: 'Silver Goblet of the Pristine Sea',
+    rarity: 4,
+  },
+  golden_goblet_of_the_pristine_sea: {
+    id: 'golden_goblet_of_the_pristine_sea',
+    name: 'Golden Goblet of the Pristine Sea',
+    rarity: 5,
+  },
+
+  dross_of_pure_sacred_dewdrop: {
+    id: 'dross_of_pure_sacred_dewdrop',
+    name: 'Dross of Pure Sacred Dewdrop',
+    rarity: 2,
+  },
+  sublimation_of_pure_sacred_dewdrop: {
+    id: 'sublimation_of_pure_sacred_dewdrop',
+    name: 'Sublimation of Pure Sacred Dewdrop',
+    rarity: 3,
+  },
+  spring_of_pure_sacred_dewdrop: {
+    id: 'spring_of_pure_sacred_dewdrop',
+    name: 'Spring of Pure Sacred Dewdrop',
+    rarity: 4,
+  },
+  essence_of_pure_sacred_dewdrop: {
+    id: 'essence_of_pure_sacred_dewdrop',
+    name: 'Essence of Pure Sacred Dewdrop',
+    rarity: 5,
+  },
+
+  rift_core: {
+    id: 'rift_core',
+    name: 'Rift Core',
+    rarity: 2,
+  },
+  foreign_synapse: {
+    id: 'foreign_synapse',
+    name: 'Foreign Synapse',
+    rarity: 3,
+  },
+  alien_life_core: {
+    id: 'alien_life_core',
+    name: 'Alien Life Core',
+    rarity: 4,
+  },
+
+  romaritime_flower: {
+    id: 'romaritime_flower',
+    name: 'Romaritime Flower',
+  },
+
+  fontemer_unihorn: {
+    id: 'fontemer_unihorn',
+    name: 'Fontemer Unihorn',
+    rarity: 4,
+  },
+  lumitoile: {
+    id: 'lumitoile',
+    name: 'Lumitoile',
+  },
+
+  old_operatives_pocket_watch: {
+    id: 'old_operatives_pocket_watch',
+    name: "Old Operative's Pocket Watch",
+    rarity: 2,
+  },
+  operatives_standard_pocket_watch: {
+    id: 'operatives_standard_pocket_watch',
+    name: "Operative's Standard Pocket Watch",
+    rarity: 3,
+  },
+  operatives_constancy: {
+    id: 'operatives_constancy',
+    name: "Operative's Constancy",
+    rarity: 4,
+  },
+
+  subdetection_unit: {
+    id: 'subdetection_unit',
+    name: 'Subdetection Unit',
+  },
+  tourbillon_device: {
+    id: 'tourbillon_device',
+    name: '"Tourbillon Device"',
+    rarity: 4,
+  },
+
+  beryl_conch: {
+    id: 'beryl_conch',
+    name: 'Beryl Conch',
+  },
+  lakelight_lily: {
+    id: 'lakelight_lily',
+    name: 'Lakelight Lily',
+  },
+  water_that_failed_to_transcend: {
+    id: 'water_that_failed_to_transcend',
+    name: 'Water That Failed To Transcend',
+    rarity: 4,
+  },
+  lightless_silk_string: { id: 'lightless_silk_string', name: 'Lightless Silk String' },
+  lightless_mass: { id: 'lightless_mass', name: 'Lightless Mass' },
+
+  spring_of_the_first_dewdrop: {
+    id: 'spring_of_the_first_dewdrop',
+    name: 'Spring of the First Dewdrop',
+  },
 };
