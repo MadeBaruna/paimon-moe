@@ -803,4 +803,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Reign of Serenity 4': [
+    {
+      name: 'Reign of Serenity',
+      image: 4,
+      shortName: 'Raiden',
+      start: '2024-01-09 18:00:00',
+      end: '2024-01-30 14:59:00',
+      color: '#D0AEF2',
+      featured: ['raiden_shogun', 'yoimiya'],
+      featuredRare: ['bennett', 'kujou_sara', 'chevreuse'],
+      version: '4.3',
+    },
+    {
+      name: 'Tapestry of Golden Flames',
+      image: 5,
+      shortName: 'Yoimiya',
+      start: '2024-01-09 18:00:00',
+      end: '2024-01-30 14:59:00',
+      color: '#D0AEF2',
+      featured: ['raiden_shogun', 'yoimiya'],
+      featuredRare: ['bennett', 'kujou_sara', 'chevreuse'],
+      version: '4.3',
+    },
+  ],
 };
