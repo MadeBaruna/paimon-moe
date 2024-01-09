@@ -1,5 +1,6 @@
 export const birthdays = {
   thoma: [1, 9],
+  chevreuse: [1, 10],
   diona: [1, 18],
   kirara: [1, 22],
   rosaria: [1, 24],
@@ -45,6 +46,7 @@ export const birthdays = {
   kuki_shinobu: [7, 27],
   yanfei: [7, 28],
   amber: [8, 10],
+  navia: [8, 16],
   ningguang: [8, 26],
   mona: [8, 31],
   chongyun: [9, 7],
@@ -64,6 +66,7 @@ export const birthdays = {
   sucrose: [11, 26],
   kaeya: [11, 30],
   ganyu: [12, 2],
+  neuvillette: [12, 18],
   dori: [12, 21],
   tighnari: [12, 29],
   zhongli: [12, 31],
