@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    kamisato_ayaka: {
-      name: 'Kamisato Ayaka',
+    raiden_shogun: {
+      name: 'Raiden Shogun',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    navia: {
-      name: 'Navia',
+    yoimiya: {
+      name: 'Yoimiya',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300058;
-  const image = 'navia ayaka.png';
+  const bannerId = 300059;
+  const image = 'raiden yoimiya.png';
   const width = 800;
-  const height = 576;
+  const height = 538;
 
   let loading = true;
   let user = '';
