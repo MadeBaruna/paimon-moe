@@ -1599,6 +1599,151 @@ export const characters = {
     },
     element: elements.cryo,
   },
+  chevreuse: {
+    id: 'chevreuse',
+    name: 'Chevreuse',
+    rarity: 4,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 11962,
+      atk: 193,
+      def: 605,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 2,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 10,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 4,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 20,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 8,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 30,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 12,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 45,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 20,
+          },
+          {
+            item: itemList.lumidouce_bell,
+            amount: 60,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.meshing_gear, itemList.mechanical_spur_gear, itemList.artificed_dynamic_gear],
+      book: [itemList.teachings_of_order, itemList.guide_to_order, itemList.philosophies_of_order],
+      boss: itemList.lightless_eye_of_the_maelstrom,
+    },
+    element: elements.pyro,
+  },
   chongyun: {
     id: 'chongyun',
     name: 'Chongyun',

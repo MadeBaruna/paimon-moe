@@ -1455,4 +1455,9 @@ export const itemList = {
     id: 'spring_of_the_first_dewdrop',
     name: 'Spring of the First Dewdrop',
   },
+
+  lightless_eye_of_the_maelstrom: {
+    id: 'lightless_eye_of_the_maelstrom',
+    name: 'Lightless Eye of the Maelstrom',
+  },
 };
