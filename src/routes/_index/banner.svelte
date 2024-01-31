@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    raiden_shogun: {
-      name: 'Raiden Shogun',
+    nahida: {
+      name: 'Nahida',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    yoimiya: {
-      name: 'Yoimiya',
+    xianyun: {
+      name: 'Xianyun',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300059;
-  const image = 'raiden yoimiya.png';
+  const bannerId = 300060;
+  const image = 'nahida xianyun.png';
   const width = 800;
-  const height = 538;
+  const height = 454;
 
   let loading = true;
   let user = '';
