@@ -12928,4 +12928,117 @@ export const weaponList = {
       },
     ],
   },
+  cranes_echoing_call: {
+    id: 'cranes_echoing_call',
+    name: "Crane's Echoing Call",
+    rarity: 5,
+    atk: 49,
+    secondary: 'ATK%',
+    type: weapons.catalyst,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.mist_veiled_lead_elixir,
+            amount: 5,
+          },
+          {
+            item: itemList.feathery_fin,
+            amount: 5,
+          },
+          {
+            item: itemList.divining_scroll,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mist_veiled_mercury_elixir,
+            amount: 5,
+          },
+          {
+            item: itemList.feathery_fin,
+            amount: 18,
+          },
+          {
+            item: itemList.divining_scroll,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mist_veiled_mercury_elixir,
+            amount: 9,
+          },
+          {
+            item: itemList.lunar_fin,
+            amount: 9,
+          },
+          {
+            item: itemList.sealed_scroll,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mist_veiled_gold_elixir,
+            amount: 5,
+          },
+          {
+            item: itemList.lunar_fin,
+            amount: 18,
+          },
+          {
+            item: itemList.sealed_scroll,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mist_veiled_gold_elixir,
+            amount: 9,
+          },
+          {
+            item: itemList.chasmlight_fin,
+            amount: 14,
+          },
+          {
+            item: itemList.forbidden_curse_scroll,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mist_veiled_primo_elixir,
+            amount: 6,
+          },
+          {
+            item: itemList.chasmlight_fin,
+            amount: 27,
+          },
+          {
+            item: itemList.forbidden_curse_scroll,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

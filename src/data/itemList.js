@@ -1470,4 +1470,19 @@ export const itemList = {
     id: 'clearwater_jade',
     name: 'Clearwater Jade',
   },
+  feathery_fin: {
+    id: 'feathery_fin',
+    name: 'Feathery Fin',
+    rarity: 2,
+  },
+  lunar_fin: {
+    id: 'lunar_fin',
+    name: 'Lunar Fin',
+    rarity: 3,
+  },
+  chasmlight_fin: {
+    id: 'chasmlight_fin',
+    name: 'Chasmlight Fin',
+    rarity: 4,
+  },
 };
