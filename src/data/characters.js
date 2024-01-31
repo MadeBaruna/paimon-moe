@@ -3484,6 +3484,151 @@ export const characters = {
     },
     element: elements.hydro,
   },
+  gaming: {
+    id: 'gaming',
+    name: 'Gaming',
+    rarity: 4,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 11419,
+      atk: 302,
+      def: 703,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.starconch,
+            amount: 3,
+          },
+          {
+            item: itemList.slime_condensate,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 2,
+          },
+          {
+            item: itemList.starconch,
+            amount: 10,
+          },
+          {
+            item: itemList.slime_condensate,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 4,
+          },
+          {
+            item: itemList.starconch,
+            amount: 20,
+          },
+          {
+            item: itemList.slime_secretions,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 8,
+          },
+          {
+            item: itemList.starconch,
+            amount: 30,
+          },
+          {
+            item: itemList.slime_secretions,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 12,
+          },
+          {
+            item: itemList.starconch,
+            amount: 45,
+          },
+          {
+            item: itemList.slime_concentrate,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.emperors_resolution,
+            amount: 20,
+          },
+          {
+            item: itemList.starconch,
+            amount: 60,
+          },
+          {
+            item: itemList.slime_concentrate,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.slime_condensate, itemList.slime_secretions, itemList.slime_concentrate],
+      book: [itemList.teachings_of_prosperity, itemList.guide_to_prosperity, itemList.philosophies_of_prosperity],
+      boss: itemList.lightless_mass,
+    },
+    element: elements.pyro,
+  },
   ganyu: {
     id: 'ganyu',
     name: 'Ganyu',
@@ -10037,6 +10182,151 @@ export const characters = {
       boss: itemList.dvalins_claw,
     },
     element: elements.pyro,
+  },
+  xianyun: {
+    id: 'xianyun',
+    name: 'Xianyun',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 10409,
+      atk: 335,
+      def: 573,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 3,
+          },
+          {
+            item: itemList.divining_scroll,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 2,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 10,
+          },
+          {
+            item: itemList.divining_scroll,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 4,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 20,
+          },
+          {
+            item: itemList.sealed_scroll,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 8,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 30,
+          },
+          {
+            item: itemList.sealed_scroll,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 12,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 45,
+          },
+          {
+            item: itemList.forbidden_curse_scroll,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 20,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 60,
+          },
+          {
+            item: itemList.forbidden_curse_scroll,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.divining_scroll, itemList.sealed_scroll, itemList.forbidden_curse_scroll],
+      book: [itemList.teachings_of_gold, itemList.guide_to_gold, itemList.philosophies_of_gold],
+      boss: itemList.lightless_eye_of_the_maelstrom,
+    },
+    element: elements.anemo,
   },
   xiao: {
     id: 'xiao',

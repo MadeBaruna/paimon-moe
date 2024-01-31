@@ -1460,4 +1460,14 @@ export const itemList = {
     id: 'lightless_eye_of_the_maelstrom',
     name: 'Lightless Eye of the Maelstrom',
   },
+
+  cloudseam_scale: {
+    id: 'cloudseam_scale',
+    name: 'Cloudseam Scale',
+    rarity: 4,
+  },
+  clearwater_jade: {
+    id: 'clearwater_jade',
+    name: 'Clearwater Jade',
+  },
 };
