@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    nahida: {
-      name: 'Nahida',
+    yae_miko: {
+      name: 'Yae Miko',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    xianyun: {
-      name: 'Xianyun',
+    xiao: {
+      name: 'Xiao',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300060;
-  const image = 'nahida xianyun.png';
+  const bannerId = 300061;
+  const image = 'yae xiao.png';
   const width = 800;
-  const height = 454;
+  const height = 380;
 
   let loading = true;
   let user = '';

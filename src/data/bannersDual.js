@@ -853,4 +853,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Invitation to Mundane Life 5': [
+    {
+      name: 'Invitation to Mundane Life',
+      image: 5,
+      shortName: 'Xiao',
+      start: '2024-02-20 18:00:00',
+      end: '2024-03-12 14:59:00',
+      color: '#25d7b8',
+      featured: ['xiao', 'yae_miko'],
+      featuredRare: ['yaoyao', 'xinyan', 'ningguang'],
+      version: '4.4',
+    },
+    {
+      name: 'Everbloom Violet',
+      image: 4,
+      shortName: 'Yae',
+      start: '2024-02-20 18:00:00',
+      end: '2024-03-12 14:59:00',
+      color: '#ffd1f9',
+      featured: ['xiao', 'yae_miko'],
+      featuredRare: ['yaoyao', 'xinyan', 'ningguang'],
+      version: '4.4',
+    },
+  ],
 };
