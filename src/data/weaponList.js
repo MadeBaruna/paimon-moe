@@ -13041,4 +13041,230 @@ export const weaponList = {
       },
     ],
   },
+  dialogues_of_the_desert_sages: {
+    id: 'dialogues_of_the_desert_sages',
+    name: 'Dialogues of the Desert Sages',
+    rarity: 4,
+    atk: 42,
+    secondary: 'HP%',
+    type: weapons.polearm,
+    source: 'Event',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.copper_talisman_of_the_forest_dew,
+            amount: 3,
+          },
+          {
+            item: itemList.feathery_fin,
+            amount: 3,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 3,
+          },
+          {
+            item: itemList.feathery_fin,
+            amount: 12,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.iron_talisman_of_the_forest_dew,
+            amount: 6,
+          },
+          {
+            item: itemList.lunar_fin,
+            amount: 6,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 3,
+          },
+          {
+            item: itemList.lunar_fin,
+            amount: 12,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_talisman_of_the_forest_dew,
+            amount: 6,
+          },
+          {
+            item: itemList.chasmlight_fin,
+            amount: 9,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_talisman_of_the_forest_dew,
+            amount: 4,
+          },
+          {
+            item: itemList.chasmlight_fin,
+            amount: 18,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  uraku_misugiri: {
+    id: 'uraku_misugiri',
+    name: 'Uraku Misugiri',
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.sword,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.coral_branch_of_a_distant_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.chaos_gear,
+            amount: 5,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.jeweled_branch_of_a_distant_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.chaos_gear,
+            amount: 18,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.jeweled_branch_of_a_distant_sea,
+            amount: 9,
+          },
+          {
+            item: itemList.chaos_axis,
+            amount: 9,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.jade_branch_of_a_distant_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.chaos_axis,
+            amount: 18,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.jade_branch_of_a_distant_sea,
+            amount: 9,
+          },
+          {
+            item: itemList.chaos_oculus,
+            amount: 14,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_branch_of_a_distant_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.chaos_oculus,
+            amount: 27,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
