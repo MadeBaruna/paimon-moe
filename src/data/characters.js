@@ -1744,6 +1744,151 @@ export const characters = {
     },
     element: elements.pyro,
   },
+  chiori: {
+    id: 'chiori',
+    name: 'Chiori',
+    rarity: 5,
+    weapon: weapons.sword,
+    stats: {
+      hp: 11438,
+      atk: 323,
+      def: 953,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.dendrobium,
+            amount: 3,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 2,
+          },
+          {
+            item: itemList.dendrobium,
+            amount: 10,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 4,
+          },
+          {
+            item: itemList.dendrobium,
+            amount: 20,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 8,
+          },
+          {
+            item: itemList.dendrobium,
+            amount: 30,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 12,
+          },
+          {
+            item: itemList.dendrobium,
+            amount: 45,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.artificed_spare_clockwork_component_coppelius,
+            amount: 20,
+          },
+          {
+            item: itemList.dendrobium,
+            amount: 60,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.spectral_husk, itemList.spectral_heart, itemList.spectral_nucleus],
+      book: [itemList.teachings_of_light, itemList.guide_to_light, itemList.philosophies_of_light],
+      boss: itemList.lightless_silk_string,
+    },
+    element: elements.geo,
+  },
   chongyun: {
     id: 'chongyun',
     name: 'Chongyun',
