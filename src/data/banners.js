@@ -1126,17 +1126,6 @@ export const banners = {
     //   version: '4.4',
     // },
     {
-      name: 'Invitation to Mundane Life',
-      image: 5,
-      shortName: 'Xiao',
-      start: '2024-02-20 18:00:00',
-      end: '2024-03-12 14:59:00',
-      color: '#25d7b8',
-      featured: ['xiao', 'yae_miko'],
-      featuredRare: ['yaoyao', 'xinyan', 'ningguang'],
-      version: '4.4',
-    },
-    {
       name: 'Of Silken Clouds Woven',
       image: 1,
       shortName: 'Chiori',
