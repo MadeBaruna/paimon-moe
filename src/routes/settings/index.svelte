@@ -375,14 +375,14 @@
 </svelte:head>
 
 <div class="lg:ml-64 pt-20 px-4 md:px-8 lg:pt-8 max-w-screen-xl">
-  <div class="bg-item rounded-xl mb-4 p-4">
+  <!-- <div class="bg-item rounded-xl mb-4 p-4">
     <p class="text-white inline-block mr-4">{$t('settings.version')} <b>3.3</b></p>
     <a href="/changelog">
       <Button>
         {$t('settings.changelog')}
       </Button>
     </a>
-  </div>
+  </div> -->
   <div class="bg-item rounded-xl mb-4 p-4 flex flex-col">
     <p class="text-white">{$t('settings.multiple')}</p>
     <div class="flex flex-col md:flex-row mt-2">
@@ -450,8 +450,8 @@
           {isSynced
             ? $t('settings.synced')
             : $localModified && $synced
-            ? $t('settings.waiting')
-            : $t('settings.syncing')}
+              ? $t('settings.waiting')
+              : $t('settings.syncing')}
           {#if isSynced}
             <Icon path={mdiCheckCircleOutline} className="text-green-400" />
           {:else if $localModified && !$synced}

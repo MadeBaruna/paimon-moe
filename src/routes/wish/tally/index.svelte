@@ -28,12 +28,14 @@
     { label: 'Character Event', value: 'characters' },
     { label: 'Weapon Event', value: 'weapons' },
     { label: 'Standard', value: 'standard' },
+    { label: 'Chronicled Wish', value: 'chronicled' },
   ];
 
   const typeNumber = {
     characters: 300000,
     weapons: 400000,
     standard: 200000,
+    chronicled: 500000,
   };
 
   const spliceCount = {
@@ -252,14 +254,17 @@
       const rareTotalPull = data.pityCount.rare;
 
       loading = false;
+      if (data.pullByDay.length === 0) hidePullByDay = true;
       await tick();
+
       if (Object.keys(data).length > 0) {
         consData = data.constellation;
-        showDataCons();
+        await showDataCons();
       }
 
       Chart.defaults.global.defaultFontColor = '#ffffff';
       Chart.defaults.global.defaultFontFamily = 'Poppins';
+      if (!chart) return;
       new Chart(chart, {
         type: 'bar',
         data: {
@@ -327,46 +332,48 @@
         },
       });
 
-      new Chart(chartPullByDay, {
-        type: 'line',
-        data: {
-          labels: data.pullByDay.map((e) => dayjs(e.day).format('MM/DD')),
-          datasets: [
-            {
-              label: 'Pull By Day %',
-              data: data.pullByDay.map((e) => e.percentage * 100),
-              borderColor: '#4E7CFF',
-              backgroundColor: '#4E7CFF',
-              borderWidth: 3,
-              pointRadius: 2,
-              fill: false,
-              type: 'line',
-            },
-          ],
-        },
-        options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          interaction: {
-            mode: 'index',
-            intersect: false,
-          },
-          tooltips: {
-            mode: 'index',
-            intersect: false,
-            callbacks: {
-              title: (tooltipItem) => {
-                return dayjs(data.pullByDay[tooltipItem[0].index].day).format('dddd, MMM DD YYYY');
+      if (!hidePullByDay) {
+        new Chart(chartPullByDay, {
+          type: 'line',
+          data: {
+            labels: data.pullByDay.map((e) => dayjs(e.day).format('MM/DD')),
+            datasets: [
+              {
+                label: 'Pull By Day %',
+                data: data.pullByDay.map((e) => e.percentage * 100),
+                borderColor: '#4E7CFF',
+                backgroundColor: '#4E7CFF',
+                borderWidth: 3,
+                pointRadius: 2,
+                fill: false,
+                type: 'line',
               },
-              label: (tooltipItem) => {
-                return `Pull by day: ${numberFormatSecondary.format(
-                  data.pullByDay[tooltipItem.index].percentage * totalWish,
-                )} (${numberFormat.format(tooltipItem.value)}%)`;
+            ],
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            interaction: {
+              mode: 'index',
+              intersect: false,
+            },
+            tooltips: {
+              mode: 'index',
+              intersect: false,
+              callbacks: {
+                title: (tooltipItem) => {
+                  return dayjs(data.pullByDay[tooltipItem[0].index].day).format('dddd, MMM DD YYYY');
+                },
+                label: (tooltipItem) => {
+                  return `Pull by day: ${numberFormatSecondary.format(
+                    data.pullByDay[tooltipItem.index].percentage * totalWish,
+                  )} (${numberFormat.format(tooltipItem.value)}%)`;
+                },
               },
             },
           },
-        },
-      });
+        });
+      }
 
       new Chart(chart2, {
         type: 'bar',
@@ -400,8 +407,6 @@
           },
         },
       });
-
-      if (data.pullByDay.length === 0) hidePullByDay = true;
     } catch (err) {
       console.error(err);
       error = err;
@@ -448,6 +453,7 @@
     await tick();
 
     if (constChart) constChart.destroy();
+    if (!chart3) return;
     constChart = new Chart(chart3, {
       type: 'bar',
       data: {
@@ -697,12 +703,12 @@
           </div>
         {/if}
         <div class="bg-background rounded-xl p-4 relative mb-4" style="height: 200px; width: 100%;">
-          <canvas bind:this={chart} />
+          <canvas bind:this={chart} id="chart" />
         </div>
         {#if !loadingCons}
           <div class="bg-background rounded-xl p-4 relative mb-4" style="width: 100%;">
             <div style="height: 400px; width: 100%;">
-              <canvas bind:this={chart3} />
+              <canvas bind:this={chart3} id="chart3" />
             </div>
             <div>
               <Button size="sm" on:click={() => showDataCons(5)}>5★</Button>

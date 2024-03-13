@@ -39,6 +39,7 @@
     'weapon-event': 'weapons',
     standard: 'standard',
     beginners: 'beginners',
+    chronicled: 'chronicled',
   };
 
   let errorProcessingPull = null;
@@ -193,8 +194,8 @@
         pull.type === 'character'
           ? characters[pull.id]
           : pull.type === 'weapon'
-          ? weaponList[pull.id]
-          : { name: 'Unknown', rarity: 3 };
+            ? weaponList[pull.id]
+            : { name: 'Unknown', rarity: 3 };
 
       selectedBanners[currentBannerIndex].total++;
 
@@ -638,8 +639,8 @@
                     src={pull.type === 'character'
                       ? `/images/characters/${pull.id}.png`
                       : pull.type === 'weapon'
-                      ? `/images/weapons/${pull.id}.png`
-                      : '/images/wish.png'}
+                        ? `/images/weapons/${pull.id}.png`
+                        : '/images/wish.png'}
                     alt={pull.name}
                     loading="lazy"
                   />

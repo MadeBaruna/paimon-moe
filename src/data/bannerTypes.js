@@ -15,4 +15,8 @@ export const bannerTypes = [
     name: "Beginners' Wish",
     id: 'beginners',
   },
+  {
+    name: 'Chronicled Wish',
+    id: 'chronicled',
+  },
 ];

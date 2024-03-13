@@ -25,6 +25,7 @@
   let counter2;
   let counter3;
   let counter4;
+  let counter5;
   let rank;
 
   let wishTotal = {
@@ -129,6 +130,7 @@
     counter2.readLocalData();
     counter3.readLocalData();
     counter4.readLocalData();
+    counter5.readLocalData();
   }
 </script>
 
@@ -218,22 +220,31 @@
         id="standard"
         name={$t('wish.types.standard')}
       />
-      <div class="flex flex-col w-full">
-        <Counter
-          bind:this={counter4}
-          manualInput={settings.manualInput}
-          id="beginners"
-          name={$t('wish.types.beginners')}
-        />
+      <Counter
+        on:counterread={(val) => setRankWishTotal('chronicled', val)}
+        bind:this={counter5}
+        manualInput={settings.manualInput}
+        id="chronicled"
+        name={$t('wish.types.chronicled')}
+      />
+      <Counter
+        bind:this={counter4}
+        manualInput={settings.manualInput}
+        id="beginners"
+        name={$t('wish.types.beginners')}
+      />
+      <MonthlyGraph bind:data={monthlyData} />
+      <!-- <div class="flex flex-col w-full">
         {#if Object.keys(monthlyData).length > 0}
-          <MonthlyGraph bind:data={monthlyData} />
         {:else}
-          <div class="-mb-4" />
+        <div class="-mb-4" />
         {/if}
-        <Rank bind:this={rank} {wishTotal} {wishPercentage} />
         <div class="mt-4 flex justify-center">
-          <Ad type="mobile" variant="mpu" id="1" />
         </div>
+      </div> -->
+      <div>
+        <Rank bind:this={rank} {wishTotal} {wishPercentage} />
+        <Ad type="mobile" variant="mpu" id="1" />
       </div>
       <Summary bind:monthlyData on:summaryread={(val) => setRankWishPercentage(val)} />
     </div>

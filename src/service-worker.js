@@ -7,7 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Add Chiori & weapons', 'Update banners', 'Update timelines', 'Update achievements'];
+const changelog = ['Add chronicled wish banner', 'Add Chiori & weapons', 'Update timelines', 'Update achievements'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 

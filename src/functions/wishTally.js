@@ -3,7 +3,7 @@ import { getAccountPrefix } from '../stores/account';
 import { readSave } from '../stores/saveManager';
 import { process } from './wish';
 
-const bannerCategories = ['beginners', 'standard', 'character-event', 'weapon-event'];
+const bannerCategories = ['beginners', 'standard', 'character-event', 'weapon-event', 'chronicled'];
 
 async function sendWish(data) {
   try {

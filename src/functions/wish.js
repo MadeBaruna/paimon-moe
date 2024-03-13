@@ -17,6 +17,7 @@ const bannerTypes = {
   'weapon-event': 'weapons',
   standard: 'standard',
   beginners: 'beginners',
+  chronicled: 'chronicled',
 };
 
 async function readLocalData(path) {

@@ -296,10 +296,7 @@
   $: hidden = id === 'beginners' && total === 0 && !manualInput;
 </script>
 
-<div
-  class="bg-item rounded-xl p-4 inline-flex flex-col w-full {id === 'beginners' ? 'mb-4' : ''} {hidden ? 'hidden' : ''}"
-  style="height: min-content;"
->
+<div class="bg-item rounded-xl p-4 inline-flex flex-col w-full {hidden ? 'hidden' : ''}" style="height: min-content;">
   <div class="flex mb-2">
     <h2 class="font-display font-bold text-2xl text-white flex-1">{name}</h2>
     {#if manualInput}
@@ -459,8 +456,8 @@
                   characters[pull.id].rarity === 5
                     ? 'text-legendary-from'
                     : characters[pull.id].rarity === 4
-                    ? 'text-rare-from'
-                    : 'text-primary'
+                      ? 'text-rare-from'
+                      : 'text-primary'
                 }`}>{$t(characters[pull.id].name)}</td
               >
             {:else if pull.type === 'weapon'}
@@ -469,8 +466,8 @@
                   weaponList[pull.id].rarity === 5
                     ? 'text-legendary-from'
                     : weaponList[pull.id].rarity === 4
-                    ? 'text-rare-from'
-                    : 'text-primary'
+                      ? 'text-rare-from'
+                      : 'text-primary'
                 }`}>{$t(weaponList[pull.id].name)}</td
               >
             {:else if pull.type === 'unknown_3_star'}

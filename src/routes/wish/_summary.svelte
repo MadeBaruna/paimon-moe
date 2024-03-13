@@ -25,7 +25,7 @@
 
   let loading = true;
   let wishCount = 0;
-  let box = [0, 1, 2, 3];
+  let box = [0, 1, 2, 4, 3];
   const avg = {};
   const percentages = {};
 
@@ -276,7 +276,7 @@
       avg['standard'] !== undefined &&
       avg['weapon-event'].legendary.total > avg['standard'].legendary.total
     ) {
-      box = [0, 2, 1, 3];
+      box = [0, 2, 1, 4, 3];
     }
 
     if (updateCollectedCharacters && totalWish > 0) {
@@ -307,6 +307,10 @@
       <div class="order-4">
         {#if avg[types[box[3]].id]}
           <SummaryItem avg={avg[types[box[3]].id]} type={types[box[3]]} />
+          <div class="h-4 md:h-0" />
+        {/if}
+        {#if avg[types[box[4]].id]}
+          <SummaryItem avg={avg[types[box[4]].id]} type={types[box[4]]} />
           <div class="h-4 md:h-0" />
         {/if}
         <div class="flex flex-col summary-item">

@@ -214,7 +214,7 @@
   $: fixedPointWinRateOff = percentageWinRateOff < 0.1 ? 2 : percentageWinRateOff < 2 ? 1 : 0;
 </script>
 
-<div class="flex flex-col items-center bg-item rounded-xl p-4 w-full mt-4">
+<div class="flex flex-col items-center bg-item rounded-xl p-4 w-full">
   <div class="flex flex-col items-center pb-4">
     <p class="text-lg text-white leading-none font-semibold">{$t('wish.rank.title')}</p>
     <p class="text-sm text-gray-400 leading-none">{$t('wish.rank.based')}</p>
@@ -246,8 +246,8 @@
         {loading.total
           ? '...'
           : percentage < 50
-          ? percentage.toFixed(fixedPoint)
-          : (100 - percentage).toFixed(fixedPoint)}%
+            ? percentage.toFixed(fixedPoint)
+            : (100 - percentage).toFixed(fixedPoint)}%
       </span>
     </div>
   </div>
@@ -283,8 +283,8 @@
           {loading.winRateOff.legendary
             ? '...'
             : percentageWinRateOff.legendary < 50
-            ? percentageWinRateOff.legendary.toFixed(fixedPointWinRateOff)
-            : (100 - percentageWinRateOff.legendary).toFixed(fixedPointWinRateOff)}%
+              ? percentageWinRateOff.legendary.toFixed(fixedPointWinRateOff)
+              : (100 - percentageWinRateOff.legendary).toFixed(fixedPointWinRateOff)}%
         </span>
       </div>
     </div>
@@ -318,8 +318,8 @@
         {loading.legendary
           ? '...'
           : percentageLuck.legendary < 50
-          ? percentageLuck.legendary.toFixed(fixedPointLegendary)
-          : (100 - percentageLuck.legendary).toFixed(fixedPointLegendary)}%
+            ? percentageLuck.legendary.toFixed(fixedPointLegendary)
+            : (100 - percentageLuck.legendary).toFixed(fixedPointLegendary)}%
       </span>
     </div>
   </div>
@@ -350,8 +350,8 @@
         {loading.rare
           ? '...'
           : percentageLuck.rare < 50
-          ? percentageLuck.rare.toFixed(fixedPointRare)
-          : (100 - percentageLuck.rare).toFixed(fixedPointRare)}%
+            ? percentageLuck.rare.toFixed(fixedPointRare)
+            : (100 - percentageLuck.rare).toFixed(fixedPointRare)}%
       </span>
     </div>
   </div>
