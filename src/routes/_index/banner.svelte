@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yae_miko: {
-      name: 'Yae Miko',
+    arataki_itto: {
+      name: 'Arataki Itto',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    xiao: {
-      name: 'Xiao',
+    chiori: {
+      name: 'Chiori',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300061;
-  const image = 'yae xiao.png';
+  const bannerId = 300062;
+  const image = 'itto chiori.png';
   const width = 800;
-  const height = 380;
+  const height = 394;
 
   let loading = true;
   let user = '';
