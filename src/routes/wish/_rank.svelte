@@ -166,7 +166,7 @@
       const sorted = [];
       for (const item of data) {
         total += item[1];
-        sorted.push(...new Array(item[1]).fill(item[0]));
+        sorted.concat(new Array(item[1]).fill(item[0]));
       }
       medianWinRateOff[rarity] = (sorted[Math.round(sorted.length / 2)] * 100).toFixed(2);
 
