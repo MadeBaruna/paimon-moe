@@ -61,6 +61,9 @@
         case '4':
           selectedType = types[1];
           break;
+        case '5':
+          selectedType = types[3];
+          break;
       }
 
       bannerIndex = (Number(idNumber) % typeNumber[selectedType.value]) - 1;
@@ -199,7 +202,7 @@
       legendaryList = legendaryList;
       rareList = rareList;
 
-      if (type !== 'standard') {
+      if (type !== 'standard' && type !== 'chronicled') {
         let totalCount = 0;
         let totalGuaranteed = 0;
         for (let i = 0; i < featured.items.length; i++) {
@@ -564,7 +567,7 @@
         </div>
         <div class="flex flex-col xl:flex-row space-y-4 xl:space-x-4 xl:space-y-0 mb-4">
           <table>
-            {#if featured.type === 'standard'}
+            {#if featured.type === 'standard' || featured.type === 'chronicled'}
               <tr>
                 <td
                   class="bg-background rounded-l-xl py-4 pl-4 pr-2 font-black text-white text-5xl leading-10 text-right"
