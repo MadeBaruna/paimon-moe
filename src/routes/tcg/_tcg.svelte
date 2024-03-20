@@ -256,7 +256,7 @@
   }
 
   function swapCharacterCardPos(from, to) {
-    const keys = Object.keys(deck.characters);
+    let keys = Object.keys(deck.characters);
     [keys[from], keys[to]] = [keys[to], keys[from]];
     deck.characters = keys.reduce((prev, cur) => {
       prev[cur] = 1;
