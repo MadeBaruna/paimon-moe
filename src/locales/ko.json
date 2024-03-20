@@ -274,7 +274,7 @@
           "PC에서 원신을 실행하세요 (만약 여러 개의 계정을 사용한다면 게임을 재시작하세요)",
           "뽑기 기록을 열고 로딩될 때까지 기다리세요",
           "게임이 설치된 폴더를 여세요 (예시: C:\\Games\\Genshin Impact)",
-          "그리고 GenshinImpact_Data → webCaches → Cache → Cache_Data 폴더를 여세요",
+          "그리고 GenshinImpact_Data → webCaches → 2.15.0.0 → Cache → Cache_Data 폴더를 여세요",
           "\"data_2\" 파일을 마우스 오른쪽 버튼으로 클릭하고 \"연결 프로그램\" 에서 메모장을 선택하세요 (\"다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다\" 같은 에러가 발생하면 먼저 게임을 끄세요)",
           "CTRL+F 키를 누르고 \"주위에 배치\" 를 체크한 다음 방향을 \"위로\" 로 설정하고 찾을 내용에 \"e20190909gacha-v2\" (큰따옴표 없이) 를 입력 후 다음 찾기 버튼을 클릭하세요",
           "https://webstatic 부터 game_biz=hk4e_global 까지의 모든 링크를 다음처럼 보이게 복사하세요: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
