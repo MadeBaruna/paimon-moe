@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    arataki_itto: {
-      name: 'Arataki Itto',
+    neuvillette: {
+      name: 'Neuvillette',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    chiori: {
-      name: 'Chiori',
+    kaedehara_kazuha: {
+      name: 'Kaedehara Kazuha',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300062;
-  const image = 'itto chiori.png';
+  const bannerId = 300063;
+  const image = 'neuvillette kazuha.png';
   const width = 800;
-  const height = 394;
+  const height = 482;
 
   let loading = true;
   let user = '';

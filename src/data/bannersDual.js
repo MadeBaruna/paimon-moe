@@ -903,4 +903,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Decree of the Deeps 2': [
+    {
+      name: 'Decree of the Deeps',
+      image: 2,
+      shortName: 'Neuvillette',
+      start: '2024-04-02 18:00:00',
+      end: '2024-04-23 14:59:00',
+      color: '#72fefd',
+      featured: ['neuvillette', 'kaedehara_kazuha'],
+      featuredRare: ['barbara', 'xingqiu', 'yanfei'],
+      version: '4.5',
+    },
+    {
+      name: 'Leaves in the Wind',
+      image: 4,
+      shortName: 'Kazuha',
+      start: '2024-04-02 18:00:00',
+      end: '2024-04-23 14:59:00',
+      color: '#8FFFDE',
+      featured: ['neuvillette', 'kaedehara_kazuha'],
+      featuredRare: ['barbara', 'xingqiu', 'yanfei'],
+      version: '4.5',
+    },
+  ],
 };
