@@ -6,3 +6,5 @@ yarn-error.log
 .svelte-kit
 /build
 .env
+/src/data/secret/
+/.idea/
