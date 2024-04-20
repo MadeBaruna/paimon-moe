@@ -3,7 +3,7 @@
 
   import { getContext, onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
-  import { mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiClose, mdiInformation, mdiLoading } from '@mdi/js';
+  import { mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading, mdiPencilOutline } from '@mdi/js';
   import { todos, loading } from '../stores/todo';
   import { ar, wl } from '../stores/server';
   import { itemList as itemListData } from '../data/itemList';
@@ -11,6 +11,7 @@
   import Icon from '../components/Icon.svelte';
   import Button from '../components/Button.svelte';
   import TodoDeleteModal from '../components/TodoDeleteModal.svelte';
+  import TodoEditWeaponModal from '../components/TodoEditWeaponModal.svelte';
   import { getCurrentDay } from '../stores/server';
   import { itemGroup } from '../data/itemGroup';
   import { dropRates } from '../data/dropRates';
@@ -104,6 +105,24 @@
         styleWindow: { background: '#25294A', width: '400px' },
       },
     );
+  }
+
+  function canEditTodo(index) {
+    const todo = $todos[index];
+
+    if (todo.type == "character") {
+      if (todo.formatVersion != null && todo.formatVersion == 2) {
+        return true;
+      }
+    }
+
+    if (todo.type == "weapon") {
+      if (todo.formatVersion != null && todo.formatVersion == 2) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   function decrease(key, val) {
@@ -268,6 +287,27 @@
     id = Math.random();
   }
 
+  function openEditModal(index) {
+    if (index < 0 && index > $todos.length) return;
+
+    const todo = $todos[index];
+    
+    if (todo.type == "weapon") {
+      openModal(
+        TodoEditWeaponModal,
+        {
+          todo: todo,
+          todoIndex: index,
+          cancel: closeModal,
+        },
+        {
+          closeButton: false,
+          styleWindow: { background: '#00000000', width: '80vw'},
+        },
+      );
+    }
+  }
+
   onMount(async () => {
     await tick();
     id = Math.random();
@@ -288,6 +328,7 @@
     content="Genshin Impact Todo List to plan and track items and mora you need, you can also see resin approximation needed to farm the items!"
   />
 </svelte:head>
+
 <div class="lg:ml-64 pt-20 px-2 md:px-8 lg:pt-8">
   <Masonry stretchFirst={true} bind:refreshLayout bind:columnCount items={id}>
     <h1 class="font-display font-black text-3xl lg:text-left lg:text-5xl text-white">{$t('todo.title')}</h1>
@@ -459,9 +500,16 @@
               <p class="text-gray-500">Added from items page</p>
             </div>
           {/if}
-          <Button disabled={i === 0} on:click={() => reorder(i, -1)} rounded={false} size="sm" className="rounded-l-xl">
+          <Button 
+            disabled={i === 0} 
+            on:click={() => reorder(i, -1)} 
+            rounded={false} 
+            size="sm" 
+            className="rounded-l-xl"
+          >
             <Icon path={mdiChevronLeft} color="white" />
           </Button>
+
           <Button
             disabled={i === $todos.length - 1}
             on:click={() => reorder(i, 1)}
@@ -498,6 +546,18 @@
         </table>
         <div class="flex mt-2 items-end">
           <p class="flex-1 text-gray-400"># {i + 1}</p>
+          <!-- Edit button -->
+          <Button 
+          on:click={() => openEditModal(i)}
+          disabled={!canEditTodo(i)} 
+          rounded={true} 
+          size="sm"
+          className="px-2 mx-2"
+          >
+          <Icon path={mdiPencilOutline} color="white" size={0.8}/>
+          Edit
+          </Button>
+          <!-- Delete button -->
           <Button on:click={() => askDeleteTodo(i)} size="sm" className="px-2">
             <Icon path={mdiClose} color="white" size={0.8} />
             {$t('todo.delete.delete')}
