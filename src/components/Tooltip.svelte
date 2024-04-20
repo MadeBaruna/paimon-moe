@@ -1,5 +1,8 @@
 <script>
   export let title = '';
+  export let enabled = true;
+  export let style = '';
+
   let isHovered = false;
   let x;
   let y;
@@ -22,8 +25,8 @@
   <slot />
 </i>
 
-{#if isHovered}
-  <div style="top: {y}px; left: {x}px;" class="tooltip">{title}</div>
+{#if isHovered && enabled}
+  <div style="{style} top: {y}px; left: {x}px;" class="tooltip">{title}</div>
 {/if}
 
 <style lang="postcss">

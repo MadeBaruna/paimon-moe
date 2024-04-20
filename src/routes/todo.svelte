@@ -10,6 +10,7 @@
   import Masonry from '../components/Masonry.svelte';
   import Icon from '../components/Icon.svelte';
   import Button from '../components/Button.svelte';
+  import Tooltip from '../components/Tooltip.svelte';
   import TodoDeleteModal from '../components/TodoDeleteModal.svelte';
   import TodoEditWeaponModal from '../components/TodoEditWeaponModal.svelte';
   import { getCurrentDay } from '../stores/server';
@@ -546,17 +547,19 @@
         </table>
         <div class="flex mt-2 items-end">
           <p class="flex-1 text-gray-400"># {i + 1}</p>
-          <!-- Edit button -->
-          <Button 
-          on:click={() => openEditModal(i)}
-          disabled={!canEditTodo(i)} 
-          rounded={true} 
-          size="sm"
-          className="px-2 mx-2"
-          >
-          <Icon path={mdiPencilOutline} color="white" size={0.8}/>
-          Edit
-          </Button>
+          <Tooltip title={$t("todo.edit.tooltipCannotEdit")} style="max-width: 30ch;" enabled={!canEditTodo(i)}>
+            <!-- Edit button -->
+            <Button 
+            on:click={() => openEditModal(i)}
+            disabled={!canEditTodo(i)} 
+            rounded={true} 
+            size="sm"
+            className="px-2 mx-2"
+            >
+            <Icon path={mdiPencilOutline} color="white" size={0.8}/>
+            Edit
+            </Button>
+          </Tooltip>
           <!-- Delete button -->
           <Button on:click={() => askDeleteTodo(i)} size="sm" className="px-2">
             <Icon path={mdiClose} color="white" size={0.8} />
