@@ -343,34 +343,38 @@
       {:else}
         <p class="font-bold text-xl">{$t('todo.empty.0')}<br />{$t('todo.empty.1')}</p>
       {/if}
-      {#if Object.entries(todayOnlyItems).length > 0}
-        <div class="rounded-xl bg-background px-4 py-2 mb-2">
-          <p class="font-semibold mb-2 text-center">{$t('todo.farmableToday')}</p>
-          <table class="w-full">
-            {#each Object.entries(todayOnlyItems) as [id, amount]}
-              <tr class="today-only">
-                <td class="text-right border-b border-gray-700 py-1">
-                  <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-nowrap`}>
-                    {numberFormat.format(amount)}
-                    <Icon size={0.5} path={mdiClose} /></span
-                  >
-                </td>
-                <td class="border-b border-gray-700 py-1">
-                  <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} block`}>
-                    <span class="w-6 inline-block">
-                      <img
-                        class="h-6 inline-block mr-1"
-                        src={`/images/items/${itemList[id].id}.png`}
-                        alt={itemList[id].name}
-                      />
+      {#if isSunday}
+        <div class="text-white text-center">{$t('home.items.sunday')}</div> <br />
+      {:else}
+        {#if Object.entries(todayOnlyItems).length > 0}
+          <div class="rounded-xl bg-background px-4 py-2 mb-2">
+            <p class="font-semibold mb-2 text-center">{$t('todo.farmableToday')}</p>
+            <table class="w-full">
+              {#each Object.entries(todayOnlyItems) as [id, amount]}
+                <tr class="today-only">
+                  <td class="text-right border-b border-gray-700 py-1">
+                    <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-nowrap`}>
+                      {numberFormat.format(amount)}
+                      <Icon size={0.5} path={mdiClose} /></span
+                    >
+                  </td>
+                  <td class="border-b border-gray-700 py-1">
+                    <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} block`}>
+                      <span class="w-6 inline-block">
+                        <img
+                          class="h-6 inline-block mr-1"
+                          src={`/images/items/${itemList[id].id}.png`}
+                          alt={itemList[id].name}
+                        />
+                      </span>
+                      {$t(itemList[id].name)}
                     </span>
-                    {$t(itemList[id].name)}
-                  </span>
-                </td>
-              </tr>
-            {/each}
-          </table>
-        </div>
+                  </td>
+                </tr>
+              {/each}
+            </table>
+          </div>
+        {/if}
       {/if}
       {#if resin > 0}
         <div class="rounded-xl bg-background px-4 py-2 mb-2">
