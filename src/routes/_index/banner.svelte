@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    neuvillette: {
-      name: 'Neuvillette',
+    arlecchino: {
+      name: 'Arlecchino',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    kaedehara_kazuha: {
-      name: 'Kaedehara Kazuha',
+    lyney: {
+      name: 'Lyney',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300063;
-  const image = 'neuvillette kazuha.png';
+  const bannerId = 300064;
+  const image = 'arlecchino lyney.png';
   const width = 800;
-  const height = 482;
+  const height = 398;
 
   let loading = true;
   let user = '';
