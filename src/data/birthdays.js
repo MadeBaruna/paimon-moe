@@ -48,6 +48,7 @@ export const birthdays = {
   amber: [8, 10],
   navia: [8, 16],
   chiori: [8, 17],
+  arlecchino: [8, 22],
   ningguang: [8, 26],
   mona: [8, 31],
   chongyun: [9, 7],
