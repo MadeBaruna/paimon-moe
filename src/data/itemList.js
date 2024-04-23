@@ -1485,4 +1485,11 @@ export const itemList = {
     name: 'Chasmlight Fin',
     rarity: 4,
   },
+
+  fragment_of_a_golden_melody: {
+    id: 'fragment_of_a_golden_melody',
+    name: 'Fragment of a Golden Melody',
+    rarity: 4,
+  },
+  fading_candle: { id: 'fading_candle', name: 'Fading Candle' },
 };
