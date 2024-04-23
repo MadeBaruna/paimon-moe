@@ -1492,4 +1492,19 @@ export const itemList = {
     rarity: 4,
   },
   fading_candle: { id: 'fading_candle', name: 'Fading Candle' },
+  ruined_hilt: {
+    id: 'ruined_hilt',
+    name: 'Ruined Hilt',
+    rarity: 2,
+  },
+  splintered_hilt: {
+    id: 'splintered_hilt',
+    name: 'Splintered Hilt',
+    rarity: 3,
+  },
+  still_smoldering_hilt: {
+    id: 'still_smoldering_hilt',
+    name: 'Still-Smoldering Hilt',
+    rarity: 4,
+  },
 };
