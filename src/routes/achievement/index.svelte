@@ -15,6 +15,7 @@
   import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
   import Select from '../../components/Select.svelte';
+  import VersionSelect from './_VersionSelect.svelte';
   import { pushToast } from '../../stores/toast';
   import Ad from '../../components/Ad.svelte';
 
@@ -41,42 +42,6 @@
   let nameFilter = '';
   let sortedAchievements = Object.entries(data).sort((a, b) => a[1].order - b[1].order);
 
-  const versions = [
-    '1.0',
-    '1.1',
-    '1.2',
-    '1.3',
-    '1.4',
-    '1.5',
-    '1.6',
-    '2.0',
-    '2.1',
-    '2.2',
-    '2.3',
-    '2.4',
-    '2.5',
-    '2.6',
-    '2.7',
-    '2.8',
-    '3.0',
-    '3.1',
-    '3.2',
-    '3.3',
-    '3.4',
-    '3.5',
-    '3.6',
-    '3.7',
-    '3.8',
-    '4.0',
-    '4.1',
-    '4.2',
-    '4.3',
-    '4.4',
-    '4.5',
-  ].map((e) => ({
-    label: e,
-    value: e,
-  }));
   let versionFilter = [];
 
   const types = [
@@ -203,7 +168,7 @@
     activeIndex = index;
 
     const filterVersion = versionFilter.length > 0;
-    const filteredVersion = versionFilter.map((e) => e.value);
+    const filteredVersion = versionFilter;
 
     let filterComission = [];
     for (const e of typeFilter) {
@@ -426,12 +391,10 @@
             class="pl-4 w-full min-h-full pr-4 text-white placeholder-gray-500 leading-none bg-transparent border-none focus:outline-none"
           />
         </div>
-        <Select
-          multiselect
-          options={versions}
-          bind:selected={versionFilter}
+        <VersionSelect
+          bind:value={versionFilter}
           placeholder={$t('achievement.version')}
-          className="w-full md:w-40"
+          className="w-full md:w-48"
           on:change={updateSelectFilter}
         />
         <Select
