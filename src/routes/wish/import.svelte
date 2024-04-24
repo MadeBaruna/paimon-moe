@@ -237,7 +237,7 @@
     url.searchParams.append('lang', 'en-us');
     url.hash = '';
     url.host = 'hk4e-api-os.hoyoverse.com';
-    url.pathname = 'event/gacha_info/api/getGachaLog';
+    url.pathname = 'gacha_info/api/getGachaLog';
 
     if ($server === 'China') {
       url.host = 'hk4e-api.mihoyo.com';
