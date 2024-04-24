@@ -167,7 +167,7 @@
     url.searchParams.append('lang', 'en-us');
     url.hash = '';
     url.host = 'hk4e-api-os.mihoyo.com';
-    url.pathname = 'event/gacha_info/api/getGachaLog';
+    url.pathname = 'gacha_info/api/getGachaLog';
 
     currentBanner = type.name;
 
