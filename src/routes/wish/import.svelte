@@ -240,7 +240,7 @@
     url.pathname = 'gacha_info/api/getGachaLog';
 
     if ($server === 'China') {
-      url.host = 'hk4e-api.mihoyo.com';
+      url.host = 'public-operation-hk4e.mihoyo.com';
     }
 
     currentBanner = type.name;
