@@ -12,6 +12,7 @@
   import Button from '../components/Button.svelte';
   import Tooltip from '../components/Tooltip.svelte';
   import TodoDeleteModal from '../components/TodoDeleteModal.svelte';
+  import TodoEditCharacterModal from '../components/TodoEditCharacterModal.svelte';
   import TodoEditWeaponModal from '../components/TodoEditWeaponModal.svelte';
   import { getCurrentDay } from '../stores/server';
   import { itemGroup } from '../data/itemGroup';
@@ -124,6 +125,61 @@
     }
 
     return false;
+  }
+
+  function openEditModal(index) {
+    if (index < 0 && index > $todos.length) return;
+
+    const todo = $todos[index];
+
+    // It would be nice if these styles could be put in a class, but svelte doesn't seem to recognize classes defined in this file
+    // when opening with `openModal`, so overriding each element's style here directly is the compromise. 
+    const modalOptions = {
+      closeButton: false,
+      styleWindow: { 
+        background: '#00000000',
+        width: 'max-content', 
+        margin: '0 auto',
+        // Aligns the content element vertically. Centering through flexbox is necessary since the final height of
+        // the content element is not known.
+        display: 'flex',
+        'align-items': 'center',
+      },
+      styleContent: { 
+        // svelte-simple-modal's content element has padding by default for some reason.
+        // This causes slight horizontal scroll when combined with the TodoEditCharacterModal div. 
+        // Disabling padding fixes the issue.
+        padding: "0",
+        'max-height': 'calc(100dvh - 4rem)',
+        margin: '0 auto'
+      }
+    };
+    
+    if (todo.type == "character") {
+      openModal(
+        TodoEditCharacterModal,
+        {
+          todo: todo,
+          todoIndex: index,
+          cancel: closeModal,
+        },
+        modalOptions
+      );   
+    }
+    else if (todo.type == "weapon") {
+      openModal(
+        TodoEditWeaponModal,
+        {
+          todo: todo,
+          todoIndex: index,
+          cancel: closeModal,
+        },
+        {
+          closeButton: false,
+          styleWindow: { background: '#00000000', width: '80vw'},
+        },
+      );
+    }
   }
 
   function decrease(key, val) {
@@ -288,26 +344,6 @@
     id = Math.random();
   }
 
-  function openEditModal(index) {
-    if (index < 0 && index > $todos.length) return;
-
-    const todo = $todos[index];
-    
-    if (todo.type == "weapon") {
-      openModal(
-        TodoEditWeaponModal,
-        {
-          todo: todo,
-          todoIndex: index,
-          cancel: closeModal,
-        },
-        {
-          closeButton: false,
-          styleWindow: { background: '#00000000', width: '80vw'},
-        },
-      );
-    }
-  }
 
   onMount(async () => {
     await tick();

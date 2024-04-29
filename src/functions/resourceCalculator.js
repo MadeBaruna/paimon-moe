@@ -1,3 +1,7 @@
+import { itemList } from '../data/itemList';
+import { talent as talentTemplate } from '../data/talent';
+import { characters } from '../data/characters';
+
 function getSuffix(val) {
   switch (val) {
     case 1:
@@ -88,8 +92,6 @@ function resolveExpMaterials(remainingExp, expMaterials, materialsUsed, material
  * 
  * @param {number} exp
  * @param {ExpMaterial[]} expMaterials
- * @param {ExpMaterialStack[]} materialsUsed
- * @param {number} materialIndex
  * 
  * @returns {LevelResult} 
 */
@@ -150,4 +152,190 @@ export function calculateWeaponAscensionMaterials(weapon, fromAscension, toAscen
   );
 
   return result;
+}
+
+/**
+ * Calculates what materials (including mora) are needed to reach an amount of level EXP for a character.
+ * 
+ * @param {number} exp
+ * @param {ExpMaterial[]} expMaterials
+ * 
+ * @returns {LevelResult} 
+*/
+export function calculateCharacterLevelMaterials(exp, expMaterials) {
+  const result = resolveExpMaterials(exp, expMaterials, [], 0);
+  result.mora = (Math.floor(exp / 1000) * 1000) / 5;
+  return result;
+}
+
+/**
+ * @typedef CharacterAscensionResult
+ * @property {{}} materials
+ * @property {number} mora
+ * @property {Array} unknownList
+ * 
+ * @param {Object} character 
+ * @param {number} fromAscension 
+ * @param {number} toAscension
+ * 
+ * @returns {CharacterAscensionResult}
+ */
+export function calculateCharacterAscensionMaterials(character, fromAscension, toAscension) {
+  const result = character.ascension.slice(fromAscension, toAscension).reduce(
+    (sum, ascension, index) => {
+      const materials = sum.materials;
+      const unknownList = sum.unknownList;
+
+      if (ascension.mora === 0) {
+        if (unknownList[index + fromAscension] === undefined) {
+          unknownList[index + fromAscension] = ['Mora amount'];
+        }
+      }
+
+      sum.mora += ascension.mora;
+
+      for (const [i, stack] of ascension.items.entries()) {
+        if (stack.item.id === 'unknown') {
+          if (unknownList[index + fromAscension] === undefined) {
+            unknownList[index + fromAscension] = [];
+          }
+
+          unknownList[index + fromAscension].push(`${i + 1}${getSuffix(i + 1)} material`);
+        }
+
+        if (materials[stack.item.id] === undefined) {
+          materials[stack.item.id] = { item: stack.item, amount: 0, order: i };
+        }
+        materials[stack.item.id].amount += stack.amount;
+      }
+
+      return sum;
+    },
+    {
+      mora: 0,
+      materials: {},
+      unknownList: []
+    },
+  );
+
+  return result;
+}
+
+const talentMatOrderOffset = 0;
+const bookOrderOffset = 100;
+const bossMatOrderOffset = 1000;
+const crownOrderOffset = 10000;
+/**
+ * @typedef CharacterTalentResult
+ * @property {{}} materials
+ * @property {number} mora
+ * 
+ * @typedef TalentLevels
+ * @property {number} first
+ * @property {number} second
+ * @property {number} third
+ * 
+ * @param {Object} character 
+ * @param {TalentLevels} fromLevels
+ * @param {TalentLevels} toLevels
+ * 
+ * @returns {CharacterTalentResult}
+ */
+export function calculateTalentMaterials(character, fromLevels, toLevels) {
+  let mora = 0;
+  let items = {};
+
+  Object.keys(fromLevels).forEach((talentName, i) => {
+    talentTemplate.slice(fromLevels[talentName] - 1, toLevels[talentName] - 1).forEach((talent) => {
+      mora += talent.mora;
+
+      const currentBook = character.material.book[talent.book.rarity - 2];
+      const currentMaterial = character.material.material[talent.commonMaterial.rarity - 1];
+
+      if (items[currentBook.id] === undefined) {
+        items[currentBook.id] = { item: currentBook, amount: 0, order: bookOrderOffset + i };
+      }
+      items[currentBook.id].amount += talent.book.amount;
+
+      if (items[currentMaterial.id] === undefined) {
+        items[currentMaterial.id] = { item: currentMaterial, amount: 0, order: talentMatOrderOffset + i };
+      }
+      items[currentMaterial.id].amount += talent.commonMaterial.amount;
+
+      if (talent.bossMaterial > 0) {
+        if (items[character.material.boss.id] === undefined) {
+          items[character.material.boss.id] = { item: character.material.boss, amount: 0, order: bossMatOrderOffset + i };
+        }
+        items[character.material.boss.id].amount += talent.bossMaterial;
+      }
+
+      if (talent.eventMaterial > 0) {
+        if (items['crown_of_insight'] === undefined) {
+          items['crown_of_insight'] = { item: itemList.crown_of_insight, amount: 0, order: crownOrderOffset };
+        }
+        items['crown_of_insight'].amount += talent.eventMaterial;
+      }
+    });
+  });
+
+  return {items, mora};
+}
+
+/**
+ * @param {Object} character 
+ * @param {TalentLevels} fromLevels
+ * @param {TalentLevels} toLevels
+ * 
+ * @returns {CharacterTalentResult}
+ */
+export function calculateTalentMaterialsTraveler(character, fromLevels, toLevels) {
+  const mora = 0;
+  let items = {};
+
+  Object.keys(fromLevels).forEach((talentName, i) => {
+    for (let i = fromLevels[talentName] - 1; i < toLevels[talentName] - 1; i++) {
+      mora += talent[i].mora;
+
+      let currentBook = character.material.book[i];
+      let currentMaterial = character.material.material[i];
+
+      if (character.id === characters.traveler_geo.id && talentName === 'first') {
+        currentBook = character.material_atk.book[i];
+        currentMaterial = character.material_atk.material[i];
+      }
+
+      const key = character.id === characters.traveler_geo.id && talentName === 'first' ? 'material_atk' : 'material';
+
+      const bookAmount = talent[i].book.amount;
+      const commonMaterial = talent[i].commonMaterial.amount;
+      const bossMaterial = talent[i].bossMaterial;
+      const eventMaterial = talent[i].eventMaterial;
+
+      if (items[currentBook.id] === undefined) {
+        items[currentBook.id] = { item: currentBook, amount: 0, order: bookOrderOffset + i };
+      }
+      items[currentBook.id].amount += bookAmount;
+
+      if (items[currentMaterial.id] === undefined) {
+        items[currentMaterial.id] = { item: currentMaterial, amount: 0, order: talentMatOrderOffset + i };
+      }
+      items[currentMaterial.id].amount += commonMaterial;
+
+      if (bossMaterial > 0) {
+        if (items[character[key].boss.id] === undefined) {
+          items[character[key].boss.id] = { item: character[key].boss, amount: 0, order: bossMatOrderOffset + i };
+        }
+        items[character[key].boss.id].amount += bossMaterial;
+      }
+
+      if (eventMaterial > 0) {
+        if (items['crown_of_insight'] === undefined) {
+          items['crown_of_insight'] = { item: itemList.crown_of_insight, amount: 0, order: crownOrderOffset + i };
+        }
+        items['crown_of_insight'].amount += eventMaterial;
+      }
+    }
+  });
+
+  return {items, mora};
 }
