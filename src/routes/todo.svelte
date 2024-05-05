@@ -29,8 +29,8 @@
   let columnCount = 1;
   let numberFormat = Intl.NumberFormat();
   let adding = false;
-  let isSunday = false;
   let today = getCurrentDay();
+  let isSunday = today == "sunday";
   let summary = {};
   let todayOnlyItems = {};
   let resin = 0;
