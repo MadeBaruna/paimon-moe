@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    arlecchino: {
-      name: 'Arlecchino',
+    baizhu: {
+      name: 'Baizhu',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    lyney: {
-      name: 'Lyney',
+    wanderer: {
+      name: 'Wanderer',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300064;
-  const image = 'arlecchino lyney.png';
+  const bannerId = 300065;
+  const image = 'baizhu wanderer.png';
   const width = 800;
-  const height = 398;
+  const height = 403;
 
   let loading = true;
   let user = '';

@@ -953,4 +953,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'From Ashes Reborn 3': [
+    {
+      name: 'From Ashes Reborn',
+      image: 3,
+      shortName: 'Wanderer',
+      start: '2024-05-14 18:00:00',
+      end: '2024-06-04 14:59:00',
+      color: '#31cae1',
+      featured: ['wanderer', 'baizhu'],
+      featuredRare: ['layla', 'faruzan', 'beidou'],
+      version: '4.6',
+    },
+    {
+      name: 'Immaculate Pulse',
+      image: 3,
+      shortName: 'Baizhu',
+      start: '2024-05-14 18:00:00',
+      end: '2024-06-04 14:59:00',
+      color: '#8fdaa0',
+      featured: ['wanderer', 'baizhu'],
+      featuredRare: ['layla', 'faruzan', 'beidou'],
+      version: '4.6',
+    },
+  ],
 };
