@@ -1,7 +1,6 @@
 <script>
   import { t } from 'svelte-i18n';
 
-  import { onMount } from 'svelte';
   import { fade } from 'svelte/transition';
   import { mdiCheckCircleOutline, mdiClose, mdiInformationOutline } from '@mdi/js';
 
@@ -14,7 +13,6 @@
 
   import { characterExp } from '../data/characterExp';
   import { characters, isTravelerId, minCharacterLevel, maxCharacterLevel } from '../data/characters';
-  import { talent } from '../data/talent';
   import { updateTodo } from '../stores/todo';
   import { itemList } from '../data/itemList';
   import * as calculator from '../functions/resourceCalculator';

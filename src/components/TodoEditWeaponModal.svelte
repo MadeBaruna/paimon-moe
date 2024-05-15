@@ -4,10 +4,8 @@
   import { fade } from 'svelte/transition';
   import { mdiStar, mdiClose, mdiInformationOutline, mdiCheckCircleOutline } from '@mdi/js';
 
-  import Select from './Select.svelte';
   import Input from './Input.svelte';
   import AscensionSelector from './AscensionSelector.svelte';
-  import WeaponSelect from './WeaponSelect.svelte';
   import Checkbox from './Checkbox.svelte';
   import Check from './Check.svelte';
   import Button from './Button.svelte';
@@ -200,66 +198,65 @@
   }
 </script>
 
-<div class="modal bg-item rounded-xl p-4">
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4">
-    <div>
-      <!-- Todo item banner -->
-      <div class="flex items-center mb-4 p-3 rounded-md text-white bg-item">
-        <img
-          class="h-8 inline-block mr-2"
-          src={`/images/weapons/${todo.weapon ? todo.weapon.id : 'any_weapon_1'}.png`}
-          alt={todo.weapon ? todo.weapon.name : `Unknown Weapon`} />
-        <div class="flex-1">
-          <p class="font-bold">{todo.weapon ? $t(todo.weapon.name) : 'Weapon'}</p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <p class="text-white text-center mt-3 mb-2">{$t('calculator.weapon.current')}</p>
-          <Input
-            className="mb-2"
-            on:change={onChange}
-            type="number"
-            min={1}
-            max={80}
-            bind:value={currentLevel}
-            placeholder={$t('calculator.weapon.inputCurrentLevel')}
-          />
-          <Input
-            className="mb-2"
-            on:change={onChange}
-            type="number"
-            min={0}
-            bind:value={currentExp}
-            placeholder={$t('calculator.weapon.inputCurrentExp')}
-          />
-          {#if withAscension}
-            <AscensionSelector min={minAscension} bind:value={currentAscension} on:change={onChange} />
-          {/if}
-        </div>
-        <div>
-          <p class="text-white text-center mt-3 mb-2">{$t('calculator.weapon.intended')}</p>
-          <Input
-            className="mb-2"
-            on:change={onChange}
-            type="number"
-            min={currentLevel}
-            max={80}
-            bind:value={intendedLevel}
-            placeholder={$t('calculator.weapon.inputIntendedLevel')}
-          />
-          {#if withAscension}
-            <AscensionSelector
-              min={Math.max(currentAscension, minIntendedAscension)}
-              bind:value={intendedAscension}
-              on:change={onChange}
-            />
-          {/if}
-        </div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-4 bg-item rounded-xl px-4 py-8">
+  <div>
+    <!-- Todo item banner -->
+    <div class="flex items-center mb-4 p-3 rounded-md text-white bg-item">
+      <img
+        class="h-8 inline-block mr-2"
+        src={`/images/weapons/${todo.weapon ? todo.weapon.id : 'any_weapon_1'}.png`}
+        alt={todo.weapon ? todo.weapon.name : `Unknown Weapon`} />
+      <div class="flex-1">
+        <p class="font-bold">{todo.weapon ? $t(todo.weapon.name) : 'Weapon'}</p>
       </div>
     </div>
-    <div class="flex flex-col pl-1">
-      <p class="text-white text-center md:text-left mb-1">{$t('calculator.weapon.resource')}</p>
+    <div>
+      <div>
+        <p class="text-white text-center mt-3 mb-2">{$t('calculator.weapon.current')}</p>
+        <Input
+          className="mb-2"
+          on:change={onChange}
+          type="number"
+          min={1}
+          max={80}
+          bind:value={currentLevel}
+          placeholder={$t('calculator.weapon.inputCurrentLevel')}
+        />
+        <Input
+          className="mb-2"
+          on:change={onChange}
+          type="number"
+          min={0}
+          bind:value={currentExp}
+          placeholder={$t('calculator.weapon.inputCurrentExp')}
+        />
+        {#if withAscension}
+          <AscensionSelector min={minAscension} bind:value={currentAscension} on:change={onChange} />
+        {/if}
+      </div>
+      <div>
+        <p class="text-white text-center mt-3 mb-2">{$t('calculator.weapon.intended')}</p>
+        <Input
+          className="mb-2"
+          on:change={onChange}
+          type="number"
+          min={currentLevel}
+          max={80}
+          bind:value={intendedLevel}
+          placeholder={$t('calculator.weapon.inputIntendedLevel')}
+        />
+        {#if withAscension}
+          <AscensionSelector
+            min={Math.max(currentAscension, minIntendedAscension)}
+            bind:value={intendedAscension}
+            on:change={onChange}
+          />
+        {/if}
+      </div>
+    </div>
+  </div>
+  <div class="flex flex-col pl-1">
+    <p class="text-white text-center md:text-left mb-1">{$t('calculator.weapon.resource')}</p>
       {#each selectableExpItems as item}
         <div class="mb-1">
           <Checkbox disabled={item.disabled} bind:checked={item.selected} on:change={onChange}>
@@ -294,77 +291,76 @@
             {/each}
           </div>
         {/if}
-          <div transition:fade={{ duration: 100 }} class="wrap-table bg-background rounded-xl p-4 mt-2 block md:inline-block">
-            <table>
+      {/if}
+      <div transition:fade={{ duration: 100 }} class="wrap-table bg-background rounded-xl p-4 mt-2 block md:inline-block">
+        <table>
+          {#if calculated}
+            <tr>
+              <td class="text-right border-b border-gray-700 py-1">
+                <span class="text-white mr-2 whitespace-nowrap">
+                  {numberFormat.format(moraNeeded)}
+                  <Icon size={0.5} path={mdiClose} />
+                </span>
+              </td>
+              <td class="border-b border-gray-700 py-1">
+                <span class="text-white">
+                  <span class="w-6 inline-block">
+                    <img class="h-6 inline-block mr-1" src="/images/mora.png" alt="Mora" />
+                  </span>
+                  {$t('calculator.weapon.mora')}
+                </span>
+              </td>
+            </tr>
+            {#each levelMaterials as stack, i}
               <tr>
                 <td class="text-right border-b border-gray-700 py-1">
                   <span class="text-white mr-2 whitespace-nowrap">
-                    {numberFormat.format(moraNeeded)}
+                    {stack.amount}
                     <Icon size={0.5} path={mdiClose} />
                   </span>
                 </td>
                 <td class="border-b border-gray-700 py-1">
                   <span class="text-white">
                     <span class="w-6 inline-block">
-                      <img class="h-6 inline-block mr-1" src="/images/mora.png" alt="Mora" />
+                      <img class="h-6 inline-block mr-1" src={`/images/items/${stack.material.id}.png`} alt={stack.material.name} />
                     </span>
-                    {$t('calculator.weapon.mora')}
+                    {$t(stack.material.name)}
                   </span>
                 </td>
               </tr>
-              {#each levelMaterials as stack, i}
-                <tr>
-                  <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-nowrap">
-                      {stack.amount}
-                      <Icon size={0.5} path={mdiClose} />
-                    </span>
-                  </td>
-                  <td class="border-b border-gray-700 py-1">
-                    <span class="text-white">
-                      <span class="w-6 inline-block">
-                        <img class="h-6 inline-block mr-1" src={`/images/items/${stack.material.id}.png`} alt={stack.material.name} />
+            {/each}
+            {#if ascensionMaterials != null}
+              {#each ascensionMaterials as [id, stack]}
+                {#if stack.amount > 0}
+                  <tr>
+                    <td class="text-right border-b border-gray-700 py-1">
+                      <span class="text-white mr-2 whitespace-nowrap">
+                        {stack.amount}
+                        <Icon size={0.5} path={mdiClose} />
                       </span>
-                      {$t(stack.material.name)}
-                    </span>
-                  </td>
-                </tr>
+                    </td>
+                    <td class="border-b border-gray-700 py-1">
+                      <span class="text-white">
+                        <span class="w-6 inline-block">
+                          <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={stack.item.name} />
+                        </span>
+                        {$t(stack.item.name)}
+                      </span>
+                    </td>
+                  </tr>
+                {/if}
               {/each}
-              {#if ascensionMaterials != null}
-                {#each ascensionMaterials as [id, stack]}
-                  {#if stack.amount > 0}
-                    <tr>
-                      <td class="text-right border-b border-gray-700 py-1">
-                        <span class="text-white mr-2 whitespace-nowrap">
-                          {stack.amount}
-                          <Icon size={0.5} path={mdiClose} />
-                        </span>
-                      </td>
-                      <td class="border-b border-gray-700 py-1">
-                        <span class="text-white">
-                          <span class="w-6 inline-block">
-                            <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={stack.item.name} />
-                          </span>
-                          {$t(stack.item.name)}
-                        </span>
-                      </td>
-                    </tr>
-                  {/if}
-                {/each}
-              {/if}
-              {#if expWasted > 0}
-                <tr>
-                  <td />
-                  <td class="text-red-400 py-1">{expWasted} {$t('calculator.weapon.expWasted')}</td>
-                </tr>
-              {/if}
-            </table>
-          </div>
-        {:else}
-          <!-- Placeholder for calculation results. Also fills space so confirm and cancel buttons will always be at the bottom. -->
-          <div class="bg-background-secondary grow mt-2 rounded-xl"></div>
-        {/if}
-        <div class="flex gap-2">
+            {/if}
+            {#if expWasted > 0}
+              <tr>
+                <td />
+                <td class="text-red-400 py-1">{expWasted} {$t('calculator.weapon.expWasted')}</td>
+              </tr>
+            {/if}
+          {/if}
+        </table>
+      </div>
+      <div class="flex gap-2">
           <Button className="mt-2 w-min grow" on:click={cancel}>
             {$t('todo.edit.cancel')}
           </Button>
@@ -379,18 +375,11 @@
               <span in:fade={{ duration: 100 }}>{$t('todo.edit.confirm')}</span>
             {/if}
           </Button>
-        </div>
       </div>
     </div>
 </div>
 
 <style lang="postcss">
-  .modal {
-    @apply bg-item;
-    @apply px-4;
-    @apply py-8;
-  }
-
   .wrap-table {
     overflow: hidden scroll;
     flex-basis: 20vh;
