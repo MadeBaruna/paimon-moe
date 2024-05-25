@@ -729,6 +729,151 @@ export const characters = {
     },
     element: elements.geo,
   },
+  arlecchino: {
+    id: 'arlecchino',
+    name: 'Arlecchino',
+    rarity: 5,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 13103,
+      atk: 342,
+      def: 765,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 3,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 2,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 10,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 4,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 20,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 8,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 30,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 12,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 45,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 20,
+          },
+          {
+            item: itemList.rainbow_rose,
+            amount: 60,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.recruits_insignia, itemList.sergeants_insignia, itemList.lieutenants_insignia],
+      book: [itemList.teachings_of_order, itemList.guide_to_order, itemList.philosophies_of_order],
+      boss: itemList.fading_candle,
+    },
+    element: elements.pyro,
+  },
   baizhu: {
     id: 'baizhu',
     name: 'Baizhu',

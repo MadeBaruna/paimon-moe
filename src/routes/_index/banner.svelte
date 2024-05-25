@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    arataki_itto: {
-      name: 'Arataki Itto',
+    baizhu: {
+      name: 'Baizhu',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    chiori: {
-      name: 'Chiori',
+    wanderer: {
+      name: 'Wanderer',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300062;
-  const image = 'itto chiori.png';
+  const bannerId = 300065;
+  const image = 'baizhu wanderer.png';
   const width = 800;
-  const height = 394;
+  const height = 403;
 
   let loading = true;
   let user = '';

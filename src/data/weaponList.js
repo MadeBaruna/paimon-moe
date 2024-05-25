@@ -13267,4 +13267,116 @@ export const weaponList = {
       },
     ],
   },
+  crimson_moons_semblance: {
+    id: 'crimson_moons_semblance',
+    name: "Crimson Moon's Semblance",
+    rarity: 5,
+    atk: 48,
+    secondary: 'CRIT Rate',
+    type: weapons.polearm,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.broken_goblet_of_the_pristine_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.ruined_hilt,
+            amount: 5,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.ruined_hilt,
+            amount: 18,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.wine_goblet_of_the_pristine_sea,
+            amount: 9,
+          },
+          {
+            item: itemList.splintered_hilt,
+            amount: 9,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 5,
+          },
+          {
+            item: itemList.splintered_hilt,
+            amount: 18,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.silver_goblet_of_the_pristine_sea,
+            amount: 9,
+          },
+          {
+            item: itemList.still_smoldering_hilt,
+            amount: 14,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.golden_goblet_of_the_pristine_sea,
+            amount: 6,
+          },
+          {
+            item: itemList.still_smoldering_hilt,
+            amount: 27,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
