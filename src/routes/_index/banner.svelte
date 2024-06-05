@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    baizhu: {
-      name: 'Baizhu',
+    clorinde: {
+      name: 'Clorinde',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    wanderer: {
-      name: 'Wanderer',
+    alhaitham: {
+      name: 'Alhaitham',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300065;
-  const image = 'baizhu wanderer.png';
+  const bannerId = 300066;
+  const image = 'clorinde alhaitham.png';
   const width = 800;
-  const height = 403;
+  const height = 371;
 
   let loading = true;
   let user = '';
