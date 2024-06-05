@@ -1507,4 +1507,9 @@ export const itemList = {
     name: 'Still-Smoldering Hilt',
     rarity: 4,
   },
+
+  trishiraite: {
+    id: 'trishiraite',
+    name: 'Trishiraite',
+  },
 };

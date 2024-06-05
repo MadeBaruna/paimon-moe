@@ -2179,6 +2179,151 @@ export const characters = {
     },
     element: elements.cryo,
   },
+  clorinde: {
+    id: 'clorinde',
+    name: 'Clorinde',
+    rarity: 5,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12956,
+      atk: 337,
+      def: 784,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 2,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 10,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 4,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 20,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 8,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 30,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 12,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 45,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.fontemer_unihorn,
+            amount: 20,
+          },
+          {
+            item: itemList.lumitoile,
+            amount: 60,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.transoceanic_pearl, itemList.transoceanic_chunk, itemList.xenochromatic_crystal],
+      book: [itemList.teachings_of_justice, itemList.guide_to_justice, itemList.philosophies_of_justice],
+      boss: itemList.everamber,
+    },
+    element: elements.electro,
+  },
   collei: {
     id: 'collei',
     name: 'Collei',
@@ -8558,6 +8703,151 @@ export const characters = {
       boss: itemList.gilded_scale,
     },
     element: elements.anemo,
+  },
+  sethos: {
+    id: 'sethos',
+    name: 'Sethos',
+    rarity: 4,
+    weapon: weapons.bow,
+    stats: {
+      hp: 9787,
+      atk: 227,
+      def: 560,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.trishiraite,
+            amount: 3,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 2,
+          },
+          {
+            item: itemList.trishiraite,
+            amount: 10,
+          },
+          {
+            item: itemList.faded_red_satin,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 4,
+          },
+          {
+            item: itemList.trishiraite,
+            amount: 20,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 8,
+          },
+          {
+            item: itemList.trishiraite,
+            amount: 30,
+          },
+          {
+            item: itemList.trimmed_red_silk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 12,
+          },
+          {
+            item: itemList.trishiraite,
+            amount: 45,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.cloudseam_scale,
+            amount: 20,
+          },
+          {
+            item: itemList.trishiraite,
+            amount: 60,
+          },
+          {
+            item: itemList.rich_red_brocade,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.faded_red_satin, itemList.trimmed_red_silk, itemList.rich_red_brocade],
+      book: [itemList.teachings_of_praxis, itemList.guide_to_praxis, itemList.philosophies_of_praxis],
+      boss: itemList.dakas_bell,
+    },
+    element: elements.electro,
   },
   shenhe: {
     id: 'shenhe',
