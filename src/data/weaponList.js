@@ -13379,4 +13379,340 @@ export const weaponList = {
       },
     ],
   },
+  absolution: {
+    id: 'absolution',
+    name: 'Absolution',
+    rarity: 5,
+    atk: 48,
+    secondary: 'CRIT DMG',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 5,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.old_operatives_pocket_watch,
+            amount: 18,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 9,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 5,
+          },
+          {
+            item: itemList.operatives_standard_pocket_watch,
+            amount: 18,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 9,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 14,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.operatives_constancy,
+            amount: 27,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  cloudforged: {
+    id: 'cloudforged',
+    name: 'Cloudforged',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Elemental Mastery',
+    type: weapons.bow,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.grain_of_aerosiderite,
+            amount: 3,
+          },
+          {
+            item: itemList.ruined_hilt,
+            amount: 3,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.piece_of_aerosiderite,
+            amount: 3,
+          },
+          {
+            item: itemList.ruined_hilt,
+            amount: 12,
+          },
+          {
+            item: itemList.recruits_insignia,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.piece_of_aerosiderite,
+            amount: 6,
+          },
+          {
+            item: itemList.splintered_hilt,
+            amount: 6,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.bit_of_aerosiderite,
+            amount: 3,
+          },
+          {
+            item: itemList.splintered_hilt,
+            amount: 12,
+          },
+          {
+            item: itemList.sergeants_insignia,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.bit_of_aerosiderite,
+            amount: 6,
+          },
+          {
+            item: itemList.still_smoldering_hilt,
+            amount: 9,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chunk_of_aerosiderite,
+            amount: 4,
+          },
+          {
+            item: itemList.still_smoldering_hilt,
+            amount: 18,
+          },
+          {
+            item: itemList.lieutenants_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  silvershower_heartstrings: {
+    id: 'silvershower_heartstrings',
+    name: 'Silvershower Heartstrings',
+    rarity: 5,
+    atk: 44,
+    secondary: 'HP%',
+    type: weapons.bow,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.feathery_fin,
+            amount: 5,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.feathery_fin,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.lunar_fin,
+            amount: 9,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.lunar_fin,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.chasmlight_fin,
+            amount: 14,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.chasmlight_fin,
+            amount: 27,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
