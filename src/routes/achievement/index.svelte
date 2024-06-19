@@ -21,7 +21,7 @@
 
   let achievementContainer;
 
-  let data = achievementData;
+  let data = ignoreNonExistentAchievements(achievementData);
 
   let achievement = data;
   let checkList = {};
@@ -269,7 +269,7 @@
 
   async function changeLocale(locale) {
     const data = await import(`../../data/achievement/${locale}.json`);
-    achievement = data.default;
+    achievement = ignoreNonExistentAchievements(data.default);
     sortedAchievements = Object.entries(achievement).sort((a, b) => a[1].order - b[1].order);
     sortedAchievements.forEach(([id, data], i) => {
       categories[i].name = data.name;
@@ -326,6 +326,20 @@
     await readLocalData();
     parseCategories();
     changeCategory('0', 0, true);
+  }
+  
+  function ignoreNonExistentAchievements(origin) {
+	  //ignore 81416,81418,81426,81429,81451,81453
+    const ignores = [81416, 81418, 81426, 81429, 81451, 81453];
+    return Object.entries(origin).reduce(
+		(prev,current) => { 
+			current[1].achievements = 
+			current[1].achievements.filter( 
+				item => { return !ignores.includes(item.id); }
+			);
+			prev[current[0]] = current[1];
+			return prev;
+    }, {});
   }
 
   onMount(async () => {
