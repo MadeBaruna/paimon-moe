@@ -1008,7 +1008,13 @@
     "delete": "Delete",
     "remove": "Remove",
     "compare": "Compare",
-    "noCardOnDeck": "There is no card yet in this deck",
+    "noCardOnDeck": "There are no cards yet in this deck. You can choose to load the starter deck or import an existing deck from the game. To import a deck:",
+    "importDeckGuide": {
+      "step-1": "Open Casket of Tomes.",
+      "step-2": "Click on the drop-down menu on a deck and select \"Preview Image\".",
+      "step-3": "Click on the share button and click on save image. The image will be saved to the game's ScreenShot folder.",
+      "step-4": "Click on \"{importDeckButton}\" and select the image from your ScreenShot folder."
+    },
     "loadDefaultDeck": "Load Starter Deck",
     "saveDeck": "Save Deck",
     "hideDeck": "Hide Deck",
@@ -1021,6 +1027,10 @@
     "removeCompare": "Remove Compare",
     "shareNotComplete": "Please complete the deck with 3 characters and 30 action cards to share!",
     "characterCard": "Character Card",
-    "actionCard": "Action Card"
+    "actionCard": "Action Card",
+    "importDeck": "Import Deck",
+    "importerLoading": "Loading deck importer...",
+    "errorInvalidFile": "Invalid image file! Only PNG, JPG, WEBP, and GIF allowed! Selected file was \"{filetype}\"",
+    "errorInvalidImageSize": "Image must be exactly 1200x1630 pixels!"
   }
 }
