@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    clorinde: {
-      name: 'Clorinde',
+    sigewinne: {
+      name: 'Sigewinne',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    alhaitham: {
-      name: 'Alhaitham',
+    furina: {
+      name: 'Furina',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300066;
-  const image = 'clorinde alhaitham.png';
+  const bannerId = 300067;
+  const image = 'sigewinne furina.png';
   const width = 800;
-  const height = 371;
+  const height = 566;
 
   let loading = true;
   let user = '';
