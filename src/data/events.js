@@ -1785,7 +1785,7 @@ export const events = [
   {
     name: 'Record of Refelective Writing',
     pos: '0% 0%',
-    image: 'Record of Refelective Writing.png',
+    image: 'Record of Refelective Writing .png',
     start: '2024-06-18 10:00:00',
     end: '2024-06-24 03:59:59',
     color: '#ffa066',
