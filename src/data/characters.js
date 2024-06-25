@@ -9139,6 +9139,151 @@ export const characters = {
     },
     element: elements.anemo,
   },
+  sigewinne: {
+    id: 'sigewinne',
+    name: 'Sigewinne',
+    rarity: 5,
+    weapon: weapons.bow,
+    stats: {
+      hp: 13348,
+      atk: 193,
+      def: 500,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 2,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 10,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 4,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 20,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 8,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 30,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 12,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 45,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.water_that_failed_to_transcend,
+            amount: 20,
+          },
+          {
+            item: itemList.romaritime_flower,
+            amount: 60,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.transoceanic_pearl, itemList.transoceanic_chunk, itemList.xenochromatic_crystal],
+      book: [itemList.teachings_of_equity, itemList.guide_to_equity, itemList.philosophies_of_equity],
+      boss: itemList.lightless_eye_of_the_maelstrom,
+    },
+    element: elements.hydro,
+  },
   sucrose: {
     id: 'sucrose',
     name: 'Sucrose',
