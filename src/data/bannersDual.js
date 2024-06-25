@@ -1003,4 +1003,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Romaritime Meluserenity 1': [
+    {
+      name: 'Romaritime Meluserenity',
+      image: 1,
+      shortName: 'Sigewinne',
+      start: '2024-06-25 18:00:00',
+      end: '2024-07-16 14:59:00',
+      color: '#fadbf8',
+      featured: ['sigewinne', 'furina'],
+      featuredRare: ['noelle', 'gaming', 'rosaria'],
+      version: '4.7',
+    },
+    {
+      name: 'Chanson of Many Waters',
+      image: 2,
+      shortName: 'Furina',
+      start: '2024-06-25 18:00:00',
+      end: '2024-07-16 14:59:00',
+      color: '#95d6fb',
+      featured: ['sigewinne', 'furina'],
+      featuredRare: ['noelle', 'gaming', 'rosaria'],
+      version: '4.7',
+    },
+  ],
 };

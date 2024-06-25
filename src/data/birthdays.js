@@ -16,6 +16,7 @@ export const birthdays = {
   jean: [3, 14],
   noelle: [3, 21],
   kamisato_ayato: [3, 26],
+  sigewinne: [3, 30],
   aloy: [4, 4],
   dehya: [4, 7],
   charlotte: [4, 10],
@@ -54,6 +55,7 @@ export const birthdays = {
   chongyun: [9, 7],
   razor: [9, 9],
   albedo: [9, 13],
+  clorinde: [9, 20],
   freminet: [9, 24],
   kamisato_ayaka: [9, 28],
   xingqiu: [10, 9],
@@ -70,6 +72,7 @@ export const birthdays = {
   ganyu: [12, 2],
   neuvillette: [12, 18],
   dori: [12, 21],
+  gaming: [12, 22],
   tighnari: [12, 29],
   zhongli: [12, 31],
 };
