@@ -858,9 +858,6 @@ export const itemList = {
   dark_statuette: { id: 'dark_statuette', name: 'Dark Statuette' },
   deathly_statuette: { id: 'deathly_statuette', name: 'Deathly Statuette' },
   tears_of_the_calamitous_god: { id: 'tears_of_the_calamitous_god', name: 'Tears of the Calamitous God' },
-
-  runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
-
   runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
 
   teachings_of_admonition: {
@@ -1305,30 +1302,15 @@ export const itemList = {
     name: 'Xenochromatic Crystal',
     rarity: 3,
   },
-  dross_of_pure_sacred_dewdrop: {
-    id: 'dross_of_pure_sacred_dewdrop',
-    name: 'Dross of Pure Sacred Dewdrop',
-    rarity: 2,
-  },
   drop_of_tainted_water: {
     id: 'drop_of_tainted_water',
     name: 'Drop of Tainted Water',
     rarity: 2,
   },
-  sublimation_of_pure_sacred_dewdrop: {
-    id: 'sublimation_of_pure_sacred_dewdrop',
-    name: 'Sublimation of Pure Sacred Dewdrop',
-    rarity: 3,
-  },
   scoop_of_tainted_water: {
     id: 'scoop_of_tainted_water',
     name: 'Scoop of Tainted Water',
     rarity: 3,
-  },
-  spring_of_pure_sacred_dewdrop: {
-    id: 'spring_of_pure_sacred_dewdrop',
-    name: 'Spring of Pure Sacred Dewdrop',
-    rarity: 4,
   },
   newborn_tainted_hydro_phantasm: {
     id: 'newborn_tainted_hydro_phantasm',
