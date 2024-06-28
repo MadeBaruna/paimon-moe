@@ -165,7 +165,7 @@ export const eventsData = [
   ],
   [
     {
-      name: 'Leaves in the Wind - Lyney Banner',
+      name: 'Conjuring Chiaroscuro - Lyney Banner',
       pos: '0% 10%',
       zoom: '150%',
       image: 'Conjuring Chiaroscuro 2.png',
