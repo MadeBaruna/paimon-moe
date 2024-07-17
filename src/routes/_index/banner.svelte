@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    sigewinne: {
-      name: 'Sigewinne',
+    navia: {
+      name: 'Navia',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    furina: {
-      name: 'Furina',
+    nilou: {
+      name: 'Nilou',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300067;
-  const image = 'sigewinne furina.png';
+  const bannerId = 300068;
+  const image = 'nilou_navia.png';
   const width = 800;
-  const height = 566;
+  const height = 405;
 
   let loading = true;
   let user = '';
