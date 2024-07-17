@@ -25,12 +25,18 @@
         return 'gladiators_finale';
       case '+20%_energy_recharge':
         return 'emblem_of_severed_fate';
-      case '+25%_physical_dmg':
-        return 'pale_flame';
-      case '+80_em':
-        return 'gilded_dreams';
+      case '+20%_hp_set':
+        return 'tenacity_of_the_millelith';
+      case '+15%_hydro_dmg_set':
+        return 'heart_of_depth';
       case '+15%_anemo_dmg_set':
         return 'viridescent_venerer';
+      case '+25%_physical_dmg':
+        return 'bloodstained_chivalry';
+      case '+80_em':
+        return 'gilded_dreams';
+      case '+15%_healing_bonus_set':
+        return 'ocean-hued_clam';
       default:
         return artifact;
     }
