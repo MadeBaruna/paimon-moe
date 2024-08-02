@@ -6423,7 +6423,7 @@ export const characters = {
             amount: 3,
           },
           {
-            item: itemList.artificed_spare_clockwork_component_coppelius,
+            item: itemList.artificed_spare_clockwork_component_coppelia,
             amount: 2,
           },
           {
@@ -6444,7 +6444,7 @@ export const characters = {
             amount: 6,
           },
           {
-            item: itemList.artificed_spare_clockwork_component_coppelius,
+            item: itemList.artificed_spare_clockwork_component_coppelia,
             amount: 4,
           },
           {
@@ -6465,7 +6465,7 @@ export const characters = {
             amount: 3,
           },
           {
-            item: itemList.artificed_spare_clockwork_component_coppelius,
+            item: itemList.artificed_spare_clockwork_component_coppelia,
             amount: 8,
           },
           {
@@ -6486,7 +6486,7 @@ export const characters = {
             amount: 6,
           },
           {
-            item: itemList.artificed_spare_clockwork_component_coppelius,
+            item: itemList.artificed_spare_clockwork_component_coppelia,
             amount: 12,
           },
           {
@@ -6507,7 +6507,7 @@ export const characters = {
             amount: 6,
           },
           {
-            item: itemList.artificed_spare_clockwork_component_coppelius,
+            item: itemList.artificed_spare_clockwork_component_coppelia,
             amount: 20,
           },
           {
