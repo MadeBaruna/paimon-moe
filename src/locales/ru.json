@@ -689,6 +689,13 @@
       "title": "Удалить этот список?",
       "cancel": "Отмена",
       "delete": "Удалить"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {

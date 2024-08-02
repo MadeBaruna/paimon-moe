@@ -689,6 +689,13 @@
       "title": "이 할일을 삭제할까요?",
       "cancel": "취소",
       "delete": "삭제"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {
