@@ -3194,6 +3194,151 @@ export const characters = {
     },
     element: elements.electro,
   },
+  emilie: {
+    id: 'emilie',
+    name: 'Emilie',
+    rarity: 5,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 13568,
+      atk: 335,
+      def: 730,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 2,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 10,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 4,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 20,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 8,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 30,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 12,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 45,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.fragment_of_a_golden_melody,
+            amount: 20,
+          },
+          {
+            item: itemList.lakelight_lily,
+            amount: 60,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.meshing_gear, itemList.mechanical_spur_gear, itemList.artificed_dynamic_gear],
+      book: [itemList.teachings_of_order, itemList.guide_to_order, itemList.philosophies_of_order],
+      boss: itemList.silken_feather,
+    },
+    element: elements.dendro,
+  },
   eula: {
     id: 'eula',
     name: 'Eula',

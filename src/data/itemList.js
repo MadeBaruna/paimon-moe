@@ -1512,4 +1512,6 @@ export const itemList = {
     id: 'trishiraite',
     name: 'Trishiraite',
   },
+
+  silken_feather: { id: 'silken_feather', name: 'Silken Feather', rarity: 5 },
 };
