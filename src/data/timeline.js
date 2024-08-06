@@ -1,6 +1,19 @@
 export const eventsData = [
   [
     {
+      name: 'Bing-Bang Finchball',
+      pos: '0% 50%',
+      image: 'Bing-Bang Finchball.png',
+      start: '2024-08-06 10:00:00',
+      end: '2024-08-19 03:59:59',
+      color: '#c2e62b',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/31777295',
+      showOnHome: true,
+    },
+  ],
+  [
+    {
       name: 'Mutual Security Enhancing Simulation',
       pos: '0% 0%',
       image: 'Mutual Security Enhancing Simulation.png',
@@ -58,12 +71,23 @@ export const eventsData = [
     {
       name: 'Outside the Canvas, Inside the Lens: Dew-Kissed Chapter',
       pos: '0% 20%',
-      image: 'outside_the_canvas_inside_the_lens.jpg',
+      image: 'Outside the Canvas, Inside the Lens Dew-Kissed Chapter.png',
       start: '2024-07-29 10:00:00',
       end: '2024-08-08 03:59:59',
       color: '#b1d1e6',
       zoom: '200%',
-      url: 'https://www.hoyolab.com/article/31070697',
+      url: 'https://www.hoyolab.com/article/31507365',
+      showOnHome: true,
+    },
+    {
+      name: 'Energy Amplifier: Lemma',
+      pos: '0% 50%',
+      image: 'energy_amplifier_fruition.jpg',
+      start: '2024-08-12 10:00:00',
+      end: '2024-08-26 03:59:59',
+      color: '#41b6c8',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/31677110',
       showOnHome: true,
     },
   ],
@@ -117,6 +141,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Ambrosial Essence - Emilie Banner',
+      pos: '20% 20%',
+      zoom: '200%',
+      image: 'Ambrosial Essence 1.png',
+      start: '2024-08-06 18:00:00',
+      end: '2024-08-27 14:59:00',
+      color: '#cde8a4',
+      url: 'https://www.hoyolab.com/article/31676908',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -153,6 +188,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/31070419',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Discerner of Enigmas - Yelan Banner',
+      pos: '20% 20%',
+      zoom: '200%',
+      image: 'Discerner of Enigmas 4.png',
+      start: '2024-08-06 18:00:00',
+      end: '2024-08-27 14:59:00',
+      color: '#7de6fd',
+      url: 'https://www.hoyolab.com/article/31676908',
+      showOnHome: true,
     },
   ],
   [
@@ -191,6 +237,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '30% 20%',
+      zoom: '200%',
+      image: 'Epitome Invocation 68.png',
+      start: '2024-08-06 18:00:00',
+      end: '2024-08-27 14:59:00',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/31676908',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -223,6 +280,16 @@ export const eventsData = [
       description:
         'After this character receives healing, their Elemental Skill DMG is increased by 20%. Lasts for 8s, up to 3 stacks. Each stack duration is calculated independently',
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2024-08-16 04:00:00',
+      end: '2024-09-16 04:00:00',
+      color: '#4299E1',
+      description:
+        'When characters attack Burning opponents, their CRIT Rate is increased by 15% and their CRIT DMG is increased by 30%.',
+    },
   ],
   [
     {
@@ -230,10 +297,19 @@ export const eventsData = [
       image: 'Imaginarium Theater tmp.png',
       pos: '0% 70%',
       start: '2024-07-01 10:00:00',
+      end: '2024-08-01 04:00:00',
+      color: '#777df3',
+      description: 'Required Elemental Types: Pyro, Electro, and Anemo. Max HP, ATK, and DEF are increased by 20%.',
+    },
+    {
+      name: 'Imaginarium Theater',
+      image: 'Imaginarium Theater tmp.png',
+      pos: '0% 70%',
+      start: '2024-08-01 04:00:00',
       end: '2024-08-31 04:00:00',
       color: '#777df3',
       description:
-        'Required Elemental Types: Pyro, Electro, and Anemo. Fantastical Blessings: Max HP, ATK, and DEF are increased by 20%.',
+        'Required Elemental Types: Hydro, Cryo, and Anemo. All characters in the party gain a 75% Dendro DMG Bonus',
     },
   ],
   [
