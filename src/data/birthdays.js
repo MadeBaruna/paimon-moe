@@ -56,6 +56,7 @@ export const birthdays = {
   razor: [9, 9],
   albedo: [9, 13],
   clorinde: [9, 20],
+  emilie: [9, 22],
   freminet: [9, 24],
   kamisato_ayaka: [9, 28],
   xingqiu: [10, 9],

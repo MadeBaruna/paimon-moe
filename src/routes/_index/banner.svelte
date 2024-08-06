@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    navia: {
-      name: 'Navia',
+    yelan: {
+      name: 'Yelan',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    nilou: {
-      name: 'Nilou',
+    emilie: {
+      name: 'Emilie',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300068;
-  const image = 'nilou_navia.png';
+  const bannerId = 300069;
+  const image = 'yelan emilie.png';
   const width = 800;
-  const height = 405;
+  const height = 446;
 
   let loading = true;
   let user = '';
