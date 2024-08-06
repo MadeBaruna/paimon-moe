@@ -1053,4 +1053,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Ambrosial Essence 1': [
+    {
+      name: 'Ambrosial Essence',
+      image: 1,
+      shortName: 'Emilie',
+      start: '2024-08-06 18:00:00',
+      end: '2024-08-27 14:59:00',
+      color: '#cde8a4',
+      featured: ['emilie', 'yelan'],
+      featuredRare: ['yanfei', 'xiangling', 'razor'],
+      version: '4.8',
+    },
+    {
+      name: 'Discerner of Enigmas',
+      image: 4,
+      shortName: 'Yelan',
+      start: '2024-08-06 18:00:00',
+      end: '2024-08-27 14:59:00',
+      color: '#7de6fd',
+      featured: ['emilie', 'yelan'],
+      featuredRare: ['yanfei', 'xiangling', 'razor'],
+      version: '4.8',
+    },
+  ],
 };
