@@ -1,6 +1,6 @@
 <script>
   import { mdiContentSave, mdiPencil, mdiShareVariant } from '@mdi/js';
-  import { createEventDispatcher, getContext } from 'svelte';
+  import { createEventDispatcher, getContext, onMount } from 'svelte';
   import { t } from 'svelte-i18n';
   import { slide } from 'svelte/transition';
   import Button from '../../components/Button.svelte';
@@ -20,6 +20,7 @@
 
   let editName = false;
   let name = '';
+  let importDeck;
 
   function showDeckSelectionModal() {
     open(
@@ -123,6 +124,12 @@
       },
     );
   }
+
+  async function loadImportDeck() {
+    importDeck = await import('./_importDeck.svelte');
+  }
+
+  $: onMount(loadImportDeck);
 </script>
 
 <div class="relative bg-black bg-opacity-50 px-4 pt-4 pb-2 rounded-xl mb-4" transition:slide={{ duration: 200 }}>
@@ -186,8 +193,32 @@
   </div>
   {#if characterCount === 0 && actionCount === 0}
     <div>
+      <div class="relative max-w-[560px] max-h-[315px] mt-4 mb-4" style="padding-bottom: min(315px, 56.25%);">
+        <iframe
+          class="absolute w-full h-full left-0 top-0 border-0"
+          src="https://www.youtube.com/embed/jXrEg9kGDnM?modestbranding=1&rel=0"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div>
       <p class="text-white text-lg pb-2">{$t('tcg.noCardOnDeck')}</p>
+      <ol class="list-decimal list-inside text-white text-lg pb-2">
+        <li>{$t('tcg.importDeckGuide.step-1')}</li>
+        <li>{$t('tcg.importDeckGuide.step-2')}</li>
+        <li>{$t('tcg.importDeckGuide.step-3')}</li>
+        <li>{$t('tcg.importDeckGuide.step-4', { values: { importDeckButton: $t('tcg.importDeck') } })}</li>
+      </ol>
       <Button on:click={loadDefaultDeck}>{$t('tcg.loadDefaultDeck')}</Button>
+      {#if importDeck}
+        {#await importDeck then {default: ImportDeck}}
+          <svelte:component this={ImportDeck} {loadDeck} />
+        {/await}
+      {:else}
+        <Button disabled={true}>{$t('tcg.importDeck')}</Button>
+        <span class="text-white text-lg pb-2">{$t('tcg.importerLoading')}</span>
+      {/if}
     </div>
   {/if}
   <div class="flex flex-wrap gap-x-4 gap-y-3 pb-4">
