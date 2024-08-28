@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yelan: {
-      name: 'Yelan',
+    mualani: {
+      name: 'Mualani',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    emilie: {
-      name: 'Emilie',
+    kaedehara_kazuha: {
+      name: 'Kaedehara Kazuha',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300069;
-  const image = 'yelan emilie.png';
+  const bannerId = 300070;
+  const image = 'mualani kazuha.png';
   const width = 800;
-  const height = 446;
+  const height = 343;
 
   let loading = true;
   let user = '';
