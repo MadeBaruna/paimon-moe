@@ -394,7 +394,7 @@
         <VersionSelect
           bind:value={versionFilter}
           placeholder={$t('achievement.version')}
-          className="w-full md:w-48"
+          className="w-full md:w-56"
           on:change={updateSelectFilter}
         />
         <Select
