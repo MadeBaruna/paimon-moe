@@ -1603,4 +1603,109 @@ export const itemList = {
     rarity: 4,
     parent: 'teachings_of_conflict',
   },
+  blazing_sacrificial_hearts_terror: {
+    id: 'blazing_sacrificial_hearts_terror',
+    name: "Blazing Sacrificial Heart's Terror",
+    rarity: 2,
+  },
+  blazing_sacrificial_hearts_hesitance: {
+    id: 'blazing_sacrificial_hearts_hesitance',
+    name: "Blazing Sacrificial Heart's Hesitance",
+    rarity: 3,
+  },
+  blazing_sacrificial_hearts_resolve: {
+    id: 'blazing_sacrificial_hearts_resolve',
+    name: "Blazing Sacrificial Heart's Resolve",
+    rarity: 4,
+  },
+  blazing_sacrificial_hearts_splendor: {
+    id: 'blazing_sacrificial_hearts_splendor',
+    name: "Blazing Sacrificial Heart's Splendor",
+    rarity: 5,
+  },
+  shard_of_a_shattered_will: {
+    id: 'shard_of_a_shattered_will',
+    name: 'Shard of a Shattered Will',
+    rarity: 2,
+  },
+  locus_of_a_clear_will: {
+    id: 'locus_of_a_clear_will',
+    name: 'Locus of a Clear Will',
+    rarity: 3,
+  },
+  sigil_of_a_striding_will: {
+    id: 'sigil_of_a_striding_will',
+    name: 'Sigil of a Striding Will',
+    rarity: 4,
+  },
+  night_winds_mystic_consideration: {
+    id: 'night_winds_mystic_consideration',
+    name: "Night-Wind's Mystic Consideration",
+    rarity: 2,
+  },
+  night_winds_mystic_premonition: {
+    id: 'night_winds_mystic_premonition',
+    name: "Night-Wind's Mystic Premonition",
+    rarity: 3,
+  },
+  night_winds_mystic_augury: {
+    id: 'night_winds_mystic_augury',
+    name: "Night-Wind's Mystic Augury",
+    rarity: 4,
+  },
+  night_winds_mystic_revelation: {
+    id: 'night_winds_mystic_revelation',
+    name: "Night-Wind's Mystic Revelation",
+    rarity: 5,
+  },
+  axis_of_the_secret_source: {
+    id: 'axis_of_the_secret_source',
+    name: 'Axis of the Secret Source',
+    rarity: 2,
+  },
+  sheath_of_the_secret_source: {
+    id: 'sheath_of_the_secret_source',
+    name: 'Sheath of the Secret Source',
+    rarity: 3,
+  },
+  heart_of_the_secret_source: {
+    id: 'heart_of_the_secret_source',
+    name: 'Heart of the Secret Source',
+    rarity: 4,
+  },
+  ignited_stone: {
+    id: 'ignited_stone',
+    name: 'Ignited Stone',
+    rarity: 2,
+  },
+  ignited_seed_of_life: {
+    id: 'ignited_seed_of_life',
+    name: 'Ignited Seed of Life',
+    rarity: 3,
+  },
+  ignited_seeing_eye: {
+    id: 'ignited_seeing_eye',
+    name: 'Ignited Seeing Eye',
+    rarity: 4,
+  },
+  delirious_decadence_of_the_sacred_lord: {
+    id: 'delirious_decadence_of_the_sacred_lord',
+    name: 'Delirious Decadence of the Sacred Lord',
+    rarity: 2,
+  },
+  delirious_desolation_of_the_sacred_lord: {
+    id: 'delirious_desolation_of_the_sacred_lord',
+    name: 'Delirious Desolation of the Sacred Lord',
+    rarity: 3,
+  },
+  delirious_demeanor_of_the_sacred_lord: {
+    id: 'delirious_demeanor_of_the_sacred_lord',
+    name: 'Delirious Demeanor of the Sacred Lord',
+    rarity: 4,
+  },
+  delirious_divinity_of_the_sacred_lord: {
+    id: 'delirious_divinity_of_the_sacred_lord',
+    name: 'Delirious Divinity of the Sacred Lord',
+    rarity: 5,
+  },
 };

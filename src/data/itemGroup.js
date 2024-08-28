@@ -386,4 +386,50 @@ export const itemGroup = {
     items: [itemList.teachings_of_conflict, itemList.guide_to_conflict, itemList.philosophies_of_conflict],
     type: 'book',
   },
+  shard_of_a_shattered_will: {
+    name: 'Will',
+    items: [itemList.shard_of_a_shattered_will, itemList.locus_of_a_clear_will, itemList.sigil_of_a_striding_will],
+  },
+  shard_of_a_shattered_will: {
+    name: 'Will',
+    items: [itemList.shard_of_a_shattered_will, itemList.locus_of_a_clear_will, itemList.sigil_of_a_striding_will],
+  },
+  blazing_sacrificial_hearts_terror: {
+    name: 'Blazing Sacrificial Heart',
+    items: [
+      itemList.blazing_sacrificial_hearts_terror,
+      itemList.blazing_sacrificial_hearts_hesitance,
+      itemList.blazing_sacrificial_hearts_resolve,
+      itemList.blazing_sacrificial_hearts_splendor,
+    ],
+    type: 'weapon',
+  },
+  axis_of_the_secret_source: {
+    name: 'Secret Source',
+    items: [
+      itemList.axis_of_the_secret_source,
+      itemList.sheath_of_the_secret_source,
+      itemList.heart_of_the_secret_source,
+    ],
+  },
+  night_winds_mystic_consideration: {
+    name: 'Night Winds Mystic',
+    items: [
+      itemList.night_winds_mystic_consideration,
+      itemList.night_winds_mystic_premonition,
+      itemList.night_winds_mystic_augury,
+      itemList.night_winds_mystic_revelation,
+    ],
+    type: 'weapon',
+  },
+  delirious_decadence_of_the_sacred_lord: {
+    name: 'Night Winds Mystic',
+    items: [
+      itemList.delirious_decadence_of_the_sacred_lord,
+      itemList.delirious_desolation_of_the_sacred_lord,
+      itemList.delirious_demeanor_of_the_sacred_lord,
+      itemList.delirious_divinity_of_the_sacred_lord,
+    ],
+    type: 'weapon',
+  },
 };

@@ -13831,4 +13831,790 @@ export const weaponList = {
       },
     ],
   },
+  surfs_up: {
+    id: 'surfs_up',
+    name: "Surf's Up",
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.catalyst,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_terror,
+            amount: 5,
+          },
+          {
+            item: itemList.shard_of_a_shattered_will,
+            amount: 5,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_hesitance,
+            amount: 5,
+          },
+          {
+            item: itemList.shard_of_a_shattered_will,
+            amount: 18,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_hesitance,
+            amount: 9,
+          },
+          {
+            item: itemList.locus_of_a_clear_will,
+            amount: 9,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_resolve,
+            amount: 5,
+          },
+          {
+            item: itemList.locus_of_a_clear_will,
+            amount: 18,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_resolve,
+            amount: 9,
+          },
+          {
+            item: itemList.sigil_of_a_striding_will,
+            amount: 14,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_splendor,
+            amount: 6,
+          },
+          {
+            item: itemList.sigil_of_a_striding_will,
+            amount: 27,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  'ash-graven_drinking_horn': {
+    id: 'ash-graven_drinking_horn',
+    name: 'Ash-Graven Drinking Horn',
+    rarity: 4,
+    atk: 42,
+    secondary: 'HP%',
+    type: weapons.catalyst,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_consideration,
+            amount: 3,
+          },
+          {
+            item: itemList.axis_of_the_secret_source,
+            amount: 3,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_premonition,
+            amount: 3,
+          },
+          {
+            item: itemList.axis_of_the_secret_source,
+            amount: 12,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_premonition,
+            amount: 6,
+          },
+          {
+            item: itemList.sheath_of_the_secret_source,
+            amount: 6,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_augury,
+            amount: 3,
+          },
+          {
+            item: itemList.sheath_of_the_secret_source,
+            amount: 12,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_augury,
+            amount: 6,
+          },
+          {
+            item: itemList.heart_of_the_secret_source,
+            amount: 9,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_revelation,
+            amount: 4,
+          },
+          {
+            item: itemList.heart_of_the_secret_source,
+            amount: 18,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  chain_breaker: {
+    id: 'chain_breaker',
+    name: 'Chain Breaker',
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK%',
+    type: weapons.bow,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_consideration,
+            amount: 3,
+          },
+          {
+            item: itemList.feathery_fin,
+            amount: 3,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_premonition,
+            amount: 3,
+          },
+          {
+            item: itemList.feathery_fin,
+            amount: 12,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_premonition,
+            amount: 6,
+          },
+          {
+            item: itemList.lunar_fin,
+            amount: 6,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_augury,
+            amount: 3,
+          },
+          {
+            item: itemList.lunar_fin,
+            amount: 12,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_augury,
+            amount: 6,
+          },
+          {
+            item: itemList.chasmlight_fin,
+            amount: 9,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_revelation,
+            amount: 4,
+          },
+          {
+            item: itemList.chasmlight_fin,
+            amount: 18,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  earth_shaker: {
+    id: 'earth_shaker',
+    name: 'Earth Shaker',
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK%',
+    type: weapons.claymore,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_terror,
+            amount: 3,
+          },
+          {
+            item: itemList.ignited_stone,
+            amount: 3,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_hesitance,
+            amount: 3,
+          },
+          {
+            item: itemList.ignited_stone,
+            amount: 12,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_hesitance,
+            amount: 6,
+          },
+          {
+            item: itemList.ignited_seed_of_life,
+            amount: 6,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_resolve,
+            amount: 3,
+          },
+          {
+            item: itemList.ignited_seed_of_life,
+            amount: 12,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_resolve,
+            amount: 6,
+          },
+          {
+            item: itemList.ignited_seeing_eye,
+            amount: 9,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_splendor,
+            amount: 4,
+          },
+          {
+            item: itemList.ignited_seeing_eye,
+            amount: 18,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  flute_of_ezpitzal: {
+    id: 'flute_of_ezpitzal',
+    name: 'Flute of Ezpitzal',
+    rarity: 4,
+    atk: 41,
+    secondary: 'DEF%',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_terror,
+            amount: 3,
+          },
+          {
+            item: itemList.ruined_hilt,
+            amount: 3,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_hesitance,
+            amount: 3,
+          },
+          {
+            item: itemList.ruined_hilt,
+            amount: 12,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_hesitance,
+            amount: 6,
+          },
+          {
+            item: itemList.splintered_hilt,
+            amount: 6,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_resolve,
+            amount: 3,
+          },
+          {
+            item: itemList.splintered_hilt,
+            amount: 12,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_resolve,
+            amount: 6,
+          },
+          {
+            item: itemList.still_smoldering_hilt,
+            amount: 9,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_splendor,
+            amount: 4,
+          },
+          {
+            item: itemList.still_smoldering_hilt,
+            amount: 18,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  footprint_of_the_rainbow: {
+    id: 'footprint_of_the_rainbow',
+    name: 'Footprint of the Rainbow',
+    rarity: 4,
+    atk: 42,
+    secondary: 'DEF%',
+    type: weapons.polearm,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.delirious_decadence_of_the_sacred_lord,
+            amount: 3,
+          },
+          {
+            item: itemList.axis_of_the_secret_source,
+            amount: 3,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 3,
+          },
+          {
+            item: itemList.axis_of_the_secret_source,
+            amount: 12,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 6,
+          },
+          {
+            item: itemList.sheath_of_the_secret_source,
+            amount: 6,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 3,
+          },
+          {
+            item: itemList.sheath_of_the_secret_source,
+            amount: 12,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 6,
+          },
+          {
+            item: itemList.heart_of_the_secret_source,
+            amount: 9,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_divinity_of_the_sacred_lord,
+            amount: 4,
+          },
+          {
+            item: itemList.heart_of_the_secret_source,
+            amount: 18,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  ring_of_yaxche: {
+    id: 'ring_of_yaxche',
+    name: 'Ring of Yaxche',
+    rarity: 4,
+    atk: 42,
+    secondary: 'HP%',
+    type: weapons.catalyst,
+    source: 'forging',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.delirious_decadence_of_the_sacred_lord,
+            amount: 3,
+          },
+          {
+            item: itemList.shard_of_a_shattered_will,
+            amount: 3,
+          },
+          {
+            item: itemList.damaged_mask,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 3,
+          },
+          {
+            item: itemList.shard_of_a_shattered_will,
+            amount: 12,
+          },
+          {
+            item: itemList.damaged_mask,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 6,
+          },
+          {
+            item: itemList.locus_of_a_clear_will,
+            amount: 6,
+          },
+          {
+            item: itemList.stained_mask,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 3,
+          },
+          {
+            item: itemList.locus_of_a_clear_will,
+            amount: 12,
+          },
+          {
+            item: itemList.stained_mask,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 6,
+          },
+          {
+            item: itemList.sigil_of_a_striding_will,
+            amount: 9,
+          },
+          {
+            item: itemList.ominous_mask,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_divinity_of_the_sacred_lord,
+            amount: 4,
+          },
+          {
+            item: itemList.sigil_of_a_striding_will,
+            amount: 18,
+          },
+          {
+            item: itemList.ominous_mask,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
