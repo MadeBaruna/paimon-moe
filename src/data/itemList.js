@@ -1514,4 +1514,93 @@ export const itemList = {
   },
 
   silken_feather: { id: 'silken_feather', name: 'Silken Feather', rarity: 5 },
+
+  sprayfeather_gill: {
+    id: 'sprayfeather_gill',
+    name: 'Sprayfeather Gill',
+  },
+  seasoned_fang: {
+    id: 'seasoned_fang',
+    name: 'Seasoned Fang',
+    rarity: 2,
+  },
+  tyrants_fang: {
+    id: 'tyrants_fang',
+    name: "Tyrant's Fang",
+    rarity: 3,
+  },
+  juvenile_fang: {
+    id: 'juvenile_fang',
+    name: 'Juvenile Fang',
+    rarity: 1,
+  },
+  mark_of_the_binding_blessing: {
+    id: 'mark_of_the_binding_blessing',
+    name: 'Mark of the Binding Blessing',
+    rarity: 4,
+  },
+  warriors_metal_whistle: {
+    id: 'warriors_metal_whistle',
+    name: "Warrior's Metal Whistle",
+    rarity: 2,
+  },
+  saurian_crowned_warriors_golden_whistle: {
+    id: 'saurian_crowned_warriors_golden_whistle',
+    name: "Saurian-Crowned Warrior's Golden Whistle",
+    rarity: 3,
+  },
+  sentrys_wooden_whistle: {
+    id: 'sentrys_wooden_whistle',
+    name: "Sentry's Wooden Whistle",
+    rarity: 1,
+  },
+  overripe_flamegranate: {
+    id: 'overripe_flamegranate',
+    name: 'Overripe Flamegranate',
+    rarity: 4,
+  },
+  quenepa_berry: {
+    id: 'quenepa_berry',
+    name: 'Quenepa Berry',
+  },
+  teachings_of_contention: {
+    id: 'teachings_of_contention',
+    name: 'Teachings of Contention',
+    day: ['monday', 'thursday'],
+    rarity: 2,
+  },
+  guide_to_contention: {
+    id: 'guide_to_contention',
+    name: 'Guide to Contention',
+    day: ['monday', 'thursday'],
+    rarity: 3,
+    parent: 'teachings_of_contention',
+  },
+  philosophies_of_contention: {
+    id: 'philosophies_of_contention',
+    name: 'Philosophies of Contention',
+    day: ['monday', 'thursday'],
+    rarity: 4,
+    parent: 'teachings_of_contention',
+  },
+  teachings_of_conflict: {
+    id: 'teachings_of_conflict',
+    name: 'Teachings of Conflict',
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+  },
+  guide_to_conflict: {
+    id: 'guide_to_conflict',
+    name: 'Guide to Conflict',
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'teachings_of_conflict',
+  },
+  philosophies_of_conflict: {
+    id: 'philosophies_of_conflict',
+    name: 'Philosophies of Conflict',
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'teachings_of_conflict',
+  },
 };

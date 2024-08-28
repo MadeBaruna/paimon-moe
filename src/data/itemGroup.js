@@ -376,4 +376,14 @@ export const itemGroup = {
     items: [itemList.teachings_of_justice, itemList.guide_to_justice, itemList.philosophies_of_justice],
     type: 'book',
   },
+  teachings_of_contention: {
+    name: 'Contention',
+    items: [itemList.teachings_of_contention, itemList.guide_to_contention, itemList.philosophies_of_contention],
+    type: 'book',
+  },
+  teachings_of_conflict: {
+    name: 'Conflict',
+    items: [itemList.teachings_of_conflict, itemList.guide_to_conflict, itemList.philosophies_of_conflict],
+    type: 'book',
+  },
 };
