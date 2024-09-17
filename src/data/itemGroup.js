@@ -386,6 +386,11 @@ export const itemGroup = {
     items: [itemList.teachings_of_conflict, itemList.guide_to_conflict, itemList.philosophies_of_conflict],
     type: 'book',
   },
+  teachings_of_kindling: {
+    name: 'Kindling',
+    items: [itemList.teachings_of_kindling, itemList.guide_to_kindling, itemList.philosophies_of_kindling],
+    type: 'book',
+  },
   shard_of_a_shattered_will: {
     name: 'Will',
     items: [itemList.shard_of_a_shattered_will, itemList.locus_of_a_clear_will, itemList.sigil_of_a_striding_will],

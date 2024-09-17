@@ -68,6 +68,7 @@ export const birthdays = {
   eula: [10, 25],
   kaedehara_kazuha: [10, 29],
   xiangling: [11, 2],
+  kinich: [11, 11],
   keqing: [11, 20],
   wriothesley: [11, 23],
   sucrose: [11, 26],

@@ -5808,6 +5808,151 @@ export const characters = {
     },
     element: elements.electro,
   },
+  kinich: {
+    id: 'kinich',
+    name: 'Kinich',
+    rarity: 5,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 12858,
+      atk: 332,
+      def: 802,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 3,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.overripe_flamegranate,
+            amount: 2,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 10,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.overripe_flamegranate,
+            amount: 4,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 20,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.overripe_flamegranate,
+            amount: 8,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 30,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.overripe_flamegranate,
+            amount: 12,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 45,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.overripe_flamegranate,
+            amount: 20,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 60,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.juvenile_fang, itemList.seasoned_fang, itemList.tyrants_fang],
+      book: [itemList.teachings_of_kindling, itemList.guide_to_kindling, itemList.philosophies_of_kindling],
+      boss: itemList.denial_and_judgment,
+    },
+    element: elements.dendro,
+  },
   kirara: {
     id: 'kirara',
     name: 'Kirara',

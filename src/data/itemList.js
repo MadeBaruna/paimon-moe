@@ -1708,4 +1708,29 @@ export const itemList = {
     name: 'Delirious Divinity of the Sacred Lord',
     rarity: 5,
   },
+  saurian_claw_succulent: {
+    id: 'saurian_claw_succulent',
+    name: 'Saurian Claw Succulent',
+  },
+  denial_and_judgment: { id: 'denial_and_judgment', name: 'Denial and Judgment' },
+  teachings_of_kindling: {
+    id: 'teachings_of_kindling',
+    name: 'Teachings of Kindling',
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+  },
+  guide_to_kindling: {
+    id: 'guide_to_kindling',
+    name: 'Guide to Kindling',
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'teachings_of_kindling',
+  },
+  philosophies_of_kindling: {
+    id: 'philosophies_of_kindling',
+    name: 'Philosophies of Kindling',
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'teachings_of_kindling',
+  },
 };
