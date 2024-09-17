@@ -13,15 +13,15 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    mualani: {
-      name: 'Mualani',
+    raiden_shogun: {
+      name: 'Raiden Shogun',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    kaedehara_kazuha: {
-      name: 'Kaedehara Kazuha',
+    kinich: {
+      name: 'Kinich',
       rarity: 'legendary',
       count: 0,
       average: '...',
