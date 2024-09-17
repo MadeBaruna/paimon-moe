@@ -28,10 +28,10 @@
       percentage: '...',
     },
   };
-  const bannerId = 300070;
-  const image = 'mualani kazuha.png';
+  const bannerId = 300071;
+  const image = 'raiden kinich.png';
   const width = 800;
-  const height = 343;
+  const height = 394;
 
   let loading = true;
   let user = '';
