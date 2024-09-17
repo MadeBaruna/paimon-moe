@@ -14617,4 +14617,117 @@ export const weaponList = {
       },
     ],
   },
+  fang_of_the_mountain_king: {
+    id: 'fang_of_the_mountain_king',
+    name: 'Fang of the Mountain King',
+    rarity: 5,
+    atk: 49,
+    secondary: 'CRIT Rate',
+    type: weapons.claymore,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.delirious_decadence_of_the_sacred_lord,
+            amount: 5,
+          },
+          {
+            item: itemList.ignited_stone,
+            amount: 5,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 5,
+          },
+          {
+            item: itemList.ignited_stone,
+            amount: 18,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 9,
+          },
+          {
+            item: itemList.ignited_seed_of_life,
+            amount: 9,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 5,
+          },
+          {
+            item: itemList.ignited_seed_of_life,
+            amount: 18,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 9,
+          },
+          {
+            item: itemList.ignited_seeing_eye,
+            amount: 14,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_divinity_of_the_sacred_lord,
+            amount: 6,
+          },
+          {
+            item: itemList.ignited_seeing_eye,
+            amount: 27,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
