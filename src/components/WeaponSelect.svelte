@@ -1,6 +1,6 @@
 <script>
-  import { t } from 'svelte-i18n';
-  import { createEventDispatcher } from 'svelte';
+  import { t, locale } from 'svelte-i18n';
+  import { createEventDispatcher, onMount } from 'svelte';
   import VirtualList from './VirtualList.svelte';
   import { fade } from 'svelte/transition';
   import { mdiChevronDown, mdiCloseCircle } from '@mdi/js';
@@ -20,6 +20,7 @@
   let container;
   let input;
   let search = '';
+  let weaponListLocalized = {}
 
   function toggleOptions() {
     focused = !focused;
@@ -94,7 +95,9 @@
     .filter((e) => e[1].rarity >= 3)
     .sort((a, b) => a[1].name.localeCompare(b[1].name));
 
-  $: filteredWeapons = weapons.filter((e) => e[1].name.toLowerCase().includes(search.toLowerCase()));
+  $: filteredWeapons = weapons.filter((e) => {
+    return e[1].name.toLowerCase().includes(search.toLowerCase()) || (e[1].id in weaponListLocalized && weaponListLocalized[e[1].id].toLowerCase().includes(search.toLowerCase()))
+  });
   $: maxItemRow = Math.min(6, filteredWeapons.length);
 
   $: nothingSelected = selected === null;
@@ -105,6 +108,16 @@
 
   $: classes = focused ? 'border-primary' : 'border-transparent';
   $: iconClasses = focused ? 'transform rotate-180' : '';
+
+  onMount(async () => {
+    locale.subscribe(async (val) => {
+      const localizedData = await import(`../data/weapons/${val}.json`);
+      weaponListLocalized = Object.values(localizedData).reduce((acc, { id, name }) => ({
+        ...acc, 
+        [id]: name
+      }), {})
+    });
+  });
 </script>
 
 <svelte:window on:click={onWindowClick} on:keydown={onKeyDown} />
