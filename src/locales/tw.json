@@ -435,7 +435,8 @@
       "beginners": "新手祈願",
       "standard": "常駐祈願",
       "character-event": "角色活動祈願",
-      "weapon-event": "武器活動祈願"
+      "weapon-event": "武器活動祈願",
+      "chronicled": "集錄祈願"
     },
     "detail": {
       "weapon": "武器",
