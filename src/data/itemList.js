@@ -1733,4 +1733,13 @@ export const itemList = {
     rarity: 4,
     parent: 'teachings_of_kindling',
   },
+  gold_inscribed_secret_source_core: {
+    id: 'gold_inscribed_secret_source_core',
+    name: 'Gold-Inscribed Secret Source Core',
+    rarity: 4,
+  },
+  brilliant_chrysanthemum: {
+    id: 'brilliant_chrysanthemum',
+    name: 'Brilliant Chrysanthemum',
+  },
 };

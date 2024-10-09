@@ -11786,6 +11786,155 @@ export const characters = {
     },
     element: elements.anemo,
   },
+  xilonen: {
+    id: 'xilonen',
+    name: 'Xilonen',
+    rarity: 5,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12405,
+      atk: 275,
+      def: 930,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.brilliant_chrysanthemum,
+            amount: 3,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 2,
+          },
+          {
+            item: itemList.brilliant_chrysanthemum,
+            amount: 10,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 4,
+          },
+          {
+            item: itemList.brilliant_chrysanthemum,
+            amount: 20,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 8,
+          },
+          {
+            item: itemList.brilliant_chrysanthemum,
+            amount: 30,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 12,
+          },
+          {
+            item: itemList.brilliant_chrysanthemum,
+            amount: 45,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.prithiva_topaz_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 20,
+          },
+          {
+            item: itemList.brilliant_chrysanthemum,
+            amount: 60,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [
+        itemList.sentrys_wooden_whistle,
+        itemList.warriors_metal_whistle,
+        itemList.saurian_crowned_warriors_golden_whistle,
+      ],
+      book: [itemList.teachings_of_kindling, itemList.guide_to_kindling, itemList.philosophies_of_kindling],
+      boss: itemList.mirror_of_mushin,
+    },
+    element: elements.geo,
+  },
   xingqiu: {
     id: 'xingqiu',
     name: 'Xingqiu',
