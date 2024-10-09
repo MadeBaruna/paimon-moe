@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    raiden_shogun: {
-      name: 'Raiden Shogun',
+    chiori: {
+      name: 'Chiori',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    kinich: {
-      name: 'Kinich',
+    xilonen: {
+      name: 'Xilonen',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300071;
-  const image = 'raiden kinich.png';
+  const bannerId = 300072;
+  const image = 'xilonen chiori.png';
   const width = 800;
-  const height = 394;
+  const height = 428;
 
   let loading = true;
   let user = '';
