@@ -173,7 +173,7 @@
     let filterComission = [];
     for (const e of typeFilter) {
       if (e.value === 'commissions') {
-        filterComission = ['mondstadt', 'liyue', 'inazuma', 'sumeru'];
+        filterComission = ['mondstadt', 'liyue', 'inazuma', 'sumeru', 'natlan'];
         break;
       }
 
