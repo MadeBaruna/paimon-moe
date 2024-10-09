@@ -13,6 +13,7 @@ export const birthdays = {
   qiqi: [3, 3],
   yaoyao: [3, 6],
   shenhe: [3, 10],
+  xilonen: [3, 13],
   jean: [3, 14],
   noelle: [3, 21],
   kamisato_ayato: [3, 26],
