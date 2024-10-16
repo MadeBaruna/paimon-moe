@@ -11,6 +11,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/33001020',
       showOnHome: true,
     },
+    {
+      name: "Reminiscent Regimen: Thrill",
+      pos: '0% 40%',
+      image: '5_1_coop.png',
+      start: '2024/10/17 10:00:00',
+      end: '2024/10/28 03:59:59',
+      color: '#AFBD6D',
+      zoom: '250%',
+      url: 'https://www.hoyolab.com/article/34282667',
+      showOnHome: true,
+    },
   ],
   [
     {
