@@ -1,4 +1,5 @@
 <script>
+  // @ts-check
   import { onMount, tick } from 'svelte';
   import { t } from 'svelte-i18n';
 
@@ -6,186 +7,283 @@
   import { characters } from '../../data/characters';
   import { weaponList } from '../../data/weaponList';
 
-  import Button from '../../components/Button.svelte';
   import Icon from '../../components/Icon.svelte';
   import { mdiSwapVertical } from '@mdi/js';
   import Ad from '../../components/Ad.svelte';
 
+  import dayjs from 'dayjs';
+
+  const sources = {
+    characters: characters,
+    weapons: weaponList,
+  };
+
   let container;
 
-  let length = 0;
+  /**
+   * @typedef {Object} Item
+   * @property {number} index
+   * @property {number} patches
+   * @property {boolean} first
+   * @property {boolean} last
+   * @property {number} duration
+   * @property {string} date
+   * @property {string} name
+   */
+
+  /**
+   * @typedef {Object.<string, Item>} VersionItem
+   */
+
+  /**
+   * @typedef {Object.<string, VersionItem>} List
+   */
+
+  /** @type {string[]} */
   let versions = [];
-  let rows = [[]];
-  let rowsWep = [[]];
-  let names = [{ name: '', length: 0 }];
-  let namesWep = [{ name: '', length: 0 }];
-  let hovered = -1;
 
-  let __rows5;
-  let __rows4;
-  let __names5;
-  let __names4;
-  let __rowsWep5;
-  let __rowsWep4;
-  let __namesWep5;
-  let __namesWep4;
+  /**
+   * @typedef {[string, Item][][]} ListItem
+   */
 
+  /**
+   * An object representing a list of characters and weapons.
+   * Each category (characters and weapons) is further divided by rarity (5-star and 4-star).
+   *
+   * @type {{
+   *   characters: {
+   *     5: ListItem,
+   *     4: ListItem
+   *   },
+   *   weapons: {
+   *     5: ListItem,
+   *     4: ListItem
+   *   }
+   * }}
+   */
+  let lists = {
+    characters: {
+      5: [],
+      4: [],
+    },
+    weapons: {
+      5: [],
+      4: [],
+    },
+  };
   let sort = false;
+  let showStandard = false;
 
-  async function process() {
-    length = banners.characters.length;
+  /**
+   * @type {'characters'|'weapons'}
+   */
+  let selectedType = 'characters';
 
-    let _versions = {};
-    let _chars5 = {};
-    let _chars4 = {};
-    let _rows5 = [];
-    let _rows4 = [];
-    let _names5 = [];
-    let _names4 = [];
+  const width = 40;
 
-    let pos5 = 0;
-    let pos4 = 0;
-    let len = 0;
-    for (const banner of banners.characters) {
-      if (_versions[banner.version] === undefined) {
-        _versions[banner.version] = 0;
+  const featured = {
+    characters: {
+      5: ['eula', 'mona', 'albedo', 'klee', 'diluc', 'jean'],
+      4: [
+        'mika',
+        'rosaria',
+        'sucrose',
+        'diona',
+        'noelle',
+        'bennett',
+        'fischl',
+        'amber',
+        'razor',
+        'kaeya',
+        'barbara',
+        'lisa',
+      ],
+    },
+    weapons: {
+      5: [
+        'skyward_blade',
+        'aquila_favonia',
+        'beacon_of_the_reed_sea',
+        'song_of_broken_pines',
+        'wolfs_gravestone',
+        'skyward_pride',
+        'skyward_spine',
+        'lost_prayer_to_the_sacred_winds',
+        'skyward_atlas',
+        'hunters_path',
+        'skyward_harp',
+      ],
+      4: [
+        'the_alley_flash',
+        'lions_roar',
+        'sacrificial_sword',
+        'the_flute',
+        'favonius_sword',
+        'rainslasher',
+        'sacrificial_greatsword',
+        'the_bell',
+        'favonius_greatsword',
+        'favonius_lance',
+        'dragons_bane',
+        'wine_and_song',
+        'eye_of_perception',
+        'sacrificial_fragments',
+        'the_widsith',
+        'favonius_codex',
+        'mitternachts_waltz',
+        'alley_hunter',
+        'rust',
+        'sacrificial_bow',
+        'the_stringless',
+        'favonius_warbow',
+      ],
+    },
+  };
+
+  const standardItems = {
+    amber: true,
+    lisa: true,
+    kaeya: true,
+    jean: true,
+    qiqi: true,
+    keqing: true,
+    mona: true,
+    diluc: true,
+    tighnari: true,
+    dehya: true,
+    skyward_harp: true,
+    amos_bow: true,
+    skyward_atlas: true,
+    lost_prayer_to_the_sacred_winds: true,
+    skyward_pride: true,
+    wolfs_gravestone: true,
+    skyward_spine: true,
+    'primordial_jade_winged-spear': true,
+    skyward_blade: true,
+    aquila_favonia: true,
+  };
+
+  banners.characters.push(
+    ...banners.chronicled.map((b) => ({
+      ...b,
+      featured: b.featured.filter((c) => featured.characters[5].includes(c)),
+      featuredRare: b.featuredRare.filter((c) => featured.characters[4].includes(c)),
+    })),
+  );
+  banners.characters.sort((a, b) => a.version.localeCompare(b.version, undefined, { numeric: true }));
+  banners.weapons.push(
+    ...banners.chronicled.map((b) => ({
+      ...b,
+      featured: b.featured.filter((c) => featured.weapons[5].includes(c)),
+      featuredRare: b.featuredRare.filter((c) => featured.weapons[4].includes(c)),
+    })),
+  );
+  banners.weapons.sort((a, b) => a.version.localeCompare(b.version, undefined, { numeric: true }));
+
+  /**
+   * @param {'characters'|'weapons'} type
+   * @param {4|5} rarity
+   */
+  async function process(type, rarity) {
+    /** @type {List} */
+    const list = {};
+
+    const part = rarity === 5 ? 'featured' : 'featuredRare';
+
+    const bannerList = banners[type];
+    versions = [];
+    for (const banner of bannerList) {
+      if (versions[versions.length - 1] === undefined || versions[versions.length - 1] !== banner.version) {
+        versions.push(banner.version);
       }
-      _versions[banner.version]++;
 
-      for (const ch of Object.keys(_chars5)) {
-        _chars5[ch].length++;
-        _names5[_chars5[ch].pos].length++;
-        _rows5[_chars5[ch].pos][len] = { l: _chars5[ch].length, m: 15 };
-      }
-      for (const ch of Object.keys(_chars4)) {
-        _chars4[ch].length++;
-        _names4[_chars4[ch].pos].length++;
-        _rows4[_chars4[ch].pos][len] = { l: _chars4[ch].length, m: 9 };
-      }
+      for (const char of banner[part]) {
+        if (list[char] === undefined) {
+          list[char] = {};
+        }
 
-      for (const char of banner.featured) {
-        if (_chars5[char] === undefined) {
-          _chars5[char] = {
-            pos: pos5,
-            length: 0,
+        if (list[char][banner.version] === undefined) {
+          const last = Object.values(list[char]).pop();
+          let diff = 0;
+          if (last) {
+            if (char === 'albedo') console.log(last.date, banner.start);
+            diff = dayjs(banner.start).diff(dayjs(last.date), 'days');
+          }
+
+          list[char][banner.version] = {
+            index: versions.length - 1,
+            first: last === undefined,
+            last: false,
+            patches: last ? versions.length - last.index - 2 : 0,
+            duration: diff,
+            date: banner.end,
+            name: char,
           };
-          _names5[pos5] = { name: characters[char].name, length: 0 };
-          _rows5[pos5] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
-          pos5++;
-        } else {
-          _rows5[_chars5[char].pos][len] = { char, l: 0 };
-          _names5[_chars5[char].pos].length = 0;
-          _chars5[char].length = 0;
         }
       }
-
-      for (const char of banner.featuredRare) {
-        if (_chars4[char] === undefined) {
-          _chars4[char] = {
-            pos: pos4,
-            length: 0,
-          };
-          _names4[pos4] = { name: characters[char].name, length: 0 };
-          _rows4[pos4] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
-          pos4++;
-        } else {
-          _rows4[_chars4[char].pos][len] = { char, l: 0 };
-          _names4[_chars4[char].pos].length = 0;
-          _chars4[char].length = 0;
-        }
-      }
-
-      len++;
     }
 
-    versions = Object.entries(_versions).map(([version, length]) => ({
-      version,
-      length,
-    }));
+    for (const char of Object.keys(list)) {
+      const last = Object.values(list[char]).pop();
+      const diff = dayjs().diff(dayjs(last.date), 'days');
+      list[char].current = {
+        index: versions.length,
+        first: false,
+        last: true,
+        patches: versions.length - last.index - 1,
+        duration: diff,
+        date: dayjs().format('YYYY-MM-DD'),
+        name: char,
+      };
+    }
 
-    __rows5 = _rows5;
-    __rows4 = _rows4;
-    __names5 = _names5;
-    __names4 = _names4;
-
-    rows = [..._rows5, new Array(length).fill({ l: '' }), ..._rows4, new Array(length).fill({ l: '' })];
-    names = [..._names5, { name: '', length: 0 }, ..._names4, { name: '', length: 0 }];
-
-    await processWeapons();
+    versions = versions;
+    lists[type][rarity] = Object.entries(list)
+      .map(([_, e]) => Object.entries(e))
+      .sort((a, b) => {
+        const _a = a[a.length - 1];
+        const _b = b[b.length - 1];
+        return _b[1].patches - _a[1].patches;
+      });
   }
 
-  async function processWeapons() {
-    const weaponsBanners = [...banners.weapons];
-    weaponsBanners.splice(8, 0, banners.weapons[7]);
+  function getColor(index) {
+    if (index === '') return 'none';
+    const max = 12;
+    const hue = ((max - index) / max) * 100;
+    return `hsl(${hue}, 60%, 70%)`;
+  }
 
-    let _chars5 = {};
-    let _chars4 = {};
-    let _rows5 = [];
-    let _rows4 = [];
-    let _names5 = [];
-    let _names4 = [];
-
-    let pos5 = 0;
-    let pos4 = 0;
-    let len = 0;
-
-    for (const banner of weaponsBanners) {
-      for (const ch of Object.keys(_chars5)) {
-        _chars5[ch].length++;
-        _names5[_chars5[ch].pos].length++;
-        _rows5[_chars5[ch].pos][len] = { l: _chars5[ch].length, m: 15 };
-      }
-      for (const ch of Object.keys(_chars4)) {
-        _chars4[ch].length++;
-        _names4[_chars4[ch].pos].length++;
-        _rows4[_chars4[ch].pos][len] = { l: _chars4[ch].length, m: 9 };
-      }
-
-      for (const char of banner.featured) {
-        if (_chars5[char] === undefined) {
-          _chars5[char] = {
-            pos: pos5,
-            length: 0,
-          };
-          _names5[pos5] = { name: weaponList[char].name, length: 0 };
-          _rows5[pos5] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
-          pos5++;
-        } else {
-          _rows5[_chars5[char].pos][len] = { char, l: 0 };
-          _names5[_chars5[char].pos].length = 0;
-          _chars5[char].length = 0;
-        }
-      }
-
-      for (const char of banner.featuredRare) {
-        if (_chars4[char] === undefined) {
-          _chars4[char] = {
-            pos: pos4,
-            length: 0,
-          };
-          _names4[pos4] = { name: weaponList[char].name, length: 0 };
-          _rows4[pos4] = [...new Array(len).fill({ l: '' }), { char, l: 0 }];
-          pos4++;
-        } else {
-          _rows4[_chars4[char].pos][len] = { char, l: 0 };
-          _names4[_chars4[char].pos].length = 0;
-          _chars4[char].length = 0;
-        }
-      }
-
-      len++;
+  /**
+   * @param {'characters'|'weapons'} type
+   * @param {4|5} rarity
+   */
+  function changeSort(type, rarity) {
+    if (sort) {
+      lists[type][rarity].sort((a, b) => {
+        const _a = a[0];
+        const _b = b[0];
+        return _a[1].index - _b[1].index;
+      });
+    } else {
+      lists[type][rarity].sort((a, b) => {
+        const _a = a[a.length - 1];
+        const _b = b[b.length - 1];
+        return _b[1].patches - _a[1].patches;
+      });
     }
+    lists[type][rarity] = lists[type][rarity];
+  }
 
-    __rowsWep5 = _rows5;
-    __rowsWep4 = _rows4;
-    __namesWep5 = _names5;
-    __namesWep4 = _names4;
+  function sortOrder() {
+    sort = !sort;
+    changeSort(selectedType, 5);
+    changeSort(selectedType, 4);
+  }
 
-    rowsWep = [..._rows5, new Array(length).fill({ l: '' }), ..._rows4];
-    namesWep = [..._names5, { name: '', length: 0 }, ..._names4];
-
+  async function changeSelected(type) {
+    selectedType = type;
     await tick();
-
     container.scrollTo({
       left: container.scrollWidth,
       top: 0,
@@ -193,44 +291,21 @@
     });
   }
 
-  function sortOrder() {
-    sort = !sort;
+  onMount(async () => {
+    process('characters', 5);
+    process('characters', 4);
+    process('weapons', 5);
+    process('weapons', 4);
 
-    if (!sort) {
-      rows = [...__rows5, new Array(length).fill({ l: '' }), ...__rows4];
-      names = [...__names5, { name: '', length: 0 }, ...__names4];
-      return;
-    }
-
-    const _rows5 = [...__rows5].sort((a, b) => b[length - 1].l - a[length - 1].l);
-    const _rows4 = [...__rows4].sort((a, b) => b[length - 1].l - a[length - 1].l);
-    const _names5 = [...__names5].sort((a, b) => b.length - a.length);
-    const _names4 = [...__names4].sort((a, b) => b.length - a.length);
-    const _rowsWep5 = [...__rowsWep5].sort((a, b) => b[length - 1].l - a[length - 1].l);
-    const _rowsWep4 = [...__rowsWep4].sort((a, b) => b[length - 1].l - a[length - 1].l);
-    const _namesWep5 = [...__namesWep5].sort((a, b) => b.length - a.length);
-    const _namesWep4 = [...__namesWep4].sort((a, b) => b.length - a.length);
-
-    rows = [..._rows5, new Array(length).fill({ l: '' }), ..._rows4, new Array(length).fill({ l: '' })];
-    names = [..._names5, { name: '', length: 0 }, ..._names4, { name: '', length: 0 }];
-    rowsWep = [..._rowsWep5, new Array(length).fill({ l: '' }), ..._rowsWep4];
-    namesWep = [..._namesWep5, { name: '', length: 0 }, ..._namesWep4];
-  }
-
-  function getColor(index, max) {
-    if (index === '') return 'none';
-
-    const hue = ((max - index) / max) * 100;
-    return `hsl(${hue}, 60%, 70%)`;
-  }
-
-  function onHover(index) {
-    hovered = index;
-  }
-
-  onMount(() => {
-    process();
+    await tick();
+    container.scrollTo({
+      left: container.scrollWidth,
+      top: 0,
+      behavior: 'smooth',
+    });
   });
+
+  $: fullWidth = versions.length * width + 100;
 </script>
 
 <svelte:head>
@@ -238,85 +313,98 @@
   <meta name="description" content="Genshin Impact Character Release Timeline" />
   <meta property="og:description" content="See when the character is released and their last re-run" />
 </svelte:head>
+
 <div class="lg:ml-64 pt-20 lg:pt-8">
-  <div class="mb-4 pl-8">
+  <div class="mb-4 px-8">
     <h1 class="font-display font-black text-2xl xl:text-5xl mb-3 xl:mb-0 text-white">{$t('calendar.bannerTitle')}</h1>
     <p class="text-gray-400 font-medium pb-4 leading-none" style="margin-top: -1rem;">
       {$t('calendar.bannerSubtitle')}
     </p>
 
-    <div class="flex">
-      <p class="text-white mr-2 border-2 border-white border-opacity-25 px-4 py-2 rounded-xl">
-        {$t(sort ? 'calendar.sortByRerun' : 'calendar.sortByTime')}
-      </p>
-      <Button size="sm" className="px-2" on:click={sortOrder}><Icon path={mdiSwapVertical} /></Button>
+    <div class="grid grid-cols-2 md:flex gap-2 text-white">
+      <button
+        on:click={() => changeSelected('characters')}
+        class="pill {selectedType === 'characters' ? 'active' : ''}"
+      >
+        {$t('characters.title')}
+      </button>
+      <button on:click={() => changeSelected('weapons')} class="pill {selectedType === 'weapons' ? 'active' : ''}">
+        {$t('sidebar.weapons')}
+      </button>
+      <label class="flex items-center justify-center pill col-span-2">
+        <input class="mr-2 w-4 h-4" type="checkbox" bind:checked={showStandard} />
+        {$t('calendar.showStandard')}
+      </label>
+      <button class="pill col-span-2" on:click={sortOrder}
+        >{$t(sort ? 'calendar.sortByTime' : 'calendar.sortByRerun')} <Icon path={mdiSwapVertical} /></button
+      >
     </div>
   </div>
-  <div class="overflow-x-auto whitespace-nowrap px-8 pb-4" bind:this={container}>
-    <table class="table-fixed">
-      <tbody>
-        <tr>
-          {#each versions as v}
-            <td class="text-center border border-gray-600 text-white font-bold relative" colspan={v.length}
-              >{v.version}</td
-            >
-          {/each}
-        </tr>
-        {#each rows as r, rowIndex}
-          <tr>
-            {#each r as col, index}
-              {#if col.char}
-                <td on:mouseenter={() => onHover(index)} class="cell {hovered === index ? 'hovered' : ''}">
-                  <img class="w-full h-full" src="/images/characters/{col.char}.png" alt={col.char} />
-                </td>
-              {:else}
-                <td
-                  on:mouseenter={() => onHover(index)}
-                  class="cell {hovered === index ? 'hovered' : ''}"
-                  style="background: {getColor(col.l, col.m)};">{col.l}</td
+  <div class="min-w-full overflow-x-auto whitespace-nowrap px-8 relative" bind:this={container}>
+    <div class="flex h-full absolute">
+      {#each versions as ver}
+        <div
+          class="h-full text-white text-center flex flex-col items-center group relative"
+          style="min-width: {width}px;"
+        >
+          <p>{ver}</p>
+          <div class="h-full bg-gray-700 w-[1px] group-hover:bg-primary"></div>
+          <div class="h-full absolute w-full bg-transparent z-50 event pointer-events-auto"></div>
+        </div>
+      {/each}
+    </div>
+    {#each [5, 4] as rarity}
+      <div class="w-full pt-8">
+        {#each lists[selectedType][rarity] as items}
+          {#if !standardItems[items[0][1].name] || showStandard}
+            <div class="relative h-8 mb-2" style="width: {fullWidth}px;">
+              {#each items as [ver, item], index}
+                <div
+                  class="ml-1 absolute flex items-center gap-2 min-w-max"
+                  style="left: {item.index * width + (item.last ? 50 : 0)}px;"
                 >
-              {/if}
-            {/each}
-            <td class="border border-gray-600 text-white px-2 text-xs">{$t(names[rowIndex].name)}</td>
-          </tr>
+                  <div class="flex items-center gap-2 bg-black/70 rounded-full z-10 {item.last ? 'w-36' : ''}">
+                    <img src="/images/{selectedType}/{item.name}.png" alt={item.name} class="w-8 h-8 rounded-full" />
+                    {#if items[index + 1]?.[1].patches > 2 || item.last || item.first}
+                      <div class="flex flex-col pr-4">
+                        {#if !item.first}
+                          <p class="text-white text-sm leading-none">{item.patches} Version</p>
+                          <p class="text-white text-sm leading-none">{item.duration} Days</p>
+                        {:else}
+                          <p class="text-white text-sm leading-none">{ver}</p>
+                        {/if}
+                      </div>
+                    {/if}
+                  </div>
+                  <div>
+                    {#if item.last}
+                      <p class="text-white text-sm pr-8">
+                        {$t(sources[selectedType][item.name].name)}
+                      </p>
+                    {/if}
+                  </div>
+                  {#if !item.first}
+                    <div
+                      class="h-full opacity-50 absolute z-0 rounded-full"
+                      style="left: {(item.patches + 1) * -width - (item.last ? 50 : 0)}px; width: {(item.patches + 1) *
+                        width +
+                        (item.last ? 70 : 20)}px; background: {getColor(item.patches)};"
+                    ></div>
+                  {/if}
+                </div>
+              {/each}
+            </div>
+          {/if}
         {/each}
-        {#each rowsWep as r, rowIndex}
-          <tr>
-            {#each r as col, index}
-              {#if col.char}
-                <td on:mouseenter={() => onHover(index)} class="cell {hovered === index ? 'hovered' : ''}">
-                  <img class="w-full h-full" src="/images/weapons/{col.char}.png" alt={col.char} />
-                </td>
-              {:else}
-                <td
-                  on:mouseenter={() => onHover(index)}
-                  class="cell {hovered === index ? 'hovered' : ''}"
-                  style="background: {getColor(col.l, col.m)};">{col.l}</td
-                >
-              {/if}
-            {/each}
-            <td class="border border-gray-600 text-white px-2 text-xs max-w-[2rem] whitespace-pre-wrap"
-              >{$t(namesWep[rowIndex].name)}</td
-            >
-          </tr>
-        {/each}
-      </tbody>
-    </table>
+      </div>
+    {/each}
   </div>
 </div>
+
 <Ad type="desktop" variant="lb" id="2" />
 <Ad type="mobile" variant="lb" id="1" />
 
 <style lang="postcss">
-  .cell {
-    @apply border border-gray-600 w-8 h-8 min-w-[2rem] min-h-[2rem] xl:min-w-[2.5rem] xl:min-h-[2.5rem] xl:w-10 xl:h-10 text-center relative z-0;
-  }
-
-  .hovered::after {
-    content: '';
-    @apply absolute bg-white bg-opacity-20 left-0 top-0 h-8 w-8 xl:h-10 xl:w-10;
-  }
-
   ::-webkit-scrollbar {
     height: 8px;
   }
@@ -329,5 +417,32 @@
   ::-webkit-scrollbar-thumb {
     background: rgba(0, 0, 0, 0.35);
     @apply rounded-xl;
+  }
+
+  .pill {
+    @apply rounded-2xl;
+    @apply border-2;
+    @apply border-white;
+    @apply border-opacity-25;
+    @apply text-white;
+    @apply px-4;
+    @apply py-1;
+    @apply outline-none;
+    @apply transition;
+    @apply duration-100;
+
+    &:hover {
+      @apply border-primary;
+    }
+
+    &.active {
+      @apply bg-primary;
+      @apply border-primary;
+      @apply text-background;
+    }
+
+    &:disabled {
+      @apply cursor-not-allowed;
+    }
   }
 </style>
