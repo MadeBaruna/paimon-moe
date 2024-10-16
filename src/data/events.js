@@ -1992,4 +1992,15 @@ export const events = [
     url: 'https://www.hoyolab.com/article/33001020',
     showOnHome: true,
   },
+  {
+    name: 'Aphid Treasure Trace',
+    pos: '0% 20%',
+    image: 'Aphid_Treasure_Trace.png',
+    start: '2024-10-10 10:00:00',
+    end: '2024-10-21 03:59:59',
+    color: '#5489ff',
+    zoom: '200%',
+    url: 'https://www.hoyolab.com/article/34070657',
+    showOnHome: true,
+  },
 ];

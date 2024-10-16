@@ -46,6 +46,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/33001020',
       showOnHome: true,
     },
+    {
+      name: 'Aphid Treasure Trace',
+      pos: '0% 50%',
+      image: 'Aphid_Treasure_Trace.png',
+      start: '2024-10-10 10:00:00',
+      end: '2024-10-21 03:59:59',
+      color: '#5489ff',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/34070657',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -68,6 +79,17 @@ export const eventsData = [
       color: '#f0954d',
       zoom: '200%',
       url: 'https://www.hoyolab.com/article/33358228',
+      showOnHome: true,
+    },
+    {
+      name: "Land of Vibrant Stone and Flaming Springs",
+      pos: '0% 20%',
+      image: '5_1_event3.png',
+      start: '2024-10-09 06:00:00',
+      end: '2024-12-31 14:59:59',
+      color: '#7C92B9',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/34010544',
       showOnHome: true,
     },
   ],
@@ -94,6 +116,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/32490648',
       showOnHome: true,
     },
+    {
+      name: "A Prayer for Blessings, Told to Crested Peaks",
+      pos: '0% 20%',
+      image: '5_1_event2.png',
+      start: '2024-10-09 06:00:00',
+      end: '2024-10-29 17:59:59',
+      color: '#894C55',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/34010544',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -105,6 +138,17 @@ export const eventsData = [
       color: '#ea7745',
       zoom: '200%',
       url: 'https://www.hoyolab.com/article/32490648',
+      showOnHome: true,
+    },
+    {
+      name: 'The Rainbow Destined to Burn',
+      pos: '0% 25%',
+      image: '5_1_event1.png',
+      start: '2024-10-09 06:00:00',
+      end: '2024-11-19 14:59:59',
+      color: '#4686D7',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/34010544',
       showOnHome: true,
     },
   ],
@@ -239,6 +283,16 @@ export const eventsData = [
       color: '#4299E1',
       description:
         "After the active character uses an Elemental Skill, Normal Attack and Elemental Skill DMG is increased by 40% for 12s. For characters in Nightsoul's Blessing, this effect is enhanced: Normal Attack and Elemental Skill DMG is increased by 80%.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2024-10-16 04:00:00',
+      end: '2024-11-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "After a character uses an Elemental Skill, said character's DEF increases by 60% for 9s.",
     },
   ],
   [
