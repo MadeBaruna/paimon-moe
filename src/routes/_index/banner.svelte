@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    chiori: {
-      name: 'Chiori',
+    nahida: {
+      name: 'Nahida',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    xilonen: {
-      name: 'Xilonen',
+    hutao: {
+      name: 'Hutao',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300072;
-  const image = 'xilonen chiori.png';
+  const bannerId = 300073;
+  const image = 'nahida hutao.png';
   const width = 800;
-  const height = 428;
+  const height = 346;
 
   let loading = true;
   let user = '';
