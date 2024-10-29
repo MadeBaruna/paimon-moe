@@ -1379,6 +1379,28 @@ export const banners = {
     //   version: '5.1',
     //   timezoneDependent: true,
     // },
+    {
+      name: "The Moongrass' Enlightenment",
+      image: 4,
+      shortName: 'Nahida',
+      start: '2024-10-29 18:00:00',
+      end: '2024-11-19 14:59:00',
+      color: '#b8db94',
+      featured: ['nahida', 'hu_tao'],
+      featuredRare: ['sethos', 'xingqiu', 'kuki_shinobu'],
+      version: '5.1',
+    },
+    // {
+    //   name: "Moment of Bloom",
+    //   image: 5,
+    //   shortName: 'Hu Tao',
+    //   start: '2024-10-29 18:00:00',
+    //   end: '2024-11-19 14:59:00',
+    //   color: '#c66051',
+    //   featured: ['nahida', 'hu_tao'],
+    //   featuredRare: ['sethos', 'xingqiu', 'kuki_shinobu'],
+    //   version: '5.1',
+    // },
   ],
   weapons: [
     {

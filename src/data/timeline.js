@@ -144,6 +144,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: "The Moongrass' Enlightenment - Nahida Banner",
+      pos: '30% 15%',
+      zoom: '200%',
+      image: 'The Moongrass Enlightenment 4.png',
+      start: '2024-10-29 18:00:00',
+      end: '2024-11-19 14:59:00',
+      color: '#b8db94',
+      url: 'https://www.hoyolab.com/article/34470331',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -181,6 +192,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Moment of Bloom - Hu Tao Banner',
+      pos: '40% 20%',
+      zoom: '200%',
+      image: 'Moment of Bloom 5.png',
+      start: '2024-10-29 18:00:00',
+      end: '2024-11-19 14:59:00',
+      color: '#c66051',
+      url: 'https://www.hoyolab.com/article/34470331',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -217,6 +239,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/34010550',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '40% 30%',
+      zoom: '200%',
+      image: 'Epitome Invocation 72.png',
+      start: '2024-10-29 18:00:00',
+      end: '2024-11-19 14:59:00',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/34470331',
+      showOnHome: true,
     },
   ],
   [
