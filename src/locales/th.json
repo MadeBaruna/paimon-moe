@@ -274,7 +274,7 @@
           "เปิด Genshin Impact ใน PC ของคุณ (ถ้าหากคุณมีหลายบัญชี โปรดปิดและเปิดเกมใหม่อีกครั้ง)",
           "หลังจากนั้น เปิดหน้า \"ประวัติการอธิษฐาน\" ​ภายในเกม และรอจนกว่าหน้าดังกล่าวจะโหลดเสร็จ",
           "หลังจากนั้น เปิดโฟลเดอร์ที่เกมของคุณติดตั้งเอาไว้ (ตัวอย่างเช่น C:\\Games\\Genshin Impact)",
-          "จากนั้น เปิดโฟลเดอร์ GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "จากนั้น เปิดโฟลเดอร์ GenshinImpact_Data → webCaches → 2.15.0.0 → Cache → Cache_Data",
           "คลิ๊กขวาที่ไฟล์ \"data_2\" แล้วเลือก \"Open With/เปิดด้วย\"​ และเลือก Notepad (หากปรากฎข้อความ \"The process cannot access the file because it is being used by another process\" ให้ออกจากเกมก่อนดำเนินการตามขั้นตอนนี้)",
           "กด CTRL + F แล้วติ๊กเลือก \"Wrap Around\" และเลือกในช่อง Direction เป็น \"Up\" หลังจากนั้นในช่องค้นหาให้ระบุ \"e20190909gacha-v2\" (ไม่ต้องใส่เครื่องหมายคำพูด) แล้วกด Find Next",
           "คัดลอกลิงก์ทั้งหมดจาก https://webstatic จนถึง #/log โดยลิงก์ควรจะมีลักษณะดังนี้: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
