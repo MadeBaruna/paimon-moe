@@ -20,8 +20,8 @@
       average: '...',
       percentage: '...',
     },
-    hutao: {
-      name: 'Hutao',
+    hu_tao: {
+      name: 'Hu Tao',
       rarity: 'legendary',
       count: 0,
       average: '...',
