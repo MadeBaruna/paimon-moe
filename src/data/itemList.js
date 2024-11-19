@@ -1755,4 +1755,19 @@ export const itemList = {
     id: 'glowing_hornshroom',
     name: 'Glowing Hornshroom',
   },
+  refractive_bud: {
+    id: 'refractive_bud',
+    name: 'Refractive Bud',
+    rarity: 2,
+  },
+  bewildering_broadleaf: {
+    id: 'bewildering_broadleaf',
+    name: 'Bewildering Broadleaf',
+    rarity: 3,
+  },
+  illusory_leafcoil: {
+    id: 'illusory_leafcoil',
+    name: 'Illusory Leafcoil',
+    rarity: 4,
+  },
 };
