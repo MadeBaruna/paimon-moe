@@ -132,13 +132,13 @@
       label={$t('sidebar.timeline')}
       href="/timeline"
     />
-    <SidebarItem
+    <!-- <SidebarItem
       on:clicked={close}
       active={segment === 'tcg'}
       image="/images/tcg.png"
       label={$t('sidebar.tcg')}
       href="/tcg"
-    />
+    /> -->
     <SidebarItem
       on:clicked={close}
       active={segment === 'settings'}
@@ -152,7 +152,7 @@
     style="width: 248px; background: linear-gradient(180deg, rgba(32, 36, 66, 0) 0%, rgba(32, 36, 66, 1) 10%);"
   >
     <div
-      class="locale-selector flex items-center justify-center mb-4 mt-0 py-2 cursor-pointer 
+      class="locale-selector flex items-center justify-center mb-4 mt-0 py-2 cursor-pointer
     rounded-xl hover:bg-black hover:bg-opacity-50 relative w-40"
     >
       <img class="w-4 h-4 rounded-full mr-2" alt={currentLocale.label} src="/images/locales/{currentLocale.id}.svg" />
