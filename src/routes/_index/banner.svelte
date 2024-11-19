@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    nahida: {
-      name: 'Nahida',
+    lyney: {
+      name: 'Lyney',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    hu_tao: {
-      name: 'Hu Tao',
+    chasca: {
+      name: 'Chasca',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300073;
-  const image = 'nahida hutao.png';
+  const bannerId = 300074;
+  const image = 'lyney chasca.png';
   const width = 800;
-  const height = 346;
+  const height = 449;
 
   let loading = true;
   let user = '';
