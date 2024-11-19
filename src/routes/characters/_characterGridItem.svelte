@@ -1,5 +1,6 @@
 <script>
   import { onMount, tick } from 'svelte';
+  import Icon from '../../components/Icon.svelte';
 
   export let id;
   export let char;
@@ -28,9 +29,10 @@
 <a
   href="/characters/{id}"
   class="m-2 cell relative cursor-pointer transition duration-100 hover:opacity-100 hover:shadow-xl rounded-xl {!showConstellation ||
-  constellation
+  constellation ||
+  char.new
     ? ''
-    : 'opacity-50'}"
+    : 'opacity-50'} {char.rarity === 5 ? 'ring-legendary-from' : 'ring-rare-from'} {char.new ? 'ring-4' : ''}"
 >
   <div
     class="w-full rounded-t-xl bg-opacity-50 overflow-hidden {char.rarity === 5 ? 'bg-legendary-from' : 'bg-rare-from'}"
@@ -56,10 +58,13 @@
         C{Math.max(0, constellation.default + constellation.wish + constellation.manual - 1)}
       </span>
     {/if}
+    {#if char.new}
+      <span class="mx-1 text-primary text-xs font-semibold">NEW</span>
+    {/if}
     <img class="w-4 h-4" src={`/images/elements/${char.element.id}.png`} alt={char.element.name} />
   </div>
   <div class="relative overflow-hidden bg-item rounded-b-xl" style="height: 29px">
-    <div class="w-full  overflow-hidden absolute bottom-0">
+    <div class="w-full overflow-hidden absolute bottom-0">
       <p class="text-white p-1 text-center text-sm {smallName ? 'small' : ''}" bind:this={nameLabel}>
         {name}
       </p>

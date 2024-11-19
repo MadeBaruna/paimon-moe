@@ -1888,6 +1888,7 @@ export const characters = {
       boss: itemList.silken_feather,
     },
     element: elements.anemo,
+    new: true,
   },
   chevreuse: {
     id: 'chevreuse',
@@ -8711,6 +8712,7 @@ export const characters = {
       boss: itemList.lightless_silk_string,
     },
     element: elements.electro,
+    new: true,
   },
   qiqi: {
     id: 'qiqi',
