@@ -1744,6 +1744,151 @@ export const characters = {
     },
     element: elements.cryo,
   },
+  chasca: {
+    id: 'chasca',
+    name: 'Chasca',
+    rarity: 5,
+    weapon: weapons.bow,
+    stats: {
+      hp: 9797,
+      atk: 347,
+      def: 615,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.withering_purpurbloom,
+            amount: 3,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 2,
+          },
+          {
+            item: itemList.withering_purpurbloom,
+            amount: 10,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 4,
+          },
+          {
+            item: itemList.withering_purpurbloom,
+            amount: 20,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 8,
+          },
+          {
+            item: itemList.withering_purpurbloom,
+            amount: 30,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 12,
+          },
+          {
+            item: itemList.withering_purpurbloom,
+            amount: 45,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 20,
+          },
+          {
+            item: itemList.withering_purpurbloom,
+            amount: 60,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.juvenile_fang, itemList.seasoned_fang, itemList.tyrants_fang],
+      book: [itemList.teachings_of_conflict, itemList.guide_to_conflict, itemList.philosophies_of_conflict],
+      boss: itemList.silken_feather,
+    },
+    element: elements.anemo,
+  },
   chevreuse: {
     id: 'chevreuse',
     name: 'Chevreuse',
@@ -8421,6 +8566,151 @@ export const characters = {
       boss: itemList.dvalins_claw,
     },
     element: elements.geo,
+  },
+  ororon: {
+    id: 'ororon',
+    name: 'Ororon',
+    rarity: 4,
+    weapon: weapons.bow,
+    stats: {
+      hp: 9244,
+      atk: 244,
+      def: 587,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 3,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.mark_of_the_binding_blessing,
+            amount: 2,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 10,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.mark_of_the_binding_blessing,
+            amount: 4,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 20,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.mark_of_the_binding_blessing,
+            amount: 8,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 30,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.mark_of_the_binding_blessing,
+            amount: 12,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 45,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.mark_of_the_binding_blessing,
+            amount: 20,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 60,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.juvenile_fang, itemList.seasoned_fang, itemList.tyrants_fang],
+      book: [itemList.teachings_of_kindling, itemList.guide_to_kindling, itemList.philosophies_of_kindling],
+      boss: itemList.lightless_silk_string,
+    },
+    element: elements.electro,
   },
   qiqi: {
     id: 'qiqi',

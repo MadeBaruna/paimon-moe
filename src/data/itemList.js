@@ -1742,4 +1742,17 @@ export const itemList = {
     id: 'brilliant_chrysanthemum',
     name: 'Brilliant Chrysanthemum',
   },
+  ensnaring_gaze: {
+    id: 'ensnaring_gaze',
+    name: 'Ensnaring Gaze',
+    rarity: 4,
+  },
+  withering_purpurbloom: {
+    id: 'withering_purpurbloom',
+    name: 'Withering Purpurbloom',
+  },
+  glowing_hornshroom: {
+    id: 'glowing_hornshroom',
+    name: 'Glowing Hornshroom',
+  },
 };
