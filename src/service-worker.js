@@ -41,7 +41,7 @@ self.addEventListener('activate', (event) => {
         }
       }
 
-      self.clients.claim();
+      await self.clients.claim();
       console.log('SW NEED UPDATE', needUpdate);
       if (needUpdate) {
         channel.postMessage({
@@ -50,7 +50,7 @@ self.addEventListener('activate', (event) => {
         });
       }
 
-      fetchAddCache('/');
+      await fetchAddCache('/');
       channel.addEventListener('message', (event) => {
         if (event.data.type === 'fetch-doc') {
           fetchAddCache(event.data.path);
@@ -74,7 +74,7 @@ self.addEventListener('fetch', async (event) => {
       }
 
       const res = await fetch(event.request);
-      if (res.ok) cache.put(event.request, res.clone());
+      if (res.ok) await cache.put(event.request, res.clone());
       return res;
     })(),
   );
