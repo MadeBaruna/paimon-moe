@@ -1203,4 +1203,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Decree of the Deeps 3': [
+    {
+      name: 'Decree of the Deeps',
+      image: 3,
+      shortName: 'Neuvillette',
+      start: '2024-12-10 18:00:00',
+      end: '2024-12-31 14:59:00',
+      color: '#72fefd',
+      featured: ['neuvillette', 'zhongli'],
+      featuredRare: ['shikanoin_heizou', 'fischl', 'yaoyao'],
+      version: '5.2',
+    },
+    {
+      name: 'Gentry of Hermitage',
+      image: 6,
+      shortName: 'Zhongli',
+      start: '2024-12-10 18:00:00',
+      end: '2024-12-31 14:59:00',
+      color: '#D1A55C',
+      featured: ['neuvillette', 'zhongli'],
+      featuredRare: ['shikanoin_heizou', 'fischl', 'yaoyao'],
+      version: '5.2',
+    },
+  ],
 };
