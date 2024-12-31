@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    neuvillette: {
-      name: 'Neuvillette',
+    citlali: {
+      name: 'Citlali',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    zhongli: {
-      name: 'Zhongli',
+    mavuika: {
+      name: 'Mavuika',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300075;
-  const image = 'neuvillette zhongli.png';
+  const bannerId = 300076;
+  const image = 'citlali mavuika.png';
   const width = 800;
-  const height = 585;
+  const height = 439;
 
   let loading = true;
   let user = '';
