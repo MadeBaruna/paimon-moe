@@ -15634,4 +15634,229 @@ export const weaponList = {
       },
     ],
   },
+  a_thousand_blazing_suns: {
+    id: 'a_thousand_blazing_suns',
+    name: 'A Thousand Blazing Suns',
+    rarity: 5,
+    atk: 49,
+    secondary: 'CRIT RATE',
+    type: weapons.claymore,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_terror,
+            amount: 5,
+          },
+          {
+            item: itemList.axis_of_the_secret_source,
+            amount: 5,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_hesitance,
+            amount: 5,
+          },
+          {
+            item: itemList.axis_of_the_secret_source,
+            amount: 18,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_hesitance,
+            amount: 9,
+          },
+          {
+            item: itemList.sheath_of_the_secret_source,
+            amount: 9,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_resolve,
+            amount: 5,
+          },
+          {
+            item: itemList.sheath_of_the_secret_source,
+            amount: 18,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_resolve,
+            amount: 9,
+          },
+          {
+            item: itemList.heart_of_the_secret_source,
+            amount: 14,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blazing_sacrificial_hearts_splendor,
+            amount: 6,
+          },
+          {
+            item: itemList.heart_of_the_secret_source,
+            amount: 27,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  starcallers_watch: {
+    id: 'starcallers_watch',
+    name: "Starcaller's Watch",
+    rarity: 5,
+    atk: 44,
+    secondary: 'Elemental Mastery',
+    type: weapons.catalyst,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.delirious_decadence_of_the_sacred_lord,
+            amount: 5,
+          },
+          {
+            item: itemList.shard_of_a_shattered_will,
+            amount: 5,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 5,
+          },
+          {
+            item: itemList.shard_of_a_shattered_will,
+            amount: 18,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 9,
+          },
+          {
+            item: itemList.locus_of_a_clear_will,
+            amount: 9,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 5,
+          },
+          {
+            item: itemList.locus_of_a_clear_will,
+            amount: 18,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 9,
+          },
+          {
+            item: itemList.sigil_of_a_striding_will,
+            amount: 14,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_divinity_of_the_sacred_lord,
+            amount: 6,
+          },
+          {
+            item: itemList.sigil_of_a_striding_will,
+            amount: 27,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
