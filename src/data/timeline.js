@@ -1,7 +1,7 @@
 export const eventsData = [
   [
     {
-      name: "Emblem of Steadfast Valor",
+      name: 'Emblem of Steadfast Valor',
       pos: '0% 50%',
       zoom: '100%',
       image: 'emblem of steadfast valor tmp.png',
@@ -36,7 +36,7 @@ export const eventsData = [
       showOnHome: true,
     },
     {
-      name: "On the Trail of Behemoths",
+      name: 'On the Trail of Behemoths',
       pos: '0% 60%',
       zoom: '100%',
       image: 'on the trail of behemoths tmp.png',
@@ -216,7 +216,7 @@ export const eventsData = [
       name: "Starry Night's Whispers - Citlali Banner",
       pos: '30% 18%',
       zoom: '200%',
-      image: "Starry Nights Whispers 2.png",
+      image: 'Starry Nights Whispers 1.png',
       start: '2025-01-01 06:00:00',
       end: '2025-01-21 17:59:00',
       color: '#efcbe5',
@@ -225,7 +225,7 @@ export const eventsData = [
       timezoneDependent: true,
     },
     {
-      name: "Illuminating Lightning - Clorinde Banner",
+      name: 'Illuminating Lightning - Clorinde Banner',
       pos: '30% 18%',
       zoom: '200%',
       image: 'Illuminating Lightning 2.png',
