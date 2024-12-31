@@ -1770,4 +1770,10 @@ export const itemList = {
     name: 'Illusory Leafcoil',
     rarity: 4,
   },
+  eroded_horn: { id: 'eroded_horn', name: 'Eroded Horn' },
+  talisman_of_the_enigmatic_land: {
+    id: 'talisman_of_the_enigmatic_land',
+    name: 'Talisman of the Enigmatic Land',
+    rarity: 4,
+  },
 };
