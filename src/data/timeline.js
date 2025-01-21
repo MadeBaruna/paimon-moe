@@ -46,6 +46,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/35949127',
       showOnHome: true,
     },
+    {
+      name: 'Overflowing Mastery',
+      pos: '0% 50%',
+      image: 'overflowing_mastery.jpg',
+      start: '2025-02-03 04:00:00',
+      end: '2025-02-10 03:59:59',
+      color: '#f5debc',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/36388407',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -79,6 +90,17 @@ export const eventsData = [
       color: '#f6c3b7',
       zoom: '200%',
       url: 'https://www.hoyolab.com/article/35948962',
+      showOnHome: true,
+    },
+    {
+      name: 'Springtime Charms',
+      pos: '30% 20%',
+      zoom: '200%',
+      image: 'springtime charms tmp.png',
+      start: '2025-01-24 10:00:00',
+      end: '2025-02-09 03:59:59',
+      color: '#ffc297',
+      url: 'https://www.hoyolab.com/article/36388407',
       showOnHome: true,
     },
   ],
@@ -318,6 +340,16 @@ export const eventsData = [
       description:
         "All party members' Shield Strength is increased by 20%. While the active character is protected by a Shield, when they deal DMG to opponents, their attacks will unleash a shockwave at the opponents' position that deals True DMG. This can trigger once every 5s.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2025-01-16 04:00:00',
+      end: '2025-02-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "After a party member triggers a Pyro-related reaction, a shockwave will be unleashed at the character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 3s.",
+    },
   ],
   [
     {
@@ -349,6 +381,16 @@ export const eventsData = [
       color: '#777df3',
       description:
         'Required Elemental Types: Pyro, Cryo, and Geo. Opening Characters: Diluc, Bennett, Ganyu, Kaeya, Navia, and Noelle',
+    },
+    {
+      name: 'Imaginarium Theater',
+      image: 'Imaginarium Theater tmp.png',
+      pos: '0% 70%',
+      start: '2025-02-01 04:00:00',
+      end: '2025-03-01 04:00:00',
+      color: '#777df3',
+      description:
+        'Required Elemental Types: Pyro, Hydro, and Anemo. Opening Characters: Hu Tao, Gaming, Mona, Xingqiu, Venti, and Shikanoin Heizou',
     },
   ],
   [

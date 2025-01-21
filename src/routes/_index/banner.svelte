@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    citlali: {
-      name: 'Citlali',
+    arlecchino: {
+      name: 'Arlecchino',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    mavuika: {
-      name: 'Mavuika',
+    clorinde: {
+      name: 'Clorinde',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300076;
-  const image = 'citlali mavuika.png';
+  const bannerId = 300077;
+  const image = 'arlecchino clorinde.png';
   const width = 800;
-  const height = 439;
+  const height = 394;
 
   let loading = true;
   let user = '';
