@@ -1253,4 +1253,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  "The Hearth's Ashen Shadow 2": [
+    {
+      name: "The Hearth's Ashen Shadow",
+      image: 2,
+      shortName: 'Arlecchino',
+      start: '2025-01-21 18:00:00',
+      end: '2025-02-11 14:59:00',
+      color: '#f8f8f8',
+      featured: ['arlecchino', 'clorinde'],
+      featuredRare: ['lan_yan', 'chevreuse', 'rosaria'],
+      version: '5.3',
+    },
+    {
+      name: 'Illuminating Lightning',
+      image: 2,
+      shortName: 'Clorinde',
+      start: '2025-01-21 18:00:00',
+      end: '2025-02-11 14:59:00',
+      color: '#6968ff',
+      featured: ['arlecchino', 'clorinde'],
+      featuredRare: ['lan_yan', 'chevreuse', 'rosaria'],
+      version: '5.3',
+    },
+  ],
 };

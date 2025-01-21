@@ -1776,4 +1776,8 @@ export const itemList = {
     name: 'Talisman of the Enigmatic Land',
     rarity: 4,
   },
+  eroded_sunfire: {
+    id: 'eroded_sunfire',
+    name: 'Eroded Sunfire',
+  },
 };

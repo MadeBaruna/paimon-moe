@@ -6824,6 +6824,152 @@ export const characters = {
     },
     element: elements.electro,
   },
+  lan_yan: {
+    id: 'lan_yan',
+    name: 'Lan Yan',
+    rarity: 4,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 9244,
+      atk: 251,
+      def: 580,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 3,
+          },
+          {
+            item: itemList.whopperflower_nectar,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 2,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 10,
+          },
+          {
+            item: itemList.whopperflower_nectar,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 4,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 20,
+          },
+          {
+            item: itemList.shimmering_nectar,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 8,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 30,
+          },
+          {
+            item: itemList.shimmering_nectar,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 12,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 45,
+          },
+          {
+            item: itemList.energy_nectar,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.gold_inscribed_secret_source_core,
+            amount: 20,
+          },
+          {
+            item: itemList.clearwater_jade,
+            amount: 60,
+          },
+          {
+            item: itemList.energy_nectar,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.whopperflower_nectar, itemList.shimmering_nectar, itemList.energy_nectar],
+      book: [itemList.teachings_of_diligence, itemList.guide_to_diligence, itemList.philosophies_of_diligence],
+      boss: itemList.eroded_sunfire,
+    },
+    element: elements.anemo,
+    new: true,
+  },
   layla: {
     id: 'layla',
     name: 'Layla',
