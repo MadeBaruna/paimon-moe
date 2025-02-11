@@ -16,6 +16,7 @@ export const birthdays = {
   shenhe: [3, 10],
   xilonen: [3, 13],
   jean: [3, 14],
+  yumemizuki_mizuki: [3, 16],
   noelle: [3, 21],
   kamisato_ayato: [3, 26],
   sigewinne: [3, 30],
