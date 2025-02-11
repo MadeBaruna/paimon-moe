@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    arlecchino: {
-      name: 'Arlecchino',
+    sigewinne: {
+      name: 'Sigewinne',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    clorinde: {
-      name: 'Clorinde',
+    yumemizuki_mizuki: {
+      name: 'Yumemizuki Mizuki',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300077;
-  const image = 'arlecchino clorinde.png';
+  const bannerId = 300078;
+  const image = 'sigewinne mizuki.png';
   const width = 800;
-  const height = 394;
+  const height = 464;
 
   let loading = true;
   let user = '';
