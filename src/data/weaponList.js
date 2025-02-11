@@ -15859,4 +15859,230 @@ export const weaponList = {
       },
     ],
   },
+  'sunny_morning_sleep-in': {
+    id: 'sunny_morning_sleep-in',
+    name: 'Sunny Morning Sleep-In',
+    rarity: 5,
+    atk: 44,
+    secondary: 'Elemental Mastery',
+    type: weapons.catalyst,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.narukamis_wisdom,
+            amount: 5,
+          },
+          {
+            item: itemList.ignited_stone,
+            amount: 5,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_joy,
+            amount: 5,
+          },
+          {
+            item: itemList.ignited_stone,
+            amount: 18,
+          },
+          {
+            item: itemList.spectral_husk,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_joy,
+            amount: 9,
+          },
+          {
+            item: itemList.ignited_seed_of_life,
+            amount: 9,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_affection,
+            amount: 5,
+          },
+          {
+            item: itemList.ignited_seed_of_life,
+            amount: 18,
+          },
+          {
+            item: itemList.spectral_heart,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_affection,
+            amount: 9,
+          },
+          {
+            item: itemList.ignited_seeing_eye,
+            amount: 14,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.narukamis_valor,
+            amount: 6,
+          },
+          {
+            item: itemList.ignited_seeing_eye,
+            amount: 27,
+          },
+          {
+            item: itemList.spectral_nucleus,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  tamayuratei_no_ohanashi: {
+    id: 'tamayuratei_no_ohanashi',
+    name: 'Tamayuratei no Ohanashi',
+    rarity: 4,
+    atk: 44,
+    secondary: 'Energy Recharge',
+    type: weapons.polearm,
+    source: 'event',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.mask_of_the_wicked_lieutenant,
+            amount: 3,
+          },
+          {
+            item: itemList.refractive_bud,
+            amount: 3,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mask_of_the_tigers_bite,
+            amount: 3,
+          },
+          {
+            item: itemList.refractive_bud,
+            amount: 12,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mask_of_the_tigers_bite,
+            amount: 6,
+          },
+          {
+            item: itemList.bewildering_broadleaf,
+            amount: 6,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mask_of_the_one_horned,
+            amount: 3,
+          },
+          {
+            item: itemList.bewildering_broadleaf,
+            amount: 12,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mask_of_the_one_horned,
+            amount: 6,
+          },
+          {
+            item: itemList.illusory_leafcoil,
+            amount: 9,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.mask_of_the_kijin,
+            amount: 4,
+          },
+          {
+            item: itemList.illusory_leafcoil,
+            amount: 18,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };

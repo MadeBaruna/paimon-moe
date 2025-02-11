@@ -2468,7 +2468,6 @@ export const characters = {
       boss: itemList.denial_and_judgment,
     },
     element: elements.cryo,
-    new: true,
   },
   clorinde: {
     id: 'clorinde',
@@ -6968,7 +6967,6 @@ export const characters = {
       boss: itemList.eroded_sunfire,
     },
     element: elements.anemo,
-    new: true,
   },
   layla: {
     id: 'layla',
@@ -7698,7 +7696,6 @@ export const characters = {
       boss: itemList.eroded_horn,
     },
     element: elements.pyro,
-    new: true,
   },
   mika: {
     id: 'mika',
@@ -13681,6 +13678,152 @@ export const characters = {
       boss: itemList.dragon_lords_crown,
     },
     element: elements.pyro,
+  },
+  yumemizuki_mizuki: {
+    id: 'yumemizuki_mizuki',
+    name: 'Yumemizuki Mizuki',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 12736,
+      atk: 215,
+      def: 757,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 3,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.talisman_of_the_enigmatic_land,
+            amount: 2,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 10,
+          },
+          {
+            item: itemList.old_handguard,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.talisman_of_the_enigmatic_land,
+            amount: 4,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 20,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.talisman_of_the_enigmatic_land,
+            amount: 8,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 30,
+          },
+          {
+            item: itemList.kageuchi_handguard,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.talisman_of_the_enigmatic_land,
+            amount: 12,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 45,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.talisman_of_the_enigmatic_land,
+            amount: 20,
+          },
+          {
+            item: itemList.sea_ganoderma,
+            amount: 60,
+          },
+          {
+            item: itemList.famed_handguard,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.old_handguard, itemList.kageuchi_handguard, itemList.famed_handguard],
+      book: [itemList.teachings_of_transience, itemList.guide_to_transience, itemList.philosophies_of_transience],
+      boss: itemList.fading_candle,
+    },
+    element: elements.anemo,
+    new: true,
   },
   yun_jin: {
     id: 'yun_jin',
