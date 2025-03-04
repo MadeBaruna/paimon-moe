@@ -1303,4 +1303,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Tempestuous Destiny 2': [
+    {
+      name: 'Tempestuous Destiny',
+      image: 2,
+      shortName: 'Wriothesley',
+      start: '2025-03-04 18:00:00',
+      end: '2025-03-25 14:59:00',
+      color: '#b3d7f1',
+      featured: ['wriothesley', 'furina'],
+      featuredRare: ['charlotte', 'chongyun', 'mika'],
+      version: '5.4',
+    },
+    {
+      name: 'Chanson of Many Waters',
+      image: 3,
+      shortName: 'Furina',
+      start: '2025-03-04 18:00:00',
+      end: '2025-03-25 14:59:00',
+      color: '#95d6fb',
+      featured: ['wriothesley', 'furina'],
+      featuredRare: ['charlotte', 'chongyun', 'mika'],
+      version: '5.4',
+    },
+  ],
 };

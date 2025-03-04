@@ -177,6 +177,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: "Tempestuous Destiny - Wriothesley Banner",
+      pos: '30% 15%',
+      zoom: '200%',
+      image: 'Tempestuous Destiny 2.png',
+      start: '2025-03-04 18:00:00',
+      end: '2025-03-25 14:59:00',
+      color: '#b3d7f1',
+      url: 'https://www.hoyolab.com/article/37319180',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -214,6 +225,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: "Chanson of Many Waters - Furina Banner",
+      pos: '30% 15%',
+      zoom: '200%',
+      image: 'Chanson of Many Waters 3.png',
+      start: '2025-03-04 18:00:00',
+      end: '2025-03-25 14:59:00',
+      color: '#95d6fb',
+      url: 'https://www.hoyolab.com/article/37319180',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -250,6 +272,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/36971021',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '40% 45%',
+      zoom: '200%',
+      image: 'Epitome Invocation 78.png',
+      start: '2025-03-04 18:00:00',
+      end: '2025-03-25 14:59:00',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/37319180',
+      showOnHome: true,
     },
   ],
   [
