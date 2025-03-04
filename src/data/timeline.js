@@ -14,12 +14,23 @@ export const eventsData = [
     {
       name: 'Realm of Tempered Valor',
       pos: '0% 30%',
-      image: 'Realm of Tempered Valor tmp.png',
+      image: 'Realm of Tempered Valor.png',
       start: '2025-02-24 10:00:00',
       end: '2025-03-10 03:59:59',
       color: '#e6e4c4',
-      zoom: '100%',
-      url: 'https://www.hoyolab.com/article/36971146',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/37225915',
+      showOnHome: true,
+    },
+    {
+      name: 'Ley Line Overflow',
+      pos: '0% 20%',
+      image: 'leyline_overflow.jpg',
+      start: '2025-03-17 04:00:00',
+      end: '2025-03-24 03:59:59',
+      color: '#5baced',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/37319302',
       showOnHome: true,
     },
   ],
@@ -60,12 +71,23 @@ export const eventsData = [
     {
       name: 'Enchanted Tales of the Mikawa Festival',
       pos: '0% 20%',
-      image: 'Enchanted Tales of the Mikawa Festival tmp.png',
+      image: 'Enchanted Tales of the Mikawa Festival.png',
       start: '2025-02-14 10:00:00',
       end: '2025-03-03 03:59:59',
       color: '#ffd8ee',
       zoom: '100%',
-      url: 'https://www.hoyolab.com/article/36971146',
+      url: 'https://www.hoyolab.com/article/37008951',
+      showOnHome: true,
+    },
+    {
+      name: 'Reel Ad-Venture',
+      pos: '0% 40%',
+      image: 'Reel Ad-Venture tmp.png',
+      start: '2025-03-12 10:00:00',
+      end: '2025-03-24 03:59:59',
+      color: '#fff358',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/37319302',
       showOnHome: true,
     },
   ],
@@ -103,6 +125,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/36971026',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Invasive Fish Wrangler',
+      pos: '0% 40%',
+      image: 'Invasive Fish Wrangler.png',
+      start: '2025-03-05 10:00:00',
+      end: '2025-03-17 03:59:59',
+      color: '#00b1e1',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/37397966',
+      showOnHome: true,
     },
   ],
   [
@@ -178,7 +211,7 @@ export const eventsData = [
       timezoneDependent: true,
     },
     {
-      name: "Tempestuous Destiny - Wriothesley Banner",
+      name: 'Tempestuous Destiny - Wriothesley Banner',
       pos: '30% 15%',
       zoom: '200%',
       image: 'Tempestuous Destiny 2.png',
@@ -226,7 +259,7 @@ export const eventsData = [
       timezoneDependent: true,
     },
     {
-      name: "Chanson of Many Waters - Furina Banner",
+      name: 'Chanson of Many Waters - Furina Banner',
       pos: '30% 15%',
       zoom: '200%',
       image: 'Chanson of Many Waters 3.png',
@@ -319,6 +352,26 @@ export const eventsData = [
       description:
         "After a party member triggers a Pyro-related reaction, a shockwave will be unleashed at the character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 3s.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2025-02-16 04:00:00',
+      end: '2025-03-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character receives healing, a shockwave will be unleashed at the character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 3s.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2025-03-16 04:00:00',
+      end: '2025-04-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character's Plunging Attacks hit opponents, a shockwave will be unleashed at the character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 3s.",
+    },
   ],
   [
     {
@@ -340,6 +393,16 @@ export const eventsData = [
       color: '#777df3',
       description:
         'Required Elemental Types: Pyro, Hydro, and Anemo. Opening Characters: Hu Tao, Gaming, Mona, Xingqiu, Venti, and Shikanoin Heizou',
+    },
+    {
+      name: 'Imaginarium Theater',
+      image: 'Imaginarium Theater tmp.png',
+      pos: '0% 70%',
+      start: '2025-03-01 04:00:00',
+      end: '2025-04-01 04:00:00',
+      color: '#777df3',
+      description:
+        'Required Elemental Types: Hydro, Electro, and Cryo. Opening Characters: Kamisato Ayato, Barbara, Raiden Shogun, Ororon, Eula, and Layla',
     },
   ],
   [

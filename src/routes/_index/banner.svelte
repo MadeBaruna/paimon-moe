@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    sigewinne: {
-      name: 'Sigewinne',
+    wriothesley: {
+      name: 'Wriothesley',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    yumemizuki_mizuki: {
-      name: 'Yumemizuki Mizuki',
+    furina: {
+      name: 'Furina',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300078;
-  const image = 'sigewinne mizuki.png';
+  const bannerId = 300079;
+  const image = 'wriothesley furina.png';
   const width = 800;
-  const height = 464;
+  const height = 423;
 
   let loading = true;
   let user = '';
