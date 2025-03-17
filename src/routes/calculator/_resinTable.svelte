@@ -1,15 +1,9 @@
 <script>
   import { mdiArrowRight } from '@mdi/js';
-  import dayjs from 'dayjs';
-  import 'dayjs/locale/en';
-  import 'dayjs/locale/id';
-  import relativeTime from 'dayjs/plugin/relativeTime';
   import { t } from 'svelte-i18n';
   import Icon from '../../components/Icon.svelte';
 
-  dayjs.extend(relativeTime);
-
-  const step = [0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200 ];
+  const step = [0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200];
   const stepTime = [];
 
   let originalResin = {
@@ -24,6 +18,20 @@
       const time = originalResin.value * s * 60 * 1000;
       stepTime.push(new Date().getTime() + time);
     });
+  }
+
+  function formatTime(timestamp) {
+    const now = new Date().getTime();
+    const diffMs = timestamp - now;
+    
+    const hours = Math.floor(diffMs / (1000 * 60 * 60));
+    const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
+    
+    if (hours > 0) {
+      return `${hours} hour${hours !== 1 ? 's' : ''} ${minutes} minute${minutes !== 1 ? 's' : ''}`;
+    } else {
+      return `${minutes} minute${minutes !== 1 ? 's' : ''}`;
+    }
   }
 
   const rows = Array.from(Array(step.length - 1).keys());
@@ -46,9 +54,7 @@
               <img src={originalResin.image} alt={originalResin.label} class="h-6 w-6 inline" /></td
             >
             <td class="pr-2 text-white text-center">
-              {dayjs(new Date(stepTime[i + 1]))
-                .locale($t('calculator.resin.timeFormat'))
-                .fromNow()}
+              {formatTime(stepTime[i + 1])}
             </td>
           </tr>
         {/each}
