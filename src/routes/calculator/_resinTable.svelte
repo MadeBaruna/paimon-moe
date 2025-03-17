@@ -9,7 +9,7 @@
 
   dayjs.extend(relativeTime);
 
-  const step = [0, 15, 30, 45, 60, 75, 90, 105, 120, 145, 160];
+  const step = [0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200 ];
   const stepTime = [];
 
   let originalResin = {
