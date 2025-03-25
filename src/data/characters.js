@@ -4934,6 +4934,156 @@ export const characters = {
     },
     element: elements.pyro,
   },
+  iansan: {
+    id: 'iansan',
+    name: 'Iansan',
+    rarity: 4,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 10657,
+      atk: 257,
+      def: 638,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.dracolite,
+            amount: 3,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 2,
+          },
+          {
+            item: itemList.dracolite,
+            amount: 10,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 4,
+          },
+          {
+            item: itemList.dracolite,
+            amount: 20,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 8,
+          },
+          {
+            item: itemList.dracolite,
+            amount: 30,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 12,
+          },
+          {
+            item: itemList.dracolite,
+            amount: 45,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 20,
+          },
+          {
+            item: itemList.dracolite,
+            amount: 60,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [
+        itemList.sentrys_wooden_whistle,
+        itemList.warriors_metal_whistle,
+        itemList.saurian_crowned_warriors_golden_whistle,
+      ],
+      book: [itemList.teachings_of_contention, itemList.guide_to_contention, itemList.philosophies_of_contention],
+      boss: itemList.denial_and_judgment,
+    },
+    element: elements.electro,
+    new: true,
+  },
   jean: {
     id: 'jean',
     name: 'Jean',
@@ -11645,6 +11795,152 @@ export const characters = {
     },
     element: elements.dendro,
   },
+  varesa: {
+    id: 'varesa',
+    name: 'Varesa',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 12699,
+      atk: 356,
+      def: 782,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 3,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 2,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 10,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 4,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 20,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 8,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 30,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 12,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 45,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 20,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 60,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.juvenile_fang, itemList.seasoned_fang, itemList.tyrants_fang],
+      book: [itemList.teachings_of_conflict, itemList.guide_to_conflict, itemList.philosophies_of_conflict],
+      boss: itemList.eroded_scale_feather,
+    },
+    element: elements.electro,
+    new: true,
+  },
   venti: {
     id: 'venti',
     name: 'Venti',
@@ -13823,7 +14119,6 @@ export const characters = {
       boss: itemList.fading_candle,
     },
     element: elements.anemo,
-    new: true,
   },
   yun_jin: {
     id: 'yun_jin',

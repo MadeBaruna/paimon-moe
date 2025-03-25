@@ -16085,4 +16085,117 @@ export const weaponList = {
       },
     ],
   },
+  vivid_notions: {
+    id: 'vivid_notions',
+    name: 'Vivid Notions',
+    rarity: 5,
+    atk: 48,
+    secondary: 'CRIT DMG',
+    type: weapons.catalyst,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.delirious_decadence_of_the_sacred_lord,
+            amount: 5,
+          },
+          {
+            item: itemList.cold_cracked_shellshard,
+            amount: 5,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 5,
+          },
+          {
+            item: itemList.cold_cracked_shellshard,
+            amount: 18,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 9,
+          },
+          {
+            item: itemList.warm_back_shell,
+            amount: 9,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 5,
+          },
+          {
+            item: itemList.warm_back_shell,
+            amount: 18,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 9,
+          },
+          {
+            item: itemList.blazing_prismshell,
+            amount: 14,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_divinity_of_the_sacred_lord,
+            amount: 6,
+          },
+          {
+            item: itemList.blazing_prismshell,
+            amount: 27,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

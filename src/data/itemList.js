@@ -1780,4 +1780,37 @@ export const itemList = {
     id: 'eroded_sunfire',
     name: 'Eroded Sunfire',
   },
+
+  dracolite: {
+    id: 'dracolite',
+    name: 'Dracolite',
+  },
+  sparkless_statue_core: {
+    id: 'sparkless_statue_core',
+    name: 'Sparkless Statue Core',
+    rarity: 4,
+  },
+  skysplit_gembloom: {
+    id: 'skysplit_gembloom',
+    name: 'Skysplit Gembloom',
+  },
+  eroded_scale_feather: {
+    id: 'eroded_scale_feather',
+    name: 'Eroded Scale-Feather',
+  },
+  cold_cracked_shellshard: {
+    id: 'cold_cracked_shellshard',
+    name: 'Cold-Cracked Shellshard',
+    rarity: 2,
+  },
+  warm_back_shell: {
+    id: 'warm_back_shell',
+    name: 'Warm Back-Shell',
+    rarity: 3,
+  },
+  blazing_prismshell: {
+    id: 'blazing_prismshell',
+    name: 'Blazing Prismshell',
+    rarity: 4,
+  },
 };
