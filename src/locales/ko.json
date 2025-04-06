@@ -1018,7 +1018,8 @@
     "sortByTime": "출시 순서대로 정렬",
     "sortByRerun": "제일 오래 복각하지 않은 순서대로 정렬",
     "bannerTitle": "캐릭터 출시 타임라인",
-    "bannerSubtitle": "캐릭터가 언제 출시되고 복각되었는지 확인하세요."
+    "bannerSubtitle": "캐릭터가 언제 출시되고 복각되었는지 확인하세요.",
+    "showStandard": "상시 기원 보기"
   },
   "tcg": {
     "title": "일곱 성인의 소환",
