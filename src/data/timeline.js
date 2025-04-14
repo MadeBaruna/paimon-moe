@@ -46,6 +46,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/37319302',
       showOnHome: true,
     },
+    {
+      name: 'Unlimited Fighting Championship',
+      pos: '0% 30%',
+      image: 'Unlimited Fighting Championship.png',
+      start: '2025-04-07 10:00:00',
+      end: '2025-04-21 03:59:59',
+      color: '#E77655',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/38055499',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -71,6 +82,40 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/37397966',
       showOnHome: true,
     },
+    {
+      name: 'Tournament of Glory in Bloom',
+      pos: '30% 20%',
+      image: 'Tournament of Glory in Bloom.png',
+      start: '2025-03-28 10:00:00',
+      end: '2025-04-14 03:59:59',
+      color: '#F5D29D',
+      zoom: '150%',
+      url: 'https://www.hoyolab.com/article/37847453',
+      showOnHome: true,
+    },
+    {
+      name: 'Overflowing Favor',
+      pos: '0% 30%',
+      image: 'Overflowing Favor.png',
+      start: '2025-04-14 04:00:00',
+      end: '2025-04-21 03:59:59',
+      color: '#D9F2FF',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/38189905',
+      showOnHome: true,
+      timezoneDependent: true,
+    },
+    {
+      name: 'Rythm Ball Meztli',
+      pos: '0% 30%',
+      image: 'Rythm Ball Meztli.png',
+      start: '2025-04-28 10:00:00',
+      end: '2025-05-06 03:59:59',
+      color: '#AECBEA',
+      zoom: '100%',
+      url: 'https://www.hoyolab.com/article/38153883',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -84,6 +129,30 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/36971022',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Mushroom Realm Mystery',
+      pos: '0% 30%',
+      image: 'Mushroom Realm Mystery.png',
+      start: '2025-03-26 06:00:00',
+      end: '2025-04-15 17:59:59',
+      color: '#FDC0C4',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/37812870',
+      showOnHome: true,
+      timezoneDependent: true,
+    },
+
+    {
+      name: 'Quirky Quaking Arena',
+      pos: '0% 30%',
+      image: 'Quirky Quaking Arena.png',
+      start: '2025-04-21 10:00:00',
+      end: '2025-05-02 03:59:59',
+      color: '#F8D279',
+      zoom: '100%',
+      url: 'https://www.hoyolab.com/article/38153883',
+      showOnHome: true,
     },
   ],
   [
@@ -122,6 +191,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: "Forgefire's Blessing - Xilonen Banner",
+      pos: '30% 17%',
+      zoom: '200%',
+      image: 'Forgefires Blessing 2.png',
+      start: '2025-04-15 18:00:00',
+      end: '2025-05-06 14:59:00',
+      color: '#fae3a4',
+      url: 'https://www.hoyolab.com/article/38153719',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -158,6 +238,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/37812874',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Ballad in Goblets - Venti Banner',
+      pos: '30% 17%',
+      zoom: '200%',
+      image: 'Ballad in Goblets 6.png',
+      start: '2025-04-15 18:00:00',
+      end: '2025-05-06 14:59:00',
+      color: '#96f6de',
+      url: 'https://www.hoyolab.com/article/38153719',
+      showOnHome: true,
     },
   ],
   [
@@ -196,6 +287,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '40% 45%',
+      zoom: '150%',
+      image: 'Epitome Invocation 80.png',
+      start: '2025-04-15 18:00:00',
+      end: '2025-05-06 14:59:00',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/38153719',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -228,6 +330,16 @@ export const eventsData = [
       description:
         "When a character's Plunging Attacks hit opponents, a shockwave will be unleashed at the character's position, dealing True DMG to nearby opponents. This effect can be triggered once every 3s.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2025-04-16 04:00:00',
+      end: '2025-05-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character triggers Cryo-related reactions, a shockwave will be released at the opponent's position, dealing True DMG. This effect can be triggered once every 4s.",
+    },
   ],
   [
     {
@@ -249,6 +361,26 @@ export const eventsData = [
       color: '#777df3',
       description:
         'Required Elemental Types: Hydro, Electro, and Cryo. Opening Characters: Kamisato Ayato, Barbara, Raiden Shogun, Ororon, Eula, and Layla',
+    },
+    {
+      name: 'Imaginarium Theater',
+      image: 'Imaginarium Theater tmp.png',
+      pos: '0% 70%',
+      start: '2025-04-01 04:00:00',
+      end: '2025-05-01 04:00:00',
+      color: '#777df3',
+      description:
+        'Required Elemental Types: Pyro, Electro, and Anemo. Opening Characters: Yoimiya, Thoma, Clorinde, Beidou, Xiao, and Sucrose',
+    },
+    {
+      name: 'Imaginarium Theater',
+      image: 'Imaginarium Theater tmp.png',
+      pos: '0% 70%',
+      start: '2025-05-01 04:00:00',
+      end: '2025-06-01 04:00:00',
+      color: '#777df3',
+      description:
+        'Required Elemental Types: Hydro, Cryo, and Geo. Opening Characters: Neuvillette, Candace, Kamisato Ayaka, Charlotte, Albedo, and Kachina',
     },
   ],
   [
