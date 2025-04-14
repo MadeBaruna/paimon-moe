@@ -1353,4 +1353,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  "Forgefire's Blessing 2": [
+    {
+      name: "Forgefire's Blessing",
+      image: 2,
+      shortName: 'Xilonen',
+      start: '2025-04-15 18:00:00',
+      end: '2025-05-06 14:59:00',
+      color: '#fae3a4',
+      featured: ['xilonen', 'venti'],
+      featuredRare: ['faruzan', 'beidou', 'yanfei'],
+      version: '5.5',
+    },
+    {
+      name: 'Ballad in Goblets',
+      image: 6,
+      shortName: 'Xilonen',
+      start: '2025-04-15 18:00:00',
+      end: '2025-05-06 14:59:00',
+      color: '#96f6de',
+      featured: ['xilonen', 'venti'],
+      featuredRare: ['faruzan', 'beidou', 'yanfei'],
+      version: '5.5',
+    },
+  ],
 };
