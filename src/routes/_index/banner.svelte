@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    varesa: {
-      name: 'Varesa',
+    xilonen: {
+      name: 'Xilonen',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    xianyun: {
-      name: 'Xianyun',
+    venti: {
+      name: 'Venti',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300080;
-  const image = 'varesa xianyun.png';
+  const bannerId = 300081;
+  const image = 'xilonen venti.png';
   const width = 800;
-  const height = 421;
+  const height = 424;
 
   let loading = true;
   let user = '';
