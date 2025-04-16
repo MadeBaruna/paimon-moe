@@ -92,9 +92,9 @@
 
   $: weapons = Object.entries(weaponList)
     .filter((e) => e[1].rarity >= 3)
-    .sort((a, b) => a[1].name.localeCompare(b[1].name));
+    .sort((a, b) => $t(a[1].name).localeCompare($t(b[1].name)));
 
-  $: filteredWeapons = weapons.filter((e) => e[1].name.toLowerCase().includes(search.toLowerCase()));
+  $: filteredWeapons = weapons.filter((e) => $t(e[1].name).toLowerCase().includes(search.toLowerCase()));
   $: maxItemRow = Math.min(6, filteredWeapons.length);
 
   $: nothingSelected = selected === null;
