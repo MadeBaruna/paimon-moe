@@ -732,8 +732,15 @@
     }
   }
 
+  @media (min-width: 1920px) {
+    .banner-chart {
+      max-width: 500px;
+      height: 200px;
+    }
+  }
   .banner-chart {
-    max-width: 500px;
+    flex: 1;
+    max-height: 200px;
     height: 200px;
     width: 100%;
   }
