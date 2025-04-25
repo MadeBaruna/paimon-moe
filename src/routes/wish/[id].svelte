@@ -71,6 +71,15 @@
 
   let showRarity = [true, true, true];
 
+  // chart data
+  let chartInstance;
+  let labels = [];
+  let totalEachBanner = [];
+  let totalLegendaryEachBanner = [];
+  let totalRareEachBanner = [];
+  let backgrounds = [];
+  let borders = [];
+
   function processBannersTime() {
     selectedBanners = banners[bannerType].map((e) => {
       // banner data based on Asia time
@@ -260,12 +269,6 @@
     pulls = currentPulls;
     sorted = pulls.reverse();
 
-    let labels = [];
-    let totalEachBanner = [];
-    let totalLegendaryEachBanner = [];
-    let totalRareEachBanner = [];
-    let backgrounds = [];
-    let borders = [];
     for (let e of selectedBanners) {
       const curLegendary = e.legendary.length;
       const curRare = e.rare.character.length + e.rare.weapon.length;
@@ -313,10 +316,20 @@
         },
       },
     });
+    createChart();
+  }
 
-    if (id === 'character-event' || id === 'weapon-event') {
-      new Chart(bannerChart, {
-        type: 'bar',
+  function createChart(){
+    let type = window.matchMedia('(min-width: 1920px)').matches
+      ? 'horizontalBar'
+      : 'bar';
+
+      if (id === 'character-event' || id === 'weapon-event') {
+      if (chartInstance) {
+        chartInstance.destroy();
+      }
+      chartInstance = new Chart(bannerChart, {
+        type: type,
         data: {
           labels,
           datasets: [
@@ -434,7 +447,7 @@
     if (serverSave !== null) {
       server.set(serverSave);
     }
-
+    window.addEventListener('resize', createChart);
     processBannersTime();
     await readLocalData();
 
@@ -477,6 +490,7 @@
   }
 
   function toggleShowRarity(index) {
+    toogleChartType();
     showRarity[index] = !showRarity[index];
     sortPulls();
   }
@@ -735,12 +749,11 @@
   @media (min-width: 1920px) {
     .banner-chart {
       max-width: 500px;
-      height: 200px;
+      max-height: 900px;
     }
   }
   .banner-chart {
     flex: 1;
-    max-height: 200px;
     height: 200px;
     width: 100%;
   }
