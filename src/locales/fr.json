@@ -689,6 +689,13 @@
       "title": "Supprimer cette tâche ?",
       "cancel": "Annuler",
       "delete": "Supprimer"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {
