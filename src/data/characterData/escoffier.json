@@ -442,7 +442,7 @@
   ],
   "burst": {
     "name": "Scoring Cuts",
-    "description": "Displaying her exceptional knife skills, Escoffier deals <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span> and restores HP to all nearby party members based on her ATK.",
+    "description": "Displaying her exceptional knife skills, Escoffier deals <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span> and restores HP to all nearby party members based on her ATK.\\n\\n<i>Cutting is like playing a moving melody, and the finished dish, filled with flavor and adorned in aroma, is your completed composition.</i>",
     "skillLabels": [
       "Skill DMG",
       "Healing",
@@ -663,7 +663,7 @@
   },
   "attack": {
     "name": "Kitchen Skills",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 consecutive spear strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to perform an upward thrust.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 consecutive spear strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to perform an upward thrust.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.undefined",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
@@ -1046,7 +1046,7 @@
   },
   "elementalSkill": {
     "name": "Low-Temperature Cooking",
-    "description": "Behold the true meaning of \"cooking\"! Escoffier will demonstrate different cooking techniques when you Tap or Hold this skill, but rest assured, each of them is Fontaine's pride and joy.\\n\\n<span style=\"color: #FFD780FF;\">Tap</span>\\nActivates her All-Spectrum Multi-Use Cooking Mek in its Cold Storage mode and deals <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span> to nearby opponents.\\n\\n<span style=\"color: #FFD780FF;\">Cooking Mek: Cold Storage Mode</span>\\nFollows the current active character and fires Frosty Parfaits at nearby opponents at intervals, dealing <span style=\"color: #99FFFFFF;\">Cryo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Arkhe: Ousia</span>\\nAt intervals, Escoffier will summon a Surging Blade when activating her Cooking Mek in Cold Storage mode, dealing Ousia-aligned <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Hold</span>\\nActivates her All-Spectrum Multi-Use Cooking Mek's <span style=\"color: #FFD780FF;\">Off-the-Cuff Cookery Mode</span>.",
+    "description": "Behold the true meaning of \"cooking\"! Escoffier will demonstrate different cooking techniques when you Tap or Hold this skill, but rest assured, each of them is Fontaine's pride and joy.\\n\\n<span style=\"color: #FFD780FF;\">Tap</span>\\nActivates her All-Spectrum Multi-Use Cooking Mek in its Cold Storage mode and deals <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span> to nearby opponents.\\n\\n<span style=\"color: #FFD780FF;\">Cooking Mek: Cold Storage Mode</span>\\nFollows the current active character and fires Frosty Parfaits at nearby opponents at intervals, dealing <span style=\"color: #99FFFFFF;\">Cryo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Arkhe: Ousia</span>\\nAt intervals, Escoffier will summon a Surging Blade when activating her Cooking Mek in Cold Storage mode, dealing Ousia-aligned <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Hold</span>\\nActivates her All-Spectrum Multi-Use Cooking Mek's <span style=\"color: #FFD780FF;\">Off-the-Cuff Cookery Mode</span>.\\n\\n<i>The All-Spectrum Multi-Use Cooking Mek has exceptional cold storage functions. As it should — the preservation of freshness is foundational to flavor, after all!</i>",
     "skillLabels": [
       "Skill DMG",
       "Frosty Parfait DMG",

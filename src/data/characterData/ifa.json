@@ -446,7 +446,7 @@
   ],
   "burst": {
     "name": "Compound Sedation Field",
-    "description": "Fires a Therapeutic Sedative at a (temporarily aggressive) opponent. The sedative will explode on impact, creating a restraining wind current that pulls nearby objects and opponents in while dealing Nightsoul-aligned <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span>.\\nWhen the Therapeutic Sedative hits an opponent affected by <span style=\"color: #80C0FFFF;\">Hydro</span>/<span style=\"color: #FF9999FF;\">Pyro</span>/<span style=\"color: #99FFFFFF;\">Cryo</span>/<span style=\"color: #FFACFFFF;\">Electro</span>, it will apply a <span style=\"color: #FFD780FF;\">Sedation Mark</span> to them.",
+    "description": "Fires a Therapeutic Sedative at a (temporarily aggressive) opponent. The sedative will explode on impact, creating a restraining wind current that pulls nearby objects and opponents in while dealing Nightsoul-aligned <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span>.\\nWhen the Therapeutic Sedative hits an opponent affected by <span style=\"color: #80C0FFFF;\">Hydro</span>/<span style=\"color: #FF9999FF;\">Pyro</span>/<span style=\"color: #99FFFFFF;\">Cryo</span>/<span style=\"color: #FFACFFFF;\">Electro</span>, it will apply a <span style=\"color: #FFD780FF;\">Sedation Mark</span> to them.\\n\\n<i>\"We must calm our patients down before starting treatment... even if that sometimes means resorting to bullets. Let's get 'em, Cacucu.\"\\n\"I gotcha, bro!\"</i>",
     "skillLabels": [
       "Skill DMG",
       "Sedation Mark DMG",
@@ -652,7 +652,7 @@
   },
   "attack": {
     "name": "Rite of Dispelling Winds",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 attacks, dealing <span style=\"color: #80FFD7FF;\">Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina and fires off a shot, dealing <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges towards the ground from mid-air, damaging all opponents along the path. Deals <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span> upon impact with the ground.",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 attacks, dealing <span style=\"color: #80FFD7FF;\">Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina and fires off a shot, dealing <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges towards the ground from mid-air, damaging all opponents along the path. Deals <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span> upon impact with the ground.undefined",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
@@ -1020,7 +1020,7 @@
   },
   "elementalSkill": {
     "name": "Airborne Disease Prevention",
-    "description": "It's time for the real bash bros to step up! Ifa calls Cacucu in as backup.\\nAfter using this skill, Ifa gains 80 Nightsoul points and enters the <span style=\"color: #FFD780FF;\">Nightsoul's Blessing</span> state. In the Nightsoul's Blessing state, Ifa will hover with Cacucu's help. When he uses Normal Attacks in this state, he will use different kinds of <span style=\"color: #FFD780FF;\">Supporting Fire</span> depending on whether you Tap or Hold, firing Tonicshots that are capable of healing all party members.\\n\\nAdditionally, Holding the Elemental Skill <span style=\"color: #FFD780FF;\">Airborne Disease Prevention</span> while Ifa is in Nightsoul's Blessing will cause him to use a Nightsoul-aligned Plunging Attack. Letting go of the skill button will interrupt this Plunging Attack to maintain his hover. If Ifa lands due to this Plunging Attack, his Nightsoul's Blessing state will end.",
+    "description": "It's time for the real bash bros to step up! Ifa calls Cacucu in as backup.\\nAfter using this skill, Ifa gains 80 Nightsoul points and enters the <span style=\"color: #FFD780FF;\">Nightsoul's Blessing</span> state. In the Nightsoul's Blessing state, Ifa will hover with Cacucu's help. When he uses Normal Attacks in this state, he will use different kinds of <span style=\"color: #FFD780FF;\">Supporting Fire</span> depending on whether you Tap or Hold, firing Tonicshots that are capable of healing all party members.\\n\\nAdditionally, Holding the Elemental Skill <span style=\"color: #FFD780FF;\">Airborne Disease Prevention</span> while Ifa is in Nightsoul's Blessing will cause him to use a Nightsoul-aligned Plunging Attack. Letting go of the skill button will interrupt this Plunging Attack to maintain his hover. If Ifa lands due to this Plunging Attack, his Nightsoul's Blessing state will end.\\n\\n<i>\"When rendering medical assistance, you've gotta address the root problem first. What's that they say? Save lives first, treat the wounds later?\"\\n\"You got it, bro!\"</i>",
     "skillLabels": [
       "Tonicshot DMG",
       "Tonicshot Healing On Hit",
