@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    xilonen: {
-      name: 'Xilonen',
+    navia: {
+      name: 'Navia',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    venti: {
-      name: 'Venti',
+    escoffier: {
+      name: 'Escoffier',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300081;
-  const image = 'xilonen venti.png';
+  const bannerId = 300082;
+  const image = 'navia escoffier.webp';
   const width = 800;
-  const height = 424;
+  const height = 419;
 
   let loading = true;
   let user = '';
