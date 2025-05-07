@@ -3629,6 +3629,152 @@ export const characters = {
     },
     element: elements.dendro,
   },
+  escoffier: {
+    id: 'escoffier',
+    name: 'Escoffier',
+    rarity: 5,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 13348,
+      atk: 347,
+      def: 732,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 2,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 10,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 4,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 20,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 8,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 30,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 12,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 45,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 20,
+          },
+          {
+            item: itemList.beryl_conch,
+            amount: 60,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.meshing_gear, itemList.mechanical_spur_gear, itemList.artificed_dynamic_gear],
+      book: [itemList.teachings_of_justice, itemList.guide_to_justice, itemList.philosophies_of_justice],
+      boss: itemList.eroded_horn,
+    },
+    element: elements.cryo,
+    new: true,
+  },
   eula: {
     id: 'eula',
     name: 'Eula',
@@ -5082,6 +5228,151 @@ export const characters = {
       boss: itemList.denial_and_judgment,
     },
     element: elements.electro,
+  },
+  ifa: {
+    id: 'ifa',
+    name: 'Ifa',
+    rarity: 4,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 10081,
+      atk: 178,
+      def: 605,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 3,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 2,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 10,
+          },
+          {
+            item: itemList.juvenile_fang,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 4,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 20,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 8,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 30,
+          },
+          {
+            item: itemList.seasoned_fang,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 12,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 45,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.sparkless_statue_core,
+            amount: 20,
+          },
+          {
+            item: itemList.saurian_claw_succulent,
+            amount: 60,
+          },
+          {
+            item: itemList.tyrants_fang,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.juvenile_fang, itemList.seasoned_fang, itemList.tyrants_fang],
+      book: [itemList.teachings_of_conflict, itemList.guide_to_conflict, itemList.philosophies_of_conflict],
+      boss: itemList.ascended_sample_rook,
+    },
+    element: elements.anemo,
     new: true,
   },
   jean: {
@@ -11939,7 +12230,6 @@ export const characters = {
       boss: itemList.eroded_scale_feather,
     },
     element: elements.electro,
-    new: true,
   },
   venti: {
     id: 'venti',

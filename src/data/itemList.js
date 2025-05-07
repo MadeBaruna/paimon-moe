@@ -1813,4 +1813,11 @@ export const itemList = {
     name: 'Blazing Prismshell',
     rarity: 4,
   },
+
+  secret_source_airflow_accumulator: {
+    id: 'secret_source_airflow_accumulator',
+    name: 'Secret Source Airflow Accumulator',
+    rarity: 4,
+  },
+  ascended_sample_rook: { id: 'ascended_sample_rook', name: 'Ascended Sample: Rook' },
 };
