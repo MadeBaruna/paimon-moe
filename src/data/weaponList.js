@@ -16310,4 +16310,116 @@ export const weaponList = {
       },
     ],
   },
+  sequence_of_solitude: {
+    id: 'sequence_of_solitude',
+    name: 'Sequence of Solitude',
+    rarity: 4,
+    atk: 42,
+    secondary: 'HP%',
+    type: weapons.bow,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fragment_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.cold_cracked_shellshard,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.cold_cracked_shellshard,
+            amount: 12,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chapter_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.warm_back_shell,
+            amount: 6,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 3,
+          },
+          {
+            item: itemList.warm_back_shell,
+            amount: 12,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.movement_of_an_ancient_chord,
+            amount: 6,
+          },
+          {
+            item: itemList.blazing_prismshell,
+            amount: 9,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.echo_of_an_ancient_chord,
+            amount: 4,
+          },
+          {
+            item: itemList.blazing_prismshell,
+            amount: 18,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
