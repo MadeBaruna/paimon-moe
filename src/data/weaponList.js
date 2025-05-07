@@ -16198,4 +16198,116 @@ export const weaponList = {
       },
     ],
   },
+  symphonist_of_scents: {
+    id: 'symphonist_of_scents',
+    name: 'Symphonist of Scents',
+    rarity: 5,
+    atk: 46,
+    secondary: 'CRIT DMG',
+    type: weapons.polearm,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.dross_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 5,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.drop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.sublimation_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 9,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 5,
+          },
+          {
+            item: itemList.scoop_of_tainted_water,
+            amount: 18,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.spring_of_pure_sacred_dewdrop,
+            amount: 9,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 14,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.essence_of_pure_sacred_dewdrop,
+            amount: 6,
+          },
+          {
+            item: itemList.newborn_tainted_hydro_phantasm,
+            amount: 27,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
