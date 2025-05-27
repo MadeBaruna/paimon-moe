@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    navia: {
-      name: 'Navia',
+    raiden_shogun: {
+      name: 'Raiden Shogun',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    escoffier: {
-      name: 'Escoffier',
+    kinich: {
+      name: 'Kinich',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300082;
-  const image = 'navia escoffier.webp';
+  const bannerId = 300083;
+  const image = 'raiden kinich.png';
   const width = 800;
-  const height = 419;
+  const height = 394;
 
   let loading = true;
   let user = '';

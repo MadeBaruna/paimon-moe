@@ -1403,4 +1403,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Seeker of Flame-Wrought Secrets 2': [
+    {
+      name: 'Seeker of Flame-Wrought Secrets',
+      image: 2,
+      shortName: 'Kinich',
+      start: '2025-05-27 18:00:00',
+      end: '2025-06-17 14:59:00',
+      color: '#53dcb9',
+      featured: ['kinich', 'raiden_shogun'],
+      featuredRare: ['thoma', 'kujou_sara', 'lynette'],
+      version: '5.6',
+    },
+    {
+      name: 'Reign of Serenity',
+      image: 6,
+      shortName: 'Raiden',
+      start: '2025-05-27 18:00:00',
+      end: '2025-06-17 14:59:00',
+      color: '#53dcb9',
+      featured: ['kinich', 'raiden_shogun'],
+      featuredRare: ['thoma', 'kujou_sara', 'lynette'],
+      version: '5.6',
+    },
+  ],
 };
