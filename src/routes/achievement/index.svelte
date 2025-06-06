@@ -301,6 +301,10 @@
       84106, 84109, 84110, 84111, 84112, 
       84113, 84114, 84115
     ];
+    const removedIds = [
+      81416, 81418, 81426, 81429, 81451,
+      81453, 81541, 81569
+    ];
 
     if (checkList['17'] === undefined) {
       checkList['17'] = {};
@@ -310,6 +314,12 @@
       for (const item of movedIds) {
         if (checkList['0'][item] === true) {
           checkList['17'][item] = true;
+          delete checkList['0'][item];
+        }
+      }
+
+      for (const item of removedIds) {
+        if (checkList['0'][item] === true) {
           delete checkList['0'][item];
         }
       }
