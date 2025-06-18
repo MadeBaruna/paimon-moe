@@ -1,0 +1,4 @@
+onlyBuiltDependencies:
+  - '@sveltejs/kit'
+  - esbuild
+  - svelte-preprocess

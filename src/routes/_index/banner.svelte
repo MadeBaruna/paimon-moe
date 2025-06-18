@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    raiden_shogun: {
-      name: 'Raiden Shogun',
+    shenhe: {
+      name: 'Shenhe',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    kinich: {
-      name: 'Kinich',
+    skirk: {
+      name: 'Skirk',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300083;
-  const image = 'raiden kinich.png';
+  const bannerId = 300084;
+  const image = 'shenhe skirk.png';
   const width = 800;
-  const height = 394;
+  const height = 329;
 
   let loading = true;
   let user = '';
