@@ -187,6 +187,18 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/38918050',
       showOnHome: true,
     },
+    {
+      name: "Void Star's Advent - Skirk Banner",
+      pos: '30% 12%',
+      zoom: '200%',
+      image: 'Void Stars Advent 1.png',
+      start: '2025-06-18 06:00:00',
+      end: '2025-07-08 17:59:00',
+      color: '#adcdff',
+      url: 'https://www.hoyolab.com/article/39353510',
+      showOnHome: true,
+      timezoneDependent: true,
+    },
   ],
   [
     {
@@ -235,6 +247,18 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/38918050',
       showOnHome: true,
     },
+    {
+      name: 'The Transcendent One Returns - Shenhe Banner',
+      pos: '30% 20%',
+      zoom: '200%',
+      image: 'The Transcendent One Returns 3.png',
+      start: '2025-06-18 06:00:00',
+      end: '2025-07-08 17:59:00',
+      color: '#81DDF0',
+      url: 'https://www.hoyolab.com/article/39353510',
+      showOnHome: true,
+      timezoneDependent: true,
+    },
   ],
   [
     {
@@ -282,6 +306,18 @@ export const eventsData = [
       color: '#FFAA4B',
       url: 'https://www.hoyolab.com/article/38918050',
       showOnHome: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '40% 25%',
+      zoom: '150%',
+      image: 'Epitome Invocation 83.png',
+      start: '2025-06-18 06:00:00',
+      end: '2025-07-08 17:59:00',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/39353510',
+      showOnHome: true,
+      timezoneDependent: true,
     },
   ],
   [
