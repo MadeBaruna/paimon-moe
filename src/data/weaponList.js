@@ -16422,4 +16422,116 @@ export const weaponList = {
       },
     ],
   },
+  azurelight: {
+    id: 'azurelight',
+    name: 'Azurelight',
+    rarity: 5,
+    atk: 48,
+    secondary: 'CRIT Rate',
+    type: weapons.sword,
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_consideration,
+            amount: 5,
+          },
+          {
+            item: itemList.refractive_bud,
+            amount: 5,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_consideration,
+            amount: 5,
+          },
+          {
+            item: itemList.refractive_bud,
+            amount: 18,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_consideration,
+            amount: 9,
+          },
+          {
+            item: itemList.bewildering_broadleaf,
+            amount: 9,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_consideration,
+            amount: 5,
+          },
+          {
+            item: itemList.bewildering_broadleaf,
+            amount: 18,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_consideration,
+            amount: 9,
+          },
+          {
+            item: itemList.illusory_leafcoil,
+            amount: 14,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_consideration,
+            amount: 6,
+          },
+          {
+            item: itemList.illusory_leafcoil,
+            amount: 27,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
