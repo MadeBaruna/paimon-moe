@@ -1820,4 +1820,8 @@ export const itemList = {
     rarity: 4,
   },
   ascended_sample_rook: { id: 'ascended_sample_rook', name: 'Ascended Sample: Rook' },
+  ascended_sample_knight: {
+    id: 'ascended_sample_knight',
+    name: 'Ascended Sample: Knight',
+  },
 };

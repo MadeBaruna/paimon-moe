@@ -2904,6 +2904,152 @@ export const characters = {
     },
     element: elements.electro,
   },
+  dahlia: {
+    id: 'dahlia',
+    name: 'Dahlia',
+    rarity: 4,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12506,
+      atk: 189,
+      def: 560,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.calla_lily,
+            amount: 3,
+          },
+          {
+            item: itemList.firm_arrowhead,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 2,
+          },
+          {
+            item: itemList.calla_lily,
+            amount: 10,
+          },
+          {
+            item: itemList.firm_arrowhead,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 4,
+          },
+          {
+            item: itemList.calla_lily,
+            amount: 20,
+          },
+          {
+            item: itemList.sharp_arrowhead,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 8,
+          },
+          {
+            item: itemList.calla_lily,
+            amount: 30,
+          },
+          {
+            item: itemList.sharp_arrowhead,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 12,
+          },
+          {
+            item: itemList.calla_lily,
+            amount: 45,
+          },
+          {
+            item: itemList.weathered_arrowhead,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 20,
+          },
+          {
+            item: itemList.calla_lily,
+            amount: 60,
+          },
+          {
+            item: itemList.weathered_arrowhead,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.firm_arrowhead, itemList.sharp_arrowhead, itemList.weathered_arrowhead],
+      book: [itemList.teachings_of_ballad, itemList.guide_to_ballad, itemList.philosophies_of_ballad],
+      boss: itemList.eroded_scale_feather,
+    },
+    element: elements.hydro,
+    new: true,
+  },
   dehya: {
     id: 'dehya',
     name: 'Dehya',
@@ -3773,7 +3919,6 @@ export const characters = {
       boss: itemList.eroded_horn,
     },
     element: elements.cryo,
-    new: true,
   },
   eula: {
     id: 'eula',
@@ -5373,7 +5518,6 @@ export const characters = {
       boss: itemList.ascended_sample_rook,
     },
     element: elements.anemo,
-    new: true,
   },
   jean: {
     id: 'jean',
@@ -11041,6 +11185,152 @@ export const characters = {
       boss: itemList.lightless_eye_of_the_maelstrom,
     },
     element: elements.hydro,
+  },
+  skirk: {
+    id: 'skirk',
+    name: 'Skirk',
+    rarity: 5,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12417,
+      atk: 359,
+      def: 806,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 3,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 2,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 10,
+          },
+          {
+            item: itemList.meshing_gear,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 4,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 20,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 8,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 30,
+          },
+          {
+            item: itemList.mechanical_spur_gear,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 12,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 45,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.ensnaring_gaze,
+            amount: 20,
+          },
+          {
+            item: itemList.skysplit_gembloom,
+            amount: 60,
+          },
+          {
+            item: itemList.artificed_dynamic_gear,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.meshing_gear, itemList.mechanical_spur_gear, itemList.artificed_dynamic_gear],
+      book: [itemList.teachings_of_contention, itemList.guide_to_contention, itemList.philosophies_of_contention],
+      boss: itemList.ascended_sample_knight,
+    },
+    element: elements.cryo,
+    new: true,
   },
   sucrose: {
     id: 'sucrose',
