@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    shenhe: {
-      name: 'Shenhe',
+    mavuika: {
+      name: 'Mavuika',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    skirk: {
-      name: 'Skirk',
+    emilie: {
+      name: 'Emilie',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300084;
-  const image = 'shenhe skirk.png';
+  const bannerId = 300085;
+  const image = 'mavuika emilie.webp';
   const width = 800;
-  const height = 329;
+  const height = 402;
 
   let loading = true;
   let user = '';

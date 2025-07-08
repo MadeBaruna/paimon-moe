@@ -1453,4 +1453,28 @@ export const bannersDual = {
       version: '5.7',
     },
   ],
+  'Ancient Flame Ablaze 2': [
+    {
+      name: 'Ancient Flame Ablaze',
+      image: 2,
+      shortName: 'Mavuika',
+      start: '2025-07-08 18:00:00',
+      end: '2025-07-29 14:59:00',
+      color: '#ff6b37',
+      featured: ['mavuika', 'emilie'],
+      featuredRare: ['iansan', 'yaoyao', 'xiangling'],
+      version: '5.7',
+    },
+    {
+      name: 'Ambrosial Essence',
+      image: 2,
+      shortName: 'Emilie',
+      start: '2025-07-08 18:00:00',
+      end: '2025-07-29 14:59:00',
+      color: '#cde8a4',
+      featured: ['mavuika', 'emilie'],
+      featuredRare: ['iansan', 'yaoyao', 'xiangling'],
+      version: '5.7',
+    },
+  ],
 };
