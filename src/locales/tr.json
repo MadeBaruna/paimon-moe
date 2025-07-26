@@ -689,6 +689,13 @@
       "title": "",
       "cancel": "",
       "delete": ""
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {
