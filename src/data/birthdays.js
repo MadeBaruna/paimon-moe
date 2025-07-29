@@ -21,6 +21,7 @@ export const birthdays = {
   ifa: [3, 23],
   kamisato_ayato: [3, 26],
   sigewinne: [3, 30],
+  ineffa: [4, 2],
   aloy: [4, 4],
   dehya: [4, 7],
   charlotte: [4, 10],
