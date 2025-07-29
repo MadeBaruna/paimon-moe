@@ -16205,6 +16205,7 @@ export const weaponList = {
     atk: 46,
     secondary: 'CRIT DMG',
     type: weapons.polearm,
+    source: 'wish',
     ascension: [
       {
         items: [
@@ -16317,6 +16318,7 @@ export const weaponList = {
     atk: 42,
     secondary: 'HP%',
     type: weapons.bow,
+    source: 'event',
     ascension: [
       {
         items: [
@@ -16429,6 +16431,7 @@ export const weaponList = {
     atk: 48,
     secondary: 'CRIT Rate',
     type: weapons.sword,
+    source: 'wish',
     ascension: [
       {
         items: [
@@ -16541,6 +16544,7 @@ export const weaponList = {
     atk: 46,
     secondary: 'CRIT DMG',
     type: weapons.polearm,
+    source: 'wish',
     ascension: [
       {
         items: [
@@ -16643,6 +16647,119 @@ export const weaponList = {
           },
         ],
         mora: 65000,
+      },
+    ],
+  },
+  'flame-forged_insight': {
+    id: 'flame-forged_insight',
+    name: 'Flame-Forged Insight',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Elemental Mastery',
+    type: weapons.claymore,
+    source: 'Event',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.delirious_decadence_of_the_sacred_lord,
+            amount: 3,
+          },
+          {
+            item: itemList.cold_cracked_shellshard,
+            amount: 3,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 3,
+          },
+          {
+            item: itemList.cold_cracked_shellshard,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_pearl,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_desolation_of_the_sacred_lord,
+            amount: 6,
+          },
+          {
+            item: itemList.warm_back_shell,
+            amount: 6,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 3,
+          },
+          {
+            item: itemList.warm_back_shell,
+            amount: 12,
+          },
+          {
+            item: itemList.transoceanic_chunk,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_demeanor_of_the_sacred_lord,
+            amount: 6,
+          },
+          {
+            item: itemList.blazing_prismshell,
+            amount: 9,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.delirious_divinity_of_the_sacred_lord,
+            amount: 4,
+          },
+          {
+            item: itemList.blazing_prismshell,
+            amount: 18,
+          },
+          {
+            item: itemList.xenochromatic_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
       },
     ],
   },
