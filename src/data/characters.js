@@ -3048,7 +3048,6 @@ export const characters = {
       boss: itemList.eroded_scale_feather,
     },
     element: elements.hydro,
-    new: true,
   },
   dehya: {
     id: 'dehya',
@@ -5518,6 +5517,156 @@ export const characters = {
       boss: itemList.ascended_sample_rook,
     },
     element: elements.anemo,
+  },
+  ineffa: {
+    id: 'ineffa',
+    name: 'Ineffa',
+    rarity: 5,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 12613,
+      atk: 330,
+      def: 828,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 3,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 2,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 10,
+          },
+          {
+            item: itemList.sentrys_wooden_whistle,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 4,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 20,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 8,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 30,
+          },
+          {
+            item: itemList.warriors_metal_whistle,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 12,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 45,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.secret_source_airflow_accumulator,
+            amount: 20,
+          },
+          {
+            item: itemList.glowing_hornshroom,
+            amount: 60,
+          },
+          {
+            item: itemList.saurian_crowned_warriors_golden_whistle,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [
+        itemList.sentrys_wooden_whistle,
+        itemList.warriors_metal_whistle,
+        itemList.saurian_crowned_warriors_golden_whistle,
+      ],
+      book: [itemList.teachings_of_conflict, itemList.guide_to_conflict, itemList.philosophies_of_conflict],
+      boss: itemList.eroded_sunfire,
+    },
+    element: elements.electro,
+    new: true,
   },
   jean: {
     id: 'jean',
@@ -11330,7 +11479,6 @@ export const characters = {
       boss: itemList.ascended_sample_knight,
     },
     element: elements.cryo,
-    new: true,
   },
   sucrose: {
     id: 'sucrose',
