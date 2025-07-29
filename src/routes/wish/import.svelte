@@ -915,9 +915,9 @@
       </div>
     </div>
   </div>
-  <h1 class="font-body bg-background text-orange-400 rounded-xl p-4 mb-4">
+  <!-- <h1 class="font-body bg-background text-orange-400 rounded-xl p-4 mb-4">
     {$t('wish.import.notice30')}
-  </h1>
+  </h1> -->
   <div class="flex space-x-3 mb-2">
     <div class="flex flex-col items-center step">
       <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">

@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    mavuika: {
-      name: 'Mavuika',
+    citlali: {
+      name: 'Citlali',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    emilie: {
-      name: 'Emilie',
+    ineffa: {
+      name: 'Ineffa',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300085;
-  const image = 'mavuika emilie.webp';
+  const bannerId = 300086;
+  const image = 'citlali ineffa.png';
   const width = 800;
-  const height = 402;
+  const height = 406;
 
   let loading = true;
   let user = '';
