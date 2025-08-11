@@ -3,14 +3,17 @@
 
   import { getContext, onMount, tick } from 'svelte';
   import { slide } from 'svelte/transition';
-  import { mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiClose, mdiInformation, mdiLoading } from '@mdi/js';
+  import { mdiChevronDown, mdiChevronLeft, mdiChevronRight, mdiClose, mdiLoading, mdiPencilOutline } from '@mdi/js';
   import { todos, loading } from '../stores/todo';
   import { ar, wl } from '../stores/server';
   import { itemList as itemListData } from '../data/itemList';
   import Masonry from '../components/Masonry.svelte';
   import Icon from '../components/Icon.svelte';
   import Button from '../components/Button.svelte';
+  import Tooltip from '../components/Tooltip.svelte';
   import TodoDeleteModal from '../components/TodoDeleteModal.svelte';
+  import TodoEditCharacterModal from '../components/TodoEditCharacterModal.svelte';
+  import TodoEditWeaponModal from '../components/TodoEditWeaponModal.svelte';
   import { getCurrentDay } from '../stores/server';
   import { itemGroup } from '../data/itemGroup';
   import { dropRates } from '../data/dropRates';
@@ -26,8 +29,8 @@
   let columnCount = 1;
   let numberFormat = Intl.NumberFormat();
   let adding = false;
-  let isSunday = false;
   let today = getCurrentDay();
+  let isSunday = today == "sunday";
   let summary = {};
   let todayOnlyItems = {};
   let resin = 0;
@@ -104,6 +107,79 @@
         styleWindow: { background: '#25294A', width: '400px' },
       },
     );
+  }
+
+  function canEditTodo(index) {
+    const todo = $todos[index];
+
+    if (todo.type == "character") {
+      if (todo.formatVersion != null && todo.formatVersion == 2) {
+        return true;
+      }
+    }
+
+    if (todo.type == "weapon") {
+      if (todo.formatVersion != null && todo.formatVersion == 2) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  function openEditModal(index) {
+    if (index < 0 && index > $todos.length) return;
+
+    const todo = $todos[index];
+
+    // It would be nice if these styles could be put in a class, but svelte doesn't seem to recognize classes defined in this file
+    // when opening with `openModal`, so overriding each element's style here directly is the compromise. 
+    const modalOptions = {
+      closeButton: false,
+      styleWindow: { 
+        background: '#00000000',
+        width: 'max-content', 
+        margin: '0 auto',
+        // Aligns the content element vertically. Centering through flexbox is necessary since the final height of
+        // the content element is not known.
+        display: 'flex',
+        'align-items': 'center',
+      },
+      styleContent: { 
+        // svelte-simple-modal's content element has padding by default for some reason.
+        // This causes slight horizontal scroll when combined with the TodoEditCharacterModal div. 
+        // Disabling padding fixes the issue.
+        padding: "0",
+        'max-height': 'calc(100dvh - 4rem)',
+        margin: '0 auto'
+      }
+    };
+    
+    if (todo.type == "character") {
+      openModal(
+        TodoEditCharacterModal,
+        {
+          todo: todo,
+          todoIndex: index,
+          cancel: closeModal,
+        },
+        modalOptions
+      );   
+    }
+    else if (todo.type == "weapon") {
+      openModal(
+        TodoEditWeaponModal,
+        {
+          todo: todo,
+          todoIndex: index,
+          cancel: closeModal,
+        },
+        {
+          closeButton: false,
+          styleWindow: { background: '#00000000', width: '80vw'},
+        },
+      );
+    }
   }
 
   function decrease(key, val) {
@@ -268,6 +344,7 @@
     id = Math.random();
   }
 
+
   onMount(async () => {
     await tick();
     id = Math.random();
@@ -288,6 +365,7 @@
     content="Genshin Impact Todo List to plan and track items and mora you need, you can also see resin approximation needed to farm the items!"
   />
 </svelte:head>
+
 <div class="lg:ml-64 pt-20 px-2 md:px-8 lg:pt-8">
   <Masonry stretchFirst={true} bind:refreshLayout bind:columnCount items={id}>
     <h1 class="font-display font-black text-3xl lg:text-left lg:text-5xl text-white">{$t('todo.title')}</h1>
@@ -301,34 +379,38 @@
       {:else}
         <p class="font-bold text-xl">{$t('todo.empty.0')}<br />{$t('todo.empty.1')}</p>
       {/if}
-      {#if Object.entries(todayOnlyItems).length > 0}
-        <div class="rounded-xl bg-background px-4 py-2 mb-2">
-          <p class="font-semibold mb-2 text-center">{$t('todo.farmableToday')}</p>
-          <table class="w-full">
-            {#each Object.entries(todayOnlyItems) as [id, amount]}
-              <tr class="today-only">
-                <td class="text-right border-b border-gray-700 py-1">
-                  <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-nowrap`}>
-                    {numberFormat.format(amount)}
-                    <Icon size={0.5} path={mdiClose} /></span
-                  >
-                </td>
-                <td class="border-b border-gray-700 py-1">
-                  <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} block`}>
-                    <span class="w-6 inline-block">
-                      <img
-                        class="h-6 inline-block mr-1"
-                        src={`/images/items/${itemList[id].id}.png`}
-                        alt={itemList[id].name}
-                      />
+      {#if isSunday}
+        <div class="text-white text-center">{$t('home.items.sunday')}</div> <br />
+      {:else}
+        {#if Object.entries(todayOnlyItems).length > 0}
+          <div class="rounded-xl bg-background px-4 py-2 mb-2">
+            <p class="font-semibold mb-2 text-center">{$t('todo.farmableToday')}</p>
+            <table class="w-full">
+              {#each Object.entries(todayOnlyItems) as [id, amount]}
+                <tr class="today-only">
+                  <td class="text-right border-b border-gray-700 py-1">
+                    <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} mr-2 whitespace-nowrap`}>
+                      {numberFormat.format(amount)}
+                      <Icon size={0.5} path={mdiClose} /></span
+                    >
+                  </td>
+                  <td class="border-b border-gray-700 py-1">
+                    <span class={`${amount === 0 ? 'line-through text-gray-600' : 'text-white'} block`}>
+                      <span class="w-6 inline-block">
+                        <img
+                          class="h-6 inline-block mr-1"
+                          src={`/images/items/${itemList[id].id}.png`}
+                          alt={itemList[id].name}
+                        />
+                      </span>
+                      {$t(itemList[id].name)}
                     </span>
-                    {$t(itemList[id].name)}
-                  </span>
-                </td>
-              </tr>
-            {/each}
-          </table>
-        </div>
+                  </td>
+                </tr>
+              {/each}
+            </table>
+          </div>
+        {/if}
       {/if}
       {#if resin > 0}
         <div class="rounded-xl bg-background px-4 py-2 mb-2">
@@ -459,9 +541,16 @@
               <p class="text-gray-500">Added from items page</p>
             </div>
           {/if}
-          <Button disabled={i === 0} on:click={() => reorder(i, -1)} rounded={false} size="sm" className="rounded-l-xl">
+          <Button 
+            disabled={i === 0} 
+            on:click={() => reorder(i, -1)} 
+            rounded={false} 
+            size="sm" 
+            className="rounded-l-xl"
+          >
             <Icon path={mdiChevronLeft} color="white" />
           </Button>
+
           <Button
             disabled={i === $todos.length - 1}
             on:click={() => reorder(i, 1)}
@@ -498,6 +587,20 @@
         </table>
         <div class="flex mt-2 items-end">
           <p class="flex-1 text-gray-400"># {i + 1}</p>
+          <Tooltip title={$t("todo.edit.tooltipCannotEdit")} style="max-width: 30ch;" enabled={!canEditTodo(i)}>
+            <!-- Edit button -->
+            <Button 
+            on:click={() => openEditModal(i)}
+            disabled={!canEditTodo(i)} 
+            rounded={true} 
+            size="sm"
+            className="px-2 mx-2"
+            >
+            <Icon path={mdiPencilOutline} color="white" size={0.8}/>
+            Edit
+            </Button>
+          </Tooltip>
+          <!-- Delete button -->
           <Button on:click={() => askDeleteTodo(i)} size="sm" className="px-2">
             <Icon path={mdiClose} color="white" size={0.8} />
             {$t('todo.delete.delete')}
