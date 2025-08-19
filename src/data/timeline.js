@@ -85,12 +85,23 @@ export const eventsData = [
     {
       name: 'Tracing Vanishing Trails',
       pos: '0% 10%',
-      image: 'Tracing Vanishing Trails.png',
+      image: 'Tracing Vanishing Trails A.png',
       start: '2025-08-14 10:00:00',
       end: '2025-08-25 03:59:59',
       color: '#a7d6f6',
-      zoom: '100%',
+      zoom: '200%',
       url: 'https://www.hoyolab.com/article/40226789',
+      showOnHome: true,
+    },
+    {
+      name: 'Ley Line Overflow',
+      pos: '20% 35%',
+      image: 'leyline_overflow.jpg',
+      start: '2025-09-01 04:00:00',
+      end: '2025-09-08 03:59:59',
+      color: '#5baced',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/40539069',
       showOnHome: true,
     },
   ],
@@ -118,6 +129,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/40226688',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Mementos of Teyvat: Prelude of the Frozen Veil',
+      pos: '0% 40%',
+      image: 'Mementos of Teyvat Prelude of the Frozen Veil.png',
+      start: '2025-08-21 10:00:00',
+      end: '2025-09-01 03:59:59',
+      color: '#6175cd',
+      zoom: '200%',
+      url: 'https://www.hoyolab.com/article/40616469',
+      showOnHome: true,
     },
   ],
   [
@@ -156,6 +178,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Sharktacular Surfari - Mualani Banner',
+      pos: '30% 17%',
+      zoom: '200%',
+      image: 'Sharktacular Surfari 2.png',
+      start: '2025-08-19 18:00:00',
+      end: '2025-09-09 14:59:00',
+      color: '#6fc5e2',
+      url: 'https://www.hoyolab.com/article/40538951',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -182,7 +215,7 @@ export const eventsData = [
       showOnHome: true,
     },
     {
-      name: "Starry Night's Whispers",
+      name: "Starry Night's Whispers - Citlali Banner",
       pos: '30% 17%',
       zoom: '200%',
       image: 'Starry Nights Whispers 2.png',
@@ -192,6 +225,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/40226689',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: "Piercing Shot's Crimson Wake - Chasca Banner",
+      pos: '30% 17%',
+      zoom: '200%',
+      image: 'Piercing Shots Crimson Wake 2.png',
+      start: '2025-08-19 18:00:00',
+      end: '2025-09-09 14:59:00',
+      color: '#fe7391',
+      url: 'https://www.hoyolab.com/article/40538951',
+      showOnHome: true,
     },
   ],
   [
@@ -229,6 +273,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/40226689',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '40% 35%',
+      zoom: '150%',
+      image: 'Epitome Invocation 86.png',
+      start: '2025-08-19 18:00:00',
+      end: '2025-09-09 14:59:00',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/40538951',
+      showOnHome: true,
     },
   ],
   [
@@ -274,6 +329,16 @@ export const eventsData = [
       description:
         "When a character triggers Cryo-related reactions, a shockwave will be released at the opponent's position, dealing True DMG to nearby opponents. This effect can be triggered once every 2.5s.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2025-08-16 04:00:00',
+      end: '2025-09-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character triggers Hydro-related reactions (including Lunar-Charged), a shockwave will be released at the opponent's position, dealing True DMG. This effect can be triggered once every 3s.",
+    },
   ],
   [
     {
@@ -295,6 +360,26 @@ export const eventsData = [
       color: '#777df3',
       description:
         'Required Elemental Types: Pyro, Hydro, and Cryo. Opening Characters: Lyney, Xiangling, Tartaglia, Dahlia, Wriothesley, and Rosaria',
+    },
+    {
+      name: 'Imaginarium Theater',
+      image: 'Imaginarium Theater tmp.png',
+      pos: '0% 70%',
+      start: '2025-08-01 04:00:00',
+      end: '2025-09-01 04:00:00',
+      color: '#777df3',
+      description:
+        'Required Elemental Types: Electro, Cryo, and Anemo. Opening Characters: Yae Miko, Kuki Shinobu, Ganyu, Layla, Yumemizuki Mizuki, and Sucrose',
+    },
+    {
+      name: 'Imaginarium Theater',
+      image: 'Imaginarium Theater tmp.png',
+      pos: '0% 70%',
+      start: '2025-09-01 04:00:00',
+      end: '2025-10-01 04:00:00',
+      color: '#777df3',
+      description:
+        'Required Elemental Types: Pyro, Hydro, and Dendro. Opening Characters: Hu Tao, Thoma, Nilou, Xingqiu, Baizhu, and Collei',
     },
   ],
   [

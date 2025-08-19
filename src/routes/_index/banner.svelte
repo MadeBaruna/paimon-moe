@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    citlali: {
-      name: 'Citlali',
+    mualani: {
+      name: 'Mualani',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    ineffa: {
-      name: 'Ineffa',
+    chasca: {
+      name: 'Chasca',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300086;
-  const image = 'citlali ineffa.png';
+  const bannerId = 300087;
+  const image = 'mualani chasca.png';
   const width = 800;
-  const height = 406;
+  const height = 373;
 
   let loading = true;
   let user = '';

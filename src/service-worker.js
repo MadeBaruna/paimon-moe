@@ -7,7 +7,7 @@ const IMAGE_CACHE = `cacheimg${IMAGE_CACHE_VER}`;
 
 const IMAGE_URL = `${self.location.origin}/images/`;
 
-const changelog = ['Update v5.8 banners phase 1', 'Update achievements', 'Update character & weapon'];
+const changelog = ['Update v5.8 banners phase 2'];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
 

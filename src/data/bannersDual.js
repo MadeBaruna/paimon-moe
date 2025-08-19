@@ -1503,4 +1503,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Sharktacular Surfari 2': [
+    {
+      name: 'Sharktacular Surfari',
+      image: 2,
+      shortName: 'Mualani',
+      start: '2025-08-19 18:00:00',
+      end: '2025-09-09 14:59:00',
+      color: '#6fc5e2',
+      featured: ['mualani', 'chasca'],
+      featuredRare: ['ifa', 'ororon', 'bennett'],
+      version: '5.8',
+    },
+    {
+      name: "Piercing Shot's Crimson Wake",
+      image: 2,
+      shortName: 'Chasca',
+      start: '2025-08-19 18:00:00',
+      end: '2025-09-09 14:59:00',
+      color: '#6fc5e2',
+      featured: ['mualani', 'chasca'],
+      featuredRare: ['ifa', 'ororon', 'bennett'],
+      version: '5.8',
+    },
+  ],
 };
