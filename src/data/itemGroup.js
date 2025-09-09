@@ -391,6 +391,11 @@ export const itemGroup = {
     items: [itemList.teachings_of_kindling, itemList.guide_to_kindling, itemList.philosophies_of_kindling],
     type: 'book',
   },
+  teachings_of_moonlight: {
+    name: 'Moonlight',
+    items: [itemList.teachings_of_moonlight, itemList.guide_to_moonlight, itemList.philosophies_of_moonlight],
+    type: 'book',
+  },
   shard_of_a_shattered_will: {
     name: 'Will',
     items: [itemList.shard_of_a_shattered_will, itemList.locus_of_a_clear_will, itemList.sigil_of_a_striding_will],

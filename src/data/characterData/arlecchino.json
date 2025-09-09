@@ -100,7 +100,17 @@
     12825.670370800002,
     12918.4951392,
     13011.319907599998,
-    13103.1246236
+    13103.1246236,
+    13195.949391999999,
+    13288.7741604,
+    13381.598928800002,
+    13474.4236972,
+    13568.268518,
+    13661.093286399999,
+    13753.9180548,
+    13847.762875600001,
+    13940.587644,
+    14034.4324648
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     334.78265220000003,
     337.2056728,
     339.6286934,
-    342.0250874
+    342.0250874,
+    349.7201748,
+    357.41526220000003,
+    365.11034959999995,
+    372.805437,
+    380.5005244,
+    388.19561180000005,
+    395.8906992,
+    403.5857866,
+    411.28087400000004,
+    418.97596139999996
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     748.51920695,
     753.9365143,
     759.35382165,
-    764.7115981500001
+    764.7115981500001,
+    770.1289055,
+    775.54621285,
+    780.9635202000001,
+    786.3808275499999,
+    791.85766575,
+    797.2749731,
+    802.69228045,
+    808.16911865,
+    813.5864260000001,
+    819.0632641999999
   ],
   "critDamage": [
     0.5,
@@ -387,6 +417,16 @@
     0.788,
     0.788,
     0.788,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
     0.884,
     0.884,
     0.884,
@@ -662,7 +702,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Invitation to a Beheading",
+    "name": "Invitation to a Beheading",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 6 consecutive spear strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a fixed amount of Stamina, dashing toward a nearby opponent and cleaving once.\\nContinuously holding this button will cause Arlecchino to consume Stamina and engage in up to 5s of high-speed movement.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.\\n\\n<span style=\"color: #FFD780FF;\">Masque of the Red Death</span>\\nWhen Arlecchino has a Bond of Life equal to or greater than 30% of her Max HP, she will enter the \"Masque of the Red Death\" state, where her Normal, Charged, and Plunging Attacks will be converted to deal <span style=\"color: #FF9999FF;\">Pyro DMG</span>. This cannot be overridden.\\nWhen in the \"Masque of the Red Death\" state, Arlecchino's Normal Attacks will deal extra DMG to opponents on hit that scales off her ATK multiplied by a certain ratio of her current Bond of Life percentage. This will consume 7.5% of said current Bond of Life. Her Bond of Life can be consumed this way every 0.03s. When her Bond of Life is consumed in this manner, All Is Ash's CD will decrease by 0.8s.",
     "skillLabels": [
       "Masque of the Red Death Increase",

@@ -120,8 +120,8 @@
   let manualCount = 0;
   let editConstellation = false;
 
-  const showedIndex = [1, 20, 21, 41, 42, 52, 53, 63, 64, 74, 75, 85, 86, 96];
-  const level = [1, 20, 20, 40, 40, 50, 50, 60, 60, 70, 70, 80, 80, 90];
+  const showedIndex = [1, 20, 21, 41, 42, 52, 53, 63, 64, 74, 75, 85, 86, 96, 101, 106];
+  const level = [1, 20, 20, 40, 40, 50, 50, 60, 60, 70, 70, 80, 80, 90, 95, 100];
   const ascen = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
 
   async function getConstellationCount() {
@@ -336,24 +336,28 @@
           <div class="text-gray-200 rounded-xl border border-gray-200 border-opacity-25 p-4 flex">
             <div class="mr-4">
               <p>{$t('characters.talentBook')}</p>
-              <div class="flex items-center mt-2">
-                <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
-                  <img src="/images/items/{bookId}.png" alt={book.name} class="h-full max-w-full object-contain" />
+              <Tooltip title={$t(book.name)}>
+                <div class="flex items-center mt-2">
+                  <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
+                    <img src="/images/items/{bookId}.png" alt={book.name} class="h-full max-w-full object-contain" />
+                  </div>
+                  <p class="mb-1 font-semibold">{book.name}</p>
                 </div>
-                <p class="mb-1 font-semibold">{book.name}</p>
-              </div>
+              </Tooltip>
             </div>
             <div>
               <p>{$t('characters.bossItem')}</p>
               <div class="flex items-center mt-2">
-                <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
-                  <img
-                    src="/images/items/{bossItem.id}.png"
-                    alt={bossItem.name}
-                    title={bossItem.name}
-                    class="h-full max-w-full object-contain"
-                  />
-                </div>
+                <Tooltip title={$t(bossItem.name)}>
+                  <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
+                    <img
+                      src="/images/items/{bossItem.id}.png"
+                      alt={bossItem.name}
+                      title={bossItem.name}
+                      class="h-full max-w-full object-contain"
+                    />
+                  </div>
+                </Tooltip>
               </div>
             </div>
           </div>
@@ -362,14 +366,16 @@
             <div class="flex items-center mt-2">
               {#each materials as material}
                 {#if material.item.id !== 'none'}
-                  <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
-                    <img
-                      src="/images/items/{material.item.id}.png"
-                      alt={material.item.name}
-                      title={material.item.name}
-                      class="h-full max-w-full object-contain mx-auto"
-                    />
-                  </div>
+                  <Tooltip title={$t(material.item.name)}>
+                    <div class="mr-2 h-12 w-12 bg-background rounded-xl p-1">
+                      <img
+                        src="/images/items/{material.item.id}.png"
+                        alt={material.item.name}
+                        title={material.item.name}
+                        class="h-full max-w-full object-contain mx-auto"
+                      />
+                    </div>
+                  </Tooltip>
                 {/if}
               {/each}
             </div>
@@ -396,54 +402,46 @@
                     {$t('characters.def')}
                   </td>
                   <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
-                    {$t('characters.critRate')}
+                    {$t(`characters.${data.statGrow}`)}
                   </td>
-                  <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
-                    {$t('characters.critDamage')}
-                  </td>
-                  {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage'}
-                    <td class="text-center whitespace-nowrap border-gray-700 border-r font-semibold px-2">
-                      {$t(`characters.${data.statGrow}`)}
-                    </td>
-                  {/if}
                   <td class="text-center whitespace-nowrap border-gray-700 font-semibold px-2">
                     {$t('characters.ascensionMaterial')}
                   </td>
                 </tr>
                 {#each showedIndex as index, i}
                   <tr>
-                    {#if i % 2 === 0}
-                      <td rowspan={2} class="text-center border-t border-gray-700 border-r px-2">{ascen[i]}</td>
+                    {#if i % 2 === 0 && i < 14}
+                      <td rowspan={i === 12 ? 4 : 2} class="text-center border-t border-gray-700 border-r px-2">
+                        {ascen[i]}
+                      </td>
                     {/if}
-                    <td class="text-center border-t border-gray-700 border-r px-2">{level[i]}</td>
+                    <td class="text-center border-t border-gray-700 border-r px-2 h-8">{level[i]}</td>
                     <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(data.hp[index])}</td>
                     <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(data.atk[index])}</td>
                     <td class="text-center border-t border-gray-700 border-r px-2">{Math.round(data.def[index])}</td>
-                    {#if data.statGrow === 'critRate'}
-                      <td class="text-center border-t border-gray-700 border-r px-2">
-                        {numberFormat.format(data.critRate[index] * 100)}%
-                      </td>
-                    {:else}
-                      <td class="text-center border-t border-gray-700 border-r px-2">5%</td>
+                    {#if i % 2 === 0 && i < 14}
+                      {#if data.statGrow === 'critRate'}
+                        <td rowspan={i === 12 ? 4 : 2} class="text-center border-t border-gray-700 border-r px-2">
+                          {numberFormat.format(data.critRate[index] * 100)}%
+                        </td>
+                      {/if}
+                      {#if data.statGrow === 'critDamage'}
+                        <td rowspan={i === 12 ? 4 : 2} class="text-center border-t border-gray-700 border-r px-2">
+                          {numberFormat.format(data.critDamage[index] * 100)}%
+                        </td>
+                      {/if}
+                      {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage' && data.statGrow !== 'em'}
+                        <td rowspan={i === 12 ? 4 : 2} class="text-center border-t border-gray-700 border-r px-2">
+                          {numberFormat.format(data[data.statGrow][index] * 100)}%
+                        </td>
+                      {:else if data.statGrow === 'em'}
+                        <td rowspan={i === 12 ? 4 : 2} class="text-center border-t border-gray-700 border-r px-2">
+                          {numberFormat.format(data[data.statGrow][index])}
+                        </td>
+                      {/if}
                     {/if}
-                    {#if data.statGrow === 'critDamage'}
-                      <td class="text-center border-t border-gray-700 border-r px-2">
-                        {numberFormat.format(data.critDamage[index] * 100)}%
-                      </td>
-                    {:else}
-                      <td class="text-center border-t border-gray-700 border-r px-2">50%</td>
-                    {/if}
-                    {#if data.statGrow !== 'critRate' && data.statGrow !== 'critDamage' && data.statGrow !== 'em'}
-                      <td class="text-center border-t border-gray-700 border-r px-2">
-                        {numberFormat.format(data[data.statGrow][index] * 100)}%
-                      </td>
-                    {:else if data.statGrow === 'em'}
-                      <td class="text-center border-t border-gray-700 border-r px-2">
-                        {numberFormat.format(data[data.statGrow][index])}
-                      </td>
-                    {/if}
-                    {#if i % 2 === 0}
-                      <td rowspan={2} class="text-center border-t border-gray-700 px-2">
+                    {#if i % 2 === 0 && i < 14}
+                      <td rowspan={i === 12 ? 4 : 2} class="text-center border-t border-gray-700 px-2">
                         <span class="w-max inline-block h-16">
                           {#if ascen[i] > 0}
                             {#each ascMaterials[ascen[i - 1]].items as obj}

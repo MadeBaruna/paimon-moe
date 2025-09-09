@@ -100,7 +100,17 @@
     12346.2059532,
     12435.560636799999,
     12524.9153204,
-    12613.288084400001
+    12613.288084400001,
+    12702.642768,
+    12791.997451599998,
+    12881.3521352,
+    12970.7068188,
+    13061.043422,
+    13150.3981056,
+    13239.7527892,
+    13330.0893924,
+    13419.444076,
+    13509.7806792
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     323.07695920000003,
     325.4152588,
     327.7535584,
-    330.06616240000005
+    330.06616240000005,
+    337.4921908,
+    344.9182192,
+    352.3442476,
+    359.77027599999997,
+    367.1963044,
+    374.62233280000004,
+    382.0483612,
+    389.4743896,
+    396.900418,
+    404.32644639999995
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     810.20621697,
     816.06997578,
     821.9337345899999,
-    827.7330564900001
+    827.7330564900001,
+    833.5968152999999,
+    839.4605741099999,
+    845.32433292,
+    851.18809173,
+    857.1162874500001,
+    862.9800462599999,
+    868.8438050699999,
+    874.77200079,
+    880.6357596,
+    886.5639553199999
   ],
   "critRate": [
     0.05,
@@ -397,6 +427,16 @@
     0.242,
     0.242,
     0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
     0.242
   ],
   "statGrow": "critRate",
@@ -437,7 +477,7 @@
     },
     {
       "name": "Moonsign Benediction: Assemblage Hub",
-      "description": "When a party member triggers an Electro-Charged reaction, it will be converted into the Lunar-Charged reaction, with every 100 ATK that Ineffa has increasing Lunar-Charged's Base DMG by 0.7%, up to a maximum of 14%.\\n\\nFurther blessings may follow the new moon's rise..."
+      "description": "When a party member triggers an Electro-Charged reaction, it will be converted into the Lunar-Charged reaction, with every 100 ATK that Ineffa has increasing Lunar-Charged's Base DMG by 0.7%, up to a maximum of 14%.\\n\\nAdditionally, when Ineffa is in the party, the party's <span style=\"color: #FFD780FF;\">Moonsign</span> will increase by 1 level."
     },
     {
       "name": "Flavor Synthesis Unit",
@@ -603,7 +643,7 @@
   },
   "attack": {
     "name": "Cyclonic Duster",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 4 consecutive spear strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to perform a spinning attack.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.undefined",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 4 consecutive spear strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to perform a spinning attack.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

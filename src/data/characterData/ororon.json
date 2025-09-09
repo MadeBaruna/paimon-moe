@@ -100,7 +100,17 @@
     9051.47197634,
     9115.02380822,
     9179.35066244,
-    9243.67751666
+    9243.67751666,
+    9307.229348539999,
+    9371.556202759999,
+    9435.10803464,
+    9499.43488886,
+    9562.98672074,
+    9627.313574959999,
+    9691.640429179999,
+    9755.19226106,
+    9819.51911528,
+    9883.07094716
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     239.1779292,
     240.8572236,
     242.5569972,
-    244.25677079999997
+    244.25677079999997,
+    250.4824476,
+    256.70812440000003,
+    262.9542804,
+    269.1799572,
+    275.40563399999996,
+    281.6313108,
+    287.8774668,
+    294.10314359999995,
+    300.3288204,
+    306.57497639999997
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     574.7635635,
     578.7990705,
     582.8837910000001,
-    586.9685115000001
+    586.9685115000001,
+    591.0040185,
+    595.088739,
+    599.1242460000001,
+    603.2089665000001,
+    607.2444735,
+    611.329194,
+    615.4139145,
+    619.4494215000001,
+    623.5341420000001,
+    627.569649
   ],
   "atkPercent": [
     0,
@@ -397,6 +427,16 @@
     0.24,
     0.24,
     0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
     0.24
   ],
   "statGrow": "atkPercent",
@@ -429,7 +469,7 @@
   "passives": [
     {
       "name": "Nightshade Synesthesia",
-      "description": "After a nearby party member triggers Nightsoul Burst, Ororon will gain 40 Nightsoul points. Within 15s after using his Elemental Skill, when other party members' <span style=\"color: #80C0FFFF;\">Hydro</span> or <span style=\"color: #FFACFFFF;\">Electro</span> attacks hit opponents, Ororon will gain 5 Nightsoul points, an effect that can occur every 0.3s for a maximum of 10 times during this 15s duration.\\nOroron can have a maximum of 80 Nightsoul points.\\n\\nAlso, when nearby opponents take <span style=\"color: #FFACFFFF;\">Electro-Charged</span> reaction DMG or Nightsoul-aligned DMG dealt by other nearby characters, Ororon will consume 10 Nightsoul points (provided he has at least that amount), entering the Nightsoul's Blessing state and triggering the Hypersense effect: Deal Nightsoul-aligned <span style=\"color: #FFACFFFF;\">Electro DMG</span> based on 160% of Ororon's ATK to at most 4 nearby opponents. The aforementioned effect can trigger once every 1.8s.\\n\\n<span style=\"color: #FFD780FF;\">Nightsoul's Blessing: Ororon</span>\\nOroron's Nightsoul's Blessing state lasts 6s."
+      "description": "After a nearby party member triggers Nightsoul Burst, Ororon will gain 40 Nightsoul points. Within 15s after using his Elemental Skill, when other party members' <span style=\"color: #80C0FFFF;\">Hydro</span> or <span style=\"color: #FFACFFFF;\">Electro</span> attacks hit opponents, Ororon will gain 5 Nightsoul points, an effect that can occur every 0.3s for a maximum of 10 times during this 15s duration.\\nOroron can have a maximum of 80 Nightsoul points.\\n\\nAlso, when nearby opponents take <span style=\"color: #FFACFFFF;\">Electro-Charged or Lunar-Charged</span> reaction DMG or Nightsoul-aligned DMG dealt by other nearby characters, Ororon will consume 10 Nightsoul points (provided he has at least that amount), entering the Nightsoul's Blessing state and triggering the Hypersense effect: Deal Nightsoul-aligned <span style=\"color: #FFACFFFF;\">Electro DMG</span> based on 160% of Ororon's ATK to at most 4 nearby opponents. The aforementioned effect can trigger once every 1.8s.\\n\\n<span style=\"color: #FFD780FF;\">Nightsoul's Blessing: Ororon</span>\\nOroron's Nightsoul's Blessing state lasts 6s."
     },
     {
       "name": "Aspect Catalyst",
@@ -700,8 +740,8 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Spiritvessel Snapshot",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 consecutive shots with a bow.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nPerforms a more precise <span style=\"color: #FFD780FF;\">Aimed Shot</span> with increased DMG.\\nWhile aiming, Electro energy will accumulate on the arrowhead. A fully charged arrow will deal immense <span style=\"color: #FFACFFFF;\">Electro DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
+    "name": "Spiritvessel Snapshot",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 consecutive shots with a bow.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nPerforms a more precise <span style=\"color: #FFD780FF;\">Aimed Shot</span> with increased DMG.\\nWhile aiming, Electro energy will accumulate on the arrowhead. A fully charged arrow will deal <span style=\"color: #FFACFFFF;\">Electro DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

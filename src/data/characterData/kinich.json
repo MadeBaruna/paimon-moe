@@ -100,7 +100,17 @@
     12585.938462,
     12677.028188,
     12768.117913999999,
-    12858.206654000001
+    12858.206654000001,
+    12949.29638,
+    13040.386106,
+    13131.475832,
+    13222.565558,
+    13314.65627,
+    13405.745996,
+    13496.835722000002,
+    13588.926433999999,
+    13680.016160000001,
+    13772.106871999998
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     325.4181006,
     327.7733444,
     330.12858819999997,
-    332.4579502
+    332.4579502,
+    339.9377904,
+    347.4176306,
+    354.89747079999995,
+    362.37731099999996,
+    369.8571512,
+    377.3369914,
+    384.8168316,
+    392.2966718,
+    399.77651199999997,
+    407.2563522
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     784.6286762300001,
     790.30732102,
     795.9859658099999,
-    801.6022079100001
+    801.6022079100001,
+    807.2808527,
+    812.9594974899999,
+    818.63814228,
+    824.3167870699999,
+    830.05783455,
+    835.73647934,
+    841.4151241300001,
+    847.15617161,
+    852.8348164000001,
+    858.57586388
   ],
   "critDamage": [
     0.5,
@@ -387,6 +417,16 @@
     0.788,
     0.788,
     0.788,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
     0.884,
     0.884,
     0.884,
@@ -700,8 +740,8 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Nightsun Style",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 rapid strikes.\\nAfter using his Elemental Skill \"Canopy Hunter: Riding High\"'s mid-air swing, he can perform a Normal Attack in mid-air before landing.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount to spin and throw his Claymore forward to attack opponents.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
+    "name": "Nightsun Style",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 rapid strikes.\\nAfter using his Elemental Skill \"Canopy Hunter: Riding High\"'s mid-air swing, he can perform a Normal Attack in mid-air before landing.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to spin and throw his Claymore forward to attack opponents.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

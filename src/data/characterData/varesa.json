@@ -100,7 +100,17 @@
     12430.111991610001,
     12520.07393914,
     12610.035886669999,
-    12699.00924137
+    12699.00924137,
+    12788.971188900001,
+    12878.93313643,
+    12968.89508396,
+    13058.85703149,
+    13149.80757185,
+    13239.769519380001,
+    13329.731466910001,
+    13420.68200727,
+    13510.643954800002,
+    13601.59449516
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     348.82946860000004,
     351.35415439999997,
     353.87884019999996,
-    356.3757822
+    356.3757822,
+    364.3937404,
+    372.41169859999997,
+    380.4296568,
+    388.447615,
+    396.4655732,
+    404.4835314,
+    412.5014896,
+    420.51944779999997,
+    428.537406,
+    436.5553642
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     765.06938037,
     770.60646738,
     776.14355439,
-    781.6197942900001
+    781.6197942900001,
+    787.1568813,
+    792.69396831,
+    798.23105532,
+    803.7681423299999,
+    809.36607645,
+    814.90316346,
+    820.44025047,
+    826.0381845899999,
+    831.5752716000001,
+    837.1732057199999
   ],
   "critRate": [
     0.05,
@@ -387,6 +417,16 @@
     0.194,
     0.194,
     0.194,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
     0.242,
     0.242,
     0.242,
@@ -749,7 +789,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: By the Horns",
+    "name": "By the Horns",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nGotta try... to do battle like the greatest champion luchadors do! Varesa launches up to 3 strikes, dealing <span style=\"color: #FFACFFFF;\">Electro DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to headbutt opponents in front, dealing Nightsoul-aligned <span style=\"color: #FFACFFFF;\">Electro DMG</span> and using the momentum to leap into the air.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing Nightsoul-aligned <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> upon impact. If Varesa is in a combat state upon landing, or if the shockwave from her plunging attack hits an opponent, she will gain 25 Nightsoul points. She enters the Fiery Passion state upon reaching maximum Nightsoul points through this method.\\n\\n<span style=\"color: #FFD780FF;\">Fiery Passion</span>\\nIn this state, Varesa's Normal, Charged, and Plunging Attacks will gain corresponding buffs:\\n\\n<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nFight like a superstar champion luchador! Launches up to 3 fierce strikes, dealing greater <span style=\"color: #FFACFFFF;\">Electro DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to slam into her opponents, dealing greater amounts of Nightsoul-aligned <span style=\"color: #FFACFFFF;\">Electro DMG</span> and using the momentum to leap into the air.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nConsumes all her Nightsoul points and slams down on the ground from mid-air, dealing DMG to opponents in her path and dealing greater amounts of Nightsoul-aligned <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> upon hitting the ground.",
     "skillLabels": [
       "1-Hit DMG",

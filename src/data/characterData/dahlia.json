@@ -100,7 +100,17 @@
     12246.1096297,
     12332.0915251,
     12419.121980200001,
-    12506.152435299999
+    12506.152435299999,
+    12592.134330699999,
+    12679.1647858,
+    12765.1466812,
+    12852.1771363,
+    12938.159031700001,
+    13025.189486799998,
+    13112.219941899999,
+    13198.2018373,
+    13285.2322924,
+    13371.2141878
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     185.10291912000002,
     186.40254696,
     187.71802392,
-    189.03350088000002
+    189.03350088000002,
+    193.85163336,
+    198.66976584000003,
+    203.50374743999998,
+    208.32187992000001,
+    213.1400124,
+    217.95814487999996,
+    222.79212647999998,
+    227.61025896,
+    232.42839143999998,
+    237.26237304
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     548.0303745000001,
     551.8781835,
     555.772917,
-    559.6676505
+    559.6676505,
+    563.5154595,
+    567.410193,
+    571.258002,
+    575.1527355000001,
+    579.0005445,
+    582.895278,
+    586.7900115,
+    590.6378205000001,
+    594.532554,
+    598.380363
   ],
   "hpPercent": [
     0,
@@ -387,6 +417,16 @@
     0.18,
     0.18,
     0.18,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
     0.24,
     0.24,
     0.24,
@@ -712,7 +752,7 @@
   },
   "attack": {
     "name": "Favonius Bladework - Ritual",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 4 rapid strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.undefined",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 4 rapid strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to unleash 2 rapid sword strikes.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

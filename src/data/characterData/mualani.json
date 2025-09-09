@@ -100,7 +100,17 @@
     14863.3935456,
     14970.9661744,
     15078.538803200001,
-    15184.929315200003
+    15184.929315200003,
+    15292.501944,
+    15400.0745728,
+    15507.6472016,
+    15615.219830400001,
+    15723.974576,
+    15831.547204800001,
+    15939.119833600002,
+    16047.8745792,
+    16155.447208000001,
+    16264.2019536
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     177.9264404,
     179.2141996,
     180.50195879999998,
-    181.7755668
+    181.7755668,
+    185.8652636,
+    189.95496039999998,
+    194.0446572,
+    198.13435399999997,
+    202.2240508,
+    206.3137476,
+    210.40344439999998,
+    214.4931412,
+    218.58283799999998,
+    222.67253479999997
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     558.19221262,
     562.23205388,
     566.27189514,
-    570.26734254
+    570.26734254,
+    574.3071838,
+    578.34702506,
+    582.38686632,
+    586.42670758,
+    590.5109427,
+    594.55078396,
+    598.59062522,
+    602.6748603399999,
+    606.7147016,
+    610.7989367199999
   ],
   "critRate": [
     0.05,
@@ -387,6 +417,16 @@
     0.194,
     0.194,
     0.194,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
     0.242,
     0.242,
     0.242,
@@ -602,7 +642,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Cooling Treatment",
+    "name": "Cooling Treatment",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 attacks that deal <span style=\"color: #80C0FFFF;\">Hydro DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to smack a Pufferball into the air that deals <span style=\"color: #80C0FFFF;\">AoE Hydro DMG</span> upon landing.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nGathers the power of Hydro and plunges towards the ground from mid-air, damaging all opponents in her path. Deals <span style=\"color: #80C0FFFF;\">AoE Hydro DMG</span> upon impact with the ground.",
     "skillLabels": [
       "1-Hit DMG",
@@ -971,7 +1011,7 @@
   },
   "elementalSkill": {
     "name": "Surfshark Wavebreaker",
-    "description": "Combining her mastery of speed and the waves and water, Mualani can surf anytime, anywhere.\\nAfter using this skill, Mualani will gain 60 Nightsoul points and enter the Nightsoul's Blessing state.\\n\\n<span style=\"color: #FFD780FF;\">Nightsoul's Blessing: Mualani</span>\\nContinuously consume Nightsoul points. When they are depleted or when the skill is used again, Mualani's Nightsoul's Blessing will end. The state itself has the following traits:\\n·Mualani mounts her Sharky Surfboard, increasing Mualani's Movement SPD and interruption resistance. Mualani can move on water and liquid Phlogiston while this state is active, and she will take no DMG from the latter.\\n·Normal Attacks will be converted to Sharky's Bites, dealing Nightsoul-aligned <span style=\"color: #80C0FFFF;\">Hydro DMG</span> based on Mualani's Max HP. Sharky's Bites can be used in mid-air. DMG dealt this way is considered Normal Attack DMG.\\n·When she makes contact with opponents in this state, Mualani applies \"Marked as Prey\" to them and gains 1 Wave Momentum stack. Max 3 stacks. 1 stack can be gained from the same opponent every 0.7s.\\n\\n<span style=\"color: #FFD780FF;\">Wave Momentum and Marked as Prey</span>\\nWhen Mualani uses Sharky's Bite, her DMG dealt increases based on Wave Momentum stacks. When she has 3 stacks, a Normal Attack will use Sharky's Surging Bite instead, further increasing her DMG and removing all her stacks when hitting an opponent.\\nWhen Sharky's Bites hit opponents Marked as Prey, that mark will be removed, and she will fire Shark Missiles at up to 5 nearby opponents Marked as Prey, dealing DMG to them equal to this Sharky's Bite instance and clearing their Marks. If more than 1 opponent is the target of Sharky's Bite and Shark Missiles, the DMG dealt will decrease, decreasing to 72% of the original DMG when at least 3 opponents are targeted.\\n\\n<i>First off, Sharky is a freshwater shark on top of being a surfboard. Second, it's not that it wants to eat for real, just that it definitely bites for real.</i>",
+    "description": "Combining her mastery of speed and the waves and water, Mualani can surf anytime, anywhere.\\nAfter using this skill, Mualani will gain 60 Nightsoul points and enter the Nightsoul's Blessing state.\\n\\n<span style=\"color: #FFD780FF;\">Nightsoul's Blessing: Mualani</span>\\nContinuously consume Nightsoul points. When they are depleted or when the skill is used again, Mualani's Nightsoul's Blessing will end. The state itself has the following traits:\\n·Mualani mounts her Sharky Surfboard, increasing Mualani's Movement SPD and interruption resistance. Mualani can move on water and liquid Phlogiston while this state is active, and she will take no DMG from the latter.\\n·Normal Attacks will be converted to Sharky's Bites, dealing Nightsoul-aligned <span style=\"color: #80C0FFFF;\">Hydro DMG</span> based on Mualani's Max HP. Sharky's Bites can be used in mid-air. DMG dealt this way is considered Normal Attack DMG.\\n·When she makes contact with opponents in this state, Mualani applies \"Marked as Prey\" to them and gains 1 Wave Momentum stack. Max 3 stacks. 1 stack can be gained from the same opponent every 0.7s.\\n\\n<span style=\"color: #FFD780FF;\">Wave Momentum and Marked as Prey</span>\\nWhen Mualani uses Sharky's Bite, her DMG dealt increases based on Wave Momentum stacks. When she has 3 stacks, Sharky's Bite will be converted to Sharky's Surging Bite, further increasing her DMG and removing all her stacks when hitting an opponent.\\nWhen Sharky's Bite hits an opponent Marked as Prey, that mark will be removed, and she will fire Shark Missiles at up to 5 nearby opponents Marked as Prey, dealing DMG to them equal to this Sharky's Bite instance and clearing their Marks. If more than 1 opponent is the target of Sharky's Bite and Shark Missiles, the DMG dealt will decrease, decreasing at most to 72% of the original DMG when 3 opponents are targeted.\\n\\n<i>First off, Sharky is a freshwater shark on top of being a surfboard. Second, it's not that it wants to eat for real, just that it definitely bites for real.</i>",
     "skillLabels": [
       "Sharky's Bite Base DMG",
       "Wave Momentum DMG Bonus",

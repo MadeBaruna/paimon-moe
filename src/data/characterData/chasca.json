@@ -100,7 +100,17 @@
     9589.286352000001,
     9658.688048,
     9728.089743999999,
-    9796.728784
+    9796.728784,
+    9866.13048,
+    9935.532175999999,
+    10004.933872,
+    10074.335567999999,
+    10144.49992,
+    10213.901616,
+    10283.303312,
+    10353.467664,
+    10422.86936,
+    10493.033711999999
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     339.464923,
     341.921832,
     344.378741,
-    346.808651
+    346.808651,
+    354.611362,
+    362.414073,
+    370.216784,
+    378.019495,
+    385.822206,
+    393.62491700000004,
+    401.427628,
+    409.230339,
+    417.03305,
+    424.835761
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     601.824488,
     606.180112,
     610.5357359999999,
-    614.843496
+    614.843496,
+    619.19912,
+    623.554744,
+    627.9103680000001,
+    632.265992,
+    636.66948,
+    641.0251039999999,
+    645.3807280000001,
+    649.784216,
+    654.13984,
+    658.543328
   ],
   "critRate": [
     0.05,
@@ -387,6 +417,16 @@
     0.194,
     0.194,
     0.194,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
     0.242,
     0.242,
     0.242,
@@ -700,7 +740,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Phantom Feather Flurry",
+    "name": "Phantom Feather Flurry",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 4 consecutive shots with a bow.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nPerforms a more precise <span style=\"color: #FFD780FF;\">Aimed Shot</span> with increased DMG.\\nWhile aiming, mighty winds will accumulate on the arrowhead. A fully charged wind arrow will deal <span style=\"color: #80FFD7FF;\">Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nFires off a shower of arrows in mid-air before falling and striking the ground, hitting opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",

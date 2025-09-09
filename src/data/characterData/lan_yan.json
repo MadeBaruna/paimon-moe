@@ -100,7 +100,17 @@
     9051.47197634,
     9115.02380822,
     9179.35066244,
-    9243.67751666
+    9243.67751666,
+    9307.229348539999,
+    9371.556202759999,
+    9435.10803464,
+    9499.43488886,
+    9562.98672074,
+    9627.313574959999,
+    9691.640429179999,
+    9755.19226106,
+    9819.51911528,
+    9883.07094716
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     245.41735744000002,
     247.14045951999998,
     248.88457504,
-    250.62869056
+    250.62869056,
+    257.01677631999996,
+    263.40486208000004,
+    269.81396128,
+    276.20204704,
+    282.5901328,
+    288.97821855999996,
+    295.38731776,
+    301.77540351999994,
+    308.16348928,
+    314.57258848
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     568.08026625,
     572.06884875,
     576.1060725,
-    580.14329625
+    580.14329625,
+    584.1318787499999,
+    588.1691025,
+    592.157685,
+    596.19490875,
+    600.18349125,
+    604.2207149999999,
+    608.25793875,
+    612.24652125,
+    616.2837450000001,
+    620.2723275
   ],
   "atkPercent": [
     0,
@@ -397,6 +427,16 @@
     0.24,
     0.24,
     0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
     0.24
   ],
   "statGrow": "atkPercent",
@@ -422,7 +462,7 @@
       "description": "Increases the Level of <span style=\"color: #FFD780FF;\">Lustrous Moonrise</span> by 3.\\nMaximum upgrade level is 15."
     },
     {
-      "name": "\"Let Us Away on Slyphic Wing, the Silvered Ornaments to Ring\"",
+      "name": "\"Let Us Away on Sylphic Wing, the Silvered Ornaments to Ring\"",
       "description": "<span style=\"color: #FFD780FF;\">Swallow-Wisp Pinion Dance</span> gains 1 additional charge."
     }
   ],
@@ -598,7 +638,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Black Pheasant Strides on Water",
+    "name": "Black Pheasant Strides on Water",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nWields her Feathermoon Rings to perform up to 4 attacks, dealing <span style=\"color: #80FFD7FF;\">Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to throw out a Feathermoon Ring, dealing <span style=\"color: #80FFD7FF;\">Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nGathers the power of Anemo and plunges towards the ground from mid-air, damaging all opponents in her path. Deals <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span> upon impact with the ground.",
     "skillLabels": [
       "1-Hit DMG",

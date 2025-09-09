@@ -100,7 +100,17 @@
     9583.911801900002,
     9651.201977699999,
     9719.3127654,
-    9787.4235531
+    9787.4235531,
+    9854.713728899998,
+    9922.824516599998,
+    9990.114692399999,
+    10058.2254801,
+    10125.515655899999,
+    10193.626443599998,
+    10261.7372313,
+    10329.0274071,
+    10397.1381948,
+    10464.428370599999
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     222.53946456,
     224.10193847999997,
     225.68346695999998,
-    227.26499543999998
+    227.26499543999998,
+    233.05758168,
+    238.85016792,
+    244.66180871999998,
+    250.45439496,
+    256.24698119999994,
+    262.0395674399999,
+    267.85120824,
+    273.64379448,
+    279.43638072,
+    285.24802151999995
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     548.0303745000001,
     551.8781835,
     555.772917,
-    559.6676505
+    559.6676505,
+    563.5154595,
+    567.410193,
+    571.258002,
+    575.1527355000001,
+    579.0005445,
+    582.895278,
+    586.7900115,
+    590.6378205000001,
+    594.532554,
+    598.380363
   ],
   "em": [
     0,
@@ -387,6 +417,16 @@
     72,
     72,
     72,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
     96,
     96,
     96,
@@ -647,7 +687,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Royal Reed Archery",
+    "name": "Royal Reed Archery",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 consecutive shots with a bow.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nPerforms a more precise <span style=\"color: #FFD780FF;\">Aimed Shot</span> with increased DMG.\\nWhile aiming, the power of Electro will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged:\\n·Charge Level 1: Fires off an arrow carrying the power of lightning that deals <span style=\"color: #FFACFFFF;\">Electro DMG</span>.\\n·Charge Level 2: Fires off a <span style=\"color: #FFD780FF;\">Shadowpiercing Shot</span> which can pierce enemies, dealing <span style=\"color: #FFACFFFF;\">Electro DMG</span> to enemies along its path. After the Shadowpiercing Shot is fully charged, Sethos cannot move around.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
@@ -1095,7 +1135,7 @@
   },
   "elementalSkill": {
     "name": "Ancient Rite: The Thundering Sands",
-    "description": "Gathers the might of thunder, dealing <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> and quickly retreating. If this attack triggers Electro-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, or Electro Swirl reactions, Sethos recovers a certain amount of Elemental Energy.\\n\\n<i>\"The God indwelt Priest, the Magi who turned pits to springs, the singers of the sea of sand still spread their stories... But I know those are not legends, for they are our ancestors.\"</i>",
+    "description": "Gathers the might of thunder, dealing <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> and quickly retreating. If this attack triggers Electro-Charged, Lunar-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, or Electro Swirl reactions, Sethos recovers a certain amount of Elemental Energy.\\n\\n<i>\"The God indwelt Priest, the Magi who turned pits to springs, the singers of the sea of sand still spread their stories... But I know those are not legends, for they are our ancestors.\"</i>",
     "skillLabels": [
       "Skill DMG",
       "Energy Regeneration",

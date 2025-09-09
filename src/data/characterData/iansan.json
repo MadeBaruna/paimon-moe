@@ -100,7 +100,17 @@
     10435.815175200001,
     10509.086701600001,
     10583.251783200001,
-    10657.416864800001
+    10657.416864800001,
+    10730.6883912,
+    10804.8534728,
+    10878.124999200001,
+    10952.290080800001,
+    11025.5616072,
+    11099.7266888,
+    11173.8917704,
+    11247.163296800001,
+    11321.328378400001,
+    11394.5999048
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     251.65677568,
     253.42368543999999,
     255.21214288,
-    257.00060032
+    257.00060032,
+    263.55109504,
+    270.10158976,
+    276.67363216,
+    283.22412688,
+    289.7746216,
+    296.32511632,
+    302.89715872,
+    309.44765343999995,
+    315.99814816,
+    322.57019056
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     624.888292875,
     629.275733625,
     633.71667975,
-    638.157625875
+    638.157625875,
+    642.545066625,
+    646.98601275,
+    651.3734535,
+    655.814399625,
+    660.201840375,
+    664.6427864999999,
+    669.083732625,
+    673.471173375,
+    677.9121195,
+    682.29956025
   ],
   "atkPercent": [
     0,
@@ -387,6 +417,16 @@
     0.18,
     0.18,
     0.18,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
+    0.24,
     0.24,
     0.24,
     0.24,
@@ -847,7 +887,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Weighted Spike",
+    "name": "Weighted Spike",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 consecutive spear strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.\\n\\n<span style=\"color: #FFD780FF;\">Nightsoul State: Swift Stormflight</span>\\nWhile in the Nightsoul's Blessing state: Iansan's Charged Attack will be transformed into the formidable Swift Stormflight, consuming a certain amount of Stamina to stomp fiercely down, dealing Nightsoul-aligned <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span>.",
     "skillLabels": [
       "1-Hit DMG",

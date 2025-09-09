@@ -100,7 +100,17 @@
     11387.277418,
     11469.691932,
     11552.106446,
-    11633.615306000002
+    11633.615306000002,
+    11716.02982,
+    11798.444334,
+    11880.858848,
+    11963.273362,
+    12046.59353,
+    12129.008043999998,
+    12211.422558,
+    12294.742725999999,
+    12377.15724,
+    12460.477407999999
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     124.08028220000001,
     124.97832480000001,
     125.87636739999999,
-    126.76454140000001
+    126.76454140000001,
+    129.61656680000002,
+    132.4685922,
+    135.3206176,
+    138.172643,
+    141.0246684,
+    143.8766938,
+    146.7287192,
+    149.5807446,
+    152.43277,
+    155.2847954
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     747.01464573,
     752.4210640199999,
     757.8274823099999,
-    763.17448941
+    763.17448941,
+    768.5809077,
+    773.9873259899999,
+    779.39374428,
+    784.80016257,
+    790.26599205,
+    795.6724103399999,
+    801.07882863,
+    806.5446581099999,
+    811.9510764,
+    817.41690588
   ],
   "em": [
     0,
@@ -387,6 +417,16 @@
     86.4,
     86.4,
     86.4,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
     115.2,
     115.2,
     115.2,
@@ -749,7 +789,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Shadow-Stealing Spirit Vessel",
+    "name": "Shadow-Stealing Spirit Vessel",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nCalls upon secret arts passed down through the Masters of the Night-Wind from generation to generation, performing up to three strikes that deal <span style=\"color: #99FFFFFF;\">Cryo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nEnters Aiming Mode, and after Holding, consumes a certain amount of Stamina to call forth a Frost Star that deals <span style=\"color: #99FFFFFF;\">Cryo DMG</span> to opponents in its path.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nGathers the power of Cryo and plunges towards the ground from mid-air, damaging all opponents in her path. Deals <span style=\"color: #99FFFFFF;\">Aoe Cryo DMG</span> upon impact with the ground.",
     "skillLabels": [
       "1-Hit DMG",
@@ -1118,7 +1158,7 @@
   },
   "elementalSkill": {
     "name": "Dawnfrost Darkstar",
-    "description": "Invoking secret pacts passed down by her tribe over the millennia, Citlali deploys an Opal Shield and calls forth \"Obsidian Tzitzimitl: Itzpapa,\" a creature that is (reputedly) terrifying beyond compare, dealing Nightsoul-aligned <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span>.\\nThe Opal Shield's DMG absorption scales based on Citlali's Elemental Mastery, and absorbs <span style=\"color: #99FFFFFF;\">Cryo DMG</span> with 250% efficiency. When it is deployed, it will cause Citlali to briefly be <span style=\"color: #99FFFFFF;\">affected by Cryo</span>.\\nAfter using this skill, Citlali gains 24 Nightsoul points and enters the Nightsoul's Blessing state.\\n\\n<span style=\"color: #FFD780FF;\">Nightsoul's Blessing: Citlali</span>\\nWhen Itzpapa leaves the field, Citlali exits the Nightsoul's Blessing state.\\n\\n<span style=\"color: #FFD780FF;\">Itzpapa</span>\\n·Itzpapa will follow the character.\\n·If Citlali has at least 50 Nightsoul points, Itzpapa enters the Opal Fire state and continuously consumes Nightsoul points to whip up a Frostfall Storm that attacks opponents within its AoE, dealing Nightsoul-aligned <span style=\"color: #99FFFFFF;\">Cryo DMG</span>.\\n·When Citlali's Nightsoul points are fully depleted, Itzpapa's Opal Fire state also ends.\\n\\n<i>Usually, the wills that symbolize different stars cannot coexist, for how can purest black be reflected in purest white?\\nBe that as it may, Citlali has never harbored a particular preference for colors themselves, and that is just how things played out.</i>",
+    "description": "Invoking secret pacts passed down by her tribe over the millennia, Citlali deploys an Opal Shield and calls forth \"Obsidian Tzitzimitl: Itzpapa,\" a creature that is (reputedly) terrifying beyond compare, dealing Nightsoul-aligned <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span>.\\nThe Opal Shield's DMG absorption scales based on Citlali's Elemental Mastery, and absorbs <span style=\"color: #99FFFFFF;\">Cryo DMG</span> with 250% efficiency. When it is deployed, it will cause Citlali to briefly be <span style=\"color: #99FFFFFF;\">affected by Cryo</span>.\\nAfter using this skill, Citlali gains 24 Nightsoul points and enters the Nightsoul's Blessing state.\\n\\n<span style=\"color: #FFD780FF;\">Nightsoul's Blessing: Citlali</span>\\nWhen Itzpapa leaves the field, Citlali exits the Nightsoul's Blessing state.\\n\\n<span style=\"color: #FFD780FF;\">Itzpapa</span>\\n·Itzpapa will follow the character.\\n·If Citlali has at least 50 Nightsoul points, Itzpapa enters the Opal Fire state and continuously consumes Nightsoul points to whip up a Frostfall Storm that follows the character and attacks opponents within its AoE, dealing Nightsoul-aligned <span style=\"color: #99FFFFFF;\">Cryo DMG</span>.\\n·When Citlali's Nightsoul points are fully depleted, Itzpapa's Opal Fire state also ends.\\n\\n<i>Usually, the wills that symbolize different stars cannot coexist, for how can purest black be reflected in purest white?\\nBe that as it may, Citlali has never harbored a particular preference for colors themselves, and that is just how things played out.</i>",
     "skillLabels": [
       "Obsidian Tzitzimitl DMG",
       "Shield DMG Absorption",

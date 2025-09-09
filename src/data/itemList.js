@@ -1824,4 +1824,50 @@ export const itemList = {
     id: 'ascended_sample_knight',
     name: 'Ascended Sample: Knight',
   },
+
+  tattered_warrant: {
+    id: 'tattered_warrant',
+    name: 'Tattered Warrant',
+    rarity: 1,
+  },
+  immaculate_warrant: {
+    id: 'immaculate_warrant',
+    name: 'Immaculate Warrant',
+    rarity: 2,
+  },
+  frost_etched_warrant: {
+    id: 'frost_etched_warrant',
+    name: 'Frost-Etched Warrant',
+    rarity: 3,
+  },
+  moonfall_silver: {
+    id: 'moonfall_silver',
+    name: 'Moonfall Silver',
+  },
+  lightbearing_scale_feather: {
+    id: 'lightbearing_scale_feather',
+    name: 'Lightbearing Scale-Feather',
+    rarity: 4,
+  },
+
+  teachings_of_moonlight: {
+    id: 'teachings_of_moonlight',
+    name: 'Teachings of Moonlight',
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+  },
+  guide_to_moonlight: {
+    id: 'guide_to_moonlight',
+    name: 'Guide to Moonlight',
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'teachings_of_moonlight',
+  },
+  philosophies_of_moonlight: {
+    id: 'philosophies_of_moonlight',
+    name: 'Philosophies of Moonlight',
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'teachings_of_moonlight',
+  },
 };

@@ -100,7 +100,17 @@
     13065.402479600001,
     13159.9622904,
     13254.522101199998,
-    13348.0427932
+    13348.0427932,
+    13442.602604,
+    13537.1624148,
+    13631.7222256,
+    13726.2820364,
+    13821.880966,
+    13916.4407768,
+    14011.000587600001,
+    14106.5995172,
+    14201.159328,
+    14296.758257599999
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     188.4615597,
     189.8255678,
     191.18957589999997,
-    192.53859490000002
+    192.53859490000002,
+    196.87044480000003,
+    201.20229469999998,
+    205.5341446,
+    209.8659945,
+    214.1978444,
+    218.52969430000002,
+    222.86154420000003,
+    227.19339410000003,
+    231.525244,
+    235.8570939
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     488.98239650000005,
     492.521341,
     496.06028549999996,
-    499.56034050000005
+    499.56034050000005,
+    503.099285,
+    506.63822949999997,
+    510.17717400000004,
+    513.7161185,
+    517.2939525,
+    520.832897,
+    524.3718415000001,
+    527.9496755,
+    531.48862,
+    535.066454
   ],
   "hpPercent": [
     0,
@@ -397,6 +427,16 @@
     0.288,
     0.288,
     0.288,
+    0.288,
+    0.288,
+    0.288,
+    0.288,
+    0.288,
+    0.288,
+    0.288,
+    0.288,
+    0.288,
+    0.288,
     0.288
   ],
   "statGrow": "hpPercent",
@@ -437,12 +477,12 @@
     },
     {
       "name": "Emergency Dose",
-      "description": "While underwater, heal your active character over 2.5s when their HP falls under 50%. The amount healed is equal to 50% of their Max HP, and their All Elemental and Physical RES will be decreased by 10% for 10s. This effect can be triggered up to once every 20s."
+      "description": "While underwater, heals your active character over 2.5s when their HP falls under 50%. The amount healed is equal to 50% of their Max HP, and their All Elemental and Physical RES will be decreased by 10% for 10s. This effect can be triggered up to once every 20s."
     }
   ],
   "burst": {
     "name": "Super Saturated Syringing",
-    "description": "Take out a special Fortress of Meropide-made syringe and assault the area in front with waves of kindness and medicine, dealing <span style=\"color: #80C0FFFF;\">AoE Hydro DMG</span> based on Sigewinne's max HP.\\nIn addition, Sigewinne absorbs up to 2 nearby Sourcewater Droplets within a certain range right before using the skill.\\n\\n<i>\"Hey, overdosing on medicine is no different from poison, you know, it's real dangerous! But patients need care and concern, and nobody can overdose on that!\"</i>",
+    "description": "Takes out a special Fortress of Meropide-made syringe and assault the area in front with waves of kindness and medicine, dealing <span style=\"color: #80C0FFFF;\">AoE Hydro DMG</span> based on Sigewinne's max HP.\\nIn addition, Sigewinne absorbs up to 2 nearby Sourcewater Droplets within a certain range when she uses this skill.\\n\\n<i>\"Hey, overdosing on medicine is no different from poison, you know, it's real dangerous! But patients need care and concern, and nobody can overdose on that!\"</i>",
     "skillLabels": [
       "Skill DMG",
       "Duration",
@@ -647,7 +687,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Targeted Treatment",
+    "name": "Targeted Treatment",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 consecutive attacks.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nPerforms a more precise <span style=\"color: #FFD780FF;\">Aimed Shot</span> with increased DMG.\\nWhile aiming, the power of Hydro will continually accumulate on the arrow. After fully charging, Sigewinne will periodically fire slow-moving Mini-Stration Bubbles toward the target, dealing <span style=\"color: #80C0FFFF;\">Hydro DMG</span>. When released, an arrow imbued with torrential energy will deal <span style=\"color: #80C0FFFF;\">Hydro DMG</span> to the opponent hit.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nFires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
@@ -860,10 +900,10 @@
       ],
       [
         [
-          1.1408
+          1.24
         ],
         [
-          1.22636
+          1.333
         ],
         [
           1.426
@@ -872,45 +912,45 @@
           1.55
         ],
         [
-          1.51156
+          1.643
         ],
         [
-          1.59712
+          1.736
         ],
         [
-          1.7112
+          1.86
         ],
         [
-          1.82528
+          1.984
         ],
         [
-          1.93936
+          2.108
         ],
         [
-          2.05344
+          2.232
         ],
         [
-          2.16752
+          2.356
         ],
         [
-          2.2816
+          2.48
         ],
         [
-          2.4242
+          2.635
         ],
         [
-          2.5668
+          2.79
         ],
         [
-          2.7094
+          2.945
         ]
       ],
       [
         [
-          0.22816
+          0.248
         ],
         [
-          0.245272
+          0.2666
         ],
         [
           0.2852
@@ -919,37 +959,37 @@
           0.31
         ],
         [
-          0.302312
+          0.3286
         ],
         [
-          0.319424
+          0.3472
         ],
         [
-          0.34224
+          0.372
         ],
         [
-          0.365056
+          0.3968
         ],
         [
-          0.387872
+          0.4216
         ],
         [
-          0.410688
+          0.4464
         ],
         [
-          0.433504
+          0.4712
         ],
         [
-          0.45632
+          0.496
         ],
         [
-          0.48484
+          0.527
         ],
         [
-          0.51336
+          0.558
         ],
         [
-          0.54188
+          0.589
         ]
       ],
       [

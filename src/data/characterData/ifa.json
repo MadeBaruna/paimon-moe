@@ -100,7 +100,17 @@
     9871.429460300002,
     9940.7383449,
     10010.892459800001,
-    10081.0465747
+    10081.0465747,
+    10150.355459299999,
+    10220.5095742,
+    10289.8184588,
+    10359.9725737,
+    10429.2814583,
+    10499.4355732,
+    10569.5896881,
+    10638.898572700002,
+    10709.0526876,
+    10778.3615722
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     174.70388072000003,
     175.93049575999999,
     177.17206951999998,
-    178.41364328
+    178.41364328,
+    182.96109416000002,
+    187.50854504,
+    192.07095464,
+    196.61840552,
+    201.1658564,
+    205.71330727999998,
+    210.27571687999998,
+    214.82316776,
+    219.37061864,
+    223.93302824
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     592.8084660750001,
     596.9706692249999,
     601.18363095,
-    605.396592675
+    605.396592675,
+    609.558795825,
+    613.77175755,
+    617.9339607,
+    622.146922425,
+    626.3091255749999,
+    630.5220873,
+    634.735049025,
+    638.897252175,
+    643.1102139,
+    647.27241705
   ],
   "em": [
     0,
@@ -397,6 +427,16 @@
     96,
     96,
     96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
+    96,
     96
   ],
   "statGrow": "em",
@@ -429,7 +469,7 @@
   "passives": [
     {
       "name": "Field Medic's Vision",
-      "description": "When Ifa is in the Nightsoul's Blessing state, every 1 Nightsoul point out of the total in his entire party will grant him 1 <span style=\"color: #FFD780FF;\">Rescue Essentials</span> point. Rescue Essentials will increase the Swirl and Electro-Charged DMG dealt by all nearby party members."
+      "description": "When Ifa is in the Nightsoul's Blessing state, every 1 Nightsoul point out of the total in his entire party will grant him 1 <span style=\"color: #FFD780FF;\">Rescue Essentials</span> point. Rescue Essentials will increase the Swirl, Electro-Charged, and Lunar-Charged DMG dealt by nearby party members."
     },
     {
       "name": "Mutual Aid Agreement",
@@ -652,7 +692,7 @@
   },
   "attack": {
     "name": "Rite of Dispelling Winds",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 attacks, dealing <span style=\"color: #80FFD7FF;\">Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina and fires off a shot, dealing <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges towards the ground from mid-air, damaging all opponents along the path. Deals <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span> upon impact with the ground.undefined",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 attacks, dealing <span style=\"color: #80FFD7FF;\">Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina and fires off a shot, dealing <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges towards the ground from mid-air, damaging all opponents along the path. Deals <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span> upon impact with the ground.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

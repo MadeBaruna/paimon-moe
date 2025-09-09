@@ -100,7 +100,17 @@
     12154.4205555,
     12242.387207,
     12330.3538585,
-    12417.353843500001
+    12417.353843500001,
+    12505.320495,
+    12593.2871465,
+    12681.253798000002,
+    12769.2204495,
+    12858.153767500002,
+    12946.120419,
+    13034.087070500002,
+    13123.020388500001,
+    13210.987040000002,
+    13299.920358
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     351.17061,
     353.71223999999995,
     356.25387,
-    358.76757
+    358.76757,
+    366.83934,
+    374.91111,
+    382.98287999999997,
+    391.05465,
+    399.12642,
+    407.19819,
+    415.26996,
+    423.34173,
+    431.4135,
+    439.48526999999996
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     789.1423598900001,
     794.8536718600001,
     800.5649838300001,
-    806.21353413
+    806.21353413,
+    811.9248461,
+    817.63615807,
+    823.34747004,
+    829.05878201,
+    834.83285565,
+    840.54416762,
+    846.25547959,
+    852.0295532299999,
+    857.7408652000001,
+    863.51493884
   ],
   "critDamage": [
     0.5,
@@ -387,6 +417,16 @@
     0.788,
     0.788,
     0.788,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
+    0.884,
     0.884,
     0.884,
     0.884,
@@ -742,7 +782,7 @@
   },
   "attack": {
     "name": "Havoc: Sunder",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 5 consecutive attacks.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.undefined",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 5 consecutive attacks.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to hurl a spinning crystal spear, dealing DMG to opponents ahead.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

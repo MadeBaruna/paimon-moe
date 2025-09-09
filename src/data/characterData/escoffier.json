@@ -100,7 +100,17 @@
     13065.402479600001,
     13159.9622904,
     13254.522101199998,
-    13348.0427932
+    13348.0427932,
+    13442.602604,
+    13537.1624148,
+    13631.7222256,
+    13726.2820364,
+    13821.880966,
+    13916.4407768,
+    14011.000587600001,
+    14106.5995172,
+    14201.159328,
+    14296.758257599999
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     339.464923,
     341.921832,
     344.378741,
-    346.808651
+    346.808651,
+    354.611362,
+    362.414073,
+    370.216784,
+    378.019495,
+    385.822206,
+    393.62491700000004,
+    401.427628,
+    409.230339,
+    417.03305,
+    424.835761
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     716.17114072,
     721.35433328,
     726.53752584,
-    731.66376024
+    731.66376024,
+    736.8469527999999,
+    742.03014536,
+    747.21333792,
+    752.3965304799999,
+    757.6366812,
+    762.81987376,
+    768.00306632,
+    773.2432170399999,
+    778.4264095999999,
+    783.6665603199999
   ],
   "critRate": [
     0.05,
@@ -397,6 +427,16 @@
     0.242,
     0.242,
     0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
+    0.242,
     0.242
   ],
   "statGrow": "critRate",
@@ -437,7 +477,7 @@
     },
     {
       "name": "Constant Off-the-Cuff Cookery",
-      "description": "When using the Hold form of her Elemental Skill <span style=\"color: #FFD780FF;\">Low-Temperature Cooking</span>, Escoffier will activate her All-Spectrum Multi-Use Cooking Mek in its Off-the-Cuff Cookery mode.\\n\\n<span style=\"color: #FFD780FF;\">Cooking Mek: Off-the-Cuff Cookery Mode</span>\\n· Places the Cooking Mek on the field. The Cooking Mek can absorb elemental attacks. When the absorbed elemental energy hits a certain limit, Escoffier can convert the ingredients placed within it into wonderful food.\\n· Escoffier needs time to purchase new ingredients, so she can only make a certain number of dishes like this each week. The number of dishes Escoffier can make resets every Monday at 4:00 AM."
+      "description": "#When using the Hold form of her Elemental Skill <span style=\"color: #FFD780FF;\">Low-Temperature Cooking</span>, Escoffier will activate her All-Spectrum Multi-Use Cooking Mek in its Off-the-Cuff Cookery mode.\\n\\n<span style=\"color: #FFD780FF;\">Cooking Mek: Off-the-Cuff Cookery Mode</span>\\n· Places the Cooking Mek on the field. The Cooking Mek can absorb elemental attacks. When the absorbed elemental energy hits a certain limit, Escoffier can convert the ingredients placed within it into wonderful food.\\n· Escoffier needs time to purchase new ingredients, so she can only make a certain number of dishes like this each week. The number of dishes Escoffier can make resets every Monday at 4:00 AM {TIMEZONE}."
     }
   ],
   "burst": {
@@ -663,7 +703,7 @@
   },
   "attack": {
     "name": "Kitchen Skills",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 consecutive spear strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to perform an upward thrust.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.undefined",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 consecutive spear strikes.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina to perform an upward thrust.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nPlunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

@@ -100,7 +100,17 @@
     12466.072057600002,
     12556.294262399999,
     12646.5164672,
-    12735.747219200002
+    12735.747219200002,
+    12825.969423999999,
+    12916.1916288,
+    13006.4138336,
+    13096.6360384,
+    13187.849696000001,
+    13278.071900800001,
+    13368.294105600002,
+    13459.5077632,
+    13549.729968,
+    13640.9436256
   ],
   "atk": [
     null,
@@ -199,7 +209,17 @@
     210.70236599999998,
     212.22734400000002,
     213.752322,
-    215.260542
+    215.260542,
+    220.10360400000002,
+    224.946666,
+    229.78972799999997,
+    234.63279,
+    239.47585199999997,
+    244.318914,
+    249.16197599999998,
+    254.005038,
+    258.8481,
+    263.69116199999996
   ],
   "def": [
     null,
@@ -298,7 +318,17 @@
     740.9964008500001,
     746.3592629,
     751.72212495,
-    757.0260544500001
+    757.0260544500001,
+    762.3889165,
+    767.7517785499999,
+    773.1146406,
+    778.47750265,
+    783.89929725,
+    789.2621593,
+    794.62502135,
+    800.04681595,
+    805.409678,
+    810.8314726
   ],
   "em": [
     0,
@@ -387,6 +417,16 @@
     86.4,
     86.4,
     86.4,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
+    115.2,
     115.2,
     115.2,
     115.2,
@@ -760,7 +800,7 @@
     ]
   },
   "attack": {
-    "name": "Normal Attack: Pure Heart, Pure Dreams",
+    "name": "Pure Heart, Pure Dreams",
     "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 3 attacks, dealing <span style=\"color: #80FFD7FF;\">Anemo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nConsumes a certain amount of Stamina and deals <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span> after a short casting time.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nCalling upon the power of Anemo, she plunges towards the ground from mid-air, damaging all opponents in her path. Deals <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span> upon impact with the ground.",
     "skillLabels": [
       "1-Hit DMG",

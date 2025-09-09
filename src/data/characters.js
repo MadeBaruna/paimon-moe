@@ -5666,7 +5666,6 @@ export const characters = {
       boss: itemList.eroded_sunfire,
     },
     element: elements.electro,
-    new: true,
   },
   jean: {
     id: 'jean',
@@ -7701,6 +7700,152 @@ export const characters = {
       boss: itemList.eroded_sunfire,
     },
     element: elements.anemo,
+  },
+  lauma: {
+    id: 'lauma',
+    name: 'Lauma',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 10654,
+      atk: 255,
+      def: 669,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 3,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 2,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 10,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 4,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 20,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 8,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 30,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 12,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 45,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 20,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 60,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.tattered_warrant, itemList.immaculate_warrant, itemList.frost_etched_warrant],
+      book: [itemList.teachings_of_moonlight, itemList.guide_to_moonlight, itemList.philosophies_of_moonlight],
+      boss: itemList.eroded_scale_feather,
+    },
+    element: elements.dendro,
+    new: true,
   },
   layla: {
     id: 'layla',

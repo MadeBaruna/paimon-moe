@@ -9,7 +9,7 @@
     isHovered = true;
     const pos = ref.getBoundingClientRect();
     x = pos.x;
-    y = pos.y + 30;
+    y = pos.bottom + 3;
   }
   function mouseLeave() {
     isHovered = false;
