@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    mualani: {
-      name: 'Mualani',
+    lauma: {
+      name: 'Lauma',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    chasca: {
-      name: 'Chasca',
+    nahida: {
+      name: 'Nahida',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300087;
-  const image = 'mualani chasca.png';
+  const bannerId = 300088;
+  const image = 'lauma nahida.png';
   const width = 800;
-  const height = 373;
+  const height = 390;
 
   let loading = true;
   let user = '';

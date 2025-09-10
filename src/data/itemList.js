@@ -1853,20 +1853,20 @@ export const itemList = {
   teachings_of_moonlight: {
     id: 'teachings_of_moonlight',
     name: 'Teachings of Moonlight',
-    day: ['wednesday', 'saturday'],
+    day: ['monday', 'thursday'],
     rarity: 2,
   },
   guide_to_moonlight: {
     id: 'guide_to_moonlight',
     name: 'Guide to Moonlight',
-    day: ['wednesday', 'saturday'],
+    day: ['monday', 'thursday'],
     rarity: 3,
     parent: 'teachings_of_moonlight',
   },
   philosophies_of_moonlight: {
     id: 'philosophies_of_moonlight',
     name: 'Philosophies of Moonlight',
-    day: ['wednesday', 'saturday'],
+    day: ['monday', 'thursday'],
     rarity: 4,
     parent: 'teachings_of_moonlight',
   },
