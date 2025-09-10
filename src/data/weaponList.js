@@ -16763,4 +16763,230 @@ export const weaponList = {
       },
     ],
   },
+  nightweavers_looking_glass: {
+    id: 'nightweavers_looking_glass',
+    name: "Nightweaver's Looking Glass",
+    rarity: 5,
+    atk: 44,
+    secondary: 'Elemental Mastery',
+    type: weapons.catalyst,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.artful_device_fragment,
+            amount: 5,
+          },
+          {
+            item: itemList.frostnights_glimmer,
+            amount: 5,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_replica,
+            amount: 5,
+          },
+          {
+            item: itemList.frostnights_glimmer,
+            amount: 18,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_replica,
+            amount: 9,
+          },
+          {
+            item: itemList.frostnights_glow,
+            amount: 9,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_inheritance,
+            amount: 5,
+          },
+          {
+            item: itemList.frostnights_glow,
+            amount: 18,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_inheritance,
+            amount: 9,
+          },
+          {
+            item: itemList.frostnights_glory,
+            amount: 14,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_wish,
+            amount: 6,
+          },
+          {
+            item: itemList.frostnights_glory,
+            amount: 27,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  etherlight_spindlelute: {
+    id: 'etherlight_spindlelute',
+    name: 'Etherlight Spindlelute',
+    rarity: 4,
+    atk: 42,
+    secondary: 'Energy Recharge',
+    type: weapons.catalyst,
+    source: 'Event',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.sundered_glory_of_the_far_north_scions,
+            amount: 3,
+          },
+          {
+            item: itemList.lightless_bone,
+            amount: 3,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.unyielding_delusion_of_the_far_north_scions,
+            amount: 3,
+          },
+          {
+            item: itemList.lightless_bone,
+            amount: 12,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.unyielding_delusion_of_the_far_north_scions,
+            amount: 6,
+          },
+          {
+            item: itemList.glowing_remains,
+            amount: 6,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oblation_of_the_far_north_scions,
+            amount: 3,
+          },
+          {
+            item: itemList.glowing_remains,
+            amount: 12,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oblation_of_the_far_north_scions,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_exoskeleton,
+            amount: 9,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.aureate_radiance_of_the_far_north_scions,
+            amount: 4,
+          },
+          {
+            item: itemList.radiant_exoskeleton,
+            amount: 18,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };

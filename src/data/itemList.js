@@ -1870,4 +1870,104 @@ export const itemList = {
     rarity: 4,
     parent: 'teachings_of_moonlight',
   },
+  sundered_glory_of_the_far_north_scions: {
+    id: 'sundered_glory_of_the_far_north_scions',
+    name: 'Sundered Glory of the Far-North Scions',
+    rarity: 2,
+  },
+  lightless_bone: {
+    id: 'lightless_bone',
+    name: 'Lightless Bone',
+    rarity: 2,
+  },
+  tattered_warrant: {
+    id: 'tattered_warrant',
+    name: 'Tattered Warrant',
+    rarity: 1,
+  },
+  unyielding_delusion_of_the_far_north_scions: {
+    id: 'unyielding_delusion_of_the_far_north_scions',
+    name: 'Unyielding Delusion of the Far-North Scions',
+    rarity: 3,
+  },
+  glowing_remains: {
+    id: 'glowing_remains',
+    name: 'Glowing Remains',
+    rarity: 3,
+  },
+  immaculate_warrant: {
+    id: 'immaculate_warrant',
+    name: 'Immaculate Warrant',
+    rarity: 2,
+  },
+  oblation_of_the_far_north_scions: {
+    id: 'oblation_of_the_far_north_scions',
+    name: 'Oblation of the Far-North Scions',
+    rarity: 4,
+  },
+  radiant_exoskeleton: {
+    id: 'radiant_exoskeleton',
+    name: 'Radiant Exoskeleton',
+    rarity: 4,
+  },
+  frost_etched_warrant: {
+    id: 'frost_etched_warrant',
+    name: 'Frost-Etched Warrant',
+    rarity: 3,
+  },
+  aureate_radiance_of_the_far_north_scions: {
+    id: 'aureate_radiance_of_the_far_north_scions',
+    name: 'Aureate Radiance of the Far-North Scions',
+    rarity: 5,
+  },
+  artful_device_fragment: {
+    id: 'artful_device_fragment',
+    name: 'Artful Device Fragment',
+    rarity: 2,
+  },
+  frostnights_glimmer: {
+    id: 'frostnights_glimmer',
+    name: "Frostnight's Glimmer",
+    rarity: 2,
+  },
+  broken_drive_shaft: {
+    id: 'broken_drive_shaft',
+    name: 'Broken Drive Shaft',
+    rarity: 1,
+  },
+  artful_device_replica: {
+    id: 'artful_device_replica',
+    name: 'Artful Device Replica',
+    rarity: 3,
+  },
+  frostnights_glow: {
+    id: 'frostnights_glow',
+    name: "Frostnight's Glow",
+    rarity: 3,
+  },
+  reinforced_drive_shaft: {
+    id: 'reinforced_drive_shaft',
+    name: 'Reinforced Drive Shaft',
+    rarity: 2,
+  },
+  artful_device_inheritance: {
+    id: 'artful_device_inheritance',
+    name: 'Artful Device Inheritance',
+    rarity: 4,
+  },
+  frostnights_glory: {
+    id: 'frostnights_glory',
+    name: "Frostnight's Glory",
+    rarity: 4,
+  },
+  precision_drive_shaft: {
+    id: 'precision_drive_shaft',
+    name: 'Precision Drive Shaft',
+    rarity: 3,
+  },
+  artful_device_wish: {
+    id: 'artful_device_wish',
+    name: 'Artful Device Wish',
+    rarity: 5,
+  },
 };
