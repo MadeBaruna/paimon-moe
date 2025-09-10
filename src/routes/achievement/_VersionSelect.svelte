@@ -56,6 +56,8 @@
     '5.5',
     '5.6',
     '5.7',
+    '5.8',
+    '6.0',
   ].reduce((acc, version) => {
     const parent = version.split('.')[0];
     if (!acc[parent]) acc[parent] = [];
@@ -125,7 +127,7 @@
       transition:fade={{ duration: 100 }}
       class="bg-item rounded-2xl absolute mt-2 py-2 px-2 w-full z-50 flex gap-2 flex-col text-white shadow-xl border border-background"
     >
-      <div class="flex gap-1">
+      <div class="grid grid-cols-3 gap-1">
         {#each options as [parent], index}
           <button
             on:click={() => selectParent(index)}
