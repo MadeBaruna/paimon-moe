@@ -16989,4 +16989,117 @@ export const weaponList = {
       },
     ],
   },
+  bloodsoaked_ruins: {
+    id: 'bloodsoaked_ruins',
+    name: 'Bloodsoaked Ruins',
+    rarity: 5,
+    atk: 48,
+    secondary: 'CRIT Rate',
+    type: weapons.polearm,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.ember_of_long_night_flint,
+            amount: 5,
+          },
+          {
+            item: itemList.mistshroud_manifestation,
+            amount: 5,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.afterglow_of_long_night_flint,
+            amount: 5,
+          },
+          {
+            item: itemList.mistshroud_manifestation,
+            amount: 18,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.afterglow_of_long_night_flint,
+            amount: 9,
+          },
+          {
+            item: itemList.mistshroud_plate,
+            amount: 9,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.flare_of_long_night_flint,
+            amount: 5,
+          },
+          {
+            item: itemList.mistshroud_plate,
+            amount: 18,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.flare_of_long_night_flint,
+            amount: 9,
+          },
+          {
+            item: itemList.mistshroud_helmet,
+            amount: 14,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blaze_of_long_night_flint,
+            amount: 6,
+          },
+          {
+            item: itemList.mistshroud_helmet,
+            amount: 27,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

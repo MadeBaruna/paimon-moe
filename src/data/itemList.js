@@ -1880,11 +1880,6 @@ export const itemList = {
     name: 'Lightless Bone',
     rarity: 2,
   },
-  tattered_warrant: {
-    id: 'tattered_warrant',
-    name: 'Tattered Warrant',
-    rarity: 1,
-  },
   unyielding_delusion_of_the_far_north_scions: {
     id: 'unyielding_delusion_of_the_far_north_scions',
     name: 'Unyielding Delusion of the Far-North Scions',
@@ -2023,5 +2018,40 @@ export const itemList = {
   portable_bearing: {
     id: 'portable_bearing',
     name: 'Portable Bearing',
+  },
+  ember_of_long_night_flint: {
+    id: 'ember_of_long_night_flint',
+    name: 'Ember of Long Night Flint',
+    rarity: 2,
+  },
+  mistshroud_manifestation: {
+    id: 'mistshroud_manifestation',
+    name: 'Mistshroud Manifestation',
+    rarity: 2,
+  },
+  afterglow_of_long_night_flint: {
+    id: 'afterglow_of_long_night_flint',
+    name: 'Afterglow of Long Night Flint',
+    rarity: 3,
+  },
+  mistshroud_plate: {
+    id: 'mistshroud_plate',
+    name: 'Mistshroud Plate',
+    rarity: 3,
+  },
+  flare_of_long_night_flint: {
+    id: 'flare_of_long_night_flint',
+    name: 'Flare of Long Night Flint',
+    rarity: 4,
+  },
+  mistshroud_helmet: {
+    id: 'mistshroud_helmet',
+    name: 'Mistshroud Helmet',
+    rarity: 4,
+  },
+  blaze_of_long_night_flint: {
+    id: 'blaze_of_long_night_flint',
+    name: 'Blaze of Long Night Flint',
+    rarity: 5,
   },
 };
