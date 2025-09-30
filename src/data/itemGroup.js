@@ -396,6 +396,16 @@ export const itemGroup = {
     items: [itemList.teachings_of_moonlight, itemList.guide_to_moonlight, itemList.philosophies_of_moonlight],
     type: 'book',
   },
+  teachings_of_vagrancy: {
+    name: 'Vagrancy',
+    items: [itemList.teachings_of_vagrancy, itemList.guide_to_vagrancy, itemList.philosophies_of_vagrancy],
+    type: 'book',
+  },
+  teachings_of_elysium: {
+    name: 'Elysium',
+    items: [itemList.teachings_of_elysium, itemList.guide_to_elysium, itemList.philosophies_of_elysium],
+    type: 'book',
+  },
   shard_of_a_shattered_will: {
     name: 'Will',
     items: [itemList.shard_of_a_shattered_will, itemList.locus_of_a_clear_will, itemList.sigil_of_a_striding_will],

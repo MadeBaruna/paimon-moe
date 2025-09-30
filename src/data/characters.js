@@ -4,6 +4,152 @@ import { elements } from './elements';
 import { weapons } from './weapons';
 
 export const characters = {
+  aino: {
+    id: 'aino',
+    name: 'Aino',
+    rarity: 4,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 11201,
+      atk: 242,
+      def: 607,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 3,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 2,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 10,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 4,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 20,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 8,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 30,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 12,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 45,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.varunada_lazurite_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 20,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 60,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.broken_drive_shaft, itemList.reinforced_drive_shaft, itemList.precision_drive_shaft],
+      book: [itemList.teachings_of_elysium, itemList.guide_to_elysium, itemList.philosophies_of_elysium],
+      boss: itemList.silken_feather,
+    },
+    element: elements.hydro,
+    new: true,
+  },
   albedo: {
     id: 'albedo',
     name: 'Albedo',
@@ -4354,6 +4500,152 @@ export const characters = {
     },
     element: elements.electro,
   },
+  flins: {
+    id: 'flins',
+    name: 'Flins',
+    rarity: 5,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 12491,
+      atk: 352,
+      def: 809,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 3,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 2,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 10,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 4,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 20,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 8,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 30,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 12,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 45,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.precision_kuuvahki_stamping_die,
+            amount: 20,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 60,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.broken_drive_shaft, itemList.reinforced_drive_shaft, itemList.precision_drive_shaft],
+      book: [itemList.teachings_of_vagrancy, itemList.guide_to_vagrancy, itemList.philosophies_of_vagrancy],
+      boss: itemList.ascended_sample_queen,
+    },
+    element: elements.electro,
+    new: true,
+  },
   freminet: {
     id: 'freminet',
     name: 'Freminet',
@@ -4499,6 +4791,7 @@ export const characters = {
     },
     element: elements.cryo,
   },
+
   furina: {
     id: 'furina',
     name: 'Furina',

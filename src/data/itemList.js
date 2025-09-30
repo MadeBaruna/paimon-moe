@@ -1970,4 +1970,58 @@ export const itemList = {
     name: 'Artful Device Wish',
     rarity: 5,
   },
+  precision_kuuvahki_stamping_die: {
+    id: 'precision_kuuvahki_stamping_die',
+    name: 'Precision Kuuvahki Stamping Die',
+    rarity: 4,
+  },
+  frostlamp_flower: {
+    id: 'frostlamp_flower',
+    name: 'Frostlamp Flower',
+  },
+  teachings_of_elysium: {
+    id: 'teachings_of_elysium',
+    name: 'Teachings of Elysium',
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+  },
+  guide_to_elysium: {
+    id: 'guide_to_elysium',
+    name: 'Guide to Elysium',
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'teachings_of_elysium',
+  },
+  philosophies_of_elysium: {
+    id: 'philosophies_of_elysium',
+    name: 'Philosophies of Elysium',
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'teachings_of_elysium',
+  },
+  teachings_of_vagrancy: {
+    id: 'teachings_of_vagrancy',
+    name: 'Teachings of Vagrancy',
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+  },
+  guide_to_vagrancy: {
+    id: 'guide_to_vagrancy',
+    name: 'Guide to Vagrancy',
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'teachings_of_vagrancy',
+  },
+  philosophies_of_vagrancy: {
+    id: 'philosophies_of_vagrancy',
+    name: 'Philosophies of Vagrancy',
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'teachings_of_vagrancy',
+  },
+  ascended_sample_queen: { id: 'ascended_sample_queen', name: 'Ascended Sample: Queen' },
+  portable_bearing: {
+    id: 'portable_bearing',
+    name: 'Portable Bearing',
+  },
 };
