@@ -1553,4 +1553,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'The Lone Light Knocks at Night 1': [
+    {
+      name: 'The Lone Light Knocks at Night',
+      image: 1,
+      shortName: 'Flins',
+      start: '2025-09-30 18:00:00',
+      end: '2025-10-21 17:59:00',
+      color: '#84a3fb',
+      featured: ['flins', 'yelan'],
+      featuredRare: ['aino', 'sucrose', 'dori'],
+      version: '6.0',
+    },
+    {
+      name: 'Discerner of Enigmas',
+      image: 5,
+      shortName: 'Yelan',
+      start: '2025-09-30 18:00:00',
+      end: '2025-10-21 17:59:00',
+      color: '#84a3fb',
+      featured: ['flins', 'yelan'],
+      featuredRare: ['aino', 'sucrose', 'dori'],
+      version: '6.0',
+    },
+  ],
 };

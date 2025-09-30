@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    lauma: {
-      name: 'Lauma',
+    yelan: {
+      name: 'Yelan',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    nahida: {
-      name: 'Nahida',
+    flins: {
+      name: 'Flins',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300088;
-  const image = 'lauma nahida.png';
+  const bannerId = 300089;
+  const image = 'yelan flins.png';
   const width = 800;
-  const height = 390;
+  const height = 415;
 
   let loading = true;
   let user = '';
