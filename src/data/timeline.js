@@ -134,6 +134,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'The Lone Light Knocks at Night - Flins Banner',
+      pos: '15% 10%',
+      zoom: '200%',
+      image: 'The Lone Light Knocks at Night 1.png',
+      start: '2025-09-30 18:00:00',
+      end: '2025-10-21 17:59:00',
+      color: '#84a3fb',
+      url: 'https://www.hoyolab.com/article/41345237',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -171,6 +182,17 @@ export const eventsData = [
       showOnHome: true,
       timezoneDependent: true,
     },
+    {
+      name: 'Discerner of Enigmas - Yelan Banner',
+      pos: '15% 17%',
+      zoom: '200%',
+      image: 'Discerner of Enigmas 5.png',
+      start: '2025-09-30 18:00:00',
+      end: '2025-10-21 17:59:00',
+      color: '#7de6fd',
+      url: 'https://www.hoyolab.com/article/41345237',
+      showOnHome: true,
+    },
   ],
   [
     {
@@ -207,6 +229,17 @@ export const eventsData = [
       url: 'https://www.hoyolab.com/article/40226689',
       showOnHome: true,
       timezoneDependent: true,
+    },
+    {
+      name: 'Epitome Invocation - Weapon Banner',
+      pos: '30% 17%',
+      zoom: '200%',
+      image: 'Epitome Invocation 88.png',
+      start: '2025-09-30 18:00:00',
+      end: '2025-10-21 17:59:00',
+      color: '#FFAA4B',
+      url: 'https://www.hoyolab.com/article/41345237',
+      showOnHome: true,
     },
   ],
   [
@@ -266,6 +299,26 @@ export const eventsData = [
       description:
         "When a character triggers Hydro-related reactions (including Lunar-Charged), a shockwave will be released at the opponent's position, dealing True DMG. This effect can be triggered once every 3s.",
     },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2025-09-16 04:00:00',
+      end: '2025-10-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character triggers Hydro-related reactions, a shockwave will be released at the opponent's position, dealing True DMG. This effect can be triggered once every 2s.",
+    },
+    {
+      name: 'Spiral Abyss',
+      image: 'spiral_abyss.jpg',
+      pos: '50% 20%',
+      start: '2025-10-16 04:00:00',
+      end: '2025-11-16 04:00:00',
+      color: '#4299E1',
+      description:
+        "When a character triggers Dendro-related reactions, a shockwave will be released at the opponent's position, dealing True DMG. This effect can be triggered once every 3s.",
+    },
   ],
   [
     {
@@ -287,6 +340,16 @@ export const eventsData = [
       color: '#777df3',
       description:
         'Required Elemental Types: Pyro, Hydro, and Dendro. Opening Characters: Hu Tao, Thoma, Nilou, Xingqiu, Baizhu, and Collei',
+    },
+    {
+      name: 'Imaginarium Theater',
+      image: 'Imaginarium Theater tmp.png',
+      pos: '0% 70%',
+      start: '2025-10-01 04:00:00',
+      end: '2025-11-01 04:00:00',
+      color: '#777df3',
+      description:
+        'Required Elemental Types: Hydro, Electro, and Geo. Opening Characters: Yelan, Aino, Varesa, Iansan, Arataki Itto, and Gorou',
     },
   ],
   [
