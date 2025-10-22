@@ -17102,4 +17102,456 @@ export const weaponList = {
       },
     ],
   },
+  reliquary_of_truth: {
+    id: 'reliquary_of_truth',
+    name: 'Reliquary of Truth',
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.catalyst,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_reminiscence,
+            amount: 5,
+          },
+          {
+            item: itemList.lightless_bone,
+            amount: 5,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 5,
+          },
+          {
+            item: itemList.lightless_bone,
+            amount: 18,
+          },
+          {
+            item: itemList.fungal_spores,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_kindness,
+            amount: 9,
+          },
+          {
+            item: itemList.glowing_remains,
+            amount: 9,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 5,
+          },
+          {
+            item: itemList.glowing_remains,
+            amount: 18,
+          },
+          {
+            item: itemList.luminescent_pollen,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_mourning,
+            amount: 9,
+          },
+          {
+            item: itemList.radiant_exoskeleton,
+            amount: 14,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oasis_gardens_truth,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_exoskeleton,
+            amount: 27,
+          },
+          {
+            item: itemList.crystalline_cyst_dust,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  dawning_frost: {
+    id: 'dawning_frost',
+    name: 'Dawning Frost',
+    rarity: 4,
+    atk: 42,
+    secondary: 'CRIT DMG',
+    type: weapons.catalyst,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.artful_device_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.frostnights_glimmer,
+            amount: 3,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_replica,
+            amount: 3,
+          },
+          {
+            item: itemList.frostnights_glimmer,
+            amount: 12,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_replica,
+            amount: 6,
+          },
+          {
+            item: itemList.frostnights_glow,
+            amount: 6,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_inheritance,
+            amount: 3,
+          },
+          {
+            item: itemList.frostnights_glow,
+            amount: 12,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_inheritance,
+            amount: 6,
+          },
+          {
+            item: itemList.frostnights_glory,
+            amount: 9,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_wish,
+            amount: 4,
+          },
+          {
+            item: itemList.frostnights_glory,
+            amount: 18,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  moonweavers_dawn: {
+    id: 'moonweavers_dawn',
+    name: "Moonweaver's Dawn",
+    rarity: 4,
+    atk: 44,
+    secondary: 'ATK%',
+    type: weapons.sword,
+    source: 'World Quest & Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.sundered_glory_of_the_far_north_scions,
+            amount: 3,
+          },
+          {
+            item: itemList.lightless_bone,
+            amount: 3,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.unyielding_delusion_of_the_far_north_scions,
+            amount: 3,
+          },
+          {
+            item: itemList.lightless_bone,
+            amount: 12,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.unyielding_delusion_of_the_far_north_scions,
+            amount: 6,
+          },
+          {
+            item: itemList.glowing_remains,
+            amount: 6,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oblation_of_the_far_north_scions,
+            amount: 3,
+          },
+          {
+            item: itemList.glowing_remains,
+            amount: 12,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.oblation_of_the_far_north_scions,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_exoskeleton,
+            amount: 9,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.aureate_radiance_of_the_far_north_scions,
+            amount: 4,
+          },
+          {
+            item: itemList.radiant_exoskeleton,
+            amount: 18,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
+  sacrificers_staff: {
+    id: 'sacrificers_staff',
+    name: "Sacrificer's Staff",
+    rarity: 4,
+    atk: 45,
+    secondary: 'CRIT Rate',
+    type: weapons.polearm,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.ember_of_long_night_flint,
+            amount: 3,
+          },
+          {
+            item: itemList.mistshroud_manifestation,
+            amount: 3,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.afterglow_of_long_night_flint,
+            amount: 3,
+          },
+          {
+            item: itemList.mistshroud_manifestation,
+            amount: 12,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.afterglow_of_long_night_flint,
+            amount: 6,
+          },
+          {
+            item: itemList.mistshroud_plate,
+            amount: 6,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.flare_of_long_night_flint,
+            amount: 3,
+          },
+          {
+            item: itemList.mistshroud_plate,
+            amount: 12,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.flare_of_long_night_flint,
+            amount: 6,
+          },
+          {
+            item: itemList.mistshroud_helmet,
+            amount: 9,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.blaze_of_long_night_flint,
+            amount: 4,
+          },
+          {
+            item: itemList.mistshroud_helmet,
+            amount: 18,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };
