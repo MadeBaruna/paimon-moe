@@ -148,7 +148,6 @@ export const characters = {
       boss: itemList.silken_feather,
     },
     element: elements.hydro,
-    new: true,
   },
   albedo: {
     id: 'albedo',
@@ -4644,7 +4643,6 @@ export const characters = {
       boss: itemList.ascended_sample_queen,
     },
     element: elements.electro,
-    new: true,
   },
   freminet: {
     id: 'freminet',
@@ -8138,7 +8136,6 @@ export const characters = {
       boss: itemList.eroded_scale_feather,
     },
     element: elements.dendro,
-    new: true,
   },
   layla: {
     id: 'layla',
@@ -9597,6 +9594,152 @@ export const characters = {
       boss: itemList.lightless_silk_string,
     },
     element: elements.geo,
+  },
+  nefer: {
+    id: 'nefer',
+    name: 'Nefer',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 12704,
+      atk: 344,
+      def: 799,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 3,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.radiant_antler,
+            amount: 2,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 10,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_antler,
+            amount: 4,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 20,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.radiant_antler,
+            amount: 8,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 30,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_antler,
+            amount: 12,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 45,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.nagadus_emerald_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_antler,
+            amount: 20,
+          },
+          {
+            item: itemList.moonfall_silver,
+            amount: 60,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.tattered_warrant, itemList.immaculate_warrant, itemList.frost_etched_warrant],
+      book: [itemList.teachings_of_elysium, itemList.guide_to_elysium, itemList.philosophies_of_elysium],
+      boss: itemList.ascended_sample_rook,
+    },
+    element: elements.dendro,
+    new: true,
   },
   neuvillette: {
     id: 'neuvillette',

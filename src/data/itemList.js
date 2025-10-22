@@ -2054,4 +2054,9 @@ export const itemList = {
     name: 'Blaze of Long Night Flint',
     rarity: 5,
   },
+  radiant_antler: {
+    id: 'radiant_antler',
+    name: 'Radiant Antler',
+    rarity: 4,
+  },
 };
