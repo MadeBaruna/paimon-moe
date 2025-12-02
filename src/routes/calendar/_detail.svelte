@@ -5,6 +5,8 @@
   import { onMount } from 'svelte';
 
   import { bannersDual } from '../../data/bannersDual';
+  import { characters } from '../../data/characters';
+  import { weaponList } from '../../data/weaponList';
 
   export let type;
   export let event;
@@ -51,6 +53,37 @@
   <h1 class="text-white font-display font-semibold text-xl">{event.name}</h1>
   {#if banner2}
     <h1 class="text-white font-display font-semibold text-xl mb-2">{banner2.name}</h1>
+  {/if}
+  {#if type === 'banners'}
+    <div class="pb-2 flex-wrap flex gap-1">
+      {#if event.name === 'Epitome Invocation'}
+        {#each event.featured as weapon}
+          <span class="bg-legendary-to rounded-xl px-2 inline-block text-white">
+            <img class="w-6 h-6 inline" src="/images/weapons/{weapon}.png" alt={weapon} />
+            <span>{$t(weaponList[weapon].name)}</span>
+          </span>
+        {/each}
+        {#each event.featuredRare as weapon}
+          <span class="bg-rare-to rounded-xl px-2 inline-block text-white">
+            <img class="w-6 h-6 inline" src="/images/weapons/{weapon}.png" alt={weapon} />
+            <span>{$t(weaponList[weapon].name)}</span>
+          </span>
+        {/each}
+      {:else}
+        {#each event.featured as char}
+          <span class="bg-legendary-to rounded-xl px-2 inline-block text-white">
+            <img class="w-6 h-6 inline" src="/images/characters/{char}.png" alt={char} />
+            <span>{$t(characters[char].name)}</span>
+          </span>
+        {/each}
+        {#each event.featuredRare as char}
+          <span class="bg-rare-to rounded-xl px-2 inline-block text-white">
+            <img class="w-6 h-6 inline" src="/images/characters/{char}.png" alt={char} />
+            <span>{$t(characters[char].name)}</span>
+          </span>
+        {/each}
+      {/if}
+    </div>
   {/if}
   <p class="text-gray-400 font-body flex flex-col md:flex-row">
     <span class="flex">

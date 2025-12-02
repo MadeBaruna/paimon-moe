@@ -2059,4 +2059,9 @@ export const itemList = {
     name: 'Radiant Antler',
     rarity: 4,
   },
+  cyclic_military_kuuvahki_core: {
+    id: 'cyclic_military_kuuvahki_core',
+    name: 'Cyclic Military Kuuvahki Core',
+    rarity: 4,
+  },
 };

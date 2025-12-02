@@ -17554,4 +17554,343 @@ export const weaponList = {
       },
     ],
   },
+  athame_artis: {
+    id: 'athame_artis',
+    name: 'Athame Artis',
+    rarity: 5,
+    atk: 46,
+    secondary: 'CRIT Rate',
+    type: weapons.sword,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.tile_of_decarabians_tower,
+            amount: 5,
+          },
+          {
+            item: itemList.frostnights_glimmer,
+            amount: 5,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.debris_of_decarabians_city,
+            amount: 5,
+          },
+          {
+            item: itemList.frostnights_glimmer,
+            amount: 18,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.debris_of_decarabians_city,
+            amount: 9,
+          },
+          {
+            item: itemList.frostnights_glow,
+            amount: 9,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.fragment_of_decarabians_epic,
+            amount: 5,
+          },
+          {
+            item: itemList.frostnights_glow,
+            amount: 18,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.fragment_of_decarabians_epic,
+            amount: 9,
+          },
+          {
+            item: itemList.frostnights_glory,
+            amount: 14,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.scattered_piece_of_decarabians_dream,
+            amount: 6,
+          },
+          {
+            item: itemList.frostnights_glory,
+            amount: 27,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  the_daybreak_chronicles: {
+    id: 'the_daybreak_chronicles',
+    name: 'The Daybreak Chronicles',
+    rarity: 5,
+    atk: 48,
+    secondary: 'CRIT DMG',
+    type: weapons.bow,
+    source: 'Wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.fetters_of_the_dandelion_gladiator,
+            amount: 5,
+          },
+          {
+            item: itemList.heavy_horn,
+            amount: 5,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chains_of_the_dandelion_gladiator,
+            amount: 5,
+          },
+          {
+            item: itemList.heavy_horn,
+            amount: 18,
+          },
+          {
+            item: itemList.treasure_hoarder_insignia,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.chains_of_the_dandelion_gladiator,
+            amount: 9,
+          },
+          {
+            item: itemList.black_bronze_horn,
+            amount: 9,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shackles_of_the_dandelion_gladiator,
+            amount: 5,
+          },
+          {
+            item: itemList.black_bronze_horn,
+            amount: 18,
+          },
+          {
+            item: itemList.silver_raven_insignia,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shackles_of_the_dandelion_gladiator,
+            amount: 9,
+          },
+          {
+            item: itemList.black_crystal_horn,
+            amount: 14,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.dream_of_the_dandelion_gladiator,
+            amount: 6,
+          },
+          {
+            item: itemList.black_crystal_horn,
+            amount: 27,
+          },
+          {
+            item: itemList.golden_raven_insignia,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  rainbow_serpents_rain_bow: {
+    id: 'rainbow_serpents_rain_bow',
+    name: "Rainbow Serpent's Rain Bow",
+    rarity: 4,
+    atk: 42,
+    secondary: 'Energy Recharge',
+    type: weapons.bow,
+    source: 'Event',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_consideration,
+            amount: 3,
+          },
+          {
+            item: itemList.refractive_bud,
+            amount: 3,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 2,
+          },
+        ],
+        mora: 5000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_premonition,
+            amount: 3,
+          },
+          {
+            item: itemList.refractive_bud,
+            amount: 12,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 8,
+          },
+        ],
+        mora: 15000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_premonition,
+            amount: 6,
+          },
+          {
+            item: itemList.bewildering_broadleaf,
+            amount: 6,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 6,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_augury,
+            amount: 3,
+          },
+          {
+            item: itemList.bewildering_broadleaf,
+            amount: 12,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_augury,
+            amount: 6,
+          },
+          {
+            item: itemList.illusory_leafcoil,
+            amount: 9,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 6,
+          },
+        ],
+        mora: 35000,
+      },
+      {
+        items: [
+          {
+            item: itemList.night_winds_mystic_revelation,
+            amount: 4,
+          },
+          {
+            item: itemList.illusory_leafcoil,
+            amount: 18,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 45000,
+      },
+    ],
+  },
 };

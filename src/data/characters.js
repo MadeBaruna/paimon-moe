@@ -3774,6 +3774,152 @@ export const characters = {
     },
     element: elements.electro,
   },
+  durin: {
+    id: 'durin',
+    name: 'Durin',
+    rarity: 5,
+    weapon: weapons.sword,
+    stats: {
+      hp: 12430,
+      atk: 347,
+      def: 822,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 3,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.cyclic_military_kuuvahki_core,
+            amount: 2,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 10,
+          },
+          {
+            item: itemList.tattered_warrant,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.cyclic_military_kuuvahki_core,
+            amount: 4,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 20,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.cyclic_military_kuuvahki_core,
+            amount: 8,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 30,
+          },
+          {
+            item: itemList.immaculate_warrant,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.cyclic_military_kuuvahki_core,
+            amount: 12,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 45,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.agnidus_agate_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.cyclic_military_kuuvahki_core,
+            amount: 20,
+          },
+          {
+            item: itemList.frostlamp_flower,
+            amount: 60,
+          },
+          {
+            item: itemList.frost_etched_warrant,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.tattered_warrant, itemList.immaculate_warrant, itemList.frost_etched_warrant],
+      book: [itemList.teachings_of_ballad, itemList.guide_to_ballad, itemList.philosophies_of_ballad],
+      boss: itemList.eroded_sunfire,
+    },
+    element: elements.pyro,
+    new: true,
+  },
   emilie: {
     id: 'emilie',
     name: 'Emilie',
@@ -5957,6 +6103,152 @@ export const characters = {
       boss: itemList.eroded_sunfire,
     },
     element: elements.electro,
+  },
+  jahoda: {
+    id: 'jahoda',
+    name: 'Jahoda',
+    rarity: 4,
+    weapon: weapons.bow,
+    stats: {
+      hp: 9646,
+      atk: 223,
+      def: 580,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 3,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 2,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 10,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 4,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 20,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 8,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 30,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 12,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 45,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vayuda_turquoise_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.lightbearing_scale_feather,
+            amount: 20,
+          },
+          {
+            item: itemList.portable_bearing,
+            amount: 60,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.broken_drive_shaft, itemList.reinforced_drive_shaft, itemList.precision_drive_shaft],
+      book: [itemList.teachings_of_vagrancy, itemList.guide_to_vagrancy, itemList.philosophies_of_vagrancy],
+      boss: itemList.ascended_sample_knight,
+    },
+    element: elements.anemo,
+    new: true,
   },
   jean: {
     id: 'jean',
@@ -9739,7 +10031,6 @@ export const characters = {
       boss: itemList.ascended_sample_rook,
     },
     element: elements.dendro,
-    new: true,
   },
   neuvillette: {
     id: 'neuvillette',
