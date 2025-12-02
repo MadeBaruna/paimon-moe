@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    yelan: {
-      name: 'Yelan',
+    venti: {
+      name: 'Venti',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    flins: {
-      name: 'Flins',
+    durin: {
+      name: 'Durin',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300089;
-  const image = 'yelan flins.png';
+  const bannerId = 300092;
+  const image = 'venti durin.png';
   const width = 800;
-  const height = 415;
+  const height = 410;
 
   let loading = true;
   let user = '';
