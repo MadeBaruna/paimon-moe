@@ -92,7 +92,7 @@
 
             return prev;
           },
-          { total: 0, primogem: 0 },
+          { total: 0, primogem: 0, show: true },
         ),
       }))
       .sort((a, b) => a.order - b.order);
@@ -130,40 +130,51 @@
   }, 2000);
 
   const search = debounce(async () => {
-    if (nameFilter === '') {
-      changeCategory(0, 0, true);
-      return;
+    // let index = 0;
+    // for (const [id, item] of sortedAchievements) {
+    //   for (const achievement of item.achievements) {
+    //     if (Array.isArray(achievement)) {
+    //       if (filterName && !achievement[0].name.toLowerCase().includes(query)) continue;
+    //       changeCategory(id, index, false);
+    //       return;
+    //     } else {
+    //       if (filterName && !achievement.name.toLowerCase().includes(query)) continue;
+    //       changeCategory(id, index, false);
+    //       return;
+    //     }
+    //   }
+
+    //   index++;
+    // }
+
+    const result = await filterAll();
+    if (!result) {
+      pushToast($t('achievement.searchError', { values: { query: nameFilter } }), 'error');
     }
-
-    const filterName = nameFilter !== '';
-    const query = nameFilter.toLowerCase();
-
-    let index = 0;
-    for (const [id, item] of sortedAchievements) {
-      for (const achievement of item.achievements) {
-        if (Array.isArray(achievement)) {
-          if (filterName && !achievement[0].name.toLowerCase().includes(query)) continue;
-          changeCategory(id, index, false);
-          return;
-        } else {
-          if (filterName && !achievement.name.toLowerCase().includes(query)) continue;
-          changeCategory(id, index, false);
-          return;
-        }
-      }
-
-      index++;
-    }
-
-    changeCategory(0, 0, true);
-    pushToast($t('achievement.searchError', { values: { query } }), 'error');
   }, 500);
 
   const updateSelectFilter = debounce(() => {
-    changeCategory(active, activeIndex, true);
+    filterAll();
   }, 500);
 
-  async function changeCategory(id, index, firstLoad) {
+  async function filterAll() {
+    let firstFoundCategory = undefined;
+    for (let i = 0; i < categories.length; i++) {
+      const category = categories[i];
+      let found = await changeCategory(category.id, i, false, true);
+      if (firstFoundCategory === undefined && found) firstFoundCategory = { id: category.id, index: i };
+    }
+
+    if (firstFoundCategory) {
+      changeCategory(firstFoundCategory.id, firstFoundCategory.index, true);
+    } else {
+      list = [];
+    }
+
+    return firstFoundCategory !== undefined;
+  }
+
+  async function changeCategory(id, index, firstLoad, searchOnly = false) {
     active = id;
     activeIndex = index;
 
@@ -183,26 +194,28 @@
     const filterName = nameFilter !== '';
     const query = nameFilter.toLowerCase();
 
-    console.log('filter', filterVersion, filterComission, filterName);
-    if (checkList[active] === undefined) {
-      checkList[active] = {};
-    }
+    console.log('filter', active, filterVersion, filterComission, filterName);
 
-    list = achievement[active].achievements
-      .filter((e) => {
-        if (Array.isArray(e)) {
-          if (filterVersion && !filteredVersion.includes(e[0].ver)) return false;
-          if (filterComission.length > 0 && !filterComission.includes(e[0].commissions)) return false;
-          if (filterName && !e[0].name.toLowerCase().includes(query)) return false;
-          return true;
-        } else {
-          if (filterVersion && !filteredVersion.includes(e.ver)) return false;
-          if (filterComission.length > 0 && !filterComission.includes(e.commissions)) return false;
-          if (filterName && !e.name.toLowerCase().includes(query)) return false;
-          return true;
-        }
-      })
-      .map((e) => {
+    const filtered = achievement[active].achievements.filter((e) => {
+      if (Array.isArray(e)) {
+        if (filterVersion && !filteredVersion.includes(e[0].ver)) return false;
+        if (filterComission.length > 0 && !filterComission.includes(e[0].commissions)) return false;
+        if (filterName && !e[0].name.toLowerCase().includes(query)) return false;
+        return true;
+      } else {
+        if (filterVersion && !filteredVersion.includes(e.ver)) return false;
+        if (filterComission.length > 0 && !filterComission.includes(e.commissions)) return false;
+        if (filterName && !e.name.toLowerCase().includes(query)) return false;
+        return true;
+      }
+    });
+
+    if (!searchOnly) {
+      if (checkList[active] === undefined) {
+        checkList[active] = {};
+      }
+
+      list = filtered.map((e) => {
         if (Array.isArray(e)) {
           for (let i = 0; i < e.length; i++) {
             e[i].checked = checkList[active][e[i].id] === true;
@@ -214,22 +227,26 @@
         }
       });
 
-    if (sort) {
-      originalList = list.slice();
-      list = list.sort((a, b) => {
-        let first = a;
-        let second = b;
-        if (Array.isArray(a)) first = a[a.length - 1];
-        if (Array.isArray(b)) second = b[b.length - 1];
-        return first.checked === second.checked ? 0 : first.checked ? 1 : -1;
+      if (sort) {
+        originalList = list.slice();
+        list = list.sort((a, b) => {
+          let first = a;
+          let second = b;
+          if (Array.isArray(a)) first = a[a.length - 1];
+          if (Array.isArray(b)) second = b[b.length - 1];
+          return first.checked === second.checked ? 0 : first.checked ? 1 : -1;
+        });
+      }
+
+      if (firstLoad) return;
+      await tick();
+      achievementContainer.scrollIntoView({
+        behavior: 'smooth',
       });
     }
 
-    if (firstLoad) return;
-    await tick();
-    achievementContainer.scrollIntoView({
-      behavior: 'smooth',
-    });
+    categories[activeIndex].show = filtered.length > 0;
+    return filtered.length > 0;
   }
 
   function toggle({ index, subindex, primogem }) {
@@ -410,22 +427,24 @@
     <div class="flex flex-col lg:flex-row space-y-3 lg:space-y-0 lg:space-x-3">
       <div class="flex flex-col space-y-2 lg:h-screen lg:overflow-auto lg:sticky lg:pr-1 pb-4 category">
         {#each categories as category, index (category.id)}
-          <div
-            class="rounded-xl p-2 cursor-pointer flex flex-col {category.id === active ? 'bg-primary' : 'bg-item'}"
-            on:click={() => changeCategory(category.id, index)}
-          >
-            <p class="font-semibold {category.id === active ? 'text-black' : 'text-white'}">{category.name}</p>
-            <div class="flex">
-              <p class="flex-1 {category.id === active ? 'text-gray-900' : 'text-gray-400'}">
-                {category.finished}/{category.total}
-                ({((category.finished / category.total) * 100).toFixed(0)}%)
-              </p>
-              <p class={category.id === active ? 'text-gray-900' : 'text-gray-400'}>
-                {category.primogem}
-              </p>
-              <img src="/images/primogem.png" class="w-6 h-6 ml-1" alt="primogem" />
+          {#if category.show}
+            <div
+              class="rounded-xl p-2 cursor-pointer flex flex-col {category.id === active ? 'bg-primary' : 'bg-item'}"
+              on:click={() => changeCategory(category.id, index)}
+            >
+              <p class="font-semibold {category.id === active ? 'text-black' : 'text-white'}">{category.name}</p>
+              <div class="flex">
+                <p class="flex-1 {category.id === active ? 'text-gray-900' : 'text-gray-400'}">
+                  {category.finished}/{category.total}
+                  ({((category.finished / category.total) * 100).toFixed(0)}%)
+                </p>
+                <p class={category.id === active ? 'text-gray-900' : 'text-gray-400'}>
+                  {category.primogem}
+                </p>
+                <img src="/images/primogem.png" class="w-6 h-6 ml-1" alt="primogem" />
+              </div>
             </div>
-          </div>
+          {/if}
         {/each}
       </div>
       <div class="flex flex-col space-y-2 flex-1 pt-20 lg:pt-2" bind:this={achievementContainer}>

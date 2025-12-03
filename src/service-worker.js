@@ -11,7 +11,7 @@ const changelog = [
   'Update v6.1 banners phase 2',
   'Update v6.2 banners phase 1',
   'Update characters & weapons',
-  'Update achievements',
+  'Update achievements & improve filter',
 ];
 
 const channel = new BroadcastChannel('paimonmoe-sw');
