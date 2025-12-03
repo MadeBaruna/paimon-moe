@@ -689,6 +689,13 @@
       "title": "Xóa việc cần làm này?",
       "cancel": "Hủy",
       "delete": "Xóa"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {

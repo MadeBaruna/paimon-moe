@@ -689,6 +689,13 @@
       "title": "Deletar esse afazer?",
       "cancel": "Cancelar",
       "delete": "Deletar"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {

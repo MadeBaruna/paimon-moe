@@ -1,17 +1,20 @@
 export const itemList = {
   unknown: { id: 'unknown', name: 'unknown' },
   none: { id: 'none', name: 'none' },
-  mystic_enhancement_ore: { id: 'mystic_enhancement_ore', name: 'Mystic Enhancement Ore' },
-  fine_enhancement_ore: { id: 'fine_enhancement_ore', name: 'Fine Enhancement Ore' },
-  enhancement_ore: { id: 'enhancement_ore', name: 'Enhancement Ore' },
-  any_weapon_1: { id: 'any_weapon_1', name: '1 Star Weapon' },
-  any_weapon_2: { id: 'any_weapon_2', name: '2 Star Weapon' },
-  any_weapon_3: { id: 'any_weapon_3', name: '3 Star Weapon' },
+
   mora: { id: 'mora', name: 'Mora' },
-  heros_wit: { id: 'heros_wit', name: "Hero's Wit" },
-  adventurers_experience: { id: 'adventurers_experience', name: "Adventurer's Experience" },
-  wanderes_advice: { id: 'wanderes_advice', name: "Wanderer's Advice" },
   crown_of_insight: { id: 'crown_of_insight', name: 'Crown of Insight' },
+
+  mystic_enhancement_ore: { id: 'mystic_enhancement_ore', name: 'Mystic Enhancement Ore', exp: 10000 },
+  fine_enhancement_ore: { id: 'fine_enhancement_ore', name: 'Fine Enhancement Ore', exp: 2000 },
+  enhancement_ore: { id: 'enhancement_ore', name: 'Enhancement Ore', exp: 400 },
+  any_weapon_1: { id: 'any_weapon_1', name: '1 Star Weapon', exp: 600 },
+  any_weapon_2: { id: 'any_weapon_2', name: '2 Star Weapon', exp: 1200 },
+  any_weapon_3: { id: 'any_weapon_3', name: '3 Star Weapon', exp: 1800 },
+
+  heros_wit: { id: 'heros_wit', name: "Hero's Wit", exp: 20000},
+  adventurers_experience: { id: 'adventurers_experience', name: "Adventurer's Experience", exp: 5000 },
+  wanderes_advice: { id: 'wanderes_advice', name: "Wanderer's Advice", exp: 1000 },
 
   fetters_of_the_dandelion_gladiator: {
     id: 'fetters_of_the_dandelion_gladiator',

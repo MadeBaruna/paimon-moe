@@ -1,4 +1,5 @@
 export const weaponExp = [
+  // Rarity 3
   [
       0,
       275,
@@ -91,6 +92,7 @@ export const weaponExp = [
       3727000,
       3988200
   ],
+  // Rarity 4
   [
       0,
       400,
@@ -183,6 +185,7 @@ export const weaponExp = [
       5646875,
       6042650
   ],
+  // Rarity 5
   [
       0,
       600,
@@ -276,3 +279,20 @@ export const weaponExp = [
       9064450
   ]
 ];
+
+/**
+ * Get the total EXP amount that corresponds to the level of a weapon.
+ * @param {number} level
+ * @param {number} exp
+ * @param {number} rarity
+ * @returns {number}
+ */
+export function getWeaponExp(level, exp, rarity) {
+  let rarityIndex = rarity - 3;
+  if (rarity > 2 && rarity < 6) {
+    return weaponExp[rarityIndex][level - 1] + exp;
+  }
+  else {
+    throw new RangeError("Can only retrieve EXP for weapons of rarity 3, 4, or 5");
+  }
+}
