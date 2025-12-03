@@ -14,6 +14,7 @@
   import Ad from '../../components/Ad.svelte';
 
   import CharacterGridItem from './_characterGridItem.svelte';
+  import { key } from 'localforage';
 
   const sortOptions = [
     { label: $t('characters.name'), value: 'name' },
@@ -50,9 +51,6 @@
     4: true,
     5: true,
   };
-  let firstClickElement = true;
-  let firstClickWeapon = true;
-  let firstClicRarity = true;
 
   $: chars = Object.entries(characters)
     .filter((e) => elementFilter[e[1].element.id] && weaponFilter[e[1].weapon.id] && rarityFilter[e[1].rarity])
@@ -132,47 +130,57 @@
   }
 
   function toggleElement(element) {
-    if (firstClickElement) {
-      firstClickElement = false;
-      elementFilter = {
-        pyro: false,
-        hydro: false,
-        anemo: false,
-        electro: false,
-        cryo: false,
-        dendro: false,
-        geo: false,
-      };
-    }
+    const vals = Object.values(elementFilter);
+    const len = vals.length;
+    const trueCount = vals.filter((e) => e).length;
 
     elementFilter[element] = !elementFilter[element];
+
+    if (len === trueCount) {
+      for (const key in elementFilter) {
+        elementFilter[key] = false || key === element;
+      }
+    } else if (trueCount === 1 && !elementFilter[element]) {
+      for (const key in elementFilter) {
+        elementFilter[key] = true;
+      }
+    }
   }
 
   function toggleWeapon(weapon) {
-    if (firstClickWeapon) {
-      firstClickWeapon = false;
-      weaponFilter = {
-        sword: false,
-        claymore: false,
-        polearm: false,
-        catalyst: false,
-        bow: false,
-      };
-    }
+    const vals = Object.values(weaponFilter);
+    const len = vals.length;
+    const trueCount = vals.filter((e) => e).length;
 
     weaponFilter[weapon] = !weaponFilter[weapon];
+
+    if (len === trueCount) {
+      for (const key in weaponFilter) {
+        weaponFilter[key] = false || key === weapon;
+      }
+    } else if (trueCount === 1 && !weaponFilter[weapon]) {
+      for (const key in weaponFilter) {
+        weaponFilter[key] = true;
+      }
+    }
   }
 
   function toggleRarity(rarity) {
-    if (firstClicRarity) {
-      firstClicRarity = false;
-      rarityFilter = {
-        4: false,
-        5: false,
-      };
-    }
+    const vals = Object.values(rarityFilter);
+    const len = vals.length;
+    const trueCount = vals.filter((e) => e).length;
 
     rarityFilter[rarity] = !rarityFilter[rarity];
+
+    if (len === trueCount) {
+      for (const key in rarityFilter) {
+        rarityFilter[key] = false || key === String(rarity);
+      }
+    } else if (trueCount === 1 && !rarityFilter[rarity]) {
+      for (const key in rarityFilter) {
+        rarityFilter[key] = true;
+      }
+    }
   }
 
   async function processWishes() {
@@ -328,7 +336,7 @@
             <div class="flex items-center justify-center md:justify-start md:mr-4">
               <button
                 on:click={() => toggleElement('pyro')}
-                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer pr-2 focus:outline-none {elementFilter.pyro
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.pyro
                   ? ''
                   : 'opacity-25'}"
               >
@@ -376,7 +384,7 @@
               </button>
               <button
                 on:click={() => toggleElement('geo')}
-                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer pl-2 focus:outline-none {elementFilter.geo
+                class="rounded-xl hover:bg-black hover:bg-opacity-25 cursor-pointer p-2 focus:outline-none {elementFilter.geo
                   ? ''
                   : 'opacity-25'}"
               >
@@ -457,7 +465,7 @@
             class="mt-12 mb-4 ml-4 mr-4 md:ml-8 md:mr-0 max-w-screen-xl md:flex items-center bg-background rounded-xl p-4"
           >
             <img class="h-16 float-left md:float-none mr-2 md:mr-0" src="/images/paimon_faq.png" alt="Paimon" />
-            <p class="md:ml-4 text-gray-200 ">{$t('characters.faq')}</p>
+            <p class="md:ml-4 text-gray-200">{$t('characters.faq')}</p>
           </div>
         {/if}
       </div>
