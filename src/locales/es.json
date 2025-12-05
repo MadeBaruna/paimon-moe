@@ -435,7 +435,8 @@
       "beginners": "Gachapón del principiante",
       "standard": "Gachapón Permanente",
       "character-event": "Evento de Personaje",
-      "weapon-event": "Gachapón de Armas"
+      "weapon-event": "Gachapón de Armas",
+      "chronicled": "Gachapón Recopilatorio"
     },
     "detail": {
       "weapon": "Arma",
