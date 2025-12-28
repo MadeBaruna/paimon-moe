@@ -17,11 +17,11 @@
   let changed = true;
   let currentResin = '';
   let desiredResin = '';
-  let maxResin = 160;
+  let maxResin = 200;
   let millisecondsToWait;
   let fullTime = null;
   let relativeTime = null;
-  let missingResin = 160;
+  let missingResin = 200;
   let resinTypeOutput = '';
   let resinOutput = {
     resin: 0,
@@ -43,14 +43,14 @@
     id: 'condensed_resin',
     image: '/images/condensed_resin.png',
     label: 'Condensed Resin',
-    value: 40,
+    value: 60,
   };
 
   // 8 minute per resin * 60 seconds * 1000 millisec
   let minutePerResin = originalResin.value * 60 * 1000;
 
-  $: isCurrentResin = currentResin >= 0 && currentResin < 160 && currentResin !== '';
-  $: isDesiredResin = desiredResin <= 160 && desiredResin >= 1 && desiredResin !== '';
+  $: isCurrentResin = currentResin >= 0 && currentResin < 200 && currentResin !== '';
+  $: isDesiredResin = desiredResin <= 200 && desiredResin >= 1 && desiredResin !== '';
   $: canCalculate = isCurrentResin || isDesiredResin;
 
   function calculateCondensedResin(nResin) {
@@ -105,7 +105,7 @@
         on:change={() => onChange('maxResin')}
         type="number"
         min={0}
-        max={160}
+        max={200}
         bind:value={currentResin}
         placeholder={$t('calculator.resin.inputCurrentResin')}
       />
@@ -114,7 +114,7 @@
         on:change={() => onChange('desiredResin')}
         type="number"
         min={1}
-        max={160}
+        max={200}
         bind:value={desiredResin}
         placeholder={$t('calculator.resin.inputDesireResin')}
       />
