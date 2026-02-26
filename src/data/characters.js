@@ -3,6 +3,19 @@ import { itemList } from './itemList';
 import { elements } from './elements';
 import { weapons } from './weapons';
 
+export const minCharacterLevel = 1;
+export const maxCharacterLevel = 90;
+export const minCharacterAscension = 0;
+export const maxCharacterAscension = 6;
+
+export function isTravelerId(id) {
+  return 
+  id === characters.traveler_anemo.id ||
+  id === characters.traveler_geo.id ||
+  id === characters.traveler_electro.id ||
+  id === characters.traveler_dendro.id;
+}
+
 export const characters = {
   aino: {
     id: 'aino',
