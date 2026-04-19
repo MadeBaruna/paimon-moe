@@ -410,10 +410,6 @@ export const itemGroup = {
     name: 'Will',
     items: [itemList.shard_of_a_shattered_will, itemList.locus_of_a_clear_will, itemList.sigil_of_a_striding_will],
   },
-  shard_of_a_shattered_will: {
-    name: 'Will',
-    items: [itemList.shard_of_a_shattered_will, itemList.locus_of_a_clear_will, itemList.sigil_of_a_striding_will],
-  },
   blazing_sacrificial_hearts_terror: {
     name: 'Blazing Sacrificial Heart',
     items: [

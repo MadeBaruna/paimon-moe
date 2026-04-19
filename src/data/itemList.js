@@ -861,8 +861,6 @@ export const itemList = {
 
   runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
 
-  runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
-
   teachings_of_admonition: {
     id: 'teachings_of_admonition',
     name: 'Teachings of Admonition',
@@ -1305,30 +1303,15 @@ export const itemList = {
     name: 'Xenochromatic Crystal',
     rarity: 3,
   },
-  dross_of_pure_sacred_dewdrop: {
-    id: 'dross_of_pure_sacred_dewdrop',
-    name: 'Dross of Pure Sacred Dewdrop',
-    rarity: 2,
-  },
   drop_of_tainted_water: {
     id: 'drop_of_tainted_water',
     name: 'Drop of Tainted Water',
     rarity: 2,
   },
-  sublimation_of_pure_sacred_dewdrop: {
-    id: 'sublimation_of_pure_sacred_dewdrop',
-    name: 'Sublimation of Pure Sacred Dewdrop',
-    rarity: 3,
-  },
   scoop_of_tainted_water: {
     id: 'scoop_of_tainted_water',
     name: 'Scoop of Tainted Water',
     rarity: 3,
-  },
-  spring_of_pure_sacred_dewdrop: {
-    id: 'spring_of_pure_sacred_dewdrop',
-    name: 'Spring of Pure Sacred Dewdrop',
-    rarity: 4,
   },
   newborn_tainted_hydro_phantasm: {
     id: 'newborn_tainted_hydro_phantasm',
@@ -1894,11 +1877,6 @@ export const itemList = {
     name: 'Glowing Remains',
     rarity: 3,
   },
-  immaculate_warrant: {
-    id: 'immaculate_warrant',
-    name: 'Immaculate Warrant',
-    rarity: 2,
-  },
   oblation_of_the_far_north_scions: {
     id: 'oblation_of_the_far_north_scions',
     name: 'Oblation of the Far-North Scions',
@@ -1908,11 +1886,6 @@ export const itemList = {
     id: 'radiant_exoskeleton',
     name: 'Radiant Exoskeleton',
     rarity: 4,
-  },
-  frost_etched_warrant: {
-    id: 'frost_etched_warrant',
-    name: 'Frost-Etched Warrant',
-    rarity: 3,
   },
   aureate_radiance_of_the_far_north_scions: {
     id: 'aureate_radiance_of_the_far_north_scions',
