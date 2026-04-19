@@ -13919,6 +13919,97 @@ export const characters = {
       boss: itemList.worldspan_fern,
     },
   },
+  traveler_pyro: {
+    name: 'Traveler (Pyro)',
+    id: 'traveler_pyro',
+    rarity: 5,
+    element: elements.pyro,
+    weapon: weapons.sword,
+    sex: "player's choice",
+    nation: 'natlan',
+    ascension: [
+      {
+        items: [
+          { item: itemList.brilliant_diamond_sliver, amount: 1 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 3 },
+          { item: itemList.damaged_mask, amount: 3 },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_fragment, amount: 3 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 10 },
+          { item: itemList.damaged_mask, amount: 15 },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_fragment, amount: 6 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 20 },
+          { item: itemList.stained_mask, amount: 12 },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_chunk, amount: 3 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 30 },
+          { item: itemList.stained_mask, amount: 18 },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_chunk, amount: 6 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 45 },
+          { item: itemList.ominous_mask, amount: 12 },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          { item: itemList.brilliant_diamond_gemstone, amount: 6 },
+          { item: itemList.none, amount: null },
+          { item: itemList.windwheel_aster, amount: 60 },
+          { item: itemList.ominous_mask, amount: 24 },
+        ],
+        mora: 120000,
+      },
+    ],
+    stats: { hp: 10122, atk: 274, def: 635 },
+    material: {
+      book: [
+        itemList.teachings_of_contention,
+        itemList.guide_to_kindling,
+        itemList.guide_to_conflict,
+        itemList.guide_to_contention,
+        itemList.guide_to_kindling,
+        itemList.philosophies_of_conflict,
+        itemList.philosophies_of_contention,
+        itemList.philosophies_of_kindling,
+        itemList.philosophies_of_conflict,
+      ],
+      material: [
+        itemList.sentrys_wooden_whistle,
+        itemList.warriors_metal_whistle,
+        itemList.warriors_metal_whistle,
+        itemList.warriors_metal_whistle,
+        itemList.warriors_metal_whistle,
+        itemList.saurian_crowned_warriors_golden_whistle,
+        itemList.saurian_crowned_warriors_golden_whistle,
+        itemList.saurian_crowned_warriors_golden_whistle,
+        itemList.saurian_crowned_warriors_golden_whistle,
+      ],
+      boss: itemList.the_cornerstone_of_stars_and_flames,
+    },
+  },
   varesa: {
     id: 'varesa',
     name: 'Varesa',

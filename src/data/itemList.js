@@ -1780,6 +1780,10 @@ export const itemList = {
     id: 'eroded_sunfire',
     name: 'Eroded Sunfire',
   },
+  the_cornerstone_of_stars_and_flames: {
+    id: 'the_cornerstone_of_stars_and_flames',
+    name: 'The Cornerstone of Stars and Flames',
+  },
 
   dracolite: {
     id: 'dracolite',
