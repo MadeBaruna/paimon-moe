@@ -13827,7 +13827,6 @@ export const characters = {
       ],
       boss: itemList.mudra_of_the_malefic_general,
     },
-    element: elements.dendro,
   },
   varesa: {
     id: 'varesa',
