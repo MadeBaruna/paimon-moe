@@ -18344,4 +18344,228 @@ export const weaponList = {
       },
     ],
   },
+  angelos_heptades: {
+    id: 'angelos_heptades',
+    name: "Angelos' Heptades",
+    rarity: 5,
+    atk: '49',
+    secondary: 'atkPercent',
+    type: 'catalyst',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.artful_device_fragment,
+            amount: 5,
+          },
+          {
+            item: itemList.faded_flaming_hilt,
+            amount: 5,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_replica,
+            amount: 5,
+          },
+          {
+            item: itemList.faded_flaming_hilt,
+            amount: 18,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_replica,
+            amount: 9,
+          },
+          {
+            item: itemList.fractured_flaming_hilt,
+            amount: 9,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_inheritance,
+            amount: 5,
+          },
+          {
+            item: itemList.fractured_flaming_hilt,
+            amount: 18,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_inheritance,
+            amount: 9,
+          },
+          {
+            item: itemList.jeweled_flaming_hilt,
+            amount: 14,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.artful_device_wish,
+            amount: 6,
+          },
+          {
+            item: itemList.jeweled_flaming_hilt,
+            amount: 27,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
+  disaster_and_remorse: {
+    id: 'disaster_and_remorse',
+    name: 'Disaster and Remorse',
+    rarity: 5,
+    atk: '48',
+    secondary: 'critRate',
+    type: 'polearm',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.tile_of_decarabians_tower,
+            amount: 5,
+          },
+          {
+            item: itemList.lightless_bone,
+            amount: 5,
+          },
+          {
+            item: itemList.whopperflower_nectar,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.debris_of_decarabians_city,
+            amount: 5,
+          },
+          {
+            item: itemList.lightless_bone,
+            amount: 18,
+          },
+          {
+            item: itemList.whopperflower_nectar,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.debris_of_decarabians_city,
+            amount: 9,
+          },
+          {
+            item: itemList.glowing_remains,
+            amount: 9,
+          },
+          {
+            item: itemList.shimmering_nectar,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.fragment_of_decarabians_epic,
+            amount: 5,
+          },
+          {
+            item: itemList.glowing_remains,
+            amount: 18,
+          },
+          {
+            item: itemList.shimmering_nectar,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.fragment_of_decarabians_epic,
+            amount: 9,
+          },
+          {
+            item: itemList.radiant_exoskeleton,
+            amount: 14,
+          },
+          {
+            item: itemList.energy_nectar,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.scattered_piece_of_decarabians_dream,
+            amount: 6,
+          },
+          {
+            item: itemList.radiant_exoskeleton,
+            amount: 27,
+          },
+          {
+            item: itemList.energy_nectar,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };
