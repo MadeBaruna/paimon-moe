@@ -2128,4 +2128,8 @@ export const itemList = {
     name: 'Jeweled Flaming Hilt',
     rarity: 4,
   },
+  counterfeit_resin: {
+    id: 'counterfeit_resin',
+    name: 'Counterfeit Resin',
+  },
 };
