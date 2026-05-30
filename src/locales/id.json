@@ -689,6 +689,13 @@
       "title": "Hapus todo ini?",
       "cancel": "Batal",
       "delete": "Hapus"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {

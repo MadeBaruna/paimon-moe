@@ -689,6 +689,13 @@
       "title": "このTodoを削除しますか？",
       "cancel": "キャンセル",
       "delete": "削除する"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {

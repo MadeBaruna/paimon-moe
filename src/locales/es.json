@@ -689,6 +689,13 @@
       "title": "¿Borrar esta Tarea?",
       "cancel": "Cancelar",
       "delete": "Borrar"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {

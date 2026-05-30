@@ -659,6 +659,13 @@
       "title": "Delete this todo?",
       "cancel": "Cancel",
       "delete": "Delete"
+    },
+    "edit": {
+      "title": "Edit todo item",
+      "cancel": "Cancel",
+      "confirm": "Confirm",
+      "confirmed": "Updated todo 👍",
+      "tooltipCannotEdit": "Cannot edit this item. Add this item from the calculator page again to enable editing."
     }
   },
   "timeline": {

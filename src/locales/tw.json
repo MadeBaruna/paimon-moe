@@ -689,6 +689,13 @@
       "title": "刪除這項待辦事項？",
       "cancel": "取消",
       "delete": "刪除"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {

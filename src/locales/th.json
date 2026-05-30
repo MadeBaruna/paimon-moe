@@ -689,6 +689,13 @@
       "title": "ลบรายการที่ต้องทำหรือไม่?",
       "cancel": "ยกเลิก",
       "delete": "ลบ"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {

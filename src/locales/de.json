@@ -689,6 +689,13 @@
       "title": "Diese Aufgabe löschen?",
       "cancel": "Abbrechen",
       "delete": "Löschen"
+    },
+    "edit": {
+      "title": "",
+      "cancel": "",
+      "confirm": "",
+      "confirmed": "",
+      "tooltipCannotEdit": ""
     }
   },
   "timeline": {

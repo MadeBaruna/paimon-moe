@@ -13,35 +13,27 @@
   import Icon from '../../components/Icon.svelte';
 
   import { characterExp } from '../../data/characterExp';
+  import { characters, isTravelerId, minCharacterLevel, maxCharacterLevel } from '../../data/characters';
   import { talent } from '../../data/talent';
   import { addTodo } from '../../stores/todo';
   import { itemList } from '../../data/itemList';
-  import { characters } from '../../data/characters';
+  import * as calculator from '../../functions/resourceCalculator';
 
-  let resources = [
+  let selectableExpMaterials = [
     {
       selected: true,
       disabled: false,
-      image: '/images/items/heros_wit.png',
-      label: "Hero's Wit",
-      id: 'heros_wit',
-      value: '20000',
+      ...itemList.heros_wit
     },
     {
       selected: true,
       disabled: false,
-      image: '/images/items/adventurers_experience.png',
-      label: "Adventurer's Experience",
-      id: 'adventurers_experience',
-      value: '5000',
+      ...itemList.adventurers_experience
     },
     {
       selected: true,
       disabled: false,
-      image: '/images/items/wanderes_advice.png',
-      label: "Wanderer's Advice",
-      id: 'wanderes_advice',
-      value: '1000',
+      ...itemList.wanderes_advice
     },
   ];
 
@@ -52,47 +44,42 @@
 
   let selectedCharacter = null;
 
-  let currentLevel = '';
-  let currentExp = '';
+  let currentLevel = null;
+  let currentExp = null;
+  let currentExpAsNumber = 0;
   let currentAscension = 0;
 
   let intendedAscension = 0;
-  let intendedLevel = '';
-
-  let minAscension = 0;
-  let minIntendedAscension = 0;
-
-  let maxTalentLevel = 1;
-
-  let ascensionResouce = {};
-  let unknownList = {};
-  let currentMax = null;
-  let moraNeeded = 0;
-  let changed = false;
-
-  let calcResult = [];
+  let intendedLevel = null;
 
   let currentTalentLevel = {
     first: 1,
     second: 1,
     third: 1,
   };
-  let targetTalentLevel = {
+  let intendedTalentLevel = {
     first: 1,
     second: 1,
     third: 1,
   };
-  let talentMaterial = {
-    items: {},
-    mora: 0,
-  };
+  
+  let minAscension = 0;
+  let minIntendedAscension = 0;
+
+  let maxTalentLevel = 1;
+
+  let levelMaterials = [];
+  let ascensionAndTalentMaterials = [];
+  let unknownList = [];
+  let moraNeeded = 0;
+  let expWasted = 0;
+  let calculated = false;
 
   let numberFormat = Intl.NumberFormat();
 
-  $: usedResource = resources.filter((e) => e.selected).sort((a, b) => b.value - a.value);
-  $: currentAscension, updateIntendedAscension();
-  $: currentLevel, updateMinAscension();
-  $: intendedLevel, updateMinIntendedAscension();
+  $: currentAscension = calculator.calculateMinimumAscension(currentLevel);
+  $: intendedAscension = calculator.calculateMinimumAscension(intendedLevel);
+  $: currentExpAsNumber = currentExp == null ? 0 : currentExp;
   $: intendedAscension, updateMaxTalentLevel();
   $: withAscension, checkWithTalent();
 
@@ -100,61 +87,17 @@
     (withAscension ? selectedCharacter !== null : true) &&
     intendedLevel >= currentLevel &&
     intendedAscension >= currentAscension &&
-    currentLevel !== '' &&
-    currentLevel > 0 &&
-    currentLevel <= 90 &&
-    intendedLevel !== '' &&
-    intendedLevel > 0 &&
-    intendedLevel <= 90;
+    currentLevel !== null &&
+    currentLevel >= minCharacterLevel &&
+    currentLevel <= maxCharacterLevel &&
+    intendedLevel !== null &&
+    intendedLevel >= minCharacterLevel &&
+    intendedLevel <= maxCharacterLevel;
 
   function checkWithTalent() {
     if (!withAscension) {
       withTalent = false;
     }
-  }
-
-  function updateIntendedAscension() {
-    intendedAscension = Math.max(currentAscension, intendedAscension);
-  }
-
-  function updateMinAscension() {
-    if (currentLevel > 80) {
-      minAscension = 6;
-    } else if (currentLevel > 70) {
-      minAscension = 5;
-    } else if (currentLevel > 60) {
-      minAscension = 4;
-    } else if (currentLevel > 50) {
-      minAscension = 3;
-    } else if (currentLevel > 40) {
-      minAscension = 2;
-    } else if (currentLevel > 20) {
-      minAscension = 1;
-    } else {
-      minAscension = 0;
-    }
-
-    currentAscension = minAscension;
-  }
-
-  function updateMinIntendedAscension() {
-    if (intendedLevel > 80) {
-      minIntendedAscension = 6;
-    } else if (intendedLevel > 70) {
-      minIntendedAscension = 5;
-    } else if (intendedLevel > 60) {
-      minIntendedAscension = 4;
-    } else if (intendedLevel > 50) {
-      minIntendedAscension = 3;
-    } else if (intendedLevel > 40) {
-      minIntendedAscension = 2;
-    } else if (intendedLevel > 20) {
-      minIntendedAscension = 1;
-    } else {
-      minIntendedAscension = 0;
-    }
-
-    intendedAscension = minIntendedAscension;
   }
 
   function updateMaxTalentLevel() {
@@ -184,284 +127,98 @@
   }
 
   function onChange() {
-    changed = true;
-  }
-
-  function getSuffix(val) {
-    switch (val) {
-      case 1:
-        return 'st';
-      case 2:
-        return 'nd';
-      case 3:
-        return 'rd';
-      case 4:
-        return 'th';
-    }
-  }
-
-  function calculateAscension() {
-    const current = Math.max(currentAscension, 0);
-    const target = intendedAscension;
-
-    const result = selectedCharacter.ascension.slice(current, target).reduce(
-      (sum, character, index) => {
-        if (character.mora === 0) {
-          if (unknownList[index + current] === undefined) {
-            unknownList[index + current] = ['Mora amount'];
-          }
-        }
-
-        const mora = sum.mora + character.mora;
-        const items = sum.items;
-
-        for (const [i, item] of character.items.entries()) {
-          if (item.item.id === 'unknown') {
-            if (unknownList[index + current] === undefined) {
-              unknownList[index + current] = [];
-            }
-
-            unknownList[index + current].push(`${i + 1}${getSuffix(i + 1)} material`);
-          }
-
-          if (items[item.item.id] === undefined) {
-            items[item.item.id] = { ...item.item, amount: 0, order: i };
-          }
-          items[item.item.id].amount += item.amount;
-        }
-
-        return { items, mora };
-      },
-      {
-        mora: 0,
-        items: {},
-      },
-    );
-
-    moraNeeded = moraNeeded + result.mora;
-    ascensionResouce = result.items;
-  }
-
-  function calculateTalentTraveler() {
-    Object.keys(currentTalentLevel).forEach((i) => {
-      for (let j = currentTalentLevel[i] - 1; j < targetTalentLevel[i] - 1; j++) {
-        talentMaterial.mora = talentMaterial.mora + talent[j].mora;
-
-        let currentBook = selectedCharacter.material.book[j];
-        let currentMaterial = selectedCharacter.material.material[j];
-
-        if (selectedCharacter.id === characters.traveler_geo.id && i === 'first') {
-          currentBook = selectedCharacter.material_atk.book[j];
-          currentMaterial = selectedCharacter.material_atk.material[j];
-        }
-
-        const key = selectedCharacter.id === characters.traveler_geo.id && i === 'first' ? 'material_atk' : 'material';
-
-        const bookAmount = talent[j].book.amount;
-        const commonMaterial = talent[j].commonMaterial.amount;
-        const bossMaterial = talent[j].bossMaterial;
-        const eventMaterial = talent[j].eventMaterial;
-
-        if (talentMaterial.items[currentBook.id] === undefined) {
-          talentMaterial.items[currentBook.id] = { ...currentBook, amount: 0 };
-        }
-        talentMaterial.items[currentBook.id].amount += bookAmount;
-
-        if (talentMaterial.items[currentMaterial.id] === undefined) {
-          talentMaterial.items[currentMaterial.id] = { ...currentMaterial, amount: 0 };
-        }
-        talentMaterial.items[currentMaterial.id].amount += commonMaterial;
-
-        if (bossMaterial > 0) {
-          if (talentMaterial.items[selectedCharacter[key].boss.id] === undefined) {
-            talentMaterial.items[selectedCharacter[key].boss.id] = {
-              ...selectedCharacter[key].boss,
-              amount: 0,
-            };
-          }
-          talentMaterial.items[selectedCharacter[key].boss.id].amount += bossMaterial;
-        }
-
-        if (eventMaterial > 0) {
-          if (talentMaterial.items['crown_of_insight'] === undefined) {
-            talentMaterial.items['crown_of_insight'] = { ...itemList.crown_of_insight, amount: 0 };
-          }
-          talentMaterial.items['crown_of_insight'].amount += eventMaterial;
-        }
-      }
-    });
-
-    moraNeeded = moraNeeded + talentMaterial.mora;
-  }
-
-  function calculateTalent() {
-    Object.keys(currentTalentLevel).forEach((i) => {
-      talent.slice(currentTalentLevel[i] - 1, targetTalentLevel[i] - 1).forEach((talent) => {
-        talentMaterial.mora = talentMaterial.mora + talent.mora;
-
-        const currentBook = selectedCharacter.material.book[talent.book.rarity - 2];
-        const currentMaterial = selectedCharacter.material.material[talent.commonMaterial.rarity - 1];
-
-        if (talentMaterial.items[currentBook.id] === undefined) {
-          talentMaterial.items[currentBook.id] = { ...currentBook, amount: 0 };
-        }
-        talentMaterial.items[currentBook.id].amount += talent.book.amount;
-
-        if (talentMaterial.items[currentMaterial.id] === undefined) {
-          talentMaterial.items[currentMaterial.id] = { ...currentMaterial, amount: 0 };
-        }
-        talentMaterial.items[currentMaterial.id].amount += talent.commonMaterial.amount;
-
-        if (talent.bossMaterial > 0) {
-          if (talentMaterial.items[selectedCharacter.material.boss.id] === undefined) {
-            talentMaterial.items[selectedCharacter.material.boss.id] = {
-              ...selectedCharacter.material.boss,
-              amount: 0,
-            };
-          }
-          talentMaterial.items[selectedCharacter.material.boss.id].amount += talent.bossMaterial;
-        }
-
-        if (talent.eventMaterial > 0) {
-          if (talentMaterial.items['crown_of_insight'] === undefined) {
-            talentMaterial.items['crown_of_insight'] = { ...itemList.crown_of_insight, amount: 0 };
-          }
-          talentMaterial.items['crown_of_insight'].amount += talent.eventMaterial;
-        }
-      });
-    });
-
-    moraNeeded = moraNeeded + talentMaterial.mora;
+    calculated = false;
   }
 
   function calculate() {
-    unknownList = {};
-    ascensionResouce = {};
-    talentMaterial = {
-      mora: 0,
-      items: {},
-    };
+    unknownList = [];
     moraNeeded = 0;
 
-    const values = resources
-      .filter((e) => e.selected)
-      .map((e) => e.value)
-      .sort((a, b) => b - a);
-    const items = values.map(() => 0);
+    const targetExp = characterExp[intendedLevel - 1] - (characterExp[currentLevel - 1] + currentExp);
+    
+    const expMaterials = selectableExpMaterials
+      .filter(r => r.selected)
+      .sort((a, b) => b.exp - a.exp);
 
-    const target = characterExp[intendedLevel - 1] - (characterExp[currentLevel - 1] + currentExp);
-    let current = target;
-    let max = [];
+    const levelResult = calculator.calculateCharacterLevelMaterials(targetExp, expMaterials);
+    levelMaterials = levelResult.materialsUsed;
+    expWasted = levelResult.expWasted;
+    moraNeeded += levelResult.mora;
 
-    moraNeeded = (Math.floor(target / 1000) * 1000) / 5;
-
-    items[0] = Math.ceil(current / values[0]);
-    max.push({
-      usage: [...items],
-      over: current - items[0] * values[0],
-    });
-    items[0] = Math.ceil(current / values[0]);
-
-    items[0] -= 1;
-    items[1] = Math.ceil((current - items[0] * values[0]) / values[1]);
-
-    max.push({
-      usage: [...items],
-      over: current - (items[0] * values[0] + items[1] * values[1]),
-    });
-
-    function process(usage, start) {
-      let i = start;
-      if (i === values.length - 1) return;
-      while (usage[i] > 0) {
-        usage[i]--;
-
-        usage[i + 1] = 0;
-        let currentTotal = usage.reduce((total, e, f) => {
-          total += e * values[f];
-          return total;
-        }, 0);
-        usage[i + 1] = Math.ceil((target - currentTotal) / values[i + 1]);
-
-        currentTotal = usage.reduce((total, e, f) => {
-          total += e * values[f];
-          return total;
-        }, 0);
-        max.push({
-          usage: [...usage],
-          over: target - currentTotal,
-        });
-
-        if (usage[i] === 0) i++;
-        if (i === values.length - 1) break;
-        process([...usage], start + 1);
-      }
-    }
-
-    process([...items], 1);
-
-    currentMax = max.sort((a, b) => b.over - a.over)[0];
-
+    ascensionAndTalentMaterials = null;
     if (withAscension) {
-      calculateAscension();
+      let ascensionAndTalentMatsMap = {};
+      let ascensionResult = calculator.calculateCharacterAscensionMaterials(selectedCharacter, currentAscension, intendedAscension);
+      ascensionAndTalentMatsMap = ascensionResult.materials;
+      unknownList.push(...ascensionResult.unknownList);
+      moraNeeded += ascensionResult.mora;
 
       if (withTalent) {
-        if (
-          selectedCharacter.id === characters.traveler_anemo.id ||
-          selectedCharacter.id === characters.traveler_geo.id ||
-          selectedCharacter.id === characters.traveler_electro.id ||
-          selectedCharacter.id === characters.traveler_dendro.id
-        ) {
-          calculateTalentTraveler();
+        let talentResult = {};
+
+        if (isTravelerId(selectedCharacter.id)) {
+          talentResult = calculator.calculateTalentMaterialsTraveler(selectedCharacter, currentTalentLevel, intendedTalentLevel);
         } else {
-          calculateTalent();
+          talentResult = calculator.calculateTalentMaterials(selectedCharacter, currentTalentLevel, intendedTalentLevel);
+        }
+
+        moraNeeded += talentResult.mora;
+        
+        const talentOrderOffset = 1000;
+        for (const [id, mat] of Object.entries(talentResult.items)) {
+          if (ascensionAndTalentMatsMap[id]) {
+            ascensionAndTalentMatsMap[id].amount += mat.amount;
+          } else {
+            ascensionAndTalentMatsMap[id] = mat;
+            ascensionAndTalentMatsMap[id].order += talentOrderOffset;
+          }
         }
       }
 
-      for (const [id, item] of Object.entries(talentMaterial.items)) {
-        if (ascensionResouce[id]) {
-          ascensionResouce[id].amount += item.amount;
-        } else {
-          ascensionResouce[id] = item;
-        }
-      }
+      ascensionAndTalentMaterials = Object.entries(ascensionAndTalentMatsMap).sort((a, b) => a[1].order - b[1].order);
     }
 
-    calcResult = Object.entries(ascensionResouce).sort((a, b) => a[1].order - b[1].order);
-
-    changed = false;
+    calculated = true;
   }
 
   function addToTodo() {
-    const levelRes = usedResource.reduce((prev, item, i) => {
-      if (currentMax.usage[i] > 0) {
-        prev[item.id] = currentMax.usage[i];
+    let serializedLevelMats = levelMaterials.reduce((sum, item, i) => {
+      if (item.amount > 0) {
+        sum[item.material.id] = item.amount;
       }
 
-      return prev;
+      return sum;
     }, {});
 
-    const ascensionRes = Object.keys(ascensionResouce).reduce((prev, item) => {
-      if (ascensionResouce[item].amount > 0) {
-        prev[item] = ascensionResouce[item].amount;
-      }
-
-      return prev;
-    }, {});
+    let serializedAscensionMats = [];
+    if (ascensionAndTalentMaterials != null) {
+      serializedAscensionMats = ascensionAndTalentMaterials.reduce((sum, value, i) => {
+        let stack = value[1];
+        if (stack.amount > 0) {
+          sum[stack.item.id] = stack.amount;
+        }
+  
+        return sum;
+      }, {});
+    }
 
     addTodo({
+      formatVersion: 2,
       type: 'character',
       character: withAscension ? selectedCharacter : null,
       level: { from: currentLevel, to: intendedLevel },
+      ascension: withAscension ? { from: currentAscension, to: intendedAscension } : null,
+      exp: currentExp,
+      talentLevel: withTalent ? { from: currentTalentLevel, to: intendedTalentLevel } : null,
       resources: {
         mora: moraNeeded,
-        ...levelRes,
-        ...ascensionRes,
+        ...serializedLevelMats,
+        ...serializedAscensionMats,
       },
       original: {
         mora: moraNeeded,
-        ...levelRes,
-        ...ascensionRes,
+        ...serializedLevelMats,
+        ...serializedAscensionMats,
       },
     });
 
@@ -493,8 +250,8 @@
             className="mb-2"
             on:change={onChange}
             type="number"
-            min={1}
-            max={80}
+            min={minCharacterLevel}
+            max={maxCharacterLevel}
             bind:value={currentLevel}
             placeholder={$t('calculator.character.inputCurrentLevel')}
           />
@@ -517,7 +274,7 @@
             on:change={onChange}
             type="number"
             min={currentLevel}
-            max={80}
+            max={maxCharacterLevel}
             bind:value={intendedLevel}
             placeholder={$t('calculator.character.inputIntendedLevel')}
           />
@@ -533,16 +290,14 @@
     </div>
     <div class="flex flex-col pl-1">
       <p class="text-white text-center md:text-left mb-1">{$t('calculator.character.resource')}</p>
-      {#each resources as res}
+      {#each selectableExpMaterials as item}
         <div class="mb-1">
-          <Checkbox disabled={res.disabled} bind:checked={res.selected} on:change={onChange}>
+          <Checkbox disabled={item.disabled} bind:checked={item.selected} on:change={onChange}>
             <span class="text-white">
-              {#if res.image}
-                <span class="w-6 inline-block">
-                  <img class="h-6 inline-block mr-1" src={res.image} alt={res.label} />
-                </span>
-              {/if}
-              {$t(res.label)}
+              <span class="w-6 inline-block">
+                <img class="h-6 inline-block mr-1" src={`/images/items/${item.id}.png`} alt={item.name} />
+              </span>
+              {$t(item.name)}
             </span>
           </Checkbox>
         </div>
@@ -587,7 +342,7 @@
               type="number"
               min={currentTalentLevel.first}
               max={maxTalentLevel}
-              bind:value={targetTalentLevel.first}
+              bind:value={intendedTalentLevel.first}
               placeholder={$t('calculator.character.talent.0')}
             />
             <Input
@@ -595,7 +350,7 @@
               type="number"
               min={currentTalentLevel.second}
               max={maxTalentLevel}
-              bind:value={targetTalentLevel.second}
+              bind:value={intendedTalentLevel.second}
               placeholder={$t('calculator.character.talent.1')}
             />
             <Input
@@ -603,7 +358,7 @@
               type="number"
               min={currentTalentLevel.third}
               max={maxTalentLevel}
-              bind:value={targetTalentLevel.third}
+              bind:value={intendedTalentLevel.third}
               placeholder={$t('calculator.character.talent.2')}
             />
           </div>
@@ -614,7 +369,7 @@
       <Button disabled={!canCalculate} className="block w-full md:w-auto" on:click={calculate}
         >{$t('calculator.character.calculate')}</Button
       >
-      {#if currentMax !== null && !changed}
+      {#if calculated}
         {#if Object.keys(unknownList).length > 0}
           <div class="border-2 border-red-400 rounded-xl mt-2 p-4 md:inline-block">
             <p class="font-bold flex items-center text-red-400">
@@ -633,54 +388,12 @@
         {/if}
         <div transition:fade={{ duration: 100 }} class="bg-background rounded-xl p-4 mt-2 block md:inline-block">
           <table>
-            {#each usedResource as res, i}
-              {#if currentMax.usage[i] > 0}
-                <tr>
-                  <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-nowrap"
-                      >{currentMax.usage[i]}
-                      <Icon size={0.5} path={mdiClose} /></span
-                    >
-                  </td>
-                  <td class="border-b border-gray-700 py-1">
-                    <span class="text-white">
-                      {#if res.image}
-                        <span class="w-6 inline-block">
-                          <img class="h-6 inline-block mr-1" src={res.image} alt={res.label} />
-                        </span>
-                      {/if}
-                      {$t(res.label)}
-                    </span>
-                  </td>
-                </tr>
-              {/if}
-            {/each}
-            {#each calcResult as [id, item]}
-              {#if item.amount > 0}
-                <tr>
-                  <td class="text-right border-b border-gray-700 py-1">
-                    <span class="text-white mr-2 whitespace-nowrap"
-                      >{item.amount}
-                      <Icon size={0.5} path={mdiClose} /></span
-                    >
-                  </td>
-                  <td class="border-b border-gray-700 py-1">
-                    <span class="text-white">
-                      <span class="w-6 inline-block">
-                        <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={item.name} />
-                      </span>
-                      {$t(item.name)}
-                    </span>
-                  </td>
-                </tr>
-              {/if}
-            {/each}
             <tr>
               <td class="text-right border-b border-gray-700 py-1">
-                <span class="text-white mr-2 whitespace-nowrap"
-                  >{numberFormat.format(moraNeeded)}
-                  <Icon size={0.5} path={mdiClose} /></span
-                >
+                <span class="text-white mr-2 whitespace-nowrap">
+                  {numberFormat.format(moraNeeded)}
+                  <Icon size={0.5} path={mdiClose} />
+                </span>
               </td>
               <td class="border-b border-gray-700 py-1">
                 <span class="text-white">
@@ -691,12 +404,50 @@
                 </span>
               </td>
             </tr>
-            {#if currentMax.over < 0}
+            {#each levelMaterials as stack, i}
               <tr>
-                <td />
-                <td class="text-red-400 py-1">{currentMax.over * -1} {$t('calculator.character.expWasted')}</td>
+                <td class="text-right border-b border-gray-700 py-1">
+                  <span class="text-white mr-2 whitespace-nowrap">
+                    {stack.amount}
+                    <Icon size={0.5} path={mdiClose} />
+                  </span>
+                </td>
+                <td class="border-b border-gray-700 py-1">
+                  <span class="text-white">
+                    <span class="w-6 inline-block">
+                      <img class="h-6 inline-block mr-1" src={`/images/items/${stack.material.id}.png`} alt={stack.material.name} />
+                    </span>
+                    {$t(stack.material.name)}
+                  </span>
+                </td>
               </tr>
+            {/each}
+            {#if ascensionAndTalentMaterials != null}
+              {#each ascensionAndTalentMaterials as [id, stack]}
+                {#if stack.amount > 0}
+                  <tr>
+                    <td class="text-right border-b border-gray-700 py-1">
+                      <span class="text-white mr-2 whitespace-nowrap">
+                        {stack.amount}
+                        <Icon size={0.5} path={mdiClose} />
+                      </span>
+                    </td>
+                    <td class="border-b border-gray-700 py-1">
+                      <span class="text-white">
+                        <span class="w-6 inline-block">
+                          <img class="h-6 inline-block mr-1" src={`/images/items/${id}.png`} alt={stack.item.name} />
+                        </span>
+                        {$t(stack.item.name)}
+                      </span>
+                    </td>
+                  </tr>
+                {/if}
+              {/each}
             {/if}
+            <tr>
+              <td />
+              <td class="text-red-400 py-1">{expWasted} {$t('calculator.character.expWasted')}</td>
+            </tr>
           </table>
           <Button className="mt-2 w-full" on:click={addedToTodo ? () => {} : addToTodo}>
             {#if addedToTodo}
