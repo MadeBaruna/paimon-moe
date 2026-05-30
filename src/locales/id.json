@@ -274,7 +274,7 @@
           "Buka Genshin Impact di PC ini (Jika mempunyai beberapa akun, restart dulu game nya)",
           "Buka riwayat history di dalam game nya, dan tunggu sampai selesai loading",
           "Kemudian buka folder dimana game nya ter-install (contoh: C:\\Games\\Genshin Impact)",
-          "Kemudian buka folder GenshinImpact_Data → webCaches → 2.13.0.1 → Cache → Cache_Data",
+          "Kemudian buka folder GenshinImpact_Data → webCaches → 2.15.0.0 → Cache → Cache_Data",
           "Klik kanan \"data_2\" kemudian klik \"Open with\" kemudian pilih Notepad (Jika kamu mendapatkan error seperti \"The process cannot access the file because it is being used by another process\" silahkan tutup dahulu game nya)",
           "Tekan CTRL+F kemudian centang \"Wrap around\" dan pilih direction \"Up\" dan di kotak input nya masukkan \"e20190909gacha-v2\" (tanpa petik) kemudian klik Find Next",
           "Copy semua link nya dari https://webstatic sampai game_biz=hk4e_global link nya seperti ini: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
