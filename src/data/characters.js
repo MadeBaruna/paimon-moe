@@ -9152,6 +9152,152 @@ export const characters = {
     },
     element: elements.electro,
   },
+  lohen: {
+    id: 'lohen',
+    name: 'Lohen',
+    rarity: 5,
+    weapon: weapons.polearm,
+    stats: {
+      hp: 12858,
+      atk: 344,
+      def: 784,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.etherwing_moth,
+            amount: 3,
+          },
+          {
+            item: itemList.firm_arrowhead,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 2,
+          },
+          {
+            item: itemList.etherwing_moth,
+            amount: 10,
+          },
+          {
+            item: itemList.firm_arrowhead,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 4,
+          },
+          {
+            item: itemList.etherwing_moth,
+            amount: 20,
+          },
+          {
+            item: itemList.sharp_arrowhead,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 8,
+          },
+          {
+            item: itemList.etherwing_moth,
+            amount: 30,
+          },
+          {
+            item: itemList.sharp_arrowhead,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 12,
+          },
+          {
+            item: itemList.etherwing_moth,
+            amount: 45,
+          },
+          {
+            item: itemList.weathered_arrowhead,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.prismatic_severed_tail,
+            amount: 20,
+          },
+          {
+            item: itemList.etherwing_moth,
+            amount: 60,
+          },
+          {
+            item: itemList.weathered_arrowhead,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.firm_arrowhead, itemList.sharp_arrowhead, itemList.weathered_arrowhead],
+      book: [itemList.teachings_of_resistance, itemList.guide_to_resistance, itemList.philosophies_of_resistance],
+      boss: itemList.ascended_sample_knight,
+    },
+    element: elements.cryo,
+    new: true,
+  },
   lynette: {
     id: 'lynette',
     name: 'Lynette',
