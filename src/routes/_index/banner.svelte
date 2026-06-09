@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    lauma: {
-      name: 'Lauma',
+    nicole: {
+      name: 'Nicole',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    nefer: {
-      name: 'Nefer',
+    durin: {
+      name: 'Durin',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300099;
-  const image = 'lauma nefer.webp';
+  const bannerId = 300100;
+  const image = 'nicole durin.webp';
   const width = 800;
-  const height = 364;
+  const height = 361;
 
   let loading = true;
   let user = '';
