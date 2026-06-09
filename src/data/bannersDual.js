@@ -1853,4 +1853,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Frostedge Nocturne 1': [
+    {
+      name: 'Frostedge Nocturne',
+      image: 1,
+      shortName: 'Lohen',
+      start: '2026-06-09 18:00:00',
+      end: '2026-06-30 14:59:00',
+      color: '#efe8e6',
+      featured: ['lohen', 'mavuika'],
+      featuredRare: ['mika', 'xiangling', 'bennett'],
+      version: '6.6',
+    },
+    {
+      name: 'Ancient Flame Ablaze',
+      image: 3,
+      shortName: 'Mavuika',
+      start: '2026-06-09 18:00:00',
+      end: '2026-06-30 14:59:00',
+      color: '#ff6b37',
+      featured: ['lohen', 'mavuika'],
+      featuredRare: ['mika', 'xiangling', 'bennett'],
+      version: '6.6',
+    },
+  ],
 };

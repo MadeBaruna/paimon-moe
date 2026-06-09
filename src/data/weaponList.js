@@ -18463,6 +18463,7 @@ export const weaponList = {
     atk: '48',
     secondary: 'critRate',
     type: 'polearm',
+    source: 'wish',
     ascension: [
       {
         items: [
