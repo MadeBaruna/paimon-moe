@@ -435,7 +435,8 @@
       "beginners": "初心者応援祈願",
       "standard": "通常祈願",
       "character-event": "イベント祈願・キャラクター",
-      "weapon-event": "イベント祈願・武器"
+      "weapon-event": "イベント祈願・武器",
+      "chronicled": "集録祈願"
     },
     "detail": {
       "weapon": "武器",
