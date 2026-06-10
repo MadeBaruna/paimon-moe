@@ -484,9 +484,15 @@
       "description": "When Ineffa uses food, there is a 30% chance of gaining a seasoning ingredient.\\n\\nAdditionally, in Nod-Krai, it seems you'll be able to change Birgitta's appearance through certain means..."
     }
   ],
+  "links": {
+    "11160001": {
+      "title": "Birgitta",
+      "desc": "Ineffa's assistant and companion in battle, she can be summoned to the battlefield via Elemental Skill or Elemental Burst.\\nIf there are opponents nearby, Birgitta will quickly move close to an opponent and unleash Discharge attacks every 2s, dealing <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span>.\\nOnly one Birgitta that has been summoned by Ineffa herself can exist at any one time.\\n\\nAdditionally, in Nod-Krai, it seems you'll be able to change Birgitta's appearance through certain means..."
+    }
+  },
   "burst": {
     "name": "Supreme Instruction: Cyclonic Exterminator",
-    "description": "Through Multipurpose Smart Assistance Unit, <span style=\"color: #FFD780FF;\">Birgitta</span>, Ineffa can use Rocket Punches to quickly clean up opponents! Shoots Birgitta into the fray, dealing <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> and allowing Birgitta to remain on the field.\\n\\nIf Birgitta is already on the field, having been summoned by Ineffa, this Skill will re-summon Birgitta at the target's location and reset her duration.\\n\\n<i>It's said that switching Rocket Punches to Red Mode (Aino's terminology) increases their power threefold. In reality, it simply results in Ineffa ejecting Birgitta with three times the force.</i>",
+    "description": "Through Multipurpose Smart Assistance Unit, <button data-link=\"11160001\"><span style=\"color: #FFD780FF;\">Birgitta</span></button>, Ineffa can use Rocket Punches to quickly clean up opponents! Shoots Birgitta into the fray, dealing <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> and allowing Birgitta to remain on the field.\\n\\nIf Birgitta is already on the field, having been summoned by Ineffa, this Skill will re-summon Birgitta at the target's location and reset her duration.\\n\\n<i>It's said that switching Rocket Punches to Red Mode (Aino's terminology) increases their power threefold. In reality, it simply results in Ineffa ejecting Birgitta with three times the force.</i>",
     "skillLabels": [
       "Skill DMG",
       "CD",
@@ -1075,7 +1081,7 @@
   },
   "elementalSkill": {
     "name": "Cleaning Mode: Carrier Frequency",
-    "description": "Ineffa engages her Enhanced Cleaning Module, dealing a single instance of <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> to nearby opponents, activating her Optical Flow Shield Barrier, and summoning the Multipurpose Smart Assistance Unit, <span style=\"color: #FFD780FF;\">Birgitta</span>.\\nThe Optical Flow Shield Barrier absorbs DMG based on Ineffa's ATK, and it will absorb <span style=\"color: #FFACFFFF;\">Electro DMG</span> with 250% effectiveness.\\n\\n<i>\"Target for cleanup sequence confirmed. Shield raised, please await order completion. We will cleanse nearby biological and technological dirt on our own. Capacitance adjusted to service mode. Resistance is futile, Aino.\"</i>",
+    "description": "Ineffa engages her Enhanced Cleaning Module, dealing a single instance of <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> to nearby opponents, activating her Optical Flow Shield Barrier, and summoning the Multipurpose Smart Assistance Unit, <button data-link=\"11160001\"><span style=\"color: #FFD780FF;\">Birgitta</span></button>.\\nThe Optical Flow Shield Barrier absorbs DMG based on Ineffa's ATK, and it will absorb <span style=\"color: #FFACFFFF;\">Electro DMG</span> with 250% effectiveness.\\n\\n<i>\"Target for cleanup sequence confirmed. Shield raised, please await order completion. We will cleanse nearby biological and technological dirt on our own. Capacitance adjusted to service mode. Resistance is futile, Aino.\"</i>",
     "skillLabels": [
       "Skill DMG",
       "Shield DMG Absorption",

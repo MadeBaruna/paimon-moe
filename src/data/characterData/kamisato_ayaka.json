@@ -466,20 +466,7 @@
       "description": "Kamisato Ayaka gains Usurahi Butou every 10s, increasing her Charged Attack DMG by 298%. This buff will be cleared 0.5s after Ayaka's Charged ATK hits an opponent, after which the timer for this ability will restart."
     }
   ],
-  "passives": [
-    {
-      "name": "Amatsumi Kunitsumi Sanctification",
-      "description": "After using <span style=\"color: #FFD780FF;\">Kamisato Art: Hyouka</span>, Kamisato Ayaka's Normal and Charged Attacks deal 30% increased DMG for 6s."
-    },
-    {
-      "name": "Kanten Senmyou Blessing",
-      "description": "When the Cryo application at the end of <span style=\"color: #FFD780FF;\">Kamisato Art: Senho</span> hits an opponent, Kamisato Ayaka gains the following effects:\\n·Restores 10 Stamina\\n·Gains 18% <span style=\"color: #99FFFFFF;\">Cryo DMG Bonus</span> for 10s."
-    },
-    {
-      "name": "Fruits of Shinsa",
-      "description": "When Ayaka crafts Weapon Ascension Materials, she has a 10% chance to receive double the product."
-    }
-  ],
+  "passives": [],
   "burst": {
     "name": "Kamisato Art: Soumetsu",
     "description": "Summons forth a snowstorm with flawless poise, unleashing a Frostflake Seki no To that moves forward continuously.\\n\\n<span style=\"color: #FFD780FF;\">Frostflake Seki no To</span>\\n·A storm of whirling icy winds that slashes repeatedly at every enemy it touches, dealing <span style=\"color: #99FFFFFF;\">Cryo DMG</span>.\\n·The snowstorm explodes after its duration ends, dealing <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span>.\\n\\n<i>\"The blizzard veils the heron's thoughts, pity heavy in its heart.\"</i>",

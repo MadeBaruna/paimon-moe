@@ -24,8 +24,8 @@
     { label: $t('characters.constellations'), value: 'constellation' },
   ];
 
-  let sortBySelect = null;
-  let sortBy = '';
+  let sortBySelect = sortOptions[1];
+  let sortBy = 'element';
   let sortOrder = false;
   let type = 'grid';
   let showConstellation = false;
@@ -474,7 +474,19 @@
           </div>
         </div>
         <div class="px-4 md:pl-6 md:pr-4 flex flex-wrap max-w-screen-xl mt-2">
-          {#each chars as [id, char] (id)}
+          {#if sortBy === 'element' && Object.values(elementFilter).every(e => e === true)}
+              <div class="w-full mb-1 mt-4 ml-2 flex items-center">
+                <img src="/images/elements/pyro.png" alt="pyro" class="w-6 h-6" />
+                <p class="text-white text-lg ml-2">Pyro</p>
+              </div>
+          {/if}
+          {#each chars as [id, char], index (id)}
+            {#if sortBy === 'element' && index > 1 && chars[index - 1][1].element?.id !== char.element?.id}
+              <div class="w-full mb-1 mt-4 ml-2 flex items-center">
+                <img src="/images/elements/{char.element.id}.png" alt="pyro" class="w-6 h-6" />
+                <p class="text-white text-lg ml-2">{char.element.name}</p>
+              </div>
+            {/if}
             <CharacterGridItem {id} {char} {showConstellation} constellation={constellation[id]} name={$t(char.name)} />
           {/each}
         </div>

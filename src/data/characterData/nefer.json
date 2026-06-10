@@ -481,12 +481,30 @@
     },
     {
       "name": "Conspiracy of the Golden Vault",
-      "description": "Gains 25% more rewards when dispatched on a Nod-Krai Expedition for 20 hours.\\nAdditionally, as the head of the Curatorium of Secrets, Nefer seemingly has the ability to obtain intelligence from a variety of sources — intelligence that certain factions in Nasha Town might find extremely interesting..."
+      "description": "Gains 25% more rewards when dispatched on a Nod-Krai Expedition for 20 hours."
     }
   ],
+  "links": {
+    "11190008": {
+      "title": "Verdant Dew",
+      "desc": "When party members trigger Lunar-Bloom reactions, the party will receive such a resource.\\nYour party will receive 1 Verdant Dew every 2.5s for 2.5s after triggering a Lunar-Bloom reaction. Your party can have up to 3 Verdant Dew. If you trigger another Lunar-Bloom reaction during this time, the duration of this effect will be reset."
+    },
+    "11220001": {
+      "title": "Shadow Dance",
+      "desc": "After using the Elemental Skill <span style=\"color: #FFD780FF;\">Senet Strategy: Dance of a Thousand Nights</span>, Nefer will enter this state.\\nWhile in the Shadow Dance state, if you have at least 1 Verdant Dew, Nefer's Charged Attacks will be replaced with the special Charged Attack Phantasm Performance.\\nNefer will exit the Shadow Dance state when she unleashes 3 Phantasm Performance(s) or the state's duration ends."
+    },
+    "11220002": {
+      "title": "Phantasm Performance",
+      "desc": "When in the Shadow Dance state caused by her Elemental Skill <span style=\"color: #FFD780FF;\">Senet Strategy: Dance of a Thousand Nights</span>, if you have at least 1 Verdant Dew, Nefer's Charged Attacks will be replaced with the special Charged Attack Phantasm Performance, which will not consume Stamina.\\nNefer summons shades of herself to perform Coordinated Attacks against enemies. Nefer and the shades will deal 2 and 3 stages of <span style=\"color: #99FF88FF;\">AoE Dendro DMG</span> respectively. DMG dealt by the shades is considered Lunar-Bloom DMG. 1 Verdant Dew will be consumed the first time shades are summoned after every Phantasm Performance."
+    },
+    "11220003": {
+      "title": "Veil of Falsehood",
+      "desc": "After absorbing Seeds of Deceit via the Ascension Talent A Wager of Moonlight, Nefer gains this effect, thereby increasing the DMG dealt by her Phantasm Performance.\\nEach stack of Veil of Falsehood increases the DMG dealt by Nefer's Phantasm Performance by 8%. The initial maximum number of stacks is 3, with each stack lasting for 9s (each stack's duration is counted independently)."
+    }
+  },
   "burst": {
     "name": "Sacred Vow: True Eye's Phantasm",
-    "description": "Grant \"revelation\" to the mysteries of the false through Thoth's true sight, dealing <span style=\"color: #99FF88FF;\">AoE Dendro DMG</span> to opponents ahead. When unleashed, Nefer will consume all <span style=\"color: #FFD780FF;\">Veils of Falsehood</span> to increase the DMG dealt by the current Elemental Burst.\\n\\n<i>The blessings of the Ibis King proclaimed by the singers of the burning sands are, in truth, more akin to dire curses.</i>",
+    "description": "Grant \"revelation\" to the mysteries of the false through Thoth's true sight, dealing <span style=\"color: #99FF88FF;\">AoE Dendro DMG</span> to opponents ahead. When unleashed, Nefer will consume all <button data-link=\"11220003\"><span style=\"color: #FFD780FF;\">Veils of Falsehood</span></button> to increase the DMG dealt by the current Elemental Burst.\\n\\n<i>The blessings of the Ibis King proclaimed by the singers of the burning sands are, in truth, more akin to dire curses.</i>",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
@@ -771,7 +789,7 @@
   },
   "attack": {
     "name": "Striking Serpent",
-    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 4 kicks that deal <span style=\"color: #99FF88FF;\">Dendro DMG</span> with the ferocity and grace of a striking serpent.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nNefer enters the Slither state, consuming Stamina to move rapidly forward for up to 2.5s. When the skill button is released, the duration ends, or Stamina runs out, Nefer will exit the Slither state and consume a certain amount of additional Stamina to deal <span style=\"color: #99FF88FF;\">Dendro DMG</span> to opponents. When in the <span style=\"color: #FFD780FF;\">Shadow Dance</span> state, additional Stamina consumption is decreased.\\nAdditionally, unleashing the Elemental Skill <span style=\"color: #FFD780FF;\">Senet Strategy: Dance of a Thousand Nights</span> or sprinting while Nefer is in the Slither state will not cause her to exit the state.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nCalling upon the might of Dendro, Nefer plunges towards the ground from mid-air, damaging all opponents in her path and dealing <span style=\"color: #99FF88FF;\">AoE Dendro DMG</span> upon impact with the ground.",
+    "description": "<span style=\"color: #FFD780FF;\">Normal Attack</span>\\nPerforms up to 4 kicks that deal <span style=\"color: #99FF88FF;\">Dendro DMG</span> with the ferocity and grace of a striking serpent.\\n\\n<span style=\"color: #FFD780FF;\">Charged Attack</span>\\nNefer enters the Slither state, consuming Stamina to move rapidly forward for up to 2.5s. When the skill button is released, the duration ends, or Stamina runs out, Nefer will exit the Slither state and consume a certain amount of additional Stamina to deal <span style=\"color: #99FF88FF;\">Dendro DMG</span> to opponents. When in the <button data-link=\"11220001\"><span style=\"color: #FFD780FF;\">Shadow Dance</span></button> state, additional Stamina consumption is decreased.\\nAdditionally, unleashing the Elemental Skill <span style=\"color: #FFD780FF;\">{LINK#S11222}Senet Strategy: Dance of a Thousand Nights{/LINK}</span> or sprinting while Nefer is in the Slither state will not cause her to exit the state.\\n\\n<span style=\"color: #FFD780FF;\">Plunging Attack</span>\\nCalling upon the might of Dendro, Nefer plunges towards the ground from mid-air, damaging all opponents in her path and dealing <span style=\"color: #99FF88FF;\">AoE Dendro DMG</span> upon impact with the ground.",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
@@ -1286,7 +1304,7 @@
   },
   "elementalSkill": {
     "name": "Senet Strategy: Dance of a Thousand Nights",
-    "description": "A dance that dissolved dynasties, as chilling as a winter's night on the great sea of sand, yet lingering with the tenderness of moonlit gauze. Nefer charges forward, dealing <span style=\"color: #99FF88FF;\">AoE Dendro DMG</span> and entering the <span style=\"color: #FFD780FF;\">Shadow Dance</span> state.\\nWhile in the Shadow Dance state, if you have at least 1 <span style=\"color: #FFD780FF;\">Verdant Dew</span>, Nefer's Charged Attacks will be replaced with the special Charged Attack <span style=\"color: #FFD780FF;\">Phantasm Performance</span>, which will not consume Stamina. When in the Shadow Dance state, Nefer's resistance to interruption is increased.\\n\\nTwo initial charges.\\n\\n<i>\"The world is a game in which the pieces remain hidden behind a veil. To avoid falling into a trap, one must collect every piece of information one can. This is the meaning of secrets.\"</i>",
+    "description": "A dance that dissolved dynasties, as chilling as a winter's night on the great sea of sand, yet lingering with the tenderness of moonlit gauze. Nefer charges forward, dealing <span style=\"color: #99FF88FF;\">AoE Dendro DMG</span> and entering the <button data-link=\"11220001\"><span style=\"color: #FFD780FF;\">Shadow Dance</span></button> state.\\nWhile in the Shadow Dance state, if you have at least 1 <button data-link=\"11190008\"><span style=\"color: #FFD780FF;\">Verdant Dew</span></button>, Nefer's Charged Attacks will be replaced with the special Charged Attack <button data-link=\"11220002\"><span style=\"color: #FFD780FF;\">Phantasm Performance</span></button>, which will not consume Stamina. When in the Shadow Dance state, Nefer's resistance to interruption is increased.\\n\\nTwo initial charges.\\n\\n<i>\"The world is a game in which the pieces remain hidden behind a veil. To avoid falling into a trap, one must collect every piece of information one can. This is the meaning of secrets.\"</i>",
     "skillLabels": [
       "Skill DMG",
       "Phantasm Performance 1-Hit DMG (Nefer)",

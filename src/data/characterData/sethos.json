@@ -447,7 +447,7 @@
     },
     {
       "name": "Papyrus Scripture of Silent Secrets",
-      "description": "When any of the following conditions are met, Sethos gains a 15% <span style=\"color: #FFACFFFF;\">Electro DMG Bonus</span> for 10s that may stack twice, with each stack duration counted independently:\\n· Consuming Elemental Energy through Aimed Shots; you must first unlock the Passive Talent \"Black Kite's Enigma\" to trigger this condition.\\n· Regaining Elemental Energy by triggering Elemental Reactions using <span style=\"color: #FFD780FF;\">Ancient Rite: The Thundering Sands</span>.\\n· Using <span style=\"color: #FFD780FF;\">Secret Rite: Twilight Shadowpiercer</span>."
+      "description": "When any of the following conditions are met, Sethos gains a 15% <span style=\"color: #FFACFFFF;\">Electro DMG Bonus</span> for 10s that may stack twice, with each stack duration counted independently:\\n· Consuming Elemental Energy through Aimed Shots. You must first unlock the Ascension Talent \"Black Kite's Enigma\" to trigger this condition.\\n· Regaining Elemental Energy by triggering Elemental Reactions using <span style=\"color: #FFD780FF;\">Ancient Rite: The Thundering Sands</span>.\\n· Using <span style=\"color: #FFD780FF;\">Secret Rite: Twilight Shadowpiercer</span>."
     },
     {
       "name": "Ode to the Moonrise Sage",
@@ -463,7 +463,7 @@
     },
     {
       "name": "Pylon of the Sojourning Sun Temple",
-      "description": "After <span style=\"color: #FFD780FF;\">Shadowpiercing Shot</span> strikes an opponent, the Elemental Energy consumed by the Passive Talent \"Black Kite's Enigma\" will be returned. This effect can be triggered up to once every 15s. You must first unlock the Passive Talent \"Black Kite's Enigma.\""
+      "description": "After <span style=\"color: #FFD780FF;\">Shadowpiercing Shot</span> strikes an opponent, the Elemental Energy consumed by the Ascension Talent \"Black Kite's Enigma\" will be returned. This effect can be triggered up to once every 15s. You must first unlock the Ascension Talent \"Black Kite's Enigma.\""
     }
   ],
   "passives": [

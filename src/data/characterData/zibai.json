@@ -466,10 +466,33 @@
       "description": "While Zibai is in the <span style=\"color: #FFD780FF;\">Lunar Phase Shift</span> mode, her <span style=\"color: #FFD780FF;\">Phase Shift Radiance</span> gain rate is increased by 50%.\\nAdditionally, <span style=\"color: #FFD780FF;\">Spirit Steed's Stride</span> will change such that it will consume all Phase Shift Radiance. This will <span style=\"color: #FFD780FF;\">elevate</span> the DMG dealt by this instance of Spirit Steed's Stride and the Lunar-Crystallize Reaction DMG dealt by Zibai within the next 3s by 1.6% for every point consumed above 70. This effect cannot stack."
     }
   ],
-  "passives": [],
+  "passives": [
+    {
+      "name": "The Selenic Adeptus Descends",
+      "description": "When casting the Elemental Skill <span style=\"color: #FFD780FF;\">Heaven and Earth Made Manifest</span>, or when nearby party members trigger Moondrift Harmony, Zibai gains the <span style=\"color: #FFD780FF;\">Selenic Descent</span> effect for 4s: The DMG dealt by the 2nd hit of <span style=\"color: #FFD780FF;\">Spirit Steed's Stride</span> is increased by 60% of Zibai's DEF."
+    },
+    {
+      "name": "Layered Peaks Pierce the Clouds",
+      "description": "Other <span style=\"color: #FFE699FF;\">Geo</span> party members increase Zibai's DEF by 15% each. <span style=\"color: #80C0FFFF;\">Hydro</span> party members increase her Elemental Mastery by 60 each."
+    },
+    {
+      "name": "Moonsign Benediction: The Coursing Sun and Moon",
+      "description": "When a party member triggers a Hydro Crystallize reaction, it will be converted into the Lunar-Crystallize reaction, with every 100 DEF that Zibai has increasing Lunar-Crystallize's Base DMG by 0.7%, up to a maximum of 14%.\\n\\nAdditionally, when Zibai is in the party, the party's <span style=\"color: #FFD780FF;\">Moonsign</span> will increase by 1 level."
+    },
+    {
+      "name": "Moonlit Flower Forest",
+      "description": "At night (18:00 – 06:00), when not in combat, restore 1 Elemental Energy to Zibai every 2 seconds.\\nThis effect does not work in Domains, Trounce Domains, or the Spiral Abyss."
+    }
+  ],
+  "links": {
+    "11260001": {
+      "title": "Lunar Phase Shift",
+      "desc": "After using the Elemental Skill <span style=\"color: #FFD780FF;\">Heaven and Earth Made Manifest</span>, Zibai will change to this mode. This mode lasts at most 15s and has the following properties:\\n· Normal and Charged Attacks are converted into <span style=\"color: #FFE699FF;\">Geo DMG</span> that cannot be overridden by other infusions.\\n· The Elemental Skill <span style=\"color: #FFD780FF;\">Heaven and Earth Made Manifest</span> will also be converted to the Elemental Skill <span style=\"color: #FFD780FF;\">Spirit Steed's Stride</span>: When Zibai has at least 70 <span style=\"color: #FFD780FF;\">Phase Shift Radiance</span>, she can consume 70 Phase Shift Radiance to unleash Spirit Steed's Stride and cause two instances of <span style=\"color: #FFE699FF;\">Geo DMG</span>. The second instance will be considered Lunar-Crystallize Reaction DMG.\\n\\nA maximum of 100 <span style=\"color: #FFD780FF;\">Phase Shift Radiance</span> points can be accrued, and Zibai can accumulate them in the following ways:\\n· She gains 10 points every second she is in the <span style=\"color: #FFD780FF;\">Lunar Phase Shift</span> mode.\\n· She gains 5 points when hitting an opponent with her Normal Attacks. She can gain Phase Shift Radiance points in this way once every 0.5s.\\n\\n<span style=\"color: #FFD780FF;\">Moonsign: Ascendant Gleam</span>\\nWhen nearby party members trigger Lunar-Crystallize, they will also accrue 35 <span style=\"color: #FFD780FF;\">Phase Shift Radiance</span> points for Zibai. Points can be gained this way once every 4s. Unleashing the special elemental skill <span style=\"color: #FFD780FF;\">Spirit Steed's Stride</span> will reset the CD for <span style=\"color: #FFD780FF;\">Phase Shift Radiance</span> gained this way.\\n\\nZibai will leave this mode after unleashing <span style=\"color: #FFD780FF;\">Spirit Steed's Stride</span> 4 times, or when the skill's duration ends."
+    }
+  },
   "burst": {
     "name": "Tri-Sphere Eminence",
-    "description": "Zibai operates the Jadelight Canopy, dealing two instances of <span style=\"color: #FFE699FF;\">Geo DMG</span>, with the second damage instance being considered Lunar-Crystallize Reaction DMG.\\nWhen cast, if Zibai is in the <span style=\"color: #FFD780FF;\">Lunar Phase Shift</span>, the duration of the current Lunar Phase Shift will extend by an additional 1.7s.\\n\\n<i>Legend has it that long ago, when a rogue shooting star bright enough to illuminate the night drew near, the people of this world caught a glimpse of this treasure's radiant splendor.</i>",
+    "description": "Zibai operates the Jadelight Canopy, dealing two instances of <span style=\"color: #FFE699FF;\">Geo DMG</span>, with the second damage instance being considered Lunar-Crystallize Reaction DMG.\\nWhen cast, if Zibai is in the <button data-link=\"11260001\"><span style=\"color: #FFD780FF;\">Lunar Phase Shift</span></button>, the duration of the current Lunar Phase Shift will extend by an additional 1.7s.\\n\\n<i>Legend has it that long ago, when a rogue shooting star bright enough to illuminate the night drew near, the people of this world caught a glimpse of this treasure's radiant splendor.</i>",
     "skillLabels": [
       "Skill 1-Hit DMG",
       "Skill 2-Hit DMG",
@@ -1122,7 +1145,7 @@
   },
   "elementalSkill": {
     "name": "Heaven and Earth Made Manifest",
-    "description": "Summoning a shadow of her former powers, she switches to the <span style=\"color: #FFD780FF;\">Lunar Phase Shift</span> mode.\\nIn this mode, Zibai's Normal Attacks and Charged Attacks will deal <span style=\"color: #FFE699FF;\">Geo DMG</span> that cannot be overridden by other infusions, and she can accrue special <span style=\"color: #FFD780FF;\">Phase Shift Radiance</span> through different methods. Zibai can consume Phase Shift Radiance to unleash the special Elemental Skill <span style=\"color: #FFD780FF;\">Spirit Steed's Stride</span>.\\n\\n<span style=\"color: #FFD780FF;\">Moonsign: Ascendant Gleam</span>\\nWhile in the <span style=\"color: #FFD780FF;\">Lunar Phase Shift</span> mode, when Zibai performs Normal Attacks, the fourth attack will deal an additional instance of <span style=\"color: #FFE699FF;\">Geo DMG</span>, which is considered Lunar-Crystallize Reaction DMG.\\n\\n<i>People often say time passes as swiftly as \"a white colt through a crevice.\" Children often ask if the colt might fail to pass through so quickly were it any fatter. Upon hearing this, she made an odd face: \"That phrase is rooted in martial technique. What has that to do with being fat or thin?\"</i>",
+    "description": "Summoning a shadow of her former powers, she switches to the <button data-link=\"11260001\"><span style=\"color: #FFD780FF;\">Lunar Phase Shift</span></button> mode.\\nIn this mode, Zibai's Normal Attacks and Charged Attacks will deal <span style=\"color: #FFE699FF;\">Geo DMG</span> that cannot be overridden by other infusions, and she can accrue special <span style=\"color: #FFD780FF;\">Phase Shift Radiance</span> through different methods. Zibai can consume Phase Shift Radiance to unleash the special Elemental Skill <span style=\"color: #FFD780FF;\">Spirit Steed's Stride</span>.\\n\\n<span style=\"color: #FFD780FF;\">Moonsign: Ascendant Gleam</span>\\nWhile in the <span style=\"color: #FFD780FF;\">Lunar Phase Shift</span> mode, when Zibai performs Normal Attacks, the fourth attack will deal an additional instance of <span style=\"color: #FFE699FF;\">Geo DMG</span>, which is considered Lunar-Crystallize Reaction DMG.\\n\\n<i>People often say time passes as swiftly as \"a white colt through a crevice.\" Children often ask if the colt might fail to pass through so quickly were it any fatter. Upon hearing this, she made an odd face: \"That phrase is rooted in martial technique. What has that to do with being fat or thin?\"</i>",
     "skillLabels": [
       "Lunar Phase Shift 1-Hit DMG",
       "Lunar Phase Shift 2-Hit DMG",

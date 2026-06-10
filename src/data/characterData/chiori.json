@@ -443,7 +443,7 @@
   "constellations": [
     {
       "name": "Six Paths of Sage Silkcraft",
-      "description": "The AoE of the automaton doll \"Tamoto\" summoned by <span style=\"color: #FFD780FF;\">Fluttering Hasode</span> is increased by 50%.\\nAdditionally, if there is a <span style=\"color: #FFE699FF;\">Geo</span> party member other than Chiori, Fluttering Hasode will trigger the following after the dash is completed:\\n· Summon an additional Tamoto. Only one additional Tamoto can exist at the same time, whether summoned by Chiori this way or through the presence of a Geo Construct.\\n· Triggers the Passive Talent \"The Finishing Touch.\" This effect requires you to first unlock the Passive Talent \"The Finishing Touch.\""
+      "description": "The AoE of the automaton doll \"Tamoto\" summoned by <span style=\"color: #FFD780FF;\">Fluttering Hasode</span> is increased by 50%.\\nAdditionally, if there is a <span style=\"color: #FFE699FF;\">Geo</span> party member other than Chiori, Fluttering Hasode will trigger the following after the dash is completed:\\n· Summon an additional Tamoto. Only one additional Tamoto can exist at the same time, whether summoned by Chiori this way or through the presence of a Geo Construct.\\n· Triggers the Ascension Talent \"The Finishing Touch.\" You must first unlock the Ascension Talent \"The Finishing Touch.\""
     },
     {
       "name": "In Five Colors Dyed",
@@ -455,7 +455,7 @@
     },
     {
       "name": "A Tailor's Three Courtesies",
-      "description": "For 8s after triggering either follow-up effect of the Passive Talent \"Tailor-Made,\" when your current active character's Normal, Charged, or Plunging Attacks hit a nearby opponent, a simplified automaton doll, \"Kinu,\" will be summoned near this opponent. You can summon 1 Kinu every 1s in this way, and up to 3 Kinu may be summoned this way during each instance of \"Tailor-Made\"'s Seize the Moment or Tailoring effect. The above effect can be triggered up to once every 15s.\\nMust unlock the Passive Talent \"Tailor-Made\" first."
+      "description": "For 8s after triggering either follow-up effect of the Ascension Talent \"Tailor-Made,\" when your current active character's Normal, Charged, or Plunging Attacks hit a nearby opponent, a simplified automaton doll, \"Kinu,\" will be summoned near this opponent. You can summon 1 Kinu every 1s in this way, and up to 3 Kinu may be summoned this way during each instance of \"Tailor-Made\"'s Seize the Moment or Tailoring effect. The above effect can be triggered up to once every 15s.\\nYou must first unlock the Ascension Talent \"Tailor-Made.\""
     },
     {
       "name": "Two Silken Plumules",
@@ -463,7 +463,7 @@
     },
     {
       "name": "Sole Principle Pursuit",
-      "description": "After triggering a follow-up effect of the Passive Talent \"Tailor-Made,\" Chiori's own <span style=\"color: #FFD780FF;\">Fluttering Hasode</span>'s CD is decreased by 12s. Must unlock the Passive \"Tailor-Made\" first.\\nIn addition, the DMG dealt by Chiori's own Normal Attacks is increased by an amount equal to 235% of her own DEF."
+      "description": "After triggering a follow-up effect of the Ascension Talent \"Tailor-Made,\" Chiori's own <span style=\"color: #FFD780FF;\">Fluttering Hasode</span>'s CD is decreased by 12s. You must first unlock the Ascension Talent \"Tailor-Made.\".\\nIn addition, the DMG dealt by Chiori's own Normal Attacks is increased by an amount equal to 235% of her own DEF."
     }
   ],
   "passives": [

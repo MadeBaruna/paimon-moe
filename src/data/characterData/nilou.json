@@ -447,7 +447,7 @@
     },
     {
       "name": "The Starry Skies Their Flowers Rain",
-      "description": "After characters affected by the Golden Chalice's Bounty deal <span style=\"color: #80C0FFFF;\">Hydro DMG</span> to an opponent, that opponent's <span style=\"color: #80C0FFFF;\">Hydro RES</span> will be decreased by 35% for 10s. After dealing Bloom or Lunar-Bloom DMG to opponents, their <span style=\"color: #99FF88FF;\">Dendro RES</span> will be decreased by 35% for 10s.\\nYou need to have unlocked the \"Court of Dancing Petals\" Talent."
+      "description": "After characters affected by the Golden Chalice's Bounty deal <span style=\"color: #80C0FFFF;\">Hydro DMG</span> to an opponent, that opponent's <span style=\"color: #80C0FFFF;\">Hydro RES</span> will be decreased by 35% for 10s. After dealing Bloom or Lunar-Bloom DMG to opponents, their <span style=\"color: #99FF88FF;\">Dendro RES</span> will be decreased by 35% for 10s.\\nYou must first unlock the Ascension Talent \"Court of Dancing Petals.\""
     },
     {
       "name": "Beguiling Shadowstep",
@@ -469,7 +469,7 @@
   "passives": [
     {
       "name": "Court of Dancing Petals",
-      "description": "When all characters in the party are all <span style=\"color: #99FF88FF;\">Dendro</span> or <span style=\"color: #80C0FFFF;\">Hydro</span>, and there are at least one Dendro character and one Hydro character:\\nThe completion of the third dance step of Nilou's <span style=\"color: #FFD780FF;\">Dance of Haftkarsvar</span> will grant all nearby characters the Golden Chalice's Bounty for 30s.\\nCharacters under the effect of Golden Chalice's Bounty will increase the Elemental Mastery of all nearby characters by 100 for 10s whenever they are hit by <span style=\"color: #99FF88FF;\">Dendro attacks</span>. Also, triggering the Bloom or Lunar-Bloom reaction will create Bountiful Cores instead of Dendro Cores.\\nSuch Cores will burst very quickly after being created, and they have larger AoEs.\\nBountiful Cores cannot trigger Hyperbloom or Burgeon, and they share an upper numerical limit with Dendro Cores. Bountiful Core DMG is considered DMG dealt by Dendro Cores produced by Bloom.\\nShould the party not meet the conditions for this Passive Talent, any existing Golden Chalice's Bounty effects will be canceled."
+      "description": "When all characters in the party are all <span style=\"color: #99FF88FF;\">Dendro</span> or <span style=\"color: #80C0FFFF;\">Hydro</span>, and there are at least one Dendro character and one Hydro character:\\nThe completion of the third dance step of Nilou's <span style=\"color: #FFD780FF;\">Dance of Haftkarsvar</span> will grant all nearby characters the Golden Chalice's Bounty for 30s.\\nCharacters under the effect of Golden Chalice's Bounty will increase the Elemental Mastery of all nearby characters by 100 for 10s whenever they are hit by <span style=\"color: #99FF88FF;\">Dendro attacks</span>. Also, triggering the Bloom or Lunar-Bloom reaction will create Bountiful Cores instead of Dendro Cores.\\nSuch Cores will burst very quickly after being created, and they have larger AoEs.\\nBountiful Cores cannot trigger Hyperbloom or Burgeon, and they share an upper numerical limit with Dendro Cores. Bountiful Core DMG is considered DMG dealt by Dendro Cores produced by Bloom.\\nShould the party not meet the conditions for this Ascension Talent, any existing Golden Chalice's Bounty effects will be canceled."
     },
     {
       "name": "Dreamy Dance of Aeons",

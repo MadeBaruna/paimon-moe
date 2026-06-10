@@ -21,7 +21,7 @@
   import { mdiChevronRight, mdiCircle, mdiClose, mdiContentSave, mdiMinus, mdiPencil, mdiPlus, mdiStar } from '@mdi/js';
   import Icon from '../../components/Icon.svelte';
   import Button from '../../components/Button.svelte';
-  import Tooltip from '../../components/TooltipRelative.svelte';
+  import Tooltip from '../../components/Tooltip.svelte';
   import { getAccountPrefix } from '../../stores/account';
   import { readSave, updateSave } from '../../stores/saveManager';
   import { characters } from '../../data/characters';
@@ -32,6 +32,7 @@
   import { weaponList } from '../../data/weaponList';
   import Ad from '../../components/Ad.svelte';
   import { formatStat } from '../../helper';
+  import LinkSkillCard from './_linkSkillCard.svelte';
 
   const rarityColor = {
     1: 'text-white',
@@ -43,6 +44,7 @@
 
   let constellationDiv;
   let talentDiv;
+  let links = [];
   const builds =
     Object.keys(buildData).length > 0
       ? Object.entries(buildData.roles)
@@ -223,6 +225,12 @@
     }
   }
 
+  function highlightLink(text) {
+    for (const link of links) {
+      link.highlight(text);
+    } 
+  }
+
   async function changeLocale(locale) {
     console.log('change locale');
     const _dataArtifact = await import(`../../data/artifacts/${locale}.json`);
@@ -242,6 +250,12 @@
     }
 
     await getConstellationCount();
+
+    document.querySelectorAll('button[data-link]').forEach(btn => {
+      btn.addEventListener('click', (event) => {
+        highlightLink(event.target.innerText)
+      })
+    });
 
     locale.subscribe((val) => {
       changeLocale(val);
@@ -897,6 +911,11 @@
     <SkillCard {id} image="talent_3" data={data.burst} withQuote={true} />
     {#if data.dashSkill}
       <SkillCard {id} image="talent_7" data={data.dashSkill} withQuote={true} withSingleLevel={true} />
+    {/if}
+    {#if data.links}
+      {#each Object.entries(data.links) as [id, link], i}
+        <LinkSkillCard bind:this={links[i]} data={link} />
+      {/each}
     {/if}
   </div>
   <div class="flex flex-col text-white px-4 md:px-8 max-w-screen-2xl">

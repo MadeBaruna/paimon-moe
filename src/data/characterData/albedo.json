@@ -463,7 +463,7 @@
     },
     {
       "name": "Dust of Purification",
-      "description": "Active party members within the Solar Isotoma field who are protected by a shield created by Crystallize have their DMG increased by 17%."
+      "description": "Active party members within the Solar Isotoma field who are protected by a shield created by Crystallize, or when Moondrifts are present within the Solar Isotoma field, have their DMG increased by 17%."
     }
   ],
   "passives": [

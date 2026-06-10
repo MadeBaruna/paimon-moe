@@ -1152,9 +1152,19 @@
       ]
     ]
   },
+  "links": {
+    "11310001": {
+      "title": "Grace of Kenosis",
+      "desc": "After unleashing the Elemental Skill <span style=\"color: #FFD780FF;\">Revelation: Uncreated Light</span>, Nicole bestows the following effect on all nearby party members: ATK is increased based on Nicole's ATK.\\nAfter certain conditions are met, the <span style=\"color: #FFD780FF;\">Grace of Kenosis</span> effect will be upgraded to <span style=\"color: #FFD780FF;\">Guidance of Theosis</span>, further increasing ATK."
+    },
+    "11310002": {
+      "title": "Guidance of Theosis",
+      "desc": "Upgrading the <span style=\"color: #FFD780FF;\">Grace of Kenosis</span> effect increases ATK by an additional 300.\\nAfter unlocking the Ascension Talent \"Methexis\" and meeting any of the following observation conditions, <span style=\"color: #FFD780FF;\">Grace of Kenosis</span> will be upgraded to <span style=\"color: #FFD780FF;\">Guidance of Theosis</span> for the remainder of its duration:\\n· Another character under observation remains on the field for longer than 3s; or\\n· Another character under observation is a Hexerei character.\\n\\nAdditionally, after unlocking the Ascension Talent \"Philokalia,\" when a nearby active party member's Elemental DMG hits an opponent, Nicole's own <span style=\"color: #FFD780FF;\">Grace of Kenosis</span> will be upgraded to <span style=\"color: #FFD780FF;\">Guidance of Theosis</span> for 8s.\\n\\nWhen characters other than Nicole who have <span style=\"color: #FFD780FF;\">Guidance of Theosis</span> leave the field, their effect will revert to <span style=\"color: #FFD780FF;\">Grace of Kenosis</span>."
+    }
+  },
   "elementalSkill": {
     "name": "Revelation: Uncreated Light",
-    "description": "Recreates a fleeting glimpse of an age long past, when the angels acted on the authority of the heavens, bestowing the <span style=\"color: #FFD780FF;\">Grace of Kenosis</span> effect on nearby party members. This increases their ATK and deals <span style=\"color: #FF9999FF;\">AoE Pyro DMG</span>, as well as creates a Shield of Blazing Light.\\nThe Shield of Blazing Light's DMG Absorption is based on Nicole's ATK, and it will absorb <span style=\"color: #FF9999FF;\">Pyro DMG</span> at 250% effectiveness.\\n\\n<i>\"Light is not a product of creation, and yet it has been favored and shaped into the miracle of human reason. Only the uncreated may caress the visage of eternity. That is why the unwritten word has value beyond anything put to paper.\"\\n\"What do you think? A fine excuse not to pick up the pen myself, wouldn't you say? Doesn't it sound just like one of those bits of 'ancient wisdom' that sound so profound, but no one really understands?\"</i>",
+    "description": "Recreates a fleeting glimpse of an age long past, when the angels acted on the authority of the heavens, bestowing the <button data-link=\"11310001\"><span style=\"color: #FFD780FF;\">Grace of Kenosis</span></button><button data-link=\"11310002\"></button> effect on nearby party members. This increases their ATK and deals <span style=\"color: #FF9999FF;\">AoE Pyro DMG</span>, as well as creates a Shield of Blazing Light.\\nThe Shield of Blazing Light's DMG Absorption is based on Nicole's ATK, and it will absorb <span style=\"color: #FF9999FF;\">Pyro DMG</span> at 250% effectiveness.\\n\\n<i>\"Light is not a product of creation, and yet it has been favored and shaped into the miracle of human reason. Only the uncreated may caress the visage of eternity. That is why the unwritten word has value beyond anything put to paper.\"\\n\"What do you think? A fine excuse not to pick up the pen myself, wouldn't you say? Doesn't it sound just like one of those bits of 'ancient wisdom' that sound so profound, but no one really understands?\"</i>",
     "skillLabels": [
       "Skill DMG",
       "Shield DMG Absorption",

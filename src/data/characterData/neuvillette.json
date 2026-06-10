@@ -443,11 +443,11 @@
   "constellations": [
     {
       "name": "Venerable Institution",
-      "description": "When Neuvillette takes the field, he will obtain 1 stack of Past Draconic Glories from the Passive Talent \"Heir to the Ancient Sea's Authority.\" You must first unlock the Passive Talent \"Heir to the Ancient Sea's Authority.\"\\nAdditionally, his interruption resistance will be increased while using the Charged Attack Empowerment: Legal Evaluation and the Charged Attack: Equitable Judgment."
+      "description": "When Neuvillette takes the field, he will obtain 1 stack of Past Draconic Glories from the Ascension Talent \"Heir to the Ancient Sea's Authority.\" You must first unlock the Ascension Talent \"Heir to the Ancient Sea's Authority.\"\\nAdditionally, his interruption resistance will be increased while using the Charged Attack Empowerment: Legal Evaluation and the Charged Attack: Equitable Judgment."
     },
     {
       "name": "Juridical Exhortation",
-      "description": "The Passive Talent \"Heir to the Ancient Sea's Authority\" will be enhanced: Each stack of Past Draconic Glories will increase the CRIT DMG of Charged Attack: Equitable Judgment by 14%. The maximum increase that can be achieved this way is 42%.\\nYou must first unlock the Passive Talent \"Heir to the Ancient Sea's Authority.\""
+      "description": "The Ascension Talent \"Heir to the Ancient Sea's Authority\" will be enhanced: Each stack of Past Draconic Glories will increase the CRIT DMG of Charged Attack: Equitable Judgment by 14%. The maximum increase that can be achieved this way is 42%.\\nYou must first unlock the Ascension Talent \"Heir to the Ancient Sea's Authority.\""
     },
     {
       "name": "Ancient Postulation",
@@ -469,7 +469,7 @@
   "passives": [
     {
       "name": "Heir to the Ancient Sea's Authority",
-      "description": "When a party member triggers a Vaporize, Frozen, Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Hydro Swirl, or a Hydro Crystallize reaction on opponents, 1 stack of Past Draconic Glories will be granted to Neuvillette for 30s. Max 3 stacks. Past Draconic Glories causes Charged Attack: Equitable Judgment to deal 110%/125%/160% of its original DMG.\\nThe stacks of Past Draconic Glories created by each kind of Elemental Reaction exist independently."
+      "description": "When a party member triggers a Vaporize, Frozen, Electro-Charged, Lunar-Charged, Bloom, Lunar-Bloom, Hydro Swirl, Hydro Crystallize or a Lunar-Crystallize reaction on opponents, 1 stack of Past Draconic Glories will be granted to Neuvillette for 30s. Max 3 stacks. Past Draconic Glories causes Charged Attack: Equitable Judgment to deal 110%/125%/160% of its original DMG.\\nThe stacks of Past Draconic Glories created by each kind of Elemental Reaction exist independently."
     },
     {
       "name": "Discipline of the Supreme Arbitration",

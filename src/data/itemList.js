@@ -2132,4 +2132,8 @@ export const itemList = {
     id: 'counterfeit_resin',
     name: 'Counterfeit Resin',
   },
+  the_cornerstone_of_stars_and_flames: {
+    id: 'the_cornerstone_of_stars_and_flames',
+    name: 'The Cornerstone of Stars and Flames',
+  },
 };

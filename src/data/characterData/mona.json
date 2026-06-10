@@ -443,7 +443,7 @@
   "constellations": [
     {
       "name": "Prophecy of Submersion",
-      "description": "When any of your own party members hits an opponent affected by an Omen, the effects of <span style=\"color: #80C0FFFF;\">Hydro-related Elemental Reactions</span> are enhanced for 8s:\\n· Electro-Charged DMG increases by 15%.\\n· Lunar-Charged DMG increases by 15%.\\n· Vaporize DMG increases by 15%.\\n· Hydro Swirl DMG increases by 15%.\\n· Frozen duration is extended by 15%."
+      "description": "When any of your own party members hits an opponent affected by an Omen, the effects of <span style=\"color: #80C0FFFF;\">Hydro-related Elemental Reactions</span> are enhanced for 8s:\\n· Electro-Charged DMG increases by 15%, Lunar-Charged DMG increases by 15%, Vaporize DMG increases by 15%, Hydro Swirl DMG increases by 15%, Lunar-Crystallize DMG increases by 15%.\\n· Frozen duration is extended by 15%."
     },
     {
       "name": "Lunar Chain",

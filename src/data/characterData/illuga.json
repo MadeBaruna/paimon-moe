@@ -466,10 +466,33 @@
       "description": "Enhances the Lightkeeper's Oath effect of the Ascension Talent <span style=\"color: #FFD780FF;\">Torchforger's Covenant</span>: For <span style=\"color: #FFE699FF;\">Geo DMG</span> dealt to opponents, CRIT Rate is increased by 10%, CRIT DMG is increased by 30%.\\n\\n<span style=\"color: #FFD780FF;\">Moonsign: Ascendant Gleam:</span>\\nWhen characters are affected by Lightkeeper's Oath, Elemental Mastery is increased by 80.\\nYou must first unlock the Ascension Talent \"<span style=\"color: #FFD780FF;\">Torchforger's Covenant</span>.\""
     }
   ],
-  "passives": [],
+  "passives": [
+    {
+      "name": "Torchforger's Covenant",
+      "description": "After unleashing Elemental Skill <span style=\"color: #FFD780FF;\">Dawnbearing Songbird</span> or Elemental Burst <span style=\"color: #FFD780FF;\">Shadowless Reflection</span>, other nearby party members will gain the Lightkeeper's Oath effect for 20s: For <span style=\"color: #FFE699FF;\">Geo DMG</span> dealt to opponents, CRIT Rate increases by 5% and CRIT DMG increases by 10%.\\n\\n<span style=\"color: #FFD780FF;\">Moonsign: Ascendant Gleam</span> \\nParty members affected by the Lightkeeper's Oath effect have their Elemental Mastery increased by 50."
+    },
+    {
+      "name": "Demonhunter's Dusk",
+      "description": "<span style=\"color: #FFD780FF;\">Nightingale's Song</span>'s effects are enhanced: When there are 1/2/3 <span style=\"color: #80C0FFFF;\">Hydro</span> or <span style=\"color: #FFE699FF;\">Geo</span> characters in the party, Nightingale's Song will further increase DMG. Increase in DMG is equal to 7%/14%/24% of Illuga's Elemental Mastery. If this aforementioned DMG is inflicted by a Lunar-Crystallize reaction, increase in DMG is equal to 48%/96%/160% of Illuga's Elemental Mastery."
+    },
+    {
+      "name": "Moonsign Benediction: Unwithering in Winter",
+      "description": "When Illuga is in the party, the party's <span style=\"color: #FFD780FF;\">Moonsign</span> will increase by 1 level."
+    },
+    {
+      "name": "Night Warden's Stride",
+      "description": "At night (18:00 – 06:00), your party members gain the Swift Stride effect: Movement SPD increased by 10%.\\nDoes not take effect in Domains, Trounce Domains, or Spiral Abyss. Swift Stride does not stack.\\nAdditionally, Illuga appears to be able to decipher the whispers of the Wild Hunt..."
+    }
+  ],
+  "links": {
+    "11270001": {
+      "title": "Nightingale's Song",
+      "desc": "The effect gained after Illuga unleashes his Elemental Burst <span style=\"color: #FFD780FF;\">Shadowless Reflection</span>. It can increase the <span style=\"color: #FFE699FF;\">Geo DMG</span> inflicted by current active characters."
+    }
+  },
   "burst": {
     "name": "Shadowless Reflection",
-    "description": "Light the lamp, dealing <span style=\"color: #FFE699FF;\">AoE Geo DMG</span>, and gain Haunted Night's Oriole-Song effect for 20s. When this effect is active, Illuga gains 21 stacks of <span style=\"color: #FFD780FF;\">Nightingale's Song</span>. When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal <span style=\"color: #FFE699FF;\">Geo DMG</span> to opponents, 1 stack of Nightingale's Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga's Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further.\\nWhen <span style=\"color: #FFE699FF;\">Geo DMG</span> dealt in this manner hits multiple opponents, multiple stacks of Nightingale's Song will be consumed, depending on how many opponents are hit.\\n\\nAdditionally, if there are <span style=\"color: #FFE699FF;\">Geo Constructs</span> created by nearby party members on the battlefield while Illuga unleashes his Elemental Burst, or when nearby party members create <span style=\"color: #FFE699FF;\">Geo Constructs</span> while Haunted Night's Oriole-Song is active, every <span style=\"color: #FFE699FF;\">Geo Construct</span> on the battlefield will allow Illuga to gain 5 additional stacks of Nightingale's Song. Within 20s after unleashing his Elemental Burst, Illuga can gain a maximum of 15 additional stacks of Nightingale's Song this way.\\n\\nWhen all stacks of Nightingale's Song have been consumed, or when the state's duration ends, the Haunted Night's Oriole-Song effect will end.\\n\\n<i>\"Whomsoever cradles the flame and keeps it burning unquenched need not descend into that darkness.\"</i>",
+    "description": "Light the lamp, dealing <span style=\"color: #FFE699FF;\">AoE Geo DMG</span>, and gain Haunted Night's Oriole-Song effect for 20s. When this effect is active, Illuga gains 21 stacks of <button data-link=\"11270001\"><span style=\"color: #FFD780FF;\">Nightingale's Song</span></button>. When Normal Attacks, Charged Attacks, Plunging Attacks, Elemental Skills, and Elemental Bursts of nearby active party members deal <span style=\"color: #FFE699FF;\">Geo DMG</span> to opponents, 1 stack of Nightingale's Song is consumed to increase the DMG dealt. Increase in DMG is based on Illuga's Elemental Mastery. If DMG is inflicted by Lunar-Crystallize, DMG dealt will increase further.\\nWhen <span style=\"color: #FFE699FF;\">Geo DMG</span> dealt in this manner hits multiple opponents, multiple stacks of Nightingale's Song will be consumed, depending on how many opponents are hit.\\n\\nAdditionally, if there are <span style=\"color: #FFE699FF;\">Geo Constructs</span> created by nearby party members on the battlefield while Illuga unleashes his Elemental Burst, or when nearby party members create <span style=\"color: #FFE699FF;\">Geo Constructs</span> while Haunted Night's Oriole-Song is active, every <span style=\"color: #FFE699FF;\">Geo Construct</span> on the battlefield will allow Illuga to gain 5 additional stacks of Nightingale's Song. Within 20s after unleashing his Elemental Burst, Illuga can gain a maximum of 15 additional stacks of Nightingale's Song this way.\\n\\nWhen all stacks of Nightingale's Song have been consumed, or when the state's duration ends, the Haunted Night's Oriole-Song effect will end.\\n\\n<i>\"Whomsoever cradles the flame and keeps it burning unquenched need not descend into that darkness.\"</i>",
     "skillLabels": [
       "Skill DMG",
       "Geo DMG Bonus",

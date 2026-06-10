@@ -748,7 +748,8 @@
       "Aimed Shot",
       "Fully-Charged Aimed Shot",
       "Plunge DMG",
-      "Low/High Plunge DMG"
+      "Low/High Plunge DMG",
+      "Windsunder Arrow DMG"
     ],
     "skillStatsLabels": [
       "{0:1p}+{1:1p}",
@@ -760,7 +761,8 @@
       "{0:1p}",
       "{0:p}",
       "{0:1p}",
-      "{0:p}/{1:p}"
+      "{0:p}/{1:p}",
+      "{0:1p} Normal Attack DMG"
     ],
     "skillStats": [
       [
@@ -1276,6 +1278,53 @@
         [
           3.039036,
           3.79592
+        ]
+      ],
+      [
+        [
+          1.6
+        ],
+        [
+          1.7
+        ],
+        [
+          1.8
+        ],
+        [
+          1.9
+        ],
+        [
+          2
+        ],
+        [
+          2.1
+        ],
+        [
+          2.2
+        ],
+        [
+          2.3
+        ],
+        [
+          2.4
+        ],
+        [
+          2.5
+        ],
+        [
+          2.6
+        ],
+        [
+          2.7
+        ],
+        [
+          2.8
+        ],
+        [
+          2.9
+        ],
+        [
+          3
         ]
       ]
     ]

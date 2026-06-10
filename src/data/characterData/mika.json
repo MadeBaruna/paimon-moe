@@ -447,7 +447,7 @@
     },
     {
       "name": "Companion's Ingress",
-      "description": "When <span style=\"color: #FFD780FF;\">Starfrost Swirl</span>'s Flowfrost Arrow first hits an opponent, or its Rimestar Flare hits an opponent, 1 Detector stack from Passive Talent \"Suppressive Barrage\" will be generated.\\nYou must have unlocked the Passive Talent \"Suppressive Barrage\" first."
+      "description": "When <span style=\"color: #FFD780FF;\">Starfrost Swirl</span>'s Flowfrost Arrow first hits an opponent, or its Rimestar Flare hits an opponent, 1 Detector stack from the Ascension Talent \"Suppressive Barrage\" will be generated.\\nYou must first unlock the Ascension Talent \"Suppressive Barrage.\""
     },
     {
       "name": "Reconnaissance Experience",
@@ -463,7 +463,7 @@
     },
     {
       "name": "Companion's Counsel",
-      "description": "The maximum number of Detector stacks that <span style=\"color: #FFD780FF;\">Starfrost Swirl</span>'s Soulwind can gain is increased by 1. You need to have unlocked the Passive Talent \"Suppressive Barrage\" first.\\nAdditionally, active characters affected by Soulwind will deal 60% more Physical CRIT DMG."
+      "description": "The maximum number of Detector stacks that <span style=\"color: #FFD780FF;\">Starfrost Swirl</span>'s Soulwind can gain is increased by 1. You must first unlock the Ascension Talent \"Suppressive Barrage.\".\\nAdditionally, active characters affected by Soulwind will deal 60% more Physical CRIT DMG."
     }
   ],
   "passives": [
@@ -473,7 +473,7 @@
     },
     {
       "name": "Topographical Mapping",
-      "description": "When an active character affected by both <span style=\"color: #FFD780FF;\">Skyfeather Song</span>'s Eagleplume and <span style=\"color: #FFD780FF;\">Starfrost Swirl</span>'s Soulwind at once scores a CRIT Hit with their attacks, Soulwind will grant them 1 stack of Detector from Suppressive Barrage. During a single instance of Soulwind, 1 Detector stack can be gained in this manner.\\nAdditionally, the maximum number of stacks that can be gained through Soulwind alone is increased by 1.\\nRequires Suppressive Barrage to be unlocked first."
+      "description": "When an active character affected by both <span style=\"color: #FFD780FF;\">Skyfeather Song</span>'s Eagleplume and <span style=\"color: #FFD780FF;\">Starfrost Swirl</span>'s Soulwind at once scores a CRIT Hit with their attacks, Soulwind will grant them 1 stack of Detector from the Ascension Talent Suppressive Barrage. During a single instance of Soulwind, 1 Detector stack can be gained in this manner.\\nAdditionally, the maximum number of stacks that can be gained through Soulwind alone is increased by 1.\\nYou must first unlock the Ascension Talent \"Suppressive Barrage.\""
     },
     {
       "name": "Demarcation",

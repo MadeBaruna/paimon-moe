@@ -455,7 +455,7 @@
     },
     {
       "name": "Night on Bald Mountain",
-      "description": "Flins's ATK is increased by 20%.\\nAdditionally, his Ascension Talent <span style=\"color: #FFD780FF;\">\"Whispering Flame\"</span> is enhanced: Flins's Elemental Mastery is increased by 10% of his ATK. The maximum increase obtainable this way is 220."
+      "description": "Flins's ATK is increased by 20%.\\nAdditionally, his Ascension Talent <span style=\"color: #FFD780FF;\">Whispering Flame</span> is enhanced: Flins's Elemental Mastery is increased by 10% of his ATK. The maximum increase obtainable this way is 220."
     },
     {
       "name": "Exile's Shadow",
@@ -1352,9 +1352,15 @@
       ]
     ]
   },
+  "links": {
+    "11200001": {
+      "title": "Thunderous Symphony",
+      "desc": "Consume less Elemental Energy to unleash a special Elemental Burst. Flins deals a single instance of <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span>. This DMG is considered Lunar-Charged DMG.\\n<span style=\"color: #FFD780FF;\">Moonsign: Ascendant Gleam</span>: If there are thunderclouds nearby, Flins will deal 1 additional instance of <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span>. This DMG is considered Lunar-Charged DMG."
+    }
+  },
   "elementalSkill": {
     "name": "Ancient Rite: Arcane Light",
-    "description": "Flins summons forth the ancient power concealed within his lamp and switches to his <span style=\"color: #FFD780FF;\">Manifest Flame</span> form. This form has the following characteristics:\\n· Flins's Normal and Charged Attacks deal <span style=\"color: #FFACFFFF;\">Electro DMG</span> that cannot be overridden by other Elemental infusions, and he is unable to perform Plunging Attacks.\\n· His interruption resistance is increased.\\n· His Elemental Skill <span style=\"color: #FFD780FF;\">Ancient Rite: Arcane Light</span> is replaced with the special Elemental Skill <span style=\"color: #FFD780FF;\">Northland Spearstorm</span>.\\n\\n<span style=\"color: #FFD780FF;\">Northland Spearstorm</span>\\nFlins summons a flurry of spears in front, dealing <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> and causing his Elemental Burst <span style=\"color: #FFD780FF;\">Ancient Ritual: Cometh the Night</span> to be replaced with the special Elemental Burst <span style=\"color: #FFD780FF;\">Thunderous Symphony</span> for the next 6s.\\nThe base CD of <span style=\"color: #FFD780FF;\">Northland Spearstorm</span> is 6s and will not be affected by other effects.\\n\\n<i>\"We shall part the snow-curtain of the sky, and blast the winter winds across the wasteland.\"</i>",
+    "description": "Flins summons forth the ancient power concealed within his lamp and switches to his <span style=\"color: #FFD780FF;\">Manifest Flame</span> form. This form has the following characteristics:\\n· Flins's Normal and Charged Attacks deal <span style=\"color: #FFACFFFF;\">Electro DMG</span> that cannot be overridden by other Elemental infusions, and he is unable to perform Plunging Attacks.\\n· His interruption resistance is increased.\\n· His Elemental Skill <span style=\"color: #FFD780FF;\">Ancient Rite: Arcane Light</span> is replaced with the special Elemental Skill <span style=\"color: #FFD780FF;\">Northland Spearstorm</span>.\\n\\n<span style=\"color: #FFD780FF;\">Northland Spearstorm</span>\\nFlins summons a flurry of spears in front, dealing <span style=\"color: #FFACFFFF;\">AoE Electro DMG</span> and causing his Elemental Burst <span style=\"color: #FFD780FF;\">Ancient Ritual: Cometh the Night</span> to be replaced with the special Elemental Burst <button data-link=\"11200001\"><span style=\"color: #FFD780FF;\">Thunderous Symphony</span></button> for the next 6s.\\nThe base CD of <span style=\"color: #FFD780FF;\">Northland Spearstorm</span> is 6s and will not be affected by other effects.\\n\\n<i>\"We shall part the snow-curtain of the sky, and blast the winter winds across the wasteland.\"</i>",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",

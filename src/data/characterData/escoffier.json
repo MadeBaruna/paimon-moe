@@ -443,7 +443,7 @@
   "constellations": [
     {
       "name": "Pre-Dinner Dance for Your Taste Buds",
-      "description": "When 4 party members are <span style=\"color: #80C0FFFF;\">Hydro</span> or <span style=\"color: #99FFFFFF;\">Cryo</span>, all nearby party members will have their <span style=\"color: #99FFFFFF;\">Cryo DMG</span> CRIT DMG increased by 60% for 15s after Escoffier uses her Elemental Skill <span style=\"color: #FFD780FF;\">Low-Temperature Cooking</span> or Elemental Burst <span style=\"color: #FFD780FF;\">Scoring Cuts</span>.\\nYou must first unlock the Passive Talent \"Inspiration-Immersed Seasoning.\""
+      "description": "When 4 party members are <span style=\"color: #80C0FFFF;\">Hydro</span> or <span style=\"color: #99FFFFFF;\">Cryo</span>, all nearby party members will have their <span style=\"color: #99FFFFFF;\">Cryo DMG</span> CRIT DMG increased by 60% for 15s after Escoffier uses her Elemental Skill <span style=\"color: #FFD780FF;\">Low-Temperature Cooking</span> or Elemental Burst <span style=\"color: #FFD780FF;\">Scoring Cuts</span>.\\nYou must first unlock the Ascension Talent \"Inspiration-Immersed Seasoning.\""
     },
     {
       "name": "Fresh, Fragrant Stew Is an Art",
@@ -455,7 +455,7 @@
     },
     {
       "name": "Secret Rosemary Recipe",
-      "description": "<span style=\"color: #FFD780FF;\">Rehab Diet</span> lasts 6 more seconds. While it is active, you have a chance of healing 100% extra HP and restoring 2 Energy to Escoffier when you trigger healing through <span style=\"color: #FFD780FF;\">Rehab Diet</span>. This chance corresponds to Escoffier's CRIT Rate. You can trigger this effect 7 times during any one <span style=\"color: #FFD780FF;\">Rehab Diet</span>'s duration.\\nYou must first unlock the Passive Talent \"Better to Salivate Than Medicate.\""
+      "description": "<span style=\"color: #FFD780FF;\">Rehab Diet</span> lasts 6 more seconds. While it is active, you have a chance of healing 100% extra HP and restoring 2 Energy to Escoffier when you trigger healing through <span style=\"color: #FFD780FF;\">Rehab Diet</span>. This chance corresponds to Escoffier's CRIT Rate. You can trigger this effect 7 times during any one <span style=\"color: #FFD780FF;\">Rehab Diet</span>'s duration.\\nYou must first unlock the Ascension Talent \"Better to Salivate Than Medicate.\""
     },
     {
       "name": "Symphony of a Thousand Sauces",
@@ -1084,9 +1084,15 @@
       ]
     ]
   },
+  "links": {
+    "11120002": {
+      "title": "Off-the-Cuff Cookery Mode",
+      "desc": "<span style=\"color: #FFD780FF;\">Cooking Mek: Off-the-Cuff Cookery Mode</span>\\n· Places the Cooking Mek on the field. The Cooking Mek can absorb elemental attacks. When the absorbed elemental energy hits a certain limit, Escoffier can convert the ingredients placed within it into wonderful food.\\n· Escoffier needs time to purchase new ingredients, so she can only make a certain number of dishes like this each week. The number of dishes Escoffier can make resets every Monday at 4:00 AM."
+    }
+  },
   "elementalSkill": {
     "name": "Low-Temperature Cooking",
-    "description": "Behold the true meaning of \"cooking\"! Escoffier will demonstrate different cooking techniques when you Tap or Hold this skill, but rest assured, each of them is Fontaine's pride and joy.\\n\\n<span style=\"color: #FFD780FF;\">Tap</span>\\nActivates her All-Spectrum Multi-Use Cooking Mek in its Cold Storage mode and deals <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span> to nearby opponents.\\n\\n<span style=\"color: #FFD780FF;\">Cooking Mek: Cold Storage Mode</span>\\nFollows the current active character and fires Frosty Parfaits at nearby opponents at intervals, dealing <span style=\"color: #99FFFFFF;\">Cryo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Arkhe: Ousia</span>\\nAt intervals, Escoffier will summon a Surging Blade when activating her Cooking Mek in Cold Storage mode, dealing Ousia-aligned <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Hold</span>\\nActivates her All-Spectrum Multi-Use Cooking Mek's <span style=\"color: #FFD780FF;\">Off-the-Cuff Cookery Mode</span>.\\n\\n<i>The All-Spectrum Multi-Use Cooking Mek has exceptional cold storage functions. As it should — the preservation of freshness is foundational to flavor, after all!</i>",
+    "description": "Behold the true meaning of \"cooking\"! Escoffier will demonstrate different cooking techniques when you Tap or Hold this skill, but rest assured, each of them is Fontaine's pride and joy.\\n\\n<span style=\"color: #FFD780FF;\">Tap</span>\\nActivates her All-Spectrum Multi-Use Cooking Mek in its Cold Storage mode and deals <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span> to nearby opponents.\\n\\n<span style=\"color: #FFD780FF;\">Cooking Mek: Cold Storage Mode</span>\\nFollows the current active character and fires Frosty Parfaits at nearby opponents at intervals, dealing <span style=\"color: #99FFFFFF;\">Cryo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Arkhe: Ousia</span>\\nAt intervals, Escoffier will summon a Surging Blade when activating her Cooking Mek in Cold Storage mode, dealing Ousia-aligned <span style=\"color: #99FFFFFF;\">AoE Cryo DMG</span>.\\n\\n<span style=\"color: #FFD780FF;\">Hold</span>\\nActivates her All-Spectrum Multi-Use Cooking Mek's <button data-link=\"11120002\"><span style=\"color: #FFD780FF;\">Off-the-Cuff Cookery Mode</span></button>.\\n\\n<i>The All-Spectrum Multi-Use Cooking Mek has exceptional cold storage functions. As it should — the preservation of freshness is foundational to flavor, after all!</i>",
     "skillLabels": [
       "Skill DMG",
       "Frosty Parfait DMG",

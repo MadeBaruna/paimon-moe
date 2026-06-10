@@ -463,7 +463,7 @@
     },
     {
       "name": "The Burden of Creative Genius",
-      "description": "For the next 15s after using the Elemental Burst <span style=\"color: #FFD780FF;\">Precision Hydronic Cooler</span>, DMG from nearby active characters' Electro-Charged, Bloom, Lunar-Charged, and Lunar-Bloom reactions is increased by 15%.\\n<span style=\"color: #FFD780FF;\">Moonsign: Ascendant Gleam</span>: DMG from the aforementioned reactions will be further increased by 20%."
+      "description": "For the next 15s after using the Elemental Burst <span style=\"color: #FFD780FF;\">Precision Hydronic Cooler</span>, DMG from nearby active characters' Electro-Charged, Bloom, Lunar-Charged, Lunar-Bloom, and Lunar-Crystallize reactions is increased by 15%.\\n<span style=\"color: #FFD780FF;\">Moonsign: Ascendant Gleam</span>: DMG from the aforementioned reactions will be further increased by 20%."
     }
   ],
   "passives": [

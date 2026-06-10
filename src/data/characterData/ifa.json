@@ -447,7 +447,7 @@
     },
     {
       "name": "Guiding Spirit of Ballistic Prayer",
-      "description": "When Ifa is in the Nightsoul's Blessing state, every Nightsoul point the party has above a total of 60 will grant Ifa 4 additional <span style=\"color: #FFD780FF;\">Rescue Essentials</span> points.\\nAdditionally, Ifa's Rescue Essentials limit is increased by 50.\\nYou must first unlock the Passive Talent <span style=\"color: #FFD780FF;\">Field Medic's Vision</span>."
+      "description": "When Ifa is in the Nightsoul's Blessing state, every Nightsoul point the party has above a total of 60 will grant Ifa 4 additional <span style=\"color: #FFD780FF;\">Rescue Essentials</span> points.\\nAdditionally, Ifa's Rescue Essentials limit is increased by 50.\\nYou must first unlock the Ascension Talent <span style=\"color: #FFD780FF;\">Field Medic's Vision</span>."
     },
     {
       "name": "Rebuttal in Negotiations With the Night",
@@ -484,9 +484,23 @@
       "description": "While in an area with Phlogiston Mechanics within Natlan, when the current active party member or indwelt saurian has less than 40% HP, Ifa will consume 10 Phlogiston and restore 40% of their HP. This effect can trigger once every 10s, and does not take effect in Domains, Trounce Domains, or the Spiral Abyss."
     }
   ],
+  "links": {
+    "11130001": {
+      "title": "Supporting Fire",
+      "desc": "In the Nightsoul's Blessing State, Ifa's Normal Attacks will turn into Supporting Fire.\\n<span style=\"color: #FFD780FF;\">Tap</span>\\nFires a Tonicshot.\\n<span style=\"color: #FFD780FF;\">Hold</span>\\nContinuously fires Tonicshots.\\n<span style=\"color: #FFD780FF;\">Tonicshot</span>\\nDeals Nightsoul-aligned <span style=\"color: #80FFD7FF;\">Anemo DMG</span>, and will heal all nearby party members based on Ifa's Elemental Mastery upon hitting an opponent."
+    },
+    "11130003": {
+      "title": "Nightsoul's Blessing: Ifa",
+      "desc": "Continuously consumes Nightsoul points. This state will end when Ifa runs out of Nightsoul points or if he uses this skill again. His Nightsoul's Blessing state has the following properties:\\n· Hovers with Cacucu's help, increasing Ifa's Movement SPD and interruption resistance. In this state, Ifa will continuously consume Nightsoul points to maintain this hovering state. If he sprints or accelerates, he will consume additional points.\\n· When he uses Normal Attacks, he will use different kinds of Supporting Fire depending on whether you Tap or Hold."
+    },
+    "11130004": {
+      "title": "Sedation Mark",
+      "desc": "This effect will explode after a short delay and disappear, dealing AoE DMG aligned with the corresponding element. The Therapeutic Sedative can apply Sedation Marks to a maximum of 4 hit opponents. A single opponent cannot receive Marks of different elements simultaneously."
+    }
+  },
   "burst": {
     "name": "Compound Sedation Field",
-    "description": "Fires a Therapeutic Sedative at a (temporarily aggressive) opponent. The sedative will explode on impact, creating a restraining wind current that pulls nearby objects and opponents in while dealing Nightsoul-aligned <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span>.\\nWhen the Therapeutic Sedative hits an opponent affected by <span style=\"color: #80C0FFFF;\">Hydro</span>/<span style=\"color: #FF9999FF;\">Pyro</span>/<span style=\"color: #99FFFFFF;\">Cryo</span>/<span style=\"color: #FFACFFFF;\">Electro</span>, it will apply a <span style=\"color: #FFD780FF;\">Sedation Mark</span> to them.\\n\\n<i>\"We must calm our patients down before starting treatment... even if that sometimes means resorting to bullets. Let's get 'em, Cacucu.\"\\n\"I gotcha, bro!\"</i>",
+    "description": "Fires a Therapeutic Sedative at a (temporarily aggressive) opponent. The sedative will explode on impact, creating a restraining wind current that pulls nearby objects and opponents in while dealing Nightsoul-aligned <span style=\"color: #80FFD7FF;\">AoE Anemo DMG</span>.\\nWhen the Therapeutic Sedative hits an opponent affected by <span style=\"color: #80C0FFFF;\">Hydro</span>/<span style=\"color: #FF9999FF;\">Pyro</span>/<span style=\"color: #99FFFFFF;\">Cryo</span>/<span style=\"color: #FFACFFFF;\">Electro</span>, it will apply a <button data-link=\"11130004\"><span style=\"color: #FFD780FF;\">Sedation Mark</span></button> to them.\\n\\n<i>\"We must calm our patients down before starting treatment... even if that sometimes means resorting to bullets. Let's get 'em, Cacucu.\"\\n\"I gotcha, bro!\"</i>",
     "skillLabels": [
       "Skill DMG",
       "Sedation Mark DMG",
@@ -1060,7 +1074,7 @@
   },
   "elementalSkill": {
     "name": "Airborne Disease Prevention",
-    "description": "It's time for the real bash bros to step up! Ifa calls Cacucu in as backup.\\nAfter using this skill, Ifa gains 80 Nightsoul points and enters the <span style=\"color: #FFD780FF;\">Nightsoul's Blessing</span> state. In the Nightsoul's Blessing state, Ifa will hover with Cacucu's help. When he uses Normal Attacks in this state, he will use different kinds of <span style=\"color: #FFD780FF;\">Supporting Fire</span> depending on whether you Tap or Hold, firing Tonicshots that are capable of healing all party members.\\n\\nAdditionally, Holding the Elemental Skill <span style=\"color: #FFD780FF;\">Airborne Disease Prevention</span> while Ifa is in Nightsoul's Blessing will cause him to use a Nightsoul-aligned Plunging Attack. Letting go of the skill button will interrupt this Plunging Attack to maintain his hover. If Ifa lands due to this Plunging Attack, his Nightsoul's Blessing state will end.\\n\\n<i>\"When rendering medical assistance, you've gotta address the root problem first. What's that they say? Save lives first, treat the wounds later?\"\\n\"You got it, bro!\"</i>",
+    "description": "It's time for the real bash bros to step up! Ifa calls Cacucu in as backup.\\nAfter using this skill, Ifa gains 80 Nightsoul points and enters the <button data-link=\"11130003\"><span style=\"color: #FFD780FF;\">Nightsoul's Blessing</span></button> state. In the Nightsoul's Blessing state, Ifa will hover with Cacucu's help. When he uses Normal Attacks in this state, he will use different kinds of <button data-link=\"11130001\"><span style=\"color: #FFD780FF;\">Supporting Fire</span></button> depending on whether you Tap or Hold, firing Tonicshots that are capable of healing all party members.\\n\\nAdditionally, Holding the Elemental Skill <span style=\"color: #FFD780FF;\">Airborne Disease Prevention</span> while Ifa is in Nightsoul's Blessing will cause him to use a Nightsoul-aligned Plunging Attack. Letting go of the skill button will interrupt this Plunging Attack to maintain his hover. If Ifa lands due to this Plunging Attack, his Nightsoul's Blessing state will end.\\n\\n<i>\"When rendering medical assistance, you've gotta address the root problem first. What's that they say? Save lives first, treat the wounds later?\"\\n\"You got it, bro!\"</i>",
     "skillLabels": [
       "Tonicshot DMG",
       "Tonicshot Healing On Hit",

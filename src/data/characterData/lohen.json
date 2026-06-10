@@ -480,9 +480,27 @@
       "description": "Lohen gains \"High Spirits\" for 9s after he unleashes the Elemental Skill <span style=\"color: #FFD780FF;\">Unforeseen Strike</span>: Increases the Skill Level of <span style=\"color: #FFD780FF;\">Unforeseen Strike</span> by 1.\\nWhen unleashing an Elemental Skill, if the Level of any other party member's Normal Attack, Elemental Skill, or Elemental Burst is not lower than Lohen's Elemental Skill Level, the duration of this instance of High Spirits will be increased by an additional 6s.\\nHigh Spirits can be gained once every 18s."
     }
   ],
+  "links": {
+    "11290001": {
+      "title": "Masterstroke",
+      "desc": "Lohen switches to this mode after he unleashes the Elemental Skill <span style=\"color: #FFD780FF;\">Unforeseen Strike</span>. Masterstroke mode has the following characteristics:\\n· DMG dealt by Lohen's Normal Attacks, Charged Attacks, and Plunging Attacks are converted to <span style=\"color: #99FFFFFF;\">Cryo DMG</span> that cannot be overridden by other infusions.\\n· When Lohen hits an opponent with a Normal Attack or Charged Attack, he accumulates <span style=\"color: #FFD780FF;\">Joy</span> that can be used to unleash the special Elemental Skill <span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span>. Lohen can unleash <span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span> up to 3 times while in <span style=\"color: #FFD780FF;\">Masterstroke</span> mode, after which, he will no longer be able to accumulate <span style=\"color: #FFD780FF;\">Joy</span>.\\n· When nearby party members deal DMG, they also accumulate <span style=\"color: #FFD780FF;\">Will to Win</span> for Lohen that can be used to increase the DMG dealt by <span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span>.\\n· Masterstroke mode ends when Lohen leaves the field. When Masterstroke mode ends, <span style=\"color: #FFD780FF;\">Joy</span> and <span style=\"color: #FFD780FF;\">Will to Win</span> will be reset to zero."
+    },
+    "11290002": {
+      "title": "Etched Into Bone and Soul",
+      "desc": "A special Elemental Skill that Lohen can use after his <span style=\"color: #FFD780FF;\">Joy</span> reaches the max limit.\\nAfter hitting an opponent, consumes all <span style=\"color: #FFD780FF;\">Joy</span> and <span style=\"color: #FFD780FF;\">Will to Win</span> to deal <span style=\"color: #99FFFFFF;\">Cryo DMG</span>. This DMG increases based on the amount of <span style=\"color: #FFD780FF;\">Will to Win</span> consumed."
+    },
+    "11290003": {
+      "title": "Joy",
+      "desc": "When Lohen hits opponents with a Normal Attack or Charged Attack while in Masterstroke mode, he will accumulate 17 <span style=\"color: #FFD780FF;\">Joy</span>. Up to 100 Joy may be accumulated at any one time.\\n<span style=\"color: #FFD780FF;\">Joy</span> can be accumulated once every 0.1s. Once <span style=\"color: #FFD780FF;\">Joy</span> reaches its max limit, Lohen's Elemental Skill <span style=\"color: #FFD780FF;\">Unforeseen Strike</span> will be replaced with the special Elemental Skill <span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span>."
+    },
+    "11290004": {
+      "title": "Will to Win",
+      "desc": "A special resource accumulated when other nearby party members deal DMG while Lohen is in Masterstroke mode. Up to 100 Will to Win may be accumulated at any one time.\\nWhile Masterstroke mode is active, when other nearby party members deal DMG, if that DMG is not less than 1000% of Lohen's Base ATK, he accumulates 20 <span style=\"color: #FFD780FF;\">Will to Win</span>. Otherwise, he accumulates 1 <span style=\"color: #FFD780FF;\">Will to Win</span>.\\nEach character can accumulate <span style=\"color: #FFD780FF;\">Will to Win</span> for Lohen once every 0.1s."
+    }
+  },
   "burst": {
     "name": "Manifest Judgment",
-    "description": "Performs a swift series of forward strikes, consuming all <span style=\"color: #FFD780FF;\">Will to Win</span> and dealing <span style=\"color: #99FFFFFF;\">Cryo DMG</span>. This DMG will be increased based on the amount of <span style=\"color: #FFD780FF;\">Will to Win</span> consumed. If Lohen is in <span style=\"color: #FFD780FF;\">Masterstroke</span> mode when this is performed, the duration of <span style=\"color: #FFD780FF;\">Masterstroke</span> will be extended by 1.65s.\\n\\n<i>\"So quick to cave? What a pity, I was just starting to enjoy myself...\"</i>",
+    "description": "Performs a swift series of forward strikes, consuming all <button data-link=\"11290004\"><span style=\"color: #FFD780FF;\">Will to Win</span></button> and dealing <span style=\"color: #99FFFFFF;\">Cryo DMG</span>. This DMG will be increased based on the amount of <span style=\"color: #FFD780FF;\">Will to Win</span> consumed. If Lohen is in <button data-link=\"11290001\"><span style=\"color: #FFD780FF;\">Masterstroke</span></button> mode when this is performed, the duration of <span style=\"color: #FFD780FF;\">Masterstroke</span> will be extended by 1.65s.\\n\\n<i>\"So quick to cave? What a pity, I was just starting to enjoy myself...\"</i>",
     "skillLabels": [
       "Skill DMG",
       "DMG Increase From Will to Win",
@@ -1169,7 +1187,7 @@
   },
   "elementalSkill": {
     "name": "Unforeseen Strike",
-    "description": "As he searches for weaknesses, Lohen switches to <span style=\"color: #FFD780FF;\">Masterstroke</span> mode. While in this state:\\n· Lohen can actively accumulate <span style=\"color: #FFD780FF;\">Joy</span>, using it to unleash the special Elemental Skill <span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span>.\\n· Nearby party members can accumulate <span style=\"color: #FFD780FF;\">Will to Win</span> for Lohen, increasing the DMG dealt by <span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span>.\\nLohen can unleash <span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span> up to 3 times while in <span style=\"color: #FFD780FF;\">Masterstroke</span> mode, after which, he will no longer be able to accumulate <span style=\"color: #FFD780FF;\">Joy</span>.\\n\\n<i>\"Chivalry? Hah, what better way to bait the trap? When an enemy dreams of an honorable victory, they inevitably fail to suspect the 'pleasant surprise' that awaits them.\"</i>",
+    "description": "As he searches for weaknesses, Lohen switches to <button data-link=\"11290001\"><span style=\"color: #FFD780FF;\">Masterstroke</span></button> mode. While in this state:\\n· Lohen can actively accumulate <button data-link=\"11290003\"><span style=\"color: #FFD780FF;\">Joy</span></button>, using it to unleash the special Elemental Skill <button data-link=\"11290002\"><span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span></button>.\\n· Nearby party members can accumulate <button data-link=\"11290004\"><span style=\"color: #FFD780FF;\">Will to Win</span></button> for Lohen, increasing the DMG dealt by <span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span>.\\nLohen can unleash <span style=\"color: #FFD780FF;\">Etched Into Bone and Soul</span> up to 3 times while in <span style=\"color: #FFD780FF;\">Masterstroke</span> mode, after which, he will no longer be able to accumulate <span style=\"color: #FFD780FF;\">Joy</span>.\\n\\n<i>\"Chivalry? Hah, what better way to bait the trap? When an enemy dreams of an honorable victory, they inevitably fail to suspect the 'pleasant surprise' that awaits them.\"</i>",
     "skillLabels": [
       "1-Hit DMG",
       "2-Hit DMG",
