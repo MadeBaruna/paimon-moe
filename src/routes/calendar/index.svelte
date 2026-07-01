@@ -72,6 +72,8 @@
     'traveler_geo',
     'traveler_electro',
     'traveler_dendro',
+    'traveler_hydro',
+    'traveler_pyro',
     'aloy',
     'diluc',
     'keqing',
@@ -509,7 +511,7 @@
             >
             <td class="cursor-pointer text-white px-4 py-1 border-t border-gray-700 text-center">{val}</td>
             <td class="cursor-pointer text-xs md:text-base text-white py-1 border-t border-gray-700">
-              {lastBannerDate[char].humanize(true)}
+              {lastBannerDate[char]?.humanize(true)}
             </td>
           </tr>
         {/each}
