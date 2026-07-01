@@ -2136,7 +2136,7 @@ export const itemList = {
     id: 'the_cornerstone_of_stars_and_flames',
     name: 'The Cornerstone of Stars and Flames',
   },
-  madmans_restraint: { id: 'tail_of_boreas:', name: "Madman's Restraint" },
+  madmans_restraint: { id: 'madmans_restraint', name: "Madman's Restraint" },
   sundered_glory_of_the_far_north_scions: {
     id: 'sundered_glory_of_the_far_north_scions',
     name: 'Sundered Glory of the Far-North Scions',
