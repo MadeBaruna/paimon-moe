@@ -14412,7 +14412,7 @@ export const characters = {
   },
   traveler_hydro: {
     id: 'traveler_hydro',
-    name: 'Traveler',
+    name: 'Traveler (Hydro)',
     rarity: 5,
     weapon: weapons.sword,
     stats: {
@@ -14565,7 +14565,7 @@ export const characters = {
   },
   traveler_pyro: {
     id: 'traveler_pyro',
-    name: 'Traveler',
+    name: 'Traveler (Pyro)',
     rarity: 5,
     weapon: weapons.sword,
     stats: {
