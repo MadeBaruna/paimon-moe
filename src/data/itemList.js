@@ -2136,4 +2136,5 @@ export const itemList = {
     id: 'the_cornerstone_of_stars_and_flames',
     name: 'The Cornerstone of Stars and Flames',
   },
+  madmans_restraint: { id: 'tail_of_boreas:', name: "Madman's Restraint" },
 };

@@ -29,8 +29,12 @@
 </div>
 
 <style lang="postcss">
-:global(button[data-link]):hover {
+:global(button[data-link]) {
   text-decoration: underline;
+}
+
+:global(button[data-link]):hover {
+  filter: brightness(0.8);
 }
 
 :global(.text-highlight) {

@@ -9296,7 +9296,6 @@ export const characters = {
       boss: itemList.ascended_sample_knight,
     },
     element: elements.cryo,
-    new: true,
   },
   lynette: {
     id: 'lynette',
@@ -10900,7 +10899,6 @@ export const characters = {
       boss: itemList.counterfeit_resin,
     },
     element: elements.pyro,
-    new: true,
   },
   nilou: {
     id: 'nilou',
@@ -11626,7 +11624,6 @@ export const characters = {
       boss: itemList.mask_of_the_virtuous_doctor,
     },
     element: elements.anemo,
-    new: true,
   },
   qiqi: {
     id: 'qiqi',
@@ -12207,6 +12204,152 @@ export const characters = {
       boss: itemList.shadow_of_the_warrior,
     },
     element: elements.cryo,
+  },
+  sandrone: {
+    id: 'sandrone',
+    name: 'Sandrone',
+    rarity: 5,
+    weapon: weapons.claymore,
+    stats: {
+      hp: 13226,
+      atk: 342,
+      def: 752,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 3,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.plume_of_the_fallen_watcher,
+            amount: 2,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 10,
+          },
+          {
+            item: itemList.broken_drive_shaft,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.plume_of_the_fallen_watcher,
+            amount: 4,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 20,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.plume_of_the_fallen_watcher,
+            amount: 8,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 30,
+          },
+          {
+            item: itemList.reinforced_drive_shaft,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.plume_of_the_fallen_watcher,
+            amount: 12,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 45,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.shivada_jade_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.plume_of_the_fallen_watcher,
+            amount: 20,
+          },
+          {
+            item: itemList.subdetection_unit,
+            amount: 60,
+          },
+          {
+            item: itemList.precision_drive_shaft,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.broken_drive_shaft, itemList.reinforced_drive_shaft, itemList.precision_drive_shaft],
+      book: [itemList.teachings_of_vagrancy, itemList.guide_to_vagrancy, itemList.philosophies_of_vagrancy],
+      boss: itemList.madmans_restraint,
+    },
+    element: elements.cryo,
+    new: true,
   },
   sangonomiya_kokomi: {
     id: 'sangonomiya_kokomi',
