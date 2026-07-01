@@ -2137,4 +2137,39 @@ export const itemList = {
     name: 'The Cornerstone of Stars and Flames',
   },
   madmans_restraint: { id: 'tail_of_boreas:', name: "Madman's Restraint" },
+  sundered_glory_of_the_far_north_scions: {
+    id: 'sundered_glory_of_the_far_north_scions',
+    name: 'Sundered Glory of the Far-North Scions',
+    rarity: 2,
+  },
+  unyielding_delusion_of_the_far_north_scions: {
+    id: 'unyielding_delusion_of_the_far_north_scions',
+    name: 'Unyielding Delusion of the Far-North Scions',
+    rarity: 3,
+  },
+  oblation_of_the_far_north_scions: {
+    id: 'oblation_of_the_far_north_scions',
+    name: 'Oblation of the Far-North Scions',
+    rarity: 4,
+  },
+  aureate_radiance_of_the_far_north_scions: {
+    id: 'aureate_radiance_of_the_far_north_scions',
+    name: 'Aureate Radiance of the Far-North Scions',
+    rarity: 5,
+  },
+  fractured_lunar_iron: {
+    id: 'fractured_lunar_iron',
+    name: 'Fractured Lunar Iron',
+    rarity: 2,
+  },
+  depleted_lunar_iron: {
+    id: 'depleted_lunar_iron',
+    name: 'Depleted Lunar Iron',
+    rarity: 3,
+  },
+  unblemished_lunar_iron: {
+    id: 'unblemished_lunar_iron',
+    name: 'Unblemished Lunar Iron',
+    rarity: 4,
+  },
 };
