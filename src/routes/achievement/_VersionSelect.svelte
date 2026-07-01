@@ -64,6 +64,7 @@
     '6.4',
     '6.5',
     '6.6',
+    '6.7',
   ].reduce((acc, version) => {
     const parent = version.split('.')[0];
     if (!acc[parent]) acc[parent] = [];
