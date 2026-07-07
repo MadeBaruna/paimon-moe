@@ -90,9 +90,9 @@
     }
   }
 
-  $: characters = Object.entries(characterList).sort((a, b) => a[1].name.localeCompare(b[1].name));
+  $: characters = Object.entries(characterList).sort((a, b) => $t(a[1].name).localeCompare($t(b[1].name)));
 
-  $: filteredCharacter = characters.filter((e) => e[1].name.toLowerCase().includes(search.toLowerCase()));
+  $: filteredCharacter = characters.filter((e) => $t(e[1].name).toLowerCase().includes(search.toLowerCase()));
   $: maxItemRow = Math.min(6, filteredCharacter.length);
 
   $: nothingSelected = selected === null;
