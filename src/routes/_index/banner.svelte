@@ -13,25 +13,25 @@
   const dispatch = createEventDispatcher();
 
   const featured = {
-    citlali: {
-      name: 'Citlali',
+    columbina: {
+      name: 'Columbina',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
-    sandrone: {
-      name: 'Sandrone',
+    raiden_shogun: {
+      name: 'Raiden Shogun',
       rarity: 'legendary',
       count: 0,
       average: '...',
       percentage: '...',
     },
   };
-  const bannerId = 300102;
-  const image = 'citlali sandrone.webp';
+  const bannerId = 300103;
+  const image = 'columbina raiden.webp';
   const width = 800;
-  const height = 367;
+  const height = 309;
 
   let loading = true;
   let user = '';
