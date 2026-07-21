@@ -1903,4 +1903,28 @@ export const bannersDual = {
       timezoneDependent: true,
     },
   ],
+  'Somnias a Luna 2': [
+    {
+      name: 'Somnias a Luna',
+      image: 2,
+      shortName: 'Columbina',
+      start: '2026-07-21 18:00:00',
+      end: '2026-08-11 14:59:00',
+      color: '#ddeafd',
+      featured: ['columbina', 'raiden_shogun'],
+      featuredRare: ['jahoda', 'ororon', 'sethos'],
+      version: '6.7',
+    },
+    {
+      name: 'Reign of Serenity',
+      image: 7,
+      shortName: 'Raiden Shogun',
+      start: '2026-07-21 18:00:00',
+      end: '2026-08-11 14:59:00',
+      color: '#53dcb9',
+      featured: ['columbina', 'raiden_shogun'],
+      featuredRare: ['jahoda', 'ororon', 'sethos'],
+      version: '6.7',
+    },
+  ],
 };
