@@ -289,14 +289,19 @@
 
     await tick();
 
+    let totalFive = allLegendary.length;
+    let totalFour = allRare.length;
+    let totalPulls = currentPulls.length;
+    let totalOther = totalPulls - totalFour - totalFive;
+
     new Chart(pieChart, {
       type: 'pie',
       data: {
-        labels: ['Total Pulls', 'Total 5*', 'Total 4*'],
+        labels: ['Total Other', 'Total 5*', 'Total 4*'],
         datasets: [
           {
             label: 'total',
-            data: [currentPulls.length, allLegendary.length, allRare.length],
+            data: [totalOther, totalFive, totalFour],
             backgroundColor: ['rgba(107, 161, 192, 0.7)', 'rgba(255, 177, 63, 0.7)', 'rgba(210, 143, 214, 0.7)'],
             borderColor: ['#6BA1C0', '#FFB13F', '#D28FD6'],
             borderWidth: 1,
