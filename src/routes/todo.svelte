@@ -16,6 +16,9 @@
   import { dropRates } from '../data/dropRates';
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
+  
+  const AMOUNT_GOLD_CHANGE = [1000, 10000, 50000]; 
+  const AMOUNT_ITEM_CHANGE = [1, 5, 10];
 
   const itemList = {
     ...itemListData,
@@ -122,6 +125,16 @@
         }
         i++;
       }
+
+      return n;
+    });
+  }
+
+  function increase(key, val) {
+    todos.update((n) => {
+      let target = n.find(c=>c.resources.hasOwnProperty(key));
+      if(target)
+        target.resources[key] += val;
 
       return n;
     });
@@ -403,27 +416,17 @@
                 </span>
                 {$t(itemList[id].name)}
               </span>
-              {#if id === 'mora'}
-                <Button size="sm" disabled={amount === 0 && !adding} on:click={() => decrease(id, 1000)}>
-                  {adding ? '+' : '-'}1000
+              {#each id == 'mora'? AMOUNT_GOLD_CHANGE: AMOUNT_ITEM_CHANGE as changeAmount}
+                <Button size="sm" disabled={amount === 0 && !adding} className="{id == 'mora'? '': 'w-10'} mr-1" on:click={() => decrease(id, changeAmount)}>
+                  {`-${changeAmount}`}
                 </Button>
-                <Button size="sm" disabled={amount === 0 && !adding} on:click={() => decrease(id, 10000)}>
-                  {adding ? '+' : '-'}10000
+              {/each}
+              <span class="block mb-1"></span>
+              {#each id == 'mora'? AMOUNT_GOLD_CHANGE: AMOUNT_ITEM_CHANGE as changeAmount}
+                <Button size="sm" className="{id == 'mora'? '': 'w-10'} mr-1" on:click={() => increase(id, changeAmount)}>
+                  {`+${changeAmount}`}
                 </Button>
-                <Button size="sm" disabled={amount === 0 && !adding} on:click={() => decrease(id, 50000)}>
-                  {adding ? '+' : '-'}50000
-                </Button>
-              {:else}
-                <Button size="sm" disabled={amount === 0 && !adding} className="w-10" on:click={() => decrease(id, 1)}>
-                  {adding ? '+' : '-'}1
-                </Button>
-                <Button size="sm" disabled={amount === 0 && !adding} className="w-10" on:click={() => decrease(id, 5)}>
-                  {adding ? '+' : '-'}5
-                </Button>
-                <Button size="sm" disabled={amount === 0 && !adding} className="w-10" on:click={() => decrease(id, 10)}>
-                  {adding ? '+' : '-'}10
-                </Button>
-              {/if}
+              {/each}
             </td>
           </tr>
         {/each}
