@@ -201,8 +201,12 @@
       const localSave = await getLocalSaveJson();
       const localSize = new Blob([localSave]).size / 1000;
 
+      const negligibleKeys = ['converted', 'locale'];
+      const localSaveKeys = Object.keys(JSON.parse(localSave));
+      const isLocalSaveNegligible = localSaveKeys.every(key => negligibleKeys.includes(key));
+
       const remoteTime = dayjs(data[UPDATE_TIME_KEY]);
-      if ($updateTime !== null && remoteTime.diff($updateTime) !== 0) {
+      if ($updateTime !== null && !isLocalSaveNegligible && remoteTime.diff($updateTime) !== 0) {
         console.log('DRIVE SYNC CONFLICT!');
         openModal(
           SyncConflictModal,
