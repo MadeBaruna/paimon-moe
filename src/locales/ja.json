@@ -274,7 +274,7 @@
           "PCで原神を起動する(複数のアカウントを使う場合はゲームを再起動し、ログインし直してください)",
           "ゲーム内で祈願履歴を開き、読み込まれるまでお待ちください",
           "ゲームのインストール先フォルダーを開きます(例: C:\\Games\\Genshin Impact)",
-          "次のフォルダを開きます GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "次のフォルダを開きます GenshinImpact_Data → webCaches → 2.15.0.0 → Cache → Cache_Data",
           "「data_2」を右クリックし、「プログラムから開く」をクリックしてNotepadを選択します(「プロセスはファイルにアクセスできません。別のプロセスが使用中です。」のようなエラーが発生した場合、ゲームを終了してからお試しください)",
           "CTRL+Fを押し、「折り返しあり」にチェックを入れて検索する方向は「上へ」を選択します。それから検索する文字列に「e20190909gacha-v2」(カギ括弧は含まない)を入力し、次を検索をクリックします",
           "https://webstatic から game_biz=hk4e_global までのリンクを全てコピーしてください。urlは次のようになっています。 https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",

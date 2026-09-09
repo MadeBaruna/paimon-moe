@@ -274,7 +274,7 @@
           "Ouvrez Genshin Impact sur ce PC (Si vous utilisez plusieurs comptes, veuillez redémarrer le jeu)",
           "Ouvrez ensuite l'historique de vœux dans le jeu et attendez qu'il charge",
           "Puis ouvrez le dossier où votre jeu est installé (exemple : C:\\Games\\Genshin Impact)",
-          "Ouvrez ensuite le dossier GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "Ouvrez ensuite le dossier GenshinImpact_Data → webCaches → 2.15.0.0 → Cache → Cache_Data",
           "Faites un clic droit sur le fichier \"data_2\" puis cliquez sur \"Ouvrir avec\" puis sélectionnez Bloc-notes (Si vous obtenez une erreur comme \"Le processus ne peut pas accéder au fichier car ce fichier est utilisé par un autre processus\", veuillez d'abord quitter le jeu)",
           "Appuyez sur CTRL+F puis cochez \"Retour à la ligne\" et sélectionnez la direction \"Haut\" puis dans la zone de saisie rechercher \"e20190909gacha-v2\" (sans les guillemets) puis cliquez sur \"Suivant\"",
           "Copiez tout le lien depuis https://webstatic jusqu'à game_biz=hk4e_global, l'url ressemble à ceci : https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",
