@@ -412,11 +412,11 @@
     <div class="flex mt-2 md:mt-0">
       <div class="flex flex-col md:flex-row md:items-center mr-2">
         <p class="text-white mr-2">{$t('settings.ar')}</p>
-        <Input bind:value={arInput} placeholder="AR" type="number" min="1" className="w-24" />
+        <Input bind:value={arInput} placeholder="AR" type="number" min="1" max="60" className="w-24" />
       </div>
       <div class="flex flex-col md:flex-row md:items-center mr-2">
         <p class="text-white mr-2">{$t('settings.wl')}</p>
-        <Input bind:value={wlInput} placeholder="WL" type="number" min="1" className="w-24" />
+        <Input bind:value={wlInput} placeholder="WL" type="number" min="1" max="8" className="w-24" />
       </div>
     </div>
   </div>
