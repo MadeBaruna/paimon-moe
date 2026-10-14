@@ -56,6 +56,7 @@
     pc4: 8,
     pc5: 9,
     pclog: 7,
+    aagl: 8,
     android: 1,
     android2: 1,
     android3: 1,
@@ -963,7 +964,14 @@
           on:click={() => changeSelectedType('pc')}
           class="pill {['pc', 'pc3', 'pc4', 'pc5', 'pclocal'].includes(selectedType) ? 'active' : ''}"
         >
-          PC
+          PC (Windows)
+        </button>
+        <button
+          disabled={processingLog}
+          on:click={() => changeSelectedType('aagl')}
+          class="pill {['aagl'].includes(selectedType) ? 'active' : ''}"
+        >
+          Linux
         </button>
         <button
           disabled={processingLog}
@@ -1035,6 +1043,29 @@
           >
             Local Importer
           </button> -->
+        </div>
+      </div>
+    </div>
+  {/if}
+
+  {#if ['aagl'].includes(selectedType)}
+  <div class="flex space-x-3 mb-2">
+      <div class="flex flex-col items-center step">
+        <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">4</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content flex flex-col pb-6 pt-1">
+        <p class="text-white">{$t('wish.import.chooseMethod')}</p>
+        <div class="flex mt-4 flex-wrap">
+          <button
+            disabled={processingLog}
+            on:click={() => changeSelectedType('aagl')}
+            class="pill {selectedType === 'aagl' ? 'active' : ''}"
+          >
+            {$t('wish.import.method.aagl')}
+          </button>
         </div>
       </div>
     </div>
@@ -1294,6 +1325,21 @@
         <p class="text-white">{$t('wish.import.guide.pclocal.8')}</p>
       </div>
     </div>
+
+  {:else if selectedType === 'aagl'}
+    {#each Array(7) as _, i}
+      <div class="flex space-x-3 mb-2">
+        <div class="flex flex-col items-center step">
+          <div class="w-8 rounded-full flex justify-center items-center">
+            <span class="text-white font-bold">{5 + i}</span>
+          </div>
+          <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+        </div>
+        <div class="content flex-col items-center {i === 6 ? 'pb-8' : ''}">
+          <p class="text-white">{$t(`wish.import.guide.aagl.${i}`)}</p>
+        </div>
+      </div>
+    {/each}
   {:else if selectedType === 'ios'}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
@@ -1385,6 +1431,8 @@
         <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.pclog.6')} />
       {:else if selectedType === 'pclocal'}
         <Textarea bind:value={generatedTextInput} placeholder={$t('wish.import.guide.pclocal.9')} />
+      {:else if selectedType === 'aagl'}
+        <Textarea bind:value={generatedTextInput} placeholder={$t('wish.import.guide.aagl.7')} />
       {:else if selectedType === 'ios'}
         <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.ios2.13')} />
       {:else}

@@ -226,6 +226,7 @@
         "pc3": "Method 2",
         "pc4": "Method 2 Alt",
         "pc5": "Manual",
+        "aagl": "An Anime Game Launcher",
         "android": "Wifi",
         "android2": "Cell Data",
         "android3": "Alternative"
@@ -282,6 +283,16 @@
           "Copy all the link from https://webstatic until #/log the url looks like this: https://webstatic-sea.mihoyo.com/hk4e/event/e20190909gacha/index.html?*****#/log",
           "Paste the text to the textbox below",
           "Paste the link here... https://webstatic..."
+        ],
+        "aagl": [
+          "Open Genshin Impact in this PC (If you use multiple accounts, please restart the game)",
+          "Then open the wish history in the game and wait it to load",
+          "Open AAGL on your computer",
+          "In the top right, click the three lines to open the menu",
+          "Click 'Open Wishes' to open the wish page in your browser",
+          "Copy the link from the address bar from  https://gs until #log (the URL will look like this: https://gs.hoyoverse.com/genshin/event/e20190909gacha-df01aea2/index.html?***#/log)",
+          "Past the link into the textbox below:",
+          "Paste the link here... https://gs..."
         ],
         "android": [
           "Open Wish (in the game)",
