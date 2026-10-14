@@ -58,8 +58,8 @@
   let rare = 0;
   let nextRateUp = false;
 
-  let allLegendary = [];
-  let allRare = [];
+  let numLegendary = 0;
+  let numRare = 0;
 
   let sortBy = 'time';
   let sortOrder;
@@ -217,7 +217,7 @@
         }
 
         selectedBanners[currentBannerIndex].legendary.push(newPull);
-        allLegendary.push(newPull);
+        numLegendary ++;
       } else if (item.rarity === 4) {
         if (withRateIcon) {
           newPull.guaranteed = rateUpRare;
@@ -225,7 +225,7 @@
           newPull.loseRateOff = rateUpRare;
         }
 
-        allRare.push(newPull);
+        numRare ++;
         if (pull.type === 'character') {
           selectedBanners[currentBannerIndex].rare.character.push(newPull);
         } else if (pull.type === 'weapon') {
@@ -289,14 +289,17 @@
 
     await tick();
 
+    let numPulls = currentPulls.length;
+    let numOther = numPulls - numLegendary - numRare;
+
     new Chart(pieChart, {
       type: 'pie',
       data: {
-        labels: ['Total Pulls', 'Total 5*', 'Total 4*'],
+        labels: ['Total Other', 'Total 5*', 'Total 4*'],
         datasets: [
           {
             label: 'total',
-            data: [currentPulls.length, allLegendary.length, allRare.length],
+            data: [numOther, numLegendary, numRare],
             backgroundColor: ['rgba(107, 161, 192, 0.7)', 'rgba(255, 177, 63, 0.7)', 'rgba(210, 143, 214, 0.7)'],
             borderColor: ['#6BA1C0', '#FFB13F', '#D28FD6'],
             borderWidth: 1,
