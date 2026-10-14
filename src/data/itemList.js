@@ -1177,6 +1177,11 @@ export const itemList = {
 
   everamber: { id: 'everamber', name: 'Everamber' },
 
+	artificed_spare_clockwork_component_coppelia: {
+    id: 'artificed_spare_clockwork_component_coppelia',
+    name: 'Artificed Spare Clockwork Component — Coppelia',
+    rarity: 4,
+  },
   artificed_spare_clockwork_component_coppelius: {
     id: 'artificed_spare_clockwork_component_coppelius',
     name: 'Artificed Spare Clockwork Component — Coppelius',
@@ -1277,23 +1282,31 @@ export const itemList = {
   fragment_of_an_ancient_chord: {
     id: 'fragment_of_an_ancient_chord',
     name: 'Fragment of an Ancient Chord',
-    rarity: 2,
+    day: ['monday', 'thursday'],
+    rarity: 1,
   },
   chapter_of_an_ancient_chord: {
     id: 'chapter_of_an_ancient_chord',
     name: 'Chapter of an Ancient Chord',
-    rarity: 3,
+    day: ['monday', 'thursday'],
+    rarity: 2,
+    parent: 'fragment_of_an_ancient_chord',
   },
   movement_of_an_ancient_chord: {
     id: 'movement_of_an_ancient_chord',
     name: 'Movement of an Ancient Chord',
-    rarity: 4,
+    day: ['monday', 'thursday'],
+    rarity: 3,
+    parent: 'fragment_of_an_ancient_chord',
   },
   echo_of_an_ancient_chord: {
     id: 'echo_of_an_ancient_chord',
     name: 'Echo of an Ancient Chord',
-    rarity: 5,
+    day: ['monday', 'thursday'],
+    rarity: 4,
+    parent: 'fragment_of_an_ancient_chord',
   },
+
   transoceanic_pearl: {
     id: 'transoceanic_pearl',
     name: 'Transoceanic Pearl',
@@ -1328,43 +1341,57 @@ export const itemList = {
   broken_goblet_of_the_pristine_sea: {
     id: 'broken_goblet_of_the_pristine_sea',
     name: 'Broken Goblet of the Pristine Sea',
-    rarity: 2,
+    day: ['wednesday', 'saturday'],
+    rarity: 1,
   },
   wine_goblet_of_the_pristine_sea: {
     id: 'wine_goblet_of_the_pristine_sea',
     name: 'Wine Goblet of the Pristine Sea',
-    rarity: 3,
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+    parent: 'broken_goblet_of_the_pristine_sea',
   },
   silver_goblet_of_the_pristine_sea: {
     id: 'silver_goblet_of_the_pristine_sea',
     name: 'Silver Goblet of the Pristine Sea',
-    rarity: 4,
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'broken_goblet_of_the_pristine_sea',
   },
   golden_goblet_of_the_pristine_sea: {
     id: 'golden_goblet_of_the_pristine_sea',
     name: 'Golden Goblet of the Pristine Sea',
-    rarity: 5,
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'broken_goblet_of_the_pristine_sea',
   },
 
   dross_of_pure_sacred_dewdrop: {
     id: 'dross_of_pure_sacred_dewdrop',
     name: 'Dross of Pure Sacred Dewdrop',
-    rarity: 2,
+    day: ['tuesday', 'friday'],
+    rarity: 1,
   },
   sublimation_of_pure_sacred_dewdrop: {
     id: 'sublimation_of_pure_sacred_dewdrop',
     name: 'Sublimation of Pure Sacred Dewdrop',
-    rarity: 3,
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+    parent: 'dross_of_pure_sacred_dewdrop',
   },
   spring_of_pure_sacred_dewdrop: {
     id: 'spring_of_pure_sacred_dewdrop',
     name: 'Spring of Pure Sacred Dewdrop',
-    rarity: 4,
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'dross_of_pure_sacred_dewdrop',
   },
   essence_of_pure_sacred_dewdrop: {
     id: 'essence_of_pure_sacred_dewdrop',
     name: 'Essence of Pure Sacred Dewdrop',
-    rarity: 5,
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'dross_of_pure_sacred_dewdrop',
   },
 
   rift_core: {
@@ -1595,22 +1622,29 @@ export const itemList = {
   blazing_sacrificial_hearts_terror: {
     id: 'blazing_sacrificial_hearts_terror',
     name: "Blazing Sacrificial Heart's Terror",
-    rarity: 2,
+    day: ['monday', 'thursday'],
+    rarity: 1,
   },
   blazing_sacrificial_hearts_hesitance: {
     id: 'blazing_sacrificial_hearts_hesitance',
     name: "Blazing Sacrificial Heart's Hesitance",
-    rarity: 3,
+    day: ['monday', 'thursday'],
+    rarity: 2,
+    parent: 'blazing_sacrificial_hearts_terror',
   },
   blazing_sacrificial_hearts_resolve: {
     id: 'blazing_sacrificial_hearts_resolve',
     name: "Blazing Sacrificial Heart's Resolve",
-    rarity: 4,
+    day: ['monday', 'thursday'],
+    rarity: 3,
+    parent: 'blazing_sacrificial_hearts_terror',
   },
   blazing_sacrificial_hearts_splendor: {
     id: 'blazing_sacrificial_hearts_splendor',
     name: "Blazing Sacrificial Heart's Splendor",
-    rarity: 5,
+    day: ['monday', 'thursday'],
+    rarity: 4,
+    parent: 'blazing_sacrificial_hearts_terror',
   },
   shard_of_a_shattered_will: {
     id: 'shard_of_a_shattered_will',
@@ -1630,22 +1664,29 @@ export const itemList = {
   night_winds_mystic_consideration: {
     id: 'night_winds_mystic_consideration',
     name: "Night-Wind's Mystic Consideration",
-    rarity: 2,
+    day: ['wednesday', 'saturday'],
+    rarity: 1,
   },
   night_winds_mystic_premonition: {
     id: 'night_winds_mystic_premonition',
     name: "Night-Wind's Mystic Premonition",
-    rarity: 3,
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+    parent: 'night_winds_mystic_consideration',
   },
   night_winds_mystic_augury: {
     id: 'night_winds_mystic_augury',
     name: "Night-Wind's Mystic Augury",
-    rarity: 4,
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'night_winds_mystic_consideration',
   },
   night_winds_mystic_revelation: {
     id: 'night_winds_mystic_revelation',
     name: "Night-Wind's Mystic Revelation",
-    rarity: 5,
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'night_winds_mystic_consideration',
   },
   axis_of_the_secret_source: {
     id: 'axis_of_the_secret_source',
@@ -1680,22 +1721,29 @@ export const itemList = {
   delirious_decadence_of_the_sacred_lord: {
     id: 'delirious_decadence_of_the_sacred_lord',
     name: 'Delirious Decadence of the Sacred Lord',
-    rarity: 2,
+    day: ['tuesday', 'friday'],
+    rarity: 1,
   },
   delirious_desolation_of_the_sacred_lord: {
     id: 'delirious_desolation_of_the_sacred_lord',
     name: 'Delirious Desolation of the Sacred Lord',
-    rarity: 3,
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+    parent: 'delirious_decadence_of_the_sacred_lord',
   },
   delirious_demeanor_of_the_sacred_lord: {
     id: 'delirious_demeanor_of_the_sacred_lord',
     name: 'Delirious Demeanor of the Sacred Lord',
-    rarity: 4,
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'delirious_decadence_of_the_sacred_lord',
   },
   delirious_divinity_of_the_sacred_lord: {
     id: 'delirious_divinity_of_the_sacred_lord',
     name: 'Delirious Divinity of the Sacred Lord',
-    rarity: 5,
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'delirious_decadence_of_the_sacred_lord',
   },
   saurian_claw_succulent: {
     id: 'saurian_claw_succulent',
@@ -1859,25 +1907,63 @@ export const itemList = {
     rarity: 4,
     parent: 'teachings_of_moonlight',
   },
+  sundered_glory_of_the_far_north_scions: {
+    id: 'sundered_glory_of_the_far_north_scions',
+    name: 'Sundered Glory of the Far-North Scions',
+    day: ['wednesday', 'saturday'],
+    rarity: 1,
+  },
   lightless_bone: {
     id: 'lightless_bone',
     name: 'Lightless Bone',
     rarity: 2,
+  },
+  unyielding_delusion_of_the_far_north_scions: {
+    id: 'unyielding_delusion_of_the_far_north_scions',
+    name: 'Unyielding Delusion of the Far-North Scions',
+    day: ['wednesday', 'saturday'],
+    rarity: 2,
+    parent: 'sundered_glory_of_the_far_north_scions',
   },
   glowing_remains: {
     id: 'glowing_remains',
     name: 'Glowing Remains',
     rarity: 3,
   },
+  immaculate_warrant: {
+    id: 'immaculate_warrant',
+    name: 'Immaculate Warrant',
+    rarity: 2,
+  },
+  oblation_of_the_far_north_scions: {
+    id: 'oblation_of_the_far_north_scions',
+    name: 'Oblation of the Far-North Scions',
+    day: ['wednesday', 'saturday'],
+    rarity: 3,
+    parent: 'sundered_glory_of_the_far_north_scions',
+  },
   radiant_exoskeleton: {
     id: 'radiant_exoskeleton',
     name: 'Radiant Exoskeleton',
     rarity: 4,
   },
+  frost_etched_warrant: {
+    id: 'frost_etched_warrant',
+    name: 'Frost-Etched Warrant',
+    rarity: 3,
+  },
+  aureate_radiance_of_the_far_north_scions: {
+    id: 'aureate_radiance_of_the_far_north_scions',
+    name: 'Aureate Radiance of the Far-North Scions',
+    day: ['wednesday', 'saturday'],
+    rarity: 4,
+    parent: 'sundered_glory_of_the_far_north_scions',
+  },
   artful_device_fragment: {
     id: 'artful_device_fragment',
     name: 'Artful Device Fragment',
-    rarity: 2,
+    day: ['monday', 'thursday'],
+    rarity: 1,
   },
   frostnights_glimmer: {
     id: 'frostnights_glimmer',
@@ -1892,7 +1978,9 @@ export const itemList = {
   artful_device_replica: {
     id: 'artful_device_replica',
     name: 'Artful Device Replica',
-    rarity: 3,
+    day: ['monday', 'thursday'],
+    rarity: 2,
+    parent: 'artful_device_fragment',
   },
   frostnights_glow: {
     id: 'frostnights_glow',
@@ -1907,7 +1995,9 @@ export const itemList = {
   artful_device_inheritance: {
     id: 'artful_device_inheritance',
     name: 'Artful Device Inheritance',
-    rarity: 4,
+    day: ['monday', 'thursday'],
+    rarity: 3,
+    parent: 'artful_device_fragment',
   },
   frostnights_glory: {
     id: 'frostnights_glory',
@@ -1922,7 +2012,9 @@ export const itemList = {
   artful_device_wish: {
     id: 'artful_device_wish',
     name: 'Artful Device Wish',
-    rarity: 5,
+    day: ['monday', 'thursday'],
+    rarity: 4,
+    parent: 'artful_device_fragment',
   },
   precision_kuuvahki_stamping_die: {
     id: 'precision_kuuvahki_stamping_die',
@@ -1981,7 +2073,8 @@ export const itemList = {
   ember_of_long_night_flint: {
     id: 'ember_of_long_night_flint',
     name: 'Ember of Long Night Flint',
-    rarity: 2,
+    day: ['tuesday', 'friday'],
+    rarity: 1,
   },
   mistshroud_manifestation: {
     id: 'mistshroud_manifestation',
@@ -1991,7 +2084,9 @@ export const itemList = {
   afterglow_of_long_night_flint: {
     id: 'afterglow_of_long_night_flint',
     name: 'Afterglow of Long Night Flint',
-    rarity: 3,
+    day: ['tuesday', 'friday'],
+    rarity: 2,
+    parent: 'ember_of_long_night_flint',
   },
   mistshroud_plate: {
     id: 'mistshroud_plate',
@@ -2001,7 +2096,9 @@ export const itemList = {
   flare_of_long_night_flint: {
     id: 'flare_of_long_night_flint',
     name: 'Flare of Long Night Flint',
-    rarity: 4,
+    day: ['tuesday', 'friday'],
+    rarity: 3,
+    parent: 'ember_of_long_night_flint',
   },
   mistshroud_helmet: {
     id: 'mistshroud_helmet',
@@ -2011,7 +2108,9 @@ export const itemList = {
   blaze_of_long_night_flint: {
     id: 'blaze_of_long_night_flint',
     name: 'Blaze of Long Night Flint',
-    rarity: 5,
+    day: ['tuesday', 'friday'],
+    rarity: 4,
+    parent: 'ember_of_long_night_flint',
   },
   radiant_antler: {
     id: 'radiant_antler',
