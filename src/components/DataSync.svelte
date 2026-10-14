@@ -12,8 +12,8 @@
 
   const { open: openModal, close: closeModal } = getContext('simple-modal');
 
-  const CLIENT_ID = import.meta.env.VITE_GOOGLE_DRIVE_CLIENT_ID;
-  const API_KEY = import.meta.env.VITE_GOOGLE_DRIVE_API_KEY;
+  let CLIENT_ID = '';
+  let API_KEY = '';
   const DISCOVERY_DOCS = ['https://www.googleapis.com/discovery/v1/apis/drive/v3/rest'];
   const SCOPES = 'https://www.googleapis.com/auth/drive.appdata';
 
@@ -34,8 +34,18 @@
     // };
   });
 
-  function startSync() {
+  async function startSync() {
     synced.set(false);
+    try {
+      const res = await fetch(`${import.meta.env.VITE_API_HOST}/google-drive-config`);
+      const config = await res.json();
+      CLIENT_ID = config.clientId;
+      API_KEY = config.apiKey;
+    } catch (err) {
+      console.error('failed to load drive config', err);
+      handleError();
+      return;
+    }
     const script = document.createElement('script');
     script.onload = handleClientLoad;
     script.onerror = handleError;

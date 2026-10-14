@@ -1,8 +1,6 @@
 import fs from 'fs';
 
 let envString = '';
-envString += `VITE_GOOGLE_DRIVE_CLIENT_ID=${process.env.GOOGLE_DRIVE_CLIENT_ID}\n`;
-envString += `VITE_GOOGLE_DRIVE_API_KEY=${process.env.GOOGLE_DRIVE_API_KEY}\n`;
 envString += `VITE_API_HOST=${process.env.API_HOST}\n`;
 envString += `VITE_FIREBASE_API_KEY=${process.env.FIREBASE_API_KEY}\n`;
 envString += `VITE_FIREBASE_AUTH_DOMAIN=${process.env.FIREBASE_AUTH_DOMAIN}\n`;
