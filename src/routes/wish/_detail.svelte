@@ -131,7 +131,7 @@
   </table>
   <div class="flex flex-wrap mt-4">
     {#each banner.legendary as pull}
-      <span class="pity">{pull.name} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span>
+      <span class="pity">{$t(pull.name)} <span style={calculateColor((90 - pull.pity) / 90)}>{pull.pity}</span></span>
     {/each}
   </div>
 </div>
