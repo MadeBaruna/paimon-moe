@@ -13,6 +13,7 @@ const bannerCategories = {
   'weapon-event': 'Weapon Event',
   standard: 'Standard',
   beginners: "Beginners' Wish",
+  chronicled: 'Chronicled Wish',
 };
 
 async function createWorkbook() {

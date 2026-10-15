@@ -17,6 +17,7 @@
     'weapon-event': 'Weapon Event',
     standard: 'Standard',
     beginners: "Beginners' Wish",
+    chronicled: 'Chronicled Wish',
   };
 
   let selectedType = 'default';
@@ -100,6 +101,7 @@
     loading = true;
 
     for (const id of Object.keys(bannerCategories)) {
+      if (!added[id]) continue;
       const { path, data } = await readLocalData(id);
       const { append, prepend } = added[id];
 
@@ -207,6 +209,7 @@
       'weapon-event': 'Weapon Event',
       standard: 'Standard',
       beginners: "Beginners' Wish",
+      chronicled: 'Chronicled Wish',
     };
 
     const weapons = Object.values(weaponList);
@@ -217,6 +220,7 @@
       if (id === 'beginners' && sheet === undefined) {
         sheet = workbook.getWorksheet('Beginners Wish');
       }
+      if (sheet === undefined) continue;
 
       const wishes = [];
       sheet.eachRow((row, index) => {
@@ -295,8 +299,8 @@
     }
     console.log(itemNames);
 
-    const bannerCategories = ['character-event', 'weapon-event', 'standard', 'beginners'];
-    const bannerCodes = ['301', '302', '200', '100'];
+    const bannerCategories = ['character-event', 'weapon-event', 'standard', 'beginners', 'chronicled'];
+    const bannerCodes = ['301', '302', '200', '100', '500'];
 
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
@@ -304,8 +308,9 @@
     const typeWeaponTranslate = $t('wish.detail.weapon');
     const typeCharacterTranslate = $t('wish.detail.character');
 
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < bannerCategories.length; i++) {
       const sheet = workbook.worksheets[i];
+      if (sheet === undefined) continue;
       const id = bannerCategories[i];
       let code = bannerCodes[i];
       const wishes = [];
@@ -353,7 +358,7 @@
           if (character === undefined) {
             pushToast($t('wish.excel.errorUnknownItem') + ` [${id} ${type} ${index}: ${fullName}]`, 'error');
             error = {
-              banner: category,
+              banner: id,
               line: index,
               name: fullName,
               type,
