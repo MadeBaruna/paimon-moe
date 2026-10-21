@@ -15,6 +15,7 @@
     "artifacts": "Artifacts",
     "fishing": "Fishing",
     "radiantSpincrystal": "Radiant Spincrystal",
+    "recipe": "Recipe",
     "calendar": "Calendar",
     "banners": "Character Reruns",
     "tcg": "TCG",
@@ -969,6 +970,27 @@
   },
   "radiantSpincrystal": {
     "title": "Radiant Spincrystals"
+  },
+  "recipe": {
+    "title": "Recipe",
+    "of": "of",
+    "fastEdit": "Enable this for fast editing",
+    "proficiency": "Proficiency",
+    "collected": "collected",
+    "masteredAll": "You have mastered all owned recipes",
+    "masteredLeft": "recipe can be mastered",
+    "sort": "Show not collected first",
+    "default": "Default",
+    "search": "Search recipe",
+    "missing": "Not yet obtained",
+    "version": "Version",
+    "type": "Type",
+    "searchError": "Cannot find recipe: {query}",
+    "revive": "Revive",
+    "healing": "Healing",
+    "adventurer": "Adventurer",
+    "atk-boost": "ATK-Boosting",
+    "def-boost": "DEF-Boosting"
   },
   "common": {
     "dataSynced": "Data has been synced!",

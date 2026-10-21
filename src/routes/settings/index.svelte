@@ -188,6 +188,7 @@
       'furnishing-set-character',
       'fishing',
       'spincrystals',
+      'recipe',
     ];
 
     for (let k of keyWillBeDeleted) {
@@ -230,6 +231,7 @@
       'furnishing-set-character',
       'fishing',
       'spincrystals',
+      'recipe',
     ];
 
     for (let k of keyWillBeDeleted) {
@@ -275,6 +277,7 @@
       'furnishing-set-character',
       'fishing',
       'spincrystals',
+      'recipe',
     ];
 
     const temp = {};
