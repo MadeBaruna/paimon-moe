@@ -274,7 +274,7 @@
           "Mở Genshin Impact trên PC này (nếu bạn dùng nhiều tài khoản thì hãy khởi động lại game)",
           "Sau đó mở lịch sử cầu nguyên trong game và đợi tải trang",
           "Sau đó mở thư mục cài đặt game (ví dụ: C:\\Games\\Genshin Impact)",
-          "Sau đó mở thư mục GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "Sau đó mở thư mục GenshinImpact_Data → webCaches → 2.15.0.0 → Cache → Cache_Data",
           "Chuột phải vào tập tin \"data_2\" và rồi chọn \"Mở bằng\" và chọn Notepad (Nếu bạn gặp lỗi như \"The process cannot access the file because it is being used by another process\" thì hãy thoát game trước khi tiếp tục)",
           "Nhấn CTRL+F, tích chọn \"Bao quanh\" và chọn hướng \"Lên\", sau đó nhập vào ô tìm kiếm \"e20190909gacha-v2\" (không bao gồm dấu ngoặc kép) và nhấn Tìm tiếp",
           "Sao chép toàn bộ link từ https://webstatic cho đến chỗ game_biz=hk4e_global, link nhìn giống như sau: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",

@@ -267,7 +267,7 @@
           "Open Genshin Impact in this PC (If you use multiple accounts, please restart the game)",
           "Then open the wish history in the game and wait it to load",
           "Then open the folder where your game is installed (example: C:\\Games\\Genshin Impact)",
-          "Then open folder GenshinImpact_Data → webCaches → 2.13.0.1 → Cache → Cache_Data",
+          "Then open folder GenshinImpact_Data → webCaches → 2.15.0.0 → Cache → Cache_Data",
           "Right click \"data_2\" file then click \"Open with\" then select Notepad (If you get error like \"The process cannot access the file because it is being used by another process\" please exit the game first)",
           "Press CTRL+F then check \"Wrap around\" and select direction \"Up\" then in the input box search for \"e20190909gacha-v2\" (without the quote) then click Find Next",
           "Copy all the link from https://webstatic until game_biz=hk4e_global the url looks like this: https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?.......&game_biz=hk4e_global",

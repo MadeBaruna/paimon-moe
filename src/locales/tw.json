@@ -274,7 +274,7 @@
           "在此電腦開啟原神（如果你使用多組帳號，請重新啟動遊戲）",
           "接著打開祈願紀錄並等待讀取",
           "接著打開遊戲安裝的位置（例如：C:\\Games\\Genshin Impact）",
-          "然後打開資料夾 GenshinImpact_Data → webCaches → Cache → Cache_Data",
+          "然後打開資料夾 GenshinImpact_Data → webCaches → 2.15.0.0 → Cache → Cache_Data",
           "對著檔案「data_2」按右鍵，按「開啟檔案」，選擇「記事本」（如果報錯，例如「程序無法存取檔案，因為檔案正由另一個程序使用」，請先退出遊戲）",
           "按 Ctrl+F，在選項中點選「環繞」，搜尋方向選擇「向上」，然後在輸入的地方填入「e20190909gacha-v2」（注意不要複製引號），按「找下一個」",
           "複製完整的連結，https://webstatic 開頭，game_biz=hk4e_global 結尾。完整連結類似於這樣：https://webstatic-sea.hoyoverse.com/genshin/event/e20190909gacha-v2/index.html?……&game_biz=hk4e_global",
