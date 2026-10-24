@@ -345,6 +345,45 @@
           "Paste the result here...",
           "This feature is still in BETA! Please make a backup first by going to the Settings menu then Export to Excel."
         ]
+      },
+      "hoyoverse": {
+        "chooseSource": "Choose an import method",
+        "title": "HoYoverse account",
+        "description": "Import wishes from a signed-in HoYoverse browser session. No game installation or copied wish-history link is needed on this computer.",
+        "install": "Install the preview connector for your browser: ",
+        "chromium": "Chrome / Chromium",
+        "firefox": "Firefox",
+        "previewTitle": "How to install this preview",
+        "previewNotice": "This connector is an unsigned development preview, not an official store release. Open the connector from your browser extensions menu, click Enable connector access, then reload this page. Store links will replace these instructions before a public release.",
+        "chromiumInstructions": "Chrome / Chromium: extract the ZIP, open chrome://extensions, enable Developer mode, choose Load unpacked, and select the extracted folder.",
+        "firefoxInstructions": "Firefox / LibreWolf: extract the ZIP, open about:debugging#/runtime/this-firefox, choose Load Temporary Add-on, and select manifest.json. Temporary installations are removed when the browser restarts.",
+        "signIn": "Sign in to HoYoverse",
+        "sameBrowser": " in the same browser and regular profile as this page, then return here.",
+        "chooseRole": "Click Connect HoYoverse and choose the Genshin character whose wishes you want to import. Use the matching Paimon.moe account for an existing UID.",
+        "reviewSave": "Click Import, review the fetched wishes below, then click Save. Existing saved history is kept unless you enable Force update.",
+        "privacy": "Account cookies stay in your browser and are sent only to HoYoverse. The temporary wish-history key is sent to this page and the existing Paimon.moe import proxy; it is kept in memory, not saved with your wishes.",
+        "support": "Desktop global HoYoverse accounts only. China, mobile browsers, private windows, and Firefox containers are not supported in this preview. Only history still available from HoYoverse can be retrieved.",
+        "connect": "Connect HoYoverse",
+        "connecting": "Connecting…",
+        "character": "Genshin character",
+        "selectCharacter": "Select a character",
+        "ready": "Character list loaded. Choose a character, then click Import.",
+        "errors": {
+          "EXTENSION_MISSING": "Connector not detected. Install or update it, open it from the browser extensions menu, enable access for this address, then reload this page and try again.",
+          "EXTENSION_OUTDATED": "The connector changed or its context expired. Reload this page and try again.",
+          "NOT_SIGNED_IN": "Sign in to your HoYoverse account in this browser, then connect again.",
+          "NO_ROLES": "No supported Genshin characters were found. Check your HoYoverse account and connect again.",
+          "UID_MISMATCH": "The selected character does not match this Paimon.moe account or your current HoYoverse session. Choose the matching account and connect again.",
+          "UNSUPPORTED_REGION": "This method supports global HoYoverse accounts only. Choose a global server or use another import method.",
+          "UNSUPPORTED_CONTEXT": "Use a regular browser window and default profile without a Firefox container on the supported import page.",
+          "UPSTREAM_REJECTED": "HoYoverse could not authorize this request. Sign in again and reconnect. If it persists, try another import method.",
+          "NETWORK_ERROR": "Could not reach HoYoverse. Check your connection and try again.",
+          "TIMEOUT": "The connection timed out. Try connecting again.",
+          "CANCELLED": "Connection cancelled.",
+          "BUSY": "Another connection is in progress. Wait or cancel it first.",
+          "INVALID_MESSAGE": "The connector returned an invalid response. Update the connector and reload this page."
+        },
+        "advancedOptions": "Advanced import options"
       }
     },
     "excel": {

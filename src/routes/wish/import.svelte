@@ -1,5 +1,5 @@
 <script>
-  import { getContext, onMount } from 'svelte';
+  import { getContext, onMount, onDestroy } from 'svelte';
   import { slide } from 'svelte/transition';
   import { goto } from '$app/navigation';
   import { t } from 'svelte-i18n';
@@ -19,6 +19,8 @@
   dayjs.extend(isSameOrBefore);
 
   import Button from '../../components/Button.svelte';
+  import HoyoBrowserImport from '../../components/HoyoBrowserImport.svelte';
+  import { historyUrl, REGIONS } from '../../functions/hoyoverseBridge';
   import Input from '../../components/Input.svelte';
   import Select from '../../components/Select.svelte';
   import Icon from '../../components/Icon.svelte';
@@ -51,6 +53,7 @@
   ];
 
   const steps = {
+    hoyoverse: 1,
     pc: 7,
     pc3: 8,
     pc4: 8,
@@ -112,6 +115,10 @@
   let selectedServer = null;
   let selectedType = 'pc';
   let genshinLink = '';
+  let browserImport;
+  let hoyoRole = null;
+  let expectedHoyoUID = '';
+  let importRunning = false;
   let generatedTextInput = '';
 
   let currentUID = '';
@@ -157,15 +164,23 @@
   }
 
   async function startImport() {
+    if (importRunning) return;
+    importRunning = true;
     cancelled = false;
     error = '';
     fetchController = new AbortController();
     fetchSignal = fetchController.signal;
 
-    if (selectedType === 'pclocal') {
-      await importFromGeneratedText();
-    } else {
-      await processLogs();
+    try {
+      if (selectedType === 'pclocal') {
+        await importFromGeneratedText();
+      } else {
+        await processLogs();
+      }
+    } finally {
+      importRunning = false;
+      url = undefined;
+      expectedHoyoUID = '';
     }
   }
 
@@ -173,33 +188,48 @@
     processingLog = true;
 
     try {
-      if (selectedType.startsWith('android')) {
-        const urlString = genshinLink.match(/https:\/\/[^\s]+/g);
-        url = new URL(urlString[0]);
-      } else if (selectedType === 'pclog') {
-        const urlString = genshinLink.match(/https:\/\/.*\//g);
-        url = new URL(urlString);
+      if (selectedType === 'hoyoverse') {
+        await checkUID();
+        if (!hoyoRole || $server === 'China') {
+          throw Object.assign(new Error('UNSUPPORTED_REGION'), { code: 'UNSUPPORTED_REGION' });
+        }
+        if (currentUID && currentUID !== hoyoRole.uid) {
+          throw Object.assign(new Error('UID_MISMATCH'), { code: 'UID_MISMATCH' });
+        }
+        const context = await browserImport.authkey(fetchSignal);
+        if (cancelled) return;
+        expectedHoyoUID = context.uid;
+        currentUID = context.uid;
+        selectedServer = servers.find((entry) => entry.value === REGIONS[context.region]);
+        server.set(REGIONS[context.region]);
+        url = historyUrl(context);
       } else {
-        url = new URL(genshinLink);
+        try {
+          if (selectedType.startsWith('android')) {
+            const urlString = genshinLink.match(/https:\/\/[^\s]+/g);
+            url = new URL(urlString[0]);
+          } else if (selectedType === 'pclog') {
+            const urlString = genshinLink.match(/https:\/\/.*\//g);
+            url = new URL(urlString);
+          } else {
+            url = new URL(genshinLink);
+          }
+        } catch {
+          error = $t('wish.import.invalidLink');
+          throw 'error code';
+        }
+        await checkUID();
       }
-    } catch (err) {
-      error = $t('wish.import.invalidLink');
-    }
 
-    console.log('STARTING IMPORT', {
-      forceUpdate,
-      tallySubmit,
-    });
-
-    try {
-      await checkUID();
-
+      if (cancelled) return;
       if (forceUpdate) {
         await downloadBackup();
       }
 
       for (const [wishNumber, type] of Object.entries(types)) {
+        if (cancelled) return;
         await getLog(wishNumber, type);
+        if (cancelled) return;
         await sleep(2000);
         if (cancelled) return;
       }
@@ -210,7 +240,10 @@
 
       finishedProcessingLog = true;
     } catch (err) {
-      console.log(err);
+      if (cancelled) error = '';
+      if (!cancelled && selectedType === 'hoyoverse' && err?.code && err.code !== 'CANCELLED') {
+        error = $t(`wish.import.hoyoverse.errors.${err.code}`);
+      }
 
       wishes = {};
       processingLog = false;
@@ -244,7 +277,7 @@
     }
 
     currentBanner = type.name;
-    console.log(url);
+    // Auth-bearing URLs must never be sent to logs or telemetry.
 
     const weapons = Object.values(weaponList);
     const chars = Object.values(characters);
@@ -332,7 +365,10 @@
             code = '301';
           }
 
-          if (currentUID !== '' && currentUID !== row.uid) {
+          if (
+            (expectedHoyoUID && expectedHoyoUID !== String(row.uid)) ||
+            (currentUID !== '' && currentUID !== String(row.uid))
+          ) {
             throw 'account error';
           }
 
@@ -717,9 +753,7 @@
     const path = `wish-uid`;
     const localData = await readSave(`${prefix}${path}`);
 
-    if (localData !== null) {
-      currentUID = localData.toString();
-    }
+    currentUID = localData === null ? '' : localData.toString();
   }
 
   async function fetchRetry(url, options, n) {
@@ -792,7 +826,7 @@
   }
 
   function cancel() {
-    fetchController.abort();
+    fetchController?.abort();
     cancelled = true;
     wishes = {};
     processingLog = false;
@@ -802,6 +836,7 @@
     region = '';
     currentBanner = '';
     currentPage = 1;
+    url = undefined;
 
     setTimeout(() => {
       closeModal();
@@ -881,6 +916,12 @@
 
   $: selectedServer, updateServer();
 
+  onDestroy(() => {
+    cancelled = true;
+    fetchController?.abort();
+    url = undefined;
+  });
+
   onMount(() => {
     detectPlatform();
     selectedServer = servers.find((e) => e.value === $server);
@@ -956,7 +997,7 @@
       <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
     </div>
     <div class="content flex flex-col pb-4 pt-1">
-      <p class="text-white">{$t('wish.import.choosePlatform')}</p>
+      <p class="text-white">{$t('wish.import.hoyoverse.chooseSource')}</p>
       <div class="flex mt-4 flex-wrap">
         <button
           disabled={processingLog}
@@ -978,6 +1019,13 @@
           class="pill {selectedType === 'ios' ? 'active' : ''}"
         >
           iOS
+        </button>
+        <button
+          disabled={processingLog}
+          on:click={() => changeSelectedType('hoyoverse')}
+          class="pill {selectedType === 'hoyoverse' ? 'active' : ''}"
+        >
+          {$t('wish.import.hoyoverse.title')}
         </button>
         <!-- <button
           disabled={processingLog}
@@ -1092,6 +1140,24 @@
           <Icon path={mdiYoutube} />
           <span class="pl-2">{$t('wish.import.guide.video')}</span>
         </a>
+      </div>
+    </div>
+  {/if}
+  {#if selectedType === 'hoyoverse'}
+    <div class="flex space-x-3 mb-6">
+      <div class="flex flex-col items-center step">
+        <div class="step-number border-2 border-white w-8 h-8 rounded-full flex justify-center items-center">
+          <span class="text-white font-bold">4</span>
+        </div>
+        <div class="step-bar w-1 bg-white opacity-50 mt-2 h-full" />
+      </div>
+      <div class="content min-w-0 w-full">
+        <HoyoBrowserImport
+          bind:this={browserImport}
+          bind:selectedRole={hoyoRole}
+          disabled={processingLog}
+          china={$server === 'China'}
+        />
       </div>
     </div>
   {/if}
@@ -1340,7 +1406,7 @@
         </p>
       </div>
     </div>
-  {:else}
+  {:else if selectedType.startsWith('android')}
     <div class="flex space-x-3 mb-2">
       <div class="flex flex-col items-center step">
         <div class="w-8 rounded-full flex justify-center items-center">
@@ -1379,7 +1445,9 @@
       {/if}
     </div>
     <div class="content flex-col items-center pb-4 pt-1 w-full lg:w-1/2 -mt-4">
-      {#if selectedType === 'pc'}
+      {#if selectedType === 'hoyoverse'}
+        <!-- The browser connector supplies the temporary auth context directly. -->
+      {:else if selectedType === 'pc'}
         <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.pc2.11')} />
       {:else if selectedType === 'pclog'}
         <Input bind:value={genshinLink} placeholder={$t('wish.import.guide.pclog.6')} />
@@ -1392,11 +1460,12 @@
       {/if}
       <div class="h-4" />
       {#if !processingLog}
-        <div class="flex">
+        <div class="flex flex-wrap gap-y-2">
           <div class="flex mr-4">
             <button
               class="text-green-400 border-r border-t-2 border-b-2 border-l-2 border-white border-opacity-25 rounded-l-xl
               px-4 py-2 transition duration-100 focus:border-green-400 hover:border-green-400 focus:outline-none"
+              disabled={importRunning || (selectedType === 'hoyoverse' && (!hoyoRole || $server === 'China'))}
               on:click={startImport}
             >
               <Icon path={mdiDatabaseImport} />
@@ -1405,6 +1474,7 @@
             <button
               class="text-white border-r-2 border-t-2 border-b-2 border-l border-white border-opacity-25 rounded-r-xl
                px-4 py-2 transition duration-100 focus:border-primary hover:border-primary focus:outline-none"
+              aria-label={$t('wish.import.hoyoverse.advancedOptions')}
               on:click={toggleAdvancedOptions}
             >
               <Icon

@@ -115,13 +115,14 @@
     wishTotal[type] = event.detail;
 
     if (type === 'character-event') {
-      rank.getData();
+      rank?.getData();
     }
   }
 
   function setRankWishPercentage(event) {
     wishPercentage = event.detail;
-    rank.getDataLuckAll(event.detail);
+    // Counter data may finish loading after navigation unmounts the rank component.
+    rank?.getDataLuckAll(event.detail);
   }
 
   function closeImportModal() {

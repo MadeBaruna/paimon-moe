@@ -7,7 +7,13 @@
     "dev": "vite dev --port 3000 --host",
     "build": "NODE_OPTIONS=--max_old_space_size=4096 vite build",
     "preview": "vite preview",
-    "start": "node build"
+    "start": "node build",
+    "predev": "node browser-connector/build.mjs --dev",
+    "prebuild": "node browser-connector/build.mjs",
+    "connector:build": "node browser-connector/build.mjs",
+    "test:connector": "node --test tests/hoyoverse*.test.mjs",
+    "test:browser:connector": "node browser-connector/build.mjs --dev && node --test tests/hoyoverse.browser.mjs",
+    "test:firefox:connector": "node browser-connector/build.mjs --dev && node --test tests/hoyoverse.firefox.mjs"
   },
   "devDependencies": {
     "@mdi/js": "^5.9.55",
@@ -19,8 +25,10 @@
     "diff": "^9.0.0",
     "dotenv": "^8.6.0",
     "exceljs": "^4.3.0",
+    "fflate": "0.8.3",
     "localforage": "^1.10.0",
     "lodash.debounce": "^4.0.8",
+    "playwright": "1.64.1",
     "postcss": "^8.4.14",
     "postcss-nested": "^5.0.6",
     "prettier": "^2.7.1",
