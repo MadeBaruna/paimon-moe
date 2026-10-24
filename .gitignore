@@ -6,3 +6,7 @@ yarn-error.log
 .svelte-kit
 /build
 .env
+# Generated browser connector packages
+/browser-connector/dist/
+/browser-connector/dist-dev/
+/static/browser-connector/

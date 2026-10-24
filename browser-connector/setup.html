@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Paimon.moe connector permissions</title>
+    <style>
+      body {
+        font: 16px system-ui, sans-serif;
+        background: #25294a;
+        color: #fff;
+        max-width: 640px;
+        margin: 60px auto;
+        padding: 24px;
+      }
+      select,
+      button {
+        font: inherit;
+        padding: 12px;
+        border-radius: 8px;
+        margin: 12px 0;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      button {
+        background: #5076ff;
+        color: white;
+        border: 0;
+        cursor: pointer;
+      }
+      a {
+        color: #a7bdff;
+      }
+      p {
+        line-height: 1.6;
+      }
+      #status {
+        min-height: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Paimon.moe connector</h1>
+    <p>
+      Enable access to your import page and the HoYoverse account API. Keep this tab open while answering the browser
+      permission request.
+    </p>
+    <label for="origin">Paimon.moe address</label
+    ><select id="origin"></select>
+    <button id="enable">Enable connector access</button>
+    <p id="status" role="status"></p>
+    <a id="return">Return to Wish Import</a>
+    <p>
+      Account cookies are sent only to HoYoverse. The temporary wish-history key reaches the approved import page and
+      its existing proxy. No cookies API or credential storage is used.
+    </p>
+    <script src="setup.js"></script>
+  </body>
+</html>
