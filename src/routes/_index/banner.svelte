@@ -31,10 +31,10 @@
       percentage: '...',
     },
   };
-  const bannerId = 300107;
-  const image = 'escoffier skirk.webp';
+  const bannerId = 300108;
+  const image = 'furina mitya.webp';
   const width = 800;
-  const height = 387;
+  const height = 377;
 
   let loading = true;
   let user = '';
