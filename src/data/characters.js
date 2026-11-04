@@ -10026,6 +10026,152 @@ export const characters = {
     },
     element: elements.cryo,
   },
+  mitya: {
+    id: 'mitya',
+    name: 'Mitya',
+    rarity: 5,
+    weapon: weapons.catalyst,
+    stats: {
+      hp: 11634,
+      atk: 263,
+      def: 792,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.kristallfold,
+            amount: 3,
+          },
+          {
+            item: itemList.chimeric_core,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.shattered_stability_anchor,
+            amount: 2,
+          },
+          {
+            item: itemList.kristallfold,
+            amount: 10,
+          },
+          {
+            item: itemList.chimeric_core,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.shattered_stability_anchor,
+            amount: 4,
+          },
+          {
+            item: itemList.kristallfold,
+            amount: 20,
+          },
+          {
+            item: itemList.symbiotic_chimeric_nucleus,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.shattered_stability_anchor,
+            amount: 8,
+          },
+          {
+            item: itemList.kristallfold,
+            amount: 30,
+          },
+          {
+            item: itemList.symbiotic_chimeric_nucleus,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.shattered_stability_anchor,
+            amount: 12,
+          },
+          {
+            item: itemList.kristallfold,
+            amount: 45,
+          },
+          {
+            item: itemList.prime_chimeric_nexus,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.shattered_stability_anchor,
+            amount: 20,
+          },
+          {
+            item: itemList.kristallfold,
+            amount: 60,
+          },
+          {
+            item: itemList.prime_chimeric_nexus,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.chimeric_core, itemList.symbiotic_chimeric_nucleus, itemList.prime_chimeric_nexus],
+      book: [itemList.teachings_of_charity, itemList.guide_to_charity, itemList.philosophies_of_charity],
+      boss: itemList.mask_of_the_virtuous_doctor,
+    },
+    element: elements.electro,
+    new: true,
+  },
   mona: {
     id: 'mona',
     name: 'Mona',
@@ -15004,6 +15150,152 @@ export const characters = {
     },
     element: elements.pyro,
   },
+  valeriy: {
+    id: 'valeriy',
+    name: 'Valeriy',
+    rarity: 4,
+    weapon: weapons.sword,
+    stats: {
+      hp: 10005,
+      atk: 255,
+      def: 703,
+    },
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_sliver,
+            amount: 1,
+          },
+          {
+            item: itemList.none,
+            amount: null,
+          },
+          {
+            item: itemList.fairy_wormwood,
+            amount: 3,
+          },
+          {
+            item: itemList.ethereal_glimmershard,
+            amount: 3,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 3,
+          },
+          {
+            item: itemList.severed_tail_of_the_sky_roamer,
+            amount: 2,
+          },
+          {
+            item: itemList.fairy_wormwood,
+            amount: 10,
+          },
+          {
+            item: itemList.ethereal_glimmershard,
+            amount: 15,
+          },
+        ],
+        mora: 40000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_fragment,
+            amount: 6,
+          },
+          {
+            item: itemList.severed_tail_of_the_sky_roamer,
+            amount: 4,
+          },
+          {
+            item: itemList.fairy_wormwood,
+            amount: 20,
+          },
+          {
+            item: itemList.ethereal_crystal,
+            amount: 12,
+          },
+        ],
+        mora: 60000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 3,
+          },
+          {
+            item: itemList.severed_tail_of_the_sky_roamer,
+            amount: 8,
+          },
+          {
+            item: itemList.fairy_wormwood,
+            amount: 30,
+          },
+          {
+            item: itemList.ethereal_crystal,
+            amount: 18,
+          },
+        ],
+        mora: 80000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_chunk,
+            amount: 6,
+          },
+          {
+            item: itemList.severed_tail_of_the_sky_roamer,
+            amount: 12,
+          },
+          {
+            item: itemList.fairy_wormwood,
+            amount: 45,
+          },
+          {
+            item: itemList.ethereal_crystalscale_stone,
+            amount: 12,
+          },
+        ],
+        mora: 100000,
+      },
+      {
+        items: [
+          {
+            item: itemList.vajrada_amethyst_gemstone,
+            amount: 6,
+          },
+          {
+            item: itemList.severed_tail_of_the_sky_roamer,
+            amount: 20,
+          },
+          {
+            item: itemList.fairy_wormwood,
+            amount: 60,
+          },
+          {
+            item: itemList.ethereal_crystalscale_stone,
+            amount: 24,
+          },
+        ],
+        mora: 120000,
+      },
+    ],
+    material: {
+      material: [itemList.ethereal_glimmershard, itemList.ethereal_crystal, itemList.ethereal_crystalscale_stone],
+      book: [itemList.teachings_of_glory, itemList.guide_to_glory, itemList.philosophies_of_glory],
+      boss: itemList.counterfeit_resin,
+    },
+    element: elements.electro,
+    new: true,
+  },
   varesa: {
     id: 'varesa',
     name: 'Varesa',
@@ -15583,7 +15875,6 @@ export const characters = {
       boss: itemList.profaned_sprout,
     },
     element: elements.anemo,
-    new: true,
   },
   vodyanitsa: {
     id: 'vodyanitsa',
@@ -15729,7 +16020,6 @@ export const characters = {
       boss: itemList.madmans_restraint,
     },
     element: elements.hydro,
-    new: true,
   },
   wanderer: {
     id: 'wanderer',

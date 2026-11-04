@@ -2340,4 +2340,17 @@ export const itemList = {
     name: "Vagabond's Cracked Armor",
     rarity: 4,
   },
+  kristallfold: {
+    id: 'kristallfold',
+    name: 'Kristallfold',
+  },
+  shattered_stability_anchor: {
+    id: 'shattered_stability_anchor',
+    name: 'Shattered Stability Anchor',
+    rarity: 4,
+  },
+  fairy_wormwood: {
+    id: 'fairy_wormwood',
+    name: 'Fairy Wormwood',
+  },
 };

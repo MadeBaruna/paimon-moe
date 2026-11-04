@@ -21,7 +21,7 @@
   }
 </script>
 
-<div class="py-4 rounded-xl bg-item flex flex-col mb-2">
+<div class="py-4 rounded-xl bg-item flex flex-col mb-2 whitespace-pre-wrap">
   <div class="flex items-start px-4">
     <div>
       <p class="font-black font-display text-xl">{@html title}</p>
