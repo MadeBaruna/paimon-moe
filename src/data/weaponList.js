@@ -20404,4 +20404,117 @@ export const weaponList = {
       },
     ],
   },
+  starsealed_edict: {
+    id: 'starsealed_edict',
+    name: 'Starsealed Edict',
+    rarity: 5,
+    atk: 44,
+    secondary: 'CRIT DMG',
+    type: weapons.catalyst,
+    source: 'wish',
+    ascension: [
+      {
+        items: [
+          {
+            item: itemList.the_frost_emperors_revival,
+            amount: 5,
+          },
+          {
+            item: itemList.snowborn_heartshard,
+            amount: 5,
+          },
+          {
+            item: itemList.ethereal_glimmershard,
+            amount: 3,
+          },
+        ],
+        mora: 10000,
+      },
+      {
+        items: [
+          {
+            item: itemList.the_frost_emperors_ceremony,
+            amount: 5,
+          },
+          {
+            item: itemList.snowborn_heartshard,
+            amount: 18,
+          },
+          {
+            item: itemList.ethereal_glimmershard,
+            amount: 12,
+          },
+        ],
+        mora: 20000,
+      },
+      {
+        items: [
+          {
+            item: itemList.the_frost_emperors_ceremony,
+            amount: 9,
+          },
+          {
+            item: itemList.snowborn_mirrorheart,
+            amount: 9,
+          },
+          {
+            item: itemList.ethereal_crystal,
+            amount: 9,
+          },
+        ],
+        mora: 30000,
+      },
+      {
+        items: [
+          {
+            item: itemList.the_frost_emperors_lament,
+            amount: 5,
+          },
+          {
+            item: itemList.snowborn_mirrorheart,
+            amount: 18,
+          },
+          {
+            item: itemList.ethereal_crystal,
+            amount: 14,
+          },
+        ],
+        mora: 45000,
+      },
+      {
+        items: [
+          {
+            item: itemList.the_frost_emperors_lament,
+            amount: 9,
+          },
+          {
+            item: itemList.snowborn_heart_of_ignorance,
+            amount: 14,
+          },
+          {
+            item: itemList.ethereal_crystalscale_stone,
+            amount: 9,
+          },
+        ],
+        mora: 55000,
+      },
+      {
+        items: [
+          {
+            item: itemList.the_frost_emperors_farewell,
+            amount: 6,
+          },
+          {
+            item: itemList.snowborn_heart_of_ignorance,
+            amount: 27,
+          },
+          {
+            item: itemList.ethereal_crystalscale_stone,
+            amount: 18,
+          },
+        ],
+        mora: 65000,
+      },
+    ],
+  },
 };

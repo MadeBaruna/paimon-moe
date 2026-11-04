@@ -2353,4 +2353,19 @@ export const itemList = {
     id: 'fairy_wormwood',
     name: 'Fairy Wormwood',
   },
+  snowborn_heartshard: {
+    id: 'snowborn_heartshard',
+    name: 'Snowborn Heartshard',
+    rarity: 2,
+  },
+  snowborn_mirrorheart: {
+    id: 'snowborn_mirrorheart',
+    name: 'Snowborn Mirrorheart',
+    rarity: 3,
+  },
+  snowborn_heart_of_ignorance: {
+    id: 'snowborn_heart_of_ignorance',
+    name: 'Snowborn Heart of Ignorance',
+    rarity: 4,
+  },
 };
