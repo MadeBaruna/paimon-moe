@@ -150,33 +150,33 @@
       {$t('tcg.selectDeck')}
     </button>
   </div>
-  <div class="pt-24 md:pt-0 pb-4 flex items-center w-full">
+  <div class="pt-24 md:pt-0 pb-4 flex items-center w-full md:pr-40">
     {#if editName}
       <div class="flex w-full max-w-screen-sm">
         <div class="w-full max-w-full">
           <Input className="w-full" bind:value={name} />
         </div>
-        <button class="text-white ml-4 rounded-xl hover:ring-2 ring-primary p-1 duration-100" on:click={saveName}>
+        <button class="my-auto text-white w-min h-min ml-4 rounded-xl hover:ring-2 ring-primary p-1 duration-100" on:click={saveName}>
           <Icon path={mdiContentSave} />
         </button>
       </div>
     {:else}
-      <div class="flex xl:pr-96 w-full items-center">
+      <div class="flex xl:pr-96 w-full items-center pr-24 pb-2">
         <h1 class="text-white font-bold text-lg xl:text-3xl max-w-full break-words">
           {deck.name}
         </h1>
         {#if sharedDeck === null}
           <button
-            class="text-white ml-4 rounded-xl hover:ring-2 ring-primary p-1 duration-100"
+            class="text-white my-auto ml-4 rounded-xl hover:ring-2 ring-primary p-1 duration-100"
             on:click={toggleEditName}
           >
             <Icon path={mdiPencil} />
           </button>
-          <button class="text-white ml-4 rounded-xl hover:ring-2 ring-primary p-1 duration-100" on:click={share}>
+          <button class="text-white my-auto ml-4 rounded-xl hover:ring-2 ring-primary p-1 duration-100" on:click={share}>
             <Icon path={mdiShareVariant} />
           </button>
         {:else}
-          <button class="text-white ml-4 rounded-xl hover:ring-2 ring-primary p-1 duration-100" on:click={share}>
+          <button class="text-white my-auto ml-4 rounded-xl hover:ring-2 ring-primary p-1 duration-100" on:click={share}>
             <Icon path={mdiShareVariant} />
           </button>
           <Button className="ml-4" on:click={saveSharedDeck}>{$t('tcg.saveDeck')}</Button>
